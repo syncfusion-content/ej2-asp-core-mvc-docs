@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculated Field in ##Platform_Name## Pivot Table Component
+title: Calculated Field in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Calculated Field in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Calculated Field
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Calculated Field
+# Calculated Field in ##Platform_Name## Pivot Table Component
 
 Allows end user to create a new calculated field in the pivot table, based on available fields from the bound data source or using simple formula with basic arithmetic operators. It can be added at runtime through the built-in dialog, invoked from Field List UI. To do so, set the [`allowCalculatedField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true** in the pivot table. End user can now see a "CALCULATED FIELD" button enabled in Field List UI automatically, which on clicking will invoke the calculated field dialog and perform necessary operation.
 
@@ -18,7 +18,7 @@ Calculated field can also be included in the pivot table through code behind usi
 * [`formula`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html#Syncfusion_EJ2_PivotView_PivotViewCalculatedFieldSetting_Formula): It allows to set the formula.
 * [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format):  It helps to set the number format for the resultant value.
 
-> The calculated field is applicable only for value fields. Also, calculated field created through code behind will be automatically listed in the UI dialog as well.
+N> The calculated field is applicable only for value fields. Also, calculated field created through code behind will be automatically listed in the UI dialog as well.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -74,55 +74,69 @@ Meanwhile, user can also view calculated field dialog in UI by invoking `createC
 
 
 
-![output](images/calc-field-btn.png)
+![Pivot Table - calculated field](images/calc-field-btn.png)
 
-![output](images/calc-field-btn2.png)
+![Calculated field popup](images/calculatdfield-btn-dropdown.png)
 
 ## Editing through the field list and the grouping bar
 
 User can also modify the existing calculated field using the built-in edit option available directly in the field list (or) grouping bar. To do so, click the "Edit" icon available in the calculated field button. Now the calculated field dialog is opened and the current calculated field name, formula and format can be changed at runtime.
 
-![output](images/edit-button.png "Editing the calculated field")
+![Editing the calculated field](images/calculatdfield-grouping-edit1.png "Editing the calculated field")
 <br/>
 <br/>
-![output](images/after-edit-button.png "Editing the calculated field formula")
+![Editing the calculated field formula](images/calculatdfield-grouping-edit2.png "Editing the calculated field formula")
 
 ## Renaming the existing calculated field
 
 Existing calculated field can be renamed only through the UI at runtime. To do so, open the calculated field dialog, select the target field and click "Edit" icon. User can now see the existing name getting displayed in the text box at the top of the dialog. Now, change the name based on user requirement and click "OK".
 
 <!-- markdownlint-disable MD012 -->
-![output](images/before-edit.png "Editing the calculated field")
+![Editing the calculated field](images/calculatdfield-renaming1.png "Editing the calculated field")
 <br/>
 <br/>
-![output](images/after-edit.png "Renaming the calculated field")
+![Renaming the calculated field](images/calculatdfield-renaming2.png "Renaming the calculated field")
 
 ## Editing the existing calculated field formula
 
 Existing calculated field formula can be edited only through the UI at runtime. To do so, open the calculated field dialog, select the target field and click "Edit" icon. User can now see the existing formula getting displayed in a multiline text box at the bottom of the dialog. Now, change the formula based on user requirement and click "OK".
 
-![output](images/before-edit.png "Editing the calculated field")
+![Editing the calculated field](images/calculatdfield-field-edit1.png "Editing the calculated field")
 <br/>
 <br/>
-![output](images/after-change.png "Editing the calculated field formula")
+![Editing the calculated field formula](images/calculatdfield-field-edit2.png "Editing the calculated field formula")
 
 ## Reusing the existing formula in a new calculate field
 
 While creating a new calculated field, if user wants to the add the formula of an existing calculated field, it can be done easily. To do so, simply drag-and-drop the existing calculated field to the "Formula" section.
 
-![output](images/before-drag.png "Dragging the existing calculated field")
+![Dragging the existing calculated field](images/calculatdfield-reusing1.png "Dragging the existing calculated field")
 <br/>
 <br/>
-![output](images/while-drag.png "Drag field to formula")
+![Drag field to formula](images/calculatdfield-reusing2.png "Drag field to formula")
 <br/>
 <br/>
-![output](images/after-drag.png "Reusing the existing calculated field formula")
+![Reusing the existing calculated field formula](images/calculatdfield-reusing3.png "Reusing the existing calculated field formula")
 
 ## Apply the format to the calculated field values
 
-The values in the new or existing calculated field can be formatted through its UI and also through code behind. To format the calculated field values at runtime, the built-in textbox is available under the "Format" label where the user can set the desired format. Likewise, in code-behind, you can set the desired format using the [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property as illustrated in the introduction section. For more information about the supported formats [`refer here`](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/number-formatting/).
+Values in a new or existing calculated field can be formatted via the calculated field UI or code behind. The [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property in code-behind can be used to specify the desired format. For more information about the supported formats refer [`refer here`](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/number-formatting/).
 
-![output](images/calculatedfield-format.png "Applying format through calculated field dialog UI")
+To apply format to calculated field values at runtime via UI, a built-in dropdown under the "Format" label is available, from which the user can select the pre-defined format options listed below.
+
+* **Standard** - Denotes the numeric type.
+* **Currency** - Denotes the currency type.
+* **Percent** - Denotes the percentage type.
+* **Custom** - Denotes the custom format. For example: "C2". This shows the value "9584.3" as "$9584.30."
+* **None** - Denotes that no format will be applied.
+
+N> By default, **None** will be selected from the dropdown.
+
+![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.png "Applying format through calculated field dialog UI")
+
+In addition, you can specify the desired custom formats by selecting the **Custom** option from the "Format" dropdown.
+
+![Applying custom format through calculated field dialog UI](images/calculatdfield-applyFormate.png "Applying custom format through calculated field dialog UI")
 
 ## Supported operators and functions for the calculated field formula
 
@@ -242,7 +256,7 @@ Syntax: min(number1, number2)
 Syntax: max(number1, number2)
 ```
 
-> Also, you can use JavaScript [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object properties and methods directly to the formula.
+N> Also, you can use JavaScript [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object properties and methods directly to the formula.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -326,7 +340,7 @@ The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 * `fieldInfo`: It holds the selected field information.
 
-> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
+N> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
 
 * `cancel`: It allows user to restrict the current action.
 
@@ -372,7 +386,7 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 * `fieldInfo`: It holds the selected field information.
 
-> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
+N> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
 
 * `actionInfo`:  It holds the unique information about the current UI action. For example, if the edit action is completed, this event will be triggered, and the argument will display information such as the entire calculated field information and its formula, including the field name.
 

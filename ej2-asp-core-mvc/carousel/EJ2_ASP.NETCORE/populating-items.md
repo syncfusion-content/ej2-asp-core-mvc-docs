@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating items in ##Platform_Name## Carousel Control
+title: Populating items in Syncfusion ##Platform_Name## Carousel Control | Syncfusion
 description: Checkout and learn about populating items in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Populating Items
@@ -23,9 +23,6 @@ When rendering the Carousel component using items binding, you can assign templa
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/carousel-item/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/carousel-item/carousel-item.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 ## Populating items using data source
@@ -37,7 +34,11 @@ When rendering the Carousel component using data binding, you can assign a commo
 {% include code-snippet/carousel/populating-items/item-datasource/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/item-datasource/item-datasource.cs %}
+public class CarouselDataBinding
+{
+    public int Id { get; set; }
+    public string Title { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,12 +57,9 @@ Using the [selectedIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/select-item/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/select-item/select-item.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel selected slide](../images/selected_index.png)
+![Carousel selected slide](images/selected_index.png)
 
 ### Select an item using the method
 
@@ -71,7 +69,38 @@ Using the `prev` or `next` public method of the Carousel component, you can swit
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/select-item-method/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/select-item-method/select-item-method.cs %}
+{% endtabs %}
+
+## Partial visible slides
+
+The Carousel component supports to show one complete slide and a partial view of adjacent (previous and next) slides at the same time. You can enable or disable the partial slides using the [`partialVisible`](../api/carousel/#partialVisible) property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/populating-items/partial-visible/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![Carousel](./images/partial-visible.jpg)
+
+N> Slide animation only applicable if the `partialVisible` is enabled.
+
+The last slide will be displayed as a partial slide at the initial rendering when the [`loop`](../api/carousel/#loop) and `partialVisible` properties are enabled.
+
+The previous slide is not displayed at the initial rendering when the `loop` is disabled.
+
+The following example code depicts the functionality of `partialVisible` and without `loop` functionalities.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/populating-items/partial-visible/without-loop/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel](./images/without-loop.jpg)
+
+## See also
+
+* [Customizing partial slides size](./styles-and-appearance/#customizing-partial-slides-size)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselUGSample).

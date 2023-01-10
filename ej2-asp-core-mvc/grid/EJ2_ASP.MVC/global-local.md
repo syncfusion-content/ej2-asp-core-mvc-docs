@@ -107,8 +107,8 @@ The following list of properties and its values are used in the grid.
 |lastPageTooltip | Go to last page|
 |nextPageTooltip | Go to next page|
 |previousPageTooltip | Go to previous page|
-|nextPagerTooltip | Go to next pager|
-|previousPagerTooltip | Go to previous pager|
+|nextPagerTooltip | Go to next pager items|
+|previousPagerTooltip | Go to previous pager items|
 |pagerDropDown | Items per page|
 |pagerAllDropDown | Items|
 |All | All|
@@ -173,8 +173,8 @@ The [`Internationalization`](../../common/intl.html) library is used to globaliz
 
 
 
-> In the above sample, **Freight** column is formatted by **NumberFormatOptions**.
-> By default, [`Locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Locale) value is **en-US**. If you want to change the **en-US** culture to a different culture, you have to change  the [`Locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Locale) accordingly.
+N> In the above sample, **Freight** column is formatted by **NumberFormatOptions**.
+<br/> By default, [`Locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Locale) value is **en-US**. If you want to change the **en-US** culture to a different culture, you have to change  the [`Locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Locale) accordingly.
 
 ## Right to left (RTL)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cascading in ##Platform_Name## Combo Box Component
-description: Learn here all about Cascading in Syncfusion ##Platform_Name## Combo Box component of Syncfusion Essential JS 2 and more.
+title: Cascading in ##Platform_Name## Combo Box Control | Syncfusion
+description: Learn here all about Cascading in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cascading
 publishingplatform: ##Platform_Name##
@@ -22,7 +22,23 @@ The following example shows the cascade behavior of country, state, and city Com
 {% include code-snippet/combobox/how-to/cascading/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="State.cs" %}
-{% include code-snippet/combobox/how-to/cascading/State.cs %}
+public class State
+{
+    public string StateName { get; set; }
+    public string CountryId { get; set; }
+    public string StateId { get; set; }
+}
+public class Country
+{
+    public string CountryName { get; set; }
+    public string CountryId { get; set; }
+}
+public class Cities
+{
+    public string CityName { get; set; }
+    public string StateId { get; set; }
+    public int CityId { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,3 +54,4 @@ The following example shows the cascade behavior of country, state, and city Com
 {% endtabs %}
 {% endif %}
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/ComboBoxHowToSample).

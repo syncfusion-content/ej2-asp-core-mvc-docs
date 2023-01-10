@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Action Buttons in ##Platform_Name## Card Component
-description: Learn here all about Action Buttons in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
+title: Action Buttons in ##Platform_Name## Card Control | Syncfusion
+description: Learn here all about Action Buttons in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Action Buttons
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Action Buttons
+# Action Buttons in Card Control
 
 You can include Action buttons within the Card and customize them. Action button is a `div` element with `e-card-actions` class followed by button tag or anchor tag within the card root element.
 
@@ -43,9 +43,6 @@ By default, action buttons positioned in horizontal alignment, and also it can b
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/card/card-action-btn/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card-action-btn/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -63,6 +60,8 @@ By default, action buttons positioned in horizontal alignment, and also it can b
 
 ![CSS Card Control with action buttons](./images/card-action.PNG)
 
-## See Also
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).
+
+## See also
 
 * [How to integrate other component inside the card](./how-to/integrate-other-component-inside-the-card)

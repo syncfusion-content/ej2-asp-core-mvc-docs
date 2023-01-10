@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Tree Grid Component
+title: Sorting in ##Platform_Name## Tree Grid Control | Syncfusion
 description: Learn here all about Sorting in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sorting
@@ -9,12 +9,11 @@ documentation: ug
 ---
 
 
-# Sorting
+# Sorting in Tree Grid Control
 
-Sorting enables you to sort data in **Ascending** or **Descending** order.
-To sort a column, click the column header.
+Sorting enables you to sort data in **Ascending** or **Descending** order. To sort a column, click the column header.
 
-To sort multiple columns, press and hold the CTRL key and click the column header.  You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
+To sort multiple columns, press and hold the CTRL key and click the column header. You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
 
 To enable sorting in the TreeGrid, set the [`allowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowSorting.html) property to true. Sorting options can be configured through the [`e-treegrid-sortsettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSortSettings.html) tag helper.
 
@@ -43,9 +42,9 @@ To enable sorting in the TreeGrid, set the [`allowSorting`](https://help.syncfus
 
 
 
-> TreeGrid columns are sorted in the **Ascending** order. If you click the already sorted column, the sort direction toggles.
-> You can apply and clear sorting by invoking **sortColumn** and **clearSorting** methods.
-> To disable sorting for a particular column, set the [`allowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowSorting.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **false**.
+N> TreeGrid columns are sorted in the **Ascending** order. If you click the already sorted column, the sort direction toggles.
+<br/> You can apply and clear sorting by invoking **sortColumn** and **clearSorting** methods.
+<br/> To disable sorting for a particular column, set the [`allowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowSorting.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **false**.
 
 ## Initial sort
 
@@ -105,7 +104,7 @@ During the sort action, the treegrid component triggers two events. The [`action
 
 
 
-> The **args.requestType** is the current action name. For example, in sorting the **args.requestType** value is **sorting**.
+N> The **args.requestType** is the current action name. For example, in sorting the **args.requestType** value is **sorting**.
 
 <!--  Custom sort comparer
 
@@ -160,4 +159,4 @@ The following screenshot shows treegrid touch sorting.
 
 ![Touch interaction](images/touch-sorting.jpg)
 
-> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.

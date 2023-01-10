@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set Clear Button In Calendar in ##Platform_Name## Calendar Component
-description: Learn here all about how to set Clear Button in Calendar in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
+title: Set Clear Button In Calendar in ##Platform_Name## Calendar Control | Syncfusion
+description: Learn here all about how to set Clear Button in Calendar in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set Clear Button In Calendar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Set clear button
+# Set clear button in Calendar Control
 
 To configure `clear` button in Calendar UI, do the following:
 
@@ -40,4 +40,4 @@ To configure `clear` button in Calendar UI, do the following:
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

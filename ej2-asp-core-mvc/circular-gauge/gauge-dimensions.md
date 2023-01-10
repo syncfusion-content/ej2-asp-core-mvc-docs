@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gauge Dimensions in ##Platform_Name## Circular Gauge Component
-description: Learn here all about Gauge Dimensions in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
+title: Gauge Dimensions in ##Platform_Name## Circular Gauge Control | Syncfusion
+description: Learn here all about Gauge Dimensions in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Gauge Dimensions
 publishingplatform: ##Platform_Name##
@@ -14,7 +14,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-You can also set size for the gauge directly through [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_Height) properties.
+You can also set size for the gauge directly through [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_Width) and [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_Height) properties.
 
 **In Pixel**
 
@@ -25,9 +25,6 @@ You can set the size of the gauge in pixel as demonstrated below.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-dimension/gauge-dimension/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Gauge-dimension.cs" %}
-{% include code-snippet/circulargauge/gauge-dimension/gauge-dimension/gauge-dimension.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,9 +52,6 @@ By setting value in percentage, gauge gets its dimension with respect to its con
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-dimension/percentage/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Percentage.cs" %}
-{% include code-snippet/circulargauge/gauge-dimension/percentage/percentage.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -74,4 +68,6 @@ By setting value in percentage, gauge gets its dimension with respect to its con
 
 
 
-> When you do not specify the size, it takes `450px` as the height and window size as its width.
+N> When you do not specify the size, it takes `450px` as the height and window size as its width.
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CircularGauge/CircularGaugeUGSample).

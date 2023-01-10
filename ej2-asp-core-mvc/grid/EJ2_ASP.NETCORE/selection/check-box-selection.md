@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Checkbox Selection in ##Platform_Name## Grid Component
+title: Checkbox Selection in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Checkbox Selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Checkbox Selection
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Checkbox Selection
+# Checkbox Selection in ASP.NET CORE Grid Component
 
 Checkbox selection provides an option to select multiple grid records with help of checkbox in each row.
 
@@ -40,8 +40,8 @@ To render the checkbox in each grid row, you need to use checkbox column with ty
 
 
 
-> By default, selection is allowed by clicking a grid row or checkbox in that row. To allow selection only through checkbox, you can set the [`checkboxOnly`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CheckboxOnly) property of **e-grid-selectionsettings** as true.
-> Selection can be persisted in all the operations using the [`persistSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property of **e-grid-selectionsettings**.
+N> By default, selection is allowed by clicking a grid row or checkbox in that row. To allow selection only through checkbox, you can set the [`checkboxOnly`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CheckboxOnly) property of **e-grid-selectionsettings** as true.
+<br/> Selection can be persisted in all the operations using the [`persistSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property of **e-grid-selectionsettings**.
 For persisting selection on the grid, any one of the columns should be defined as a primary key using the [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property.
 
 ## Checkbox selection Mode
@@ -74,3 +74,31 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 {% endtabs %}
 {% endif %}
 
+## Prevent specific rows from being selected in checkbox selection
+
+You can prevent specific rows from being selected in the checkbox selection mode by hiding the checkboxes using the [rowDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event. You achieve this by setting the `isSelectable` argument as false in the `rowDataBound` event based on certain conditions as per the needs of the application.
+
+In the following sample, the selection of specific rows has been prevented based on the `isSelectable` argument in the `rowDataBound` event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/prevent-checkbox-selection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Prevent-checkbox-selection.cs" %}
+{% include code-snippet/grid/selection/prevent-checkbox-selection/prevent-checkbox-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/prevent-checkbox-selection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Prevent-checkbox-selection.cs" %}
+{% include code-snippet/grid/selection/prevent-checkbox-selection/prevent-checkbox-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

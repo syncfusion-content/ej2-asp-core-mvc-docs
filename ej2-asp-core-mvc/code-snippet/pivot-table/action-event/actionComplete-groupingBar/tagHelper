@@ -1,4 +1,4 @@
-<ejs-pivotview id="PivotView" height="300" showGroupingBar="true" actionComplete:"actionComplete">
+<ejs-pivotview id="PivotView" height="300" showGroupingBar="true" actionComplete="actionComplete">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
         <e-rows>
             <e-field name="Country"></e-field>
@@ -17,7 +17,7 @@
 
 <script>
     function actionComplete(args) {
-        if (args.actionName == 'Field sorted' && args.actionName == 'Field filtered') {
+        if (args.actionName == 'Field sorted' || args.actionName == 'Field filtered') {
             // Triggers when the grouping bar UI actions such as sorting and filtering are completed.
         }
     }

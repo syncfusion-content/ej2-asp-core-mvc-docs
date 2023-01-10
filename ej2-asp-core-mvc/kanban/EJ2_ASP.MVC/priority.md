@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Priority in ##Platform_Name## Kanban Component
+title: Priority and Card Order in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Priority in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Priority
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Card Order
+# Card Order in ASP.NET MVC Kanban control
 
 By default, the Kanban cards are initially placed and drop the card inside the columns based on JSON data orders.
 
@@ -36,7 +36,7 @@ Column B having Card D with priority value `5`. Dropped Card D between Card A an
 Column A having Card A with priority value `1`, Card B with priority value `3` and Card C with priority value `5`.
 Column B having Card D with priority value `5`. Dropped Card D between Card A and Card B. Now, Card D, B and C dynamically changed their priority value to `2, 3, 5`.
 
-> The `Priority` property mapping key value must be `number` format.
+N> The `Priority` property mapping key value must be `number` format.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -46,6 +46,9 @@ Column B having Card D with priority value `5`. Dropped Card D between Card A an
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/priority/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/priority/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,6 +60,9 @@ Column B having Card D with priority value `5`. Dropped Card D between Card A an
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/priority/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/priority/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

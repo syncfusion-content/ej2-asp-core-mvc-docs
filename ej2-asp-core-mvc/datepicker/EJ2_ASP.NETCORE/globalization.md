@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Datepicker Component
+title: Globalization in ##Platform_Name## Datepicker Control | Syncfusion
 description: Learn here all about Globalization in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Globalization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization
+# Globalization in ASP.NET CORE Datepicker Control
 
 Globalization is the combination of adapting the component to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization/) and also by adding cultural specific customizations and translating the text [`localization`](../common/localization/).
 
@@ -25,10 +25,11 @@ To go with the different culture other than `English`, follow the below steps.
 npm install cldr-data --save
 ```
 
-Once the package is installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
+Once the package is installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
-In ASP.NET Core, the static file contents should be present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `\wwwroot\scripts\cldr-data` location.
+In ASP.NET Core, the static file contents should be present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `/wwwroot/scripts/cldr-data` location.
 
+```typescript
 function loadCultureFiles(name) {
         var files = ['ca-gregorian.json', 'numbers.json', 'timeZoneNames.json'];
         var loader = ej.base.loadCldr;
@@ -48,7 +49,7 @@ function loadCultureFiles(name) {
 
 ```
 
-> The `Localization` library allows to localize default text content of the DatePicker. The DatePicker component has static text for **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Locale) value and translation object.
+N> The `Localization` library allows to localize default text content of the DatePicker. The DatePicker component has static text for **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Locale) value and translation object.
 
 | Locale keywords | Text |
 | ----- | ----- |

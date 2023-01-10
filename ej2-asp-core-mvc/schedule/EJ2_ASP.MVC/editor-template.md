@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editor Template in ##Platform_Name## Schedule Component
+title: Editor Template in ##Platform_Name## Syncfusion Schedule Component
 description: Learn here all about Editor Template in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Editor Template
@@ -19,7 +19,7 @@ The editor window usually opens on the Scheduler, when a cell or event is double
 
 In mobile devices, you can open the detailed editor window in edit mode by clicking the edit icon on the popup, that opens on single tapping an event. You can also open it in add mode by single tapping a cell, which will display a `+` indication, clicking on it again will open the editor window.
 
-> You can also prevent the editor window from opening, by rendering Scheduler in a `Readonly` mode or by doing code customization within the `PopupOpen` event.
+N> You can also prevent the editor window from opening, by rendering Scheduler in a `Readonly` mode or by doing code customization within the `PopupOpen` event.
 
 ### How to change the editor window header title and text of footer buttons
 
@@ -108,7 +108,7 @@ It is possible to validate the required fields of the editor window from client-
 
 
 
-> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator/#validation-rules) documentation.
+N> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator/#validation-rules) documentation.
 
 ### Add additional fields to the default editor
 
@@ -238,7 +238,7 @@ By default, these popups are displayed over cells and appointments of Scheduler 
 
 
 
-> The quick popup that opens while single clicking on the cells are not applicable on mobile devices.
+N> The quick popup that opens while single clicking on the cells are not applicable on mobile devices.
 
 ### How to open Quick Info popup on multiple cell selection
 
@@ -317,7 +317,7 @@ The look and feel of the built-in quick popup window, which opens when single cl
 
 
 
-> The quick popup in adaptive mode can also be customized using `QuickInfoTemplates` using `e-device` class.
+N> The quick popup in adaptive mode can also be customized using `QuickInfoTemplates` using `e-device` class.
 
 ### Customizing timezone collection in the editor window
 
@@ -443,7 +443,7 @@ In the following code example, validation has been added to the status field.
 
 The **e-field** class is not added to each field defined within the template, so you should allow to set those field values externally by using the `popupClose` event.
 
-> You can allow to retrieve the data only on the `save` and `delete` option. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
+N> You can allow to retrieve the data only on the `save` and `delete` option. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
 
 The following code example shows how to save the customized event editor using a template by the `popupClose` event.
 
@@ -490,7 +490,7 @@ In case, if you need to prevent only specific popups on Scheduler, then you can 
 
 When the number of appointments count that lies on a particular time range * default appointment height exceeds the default height of a cell in month view and all other timeline views, a `+ more` text indicator will be displayed at the bottom of those cells. This indicator denotes that the cell contains few more appointments in it and clicking on that will display a popup displaying all the appointments present on that day.
 
-> To disable this option of showing popup with all hidden appointments, while clicking on the text indicator, you can do code customization within the `PopupOpen` event.
+N> To disable this option of showing popup with all hidden appointments, while clicking on the text indicator, you can do code customization within the `PopupOpen` event.
 
 The same indicator is displayed on all-day row in calendar views such as day, week and work week views alone, when the number of appointment count present in a cell exceeds three. Clicking on the text indicator here will not open a popup, but will allow the expand/collapse option for viewing the remaining appointments present in the all-day row.
 
@@ -608,4 +608,55 @@ The following code example shows you how to customize the `moreEventsClick` prop
 
 
 
-> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+### How to close the editor window manually
+
+You can close the editor window by using `closeEditor` method. 
+
+
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/close-editor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/close-editor/data.cs %}
+{% endhighlight %}close
+{% endtabs %}
+
+
+
+### How to open the quick info popup manually
+
+You can open the quick info popup in scheduler by using the `openQuickInfoPopup` public method. To open the cell quick info popup, you can pass the cell data as an argument to the method. To open the event quick info popup, you should pass the event data object as an argument to the method.
+
+
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/open-quickinfo-popup/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/open-quickinfo-popup/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+
+
+### How to close the quick info popup manually
+
+You can close the quick info popup in scheduler by using the `closeQuickInfoPopup` public method. The following code example demonstrates the how to close quick info popup manually.
+
+
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/close-quickinfo-popup/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/close-quickinfo-popup/data.cs %}
+{% endhighlight %}close
+{% endtabs %}
+
+
+
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

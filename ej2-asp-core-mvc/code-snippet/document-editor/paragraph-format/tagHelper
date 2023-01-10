@@ -1,12 +1,11 @@
 <div id="toolbar"></div>
 <div id="documenteditor" style="width:100%;height:100%" >
-<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableEditorHistory=true enableSfdtExport=true enableContextMenu=true id="container"></ejs-documenteditor>
+    <ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableEditorHistory=true enableSfdtExport=true enableContextMenu=true id="container"></ejs-documenteditor>
 </div>
 
 <script>
     var documenteditor;
     document.addEventListener('DOMContentLoaded', function () {
-
         documenteditor = document.getElementById("container").ej2_instances[0];
         documenteditor.resize();
         updateContainerSize();
@@ -40,6 +39,10 @@
                 case 'ClearFormat':
                     documenteditor.editor.clearFormatting();
                     break;
+                case 'ShowParagraphMark':
+                    //Show or hide the hidden characters like spaces, tab, paragraph marks, and breaks.
+                    documenteditor.documentEditorSettings.showHiddenMarks = !documenteditor.documentEditorSettings.showHiddenMarks;
+                    break;
             }
         }
         //Change the line spacing of selected or current paragraph
@@ -72,7 +75,7 @@
         function onSelectionChange() {
             if (documenteditor.selection) {
                 var paragraphFormat = documenteditor.selection.paragraphFormat;
-                var toggleBtnId = ['AlignLeft', 'AlignCenter', 'AlignRight', 'Justify'];
+                var toggleBtnId = ['AlignLeft', 'AlignCenter', 'AlignRight', 'Justify', 'ShowParagraphMark'];
                 for (var i = 0; i < toggleBtnId.length; i++) {
                     var toggleBtn = document.getElementById(
                         toggleBtnId[i]
@@ -89,6 +92,9 @@
                         .classList.add('e-btn-toggle');
                 } else {
                     document.getElementById('Justify').classList.add('e-btn-toggle');
+                }
+                if(documenteditor.documentEditorSettings.showHiddenMarks) {
+                    document.getElementById('ShowParagraphMark').classList.add('e-btn-toggle');
                 }
                 // #endregion
             }
@@ -134,6 +140,12 @@
                     prefixIcon: 'e-de-icon-ClearAll',
                     tooltipText: 'ClearFormatting',
                     id: 'ClearFormat',
+                },
+                { type: 'Seperator' },
+                {
+                    prefixIcon: 'e-de-e-paragraph-mark e-icons',
+                    tooltipText: 'Show the hidden characters like spaces, tab, paragraph marks, and breaks.(Ctrl + *)',
+                    id: 'ShowParagraphMark',
                 }
             ],
         });

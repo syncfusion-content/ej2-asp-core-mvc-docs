@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tool Bar in ##Platform_Name## Pivot Table Component
+title: Tool Bar in ##Platform_Name## Pivot Table Control | Syncfusion
 description: Learn here all about Tool Bar in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tool Bar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Toolbar
+# Toolbar in ##Platform_Name## Syncfusion Pivot Table Control
 
 Toolbar option allows to access the frequently used features like switching between pivot table and pivot chart, changing chart types, conditional formatting, exporting, etc... with ease at runtime. This option can be enabled by setting the [`showToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**. The [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag accepts the collection of built-in toolbar options.
 
@@ -35,7 +35,7 @@ The following table shows built-in toolbar options and its actions.
 | Field List | Shows the fieldlist pop-up |
 | MDX | Shows the MDX query that was run to retrieve data from the OLAP data source. **This applies only to the OLAP data source.** |
 
-> The order of toolbar options can be changed by simply moving the position of items in the **ToolbarItems** collection. Also if end user wants to remove any toolbar option from getting displayed, it can be simply ignored from adding into the **ToolbarItems** collection.
+N> The order of toolbar options can be changed by simply moving the position of items in the **ToolbarItems** collection. Also if end user wants to remove any toolbar option from getting displayed, it can be simply ignored from adding into the **ToolbarItems** collection.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -103,14 +103,14 @@ In the chart, the user can switch from single axis to multiple axes with the hel
 
 <!-- markdownlint-disable MD009 -->
 
-There are two modes available in **Multiple Axis** option: `Stacked` and `Single`. The modes can be changed using “Multiple Axis Mode” drop-down list which appears while clicking the **More...** option.
+There are three modes available in **Multiple Axis** option: `Stacked`, `Single` and `Combined`. The modes can be changed using “Multiple Axis Mode” drop-down list which appears while clicking the **More...** option.
 
 ![output](images/multiple-axis-mode.png)
 
 ## Show or hide legend
 
 In the chart, legend can be shown or hidden dynamically with the help of the built-in option available in the chart type drop-down menu.
-> By default, the legend is not be visible for the accumulation chart types like pie, doughnut, pyramid, and funnel. Users can enable or disable using the built-in checkbox option.
+N> By default, the legend is not be visible for the accumulation chart types like pie, doughnut, pyramid, and funnel. Users can enable or disable using the built-in checkbox option.
 
 ![output](images/accumulation-legend.png)
 
@@ -118,7 +118,7 @@ In the chart, legend can be shown or hidden dynamically with the help of the bui
 
 In addition to the existing built-in toolbar items, new toolbar item(s) may also be included. This can be achieved by using the [`toolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarRender) event. The action of the new toolbar item(s) can also be defined within this event.
 
-> The new toolbar item(s) can be added to the desired position in the toolbar using the `splice` option.
+N> The new toolbar item(s) can be added to the desired position in the toolbar using the `splice` option.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -152,6 +152,7 @@ In the above topic, we have seen how to add an icon as one of the toolbar item i
 ### Toolbar Template
 
 It allows to customize the toolbar panel by using template option. It allows any custom control to be used as one of the toolbar item inside the toolbar panel. It can be achieved by two ways.
+
 Here, the entire toolbar panel can be framed in HTML elements that are appended at the top of the pivot table. The **id** of the HTML element needs to be set in the [`toolbarTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarTemplate) property in-order to map it to the pivot table.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -210,7 +211,7 @@ Another option allows to frame a custom toolbar item using HTML elements and inc
 
 ![output](images/tool-temp-rtl.png)
 
-> For both options, the actions for the toolbar template items can be defined in the event [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarClick). Also, if the toolbar item is a custom control then its built-in events can also be accessed.
+N> For both options, the actions for the toolbar template items can be defined in the event [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarClick). Also, if the toolbar item is a custom control then its built-in events can also be accessed.
 
 <!-- markdownlint-disable MD009 -->
 

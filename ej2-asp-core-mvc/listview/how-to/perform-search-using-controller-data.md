@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Perform Search Using Controller Data in ##Platform_Name## Listview Component
-description: Learn here all about Perform Search Using Controller Data in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Perform Search Using Controller Data in ##Platform_Name## Listview Control | Syncfusion
+description: Learn here all about Perform Search Using Controller Data in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Perform Search Using Controller Data
 publishingplatform: ##Platform_Name##
@@ -11,6 +11,7 @@ documentation: ug
 # Perform Search Operation in ListView with Controller data
 
 In ASP .Net Core environment, we can fetch the data from controller using adaptors and the fetched data can be appended to any Controls.
+
 Here we are going to use URL Adaptor to fetch the data from Controller and bind the data to ListView.
 
 To achieve this, refer to the below code snippet.
@@ -132,7 +133,7 @@ namespace filterlist.Controllers
 
 ```
 
-> While using Adaptors in our application, we need to return the JSON data from Controller.
+N> While using Adaptors in our application, we need to return the JSON data from Controller.
 
 ## Perform Search Operation
 

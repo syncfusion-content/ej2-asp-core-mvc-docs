@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zooming in ##Platform_Name## Chart Component
+title: Zooming in ##Platform_Name## Syncfusion Chart Component
 description: Learn here all about Zooming in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Zooming
@@ -19,7 +19,7 @@ Chart can be zoomed in three ways.
 * Mousewheel - By setting [`enableMouseWheelZooming`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html) property to true in `zoomSettings`, you can zoomin and zoomout the chart by scrolling the mouse wheel.
 * Pinch - By setting  [`enablePinchZooming`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html) property to true in `zoomSettings`, you can zoom the chart through pinch gesture in touch enabled devices.
 
-> Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE11, Chrome and Opera browsers support multi-touch in desktop devices.
+N> Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE11, Chrome and Opera browsers support multi-touch in desktop devices.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -85,7 +85,7 @@ There are three types of mode.
 
 ## Toolbar
 
-By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed chart. You can customize to show your desire tools in the toolbar using [`toolbarItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html) property.
+By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed chart. You can customize to show the desired options in the toolbar using the [`toolbarItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html#Syncfusion_EJ2_Charts_zoomsettings_ToolbarItems) property. Also using the [`showToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html#Syncfusion_EJ2_Charts_zoomsettings_ShowToolbar) property, you can show toolkit for zooming and panning the chart during initial rendering itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

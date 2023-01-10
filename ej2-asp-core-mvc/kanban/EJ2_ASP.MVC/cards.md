@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cards in ##Platform_Name## Kanban Component
+title: Usage of Cards and its Layout in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Cards in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cards
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cards
+# Cards in ASP.NET MVC Kanban component
 
 The cards are main elements in Kanban board, which represent the task information with header and content. The header and content of a card is fetched from the corresponding mapping fields. The card layout can be customized with template also.
 
@@ -23,7 +23,7 @@ Added dotted border on Kanban cells except the dragged clone cells when dragging
 
 The card header is achieved by mapping the `HeaderField` property, which is placed inside the `CardSettings` property. By default, the `ShowHeader` property enabled by Kanban board that is used to show the header at the top of the card.
 
-> The `HeaderField` property of `CardSettings` is mandatory to render the cards in the Kanban board. It acts as a unique field that is used to avoid the duplication of card data. You can not change the `HeaderField` of mapped data value using the `updateCard` public method or server-side update of data.
+N> The `HeaderField` property of `CardSettings` is mandatory to render the cards in the Kanban board. It acts as a unique field that is used to avoid the duplication of card data. You can not change the `HeaderField` of mapped data value using the `updateCard` public method or server-side update of data.
 
 In the following demo, the `ShowHeader` property is disabled on Kanban board.
 
@@ -36,6 +36,9 @@ In the following demo, the `ShowHeader` property is disabled on Kanban board.
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/cards/header/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/cards/header/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -46,6 +49,9 @@ In the following demo, the `ShowHeader` property is disabled on Kanban board.
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/cards/header/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/cards/header/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -73,6 +79,9 @@ You can customize the default card layout using template as per your application
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/cards/template/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/cards/template/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -83,6 +92,9 @@ You can customize the default card layout using template as per your application
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/cards/template/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/cards/template/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -114,6 +126,9 @@ Select the multiple cards randomly using Ctrl + mouse click and select the multi
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/cards/multiple-selection/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/cards/multiple-selection/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -124,6 +139,9 @@ Select the multiple cards randomly using Ctrl + mouse click and select the multi
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/cards/multiple-selection/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/cards/multiple-selection/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Label in ##Platform_Name## Maps Component
+title: Data Label in Syncfusion ##Platform_Name## Maps Component
 description: Learn here all about Data Label in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Label
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data labels
+# Data labels in ##Platform_Name## Maps Component
 
 Data labels provide information to users about the shapes of the Maps component. It can be enabled by setting the `Visible` property of the `MapsDataLabelSettings` to **true**.
 
@@ -182,7 +182,7 @@ The Maps component provides an option to handle the labels when a label intersec
 
 The data label can be added as a template in the Maps component. The `Template` property of `MapsDataLabelSettings` is used to set the data label as a template. Any text or HTML element can be added as the template in data labels.
 
->The customization properties of data label, `SmartLabelMode` and `IntersectionAction` properties are not applicable to `Template` property. The styles can be applied to the label template using the CSS styles of the template element.
+N>The customization properties of data label, `SmartLabelMode` and `IntersectionAction` properties are not applicable to `Template` property. The styles can be applied to the label template using the CSS styles of the template element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

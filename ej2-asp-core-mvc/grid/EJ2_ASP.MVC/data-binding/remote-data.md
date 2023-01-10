@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Remote Data in ##Platform_Name## Grid Component
+title: Remote Data in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Remote Data in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Remote Data
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Remote Data
+# Remote Data in ASP.Net MVC Grid Component
 
 To bind remote data to grid component, assign service data as an instance of DataManager to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. To interact with remote data source,  provide the endpoint **url**.
 
@@ -38,7 +38,7 @@ To bind remote data to grid component, assign service data as an instance of Dat
 
 
 
-> By default, DataManager uses **ODataAdaptor** for remote data-binding.
+N> By default, DataManager uses **ODataAdaptor** for remote data-binding.
 
 ## OData adaptor - Binding OData service
 
@@ -108,7 +108,10 @@ You can use **WebApiAdaptor** to bind grid with Web API created using OData endp
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/data-binding/webapi/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Webapi.cs" %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/grid/data-binding/webapi/controller.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="WebAPI.cs" %}
 {% include code-snippet/grid/data-binding/webapi/webapi.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -119,7 +122,10 @@ You can use **WebApiAdaptor** to bind grid with Web API created using OData endp
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/data-binding/webapi/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Webapi.cs" %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/grid/data-binding/webapi/controller.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="WebAPI.cs" %}
 {% include code-snippet/grid/data-binding/webapi/webapi.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -297,4 +303,4 @@ The parameters of DataManager bound to `DataManagerRequest` in the server. You c
 
 
 
-> If the grid rendered rows with empty/blank values then it can be resolved with the procedure explained [here](#troubleshoot-grid-render-rows-without-data).
+N> If the grid rendered rows with empty/blank values then it can be resolved with the procedure explained [here](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/data-binding/data-binding#troubleshoot-grid-render-rows-without-data).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formatting in ##Platform_Name## Spreadsheet Component
+title: Formatting in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Formatting in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Formatting
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Formatting
+# Formatting in Spreadsheet Component
 
 Formatting options make your data easier to view and understand. The different types of formatting options in the Spreadsheet are,
 * Number Formatting
@@ -36,7 +36,7 @@ Number formatting provides a type for your data in the Spreadsheet. Use the [`al
 
 Number formatting can be applied in following ways,
 * Using the `format` property in `cell`, you can set the desired format to each cell at initial load.
-* Using the [`numberFormat`](../api/spreadsheet/#numberformat) method, you can set the number format to a cell or range of cells.
+* Using the `numberFormat` method, you can set the number format to a cell or range of cells.
 * Selecting the number format option from ribbon toolbar.
 
 ### Custom Number Formatting
@@ -85,7 +85,7 @@ The different types of custom number formatting supported in Spreadsheet are,
 | Accounting | `_(* #,##0.00_);_(* (#,##0.00);_(* "-"??_);_(@_)` |
 
 Custom Number formatting can be applied in following ways,
-* Using the [`numberFormat`](../api/spreadsheet/#numberformat) method, you can set your own custom number format to a cell or range of cells.
+* Using the `numberFormat` method, you can set your own custom number format to a cell or range of cells.
 * Selecting the custom number format option from custom number formats dialog or type your own format in dialog input and then click apply button. It will apply the custom format for selected cells.
 
 The following code example shows the number formatting in cell data.
@@ -119,7 +119,7 @@ The following code example shows the number formatting in cell data.
 
 Text and cell formatting enhances the look and feel of your cell. It helps to highlight a particular cell or range of cells from a whole workbook. You can apply formats like font size, font family, font color, text alignment, border etc. to a cell or range of cells. Use the [`allowCellFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowCellFormatting) property to enable or disable the text and cell formatting option in Spreadsheet. You can set the formats in following ways,
 * Using the `style` property, you can set formats to each cell at initial load.
-* Using the [`cellFormat`](../api/spreadsheet/#cellformat) method, you can set formats to a cell or range of cells.
+* Using the `cellFormat` method, you can set formats to a cell or range of cells.
 * You can also apply by clicking the desired format option from the ribbon toolbar.
 
 ### Fonts
@@ -208,16 +208,16 @@ The following features are not supported in Formatting:
 
 ## Conditional Formatting
 
-Conditional formatting helps you to format a cell or range of cells based on the conditions applied. You can enable or disable conditional formats by using the [`allowConditionalFormat`](../api/spreadsheet/#allowConditionalFormat) property.
+Conditional formatting helps you to format a cell or range of cells based on the conditions applied. You can enable or disable conditional formats by using the `allowConditionalFormat` property.
 
-> * The default value for the `allowConditionalFormat` property is `true`.
+N> * The default value for the `allowConditionalFormat` property is `true`.
 
 ### Apply Conditional Formatting
 
 You can apply conditional formatting by using one of the following ways,
 
 * Select the conditional formatting icon in the Ribbon toolbar under the Home Tab.
-* Using the [`conditionalFormat()`](../api/spreadsheet/#conditionalFormat) method to define the condition.
+* Using the `conditionalFormat` method to define the condition.
 * Using the `conditionalFormats` in sheets model.
 
 Conditional formatting has the following types in the spreadsheet,
@@ -228,15 +228,15 @@ Highlight cells rules option in the conditional formatting enables you to highli
 
 The following options can be given for the highlight cells rules as type,
 
->* 'GreaterThan', 'LessThan', 'Between', 'EqualTo', 'ContainsText', 'DateOccur', 'Duplicate', 'Unique'.
+N>* 'GreaterThan', 'LessThan', 'Between', 'EqualTo', 'ContainsText', 'DateOccur', 'Duplicate', 'Unique'.
 
 The following preset colors can be used for formatting styles,
 
->* `"RedFT"` - Light Red Fill with Dark Red Text,
->* `"YellowFT"` - Yellow Fill with Dark Yellow Text,
->* `"GreenFT"` - Green Fill with Dark Green Tex/t,
->* `"RedF"` - Red Fill,
->* `"RedT"` - Red Text.
+N>* `"RedFT"` - Light Red Fill with Dark Red Text,
+<br/>* `"YellowFT"` - Yellow Fill with Dark Yellow Text,
+<br/>* `"GreenFT"` - Green Fill with Dark Green Tex/t,
+<br/>* `"RedF"` - Red Fill,
+<br/>* `"RedT"` - Red Text.
 
 ### Top bottom rules
 
@@ -244,7 +244,7 @@ Top bottom rules option in the conditional formatting allows you to apply format
 
 The following options can be given for the top bottom rules as type,
 
->* 'Top10Items', 'Bottom10Items', 'Top10Percentage', 'Bottom10Percentage', 'BelowAverage', 'AboveAverage'.
+N>* 'Top10Items', 'Bottom10Items', 'Top10Percentage', 'Bottom10Percentage', 'BelowAverage', 'AboveAverage'.
 
 ### Data Bars
 
@@ -252,7 +252,7 @@ You can apply data bars to represent the data graphically inside a cell. The lon
 
 The following options can be given for the data bars as type,
 
->* 'BlueDataBar', 'GreenDataBar', 'RedDataBar', 'OrangeDataBar', 'LightBlueDataBar', 'PurpleDataBar'.
+N>* 'BlueDataBar', 'GreenDataBar', 'RedDataBar', 'OrangeDataBar', 'LightBlueDataBar', 'PurpleDataBar'.
 
 ### Color Scales
 
@@ -260,7 +260,7 @@ Using color scales, you can format your cells with two or three colors, where di
 
 The following options can be given for the color scales as type,
 
->* 'GYRColorScale', 'RYGColorScale', 'GWRColorScale', 'RWGColorScale', 'BWRColorScale', 'RWBColorScale', 'WRColorScale', 'RWColorScale', 'GWColorScale', 'WGColorScale', 'GYColorScale', 'YGColorScale'.
+N>* 'GYRColorScale', 'RYGColorScale', 'GWRColorScale', 'RWGColorScale', 'BWRColorScale', 'RWBColorScale', 'WRColorScale', 'RWColorScale', 'GWColorScale', 'WGColorScale', 'GYColorScale', 'YGColorScale'.
 
 ### Icon Sets
 
@@ -268,7 +268,7 @@ Icon sets will help you to visually represent your data with icons. Every icon r
 
 The following options can be given for the icon sets as type,
 
->* 'ThreeArrows', 'ThreeArrowsGray', 'FourArrowsGray', 'FourArrows', 'FiveArrowsGray', 'FiveArrows', 'ThreeTrafficLights1', 'ThreeTrafficLights2', 'ThreeSigns', 'FourTrafficLights', 'FourRedToBlack', 'ThreeSymbols', 'ThreeSymbols2', 'ThreeFlags', 'FourRating', 'FiveQuarters', 'FiveRating', 'ThreeTriangles', 'ThreeStars', 'FiveBoxes'.
+N>* 'ThreeArrows', 'ThreeArrowsGray', 'FourArrowsGray', 'FourArrows', 'FiveArrowsGray', 'FiveArrows', 'ThreeTrafficLights1', 'ThreeTrafficLights2', 'ThreeSigns', 'FourTrafficLights', 'FourRedToBlack', 'ThreeSymbols', 'ThreeSymbols2', 'ThreeFlags', 'FourRating', 'FiveQuarters', 'FiveRating', 'ThreeTriangles', 'ThreeStars', 'FiveBoxes'.
 
 ### Custom Format
 
@@ -276,14 +276,14 @@ Using custom format for conditional formatting you can set cell styles like colo
 
 In the MAY and JUN columns, we have applied conditional formatting custom format.
 
-> * In the Conditional format, custom format supported for Highlight cells rules and Top bottom rules.
+N> * In the Conditional format, custom format supported for Highlight cells rules and Top bottom rules.
 
 ### Clear Rules
 
 You can clear the defined rules by using one of the following ways,
 
 * Using the “Clear Rules” option in the Conditional Formatting button of HOME Tab in the ribbon to clear the rule from selected cells.
-* Using the [`clearConditionalFormat()`](../api/spreadsheet/#clearConditionalFormat) method to clear the defined rules.
+* Using the `clearConditionalFormat` method to clear the defined rules.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

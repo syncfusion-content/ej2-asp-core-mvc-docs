@@ -4,17 +4,17 @@
 <script>
     var documenteditor;
     var container;
-function onCreated() {
-    var documenteditorElement = document.getElementById("container");
-    container = documenteditorElement.ej2_instances[0];
-}
-function onSelectionChanged() {
-   // Check whether selection is in header
-   if (container.documentEditor.selection.contextType.indexOf('Header') > -1 ||
-   // Check whether selection is in Footer
-     container.documentEditor.selection.contextType.indexOf('Footer') > -1) {
-    // Close header Footer
-    container.documentEditor.selection.closeHeaderFooter();
-  }
-}
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+    }
+    function onSelectionChanged() {
+        // Check whether selection is in header
+        if (container.documentEditor.selection.contextType.indexOf('Header') > -1 ||
+        // Check whether selection is in Footer
+          container.documentEditor.selection.contextType.indexOf('Footer') > -1) {
+          // Close header Footer
+          container.documentEditor.selection.closeHeaderFooter();
+        }
+    }
 </script>

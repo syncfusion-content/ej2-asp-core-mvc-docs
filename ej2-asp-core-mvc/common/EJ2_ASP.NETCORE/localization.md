@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Common control
+title: Localization in ##Platform_Name## Common control | Syncfusion
 description: Checkout the documentation and learn about localization in Syncfusion ##Platform_Name## Common control and more.
 platform: ej2-asp-core-mvc
 control: Common
@@ -16,11 +16,11 @@ Localization (L10N) is the process of adapting application controls and content 
 
 Syncfusion controls can be localized using the culture based JSON files. You can find the default and culture based localization files in the following GitHub repository.
 
-> You can get default and culture based JSON files from [GitHub](https://github.com/syncfusion/ej2-locale).
+N> You can get default and culture based JSON files from [GitHub](https://github.com/syncfusion/ej2-locale).
 
 ### Adding culture based JSON files
 
-Syncfusion [locale data](https://www.npmjs.com/package/@syncfusion/ej2-locale) is also available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules\@syncfusion\ej2-locale\src`.
+Syncfusion [locale data](https://www.npmjs.com/package/@syncfusion/ej2-locale) is also available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules/@syncfusion/ej2-locale/src`.
 
 {% tabs %}
 {% highlight c# tabtitle="CMD" %}
@@ -30,7 +30,7 @@ npm i @syncfusion/ej2-locale
 {% endhighlight %}
 {% endtabs %}
 
-Once the `ej2-locale` package has installed, create a folder `locale` inside the `wwwroot` folder. Then copy the specific culture files from `node_modules\@syncfusion\ej2-locale\src` location and paste it inside the `wwwroot/locale` folder like below. The culture file contains all Syncfusion ASP.NET Core controls locale text.
+Once the `ej2-locale` package has installed, create a folder `locale` inside the `wwwroot` folder. Then copy the specific culture files from `node_modules/@syncfusion/ej2-locale/src` location and paste it inside the `wwwroot/locale` folder like below. The culture file contains all Syncfusion ASP.NET Core controls locale text.
 
 ![Moved locale data to ASP.NET Core app](images/moved-locale-data.png)
 
@@ -80,7 +80,7 @@ Now, you can add the Syncfusion ASP.NET Core control in `~/Pages/Index.cshtml` p
 
 ![Static culture](images/grid-locale.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-localization/tree/main/Localization-with-static-culture)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-localization/tree/main/Localization-with-static-culture)
 
 ## Dynamically set the culture
 
@@ -146,7 +146,7 @@ public class CultureDetails
 
 ![Change culture dynamically](images/dynamic-culture-switch.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-localization/tree/main/Localization-with-dynamic-culture)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-localization/tree/main/Localization-with-dynamic-culture)
 
 ## Changing current locale
 
@@ -187,8 +187,8 @@ The following example demonstrates the Grid in Deutsch culture.
                 'lastPageTooltip': 'Zur letzten Seite',
                 'nextPageTooltip': 'Zur nächsten Seite',
                 'previousPageTooltip': 'Zurück zur letzten Seit',
-                'nextPagerTooltip': 'Zum nächsten Pager',
-                'previousPagerTooltip': 'Zum vorherigen Pager'
+                'nextPagerTooltip': 'Gehen Sie zu den nächsten Pager-Elementen',
+                'previousPagerTooltip': 'Gehen Sie zu vorherigen Pager-Elementen'
             }
         }
     });
@@ -198,7 +198,7 @@ The following example demonstrates the Grid in Deutsch culture.
 {% endhighlight %}
 {% endtabs %}
 
-> Before changing a culture globally, ensure that locale text for the concerned culture is loaded through `L10n.load` function. 
+N> Before changing a culture globally, ensure that locale text for the concerned culture is loaded through `L10n.load` function. 
 
 ## See also
 

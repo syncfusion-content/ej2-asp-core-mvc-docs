@@ -27,12 +27,12 @@ Install the `CLDR-Data` package by using the below command (it installs the CLDR
 npm install cldr-data --save
 ```
 
-Once the package is installed, you can find the culture specific JSON data under the location `node_modules\cldr-data`.
+Once the package is installed, you can find the culture specific JSON data under the location `node_modules/cldr-data`.
 
 Once the `CLDR-Data` installed create a folder `cldr-data` inside the `Scripts` folder. Then create the folder directory like shown below in the structure inside the `Scripts` folder.
 
-* `Scripts\cldr-data\supplemental`
-* `Scripts\cldr-data\main`
+* `Scripts/cldr-data/supplemental`
+* `Scripts/cldr-data/main`
 
 The files named as below are required to setup the specific culture to the Schedule.
 
@@ -42,9 +42,9 @@ The files named as below are required to setup the specific culture to the Sched
 * timeZoneNames.json
 * ca-islamic.json
 
-The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now you can move this file to the location `Scripts\cldr-data\supplemental`.
+The file named `numberingSystems.json` is available in the location `node_modules/cldr-data/supplemental` which is common for all the cultures. Now you can move this file to the location `Scripts/cldr-data/supplemental`.
 
-The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules\cldr-data\main\de`. Now create a folder named `de` inside the location `Scripts\cldr-data\main` and move the files inside it.
+The other required files mentioned above are available in the location `node_modules/cldr-data/main/culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules/cldr-data/main/de`. Now create a folder named `de` inside the location `Scripts/cldr-data/main` and move the files inside it.
 
 Now use the `loadCultureFiles` method to load the culture specific CLDR JSON data.
 
@@ -186,7 +186,7 @@ The following example demonstrates the Scheduler component in 24 hours format.
 
 
 
-> `timeFormat` property only accepts the valid time format's.
+N> `timeFormat` property only accepts the valid time format's.
 
 ## Displaying Scheduler in RTL mode
 
@@ -217,7 +217,7 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 
 
 
-> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
 
 ## See Also
 

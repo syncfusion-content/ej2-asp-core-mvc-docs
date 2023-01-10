@@ -25,9 +25,9 @@ To go with the different culture other than `English`, follow the below steps.
 npm install cldr-data --save
 ```
 
-Once the package is installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
+Once the package is installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
-In ASP.NET Core, the static file contents should be present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `\wwwroot\scripts\cldr-data` location as like the below code examples
+In ASP.NET Core, the static file contents should be present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `/wwwroot/scripts/cldr-data` location as like the below code examples
 
 ```typescript
 
@@ -50,7 +50,7 @@ function loadCultureFiles(name) {
 
 ```
 
-> The `Localization` library allows to localize default text content of the DateTimePicker. The DateTimePicker control has static text for **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Locale) value and translation object.
+N> The `Localization` library allows to localize default text content of the DateTimePicker. The DateTimePicker control has static text for **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Locale) value and translation object.
 
 | Locale keywords | Text |
 | ----- | ----- |

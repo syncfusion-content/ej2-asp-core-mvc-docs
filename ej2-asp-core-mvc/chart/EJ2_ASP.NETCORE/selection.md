@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Chart Component
+title: Selection in ##Platform_Name## Syncfusion Chart Component
 description: Learn here all about Selection in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -11,11 +11,11 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Selection
+# Selection in ##Platform_Name## Chart Component
 
 Chart provides selection support for the series and its data points on mouse click.
 
-> When Mouse is clicked on the data points, the corresponding series legend will also be selected.
+N> When Mouse is clicked on the data points, the corresponding series legend will also be selected.
 
 There are different types of selection mode for selecting the data. They are,
 
@@ -211,7 +211,7 @@ You can select a point or series programmatically on a chart using [`selectedDat
 
 ## Selection through on legend
 
-You can select a point or series through on legend using [`toggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility) property.
+You can able to select a point or series through on legend using [`toggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility) property. Also, use [`enableHighlight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_EnableHighlight) property for highlighting the series through legend.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

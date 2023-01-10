@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Export in ##Platform_Name## Pivot Table Component
+title: Excel Export in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Excel Export in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Export
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Excel Export
+# Excel Export in ##Platform_Name## Pivot Table Component
 
 The Excel export allows Pivot Table data to be exported as Excel document. To enable Excel export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. Once the API is set, user needs to call the `excelExport` method for exporting on external button click.
 
-> The pivot table component can be exported to Excel format using options available in the toolbar. For more details [`refer`](./tool-bar) here.
+N> The pivot table component can be exported to Excel format using options available in the toolbar. For more details [`refer`](./tool-bar) here.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +48,7 @@ The Excel export provides an option to export multiple pivot table data in the s
 
 The Excel export provides support to export multiple pivot tables in same sheet. To export in same sheet, define `multipleExport.type` as `AppendToSheet` in `excelExportProperties`. It has an option to provide blank rows between pivot tables and these blank row(s) count can be defined using the`multipleExport.blankRows` property.
 
->By default, `multipleExport.blankRows` value is 5 between pivot table's within the same sheet.
+N>By default, `multipleExport.blankRows` value is 5 between pivot table's within the same sheet.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -108,7 +108,7 @@ Excel export provides support to export multiple pivot tables into new sheets. T
 
 The Excel export provides an option to change colors for headers, caption and records in pivot table before exporting. In-order to apply colors, define **theme** settings in **excelExportProperties** object and pass it as a parameter to the `excelExport` method.
 
->By default, material theme is applied to exported Excel document.
+N>By default, material theme is applied to exported Excel document.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -226,7 +226,7 @@ Also, the Excel export allows pivot table data to be exported in `CSV` file form
 
 You can export the pivot table virtual scroll data as Excel/CSV document by using PivotEngine export without any performance degradation. To enable PivotEngine export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) as true. You need to use the `exportToExcel` method for PivotEngine export.
 
-> PivotEngine export will be performed while enabling virtual scrolling by default.
+N> PivotEngine export will be performed while enabling virtual scrolling by default.
 
 ### Virtual Scroll Data Excel Export
 
@@ -286,7 +286,7 @@ You can export the pivot table virtual scroll data as Excel/CSV document by usin
 
 The pivot engine exports the entire virtual data of the pivot table (i.e. the data that contains all of the records used to render the complete pivot table) as an Excel/CSV document. To export just the current viewport of the pivot table, set the [`exportAllPages`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportAllPages) property to **false**. To use the pivot engine export, add the `ExcelExport` module into the pivot table.
 
-> By default, the pivot engine export will be performed while virtual scrolling is enabled.
+N> By default, the pivot engine export will be performed while virtual scrolling is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -379,7 +379,35 @@ The event `ExcelHeaderQueryCellInfo` triggers on framing each header cell during
 {% endtabs %}
 {% endif %}
 
+### ExportComplete
 
+The event [`ExportComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportComplete) is triggered after the pivot table data has been exported to an Excel/CSV document. You can use this event to acquire blob stream data for further customization and processing at your end by passing the `isBlob` parameter as **true** when using the `excelExport` method. It has the following parameters:
+
+* `type` - It holds the current export type such as PDF, Excel, and CSV.
+* `promise` - It holds the promise object for blob data.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/excel-export/blob-export/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Blob-export.cs" %}
+{% include code-snippet/pivot-table/excel-export/blob-export/blob-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/excel-export/blob-export/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Blob-export.cs" %}
+{% include code-snippet/pivot-table/excel-export/blob-export/blob-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See Also
 

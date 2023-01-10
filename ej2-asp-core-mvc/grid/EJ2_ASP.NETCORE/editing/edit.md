@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edit in ASP.NET Core Grid Component
+title: Edit in ASP.NET Core Grid Control | Syncfusion
 description: Learn here all about Edit in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Edit
@@ -11,9 +11,7 @@ documentation: ug
 
 # Editing in ASP.NET Core Grid Component
 
-The Grid component has options to dynamically insert, delete and update records.
-Editing feature requires a primary key column for CRUD operations.
-To define the primary key, set [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property of [`e-grid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) tag helper as **true** in particular column.
+The Grid component has options to dynamically insert, delete and update records. Editing feature requires a primary key column for CRUD operations. To define the primary key, set [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property of [`e-grid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) tag helper as **true** in particular column.
 
 You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or an external button which is bound to invoke the **addRecord** method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid.
 
@@ -44,13 +42,12 @@ Deletion of the record is possible by selecting the required row and click on **
 
 
 
-> * If [`isIdentity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of **e-grid-column** is enabled, then it will be considered as a read-only column when editing and adding a record.
-> * You can disable editing for a particular column, by specifying [`allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing) property of **e-grid-column** to **false**.
+N> * If [`isIdentity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of **e-grid-column** is enabled, then it will be considered as a read-only column when editing and adding a record.
+<br/> * You can disable editing for a particular column, by specifying [`allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing) property of **e-grid-column** to **false**.
 
 ## Toolbar with edit option
 
-The grid toolbar has the [Built-in items](./tool-bar/#built-in-toolbar-items) to execute Editing actions.
-You can define this by using the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property.
+The grid toolbar has the [Built-in items](./tool-bar/#built-in-toolbar-items) to execute Editing actions. You can define this by using the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -199,8 +196,7 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 
 ## Troubleshoot editing works only for first row
 
-The Editing functionalities can be performed based upon the primary key value of the selected row.
-If **primaryKey** is not defined in the grid, then edit or delete action take places the first row.
+The Editing functionalities can be performed based upon the primary key value of the selected row. If **primaryKey** is not defined in the grid, then edit or delete action take places the first row.
 
 ## How to make a Grid column always editable
 
@@ -235,4 +231,4 @@ In the following example, the textbox is rendered in the Freight column using a 
 
 ## See Also
 
-* [How to set custom format in edit state of Grid](https://www.syncfusion.com/kb/11319/how-to-set-custom-format-in-edit-state-of-grid)
+* [How to set custom format in edit state of Grid](https://www.syncfusion.com/kb/13424/how-to-set-custom-format-in-edit-state-of-grid)

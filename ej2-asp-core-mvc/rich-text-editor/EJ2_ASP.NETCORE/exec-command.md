@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exec Command in ##Platform_Name## Rich Text Editor Component
+title: Exec Command in ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn here all about Exec Command in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Exec Command
@@ -11,8 +11,7 @@ documentation: ug
 
 # ExecCommand in Rich Text Editor
 
-In Rich Text Editor, execCommand used to perform commands for the modification of content in editable area.
-The execCommand will perform the following commands.
+In Rich Text Editor, execCommand used to perform commands for the modification of content in editable area. The execCommand will perform the following commands.
 
 | Commands | Description | Code snippets |
 |----------------|---------| -----------|
@@ -44,4 +43,4 @@ The execCommand will perform the following commands.
 | insertText | Insert text to the current cursor position. | `rteObj.executeCommand('insertText', 'inserted a text');` |
 | insertImage | Insert an image to the current cursor position. | `rteObj.executeCommand('insertImage', { url: 'https://ej2.syncfusion.com/javascript/demos/src/rich-text-editor/images/RTEImage-Feather.png', cssClass: 'rte-img'});`
 
-> The ‘ExecuteCommand’ public method is not supported in Syncfusion Markdown Editor
+N> The ‘ExecuteCommand’ public method is not supported in Syncfusion Markdown Editor

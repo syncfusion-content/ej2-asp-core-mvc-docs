@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching in ##Platform_Name## Grid Component
+title: Searching in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Searching in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Searching
@@ -9,9 +9,11 @@ documentation: ug
 ---
 
 
-# Search
+# Search in ASP.NET Core Grid Component
 
 You can search records in a Grid, by using the **Search** method with search key as a parameter. This also provides an option to integrate search text box in grid's toolbar by adding **Search** item to the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar).
+
+N> The clear icon is shown in the Data Grid search text box when it is focused on search text or after typing the single character in the search text box. A single click of the clear icon clears the text in the search box as well as the search results in the Data Grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -67,7 +69,7 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
 
 
 
-> By default, grid searches all the bound column values. To customize this behavior define the [`fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields) property of **e-grid-searchSettings** tag helper.
+N> By default, grid searches all the bound column values. To customize this behavior define the [`fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields) property of **e-grid-searchSettings** tag helper.
 
 ## Search operators
 
@@ -83,7 +85,7 @@ contains |Checks whether a value contains the specified value.
 equal |Checks whether a value is equal to the specified value.
 notequal |Checks for values not equal to the specified value.
 
-> By default, the [`operator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Operator) value is **contains**.
+N> By default, the [`operator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Operator) value is **contains**.
 
 ## Search by external button
 
@@ -199,3 +201,38 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% endtabs %}
 {% endif %}
 
+
+
+## Perform search operation in Grid using multiple keywords
+
+You can perform a searching operation in the Grid using multiple keywords. This can be achieved by the [ActionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of the Grid.
+In the following sample, we have performed the searching with multiple keywords by using the query property of grid when the requestType is searching in the [ActionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/search-multiple-keywords/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Search-multiple-keywords.cs" %}
+{% include code-snippet/grid/search/search-multiple-keywords/search-multiple-keywords.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+ {% include code-snippet/grid/search/search-multiple-keywords/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Search-multiple-keywords.cs" %}
+{% include code-snippet/grid/search/search-multiple-keywords/search-multiple-keywords.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+N> * Define multiple keywords by using a comma separator in search bar to search.
+
+N> * Search operation can be performed in foreign key column based on following way.
+N> * When a value is searched on a grid with the foreign key column, a filter query is sent to the foreign key data source, and the appropriate column is filtered depending on the search value. The search query will be sent to the grid data source, and the value of the associated field will be returned.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Multi Select Component
+title: Localization in ##Platform_Name## Multi Select Control | Syncfusion
 description: Learn here all about Localization in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# Localization
+# Localization in MultiSelct Control
 
-The Localization library allows you to localize static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~NoRecordsTemplate.html) and [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~ActionFailureTemplate.html)
-&nbsp;properties according to the culture currently assigned to the MultiSelect.
+The Localization library allows you to localize static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~NoRecordsTemplate.html) and [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~ActionFailureTemplate.html) properties according to the culture currently assigned to the MultiSelect.
 
 | Locale key | en-US (default)
 |------|------

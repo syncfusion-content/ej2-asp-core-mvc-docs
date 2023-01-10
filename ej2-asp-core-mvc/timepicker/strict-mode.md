@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Strict Mode in ##Platform_Name## Timepicker Component
+title: Strict Mode in ##Platform_Name## Timepicker Control | Syncfusion
 description: Learn here all about Strict Mode in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Strict Mode
@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# Strict mode
+# Strict mode in TimePicker Control
 
-The [strictMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_StrictMode) is an act that allows you to enter only valid time value within the specified min/max range in the textbox. If the time value is invalid, the control value sets to the previous value.
-If the time value is out of range, the control sets the time value to min/max value.
+The [strictMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_StrictMode) is an act that allows you to enter only valid time value within the specified min/max range in the textbox. If the time value is invalid, the control value sets to the previous value. If the time value is out of range, the control sets the time value to min/max value.
 
 The following example demonstrates the TimePicker in `strictMode` with min/max range of `10:00 AM` to `4:00 PM` . It allows you to enter only valid time within the specified range. If you enter the out-of-range value like `8:00 PM`, the value sets to the max time `4:00 PM` as the value `8:00 PM` is greater than `max` value of `4:00 PM`. If you enter invalid time value like `9:00 tt`, the value sets to the previous value.
 
@@ -72,4 +71,4 @@ The following example demonstrates the `strictMode` as `false`. Here, it allows 
 
 
 
-> If the value of `min` or `max` property is changed through code behind, update the `value` property to set within the range.
+N> If the value of `min` or `max` property is changed through code behind, update the `value` property to set within the range.

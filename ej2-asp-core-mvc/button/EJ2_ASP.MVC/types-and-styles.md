@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Types And Styles in ##Platform_Name## Button Component
+title: Types And Styles in ##Platform_Name## Button Component | Syncfusion
 description: Learn here all about Types And Styles in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types And Styles
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Types and Styles
+# Types and Styles in Button Control
 
 This section explains the different styles and types of Buttons.
 
@@ -49,9 +49,9 @@ The Essential JS 2 Button has the following predefined styles that can be define
 {% endtabs %}
 {% endif %}
 
+![ASP.NET MVC Button styles](images/button-with-different-style.png)
 
-
-> Predefined Button styles provide only the visual indication. So, Button content should define the Button style for the users of assistive technologies such as screen readers.
+N> Predefined Button styles provide only the visual indication. So, Button content should define the Button style for the users of assistive technologies such as screen readers.
 
 ## Button types
 
@@ -96,7 +96,7 @@ The basic Button types are explained below.
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET MVC Button](images/button-basic-type.png)
 
 ### Flat Button
 
@@ -133,7 +133,7 @@ A round Button is shaped like a circle. Usually, it contains an icon representin
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET MVC Button types](images/button-types.png)
 
 ### Toggle Button
 
@@ -162,7 +162,7 @@ A toggle Button allows you to change between the two states. The Button is activ
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET MVC Toggle Button](images/toggle-button.png)
 
 ## Icons
 
@@ -193,9 +193,9 @@ The Button can have an icon to provide the visual representation of the action. 
 {% endtabs %}
 {% endif %}
 
+![ASP.NET MVC Button with font icons](images/button-icon.png)
 
-
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property.
+N> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property.
 
 ### Button with SVG image
 
@@ -226,7 +226,7 @@ In the following example, SVG image is added using the iconCss class `e-search-i
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET MVC Button with SVG image](images/button-svg.png)
 
 ## Button size
 
@@ -255,7 +255,7 @@ The two types of Button sizes are default and small. To change the size of the d
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET MVC Button size](images/button-size.png)
 
 ## See Also
 

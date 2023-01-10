@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigations and Indicators in ##Platform_Name## Carousel Control
+title: Navigations in Syncfusion ##Platform_Name## Carousel Control
 description: Checkout and learn about Navigations and Indicators in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Navigations and Indicators
@@ -28,12 +28,9 @@ The following example depicts the code to hide the navigators in the carousel.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/hidden/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/hidden/hidden.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel hidden navigators](../images/navigators_hidden.png)
+![Carousel hidden navigators](images/navigators_hidden.png)
 
 ### Show previous and next button on hover
 
@@ -43,12 +40,9 @@ In the carousel, you can show the previous and next buttons only on mouse hover 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/visible-hover/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/visible-hover/visible-hover.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel visible on hover navigators](../images/navigators_onhover.gif)
+![Carousel visible on hover navigators](images/navigators_onhover.gif)
 
 ### Previous and next button template
 
@@ -58,12 +52,9 @@ Template options are provided to customize the previous button using [previousBu
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/button-template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/button-template/button-template.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel navigators template](../images/navigators_template.png)
+![Carousel navigators template](images/navigators_template.png)
 
 ## Indicators
 
@@ -75,12 +66,9 @@ In indicators, the total slides and current slide state have been depicted. You 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/show-indicators/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/show-indicators/show-indicators.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel hidden indicators](../images/hidden_indicators.png)
+![Carousel hidden indicators](images/hidden_indicators.png)
 
 ### Indicators template
 
@@ -90,12 +78,9 @@ Template option is provided to customize the indicators by using the [indicators
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/indicator-template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/indicator-template/indicator-template.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel indicators template](../images/indicators_template.png)
+![Carousel indicators template](images/indicators_template.png)
 
 ### Showing preview of slide in indicator
 
@@ -105,12 +90,9 @@ You can customize the indicators by showing the preview image of each slide usin
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/indicator-preview/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/indicator-preview/indicator-preview.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel indicators template preview](../images/indicators_preview.png)
+![Carousel indicators template preview](images/indicators_preview.png)
 
 ## Play button
 
@@ -122,12 +104,9 @@ In the carousel, [autoPlay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/play-button/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/play-button/play-button.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel play button](../images/play_button.png)
+![Carousel play button](images/play_button.png)
 
 ### Play button template
 
@@ -137,9 +116,8 @@ Template option is provided to customize the play button by using the [playButto
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/play-button-template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/play-button-template/play-button-template.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel play button template](../images/play_button_template.png)
+![Carousel play button template](images/play_button_template.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/NavigatorandIndicatorSample).

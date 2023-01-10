@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar Items in ##Platform_Name## Grid Component
+title: Toolbar Items in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Toolbar Items in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Toolbar Items
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Toolbar Items
+# Toolbar Items in ASP.NET CORE Grid Component
 
 ## Built-in toolbar items
 
@@ -56,7 +56,43 @@ The following table shows built-in toolbar items and its actions.
 
 
 
-> * The [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) has options to define both built-in and custom toolbar items.
+N> * The [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) has options to define both built-in and custom toolbar items.
+
+### Show only icons in built-in toolbar items
+
+By default, the built-in toolbar items render as buttons with an icon and text. It is possible to hide the text and show only the icon using the following CSS style.
+
+```css
+.e-toolbar .e-tbar-btn-text, .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
+    display: none;
+}
+```
+
+This is demonstrated in the following sample:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/toolbar/toolbaricon/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Toolbar-icon.cs" %}
+{% include code-snippet/grid/toolbar/toolbaricon/toolbaricon.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/toolbar/toolbaricon/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Toolbar-icon.cs" %}
+{% include code-snippet/grid/toolbar/toolbaricon/toolbaricon.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 
 ## Custom toolbar items
 
@@ -90,8 +126,8 @@ By default, Custom toolbar items are in position **Left**. You can change the po
 
 
 
-> * The [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) has options to define both built-in and custom toolbar items.
-> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
+N> * The [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) has options to define both built-in and custom toolbar items.
+<br/> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Both built-in and custom items in toolbar
 
@@ -122,3 +158,29 @@ In the below example, **Add**, **Edit**, **Delete**, **Update**, **Cancel** are 
 {% endtabs %}
 {% endif %}
 
+## Custom toolbar component in a specific position
+
+By default, Custom toolbar items are in the Left position. You can change the position by using the [align](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html#Syncfusion_EJ2_Navigations_ToolbarItem_Align) property. In the following sample, we have applied the Right position for the Collapse All toolbar item, Left for the Expand All toolbar item, and Center for the Search toolbar item.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/toolbar/custom-toolbar-position/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-toolbar-position.cs" %}
+{% include code-snippet/grid/toolbar/custom-toolbar-position/custom-toolbar-position.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/toolbar/custom-toolbar-position/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-toolbar-position.cs" %}
+{% include code-snippet/grid/toolbar/custom-toolbar-position/custom-toolbar-position.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Comments
+# Comments in Document Editor Component
 
 Document editor allows to add comments to documents. You can add, navigate and remove comments in code and from the UI.
 
@@ -79,4 +79,4 @@ Comment only protection can be enabled in UI by using [Restrict Editing pane](..
 
 ![Enable comment only protection](images/commentsonly.png)
 
->Note: In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.
+N> In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.

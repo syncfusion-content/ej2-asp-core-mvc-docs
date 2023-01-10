@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## Kanban Component
+title: Drag And Drop in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drag And Drop
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Drag and drop
+# Drag and drop in ASP.NET MVC Kanban control
 
 All cards can be dragged and dropped across the columns or within the columns or swimlane row or kanban to an external source and vice versa.
 
@@ -22,7 +22,7 @@ The following drag and drop types are available in the Kanban board.
     * Kanban to Kanban
     * Kanban to External source and vice versa.
 
-> Dropped card position varies based on the `SortSettings` property.
+N> Dropped card position varies based on the `SortSettings` property.
 
 ## Internal drag and drop
 
@@ -35,8 +35,8 @@ Allows the user to drag and drop the cards within the kanban board. Based on thi
 
 By default, all cards can be dragged and dropped across the columns and within the columns. You cannot drag and drop the cards when disabling the `AllowDragAndDrop` property.
 
-> You can prevent the drag or drop behavior of the particular column by disabling the `AllowDrag` or `AllowDrop` property.
-> You can also control the flow of transition cards between the columns by using the `TransitionColumns` property.
+N> You can prevent the drag or drop behavior of the particular column by disabling the `AllowDrag` or `AllowDrop` property.
+<br/> You can also control the flow of transition cards between the columns by using the `TransitionColumns` property.
 
 In the following example, disable the drag and drop behavior on the Kanban board.
 
@@ -49,6 +49,9 @@ In the following example, disable the drag and drop behavior on the Kanban board
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/drag-and-drop/drag-and-drop/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/drag-and-drop/drag-and-drop/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -59,6 +62,9 @@ In the following example, disable the drag and drop behavior on the Kanban board
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/drag-and-drop/drag-and-drop/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/drag-and-drop/drag-and-drop/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -80,6 +86,9 @@ Enabling the `DragAndDrop` property allows you to drag the cards across the swim
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/drag-and-drop/swimlane-drag-and-drop/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/drag-and-drop/swimlane-drag-and-drop/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -90,6 +99,9 @@ Enabling the `DragAndDrop` property allows you to drag the cards across the swim
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/drag-and-drop/swimlane-drag-and-drop/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/drag-and-drop/swimlane-drag-and-drop/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -104,7 +116,7 @@ Allows the user to drag and drop the cards from one kanban to another kanban or 
 
 Drag and drop the card from one kanban to another kanban and vice versa. This can be achieved by specifying the `ExternalDropId` property which is used to specify the id of the dropped kanban element and the `DragStop` event which is used to delete the card on dragged Kanban and add the card on dropped Kanban using the `deleteCard` and `addCard` public methods.
 
-> Before adding a card to dropped kanban, you can manually change the card data `HeaderField` when the same card data `HeaderField` is dropped to another Kanban.
+N> Before adding a card to dropped kanban, you can manually change the card data `HeaderField` when the same card data `HeaderField` is dropped to another Kanban.
 
 In the following example, Drag the card from one Kanban and drop it into another kanban using the `DragStop` event. In this event, remove the card from the dragged Kanban by using the `deleteCard` public method and add the card to the dropped Kanban by using the `addCard` public method.
 
@@ -117,6 +129,9 @@ In the following example, Drag the card from one Kanban and drop it into another
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/drag-and-drop/kanban-to-kanban/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/drag-and-drop/kanban-to-kanban/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -127,6 +142,9 @@ In the following example, Drag the card from one Kanban and drop it into another
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/drag-and-drop/kanban-to-kanban/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/drag-and-drop/kanban-to-kanban/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -148,6 +166,9 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/drag-and-drop/kanban-to-treeview/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/drag-and-drop/kanban-to-treeview/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -158,6 +179,9 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/drag-and-drop/kanban-to-treeview/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/drag-and-drop/kanban-to-treeview/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -179,6 +203,9 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/drag-and-drop/kanban-to-schedule/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/drag-and-drop/kanban-to-schedule/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -189,6 +216,9 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/drag-and-drop/kanban-to-schedule/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/drag-and-drop/kanban-to-schedule/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
