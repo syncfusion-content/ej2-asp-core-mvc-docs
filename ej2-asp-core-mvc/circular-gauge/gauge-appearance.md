@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Appearance in ASP.NET Core Circular Gauge Control | Syncfusion
-description: Learn here all about Gauge Appearance in Syncfusion ASP.NET Core Circular Gauge control of Syncfusion Essential JS 2 and more.
+title: Gauge Appearance in ##Platform_Name## Circular Gauge Control | Syncfusion
+description: Learn here all about Gauge Appearance in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Gauge Appearance
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -12,7 +12,7 @@ documentation: ug
 
 ## Gauge Title
 
-[ASP.NET Core Circular Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/circular-gauge) can be given a title by using [title](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_Title) property, to show the information about the gauge. Title can be customized by using [titleStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_TitleStyle) property in gauge.
+Circular gauge can be given a title by using [title](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_Title) property, to show the information about the gauge. Title can be customized by using [titleStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_TitleStyle) property in gauge.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
