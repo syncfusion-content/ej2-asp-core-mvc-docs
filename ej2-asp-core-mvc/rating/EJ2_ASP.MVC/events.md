@@ -12,6 +12,19 @@ documentation: ug
 
 This section describes the rating events that will be triggered when appropriate actions are performed. The following events are available in the rating component.
 
+## BeforeItemRender
+
+The rating component triggers the [BeforeItemRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_BeforeItemRender) event before the rendering of the rating item is complete.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rating/events/beforeitemrender/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="BeforeItemRender.cs" %}
+{% include code-snippet/speeddial/events/beforeitemrender/beforeitemrender.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Created
 
 The rating component triggers the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Created) event when the rendering of the rating component is completed.

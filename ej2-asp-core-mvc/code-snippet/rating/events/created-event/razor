@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Inputs
 
-@Html.EJS().Rating("rating").Created("Created()").Render()
+@Html.EJS().Rating("rating").Created("Created").Render()
 
 <script>
 

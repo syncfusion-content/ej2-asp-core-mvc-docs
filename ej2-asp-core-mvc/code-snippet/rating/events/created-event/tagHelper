@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Inputs
 
-<ejs-rating id="rating" created="createdEvent()"></ejs-rating>
+<ejs-rating id="rating" created="createdEvent"></ejs-rating>
 
 <script>
 

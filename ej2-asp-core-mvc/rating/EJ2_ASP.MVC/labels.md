@@ -56,7 +56,7 @@ The following label positions are supported:
 
 ## Label template
 
-You can use the [LabelTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_LabelTemplate) tag directive to specify a custom template for the `Label` of the rating. The current value of the rating will be passed as the `context` when building the content of the label. This allows you to include dynamic information about the rating in the template.
+You can use the [LabelTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_LabelTemplate) tag directive to specify a custom template for the `Label` of the rating. The current value of the rating will be passed as the `value` when building the content of the label. This allows you to include dynamic information about the rating in the template.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 

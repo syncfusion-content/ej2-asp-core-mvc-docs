@@ -1,10 +1,10 @@
 @using Syncfusion.EJ2.Inputs
 
-<ejs-rating id="rating" valueChanged="valueChanged()"></ejs-rating>
+<ejs-rating id="rating" valueChanged="ValueChanged"></ejs-rating>
 
 <script>
 
-    function valueChanged() {
+    function ValueChanged() {
         // Here, you can customize your code.
     }
 

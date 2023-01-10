@@ -20,7 +20,7 @@ You can specify the number of rating items using the [itemsCount](https://help.s
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/iconsonly/tagHelper %}
+{% include code-snippet/rating/appearance/items-count/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,7 +36,7 @@ You can disable the Syncfusion Asp.Net Core Rating component by using the [disab
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/iconsonly/tagHelper %}
+{% include code-snippet/rating/appearance/disabled/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,7 +52,7 @@ You can use the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/iconsonly/tagHelper %}
+{% include code-snippet/rating/appearance/visible/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,7 +68,7 @@ You can use the [readOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/iconsonly/tagHelper %}
+{% include code-snippet/rating/appearance/readonly/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,7 +88,7 @@ You can change the rating icon border color in Asp.Net Core Rating component, yo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/iconsonly/tagHelper %}
+{% include code-snippet/rating/appearance/css-class/border-color/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -104,7 +104,7 @@ You can customize the fill colors of rated and un-rated icons in the Rating comp
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/iconsonly/tagHelper %}
+{% include code-snippet/rating/appearance/css-class/fill-color/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -122,7 +122,7 @@ You can change the space between the rating items in Asp.Net Core Rating compone
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/iconsonly/tagHelper %}
+{% include code-snippetrating/appearance/css-class/item-spacing/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -138,7 +138,7 @@ You can change the rating item icon in Asp.Net Core Rating component, you can us
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/iconsonly/tagHelper %}
+{% include code-snippet/rating/appearance/css-class/change-icon/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 

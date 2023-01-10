@@ -1,3 +1,16 @@
 @using Syncfusion.EJ2.Inputs
 
-@Html.EJS().Rating("rating").Value(3).Render()
+@{
+    var fulltemplate = ""; //Provide the URL for the image here.
+    var emptytemplate = ""; //Provide the URL for the image here.
+}
+
+@Html.EJS().Rating("rating").Value(3).EmptyTemplate("#emptytemplate").FullTemplate("#fulltemplate").Render()
+
+<script id="fulltemplate" type="text/x-jsrender">
+    <img src="@fulltemplate" width="25" height="25" />
+</script>
+
+<script id="emptytemplate" type="text/x-jsrender">
+    <img src="@emptytemplate" width="25" height="25" />
+</script>

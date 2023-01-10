@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+@Html.EJS().Rating("rating").BeforeItemRender("BeforeItemRender").Render()
+
+<script>
+
+    function BeforeItemRender() {
+        // Here, you can customize your code.
+    }
+
+</script>

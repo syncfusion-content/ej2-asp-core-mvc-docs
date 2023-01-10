@@ -19,17 +19,10 @@ The precision types of Rating are as follows:
 * Quarter: The rating is increased in increments of 0.25 (quarter). For example, if the current rating is 3.75, the next possible ratings are 4, 4.25, 4.5, and so on. 
 * Exact: The rating is increased in increments of 0.1. For example, if the current rating is 3.9, the next possible ratings are 4, 4.1, 4.2, and so on.
 
-{% if page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Precision Modes/bottom-left-position/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Precision Modes/bottom-left-position/position.cs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rating/precision-modes/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 ![Asp.Net Core Rating Component with different Precision Types](./images/rating-precision-types.png)

@@ -1,3 +1,13 @@
 @using Syncfusion.EJ2.Inputs
 
-@Html.EJS().Rating("rating").Value(3).ShowLabel(true).LabelTemplate("<span>${value} Out Of 5</span>").Render()
+@Html.EJS().Rating("rating").Value(4).TooltipTemplate("#template").Render()
+
+<script id="template" type="text/x-jsrender">
+    ${if(value==1)}
+    <b>Angry</b>${else if(value==2)}
+    <b>Sad</b>${else if(value==3)}
+    <b>Neutral</b>${else if(value==4)}
+    <b>Good</b>${else}
+    <b>Happy</b>
+    ${/if}
+</script>
