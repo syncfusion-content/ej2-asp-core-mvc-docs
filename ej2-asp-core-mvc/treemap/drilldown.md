@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drill-down
+# Drill-down in ASP.NET MVC TreeMap
 
 The [ASP.NET MVC TreeMap](https://www.syncfusion.com/aspnet-mvc-ui-controls/treemap) supports drill-down to expose the hierarchy, achieved by clicking a node. If an item is clicked in the TreeMap, it will be moved to the next level or sub level hierarchy and returned back to the previous level by clicking the node.
 
