@@ -70,7 +70,7 @@ If the [`rowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ## Limitations
 
-Row template feature is not compatible with all the features which are available in treegrid and it has limited features support. Here we have listed out the features which are compatible with row template feature.
+Row template feature is not compatible with all the features which are available in treegrid and it has limited features support. Here we have listed out the features which are not compatible with row template feature.
 
 * Filtering
 * Paging
