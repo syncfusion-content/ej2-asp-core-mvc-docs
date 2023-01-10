@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Kanban Control
+title: Getting Started with ##Platform_Name## Kanban Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Kanban control of Syncfusion Essential JS 2 and more details.
 control: Getting Started
 publishingplatform: ##Platform_Name##

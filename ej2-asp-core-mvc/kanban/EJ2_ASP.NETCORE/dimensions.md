@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dimensions in ##Platform_Name## Kanban Component
+title: Dimensions in ##Platform_Name## Kanban Component | Syncfusion
 description: Learn here all about Dimensions in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dimensions
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Kanban dimensions in ASP.NET Core Kanban
+# Kanban dimensions in ASP.NET Core Kanban Control
 
 The [ASP.NET Core Kanban](https://www.syncfusion.com/aspnet-core-ui-controls/kanban-board) dimensions refers to both height and width of the entire layout and it accepts three types of values.
 
