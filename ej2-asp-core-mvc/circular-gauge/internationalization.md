@@ -10,7 +10,7 @@ documentation: ug
 
 # Internationalization in Circular Gauge Control
 
-Circular gauge provides support for internationalization for the following gauge elements.
+[ASP.NET MVC Circular Gauge](https://www.syncfusion.com/aspnet-mvc-ui-controls/circular-gauge) provides support for internationalization for the following gauge elements.
 
 * Axis label.
 * Tooltip.
