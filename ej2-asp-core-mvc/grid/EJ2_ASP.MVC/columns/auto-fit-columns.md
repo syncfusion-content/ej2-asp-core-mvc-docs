@@ -37,4 +37,4 @@ The [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofi
 
 
 
-> You can autofit all the columns by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method without column names.
+N> You can autofit all the columns by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method without column names.

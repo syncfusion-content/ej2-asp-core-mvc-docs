@@ -79,7 +79,7 @@ To apply theme in exported Excel, define the [`theme`](https://ej2.syncfusion.co
 
 
 
-> By default, material theme is applied to exported excel document.
+N> By default, material theme is applied to exported excel document.
 
 ## Rotate a header text to a certain degree in the exported grid
 

@@ -39,4 +39,4 @@ To use the **autoFitColumns** method, inject the **Resize** module in the grid.
 
 
 
-> You can autofit all the columns by invoking the **autoFitColumns** method without column names.
+N> You can autofit all the columns by invoking the **autoFitColumns** method without column names.

@@ -141,8 +141,8 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 
 
 
-> * If `EnableAutoFill` is set to true, then the autofill icon will be displayed on cell selection to copy cells.
-> * It requires the selection `Mode` to be `Cell`,  `CellSelectionMode` to be `Box` and also Batch Editing should be enabled.
+N> * If `EnableAutoFill` is set to true, then the autofill icon will be displayed on cell selection to copy cells.
+<br/> * It requires the selection `Mode` to be `Cell`,  `CellSelectionMode` to be `Box` and also Batch Editing should be enabled.
 
 ### Limitations of AutoFill
 
@@ -178,10 +178,10 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 
 
 
-> To perform paste functionality, it requires the selection `Mode` to be `Cell`,  `CellSelectionMode` to be `Box` and also Batch Editing should be enabled.
+N> To perform paste functionality, it requires the selection `Mode` to be `Cell`,  `CellSelectionMode` to be `Box` and also Batch Editing should be enabled.
 
 ### Limitations of Paste Functionality
 
 * Since the string values are not parsed to number and date type, so when the copied string type cells are pasted to number type cells then it will display as **NaN**. For date type cells, when the copied string format cells are pasted to date type cells then it will display as an **empty cell**.
 
-> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.

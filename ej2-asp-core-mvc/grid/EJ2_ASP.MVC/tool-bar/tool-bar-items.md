@@ -56,7 +56,7 @@ The following table shows built-in toolbar items and its actions.
 
 
 
-> The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) has options to define both built-in and custom toolbar items.
+N> The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) has options to define both built-in and custom toolbar items.
 
 ### Show only icons in built-in toolbar items
 
@@ -125,8 +125,8 @@ By default, Custom toolbar items are in position **Left**. You can change the po
 
 
 
-> The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) has options to define both built-in and custom toolbar items.
-> If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
+N> The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) has options to define both built-in and custom toolbar items.
+<br/> If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Both built-in and custom items in toolbar
 

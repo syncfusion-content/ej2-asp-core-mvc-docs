@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Ports in Diagram
+# Ports in Diagram Control
 
 Diagram provides support to define custom ports for making connections.
 

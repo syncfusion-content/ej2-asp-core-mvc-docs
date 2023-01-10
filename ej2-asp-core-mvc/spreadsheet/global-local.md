@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Global Local in ##Platform_Name## Spreadsheet Component
+title: Global Local in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Global Local in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Global Local
@@ -12,7 +12,7 @@ documentation: ug
 
 ## Localization
 
-The [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/) library allows you to localize the default text content of the Spreadsheet. The Spreadsheet has static text on some features (cell formatting, Merge, Data validation, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://ej2.syncfusion.com/aspnetmvc/documentation/api/spreadsheet/#locale) value and translation object.
+The [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/) library allows you to localize the default text content of the Spreadsheet. The Spreadsheet has static text on some features (cell formatting, Merge, Data validation, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_Locale) value and translation object.
 
 The following list of properties and their values are used in the Spreadsheet.
 
@@ -377,7 +377,7 @@ IsProtected | is protected
 
 ### Loading translations
 
-To load translation object in an application, use [`load`](../common/internationalization/#load) function of the [`L10n`](../common/internationalization) class.
+To load translation object in an application, use `load` function of the `L10n` class.
 
 The following example demonstrates the Spreadsheet in `French` culture. In the below sample we have translated the ribbon tab names and Home tab content (clipboard, cell style).
 
@@ -439,7 +439,7 @@ The following example demonstrates the Spreadsheet in French [ `fr-CH`] culture.
 
 ## Right to left (RTL)
 
-RTL provides an option to switch the text direction and layout of the Spreadsheet component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Spreadsheet, set the [`enableRtl`](../api/spreadsheet/#enablertl) to true.
+RTL provides an option to switch the text direction and layout of the Spreadsheet component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Spreadsheet, set the [`enableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_EnableRtl) to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

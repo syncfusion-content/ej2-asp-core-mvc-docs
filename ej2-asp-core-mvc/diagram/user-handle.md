@@ -287,6 +287,7 @@ N> Displacement will not be done if the alignment is set to be center.
 {% endtabs %}
 {% endif %}
 
+
 ### Tooltip support for User Handle
 
 The diagram provides support to show tooltip when the mouse hovers over any user handle.
