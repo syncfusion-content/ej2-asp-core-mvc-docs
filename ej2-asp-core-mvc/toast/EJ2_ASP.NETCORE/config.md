@@ -17,7 +17,7 @@ This section explains the steps required to customize the appearance of the toas
 
 Toast can be created with the notification message. The message contains [`title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_Title) and [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_Content) of the toasts. The title and contents are adaptable in any resolution.
 
-> The Title or Content property can be given as HTML element/element ID to a string that can be displayed as a toast.
+N> The Title or Content property can be given as HTML element/element ID to a string that can be displayed as a toast.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -101,8 +101,8 @@ The dimensions of the toast can be set using the [`width`](https://help.syncfusi
 
 By default, the toast can be rendered with '300px' width with 'auto' height.
 
-> In mobile devices, the default width of the toast gets '100%' width of the page.
-> When you set toast width as '100%', the toast occupies full width and will be displayed at the top or bottom based on the position `Y` property.
+N> In mobile devices, the default width of the toast gets '100%' width of the page.
+<br/> When you set toast width as '100%', the toast occupies full width and will be displayed at the top or bottom based on the position `Y` property.
 
 Both the width and height properties allow setting pixels/numbers/percentage. The number value is considered as pixels.
 

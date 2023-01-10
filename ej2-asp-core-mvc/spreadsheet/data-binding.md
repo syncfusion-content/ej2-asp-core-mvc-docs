@@ -13,7 +13,7 @@ documentation: ug
 
 The Spreadsheet uses `DataManager`, which supports both RESTful JSON data services and local JavaScript object array binding to a range. The `dataSource` property can be assigned either with the instance of `DataManager` or JavaScript object array collection.
 
-> To bind data to a cell, use `cell data binding` support.
+N> To bind data to a cell, use `cell data binding` support.
 
 ## Local data
 
@@ -46,7 +46,8 @@ Refer to the following code example for local data binding.
 
 
 
-> The local data source can also be provided as an instance of the `DataManager`. By default, `DataManager` uses `JsonAdaptor` for local data-binding.
+
+N> The local data source can also be provided as an instance of the [`DataManager`](../data). By default, [`DataManager`](../data) uses [`JsonAdaptor`](../data/adaptors/#json-adaptor) for local data-binding.
 
 ## Remote data
 
@@ -79,7 +80,7 @@ Refer to the following code example for remote data binding.
 
 
 
-> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
+N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 
 ### Binding with OData services
 
@@ -170,7 +171,7 @@ Refer to the following code example for cell data binding.
 
 
 
-> The cell data binding also supports formula, style, number format, and more.
+N> The cell data binding also supports formula, style, number format, and more.
 
 ## Dynamic data binding and Datasource change event
 
@@ -185,8 +186,8 @@ The following table defines the arguments of the `dataSourceChanged` event.
 | rangeIndex | number | Specifies the range index of the datasource. |
 | sheetIndex | number | Specifies the sheet index of the datasource. |
 
-> For `add` action, the value for all the fields will be `null` in the data. In the case that you do not want the primary key field to be null which needs to be updated in the backend service, you can use `edit` action after updating the primary key field to update in the backend service. <br><br>
-> For inserting a row at the end of the datasource range, you should insert a row below at the end of the range to trigger the `dataSourceChanged` event with action `add`.
+N> For `add` action, the value for all the fields will be `null` in the data. In the case that you do not want the primary key field to be null which needs to be updated in the backend service, you can use `edit` action after updating the primary key field to update in the backend service. <br><br>
+<br/> For inserting a row at the end of the datasource range, you should insert a row below at the end of the range to trigger the `dataSourceChanged` event with action `add`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -17,7 +17,7 @@ Illustrations helps you to insert a image, shapes and graphic objects in the Ess
 
 Adding images to a spreadsheet can enhance the visual appeal and help convey information more clearly.
 
-> * The default value for [`allowImage`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowImage) property is `true`.
+N> * The default value for [`allowImage`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowImage) property is `true`.
 
 ### Insert Image
 
@@ -42,7 +42,7 @@ The available arguments in `ImageModel` are:
 * top: Specifies the height of the image.
 * left: Specifies the width of the image.
 
-> * In spreadsheet, you can add many types of image files, including IMAGE, JPG, PNG, GIF and JPEG files.
+N> * In spreadsheet, you can add many types of image files, including IMAGE, JPG, PNG, GIF and JPEG files.
 
 ### Delete Image
 
@@ -106,18 +106,18 @@ The following features have some limitations in Image:
 
 A chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of `x`-axis and `y`-axis. You can use the [`allowChart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowChart) property to enable or disable the chart functionality.
 
->* The default value for the [`allowChart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowChart) property is `true`.
+N> * The default value for the [`allowChart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowChart) property is `true`.
 
 ### Types of chart
 
 The following types of charts are available in the Spreadsheet.
 
->* Column Chart
->* Bar Chart
->* Area Chart
->* Line Chart
->* Pie Chart
->* Scatter Chart
+N>* Column Chart
+<br/>* Bar Chart
+<br/>* Area Chart
+<br/>* Line Chart
+<br/>* Pie Chart
+<br/>* Scatter Chart
 
 ### Insert Chart
 

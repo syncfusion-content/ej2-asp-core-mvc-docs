@@ -116,13 +116,13 @@ Updating with cell Edit
 
 Updating with Dialog
 
-> When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
+N> When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
 
 ## Update task values using method
 
 Tasks value can be dynamically updated by using the `updateRecordById` method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
 
-> Using the `updateRecordById` method, you cannot update the task ID value.
+N> Using the `updateRecordById` method, you cannot update the task ID value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

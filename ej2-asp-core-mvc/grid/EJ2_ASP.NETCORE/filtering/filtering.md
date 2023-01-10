@@ -38,8 +38,8 @@ Filtering allows you to view particular records based on filter criteria. To ena
 
 
 
-> * You can apply and clear filtering by using **filterByColumn** and **clearFiltering** methods.
-> * To disable filtering for a particular column, set [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowFiltering) property of **e-grid-column** as false.
+N> * You can apply and clear filtering by using **filterByColumn** and **clearFiltering** methods.
+<br/> * To disable filtering for a particular column, set [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowFiltering) property of **e-grid-column** as false.
 
 ## Initial filter
 
@@ -89,7 +89,7 @@ lessthan |Checks whether the value is less than the specified value. |Number &
 lessthanorequal |Checks whether the value is less than or equal to the specified value. |Number &#124; Date
 between|Filter the values based on the range between the start and end specified values. |Number &#124; Date
 
-> By default, the **operator** value is **equal** in [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Columns) property of **e-grid-filterSettings** tag helper.
+N> By default, the **operator** value is **equal** in [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Columns) property of **e-grid-filterSettings** tag helper.
 
 ## See Also
 

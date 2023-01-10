@@ -186,7 +186,7 @@ The following example demonstrates the Scheduler component in 24 hours format.
 
 
 
-> `timeFormat` property only accepts the valid time format's.
+N> `timeFormat` property only accepts the valid time format's.
 
 ## Displaying Scheduler in RTL mode
 
@@ -217,7 +217,7 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 
 
 
-> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
 
 ## See Also
 

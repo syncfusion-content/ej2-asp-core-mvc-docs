@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Add Edit Dialog in ##Platform_Name## Gantt Component
+title: Open Add Edit Dialog in ##Platform_Name## Gantt Component | Syncfusion
 description: Learn here all about Open Add Edit Dialog in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open Add Edit Dialog
@@ -38,4 +38,4 @@ Gantt add and edit dialogs can be opened dynamically by using `openAddDialog` an
 
 
 
-> We should select any one of the row in Gantt to open the edit dialog.
+N> We should select any one of the row in Gantt to open the edit dialog.

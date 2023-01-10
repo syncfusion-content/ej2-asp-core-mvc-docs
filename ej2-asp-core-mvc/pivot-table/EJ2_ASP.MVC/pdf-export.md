@@ -370,7 +370,7 @@ Before exporting, you can split and export the pivot table columns on each page 
 
 The PDF export provides an option to change colors for headers, caption and records in pivot table before exporting. In-order to apply colors, define **theme** settings in **pdfExportProperties** object and pass it as a parameter to the `pdfExport` method.
 
-> By default, material theme is applied to exported PDF document.
+N> By default, material theme is applied to exported PDF document.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -452,13 +452,13 @@ In addition to existing built-in fonts, custom fonts can also be used. The custo
 
 
 
-> The non-English alphabets can also be exported properly by setting its appropriate font.
+N> The non-English alphabets can also be exported properly by setting its appropriate font.
 
 ## Virtual Scroll Data
 
 You can export the pivot table virtual scroll data as PDF document by using PivotEngine export without any performance degradation. To enable PivotEngine export in the pivot table, set the `allowPdfExport` as true. You need to use the `exportToPDF` method for PivotEngine export.
 
-> PivotEngine export will be performed while enabling virtual scrolling by default
+N> PivotEngine export will be performed while enabling virtual scrolling by default
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -489,7 +489,7 @@ You can export the pivot table virtual scroll data as PDF document by using Pivo
 
 Repeat row headers on each page can be achieved using PivotEngine export option. To disable repeat row headers, you need to set `allowRepeatHeader` to **false** in beforeExport event. You need to use the `exportToPDF` method for PivotEngine export.
 
-> By default, repeat row headers is enabled in the PivotEngine export.
+N> By default, repeat row headers is enabled in the PivotEngine export.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -520,7 +520,7 @@ Repeat row headers on each page can be achieved using PivotEngine export option.
 
 The pivot engine exports the entire virtual data of the pivot table (i.e. the data that contains all of the records used to render the complete pivot table) as a PDF document. To export just the current viewport of the pivot table, set the [`exportAllPages`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportAllPages) property to **false**. To use the pivot engine export, add the `PDFExport` module into the pivot table.
 
-> By default, the pivot engine export will be performed while virtual scrolling is enabled.
+N> By default, the pivot engine export will be performed while virtual scrolling is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
