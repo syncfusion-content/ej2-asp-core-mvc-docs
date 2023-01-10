@@ -336,4 +336,4 @@ In the following example, we have used Advent Pro font to export the grid with H
 
 
 
-> **ej.pdfexport.PdfTrueTypeFont** accepts base 64 format of the Custom Font.
+N> **ej.pdfexport.PdfTrueTypeFont** accepts base 64 format of the Custom Font.

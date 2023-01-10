@@ -37,4 +37,4 @@ By default top level resource color will be applied for the events. If user want
 
 
 
-> The `resourceColorField` field value should be as same as the `name` field value given with in `resources` property.
+N> The `resourceColorField` field value should be as same as the `name` field value given with in `resources` property.
