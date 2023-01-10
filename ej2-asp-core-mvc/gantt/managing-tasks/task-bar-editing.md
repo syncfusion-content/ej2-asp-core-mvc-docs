@@ -1,4 +1,15 @@
-# Taskbar editing
+---
+layout: post
+title: Taskbar Editing in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about taskbar editing in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Managing Tasks
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
+# Taskbar editing action in gantt control
 
 Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [`AllowTaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowTaskbarEditing) property.
 
@@ -105,13 +116,13 @@ Updating with cell Edit
 
 Updating with Dialog
 
-> When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
+N> When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
 
 ## Update task values using method
 
 Tasks value can be dynamically updated by using the `updateRecordById` method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
 
-> Using the `updateRecordById` method, you cannot update the task ID value.
+N> Using the `updateRecordById` method, you cannot update the task ID value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -26,20 +26,20 @@ This section briefly explains about how to integrate ASP.NET Core PDF Viewer con
 ![select-aspnet-core-web-app](Core_Images/Select-aspnet-core-project.png)
 3. In the **Configure your new project** dialog, enter *Project Name* and select Next.
 ![Set-project-name](Core_Images/Set-project-name.png)
-4. In the **Additional information** dialog, select **.NET 6.0 (Long-term Support) and then select **Create**. 
+4. In the **Additional information** dialog, select **.NET 6.0 (Long-term Support) and then select Create**. 
 ![Set-framework](Core_Images/additional-info.png) 
 
 ## ASP.NET Core PDF Viewer NuGet package installation
 
 To add ASP.NET Core PDF Viewer control, the following NuGet package need to be installed in your ASP.NET Core application based on the operating system of the server you intend to host.
 
-* For **Windows**, use [Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows/)
-* For **Linux**, use [Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux/)
-* For **macOS**, use [Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX/)
+* For **Windows**, use [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and [Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows/)
+* For **Linux**, use [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and [Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux/)
+* For **macOS**, use [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and [Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX/)
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
-Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_ViewImports.cshtml" %}
@@ -69,7 +69,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentati
 
 ## Add script reference
 
-In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Add the required scripts using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -85,7 +85,7 @@ In this getting started walk-through, the required scripts are referred using CD
 
 ## Register Syncfusion Script Manager
 
-Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager in the ASP.NET Core application as follows. 
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -100,14 +100,14 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
+N> Add the script manager `<ejs-script>` at the **end of `<body>`**.
+
 ## Add ASP.NET Core PDF Viewer control
 
-Now, add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the documentPath property as below.
-
-{% if page.publishingplatform == "aspnet-core" %}
+Add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the documentPath property as below.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 @page "{handler?}"
 @model IndexModel
@@ -121,7 +121,12 @@ Now, add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.csh
 </div>
 
 {% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
+{% endtabs %}
+
+Add the below code in the Index.cshtml.cs which is placed inside the Pages folder.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using Syncfusion.EJ2.PdfViewer;
@@ -174,6 +179,7 @@ namespace PDFViewerSample.Pages
             jsonResult = pdfviewer.Load(stream, jsonObject);
             return Content(JsonConvert.SerializeObject(jsonResult));
         }
+
         public Dictionary<string, string> JsonConverterstring(jsonObjects results)
         {
             Dictionary<string, object> resultObjects = new Dictionary<string, object>();
@@ -185,6 +191,7 @@ namespace PDFViewerSample.Pages
             Dictionary<string, string> jsonResult = emptyObjects.ToDictionary(k => k.Key, k => k.Value.ToString());
             return jsonResult;
         }
+
         //Post action for processing the PDF documents.
         public IActionResult OnPostRenderPdfPages([FromBody] jsonObjects responseData)
         {
@@ -193,6 +200,7 @@ namespace PDFViewerSample.Pages
             object jsonResult = pdfviewer.GetPage(jsonObject);
             return Content(JsonConvert.SerializeObject(jsonResult));
         }
+
         //Post action for unloading and disposing the PDF document resources
         public IActionResult OnPostUnload([FromBody] jsonObjects responseData)
         {
@@ -201,6 +209,7 @@ namespace PDFViewerSample.Pages
             pdfviewer.ClearCache(jsonObject);
             return this.Content("Document cache is cleared");
         }
+
         //Post action for rendering the ThumbnailImages
         public IActionResult OnPostRenderThumbnailImages([FromBody] jsonObjects responseData)
         {
@@ -209,6 +218,7 @@ namespace PDFViewerSample.Pages
             object result = pdfviewer.GetThumbnailImages(jsonObject);
             return Content(JsonConvert.SerializeObject(result));
         }
+
         //Post action for processing the bookmarks from the PDF documents
         public IActionResult OnPostBookmarks([FromBody] jsonObjects responseData)
         {
@@ -217,6 +227,7 @@ namespace PDFViewerSample.Pages
             object jsonResult = pdfviewer.GetBookmarks(jsonObject);
             return Content(JsonConvert.SerializeObject(jsonResult));
         }
+
         //Post action for rendering the annotation comments
         public IActionResult OnPostRenderAnnotationComments([FromBody] jsonObjects responseData)
         {
@@ -225,8 +236,8 @@ namespace PDFViewerSample.Pages
             object jsonResult = pdfviewer.GetAnnotationComments(jsonObject);
             return Content(JsonConvert.SerializeObject(jsonResult));
         }
-        //Post action for exporting the annotations
 
+        //Post action for exporting the annotations
         public IActionResult OnPostExportAnnotations([FromBody] jsonObjects responseData)
         {
             PdfRenderer pdfviewer = new PdfRenderer(_cache);
@@ -234,6 +245,7 @@ namespace PDFViewerSample.Pages
             string jsonResult = pdfviewer.ExportAnnotation(jsonObject);
             return Content(jsonResult);
         }
+
         //Post action for importing the annotations
         public IActionResult OnPostImportAnnotations([FromBody] jsonObjects responseData)
         {
@@ -277,9 +289,9 @@ namespace PDFViewerSample.Pages
                     }
                 }
             }
-
             return Content(jsonResult);
         }
+
         //Post action for downloading the PDF documents
         public IActionResult OnPostDownload([FromBody] jsonObjects responseData)
         {
@@ -288,6 +300,7 @@ namespace PDFViewerSample.Pages
             string documentBase = pdfviewer.GetDocumentAsBase64(jsonObject);
             return Content(documentBase);
         }
+
         //Post action for printing the PDF documents
         public IActionResult OnPostPrintImages([FromBody] jsonObjects responseData)
         {
@@ -296,6 +309,7 @@ namespace PDFViewerSample.Pages
             object pageImage = pdfviewer.GetPrintImage(jsonObject);
             return Content(JsonConvert.SerializeObject(pageImage));
         }
+
         //Gets the path of the PDF document
         private string GetDocumentPath(string document)
         {
@@ -315,63 +329,64 @@ namespace PDFViewerSample.Pages
             return documentPath;
         }
     }
+
     public class jsonObjects
     {
-
         public string document { get; set; }
         public string password { get; set; }
-        public int zoomFactor { get; set; }
-        public bool isFileName { get; set; }
-        public int xCoordinate { get; set; }
-        public int yCoordinate { get; set; }
-        public int pageNumber { get; set; }
-        public int tileXcount { get; set; }
-        public int tileYcount { get; set; }
-        public string extraText { get; set; }
+        public string zoomFactor { get; set; }
+        public string isFileName { get; set; }
+        public string xCoordinate { get; set; }
+        public string yCoordinate { get; set; }
+        public string pageNumber { get; set; }
         public string documentId { get; set; }
         public string hashId { get; set; }
-        public float sizeX { get; set; }
-        public float sizeY { get; set; }
-        public int startPage { get; set; }
-        public int endPage { get; set; }
+        public string sizeX { get; set; }
+        public string sizeY { get; set; }
+        public string startPage { get; set; }
+        public string endPage { get; set; }
         public string stampAnnotations { get; set; }
         public string textMarkupAnnotations { get; set; }
         public string stickyNotesAnnotation { get; set; }
         public string shapeAnnotations { get; set; }
         public string measureShapeAnnotations { get; set; }
         public string action { get; set; }
-        public int pageStartIndex { get; set; }
-        public int pageEndIndex { get; set; }
+        public string pageStartIndex { get; set; }
+        public string pageEndIndex { get; set; }
         public string fileName { get; set; }
         public string elementId { get; set; }
         public string pdfAnnotation { get; set; }
         public string importPageList { get; set; }
-        public string annotationDataFormat { get; set; }
         public string uniqueId { get; set; }
         public string data { get; set; }
-        public float viwePortWidth { get; set; }
-        public float viewportHeight { get; set; }
-        public int tilecount { get; set; }
+        public string viewPortWidth { get; set; }
+        public string viewportHeight { get; set; }
+        public string tilecount { get; set; }
         public bool isCompletePageSizeNotReceived { get; set; }
         public string freeTextAnnotation { get; set; }
         public string signatureData { get; set; }
         public string fieldsData { get; set; }
+        public string FormDesigner { get; set; }
+        public string inkSignatureData { get; set; }
+        public bool hideEmptyDigitalSignatureFields { get; set; }
+        public bool showDigitalSignatureAppearance { get; set; }
+        public bool digitalSignaturePresent { get; set; }
+        public string tileXCount { get; set; }
+        public string tileYCount { get; set; }
+        public string digitalSignaturePageList { get; set; }
+        public string annotationCollection { get; set; }
+        public string annotationsPageList { get; set; }
+        public string formFieldsPageList { get; set; }
+        public string isAnnotationsExist { get; set; }
+        public string isFormFieldAnnotationsExist { get; set; }
         public string documentLiveCount { get; set; }
+        public string annotationDataFormat { get; set; }
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="PdfViewerController.cs" %}
-{% include code-snippet/pdfviewer/getting-start-core/PdfViewerController.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-In this code,
+In the above code,
 
 **ejs-pdfviewer** refers to the PDFViewer control among the EJ components with id as "pdfviewer".
 
@@ -379,11 +394,13 @@ In this code,
 
 **documentPath** is the property needed to load a PDF file in the PDF Viewer. The specified document must be placed inside the folder structure that matches with the path in the GetDocumentPath(string document) method inside the PdfViewerController.
 
+N> Add the PDF document to the `wwwroot` directory in the ASP.NET Core application.
+
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core PDF Viewer control will be rendered in the default web browser.
 
 ![ASP.NET Core PDF Viewer Control](Core_Images/pdfviewer-control.png)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20Core%20Tag%20Helper%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

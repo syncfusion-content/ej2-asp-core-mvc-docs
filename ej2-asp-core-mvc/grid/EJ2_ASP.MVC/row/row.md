@@ -53,7 +53,7 @@ You can change the grid's alternative rows' background color by overriding the *
 }
 ```
 
-Please refer to the following example.
+Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -78,6 +78,102 @@ Please refer to the following example.
 {% endtabs %}
 {% endif %}
 
+### Using CSS customize selected row
+
+The background color of the selected row can be changed by overriding the following CSS style.
+
+```css
+.e-grid td.e-active {
+    background-color: #f9920b;
+}
+```
+
+This is demonstrated in the following sample:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/row/select-row/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Selected-row.cs" %}
+{% include code-snippet/grid/row/select-row/select-row.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/row/select-row/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Selected-row.cs" %}
+{% include code-snippet/grid/row/select-row/select-row.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+## Adding a new row programmatically
+
+The Grid can add a new row between the existing rows using the `addRecord` method of the Grid.
+
+This is demonstrated in the following sample:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/row/add-row/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Add-row.cs" %}
+{% include code-snippet/grid/row/add-row/add-row.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/row/add-row/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Add-row.cs" %}
+{% include code-snippet/grid/row/add-row/add-row.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+N> When working with remote data, it is impossible to add a new row between the existing rows.
+
+## How to get the row information when hovering over the cell
+
+It is possible to get the row information when hovering over the specific cell. This can be achieved by using the [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event and `getRowInfo` method of the Grid.
+
+In the following sample, the `mouseover` event is bound to a grid row in the `RowDataBound` event, and when hovering over the specific cell, using the `getRowInfo` method, row information will be retrieved and displayed in the console.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/row/row-info/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Row-Info.cs" %}
+{% include code-snippet/grid/row/row-info/row-info.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/row/row-info/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Row-Info.cs" %}
+{% include code-snippet/grid/row/row-info/row-info.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## How to get the row information when hovering over the cell
 
