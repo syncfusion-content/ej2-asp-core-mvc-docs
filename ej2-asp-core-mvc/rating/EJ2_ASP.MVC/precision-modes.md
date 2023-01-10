@@ -23,10 +23,10 @@ The precision types of Rating are as follows:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Precision Modes/bottom-left-position/razor %}
+{% include code-snippet/rating/precision-modes/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Precision Modes/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="PrecisionModes.cs" %}
+{% include code-snippet/rating/precision-modes/precisionmodes.cs %}
 {% endhighlight %}
 {% endtabs %}
 

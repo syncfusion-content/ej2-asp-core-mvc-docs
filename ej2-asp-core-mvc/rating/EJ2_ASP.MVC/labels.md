@@ -16,10 +16,10 @@ You can use the [ShowLabel](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Labels/bottom-left-position/razor %}
+{% include code-snippet/rating/labels/show-label/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Labels/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="ShowLabel.cs" %}
+{% include code-snippet/rating/labels/show-label/showlabel.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,10 +42,10 @@ The following label positions are supported:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Labels/bottom-left-position/razor %}
+{% include code-snippet/rating/labels/label-position/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Labels/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="LabelPosition.cs" %}
+{% include code-snippet/rating/labels/label-position/labelposition.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,10 +62,10 @@ You can use the [LabelTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Labels/bottom-left-position/razor %}
+{% include code-snippet/rating/labels/label-template/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Labels/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="LabelTemplate.cs" %}
+{% include code-snippet/rating/labels/label-template/labeltemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 

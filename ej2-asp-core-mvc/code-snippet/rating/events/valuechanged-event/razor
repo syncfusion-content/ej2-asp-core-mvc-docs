@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.Inputs
+
+@Html.EJS().Rating("rating").ValueChanged("ValueChanged()").Render()
+
+<script>
+
+    function ValueChanged() {
+        alert("Changed");
+        // Here, you can customize your code.
+    }
+
+</script>

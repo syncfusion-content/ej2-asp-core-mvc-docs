@@ -16,10 +16,10 @@ The Asp.Net MVC Rating component allows users to rate something using a visual s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Selection/bottom-left-position/razor %}
+{% include code-snippet/rating/selection/selection/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Selection/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="Selection.cs" %}
+{% include code-snippet/rating/selection/selection/selection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +35,10 @@ You can use the [Value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Selection/bottom-left-position/razor %}
+{% include code-snippet/rating/selection/selected-value/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Selection/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="SelectedValue.cs" %}
+{% include code-snippet/rating/selection/selected-value/selectedvalue.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -74,10 +74,10 @@ You can use the [EnableSingleSelection](https://help.syncfusion.com/cr/aspnetmvc
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Selection/bottom-left-position/razor %}
+{% include code-snippet/rating/selection/min/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Selection/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="Min.cs" %}
+{% include code-snippet/rating/selection/min/min.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -93,10 +93,10 @@ You can reset the rating value to its default by using the [AllowReset](https://
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Selection/bottom-left-position/razor %}
+{% include code-snippet/rating/selectionallow-reset/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Selection/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="AllowReset.cs" %}
+{% include code-snippet/rating/selection/allow-reset/allowreset.cs %}
 {% endhighlight %}
 {% endtabs %}
 

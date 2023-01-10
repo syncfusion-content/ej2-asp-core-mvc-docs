@@ -16,10 +16,10 @@ The Asp.Net MVC rating component supports tooltip to show additional information
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Tooltip/bottom-left-position/razor %}
+{% include code-snippet/rating/tooltip/show-tooltip/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Tooltip/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="ShowTooltip.cs" %}
+{% include code-snippet/rating/tooltip/show-tooltip/showtooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +35,10 @@ You can use the [TooltipTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/S
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Tooltip/bottom-left-position/razor %}
+{% include code-snippet/rating/tooltip/tooltip-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Tooltip/bottom-left-position/position.cs %}
+{% include code-snippet/rating/tooltip/tooltip-template/tooltiptemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,10 +57,10 @@ N> You can find more information about customizing the appearance of the tooltip
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Tooltip/bottom-left-position/razor %}
+{% include code-snippet/rating/tooltip/custom-tooltip/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Tooltip/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="CustomTooltip.cs" %}
+{% include code-snippet/rating/tooltip/custom-tooltip/position.cs %}
 {% endhighlight %}
 {% endtabs %}
 

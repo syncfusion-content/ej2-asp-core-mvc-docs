@@ -20,10 +20,10 @@ You can specify the number of rating items using the [ItemsCount](https://help.s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Appearance/bottom-left-position/razor %}
+{% include code-snippet/rating/appearance/items-count/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Appearance/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="ItemsCount.cs" %}
+{% include code-snippet/rating/appearance/items-count/itemscount.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,10 +39,10 @@ You can disable the Syncfusion Asp.Net MVC Rating component by using the [Disabl
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/razor %}
+{% include code-snippet/rating/appearance/disabled/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CustomPosition.cs" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/customposition.cs %}
+{% highlight c# tabtitle="Disabled.cs" %}
+{% include code-snippet/rating/appearance/disabled/disabled.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,10 +58,10 @@ You can use the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/razor %}
+{% include code-snippet/rating/appearance/visible/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CustomPosition.cs" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/customposition.cs %}
+{% highlight c# tabtitle="Visible.cs" %}
+{% include code-snippet/rating/Appearance/visible/visible.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,10 +77,10 @@ You can use the [ReadOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/razor %}
+{% include code-snippet/rating/appearance/read-only/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomPosition.cs" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/customposition.cs %}
+{% include code-snippet/rating/appearance/read-only/readonly.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,10 +100,10 @@ You can change the rating icon border color in Asp.Net MVC Rating component, you
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/razor %}
+{% include code-snippet/rating/appearance/css-class/border-color/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CustomPosition.cs" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/customposition.cs %}
+{% highlight c# tabtitle="BorderColor.cs" %}
+{% include code-snippet/rating/appearance/css-class/border-color/bordercolor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -119,10 +119,10 @@ You can customize the fill colors of rated and un-rated icons in the Rating comp
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/razor %}
+{% include code-snippet/rating/appearance/css-class/fill-color/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CustomPosition.cs" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/customposition.cs %}
+{% highlight c# tabtitle="FillColor.cs" %}
+{% include code-snippet/rating/appearance/css-class/fillcolor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -140,10 +140,10 @@ You can change the space between the rating items in Asp.Net MVC Rating componen
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/razor %}
+{% include code-snippet/rating/appearance/css-class/item-spacing/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CustomPosition.cs" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/customposition.cs %}
+{% highlight c# tabtitle="ItemsSpacing.cs" %}
+{% include code-snippet/rating/appearance/css-class/item-spacing/itemsspacing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -159,10 +159,10 @@ You can change the rating item icon in Asp.Net MVC Rating component, you can use
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/razor %}
+{% include code-snippet/rating/appearance/css-class/change-icon/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CustomPosition.cs" %}
-{% include code-snippet/floating-action-button/Appearance/custom-position/customposition.cs %}
+{% highlight c# tabtitle="ChangeIcon.cs" %}
+{% include code-snippet/rating/appearance/css-class/change-icon/changeicon.cs %}
 {% endhighlight %}
 {% endtabs %}
 

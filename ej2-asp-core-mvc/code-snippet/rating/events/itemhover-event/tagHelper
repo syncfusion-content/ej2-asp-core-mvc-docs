@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-rating id="rating" onItemHover="onItemHover()"></ejs-rating>
+
+<script>
+
+    function onItemHover() {
+        // Here, you can customize your code.
+    }
+
+</script>

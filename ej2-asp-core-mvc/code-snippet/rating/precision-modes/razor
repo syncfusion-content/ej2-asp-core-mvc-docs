@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.Inputs
+
+<label>Full Precision</label><br />
+@Html.EJS().Rating("rating").Value(3).Precision(PrecisionType.Full).Render()<br />
+
+<label>Half Precision</label><br />
+@Html.EJS().Rating("rating1").Value(2.5).Precision(PrecisionType.Half).Render()<br />
+
+<label>Quarter Precision</label><br />
+@Html.EJS().Rating("rating2").Value(2.75).Precision(PrecisionType.Quarter).Render()<br />
+
+<label>Exact Precision</label><br />
+@Html.EJS().Rating("rating3").Value(2.3).Precision(PrecisionType.Exact).Render()

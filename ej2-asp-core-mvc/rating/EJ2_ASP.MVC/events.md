@@ -18,10 +18,10 @@ The rating component triggers the [Created](https://help.syncfusion.com/cr/aspne
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/events/created/razor %}
+{% include code-snippet/rating/events/created-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CreatedEvent.cs" %}
-{% include code-snippet/speeddial/events/created/createdevent.cs %}
+{% include code-snippet/rating/events/created-vent/createdevent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ The rating component triggers the [ValueChanged](https://help.syncfusion.com/cr/
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/events/created/razor %}
+{% include code-snippet/rating/events/valuechanged-event/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CreatedEvent.cs" %}
-{% include code-snippet/speeddial/events/created/createdevent.cs %}
+{% highlight c# tabtitle="ValueChanged.cs" %}
+{% include code-snippet/speeddial/events/valuechanged-event/valuechanged.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,9 +44,9 @@ The rating component triggers the [OnItemHover](https://help.syncfusion.com/cr/a
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/events/created/razor %}
+{% include code-snippet/rating/events/itemhover-event/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CreatedEvent.cs" %}
-{% include code-snippet/speeddial/events/created/createdevent.cs %}
+{% highlight c# tabtitle="ItemHover.cs" %}
+{% include code-snippet/rating/events/itemhover-event/itemhover.cs %}
 {% endhighlight %}
 {% endtabs %}

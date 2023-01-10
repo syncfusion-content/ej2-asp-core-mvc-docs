@@ -92,13 +92,22 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 Now, add the Syncfusion ASP.NET MVC Rating control in `~/Home/Index.cshtml` page.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-
-@Html.EJS().Rating("rating").Render()
-
+{% include code-snippet/rating/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rating/getting-started/default/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Rating control will be rendered in the default web browser.
 
@@ -108,12 +117,21 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 You can set the rating value by using the [Value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Value) property.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-
-@Html.EJS().Rating("rating1").Value(3).Render()
-
+{% include code-snippet/rating/getting-started/value/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rating/getting-started/value/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ![Displaying Rating Value in ASP.NET MVC Rating Control](images/rating-value.png)

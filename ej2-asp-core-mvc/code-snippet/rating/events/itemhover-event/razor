@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+@Html.EJS().Rating("rating").OnItemHover("OnItemHover()").Render()
+
+<script>
+
+    function OnItemHover() {
+        // Here, you can customize your code.
+    }
+
+</script>

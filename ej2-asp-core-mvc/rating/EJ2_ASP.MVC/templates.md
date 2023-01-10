@@ -27,10 +27,10 @@ If the `FullTemplate` is not defined, the `EmptyTemplate` will be used as the de
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Templates/bottom-left-position/razor %}
+{% include code-snippet/rating/templates/empty-template/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Templates/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="EmptyTemplate.cs" %}
+{% include code-snippet/rating/templates/empty-template/emptytemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -49,10 +49,10 @@ The [RatingItemContext](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Templates/bottom-left-position/razor %}
+{% include code-snippet/rating/templates/full-template/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Templates/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="FullTemplate.cs" %}
+{% include code-snippet/rating/templates/full-template/fulltemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,10 +68,10 @@ You can use emojis of your choice as rating symbol by specifying them as templat
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Templates/bottom-left-position/razor %}
+{% include code-snippet/rating/templates/emoji-icon/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Templates/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="EmojiIcon.cs" %}
+{% include code-snippet/rating/templates/emoji-icon/emoji_icon.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -87,10 +87,10 @@ You can use SVG icons of your choice as rating symbol by specifying them as temp
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Templates/bottom-left-position/razor %}
+{% include code-snippet/rating/templates/svg-template/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Templates/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="SVGTemplate.cs" %}
+{% include code-snippet/rating/templates/svg-template/svgtemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,10 +106,10 @@ You can use PNG images of your choice as rating symbol by specifying them as tem
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Templates/bottom-left-position/razor %}
+{% include code-snippet/rating/templates/png-template/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Templates/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="PNGTemplate.cs" %}
+{% include code-snippet/rating/templates/png-template/pngtemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
