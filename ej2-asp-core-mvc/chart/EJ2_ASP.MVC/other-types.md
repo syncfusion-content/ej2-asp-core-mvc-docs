@@ -129,7 +129,32 @@ Waterfall chart helps to understand the cumulative effect of the sequentially in
 {% endtabs %}
 {% endif %}
 
+## Histogram Series
 
+Histogram type charts can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form. To render a histogram chart, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as Histogram.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/other-types/histogram/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Histogram.cs" %}
+{% include code-snippet/chart/series/other-types/histogram/histogram.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/other-types/histogram/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Histogram.cs" %}
+{% include code-snippet/chart/series/other-types/histogram/histogram.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 **Customization of Waterfall Series**
 
