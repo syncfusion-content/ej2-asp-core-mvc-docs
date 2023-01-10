@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(ViewBag.view)
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .DateRangeTemplate("#template")
+    .Render()
+)
+
+<script id="template" type="text/template">
+    <div class="date-text">${getDateRange(data.date)}</div>
+</script>
+<script type="text/javascript">
+    var instance = new ej.base.Internationalization();
+    window.getDateRange = function (value) {
+        return value.toLocaleString('en-us', { month: 'long' }) + ' ' + value.getFullYear();
+    };
+</script>
