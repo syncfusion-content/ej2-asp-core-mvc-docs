@@ -84,13 +84,7 @@ If the path field is not specified in the [insertVideoSettings](https://help.syn
 
 Using the Rich Text Editor `fileUploading` event, you can restrict the video to upload when the given video size is greater than the allowed fileSize. Also, the video size in the argument will be returned in `bytes`.
 
-
-N> The file size in the argument will be returned in `bytes`.
-
-In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not
-
 In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
-
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -119,7 +113,7 @@ In the following example, the video size has been validated before uploading and
 
 The selected video can be uploaded to the required destination using the controller action below. Map this method name in [insertVideoSettings.saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_SaveUrl) and provide required destination path through [insertVideoSettings.path](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_Path) properties.
 
-N> If you want to insert lower-sized video files in the editor and don't want a specific physical location for saving the video, you can save the format as `Base64`.
+> If you want to insert lower-sized video files in the editor and don't want a specific physical location for saving the video, you can save the format as `Base64`.
 
 In the following code blocks, you can insert the video files which are saved in the specified path.
 
@@ -150,11 +144,7 @@ In the following code blocks, you can insert the video files which are saved in 
 
 The video files can be saved as `Blob` or `Base64` url by using the [insertVideoSettings.saveFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_SaveFormat) property, which is of enum type and the generated url will be set to the `src` attribute of the `<source>` tag.
 
-
-N> The default `saveFormat` property is set to `Blob` format.
-
 > By default, the files are saved in the `Blob` format.
-
 
 ```typescript
 
@@ -224,13 +214,7 @@ Through the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-j
 
 ## Display Position
 
-
-Sets the default display property for the video when it is inserted in the Rich Text Editor using the `insertVideoSettings.layoutOption`.It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video elements’ layout position.
-
-N> The default `layoutOption` property is set to `Inline`.
-
 Sets the default display for an video when it is inserted in the Rich Text Editor using the `insertVideoSettings.layoutOption`. It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video elements’ layout position.
-
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -261,7 +245,7 @@ The Rich Text Editor has built-in video resizing support, which is enabled for t
 
 You can disable the resize action by configuring `false` for the [insertVideoSettings.resize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_Resize) property.
 
-N> If the [MinWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MinWidth) and [MinHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MinHeight) properties are configured the video resizing does not shrink below the specified values.
+> If the [MinWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MinWidth) and [MinHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MinHeight) properties are configured the video resizing does not shrink below the specified values.
 
 ![Rich Text Editor video resize](./images/video-resize.png)
 
@@ -298,11 +282,7 @@ Refer `rename.cs` controller file for configure the server-side.
 
 The Rich Text Editor control allows you to add additional data with the File Upload, which can be received on the server side. By using the `fileUploading` event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
-
-N> By default, it doesn't support the `UseDefaultCredentials` property, you can manually append the default credentials with the upload request.
-
 > By default it doesn't support `UseDefaultCredentials` property, we need to manually append the default credentials with the upload request.
-
 
 {% if page.publishingplatform == "aspnet-core" %}
 

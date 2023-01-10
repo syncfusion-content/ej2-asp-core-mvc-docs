@@ -15,7 +15,7 @@ The immutable mode optimizes the Grid re-rendering performance by using the obje
 
 To enable this feature, you have to set the [`enableImmutableMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableImmutableMode) property as **true**.
 
-N>* This feature uses the primary key value for data comparison. So, you need to provide the [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) column.
+>* This feature uses the primary key value for data comparison. So, you need to provide the [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

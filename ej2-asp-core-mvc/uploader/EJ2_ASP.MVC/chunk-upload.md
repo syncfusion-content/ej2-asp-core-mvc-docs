@@ -13,7 +13,7 @@ documentation: ug
 
 The Uploader sends the large file split into small chunks and transmits to the server using AJAX. You can also pause, resume, and retry the failed chunk file.
 
-N> * The chunk upload works in asynchronous upload only.
+> * The chunk upload works in asynchronous upload only.
 
 * This feature is available from the Essential Studio Vol 2, 2018 release.
 
@@ -52,7 +52,7 @@ The chunk upload functionality separates the selected files into blobs of the da
 The chunks are sent in **sequential** order, and the next chunk can be sent to the server according to the [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_ChunkSuccess) of the previous chunk. If any one of the chunk failed, then the remaining chunk cannot be sent to the server. 
 The [chunkSuccess](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_ChunkSuccess) or [chunkFailure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_ChunkFailure) &nbsp;event will be triggered when the chunk is sent to the server successfully or failed. If all the chunks are sent to the server successfully, the uploader success event is triggered.
 
-N> Chunk upload will work when the selected file size is greater than the specified chunk size. otherwise, it upload the files normally.
+> Chunk upload will work when the selected file size is greater than the specified chunk size. otherwise, it upload the files normally.
 
 ## Additional configurations
 
@@ -93,7 +93,7 @@ The following sample specifies the chunk upload delay with 3000 milliseconds and
 
 Allows you to resume an upload operation after a network failure or manually interrupts (pause) the upload. You can perform pause and resume upload actions using public methods (pause and resume) and UI interaction. The pause icon is enabled after the upload begins.
 
-N> This pause and resume features available only when the chunk upload is enabled.
+> This pause and resume features available only when the chunk upload is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -161,7 +161,7 @@ Output be like the below.
 
 ![uploader](./images/uploader-cancel.png)
 
-N> The retry action has different working behavior for chunk upload and default upload.
+> The retry action has different working behavior for chunk upload and default upload.
 
 * Chunk upload - Retries to upload the failed request where it is failed previously.
 * Default upload - Retries to upload the failed file again from initial.
@@ -288,4 +288,4 @@ public void Remove()
 }
 ```
 
-N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.

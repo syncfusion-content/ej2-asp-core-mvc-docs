@@ -40,7 +40,7 @@ If the path field is not specified in the [`insertImageSettings`](https://help.s
 
 ```
 
-N> If you want to insert a lot of tiny images in the editor and don't want a specific physical location for saving images, you can opt to save format as Base64.
+> If you want to insert a lot of tiny images in the editor and don't want a specific physical location for saving images, you can opt to save format as Base64.
 
 In the below sample, the image has been load from the local machine and it will be saved in the given location.
 
@@ -73,7 +73,7 @@ In the below sample, the image has been load from the local machine and it will 
 
 The selected image can be uploaded to the required destination by using the below controller action. Map this method name in `saveUrl` property of [`insertImageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_InsertImageSettings_Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_) and provide required destination path through `path` property.
 
-N> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-core-richtexteditor-image-upload) repository.
+> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-core-richtexteditor-image-upload) repository.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -191,7 +191,7 @@ Sets the default display for an image when it is inserted in the Rich Text Edito
 
 ## Image with Link
 
-The hyperlink itself can be an image in Rich Text Editor. If the image given as hyperlink, the remove, edit and open link will be added to the quick toolbar of image as below. For further details about link, see the [`link documentation`](./link).
+The hyperlink itself can be an image in Rich Text Editor. If the image given as hyperlink, the remove, edit and open link will be added to the quick toolbar of image as below. For further details about link, please see the [`link documentation`](./link).
 
 ![Rich Text Editor image with link](./images/image-link.png)
 

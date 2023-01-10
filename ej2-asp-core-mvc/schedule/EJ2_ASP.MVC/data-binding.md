@@ -45,7 +45,7 @@ To bind local JSON data to the Scheduler, you can simply assign a JavaScript obj
 
 
 
-N> By default, `DataManager` uses `JsonAdaptor` for local data-binding.
+> By default, `DataManager` uses `JsonAdaptor` for local data-binding.
 
 You can also bind different field names to the default event fields as well as include additional custom fields to the event object collection which can be referred [here](./appointments/#binding-different-field-names).
 
@@ -140,7 +140,7 @@ You can bind the event data through external ajax request and assign it to the `
 
 
 
-N> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
+> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
 
 ## Passing additional parameters to the server
 
@@ -171,7 +171,7 @@ To send an additional custom parameter to the server-side post, you need to make
 
 
 
-N> The parameters added using the `Query` property will be sent along with the data request sent to the server on every scheduler actions.
+> The parameters added using the `Query` property will be sent along with the data request sent to the server on every scheduler actions.
 
 ## Handling failure actions
 
@@ -354,4 +354,4 @@ We have assigned our custom created Google Calendar url to the DataManager and a
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

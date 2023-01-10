@@ -13,7 +13,7 @@ documentation: ug
 
 The column definitions are used as the `DataSource` schema in the Query Builder. This plays a vital role in rendering column values. The query builder operations such as create or delete conditions and create or delete groups are performed based on the column definitions. The `Field` property of the `Columns` is necessary to map the data source values in the query builder columns.
 
-N> If the column field is not specified in the data source, the column values will be empty.
+> If the column field is not specified in the data source, the column values will be empty.
 
 ## Auto generation
 
@@ -44,13 +44,13 @@ The `Columns` are automatically generated when the `Columns` declaration is empt
 
 
 
-N> When columns are auto-generated, the column type will be determined from the first record of the data source.
+> When columns are auto-generated, the column type will be determined from the first record of the data source.
 
 ## Labels
 
 By default, the column label is displayed from the column `Field` value. To override the default label, you have to define the `Label` value.
 
-N> If both the field and headerText are not defined in the column, the column renders with “empty” header text.
+> If both the field and headerText are not defined in the column, the column renders with “empty” header text.
 
 ## Operators
 
@@ -110,8 +110,8 @@ The Query Builder formats date and number values. Use the `Format` property, to 
 
 Validation allows you to validate the conditions and it display errors for invalid fields while using the `validateFields` method. To enable validation in the query builder, set `AllowValidation` to true. Column fields are validated after setting `AllowValidation` to true. So, you should manually configure the validation for Operator and Value fields through `Validation`.
 
-N> Set `isRequired` validation for Operator and Value fields.
-<br/> Set `min`, `max` values for number values.
+> Set `isRequired` validation for Operator and Value fields.
+> Set `min`, `max` values for number values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

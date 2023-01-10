@@ -13,7 +13,7 @@ documentation: ug
 
 You can change the format of the day that has to be displayed in header using [dayHeaderFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_DayHeaderFormat) property.
 
-N> By default, the format is `Short`.
+> By default, the format is `Short`.
 
 You can find the possible formats on below.
 

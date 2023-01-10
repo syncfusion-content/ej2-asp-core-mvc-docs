@@ -27,7 +27,7 @@ This section briefly explains about how to include [ASP.NET Core In-place Editor
 
 Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
@@ -220,7 +220,7 @@ You can submit editor value to the server by configuring the [`url`](https://hel
 | **`adaptor`**    | Specifies the adaptor type that is used by DataManager to communicate with DataSource.  |
 | **`primaryKey`** | Defines the unique primary key of editable field which can be used for saving data in the data-base. |
 
-N> The `primaryKey` property is mandatory. If it's not set, edited data are not sent to the server.
+> The `primaryKey` property is mandatory. If it's not set, edited data are not sent to the server.
 
 ## Refresh with modified value
 
@@ -248,7 +248,7 @@ The edited data is submitted to the server and you can see the new values gettin
 
 ![ASP.NET Core In-place Editor with Editing Value](images/getting-started.PNG)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/InplaceEditor/ASP.NET%20Core%20Tag%20Helper%20Examples).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/InplaceEditor/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

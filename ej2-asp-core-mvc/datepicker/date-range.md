@@ -44,4 +44,4 @@ The below example allows selecting a date within the range from 7th to 27th day 
 
 
 
-N> If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range.
+> If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range.

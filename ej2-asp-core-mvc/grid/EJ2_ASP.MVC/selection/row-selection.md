@@ -128,7 +128,7 @@ The Toggle selection allows to perform selection and unselection of the particul
 
 
 
-N> If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
+> If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
 
 ## Clear selection programmatically
 

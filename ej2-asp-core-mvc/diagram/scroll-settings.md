@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scroll Settings in Syncfusion ##Platform_Name## Diagram Component
+title: Scroll Settings in ##Platform_Name## Diagram Component
 description: Learn here all about Scroll Settings in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scroll Settings
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Scroll Settings in Diagram
+# Scroll Settings
 
 The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, mousewheel can be used to scroll the diagram. Diagram’s [`scrollSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramScrollSettings.html) enables to read the current scroll status, view port size, current zoom, and zoom factor. It also allows to scroll the diagram programmatically.
 
@@ -96,29 +96,6 @@ Autoscroll feature automatically scrolls the diagram, whenever the node or conne
 The diagram client-side event [`ScrollChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_ScrollChange) gets triggered when the autoscroll (scrollbars) is changed and you can do your own customization in this event.
 
 The autoscroll behavior in your diagram can be enabled or disabled by using the [`canAutoScroll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramScrollSettings.html#Syncfusion_EJ2_Diagrams_DiagramScrollSettings_CanAutoScroll) property of the diagram.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/scrollsettings/autoscroll/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Autoscroll.cs" %}
-{% include code-snippet/diagram/scrollsettings/autoscroll/autoscroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/scrollsettings/autoscroll/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Autoscroll.cs" %}
-{% include code-snippet/diagram/scrollsettings/autoscroll/autoscroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Autoscroll border
 

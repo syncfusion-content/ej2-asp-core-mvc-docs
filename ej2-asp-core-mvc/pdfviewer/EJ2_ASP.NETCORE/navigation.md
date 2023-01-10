@@ -26,14 +26,14 @@ The default toolbar of PDF Viewer contains the following navigation options
 You can enable/disable page navigation option in PDF Viewer using the following code snippet.,
 
 ```html
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
-                   enableNavigation="false">
-    </ejs-pdfviewer>
-</div>
+    <div style="width:100%;height:600px">
+        <ejs-pdfviewer id="pdfviewer"
+                style="height:600px"
+                serviceUrl="/api/PdfViewer"
+                documentPath=@ViewBag.DocumentPath
+                enableNavigation="false">
+        </ejs-pdfviewer>
+    </div>
 ```
 
 ![Alt text](./images/navigation.png)
@@ -44,14 +44,14 @@ The Bookmarks saved in PDF files are loaded and made ready for easy navigation.
 You can enable/disable bookmark navigation by using the following code snippet.,
 
 ```html
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
-                   enableBookmark="true">
-    </ejs-pdfviewer>
-</div>
+    <div style="width:100%;height:600px">
+        <ejs-pdfviewer id="pdfviewer"
+                style="height:600px"
+                serviceUrl="/api/PdfViewer"
+                documentPath=@ViewBag.DocumentPath
+                enableBookmark="true">
+        </ejs-pdfviewer>
+    </div>
 ```
 
 ![Alt text](./images/bookmark.png)
@@ -62,14 +62,14 @@ Thumbnails is the miniature representation of actual pages in PDF files. This fe
 You can enable/disable thumbnail navigation by using the following code snippet.,
 
 ```html
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
-                   enableThumbnail="true">
-    </ejs-pdfviewer>
-</div>
+    <div style="width:100%;height:600px">
+        <ejs-pdfviewer id="pdfviewer"
+                style="height:600px"
+                serviceUrl="/api/PdfViewer"
+                documentPath=@ViewBag.DocumentPath
+                enableThumbnail="true">
+        </ejs-pdfviewer>
+    </div>
 ```
 
 ![Alt text](./images/thumbnail.png)
@@ -87,14 +87,14 @@ Table of contents navigation allows users to navigate to different parts of a PD
 You can enable/disable link navigation by using the following code snippet.,
 
 ```html
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
-                   enableHyperlink="true">
-    </ejs-pdfviewer>
-</div>
+    <div style="width:100%;height:600px">
+        <ejs-pdfviewer id="pdfviewer"
+                style="height:600px"
+                serviceUrl="/api/PdfViewer"
+                documentPath=@ViewBag.DocumentPath
+                enableHyperlink="true">
+        </ejs-pdfviewer>
+    </div>
 ```
 
 You can change the open state of the hyperlink in the PDF Viewer by using the following code snippet,

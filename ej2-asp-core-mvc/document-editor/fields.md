@@ -20,7 +20,7 @@ documenteditor.editor.insertField(fieldCode, fieldResult);
 
 ```
 
-N> Document editor does not validate or process the field code or field result. It simply inserts the field with specified field information.
+>Note: Document editor does not validate or process the field code or field result. It simply inserts the field with specified field information.
 
 ## Update fields
 
@@ -50,7 +50,7 @@ You can get field code and field result of the current selected field by using [
 var fieldInfo = documenteditor.selection.getFieldInfo();
 ```
 
-N> For nested fields, this method returns combined field code and result.
+>Note: For nested fields, this method returns combined field code and result.
 
 ## Set field info
 
@@ -68,9 +68,10 @@ fieldInfo.result = '«First Name»';
 
 //Modify field code and result of the current selected field.
 documenteditor.editor.setFieldInfo(fieldInfo);
+
 ```
 
-N> For nested field, entire field gets replaced completely with the specified field information.
+>Note: For nested field, entire field gets replaced completely with the specified field information.
 
 ## See Also
 

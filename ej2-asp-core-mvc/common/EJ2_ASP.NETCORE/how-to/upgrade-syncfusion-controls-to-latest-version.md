@@ -14,13 +14,13 @@ To upgrade Syncfusion ASP.NET Core Controls to the latest version, you need to e
 
 ## Compatible .NET version
 
-Refer to [version compatibility](../version-compatibility) documentation to ensure the .NET version you are using is supported in latest version of Synncfusion components.
+Syncfusion ASP.NET Core Controls in the latest version `'{:nuget-version:}'` are compatible with the latest version of .NET 5.0 and .NET Core 3.1. Also, refer to [version compatibility](../version-compatibility) documentation for more information about version compatibility of Syncfusion ASP.NET Core Controls and .NET Core SDK.
 
 ## Client resource file references
 
-Ensure to update version in Script and CSS file references in your application.
+Ensure your Script and CSS files have been properly configured in your application.
 
-* Update the version in scripts and style sheet if you are using CDN referece inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+* Add the required scripts and style sheet using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -36,11 +36,11 @@ Ensure to update version in Script and CSS file references in your application.
 
 * Make sure that the version in the URLs matches the version of the `Syncfusion.EJ2.AspNet.Core` NuGet package in your application.
     
-N> For production purpose and minimal requirement, Syncfusion provides an option to generate custom styles of selective controls by using the ThemeStudio web application. Refer to this [link](http://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
+> For production purpose and minimal requirement, Syncfusion provides an option to generate custom styles of selective controls by using the ThemeStudio web application. Refer to this [link](http://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
 
 ## Breaking changes
 
-Check is there any breaking changes between the syncfusion version you are using and the version you want to upgrade using [upgrade guide](https://help.syncfusion.com/upgrade-guide/aspnet-core-ui-controls) or each version [release notes](https://ej2.syncfusion.com/aspnetcore/documentation/release-notes/index/?type=breaking-changes).
+Some changes have been modified in our ASP samples for each release. So, we suggest you to ensure the breaking changes. Refer to this [release notes](https://ej2.syncfusion.com/aspnetcore/documentation/release-notes/index/?type=breaking-changes) for our ASP.NET Core controls.
 
 ## Cache problem
 

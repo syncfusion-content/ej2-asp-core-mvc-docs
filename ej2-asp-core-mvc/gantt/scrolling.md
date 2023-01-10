@@ -17,7 +17,7 @@ The scrollbar will be displayed in the gantt when content exceeds the element [`
 * The horizontal scrollbar appears when the sum of columns width exceeds the grid pane size.
 * The [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) and [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) are used to set the gantt height and width, respectively.
 
-N> The default value for [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) and [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) is `auto`.
+> The default value for [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) and [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) is `auto`.
 
 ## Set width and height
 
@@ -77,61 +77,3 @@ The following code example shows how to set height and width in the Gantt contro
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-## Scroll To Date method
-
-In the Gantt control, When We use the [`scrollToDate`](https://ej2.syncfusion.com/documentation/api/gantt/#scrolltodate) method, it will scroll the timeline horizontally to the date that we specified in the method's argument.
-
-The following code examples show how the scroll To Date method works in Gantt:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/how-to/scrollToDate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="scrollToDate.cs" %}
-{% include code-snippet/gantt/how-to/scrollToDate/scrollToDate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt/how-to/scrollToDate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="scrollToDate.cs" %}
-{% include code-snippet/gantt/how-to/scrollToDate/scrollToDate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-## Set the vertical scroll position
-
-In the Gantt control, you can set the vertical scroller position dynamically by clicking the custom button using the `setScrollTop` method.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/how-to/setScrollTop/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="SetScrollTop.cs" %}
-{% include code-snippet/gantt/how-to/setScrollTop/setScrollTop.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt/how-to/setScrollTop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SetScrollTop.cs" %}
-{% include code-snippet/gantt/how-to/setScrollTop/setScrollTop.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

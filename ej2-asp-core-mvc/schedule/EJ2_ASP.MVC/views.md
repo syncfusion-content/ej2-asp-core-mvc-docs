@@ -15,7 +15,7 @@ The Scheduler includes wide variety of view modes with unique configuration opti
 
 To navigate between different views and dates, the navigation options are available at the Scheduler header bar. The active view option is usually highlighted by default. The date range of the active view will also be displayed at the left corner of the header bar, clicking on which will open a calendar popup for the ease of desired date selection.
 
-N> By default, Scheduler displays the calendar views such as day, week, work week, month and agenda.
+> By default, Scheduler displays the calendar views such as day, week, work week, month and agenda.
 
 ## Setting specific view on scheduler
 
@@ -145,7 +145,7 @@ Usually a day view displays a single day with all its related appointments. It i
 
 
 
-N> All the above defined properties can be accessed within Day view except `allowVirtualScrolling` and `headerRows`.
+> All the above defined properties can be accessed within Day view except `allowVirtualScrolling` and `headerRows`.
 
 ### Week view
 
@@ -176,7 +176,7 @@ The Week view displays a count of 7 days (from Sunday to Saturday) with all its 
 
 
 
-N> All the above defined properties in the table can be accessed within Week and Work week views except `allowVirtualScrolling` and `headerRows`.
+> All the above defined properties in the table can be accessed within Week and Work week views except `allowVirtualScrolling` and `headerRows`.
 
 ### Work Week view
 
@@ -209,7 +209,7 @@ The following code example depicts how to change the working days only on the `W
 
 
 
-N> The Week, Work week and Day views can display the all-day row appointments in a separate all-day row with an expand/collapse option to view it.
+> The Week, Work week and Day views can display the all-day row appointments in a separate all-day row with an expand/collapse option to view it.
 
 ### Month view
 
@@ -275,7 +275,7 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 
 
 
-N> The year view also has module support. In that, you can get all the months of a particular year in a calendar view format. In that calendar view, appointment contained dates are highlighted with dots placed under the individual date. When you click on the date, the event popup will be displayed and the events will be listed.
+> The year view also has module support. In that, you can get all the months of a particular year in a calendar view format. In that calendar view, appointment contained dates are highlighted with dots placed under the individual date. When you click on the date, the event popup will be displayed and the events will be listed.
 
 ### Agenda view
 
@@ -306,7 +306,7 @@ The following code example depicts how to customize the display of events within
 {% endtabs %}
 {% endif %}
 
-N> Schedule Height is mandatory to set in pixels for Agenda view alone.
+> Schedule Height is mandatory to set in pixels for Agenda view alone.
 
 
 
@@ -424,7 +424,7 @@ The following code example depicts how to display the timeline work week view on
 
 
 
-N> Clicking on the dates in the date header bar of Timeline day, Timeline week and Timeline work week will allow you to navigate to the Agenda view.
+> Clicking on the dates in the date header bar of Timeline day, Timeline week and Timeline work week will allow you to navigate to the Agenda view.
 
 ### Timeline Month view
 
@@ -455,7 +455,7 @@ A Timeline Month view displays the current month days along with its appointment
 
 
 
-N> Clicking on the dates in the date header bar of Timeline month will allow you to navigate to the Timeline day view.
+> Clicking on the dates in the date header bar of Timeline month will allow you to navigate to the Timeline day view.
 
 ### Timeline Year view
 
@@ -577,10 +577,10 @@ You can provide the alternative display name for such customized views on the Sc
 
 
 
-N> The view intervals can be extended on all the Scheduler view modes except Agenda and Month-Agenda views.
+> The view intervals can be extended on all the Scheduler view modes except Agenda and Month-Agenda views.
 
 ## See Also
 
 * [How to restrict view navigation while clicking on dates](./how-to/prevent-date-navigation)
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

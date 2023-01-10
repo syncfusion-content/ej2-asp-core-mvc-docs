@@ -41,7 +41,7 @@ In the following example, the **Europe** menu items are added before the **Ocean
 
 
 
-N> To process items with `ID` values, set `isUnique` to `true`.
+> To process items with `ID` values, set `isUnique` to `true`.
 
 ## Enable or disable menu items
 
@@ -74,7 +74,7 @@ In the following example, the **Directory** header item, **Conferences**, and **
 
 
 
-N> To disable sub menu items, use the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event.
+> To disable sub menu items, use the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event.
 
 ## Hide or show menu items
 
@@ -107,4 +107,4 @@ In the following example, the **Movies** header item, **Workshops**, and **Music
 
 
 
-N> Using the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event, you can hide the sub menu items as in the above example since the menu supports to hide items only for headers initially.
+> Using the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event, you can hide the sub menu items as in the above example since the menu supports to hide items only for headers initially.

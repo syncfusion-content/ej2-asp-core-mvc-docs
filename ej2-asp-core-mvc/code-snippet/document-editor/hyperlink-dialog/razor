@@ -12,4 +12,5 @@
     document.getElementById('dialog').addEventListener('click', function () {
         documenteditor.showDialog('Hyperlink');
     });
+
 </script>

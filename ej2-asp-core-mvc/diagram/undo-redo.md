@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Undo Redo in Syncfusion ##Platform_Name## Diagram Component
+title: Undo Redo in ##Platform_Name## Diagram Component
 description: Learn here all about Undo Redo in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Undo Redo
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# History List in Diagram
+# History List
 
 Diagram tracks the history of actions that are performed after initializing the diagram and provides support to reverse and restore those changes.
 
@@ -71,6 +71,7 @@ The client-side method [`startGroupAction`](../api/diagram) is used to notify th
 ```javascript
 var diagram = document.getElementById('container').ej2_instances[0];
     diagram.startGroupAction();
+
     //Makes the changes
     var color = ['black', 'red', 'green', 'yellow']
     for (var i = 0; i < color.length; i++) {
@@ -78,6 +79,7 @@ var diagram = document.getElementById('container').ej2_instances[0];
         diagram.nodes[0].style.fill = color[i];
         diagram.dataBind();
     }
+
     //Ends grouping the changes
     diagram.endGroupAction();
 ```
@@ -89,6 +91,7 @@ Diagram provides options to track the changes that are made to custom properties
 Before changing the employee information, save the existing information to historyList by using the client-side method push of historyList. The historyList canLog method can be used which takes a history entry as argument and returns whether the specific entry can be added or not.
 
 ```javascript
+
 var diagram = document.getElementById('container').ej2_instances[0];
 //Creates a custom entry
 var entry = {
@@ -104,11 +107,14 @@ diagram.dataBind();
 canLog in the history list, which takes a history entry as argument and returns whether the specific entry can be added or not.
 
 ```javascript
+
 var diagram = document.getElementById('container').ej2_instances[0];
+
 diagram.historyList.canLog = function(entry) {
     entry.cancel = true;
     return entry;
 }
+
 ```
 
 ### Track undo/redo actions
@@ -116,7 +122,9 @@ diagram.historyList.canLog = function(entry) {
 The historyList undoStack property is used to get the collection of undo actions which should be performed in the diagram. The undoStack/redoStack is the read-only property.
 
 ```javascript
+
 var diagram = document.getElementById('container').ej2_instances[0];
+
 //get the collection of undoStack objects
 let undoStack = diagram.historyList.undoStack;
 //get the collection of redoStack objects
@@ -128,12 +136,15 @@ let redoStack = diagram.historyList.redoStack;
 The [`historyChange`](../api/diagram) event triggers, whenever the interaction of the node and connector is take place.
 
 ```javascript
+
 var diagram = document.getElementById('container').ej2_instances[0];
+
 // history change event
 diagram.historyChange = (arg) => {
     //causes of history change
     let cause: string = arg.cause;
 }
+
 ```
 
 ## Retain Selection

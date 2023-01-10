@@ -59,7 +59,7 @@ Add scripts for Essential JS 1 and Essential JS 2 using CDN inside the `<head>` 
 {% endhighlight %}
 {% endtabs %}
 
-N> If you do not add ej1 script before ej2 script, it will throw script error.
+> If you do not add ej1 script before ej2 script, it will throw script error.
 
 ## Adding compatibility
 
@@ -209,4 +209,4 @@ Essential JS 1 and Essential JS 2 controls have already been initialized via get
 {% endhighlight %}
 {% endtabs %}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-ej1compatibility).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-ej1compatibility).

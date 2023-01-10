@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connectors in Syncfusion ##Platform_Name## Diagram Component
+title: Connectors in ##Platform_Name## Diagram Component
 description: Learn here all about Connectors in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Connectors
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Connector in Diagram
+# Connector
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 
@@ -40,6 +40,8 @@ The [`sourcePoint`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
 
 ## Add connector at runtime
 
@@ -370,7 +372,7 @@ The [`length`](https://ej2.syncfusion.com/documentation/api/diagram/orthogonalSe
 
 
 
-N> You need to mention the segment type as same as what you mentioned in connector type. There should be no contradiction between connector type and segment type.
+> You need to mention the segment type as same as what you mentioned in connector type. There should be no contradiction between connector type and segment type.
 
 ## Avoid overlapping
 
@@ -547,7 +549,7 @@ The flip types are as follows:
 
 
 
- N> The flip is not applicable when the connectors connect in nodes.
+ > The flip is not applicable when the connectors connect in nodes.
 
 ## Bridging
 
@@ -575,7 +577,7 @@ Line bridging creates a bridge for lines to smartly cross over the other lines, 
 
 
 
-N> You need to inject connector bridging module into the diagram.
+> You need to inject connector bridging module into the diagram.
 
 The [`bridgeSpace`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_BridgeSpace) property of connectors can be used to define the width for line bridging.
 

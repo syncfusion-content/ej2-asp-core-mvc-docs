@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Sample Creator for ASP.NET Core - EJ2 | Syncfusion
+title: Sample Creator for ASP.NET Core - EJ2
 description: Sample Creator is a utility that allows you to create the Syncfusion ASP.NET Core (Essential JS 2) Projects with required Syncfusion controls
-platform: ej2-asp-core-mvc
+platform: ASP.NET Core - EJ2
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Create Sample in ASP.NET Core Application
+# Create Sample
 
 The Syncfusion Sample Creator is a tool that lets you to make Syncfusion ASP.NET Core (Essential JS 2) projects with sample code for required Syncfusion component features and Syncfusion control configuration.
 
-N> The Syncfusion ASP.NET Core Sample Creator utility is available from v16.3.0.17.
+> The Syncfusion ASP.NET Core Sample Creator utility is available from v16.3.0.17.
 
 The following steps is used to create the Syncfusion ASP.NET Core Application by using the Sample Creator utility:
 
@@ -24,7 +24,7 @@ The following steps is used to create the Syncfusion ASP.NET Core Application by
 
     ![sample creator](images/sample-creator_latest.png)
 
-    N> In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core > Launch Sample Creator…
+    > In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core > Launch Sample Creator…
 
     ![sample creator](images/sample-creator.png)
 
@@ -58,11 +58,11 @@ The following steps is used to create the Syncfusion ASP.NET Core Application by
 
     ![aspnet core version](images/Aspnet-core-version.png)
 
-    N> .NET 6.0 is available from v19.4.0.38 and support from Visual Studio 2022.
+    > .NET 6.0 is available from v19.4.0.38 and support from Visual Studio 2022.
 
     **Assets From**: Choose the Syncfusion Essential JS 2 assets to ASP.NET Core Project, either NPM, CDN, or Installed Location.
 
-    N> Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
+    > Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
 
     **Name**: Name your Syncfusion ASP.NET Core Application.
 

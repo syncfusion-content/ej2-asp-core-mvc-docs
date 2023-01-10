@@ -24,7 +24,7 @@ It requires the following [CLDR](http://cldr.unicode.org/) data to be loaded usi
 | numberingSystems | cldr/supplemental/numberingSystems.json |
 | currencies | cldr/main/en/currencies.json |
 
-N> For `en`, dependency files are already loaded in the library.
+> For `en`, dependency files are already loaded in the library.
 
 ### Installing CLDR Data and enable localization in schedule control
 
@@ -159,7 +159,7 @@ public class AppointmentData
 
 ![Globalization schedule control](./images/schedule-locale.png)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization). Refer this documentation to [localizing the static scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization). Refer this documentation to [localizing the static scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
 
 ## Changing Global Culture and Currency Code
 
@@ -189,7 +189,7 @@ To set the default culture and the currencyCode for all ASP.NET MVC controls, yo
 {% endhighlight %}
 {% endtabs %}
 
-N> If global culture is not set, then `en-US` is set as default locale and `USD` is set as default currency code.
+> If global culture is not set, then `en-US` is set as default locale and `USD` is set as default currency code.
 
 ## Manipulating Numbers
 
@@ -212,7 +212,7 @@ Based on the  `NumberFormatOptions` number formatting and parsing operations are
 | 7 | `minimumIntegerDigits` | Indicates the minimum number of the integer digits to be placed in the value. Possible values are 1 to 21.  |
 | 8 | `currency`| Indicates the currency code which needs to considered for the currency formatting.  |
 
-N> The `minimumIntegerDigits`, `minimumFractionDigits` and `maximumFractionDigits` are categorized as group one, `minimumSignificantDigits` and `maximumSignificantDigits` are categorized as group two. If group two properties are defined, then the group one properties will be ignored.
+> The `minimumIntegerDigits`, `minimumFractionDigits` and `maximumFractionDigits` are categorized as group one, `minimumSignificantDigits` and `maximumSignificantDigits` are categorized as group two. If group two properties are defined, then the group one properties will be ignored.
 
 ### Custom number formatting and parsing
 
@@ -228,7 +228,7 @@ Custom number formatting and parsing are also be supported by specifying the pat
 | ; | Denotes separate formats for positive, negative and zero values. | `instance.formatNumber`(-120,{format: '###.##;(###.00);-0'}); | ‘(120.00)’    |
 | 'String' (single Quotes) | Denotes the characters enclosed within single Quote(') to be replaced in the resultant string. | `instance.formatNumber`(-123.44,{format: "####.## '@'"}) | ‘123.44 @’    |
 
-N>If custom format pattern is specified other `NumberFormatOptions` properties will not be considered.
+>If custom format pattern is specified other `NumberFormatOptions` properties will not be considered.
 
 ### Number formatting
 
@@ -398,7 +398,7 @@ Apart from the standard date type formats additional format are supported by usi
 | yMMMEd | {skeleton:&#39;yMMMEd&#39;}  |  Mon, Nov 7, 2016 |
 | yMMM | {skeleton:&#39;yMMM&#39;} | Nov 2016   |
 
-N>Culture specific format skeletons are also supported.
+>Culture specific format skeletons are also supported.
 
 ### Custom Formats
 
@@ -436,7 +436,7 @@ To use the custom date and time formats, specify the date/time pattern directly 
 
 ![output of custom date format](./images/custom-date-format.png)
 
-N>If format property is given in options other properties are not considered.
+>If format property is given in options other properties are not considered.
 
 <!-- markdownlint-enable MD036 -->
 

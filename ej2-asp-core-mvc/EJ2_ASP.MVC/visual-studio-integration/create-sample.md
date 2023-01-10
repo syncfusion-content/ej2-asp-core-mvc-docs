@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Sample Creator for ASP.NET MVC - EJ2 | Syncfusion
+title: Sample Creator for ASP.NET MVC - EJ2
 description: Sample Creator is a utility that allows you to create the Syncfusion ASP.NET MVC (Essential JS 2) Projects with required Syncfusion controls
-platform: ej2-asp-core-mvc
+platform: ASP.NET MVC - EJ2
 control: Syncfusion VS Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Create Sample in ASP.NET MVC Application
+# Create Sample
 
 The Syncfusion Sample Creator is a tool that lets you make Syncfusion ASP.NET MVC (Essential JS 2) projects with sample code for required Syncfusion component features and Syncfusion control configuration.
 
-N> The Syncfusion ASP.NET MVC (Essential JS 2) Sample Creator utility is available from v16.3.0.17.
+> The Syncfusion ASP.NET MVC (Essential JS 2) Sample Creator utility is available from v16.3.0.17.
 
 Use the following steps to create the Syncfusion ASP.NET MVC (Essential JS 2) Application through the Sample Creator utility:
 
@@ -22,7 +22,7 @@ Use the following steps to create the Syncfusion ASP.NET MVC (Essential JS 2) Ap
 
     ![launch sample creator](images/launch-sample-creator-latest.png)
 
-    N> In Visual Studio 2017 or lower, Click Syncfusion Menu and choose Essential Studio for ASP.NET MVC (EJ2) > Launch Sample Creator… in Visual Studio.
+    > In Visual Studio 2017 or lower, Click Syncfusion Menu and choose Essential Studio for ASP.NET MVC (EJ2) > Launch Sample Creator… in Visual Studio.
 
     ![launch sample creator](images/launch-sample-creator.png)
 
@@ -56,7 +56,7 @@ Use the following steps to create the Syncfusion ASP.NET MVC (Essential JS 2) Ap
 
     * **Assets From**: Choose the Syncfusion Essential JS 2 assets to ASP.NET MVC Project, either NuGet, CDN or Installed Location.
 
-    N> Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
+    > Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
 
     * **Name**: Name your Syncfusion ASP.NET MVC Application.
 

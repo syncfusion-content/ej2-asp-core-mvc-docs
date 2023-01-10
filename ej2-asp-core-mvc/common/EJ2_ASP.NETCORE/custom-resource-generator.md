@@ -52,7 +52,7 @@ Refer to the following steps to download the custom resources in CRG.
 3. Now, the bundling process for the selected controls will be started, and the output will be downloaded as a zip file.
 ![ej2 Bundling custom resources](images/bundling-custom-resources.png)
 4. The final output contains the script and styles for the selected controls and a **import.json** file, which stores the current settings.
-N> You can use theme files in the **customized** folder if you don't want google fonts references. For now, Material and tailwind themes only generate like below.
+> You can use theme files in the **customized** folder if you don't want google fonts references. For now, Material and tailwind themes only generate like below.
 
 ![ej2 Final output of customized resources](images/customized-resources.png)
 

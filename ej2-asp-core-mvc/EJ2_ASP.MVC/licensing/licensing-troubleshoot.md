@@ -24,7 +24,7 @@ To upgrade from trial version, there are two possible solutions.
 
 * If you are using Syncfusion controls from [nuget.org](https:/www.nuget.org/packages?q=syncfusion), replace the currently used trial license key with a paid license key that can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of our website. Refer to [this](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application) topic for more information regarding registering the license in the application.
 
-N><br /> License registration is not required if you reference Syncfusion assemblies from Licensed installer. These licensing changes applicable to all evaluators who refers the Syncfusion assemblies from evaluation installer and those who use Syncfusion NuGet packages form [nuget.org](https://www.nuget.org/)
+>**NOTE** <br /> License registration is not required if you reference Syncfusion assemblies from Licensed installer. These licensing changes applicable to all evaluators who refers the Syncfusion assemblies from evaluation installer and those who use Syncfusion NuGet packages form [nuget.org](https://www.nuget.org/)
 
 ## Where can I get a License key
 

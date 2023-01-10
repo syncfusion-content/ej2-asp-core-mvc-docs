@@ -69,7 +69,7 @@ Here, you can specify the [`selection settings`] to select the content based on 
 
 x denotes the left position and y denotes the top position and extend denotes whether to extend or update selection.
 
-Check below code sample for reference.
+Please check below code sample for reference.
 
 ```typescript
 this.container.documentEditor.selection.select({ x: 188.4814208984375 , y: 662.00005, extend: true });

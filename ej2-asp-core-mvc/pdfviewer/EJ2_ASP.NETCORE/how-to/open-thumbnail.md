@@ -23,11 +23,11 @@ The following steps are used to open the thumbnail.
 <button type="button" onclick="openThumbnail()">Open Thumbnail Pane</button>
 
 <script>
-    function openThumbnail() {
-        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-        // Open Thumbnail Pane.
-        viewer.thumbnailViewModule.openThumbnailPane();
-    }
+function openThumbnail() {
+    var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+    // Open Thumbnail Pane.
+    viewer.thumbnailViewModule.openThumbnailPane();
+}
 </script>
 ```
 

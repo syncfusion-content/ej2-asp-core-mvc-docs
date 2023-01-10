@@ -33,4 +33,4 @@ You can customize the appearance of the Button by using the Cascading Style Shee
 {% endtabs %}
 {% endif %}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonHowToSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonHowToSample).

@@ -41,11 +41,11 @@ This article explains how to autosave the document in AWS S3. You can automatica
 In `web.config`, add key like below format:
 
 ```c#
-<appSettings>
+ <appSettings>
     <add key="AWSProfileName" value="sync_development" />
     <add key="AWSAccessKey" value="" />
     <add key="AWSSecretKey" value="" />
-</appSettings>
+  </appSettings>
 ```
 
 In `startup.cs`, register profile in below format:
@@ -80,11 +80,11 @@ public bool UploadFileStreamToS3(System.IO.Stream localFilePath, string bucketNa
 
     if (subDirectoryInBucket == "" || subDirectoryInBucket == null)
     {
-        request.BucketName = bucketName; //no subdirectory just bucket name  
+request.BucketName = bucketName; //no subdirectory just bucket name  
     }
     else
     {   // subdirectory and bucket name  
-        request.BucketName = bucketName + @"/" + subDirectoryInBucket;
+request.BucketName = bucketName + @"/" + subDirectoryInBucket;
     }
     request.Key = fileNameInS3; //file name up in S3  
     request.InputStream = localFilePath;

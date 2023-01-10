@@ -35,4 +35,4 @@ In the following code snippet, Cricket and Hockey are in the checked state, Tenn
 {% endtabs %}
 {% endif %}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CheckBox/CheckBoxUGSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CheckBox/CheckBoxUGSample).

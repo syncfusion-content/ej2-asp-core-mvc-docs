@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formatting in ##Platform_Name## Syncfusion Spreadsheet Component
+title: Formatting in ##Platform_Name## Spreadsheet Component
 description: Learn here all about Formatting in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Formatting
@@ -210,7 +210,7 @@ The following features are not supported in Formatting:
 
 Conditional formatting helps you to format a cell or range of cells based on the conditions applied. You can enable or disable conditional formats by using the `allowConditionalFormat` property.
 
-N> * The default value for the `allowConditionalFormat` property is `true`.
+> * The default value for the `allowConditionalFormat` property is `true`.
 
 ### Apply Conditional Formatting
 
@@ -228,15 +228,15 @@ Highlight cells rules option in the conditional formatting enables you to highli
 
 The following options can be given for the highlight cells rules as type,
 
-N>* 'GreaterThan', 'LessThan', 'Between', 'EqualTo', 'ContainsText', 'DateOccur', 'Duplicate', 'Unique'.
+>* 'GreaterThan', 'LessThan', 'Between', 'EqualTo', 'ContainsText', 'DateOccur', 'Duplicate', 'Unique'.
 
 The following preset colors can be used for formatting styles,
 
-N>* `"RedFT"` - Light Red Fill with Dark Red Text,
-<br/>* `"YellowFT"` - Yellow Fill with Dark Yellow Text,
-<br/>* `"GreenFT"` - Green Fill with Dark Green Tex/t,
-<br/>* `"RedF"` - Red Fill,
-<br/>* `"RedT"` - Red Text.
+>* `"RedFT"` - Light Red Fill with Dark Red Text,
+>* `"YellowFT"` - Yellow Fill with Dark Yellow Text,
+>* `"GreenFT"` - Green Fill with Dark Green Tex/t,
+>* `"RedF"` - Red Fill,
+>* `"RedT"` - Red Text.
 
 ### Top bottom rules
 
@@ -244,7 +244,7 @@ Top bottom rules option in the conditional formatting allows you to apply format
 
 The following options can be given for the top bottom rules as type,
 
-N>* 'Top10Items', 'Bottom10Items', 'Top10Percentage', 'Bottom10Percentage', 'BelowAverage', 'AboveAverage'.
+>* 'Top10Items', 'Bottom10Items', 'Top10Percentage', 'Bottom10Percentage', 'BelowAverage', 'AboveAverage'.
 
 ### Data Bars
 
@@ -252,7 +252,7 @@ You can apply data bars to represent the data graphically inside a cell. The lon
 
 The following options can be given for the data bars as type,
 
-N>* 'BlueDataBar', 'GreenDataBar', 'RedDataBar', 'OrangeDataBar', 'LightBlueDataBar', 'PurpleDataBar'.
+>* 'BlueDataBar', 'GreenDataBar', 'RedDataBar', 'OrangeDataBar', 'LightBlueDataBar', 'PurpleDataBar'.
 
 ### Color Scales
 
@@ -260,7 +260,7 @@ Using color scales, you can format your cells with two or three colors, where di
 
 The following options can be given for the color scales as type,
 
-N>* 'GYRColorScale', 'RYGColorScale', 'GWRColorScale', 'RWGColorScale', 'BWRColorScale', 'RWBColorScale', 'WRColorScale', 'RWColorScale', 'GWColorScale', 'WGColorScale', 'GYColorScale', 'YGColorScale'.
+>* 'GYRColorScale', 'RYGColorScale', 'GWRColorScale', 'RWGColorScale', 'BWRColorScale', 'RWBColorScale', 'WRColorScale', 'RWColorScale', 'GWColorScale', 'WGColorScale', 'GYColorScale', 'YGColorScale'.
 
 ### Icon Sets
 
@@ -268,7 +268,7 @@ Icon sets will help you to visually represent your data with icons. Every icon r
 
 The following options can be given for the icon sets as type,
 
-N>* 'ThreeArrows', 'ThreeArrowsGray', 'FourArrowsGray', 'FourArrows', 'FiveArrowsGray', 'FiveArrows', 'ThreeTrafficLights1', 'ThreeTrafficLights2', 'ThreeSigns', 'FourTrafficLights', 'FourRedToBlack', 'ThreeSymbols', 'ThreeSymbols2', 'ThreeFlags', 'FourRating', 'FiveQuarters', 'FiveRating', 'ThreeTriangles', 'ThreeStars', 'FiveBoxes'.
+>* 'ThreeArrows', 'ThreeArrowsGray', 'FourArrowsGray', 'FourArrows', 'FiveArrowsGray', 'FiveArrows', 'ThreeTrafficLights1', 'ThreeTrafficLights2', 'ThreeSigns', 'FourTrafficLights', 'FourRedToBlack', 'ThreeSymbols', 'ThreeSymbols2', 'ThreeFlags', 'FourRating', 'FiveQuarters', 'FiveRating', 'ThreeTriangles', 'ThreeStars', 'FiveBoxes'.
 
 ### Custom Format
 
@@ -276,7 +276,7 @@ Using custom format for conditional formatting you can set cell styles like colo
 
 In the MAY and JUN columns, we have applied conditional formatting custom format.
 
-N> * In the Conditional format, custom format supported for Highlight cells rules and Top bottom rules.
+> * In the Conditional format, custom format supported for Highlight cells rules and Top bottom rules.
 
 ### Clear Rules
 

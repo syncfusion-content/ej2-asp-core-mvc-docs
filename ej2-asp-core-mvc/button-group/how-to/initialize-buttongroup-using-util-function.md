@@ -49,6 +49,6 @@ The following example illustrates how to create ButtonGroup using `createButtonG
 {% endtabs %}
 {% endif %}
 
-N> If null value is passed in button options, then that particular button will be skipped from processing in `createButtonGroup` util function.
+> If null value is passed in button options, then that particular button will be skipped from processing in `createButtonGroup` util function.
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupHowToSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupHowToSample).

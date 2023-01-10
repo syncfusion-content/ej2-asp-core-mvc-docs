@@ -19,7 +19,7 @@ The editor window usually opens on the Scheduler, when a cell or event is double
 
 In mobile devices, you can open the detailed editor window in edit mode by clicking the edit icon on the popup, that opens on single tapping an event. You can also open it in add mode by single tapping a cell, which will display a `+` indication, clicking on it again will open the editor window.
 
-N> You can also prevent the editor window from opening, by rendering Scheduler in a `readonly` mode or by doing code customization within the `popupOpen` event.
+> You can also prevent the editor window from opening, by rendering Scheduler in a `readonly` mode or by doing code customization within the `popupOpen` event.
 
 ### How to change the editor window header title and text of footer buttons
 
@@ -108,7 +108,7 @@ It is possible to validate the required fields of the editor window from client-
 
 
 
-N> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator/#validation-rules) documentation.
+> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator/#validation-rules) documentation.
 
 ### Add additional fields to the default editor
 
@@ -238,7 +238,7 @@ By default, these popups are displayed over cells and appointments of Scheduler 
 
 
 
-N> The quick popup that opens while single clicking on the cells are not applicable on mobile devices.
+> The quick popup that opens while single clicking on the cells are not applicable on mobile devices.
 
 ### How to open Quick Info popup on multiple cell selection
 
@@ -317,7 +317,7 @@ The look and feel of the built-in quick popup window, which opens when single cl
 
 
 
-N> The quick popup in adaptive mode can also be customized using `quickInfoTemplates` using `e-device` class.
+> The quick popup in adaptive mode can also be customized using `quickInfoTemplates` using `e-device` class.
 
 ### Customizing timezone collection in the editor window
 
@@ -472,7 +472,7 @@ In the following code example, validation has been added to the status field.
 
 The **e-field** class is not added to each field defined within the template, so you should allow to set those field values externally by using the `popupClose` event.
 
-N> You can allow to retrieve the data only on the `save` and `delete` option. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
+> You can allow to retrieve the data only on the `save` and `delete` option. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
 
 The following code example shows how to save the customized event editor using a template by the `popupClose` event.
 
@@ -519,7 +519,7 @@ In case, if you need to prevent only specific popups on Scheduler, then you can 
 
 When the number of appointments count that lies on a particular time range * default appointment height exceeds the default height of a cell in month view and all other timeline views, a `+ more` text indicator will be displayed at the bottom of those cells. This indicator denotes that the cell contains few more appointments in it and clicking on that will display a popup displaying all the appointments present on that day.
 
-N> To disable this option of showing popup with all hidden appointments, while clicking on the text indicator, you can do code customization within the `popupOpen` event.
+> To disable this option of showing popup with all hidden appointments, while clicking on the text indicator, you can do code customization within the `popupOpen` event.
 
 The same indicator is displayed on all-day row in calendar views such as day, week and work week views alone, when the number of appointment count present in a cell exceeds three. Clicking on the text indicator here will not open a popup, but will allow the expand/collapse option for viewing the remaining appointments present in the all-day row.
 
@@ -688,4 +688,4 @@ You can close the quick info popup in scheduler by using the `closeQuickInfoPopu
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

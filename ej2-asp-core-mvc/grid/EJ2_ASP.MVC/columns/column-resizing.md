@@ -37,12 +37,12 @@ Column width can be resized by clicking and dragging the right edge of the colum
 
 
 
-N> You can disable resizing for a particular column by setting the [`AllowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowResizing) property of [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) to false.
-<br/> In RTL mode, you can click and drag the left edge of the header cell to resize the column.
+> You can disable resizing for a particular column by setting the [`AllowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowResizing) property of [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) to false.
+> In RTL mode, you can click and drag the left edge of the header cell to resize the column.
 
 ## Column resizing using method
 
-To resize a column, set width to that particular column and then refresh the grid header by using the **refreshHeader** method. Refer the below code,
+To resize a column, set width to that particular column and then refresh the grid header by using the **refreshHeader** method. Please refer the below code
 
 ```typescript
 

@@ -100,7 +100,7 @@ In the following example, we have used Advent Pro font to export the treegrid wi
 
 
 
-N> **PdfTrueTypeFont** accepts base 64 format of the Custom Font.
+> **PdfTrueTypeFont** accepts base 64 format of the Custom Font.
 
 
 
@@ -255,4 +255,4 @@ In the below example, we have **Duration** as a hidden column in the treegrid. W
 
 
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.

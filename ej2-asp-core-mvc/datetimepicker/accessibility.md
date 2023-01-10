@@ -77,7 +77,7 @@ Use the below list of shortcut keys to interact with the TimePicker after the Ti
 | <kbd>Alt + Down Arrow</kbd> | Open the popup. |
 | <kbd>Esc</kbd> | Close the popup. |
 
-N> To focus the DateTimePicker control use the `alt+t` keys.
+> To focus the DateTimePicker control use the `alt+t` keys.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -19,7 +19,7 @@ The Timeline views can have additional header rows other than its default date a
 * `Date`
 * `Hour`
 
-N> The `Hour` row is not applicable for Timeline month view.
+> The `Hour` row is not applicable for Timeline month view.
 
 The following example shows the Scheduler displaying all the available header rows on timeline views.
 
@@ -164,4 +164,4 @@ You can customize the text of the header rows and display any images or formatte
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

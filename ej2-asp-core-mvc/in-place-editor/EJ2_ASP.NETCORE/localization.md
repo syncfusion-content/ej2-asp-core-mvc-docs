@@ -59,7 +59,7 @@ The output will be as follows.
 
 Specifies the direction of the In-place Editor control using the [`enableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_EnableRtl) property. For writing systems that require it like Arabic, Hebrew, etc., the direction can be switched to right-to-left.
 
-N> It will not change based on the locale property.
+> It will not change based on the locale property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

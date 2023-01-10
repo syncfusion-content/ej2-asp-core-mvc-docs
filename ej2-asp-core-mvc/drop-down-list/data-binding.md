@@ -22,7 +22,7 @@ The DropDownList also supports different kinds of data services such as OData, O
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
-N> When binding complex data to the DropDownList, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+> When binding complex data to the DropDownList, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Binding local data
 

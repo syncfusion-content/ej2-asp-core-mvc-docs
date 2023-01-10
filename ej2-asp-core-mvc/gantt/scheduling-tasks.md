@@ -55,7 +55,7 @@ The below code snippet explains the mapping of duration unit data source field t
 
 ![Alt text](images/durationUnits.png)
 
-N> The default value of the [`DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property is `day`.
+> The default value of the [`DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property is `day`.
 
 ### Defining duration unit along with duration field
 
@@ -88,7 +88,7 @@ Duration units for the tasks can also be defined along with the duration values,
 
 ![Alt text](images/durationUnitswithDuration.png)
 
-N> The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.
+> The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.
 
 ## Unscheduled Tasks
 
@@ -143,7 +143,7 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 ![Alt text](images/unscheduledTasks.png)
 
-N> If the [`AllowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property is set to false, then the Gantt control automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
+> If the [`AllowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property is set to false, then the Gantt control automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
 
 ## Working Time Range
 
@@ -180,8 +180,8 @@ The following screen shot shows working time range in Gantt control.
 
 ![Alt text](images/working-time-range.png)
 
-N>* Individual tasks can lie between any time within the defined working time range of the project.
-<br/>* The [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
+>* Individual tasks can lie between any time within the defined working time range of the project.
+>* The [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
 
 ## Weekend/Non-working days
 
@@ -214,5 +214,5 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 
 ![Alt text](images/changeWorkweek.png)
 
-N> By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
-<br/> In the Gantt control, you can make weekend as working day by setting the [`IncludeWeekend`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_IncludeWeekend) property to `true`.
+> By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
+> In the Gantt control, you can make weekend as working day by setting the [`IncludeWeekend`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_IncludeWeekend) property to `true`.

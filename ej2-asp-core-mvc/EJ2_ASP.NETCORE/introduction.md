@@ -28,7 +28,7 @@ Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been 
 #table
 {
 border:0!important;
-line-height: 160% !important;
+line-height: 2!important;
 }
 
 tr
@@ -44,26 +44,16 @@ vertical-align: top;
 
 .control-anchor-link
 {
-font-size: 14px !important;
 text-decoration: none!important;
+font-size: 14px!important;
 text-align: left!important;
-padding: 1px 0px;
-}
-.control-category-topics
-{
-font-size: 14px !important;
-font-weight: 500!important;
-border:0 !important;
-line-height: 20px;
 }
 .control-category
 {
-font-size: 14px !important;
-font-weight: 500!important;
-border:0 !important;
+font-size: 14px!important;
 text-align: left!important;
-line-height: 20px;
-padding-top: 20px;
+font-weight: bold!important;
+border:0 !important;
 }
 
 </style>
@@ -72,14 +62,14 @@ padding-top: 20px;
 <tbody>
 <colgroup>
 <col style="width: 220px">
-<col style="width: 220px">
+<col style="width: 260px">
 <col style="width: 220px">
 <col style="width: 220px">
 </colgroup>
 </tbody>
 <tr>
     <td>
-        <div><p class="control-category-topics">GRIDS</p></div>
+        <div><p class="control-category">GRIDS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core">DataGrid</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started">Pivot Table</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core">TreeGrid</a></div>
@@ -104,7 +94,7 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started-asp-core">Avatar</a></div>
     </td>
     <td>
-        <div><p class="control-category-topics">DATA VISUALIZATION</p></div>
+        <div><p class="control-category">DATA VISUALIZATION</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started">Charts</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/getting-started">Stock Chart</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started">Circular Gauge</a></div>
@@ -129,7 +119,7 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/speeddial/getting-started">Speed Dial</a></div>
     </td>
     <td>
-        <div><p class="control-category-topics">CALENDARS</p></div>
+        <div><p class="control-category">CALENDARS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/schedule/getting-started">Scheduler</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/gantt/getting-started">Gantt Chart</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/calendar/getting-started">Calendar</a></div>
@@ -148,13 +138,12 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/range-slider/getting-started">Range Slider</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started">Toggle Switch Button</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/signature/getting-started">Signature</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/rating/getting-started">Rating</a></div>
         <div><p class="control-category">FORMS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/in-place-editor/getting-started">In-place Editor</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/getting-started">Query Builder</a></div>
     </td>
     <td>
-        <div><p class="control-category-topics">DROPDOWNS</p></div>
+        <div><p class="control-category">DROPDOWNS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/getting-started">AutoComplete</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/list-box/getting-started-core">ListBox</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/combo-box/getting-started">ComboBox</a></div>
@@ -187,26 +176,24 @@ padding-top: 20px;
 
 ## Getting Help
 
-* If you are still not able to find the information that you are looking for in the self-help resources mentioned above then contact us by creating a support ticket in [our support portal](https://www.syncfusion.com/support/directtrac/incidents/newincident) or ask your query in Stack Overflow with the tag `syncfusion-ej2`.
+* If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please contact us by creating a support ticket in [our support portal](https://www.syncfusion.com/support/directtrac/incidents/newincident) or ask your query in Stack Overflow with the tag `syncfusion-ej2`.
 
-* Don't see what you need? request it in our [feedback portal](https://www.syncfusion.com/feedback/aspnet-core).
+* Don't see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/aspnet-core).
 
-N> Syncfusion does not collect any kind of information when our controls are used in customer applications.
+> Syncfusion does not collect any kind of information when our controls are used in customer applications.
 
 ## See also
 
-* Product Development
+* [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
 
-    * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
+   Syncfusion Project Template
 
-* Syncfusion Project Template
+* [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
 
-    * [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
+   Visual Studio Code
 
-* Visual Studio Code
+* [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/vscode)
 
-    * [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/vscode)
+   Visual Studio for Mac
 
-* Visual Studio for Mac
-
-    * [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
+* [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)

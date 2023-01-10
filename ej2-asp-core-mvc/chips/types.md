@@ -145,4 +145,4 @@ Deletable Chip allows to delete a chip from ChipList/ChipCollection. It can be e
 {% endtabs %}
 {% endif %}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Chips/ChipsSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Chips/ChipsSample).

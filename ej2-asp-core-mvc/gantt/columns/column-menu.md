@@ -48,7 +48,7 @@ The column menu has options to integrate features like sorting, filtering, and a
 
 ![Alt text](images/columnMenu.png)
 
-N> You can disable the column menu for a particular column by setting the `Columns.ShowColumnMenu` to `false`.
+> You can disable the column menu for a particular column by setting the `Columns.ShowColumnMenu` to `false`.
 
 ## Column menu Events
 

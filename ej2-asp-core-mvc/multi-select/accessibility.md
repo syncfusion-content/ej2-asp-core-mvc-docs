@@ -46,7 +46,7 @@ You can use the following key shortcuts to access the MultiSelect without interr
 | <kbd>Home</kbd> | set focus to the first item. |
 | <kbd>End</kbd> | set focus to the last item. |
 
-N> In the below sample, focus the MultiSelect control using <kbd>alt+t</kbd> keys.
+> In the below sample, focus the MultiSelect control using <kbd>alt+t</kbd> keys.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

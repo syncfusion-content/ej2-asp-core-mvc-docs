@@ -16,7 +16,7 @@ You can insert page number and navigate to specific page in Document Editor comp
 
 You can use [`insertPageNumber`] API in editor module to insert the page number in current cursor position. By default, Page number will insert in Arabic number style. You can change it, by providing the number style in parameter.
 
-N> Currently, Documenteditor have options to insert page number at current cursor position.
+>Note: Currently, Documenteditor have options to insert page number at current cursor position.
 
 The following example code illustrates how to insert page number in header.
 
@@ -38,12 +38,14 @@ The following example code illustrates how to insert page number in header.
 {% highlight c# tabtitle="Insert-page-number.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
+```
 
 Also, you use [`insertField`] API in Editor module to insert the Page number in current position
 
 ```typescript
 //Current page number
 container.documentEditor.editor.insertField('PAGE \* MERGEFORMAT', '1');
+
 ```
 
 ## Get page count

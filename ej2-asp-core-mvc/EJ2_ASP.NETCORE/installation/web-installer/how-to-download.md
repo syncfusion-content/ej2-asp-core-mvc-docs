@@ -53,7 +53,7 @@ You should initiate an evaluation if you have already obtained our components th
 
 3. Begin your trial by selecting the ASP. NET Core - EJ2 product.
 
-   N> <br /> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
+   >**Note** <br /> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
 4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-generate) here at any time before the trial period expires. (See the screenshot below)
 

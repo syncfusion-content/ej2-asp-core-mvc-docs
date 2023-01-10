@@ -13,7 +13,7 @@ documentation: ug
 
 Syncfusion provides the **Visual Studio Scaffolding** for the Syncfusion ASP.NET MVC platform to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create Views and Controller action methods for Syncfusion ASP.NET MVC DataGrid controls.
 
-N> The Syncfusion ASP.NET MVC UI Scaffolder is available from **v16.4.0.40**.
+> The Syncfusion ASP.NET MVC UI Scaffolder is available from **v16.4.0.40**.
 
 ## Add a Scaffolded Item
 
@@ -45,8 +45,8 @@ select the corresponding DataGrid features from option.
 
 ![Alt text](./images/explorer-mvc.PNG)
 
-N> * Ensure at least one Entity Framework model has been exists and the application compiled once.
-<br/> * If no Entity Framework model exists in your application, refer to the [`documentation`](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/creating-the-web-application#generate-the-models) to generate the Entity Framework model. Once model file added, ensure required DBContext and properties are added. Now, build the application and try scaffolding. If any changes done in model properties later, compile the application once before perform scaffolding.
+> * Ensure at least one Entity Framework model has been exists and the application compiled once.
+> * If no Entity Framework model exists in your application, refer to the [`documentation`](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/creating-the-web-application#generate-the-models) to generate the Entity Framework model. Once model file added, ensure required DBContext and properties are added. Now, build the application and try scaffolding. If any changes done in model properties later, compile the application once before perform scaffolding.
 
 ## How to render Syncfusion Control'?'
 

@@ -40,7 +40,7 @@ In the below sample, **pageSize** is calculated based on the grid height by usin
 
 
 
-N> You can achieve better performance by using grid paging to fetch only a pre-defined number of records from the data source.
+> You can achieve better performance by using grid paging to fetch only a pre-defined number of records from the data source.
 
 ## Template
 
@@ -129,10 +129,10 @@ By default, Pager will be rendered at the bottom of the Grid. You can also rende
 
 
 
-N> During the paging action, the pager component triggers the below three events.
-<br/> The created event triggers when Pager is created.
-<br/> The click event triggers when the numeric items in the pager is clicked.
-<br/> The dropDownChanged event triggers when pageSize DropDownList value is selected.
+> During the paging action, the pager component triggers the below three events.
+> The created event triggers when Pager is created.
+> The click event triggers when the numeric items in the pager is clicked.
+> The dropDownChanged event triggers when pageSize DropDownList value is selected.
 
 ## See Also
 

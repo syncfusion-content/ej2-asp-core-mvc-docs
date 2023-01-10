@@ -36,4 +36,4 @@ You can integrate any component inside the card element. Here, ListView componen
 
 ![Alt text](./../images/card-other.PNG)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).

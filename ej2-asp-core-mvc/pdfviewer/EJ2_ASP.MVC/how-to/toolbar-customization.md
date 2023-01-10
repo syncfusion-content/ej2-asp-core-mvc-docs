@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Toolbar_customization in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about Toolbar_customization in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Toolbar_customization in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Toolbar_customization in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2, and more.
 platform: ej2-asp-core-mvc
 control: Toolbar_customization
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -28,7 +28,7 @@ The PDF Viewer provides API for user interactions options provided in it's built
 **Step 3:** Add EJ2 Toolbar for perform primary actions like Open, Previous page, Next page, Go to page,Print and Download using the following code snippet,
 
 ```html
-@Html.EJS().Toolbar("topToolbar").Height("56px").Items(new List<ToolbarItem> {
+    @Html.EJS().Toolbar("topToolbar").Height("56px").Items(new List<ToolbarItem> {
 new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-open-document-icon",TooltipText = "Open",Align=ItemAlign.Left,Click="openFile"},
 new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-previous-page-navigation-icon",TooltipText = "Previous Page",Align=ItemAlign.Center,Click="previousClicked",Id="previousPage"},
 new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-next-page-navigation-icon", TooltipText = "Next Page",Align=ItemAlign.Center,Click="nextClicked",Id="nextPage"},
@@ -153,7 +153,7 @@ new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-zoom-out-icon", Too
 </style>
 ```
 
-N>The icons are embedded in the font file used in above code snippet.
+>The icons are embedded in the font file used in above code snippet.
 
 **Step 5:** Add the following scripts for performing user interaction in PDF Viewer in code behind
 
@@ -172,8 +172,7 @@ N>The icons are embedded in the font file used in above code snippet.
             if ((event.which < 48 || event.which > 57) && event.which !== 8 && event.which !== 13) {
                 event.preventDefault();
                 return false;
-            }
-            else {
+            } else {
                 var currentPageNumber = parseInt((currentPage).value);
                 if (event.which === 13) {
                     if (currentPageNumber > 0 && currentPageNumber <= pdfViewer.pageCount) {

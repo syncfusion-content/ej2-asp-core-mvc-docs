@@ -72,6 +72,6 @@ By default, the ruler segments are arranged based on pixel values.
 
 
 
-N> The MarkerColor property can be customized using the [`Marker`](./style/#customizing-the-ruler) CSS style.
+>Note : The MarkerColor property can be customized using the [`Marker`](./style/#customizing-the-ruler) CSS style.
 
 ![Customize](images/CustomRuler.png)

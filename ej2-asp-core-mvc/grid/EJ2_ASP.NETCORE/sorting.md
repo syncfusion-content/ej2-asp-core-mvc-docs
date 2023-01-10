@@ -41,9 +41,9 @@ To enable sorting in the Grid, set the [`allowSorting`](https://help.syncfusion.
 
 
 
-N> * Grid columns are sorted in the **Ascending** order. If you click the already sorted column, the sort direction toggles.
-<br/> * You can apply and clear sorting by invoking **sortColumn** and **clearSorting** methods.
-<br/> * To disable sorting for a particular column, set the [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowSorting) property of **e-grid-column** to false.
+> * Grid columns are sorted in the **Ascending** order. If you click the already sorted column, the sort direction toggles.
+> * You can apply and clear sorting by invoking **sortColumn** and **clearSorting** methods.
+> * To disable sorting for a particular column, set the [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowSorting) property of **e-grid-column** to false.
 
 ## Initial sort
 
@@ -80,8 +80,8 @@ You can sort more than one column in a Grid. To sort multiple columns, press and
 
 To clear sorting for a particular column, press the "Shift + mouse left click".
 
-N> The [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) must be **true** while enabling multi-column sort.
-<br/> Set [`allowMultiSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowMultiSorting) property as **false** to disable multi-column sorting.
+> The [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) must be **true** while enabling multi-column sort.
+> Set [`allowMultiSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowMultiSorting) property as **false** to disable multi-column sorting.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -176,13 +176,13 @@ During the sort action, the grid component triggers two events. The [`actionBegi
 
 
 
-N> The **args.requestType** is the current action name. For example, in sorting the **args.requestType** is 'sorting'.
+> The **args.requestType** is the current action name. For example, in sorting the **args.requestType** is 'sorting'.
 
 ## Touch interaction
 
 When you tap the grid header on touchscreen devices, the selected column header is sorted. A popup ![sorting](./images/sorting.jpg) is displayed for multi-column sorting. To sort multiple columns, tap the popup![msorting](./images/msorting.jpg), and then tap the desired grid headers.
 
-N> The [`allowMultiSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowMultiSorting) and [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) should be **true** then only the popup will be shown.
+> The [`allowMultiSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowMultiSorting) and [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) should be **true** then only the popup will be shown.
 
 The following screenshot shows grid touch sorting.
 

@@ -43,13 +43,13 @@ When `prompt` is set to true, pasting the content in the editor will open a dial
 2. `Clean`: Radio button to clear all the style formats with copied content.
 3. `Plain Text`: Radio button to paste the copied content as plain text without any formatting or style (including the removal of all tags).
 
-N> When `prompt` value is set true, the API properties [plainText](#plain-text) and [keepFormat](#keep-format) will not be considered for processing when pasting the content.
+> When `prompt` value is set true, the API properties [plainText](#plain-text) and [keepFormat](#keep-format) will not be considered for processing when pasting the content.
 
 ## Paste as plain text
 
 When `plainText` is set to true, the copied content will be converted as plain text by removing all the HTML tags and styles applied to it and only the plain text is pasted in the editor.
 
-N> When `plainText` value is set true, the API property [prompt](#prompt) should be set to false, and [keepFormat](#keep-format) will not be considered for processing when pasting the content.
+> When `plainText` value is set true, the API property [prompt](#prompt) should be set to false, and [keepFormat](#keep-format) will not be considered for processing when pasting the content.
 
 ## Keep format
 
@@ -57,7 +57,7 @@ When `keepFormat` is set to true, the copied content will maintain all the style
 
 When `keepFormat` is set to false, the style in the copied content will be removed without considering the allowed styles in the `allowedStyleProps` when pasting the content in the editor.
 
-N> When `keepFormat` value is set true, the API property [prompt](#prompt) and [plainText](#plain-text) should be set to false.
+> When `keepFormat` value is set true, the API property [prompt](#prompt) and [plainText](#plain-text) should be set to false.
 
 ## Denied tags
 

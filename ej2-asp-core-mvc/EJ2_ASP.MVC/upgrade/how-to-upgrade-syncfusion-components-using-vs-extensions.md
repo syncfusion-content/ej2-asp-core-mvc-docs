@@ -14,7 +14,7 @@ The Syncfusion ASP.NET MVC JS2 migration add-in for Visual Studio allows you to 
 
 The steps below will assist you to upgrade the Syncfusion version in the Syncfusion ASP.NET MVC application via Visual Studio 2019:
 
-N> Before use the Syncfusion ASP.NET MVC Web application Migration, check whether the Syncfusion ASP.NET MVC JS2  Extension installed or not in Visual Studio Extension Manager by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation/) help topic.
+> Before use the Syncfusion ASP.NET MVC Web application Migration, check whether the Syncfusion ASP.NET MVC JS2  Extension installed or not in Visual Studio Extension Manager by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation/) help topic.
 
 1. Open the Syncfusion ASP.NET MVC Web application that uses the Syncfusion component.
 
@@ -24,7 +24,7 @@ N> Before use the Syncfusion ASP.NET MVC Web application Migration, check whethe
 
 3. The Syncfusion Project Migration window will appear. You can choose the required version of Syncfusion ASP.NET MVC to migrate.
 
-    N> The versions are loaded from the Syncfusion ASP.NET MVC NuGet packages published in [`NuGet.org`](https://www.nuget.org/packages?q=Tags%3A%22AspNet.MVC%20EJ2%22+syncfusion) and it requires internet connectivity.
+    > The versions are loaded from the Syncfusion ASP.NET MVC NuGet packages published in [`NuGet.org`](https://www.nuget.org/packages?q=Tags%3A%22AspNet.MVC%20EJ2%22+syncfusion) and it requires internet connectivity.
 
     ![MigrationWizard](images/Migration.png)
 

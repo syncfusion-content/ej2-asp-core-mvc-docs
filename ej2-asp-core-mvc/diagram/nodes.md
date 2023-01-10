@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nodes in Syncfusion ##Platform_Name## Diagram Component
+title: Nodes in ##Platform_Name## Diagram Component
 description: Learn here all about Nodes in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Nodes
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Node in Diagram Control
+# Node
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
@@ -44,6 +44,8 @@ To create a node, define the [`node`](https://help.syncfusion.com/cr/aspnetcore-
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
 
 ## Add/Remove node at runtime
 
@@ -134,6 +136,8 @@ Nodes can be interactively drawn by clicking and dragging the diagram surface by
 {% endtabs %}
 {% endif %}
 
+
+
 ## Flip
 
 The diagram provides support to flip the node. [`flip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Flip) is performed to give the mirrored image of the original element.
@@ -168,7 +172,7 @@ The flip types are as follows:
 
 
 
-N> The flip is also applicable for group and BPMN shapes.
+> The flip is also applicable for group and BPMN shapes.
 
 ## Appearance
 
@@ -195,6 +199,8 @@ N> The flip is also applicable for group and BPMN shapes.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
 
 ## Gradient
 
@@ -236,6 +242,8 @@ There are two types of gradients as follows:
 {% endtabs %}
 {% endif %}
 
+
+
 ## Radial gradient
 
 * [`RadialGradient`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.GradientType.html) defines a smooth transition between stops on a circle.
@@ -262,6 +270,8 @@ There are two types of gradients as follows:
 {% endtabs %}
 {% endif %}
 
+
+
 ## Shadow
 
 Diagram provides support to add [`shadow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Shadow) effect to a node that is disabled, by default. It can be enabled with the constraints property of the node.
@@ -285,6 +295,8 @@ Diagram provides support to add [`shadow`](https://help.syncfusion.com/cr/aspnet
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
 
 ## Customizing shadow
 
@@ -310,11 +322,13 @@ The angle, distance, and opacity of the shadow can be customized with the shadow
 {% endtabs %}
 {% endif %}
 
+
+
 ## Icon
 
 Diagram provides support to describe the state of the node. i.e., the node is expanded or collapsed state.
 
-N> Icon can be created only when the node has outEdges.
+> Icon can be created only when the node has outEdges.
 
 * To explore the properties of expand and collapse icon, refer to [`expandIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_ExpandIcon) and [`collapseIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_CollapseIcon).
 
@@ -339,6 +353,8 @@ N> Icon can be created only when the node has outEdges.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
 
 ## Customizing expand icon
 
@@ -395,6 +411,8 @@ Node has the InEdges and OutEdges read-only property. In this property, you can 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
 
 ## See Also
 

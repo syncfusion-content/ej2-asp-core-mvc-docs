@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Styles in ASP.NET Core Floating Action Button Control
+# Styles in Asp.Net Core Floating Action Button Control
 
 This section explains the different styles of Floating Action Button.
 
@@ -40,7 +40,7 @@ The Asp.Net Core Floating Action Button supports the following predefined styles
 
 ## Styles customization
 
-To modify the Floating Action Button appearance, you need to override the default CSS of Floating Action Button component. Find the list of CSS classes and its corresponding section in Floating Action Button component. Also, you have an option to create your own custom theme for the controls using our [Theme Studio](https://blazor.syncfusion.com/themestudio/).
+To modify the Floating Action Button appearance, you need to override the default CSS of Floating Action Button component. Please find the list of CSS classes and its corresponding section in Floating Action Button component. Also, you have an option to create your own custom theme for the controls using our [Theme Studio](https://blazor.syncfusion.com/themestudio/).
 
 | CSS Class | Purpose of Class |
 |-----|----- |

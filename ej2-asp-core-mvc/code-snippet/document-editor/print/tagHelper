@@ -1,6 +1,6 @@
 <ejs-button id="print">Print</ejs-button>
 <div id="documenteditor" style="width:100%;height:100%">
-    <ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enablePrint=true enableSfdtExport=true id="container"></ejs-documenteditor>
+<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enablePrint=true enableSfdtExport=true id="container"></ejs-documenteditor>
 </div>
 
 <script>

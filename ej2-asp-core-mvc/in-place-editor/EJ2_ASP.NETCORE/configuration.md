@@ -18,7 +18,7 @@ This section explains the supported rendering modes of the In-place Editor. Poss
 * Popup
 * Inline
 
-N> By default, `Popup` mode will be rendered, when opening an editor.
+> By default, `Popup` mode will be rendered, when opening an editor.
 
 * For `Popup` mode, editable container displays as like tooltip or popover above the element.
 
@@ -61,7 +61,7 @@ In-place Editor popup mode can be customized by using the `title` and `model` pr
 
 Popup mode rendered by using the Syncfusion ASP.NET Core Tooltip control, so you can use tooltip properties and events to customize the behavior of popup via the `model` property of `popupSettings` API.
 
-N> For more details, refer the tooltip documentation section.
+> For more details, refer the tooltip documentation section.
 
 In the following sample, popup `title` and `position` customized using the `popupSettings` property. All possible tooltip position data configured in the drop-down, if we change drop down item, selected value bound to `model` property and applied it to `Tooltip` control. `Tooltip` have following position options.
 
@@ -115,7 +115,7 @@ The event action of the editor that enable in the edit mode based on the [`edita
 * **`DblClick`**: The editor will be opened as double-click actions and it is not applicable for edit icon.
 * **`EditIconClick`**: Disables the editing of event action of input and allows user to edit only through edit icon.
 
-N> In-place Editor get focus by pressing the `tab` key from previous focusable DOM element and then by pressing `enter` key, the editor will be opened.
+> In-place Editor get focus by pressing the `tab` key from previous focusable DOM element and then by pressing `enter` key, the editor will be opened.
 
 In the following sample, when switching drop-down item, the selected value assigned to the `editableOn` property. If you changed to `DblClick`, the editor will open when making a double click on the input.
 

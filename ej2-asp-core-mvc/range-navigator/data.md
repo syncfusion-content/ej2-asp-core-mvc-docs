@@ -323,7 +323,7 @@ The Range Selector supports the DateTime scale and displays the DateTime values 
 
 ![DateTime](images/data/datetime.png)
 
-N>Date-time Range navigator supports date-time scale and displays date-time values as a labels in the specified format.
+>Date-time Range navigator supports date-time scale and displays date-time values as a labels in the specified format.
 
 ### Interval Customization
 

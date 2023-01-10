@@ -169,7 +169,7 @@ There is also an option to custom design the popup list content when the data fe
 {% endtabs %}
 {% endif %}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/TemplateUGSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/TemplateUGSample).
 
 ## See also
 

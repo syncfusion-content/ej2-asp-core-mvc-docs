@@ -40,8 +40,8 @@ To render the checkbox in each grid row, you need to use checkbox column with ty
 
 
 
-N> By default, selection is allowed by clicking a grid row or checkbox in that row. To allow selection only through checkbox, you can set the [`checkboxOnly`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CheckboxOnly) property of **e-grid-selectionsettings** as true.
-<br/> Selection can be persisted in all the operations using the [`persistSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property of **e-grid-selectionsettings**.
+> By default, selection is allowed by clicking a grid row or checkbox in that row. To allow selection only through checkbox, you can set the [`checkboxOnly`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CheckboxOnly) property of **e-grid-selectionsettings** as true.
+> Selection can be persisted in all the operations using the [`persistSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property of **e-grid-selectionsettings**.
 For persisting selection on the grid, any one of the columns should be defined as a primary key using the [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property.
 
 ## Checkbox selection Mode

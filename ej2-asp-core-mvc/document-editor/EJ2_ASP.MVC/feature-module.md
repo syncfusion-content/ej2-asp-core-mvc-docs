@@ -22,7 +22,7 @@ Document editor features are segregated into individual feature-wise modules to 
 * **EditorHistory** - Maintains the history of editing operations so that you can perform undo and redo at any time.
 * User interface options such as context menu, options pane, image resizer, and dialog are available as individual modules.
 
-N>In addition to injecting the required modules in your application, enable corresponding properties to extend the functionality for a document editor instance.
+>In addition to injecting the required modules in your application, enable corresponding properties to extend the functionality for a document editor instance.
 
 Refer to the following table.
 

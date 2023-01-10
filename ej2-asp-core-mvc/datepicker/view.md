@@ -50,7 +50,7 @@ The following example demonstrates how to create a DatePicker with `decade` as i
 
 Define the [depth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Depth) property to control the view navigation.
 
-N> Always the depth view has to be smaller than the start view, otherwise the view restriction will be not restricted.
+> Always the depth view has to be smaller than the start view, otherwise the view restriction will be not restricted.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,4 +73,4 @@ N> Always the depth view has to be smaller than the start view, otherwise the vi
 
 
 
-N> To know more about Calendar views refer the Calendar's [Calendar Views](../calendar/calendar-views/) section.
+> To know more about Calendar views refer the Calendar's [Calendar Views](../calendar/calendar-views/) section.

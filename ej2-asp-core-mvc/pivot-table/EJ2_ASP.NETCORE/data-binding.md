@@ -139,7 +139,7 @@ In-order to bind remote JSON data, mention the endpoint [`URL`](https://help.syn
 
 For CSV data binding, the `type` property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) needs to be set as `CSV` mandatorily.
 
-N> The CSV format is considered to be the most compact format compared to JSON since it is half the size of JSON. This helps to reduce the bandwidth while transferring to the browser.
+> The CSV format is considered to be the most compact format compared to JSON since it is half the size of JSON. This helps to reduce the bandwidth while transferring to the browser.
 
 ### Binding CSV data via local
 
@@ -410,7 +410,7 @@ One can define field information like alias name (caption), data type, aggregati
 
 The main purpose of these mapping options is to configure each field that is not part of the initial pivot report. Even if any field that is part of this mapping is defined here, the value set in the initial report will have the highest preceding.
 
-N> This option is applicable only for relational data source.
+> This option is applicable only for relational data source.
 In the below code sample, visibility of the field button icons are configured.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -475,7 +475,7 @@ By default, the value fields are plotted in column axis. To plot those fields in
 
 By default, the value fields are placed at the end of the row or column axis. To place those value fields in different positions, use the [`valueIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueindex) property and set the value to an appropriate index position. Its default value is **-1**, which denotes the last position. The `valueIndex` property is dependent on the [`valueAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueAxis) property.
 
-N> This support is only available for relational data sources. Also, enable the [`showValuesButton`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowValuesButton) property in the grouping bar and field list UI to **true** to re-arrange the values fields at different positions via user interaction.
+> This support is only available for relational data sources. Also, enable the [`showValuesButton`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowValuesButton) property in the grouping bar and field list UI to **true** to re-arrange the values fields at different positions via user interaction.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

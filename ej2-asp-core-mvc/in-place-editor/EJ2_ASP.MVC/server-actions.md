@@ -15,7 +15,7 @@ By passing In-place Editor control value to the server, the [`PrimaryKey`](https
 
 If the [`Url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Url) property value is empty, data passing will handled at local and also the [`ActionSuccess`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_ActionSuccess) event will trigger with `null` as argument value.
 
-N> The following arguments are passed to the server when submit actions perform.
+> The following arguments are passed to the server when submit actions perform.
 
 | Arguments  | Explanations                                              |
 |------------|-----------------------------------------------------------|

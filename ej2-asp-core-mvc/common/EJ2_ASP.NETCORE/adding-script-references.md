@@ -27,7 +27,7 @@ The primary goal of all the ASP.NET Core controls package is to help the novice 
 | Scripts reference for all controls| https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js |
 | Styles reference for all controls | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/{THEME-NAME}.css |
 
-N> Syncfusion will never recommend all controls CDN for real-time projects. Because, the size of this CDN impacts website/app loading time since this package includes all the Syncfusion ASP.NET Core controls.
+> Syncfusion will never recommend all controls CDN for real-time projects. Because, the size of this CDN impacts website/app loading time since this package includes all the Syncfusion ASP.NET Core controls.
 
 Add the EJ2 CDN client-side resources to the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
 
@@ -783,7 +783,7 @@ npm install @syncfusion/ej2-calendars --save
 
 Scripts and style sheets of Syncfusion ASP.NET Core controls from locally-installed packages can be included in an ASP.NET Core web application using the following two methods.
 
-N>Files in the **wwwroot** folder can be accessed only in client-side, hence Syncfusion scripts and style sheets should be copied from **node_modules** to **wwwroot**.
+>Files in the **wwwroot** folder can be accessed only in client-side, hence Syncfusion scripts and style sheets should be copied from **node_modules** to **wwwroot**.
 
 By using either one of the following methods, Client-Side Resource can be loaded in ASP.NET Core web application:
 
@@ -796,7 +796,7 @@ Install required Syncfusion ASP.NET Core control packages as mentioned in “[**
 
 1.In addition to Syncfusion ASP.NET Core packages, install gulp and glob packages using below commands.
 
-N>Gulp Installation - **npm install gulp --save**
+>Gulp Installation - **npm install gulp --save**
 
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}
@@ -806,7 +806,7 @@ npm install gulp@latest --save
 {% endhighlight %}
 {% endtabs %}
 
-N>Glob Installation - **npm install glob --save**
+>Glob Installation - **npm install glob --save**
 
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Component | Syncfusion
+title: Getting Started with ##Platform_Name## Component
 description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Visual Studio 2017
@@ -14,7 +14,7 @@ documentation: ug
 
 This article provides a step-by-step introduction to configure Essential JS 2 setup, build and publish a simple ASP.NET MVC web application using [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
 
-N> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET MVC application to use the components.
+> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET MVC application to use the components.
 
 ## Using Visual Studio 2019
 
@@ -40,7 +40,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
   
 3. Change the application name, and then click **Create**.
 
-    N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
+    > The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
 
     ![aspnetmvc5 new project Template 2019](images/aspnetmvc5-new-project-templatevs2019.png)
 
@@ -52,7 +52,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 1. Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+    > Refer to [this article](./../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
 
     ![aspnetmvc5 manage nuget packages 2019](images/aspnetmvc5-manage-nuget-2019.png)
 
@@ -62,7 +62,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
     The Essential JS 2 MVC5 NuGet package will be included in the project, after the installation process is completed.
 
-    N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+    > The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 3. Open `~/Views/Web.config` file and add the `Syncfusion.EJ2` namesapce reference to the `<system.web.webPages.razor>` element and `Syncfusion.EJ2` assembly reference to `<system.web>` element.
 
@@ -153,7 +153,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 3. Select **ASP.NET Web Application (.NET Framework)** and change the application name, and then click **OK**.
 
-    N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
+    > The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
 
     ![aspnetmvc5 project template](images/aspnetmvc5-template.png)
 
@@ -165,7 +165,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 1. Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+    > Refer to [this article](./../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
 
     ![aspnetmvc5 manage nuget packages](images/aspnetmvc5-manage-nuget.png)
 
@@ -175,7 +175,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
     The Essential JS 2 MVC5 NuGet package will be included in the project, after the installation process is completed.
 
-    N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+    > The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 3. Open `~/Views/Web.config` file and add the `Syncfusion.EJ2` namesapce reference to the `<system.web.webPages.razor>` element and `Syncfusion.EJ2` assembly reference to `<system.web>` element.
 
@@ -264,7 +264,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
 3. Select **ASP.NET MVC 4 Web Application** and change the application name and click **OK**.
 
-    N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
+    > The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
 
     ![aspnetmvc4 project template](images/aspnetmvc4-template.png)
 
@@ -276,7 +276,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
 1. Add the [`Syncfusion.EJ2.MVC4`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4/) NuGet package into the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+    > Refer to [this article](./../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
 
     ![aspnetmvc4 manage nuget packages](images/aspnetmvc4-manage-nuget.png)
 
@@ -286,7 +286,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
     The Essential JS 2 MVC4 NuGet package will be included in the project, after the installation process is completed.
 
-    N> The Syncfusion.EJ2.MVC4 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+    > The Syncfusion.EJ2.MVC4 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 3. Open `~/Views/Web.config` file and add the `Syncfusion.EJ2` namesapce reference to the `<system.web.webPages.razor>` element, and then add `Syncfusion.EJ2` assembly reference to the `<system.web>` element.
 

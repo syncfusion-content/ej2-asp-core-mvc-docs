@@ -21,7 +21,7 @@ To create a swimlane, the type of shape should be set as [`swimlane`](https://he
 
 Header was the primary element for swimlanes. The [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of swimlane allows to define its textual description and to customize its appearance.
 
-N> By using this header, the swimlane interaction will be performed, like selection, dragging, etc.
+> By using this header, the swimlane interaction will be performed, like selection, dragging, etc.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -49,7 +49,7 @@ N> By using this header, the swimlane interaction will be performed, like select
 
 The height and width of swimlane header can be customized with [`weight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) properties of swimlane header. Set fill color of header by using the [`style`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property. The orientation of swimlane can be customized with the [`orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the header.
 
-N> By default the swimlane orientation has Horizontal.
+> By default the swimlane orientation has Horizontal.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

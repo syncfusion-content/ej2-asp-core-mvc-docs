@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Installation process for ASP.NET MVC - EJ2 Extension | Syncfusion
+title: Installation process for ASP.NET MVC - EJ2 Extension
 description: Learn here more about how to download and install in the Syncfusion ASP.NET MVC Extension for Visual Studio and much more.
-platform: ej2-asp-core-mvc
+platform: ASP.NET MVC - EJ2
 control: Syncfusion VS Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -30,7 +30,7 @@ The steps below assist you to how to install the Syncfusion ASP.NET MVC extensio
 
 2. Navigate to **Extension ->Manage Extensions** and open the Manage Extensions.
 
-    N> In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates.
+    > In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates.
 
 3. On the left, click the **Online** tab and type **"Syncfusion EJ2 MVC"** in the **search box**.
 
@@ -50,7 +50,7 @@ The steps below assist you to how to install the Syncfusion ASP.NET MVC extensio
 
     ![SyncfusionMenu](images/SyncfusionMenu.png)
 
-    N> In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.
+    > In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.
 
 ## Install from the Visual Studio Marketplace
 
@@ -74,4 +74,4 @@ The steps below illustrate how to download and install the Syncfusion ASP.NET MV
 
      ![SyncfusionMenu](images/SyncfusionMenu.png)
 
-     N> In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.
+     > In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.

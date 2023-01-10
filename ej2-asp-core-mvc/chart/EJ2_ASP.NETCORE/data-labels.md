@@ -67,7 +67,7 @@ Using [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 
 
-N> The position `Outer` is applicable for column and bar type series.
+> The position `Outer` is applicable for column and bar type series.
 
 ## Data Label Template
 
@@ -267,7 +267,7 @@ The `stroke` and `border` of data label can be customized using `fill` and `bord
 
 
 
-N> `rx` and `ry` properties requires `border` values not to be null.
+> `rx` and `ry` properties requires `border` values not to be null.
 
 ## Customizing Specific Point
 

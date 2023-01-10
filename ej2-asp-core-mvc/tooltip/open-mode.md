@@ -13,9 +13,9 @@ documentation: ug
 
 You can decide the mode on which the Tooltip is to be opened on a page, i.e., on hovering, focusing, or clicking on the target elements.
 
-N> On mobile devices, Tooltips appear when you tap and hold the element, even if the `opensOn` option is assigned with `Hover`.
-<br/> Tooltips are also displayed as long as you continue to tap and hold the element. On lift, it  disappears in the next 1.5 seconds.
-<br/> If there is another action before that time ends, then the Tooltip disappears.
+> On mobile devices, Tooltips appear when you tap and hold the element, even if the `opensOn` option is assigned with `Hover`.
+> Tooltips are also displayed as long as you continue to tap and hold the element. On lift, it  disappears in the next 1.5 seconds.
+> If there is another action before that time ends, then the Tooltip disappears.
 
 The `opensOn` property can take either a single or a combination of multiple values, separated by space from the following options. The table below explains how the Tooltip opens on both desktop and mobile based on the value(s) assigned to the `opensOn` property. By default, it takes `Auto` value.
 
@@ -29,7 +29,7 @@ The `opensOn` property can take either a single or a combination of multiple val
 
 To open the Tooltip for multiple actions, say while hovering over or clicking on a target element, the `opensOn` property can be assigned with multiple values, separated by space as `Hover Click`.
 
-N> `Auto` value cannot be used with any combination for multiple values.
+> `Auto` value cannot be used with any combination for multiple values.
 
 The following code example shows how to set the open mode for Tooltips.
 

@@ -21,7 +21,7 @@ You can customize header styles by adding predefined classes in the Tab root ele
 * **e-background**: Tab header has a solid fill background, and the selected header has a highlighted border.
 * **e-background e-accent**: Tab header has a solid fill background, and the selected header has a highlighted border with accent color.
 
-N> If the above custom style classes are not included in the root element, the default style is applied to the Tab items.
+> If the above custom style classes are not included in the root element, the default style is applied to the Tab items.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

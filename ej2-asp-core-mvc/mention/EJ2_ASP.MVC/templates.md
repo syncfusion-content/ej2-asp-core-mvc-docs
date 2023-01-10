@@ -40,7 +40,7 @@ In the following sample, the selected value is displayed as a combined text of b
 {% include code-snippet/mention/template/display-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/template/display-template/display-template.cs %}
+{% include code-snippet/mention/template/display-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,7 +55,7 @@ You can show the custom design of the popup list content when no data and matche
 {% include code-snippet/mention/template/noRecord-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/template/noRecord-template/noRecord-template.cs %}
+{% include code-snippet/mention/template/noRecord-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,7 +70,7 @@ Display the customized waiting spinner, when data fetching takes time to load in
 {% include code-snippet/mention/template/spinner-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/template/spinner-template/spinner-template.cs %}
+{% include code-snippet/mention/template/spinner-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 

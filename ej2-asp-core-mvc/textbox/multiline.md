@@ -17,7 +17,7 @@ This feature allows the textbox to accept one or more lines of text like address
 
 You can convert the default textbox into the multiline textbox by setting the [multiline](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_Multiline) API value as true or pass HTML5 textarea as element to the textbox.
 
-N> The multiline textbox allows you to resize it in vertical direction alone.
+> The multiline textbox allows you to resize it in vertical direction alone.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

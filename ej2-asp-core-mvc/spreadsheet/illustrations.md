@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Illustrations in ##Platform_Name## Syncfusion Spreadsheet Component
+title: Illustrations in ##Platform_Name## Spreadsheet Component
 description: Learn here all about Illustrations in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Illustrations
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Illustrations in Spreadsheet control
+# Illustrations
 
 Illustrations helps you to insert a image, shapes and graphic objects in the Essential JS 2 spreadsheet.
 
@@ -17,7 +17,7 @@ Illustrations helps you to insert a image, shapes and graphic objects in the Ess
 
 Adding images to a spreadsheet can enhance the visual appeal and help convey information more clearly.
 
-N> * The default value for [`allowImage`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowImage) property is `true`.
+> * The default value for `allowImage` property is `true`.
 
 ### Insert Image
 
@@ -42,7 +42,7 @@ The available arguments in `ImageModel` are:
 * top: Specifies the height of the image.
 * left: Specifies the width of the image.
 
-N> * In spreadsheet, you can add many types of image files, including IMAGE, JPG, PNG, GIF and JPEG files.
+> * In spreadsheet, you can add many types of image files, including IMAGE, JPG, PNG, GIF and JPEG files.
 
 ### Delete Image
 
@@ -104,29 +104,29 @@ The following features have some limitations in Image:
 
 ## Chart
 
-A chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of `x`-axis and `y`-axis. You can use the [`allowChart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowChart) property to enable or disable the chart functionality.
+A chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of `x`-axis and `y`-axis. You can use the [`allowChart`](../api/spreadsheet/#allowChart) property to enable or disable the chart functionality.
 
-N> * The default value for the [`allowChart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowChart) property is `true`.
+>* The default value for the [`allowChart`](../api/spreadsheet/#allowChart) property is `true`.
 
 ### Types of chart
 
 The following types of charts are available in the Spreadsheet.
 
-N>* Column Chart
-<br/>* Bar Chart
-<br/>* Area Chart
-<br/>* Line Chart
-<br/>* Pie Chart
-<br/>* Scatter Chart
+>* Column Chart
+>* Bar Chart
+>* Area Chart
+>* Line Chart
+>* Pie Chart
+>* Scatter Chart
 
 ### Insert Chart
 
 You can insert the chart by using one of the following ways,
 
 * Select the chart icon in the Ribbon toolbar under the Insert Tab.
-* Use the `insertChart()`method programmatically.
+* Use the [`insertChart()`](../api/spreadsheet/#insertChart) method programmatically.
 
-The available parameter in the `insertChart()` method is,
+The available parameter in the [`insertChart()`](../api/spreadsheet/#insertChart) method is,
 
 | Parameter | Type | Description |
 |-----|------|----|
@@ -143,9 +143,9 @@ The available arguments in the `ChartModel` are:
 ### Delete Chart
 
 * If you want to delete the chart, just select the chart, and then press the Delete key.
-* Use the `deleteChart()`method programmatically.
+* Use the [`deleteChart()`](../api/spreadsheet/#deleteChart) method programmatically.
 
-The available parameter in the `deleteChart()` method is,
+The available parameter in the [`deleteChart()`](../api/spreadsheet/#deleteChart) method is,
 
 | Parameter | Type | Description |
 |-----|------|----|

@@ -155,4 +155,4 @@ namespace ThemeSwitch.Models
 
 ![Change theme dynamically](images/dynamic-theme-switching.gif)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-theme-switch)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-theme-switch)

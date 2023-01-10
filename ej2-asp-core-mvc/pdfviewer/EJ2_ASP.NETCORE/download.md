@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Download in  EJ2 ASP.NET CORE PDF Viewer | Syncfusion
-description: Learn here all about Download in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Download in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Download in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Download
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Download a PDF document in PDF Viewer component
+# Download
 
 The PDF Viewer supports downloading the loaded PDF file. You can enable/disable the download using the following code snippet.
 
 ```html
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
-                   enableDownload="true">
-    </ejs-pdfviewer>
-</div>
+    <div style="width:100%;height:600px">
+        <ejs-pdfviewer id="pdfviewer"
+                style="height:600px"
+                serviceUrl="/api/PdfViewer"
+                documentPath=@ViewBag.DocumentPath
+                enableDownload="true">
+        </ejs-pdfviewer>
+    </div>
 ```
 
 ![Alt text](./images/download.png)

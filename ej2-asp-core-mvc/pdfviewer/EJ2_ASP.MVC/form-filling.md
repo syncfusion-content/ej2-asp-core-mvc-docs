@@ -79,7 +79,7 @@ You can import the form fields using JSON file or JSON object in code behind lik
 </script>
 ```
 
-N>The JSON file for importing the form fields should be placed in the desired location and the path should be provided correctly.
+>The JSON file for importing the form fields should be placed in the desired location and the path should be provided correctly.
 
 ## Exporting form fields from the PDF document using PDF Viewer API
 

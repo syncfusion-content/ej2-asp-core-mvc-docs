@@ -55,11 +55,11 @@ The virtual scrolling option allows you to load the large amounts of data withou
 
 ## Data Compression
 
-N> This property is applicable only for relational data source.
+> This property is applicable only for relational data source.
 
 When we bind one million raw data, the pivot table will process all raw data to generate aggregated data during initial rendering and report manipulation. But in data compression, the data will be compressed based on the uniqueness of the raw data, and unique records will be provided as input for the Pivot Table. The compressed data will be used for further operations at all times, reducing the looping complexity and improving the performance of the pivot table. For example, if the pivot table  is connected to one million raw data aggregated to 1,000 unique data means, it will be rendered within 3 seconds rather than 10 seconds. You can enable this option by using the [`allowDataCompression`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDataCompression) property along with [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property.
 
-N> This options will only function when the virtual scrolling is enabled.
+> This options will only function when the virtual scrolling is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

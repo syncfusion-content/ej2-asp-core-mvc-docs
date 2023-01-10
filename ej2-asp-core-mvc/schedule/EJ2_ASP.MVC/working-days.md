@@ -26,7 +26,7 @@ By default, Scheduler considers the week days from Monday to Friday as `Working 
 
 The Work week and Timeline Work week views displays exactly the defined working days on Scheduler layout, whereas other views displays all the days and simply differentiates the non-working days on UI with inactive cell color.
 
-N> The working or business hours depiction on Scheduler are usually valid only on these specified working days.
+> The working or business hours depiction on Scheduler are usually valid only on these specified working days.
 
 The following example code depicts how to set the Scheduler to display Monday, Wednesday and Friday as working days of a week.
 
@@ -90,7 +90,7 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 
 It is possible to show the week number count of a week in the header bar of the Scheduler by setting true to `ShowWeekNumber` property. By default, its default value is `false`. In Month view, the week numbers are displayed as a first column.
 
-N> The `ShowWeekNumber` property is not applicable on Timeline views, as it has the equivalent [HeaderRows](./header-rows/#display-week-numbers-in-timeline-views) property to handle such requirement with additional customization.
+> The `ShowWeekNumber` property is not applicable on Timeline views, as it has the equivalent [HeaderRows](./header-rows/#display-week-numbers-in-timeline-views) property to handle such requirement with additional customization.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -309,7 +309,7 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
 
 ## See Also
 

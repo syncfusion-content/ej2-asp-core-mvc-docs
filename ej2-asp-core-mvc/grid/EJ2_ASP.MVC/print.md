@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print in Syncfusion ##Platform_Name## Grid Component
+title: Print in ##Platform_Name## Grid Component
 description: Learn here all about Print in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Print in ASP.NET MVC Grid Component
+# Print
 
 To print the Grid, use the [`print`](https://ej2.syncfusion.com/documentation/api/grid/#print) method from grid instance. The print option can be displayed on the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) by adding the **Print** toolbar item.
 
@@ -40,7 +40,7 @@ To print the Grid, use the [`print`](https://ej2.syncfusion.com/documentation/ap
 
 ## Page setup
 
-Some of the print options cannot be configured through JavaScript code. So, you have to customize the layout, paper size, and margin options using the browser page setup dialog. Refer to the following links to know more about the browser page setup:
+Some of the print options cannot be configured through JavaScript code. So, you have to customize the layout, paper size, and margin options using the browser page setup dialog. Please refer to the following links to know more about the browser page setup:
 
 * [`Chrome`](https://support.google.com/chrome/answer/1069693?hl=en&visit_id=1-636335333734668335-3165046395&rd=1)
 * [`Firefox`](https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox)
@@ -146,37 +146,7 @@ By default, the grid will be print the master and expanded child grids alone. yo
 
 
 
-N> By default, the hierarchy grid prints the expanded child grids from the visible page only. Refer [To Print the expanded state grid from all pages](./how-to/#print-the-expanded-state-from-other-pages).
-
-## Print the master detail grid
-
-The Grid has the option to visualize details of a record in another Grid in a master and detailed manner. By default, Grid will print the master grid alone. Instead of this, it is possible to print both the master and detail grids by using the [BeforePrint](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event of the Grid.
-
-In the following sample, the detail grid is added to the `element` argument of the `BeforePrint` event, resulting in both the master and detail grids being printed on the page.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/masterdetailgrid/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Master-Detail.cs" %}
-{% include code-snippet/grid/print/masterdetailgrid/masterdetailgrid.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/masterdetailgrid/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Master-Detail.cs" %}
-{% include code-snippet/grid/print/masterdetailgrid/masterdetailgrid.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
+> By default, the hierarchy grid prints the expanded child grids from the visible page only. Refer [To Print the expanded state grid from all pages](./how-to/#print-the-expanded-state-from-other-pages).
 
 ## Print large number of columns
 

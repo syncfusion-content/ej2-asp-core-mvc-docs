@@ -13,7 +13,7 @@ documentation: ug
 
 The tooltip is used to show the card information when the cursor hover over the card elements using the `enableTooltip` property. Tooltip content is dynamically set based on hovering over the card elements.
 
-N> If you wish to show tooltip on Kanban board custom elements, you need to add `e-tooltip-text` class name of a particular element.
+> If you wish to show tooltip on Kanban board custom elements, you need to add `e-tooltip-text` class name of a particular element.
 
 ## Tooltip template
 

@@ -35,7 +35,7 @@ The following section explains you the steps required to create TextBox with `ic
 
 * Place the label element with class `e-float-text` after the above created span element. When you focus or filled with value in the TextBox, the label floats above the TextBox.
 
-N> Creating the Floating label TextBox, you have to set the `required` attribute to the Input element to achieve the floating label functionality which is used for validating the value existence in TextBox. If you want to render the Floating label TextBox without `required` attribute then refer to the [Floating label without required attribute](#floating-label-without-required-attribute) section.
+> Creating the Floating label TextBox, you have to set the `required` attribute to the Input element to achieve the floating label functionality which is used for validating the value existence in TextBox. If you want to render the Floating label TextBox without `required` attribute then refer to the [Floating label without required attribute](#floating-label-without-required-attribute) section.
 
 ```html
         <div class="e-float-input e-input-group">

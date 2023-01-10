@@ -15,7 +15,7 @@ documentation: ug
 
 Chart provides selection support for the series and its data points on mouse click.
 
-N> When Mouse is clicked on the data points, the corresponding series legend will also be selected.
+> When Mouse is clicked on the data points, the corresponding series legend will also be selected.
 
 There are different types of selection mode for selecting the data. They are,
 

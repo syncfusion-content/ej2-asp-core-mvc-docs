@@ -21,20 +21,20 @@ The following steps are used to include the authorization token to the PDF viewe
 
 ```html
 <script>
-    // Include the Authorization token
-    window.onload = function () {
-        var pdfViewer = document.getElementById('pdfViewer').ej2_instances[0];
-        pdfViewer.ajaxRequestSettings = {
-            ajaxHeaders: [
-                {
-                    headerName: 'Authorization',
+// Include the Authorization token
+window.onload = function () {
+    var pdfViewer = document.getElementById('pdfViewer').ej2_instances[0];
+    pdfViewer.ajaxRequestSettings = {
+        ajaxHeaders: [
+            {
+                headerName: 'Authorization',
 
-                    headerValue: 'Bearer 64565dfgfdsjweiuvbiuyhiueygf'
-                }
-            ],
-            withCredentials: false
-        };
-    }
+                headerValue: 'Bearer 64565dfgfdsjweiuvbiuyhiueygf'
+            }
+        ],
+        withCredentials: false
+    };
+}
 </script>
 ```
 

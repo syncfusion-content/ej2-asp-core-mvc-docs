@@ -42,9 +42,9 @@ To enable sorting in the TreeGrid, set the [`allowSorting`](https://help.syncfus
 
 
 
-N> TreeGrid columns are sorted in the **Ascending** order. If you click the already sorted column, the sort direction toggles.
-<br/> You can apply and clear sorting by invoking **sortColumn** and **clearSorting** methods.
-<br/> To disable sorting for a particular column, set the [`allowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowSorting.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **false**.
+> TreeGrid columns are sorted in the **Ascending** order. If you click the already sorted column, the sort direction toggles.
+> You can apply and clear sorting by invoking **sortColumn** and **clearSorting** methods.
+> To disable sorting for a particular column, set the [`allowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowSorting.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **false**.
 
 ## Initial sort
 
@@ -104,7 +104,7 @@ During the sort action, the treegrid component triggers two events. The [`action
 
 
 
-N> The **args.requestType** is the current action name. For example, in sorting the **args.requestType** value is **sorting**.
+> The **args.requestType** is the current action name. For example, in sorting the **args.requestType** value is **sorting**.
 
 <!--  Custom sort comparer
 
@@ -159,4 +159,4 @@ The following screenshot shows treegrid touch sorting.
 
 ![Touch interaction](images/touch-sorting.jpg)
 
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.

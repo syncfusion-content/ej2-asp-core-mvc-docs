@@ -1,0 +1,41 @@
+---
+layout: post
+title: Ej1 Api Migration in ##Platform_Name## Heatmap Component
+description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Heatmap component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Ej1 Api Migration
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
+# Migration from Essential JS 1
+
+This article describes the API migration process of heat map component from Essential JS 1 to Essential JS 2.
+
+## Members
+
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| --- | --- | --- |
+| Specifies the width of the heat map | **Property:**  *width*<br/><br/>`<ej-heatmap id="HeatMap" width="810px">`<br/>`</ej-heatmap>`| **Property:**  *width*<br/><br/>`<ejs-heatmap id='heatmap-container' width="300px"></ejs-heatmap>`|
+| Specifies the height of the heat map| **Property:**  *height*<br/><br/>`<ej-heatmap id="HeatMap" height="810px">`<br/>`</ej-heatmap>`|**Property:**  *height*<br/><br/>`<ejs-heatmap id='heatmap-container' height="300px">`<br/>`</ejs-heatmap>`|
+| Enables or disables tooltip of heat map| **Property:**  *showtooltip*<br/><br/>`<ej-heatmap id="HeatMap" showTooltip="true">`<br/>`</ej-heatmap>`| **Property:**  *showTooltip*<br/><br/>`<ejs-heatmap id='heatmap-container' showTooltip = "true">`<br/>`</ejs-heatmap>`|
+| Defines the tooltip that should be shown when the mouse hovers over cells.| **Property:**  *toolTipSettings.templateId*<br/><br/>`<ej-heatmap id="HeatMap">`<br/>`<e-heatmap-tooltip-settings template-id="mouseovertoolTipId">`<br/>`</e-heatmap-tooltip-settings>`<br/>`</ej-heatmap>`|**Property:**  *tooltipRender*<br/><br/>`<ejs-heatmap id='heatmap-container' tooltipRender="window.ontooltipRender">`<br/>`</ejs-heatmap>`<br/><br/>window.ontooltipRender = function (args) { }|
+| Specifies the source data of the heat map.| **Property:**  *itemsSource*<br/><br/>`<ej-heatmap id="HeatMap" items-source="ViewBag.itemsource">`<br/>`</ej-heatmap>`<br/><br/>ViewBag.itemsource = []|**Property:**  *dataSource*<br/><br/>`<ejs-heatmap id='heatmap-container' dataSource="ViewBag.dataSource">`<br/>`</ejs-heatmap>`<br><br>ViewBag.dataSource = []|
+| Specifies whether the cell content can be visible or not.| **Property:**  *heatmapCell.showContent*<br/><br/>`<ej-heatmap id="HeatMap" heat-map-cell="ViewBag.heatmapCell">`<br/>`</ej-heatmap>`<br><br>ViewBag.heatmapCell = new { showContent: "Hidden" }|**Property:**  *cellSettings.showLabel* <br><br>`<ejs-heatmap id='heatmap-container'>`<br>`<e-heatmap-cellsettings showLabel="true"></e-heatmap-cellsettings>`<br>`</ejs-heatmap>`|
+| Specifies the color of the heat map column data.| **Property:**  *colorMappingCollection.color*<br/><br/>`<ej-heatmap id="HeatMap">`<br>`<e-colorMappingCollection>`<br>`<e-color-mapping color="#8ec8f8">`<br>`</e-color-mapping>`<br>`</ej-heatmap>`|**Property:**  *paletteSettings.palette.color*<br/><br/>`<ejs-heatmap id='heatmap-container'>`<br>`<e-heatmap-palettesettings type="Fixed" emptyPointColor="white">`<br>`<e-palettes>`<br>`<e-palette color="rgb(238,238,238)">`<br>`</e-palette>`<br>`</e-palettes>`<br>`</e-heatmap-palettesettings>`<br>`</ejs-heatmap>`|
+| Specifies the color values of the heat map column data.| **Property:**  *colorMappingCollection.value*<br/><br/>`<ej-heatmap id="HeatMap">`<br>`<e-colorMappingCollection>`<br>`<e-color-mapping value="0">`<br>`</e-color-mapping>`<br>`</ej-heatmap>`| **Property:**  *paletteSettings.palette.value*<br/><br/>`<ejs-heatmap id='heatmap-container'>`<br>`<e-heatmap-palettesettings type="Fixed" emptyPointColor="white">`<br>`<e-palettes>`<br>`<e-palette value="0">`<br>`</e-palette>`<br>`</e-palettes>`<br>`</e-heatmap-palettesettings>`<br>`</ejs-heatmap>`|
+| Specifies the label text of the heat map color.| **Property:**  *colorMappingCollection.label.text*<br/><br/>`<ej-heatmap id="HeatMap">`<br>`<e-colorMappingCollection>`<br>`<e-color-mapping>`<br>`<e-label text="0">`<br>`</e-label>`<br>`</e-color-mapping>`<br>`</ej-heatmap>`|**Property:**  *paletteSettings.palette.label*<br/><br/>`<ejs-heatmap id='heatmap-container'>`<br>`<e-heatmap-palettesettings type="Fixed" emptyPointColor="white">`<br>`<e-palettes>`<br>`<e-palette label="No contributions">`<br>`</e-palette>`<br>`</e-palettes>`<br>`</e-heatmap-palettesettings>`<br>`</ejs-heatmap>`|
+| Specifies the style of the heat map color label.| **Property:**  *colorMappingCollection.label.bold* <br/><br/>`<ej-heatmap id="HeatMap">`<br>`<e-colorMappingCollection>`<br>`<e-color-mapping>`<br>`<e-label bold="true">`<br>`</e-label>`<br>`</e-color-mapping>`<br>`</ej-heatmap>`|**Property:**  *legendSettings.textStyle.fontStyle*<br/><br/>`<e-heatmap-legendsettings textStyle="ViewBag.legendSettings">`<br>`</e-heatmap-legendsettings>`<br><br>ViewBag.legendSettings = new {textStyle: { fontStyle:'bold' }}|
+| Specifies the font size of the heat map label.| **Property:**  *colorMappingCollection.label.fontSize*<br/><br/>`<ej-heatmap id="HeatMap">`<br>`<e-colorMappingCollection>`<br>`<e-color-mapping>`<br>`<e-label font-size="16">`<br>`</e-label>`<br>`</e-color-mapping>`<br>`</ej-heatmap>`|**Property:**  *legendSettings.textStyle.size*<br/><br/>`<e-heatmap-legendsettings textStyle="ViewBag.legendSettings">`<br>`</e-heatmap-legendsettings>`<br><br>ViewBag.legendSettings = new {textStyle: { size: 18 }}|
+| Specifies the font family of the heat map label.| **Property:**  *colorMappingCollection.label.fontFamily*<br/><br/>`<ej-heatmap id="HeatMap">`<br>`<e-colorMappingCollection>`<br>`<e-color-mapping>`<br>`<e-label font-family="Arial">`<br>`</e-label>`<br>`</e-color-mapping>`<br>`</ej-heatmap>`|**Property:**  *legendSettings.textStyle.fontFamily*<br/><br/>`<e-heatmap-legendsettings textStyle="ViewBag.legendSettings">`<br>`</e-heatmap-legendsettings>`<br><br>ViewBag.legendSettings = new {textStyle: { fontFamily: 'Arial' }}|
+| Specifies the font color of the heat map label.| **Property:**  *colorMappingCollection.label.fontColor*<br/><br/>`<ej-heatmap id="HeatMap">`<br>`<e-colorMappingCollection>`<br>`<e-color-mapping>`<br>`<e-label font-color="red">`<br>`</e-label>`<br>`</e-color-mapping>`<br>`</ej-heatmap>`|**Property:**  *legendSettings.textStyle.color*<br/><br/>`<e-heatmap-legendsettings textStyle="ViewBag.legendSettings">`<br>`</e-heatmap-legendsettings>`<br><br>ViewBag.legendSettings = new {textStyle: { color: 'red' }}|
+| Specifies the mapping name of the column.| **Property:**  *itemsMapping.column.propertyName*<br/><br/>`<ej-heatmap items-mapping="ViewBag.itemsmapping">`<br>`</ej-heatmap>`<br><br>ViewBag.itemsmapping = new {column: { "propertyName": "ProductName" }}|**Property:**  *dataSource.yDataMapping*<br/><br/>`<ejs-heatmap id='heatmap-container' dataSource="ViewBag.dataSource">`<br>`</ejs-heatmap>`<br><br>ViewBag.dataSource = new {data: heatmapData,yDataMapping: 'columnid'}|
+| Specifies the mapping name of the row.| **Property:**  *itemsMapping.row.propertyName*<br/><br/>`<ej-heatmap items-mapping="ViewBag.itemsmapping">`<br>`</ej-heatmap>`<br><br>ViewBag.itemsMapping = new {row: { "displayName": "Product Name" }}|**Property:**  *dataSource.xDataMapping*<br/><br/>`<ejs-heatmap id='heatmap-container' dataSource="ViewBag.dataSource">`<br>`</ejs-heatmap>`<br><br>ViewBag.dataSource = new {data: heatmapData,xDataMapping: 'rowid'}|
+| Specifies the mapping name of the row.</b>| **Property:**  *itemsMapping.value.displayName*<br/><br/>`<ej-heatmap items-mapping="ViewBag.itemsmapping">`<br>`</ej-heatmap>`<br><br>ViewBag.itemsMapping = new {value: { "displayName": "Product Name" }}|**Property:**  *dataSource.valueMapping*<br/><br/>`<ejs-heatmap id='heatmap-container' dataSource="ViewBag.dataSource">`<br>`</ejs-heatmap>`<br><br>ViewBag.dataSource = new {data: heatmapData,valueMapping: 'value'}|
+
+## Events
+
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| --- | --- | --- |
+| Triggered when the cell get clicked.| **Property:**  *cellSelected*<br/><br/>`<ej-heatmap actionComplete="window.actionComplete">`<br>`</ej-heatmap>`<br><br>window.actionComplete = function(args) {}|**Property:**  *cellClick*<br/><br/>`<ejs-heatmap id='heatmap-container' cellClick="window.cellClick">`<br>`</ejs-heatmap>`<br><br>window.cellClick = function (args) { }|

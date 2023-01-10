@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Syncfusion Drop Down Tree Component
+title: Data Binding in ##Platform_Name## Drop Down Tree Component
 description: Learn here all about data binding in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding in Dropdown Tree Component
+# Data Binding
 
 The Dropdown Tree control provides an option to load the data either from local data sources or from remote data services. This can be done through `dataSource` property that is a member of the `fields` property. The `dataSource` property supports list of data and `DataManager`. It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
@@ -146,35 +146,3 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 
 
 ![Remote datasource Sample](./images/remote-data.PNG)
-
-## Prevent Node selection
-
-You can prevent the selection of individual tree node by using the `Selectable` property. The tree node selection is not allowed while disable this property.
-
-The `Selectable` property is disabled and the selection is prevented for parent nodes in below sample.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dropdowntree/data-binding/prevent-node/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="PreventNode.cs" %}
-{% include code-snippet/dropdowntree/data-binding/prevent-node/preventnode.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dropdowntree/data-binding/prevent-node/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Preventnode.cs" %}
-{% include code-snippet/dropdowntree/data-binding/prevent-node/preventnode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-![Prevent Node Selection Sample](./images/prevent-node.gif)

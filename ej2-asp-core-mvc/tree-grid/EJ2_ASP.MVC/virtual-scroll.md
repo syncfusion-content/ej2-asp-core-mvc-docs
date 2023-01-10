@@ -77,7 +77,7 @@ To setup the column virtualization, set the [`EnableVirtualization`](https://hel
 
 
 
-N> Column's `Width` is required for column virtualization. If column's width is not defined then tree grid will consider its value as `200px`.
+> Column's `Width` is required for column virtualization. If column's width is not defined then tree grid will consider its value as `200px`.
 
 
 
@@ -97,4 +97,4 @@ N> Column's `Width` is required for column virtualization. If column's width is 
 
 * Programmatic selection using the **SelectRows** method is not supported in virtual scrolling.
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.

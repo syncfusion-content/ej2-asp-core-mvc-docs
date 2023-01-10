@@ -34,7 +34,7 @@ Refer to [Host and deploy ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/
 
 * Then, click `Save` and `Publish`.
 
-    N> Refer [here](https://docs.microsoft.com/en-us/visualstudio/deployment/quickstart-deploy-aspnet-web-app?view=vs-2022&tabs=azure) for publishing the application to Azure App Service using Visual Studio.  
+    > Refer [here](https://docs.microsoft.com/en-us/visualstudio/deployment/quickstart-deploy-aspnet-web-app?view=vs-2022&tabs=azure) for publishing the application to Azure App Service using Visual Studio.  
 
 ## Publish ASP.NET Core Application with CLI
 
@@ -72,7 +72,7 @@ dotnet publish -c Release -o <output directory>
 {% endhighlight %}
 {% endtabs %}
 
-N> If the output directory is not specified, it defaults to **./bin/[configuration]/[framework]/publish/** for a **framework-dependent deployment** or **./bin/[configuration]/[framework]/[runtime]/publish/** for a **self-contained deployment**.
+> If the output directory is not specified, it defaults to **./bin/[configuration]/[framework]/publish/** for a **framework-dependent deployment** or **./bin/[configuration]/[framework]/[runtime]/publish/** for a **self-contained deployment**.
 
 If the path is relative, the output directory generated is relative to the project file location, not to the current working directory.
 

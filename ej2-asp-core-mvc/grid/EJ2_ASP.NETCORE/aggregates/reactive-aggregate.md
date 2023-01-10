@@ -15,7 +15,7 @@ documentation: ug
 
 When using batch editing, the aggregate values will be refreshed on every cell save. The footer, group footer, and group caption aggregate values will be refreshed.
 
-N> Adding a new record to the grouped grid will not refresh the aggregate values.
+> Adding a new record to the grouped grid will not refresh the aggregate values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,38 +1,30 @@
-@using Syncfusion.EJ2.Navigations;
+ @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).ToolbarClick("toolbarClick").Columns(col =>
+   {
 
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ToolbarTemplate("#template").Columns(col =>
-{
-   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("Freight").HeaderText("Freight").Width("120").EditType("numericedit").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
+       col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+       col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+       col.Field("Freight").HeaderText("Freight").Width("120").EditType("numericedit").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+       col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+       col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
 
-}).AllowGrouping().GroupSettings(group => { group.Columns(new string[] { "CustomerID" }); }).Render()
+   }).AllowPaging().PageSettings(page => page.PageCount(2)).ToolbarTemplate("#template").Render()
 
-<div id="template">
-    @(Html.EJS().Toolbar("defaultToolbar")
-    .Items(new List<ToolbarItem> {
-        new ToolbarItem { Id="collapse", PrefixIcon = "e-collapse" }
-    }).Clicked("clickHandler")
-    .Render())
-</div>
-
-<style>
-    .e-expand::before {
-        content: '\e82e';
-    }
-    .e-collapse::before {
-        content: '\e834';
-    }
-</style>
-<script>
-    function clickHandler(args) {
-        var target = args.originalEvent.target.closest('button'); //find clicked button
-        var gridInstance = document.getElementById("Grid").ej2_instances[0];
+   <script>
+    function clickHandler (args) {
+        var target: Element = args.originalEvent.target.closest('.e-toolbar-item');
         if (target.id === 'collapse') {
-            //collapse all expanded grouped row
-            gridInstance.groupModule.collapseAll();
+            grid.groupModule.collapseAll();
         }
     };
-</script>
+
+   </scrip>
+
+<div id='toolbar-template'>
+    <div>
+        <div id='collapse' title='Collapse'>
+            <button class='e-btn e-flat'>
+                <span class= 'e-btn-icon e-icons e-collapse'></span>
+            </button>
+        </div>
+    </div>
+</div>

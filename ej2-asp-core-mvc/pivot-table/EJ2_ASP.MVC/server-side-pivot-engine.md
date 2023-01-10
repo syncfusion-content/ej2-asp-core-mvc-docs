@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-N> In general, the Pivot Table is created using the built-in engine for given data source. This is an optional feature that allows you to create the Pivot Table with a server-side pivot engine and external data binding. And this option is applicable only for relational data source.
+> In general, the Pivot Table is created using the built-in engine for given data source. This is an optional feature that allows you to create the Pivot Table with a server-side pivot engine and external data binding. And this option is applicable only for relational data source.
 
 # Getting Started with Syncfusion Server-side Pivot Engine
 

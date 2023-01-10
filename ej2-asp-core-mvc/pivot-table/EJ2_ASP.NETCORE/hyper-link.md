@@ -22,9 +22,9 @@ The pivot table supports to show hyperlink option to link data for individual ce
 * [`conditionalSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html): It allows to set the visibility of hyperlink based on specific condition.
 
 <!-- markdownlint-disable MD028 -->
-N> By default, the hyperlink options are disabled for all cells in the pivot table.
+> By default, the hyperlink options are disabled for all cells in the pivot table.
 
-N> User defined style can be applied to hyperlink using [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_CssClass) property in [`e-yperlinkSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html) tag.
+> User defined style can be applied to hyperlink using [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_CssClass) property in [`e-yperlinkSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html) tag.
 
 ## Hyperlink for all cells
 

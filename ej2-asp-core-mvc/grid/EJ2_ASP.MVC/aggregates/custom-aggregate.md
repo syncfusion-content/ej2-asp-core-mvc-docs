@@ -43,4 +43,4 @@ The custom aggregate function will be invoked with different arguments for total
 
 
 
-N> To access the custom aggregate value inside the template, use the key as **Custom**.
+> To access the custom aggregate value inside the template, use the key as **Custom**.

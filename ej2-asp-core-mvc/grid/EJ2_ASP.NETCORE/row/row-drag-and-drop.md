@@ -37,8 +37,8 @@ The grid row drag and drop allows you to drag and drop grid rows to another grid
 
 
 
-N> * Selection feature must be enabled for row drag and drop.
-<br/> * Multiple rows can be selected by clicking and dragging inside the grid.
+> * Selection feature must be enabled for row drag and drop.
+> * Multiple rows can be selected by clicking and dragging inside the grid.
 For multiple row selection, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property of **e-grid-selectionsettings** must be set to **Multiple**.
 
 ## Drag and drop within Grid

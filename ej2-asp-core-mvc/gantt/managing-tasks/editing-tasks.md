@@ -50,7 +50,7 @@ The following code example shows you how to enable the cell editing in Gantt con
 
 
 
-N> When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
+> When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
 
 ![Alt text](images/enableCellEditing1.png)
 
@@ -89,7 +89,7 @@ Modify the task details through the edit dialog by setting the edit mode to `Dia
 
 
 
-N> In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
+> In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
 
 ![Alt text](images/enableDialogEditing.png)
 
@@ -134,7 +134,7 @@ Tabs in Add Dialog
 
 In the Gantt dialog, you can make only specific data source fields visible for editing by using the [`AddDialogFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AddDialogFields) and [`EditDialogFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EditDialogFields) properties. The data fields are defined with `Type` and `Fields` properties.
 
-N> You can also define the custom fields in the add/edit dialog General tab using the `Fields` property.
+> You can also define the custom fields in the add/edit dialog General tab using the `Fields` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

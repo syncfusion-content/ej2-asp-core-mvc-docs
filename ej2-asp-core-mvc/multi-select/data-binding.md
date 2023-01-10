@@ -22,7 +22,7 @@ The MultiSelect also supports different kinds of data services such as OData, OD
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
-N> When binding complex data to the MultiSelect, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+> When binding complex data to the MultiSelect, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Binding local data
 

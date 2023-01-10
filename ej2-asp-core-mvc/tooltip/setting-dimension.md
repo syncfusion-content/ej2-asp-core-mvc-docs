@@ -79,4 +79,4 @@ Output be like the below.
 
 ![ASP .NET Core - Tooltip - Scroll Mode](./images/tooltip-scroll.png)
 
-N> The scrolling mode can best be seen when the sticky mode of the Tooltip is enabled. To enable sticky mode, set the `isSticky` property to true.
+> The scrolling mode can best be seen when the sticky mode of the Tooltip is enabled. To enable sticky mode, set the `isSticky` property to true.

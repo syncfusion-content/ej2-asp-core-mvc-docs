@@ -17,7 +17,7 @@ The **Kanban** columns represent the each stage of the process. The column defin
 
 Kanban columns are categorized by mapping the **Key** from the datasource using the `KeyField` property. The corresponding **Value** in the datasource is mapped inside the columns `KeyField`.  Based on this categorization, Kanban columns are split on this board.
 
-N> The `KeyField` property is mandatory to render the columns in the Kanban board.
+> The `KeyField` property is mandatory to render the columns in the Kanban board.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -151,7 +151,7 @@ Output be like the below.
 
 Kanban allows to expand or collapse its columns using `AllowToggle` inside the `Columns` property. When enable the property, it will render the expand or collapse icon to the column header.
 
-N> By default, collapsed column width is set to `50px`.
+> By default, collapsed column width is set to `50px`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -192,7 +192,7 @@ Output be like the below.
 
 By default, all columns are on expanded state when loading the Kanban board initially. But, you can render the columns with collapsed state using the `IsExpanded` property.
 
-N>The `IsExpanded` property only works when enabling the `AllowToggle` property on particular column.
+>The `IsExpanded` property only works when enabling the `AllowToggle` property on particular column.
 
 In the following example, the To Do column is collapsed on initialization of Kanban board.
 

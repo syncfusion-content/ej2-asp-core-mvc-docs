@@ -35,4 +35,4 @@ Tooltip can be shown on Button hover and it can be achieved by setting `title` a
 
 ![Button with Tooltip](../images/button-tooltip.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonHowToSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonHowToSample).

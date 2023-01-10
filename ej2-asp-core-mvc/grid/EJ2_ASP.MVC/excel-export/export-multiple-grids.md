@@ -42,7 +42,7 @@ The excel export provides support to export multiple grids in same sheet. To exp
 
 
 
-N> By default, [`multipleExport`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#multipleexport) blankRows value is 5.
+> By default, [`multipleExport`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#multipleexport) blankRows value is 5.
 
 ## New sheet
 

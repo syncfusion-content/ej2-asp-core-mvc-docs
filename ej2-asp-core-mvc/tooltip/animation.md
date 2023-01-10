@@ -70,8 +70,8 @@ The animation effects that are applicable to Tooltips are:
 
 When the `effect` is specified as `None`, no effect will be applied to the Tooltip, and animation is considered to be set to `off`.
 
-N> Some of the above animation effects suits the Tooltip better when its tip pointer is hidden.
-<br/> This can be achieved by setting the `showTipPointer` to false.
+> Some of the above animation effects suits the Tooltip better when its tip pointer is hidden.
+> This can be achieved by setting the `showTipPointer` to false.
 
 ## Animating via open/close methods
 

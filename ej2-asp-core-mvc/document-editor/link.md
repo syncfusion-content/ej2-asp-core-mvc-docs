@@ -17,10 +17,6 @@ Document editor supports hyperlink field. You can link a part of the document co
 
 Document editor triggers ‘requestNavigate’ event whenever user clicks Ctrl key or tap a hyperlink within the document. This event provides necessary details about link type, navigation URL, and local URL (if any) as arguments, and allows to easily customize the hyperlink navigation functionality.
 
-### Add the requestNavigate event for DocumentEditor
-
-The following example illustrates how to add requestNavigate event for DocumentEditor.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -45,32 +41,6 @@ The following example illustrates how to add requestNavigate event for DocumentE
 {% endif %}
 
 
-### Add the requestNavigate event for DocumentEditorContainer component
-
-The following example illustrates how to add requestNavigate event for DocumentEditorContainer component.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/document-editor/link/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor/link/document-editor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/document-editor/link/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor/link/document-editor.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 If the selection is in hyperlink, trigger this event by calling ‘navigateHyperlink’ method of ‘Selection’ instance.
 
@@ -90,11 +60,11 @@ documenteditor .selection.copyHyperlink();
 
 To create a basic hyperlink in the document, press `ENTER` / `SPACEBAR` / `SHIFT + ENTER` / `TAB` key after typing the address, for instance `http://www.google.com`. Document editor automatically converts this address to a hyperlink field. The text can be considered as a valid URL if it starts with any of the following.
 
-N> `<http://>`<br>
-<br/> `<https://>`<br>
-<br/> `file:///`<br>
-<br/> `www.`<br>
-<br/> `mailto:`<br>
+> `<http://>`<br>
+> `<https://>`<br>
+> `file:///`<br>
+> `www.`<br>
+> `mailto:`<br>
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -38,4 +38,4 @@ You can restrict the groups by defining the `MaxGroupCount` property. By default
 
 
 
-N> You can use this property in the mobile mode to restrict the nested group creation.
+> You can use this property in the mobile mode to restrict the nested group creation.

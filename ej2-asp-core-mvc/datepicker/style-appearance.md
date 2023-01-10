@@ -38,6 +38,6 @@ Use the following CSS to customize the DatePicker icon element.
 
 ## Customizing the Calendar popup of the DatePicker
 
-Check the below section, to customize the style and appearance of the Calendar component.
+Please check the below section, to customize the style and appearance of the Calendar component
 
 [Customizing Calendar's style and appearance](../calendar/style-appearance/)

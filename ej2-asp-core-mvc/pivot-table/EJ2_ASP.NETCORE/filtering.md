@@ -19,7 +19,7 @@ The following are the three different types of filtering:
 * Label filtering
 * Value filtering
 
-N> When all the above filtering options are disabled via code-behind, then the filter icon would be disabled in the field list or grouping bar UI.
+> When all the above filtering options are disabled via code-behind, then the filter icon would be disabled in the field list or grouping bar UI.
 
 ## Member filtering
 
@@ -40,7 +40,7 @@ Meanwhile filtering can also be configured at code behind using the [`e-filterse
 * [`items`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Items): It allows to set the members which needs to be either included or excluded from display.
 * [`levelCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_LevelCount): It allows to set level count of the field to fetch data from the cube. > This property applicable only for OLAP data source.**
 
-N> When specifying unavailable or inappropriate members to include or exclude filter items collection, they will be ignored.
+> When specifying unavailable or inappropriate members to include or exclude filter items collection, they will be ignored.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -130,7 +130,7 @@ Meanwhile, end user can utilize the search option to refine the members from the
 
 ### Loading members on-demand
 
-N> This property is applicable only for OLAP data sources.
+> This property is applicable only for OLAP data sources.
 
 Allows to load members inside the filter dialog on-demand by setting the [`loadOnDemandInMemberEditor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_LoadOnDemandInMemberEditor) property to **true**. By default, first level is loaded in the member editor from the OLAP cube. So, the member editor will be opened quickly, without any performance constraints. By default, this property is set to **true** and the search will only be applied to the level members that are loaded. In the meantime, the next level members can be added using either of the following methods.
 
@@ -179,7 +179,7 @@ If the property is set to **false**, all members of all levels will be queried a
 
 ### Loading members based on level number
 
-N> This property is applicable only for OLAP data sources.
+> This property is applicable only for OLAP data sources.
 
 Allows user to load the members on the basis of the level number set in the [`levelCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_LevelCount) property in the [`e-filtersettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html). By default, this property is set to **1** and the search will only take place within the members of the first level.
 
@@ -257,7 +257,7 @@ The label filtering dialog can be enabled by setting the [`allowLabelFilter`](ht
 <br/>
 ![output](images/labelfiltering_grid.png "Resultant pivot table on label filter")
 
-N> In label filtering UI, based on the field chosen, it’s member data type is automatically recognized and filtering operation will be carried out. Where as in code behind, user need to define the data type through a property and it has been explained in the immediate section below.
+> In label filtering UI, based on the field chosen, it’s member data type is automatically recognized and filtering operation will be carried out. Where as in code behind, user need to define the data type through a property and it has been explained in the immediate section below.
 
 ### Filtering string data type through code
 
@@ -323,7 +323,7 @@ This type of filtering is exclusively applicable for fields with members in numb
 
 For example, in a "Sold" field, to show the values between "90" to "100", set [`value1`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Value1) to "90", [`value2`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Value2) to "100" and [`condition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Condition) to [**Between**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html) for desired output in pivot table.
 
-N> Operators like [**Equals**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**DoesNotEquals**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**GreaterThan**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**GreaterThanOrEqualTo**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**LessThan**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**LessThanOrEqualTo**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**Between**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), and [**NotBetween**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html) are alone applicable for number data type.
+> Operators like [**Equals**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**DoesNotEquals**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**GreaterThan**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**GreaterThanOrEqualTo**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**LessThan**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**LessThanOrEqualTo**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**Between**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), and [**NotBetween**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html) are alone applicable for number data type.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -358,7 +358,7 @@ This type of filtering is exclusively applicable for fields with members in date
 
 For example, in a "Year" field, to show the records of the the year after 2015, then set [`value1`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Value1) to "2015-01-01" and [`condition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Condition) to [**After**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html) for desired output in pivot table.
 
-N> Operators like [**Equals**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**DoesNotEquals**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**Before**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**BeforeOrEqualTo**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**After**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**AfterOrEqualTo**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**Between**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), and [**NotBetween**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html) are alone applicable for date data type.
+> Operators like [**Equals**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**DoesNotEquals**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**Before**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**BeforeOrEqualTo**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**After**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**AfterOrEqualTo**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), [**Between**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html), and [**NotBetween**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.Operators.html) are alone applicable for date data type.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

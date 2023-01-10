@@ -1,3 +1,0 @@
-@using Syncfusion.EJ2.Notifications
-
-<ejs-skeleton id="skeleton" shape="Circle" width="60px" shimmerEffect="Pulse"></ejs-skeleton>

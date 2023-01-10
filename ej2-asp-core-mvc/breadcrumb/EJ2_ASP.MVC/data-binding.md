@@ -40,8 +40,8 @@ Output be like the below.
 
 ![Breadcrumb Sample](./images/breadcrumb-current-url.PNG)
 
-N> This output screenshot shows the [Bind to Location](https://ej2.syncfusion.com/aspnetcore/Breadcrumb/BindToLocation#/bootstrap5) sample.
-<br/> This sample is hosted in different location, so the breadcrumb is rendered with different location instead of the actual location.
+> This output screenshot shows the [Bind to Location](https://ej2.syncfusion.com/aspnetcore/Breadcrumb/BindToLocation#/bootstrap5) sample.
+> This sample is hosted in different location, so the breadcrumb is rendered with different location instead of the actual location.
 
 ### Static URL
 

@@ -26,7 +26,7 @@ Tooltips can be attached to 12 static locations around the target. On initializi
 * `RightCenter`
 * `RightBottom`
 
-N> By default, Tooltip is placed at the `TopCenter` of the target element.
+> By default, Tooltip is placed at the `TopCenter` of the target element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -128,7 +128,7 @@ The Tooltip and its tip pointer can be positioned dynamically based on the targe
 
 
 
-N> When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and other position values like start, end, and middle are not applied (to prevent the pointer from moving out of target).
+> When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and other position values like start, end, and middle are not applied (to prevent the pointer from moving out of target).
 
 Output be like the below.
 
@@ -167,7 +167,7 @@ Output be like the below.
 
 ![ASP .NET Core - Tooltip - Mouse Trail](./images/mouse-trail.png)
 
-N> When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and other position values like start, end, and middle are not applied (to prevent the pointer from moving out of target).
+> When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and other position values like start, end, and middle are not applied (to prevent the pointer from moving out of target).
 
 ## Setting offset values
 
@@ -208,4 +208,4 @@ Output be like the below.
 
 ![ASP .NET Core - Tooltip - Offset Value](./images/offset-values.png)
 
-N> By default, collision is handled automatically and therefore when collision is detected the Tooltip fits horizontally and flips vertically.
+> By default, collision is handled automatically and therefore when collision is detected the Tooltip fits horizontally and flips vertically.

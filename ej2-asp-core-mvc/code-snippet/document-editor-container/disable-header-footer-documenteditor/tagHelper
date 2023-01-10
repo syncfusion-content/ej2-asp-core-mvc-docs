@@ -1,21 +1,21 @@
 <ejs-documenteditor isReadOnly=false id="container" selectionChange="onSelectionChanged"></ejs-documenteditor>
 
 <script>
-    var documentEditor;
-    document.addEventListener('DOMContentLoaded', function () {
-        documentEditor = document.getElementById("container").ej2_instances[0];
-        documentEditor.enableAllModules();
-    });
-    function onSelectionChanged() {
-        // Check whether selection is in header
-        if (documentEditor.selection.contextType.indexOf('Header') > -1 ||
-          // Check whether selection is in Footer
-          documentEditor.selection.contextType.indexOf('Footer') > -1) {
-          // Change the document to read only mode
-          documentEditor.isReadOnly = true;
-        } else {
-          // Change the document to editable mode
-          documentEditor.isReadOnly = false;
-        }
+  var documentEditor;
+  document.addEventListener('DOMContentLoaded', function () {
+    documentEditor = document.getElementById("container").ej2_instances[0];
+    documentEditor.enableAllModules();
+  });
+  function onSelectionChanged() {
+    // Check whether selection is in header
+    if (documentEditor.selection.contextType.indexOf('Header') > -1 ||
+      // Check whether selection is in Footer
+      documentEditor.selection.contextType.indexOf('Footer') > -1) {
+      // Change the document to read only mode
+      documentEditor.isReadOnly = true;
+    } else {
+      // Change the document to editable mode
+      documentEditor.isReadOnly = false;
     }
+  }
 </script>

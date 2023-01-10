@@ -48,7 +48,7 @@ The Essential JS 2 Button has the following predefined styles that can be define
 
 ![ASP.NET Core Button styles](images/button-with-different-style.png)
 
-N> Predefined Button styles provide only the visual indication. So, Button content should define the Button style for the users of assistive technologies such as screen readers.
+> Predefined Button styles provide only the visual indication. So, Button content should define the Button style for the users of assistive technologies such as screen readers.
 
 ## Button types
 
@@ -182,7 +182,7 @@ The Button can have an icon to provide the visual representation of the action. 
 
 ![ASP.NET Core Button with font icons](images/button-icon.png)
 
-N> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property.
+> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property.
 
 ### Button with SVG image
 
@@ -238,7 +238,7 @@ The two types of Button sizes are default and small. To change the size of the d
 
 ![ASP.NET Core Button size](images/button-size.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonUGSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonUGSample).
 
 ## See also
 

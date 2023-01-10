@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Load balancing environment in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn how to load balancing environment in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Load Balancing Environment in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Load Balancing Environment in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Load balancing environment
-publishingplatform: ej2-asp-core-mvc
+control: Load Balancing Environment
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -13,7 +13,7 @@ documentation: ug
 
 The PDF Viewer server library allows you to achieve a Load balancing environment in the MVC framework using the .NET 4.5 framework with the help of **StackExchange Redis package V1.2.6**.
 
-N> We have considered the support from the .NET framework 4.5 version and it won’t work in the lower .NET framework version.
+>Note : We have considered the support from the .NET framework 4.5 version and it won’t work in the lower .NET framework version.
 
 ## Steps to achieve load balancing environment in the MVC framework
 
@@ -90,7 +90,7 @@ public void DeleteCache(string key)
 
 ```cs
 
-pdfviewer.CacheManager = new CacheManager(redisconnectonstring, slidingexpiration);
+ pdfviewer.CacheManager = new CacheManager(redisconnectonstring, slidingexpiration);
 
 {{'**Note: The sliding expiration is the time in which the data has to be stored in the cache for a specific minutes. If 0 then it will store for 24 hours.**'| markdownify }}
 
@@ -100,8 +100,8 @@ pdfviewer.CacheManager = new CacheManager(redisconnectonstring, slidingexpiratio
 
 ```cs
 
-PdfRenderer pdfviewer = new PdfRenderer();
-pdfviewer.CacheManager = new CacheManager(redisconnectonstring, 0);
+    PdfRenderer pdfviewer = new PdfRenderer();
+    pdfviewer.CacheManager = new CacheManager(redisconnectonstring, 0);
 
 ```
 
@@ -109,41 +109,41 @@ pdfviewer.CacheManager = new CacheManager(redisconnectonstring, 0);
 
 ```cs
 
-public string {{'**redisconnectonstring**' | markdownify }} = "xxxx, {{'**ssl=True,abortConnect=False,syncTimeout=100000**'| markdownify }}";
+  public string {{'**redisconnectonstring**' | markdownify }} = "xxxx, {{'**ssl=True,abortConnect=False,syncTimeout=100000**'| markdownify }}";
 
-[System.Web.Mvc.HttpPost]
-public object Load(Dictionary&lt;string, string&gt; jsonObject)
-{
-    PdfRenderer pdfviewer = new PdfRenderer();
-    MemoryStream stream = new MemoryStream();
-    object jsonResult = new object();
-    if (jsonObject != null && jsonObject.ContainsKey("document"))
+    [System.Web.Mvc.HttpPost]
+    public object Load(Dictionary&lt;string, string&gt; jsonObject)
     {
-        if (bool.Parse(jsonObject["isFileName"]))
+        PdfRenderer pdfviewer = new PdfRenderer();
+        MemoryStream stream = new MemoryStream();
+        object jsonResult = new object();
+        if (jsonObject != null && jsonObject.ContainsKey("document"))
         {
-            string documentPath = GetDocumentPath(jsonObject["document"]);
-            if (!string.IsNullOrEmpty(documentPath))
+            if (bool.Parse(jsonObject["isFileName"]))
             {
-                byte[] bytes = System.IO.File.ReadAllBytes(documentPath);
-                stream = new MemoryStream(bytes);
+                string documentPath = GetDocumentPath(jsonObject["document"]);
+                if (!string.IsNullOrEmpty(documentPath))
+                {
+                    byte[] bytes = System.IO.File.ReadAllBytes(documentPath);
+                    stream = new MemoryStream(bytes);
+                }
+                else
+                {
+                    return (jsonObject["document"] + " is not found");
+                }
             }
             else
             {
-                return (jsonObject["document"] + " is not found");
+                byte[] bytes = Convert.FromBase64String(jsonObject["document"]);
+                stream = new MemoryStream(bytes);
             }
         }
-        else
-        {
-            byte[] bytes = Convert.FromBase64String(jsonObject["document"]);
-            stream = new MemoryStream(bytes);
-        }
+        {{'**pdfviewer.CacheManager = new CacheManager(redisconnectonstring, 0);**'| markdownify }}
+        jsonResult = pdfviewer.Load(stream, jsonObject);
+        return (JsonConvert.SerializeObject(jsonResult));
     }
-    {{'**pdfviewer.CacheManager = new CacheManager(redisconnectonstring, 0);**'| markdownify }}
-    jsonResult = pdfviewer.Load(stream, jsonObject);
-    return (JsonConvert.SerializeObject(jsonResult));
-}
 
-{{'**Note: Add the bold lines in all the controller methods.**'| markdownify }}
+{{'**Note: Please add the bold lines in all the controller methods.**'| markdownify }}
 
 ```
 

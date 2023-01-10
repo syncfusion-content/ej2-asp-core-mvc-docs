@@ -108,4 +108,4 @@ The annotation comment and comment replies can be edited in the following ways:
 
 ![CommentEdit](../images/commentsdelete.png)
 
-N>The annotation will be deleted on deleting the comment using comment panel.
+>The annotation will be deleted on deleting the comment using comment panel.

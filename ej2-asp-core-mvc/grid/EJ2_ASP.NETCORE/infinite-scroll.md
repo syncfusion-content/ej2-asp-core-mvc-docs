@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Infinite Scroll in Syncfusion ASP.NET Core Grid Control | Syncfusion
+title: Infinite Scroll in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Infinite Scroll in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Infinite Scroll
@@ -15,7 +15,7 @@ Infinite scrolling is used to load a huge amount of data without degrading the G
 
 To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 
-N> * In this feature, Grid will not make a new data request when you visit the same page again.
+> * In this feature, Grid will not make a new data request when you visit the same page again.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

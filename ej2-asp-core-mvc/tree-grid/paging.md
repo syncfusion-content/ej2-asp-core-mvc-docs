@@ -38,7 +38,7 @@ Paging provides an option to display TreeGrid data in page segments. To enable p
 
 
 
-N> You can achieve better performance by using treegrid paging to fetch only a pre-defined number of records from the data source.
+> You can achieve better performance by using treegrid paging to fetch only a pre-defined number of records from the data source.
 
 ## Page Size Mode
 
@@ -165,7 +165,7 @@ By default, Pager will be rendered at the bottom of the TreeGrid. You can also r
 
 
 
-N> During the paging action, the pager component triggers the below three events.
-<br/> * The `created` event triggers when Pager is created.
-<br/> * The `click` event triggers when the numeric items in the pager is clicked.
-<br/> * The `dropDownChanged` event triggers when pageSize DropDownList value is selected.
+> During the paging action, the pager component triggers the below three events.
+> * The `created` event triggers when Pager is created.
+> * The `click` event triggers when the numeric items in the pager is clicked.
+> * The `dropDownChanged` event triggers when pageSize DropDownList value is selected.

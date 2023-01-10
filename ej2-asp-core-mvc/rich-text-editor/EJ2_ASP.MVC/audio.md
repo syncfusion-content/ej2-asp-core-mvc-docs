@@ -68,13 +68,7 @@ If the path field is not specified in the [InsertAudioSettings](https://help.syn
 
 ### Restrict audio upload based on size
 
-
-You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [FileUploading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event.
-
-N> The file size in the argument will be returned in `bytes`.
-
 Using the Rich Text Editor `FileUploading` event, you can restrict the audio to upload when the given audio size is greater than the allowed fileSize. Also, the audio size in the argument will be returned in `bytes`.
-
 
 In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
 
@@ -105,7 +99,7 @@ In the following illustration, the audio size has been validated before uploadin
 
 The selected audio can be uploaded to the required destination using the controller action below. Map this method name in [InsertAudioSettings.SaveUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorAudioSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorAudioSettings_SaveUrl) and provide the required destination path through [InsertAudioSettings.Path](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorAudioSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorAudioSettings_Path) properties.
 
-N> If you want to insert lower-sized audio files in the editor and don't want a specific physical location for saving audio, you can opt to save the format as `Base64`.
+> If you want to insert lower-sized audio files in the editor and don't want a specific physical location for saving audio, you can opt to save the format as `Base64`.
 
 In the following code blocks, you can insert the audio files which are saved in the specified path.
 
@@ -136,11 +130,7 @@ In the following code blocks, you can insert the audio files which are saved in 
 
 The audio files can be saved as `Blob` or `Base64` url by using the [InsertAudioSettings.SaveFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorAudioSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorAudioSettings_SaveFormat) property, which is of enum type and the generated url will be set to the `src` attribute of the `<source>` tag.
 
-
-N> The default `SaveFormat` property is set to `Blob` format.
-
 > By default, the files are saved in the `Blob` format.
-
 
 ```typescript
 
@@ -175,9 +165,6 @@ The following sample explains how to configure `InsertAudioSettings.RemoveUrl` t
 * Removing uploaded audio file from the insert audio dialog.
 * Deleting audio using the quick toolbar `audioRemove` option.
 
-
-N> The default `LayoutOption` property is set to `Inline`.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -204,7 +191,6 @@ N> The default `LayoutOption` property is set to `Inline`.
 ## Display Position
 
 Sets the default display for an audio when it is inserted in the Rich Text Editor using the `InsertAudioSettings.LayoutOption`. It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the audio elements’ layout position.
-
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -262,11 +248,7 @@ Refer `rename.cs` controller file for configure the server-side.
 
 The Rich Text Editor control allows you to add additional data with the File Upload, which can be received on the server side. By using the `FileUploading` event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
-
-N> By default, it doesn't support the `UseDefaultCredentials` property; we need to manually append the default credentials with the upload request.
-
 > By default it doesn't support `UseDefaultCredentials` property, we need to manually append the default credentials with the upload request.
-
 
 {% if page.publishingplatform == "aspnet-core" %}
 

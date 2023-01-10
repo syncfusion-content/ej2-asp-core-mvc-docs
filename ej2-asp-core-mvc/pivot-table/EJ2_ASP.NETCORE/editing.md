@@ -11,7 +11,7 @@ documentation: ug
 
 # Editing in Pivot Table Control
 
-N> This feature is applicable only for relational data source.
+> This feature is applicable only for relational data source.
 
 Cell edit allows to add, delete, or update the raw items of any value cell from the pivot table. The raw items can be viewed in a data grid inside a new window on double-clicking the appropriate value cell. In the data grid, CRUD operations can be performed by double-clicking the cells or using toolbar options. Once user finishes editing raw items, aggregation will be performed for the updated values in pivot table component immediately. This support can be enabled by setting the [`allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowEditing) property in [`e-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) tag to **true**.
 
@@ -36,7 +36,7 @@ The following are the supported edit types in the data grid:
 
 In normal edit mode, when user starts editing, the state of the currently selected row alone will be completely changed to edit state. User can change the cell values and save it to the data source by clicking "Update" toolbar button. To enable the normal edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`e-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) tag to [**Normal**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.EditMode.html).
 
-N> The normal edit mode is the default mode of editing..
+> The normal edit mode is the default mode of editing..
 
 {% if page.publishingplatform == "aspnet-core" %}
 

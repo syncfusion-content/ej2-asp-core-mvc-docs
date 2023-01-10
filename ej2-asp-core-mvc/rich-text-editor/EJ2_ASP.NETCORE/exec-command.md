@@ -43,4 +43,4 @@ In Rich Text Editor, execCommand used to perform commands for the modification o
 | insertText | Insert text to the current cursor position. | `rteObj.executeCommand('insertText', 'inserted a text');` |
 | insertImage | Insert an image to the current cursor position. | `rteObj.executeCommand('insertImage', { url: 'https://ej2.syncfusion.com/javascript/demos/src/rich-text-editor/images/RTEImage-Feather.png', cssClass: 'rte-img'});`
 
-N> The ‘ExecuteCommand’ public method is not supported in Syncfusion Markdown Editor
+> The ‘ExecuteCommand’ public method is not supported in Syncfusion Markdown Editor

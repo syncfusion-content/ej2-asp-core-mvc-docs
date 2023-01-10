@@ -16,14 +16,14 @@ The magnification tools of the PDF Viewer contains ZoomIn, ZoomOut, Zoom, FitPag
 The following code snippet describes how to enable the magnification in PDF Viewer.
 
 ```html
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
-                   enableMagnification="true">
-    </ejs-pdfviewer>
-</div>
+    <div style="width:100%;height:600px">
+        <ejs-pdfviewer id="pdfviewer"
+                style="height:600px"
+                serviceUrl="/api/PdfViewer"
+                documentPath=@ViewBag.DocumentPath
+                enableMagnification="true">
+        </ejs-pdfviewer>
+    </div>
 ```
 
 The following magnification options are available in the default toolbar of PDF Viewer,
@@ -37,7 +37,7 @@ The following magnification options are available in the default toolbar of PDF 
 
 ![Alt text ](./images/zoom.png)
 
-N>PDF Viewer can support the zoom value ranges from 50 to 400.
+>PDF Viewer can support the zoom value ranges from 50 to 400.
 
 ## See also
 

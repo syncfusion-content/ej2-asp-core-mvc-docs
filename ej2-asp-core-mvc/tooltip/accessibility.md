@@ -34,9 +34,9 @@ The following are the standard keys that work on Tooltip.
 | Tab | A form control receiving focus (say through tab key), opens the Tooltip, and on focus out closes it. |
 | Escape | Closes or dismisses the Tooltip. |
 
-N> 1. When the Tooltip is being displayed on the target element, focus continues to stay on it.
-<br/> 2. If the Tooltip opens on mouse entering into the target element space, then it should be dismissed only when the mouse leaves that target.
-<br/> 3. If the Tooltip opens on the target element that receives focus, then it should be closed only when the focus moves out of that target element.
+> 1. When the Tooltip is being displayed on the target element, focus continues to stay on it.
+> 2. If the Tooltip opens on mouse entering into the target element space, then it should be dismissed only when the mouse leaves that target.
+> 3. If the Tooltip opens on the target element that receives focus, then it should be closed only when the focus moves out of that target element.
  Likewise, if the Tooltip opens on a click, then it should be closed only on another click action.
 
 In the following preview sample, focusing the input element through `tab` key opens the Tooltip and  pressing the `esc` key closes it.

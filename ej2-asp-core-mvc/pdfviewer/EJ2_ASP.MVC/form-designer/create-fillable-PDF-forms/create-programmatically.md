@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Create Programmatically in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about Create Programmatically in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Create Programmatically in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Create Programmatically in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Programmatically
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Create form fields programmatically
+# Create Programmatically
 
 The PDF Viewer control provides the option to add, edit and delete the Form Fields. The Form Fields type supported by the PDF Viewer Control are:
 
@@ -133,202 +133,12 @@ Add the following code snippet to validate the form fields,
 
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).ValidateFormFields("validateFormFields").EnableFormFieldsValidation(true).DocumentPath("FormFilling_Signature.pdf").Render()
+@Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).ValidateFormFields("validateFormFields").EnableFormFieldsValidation(true).DocumentPath("FormFilling_Signature.pdf").Render()
 </div>
 <script>
-    function validateFormFields(args) {
-        var nonfilledFormFields = args.nonFillableFields;
-    }
-</script>
-
-```
-
-## Export and import form fields
-
-The PDF Viewer control provides the support to export and import the form field data in the following formats using the `importFormFields`, `exportFormFields`, and `exportFormFieldsAsObject` methods.
-
-* FDF
-* XFDF
-* JSON
-
-### Export and import as FDF
-
-Using the `exportFormFields` method, the form field data can be exported in the specified data format. This method accepts two parameters:
-
-* The first one must be the destination path for the exported data. If the path is not specified, it will ask for the location while exporting.
-* The second parameter should be the format type of the form data.
-
-The following code explains how to export the form field data as FDF.
-
-```html
-
-<button id="exportFdf" onclick="exportFdf()">Export FDF</button>
-<button id="importFdf" onclick="importFdf()">Import FDF</button>
-
-<div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
-</div>
-
-<script>
-    // Event triggers on Export FDF button click.
-    function exportFdf() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        // Data must be the desired path for the exported document.
-        viewer.exportFormFields('Data', FormFieldDataFormat.Fdf);
-    }
-
-    // Event triggers on Import FDF button click.
-    function importFdf() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly.
-        viewer.importFormFields('File', FormFieldDataFormat.Fdf);
-    }
-</script>
-
-```
-
-### Export and import as XFDF
-
-The following code explains how to export the form field data as XFDF.
-
-```html
-<button id="exportXfdf" onclick="exportXfdf()">Export XFDF</button>
-<button id="importXfdf" onclick="importXfdf()">Import XFDF</button>
-
-<div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
-</div>
-
-<script>
-    // Event triggers on Export XFDF button click.
-    function exportXfdf() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        // Data must be the desired path for the exported document.
-        viewer.exportFormFields('Data', FormFieldDataFormat.Xfdf);
-    }
-
-    // Event triggers on Import XFDF button click.
-    function importXfdf() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly.
-        viewer.importFormFields('File', FormFieldDataFormat.Xfdf);
-    }
-</script>
-```
-
-### Export and import as JSON
-
-The following code explains how to export the form field data as JSON.
-
-```html
-
-<button id="exportJson" onclick="exportJson()">Export JSON</button>
-<button id="importJson" onclick="importJson()">Import JSON</button>
-
-<div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
-</div>
-
-<script>
-    // Event triggers on Export JSON button click.
-    function exportJson() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        // Data must be the desired path for the exported document.
-        viewer.exportFormFields('Data', FormFieldDataFormat.Json);
-    }
-
-    // Event triggers on Import JSON button click.
-    function importJson() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly.
-        viewer.importFormFields('File', FormFieldDataFormat.Json);
-    }
-</script>
-```
-
-### Export and import as Object
-
-The PDF Viewer control supports exporting the form field data as an object, and the exported data will be imported into the current PDF document from the object.
-
-The following code shows how to export the form field data as an object and import the form field data from that object into the current PDF document via a button click.
-
-```html
-<button id="exportDataAsObject" onclick="exportDataAsObject()">Export Object</button>
-<button id="importData" onclick="importData()">Import Data</button>
-
-<div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
-</div>
-
-<script>
-    var exportedData;
-
-    // Event triggers on Export Object button click.
-    function exportDataAsObject() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-
-        // Export the form field data to an FDF object.
-        viewer.exportFormFieldsAsObject(FormFieldDataFormat.Fdf).then(value => {
-            exportedData = value;
-        })
-
-        //// Export the form field data to an XFDF object.
-        //viewer.exportFormFieldsAsObject(FormFieldDataFormat.Xfdf).then(value => {
-        //    exportedData = value;
-        //})
-
-        //// Export the form field data to an JSON object.
-        //viewer.exportFormFieldsAsObject(FormFieldDataFormat.Json).then(value => {
-        //    exportedData = value;
-        //})
-    }
-
-    // Event triggers on Import Data button click.
-    function importData() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-
-        // Import the form field data from the FDF object into the current PDF document.
-        viewer.importFormFields(exportedData, FormFieldDataFormat.Fdf);
-
-        //// Import the form field data from the XFDF object into the current PDF document.
-        //viewer.importFormFields (exportedData, FormFieldDataFormat.Xfdf);
-
-        //// Import the form field data from the FDF object into the current PDF document.
-        //viewer.importFormFields (exportedData, FormFieldDataFormat.Json);
-    }
-</script>
-```
-
-## Signature and initial fields settings
-
-Using the `updateFormField` method, the form fields can be updated programmatically.
-
-The following code example explains how to update the signature field properties on a button click.
-
-```html
-
-<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
-
-<div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
-</div>
-
-<script>
-
-    // Event triggers on Update Properties button click.
-    function updateProperties() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        var formField = viewer.retrieveFormFields();
-        viewer.formDesignerModule.updateFormField(formField[0], {
-            name: 'Initial',
-            isReadOnly: true,
-            visibility: 'visible',
-            isRequired: false,
-            isPrint: true,
-            tooltip: 'Initial',
-            thickness: 4
-        });
-    }
+function validateFormFields(args) {
+    var nonfilledFormFields = args.nonFillableFields;
+}
 </script>
 
 ```

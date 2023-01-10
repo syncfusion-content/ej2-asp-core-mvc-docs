@@ -21,7 +21,7 @@ The AutoComplete also supports different kind of data services such as OData, OD
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
-N>While binding complex data to AutoComplete, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+>While binding complex data to AutoComplete, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Bind to local data
 

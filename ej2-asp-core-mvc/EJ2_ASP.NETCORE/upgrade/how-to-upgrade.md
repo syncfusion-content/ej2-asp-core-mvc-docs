@@ -33,4 +33,4 @@ To upgrade from trial version, there are two possible solutions.
 * If you are using Syncfusion controls from [nuget.org](https://www.nuget.org/packages?q=syncfusion), replace the currently used trial license key with a paid license key that can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of the website. Refer to [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application) topic for more information regarding registering the license in the application.
 
 N> Starting with 2022 Volume 1 v20.1.0.47, all Syncfusion customers (evaluators and paid customers) who use Syncfusion installers or nuget packages from [nuget.org](https://www.nuget.org/packages?q=Syncfusion) must generate and register the corresponding platform and version license key in your projects.<br>
-For more information, see [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/overview) help topic.
+For more information, please see [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/overview) help topic.

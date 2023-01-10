@@ -68,4 +68,4 @@ The `animate` method of `Animation` library can be used to animate the HTML elem
 
 ![animate the HTML element](images/animation.gif)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-animation)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-animation)

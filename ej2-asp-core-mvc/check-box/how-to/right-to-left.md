@@ -35,4 +35,4 @@ CheckBox component has RTL support. This can be achieved by setting [enableRtl](
 
 ![CheckBox with Right to Left view](../images/checkbox-right-to-left.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CheckBox/CheckBoxUGSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CheckBox/CheckBoxUGSample).

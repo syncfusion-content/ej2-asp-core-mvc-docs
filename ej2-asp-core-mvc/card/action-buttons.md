@@ -60,7 +60,7 @@ By default, action buttons positioned in horizontal alignment, and also it can b
 
 ![CSS Card Control with action buttons](./images/card-action.PNG)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).
 
 ## See also
 

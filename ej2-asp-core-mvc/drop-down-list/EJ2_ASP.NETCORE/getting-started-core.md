@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started
 
-N> Starting with v16.2.0.x, if you refer Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET CORE application to use our components.
+> Starting with v16.2.0.x, if you refer Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET CORE application to use our components.
 
 This section briefly explains how to include simple DropDownList control in your ASP.NET Core application. You can refer to [ASP.NET Core Getting Started documentation](../getting-started/) page for system requirements, and configure common specifications.
 
@@ -44,7 +44,7 @@ DropDownList control can be rendered by using the `ejs-dropdownlist` tag helper 
 
 
 
-N> Running the above code will display the basic DropDownList on the browser.
+> Running the above code will display the basic DropDownList on the browser.
 
 ## Binding data source
 

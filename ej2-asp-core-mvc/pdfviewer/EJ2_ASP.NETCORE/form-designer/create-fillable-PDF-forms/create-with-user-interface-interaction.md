@@ -1,15 +1,15 @@
 ---
 layout: post
-title: User Interface Interaction in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
-description: Learn here all about User Interface Interaction in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Create With User Interface Interaction in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Create With User Interface Interaction in Syncfusion ##Platform_Name## Pdfviewer component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Create With User Interface Interaction
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Create form fields with UI interaction
+# Create with UI Interaction
 
 The PDF viewer control provides the option for interaction with Form Fields such as Drag and resize. you can draw a Form Field dynamically by clicking the Form Field icon on the toolbar and draw it in the PDF document. The Form Fields type supported by the PDF Viewer Control are:
 
@@ -27,14 +27,14 @@ The PDF viewer control provides the option for interaction with Form Fields such
 We should inject FormDesigner module and set enableFormDesignerToolbar as true to enable the Form designer icon on the toolbar. By default, enableFormDesignerToolbar is set as true. Use the following code to inject FormDesigner module and to enable the enableFormDesignerToolbar property.
 
 ```html
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath="FormDesigner.pdf"
-                   enableFormDesignerToolbar="true">
-    </ejs-pdfviewer>
-</div>
+    <div style="width:100%;height:600px">
+        <ejs-pdfviewer id="pdfviewer"
+                style="height:600px"
+                serviceUrl="/api/PdfViewer"
+                documentPath="FormDesigner.pdf"
+                enableFormDesignerToolbar="true">
+        </ejs-pdfviewer>
+    </div>
 ```
 
 ## Add the form field dynamically
@@ -76,24 +76,24 @@ The PDF Viewer control supports the clipboard operations such as cut, copy and p
 We provided support to undo/redo the Form Field actions that are performed at runtime. Use the following code example to perform undo/redo actions.
 
 ```html
-<button id="undo">Undo</button>
-<button id="redo">Redo</button>
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath="FormDesigner.pdf"
-                   enableFormDesignerToolbar="true">
-    </ejs-pdfviewer>
-</div>
-<script>
-    document.getElementById('undo').addEventListener('click', function () {
-        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
-        pdfviewer.undo();
-    });
-    document.getElementById('redo').addEventListener('click', function () {
-        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
-        pdfviewer.redo();
-    });
-</script>
+    <button id="undo">Undo</button>
+    <button id="redo">Redo</button>
+    <div style="width:100%;height:600px">
+        <ejs-pdfviewer id="pdfviewer"
+                style="height:600px"
+                serviceUrl="/api/PdfViewer"
+                documentPath="FormDesigner.pdf"
+                enableFormDesignerToolbar="true">
+        </ejs-pdfviewer>
+    </div>
+    <script>
+        document.getElementById('undo').addEventListener('click', function() {
+            var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+            pdfviewer.undo();
+        });
+         document.getElementById('redo').addEventListener('click', function() {
+             var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+            pdfviewer.redo();
+        });
+    </script>
 ```

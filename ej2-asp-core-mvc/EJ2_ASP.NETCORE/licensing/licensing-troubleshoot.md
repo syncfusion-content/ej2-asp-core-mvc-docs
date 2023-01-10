@@ -24,7 +24,7 @@ To upgrade from trial version, there are two possible solutions.
 
 * If you are using Syncfusion controls from [nuget.org](https:/www.nuget.org/packages?q=syncfusion), replace the currently used trial license key with a paid license key that can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of our website. Refer to [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application) topic for more information regarding registering the license in the application.
 
-N> License registration is not required if you reference Syncfusion assemblies from Licensed installer. These licensing changes applicable to all evaluators who refers the Syncfusion assemblies from evaluation installer and those who use Syncfusion NuGet packages from [nuget.org](https://www.nuget.org/).
+> License registration is not required if you reference Syncfusion assemblies from Licensed installer. These licensing changes applicable to all evaluators who refers the Syncfusion assemblies from evaluation installer and those who use Syncfusion NuGet packages from [nuget.org](https://www.nuget.org/).
 
 ## Where can I get a license key
 
@@ -32,8 +32,8 @@ License keys can be generated from the [License & Downloads](https://syncfusion.
 
 ![Get Community License Key](images/get-community-license-key.png)
 
-N> Syncfusion license keys are **version and platform specific**. Refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
-<br/> Refer to this [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion license key should be used in the application.
+> Syncfusion license keys are **version and platform specific**. Refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
+> Refer to this [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion license key should be used in the application.
 
 ## Registering Syncfusion account for direct NuGet.org user
 
@@ -47,7 +47,7 @@ If you have directly obtained Syncfusion assemblies from [NuGet.org](http://nuge
 
 If you are using [Syncfusion JavaScript Components](https://ej2.syncfusion.com/home/) in application, then you have to register license for ASP.NET Core in `Program.cs` and for JavaScript components register license in `_Layout.cshtml` as follows,
 
-N>  From 2022 Vol 1 (v20.1) only the license key registration required for Syncfusion Javascript Components.
+>  From 2022 Vol 1 (v20.1) only the license key registration required for Syncfusion Javascript Components.
 
 {% tabs %}
 {% highlight c# tabtitle="Program.cs" %}

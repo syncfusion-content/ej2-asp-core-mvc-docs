@@ -130,4 +130,4 @@ To use the PDF export functionality, we should set the [`AllowPdfExport`](https:
 
 
 
-N> The exporting of the circular gauge as base64 string is not supported in the PDF export.
+> The exporting of the circular gauge as base64 string is not supported in the PDF export.

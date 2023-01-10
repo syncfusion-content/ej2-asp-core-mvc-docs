@@ -25,7 +25,7 @@ You can change the Essential JS 2 component spinner type by passing the type of 
 setSpinner({ type: 'Bootstrap'});
 ```
 
-N> After Essential JS 2 component creation only, you can change the Essential JS 2 component spinner type.
+> After Essential JS 2 component creation only, you can change the Essential JS 2 component spinner type.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

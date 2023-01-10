@@ -42,7 +42,7 @@ The following example illustrates how to place icon in SplitButton component.
 
 
 
-N> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
+> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
 
 You can also use third party icons on the SplitButton using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.SplitButton.html#Syncfusion_EJ2_SplitButtons_SplitButton_IconCss) property.
 

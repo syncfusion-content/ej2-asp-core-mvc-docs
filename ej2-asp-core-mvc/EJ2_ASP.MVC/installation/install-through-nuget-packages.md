@@ -14,7 +14,7 @@ documentation: ug
 
 **NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET MVC JS2  NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22AspNet.MVC%20EJ2%22+syncfusion). The Syncfusion ASP.NET MVC JS2 NuGet packages can be used without installing the Syncfusion setup by Syncfusion Installer. You can simply exploit the Syncfusion ASP.NET MVC JS2 NuGet packages in ASP.NET MVC application to develop with the Syncfusion ASP.NET MVC JS2 components.
 
-N> The Syncfusion.EJ2.MVC5 NuGet package, which contains all Syncfusion ASP.NET MVC JS2 components in a single package, is available beginning with v16.1.0.24 (Essential Studio 2018 Volume 1).
+> The Syncfusion.EJ2.MVC5 NuGet package, which contains all Syncfusion ASP.NET MVC JS2 components in a single package, is available beginning with v16.1.0.24 (Essential Studio 2018 Volume 1).
 
 ## Installation using Package Manager UI
 
@@ -36,7 +36,7 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
 2. The Manage NuGet Packages window will open. Navigate to the **Browse** tab, then search for the Syncfusion ASP.NET MVC JS2 NuGet packages using a term like **"Syncfusion.EJ2.MVC5"** and select the appropriate Syncfusion ASP.NET MVC NuGet package for your development.
 
-    N> The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
+    > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
 
     ![ASP.NET MVC NuGet Packages Search](images/NuGetSearch.png)
 
@@ -66,7 +66,7 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
     **For example:** Install-Package Syncfusion.EJ2.MVC5
 
-    N> You can find the list of Syncfusion ASP.NET MVC JS2 NuGet packages which are published in nuget.org from [here](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Mvc%20EJ2%22+syncfusion)
+    > You can find the list of Syncfusion ASP.NET MVC JS2 NuGet packages which are published in nuget.org from [here](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Mvc%20EJ2%22+syncfusion)
 
     ***Install specified Syncfusion ASP.NET MVC JS2 NuGet package in specified ASP.NET MVC application***
 

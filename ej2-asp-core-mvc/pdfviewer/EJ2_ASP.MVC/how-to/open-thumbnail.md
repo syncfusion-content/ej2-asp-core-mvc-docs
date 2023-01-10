@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Open Thumbnail in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about Open Thumbnail in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Open Thumbnail in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Open Thumbnail in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open Thumbnail
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -23,11 +23,11 @@ The following steps are used to open the thumbnail.
 <button type="button" onclick="openThumbnail()">Open Thumbnail Pane</button>
 
 <script>
-    function openThumbnail() {
-        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-        // Open Thumbnail Pane.
-        viewer.thumbnailViewModule.openThumbnailPane();
-    }
+function openThumbnail() {
+    var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+    // Open Thumbnail Pane.
+    viewer.thumbnailViewModule.openThumbnailPane();
+}
 </script>
 ```
 

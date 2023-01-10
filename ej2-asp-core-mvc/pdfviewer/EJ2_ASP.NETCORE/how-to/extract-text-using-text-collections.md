@@ -20,7 +20,7 @@ For Linux and OSX operating systems, use the corresponding libraries as follows:
 * Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
 * Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX
 
-N>From Volume 2 2019 release Syncfusion.Pdf.Net.Core and Syncfusion.Compression.Net.Core packages are added as dependency for PDF Viewer control. Ensure the dependency packages are referred in your application properly.
+>From Volume 2 2019 release Syncfusion.Pdf.Net.Core and Syncfusion.Compression.Net.Core packages are added as dependency for PDF Viewer control. Ensure the dependency packages are referred in your application properly.
 
 The following code snippet explains how to extract the text from a page using TextLineCollection.
 
@@ -40,4 +40,4 @@ var text = page.ExtractText(out TextLineCollection textLineCollection);
 
 Find the sample [How to extract text using TextLineCollection](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EXTRAC~21056703041)
 
-N>Ensure the provided document path and output text saved locations in your application level.
+>Ensure the provided document path and output text saved locations in your application level.

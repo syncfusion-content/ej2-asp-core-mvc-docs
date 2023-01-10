@@ -11,4 +11,5 @@
     document.getElementById('InsertEndnote').addEventListener('click', function () {
         documenteditor.editor.insertEndnote();
     });
+
 </script>

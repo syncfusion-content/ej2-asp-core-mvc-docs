@@ -40,4 +40,4 @@ The following sample demonstrates, how to expand the collapsed Accordion item af
 
 ![Customize Accordion expand or collapse animation behavior](../images/actions.PNG)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Accordion/AccordionUGSamples).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Accordion/AccordionUGSamples).

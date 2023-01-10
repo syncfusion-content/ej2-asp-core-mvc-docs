@@ -1,15 +1,4 @@
----
-layout: post
-title: Indent and Outdent in Syncfusion ##Platform_Name## Gantt Component
-description: Learn here all about Indent and Outdent in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
-control: Managing Tasks
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-
-# Indent and Outdent in Gantt
+# Indent and Outdent
 
 Indent and Outdent of a task are used to update the level of the task in hierarchical order of the task. It can be performed bu enabling the [`editSettings.allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettingsBuilder.html#Syncfusion_EJ2_Gantt_GanttEditSettingsBuilder_AllowEditing_System_Boolean_) property.
 
@@ -39,3 +28,38 @@ Indent and Outdent of a task are used to update the level of the task in hierarc
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+
+## Read-only Gantt
+
+In Gantt, all create, update, delete operations can be disabled by set `readOnly` property as `true`. The following sample demonstrates, render Gantt chart as read only.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/readOnly/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ReadOnly.cs" %}
+{% include code-snippet/gantt/editing/readOnly/readOnly.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/readOnly/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ReadOnly.cs" %}
+{% include code-snippet/gantt/editing/readOnly/readOnly.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/readOnly.PNG)
+
+![Alt text](images/readOnlyEdit.png)

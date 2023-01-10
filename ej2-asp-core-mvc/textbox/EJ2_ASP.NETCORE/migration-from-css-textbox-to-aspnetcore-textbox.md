@@ -11,7 +11,7 @@ documentation: ug
 
 # ASP.NET Core textbox control
 
-N> From v16.3.21 version, the textbox is provided as ASP.NET Core control to achieve the floating label textbox with minimal code. You can find the available textbox properties, methods, and events in the [API reference](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html).
+> From v16.3.21 version, the textbox is provided as ASP.NET Core control to achieve the floating label textbox with minimal code. You can find the available textbox properties, methods, and events in the [API reference](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html).
 
 The following table describes the migration from CSS textbox to ASP.NET Core textbox control.
 

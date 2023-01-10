@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Diagram Control
+title: Getting Started with ##Platform_Name## Diagram Control
 description: Checkout and learn about getting started with ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -26,7 +26,7 @@ his section briefly explains about how to include [ASP.NET Core Diagram](https:/
 
 Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
@@ -213,6 +213,7 @@ In the 'Flow Diagram' section, how to create a diagram manually was discussed. T
 Define Employee Information as JSON data. The following code example shows an employee array whose, `Name` is used as an unique identifier and `ReportingPerson` is used to identify the person to whom an employee report to, in the organization.
 
 ```cs
+
     public data: Object[] = [
         {
             Name: "Elizabeth",
@@ -249,6 +250,7 @@ Define Employee Information as JSON data. The following code example shows an em
             Role: "Lead"
         }
     ];
+
 ```
 
 ## Map data source
@@ -306,6 +308,7 @@ You can configure the above "Employee Information" with diagram, so that the nod
 
         }
     }
+
 ```
 
 ## Visualize employee
@@ -337,4 +340,4 @@ The following code examples indicates how to define the default appearance of no
 
 
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Diagram/ASP.NET%20Core%20Tag%20Helper%20Examples).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Diagram/ASP.NET%20Core%20Tag%20Helper%20Examples).

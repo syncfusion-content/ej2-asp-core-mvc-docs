@@ -46,8 +46,8 @@ The following screenshot shows the output of multicolumn sorting in Gantt contro
 
 ![Alt text](images/multiSorting.png)
 
-N> * Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-<br/> * To disable sorting for a particular column, set the [`Columns.AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowSorting) property to false.
+> * Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+> * To disable sorting for a particular column, set the [`Columns.AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowSorting) property to false.
 
 ## Sorting column on Gantt initialization
 
@@ -173,7 +173,7 @@ During the sort action, the Gantt control triggers two events. The [`ActionBegin
 
 
 
-N> The `args.requestType` is the current action name. For example, for sorting the `args.requestType`, value is **sorting**.
+> The `args.requestType` is the current action name. For example, for sorting the `args.requestType`, value is **sorting**.
 
 ## Sorting Custom Columns
 

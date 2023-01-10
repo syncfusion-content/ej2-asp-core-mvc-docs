@@ -100,7 +100,7 @@ In the following sample, three-level nesting of menu has been provided.
 
 
 
-N> You can achieve multi level nesting with data source by mapping `name` of the child items to the `children` sub-property of [`fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~Fields.html) property. For more information, refer to the [`data source binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
+> You can achieve multi level nesting with data source by mapping `name` of the child items to the `children` sub-property of [`fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~Fields.html) property. For more information, refer to the [`data source binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
 
 The below table represents the MenuItem properties and it's description.
 

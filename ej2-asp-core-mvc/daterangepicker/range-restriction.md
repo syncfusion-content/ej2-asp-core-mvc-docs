@@ -44,7 +44,7 @@ You can restrict the minimum and maximum date that can be allowed as start and e
 
 
 
-N> If the value of `min` or `max` property is changed through code behind, update the `start date` and `end date` properties to set within the range. Or else , if the `start` and `end` date is out of specified date range, a validation error class will be appended to the input element. If `strictMode` is enabled, and both the start, end date is lesser than the min date then start and end date will be updated with `min` date. If both the start and end date is higher than the max date then start and end date will be updated with `max` date. Or else, if startDate is less than `min` date, startDate will be updated with `min` date or if endDate is greater than `max` date, endDate will be updated with the `max` date.
+> If the value of `min` or `max` property is changed through code behind, update the `start date` and `end date` properties to set within the range. Or else , if the `start` and `end` date is out of specified date range, a validation error class will be appended to the input element. If `strictMode` is enabled, and both the start, end date is lesser than the min date then start and end date will be updated with `min` date. If both the start and end date is higher than the max date then start and end date will be updated with `max` date. Or else, if startDate is less than `min` date, startDate will be updated with `min` date or if endDate is greater than `max` date, endDate will be updated with the `max` date.
 
 ## Range span
 

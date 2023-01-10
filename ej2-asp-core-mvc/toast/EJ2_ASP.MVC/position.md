@@ -26,8 +26,8 @@ The toast position can be updated based on predefined positions or customizable 
 * Top
 * Bottom
 
-N> In multiple toast display, the new toast position will not be updated on dynamic change of property values until the old toast messages removed.
-<br/> The toast occupies full width when you set the width to '100%', so the X positions will not affect the changes when the width is '100%'.
+> In multiple toast display, the new toast position will not be updated on dynamic change of property values until the old toast messages removed.
+> The toast occupies full width when you set the width to '100%', so the X positions will not affect the changes when the width is '100%'.
 
 ## Custom
 

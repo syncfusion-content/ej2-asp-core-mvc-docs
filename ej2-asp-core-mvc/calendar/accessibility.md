@@ -53,7 +53,7 @@ It supports the following list of shortcut keys:
 | <kbd>Control + Home</kbd>  | Focuses the first date of the current year. |
 | <kbd>Control + End</kbd>  | Focuses the last date of the current year. |
 
-N> To focus the Calendar control, use `alt+t` keys.
+> To focus the Calendar control, use `alt+t` keys.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -75,4 +75,4 @@ N> To focus the Calendar control, use `alt+t` keys.
 {% endtabs %}
 {% endif %}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarUGSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarUGSample).

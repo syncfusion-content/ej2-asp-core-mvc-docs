@@ -11,9 +11,9 @@ documentation: ug
 
 # Data Binding in Spreadsheet Control
 
-The Spreadsheet uses `DataManager`, which supports both RESTful JSON data services and local JavaScript object array binding to a range. The `dataSource` property can be assigned either with the instance of `DataManager` or JavaScript object array collection.
+The Spreadsheet uses [`DataManager`](../data), which supports both RESTful JSON data services and local JavaScript object array binding to a range. The `dataSource` property can be assigned either with the instance of [`DataManager`](../data) or JavaScript object array collection.
 
-N> To bind data to a cell, use `cell data binding` support.
+> To bind data to a cell, use `cell data binding` support.
 
 ## Local data
 
@@ -46,12 +46,11 @@ Refer to the following code example for local data binding.
 
 
 
-
-N> The local data source can also be provided as an instance of the [`DataManager`](../data). By default, [`DataManager`](../data) uses [`JsonAdaptor`](../data/adaptors/#json-adaptor) for local data-binding.
+> The local data source can also be provided as an instance of the [`DataManager`](../data). By default, [`DataManager`](../data) uses [`JsonAdaptor`](../data/adaptors/#json-adaptor) for local data-binding.
 
 ## Remote data
 
-To bind remote data to the Spreadsheet control, assign service data as an instance of `DataManager` to the `dataSource` property. To interact with remote data source, provide the service endpoint `url`.
+To bind remote data to the Spreadsheet control, assign service data as an instance of [`DataManager`](../data) to the `dataSource` property. To interact with remote data source, provide the service endpoint `url`.
 
 Refer to the following code example for remote data binding.
 
@@ -80,7 +79,7 @@ Refer to the following code example for remote data binding.
 
 
 
-N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
+> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 
 ### Binding with OData services
 
@@ -171,7 +170,7 @@ Refer to the following code example for cell data binding.
 
 
 
-N> The cell data binding also supports formula, style, number format, and more.
+> The cell data binding also supports formula, style, number format, and more.
 
 ## Dynamic data binding and Datasource change event
 
@@ -186,8 +185,8 @@ The following table defines the arguments of the `dataSourceChanged` event.
 | rangeIndex | number | Specifies the range index of the datasource. |
 | sheetIndex | number | Specifies the sheet index of the datasource. |
 
-N> For `add` action, the value for all the fields will be `null` in the data. In the case that you do not want the primary key field to be null which needs to be updated in the backend service, you can use `edit` action after updating the primary key field to update in the backend service. <br><br>
-<br/> For inserting a row at the end of the datasource range, you should insert a row below at the end of the range to trigger the `dataSourceChanged` event with action `add`.
+> For `add` action, the value for all the fields will be `null` in the data. In the case that you do not want the primary key field to be null which needs to be updated in the backend service, you can use `edit` action after updating the primary key field to update in the backend service. <br><br>
+> For inserting a row at the end of the datasource range, you should insert a row below at the end of the range to trigger the `dataSourceChanged` event with action `add`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

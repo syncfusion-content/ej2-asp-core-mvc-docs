@@ -1,3 +1,0 @@
-@using Syncfusion.EJ2.Notifications
-
-@Html.EJS().Skeleton("skeleton").Shape(SkeletonType.Circle).Width("60px").Visible(false).Render()

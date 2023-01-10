@@ -117,4 +117,4 @@ The available modes of grid lines are:
 
 
 
-N>By default, the grid renders with **Default** mode.
+>By default, the grid renders with **Default** mode.

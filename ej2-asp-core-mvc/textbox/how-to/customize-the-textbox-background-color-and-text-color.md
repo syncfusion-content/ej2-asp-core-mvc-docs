@@ -13,7 +13,7 @@ documentation: ug
 
 You can customize the textbox styles such as background-color, text-color and border-color by overriding its default styles.
 
-N> To change the styles of the `floating label`, you must override the style to the input element.
+> To change the styles of the `floating label`, you must override the style to the input element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

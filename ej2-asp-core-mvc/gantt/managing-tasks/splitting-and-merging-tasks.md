@@ -1,14 +1,3 @@
----
-layout: post
-title: Splitting and merging task in Syncfusion ##Platform_Name## Gantt Component
-description: Learn here all about Splitting and merging task in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
-control: Managing Tasks
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-
 # Splitting and Merging tasks
 
 ## Splitting task at load time

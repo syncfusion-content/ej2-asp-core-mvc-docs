@@ -37,4 +37,4 @@ The [`RowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 
 
-N> The [`RowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowTemplate) property accepts only the TR element.
+> The [`RowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowTemplate) property accepts only the TR element.

@@ -15,7 +15,7 @@ PDF export allows exporting Gantt data to PDF document. You need to use the `pdf
 
 To export data to PDF document, inject the `PdfExport` module in Gantt.
 
-N> Currently, we don't have support for exporting the manually scheduled tasks.
+> Currently, we don't have support for exporting the manually scheduled tasks.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

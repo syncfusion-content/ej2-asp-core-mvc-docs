@@ -17,7 +17,7 @@ There are two types of constraints:
 1. Column
 2. Swimlane
 
-N> By default, the column count validation is performed based on Kanban **Columns**.
+> By default, the column count validation is performed based on Kanban **Columns**.
 
 ## Minimum card limit
 

@@ -11,9 +11,9 @@ documentation: ug
 
 # Selection in Spreadsheet Control
 
-Selection provides interactive support to highlight the cell, row, or column that you select. Selection can be done through Mouse, Touch, or Keyboard interaction. To enable selection, set `mode` as `Single` or `Multiple` in [`selectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SelectionSettings). If you set `mode` to `None`, it disables the UI selection.
+Selection provides interactive support to highlight the cell, row, or column that you select. Selection can be done through Mouse, Touch, or Keyboard interaction. To enable selection, set `mode` as `Single` or `Multiple` in [`selectionSettings`](../api/spreadsheet/#selectionsettings). If you set `mode` to `None`, it disables the UI selection.
 
-N> The default value for `mode` in  `selectionSettings` is `Multiple`.
+> The default value for `mode` in  `selectionSettings` is `Multiple`.
 
 You have the following options in Selection,
 
@@ -23,7 +23,7 @@ You have the following options in Selection,
 
 ## Cell selection
 
-Cell selection is used to select a single or multiple cells. It can be performed using the `selectRange` method.
+Cell selection is used to select a single or multiple cells. It can be performed using the [`selectRange`](../api/spreadsheet/#selectRange) method.
 
 **User Interface**:
 
@@ -115,7 +115,7 @@ The following sample shows the column selection in the spreadsheet, here selecti
 
 ## How to remove selection in the spreadsheet
 
-The following sample shows, how to remove the selection in the spreadsheet. Here changing the `mode` as `None` in [`selectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SelectionSettings) to disable's the UI selection.
+The following sample shows, how to remove the selection in the spreadsheet. Here changing the `mode` as `None` in [`selectionSettings`](../api/spreadsheet/#selectionsettings) to disable's the UI selection.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

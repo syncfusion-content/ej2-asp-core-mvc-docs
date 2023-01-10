@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu in Syncfusion ##Platform_Name## Diagram Component
+title: Context Menu in ##Platform_Name## Diagram Component
 description: Learn here all about Context Menu in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Context Menu
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Context Menu in Diagram
+# Context Menu
 
 <!-- markdownlint-disable MD010 -->
 
@@ -145,13 +145,15 @@ function contextMenuOpen() {
                 }
             }
     }
+
 function contextMenuClick() {
     if (args.item.id === 'delete') {
-        var diagram = document.getElementById("container").ej2_instances[0];
-        if ((diagram.selectedItems.nodes.length + diagram.selectedItems.connectors.length) > 0) {
-            diagram.cut();
-        }
-    }
+                var diagram = document.getElementById("container").ej2_instances[0];
+                if ((diagram.selectedItems.nodes.length + diagram.selectedItems.connectors.length) > 0) {
+                    diagram.cut();
+                }
+            }
+
 }
 
 ```

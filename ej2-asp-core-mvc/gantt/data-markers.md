@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Markers in ##Platform_Name## Gantt Component | Syncfusion
+title: Data Markers in ##Platform_Name## Gantt Component
 description: Learn here all about Data Markers in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Markers
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data markers in ##Platform_Name## Gantt component
+# Data markers
 
 Data markers are a set of events used to represent the schedule events for a task. Data markers are defined in data source as array of objects, and this value is mapped to the Gantt control using the [`taskFields.indicators`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators) property. You can represent more than one data marker in a task.
 
@@ -20,7 +20,7 @@ Data markers can be defined using the following properties:
 * `name`: Defines the name of indicator.
 * `tooltip`: Defines the tooltip of indicator.
 
-N> Data Marker `tooltip` will be rendered only if tooltip property has value.
+> Data Marker `tooltip` will be rendered only if tooltip property has value.
 
 The following code example demonstrates how to implement data markers in the Gantt chart.
 

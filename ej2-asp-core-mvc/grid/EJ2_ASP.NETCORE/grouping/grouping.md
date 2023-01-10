@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in Syncfusion ##Platform_Name## Grid Component
+title: Grouping in ##Platform_Name## Grid Component
 description: Learn here all about Grouping in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grouping
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Grouping in ASP.Net Core Grid Component
+# Grouping
 
 The Grid has options to group records by dragging and dropping the column header to the group drop area. When grouping is applied, grid records are organized into a hierarchical structure to facilitate easier expansion and collapse of records.
 
@@ -39,8 +39,8 @@ To enable grouping in the grid, set the [`allowGrouping`](https://help.syncfusio
 
 
 
-N> * You can group and ungroup columns by using the **groupColumn** and **ungroupColumn** methods.
-<br/> * To disable grouping for a particular column, set the [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) to false in **e-grid-column** tag helper.
+> * You can group and ungroup columns by using the **groupColumn** and **ungroupColumn** methods.
+> * To disable grouping for a particular column, set the [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) to false in **e-grid-column** tag helper.
 
 ## Initial group
 
@@ -104,7 +104,7 @@ To avoid ungrouping or further grouping of a column after initial column groupin
 
 On grouping columns with paging feature, the aggregated information and total items are displayed based on the current page. The grid does not consider aggregated information and total items from other pages. To get additional details (aggregated information and total items) from other pages, set the [`disablePageWiseAggregates`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_DisablePageWiseAggregates) property of **e-grid-groupsettings** to false.
 
-N> If remote data is bound to grid dataSource, two requests will be sent when performing grouping action; one for getting the grouped data and another for getting aggregate details and total items count.
+> If remote data is bound to grid dataSource, two requests will be sent when performing grouping action; one for getting the grouped data and another for getting aggregate details and total items count.
 
 ## Group by format
 
@@ -164,7 +164,7 @@ During the group action, the grid component triggers two events. The [`actionBeg
 
 
 
-N> The `args.requestType` is based on the current action name. For example, when grouping, the `args.requestType` value will be 'grouping'.
+> The `args.requestType` is based on the current action name. For example, when grouping, the `args.requestType` value will be 'grouping'.
 
 ## Collapse by external button
 
@@ -194,34 +194,6 @@ You can collapse the selected group from an external button by invoking the **ex
 {% endif %}
 
 
-## Sort grouped columns in descending order during initial grouping
-
-By default, grouped columns are sorted in ascending order. To sort grouped columns in descending order during initial grouping, you can set the `field` and `direction` in the [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html#Syncfusion_EJ2_Grids_GridSortSettings_Columns) property of `e-grid-sortsettings` tag helper.
-
-The `CustomerID` column will be sorted in descending order when the grid is initially grouped, as shown in the following example.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/grouping/sort/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Sort.cs" %}
-{% include code-snippet/grid/grouping/sort/sort.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/grouping/sort/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Sort.cs" %}
-{% include code-snippet/grid/grouping/sort/sort.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## See Also
 

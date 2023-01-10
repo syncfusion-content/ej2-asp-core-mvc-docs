@@ -53,7 +53,7 @@ You can customize the appearance of a row by using the [`rowDataBound`](https://
 }
 ```
 
-Refer to the following example.
+Please refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

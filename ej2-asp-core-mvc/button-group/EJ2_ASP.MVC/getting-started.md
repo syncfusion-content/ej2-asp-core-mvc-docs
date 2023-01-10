@@ -112,7 +112,7 @@ The following example illustrates how to achieve vertical orientation in ButtonG
 
 
 
-N> ButtonGroup does not support SplitButton component nesting in a vertical orientation.
+> ButtonGroup does not support SplitButton component nesting in a vertical orientation.
 
 ## See Also
 

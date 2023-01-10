@@ -99,7 +99,7 @@ Diagram allows to add images as [`image`](https://help.syncfusion.com/cr/aspnetc
 
 
 
-N> Deploy your HTML file in the web application and export the diagram (image node) or else the image node will not be exported in the Chrome and Firefox due to security issues.
+> Deploy your HTML file in the web application and export the diagram (image node) or else the image node will not be exported in the Chrome and Firefox due to security issues.
 
 **Link 1**: [Draw images on canvas locally using chrome](http://asked.online/draw-images-on-canvas-locally-using-chrome/2546077/)
 
@@ -165,7 +165,7 @@ Html elements can be embedded in the diagram through [`Html`](https://help.syncf
 
 
 
-N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design, while exporting the diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation.
+> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design, while exporting the diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation.
 
 ## HTML Node With Template
 
@@ -219,7 +219,7 @@ Diagram provides support to embed SVG element into a node. The shape property of
 
 
 
-N> Like HTML node, the native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template.
+> Like HTML node, the native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template.
 
 ## SVG content alignment
 
@@ -264,11 +264,11 @@ The following tables illustrates all the possible scale options for the node.
 
 
 
-N> By default, the `shape` property of the node is set as **basic**.
+> By default, the `shape` property of the node is set as **basic**.
 
 Default property for shape is Rectangle.
 
-N> When the `shape` is not set for a basic shape, it is considered as a **rectangle**.
+> When the `shape` is not set for a basic shape, it is considered as a **rectangle**.
 
 The list of basic shapes are as follows.
 

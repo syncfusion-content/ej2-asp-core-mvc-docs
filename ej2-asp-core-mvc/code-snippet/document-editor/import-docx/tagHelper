@@ -4,6 +4,7 @@
     <ejs-documenteditor id="container"></ejs-documenteditor>
 </div>
 
+
 <script>
     var documenteditor;
     document.addEventListener('DOMContentLoaded', function () {

@@ -38,7 +38,7 @@ In Normal edit mode, when you start editing the currently selected record is cha
 
 
 
-N> Normal edit mode is default mode of editing.
+> Normal edit mode is default mode of editing.
 
 ## Automatically update the column based on another column edited value
 
@@ -116,7 +116,7 @@ Grid methods can be used to perform CRUD operations programmatically. The `addRe
 
 * To remove a selected row from the Grid, use the `deleteRecord` method. For both edit and delete operations, you must select a row first.
 
-N> In both normal and dialog editing modes, these methods can be used.
+> **Note:** In both normal and dialog editing modes, these methods can be used.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -172,7 +172,7 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 
 
 
-N> The [`showDeleteConfirmDialog`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) supports all type of edit modes.
+> The [`showDeleteConfirmDialog`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) supports all type of edit modes.
 
 ## Default column values on add new row
 
@@ -232,7 +232,7 @@ By default, a new row will be added at the top of the grid. You can change it by
 
 
 
-N> Add newRowPostion is supported for **Normal** and **Batch** editing modes.
+> Add newRowPostion is supported for **Normal** and **Batch** editing modes.
 
 ## Move the focus to a particular cell instead of first cell while editing a row
 

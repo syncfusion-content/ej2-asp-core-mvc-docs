@@ -74,7 +74,7 @@ In the below code example, demonstrate the usage of binding a partial view in th
 
 
 
-N> The Dialog/Inline template form editors should have **name** attribute.
+> The Dialog/Inline template form editors should have **name** attribute.
 
 ## Get value from editor
 

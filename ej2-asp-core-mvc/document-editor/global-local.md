@@ -13,9 +13,9 @@ documentation: ug
 
 ## Localization
 
-The [`Localization`](../common/localization/) library allows to localize default text content of the DocumentEditor. The document editor component has static text on some features (like find & replace, context-menu, dialogs) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the locale value and translation object. Refer the sample link [RTL](https://ej2.syncfusion.com/aspnetcore/DocumentEditor/RightToLeft#/material).
+The [`Localization`](../common/localization/) library allows to localize default text content of the DocumentEditor. The document editor component has static text on some features (like find & replace, context-menu, dialogs) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the locale value and translation object. Please refer the sample link [RTL](https://ej2.syncfusion.com/aspnetcore/DocumentEditor/RightToLeft#/material).
 
-N> Refer the [Locale](https://github.com/syncfusion/ej2-locale/tree/master/src).
+> Please refer the [Locale](https://github.com/syncfusion/ej2-locale/tree/master/src).
 
 ## Document Editor
 
@@ -320,7 +320,7 @@ Previous Comment | Previous Comment
 Un-posted comments | Un-posted comments
 Discard Comment | Added comments not posted. If you continue, that comment will be discarded.
 No Headings | No Heading Found!
-Add Headings | This document has no headings. Add headings and try again.
+Add Headings | This document has no headings. Please add headings and try again.
 More Options | More Options
 Click to see this comment | Click to see this comment
 Drop Down Form Field | Drop Down Form Field

@@ -13,7 +13,7 @@ documentation: ug
 
 ## Hiding Axis
 
-The visibility of row, column, value and filter axis in Field List and Grouping Bar can be changed using custom CSS setting. To do so, refer the code sample below:
+The visibility of row, column, value and filter axis in Field List and Grouping Bar can be changed using custom CSS setting. To do so, please refer the code sample below:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ The visibility of row, column, value and filter axis in Field List and Grouping 
 
 ## Text Alignment
 
-The alignment of text inside row headers, column headers, value cells and summary cells can be changed using custom CSS setting. To do so, refer the code sample below:
+The alignment of text inside row headers, column headers, value cells and summary cells can be changed using custom CSS setting. To do so, please refer the code sample below:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +71,7 @@ The alignment of text inside row headers, column headers, value cells and summar
 
 ## Customize header, value and summary cell style
 
-The elements in pivot table like header cell, value cell and summary cell style can be customized using built-in CSS names. To do so, refer the code sample below:
+The elements in pivot table like header cell, value cell and summary cell style can be customized using built-in CSS names. To do so, please refer the code sample below:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

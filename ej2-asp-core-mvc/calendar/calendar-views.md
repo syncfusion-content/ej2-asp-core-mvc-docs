@@ -51,7 +51,7 @@ By defining the start and depth property with the different view, drill-down and
 
 The following example displays the Calendar in `decade` view, and allows you to select a date in `month` view.
 
-N> Depth view should always be smaller than the start view. If the `depth` and `start` views are the same, then the Calendar view remains unchanged.
+> Depth view should always be smaller than the start view. If the `depth` and `start` views are the same, then the Calendar view remains unchanged.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,4 +73,4 @@ N> Depth view should always be smaller than the start view. If the `depth` and `
 {% endtabs %}
 {% endif %}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarUGSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarUGSample).

@@ -36,7 +36,7 @@ The following example code illustrates how to get the bookmark content as plain 
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-To get the bookmark content as SFDT (rich text), check this [`link`](../../document-editor/how-to/get-the-selected-content/#get-the-selected-content-as-sfdt-rich-text)
+To get the bookmark content as SFDT (rich text), please check this [`link`](../../document-editor/how-to/get-the-selected-content/#get-the-selected-content-as-sfdt-rich-text)
 
 ## Get the whole document content as text
 

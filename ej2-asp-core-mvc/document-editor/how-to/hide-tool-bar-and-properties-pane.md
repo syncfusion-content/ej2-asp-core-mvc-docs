@@ -39,7 +39,7 @@ The following example code illustrates how to hide the properties pane.
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-N> Positioning and customizing the properties pane in Document editor container is not possible. Instead, you can hide the exiting properties pane and create your own pane using public API's.
+>Note: Positioning and customizing the properties pane in Document editor container is not possible. Instead, you can hide the exiting properties pane and create your own pane using public API's.
 
 ## Hide the toolbar
 

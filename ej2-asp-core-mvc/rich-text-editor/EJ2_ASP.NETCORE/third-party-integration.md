@@ -85,7 +85,7 @@ Include At.JS javascript.
 
 Define the `At.js` configuration
 
-N> In below configuration, email id of employees list - email id of employees from the data source.
+> In below configuration, email id of employees list - email id of employees from the data source.
 
 ```typescript
 

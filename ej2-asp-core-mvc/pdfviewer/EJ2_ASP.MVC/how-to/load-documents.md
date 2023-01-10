@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Load Documents in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about Load Documents in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Load Documents in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Load Documents in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Documents
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -23,32 +23,32 @@ The following steps are used to load the PDF document dynamically.
 <button type="button" onclick="load1()">LoadDocumentFromBase64</button>
 <script>
     // Load a Base64 String
-    function load1() {
-        // Sending Ajax request to the controller to get base 64 string
-        $.ajax({
-            url: '/PdfViewer/GetDocument',
-            type: 'POST',
-            cache: false,
-            processData: false,
-            contentType: false,
-            success: function (data) {
-                debugger;
-                var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-                viewer.load(data, null);
-            },
-            error: function (msg, textStatus, errorThrown) {
-                debugger;
-                alert('Exception' + msg.responseText);
-            }
-        });
-    }
+function load1() {
+    // Sending Ajax request to the controller to get base 64 string
+    $.ajax({
+        url: '/PdfViewer/GetDocument',
+        type: 'POST',
+        cache: false,
+        processData: false,
+        contentType: false,
+        success: function (data) {
+            debugger;
+            var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+            viewer.load(data, null);
+        },
+        error: function (msg, textStatus, errorThrown) {
+            debugger;
+            alert('Exception' + msg.responseText);
+        }
+    });
+}
 </script>
 ```
 
 **Step 3:** Add the following code snippet in `PdfViewerController.cs` file to get the base64 string of the given document.
 
 ```cs
-public ActionResult GetDocument()
+ public ActionResult GetDocument()
 {
     var docBytes = System.IO.File.ReadAllBytes(GetDocumentPath("PDF_Succinctly.pdf"));
     string docBase64 = "data:application/pdf;base64," + Convert.ToBase64String(docBytes);
@@ -61,11 +61,11 @@ public ActionResult GetDocument()
 ```html
 <button type="button" onclick="load2()">LoadDocumentFromBase64</button>
 <script>
-    // load document using document name.
-    function load2() {
-        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-        viewer.load("HTTP Succinctly.pdf", null)
-    }
+// load document using document name.
+function load2() {
+    var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+    viewer.load("HTTP Succinctly.pdf", null)
+}
 </script>
 ```
 

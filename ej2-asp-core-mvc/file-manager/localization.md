@@ -84,7 +84,7 @@ The file manager can be localized to any culture by defining the texts and messa
 |Header-Upload|Upload Files|
 |Error|Error|
 |Validation-Empty|The file or folder name cannot be empty.|
-|Validation-Invalid|The file or folder name {0} contains invalid characters. Use a different name. Valid file or folder names cannot end with a dot or space, and cannot contain any of the following characters: \\/:*?\"<>\||
+|Validation-Invalid|The file or folder name {0} contains invalid characters. Please use a different name. Valid file or folder names cannot end with a dot or space, and cannot contain any of the following characters: \\/:*?\"<>\||
 |Validation-NewFolder-Exists|A file or folder with the name {0} already exists.|
 |Validation-Rename-Exists|Cannot rename {0} to {1}|
 |Folder-Empty|This folder is empty|

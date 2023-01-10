@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toolbar in Syncfusion ##Platform_Name## Gantt Component
-description: Learn all about Tool Bar in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+title: Tool Bar in ##Platform_Name## Gantt Component
+description: Learn here all about Tool Bar in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tool Bar
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Toolbar in Gantt control
+# Toolbar
 
-The Gantt control provides toolbar support to handle Gantt actions. The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) property accepts the collection of built-in toolbar items and [`ItemModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html) objects for custom toolbar items.
+The Gantt control provides the toolbar support to handle Gantt actions. The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) property accepts the collection of built-in toolbar items and [`ItemModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html) objects for custom toolbar items.
 
 ## Built-in toolbar items
 
@@ -59,7 +59,7 @@ The following table shows built-in toolbar items and its actions.
 
 
 
-N> The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) has options to define both built-in and custom toolbar items.
+> The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) has options to define both built-in and custom toolbar items.
 
 ## Custom toolbar items
 
@@ -92,8 +92,8 @@ By default, the custom toolbar items are at left position. You can change the po
 
 
 
-N> * The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) has options to define both built-in and custom toolbar items.
-<br/> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
+> * The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) has options to define both built-in and custom toolbar items.
+> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
 
@@ -153,31 +153,3 @@ You can enable or disable the toolbar items by using the `enableItems` method.
 {% endtabs %}
 {% endif %}
 
-
-
-## Add input elements to toolbar
-
-In the Gantt toolbar, you can add EJ2 editor elements like a numeric text box, a drop-down list, and date picker controls. The following code snippets demonstrate how to add EJ2 editors to the Gantt toolbar:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/toolbar/input-elements/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="input-elements.cs" %}
-{% include code-snippet/gantt/toolbar/input-elements/input-elements.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt/toolbar/input-elements/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="input-elements.cs" %}
-{% include code-snippet/gantt/toolbar/input-elements/input-elements.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

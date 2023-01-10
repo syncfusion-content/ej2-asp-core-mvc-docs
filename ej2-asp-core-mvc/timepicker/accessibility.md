@@ -39,7 +39,7 @@ Keyboard accessibility is one of the most important aspects of web accessibility
 
 The TimePicker control has built-in keyboard accessibility support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
-N> It supports the following list of shortcut keys to interact with the TimePicker control.
+> It supports the following list of shortcut keys to interact with the TimePicker control.
 
 | **Press** | **To do this** |
 | --- | --- |

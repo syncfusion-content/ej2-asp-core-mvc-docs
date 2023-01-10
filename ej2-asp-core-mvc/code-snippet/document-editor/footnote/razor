@@ -11,4 +11,5 @@
     document.getElementById('insertFootnote').addEventListener('click', function () {
         documenteditor.editor.insertFootnote();
     });
+
 </script>

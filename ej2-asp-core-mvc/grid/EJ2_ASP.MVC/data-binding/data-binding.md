@@ -47,7 +47,7 @@ To add a custom parameter to the data request, use the addParams method of **Que
 
 
 
-N> The parameters added using the [`Query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Query) property will be sent along with the data request for every grid action.
+> The parameters added using the [`Query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Query) property will be sent along with the data request for every grid action.
 
 ## Handling HTTP error
 
@@ -80,7 +80,7 @@ The argument passed to the [`ActionFailure`](https://help.syncfusion.com/cr/aspn
 
 
 
-N> The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event will be triggered not only for the server errors, but also when there is an exception while processing the grid actions.
+> The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event will be triggered not only for the server errors, but also when there is an exception while processing the grid actions.
 
 ## Binding with ajax
 
@@ -97,7 +97,7 @@ You can use Grid [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 </script>
 ```
 
-N> * If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
+> * If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
 
 ## Troubleshoot: Grid render rows without data
 

@@ -13,7 +13,7 @@ documentation: ug
 
 By default, Sidebar initializes context to the body element. Using the [`target`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Target.html) property, set context element to initialize Sidebar inside any HTML element apart from the body element.
 
-N> If required , `zIndex` can be set when sidebar act as overlay type.
+> If required , `zIndex` can be set when sidebar act as overlay type.
 
 In the following sample, click the toggle button to expand or collapse the sidebar and add button in sidebar element.
 

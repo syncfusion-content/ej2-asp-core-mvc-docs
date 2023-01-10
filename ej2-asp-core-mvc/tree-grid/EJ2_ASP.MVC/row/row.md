@@ -53,7 +53,7 @@ The [`RowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Sy
 }
 ```
 
-Refer to the following example.
+Please refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,4 +80,4 @@ Refer to the following example.
 
 
 
-N> Refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to learn how to present and manipulate data.
+> Refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to learn how to present and manipulate data.

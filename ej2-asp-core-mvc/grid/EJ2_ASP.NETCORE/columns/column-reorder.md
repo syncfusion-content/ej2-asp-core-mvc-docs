@@ -37,7 +37,7 @@ Reordering can be done by drag and drop of a particular column header from one i
 
 
 
-N> You can disable reordering a particular column by setting the [`allowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowReordering) property of **e-grid-column** as false.
+> You can disable reordering a particular column by setting the [`allowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowReordering) property of **e-grid-column** as false.
 
 ## Reorder single column
 

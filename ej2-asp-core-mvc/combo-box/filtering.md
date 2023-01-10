@@ -150,7 +150,7 @@ ComboBox supports diacritics filtering which will ignore the [diacritics](https:
 {% endtabs %}
 {% endif %}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/FilteringUGSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/FilteringUGSample).
 
 ## See also
 

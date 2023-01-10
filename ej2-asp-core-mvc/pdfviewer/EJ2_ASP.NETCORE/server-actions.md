@@ -30,7 +30,7 @@ The server actions or server methods in the Core PDF Viewer controller are:
 
 ## Load action
 
-N> public IActionResult Load([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult Load([FromBody] Dictionary<string, string> jsonObject)
 
 The [Load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_Load_System_String_) action will be triggered initially on loading a PDF file. Syncfusion PDF Viewer control will store the document in the cache based on the hashid during the initial loading of the pdf file. Initially, the request will be sent for 100 pages only and another request will be sent for the remaining pages. So the Load action will get triggered twice when loading a PDF file with pages more than 100, which is called virtual loading.
 
@@ -74,7 +74,7 @@ public IActionResult Load([FromBody] Dictionary<string, string> jsonObject)
 
 ## RenderPdfPages
 
-N> public IActionResult RenderPdfPages([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult RenderPdfPages([FromBody] Dictionary<string, string> jsonObject)
 
 Whenever a new page is loaded, [RenderPdfPages](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_RenderPages_System_String_) action will be called. When a PDF file is loaded with PDF Viewer, only two pages will be loaded initially by hitting this action for loading each page. Further pages will be loaded on demand by hitting this action.
 
@@ -92,7 +92,7 @@ public IActionResult RenderPdfPages([FromBody] Dictionary<string, string> jsonOb
 
 ## RenderThumbnailImages action
 
-N> public IActionResult RenderThumbnailImages([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult RenderThumbnailImages([FromBody] Dictionary<string, string> jsonObject)
 
 The [RenderThumbnailImages](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_RenderThumbnail_System_String_) action will be triggered initially on loading a PDF file. It renders the thumbnails images of all the pages in the PDF file. When a thumbnail image is clicked, the RenderPdfPages action will be triggered to load the selected page.
 
@@ -110,7 +110,7 @@ public IActionResult RenderThumbnailImages([FromBody] Dictionary<string, string>
 
 ## Bookmarks
 
-N> public IActionResult Bookmarks([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult Bookmarks([FromBody] Dictionary<string, string> jsonObject)
 
 The Bookmarks action will be triggered initially on loading a PDF file. All the headings in the PDF file will get added to the Bookmarks collection in the bookmarks panel with the help of this action. When a bookmark is selected, the page containing the selected heading will be rendered or opened.
 
@@ -128,7 +128,7 @@ public IActionResult Bookmarks([FromBody] Dictionary<string, string> jsonObject)
 
 ## RenderAnnotationComments
 
-N> public IActionResult RenderAnnotationComments([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult RenderAnnotationComments([FromBody] Dictionary<string, string> jsonObject)
 
 The [RenderAnnotationComments](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_RenderComments_System_String_) action will be triggered initially on loading a PDF file.
 
@@ -146,7 +146,7 @@ public IActionResult RenderAnnotationComments([FromBody] Dictionary<string, stri
 
 ## Unload action
 
-N> public IActionResult Unload([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult Unload([FromBody] Dictionary<string, string> jsonObject)
 
 The [Unload](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_Unload_System_String_) action will be triggered on unloading a PDF file by closing or refreshing the browser.
 
@@ -164,7 +164,7 @@ public IActionResult Unload([FromBody] Dictionary<string, string> jsonObject)
 
 ## ExportAnnotations action
 
-N> public IActionResult ExportAnnotations([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult ExportAnnotations([FromBody] Dictionary<string, string> jsonObject)
 
 The [ExportAnnotations](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_ExportAnnotations_System_String_) action will be triggered by clicking either the “Export annotation to JSON file” option or the “Export annotation to XFDF file” option in the annotation toolbar.
 
@@ -181,7 +181,7 @@ public IActionResult ExportAnnotations([FromBody] Dictionary<string, string> jso
 
 ## ImportAnnotations
 
-N> public IActionResult ImportAnnotations([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult ImportAnnotations([FromBody] Dictionary<string, string> jsonObject)
 
 The [ImportAnnotations](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_ImportAnnotations_System_String_) action will be triggered by clicking the “Import annotation from XFDF file” option in the annotation toolbar.
 
@@ -235,7 +235,7 @@ public IActionResult ImportAnnotations([FromBody] Dictionary<string, string> jso
 
 ## ImportFormFields action
 
-N> public IActionResult ImportFormFields([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult ImportFormFields([FromBody] Dictionary<string, string> jsonObject)
 
 The [ImportFormFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_ImportFormFields_System_String_) action will be triggered by calling it from the UI code.
 
@@ -253,7 +253,7 @@ public IActionResult ImportFormFields([FromBody] Dictionary<string, string> json
 
 ## ExportFormFields action
 
-N> public IActionResult ExportFormFields([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult ExportFormFields([FromBody] Dictionary<string, string> jsonObject)
 
 The [ExportFormFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_ExportFormFields_System_String_) action will be triggered by clicking the Submit Form option in the PDF Viewer toolbar. The Submit Form option is enabled only when there are form fields. It exports the form fields into a JSON file.
 
@@ -270,7 +270,7 @@ public IActionResult ExportFormFields([FromBody] Dictionary<string, string> json
 
 ## Download action
 
-N> public IActionResult Download([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult Download([FromBody] Dictionary<string, string> jsonObject)
 
 The [Download](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_Download_System_String_) action will be triggered by clicking the Download option in the PDF Viewer toolbar to download the PDF file.
 
@@ -288,7 +288,7 @@ public IActionResult Download([FromBody] Dictionary<string, string> jsonObject)
 
 ## PrintImages
 
-N> public IActionResult PrintImages([FromBody] Dictionary<string, string> jsonObject)
+> public IActionResult PrintImages([FromBody] Dictionary<string, string> jsonObject)
 
 The [PrintImages](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_Print_System_String_) action will be triggered by clicking the Print option in the PDF Viewer toolbar.
 
@@ -306,7 +306,7 @@ public IActionResult PrintImages([FromBody] Dictionary<string, string> jsonObjec
 
 ## GetDocumentPath method
 
-N> private string GetDocumentPath(string document)
+> private string GetDocumentPath(string document)
 
 The GetDocumentPath method will be called inside the Load method to get the path of the document to be loaded.
 
@@ -331,7 +331,7 @@ private string GetDocumentPath(string document)
 
 ## PdfViewerController constructor
 
-N> public PdfViewerController(IHostingEnvironment hostingEnvironment, IMemoryCache cache)
+> public PdfViewerController(IHostingEnvironment hostingEnvironment, IMemoryCache cache)
 
 The IMemoryCache is required for rendering the PDF pages in the PDF Viewer control by storing the document in the cache. So, it has been initialized in the PdfViewerController and has to be used in all the controller methods.
 

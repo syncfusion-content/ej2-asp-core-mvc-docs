@@ -25,7 +25,7 @@ In this sample, we had hidden the multiple leaf node of nested list. The `e-chec
 
 Even though we have hidden the checkbox the functionality will be same for the list item which might affect the `getSelectedItems` method. So, to counteract that we will follow certain logic in the `select` event. The Logic here is to remove the `e-active` class from the other checkbox hidden list item which will be added when we select on that item and retain `e-active` on currently selected item.
 
-N> In this process we will exclude the visible checkbox list items and only consider the hidden checkbox items.
+> In this process we will exclude the visible checkbox list items and only consider the hidden checkbox items.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

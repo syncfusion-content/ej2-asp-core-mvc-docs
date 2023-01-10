@@ -34,7 +34,7 @@ This article describes the most common installation errors, as well as the cause
 
 ## License has expired
 
-**Error Message:** Your license for Syncfusion Essential Studio for ASP.NET Core - EJ2 has been expired since {date}. Renew your subscription and try again.
+**Error Message:** Your license for Syncfusion Essential Studio for ASP.NET Core - EJ2 has been expired since {date}. Please renew your subscription and try again.
 
 ***Online Installer***
 

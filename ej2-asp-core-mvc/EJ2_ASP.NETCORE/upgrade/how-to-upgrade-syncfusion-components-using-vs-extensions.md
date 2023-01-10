@@ -14,7 +14,7 @@ The Syncfusion ASP.NET Core JS2 migration add-in for Visual Studio allows to mig
 
 The steps below will assist you to upgrade the Syncfusion version in the Syncfusion ASP.NET Core Web application via Visual Studio 2019:
 
-N> Before using the Syncfusion ASP.NET Core Web application Migration, check whether the Syncfusion ASP.NET Core JS2 Extension is installed or not in Visual Studio Extension Manager by clicking on the Extensions -> Manage Extensions -> Installed. If this extension is not installed, install the extension by following the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation) help topic.
+> Before using the Syncfusion ASP.NET Core Web application Migration, check whether the Syncfusion ASP.NET Core JS2 Extension is installed or not in Visual Studio Extension Manager by clicking on the Extensions -> Manage Extensions -> Installed. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation) help topic.
 
 1. Open the Syncfusion ASP.NET Core Web application that uses the Syncfusion component.
 
@@ -24,7 +24,7 @@ N> Before using the Syncfusion ASP.NET Core Web application Migration, check whe
 
 3. The Syncfusion Project Migration window will appear. You can choose the required version of Syncfusion ASP.NET Core to migrate.
 
-    N> The versions are loaded from the Syncfusion ASP.NET Core NuGet packages published in [`NuGet.org`](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Core%20EJ2%22+syncfusion) and it requires internet connectivity.
+    > The versions are loaded from the Syncfusion ASP.NET Core NuGet packages published in [`NuGet.org`](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Core%20EJ2%22+syncfusion) and it requires internet connectivity.
 
     ![MigrationWizard](images/Migration.png)
 

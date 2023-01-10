@@ -12,7 +12,7 @@ documentation: ug
 
 Syncfusion provides the check for update extensions to find if the latest version of the essential release is available, and if it is, the option to update the most recent version of the Essential Studio release is provided. By installing the latest version, you will always get the most up-to-date features, fixes, and improvements.
 
-N> The Syncfusion Check for updates is available from v17.1.0.32.
+> The Syncfusion Check for updates is available from v17.1.0.32.
 
 You can check updates availability in Visual Studio, and then install the update version if required.
 
@@ -20,7 +20,7 @@ You can check updates availability in Visual Studio, and then install the update
 
     ![Check for updates_2019later](images/check-for-updates_latest.png)
 
-    N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu.
+    > In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu.
 
     ![Check for updates](images/check-for-updates.png)
 

@@ -47,7 +47,7 @@ In the pan mode, if the stamp annotation mode is entered, the PDF Viewer control
 
 * The file explorer dialog will appear, choose the image and then add the image to the PDF page.
 
-N>The JPG and JPEG image format is only supported in the custom stamp annotations.
+>The JPG and JPEG image format is only supported in the custom stamp annotations.
 
 ## Setting default properties during control initialization
 

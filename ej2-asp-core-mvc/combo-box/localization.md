@@ -44,7 +44,7 @@ In the following sample, French culture is set to the ComboBox and no data is lo
 {% endtabs %}
 {% endif %}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/FilteringUGSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/FilteringUGSample).
 
 ## See also
 

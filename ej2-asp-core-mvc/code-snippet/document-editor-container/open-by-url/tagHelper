@@ -1,6 +1,6 @@
 <ejs-button id="import" content="Open Document" onclick="onClick()"></ejs-button>
 <ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated"
-height="590px"></ejs-documenteditorcontainer>
+    height="590px"></ejs-documenteditorcontainer>
 
 <script>
     var documenteditor;

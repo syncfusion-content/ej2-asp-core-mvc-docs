@@ -24,7 +24,7 @@ Syncfusion hosts every EJ2 component as a separate node package in CDN, from whi
 
 Here, the generic syntax of the Syncfusion EJ2 CDN URL for the both Individual EJ2 Component package and Complete EJ2 Component package has been explained.
 
-N>Throughout this article, **EJ2 Component** refers to **Individual EJ2 Component** package, and **EJ2** refers to **Complete EJ2 Component package**.
+>Throughout this article, **EJ2 Component** refers to **Individual EJ2 Component** package, and **EJ2** refers to **Complete EJ2 Component package**.
 
 **Syntax:**
 >EJ2 Component Script Files: https://cdn.syncfusion.com/ej2/{PACKAGE-NAME}/dist/global/{PACKAGE-NAME}.min.js
@@ -48,7 +48,7 @@ N>Throughout this article, **EJ2 Component** refers to **Individual EJ2 Componen
 
 The primary goal of EJ2 package is to help the novice to get started with Syncfusion EJ2 by referring the single line for script and styles without bothering about the dependency graph of the EJ2 components.
 
-N> Syncfusion will never recommend EJ2 CDN for real-time projects. Because, the size of EJ2 CDN impacts website/app loading time since this package includes all the EJ2 components.
+>**Note:** Syncfusion will never recommend EJ2 CDN for real-time projects. Because, the size of EJ2 CDN impacts website/app loading time since this package includes all the EJ2 components.
 
 Add the EJ2 CDN client-side resources to the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
 
@@ -126,7 +126,7 @@ Scripts and style sheets of Syncfusion EJ2 Components can be included in an ASP.
 
 Scripts and style sheets of Syncfusion EJ2 Components from locally-installed packages can be included in an ASP.NET Core web application using the following two methods.
 
-N>Files in the **wwwroot** folder can be accessed only in client-side, hence Syncfusion scripts and style sheets should be copied from **node_modules** to **wwwroot**.
+>Files in the **wwwroot** folder can be accessed only in client-side, hence Syncfusion scripts and style sheets should be copied from **node_modules** to **wwwroot**.
 
 By using either one of the following methods, Client-Side Resource can be loaded in ASP.NET Core web application:
 
@@ -139,13 +139,13 @@ Install required Syncfusion EJ2 Component packages as mentioned in “[**Install
 
 1. In addition to Syncfusion EJ2 packages, install gulp and glob packages using below commands.
 
-N>Gulp Installation - **npm install gulp --save**
-<br/>
-<br/>![Gulp Installation](images/gulp-installation.png)
-<br/>
-<br/>Glob Installation - **npm install glob --save**
-<br/>
-<br/>![Glob Installation](images/glob-installation.png)
+>Gulp Installation - **npm install gulp --save**
+>
+>![Gulp Installation](images/gulp-installation.png)
+>
+>Glob Installation - **npm install glob --save**
+>
+>![Glob Installation](images/glob-installation.png)
 
 2. To set up the server, open Dependencies -> Manage NuGet Packages -> Browse. Then, search and install "**Microsoft.AspNetCore.StaticFiles**" and "**Microsoft.TypeScript.MSBuild**" packages.
 

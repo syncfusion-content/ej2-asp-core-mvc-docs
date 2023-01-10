@@ -71,4 +71,4 @@ The following example demonstrates the `strictMode` as `false`. Here, it allows 
 
 
 
-N> If the value of `min` or `max` property is changed through code behind, update the `value` property to set within the range.
+> If the value of `min` or `max` property is changed through code behind, update the `value` property to set within the range.

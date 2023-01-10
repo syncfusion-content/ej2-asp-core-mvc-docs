@@ -40,7 +40,7 @@ To bind list binding to the grid, you can assign a JavaScript object array to th
 
 
 
-N> By default, DataManager uses **JsonAdaptor** for list data-binding.
+> By default, DataManager uses **JsonAdaptor** for list data-binding.
 
 ## Refresh the data source
 

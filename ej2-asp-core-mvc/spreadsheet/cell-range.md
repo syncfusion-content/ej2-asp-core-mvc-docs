@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Range in ##Platform_Name## Syncfusion Spreadsheet Component
+title: Cell Range in ##Platform_Name## Spreadsheet Component
 description: Learn here all about Cell Range in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cell Range
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cell Range in Spreadsheet control
+# Cell Range
 
 A group of cells in a sheet is known as cell range.
 
@@ -21,7 +21,7 @@ Wrap text can be applied or removed to a cell or range of cells in the following
 
 * Using the `wrap` property in `cell`, you can enable or disable wrap text to a cell at initial load.
 * Select or deselect wrap button from ribbon toolbar to apply or remove the wrap text to the selected range.
-* Using the `wrap` method, you can apply or remove the wrap text once the component is loaded.
+* Using the [`wrap`](../api/spreadsheet/#wrap) method, you can apply or remove the wrap text once the component is loaded.
 
 The following code example shows the wrap text functionality in spreadsheet.
 
@@ -65,7 +65,7 @@ You can merge the range of cells in the following ways,
 
 * Set the `rowSpan` and `colSpan` property in `cell` to merge the number of cells at initial load.
 * Select the range of cells and apply merge by selecting the desired option from ribbon toolbar.
-* Use `merge`] method to merge the range of cells, once the component is loaded.
+* Use [`merge`](../api/spreadsheet/#merge) method to merge the range of cells, once the component is loaded.
 
 The available merge options in spreadsheet are,
 
@@ -112,9 +112,9 @@ The following features have some limitations in Merge:
 
 ## Data Validation
 
-Data Validation is used to restrict the user from entering the invalid data. You can use the [`allowDataValidation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowDataValidation) property to enable or disable data validation.
+Data Validation is used to restrict the user from entering the invalid data. You can use the [`allowDataValidation`](../api/spreadsheet/#allowDataValidation) property to enable or disable data validation.
 
-N> * The default value for `allowDataValidation` property is `true`.
+> * The default value for `allowDataValidation` property is `true`.
 
 ### Apply Validation
 
@@ -123,7 +123,7 @@ You can apply data validation to restrict the type of data or the values that us
 You can apply data validation by using one of the following ways,
 
 * Select the Data tab in the Ribbon toolbar, and then choose the Data Validation item.
-* Use the `addDataValidation()` method programmatically.
+* Use the [`addDataValidation()`](../api/spreadsheet/#addDataValidation) method programmatically.
 
 ### Clear Validation
 
@@ -132,7 +132,7 @@ Clear validation feature is used to remove data validations from the specified r
 You can clear data validation rule by one of the following ways,
 
 * Select the Data tab in the Ribbon toolbar, and then choose the Clear Validation item.
-* Use the `removeDataValidation()` method programmatically.
+* Use the [`removeDataValidation()`](../api/spreadsheet/#removeDataValidation) method programmatically.
 
 ### Highlight Invalid Data
 
@@ -141,7 +141,7 @@ Highlight invalid data feature is used to highlight the previously entered inval
 You can highlight an invalid data by using one of the following ways,
 
 * Select the Data tab in the Ribbon toolbar, and then choose the Highlight Invalid Data item.
-* Use the `addInvalidHighlight()` method programmatically.
+* Use the [`addInvalidHighlight()`](../api/spreadsheet/#addInvalidHighlight) method programmatically.
 
 ### Clear Highlighted Invalid Data
 
@@ -150,7 +150,7 @@ Clear highlight feature is used to remove the highlight from invalid cells.
 You can clear the highlighted invalid data by using the following ways,
 
 * Select the Data tab in the Ribbon toolbar, and then choose the Clear Highlight item.
-* Use the `removeInvalidHighlight()` method programmatically.
+* Use the [`removeInvalidHighlight()`](../api/spreadsheet/#removeInvalidHighlight) method programmatically.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -188,7 +188,7 @@ The following features have some limitations in Data Validation:
 
 ## Auto Fill
 
-Auto Fill is used to fill the cells with data based on adjacent cells. It also follows a pattern from adjacent cells if available. There is no need to enter the repeated data manually. You can use [`allowAutoFill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowAutoFill) property to enable/disable the auto fill support. You can also use `showFillOptions` property to enable/disable the fill option and `fillType` property to change the default auto fill option which is available in [`autoFillSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AutoFillSettings).
+Auto Fill is used to fill the cells with data based on adjacent cells. It also follows a pattern from adjacent cells if available. There is no need to enter the repeated data manually. You can use `allowAutoFill` property to enable/disable the auto fill support. You can also use `showFillOptions` property to enable/disable the fill option and `fillType` property to change the default auto fill option which is available in `autoFillSettings`.
 
 You can do this by one of the following ways,
 
@@ -211,7 +211,7 @@ In Auto Fill we have following options,
 * Fill Formatting Only
 * Fill Without Formatting
 
-N>* The default auto fill option is “FillSeries” which can be referred from `fillType` property.
+>* The default auto fill option is “FillSeries” which can be referred from `fillType` property.
 
 ### Copy Cells
 
@@ -283,7 +283,7 @@ Clear feature helps you to clear the cell contents (formulas and data), formats 
 You can apply clear feature by using one of the following ways,
 
 * Select the clear icon in the Ribbon toolbar under the Home Tab.
-* Using the `clear()` method to clear the values.
+* Using the [`clear()`](../api/spreadsheet/#clear) method to clear the values.
 
 Clear has the following types in the spreadsheet,
 
@@ -296,7 +296,7 @@ Clear has the following types in the spreadsheet,
 
 ### Methods
 
-Clear the cell contents and formats in the Spreadsheet document by using the `clear` method. The clear method has `type` and `range` as parameters. The following code example shows how to clear the cell contents and formats in the button click event.
+Clear the cell contents and formats in the Spreadsheet document by using the [clear](../api/spreadsheet/#clear) method. The [clear](../api/spreadsheet/#clear) method has `type` and `range` as parameters. The following code example shows how to clear the cell contents and formats in the button click event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

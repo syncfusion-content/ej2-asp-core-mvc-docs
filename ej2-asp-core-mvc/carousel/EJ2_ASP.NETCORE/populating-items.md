@@ -83,7 +83,7 @@ The Carousel component supports to show one complete slide and a partial view of
 
 ![Carousel](./images/partial-visible.jpg)
 
-N> Slide animation only applicable if the `partialVisible` is enabled.
+> Slide animation only applicable if the `partialVisible` is enabled.
 
 The last slide will be displayed as a partial slide at the initial rendering when the [`loop`](../api/carousel/#loop) and `partialVisible` properties are enabled.
 
@@ -103,4 +103,4 @@ The following example code depicts the functionality of `partialVisible` and wit
 
 * [Customizing partial slides size](./styles-and-appearance/#customizing-partial-slides-size)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselUGSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselUGSample).
