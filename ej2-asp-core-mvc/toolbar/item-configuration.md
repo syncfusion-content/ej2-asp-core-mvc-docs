@@ -53,7 +53,7 @@ The `Separator` type adds a vertical separation between the Toolbar's single/mul
 
 
 
-> If `Separator` is added as the first or the last item, it will not be visible.
+N> If `Separator` is added as the first or the last item, it will not be visible.
 
 ## Input
 
