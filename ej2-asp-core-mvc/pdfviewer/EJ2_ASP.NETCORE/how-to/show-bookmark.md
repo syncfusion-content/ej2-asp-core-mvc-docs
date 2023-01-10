@@ -13,7 +13,7 @@ documentation: ug
 
 The PDF Viewer server library allows you to show the bookmark programmatically by setting the [**enableBookmark**](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/#enablebookmark) property to `true`. We can also disable the bookmark by setting the property to `false`.
 
->Default value of `enableBookmark` property is true.
+N>Default value of `enableBookmark` property is true.
 
 The following steps are used to show the bookmark.
 

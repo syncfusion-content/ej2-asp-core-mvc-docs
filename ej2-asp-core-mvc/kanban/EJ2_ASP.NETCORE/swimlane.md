@@ -50,8 +50,8 @@ Output be like the below.
 
 Customize the swimlane row header text by using the `textField` property mapped from datasource.
 
-> It is not mandatory to define the `textField` to `swimlaneSettings`.  It will automatically consider the `keyField` to swimlane row header text.
-> If the mapping `textField` key is not present in the datasource, it will consider the swimlane `keyField` as swimlane row header text.
+N> It is not mandatory to define the `textField` to `swimlaneSettings`.  It will automatically consider the `keyField` to swimlane row header text.
+N> If the mapping `textField` key is not present in the datasource, it will consider the swimlane `keyField` as swimlane row header text.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -210,7 +210,7 @@ Output be like the below.
 
 Users can show or hide the cards count by swimlane row in header when enabling the `showItemCount` property, which is enabled by default on the Kanban board.
 
-> Provided localization support for **Items** text.
+N> Provided localization support for **Items** text.
 
 In below demo, disabled on `showItemCount` property on rendering swimlane row without total count.
 
@@ -249,7 +249,7 @@ Frozen rows provide an option to make the current swimlane row header text alway
 
 By default, the `enableFrozenRows` property is set as `false`. If you wish to show the swimlane frozen rows, you can enable the `enableFrozenRows` property.
 
-> This feature support only when using Kanban content scrolling.
+N> This feature support only when using Kanban content scrolling.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

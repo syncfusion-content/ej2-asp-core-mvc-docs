@@ -55,13 +55,13 @@ The following example depicts how to define a normal event on the Scheduler, wit
 
 Represents an appointment that is created for more than 24 hours, and usually displayed on the all-day row. Also, represents another type of appointment that is created for more than one day but less than 24 hours, and usually displayed appropriately on both the days.
 
-> For example, if an appointment is created for two days say from November 25, 2018 – 11.00 PM to November 26, 2018 2.00 AM but less than 24 hours time interval, then the appointment is split into two partitions and will be displayed on both the days.
+N> For example, if an appointment is created for two days say from November 25, 2018 – 11.00 PM to November 26, 2018 2.00 AM but less than 24 hours time interval, then the appointment is split into two partitions and will be displayed on both the days.
 
 ## All-day events
 
 Represents an appointment that is created for an entire day such as holiday events. It is usually displayed separately in an all-day row, a separate row for all-day appointments below the date header section. In Timeline views, the all-day appointments displays in the working space area, and no separate all-day row is present in that view.
 
-> To change normal appointment into all-day event, set `IsAllDay` field to true.
+N> To change normal appointment into all-day event, set `IsAllDay` field to true.
 
 ### Hide all-day row events
 
@@ -73,7 +73,7 @@ You can make use of the CSS customization to prevent the display of all-day row 
     }
 ```
 
-> You can also enable scroller for all-day row, [refer](./how-to/enable-scroll-option-on-all-day-section/) here to know more.
+N> You can also enable scroller for all-day row, [refer](./how-to/enable-scroll-option-on-all-day-section/) here to know more.
 
 ## Customize the rendering of the spanned events
 
@@ -250,7 +250,7 @@ There are four repeat types available namely,
 
  The properties based on which the recurrence appointments are created with its respective time period are depicted in the following table. Also, the valid rule string can be referred from [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications.
 
- > Refer [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
+ N> Refer [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
 
 | Property | Purpose | Example |
 |-------|---------| --------- |
@@ -263,7 +263,7 @@ There are four repeat types available namely,
 | BYMONTH | This property is used to store the index value of the selected Month while creating the yearly appointments. When you create the yearly appointment on June month, the index value of June month 6 will get stored in the BYMONTH field. The appointment is created on every 6th month of a year. | FREQ=YEARLY;BYMONTHDAY=16;BYMONTH=6;INTERVAL=1;COUNT=10|
 | BYSETPOS | This property is used to store the index value of the week. When you create the monthly appointment in second week of a month, the index value of the second week (2) is stored in BYSETPOS. | FREQ=MONTHLY;BYDAY=MO;BYSETPOS=2;COUNT=10|
 
-> The default recurrence related validation has been included for recurrence appointments similar to the one available in Outlook. The validation usually occurs during the recurrence appointment creation, editing, drag and drop or resizing of the recurrence appointments and also if any single occurrence changes.
+N> The default recurrence related validation has been included for recurrence appointments similar to the one available in Outlook. The validation usually occurs during the recurrence appointment creation, editing, drag and drop or resizing of the recurrence appointments and also if any single occurrence changes.
 
 ### Daily Frequency
 
@@ -321,7 +321,7 @@ The built-in validation support has been added by default for recurring appointm
 
 The Scheduler dataSource usually holds the event instances, where each of the instance includes a collection of appropriate [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleField_properties.html). It is mandatory to map these fields with the equivalent fields of database, when remote data is bound to it. When the local JSON data is bound, then the field names defined within the instances needs to be mapped with the scheduler event fields correctly.
 
-> To create an event on Scheduler, it is enough to define the `startTime` and `endTime`. Also `id` field becomes mandatory to process CRUD actions on appropriate events.
+N> To create an event on Scheduler, it is enough to define the `startTime` and `endTime`. Also `id` field becomes mandatory to process CRUD actions on appropriate events.
 
 ### Built-in fields
 
@@ -373,7 +373,7 @@ When the fields of event instances has the default mapping name, it is not manda
 
 
 
-> The mapper field `id` is of string type and has no additional validation options, whereas all other fields are of `Object` type and has additional options.
+N> The mapper field `id` is of string type and has no additional validation options, whereas all other fields are of `Object` type and has additional options.
 
 ### Event field settings
 
@@ -475,7 +475,7 @@ By default, the scheduler will render the overlapping events based on the start 
 
 Appointments can be rescheduled to any time by dragging and dropping them onto the desired location. To work with drag and drop functionality make sure that `allowDragAndDrop` is set to **true** on Scheduler. In mobile mode, you can drag and drop the events by tap holding an event and dropping them on to the desired location.
 
-> By default, drag and drop action is applicable on all Scheduler views, except Agenda, Month-Agenda and Year view.
+N> By default, drag and drop action is applicable on all Scheduler views, except Agenda, Month-Agenda and Year view.
 
 ### Drag and drop multiple appointments
 
@@ -950,7 +950,7 @@ Any kind of text, images and links can be added to customize the look of the eve
 
 
 
-> All the built-in fields that are mapped to the appropriate field properties within the `e-schedule-eventsettings`, as well as custom mapped fields from the Scheduler dataSource can be accessed within the template code.
+N> All the built-in fields that are mapped to the appropriate field properties within the `e-schedule-eventsettings`, as well as custom mapped fields from the Scheduler dataSource can be accessed within the template code.
 
 ### Using eventRendered event
 
@@ -1153,7 +1153,7 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 
 
 
-> By default, the event editor is prevented to open on the read-only events when `IsReadonly` field is set to **true**.
+N> By default, the event editor is prevented to open on the read-only events when `IsReadonly` field is set to **true**.
 
 ## Restricting event creation on specific time slots
 
@@ -1306,7 +1306,7 @@ After enabling the default tooltip, it is possible to customize the display of n
 
 
 
-> All the field names that are mapped from the Scheduler dataSource to the appropriate field properties such as subject, description, location, startTime and endTime within the `e-schedule-eventsettings` can be accessed within the template.
+N> All the field names that are mapped from the Scheduler dataSource to the appropriate field properties such as subject, description, location, startTime and endTime within the `e-schedule-eventsettings` can be accessed within the template.
 
 ## Appointment selection
 
@@ -1418,4 +1418,4 @@ If your requirement is to simply refresh the appointments instead of refreshing 
 scheduleObj.refreshEvents();
 ```
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
