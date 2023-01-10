@@ -53,7 +53,7 @@ You can customize the ListView using the [template](https://ej2.syncfusion.com/d
 
 ```
 
-> Avatars can be set in different sizes in avatar classes. To know more about avatar classes, refer to [Avatar](https://ej2.syncfusion.com/demos/#/material/avatar/default).
+N> Avatars can be set in different sizes in avatar classes. To know more about avatar classes, refer to [Avatar](https://ej2.syncfusion.com/demos/#/material/avatar/default).
 
 * Sort the contact names using the [`sortOder`](https://ej2.syncfusion.com/documentation/api/list-view/#sortorder) property of ListView.
 

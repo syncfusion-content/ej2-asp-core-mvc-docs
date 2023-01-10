@@ -17,7 +17,7 @@ The toast can be expired based on the [`timeOut`](https://help.syncfusion.com/cr
 
 * The [`extendedTimeOut`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_ExtendedTimeout) property determines how long the toast should be displayed after a user hovers over it.
 
-> You can terminate the process by using the [`showCloseButton`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_ShowCloseButton) property for destroying the toast at any time.
+N> You can terminate the process by using the [`showCloseButton`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_ShowCloseButton) property for destroying the toast at any time.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

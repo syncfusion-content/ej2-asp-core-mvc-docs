@@ -89,4 +89,4 @@ By customizing the CSS for the Kanban header.
 }
 ```
 
-> It will not affect the Kanban content's height.
+N> It will not affect the Kanban content's height.

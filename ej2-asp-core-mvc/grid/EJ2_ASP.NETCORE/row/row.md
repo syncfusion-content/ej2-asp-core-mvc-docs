@@ -144,7 +144,7 @@ This is demonstrated in the following sample:
 {% endif %}
 
 
-> When working with remote data, it is impossible to add a new row between the existing rows.
+N> When working with remote data, it is impossible to add a new row between the existing rows.
 
 ## How to get the row information when hovering over the cell
 

@@ -153,3 +153,32 @@ The following example demonstrate the wizard like editing in the grid with the o
 {% endtabs %}
 {% endif %}
 
+
+## Customize Add/Edit Dialog footer
+
+In dialog edit mode, a dialog will show up when editing the currently selected row or adding a new row. By default, you can save or cancel the edited changes by clicking the Save or Cancel button in the dialog's footer. Along with these buttons, it is possible to add a custom button in the footer section using the [ActionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_ActionComplete_System_String_) event of the Grid.
+
+In the following sample, using the `dialog` argument of the `ActionComplete` event, the action for the custom button can be customized.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/custombutton/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dialog-Footer.cs" %}
+{% include code-snippet/grid/edit/custombutton/custombutton.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/custombutton/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dialog-Footer.cs" %}
+{% include code-snippet/grid/edit/custombutton/custombutton.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

@@ -158,4 +158,4 @@ Hidden mode shows the maximum number of items possible in the container space an
 
 None mode shows all the items on a single line.
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Breadcrumb/OverflowandTemplateSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Breadcrumb/OverflowandTemplateSample).
