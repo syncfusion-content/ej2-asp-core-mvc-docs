@@ -139,7 +139,7 @@ The appointments belonging to the different resources will be displayed altogeth
 
 
 
-> Setting `AllowMultiple` to `true` in the above code example allows you to select multiple resources from the event editor and also creates multiple copies of the same appointment in the Scheduler for each resources while rendering.
+N> Setting `AllowMultiple` to `true` in the above code example allows you to select multiple resources from the event editor and also creates multiple copies of the same appointment in the Scheduler for each resources while rendering.
 
 ## Resource grouping
 
@@ -236,7 +236,7 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 
 
 
-> The `Name` field defined in the **resources** collection namely `Owners` will be mapped within the `Group` property, in order to enable the grouping option with those resource levels on the Scheduler.
+N> The `Name` field defined in the **resources** collection namely `Owners` will be mapped within the `Group` property, in order to enable the grouping option with those resource levels on the Scheduler.
 
 ### Grouping multi-level resources
 
@@ -327,7 +327,7 @@ It groups the number of resources under each date and is applicable only on the 
 
 
 
-> This kind of grouping by date is not applicable on any of the **timeline views**.
+N> This kind of grouping by date is not applicable on any of the **timeline views**.
 
 ## Customizing parent resource cells
 
@@ -362,7 +362,7 @@ In timeline view work cells of parent resource can be customized by checking the
 
 Multiple resources can share the same events, thus allowing the CRUD action made on it to reflect on all other shared instances simultaneously. To enable such option, set `AllowGroupEdit` option to `true` within the `Group` property. With this property enabled, a single appointment object will be maintained within the appointment collection, even if it is shared by more than one resource – whereas the resource fields of such appointment object will be in array which hold the IDs of the multiple resources.
 
-> Any actions such as create, edit or delete held on any one of the shared event instances, will be reflected on all other related instances visible on the UI.
+N> Any actions such as create, edit or delete held on any one of the shared event instances, will be reflected on all other related instances visible on the UI.
 
 **Example:** To edit all the resource events simultaneously,
 
@@ -422,7 +422,7 @@ It is possible to customize the resource header cells using built-in template op
 
 
 
-> To customize the resource header in compact mode properly make use of the class `e-device` as in the code example.
+N> To customize the resource header in compact mode properly make use of the class `e-device` as in the code example.
 
 ![Resource header template in compact mode](images/header-template.png)
 
@@ -515,7 +515,7 @@ In the following example, the colors mentioned in the second level will get appl
 
 
 
-> The value of the `ResourceColorField` field should be mapped with the `Name` value given within the `Resources` property.
+N> The value of the `ResourceColorField` field should be mapped with the `Name` value given within the `Resources` property.
 
 ## Dynamically add and remove resources
 
@@ -694,4 +694,4 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 
 
 
-> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

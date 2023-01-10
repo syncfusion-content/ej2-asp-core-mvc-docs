@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Schedule Component
+title: Ej1 Api Migration in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
