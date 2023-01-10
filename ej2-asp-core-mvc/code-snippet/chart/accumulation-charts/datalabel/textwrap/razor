@@ -1,0 +1,14 @@
+@Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("xValue")
+                      .YName("yValue")
+                      .StartAngle(270)
+                      .endAngle(90)
+                      .TooltipMappingName('tooltipMappingName')
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                      .DataLabel(dl=>dl.Visible(true).Position('Inside').MaxWidth(100).TextWrap('Width').Name('text').EnableRotation(true)).Add();
+            })
+            .EnableSmartLabels(true)
+            .Title("Mobile Browser Statistics")
+            .LegendSettings(ls => ls.Visible(false)).Render()
