@@ -1,0 +1,44 @@
+<div>
+    <ejs-grid id="masterGrid" dataSource="@ViewBag.dataSource" allowExcelExport="true" selectedRowIndex="0" toolbar="@(new List<string>() {"ExcelExport"})" rowSelected="selected" toolbarClick="toolbarClick">
+        <e-grid-columns>
+            <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="First Name" width="150"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+
+</div>
+<p><div class='e-statustext'> Showing orders of Customer:  <b id=key></b></div></p>
+<div>
+    <ejs-grid id="detailGrid" allowExcelExport="true" dataSource="@ViewBag.dataSource">
+        <e-grid-columns>
+            <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country"></e-grid-column>
+            <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+    </div>
+<script>
+    function selected(args) {
+        var selectedRecord = args.data;
+        var data = @Html.Raw(JsonSerializer.Serialize(ViewBag.datasource));
+        var employeeID = args.data.EmployeeID;
+        var detaildata = new ej.data.DataManager(data).executeLocal(new ej.data.Query().where("EmployeeID", "equal", employeeID, false).take(10));
+        var grid = document.getElementById("detailGrid").ej2_instances[0];
+        document.getElementById('key').innerHTML = selectedRecord.EmployeeID;
+        grid.dataSource = new ej.data.DataManager(detaildata.slice(0, 5)).dataSource.json;
+    }
+    function toolbarClick(args) {
+        var mastergrid = document.getElementById("masterGrid").ej2_instances[0];
+        var grid = document.getElementById("detailGrid").ej2_instances[0];
+        if (args.item.id === 'masterGrid_excelexport') {
+            const appendExcelExportProperties = {
+                multipleExport: { type: 'AppendToSheet', blankRows: 2 },
+            };
+            const firstGridExport = mastergrid.excelExport(appendExcelExportProperties, true);
+            firstGridExport.then((fData) => {
+                grid.excelExport(appendExcelExportProperties, false, fData);
+            });
+        }
+    }
+</script>
