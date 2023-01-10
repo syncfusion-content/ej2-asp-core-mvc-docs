@@ -15,7 +15,7 @@ Edited data can be persisted in the database using the RESTful web services.
 
 All the CRUD operations in the grid are done through **DataManager**. The **DataManager** has an option to bind all the CRUD related data in server-side.
 
-> For your information, the ODataAdaptor persists data in the server as per OData protocol.
+N> For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
 In the below section, we have explained how to get the edited data details on the server-side using the **UrlAdaptor**.
 
@@ -112,7 +112,7 @@ The following code example describes the above behavior.
 
 
 
-> If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
+N> If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
 
 The newly added record details are bound to the **value** parameter. Refer to the following screenshot.
 
@@ -149,7 +149,7 @@ The following code example describes the previous behavior.
 
 
 
-> If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
+N> If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
 
 The updated record details are bound to the **value** parameter. Refer to the following screenshot.
 
@@ -186,7 +186,7 @@ The following code example describes the previous behavior.
 
 
 
-> If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
+N> If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
 
 The deleted record primary key value is bound to the **key** parameter. Refer to the following screenshot.
 
@@ -229,8 +229,8 @@ Refer to the following screenshot to know about the action parameter.
 
 ![crudupdate](../../images/crudupdate.jpg)
 
-> If you specify **InsertUrl** along with **CrudUrl**, then while adding **InsertUrl** only will be invoked.
-> If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
+N> If you specify **InsertUrl** along with **CrudUrl**, then while adding **InsertUrl** only will be invoked.
+<br/> If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
 
 ### Batch URL
 
@@ -263,7 +263,7 @@ The following code example describes the above behavior.
 
 
 
-> If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
+N> If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
 
 ```typescript
 public ActionResult BatchUpdate([FromBody]string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key)

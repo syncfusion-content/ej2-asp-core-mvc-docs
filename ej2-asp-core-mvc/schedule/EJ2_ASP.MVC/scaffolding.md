@@ -13,7 +13,7 @@ documentation: ug
 
 Syncfusion includes an extension for **Visual Studio** with UI Scaffolding options for the ASP.NET MVC Scheduler to quickly add its code and interact with data models. This allows you to easily create the appropriate **Views** and **Controller** action methods with respective ASP.NET MVC Scheduler code.
 
-> The Syncfusion ASP.NET MVC UI Scaffolder is available from the version **v16.4.0.40**.
+N> The Syncfusion ASP.NET MVC UI Scaffolder is available from the version **v16.4.0.40**.
 
 ## Getting Started
 
@@ -39,7 +39,7 @@ Let's start with the steps on how to scaffold the ASP.NET MVC Scheduler into you
 
 ![Syncfusion UI scaffolding dialog showing model and data context options](images/feature.png)
 
-> All the model types present in the current application will be listed in the **Model Class** DropDownList. Also, from the available **Data Context Class**, choose the appropriate Entity Framework Data Model.
+N> All the model types present in the current application will be listed in the **Model Class** DropDownList. Also, from the available **Data Context Class**, choose the appropriate Entity Framework Data Model.
 
 * Now, select the required Scheduler options (select the corresponding **Scheduler Views** and **Properties** from the options) and Click the **Add** button. Use the **Back Arrow**, if you need to modify the already chosen Controller or View name, or to change the **selected Model Class** and **Data Context Class**.
 
@@ -49,6 +49,6 @@ Let's start with the steps on how to scaffold the ASP.NET MVC Scheduler into you
 
 ![Solution explorer displaying the newly created Controller and View files](../images/solution-explorer.png)
 
-> Ensure that at least one Entity Framework model exists in your active project and also the application gets compiled once. If you make any changes in the Model properties later, compile the application once before performing scaffold.
+N> Ensure that at least one Entity Framework model exists in your active project and also the application gets compiled once. If you make any changes in the Model properties later, compile the application once before performing scaffold.
 
-> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

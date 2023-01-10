@@ -17,7 +17,7 @@ The Slider control can be validated using our [FormValidator](https://ej2.syncfu
 * Initialize and render FormValidator for the form using form ID.
 * Set the required property in the FormValidator [rules](https://ej2.syncfusion.com/documentation/form-validator/api-formValidator.html?lang=typescript#rules) collection. Here, the [min](https://ej2.syncfusion.com/documentation/slider/api-slider.html?lang=typescript#min) property of slider that sets the minimum value in the slider control is set, and it has hidden input as enable `validateHidden` property is set to true.
 
-> Form validation is done either by ID or name value of the slider control. Above ID of the slider is used to validate it.
+N> Form validation is done either by ID or name value of the slider control. Above ID of the slider is used to validate it.
 
 Using slider name: Render slider with name attribute. In the following code snippet, name attribute value of slider is used for form validation.
 

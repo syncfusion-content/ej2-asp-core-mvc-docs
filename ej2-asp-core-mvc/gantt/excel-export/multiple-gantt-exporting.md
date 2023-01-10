@@ -42,7 +42,7 @@ The Excel export provides support to export multiple Gantt data in the same shee
 
 
 
->By default, `multipleExport.blankRows` value is 5.
+N>By default, `multipleExport.blankRows` value is 5.
 
 ## New sheet
 
@@ -201,7 +201,7 @@ To apply theme in exported Excel, define the `theme` in `ExcelExportProperties`.
 
 
 
-> By default, material theme is applied to the exported Excel document.
+N> By default, material theme is applied to the exported Excel document.
 
 ### Add header and footer
 

@@ -28,7 +28,7 @@ This section briefly explains about how to include [ASP.NET Core Maps](https://w
 
 Syncfusion ASP.NET Core components are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core components in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
@@ -133,7 +133,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Maps Component](images/maps-control.png)
 
-> Only if [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) is provided, map layers will render.
+N> Only if [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) is provided, map layers will render.
 
 ## Bind data source to map
 
@@ -231,7 +231,7 @@ Specify the color and value in the [`MapsColorMapping`](https://help.syncfusion.
 
 ![ASP.NET Core Maps with Color Mapping](images/maps-color-mapping.png)
 
-> Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
+N> Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
 
 ## Add title to Maps
 
@@ -300,7 +300,7 @@ Legend can be added to the Maps to summarize the data bound to the map. To enabl
 
 ![ASP.NET Core Maps with Legend](images/maps-legend.png)
 
-> Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
+N> Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
 
 ## Add data label
 
@@ -362,7 +362,7 @@ When the data labels can't display the information due to space constraints, the
 
 ![ASP.NET Core Maps with Tooltip](images/maps-tooltip.png)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Maps/ASP.NET%20Core%20Tag%20Helper%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Maps/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

@@ -333,7 +333,7 @@ Using this property, you can configure the  `start`, `end`, `text`, `maximumText
 
 Using this property, you can trim and wrap the multilevel labels.
 
-> This support works in x-axis only.
+N> This support works in x-axis only.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
