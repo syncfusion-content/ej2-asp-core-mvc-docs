@@ -28,7 +28,7 @@ The following table represents the basic operations available in the file manage
 |upload|Upload files to the current path or directory in the file system.|
 |download|Downloads the file from the server and the multiple files can be downloaded as ZIP files.|
 
->The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the file manager only after the successful response from the server.
+N>The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the file manager only after the successful response from the server.
 
 ## Folder Upload support
 
@@ -812,7 +812,7 @@ The following table represents the request parameters of *download* operations.
             _fm_htmlAttr:
             {
                 class:"e-large-icon",
-                title:"1.png"
+                title:"Employee.png"
             }
         }
     ]

@@ -27,7 +27,7 @@ When a root node is expanded, its child nodes are rendered and are cached locall
 
 Similarly, if the user navigates to a new page, the root nodes of that specific page, will be rendered with request to the remote server.
 
->Remote Data Binding supports only Self-Referential Data and by default the `pageSizeMode` for Remote Data is `Root` mode. i.e only root node’s count will be shown in pager while using Remote Data
+N>Remote Data Binding supports only Self-Referential Data and by default the `pageSizeMode` for Remote Data is `Root` mode. i.e only root node’s count will be shown in pager while using Remote Data
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -51,9 +51,9 @@ Similarly, if the user navigates to a new page, the root nodes of that specific 
 
 
 
-> By default, **DataManager** uses **ODataAdaptor** for remote data-binding.
-> Based on the RESTful web services, set the corresponding adaptor to DataManager. Refer [`here`](https://ej2.syncfusion.com/documentation/data/adaptors/?no-cache=1) for more details.
-> Filtering and searching server-side data operations are not supported in load on demand
+N> By default, **DataManager** uses **ODataAdaptor** for remote data-binding.
+<br/> Based on the RESTful web services, set the corresponding adaptor to DataManager. Refer [`here`](https://ej2.syncfusion.com/documentation/data/adaptors/?no-cache=1) for more details.
+<br/> Filtering and searching server-side data operations are not supported in load on demand
 
 ## LoadChildOnDemand
 
@@ -85,7 +85,7 @@ The following code example describes the behavior of the LoadChildOnDemand featu
 
 
 
-> Also while using **LoadChildOnDemand** we need to handle the child records on server end and it is applicable to CRUD operations also.
+N> Also while using **LoadChildOnDemand** we need to handle the child records on server end and it is applicable to CRUD operations also.
 
 ## Offline mode
 
@@ -193,6 +193,10 @@ The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/cref
 
 
 
+
+N> The [`actionFailure`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ActionFailure.html) event will be triggered not only for the server errors, but also when there is an exception while processing the treegrid actions.
+<br/> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+
 > The [`actionFailure`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ActionFailure.html) event will be triggered not only for the server errors, but also when there is an exception while processing the treegrid actions.
 
 
@@ -260,3 +264,4 @@ When using virtualization with `loadChildOnDemand` , it helps you to improve the
 
 
 > You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+

@@ -97,8 +97,9 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 
 
 
-> You can expand all the rows by using **expandAll** method.
-> If you want to expand all the rows at initial Grid rendering, then use **expandAll** method in [`DataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid.
+
+N> You can expand all the rows by using **expandAll** method.
+<br/> If you want to expand all the rows at initial Grid rendering, then use **expandAll** method in [`DataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid.
 
 ## Limitations for detail template
 
@@ -117,3 +118,26 @@ Detail template is not supported with the following features:
 * Lazy load grouping
 * State persistence
 * Hierarchy Grid
+
+N> You can expand all the rows by using **expandAll** method.
+<br/> If you want to expand all the rows at initial Grid rendering, then use **expandAll** method in [`DataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid.
+
+
+## Limitations for detail template
+
+Detail template is not supported with the following features:
+
+* Frozen rows and columns
+* Immutable mode
+* Infinite scrolling
+* Virtual scrolling
+* Pdf export
+* Excel export
+* Print
+* Row template
+* Row spanning
+* Column spanning
+* Lazy load grouping
+* State persistence
+* Hierarchy Grid
+

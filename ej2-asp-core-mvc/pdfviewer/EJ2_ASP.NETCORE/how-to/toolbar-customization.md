@@ -168,7 +168,7 @@ The PDF Viewer provides API for user interactions options provided in its built-
 </style>
 ```
 
->The icons are embedded in the font file used in the previous code snippet.
+N>The icons are embedded in the font file used in the previous code snippet.
 
 **Step 6:** Add the following scripts for performing user interaction in PDF Viewer in code behind.
 

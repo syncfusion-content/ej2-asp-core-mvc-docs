@@ -175,7 +175,7 @@ The remove handler receives the posted files and handle the remove operation in 
 * When the files are removed successfully from the server, the [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) event triggers to denote the process has completed.
 * When remove action fails, the event [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) triggers with information, which cause failure in remove process.
 
-> You can differentiate the file operation whether the success event triggers from save or remove action in its arguments [eventArgs.operation](https://ej2.syncfusion.com/documentation/api/uploader/successEventArgs/#operation).
+N> You can differentiate the file operation whether the success event triggers from save or remove action in its arguments [eventArgs.operation](https://ej2.syncfusion.com/documentation/api/uploader/successEventArgs/#operation).
 
 You can remove the files which is not uploaded locally by clicking the remove icon. In this case, the success or failure events will not be triggered.
 
@@ -354,7 +354,7 @@ The following code block shows how to add the additional headers with save and r
 
 ```
 
-> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
 
 ## See Also
 

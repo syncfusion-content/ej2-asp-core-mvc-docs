@@ -13,7 +13,7 @@ documentation: ug
 
 The Spreadsheet provides support for the clipboard operations (cut, copy, and paste). Clipboard operations can be enabled or disabled by setting the [`enableClipboard`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_EnableClipboard) property in Spreadsheet.
 
-> By default, the `enableClipboard` property is true.
+N> By default, the `enableClipboard` property is true.
 
 ## Cut
 
@@ -59,7 +59,7 @@ Paste can be done in one of the following ways.
 * Using `Ctrl + V` | `Command + V` keyboard shortcut.
 * Using the `paste` method.
 
-> If you use the Keyboard shortcut key for cut (`Ctrl + X`) | copy (`Ctrl + C`) from other sources, you should use `Ctrl + V` shortcut while pasting into the spreadsheet.
+N> If you use the Keyboard shortcut key for cut (`Ctrl + X`) | copy (`Ctrl + C`) from other sources, you should use `Ctrl + V` shortcut while pasting into the spreadsheet.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

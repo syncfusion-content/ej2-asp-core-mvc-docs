@@ -52,7 +52,7 @@ While filtering, you can change the filter type to `Contains`, `StartsWith`, or 
 
 While filtering the data in the data source, you can allow the space in the middle of the mention using the [AllowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the data source does not match with the mentioned element data, the popup will be hidden on the space key press. The default value of the `AllowSpaces` is `false`.
 
-> By default, the `AllowSpaces` property is disabled, and the space ends the mention control search.
+N> By default, the `AllowSpaces` property is disabled, and the space ends the mention control search.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
