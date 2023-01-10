@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Export Options in ##Platform_Name## Grid Control | Syncfusion
+title: Excel Export Options in Syncfusion ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Excel Export Options in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Export Options
