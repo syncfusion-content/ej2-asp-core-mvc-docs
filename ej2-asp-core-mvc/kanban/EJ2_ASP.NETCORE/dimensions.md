@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Dimensions in ASP.NET Core Kanban Control | Syncfusion
-description: Learn here all about Dimensions in Syncfusion ASP.NET Core Kanban control of Syncfusion Essential JS 2 and more.
+title: Dimensions in ##Platform_Name## Kanban Component
+description: Learn here all about Dimensions in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dimensions
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
