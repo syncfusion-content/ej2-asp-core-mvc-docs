@@ -123,4 +123,4 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [Different Types of Badge](./types)
 
-N> You can also explore our [ASP.NET Core Badge Example](https://ej2.syncfusion.com/aspnetcore/Badge/Default#/bootstrap5) that shows you how to render and confugure the Badge in ASP.NET Core.
+N> You can also explore our [ASP.NET Core Badge Example](https://ej2.syncfusion.com/aspnetcore/Badge/Default#/bootstrap5) that shows you how to render and configure the Badge in ASP.NET Core.
