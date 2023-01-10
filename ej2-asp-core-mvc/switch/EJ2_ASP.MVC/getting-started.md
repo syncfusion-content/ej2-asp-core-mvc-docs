@@ -150,3 +150,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 ## See also
 
 * [How to customize the switch appearance](./how-to/customize-the-appearance-of-a-switch)
+
+N> You can explore our [ASP.NET MVC Toggle Switch Button example](https://ej2.syncfusion.com/aspnetmvc/Button/Switch#/bootstrap5) that shows you how to render the Toggle Switch Button in ASP.NET MVC.
