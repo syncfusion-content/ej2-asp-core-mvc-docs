@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Positions in ASP.NET MVC FloatingActionButton Control | Syncfusion
-description: Learn here all about Positions in Syncfusion ASP.NET MVC FloatingActionButton control of Syncfusion Essential JS 2 and more.
+title: Positions in ##Platform_Name## FloatingActionButton Control | Syncfusion
+description: Learn here all about Positions in Syncfusion ##Platform_Name## FloatingActionButton control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Positions
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
