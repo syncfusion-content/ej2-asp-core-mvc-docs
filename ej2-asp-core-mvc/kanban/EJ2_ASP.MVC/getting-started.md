@@ -233,3 +233,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 ## See also
 
 * [Real time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
+
+N> You can also explore our [ASP.NET MVC Kanban Example](https://ej2.syncfusion.com/aspnetmvc/Kanban/Overview#/bootstrap5) that shows you how to render the Kanban in ASP.NET MVC.
