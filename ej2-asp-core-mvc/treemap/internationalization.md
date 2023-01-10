@@ -10,7 +10,7 @@ documentation: ug
 
 # Internationalization
 
-The [ASP.NET MVC TreeMap](https://www.syncfusion.com/aspnet-mvc-ui-controls/treemap) control supports internationalization for the following elements:
+The TreeMap control supports internationalization for the following elements:
 
 * Data label
 * Tooltip
