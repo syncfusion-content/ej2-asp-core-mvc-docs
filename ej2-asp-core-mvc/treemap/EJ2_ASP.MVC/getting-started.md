@@ -131,5 +131,3 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ![ASP.NET MVC TreeMap Control](images/treemap-control.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/TreeMap/ASP.NET%20MVC%20Razor%20Examples).
-
-N> You can also explore our [ASP.NET MVC TreeMap Example](https://ej2.syncfusion.com/aspnetmvc/TreeMap/Default#/bootstrap5) that shows you how to render the TreeMap in ASP.NET MVC.
