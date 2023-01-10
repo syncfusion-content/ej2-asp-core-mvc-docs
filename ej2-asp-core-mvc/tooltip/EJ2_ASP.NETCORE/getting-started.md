@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Tooltip Control
-description: Checkout and learn about getting started with ##Platform_Name## Tooltip control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Tooltip Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET Core Tooltip control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -159,3 +159,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [Positioning Tooltip](./position)
 * [Tooltip Open Mode](./open-mode)
 * [Customize the Tooltip](./customization)
+
+N> You can also explore our [ASP.NET Core Tooltip example](https://ej2.syncfusion.com/aspnetcore/Tooltip/DefaultFunctionalities#/bootstrap5) that shows you how to render the Tooltip in ASP.NET Core.
