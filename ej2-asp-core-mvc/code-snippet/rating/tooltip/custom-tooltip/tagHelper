@@ -21,12 +21,12 @@
 
     /* To change the color for arrow of the tooltip. */
     .customtooltip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom {
-        border: 12px #9693
+        border: 12px solid #9693
     }
 
     /* To change the top border color for arrow of the tooltip. */
     .customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
-        border-top: 9.5px solid #969393;
+        border-top: 12.5px solid #969393;
     }
 
 </style>
