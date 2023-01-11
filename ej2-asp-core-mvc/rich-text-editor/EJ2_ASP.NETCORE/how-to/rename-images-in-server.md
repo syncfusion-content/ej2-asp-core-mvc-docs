@@ -15,7 +15,7 @@ By using the [`insertImageSettings`](https://help.syncfusion.com/cr/aspnetcore-j
 
 Refer `controller` file for configure the server-side.
 
-> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-core-richtexteditor-rename-image) repository.
+N> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-core-richtexteditor-rename-image) repository.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

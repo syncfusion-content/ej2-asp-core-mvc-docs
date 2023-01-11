@@ -38,7 +38,7 @@ To bind remote data to grid component, assign service data as an instance of Dat
 
 
 
-> By default, DataManager uses **ODataAdaptor** for remote data-binding.
+N> By default, DataManager uses **ODataAdaptor** for remote data-binding.
 
 ## OData adaptor - Binding OData service
 
@@ -303,4 +303,4 @@ The parameters of DataManager bound to `DataManagerRequest` in the server. You c
 
 
 
-> If the grid rendered rows with empty/blank values then it can be resolved with the procedure explained [here](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/data-binding/data-binding#troubleshoot-grid-render-rows-without-data).
+N> If the grid rendered rows with empty/blank values then it can be resolved with the procedure explained [here](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/data-binding/data-binding#troubleshoot-grid-render-rows-without-data).

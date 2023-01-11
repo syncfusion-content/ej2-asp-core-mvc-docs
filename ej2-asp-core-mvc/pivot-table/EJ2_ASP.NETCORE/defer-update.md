@@ -55,7 +55,7 @@ The field list can be rendered in a static position, anywhere in web page layout
 
 To enable deferred updates in the static fieldlist, set the property [`allowDeferLayoutUpdate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_AllowDeferLayoutUpdate) in [`e-pivotfieldlist`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html) as **true**. To make a note, the defer update option can be controlled only via Field List during runtime.
 
-> To make field list interact with pivot table, you need to use the **UpdateView** and **Update** methods for data source update in both field list and pivot table simultaneously.
+N> To make field list interact with pivot table, you need to use the **UpdateView** and **Update** methods for data source update in both field list and pivot table simultaneously.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

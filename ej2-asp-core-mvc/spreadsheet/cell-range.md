@@ -114,7 +114,7 @@ The following features have some limitations in Merge:
 
 Data Validation is used to restrict the user from entering the invalid data. You can use the [`allowDataValidation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowDataValidation) property to enable or disable data validation.
 
-> * The default value for `allowDataValidation` property is `true`.
+N> * The default value for `allowDataValidation` property is `true`.
 
 ### Apply Validation
 
@@ -211,7 +211,7 @@ In Auto Fill we have following options,
 * Fill Formatting Only
 * Fill Without Formatting
 
->* The default auto fill option is “FillSeries” which can be referred from `fillType` property.
+N>* The default auto fill option is “FillSeries” which can be referred from `fillType` property.
 
 ### Copy Cells
 

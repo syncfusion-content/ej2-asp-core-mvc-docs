@@ -13,7 +13,7 @@ documentation: ug
 
 Hyperlink is used to navigate to web links or cell reference within the sheet or to other sheets in Spreadsheet. You can use the [`allowHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowHyperlink) property to enable or disable hyperlink functionality.
 
-> * The default value for `allowHyperlink` property is `true`.
+N> * The default value for `allowHyperlink` property is `true`.
 
 ## Insert Link
 
