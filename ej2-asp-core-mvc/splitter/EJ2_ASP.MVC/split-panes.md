@@ -116,8 +116,8 @@ Output be like the below.
 
 By default, pane separator will be render with `1px` width/height. You can customize the separator size by using [`SeparatorSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Splitter.html#Syncfusion_EJ2_Layouts_Splitter_SeparatorSize) API.
 
-> For Horizontal orientation, it will be considered as separator width.
-> For Vertical orientation, it will be considered as separator height.
+N> For Horizontal orientation, it will be considered as separator width.
+<br/> For Vertical orientation, it will be considered as separator height.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -152,7 +152,7 @@ Output be like the below.
 
 Splitter provides support to render the nested pane to achieve the complex layouts. You can use the same `<div>` element for splitter pane and nested splitter.
 
-> Also you can render the nested splitter using direct child of the splitter pane. For this, nested splitter should have `100%` width and height to match with the parent pane dimensions.
+N> Also you can render the nested splitter using direct child of the splitter pane. For this, nested splitter should have `100%` width and height to match with the parent pane dimensions.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

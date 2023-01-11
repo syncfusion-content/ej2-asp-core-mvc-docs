@@ -13,8 +13,8 @@ documentation: ug
 
 By default, resizing will be enable for split panes. Resizing gripper element will be add to the separator to makes the resize easy.
 
-> Horizontal splitter will allows to resize in horizontal directions.
-> Vertical splitter will allows to resize in vertical directions.
+N> Horizontal splitter will allows to resize in horizontal directions.
+<br/> Vertical splitter will allows to resize in vertical directions.
 
 While resizing, previous and next panes will be adjust its dimensions automatically.
 

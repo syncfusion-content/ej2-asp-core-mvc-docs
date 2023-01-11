@@ -179,7 +179,7 @@ The following table lists the available tools on the toolbar.
 
 By default, tool will be arranged in following order.
 
-> items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', '|', 'SourceCode', 'Undo', 'Redo']
+N> items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', '|', 'SourceCode', 'Undo', 'Redo']
 
 We can customize the tools order as our application requirement. If you are not specifying any tools order, the editor will create the toolbar with default items.
 

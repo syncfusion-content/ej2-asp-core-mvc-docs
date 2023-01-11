@@ -44,6 +44,9 @@ You can use TreeGrid [`dataSource`](https://help.syncfusion.com/cr/cref_files/as
 
 
 
+N> * If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
+<br/> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+
 > * If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
 
 
@@ -79,3 +82,4 @@ The `expandStateMapping` property maps the field name in data source, that denot
 
 
 > You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+
