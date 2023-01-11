@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header Bar in ##Platform_Name## Schedule Component
+title: Header Bar in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Header Bar in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Header Bar
@@ -100,7 +100,7 @@ By default, the header bar holds the view navigation options, through which the 
 
 
 
-> Refer [here](./resources/#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
+N> Refer [here](./resources/#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
 
 ## Date header customization
 
@@ -163,6 +163,35 @@ In month view, the date header template is not applicable and therefore the same
 {% endif %}
 
 
+## Customizing the date range text
+
+The `DateRangeTemplate` option allows you to customize the text content of the date range displayed in the scheduler. By default, the date range text is determined by the scheduler view being used. However, you can use the `DateRangeTemplate` option to override the default text and specify your own custom text to be displayed.
+
+The `DateRangeTemplate` property includes `startDate`, `endDate` and `currentView` options, you can customize the date range text using these available options.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 
 ## Customizing header indent cells
 
@@ -195,4 +224,4 @@ It is possible to customize the header indent cells using the `headerIndentTempl
 
 
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

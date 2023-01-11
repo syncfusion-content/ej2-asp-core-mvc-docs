@@ -4,7 +4,6 @@
     @Html.EJS().DocumentEditor("DocumentEditor2").IsReadOnly(false).EnableEditor(true).EnableSelection(true).EnableSfdtExport(true).EnablePrint(true).Render()
 </div>
 
-
 <script>
     var documenteditor1;
     var documenteditor2;
@@ -23,5 +22,4 @@
         documenteditor2.selection.sectionFormat.pageHeight = 595.30;
         documenteditor2.print();
     });
-
 </script>

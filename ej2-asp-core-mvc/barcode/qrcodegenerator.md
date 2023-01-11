@@ -113,4 +113,4 @@ In QR Code generators, you can customize the QR Code text by using display text 
 {% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Barcode/QRCodeandDataMatrixSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Barcode/QRCodeandDataMatrixSample).

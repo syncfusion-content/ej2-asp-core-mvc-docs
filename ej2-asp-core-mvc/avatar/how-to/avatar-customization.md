@@ -64,7 +64,7 @@ Even though the avatar comes with five predefined sizes, sometimes it's not enou
 
 ![Avatar Size](../images/customization.PNG)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Avatar/AvatarUGSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Avatar/AvatarUGSample).
 
 ## Use various media in avatar
 
