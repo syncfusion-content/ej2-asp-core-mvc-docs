@@ -1,0 +1,45 @@
+@using Syncfusion.EJ2.Notifications
+
+<div id="skeletonCard">
+    <div class='cardProfile'>        
+        <ejs-skeleton id="skeleton" shape="Circle" width="60px"></ejs-skeleton>
+    </div>
+    <div class="cardinfo">
+        <ejs-skeleton id="skeleton1" width="30%" height="15px"></ejs-skeleton><br/>
+        <ejs-skeleton id="skeleton2" width="15%" height="15px"></ejs-skeleton>
+    </div>
+    <div class="cardContent">        
+        <ejs-skeleton id="skeleton3" shape="Rectangle" width="100%" height="150px"></ejs-skeleton>
+    </div>
+    <div class="cardoptions">
+        <ejs-skeleton id="skeleton4" shape="Rectangle" width="20%" height="32px"></ejs-skeleton>
+        <ejs-skeleton id="skeleton5" shape="Rectangle" width="20%" height="32px"></ejs-skeleton>
+    </div>
+</div>
+
+<style>
+    #skeletonCard {
+        padding: 10px;
+        line-height: inherit;
+        height: 330px;
+    }
+
+    #skeletonCard .cardProfile {
+        float: left;
+        margin-right: 15px;
+    }
+
+    #skeletonCard .cardinfo {
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    #skeletonCard .cardContent {
+        margin: 20px 0px 20px;
+    }
+
+    #skeletonCard .cardoptions {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>

@@ -34,7 +34,7 @@ Refer to [ASP.NET MVC Deployment](https://docs.microsoft.com/en-us/aspnet/core/h
 
 * Then, click `Save` and `Publish`.
 
-> Refer [here](https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=netframework48&pivots=development-environment-vs#publish-your-web-app) for publishing the application to Azure App Service using Visual Studio.  
+N> Refer [here](https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=netframework48&pivots=development-environment-vs#publish-your-web-app) for publishing the application to Azure App Service using Visual Studio.  
 
 ## Publish ASP.NET MVC Application with CLI
 

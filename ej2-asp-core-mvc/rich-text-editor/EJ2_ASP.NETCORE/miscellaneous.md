@@ -209,7 +209,7 @@ In the following sample, removed `script` tag and `onmouseover` attribute from c
 
 
 
-> It is only applicable to editorMode as HTML.
+N> It is only applicable to editorMode as HTML.
 
 ### Custom cross-site scripting
 

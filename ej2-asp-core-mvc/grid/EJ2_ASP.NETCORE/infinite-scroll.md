@@ -15,7 +15,7 @@ Infinite scrolling is used to load a huge amount of data without degrading the G
 
 To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 
-> * In this feature, Grid will not make a new data request when you visit the same page again.
+N> * In this feature, Grid will not make a new data request when you visit the same page again.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

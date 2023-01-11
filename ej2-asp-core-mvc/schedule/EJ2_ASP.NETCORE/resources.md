@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resources in ##Platform_Name## Schedule Component
+title: Resources in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Resources in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resources
@@ -139,7 +139,7 @@ The appointments belonging to the different resources will be displayed altogeth
 
 
 
-> Setting `allowMultiple` to `true` in the above code example allows you to select multiple resources from the event editor and also creates multiple copies of the same appointment in the Scheduler for each resources while rendering.
+N> Setting `allowMultiple` to `true` in the above code example allows you to select multiple resources from the event editor and also creates multiple copies of the same appointment in the Scheduler for each resources while rendering.
 
 ## Resource grouping
 
@@ -236,7 +236,7 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 
 
 
-> The `name` field defined in the **resources** collection namely `Owners` will be mapped within the `group` property, in order to enable the grouping option with those resource levels on the Scheduler.
+N> The `name` field defined in the **resources** collection namely `Owners` will be mapped within the `group` property, in order to enable the grouping option with those resource levels on the Scheduler.
 
 ### Grouping multi-level resources
 
@@ -327,7 +327,7 @@ It groups the number of resources under each date and is applicable only on the 
 
 
 
-> This kind of grouping by date is not applicable on any of the **timeline views**.
+N> This kind of grouping by date is not applicable on any of the **timeline views**.
 
 ## Customizing parent resource cells
 
@@ -362,7 +362,7 @@ In timeline view work cells of parent resource can be customized by checking the
 
 Multiple resources can share the same events, thus allowing the CRUD action made on it to reflect on all other shared instances simultaneously. To enable such option, set `allowGroupEdit` option to `true` within the `group` property. With this property enabled, a single appointment object will be maintained within the appointment collection, even if it is shared by more than one resource – whereas the resource fields of such appointment object will be in array which hold the IDs of the multiple resources.
 
-> Any actions such as create, edit or delete held on any one of the shared event instances, will be reflected on all other related instances visible on the UI.
+N> Any actions such as create, edit or delete held on any one of the shared event instances, will be reflected on all other related instances visible on the UI.
 
 **Example:** To edit all the resource events simultaneously,
 
@@ -422,7 +422,7 @@ It is possible to customize the resource header cells using built-in template op
 
 
 
-> To customize the resource header in compact mode properly make use of the class `e-device` as in the code example.
+N> To customize the resource header in compact mode properly make use of the class `e-device` as in the code example.
 
 ![Resource header template in compact mode](images/header-template.png)
 
@@ -515,7 +515,7 @@ In the following example, the colors mentioned in the second level will get appl
 
 
 
-> The value of the `resourceColorField` field should be mapped with the `name` value given within the `resources` property.
+N> The value of the `resourceColorField` field should be mapped with the `name` value given within the `resources` property.
 
 ## Dynamically add and remove resources
 
@@ -615,6 +615,42 @@ Working hours indicates the work hour duration of a day, which is highlighted vi
 
 In this example, a resource named `Will Smith` is depicted with working hours ranging from 8.00 AM to 3.00 PM and is visually illustrated with active colors, whereas the other two resources have different working hours set.
 
+## Hide non-working days when grouped by date
+
+In Scheduler, you can set custom work days for each resource and group the Scheduler by date to display these work days. By default, the Scheduler will show all days when it is grouped by date, even if they are not included in the custom work days for the resources. However, you can use the `HideNonWorkingDays` property to only display the custom work days in the Scheduler.
+
+To use the `HideNonWorkingDays` property, you need to include it in the configuration options for your Scheduler component. Set the value of `HideNonWorkingDays` to `true` to enable this feature.
+
+**Example:** To display the Scheduler with resources grouped by date for custom working days,
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+{% endtab %}
+
+N> The `HideNonWorkingDays` property only applies when the Scheduler is grouped `byDate`.
+
 ## Compact view in mobile
 
 Although the Scheduler views are designed keeping in mind the responsiveness of the control in mobile devices, however when using Scheduler with multiple resources - it is difficult to view all the resources and its relevant events at once on the mobile. Therefore, we have introduced a new compact mode specially for displaying multiple resources of Scheduler on mobile devices. By default, this mode is enabled while using Scheduler with multiple resources on mobile devices. If in case, you need to disable this compact mode, set `false` to the `enableCompactView` option within the `group` property. Disabling this option will display the exact desktop mode of Scheduler view on mobile devices.
@@ -658,4 +694,4 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 
 
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

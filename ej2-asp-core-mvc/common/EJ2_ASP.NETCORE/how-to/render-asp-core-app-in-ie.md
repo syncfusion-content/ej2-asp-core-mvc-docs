@@ -36,7 +36,7 @@ The following steps to add the polyfills in the ASP.NET Core application.
 {% endhighlight %}
 {% endtabs %}
 
-> This [polyfill](https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js) is required to configure in ASP.NET Core application for IE 11 web browser. For further detail, refer to the link [here](https://github.com/stefanpenner/es6-promise).
+N> This [polyfill](https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js) is required to configure in ASP.NET Core application for IE 11 web browser. For further detail, refer to the link [here](https://github.com/stefanpenner/es6-promise).
 
 3.Run the application in the IE 11 web browser and the Syncfusion ASP.NET Core Control is now rendered on IE 11.
 

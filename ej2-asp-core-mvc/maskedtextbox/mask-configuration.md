@@ -13,7 +13,7 @@ documentation: ug
 
 The mask is a combination of standard and custom mask elements that validates the user input based on its behavior.
 
-> When the mask value is empty, the MaskedTextBox behaves as an input element with text type.
+N> When the mask value is empty, the MaskedTextBox behaves as an input element with text type.
 
 ## Standard mask elements
 

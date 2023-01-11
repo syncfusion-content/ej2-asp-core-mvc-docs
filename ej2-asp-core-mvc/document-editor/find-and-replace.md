@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Find And Replace in ##Platform_Name## Document Editor Component
+title: Find And Replace in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about find and replace in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Find And Replace
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Find and Replace
+# Find and Replace in Document Editor Component
 
 The document editor component searches a portion of text in the document through a built-in interface called `OptionsPane` or rich APIs. When used in combination with selection performs various operations on the search results like replacing it with some other text, highlighting it, making it bolder, and more.
 
@@ -46,29 +46,29 @@ The `Search` module of Document Editor exposes the following APIs:
 
 |API Name|Type |Description|
 |---|---|---|
-|[`findAll()`](../api/document-editor/search/#findall)| Method |Searches for specified text in the whole document and highlights it with yellow.|
-|[`searchResults`](../api/document-editor/search/#searchresults) |Property |This is an instance of `SearchResults`.|
-|[`find()`](../api/document-editor/search/#find) | Method |Find immediate occurrence of specified text from cursor position in the document and highlights it with yellow.|
+|`findAll()` | Method |Searches for specified text in the whole document and highlights it with yellow.|
+|`searchResults` |Property |This is an instance of `SearchResults`.|
+|`find()` | Method |Find immediate occurrence of specified text from cursor position in the document and highlights it with yellow.|
 
 ### Find the immediate occurrence in the document
 
-Using [`find()`](../api/document-editor/search/#find) method, you can find the immediate occurrence of specified text from current cursor position in the document.
+Using `find()` method, you can find the immediate occurrence of specified text from current cursor position in the document.
 
 ```typescript
 documenteditor.search.find('Some text', 'None');
 ```
 
-> Second parameter is optional parameter and it denotes find Options. Possible values of find options are `'None' |'WholeWord' |'CaseSensitive'| 'CaseSensitiveWholeWord'`.
+N> Second parameter is optional parameter and it denotes find Options. Possible values of find options are `'None' |'WholeWord' |'CaseSensitive'| 'CaseSensitiveWholeWord'`.
 
 ### Find all the occurrences in the document
 
-Using [`findAll()`](../api/document-editor/search/#findall) method, you can find all the occurrences of specified text in the whole document and highlight it with yellow.
+Using `findAll()` method, you can find all the occurrences of specified text in the whole document and highlight it with yellow.
 
 ```typescript
 documenteditor.search.findAll('Some text', 'None');
 ```
 
-> Second parameter is optional parameter and it denotes to find Options. Possible values of find options are `'None' |'WholeWord' |'CaseSensitive'| 'CaseSensitiveWholeWord'`.
+N> Second parameter is optional parameter and it denotes to find Options. Possible values of find options are `'None' |'WholeWord' |'CaseSensitive'| 'CaseSensitiveWholeWord'`.
 
 ## Search results
 
@@ -76,14 +76,14 @@ The `SearchResults` class provides information about the search results after se
 
 |API Name|Type |Description|
 |---|---|---|
-|[`length`](../api/document-editor/searchResults/#length)|Property|Returns the total number of results found on the search.|
-|[`index`](../api/document-editor/searchResults/#index)|Property|Returns the index of selected search result. You can change the value for this property to move the selection.|
-|[`replaceAll()`](../api/document-editor/searchResults/#replaceall)|Method|Replaces all the occurrences with specified text.|
-|[`clear()`](../api/document-editor/searchResults/#clear)|Method|Clears the search result.|
+|`length` |Property|Returns the total number of results found on the search.|
+|`index` |Property|Returns the index of selected search result. You can change the value for this property to move the selection.|
+|`replaceAll()` |Method|Replaces all the occurrences with specified text.|
+|`clear()` |Method|Clears the search result.|
 
 ### Replace all the occurrences
 
-Using [`replaceAll`](../api/document-editor/searchResults/#replaceall), you can replace all the occurrences with specified text.
+Using `replaceAll`, you can replace all the occurrences with specified text.
 
 ```typescript
 documentEditor.search.findAll ('Some text');
@@ -93,12 +93,12 @@ documentEditor.search.searchResults.replaceAll("Mike");
 
 ### Replace
 
-Using [`insertText`](../api/document-editor/editor/#inserttext), you can replace the current searched text with specified text and it replaces single occurrence.
+Using `insertText`, you can replace the current searched text with specified text and it replaces single occurrence.
 
->Note: This [`insertText`](../api/document-editor/editor/#inserttext) API accepts following control characters.
->* New line characters ("\r", "\r\n", "\n") - Inserts a new paragraph and appends the remaining text to the new paragraph.
->* Line break character ("\v") - Moves the remaining text to start in new line.
->* Tab character ("\t") - Allocates a tab space and continue the next character.
+N>Note: This `insertText` API accepts following control characters.
+<br/>* New line characters ("\r", "\r\n", "\n") - Inserts a new paragraph and appends the remaining text to the new paragraph.
+<br/>* Line break character ("\v") - Moves the remaining text to start in new line.
+<br/>* Tab character ("\t") - Allocates a tab space and continue the next character.
 
 ```typescript
 container.documentEditor.search.findAll('works');

@@ -76,13 +76,13 @@ To setup the column virtualization, set the [`enableVirtualization`](https://hel
 
 
 
-> Column's [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
+N> Column's [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
 
 ## Virtualization with grouping
 
 Both the row and column virtualization can be used along with grouping. At initial rendering, the virtual height of scrollbar will be set based on the total number of records and after grouping, it will be refreshed based on the grouped state(expand/collapse). While collapse the group caption row in current viewport then the next view page grouped records are shown.
 
-> The collapsed/expanded state will persist only for local dataSource while scrolling.
+N> The collapsed/expanded state will persist only for local dataSource while scrolling.
 
 ## Limitations for virtual scrolling
 
@@ -101,6 +101,7 @@ Both the row and column virtualization can be used along with grouping. At initi
 }
 ```
 
+
 * Programmatic selection using the **selectRows** method is not supported in virtual scrolling.
 
 ## Browser height limitation in virtual scrolling and solution
@@ -115,11 +116,11 @@ This height limitation is not related to the Grid component. It fully depends on
 
 The following image illustrates the height limitation issue of a normal HTML table in different browsers (Chrome and Firefox).
 
-![Browser height limitation in HTML table](../images/html-table.gif)
+![Browser height limitation in HTML table](images/html-table.gif)
 
 Grid component also faced the same issue as mentioned in the below image.
 
-![Grid with browser height limitation](../images/grid.gif)
+![Grid with browser height limitation](images/grid.gif)
 
 The Grid has an option to overcome this limitation of the browser in the following ways.
 
@@ -131,7 +132,7 @@ In the following sample, Grid is rendered with a large number of records(nearly 
 
 Let's see the step by step procedure for how we can overcome the limitation in the Syncfusion Grid component.
 
-1.	Create a custom adaptor by extending UrlAdaptor and binding it to the grid DataSource property. In the processQuery method of the custom adaptor, we handled the Skip query based on the current page set to perform the data operation with whole records on the server.
+1.Create a custom adaptor by extending UrlAdaptor and binding it to the grid DataSource property. In the processQuery method of the custom adaptor, we handled the Skip query based on the current page set to perform the data operation with whole records on the server.
 
 ```csharp
 export class CustomUrlAdaptor extends UrlAdaptor {
@@ -160,7 +161,7 @@ this.dataManager = new DataManager({
 });
 ```
 
-2.	Render the grid by define the following features.
+2.Render the grid by define the following features.
 
 ```csharp
 <GridComponent id='grid' ref={g => this.grid = g} dataSource={this.dataManager} enableVirtualization={true} pageSettings={this.pageSettings} height={360} beforeDataBound={this.beforeDataBound}>
@@ -171,7 +172,7 @@ this.dataManager = new DataManager({
 </GridComponent>
 ```                
 
-3.	In the beforeDataBound event, we set the args.count as 0.5 million to perform scrolling with 0.5 million records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 0.5 million means it will directly assigned the original segmented count instead of 0.5 million.
+3.In the beforeDataBound event, we set the args.count as 0.5 million to perform scrolling with 0.5 million records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 0.5 million means it will directly assigned the original segmented count instead of 0.5 million.
 
 ```csharp
     beforeDataBound(args) {
@@ -183,7 +184,7 @@ this.dataManager = new DataManager({
     }
 ```
 
-4.	Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the grid component.
+4.Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the grid component.
 
 ```csharp
 <div className="pagearea1">
@@ -201,7 +202,7 @@ this.dataManager = new DataManager({
 </div>
 ```
 
-5.	While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2 millions records after doing some simple calculation.
+5.While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2 millions records after doing some simple calculation.
 
 ```typescript
     // Triggered when clicking the Previous/ Next button.
@@ -216,13 +217,15 @@ this.dataManager = new DataManager({
 
  You can find the full code sample from the below GitHub location.
 
-> [View GitHub Sample](https://github.com/SyncfusionExamples/react-grid-load-millions-of-records/)
+
+N> [View GitHub Sample](https://github.com/SyncfusionExamples/react-grid-load-millions-of-records/)
 
 Also, you can view the hosted link for this sample [here](https://ej2.syncfusion.com/aspnetcore/Load_millions_of_records).
 
-![Prevent browser height limitation](../images/external-button.png)
+![Prevent browser height limitation](images/external-button.png)
 
-> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
+
+N> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
 
 ### Solution 2: Using RowHeight property
 
@@ -230,8 +233,15 @@ You can reduce the [row height](https://ej2.syncfusion.com/aspnetcore/documentat
 
 In the following image, you can see how many records will be scrollable when setting rowHeight to "36px" and "30px".
 
-![Row Height](../images/row-height.gif)
+![Row Height](images/row-height.gif)
 
 ### Solution 3: Using paging instead of virtual scrolling
 
+
 Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
+
+* Programmatic selection using the **selectRows** method is not supported in virtual scrolling.
+
+
+Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
+
