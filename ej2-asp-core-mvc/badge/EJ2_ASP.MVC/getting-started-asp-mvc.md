@@ -72,3 +72,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 ## See also
 
 [Types of Badge](./types)
+
+N> You can also explore our [ASP.NET MVC Badge Example](https://ej2.syncfusion.com/aspnetmvc/Badge/Default#/bootstrap5) that shows you how to render and configure the Badge in ASP.NET MVC.
