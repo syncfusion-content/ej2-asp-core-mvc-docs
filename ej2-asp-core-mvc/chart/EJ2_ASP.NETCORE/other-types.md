@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Other Types in ASP NET Core Chart Component
+title: Other Types in Syncfusion Aspnet Core Chart Component
 description: Learn here all about Other Types in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Other Types
