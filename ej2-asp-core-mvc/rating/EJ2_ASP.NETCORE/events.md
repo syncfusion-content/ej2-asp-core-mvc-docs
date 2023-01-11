@@ -14,7 +14,7 @@ This section describes the rating events that will be triggered when appropriate
 
 ## BeforeItemRender
 
-The rating component triggers the [beforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_BeforeItemRender) event before the rendering of the rating item is complete.
+The rating component triggers the [beforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_BeforeItemRender) event before rendering each rating item.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

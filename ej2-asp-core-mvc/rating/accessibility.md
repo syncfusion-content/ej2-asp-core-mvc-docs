@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ASP.NET MVC Rating Control
+# Accessibility in ##Platform_Name## Rating Control
 
 Accessibility is achieved in the rating component through `WAI-ARIA` standard and keyboard navigations. The Rating component can be effectively accessed through assistive technologies such as screen readers.
 
