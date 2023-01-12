@@ -11,8 +11,8 @@ public List<AppointmentData> GetScheduleData()
     {
         Id = 1,
         Subject = "Paris",
-        StartTime = new DateTime(2018, 1, 28, 10, 0, 0),
-        EndTime = new DateTime(2018, 1, 28, 12, 30, 0),
+        StartTime = new DateTime(2023, 1, 28, 10, 0, 0),
+        EndTime = new DateTime(2023, 1, 28, 12, 30, 0),
         CategoryColor = "#357cd2"
     });
     return appData;

@@ -47,6 +47,7 @@ By default, the rows of the calendar Month view can hold only the limited appoin
 {% endif %}
 
 
+![Display Row Auto Height in ASP.NET Core Scheduler Month View](images/schedule-auto-height-month-view.png)
 
 ## Timeline views
 
@@ -76,6 +77,7 @@ When the feature `rowAutoHeight` is enabled in Timeline views, the row height ge
 {% endif %}
 
 
+![Display Row Auto Height in ASP.NET Core Scheduler Timeline View](images/schedule-auto-height-timeline-view.png)
 
 ## Timeline views with multiple resources
 
@@ -105,6 +107,7 @@ The following example shows how the auto row adjustment feature works on timelin
 {% endif %}
 
 
+![Display Row Auto Height with Multiple Resources in ASP.NET Core Scheduler Timeline View](images/schedule-auto-height-with-resource.png)
 
 ## Appointments occupying entire cell
 
@@ -134,6 +137,7 @@ By default, with the feature `rowAutoHeight`, there will be a space in the botto
 {% endif %}
 
 
+![Display Appointments Occupying Entire Cell in ASP.NET Core Scheduler](images/schedule-entire-cell.png)
 
 **Note**: The property `ignoreWhitespace` will be applicable only when `rowAutoHeight` feature is enabled in the Scheduler.
 
