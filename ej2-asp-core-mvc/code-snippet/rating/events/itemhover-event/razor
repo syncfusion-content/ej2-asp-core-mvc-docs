@@ -4,7 +4,7 @@
 
 <script>
 
-    function OnItemHover() {
+    function OnItemHover(RatingHoverEventArgs args) {
         // Here, you can customize your code.
     }
 

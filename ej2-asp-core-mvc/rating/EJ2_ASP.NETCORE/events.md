@@ -14,7 +14,7 @@ This section describes the rating events that will be triggered when appropriate
 
 ## BeforeItemRender
 
-The rating control triggers the [beforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_BeforeItemRender) event before rendering each rating item.
+The rating control triggers the [beforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_BeforeItemRender) event before rendering each rating item. The `RatingItemEventArgs` passed as an event argument provides the details of the item to be rendered.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -34,7 +34,7 @@ The rating control triggers the [created](https://help.syncfusion.com/cr/aspnetc
 
 ## ValueChanged
 
-The rating control triggers the [valueChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ValueChanged) event when the value of the rating is changed. The changed value is passed as the event argument.
+The rating control triggers the [valueChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ValueChanged) event when the value of the rating is changed. The `RatingChangedEventArgs` passed as an event argument provides the details when value is changed.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -44,7 +44,7 @@ The rating control triggers the [valueChanged](https://help.syncfusion.com/cr/as
 
 ## OnItemHover
 
-The rating control triggers the [onItemHover](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_OnItemHover) passed as an event argument provides the details of the hovered item.
+The rating control triggers the [onItemHover](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_OnItemHover) event when the rating item is hovered. The `RatingHoverEventArgs` passed as an event argument provides the details of the hovered item.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

@@ -22,7 +22,7 @@ The Asp.Net Core rating control supports tooltip to show additional information 
 
 ## Tooltip template
 
-You can use the [tooltipTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_TooltipTemplate) tag directive to specify a custom template for the `Tooltip` of the rating. The current value of the rating will be passed as the `value` when building the content of the tooltip. This allows you to include dynamic information about the rating in the template.
+You can use the [tooltipTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_TooltipTemplate) tag directive to specify a custom template for the `Tooltip` of the rating. The current value of the rating will be passed as the `value` property in the template context when building the content of the tooltip. This allows you to include dynamic information about the rating in the template.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

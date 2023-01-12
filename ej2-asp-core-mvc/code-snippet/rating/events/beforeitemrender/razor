@@ -4,7 +4,7 @@
 
 <script>
 
-    function BeforeItemRender() {
+    function BeforeItemRender(RatingItemEventArgs args) {
         // Here, you can customize your code.
     }
 
