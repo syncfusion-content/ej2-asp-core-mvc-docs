@@ -139,7 +139,32 @@ Using [`EnablePan`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% endtabs %}
 {% endif %}
 
+## Enable Scrollbar
 
+Using [`EnableScrollbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html#Syncfusion_EJ2_Charts_ChartZoomSettings_EnableScrollbar) property, you can able to add scrollbar for zoomed chart. Using this scrollbar, you can pan or zoom the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/zoom/scroll/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Scroll.cs" %}
+{% include code-snippet/chart/user-interaction/zoom/scroll/scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/zoom/scroll/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Scroll.cs" %}
+{% include code-snippet/chart/user-interaction/zoom/scroll/scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Auto interval on zooming
 

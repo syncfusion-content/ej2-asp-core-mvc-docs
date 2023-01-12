@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Other Types in ##Platform_Name## Chart Component
+title: Other Types in Syncfusion Aspnet Core Chart Component
 description: Learn here all about Other Types in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Other Types
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Box and whisker
+# Box and Whisker in Aspnet Core Component
 
 To render a box and whisker chart, use series[`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `BoxAndWhisker`. The field y requires n number of data or it should contain minimum of five values to plot a segment.
 
@@ -104,7 +104,7 @@ In Box and Whisker series `showMean` property is used to show the box and whiske
 
 ## Waterfall Chart
 
-Waterfall chart helps to understand the cumulative effect of the sequentially introduced positive and negative values. To render a Waterfall series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Waterfall`. [`intermediateSumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IntermediateSumIndexes) property of waterfall is used to represent inbetween the sum values and [`sumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_SumIndexes) is used to represent the cumulative sum values.
+Waterfall chart helps to understand the cumulative effect of the sequentially introduced positive and negative values. To render a Waterfall series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Waterfall`. [`intermediateSumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IntermediateSumIndexes) property of waterfall is used to represent in between the sum values and [`sumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_SumIndexes) is used to represent the cumulative sum values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -129,7 +129,32 @@ Waterfall chart helps to understand the cumulative effect of the sequentially in
 {% endtabs %}
 {% endif %}
 
+## Histogram Series
 
+Histogram type charts can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form. To render a histogram chart, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as Histogram.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/other-types/histogram/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Histogram.cs" %}
+{% include code-snippet/chart/series/other-types/histogram/histogram.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/other-types/histogram/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Histogram.cs" %}
+{% include code-snippet/chart/series/other-types/histogram/histogram.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 **Customization of Waterfall Series**
 
