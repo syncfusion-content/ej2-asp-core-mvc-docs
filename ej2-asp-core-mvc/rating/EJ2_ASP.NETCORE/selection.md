@@ -10,7 +10,7 @@ documentation: ug
 
 # Selection in Asp.Net Core Rating Control
 
-The Asp.Net Core Rating component allows users to rate something using a visual scale, and the selection state can be changed by the user clicking or tapping on the stars in the rating scale or through code. The Rating component has a minimum value and a reset button, and provides customization options for the selected rating value and selection behavior.
+The Asp.Net Core Rating control allows users to rate something using a visual scale, and the selection state can be changed by the user clicking or tapping on the stars in the rating scale or through code. The Rating control has a minimum value and a reset button, and provides customization options for the selected rating value and selection behavior.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -18,11 +18,11 @@ The Asp.Net Core Rating component allows users to rate something using a visual 
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Component with Selction](./images/rating-selection.png)
+![Asp.Net Core Rating Control with Selction](./images/rating-selection.png)
 
 ## Min value
 
-You can use the [min](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Min) property of the Asp.Net Core Rating component to set the minimum possible rating value the user can select. If you set the `min` property to 2, then you will not be able to select a rating lower than 2.
+You can use the [min](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Min) property of the Asp.Net Core Rating control to set the minimum possible rating value the user can select. If you set the `min` property to 2, then you will not be able to select a rating lower than 2.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -30,10 +30,10 @@ You can use the [min](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Component with Minimum Value](./images/rating-min.png)
+![Asp.Net Core Rating Control with Minimum Value](./images/rating-min.png)
 
 ## Single selection
-You can use the [enableSingleSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_EnableSingleSelection) property of the Asp.Net Core Rating component to select only one item at a time. When the `enableSingleSelection` property is set to `true`, only the selected item will be considered to be in the selected state, while all other items will be unselected.
+You can use the [enableSingleSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_EnableSingleSelection) property of the Asp.Net Core Rating control to select only one item at a time. When the `enableSingleSelection` property is set to `true`, only the selected item will be considered to be in the selected state, while all other items will be unselected.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -41,11 +41,11 @@ You can use the [enableSingleSelection](https://help.syncfusion.com/cr/aspnetcor
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Component with Single Selection](./images/rating-single-selection.png)
+![Asp.Net Core Rating Control with Single Selection](./images/rating-single-selection.png)
 
 ## Show or hide reset button
 
-You can reset the rating value to its default by using the [allowReset](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_AllowReset) property of the Asp.Net Core Rating component. When the `allowReset` property is set to `true`, a reset button will be shown that allows the user to reset the rating value to its default.
+You can reset the rating value to its default by using the [allowReset](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_AllowReset) property of the Asp.Net Core Rating control. When the `allowReset` property is set to `true`, a reset button will be shown that allows the user to reset the rating value to its default.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -53,4 +53,4 @@ You can reset the rating value to its default by using the [allowReset](https://
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Component with Reset button](./images/rating-allow-reset.png)
+![Asp.Net Core Rating Control with Reset button](./images/rating-allow-reset.png)

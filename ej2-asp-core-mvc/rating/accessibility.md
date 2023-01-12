@@ -10,11 +10,11 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## Rating Control
 
-Accessibility is achieved in the rating component through `WAI-ARIA` standard and keyboard navigations. The Rating component can be effectively accessed through assistive technologies such as screen readers.
+Accessibility is achieved in the rating control through `WAI-ARIA` standard and keyboard navigations. The Rating control can be effectively accessed through assistive technologies such as screen readers.
 
 ## Keyboard interaction
 
-The rating component is interactive with below keyboard shortcuts.
+The rating control is interactive with below keyboard shortcuts.
 
 | Keyboard shortcuts | Actions |
 |------------|-------------------|
@@ -26,7 +26,7 @@ The rating component is interactive with below keyboard shortcuts.
 
 ## ARIA attribute
 
-The following ARIA attributes are used in rating component based on its state.
+The following ARIA attributes are used in rating control based on its state.
 
 | Properties | Functionality |
 | ------------ | ----------------------- |

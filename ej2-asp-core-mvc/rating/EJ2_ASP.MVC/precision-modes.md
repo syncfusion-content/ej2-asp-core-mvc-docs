@@ -10,7 +10,7 @@ documentation: ug
 
 # Precision Modes in Asp.Net MVC Rating Control
 
-You can use the [Precision](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Precision) property of the Asp.Net MVC Rating component to provide ratings with varying levels of precision.
+You can use the [Precision](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Precision) property of the Asp.Net MVC Rating control to provide ratings with varying levels of precision.
 
 The precision types of Rating are as follows:
 
@@ -32,4 +32,4 @@ The precision types of Rating are as follows:
 
 {% endif %}
 
-![Asp.Net MVC Rating Component with different Precision Types](./images/rating-precision-types.png)
+![Asp.Net MVC Rating Control with different Precision Types](./images/rating-precision-types.png)

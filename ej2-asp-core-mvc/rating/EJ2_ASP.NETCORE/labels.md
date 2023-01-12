@@ -18,11 +18,11 @@ You can use the [showLabel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Component with Label](./images/rating-label.png)
+![Asp.Net Core Rating Control with Label](./images/rating-label.png)
 
 ## Label position
 
-The Rating component allows you to place the label on the top, bottom, left, or right side of the rating using the [labelPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_LabelPosition) property. 
+The Rating control allows you to place the label on the top, bottom, left, or right side of the rating using the [labelPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_LabelPosition) property. 
 
 The following label positions are supported:
 
@@ -37,7 +37,7 @@ The following label positions are supported:
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Component with different label positions](./images/rating-label-positions.png)
+![Asp.Net Core Rating Control with different label positions](./images/rating-label-positions.png)
 
 
 ## Label template
@@ -50,4 +50,4 @@ You can use the [labelTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Component with Label template](./images/rating-label-template.png)
+![Asp.Net Core Rating Control with Label template](./images/rating-label-template.png)

@@ -10,11 +10,11 @@ documentation: ug
 
 # Events in Rating Control
 
-This section describes the rating events that will be triggered when appropriate actions are performed. The following events are available in the rating component.
+This section describes the rating events that will be triggered when appropriate actions are performed. The following events are available in the rating control.
 
 ## BeforeItemRender
 
-The rating component triggers the [BeforeItemRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_BeforeItemRender) event before rendering each rating item.
+The rating control triggers the [BeforeItemRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_BeforeItemRender) event before rendering each rating item.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -27,7 +27,7 @@ The rating component triggers the [BeforeItemRender](https://help.syncfusion.com
 
 ## Created
 
-The rating component triggers the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Created) event when the rendering of the rating component is completed.
+The rating control triggers the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Created) event when the rendering of the rating control is completed.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -40,7 +40,7 @@ The rating component triggers the [Created](https://help.syncfusion.com/cr/aspne
 
 ## ValueChanged
 
-The rating component triggers the [ValueChanged](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ValueChanged) event when the value of the rating is changed. The changed value is passed as the event argument.
+The rating control triggers the [ValueChanged](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ValueChanged) event when the value of the rating is changed. The changed value is passed as the event argument.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -53,7 +53,7 @@ The rating component triggers the [ValueChanged](https://help.syncfusion.com/cr/
 
 ## OnItemHover
 
-The rating component triggers the [OnItemHover](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_OnItemHover) passed as an event argument provides the details of the hovered item.
+The rating control triggers the [OnItemHover](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_OnItemHover) passed as an event argument provides the details of the hovered item.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

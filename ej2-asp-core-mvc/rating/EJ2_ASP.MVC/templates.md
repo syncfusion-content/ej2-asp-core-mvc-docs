@@ -10,9 +10,9 @@ documentation: ug
 
 # Templates in Asp.Net MVC Rating Control
 
-The Asp.Net MVC Rating component allows you to customize the appearance of the rating items using templates. You can use templates to specify a custom layout for the rating items, which can include any content you want. This allows you to create a more customized and interactive rating experience for the user.
+The Asp.Net MVC Rating control allows you to customize the appearance of the rating items using templates. You can use templates to specify a custom layout for the rating items, which can include any content you want. This allows you to create a more customized and interactive rating experience for the user.
 
-The rating component supports below templates for item customization.
+The rating control supports below templates for item customization.
 
 * [EmptyTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_EmptyTemplate)
 * [FullTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_FullTemplate)
@@ -36,13 +36,13 @@ If the `FullTemplate` is not defined, the `EmptyTemplate` will be used as the de
 
 {% endif %}
 
-![Asp.Net MVC Rating Component with EmptyTemplate](./images/rating-empty-template.png)
+![Asp.Net MVC Rating Control with EmptyTemplate](./images/rating-empty-template.png)
 
 N> The current value of the rating item available in the template context as `value` and in the rating item element as CSS Variable (`--rating-value`) can be used to support precision in templates.
 
 ## Full (rated) symbol template
 
-To customize the appearance of **rated** items in the Syncfusion Asp.Net MVC rating component, you can use the `FullTemplate` tag directive. This directive allows you to specify a custom layout for the rated items, which can include any content you desire.
+To customize the appearance of **rated** items in the Syncfusion Asp.Net MVC rating control, you can use the `FullTemplate` tag directive. This directive allows you to specify a custom layout for the rated items, which can include any content you desire.
 The `value` and `index` are available in the template context for accessing information about the rated item.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
@@ -58,7 +58,7 @@ The `value` and `index` are available in the template context for accessing info
 
 {% endif %}
 
-![Asp.Net MVC Rating Component with FullTemplate](./images/rating-full-template.png)
+![Asp.Net MVC Rating Control with FullTemplate](./images/rating-full-template.png)
 
 ## Using Emoji icon as rating symbol
 
@@ -77,7 +77,7 @@ You can use emojis of your choice as rating symbol by specifying them as templat
 
 {% endif %}
 
-![Asp.Net MVC Rating Component with Emoji Icon](./images/rating-emoji-icon.png)
+![Asp.Net MVC Rating Control with Emoji Icon](./images/rating-emoji-icon.png)
 
 ## Using SVG icon as rating symbol
 
@@ -96,7 +96,7 @@ You can use SVG icons of your choice as rating symbol by specifying them as temp
 
 {% endif %}
 
-![Asp.Net MVC Rating Component with SVG Icon](./images/rating-svg-icon.png)
+![Asp.Net MVC Rating Control with SVG Icon](./images/rating-svg-icon.png)
 
 ## Using PNG image as rating symbol
 
@@ -115,4 +115,4 @@ You can use PNG images of your choice as rating symbol by specifying them as tem
 
 {% endif %}
 
-![Asp.Net MVC Rating Component with PNG Icon](./images/rating-png.png)
+![Asp.Net MVC Rating Control with PNG Icon](./images/rating-png.png)
