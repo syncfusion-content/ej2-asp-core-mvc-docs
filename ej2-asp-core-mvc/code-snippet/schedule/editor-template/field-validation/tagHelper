@@ -6,7 +6,7 @@
     var descriptionValidationRules = new Dictionary<string, object>() { { "required", true }, { "minLength", 5 }, { "maxLength", 500 } };
 }
 
-<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 2, 15)" views="@ViewBag.view">
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2023, 2, 15)" views="@ViewBag.view">
     <e-schedule-eventsettings dataSource="@ViewBag.datasource">
         <e-eventsettings-fields>
             <e-field-subject name="Subject" validation="validationRules"></e-field-subject>
