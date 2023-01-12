@@ -54,11 +54,12 @@ Change the width, color, and radius of the heat map cells by using the [Border](
 
 ### Cell highlighting
 
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 Enable or disable the cell highlighting while hovering over the heatmap cells by using the [enableCellHighlighting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_EnableCellHighlighting) property.
 
-> The cell highlighting only works in a SVG rendering mode.
+N> The cell highlighting only works in a SVG rendering mode.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -73,7 +74,7 @@ Enable or disable the cell highlighting while hovering over the heatmap cells by
 
 Enable or disable the cell highlighting while hovering over the heat map cells by using the [EnableCellHighlighting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_EnableCellHighlighting) property.
 
-> The cell highlighting only works in a SVG rendering mode.
+N> The cell highlighting only works in a SVG rendering mode.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -95,7 +96,9 @@ The [colorGradientMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 * **Row**: The minimum and maximum value colors calculated for each row of data.
 * **Column**: The minimum and maximum value colors calculated for each column of data.
 
-> The default value of `colorGradientMode` is **Table**.
+
+N> The default value of `ColorGradientMode` is **Table**.
+
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -114,7 +117,7 @@ The [ColorGradientMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.
 * **Row**: The minimum and maximum value colors calculated for each row of data.
 * **Column**: The minimum and maximum value colors calculated for each column of data.
 
-> The default value of `ColorGradientMode` is Table.
+N> The default value of `ColorGradientMode` is Table.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

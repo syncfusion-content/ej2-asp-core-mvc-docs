@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2.Navigations;
+
+@(Html.EJS().Toolbar("defaultToolbar")
+    .Width("300px")
+    .Items(new List<ToolbarItem> {
+        new ToolbarItem { Text = "Cut", TabIndex = 0 },
+        new ToolbarItem { Text = "Copy", TabIndex = 0 },
+        new ToolbarItem { Type = ItemType.Separator },
+        new ToolbarItem { Text = "Paste", TabIndex = 0 },
+        new ToolbarItem { Type = ItemType.Separator },
+        new ToolbarItem { Text = "Undo", TabIndex = 0 },
+        new ToolbarItem { Text = "Redo", TabIndex = 0 }
+    })
+    .Render()
+)

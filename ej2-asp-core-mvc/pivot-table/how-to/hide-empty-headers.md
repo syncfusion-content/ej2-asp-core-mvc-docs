@@ -14,7 +14,7 @@ If the raw data for a particular field is not defined, it will be shown as 'Unde
 
 For example, if the raw data for the field 'Country' is defined as **"United Kingdom"** and **"State"** is not defined means, it will be shown as **"United Kingdom >> Undefined"** in the header section. Here, you can hide those 'Undefined' header using the `showHeaderWhenEmpty` property.
 
-> By default, this property is set as **true**.
+N> By default, this property is set as **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
