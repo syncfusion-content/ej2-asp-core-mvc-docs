@@ -41,6 +41,7 @@ By default, the header bar holds the date and view navigation options, through w
 {% endif %}
 
 
+![Display Show or Hide Header Bar in ASP.NET Core Scheduler](images/scheduler-hide-header.png)
 
 ## Customizing header bar
 
@@ -70,6 +71,7 @@ Apart from the default date navigation and view options available on the header 
 {% endif %}
 
 
+![Display Customizing Header Bar in ASP.NET Core Scheduler](images/scheduler-custom-header.png)
 
 ## How to display the view options within the header bar popup
 
@@ -99,6 +101,7 @@ By default, the header bar holds the view navigation options, through which the 
 {% endif %}
 
 
+![Display Header Bar Popup in ASP.NET Core Scheduler](images/scheduler-header-popup.png)
 
 N> Refer [here](./resources/#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
 
@@ -134,6 +137,7 @@ The `dateHeaderTemplate` option is used to customize the date header cells of da
 {% endif %}
 
 
+![Display Date Header Customization with Template in ASP.NET Core Scheduler](images/scheduler-custom-header-with-template.png)
 
 ### Using renderCell event
 
@@ -162,6 +166,7 @@ In month view, the date header template is not applicable and therefore the same
 {% endtabs %}
 {% endif %}
 
+![Display Date Header Customization with Render Cell in ASP.NET Core Scheduler](images/scheduler-custom-header-with-rendercell.png)
 
 ## Customizing the date range text
 
@@ -192,6 +197,7 @@ The `DateRangeTemplate` property includes `startDate`, `endDate` and `currentVie
 {% endtabs %}
 {% endif %}
 
+![Display Customizing the Date Range Text in ASP.NET Core Scheduler](images/scheduler-custom-date-range-text.png)
 
 ## Customizing header indent cells
 
@@ -223,5 +229,6 @@ It is possible to customize the header indent cells using the `headerIndentTempl
 {% endif %}
 
 
+![Display Customizing the Date Range Text in ASP.NET Core Scheduler](images/scheduler-header-indent-cell.png)
 
 N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
