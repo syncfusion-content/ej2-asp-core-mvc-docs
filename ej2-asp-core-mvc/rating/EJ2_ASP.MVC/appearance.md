@@ -48,7 +48,7 @@ You can disable the Syncfusion Asp.Net MVC Rating control by using the [Disabled
 
 {% endif %}
 
-![Asp.Net MVC Rating control with Disabled](images/rating-disabled.png)
+![Asp.Net MVC Rating Control with Disabled](images/rating-disabled.png)
 
 ## Visible
 
@@ -67,7 +67,7 @@ You can use the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 
 {% endif %}
 
-![Asp.Net MVC Rating ontrol with Visible](images/rating-full-precision.png)
+![Asp.Net MVC Rating Control with Visible](images/rating-full-precision.png)
 
 ## Read only
 
