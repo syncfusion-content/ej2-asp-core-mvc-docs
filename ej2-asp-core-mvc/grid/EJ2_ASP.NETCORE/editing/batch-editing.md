@@ -71,7 +71,7 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 
 ## Confirmation dialog
 
-By default, grid will show the confirm dialog when saving or cancelling or performing any actions like filtering, sorting, etc.
+By default, grid will show the confirm dialog when saving or canceling or performing any actions like filtering, sorting, etc.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
