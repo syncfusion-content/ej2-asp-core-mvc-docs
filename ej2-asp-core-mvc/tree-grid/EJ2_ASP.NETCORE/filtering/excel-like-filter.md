@@ -69,3 +69,7 @@ You can change the default excel-filter operator by changing the column operator
 
 
 > You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+
+
+> * By default, while opening the excel/checkbox filter in the TreeGrid, the filter dialog will get and display the distinct data from the first 1000 records bound to the TreeGrid to optimize performance. The remaining records will be returned as a result of the search option of the filter dialog.
+> * However, we can increase the excel/checkbox filter count by modifying the `filterChoiceCount` argument value(as per our need) in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionBegin) event when the `requestType` is `filterchoicerequest` or `filtersearchbegin`. 
