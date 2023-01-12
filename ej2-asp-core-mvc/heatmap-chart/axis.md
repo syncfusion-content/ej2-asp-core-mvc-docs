@@ -495,7 +495,7 @@ The [TextStyle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Heat
 {% endif %}
 
 
-### Border Customization
+#### Border Customization
 
 {% if page.publishingplatform == "aspnet-core" %}
 
