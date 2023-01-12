@@ -2,18 +2,22 @@ public ActionResult MultiLevelLabel()
 {
     ViewBag.textStyle = new
      {
-         size= "15px",
-         fontWeight= "500",
-         fontStyle= "Normal",
-         fontFamily= "Segoe UI"
-         };
-         ViewBag.dataSource = GetDataSource();
-         return View();
+        size= "15px",
+        fontWeight= "500",
+        fontStyle= "Normal",
+        fontFamily= "Segoe UI"
+        };
+        string[] xlabels = new string[11] { "Laptop", "Mobile", "Gaming", "Cosmetics", "Fragnance", "Watches", "Handbags", "Apparels", "Kitchenware", "Furniture", "Home Decor" };
+        ViewBag.xlabels = xlabels;
+        string[] yLabels = new string[12] { "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"};
+        ViewBag.yLabels = yLabels;
+        ViewBag.dataSource = GetDataSource();
+        return View();
 }
 
  private int[,] GetDataSource()
  {
-     Double[,] dataSource = new Double[,]
+     int[,] dataSource = new int[,]
             {
                 {52, 65, 67, 45, 37, 52,32, 76, 60, 64, 82, 91 },
                 {68, 52, 63, 51, 30, 51, 51, 81, 70, 60, 88, 80 },

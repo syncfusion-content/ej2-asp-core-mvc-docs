@@ -6,9 +6,9 @@ public ActionResult LabelFormat()
          fontWeight= "500",
          fontStyle= "Normal",
          fontFamily= "Segoe UI"
-         };
-         ViewBag.dataSource = GetDataSource();
-         return View();
+    };
+    ViewBag.dataSource = GetDataSource();
+    return View();
 }
 
  private int[,] GetDataSource()
