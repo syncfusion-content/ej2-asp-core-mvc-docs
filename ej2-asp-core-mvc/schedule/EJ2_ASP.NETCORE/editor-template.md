@@ -49,6 +49,7 @@ You can change the header title and the text of buttons displayed at the footer 
 {% endif %}
 
 
+![Display Customize Editor Window Header Title and Text of Footer Buttons in ASP.NET Core Scheduler](images/schedule-custom-header-footer.png)
 
 ### How to change the label text of default editor fields
 
@@ -78,6 +79,7 @@ To change the default labels such as Subject, Location and other field names in 
 {% endif %}
 
 
+![Display Customize Label Text in ASP.NET Core Scheduler](images/schedule-custom-label.png)
 
 ### Field validation
 
@@ -107,6 +109,7 @@ It is possible to validate the required fields of the editor window from client-
 {% endif %}
 
 
+![Display Field Validation in ASP.NET Core Scheduler](images/schedule-field-validation.png)
 
 N> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator/#validation-rules) documentation.
 
@@ -138,6 +141,7 @@ The additional fields can be added to the default event editor by making use of 
 {% endif %}
 
 
+![Display Additional Fields in ASP.NET Core Scheduler](images/schedule-add-field.png)
 
 ### Customizing the default time duration in editor window
 
@@ -167,6 +171,7 @@ In default event editor window, start and end time duration are processed based 
 {% endif %}
 
 
+![Display Customizing Default Time Duration of Editor Window in ASP.NET Core Scheduler](images/schedule-editor-window-duration.png)
 
 ### How to prevent the display of editor and quick popups
 
@@ -284,6 +289,8 @@ L10n.load({
 });
 ```
 
+![Display Customize Watermark Text of Quick Popup in ASP.NET Core Scheduler](images/schedule-custom-watermark-text.png)
+
 ### Customizing quick popups
 
 The look and feel of the built-in quick popup window, which opens when single clicked on the cells or appointments can be customized by making use of the `quickInfoTemplates` property of the Scheduler. There are 3 sub-options available to customize them easily,
@@ -316,6 +323,7 @@ The look and feel of the built-in quick popup window, which opens when single cl
 {% endif %}
 
 
+![Display Customizing Quick Popups in ASP.NET Core Scheduler](images/schedule-custom-quick-popup.png)
 
 N> The quick popup in adaptive mode can also be customized using `quickInfoTemplates` using `e-device` class.
 
@@ -347,6 +355,7 @@ By default, the timezone collections in the editor window have been loaded with 
 {% endif %}
 
 
+![Display Customizing Timezone in ASP.NET Core Scheduler](images/schedule-timezone-collection.png)
 
 ## Customizing event editor using template
 
@@ -380,6 +389,7 @@ As we are using our Syncfusion sub-components within our editor using template i
 {% endif %}
 
 
+![Display Customizing Event Editor Using Template in ASP.NET Core Scheduler](images/schedule-custom-editor-template.png)
 
 ### How to add resource options within editor template
 
@@ -409,6 +419,7 @@ The resource field can be added within editor template with MultiSelect control 
 {% endif %}
 
 
+![Display Resource Options Within Editor Template in ASP.NET Core Scheduler](images/schedule-editor-with-resource.png)
 
 ### How to add recurrence options within editor template
 
@@ -438,6 +449,7 @@ The following code example shows how to add recurrence options within the editor
 {% endif %}
 
 
+![Display Recurrence Options Within Editor Template in ASP.NET Core Scheduler](images/schedule-editor-with-recurrence.png)
 
 ### Apply validations on editor template fields
 
@@ -467,6 +479,7 @@ In the following code example, validation has been added to the status field.
 {% endif %}
 
 
+![Display Apply Validations Editor Template Fields in ASP.NET Core Scheduler](images/schedule-validation-editor-template.png)
 
 ### How to save the customized event editor using template
 
@@ -578,6 +591,7 @@ The following code example shows you how to customize the default more indicator
 {% endif %}
 
 
+![Display Customize the More Events Indicator and Popup in ASP.NET Core Scheduler](images/schedule-more-event.png)
 
 ### How to prevent the display of popup when clicking on the more text indicator
 
