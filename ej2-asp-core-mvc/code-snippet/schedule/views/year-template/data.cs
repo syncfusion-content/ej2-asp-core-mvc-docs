@@ -8,9 +8,11 @@ public List<AppointmentData> GetScheduleData()
 {
     List<AppointmentData> appData = new List<AppointmentData>();
     appData.Add(new AppointmentData
-    { Id = 1, Subject = "Blue Moon Eclipse", StartTime = new DateTime(2018, 2, 13, 9, 30, 0), EndTime = new DateTime(2018, 2, 13, 11, 0, 0) });
+    { Id = 1, Subject = "Meeting", StartTime = new DateTime(2023, 3, 4, 0, 0, 0) , EndTime = new DateTime(2023, 3, 5, 0, 0, 0) });
     appData.Add(new AppointmentData
-    { Id = 2, Subject = "Milky Way as Melting pot", StartTime = new DateTime(2018, 2, 15, 9, 30, 0), EndTime = new DateTime(2018, 2, 15, 11, 0, 0) });
+    { Id = 2, Subject = "Conference", StartTime = new DateTime(2023, 5, 1, 9, 30, 0) , EndTime = new DateTime(2023, 5, 1, 12, 0, 0) });
+    appData.Add(new AppointmentData
+    { Id = 3, Subject = "Seminar", StartTime = new DateTime(2023, 1, 2, 9, 30, 0) , EndTime = new DateTime(2023, 1, 2, 12, 0, 0) });
     return appData;
 }
     
