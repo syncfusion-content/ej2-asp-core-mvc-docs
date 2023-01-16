@@ -138,4 +138,4 @@ The floating action button control triggers the `onclick` event when you click o
 {% endtabs %}
 {% endif %}
 
-N> You can also explore our [ASP.NET Core Floating Action Button Example](https://ej2.syncfusion.com/aspnetcore/Toast/DefaultFunctionalities#/bootstrap5) that shows you how to render and confugure the FAB in ASP.NET Core.
+N> You can also explore our [ASP.NET Core Floating Action Button Example](https://ej2.syncfusion.com/aspnetcore/Toast/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the FAB in ASP.NET Core.

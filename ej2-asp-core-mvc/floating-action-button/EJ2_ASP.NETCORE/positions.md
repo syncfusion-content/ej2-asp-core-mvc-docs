@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Positions in Asp.Net Core Floating Action Button Control
+# Positions in ASP.NET Core Floating Action Button Control
 
 The [ASP.NET Core Floating Action Button](https://www.syncfusion.com/aspnet-core-ui-controls/fab) can be positioned anywhere on the [Target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target) using the [Position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. If the `Target` is not defined, then FAB is positioned based on the browser viewport.
 
@@ -54,7 +54,7 @@ Below example demonstrates different supported positions of FAB.
 
 ## Custom position
 
-You can define the custom position of the Floating Action Button by override the `top`, `left`, `right`, and `bottom` CSS properities using [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_CssClass).
+You can define the custom position of the Floating Action Button by override the `top`, `left`, `right`, and `bottom` CSS properties using [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_CssClass).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
