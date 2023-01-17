@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Instantiate the PDF Viewer component dynamically | Syncfusion ##Platform_Name## Pdfviewer Component
-description: Learn how to dynamically instantiate the PDF Viewer component and load PDF documents in the Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Instantiate the PDF Viewer in ##Platform_Name## Pdfviewer Component
+description: Learn how to dynamically instantiate the PDF Viewer component in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Instantiate the PDF Viewer component dynamically and load PDF documents
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Instantiate the PDF Viewer component dynamically 
+# Instantiate the PDF Viewer component dynamically and load PDF documents
 
 To instantiate a PDF Viewer component dynamically and load PDF documents in Syncfusion PDF Viewer, use the following steps:
 
