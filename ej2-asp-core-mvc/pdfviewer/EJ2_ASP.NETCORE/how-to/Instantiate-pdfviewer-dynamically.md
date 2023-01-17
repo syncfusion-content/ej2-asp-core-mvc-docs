@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Instantiate the PDF Viewer component dynamically and load PDF documents in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Instantiate the PDF Viewer component dynamically and load PDF documents in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Instantiate the PDF Viewer component dynamically and load PDF documents | Syncfusion ##Platform_Name## Pdfviewer Component
+description: Learn here all about Instantiate the PDF Viewer component dynamically in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Instantiate the PDF Viewer component dynamically and load PDF documents
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Instantiate the PDF Viewer component dynamically and load PDF documents
+# Instantiate the PDF Viewer component dynamically 
 
 To instantiate a PDF Viewer component dynamically and load PDF documents in Syncfusion PDF Viewer, you can use the following steps:
 
@@ -43,7 +43,7 @@ Use the serviceUrl property of the PDF Viewer instance to set the URL of the PDF
 
 In your controller, create an action method that returns the PDF document as a FileResult.
 
-Sample [https://www.syncfusion.com/downloads/support/directtrac/general/ze/InitiatePDFInButtonClick678733841.zip](https://www.syncfusion.com/downloads/support/directtrac/general/ze/InitiatePDFInButtonClick678733841.zip)
+Sample [https://www.syncfusion.com/downloads/support/directtrac/general/ze/InitiatePDFInButtonClick-256355185.zip](https://www.syncfusion.com/downloads/support/directtrac/general/ze/InitiatePDFInButtonClick-256355185.zip)
 
 Also, you can refer to the official documentation of syncfusion pdf viewer for more information [refer to this link](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started)
 
