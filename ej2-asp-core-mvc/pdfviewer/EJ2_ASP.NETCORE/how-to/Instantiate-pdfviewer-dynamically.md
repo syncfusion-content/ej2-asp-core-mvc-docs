@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Instantiate the PDF Viewer component dynamically and load PDF documents
+# Instantiate the PDF Viewer component dynamically
 
 To instantiate a PDF Viewer component dynamically and load PDF documents in Syncfusion PDF Viewer, use the following steps:
 
