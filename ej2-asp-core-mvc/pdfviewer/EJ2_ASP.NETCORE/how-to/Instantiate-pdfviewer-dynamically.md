@@ -16,12 +16,6 @@ In your HTML file, create a div element that will act as a container for the PDF
 
 Use the serviceUrl property of the PDF Viewer instance to set the URL of a PDF document you want to load.
 
-
-
-In your HTML file, create a div element that will act as a container for the PDF Viewer  component, and use the jQuery $.ajax method to make an AJAX request to your server and retrieve the PDF document. Once the document is retrieved, use the PDF Viewer API to load the document into the PDF Viewer component.
-
-Use the serviceUrl property of the PDF Viewer instance to set the URL of the PDF document that you want to load.
-
 ```html
 
 <div style="width:100%;height:600px">
