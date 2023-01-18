@@ -19,7 +19,7 @@ The editor window usually opens on the Scheduler, when a cell or event is double
 
 In mobile devices, you can open the detailed editor window in edit mode by clicking the edit icon on the popup, that opens on single tapping an event. You can also open it in add mode by single tapping a cell, which will display a `+` indication, clicking on it again will open the editor window.
 
-> You can also prevent the editor window from opening, by rendering Scheduler in a `readonly` mode or by doing code customization within the `popupOpen` event.
+N> You can also prevent the editor window from opening, by rendering Scheduler in a `readonly` mode or by doing code customization within the `popupOpen` event.
 
 ### How to change the editor window header title and text of footer buttons
 
@@ -49,6 +49,7 @@ You can change the header title and the text of buttons displayed at the footer 
 {% endif %}
 
 
+![Display Customize Editor Window Header Title and Text of Footer Buttons in ASP.NET Core Scheduler](images/schedule-custom-header-footer.png)
 
 ### How to change the label text of default editor fields
 
@@ -78,6 +79,7 @@ To change the default labels such as Subject, Location and other field names in 
 {% endif %}
 
 
+![Display Customize Label Text in ASP.NET Core Scheduler](images/schedule-custom-label.png)
 
 ### Field validation
 
@@ -107,8 +109,9 @@ It is possible to validate the required fields of the editor window from client-
 {% endif %}
 
 
+![Display Field Validation in ASP.NET Core Scheduler](images/schedule-field-validation.png)
 
-> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator/#validation-rules) documentation.
+N> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator/#validation-rules) documentation.
 
 ### Add additional fields to the default editor
 
@@ -138,6 +141,7 @@ The additional fields can be added to the default event editor by making use of 
 {% endif %}
 
 
+![Display Additional Fields in ASP.NET Core Scheduler](images/schedule-add-field.png)
 
 ### Customizing the default time duration in editor window
 
@@ -167,6 +171,7 @@ In default event editor window, start and end time duration are processed based 
 {% endif %}
 
 
+![Display Customizing Default Time Duration of Editor Window in ASP.NET Core Scheduler](images/schedule-editor-window-duration.png)
 
 ### How to prevent the display of editor and quick popups
 
@@ -238,7 +243,7 @@ By default, these popups are displayed over cells and appointments of Scheduler 
 
 
 
-> The quick popup that opens while single clicking on the cells are not applicable on mobile devices.
+N> The quick popup that opens while single clicking on the cells are not applicable on mobile devices.
 
 ### How to open Quick Info popup on multiple cell selection
 
@@ -284,6 +289,8 @@ L10n.load({
 });
 ```
 
+![Display Customize Watermark Text of Quick Popup in ASP.NET Core Scheduler](images/schedule-custom-watermark-text.png)
+
 ### Customizing quick popups
 
 The look and feel of the built-in quick popup window, which opens when single clicked on the cells or appointments can be customized by making use of the `quickInfoTemplates` property of the Scheduler. There are 3 sub-options available to customize them easily,
@@ -316,8 +323,9 @@ The look and feel of the built-in quick popup window, which opens when single cl
 {% endif %}
 
 
+![Display Customizing Quick Popups in ASP.NET Core Scheduler](images/schedule-custom-quick-popup.png)
 
-> The quick popup in adaptive mode can also be customized using `quickInfoTemplates` using `e-device` class.
+N> The quick popup in adaptive mode can also be customized using `quickInfoTemplates` using `e-device` class.
 
 ### Customizing timezone collection in the editor window
 
@@ -347,6 +355,7 @@ By default, the timezone collections in the editor window have been loaded with 
 {% endif %}
 
 
+![Display Customizing Timezone in ASP.NET Core Scheduler](images/schedule-timezone-collection.png)
 
 ## Customizing event editor using template
 
@@ -380,6 +389,7 @@ As we are using our Syncfusion sub-components within our editor using template i
 {% endif %}
 
 
+![Display Customizing Event Editor Using Template in ASP.NET Core Scheduler](images/schedule-custom-editor-template.png)
 
 ### How to add resource options within editor template
 
@@ -409,6 +419,7 @@ The resource field can be added within editor template with MultiSelect control 
 {% endif %}
 
 
+![Display Resource Options Within Editor Template in ASP.NET Core Scheduler](images/schedule-editor-with-resource.png)
 
 ### How to add recurrence options within editor template
 
@@ -438,6 +449,7 @@ The following code example shows how to add recurrence options within the editor
 {% endif %}
 
 
+![Display Recurrence Options Within Editor Template in ASP.NET Core Scheduler](images/schedule-editor-with-recurrence.png)
 
 ### Apply validations on editor template fields
 
@@ -467,12 +479,13 @@ In the following code example, validation has been added to the status field.
 {% endif %}
 
 
+![Display Apply Validations Editor Template Fields in ASP.NET Core Scheduler](images/schedule-validation-editor-template.png)
 
 ### How to save the customized event editor using template
 
 The **e-field** class is not added to each field defined within the template, so you should allow to set those field values externally by using the `popupClose` event.
 
-> You can allow to retrieve the data only on the `save` and `delete` option. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
+N> You can allow to retrieve the data only on the `save` and `delete` option. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
 
 The following code example shows how to save the customized event editor using a template by the `popupClose` event.
 
@@ -519,7 +532,7 @@ In case, if you need to prevent only specific popups on Scheduler, then you can 
 
 When the number of appointments count that lies on a particular time range * default appointment height exceeds the default height of a cell in month view and all other timeline views, a `+ more` text indicator will be displayed at the bottom of those cells. This indicator denotes that the cell contains few more appointments in it and clicking on that will display a popup displaying all the appointments present on that day.
 
-> To disable this option of showing popup with all hidden appointments, while clicking on the text indicator, you can do code customization within the `popupOpen` event.
+N> To disable this option of showing popup with all hidden appointments, while clicking on the text indicator, you can do code customization within the `popupOpen` event.
 
 The same indicator is displayed on all-day row in calendar views such as day, week and work week views alone, when the number of appointment count present in a cell exceeds three. Clicking on the text indicator here will not open a popup, but will allow the expand/collapse option for viewing the remaining appointments present in the all-day row.
 
@@ -578,6 +591,7 @@ The following code example shows you how to customize the default more indicator
 {% endif %}
 
 
+![Display Customize the More Events Indicator and Popup in ASP.NET Core Scheduler](images/schedule-more-event.png)
 
 ### How to prevent the display of popup when clicking on the more text indicator
 
@@ -688,4 +702,4 @@ You can close the quick info popup in scheduler by using the `closeQuickInfoPopu
 
 
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

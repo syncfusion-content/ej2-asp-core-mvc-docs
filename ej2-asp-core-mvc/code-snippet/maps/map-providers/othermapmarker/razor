@@ -3,7 +3,7 @@
 
 @Html.EJS().Maps("maps").Layers(l =>
 {
-    l.UrlTemplate("http://api.tomtom.com/map/1/tile/basic/main/level/tileX/tileY.png?key=subscription_key").MarkerSettings(marker =>
+    l.UrlTemplate("http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level").MarkerSettings(marker =>
        {
            marker.Visible(true).DataSource(ViewBag.markerData).Add();
        }).NavigationLineSettings(ns =>

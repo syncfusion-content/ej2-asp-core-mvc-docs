@@ -4,7 +4,7 @@
     var template = "${if(type === 'monthCells')}<div class='templatewrap'>${getCellContent(data.date)}</div>${/if}";
 }
 
-<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2017, 12, 15)" views="@ViewBag.view" cellTemplate="@template">
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2023, 12, 15)" views="@ViewBag.view" cellTemplate="@template">
     <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
 </ejs-schedule>
 

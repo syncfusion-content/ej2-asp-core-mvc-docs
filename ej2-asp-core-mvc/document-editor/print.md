@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Document Editor Component | Syncfusion
+title: Print in ##Platform_Name## Document Editor Component
 description: Learn here all about print in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Print in Document Editor Component
+# Print
 
 To print the document, use the `print` method from document editor instance.
 
@@ -63,11 +63,11 @@ To print the document, use the `print` method from document editor instance.
 
 
 
-> To enable print for a document editor instance, set enablePrint as true.
+N> To enable print for a document editor instance, set enablePrint as true.
 
 ## Improve print quality
 
-Document editor provides an option to improve the print quality using `printDevicePixelRatio` in Document editor settings. Document editor using canvas approach to render content. Then, canvas are converted to image and it is processed for print. Using printDevicePixelRatio API, you can increase the image quality based on your requirement.
+Document editor provides an option to improve the print quality using [`printDevicePixelRatio`](../api/document-editor/documentEditorSettingsModel/#printdevicepixelratio) in Document editor settings. Document editor using canvas approach to render content. Then, canvas are converted to image and it is processed for print. Using printDevicePixelRatio API, you can increase the image quality based on your requirement.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -90,7 +90,7 @@ Document editor provides an option to improve the print quality using `printDevi
 
 
 
-> By default, printDevicePixelRatio value is 1.
+N> By default, printDevicePixelRatio value is 1.
 
 ## Print using window object
 

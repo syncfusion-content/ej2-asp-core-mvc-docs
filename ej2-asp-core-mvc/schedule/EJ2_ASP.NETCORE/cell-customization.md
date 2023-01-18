@@ -41,6 +41,7 @@ The height and width of the Scheduler cells can be customized either to increase
 {% endif %}
 
 
+![Display Setting Cell Dimensions in ASP.NET Core Scheduler](images/scheduler-custom-cell-dimension.png)
 
 ## Check for cell availability
 
@@ -103,6 +104,7 @@ The `cellTemplate` option accepts the template string and is used to customize t
 {% endif %}
 
 
+![Display Customizing Cells with Template in ASP.NET Core Scheduler](images/scheduler-custom-cell-template.png)
 
 ### Using renderCell event
 
@@ -132,6 +134,7 @@ An alternative to `cellTemplate` is the `renderCell` event, which can also be us
 {% endif %}
 
 
+![Display Customizing Cells with Rendercell in ASP.NET Core Scheduler](images/scheduler-custom-cell-rendercell.png)
 
 You can customize cells such as work cells, month cells, all-day cells, header cells, resource header cells using `renderCell` event by checking the `elementType` option within the event. You can check `elementType` with any of the following.
 
@@ -174,7 +177,7 @@ The month header of each date cell in the month view can be customized using the
 
 
 
-![Month view cell header template](../schedule/images/cell-header-template.png)
+![Month view cell header template in ASP.NET Core Scheduler](../schedule/images/cell-header-template.png)
 
 ## Customizing the minimum and maximum date values
 
@@ -205,10 +208,10 @@ Providing the `minDate` and `maxDate` property with some date values, allows the
 
 
 
->By default, the `minDate` property value is set to new Date(1900, 0, 1) and `maxDate` property value is set to new Date(2099, 11, 31). The user can also set the customized `minDate` and `maxDate` property values.
+N>By default, the `minDate` property value is set to new Date(1900, 0, 1) and `maxDate` property value is set to new Date(2099, 11, 31). The user can also set the customized `minDate` and `maxDate` property values.
 
 ## How to disable multiple cell and row selection in Schedule
 
 By default, the `allowMultiCellSelection` and `allowMultiRowSelection` properties of the Schedule are set to `true`. So, the Schedule allows user to select multiple cells and rows. If the user want to disable this multiple cell and row selection. The user can disable this feature by setting up `false` to these properties.
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

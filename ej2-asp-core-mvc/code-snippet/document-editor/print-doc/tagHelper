@@ -1,7 +1,7 @@
 <ejs-button id="print">Print</ejs-button>
 <div id="documenteditor">
-<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enablePrint=true enableSfdtExport=true id="DocumentEditor1"></ejs-documenteditor>
-<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enablePrint=true enableSfdtExport=true id="DocumentEditor2"></ejs-documenteditor>    
+    <ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enablePrint=true enableSfdtExport=true id="DocumentEditor1"></ejs-documenteditor>
+    <ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enablePrint=true enableSfdtExport=true id="DocumentEditor2"></ejs-documenteditor>    
 </div>
 
 <script>
@@ -21,5 +21,4 @@
         documenteditor2.selection.sectionFormat.pageHeight = 595.30;
         documenteditor2.print();
     });
-
 </script>

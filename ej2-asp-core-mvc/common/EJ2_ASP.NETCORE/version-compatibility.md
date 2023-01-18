@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ASP.NET Core Controls Compatibility with .NET Versions | Syncfusion
-description: Checkout and learn about ##Platform_Name## Controls Compatibility with .NET Versions.
+description: Checkout and learn about Syncfusion ##Platform_Name## Controls Compatibility with .NET Versions and much more.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -14,6 +14,7 @@ The following table represents the supported .NET and .NET Core versions by diff
 
 | Version | Syncfusion ASP.NET Core Controls Version |
 | ------------- | ------------- |
+| [.NET 7.0](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-dotnet-7/) | 20.4.0.38 and above |
 | [.NET 6.0](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-net-6/) | 19.3.0.43 and above |
 | [.NET 5.0](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-net-5/) | 18.4.0.30 and above  |
 | [.NET Core 3.1.3](https://devblogs.microsoft.com/dotnet/net-core-march-2020/) | 18.1.0.52 and above |
