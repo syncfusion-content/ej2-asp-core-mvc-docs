@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export in ##Platform_Name## Barcode Component | Syncfusion
+title: Export in ##Platform_Name## Barcode Component
 description: Learn here all about Export in Syncfusion ##Platform_Name## Barcode component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Export in ASP.NET Core Barcode
+# Export
 
-Export [AS.NET Core Barcode](https://www.syncfusion.com/aspnet-core-ui-controls/barcode) as an image and base64 string is common for barcode, QRcode and datamatrix.
+Export barcode as an image and base64 string is common for barcode, QRcode and datamatrix.
 ## Export
 
 Barcode provides the support to export its content as an image in the specified image type and downloads it in the browser. The following code example shows how to export the barcode as an image
