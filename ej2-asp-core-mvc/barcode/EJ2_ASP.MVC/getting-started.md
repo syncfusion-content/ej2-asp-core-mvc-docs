@@ -170,5 +170,3 @@ You can add the datamatrix code in our barcode generator component.
 ![ASP.NET MVC DataMatrix Control](images/datamatrix-control.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Barcode/ASP.NET%20MVC%20Razor%20Examples)
-
-N> You can also explore our [ASP.NET MVC Barcode Generator Example](https://ej2.syncfusion.com/aspnetmvc/Barcode/Ean8#/bootstrap5) that shows you how to render and confugure the Barcode in ASP.NET MVC.
