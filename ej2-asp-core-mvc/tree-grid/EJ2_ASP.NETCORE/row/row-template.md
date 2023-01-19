@@ -10,7 +10,7 @@ documentation: ug
 
 # Row Template in ##Platform_Name## Tree Grid Component
 
-The **rowTemplate** has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowTemplate) property accepts either the **template** string or HTML element ID.
+The **rowTemplate** has an option to customize the look and behavior of the treegrid rows. The [`rowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowTemplate) property accepts either the **template** string or HTML element ID.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -70,7 +70,7 @@ If the [`rowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ## Limitations
 
-Row template feature is not compatible with all the features which are available in treegrid and it has limited features support. Here we have listed out the features which are compatible with row template feature.
+Row template feature is not compatible with all the features which are available in treegrid and it has limited features support. Here we have listed out the features which are not compatible with row template feature.
 
 * Filtering
 * Paging
