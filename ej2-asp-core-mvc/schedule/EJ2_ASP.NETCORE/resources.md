@@ -138,6 +138,7 @@ The appointments belonging to the different resources will be displayed altogeth
 {% endif %}
 
 
+![Displaying Multiple Resources in ASP.NET Core Scheduler](images/scheduler-multiple-resource.png)
 
 N> Setting `allowMultiple` to `true` in the above code example allows you to select multiple resources from the event editor and also creates multiple copies of the same appointment in the Scheduler for each resources while rendering.
 
@@ -175,6 +176,7 @@ The following code example displays how the multiple resources are grouped and i
 {% endif %}
 
 
+![Displaying Vertical Resource View in ASP.NET Core Scheduler](images/scheduler-resources-verticalview.png)
 
 ### Timeline resource view
 
@@ -204,6 +206,7 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endif %}
 
 
+![Displaying Timeline Resource View in in ASP.NET Core Scheduler](images/scheduler-resource-timelineview.png)
 
 ### Grouping single-level resources
 
@@ -235,6 +238,7 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 {% endif %}
 
 
+![Display Grouping Single-level Resources in in ASP.NET Core Scheduler](images/scheduler-resource-singlelevel.png)
 
 N> The `name` field defined in the **resources** collection namely `Owners` will be mapped within the `group` property, in order to enable the grouping option with those resource levels on the Scheduler.
 
@@ -266,6 +270,7 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
 {% endif %}
 
 
+![Display Grouping Multi-level Resources in in ASP.NET Core Scheduler](images/scheduler-resource-timelineview.png)
 
 ### One-to-One grouping
 
@@ -295,6 +300,7 @@ In multi-level grouping, Scheduler usually groups the resources on the child lev
 {% endif %}
 
 
+![Display One-to-One Grouping in in ASP.NET Core Scheduler](images/scheduler-resource-one-to-one.png)
 
 ### Grouping resources by date
 
@@ -326,6 +332,7 @@ It groups the number of resources under each date and is applicable only on the 
 {% endif %}
 
 
+![Display Grouping Resources by Date in ASP.NET Core Scheduler](images/scheduler-resource-bydate.png)
 
 N> This kind of grouping by date is not applicable on any of the **timeline views**.
 
@@ -357,6 +364,7 @@ In timeline view work cells of parent resource can be customized by checking the
 {% endif %}
 
 
+![Display Customizing parent resource cells in ASP.NET Core Scheduler](images/scheduler-custom-parentcell.png)
 
 ## Working with shared events
 
@@ -390,6 +398,7 @@ N> Any actions such as create, edit or delete held on any one of the shared even
 {% endif %}
 
 
+![Display Working with Shared Events in ASP.NET Core Scheduler](images/scheduler-shared-event.png)
 
 ## Simple resource header customization
 
@@ -421,6 +430,7 @@ It is possible to customize the resource header cells using built-in template op
 {% endif %}
 
 
+![Display Resource Header Customization in ASP.NET Core Scheduler](images/scheduler-custom-resource-header.png)
 
 N> To customize the resource header in compact mode properly make use of the class `e-device` as in the code example.
 
@@ -454,6 +464,7 @@ It is possible to customize the resource headers to display with multiple column
 {% endif %}
 
 
+![Display Customizing Resource Header with Multiple Columns in ASP.NET Core Scheduler](images/scheduler-custom-resource-header-multiple-column.png)
 
 ## Displaying tooltip for resource headers
 
@@ -483,6 +494,7 @@ It is possible to display tooltip over the resource headers showing the resource
 {% endif %}
 
 
+![Display Tooltip for Resource Headers in ASP.NET Core Scheduler](images/scheduler-resource-tooltip.png)
 
 ## Choosing between resource colors for appointments
 
@@ -514,6 +526,7 @@ In the following example, the colors mentioned in the second level will get appl
 {% endif %}
 
 
+![Display Choosing Between Resource Colors for Appointments in ASP.NET Core Scheduler](images/scheduler-resource-colour.png)
 
 N> The value of the `resourceColorField` field should be mapped with the `name` value given within the `resources` property.
 
@@ -580,6 +593,7 @@ Different working days can be set for the resources of Scheduler using the `work
 {% endif %}
 
 
+![Display Set Different Work Days in ASP.NET Core Scheduler](images/scheduler-resource-custom-workdays.png)
 
 ### Set different work hours
 
@@ -612,6 +626,7 @@ Working hours indicates the work hour duration of a day, which is highlighted vi
 {% endif %}
 
 
+![Display Set Different Work Hours in ASP.NET Core Scheduler](images/scheduler-resource-custom-workhours.png)
 
 In this example, a resource named `Will Smith` is depicted with working hours ranging from 8.00 AM to 3.00 PM and is visually illustrated with active colors, whereas the other two resources have different working hours set.
 
@@ -647,7 +662,6 @@ To use the `HideNonWorkingDays` property, you need to include it in the configur
 {% endif %}
 
 
-{% endtab %}
 
 N> The `HideNonWorkingDays` property only applies when the Scheduler is grouped `byDate`.
 

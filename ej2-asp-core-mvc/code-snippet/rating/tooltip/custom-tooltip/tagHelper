@@ -1,0 +1,33 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-rating id="rating" value=3 cssClass="customtooltip"></ejs-rating>
+
+<style>
+
+    /* To change the radius of the tooltip corners. */
+    .customtooltip.e-tooltip-wrap {
+        border-radius: 3px;
+    }
+
+    /* To change the size of the tooltip content. */
+    .customtooltip.e-tooltip-wrap .e-tip-content {
+        font-size:14px;
+    }
+
+    /* To change the border color and width for tooltip. */
+    .customtooltip.e-tooltip-wrap.e-popup {
+        border: 2px solid #969393;
+    }
+
+    /* To change the color for arrow of the tooltip. */
+    .customtooltip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom {
+        border: 12px solid #9693
+    }
+
+    /* To change the top border color for arrow of the tooltip. */
+    .customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
+        border-top: 12.5px solid #969393;
+    }
+
+</style>
+

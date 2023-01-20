@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.Inputs
+
+<label>Left Label Position</label><br />
+@Html.EJS().Rating("rating1").Value(3).ShowLabel(true).LabelPosition(LabelPosition.Left).Render()<br />
+
+<label>Right Label Position</label><br />
+@Html.EJS().Rating("rating2").Value(3).ShowLabel(true).LabelPosition(LabelPosition.Right).Render()<br />
+
+<label>Top Label Position </label><br />
+@Html.EJS().Rating("rating3").Value(3).ShowLabel(true).LabelPosition(LabelPosition.Top).Render()<br />
+
+<label>Bottom Label Position</label><br />
+@Html.EJS().Rating("rating4").Value(3).ShowLabel(true).LabelPosition(LabelPosition.Bottom).Render()<br />
