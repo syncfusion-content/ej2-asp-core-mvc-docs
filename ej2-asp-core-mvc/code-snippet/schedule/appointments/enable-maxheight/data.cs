@@ -11,8 +11,8 @@ public List<EventsData> GetEventsData()
     {
         Id = 1,
         Subject = "Server Maintenance",
-        StartTime = new DateTime(2018, 2, 14, 10, 0, 0),
-        EndTime = new DateTime(2018, 2, 14, 11, 30, 0),
+        StartTime = new DateTime(2023, 2, 14, 10, 0, 0),
+        EndTime = new DateTime(2023, 2, 14, 11, 30, 0),
         EventType = "maintenance",
         City = "Seattle",
         CategoryColor = "#1aaa55"
@@ -21,8 +21,8 @@ public List<EventsData> GetEventsData()
     {
         Id = 2,
         Subject = "Art & Painting Gallery",
-        StartTime = new DateTime(2018, 2, 15, 12, 0, 0),
-        EndTime = new DateTime(2018, 2, 15, 14, 0, 0),
+        StartTime = new DateTime(2023, 2, 15, 12, 0, 0),
+        EndTime = new DateTime(2023, 2, 15, 14, 0, 0),
         EventType = "public-event",
         City = "Costa Rica",
         CategoryColor = "#357cd2"
@@ -31,8 +31,8 @@ public List<EventsData> GetEventsData()
     {
         Id = 3,
         Subject = "Dany Birthday Celebration",
-        StartTime = new DateTime(2018, 2, 16, 10, 0, 0),
-        EndTime = new DateTime(2018, 2, 16, 11, 30, 0),
+        StartTime = new DateTime(2023, 2, 16, 10, 0, 0),
+        EndTime = new DateTime(2023, 2, 16, 11, 30, 0),
         EventType = "family-event",
         City = "Kirkland",
         CategoryColor = "#7fa900"

@@ -41,6 +41,7 @@ The height and width of the Scheduler cells can be customized either to increase
 {% endif %}
 
 
+![Display Setting Cell Dimensions in ASP.NET Core Scheduler](images/scheduler-custom-cell-dimension.png)
 
 ## Check for cell availability
 
@@ -103,6 +104,7 @@ The `cellTemplate` option accepts the template string and is used to customize t
 {% endif %}
 
 
+![Display Customizing Cells with Template in ASP.NET Core Scheduler](images/scheduler-custom-cell-template.png)
 
 ### Using renderCell event
 
@@ -132,6 +134,7 @@ An alternative to `cellTemplate` is the `renderCell` event, which can also be us
 {% endif %}
 
 
+![Display Customizing Cells with Rendercell in ASP.NET Core Scheduler](images/scheduler-custom-cell-rendercell.png)
 
 You can customize cells such as work cells, month cells, all-day cells, header cells, resource header cells using `renderCell` event by checking the `elementType` option within the event. You can check `elementType` with any of the following.
 
@@ -174,7 +177,7 @@ The month header of each date cell in the month view can be customized using the
 
 
 
-![Month view cell header template](../schedule/images/cell-header-template.png)
+![Month view cell header template in ASP.NET Core Scheduler](../schedule/images/cell-header-template.png)
 
 ## Customizing the minimum and maximum date values
 
