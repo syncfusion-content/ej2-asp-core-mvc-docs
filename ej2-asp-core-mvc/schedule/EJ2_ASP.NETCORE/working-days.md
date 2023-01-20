@@ -54,6 +54,7 @@ The following example code depicts how to set the Scheduler to display Monday, W
 {% endif %}
 
 
+![Display Set Working Days in ASP.NET Core Scheduler](images/scheduler-workdays.png)
 
 ## Hiding weekend days
 
@@ -85,6 +86,7 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 {% endif %}
 
 
+![Display Hiding Weekend Days in ASP.NET Core Scheduler](images/scheduler-hide-weekend.png)
 
 ## Show week numbers
 
@@ -116,6 +118,7 @@ N> The `showWeekNumber` property is not applicable on Timeline views, as it has 
 {% endif %}
 
 
+![Display Week Numbers in ASP.NET Core Scheduler](images/scheduler-weeknumber.png)
 
 ### Different options in showing week numbers
 
@@ -188,6 +191,7 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 {% endif %}
 
 
+![Display Working Hours in ASP.NET Core Scheduler](images/scheduler-workhours.png)
 
 ## Scheduler displaying custom hours
 
@@ -219,6 +223,7 @@ The following code example displays the Scheduler starting from the time range 7
 {% endif %}
 
 
+![Display Custom Hours in ASP.NET Core Scheduler](images/scheduler-custom-display-hours.png)
 
 ## Setting start day of the week
 
@@ -250,6 +255,7 @@ N> Here, Sunday is always denoted as 0, Monday as 1 and so on.
 {% endif %}
 
 
+![Display Setting Start Day of Week in ASP.NET Core Scheduler](images/scheduler-week-firstday.png)
 
 ## Scroll to specific time and date
 

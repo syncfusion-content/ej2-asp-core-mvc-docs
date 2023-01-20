@@ -3,7 +3,7 @@
 <ejs-radiobutton id="radio1" label="Rooms" name="default" value="Rooms" checked="true" change="onChange"></ejs-radiobutton>
 <ejs-radiobutton id="radio2" label="Owners" name="default" value="Owners" checked="false" change="onChange"></ejs-radiobutton>
 
-<ejs-schedule id="schedule" height="550" views="@ViewBag.view" selectedDate="new DateTime(2018, 4, 3)">
+<ejs-schedule id="schedule" height="550" views="@ViewBag.view" selectedDate="new DateTime(2023, 4, 3)">
     <e-schedule-group resources="@ViewBag.Resources"></e-schedule-group>
     <e-schedule-resources>
         <e-schedule-resource dataSource="@ViewBag.Rooms" field="RoomId" title="Room" name="Rooms" textField="RoomText" idField="Id" groupIDField="RoomGroupId" colorField="RoomColor" allowMultiple="false"></e-schedule-resource>
