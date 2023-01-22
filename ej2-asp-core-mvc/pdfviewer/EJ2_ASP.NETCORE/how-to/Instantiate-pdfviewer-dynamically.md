@@ -43,7 +43,7 @@ Use the serviceUrl property of the PDF Viewer instance to set the URL of a PDF d
 
 In your controller, create an action method that returns a PDF document as a FileResult.
 
-Sample [https://www.syncfusion.com/downloads/support/directtrac/general/ze/InitiatePDFInButtonClick-256355185.zip](https://www.syncfusion.com/downloads/support/directtrac/general/ze/InitiatePDFInButtonClick-256355185.zip)
+View Sample in GitHub [View Sample in GitHub]()
 
 Also, refer to the official documentation of syncfusion pdf viewer for more information[refer to this link](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started).
 
