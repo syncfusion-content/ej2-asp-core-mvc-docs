@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-rating id="rating" beforeItemRender="beforeItemRender"></ejs-rating>
+
+<script>
+
+    function beforeItemRender(RatingItemEventArgs args) {
+        // Here, you can customize your code.
+    }
+
+</script>

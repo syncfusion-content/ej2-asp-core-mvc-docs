@@ -24,8 +24,8 @@ public List<ResourceData> GetResourceData()
     {
         Id = 1,
         Subject = "Requirement planning",
-        StartTime = new DateTime(2021, 7, 4, 9, 30),
-        EndTime = new DateTime(2021, 7, 4, 12, 0),
+        StartTime = new DateTime(2023, 7, 4, 9, 30, 0),
+        EndTime = new DateTime(2023, 7, 4, 12, 0, 0),
         IsAllDay = false,
         OwnerId = 1,
         RoomId = 1
@@ -34,8 +34,8 @@ public List<ResourceData> GetResourceData()
     {
         Id = 2,
         Subject = "Quality Analysis",
-        StartTime = new DateTime(2021, 7, 4, 10, 30),
-        EndTime = new DateTime(2021, 7, 4, 14, 0),
+        StartTime = new DateTime(2023, 7, 4, 10, 30, 0),
+        EndTime = new DateTime(2023, 7, 4, 14, 0, 0),
         IsAllDay = false,
         OwnerId = 3,
         RoomId = 1
@@ -44,8 +44,8 @@ public List<ResourceData> GetResourceData()
     {
         Id = 3,
         Subject = "Resource planning",
-        StartTime = new DateTime(2021, 7, 5, 10, 0),
-        EndTime = new DateTime(2021, 7, 5, 12, 30),
+        StartTime = new DateTime(2023, 7, 5, 10, 0, 0),
+        EndTime = new DateTime(2023, 7, 5, 12, 30, 0),
         IsAllDay = false,
         OwnerId = 2,
         RoomId = 2
