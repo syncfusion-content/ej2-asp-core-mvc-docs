@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Tooltip in Asp.Net Core Rating Control
+# Tooltip in ASP.NET Core Rating Control
 
-The Asp.Net Core rating control supports tooltip to show additional information in rating items by setting the [showTooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ShowTooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
+The ASP.NET Core rating control supports tooltip to show additional information in rating items by setting the [showTooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ShowTooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -18,7 +18,7 @@ The Asp.Net Core rating control supports tooltip to show additional information 
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Control with Tooltip](./images/rating-tooltip.png)
+![ASP.NET Core Rating Control with Tooltip](./images/rating-tooltip.png)
 
 ## Tooltip template
 
@@ -30,12 +30,12 @@ You can use the [tooltipTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Control with Tooltip Template](./images/rating-tooltip-template.png)
+![ASP.NET Core Rating Control with Tooltip Template](./images/rating-tooltip-template.png)
 
 
 ## Tooltip customization
 
-You can customize the appearance of the tooltips using the `cssClass` property of the Asp.Net Core Rating control and by defining the custom styles for tooltip elements like the below example.
+You can customize the appearance of the tooltips using the `cssClass` property of the ASP.NET Core Rating control and by defining the custom styles for tooltip elements like the below example.
 
 N> You can find more information about customizing the appearance of the tooltip in the [Tooltip Customization](https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/style) documentation.
 
@@ -45,4 +45,4 @@ N> You can find more information about customizing the appearance of the tooltip
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Control with Tooltip Customization](./images/rating-custom-tooltip.png)
+![ASP.NET Core Rating Control with Tooltip Customization](./images/rating-custom-tooltip.png)
