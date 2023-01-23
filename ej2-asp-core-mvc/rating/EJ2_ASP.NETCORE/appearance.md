@@ -26,7 +26,7 @@ You can specify the number of rating items using the [itemsCount](https://help.s
 
 {% endif %}
 
-![Asp.Net Core Rating Control with Items count](images/rating-items-count.png)
+![ASP.NET Core Rating Control with Items count](images/rating-items-count.png)
 
 ## Disabled
 
@@ -42,7 +42,7 @@ You can disable the Syncfusion ASP.NET Core Rating control by using the [disable
 
 {% endif %}
 
-![Asp.Net Core Rating Control with Disabled](images/rating-disabled.png)
+![ASP.NET Core Rating Control with Disabled](images/rating-disabled.png)
 
 ## Visible
 
@@ -58,7 +58,7 @@ You can use the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 {% endif %}
 
-![Asp.Net Core Rating Control with Visible](images/rating-full-precision.png)
+![ASP.NET Core Rating Control with Visible](images/rating-full-precision.png)
 
 ## Read only
 
@@ -74,7 +74,7 @@ You can use the [readOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 {% endif %}
 
-![Asp.Net Core Rating Control with ReadOnly](images/rating-full-precision.png)
+![ASP.NET Core Rating Control with ReadOnly](images/rating-full-precision.png)
 
 ## CssClass
 
@@ -94,7 +94,7 @@ You can change the rating icon border color in ASP.NET Core Rating control, you 
 
 {% endif %}
 
-![Asp.Net Core Rating Control with rating symbol border color](images/rating-border-color.png)
+![ASP.NET Core Rating Control with rating symbol border color](images/rating-border-color.png)
 
 ### Changing rated/un-rated symbol fill color 
 
@@ -112,7 +112,7 @@ You can customize the fill colors of rated and un-rated icons in the Rating cont
 
 This will customize the rated fill color to `#ffe814` and un-rated fill color to `#d8d7d4`. `--rating-value` in the linear-gradient provides the current value of the rating item.
 
-![Asp.Net Core Rating Control with custom fill color for icons](images/rating-fill-color.png)
+![ASP.NET Core Rating Control with custom fill color for icons](images/rating-fill-color.png)
 
 ### Changing the item spacing
 
@@ -128,7 +128,7 @@ You can change the space between the rating items in ASP.NET Core Rating control
 
 {% endif %}
 
-![Asp.Net Core Rating Control with custom space between rating items](images/rating-custom-space.png)
+![ASP.NET Core Rating Control with custom space between rating items](images/rating-custom-space.png)
 
 ## Changing icon using CssClass
 
@@ -144,4 +144,4 @@ You can change the rating item icon in ASP.NET Core Rating control, you can use 
 
 {% endif %}
 
-![Asp.Net Core Rating Control with change icon using CssClass](images/rating-cssclass-icon.png)
+![ASP.NET Core Rating Control with change icon using CssClass](images/rating-cssclass-icon.png)
