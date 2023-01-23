@@ -4,7 +4,7 @@ title: Tooltip in ##Platform_Name## Rating Control | Syncfusion
 description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
-publishingplatform: ##Platform_Name
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
