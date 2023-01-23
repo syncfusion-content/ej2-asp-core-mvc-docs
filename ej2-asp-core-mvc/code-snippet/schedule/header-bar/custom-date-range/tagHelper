@@ -1,6 +1,7 @@
 @using Syncfusion.EJ2.Schedule
 
 <ejs-schedule id="schedule" height="550" views="@ViewBag.view" dateRangeTemplate="#template">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
 </ejs-schedule>
 
 <script id="template" type="text/template">

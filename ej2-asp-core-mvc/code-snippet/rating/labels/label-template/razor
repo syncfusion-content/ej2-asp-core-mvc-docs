@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.Inputs
+
+@Html.EJS().Rating("rating").Value(3).ShowLabel(true).LabelTemplate("<span>${value} Out Of 5</span>").Render()

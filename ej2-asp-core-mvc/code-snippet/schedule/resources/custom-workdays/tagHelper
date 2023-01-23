@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Schedule
 
-<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 4, 1)">
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2023, 4, 1)">
     <e-schedule-group resources="@ViewBag.Resources"></e-schedule-group>
     <e-schedule-resources>
         <e-schedule-resource dataSource="@ViewBag.Doctors" field="DoctorId" title="Doctor Name" name="Doctors" textField="text" idField="id" colorField="color" workDaysField="workDays"></e-schedule-resource>
