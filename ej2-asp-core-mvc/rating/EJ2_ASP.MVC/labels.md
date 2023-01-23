@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Labels in Asp.Net MVC Rating Control
+# Labels in ASP.NET MVC Rating Control
 
 You can use the [ShowLabel](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ShowLabel) property to display a label that shows the current value of the rating. When the `ShowLabel` property is set to `true`, a label will be displayed.
 
@@ -25,7 +25,7 @@ You can use the [ShowLabel](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with Label](./images/rating-label.png)
+![ASP.NET MVC Rating Control with Label](./images/rating-label.png)
 
 ## Label position
 
@@ -51,7 +51,7 @@ The following label positions are supported:
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with different label positions](./images/rating-label-positions.png)
+![ASP.NET MVC Rating Control with different label positions](./images/rating-label-positions.png)
 
 
 ## Label template
@@ -71,4 +71,4 @@ You can use the [LabelTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with Label template](./images/rating-label-template.png)
+![ASP.NET MVC Rating Control with Label template](./images/rating-label-template.png)
