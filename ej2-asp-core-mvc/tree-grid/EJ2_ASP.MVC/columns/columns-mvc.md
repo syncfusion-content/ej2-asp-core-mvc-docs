@@ -164,7 +164,7 @@ It is also possible to select the rows hierarchically using checkboxes in TreeGr
 {% endtabs %}
 {% endif %}
 
-
+N> You can get the checked records details by using the **getCheckedRecords** method in tree grid.
 
 ## Controlling Tree Grid actions
 
