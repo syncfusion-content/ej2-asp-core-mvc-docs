@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Templates in Asp.Net Core Rating Control
+# Templates in ASP.NET Core Rating Control
 
-The Asp.Net Core Rating control allows you to customize the appearance of the rating items using templates. You can use templates to specify a custom layout for the rating items, which can include any content you want. This allows you to create a more customized and interactive rating experience for the user.
+The ASP.NET Core Rating control allows you to customize the appearance of the rating items using templates. You can use templates to specify a custom layout for the rating items, which can include any content you want. This allows you to create a more customized and interactive rating experience for the user.
 
 The rating control supports below templates for item customization.
 
@@ -29,13 +29,13 @@ If the `fullTemplate` is not defined, the `emptyTemplate` will be used as the de
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Control with EmptyTemplate](./images/rating-empty-template.png)
+![ASP.NET Core Rating Control with EmptyTemplate](./images/rating-empty-template.png)
 
 N> The current value of the rating item available in the template context as `value` and in the rating item element as CSS Variable (`--rating-value`) can be used to support precision in templates.
 
 ## Full (rated) symbol template
 
-To customize the appearance of **rated** items in the Syncfusion Asp.Net Core rating control, you can use the `fullTemplate` tag directive. This directive allows you to specify a custom layout for the rated items, which can include any content you desire.
+To customize the appearance of **rated** items in the Syncfusion ASP.NET Core rating control, you can use the `fullTemplate` tag directive. This directive allows you to specify a custom layout for the rated items, which can include any content you desire.
 The `value` and `index` are available in the template context for accessing information about the rated item.
 
 {% tabs %}
@@ -44,7 +44,7 @@ The `value` and `index` are available in the template context for accessing info
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Control with FullTemplate](./images/rating-full-template.png)
+![ASP.NET Core Rating Control with FullTemplate](./images/rating-full-template.png)
 
 ## Using Emoji icon as rating symbol
 
@@ -56,7 +56,7 @@ You can use emojis of your choice as rating symbol by specifying them as templat
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Control with Emoji Icon](./images/rating-emoji-icon.png)
+![ASP.NET Core Rating Control with Emoji Icon](./images/rating-emoji-icon.png)
 
 ## Using SVG icon as rating symbol
 
@@ -68,7 +68,7 @@ You can use SVG icons of your choice as rating symbol by specifying them as temp
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Control with SVG Icon](./images/rating-svg-icon.png)
+![ASP.NET Core Rating Control with SVG Icon](./images/rating-svg-icon.png)
 
 ## Using PNG image as rating symbol
 
@@ -80,4 +80,4 @@ You can use PNG images of your choice as rating symbol by specifying them as tem
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Control with PNG Icon](./images/rating-png.png)
+![ASP.NET Core Rating Control with PNG Icon](./images/rating-png.png)
