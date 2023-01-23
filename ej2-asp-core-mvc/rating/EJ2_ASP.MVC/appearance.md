@@ -122,7 +122,7 @@ You can customize the fill colors of rated and un-rated icons in the Rating cont
 {% include code-snippet/rating/appearance/css-class/fill-color/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FillColor.cs" %}
-{% include code-snippet/rating/appearance/css-class/fillcolor.cs %}
+{% include code-snippet/rating/appearance/css-class/fill-color/fillcolor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
