@@ -154,6 +154,7 @@ Scheduler can be used with all valid date formats and by default it follows the 
 {% endif %}
 
 
+![Display Setting Date Format in ASP.NET Core Scheduler](images/schedule-date-format.png)
 
 ## Setting the time format
 
@@ -185,6 +186,7 @@ The following example demonstrates the Scheduler component in 24 hours format.
 {% endif %}
 
 
+![Display Setting Time Format in ASP.NET Core Scheduler](images/schedule-time-format.png)
 
 N> `timeFormat` property only accepts the valid time format's.
 
@@ -216,6 +218,7 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 {% endif %}
 
 
+![Display RTL Mode in ASP.NET Core Scheduler](images/schedule-rtl.png)
 
 N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
 

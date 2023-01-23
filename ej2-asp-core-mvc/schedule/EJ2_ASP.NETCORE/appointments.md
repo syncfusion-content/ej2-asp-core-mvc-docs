@@ -949,6 +949,7 @@ Any kind of text, images and links can be added to customize the look of the eve
 {% endif %}
 
 
+![Display Appointment Customization with Template in ASP.NET Core Scheduler](images/scheduler-custom-event-template.png)
 
 N> All the built-in fields that are mapped to the appropriate field properties within the `e-schedule-eventsettings`, as well as custom mapped fields from the Scheduler dataSource can be accessed within the template code.
 
@@ -980,6 +981,7 @@ The `eventRendered` event triggers before the appointment renders on the Schedul
 {% endif %}
 
 
+![Display Appointment Customization with eventRendered in ASP.NET Core Scheduler](images/scheduler-custom-event-rendered.png)
 
 ### Using cssClass
 
@@ -1009,6 +1011,7 @@ The customization of events can also be achieved using `cssClass` property of th
 {% endif %}
 
 
+![Display Appointment Customization with cssClass in ASP.NET Core Scheduler](images/scheduler-custom-event-cssclass.png)
 
 ## Setting minimum height
 
@@ -1067,6 +1070,7 @@ It is possible to block a set of dates or a particular time ranges on the Schedu
 {% endif %}
 
 
+![Display Block Dates and Times in ASP.NET Core Scheduler](images/scheduler-event-block.png)
 
 Block events can also be defined to repeat on several days as shown in the following code example.
 
@@ -1094,6 +1098,7 @@ Block events can also be defined to repeat on several days as shown in the follo
 {% endif %}
 
 
+![Display Block Several Dates and Times in ASP.NET Core Scheduler](images/scheduler-event-block-multiple.png)
 
 ## Readonly
 
@@ -1243,6 +1248,7 @@ We can show more indicator if more than one appointment is available in a same c
 {% endif %}
 
 
+![Display Appointments Occupying Entire Cell in ASP.NET Core Scheduler](images/scheduler-event-entire-cell.png)
 
 ## Display tooltip for appointments
 
@@ -1276,6 +1282,7 @@ The tooltip can be displayed for appointments by setting `true` to the `enableTo
 {% endif %}
 
 
+![Display Tooltip in ASP.NET Core Scheduler](images/scheduler-event-tooltip.png)
 
 ### Customizing event tooltip using template
 
@@ -1305,6 +1312,7 @@ After enabling the default tooltip, it is possible to customize the display of n
 {% endif %}
 
 
+![Display Customizing Event Tooltip Using Template in ASP.NET Core Scheduler](images/scheduler-custom-event-tooltip.png)
 
 N> All the field names that are mapped from the Scheduler dataSource to the appropriate field properties such as subject, description, location, startTime and endTime within the `e-schedule-eventsettings` can be accessed within the template.
 
