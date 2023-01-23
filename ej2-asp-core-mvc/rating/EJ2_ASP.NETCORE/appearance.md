@@ -68,7 +68,7 @@ You can use the [readOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rating/appearance/readonly/tagHelper %}
+{% include code-snippet/rating/appearance/read-only/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
