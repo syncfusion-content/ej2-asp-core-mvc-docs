@@ -10,7 +10,7 @@ documentation: ug
 
 # Tooltip in Asp.Net MVC Rating Control
 
-The Asp.Net MVC rating control supports tooltip to show additional information in rating items by setting the [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ShowTooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
+The Asp.Net MVC rating control supports tooltip to show additional information in rating items by ASP.NET the [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ShowTooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Appearance in Asp.Net MVC Rating Control
+# Appearance in ASP.NET MVC Rating Control
 
 You can also customize the appearance of rating control.
 
@@ -29,11 +29,11 @@ You can specify the number of rating items using the [ItemsCount](https://help.s
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with Items count](images/rating-items-count.png)
+![ASP.NET MVC Rating Control with Items count](images/rating-items-count.png)
 
 ## Disabled
 
-You can disable the Syncfusion Asp.Net MVC Rating control by using the [Disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Disabled) property. When the `Disabled` property is set to `true`, the rating control will be disabled and the user will not be able to interact with it and a disabled rating control may have a different visual appearance than an enabled one.
+You can disable the Syncfusion ASP.NET MVC Rating control by using the [Disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Disabled) property. When the `Disabled` property is set to `true`, the rating control will be disabled and the user will not be able to interact with it and a disabled rating control may have a different visual appearance than an enabled one.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
@@ -48,11 +48,11 @@ You can disable the Syncfusion Asp.Net MVC Rating control by using the [Disabled
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with Disabled](images/rating-disabled.png)
+![ASP.NET MVC Rating Control with Disabled](images/rating-disabled.png)
 
 ## Visible
 
-You can use the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Visible) property of the Asp.Net MVC Rating control to control the visibility of the control. When the `Visible` property is set to `true`, the rating control will be visible on the page. When it is set to `false`, the control will be hidden.
+You can use the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Visible) property of the ASP.NET MVC Rating control to control the visibility of the control. When the `Visible` property is set to `true`, the rating control will be visible on the page. When it is set to `false`, the control will be hidden.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
@@ -67,11 +67,11 @@ You can use the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with Visible](images/rating-full-precision.png)
+![ASP.NET MVC Rating Control with Visible](images/rating-full-precision.png)
 
 ## Read only
 
-You can use the [ReadOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ReadOnly) property of the Asp.Net MVC Rating control to make the control non-interactive and prevent the user from changing the rating value.
+You can use the [ReadOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ReadOnly) property of the ASP.NET MVC Rating control to make the control non-interactive and prevent the user from changing the rating value.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
@@ -86,7 +86,7 @@ You can use the [ReadOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with ReadOnly](images/rating-full-precision.png)
+![ASP.NET MVC Rating Control with ReadOnly](images/rating-full-precision.png)
 
 ## CssClass
 
@@ -94,7 +94,7 @@ You can customize the appearance of the rating control, such as by changing its 
 
 ### Changing rating symbol border color
 
-You can change the rating icon border color in Asp.Net MVC Rating control, you can use the `CssClass` property and set the `text-stroke` CSS property of `.e-rating-icon` to your desired border color.
+You can change the rating icon border color in ASP.NET MVC Rating control, you can use the `CssClass` property and set the `text-stroke` CSS property of `.e-rating-icon` to your desired border color.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
@@ -109,7 +109,7 @@ You can change the rating icon border color in Asp.Net MVC Rating control, you c
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with rating symbol border color](images/rating-border-color.png)
+![ASP.NET MVC Rating Control with rating symbol border color](images/rating-border-color.png)
 
 ### Changing rated/un-rated symbol fill color 
 
@@ -130,11 +130,11 @@ You can customize the fill colors of rated and un-rated icons in the Rating cont
 
 This will customize the rated fill color to `#ffe814` and un-rated fill color to `#d8d7d4`. `--rating-value` in the linear-gradient provides the current value of the rating item.
 
-![Asp.Net MVC Rating Control with custom fill color for icons](images/rating-fill-color.png)
+![ASP.NET MVC Rating Control with custom fill color for icons](images/rating-fill-color.png)
 
 ### Changing the item spacing
 
-You can change the space between the rating items in Asp.Net MVC Rating control, by using the `CssClass` property and setting the `margin` / `padding` CSS property of `.e-rating-item-container` to your desired size. 
+You can change the space between the rating items in ASP.NET MVC Rating control, by using the `CssClass` property and setting the `margin` / `padding` CSS property of `.e-rating-item-container` to your desired size. 
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
@@ -149,11 +149,11 @@ You can change the space between the rating items in Asp.Net MVC Rating control,
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with custom space between rating items](images/rating-custom-space.png)
+![ASP.NET MVC Rating Control with custom space between rating items](images/rating-custom-space.png)
 
 ## Changing icon using CssClass
 
-You can change the rating item icon in Asp.Net MVC Rating control, you can use the `CssClass` property and set the `content` CSS property of `.e-icons.e-star-filled:before` to your desired font icon.
+You can change the rating item icon in ASP.NET MVC Rating control, you can use the `CssClass` property and set the `content` CSS property of `.e-icons.e-star-filled:before` to your desired font icon.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
@@ -168,4 +168,4 @@ You can change the rating item icon in Asp.Net MVC Rating control, you can use t
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with change icon using CssClass](images/rating-cssclass-icon.png)
+![ASP.NET MVC Rating Control with change icon using CssClass](images/rating-cssclass-icon.png)
