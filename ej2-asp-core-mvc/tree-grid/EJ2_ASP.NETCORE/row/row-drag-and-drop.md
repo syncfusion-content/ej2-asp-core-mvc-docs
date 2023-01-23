@@ -43,6 +43,7 @@ The TreeGrid row drag and drop allows you to drag and drop TreeGrid rows on the 
 
 N> * Selection feature must be enabled for row drag and drop.
 <br/> * For multiple row selection, the [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings~Type.html) property must be set to `multiple`.
+<br/> * The [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsPrimaryKey) property must be set on one of the columns of the TreeGrid in order to perform row drag and drop action
 
 ## Drag and drop to another Tree Grid
 
