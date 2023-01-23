@@ -72,7 +72,7 @@ You can use SVG icons of your choice as rating symbol by specifying them as temp
 
 ## Using PNG image as rating symbol
 
-You can use PNG images of your choice as rating symbol by specifying them as template content within the `mptyTemplate` and `fullTemplate` tag directives.
+You can use PNG images of your choice as rating symbol by specifying them as template content within the `emptyTemplate` and `fullTemplate` tag directives.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
