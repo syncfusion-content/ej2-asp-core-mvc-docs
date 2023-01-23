@@ -19,19 +19,19 @@ Use the serviceUrl property of the PDF Viewer instance to set the URL of a PDF d
 ```html
 
 <div style="width:100%;height:600px">
-    <button id="loadPDF">Load PDF Viewer</button>
+    <button id="loadPDF Viewer">Load PDF Viewer</button>
     <div id="pdfViewer" style="height: 100%;width: 100%;"></div>
 </div>
 
 <script>
-    document.getElementById("loadPDF").addEventListener('click', function () {
-      $.ajax({
-          url: "https://ej2services.syncfusion.com/production/web-services/api/pdfviewer",
+    document.getElementById("loadPDF Viewer").addEventListener('click', function () {
+        $.ajax({
+            url: 'https://localhost:44327/pdfviewer/GetPdfDocument',
             type: "GET",
-            success: function(data){
+            success: function (data) {
                 var viewer = new ej.pdfviewer.PdfViewer({
-                    documentPath : "PDF_Succinctly.pdf",
-                    serviceUrl : "https://ej2services.syncfusion.com/production/web-services/api/pdfviewer",            
+                    serviceUrl: "https://localhost:44327/pdfviewer",
+                    documentPath: data,
                 });
                 viewer.appendTo("#pdfViewer");
             }
@@ -44,7 +44,5 @@ Use the serviceUrl property of the PDF Viewer instance to set the URL of a PDF d
 In your controller, create an action method that returns a PDF document as a FileResult.
 
 View Sample in GitHub [View Sample in GitHub]()
-
-Also, refer to the official documentation of syncfusion pdf viewer for more information[refer to this link](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started).
 
 N>Ensure the provided document path and output text are saved at your application level.
