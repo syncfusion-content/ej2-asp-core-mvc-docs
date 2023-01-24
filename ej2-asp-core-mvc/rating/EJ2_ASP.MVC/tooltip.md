@@ -60,7 +60,7 @@ N> You can find more information about customizing the appearance of the tooltip
 {% include code-snippet/rating/tooltip/custom-tooltip/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomTooltip.cs" %}
-{% include code-snippet/rating/tooltip/custom-tooltip/position.cs %}
+{% include code-snippet/rating/tooltip/custom-tooltip/customtooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
