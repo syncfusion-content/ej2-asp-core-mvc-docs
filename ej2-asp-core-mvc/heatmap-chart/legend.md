@@ -44,10 +44,10 @@ The legend is used to provide the information about the heat map cell. You can e
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Heat map supports two legend types: Gradient and list type.
+Heat map supports two legend types: Gradient and Fixed type.
 
 * **Gradient** - This is a continuous color legend with smooth color transition between palette color values.
-* **Fixed** - List is a fixed color legend. Each palette color information is shown separately in the list item.
+* **Fixed** - The fixed color legend is a list. Each palette color information is shown separately in the list item.
 
 You can change the legend type by using the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings~Type.html) property in the [paletteSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html) property.
 
@@ -63,10 +63,10 @@ You can change the legend type by using the [type](https://help.syncfusion.com/c
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Heat map supports two legend types: Gradient and list type.
+Heat map supports two legend types: Gradient and Fixed type.
 
 * **Gradient** - This is a continuous color legend with smooth color transition between palette color values.
-* **Fixed** - List is a fixed color legend. Each palette color information is shown separately in the list item.
+* **Fixed** - The fixed color legend is a list. Each palette color information is shown separately in the list item.
 
 You can change the legend type by using the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html#Syncfusion_EJ2_HeatMap_HeatMapPaletteSettings_Type) property in the [paletteSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html)property.
 
