@@ -27,7 +27,7 @@ Three different types of axis in the heatmap as follows.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Category axis type is used to represent the string values in the axis labels. You can specify the [valueType](hhttps://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_ValueType) property for the axis is **Category**.
+Category axis type is used to represent the string values in the axis labels. You can specify the [valueType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_ValueType) property for the axis is **Category**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
