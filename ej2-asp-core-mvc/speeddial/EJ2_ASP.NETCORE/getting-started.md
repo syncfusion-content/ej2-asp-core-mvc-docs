@@ -195,3 +195,5 @@ The speed dial control triggers the [clicked](https://help.syncfusion.com/cr/asp
 {% endif %}
 
 ![ASP.NET Core SpeedDial Control](images/speeddial-event-sample.png)
+
+N> You can refer to our [ASP.NET Core Speed Dial](https://www.syncfusion.com/aspnet-core-ui-controls/speed-dial) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Speed Dial example](https://ej2.syncfusion.com/aspnetcore/SpeedDial/DefaultFunctionalities#/bootstrap5) that shows you how to render the Speed Dial in ASP.NET Core.

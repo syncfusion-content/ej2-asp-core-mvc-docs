@@ -10,7 +10,7 @@ documentation: ug
 
 # Items in ASP.NET Core Speed Dial Control
 
-The action items in ASP.NET Core Speed Dial can be added by using [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Items) property.
+The action items in [ASP.NET Core Speed Dial](https://www.syncfusion.com/aspnet-core-ui-controls/speed-dial) can be added by using [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Items) property.
 
 | Fields | Type | Description |
 |------|------|-------------|
