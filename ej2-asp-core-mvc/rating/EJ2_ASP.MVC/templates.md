@@ -106,10 +106,10 @@ You can use PNG images of your choice as rating symbol by specifying them as tem
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/templates/png-template/razor %}
+{% include code-snippet/rating/templates/png-image/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="PNGTemplate.cs" %}
-{% include code-snippet/rating/templates/png-template/pngtemplate.cs %}
+{% highlight c# tabtitle="PNGImage.cs" %}
+{% include code-snippet/rating/templates/png-image/pngimage.cs %}
 {% endhighlight %}
 {% endtabs %}
 
