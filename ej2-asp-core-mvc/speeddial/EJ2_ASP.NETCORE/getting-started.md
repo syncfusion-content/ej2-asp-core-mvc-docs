@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn here all about action items and how to configure action items in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2.
+description: Checkout and learn here all about action items and how to configure action items in ##Platform_Name## SpeedDial control
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
