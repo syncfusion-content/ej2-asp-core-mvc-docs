@@ -38,7 +38,7 @@ The legend is used to provide the information about the heat map cell. You can e
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Legend](images/Legend/heatmap-with-legend.png)
 
 ## Legend types
 
@@ -49,7 +49,7 @@ Heat map supports two legend types: Gradient and list type.
 * **Gradient** - This is a continuous color legend with smooth color transition between palette color values.
 * **Fixed** - List is a fixed color legend. Each palette color information is shown separately in the list item.
 
-You can change the legend type by using the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings~Type.html) property in the `paletteSettings` property.
+You can change the legend type by using the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings~Type.html) property in the [paletteSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html) property.
 
 
 {% tabs %}
@@ -68,7 +68,7 @@ Heat map supports two legend types: Gradient and list type.
 * **Gradient** - This is a continuous color legend with smooth color transition between palette color values.
 * **Fixed** - List is a fixed color legend. Each palette color information is shown separately in the list item.
 
-You can change the legend type by using the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings~Type.html) property in the `paletteSettings` property.
+You can change the legend type by using the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html#Syncfusion_EJ2_HeatMap_HeatMapPaletteSettings_Type) property in the [paletteSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html)property.
 
 
 {% tabs %}
@@ -81,7 +81,7 @@ You can change the legend type by using the [type](https://help.syncfusion.com/c
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Fixed Legend](images/Legend/heatmap-with-fixed-legend.png)
 
 ## Placement
 
@@ -112,7 +112,7 @@ You can place the legend at left, right, top, or bottom to the heat map layout b
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Changing Legend Position](images/Legend/heatmap-with-legend-position.png)
 
 ## Alignment
 
@@ -143,7 +143,7 @@ You can align the legend as center, far, or near to the heat map using the [Alig
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Changing Legend Alignment](images/Legend/heatmap-with-legend-alignment.png)
 
 ## Legend dimensions
 
@@ -174,7 +174,7 @@ You can change the legend dimensions with values in pixels or percentage by usin
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Changing Legend Dimensions](images/Legend/heatmap-with-legend-dimension.png)
 
 ## Paging for legend
 
@@ -203,7 +203,7 @@ Paging is available only for the list type legend in the heat map, and it can be
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Legend Paging](images/Legend/heatmap-with-legend-paging.png)
 
 ## Smart legend
 
@@ -248,7 +248,7 @@ The following are the legend label display types:
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Smart Legend](images/Legend/heatmap-with-smart-legend.png)
 
 ## Legend selection
 
@@ -279,7 +279,7 @@ In the HeatMap, the legend selection is used to toggle the visibility of cell fo
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Legend Selection](images/Legend/heatmap-with-legend-selection.png)
 
 ## Legend title
 
@@ -310,3 +310,4 @@ The legend title displays a specific information about the legend. You can enabl
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core HeatmapChart with Legend Title](images/Legend/heatmap-with-legend-title.png)
