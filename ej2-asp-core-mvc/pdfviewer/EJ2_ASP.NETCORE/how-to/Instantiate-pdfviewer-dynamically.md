@@ -43,6 +43,4 @@ Use the serviceUrl property of the PDF Viewer instance to set the URL of a PDF d
 
 In your controller, create an action method that returns a PDF document as an action result.
 
-View Sample in GitHub [View Sample in GitHub]()
-
-N>Ensure the provided document path and output text are saved at your application level.
+View sample in GitHub [View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples)
