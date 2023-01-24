@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn here all about action items and how to configure action items in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -89,9 +89,9 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core SpeedDial control
+## Add ASP.NET Core Speed Dial control
 
-Now, add the Syncfusion ASP.NET Core Fab tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Speed Dial tag helper in `~/Pages/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
