@@ -1,5 +1,5 @@
 @{    
-     var palettes = new String[] { "#E94649", "#F6B53F", "#6FAAB0", "#C4C24A" };
+     var palettes = new String[] { "#E94649", "#F6B53F", "#6FAAB0" };
 }
 <ejs-chart id="container" title="Olympic Medals" palettes="palettes">
         <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
