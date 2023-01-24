@@ -1,22 +1,18 @@
-@Html.EJS().Chart("container").Series(series =>
-   {
-   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).  
-   XName("x").
-   YName("yValue").
-   DataSource(ViewBag.dataSource).Add();
-   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).  
-   XName("x").
-   YName("yValue").
-   DataSource(ViewBag.dataSource).Add();  
-   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).  
-   XName("x").
-   YName("yValue").
-   DataSource(ViewBag.dataSource).Add();  
-   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).  
-   XName("x").
-   YName("yValue").
-   DataSource(ViewBag.dataSource).Add();    
-   }).
-   Palettes(ViewBag.palletes).
-   PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).
-   Title("Olympic Medal Counts - RIO").Render()
+@(Html.EJS().Chart("container").Title("Olympic Medal Counts - RIO").PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Series(series =>
+{
+
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+    XName("country").
+    YName("gold").
+    DataSource(ViewBag.dataSource).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+    XName("country").
+    YName("silver").
+    DataSource(ViewBag.dataSource).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+    XName("country").
+    YName("bronze").
+    DataSource(ViewBag.dataSource).Add();
+}).
+   Palettes(ViewBag.palletes).Render()
+)
