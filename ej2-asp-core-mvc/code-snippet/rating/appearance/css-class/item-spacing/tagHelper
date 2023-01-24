@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-rating id="rating" value=3 cssClass="custom-font"></ejs-rating>
+
+<style>
+    .e-rating-container.custom-font .e-rating-item-container {
+        /* To change the size between items */
+        margin: 0px 7px;
+    }
+</style>
