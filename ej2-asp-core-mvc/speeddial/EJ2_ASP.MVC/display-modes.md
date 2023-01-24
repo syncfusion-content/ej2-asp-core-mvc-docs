@@ -19,7 +19,7 @@ In `Linear` display mode, Speed Dial action items are displayed in a list-like f
 
 ### Direction
 
-You can open the action items on the top, left, up, and down side of the Speed Dial button by setting [Direction](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Direction) property. The default value is `Auto` where the action items are displayed based on the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Position)of the Speed Dial.
+You can open the action items on the top, left, up, and down side of the Speed Dial button by setting [Direction](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Direction) property. The default value is `Auto` where the action items are displayed based on the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Position) of the Speed Dial.
 
 The `Linear` directions of Speed Dial are as follows:
 
