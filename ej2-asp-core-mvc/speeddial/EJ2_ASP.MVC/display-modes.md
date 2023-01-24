@@ -10,7 +10,7 @@ documentation: ug
 
 # Display Modes in ASP.NET MVC Speed Dial Control
 
-The action items in ASP.NET MVC Speed Dial can be displayed in `Linear` and `Radial` display modes by setting [Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property.
+The action items in [ASP.NET MVC Speed Dial](https://www.syncfusion.com/aspnet-mvc-ui-controls/speed-dial) can be displayed in `Linear` and `Radial` display modes by setting [Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property.
 
 
 ## Linear display mode

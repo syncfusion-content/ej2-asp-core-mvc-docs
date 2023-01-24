@@ -196,3 +196,5 @@ You can use this event to perform the required action.
 {% endif %}
 
 ![ASP.NET MVC SpeedDial Control](images/speeddial-event-sample.png)
+
+N> You can refer to our [ASP.NET MVC Speed Dial](https://www.syncfusion.com/aspnet-mvc-ui-controls/speed-dial) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Speed Dial example](https://ej2.syncfusion.com/aspnetmvc/SpeedDial/DefaultFunctionalities#/bootstrap5) that shows you how to render the Speed Dial in ASP.NET MVC.
