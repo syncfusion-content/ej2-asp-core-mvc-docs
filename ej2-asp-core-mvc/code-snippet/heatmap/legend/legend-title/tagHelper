@@ -13,5 +13,9 @@
         </e-palettes>
   </e-heatmap-palettesettings>
   <e-heatmap-cellsettings showLabel="false"></e-heatmap-cellsettings>
-  <e-heatmap-legendsettings position="Bottom" width="75%" enableSmartLegend="true" toggleVisibility="true"><e-legendsettings-title text="1000 US$"></e-legendsettings-title></e-heatmap-legendsettings>
+  <e-heatmap-legendsettings position="Bottom" width="75%" enableSmartLegend="true" toggleVisibility="true">
+    <e-legendsettings-title text="1000 US$">
+      <e-title-textstyle size="15px" color="red"></e-title-textstyle>
+    </e-legendsettings-title>
+  </e-heatmap-legendsettings>
 </ejs-heatmap>

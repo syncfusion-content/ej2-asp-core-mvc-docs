@@ -44,7 +44,7 @@ The legend is used to provide the information about the heat map cell. You can e
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Heat map supports two legend types: Gradient and Fixed type.
+Heat map supports two legend types: **Gradient** and **Fixed** type.
 
 * **Gradient** - This is a continuous color legend with smooth color transition between palette color values.
 * **Fixed** - The fixed color legend is a list. Each palette color information is shown separately in the list item.
