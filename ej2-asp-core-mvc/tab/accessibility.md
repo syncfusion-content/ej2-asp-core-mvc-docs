@@ -18,17 +18,15 @@ The following list of attributes are added in the Tab.
 
 | **Roles and Attributes** | **Functionalities** |
 | --- | --- |
-| `tablist` | This is set to role attribute in the Tab element that describes actual role of the element.|
-| `tabpanel` | This is set to role attribute for the Tab content that describes the role for viewing the active content.|
-| presentation       | This is set to role attribute for nested elements in the Tab.  |
-| aria-orientation    | It indicates the Tab header orientation. Default value of this attribute is `horizontal`. |
-| aria-activedescendant    | It indicates the current active child of the Tab component. |
-| aria-haspopup       | It indicates the popup mode in the Tab. The default value of this attribute is false. If popup mode is enabled, the attribute value is set to true. |
-| aria-disabled       | It indicates the disabled state of the Tab. |
-| aria-selected       | It indicates the selection state for Tab items. Active Tab is set to true for this attribute. |
-| aria-hidden      | It indicates the hidden element of the Tab. |
-| aria-controls       | It indicates the associated `Tabpanel` for the header. |
-| aria-labelledby       | It indicates the associated Tab header for the content. |
+| `tablist` | Attribute is set to the Tab header element that describes actual role of the element.|
+| `tab` | Attribute is set to the Tab items element to  indicates an interactive element inside a `tablist` that, when activated, displays its associated `tabpanel`.|
+| `tabpanel` | Attribute is set to the Tab content that describes the role for viewing the active content.|
+| aria-orientation    | Attribute is set to the Tab header element indicates the Tab header orientation. Default value of this attribute is horizontal. |
+| aria-selected       | Attribute set to the Tab items to indicates the selection state for Tab items. Active Tab is set to true for this attribute. |
+| aria-labelledby       | Attribute is set to the Tab content element to indicates the associated Tab header for the content. |
+| aria-controls       | Attribute is set to the Tab items element to indicates the associated `tabpanel` for the header. |
+| aria-haspopup       | Attribute is set to the Popup element  to indicates the popup mode in the Tab. The default value of this attribute is false. If popup mode is enabled, the attribute value is set to true. |
+| aria-disabled       | Attribute set to the Tab items to It indicates the disabled state of the Tab. |
 
 ## Keyboard interaction
 
