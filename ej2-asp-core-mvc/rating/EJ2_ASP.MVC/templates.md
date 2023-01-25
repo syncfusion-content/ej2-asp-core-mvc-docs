@@ -25,7 +25,7 @@ If the `FullTemplate` is not defined, the `EmptyTemplate` will be used as the de
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-{% tabs %
+{% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rating/templates/empty-template/razor %}
 {% endhighlight %}
