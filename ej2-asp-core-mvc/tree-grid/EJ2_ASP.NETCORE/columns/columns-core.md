@@ -244,7 +244,6 @@ The [`valueAccessor`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/S
 ### Display array type columns
 
 You can bind an array of objects in a column by using the [`valueAccessor`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~ValueAccessor.html) property.
-
 In this example, the name field has an array of two objects, FirstName and LastName. These two objects are joined and bound to a column using the [`valueAccessor`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~ValueAccessor.html).
 
 {% if page.publishingplatform == "aspnet-core" %}

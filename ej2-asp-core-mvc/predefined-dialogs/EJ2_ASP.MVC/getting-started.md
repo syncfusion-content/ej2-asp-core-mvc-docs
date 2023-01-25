@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Predefined Dialogs | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Predefined Dialogs | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Predefined Dialogs of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ejmvc
 documentation: ug
 ---
 
@@ -108,7 +108,7 @@ In the below code example, alert dialog displayed on button click action.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC predefined dialogs will be rendered in the default web browser.
 
-![ASP.NET MVC Predfined Dialogs Control](../images/alert-default.png)
+![ASP.NET MVC Predefinded Dialogs alert](./images/alert-default.png)
 
 ### Show confirm dialog
 
@@ -122,7 +122,7 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 {% endhighlight %}
 {% endtabs %}
 
-![Confirm Dialog](../images/confirm-default.png)
+![ASP.NET MVC Predefinded Dialogs confirm](./images/confirm-default.png)
 
 ### Show Prompt dialog
 
@@ -139,7 +139,7 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 {% endhighlight %}
 {% endtabs %}
 
-![Prompt Dialog](../images/prompt-default.png)
+![ASP.NET MVC Predefinded Dialogs prompt](./images/prompt-default.png)
 
 ## See also
 

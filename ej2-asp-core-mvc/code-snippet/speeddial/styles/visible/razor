@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.Buttons
+
+@Html.EJS().SpeedDial("speeddial").Items(ViewBag.datasource).Visible(false).Content("Edit").Render()

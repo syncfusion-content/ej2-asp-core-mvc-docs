@@ -1,6 +1,6 @@
 @model List<string>
 @{
-    var data = new Countries().GetData();
+    List<Countries> data = new Countries().GetData();
     char nameMentionChar = '@';
 }
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag country"></div>
