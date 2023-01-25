@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Microsoft SQL Server Data Binding in Angular Pivotview component | Syncfusion
-description: Learn how to bind Microsoft SQL Server Database data in the Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Microsoft SQL Server Data Binding in ASP.NET MVC Pivotview component | Syncfusion
+description: Learn how to bind Microsoft SQL Server Database data in the Syncfusion ASP.NET MVC Pivotview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Microsoft SQL Server Data Binding 
+control: Microsoft SQL Server Data Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
