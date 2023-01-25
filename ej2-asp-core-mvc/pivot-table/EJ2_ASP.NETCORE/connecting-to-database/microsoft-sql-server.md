@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microsoft SQL Server Data Binding in ASP.NET Core Pivotview component | Syncfusion
+title: Microsoft SQL Server Data Binding in ASP.NET Core Pivotview component
 description: Learn how to bind Microsoft SQL Server Database data in the Syncfusion ASP.NET Core Pivotview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Microsoft SQL Server Data Binding

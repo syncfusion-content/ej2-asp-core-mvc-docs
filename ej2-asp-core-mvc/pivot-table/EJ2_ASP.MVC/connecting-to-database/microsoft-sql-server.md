@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microsoft SQL Server Data Binding in ASP.NET MVC Pivotview component | Syncfusion
+title: Microsoft SQL Server Data Binding in ASP.NET MVC Pivotview component
 description: Learn how to bind Microsoft SQL Server Database data in the Syncfusion ASP.NET MVC Pivotview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Microsoft SQL Server Data Binding
@@ -101,7 +101,7 @@ namespace PivotController.Controllers
 
 **1.** Download the ASP.NET MVC Pivot Table sample from [`this`](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) GitHub repository.
 
-**2.** Next, map the hosted Web API's URL link `https://localhost:7139/product` to the Pivot Table component in `app.ts` by using the  [`ur;`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property..
+**2.** Next, map the hosted Web API's URL link `https://localhost:7139/product` to the Pivot Table component in `app.ts` by using the  [`url`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property..
 
 ```csharp
 @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(
