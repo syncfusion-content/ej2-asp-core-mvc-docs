@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Toast Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Toast control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Toast Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Toast control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -128,3 +128,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 * [How to prevent duplicate toast display](./how-to/prevent-duplicate-toast-display/)
 
 * [How to show different types of toast](./how-to/show-different-types-of-toast/)
+
+N> You can also explore our [ASP.NET MVC Toast Example](https://ej2.syncfusion.com/aspnetmvc/Toast/DefaultFunctionalities#/bootstrap5) that shows you how to render and confugure the Toast in ASP.NET MVC.
