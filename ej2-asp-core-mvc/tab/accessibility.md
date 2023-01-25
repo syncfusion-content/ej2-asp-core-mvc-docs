@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Tab Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ASP.NET Core and MVC Tab component| Syncfusion
+description: Learn here all about Accessibility in Syncfusion ASP.NET Core and MVC Tab component and much more details.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core and MVC
 documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ASP.NET Core and MVC Tabs Component
 
 ## ARIA attributes
 
@@ -36,7 +36,7 @@ By default, keyboard navigation is enabled. This component implements keyboard n
 |---------------|-------------------------------------------------------------------------------------|
 | <kbd>Left</kbd>    | Moves focus to the previous Tab. If focus is on the first Tab, the focus will not move to any Tab. |
 | <kbd>Right</kbd>   | Moves focus to the next Tab. If focus is on the last Tab element, the focus will not move to any Tab. |
-| <kbd>Enter</kbd> or <kbd> Space</kbd>  | Selects the Tab if it is not selected. Opens the popup dropdown icon if it is focussed. Select the Tab item as active when popup item is focussed. |
+| <kbd>Enter</kbd> or <kbd> Space</kbd>  | Selects the Tab if it is not selected. Opens the popup dropdown icon if it is focused. Select the Tab item as active when popup item is focused. |
 | <kbd>Esc(Escape)</kbd>           | Closes the popup if popup is in opened state.       |
 | <kbd>Down</kbd> or <kbd>Up</kbd>   | When the popup is open and focused, it will move to previous/next Tab items of the popup in the vertical direction. |
 |  <kbd>Home</kbd>    | Moves focus to the first Tab. |

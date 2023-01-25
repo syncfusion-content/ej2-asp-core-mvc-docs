@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Schedule Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Accessibility in ASP.NETCORE Schedule Component| Syncfusion
+description: Learn here all about Accessibility in Syncfusion Describes how the Syncfusion ASP.MVC Scheduler control has been built keeping web accessibility in mind, thus allowing to interact with assistive technologies.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NETCORE
 documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ASP.NETCORE Scheduler Component
 
 The Scheduler has been designed based on the WAI-ARIA specifications, thus applying the appropriate ARIA roles, states and properties for the Scheduler elements. It is also available with a built-in keyboard navigation support, making it easier for the people who use assistive technologies or who completely rely on the Keyboard support. As per the accessibility standard, the navigated dates, views and other interactive actions performed on the Scheduler will be read out to the target users who use assistive technologies such as screen readers.
 

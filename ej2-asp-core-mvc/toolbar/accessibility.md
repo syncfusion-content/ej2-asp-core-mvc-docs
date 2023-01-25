@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Toolbar Component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ASP.NET Core and MVC Toolbar Component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ASP.NET Core and MVC Toolbar component and more deatails.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core and MVC
 documentation: ug
 ---
 

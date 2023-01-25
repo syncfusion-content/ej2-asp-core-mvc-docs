@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Accordion Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ASP.NET Core and MVC Accordion Component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ASP.NET Core and MVC Accordion Component and much more details.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core and MVC
 documentation: ug
 ---
 
 
-# Accessibility in ##Platform_Name## Accordion Control
+# Accessibility in ASP.NET Core and MVC Accordion Component
 
 The Accordion component has been designed keeping in mind the [WAI-ARIA](https://www.w3.org/TR/wai-aria-practices/) specifications, by applying the prompt WAI-ARIA roles, states and properties along with the keyboard support. Thus, making it usable for people who use assistive WAI-ARIA Accessibility supports that is achieved through the attributes like `aria-labelledby`, It helps to provide information about the elements in a document for assistive technology. The component implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and tested in major screen readers.
 
