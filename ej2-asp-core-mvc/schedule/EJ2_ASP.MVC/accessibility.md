@@ -4,7 +4,7 @@ title: Accessibility in ASP.MVC Schedule Component| Syncfusion
 description: Describes how the Syncfusion ASP.MVC Scheduler control has been built keeping web accessibility in mind, thus allowing to interact with assistive technologies.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ASP.MVC
+publishingplatform: ejmvc
 documentation: ug
 ---
 

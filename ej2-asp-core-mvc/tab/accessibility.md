@@ -4,7 +4,7 @@ title: Accessibility in ASP.NET Core and MVC Tab component| Syncfusion
 description: Learn here all about Accessibility in Syncfusion ASP.NET Core and MVC Tab component and much more details.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ASP.NET Core and MVC
+publishingplatform: aspnet-core
 documentation: ug
 ---
 

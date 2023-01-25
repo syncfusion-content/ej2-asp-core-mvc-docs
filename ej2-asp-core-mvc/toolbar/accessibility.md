@@ -4,7 +4,7 @@ title: Accessibility in ASP.NET Core and MVC Toolbar Component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ASP.NET Core and MVC Toolbar component and more deatails.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ASP.NET Core and MVC
+publishingplatform: aspnet-core
 documentation: ug
 ---
 
