@@ -61,7 +61,7 @@ You can use the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 {% include code-snippet/rating/appearance/visible/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Visible.cs" %}
-{% include code-snippet/rating/Appearance/visible/visible.cs %}
+{% include code-snippet/rating/appearance/visible/visible.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -79,7 +79,7 @@ You can use the [ReadOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rating/appearance/read-only/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CustomPosition.cs" %}
+{% highlight c# tabtitle="ReadOnly.cs" %}
 {% include code-snippet/rating/appearance/read-only/readonly.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -143,7 +143,7 @@ You can change the space between the rating items in ASP.NET MVC Rating control,
 {% include code-snippet/rating/appearance/css-class/item-spacing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ItemsSpacing.cs" %}
-{% include code-snippet/rating/appearance/css-class/item-spacing/itemsspacing.cs %}
+{% include code-snippet/rating/appearance/css-class/item-spacing/itemspacing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
