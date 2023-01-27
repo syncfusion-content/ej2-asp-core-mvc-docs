@@ -52,6 +52,8 @@ Change the width, color, and radius of the heat map cells by using the [Border](
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core HeatmapChart with Changing Cell Border Color](images/Appearance/heatmap-with-cell-border-color.png)
+
 ### Cell highlighting
 
 
@@ -85,6 +87,8 @@ N> The cell highlighting only works in a SVG rendering mode.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![ASP.NET Core HeatmapChart with Enabling Cell Highlighting Color](images/Appearance/heatmap-with-cell-highlight-color.gif)
 
 ### Color gradient mode
 
@@ -129,6 +133,8 @@ N> The default value of `ColorGradientMode` is Table.
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core HeatmapChart with Enabling ColorGradientMode](images/Appearance/heatmap-with-color-gradient-mode.png)
+
 ## Background color
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -157,6 +163,8 @@ The background color of the HeatMap can be customized using the [BackgroundColor
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![ASP.NET Core HeatmapChart with Background Color](images/Appearance/heatmap-with-background-color.png)
 
 ## Margin
 
@@ -187,6 +195,8 @@ Set the margin for the heat map from its container by using the [Margin](https:/
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core HeatmapChart with Margin](images/Appearance/heatmap-with-margin.png)
+
 ## Title
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -215,6 +225,8 @@ The title is used to provide a quick information about the data plotted in heatm
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![ASP.NET Core HeatmapChart with Title](images/Appearance/heatmap-with-title.png)
 
 ## Data label
 
@@ -245,6 +257,8 @@ The visibility of data labels can be toggled using the [ShowLabel](https://help.
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core HeatmapChart with Data Label](images/Appearance/heatmap-with-data-label.png)
+
 ### Customize the data label
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -273,6 +287,8 @@ The value displayed in the HeatMap cell can be changed using the [CellRender](ht
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![ASP.NET Core HeatmapChart with Customizing the Data Label](images/Appearance/heatmap-with-data-label-customization.png)
 
 ### Text style
 
@@ -303,7 +319,7 @@ The text attributes of the data label such as font-family, font-size, and color 
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Customizing the Text Style](images/Appearance/heatmap-with-text-style-customization.png)
 
 ### Format
 
@@ -334,3 +350,4 @@ The format of the data label, such as currency, decimal, percent etc. can be cha
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core HeatmapChart with Formatting Data Label](images/Appearance/heatmap-with-datalabel-format.png)

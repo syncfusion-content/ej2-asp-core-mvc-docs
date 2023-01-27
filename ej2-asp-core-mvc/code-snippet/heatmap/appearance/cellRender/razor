@@ -6,6 +6,6 @@ yaxis.Labels(ViewBag.yLabels)).CellRender("cellRender").DataSource(ViewBag.dataS
 
 <script>
 var cellRender = function (args) {
-    args.displayText = (args.value) + '$';
+    args.displayText = (args.value) + 'K';
 };
 </script>

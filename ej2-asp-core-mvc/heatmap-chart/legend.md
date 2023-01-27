@@ -11,9 +11,9 @@ documentation: ug
 
 # Legend in ##Platform_Name## HeatMap Chart Component
 
-The legend is used to provide the information about the heat map cell. You can enable the legend by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Visible.html) property to **true**.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+The legend is used to provide the information about the heat map cell. You can enable the legend by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_Visible) property to **true**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -26,6 +26,8 @@ The legend is used to provide the information about the heat map cell. You can e
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+The legend is used to provide the information about the heat map cell. You can enable the legend by setting the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_Visible) property to **true**.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/legend/default/razor %}
@@ -36,18 +38,19 @@ The legend is used to provide the information about the heat map cell. You can e
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Legend](images/Legend/heatmap-with-legend.png)
 
 ## Legend types
 
-Heat map supports two legend types: Gradient and list type.
+{% if page.publishingplatform == "aspnet-core" %}
+
+Heat map supports two legend types: **Gradient** and **Fixed** type.
 
 * **Gradient** - This is a continuous color legend with smooth color transition between palette color values.
-* **List** - List is a fixed color legend. Each palette color information is shown separately in the list item.
+* **Fixed** - The fixed color legend is a list. Each palette color information is shown separately in the list item.
 
-You can change the legend type by using the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings~Type.html) property in the `paletteSettings` property.
+You can change the legend type by using the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings~Type.html) property in the [paletteSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -60,6 +63,14 @@ You can change the legend type by using the [type](https://help.syncfusion.com/c
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+Heat map supports two legend types: Gradient and Fixed type.
+
+* **Gradient** - This is a continuous color legend with smooth color transition between palette color values.
+* **Fixed** - The fixed color legend is a list. Each palette color information is shown separately in the list item.
+
+You can change the legend type by using the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html#Syncfusion_EJ2_HeatMap_HeatMapPaletteSettings_Type) property in the [paletteSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html)property.
+
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/legend/types/razor %}
@@ -70,13 +81,13 @@ You can change the legend type by using the [type](https://help.syncfusion.com/c
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Fixed Legend](images/Legend/heatmap-with-fixed-legend.png)
 
 ## Placement
 
-You can place the legend at left, right, top, or bottom to the heat map layout by using the [position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Position.html) property. The legend is positioned at the right to the heat map by default.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+You can place the legend at **Left**, **Right**, **Top**, or **Bottom** to the heat map layout by using the [position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Position.html) property. The legend is positioned at the **Right** to the heat map by default.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -89,6 +100,8 @@ You can place the legend at left, right, top, or bottom to the heat map layout b
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+You can place the legend at left, right, top, or bottom to the heat map layout by using the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_Position) property. The legend is positioned at the right to the heat map by default.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/legend/placement/razor %}
@@ -99,13 +112,13 @@ You can place the legend at left, right, top, or bottom to the heat map layout b
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Changing Legend Position](images/Legend/heatmap-with-legend-position.png)
 
 ## Alignment
 
-You can align the legend as center, far, or near to the heat map using the [alignment](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Alignment.html) property.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+You can align the legend as **Center**, **Far**, or **Near** to the heat map using the [alignment](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Alignment.html) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -118,6 +131,8 @@ You can align the legend as center, far, or near to the heat map using the [alig
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+You can align the legend as center, far, or near to the heat map using the [Alignment](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_Alignment) property.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/legend/alignment/razor %}
@@ -128,13 +143,13 @@ You can align the legend as center, far, or near to the heat map using the [alig
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Changing Legend Alignment](images/Legend/heatmap-with-legend-alignment.png)
 
 ## Legend dimensions
 
-You can change the legend dimensions with values in pixels or percentage by using the[width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Width.html) and [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Height.html) properties.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+You can change the legend dimensions with values in pixels or percentage by using the[width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Width.html) and [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Height.html) properties.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -147,6 +162,8 @@ You can change the legend dimensions with values in pixels or percentage by usin
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+You can change the legend dimensions with values in pixels or percentage by using the[Width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_Width) and [Height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_Height) properties.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/legend/dimensions/razor %}
@@ -157,7 +174,7 @@ You can change the legend dimensions with values in pixels or percentage by usin
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatmapChart with Changing Legend Dimensions](images/Legend/heatmap-with-legend-dimension.png)
 
 ## Paging for legend
 
@@ -186,9 +203,11 @@ Paging is available only for the list type legend in the heat map, and it can be
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core HeatmapChart with Legend Paging](images/Legend/heatmap-with-legend-paging.png)
 
+## Smart legend
 
-## Smart Legend
+{% if page.publishingplatform == "aspnet-core" %}
 
 Smart legend is another way of showing list type legend with responsiveness and readability, when the palette has more number of items. You can enable this smart legend by using the [enableSmartLegend](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~EnableSmartLegend.html) property when the palette type is set to **Fixed**.
 
@@ -198,8 +217,6 @@ The following are the legend label display types:
 * **All**: Displays all labels in the legend.
 * **Edge**: Displays the legend labels only at extreme ends.
 * **None**: None of the labels are displayed. The tooltip will appear for this type of label display when hovering over the legend item.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -212,6 +229,15 @@ The following are the legend label display types:
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+Smart legend is another way of showing list type legend with responsiveness and readability, when the palette has more number of items. You can enable this smart legend by using the [EnableSmartLegend](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_EnableSmartLegend) property when the palette type is set to **Fixed**.
+
+In smart legend, you can change the display type of legend labels by using the [LabelDisplayType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_LabelDisplayType) property.
+
+The following are the legend label display types:
+* **All**: Displays all labels in the legend.
+* **Edge**: Displays the legend labels only at extreme ends.
+* **None**: None of the labels are displayed. The tooltip will appear for this type of label display when hovering over the legend item.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/legend/smart-legend/razor %}
@@ -222,13 +248,13 @@ The following are the legend label display types:
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core HeatmapChart with Smart Legend](images/Legend/heatmap-with-smart-legend.png)
 
-
-## Legend Selection
-
-In the HeatMap, the legend selection is used to toggle the visibility of cell for viewing the specific range value. You can enable the legend selection using the [toggleVisibility](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~ToggleVisibility.html) property.
+## Legend selection
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+In the HeatMap, the legend selection is used to toggle the visibility of cell for viewing the specific range value. You can enable the legend selection using the [toggleVisibility](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~ToggleVisibility.html) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -241,6 +267,8 @@ In the HeatMap, the legend selection is used to toggle the visibility of cell fo
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+In the HeatMap, the legend selection is used to toggle the visibility of cell for viewing the specific range value. You can enable the legend selection using the [ToggleVisibility](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_ToggleVisibility) property.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/legend/legend-selection/razor %}
@@ -251,13 +279,13 @@ In the HeatMap, the legend selection is used to toggle the visibility of cell fo
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core HeatmapChart with Legend Selection](images/Legend/heatmap-with-legend-selection.png)
 
-
-## Legend Title
-
-The legend title displays a specific information about the legend. You can enable the legend title by setting the [title](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~title.html) property by providing the text and customizing the legend title text style using the [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~titleModel~textStyle.html) property.
+## Legend title
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+The legend title displays a specific information about the legend. You can enable the legend title by setting the [title](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~title.html) property by providing the text and customizing the legend title text style using the [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~titleModel~textStyle.html) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -270,6 +298,8 @@ The legend title displays a specific information about the legend. You can enabl
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+The legend title displays a specific information about the legend. You can enable the legend title by setting the [Title](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_Title) property by providing the text and customizing the legend title text style using the [TextStyle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_TextStyle) property.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/legend/legend-title/razor %}
@@ -280,3 +310,4 @@ The legend title displays a specific information about the legend. You can enabl
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core HeatmapChart with Legend Title](images/Legend/heatmap-with-legend-title.png)
