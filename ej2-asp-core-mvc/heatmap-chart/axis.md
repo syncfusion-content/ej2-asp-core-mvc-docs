@@ -11,7 +11,7 @@ documentation: ug
 
 # Axis in ##Platform_Name## HeatMap Chart Component
 
-Heatmap consists of two axes namely, X-axis and Y-axis that displays the row headers and column headers to plot the data points respectively. You can customize both the axes by specifying the properties like type, format, and other customising options in the axis of the heatmap.
+Heatmap consists of two axes namely, X-axis and Y-axis that displays the row headers and column headers to plot the data points respectively. You can customize both the axes by specifying the properties like type, format, and other customizing options in the axis of the heatmap.
 
 ## Axis types
 
@@ -58,7 +58,7 @@ Category axis type is used to represent the string values in the axis labels. Yo
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Numeric axis type is used to represent the numeric values in the axis labels. You can specify the [valueType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~ValueType.html)property for the axis is **Numeric**.
+Numeric axis type is used to represent the numeric values in the axis labels. You can specify the [valueType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~ValueType.html) property for the axis is **Numeric**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -71,7 +71,7 @@ Numeric axis type is used to represent the numeric values in the axis labels. Yo
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Numeric axis type is used to represent the numeric values in the axis labels. You can specify the [ValueType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_ValueType)property for the axis is **Numeric**.
+Numeric axis type is used to represent the numeric values in the axis labels. You can specify the [ValueType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_ValueType) property for the axis is **Numeric**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
