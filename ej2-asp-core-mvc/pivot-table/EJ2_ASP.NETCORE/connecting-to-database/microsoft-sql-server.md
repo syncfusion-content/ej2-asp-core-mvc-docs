@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microsoft SQL Server Data Binding in ASP.NET Core Pivotview component
+title: Microsoft SQL Server Data Binding in ASP.NET Core Pivotview |Syncfusion
 description: Learn how to bind Microsoft SQL Server Database data in the Syncfusion ASP.NET Core Pivotview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Microsoft SQL Server Data Binding
@@ -101,7 +101,7 @@ namespace PivotController.Controllers
 
 **1.** Download the ASP.NET Core Pivot Table sample from [`this`](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) GitHub repository.
 
-**2.** Next, map the hosted Web API's URL link `https://localhost:7139/product` to the Pivot Table component in `app.ts` by using the [`url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property.
+**2.** Next, map the hosted Web API's URL link `https://localhost:7139/product` to the Pivot Table component in `app.ts` by using the [`Url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property.
 
 ```csharp
 <ejs-pivotview id="PivotView" height="300" showFieldList="true">
