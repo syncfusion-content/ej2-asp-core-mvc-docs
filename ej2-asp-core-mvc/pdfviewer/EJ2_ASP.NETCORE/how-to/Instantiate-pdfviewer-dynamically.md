@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Dynamically initialize the EJ2 ASP.NET Core PDF Viewer | Syncfusion 
-Getting Started with EJ2 ASP.NET Core PDF Viewer Control | Syncfusion
 description: Learn how to dynamically instantiate the PDF Viewer component in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Instantiate the PDF Viewer component dynamically and load PDF documents
