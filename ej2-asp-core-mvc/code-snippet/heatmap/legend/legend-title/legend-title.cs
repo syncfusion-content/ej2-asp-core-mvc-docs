@@ -4,6 +4,11 @@ public ActionResult Legend()
          ViewBag.xLabels = xlabels;
          string[] yLabels = new string[6] { "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat" };
          ViewBag.yLabels = yLabels;
+         ViewBag.legendTextStyle = new
+         {
+            color="red",
+            size="15px"
+         };
          ViewBag.dataSource = GetDataSource();
          return View();
 }
