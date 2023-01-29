@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.Inputs
+
+@Html.EJS().Rating("rating").Value(3).ItemsCount(8).Render()
