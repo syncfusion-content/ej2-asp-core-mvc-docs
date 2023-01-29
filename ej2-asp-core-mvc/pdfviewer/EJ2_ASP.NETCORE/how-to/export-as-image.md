@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Export as Image in ASP.NET Core PDF Viewer control
 
 The PDF Viewer server library allows the PDF document pages to be exported as raster images. Exporting can be done using the ExportAsImage() method. This option helps to convert a PDF into an image. The APIs available to export the PDF document pages as images are listed as follows:
@@ -78,7 +77,6 @@ pdfExportImage.Load(@"currentDirectory\..\..\..\..\Data\HTTP Succinctly.pdf");
 Bitmap bitmapimage = pdfExportImage.ExportAsImage(0, new SizeF(200, 300),200,200, true);
 //Save the exported image in disk
 bitmapimage.Save(@"currentDirectory\..\..\..\..\Images\" + "bitmapImage" + i.ToString() + ".png");
-
 
 ```
 
