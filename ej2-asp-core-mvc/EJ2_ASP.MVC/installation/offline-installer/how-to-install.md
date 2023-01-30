@@ -19,7 +19,7 @@ The steps below show how to install the Essential Studio ASP . NET MVC - EJ2 ins
 
     ![Web Offline Installer Setup wizard](images/webofflineinstaller-1.png)
 
-    >**NOTE** <br /> The Installer wizard extracts the syncfusionessentialaspnetmvc-js2_(version).exe dialog, which displays the package's unzip operation.
+    N> The Installer wizard extracts the syncfusionessentialaspnetmvc-js2_(version).exe dialog, which displays the package's unzip operation.
 
 2. To unlock the Syncfusion offline installer, you have two options:
 
@@ -63,7 +63,7 @@ The steps below show how to install the Essential Studio ASP . NET MVC - EJ2 ins
 
     ![Web Offline Installer Uninstall Previous Wizard](images/webofflineinstaller-5.png)
 
-    >**NOTE** <br /> From the 2021 Volume 1 release, Syncfusion has added the option to uninstall previous versions from 18.1 while installing the new version.<br /><br /> **NOTE** <br/><br /> If any version is selected to uninstall, a confirmation screen will appear; if continue is selected, the Progress screen will display the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress will be displayed.
+    N> From the 2021 Volume 1 release, Syncfusion has added the option to uninstall previous versions from 18.1 while installing the new version. If any version is selected to uninstall, a confirmation screen will appear; if continue is selected, the Progress screen will display the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress will be displayed.
 
     **Confirmation Alert**
 
@@ -77,7 +77,7 @@ The steps below show how to install the Essential Studio ASP . NET MVC - EJ2 ins
 
     ![Web Offline Installer Install Progress](images/webofflineinstaller-8.png)
 
-    >**NOTE** <br /> The Completed screen is displayed once the ASP . NET MVC - EJ2 product is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
+    N> The Completed screen is displayed once the ASP . NET MVC - EJ2 product is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
 
     ![Web Offline Installer Summary Wizard](images/webofflineinstaller-9.png)
 
@@ -107,13 +107,13 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     **Arguments:** "installer file path\SyncfusionEssentialStudio(product)_(version).exe"/Install silent/UNLOCKKEY:"(product unlock key)"[/log"{Log file path}"][/InstallPath:{Location to install}][/InstallSamples:{true/false}][/InstallAssemblies:{true/false}][/UninstallExistAssemblies:{true/false}][/InstallToolbox:{true/false}]
 
-    >**NOTE** <br /> [..] - Arguments inside the square brackets are optional.
+    N> [..] - Arguments inside the square brackets are optional.
 
     **Example:** "D:\Temp\syncfusionessentialaspnetmvc-js2x.x.x.x.exe"/Install silent/UNLOCKKEY:"*product unlock key*"/log "C:\Temp\EssentialStudioPlatform.log"/InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
 7. Essential Studio for ASP . NET MVC (Essential JS2) is installed.
 
-    >**NOTE** <br /> x.x.x.x should be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
+    N> x.x.x.x should be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
 
 ## Command Line Uninstallation
 

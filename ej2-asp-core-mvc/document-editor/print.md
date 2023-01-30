@@ -63,7 +63,7 @@ To print the document, use the `print` method from document editor instance.
 
 
 
-> To enable print for a document editor instance, set enablePrint as true.
+N> To enable print for a document editor instance, set enablePrint as true.
 
 ## Improve print quality
 
@@ -90,7 +90,7 @@ Document editor provides an option to improve the print quality using [`printDev
 
 
 
-> By default, printDevicePixelRatio value is 1.
+N> By default, printDevicePixelRatio value is 1.
 
 ## Print using window object
 

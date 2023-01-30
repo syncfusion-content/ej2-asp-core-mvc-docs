@@ -88,7 +88,7 @@ The Carousel component supports to show one complete slide and a partial view of
 {% endhighlight %}
 {% endtabs %}
 
-> Slide animation only applicable if the `partialVisible` is enabled.
+N> Slide animation only applicable if the `partialVisible` is enabled.
 
 The last slide will be displayed as a partial slide at the initial rendering when the [`loop`](../api/carousel/#loop) and `partialVisible` properties are enabled.
 

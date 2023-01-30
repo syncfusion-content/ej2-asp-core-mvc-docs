@@ -132,7 +132,7 @@ fontColor and backgroundColor property has two mode `Picker` and `Palette`. Pale
 
 By default, The content styles of Rich Text Editor are not returned while retrieving HTML value from the editor. So, the styles are not applied when using the HTML value outside of the editor. To get the styles to Rich Text Editor’s content for your application, You can copy and use the below styles directly in your application. The styles listed below which used in the UI elements of the Rich Text Editor.  
 
-> Make sure to add a CSS class ‘e-rte-content’ to the content container.
+N> Make sure to add a CSS class ‘e-rte-content’ to the content container.
 
 ```css
 

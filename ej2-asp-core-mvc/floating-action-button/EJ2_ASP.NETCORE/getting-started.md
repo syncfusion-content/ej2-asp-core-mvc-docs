@@ -27,7 +27,7 @@ This section briefly explains about how to include [ASP.NET Core Floating Action
 
 Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
@@ -73,7 +73,7 @@ In this getting started walk-through, the required scripts are referred using CD
 {% endhighlight %}
 {% endtabs %}
 
-## Register Syncfusion Script Manager
+## Register Syncfusion script manager
 
 Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
 
@@ -114,15 +114,15 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Floating Action Button Control](images/default.png)
 
-## Positioning
+## Event Click In Floating Action Button
 
-The floating action button can be positioned using the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. The fab is positioned based on the [`Target`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target), if target is defined else positioned based on the browser viewport. The position values are TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
+The floating action button control triggers the `onclick` event when you click on the floating action button. You can use this event to perform the required action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/getting-started/position/tagHelper %}
+{% include code-snippet/floating-action-button/events/onclick-event/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -130,10 +130,10 @@ The floating action button can be positioned using the [`Position`](https://help
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/getting-started/position/razor %}
+{% include code-snippet/floating-action-button/events/onclick-event/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OnClickEvent.cs" %}
+{% include code-snippet/floating-action-button/events/onclick-event/onclickevent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-![ASP.NET Core Floating Action Button Control](images/position.png)
-

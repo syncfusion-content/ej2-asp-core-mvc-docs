@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resources in ##Platform_Name## Schedule Component
+title: Resources in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Resources in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resources
@@ -138,8 +138,9 @@ The appointments belonging to the different resources will be displayed altogeth
 {% endif %}
 
 
+![Displaying Multiple Resources in ASP.NET Core Scheduler](images/scheduler-multiple-resource.png)
 
-> Setting `allowMultiple` to `true` in the above code example allows you to select multiple resources from the event editor and also creates multiple copies of the same appointment in the Scheduler for each resources while rendering.
+N> Setting `allowMultiple` to `true` in the above code example allows you to select multiple resources from the event editor and also creates multiple copies of the same appointment in the Scheduler for each resources while rendering.
 
 ## Resource grouping
 
@@ -175,6 +176,7 @@ The following code example displays how the multiple resources are grouped and i
 {% endif %}
 
 
+![Displaying Vertical Resource View in ASP.NET Core Scheduler](images/scheduler-resources-verticalview.png)
 
 ### Timeline resource view
 
@@ -204,6 +206,7 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endif %}
 
 
+![Displaying Timeline Resource View in in ASP.NET Core Scheduler](images/scheduler-resource-timelineview.png)
 
 ### Grouping single-level resources
 
@@ -235,8 +238,9 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 {% endif %}
 
 
+![Display Grouping Single-level Resources in in ASP.NET Core Scheduler](images/scheduler-resource-singlelevel.png)
 
-> The `name` field defined in the **resources** collection namely `Owners` will be mapped within the `group` property, in order to enable the grouping option with those resource levels on the Scheduler.
+N> The `name` field defined in the **resources** collection namely `Owners` will be mapped within the `group` property, in order to enable the grouping option with those resource levels on the Scheduler.
 
 ### Grouping multi-level resources
 
@@ -266,6 +270,7 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
 {% endif %}
 
 
+![Display Grouping Multi-level Resources in in ASP.NET Core Scheduler](images/scheduler-resource-timelineview.png)
 
 ### One-to-One grouping
 
@@ -295,6 +300,7 @@ In multi-level grouping, Scheduler usually groups the resources on the child lev
 {% endif %}
 
 
+![Display One-to-One Grouping in in ASP.NET Core Scheduler](images/scheduler-resource-one-to-one.png)
 
 ### Grouping resources by date
 
@@ -326,8 +332,9 @@ It groups the number of resources under each date and is applicable only on the 
 {% endif %}
 
 
+![Display Grouping Resources by Date in ASP.NET Core Scheduler](images/scheduler-resource-bydate.png)
 
-> This kind of grouping by date is not applicable on any of the **timeline views**.
+N> This kind of grouping by date is not applicable on any of the **timeline views**.
 
 ## Customizing parent resource cells
 
@@ -357,12 +364,13 @@ In timeline view work cells of parent resource can be customized by checking the
 {% endif %}
 
 
+![Display Customizing parent resource cells in ASP.NET Core Scheduler](images/scheduler-custom-parentcell.png)
 
 ## Working with shared events
 
 Multiple resources can share the same events, thus allowing the CRUD action made on it to reflect on all other shared instances simultaneously. To enable such option, set `allowGroupEdit` option to `true` within the `group` property. With this property enabled, a single appointment object will be maintained within the appointment collection, even if it is shared by more than one resource – whereas the resource fields of such appointment object will be in array which hold the IDs of the multiple resources.
 
-> Any actions such as create, edit or delete held on any one of the shared event instances, will be reflected on all other related instances visible on the UI.
+N> Any actions such as create, edit or delete held on any one of the shared event instances, will be reflected on all other related instances visible on the UI.
 
 **Example:** To edit all the resource events simultaneously,
 
@@ -390,6 +398,7 @@ Multiple resources can share the same events, thus allowing the CRUD action made
 {% endif %}
 
 
+![Display Working with Shared Events in ASP.NET Core Scheduler](images/scheduler-shared-event.png)
 
 ## Simple resource header customization
 
@@ -421,8 +430,9 @@ It is possible to customize the resource header cells using built-in template op
 {% endif %}
 
 
+![Display Resource Header Customization in ASP.NET Core Scheduler](images/scheduler-custom-resource-header.png)
 
-> To customize the resource header in compact mode properly make use of the class `e-device` as in the code example.
+N> To customize the resource header in compact mode properly make use of the class `e-device` as in the code example.
 
 ![Resource header template in compact mode](images/header-template.png)
 
@@ -454,6 +464,7 @@ It is possible to customize the resource headers to display with multiple column
 {% endif %}
 
 
+![Display Customizing Resource Header with Multiple Columns in ASP.NET Core Scheduler](images/scheduler-custom-resource-header-multiple-column.png)
 
 ## Displaying tooltip for resource headers
 
@@ -483,6 +494,7 @@ It is possible to display tooltip over the resource headers showing the resource
 {% endif %}
 
 
+![Display Tooltip for Resource Headers in ASP.NET Core Scheduler](images/scheduler-resource-tooltip.png)
 
 ## Choosing between resource colors for appointments
 
@@ -514,8 +526,9 @@ In the following example, the colors mentioned in the second level will get appl
 {% endif %}
 
 
+![Display Choosing Between Resource Colors for Appointments in ASP.NET Core Scheduler](images/scheduler-resource-colour.png)
 
-> The value of the `resourceColorField` field should be mapped with the `name` value given within the `resources` property.
+N> The value of the `resourceColorField` field should be mapped with the `name` value given within the `resources` property.
 
 ## Dynamically add and remove resources
 
@@ -580,6 +593,7 @@ Different working days can be set for the resources of Scheduler using the `work
 {% endif %}
 
 
+![Display Set Different Work Days in ASP.NET Core Scheduler](images/scheduler-resource-custom-workdays.png)
 
 ### Set different work hours
 
@@ -612,8 +626,44 @@ Working hours indicates the work hour duration of a day, which is highlighted vi
 {% endif %}
 
 
+![Display Set Different Work Hours in ASP.NET Core Scheduler](images/scheduler-resource-custom-workhours.png)
 
 In this example, a resource named `Will Smith` is depicted with working hours ranging from 8.00 AM to 3.00 PM and is visually illustrated with active colors, whereas the other two resources have different working hours set.
+
+## Hide non-working days when grouped by date
+
+In Scheduler, you can set custom work days for each resource and group the Scheduler by date to display these work days. By default, the Scheduler will show all days when it is grouped by date, even if they are not included in the custom work days for the resources. However, you can use the `HideNonWorkingDays` property to only display the custom work days in the Scheduler.
+
+To use the `HideNonWorkingDays` property, you need to include it in the configuration options for your Scheduler component. Set the value of `HideNonWorkingDays` to `true` to enable this feature.
+
+**Example:** To display the Scheduler with resources grouped by date for custom working days,
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+N> The `HideNonWorkingDays` property only applies when the Scheduler is grouped `byDate`.
 
 ## Compact view in mobile
 
@@ -658,4 +708,4 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 
 
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

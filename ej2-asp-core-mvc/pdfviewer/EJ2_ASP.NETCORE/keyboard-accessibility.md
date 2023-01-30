@@ -35,4 +35,4 @@ The ASP.NET Core PDF Viewer supports the following keyboard interactions.
 |Print the document|CONTROL + P|COMMAND + P|
 |Delete the annotations and form fields|Delete|Delete|
 
-> Follow the steps provided in the [link](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started/) to create a simple PDF Viewer sample.
+N> Follow the steps provided in the [link](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started/) to create a simple PDF Viewer sample.

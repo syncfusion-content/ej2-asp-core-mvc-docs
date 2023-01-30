@@ -37,6 +37,6 @@ await barcode.exportAsBase64Image('JPG');
 
 ```
 
->Format is to specify the type or format of the exported file. You can export the barcode to the following formats:
->* JPG.
->* PNG.
+N>Format is to specify the type or format of the exported file. You can export the barcode to the following formats:
+<br/>* JPG.
+<br/>* PNG.

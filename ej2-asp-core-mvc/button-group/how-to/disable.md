@@ -39,6 +39,6 @@ To disable whole ButtonGroup, `disabled` attribute should be added to all the bu
 {% endtabs %}
 {% endif %}
 
-> To disable radio/checkbox type ButtonGroup, the `disabled` attribute should be added to the particular input element.
+N> To disable radio/checkbox type ButtonGroup, the `disabled` attribute should be added to the particular input element.
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupHowToSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupHowToSample).

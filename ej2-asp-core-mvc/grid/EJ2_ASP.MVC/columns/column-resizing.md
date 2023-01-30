@@ -37,12 +37,12 @@ Column width can be resized by clicking and dragging the right edge of the colum
 
 
 
-> You can disable resizing for a particular column by setting the [`AllowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowResizing) property of [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) to false.
-> In RTL mode, you can click and drag the left edge of the header cell to resize the column.
+N> You can disable resizing for a particular column by setting the [`AllowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowResizing) property of [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) to false.
+<br/> In RTL mode, you can click and drag the left edge of the header cell to resize the column.
 
 ## Column resizing using method
 
-To resize a column, set width to that particular column and then refresh the grid header by using the **refreshHeader** method. Please refer the below code
+To resize a column, set width to that particular column and then refresh the grid header by using the **refreshHeader** method. Refer the below code,
 
 ```typescript
 
@@ -86,7 +86,7 @@ In the following sample, minimum and maximum width are defined for **OrderID**, 
 {% endif %}
 
 
-> The `maxWidth` and `minWidth` properties will be considered only when the user resizes the column. When resizing the window, these properties will not be considered. This is because columns cannot be re-rendered when resizing the window.
+N> The `maxWidth` and `minWidth` properties will be considered only when the user resizes the column. When resizing the window, these properties will not be considered. This is because columns cannot be re-rendered when resizing the window.
 
 ## Resize stacked column
 

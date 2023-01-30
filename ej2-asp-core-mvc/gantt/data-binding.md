@@ -125,9 +125,9 @@ To bind remote data to the Gantt component, assign service data as an instance o
 
 In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
 
-> Please refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual studio,
+N> Refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
 
-We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Please Check the below code snippet to assign data source to Gantt.
+We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Check the below code snippet to assign data source to Gantt.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -252,7 +252,7 @@ The following code example describes the CRUD operations handled at server-side.
 
 ### Sending additional parameters to the server
 
-We can pass additional parameters using [`addParams`](../api/data/query/#addparams) method of [`Query`](../api/data/query/) class. In server side we have inherited and shown the additional parameter value in Syncfusion DataManager class itself. We pass an additional parameter in load time using [`load`](../api/gantt#load) event. We can also pass additional parameter to the CRUD model. Please Check the below code snippet to send additional parameter to Gantt.
+We can pass additional parameters using [`addParams`](../api/data/query/#addparams) method of [`Query`](../api/data/query/) class. In server side we have inherited and shown the additional parameter value in Syncfusion DataManager class itself. We pass an additional parameter in load time using [`load`](../api/gantt#load) event. We can also pass additional parameter to the CRUD model. Check the below code snippet to send additional parameter to Gantt.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -339,7 +339,7 @@ You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the d
 
 
 
-> If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
+N> If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
 
 ## Split task
 
@@ -438,7 +438,7 @@ We can also define segment details as a flat data and this collection can be map
 
 ![Alt text](images/split-tasks.png)
 
-> Segment id field contains id of a task which should be split at load time.
+N> Segment id field contains id of a task which should be split at load time.
 
 ## Limitations
 

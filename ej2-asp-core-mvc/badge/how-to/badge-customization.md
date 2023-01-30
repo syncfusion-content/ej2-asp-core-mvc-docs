@@ -90,4 +90,4 @@ Even though the badges support the conventional `top` and `bottom` positions, th
 
 ![Badge Position](../images/custompos.PNG)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Badge/BadgeCustomSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Badge/BadgeCustomSample).
