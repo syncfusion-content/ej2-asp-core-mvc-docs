@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export As Image in ##Platform_Name## Pdfviewer Component
+title: Export As Image with EJ2 ASP.NET Core PDF Viewer Control | Syncfusion
 description: Learn here all about Export As Image in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export As Image
@@ -161,7 +161,7 @@ for (int i = 0; i < pdfExportImage.PageCount; i++)
 ```
 ## Export as Image in ASP.NET Core 6.0
 
-To export a PDF in ASP.NET Core 6.0 using Syncfusion PDF Viewer and Skia Bitmap, you can follow these steps:
+To export a PDF to image in ASP.NET Core 6.0 using Syncfusion PDF Viewer and Skia Bitmap, you can follow these steps:
 
 Create an instance of PdfRenderer in the controller.
 Create an instance of SKBitmap to get the bitmap representation of the page.
@@ -170,7 +170,7 @@ Use the SKImage class to save the SKBitmap object as a PNG image.
 Use the Save method of the SKBitmap to save the image to a file.
 Return the image file in the response.
 
-Here is a sample that shows how to export a Syncfusion PDF Viewer in ASP.NET Core 6.0 using SkiaSharp's SkBitmap:
+Here is a sample that shows how to export as image in ASP.NET Core 6.0 :
 
 ```cs
 
