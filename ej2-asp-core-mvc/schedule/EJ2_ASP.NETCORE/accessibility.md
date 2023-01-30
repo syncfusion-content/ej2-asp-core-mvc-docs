@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ASP.NETCORE Scheduler Component
+# Accessibility in ASP.NETCORE Schedule Component
 
 The Scheduler has been designed based on the WAI-ARIA specifications, thus applying the appropriate ARIA roles, states and properties for the Scheduler elements. It is also available with a built-in keyboard navigation support, making it easier for the people who use assistive technologies or who completely rely on the Keyboard support. As per the accessibility standard, the navigated dates, views and other interactive actions performed on the Scheduler will be read out to the target users who use assistive technologies such as screen readers.
 

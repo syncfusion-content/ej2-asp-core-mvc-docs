@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ASP.NET Core and MVC Toolbar Component | Syncfusion
-description: Checkout learn here all about Overview in Syncfusion ASP.NET Core and MVC Toolbar component and much more details..
+title: Overview in ##Platform_Name## Toolbar Component | Syncfusion 
+description: Checkout learn here all about Overview in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
-publishingplatform: aspnet-core
+publishingplatform:  ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ASP.NET core and MVC Toolbar Component
+# Overview in ##Platform_Name## Toolbar Component 
 
 The ToolBar displays a group of command buttons arranged horizontally.
 
