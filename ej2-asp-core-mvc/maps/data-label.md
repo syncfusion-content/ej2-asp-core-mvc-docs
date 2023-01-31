@@ -24,7 +24,7 @@ Data labels provide information to users about the shapes of the Maps component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-To display the data labels in the Maps, set the field name containing the text to be displayed from the data source or shape data in the [`labelPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_LabelPath) property of the `dataLabelSettings` property.
+To display the data labels in the Maps, set the field name containing the text to be displayed from the data source or shape data in the [labelPath](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_LabelPath) property of the `dataLabelSettings` property.
 
 In the following example, the value of the `labelPath` property is set from the field name in the shape data of the Maps layer.
 
