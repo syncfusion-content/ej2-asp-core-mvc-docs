@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Templates in Asp.Net MVC Rating Control
+# Templates in ASP.NET MVC Rating Control
 
-The Asp.Net MVC Rating control allows you to customize the appearance of the rating items using templates. You can use templates to specify a custom layout for the rating items, which can include any content you want. This allows you to create a more customized and interactive rating experience for the user.
+The ASP.NET MVC Rating control allows you to customize the appearance of the rating items using templates. You can use templates to specify a custom layout for the rating items, which can include any content you want. This allows you to create a more customized and interactive rating experience for the user.
 
 The rating control supports below templates for item customization.
 
@@ -25,7 +25,7 @@ If the `FullTemplate` is not defined, the `EmptyTemplate` will be used as the de
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
-{% tabs %
+{% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rating/templates/empty-template/razor %}
 {% endhighlight %}
@@ -36,13 +36,13 @@ If the `FullTemplate` is not defined, the `EmptyTemplate` will be used as the de
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with EmptyTemplate](./images/rating-empty-template.png)
+![ASP.NET MVC Rating Control with EmptyTemplate](./images/rating-empty-template.png)
 
 N> The current value of the rating item available in the template context as `value` and in the rating item element as CSS Variable (`--rating-value`) can be used to support precision in templates.
 
 ## Full (rated) symbol template
 
-To customize the appearance of **rated** items in the Syncfusion Asp.Net MVC rating control, you can use the `FullTemplate` tag directive. This directive allows you to specify a custom layout for the rated items, which can include any content you desire.
+To customize the appearance of **rated** items in the Syncfusion ASP.NET MVC rating control, you can use the `FullTemplate` tag directive. This directive allows you to specify a custom layout for the rated items, which can include any content you desire.
 The `value` and `index` are available in the template context for accessing information about the rated item.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
@@ -58,7 +58,7 @@ The `value` and `index` are available in the template context for accessing info
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with FullTemplate](./images/rating-full-template.png)
+![ASP.NET MVC Rating Control with FullTemplate](./images/rating-full-template.png)
 
 ## Using Emoji icon as rating symbol
 
@@ -77,7 +77,7 @@ You can use emojis of your choice as rating symbol by specifying them as templat
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with Emoji Icon](./images/rating-emoji-icon.png)
+![ASP.NET MVC Rating Control with Emoji Icon](./images/rating-emoji-icon.png)
 
 ## Using SVG icon as rating symbol
 
@@ -96,7 +96,7 @@ You can use SVG icons of your choice as rating symbol by specifying them as temp
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with SVG Icon](./images/rating-svg-icon.png)
+![ASP.NET MVC Rating Control with SVG Icon](./images/rating-svg-icon.png)
 
 ## Using PNG image as rating symbol
 
@@ -106,13 +106,13 @@ You can use PNG images of your choice as rating symbol by specifying them as tem
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/templates/png-template/razor %}
+{% include code-snippet/rating/templates/png-image/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="PNGTemplate.cs" %}
-{% include code-snippet/rating/templates/png-template/pngtemplate.cs %}
+{% highlight c# tabtitle="PNGImage.cs" %}
+{% include code-snippet/rating/templates/png-image/pngimage.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with PNG Icon](./images/rating-png.png)
+![ASP.NET MVC Rating Control with PNG Icon](./images/rating-png.png)

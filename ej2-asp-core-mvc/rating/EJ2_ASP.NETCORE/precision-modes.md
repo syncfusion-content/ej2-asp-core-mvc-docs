@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Precision Modes in Asp.Net Core Rating Control
+# Precision Modes in ASP.NET Core Rating Control
 
-You can use the [precision](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Precision) property of the Asp.Net Core Rating control to provide ratings with varying levels of precision.
+You can use the [precision](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Precision) property of the ASP.NET Core Rating control to provide ratings with varying levels of precision.
 
 The precision types of Rating are as follows:
 
@@ -25,4 +25,4 @@ The precision types of Rating are as follows:
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Rating Control with different Precision Types](./images/rating-precision-types.png)
+![ASP.NET Core Rating Control with different Precision Types](./images/rating-precision-types.png)

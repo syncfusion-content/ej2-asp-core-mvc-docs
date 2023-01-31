@@ -4,13 +4,13 @@ title: Tooltip in ##Platform_Name## Rating Control | Syncfusion
 description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
-publishingplatform: ##Platform_Name
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Tooltip in Asp.Net MVC Rating Control
+# Tooltip in ASP.NET MVC Rating Control
 
-The Asp.Net MVC rating control supports tooltip to show additional information in rating items by setting the [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ShowTooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
+The ASP.NET MVC rating control supports tooltip to show additional information in rating items by setting the [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ShowTooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
@@ -25,7 +25,7 @@ The Asp.Net MVC rating control supports tooltip to show additional information i
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with Tooltip](./images/rating-tooltip.png)
+![ASP.NET MVC Rating Control with Tooltip](./images/rating-tooltip.png)
 
 ## Tooltip template
 
@@ -37,19 +37,19 @@ You can use the [TooltipTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/S
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rating/tooltip/tooltip-template/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
+{% highlight c# tabtitle="TooltipTemplate.cs" %}
 {% include code-snippet/rating/tooltip/tooltip-template/tooltiptemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with Tooltip Template](./images/rating-tooltip-template.png)
+![ASP.NET MVC Rating Control with Tooltip Template](./images/rating-tooltip-template.png)
 
 
 ## Tooltip customization
 
-You can customize the appearance of the tooltips using the `CssClass` property of the Asp.Net MVC Rating control and by defining the custom styles for tooltip elements like the below example.
+You can customize the appearance of the tooltips using the `CssClass` property of the ASP.NET MVC Rating control and by defining the custom styles for tooltip elements like the below example.
 
 N> You can find more information about customizing the appearance of the tooltip in the [Tooltip Customization](https://ej2.syncfusion.com/aspnetmvc/documentation/tooltip/style) documentation.
 
@@ -60,10 +60,10 @@ N> You can find more information about customizing the appearance of the tooltip
 {% include code-snippet/rating/tooltip/custom-tooltip/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomTooltip.cs" %}
-{% include code-snippet/rating/tooltip/custom-tooltip/position.cs %}
+{% include code-snippet/rating/tooltip/custom-tooltip/customtooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% endif %}
 
-![Asp.Net MVC Rating Control with Tooltip Customization](./images/rating-custom-tooltip.png)
+![ASP.NET MVC Rating Control with Tooltip Customization](./images/rating-custom-tooltip.png)
