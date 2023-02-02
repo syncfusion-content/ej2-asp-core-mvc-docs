@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable Editing In Single Click in ##Platform_Name## Grid Component
+title: Enable Editing In Single Click in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Enable Editing In Single Click in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Enable Editing In Single Click
@@ -68,36 +68,3 @@ You can open the default dropdown edit popup with single click edit by focusing 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-## Batch Editing
-
-You can make a cell editable on a single click with **Batch** mode of editing in Grid, by using the **editCell** method.
-
-Bind the **mouseup** event for Grid and in the event handler call the **editCell** method, based on the clicked target element.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/single-click-batch-edit/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Single-click-batch-edit.cs" %}
-{% include code-snippet/grid/how-to/single-click-batch-edit/single-click-batch-edit.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/single-click-batch-edit/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Single-click-batch-edit.cs" %}
-{% include code-snippet/grid/how-to/single-click-batch-edit/single-click-batch-edit.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-

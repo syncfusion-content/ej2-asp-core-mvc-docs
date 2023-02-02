@@ -21,7 +21,7 @@ The rating control triggers the [BeforeItemRender](https://help.syncfusion.com/c
 {% include code-snippet/rating/events/beforeitemrender/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="BeforeItemRender.cs" %}
-{% include code-snippet/speeddial/events/beforeitemrender/beforeitemrender.cs %}
+{% include code-snippet/rating/events/beforeitemrender/beforeitemrender.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,7 +34,7 @@ The rating control triggers the [Created](https://help.syncfusion.com/cr/aspnetm
 {% include code-snippet/rating/events/created-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CreatedEvent.cs" %}
-{% include code-snippet/rating/events/created-vent/createdevent.cs %}
+{% include code-snippet/rating/events/created-event/createdevent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -47,7 +47,7 @@ The rating control triggers the [ValueChanged](https://help.syncfusion.com/cr/as
 {% include code-snippet/rating/events/valuechanged-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ValueChanged.cs" %}
-{% include code-snippet/speeddial/events/valuechanged-event/valuechanged.cs %}
+{% include code-snippet/rating/events/valuechanged-event/valuechanged.cs %}
 {% endhighlight %}
 {% endtabs %}
 
