@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Message Control
 
-This section briefly explains how to include ASP.NET Core Message control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include [ASP.NET Core Message](https://www.syncfusion.com/aspnet-core-ui-controls/message) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -117,3 +117,5 @@ Now, add the Syncfusion ASP.NET Core Message tag helper in the `~/Pages/Index.cs
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Message control will be rendered in the default web browser.
 
 ![ASP.NET Core Message Control](images/message-default.png)
+
+N> You can also explore our [ASP.NET Core Message example](https://ej2.syncfusion.com/aspnetcore/Message/DefaultFunctionalities#/bootstrap5) that shows you how to render the Message in ASP.NET Core.
