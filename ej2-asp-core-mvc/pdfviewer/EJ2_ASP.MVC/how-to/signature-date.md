@@ -8,7 +8,6 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-
 # How to add the date to the signature text
 
 To add the date with the signature text in Syncfusion PDF Viewer, we can use `retrieveFormFields()` method. Add a signature field to the PDF document and get the signature field in the PDF using the `retrieveFormFields()` method and store it in a variable. Modify the value of the signature field and get the current date. You can use the `Date()` method to get the current date and format it as desired.
