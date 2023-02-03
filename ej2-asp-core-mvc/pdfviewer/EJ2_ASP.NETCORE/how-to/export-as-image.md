@@ -186,6 +186,6 @@ using (var stream = new FileStream(Path.Combine(@"currentDirectory\..\..\..\..\D
 
 ```
 
-[View Sample in GitHub]()
+[View Sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/Common/Export%20as%20Image%20in%20ASP.NET%20Core%206.0/ExportImageindotnet6)
 
 N> Ensure the provided document path and output image saved locations in your application level.
