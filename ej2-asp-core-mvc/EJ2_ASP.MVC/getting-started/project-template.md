@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Component
+title: Getting Started with ##Platform_Name## Component | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Project Template
@@ -10,11 +10,11 @@ documentation: ug
 
 <!-- markdownlint-disable MD024 -->
 
-# Getting Started with Essential JS 2 for ASP.NET MVC and Syncfusion Project Template
+# Getting Started with ASP.NET MVC and Syncfusion Project Template
 
 Syncfusion provides the **Visual Studio Project Templates** for the Syncfusion ASP.NET MVC platform to create the Syncfusion ASP.NET MVC web application using Essential JS 2 controls.
 
-> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET MVC application to use the controls.
+N> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET MVC application to use the controls.
 
 ## Getting started with ASP.NET MVC 5
 
@@ -37,7 +37,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 3. Select **Syncfusion ASP.NET MVC (Essential JS 2) Application** and change the application name, and then click **OK**.
 
-    > The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
+    N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
 
     ![aspnetmvc5 syncfusion project template](images/aspnetmvc5-project-template.png)
 
@@ -47,7 +47,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
     **Assets From:** Load the Syncfusion Essential JS 2 assets from ASP.NET MVC project such as NuGet, CDN or installed location.
 
-    > Installed location option is available only when the Syncfusion Essential JavaScript 2 setup has been installed.
+    N> Installed location option is available only when the Syncfusion Essential JavaScript 2 setup has been installed.
 
     **Theme Selection:** Choose the required Theme.
 
@@ -97,7 +97,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
 2. Select **Installed > Visual C# > Web** and choose the required **.NET Framework** in the drop-down and select **Syncfusion ASP.NET MVC (Essential JS 2) Application**. Change the application name and click **OK**.
 
-    > The Syncfusion ASP.NET MVC UI Controls supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5.
+    N> The Syncfusion ASP.NET MVC UI Controls supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5.
 
     ![aspnetmvc4 syncfusion project template](images/aspnetmvc4-project-template.png)
 
@@ -107,7 +107,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
     **Assets From:** Load the Syncfusion Essential JS 2 assets to ASP.NET MVC Project, either NuGet, CDN or installed location.
 
-    > Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
+    N> Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
 
     **Theme Selection:** Choose the required Theme.
 

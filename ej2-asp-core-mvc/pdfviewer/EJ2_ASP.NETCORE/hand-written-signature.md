@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Hand Written Signature in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Hand Written Signature in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Hand Written Signature in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Hand Written Signature in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Hand Written Signature
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -16,7 +16,11 @@ The PDF Viewer control supports adding handwritten signatures to a PDF document.
 The following code snippet describes how to enable the handwritten signature in PDF Viewer.
 
 ```html
- <ejs-pdfviewer id="pdfviewer1" serviceUrl="/api/PdfViewer" documentPath="HTTP Succinctly.pdf"  enableHandwrittenSignature="true"></ejs-pdfviewer>
+<ejs-pdfviewer id="pdfviewer1"
+               serviceUrl="/api/PdfViewer"
+               documentPath="HTTP Succinctly.pdf"
+               enableHandwrittenSignature="true">
+</ejs-pdfviewer>
 
 ```
 
@@ -46,7 +50,11 @@ The stroke color, border thickness, and opacity of the handwritten signature can
 Refer to the following code snippet to set the default handwritten signature settings.
 
 ```html
-<ejs-pdfviewer id="pdfviewer1" serviceUrl="/api/PdfViewer" documentPath="HTTP Succinctly.pdf"  handWrittenSignatureSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHandWrittenSignatureSettings {Opacity=0.5,StrokeColor="red",Thickness=3})"></ejs-pdfviewer>
+<ejs-pdfviewer id="pdfviewer1"
+               serviceUrl="/api/PdfViewer"
+               documentPath="HTTP Succinctly.pdf"
+               handWrittenSignatureSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHandWrittenSignatureSettings {Opacity=0.5,StrokeColor="red",Thickness=3})">
+</ejs-pdfviewer>
 
 ```
 

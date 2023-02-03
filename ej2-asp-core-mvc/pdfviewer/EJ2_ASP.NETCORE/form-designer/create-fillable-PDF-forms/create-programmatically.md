@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Create Programmatically in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Create Programmatically in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Create Programmatically in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Create Programmatically in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Programmatically
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
 
-# Create Programmatically
+# Create form fields programmatically
 
 The PDF Viewer control provides the option to add, edit and delete the Form Fields. The Form Fields type supported by the PDF Viewer Control are:
 
@@ -27,19 +27,23 @@ The PDF Viewer control provides the option to add, edit and delete the Form Fiel
 Using addFormField method, the form fields can be added to the PDF document programmatically. We need to pass two parameters in this method. They are Form Field Type and Properties of Form Field Type. To add form field programmatically, Use the following code.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-                style="height:600px"
-                serviceUrl="/api/PdfViewer"
-                documentPath=@ViewBag.DocumentPath
-                documentLoad="documentLoaded">
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   documentLoad="documentLoaded">
+    </ejs-pdfviewer>
+</div>
 <script>
-     function documentLoaded() {
+    function documentLoaded() {
         var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
-        pdfviewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-     }
+        pdfviewer.formDesignerModule.addFormField("Textbox",
+            {
+                name: "Textbox",
+                bounds: { X: 146, Y: 229, Width: 150, Height: 24 }
+            });
+    }
 </script>
 
 ```
@@ -49,21 +53,24 @@ Using addFormField method, the form fields can be added to the PDF document prog
 Using updateFormField method, Form Field can be updated programmatically. We should get the Form Field object/Id from FormFieldCollections property that you would like to edit and pass it as a parameter to updateFormField method. The second parameter should be the properties that you would like to update for Form Field programmatically. We have updated the value and background Color properties of Textbox Form Field.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-                style="height:600px"
-                serviceUrl="/api/PdfViewer"
-                documentPath=@ViewBag.DocumentPath
-                documentLoad="documentLoaded">
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   documentLoad="documentLoaded">
+    </ejs-pdfviewer>
+</div>
 <script>
-     function documentLoaded() {
+    function documentLoaded() {
         var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
-        pdfviewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-        pdfviewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
-        pdfviewer.formDesignerModule.updateFormField(pdfviewer.formFieldCollections[0], { backgroundColor: 'red' } );
-     }
+        pdfviewer.formDesignerModule.addFormField("Textbox",
+            { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
+        pdfviewer.formDesignerModule.addFormField("Textbox",
+            { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
+        pdfviewer.formDesignerModule.updateFormField(pdfviewer.formFieldCollections[0],
+            { backgroundColor: 'red' });
+    }
 </script>
 
 ```
@@ -73,19 +80,21 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 Using deleteFormField method, the form field can be deleted programmatically. We should retrieve the Form Field object/Id from FormFieldCollections property that you would like to delete and pass it as a parameter to deleteFormField method. To delete a Form Field programmatically, use the following code.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-                style="height:600px"
-                serviceUrl="/api/PdfViewer"
-                documentPath=@ViewBag.DocumentPath
-                documentLoad="documentLoaded">
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   documentLoad="documentLoaded">
+    </ejs-pdfviewer>
+</div>
 <script>
-     function documentLoaded() {
+    function documentLoaded() {
         var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
-        pdfviewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } } );
-        pdfviewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } } );
+        pdfviewer.formDesignerModule.addFormField("Textbox",
+            { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
+        pdfviewer.formDesignerModule.addFormField("Textbox",
+            { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
         pdfviewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0] });
      }
 </script>
@@ -101,14 +110,14 @@ When the download icon is selected on the toolbar, the Form Fields will be saved
 You can invoke download action using following code snippet.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-                style="height:600px"
-                serviceUrl="/api/PdfViewer"
-                documentPath=@ViewBag.DocumentPath
-                enableDownload="true">
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   enableDownload="true">
+    </ejs-pdfviewer>
+</div>
 <script>
     window.onload = function () {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
@@ -127,14 +136,14 @@ When the print icon is selected on the toolbar, the PDF document will be printed
 You can invoke print action using the following code snippet.,
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-                style="height:600px"
-                serviceUrl="/api/PdfViewer"
-                documentPath=@ViewBag.DocumentPath
-                enablePrint="true">
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   enablePrint="true">
+    </ejs-pdfviewer>
+</div>
 <script>
     window.onload = function () {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
@@ -158,18 +167,18 @@ Add the following code snippet to validate the form fields,
 
 ```html
 <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-                style="height:600px"
-                serviceUrl="/api/PdfViewer"
-                documentPath=@ViewBag.DocumentPath
-                EnableFormFieldsValidation = true
-                ValidateFormFields="validateFormFields">
-        </ejs-pdfviewer>
-    </div>
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   EnableFormFieldsValidation=true
+                   ValidateFormFields="validateFormFields">
+    </ejs-pdfviewer>
+</div>
 <script>
-function validateFormFields(args) {
-var nonfilledFormFields = args.nonFillableFields;
-}
+    function validateFormFields(args) {
+        var nonfilledFormFields = args.nonFillableFields;
+    }
 </script>
 
 ```

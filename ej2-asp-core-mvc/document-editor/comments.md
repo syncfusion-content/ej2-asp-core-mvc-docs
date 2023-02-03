@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Comments in ##Platform_Name## Document Editor Component
+title: Comments in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about comments in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Comments
@@ -75,8 +75,8 @@ Document editor provides an option to protect and unprotect document using [`enf
 {% endif %}
 
 
-Comment only protection can be enabled in UI by using [Restrict Editing pane](../document-editor/document-management#restrict-editing-pane/)
+Comment only protection can be enabled in UI by using [Restrict Editing pane](../document-editor/document-management#restrict-editing-pane)
 
 ![Enable comment only protection](images/commentsonly.png)
 
->Note: In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.
+N> In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.

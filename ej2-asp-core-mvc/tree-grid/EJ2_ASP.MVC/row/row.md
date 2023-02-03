@@ -53,7 +53,7 @@ The [`RowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Sy
 }
 ```
 
-Please refer to the following example.
+Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

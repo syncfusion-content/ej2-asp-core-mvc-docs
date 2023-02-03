@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style And Appearance in ##Platform_Name## Context Menu Component
+title: Style And Appearance in ##Platform_Name## Context Menu Component |Syncfusion
 description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
@@ -11,7 +11,7 @@ documentation: ug
 
 # Styles and Appearances
 
-To modify the ContextMenu appearance, you need to override the default CSS of ContextMenu component. Please find the list of CSS classes and its corresponding section in ContextMenu component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+To modify the ContextMenu appearance, you need to override the default CSS of ContextMenu component. Find the list of CSS classes and its corresponding section in ContextMenu component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
 | CSS Class | Purpose of Class |
 | ----- | ----- |

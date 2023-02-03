@@ -19,7 +19,7 @@ The DocumentEditor has preservation support for Text box, Rectangle, Rounded Rec
 
 ![List of supported shapes in DocumentEditor](images/Shapes_images/supported_shapes.png)
 
-> When using ASP.NET MVC service, the unsupported shapes will be converted as image and preserved as image.
+N> When using ASP.NET MVC service, the unsupported shapes will be converted as image and preserved as image.
 
 ## Text box Shape
 
@@ -35,7 +35,7 @@ The DocumentEditor also supports a built-in shape resizer to resize the shapes p
 
 ## Text wrapping style
 
-Text wrapping refers to how shapes fit with surrounding text in a document. Please [refer to this page](../document-editor/text-wrapping-style) for more information about text wrapping styles available in Word documents.
+Text wrapping refers to how shapes fit with surrounding text in a document. [Refer to this page](../document-editor/text-wrapping-style) for more information about text wrapping styles available in Word documents.
 
 ## Positioning the shape
 

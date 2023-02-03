@@ -48,7 +48,7 @@ The following sample shows the `Open` option by using the [`openUrl`](../api/spr
 
 
 
-Please find the below table for the beforeOpen event arguments.
+Find the below table for the beforeOpen event arguments.
 
  | **Parameter** | **Type** | **Description** |
 | ----- | ----- | ----- |
@@ -113,6 +113,32 @@ You can add your own custom header to the open action in the Spreadsheet. For pr
 {% endtabs %}
 {% endif %}
 
+### Open excel file into a read-only mode
+
+You can open excel file into a read-only mode by using the [`openComplete`](../api/spreadsheet/#opencomplete) event. In this event, you must protect all the sheets and lock its used range cells by using [`protectSheet`](../api/spreadsheet/#protectsheet) and [`lockCells`](../api/spreadsheet/#lockcells) methods.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-readonly/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opencontroller.cs" %}
+{% include code-snippet/spreadsheet/open-readonly/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-readonly/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opencontroller.cs" %}
+{% include code-snippet/spreadsheet/open-readonly/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Save
 
@@ -149,7 +175,7 @@ The following sample shows the `Save` option by using the [`saveUrl`](../api/spr
 
 
 
-Please find the below table for the beforeSave event arguments.
+Find the below table for the beforeSave event arguments.
 
 | **Parameter** | **Type** | **Description** |
 | ----- | ----- | ----- |

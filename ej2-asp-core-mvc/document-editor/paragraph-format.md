@@ -85,7 +85,7 @@ documenteditor.selection.paragraphFormat.spaceBeforeAuto = true;
 documenteditor.selection.paragraphFormat.spaceAfterAuto = true;
 ```
 
-> If auto spacing property is enabled, then value defined in the `beforeSpacing` and `afterSpacing` property will not be considered.
+N> If auto spacing property is enabled, then value defined in the `beforeSpacing` and `afterSpacing` property will not be considered.
 
 ## Pagination properties
 
@@ -130,7 +130,7 @@ documenteditor.selection.paragraphFormat.borders.bottom.color = "#000000";
 
 ```
 
-> At present, the Document editor component displays all the border styles as single line. But you can apply any border style and get the proper display in Microsoft Word app when opening the exported Word document.
+N> At present, the Document editor component displays all the border styles as single line. But you can apply any border style and get the proper display in Microsoft Word app when opening the exported Word document.
 
 ## Show or Hide Paragraph marks
 
@@ -169,4 +169,4 @@ documenteditor.documentEditorSettings.showHiddenMarks = true;
 
 * [Feature modules](../document-editor/feature-module/)
 * [Paragraph dialog](../document-editor/dialog/#paragraph-dialog)
-* [Keyboard shortcuts](../document-editor/keyboard-shortcut/)
+* [Keyboard shortcuts](../document-editor/keyboard-shortcut#paragraph-formatting)

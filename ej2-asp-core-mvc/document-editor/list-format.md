@@ -17,7 +17,7 @@ Document editor supports both the single-level and multilevel lists. Lists are u
 
 Bullets are usually used for unordered lists. To apply bulleted list for selected paragraphs, use the following method of ‘Editor’ instance.
 
-> applyBullet(bullet, fontFamily);
+N> applyBullet(bullet, fontFamily);
 
 |Parameter|Type|Description|
 |---------|----|-----------|
@@ -32,7 +32,7 @@ documenteditor.editor.applyBullet('\uf0b7', 'Symbol');
 
 Numbered lists are usually used for ordered lists. To apply numbered list for selected paragraphs, use the following method of ‘Editor’ instance.
 
-> applyNumbering(numberFormat,listLevelPattern)
+N> applyNumbering(numberFormat,listLevelPattern)
 
 |Parameter|Type|Description|
 |---------|----|-----------|

@@ -11,7 +11,7 @@ documentation: ug
 
 # Navigation in Breadcrumb
 
-The Breadcrumb item navigates to the path while clicking the item. To enable navigation, `url`property was bound to the items.
+The Breadcrumb item navigates to the path while clicking the item. To enable navigation, [`url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Breadcrumb.html#Syncfusion_EJ2_Navigations_Breadcrumb_Url) property was bound to the items.
 
 ## URL
 
@@ -73,7 +73,7 @@ The Breadcrumb items with absolute URL contain the path and locate to the resour
 
 ## Enable navigation for last Breadcrumb item
 
-The feature enables the last item of the Breadcrumb component by setting the `enableActiveItemNavigation` property to true. In the following example, the last item of the `Breadcrumb` was enabled.
+The feature enables the last item of the Breadcrumb component by setting the [`enableActiveItemNavigation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Breadcrumb.html#Syncfusion_EJ2_Navigations_Breadcrumb_EnableNavigation) property to true. In the following example, the last item of the `Breadcrumb` was enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -126,4 +126,4 @@ To open the Breadcrumb item in a new page or tab, set the target property of the
 
 ![ASP.NET Core Breadcrumb with New URL](images/navigation.PNG)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Breadcrumb/IconsandNavigationSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Breadcrumb/IconsandNavigationSample).

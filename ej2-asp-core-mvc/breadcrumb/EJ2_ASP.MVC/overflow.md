@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overflow in ##Platform_Name## Breadcrumb Component
+title: Overflow in ##Platform_Name## Breadcrumb Component | Syncfusion
 description: Learn here all about Overflow in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Overflow
