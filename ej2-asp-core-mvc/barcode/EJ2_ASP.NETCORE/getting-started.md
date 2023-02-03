@@ -175,3 +175,5 @@ You can add the datamatrix code in the barcode generator control.
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+You can also explore our [ASP.NET Core Barcode Generator Example](https://ej2.syncfusion.com/aspnetcore/Barcode/Ean8#/bootstrap5) that shows you how to render and configure the Barcode in ASP.NET Core.
