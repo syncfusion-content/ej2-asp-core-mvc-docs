@@ -10,7 +10,7 @@ documentation: ug
 
 # Variants in Message control
 
-The Message has predefined appearance variants for different visual representations. The variants of the message can be changed based on the `variant` property.
+The Message has predefined appearance variants for different visual representations. The variants of the message can be changed based on the [`variant`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Variant.html) property.
 
 The available variants are **Text**, **Outlined** and **Filled**. The default variant type for messages is **Text**.
 * **Text** - The severity is differentiated using a text color and a light background color.
