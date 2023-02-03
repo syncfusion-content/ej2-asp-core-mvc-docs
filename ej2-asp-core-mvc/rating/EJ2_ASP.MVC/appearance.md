@@ -79,7 +79,7 @@ You can use the [ReadOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rating/appearance/read-only/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CustomPosition.cs" %}
+{% highlight c# tabtitle="ReadOnly.cs" %}
 {% include code-snippet/rating/appearance/read-only/readonly.cs %}
 {% endhighlight %}
 {% endtabs %}
