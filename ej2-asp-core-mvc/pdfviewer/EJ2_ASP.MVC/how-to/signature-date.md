@@ -1,11 +1,11 @@
 ---
-Layout: Post
-Title: Add date to signature field in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-Description: Learn how to add the date to the signature text in the ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
-Platform: ej2-asp-core-mvc
-Control: How to add date to the signature text
-Publishingplatform: ej2-asp-core-mvc
-Documentation: UG
+layout: post
+title: Add date to signature field in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about how to add the date to the signature text in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: How to add the date to the signature text
+publishingplatform: ej2-asp-core-mvc
+documentation: UG
 ---
 
 # How to add the date to the signature text
