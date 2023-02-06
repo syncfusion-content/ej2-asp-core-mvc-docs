@@ -1,18 +1,18 @@
 ---
-layout: post
-title: Add date to signature field in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about how to add the date to the signature text in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
-control: How to add the date to the signature text
-publishingplatform: ej2-asp-core-mvc
-documentation: ug
+Layout: Post
+Title: Add date to signature field in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+Description: Learn how to add the date to the signature text in the ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+Platform: ej2-asp-core-mvc
+Control: How to add date to the signature text
+Publishingplatform: ej2-asp-core-mvc
+Documentation: UG
 ---
 
 # How to add the date to the signature text
 
-To add the date with the signature text in Syncfusion PDF Viewer, we can use `retrieveFormFields()` method. Add a signature field to the PDF document and get the signature field in the PDF using the `retrieveFormFields()` method and store it in a variable. Modify the value of the signature field and get the current date. You can use the `Date()` method to get the current date and format it as desired.
+To add a date with the signature text in Syncfusion PDF Viewer, use the `retrieveFormFields()` method. Add a signature field to a PDF document and get the signature field in a PDF using the `retrieveFormFields()` method and store it in a variable. Modify the value of the signature field and get the current date. Use the `Date()` method to get the current date and format it as desired.
 
-Update the signature field in the PDF using the `updateFormFieldsValue()` method and pass the modified signature field as a parameter.
+Update the signature field in a PDF using the `updateFormFieldsValue()` method and pass the modified signature field as a parameter.
 
 ```html
 <div>
