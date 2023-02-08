@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Message Control
 
-This section briefly explains how to include ASP.NET MVC Message control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include [ASP.NET MVC Message](https://www.syncfusion.com/aspnet-mvc-ui-controls/message) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -115,3 +115,5 @@ Now, add the Syncfusion ASP.NET MVC Message control in the `~/Views/Home/Index.c
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Message control will be rendered in the default web browser.
 
 ![ASP.NET MVC Message Control](images/message-default.png)
+
+N> You can also explore our [ASP.NET MVC Message example](https://ej2.syncfusion.com/aspnetmvc/Message/DefaultFunctionalities#/bootstrap5) that shows you how to render the Message in ASP.NET MVC.
