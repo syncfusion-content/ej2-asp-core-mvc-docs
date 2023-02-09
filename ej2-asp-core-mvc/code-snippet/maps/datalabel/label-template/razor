@@ -2,15 +2,22 @@
 @using Syncfusion.EJ2;
 
 @{
+    var data = new[]
+    {
+        new { Name = "Iowa", Population = 29863010 },
+        new { Name = "Utah", Population = 1263010 },
+        new { Name = "Texas", Population = 963010 }
+    };
     var label = new MapsDataLabelSettings
     {
         Visible = true,
-        Template = "Label"
+        LabelPath = "Name",
+        Template = "<div><div><img src='https://ej2.syncfusion.com/demos/src/maps/images/weather-clear.png' style='width:22px;height:22px'> </div> ${Name}</img></div>"
     };
 }
 
 @Html.EJS().Maps("maps").Layers(l =>
 {
-    l.ShapeSettings(s => s.Autofill(true)).DataLabelSettings(label).
-      ShapeData(ViewBag.usmap).Add();
+    l.ShapeSettings(s => s.Autofill(true)).DataLabelSettings(label).ShapeDataPath("Name").ShapePropertyPath("name")
+    .DataSource(data).ShapeData(ViewBag.usmap).Add();
 }).Render()

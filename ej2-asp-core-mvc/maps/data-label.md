@@ -10,13 +10,23 @@ documentation: ug
 
 # Data labels in ##Platform_Name## Maps Component
 
-Data labels provide information to users about the shapes of the Maps component. It can be enabled by setting the `Visible` property of the `MapsDataLabelSettings` to **true**.
+{% if page.publishingplatform == "aspnet-core" %}
+
+Data labels provide information to users about the shapes of the Maps component. It can be enabled by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Visible) property of the [dataLabelSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html) to **true**.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Data labels provide information to users about the shapes of the Maps component. It can be enabled by setting the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Visible) property of the [DataLabelSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html) to **true**.
+
+{% endif %}
 
 ## Adding data labels
 
-To display data labels in the Maps, the `LabelPath` property of `MapsDataLabelSettings` must be used. The value of the `LabelPath` property can be taken from the field name in the shape data or data source. In the following example, the value of the `LabelPath` property is the field name in the shape data of the Maps layer.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+To display the data labels in the Maps, set the field name containing the text to be displayed from the data source or shape data in the [labelPath](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_LabelPath) property of the `dataLabelSettings` property.
+
+In the following example, the value of the `labelPath` property is set from the field name in the shape data of the Maps layer.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -29,6 +39,10 @@ To display data labels in the Maps, the `LabelPath` property of `MapsDataLabelSe
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+To display the data labels in the Maps, set the field name containing the text to be displayed from the data source or shape data in the [LabelPath](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_LabelPath) property of the `DataLabelSettings` property.
+
+In the following example, the value of the `LabelPath` property is set from the field name in the shape data of the Maps layer.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/maps/datalabel/label/razor %}
@@ -39,13 +53,11 @@ To display data labels in the Maps, the `LabelPath` property of `MapsDataLabelSe
 {% endtabs %}
 {% endif %}
 
-
-
 ![Setting label path value](./images/Datalabel/label.PNG)
 
-In the following example, the value of `LabelPath` property is set from the field name in the data source of the layer settings.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+In the following example, the value of `labelPath` property is set from the field name in the data source of the layer settings.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -58,6 +70,8 @@ In the following example, the value of `LabelPath` property is set from the fiel
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+In the following example, the value of `LabelPath` property is set from the field name in the data source of the layer settings.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/maps/datalabel/label-ds/razor %}
@@ -69,19 +83,18 @@ In the following example, the value of `LabelPath` property is set from the fiel
 {% endif %}
 
 
-
 ![Setting label path value from datasource](./images/Datalabel/label-datasource.PNG)
 
 ## Customization
 
-The following properties are available in the `MapsDataLabelSettings` to customize the data label of the Maps component.
-
-* `Border` - To customize the color, width and opacity for the border of the data labels in Maps.
-* `Fill` - To apply the color of the data labels in Maps.
-* `Opacity` - To customize the transparency of the data labels in Maps.
-* `TextStyle` - To customize the text style of the data labels in Maps.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+The following properties are available in the `dataLabelSettings` to customize the data label of the Maps component.
+
+* [border](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Border) - To customize the color, width and opacity for the border of the data labels in Maps.
+* [fill](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Fill) - To apply the color of the data labels in Maps.
+* [opacity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Opacity) - To customize the transparency of the data labels in Maps.
+* [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_TextStyle) - To customize the text style of the data labels in Maps.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -93,6 +106,13 @@ The following properties are available in the `MapsDataLabelSettings` to customi
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The following properties are available in the `DataLabelSettings` to customize the data label of the Maps component.
+
+* [Border](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Border) - To customize the color, width and opacity for the border of the data labels in Maps.
+* [Fill](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Fill) - To apply the color of the data labels in Maps.
+* [Opacity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Opacity) - To customize the transparency of the data labels in Maps.
+* [TextStyle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_TextStyle) - To customize the text style of the data labels in Maps.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -110,13 +130,13 @@ The following properties are available in the `MapsDataLabelSettings` to customi
 
 ## Smart labels
 
-The Maps component provides an option to handle the labels when they intersect with the corresponding shape borders using the `SmartLabelMode` property. The following options are available in the `SmartLabelMode` property.
-
-* None
-* Hide
-* Trim
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+The Maps component provides an option to handle the labels when they intersect with the corresponding shape borders using the [smartLabelMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_SmartLabelMode) property. The following options are available in the `smartLabelMode` property.
+
+* **None** -  It specifies that no action is taken, when a label exceeds the shape's region.
+* **Hide** -  It specifies to hide the labels, when it exceeds the shape's region.
+* **Trim** -  It specifies to trim the labels, when it exceeds the shape's region.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -128,6 +148,12 @@ The Maps component provides an option to handle the labels when they intersect w
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The Maps component provides an option to handle the labels when they intersect with the corresponding shape borders using the [SmartLabelMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_SmartLabelMode) property. The following options are available in the `SmartLabelMode` property.
+
+* **None** -  It specifies that no action is taken, when a label exceeds the shape's region.
+* **Hide** -  It specifies to hide the labels, when it exceeds the shape's region.
+* **Trim** -  It specifies to trim the labels, when it exceeds the shape's region.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -145,13 +171,13 @@ The Maps component provides an option to handle the labels when they intersect w
 
 ## Intersect action
 
-The Maps component provides an option to handle the labels when a label intersects with another label using the `IntersectionAction` property. The following options are available in the `IntersectionAction` property.
-
-* None
-* Hide
-* Trim
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+The Maps component provides an option to handle the labels when a label intersects with another label using the [intersectionAction](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_IntersectionAction) property. The following options are available in the `intersectionAction` property.
+
+* **None** -  It specifies that no action is taken, when the labels intersect.
+* **Hide** -  It specifies to hide the labels when they intersect.
+* **Trim** -  It specifies to trim the labels when they intersect.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -163,6 +189,12 @@ The Maps component provides an option to handle the labels when a label intersec
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The Maps component provides an option to handle the labels when a label intersects with another label using the [IntersectionAction](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_IntersectionAction) property. The following options are available in the `IntersectionAction` property.
+
+* **None** -  It specifies that no action is taken, when the labels intersect.
+* **Hide** -  It specifies to hide the labels when they intersect.
+* **Trim** -  It specifies to trim the labels when they intersect.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -180,11 +212,11 @@ The Maps component provides an option to handle the labels when a label intersec
 
 ## Adding data label as a template
 
-The data label can be added as a template in the Maps component. The `Template` property of `MapsDataLabelSettings` is used to set the data label as a template. Any text or HTML element can be added as the template in data labels.
-
-N>The customization properties of data label, `SmartLabelMode` and `IntersectionAction` properties are not applicable to `Template` property. The styles can be applied to the label template using the CSS styles of the template element.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+Any HTML elements can be added as a template in the data labels by using the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Template) property of `dataLabelSettings` in the Maps component.
+
+N>The properties of data label such as, `smartLabelMode` `intersectionAction`, `border`, `fill`, `opacity` and `textStyle` properties are not applicable to `template` property. The styles can be applied to the label template using the CSS styles of the HTML element.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -196,6 +228,10 @@ N>The customization properties of data label, `SmartLabelMode` and `Intersection
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Any HTML elements can be added as a template in the data labels by using the [Template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Template) property of `DataLabelSettings` in the Maps component.
+
+N>The properties of data label such as, `smartLabelMode` `intersectionAction`, `border`, `fill`, `opacity` and `textStyle` properties are not applicable to `Template` property. The styles can be applied to the label template using the CSS styles of the HTML element.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
