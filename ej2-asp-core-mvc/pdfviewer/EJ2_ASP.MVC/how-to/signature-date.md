@@ -10,7 +10,7 @@ documentation: UG
 
 # How to add the date to the signature text
 
-To add a date with the signature text in Syncfusion PDF Viewer, use the `retrieveFormFields()` method. Add a signature field to a PDF document and get the signature field in a PDF using the `retrieveFormFields()` method and store it in a variable. Modify the value of the signature field and get the current date. Use the `Date()` method to get the current date and format it as desired.
+To add a date with the signature text in Syncfusion PDF Viewer, use the `updateFormFieldsValue()` method. Add a signature field to a PDF document and get the signature field in a PDF using the `retrieveFormFields()` method and store it in a variable. Modify the value of the signature field and get the current date. Use the `Date()` method to get the current date and format it as desired.
 
 Update the signature field in a PDF using the `updateFormFieldsValue()` method and pass the modified signature field as a parameter.
 
