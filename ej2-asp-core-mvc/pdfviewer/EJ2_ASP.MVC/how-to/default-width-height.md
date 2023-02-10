@@ -10,18 +10,18 @@ documentation: UG
 
 # How to change the default width and height
 
-To change the default width and height of the Syncfusion MVC PDFViewer, you need to modify the `width` and `height` properties of the PDFViewer control.
+To change the default width and height of the Syncfusion PDF Viewer, you need to modify the `width` and `height` properties of the PDFViewer control.
 
 ```html
 <div>
     <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewerTest/")).DocumentPath("PDF_Succinctly.pdf").Height("1000px").Width("100%").Render()
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("PDF_Succinctly.pdf").Height("1000px").Width("800%").Render()
     </div>
 </div>
 ```
 
-In this example, the Width property is set to `800%px` and the Height property is set to `1000px`. You can change these values to any desired size in pixels or percentage.
+In this example, the Width property is set to `800%` and the Height property is set to `1000px`. You can change these values to any desired size in pixels or percentage.
 
-Note that the Syncfusion PDFViewer control requires a service URL that points to an endpoint that returns the PDF document to be displayed. In the example above, the ServiceUrl property is set to "/api/PdfViewerTest". You will need to modify this URL to match your own service endpoint that returns the PDF document.
+N> That the Syncfusion PDFViewer control requires a service URL that points to an endpoint that returns the PDF document to be displayed. In the example above, the ServiceUrl property is set to "~/Home/". You will need to modify this URL to match your own service endpoint that returns the PDF document.
 
-[View Sample in GitHub]()
+[View Sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/EJ2-69063-defaultWidthHeight/How%20to/Change%20Default%20Height%20and%20Width)
