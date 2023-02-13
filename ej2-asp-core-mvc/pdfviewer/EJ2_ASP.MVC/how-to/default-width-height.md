@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: Post
 title: How to change default size in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: sLearn how to change the default width and height in the ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+description: Learn how to change the default width and height in the ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: How to change the default width and height
 publishingplatform: ej2-asp-core-mvc
