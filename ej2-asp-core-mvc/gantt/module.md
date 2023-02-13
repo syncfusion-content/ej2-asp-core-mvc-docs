@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Module in ##Platform_Name## Gantt Component
+title: Module in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Module in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Module
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Module injection
+# Module injection in Synfusion ##Platform_Name## Gantt Component
 
 The modules that are available in Gantt are as follows.
 
