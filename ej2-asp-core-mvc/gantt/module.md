@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Module injection in Synfusion ##Platform_Name## Gantt Component
+# Module injection in Syncfusion ##Platform_Name## Gantt Component
 
 The modules that are available in Gantt are as follows.
 
