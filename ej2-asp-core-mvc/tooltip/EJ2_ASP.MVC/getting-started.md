@@ -142,3 +142,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 * [Positioning Tooltip](./position)
 * [Tooltip Open Mode](./open-mode)
 * [Customize the Tooltip](./customization)
+
+N> You can also explore our [ASP.NET MVC Tooltip example](https://ej2.syncfusion.com/aspnetmvc/Tooltip/DefaultFunctionalities#/bootstrap5) that shows you how to render the Tooltip in ASP.NET MVC.
