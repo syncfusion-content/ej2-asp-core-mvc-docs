@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Floating Action Button Control
 
-This section briefly explains about how to include [ASP.NET MVC Floating Action Button] control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Floating Action Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/fab) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -137,3 +137,5 @@ The floating action button control triggers the `onclick` event when you click o
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+N> You can also explore our [ASP.NET MVC Floating Action Button Example](https://ej2.syncfusion.com/aspnetmvc/FAB/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the FAB in ASP.NET MVC.
