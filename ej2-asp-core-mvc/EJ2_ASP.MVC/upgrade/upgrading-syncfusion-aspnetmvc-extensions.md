@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion ASP.NET MVC Extensions (Essential JS2)
+# Upgrading Syncfusion ASP.NET MVC Extensions
 
 Syncfusion publishes the Visual Studio extension in the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETMVCExtensions) for every Syncfusion Volume releases, with exciting new features and Service Pack release with major bug fixes in the volume releases.
 
@@ -18,7 +18,7 @@ You can upgrade to our latest version from any installed Syncfusion version.
 
 1. In Visual Studio go to Extensions -> Manage Extensions -> Updates and find the Syncfusion ASP.NET MVC extension.
 
-   > In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates.
+   N> In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates.
 
 2. Then, click on the Update button to update the extension.
 
