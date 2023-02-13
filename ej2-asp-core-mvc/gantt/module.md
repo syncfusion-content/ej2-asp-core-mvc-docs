@@ -28,5 +28,8 @@ The modules that are available in Gantt are as follows.
 | [`DayMarkers`](../api/gantt/dayMarkers)| Inject this module to use event markers.|
 | [`ContextMenu`](https://ej2.syncfusion.com/documentation/api/gantt/contextMenu/)| Inject this module to use context menu feature.|
 | [`ColumnMenu`](../api/gantt/columnMenu)| Inject this module to use column menu feature.|
+| `VirtualScroll`| Inject this module to use Virtual Scroll feature.|
+| `CriticalPath`| Inject this module to use CriticalPath feature.|
+
 
 These modules should be injected into the Gantt using the **Gantt.Inject** method.

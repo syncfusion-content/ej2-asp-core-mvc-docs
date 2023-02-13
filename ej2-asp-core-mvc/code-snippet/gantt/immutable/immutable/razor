@@ -1,0 +1,10 @@
+ <style>
+        .e-gantt .e-gantt-chart .e-custom-holiday {
+            background-color: #e82869;
+        }
+ </style>
+ 
+ @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => 
+  ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+  ).EnableImmutableMode(true).Render()
+        

@@ -1,0 +1,12 @@
+ <style>
+	.e-gantt .e-gantt-chart .e-custom-holiday {
+           background-color:#e82869;
+    }
+ </style>
+ 
+  <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" enableImmutableMode="true" 
+                             endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+                    </e-gantt-taskfields>
+                    
+  </ejs-gantt>

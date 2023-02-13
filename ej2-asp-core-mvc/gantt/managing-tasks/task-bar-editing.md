@@ -153,17 +153,17 @@ N> Using the `updateRecordById` method, you cannot update the task ID value.
 
 The [`columns.editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_EditType) is used to define the edit type for any particular column. You can set the [`columns.editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_EditType) based on data type of the column.
 
-* `numericedit` - [`NumericTextBox`](../numerictextbox) component for integers, double, and decimal data types.
+* `numericedit` - [`NumericTextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/ej1-api-migration) component for integers, double, and decimal data types.
 
-* `defaultedit` - [`TextBox`](../textbox) component for string data type.
+* `defaultedit` - [`TextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/textbox/getting-started) component for string data type.
 
-* `dropdownedit` - [`DropDownList`](../drop-down-list) component to show all unique values related to that field.
+* `dropdownedit` - [`DropDownList`](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) component to show all unique values related to that field.
 
-* `booleanedit` - [`CheckBox`](../check-box) component for boolean data type.
+* `booleanedit` - [`CheckBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started) component for boolean data type.
 
-* `datepickeredit` - [`DatePicker`](../datepicker) component for date data type.
+* `datepickeredit` - [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) component for date data type.
 
-* `datetimepickeredit` - [`DateTimePicker`](../datetimepicker) component for date time data type.
+* `datetimepickeredit` - [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) component for date time data type.
 
 Also, you can customize the behavior of the editor component through the [`columns.edit.params`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Edit).
 
@@ -171,11 +171,11 @@ The following table describes cell edit type component and their corresponding e
 
 |Edit Type |Component |Example|
 |-----|-----|-----|
-|`numericedit` | [`NumericTextBox`](../numerictextbox) | params: { decimals: 2, value: 5 }|
-|`dropdownedit` | [`DropDownList`](../drop-down-list) | params: { value: 'Germany' }|
-|`booleanedit` | [`Checkbox`](../check-box) | params: { checked: true}|
-|`datepickeredit` | [`DatePicker`](../datepicker) | params: { format:'dd.MM.yyyy' }|
-|`datetimepickeredit` | [`DateTimePicker`](../datetimepicker) | params: { value: new Date() }|
+|`numericedit` | [`NumericTextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/ej1-api-migration) | params: { decimals: 2, value: 5 }|
+|`dropdownedit` | [`DropDownList`](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) | params: { value: 'Germany' }|
+|`booleanedit` | [`Checkbox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started) | params: { checked: true}|
+|`datepickeredit` | [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) | params: { format:'dd.MM.yyyy' }|
+|`datetimepickeredit` | [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) | params: { value: new Date() }|
 
 {% if page.publishingplatform == "aspnet-core" %}
 
