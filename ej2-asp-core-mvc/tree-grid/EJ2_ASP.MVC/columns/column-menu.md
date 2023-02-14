@@ -46,7 +46,7 @@ The default items are displayed in following table.
 
 ## Custom column menu item
 
-The custom column menu items can be added to the column menu by defining the [`ColumnMenuItems`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ColumnMenuItems) as a collection of the [`MenuItemModel`](https://ej2.syncfusion.com/documentation/api/context-menu/menuItemModel).
+The custom column menu items can be added to the column menu by defining the [`ColumnMenuItems`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ColumnMenuItems) as a collection of the [`MenuItemModel`](https://ej2.syncfusion.com/documentation/api/context-menu/menuItemModel/).
 
 The action for custom column menu items can be performed using [`ColumnMenuClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ColumnMenuClick) event.
 
