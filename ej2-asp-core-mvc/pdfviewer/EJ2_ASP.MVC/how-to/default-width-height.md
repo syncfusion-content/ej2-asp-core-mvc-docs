@@ -15,11 +15,11 @@ To change the default width and height of the Syncfusion PDF Viewer, modify the 
 ```html
 <div>
     <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("PDF_Succinctly.pdf").Height("1000px").Width("800%").Render()
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("PDF_Succinctly.pdf").Height("1000px").Width("80%").Render()
     </div>
 </div>
 ```
-In this example, the Width property is set to `800%`, and the Height property is set to `1000px`. Change these values to any desired size in pixels or percentages.
+In this example, the Width property is set to `80%`, and the Height property is set to `1000px`. Change these values to any desired size in pixels or percentages.
 
 N> The Syncfusion PDFViewer control requires a service URL that points to an endpoint that returns a PDF document to be displayed. In the example above, the ServiceUrl property is set to "~/Home/." Modify this URL to match your service endpoint that returns a PDF document.
 
