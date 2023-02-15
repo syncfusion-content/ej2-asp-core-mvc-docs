@@ -110,9 +110,6 @@ The following example demonstrate the file manager rendered with access control 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/access-control/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/access-control/HomeController_mvc.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -121,9 +118,6 @@ The following example demonstrate the file manager rendered with access control 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/access-control/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/access-control/HomeController_mvc.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
@@ -131,4 +125,4 @@ The following example demonstrate the file manager rendered with access control 
 
 Output be like the below, when write the documents folder.
 
-![Access Control](./images/access_control.PNG)
+![Access Control](./images/access_control.png)
