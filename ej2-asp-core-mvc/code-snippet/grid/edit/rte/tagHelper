@@ -12,7 +12,7 @@
 </ejs-grid>
 
 <script>
-    var textEditor;
+    var richTextEditor;
     var elemContent;
 
     function create(args) {
@@ -21,20 +21,18 @@
     }
 
     function write(args) {
-        textEditor = new ej.inputs.TextBox({
-            multiline: true,
+        richTextEditor = new ej.richtexteditor.RichTextEditor({
             value: args.rowData[args.column.field],
-            floatLabelType: 'Auto'
           });
-        textEditor.appendTo(elemContent);
+        richTextEditor.appendTo(elemContent);
     }
 
     function destroy() {
-        textEditor.destroy();
+        richTextEditor.destroy();
     }
 
     function read(args) {
-        return textEditor.value;
+        return richTextEditor.value;
     }
 
     function created(args) {
