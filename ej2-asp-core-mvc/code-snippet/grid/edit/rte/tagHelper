@@ -13,18 +13,18 @@
 
 <script>
     var richTextEditor;
-    var elemContent;
+    var rteElement ;
 
     function create(args) {
-        elemContent = document.createElement('textarea');
-        return elemContent;
+        rteElement  = document.createElement('textarea');
+        return rteElement ;
     }
 
     function write(args) {
         richTextEditor = new ej.richtexteditor.RichTextEditor({
             value: args.rowData[args.column.field],
           });
-        richTextEditor.appendTo(elemContent);
+        richTextEditor.appendTo(rteElement );
     }
 
     function destroy() {
