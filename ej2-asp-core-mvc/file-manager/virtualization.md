@@ -47,7 +47,7 @@ In the instance below, a sizable collection of files can be found in the folders
 
 Output be like the below.
 
-![Virtualization](./images/virtualization.png)
+![Virtualization](./images/virtualization.gif)
 
 ## Limitations for Virtualization
 
