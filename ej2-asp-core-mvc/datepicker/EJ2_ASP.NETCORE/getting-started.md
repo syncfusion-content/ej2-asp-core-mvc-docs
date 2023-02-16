@@ -155,4 +155,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [How to achieve validation with DatePicker](./how-to/client-side-validation)
 * [How to get and set value in DatePickerFor](./how-to/datepicker-for-core)
 
-N> You can also explore our [ASP.NET Core DatePicker example](https://ej2.syncfusion.com/aspnetcore/DatePicker/DefaultFunctionalities#/bootstrap5) that shows you how to render the DatePicker in ASP.NET CORE.
+N> You can also explore our [ASP.NET Core DatePicker example](https://ej2.syncfusion.com/aspnetcore/DatePicker/DefaultFunctionalities#/bootstrap5) that shows you how to render the DatePicker in ASP.NET Core.
