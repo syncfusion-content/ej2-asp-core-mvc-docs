@@ -10,7 +10,7 @@ documentation: UG
 
 # How to change the default width and height
 
-To change the default width and height of the Syncfusion PDF Viewer, modify the `width` and `height` properties of the PDFViewer control.
+To change the default width and height of the Syncfusion PDF Viewer, modify the `Width` and `Height` properties of the PDFViewer control.
 
 ```html
 <div>
@@ -20,7 +20,5 @@ To change the default width and height of the Syncfusion PDF Viewer, modify the 
 </div>
 ```
 In this example, the Width property is set to `80%`, and the Height property is set to `1000px`. Change these values to any desired size in pixels or percentages.
-
-N> The Syncfusion PDFViewer control requires a service URL that points to an endpoint that returns a PDF document to be displayed. In the example above, the ServiceUrl property is set to "~/Home/." Modify this URL to match your service endpoint that returns a PDF document.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/EJ2-69063-defaultWidthHeight/How%20to/Change%20Default%20Height%20and%20Width)
