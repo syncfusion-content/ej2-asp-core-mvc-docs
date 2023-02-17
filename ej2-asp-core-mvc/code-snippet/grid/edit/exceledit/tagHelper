@@ -1,0 +1,51 @@
+<ejs-grid id="Grid" dataSource="ViewBag.DataSource" allowPaging="true" enableHover="true" created="created" load="load" toolbar="@(new List<string>() {"Add", "Edit", "Delete", "Update", "Cancel"})" load="load">
+    <e-grid-editSettings allowAdding="true" allowEditing="true" allowDeleting="true" mode="Batch"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100" isPrimaryKey="true"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" width="120" format="C2"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function load(args) {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        grid.element.addEventListener('keydown', function (e) {
+            var closesttd = (e.target).closest('td');
+            if (e.keyCode === 39 && !ej.base.isNullOrUndefined(closesttd.nextSibling)) {
+                editACell(closesttd.nextSibling);
+            }
+            if (e.keyCode === 37 && !ej.base.isNullOrUndefined(closesttd.previousSibling) &&
+                !grid.getColumnByIndex(
+                    parseInt(closesttd.previousSibling.getAttribute('data-colindex'))).isPrimaryKey) {
+                editACell(closesttd.previousSibling);
+            }
+            if (e.keyCode === 40 && !ej.base.isNullOrUndefined(closesttd.closest('tr').nextSibling)) {
+                editACell(
+                    closesttd.closest('tr').nextSibling.querySelectorAll('td')[
+                    parseInt(closesttd.getAttribute('data-colindex'))]);
+            }
+            if (e.keyCode === 38 && !ej.base.isNullOrUndefined(closesttd.closest('tr').previousSibling)) {
+                editACell(
+                    closesttd.closest('tr').previousSibling.querySelectorAll('td')[
+                    parseInt(closesttd.getAttribute('data-colindex'))]);
+            }
+        });
+    }
+    function created(args) {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        grid.getContentTable().addEventListener('click', function (args) {
+            if ((args.target).classList.contains('e-rowcell')) {
+                grid.editModule.editCell(parseInt((args.target).getAttribute('index')),
+                    grid.getColumnByIndex(parseInt(args.target.getAttribute('data-colindex'))).field);
+            }
+        });
+    }
+    function editACell(args) {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        grid.editModule.editCell(
+            parseInt(args.getAttribute('index')),
+            grid.getColumnByIndex(parseInt(args.getAttribute('data-colindex'))).field);
+    }
+</script>
