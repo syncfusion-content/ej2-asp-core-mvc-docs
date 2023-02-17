@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## File Manager Component
+title: Virtualization in ##Platform_Name## Syncfusion File Manager Component
 description: Learn here all about Virtualization in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtualization
@@ -9,7 +9,8 @@ documentation: ug
 ---
 
 
-# Virtualization
+# Virtualization in File Manager Component
+
 File Manager's UI virtualization allows you for the dynamic loading of a large number of directories and files in both the details and largeicons views without degrading its performance.
 
 ## Enable Virtualization
@@ -47,7 +48,7 @@ In the instance below, a sizable collection of files can be found in the folders
 
 Output be like the below.
 
-![Virtualization](./images/virtualization.gif)
+![Virtualization](./images/virtualization.mp4)
 
 ## Limitations for Virtualization
 
