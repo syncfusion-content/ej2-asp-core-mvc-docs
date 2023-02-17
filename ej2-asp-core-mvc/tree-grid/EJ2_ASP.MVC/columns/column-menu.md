@@ -12,7 +12,7 @@ documentation: ug
 
 The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`ShowColumnMenu`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ShowColumnMenu.html) property as true.
 
-By default, column menu is enabled for all columns and you can disable column menu for a particular column by defining the [`ShowColumnMenu`] as false in [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Columns) property.
+By default, column menu is enabled for all columns and you can disable column menu for a particular column by defining the [`ShowColumnMenu`] as false in [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) property.
 
 The default items are displayed in following table.
 
@@ -46,9 +46,11 @@ The default items are displayed in following table.
 
 ## Custom column menu item
 
-The custom column menu items can be added to the column menu by defining the [`ColumnMenuItems`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ColumnMenuItems) as a collection of the [`MenuItemModel`](https://ej2.syncfusion.com/documentation/api/context-menu/menuItemModel/).
+The custom column menu items can be added to the column menu by defining the [`ColumnMenuItems`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ColumnMenuItems) as a collection of the [`MenuItemModel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.MenuItem.html).
 
 The action for custom column menu items can be performed using [`ColumnMenuClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ColumnMenuClick) event.
+
+Refer to the below complete code example about how to use custom column menu item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

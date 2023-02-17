@@ -66,9 +66,7 @@ You can customize the header element by using the [`HeaderTemplate`](https://hel
 
 Sometimes, there may be a requirement to change the column [`HeaderText`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_HeaderText) of the Tree Grid dynamically. This can be done using the following approach:
 
-To change the column `HeaderText`dynamically through an external button, follow these steps:
-
-**Step 1**: Get the column object corresponding to the field name by using the [`getColumnByField`](https://ej2.syncfusion.com/documentation/api/treegrid/#getcolumnbyfield) method. Then, change the header text value.
+**Step 1**: From external button click, get the column object corresponding to the field name by using the [`getColumnByField`](https://ej2.syncfusion.com/documentation/api/treegrid/#getcolumnbyfield) method. Then, change the header text value.
 
 ```typescript
 var column = treegrid.getColumnByField("Duration"); // Get column object.
@@ -82,6 +80,7 @@ column.headerText = 'Changed Text';
 treegrid.refreshColumns();
 
 ```
+Refer to the below complete code example about how to change header text dynamically through button click 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -125,7 +124,7 @@ To change the orientation, carry out the following steps:
 
 ```
 
-**Step 3**: Resize the header cell height by using [`Created`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Created) event.
+**Step 3**: Now by using [`Created`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Created) event update the height CSS of header cells to accommodate the vertically oriented text content.
 
 ```typescript
 function setHeaderHeight(args) {
@@ -137,6 +136,7 @@ function setHeaderHeight(args) {
 }
 
 ```
+Refer to the below complete code example about how to change the orientation of header Text
 
 {% if page.publishingplatform == "aspnet-core" %}
 

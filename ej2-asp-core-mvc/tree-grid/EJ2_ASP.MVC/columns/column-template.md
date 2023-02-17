@@ -74,11 +74,11 @@ In the following code, checkbox is rendered based on **Approved** field value.
 
 ## Render other components in a column
 
-Tree Grid allows you to render any component in a column using the [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Template) property.
+Tree Grid allows you to render any component in a [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) using the [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Template) property. This provides the ability to create custom components or use existing ones from Syncfusion or third-party libraries.
 
 To render other components in the Tree Grid, ensure the following steps:
 
-**Step 1**: Initialize the column template for your custom component using `Template` property.
+**Step 1**: Provide the HTML content for your custom component using `Template` property.
 
 ```typescript
      
@@ -86,7 +86,7 @@ To render other components in the Tree Grid, ensure the following steps:
 
 ```
 
-**Step 2**: Use [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_QueryCellInfo) event to render the DropDown component in Tree Grid column with the following code.
+**Step 2**: Use [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_QueryCellInfo) event to render the DropDown component on the HTML element placed in `Template` with the following code.
 
 ```typescript
     function dropdown(args) {
@@ -96,6 +96,7 @@ To render other components in the Tree Grid, ensure the following steps:
     }
 
 ```
+Refer to the below complete code example about how to render dropdown component in Tree Grid column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
