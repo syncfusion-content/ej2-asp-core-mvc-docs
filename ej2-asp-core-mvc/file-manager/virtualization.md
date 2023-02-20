@@ -15,7 +15,7 @@ File Manager's UI virtualization allows you for the dynamic loading of a large n
 
 ## Enable Virtualization
 
-The virtualization of the File Manager component is based on the height and width of viewport, the items will be loaded in both largeIconsViewSettings and detailsViewSettings.
+The virtualization of the File Manager component is based on the height and width of the viewport. The items will be loaded in both largeIconsViewSettings and detailsViewSettings based on the viewport size.
 
 In order to enable `virtualization`, you must set the [EnableVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableVirtualization) property to true.
 
@@ -56,4 +56,4 @@ Output be like the below.
 
 * The keyboard shortcut **CTRL+A** will only select the files and directories that are currently visible within the viewport, rather than selecting all files and directories in the entire directory tree.
 
-* Selected file items are not maintained when scroll considering the performance of the component.
+* Selected file items are not maintained while scrolling, considering the performance of the component.
