@@ -1,5 +1,6 @@
-public IActionResult Index()
+        public ActionResult Index()
         {
+            var palette = new string[] { "#E94649", "#F6B53F", "#6FAAB0" };
             List<ColumnChartData> chartData = new List<ColumnChartData>
             {
                 new ColumnChartData{ country= "USA", gold=50, silver=70, bronze=45 },
@@ -12,8 +13,12 @@ public IActionResult Index()
                 new ColumnChartData{ country= "Sweden", gold=30, silver=25, bronze=27 }
             };
             ViewBag.dataSource = chartData;
+            ViewBag.palletes = palette;
             return View();
         }
+
+        
+
         public class ColumnChartData
         {
             public string country;
