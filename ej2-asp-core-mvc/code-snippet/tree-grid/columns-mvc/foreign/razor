@@ -1,0 +1,27 @@
+@{
+    var DropDownList = new Syncfusion.EJ2.DropDowns.DropDownList() { DataSource = ViewBag.DropData, Query = "new ej.data.Query()", Fields = new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings() { Value = "EmployeeID", Text = "EmployeeName" } };
+}
+
+@(Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.datasource)
+      .Columns(col =>
+       {
+        col.Field("EmpID").HeaderText("Emp ID").Width(90).TextAlign(TextAlign.Right).Add();
+        col.Field("Name").HeaderText("Employee Name").Width(180).Add();
+        col.Field("DOB").HeaderText("DOB").Format("yMd").TextAlign(TextAlign.Right).Width(90).Add();
+        col.Field("EmployeeID").HeaderText("EmployeeID").Width(80).EditType("dropdownedit").Edit(new { @params = DropDownList }).TextAlign(TextAlign.Right).Add();
+      }).Height(315).ChildMapping("Children").TreeColumnIndex(1).QueryCellInfo("queryCellInfo").Render()
+)
+
+<script>
+    var jsonData = @Html.Raw(Json.Encode(ViewBag.DropData))
+    function queryCellInfo(args) {
+         if (args.column.field === "EmployeeID") {
+            for (var i = 0; i < jsonData.length; i++) {
+                let data = args.data;
+                if (data[args.column.field] === jsonData[i]["EmployeeID"]) {
+                    args.cell.innerText = jsonData[i]["EmployeeName"]; // assign the foreignkey field value to the innertext
+                }
+            }
+         }
+    }
+</script>
