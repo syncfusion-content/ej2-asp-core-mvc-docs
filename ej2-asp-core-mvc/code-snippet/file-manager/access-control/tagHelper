@@ -1,13 +1,21 @@
 <div class=" control-section">
     <div class="sample-container">
         <!-- Declare filemanager element -->
-        <ejs-filemanager id="filemanager">
-            <e-filemanager-ajaxsettings url="/Home/FileOperations"
-                                        downloadUrl="/Home/Download"
-                                        uploadUrl="/Home/Upload"
-                                        getImageUrl="/Home/GetImage">
+        <ejs-filemanager id="filemanager" beforeSend="beforeSend">
+            <e-filemanager-ajaxsettings url="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/FileOperations"
+                                        downloadUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Download"
+                                        uploadUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Upload"
+                                        getImageUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/GetImage">
             </e-filemanager-ajaxsettings>
         </ejs-filemanager>
         <!-- end of filemanager element -->
     </div>
 </div>
+
+<script>
+    function beforeSend(args){
+        args.ajaxSettings.beforeSend = function (args) {
+                    args.httpRequest.setRequestHeader('Authorization', 'Access control');
+                };
+    }
+</script>
