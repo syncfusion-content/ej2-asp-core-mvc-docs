@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resources in ##Platform_Name## Gantt Component
+title: Resources in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Resources in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resources
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Resources
+# Resources in Syncfusion ##Platform_Name## Gantt Component
 
 In Gantt, the resources are represented by staff, equipment and materials etc. In Gantt control you can show or allocate the resources (human resources) for each task.
 
 ## Resource collection
 
-The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resources) property. These resource fields are mapped to the Gantt control using the [`resourceFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html) property.
+The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resources) property. These resource fields are mapped to the Gantt control using the [`resourceFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourcefields.html) property.
 
 |Resource fields | Description|
 |-----|-----|
