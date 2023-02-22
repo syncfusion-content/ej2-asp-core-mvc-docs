@@ -1,0 +1,25 @@
+ <div class=" control-section">
+        <div class="sample-container">
+            <!-- File Manager virtualization feature sample -->
+            <ejs-filemanager id="filemanager" enableVirtualization="true" beforeSend="onBeforeSend" beforeImageLoad="beforeImageLoad" beforeDownload="beforeDownload">
+                <e-filemanager-ajaxsettings url="https://ej2-aspcore-serviceazurewebsites.net/api/FileManager/FileOperations"
+                                            downloadUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Download"
+                                            uploadUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Upload"
+                                            getImageUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/GetImage">
+                </e-filemanager-ajaxsettings>
+            </ejs-filemanager>
+    </div>
+</div>
+<script>
+        function onBeforeSend(args) {
+           args.ajaxSettings.beforeSend = function (args) {
+                args.httpRequest.setRequestHeader('Authorization', 'FileBrowser');
+            };
+        }
+        function beforeImageLoad(args) {
+            args.imageUrl = args.imageUrl + '&rootName=' + 'FileBrowser';
+        }
+        function beforeDownload(args) {
+            args.data['rootFolderName'] = 'FileBrowser';
+        }
+</script>
