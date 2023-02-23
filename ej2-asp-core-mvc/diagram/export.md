@@ -72,6 +72,7 @@ options.margin = { left: 10, right: 10, top: 10, bottom: 10};
 options.fileName = 'format';
 options.format = 'SVG';
 diagram.exportDiagram(options);
+
 ```
 
 ## Mode
@@ -94,6 +95,7 @@ options.margin = { left: 10, right: 10, top: 10, bottom: 10};
 options.fileName = 'format';
 options.format = 'SVG';
 diagram.exportDiagram(options);
+
 ```
 
 ## Region
@@ -106,6 +108,7 @@ You can export any particular [`region`](https://ej2.syncfusion.com/documentatio
 For more information about region, refer to Regions.
 
 ```javascript
+
 var diagram = new Diagram({
     width: 1500, height: 1500
 });
@@ -117,6 +120,7 @@ options.fileName = 'format';
 options.format = 'SVG';
 options.region = 'Content';
 diagram.exportDiagram(options);
+
 ```
 
 ## Custom bounds
@@ -124,6 +128,7 @@ diagram.exportDiagram(options);
 Diagram provides support to export any specific region of the diagram by using [`bounds`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#region).
 
 ```javascript
+
 var diagram = new Diagram({
     width: 1500, height: 1500
 });
@@ -180,7 +185,7 @@ The client-side method [`print`](https://ej2.syncfusion.com/documentation/api/di
 var diagram = new Diagram({
     width: 1500, height: 1500
 });
-diagram.appendTo('#element');
+diagram.appendTo('#element'););
 var options = {};
 options.mode = 'Data';
 options.region = 'PageSettings';

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Toolbar Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: Overview in ##Platform_Name## Toolbar Component | Syncfusion 
+description: Checkout learn here all about Overview in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
-publishingplatform: ##Platform_Name##
+publishingplatform:  ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Toolbar Component 
 
 The ToolBar displays a group of command buttons arranged horizontally.
 

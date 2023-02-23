@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Toolbar Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Toolbar Component | Syncfusion
+description: Checkout and learn here all about style and appearance in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS Structure
+# CSS Structure in ##Platform_Name## Toolbar Component
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
 

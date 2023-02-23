@@ -71,7 +71,7 @@ The commands placed in the popup can be viewed by opening the popup using the dr
 
 ![Toolbar popup](./images/popup.gif)
 
-> If the popup content overflows the height of the page, then the rest of the commands will be hidden.
+N> If the popup content overflows the height of the page, then the rest of the commands will be hidden.
 
 ### Priority of commands
 
@@ -87,7 +87,7 @@ Property     | Description
 
 If primary priority commands also exceed available space, they are moved to the popup container at top order position and placed before the secondary priority commands.
 
-> You can maintain toolbar item on popup always by using the [ShowAlwaysInPopup](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem~ShowAlwaysInPopup.html) property, and this behavior is not applicable for toolbar items with [Overflow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem~Overflow.html) property as 'show'.
+N> You can maintain toolbar item on popup always by using the [ShowAlwaysInPopup](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem~ShowAlwaysInPopup.html) property, and this behavior is not applicable for toolbar items with [Overflow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem~Overflow.html) property as 'show'.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

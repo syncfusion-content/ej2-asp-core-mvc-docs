@@ -26,7 +26,7 @@ This section briefly explains about how to include `ASP.NET Core Rating` control
 
 Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
@@ -92,13 +92,22 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 
 Now, add the Syncfusion ASP.NET Core Rating tag helper in `~/Pages/Index.cshtml` page.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-
-<ejs-rating id="rating"></ejs-rating>
-
+{% include code-snippet/rating/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rating/getting-started/default/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Rating control will be rendered in the default web browser.
 
@@ -106,28 +115,23 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## value
 
-You can set the rating value by using the `value` property.
+You can set the rating value by using the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Value) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-
-<ejs-rating id="rating1" value=3 ></ejs-rating>
-
+{% include code-snippet/rating/getting-started/value/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rating/getting-started/value/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ![Displaying Rating Value in ASP.NET CORE Rating Control](images/rating-value.png)
-
-## Items count
-
-You can specify the number of stars using the `ItemsCount` property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-<ejs-rating id="rating1" value=3 itemsCount=8></ejs-rating>
-
-{% endhighlight %}
-{% endtabs %}
-
-![Displaying ASP.NET CORE Rating Control items based on Count](images/rating-itemscount.png)

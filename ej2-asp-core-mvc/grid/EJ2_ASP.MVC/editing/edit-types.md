@@ -66,7 +66,7 @@ The following table describes cell edit type and their corresponding edit params
 
 
 
-> If edit type is not defined in the column, then it will be considered as the **stringedit** type (Textbox component).
+N> If edit type is not defined in the column, then it will be considered as the **stringedit** type (Textbox component).
 
 ### Restrict to type decimal points in a NumericTextBox while editing the numeric column
 

@@ -1,0 +1,13 @@
+<div class="control-section">
+<div class="sample-container">
+    <!-- File Manager virtualization feature sample -->
+    @Html.EJS().FileManager("filemanager").AjaxSettings(
+               new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+                {
+                   Url = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/FileOperations",
+                   DownloadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Download",
+                   UploadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Upload",
+                   GetImageUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/GetImage"
+               }).EnableVirtualization(true).Render()
+</div>
+</div>

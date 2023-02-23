@@ -15,7 +15,7 @@ By default, the height of the Scheduler rows in Timeline views are static and th
 
 To enable auto row height adjustments on Scheduler Timeline views and Month view, set `true` to the `rowAutoHeight` property whose default value is `false`.
 
-> This auto row height adjustment is applicable only on all the Timeline views as well as on the calendar Month view.
+N> This auto row height adjustment is applicable only on all the Timeline views as well as on the calendar Month view.
 
 Now, let's see how it works on those applicable views with examples.
 
@@ -47,6 +47,7 @@ By default, the rows of the calendar Month view can hold only the limited appoin
 {% endif %}
 
 
+![Display Row Auto Height in ASP.NET Core Scheduler Month View](images/schedule-auto-height-month-view.png)
 
 ## Timeline views
 
@@ -76,6 +77,7 @@ When the feature `rowAutoHeight` is enabled in Timeline views, the row height ge
 {% endif %}
 
 
+![Display Row Auto Height in ASP.NET Core Scheduler Timeline View](images/schedule-auto-height-timeline-view.png)
 
 ## Timeline views with multiple resources
 
@@ -105,6 +107,7 @@ The following example shows how the auto row adjustment feature works on timelin
 {% endif %}
 
 
+![Display Row Auto Height with Multiple Resources in ASP.NET Core Scheduler Timeline View](images/schedule-auto-height-with-resource.png)
 
 ## Appointments occupying entire cell
 
@@ -134,7 +137,8 @@ By default, with the feature `rowAutoHeight`, there will be a space in the botto
 {% endif %}
 
 
+![Display Appointments Occupying Entire Cell in ASP.NET Core Scheduler](images/schedule-entire-cell.png)
 
 **Note**: The property `ignoreWhitespace` will be applicable only when `rowAutoHeight` feature is enabled in the Scheduler.
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
