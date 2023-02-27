@@ -10,7 +10,7 @@ documentation: ug
 
 # Severities in Message control
 
-The severity denotes the importance and context of the message to the user. The message contains different severity types. Use the [Severity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Message.html#Syncfusion_EJ2_Notifications_Message_Severity) property to display the messages with different severity levels.
+The severity denotes the importance and context of the message to the user. The message contains different severity types. Use the [severity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Message.html#Syncfusion_EJ2_Notifications_Message_Severity) property to display the messages with different severity levels.
 
 The available severity types are **Normal**, **Success**, **Info**, **Warning** and **Error**. The default severity type for messages is **Normal**.
 
