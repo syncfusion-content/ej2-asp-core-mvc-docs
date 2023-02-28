@@ -11,11 +11,11 @@ documentation: ug
 
 # Virtualization in File Manager Component
 
-File Manager's UI virtualization allows you for the dynamic loading of a large number of directories and files in both the details and largeicons views without degrading its performance.
+File Manager's UI virtualization allows you for the dynamic loading of a large number of directories and files in both the detailsView and largeIconsView without degrading its performance.
 
 ## Enable Virtualization
 
-The virtualization of the File Manager component is based on the height and width of the viewport. The items will be loaded in both largeIconsViewSettings and detailsViewSettings based on the viewport size.
+The virtualization of the File Manager component is based on the height and width of the viewport. The items will be loaded in both [largeIconsView](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_View) and [detailsView](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManagerDetailsViewSettings.html) based on the viewport size.
 
 In order to enable `virtualization`, you must set the [EnableVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableVirtualization) property to true.
 
@@ -48,7 +48,7 @@ In the instance below, a sizable collection of files can be found in the folders
 
 Output be like the below.
 
-![Virtualization](./images/virtualization.mp4)
+![Virtualization](./images/virtualization.gif)
 
 ## Limitations for Virtualization
 
