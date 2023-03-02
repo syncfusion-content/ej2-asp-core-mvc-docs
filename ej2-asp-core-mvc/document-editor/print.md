@@ -67,7 +67,7 @@ N> To enable print for a document editor instance, set enablePrint as true.
 
 ## Improve print quality
 
-Document editor provides an option to improve the print quality using [`printDevicePixelRatio`](../api/document-editor/documentEditorSettingsModel/#printdevicepixelratio) in Document editor settings. Document editor using canvas approach to render content. Then, canvas are converted to image and it is processed for print. Using printDevicePixelRatio API, you can increase the image quality based on your requirement.
+Document editor provides an option to improve the print quality using `printDevicePixelRatio` in Document editor settings. Document editor using canvas approach to render content. Then, canvas are converted to image and it is processed for print. Using printDevicePixelRatio API, you can increase the image quality based on your requirement.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
