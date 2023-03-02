@@ -51,19 +51,23 @@ retrieve
 the PDF document bytes.
 
 ```cs
-public PdfViewerController(IMemoryCache memoryCache, IHostingEnvironment hostingEnvironment, IDistributedCache cache, IConfiguration configuration)
+    private readonly IHostingEnvironment _hostingEnvironment;
+    public IMemoryCache _cache;
+    private IDistributedCache _dCache;
+    private IConfiguration _configuration;
+    private int _slidingTime = 0;
+    string path;
+    public PdfViewerController(IMemoryCache memoryCache, IHostingEnvironment hostingEnvironment, IDistributedCache cache, IConfiguration configuration)
     {
-        _mCache = memoryCache;
+        _cache = memoryCache;
         _dCache = cache;
         _hostingEnvironment = hostingEnvironment;
         _configuration = configuration;
-        _slidingTime = int.Parse(_configuration["DOCUMENT_SLIDING_EXPIRATION_TIME"]);
         path = _configuration["DOCUMENT_PATH"];
         //check the document path environment variable value and assign default data folder
         //if it is null.
-        path = string.IsNullOrEmpty(path) ? Path.Combine(_hostingEnvironment.ContentRootPath, "Data") : Path.Comb(_hostingEnvironment.ContentRootPath, path);
-    }
-
+        path = string.IsNullOrEmpty(path) ? Path.Combine(_hostingEnvironment.ContentRootPath, "Data") : Path.Combine(_hostingEnvironment.ContentRootPath, path);
+    }       
 ```
 
 [View Sample in GitHub]()
