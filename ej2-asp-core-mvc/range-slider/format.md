@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Format in ##Platform_Name## Range Slider Component
-description: Learn here all about Format in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
+title: Format in ##Platform_Name## Range Slider Control | Syncfusion
+description: Learn here all about Format in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Format
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Formatting
+# Formatting in Range Slider Control
 
 The `format` feature used to customize the units of Slider values to desired format. The formatted values will also be applied to the ARIA attributes of the slider. There are two ways of achieving formatting in slider.
 
