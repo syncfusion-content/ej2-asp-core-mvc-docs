@@ -19,7 +19,7 @@ By default, DateRangePicker date format, week, and month names are specific to t
 
 To go with the different culture other than `English`, follow the below steps.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data refer the [CLDR-Data](http://cldr.unicode.org/index/cldr-spec/json) link.
+* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data refer the [CLDR-Data](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
 
 ```
 npm install cldr-data --save
