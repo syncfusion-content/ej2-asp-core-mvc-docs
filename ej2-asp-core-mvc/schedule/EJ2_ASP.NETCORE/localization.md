@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Schedule Component
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Schedule Control | Syncfusion
+description: Learn here all about Localization in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -21,7 +21,7 @@ The Internationalization library provides support for formatting and parsing the
 
 By default, Scheduler is set to follow the English culture ('en-US'). If you want to go with different culture other than English, follow the below steps.
 
-Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
+Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
 
 ```
 npm install cldr-data --save

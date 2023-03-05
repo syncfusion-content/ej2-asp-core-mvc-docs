@@ -176,7 +176,7 @@ The following code example displays how the multiple resources are grouped and i
 {% endif %}
 
 
-![Displaying Vertical Resource View in ASP.NET Core Scheduler](images/scheduler-resources-verticalview.png)
+![Displaying Vertical Resource View in ASP.NET Core Scheduler](images/scheduler-resource-verticalview.png)
 
 ### Timeline resource view
 
