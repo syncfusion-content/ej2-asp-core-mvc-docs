@@ -14,12 +14,12 @@
     function itemSelect(args) {
     var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
     if (args.item.text === 'Save As xlsx')
-      spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/save', fileName: "Sample", saveType: "Xlsx"});
+      spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/aspnet/development/api/spreadsheet/save', fileName: "Sample", saveType: "Xlsx"});
     if (args.item.text === 'Save As xls')
-      spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/save', fileName: "Sample", saveType: "Xls"});
+      spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/aspnet/development/api/spreadsheet/save', fileName: "Sample", saveType: "Xls"});
     if (args.item.text === 'Save As csv')
-      spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/save',fileName: "Sample", saveType: "Csv"});
+      spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/aspnet/development/api/spreadsheet/save',fileName: "Sample", saveType: "Csv"});
     if (args.item.text === 'Save As pdf')
-      spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/save',fileName: "Sample", saveType: "Pdf"});
+      spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/aspnet/development/api/spreadsheet/save',fileName: "Sample", saveType: "Pdf"});
     }
 </script>
