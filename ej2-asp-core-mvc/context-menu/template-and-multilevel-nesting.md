@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template And Multilevel Nesting in ##Platform_Name## Context Menu Control | Synctusion
+title: Template And Multilevel Nesting in ##Platform_Name## Context Menu Control | Syncfusion
 description: Learn here all about Template And Multilevel Nesting in Syncfusion ##Platform_Name## Context Menu control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Template And Multilevel Nesting
