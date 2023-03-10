@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## List Box Component
-description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
+title: Drag And Drop in ##Platform_Name## List Box Control | Syncfusion
+description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## List Box control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drag And Drop
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Drag and drop
+# Drag and drop in ListBox Control
 
 The ListBox has support to drag an item or a group of selected items and drop it within the same list box or into another list box.
 
@@ -54,7 +54,15 @@ The following sample illustrates how to drag and drop an item within the same li
 
 ## Multiple listbox
 
-To drag and drop an item or group of item between two list boxes can be achieved by setting `allowDragAndDrop` property as `true` and [`scope`](../api/list-box/#scope) property should be set to both the list boxes.
+{% if page.publishingplatform == "aspnet-core" %}
+
+To drag and drop an item or group of item between two list boxes can be achieved by setting `allowDragAndDrop` property as `true` and [`scope`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_Scope) property should be set to both the list boxes.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+To drag and drop an item or group of item between two list boxes can be achieved by setting `allowDragAndDrop` property as `true` and [`scope`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_Scope) property should be set to both the list boxes.
+
+{% endif %}
 
 In the following sample, the `allowDragAndDrop` property is set as `true` and `scope` is set as `combined-list` to enable drop and drop in both list boxes.
 
