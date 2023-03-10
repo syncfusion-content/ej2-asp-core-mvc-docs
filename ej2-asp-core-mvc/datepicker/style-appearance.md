@@ -42,18 +42,10 @@ Use the following CSS to customize the placeholder font color of the datepicker
 
 ```css
 /* To specify the color of the placeholder */
-::placeholder {
+.e-input-group .e-datepicker::placeholder {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: red !important;
         opacity: 1; /* Firefox */
-}
-:-ms-input-placeholder {
-        /* Internet Explorer 10-11 */
-        color: red !important;
-}
-::-ms-input-placeholder {
-        /* Microsoft Edge */
-        color: red !important;
 }
 ```
 
