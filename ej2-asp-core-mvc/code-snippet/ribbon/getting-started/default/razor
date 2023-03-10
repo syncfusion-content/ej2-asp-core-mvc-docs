@@ -29,9 +29,9 @@
                    {
                        collection.Items(items =>
                        {
-                           items.Type(RibbonItemType.DropDown).DropDownSettings(dropdown =>
+                           items.Type(RibbonItemType.SplitButton).SplitButtonSettings(splitbutton =>
                            {
-                               dropdown.IconCss("e-icons e-paste").Items(pasteOptions).IsDropDownButton(false).Content("Paste");
+                               splitbutton.IconCss("e-icons e-paste").Items(pasteOptions).Content("Paste");
                            }).Add();
                        }).Add();
                        collection.Items(items =>

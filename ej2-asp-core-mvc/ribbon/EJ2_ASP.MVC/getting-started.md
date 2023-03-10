@@ -111,4 +111,4 @@ Now, add the Syncfusion ASP.NET MVC Ribbon control in `~/Home/Index.cshtml` page
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Ribbon control will be rendered in the default web browser.
 
-![ASP.NET MVC Ribbon Control](images/rating-control.png)
+![ASP.NET MVC Ribbon Control](images/ribbon.png)
