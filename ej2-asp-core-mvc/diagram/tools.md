@@ -296,7 +296,15 @@ function Created() {
 
 ## Events
 
-[`elementDraw`](../api/diagram)  event is triggered when node or connector is drawn using drawing tool.
+{% if page.publishingplatform == "aspnet-core" %}
+
+[elementDraw](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_ElementDraw)  event is triggered when node or connector is drawn using drawing tool.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+[elementDraw](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_ElementDraw)  event is triggered when node or connector is drawn using drawing tool.
+
+{% endif %}
 
 {% if page.publishingplatform == "aspnet-core" %}
 

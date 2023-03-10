@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Context Menu Component
+title: Data Binding in ##Platform_Name## Context Menu Control | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -8,9 +8,17 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in Context Menu Control
 
-To bind local data source to the ContextMenu, menu items are populated from data source and mapped to [`items`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~Items.html) property.
+{% if page.publishingplatform == "aspnet-core" %}
+
+To bind local data source to the ContextMenu, menu items are populated from data source and mapped to [`items`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_Items) property.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+To bind local data source to the ContextMenu, menu items are populated from data source and mapped to [`items`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_Items) property.
+
+{% endif %}
 
 The below example demonstrates how to bind local data source to the ContextMenu and separator is added using `insertAfter` method.
 
