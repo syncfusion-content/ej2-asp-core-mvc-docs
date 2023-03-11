@@ -65,7 +65,7 @@
                        }).Add();
                        collections.Items(items =>
                        {
-                           items.Type(RibbonItemType.ColorPicker).AllowedSizes(RibbonItemSize.Small).ColorPickerSettings(colorPicker =>
+                           items.Type(RibbonItemType.ColorPicker).AllowedSizes(RibbonItemSize.Small).DisplayOptions(Syncfusion.EJ2.Ribbon.DisplayMode.Simplified).ColorPickerSettings(colorPicker =>
                            {
                                colorPicker.Value("#123456");
                            }).Add();

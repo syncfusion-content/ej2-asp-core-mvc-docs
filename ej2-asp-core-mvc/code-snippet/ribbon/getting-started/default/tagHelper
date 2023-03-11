@@ -63,7 +63,7 @@
                                     </e-ribbon-collection>
                                     <e-ribbon-collection>
                                         <e-ribbon-items>
-                                            <e-ribbon-item type=ColorPicker allowedSizes=Small>
+                                            <e-ribbon-item type=ColorPicker allowedSizes=Small displayOptions=Simplified>
                                                 <e-ribbon-colorpickersettings value="#123456"></e-ribbon-colorpickersettings>
                                             </e-ribbon-item>
                                             <e-ribbon-item type="Button" allowedSizes=Small>
