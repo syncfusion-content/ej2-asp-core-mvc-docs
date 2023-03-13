@@ -40,6 +40,82 @@ The [`QueryCellInfo`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/S
 {% endif %}
 
 
+## Custom Attributes
+
+In addition to above, we can customize treegrid cells by adding a CSS class to the [`CustomAttribute`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_CustomAttributes) property of the column.
+
+```CSS
+.e-customCSS {
+    background: '#d7f0f4';
+}
+```
+```typescript
+     col.Field("TaskID").HeaderText("Task ID").CustomAttributes(new { @class = "e-customCSS" }).TextAlign(TextAlign.Center).Width(90).Add();
+
+```
+In the below example, we have changed the background color for `TaskID` and `StartDate` columns.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/cell/custom-attr/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CustomAttr.cs" %}
+{% include code-snippet/tree-grid/cell/custom-attr/customAttr.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/cell/custom-attr/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CustomAttr.cs" %}
+{% include code-snippet/tree-grid/cell/custom-attr/customAttr.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Grid Lines
+
+The [`gridLines`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_GridLines) have option to display cell border and it can be defined by the `gridLines` property.
+
+The available modes of grid lines are:
+
+| Modes | Actions |
+|-------|---------|
+| Both | Displays both the horizontal and vertical grid lines.|
+| None | No grid lines are displayed.|
+| Horizontal | Displays the horizontal grid lines only.|
+| Vertical | Displays the vertical grid lines only.|
+| Default | Displays grid lines based on the theme.|
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/cell/grid-lines/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="GridLines.cs" %}
+{% include code-snippet/tree-grid/cell/grid-lines/gridLines.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/cell/grid-lines/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="GridLines.cs" %}
+{% include code-snippet/tree-grid/cell/grid-lines/gridLines.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+N> By default, the treegrid renders with `Default` mode.
 
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
 
