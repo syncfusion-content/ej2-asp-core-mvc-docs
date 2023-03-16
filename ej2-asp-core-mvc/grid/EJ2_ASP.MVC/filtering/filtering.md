@@ -129,7 +129,7 @@ a* |Everything that starts with "a".
 The **LIKE** filter can process single search patterns using the "%" symbol, retrieving values matching the specified patterns. The following Grid features support LIKE filtering on string-type columns:
 
 * Filter Menu
-* Filter Bar with the [`filterSettings.showFilterBarOperator`](../../api/grid/filter/#showFilterBarOperator-boolean) property enabled on the Grid [`filterSettings`](../../api/grid/filterSettings).
+* Filter Bar with the `filterSettings.showFilterBarOperator` property enabled on the Grid [`filterSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html).
 * Custom Filter of Excel filter type.
 
 **For example:**
