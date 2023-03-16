@@ -377,10 +377,12 @@ namespace PDFViewerSample.Pages
         public string annotationCollection { get; set; }
         public string annotationsPageList { get; set; }
         public string formFieldsPageList { get; set; }
-        public string isAnnotationsExist { get; set; }
-        public string isFormFieldAnnotationsExist { get; set; }
+        public bool isAnnotationsExist { get; set; }
+        public bool isFormFieldAnnotationsExist { get; set; }
         public string documentLiveCount { get; set; }
         public string annotationDataFormat { get; set; }
+		public string annotationCollection { get; set; }
+		public string importedData { get; set; }
     }
 }
 {% endhighlight %}
