@@ -360,7 +360,7 @@ namespace PDFViewerSample.Pages
         public string uniqueId { get; set; }
         public string data { get; set; }
         public string viewPortWidth { get; set; }
-        public string viewportHeight { get; set; }
+        public string viewPortHeight { get; set; }
         public string tilecount { get; set; }
         public bool isCompletePageSizeNotReceived { get; set; }
         public string freeTextAnnotation { get; set; }
