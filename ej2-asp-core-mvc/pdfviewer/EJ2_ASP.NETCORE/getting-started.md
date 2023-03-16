@@ -381,7 +381,6 @@ namespace PDFViewerSample.Pages
         public bool isFormFieldAnnotationsExist { get; set; }
         public string documentLiveCount { get; set; }
         public string annotationDataFormat { get; set; }
-	public string annotationCollection { get; set; }
 	public string importedData { get; set; }
     }
 }
