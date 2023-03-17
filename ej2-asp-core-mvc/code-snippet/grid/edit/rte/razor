@@ -12,28 +12,28 @@
 
 
 <script>
-    var textEditor;
-    var elemContent;
+    var richTextEditor;
+    var rteElem;
     function create(args) {
-        elemContent = document.createElement('textarea');
-        return elemContent;
+        rteElem = document.createElement('textarea');
+        return rteElem;
     }
 
     function write(args) {
-        textEditor = new ej.inputs.TextBox({
+        richTextEditor = new ej.richtexteditor.RichTextEditor({
             multiline: true,
             value: args.rowData[args.column.field],
             floatLabelType: 'Auto'
         });
-        textEditor.appendTo(elemContent);
+        richTextEditor.appendTo(rteElem);
     }
 
     function destroy() {
-        textEditor.destroy();
+        richTextEditor.destroy();
     }
 
     function read(args) {
-        return textEditor.value;
+        return richTextEditor.value;
     }
 
     function created(args) {
