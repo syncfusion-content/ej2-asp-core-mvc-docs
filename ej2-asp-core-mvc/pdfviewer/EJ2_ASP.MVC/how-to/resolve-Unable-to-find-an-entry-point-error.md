@@ -20,8 +20,8 @@ From the release version **21.1.0.35 (2023 Volume 1)** of Essential Studio, the 
 
 ## To solve this issue, you should follow the below steps:
 
-1.	Clear the bin and obj files of the web-service project
-2.	Re-publish the web-service project.
+1. Clear the bin and obj files of the web-service project
+2. Re-publish the web-service project.
 
 
 N> **Note:** If you are hosting your application in Azure, AWS, or in Linux environments, delete the older published files and republish the application.
