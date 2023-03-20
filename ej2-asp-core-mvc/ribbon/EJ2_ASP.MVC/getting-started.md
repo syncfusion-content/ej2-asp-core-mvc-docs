@@ -96,6 +96,114 @@ Now, add the Syncfusion ASP.NET MVC Ribbon control in `~/Home/Index.cshtml` page
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/getting-started/initialize/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Initialize.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/getting-started/initialize/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Defining Tab
+
+In order to include a tab for a ribbon control, you can utilize the following code block.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/getting-started/tab/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tab.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/getting-started/tab/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Defining Group
+
+To incorporate a group within a tab of a ribbon control, you can use the code block provided below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/getting-started/group/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Group.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/getting-started/group/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Defining Collection
+
+To incorporate a collection into a group of your ribbon control, you can use the code block provided below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/getting-started/collection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Collection.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/getting-started/collection/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Defining Item
+
+To define an item within your ribbon control collection, you can use the following code.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/getting-started/item/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Item.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/getting-started/item/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+The following example illustrates how different combinations of tabs, groups, collections, and items can be used in a ribbon control.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/ribbon/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

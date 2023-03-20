@@ -1,0 +1,10 @@
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Groups(groups =>
+    {
+        groups.Header("Clipboard").Collections(collection =>
+        {
+            collection.Add();
+        }).Add();
+    }).Add();
+}).Render()
