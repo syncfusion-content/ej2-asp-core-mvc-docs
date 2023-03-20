@@ -205,3 +205,34 @@ The following code example shows how to enable the predecessor validation dialog
 In this case, if the user dragging action violated the predecessor type then the following dialog will be rendered to perform operation.
 
 ![Alt text](images/validateWithDialog.png)
+
+## Enable or Disable the Parent Predecessor
+
+In Gantt, you can enable or disable the parent predecessor using `AllowParentDependency` property.
+
+By default, the `AllowParentDependency` property will be `true`.
+
+The following code example shows how to disable the parent predecessor in Gantt.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/predecessor/parentpredecessor/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="DisableParentPredecessor.cs" %}
+{% include code-snippet/gantt/predecessor/parentpredecessor/parentpredecessor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/predecessor/parentpredecessor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="DisableParentPredecessor.cs" %}
+{% include code-snippet/gantt/predecessor/parentpredecessor/parentpredecessor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

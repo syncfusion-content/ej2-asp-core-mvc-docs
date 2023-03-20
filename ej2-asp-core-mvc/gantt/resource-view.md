@@ -123,3 +123,63 @@ N> By default, the `enableMultiTaskbar` property value is `false`.
 
 
 ![Alt text](images/multitaskbar.PNG)
+
+### Enable Taskbar Drag And Drop
+
+In this section, you can enable taskbar drag and drop from one resource to another resource vertically by enabling `allowTaskbarDragAndDrop` property. Also, auto-scroll is enabled in this feature, so that you can drag and drop taskbar to any index in gantt.
+
+>Note: By default, the `allowTaskbarDragAndDrop` property value is `false`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/resource-view/taskbardragdrop/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarDragAndDrop.cs" %}
+{% include code-snippet/gantt/resource-view/taskbardragdrop/taskbardragdrop.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/resource-view/taskbardragdrop/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarDragAndDrop.cs" %}
+{% include code-snippet/gantt/resource-view/taskbardragdrop/taskbardragdrop.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Disable Taskbar Overlap
+
+In this section, you can prevent the taskbar overlap in resource task by disabling the `allowTaskbarOverlap` property. Resource are displayed in single row and and row height will be extended to occupy his tasks when it is in collapse state. In this view, a user can able to easily identify the overallocation of task of a resource in a project.
+
+Task dependency or task relationship cannot be established between two tasks in this feature.
+
+>Note: By default, the `allowTaskbarOverlap` property value is `true`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/resource-view/taskbaroverlap/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarOverlap.cs" %}
+{% include code-snippet/gantt/resource-view/taskbaroverlap/taskbaroverlap.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/resource-view/taskbaroverlap/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarOverlap.cs" %}
+{% include code-snippet/gantt/resource-view/taskbaroverlap/taskbaroverlap.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
