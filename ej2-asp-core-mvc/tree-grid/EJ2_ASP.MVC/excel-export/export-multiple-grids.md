@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export Multiple Tree Grids in ##Platform_Name## Tree Grid Component
+title: Export Multiple Tree Grids in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Export Multiple Tree Grids in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export Multiple Tree Grids
