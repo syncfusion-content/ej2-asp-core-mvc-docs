@@ -124,9 +124,9 @@ N> By default, the `enableMultiTaskbar` property value is `false`.
 
 ![Alt text](images/multitaskbar.PNG)
 
-### Enable Taskbar Drag And Drop
+### Enable taskbar drag and drop
 
-In this section, you can enable taskbar drag and drop from one resource to another resource vertically by enabling [`AllowTaskbarDragAndDrop`]https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowTaskbarDragAndDrop.html property. Also, auto-scroll is enabled in this feature, so that you can drag and drop taskbar to any row in gantt chart side.
+In Gantt, you can enable taskbar drag and drop between resources by using the [`AllowTaskbarDragAndDrop`]https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowTaskbarDragAndDrop.html property. This allows you to move a taskbar from one resource to another vertically, making it easier to schedule tasks and manage resources.
 
 >Note: By default, the `allowTaskbarDragAndDrop` property value is `false`.
 
@@ -153,13 +153,13 @@ In this section, you can enable taskbar drag and drop from one resource to anoth
 {% endtabs %}
 {% endif %}
 
-### Disable Taskbar Overlap
+### Disable taskbar overlap
 
-In this section, you can prevent the taskbar overlap in resource task by disabling the [`AllowTaskbarOverlap`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowTaskbarOverlap.html) property. The resource is displayed in a single row and and the row height will be extended to occupy his tasks when it is in a collapse state. In this view, a user can able to easily identify the overallocation of the task of a resource in a project.
+In Gantt, you can disable taskbar overlap between resource tasks using the [`AllowTaskbarOverlap`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowTaskbarOverlap.html) property. This prevents the taskbars for different tasks from overlapping on the same row, making it easier to distinguish between the different tasks and manage resources effectively.
 
-Task dependency or task relationship cannot be established between two tasks in this feature.
+When `AllowTaskbarOverlap` is set to false, the resources are displayed in a single row and the row height will be extended to occupy the tasks of the resource when it is in a collapsed state. This view allows you to easily identify any overallocation of tasks for a resource in a project.
 
->Note: By default, the `allowTaskbarOverlap` property value is `true`.
+It's important to note that when `AllowTaskbarOverlap` is disabled, task dependencies or relationships cannot be established between tasks that are rendered in multiple lines for the same resource. If you need to establish dependencies between tasks for the same resource, you may want to consider enabling taskbar overlap.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
