@@ -208,7 +208,7 @@ In this case, if the user dragging action violated the predecessor type then the
 
 ## Enable or Disable the Parent Predecessor
 
-In Gantt, you can enable or disable the parent predecessor using `AllowParentDependency` property.
+In Gantt, you can enable or disable the parent predecessor using [`AllowParentDependency`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowParentDependency.html) property.
 
 By default, the `AllowParentDependency` property will be `true`.
 
