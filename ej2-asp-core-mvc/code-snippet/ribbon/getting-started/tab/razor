@@ -1,4 +1,0 @@
-@Html.EJS().Ribbon("ribbon").Tabs(tab =>
-{
-    tab.Header("Home").Add();
-}).Render()

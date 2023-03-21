@@ -1,5 +1,0 @@
-<ejs-ribbon id="ribbon">
-    <e-ribbon-tabs>
-        <e-ribbon-tab header="Home"></e-ribbon-tab>
-    </e-ribbon-tabs>
-</ejs-ribbon>

@@ -92,113 +92,103 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 Now, add the Syncfusion ASP.NET MVC Ribbon control in `~/Home/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/initialize/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Initialize.cs" %}
-{% endhighlight %}{% endtabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+@Html.EJS().Ribbon("ribbon").Render()@Html.EJS().Ribbon("ribbon").Render()
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/initialize/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Defining Tab
 
-In order to include a tab for a ribbon control, you can utilize the following code block.
-
-{% if page.publishingplatform == "aspnet-core" %}
+In Ribbon, the options are arranged in tabs for easy access. You can use the `e-ribbon-tab` tag helper to define the ribbon tab like below.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/tab/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Tab.cs" %}
-{% endhighlight %}{% endtabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Add();
+}).Render()
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/tab/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Defining Group
 
-To incorporate a group within a tab of a ribbon control, you can use the code block provided below.
-
-{% if page.publishingplatform == "aspnet-core" %}
+In Ribbon, the options are arranged in groups for easy access. You can use the `e-ribbon-group` tag helper to define the ribbon group like below.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/group/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Group.cs" %}
-{% endhighlight %}{% endtabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Groups(groups =>
+    {
+        groups.Header("Clipboard").Orientation(ItemOrientation.Row).Add();
+    }).Add();
+}).Render()
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/group/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Defining Collection
 
-To incorporate a collection into a group of your ribbon control, you can use the code block provided below.
-
-{% if page.publishingplatform == "aspnet-core" %}
+In Ribbon, the options are arranged in collections for easy access. You can use the `e-ribbon-collection` tag helper to define the ribbon collection like below.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/collection/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Collection.cs" %}
-{% endhighlight %}{% endtabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Groups(groups =>
+    {
+        groups.Header("Clipboard").Orientation(ItemOrientation.Row).Collections(collection =>
+        {
+            collection.Id("ribbon-collection").Add();
+        }).Add();
+    }).Add();
+}).Render()
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/collection/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Defining Item
 
-To define an item within your ribbon control collection, you can use the following code.
-
-{% if page.publishingplatform == "aspnet-core" %}
+In Ribbon, the options are arranged in items for easy access. You can use the `e-ribbon-item` tag helper to define the ribbon item like below.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/item/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Item.cs" %}
-{% endhighlight %}{% endtabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/item/razor %}
+@{
+    List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge format" }, new MenuItem { Text = "Keep text only" } };
+}
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Groups(groups =
+    {
+        groups.Header("Clipboard").Orientation(ItemOrientation.Row).Collections(collection =>
+        {
+            collection.Id("ribbon-collection").Items(items =>
+            {
+                items.Type(RibbonItemType.SplitButton).SplitButtonSettings(splitbutton =>
+                {
+                    splitbutton.IconCss("e-icons e-paste").Items(pasteOptions).Content("Paste");
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
+
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-The following example illustrates how different combinations of tabs, groups, collections, and items can be used in a ribbon control.
+The following example illustrates how tabs, groups, collections, and items are used in a ribbon control to form the ribbon layout.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

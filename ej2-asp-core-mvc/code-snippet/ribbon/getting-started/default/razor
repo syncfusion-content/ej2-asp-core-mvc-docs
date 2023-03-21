@@ -45,7 +45,7 @@
                     }).Add();
                     items.Type(RibbonItemType.Button).ButtonSettings(button =>
                     {
-                        button.IconCss("e-icons e-paste").Content("Format Painter");
+                        button.IconCss("e-icons e-format-painter").Content("Format Painter");
                     }).Add();
                 }).Add();
             }).Add();

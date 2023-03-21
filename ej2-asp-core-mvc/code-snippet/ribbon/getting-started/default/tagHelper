@@ -43,7 +43,7 @@
                                             <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
                                         </e-ribbon-item>
                                         <e-ribbon-item type="Button">
-                                            <e-ribbon-buttonsettings iconCss="e-icons e-paste" content="Format Painter"></e-ribbon-buttonsettings>
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
                                         </e-ribbon-item>
                                     </e-ribbon-items>
                                 </e-ribbon-collection>

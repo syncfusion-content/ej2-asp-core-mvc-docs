@@ -1,7 +1,0 @@
-@Html.EJS().Ribbon("ribbon").Tabs(tab =>
-{
-    tab.Header("Home").Groups(groups =>
-    {
-        groups.Header("Clipboard").Add();
-    }).Add();
-}).Render()
