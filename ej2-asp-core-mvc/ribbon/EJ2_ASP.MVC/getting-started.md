@@ -117,7 +117,7 @@ In Ribbon, the options are arranged in tabs for easy access. You can use the `e-
 
 ## Defining Group
 
-In Ribbon, the options are arranged in groups for easy access. You can use the `e-ribbon-group` tag helper to define the ribbon group like below.
+Related options are grouped under each tab with ribbon groups. You can use the `e-ribbon-group` tag helper to define each ribbon group like below.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -135,7 +135,7 @@ In Ribbon, the options are arranged in groups for easy access. You can use the `
 
 ## Defining Collection
 
-In Ribbon, the options are arranged in collections for easy access. You can use the `e-ribbon-collection` tag helper to define the ribbon collection like below.
+Inside each group, options are present in rows or columns as collections of items You can use the `e-ribbon-collection` tag helper to define each ribbon collection like below.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -156,7 +156,7 @@ In Ribbon, the options are arranged in collections for easy access. You can use 
 
 ## Defining Item
 
-In Ribbon, the options are arranged in items for easy access. You can use the `e-ribbon-item` tag helper to define the ribbon item like below.
+Ribbon support different built-in item types like buttons, drop-down buttons, combo boxes, etc., You can use the `e-ribbon-item` tag helper to define each ribbon item like below.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
