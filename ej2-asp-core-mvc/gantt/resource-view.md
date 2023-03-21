@@ -126,7 +126,7 @@ N> By default, the `enableMultiTaskbar` property value is `false`.
 
 ### Enable Taskbar Drag And Drop
 
-In this section, you can enable taskbar drag and drop from one resource to another resource vertically by enabling `allowTaskbarDragAndDrop` property. Also, auto-scroll is enabled in this feature, so that you can drag and drop taskbar to any index in gantt.
+In this section, you can enable taskbar drag and drop from one resource to another resource vertically by enabling [`AllowTaskbarDragAndDrop`]https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowTaskbarDragAndDrop.html property. Also, auto-scroll is enabled in this feature, so that you can drag and drop taskbar to any row in gantt chart side.
 
 >Note: By default, the `allowTaskbarDragAndDrop` property value is `false`.
 
@@ -155,7 +155,7 @@ In this section, you can enable taskbar drag and drop from one resource to anoth
 
 ### Disable Taskbar Overlap
 
-In this section, you can prevent the taskbar overlap in resource task by disabling the `allowTaskbarOverlap` property. Resource are displayed in single row and and row height will be extended to occupy his tasks when it is in collapse state. In this view, a user can able to easily identify the overallocation of task of a resource in a project.
+In this section, you can prevent the taskbar overlap in resource task by disabling the [`AllowTaskbarOverlap`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowTaskbarOverlap.html) property. The resource is displayed in a single row and and the row height will be extended to occupy his tasks when it is in a collapse state. In this view, a user can able to easily identify the overallocation of the task of a resource in a project.
 
 Task dependency or task relationship cannot be established between two tasks in this feature.
 
