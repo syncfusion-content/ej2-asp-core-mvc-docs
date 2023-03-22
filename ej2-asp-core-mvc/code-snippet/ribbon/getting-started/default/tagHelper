@@ -19,168 +19,166 @@
 
 
 <div id="ribbonContainer">
-    <div id="ribbon">
-        <ejs-ribbon id="default">
-            <e-ribbon-filemenusettings text="File" visible="true" menuItems=fileOptions></e-ribbon-filemenusettings>
-            <e-ribbon-tabs>
-                <e-ribbon-tab header="Home">
-                    <e-ribbon-groups>
-                        <e-ribbon-group header="Clipboard" groupIconCss="e-icons e-paste" showLauncherIcon=true>
-                            <e-ribbon-collections>
-                                <e-ribbon-collection>
-                                    <e-ribbon-items>
-                                        <e-ribbon-item type=SplitButton allowedSizes=Large>
-                                            <e-ribbon-splitbuttonsettings iconCss="e-icons e-paste" content="Paste" items=pasteOptions></e-ribbon-splitbuttonsettings>
-                                        </e-ribbon-item>
-                                    </e-ribbon-items>
-                                </e-ribbon-collection>
-                                <e-ribbon-collection>
-                                    <e-ribbon-items>
-                                        <e-ribbon-item type="Button">
-                                            <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type="Button">
-                                            <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type="Button">
-                                            <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                    </e-ribbon-items>
-                                </e-ribbon-collection>
-                            </e-ribbon-collections>
-                        </e-ribbon-group>
-                        <e-ribbon-group header="Font" orientation=Row enableGroupOverflow=true isCollapsible=false groupIconCss="e-icons e-bold" cssClass="font-group">
-                            <e-ribbon-collections>
-                                <e-ribbon-collection>
-                                    <e-ribbon-items>
-                                        <e-ribbon-item type="ComboBox">
-                                            <e-ribbon-comboboxsettings dataSource=fontStyle index=3 allowFiltering=true width="150px"></e-ribbon-comboboxsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type="ComboBox">
-                                            <e-ribbon-comboboxsettings dataSource=fontSize index=3 width="65px"></e-ribbon-comboboxsettings>
-                                        </e-ribbon-item>
-                                    </e-ribbon-items>
-                                </e-ribbon-collection>
-                                <e-ribbon-collection>
-                                    <e-ribbon-items>
-                                        <e-ribbon-item type=ColorPicker allowedSizes=Small>
-                                            <e-ribbon-colorpickersettings value="#123456"></e-ribbon-colorpickersettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type="Button" allowedSizes=Small>
-                                            <e-ribbon-buttonsettings iconCss="e-icons e-bold" isToggle=true></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type="Button" allowedSizes=Small>
-                                            <e-ribbon-buttonsettings iconCss="e-icons e-italic" isToggle=true></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type="Button" allowedSizes=Small>
-                                            <e-ribbon-buttonsettings iconCss="e-icons e-underline" isToggle=true></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type="Button" allowedSizes=Small>
-                                            <e-ribbon-buttonsettings iconCss="e-icons e-strikethrough" isToggle=true></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type="Button" allowedSizes=Small>
-                                            <e-ribbon-buttonsettings iconCss="e-icons e-change-case" isToggle=true></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                    </e-ribbon-items>
-                                </e-ribbon-collection>
-                            </e-ribbon-collections>
-                        </e-ribbon-group>
-                        <e-ribbon-group header="Reuse Files" isCollapsible=false groupIconCss="sf-icon-reuse">
-                            <e-ribbon-collections>
-                                <e-ribbon-collection>
-                                    <e-ribbon-items>
-                                        <e-ribbon-item type="Button" allowedSizes=Large>
-                                            <e-ribbon-buttonsettings iconCss="sf-icon-reuse" content="Reuse Files"></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                    </e-ribbon-items>
-                                </e-ribbon-collection>
-                            </e-ribbon-collections>
-                        </e-ribbon-group>
-                    </e-ribbon-groups>
-                </e-ribbon-tab>
-                <e-ribbon-tab header="Insert">
-                    <e-ribbon-groups>
-                        <e-ribbon-group header="Tables" isCollapsible="false">
-                            <e-ribbon-collections>
-                                <e-ribbon-collection>
-                                    <e-ribbon-items>
-                                        <e-ribbon-item type="DropDown" allowedSizes=Large>
-                                            <e-ribbon-dropdownsettings iconCss="e-icons e-table" content="Table" items="tableOptions"></e-ribbon-dropdownsettings>
-                                        </e-ribbon-item>
-                                    </e-ribbon-items>
-                                </e-ribbon-collection>
-                            </e-ribbon-collections>
-                        </e-ribbon-group>
-                        <e-ribbon-group header="Illustrations" orientation=Row enableGroupOverflow=true groupIconCss="e-icons e-image">
-                            <e-ribbon-collections>
-                                <e-ribbon-collection>
-                                    <e-ribbon-items>
-                                        <e-ribbon-item type=Button>
-                                            <e-ribbon-buttonsettings iconCss="sf-icon-3d-model" content="3D Models"></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type=Button>
-                                            <e-ribbon-buttonsettings iconCss="sf-icon-smart-art" content="SmartArt"></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type=Button>
-                                            <e-ribbon-buttonsettings iconCss="sf-icon-chart" content="Chart"></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                    </e-ribbon-items>
-                                </e-ribbon-collection>
-                            </e-ribbon-collections>
-                        </e-ribbon-group>
-                        <e-ribbon-group header="Media" isCollapsible=false>
-                            <e-ribbon-collections>
-                                <e-ribbon-collection>
-                                    <e-ribbon-items>
-                                        <e-ribbon-item type=Template itemTemplate='<span class="ribbonTemplate ${activeSize}"><span class="e-icons e-video"></span><span class="text">Video</span></span>'>
-                                        </e-ribbon-item>
-                                    </e-ribbon-items>
-                                </e-ribbon-collection>
-                            </e-ribbon-collections>
-                        </e-ribbon-group>
-                    </e-ribbon-groups>
-                </e-ribbon-tab>
-                <e-ribbon-tab header="View">
-                    <e-ribbon-groups>
-                        <e-ribbon-group header="Views" orientation=Row groupIconCss="e-icons e-print">
-                            <e-ribbon-collections>
-                                <e-ribbon-collection>
-                                    <e-ribbon-items>
-                                        <e-ribbon-item type=Button>
-                                            <e-ribbon-buttonsettings iconCss="sf-icon-read" content="Read Mode"></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type=Button>
-                                            <e-ribbon-buttonsettings iconCss="e-print e-icons" content="Print Layout"></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type=Button>
-                                            <e-ribbon-buttonsettings iconCss="sf-icon-web-layout" content="Web Layout"></e-ribbon-buttonsettings>
-                                        </e-ribbon-item>
-                                    </e-ribbon-items>
-                                </e-ribbon-collection>
-                            </e-ribbon-collections>
-                        </e-ribbon-group>
-                        <e-ribbon-group header="show" isCollapsible=false>
-                            <e-ribbon-collections>
-                                <e-ribbon-collection>
-                                    <e-ribbon-items>
-                                        <e-ribbon-item type=CheckBox>
-                                            <e-ribbon-checkboxsettings checked=false label="Ruler"></e-ribbon-checkboxsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type=CheckBox>
-                                            <e-ribbon-checkboxsettings checked=false label="Gridlines"></e-ribbon-checkboxsettings>
-                                        </e-ribbon-item>
-                                        <e-ribbon-item type=CheckBox>
-                                            <e-ribbon-checkboxsettings checked=true label="Navigation Pane"></e-ribbon-checkboxsettings>
-                                        </e-ribbon-item>
-                                    </e-ribbon-items>
-                                </e-ribbon-collection>
-                            </e-ribbon-collections>
-                        </e-ribbon-group>
-                    </e-ribbon-groups>
-                </e-ribbon-tab>
-            </e-ribbon-tabs>
-        </ejs-ribbon>
-    </div>
+    <ejs-ribbon id="default">
+        <e-ribbon-filemenusettings text="File" visible="true" menuItems=fileOptions></e-ribbon-filemenusettings>
+        <e-ribbon-tabs>
+            <e-ribbon-tab header="Home">
+                <e-ribbon-groups>
+                    <e-ribbon-group header="Clipboard" groupIconCss="e-icons e-paste" showLauncherIcon=true>
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type=SplitButton allowedSizes=Large>
+                                        <e-ribbon-splitbuttonsettings iconCss="e-icons e-paste" content="Paste" items=pasteOptions></e-ribbon-splitbuttonsettings>
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type="Button">
+                                        <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type="Button">
+                                        <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type="Button">
+                                        <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                    <e-ribbon-group header="Font" orientation=Row enableGroupOverflow=true isCollapsible=false groupIconCss="e-icons e-bold" cssClass="font-group">
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type="ComboBox">
+                                        <e-ribbon-comboboxsettings dataSource=fontStyle index=3 allowFiltering=true width="150px"></e-ribbon-comboboxsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type="ComboBox">
+                                        <e-ribbon-comboboxsettings dataSource=fontSize index=3 width="65px"></e-ribbon-comboboxsettings>
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type=ColorPicker allowedSizes=Small>
+                                        <e-ribbon-colorpickersettings value="#123456"></e-ribbon-colorpickersettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type="Button" allowedSizes=Small>
+                                        <e-ribbon-buttonsettings iconCss="e-icons e-bold" isToggle=true></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type="Button" allowedSizes=Small>
+                                        <e-ribbon-buttonsettings iconCss="e-icons e-italic" isToggle=true></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type="Button" allowedSizes=Small>
+                                        <e-ribbon-buttonsettings iconCss="e-icons e-underline" isToggle=true></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type="Button" allowedSizes=Small>
+                                        <e-ribbon-buttonsettings iconCss="e-icons e-strikethrough" isToggle=true></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type="Button" allowedSizes=Small>
+                                        <e-ribbon-buttonsettings iconCss="e-icons e-change-case" isToggle=true></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                    <e-ribbon-group header="Reuse Files" isCollapsible=false groupIconCss="sf-icon-reuse">
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type="Button" allowedSizes=Large>
+                                        <e-ribbon-buttonsettings iconCss="sf-icon-reuse" content="Reuse Files"></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                </e-ribbon-groups>
+            </e-ribbon-tab>
+            <e-ribbon-tab header="Insert">
+                <e-ribbon-groups>
+                    <e-ribbon-group header="Tables" isCollapsible="false">
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type="DropDown" allowedSizes=Large>
+                                        <e-ribbon-dropdownsettings iconCss="e-icons e-table" content="Table" items="tableOptions"></e-ribbon-dropdownsettings>
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                    <e-ribbon-group header="Illustrations" orientation=Row enableGroupOverflow=true groupIconCss="e-icons e-image">
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type=Button>
+                                        <e-ribbon-buttonsettings iconCss="sf-icon-3d-model" content="3D Models"></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type=Button>
+                                        <e-ribbon-buttonsettings iconCss="sf-icon-smart-art" content="SmartArt"></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type=Button>
+                                        <e-ribbon-buttonsettings iconCss="sf-icon-chart" content="Chart"></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                    <e-ribbon-group header="Media" isCollapsible=false>
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type=Template itemTemplate='<span class="ribbonTemplate ${activeSize}"><span class="e-icons e-video"></span><span class="text">Video</span></span>'>
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                </e-ribbon-groups>
+            </e-ribbon-tab>
+            <e-ribbon-tab header="View">
+                <e-ribbon-groups>
+                    <e-ribbon-group header="Views" orientation=Row groupIconCss="e-icons e-print">
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type=Button>
+                                        <e-ribbon-buttonsettings iconCss="sf-icon-read" content="Read Mode"></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type=Button>
+                                        <e-ribbon-buttonsettings iconCss="e-print e-icons" content="Print Layout"></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type=Button>
+                                        <e-ribbon-buttonsettings iconCss="sf-icon-web-layout" content="Web Layout"></e-ribbon-buttonsettings>
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                    <e-ribbon-group header="show" isCollapsible=false>
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type=CheckBox>
+                                        <e-ribbon-checkboxsettings checked=false label="Ruler"></e-ribbon-checkboxsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type=CheckBox>
+                                        <e-ribbon-checkboxsettings checked=false label="Gridlines"></e-ribbon-checkboxsettings>
+                                    </e-ribbon-item>
+                                    <e-ribbon-item type=CheckBox>
+                                        <e-ribbon-checkboxsettings checked=true label="Navigation Pane"></e-ribbon-checkboxsettings>
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                </e-ribbon-groups>
+            </e-ribbon-tab>
+        </e-ribbon-tabs>
+    </ejs-ribbon>
     <div id="ribbonPlaceHolder"></div>
 </div>
 
@@ -218,24 +216,17 @@
     #ribbonContainer {
         padding: 20px;
         border-radius: 3px;
-        background-color: #f3f2f1;
+        background-color: #dbdadacc;
         display: flex;
         flex-direction: column;
         height: 500px;
-    }
-
-    #ribbon {
-        height: auto;
-        border-radius: 2px;
-        border: 1px solid #c9c9c9;
-        box-sizing: border-box;
     }
 
     #ribbonPlaceHolder {
         flex-grow: 1;
         background-color: #c9c8c7;
         box-sizing: border-box;
-        border-top: 8px solid #f3f2f1
+        margin-top: 8px;
     }
 
     .font-group .e-ribbon-group-content {

@@ -19,169 +19,167 @@
 }
 
 <div id="ribbonContainer">
-    <div id="ribbon">
-        @Html.EJS().Ribbon("ribbon").FileMenu( file =>
+    @Html.EJS().Ribbon("ribbon").FileMenu( file =>
+    {
+        file.Text("File").Visible(true).MenuItems(fileOptions);
+    }).Tabs(tab => {
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Clipboard").ShowLauncherIcon(true).GroupIconCss("e-icons e-paste").Collections(collection =>
         {
-           file.Text("File").Visible(true).MenuItems(fileOptions);
-        }).Tabs(tab => {
-        tab.Header("Home").Groups(group =>
-        {
-            group.Header("Clipboard").ShowLauncherIcon(true).GroupIconCss("e-icons e-paste").Collections(collection =>
+            collection.Items(items =>
             {
-                collection.Items(items =>
+                items.Type(RibbonItemType.SplitButton).SplitButtonSettings(splitbutton =>
                 {
-                    items.Type(RibbonItemType.SplitButton).SplitButtonSettings(splitbutton =>
-                    {
-                        splitbutton.IconCss("e-icons e-paste").Items(pasteOptions).Content("Paste");
-                    }).Add();
-                }).Add();
-                collection.Items(items =>
-                {
-                    items.Type(RibbonItemType.Button).ButtonSettings(button =>
-                    {
-                        button.IconCss("e-icons e-cut").Content("Cut");
-                    }).Add();
-                    items.Type(RibbonItemType.Button).ButtonSettings(button =>
-                    {
-                        button.IconCss("e-icons e-copy").Content("Copy");
-                    }).Add();
-                    items.Type(RibbonItemType.Button).ButtonSettings(button =>
-                    {
-                        button.IconCss("e-icons e-format-painter").Content("Format Painter");
-                    }).Add();
+                    splitbutton.IconCss("e-icons e-paste").Items(pasteOptions).Content("Paste");
                 }).Add();
             }).Add();
-            group.Header("Font").EnableGroupOverflow(true).Orientation(ItemOrientation.Row).GroupIconCss("e-icons e-bold").CssClass("font-group").Collections(collections =>
+            collection.Items(items =>
             {
-                collections.Items(items =>
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
                 {
-                    items.Type(RibbonItemType.ComboBox).ComboBoxSettings(comboBox =>
-                    {
-                        comboBox.DataSource(fontStyle).Index(3).AllowFiltering(true).Width("150px");
-                    }).Add();
-                    items.Type(RibbonItemType.ComboBox).ComboBoxSettings(comboBox =>
-                    {
-                        comboBox.DataSource(fontSize).Index(3).Width("65px");
-                    }).Add();
+                    button.IconCss("e-icons e-cut").Content("Cut");
                 }).Add();
-                collections.Items(items =>
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
                 {
-                    items.Type(RibbonItemType.ColorPicker).AllowedSizes(RibbonItemSize.Small).DisplayOptions(Syncfusion.EJ2.Ribbon.DisplayMode.Simplified).ColorPickerSettings(colorPicker =>
-                    {
-                        colorPicker.Value("#123456");
-                    }).Add();
-                    items.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Small).ButtonSettings(button =>
-                    {
-                        button.IconCss("e-icons e-bold").IsToggle(true);
-                    }).Add();
-                    items.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Small).ButtonSettings(button =>
-                    {
-                        button.IconCss("e-icons e-italic").IsToggle(true);
-                    }).Add();
-                    items.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Small).ButtonSettings(button =>
-                    {
-                        button.IconCss("e-icons e-underline").IsToggle(true);
-                    }).Add();
-                    items.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Small).ButtonSettings(button =>
-                    {
-                        button.IconCss("e-icons e-strikethrough").IsToggle(true);
-                    }).Add();
-                    items.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Small).ButtonSettings(button =>
-                    {
-                        button.IconCss("e-icons e-change-case").IsToggle(true);
-                    }).Add();
+                    button.IconCss("e-icons e-copy").Content("Copy");
                 }).Add();
-            }).Add();
-            group.Header("Reuse Files").GroupIconCss("sf-icon-reuse").Collections(collections =>
-            {
-                collections.Items(items =>
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
                 {
-                    items.Type(RibbonItemType.Button).ButtonSettings(button =>
-                    {
-                        button.Content("Reuse Files").IconCss("sf-icon-reuse");
-                    }).Add();
+                    button.IconCss("e-icons e-format-painter").Content("Format Painter");
                 }).Add();
             }).Add();
         }).Add();
-        tab.Header("Insert").Groups(groups =>
+        group.Header("Font").EnableGroupOverflow(true).Orientation(ItemOrientation.Row).GroupIconCss("e-icons e-bold").CssClass("font-group").Collections(collections =>
         {
-            groups.Header("Tables").Collections(collections =>
+            collections.Items(items =>
             {
-                collections.Id("defaultcollection9").Items(items =>
+                items.Type(RibbonItemType.ComboBox).ComboBoxSettings(comboBox =>
                 {
-                    items.Id("defaultitem18").Type(RibbonItemType.DropDown).DropDownSettings(dropDown =>
-                    {
-                        dropDown.IconCss("e-icons e-table").Content("Table").Items(tableOptions);
-                    }).Add();
+                    comboBox.DataSource(fontStyle).Index(3).AllowFiltering(true).Width("150px");
+                }).Add();
+                items.Type(RibbonItemType.ComboBox).ComboBoxSettings(comboBox =>
+                {
+                    comboBox.DataSource(fontSize).Index(3).Width("65px");
                 }).Add();
             }).Add();
-            groups.Header("Illustrations").EnableGroupOverflow(true).Orientation(ItemOrientation.Row).GroupIconCss("e-icons e-image").Collections(collections =>
+            collections.Items(items =>
             {
-                collections.Items(items =>
+                items.Type(RibbonItemType.ColorPicker).AllowedSizes(RibbonItemSize.Small).DisplayOptions(Syncfusion.EJ2.Ribbon.DisplayMode.Simplified).ColorPickerSettings(colorPicker =>
                 {
-                    items.Id("defaultitem21").Type(RibbonItemType.Button).ButtonSettings(button =>
-                    {
-                        button.IconCss("sf-icon-3d-model").Content("3D Models");
-                    }).Add();
-                    items.Id("defaultitem22").Type(RibbonItemType.Button).ButtonSettings(button =>
-                    {
-                        button.IconCss("sf-icon-smart-art").Content("SmartArt");
-                    }).Add();
-                    items.Id("defaultitem23").Type(RibbonItemType.Button).ButtonSettings(button =>
-                    {
-                        button.IconCss("sf-icon-chart").Content("Chart");
-                    }).Add();
+                    colorPicker.Value("#123456");
                 }).Add();
-            }).Add();
-            groups.Header("Media").Collections(collections =>
-            {
-                collections.Items(items =>
+                items.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Small).ButtonSettings(button =>
                 {
-                    items.Type(RibbonItemType.Template).ItemTemplate("<span class='ribbonTemplate ${activeSize}'><span class='e-icons e-video'></span><span class='text'>Video</span></span>").Add();
+                    button.IconCss("e-icons e-bold").IsToggle(true);
+                }).Add();
+                items.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Small).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-italic").IsToggle(true);
+                }).Add();
+                items.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Small).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-underline").IsToggle(true);
+                }).Add();
+                items.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Small).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-strikethrough").IsToggle(true);
+                }).Add();
+                items.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Small).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-change-case").IsToggle(true);
                 }).Add();
             }).Add();
         }).Add();
-        tab.Header("View").Groups(groups =>
+        group.Header("Reuse Files").GroupIconCss("sf-icon-reuse").Collections(collections =>
         {
-            groups.Header("Views").GroupIconCss("e-icons e-print").Orientation(ItemOrientation.Row).Collections(collections =>
+            collections.Items(items =>
             {
-                collections.Items(items =>
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
                 {
-                    items.Type(RibbonItemType.Button).ButtonSettings(button =>
-                    {
-                        button.IconCss("sf-icon-read").Content("Read Mode");
-                    }).Add();
-                    items.Type(RibbonItemType.Button).ButtonSettings(button =>
-                    {
-                        button.IconCss("e-print e-icons").Content("Print Layout");
-                    }).Add();
-                    items.Type(RibbonItemType.Button).ButtonSettings(button =>
-                    {
-                        button.IconCss("sf-icon-web-layout").Content("Web Layout");
-                    }).Add();
-                }).Add();
-            }).Add();
-            groups.Header("Show").Collections(collections =>
-            {
-                collections.Items(items =>
-                {
-                    items.Type(RibbonItemType.CheckBox).CheckBoxSettings(checkBox =>
-                    {
-                        checkBox.Label("Ruler").Checked(false);
-                    }).Add();
-                    items.Type(RibbonItemType.CheckBox).CheckBoxSettings(checkBox =>
-                    {
-                        checkBox.Label("Gridlines").Checked(false);
-                    }).Add();
-                    items.Type(RibbonItemType.CheckBox).CheckBoxSettings(checkBox =>
-                    {
-                        checkBox.Label("Navigation Pane").Checked(true);
-                    }).Add();
+                    button.Content("Reuse Files").IconCss("sf-icon-reuse");
                 }).Add();
             }).Add();
         }).Add();
-    }).Render()
-    </div>
+    }).Add();
+    tab.Header("Insert").Groups(groups =>
+    {
+        groups.Header("Tables").Collections(collections =>
+        {
+            collections.Id("defaultcollection9").Items(items =>
+            {
+                items.Id("defaultitem18").Type(RibbonItemType.DropDown).DropDownSettings(dropDown =>
+                {
+                    dropDown.IconCss("e-icons e-table").Content("Table").Items(tableOptions);
+                }).Add();
+            }).Add();
+        }).Add();
+        groups.Header("Illustrations").EnableGroupOverflow(true).Orientation(ItemOrientation.Row).GroupIconCss("e-icons e-image").Collections(collections =>
+        {
+            collections.Items(items =>
+            {
+                items.Id("defaultitem21").Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("sf-icon-3d-model").Content("3D Models");
+                }).Add();
+                items.Id("defaultitem22").Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("sf-icon-smart-art").Content("SmartArt");
+                }).Add();
+                items.Id("defaultitem23").Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("sf-icon-chart").Content("Chart");
+                }).Add();
+            }).Add();
+        }).Add();
+        groups.Header("Media").Collections(collections =>
+        {
+            collections.Items(items =>
+            {
+                items.Type(RibbonItemType.Template).ItemTemplate("<span class='ribbonTemplate ${activeSize}'><span class='e-icons e-video'></span><span class='text'>Video</span></span>").Add();
+            }).Add();
+        }).Add();
+    }).Add();
+    tab.Header("View").Groups(groups =>
+    {
+        groups.Header("Views").GroupIconCss("e-icons e-print").Orientation(ItemOrientation.Row).Collections(collections =>
+        {
+            collections.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("sf-icon-read").Content("Read Mode");
+                }).Add();
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-print e-icons").Content("Print Layout");
+                }).Add();
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("sf-icon-web-layout").Content("Web Layout");
+                }).Add();
+            }).Add();
+        }).Add();
+        groups.Header("Show").Collections(collections =>
+        {
+            collections.Items(items =>
+            {
+                items.Type(RibbonItemType.CheckBox).CheckBoxSettings(checkBox =>
+                {
+                    checkBox.Label("Ruler").Checked(false);
+                }).Add();
+                items.Type(RibbonItemType.CheckBox).CheckBoxSettings(checkBox =>
+                {
+                    checkBox.Label("Gridlines").Checked(false);
+                }).Add();
+                items.Type(RibbonItemType.CheckBox).CheckBoxSettings(checkBox =>
+                {
+                    checkBox.Label("Navigation Pane").Checked(true);
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
     <div id="ribbonPlaceHolder"></div>
 </div>
 
@@ -218,24 +216,17 @@
     #ribbonContainer {
         padding: 20px;
         border-radius: 3px;
-        background-color: #f3f2f1;
+        background-color: #dbdadacc;
         display: flex;
         flex-direction: column;
         height: 500px;
-    }
-
-    #ribbon {
-        height: auto;
-        border-radius: 2px;
-        border: 1px solid #c9c9c9;
-        box-sizing: border-box;
     }
 
     #ribbonPlaceHolder {
         flex-grow: 1;
         background-color: #c9c8c7;
         box-sizing: border-box;
-        border-top: 8px solid #f3f2f1
+        margin-top: 8px;
     }
 
     .font-group .e-ribbon-group-content {
