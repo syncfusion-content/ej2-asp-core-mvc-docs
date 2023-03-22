@@ -12,16 +12,18 @@
     List<MenuItem> fileOptions = new List<MenuItem>()
     {
         new MenuItem { Text = "New", IconCss = "e-icons e-file-new", Id="new" },
-        new MenuItem { Text = "Open", IconCss = "e-icons e-folder-open", Id="Open" },
+        new MenuItem { Text = "Open", IconCss = "e-icons e-folder-open", Id="open" },
         new MenuItem { Text = "Rename", IconCss = "e-icons e-rename", Id="rename" },
         new MenuItem { Text = "Save as", IconCss = "e-icons e-save", Id="save" }
     };
-    FileMenuSettings FileMenuSettings = new FileMenuSettings() { Text = "File", Visible = true, MenuItems = fileOptions };
 }
 
 <div id="ribbonContainer">
     <div id="ribbon">
-        @Html.EJS().Ribbon("ribbon").FileMenu(FileMenuSettings).Tabs(tab => {
+        @Html.EJS().Ribbon("ribbon").FileMenu( file =>
+        {
+           file.Text("File").Visible(true).MenuItems(fileOptions);
+        }).Tabs(tab => {
         tab.Header("Home").Groups(group =>
         {
             group.Header("Clipboard").ShowLauncherIcon(true).GroupIconCss("e-icons e-paste").Collections(collection =>
@@ -55,7 +57,7 @@
                 {
                     items.Type(RibbonItemType.ComboBox).ComboBoxSettings(comboBox =>
                     {
-                        comboBox.DataSource(fontStyle).Index(3).AllowFiltering(true).Width("150px").Filtering("onfiltering");
+                        comboBox.DataSource(fontStyle).Index(3).AllowFiltering(true).Width("150px");
                     }).Add();
                     items.Type(RibbonItemType.ComboBox).ComboBoxSettings(comboBox =>
                     {
@@ -182,14 +184,6 @@
     </div>
     <div id="ribbonPlaceHolder"></div>
 </div>
-
-<script>
-    function onfiltering(e) {
-         var query = new ej.data.Query();
-        query = (e.text !== '') ? query.where('Text', 'contains', e.text, true) : query;
-        e.updateData(fontStyle, query);
-    }
-</script>
 
 <style>
     .ribbonTemplate {

@@ -11,7 +11,7 @@
 
     List<MenuItem> fileOptions = new List<MenuItem>() {
         new MenuItem { Text = "New", IconCss = "e-icons e-file-new", Id="new" },
-        new MenuItem { Text = "Open", IconCss = "e-icons e-folder-open", Id="Open" },
+        new MenuItem { Text = "Open", IconCss = "e-icons e-folder-open", Id="open" },
         new MenuItem { Text = "Rename", IconCss = "e-icons e-rename", Id="rename" },
         new MenuItem { Text = "Save", IconCss = "e-icons e-save", Id="save" }
     };
@@ -54,7 +54,7 @@
                                 <e-ribbon-collection>
                                     <e-ribbon-items>
                                         <e-ribbon-item type="ComboBox">
-                                            <e-ribbon-comboboxsettings dataSource=fontStyle index=3 allowFiltering=true width="150px" filtering="onfiltering"></e-ribbon-comboboxsettings>
+                                            <e-ribbon-comboboxsettings dataSource=fontStyle index=3 allowFiltering=true width="150px"></e-ribbon-comboboxsettings>
                                         </e-ribbon-item>
                                         <e-ribbon-item type="ComboBox">
                                             <e-ribbon-comboboxsettings dataSource=fontSize index=3 width="65px"></e-ribbon-comboboxsettings>
@@ -183,14 +183,6 @@
     </div>
     <div id="ribbonPlaceHolder"></div>
 </div>
-
-<script>
-    function onfiltering(e) {
-        var query = new ej.data.Query();
-        query = (e.text !== '') ? query.where('Text', 'contains', e.text, true) : query;
-        e.updateData(fontStyle, query);
-    }
-</script>
 
 <style>
 
