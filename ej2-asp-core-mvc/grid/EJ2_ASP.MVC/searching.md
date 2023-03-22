@@ -239,3 +239,5 @@ N> * Search operation can be performed in foreign key column based on following 
 ## See Also
 
 * [Add clear icon in search in ASP.NET MVC  Grid](https://www.syncfusion.com/forums/139361/add-clear-icon-in-search-in-asp-net-mvc-grid)
+
+* [How to perform search by using Wildcard and LIKE operator filter](./filtering/filtering/#wildcard-and-like-operator-filter)

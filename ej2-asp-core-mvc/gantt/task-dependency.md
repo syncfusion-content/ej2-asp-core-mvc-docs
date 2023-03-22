@@ -13,6 +13,10 @@ documentation: ug
 
 Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
 
+In Gantt, you can enable or disable the parent predecessor using [`AllowParentDependency`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowParentDependency.html) property.
+
+By default, the `AllowParentDependency` property will be `true`.
+
 ## Task relationship types
 
 Task relationships are categorized into four types based on the start and finish dates of the task.
