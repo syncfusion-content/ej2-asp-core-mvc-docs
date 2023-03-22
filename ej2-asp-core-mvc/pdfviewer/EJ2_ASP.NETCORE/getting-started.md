@@ -360,7 +360,7 @@ namespace PDFViewerSample.Pages
         public string uniqueId { get; set; }
         public string data { get; set; }
         public string viewPortWidth { get; set; }
-        public string viewportHeight { get; set; }
+        public string viewPortHeight { get; set; }
         public string tilecount { get; set; }
         public bool isCompletePageSizeNotReceived { get; set; }
         public string freeTextAnnotation { get; set; }
@@ -377,10 +377,11 @@ namespace PDFViewerSample.Pages
         public string annotationCollection { get; set; }
         public string annotationsPageList { get; set; }
         public string formFieldsPageList { get; set; }
-        public string isAnnotationsExist { get; set; }
-        public string isFormFieldAnnotationsExist { get; set; }
+        public bool isAnnotationsExist { get; set; }
+        public bool isFormFieldAnnotationsExist { get; set; }
         public string documentLiveCount { get; set; }
         public string annotationDataFormat { get; set; }
+	public string importedData { get; set; }
     }
 }
 {% endhighlight %}
