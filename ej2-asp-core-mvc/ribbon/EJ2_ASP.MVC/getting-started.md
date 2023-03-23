@@ -100,7 +100,7 @@ Now, add the Syncfusion ASP.NET MVC Ribbon control in `~/Home/Index.cshtml` page
 {% endhighlight %}
 {% endtabs %}
 
-## Defining Tab
+## Adding Ribbon Tab
 
 In Ribbon, the options are arranged in tabs for easy access. You can use the `Tabs` property of ribbon to define the ribbon tab like below.
 
@@ -115,9 +115,9 @@ In Ribbon, the options are arranged in tabs for easy access. You can use the `Ta
 {% endhighlight %}
 {% endtabs %}
 
-## Defining Group
+## Adding Ribbon Group
 
-To define a ribbon group under each tab, you can use the `Groups` property of ribbon tab like below.
+To define a ribbon group under each tab, you can use the `Groups` property of ribbon tab like below. The `orientation` property of ribbon group defines whether the collection of items will rendered in column-wise or row-wise.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -133,30 +133,9 @@ To define a ribbon group under each tab, you can use the `Groups` property of ri
 {% endhighlight %}
 {% endtabs %}
 
-## Defining Collection
+## Adding Ribbon Items
 
-Inside each group, options are present in rows or columns as collections of items. You can use the `Collections` property of ribbon group to define each ribbon collection like below.
-
-{% tabs %}
-{% highlight c# tabtitle="Index.cshtml" %}
-
-@Html.EJS().Ribbon("ribbon").Tabs(tab =>
-{
-    tab.Header("Home").Groups(groups =>
-    {
-        groups.Header("Clipboard").Orientation(ItemOrientation.Row).Collections(collection =>
-        {
-            collection.Id("ribbon-collection").Add();
-        }).Add();
-    }).Add();
-}).Render()
-
-{% endhighlight %}
-{% endtabs %}
-
-## Defining Item
-
-Ribbon support several built-in items like buttons, drop-down buttons, combo boxes, and more. You can use the `Items` property of ribbon collection to define each ribbon item like below.
+Inside each group, options are present in rows or columns as collections of items. You can use the `Collections` property of ribbon group to define each ribbon collection. Each collection can have single or multiple items. Ribbon support several built-in items like buttons, drop-down buttons, combo boxes, and more. The `type` property of ribbon item defines the control with which the item will be rendered. You can use the `Items` property of ribbon collection to define each ribbon item like below.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -190,22 +169,12 @@ Ribbon support several built-in items like buttons, drop-down buttons, combo box
 
 The following example illustrates how tabs, groups, collections, and items are used in a ribbon control to form the ribbon layout.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/default/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ribbon/getting-started/default/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Ribbon control will be rendered in the default web browser.
 

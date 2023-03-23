@@ -138,7 +138,7 @@ To define a ribbon group under each tab, you can use the `e-ribbon-group` tag he
 
 ## Adding Ribbon Items
 
-Inside each group, options are present in rows or columns as collections of items. You can use the `e-ribbon-collection` tag helper to define each ribbon collection. Each collection can have single or multiple items. Ribbon support several built-in items types like buttons, drop-down buttons, combo boxes, and more. The `type` property of ribbon item defines the control with which the item will be rendered. You can use the `e-ribbon-item` tag helper to define each ribbon item in ribbon collection like below.
+Inside each group, options are present in rows or columns as collections of items. You can use the `e-ribbon-collection` tag helper to define each ribbon collection. Each collection can have single or multiple items. Ribbon support several built-in items like buttons, drop-down buttons, combo boxes, and more. The `type` property of ribbon item defines the control with which the item will be rendered. You can use the `e-ribbon-item` tag helper to define each ribbon item in ribbon collection like below.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
