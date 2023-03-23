@@ -100,7 +100,7 @@ Now, add the Syncfusion ASP.NET Core Ribbon tag helper in `~/Pages/Index.cshtml`
 {% endhighlight %}
 {% endtabs %}
 
-## Defining Tab
+## Adding Ribbon Tab
 
 In Ribbon, the options are arranged in tabs for easy access. You can use the `e-ribbon-tab` tag helper to define the ribbon tab like below.
 
@@ -116,9 +116,9 @@ In Ribbon, the options are arranged in tabs for easy access. You can use the `e-
 {% endhighlight %}
 {% endtabs %}
 
-## Defining Group
+## Adding Ribbon Group
 
-To define a ribbon group under each tab, you can use the `e-ribbon-group` tag helper like below.
+To define a ribbon group under each tab, you can use the `e-ribbon-group` tag helper like below. The `orientation` property of ribbon group defines whether the collection of items will rendered in column-wise or row-wise.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -136,33 +136,9 @@ To define a ribbon group under each tab, you can use the `e-ribbon-group` tag he
 {% endhighlight %}
 {% endtabs %}
 
-## Defining Collection
+## Adding Ribbon Items
 
-Inside each group, options are present in rows or columns as collections of items. You can use the `e-ribbon-collection` tag helper to define each ribbon collection like below.
-
-{% tabs %}
-{% highlight c# tabtitle="Index.cshtml" %}
-
-<ejs-ribbon id="ribbon">
-    <e-ribbon-tabs>
-        <e-ribbon-tab header="Home">
-            <e-ribbon-groups>
-                <e-ribbon-group header="Clipboard" orientation=Row>
-                    <e-ribbon-collections>
-                        <e-ribbon-collection id="ribbon-collection"></e-ribbon-collection>
-                    </e-ribbon-collections>
-                </e-ribbon-group>
-            </e-ribbon-groups>
-        </e-ribbon-tab>
-    </e-ribbon-tabs>
-</ejs-ribbon>
-
-{% endhighlight %}
-{% endtabs %}
-
-## Defining Item
-
-Ribbon support several built-in items like buttons, drop-down buttons, combo boxes, and more. You can use the `e-ribbon-item` tag helper to define each ribbon item like below.
+Inside each group, options are present in rows or columns as collections of items. You can use the `e-ribbon-collection` tag helper to define each ribbon collection. Each collection can have single or multiple items. Ribbon support several built-in items types like buttons, drop-down buttons, combo boxes, and more. The `type` property of ribbon item defines the control with which the item will be rendered. You can use the `e-ribbon-item` tag helper to define each ribbon item in ribbon collection like below.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -199,22 +175,11 @@ Ribbon support several built-in items like buttons, drop-down buttons, combo box
 
 The following example illustrates how tabs, groups, collections, and items are used in a ribbon control to form the ribbon layout.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/ribbon/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/ribbon/getting-started/default/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Ribbon control will be rendered in the default web browser.
 
