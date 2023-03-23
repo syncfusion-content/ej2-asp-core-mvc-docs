@@ -117,7 +117,7 @@ In Ribbon, the options are arranged in tabs for easy access. You can use the `Ta
 
 ## Adding Ribbon Group
 
-To define a ribbon group under each tab, you can use the `Groups` property of ribbon tab like below. The `orientation` property of ribbon group defines whether the collection of items will rendered in column-wise or row-wise.
+To define a ribbon group under each tab, you can use the `Groups` property of ribbon tab like below. The `orientation` property of ribbon group defines whether the collection of items will be rendered column-wise or row-wise.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -135,7 +135,7 @@ To define a ribbon group under each tab, you can use the `Groups` property of ri
 
 ## Adding Ribbon Items
 
-Inside each group, options are present in rows or columns as collections of items. You can use the `Collections` property of ribbon group to define each ribbon collection. Each collection can have single or multiple items. Ribbon support several built-in items like buttons, drop-down buttons, combo boxes, and more. The `type` property of ribbon item defines the control with which the item will be rendered. You can use the `Items` property of ribbon collection to define each ribbon item like below.
+You can use the `Collections` property of ribbon  to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `Items` property of ribbon collection and the `type` property of ribbon item to specify the type of control to be rendered, like a button, a drop-down button, a combo box, and more.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
