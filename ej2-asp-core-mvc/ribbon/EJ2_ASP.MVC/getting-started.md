@@ -95,14 +95,14 @@ Now, add the Syncfusion ASP.NET MVC Ribbon control in `~/Home/Index.cshtml` page
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
 
-@Html.EJS().Ribbon("ribbon").Render()@Html.EJS().Ribbon("ribbon").Render()
+@Html.EJS().Ribbon("ribbon").Render()
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Defining Tab
 
-In Ribbon, the options are arranged in tabs for easy access. You can use the `e-ribbon-tab` tag helper to define the ribbon tab like below.
+In Ribbon, the options are arranged in tabs for easy access. You can use the `Tabs` property of ribbon to define the ribbon tab like below.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -117,7 +117,7 @@ In Ribbon, the options are arranged in tabs for easy access. You can use the `e-
 
 ## Defining Group
 
-Related options are grouped under each tab with ribbon groups. You can use the `e-ribbon-group` tag helper to define each ribbon group like below.
+Related options are grouped under each tab with ribbon groups. You can use the `Groups` property of ribbon tab to define each ribbon group like below.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -135,7 +135,7 @@ Related options are grouped under each tab with ribbon groups. You can use the `
 
 ## Defining Collection
 
-Inside each group, options are present in rows or columns as collections of items You can use the `e-ribbon-collection` tag helper to define each ribbon collection like below.
+Inside each group, options are present in rows or columns as collections of items You can use the `Collections` property of ribbon group to define each ribbon collection like below.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -156,7 +156,7 @@ Inside each group, options are present in rows or columns as collections of item
 
 ## Defining Item
 
-Ribbon support different built-in item types like buttons, drop-down buttons, combo boxes, etc., You can use the `e-ribbon-item` tag helper to define each ribbon item like below.
+Ribbon support different built-in item types like buttons, drop-down buttons, combo boxes, etc., You can use the `Items` property of ribbon collection to define each ribbon item like below.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
