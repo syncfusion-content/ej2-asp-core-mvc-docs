@@ -135,7 +135,7 @@ To define a ribbon group under each tab, you can use the `Groups` property of ri
 
 ## Adding Ribbon Items
 
-You can use the `Collections` property of ribbon  to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `Items` property of ribbon collection and the `type` property of ribbon item to specify the type of control to be rendered, like a button, a drop-down button, a combo box, and more.
+You can use the `Collections` property of ribbon group to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `Items` property of ribbon collection and the `type` property of ribbon item to specify the type of control to be rendered, like a button, a drop-down button, a combo box, and more.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -153,11 +153,22 @@ You can use the `Collections` property of ribbon  to define each ribbon collecti
     {
         groups.Header("Clipboard").Orientation(ItemOrientation.Row).Collections(collection =>
         {
-            collection.Id("ribbon-collection").Items(items =>
+            collection.Id("paste-collection").Items(items =>
             {
                 items.Type(RibbonItemType.SplitButton).SplitButtonSettings(splitbutton =>
                 {
                     splitbutton.IconCss("e-icons e-paste").Items(pasteOptions).Content("Paste");
+                }).Add();
+            }).Add();
+            collection.Id("cutcopy-collection").Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-cut").Content("Cut");
+                }).Add();
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-copy").Content("Copy");
                 }).Add();
             }).Add();
         }).Add();

@@ -156,10 +156,20 @@ You can use the `e-ribbon-collection` tag helper to define each ribbon collectio
             <e-ribbon-groups>
                 <e-ribbon-group header="Clipboard" orientation=Row>
                     <e-ribbon-collections>
-                        <e-ribbon-collection id="ribbon-collection">
+                        <e-ribbon-collection id="paste-collection">
                             <e-ribbon-items>
                                 <e-ribbon-item type=SplitButton>
                                     <e-ribbon-splitbuttonsettings iconCss="e-icons e-paste" content="Paste" items=pasteOptions></e-ribbon-splitbuttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                        <e-ribbon-collection id="cutcopy-collection">
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
                         </e-ribbon-collection>
