@@ -1,0 +1,9 @@
+     <ejs-accumulationchart id="container">
+            <e-accumulation-series-collection>
+                <e-accumulation-series dataSource="ViewBag.dataSource" xName="x" yName="y" innerRadius="65%">
+                </e-accumulation-series>
+            </e-accumulation-series-collection>
+            <e-accumulationchart-centerlabel text="Mobile<br>Browsers<br>Statistics" hoverTextFormat="${point.x} <br> Browser Share <br> ${point.y}%">
+            </e-accumulationchart-centerlabel>
+        </ejs-accumulationchart>
+ 
