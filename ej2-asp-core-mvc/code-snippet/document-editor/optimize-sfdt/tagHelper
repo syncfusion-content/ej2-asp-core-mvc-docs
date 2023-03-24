@@ -1,0 +1,14 @@
+
+<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated" height="590px"></ejs-documenteditorcontainer>
+
+<script>
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        container.documentEditorSetting = {
+            optimizeSfdt: false
+        };
+    }
+</script>
+
