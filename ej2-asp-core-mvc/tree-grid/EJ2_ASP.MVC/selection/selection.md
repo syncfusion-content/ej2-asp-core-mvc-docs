@@ -76,6 +76,33 @@ The treegrid supports three types of selection mode that can be set by using the
 {% endtabs %}
 {% endif %}
 
+## Select Tree Grid rows based on certain condition
 
+You can select the specific row in the Tree Grid based on a certain condition by using the **selectRows** method in the [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataBound) event of Tree Grid.
+
+In the example below, only the Tree Grid rows with **Duration** column value greater than **4** are selected.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/selection/databasedselection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Databasedselection.cs" %}
+{% include code-snippet/tree-grid/selection/databasedselection/databasedselection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/selection/databasedselection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Databasedselection.cs" %}
+{% include code-snippet/tree-grid/selection/databasedselection/databasedselection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
