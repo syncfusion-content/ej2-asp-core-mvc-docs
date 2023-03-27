@@ -61,6 +61,16 @@ You can get bookmarks in current selection in the document using [`getBookmarks`
 container.documentEditor.selection.getBookmarks(false);
 ```
 
+## Show or Hide bookmark
+
+You can show or hide the show square brackets around bookmarked items in Document editor component.
+
+The following example code illustrates how to show or hide square brackets around bookmarked items.
+
+```csharp
+container.documentEditorSettings.showBookMarks = true;
+```
+
 ## Bookmark Dialog
 
 The following example shows how to open bookmark dialog in Document Editor.
