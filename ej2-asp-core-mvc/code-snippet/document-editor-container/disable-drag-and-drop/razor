@@ -1,0 +1,10 @@
+
+@Html.EJS().DocumentEditorContainer("container").Height('590px').EnableToolbar(true).Render()
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        documenteditor.documentEditorSettings.allowDragAndDrop = false
+    });
+</script>
