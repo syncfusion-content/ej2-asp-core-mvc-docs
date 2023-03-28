@@ -117,6 +117,33 @@ The following screen shot depicts the duration unit support in the predecessor o
 
 ![Alt text](images/predecessorWithOffset.png)
 
+## Disabling automatic dependency offset updates
+
+By default, the dependency offsets are automatically updated in the Gantt chart whenever a task's start or end date is changed. However, if you want to disable this feature, you can do so by disabling the [`updateOffsetOnTaskbarEdit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UpdateOffsetOnTaskbarEdit) property. Once this property is disabled, you can only update the offset value by editing the predecessor column cell or the offset column in the dependency tab of the edit dialog.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/predecessor/predecessorWithOffset-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="PredecessorWithOffset.cs" %}
+{% include code-snippet/gantt/predecessor/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/predecessor/predecessorWithOffset-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="PredecessorWithOffset.cs" %}
+{% include code-snippet/gantt/predecessor/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Validate predecessor links on editing
 
 In Gantt, task relationship link can be broken by editing the start date, end date and duration value of task. When the task relationship broken on any edit action. This can be handled in Gantt in two ways.
