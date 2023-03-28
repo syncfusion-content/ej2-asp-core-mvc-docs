@@ -440,6 +440,31 @@ We can also define segment details as a flat data and this collection can be map
 
 N> Segment id field contains id of a task which should be split at load time.
 
+The [`autoCalculateDateScheduling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AutoCalculateDateScheduling) property can help you reduce the time taken for the Gantt chart to render on the initial load. When this API is enabled, parent-child validation, data validation, and predecessor validation are restricted, allowing the Gantt chart to load more quickly. Since we are disabling the validations, data source provided to gantt should have all data such as start date, end date, duration, as proper data.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Virtual-scroll.cs" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/virtual-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Virtual-scroll.cs" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/virtual-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Limitations
 
 Gantt has the support for both Hierarchical and Self-Referential data binding. When rendering the Gantt control with SQL database, we suggest you use the Self-Referential data binding to maintain the parent-child relation. Because the complex json structure is very difficult to manage in SQL tables, we need to write complex queries, and we have to write a complex algorithm to find out the proper record details while updating/deleting the inner level task in the Gantt data source. We cannot implement both data binding for Gantt control, and this is not a recommended way. If both child and parentID are mapped, the records will not render properly because when the task id of a record defined in the hierarchy structure is assigned to the parent id of another record, in such case, the records will not properly render. As the self-referential will search the record with a particular id in flat data only, not in the inner level of records. If we map the parentID field, it will be prioritized and Gantt will be rendered based on the parentID values.
