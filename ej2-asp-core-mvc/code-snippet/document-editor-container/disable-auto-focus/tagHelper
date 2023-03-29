@@ -1,0 +1,1 @@
+<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true enableAutoFocus=false height="590px"></ejs-documenteditorcontainer>

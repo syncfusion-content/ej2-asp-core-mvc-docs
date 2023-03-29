@@ -13,6 +13,8 @@ You can customize the drag and drop option (enable and disable) using [`allowDra
 
 The following example illustrates to customize the drag and drop option.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/disable-drag-and-drop/tagHelper %}
@@ -36,7 +38,7 @@ The following example illustrates to customize the drag and drop option.
 
 ## Enable Drag And Drop option in documenteditor
 
-To enable drag and drop option in DocumentEditor, set [`allowDragAndDrop`](https://ej2.syncfusion.com/react/documentation/api/document-editor-container/documenteditorsettings/#allowDragAndDrop) property as `true` . 
+To enable drag and drop option in DocumentEditor, set [`allowDragAndDrop`] property as `true` . 
 
 ```csharp
 container.documentEditorSettings.allowDragAndDrop = true ;
