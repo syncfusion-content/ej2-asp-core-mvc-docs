@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Readonly(true)
+    .EventSettings(e =>
+        e.DataSource(d =>
+            d.Url("https://localhost:44360/api")
+            .Adaptor("ODataV4Adaptor")
+            .CrossDomain(true)
+        )
+        .Query("new ej.data.Query().from('Events').addParams('readOnly', 'true')")
+        .IncludeFiltersInQuery(true)
+        )
+    .SelectedDate(new DateTime(2022, 12, 12))
+    .Render()
+)
