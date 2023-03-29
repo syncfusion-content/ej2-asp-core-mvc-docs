@@ -83,7 +83,7 @@ endswith |Checks whether the value ends with the specified value. |String
 contains |Checks whether the value contains the specified value. |String
 doesnotstartwith |Checks whether the value does not begin with the specified value. |String
 doesnotendwith |Checks whether the value does not end with the specified value. |String
-doesnotcontains |Checks whether the value does not contain the specified value. |String
+doesnotcontain |Checks whether the value does not contain the specified value. |String
 equal |Checks whether the value is equal to the specified value. |String &#124; Number &#124; Boolean &#124; Date
 notequal |Checks for values not equal to the specified value. |String &#124; Number &#124; Boolean &#124; Date
 greaterthan |Checks whether the value is greater than the specified value. |Number &#124; Date
