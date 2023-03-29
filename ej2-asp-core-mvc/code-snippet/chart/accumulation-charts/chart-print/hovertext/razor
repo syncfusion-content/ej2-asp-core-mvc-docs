@@ -1,0 +1,10 @@
+Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("x")
+                      .YName("y")
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                      .InnerRadius("65%").Add();
+            })
+            .CenterLabel(cl => cl.Text("Mobile<br>Browsers<br>Statistics").HoverTextFormat("${point.x} <br> Browser Share <br> ${point.y}%")).Render()
+

@@ -458,6 +458,35 @@ To render a stacked step area series, use series `type` as `StackingStepArea`.
 
 
 
+**Range Step Area**
+
+To render the range step area series, use the series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as a `RangeStepArea`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/area-charts/range-step-area/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Range-step-area.cs" %}
+{% include code-snippet/chart/series/area-charts/range-step-area/range-step-area.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/area-charts/range-step-area/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Range-step-area.cs" %}
+{% include code-snippet/chart/series/area-charts/range-step-area/range-step-area.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 **Multicolored area**
 
 To render a multicolored area series, use the series type as `MultiColoredArea`. The required `segments` of the series can be customized using the `value`, `color`, and `dashArray`.
