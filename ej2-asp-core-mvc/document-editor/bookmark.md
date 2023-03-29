@@ -30,8 +30,10 @@ container.documentEditor.editor.insertBookmark("Bookmark1");
 You can select the bookmark in the document using [`selectBookmark`] method by providing Bookmark name to select as shown in the following code snippet.
 
 ```csharp
-container.documentEditor.selection.selectBookmark("Bookmark1");
+container.documentEditor.selection.selectBookmark("Bookmark1",true);
 ```
+
+>Note: Second parameter is optional parameter and it denotes is exclude bookmark start and end from selection. If true, excludes bookmark start and end from selection.
 
 ## Delete Bookmark
 
@@ -46,10 +48,28 @@ container.documentEditor.editor.deleteBookmark("Bookmark1");
 You can get all the bookmarks in the document using [`getBookmarks`] method as shown in the following code snippet.
 
 ```csharp
-container.documentEditor.selection.getBookmarks(false);
+container.documentEditor.getBookmarks(false);
 ```
 
 N> Parameter denotes is include hidden bookmarks. If false, ignore hidden bookmark.
+
+## Get Bookmark  in selection
+
+You can get bookmarks in current selection in the document using [`getBookmarks`]method as shown in the following code snippet.
+
+```csharp
+container.documentEditor.selection.getBookmarks(false);
+```
+
+## Show or Hide bookmark
+
+You can show or hide the show square brackets around bookmarked items in Document editor component.
+
+The following example code illustrates how to show or hide square brackets around bookmarked items.
+
+```csharp
+container.documentEditorSettings.showBookMarks = true;
+```
 
 ## Bookmark Dialog
 
