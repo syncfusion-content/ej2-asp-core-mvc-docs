@@ -336,6 +336,35 @@ To customize the error bar cap length, width and fill color, you can use [`error
 
 
 
+**Customizing Error Bar Color**
+
+To customize the error bar color for individual errors, use the [`errorBarColorMapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_ErrorBarColorMapping) property. You can also customize the vertical error, horizontal error, horizontal negative and positive error and vertical negative and positive error for an individual point using [`verticalError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_VerticalError), [`horizontalError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_HorizontalError), [`horizontalNegativeError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_HorizontalNegativeError), [`horizontalPositiveError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_HorizontalPositiveError), [`verticalNegativeError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_VerticalNegativeError) and [`verticalPositiveError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_VerticalPositiveError) properties.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/other-types/error-bar-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Error-bar-color.cs" %}
+{% include code-snippet/chart/series/other-types/error-bar-color/error-bar-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/other-types/error-bar-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Error-bar-color.cs" %}
+{% include code-snippet/chart/series/other-types/error-bar-color/error-bar-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Vertical Chart
 
 In EJ2 chart, you can draw a chart in vertical manner by changing orientation of the axis. All series types support this feature. You can use `isTransposed` property in chart to render a chart in vertical manner.

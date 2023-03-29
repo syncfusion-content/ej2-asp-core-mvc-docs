@@ -1,0 +1,10 @@
+     <ejs-accumulationchart id="container">
+            <e-accumulation-series-collection>
+                <e-accumulation-series dataSource="ViewBag.dataSource" xName="x" yName="y" innerRadius="65%">
+                </e-accumulation-series>
+            </e-accumulation-series-collection>
+            <e-accumulationchart-centerlabel text="Mobile<br>Browsers<br>Statistics">
+                <e-centerlabel-textstyle fontWeight="900" size="15px" color="grey" fontFamily="Roboto" fontStyle="Italic"></e-centerlabel-textstyle>
+            </e-accumulationchart-centerlabel>
+        </ejs-accumulationchart>
+ 

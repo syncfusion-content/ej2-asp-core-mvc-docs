@@ -40,7 +40,7 @@ We can divide a progress bar into multiple segments using a `SegmentCount` to vi
 
 ## Thickness
 
-You can customize the thickness of the track  using `TrackThickness` and progress using `ProgressThickness` to render the ProgressBar with different appearances.
+Customize the thickness of the track using [`TrackThickness`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_TrackThickness), progress using [`ProgressThickness`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_ProgressThickness) and secondary progress using [`SecondaryProgressThickness`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_SecondaryProgressThickness) to render the progress bar with different appearances.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -121,7 +121,7 @@ The inner radius of the progress bar can be customized using `InnerRadius` prope
 
 <!-- markdownlint-disable MD033 -->
 
-We can customize the color of progress and track by using  **ProgressColor** and **TrackColor** property.
+Customize the color of progress, secondary progress, and track by using the [`ProgressColor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_ProgressColor), [`SecondaryProgressColor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_SecondaryProgressColor), and [`TrackColor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_TrackColor) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
