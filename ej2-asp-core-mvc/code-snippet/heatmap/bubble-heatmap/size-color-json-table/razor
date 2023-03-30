@@ -9,7 +9,8 @@ palette.Color("#C06C84").Add();
 palette.Color("#6C5B7B").Add();
 palette.Color("#355C7D").Add();
 }).Type(Syncfusion.EJ2.HeatMap.PaletteType.Gradient)).CellSettings(cs =>
-            cs.Border(ViewBag.border).TileType(Syncfusion.EJ2.HeatMap.CellType.Bubble).BubbleType(Syncfusion.EJ2.HeatMap.BubbleType.SizeAndColor)).DataSource("dataSource").TooltipRender("tooltipRender").DataSourceSettings(ds => { ds.IsJsonData(true).AdaptorType(Syncfusion.EJ2.HeatMap.AdaptorType.Table).XDataMapping("Year"); }).Render()
+            cs.Border(ViewBag.border).TileType(Syncfusion.EJ2.HeatMap.CellType.Bubble).BubbleType(Syncfusion.EJ2.HeatMap.BubbleType.SizeAndColor)).DataSource("dataSource").TooltipRender("tooltipRender").
+            DataSourceSettings(ds => { ds.IsJsonData(true).AdaptorType(Syncfusion.EJ2.HeatMap.AdaptorType.Table).XDataMapping("Year"); }).Render()
 
 <script>
     var tooltipRender = function (args) {

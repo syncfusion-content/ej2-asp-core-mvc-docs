@@ -9,7 +9,8 @@ ls.Visible(true)).PaletteSettings(ps => ps.Palette(palette =>
 	palette.Color("#6C5B7B").Add();
 	palette.Color("#355C7D").Add();
 }).Type(Syncfusion.EJ2.HeatMap.PaletteType.Gradient)).CellSettings(cs =>
-    cs.Border(ViewBag.border).TileType(Syncfusion.EJ2.HeatMap.CellType.Bubble).BubbleType(Syncfusion.EJ2.HeatMap.BubbleType.SizeAndColor)).DataSource("dataSource").TooltipRender("tooltipRender").DataSourceSettings(ds => { ds.IsJsonData(false).AdaptorType(Syncfusion.EJ2.HeatMap.AdaptorType.Cell); }).Render()
+    cs.Border(ViewBag.border).TileType(Syncfusion.EJ2.HeatMap.CellType.Bubble).BubbleType(Syncfusion.EJ2.HeatMap.BubbleType.SizeAndColor)).DataSource("dataSource").TooltipRender("tooltipRender").
+    DataSourceSettings(ds => { ds.IsJsonData(false).AdaptorType(Syncfusion.EJ2.HeatMap.AdaptorType.Cell); }).Render()
 
 <script>
     var tooltipRender = function (args) {
