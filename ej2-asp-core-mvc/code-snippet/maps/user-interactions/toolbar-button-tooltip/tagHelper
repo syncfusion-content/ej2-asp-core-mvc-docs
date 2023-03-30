@@ -1,15 +1,27 @@
 @using Syncfusion.EJ2;
 
-@{ 
-    var toolbar = new string[] { "ZoomIn", "ZoomOut", "Pan", "Reset" };
-}
 <div id="control-section">
-    <ejs-maps id="maps">
-        <e-maps-zoomsettings enable="true" color="green" highlightColor="blue" selectionColor="orange"
-                             horizontalAlignment="Center" toolbars="toolbar"></e-maps-zoomsettings>
+    <ejs-maps id="maps" load="load">
+        <e-maps-zoomsettings enable="true"></e-maps-zoomsettings>
         <e-maps-layers>
             <e-maps-layer shapeData="ViewBag.world_map">
             </e-maps-layer>
         </e-maps-layers>
     </ejs-maps>
 </div>
+
+<script>
+    function load(args) {
+        var maps = document.getElementById('maps').ej2_instances[0];
+        maps.zoomSettings.toolbarSettings.tooltipSettings.visible = true;
+        maps.zoomSettings.toolbarSettings.tooltipSettings.borderWidth = 2;
+        maps.zoomSettings.toolbarSettings.tooltipSettings.borderColor = "green";
+        maps.zoomSettings.toolbarSettings.tooltipSettings.fontColor = "black";
+        maps.zoomSettings.toolbarSettings.tooltipSettings.fill = "violet";
+        maps.zoomSettings.toolbarSettings.tooltipSettings.fontFamily = "Times New Roman";
+        maps.zoomSettings.toolbarSettings.tooltipSettings.fontWeight = 200;
+        maps.zoomSettings.toolbarSettings.tooltipSettings.fontSize = "22px";
+        maps.zoomSettings.toolbarSettings.tooltipSettings.fontOpacity = 1;
+        maps.zoomSettings.toolbarSettings.buttonSettings.toolbarItems = ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset'];
+    }
+</script>
