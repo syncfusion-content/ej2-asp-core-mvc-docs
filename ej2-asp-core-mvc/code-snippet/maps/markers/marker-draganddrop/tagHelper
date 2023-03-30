@@ -14,6 +14,11 @@
                 Width = 2,
                 Opacity = 1
             };
+    var tooltip = new MapsTooltipSettings
+    {
+        Visible = true,
+        ValuePath = "name"
+    };
 }
 <ejs-maps id="container">
     <e-maps-layers>

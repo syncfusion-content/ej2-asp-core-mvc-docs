@@ -5,6 +5,7 @@
         <e-maps-zoomsettings enable="true"></e-maps-zoomsettings>
         <e-maps-layers>
             <e-maps-layer shapeData="ViewBag.world_map">
+                <e-layersettings-shapesettings fill="#C1DFF5"></e-layersettings-shapesettings>
             </e-maps-layer>
         </e-maps-layers>
     </ejs-maps>
