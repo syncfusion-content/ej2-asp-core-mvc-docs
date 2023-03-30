@@ -1,4 +1,13 @@
 @using Syncfusion.EJ2;
-@Html.EJS().Maps("maps").ZoomSettings(zoom=>zoom.Enable(true)).Layers(l=> {
+
+@Html.EJS().Maps("maps").Load("load").ZoomSettings(zoom => zoom.Enable(true)).Layers(l =>
+{
     l.ShapeData(ViewBag.worldMap).Add();
 }).Render()
+
+<script>
+    function load(args) {
+        var maps = document.getElementById('maps').ej2_instances[0];
+        maps.zoomSettings.toolbarSettings.buttonSettings.toolbarItems = ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset'];
+    }
+</script>
