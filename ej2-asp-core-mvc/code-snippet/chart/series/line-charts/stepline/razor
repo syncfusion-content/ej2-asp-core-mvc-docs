@@ -2,16 +2,9 @@
    {
    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepLine).  
    XName("x").
-   YName("yValue").
+   YName("y").
    DataSource(ViewBag.dataSource).
-   Name("Gold").
-   .Add();
-
-   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepLine).   
-   XName("x").
-   YName("yValue").
-   DataSource(ViewBag.dataSource1).
-   Name("Silver").
+   Name("Gold")
    .Add();
    }).
    PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category)

@@ -1,25 +1,7 @@
- <ejs-chart id="container" width="60%" load="window.onload">
-        <e-chart-primaryxaxis valueType="DateTime">
+ <ejs-chart id="container">
+        <e-chart-primaryxaxis valueType="Category">
         </e-chart-primaryxaxis>
         <e-series-collection>
-            <e-series  xName="x" high="high" low="low" type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeArea"></e-series>
+            <e-series dataSource="ViewBag.dataSource" xName="x" high="high" low="low" type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeArea"></e-series>
         </e-series-collection>
     </ejs-chart>
-<script>
-    window.onload = function (args) {
-        var series = [];
-        var value = 70;
-        var point;
-        for (var i = 1; i < 70; i++) {
-            if (Math.random() > .5) {
-                value += Math.random();
-            }
-            else {
-                value -= Math.random();
-            }
-            point = { x: new Date(1930 + i, 5, i), high: value, low: value - 25 };
-            series.push(point);
-        }
-        args.chart.series[0].dataSource = series;
-    }
-</script>
