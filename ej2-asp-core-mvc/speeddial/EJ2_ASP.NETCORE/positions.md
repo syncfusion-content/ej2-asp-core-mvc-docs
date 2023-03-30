@@ -10,9 +10,26 @@ documentation: ug
 
 # Positions in ASP.NET Core Speed Dial Control
 
-The Speed dial control can be positioned anywhere on the [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Target) using the [position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Position) property. If the `target` is not defined, then Speed Dial is positioned based on the browser viewport.
+This section explains the different positions of SpeedDial.
 
-The position values of Speed Dial are as follows:
+## Target
+
+The [Target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Target) property defines the selector for the element in which the speed dial will be positioned. If the Target is not defined, then Speed Dial is positioned based on the browser viewport.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/speeddial/positions/target/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Speed Dial component with target](./images/SpeedDial-Target.png)
+
+## Built-in positions
+
+The SpeedDial Component can be positioned in the pre-defined positions using the [Position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Position) property.
+
+The built-in position values of SpeedDial are as follows:
+
 * TopLeft
 * TopCenter
 * TopRight
@@ -29,42 +46,16 @@ The position values of Speed Dial are as follows:
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Speed Dial Position](./images/SpeedDial-Position.png)
+![ASP.NET Core Speed Dial SpeedDial component with position](./images/SpeedDial-Position.png)
 
-## Opens on hover
+## Custom Positioning
 
-You can open the Speed Dial action items on mouse hover by setting the [opensOnHover](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_OpensOnHover) property as true.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/positions/opens-on-hover/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![Asp.Net Core Speed Dial OpensOnHover](images/SpeedDial-Icon.png)
-
-## Programmatically show/hide
-
-You can open/close the Speed Dial action items programmatially using `show` and 
-`hide` methods.
-
-Below example demonstrates open/close action items on button click.
+You can define the custom position for the SpeedDial by overriding the `top`, `left`, `right`, and `bottom` CSS properties using [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_CssClass).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/positions/show-hide/tagHelper %}
+{% include code-snippet/speeddial/positions/custom-positioning/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-![Asp.Net Core Speed Dial Show Items](images/SpeedDial-ShowItem.png)
-![Asp.Net Core Speed Dial Hide Items](images/SpeedDial-HideItem.png)
-
-## Programmatically refresh the position
-
-You can refresh the position of the Speed Dial using `refreshPosition` method when the `target`position is changed.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/positions/refresh/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
+![Asp.Net Core Speed Dial component with custom position](images/SpeedDial-CustomPosition.png)

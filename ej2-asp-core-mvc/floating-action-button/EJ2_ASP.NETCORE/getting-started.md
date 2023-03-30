@@ -113,27 +113,3 @@ Now, add the Syncfusion ASP.NET Core Floating Action Button tag helper in `~/Pag
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Floating Action Button control will be rendered in the default web browser.
 
 ![ASP.NET Core Floating Action Button Control](images/default.png)
-
-## Event Click In Floating Action Button
-
-The floating action button control triggers the `onclick` event when you click on the floating action button. You can use this event to perform the required action.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/events/onclick-event/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/events/onclick-event/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="OnClickEvent.cs" %}
-{% include code-snippet/floating-action-button/events/onclick-event/onclickevent.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

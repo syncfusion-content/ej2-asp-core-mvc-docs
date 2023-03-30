@@ -19,13 +19,3 @@ You can use the [shimmerEffect](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% endtabs %}
 
 ![ASP.NET Core Skeleton Pulse Effect](images/skeleton-pulse-effect.png)
-
-Below example demonstrates a list with pulse effect skeleton.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/skeleton/effects/effect/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Skeleton Pulse Effect](images/skeleton-Effect.png)

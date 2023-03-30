@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.Buttons
+<div id="target">
+    @Html.EJS().SpeedDial("speeddial").Target("#target").Items(ViewBag.datasource).Content("Add").Render()
+</div>
+<style>
+    #target {
+        width: 300px;
+        border: 1px solid black;
+        min-height: 300px;
+        position: relative;
+    }
+</style>

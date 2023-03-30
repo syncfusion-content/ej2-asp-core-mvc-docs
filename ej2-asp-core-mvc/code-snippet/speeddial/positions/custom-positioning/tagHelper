@@ -1,0 +1,35 @@
+@using Syncfusion.EJ2.Buttons
+
+@{
+    List<SpeedDialItem> items = new List<SpeedDialItem>();
+    items.Add(new SpeedDialItem
+    {
+        Text = "Cut"
+    });
+    items.Add(new SpeedDialItem
+    {
+        Text = "Copy"
+    });
+    items.Add(new SpeedDialItem
+    {
+        Text = "Paste"
+    });
+}
+    
+<ejs-speeddial id="speeddial" items="items" content="Edit" cssClass="custom-position"></ejs-speeddial>
+
+<style>
+    .e-fab.e-btn.custom-position {
+    left: 218px;
+    top: 170px;
+    bottom: unset;
+    right: unset;
+    }
+    .e-speeddial-popup.e-speeddial-right.e-speeddial-linear {
+        left: 210px;
+    }
+    .e-speeddial-popup.e-speeddial-bottom.e-speeddial-linear {
+        top: 50px;
+    }
+</style>
+

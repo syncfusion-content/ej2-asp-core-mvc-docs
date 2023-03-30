@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2.Buttons
+
+@Html.EJS().SpeedDial("speeddial").Items(ViewBag.datasource).CssClass("custom-position").Content("Edit").Render()
+
+<style>
+    .e-fab.e-btn.custom-position {
+        left: 325px;
+        top: 170px;
+        bottom: unset;
+        right: unset;
+    }
+    .e-speeddial-popup.e-speeddial-right.e-speeddial-linear {
+        left: 315px;
+    }
+    .e-speeddial-popup.e-speeddial-bottom.e-speeddial-linear {
+        top: 50px;
+    }
+</style>

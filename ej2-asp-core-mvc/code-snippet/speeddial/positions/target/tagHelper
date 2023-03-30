@@ -1,0 +1,30 @@
+@using Syncfusion.EJ2.Buttons
+
+@{
+    List<SpeedDialItem> items = new List<SpeedDialItem>();
+    items.Add(new SpeedDialItem
+    {
+        Text="Cut"
+    });
+    items.Add(new SpeedDialItem
+    {
+        Text="Copy"
+    });
+    items.Add(new SpeedDialItem
+    {
+        Text="Paste"
+    });
+}
+
+<div id="target">
+   <ejs-speeddial id="speeddial" target="#target" items="items" content="Add">
+    </ejs-speeddial>
+</div>
+<style>
+    #target {
+        width: 300px;
+        border: 1px solid black;
+        min-height: 300px;
+        position: relative;
+    }
+</style>

@@ -36,7 +36,7 @@ Event triggers after the creation of Floating Action Button.
 {% endtabs %}
 {% endif %}
 
-## OnClick
+## Click
 
 Event triggers when the Floating Action Button is clicked. Below example shows the Click event of the Floating Action Button.
 

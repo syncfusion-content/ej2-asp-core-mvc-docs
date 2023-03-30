@@ -12,19 +12,6 @@ documentation: ug
 
 This section describes the Speed Dial events that will be triggered when appropriate actions are performed. The following events are available in the Speed Dial Control.
 
-## Clicked event
-
-The speed dial control triggers the [Clicked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Clicked) event when an action item is clicked. You can use this event to perform the required action.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/events/itemclicked/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ClickedEvent.cs" %}
-{% include code-snippet/speeddial/events/itemclicked/clickedevent.cs %}
-{% endhighlight %}
-{% endtabs %}
-
 ## Created 
 
 The speed dial control triggers the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Created) event when SpeedDial control rendering is completed.
@@ -64,6 +51,32 @@ The speed dial control triggers the [OnOpen](https://help.syncfusion.com/cr/aspn
 {% endhighlight %}
 {% endtabs %}
 
+## Clicked event
+
+The speed dial control triggers the [Clicked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Clicked) event when an action item is clicked. You can use this event to perform the required action.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/speeddial/events/itemclicked/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ClickedEvent.cs" %}
+{% include code-snippet/speeddial/events/itemclicked/clickedevent.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Before item render
+
+The speed dial control triggers the [BeforeItemRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_BeforeItemRender) event for each `SpeedDialItem` once its rendered..
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/speeddial/events/before-item-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ItemRenderEvent.cs" %}
+{% include code-snippet/speeddial/events/before-item-render/itemrenderevent.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Before close
 
 The speed dial control triggers the [BeforeClose](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_BeforeClose) event before the SpeedDial popup is closed.
@@ -90,15 +103,3 @@ The speed dial control triggers the [OnClose](https://help.syncfusion.com/cr/asp
 {% endhighlight %}
 {% endtabs %}
 
-## Before item render
-
-The speed dial control triggers the [BeforeItemRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_BeforeItemRender) event for each `SpeedDialItem` once its rendered..
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/events/before-item-render/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ItemRenderEvent.cs" %}
-{% include code-snippet/speeddial/events/before-item-render/itemrenderevent.cs %}
-{% endhighlight %}
-{% endtabs %}

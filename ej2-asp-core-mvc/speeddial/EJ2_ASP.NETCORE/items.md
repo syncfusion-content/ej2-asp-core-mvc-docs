@@ -72,20 +72,6 @@ You can disable Speed Dial items by setting [Disabled](https://help.syncfusion.c
 
 ![ASP.NET Core Speed Dial with Disabled](./images/SpeedDial-DisabledItem.png)
 
-## Animation
-
-The Speed Dial items can be animated during the opening and closing of the popup action items. You can customize the animation's `Effect`, `Delay`, and `Duration` by setting [animation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Animation) property. By default, Speed Dial animates with a `Fade` effect and supports all [SpeedDialAnimationEffect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDialAnimationSettings.html#Syncfusion_EJ2_Buttons_SpeedDialAnimationSettings_Effect) effects.
-
-Below example demonstrates the Speed Dial items with applied Zoom effect.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/items/animation/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Speed Dial Animation](images/SpeedDial-Animation.png)
-
 ## Template
 
 The Speed Dial supports to customize the action items and entire pop-up container by setting [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_ItemTemplate) and [popupTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_PopupTemplate) property. For more details about templates, check out the link [here](https://ej2.syncfusion.com/aspnetcore/documentation/speeddial/template).

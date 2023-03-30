@@ -10,51 +10,19 @@ documentation: ug
 
 # Shapes in ASP.NET Core Skeleton Control
 
-The Skeleton control support various built-in shape variants to design layout of the page. You can use the [shape](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Skeleton.html#Syncfusion_EJ2_Notifications_Skeleton_Shape) property to create a preview of any layout.
+The Skeleton control supports various built-in shape variants to design the layout of the page. You can use the [shape](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Skeleton.html#Syncfusion_EJ2_Notifications_Skeleton_Shape) property to display the skeleton in various shapes, such as circle, square, rectangle, and text and create a preview of any layout.
 
 The Skeleton control supports the following content shapes:
 
-## Circle skeleton shape
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/skeleton/shapes/circle/tagHelper %}
+{% include code-snippet/skeleton/shapes/different-shapes/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Skeleton Circle Shape](images/skeleton-circle-shape.png)
+![ASP.NET Core Skeleton component with different shapes](images/skeleton-shape-sample.png)
 
-## Square skeleton shape
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/skeleton/shapes/square/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Skeleton Square Shape](images/skeleton-square.png)
-
-## Rectangle skeleton shape
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/skeleton/shapes/rectangle/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Skeleton Rectangle Shape](images/skeleton-rectangle-shape.png)
-
-## Text skeleton shape
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/skeleton/shapes/text/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Skeleton Text Shape](images/skeleton-text-shape.png)
-
-Below example demonstrates the above functionalities of a Skeleton control.
+Below example demonstrates the use case example of a Skeleton control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -62,4 +30,4 @@ Below example demonstrates the above functionalities of a Skeleton control.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Skeleton Shape](images/skeleton-shape.png)
+![ASP.NET Core Skeleton component with different shapes](images/skeleton-shape.png)

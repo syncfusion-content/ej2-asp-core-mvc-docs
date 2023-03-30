@@ -110,55 +110,49 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Skeleton Control](images/skeleton-control.png)
 
-## Skeleton Types
+## Initialize as CSS component
 
-The Skeleton control has the following different type of shapes.
+The ASP.NET Core Skeleton component can be initialized through CSS by utilizing predefined class names representing the shape, animation effect of the skeleton.
 
-* Circle
-* Square
-* Text
-* Rectangle
+| Class | Description |
+| -------- | -------- |
+| e-skeleton | Base class to add the Skeleton to the element. |
+| e-skeleton-`shapeName` |  Defines the Skeleton shape where `shapeName` defines the name of the shape  |
+| e-shimmer-`animation` |  Defines the type of Skeleton `animation` effect where animation defines the name of the animation effect |
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div class="row skeleton-default">
-    <div class="col-sm-6">
-        <h5>Circle</h5>
-        <ejs-skeleton id="skeletonCircleSmall" shape="Circle" width="3rem"></ejs-skeleton>
-        <ejs-skeleton id="skeletonCircleMedium" shape="Circle" width="48px"></ejs-skeleton>
-        <ejs-skeleton id="skeletonCircleLarge" shape="Circle" width="64px"></ejs-skeleton>
-        <ejs-skeleton id="skeletonCircleLarger" shape="Circle" width="80px"></ejs-skeleton>
-    </div>
-    <div class="col-sm-6">
-        <h5>Square</h5>
-        <ejs-skeleton id="skeletonSquareSmall" shape="Square" width="3rem"></ejs-skeleton>
-        <ejs-skeleton id="skeletonSquareMedium" shape="Square" width="48px"></ejs-skeleton>
-        <ejs-skeleton id="skeletonSquareLarge" shape="Square" width="64px"></ejs-skeleton>
-        <ejs-skeleton id="skeletonSquareLarger" shape="Square" width="80px"></ejs-skeleton>
-    </div>
+@using Syncfusion.EJ2.Notifications
+
+<div id="container">
+    <div class="content e-skeleton e-skeleton-text e-shimmer-pulse"></div>
 </div>
-<div class="row skeleton-default">
-    <div class="col-sm-6">
-        <h5>Text</h5>
-        <ejs-skeleton id="skeletonText" shape="Text" width="100%" height="15px"></ejs-skeleton>
-        <ejs-skeleton id="skeletonTextMedium" width="30%" height="15px"></ejs-skeleton>
-        <br />
-        <ejs-skeleton id="skeletonTextSmall" width="15%" height="15px"></ejs-skeleton>
-        <br />
-        <ejs-skeleton id="skeletonTextMedium1" width="60%" height="15px"></ejs-skeleton>
-        <br />
-        <ejs-skeleton id="skeletonTextSmall1" width="15%" height="15px"></ejs-skeleton>
-    </div>
-    <div class="col-sm-6">
-        <h5>Rectangle</h5>
-        <ejs-skeleton id="skeletonRectangle" shape="Rectangle" width="100%" height="100px"></ejs-skeleton>
-        <ejs-skeleton id="skeletonRectangleMedium" shape="Rectangle" width="20%" height="35px"></ejs-skeleton>
-        <ejs-skeleton style="float:right" id="skeletonRectangleMediumRight" shape="Rectangle" width="20%" height="35px"></ejs-skeleton>
-    </div>
-</div>
+
+<style>
+    #container {
+        border: 1px solid black;
+        width: 220px;
+        height: 40px;
+    }
+    .content {
+        margin: 9px;
+        width: 200px;
+        height: 20px;
+    }
+</style>
 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Skelton Shapes](images/skeleton-skimmer-effects.png)
+![ASP.NET Core Skelton Css component](images/skimmer-Pulse.png)
+
+## Visible
+
+The [Visible](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.notifications.skeleton.html#Syncfusion_EJ2_Notifications_Skeleton_Visible) property can be used to show or hide the Skeleton.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/skeleton/getting-started/visible/tagHelper %}
+{% endhighlight %}
+{% endtabs %}

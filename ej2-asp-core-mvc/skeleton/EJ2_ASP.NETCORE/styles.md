@@ -23,13 +23,3 @@ You can customize the style of a Skeleton control by using [cssClass](https://he
 {% endtabs %}
 
 ![ASP.NET Core Skeleton CssClass](images/skeleton-css-customize.png)
-
-## Visible
-
-You can use the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Skeleton.html#Syncfusion_EJ2_Notifications_Skeleton_Visible) property which defines the visible state of Skeleton.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/skeleton/styles/visible/tagHelper %}
-{% endhighlight %}
-{% endtabs %}

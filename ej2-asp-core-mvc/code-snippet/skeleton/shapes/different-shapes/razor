@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2.Notifications
+
+@Html.EJS().Skeleton("skeletonCircleMedium").Shape(SkeletonType.Circle).Width("48px").Render()
+@Html.EJS().Skeleton("skeletonSquareMedium").Shape(SkeletonType.Square).Width("48px").Render()
+<br />
+@Html.EJS().Skeleton("skeletonTextMedium1").Width("60%").Height("15px").Width("20%").Render()
+<br />
+@Html.EJS().Skeleton("skeletonRectangleMedium").Shape(SkeletonType.Rectangle).Width("20%").Height("35px").Render()

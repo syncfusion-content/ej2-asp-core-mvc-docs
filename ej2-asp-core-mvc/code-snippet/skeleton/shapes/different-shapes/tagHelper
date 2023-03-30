@@ -1,0 +1,9 @@
+
+@using Syncfusion.EJ2.Notifications
+
+<ejs-skeleton id="skeletonCircleMedium" shape="Circle" width="48px"></ejs-skeleton>
+<ejs-skeleton id="skeletonSquareMedium" shape="Square" width="48px"></ejs-skeleton>
+<br />
+<ejs-skeleton id="skeletonTextSmall" width="20%" height="15px"></ejs-skeleton>
+<br />
+<ejs-skeleton style="float:left" id="skeletonRectangleMedium" shape="Rectangle" width="20%" height="35px"></ejs-skeleton>
