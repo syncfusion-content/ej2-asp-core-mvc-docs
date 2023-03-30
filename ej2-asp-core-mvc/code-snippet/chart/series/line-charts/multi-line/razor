@@ -2,9 +2,10 @@
    {
    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.MultiColoredLine).  
    XName("x").
-   YName("yValue").
+   YName("y").
    DataSource(ViewBag.dataSource).
-   Name("Gold").
+   PointColorMapping("color").
+   Name("Gold")
    .Add();   
    }).
    PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category)

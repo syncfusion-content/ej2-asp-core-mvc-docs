@@ -8,13 +8,13 @@
             .YName("yValue")
             .Width(2)
             .Marker(ViewBag.marker1)
-            .StartAngle(90)
             .DataSource(ViewBag.dataSource).Add();
     })
       .PrimaryXAxis(xaxis =>
          xaxis.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
              .LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.OnTicks)
              .Interval(1)
+             .StartAngle(270)
              .Coefficient(100)
              .Title("Months")
       )
