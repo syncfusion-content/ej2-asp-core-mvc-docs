@@ -15,7 +15,8 @@
   <e-heatmap-cellsettings tileType="Bubble" bubbleType="SizeAndColor"></e-heatmap-cellsettings>
   <e-heatmap-legendsettings visible="true"></e-heatmap-legendsettings>
   <e-heatmap-datasourcesettings isJsonData="true" adaptorType="Cell" xDataMapping="Year" yDataMapping="Months">
-  <e-heatmap-bubbleDataMapping size="Accidents" color ="Fatalities"></e-heatmap-bubbleDataMapping></e-heatmap-datasourcesettings>
+        <e-data-bubbledatamapping size="Accidents" color="Fatalities"></e-data-bubbledatamapping>
+  </e-heatmap-datasourcesettings>
 </ejs-heatmap>
 
 <script>
