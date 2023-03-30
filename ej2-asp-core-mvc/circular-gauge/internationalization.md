@@ -83,3 +83,5 @@ The following example illustrates the right to left rendering of the Circular Ga
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Circular Gauge with Rtl support](./images/rtl.png)

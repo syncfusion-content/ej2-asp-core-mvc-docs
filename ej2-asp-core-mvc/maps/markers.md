@@ -311,7 +311,7 @@ The markers on the map can be dragged and dropped to change their position. To e
 {% endhighlight %}
 {% endtabs %}
 
-![Marker with drag and drop functionality](./images/Marker/marker-drag-and-drop.PNG)
+![Marker with drag and drop functionality](./images/Marker/marker-drag-and-drop.gif)
 
 The data of the drag and dropped marker in the marker data source can be customized using the [MarkerDragStart](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_MarkerDragStart) and the [MarkerDragEnd](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_MarkerDragEnd) events. When you change the appropriate marker data, the tooltip and legend item text of that marker are automatically updated. The following properties are available in the event argument of the marker drag events.
 
@@ -338,7 +338,7 @@ The following example shows how to use marker drag events to customize the data 
 {% endtabs %}
 {% endif %}
 
-![Marker customization using marker drag events](./images/Marker/marker-drag-events.PNG)
+![Marker customization using marker drag events](./images/Marker/marker-drag-events.gif)
 
 ## Marker zooming
 
