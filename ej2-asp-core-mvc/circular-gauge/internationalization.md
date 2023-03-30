@@ -84,4 +84,4 @@ The following example illustrates the right to left rendering of the Circular Ga
 {% endtabs %}
 {% endif %}
 
-![Circular Gauge with Rtl support](./images/rtl.png)
+![Circular Gauge with RTL support](./images/rtl.png)
