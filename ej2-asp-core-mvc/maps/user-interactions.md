@@ -270,6 +270,34 @@ The zooming range can be adjusted using the `MinZoom` and `MaxZoom` properties i
 {% endtabs %}
 {% endif %}
 
+### Zooming with animation
+
+To zoom in or zoom out the Maps with animation, use the `AnimationDuration` property in `MapsLayer`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/animationzoom/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Animationzoom.cs" %}
+{% include code-snippet/maps/user-interactions/animationzoom/animationzoom.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/animationzoom/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Animationzoom.cs" %}
+{% include code-snippet/maps/user-interactions/animationzoom/animationzoom.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
 ### Customizing the zoom toolbar
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -315,6 +343,7 @@ The zoom toolbar can be customized by using the [ToolbarSettings](https://help.s
 {% endtabs %}
 {% endif %}
 
+![Zoom toolbar customization](./images/Zoom/zoom-toobar-customization.PNG)
 
 <!-- markdownlint-disable MD036 -->
 **Customizing the buttons in the zoom toolbar**
@@ -370,6 +399,8 @@ The appearance of the buttons in the zoom toolbar can be customized by using the
 {% endtabs %}
 {% endif %}
 
+![Zoom toolbar button customization](./images/Zoom/zoom-toobar-button-customization.PNG)
+
 <!-- markdownlint-disable MD036 -->
 **Customizing the tooltip of the zoom toolbar**
 
@@ -424,35 +455,7 @@ The appearance of the tooltip of the zoom toolbar can be customized by using the
 {% endtabs %}
 {% endif %}
 
-
-### Zooming with animation
-
-To zoom in or zoom out the Maps with animation, use the `AnimationDuration` property in `MapsLayer`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/user-interactions/animationzoom/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Animationzoom.cs" %}
-{% include code-snippet/maps/user-interactions/animationzoom/animationzoom.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/user-interactions/animationzoom/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Animationzoom.cs" %}
-{% include code-snippet/maps/user-interactions/animationzoom/animationzoom.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
+![Zoom toolbar tooltip customization](./images/Zoom/zoom-toobar-tooltip-customization.PNG)
 
 ## Selection
 

@@ -338,7 +338,7 @@ The following example shows how to use marker drag events to customize the data 
 {% endtabs %}
 {% endif %}
 
-![Marker with drag and drop functionality](./images/Marker/marker-drag-and-drop.PNG)
+![Marker customization using marker drag events](./images/Marker/marker-drag-events.PNG)
 
 ## Marker zooming
 
