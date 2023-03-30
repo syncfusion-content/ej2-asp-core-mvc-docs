@@ -2,7 +2,7 @@
 
 @Html.EJS().Maps("maps").Load("load").ZoomSettings(zoom => zoom.Enable(true)).Layers(l =>
 {
-    l.ShapeSettings(sh=>sh.Fill("#C1DFF5")).ShapeData(ViewBag.shapeData).Add();
+    l.ShapeSettings(sh=>sh.Fill("#C1DFF5")).ShapeData(ViewBag.worldMap).Add();
 }).Render()
 
 <script>
