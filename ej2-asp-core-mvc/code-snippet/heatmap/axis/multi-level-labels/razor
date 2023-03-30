@@ -20,15 +20,16 @@ yaxis.Labels(ViewBag.yLabels)).PaletteSettings(ps => ps.Palette(palette =>
                 },
                 border: { type: 'Rectangle', color: '#a19d9d' },
                 categories: [
-                    { start: 0, end: 2, text: 'Electronics', },
-                    { start: 3, end: 4, text: 'Beauty and personal care', },
-                    { start: 5, end: 7, text: 'Fashion', },
-                    { start: 8, end: 10, text: 'Household', },
+                    { start: 0, end: 2, text: 'Electronics' },
+                    { start: 3, end: 4, text: 'Beauty and personal care' },
+                    { start: 5, end: 7, text: 'Fashion' },
+                    { start: 8, end: 10, text: 'Household' }
                 ]
             },
         ]);
         args.heatmap.yAxis.multiLevelLabels = ([
             {
+                border: { type: 'Rectangle', color: '#a19d9d' },
                 categories: [
                     { start: 0, end: 2, text: 'Q1' },
                     { start: 3, end: 5, text: 'Q2' },
@@ -37,19 +38,21 @@ yaxis.Labels(ViewBag.yLabels)).PaletteSettings(ps => ps.Palette(palette =>
                 ]
             },
             {
+                border: { type: 'Rectangle', color: '#a19d9d' },
                 categories: [
                     { start: 0, end: 5, text: 'First Half Yearly' },
                     {
                         start: 6,
                         end: 11,
                         text: 'Second Half Yearly'
-                    },
-                ],
+                    }
+                ]
             },
             {
+                border: { type: 'Rectangle', color: '#a19d9d' },
                 categories: [
-                    { start: 0, end: 11, text: 'Yearly' },
-                ],
+                    { start: 0, end: 11, text: 'Yearly' }
+                ]
             }
         ]);
     };
