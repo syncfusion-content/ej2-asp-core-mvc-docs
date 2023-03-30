@@ -16,6 +16,7 @@ Circular Gauge provides support for internationalization for the following gauge
 * Tooltip
 
 For more information about number formatter, you can refer [internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization).
+
 ## Globalization
 
 {% if page.publishingplatform == "aspnet-core" %}

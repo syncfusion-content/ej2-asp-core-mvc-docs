@@ -292,7 +292,7 @@ To zoom in or zoom out the Maps with animation, use the `AnimationDuration` prop
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The zoom toolbar can be customized by using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html#Syncfusion_EJ2_Maps_MapsZoomSettings_ToolbarSettings) option in the [zoomSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties can be used to customize the zoom toolbar.
+The zoom toolbar can be customized by using the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/maps/zoomToolbarSettingsModel/) option in the [zoomSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties can be used to customize the zoom toolbar.
 
 * `backgroundColor` - It is used to customize the background color of the zoom toolbar.
 * `borderOpacity` - It is used to customize the opacity of the border of the zoom toolbar.
@@ -313,7 +313,7 @@ The zoom toolbar can be customized by using the [toolbarSettings](https://help.s
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-The zoom toolbar can be customized by using the [ToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html#Syncfusion_EJ2_Maps_MapsZoomSettings_ToolbarSettings) option in the [ZoomSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties can be used to customize the zoom toolbar.
+The zoom toolbar can be customized by using the [ToolbarSettings](https://ej2.syncfusion.com/documentation/api/maps/zoomToolbarSettingsModel/) option in the [ZoomSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties can be used to customize the zoom toolbar.
 
 * `BackgroundColor` - It is used to customize the background color of the zoom toolbar.
 * `BorderOpacity` - It is used to customize the opacity of the border of the zoom toolbar.
@@ -340,7 +340,7 @@ The zoom toolbar can be customized by using the [ToolbarSettings](https://help.s
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The appearance of the buttons in the zoom toolbar can be customized by using the `buttonSettings` option in the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html#Syncfusion_EJ2_Maps_MapsZoomSettings_ToolbarSettings) of the [zoomSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties can be used to customize the zoom toolbar buttons.
+The appearance of the buttons in the zoom toolbar can be customized by using the [buttonSettings](https://ej2.syncfusion.com/documentation/api/maps/zoomToolbarButtonSettingsModel/) option in the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/maps/zoomToolbarSettingsModel/) of the [zoomSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties can be used to customize the zoom toolbar buttons.
 
 * `fill` - It is used to set the background color of the buttons.
 * `color` - It is used to customize the color of the icons inside the button.
@@ -365,7 +365,7 @@ The appearance of the buttons in the zoom toolbar can be customized by using the
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-The appearance of the buttons in the zoom toolbar can be customized by using the `ButtonSettings` option in the [ToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html#Syncfusion_EJ2_Maps_MapsZoomSettings_ToolbarSettings) of the [ZoomSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties can be used to customize the zoom toolbar buttons.
+The appearance of the buttons in the zoom toolbar can be customized by using the [ButtonSettings](https://ej2.syncfusion.com/documentation/api/maps/zoomToolbarButtonSettingsModel/) option in the [ToolbarSettings](https://ej2.syncfusion.com/documentation/api/maps/zoomToolbarSettingsModel/) of the [ZoomSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties can be used to customize the zoom toolbar buttons.
 
 * `Fill` - It is used to set the background color of the buttons.
 * `Color` - It is used to customize the color of the icons inside the button.
@@ -396,7 +396,7 @@ The appearance of the buttons in the zoom toolbar can be customized by using the
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The appearance of the tooltip of the zoom toolbar can be customized by using the [tooltipSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomToolbarTooltipSettings.html) option in the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html#Syncfusion_EJ2_Maps_MapsZoomSettings_ToolbarSettings) of the [zoomSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties are available to customize the zoom toolbar tooltip.
+The appearance of the tooltip of the zoom toolbar can be customized by using the [tooltipSettings](https://ej2.syncfusion.com/documentation/api/maps/zoomToolbarTooltipSettingsModel/) option in the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/maps/zoomToolbarSettingsModel/) of the [zoomSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties are available to customize the zoom toolbar tooltip.
 
 * `visible` - Enables or disables the tooltip of the zoom toolbar.
 * `fill` - It is used to change the background color of the tooltip of the zoom toolbar.
@@ -421,7 +421,7 @@ The appearance of the tooltip of the zoom toolbar can be customized by using the
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-The appearance of the tooltip of the zoom toolbar can be customized by using the [TooltipSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomToolbarTooltipSettings.html) option in the [ToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html#Syncfusion_EJ2_Maps_MapsZoomSettings_ToolbarSettings) of the [ZoomSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties are available to customize the zoom toolbar tooltip.
+The appearance of the tooltip of the zoom toolbar can be customized by using the [TooltipSettings](https://ej2.syncfusion.com/documentation/api/maps/zoomToolbarTooltipSettingsModel/) option in the [ToolbarSettings](https://ej2.syncfusion.com/documentation/api/maps/zoomToolbarSettingsModel/) of the [ZoomSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties are available to customize the zoom toolbar tooltip.
 
 * `Visible` - Enables or disables the tooltip of the zoom toolbar.
 * `Fill` - It is used to change the background color of the tooltip of the zoom toolbar.
