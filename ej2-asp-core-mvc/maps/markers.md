@@ -261,7 +261,7 @@ The latitude and longitude values are used to determine the location of each mar
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The markers on the map can be dragged and dropped to change their position. To enable marker drag and drop, set the [enableDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsMarker.html#Syncfusion_EJ2_Maps_MapsMarker_EnableDrag) property to **true** in the [markerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsMarker.htm) property.
+The markers on the map can be dragged and dropped to change their position. To enable marker drag and drop, set the [enableDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsMarker.html#Syncfusion_EJ2_Maps_MapsMarker_EnableDrag) property to **true** in the [markerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsMarker.html) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -278,14 +278,14 @@ The data of the drag and dropped marker in the marker data source can be customi
 
 |   Argument Name      |   Description                               |
 |----------------------| --------------------------------------------|
-|   dataIndex          |   It represents the index of the data of the dragged marker in the marker data source                         |
-|   latitude           |   It represents the latitude coordinate point of the dragged marker                                            |
-|   longitude          |   It represents the longitude coordinate point for the dragged marker                                          |
-|   markerIndex        |   It represents the index of the marker setting                                                                |
-|   layerIndex         |   In represents the index of the layer in which the marker belongs                                             |
-|   name               |   It represents the name of the event                                                                  |
-|   x                  |   It represents the horizontal location of the mouse pointer on the map when the drag action is performed     |
-|   y                  |   It represents the vertical location of the mouse pointer on the map when the drag action is performed       |
+|   dataIndex          |   It represents the index of the data of the dragged marker in the marker data source.                          |
+|   latitude           |   It represents the latitude coordinate point of the dragged marker.                                            |
+|   longitude          |   It represents the longitude coordinate point for the dragged marker.                                          |
+|   markerIndex        |   It represents the index of the marker setting.                                                                |
+|   layerIndex         |   It represents the index of the layer in which the marker belongs.                                             |
+|   name               |   It represents the name of the event.                                                                          |
+|   x                  |   It represents the horizontal location of the mouse pointer on the map when the drag action is performed.      |
+|   y                  |   It represents the vertical location of the mouse pointer on the map when the drag action is performed.        |
 
 The following example shows how to use marker drag events to customize the data of the drag and dropped marker in the marker data source.
 
@@ -300,7 +300,7 @@ The following example shows how to use marker drag events to customize the data 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-The markers on the map can be dragged and dropped to change their position. To enable marker drag and drop, set the [EnableDrag](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsMarker.html#Syncfusion_EJ2_Maps_MapsMarker_EnableDrag) property to **true** in the [MarkerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsMarker.htm) property.
+The markers on the map can be dragged and dropped to change their position. To enable marker drag and drop, set the [EnableDrag](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsMarker.html#Syncfusion_EJ2_Maps_MapsMarker_EnableDrag) property to **true** in the [MarkerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsMarker.html) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -317,14 +317,14 @@ The data of the drag and dropped marker in the marker data source can be customi
 
 |   Argument Name      |   Description                               |
 |----------------------| --------------------------------------------|
-|   dataIndex          |   It represents the index of the data of the dragged marker in the marker data source                         |
-|   latitude           |   It represents the latitude coordinate point of the dragged marker                                            |
-|   longitude          |   It represents the longitude coordinate point for the dragged marker                                          |
-|   markerIndex        |   It represents the index of the marker setting                                                                |
-|   layerIndex         |   In represents the index of the layer in which the marker belongs                                             |
-|   name               |   It represents the name of the event                                                                  |
-|   x                  |   It represents the horizontal location of the mouse pointer on the map when the drag action is performed     |
-|   y                  |   It represents the vertical location of the mouse pointer on the map when the drag action is performed       |
+|   dataIndex          |   It represents the index of the data of the dragged marker in the marker data source.                          |
+|   latitude           |   It represents the latitude coordinate point of the dragged marker.                                            |
+|   longitude          |   It represents the longitude coordinate point for the dragged marker.                                          |
+|   markerIndex        |   It represents the index of the marker setting.                                                                |
+|   layerIndex         |   It represents the index of the layer in which the marker belongs.                                             |
+|   name               |   It represents the name of the event.                                                                          |
+|   x                  |   It represents the horizontal location of the mouse pointer on the map when the drag action is performed.      |
+|   y                  |   It represents the vertical location of the mouse pointer on the map when the drag action is performed.        |
 
 The following example shows how to use marker drag events to customize the data of the drag and dropped marker in the marker data source.
 
