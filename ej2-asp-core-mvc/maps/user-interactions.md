@@ -63,16 +63,6 @@ The following options are available in toolbar.
 4. Pan - Switches to panning if rectangular zoom is activated.
 5. Reset - Restores the Maps to the default view.
 
-The following properties are available in toolbars to customize the zooming toolbars.
-
-* `Color` - To apply the color for toolbars in Maps.
-* `HighlightColor` - To apply the color for the zooming toolbar when the mouse has hovered on the toolbar element in Maps.
-* `HorizontalAlignment` - To customize the position type of toolbar when it is placed horizontally.
-* `SelectionColor` - To apply the color for the zooming toolbar when clicking the zooming toolbar in Maps.
-* `ToolBarOrientation` - To customize the orientation of the zooming toolbar.
-* `Toolbars` - To customize the items that are to be shown in the zooming toolbar in Maps.
-* `VerticalAlignment` - To customize the position type of toolbar when it is placed vertically.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -343,7 +333,7 @@ The zoom toolbar can be customized by using the [ToolbarSettings](https://help.s
 {% endtabs %}
 {% endif %}
 
-![Zoom toolbar customization](./images/Zoom/zoom-toobar-customization.PNG)
+![Zoom toolbar customization](./images/UserInteraction/zoom-toolbar-customization.PNG)
 
 <!-- markdownlint-disable MD036 -->
 **Customizing the buttons in the zoom toolbar**
@@ -399,7 +389,7 @@ The appearance of the buttons in the zoom toolbar can be customized by using the
 {% endtabs %}
 {% endif %}
 
-![Zoom toolbar button customization](./images/Zoom/zoom-toobar-button-customization.PNG)
+![Zoom toolbar button customization](./images/UserInteraction/zoom-toolbar-button-customization.PNG)
 
 <!-- markdownlint-disable MD036 -->
 **Customizing the tooltip of the zoom toolbar**
@@ -455,7 +445,7 @@ The appearance of the tooltip of the zoom toolbar can be customized by using the
 {% endtabs %}
 {% endif %}
 
-![Zoom toolbar tooltip customization](./images/Zoom/zoom-toobar-tooltip-customization.PNG)
+![Zoom toolbar tooltip customization](./images/UserInteraction/zoom-toolbar-tooltip-customization.PNG)
 
 ## Selection
 
