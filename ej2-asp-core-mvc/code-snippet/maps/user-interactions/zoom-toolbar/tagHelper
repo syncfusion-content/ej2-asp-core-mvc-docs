@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2;
+
+<div id="control-section">
+    <ejs-maps id="maps" load="load">
+        <e-maps-zoomsettings enable="true"></e-maps-zoomsettings>
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map">
+                <e-layersettings-shapesettings fill="#C1DFF5"></e-layersettings-shapesettings>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>
+
+<script>
+    function load(args) {
+        var maps = document.getElementById('maps').ej2_instances[0];
+        maps.zoomSettings.toolbarSettings.orientation ="Vertical";
+        maps.zoomSettings.toolbarSettings.backgroundColor = "pink";
+        maps.zoomSettings.toolbarSettings.borderWidth = 3;
+        maps.zoomSettings.toolbarSettings.borderColor = "green";
+        maps.zoomSettings.toolbarSettings.verticalAlignment = "Near";
+        maps.zoomSettings.toolbarSettings.buttonSettings.toolbarItems = ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset'];
+    }
+</script>
