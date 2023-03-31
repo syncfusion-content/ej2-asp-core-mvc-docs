@@ -156,10 +156,12 @@ In this bubble HeatMap type, size and color of the bubble represents the data va
 
 The following examples demonstrate different data binding with the **SizeAndColor** bubble type set in the HeatMap.
 
+<!-- markdownlint-disable MD036 -->
 **Array binding**
 
 When an array of numbers is specified as the data source, the bubble HeatMap can be rendered with different sizes and colors depending on the bound data.
 
+<!-- markdownlint-disable MD036 -->
 **Table**
 
 The following example illustrates how to render a bubble HeatMap with different sizes and colors using array table binding.
@@ -189,6 +191,7 @@ The following example illustrates how to render a bubble HeatMap with different 
 
 ![ASP.NET Core HeatmapChart with bubble data using array table binding](./images/bubble-heatmap/heatmap-with-size-color-table.png)
 
+<!-- markdownlint-disable MD036 -->
 **Cell**
 
 The following example illustrates how to render a bubble HeatMap with different sizes and colors using array cell binding.
@@ -218,10 +221,12 @@ The following example illustrates how to render a bubble HeatMap with different 
 
 ![ASP.NET Core HeatmapChart with bubble data using array cell binding](./images/bubble-heatmap/heatmap-with-size-color-cell.png)
 
+<!-- markdownlint-disable MD036 -->
 **JSON binding**
 
 When a list of JSON objects are specified as data source, the bubble HeatMap can be rendered with different sizes and colors depending on the bound data.
 
+<!-- markdownlint-disable MD036 -->
 **Table**
 
 The following example illustrates how to render a bubble HeatMap with different sizes and colors using JSON table binding.
@@ -251,6 +256,7 @@ The following example illustrates how to render a bubble HeatMap with different 
 
 ![ASP.NET Core HeatmapChart with bubble data using JSON table binding](./images/bubble-heatmap/heatmap-with-size-color-json-table.png)
 
+<!-- markdownlint-disable MD036 -->
 **Cell**
 
 The following example illustrates how to render a bubble HeatMap with different sizes and colors using JSON cell binding.
@@ -280,6 +286,7 @@ The following example illustrates how to render a bubble HeatMap with different 
 
 ![ASP.NET Core HeatmapChart with bubble data using JSON cell binding](./images/bubble-heatmap/heatmap-with-size-color-json-cell.png)
 
+<!-- markdownlint-disable MD036 -->
 **Binding size and color values from datasource**
 
 {% if page.publishingplatform == "aspnet-core" %}
