@@ -34,13 +34,13 @@
                         </e-ribbon-collection>
                         <e-ribbon-collection>
                             <e-ribbon-items>
-                                <e-ribbon-item type="Button">
+                                <e-ribbon-item type=Button>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button">
+                                <e-ribbon-item type=Button>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button">
+                                <e-ribbon-item type=Button>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
@@ -51,10 +51,10 @@
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>
-                                <e-ribbon-item type="ComboBox">
+                                <e-ribbon-item type=ComboBox>
                                     <e-ribbon-comboboxsettings dataSource=fontStyle index=3 allowFiltering=true width="150px"></e-ribbon-comboboxsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="ComboBox">
+                                <e-ribbon-item type=ComboBox>
                                     <e-ribbon-comboboxsettings dataSource=fontSize index=3 width="65px"></e-ribbon-comboboxsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
@@ -64,19 +64,19 @@
                                 <e-ribbon-item type=ColorPicker allowedSizes=Small>
                                     <e-ribbon-colorpickersettings value="#123456"></e-ribbon-colorpickersettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button" allowedSizes=Small>
+                                <e-ribbon-item type=Button allowedSizes=Small>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-bold" isToggle=true></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button" allowedSizes=Small>
+                                <e-ribbon-item type=Button allowedSizes=Small>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-italic" isToggle=true></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button" allowedSizes=Small>
+                                <e-ribbon-item type=Button allowedSizes=Small>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-underline" isToggle=true></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button" allowedSizes=Small>
+                                <e-ribbon-item type=Button allowedSizes=Small>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-strikethrough" isToggle=true></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button" allowedSizes=Small>
+                                <e-ribbon-item type=Button allowedSizes=Small>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-change-case" isToggle=true></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
@@ -87,7 +87,7 @@
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>
-                                <e-ribbon-item type="Button" allowedSizes=Large>
+                                <e-ribbon-item type=Button allowedSizes=Large>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-edit" content="Editor"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
@@ -102,7 +102,7 @@
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>
-                                <e-ribbon-item type="DropDown" allowedSizes=Large>
+                                <e-ribbon-item type=DropDown allowedSizes=Large>
                                     <e-ribbon-dropdownsettings iconCss="e-icons e-table" content="Table" items="tableOptions"></e-ribbon-dropdownsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
