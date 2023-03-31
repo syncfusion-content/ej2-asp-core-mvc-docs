@@ -1,0 +1,29 @@
+@using Syncfusion.EJ2;
+
+<div id="container">
+    
+<ejs-circulargauge id="circular" enableRtl="true">
+     <e-circulargauge-legendsettings visible="true"></e-circulargauge-legendsettings>
+     <e-circulargauge-tooltip enable="true" enableAnimation="false" type='new string[]{"Pointer", "Range"}' format="Pointer : {value}">
+    </e-circulargauge-tooltip>
+    <e-circulargauge-axes>
+        <e-circulargauge-axis startAngle="210" endAngle="150" radius="80%" minimum="0" maximum="120" direction="AntiClockWise">
+            <e-axis-labelstyle position="Inside" useRangeColor="false"></e-axis-labelstyle>
+            <e-axis-majorticks offset="5" color="#9E9E9E" height="10"></e-axis-majorticks>
+            <e-axis-minorticks height="0"></e-axis-minorticks>
+            <e-circulargauge-ranges>
+                <e-circulargauge-range start="0" end="40" color="#30B32D"></e-circulargauge-range>
+                <e-circulargauge-range start="40" end="80" color="#FFDD00"></e-circulargauge-range>
+                <e-circulargauge-range start="80" end="120" color="#F03E3E"></e-circulargauge-range>
+            </e-circulargauge-ranges>
+            <e-circulargauge-pointers>
+                <e-circulargauge-pointer value="65" radius="60%" pointerWidth="8" color="#757575">
+                    <e-pointer-cap radius="7" color="#757575">
+                    </e-pointer-cap>
+                    <e-pointer-needletail length="18%"></e-pointer-needletail>
+                </e-circulargauge-pointer>
+            </e-circulargauge-pointers>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>
+</div>
