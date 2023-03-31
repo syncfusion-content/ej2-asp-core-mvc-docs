@@ -165,10 +165,10 @@ You can use the `e-ribbon-collection` tag helper to define each ribbon collectio
                         </e-ribbon-collection>
                         <e-ribbon-collection id="cutcopy-collection">
                             <e-ribbon-items>
-                                <e-ribbon-item type="Button">
+                                <e-ribbon-item type=Button>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button">
+                                <e-ribbon-item type=Button>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
