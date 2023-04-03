@@ -74,7 +74,7 @@ To render a bubble HeatMap with size series, set the [BubbleType](https://help.s
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatmapChart with Bubble Size](./images/bubble-heatmap/heatmap-with-bubble-size-type.png)
+![ASP.NET Core HeatMap chart with Size bubble type](./images/bubble-heatmap/heatmap-with-bubble-size-type.png)
 
 ### Bubble color
 
@@ -107,7 +107,7 @@ To represent the data points with variations in bubble colors, set the [BubbleTy
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatmapChart with Bubble Color](./images/bubble-heatmap/heatmap-with-bubble-color-type.png)
+![ASP.NET Core HeatMap chart with Color bubble type](./images/bubble-heatmap/heatmap-with-bubble-color-type.png)
 
 ### Bubble sector
 
@@ -140,7 +140,7 @@ To render the data points with bubble sector, set the [BubbleType](https://help.
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatmapChart with Bubble Sector](./images/bubble-heatmap/heatmap-with-bubble-sector-type.png)
+![ASP.NET Core HeatMap chart with Sector bubble type](./images/bubble-heatmap/heatmap-with-bubble-sector-type.png)
 
 ### Combining size and color bubble types
 
@@ -189,7 +189,7 @@ The following example illustrates how to render a bubble HeatMap with different 
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatmapChart with bubble data using array table binding](./images/bubble-heatmap/heatmap-with-size-color-table.png)
+![ASP.NET Core Bubble HeatMap with size and color combined and rendered with array data and table adaptor type](./images/bubble-heatmap/heatmap-with-size-color-table.png)
 
 <!-- markdownlint-disable MD036 -->
 **Cell**
@@ -219,7 +219,7 @@ The following example illustrates how to render a bubble HeatMap with different 
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatmapChart with bubble data using array cell binding](./images/bubble-heatmap/heatmap-with-size-color-cell.png)
+![ASP.NET Core Bubble HeatMap with size and color combined and rendered with array data and cell adaptor type](./images/bubble-heatmap/heatmap-with-size-color-cell.png)
 
 <!-- markdownlint-disable MD036 -->
 **JSON binding**
@@ -254,7 +254,7 @@ The following example illustrates how to render a bubble HeatMap with different 
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatmapChart with bubble data using JSON table binding](./images/bubble-heatmap/heatmap-with-size-color-json-table.png)
+![ASP.NET Core Bubble HeatMap with size and color combined and rendered with JSON data and table adaptor type](./images/bubble-heatmap/heatmap-with-size-color-json-table.png)
 
 <!-- markdownlint-disable MD036 -->
 **Cell**
@@ -284,7 +284,7 @@ The following example illustrates how to render a bubble HeatMap with different 
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatmapChart with bubble data using JSON cell binding](./images/bubble-heatmap/heatmap-with-size-color-json-cell.png)
+![ASP.NET Core Bubble HeatMap with size and color combined and rendered with JSON data and cell adaptor type](./images/bubble-heatmap/heatmap-with-size-color-json-cell.png)
 
 <!-- markdownlint-disable MD036 -->
 **Binding size and color values from datasource**
@@ -320,4 +320,4 @@ The size and color of the bubbles in the **SizeAndColor** bubble HeatMap type ca
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatmapChart with bubble data mapping using JSON cell binding](./images/bubble-heatmap/heatmap-with-size-color-json-cell.png)
+![ASP.NET Core Bubble HeatMap with size and color type and bubble attributes](./images/bubble-heatmap/heatmap-with-size-color-json-cell.png)
