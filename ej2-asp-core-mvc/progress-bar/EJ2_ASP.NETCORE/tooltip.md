@@ -8,8 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Tooltip in ##Platform_Name## ProgressBar Component
 
-# Tooltip
+## Tooltip
 
 The tooltip for the progress bar is used to represent the progress value. During the initial load, it can be enabled by using the [`enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.ProgressBar.ProgressBarTooltipSettings.html#Syncfusion_EJ2_ProgressBar_ProgressBarTooltipSettings_Enable) property. The [`showTooltipOnHover`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.ProgressBar.ProgressBarTooltipSettings.html#Syncfusion_EJ2_ProgressBar_ProgressBarTooltipSettings_ShowTooltipOnHover) property can show the tooltip on mouseover.
 
