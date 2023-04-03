@@ -4,14 +4,14 @@
    XName("x").
    YName("yValue").
    DataSource(ViewBag.dataSource).
-   Name("Gold").
+   Name("Gold")
    .Add();
 
    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn).   
    XName("x").
-   YName("yValue").
-   DataSource(ViewBag.dataSource1).
-   Name("Silver").
+   YName("yValue1").
+   DataSource(ViewBag.dataSource).
+   Name("Silver")
    .Add();
    }).
    PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
