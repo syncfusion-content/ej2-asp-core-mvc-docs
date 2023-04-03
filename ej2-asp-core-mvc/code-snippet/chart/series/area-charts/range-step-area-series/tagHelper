@@ -1,4 +1,4 @@
-<ejs-chart id="container">
+<ejs-chart id="container" title="Monthly Temperature Range">
     <e-chart-primaryxaxis valueType="Category" edgeLabelPlacement="Shift">
         <e-majorgridlines width="0"></e-majorgridlines>
     </e-chart-primaryxaxis>
