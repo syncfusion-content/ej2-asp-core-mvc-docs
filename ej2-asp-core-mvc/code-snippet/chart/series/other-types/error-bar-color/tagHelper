@@ -1,8 +1,11 @@
-<ejs-chart id="container" load="window.onload" width="60%">
+<ejs-chart id="container" load="window.onload" title="Unemployment rate (%)">
         <e-series-collection>
-            <e-series dataSource="ViewBag.dataSource" xName="x"  yName="y"
+            <e-series dataSource="ViewBag.dataSource" xName="x"  yName="y" width="2" name="India"
              type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
-             <e-series-errorbar visible="true" verticalError="Error" errorBarColorMapping="color">
+             <e-series-marker visible="true"></e-series-marker>
+             <e-series-errorbar visible="true" verticalError="error" errorBarColorMapping="color">
             </e-series>
         </e-series-collection>
+        <e-chart-primaryxaxis minimum="2005" maximum="2012" interval="1" title="Year">
+        </e-chart-primaryxaxis>
 </ejs-chart>
