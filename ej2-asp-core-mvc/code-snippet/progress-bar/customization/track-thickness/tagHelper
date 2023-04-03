@@ -1,4 +1,10 @@
 <ejs-progressbar id="container" minimum="0" maximum="100" enableRtl="false" type='Linear'
         value=50 width='90%' height='60' trackColor="#F8C7D8" progressColor="#E3165B"
-        showProgressValue="true" trackThickness=24 cornerRadius="Round" progressThickness=24 secondaryProgressColor="green">
+        showProgressValue="true" trackThickness=24 cornerRadius="Round" progressThickness=24 secondaryProgress=60 secondaryProgressColor="green" textRender="textRender">
+        <e-progressbar-labelstyle color="#FFFFFF"></e-progressbar-labelstyle>
+        <e-progressbar-animation enable=true duration=2000 delay=0></e-progressbar-animation>
 </ejs-progressbar>
+
+var textRender = function (args) {
+        args.text = '50';
+}

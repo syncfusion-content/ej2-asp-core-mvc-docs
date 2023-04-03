@@ -1,6 +1,8 @@
- <ejs-chart id="container" width="60%">
+ <ejs-chart id="container">
         <e-series-collection>
-            <e-series dataSource="ViewBag.dataSource" xName="x" width="2" opacity="1" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepArea">
+            <e-series dataSource="ViewBag.dataSource" xName="x" high="high" low="low" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepArea">
             </e-series>
         </e-series-collection>
+        <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category">
+        </e-chart-primaryxaxis>
     </ejs-chart>

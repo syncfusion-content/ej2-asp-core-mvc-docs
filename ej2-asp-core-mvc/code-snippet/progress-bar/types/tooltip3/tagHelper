@@ -1,6 +1,6 @@
-<ejs-progressbar id="lineardeterminate" type='Linear' height='60' value=100>
-        <e-progressbar-animation enable=true duration=2000 delay=0></e-progressbar-animation>
-        <e-progressbar-tooltipsettings enable="true" format="Progress: ${value}">
-            <e-tooltipsettings-textstyle fontWeight="600" size="9px" color="red" fontFamily="Roboto" fontStyle="Italic"></e-tooltipsettings-textstyle>
-        </e-progressbar-tooltipsettings>
+<ejs-progressbar id="lineardeterminate" type='Linear' height='90' value=90>
+    <e-progressbar-animation enable=true duration=2000 delay=0></e-progressbar-animation>
+    <e-progressbar-tooltipsettings enable="true" format="Progress: ${value}">
+        <e-tooltipsettings-textstyle fontWeight="900" size="15px" color="red" fontFamily="Roboto" fontStyle="Italic"></e-tooltipsettings-textstyle>
+    </e-progressbar-tooltipsettings>
 </ejs-progressbar>

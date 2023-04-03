@@ -9,7 +9,9 @@ documentation: ug
 ---
 
 
-# Center label
+# Center label in ##Platform_Name## Accumulation Chart Component
+
+## Center label
 
 Using [`CenterLabel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartCenterLabel.html) it is now possible to place a label at the center of a pie or doughnut chart. To configure the default text rendered on the center label for the pie and doughnut charts, use the [`Text`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartCenterLabel.html#Syncfusion_EJ2_Charts_AccumulationChartCenterLabel_Text) property in the [`CenterLabel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartCenterLabel.html).
 
