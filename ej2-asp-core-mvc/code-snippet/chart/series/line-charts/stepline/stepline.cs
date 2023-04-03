@@ -22,5 +22,4 @@
         {
             public string x;
             public double y;
-            public double y1;
         }

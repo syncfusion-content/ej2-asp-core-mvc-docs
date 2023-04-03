@@ -6,4 +6,6 @@
     <e-accumulationchart-centerlabel text="Mobile<br>Browsers<br>Statistics"
         hoverTextFormat="${point.x} <br> Browser Share <br> ${point.y}%">
     </e-accumulationchart-centerlabel>
+    <e-accumulationchart-legendsettings visible="false">
+    </e-accumulationchart-legendsettings>
 </ejs-accumulationchart>

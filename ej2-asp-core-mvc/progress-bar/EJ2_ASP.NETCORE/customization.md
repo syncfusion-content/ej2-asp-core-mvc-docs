@@ -121,7 +121,7 @@ The inner radius of the progress bar can be customized using `innerRadius` prope
 
 <!-- markdownlint-disable MD033 -->
 
-Customize the color of progress, secondary progress, and track by using the [`progressColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_ProgressColor), [`secondaryProgressColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_SecondaryProgressColor), and [`trackColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_TrackColor) properties.
+Customize the color of progress, secondary progress, and track by using the [`progressColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_ProgressColor), [`secondaryProgressColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_SecondaryProgressColor) and [`trackColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_TrackColor) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
