@@ -9,5 +9,5 @@
      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine)
      .Marker(mkr => mkr.Visible(true)).XName("x").YName("y3").DataSource(ViewBag.dataSource).Name("Charle").DashArray("5,1").Add();
  })
- .PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+ .PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).Title("Family Expense for Month")
  .Render()

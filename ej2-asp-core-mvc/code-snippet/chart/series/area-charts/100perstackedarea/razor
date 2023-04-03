@@ -1,17 +1,24 @@
 @Html.EJS().Chart("container").Series(series =>
    {
-   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackedArea100).  
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea100).  
    XName("x").
-   YName("yValue").
+   YName("y").
    DataSource(ViewBag.dataSource).
-   Name("Gold").
+   Name("Gold")
    .Add();
 
-   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackedArea100).   
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea100).   
    XName("x").
-   YName("yValue").
-   DataSource(ViewBag.dataSource1).
-   Name("Silver").
+   YName("y1").
+   DataSource(ViewBag.dataSource).
+   Name("Silver")
+   .Add();
+
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea100).   
+   XName("x").
+   YName("y2").
+   DataSource(ViewBag.dataSource).
+   Name("Platinum")
    .Add();
    }).
    PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
