@@ -34,7 +34,7 @@
         }];
         args.heatmap.yAxis.multiLevelLabels = [
             {
-                border: { type: 'Rectangle', color: '#a19d9d' },
+                border: { type: 'Brace', color: '#a19d9d' },
                 categories: [
                     { start: 0, end: 2, text: 'Q1' },
                     { start: 3, end: 5, text: 'Q2' },
@@ -43,7 +43,7 @@
                 ]
             },
             {
-                border: { type: 'Rectangle', color: '#a19d9d' },
+                border: { type: 'Brace', color: '#a19d9d' },
                 categories: [
                     { start: 0, end: 5, text: 'First Half Yearly' },
                     {
@@ -54,7 +54,7 @@
                 ]
             },
             {
-                border: { type: 'Rectangle', color: '#a19d9d' },
+                border: { type: 'Brace', color: '#a19d9d' },
                 categories: [
                     { start: 0, end: 11, text: 'Yearly' }
                 ]
