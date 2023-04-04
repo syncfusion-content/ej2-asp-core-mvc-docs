@@ -246,7 +246,7 @@ The current pivot report can be saved as a JSON file in the desired path and loa
 
 ## Save and load reports to a SQL database
 
-SQL Server is a relational database management system (RDBMS) that can be used to store and manage large amounts of data. In this topic, we will see how to save, save as, rename, load, delete, and add reports between a SQL Server database and a ASP.NET Core Pivot Table at runtime.
+SQL Server is a relational database management system (RDBMS) that can be used to store and manage large amounts of data. In this topic, we will see how to save, save as, rename, load, delete, and add reports between a SQL Server database and an ASP.NET Core Pivot Table at runtime.
 
 ### Create a Web API service to connect to a SQL Server database
 
@@ -466,12 +466,12 @@ For example, the report shown in the following code snippet will be passed to th
         var report = JSON.parse(args.report);
         report.dataSourceSettings.dataSource = [];
         fetch('https://localhost:44313/Pivot/SaveReport', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ reportName: args.reportName, report: JSON.stringify(report) })
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ reportName: args.reportName, report: JSON.stringify(report) })
         }).then(response => {
             fetchReport(args);
         });
@@ -587,19 +587,19 @@ For example, if the report name **"Sample Report 1"** is selected from a dropdow
 <script>
     function loadReport(args) {
         fetch('https://localhost:44313/Pivot/LoadReport', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ reportName: args.reportName })
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ reportName: args.reportName })
         }).then(res => res.json())
         .then(response => {
             if (response) {
-            var report = JSON.parse(response);
-            var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
-            report.dataSourceSettings.dataSource = pivotTableObj.dataSourceSettings.dataSource;
-            pivotTableObj.dataSourceSettings = report.dataSourceSettings;
+                var report = JSON.parse(response);
+                var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
+                report.dataSourceSettings.dataSource = pivotTableObj.dataSourceSettings.dataSource;
+                pivotTableObj.dataSourceSettings = report.dataSourceSettings;
             }
         });
     }
@@ -669,7 +669,7 @@ namespace MyWebApp.Controllers
 
 ### Renaming a report
 
-When you select the **"Rename a current report"** option from the toolbar, the [renameReport](#renameReport) event is triggered. In this event, an AJAX request is made to the **RenameReport** method of the Web API controller, passing the current and new report names, where you can use the current report name to identify the report and resave it with the new report name in the SQL database.
+When you select the **"Rename a current report"** option from the toolbar, the [renameReport](#renamereport) event is triggered. In this event, an AJAX request is made to the **RenameReport** method of the Web API controller, passing the current and new report names, where you can use the current report name to identify the report and resave it with the new report name in the SQL database.
 
 For example, if we rename the current report from **"Sample Report 1"** to **"Sample Report 2"**, both **"Sample Report 1"** and **"Sample Report 2"** will be passed to the **RenameReport** method, which will rename the current report with the new report name **"Sample Report 2"** in the SQL database.
 
@@ -707,14 +707,14 @@ For example, if we rename the current report from **"Sample Report 1"** to **"Sa
 <script>
     function renameReport(args) {
         fetch('https://localhost:44313/Pivot/RenameReport', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ reportName: args.reportName, renameReport: args.rename, isReportExists: args.isReportExists })
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ reportName: args.reportName, renameReport: args.rename, isReportExists: args.isReportExists })
         }).then(response => {
-        fetchReport(args);
+            fetchReport(args);
         });
     }
 </script>
@@ -788,7 +788,7 @@ namespace MyWebApp.Controllers
 
 ### Deleting a report
 
-When you select the **"Delete a current report"** option from the toolbar, the [removeReport](#removeReport) event is triggered. In this event, an AJAX request is made to the **RemoveReport** method of the Web API controller, passing the current report name to identify and delete the appropriate report from the SQL database.
+When you select the **"Delete a current report"** option from the toolbar, the [removeReport](#removereport) event is triggered. In this event, an AJAX request is made to the **RemoveReport** method of the Web API controller, passing the current report name to identify and delete the appropriate report from the SQL database.
 
 N> * If the current report **n** from the pivot table is deleted, the pivot table will automatically load the last report from the report list.
 N> * When a report is removed from a pivot table with only one report, the SQL database refreshes; however, the pivot table will continue to show the removed report until a new report is added to the pivot table.
@@ -829,14 +829,14 @@ For example, if we delete the current report **"Sample Report 2"** from the pivo
 <script>
     function removeReport(args) {
         fetch('https://localhost:44313/Pivot/RemoveReport', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ reportName: args.reportName })
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ reportName: args.reportName })
         }).then(response => {
-        fetchReport(args);
+            fetchReport(args);
         });
     }
 </script>
@@ -905,7 +905,7 @@ namespace MyWebApp.Controllers
 
 ### Adding a report
 
-When you select the **"Create a new report"** option from the toolbar, the [newReport](#newReport) event is triggered, followed by the [saveReport](#savereport) event. To save this new report to the SQL database, use the [saveReport](#savereport) event triggered later, and then follow the save report briefing in the preceding [topic](#saving-a-report).
+When you select the **"Create a new report"** option from the toolbar, the [newReport](#newreport) event is triggered, followed by the [saveReport](#savereport) event. To save this new report to the SQL database, use the [saveReport](#savereport) event triggered later, and then follow the save report briefing in the preceding [topic](#saving-a-report).
 
 ![Adding a report in the SQL database](images/output_new_report.png)
 
