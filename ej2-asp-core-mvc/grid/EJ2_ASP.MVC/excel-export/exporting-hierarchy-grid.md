@@ -15,9 +15,9 @@ The grid have an option to export the hierarchy grid to excel document. By defau
 
 | Mode     | Behavior    |
 |----------|-------------|
-| Expanded | Exports the visible child grids in expanded state. |
+| Expanded | Exports the visible child grids in expanded state and remaining child grid in collapsed state when args.isChild property is set to true in [beforeExcelExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_BeforeExcelExport) event. |
 | All      | Exports the all the child grids in expanded state. |
-| None     | Exports all child grids in collapse state. |
+| None     | Exports all child grids in collapsed state when args.isChild property is set to true in [beforeExcelExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_BeforeExcelExport) event. |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
