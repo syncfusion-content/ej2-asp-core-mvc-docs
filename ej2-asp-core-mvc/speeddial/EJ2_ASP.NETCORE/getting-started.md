@@ -140,4 +140,4 @@ The speed dial can be positioned using the [position](https://help.syncfusion.co
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core SpeedDial Control](images/speeddial-position-sample.png)
+![ASP.NET Core SpeedDial Control](images/speeddial-position.png)
