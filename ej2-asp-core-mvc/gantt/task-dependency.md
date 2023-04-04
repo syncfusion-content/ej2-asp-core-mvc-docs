@@ -125,10 +125,10 @@ By default, the dependency offsets are automatically updated in the Gantt chart 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/predecessor/predecessorWithOffset-cs1/tagHelper %}
+{% include code-snippet/gantt/predecessorWithOffset-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PredecessorWithOffset.cs" %}
-{% include code-snippet/gantt/predecessor/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
+{% include code-snippet/gantt/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -136,10 +136,10 @@ By default, the dependency offsets are automatically updated in the Gantt chart 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt/predecessor/predecessorWithOffset-cs1/razor %}
+{% include code-snippet/gantt/predecessorWithOffset-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PredecessorWithOffset.cs" %}
-{% include code-snippet/gantt/predecessor/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
+{% include code-snippet/gantt/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
