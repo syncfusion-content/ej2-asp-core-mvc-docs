@@ -245,7 +245,7 @@ The current pivot report can be saved as a JSON file in the desired path and loa
 
 ## Save and load reports to a SQL database
 
-SQL Server is a relational database management system (RDBMS) that can be used to store and manage large amounts of data. In this topic, we will see how to save, save as, rename, load, delete, and add reports between a SQL Server database and a ASP.NET MVC Pivot Table at runtime.
+SQL Server is a relational database management system (RDBMS) that can be used to store and manage large amounts of data. In this topic, we will see how to save, save as, rename, load, delete, and add reports between a SQL Server database and an ASP.NET MVC Pivot Table at runtime.
 
 ### Create a Web API service to connect to a SQL Server database
 
@@ -455,12 +455,12 @@ For example, the report shown in the following code snippet will be passed to th
         var report = JSON.parse(args.report);
         report.dataSourceSettings.dataSource = [];
         fetch('https://localhost:44313/Pivot/SaveReport', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ reportName: args.reportName, report: JSON.stringify(report) })
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ reportName: args.reportName, report: JSON.stringify(report) })
         }).then(response => {
             fetchReport(args);
         });
@@ -566,19 +566,19 @@ For example, if the report name **"Sample Report 1"** is selected from a dropdow
 <script>
     function loadReport(args) {
         fetch('https://localhost:44313/Pivot/LoadReport', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ reportName: args.reportName })
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ reportName: args.reportName })
         }).then(res => res.json())
         .then(response => {
             if (response) {
-            var report = JSON.parse(response);
-            var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
-            report.dataSourceSettings.dataSource = pivotTableObj.dataSourceSettings.dataSource;
-            pivotTableObj.dataSourceSettings = report.dataSourceSettings;
+                var report = JSON.parse(response);
+                var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
+                report.dataSourceSettings.dataSource = pivotTableObj.dataSourceSettings.dataSource;
+                pivotTableObj.dataSourceSettings = report.dataSourceSettings;
             }
         });
     }
@@ -676,14 +676,14 @@ For example, if we rename the current report from **"Sample Report 1"** to **"Sa
 <script>
     function renameReport(args) {
         fetch('https://localhost:44313/Pivot/RenameReport', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ reportName: args.reportName, renameReport: args.rename, isReportExists: args.isReportExists })
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ reportName: args.reportName, renameReport: args.rename, isReportExists: args.isReportExists })
         }).then(response => {
-        fetchReport(args);
+            fetchReport(args);
         });
     }
 </script>
@@ -788,14 +788,14 @@ For example, if we delete the current report **"Sample Report 2"** from the pivo
 <script>
     function removeReport(args) {
         fetch('https://localhost:44313/Pivot/RemoveReport', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ reportName: args.reportName })
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ reportName: args.reportName })
         }).then(response => {
-        fetchReport(args);
+            fetchReport(args);
         });
     }
 </script>
