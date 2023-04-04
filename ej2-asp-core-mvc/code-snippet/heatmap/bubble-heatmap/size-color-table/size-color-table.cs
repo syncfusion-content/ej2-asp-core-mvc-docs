@@ -7,6 +7,11 @@ public ActionResult Gradient()
                 fontStyle = "Normal",
                 fontFamily = "Segoe UI"
             };
+            ViewBag.border = new
+            {
+                color = "red",
+                opacity = 1
+            };
             string[] xlabels = new string[3] { "2017", "2016", "2015" };
             ViewBag.xLabels = xlabels;
             string[] yLabels = new string[6] { "Jan-Feb", "Mar-Apr", "May-Jun", "Jul-Aug", "Sep-Oct", "Nov-Dec" };
