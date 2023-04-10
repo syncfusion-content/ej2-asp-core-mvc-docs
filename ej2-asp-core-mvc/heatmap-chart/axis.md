@@ -331,7 +331,7 @@ The multilevel labels can be customized by using the following properties and ta
 {% include code-snippet/heatmap/axis/multi-level-labels/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Multi-level-labels.cs" %}
-{% include code-snippet/heatmap/axis/multi-level-category/multi-level-labels.cs %}
+{% include code-snippet/heatmap/axis/multi-level-labels/multi-level-labels.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
