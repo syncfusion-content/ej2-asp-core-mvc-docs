@@ -8,6 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
 # Center label in ##Platform_Name## Accumulation Chart Component
 
 ## Center label
