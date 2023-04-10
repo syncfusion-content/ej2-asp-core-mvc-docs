@@ -112,6 +112,48 @@ You can change the open state of the hyperlink in the PDF Viewer by using the fo
 
 ![Alt text](./images/toc.png)
 
+## Keyboard navigation with Tab and Shift+Tab keys
+
+The Syncfusion PDF Viewer component supports keyboard navigation for the form fields in a PDF document using the `Tab` and `Shift+Tab` keys. This allows users to easily navigate through the form fields in a PDF document, making it easier for them to fill out forms.
+
+Here's how it works:
+
+Pressing the `Tab` key will move the focus to the `next formfield` in the document.
+
+![Alt text](./images/tab.gif)
+
+Pressing `Shift+Tab` will move the focus to the `previous formfield` in the document.
+
+![Alt text](./images/shift+tab.gif)
+
+N> The order of the form fields is determined by the order in which they appear in a PDF document.
+
+## How to navigate to the next and previous signature fields
+
+To navigate to the next and previous signature fields programmatically in Syncfusion PDF Viewer, you can use the following code snippet.
+
+```html
+
+<button onclick="nextField()">nextField</button>
+<button onclick="previousField()>previousField</button>
+
+<script>
+
+    function previousField() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.formFieldsModule.previousField();
+    }
+
+    function nextField() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.formFieldsModule.nextField();
+    }
+
+</script> 
+
+```
+[View Sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/EJ2-70478-navigate/Common/NavigateFields)
+
 ## See also
 
 * [Toolbar items](./toolbar)
