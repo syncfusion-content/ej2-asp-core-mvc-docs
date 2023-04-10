@@ -4,7 +4,7 @@
     
 <ejs-circulargauge id="circular" enableRtl="true">
      <e-circulargauge-legendsettings visible="true"></e-circulargauge-legendsettings>
-     <e-circulargauge-tooltip enable="true" enableAnimation="false" type='new string[]{"Pointer", "Range"}' format="Pointer : {value}">
+     <e-circulargauge-tooltip enable="true" enableAnimation="false" type='new string[]{"Pointer", "Range"}' format="Pointer : {value} ">
     </e-circulargauge-tooltip>
     <e-circulargauge-axes>
         <e-circulargauge-axis startAngle="210" endAngle="150" radius="80%" minimum="0" maximum="120" direction="AntiClockWise">
