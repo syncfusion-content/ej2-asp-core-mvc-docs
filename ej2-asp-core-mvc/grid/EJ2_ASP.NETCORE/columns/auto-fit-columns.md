@@ -14,9 +14,9 @@ The Grid has a feature that allows it to automatically adjust column widths base
 
 ## Resizing a Column to fit its content using autoFit method
 
-The [AutoFitColumns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AutoFitColumns) method resizes the column to fit the widest cell's content without wrapping. You can autofit a specific column at initial rendering by invoking the `AutoFitColumns` method in [DataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_DataBound_System_String_) event.
+The [autoFitColumns](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method resizes the column to fit the widest cell's content without wrapping. You can autofit a specific column at initial rendering by invoking the `autoFitColumns` method in [DataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_DataBound_System_String_) event.
 
-To use the `AutoFitColumns` method, inject the **Resize** module in the grid.
+To use the `autoFitColumns` method, inject the **Resize** module in the grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,7 +41,7 @@ To use the `AutoFitColumns` method, inject the **Resize** module in the grid.
 {% endtabs %}
 {% endif %}
 
-> You can autofit all the columns by invoking the `AutoFitColumns` method without specifying column names.
+> You can autofit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
 ## AutoFit columns with empty space
 
