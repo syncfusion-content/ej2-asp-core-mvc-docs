@@ -317,7 +317,7 @@ The size and color of the bubbles in the **SizeAndColor** bubble HeatMap type ca
 {% include code-snippet/heatmap/bubble-heatmap/size-color-json-cell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Size-color-json-cell.cs" %}
-{% include code-snippet/heatmap/bubble-heatmap/size-color-data-json-cell/size-color-json-cell.cs %}
+{% include code-snippet/heatmap/bubble-heatmap/size-color-json-cell/size-color-json-cell.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
