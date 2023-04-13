@@ -8,7 +8,7 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# How to clear the "Web service not listening" error
+# How to clear the "Web-service is not listening" error
 
 ![Alt text](./images/webservice.png)
 
