@@ -310,6 +310,13 @@ namespace MyWebService.Controllers
             RenameReportInDB(reportArgs.ReportName, reportArgs.RenameReport, reportArgs.isReportExists);
         }
 
+        public class RenameReportDB
+        {
+            public string ReportName { get; set; }
+            public string RenameReport { get; set; }
+            public bool isReportExists { get; set; }
+        }
+
         private void SaveReportToDB(string reportName, string report)
         {
             SqlConnection sqlConn = OpenConnection();
@@ -723,6 +730,13 @@ namespace MyWebApp.Controllers
         public void RenameReport([FromBody] RenameReportDB reportArgs)
         {
             RenameReportInDB(reportArgs.ReportName, reportArgs.RenameReport, reportArgs.isReportExists);
+        }
+
+        public class RenameReportDB
+        {
+            public string ReportName { get; set; }
+            public string RenameReport { get; set; }
+            public bool isReportExists { get; set; }
         }
 
         private void RenameReportInDB(string reportName, string renameReport, bool isReportExists)
