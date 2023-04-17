@@ -13,7 +13,7 @@ documentation: ug
 
 ## High Low Open Close
 
-HiloOpenClose series is used to represent the low, high, open and closing values over time. To render a HiloOpenClose series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `HiloOpenClose`.
+HiloOpenClose series is used to represent the low, high, open and closing values over time. To render a HiloOpenClose series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`HiloOpenClose`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_HiloOpenClose).
 
 HiloOpenClose series requires 5 fields (x, high, low, open and close) to show the high, low, open and close price values in the stock.
 
@@ -75,5 +75,5 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 
 ## See Also
 
-* [Data Label](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html)
-* [Tooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html)
+* [Data Label](../data-labels)
+* [Tooltip](../tool-tip)
