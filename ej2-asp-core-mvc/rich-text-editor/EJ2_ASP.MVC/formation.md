@@ -83,5 +83,5 @@ N> The third-party library such as [`Marked`](https://marked.js.org/#/README.md#
 
 ## See Also
 
-* [How to integrate the third party library](./third-party-integration/)
+* [How to integrate the third party library](./third-party-integration)
 * [How to render the iframe](./iframe/)
