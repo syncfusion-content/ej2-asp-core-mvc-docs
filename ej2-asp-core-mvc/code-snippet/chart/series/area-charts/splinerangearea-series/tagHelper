@@ -7,13 +7,13 @@
         <e-majorticklines width="0"></e-majorticklines>
     </e-chart-primaryyaxis>
     <e-series-collection>
-        <e-series name="England" xName="x" high="high" low="low" dataSource="ViewBag.dataSource"
-                    opacity="0.5" dashArray="5,5" fill="blue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea">
-                    <e-series-border width="2" color="red"></e-series-border>
+        <e-series name="England" xName="x" high="high" low="low" dataSource="ViewBag.dataSource" opacity="0.5"
+            dashArray="5,5" fill="blue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea">
+            <e-series-border width="2" color="red"></e-series-border>
         </e-series>
-        <e-series name="India" xName="x" high="high1" low="low1" dataSource="ViewBag.dataSource"
-                    opacity="0.5" dashArray="5,5" fill="green" type="@Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea">
-                    <e-series-border width="2" color="yellow"></e-series-border>
+        <e-series name="India" xName="x" high="high1" low="low1" dataSource="ViewBag.dataSource" opacity="0.5"
+            dashArray="5,5" fill="green" type="@Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea">
+            <e-series-border width="2" color="yellow"></e-series-border>
         </e-series>
     </e-series-collection>
 </ejs-chart>
