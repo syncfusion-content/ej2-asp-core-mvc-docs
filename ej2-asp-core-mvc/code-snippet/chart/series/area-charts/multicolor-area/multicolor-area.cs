@@ -1,4 +1,4 @@
- public IActionResult Index()
+public IActionResult Index()
         {
             List<ChartData> chartData = new List<ChartData>
             {

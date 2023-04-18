@@ -1,7 +1,4 @@
 public IActionResult Index()
-       {
-            return View();
-        } public ActionResult Index()
         {
             List<HistogramChartData> chartData = new List<HistogramChartData>
             {

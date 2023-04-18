@@ -22,13 +22,6 @@
             .YName("y2")
             .Width(2)
             .DataSource(ViewBag.dataSource).Add();
-        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Polar)
-          .DrawType(Syncfusion.EJ2.Charts.ChartDrawType.StackingArea)
-          .Name("2016")
-          .XName("x")
-          .YName("y3")
-          .Width(2)
-          .DataSource(ViewBag.dataSource).Add();
     })
       .PrimaryXAxis(xaxis =>
          xaxis.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
