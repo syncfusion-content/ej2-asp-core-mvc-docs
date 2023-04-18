@@ -10,23 +10,33 @@ documentation: ug
 
 # Internationalization in Circular Gauge Control
 
-Circular Gauge provides support for internationalization for the following gauge elements.
+Circular Gauge provides internationalization support for below elements.
 
 * Axis Labels
 * Tooltip
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 For more information about number formatter, you can refer [internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization).
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+For more information about number formatter, you can refer [internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization).
+
+{% endif %}
 
 ## Globalization
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Globalization is the process of designing and developing a component that works in different cultures/locales. Internationalization library is used to globalize number in CircularGauge component using [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Format) property in [labelStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html).
+Globalization is the process of designing and developing a component that works in different cultures/locales.
+
+Internationalization library is used to globalize number in CircularGauge component using [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Format) property in [labelStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html).
 
 <!-- markdownlint-disable MD036 -->
 **Numeric Format**
 
-In the below example axis labels are `globalized` to **EUR**.
+In the below example, axis labels are globalized to **EUR**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -38,12 +48,14 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Globalization is the process of designing and developing a component that works in different cultures/locales. Internationalization library is used to globalize number in CircularGauge component using [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Format) property in [LabelStyle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html).
+Globalization is the process of designing and developing a component that works in different cultures/locales.
+
+Internationalization library is used to globalize number in CircularGauge component using [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Format) property in [LabelStyle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html).
 
 <!-- markdownlint-disable MD036 -->
 **Numeric Format**
 
-In the below example axis labels are `globalized` to **EUR**.
+In the below example axis labels are globalized to **EUR**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

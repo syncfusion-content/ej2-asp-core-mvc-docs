@@ -347,6 +347,6 @@ Open and save helper functions are shipped in the Syncfusion.EJ2.Spreadsheet pac
 
 ## See Also
 
-* [Filtering](./filter)
-* [Sorting](./sort)
-* [Hyperlink](./link)
+* [Filtering](filter)
+* [Sorting](sort)
+* [Hyperlink](link)
