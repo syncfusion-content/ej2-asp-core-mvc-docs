@@ -88,7 +88,7 @@ The following example demonstrates the TimePicker in `German` culture.
 
 The TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_EnableRtl) property to set the RTL direction.
 
-The following code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using `L10n.load` method.
+The following code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using [`L10n.load`](https://ej2.syncfusion.com/documentation/api/base/l10n/) method.
 
 The following example demonstrates TimePicker in `Arabic` culture with right-to-left direction.
 

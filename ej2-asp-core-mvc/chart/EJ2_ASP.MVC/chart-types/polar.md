@@ -13,15 +13,15 @@ documentation: ug
 
 ## Polar
 
-To render a polar series, use series[`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Polar`.
+To render a polar series, use series[`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`Polar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_Polar).
 
 ## Draw Types
 
-Polar drawType property is used to change the series plotting type to line, column, area, range column, spline, scatter, stacking area and stacking column. The default value of drawType is `Line`.
+Polar drawType property is used to change the series plotting type to line, column, area, range column, spline, scatter, stacking area and stacking column. The default value of drawType is [`Line`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Line).
 
 ### Line
 
-To render a line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Line`. [`IsClosed`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IsClosed) property specifies whether to join start and end point of a line series used in polar chart to form a closed path. Default value of isClosed is true.
+To render a line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`Line`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Line). [`IsClosed`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IsClosed) property specifies whether to join start and end point of a line series used in polar chart to form a closed path. Default value of isClosed is true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -50,7 +50,7 @@ To render a line draw type, use series [`DrawType`](https://help.syncfusion.com/
 
 ### Spline
 
-To render a spline line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Spline`.
+To render a spline line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`Spline`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Spline).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,7 +79,7 @@ To render a spline line draw type, use series [`DrawType`](https://help.syncfusi
 
 ### Area
 
-To render a area line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Area`.
+To render a area line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`Area`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Area).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -108,7 +108,7 @@ To render a area line draw type, use series [`DrawType`](https://help.syncfusion
 
 ### Stacked Area
 
-To render a stacked area draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `StackingArea`.
+To render a stacked area draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`StackingArea`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_StackingArea).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -137,7 +137,7 @@ To render a stacked area draw type, use series [`DrawType`](https://help.syncfus
 
 ### Column
 
-To render a column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Column`.
+To render a column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Column).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -166,7 +166,7 @@ To render a column draw type, use series [`DrawType`](https://help.syncfusion.co
 
 ### Stacked Column
 
-To render a stacked column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `StackingColumn`.
+To render a stacked column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`StackingColumn`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_StackingColumn).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -195,7 +195,7 @@ To render a stacked column draw type, use series [`DrawType`](https://help.syncf
 
 ### Range Column
 
-To render a range column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `RangeColumn`.
+To render a range column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`RangeColumn`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_RangeColumn).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -224,7 +224,7 @@ To render a range column draw type, use series [`DrawType`](https://help.syncfus
 
 ### Scatter
 
-To render a scatter draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Scatter`.
+To render a scatter draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`Scatter`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Scatter).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -313,5 +313,5 @@ You can customize the radius of the polar series using [`Coefficient`](https://h
 
 ## See Also
 
-* [Data Label](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html)
-* [Tooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html)
+* [Data Label](../data-labels)
+* [Tooltip](../tool-tip)

@@ -1,13 +1,14 @@
 @Html.EJS().Charts("container").Series(series =>
-   {
-   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Scatter).   
-   XName("x").
-   YName("y").
-   DataSource(ViewBag.dataSource).
-   Name("Gold").
-   Width(2).Add();
-   }).   
-   Title("Olympic Medal Counts - RIO").Load("load").Render()
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Scatter).   
+        XName("x").
+        YName("y").
+        DataSource(ViewBag.dataSource).
+        Name("Gold").
+        Width(2).
+        Add();
+   })   
+   .Title("Olympic Medal Counts - RIO").Load("load").Render()
 
 <script>
 function load(args) {
