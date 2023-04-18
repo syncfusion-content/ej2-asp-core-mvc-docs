@@ -1,15 +1,15 @@
-    @Html.EJS().Chart("container").Series(series =>
+@Html.EJS().Chart("container").Series(series =>
    {
-   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.RangeArea).
-   XName("x").
-   High("high").
-   Low("low").
-   Border(br => br.Width(2).Color("red")).
-   Opacity(0.5).
-   DashArray("5,5").
-   Fill("blue").
-   DataSource(ViewBag.dataSource).
-   Add();
-   }).
-   PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category))
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.RangeArea).
+        XName("x").
+        High("high").
+        Low("low").
+        Border(br => br.Width(2).Color("red")).
+        Opacity(0.5).
+        DashArray("5,5").
+        Fill("blue").
+        DataSource(ViewBag.dataSource).
+        Add();
+   })
+   .PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category))
    .Render()
