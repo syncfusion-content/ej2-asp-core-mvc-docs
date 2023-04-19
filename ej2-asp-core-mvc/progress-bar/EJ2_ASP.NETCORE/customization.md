@@ -117,7 +117,7 @@ The inner radius of the progress bar can be customized using `innerRadius` prope
 
 
 
-## Progress colour and track colour
+## Progress color and track color
 
 <!-- markdownlint-disable MD033 -->
 

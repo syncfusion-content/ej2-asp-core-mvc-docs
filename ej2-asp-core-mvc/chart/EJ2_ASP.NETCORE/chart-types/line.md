@@ -13,7 +13,7 @@ documentation: ug
 
 ## Line
 
-To render a line series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Line`.
+To render a line series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`Line`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_Line).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ To render a line series, use series [`Type`](https://help.syncfusion.com/cr/aspn
 
 ## Multicolored line
 
-To render a multicolored line series, use the series type as `MultiColoredLine`. Here, the individual colors to the data can be mapped by using `PointColorMapping`.
+To render a multicolored line series, use the series type as [`MultiColoredLine`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_MultiColoredLine). Here, the individual colors to the data can be mapped by using `PointColorMapping`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +71,7 @@ To render a multicolored line series, use the series type as `MultiColoredLine`.
 
 ## Series customization
 
-The following properties can be used to customize the `Line` series.
+The following properties can be used to customize the [`Line`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_Line) series.
 
 * [Fill](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill) – Specifies the color of the series.
 * [Opacity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Opacity) – Specifies the opacity of [Fill](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill).
@@ -105,5 +105,5 @@ The following properties can be used to customize the `Line` series.
 
 ## See Also
 
-* [Data Label](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html)
-* [Tooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html)
+* [Data Label](../data-labels)
+* [Tooltip](../tool-tip)
