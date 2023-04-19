@@ -4,8 +4,8 @@
         sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Polar)
             .DrawType(Syncfusion.EJ2.Charts.ChartDrawType.Area)
             .Name("Warmest")
-            .XName("xValue")
-            .YName("yValue")
+            .XName("x")
+            .YName("y")
             .Width(2)
             .Marker(ViewBag.marker1)
             .DataSource(ViewBag.dataSource).Add();
@@ -24,5 +24,6 @@
                  .Maximum(25)
                  .EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
       )
-      .Title("Alaska Weather Statistics - 2016").Tooltip(tp=>tp.Enable(true)).Load("load").Render()
+      .Title("Alaska Weather Statistics - 2016")
+      .Tooltip(tp=>tp.Enable(true)).Load("load").Render()
       )
