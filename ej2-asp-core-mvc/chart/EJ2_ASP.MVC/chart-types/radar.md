@@ -13,7 +13,31 @@ documentation: ug
 
 ## Radar
 
-To render a radar series, use series [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Radar`.
+To render a radar series, use series [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`Radar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_Radar).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/radar-line/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Radar-line.cs" %}
+{% include code-snippet/chart/series/polar-radar/radar-line/radar-line.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/radar-line/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Radar-line.cs" %}
+{% include code-snippet/chart/series/polar-radar/radar-line/radar-line.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 
 
 ## Series customization
@@ -78,5 +102,5 @@ You can customize the radius of the radar series using [`Coefficient`](https://h
 
 ## See Also
 
-* [Data Label](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html)
-* [Tooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html)
+* [Data Label](../data-labels)
+* [Tooltip](../tool-tip)

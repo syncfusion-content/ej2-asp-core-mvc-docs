@@ -80,7 +80,7 @@ Now, you can add the Syncfusion ASP.NET Core control in `~/Pages/Index.cshtml` p
 
 ![Static culture](images/grid-locale.png)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-localization/tree/main/Localization-with-static-culture)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-localization)
 
 ## Dynamically set the culture
 
@@ -146,7 +146,7 @@ public class CultureDetails
 
 ![Change culture dynamically](images/dynamic-culture-switch.png)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-localization/tree/main/Localization-with-dynamic-culture)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-localization)
 
 ## Changing current locale
 
