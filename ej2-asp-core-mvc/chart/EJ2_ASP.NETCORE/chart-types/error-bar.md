@@ -13,7 +13,7 @@ documentation: ug
 
 ## Error Bar
 
-Error bars are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement. To render the error bar for the series, set [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Visible) as `true` in error bar object.
+Error bars are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement. To render the error bar for the series, set [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_Visible) as `true` in error bar object.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ Error bars are graphical representations of the variability of data and used on 
 
 ## Error Bar Type
 
-To change the error bar rendering type using [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) option of error bar. To change the error bar line length you can use [`VerticalError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html) property.
+To change the error bar rendering type using [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_Type) option of error bar. To change the error bar line length you can use [`VerticalError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_VerticalError) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +71,7 @@ To change the error bar rendering type using [`Type`](https://help.syncfusion.co
 
 ## Customizing Error Bar Type
 
-To customize the error bar type, set error bar [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Custom` and then change the horizontal/vertical positive and negative error of error bar.
+To customize the error bar type, set error bar [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_Type) as `Custom` and then change the horizontal/vertical positive and negative error of error bar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,7 +100,7 @@ To customize the error bar type, set error bar [`Type`](https://help.syncfusion.
 
 ## Error Bar Mode
 
-Error bar mode is used to define whether the error bar line has to be drawn horizontally, vertically or in both side. To change the error bar mode use [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html) option.
+Error bar mode is used to define whether the error bar line has to be drawn horizontally, vertically or in both side. To change the error bar mode use [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_Mode) option.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -129,7 +129,7 @@ Error bar mode is used to define whether the error bar line has to be drawn hori
 
 ## Error Bar Direction
 
-To change the error bar direction to plus, minus or both side using [`Direction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html) option.
+To change the error bar direction to plus, minus or both side using [`Direction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_Direction) option.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -158,7 +158,7 @@ To change the error bar direction to plus, minus or both side using [`Direction`
 
 ## Customizing Error Bar Cap
 
-To customize the error bar cap length, width and fill color, you can use [`ErrorBarCap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html) option.
+To customize the error bar cap length, width and fill color, you can use [`ErrorBarCap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_ErrorBarCap) option.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -216,5 +216,5 @@ To customize the error bar color for individual errors, use the [`ErrorBarColorM
 
 ## See Also
 
-* [Data Label](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html)
-* [Tooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html)
+* [Data Label](../data-labels)
+* [Tooltip](../tool-tip)

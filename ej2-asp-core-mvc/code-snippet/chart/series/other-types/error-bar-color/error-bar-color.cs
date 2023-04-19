@@ -13,7 +13,7 @@ public ActionResult Index()
             return View();
         }
         public class ErrorBarData
-         {
+        {
             public double x;
             public double y;
             public string color;
