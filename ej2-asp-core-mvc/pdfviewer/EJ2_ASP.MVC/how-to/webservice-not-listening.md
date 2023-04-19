@@ -14,7 +14,7 @@ documentation: ug
 
 If you are facing a **Web-service is not listening** to error in the Syncfusion PDF Viewer, there could be several reasons for this. To troubleshoot the issue, you can use the Network tab in your browser's developer tools to gather more information. Here are the steps you can follow:
 
-**Step 1:** Open the browser's developer tools by pressing `F12` or right-clicking on the page and selecting `Inspect`. Navigate to the Network tab. This will show you all of the requests that are being made by the page.
+**Step 1:** Open the browser's developer tools by right-clicking on the page and selecting `Inspect`. Navigate to the Network tab. This will show you all of the requests that are being made by the page.
 
 ![Alt text](./images/networktab.png)
 
