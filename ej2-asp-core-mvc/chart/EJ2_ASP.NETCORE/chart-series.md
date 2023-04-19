@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Chart Series in ASP NET MVC Chart Component
+# Chart Series in Chart Component
 
 ## Multiple Series
 
