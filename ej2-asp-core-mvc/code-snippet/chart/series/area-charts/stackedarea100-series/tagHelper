@@ -1,13 +1,16 @@
 <ejs-chart id="container" width="60%">
-        <e-series-collection>
-            <e-series dataSource="ViewBag.dataSource" xName="x" width="2" opacity="0.7" fill="pink" dashArray="5,5" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea100">
-                <e-series-border width="2" color="black"></e-series-border>
-            </e-series>
-            <e-series dataSource="ViewBag.dataSource" xName="x" width="2" opacity="0.7" fill="blue" dashArray="5,5" yName="y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea100">
-                <e-series-border width="2" color="black"></e-series-border>
-            </e-series>
-            <e-series dataSource="ViewBag.dataSource" xName="x" width="2" opacity="0.7" fill="green" dashArray="5,5" yName="y2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea100">
-                <e-series-border width="2" color="black"></e-series-border>
-            </e-series>
-        </e-series-collection>
-    </ejs-chart>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" width="2" opacity="0.7" fill="pink" dashArray="5,5"
+            yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea100">
+            <e-series-border width="2" color="black"></e-series-border>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="x" width="2" opacity="0.7" fill="blue" dashArray="5,5"
+            yName="y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea100">
+            <e-series-border width="2" color="black"></e-series-border>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="x" width="2" opacity="0.7" fill="green" dashArray="5,5"
+            yName="y2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea100">
+            <e-series-border width="2" color="black"></e-series-border>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

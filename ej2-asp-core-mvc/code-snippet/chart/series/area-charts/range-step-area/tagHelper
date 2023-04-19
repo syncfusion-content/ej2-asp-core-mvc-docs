@@ -7,8 +7,8 @@
         <e-majorticklines width="0"></e-majorticklines>
     </e-chart-primaryyaxis>
     <e-series-collection>
-        <e-series name="India" xName="x" high="high" low="low" dataSource="ViewBag.dataSource"
-                    opacity="0.4" type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeStepArea">
+        <e-series name="India" xName="x" high="high" low="low" dataSource="ViewBag.dataSource" opacity="0.4"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeStepArea">
         </e-series>
     </e-series-collection>
 </ejs-chart>

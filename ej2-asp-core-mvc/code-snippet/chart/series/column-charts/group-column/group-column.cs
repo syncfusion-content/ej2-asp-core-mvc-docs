@@ -1,4 +1,4 @@
- public ActionResult Index()
+public ActionResult Index()
         {
             List<ColumnData> chartData = new List<ColumnData>
             {
