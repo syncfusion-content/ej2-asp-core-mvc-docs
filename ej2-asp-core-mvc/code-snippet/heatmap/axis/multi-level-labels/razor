@@ -1,20 +1,17 @@
-@using Syncfusion.EJ2.HeatMap
 @using Syncfusion.EJ2;
-
 @{
     var multilevelXAxisBorder = new Syncfusion.EJ2.HeatMap.HeatMapAxisLabelBorder
     {
-    Color = "#a19d9d",
+        Color = "#a19d9d",
         Width = 1,
         Type = BorderType.Rectangle
-};
-var multilevelYAxisBorder = new Syncfusion.EJ2.HeatMap.HeatMapAxisLabelBorder
-{
-    Color = "#a19d9d",
+    };
+    var multilevelYAxisBorder = new Syncfusion.EJ2.HeatMap.HeatMapAxisLabelBorder
+    {
+        Color = "#a19d9d",
         Width = 1,
         Type = BorderType.Brace
-};
-
+    };
 }
 @Html.EJS().HeatMap("container").Width("700px").Height("500px").TitleSettings(ts => ts.Text("Product wise Monthly sales revenue for a e-commerce website").
     TextStyle(ViewBag.textStyle)).XAxis(
@@ -39,19 +36,18 @@ var multilevelYAxisBorder = new Syncfusion.EJ2.HeatMap.HeatMapAxisLabelBorder
             { start: 5, end: 7, text: 'Fashion' },
             { start: 8, end: 10, text: 'Household' }
         ];
-    args.heatmap.yAxis.multiLevelLabels[0].categories = [
-    {start: 0, end: 2, text: 'Q1' },
-    {start: 3, end: 5, text: 'Q2' },
-    {start: 6, end: 8, text: 'Q3' },
-    {start: 9, end: 11, text: 'Q4' }
-    ];
-    args.heatmap.yAxis.multiLevelLabels[1].categories = [
-    {start: 0, end: 5, text: 'First Half Yearly' },
-    {start: 6, end: 11, text: 'Second Half Yearly' }
-    ];
-    args.heatmap.yAxis.multiLevelLabels[2].categories = [
-    {start: 0, end: 11, text: 'Yearly' }
-    ];
-
+        args.heatmap.yAxis.multiLevelLabels[0].categories = [
+            {start: 0, end: 2, text: 'Q1' },
+            {start: 3, end: 5, text: 'Q2' },
+            {start: 6, end: 8, text: 'Q3' },
+            {start: 9, end: 11, text: 'Q4' }
+        ];
+        args.heatmap.yAxis.multiLevelLabels[1].categories = [
+            {start: 0, end: 5, text: 'First Half Yearly' },
+            {start: 6, end: 11, text: 'Second Half Yearly' }
+        ];
+        args.heatmap.yAxis.multiLevelLabels[2].categories = [
+            {start: 0, end: 11, text: 'Yearly' }
+        ];
     };
 </script>

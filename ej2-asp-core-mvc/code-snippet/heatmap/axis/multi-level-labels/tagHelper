@@ -1,17 +1,17 @@
 @{
-var border = new Syncfusion.EJ2.HeatMap.HeatMapAxisLabelBorder
-{
-Color = "#a19d9d",
-Width = 1,
-Type = BorderType.Rectangle
-};
-
-var yaxisborder = new Syncfusion.EJ2.HeatMap.HeatMapAxisLabelBorder
-{
-Color = "#a19d9d",
-Width = 1,
-Type = BorderType.Brace
-};
+    var border = new Syncfusion.EJ2.HeatMap.HeatMapAxisLabelBorder
+    {
+        Color = "#a19d9d",
+        Width = 1,
+        Type = BorderType.Rectangle
+    };
+    
+    var yaxisborder = new Syncfusion.EJ2.HeatMap.HeatMapAxisLabelBorder
+    {
+       Color = "#a19d9d",
+       Width = 1,
+       Type = BorderType.Brace
+    };
 }
 
 <ejs-heatmap id='container' load="window.onHeatmapLoad" dataSource="ViewBag.dataSource">
@@ -60,6 +60,5 @@ Type = BorderType.Brace
         args.heatmap.yAxis.multiLevelLabels[2].categories = [
             { start: 0, end: 11, text: 'Yearly' }
         ];
-
     }
 </script>
