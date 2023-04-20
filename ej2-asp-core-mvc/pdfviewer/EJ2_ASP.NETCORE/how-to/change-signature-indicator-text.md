@@ -10,7 +10,7 @@ documentation: ug
 
 # How to change the signature indicator text
 
-To change the text of the signature indicator in Syncfusion PDF Viewer, you need to use the signatureIndicatorSettings property of the signatureFieldSettings object. You can set the text property of signatureIndicatorSettings to the desired text value.
+To change the text of the signature indicator in Syncfusion PDF Viewer, you need to use the `signatureIndicatorSettings` property of the `signatureFieldSettings` object. You can set the `text` property of signatureIndicatorSettings to the desired text value.
 
 Here's an example of how to change the signature indicator text in Syncfusion.
 
@@ -34,6 +34,6 @@ Here's an example of how to change the signature indicator text in Syncfusion.
 
 ```
 
-In the above code, replace "Your Text Here" with the desired text value for the signature indicator.
+In the above code, replace `Your Text Here` with the desired text value for the signature indicator.
 
 [View Sample in GitHub]()
