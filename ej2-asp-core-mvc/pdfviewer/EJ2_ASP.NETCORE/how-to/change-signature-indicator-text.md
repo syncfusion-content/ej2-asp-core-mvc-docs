@@ -19,7 +19,7 @@ Here's an example of how to change the signature indicator settings
 <div>
     <ejs-pdfviewer 
         id="pdfviewer" 
-        style="height:600px" 
+        style="height:100%" 
         serviceUrl="/Index" 
         documentPath = "Data/FormDesigner.pdf"
         documentLoad = "onload">
@@ -36,7 +36,7 @@ Here's an example of how to change the signature indicator settings
             height: 10, 
             fontSize: 10, 
             text: 'Your Text Here', 
-            color: 'black' 
+            color: 'blue' 
         };
     }
 </script>
