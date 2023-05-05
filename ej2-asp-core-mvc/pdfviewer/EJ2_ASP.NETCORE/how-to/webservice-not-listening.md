@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to clear the "Web-service is not listening" to error
+# How to clear the Web-service is not listening to error
 
 ![Alt text](./images/webservice.png)
 
