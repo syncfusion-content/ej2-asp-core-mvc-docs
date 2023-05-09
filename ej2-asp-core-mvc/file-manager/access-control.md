@@ -91,7 +91,7 @@ The following syntax represent how to allow or deny permission based on file or 
  new AccessRule { Path = "/Documents", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, Copy = Permission.Allow, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, IsFile = false },
 
  // Deny writing for particular file
-  new AccessRule { Path = "/Documents/2.png", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, Copy = Permission.Deny, Download = Permission.Deny, IsFile = true },
+  new AccessRule { Path = "/Pictures/Employees/Adam.png", Read = Permission.Deny, Write = Permission.Deny, Copy = Permission.Deny, Download = Permission.Deny, IsFile = true  },
 
 ```
 
