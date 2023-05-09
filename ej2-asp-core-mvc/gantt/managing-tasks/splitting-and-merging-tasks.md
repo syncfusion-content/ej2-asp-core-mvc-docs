@@ -15,7 +15,7 @@ documentation: ug
 
 To split task at load time, we can define segment details in both hierarchical and self-referential way. Refer below link for more details.
 
-* [Split task at load time](./data-binding/#split-task)
+* [Split task at load time](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/data-binding#split-task)
 
 ## Split task dynamically
 

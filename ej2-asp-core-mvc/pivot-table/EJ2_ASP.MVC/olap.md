@@ -646,6 +646,37 @@ N> If the user does not configure the authentication, a default popup will appea
 
 
 
+### Roles
+
+SQL Server Analysis Services uses [`Roles`](https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/roles-and-permissions-analysis-services?view=asallproducts-allversions) to limit data access within a cube. Each role defines a set of permissions that can be granted to a single user or groups of users. It is used to manage security by limiting access to sensitive data and determining who has access to and can change the cube. It can be configured using the [`Roles`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Roles) property in [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html).
+
+> The [`Roles`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Roles) property can be used to specify one or more roles to the OLAP cube, separated by commas.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Roles.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/roles.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Roles.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/roles.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## OLAP Cube: Elements
 
 ### Field list
