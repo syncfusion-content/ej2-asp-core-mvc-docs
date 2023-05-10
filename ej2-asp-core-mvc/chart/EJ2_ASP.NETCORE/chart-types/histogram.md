@@ -42,5 +42,5 @@ documentation: ug
 
 ## See Also
 
-* [Data Label](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html)
-* [Tooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html)
+* [Data Label](../data-labels)
+* [Tooltip](../tool-tip)
