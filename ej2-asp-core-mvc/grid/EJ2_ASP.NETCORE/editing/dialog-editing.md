@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dialog Editing in ASP.Net Core Grid Component
+# Dialog Editing in ASP.NET Core Grid Component
 
 In dialog edit mode, when you start editing the currently selected row data will be shown on a dialog. You can change the cell values and save edited data to the data source. To enable Dialog edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property of [`e-grid-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) tag helper as **Dialog**.
 
@@ -78,6 +78,8 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% endif %}
 
 
+
+> The Grid add or edit dialog element has the max-height property, which is calculated based on the available window height. So, in the normal window (1920 x 1080), it is possible to set the dialog’s height up to 658px.
 
 ## Show or hide columns in dialog editing
 

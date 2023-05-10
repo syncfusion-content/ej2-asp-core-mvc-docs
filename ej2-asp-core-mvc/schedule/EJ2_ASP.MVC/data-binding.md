@@ -80,7 +80,38 @@ Any kind of remote data services can be bound to the Scheduler. To do so, create
 {% endtabs %}
 {% endif %}
 
+### Filter events using the in-built query
 
+To enable server-side filtering operations based on predetermined conditions, the [`includeFiltersInQuery`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettingsBuilder.html#Syncfusion_EJ2_Schedule_ScheduleEventSettingsBuilder_IncludeFiltersInQuery_System_Boolean_) API can be set to true, this allows the filter query to be constructed using the start date, end date, and recurrence rule which in turn enables the request to be filtered accordingly.
+
+This method greatly improves the component's performance by reducing the data that needs to be transferred to the client side. As a result, the component's efficiency and responsiveness are significantly enhanced, resulting in a better user experience. However, it is important to consider the possibility of longer query strings, which may cause issues with the maximum URL length or server limitations on query string length.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+The following image represents how the parameters are passed using ODataV4 filter.
+
+![OData V4 filter](images/odata-v4-filter.png)
 
 ### Using custom adaptor
 

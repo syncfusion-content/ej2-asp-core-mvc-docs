@@ -13,6 +13,10 @@ documentation: ug
 
 Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
 
+In Gantt, you can enable or disable the parent predecessor using [`AllowParentDependency`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowParentDependency.html) property.
+
+By default, the `AllowParentDependency` property will be `true`.
+
 ## Task relationship types
 
 Task relationships are categorized into four types based on the start and finish dates of the task.
@@ -112,6 +116,33 @@ You can define an offset with various offset duration units for predecessors by 
 The following screen shot depicts the duration unit support in the predecessor offset.
 
 ![Alt text](images/predecessorWithOffset.png)
+
+## Disabling automatic dependency offset updates
+
+By default, the dependency offsets are automatically updated in the Gantt chart whenever a task's start or end date is changed. However, if you want to disable this feature, you can do so by disabling the [`updateOffsetOnTaskbarEdit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UpdateOffsetOnTaskbarEdit) property. Once this property is disabled, you can only update the offset value by editing the predecessor column cell or the offset column in the dependency tab of the edit dialog.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/predecessorWithOffset-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="PredecessorWithOffset.cs" %}
+{% include code-snippet/gantt/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/predecessorWithOffset-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="PredecessorWithOffset.cs" %}
+{% include code-snippet/gantt/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Validate predecessor links on editing
 

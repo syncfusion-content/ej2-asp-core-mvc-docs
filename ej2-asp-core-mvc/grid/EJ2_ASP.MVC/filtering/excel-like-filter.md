@@ -36,3 +36,6 @@ You can enable Excel like filter by defining [`Type`](https://help.syncfusion.co
 {% endtabs %}
 {% endif %}
 
+## See also
+
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
