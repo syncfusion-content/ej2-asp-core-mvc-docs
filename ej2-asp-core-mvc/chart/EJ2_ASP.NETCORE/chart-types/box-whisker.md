@@ -13,7 +13,7 @@ documentation: ug
 
 ## Box and whisker
 
-To render a box and whisker chart, use series[`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `BoxAndWhisker`. The field y requires n number of data or it should contains minimum of five values to plot a segment.
+To render a box and whisker chart, use series[`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`BoxAndWhisker`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_BoxAndWhisker). The field y requires n number of data or it should contains minimum of five values to plot a segment.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,7 +44,7 @@ To render a box and whisker chart, use series[`Type`](https://help.syncfusion.co
 
 You can change the rendering mode of the Box and Whisker series using the `BoxPlotMode` property. The default boxPlotMode is `Exclusive`.The other boxPlotMode available are `Inclusive` and `Normal`.
 
-To render a box and whisker chart, use series[`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `BoxAndWhisker`. The field y requires n number of data or it should contains minimum of five values to plot a segment.
+To render a box and whisker chart, use series[`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`BoxAndWhisker`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_BoxAndWhisker). The field y requires n number of data or it should contains minimum of five values to plot a segment.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -102,5 +102,5 @@ In Box and Whisker series `ShowMean` property is used to show the box and whiske
 
 ## See Also
 
-* [Data Label](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html)
-* [Tooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html)
+* [Data Label](../data-labels)
+* [Tooltip](../tool-tip)

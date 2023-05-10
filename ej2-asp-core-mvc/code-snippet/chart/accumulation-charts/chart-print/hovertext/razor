@@ -5,5 +5,7 @@ Html.EJS().AccumulationChart("container").Series(series =>
                       .YName("y")
                       .InnerRadius("65%").Add();
             })
-            .CenterLabel(cl => cl.Text("Mobile<br>Browsers<br>Statistics").HoverTextFormat("${point.x} <br> Browser Share <br> ${point.y}%")).LegendSettings(ls => ls.Visible(false)).Render()
+            .CenterLabel(cl => cl.Text("Mobile<br>Browsers<br>Statistics")
+            .HoverTextFormat("${point.x} <br> Browser Share <br> ${point.y}%"))
+            .LegendSettings(ls => ls.Visible(false)).Render()
 

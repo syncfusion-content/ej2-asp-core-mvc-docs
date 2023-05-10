@@ -216,7 +216,7 @@ N> For `add` action, the value for all the fields will be `null` in the data. In
 
 ## See Also
 
-* [Filtering](./filter)
-* [Sorting](./sort)
-* [Hyperlink](./link)
+* [Filtering](filter)
+* [Sorting](sort)
+* [Hyperlink](link)
 * [`Collaborative Editing`](use-cases/collaborative-editing)
