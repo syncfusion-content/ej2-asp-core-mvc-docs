@@ -115,3 +115,7 @@ By default, the CheckBox filter can only filter the selected items. If filtering
 The following image describes the above mentioned behavior.
 
 ![Checkbox filter](../../images/checkboxfilter.png)
+
+## See also
+
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
