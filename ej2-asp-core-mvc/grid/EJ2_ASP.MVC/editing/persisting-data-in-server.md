@@ -15,7 +15,7 @@ Edited data can be persisted in the database using the RESTful web services.
 
 All the CRUD operations in the grid are done through **DataManager**. The **DataManager** has an option to bind all the CRUD related data in server-side.
 
-> For your information, the ODataAdaptor persists data in the server as per OData protocol.
+N> For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
 In the below section, we have explained how to get the edited data details on the server-side using the **UrlAdaptor**.
 
@@ -220,7 +220,7 @@ Refer to the following screenshot to know about the action parameter.
 
 ![crudupdate](../../images/crudURL.jpg)
 
-> If you specify **InsertUrl** along with **CrudUrl**, then while adding **InsertUrl** only will be invoked.
+N> If you specify **InsertUrl** along with **CrudUrl**, then while adding **InsertUrl** only will be invoked.
 
 ### Batch URL
 

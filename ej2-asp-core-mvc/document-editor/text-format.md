@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Format in ##Platform_Name## Document Editor Component | Syncfusion
+title: Text Format in ##Platform_Name## Document Editor Component
 description: Learn here all about text format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Format
@@ -18,18 +18,16 @@ Document editor supports several formatting options for text like bold, italic, 
 The bold formatting for selected text can be get or set by using the following sample code.
 
 ```typescript
-
 //Gets the value for bold formatting of selected text.
 let bold : boolean = documenteditor.selection.characterFormat.bold;
 //Sets bold formatting for selected text.
 documenteditor.selection.characterFormat.bold = true;
-
 ```
 
 You can toggle the bold formatting based on existing value at selection.
 
 ```typescript
-**documenteditor.editor.toggleBold();
+documenteditor.editor.toggleBold();
 ```
 
 ## Italic
@@ -169,4 +167,4 @@ documenteditor.selection.characterFormat.highlightColor= '#FFC0CB';
 
 * [Feature modules](../document-editor/feature-module/)
 * [Font dialog](../document-editor/dialog/#font-dialog)
-* [Keyboard shortcuts](../document-editor/keyboard-shortcut#text-formatting)
+* [Keyboard shortcuts](../document-editor/keyboard-shortcut/)

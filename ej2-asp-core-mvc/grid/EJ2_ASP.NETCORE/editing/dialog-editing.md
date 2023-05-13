@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dialog Editing in ASP.Net Core Grid Component
+# Dialog Editing in ASP.NET Core Grid Component
 
 In dialog edit mode, when you start editing the currently selected row data will be shown on a dialog. You can change the cell values and save edited data to the data source. To enable Dialog edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property of [`e-grid-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) tag helper as **Dialog**.
 
@@ -78,6 +78,8 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% endif %}
 
 
+
+> The Grid add or edit dialog element has the max-height property, which is calculated based on the available window height. So, in the normal window (1920 x 1080), it is possible to set the dialog’s height up to 658px.
 
 ## Show or hide columns in dialog editing
 
@@ -153,3 +155,32 @@ The following example demonstrate the wizard like editing in the grid with the o
 {% endtabs %}
 {% endif %}
 
+
+## Customize Add/Edit Dialog footer
+
+In dialog edit mode, a dialog will show up when editing the currently selected row or adding a new row. By default, you can save or cancel the edited changes by clicking the Save or Cancel button in the dialog's footer. Along with these buttons, it is possible to add a custom button in the footer section using the [ActionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_ActionComplete_System_String_) event of the Grid.
+
+In the following sample, using the `dialog` argument of the `ActionComplete` event, the action for the custom button can be customized.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/custombutton/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dialog-Footer.cs" %}
+{% include code-snippet/grid/edit/custombutton/custombutton.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/custombutton/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dialog-Footer.cs" %}
+{% include code-snippet/grid/edit/custombutton/custombutton.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

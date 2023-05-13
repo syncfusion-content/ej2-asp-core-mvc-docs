@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Document Editor Component | Syncfusion
+title: Overview in ##Platform_Name## Document Editor Component
 description: Learn here all about overview in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in DocumentEditor Component
+# Overview
 
 The Document Editor component is used to create, edit, view, and print Word documents in web applications. All the user interactions and editing operations that run purely in the client-side provides much faster editing experience to the users.
 
@@ -17,7 +17,7 @@ The Document Editor component is used to create, edit, view, and print Word docu
 
 * [Opens](../document-editor/import) the native `Syncfusion Document Text (*.sfdt)` format documents in the client-side.
 * [Saves the documents](../document-editor/export) in the client-side as `Syncfusion Document Text (*.sfdt)` and `Word document (*.docx)`.
-* Supports document elements like text, [image](../document-editor/image), [table](../document-editor/table), [fields](../document-editor/fields), [bookmark](../document-editor/bookmark),[shapes](../document-editor/shapes), [section](../document-editor/section-format), [header and footer](../document-editor/header-footer).
+* Supports document elements like text, [image](../document-editor/image), [table](../document-editor/table), fields, [bookmark](../document-editor/bookmark),[shapes](../document-editor/shapes), [section](../document-editor/section-format), [header and footer](../document-editor/header-footer).
 * Supports the commonly used fields like [hyperlink](../document-editor/link), page number, page count, and table of contents.
 * Supports formats like [text](../document-editor/text-format), [paragraph](../document-editor/paragraph-format), [bullets and numbering](../document-editor/list-format), [table](../document-editor/table-format), [page settings](../document-editor/section-format), etc.
 * Provides support to create, edit, and apply [paragraph and character styles](../document-editor/styles).

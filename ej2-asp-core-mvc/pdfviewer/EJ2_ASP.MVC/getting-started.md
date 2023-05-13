@@ -68,7 +68,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 ## Add script reference
 
-In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Add the required scripts using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -84,7 +84,7 @@ In this getting started walk-through, the required scripts are referred using CD
 
 ## Register Syncfusion Script Manager
 
-Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows. 
+Open `~/Views/Shared/_Layout.cshtml` page and register the script manager in the ASP.NET MVC application as follows. 
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -98,9 +98,11 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
+N> Add the script manager `EJS().ScriptManager()` at the **end of `<body>`**.
+
 ## Add ASP.NET MVC PDFViewer control
 
-Now, add the Syncfusion ASP.NET MVC PDFViewer control in `~/Views/Home/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the DocumentPath property as below.
+Add the Syncfusion ASP.NET MVC PDFViewer control in `~/Views/Home/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the DocumentPath property as below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -156,7 +158,6 @@ namespace GettingStartedMVC.Controllers
                     {
                         byte[] bytes = System.IO.File.ReadAllBytes(documentPath);
                         stream = new MemoryStream(bytes);
-
                     }
                     else
                     {
@@ -171,7 +172,6 @@ namespace GettingStartedMVC.Controllers
                         {
                             return this.Content(jsonData["document"] + " is not found");
                         }
-
                     }
                 }
                 else
@@ -230,7 +230,6 @@ namespace GettingStartedMVC.Controllers
         [System.Web.Mvc.HttpPost]
         public ActionResult ImportFormFields(jsonObjects jsonObject)
         {
-
             PdfRenderer pdfviewer = new PdfRenderer();
             var jsonData = JsonConverter(jsonObject);
             object jsonResult = pdfviewer.ImportFormFields(jsonData);
@@ -240,13 +239,10 @@ namespace GettingStartedMVC.Controllers
         [System.Web.Mvc.HttpPost]
         public ActionResult ExportFormFields(jsonObjects jsonObject)
         {
-
             PdfRenderer pdfviewer = new PdfRenderer();
             var jsonData = JsonConverter(jsonObject);
             string jsonResult = pdfviewer.ExportFormFields(jsonData);
-
             return Content(jsonResult);
-
         }
 
         [System.Web.Mvc.HttpPost]
@@ -334,6 +330,7 @@ namespace GettingStartedMVC.Controllers
             }
             return documentPath;
         }
+
         public ActionResult Index()
         {
             return View();
@@ -342,17 +339,16 @@ namespace GettingStartedMVC.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
+    
     public class jsonObjects
     {
         public string document { get; set; }
@@ -401,10 +397,12 @@ namespace GettingStartedMVC.Controllers
 
 [DocumentPath](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DocumentPath) is the property needed to load a PDF file in the PDF Viewer. The specified document must be placed inside the folder structure that matches with the path in the GetDocumentPath(string document) method inside the PdfViewerController.
 
+N> Add the PDF document to the `App_Data` directory in the ASP.NET Core application.
+
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC PDFViewer control will be rendered in the default web browser.
 
 ![ASP.NET MVC PDFViewer Control](AspNetMVC_Images/pdfviewer-control.png)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20MVC%20Razor%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20MVC%20Razor%20Examples).
 
-> You can refer to our [ASP.NET MVC PDF Viewer](https://www.syncfusion.com/aspnet-mvc-ui-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC PDF Viewer example](https://ej2.syncfusion.com/aspnetmvc/PdfViewer/Default#/material) to understand the core features of PDF Viewer.
+N> You can refer to our [ASP.NET MVC PDF Viewer](https://www.syncfusion.com/aspnet-mvc-ui-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC PDF Viewer example](https://ej2.syncfusion.com/aspnetmvc/PdfViewer/Default#/material) to understand the core features of PDF Viewer.

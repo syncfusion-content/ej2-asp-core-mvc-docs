@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Message Control
 
-This section briefly explains how to include ASP.NET MVC Message control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include [ASP.NET MVC Message](https://www.syncfusion.com/aspnet-mvc-ui-controls/message) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -26,9 +26,9 @@ This section briefly explains how to include ASP.NET MVC Message control in your
 
 Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. To add ASP.NET MVC controls to the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution) and search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5), then install it.
 
-> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4), then install it.
+N> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4), then install it.
 
 ## Add namespace
 
@@ -115,3 +115,5 @@ Now, add the Syncfusion ASP.NET MVC Message control in the `~/Views/Home/Index.c
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Message control will be rendered in the default web browser.
 
 ![ASP.NET MVC Message Control](images/message-default.png)
+
+N> You can also explore our [ASP.NET MVC Message example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/circular-gauge/default-functionalities) that shows you how to render and configure the Message in ASP.NET MVC.

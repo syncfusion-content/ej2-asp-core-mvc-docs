@@ -13,7 +13,7 @@ documentation: ug
 
 ## Getting Started with ASP.NET MVC
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET MVC application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET MVC application to use our components.
 
 ### Prerequisites
 
@@ -35,7 +35,7 @@ Follow below steps to create ASP.NET MVC Application.
 
 **Step 3:** Select **ASP.NET Web Application (.NET Framework)** and change the application name, and then click **OK**.
 
-> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
+N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
 
 ![aspnetmvc5 project template](images/aspnetmvc5-template.png)
 
@@ -47,7 +47,7 @@ Follow below steps to create ASP.NET MVC Application.
 
 **Step 1:** Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-> Refer to [this article](../../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+N> Refer to [this article](../../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
 
 ![aspnetmvc5 manage nuget packages](images/aspnetmvc5-manage-nuget.png)
 
@@ -57,7 +57,7 @@ Follow below steps to create ASP.NET MVC Application.
 
 The Essential JS 2 MVC5 NuGet package will be included in the project, after the installation process is completed.
 
-> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 **Step 3:** Open `~/Views/Web.config` file and add the `Syncfusion.EJ2` namesapce reference to the `<system.web.webPages.razor>` element and `Syncfusion.EJ2` assembly reference to `<system.web>` element.
 
@@ -190,7 +190,7 @@ In this sample, "Product Categories" is added in column, "Customer Geography" in
 
 Formatting defines a way in which values should be displayed in pivot table. For example, format **"C0"** denotes the values should be displayed in currency pattern without decimal points. To do so, define the [`PivotViewFormatSetting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) with its [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Name) and [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format) properties. In this sample, the [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Name) property is set as "[Measures].[Internet Sales Amount]", a measure from value axis and its [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format) is set as "C0". Likewise, we can set format for other measures as well.
 
-> Only measures from [`Values`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Values) axis, which is in the form of numeric data values are applicable for formatting.
+N> Only measures from [`Values`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Values) axis, which is in the form of numeric data values are applicable for formatting.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -323,7 +323,7 @@ You need to set [`IsCalculatedField`](https://help.syncfusion.com/cr/aspnetcore-
 
 Also calculated fields can be added at run time through the built-in dialog. The dialog can be enabled by setting the [`AllowCalculatedField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property to **true** as follows. You will see a button enabled in the Field List UI automatically to invoke the calculated field dialog and perform necessary operation.
 
-> Calculated measure can be added only in value axis.
+N> Calculated measure can be added only in value axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -619,7 +619,7 @@ Users can configure basic authentication information to access the OLAP cube usi
 * `UserName`: It allows the user to set a username that recognizes the basic authentication of the IIS.
 * `Password`: It allows to set the appropriate password.
 
-> If the user does not configure the authentication, a default popup will appear in the browser to get the authentication information.
+N> If the user does not configure the authentication, a default popup will appear in the browser to get the authentication information.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -640,6 +640,37 @@ Users can configure basic authentication information to access the OLAP cube usi
 {% endhighlight %}
 {% highlight c# tabtitle="Authentication.cs" %}
 {% include code-snippet/pivot-table/getting-start-mvc/olap-authentication/Authentication.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Roles
+
+SQL Server Analysis Services uses [`Roles`](https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/roles-and-permissions-analysis-services?view=asallproducts-allversions) to limit data access within a cube. Each role defines a set of permissions that can be granted to a single user or groups of users. It is used to manage security by limiting access to sensitive data and determining who has access to and can change the cube. It can be configured using the [`Roles`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Roles) property in [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html).
+
+> The [`Roles`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Roles) property can be used to specify one or more roles to the OLAP cube, separated by commas.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Roles.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/roles.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Roles.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/roles.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -11,11 +11,11 @@ documentation: ug
 
 # Templates in Breadcrumb
 
-The Breadcrumb component provides a way to customize the items using [`itemTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Breadcrumb.html#Syncfusion_EJ2_Navigations_Breadcrumb_ItemTemplate) and the separators using [`separatorTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Breadcrumb.html#Syncfusion_EJ2_Navigations_Breadcrumb_SeparatorTemplate) properties.
+The Breadcrumb component provides a way to customize the items using `itemTemplate` and the separators using `separatorTemplate` properties.
 
 ## Item Template
 
-In the following example, Shopping Cart details are used as breadcrumb Items and the items are customized by the chips component using [`itemTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Breadcrumb.html#Syncfusion_EJ2_Navigations_Breadcrumb_ItemTemplate).
+In the following example, Shopping Cart details are used as breadcrumb Items and the items are customized by the chips component using `itemTemplate`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ In the following example, Shopping Cart details are used as breadcrumb Items and
 
 ## Separator Template
 
-In the following example, the separators are customized with icons using [`separatorTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Breadcrumb.html#Syncfusion_EJ2_Navigations_Breadcrumb_SeparatorTemplate).
+In the following example, the separators are customized with icons using `separatorTemplate`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

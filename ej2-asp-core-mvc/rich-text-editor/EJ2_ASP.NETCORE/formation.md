@@ -54,7 +54,7 @@ Set the [`editorMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 * The Supported selection tags are `Bold`, `Italic`, `StrikeThrough`, `InlineCode`, `SubScript`, `SuperScript`, `UpperCase`, `LowerCase`.
 * The supported insert commands are `Image`, `Link` and `Table`.
 
-> The third-party library such as [`Marked`](https://marked.js.org/#/README.md#README.md) or any other library is used to convert markdown into HTML content.
+N> The third-party library such as [`Marked`](https://marked.js.org/#/README.md#README.md) or any other library is used to convert markdown into HTML content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

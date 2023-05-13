@@ -15,7 +15,7 @@ By default, the height of the Scheduler rows in Timeline views are static and th
 
 To enable auto row height adjustments on Scheduler Timeline views and Month view, set `true` to the `rowAutoHeight` property whose default value is `false`.
 
-> This auto row height adjustment is applicable only on all the Timeline views as well as on the calendar Month view.
+N> This auto row height adjustment is applicable only on all the Timeline views as well as on the calendar Month view.
 
 Now, let's see how it works on those applicable views with examples.
 
@@ -137,4 +137,4 @@ By default, with the feature `RowAutoHeight`, there will be a space in the botto
 
 **Note**: The property `IgnoreWhitespace` will be applicable only when `RowAutoHeight` feature is enabled in the Scheduler
 
-> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

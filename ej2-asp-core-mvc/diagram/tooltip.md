@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Diagram Component
+title: Tooltip in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip
+# Tooltip in Diagram Control
 
 <!-- markdownlint-disable MD010 -->
 
@@ -128,13 +128,11 @@ Any text or image can be added to the tooltip, by default. To customize the tool
 
 
 ```javascript
-
 function getContent() {
     var tooltipContent = document.createElement('div');
     tooltipContent.innerHTML = '<div style="background-color: #f4f4f4; color: black; border-width:1px;border-style: solid;border-color: #d3d3d3; border-radius: 8px;white-space: nowrap;"> <span style="margin: 10px;"> Tooltip !!! </span> </div>';
     return tooltipContent;
 }
-
 ```
 
 ## Tooltip alignments

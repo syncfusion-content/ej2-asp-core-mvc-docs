@@ -4,5 +4,5 @@
 </div>
 
 <script>
- var settings = { enableOptimizedTextMeasuring: false };
+    var settings = { enableOptimizedTextMeasuring: false };
 </script>

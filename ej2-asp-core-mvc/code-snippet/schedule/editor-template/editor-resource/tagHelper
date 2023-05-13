@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Schedule
 
-<ejs-schedule id="schedule" width="100%" height="550px" selectedDate="new DateTime(2018, 2, 15)" popupOpen="onPopupOpen" editorTemplate="#EventEditorTemplate" >
+<ejs-schedule id="schedule" width="100%" height="550px" selectedDate="new DateTime(2023, 2, 15)" popupOpen="onPopupOpen" editorTemplate="#EventEditorTemplate" >
     <e-schedule-group resources="@ViewBag.Resources"></e-schedule-group>
     <e-schedule-resources>
         <e-schedule-resource dataSource="@ViewBag.Owners" field="OwnerId" title="Owners" allowMultiple="true" name="Owners" textField="text" idField="id" colorField="color"></e-schedule-resource>

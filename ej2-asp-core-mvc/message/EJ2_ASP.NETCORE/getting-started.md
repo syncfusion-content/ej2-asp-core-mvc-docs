@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Message Control
 
-This section briefly explains how to include ASP.NET Core Message control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include [ASP.NET Core Message](https://www.syncfusion.com/aspnet-core-ui-controls/message) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ This section briefly explains how to include ASP.NET Core Message control in you
 
 Syncfusion ASP.NET Core controls are in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls to the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution) and search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/), then install it.
 
-> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
@@ -117,3 +117,5 @@ Now, add the Syncfusion ASP.NET Core Message tag helper in the `~/Pages/Index.cs
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Message control will be rendered in the default web browser.
 
 ![ASP.NET Core Message Control](images/message-default.png)
+
+N> You can also explore our [ASP.NET Core Message example](https://ej2.syncfusion.com/aspnetcore/Message/DefaultFunctionalities#/bootstrap5) that shows you how to render the Message in ASP.NET Core.

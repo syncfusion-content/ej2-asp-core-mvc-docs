@@ -101,7 +101,7 @@ In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` locati
 
 
 
-> * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
+N> * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
 
 <!-- markdownlint-disable MD009 -->
 
