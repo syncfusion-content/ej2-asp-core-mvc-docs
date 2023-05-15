@@ -36,6 +36,6 @@ Here's an example of how to use the `previousField()` and `nextField()` method:
 
 ```
 
-The `previousField()` and `nextField()` methods are called on the formFieldsModule property of the viewer object when the corresponding buttons are clicked. When the functions are called, they use the `viewer.formFieldsModule` object to navigate between the form fields in the PDF document.
+The `previousField()` and `nextField()` methods are called on the formFieldsModule property of the viewer object when the corresponding buttons are clicked. When the functions are called, they use the `viewer.formFieldsModule` object to navigate between the form fields in a PDF document.
 
 [View Sample in GitHub]()
