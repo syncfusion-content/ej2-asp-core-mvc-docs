@@ -110,3 +110,5 @@ Now, add the Syncfusion ASP.NET MVC AppBar control in `~/Home/Index.cshtml` page
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC AppBar control will be rendered in the default web browser.
 
 ![ASP.NET MVC AppBar Control](images/getting_started.png)
+
+N> You can refer to our [ASP.NET MVC AppBar](https://ej2.syncfusion.com/aspnetmvc/documentation/appbar/getting-started) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC AppBar Example](https://ej2.syncfusion.com/aspnetmvc/AppBar/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the AppBar in ASP.NET MVC.
