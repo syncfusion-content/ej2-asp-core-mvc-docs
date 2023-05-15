@@ -10,11 +10,11 @@ documentation: ug
 
 # How to Customize Signature Dialog
 
-To customize the signature dialogue in Syncfusion PDF Viewer. The `signatureFieldSettings` property of the PDF Viewer instance is used to access the signature dialog settings.
+Customize the signature dialogue in Syncfusion PDF Viewer. The `signatureFieldSettings` property of the PDF Viewer instance is used to access the signature dialog settings.
 
-The `displayMode` property determines the display mode of the signature dialogue. A value of `1` indicates that the signature dialogue should be displayed in a separate window. The `hideTypeSelection` property is used to hide the signature field type selection dialogue, which allows users to choose the type of signature field they want to add. The `hideUploadSignature` property is used to hide the upload signature dialogue, which allows users to upload an image file to use as their signature. The `hideSaveSignature property` is used to hide the save signature dialogue, which allows users to save their signature for future use. The `hideDrawSignature` property is set to true, which means that the Draw Signature option will be hidden in the signature dialog.
+The `displayMode` property determines the display mode of the signature dialogue. A value of 1 indicates that the signature dialogue should be displayed in a separate window. The `hideTypeSelection` property hides the signature field type selection dialogue, allowing users to choose the type of signature field they want to add. The `hideUploadSignature` property is used to hide the upload signature dialogue, which allows users to upload an image file to use as their signature. The `hideSaveSignature` property hides the save signature dialogue, allowing users to save their signature for future use. The `hideDrawSignature` property is set to true, meaning the Draw Signature option will be hidden in the signature dialog.
 
-You can modify these properties to suit your needs and customize the signature dialogue in Syncfusion PDF Viewer accordingly.
+Modify these properties to suit your needs and customize the signature dialogue in Syncfusion PDF Viewer accordingly.
 
 ```html
 
