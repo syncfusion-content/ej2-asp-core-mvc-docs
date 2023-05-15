@@ -3,21 +3,11 @@
         <!-- Declare filemanager element -->
         @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
         {
-            Url = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/FileOperations",
-            GetImageUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/GetImage",
-            UploadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Upload",
-            DownloadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Download"
-        }).BeforeSend("onBeforeSend").View(Syncfusion.EJ2.FileManager.ViewType.Details).Render()
+            Url = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/FileOperations",
+            GetImageUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/GetImage",
+            UploadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/Upload",
+            DownloadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/Download"
+        }).View(Syncfusion.EJ2.FileManager.ViewType.Details).Render()
         <!-- end of filemanager element -->
     </div>
 </div>
-
-<script>
-    function onBeforeSend(args) {
-        //Ajax beforeSend event
-        args.ajaxSettings.beforeSend = function (args) {
-            //Setting authorization header
-            args.httpRequest.setRequestHeader('Authorization', 'Access control');
-        };
-    }
-</script>
