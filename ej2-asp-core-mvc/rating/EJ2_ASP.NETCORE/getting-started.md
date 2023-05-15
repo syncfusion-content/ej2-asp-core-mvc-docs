@@ -134,4 +134,4 @@ You can set the rating value by using the [value](https://help.syncfusion.com/cr
 {% endtabs %}
 {% endif %}
 
-![Displaying Rating Value in ASP.NET CORE Rating Control](images/rating-value.png
+![Displaying Rating Value in ASP.NET CORE Rating Control](images/rating-value.png)

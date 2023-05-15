@@ -144,8 +144,8 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 
 The following list of Excel file formats are supported in Spreadsheet:
 
-* Microsoft  Excel (.xlsx)
-* Microsoft  Excel 97-2003 (.xls)
+* Microsoft Excel (.xlsx)
+* Microsoft Excel 97-2003 (.xls)
 * Comma Separated Values (.csv)
 * Excel Macro-Enabled Workbook (.xlsm)
 * Excel Binary Workbook(.xlsb)
@@ -255,12 +255,44 @@ You can add your own custom header to the save action in the Spreadsheet. For pr
 {% endtabs %}
 {% endif %}
 
+### To change the PDF orientation
+
+By default, the PDF document is created in **Portrait** orientation. You can change the orientation of the PDF document by using the `args.pdfLayoutSettings.orientation` argument settings in the [`beforeSave`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_BeforeSave) event.
+
+The possible values are:
+
+* **Portrait** - Used to display content in a vertical layout.
+* **Landscape** - Used to display content in a horizontal layout.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/pdf-orientation/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdfOrientationController.cs" %}
+{% include code-snippet/spreadsheet/pdf-orientation/pdfOrientationController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/pdf-orientation/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdfOrientationController.cs" %}
+{% include code-snippet/spreadsheet/pdf-orientation/pdfOrientationController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Supported file formats
 
 The following list of Excel file formats are supported in Spreadsheet:
 
-* Microsoft  Excel (.xlsx)
-* Microsoft  Excel 97-2003 (.xls)
+* Microsoft Excel (.xlsx)
+* Microsoft Excel 97-2003 (.xls)
 * Comma Separated Values (.csv)
 * Portable Document Format (.pdf)
 
@@ -315,6 +347,6 @@ Open and save helper functions are shipped in the Syncfusion.EJ2.Spreadsheet pac
 
 ## See Also
 
-* [Filtering](./filter)
-* [Sorting](./sort)
-* [Hyperlink](./link)
+* [Filtering](filter)
+* [Sorting](sort)
+* [Hyperlink](link)

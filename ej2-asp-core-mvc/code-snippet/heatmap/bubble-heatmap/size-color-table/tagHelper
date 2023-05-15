@@ -1,5 +1,6 @@
 <ejs-heatmap id='container' load="window.onHeatmapLoad" tooltipRender="window.ontooltipRender" showTooltip="true">
-    <e-heatmap-titlesettings text="Commercial Aviation Accidents and Fatalities by year 2012 - 2017" textStyle="ViewBag.textStyle">
+    <e-heatmap-titlesettings text="Commercial Aviation Accidents and Fatalities by year 2012 - 2017"
+        textStyle="ViewBag.textStyle">
     </e-heatmap-titlesettings>
     <e-heatmap-xaxis labels="ViewBag.xLabels">
     </e-heatmap-xaxis>
@@ -19,10 +20,10 @@
 
 <script>
     var dataSource = [
-            [[4, 39], [3, 8], [1, 3], [1, 10], [4, 4], [2, 15]],
-            [[4, 28], [5, 92], [5, 73], [3, 1], [3, 4], [4, 126]],
-            [[4, 45], [5, 152], [0, 44], [4, 54], [5, 243], [2, 45]]
-            ];  
+        [[4, 39], [3, 8], [1, 3], [1, 10], [4, 4], [2, 15]],
+        [[4, 28], [5, 92], [5, 73], [3, 1], [3, 4], [4, 126]],
+        [[4, 45], [5, 152], [0, 44], [4, 54], [5, 243], [2, 45]]
+    ];
     window.onHeatmapLoad = function (args) {
         args.heatmap.dataSource = dataSource;
     }

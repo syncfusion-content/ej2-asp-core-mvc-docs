@@ -18,7 +18,7 @@ The rating control triggers the [beforeItemRender](https://help.syncfusion.com/c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rating/events/beforeItemRender/tagHelper %}
+{% include code-snippet/rating/events/beforeitemrender/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,7 +38,7 @@ The rating control triggers the [valueChanged](https://help.syncfusion.com/cr/as
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rating/events/valuechanged/tagHelper %}
+{% include code-snippet/rating/events/valuechanged-event/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 

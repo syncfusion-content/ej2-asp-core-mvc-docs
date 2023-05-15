@@ -37,7 +37,7 @@ You can use the [TooltipTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/S
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rating/tooltip/tooltip-template/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
+{% highlight c# tabtitle="TooltipTemplate.cs" %}
 {% include code-snippet/rating/tooltip/tooltip-template/tooltiptemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -60,7 +60,7 @@ N> You can find more information about customizing the appearance of the tooltip
 {% include code-snippet/rating/tooltip/custom-tooltip/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomTooltip.cs" %}
-{% include code-snippet/rating/tooltip/custom-tooltip/position.cs %}
+{% include code-snippet/rating/tooltip/custom-tooltip/customtooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,0 +1,12 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).  
+      XName("x").
+      YName("y").
+      DataSource(ViewBag.dataSource).
+      ColumnSpacing(0.2).
+      ColumnWidth(0.2).
+      Add();
+   })
+   .PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category))
+   .Render()

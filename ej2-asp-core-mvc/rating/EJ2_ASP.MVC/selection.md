@@ -35,10 +35,10 @@ You can use the [Min](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/Selection/bottom-left-position/razor %}
+{% include code-snippet/rating/selection/min/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/rating/Selection/bottom-left-position/position.cs %}
+{% highlight c# tabtitle="Min.cs" %}
+{% include code-snippet/rating/selection/min/min.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,10 +54,10 @@ You can use the [EnableSingleSelection](https://help.syncfusion.com/cr/aspnetmvc
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/selection/min/razor %}
+{% include code-snippet/rating/selection/single-selection/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Min.cs" %}
-{% include code-snippet/rating/selection/min/min.cs %}
+{% highlight c# tabtitle="SingleSelection.cs" %}
+{% include code-snippet/rating/selection/single-selection/singleselection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -73,7 +73,7 @@ You can reset the rating value to its default by using the [AllowReset](https://
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rating/selectionallow-reset/razor %}
+{% include code-snippet/rating/selection/allow-reset/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AllowReset.cs" %}
 {% include code-snippet/rating/selection/allow-reset/allowreset.cs %}

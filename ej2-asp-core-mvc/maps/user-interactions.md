@@ -63,16 +63,6 @@ The following options are available in toolbar.
 4. Pan - Switches to panning if rectangular zoom is activated.
 5. Reset - Restores the Maps to the default view.
 
-The following properties are available in toolbars to customize the zooming toolbars.
-
-* `Color` - To apply the color for toolbars in Maps.
-* `HighlightColor` - To apply the color for the zooming toolbar when the mouse has hovered on the toolbar element in Maps.
-* `HorizontalAlignment` - To customize the position type of toolbar when it is placed horizontally.
-* `SelectionColor` - To apply the color for the zooming toolbar when clicking the zooming toolbar in Maps.
-* `ToolBarOrientation` - To customize the orientation of the zooming toolbar.
-* `Toolbars` - To customize the items that are to be shown in the zooming toolbar in Maps.
-* `VerticalAlignment` - To customize the position type of toolbar when it is placed vertically.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -270,8 +260,6 @@ The zooming range can be adjusted using the `MinZoom` and `MaxZoom` properties i
 {% endtabs %}
 {% endif %}
 
-
-
 ### Zooming with animation
 
 To zoom in or zoom out the Maps with animation, use the `AnimationDuration` property in `MapsLayer`.
@@ -300,6 +288,164 @@ To zoom in or zoom out the Maps with animation, use the `AnimationDuration` prop
 {% endif %}
 
 
+### Customizing the zoom toolbar
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+The zoom toolbar can be customized by using the `toolbarSettings` option in the [zoomSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties can be used to customize the zoom toolbar.
+
+* `backgroundColor` - It is used to customize the background color of the zoom toolbar.
+* `borderOpacity` - It is used to customize the opacity of the border of the zoom toolbar.
+* `borderWidth` - It is used to customize the thickness of the border of the zoom toolbar.
+* `borderColor` - It is used to customize the color of the border of the zoom toolbar.
+* `horizontalAlignment` - It is used to position the zoom toolbar in near, far, and center positions to customize its horizontal placement.
+* `verticalAlignment` - It is used to position the zoom toolbar in near, far, and center positions to customize its vertical placement.
+* `orientation` - It is used to change the orientation (horizontal/vertical) of the zoom toolbar.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/zoom-toolbar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ZoomToolbar.cs" %}
+{% include code-snippet/maps/user-interactions/zoom-toolbar/zoom-toolbar.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The zoom toolbar can be customized by using the `ToolbarSettings` option in the [ZoomSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html). The following properties can be used to customize the zoom toolbar.
+
+* `BackgroundColor` - It is used to customize the background color of the zoom toolbar.
+* `BorderOpacity` - It is used to customize the opacity of the border of the zoom toolbar.
+* `BorderWidth` - It is used to customize the thickness of the border of the zoom toolbar.
+* `BorderColor` - It is used to customize the color of the border of the zoom toolbar.
+* `HorizontalAlignment` - It is used to position the zoom toolbar in near, far, and center positions to customize its horizontal placement.
+* `VerticalAlignment` - It is used to position the zoom toolbar in near, far, and center positions to customize its vertical placement.
+* `Orientation` - It is used to change the orientation (horizontal/vertical) of the zoom toolbar.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/zoom-toolbar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ZoomToolbar.cs" %}
+{% include code-snippet/maps/user-interactions/zoom-toolbar/zoom-toolbar.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Zoom toolbar customization](./images/UserInteraction/zoom-toolbar-customization.PNG)
+
+<!-- markdownlint-disable MD036 -->
+**Customizing the buttons in the zoom toolbar**
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+The appearance of the buttons in the zoom toolbar can be customized by using the `buttonSettings` option in the `toolbarSettings` of the [zoomSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html) property. The following properties can be used to customize the zoom toolbar buttons.
+
+* `fill` - It is used to set the background color of the buttons.
+* `color` - It is used to customize the color of the icons inside the button.
+* `borderOpacity` - It is used to set the opacity of the border of the zoom toolbar buttons.
+* `borderWidth` - It is used to set the thickness of the border of the zoom toolbar buttons.
+* `borderColor`- It is used to set the color of the border of the zoom toolbar buttons.
+* `radius` - It is used to set the size of the button.
+* `selectionColor` - It is used to set the color of the icons inside the button when selection is performed.
+* `highlightColor` - It is used to change the color of the button when the mouse is hovered over it.
+* `padding` - It is used to change the padding space between each button.
+* `opacity` - It is used to change the opacity of the button.
+* `toolbarItems` - It is used to change the items that should be displayed in the zoom toolbar. By default, zoom-in, zoom-out, and reset buttons will be available. Other options include selection zoom and panning.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/zoom-toolbar-button/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="zoomToolbarButton.cs" %}
+{% include code-snippet/maps/user-interactions/zoom-toolbar-button/zoom-toolbar-button.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The appearance of the buttons in the zoom toolbar can be customized by using the `ButtonSettings` option in the `ToolbarSettings` of the [ZoomSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html) property. The following properties can be used to customize the zoom toolbar buttons.
+
+* `Fill` - It is used to set the background color of the buttons.
+* `Color` - It is used to customize the color of the icons inside the button.
+* `BorderOpacity` - It is used to set the opacity of the border of the zoom toolbar buttons.
+* `BorderWidth` - It is used to set the thickness of the border of the zoom toolbar buttons.
+* `BorderColor`- It is used to set the color of the border of the zoom toolbar buttons.
+* `Radius` - It is used to set the size of the button.
+* `SelectionColor` - It is used to set the color of the icons inside the button when selection is performed.
+* `HighlightColor` - It is used to change the color of the button when the mouse is hovered over it.
+* `Padding` - It is used to change the padding space between each button.
+* `Opacity` - It is used to change the opacity of the button.
+* `ToolbarItems` - It is used to change the items that should be displayed in the zoom toolbar. By default, zoom-in, zoom-out, and reset buttons will be available. Other options include selection zoom and panning.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/zoom-toolbar-button/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ZoomToolbarButton.cs" %}
+{% include code-snippet/maps/user-interactions/zoom-toolbar-button/zoom-toolbar-button.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Zoom toolbar button customization](./images/UserInteraction/zoom-toolbar-button-customization.PNG)
+
+<!-- markdownlint-disable MD036 -->
+**Customizing the tooltip of the zoom toolbar**
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+The appearance of the tooltip of the zoom toolbar can be customized by using the `tooltipSettings` option in the `toolbarSettings` of the [zoomSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html) property. The following properties are available to customize the zoom toolbar tooltip.
+
+* `visible` - Enables or disables the tooltip of the zoom toolbar.
+* `fill` - It is used to change the background color of the tooltip of the zoom toolbar.
+* `borderOpacity` - It is used to change the opacity of the border of the zoom toolbar's tooltip.
+* `borderWidth` - It is used to change the thickness of the border of the zoom toolbar's tooltip.
+* `borderColor` - It is used to change the color of the border of the zoom toolbar's tooltip.
+* `fontColor` - It is used to change the color of the text in the tooltip of the zoom toolbar.
+* `fontFamily` - It is used to change the font family of the text in the tooltip of the zoom toolbar.
+* `fontStyle` - It is used to change the font style of the text in the tooltip of the zoom toolbar.
+* `fontWeight` - It is used to change the font weight of the text in the tooltip of the zoom toolbar.
+* `fontSize` - It is used to change the size of the text in the tooltip of the zoom toolbar.
+* `fontOpacity` - It is used to change the opacity of the text in the tooltip of the zoom toolbar.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/toolbar-button-tooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ToolbarButtonTooltip.cs" %}
+{% include code-snippet/maps/user-interactions/toolbar-button-tooltip/toolbar-button-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The appearance of the tooltip of the zoom toolbar can be customized by using the `TooltipSettings` option in the `ToolbarSettings` of the [ZoomSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsZoomSettings.html) property. The following properties are available to customize the zoom toolbar tooltip.
+
+* `Visible` - Enables or disables the tooltip of the zoom toolbar.
+* `Fill` - It is used to change the background color of the tooltip of the zoom toolbar.
+* `BorderOpacity` - It is used to change the opacity of the border of the zoom toolbar's tooltip.
+* `BorderWidth` - It is used to change the thickness of the border of the zoom toolbar's tooltip.
+* `BorderColor` - It is used to change the color of the border of the zoom toolbar's tooltip.
+* `FontColor` - It is used to change the color of the text in the tooltip of the zoom toolbar.
+* `FontFamily` - It is used to change the font family of the text in the tooltip of the zoom toolbar.
+* `FontStyle` - It is used to change the font style of the text in the tooltip of the zoom toolbar.
+* `FontWeight` - It is used to change the font weight of the text in the tooltip of the zoom toolbar.
+* `FontSize` - It is used to change the size of the text in the tooltip of the zoom toolbar.
+* `FontOpacity` - It is used to change the opacity of the text in the tooltip of the zoom toolbar.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/toolbar-button-tooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ToolbarButtonTooltip.cs" %}
+{% include code-snippet/maps/user-interactions/toolbar-button-tooltip/toolbar-button-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Zoom toolbar tooltip customization](./images/UserInteraction/zoom-toolbar-tooltip-customization.PNG)
 
 ## Selection
 

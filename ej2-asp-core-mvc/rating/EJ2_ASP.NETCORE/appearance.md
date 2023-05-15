@@ -122,7 +122,7 @@ You can change the space between the rating items in ASP.NET Core Rating control
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippetrating/appearance/css-class/item-spacing/tagHelper %}
+{% include code-snippet/rating/appearance/css-class/item-spacing/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
