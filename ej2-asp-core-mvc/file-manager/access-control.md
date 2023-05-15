@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Access Control in ##Platform_Name## File Manager Component
+title: Access Control in Syncfusion ##Platform_Name## File Manager Component
 description: Learn here all about Access Control in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Access Control
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Access Control
+# Access Control in File Manager component
 
 The FileManager allows you to define access permissions for folders and files using a set of access rules to user(s).
 
@@ -110,9 +110,6 @@ The following example demonstrate the file manager rendered with access control 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/access-control/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/access-control/HomeController_mvc.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -121,9 +118,6 @@ The following example demonstrate the file manager rendered with access control 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/access-control/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/access-control/HomeController_mvc.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
@@ -131,4 +125,4 @@ The following example demonstrate the file manager rendered with access control 
 
 Output be like the below, when write the documents folder.
 
-![Access Control](./images/access_control.PNG)
+![Access Control](./images/access_control.png)

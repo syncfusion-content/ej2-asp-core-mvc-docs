@@ -79,6 +79,8 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 
 
 
+> The Grid add or edit dialog element has the max-height property, which is calculated based on the available window height. So, in the normal window (1920 x 1080), it is possible to set the dialog’s height up to 658px.
+
 ## Show or hide columns in dialog editing
 
 The Grid has the option to show hidden columns or hide visible columns while editing in the dialog edit mode by using the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of the Grid.
