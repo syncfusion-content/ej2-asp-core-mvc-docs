@@ -451,7 +451,7 @@ namespace MyWebService.Controllers
 
 Further, let us explore more on how to save, load, rename, delete, and add reports using the built-in toolbar options via Web API controller (aka, PivotController) one-by-one.
 
-### Saving a report
+#### Saving a report
 
 When you select the **"Save a report"** option from the toolbar, the [saveReport](#savereport) event is triggered. In this event, an AJAX request is made to the Web API controller's **SaveReport** method, passing the name of the current report and the current report, which you can use to check and save in the SQL database.
 
@@ -575,7 +575,7 @@ In the meantime, you can save a duplicate of the current report to the SQL Serve
 
 ![Copy of the current report has been saved in the SQL database](images/output_save_as_report.png)
 
-### Loading a report
+#### Loading a report
 
 When you select the dropdown menu item from the toolbar, the [loadReport](#loadreport) event is triggered. In this event, an AJAX request is made to the **LoadReport** method of the Web API controller, passing the name of the selected report. The method uses this information to search for the report in the SQL database, fetch it, and load it into the pivot table.
 
@@ -696,7 +696,7 @@ namespace MyWebApp.Controllers
 
 ![Loading a report from SQL database](images/output_load_report.png)
 
-### Renaming a report
+#### Renaming a report
 
 When you select the **"Rename a current report"** option from the toolbar, the [renameReport](#renamereport) event is triggered. In this event, an AJAX request is made to the **RenameReport** method of the Web API controller, passing the current and new report names, where you can use the current report name to identify the report and resave it with the new report name in the SQL database.
 
@@ -838,7 +838,7 @@ namespace MyWebApp.Controllers
 
 ![Renaming a report in the SQL database](images/output_rename_report.png)
 
-### Deleting a report
+#### Deleting a report
 
 When you select the **"Delete a current report"** option from the toolbar, the [removeReport](#removereport) event is triggered. In this event, an AJAX request is made to the **RemoveReport** method of the Web API controller, passing the current report name to identify and delete the appropriate report from the SQL database.
 
@@ -956,7 +956,7 @@ namespace MyWebApp.Controllers
 
 ![Deleting a report from the SQL database](images/output_remove_report.png)
 
-### Adding a report
+#### Adding a report
 
 When you select the **"Create a new report"** option from the toolbar, the [newReport](#newreport) event is triggered, followed by the [saveReport](#savereport) event. To save this new report to the SQL database, use the [saveReport](#savereport) event triggered later, and then follow the save report briefing in the preceding [topic](#saving-a-report).
 
@@ -967,7 +967,6 @@ When you select the **"Create a new report"** option from the toolbar, the [newR
 Below points need to be considered when saving the report to SQL Server database.
 
 * **Data source**: Both raw data and aggregated data won't be saved and loaded from the database.
-* **Conditional formatting**: The appearance of the pivot table, such as background color, font color, font family, and font size based on the specific conditions won't be saved and loaded from the database.
 * **Hyperlinks**: Option to link external facts via pivot table cells won't be saved and loaded from the database.
 * The pivot table should always load reports from the SQL database based on the data source that is currently bound to it.
 
