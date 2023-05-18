@@ -309,6 +309,13 @@ namespace MyWebService.Controllers
         {
             RenameReportInDB(reportArgs.ReportName, reportArgs.RenameReport, reportArgs.isReportExists);
         }
+        
+        public class RenameReportDB
+        {
+            public string ReportName { get; set; }
+            public string RenameReport { get; set; }
+            public bool isReportExists { get; set; }
+        }
 
         public class RenameReportDB
         {
@@ -730,6 +737,13 @@ namespace MyWebApp.Controllers
         public void RenameReport([FromBody] RenameReportDB reportArgs)
         {
             RenameReportInDB(reportArgs.ReportName, reportArgs.RenameReport, reportArgs.isReportExists);
+        }
+        
+        public class RenameReportDB
+        {
+            public string ReportName { get; set; }
+            public string RenameReport { get; set; }
+            public bool isReportExists { get; set; }
         }
 
         public class RenameReportDB

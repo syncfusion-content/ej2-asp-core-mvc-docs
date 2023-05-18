@@ -1,5 +1,5 @@
-    @(Html.EJS().Chart("container").Series(
-           series =>
+@(Html.EJS().Chart("container").Series(
+        series =>
            {
                series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.BoxAndWhisker).
                Name("Department").
@@ -22,7 +22,8 @@
                Title("Age").
                MajorGridLines(ViewBag.gridlines).
                MajorTickLines(ViewBag.ticklines)
-           ).Title("Employee Age Group in Various Department").LegendSettings(
+           ).Title("Employee Age Group in Various Department")
+           .LegendSettings(
             legend => {
                 legend.Visible(false);
             }).Tooltip(
