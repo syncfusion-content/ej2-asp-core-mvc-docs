@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Unload Document in ##Platform_Name## Pdfviewer Component
+title: Unload Document in EJ2 ASP.NET Core PDF Viewer Control | Syncfusion
 description: Learn here all about Unload Document in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Unload Document
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
 
 # Unload the PDF document programmatically
 
