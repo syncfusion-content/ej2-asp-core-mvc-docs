@@ -6,18 +6,19 @@
     {
         Visible = true,
         LabelPath = "name",
+        IntersectionAction = Syncfusion.EJ2.Maps.IntersectAction.Trim,
+        SmartLabelMode = Syncfusion.EJ2.Maps.SmartLabelMode.Hide,
         Border = new MapsBorder
         {
             Color = "green",
             Width = 2,
             Opacity = 1
         },
-        Fill = "#CCD1D1",
+        Fill = "Transparent",
         Opacity = 0.9,
         TextStyle = new MapsFont
         {
-            Color = "blue",
-            Size = "10px",
+            Size = "17px",
             FontStyle = "Sans-serif",
             FontWeight = "normal"
         }
