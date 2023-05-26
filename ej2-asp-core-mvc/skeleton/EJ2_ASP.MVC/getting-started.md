@@ -167,3 +167,5 @@ The Skeleton control has the following different type of shapes.
 {% endtabs %}
 
 ![ASP.NET MVC Skelton Skimmer Effects](images/skeleton-skimmer-effects.png)
+
+N> You can refer to our [ASP.NET MVC Skeleton](https://www.syncfusion.com/aspnet-mvc-ui-controls/skeleton) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Skeleton Example](https://ej2.syncfusion.com/aspnetmvc/Skeleton/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Skeleton in ASP.NET MVC
