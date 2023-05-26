@@ -299,6 +299,36 @@ The following code shows how to export the form field data as an object and impo
 </script>
 ```
 
+### Export and import as XML
+
+The following code explains how to export the form field data as XML.
+
+```html
+
+<button id="exportJson" onclick="exportXml()">Export XML</button>
+<button id="importJson" onclick="importXml()">Import XML</button>
+
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
+</div>
+
+<script>
+    // Event triggers on Export XML button click.
+    function exportXml() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        // Data must be the desired path for the exported document.
+        viewer.exportFormFields('Data', FormFieldDataFormat.Xml);
+    }
+
+    // Event triggers on Import XML button click.
+    function importXml() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly.
+        viewer.importFormFields('File', FormFieldDataFormat.Xml);
+    }
+</script>
+```
+
 ## Signature and initial fields settings
 
 Using the `updateFormField` method, the form fields can be updated programmatically.
