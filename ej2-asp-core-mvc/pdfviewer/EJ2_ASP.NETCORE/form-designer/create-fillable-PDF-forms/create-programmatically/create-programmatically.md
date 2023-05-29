@@ -355,15 +355,14 @@ The following code shows how to export the form field data as an object and impo
 </script>
 ```
 
-## Signature and initial fields settings
+### Export and import as XML
 
-Using the `updateFormField` method, the form fields can be updated programmatically.
-
-The following code example explains how to update the signature field properties on a button click.
+The following code explains how to export the form field data as XML.
 
 ```html
 
-<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+<button id="exportXml" onclick="exportXml()">Export XML</button>
+<button id="importXml" onclick="importXml()">Import XML</button>
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -374,21 +373,18 @@ The following code example explains how to update the signature field properties
 </div>
 
 <script>
-
-    // Event triggers on Update Properties button click.
-    function updateProperties() {
+    // Event triggers on Export XML button click.
+    function exportXml() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        var formField = viewer.retrieveFormFields();
-        viewer.formDesignerModule.updateFormField(formField[0], {
-            name: 'Initial',
-            isReadOnly: true,
-            visibility: 'visible',
-            isRequired: false,
-            isPrint: true,
-            tooltip: 'Initial',
-            thickness: 4
-        });
+        // Data must be the desired path for the exported document.
+        viewer.exportFormFields('Data', FormFieldDataFormat.Xml);
+    }
+
+    // Event triggers on Import XML button click.
+    function importXml() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly.
+        viewer.importFormFields('File', FormFieldDataFormat.Xml);
     }
 </script>
-
 ```
