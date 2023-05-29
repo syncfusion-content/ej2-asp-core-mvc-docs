@@ -1,12 +1,25 @@
 ---
 layout: post
-title: Create Programmatically in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about Create Programmatically in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Form Field Properties in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Form Field Properties in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Create Programmatically
+control: Form Field Properties
 publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
+
+# Form Field Properties 
+
+Form field properties in Syncfusion PDF Viewer allow you to customize and interact with form fields embedded within PDF documents. This documentation provides an overview of the form field properties supported by the Syncfusion PDF Viewer and explains how to use them effectively.
+
+  * Textbox
+  * Password
+  * CheckBox
+  * RadioButton
+  * ListBox
+  * DropDown
+  * SignatureField
+  * InitialField
 
 ## Signature and initial fields settings
 
@@ -66,7 +79,7 @@ The following code example explains how to update the properties of the signatur
             // Specify the properties of the signature indicator in the signature field.
             signatureIndicatorSettings: {
                 opacity: 1,
-                backgroundColor: '#237ba2',
+                backgroundColor: '#daeaf7ff',
                 height: 50,
                 fontSize: 15,
                 text: 'Signature Field',
@@ -77,7 +90,7 @@ The following code example explains how to update the properties of the signatur
 
 </script>
 
-![Signature Field Settings](../../../pdfviewer/images/signaturefield.png)
+![Signature Field Settings](../../../pdfviewer/images/signaturefield-setting.png)
 
 The following code example explains how to update the properties of the initial field added to the document from the form designer toolbar.
 
@@ -103,7 +116,7 @@ window.onload = function () {
         // Specify the properties of the initial indicator in the initial field.
         initialIndicatorSettings: {
         opacity: 1,
-        backgroundColor: '#237ba2',
+        backgroundColor: '#daeaf7ff',
         height: 50,
         fontSize: 15,
         text: 'Initial Field',
@@ -150,7 +163,7 @@ The following code example explains how to update the Textbox field properties o
             fontStyle: 'None',
             color: 'black',
             borderColor: 'black',
-            backgroundColor: 'white',
+            backgroundColor: '#daeaf7ff',
             alignment: 'Left',
             maxLength: 0,
             isMultiline: false,
@@ -162,7 +175,7 @@ The following code example explains how to update the Textbox field properties o
 
 ```
 
-The following code example explains how to update the properties of the signature field added to the document from the form designer toolbar.
+The following code example explains how to update the properties of the textbox field added to the document from the form designer toolbar.
 
 <script>
 
@@ -196,7 +209,7 @@ window.onload = function () {
         // Set the border color of the textbox field.
         borderColor: 'black',
         // Set the background color of the textbox field.
-        backgroundColor: 'White',
+        backgroundColor: '#daeaf7ff',
         // Set the alignment of the text.
         alignment: 'Left',
         // Set the maximum character length.
@@ -244,7 +257,7 @@ The following code example explains how to update the Password field properties 
             fontStyle: 'None',
             color: 'black',
             borderColor: 'black',
-            backgroundColor: 'white',
+            backgroundColor: '#daeaf7ff',
             alignment: 'Left',
             maxLength: 0,
             bounds: { X: 148, Y: 229, Width: 150, Height: 24 }
@@ -289,7 +302,7 @@ window.onload = function () {
         // Set the border color of the Password field.
         borderColor: 'black',
         // Set the background color of the Password field.
-        backgroundColor: 'white',
+        backgroundColor: '#daeaf7ff',
         // Set the alignment of the text.
         alignment: 'Left',
         // Set the maximum character length.
@@ -330,7 +343,7 @@ The following code example explains how to update the CheckBox field properties 
             tooltip: 'CheckBox',
             thickness: 4,
             isChecked: true,
-            backgroundColor: 'white',
+            backgroundColor: '#daeaf7ff',
             borderColor: 'black',
         });
     }
@@ -363,7 +376,7 @@ window.onload = function () {
         // Specifies whether the check box is in checked state or not.
         isChecked: true,
         // Set the background color of the check box in hexadecimal string format.
-        backgroundColor: 'white',
+        backgroundColor: '#daeaf7ff',
         // Set the border color of the check box field.
         borderColor: 'black'
     }
@@ -402,7 +415,7 @@ The following code example explains how to update the RadioButton field properti
             tooltip: 'RadioButton',
             thickness: 4,
             isSelected: true,
-            backgroundColor: 'white',
+            backgroundColor: '#daeaf7ff',
             borderColor: 'black',
         });
     }
@@ -435,7 +448,7 @@ window.onload = function () {
         // Specifies whether the radio button is in checked state or not.
         isSelected: true,
         // Set the background color of the radio button in hexadecimal string format.
-        backgroundColor: 'white',
+        backgroundColor: '#daeaf7ff',
         // Set the border color of the radio button field.
         borderColor: 'black'
     }
@@ -443,7 +456,7 @@ window.onload = function () {
 
 </script>
 
-![RadioButton Field Settings](../../../pdfviewer/images/checkbox.png)
+![RadioButton Field Settings](../../../pdfviewer/images/radiobutton.png)
 
 ## ListBox field settings
 
@@ -484,7 +497,7 @@ The following code example explains how to update the ListBox field properties o
             fontStyle: 'None',
             color: 'black',
             borderColor: 'black',
-            backgroundColor: 'white',
+            backgroundColor: '#daeaf7ff',
             alignment: 'Left',
             options: customOptions
         });
@@ -533,7 +546,7 @@ window.onload = function () {
         // Set the border color of the ListBox field.
         borderColor: 'black',
         // Set the background color of the ListBox field.
-        backgroundColor: 'White',
+        backgroundColor: '#daeaf7ff',
         // Set the alignment of the text.
         alignment: 'Left',
         // Set the listbox items.
@@ -584,7 +597,7 @@ The following code example explains how to update the DropDown field properties 
             fontStyle: 'None',
             color: 'black',
             borderColor: 'black',
-            backgroundColor: 'white',
+            backgroundColor: '#daeaf7ff',
             alignment: 'Left',
             options: customOptions,
         });
@@ -633,7 +646,7 @@ window.onload = function () {
       // Set the border color of the DropDown field.
       borderColor: 'black',
       // Set the background color of the DropDown field.
-      backgroundColor: 'White',
+      backgroundColor: '#daeaf7ff',
       // Set the alignment of the text.
       alignment: 'Left',
       // Set the DropDown items.
