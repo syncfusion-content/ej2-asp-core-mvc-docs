@@ -61,7 +61,7 @@ The [TabSelected](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ri
 
 ## Tab selecting
 
-The [TabSelecting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_TabSelecting) event is triggered before selecting the tab item.
+The [TabSelecting](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_TabSelecting) event is triggered before selecting the tab item.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -108,7 +108,7 @@ The [TabSelecting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 ## Ribbon collapsing
 
-The [RibbonCollapsing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_RibbonCollapsing) event is triggered before collapsing the ribbon.
+The [RibbonCollapsing](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_RibbonCollapsing) event is triggered before collapsing the ribbon.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -155,7 +155,7 @@ The [RibbonCollapsing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ## Ribbon expanding
 
-The [RibbonExpanding](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_RibbonExpanding) event is triggered before expanding the ribbon.
+The [RibbonExpanding](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_RibbonExpanding) event is triggered before expanding the ribbon.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -202,7 +202,7 @@ The [RibbonExpanding](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 ## Group launcher click
 
-The [LauncherIconClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_LauncherIconClick) event is triggered when the launcher icon of the group is clicked.
+The [LauncherIconClick](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_LauncherIconClick) event is triggered when the launcher icon of the group is clicked.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -251,7 +251,7 @@ The [LauncherIconClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 
 ### Click
 
-The [Clicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_Clicked) event is triggered when the button is clicked.
+The [Clicked](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_Clicked) event is triggered when the button is clicked.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -287,7 +287,7 @@ The [Clicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbo
 
 ### Created
 
-The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_Created) event is triggered when the button is created.
+The [Created](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_Created) event is triggered when the button is created.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -325,7 +325,7 @@ The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbo
 
 ### Change
 
-The [Change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Change) event is triggered when the the Checkbox state is changed.
+The [Change](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Change) event is triggered when the the Checkbox state is changed.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -361,7 +361,7 @@ The [Change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 ### Created
 
-The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Created) event is triggered once the Checkbox is created.
+The [Created](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Created) event is triggered once the Checkbox is created.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -399,7 +399,7 @@ The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbo
 
 ### Change
 
-The [Change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Change) event is triggered while changing the colors.
+The [Change](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Change) event is triggered while changing the colors.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -435,7 +435,7 @@ The [Change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 ### Created
 
-The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Created) event is triggered once the Colorpicker is created.
+The [Created](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Created) event is triggered once the Colorpicker is created.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -471,7 +471,7 @@ The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbo
 
 ### Open
 
-The [Open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Open) event is triggered while opening the Colorpicker popup.
+The [Open](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Open) event is triggered while opening the Colorpicker popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -507,7 +507,7 @@ The [Open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.R
 
 ### Select
 
-The [Select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Select) event is triggered while selecting the color in picker / palette, when showButtons property is enabled.
+The [Select](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Select) event is triggered while selecting the color in picker / palette, when showButtons property is enabled.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -543,7 +543,7 @@ The [Select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 ### Before close
 
-The [BeforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_BeforeClose) event is triggered before closing the Colorpicker popup.
+The [BeforeClose](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_BeforeClose) event is triggered before closing the Colorpicker popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -579,7 +579,7 @@ The [BeforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 
 ### Before open
 
-The [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_BeforeOpen) event is triggered before opening the Colorpicker popup.
+The [BeforeOpen](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_BeforeOpen) event is triggered before opening the Colorpicker popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -615,7 +615,7 @@ The [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ri
 
 ### Before tile render
 
-The [BeforeTileRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_BeforeTileRender) event is triggered while rendering each palette tile.
+The [BeforeTileRender](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_BeforeTileRender) event is triggered while rendering each palette tile.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -653,7 +653,7 @@ The [BeforeTileRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ### Change
 
-The [Change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Change) event is triggered when an item in a popup is selected or when the model value is changed by user.
+The [Change](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Change) event is triggered when an item in a popup is selected or when the model value is changed by user.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -692,7 +692,7 @@ The [Change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 ### Close
 
-The [Close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Close) event is triggered when the popup is closed.
+The [Close](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Close) event is triggered when the popup is closed.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -731,7 +731,7 @@ The [Close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.
 
 ### Open
 
-The [Open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Open) event is triggered when the popup is opened.
+The [Open](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Open) event is triggered when the popup is opened.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -770,7 +770,7 @@ The [Open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.R
 
 ### Created
 
-The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Created) event is triggered once the Combobox is created.
+The [Created](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Created) event is triggered once the Combobox is created.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -809,7 +809,7 @@ The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbo
 
 ### Filtering
 
-The [Filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Filtering) event triggers on typing a character in the Combobox.
+The [Filtering](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Filtering) event triggers on typing a character in the Combobox.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -848,7 +848,7 @@ The [Filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Rib
 
 ### Select
 
-The [Select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Select) event is triggered when an item in the popup is selected.
+The [Select](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Select) event is triggered when an item in the popup is selected.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -887,7 +887,7 @@ The [Select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 ### Before open
 
-The [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_BeforeOpen) event triggers before opening the popup.
+The [BeforeOpen](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_BeforeOpen) event triggers before opening the popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -928,7 +928,7 @@ The [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ri
 
 ### Before close
 
-The [BeforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeClose) event is triggered before closing the DropdownButton popup.
+The [BeforeClose](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeClose) event is triggered before closing the DropdownButton popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -968,7 +968,7 @@ The [BeforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 
 ### Before open
 
-The [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeOpen) event is triggered before opening the Dropdown button popup.
+The [BeforeOpen](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeOpen) event is triggered before opening the Dropdown button popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1008,7 +1008,7 @@ The [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ri
 
 ### Before item render
 
-The [BeforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeItemRender) event is triggered while rendering each Popup item of Dropdown button.
+The [BeforeItemRender](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeItemRender) event is triggered while rendering each Popup item of Dropdown button.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1048,7 +1048,7 @@ The [BeforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ### Open
 
-The [Open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Open) event is triggered while opening the Dropdown button popup.
+The [Open](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Open) event is triggered while opening the Dropdown button popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1088,7 +1088,7 @@ The [Open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.R
 
 ### Close
 
-The [Close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Close) event is triggered while closing the Dropdown button popup.
+The [Close](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Close) event is triggered while closing the Dropdown button popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1128,7 +1128,7 @@ The [Close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.
 
 ### Created
 
-The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Created) event is triggered while selecting an action item in Dropdown button popup.
+The [Created](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Created) event is triggered while selecting an action item in Dropdown button popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1168,7 +1168,7 @@ The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbo
 
 ### Select
 
-The [Select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Select) event is triggered while selecting an action item in Dropdown button popup.
+The [Select](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Select) event is triggered while selecting an action item in Dropdown button popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1210,7 +1210,7 @@ The [Select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 ### Before close
 
-The [BeforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_BeforeClose) event is triggered before closing the Split button popup.
+The [BeforeClose](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_BeforeClose) event is triggered before closing the Split button popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1251,7 +1251,7 @@ The [BeforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 
 ### Before open
 
-The [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_BeforeOpen) event is triggered before opening the Split button popup.
+The [BeforeOpen](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_BeforeOpen) event is triggered before opening the Split button popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1292,7 +1292,7 @@ The [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ri
 
 ### Before item render
 
-The [BeforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_BeforeItemRender) event is triggered while rendering each Popup item of Split button.
+The [BeforeItemRender](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_BeforeItemRender) event is triggered while rendering each Popup item of Split button.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1333,7 +1333,7 @@ The [BeforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ### Open
 
-The [Open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Open) event is triggered while opening the Split button popup.
+The [Open](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Open) event is triggered while opening the Split button popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1374,7 +1374,7 @@ The [Open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.R
 
 ### Close
 
-The [Close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Close) event is triggered while closing the Split button popup.
+The [Close](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Close) event is triggered while closing the Split button popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1415,7 +1415,7 @@ The [Close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.
 
 ### Created
 
-The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Created) event is triggered while selecting an action item in Split button popup.
+The [Created](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Created) event is triggered while selecting an action item in Split button popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1456,7 +1456,7 @@ The [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbo
 
 ### Select
 
-The [Select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Select) event is triggered while selecting an action item in Split button popup.
+The [Select](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Select) event is triggered while selecting an action item in Split button popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1497,7 +1497,7 @@ The [Select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 ### Click
 
-The [Click](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Click) event is triggered while clicking the primary button in Split button.
+The [Click](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Click) event is triggered while clicking the primary button in Split button.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1540,7 +1540,7 @@ The [Click](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.
 
 ### Before close
 
-The [BeforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_BeforeClose) event is triggered before closing the file menu popup.
+The [BeforeClose](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_BeforeClose) event is triggered before closing the file menu popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1589,7 +1589,7 @@ The [BeforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 
 ### Before open
 
-The [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_BeforeOpen) event is triggered before opening the file menu popup.
+The [BeforeOpen](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_BeforeOpen) event is triggered before opening the file menu popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1638,7 +1638,7 @@ The [BeforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ri
 
 ### Before item render
 
-The [BeforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_BeforeItemRender) event is triggered while rendering each ribbon file menu item.
+The [BeforeItemRender](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_BeforeItemRender) event is triggered while rendering each ribbon file menu item.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1687,7 +1687,7 @@ The [BeforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ### Open
 
-The [Open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_Open) event is triggered when file menu popup is opened.
+The [Open](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_Open) event is triggered when file menu popup is opened.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1736,7 +1736,7 @@ The [Open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.F
 
 ### Close
 
-The [Close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_Close) event is triggered when file menu popup is closed.
+The [Close](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_Close) event is triggered when file menu popup is closed.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1785,7 +1785,7 @@ The [Close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.
 
 ### Select
 
-The [Select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_Select) event is triggered while selecting an item in ribbon file menu.
+The [Select](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_Select) event is triggered while selecting an item in ribbon file menu.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
