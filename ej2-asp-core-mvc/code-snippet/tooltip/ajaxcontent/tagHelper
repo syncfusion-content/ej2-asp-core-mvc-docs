@@ -20,8 +20,8 @@
             var _this = this;
             this.content = 'Loading...';
             this.dataBind();
-            var fetchAPi = new ej.base.Fetch("@Url.Content("~/Scripts/tooltip/tooltipdata.json")", 'GET');
-            fetchAPi.send().then(function (result) {
+            var fetchApi = new ej.base.Fetch("@Url.Content("~/Scripts/tooltip/tooltipdata.json")", 'GET');
+            fetchApi.send().then(function (result) {
             for (var i = 0; i < result.length; i++) {
                 if (result[i].Id === args.target.getAttribute('data-content')) {
                     _this.content = "<div class='contentWrap'><span class=" + result[i].Class + "></span><div class='def'>" + result[i].Sports + "</div></div>";

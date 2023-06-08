@@ -18,8 +18,8 @@
     function onBeforeRender(args) {
         this.content = 'Loading...';
         this.dataBind();
-        var fetchAPi = new ej.base.Fetch('./tooltip.json', 'GET');
-        fetchAPi.send().then(
+        var fetchApi = new ej.base.Fetch('./tooltip.json', 'GET');
+        fetchApi.send().then(
             (result) => {
                 for (let i = 0; i < result.length; i++) {
                     if (result[i].Id == args.target.id) {
