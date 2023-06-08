@@ -10,9 +10,9 @@ documentation: ug
 
 # Dynamic Tooltip content
 
-The tooltip content can be changed dynamically using the [AJAX](https://ej2.syncfusion.com/documentation/base/api-ajax.html?lang=typescript) request.
+The tooltip content can be changed dynamically using the Fetch request.
 
-The AJAX request should be made within the [`beforeRender`](https://ej2.syncfusion.com/documentation/tooltip/api-tooltip.html?lang=typescript#beforerender) event of the tooltip. On every success, the corresponding retrieved data will be set to the [content](https://ej2.syncfusion.com/documentation/tooltip/api-tooltip.html?lang=typescript#content) property of the tooltip.
+The Fetch request should be made within the [`beforeRender`](https://ej2.syncfusion.com/documentation/tooltip/api-tooltip.html?lang=typescript#beforerender) event of the tooltip. On every success, the corresponding retrieved data will be set to the [content](https://ej2.syncfusion.com/documentation/tooltip/api-tooltip.html?lang=typescript#content) property of the tooltip.
 
 When you hover over the icons, its respective data will be retrieved dynamically and then assigned to the tooltip’s content.
 
@@ -22,10 +22,9 @@ Refer to the following code snippet to change the tooltip content dynamically.
 function onBeforeRender(args): void {
     this.content = 'Loading...';
     this.dataBind();
-    var ajax = new Ajax('./tooltip.json', 'GET', true);
-    ajax.send().then(
+    var fetchAPi = new Fetch('./tooltip.json', 'GET');
+    fetchAPi.send().then(
         (result: any) => {
-            result = JSON.parse(result);
             for (var i: number = 0; i < result.length; i++) {
                 if (result[i].Id == args.target.id) {
                     /* tslint:disable */

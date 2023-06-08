@@ -19,10 +19,9 @@
     function onBeforeRender(args) {
         this.content = 'Loading...';
         this.dataBind();
-        var ajax = new ej.base.Ajax('./tooltip.json', 'GET', true);
-        ajax.send().then(
+        var fetchAPi = new ej.base.Fetch('./tooltip.json', 'GET');
+        fetchAPi.send().then(
             (result) => {
-                result = JSON.parse(result);
                 for (let i = 0; i < result.length; i++) {
                     if (result[i].Id == args.target.id) {
                         this.content = result[i].Name;
