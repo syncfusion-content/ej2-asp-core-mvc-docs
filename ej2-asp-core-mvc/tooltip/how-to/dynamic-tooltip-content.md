@@ -22,8 +22,8 @@ Refer to the following code snippet to change the tooltip content dynamically.
 function onBeforeRender(args): void {
     this.content = 'Loading...';
     this.dataBind();
-    var fetchAPi = new Fetch('./tooltip.json', 'GET');
-    fetchAPi.send().then(
+    var fetchApi = new Fetch('./tooltip.json', 'GET');
+    fetchApi.send().then(
         (result: any) => {
             for (var i: number = 0; i < result.length; i++) {
                 if (result[i].Id == args.target.id) {
