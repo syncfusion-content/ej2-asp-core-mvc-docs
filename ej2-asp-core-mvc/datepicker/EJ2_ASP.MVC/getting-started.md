@@ -154,3 +154,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 * [How to change the initial view of the DatePicker](./view)
 * [How to achieve validation with DatePicker](./how-to/client-side-validation)
 * [How to get and set value in DatePickerFor](./how-to/datepicker-for-mvc)
+
+N> You can also explore our [ASP.NET MVC DatePicker example](https://ej2.syncfusion.com/aspnetmvc/DatePicker DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the DatePicker in ASP.NET MVC.
