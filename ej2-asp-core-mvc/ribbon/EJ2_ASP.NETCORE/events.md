@@ -190,7 +190,7 @@ The [launcherIconClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
     <e-ribbon-tabs>
         <e-ribbon-tab header="Home">
             <e-ribbon-groups>
-                <e-ribbon-group header="Clipboard">
+                <e-ribbon-group header="Clipboard" showLauncherIcon=true>
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>

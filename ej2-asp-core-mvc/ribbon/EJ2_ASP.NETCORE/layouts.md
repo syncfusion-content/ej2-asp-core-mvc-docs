@@ -40,7 +40,7 @@ In simplified layout, the Ribbon control organize the items and groups into a si
 
 You can hide the Ribbon contents and display only the tab headers by double-clicking on the tab header. In minimized state, the Ribbon control expands to its normal state when click on the tab header.
 
-Also, You can render or programmatically change the Ribbon control to minimized state by setting the [isMinimized](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_IsMinimized) property to `true`.
+Also, you can render or programmatically change the Ribbon control to minimized state by setting the [isMinimized](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_IsMinimized) property to `true`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
