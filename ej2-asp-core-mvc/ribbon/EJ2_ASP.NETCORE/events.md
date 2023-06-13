@@ -39,6 +39,21 @@ The [tabSelected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
                 </e-ribbon-group>
             </e-ribbon-groups>
         </e-ribbon-tab>
+        <e-ribbon-tab header="View">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Views">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=Button>
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-print" content="Print Layout"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
     </e-ribbon-tabs>
 </ejs-ribbon>
 
@@ -73,6 +88,21 @@ The [`tabSelecting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
                             <e-ribbon-items>
                                 <e-ribbon-item type=Button>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+        <e-ribbon-tab header="View">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Views">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=Button>
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-print" content="Print Layout"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
                         </e-ribbon-collection>
@@ -879,7 +909,7 @@ The [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Rib
                         <e-ribbon-collection>
                             <e-ribbon-items>
                                 <e-ribbon-item type=ComboBox>
-                                    <e-ribbon-comboboxsettings dataSource=fontStyle index=3 filtering="filteringEvent"></e-ribbon-comboboxsettings>
+                                    <e-ribbon-comboboxsettings dataSource=fontStyle index=3 allowFiltering="true" filtering="filteringEvent"></e-ribbon-comboboxsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
                         </e-ribbon-collection>
