@@ -149,4 +149,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [ListView customization](./customizing-templates)
 * [Virtualization](./virtualization)
 
-N> You can refer to our [ASP.NET Core Listview](https://www.syncfusion.com/aspnet-core-ui-controls/listview) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core ListView Example](https://ej2.syncfusion.com/aspnetcore/ListView/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the ListView in ASP.NET Core.
+N> You can refer to our [ASP.NET Core ListView](https://www.syncfusion.com/aspnet-core-ui-controls/listview) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core ListView Example](https://ej2.syncfusion.com/aspnetcore/ListView/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the ListView in ASP.NET Core.
