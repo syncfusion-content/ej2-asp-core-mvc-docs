@@ -140,4 +140,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 * [ListView customization](./customizing-templates)
 * [Virtualization](./virtualization)
 
-N> You can refer to our [ASP.NET MVC Listview](https://www.syncfusion.com/aspnet-mvc-ui-controls/listview) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC ListView Example](https://ej2.syncfusion.com/aspnetmvc/ListView/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the ListView in ASP.NET MVC.
+N> You can refer to our [ASP.NET MVC ListView](https://www.syncfusion.com/aspnet-mvc-ui-controls/listview) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC ListView Example](https://ej2.syncfusion.com/aspnetmvc/ListView/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the ListView in ASP.NET MVC.
