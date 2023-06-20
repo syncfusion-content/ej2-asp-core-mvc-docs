@@ -139,7 +139,7 @@ The available arguments in the `ChartModel` are:
 * isSeriesInRows: Specifies to switch the row or a column.
 * range: Specifies the selected range or specified range.
 * id: Specifies the chart element id.
-* markerSettings: Specifies the Line Chart marker settings.
+* markerSettings: Specifies the marker settings. The marker is used to provide information about the data points in the series and is currently only applicable to the line chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -206,9 +206,9 @@ Chart feature allows you to view and insert a chart in a spreadsheet, and you ca
 {% endtabs %}
 {% endif %}
 
-#### Customization of Line Chart Markers
+#### Customization of line chart markers
 
-Using the [`actionBegin`](../api/spreadsheet/#actionbegin) event, you can change the shape, size, fill color, and border of the line chart marker.
+Using the [`actionBegin`](../api/spreadsheet/#actionbegin) event, you can change the shape, size, fill color, and border of the line chart marker. In the following example, you can see the modified marker appearance, such as shape and size, while creating the line chart with UI interaction.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
