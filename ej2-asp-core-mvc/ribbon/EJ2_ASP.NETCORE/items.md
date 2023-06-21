@@ -29,7 +29,7 @@ The following items can be rendered as built in items
 ### Button
 To render a Button item, you should set the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to `Button`. You can further customize the button item through [`RibbonButtonSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html) by using the `e-ribbon-buttonsettings` tag helper, which provides options such as `iconCss`, `content`, `isToggle` and more.
 
-#### IsToggle
+#### Toggle Button
 You can make use of [`isToggle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_IsToggle) property to define whether the button is toggle button or not. By default value is false.
 
 {% tabs %}
@@ -63,11 +63,11 @@ You can make use of [`isToggle`](https://help.syncfusion.com/cr/aspnetcore-js2/S
 
 ### CheckBox
 
-To render a CheckBox item, you should set the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to `CheckBox` . You can further customize the CheckBox item through [`RibbonCheckBoxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html) by using the `e-ribbon-checkboxsettings` tag helper, which provides options such as `cssClass`, `label`, `checked` and more.
+To render a CheckBox item, you should set the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to `CheckBox` . You can further customize the CheckBox item through [`RibbonCheckBoxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html) by using the `e-ribbon-checkboxsettings` tag helper, which provides options such as `labelPosition`, `label`, `checked` and more.
 
-#### Checked
+#### CheckBox State
 
-You can make use of [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Checked) property to define whether the checkbox is checked or not. By default value is false.
+You can make use of [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Checked) property to define whether the checkbox is checked or not. A tick mark will be added to the visualization of CheckBox in checked state. By default value is false.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -85,6 +85,41 @@ You can make use of [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
                             <e-ribbon-items>
                                 <e-ribbon-item type=CheckBox>
                                     <e-ribbon-checkboxsettings checked=true label="Ruler"></e-ribbon-checkboxsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Label and label Position
+
+You can define the caption for a CheckBox, by utilizing the [`label`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Label) property. This helps in reducing the need for manually adding a separate label element. 
+You can customize the position of the label relative to the CheckBox by using the [`labelPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_LabelPosition) property, which allows you to specify whether the label should appear before or after the CheckBox.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Buttons
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="View">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=CheckBox>
+                                    <e-ribbon-checkboxsettings checked=true label="Ruler" labelPosition=LabelPosition.Before></e-ribbon-checkboxsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
                         </e-ribbon-collection>
@@ -187,9 +222,9 @@ You can make use of [`target`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 To render a ComboBox item, you should set the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to `ComboBox` . You can further customize the ComboBox item through [`RibbonComboBoxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html) by using the `e-ribbon-comboboxsettings` tag helper, which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
 
-#### AllowFiltering
+#### Filtering
 
-You can make use of [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_AllowFiltering) property which specifies whether to show the filter bar (search box) of the combobox. The filter action retrieves matched items through the filtering event based on the characters typed in the search TextBox. If no match is found, the value of the noRecordsTemplate property will be displayed. By default the value is false.
+You can make use of [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_AllowFiltering) property which provides built-in support for filtering data items. As soon as you start typing characters in the control, the filter operation initiates automatically. If no match is found, the value of the noRecordsTemplate property will be displayed. By default the value is false.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -211,6 +246,44 @@ You can make use of [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetcore
                             <e-ribbon-items>
                                 <e-ribbon-item type=ComboBox>
                                     <e-ribbon-comboboxsettings dataSource=fontStyle allowFiltering=true></e-ribbon-comboboxsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Filter type 
+
+You can specify the filter type to be applied during the search action. When performing filtering, you have the flexibility to modify the filter type to "contains", "startsWith", or "endsWith" specifically for string types by enabling [`filterType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_FilterType) Property.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.DropDowns
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<string> fontStyle = new List<string>() { "Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia" };
+}
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Font">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=ComboBox>
+                                    <e-ribbon-comboboxsettings dataSource=fontStyle index=3 filterType=FilterType.EndsWith></e-ribbon-comboboxsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
                         </e-ribbon-collection>
@@ -302,14 +375,14 @@ You can make use of [`sortOrder`](https://help.syncfusion.com/cr/aspnetcore-js2/
 
 To render a ColorPicker item, you should set the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to `ColorPicker` . You can further customize the ColorPicker item through [`RibbonColorPickerSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) by using the `e-ribbon-colorpickersettings` tag helper, which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
 
-#### ModeSwitcher
+#### Mode and Values
 
-You can make use of [`modeSwitcher`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_ModeSwitcher) property which defines whether to show / hide the mode switcher button in the color picker.
+To define the rendering mode of the ColorPicker, you can set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Mode) property to either "picker" or "palette".
 
-{% tabs %}
-{% highlight c# tabtitle="Index.cshtml" %}
+You can specify the value color you can use [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Value) property. The value should be a valid hex color code.
 
 @using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Inputs
 @using Syncfusion.EJ2.Navigations
 
 <ejs-ribbon id="ribbon">
@@ -321,7 +394,7 @@ You can make use of [`modeSwitcher`](https://help.syncfusion.com/cr/aspnetcore-j
                         <e-ribbon-collection>
                             <e-ribbon-items>
                                 <e-ribbon-item type=ColorPicker>
-                                    <e-ribbon-colorpickersettings value="#fff" mode="Palette"></e-ribbon-colorpickersettings>
+                                    <e-ribbon-colorpickersettings value="035a" mode=ColorPickerMode.Palette></e-ribbon-colorpickersettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
                         </e-ribbon-collection>
@@ -331,6 +404,3 @@ You can make use of [`modeSwitcher`](https://help.syncfusion.com/cr/aspnetcore-j
         </e-ribbon-tab>
     </e-ribbon-tabs>
 </ejs-ribbon>
-
-{% endhighlight %}
-{% endtabs %}
