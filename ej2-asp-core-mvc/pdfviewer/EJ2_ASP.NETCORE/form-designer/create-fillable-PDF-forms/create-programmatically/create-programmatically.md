@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create Programmatically in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about Create Programmatically in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Create Programmatically in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Create Programmatically in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Programmatically
 publishingplatform: ej2-asp-core-mvc
@@ -27,16 +27,25 @@ The PDF Viewer control provides the option to add, edit and delete the Form Fiel
 Using addFormField method, the form fields can be added to the PDF document programmatically. We need to pass two parameters in this method. They are Form Field Type and Properties of Form Field Type. To add form field programmatically, Use the following code.
 
 ```html
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   documentLoad="documentLoaded">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function documentLoaded() {
+        var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfviewer.formDesignerModule.addFormField("Textbox",
+            {
+                name: "Textbox",
+                bounds: { X: 146, Y: 229, Width: 150, Height: 24 }
+            });
+    }
+</script>
 
-    <div style="width:100%;height:600px">
-         @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("FormDesigner.pdf").DocumentLoad("documentLoad").DownloadEnd("documentLoad").Render()
-    </div>
-    <script>
-       function documentLoad() {
-            var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-       }
-    </script>
 ```
 
 ## Edit/Update form field programmatically
@@ -44,18 +53,26 @@ Using addFormField method, the form fields can be added to the PDF document prog
 Using updateFormField method, Form Field can be updated programmatically. We should get the Form Field object/Id from FormFieldCollections property that you would like to edit and pass it as a parameter to updateFormField method. The second parameter should be the properties that you would like to update for Form Field programmatically. We have updated the value and background Color properties of Textbox Form Field.
 
 ```html
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   documentLoad="documentLoaded">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function documentLoaded() {
+        var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfviewer.formDesignerModule.addFormField("Textbox",
+            { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
+        pdfviewer.formDesignerModule.addFormField("Textbox",
+            { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
+        pdfviewer.formDesignerModule.updateFormField(pdfviewer.formFieldCollections[0],
+            { backgroundColor: 'red' });
+    }
+</script>
 
-    <div style="width:100%;height:600px">
-         @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("FormDesigner.pdf").DocumentLoad("documentLoad").DownloadEnd("documentLoad").Render()
-    </div>
-    <script>
-       function documentLoad() {
-            var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
-            viewer.formDesignerModule.updateFormField(pdfviewer.formFieldCollections[0], { backgroundColor: 'red' });
-       }
-    </script>
 ```
 
 ## Delete form field programmatically
@@ -63,18 +80,25 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 Using deleteFormField method, the form field can be deleted programmatically. We should retrieve the Form Field object/Id from FormFieldCollections property that you would like to delete and pass it as a parameter to deleteFormField method. To delete a Form Field programmatically, use the following code.
 
 ```html
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   documentLoad="documentLoaded">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function documentLoaded() {
+        var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfviewer.formDesignerModule.addFormField("Textbox",
+            { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
+        pdfviewer.formDesignerModule.addFormField("Textbox",
+            { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
+        pdfviewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0] });
+     }
+</script>
 
-    <div style="width:100%;height:600px">
-         @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("FormDesigner.pdf").DocumentLoad("documentLoad").DownloadEnd("documentLoad").Render()
-    </div>
-    <script>
-       function documentLoad() {
-            var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150,Height: 24 } });
-            viewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0] });
-           }
-    </script>
 ```
 
 ## Saving the form fields
@@ -86,9 +110,14 @@ When the download icon is selected on the toolbar, the Form Fields will be saved
 You can invoke download action using following code snippet.
 
 ```html
-    <div style="width:100%;height:600px">
-          @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableDownload(true).DocumentPath("Hive_Succinctly.pdf").Render()
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   enableDownload="true">
+    </ejs-pdfviewer>
+</div>
 <script>
     window.onload = function () {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
@@ -107,9 +136,14 @@ When the print icon is selected on the toolbar, the PDF document will be printed
 You can invoke print action using the following code snippet.,
 
 ```html
-    <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnablePrint(true).DocumentPath("Hive_Succinctly.pdf").Render()
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   enablePrint="true">
+    </ejs-pdfviewer>
+</div>
 <script>
     window.onload = function () {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
@@ -133,7 +167,13 @@ Add the following code snippet to validate the form fields,
 
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).ValidateFormFields("validateFormFields").EnableFormFieldsValidation(true).DocumentPath("FormFilling_Signature.pdf").Render()
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   EnableFormFieldsValidation=true
+                   ValidateFormFields="validateFormFields">
+    </ejs-pdfviewer>
 </div>
 <script>
     function validateFormFields(args) {
@@ -166,7 +206,11 @@ The following code explains how to export the form field data as FDF.
 <button id="importFdf" onclick="importFdf()">Import FDF</button>
 
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
 </div>
 
 <script>
@@ -196,7 +240,11 @@ The following code explains how to export the form field data as XFDF.
 <button id="importXfdf" onclick="importXfdf()">Import XFDF</button>
 
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
 </div>
 
 <script>
@@ -226,7 +274,11 @@ The following code explains how to export the form field data as JSON.
 <button id="importJson" onclick="importJson()">Import JSON</button>
 
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
 </div>
 
 <script>
@@ -257,7 +309,11 @@ The following code shows how to export the form field data as an object and impo
 <button id="importData" onclick="importData()">Import Data</button>
 
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
 </div>
 
 <script>
@@ -299,36 +355,36 @@ The following code shows how to export the form field data as an object and impo
 </script>
 ```
 
-## Signature and initial fields settings
+### Export and import as XML
 
-Using the `updateFormField` method, the form fields can be updated programmatically.
-
-The following code example explains how to update the signature field properties on a button click.
+The following code explains how to export the form field data as XML.
 
 ```html
 
-<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+<button id="exportXml" onclick="exportXml()">Export XML</button>
+<button id="importXml" onclick="importXml()">Import XML</button>
 
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
 </div>
 
 <script>
-
-    // Event triggers on Update Properties button click.
-    function updateProperties() {
+    // Event triggers on Export XML button click.
+    function exportXml() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        var formField = viewer.retrieveFormFields();
-        viewer.formDesignerModule.updateFormField(formField[0], {
-            name: 'Initial',
-            isReadOnly: true,
-            visibility: 'visible',
-            isRequired: false,
-            isPrint: true,
-            tooltip: 'Initial',
-            thickness: 4
-        });
+        // Data must be the desired path for the exported document.
+        viewer.exportFormFields('Data', FormFieldDataFormat.Xml);
+    }
+
+    // Event triggers on Import XML button click.
+    function importXml() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly.
+        viewer.importFormFields('File', FormFieldDataFormat.Xml);
     }
 </script>
-
 ```
