@@ -381,6 +381,9 @@ To define the rendering mode of the ColorPicker, you can set the [`mode`](https:
 
 You can specify the value color you can use [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Value) property. The value should be a valid hex color code.
 
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
 @using Syncfusion.EJ2.Ribbon
 @using Syncfusion.EJ2.Inputs
 @using Syncfusion.EJ2.Navigations
@@ -404,3 +407,6 @@ You can specify the value color you can use [`value`](https://help.syncfusion.co
         </e-ribbon-tab>
     </e-ribbon-tabs>
 </ejs-ribbon>
+
+{% endhighlight %}
+{% endtabs %}
