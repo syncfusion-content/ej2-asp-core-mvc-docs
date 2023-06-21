@@ -410,3 +410,64 @@ You can specify the value color you can use [`value`](https://help.syncfusion.co
 
 {% endhighlight %}
 {% endtabs %}
+
+## Custom Ribbon items
+
+To customize ribbon items with non-built-in items, you can utilize the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property and set it to `Template`. This allows you to define your own custom template for the ribbon item, giving you the flexibility to create unique and personalized content.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Font">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=Template itemTemplate='<span class="ribbonTemplate ${activeSize}"><span class="e-icons e-video"></span><span class="text">Video</span></span>'>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<style>
+
+    .ribbonTemplate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+        .ribbonTemplate.Large {
+            flex-direction: column;
+        }
+
+            .ribbonTemplate.Large .e-icons {
+                font-size: 35px;
+            }
+
+        .ribbonTemplate.Medium .e-icons,
+        .ribbonTemplate.Small .e-icons {
+            font-size: 20px;
+            margin: 15px 5px;
+        }
+
+        .ribbonTemplate.Small .text {
+            display: none;
+        }
+
+</style>
+
+{% endhighlight %}
+{% endtabs %}
