@@ -1,9 +1,10 @@
 ---ug
 layout: post
-title: Notifications | ASP.NET MVC (Essential JS2) | Syncfusion
+title: Notification | Syncfusion
 description: For displaying the notifications about trial and newer version update information for Syncfusion applications.
-platform: extension
-control: Visual Studio Extensions
+platform: ej2-asp-core-mvc
+control: Syncfusion VS Extensions
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
