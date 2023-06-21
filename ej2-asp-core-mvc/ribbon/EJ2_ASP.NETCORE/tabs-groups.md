@@ -3,7 +3,7 @@ layout: post
 title: Tabs and Groups in ##Platform_Name## Ribbon Control | Syncfusion
 description: Learn here all about Tabs and Groups in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Tabs and Groups
+control: Ribbon
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
