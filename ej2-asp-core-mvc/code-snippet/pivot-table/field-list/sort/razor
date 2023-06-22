@@ -1,0 +1,20 @@
+@Html.EJS().PivotView("PivotView").Height(350).Load("onLoad").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).AllowLabelFilter(true)
+.AllowValueFilter(true).FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Production Year").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add();
+})).ShowFieldList(true).ShowGroupingBar(true).Render()
+
+<script>
+    function onLoad(args) {
+        args.defaultFieldListOrder = 'Descending';
+    }
+</script>
