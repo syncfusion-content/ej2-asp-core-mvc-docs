@@ -227,7 +227,7 @@ To display the fields in descending order by default, set the `defaultFieldListO
 
 
 
-![FieldList treeview descending order](images/fieldlist-sort.png)
+![Fields in the Field list UI arranged in descending order](images/fieldlist-sort.png)
 
 ## Group fields under desired folder name
 
