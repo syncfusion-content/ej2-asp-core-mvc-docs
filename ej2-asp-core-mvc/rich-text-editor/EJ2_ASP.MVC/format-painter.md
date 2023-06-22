@@ -10,29 +10,17 @@ documentation: ug
 
 # Format Painter in ##Platform_Name## Rich Text Editor Control | Syncfusion
 
-A format painter is a tool that allows you to copy the formatting from a piece of text and apply it to another one. Format Painter can be accessed via the toolbar or the keyboard shortcuts. The format painter can copy the formatting of a single word or a whole paragraph. The format painter can be customized using the [formatPainterSettings](../api/rich-text-editor/formatPainterSettings/) property.
+A format painter is a tool that allows you to copy the formatting from a piece of text and apply it to another one. Format Painter can be accessed via the toolbar or the keyboard shortcuts. The format painter can copy the formatting of a single word or a whole paragraph. The format painter can be customized using the [FormatPainterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html) property.
 
 ## Enabling the toolbar option for Format Painter
 
-You can add the `FormatPainter` tool in the Rich Text Editor using the `toolbarSettings` [items](../api/rich-text-editor/toolbarSettings/#items) property.
+You can add the `FormatPainter` tool in the Rich Text Editor using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 
 By double-clicking the format painter toolbar button, `sticky mode` will be enabled. In sticky mode, the format painter will be disabled when the user clicks the `Escape` key again.
 
 The following code example shows how to add the format painter tool in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/format-painter-cs1/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/format-painter-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -42,15 +30,14 @@ The following code example shows how to add the format painter tool in the Rich 
 {% include code-snippet/rich-text-editor/format-painter-cs1/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Customization of copy and paste format
 
-You can customize the format painter tool in the Rich Text Editor using the `formatPainterSettings` property.
+You can customize the format painter tool in the Rich Text Editor using the `FormatPainterSettings` property.
 
-The [allowedFormats](../api/rich-text-editor/formatPainterSettings/#allowedformats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
+The [AllowedFormats](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFormatPainterSettings_AllowedFormats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
 
-Similarly, with the [deniedFormats](../api/rich-text-editor/formatPainterSettings/#deniedformats) property, you can utilize the selectors to prevent specific formats from being pasted onto the selected text. The table below illustrates the selectors and their respective usage.
+Similarly, with the [DeniedFormats](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFormatPainterSettings_DeniedFormats) property, you can utilize the selectors to prevent specific formats from being pasted onto the selected text. The table below illustrates the selectors and their respective usage.
 
 | Type | Description        | Selector                                                | Usage                                                                  |
 |------|--------------------|---------------------------------------------------------|------------------------------------------------------------------------|
@@ -58,18 +45,17 @@ Similarly, with the [deniedFormats](../api/rich-text-editor/formatPainterSetting
 | []   | Attribute Selector | span\[title]                                            | The title attribute of span element is not copied.                     |
 | {}   | Style Selector     | span{background-color, color}                           | The background-color and color styles of span element is not copied.   |
 
-Using the `deniedFormats` property following styles are denied copying from the selected text such as `h3(e-rte-block-blue-text){background-color,padding}[title]; li{color}; span(e-inline-text-highlight)[title]; strong{color}(e-rte-strong-bg)`.
+Using the `DeniedFormats` property following styles are denied copying from the selected text such as `h3(e-rte-block-blue-text){background-color,padding}[title]; li{color}; span(e-inline-text-highlight)[title]; strong{color}(e-rte-strong-bg)`.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-(% include code-snippet/rich-text-editor/format-painter-cs2/index.ts %)
-(% endhighlight %)
-{% highlight html tabtitle="index.html" %}
-(% include code-snippet/rich-text-editor/format-painter-cs2/index.html %)
-(% endhighlight %)
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/format-painter-cs2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/format-painter-cs2/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/format-painter-cs2" %}
 
 ## Using the shortcut key to copy and paste the format
 
