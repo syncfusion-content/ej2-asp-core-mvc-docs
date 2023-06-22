@@ -1,4 +1,4 @@
----ug
+---
 layout: post
 title: Notification | Syncfusion
 description: For displaying the notifications about trial and newer version update information for Syncfusion applications.
