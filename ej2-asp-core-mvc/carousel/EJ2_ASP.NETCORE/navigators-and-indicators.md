@@ -127,7 +127,7 @@ A default indicator in a carousel is a set of dots that indicate the current pos
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel indicators type default preview](images/indicator-type-default.gif)
+![Carousel indicators type default](images/indicator-type-default.gif)
 #### Dynamic Indicator Type
 
 A dynamic indicator in a carousel provides visual cues or markers that dynamically change or update to indicate the current position. The Dynamic indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Dynamic`.
@@ -138,7 +138,7 @@ A dynamic indicator in a carousel provides visual cues or markers that dynamical
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel indicators type dynamic preview](images/indicator-type-dynamic.gif)
+![Carousel indicators type dynamic](images/indicator-type-dynamic.gif)
 
 #### Fraction Indicator Type
 
@@ -150,7 +150,7 @@ The fraction indicator type displays the current slide index and total slide cou
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel indicators type fraction preview](images/indicator-type-fraction.gif)
+![Carousel indicators type fraction](images/indicator-type-fraction.gif)
 
 #### Progress Indicator Type
 
@@ -162,7 +162,7 @@ The Progress Indicator type displays the current slide as a progress bar. The Pr
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel indicators type progress preview](images/indicator-type-progress.gif)
+![Carousel indicators type progress](images/indicator-type-progress.gif)
 
 ### Play button template
 
