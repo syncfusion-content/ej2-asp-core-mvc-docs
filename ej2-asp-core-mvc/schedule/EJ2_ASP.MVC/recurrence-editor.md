@@ -31,10 +31,10 @@ It is possible to customize the recurrence editor to display only the specific r
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/recurrence-editor/editor-recurrence/tagHelper %}
+{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/recurrence-editor/editor-recurrence/data.cs %}
+{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,10 +42,10 @@ It is possible to customize the recurrence editor to display only the specific r
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/recurrence-editor/editor-recurrence/razor %}
+{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/recurrence-editor/editor-recurrence/data.cs %}
+{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -66,6 +66,40 @@ The other properties available in recurrence editor are tabulated below,
 | `MaxDate` | Date | Sets the maximum date on recurrence editor.|
 | `Value` | string | Sets the recurrence rule value on recurrence editor. |
 | `SelectedType` | number | Sets the specific repeat type on the recurrence editor.|
+
+## Customizing the End Type Option in Editor
+
+By default, there are 3 types of end options available in the recurrence editor such as:
+
+* Never
+* Until
+* Count
+
+It is possible to customize the recurrence editor to display only the specific end options, such as the `Until` and `Count` options alone, by setting the appropriate `endTypes` option.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/recurrence-editor/editor-recurrence/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/recurrence-editor/editor-recurrence/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/recurrence-editor/editor-recurrence/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/recurrence-editor/editor-recurrence/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 
 ## Accessing the recurrence rule string
 
