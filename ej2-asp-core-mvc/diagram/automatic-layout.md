@@ -336,6 +336,47 @@ A mind map is a diagram that displays the nodes as a spider diagram organizes in
 {% endif %}
 
 
+## Tree Orientation in layout
+
+An [`Orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of a `MindMapTreeLayout` is used to arrange the tree layout according to a specific direction. By default, the orientation is set to Horizontal. The following table outlines the various orientation types available:
+
+<table>
+<tr>
+<td><b>Orientation Type<b></td>
+<td><b>Description<b></td>
+</tr>
+<tr>
+<td>Horizontal</td>
+<td>Aligns the tree layout from left to right</td>
+</tr>
+<tr>
+<td>Vertical</td>
+<td>Aligns the tree layout from top to bottom</td>
+</tr>
+</table>
+
+>Note: If you want to change mind map orientation in diagram, only Horizontal and vertical options allowed.
+
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/layout/mindMap1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="MindMap.cs" %}
+{% include code-snippet/diagram/layout/mindMap1/mindMap1.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="MindMap1.cs" %}
+{% include code-snippet/diagram/layout/mindMap/mindMap1.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Complex hierarchical tree
 
