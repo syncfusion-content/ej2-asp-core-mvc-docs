@@ -31,10 +31,10 @@ It is possible to customize the recurrence editor to display only the specific r
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/tagHelper %}
+{% include code-snippet/schedule/recurrence-editor/editor-recurrence/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/data.cs %}
+{% include code-snippet/schedule/recurrence-editor/editor-recurrence/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,10 +42,10 @@ It is possible to customize the recurrence editor to display only the specific r
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/razor %}
+{% include code-snippet/schedule/recurrence-editor/editor-recurrence/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/data.cs %}
+{% include code-snippet/schedule/recurrence-editor/editor-recurrence/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -81,10 +81,10 @@ It is possible to customize the recurrence editor to display only the specific e
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/recurrence-editor/editor-recurrence/tagHelper %}
+{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/recurrence-editor/editor-recurrence/data.cs %}
+{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
