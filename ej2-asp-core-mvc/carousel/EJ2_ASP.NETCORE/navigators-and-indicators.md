@@ -108,6 +108,62 @@ In the carousel, [autoPlay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 ![Carousel play button](images/play_button.png)
 
+### Indicator Types
+
+Choose different types of indicators available using the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) property. The indicator types are categorized as follows:
+
+* [Default Indicator](#default-indicator-type)
+* [Dynamic Indicator](#dynamic-indicator-type)
+* [Fraction Indicator](#fraction-indicator-type)
+* [Progress Indicator](#progress-indicator-type)
+
+#### Default Indicator Type
+
+A default indicator in a carousel is a set of dots that indicate the current position of the slide in the carousel. The Default indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Default`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel indicators type default preview](images/indicator-type-default.gif)
+#### Dynamic Indicator Type
+
+A dynamic indicator in a carousel provides visual cues or markers that dynamically change or update to indicate the current position. The Dynamic indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Dynamic`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type-dynamic/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel indicators type dynamic preview](images/indicator-type-dynamic.gif)
+
+#### Fraction Indicator Type
+
+The fraction indicator type displays the current slide index and total slide count as a fraction. The Fraction indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Fraction`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type-fraction/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel indicators type fraction preview](images/indicator-type-fraction.gif)
+
+#### Progress Indicator Type
+
+The Progress Indicator type displays the current slide as a progress bar. The Progress indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Progress`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type-progress/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel indicators type progress preview](images/indicator-type-progress.gif)
+
 ### Play button template
 
 Template option is provided to customize the play button by using the [playButtonTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_PlayButtonTemplate) property. The following example depicts the code for applying a template to play Button in the carousel.
