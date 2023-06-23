@@ -19,7 +19,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
             BasicNodes.Add(new DiagramNode() { Id = "Ellipse", Shape = new DiagramBasicShape() { Type = Syncfusion.EJ2.Diagrams.Shapes.Basic, Shape = BasicShapes.Ellipse },
             //To display customized tooltip content by enabling Tooltip Constraints
             Tooltip = new DiagramDiagramTooltip() { Content = "Customised Tooltip"},
-            Constraints = (NodeConstraints.Default & ~NodeConstraints.InheritTooltip) | NodeConstraints.Tooltip });
+            Constraints = NodeConstraints.Default | NodeConstraints.Tooltip });
             BasicNodes.Add(new DiagramNode() { Id = "Hexagon", Shape = new DiagramBasicShape() { Type = Syncfusion.EJ2.Diagrams.Shapes.Basic, Shape = BasicShapes.Hexagon } });
             ViewBag.BasicShapes = BasicNodes;
 
