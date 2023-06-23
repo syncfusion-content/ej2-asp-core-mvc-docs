@@ -18,6 +18,17 @@ Add the `EmojiPicker` tool to the toolbar of the RichTextEditor by utilizing the
 
 By default, a predefined set of emojis is configured. However, you can customize these icons according to your needs. To achieve this, utilize the [EmojiPickerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EmojiPickerSettings) property.
 
+The following code example shows how to customize icons in the emoji picker.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/emoji-picker-customize/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/emoji-picker-customize/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 Additionally, you have the option to customize the icons of toolbar items using the `IconCss` and `Code` properties. The `IconCSS` property allows you to define a custom CSS class for the toolbar item icon, while the `Code` property enables you to specify the Unicode character code for the icon.
 
 When both `IconCSS` and `Code` properties are provided, the `IconCSS` property takes precedence in determining the appearance of the toolbar item icon.
