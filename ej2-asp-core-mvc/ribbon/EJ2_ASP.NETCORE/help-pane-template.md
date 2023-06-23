@@ -48,10 +48,9 @@ The [helpPaneTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.
 </style>
 
 <script type="text/x-jsrender" id="helpPaneTemplate">
-    <button class="action_btn"> <span id="undo" class="e-icons e-undo"></span> Undo </button>
-    <button class="action_btn"> <span id="redo" class="e-icons e-redo"></span> Redo </button>
+    <button class="action_btn"><span id="undo" class="e-icons e-undo"></span> Undo </button>
+    <button class="action_btn"><span id="redo" class="e-icons e-redo"></span> Redo </button>
 </script>
-
 
 {% endhighlight %}
 {% endtabs %}
