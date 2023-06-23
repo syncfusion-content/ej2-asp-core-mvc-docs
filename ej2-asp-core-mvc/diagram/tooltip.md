@@ -103,8 +103,10 @@ The tooltip can be customized for each node and connector. Remove the **InheritT
 ## Tooltip for Ports
 
 The tooltip feature has been implemented to support Ports, providing the ability to display information or descriptions when the mouse hovers over them.
-To display tooltips on mouseover, set the desired tooltip [`content`](../api/diagram/diagramTooltip/#content) by utilizing the [`tooltip`](../api/diagram#tooltip) property.
-Tooltips for Ports can be enabled or disabled using the [`PortConstraints`](../api/diagram/port#constraints-portconstraints) Tooltip property.
+
+To display tooltips on mouseover, set the desired tooltip [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDiagramTooltip.html#Syncfusion_EJ2_Diagrams_DiagramDiagramTooltip_Content) by utilizing the [`tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTooltipDiagram.html) property.
+
+Tooltips for Ports can be enabled or disabled using the [`PortConstraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.PortConstraints.html) Tooltip property.
 
 
 ```js

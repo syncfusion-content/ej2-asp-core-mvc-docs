@@ -348,7 +348,7 @@ N> Icon can be created only when the node has outEdges.
 
 * The expand icon can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
 
-* The [`iconColor`](../api/diagram/iconShapeModel#iconColor-string) property can be used to set the strokeColor of the Icon.
+* The [`iconColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_IconColor) property can be used to set the strokeColor of the Icon.
 
 ## Customizing collapse icon
 
@@ -358,7 +358,7 @@ N> Icon can be created only when the node has outEdges.
 
 * Like expand icon, collapse icon also can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
 
-* The [`iconColor`](../api/diagram/iconShapeModel#iconColor-string) property can be used to set the strokeColor of the Icon.
+* The [`iconColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_IconColor) property can be used to set the strokeColor of the Icon.
 
 ## Interaction
 
