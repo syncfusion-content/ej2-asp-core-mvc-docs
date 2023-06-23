@@ -92,10 +92,10 @@ It is possible to customize the recurrence editor to display only the specific e
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/recurrence-editor/editor-recurrence/razor %}
+{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/recurrence-editor/editor-recurrence/data.cs %}
+{% include code-snippet/schedule/recurrence-editor/editor-endtype-recurrence/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
