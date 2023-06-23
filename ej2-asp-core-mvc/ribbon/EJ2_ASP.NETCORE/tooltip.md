@@ -159,8 +159,3 @@ In addition to text and content, you can also define css class for the icons to 
 
 {% endhighlight %}
 {% endtabs %}
-
-## Customize the tooltip
-
-You can additionally define a CSS class to customize the appearance of the tooltip using the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_CssClass) property.
-
