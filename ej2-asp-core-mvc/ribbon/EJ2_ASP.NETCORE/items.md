@@ -12,8 +12,7 @@ documentation: ug
 
 ## Built-in Ribbon items
 
-
-You can define each ribbon item using the `e-ribbon-item` tag helper, the type should be specified in the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to define built-in items.
+You can define each ribbon item using the `e-ribbon-item` tag helper, the type should be specified in the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to define built-in items.
 
 The following items can be rendered as built in items
 
@@ -27,10 +26,10 @@ The following items can be rendered as built in items
 | ColorPicker | Renders color picker as ribbon item.|
 
 ### Button
-To render a Button item, you should set the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to `Button`. You can further customize the button item through [RibbonButtonSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html) by using the `e-ribbon-buttonsettings` tag helper, which provides options such as `iconCss`, `content`, `isToggle` and more.
+You can render a Button item by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `Button`. You can further customize the button item through [RibbonButtonSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html) by using the `e-ribbon-buttonsettings` tag helper, which provides options such as `iconCss`, `content`, `isToggle` and more.
 
 #### Toggle Button
-You can make use of [isToggle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_IsToggle) property to define whether the button is toggle button or not. By default value is false.
+You can make use of [isToggle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_IsToggle) property to define whether the button is toggle button or not. By default value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -63,11 +62,11 @@ You can make use of [isToggle](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 ### CheckBox
 
-To render a CheckBox item, you should set the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to `CheckBox` . You can further customize the CheckBox item through [RibbonCheckBoxSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html) by using the `e-ribbon-checkboxsettings` tag helper, which provides options such as `labelPosition`, `label`, `checked` and more.
+You can render a CheckBox item by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `CheckBox` . You can further customize the CheckBox item through [RibbonCheckBoxSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html) by using the `e-ribbon-checkboxsettings` tag helper, which provides options such as `labelPosition`, `label`, `checked` and more.
 
 #### CheckBox State
 
-You can make use of [checked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Checked) property to define whether the checkbox is checked or not. A tick mark will be added to the visualization of CheckBox in checked state. By default value is false.
+You can make use of [checked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Checked) property to define whether the checkbox is checked or not. A tick mark will be added to the visualization of CheckBox in checked state. By default value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -135,7 +134,7 @@ You can customize the position of the label relative to the CheckBox by using th
 
 ### DropDown
 
-To render a DropDown item, you should set the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to `DropDown` . You can further customize the DropDown item through [RibbonDropDownSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html) by using the `e-ribbon-dropdownsettings` tag helper, which provides options such as `iconCss`, `content`, `target` and more.
+You can render a DropDown item by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `DropDown` . You can further customize the DropDown item through [RibbonDropDownSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html) by using the `e-ribbon-dropdownsettings` tag helper, which provides options such as `iconCss`, `content`, `target` and more.
 
 #### Target
 
@@ -177,7 +176,7 @@ You can make use of [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 ### SplitButton
 
-To render a SplitButton item, you should set the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to `SplitButton` . You can further customize the SplitButton item through [RibbonSplitButtonSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#properties) by using the `e-ribbon-splitbuttonsettings` tag helper, which provides options such as `iconCss`, `items`, `target` and more.
+You can render a SplitButton item by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `SplitButton` . You can further customize the SplitButton item through [RibbonSplitButtonSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#properties) by using the `e-ribbon-splitbuttonsettings` tag helper, which provides options such as `iconCss`, `items`, `target` and more.
 
 #### Target
 
@@ -219,11 +218,11 @@ You can make use of [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 ### ComboBox
 
-To render a ComboBox item, you should set the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to `ComboBox` . You can further customize the ComboBox item through [RibbonComboBoxSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html) by using the `e-ribbon-comboboxsettings` tag helper, which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
+you can render a ComboBox item, bt setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ComboBox` . You can further customize the ComboBox item through [RibbonComboBoxSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html) by using the `e-ribbon-comboboxsettings` tag helper, which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
 
 #### Filtering
 
-You can make use of [AllowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_AllowFiltering) property which provides built-in support for filtering data items. As soon as you start typing characters in the control, the filter operation initiates automatically. If no match is found, the value of the noRecordsTemplate property will be displayed. By default the value is false.
+You can make use of [AllowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_AllowFiltering) property which provides built-in support for filtering data items. As soon as you start typing characters in the control, the filter operation initiates automatically. If no match is found, the value of the noRecordsTemplate property will be displayed. By default the value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -372,7 +371,7 @@ You can make use of [sortOrder](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 
 ### ColorPicker
 
-To render a ColorPicker item, you should set the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property to `ColorPicker` . You can further customize the ColorPicker item through [RibbonColorPickerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) by using the `e-ribbon-colorpickersettings` tag helper, which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
+You can render a ColorPicker item by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ColorPicker` . You can further customize the ColorPicker item through [RibbonColorPickerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) by using the `e-ribbon-colorpickersettings` tag helper, which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
 
 #### Mode and Values
 You can set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Mode) property to either "picker" or "palette" to define the rendering mode of the ColorPicker.
@@ -411,7 +410,7 @@ You can specify the value color you can use [value](https://help.syncfusion.com/
 
 ## Custom Ribbon items
 
-You can use the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemType.html) property and set it to `Template` to customize ribbon items with non-built-in items. This allows you to define your own custom template for the ribbon item, giving you the flexibility to create unique and personalized content.
+You can use the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property and set it to `Template` to customize ribbon items with non-built-in items. This allows you to define your own custom template for the ribbon item, giving you the flexibility to create unique and personalized content.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -470,11 +469,13 @@ You can use the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
+![ASP.NET Core Ribbon Control with Custom Ribbon items](./images/customRibbonItem.png)
+
 ## Display Mode
 
 ### Display Options 
 
-By setting the [displayOptions] property you can determines how an item is displayed in different ribbon layouts
+By setting the [displayOptions] property you can determines how an item is displayed in different ribbon layouts.
 
 `Auto` - The item is displayed in the classic layout group, simplified layout group, and overflow popup based on the ribbon's overflow state.
 `Classic` - The item is displayed only in the classic layout group.
@@ -495,7 +496,7 @@ By setting the [displayOptions] property you can determines how an item is displ
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>
-                                <e-ribbon-item displayOptions=Simplified type=Button>
+                                <e-ribbon-item displayOptions=Classic type=Button>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut" isToggle=true></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
