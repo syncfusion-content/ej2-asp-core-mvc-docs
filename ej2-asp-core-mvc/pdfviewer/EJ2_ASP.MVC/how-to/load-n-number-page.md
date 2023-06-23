@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Load Documents in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about Load Documents in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Load N number of pages on initial loading in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Load N number of pages on initial loading in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Load Documents
+control: Load N number of pages on initial loading
 publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
@@ -15,6 +15,5 @@ The initial rendering in a PDF viewer allows users to control the number of page
 To utilize this capability in Syncfusion PDF Viewer, use the [initialRenderPages](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.pdfviewer.pdfviewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_InitialRenderPages) property. You can achieve the desired outcome by setting this property to the desired number of pages you want to load initially. However, it's important to exercise caution when setting a high value for the initialRenderPages in large documents with numerous pages. Rendering a large number of pages simultaneously can increase memory usage and slow down loading times, impacting the performance of the PDF viewer.
 
 Using the `initialRenderPages` property judiciously is advisable, especially when dealing with larger documents. It is more suitable for scenarios where a smaller range of pages, such as 10-20, can be loaded to provide a quick initial view of the document.
-
 
 [View sample in GitHub]()

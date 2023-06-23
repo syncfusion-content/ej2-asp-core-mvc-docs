@@ -1,45 +1,30 @@
 ---
 layout: post
-title: Load Documents in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Load Documents in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Load N number of pages on initial loading in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Load N number of pages on initial loading in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Load Documents
+control: Load N number of pages on initial loading
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Load N number of pages on initial loading
 
-# Load PDF documents dynamically
+The initial rendering in a PDF viewer allows users to control the number of pages displayed when opening a PDF document. This improves the user experience by providing flexibility in loading a specific number of pages initially, while additional pages are dynamically rendered as the user scrolls through the document. This approach enhances the responsiveness of the PDF viewer and minimizes delays as users can access specific pages without waiting for the entire document to load.
 
-The PDF Viewer server library allows to switch or load the PDF documents dynamically after the initial load operation. To achieve this, load the PDF document as a base64 string or file name in PDF Viewer control using the **Load()** method dynamically.
+To utilize this capability in Syncfusion PDF Viewer, use the [initialRenderPages](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pdfviewer.pdfviewer.html?_ga=2.144520115.723518961.1687236178-1796867613.1686804317#:~:text=value%20is%20null-,InitialRenderPages,-Initially%20renders%20the) property. You can achieve the desired outcome by setting this property to the desired number of pages you want to load initially. However, it's important to exercise caution when setting a high value for the initialRenderPages in large documents with numerous pages. Rendering a large number of pages simultaneously can increase memory usage and slow down loading times, impacting the performance of the PDF viewer.
 
-The following steps are used to load the PDF document dynamically.
-
-**Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started/) to create a simple PDF Viewer sample.
-
-**Step 2:** Use the following code snippet to load PDF document using base64 string.
+Using the `initialRenderPages` property judiciously is advisable, especially when dealing with larger documents. It is more suitable for scenarios where a smaller range of pages, such as 10-20, can be loaded to provide a quick initial view of the document.
 
 ```html
-<button type="button" onclick="load1()">LoadDocumentFromBase64</button>
-<script>
-    function load1() {
-        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-        viewer.load("data:application/pdf;base64," + addBase64String, null);
-    }
-</script>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   initialRenderPages=10>
+    </ejs-pdfviewer>
+</div>
 ```
 
-**Step 3:** Use the following code snippet to load PDF document using document name.
-
-```html
-<button type="button" onclick="load2()">LoadDocument</button>
-<script>
-    // load document using document name.
-    function load2() {
-        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-        viewer.load("HTTP Succinctly.pdf", null)
-    }
-</script>
-```
-
-Download the sample, [how to load PDF documents dynamically](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EJ2CoreSample1651615851.zip)
+[View sample in GitHub]()
