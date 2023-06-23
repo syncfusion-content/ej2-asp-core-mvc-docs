@@ -18,21 +18,16 @@ By default, when an AJAX request fails, the Retry Timeout property is set to `0`
 
 To set the retry timeout, use the [retryTimeout](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.pdfviewer.pdfviewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_RetryTimeout) property in the PDF Viewer configuration. This property takes a value in seconds.
 
-```cs
-
-<div style="height:100%; width: 100%;">
-
-     @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("PDF_Succinctly.pdf").Render()
-
+```html
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   retryTimeout=10
+                   retryCount=5>
+    </ejs-pdfviewer>
 </div>
-
-<script>
-
-    var retryTimeout = 10;
-    var retryCount = 5;
-
-</script>
-
 ```
 
 In the given example, the [retryTimeout](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.pdfviewer.pdfviewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_RetryTimeout) is set to 10 seconds, and the `retryCount` is set to 5. This means that if a request made by the PDF Viewer takes longer than 10 seconds to receive a response, it will be considered a timeout. In such cases, The PDF Viewer will resend the same request based on the retryCount. Here, this process will repeat up to maximum of 5 retries.
