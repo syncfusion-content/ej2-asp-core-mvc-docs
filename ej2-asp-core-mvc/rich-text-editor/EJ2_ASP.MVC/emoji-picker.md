@@ -18,7 +18,7 @@ Add the `EmojiPicker` tool to the toolbar of the RichTextEditor by utilizing the
 
 By default, a predefined set of emojis is configured. However, you can customize these icons according to your needs. To achieve this, utilize the [EmojiPickerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EmojiPickerSettings) property.
 
-The following code example shows how to customize icons in the emoji picker tool.
+The following code example shows how to customize icons in the emoji picker.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
