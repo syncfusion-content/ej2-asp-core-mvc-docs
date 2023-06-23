@@ -309,31 +309,9 @@ The layout’s [`springLength`](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% endtabs %}
 {% endif %}
 
-
-
 ## Mind Map layout
 
 A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `MindMap`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/layout/mindMap/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="MindMap.cs" %}
-{% include code-snippet/diagram/layout/mindMap/mindMap.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="MindMap.cs" %}
-{% include code-snippet/diagram/layout/mindMap/mindMap.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Tree Orientation in layout
 
@@ -354,25 +332,22 @@ An [`Orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 </tr>
 </table>
 
->Note: If you want to change mind map orientation in diagram, only Horizontal and vertical options allowed.
-
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/layout/mindMap1/tagHelper %}
+{% include code-snippet/diagram/layout/mindMap/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MindMap.cs" %}
-{% include code-snippet/diagram/layout/mindMap1/mindMap1.cs %}
+{% include code-snippet/diagram/layout/mindMap/mindMap.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="MindMap1.cs" %}
-{% include code-snippet/diagram/layout/mindMap/mindMap1.cs %}
+{% highlight c# tabtitle="MindMap.cs" %}
+{% include code-snippet/diagram/layout/mindMap/mindMap.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
