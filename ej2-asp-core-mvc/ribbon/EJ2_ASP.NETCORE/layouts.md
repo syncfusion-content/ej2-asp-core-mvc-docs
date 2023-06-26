@@ -49,7 +49,7 @@ The [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 ![ASP.NET Core Ribbon Control with Items orientation](./images/ribbon-orientation.jpg)
 
 N> When the orientation is set to `row`, a group can have maximum of three collections, but each collection inside a group can contain any number of items.
-When the orientation is set to `column`, a group can have any number of collections, but each collection inside a group can have either a single large-sized item or three medium/small-sized items. If two large-sized items are specified, they will automatically be converted into two medium/small-sized items.
+When the orientation is set to `column`, a group can have any number of collections, but each collection inside a group can have either a single large-sized item or three medium/small-sized items. If two large-sized items are specified, then it will automatically be converted into two medium/small-sized items.
 ### Defining group header
 
 You can define the name for each group header using the [header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_Header) property.
@@ -63,7 +63,7 @@ You can define the name for each group header using the [header](https://help.sy
 ![ASP.NET Core Ribbon Control with group header](./images/ribbon-header.jpg)
 ### Defining group icon
 
-You can make use of the [groupIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_GroupIconCss) property to define the CSS class for the icons to be shown in the group overflow button. The overflow popup will appear on resizing the ribbon.
+You can make use of the [groupIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_GroupIconCss) property to define the CSS class for the icons to be listed in the group overflow button. The overflow popup will appear on resizing the ribbon.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -107,7 +107,7 @@ You can control whether a group can be collapsed or not during resize using the 
 ![ASP.NET Core Ribbon Control with collapsible state](./images/ribbon-isCollapsible.jpg)
 #### Defining priority order for group collapse or expand
 
-You can define the priority order for each group by setting the [priority](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_Priority) property which allows you to specify the order in which groups should be collapsed or expanded on resizing. Higher priority values are fetched first for collapsing, while lower priority values are fetched first for expanding.
+You can define the priority order for each group by setting the [priority](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_Priority) property which allows you to specify the order in which groups should be collapsed or expanded on resizing. Higher priority values are fetched first when collapsing, whereas lower priority values are fetched first when expanding.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

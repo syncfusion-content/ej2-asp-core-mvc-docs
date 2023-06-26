@@ -62,7 +62,7 @@ To provide a title for the tooltip, you can utilize the [Title](https://help.syn
 
 ## Adding Content
 
-You define the specific content that will be displayed within the tooltip using the [Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_Content) property.
+You can define the specific content to be displayed within the tooltip using the [Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_Content) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -112,7 +112,7 @@ You define the specific content that will be displayed within the tooltip using 
 
 ## Adding Icon
 
-In addition to text and content, you can also define css class for the icons to show in tooltip using [IconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_IconCss) property.
+In addition to the text and content, you can also define CSS class for the icons to show in the tooltip using [IconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_IconCss) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

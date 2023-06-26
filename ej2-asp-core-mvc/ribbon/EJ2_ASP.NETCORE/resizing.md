@@ -14,7 +14,7 @@ When resizing the Ribbon, you have control over how the items behave in terms of
 
 ## Defining items allowed size
 
-You can utilize the [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property to maintain a specific size for an item regardless of resizing. By setting the `allowedSizes` for an item, you restrict its size to the specified option, preserving its size even when the Ribbon is resized.
+You can utilize the [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property to maintain a specific size for an item regardless of resizing. By configuring `allowedSizes` for an item, you restrict its size to the specified option, preserving its size even when the Ribbon is being resized.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
