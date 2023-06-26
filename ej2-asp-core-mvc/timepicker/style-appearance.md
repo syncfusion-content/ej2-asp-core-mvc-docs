@@ -58,3 +58,19 @@ Use the following CSS to customize the TimePicker popup content
         font-size: 20px;
 }
 ```
+
+## Full Screen Mode: Enhancing the TimePicker Component (Mobile Support Only)
+
+We have introduced the Full Screen Mode functionality in our TimePicker component, enabling users to see the TimePicker popup element in full-screen mode for better visibility and an upgraded user experience. It is important to mention that this feature is exclusively available for mobile devices in both landscape and portrait orientations. To activate the Full Screen Mode within the TimePicker component, simply set the `fullScreenMode` API value to `true`. This action will extend the popup element to occupy the entire screen on mobile devices.
+
+{% if page.publishingplatform == "aspnet-core" %}
+```html
+<ejs-timepicker id="time" fullScreenMode=true></ejs-timepicker>
+```
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+```html
+@Html.EJS().TimePicker("time").FullScreenMode(true).Render()
+```
+{% endif %}
+![TimePickerFullScreen](./images/TimePickerFullScreen.gif)

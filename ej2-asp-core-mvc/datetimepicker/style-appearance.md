@@ -52,3 +52,19 @@ Use the following CSS to customize the time picker popup in the DateTimePicker.
 Check the below section, to customize the style and appearance of the Calendar component in the DateTimePicker.
 
 [Customizing Calendar's style and appearance](../calendar/style-appearance/)
+
+## Full Screen Mode: Enhancing the DateTimePicker Component (Mobile Support Only)
+
+We have introduced the Full Screen Mode functionality in our DateTimePicker component, enabling users to see the DateTimePicker calendar and time popup element in full-screen mode for better visibility and an upgraded user experience. It is important to mention that this feature is exclusively available for mobile devices in both landscape and portrait orientations. To activate the Full Screen Mode within the DateTimePicker component, simply set the `fullScreenMode` API value to `true`. This action will extend the calendar and time popup element to occupy the entire screen on mobile devices.
+
+{% if page.publishingplatform == "aspnet-core" %}
+```html
+<ejs-datetimepicker id="datetime" fullScreenMode=true></ejs-datetimepicker>
+```
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+```html
+@Html.EJS().DateTimePicker("datetime").FullScreenMode(true).Render()
+```
+{% endif %}
+![DateTimePickerFullScreen](./images/DateTimePickerFullScreen.gif)
