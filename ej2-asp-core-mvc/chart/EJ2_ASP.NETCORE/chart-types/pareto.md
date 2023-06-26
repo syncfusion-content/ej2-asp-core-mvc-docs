@@ -40,7 +40,36 @@ Pareto charts are used to find the cumulative values of data in different catego
 
 
 
-## See Also
+## Pareto customization
+
+The pareto line series can be customized by using the [`Marker`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartParetoOptions.html#Syncfusion_EJ2_Charts_ChartParetoOptions_Marker), [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartParetoOptions.html#Syncfusion_EJ2_Charts_ChartParetoOptions_Width), [`DashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartParetoOptions.html#Syncfusion_EJ2_Charts_ChartParetoOptions_DashArray), and [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartParetoOptions.html#Syncfusion_EJ2_Charts_ChartParetoOptions_Fill) properties in the [`ParetoOptions`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartParetoOptions.html). The secondary axis for the pareto series can be shown or hidden using the [`ShowAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartParetoOptions.html#Syncfusion_EJ2_Charts_ChartParetoOptions_ShowAxis) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/other-types/pareto-customization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Pareto-customization.cs" %}
+{% include code-snippet/chart/series/other-types/pareto-customization/pareto-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/other-types/pareto-customization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Pareto-customization.cs" %}
+{% include code-snippet/chart/series/other-types/pareto-customization/pareto-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## See also
 
 * [Data Label](../data-labels)
 * [Tooltip](../tool-tip)
