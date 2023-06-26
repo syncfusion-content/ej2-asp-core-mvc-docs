@@ -2,7 +2,7 @@
 @using Syncfusion.EJ2.Ribbon
 @using Syncfusion.EJ2.Navigations
 
-<ejs-ribbon id="ribbon" launcherIconCss="e-icons e-open-link">
+<ejs-ribbon id="ribbon">
     <e-ribbon-tabs>
         <e-ribbon-tab header="Home">
             <e-ribbon-groups>
