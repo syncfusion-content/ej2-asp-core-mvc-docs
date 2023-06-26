@@ -20,18 +20,17 @@ To set the retry timeout, use the [retryTimeout](https://help.syncfusion.com/cr/
 
 ```cs
 
-<div style="height:100%; width: 100%;">
+@{
+    ViewBag.Title = "Home Page";
+    double RetryTimeout = 10;
+    double RetryCount = 5;
+}
 
-     @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("PDF_Succinctly.pdf").Render()
-
+<div>
+    <div style="height:100%; width: 100%;">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("PDF_Succinctly.pdf").RetryCount(RetryCount).RetryTimeout(RetryTimeout).Render()
+    </div>
 </div>
-
-<script>
-
-    var retryTimeout = 10;
-    var retryCount = 5;
-
-</script>
 
 ```
 

@@ -16,4 +16,19 @@ To utilize this capability in Syncfusion PDF Viewer, use the [initialRenderPages
 
 Using the `initialRenderPages` property judiciously is advisable, especially when dealing with larger documents. It is more suitable for scenarios where a smaller range of pages, such as 10-20, can be loaded to provide a quick initial view of the document.
 
+```cs
+
+@{
+    ViewBag.Title = "Home Page";
+    double InitialRenderPages = 10;
+}
+
+<div>
+    <div style="height:100%; width: 100%;">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("PDF_Succinctly.pdf").InitialRenderPages(InitialRenderPages).Render()
+    </div>
+</div>
+
+```
+
 [View sample in GitHub]()

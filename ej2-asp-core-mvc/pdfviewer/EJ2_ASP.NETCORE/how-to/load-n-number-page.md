@@ -17,14 +17,17 @@ To utilize this capability in Syncfusion PDF Viewer, use the [initialRenderPages
 Using the `initialRenderPages` property judiciously is advisable, especially when dealing with larger documents. It is more suitable for scenarios where a smaller range of pages, such as 10-20, can be loaded to provide a quick initial view of the document.
 
 ```html
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
-                   initialRenderPages=10>
+
+@{
+    ViewData["Title"] = "Home page";
+    double InitialRenderPages = 5;
+}
+
+<div class="text-center">
+    <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/Index" initialRenderPages="@InitialRenderPages" RetryCount="@RetryCount" documentPath="Data/PDF_Succinctly.pdf">
     </ejs-pdfviewer>
 </div>
+
 ```
 
 [View sample in GitHub]()
