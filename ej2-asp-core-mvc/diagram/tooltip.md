@@ -100,6 +100,63 @@ The tooltip can be customized for each node and connector. Remove the **InheritT
 {% endif %}
 
 
+## Tooltip for Ports
+
+The tooltip feature has been implemented to support Ports, providing the ability to display information or descriptions when the mouse hovers over them.
+
+To display tooltips on mouseover, set the desired tooltip [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDiagramTooltip.html#Syncfusion_EJ2_Diagrams_DiagramDiagramTooltip_Content) by utilizing the [`tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTooltipDiagram.html) property.
+
+Tooltips for Ports can be enabled or disabled using the [`PortConstraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.PortConstraints.html) Tooltip property.
+
+
+```js
+let ports: [{
+        offset: {x: 1,y: 0.5},
+        tooltip: {content: 'Port Tootip'},
+        
+        //enable Port Tooltip Constraints
+        constraints: PortConstraints.Default | PortConstraints.ToolTip,
+        
+        //disable Port Tooltip Constraints
+        constraints: PortConstraints.Default ~& PortConstraints.ToolTip
+    }]
+```
+
+Dynamic modification of tooltip content is supported, allowing you to change the displayed tooltip content during runtime.
+
+```js
+{
+    //change tooltip content at run time
+    diagram.nodes[0].ports[0].tooltip.content = 'New Tooltip Content';
+    diagram.databind;
+}
+```
+
+The following image illustrates how the diagram displays tooltips during an interaction with ports:
+
+![Tooltip](images/PortTooltip.gif)
+
+Here, the code provided below demonstrates the port tooltip Interaction.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/tooltip/PortTooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Object.cs" %}
+{% include code-snippet/diagram/tooltip/PortTooltip/object.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Object.cs" %}
+{% include code-snippet/diagram/tooltip/PortTooltip/object.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Tooltip template content
 
