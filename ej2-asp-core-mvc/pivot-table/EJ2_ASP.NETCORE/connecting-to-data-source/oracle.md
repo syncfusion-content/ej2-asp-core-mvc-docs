@@ -2,11 +2,11 @@
 layout: post
 title: "Oracle Data Binding in ASP.NET Core Pivotview component | Syncfusion"
 description: "Learn how to bind data from a Oracle database in the Syncfusion ASP.NET Core Pivot Table of Syncfusion Essential JS 2 and more."
-platform: ej2-asp-core-Core
+platform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# Oracle Data Binding
+# Oracle in EJ2 ASP.NET Core Pivotview control
 
 This section describes how to retrieve data from Oracle database using [Oracle Managed Data Access](https://www.nuget.org/packages/Oracle.ManagedDataAccess) and bind it to the Pivot Table via a Web API controller.
 
@@ -102,7 +102,7 @@ This section describes how to retrieve data from Oracle database using [Oracle M
 
 **1.** Create a simple ASP.NET Core Pivot Table by following the **"Getting Started"** documentation [link](../getting-started).
 
-**2.** Map the hosted Web API's URL link `https://localhost:44346/pivot` to the Pivot Table component in **index.cshtml** by using the [Url](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property.
+**2.** Map the hosted Web API's URL link `https://localhost:44346/pivot` to the Pivot Table component in **~/Views/Home/Index.cshtml** by using the [Url](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property.
 
 ```csharp
 <ejs-pivotview id="PivotView" height="300" showFieldList="true">

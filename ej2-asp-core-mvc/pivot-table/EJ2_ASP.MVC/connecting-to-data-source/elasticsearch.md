@@ -6,9 +6,9 @@ platform: ej2-asp-core-mvc
 description: "Learn how to bind data from a Elasticsearch database in the Syncfusion ASP.NET MVC Pivot Table of Syncfusion Essential JS 2 and more."
 ---
 
-# Elasticsearch Data Binding
+# Elasticsearch in EJ2 ASP.NET MVC Pivotview control
 
-This section describes how to retrieve data from Elasticsearch database using [Nest](https://www.nuget.org/packages/Nest) and bind it to the Pivot Table via a Web API controller.
+This section describes how to retrieve data from Elasticsearch database using [Nest](https://www.nuget.org/packages/Nest) library and bind it to the Pivot Table via a Web API controller.
 
 ## Create a Web API service to fetch Elasticsearch data
 
@@ -71,7 +71,7 @@ This section describes how to retrieve data from Elasticsearch database using [N
 
 **1.** Create a simple ASP.NET MVC Pivot Table by following the **"Getting Started"** documentation [link](../getting-started).
 
-**2.** Map the hosted Web API's URL link `https://localhost:44323/Pivot` to the Pivot Table component in **index.cshtml** by using the [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property.
+**2.** Map the hosted Web API's URL link `https://localhost:44323/Pivot` to the Pivot Table component in **~/Views/Home/Index.cshtml** by using the [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property.
 
 ```csharp
 @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(
