@@ -26,10 +26,12 @@ The following items can be rendered as built in items
 | ColorPicker | Renders color picker as ribbon item.|
 
 ### Button
+
 You can render a Button item by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `Button`. You can further customize the button item through [RibbonButtonSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html) by using the `e-ribbon-buttonsettings` tag helper, which provides options such as `iconCss`, `content`, `isToggle` and more.
 
 #### Toggle Button
-You can make use of [isToggle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_IsToggle) property to define whether the button is toggle button or not. By default value is `false`.
+
+You can make use of [isToggle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_IsToggle) property to define whether the button is a toggle button or not. By default the value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -66,7 +68,7 @@ You can render a CheckBox item by setting the [type](https://help.syncfusion.com
 
 #### CheckBox State
 
-You can make use of [checked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Checked) property to define whether the checkbox is checked or not. A tick mark will be added to the visualization of CheckBox in checked state. By default value is `false`.
+You can make use of [checked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Checked) property to define whether the checkbox is checked or not. A tick mark will be added to the visualization of CheckBox in checked state. By default the value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -138,7 +140,7 @@ You can render a DropDown item by setting the [type](https://help.syncfusion.com
 
 #### Target
 
-You can make use of [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Target) property which specifies the selector for the element to be shown in the DropDownButton popup.
+You can make use of [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Target) property which specifies the selector for an element to be shown in the DropDownButton popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -222,7 +224,7 @@ you can render a ComboBox item, bt setting the [type](https://help.syncfusion.co
 
 #### Filtering
 
-You can make use of [AllowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_AllowFiltering) property which provides built-in support for filtering data items. As soon as you start typing characters in the control, the filter operation initiates automatically. If no match is found, the value of the noRecordsTemplate property will be displayed. By default the value is `false`.
+You can make use of [AllowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_AllowFiltering) property which provides built-in support for filtering data items. As soon as you start typing characters in the control, the filter operation initiates automatically. If no match is found, the value of the `noRecordsTemplate` property will be displayed. By default the value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -374,9 +376,10 @@ You can make use of [sortOrder](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 You can render a ColorPicker item by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ColorPicker` . You can further customize the ColorPicker item through [RibbonColorPickerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) by using the `e-ribbon-colorpickersettings` tag helper, which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
 
 #### Mode and Values
-You can set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Mode) property to either "picker" or "palette" to define the rendering mode of the ColorPicker.
 
-You can specify the value color you can use [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Value) property. The value should be a valid hex color code.
+You can set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Mode) property to either `picker` or `palette` to define the rendering mode of the ColorPicker.
+
+You can specify the value color, by using the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Value) property. The value should be a valid hex color code.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -513,7 +516,7 @@ By setting the [displayOptions] property you can determines how an item is displ
 
 ## Enable or disable items
 
-You can use the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Disabled) property to disable an item. When set to `true`, the item will be disabled, preventing user interaction with it. By default the value is `false`.
+You can use the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Disabled) property to disable an item. When set to `true`, the item will be disabled, prevents the user interaction with it. By default the value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}

@@ -14,7 +14,7 @@ The following methods are available in the Ribbon control.
 
 ## addTab
 
-To add an tab dynamically, use the [addTab] method in the ribbon control. The following are the arguments for this method.
+To add an tab dynamically, use the `addTab` method in the ribbon control. The following are the arguments for this method.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|
@@ -66,7 +66,7 @@ To add an tab dynamically, use the [addTab] method in the ribbon control. The fo
 
 ## addGroup
 
-To add an group dynamically, use the [addGroup] method in the ribbon control. The following are the arguments for this method.
+To add an group dynamically, use the `addGroup` method in the ribbon control. The following are the arguments for this method.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|
@@ -119,7 +119,7 @@ To add an group dynamically, use the [addGroup] method in the ribbon control. Th
 
 ## addCollection
 
-To add an collection dynamically, use the [addCollection] method in the ribbon control. The following are the arguments for this method.
+To add an collection dynamically, use the `addCollection` method in the ribbon control. The following are the arguments for this method.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|
@@ -186,7 +186,7 @@ To add an collection dynamically, use the [addCollection] method in the ribbon c
 
 ## addItem
 
-To add an item dynamically, use the [addItem] method in the ribbon control. The following are the arguments for this method.
+To add an item dynamically, use the `addItem` method in the ribbon control. The following are the arguments for this method.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|
@@ -242,7 +242,7 @@ To add an item dynamically, use the [addItem] method in the ribbon control. The 
 
 ## removeTab
 
-The [removeTab] method is used to removes a tab from the ribbon control. This method takes the `tabId` as a parameter.
+The `removeTab` method is used to remove a tab from the ribbon control. This method takes the `tabId` as a parameter.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -286,7 +286,7 @@ The [removeTab] method is used to removes a tab from the ribbon control. This me
 
 ## removeGroup
 
-The [removeGroup] method is used to remove a group of items from the ribbon control. This method takes the `groupId` as a parameter.
+The `removeGroup` method is used to remove a group of items from the ribbon control. This method takes the `groupId` as a parameter.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -330,7 +330,7 @@ The [removeGroup] method is used to remove a group of items from the ribbon cont
 
 ## removeCollection
 
-The [removeCollection] method is used to remove a collection of items from the ribbon control. This method takes the `collectionId` as a parameter.
+The `removeCollection` method is used to remove a collection of items from the ribbon control. This method takes the `collectionId` as a parameter.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -379,7 +379,7 @@ The [removeCollection] method is used to remove a collection of items from the r
 
 ## removeItem
 
-The [removeItem] method is used to removes an items from the ribbon control. This method takes the `itemId` as a parameter.
+The `removeItem` method is used to removes an item from the ribbon control. This method takes the `itemId` as a parameter.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -424,7 +424,7 @@ The [removeItem] method is used to removes an items from the ribbon control. Thi
 
 ## enableItem
 
-The [enableItem] method in a ribbon control is used to enable a specific item in the ribbon control. This method takes the `itemId` as a parameter.
+The `enableItem` method in a ribbon control is used to enable a specific item in the ribbon control. This method takes the `itemId` as a parameter.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -466,7 +466,7 @@ The [enableItem] method in a ribbon control is used to enable a specific item in
 
 ## disableItem
 
-The [disableItem] method in a ribbon control is used to disable a specific item in the ribbon control. This method takes the item's ID as a parameter.
+The `disableItem` method in a ribbon control is used to disable a specific item in the ribbon control. This method takes the items ID as a parameter.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -508,7 +508,7 @@ The [disableItem] method in a ribbon control is used to disable a specific item 
 
 ## refreshLayout
 
-The [refreshLayout] method is called to update the layout and reflect these changes.
+The `refreshLayout` method can be used to update the layout and reflect the changes.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -551,7 +551,7 @@ The [refreshLayout] method is called to update the layout and reflect these chan
 
 ## selectTab
 
-The [selectTab] method is used to selects a tab from the ribbon control. This method takes the `tabId` as a parameter.
+The `selectTab` method is used to select a tab from the ribbon control. This method takes the `tabId` as a parameter.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
