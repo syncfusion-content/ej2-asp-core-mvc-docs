@@ -259,44 +259,6 @@ You can make use of [AllowFiltering](https://help.syncfusion.com/cr/aspnetcore-j
 {% endhighlight %}
 {% endtabs %}
 
-#### Filter type 
-
-You can specify the filter type to be applied during the search action. When performing filtering, you have the flexibility to modify the filter type to `contains`, `startsWith`, or `endsWith` specifically for string types by enabling [filterType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_FilterType) Property.
-
-{% tabs %}
-{% highlight c# tabtitle="Index.cshtml" %}
-
-@using Syncfusion.EJ2.Ribbon
-@using Syncfusion.EJ2.DropDowns
-@using Syncfusion.EJ2.Navigations
-
-@{
-    List<string> fontStyle = new List<string>() { "Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia" };
-}
-
-<ejs-ribbon id="ribbon">
-    <e-ribbon-tabs>
-        <e-ribbon-tab header="Home">
-            <e-ribbon-groups>
-                <e-ribbon-group header="Font">
-                    <e-ribbon-collections>
-                        <e-ribbon-collection>
-                            <e-ribbon-items>
-                                <e-ribbon-item type=ComboBox>
-                                    <e-ribbon-comboboxsettings dataSource=fontStyle index=3 filterType=FilterType.EndsWith></e-ribbon-comboboxsettings>
-                                </e-ribbon-item>
-                            </e-ribbon-items>
-                        </e-ribbon-collection>
-                    </e-ribbon-collections>
-                </e-ribbon-group>
-            </e-ribbon-groups>
-        </e-ribbon-tab>
-    </e-ribbon-tabs>
-</ejs-ribbon>
-
-{% endhighlight %}
-{% endtabs %}
-
 #### Index
 
 You can make use of [index](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Index) property which specifies the index of the selected item in the combobox.
