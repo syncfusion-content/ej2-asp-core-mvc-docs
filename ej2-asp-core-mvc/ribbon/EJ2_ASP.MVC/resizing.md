@@ -14,7 +14,7 @@ When resizing the Ribbon, you have control over how the items behave in terms of
 
 ## Defining items allowed size
 
-You can utilize the [allowedSizes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property to maintain a specific size for an item regardless of resizing. By configuring `allowedSizes` for an item, you restrict its size to the specified option, preserving its size even when the Ribbon is being resized.
+You can utilize the [AllowedSizes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property to maintain a specific size for an item regardless of resizing. By configuring `AllowedSizes` for an item, you restrict its size to the specified option, preserving its size even when the Ribbon is being resized.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -44,4 +44,4 @@ You can utilize the [allowedSizes](https://help.syncfusion.com/cr/aspnetmvc-js2/
 
 ## Defining items active size
 
-You can make use of the [activeSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_ActiveSize) read-only property to retrieve the size at which the item is currently being displayed.
+You can make use of the [ActiveSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_ActiveSize) read-only property to retrieve the size at which the item is currently being displayed.

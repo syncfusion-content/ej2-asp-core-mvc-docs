@@ -2,23 +2,12 @@
 @using Syncfusion.EJ2.Ribbon
 @using Syncfusion.EJ2.Navigations
 
-@{
-    List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge format" }, new MenuItem { Text = "Keep text only" } };
-}
-
 @Html.EJS().Ribbon("ribbon").Tabs(tab =>
 {
     tab.Header("Home").Groups(group =>
     {
         group.ShowLauncherIcon(true).Collections(collection =>
         {
-            collection.Items(item =>
-            {
-                item.Type(RibbonItemType.SplitButton).AllowedSizes(RibbonItemSize.Large).SplitButtonSettings(button =>
-                {
-                    button.IconCss("e-icons e-paste").Content("Paste").Items(pasteOptions);
-                }).Add();
-            }).Add();
             collection.Items(item =>
             {
                 item.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Medium).ButtonSettings(button =>

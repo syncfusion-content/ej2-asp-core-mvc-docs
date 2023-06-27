@@ -10,13 +10,6 @@
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>
-                                <e-ribbon-item type="SplitButton" allowedSizes=Large>
-                                    <e-ribbon-splitButtonSettings iconCss="e-icons e-paste" content="Paste" items=pasteOptions></e-ribbon-splitButtonSettings>
-                                </e-ribbon-item>
-                            </e-ribbon-items>
-                        </e-ribbon-collection>
-                        <e-ribbon-collection>
-                            <e-ribbon-items>
                                 <e-ribbon-item type="Button" allowedSizes=Medium>
                                     <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>

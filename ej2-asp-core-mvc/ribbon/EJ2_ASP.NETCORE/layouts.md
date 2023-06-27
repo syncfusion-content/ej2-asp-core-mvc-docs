@@ -48,7 +48,7 @@ The [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 
 ![ASP.NET Core Ribbon Control with Items orientation](./images/ribbon-orientation.jpg)
 
-N> When the orientation is set to `row`, a group can have maximum of three collections, but each collection inside a group can contain any number of items.
+N> When the orientation is set to `row`, a group can have maximum of three collections in which each collection inside a group can contain any number of items.
 When the orientation is set to `column`, a group can have any number of collections, but each collection inside a group can have either a single large-sized item or three medium/small-sized items. If two large-sized items are specified, then it will automatically be converted into two medium/small-sized items.
 ### Defining group header
 
