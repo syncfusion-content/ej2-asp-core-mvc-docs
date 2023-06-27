@@ -1,6 +1,6 @@
 <ejs-heatmap id='container' dataSource="ViewBag.dataSource">
     <e-heatmap-titlesettings text="Product wise Monthly sales revenue for a e-commerce website"
-                             textStyle="ViewBag.textStyle">
+        textStyle="ViewBag.textStyle">
     </e-heatmap-titlesettings>
     <e-heatmap-xaxis labels="ViewBag.xLabels" opposedPosition="true" labelRotation="45">
     </e-heatmap-xaxis>

@@ -12,11 +12,11 @@
 
 <script>
   window.heatmapLoad = function (args) {
-      window.heatmap = args.heatmap;
+    window.heatmap = args.heatmap;
   }
   window.onload = function () {
-      document.getElementById("selection").onclick = () => {
-          window.heatmap.clearSelection();
-      };
+    document.getElementById("selection").onclick = () => {
+      window.heatmap.clearSelection();
+    };
   };
 </script>

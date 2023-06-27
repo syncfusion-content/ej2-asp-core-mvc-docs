@@ -9,6 +9,6 @@
 
 <script>
   window.heatmapCellRender = function (args) {
-      console.log("The cell render event has been triggered");
+    console.log("The cell render event has been triggered");
   }
 </script>
