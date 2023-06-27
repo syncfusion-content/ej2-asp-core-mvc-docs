@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().HeatMap("container").Width("700px").Height("500px").TitleSettings(ts => ts.Text("Product wise Monthly sales revenue for a e-commerce website").
+    TextStyle(ViewBag.textStyle)).XAxis(
+        xAxis => xAxis.Labels(ViewBag.xLabels).OpposedPosition(true).LabelRotation(45)).YAxis(yaxis =>
+                yaxis.Labels(ViewBag.yLabels).LabelRotation(45)).PaletteSettings(ps => ps.Palette(palette =>
+                {
+                    palette.Color("#F0C27B").Add();
+                    palette.Color("#4B1248").Add();
+                })).LegendSettings(ls => ls.Visible(false)).DataSource(ViewBag.dataSource).Render()
