@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Ribbon Items in ASP.NET Core Ribbon Control
+# Ribbon Items in ASP.NET MVC Ribbon Control
 
 ## Built-in Ribbon items
 
@@ -169,7 +169,7 @@ You can render a SplitButton item by setting the [type](https://help.syncfusion.
 
 #### Target
 
-You can make use of [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Target) property which specifies the selector for the element to be shown in the SplitButton popup.
+You can make use of [target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Target) property which specifies the selector for the element to be shown in the SplitButton popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -314,7 +314,7 @@ You can render a ColorPicker item by setting the [type](https://help.syncfusion.
 
 #### Mode and Values
 
-You can set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Mode) property to either `picker` or `palette` to define the rendering mode of the ColorPicker.
+You can set the [`mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Mode) property to either `picker` or `palette` to define the rendering mode of the ColorPicker.
 
 You can specify the value color, by using the [value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Value) property. The value should be a valid hex color code.
 
