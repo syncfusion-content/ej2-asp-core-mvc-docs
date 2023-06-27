@@ -312,9 +312,7 @@ You can make use of [SortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 You can render a ColorPicker item by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ColorPicker`. You can further customize the ColorPicker item through [RibbonColorPickerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) which provides options such as `AllowFiltering`, `AutoFill`, `Index`, `SortOrder` and more.
 
-#### Mode and Values
-
-You can set the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Mode) property to either `Picker` or `Palette` to define the rendering mode of the ColorPicker.
+#### Value
 
 You can specify the value color, by using the [Value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Value) property. The value should be a valid hex color code.
 
@@ -335,7 +333,7 @@ You can specify the value color, by using the [Value](https://help.syncfusion.co
             {
                 item.Type(RibbonItemType.ColorPicker).ColorPickerSettings(colorpicker =>
                 {
-                    colorpicker.Value("035a").Mode(ColorPickerMode.Picker);
+                    colorpicker.Value("035a");
                 }).Add();
             }).Add();
         }).Add();

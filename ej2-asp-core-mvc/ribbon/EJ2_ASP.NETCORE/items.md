@@ -337,9 +337,7 @@ You can make use of [sortOrder](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 
 You can render a ColorPicker item by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ColorPicker` . You can further customize the ColorPicker item through [RibbonColorPickerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) by using the `e-ribbon-colorpickersettings` tag helper, which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
 
-#### Mode and Values
-
-You can set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Mode) property to either `picker` or `palette` to define the rendering mode of the ColorPicker.
+#### Value
 
 You can specify the value color, by using the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Value) property. The value should be a valid hex color code.
 
@@ -359,7 +357,7 @@ You can specify the value color, by using the [value](https://help.syncfusion.co
                         <e-ribbon-collection>
                             <e-ribbon-items>
                                 <e-ribbon-item type=ColorPicker>
-                                    <e-ribbon-colorpickersettings value="035a" mode=ColorPickerMode.Picker></e-ribbon-colorpickersettings>
+                                    <e-ribbon-colorpickersettings value="035a"></e-ribbon-colorpickersettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
                         </e-ribbon-collection>
