@@ -24,10 +24,10 @@ Using the `initialRenderPages` property judiciously is advisable, especially whe
 }
 
 <div class="text-center">
-    <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/Index" initialRenderPages="@InitialRenderPages" RetryCount="@RetryCount" documentPath="Data/PDF_Succinctly.pdf">
+    <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/Index" initialRenderPages="@InitialRenderPages" documentPath="Data/PDF_Succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 
 ```
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Load%20N%20no%20of%20pages)
