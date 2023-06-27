@@ -26,7 +26,7 @@ In classic layout, the Ribbon control organize the items and groups in a traditi
 
 ### Defining items size
 
-The Ribbon items can be appeared in three different sizes: Large(large icon with text), Medium(small icon with text) and Small(small icon only) on resizing the ribbon. You can define the allowed size for an item using the [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItemSize.html) property.
+The Ribbon items can be appeared in three different sizes: Large(large icon with text), Medium(small icon with text) and Small(small icon only) on resizing the ribbon. You can define the allowed size for an item using the [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -38,7 +38,7 @@ The Ribbon items can be appeared in three different sizes: Large(large icon with
 
 ### Defining items orientation
 
-The [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.ItemOrientation.html) property in a group allows you to control how the items in a ribbon group are aligned. By default, the orientation is set to `column`, which means the items are arranged vertically.
+The [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_Orientation) property in a group allows you to control how the items in a ribbon group are aligned. By default, the orientation is set to `column`, which means the items are arranged vertically.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
