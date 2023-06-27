@@ -1,0 +1,64 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Ribbon("ribbon").LauncherIconCss("e-icons e-description").Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Clipboard").GroupIconCss("e-icons e-paste").ShowLauncherIcon(true).Collections(collection =>
+        {
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.SplitButton).AllowedSizes(RibbonItemSize.Large).SplitButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-paste").Content("Paste").Items(pasteOptions);
+                }).Add();
+            }).Add();
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-cut").Content("Cut");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-copy").Content("Copy");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-format-painter").Content("Format Painter");
+                }).Add();
+            }).Add();
+        }).Add();
+        group.Header("Font").IsCollapsible(false).ShowLauncherIcon(true).Collections(collection =>
+        {
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.ComboBox).ComboBoxSettings(button =>
+                {
+                    button.DataSource(fontStyle).Index(2);
+                }).Add();
+                item.Type(RibbonItemType.ComboBox).ComboBoxSettings(button =>
+                {
+                    button.DataSource(fontSize).Index(4);
+                }).Add();
+            }).Add();
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-bold").Content("Bold");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-italic").Content("Italic");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-underline").Content("Underline");
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
