@@ -478,7 +478,7 @@ By setting the [displayOptions] property you can determines how an item is displ
 
 ## Enable or disable items
 
-You can use the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Disabled) property to disable an item. When set to `true`, the item will be disabled, prevents the user interaction with it. By default the value is `false`.
+You can use the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Disabled) property to disable an item. When set to `true`, the item will be disabled and prevents the user interaction with it. By default the value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
