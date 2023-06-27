@@ -335,7 +335,7 @@ You can specify the value color, by using the [Value](https://help.syncfusion.co
             {
                 item.Type(RibbonItemType.ColorPicker).ColorPickerSettings(colorpicker =>
                 {
-                    colorpicker.Value("035a").Mode(ColorPickerMode.Palette);
+                    colorpicker.Value("035a").Mode(ColorPickerMode.Picker);
                 }).Add();
             }).Add();
         }).Add();

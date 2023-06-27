@@ -359,7 +359,7 @@ You can specify the value color, by using the [value](https://help.syncfusion.co
                         <e-ribbon-collection>
                             <e-ribbon-items>
                                 <e-ribbon-item type=ColorPicker>
-                                    <e-ribbon-colorpickersettings value="035a" mode=ColorPickerMode.Palette></e-ribbon-colorpickersettings>
+                                    <e-ribbon-colorpickersettings value="035a" mode=ColorPickerMode.Picker></e-ribbon-colorpickersettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
                         </e-ribbon-collection>
