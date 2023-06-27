@@ -309,11 +309,28 @@ The layout’s [`springLength`](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% endtabs %}
 {% endif %}
 
-
-
 ## Mind Map layout
 
 A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `MindMap`.
+
+## Tree Orientation in layout
+
+An [`Orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of a `MindMapTreeLayout` is used to arrange the tree layout according to a specific direction. By default, the orientation is set to Horizontal. The following table outlines the various orientation types available:
+
+<table>
+<tr>
+<td><b>Orientation Type<b></td>
+<td><b>Description<b></td>
+</tr>
+<tr>
+<td>Horizontal</td>
+<td>Aligns the tree layout from left to right</td>
+</tr>
+<tr>
+<td>Vertical</td>
+<td>Aligns the tree layout from top to bottom</td>
+</tr>
+</table>
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -334,8 +351,6 @@ A mind map is a diagram that displays the nodes as a spider diagram organizes in
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Complex hierarchical tree
 
