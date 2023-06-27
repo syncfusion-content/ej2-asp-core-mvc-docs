@@ -61,7 +61,7 @@ You can make use of [isToggle](https://help.syncfusion.com/cr/aspnetmvc-js2/Sync
 
 ### CheckBox
 
-You can render a CheckBox item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `CheckBox` . You can further customize the CheckBox item through [RibbonCheckBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html) which provides options such as `labelPosition`, `label`, `checked` and more.
+You can render a CheckBox item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `CheckBox`. You can further customize the CheckBox item through [RibbonCheckBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html) which provides options such as `labelPosition`, `label`, `checked` and more.
 
 #### CheckBox State
 
@@ -126,7 +126,7 @@ You can customize the position of the label relative to the CheckBox by using th
 
 ### DropDown
 
-You can render a DropDown item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `DropDown` . You can further customize the DropDown item through [RibbonDropDownSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html) which provides options such as `iconCss`, `content`, `target` and more.
+You can render a DropDown item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `DropDown`. You can further customize the DropDown item through [RibbonDropDownSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html) which provides options such as `iconCss`, `content`, `target` and more.
 
 #### Target
 
@@ -165,7 +165,7 @@ You can make use of [target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfu
 
 ### SplitButton
 
-You can render a SplitButton item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `SplitButton` . You can further customize the SplitButton item through [RibbonSplitButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#properties) which provides options such as `iconCss`, `items`, `target` and more.
+You can render a SplitButton item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `SplitButton`. You can further customize the SplitButton item through [RibbonSplitButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#properties) which provides options such as `iconCss`, `items`, `target` and more.
 
 #### Target
 
@@ -204,7 +204,7 @@ You can make use of [target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfu
 
 ### ComboBox
 
-you can render a ComboBox item, bt setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ComboBox` . You can further customize the ComboBox item through [RibbonComboBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html) which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
+you can render a ComboBox item, bt setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ComboBox`. You can further customize the ComboBox item through [RibbonComboBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html) which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
 
 #### Filtering
 
@@ -310,7 +310,7 @@ You can make use of [sortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 ### ColorPicker
 
-You can render a ColorPicker item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ColorPicker` . You can further customize the ColorPicker item through [RibbonColorPickerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
+You can render a ColorPicker item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ColorPicker`. You can further customize the ColorPicker item through [RibbonColorPickerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
 
 #### Mode and Values
 
