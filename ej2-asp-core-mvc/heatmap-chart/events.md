@@ -252,7 +252,7 @@ Once HeatMap is loaded, the [Loaded](https://help.syncfusion.com/cr/aspnetmvc-js
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-When the window is resized, the [Resized](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Resized) event is triggered to notify the resize of the HeatMap.
+When the window is resized, the [resized](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Resized) event is triggered to notify the resize of the HeatMap.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -265,7 +265,7 @@ When the window is resized, the [Resized](https://help.syncfusion.com/cr/aspnetc
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-When the window is resized, the [Resized](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Resized) event is triggered to notify the resize of the HeatMap. To know more about arguments of this event, refer [here](../api/heatmap/iResizeEventArgs/).
+When the window is resized, the [Resized](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Resized) event is triggered to notify the resize of the HeatMap.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
