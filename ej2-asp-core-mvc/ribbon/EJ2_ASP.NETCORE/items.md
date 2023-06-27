@@ -438,7 +438,7 @@ You can use the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ### Display Options 
 
-By setting the [displayOptions] property you can determines how an item is displayed in different ribbon layouts.
+By setting the `displayOptions` property you can determines how an item is displayed in different ribbon layouts.
 
 `Auto` - The item is displayed in the classic layout group, simplified layout group, and overflow popup based on the ribbon's overflow state.
 `Classic` - The item is displayed only in the classic layout group.
