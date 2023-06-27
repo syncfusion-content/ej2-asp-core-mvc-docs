@@ -10,7 +10,7 @@ documentation: ug
 
 # HelpPaneTemplate
 
-The [helpPaneTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.ribbon.ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_HelpPaneTemplate) property in the Ribbon Control allows you to customize the appearance and functionality of the help pane. The pane is positioned on the right side of the ribbon header row and can be customized by providing a template for its content.
+The [HelpPaneTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.ribbon.ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_HelpPaneTemplate) property in the Ribbon Control allows you to customize the appearance and functionality of the help pane. The pane is positioned on the right side of the ribbon header row and can be customized by providing a template for its content.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}

@@ -12,7 +12,7 @@ documentation: ug
 
 ## Built-in Ribbon items
 
-You can define each ribbon item using the [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCollection.html#Syncfusion_EJ2_Ribbon_RibbonCollection_Items) property, the type should be specified in the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to define built-in items.
+You can define each ribbon item using the [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCollection.html#Syncfusion_EJ2_Ribbon_RibbonCollection_Items) property, the type should be specified in the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to define built-in items.
 
 The following items can be rendered as built in items
 
@@ -27,11 +27,11 @@ The following items can be rendered as built in items
 
 ### Button
 
-You can render a Button item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `Button`. You can further customize the button item through [RibbonButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html) which provides options such as `iconCss`, `content`, `isToggle` and more.
+You can render a Button item by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `Button`. You can further customize the button item through [RibbonButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html) which provides options such as `IconCss`, `Content`, `IsToggle` and more.
 
 #### Toggle Button
 
-You can make use of [isToggle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_IsToggle) property to define whether the button is a toggle button or not. By default the value is `false`.
+You can make use of [IsToggle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_IsToggle) property to define whether the button is a toggle button or not. By default the value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -61,11 +61,11 @@ You can make use of [isToggle](https://help.syncfusion.com/cr/aspnetmvc-js2/Sync
 
 ### CheckBox
 
-You can render a CheckBox item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `CheckBox`. You can further customize the CheckBox item through [RibbonCheckBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html) which provides options such as `labelPosition`, `label`, `checked` and more.
+You can render a CheckBox item by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `CheckBox`. You can further customize the CheckBox item through [RibbonCheckBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html) which provides options such as `LabelPosition`, `Label`, `Checked` and more.
 
 #### CheckBox State
 
-You can make use of [checked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Checked) property to define whether the checkbox is checked or not. A tick mark will be added to the visualization of CheckBox in checked state. By default the value is `false`.
+You can make use of [Checked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Checked) property to define whether the checkbox is checked or not. A tick mark will be added to the visualization of CheckBox in checked state. By default the value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -95,8 +95,8 @@ You can make use of [checked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncf
 
 #### Label and label Position
 
-You can define the caption for a CheckBox, by utilizing the [label](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Label) property. This helps in reducing the need for manually adding a separate label element. 
-You can customize the position of the label relative to the CheckBox by using the [labelPosition](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_LabelPosition) property, which allows you to specify whether the label should appear before or after the CheckBox.
+You can define the caption for a CheckBox, by utilizing the [Label](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_Label) property. This helps in reducing the need for manually adding a separate label element. 
+You can customize the position of the label relative to the CheckBox by using the [LabelPosition](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonCheckBoxSettings_LabelPosition) property, which allows you to specify whether the label should appear before or after the CheckBox.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -126,11 +126,11 @@ You can customize the position of the label relative to the CheckBox by using th
 
 ### DropDown
 
-You can render a DropDown item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `DropDown`. You can further customize the DropDown item through [RibbonDropDownSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html) which provides options such as `iconCss`, `content`, `target` and more.
+You can render a DropDown item by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `DropDown`. You can further customize the DropDown item through [RibbonDropDownSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html) which provides options such as `IconCss`, `Content`, `Target` and more.
 
 #### Target
 
-You can make use of [target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Target) property which specifies the selector for an element to be shown in the DropDownButton popup.
+You can make use of [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_Target) property which specifies the selector for an element to be shown in the DropDownButton popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -165,11 +165,11 @@ You can make use of [target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfu
 
 ### SplitButton
 
-You can render a SplitButton item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `SplitButton`. You can further customize the SplitButton item through [RibbonSplitButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#properties) which provides options such as `iconCss`, `items`, `target` and more.
+You can render a SplitButton item by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `SplitButton`. You can further customize the SplitButton item through [RibbonSplitButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#properties) which provides options such as `IconCss`, `Items`, `Target` and more.
 
 #### Target
 
-You can make use of [target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Target) property which specifies the selector for the element to be shown in the SplitButton popup.
+You can make use of [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonSplitButtonSettings_Target) property which specifies the selector for the element to be shown in the SplitButton popup.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -204,7 +204,7 @@ You can make use of [target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfu
 
 ### ComboBox
 
-you can render a ComboBox item, bt setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ComboBox`. You can further customize the ComboBox item through [RibbonComboBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html) which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
+you can render a ComboBox item, bt setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ComboBox`. You can further customize the ComboBox item through [RibbonComboBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html) which provides options such as `AllowFiltering`, `AutoFill`, `Index`, `SortOrder` and more.
 
 #### Filtering
 
@@ -242,7 +242,7 @@ You can make use of [AllowFiltering](https://help.syncfusion.com/cr/aspnetmvc-js
 
 #### Index
 
-You can make use of [index](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Index) property which specifies the index of the selected item in the combobox.
+You can make use of [Index](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Index) property which specifies the index of the selected item in the combobox.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -276,7 +276,7 @@ You can make use of [index](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 #### SortOrder
 
-You can make use of [sortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Index) property which specifies the order in which the data source needs to be sorted. The available type of sort orders are None - The data source is not sorted. Ascending - The data source is sorted in ascending order. Descending - The data source is sorted in descending order.
+You can make use of [SortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_Index) property which specifies the order in which the data source needs to be sorted. The available type of sort orders are None - The data source is not sorted. Ascending - The data source is sorted in ascending order. Descending - The data source is sorted in descending order.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -310,13 +310,13 @@ You can make use of [sortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 ### ColorPicker
 
-You can render a ColorPicker item by setting the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ColorPicker`. You can further customize the ColorPicker item through [RibbonColorPickerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) which provides options such as `allowFiltering`, `autoFill`, `index`, `sortOrder` and more.
+You can render a ColorPicker item by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ColorPicker`. You can further customize the ColorPicker item through [RibbonColorPickerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) which provides options such as `AllowFiltering`, `AutoFill`, `Index`, `SortOrder` and more.
 
 #### Mode and Values
 
-You can set the [`mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Mode) property to either `picker` or `palette` to define the rendering mode of the ColorPicker.
+You can set the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Mode) property to either `Picker` or `Palette` to define the rendering mode of the ColorPicker.
 
-You can specify the value color, by using the [value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Value) property. The value should be a valid hex color code.
+You can specify the value color, by using the [Value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html#Syncfusion_EJ2_Ribbon_RibbonColorPickerSettings_Value) property. The value should be a valid hex color code.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -348,7 +348,7 @@ You can specify the value color, by using the [value](https://help.syncfusion.co
 
 ## Custom Ribbon items
 
-You can use the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property and set it to `Template` to customize ribbon items with non-built-in items. This allows you to define your own custom template for the ribbon item, giving you the flexibility to create unique and personalized content.
+You can use the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property and set it to `Template` to customize ribbon items with non-built-in items. This allows you to define your own custom template for the ribbon item, giving you the flexibility to create unique and personalized content.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -407,7 +407,7 @@ You can use the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.E
 
 ### Display Options
 
-By setting the [displayOptions] property you can determines how an item is displayed in different ribbon layouts.
+By setting the [DisplayOptions] property you can determines how an item is displayed in different ribbon layouts.
 
 `Auto` - The item is displayed in the classic layout group, simplified layout group, and overflow popup based on the ribbon's overflow state.
 `Classic` - The item is displayed only in the classic layout group.
@@ -442,7 +442,7 @@ By setting the [displayOptions] property you can determines how an item is displ
 
 ## Enable or disable items
 
-You can use the [disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Disabled) property to disable an item. When set to `true`, the item will be disabled and prevents the user interaction with it. By default the value is `false`.
+You can use the [Disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Disabled) property to disable an item. When set to `true`, the item will be disabled and prevents the user interaction with it. By default the value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
