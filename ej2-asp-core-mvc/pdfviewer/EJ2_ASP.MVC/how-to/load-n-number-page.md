@@ -31,4 +31,4 @@ Using the `initialRenderPages` property judiciously is advisable, especially whe
 
 ```
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to/Load%20N%20no%20of%20pages)

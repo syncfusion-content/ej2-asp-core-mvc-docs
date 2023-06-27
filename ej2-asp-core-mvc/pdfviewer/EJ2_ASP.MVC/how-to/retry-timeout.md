@@ -42,4 +42,4 @@ The [retryCount](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.pdf
 
 If the timeout duration specified by [retryTimeout](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.pdfviewer.pdfviewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_RetryTimeout) is exceeded during the AJAX request, the PDF Viewer will decrement the `retryCount` and initiate a new request. This process will continue until the document is successfully loaded or the retry count limit is reached. This functionality helps improve the handling of temporary errors and ensures a more efficient and user-friendly experience.
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to/Retry%20Timeout)
