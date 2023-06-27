@@ -1,4 +1,4 @@
-public ActionResult CellRender()
+public ActionResult CellClick()
 {
     ViewBag.textStyle = new
      {

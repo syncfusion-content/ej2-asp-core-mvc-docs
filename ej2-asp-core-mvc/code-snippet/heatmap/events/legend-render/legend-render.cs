@@ -1,4 +1,4 @@
-public ActionResult SingleCellSelection()
+public ActionResult LegendRender()
 {
     ViewBag.textStyle = new
      {

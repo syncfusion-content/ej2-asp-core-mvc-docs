@@ -1,4 +1,4 @@
-public ActionResult SingleCellSelection()
+public ActionResult Loaded()
 {
     ViewBag.textStyle = new
      {
