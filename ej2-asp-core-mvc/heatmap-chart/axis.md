@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axis in Syncfusion ##Platform_Name## HeatMap Chart Component
-description: Learn here all about Axis in Syncfusion ##Platform_Name## HeatMap Chart component of Syncfusion Essential JS 2 and more.
+description: Learn here all about axis in Syncfusion ##Platform_Name## HeatMap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis
 publishingplatform: ##Platform_Name##
@@ -200,7 +200,7 @@ The text style of the axis labels can be customized using the following options 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-The text style of the axis labels can be customized using the following options available in the [textStyle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_TextStyle) property.
+The text style of the axis labels can be customized using the following options available in the [TextStyle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_TextStyle) property.
 
 * [Color](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_Color) - It is used to change the text color of the axis labels.
 * [FontFamily](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_FontFamily) - It is used to change the font family of the axis labels.
@@ -253,7 +253,7 @@ When the axis labels intersect, [LabelIntersectAction](https://help.syncfusion.c
 * **Rotate45** - When the axis labels intersect, they are rotated to 45 degrees.
 * **MultipleRows** - It specifies to show all the axis labels as multiple rows when they intersect.
 
-The below example demonstrates to trim the axis labels by using the `labelIntersectAction` property.
+The below example demonstrates to trim the axis labels by using the `LabelIntersectAction` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -424,7 +424,7 @@ You can display the axis labels at specific time intervals along with the date-t
 
 You can display the axis labels at specific time intervals along with the date-time axis using the [ShowLabelOn](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_ShowLabelOn) property. This property supports the following types:
 
-* **None**: Displays the axis labels based on the `intervalType` and `interval` property of the axis. This type is default value of the `showLabelOn` property.
+* **None**: Displays the axis labels based on the `IntervalType` and `Interval` property of the axis. This type is default value of the `ShowLabelOn` property.
 * **Years**: Displays the axis labels on every year between given date-time range.
 * **Months**: Displays the axis labels on every month between given date-time range.
 * **Days**: Displays the axis labels on every day between given date-time range.
