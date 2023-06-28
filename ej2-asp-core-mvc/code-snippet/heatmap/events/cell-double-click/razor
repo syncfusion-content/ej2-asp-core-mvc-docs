@@ -7,6 +7,6 @@
 
 <script>
   function heatmapCellDoubleClick(args) {
-    console.log("The cell double click event has been triggered");
+    console.log("The cell double click event has been triggered!!!");
     }
 </script>

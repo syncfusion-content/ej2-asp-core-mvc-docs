@@ -6,7 +6,7 @@
 
 <script>
   function heatmapCellSelected(args) {
-    console.log("The cell selected event has been triggered");
+    console.log("The cell selected event has been triggered!!!");
   }
 </script>
 

@@ -9,6 +9,6 @@
 
 <script>
   window.heatmapLoaded = function (args) {
-    console.log("The loaded event has been triggered");
+    console.log("The loaded event has been triggered!!!");
   }
 </script>

@@ -9,6 +9,6 @@
 
 <script>
   window.heatmapResized = function (args) {
-    console.log("The resized event has been triggered");
+    console.log("The resized event has been triggered!!!");
   }
 </script>

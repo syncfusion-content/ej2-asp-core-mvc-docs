@@ -9,6 +9,6 @@
 
 <script>
   window.heatmapCreated = function (args) {
-    console.log("The created event has been triggered");
+    console.log("The created event has been triggered!!!");
   }
 </script>

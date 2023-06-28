@@ -6,7 +6,7 @@ yaxis.Labels(ViewBag.yLabels)).DataSource(ViewBag.dataSource).Render()
 
 <script>
   function heatmapCellClick(args) {
-      console.log("The cell click event has been triggered");
+      console.log("The cell click event has been triggered!!!");
   }
 </script>
 

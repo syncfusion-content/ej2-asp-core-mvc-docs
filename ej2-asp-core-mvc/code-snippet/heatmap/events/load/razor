@@ -6,7 +6,7 @@
 
 <script>
   function heatmapLoad(args) {
-    console.log("The load event has been triggered");
+    console.log("The load event has been triggered!!!");
   }
 </script>
 

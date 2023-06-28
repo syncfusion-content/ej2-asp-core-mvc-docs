@@ -9,6 +9,6 @@
 
 <script>
   window.heatmapLegendRender = function (args) {
-    console.log("The legend render event has been triggered");
+    console.log("The legend render event has been triggered!!!");
   }
 </script>
