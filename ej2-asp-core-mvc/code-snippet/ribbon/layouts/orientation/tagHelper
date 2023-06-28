@@ -16,20 +16,20 @@
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>
-                                <e-ribbon-item type="SplitButton" allowedSizes=Large>
+                                <e-ribbon-item type="SplitButton">
                                     <e-ribbon-splitButtonSettings iconCss="e-icons e-paste" content="Paste" items=pasteOptions ></e-ribbon-splitButtonSettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
                         </e-ribbon-collection>
                         <e-ribbon-collection>
                             <e-ribbon-items>
-                                <e-ribbon-item type="Button" allowedSizes=Medium>
+                                <e-ribbon-item type="Button">
                                     <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button" allowedSizes=Medium>
+                                <e-ribbon-item type="Button">
                                     <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button" allowedSizes=Medium>
+                                <e-ribbon-item type="Button">
                                     <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>

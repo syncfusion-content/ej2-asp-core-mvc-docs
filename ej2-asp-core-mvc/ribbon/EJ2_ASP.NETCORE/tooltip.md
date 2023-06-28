@@ -50,13 +50,12 @@ To provide a title for the tooltip, you can utilize the [Title](https://help.syn
                                 </e-ribbon-item>
                             </e-ribbon-items>
                         </e-ribbon-collection>
-                    </e-ribbon-collections>
-                </e-ribbon-group>
-            </e-ribbon-groups>
-        </e-ribbon-tab>
-    </e-ribbon-tabs>
+                </e-ribbon-collections>
+            </e-ribbon-group>
+        </e-ribbon-groups>
+    </e-ribbon-tab>
+</e-ribbon-tabs>
 </ejs-ribbon>
-
 {% endhighlight %}
 {% endtabs %}
 

@@ -6,17 +6,17 @@
     <e-ribbon-tabs>
         <e-ribbon-tab header="Home">
             <e-ribbon-groups>
-                <e-ribbon-group showLauncherIcon="true" header="Clipboard" groupIconCss="e-icons e-paste" priority=2>
+                <e-ribbon-group showLauncherIcon="true" header="Clipboard" groupIconCss="e-icons e-paste">
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>
-                                <e-ribbon-item type="Button" allowedSizes=Medium>
+                                <e-ribbon-item type="Button">
                                     <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button" allowedSizes=Medium>
+                                <e-ribbon-item type="Button">
                                     <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
-                                <e-ribbon-item type="Button" allowedSizes=Medium>
+                                <e-ribbon-item type="Button">
                                     <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>

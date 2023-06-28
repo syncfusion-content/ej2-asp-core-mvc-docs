@@ -17,7 +17,7 @@
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>
-                                <e-ribbon-item type="SplitButton" allowedSizes=Large>
+                                <e-ribbon-item type="SplitButton">
                                     <e-ribbon-splitButtonSettings iconCss="e-icons e-paste" content="Paste" items=pasteOptions></e-ribbon-splitButtonSettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>

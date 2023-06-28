@@ -10,11 +10,11 @@
         {
             collection.Items(item =>
             {
-                item.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Medium).ButtonSettings(button =>
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
                 {
                     button.IconCss("e-icons e-cut").Content("Cut");
                 }).Add();
-                item.Type(RibbonItemType.Button).AllowedSizes(RibbonItemSize.Small).ButtonSettings(button =>
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
                 {
                     button.IconCss("e-icons e-copy").Content("Copy");
                 }).Add();

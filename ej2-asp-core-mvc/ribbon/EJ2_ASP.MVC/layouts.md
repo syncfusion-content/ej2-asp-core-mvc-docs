@@ -48,7 +48,7 @@ The [Orientation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ri
 
 ![ASP.NET MVC Ribbon Control with Items Orientation](./images/ribbon-orientation.jpg)
 
-N> When the orientation is set to `Row`, a group can have maximum of three collections in which each collection inside a group can contain any number of items.
+> When the orientation is set to `Row`, a group can have maximum of three collections in which each collection inside a group can contain any number of items.
 When the orientation is set to `Column`, a group can have any number of collections, but each collection inside a group can have either a single large-sized item or three medium/small-sized items. If two large-sized items are specified, then it will automatically be converted into two medium/small-sized items.
 ### Defining group header
 
@@ -131,7 +131,7 @@ In simplified layout, the Ribbon control organize the items and groups into a si
 
 ### Enabling group overflow popup
 
-The [EnableGroupOverflow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_EnableGroupOverflow) property defines whether to add a separate popup for the overflow items in the group while resizing. If it is set to false, the overflow items will be shown in the common overflow popup present at the right end of the tab content.
+The [EnableGroupOverflow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_EnableGroupOverflow) property defines whether to add a separate popup for the overflow items in the group while resizing. If it is set to `false`, the overflow items will be shown in the common overflow popup present at the right end of the tab content.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

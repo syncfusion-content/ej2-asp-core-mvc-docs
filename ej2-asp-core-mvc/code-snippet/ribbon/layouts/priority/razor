@@ -19,7 +19,7 @@
         {
             collection.Items(item =>
             {
-                item.Type(RibbonItemType.SplitButton).AllowedSizes(RibbonItemSize.Large).SplitButtonSettings(button =>
+                item.Type(RibbonItemType.SplitButton).SplitButtonSettings(button =>
                 {
                     button.IconCss("e-icons e-paste").Content("Paste").Items(pasteOptions);
                 }).Add();
