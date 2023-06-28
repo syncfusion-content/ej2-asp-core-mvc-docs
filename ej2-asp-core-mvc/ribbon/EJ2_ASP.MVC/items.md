@@ -310,7 +310,7 @@ You can make use of [SortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 ### ColorPicker
 
-You can render a ColorPicker item by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ColorPicker`. You can further customize the ColorPicker item through [RibbonColorPickerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) which provides options such as `AllowFiltering`, `AutoFill`, `Index`, `SortOrder` and more.
+You can render a ColorPicker item by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ColorPicker`. You can further customize the ColorPicker item through [RibbonColorPickerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonColorPickerSettings.html) which provides options such as `Value`, `Columns`, `ShowButtons` and more.
 
 #### Value
 
@@ -405,7 +405,7 @@ You can use the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.E
 
 ### Display Options
 
-By setting the `DisplayOptions` property you can determines how an item is displayed in different ribbon layouts.
+By setting the [displayOptions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_DisplayOptions) property you can determines how an item is displayed in different ribbon layouts.
 
 `Auto` - The item is displayed in the classic layout group, simplified layout group, and overflow popup based on the ribbon's overflow state.
 `Classic` - The item is displayed only in the classic layout group.
