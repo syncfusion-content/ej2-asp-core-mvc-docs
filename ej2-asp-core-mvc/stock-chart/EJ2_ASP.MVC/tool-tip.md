@@ -15,7 +15,7 @@ documentation: ug
 
 Stock Chart will display details about the points through tooltip, when the mouse is moved over the point.
 
-## Default Tooltip
+## Default tooltip
 
 By default, tooltip is not visible. Enable the tooltip by setting [`Enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_Enable) property to true .
 
@@ -46,7 +46,7 @@ By default, tooltip is not visible. Enable the tooltip by setting [`Enable`](htt
 
 <!-- markdownlint-disable MD013 -->
 
-## Format the Tooltip
+## Format the tooltip
 
 <!-- markdownlint-disable MD013 -->
 
@@ -77,7 +77,36 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 
 
-## Customize the Appearance of Tooltip
+## Position the tooltip
+
+By default, the tooltip is positioned at the left side of the stock chart. You can move the tooltip along with the mouse by setting **Nearest** to the [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.StockChartStockTooltipSettings.html#Syncfusion_EJ2_Charts_StockChartStockTooltipSettings_Position) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/stockchart-feature/position/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Position.cs" %}
+{% include code-snippet/stock-chart/stockchart-feature/position/position.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/stockchart-feature/position/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Position.cs" %}
+{% include code-snippet/stock-chart/stockchart-feature/position/position.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Customize the appearance of the tooltip
 
 The [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_Fill) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_Border) properties are used to customize the background color and border of the tooltip respectively. The [`TextStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_TextStyle) property in the tooltip is used to customize the font of the tooltip text.
 
