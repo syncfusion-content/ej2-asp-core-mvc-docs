@@ -1,9 +1,18 @@
 @using Syncfusion.EJ2;
 
-@Html.EJS().HeatMap("container").TitleSettings(ts => ts.Text("Product wise Monthly sales revenue for a e-commerce website").
+@Html.EJS().HeatMap("container").Load("heatmapLoad").TitleSettings(ts => ts.Text("Product wise Monthly sales revenue for a e-commerce website").
     TextStyle(ViewBag.textStyle)).XAxis(
         xAxis => xAxis.Labels(ViewBag.xLabels).OpposedPosition(true).TextStyle(ViewBag.axisTextStyle)).YAxis(yaxis =>
             yaxis.Labels(ViewBag.yLabels).TextStyle(ViewBag.axisTextStyle).MaxLabelLength(70)).PaletteSettings(ps => ps.Palette(palette => {
                 palette.Color("#F0C27B").Add();
                 palette.Color("#4B1248").Add();
             })).LegendSettings(ls => ls.Visible(false)).DataSource(ViewBag.dataSource).Render()
+
+<script>
+    function heatmapLoad(args) {
+        args.heatmap.xAxis.textStyle.textAlignment = "Center";
+        args.heatmap.yAxis.textStyle.textAlignment = "Center";
+        args.heatmap.xAxis.textStyle.textOverflow = "Wrap";
+        args.heatmap.yAxis.textStyle.textOverflow = "Wrap";
+    }
+</script>

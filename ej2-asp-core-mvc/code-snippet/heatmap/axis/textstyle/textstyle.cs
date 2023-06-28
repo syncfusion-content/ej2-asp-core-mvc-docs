@@ -13,9 +13,7 @@ public ActionResult TextStyle()
         size= "15px",
         fontWeight= "650",
         fontStyle= "Normal",
-        fontFamily= "Segoe UI",
-        textAlignment = Syncfusion.EJ2.HeatMap.Alignment.Center,
-        textOverflow = Syncfusion.EJ2.HeatMap.TextOverflow.Wrap
+        fontFamily= "Segoe UI"
     };
     string[] xlabels = new string[] { "Month of Feburary 2023", "Month of March 2023", "Month of April 2023", "Month of May 2023", "Month of June 2023", "Month of July 2023", "Month of August 2023", "Month of September 2023", "Month of October 2023", "Month of November 2023", "Month of December 2023" };
     ViewBag.xLabels = xlabels;
