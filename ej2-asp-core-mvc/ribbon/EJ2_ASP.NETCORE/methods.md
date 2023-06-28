@@ -466,7 +466,7 @@ The `enableItem` method in a ribbon control is used to enable a specific item in
 
 ## disableItem
 
-The `disableItem` method in a ribbon control is used to disable a specific item in the ribbon control. This method takes the items ID as a parameter.
+The `disableItem` method in a ribbon control is used to disable a specific item in the ribbon control. This method takes the `itemId` as a parameter.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}

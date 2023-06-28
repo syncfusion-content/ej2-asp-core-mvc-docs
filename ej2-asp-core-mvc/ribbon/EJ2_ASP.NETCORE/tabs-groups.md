@@ -48,4 +48,4 @@ You can add collections of items to each group by using the [collections](https:
 
 ![ASP.NET Core Ribbon Control with Items](./images/ribbon-items.png)
 
-N> Check out our [`items`](./items) page for examples and instructions on adding built-in and custom items. It covers different item types and helps you incorporate them into your project.
+> Check out our [`items`](./items) page for examples and instructions on adding built-in and custom items. It covers different item types and helps you incorporate them into your project.
