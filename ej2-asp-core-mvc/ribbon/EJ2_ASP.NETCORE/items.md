@@ -198,12 +198,12 @@ You can make use of [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
     <e-ribbon-tabs>
         <e-ribbon-tab header="Home">
             <e-ribbon-groups>
-                <e-ribbon-group header="Header & Footer">
+                <e-ribbon-group header="Illustrations">
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>
                                 <e-ribbon-item type=SplitButton>
-                                    <e-ribbon-splitbuttonsettings iconCss="e-icons e-paste" content="Paste" target="#pictureList"></e-ribbon-splitbuttonsettings>
+                                    <e-ribbon-splitbuttonsettings iconCss="e-icons e-image" content="Pictures" target="#pictureList"></e-ribbon-splitbuttonsettings>
                                 </e-ribbon-item>
                             </e-ribbon-items>
                         </e-ribbon-collection>

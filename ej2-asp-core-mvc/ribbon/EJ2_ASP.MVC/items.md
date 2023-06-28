@@ -146,13 +146,13 @@ You can make use of [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfu
 {
     tab.Header("Home").Groups(group =>
     {
-        group.Header("View").Collections(collection =>
+        group.Header("Illustrations").Collections(collection =>
         {
             collection.Items(item =>
             {
                 item.Type(RibbonItemType.DropDown).DropDownSettings(dropdown =>
                 {
-                    dropdown.IconCss("e-icons e-image").Content("Paste").Target("#listView");
+                    dropdown.IconCss("e-icons e-image").Content("Pictures").Target("#listView");
                 }).Add();
             }).Add();
         }).Add();
@@ -185,13 +185,13 @@ You can make use of [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfu
 {
     tab.Header("Home").Groups(group =>
     {
-        group.Header("View").Collections(collection =>
+        group.Header("Illustrations").Collections(collection =>
         {
             collection.Items(item =>
             {
                 item.Type(RibbonItemType.SplitButton).SplitButtonSettings(splitbutton =>
                 {
-                    splitbutton.IconCss("e-icons e-image").Content("Paste").Target("#listView");
+                    splitbutton.IconCss("e-icons e-image").Content("Pictures").Target("#listView");
                 }).Add();
             }).Add();
         }).Add();
