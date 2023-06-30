@@ -198,6 +198,8 @@ The text style of the axis labels can be customized using the following options 
 {% endhighlight %}
 {% endtabs %}
 
+![Customizing the text style of axis labels in ASP.NET Core HeatMap chart](./images/heatmap-chart-axis-labels-text-style.png)
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 The text style of the axis labels can be customized using the following options available in the [TextStyle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_TextStyle) property.
@@ -218,9 +220,10 @@ The text style of the axis labels can be customized using the following options 
 {% include code-snippet/heatmap/axis/textstyle/textstyle.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![ASP.NET Core HeatMap chart with customizing the text style](./images/heatmap-chart-axis-labels-text-style.png)
+![Customizing the text style of axis labels in ASP.NET MVC HeatMap chart](./images/heatmap-chart-axis-labels-text-style.png)
+
+{% endif %}
 
 ### Customizing labels when intersecting with other labels
 
@@ -244,6 +247,8 @@ The below example demonstrates to trim the axis labels by using the `labelInters
 {% endhighlight %}
 {% endtabs %}
 
+![Customizing axis labels when intersecting with other labels in ASP.NET Core HeatMap chart](./images/heatmap-chart-label-intersect-action.png)
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 When the axis labels intersect, [LabelIntersectAction](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_LabelIntersectAction) property is used to handle the intersection. The `LabelIntersectAction` property can take the following values.
@@ -263,9 +268,10 @@ The below example demonstrates to trim the axis labels by using the `LabelInters
 {% include code-snippet/heatmap/axis/label-intersection/label-intersection.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![ASP.NET Core HeatMap chart with customizing labels when intersecting with other labels](./images/heatmap-chart-label-intersect-action.png)
+![Customizing axis labels when intersecting with other labels in ASP.NET MVC HeatMap chart](./images/heatmap-chart-label-intersect-action.png)
+
+{% endif %}
 
 ### Rotating labels
 
@@ -282,6 +288,8 @@ The axis labels can be rotated to the desired angles by using the [labelRotation
 {% endhighlight %}
 {% endtabs %}
 
+![ASP.NET Core HeatMap chart with rotated axis labels](./images/heatmap-chart-rotating-labels.png)
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 The axis labels can be rotated to the desired angles by using the [LabelRotation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_LabelRotation) property.
@@ -294,9 +302,10 @@ The axis labels can be rotated to the desired angles by using the [LabelRotation
 {% include code-snippet/heatmap/axis/label-rotation/label-rotation.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![ASP.NET Core HeatMap chart with rotating labels](./images/heatmap-chart-rotating-labels.png)
+![ASP.NET MVC HeatMap chart with rotated axis labels](./images/heatmap-chart-rotating-labels.png)
+
+{% endif %}
 
 ### Label formatting
 
@@ -465,6 +474,8 @@ The multilevel labels can be customized by using the following properties.
 {% endhighlight %}
 {% endtabs %}
 
+![ASP.NET Core HeatMap chart with multilevel labels](./images/heatmap-chart-multi-level-labels.png)
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 Multilevel labels are used to classify a group of axis labels as a single category, which is then displayed with a label. By using [MultiLevelLabels](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#properties) tag, you can add multiple levels on top of the axis labels.
@@ -486,6 +497,7 @@ The multilevel labels can be customized by using the following properties and ta
 {% include code-snippet/heatmap/axis/multi-level-labels/multi-level-labels.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![ASP.NET Core HeatMap chart with multilevel labels](./images/heatmap-chart-multi-level-labels.png)
+![ASP.NET MVC HeatMap chart with multilevel labels](./images/heatmap-chart-multi-level-labels.png)
+
+{% endif %}

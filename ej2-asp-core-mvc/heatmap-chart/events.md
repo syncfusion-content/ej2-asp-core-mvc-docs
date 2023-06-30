@@ -64,7 +64,7 @@ When you double click on a HeatMap cell, the [CellDoubleClick](https://help.sync
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/events/cell-double-click/tagHelper %}
+{% include code-snippet/heatmap/events/cell-double-click/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellDoubleClick.cs" %}
 {% include code-snippet/heatmap/events/cell-double-click/cell-double-click.cs %}
@@ -93,7 +93,7 @@ The [CellRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Hea
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/events/cell-render/tagHelper %}
+{% include code-snippet/heatmap/events/cell-render/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellRender.cs" %}
 {% include code-snippet/heatmap/events/cell-render/cell-render.cs %}
@@ -122,7 +122,7 @@ When single or multiple cells in the HeatMap are selected, the [CellSelected](ht
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/events/cell-selected/tagHelper %}
+{% include code-snippet/heatmap/events/cell-selected/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelected.cs" %}
 {% include code-snippet/heatmap/events/cell-selected/cell-selected.cs %}
@@ -151,7 +151,7 @@ Once HeatMap has been completely rendered, the [Created](https://help.syncfusion
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/events/created/tagHelper %}
+{% include code-snippet/heatmap/events/created/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Created.cs" %}
 {% include code-snippet/heatmap/events/created/created.cs %}
@@ -180,7 +180,7 @@ The [LegendRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.H
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/events/legend-render/tagHelper %}
+{% include code-snippet/heatmap/events/legend-render/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="LegendRender.cs" %}
 {% include code-snippet/heatmap/events/legend-render/legend-render.cs %}
@@ -210,7 +210,7 @@ The [Load](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.H
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/events/load/tagHelper %}
+{% include code-snippet/heatmap/events/load/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Load.cs" %}
 {% include code-snippet/heatmap/events/load/load.cs %}
@@ -239,7 +239,7 @@ Once HeatMap is loaded, the [Loaded](https://help.syncfusion.com/cr/aspnetmvc-js
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/events/loaded/tagHelper %}
+{% include code-snippet/heatmap/events/loaded/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Loaded.cs" %}
 {% include code-snippet/heatmap/events/loaded/loaded.cs %}
@@ -269,7 +269,7 @@ When the window is resized, the [Resized](https://help.syncfusion.com/cr/aspnetm
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/events/resized/tagHelper %}
+{% include code-snippet/heatmap/events/resized/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Resized.cs" %}
 {% include code-snippet/heatmap/events/resized/resized.cs %}
@@ -299,11 +299,10 @@ The [TooltipRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/events/tooltip-render/tagHelper %}
+{% include code-snippet/heatmap/events/tooltip-render/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TooltipRender.cs" %}
 {% include code-snippet/heatmap/events/tooltip-render/tooltip-render.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
