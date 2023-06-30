@@ -15,11 +15,11 @@ This section describes how to retrieve data from a Snowflake database using [Sno
 
 **1.** Open Visual Studio and create an ASP.NET Core Web App project type, naming it **MyWebService**. To create an ASP.NET Core Web application, follow the document [link](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022).
 
-![Create ASP.NET Core Web App project](../../images/azure-asp-core-web-service-create.png)
+![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
 
 **2.** To connect a Snowflake Server using the **Snowflake.Data.Client** in our application, we need to install the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data/) NuGet package. To do so, open the NuGet package manager of the project solution, search for the package **Snowflake.Data** and install it.
 
-![Add the NuGet package "Snowflake.Data" to the project](../../images/snowflake-data-nuget-package-install.png)
+![Add the NuGet package "Snowflake.Data" to the project](../images/snowflake-data-nuget-package-install.png)
 
 **3.** Create a Web API controller (aka, PivotController.cs) file under **Controllers** folder that helps to establish data communication with the Pivot Table.
 
@@ -105,7 +105,7 @@ This section describes how to retrieve data from a Snowflake database using [Sno
 
 **7.** Finally, the retrieved data from Snowflake database which is in the form of JSON can be found in the Web API controller available in the URL link `https://localhost:44378/Pivot`, as shown in the browser page below.
 
-![Hosted Web API URL](../../images/snowflake-code-web-app.png)
+![Hosted Web API URL](../images/snowflake-code-web-app.png)
 
 ## Connecting the Pivot Table to a Snowflake database using the Web API service
 
@@ -144,6 +144,6 @@ This section describes how to retrieve data from a Snowflake database using [Sno
 
 When you run the sample, the resulting pivot table will look like this:
 
-![PivotTable bound with Snowflake database](../../images/snowflake-data-binding.png)
+![PivotTable bound with Snowflake database](../images/snowflake-data-binding.png)
 
 > Explore our ASP.NET MVC Pivot Table sample and ASP.NET Core Web Application to extract data from a Snowflake database and bind to the Pivot Table in [this](https://github.com/SyncfusionExamples/how-to-bind-Snowflake-database-to-pivot-table) GitHub repository.

@@ -14,11 +14,11 @@ This section describes how to consume data from MongoDB database using [MongoDB 
 
 **1.** Open Visual Studio and create an ASP.NET Core Web App project type, naming it **MyWebService**. To create an ASP.NET Core Web application, follow the document [link](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022).
 
-![Create ASP.NET Core Web App project](../../images/azure-asp-core-web-service-create.png)
+![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
 
 **2.** To connect a MongoDB Server using the **MongoDB.Driver** and **MongoDB.Bson** in our application, we need to install the [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver/) NuGet package. To do so, open the NuGet package manager of the project solution, search for the package **MongoDB.Driver** and install it.
 
-![Add the NuGet package "MongoDB.Driver" to the project](../../images/mongodb-data-nuget-package-install.png)
+![Add the NuGet package "MongoDB.Driver" to the project](../images/mongodb-data-nuget-package-install.png)
 
 **3.** Create a Web API controller (aka, PivotController.cs) file under **Controllers** folder that helps to establish data communication with the Pivot Table.
 
@@ -108,7 +108,7 @@ This section describes how to consume data from MongoDB database using [MongoDB 
 
 **7.** Finally, the retrieved data from MongoDB database which is in the form of JSON can be found in the Web API controller available in the URL link `https://localhost:44346/Pivot`, as shown in the browser page below.
 
-![Hosted Web API URL](../../images/mongodb-data.png)
+![Hosted Web API URL](../images/mongodb-data.png)
 
 ## Connecting the Pivot Table to a MongoDB database using the Web API service
 
@@ -146,6 +146,6 @@ This section describes how to consume data from MongoDB database using [MongoDB 
 
 When you run the sample, the resulting pivot table will look like this:
 
-![PivotTable bound with MongoDB database](../../images/mongodb-data-binding.png)
+![PivotTable bound with MongoDB database](../images/mongodb-data-binding.png)
 
 > Explore our ASP.NET MVC Pivot Table sample and ASP.NET Core Web Application to extract data from a MongoDB database and bind to the Pivot Table in [this](https://github.com/SyncfusionExamples/how-to-bind-MongoDB-to-pivot-table) GitHub repository.
