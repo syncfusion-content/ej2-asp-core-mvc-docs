@@ -93,7 +93,7 @@ In the HeatMap, the [EnableMultiSelect](https://help.syncfusion.com/cr/aspnetmvc
 
 ### Clearing cell selection
 
-The `ClearSelection` method can be used to clear all the selected cells. The below example illustrates the same.
+The `clearSelection` method can be used to clear all the selected cells. The below example illustrates the same.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
