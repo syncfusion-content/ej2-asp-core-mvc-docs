@@ -118,4 +118,4 @@ The `clearSelection` method can be used to clear all the selected cells. The bel
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatMap chart with clear selection method](./images/selection/heatmap-chart-clear-selection.gif)
+![ASP.NET Core HeatMap chart with clearSelection method](./images/selection/heatmap-chart-clear-selection.gif)
