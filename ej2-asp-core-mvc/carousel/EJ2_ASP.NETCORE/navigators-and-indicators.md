@@ -110,7 +110,7 @@ In the carousel, [autoPlay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 ### Indicators Types
 
-Choose different types of indicators available using the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) property. The indicator types are categorized as follows:
+Choose different types of indicators available using the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) property. The indicator types are categorized as follows:
 
 * [Default Indicator](#default-indicator)
 * [Dynamic Indicator](#dynamic-indicator)
@@ -119,7 +119,7 @@ Choose different types of indicators available using the [`indicatorsType`](http
 
 #### Default Indicator
 
-A default indicator in a carousel is a set of dots that indicate the current position of the slide in the carousel. The Default indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Default`.
+A default indicator in a carousel is a set of dots that indicate the current position of the slide in the carousel. The Default indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Default`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -130,7 +130,7 @@ A default indicator in a carousel is a set of dots that indicate the current pos
 ![Carousel indicators type default](images/indicator-type-default.gif)
 #### Dynamic Indicator
 
-A dynamic indicator in a carousel provides visual cues or markers that dynamically change or update to indicate the current position. The Dynamic indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Dynamic`.
+A dynamic indicator in a carousel provides visual cues or markers that dynamically change or update to indicate the current position. The Dynamic indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Dynamic`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -142,7 +142,7 @@ A dynamic indicator in a carousel provides visual cues or markers that dynamical
 
 #### Fraction Indicator
 
-The fraction indicator type displays the current slide index and total slide count as a fraction. The Fraction indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Fraction`.
+The fraction indicator type displays the current slide index and total slide count as a fraction. The Fraction indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Fraction`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -154,7 +154,7 @@ The fraction indicator type displays the current slide index and total slide cou
 
 #### Progress Indicator
 
-The Progress Indicator type displays the current slide as a progress bar. The Progress indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Progress`.
+The Progress Indicator type displays the current slide as a progress bar. The Progress indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Progress`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
