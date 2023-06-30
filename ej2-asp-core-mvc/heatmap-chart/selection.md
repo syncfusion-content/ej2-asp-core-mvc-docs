@@ -32,7 +32,7 @@ The HeatMap cells can be selected using the following interactions, as shown in 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core HeatMap chart with selection](./images/selection/heatmap-chart-multiple-selection.gif)
+![ASP.NET Core HeatMap chart with selection](./images/selection/heatmap-chart-selection.gif)
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -55,7 +55,7 @@ The HeatMap cells can be selected using the following interactions, as shown in 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMap chart with selection](./images/selection/heatmap-chart-multiple-selection.gif)
+![ASP.NET MVC HeatMap chart with selection](./images/selection/heatmap-chart-selection.gif)
 
 {% endif %}
 
