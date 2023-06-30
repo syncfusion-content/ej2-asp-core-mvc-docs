@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2.Schedule
+@(Html.EJS().RecurrenceEditor("RecurrenceEditor").SelectedType(1).Render())
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+    var recObject = document.getElementById('RecurrenceEditor').ej2_instances[0];
+    recObject.endTypes = ["until", "count"];
+        });
+</script>
