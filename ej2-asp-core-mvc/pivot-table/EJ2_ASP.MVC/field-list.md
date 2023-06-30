@@ -200,7 +200,7 @@ End user can sort fields in the field list UI to ascending (or) descending (or)
 
 ### Sort fields in a desired order
 
-To display the fields in descending order by default, set the `defaultFieldListOrder` property to **Descending** in the [load](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Load) event.
+To display the fields in descending order by default, set the `DefaultFieldListOrder` property to **Descending** in the [Load](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Load) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
