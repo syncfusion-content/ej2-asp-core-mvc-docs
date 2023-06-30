@@ -1,6 +1,6 @@
 <div class="container">
     <div class="control-container">
-        <ejs-carousel id="carousel" autoPlay="false" swipeMode="Mouse & CarouselSwipeMode.Touch">
+        <ejs-carousel id="carousel" autoPlay="false" swipeMode="CarouselSwipeMode.Mouse & CarouselSwipeMode.Touch">
             <e-carousel-items>
                 <e-carousel-item template='<div class="slide-content">Slide 1</div>'></e-carousel-item>
                 <e-carousel-item template='<div class="slide-content">Slide 2</div>'></e-carousel-item>
