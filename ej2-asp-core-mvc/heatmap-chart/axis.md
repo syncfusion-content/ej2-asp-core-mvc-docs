@@ -148,7 +148,7 @@ HeatMap supports inversing the axis origin for both axes, where the axis labels 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-In HeatMap, you can place the axis label in an opposite position of its default axis label position by using the [opposedPosition](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_OpposedPosition) property.
+In HeatMap, you can place the axis label in an opposite position of its default axis label position by using the [opposedPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_OpposedPosition) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

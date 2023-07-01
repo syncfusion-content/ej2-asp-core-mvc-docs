@@ -11,7 +11,7 @@ documentation: ug
 
 # Events in ##Platform_Name## HeatMap Chart Component
 
-This section describes the HeatMap chart control event, which occurs when the required actions are performed.
+This section describes the HeatMap chart event, which occurs when the required actions are performed.
 
 ## CellClick
 
