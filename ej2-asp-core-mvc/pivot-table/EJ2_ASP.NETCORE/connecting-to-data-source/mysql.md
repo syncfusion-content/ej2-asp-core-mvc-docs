@@ -6,7 +6,7 @@ platform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# Mysql in EJ2 ASP.NET Core Pivotview control
+# MySQL in EJ2 ASP.NET Core Pivotview control
 
 This section describes how to retrieve data from a MySQL database using [MySqlClient](https://mysqlclient.readthedocs.io/) and bind it to the Pivot Table via a Web API controller.
 
