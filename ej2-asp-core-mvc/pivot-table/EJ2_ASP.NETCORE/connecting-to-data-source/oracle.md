@@ -6,7 +6,7 @@ platform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# Oracle in EJ2 ASP.NET Core Pivotview control
+# Oracle in EJ2 ASP.NET Core Pivotview Component
 
 This section describes how to retrieve data from Oracle database using [Oracle Managed Data Access](https://www.nuget.org/packages/Oracle.ManagedDataAccess) and bind it to the Pivot Table via a Web API controller.
 
