@@ -6,7 +6,7 @@ description: "Learn how to bind data from a PostgreSQL database in the Syncfusio
 documentation: ug
 ---
 
-# PostgreSQL in EJ2 ASP.NET MVC Pivotview control
+# PostgreSQL in EJ2 ASP.NET MVC Pivotview Component
 
 This section describes how to consume data from PostgreSQL database using [Microsoft Npgsql](https://www.npgsql.org/doc/index.html) and bind it to the Pivot Table via a Web API controller.
 

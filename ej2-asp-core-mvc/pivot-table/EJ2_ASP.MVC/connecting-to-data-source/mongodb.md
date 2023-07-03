@@ -6,7 +6,7 @@ platform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# MongoDB in EJ2 ASP.NET MVC Pivotview control
+# MongoDB in EJ2 ASP.NET MVC Pivotview Component
 
 This section describes how to consume data from MongoDB database using [MongoDB Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries and bind it to the Pivot Table via a Web API controller.
 
