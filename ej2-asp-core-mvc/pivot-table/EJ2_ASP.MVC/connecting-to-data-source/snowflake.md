@@ -8,7 +8,6 @@ documentation: ug
 
 # Snowflake in EJ2 ASP.NET MVC Pivotview control
 
-
 This section describes how to retrieve data from a Snowflake database using [Snowflake Data](https://www.nuget.org/packages/Snowflake.Data/#readme-body-tab) and bind it to the Pivot Table via a Web API controller.
 
 ## Create a Web API service to fetch Snowflake data

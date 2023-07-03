@@ -4,7 +4,7 @@ component: "Pivot Table"
 description: "Learn how to bind data from a MySQL database in the Syncfusion ASP.NET MVC Pivot Table of Syncfusion Essential JS 2 and more."
 ---
 
-# Mysql in EJ2 ASP.NET MVC Pivotview control
+# MySQL in EJ2 ASP.NET MVC Pivotview control
 
 This section describes how to retrieve data from a MySQL database using [MySqlClient](https://mysqlclient.readthedocs.io/) and bind it to the Pivot Table via a Web API controller.
 
