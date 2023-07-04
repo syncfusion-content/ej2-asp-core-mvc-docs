@@ -6,7 +6,7 @@ platform: ej2-asp-core-mvc
 description: "Learn how to bind data from a Elasticsearch database in the Syncfusion ASP.NET MVC Pivot Table of Syncfusion Essential JS 2 and more."
 ---
 
-# Elasticsearch in EJ2 ASP.NET MVC Pivotview control
+# Elasticsearch in EJ2 ASP.NET MVC Pivotview Component
 
 This section describes how to retrieve data from Elasticsearch database using [Nest](https://www.nuget.org/packages/Nest) library and bind it to the Pivot Table via a Web API controller.
 
@@ -14,11 +14,11 @@ This section describes how to retrieve data from Elasticsearch database using [N
 
 **1.** Open Visual Studio and create an ASP.NET Core Web App project type, naming it **MyWebService**. To create an ASP.NET Core Web application, follow the document [link](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022).
 
-![Create ASP.NET Core Web App project](../../images/azure-asp-core-web-service-create.png)
+![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
 
 **2.** To connect a Elasticsearch Server using the **NEST** in our application, we need to install the [NEST](https://www.nuget.org/packages/NEST/) NuGet package. To do so, open the NuGet package manager of the project solution, search for the package **NEST** and install it.
 
-![Add the NuGet package "NEST" to the project](../../images/next-nuget-package-install.png)
+![Add the NuGet package "NEST" to the project](../images/next-nuget-package-install.png)
 
 **3.** Create a Web API controller (aka, PivotController.cs) file under **Controllers** folder that helps to establish data communication with the Pivot Table.
 
@@ -65,7 +65,7 @@ This section describes how to retrieve data from Elasticsearch database using [N
 
 **7.** Finally, the retrieved data from Elasticsearch database which is in the form of JSON can be found in the Web API controller available in the URL link `https://localhost:44323/Pivot`, as shown in the browser page below.
 
-![Hosted Web API URL](../../images/elasticsearch-data.png)
+![Hosted Web API URL](../images/elasticsearch-data.png)
 
 ## Connecting the Pivot Table to a Elasticsearch database using the Web API service
 
@@ -88,7 +88,10 @@ This section describes how to retrieve data from Elasticsearch database using [N
 @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(
         dataSource => dataSource.Url("https://localhost:44323/Pivot"
         ).ExpandAll(false).EnableSorting(true)
-    .Rows(rows =>
+    .FormatSettings(formatsettings => 
+    { 
+        formatsettings.Name("Amount").Format("C0").Add(); 
+    }).Rows(rows =>
     {
         rows.Name("Country").Add(); rows.Name("State").Add();
     }).Columns(columns =>
@@ -103,6 +106,6 @@ This section describes how to retrieve data from Elasticsearch database using [N
 
 When you run the sample, the resulting pivot table will look like this:
 
-![PivotTable bound with Elasticsearch database](../../images/elasticsearch-data-binding.png)
+![PivotTable bound with Elasticsearch database](../images/elasticsearch-data-binding.png)
 
 > Explore our ASP.NET MVC Pivot Table sample and ASP.NET Core Web Application to extract data from a Elasticsearch database and bind to the Pivot Table in [this](https://github.com/SyncfusionExamples/how-to-bind-Elasticsearch-database-to-pivot-table) GitHub repository.
