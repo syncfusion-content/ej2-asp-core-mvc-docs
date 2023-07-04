@@ -321,8 +321,8 @@ An [`Orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 <table>
 <tr>
-<td><b>Orientation Type<b></td>
-<td><b>Description<b></td>
+<td><b>Orientation Type</b></td>
+<td><b>Description</b></td>
 </tr>
 <tr>
 <td>Horizontal</td>
