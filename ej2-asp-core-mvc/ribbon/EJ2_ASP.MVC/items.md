@@ -204,7 +204,7 @@ You can make use of [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfu
 
 ### ComboBox
 
-you can render a ComboBox item, bt setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ComboBox`. You can further customize the ComboBox item through [RibbonComboBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html) which provides options such as `AllowFiltering`, `AutoFill`, `Index`, `SortOrder` and more.
+You can render a ComboBox item, by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `ComboBox`. You can further customize the ComboBox item through [RibbonComboBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html) which provides options such as `AllowFiltering`, `AutoFill`, `Index`, `SortOrder` and more.
 
 #### Filtering
 
@@ -276,7 +276,7 @@ You can make use of [Index](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 #### SortOrder
 
-You can make use of [SortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_SortOrder) property which specifies the order in which the data source needs to be sorted. The available type of sort orders are None - The data source is not sorted. Ascending - The data source is sorted in ascending order. Descending - The data source is sorted in descending order.
+You can make use of [SortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_SortOrder) property which specifies the order in which the data source needs to be sorted. The available type of sort orders are `None` - The data source is not sorted. `Ascending` - The data source is sorted in ascending order. `Descending` - The data source is sorted in descending order.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
