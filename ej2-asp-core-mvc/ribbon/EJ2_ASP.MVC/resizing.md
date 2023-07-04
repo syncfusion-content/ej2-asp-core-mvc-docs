@@ -10,11 +10,11 @@ documentation: ug
 
 # Ribbon Resizing
 
-When resizing the Ribbon, you have control over how the items behave in terms of their size preservation.
+By extending or collapsing groups, The Ribbon effectively controls available space, with larger groups collapsing first during resizing. Users can create a unique Ribbon by altering the grouping order to suit their needs.
 
 ## Defining items allowed size
 
-You can utilize the [AllowedSizes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property to maintain a specific size for an item regardless of resizing. By configuring `AllowedSizes` for an item, you restrict its size to the specified option, preserving its size even when the Ribbon is being resized.
+The [AllowedSizes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property is used to maintain a constant size for an item when being resized. You can limit an items size by specifying its `AllowedSizes` which keeps the size constant even when the Ribbon is being resized.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -44,4 +44,6 @@ You can utilize the [AllowedSizes](https://help.syncfusion.com/cr/aspnetmvc-js2/
 
 ## Defining items active size
 
-You can make use of the [ActiveSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_ActiveSize) read-only property to retrieve the size at which the item is currently being displayed.
+The [ActiveSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_ActiveSize) read-only property is used to set the size of the item which is displayed intially before it is being resized.
+
+> On resizing, the items size will be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.
