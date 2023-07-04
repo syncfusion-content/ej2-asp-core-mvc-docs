@@ -276,7 +276,11 @@ You can make use of [Index](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 #### SortOrder
 
-You can make use of [SortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_SortOrder) property which specifies the order in which the data source needs to be sorted. The available type of sort orders are `None` - The data source is not sorted. `Ascending` - The data source is sorted in ascending order. `Descending` - The data source is sorted in descending order.
+You can make use of [SortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonComboBoxSettings.html#Syncfusion_EJ2_Ribbon_RibbonComboBoxSettings_SortOrder) property which specifies the order in which the data source needs to be sorted. 
+
+`None` - The data source is not sorted.
+`Ascending` - The data source is sorted in ascending order.
+`Descending` - The data source is sorted in descending order.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
