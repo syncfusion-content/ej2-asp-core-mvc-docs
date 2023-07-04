@@ -4,7 +4,7 @@ component: "Pivot Table"
 description: "Learn how to bind data from a MySQL database in the Syncfusion ASP.NET MVC Pivot Table of Syncfusion Essential JS 2 and more."
 ---
 
-# MySQL in EJ2 ASP.NET MVC Pivotview control
+# MySQL in EJ2 ASP.NET MVC Pivotview Component
 
 This section describes how to retrieve data from a MySQL database using [MySqlClient](https://mysqlclient.readthedocs.io/) and bind it to the Pivot Table via a Web API controller.
 
@@ -12,11 +12,11 @@ This section describes how to retrieve data from a MySQL database using [MySqlCl
 
 **1.** Open Visual Studio and create an ASP.NET Core Web App project type, naming it **MyWebService**. To create an ASP.NET Core Web application, follow the document [link](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022).
 
-![Create ASP.NET Core Web App project](../../images/azure-asp-core-web-service-create.png)
+![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
 
 **2.** To connect a MySQL Server using the **MySqlClient** in our application, we need to install the [MySql.Data](https://www.nuget.org/packages/MySql.Data) NuGet package. To do so, open the NuGet package manager of the project solution, search for the package **MySql.Data** and install it.
 
-![Add the NuGet package "MySql.Data" to the project](../../images/mysql-data-nuget-package-install.png)
+![Add the NuGet package "MySql.Data" to the project](../images/mysql-data-nuget-package-install.png)
 
 **3.** Create a Web API controller (aka, PivotController.cs) file under **Controllers** folder that helps to establish data communication with the Pivot Table.
 
@@ -92,13 +92,13 @@ This section describes how to retrieve data from a MySQL database using [MySqlCl
 
 **7.** Finally, the retrieved data from MySQL database which is in the form of JSON can be found in the Web API controller available in the URL link `https://localhost:7146/Pivot`, as shown in the browser page below.
 
-![Hosted Web API URL](../../images/mysql-data.png)
+![Hosted Web API URL](../images/mysql-data.png)
 
 ## Connecting the Pivot Table to a MySQL database using the Web API service
 
 **1.** Create a simple ASP.NET MVC Pivot Table by following the **"Getting Started"** documentation [link](../getting-started).
 
-**2.** Map the hosted Web API's URL link `https://localhost:7146/Pivot` to the Pivot Table component in **~/Views/Home/Index.cshtml** by using the [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property.
+**2.** Map the hosted Web API's URL link `https://localhost:7146/Pivot` to the Pivot Table in **~/Views/Home/Index.cshtml** by using the [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property.
 
 ```csharp
 @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(
@@ -130,6 +130,6 @@ This section describes how to retrieve data from a MySQL database using [MySqlCl
 
 When you run the sample, the resulting pivot table will look like this:
 
-![PivotTable bound with MySQL data](../../images/pivottable-with-mysql-data.png)
+![PivotTable bound with MySQL data](../images/pivottable-with-mysql-data.png)
 
 > Explore our ASP.NET MVC Pivot Table sample and ASP.NET Core Web Application to extract data from a MySQL database and bind to the Pivot Table in [this](https://github.com/SyncfusionExamples/how-to-bind-MySQL-database-to-pivot-table) GitHub repository.
