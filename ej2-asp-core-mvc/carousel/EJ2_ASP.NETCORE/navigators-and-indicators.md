@@ -94,20 +94,6 @@ You can customize the indicators by showing the preview image of each slide usin
 
 ![Carousel indicators template preview](images/indicators_preview.png)
 
-## Play button
-
-### Show or hide the play button
-
-In the carousel, [autoPlay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_AutoPlay) actions have been controlled by using the [showPlayButton](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_ShowPlayButton) property in the user interface. When you enable this property, the slide transitions are controlled using this play and pause button. This property depends on the [buttonsVisibility](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_ButtonsVisibility) property. The following example depicts the code to show the play button in the carousel.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/carousel/navigators/play-button/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![Carousel play button](images/play_button.png)
-
 ### Indicators Types
 
 Choose different types of indicators available using the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) property. The indicator types are categorized as follows:
@@ -163,6 +149,20 @@ The Progress Indicator type displays the current slide as a progress bar. The Pr
 {% endtabs %}
 
 ![Carousel indicators type progress](images/indicator-type-progress.gif)
+
+## Play button
+
+### Show or hide the play button
+
+In the carousel, [autoPlay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_AutoPlay) actions have been controlled by using the [showPlayButton](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_ShowPlayButton) property in the user interface. When you enable this property, the slide transitions are controlled using this play and pause button. This property depends on the [buttonsVisibility](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_ButtonsVisibility) property. The following example depicts the code to show the play button in the carousel.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/play-button/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel play button](images/play_button.png)
 
 ### Play button template
 
