@@ -10,7 +10,7 @@ documentation: ug
 
 # Ribbon Resizing
 
-By extending or collapsing groups, The Ribbon effectively controls available space, with larger groups collapsing first during resizing. Users can create a unique Ribbon by altering the grouping order to suit their needs.
+By extending or collapsing groups, the Ribbon effectively controls available space, with larger groups collapsing first during resizing. Users can create a unique Ribbon by altering the grouping order to suit their needs.
 
 ## Defining items allowed size
 
