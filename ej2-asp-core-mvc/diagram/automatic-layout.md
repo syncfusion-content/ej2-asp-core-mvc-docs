@@ -334,6 +334,10 @@ An [`Orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 </tr>
 </table>
 
+N> If you want to use mind map layout in diagram, you need to inject MindMap in the diagram.
+
+The following code example illustrates how to create an mindmap layout.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
