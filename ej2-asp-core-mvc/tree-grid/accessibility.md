@@ -67,8 +67,8 @@ The following keyboard shortcuts are supported by TreeGrid.
 |<kbd>DownArrow</kbd> |Moves down a row/cell selection.|
 |<kbd>RightArrow</kbd> |Moves to the right cell selection.|
 |<kbd>LeftArrow</kbd> |Moves to the left cell selection.|
-|<kbd>Ctrl + Shift + DownArrow</kbd> |Expand Child Grid.|
+|<kbd>Ctrl + Shift + DownArrow</kbd> |Expands the selected group.|
 |<kbd>Ctrl + DownArrow</kbd> |Expands all the visible groups.|
-|<kbd>Ctrl + Shift + UpArrow</kbd> |Collapse Child Grid.|
+|<kbd>Ctrl + Shift + UpArrow</kbd> |Collapses the selected group.|
 |<kbd>Ctrl + UpArrow</kbd> |Collapses all the visible groups.|
 |<kbd>Ctrl + P</kbd> |Prints the TreeGrid.|
