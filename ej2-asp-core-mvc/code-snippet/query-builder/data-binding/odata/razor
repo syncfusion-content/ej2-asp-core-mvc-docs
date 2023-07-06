@@ -1,6 +1,6 @@
   @Html.EJS().QueryBuilder("OData").DataSource(dataManger =>
 {
-    dataManger.Url("http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Orders/").CrossDomain(true).Adaptor("ODataAdaptor");
+    dataManger.Url("https://services.syncfusion.com/js/production/api/orders/").CrossDomain(true).Adaptor("ODataAdaptor");
 }).Columns(col =>
    {
        col.Field("EmployeeID").Label("Employee ID").Type("number").Add();
