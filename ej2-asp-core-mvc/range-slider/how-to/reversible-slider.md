@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reversible Range Slider in ##Platform_Name## Range Slider Component
+title: Reversible Range Slider in ##Platform_Name##
 description: Learn here all about Reversible Range Slider in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Reversible Range Slider
