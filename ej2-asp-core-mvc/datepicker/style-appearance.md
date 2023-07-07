@@ -41,3 +41,19 @@ Use the following CSS to customize the DatePicker icon element.
 Check the below section, to customize the style and appearance of the Calendar component.
 
 [Customizing Calendar's style and appearance](../calendar/style-appearance/)
+
+## Full Screen Mode: Enhancing the DatePicker Component (Mobile Support Only)
+
+We have introduced the full screen mode functionality in our DatePicker component, enabling users to see the DatePicker calendar element in full-screen mode for better visibility and an upgraded user experience. It is important to mention that this feature is exclusively available for mobile devices in both landscape and portrait orientations. To activate the full screen mode within the DatePicker component, simply set the `fullScreenMode` API value to `true`. This action will extend the calendar element to occupy the entire screen on mobile devices.
+
+{% if page.publishingplatform == "aspnet-core" %}
+```html
+<ejs-datepicker id="date" fullScreenMode=true></ejs-datepicker>
+```
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+```html
+@Html.EJS().DatePicker("date").FullScreenMode(true).Render()
+```
+{% endif %}
+![DatePickerFullScreen](./images/DatePickerFullScreen.gif)
