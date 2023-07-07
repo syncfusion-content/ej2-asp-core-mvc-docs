@@ -14,7 +14,7 @@ The following methods are available in the Ribbon control.
 
 ## addTab
 
-To add an tab dynamically, use the `addTab` method in the ribbon control. The following are the arguments for this method.
+Using the `addTab` method you can add tab dynamically in the ribbon control. The arguments are as follows.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|
@@ -66,7 +66,7 @@ To add an tab dynamically, use the `addTab` method in the ribbon control. The fo
 
 ## addGroup
 
-To add an group dynamically, use the `addGroup` method in the ribbon control. The following are the arguments for this method.
+Using the `addGroup` method you can add a group dynamically in the ribbon control. The arguments are as follows.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|
@@ -119,7 +119,7 @@ To add an group dynamically, use the `addGroup` method in the ribbon control. Th
 
 ## addCollection
 
-To add an collection dynamically, use the `addCollection` method in the ribbon control. The following are the arguments for this method.
+Using the `addCollection` method you can add a collection dynamically in the ribbon control. The arguments are as follows.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|
@@ -186,7 +186,7 @@ To add an collection dynamically, use the `addCollection` method in the ribbon c
 
 ## addItem
 
-To add an item dynamically, use the `addItem` method in the ribbon control. The following are the arguments for this method.
+Using the `addItem` method you can add an item dynamically in the ribbon control. The arguments are as follows.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|

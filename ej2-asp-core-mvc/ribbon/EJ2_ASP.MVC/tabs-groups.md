@@ -48,4 +48,4 @@ You can add collections of items to each group by using the [Collections](https:
 
 ![ASP.NET MVC Ribbon Control with Items](images/ribbon-items.png)
 
-> Check out our [`items`](./items) page on adding a built-in and custom items.
+> Check out our [`items`](./items) page on adding the built-in and custom items.

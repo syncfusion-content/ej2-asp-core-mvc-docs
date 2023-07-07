@@ -12,7 +12,7 @@ documentation: ug
 
 ## Built-in Ribbon items
 
-You can define each ribbon item using the [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCollection.html#Syncfusion_EJ2_Ribbon_RibbonCollection_Items) property, the type should be specified in the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to define built-in items.
+By using the [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCollection.html#Syncfusion_EJ2_Ribbon_RibbonCollection_Items) property, the ribbon items type should be specified in the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to define the built-in items.
 
 The following items can be rendered as built in items
 
@@ -27,7 +27,7 @@ The following items can be rendered as built in items
 
 ### Button
 
-You can render a Button item by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `Button`. You can also customize the button item using the [RibbonButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html) which provides options such as `IconCss`, `Content`, `IsToggle` and more.
+By setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `Button` you can render a Button item. You can also customize the button item using the [RibbonButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html) which provides options such as `IconCss`, `Content`, `IsToggle` and more.
 
 #### Toggle Button
 
@@ -61,7 +61,7 @@ The [IsToggle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbo
 
 ### CheckBox
 
-By setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `CheckBox` you can render a CheckBox item. You can also customize the CheckBox item through [RibbonCheckBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html) which provides options such as `LabelPosition`, `Label`, `Checked` and more.
+By setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `CheckBox` you can render a CheckBox item. You can also customize the CheckBox item using the [RibbonCheckBoxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonCheckBoxSettings.html) which provides options such as `LabelPosition`, `Label`, `Checked` and more.
 
 #### CheckBox State
 
