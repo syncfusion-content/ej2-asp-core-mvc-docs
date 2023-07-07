@@ -10,7 +10,7 @@ documentation: ug
 
 # Tooltip
 
-The Ribbon control supports tooltips, which give users more information when they hover over items and improving the user experience.
+The Ribbon supports tooltips, which give users more information when they hover over items and improving the user experience.
 
 ## Adding Title
 

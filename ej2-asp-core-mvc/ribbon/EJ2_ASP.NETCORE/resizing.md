@@ -10,11 +10,13 @@ documentation: ug
 
 # Ribbon Resizing
 
-When resizing the Ribbon, you have control over how the items behave in terms of their size preservation.
+The Ribbon effectively resizes the ribbon elements while being resized. It extends when the ribbon size is increased and collapses when the ribbon size is decreased. The resizing can be performed in both the classic and simplified modes.
+
+By default, the ribbon elements are resized based on the group size with larger groups collapsing first, later the medium and small sized items.
 
 ## Defining items allowed size
 
-You can utilize the [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property to maintain a specific size for an item regardless of resizing. By configuring `allowedSizes` for an item, you restrict its size to the specified option, preserving its size even when the Ribbon is being resized.
+The [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property is used to maintain a constant size for an item when being resized. You can limit an items size by specifying its `allowedSizes` which keeps the size constant even when the Ribbon is being resized.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -47,4 +49,6 @@ You can utilize the [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2
 
 ## Defining items active size
 
-You can make use of the [activeSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_ActiveSize) read-only property to retrieve the size at which the item is currently being displayed.
+The [activeSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_ActiveSize) read-only property is used to set the size of the item which is displayed intially before it is being resized.
+
+> On resizing, the items size will be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.

@@ -48,8 +48,7 @@ The Ribbon group [Orientation](https://help.syncfusion.com/cr/aspnetmvc-js2/Sync
 
 ![ASP.NET MVC Ribbon Control with Items Orientation](./images/ribbon-orientation.jpg)
 
-> When the orientation is set to `Row`, a group can have maximum of three collections in which each collection inside a group can contain any number of items.
-When the orientation is set to `Column`, a group can have any number of collections, but each collection inside a group can have either a single large-sized item or three medium/small-sized items. If two large-sized items are specified, then it will automatically be converted into two medium/small-sized items.
+>  When the orientation is set to `Row` a group may have a maximum of three collections each of which may contain any number of items. When the orientation is set to `Column` a group may have any number of collections, each of which may contain one large-sized item or three medium/small-sized items. If two large-sized items are specified, it automatically converts into two medium/small-sized items.
 
 ### Defining group header
 

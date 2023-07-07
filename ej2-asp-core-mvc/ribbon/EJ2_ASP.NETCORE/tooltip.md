@@ -10,9 +10,11 @@ documentation: ug
 
 # Tooltip
 
+The Ribbon supports tooltips, which give users more information when they hover over items and improving the user experience.
+
 ## Adding Title
 
-To provide a title for the tooltip, you can utilize the [Title](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_Title) property.
+The [Title](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_Title) property is used to set the tooltip title for each Ribbon item.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -68,7 +70,7 @@ To provide a title for the tooltip, you can utilize the [Title](https://help.syn
 
 ## Adding Content
 
-You can define the specific content to be displayed within the tooltip using the [Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_Content) property.
+The [Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_Content) property can be used to set the tooltip content for each Ribbon item.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -124,7 +126,7 @@ You can define the specific content to be displayed within the tooltip using the
 
 ## Adding Icon
 
-In addition to the text and content, you can also define CSS class for the icons to show in the tooltip using [IconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_IconCss) property.
+In addition to the text and content, by using [IconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_IconCss)  property you can define the custom style for the icons.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
