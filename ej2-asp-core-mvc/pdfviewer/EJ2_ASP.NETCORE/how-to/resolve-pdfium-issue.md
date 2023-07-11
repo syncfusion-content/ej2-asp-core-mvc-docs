@@ -50,10 +50,11 @@ Following these steps should resolve the issue.
 
 * The issue, “The type initializer for ‘Syncfusion.EJ2.PdfViewer.PdfiumNative’ threw an exception” occurs due to the missing of pdfium dependency in the Linux environment. To resolve this, Execute the following commands one by one to install the pdfium dependency package in the Linux machine.
 
-```html
-
+```
     sudo cp -u /lib/x86_64-linux-gnu/libdl.so.2 /lib/x86_64-linux-gnu/libdl.so
+
     sudo apt-get update
+    
     sudo apt install libgdiplus
 
 ```
@@ -62,16 +63,16 @@ Following these steps should resolve the issue.
 
 * The issue, “The type initializer for ‘Syncfusion.EJ2.PdfViewer.PdfiumNative’ threw an exception” occurs due to the missing of pdfium dependency in the docker environment. To resolve this, Incorporate the following commands into your Dockerfile to install the pdfium dependency.
 
-```html
+```
 
-RUN ln -s /lib/x86_64-linux-gnu/libdl-2.24.so /lib/x86_64-linux-gnu/libdl.so
+    RUN ln -s /lib/x86_64-linux-gnu/libdl-2.24.so /lib/x86_64-linux-gnu/libdl.so
 
-# install System.Drawing native dependencies
+    # install System.Drawing native dependencies
 
-RUN apt-get update && apt-get install -y --allow-unauthenticated libgdiplus libc6-dev libx11-dev
+    RUN apt-get update && apt-get install -y --allow-unauthenticated libgdiplus libc6-dev libx11-dev
 
-RUN ln -s libgdiplus.so gdiplus.dll
+    RUN ln -s libgdiplus.so gdiplus.dll
 
-``` 
+```
 
 ![Pdfium.dll settings](../../pdfviewer/images/pdfium_dll_docker.png)
