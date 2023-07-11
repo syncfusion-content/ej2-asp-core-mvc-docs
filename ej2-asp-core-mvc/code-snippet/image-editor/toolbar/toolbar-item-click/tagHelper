@@ -1,9 +1,10 @@
+@{
+    var imageTool = new string[] { "Annotate", "Line", "Rectangle", "Text", "ZoomIn", "ZoomOut" };
+}
+
 <div class="col-lg-12 control-section e-img-editor-sample">
-    @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { }).Render()
+    <ejs-imageeditor id="image-editor" created="created" toolbarItemClicked="toolbarItemClicked" toolbar="@imageTool"></ejs-imageeditor>
 </div>
-@Html.EJS().Button("customClick").CssClass("e-primary").Content("Custom").Click("customClick").Render()
-@Html.EJS().Button("squareClick").CssClass("e-primary").Content("Square").Click("squareClick").Render()
-@Html.EJS().Button("circleClick").CssClass("e-primary").Content("Circle").Click("circleClick").Render()
 
 <script>
     function created() {
@@ -15,19 +16,11 @@
         }
     }
 
-    function customClick() {
+    function toolbarItemClicked (args) {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imageEditorObj.select("Custom");
-    }
-
-    function squareClick() {
-        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imageEditorObj.select("Square");
-    }
-
-    function circleClick() {
-        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imageEditorObj.select("Circle");
+        if (args.item.text === 'Text') {
+            imageEditorObj.rotate(90);
+        }
     }
 </script>
 
