@@ -10,27 +10,29 @@ documentation: ug
 
 # Toolbar
 
-Toolbars are used to interact and edit images with customization. Users can define their own toolbars for an image editor by customizing the items or the entire toolbar.
+The toolbars in the Image Editor are a key component for interacting with and editing images. They provide a range of tools and options that can be customized to suit the needs and preferences. Add or remove items from the toolbar to create a personalized set of tools, or they can even create their own custom toolbar from scratch. This flexibility and customization allow them to create a unique image editing experience that is tailored to their specific needs and workflow. 
+
+In the Image Editor, the toolbar property provides the ability to customize the toolbar by adding or removing items, as well as defining a completely custom toolbar. This feature is valuable for creating a personalized image editing experience that aligns with specific requirements and workflows. 
 
 ## Built-in Toolbar Items
 
 Specifies the toolbar items to perform UI interactions. Refer to the built-in toolbar items for the default value.
 
-* Crop,
-* Transform,
-* Annotate,
-* ZoomIn,
-* ZoomOut,
-* Open,
-* Reset,
-* Save,
+* Crop
+* Transform
+* Annotate
+* ZoomIn
+* ZoomOut
+* Open
+* Reset
+* Save
 * Pan
 
-## Custom Toolbar items
+## Add a Custom Toolbar items
 
-Users can define their own toolbars for an image editor by customizing the items or the entire toolbar. Users can achieve this by using the `toolbar` property.
+The `toolbar` property in the Image Editor allows to add or remove toolbar items to include only the tools they frequently use, streamlining the editing process and reducing clutter. 
 
-The built-in toolbar can be customized using the `toolbar` property, so the specified toolbar items can be enabled in the Image Editor toolbar. And the contextual toolbar which is enabled while inserting annotations can also be customized in the toolbarUpdating event.
+Here is an example of adding custom toolbar items to rotate and flip transformation using `toolbar` property. 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -59,10 +61,122 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-custom-toolbar.jpg)
 
+## Show or Hide a toolbar 
+
+The `toolbar` property controls the visibility of the toolbar in the Image Editor. When the toolbar property is set to an empty list, the toolbar is hidden. Conversely, if the toolbar property contains a list of items, the toolbar is shown, displaying the specified items. This feature provides flexibility for users to personalize their image editing experience. 
+
+Here is an example of hiding the toolbar of the image editor using `toolbar` property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/custom-toolbar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/custom-toolbar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-custom-toolbar.jpg)
+
+## Show or Hide a toolbar item
+
+The `toolbar` property is utilized to control the visibility of toolbar items in the Image Editor. By default, the toolbar property includes the default toolbar items. If you wish to hide the default toolbar items and specify your own set of required items, you need to explicitly define those items in the toolbar property. This allows you to customize the toolbar by displaying only the specific items you require, tailoring the editing experience to your preferences. 
+
+Here is an example of hiding the cropping and selection toolbar items using `toolbar` property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/custom-toolbar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/custom-toolbar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-custom-toolbar.jpg)
+
+## Enable or disable a toolbar item 
+
+The `toolbar` property is employed to enable or disable toolbar items in the Image Editor. By default, the `toolbar` property includes the default toolbar items, and these items cannot be disabled. However, if you have defined custom toolbar items using the toolbarItemModel, you can enable or disable them by configuring their respective properties within the `toolbar` property. This provides the flexibility to control the availability and functionality of custom toolbar items based on your specific requirements. 
+
+Here is an example of disabling the custom toolbar item using `toolbar` property.
+
+
+## Enable or disable a contextual toolbar item 
+
+The toolbarItems property in the toolbarEventArgs is used to enable or disable contextual toolbar items in the Image Editor. To enable or disable the default toolbar items, you can accomplish this by setting the Disabled property to true in the ImageEditorToolbarItemModel within the ToolbarItems property. This allows you to selectively enable or disable specific default toolbar items based on your requirements, providing a customized toolbar experience in the Image Editor.
+
+## Toolbar created event 
+
+The `toolbarCreated` event is triggered after the toolbar is created in the Image Editor. This event can be useful when you need to perform any actions or make modifications to the toolbar once it is fully initialized and ready for interaction. By subscribing to the `toolbarCreated` event, you can access the toolbar object and perform tasks such as adding event handlers, customizing the appearance, or configuring additional functionality.
+
+## Toolbar item clicked event 
+
+The `toolbarItemClicked` event is triggered when a toolbar item is clicked in the Image Editor. This event is particularly useful when you have added custom options to both the main toolbar and contextual toolbar, as it allows you to capture the user's interaction with those custom options. By subscribing to the `toolbarItemClicked` event, you can execute specific actions or handle logic based on the toolbar item that was clicked.
+
+Here is an example of toolbar item clicking event using `toolbarItemClicked` property.
+
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/toolbar-item-click/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/toolbar-item-click/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/toolbar-item-click/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/toolbar-item-click/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Toolbar template
 
-Specifies template to the Image Editor Toolbar. If you want to customize the entire toolbar in your own way use this property. The property depends on the ‘toolbar’.
+The `toolbarTemplate` property in the Image Editor provides the capability to fully customize the toolbar by supplying a custom template. This feature is valuable when you want to create a distinct and personalized image editing experience that goes beyond the default toolbar or the customizable toolbar options offered by the Image Editor. By defining a custom template for the toolbar, you have complete control over its layout, appearance, and functionality. This empowers you to design a unique and tailored toolbar that aligns perfectly with your specific requirements and desired user experience. 
 
+Here is an example of using `toolbarTemplate` to render only the button to toggle the freehand draw option. 
 The toolbar of the Image Editor can be replaced with the user specific UI using the `toolbarTemplate` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -94,7 +208,7 @@ Output be like the below.
 
 ## Customize Contextual Toolbar
 
-The built-in contextual toolbar can be customized using the toolbar property, so the specified toolbar items can be enabled in the Image Editor toolbar. And the contextual toolbar which is enabled while inserting annotations can  be customized in the `toolbarUpdating` event.
+The built-in contextual toolbar can be customized using the toolbar property, so the specified toolbar items can be enabled in the Image Editor toolbar. And the contextual toolbar which is enabled while inserting annotations can  be customized in the `toolbarUpdating` event
 
 In the following example, the contextual toolbar for rectangle will be rendered with only stroke color by excluding fill color and stroke width using toolbarUpdating event.
 
