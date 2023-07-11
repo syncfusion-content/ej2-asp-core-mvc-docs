@@ -40,10 +40,38 @@ N> You need to refer the ParentFolder up to the x64/x86 folder.
 
 4. Build and publish the application.
 
-Also, install only the package related to that OS, then build and run the project on that platform. For Windows, Linux, and OSX operating systems, use the following corresponding libraries:
+Also, install the below package, then build and run the project. This will work on Windows, Linux, and OSX operating systems.
 
-* Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
-* Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
-* Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX
+* Syncfusion.EJ2.PdfViewer.AspNet.Core
 
 Following these steps should resolve the issue.
+
+## Steps to resolve the pdfium issue in Linux environment 
+
+* The issue, “The type initializer for ‘Syncfusion.EJ2.PdfViewer.PdfiumNative’ threw an exception” occurs due to the missing of pdfium dependency in the Linux environment. To resolve this, Execute the following commands one by one to install the pdfium dependency package in the Linux machine.
+
+```html
+
+    sudo cp -u /lib/x86_64-linux-gnu/libdl.so.2 /lib/x86_64-linux-gnu/libdl.so
+    sudo apt-get update
+    sudo apt install libgdiplus
+
+```
+
+## Steps to resolve the pdfium issue in docker environment 
+
+* The issue, “The type initializer for ‘Syncfusion.EJ2.PdfViewer.PdfiumNative’ threw an exception” occurs due to the missing of pdfium dependency in the docker environment. To resolve this, Incorporate the following commands into your Dockerfile to install the pdfium dependency.
+
+```html
+
+RUN ln -s /lib/x86_64-linux-gnu/libdl-2.24.so /lib/x86_64-linux-gnu/libdl.so
+
+# install System.Drawing native dependencies
+
+RUN apt-get update && apt-get install -y --allow-unauthenticated libgdiplus libc6-dev libx11-dev
+
+RUN ln -s libgdiplus.so gdiplus.dll
+
+```
+
+![Pdfium.dll settings](../../pdfviewer/images/pdfium_dll_docker.png)
