@@ -130,7 +130,7 @@ A default indicator in a carousel is a set of dots that indicate the current pos
 {% include code-snippet/carousel/navigators/indicator-type/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/indicator-preview/indicator-default.cs %}
+{% include code-snippet/carousel/navigators/indicator-type/indicator-default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -144,7 +144,7 @@ A dynamic indicator in a carousel provides visual cues or markers that dynamical
 {% include code-snippet/carousel/navigators/indicator-type-dynamic/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/indicator-preview/indicator-dynamic.cs %}
+{% include code-snippet/carousel/navigators/indicator-type-dynamic/indicator-dynamic.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -159,7 +159,7 @@ The fraction indicator type displays the current slide index and total slide cou
 {% include code-snippet/carousel/navigators/indicator-type-fraction/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/indicator-preview/indicator-fraction.cs %}
+{% include code-snippet/carousel/navigators/indicator-type-fraction/indicator-fraction.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -174,7 +174,7 @@ The Progress Indicator type displays the current slide as a progress bar. The Pr
 {% include code-snippet/carousel/navigators/indicator-type-progress/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/indicator-preview/indicator-progress.cs %}
+{% include code-snippet/carousel/navigators/indicator-type-progress/indicator-progress.cs %}
 {% endhighlight %}
 {% endtabs %}
 
