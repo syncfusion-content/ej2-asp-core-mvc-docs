@@ -72,6 +72,6 @@ RUN apt-get update && apt-get install -y --allow-unauthenticated libgdiplus libc
 
 RUN ln -s libgdiplus.so gdiplus.dll
 
-```
+``` 
 
 ![Pdfium.dll settings](../../pdfviewer/images/pdfium_dll_docker.png)
