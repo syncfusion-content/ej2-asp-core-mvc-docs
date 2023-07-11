@@ -10,33 +10,37 @@ documentation: ug
 
 # Annotation in Image Editor control
 
-The Image Editor has multiple annotations support including text, freehand drawings, and shapes such as rectangles, ellipses, and lines.
+The Image Editor allows adding annotations to the image, including text, freehand drawings, and shapes like rectangles, ellipses, arrows, paths, and lines. This gives the flexibility to mark up the image with notes, sketches, and other visual elements as needed. These annotation tools can help to communicate and share ideas more effectively. 
 
-## Text
+## Text annotation 
 
-The Text annotation can be inserted and customized by changing its color, font family, font size, and font styles such as bold and italic. The text annotation can be made by either using a toolbar or `drawText` method.
+The Text annotation feature in the Image Editor provides the capability to add and customize labels, captions, and other text elements directly onto the image. With this feature, you can easily insert text at specific locations within the image and customize various aspects of the text to meet your requirements. 
 
-In `drawText` method, the text annotation can be inserted by specifying the text, font family, font size, and font styles. The `drawText` method has the following parameters.
+You have control over the customization options including text content, font family, font style and font size for the text annotation. 
 
-* x - Specifies x-coordinate of the text
+### Add a text 
 
-* y - Specifies y-coordinate of the text
+The DrawText method in the Image Editor allows you to insert a text annotation into the image with specific customization options. This method accepts the following parameters: 
 
-* text - Specifies the text to add to an image
+* x: Specifies the x-coordinate of the text, determining its horizontal position within the image. 
 
-* fontFamily - Specifies the font family of the text.
+* y: Specifies the y-coordinate of the text, determining its vertical position within the image. 
 
-* fontSize - Specifies the font size of the text.
+* text: Specifies the actual text content to be added to the image. 
 
-* bold - Specifies whether the text is bold or not.
+* fontFamily: Specifies the font family of the text, allowing you to choose a specific typeface or style for the text. 
 
-* italic - Specifies whether the text is italic or not.
+* fontSize: Specifies the font size of the text, determining its relative size within the image. 
 
-* color - Specifies font color of the text.
+* bold: Specifies whether the text should be displayed in bold style. Set to true for bold text, and false for regular text. 
 
-In the toolbar, the text annotation can be inserted by clicking the Annotation dropdown button and picking the Add Text option from that popup. Once the text is inserted, the contextual toolbar will be enabled for customizing its color, font family, font size, and font styles such as bold and italic.
+* italic: Specifies whether the text should be displayed in italic style. Set to true for italic text, and false for regular text. 
 
-In the following example, you can using the drawText method in the button click event..
+* color: Specifies the font color of the text, allowing you to define the desired color using appropriate color values or names.
+
+By utilizing the DrawText method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
+
+Here is an example of adding a text in a button click using DrawText method. 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -65,15 +69,114 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-text.jpg)
 
-## Freehand Draw
+### Multiline text 
 
-This annotation can be customized by changing the pen color and stroke width and it can be made by either using a toolbar or the `freeHandDraw` method.
+The DrawText method in the Image Editor component is commonly used to insert text annotations into an image. If the provided text parameter contains a newline character (\n), the text will be automatically split into multiple lines, with each line appearing on a separate line in the annotation. 
 
-The `freeHandDraw` method is used to enable or disable a freehand drawing option in an Image Editor.
+Here is an example of adding a multiline text in a button click using DrawText method.
 
-In the toolbar, the freehand draw annotation can be inserted by clicking the Annotation dropdown button and picking the Pen option from that popup. Once the freehand draw is enabled, the contextual toolbar will be enabled.
+{% if page.publishingplatform == "aspnet-core" %}
 
-In the following example, the `freeHandDraw` method is used to toggle the freehand drawings.
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/multi-line-text/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/multi-line-text/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/multi-line-text/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/multi-line-text/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-multi-line-text.jpg)
+
+### Delete a text 
+
+The Image Editor component provides the DeleteShape method, which allows you to remove a text annotation from the image editor. To use this method, you need to pass the shapeId of the annotation as a parameter. 
+
+The shapeId is a unique identifier assigned to each text annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired text element. By specifying the shapeId associated with the text annotation you want to remove, you can effectively delete it from the image editor. 
+
+Here is an example of deleting a text in a button click using DeleteShape method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/delete-text/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/delete-text/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/delete-text/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/delete-text/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-delete-text.jpg)
+
+### Customize font family and text color 
+
+The ShapeChanging event in the Image Editor component is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
+
+By leveraging the ShapeChanging event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor component. 
+
+Here is an example of changing the text’s color and its font family using the ShapeChanging event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/customize-font-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/customize-font-color/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/customize-font-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/customize-font-color/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-customize-font-color.jpg)
+
+## Freehand drawing 
+
+The Freehand Draw annotation tool in the Image Editor component is a versatile feature that allows users to draw and sketch directly on the image using mouse or touch input. This tool provides a flexible and creative way to add freehand drawings or annotations to the image. 
+
+Here is an example of using the EnableFreehandDraw method in a button click event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -102,33 +205,158 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-freehand-draw.jpg)
 
+### Adjust the stroke width and color 
+
+The `ShapeChanging` event in the Image Editor component is triggered when a freehand annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the freehand annotation’s color and stroke width by adjusting the relevant properties. 
+
+By leveraging the ShapeChanging event, you can enhance the customization options for freehand annotations and provide a more tailored and interactive experience within the Image Editor component. 
+
+Here is an example of changing the freehand draw stroke width and color using the ShapeChanging event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/adjust-stroke-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/adjust-stroke-color/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/adjust-stroke-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/adjust-stroke-color/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Delete a freehand drawing 
+
+The Image Editor component provides the DeleteShape method, which allows you to remove a freehand annotation from the image editor. To use this method, you need to pass the shapeId of the annotation as a parameter. 
+
+The shapeId is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the shapeId associated with the freehand annotation you want to remove, you can effectively delete it from the image editor. 
+
+Here is an example of deleting a freehand annotation in a button click using DeleteShape method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/delete-freehand-draw/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/delete-freehand-draw/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/delete-freehand-draw/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/delete-freehand-draw/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Shapes
 
-The shape annotations include rectangles, ellipses, and lines. The border color, fill color, and border width of the shapes can be customized.
+The Image Editor component provides the ability to add shape annotations to an image. These shape annotations include rectangles, ellipses, arrows, paths, and lines, allowing you to highlight, emphasize, or mark specific areas or elements within the image. 
 
-### Rectangle
+### Add a rectangle /ellipse / line / arrow / path
 
-The Rectangle shape can be inserted and customized by changing its border color, fill color, and border width. The Rectangle shape can be made by either using a toolbar or the `drawRectangle` method.
+The Image Editor component provides two ways to add rectangle annotations to an image: using the toolbar or the [`drawRectangle`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawrectangle) method. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context. 
 
-In the `drawRectangle` method, the rectangle shape can be inserted by specifying fillcolor, stroke color and stroke width. The `drawRectangle` method has the following parameters.
+The [`drawRectangle`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawrectangle) method in the Image Editor component takes seven parameters to define the properties of the rectangle annotation: 
 
-*  x - Specifies the x-coordinate of the rectangle.
+* x: Specifies the x-coordinate of the top-left corner of the rectangle. 
 
-*  y - Specifies the y-coordinate of the rectangle.
+* y: Specifies the y-coordinate of the top-left corner of the rectangle. 
 
-*  width - Specifies the width of the rectangle.
+* width: Specifies the width of the rectangle. 
 
-*  height - Specifies the height of the rectangle.
+* height: Specifies the height of the rectangle. 
 
-*  strokeWidth - Specifies the stroke width of the rectangle.
+* strokeWidth: Specifies the stroke width of the rectangle's border. 
 
-*  strokeColor - Specifies the stroke color of the rectangle.
+* strokeColor: Specifies the stroke color of the rectangle's border. 
 
-*  fillColor - the fill color of the rectangle.
+* fillColor: Specifies the fill color of the rectangle.
 
-In the toolbar, the Rectangle shape can be inserted by clicking the Annotation dropdown button and picking the Rectangle option from that popup. Once the shape is inserted, the contextual toolbar will be enabled for customizing its fill color, stroke color, and stroke width.
+The Image Editor component offers two methods to add ellipse annotations to an image: utilizing the toolbar or using the [`drawEllipse`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawellipse) method. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-In the following example, the `drawRectangle` method is used to draw the rectangle.
+The [`drawEllipse`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawellipse) method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+
+* x: Specifies the x-coordinate of the center of the ellipse. 
+
+* y: Specifies the y-coordinate of the center of the ellipse. 
+
+* radiusX: Specifies the horizontal radius (radiusX) of the ellipse. 
+
+* radiusY: Specifies the vertical radius (radiusY) of the ellipse. 
+
+* strokeWidth: Specifies the width of the ellipse's stroke (border). 
+
+* strokeColor: Specifies the color of the ellipse's stroke (border). 
+
+* fillColor: Specifies the fill color of the ellipse. 
+
+The Image Editor component offers two methods to add line annotations to an image: utilizing the toolbar or using the [`drawLine`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawline) method. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image. 
+
+The [`drawLine`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawline) method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+
+* startX - Specifies the x-coordinate of the start point. 
+
+* startY - Specifies the y-coordinate of the start point. 
+
+* endX - Specifies the x-coordinate of the end point. 
+
+* endY - Specifies the y-coordinate of the end point. 
+
+* strokeWidth - Specifies the stroke width of the line. 
+
+* strokeColor - Specifies the stroke color of the line. 
+
+
+The Image Editor component offers two methods to add arrow annotations to an image: utilizing the toolbar or using the ['drawArrow'](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawarrow) method. Arrow annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+
+The ['drawArrow'](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawarrow) method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+
+* startX - Specifies the x-coordinate of the start point. 
+
+* startY - Specifies the y-coordinate of the start point. 
+
+* endX - Specifies the x-coordinate of the end point. 
+
+* endY - Specifies the y-coordinate of the end point. 
+
+* strokeWidth - Specifies the stroke width of the arrow. 
+
+* strokeColor - Specifies the stroke color of the arrow. 
+
+* arrowStart - Specifies the arrowhead as ImageEditorArrowHeadType at the start of arrow.
+
+* arrowEnd - Specifies the arrowhead as ImageEditorArrowHeadType at the end of the arrow.
+
+The Image Editor component offers two methods to add path annotations to an image: utilizing the toolbar or using the ['drawPath'](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawpath) method. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+
+The ['drawPath'](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawpath) method in the Image Editor component takes three parameters to define the properties of the ellipse annotation: 
+
+* points - Specifies collection of x and y coordinates as ImageEditorPoint to draw a path. 
+
+* strokeWidth - Specifies the stroke width of the path. 
+
+* strokeColor - Specifies the stroke color of the path. 
+
+Here is an example of inserting rectangle, ellipse, arrow, path, and line in a button click event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -153,42 +381,22 @@ In the following example, the `drawRectangle` method is used to draw the rectang
 {% endtabs %}
 {% endif %}
 
-Output be like the below.
+## Delete a shape 
 
-![ImageEditor Sample](images/image-editor-rectangle.jpg)
+The Image Editor component provides the `deleteShape` method, which allows you to remove a shape annotation from the image editor. To use this method, you need to pass the shapeId of the annotation as a parameter. 
 
-### Ellipse
+The shapeId is a unique identifier assigned to each shape annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the shapeId associated with the shape annotation you want to remove, you can effectively delete it from the image editor. 
 
-The Ellipse shape can be inserted and customized by changing its border color, fill color, and border width. The Ellipse shape can be made by either using a toolbar or the `drawEllipse` method.
-
-In the `drawEllipse` method, the ellipse shape can be inserted by specifying fillcolor, stroke color and stroke width. The `drawEllipse` method has the following parameters.
-
-* x - Specifies the x-coordinate of the ellipse.
-
-* y - Specifies the y-coordinate of the ellipse.
-
-* radiusX - the radius x point for the ellipse.
-
-* radiusY - the radius y point for the ellipse.
-
-* strokeWidth - the stroke width of the ellipse.
-
-* strokeColor - the stroke color of the ellipse.
-
-* fillColor - the fill color of the ellipse.
-
-In the toolbar, the Ellipse shape can be inserted by clicking the Annotation dropdown button and picking the Ellipse option from that popup. Once the shape is inserted, the contextual toolbar will be enabled for customizing its fill color, stroke color, and stroke width.
-
-In the following example, the `drawEllipse` method is used to draw the ellipse.
+Here is an example of deleting rectangle, ellipse, arrow, path, and line in a button click event. 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/annotation/ellipse/tagHelper %}
+{% include code-snippet/image-editor/annotation/delete-shape/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/annotation/ellipse/default.cs %}
+{% include code-snippet/image-editor/annotation/delete-shape/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -196,63 +404,10 @@ In the following example, the `drawEllipse` method is used to draw the ellipse.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/annotation/ellipse/razor %}
+{% include code-snippet/image-editor/annotation/delete-shape/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/annotation/ellipse/default.cs %}
+{% include code-snippet/image-editor/annotation/delete-shape/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-Output be like the below.
-
-![ImageEditor Sample](images/image-editor-ellipse.jpg)
-
-### Line
-
-The line shape can be inserted and customized by changing its border color, and border width. The Line shape can be made by either using a toolbar or the `drawLine` method.
-
-In the `drawLine` method, the line shape can be inserted by specifying, stroke color and stroke width. The `drawLine` method has the following parameters:
-
-*  startX – Specifies start point x-coordinate of line.
-
-*  startY – Specifies start point y-coordinate of line.
-
-*  endX - Specifies endpoint x-coordinates of line.
-
-*  endY - Specifies end point y-coordinates of the line.
-
-*  strokeWidth - Specifies the stroke width of the line.
-
-*  strokeColor - Specifies the stroke color of the line.
-
-In the toolbar, the Line shape can be inserted by clicking the Annotation dropdown button and picking the Line option from that popup. Once the line shape is inserted, the contextual toolbar will be enabled for customizing its stroke color, and stroke width.
-
-In the following example, the `drawLine` method is used to draw the line.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/annotation/line/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/annotation/line/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/annotation/line/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/annotation/line/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-Output be like the below.
-
-![ImageEditor Sample](images/image-editor-line.jpg)
