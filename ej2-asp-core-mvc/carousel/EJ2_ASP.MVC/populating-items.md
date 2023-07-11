@@ -78,7 +78,7 @@ Using the `prev` or `next` public method of the Carousel component, you can swit
 
 ## Partial visible slides
 
-The Carousel component supports to show one complete slide and a partial view of adjacent (previous and next) slides at the same time. You can enable or disable the partial slides using the [`partialVisible`](../api/carousel/#partialVisible) property.
+The Carousel component supports to show one complete slide and a partial view of adjacent (previous and next) slides at the same time. You can enable or disable the partial slides using the [`partialVisible`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.navigations.carousel.html#Syncfusion_EJ2_Navigations_Carousel_PartialVisible) property.
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/partial-visible/razor %}
