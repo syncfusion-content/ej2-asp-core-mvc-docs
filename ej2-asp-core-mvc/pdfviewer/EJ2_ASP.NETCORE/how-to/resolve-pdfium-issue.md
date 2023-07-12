@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Resolve the Pdfium issue
+# Resolve the PDFium issue
 
 The issue, “The type initializer for 'Syncfusion.EJ2.PdfViewer.PdfiumNative' threw an exception” is due to the write access permission denied in the environment. The pdfium.dll will be created based on the operating system at the runtime. Due to the denial of permission, the pdfium.dll file couldn't have been created. So, copy the below x64 and x86 folders and paste them inside the folder into your project to resolve the issue or enable the write permission for that folder.
 
@@ -27,7 +27,7 @@ N> Provide this path in the Load method of the PDFViewerController.cs
 N> PdfRenderer PdfRenderer = new PdfRenderer();
 <br/> PdfRenderer.ReferencePath = @"C:/";
 
-## Steps to refer the Pdfium.dll
+## Steps to refer the PDFium.dll
 
 1. Extract the given file (Pdfium folder) and copy it in the sample’s root directory (parallel to Controllers folder)
 
@@ -46,7 +46,7 @@ Also, install the below package, then build and run the project. This will work 
 
 Following these steps should resolve the issue.
 
-## Steps to resolve the pdfium issue in Linux environment 
+## Steps to resolve the PDFium issue in Linux environment 
 
 * The issue, “The type initializer for ‘Syncfusion.EJ2.PdfViewer.PdfiumNative’ threw an exception” occurs due to the missing of pdfium dependency in the Linux environment. To resolve this, Execute the following commands one by one to install the pdfium dependency package in the Linux machine.
 
@@ -59,7 +59,7 @@ Following these steps should resolve the issue.
 
 ```
 
-## Steps to resolve the pdfium issue in docker environment 
+## Steps to resolve the PDFium issue in docker environment 
 
 * The issue, “The type initializer for ‘Syncfusion.EJ2.PdfViewer.PdfiumNative’ threw an exception” occurs due to the missing of pdfium dependency in the docker environment. To resolve this, Incorporate the following commands into your Dockerfile to install the pdfium dependency.
 
