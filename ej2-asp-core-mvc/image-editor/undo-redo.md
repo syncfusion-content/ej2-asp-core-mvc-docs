@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Undo Redo in React Image editor component | Syncfusion
-description: Learn here all about Undo Redo in Syncfusion React Image editor component of Syncfusion Essential JS 2 and more.
+title: Undo Redo in Image Editor control | Syncfusion
+description: Learn here all about Undo Redo in Syncfusion Image Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Undo Redo 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Undo Redo in React Image editor component
+# Undo Redo in the ##Platform_Name## Image Editor control
 
 The undo and redo functionalities provide a way to reverse and repeat editing actions performed on an image. These features are essential for maintaining control and flexibility during the editing process. 
 

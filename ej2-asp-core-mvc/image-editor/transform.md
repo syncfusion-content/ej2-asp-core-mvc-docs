@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Transform in Image Editor control
+# Transform in the ##Platform_Name## Image Editor control
 
 The Image Editor provides a range of transformation options for manipulating both the image and its annotations. These options include rotation, flipping, zooming, and panning. These transformations offer flexibility in adjusting the image and enhancing its visual appearance. 
 
@@ -82,7 +82,7 @@ Output be like the below.
 
 ## Zoom in or out an image 
 
-The Image Editor allows to magnify an image using the [`zoom`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#zoom) method. This method allows one to zoom in and out of the image and provides a more detailed view of the image's hidden areas. This method takes two parameters to perform zooming. 
+The Image Editor allows to magnify an image using the `zoom` method. This method allows one to zoom in and out of the image and provides a more detailed view of the image's hidden areas. This method takes two parameters to perform zooming. 
 
 * zoomFactor - Specifies a value to controlling the level of magnification applied to the image. 
 
@@ -183,9 +183,9 @@ The Image Editor allows to pan an image when the image exceeds the canvas size o
 {% endtabs %}
 {% endif %}
 
-### Pan event 
+### Panning event 
 
-The `panEventArgs` event is activated when the user begins dragging the image within the canvas, and the OnPanEnd event is triggered once the panning action is completed. These events provide an opportunity to perform specific actions, such as updating the image's position, in response to the panning gesture. And these event uses `panEventArgs` to handle the action the panning action when the user starts dragging the image. 
+The `panning` event is activated when the user begins dragging the image within the canvas. This event provide an opportunity to perform specific actions, like adjusting the position of an image, in response to the gesture of panning. And these event uses `panEventArgs` to handle the panning action when the user starts dragging the image. 
 
 The parameter available in the `panEventArgs` events are, 
 
@@ -197,7 +197,7 @@ The parameter available in the `panEventArgs` events are,
 
 ## Zooming event 
 
-The `zooming` event is triggered when performing zooming the image. This event can be used to perform certain actions, such as updating the position of the image. This event is passed an object that contains information about the zooming event, such as the amount of zooming performed. 
+The `zooming` event is triggered when performing zooming the image. This event can be used to perform certain actions, such as updating the position of the image. This event is passed an object that contains information about the zooming event, such as the amount of zooming performed. And this event uses `ZoomEventArgs` to handle the zooming action in the image.
 
 The parameter available in the Zooming event is, 
 
@@ -213,7 +213,7 @@ The parameter available in the Zooming event is,
 
 ## Rotating event 
 
-The `rotating` event is triggered when performing rotating the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. 
+The `rotating` event is triggered when performing rotating the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. And this event uses `RotateEventArgs` to handle the rotating action in the image.
 
 The parameter available in the Rotating event is, 
 
@@ -225,7 +225,7 @@ RotateEventArgs.cancel – Specifies a boolean value to cancel the rotating acti
 
 ## Flipping event 
 
-The `flipping` event is triggered when performing flipping the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. 
+The `flipping` event is triggered when performing flipping the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. And this event uses `FlipEventArgs` to handle the flipping action in the image.
 
 The parameter available in the `flipping` event is, 
 
