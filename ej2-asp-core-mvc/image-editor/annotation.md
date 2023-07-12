@@ -8,19 +8,19 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Annotation in Image Editor control
+# Annotation in the Image Editor control
 
 The Image Editor allows adding annotations to the image, including text, freehand drawings, and shapes like rectangles, ellipses, arrows, paths, and lines. This gives the flexibility to mark up the image with notes, sketches, and other visual elements as needed. These annotation tools can help to communicate and share ideas more effectively. 
 
 ## Text annotation 
 
-The Text annotation feature in the Image Editor provides the capability to add and customize labels, captions, and other text elements directly onto the image. With this feature, you can easily insert text at specific locations within the image and customize various aspects of the text to meet your requirements. 
+The text annotation feature in the Image Editor provides the capability to add and customize labels, captions, and other text elements directly onto the image. With this feature, you can easily insert text at specific locations within the image and customize various aspects of the text to meet your requirements. 
 
 You have control over the customization options including text content, font family, font style and font size for the text annotation. 
 
 ### Add a text 
 
-The DrawText method in the Image Editor allows you to insert a text annotation into the image with specific customization options. This method accepts the following parameters: 
+The `drawText` method in the Image Editor allows you to insert a text annotation into the image with specific customization options. This method accepts the following parameters: 
 
 * x: Specifies the x-coordinate of the text, determining its horizontal position within the image. 
 
@@ -40,7 +40,7 @@ The DrawText method in the Image Editor allows you to insert a text annotation i
 
 By utilizing the DrawText method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
-Here is an example of adding a text in a button click using DrawText method. 
+Here is an example of adding a text in a button click using `drawText` method. 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,9 +71,9 @@ Output be like the below.
 
 ### Multiline text 
 
-The DrawText method in the Image Editor component is commonly used to insert text annotations into an image. If the provided text parameter contains a newline character (\n), the text will be automatically split into multiple lines, with each line appearing on a separate line in the annotation. 
+The `drawText` method in the Image Editor control is commonly used to insert text annotations into an image. If the provided text parameter contains a newline character (\n), the text will be automatically split into multiple lines, with each line appearing on a separate line in the annotation. 
 
-Here is an example of adding a multiline text in a button click using DrawText method.
+Here is an example of adding a multiline text in a button click using `drawText` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -104,11 +104,13 @@ Output be like the below.
 
 ### Delete a text 
 
-The Image Editor component provides the DeleteShape method, which allows you to remove a text annotation from the image editor. To use this method, you need to pass the shapeId of the annotation as a parameter. 
+The `deleteShape` method in the Image Editor control allows you to remove a text annotation from the image editor. To use this method, you need to pass the `shapeId` of the annotation as a parameter.
 
-The shapeId is a unique identifier assigned to each text annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired text element. By specifying the shapeId associated with the text annotation you want to remove, you can effectively delete it from the image editor. 
+The `shapeId` is a unique identifier assigned to each text annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired text element. By specifying the `shapeId` associated with the text annotation you want to remove, you can effectively delete it from the image editor.
 
-Here is an example of deleting a text in a button click using DeleteShape method.
+To retrieve the inserted text annotations, you can utilize the `getShapeSetting` method, which provides a collection of annotations represented by `ShapeSettings`. This method allows you to access and work with the annotations that have been inserted into the image.
+
+Here is an example of deleting a text in a button click using `deleteShape` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -139,9 +141,9 @@ Output be like the below.
 
 ### Customize font family and text color 
 
-The ShapeChanging event in the Image Editor component is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
+The ShapeChanging event in the Image Editor control is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
 
-By leveraging the ShapeChanging event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor component. 
+By leveraging the ShapeChanging event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor control. 
 
 Here is an example of changing the text’s color and its font family using the ShapeChanging event.
 
@@ -174,9 +176,11 @@ Output be like the below.
 
 ## Freehand drawing 
 
-The Freehand Draw annotation tool in the Image Editor component is a versatile feature that allows users to draw and sketch directly on the image using mouse or touch input. This tool provides a flexible and creative way to add freehand drawings or annotations to the image. 
+The Freehand Draw annotation tool in the Image Editor control is a versatile feature that allows users to draw and sketch directly on the image using mouse or touch input. This tool provides a flexible and creative way to add freehand drawings or annotations to the image.
 
-Here is an example of using the EnableFreehandDraw method in a button click event.
+The `freehandDraw` method is used to enable or disable the freehand drawing option in the Image Editor control. 
+
+Here is an example of using the `freeHandDraw` method in a button click event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -207,9 +211,9 @@ Output be like the below.
 
 ### Adjust the stroke width and color 
 
-The `ShapeChanging` event in the Image Editor component is triggered when a freehand annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the freehand annotation’s color and stroke width by adjusting the relevant properties. 
+The `shapeChanging` event in the Image Editor control is triggered when a freehand annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the freehand annotation's color and stroke width by adjusting the relevant properties. 
 
-By leveraging the ShapeChanging event, you can enhance the customization options for freehand annotations and provide a more tailored and interactive experience within the Image Editor component. 
+By leveraging the ShapeChanging event, you can enhance the customization options for freehand annotations and provide a more tailored and interactive experience within the Image Editor control. 
 
 Here is an example of changing the freehand draw stroke width and color using the ShapeChanging event.
 
@@ -238,9 +242,11 @@ Here is an example of changing the freehand draw stroke width and color using th
 
 ### Delete a freehand drawing 
 
-The Image Editor component provides the DeleteShape method, which allows you to remove a freehand annotation from the image editor. To use this method, you need to pass the shapeId of the annotation as a parameter. 
+The `deleteShape` method in the Image Editor allows you to remove a freehand annotation from the image editor. To use this method, you need to pass the `shapeId` of the annotation as a parameter.
 
-The shapeId is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the shapeId associated with the freehand annotation you want to remove, you can effectively delete it from the image editor. 
+The `shapeId` is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the `shapeId` associated with the freehand annotation you want to remove, you can effectively delete it from the image editor.
+
+To retrieve the inserted freehand annotations, you can utilize the `getShapeSetting` method, which provides a collection of annotations represented by `ShapeSettings`. This method allows you to access and work with the annotations that have been inserted into the image.
 
 Here is an example of deleting a freehand annotation in a button click using DeleteShape method.
 
@@ -267,15 +273,15 @@ Here is an example of deleting a freehand annotation in a button click using Del
 {% endtabs %}
 {% endif %}
 
-## Shapes
+## Shape annotation
 
-The Image Editor component provides the ability to add shape annotations to an image. These shape annotations include rectangles, ellipses, arrows, paths, and lines, allowing you to highlight, emphasize, or mark specific areas or elements within the image. 
+The Image Editor control provides the ability to add shape annotations to an image. These shape annotations include rectangles, ellipses, arrows, paths, and lines, allowing you to highlight, emphasize, or mark specific areas or elements within the image. 
 
 ### Add a rectangle /ellipse / line / arrow / path
 
-The Image Editor component provides two ways to add rectangle annotations to an image: using the toolbar or the [`drawRectangle`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawrectangle) method. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context. 
+The `drawRectangle` method is used to insert a rectangle to the Image Editor control. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context.
 
-The [`drawRectangle`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawrectangle) method in the Image Editor component takes seven parameters to define the properties of the rectangle annotation: 
+The `drawRectangle` method in the Image Editor control takes seven parameters to define the properties of the rectangle annotation: 
 
 * x: Specifies the x-coordinate of the top-left corner of the rectangle. 
 
@@ -291,9 +297,9 @@ The [`drawRectangle`](https://ej2.syncfusion.com/react/documentation/api/image-e
 
 * fillColor: Specifies the fill color of the rectangle.
 
-The Image Editor component offers two methods to add ellipse annotations to an image: utilizing the toolbar or using the [`drawEllipse`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawellipse) method. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+The `drawEllipse` method is used to insert a ellipse to the Image Editor control. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The [`drawEllipse`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawellipse) method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+The `drawEllipse`method in the Image Editor control takes seven parameters to define the properties of the ellipse annotation: 
 
 * x: Specifies the x-coordinate of the center of the ellipse. 
 
@@ -309,9 +315,9 @@ The [`drawEllipse`](https://ej2.syncfusion.com/react/documentation/api/image-edi
 
 * fillColor: Specifies the fill color of the ellipse. 
 
-The Image Editor component offers two methods to add line annotations to an image: utilizing the toolbar or using the [`drawLine`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawline) method. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image. 
+The `drawLine` method is used to insert a line to the Image Editor control. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.  
 
-The [`drawLine`](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawline) method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+The `drawLine` method in the Image Editor control takes seven parameters to define the properties of the ellipse annotation: 
 
 * startX - Specifies the x-coordinate of the start point. 
 
@@ -326,9 +332,9 @@ The [`drawLine`](https://ej2.syncfusion.com/react/documentation/api/image-editor
 * strokeColor - Specifies the stroke color of the line. 
 
 
-The Image Editor component offers two methods to add arrow annotations to an image: utilizing the toolbar or using the ['drawArrow'](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawarrow) method. Arrow annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+The `drawArrow` method is used to insert a arrow to the Image Editor control. Arrow annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The ['drawArrow'](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawarrow) method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+The `drawArrow` method in the Image Editor control takes three parameters to define the properties of the ellipse annotation: 
 
 * startX - Specifies the x-coordinate of the start point. 
 
@@ -346,9 +352,9 @@ The ['drawArrow'](https://ej2.syncfusion.com/react/documentation/api/image-edito
 
 * arrowEnd - Specifies the arrowhead as ImageEditorArrowHeadType at the end of the arrow.
 
-The Image Editor component offers two methods to add path annotations to an image: utilizing the toolbar or using the ['drawPath'](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawpath) method. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+The `drawPath` method is used to insert a path to the Image Editor control. Path annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The ['drawPath'](https://ej2.syncfusion.com/react/documentation/api/image-editor/#drawpath) method in the Image Editor component takes three parameters to define the properties of the ellipse annotation: 
+The `drawPath` method in the Image Editor control takes three parameters to define the properties of the ellipse annotation: 
 
 * points - Specifies collection of x and y coordinates as ImageEditorPoint to draw a path. 
 
@@ -383,9 +389,11 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 
 ## Delete a shape 
 
-The Image Editor component provides the `deleteShape` method, which allows you to remove a shape annotation from the image editor. To use this method, you need to pass the shapeId of the annotation as a parameter. 
+The `deleteShape` method in the Image Editor allows you to remove a shape annotation from the image editor. To use this method, you need to pass the `shapeId` of the annotation as a parameter. 
 
-The shapeId is a unique identifier assigned to each shape annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the shapeId associated with the shape annotation you want to remove, you can effectively delete it from the image editor. 
+The `shapeId` is a unique identifier assigned to each shape annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the `shapeId` associated with the shape annotation you want to remove, you can effectively delete it from the image editor.
+
+To retrieve the inserted shape annotations, you can utilize the `getShapeSetting` method, which provides a collection of annotations represented by `ShapeSettings`. This method allows you to access and work with the annotations that have been inserted into the image.
 
 Here is an example of deleting rectangle, ellipse, arrow, path, and line in a button click event. 
 
