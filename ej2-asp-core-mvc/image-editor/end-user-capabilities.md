@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# End User Capabilities
+# End User Capabilities in the ##Platform_Name## Image Editor control
 
 The following operations are available for end-users and the same is explained briefly in these sections.
 
