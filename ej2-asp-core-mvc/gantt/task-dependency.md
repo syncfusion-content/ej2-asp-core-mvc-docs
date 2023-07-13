@@ -236,3 +236,36 @@ The following code example shows how to enable the predecessor validation dialog
 In this case, if the user dragging action violated the predecessor type then the following dialog will be rendered to perform operation.
 
 ![Alt text](images/validateWithDialog.png)
+
+## Show/Hide dependency line by dynamic
+
+By default, the dependency line is rendered in the Gantt Chart. However, if you want to show or hide the dependency line, add a dynamic button by using the change event and getting the class `.e-gantt-dependency-view-container.` Then, set the `visibility` style to `hidden.`
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/predecessor/showhide/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="showHide.cs" %}
+{% include code-snippet/gantt/predecessor/showhide/showHide.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/predecessor/showhide/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="showHide.cs" %}
+{% include code-snippet/gantt/predecessor/showhide/showHide.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+The following screen shot dependencyline hide using dynamic button.
+
+![Alt text](images/predecessorWithOffset.png)
