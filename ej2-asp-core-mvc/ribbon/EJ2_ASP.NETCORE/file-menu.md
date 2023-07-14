@@ -3,7 +3,7 @@ layout: post
 title: File menu in ##Platform_Name## Ribbon Control | Syncfusion
 description: Learn here all about File menu in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: File menu
+control: Ribbon
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
