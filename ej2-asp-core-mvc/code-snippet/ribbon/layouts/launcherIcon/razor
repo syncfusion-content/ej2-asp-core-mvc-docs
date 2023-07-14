@@ -1,0 +1,28 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.ShowLauncherIcon(true).Collections(collection =>
+        {
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-cut").Content("Cut");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-copy").Content("Copy");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-format-painter").Content("Format Painter");
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
