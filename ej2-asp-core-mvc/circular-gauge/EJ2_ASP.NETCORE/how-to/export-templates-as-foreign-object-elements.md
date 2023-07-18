@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print And Export in ##Platform_Name## Circular Gauge Component
+title: Export in ##Platform_Name## Circular Gauge Component
 description: Learn here all about Circular Gauge Export with Annotations in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Circular Gauge export with annotations
