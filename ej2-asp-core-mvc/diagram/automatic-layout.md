@@ -309,8 +309,6 @@ The layout’s [`springLength`](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% endtabs %}
 {% endif %}
 
-
-
 ## Mind Map layout
 
 A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `MindMap`.
