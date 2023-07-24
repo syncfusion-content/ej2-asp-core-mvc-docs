@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Link in ##Platform_Name## Document Editor Component | Syncfusion
+title: Link in ##Platform_Name## Document Editor Component
 description: Learn here all about Link in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Link
@@ -9,13 +9,17 @@ documentation: ug
 ---
 
 
-# Hyperlink in Document Editor Component
+# Hyperlink
 
 Document editor supports hyperlink field. You can link a part of the document content to Internet or file location, mail address, or any text within the document.
 
 ## Navigate a hyperlink
 
 Document editor triggers ‘requestNavigate’ event whenever user clicks Ctrl key or tap a hyperlink within the document. This event provides necessary details about link type, navigation URL, and local URL (if any) as arguments, and allows to easily customize the hyperlink navigation functionality.
+
+### Add the requestNavigate event for DocumentEditor
+
+The following example illustrates how to add requestNavigate event for DocumentEditor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,6 +45,32 @@ Document editor triggers ‘requestNavigate’ event whenever user clicks Ctrl k
 {% endif %}
 
 
+### Add the requestNavigate event for DocumentEditorContainer component
+
+The following example illustrates how to add requestNavigate event for DocumentEditorContainer component.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/link/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor/link/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/link/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor/link/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 If the selection is in hyperlink, trigger this event by calling ‘navigateHyperlink’ method of ‘Selection’ instance.
 
@@ -58,13 +88,13 @@ documenteditor .selection.copyHyperlink();
 
 ## Add hyperlink
 
-To create a basic hyperlink in the document, press `ENTER` / `SPACEBAR` / `SHIFT + ENTER` / `TAB` key after typing the address, for instance [`http://www.google.com`](http://www.google.com). Document editor automatically converts this address to a hyperlink field. The text can be considered as a valid URL if it starts with any of the following.
+To create a basic hyperlink in the document, press `ENTER` / `SPACEBAR` / `SHIFT + ENTER` / `TAB` key after typing the address, for instance `http://www.google.com`. Document editor automatically converts this address to a hyperlink field. The text can be considered as a valid URL if it starts with any of the following.
 
-> `<http://>`<br>
-> `<https://>`<br>
-> `file:///`<br>
-> `www.`<br>
-> `mailto:`<br>
+N> `<http://>`<br>
+<br/> `<https://>`<br>
+<br/> `file:///`<br>
+<br/> `www.`<br>
+<br/> `mailto:`<br>
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -97,7 +127,7 @@ You can customize the screen tip text for the hyperlink by using below sample co
 documenteditor.insertHyperlink('https://www.google.com', 'Google', '<<Screen tip text>>');
 ```
 
-Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog)
+Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog/)
 
 ![Add or modify the screen tip text for hyperlinks in a Word document.](images/screentip.png)
 

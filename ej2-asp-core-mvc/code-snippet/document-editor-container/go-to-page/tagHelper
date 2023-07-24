@@ -3,12 +3,12 @@
 </div>
 
 <script>
-  var documenteditor;
-  var container;
-  function onCreated() {
-      var documenteditorElement = document.getElementById("container");
-      container = documenteditorElement.ej2_instances[0];
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
         // To move selection to page number 2
         container.documentEditor.selection.goToPage(2);
-  }
+    }
 </script>

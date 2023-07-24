@@ -17,7 +17,7 @@ The Scheduler supports exporting all its appointments both to an Excel or ICS ex
 
 The Scheduler allows you to export all its events into an Excel format file by using the [`exportToExcel`] client-side method. By default, it exports all the default fields of Scheduler mapped through `eventSettings` property.
 
-> Before you start with excel exporting functionality, you need to import and inject the `ExcelExport` module from the `'@syncfusion/ej2-schedule'` package using the `Inject` method of Scheduler.
+N> Before you start with excel exporting functionality, you need to import and inject the `ExcelExport` module from the `'@syncfusion/ej2-schedule'` package using the `Inject` method of Scheduler.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -106,7 +106,7 @@ By default, the Scheduler exports recurring events as a single data by exporting
 
 By default, the whole event collection bound to the Scheduler gets exported as an excel file. To export only specific events of Scheduler or some custom event collection, you need to pass those custom data collection as a parameter to the `exportToExcel` method as shown in this following example, through the `customData` option.
 
-> By default, the event data are taken from Scheduler dataSource.
+N> By default, the event data are taken from Scheduler dataSource.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -395,4 +395,4 @@ You can print the Schedule element based on your needs using the `print` method 
 
 
 
-> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

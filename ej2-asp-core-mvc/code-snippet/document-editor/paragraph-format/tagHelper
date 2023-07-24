@@ -1,12 +1,11 @@
 <div id="toolbar"></div>
 <div id="documenteditor" style="width:100%;height:100%" >
-<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableEditorHistory=true enableSfdtExport=true enableContextMenu=true id="container"></ejs-documenteditor>
+    <ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableEditorHistory=true enableSfdtExport=true enableContextMenu=true id="container"></ejs-documenteditor>
 </div>
 
 <script>
     var documenteditor;
     document.addEventListener('DOMContentLoaded', function () {
-
         documenteditor = document.getElementById("container").ej2_instances[0];
         documenteditor.resize();
         updateContainerSize();

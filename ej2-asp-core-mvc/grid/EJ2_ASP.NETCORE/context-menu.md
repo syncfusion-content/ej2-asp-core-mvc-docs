@@ -90,7 +90,7 @@ The custom context menu items can be added by defining the [`contextMenuItems`](
 
 
 
-> You can hide or show an item in context menu for specific area inside of grid by defining the **Target** property.
+N> You can hide or show an item in context menu for specific area inside of grid by defining the **Target** property.
 
 ## Show context menu on left click
 

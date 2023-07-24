@@ -17,7 +17,7 @@ On Scheduler cells, you can display the menu items such as `New Event`, `New Rec
 
 The deletion of appointments can be done by using the `deleteEvent` public method. Also, the `SelectedDate` property can be used to navigate between different dates.
 
-> You can also display custom menu options on Scheduler cells and appointments. Context menu will open on tap-hold in responsive mode.
+N> You can also display custom menu options on Scheduler cells and appointments. Context menu will open on tap-hold in responsive mode.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,4 +44,4 @@ The deletion of appointments can be done by using the `deleteEvent` public metho
 
 
 
-> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

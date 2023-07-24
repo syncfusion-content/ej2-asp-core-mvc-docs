@@ -12,7 +12,7 @@ documentation: ug
 
 Using the `drillThrough` event in the pivot table, you can define the edit type of a particular column in the grid present inside the drill-through dialog. To do so, check the column name in the `drillThrough` event and then specify the edit type of that column using the `gridColumns.editType` event argument.
 
-> The `gridColumns.editType` property must be set based on the column's data type. For example, the string data type will not be applicable for the numeric text box edit type.
+N> The `gridColumns.editType` property must be set based on the column's data type. For example, the string data type will not be applicable for the numeric text box edit type.
 
 * `NumericTextBox` control for integer, double, and decimal data types.
 * `TextBox` control for string data type.

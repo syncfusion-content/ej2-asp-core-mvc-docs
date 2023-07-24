@@ -108,4 +108,23 @@ In the carousel, you can swipe the carousel slides using touch actions by defaul
 {% endhighlight %}
 {% endtabs %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselAnimationUGSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselAnimationUGSample).
+
+## Swipe Modes
+
+In the carousel, the [`swipeMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_SwipeMode) property allows specifying whether the slide transition should occur while performing swiping via touch or mouse. The slide swiping is enabled or disabled using the bitwise operator.
+
+The following are the different swipe modes available in the carousel:
+
+* CarouselSwipeMode.Touch - Allows the user to slide the slides using touch actions.
+* CarouselSwipeMode.Mouse - Allows the user to slide the slides using mouse actions.
+* CarouselSwipeMode.Touch & CarouselSwipeMode.Mouse - Allows the user to slide the slides using both touch and mouse actions.
+* ~CarouselSwipeMode.Touch & ~CarouselSwipeMode.Mouse - Disables both touch and mouse actions.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/animations/swipe/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel Swipe Mode](images/swipe.gif)

@@ -116,4 +116,4 @@ Now assign the custom adaptor to the grid as follows.
 
 
 
-> You can find the full sample at our [GitHub repository](https://github.com/SyncfusionSamples/ej2-mvc-grid-antiforgerytoken).
+N> You can find the full sample at our [GitHub repository](https://github.com/SyncfusionSamples/ej2-mvc-grid-antiforgerytoken).

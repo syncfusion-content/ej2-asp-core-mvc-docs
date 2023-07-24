@@ -63,7 +63,7 @@ Use the below list of keys to navigate the Calendar after the popup has opened.
 | <kbd>Control +Home</kbd>  | Focus the starting date in the current year. |
 | <kbd>Control +End</kbd>  | Focus the ending date in the current year. |
 
-> To focus the DatePicker control use the `alt+t` keys.
+N> To focus the DatePicker control use the `alt+t` keys.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

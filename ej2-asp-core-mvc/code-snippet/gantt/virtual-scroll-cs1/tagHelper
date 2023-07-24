@@ -1,0 +1,19 @@
+<ejs-gantt id='VirtualScroll' dataSource="ViewBag.dataSource" height="450px"
+                           highlightWeekends="true" enableVirtualization="true" allowSelection="true" gridLines="Both">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                                        duration="Duration" autoCalculateDateScheduling="false"
+                                        toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll", "Indent", "Outdent" })"> progress="Progress" parentID="ParentID">
+                    </e-gantt-taskfields>
+                    <e-gantt-editsettings allowAdding="true" allowEditing="true" allowDeleting="true"
+                                          allowTaskbarEditing="true" showDeleteConfirmDialog="true"></e-gantt-editsettings>
+                    <e-gantt-columns>
+                        <e-gantt-column field="TaskId" width="140"></e-gantt-column>
+                        <e-gantt-column field="TaskName" width="250"></e-gantt-column>
+                        <e-gantt-column field="StartDate"></e-gantt-column>
+                        <e-gantt-column field="EndDate"></e-gantt-column>
+                        <e-gantt-column field="Duration"></e-gantt-column>
+                        <e-gantt-column field="Progress"></e-gantt-column>
+                    </e-gantt-columns>
+                    <e-gantt-labelSettings taskLabel="Progress"></e-gantt-labelSettings>
+                    <e-gantt-splittersettings columnIndex="2"></e-gantt-splittersettings>
+                </ejs-gantt>

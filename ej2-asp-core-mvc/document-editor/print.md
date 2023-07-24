@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Document Editor Component | Syncfusion
-description: Learn here all about print in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+title: Print in ##Platform_Name## Document Editor Control | Syncfusion
+description: Learn here all about print in Syncfusion ##Platform_Name## Document Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Print in Document Editor Component
+# Print in Document Editor Control
 
 To print the document, use the `print` method from document editor instance.
 
@@ -63,7 +63,7 @@ To print the document, use the `print` method from document editor instance.
 
 
 
-> To enable print for a document editor instance, set enablePrint as true.
+N> To enable print for a document editor instance, set enablePrint as true.
 
 ## Improve print quality
 
@@ -90,7 +90,7 @@ Document editor provides an option to improve the print quality using `printDevi
 
 
 
-> By default, printDevicePixelRatio value is 1.
+N> By default, printDevicePixelRatio value is 1.
 
 ## Print using window object
 

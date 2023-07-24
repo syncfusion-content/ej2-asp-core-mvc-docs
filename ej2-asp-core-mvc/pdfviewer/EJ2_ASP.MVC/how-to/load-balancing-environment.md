@@ -13,7 +13,7 @@ documentation: ug
 
 The PDF Viewer server library allows you to achieve a Load balancing environment in the MVC framework using the .NET 4.5 framework with the help of **StackExchange Redis package V1.2.6**.
 
->Note : We have considered the support from the .NET framework 4.5 version and it won’t work in the lower .NET framework version.
+N> We have considered the support from the .NET framework 4.5 version and it won’t work in the lower .NET framework version.
 
 ## Steps to achieve load balancing environment in the MVC framework
 

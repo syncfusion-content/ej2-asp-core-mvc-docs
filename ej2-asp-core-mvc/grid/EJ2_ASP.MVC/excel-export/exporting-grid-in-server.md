@@ -53,7 +53,7 @@ To Export the Grid in server side, You need to call the [`serverExcelExport`](ht
 
 
 
-> **Note:** Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/MVC-EJ2-Grid-server-side-exporting).
+N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/MVC-EJ2-Grid-server-side-exporting).
 
 ## CSV export in server
 

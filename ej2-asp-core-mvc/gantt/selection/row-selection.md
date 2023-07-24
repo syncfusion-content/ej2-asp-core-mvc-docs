@@ -38,7 +38,7 @@ The row selection in the Gantt control can be enabled or disabled using the [`Al
 
 
 
-> `Row` selection is the default type of Gantt selection mode.
+N> `Row` selection is the default type of Gantt selection mode.
 
 ## Selecting a row on initial load
 

@@ -125,7 +125,7 @@ To bind remote data to the Gantt component, assign service data as an instance o
 
 In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
 
-> Refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual studio,
+N> Refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
 
 We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Check the below code snippet to assign data source to Gantt.
 
@@ -310,9 +310,9 @@ The argument passed to the `actionFailure` event contains the error details retu
 
 
 
-#### Binding with Ajax
+#### Binding with Fetch
 
-You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Ajax request. In the below code we have fetched the data source from the server with the help of Ajax request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax/#onsuccess) event of the Ajax.
+You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax/#onsuccess) event of the Fetch.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -339,7 +339,7 @@ You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the d
 
 
 
-> If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
+N> If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
 
 ## Split task
 
@@ -438,7 +438,34 @@ We can also define segment details as a flat data and this collection can be map
 
 ![Alt text](images/split-tasks.png)
 
-> Segment id field contains id of a task which should be split at load time.
+N> Segment id field contains id of a task which should be split at load time.
+
+## Improve performance by disabling validations
+
+The [`autoCalculateDateScheduling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AutoCalculateDateScheduling) property can help you reduce the time taken for the Gantt chart to render on the initial load. When this API is enabled, parent-child validation, data validation, and predecessor validation are restricted, allowing the Gantt chart to load more quickly. Since we are disabling the validations, data source provided to gantt should have all data such as start date, end date, duration, as proper data.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Virtual-scroll.cs" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/virtual-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Virtual-scroll.cs" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/virtual-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Limitations
 

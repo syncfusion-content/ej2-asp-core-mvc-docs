@@ -44,7 +44,7 @@ A row can be added to the Gantt component from the toolbar while the [`EditSetti
 
 ![Alt text](images/addingRow.png)
 
-> By default, the new row will be added to the top most row in the Gantt control.
+N> By default, the new row will be added to the top most row in the Gantt control.
 
 ## Context menu
 

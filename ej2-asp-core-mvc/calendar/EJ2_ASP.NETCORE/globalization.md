@@ -19,7 +19,7 @@ By default, Calendar date format, week and month names are specific to American 
 
 To go with the different culture other than `English`, follow the below steps.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data refer the [CLDR-Data](http://cldr.unicode.org/index/cldr-spec/json) link.
+* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data refer the [CLDR-Data](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
 
 ```
 npm install cldr-data --save
@@ -50,7 +50,7 @@ function loadCultureFiles(name) {
 
 ```
 
-> The `Localization` library allows you to localize default text content of the Calendar. The Calendar component has static text for **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Locale) value and translation object.
+N> The `Localization` library allows you to localize default text content of the Calendar. The Calendar component has static text for **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Locale) value and translation object.
 
 | Locale keywords | Text |
 | ----- | ----- |

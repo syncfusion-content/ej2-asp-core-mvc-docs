@@ -1,0 +1,24 @@
+<div id="documenteditor" style="width:100%;height:100%">
+    <ejs-documenteditorcontainer id="container" enableToolbar=true height="590px">
+    </ejs-documenteditorcontainer>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var documenteditorElement;
+        var container;
+        documenteditor = document.getElementById('container');
+        container = documenteditor.ej2_instances[0];
+        container.documentEditor.requestNavigate = function (args) {
+            if (args.linkType !== 'Bookmark') {
+                var link = args.navigationLink;
+                if (args.localReference.length > 0) {
+                    link += '#' + args.localReference;
+                }
+                window.open(link);
+                args.isHandled = true;
+            }
+        };
+
+    });
+
+</script>

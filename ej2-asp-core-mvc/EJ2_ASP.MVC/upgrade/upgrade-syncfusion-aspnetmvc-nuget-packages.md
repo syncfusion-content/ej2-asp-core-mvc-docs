@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion ASP.NET MVC JS2 NuGet packages to a latest version
+# Upgrading Syncfusion ASP.NET MVC NuGet packages to a latest version
 
 Every three months, Syncfusion releases new volumes with interesting new features. For this volume, there will be weekly NuGet releases and a service pack. Syncfusion ASP.NET MVC JS2 NuGet packages are released on a weekly basis to address critical issue fixes.
 
@@ -26,7 +26,7 @@ The NuGet **Package Manager UI** in Visual Studio allows you to easily install, 
 
 2. The Manage NuGet Packages window will open. Navigate to the **Updates** tab, then search for the Syncfusion ASP.NET MVC JS2 NuGet packages using a term like **"Syncfusion"** and select the appropriate Syncfusion ASP.NET MVC JS2 NuGet package for your application.
 
-    > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
+    N> The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
 
 3. By default, the package selected with latest version. You can select the required version and click the **Update** button and accept the license terms. The package will be upgraded to selected version in your ASP.NET MVC application.
 

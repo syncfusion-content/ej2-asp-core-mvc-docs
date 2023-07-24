@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.CircularGauge;
+
+@Html.EJS().CircularGauge("circular").EnableRtl(true).LegendSettings(legend => legend.Visible(true)).Tooltip(tooltip => tooltip.Enable(true).Type(new string[] { "Pointer", "Range" }).EnableAnimation(false).Format("Pointer : {value} ")).Axes(axis => axis.StartAngle(210).EndAngle(150).Minimum(0).Maximum(120).Radius("80%").Direction(Syncfusion.EJ2.CircularGauge.GaugeDirection.AntiClockWise)
+.LineStyle(ls => ls.Color("transparent").Width(10))
+.MajorTicks(majortick => majortick.Offset(5).Color("#9E9E9E").Height(10)).MinorTicks(minortick => minortick.Height(0))
+.LabelStyle(ls => ls.Position(Position.Inside).UseRangeColor(false)).Ranges(range =>
+{
+        range.Start(0).End(40).Color("#30B32D").Add();
+        range.Start(40).End(80).Color("#FFDD00").Add();
+        range.Start(80).End(120).Color("#F03E3E").Add();
+    })
+    .Pointers(pointer =>
+    {
+        pointer.Value(65).Color("#757575")
+        .Radius("60%").MarkerShape(GaugeShape.Triangle).PointerWidth(8).NeedleTail(nt => nt.Length("18%")).Cap(cap => cap.Radius(7).Color("#757575")).Add();
+    }).Add()).Render()

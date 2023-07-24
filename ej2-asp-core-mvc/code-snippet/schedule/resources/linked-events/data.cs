@@ -26,8 +26,8 @@ public List<AppointmentData> GetScheduleData()
     {
         Id = 1,
         Subject = "Meeting",
-        StartTime = new DateTime(2018, 2, 13, 10, 0, 0),
-        EndTime = new DateTime(2018, 2, 13, 12, 30, 0),
+        StartTime = new DateTime(2023, 2, 13, 10, 0, 0),
+        EndTime = new DateTime(2023, 2, 13, 12, 30, 0),
         IsAllDay = false,
         ConferenceId = new int[] { 1, 2 }
     });
@@ -35,8 +35,8 @@ public List<AppointmentData> GetScheduleData()
     {
         Id = 2,
         Subject = "Testing",
-        StartTime = new DateTime(2018, 2, 14, 10, 0, 0),
-        EndTime = new DateTime(2018, 2, 14, 12, 30, 0),
+        StartTime = new DateTime(2023, 2, 14, 10, 0, 0),
+        EndTime = new DateTime(2023, 2, 14, 12, 30, 0),
         IsAllDay = false,
         ConferenceId = new int[] { 1, 2, 3 }
     });

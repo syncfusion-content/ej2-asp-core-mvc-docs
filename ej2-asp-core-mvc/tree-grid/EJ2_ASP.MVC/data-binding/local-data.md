@@ -20,7 +20,7 @@ Two types of Data binding are possible with the TreeGrid control.
 
 To bind local data to the treegrid, you can assign a JavaScript object array to the [`DataSource`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~DataSource.html) property. The local data source can also be provided as an instance of the **DataManager**.
 
-> By default, **DataManager** uses **JsonAdaptor** for local data-binding.
+N> By default, **DataManager** uses **JsonAdaptor** for local data-binding.
 
 ## Hierarchy data source binding
 
@@ -50,7 +50,7 @@ The following code example shows you how to bind the hierarchical local data int
 
 
 
-> * Remote data binding is not supported for Hierarchy Data.
+N> * Remote data binding is not supported for Hierarchy Data.
 
 ## Self-Referential data binding (Flat data)
 
@@ -82,7 +82,7 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 
 
 
-> Herewith we have provided list of reserved properties and the purpose used in TreeGrid. We recommend to avoid these reserved properties for Internal purpose(To get rid of conflicts).
+N> Herewith we have provided list of reserved properties and the purpose used in TreeGrid. We recommend to avoid these reserved properties for Internal purpose(To get rid of conflicts).
 
 Reserved keywords | Purpose
 -----|-----
@@ -104,4 +104,4 @@ primaryParent | Specifies the Primary data
 
 
 
-> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.

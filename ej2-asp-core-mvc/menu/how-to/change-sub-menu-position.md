@@ -39,4 +39,4 @@ In the below sample, the sub menu opens above the parent menu item.
 
 
 
-> For custom positioning, set both `top` and `left` position in the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event.
+N> For custom positioning, set both `top` and `left` position in the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event.

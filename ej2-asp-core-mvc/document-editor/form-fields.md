@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Form Fields in ##Platform_Name## Document Editor Component | Syncfusion
-description: Learn here all about Form Fields in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+title: Form Fields in ##Platform_Name## Document Editor Control | Syncfusion
+description: Learn here all about Form Fields in Syncfusion ##Platform_Name## Document Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Form Fields
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Form Fields in Document Editor Component
+# Form Fields in Document Editor Control
 
-DocumentEditorContainer component provides support for inserting Text, CheckBox, DropDown form fields through in-built toolbar.
+DocumentEditorContainer control provides support for inserting Text, CheckBox, DropDown form fields through in-built toolbar.
 
 ![Form Fields](images/toolbar-form-fields.png)
 
@@ -125,4 +125,4 @@ Document editor provides an option to protect and unprotect document using `enfo
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
->Note: In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.
+N> In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.

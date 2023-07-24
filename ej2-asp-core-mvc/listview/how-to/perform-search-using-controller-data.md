@@ -133,7 +133,7 @@ namespace filterlist.Controllers
 
 ```
 
-> While using Adaptors in our application, we need to return the JSON data from Controller.
+N> While using Adaptors in our application, we need to return the JSON data from Controller.
 
 ## Perform Search Operation
 

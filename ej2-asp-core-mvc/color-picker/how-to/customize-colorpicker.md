@@ -120,7 +120,7 @@ In the following sample, the `picker` icon is added to primary button and using 
 
 
 
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icon to customize the primary button.
+N> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icon to customize the primary button.
 
 ## Display hex code in input
 
@@ -173,4 +173,4 @@ The color picker UI can be customized in all possible ways. The following sample
 {% endif %}
 
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ColorPicker/CustomColorPickerSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ColorPicker/CustomColorPickerSample).
