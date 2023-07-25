@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Buttons
 
-@Html.EJS("fab4").IconCss("e-icons e-edit").CssClass("fab-hover").Content("<span class='text-container'><span class='textEle'>Edit</span></span>").Render()    
+@Html.EJS().Fab("fab").IconCss("e-icons e-edit").CssClass("fab-hover").Content("<span class='text-container'><span class='textEle'>Edit</span></span>").Render()    
 
 <style>
 
