@@ -11,7 +11,7 @@ documentation: ug
 
 # Content in Tooltip Control
 
-A text or a piece of information assigned to the Tooltip's `content` property will be displayed as the main text stream of the Tooltip. It can be a string or a template content. If the `content` property is not provided with any specific value, then it takes the value assigned to the `title` attribute of the target element on which the Tooltip was initialized. The content can also dynamically be assigned to the Tooltip via AJAX.
+A text or a piece of information assigned to the Tooltip's `content` property will be displayed as the main text stream of the Tooltip. It can be a string or a template content. If the `content` property is not provided with any specific value, then it takes the value assigned to the `title` attribute of the target element on which the Tooltip was initialized. The content can also dynamically be assigned to the Tooltip via Fetch.
 
 ## Template content
 
@@ -48,9 +48,9 @@ Output be like the below.
 
 ![ASP .NET Core - Tooltip - Content](./images/tooltip-content.png)
 
-## Dynamic content via AJAX
+## Dynamic content via Fetch
 
-The Tooltip content can be dynamically loaded  by making use of the AJAX call. The AJAX request is usually made within the `beforeRender` event of the Tooltip, and then the Tooltip's `content` is assigned the value retrieved on it's success.
+The Tooltip content can be dynamically loaded  by making use of the Fetch call. The Fetch request is usually made within the `beforeRender` event of the Tooltip, and then the Tooltip's `content` is assigned the value retrieved on it's success.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

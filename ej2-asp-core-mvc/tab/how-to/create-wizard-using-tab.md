@@ -11,7 +11,13 @@ documentation: ug
 
 # Create wizard using Tab
 
-Tab items can be disabled initial control rendering by passing the boolean value to [`disabled`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TabTabItem~Disabled.html) property of [`TabItem`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TabTabItem.html) class.
+{% if page.publishingplatform == "aspnet-core" %}
+
+Tab items can be disabled initial control rendering by passing the boolean value to [`disabled`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabTabItem.html#Syncfusion_EJ2_Navigations_TabTabItem_Disabled) property of [`TabItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabTabItem.html) class.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Tab items can be disabled initial control rendering by passing the boolean value to [`disabled`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabTabItem.html#Syncfusion_EJ2_Navigations_TabTabItem_Disabled) property of [`TabItem`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabTabItem.html) class.
 
 In the below Wizard sample, each Tab is integrated with required components to complete the reservation. Each field is provided with validation for all mandatory option to proceed to next tabs. Using Tab item's template property the components are added into content.
 

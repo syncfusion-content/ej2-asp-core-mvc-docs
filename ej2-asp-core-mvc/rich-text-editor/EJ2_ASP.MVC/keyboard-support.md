@@ -19,35 +19,38 @@ You can use the following key shortcuts when the Rich Text Editor renders with H
 
 | Actions | Keyboard shortcuts |
 |----------------|---------|
-| Toolbar focus | <kbd>`alt`</kbd> + <kbd>`f10`</kbd> |
-| Insert link | <kbd>`ctrl`</kbd> + <kbd>`k`</kbd> |
-| Insert image | <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`i`</kbd> |
-| Insert table | <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`e`</kbd> |
-| Undo | <kbd>`ctrl`</kbd> + <kbd>`z`</kbd> |
-| Redo | <kbd>`ctrl`</kbd> + <kbd>`y`</kbd> |
-| Copy | <kbd>`ctrl`</kbd> + <kbd>`c`</kbd> |
-| Cut | <kbd>`ctrl`</kbd> + <kbd>`x`</kbd> |
-| Paste| <kbd>`ctrl`</kbd> + <kbd>`v`</kbd> |
-| Bold| <kbd>`ctrl`</kbd> + <kbd>`b`</kbd> |
-| Italic| <kbd>`ctrl`</kbd> + <kbd>`i`</kbd> |
-| Underline| <kbd>`ctrl`</kbd> + <kbd>`u`</kbd> |
-| Strikethrough| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`s`</kbd> |
-| Uppercase| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`u`</kbd> |
-| Lowercase| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`l`</kbd> |
-| Superscript| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`=`</kbd> |
-| Subscript| <kbd>`ctrl`</kbd> + <kbd>`=`</kbd> |
-| Indents| <kbd>`ctrl`</kbd> + <kbd>`]`</kbd> |
-| Outdents| <kbd>`ctrl`</kbd> + <kbd>`[`</kbd> |
-| HTML source | <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`h`</kbd> |
-| Fullscreen| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`f`</kbd> |
-| Exit Fullscreen| <kbd>`Esc`</kbd> |
-| Justify center| <kbd>`ctrl`</kbd> + <kbd>`e`</kbd> |
-| Justify full | <kbd>`ctrl`</kbd> + <kbd>`j`</kbd> |
-| Justify left | <kbd>`ctrl`</kbd> + <kbd>`l`</kbd> |
-| Justify right | <kbd>`ctrl`</kbd> + <kbd>`r`</kbd> |
-| Clear format | <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`r`</kbd> |
-| Ordered list | <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`o`</kbd> |
-| Unordered list | <kbd>`ctrl`</kbd> + <kbd>`alt`</kbd> + <kbd>`o`</kbd> |
+| Toolbar focus | <kbd>Alt</kbd> + <kbd>f10</kbd> |
+| Insert link | <kbd>Ctrl</kbd> + <kbd>k</kbd> |
+| Insert image | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> |
+| Insert table | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> |
+| Undo | <kbd>Ctrl</kbd> + <kbd>z</kbd> |
+| Redo | <kbd>Ctrl</kbd> + <kbd>y</kbd> |
+| Copy | <kbd>Ctrl</kbd> + <kbd>c</kbd> |
+| Cut | <kbd>Ctrl</kbd> + <kbd>x</kbd> |
+| Paste| <kbd>Ctrl</kbd> + <kbd>v</kbd> |
+| Bold| <kbd>Ctrl</kbd> + <kbd>b</kbd> |
+| Italic| <kbd>Ctrl</kbd> + <kbd>i</kbd> |
+| Underline| <kbd>Ctrl</kbd> + <kbd>u</kbd> |
+| Strikethrough| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>s</kbd> |
+| Uppercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>u</kbd> |
+| Lowercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>l</kbd> |
+| Superscript| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>=</kbd> |
+| Subscript| <kbd>Ctrl</kbd> + <kbd>=</kbd> |
+| Indents| <kbd>Ctrl</kbd> + <kbd>]</kbd> |
+| Outdents| <kbd>Ctrl</kbd> + <kbd>[</kbd> |
+| HTML source | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>h</kbd> |
+| Fullscreen| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>f</kbd> |
+| Exit Fullscreen| <kbd>Esc</kbd> |
+| Justify center| <kbd>Ctrl</kbd> + <kbd>e</kbd> |
+| Justify full | <kbd>Ctrl</kbd> + <kbd>j</kbd> |
+| Justify left | <kbd>Ctrl</kbd> + <kbd>l</kbd> |
+| Justify right | <kbd>Ctrl</kbd> + <kbd>r</kbd> |
+| Clear format | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd> |
+| Ordered list | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>o</kbd> |
+| Unordered list | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>o</kbd> |
+| Format Panter Copy| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd> |
+| Format Panter Paste| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> |
+| Format Panter Escape | <kbd>Esc</kbd> |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,25 +83,25 @@ You can use the following key shortcuts when the Rich Text Editor renders with M
 
 | Actions | Keyboard shortcuts |
 |----------------|---------|
-| Toolbar focus|  <kbd>`alt`</kbd> + <kbd>`f10`</kbd> |
-| Insert link| <kbd>`ctrl`</kbd> + <kbd>`k`</kbd> |
-| Insert image| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`i`</kbd> |
-| Insert table| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`e`</kbd> |
-| Undo| <kbd>`ctrl`</kbd> + <kbd>`z`</kbd> |
-| Redo| <kbd>`ctrl`</kbd> + <kbd>`y`</kbd> |
-| Copy| <kbd>`ctrl`</kbd> + <kbd>`c`</kbd> |
-| Cut| <kbd>`ctrl`</kbd> + <kbd>`x`</kbd> |
-| Paste| <kbd>`ctrl`</kbd> + <kbd>`v`</kbd> |
-| Bold| <kbd>`ctrl`</kbd> + <kbd>`b`</kbd> |
-| Italic| <kbd>`ctrl`</kbd> + <kbd>`i`</kbd> |
-| Strikethrough| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`s`</kbd> |
-| Uppercase| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`u`</kbd> |
-| Lowercase| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`l`</kbd> |
-| Superscript| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`=`</kbd> |
-| Subscript| <kbd>`ctrl`</kbd> + <kbd>`=`</kbd> |
-| Fullscreen| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`f`</kbd> |
-| Ordered list| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`o`</kbd> |
-| Unordered list| <kbd>`ctrl`</kbd> + <kbd>`alt`</kbd> + <kbd>`o`</kbd> |
+| Toolbar focus| <kbd>Alt</kbd> + <kbd>f10</kbd> |
+| Insert link| <kbd>Ctrl</kbd> + <kbd>k</kbd> |
+| Insert image| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> |
+| Insert table| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> |
+| Undo| <kbd>Ctrl</kbd> + <kbd>z</kbd> |
+| Redo| <kbd>Ctrl</kbd> + <kbd>y</kbd> |
+| Copy| <kbd>Ctrl</kbd> + <kbd>c</kbd> |
+| Cut| <kbd>Ctrl</kbd> + <kbd>x</kbd> |
+| Paste| <kbd>Ctrl</kbd> + <kbd>v</kbd> |
+| Bold| <kbd>Ctrl</kbd> + <kbd>b</kbd> |
+| Italic| <kbd>Ctrl</kbd> + <kbd>i</kbd> |
+| Strikethrough| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>s</kbd> |
+| Uppercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>u</kbd> |
+| Lowercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>l</kbd> |
+| Superscript| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>=</kbd> |
+| Subscript| <kbd>Ctrl</kbd> + <kbd>=</kbd> |
+| Fullscreen| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>f</kbd> |
+| Ordered list| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>o</kbd> |
+| Unordered list| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>o</kbd> |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
