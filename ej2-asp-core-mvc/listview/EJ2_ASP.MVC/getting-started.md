@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC ListView control
 
-This section briefly explains about how to include [ASP.NET MVC ListView](https://www.syncfusion.com/aspnet-core-ui-controls/listview) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC ListView](https://www.syncfusion.com/aspnet-mvc-ui-controls/listview) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -139,3 +139,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 * [Data Binding Types](./data-binding)
 * [ListView customization](./customizing-templates)
 * [Virtualization](./virtualization)
+
+N> You can refer to our [ASP.NET MVC ListView](https://www.syncfusion.com/aspnet-mvc-ui-controls/listview) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC ListView Example](https://ej2.syncfusion.com/aspnetmvc/ListView/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the ListView in ASP.NET MVC.
