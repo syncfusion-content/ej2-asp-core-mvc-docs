@@ -8,6 +8,7 @@
 <script>
     function Refresh() {
         var speeddial = document.getElementById('speeddial').ej2_instances[0];
+        document.getElementById("target").style.minHeight = "300px";
         speeddial.refreshPosition();
     }
 </script>
