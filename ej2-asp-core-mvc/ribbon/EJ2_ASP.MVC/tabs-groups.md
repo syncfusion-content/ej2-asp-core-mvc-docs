@@ -47,3 +47,5 @@ You can add collections of items to each group by using the [Collections](https:
 {% endtabs %}
 
 ![ASP.NET MVC Ribbon Control with Items](images/ribbon-items.png)
+
+> Check out our [`items`](./items) page on adding the built-in and custom items.

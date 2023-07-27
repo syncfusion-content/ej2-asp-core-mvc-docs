@@ -24,6 +24,7 @@
 <script>
     function refresh()
     {
+        document.getElementById("target").style.minHeight = "300px"
         var speeddial=document.getElementById('speeddial').ej2_instances[0];
         speeddial.refreshPosition();
     }
