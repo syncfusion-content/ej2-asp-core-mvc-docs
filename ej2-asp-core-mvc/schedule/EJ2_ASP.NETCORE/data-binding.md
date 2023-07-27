@@ -362,6 +362,7 @@ namespace ScheduleSample.Controllers
     }
 }
 ```
+N> You can find the working sample [here](https://github.com/SyncfusionExamples/aspnetcore-scheduler-crud-actions-with-editor-template).
 
 ## Configuring Scheduler with Google API service
 
