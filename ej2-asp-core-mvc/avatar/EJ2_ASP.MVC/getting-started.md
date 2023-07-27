@@ -67,7 +67,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Avatar Control](images/avatar.PNG)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Avatar/ASP.NET%20MVC%20Razor%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Avatar/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 

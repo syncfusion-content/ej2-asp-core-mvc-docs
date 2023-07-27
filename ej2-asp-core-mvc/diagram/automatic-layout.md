@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automatic Layout in ##Platform_Name## Diagram Component
+title: Automatic Layout in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Automatic Layout in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Automatic Layout
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Automatic Layout
+# Automatic Layout in Diagram
 
 Diagram provides support to auto-arrange the nodes in the diagram area that is referred as [`Layout`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html). It includes the following layout modes:
 
@@ -49,7 +49,6 @@ The hierarchical tree layout arranges nodes in a tree-like structure, where the 
 
 
 ```javascript
-
         function getNodeDefaults(obj, diagram) {
             var collapseicon = obj.collapseIcon;
             obj.shape = { type: 'Text', content: obj.data.Name };
@@ -70,7 +69,6 @@ The hierarchical tree layout arranges nodes in a tree-like structure, where the 
             collapseicon.fill = 'lightgray';
             return obj;
         }
-
         function connectorDefaults(connector, diagram) {
             connector.targetDecorator.shape = 'None';
             connector.type = 'Orthogonal';
@@ -179,7 +177,6 @@ Set chart orientations, chart types, and offset to be left between parent and ch
 
 
 ```javascript
-
         function getLayoutInfo(node, options, orientation, type) {
         if (!options.hasSubTree) {
                 options.type = 'Center';
@@ -312,11 +309,32 @@ The layout’s [`springLength`](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% endtabs %}
 {% endif %}
 
-
-
 ## Mind Map layout
 
 A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `MindMap`.
+
+## Tree Orientation in layout
+
+An [`Orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of a `MindMapTreeLayout` is used to arrange the tree layout according to a specific direction. By default, the orientation is set to Horizontal. The following table outlines the various orientation types available:
+
+<table>
+<tr>
+<td><b>Orientation Type</b></td>
+<td><b>Description</b></td>
+</tr>
+<tr>
+<td>Horizontal</td>
+<td>Aligns the tree layout from left to right</td>
+</tr>
+<tr>
+<td>Vertical</td>
+<td>Aligns the tree layout from top to bottom</td>
+</tr>
+</table>
+
+N> If you want to use mind map layout in diagram, you need to inject MindMap in the diagram.
+
+The following code example illustrates how to create an mindmap layout.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -337,8 +355,6 @@ A mind map is a diagram that displays the nodes as a spider diagram organizes in
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Complex hierarchical tree
 
@@ -372,21 +388,19 @@ Line distribution is used to arrange the connectors without overlapping in autom
 
 
 ```cs
-
     public ActionResult LineDistribution()
         {
             DiagramLayout connectionPointOriginValue = new DiagramLayout() { ConnectionPointOrigin = ConnectionPointOrigin.DifferentPoint };
             ViewBag.connectionPointOrigin = connectionPointOriginValue;
             return View();
         }
-
 ```
 
 ### Linear Arrangement
 
 Linear arrangement is used to linearly arrange the child nodes in layout, which means the parent node is placed in the center corresponding to its children. When line distribution is enabled, linear arrangement is also activated by default. The [`Arrangement`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Diagrams.DiagramLayout.html#Syncfusion_Blazor_Diagrams_DiagramLayout_Arrangement) property of layout is used to enable or disable the linear arrangement in layout. By default, Arrangement will be `Nonlinear`.
 
-> Linear arrangement is applicable only for complex hierarchical tree layout.
+N> Linear arrangement is applicable only for complex hierarchical tree layout.
 
 ```cs
 
@@ -404,9 +418,7 @@ Linear arrangement is used to linearly arrange the child nodes in layout, which 
 The below constraints prevents the connector segments overlapping nodes with a complex hierarchical layout.
 
 ```cs
-
     DiagramLayout arrangementValue = new DiagramLayout() { Arrangement = ChildArrangement.Linear};
-
 ```
 
 ## Customize layout
@@ -488,7 +500,7 @@ The layout orientation can used to arrange the layout based on the direction. Th
 
 Diagram provides support to customize the  [`orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Orientation) of layout. You can set the desired orientation using layout.orientation.
 
-> In the diagram the default orientation is TopToBottom.
+N> In the diagram the default orientation is TopToBottom.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -627,9 +639,7 @@ The setNodeTemplate function is provided for the purpose of customizing nodes. I
 
 
 ```javascript
-
     function setNodeTemplate(obj, diagram) {
         obj.style.borderColor = obj.data.color;
     }
-
 ```

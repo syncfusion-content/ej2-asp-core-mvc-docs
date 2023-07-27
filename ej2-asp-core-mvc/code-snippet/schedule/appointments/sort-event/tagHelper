@@ -4,7 +4,7 @@
 }
 
 <div class="col-lg-9 control-section">
-    <ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2017, 9, 29)">
+    <ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2023, 9, 29)">
         <e-schedule-eventsettings dataSource="@ViewBag.datasource" sortComparer=sortComparer>
         </e-schedule-eventsettings>
     </ejs-schedule>

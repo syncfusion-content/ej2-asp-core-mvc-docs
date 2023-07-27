@@ -17,7 +17,7 @@ The TreeView also supports selection of multiple nodes by setting [allowMultiSel
 
 To multi-select, press and hold **CTRL** key and click the desired nodes. To select range of nodes, press and hold the **SHIFT** key and click the nodes. In the following example, the `allowMultiSelection` property is enabled.
 
-> Multi selection is not applicable through touch interactions.
+N> Multi selection is not applicable through touch interactions.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

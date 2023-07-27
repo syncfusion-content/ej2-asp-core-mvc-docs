@@ -45,19 +45,60 @@ vertical-align: top;
 font-size: 14px !important;
 text-decoration: none!important;
 text-align: left!important;
-padding: 2px 0px;
+padding: 1px 0px;
 }
 .controlcategory-topics
 {
 font-size: 14px !important;
-font-weight: bold!important;
+font-weight: 500!important;
 border:0 !important;
 line-height: 20px;
 }
 .controlcategory
 {
 font-size: 14px !important;
-font-weight: bold!important;
+font-weight: 500!important;
+border:0 !important;
+text-align: left!important;
+line-height: 20px;
+padding-top: 20px;
+}
+<style>
+#table
+{
+border:0 !important;
+line-height: 160% !important;
+}
+
+tr
+{
+border:0 !important;
+}
+
+td
+{
+border:0 !important;
+vertical-align: top;
+}
+
+.controlanchorlink
+{
+font-size: 14px !important;
+text-decoration: none!important;
+text-align: left!important;
+padding: 2px 0px;
+}
+.controlcategory-topics
+{
+font-size: 14px !important;
+font-weight: 500!important;
+border:0 !important;
+line-height: 20px;
+}
+.controlcategory
+{
+font-size: 14px !important;
+font-weight: 500!important;
 border:0 !important;
 text-align: left!important;
 line-height: 20px;
@@ -144,7 +185,8 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/uploader/getting-started">File Upload</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/range-slider/getting-started">Range Slider</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started">Toggle Switch Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/signature/getting-started">Signature [Preview]</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/signature/getting-started">Signature</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/rating/getting-started">Rating</a></div>
         <div><p class="controlcategory">FORMS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/in-place-editor/getting-started">In-place Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/query-builder/getting-started">Query Builder</a></div>
@@ -186,7 +228,7 @@ padding-top: 50px;
 
 * Don't see what you need? request it in our [feedback portal](https://www.syncfusion.com/feedback/aspnet-mvc).
 
-> Syncfusion does not collect any kind of information when our components are used in customer applications.
+N> Syncfusion does not collect any kind of information when our components are used in customer applications.
 
 ## See also
 

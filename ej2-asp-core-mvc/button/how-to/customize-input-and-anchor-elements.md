@@ -32,4 +32,4 @@ You can customize the appearance of the input and anchor elements using predefin
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonHowToSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonHowToSample).

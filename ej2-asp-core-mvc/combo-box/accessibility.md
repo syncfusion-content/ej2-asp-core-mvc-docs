@@ -47,7 +47,7 @@ You can use the following key shortcuts to access the ComboBox without interrupt
 | <kbd>Home</kbd> | Cursor moves before the first character in input |
 | <kbd>End</kbd> | Cursor moves next to the last character in input  |
 
-> In the following sample, focus the ComboBox control using <kbd>alt+t</kbd> keys.
+N> In the following sample, focus the ComboBox control using <kbd>alt+t</kbd> keys.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -69,4 +69,4 @@ You can use the following key shortcuts to access the ComboBox without interrupt
 {% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/FilteringUGSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/FilteringUGSample).

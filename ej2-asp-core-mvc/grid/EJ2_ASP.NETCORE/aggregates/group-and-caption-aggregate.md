@@ -39,4 +39,4 @@ If [`groupFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 
 
-> The aggregate values must be accessed inside the template using their corresponding [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_Type) name.
+N> The aggregate values must be accessed inside the template using their corresponding [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_Type) name.

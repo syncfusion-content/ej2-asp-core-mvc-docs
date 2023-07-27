@@ -22,7 +22,7 @@ The ComboBox also supports different kinds of data services such as OData, OData
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
-> When binding complex data to the ComboBox, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+N> When binding complex data to the ComboBox, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Binding local data
 
@@ -136,7 +136,7 @@ In the following sample, displayed first 6 contacts from the `customer` table of
 {% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/ComboBoxUGSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/ComboBoxUGSample).
 
 ### Bind to URL Adaptor
 

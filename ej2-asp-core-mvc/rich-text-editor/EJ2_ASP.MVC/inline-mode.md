@@ -50,6 +50,6 @@ Enabling the `onSelection` option of inlineMode makes the inline Rich Text Edito
 
 ## See Also
 
-* [How to edit the quick toolbar settings](./toolbar/#quick-inline-toolbar)
-* [How to insert link editing option in the toolbar items](./link/#insert-link)
-* [How to insert image editing option in the toolbar items](./image/#upload-options)
+* [How to edit the quick toolbar settings](./toolbar#quick-inline-toolbar)
+* [How to insert link editing option in the toolbar items](./link#insert-link)
+* [How to insert image editing option in the toolbar items](./image#upload-options)

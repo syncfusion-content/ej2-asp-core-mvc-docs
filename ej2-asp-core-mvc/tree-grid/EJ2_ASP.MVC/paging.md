@@ -39,7 +39,7 @@ Paging options can be configured through the [`PageSettings`](https://help.syncf
 
 
 
-> You can achieve better performance by using treegrid paging to fetch only a pre-defined number of records from the data source.
+N> You can achieve better performance by using treegrid paging to fetch only a pre-defined number of records from the data source.
 
 ## Page Size Mode
 
@@ -166,8 +166,8 @@ By default, Pager will be rendered at the bottom of the TreeGrid. You can also r
 
 
 
-> During the paging action, the pager component triggers the below three events.
-> The **created** event triggers when Pager is created.
-> The **click** event triggers when the numeric items in the pager is clicked.
-> The **dropDownChanged** event triggers when pageSize DropDownList value is selected.
-> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> During the paging action, the pager component triggers the below three events.
+<br/> The **created** event triggers when Pager is created.
+<br/> The **click** event triggers when the numeric items in the pager is clicked.
+<br/> The **dropDownChanged** event triggers when pageSize DropDownList value is selected.
+<br/> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.

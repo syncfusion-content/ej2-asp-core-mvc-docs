@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Add();
+}).Render()

@@ -14,7 +14,7 @@ You can customize the icon and text of Asp.Net MVC Floating Action Button(FAB) u
 
 ## FAB with icon
 
-You can show icon only in Floating Action Button by setting [IconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_IconCss) property. You can show tooltip on hover to show additional details to end-user by setting `title` attribute.
+You can show icon only in Floating Action Button by setting [IconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_IconCss) property. You can show tooltip on hover to show additional details to end-user by setting `Title` attribute.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 

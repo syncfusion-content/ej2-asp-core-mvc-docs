@@ -22,7 +22,7 @@ The Skeleton control supports the following content shapes:
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Skeleton Circle Shape](images/skeleton-circle.png)
+![ASP.NET Core Skeleton Circle Shape](images/skeleton-circle-shape.png)
 
 ## Square skeleton shape
 
@@ -42,7 +42,7 @@ The Skeleton control supports the following content shapes:
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Skeleton Rectangle Shape](images/skeleton-rectangle.png)
+![ASP.NET Core Skeleton Rectangle Shape](images/skeleton-rectangle-shape.png)
 
 ## Text skeleton shape
 
@@ -52,7 +52,7 @@ The Skeleton control supports the following content shapes:
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Skeleton Text Shape](images/skeleton-text.png)
+![ASP.NET Core Skeleton Text Shape](images/skeleton-text-shape.png)
 
 Below example demonstrates the above functionalities of a Skeleton control.
 
@@ -62,4 +62,4 @@ Below example demonstrates the above functionalities of a Skeleton control.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Skeleton Shape](images/skeleton-shapes.png)
+![ASP.NET Core Skeleton Shape](images/skeleton-shape.png)

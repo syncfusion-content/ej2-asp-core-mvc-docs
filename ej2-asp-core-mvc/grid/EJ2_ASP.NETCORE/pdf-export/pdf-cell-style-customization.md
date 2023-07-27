@@ -73,4 +73,4 @@ To apply theme in exported PDF, define the **theme** in **exportProperties**.
 
 
 
-> By default, material theme is applied to exported PDF document.
+N> By default, material theme is applied to exported PDF document.

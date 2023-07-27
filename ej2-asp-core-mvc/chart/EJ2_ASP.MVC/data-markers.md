@@ -19,7 +19,7 @@ Data markers are used to provide information about the data points in the series
 
 <!-- markdownlint-disable MD036 -->
 
-Markers can be added to the points by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) option of the marker property.
+Markers can be added to points by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) option of the marker property. By default, distinct markers will be enabled for each series in the chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +48,7 @@ Markers can be added to the points by enabling the [`Visible`](https://help.syn
 
 ## Shape
 
-Markers can be assigned with different shapes such as Rectangle, Circle, Diamond etc using the `Shape`property.
+Markers can be assigned with different shapes such as Rectangle, Circle, Diamond etc using the [`Shape`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -75,7 +75,7 @@ Markers can be assigned with different shapes such as Rectangle, Circle, Diamond
 
 
 
->Note : To know more about the marker shape type refer the [`Shape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartMarkerSettings.html#Syncfusion_EJ2_Charts_ChartMarkerSettings_Shape).
+N> To know more about the marker shape type refer the [`Shape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartMarkerSettings.html#Syncfusion_EJ2_Charts_ChartMarkerSettings_Shape).
 
 ## Images
 

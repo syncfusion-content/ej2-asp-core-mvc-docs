@@ -15,7 +15,7 @@ Edited data can be persisted in the database using the RESTful web services.
 
 All the CRUD operations in the treegrid are done through **DataManager**. The **DataManager** has an option to bind all the CRUD related data in server-side.
 
-> For your information, the ODataAdaptor persists data in the server as per OData protocol.
+N> For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
 In the following section, we have explained how to perform CRUD operation in server-side using the **UrlAdaptor** and **RemoteSave Adaptor**.
 
@@ -196,4 +196,4 @@ You can use the following code example to use **RemoteSaveAdaptor** in TreeGrid.
 
 
 
-> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.

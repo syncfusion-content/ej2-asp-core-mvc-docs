@@ -688,7 +688,7 @@ npm install @syncfusion/ej2
 
 * Run the application and see the fabric themes from installed npm packages were applied.
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-css-customization-using-webcompiler-)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-css-customization-using-webcompiler-)
 
 ## LibMan
 
@@ -748,7 +748,7 @@ For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `ww
 {% endhighlight %}
 {% endtabs %}
 
-> If you use individual control styles, you should install their dependent controls styles.
+N> If you use individual control styles, you should install their dependent controls styles.
 
 7.you can refer to the theme sheet which was downloaded from the client-side library in the `<head>` element of the **~/Pages/Shared/_Layout.cshtml** file.
 
@@ -765,7 +765,7 @@ For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `ww
 
 8.Run the application and see the bootstrap5 themes downloaded from LibMan were applied.
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-libman)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-libman)
 
 ## Change theme dynamically
 
@@ -835,4 +835,4 @@ public class ThemeDetails
 
 ![Change theme dynamically](images/dynamic-theme-switching.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-theme-switcher)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-theme-switcher)

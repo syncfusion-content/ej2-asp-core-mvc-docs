@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## File Manager Control
+title: Getting Started with ##Platform_Name## File Manager Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -27,7 +27,7 @@ This section briefly explains about how to include [ASP.NET Core FileManager](ht
 
 Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
@@ -234,7 +234,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![FileManager getting started](images/getting-started.PNG)
 
-> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for file manager service.
+N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for file manager service.
 
 ## File Download support
 
@@ -338,7 +338,7 @@ In this sample demonstrates the full features of the File Manager that includes 
 
 ![FileManager overview](./images/overview.PNG)
 
-> The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~CssClass.html) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
+N> The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~CssClass.html) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
 
 ## Switching initial view of the File Manager
 
@@ -397,7 +397,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
 
 ![FileManager enable persistence](images/enable_persistence.PNG)
 
-> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
+N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
 
 ## Rendering component in right-to-left direction
 
@@ -453,7 +453,7 @@ The following code snippet demonstrates specifying the current path in File Mana
 
 ![ASP.NET Core FileManager with Specific Path](images/path.png)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20Core%20Tag%20Helper%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

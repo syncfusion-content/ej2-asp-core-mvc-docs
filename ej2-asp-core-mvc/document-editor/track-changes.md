@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Track Changes in ##Platform_Name## Document Editor Component
+title: Track Changes in ##Platform_Name## Document Editor Control | Syncfusion
 description: Learn here all about track changes in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Track Changes
@@ -112,7 +112,7 @@ In DocumentEditor, we have built-in review panel in which we have provided suppo
 
 Document Editor provides support for protecting the document with `RevisionsOnly` protection. In this protection, all the users are allowed to view the document and do their corrections, but they cannot accept or reject any tracked changes in the document. Later, the author can view their corrections and accept or reject the changes.
 
-Document editor provides an option to protect and unprotect document using [`enforceProtection`](../api/document-editor/editor/#enforceprotection) and [`stopProtection`](../api/document-editor/editor/#stopprotection) API.
+Document editor provides an option to protect and unprotect document using `enforceProtection` and `stopProtection` API.
 
 The following example code illustrates how to enforce and stop protection in Document editor container.
 
@@ -139,4 +139,4 @@ Tracked changes only protection can be enabled in UI by using [Restrict Editing 
 
 ![Enable track changes only protection](images/tracked-changes.png)
 
->Note: In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly |RevisionsOnly`. In stop protection method, parameter denotes the password.
+N> In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly |RevisionsOnly`. In stop protection method, parameter denotes the password.

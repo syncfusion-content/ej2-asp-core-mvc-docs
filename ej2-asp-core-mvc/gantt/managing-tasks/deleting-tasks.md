@@ -38,8 +38,8 @@ A task delete option in the Gantt control can be enabled by enabling the [`EdiSe
 
 
 
-> You should select any one of the rows in the Gantt control to perform task delete action.
-> You should set the [`AllowDeleting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowDeleting) value to `true` to delete the record dynamically.
+N> You should select any one of the rows in the Gantt control to perform task delete action.
+<br/> You should set the [`AllowDeleting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowDeleting) value to `true` to delete the record dynamically.
 
 ## Delete confirmation message
 

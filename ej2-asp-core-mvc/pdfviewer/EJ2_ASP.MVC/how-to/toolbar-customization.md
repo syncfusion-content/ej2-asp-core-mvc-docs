@@ -153,7 +153,7 @@ new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-zoom-out-icon", Too
 </style>
 ```
 
->The icons are embedded in the font file used in above code snippet.
+N>The icons are embedded in the font file used in above code snippet.
 
 **Step 5:** Add the following scripts for performing user interaction in PDF Viewer in code behind
 

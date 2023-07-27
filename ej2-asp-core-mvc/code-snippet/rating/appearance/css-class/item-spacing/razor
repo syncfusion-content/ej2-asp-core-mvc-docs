@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+@Html.EJS().Rating("rating").Value(3).CssClass("custom-font").Render()
+
+<style>
+
+    .e-rating-container.custom-font .e-rating-item-container {
+        /* To change the size between items */
+        margin: 0px 7px;
+    }
+</style>

@@ -1,0 +1,13 @@
+<div>
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+</div>
+<script>
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        container.documentEditorSetting = {
+            optimizeSfdt: false
+        };
+    }
+</script>
