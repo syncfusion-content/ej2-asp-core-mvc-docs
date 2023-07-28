@@ -3,12 +3,12 @@ layout: post
 title: Tabs and Groups in ##Platform_Name## Ribbon Control | Syncfusion
 description: Learn here all about Tabs and Groups in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Tabs and Groups
+control: Ribbon
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Tabs and Groups in ASP.NET Core Ribbon Control
+# Tabs and Groups
 
 The Ribbon control consists of a series of tabs that are organized into groups to enable quick access to specific commands or tools. Each tab contains a set of groups, and each group contains collections of items that are logically related to each other.
 
@@ -47,3 +47,5 @@ You can add collections of items to each group by using the [collections](https:
 {% endtabs %}
 
 ![ASP.NET Core Ribbon Control with Items](./images/ribbon-items.png)
+
+> For more information on the built-in and how to add custom Ribbon items, you can visit the [`items`](./items) page.
