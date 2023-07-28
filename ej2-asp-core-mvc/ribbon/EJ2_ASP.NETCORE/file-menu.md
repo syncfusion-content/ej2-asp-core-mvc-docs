@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# File menu in ASP.NET Core Ribbon Control
+# File menu
 
 The Ribbon control provides a built-in file menu that allows you to add menu items for performing specific actions. The file menu can be enabled by setting the [fileMenu](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_FileMenu) property.
 
-## Visibility state
+## Visibility
 
 You can show the file menu by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_Visible) property to `true`. By default, the file menu is hidden.
 
@@ -38,7 +38,7 @@ The menu items can be added to the file menu using the [menuItems](https://help.
 
 ## Open submenu on click
 
-You can open the submenu on menu item click by setting the [showItemOnClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_ShowItemOnClick) property to `true`. By default, the submenu will open on mouse hover.
+You can open the submenu on menu item click, by setting the [showItemOnClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_ShowItemOnClick) property to `true`. By default, the submenu will open on mouse hover.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
