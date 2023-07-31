@@ -1,0 +1,12 @@
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Open").AllowOpen(true).OpenComplete("openComplete").Render()
+
+<script>
+
+    function openComplete(args) {
+        var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        if (spreadsheetObj) {
+            spreadsheetObj.activeSheetIndex = 2;
+        }
+    }
+
+</script>
