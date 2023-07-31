@@ -19,6 +19,8 @@ We can prevent the tab selection on touch swipe action by using the Tab [selecti
 
 We can prevent the tab selection on touch swipe action by using the Tab [selecting](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/aspnetmvc/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Tab~Selecting.html) &nbsp;event. Refer the below sample with preventing swipe selection.
 
+{% endif %}
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
