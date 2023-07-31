@@ -10,7 +10,7 @@
         ) {
             var text = 'custom header ' + args.colIndex.toString();
             // Add the custom text to the innerHTML of the element.
-            args.element.innerHTML = text;
+            args.element.innerText = text;
         }
     }
 
