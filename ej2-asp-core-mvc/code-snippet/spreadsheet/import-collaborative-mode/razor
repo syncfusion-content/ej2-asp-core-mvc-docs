@@ -11,11 +11,24 @@
         if (args.action != 'format') {  // prevent the format action
             connection.send('BroadcastData', JSON.stringify(args)); // send the action data to the server
         }
+        else {
+            // Send the action data to the server for other than import actions.
+            connection.send("BroadcastData", JSON.stringify(args));
+        }
     }
 
     connection.on('dataReceived', (data) => {
         var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
         var model = JSON.parse(data);
+        if ( model['action'] === undefined || '') {
+            // Load the imported excel file data as JSON to the connected clients.
+            var jsonData = { Workbook: model };
+            spreadsheetObj.openFromJson({ file: jsonData });
+        }
+        else {
+            // Update the action details to the connected clients.
+            spreadsheetObj.updateAction(model);
+        }
         spreadsheetObj.updateAction(model);
     });
 
