@@ -248,7 +248,7 @@ The `shapeId` is a unique identifier assigned to each freehand annotation within
 
 To retrieve the inserted freehand annotations, you can utilize the `getShapeSetting` method, which provides a collection of annotations represented by `ShapeSettings`. This method allows you to access and work with the annotations that have been inserted into the image.
 
-Here is an example of deleting a freehand annotation in a button click using DeleteShape method.
+Here is an example of deleting a freehand annotation in a button click using `deleteShape` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
