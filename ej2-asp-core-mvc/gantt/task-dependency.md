@@ -237,9 +237,9 @@ In this case, if the user dragging action violated the predecessor type then the
 
 ![Alt text](images/validateWithDialog.png)
 
-## Show/Hide dependency line by dynamic
+## Dynamically show/hide the dependency line
 
-By default, the dependency line is rendered in the Gantt Chart. However, if you want to show or hide the dependency line, add a dynamic button by using the change event and getting the class `.e-gantt-dependency-view-container.` Then, set the `visibility` style to `hidden.`
+By default, if we map dependency field in taskFields we will get dependency lines in Gantt chart. However, if we want to show/hide the dependency line dynamically in the button click, search for the element with class name `.e-gantt-dependency-view-container`, then set its `visibility` style to `hidden` to hide dependency lines from UI.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
