@@ -265,7 +265,6 @@ By default, the dependency line is rendered in the Gantt Chart. However, if you 
 {% endif %}
 
 
-
 The following screen shot dependencyline hide using dynamic button.
 
-![Alt text](images/predecessorWithOffset.png)
+![Alt text](images/showhide.png)

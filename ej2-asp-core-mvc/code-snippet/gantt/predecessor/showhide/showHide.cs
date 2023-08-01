@@ -7,7 +7,6 @@ public IActionResult Index()
 public static List<GanttDataSource> ProjectNewData()
 {
     List<GanttDataSource> GanttDataSourceCollection = new List<GanttDataSource>();
-
     GanttDataSource Record1 = new GanttDataSource()
     {
         TaskId = 1,
@@ -16,7 +15,6 @@ public static List<GanttDataSource> ProjectNewData()
         EndDate = new DateTime(2019, 04, 21),
         SubTasks = new List<GanttDataSource>(),
     };
-
     GanttDataSource Child1 = new GanttDataSource()
     {
         TaskId = 2,
@@ -25,16 +23,14 @@ public static List<GanttDataSource> ProjectNewData()
         Progress = 30,
         Duration = 3,
     };
-
     GanttDataSource Child2 = new GanttDataSource()
     {
         TaskId = 3,
         TaskName = "Defining target audience",
         StartDate = new DateTime(2019, 04, 02),
         Duration = 3,
-        Predecessor = "2FS+2d"
+        Predecessor = "2FS"
     };
-
     GanttDataSource Child3 = new GanttDataSource()
     {
         TaskId = 4,
@@ -42,12 +38,11 @@ public static List<GanttDataSource> ProjectNewData()
         StartDate = new DateTime(2019, 04, 02),
         Progress = 30,
         Duration = 2,
-        Predecessor = "3FF+960m"
+        Predecessor = "3FF"
     };
     Record1.SubTasks.Add(Child1);
     Record1.SubTasks.Add(Child2);
     Record1.SubTasks.Add(Child3);
-
     GanttDataSource Record2 = new GanttDataSource()
     {
         TaskId = 5,
@@ -56,7 +51,6 @@ public static List<GanttDataSource> ProjectNewData()
         Duration = 0,
         SubTasks = new List<GanttDataSource>(),
     };
-
     GanttDataSource Child4 = new GanttDataSource()
     {
         TaskId = 6,
@@ -65,7 +59,6 @@ public static List<GanttDataSource> ProjectNewData()
         EndDate = new DateTime(2019, 04, 21),
         SubTasks = new List<GanttDataSource>(),
     };
-
     GanttDataSource Child5 = new GanttDataSource()
     {
         TaskId = 7,
@@ -73,12 +66,10 @@ public static List<GanttDataSource> ProjectNewData()
         StartDate = new DateTime(2019, 04, 04),
         Duration = 4,
         Progress = 30,
-        Predecessor = "6SS+16h"
+        Predecessor = "6SS"
     };
-
     Record2.SubTasks.Add(Child4);
     Record2.SubTasks.Add(Child5);
-
     GanttDataSourceCollection.Add(Record1);
     GanttDataSourceCollection.Add(Record2);
 

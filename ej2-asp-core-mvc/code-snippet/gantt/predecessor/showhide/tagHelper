@@ -1,7 +1,6 @@
 @{
-    ...
+    .....
     List<GanttDataSource> GanttDataSourceCollection = new List<GanttDataSource>();
-
     GanttDataSource Record1 = new GanttDataSource()
     {
         TaskId = 1,
@@ -10,7 +9,6 @@
         EndDate = new DateTime(2019, 04, 21),
         SubTasks = new List<GanttDataSource>(),
     };
-
     GanttDataSource Child1 = new GanttDataSource()
     {
         TaskId = 2,
@@ -19,16 +17,14 @@
         Progress = 30,
         Duration = 3,
     };
-
     GanttDataSource Child2 = new GanttDataSource()
     {
         TaskId = 3,
         TaskName = "Defining target audience",
         StartDate = new DateTime(2019, 04, 02),
         Duration = 3,
-        Predecessor = "2FS+2d"
+        Predecessor = "2FS"
     };
-
     GanttDataSource Child3 = new GanttDataSource()
     {
         TaskId = 4,
@@ -36,12 +32,11 @@
         StartDate = new DateTime(2019, 04, 02),
         Progress = 30,
         Duration = 2,
-        Predecessor = "3FF+960m"
+        Predecessor = "3FF"
     };
     Record1.SubTasks.Add(Child1);
     Record1.SubTasks.Add(Child2);
     Record1.SubTasks.Add(Child3);
-
     GanttDataSource Record2 = new GanttDataSource()
     {
         TaskId = 5,
@@ -50,7 +45,6 @@
         Duration = 0,
         SubTasks = new List<GanttDataSource>(),
     };
-
     GanttDataSource Child4 = new GanttDataSource()
     {
         TaskId = 6,
@@ -59,7 +53,6 @@
         EndDate = new DateTime(2019, 04, 21),
         SubTasks = new List<GanttDataSource>(),
     };
-
     GanttDataSource Child5 = new GanttDataSource()
     {
         TaskId = 7,
@@ -67,19 +60,17 @@
         StartDate = new DateTime(2019, 04, 04),
         Duration = 4,
         Progress = 30,
-        Predecessor = "6SS+16h"
+        Predecessor = "6SS"
     };
-
     Record2.SubTasks.Add(Child4);
     Record2.SubTasks.Add(Child5);
-
     GanttDataSourceCollection.Add(Record1);
     GanttDataSourceCollection.Add(Record2);
 }
 
 <div class="switch-container">
-    <ejs-switch id="switch1" checked="false" change="onChange"></ejs-switch>
-    <label for="switch1" class="switch">Dependency Line Show/Hide</label>
+    <label for="switch" class="switch">Dependency Line Show/Hide</label>
+    <ejs-switch id="switch" checked="false" change="onChange"></ejs-switch>
 </div>
 
 <ejs-gantt id='Gantt' dataSource="GanttDataSourceCollection" height="450px">
@@ -90,26 +81,22 @@
 <script type="text/javascript">
     function onChange(args) 
     {
-        if (args.checked)
-        {
-            document.querySelector('.e-gantt-dependency-view-container')['style'].visibility = 'hidden';
+        var ganttDependencyViewContainer = document.querySelector('.e-gantt-dependency-view-container');
+        if (args.checked) {
+            ganttDependencyViewContainer.style.visibility = 'hidden';
         }
-        else
-        {
-            document.querySelector('.e-gantt-dependency-view-container')['style'].visibility = 'visible';
+        else {
+            ganttDependencyViewContainer.style.visibility = 'visible';
         }
     }
 </script>
 <style>
-
     .switch-container {
         display: flex;
         align-items: center;
         padding: 10px 0px 10px 0px;
     }
-
     .switch {
         margin-left: 10px; 
     }
-
 </style>

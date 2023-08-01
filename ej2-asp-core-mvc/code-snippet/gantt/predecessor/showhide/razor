@@ -1,3 +1,30 @@
+<div class="switch-container">
+    <label for="switch" class="switch">Dependency Line Show/Hide</label>
+    @Html.EJS().Switch("switch").Checked(false).Change("Change").Render()
+</div>
 
-   @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate(
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate(
       "StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").Child("SubTasks")).Render()
+
+<script type="text/javascript">
+    function Change(args) {
+        var ganttDependencyViewContainer = document.querySelector('.e-gantt-dependency-view-container');
+        if (args.checked) {
+            ganttDependencyViewContainer.style.visibility = 'hidden';
+        }
+        else {
+            ganttDependencyViewContainer.style.visibility = 'visible';
+        }
+    }
+</script>
+
+<style>
+    .switch-container {
+        display: flex;
+        align-items: center;
+        padding: 10px 0px 10px 0px;
+    }
+    .switch {
+        margin-left: 10px;
+    }
+</style>
