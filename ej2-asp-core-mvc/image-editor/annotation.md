@@ -254,10 +254,10 @@ Here is an example of deleting a freehand annotation in a button click using Del
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/annotation/delete-freehand-draw/tagHelper %}
+{% include code-snippet/image-editor/annotation/delete-free-hand-draw/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/annotation/delete-freehand-draw/default.cs %}
+{% include code-snippet/image-editor/annotation/delete-free-hand-draw/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -265,10 +265,10 @@ Here is an example of deleting a freehand annotation in a button click using Del
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/annotation/delete-freehand-draw/razor %}
+{% include code-snippet/image-editor/annotation/delete-free-hand-draw/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/annotation/delete-freehand-draw/default.cs %}
+{% include code-snippet/image-editor/annotation/delete-free-hand-draw/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

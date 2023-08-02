@@ -1,0 +1,32 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("pivotview").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).GridSettings(new PivotViewGridSettings { ColumnWidth = 140 }).AggregateCellInfo("aggregateCell").Render()
+<script>
+    function aggregateCell(args){
+        if (args.fieldName === 'Sold') {
+            args.value = secondsToHms(args.value);
+        }
+    }
+    function secondsToHms(d) {
+     d = Number(d);
+     var h = Math.floor(d / 3600);
+     var m = Math.floor((d % 3600) / 60);
+     var s = Math.floor((d % 3600) % 60);
+     return (
+          ('0' + h).slice(-2) + ':' + ('0' + m).slice(-2) + ':' + ('0' + s).slice(-2)
+     );
+}
+</script>
