@@ -10,7 +10,7 @@ documentation: ug
 
 # Customize number, date, and time values
 
-You can format the number, date, and time values for each field using [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html)  option under [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). It can be configured through code behind, during initial rendering.
+You can format the number, date, and time values for each field using [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html)  option under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). It can be configured through code behind, during initial rendering.
 
 ## Number formatting
 

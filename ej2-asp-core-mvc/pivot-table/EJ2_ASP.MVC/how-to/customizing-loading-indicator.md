@@ -10,9 +10,9 @@ documentation: ug
 
 # Customizing loading indicator
 
-You can customize the appearance of the loading indicator in the pivot table by using the [`spinnerTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SpinnerTemplate) property. This property accepts an HTML string which can be used for appearance customization.
+You can customize the appearance of the loading indicator in the pivot table by using the [`SpinnerTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SpinnerTemplate) property. This property accepts an HTML string which can be used for appearance customization.
 
-N> You can also disable the loading indicator by setting [`spinnerTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SpinnerTemplate) to empty string.
+N> You can also disable the loading indicator by setting [`SpinnerTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SpinnerTemplate) to empty string.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

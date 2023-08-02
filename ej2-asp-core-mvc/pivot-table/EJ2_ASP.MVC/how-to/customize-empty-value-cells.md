@@ -10,7 +10,7 @@ documentation: ug
 
 # Customize empty value cells
 
-You can show the custom string in the empty value cells using the [`emptyCellsTextContent`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_EmptyCellsTextContent) string type property in [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) object of the pivot table. It can be configured through code behind during initial rendering.
+You can show the custom string in the empty value cells using the [`EmptyCellsTextContent`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_EmptyCellsTextContent) string type property in [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) object of the pivot table. It can be configured through code behind during initial rendering.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

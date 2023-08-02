@@ -9,9 +9,9 @@ publishingplatform: ##Platform_Name##
 ---
 # Display string value to pivot table values
 
-End user can display string value to the pivot table's value cell by using the [`aggregateCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AggregateCellInfo) event.
+End user can display string value to the pivot table's value cell by using the [`AggregateCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AggregateCellInfo) event.
 
-In the following example, each cell value of the **Sold** field's actual value has been assigned from its combination data sets obtained from the `args.cellSets` in the [`aggregateCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AggregateCellInfo) event.
+In the following example, each cell value of the **Sold** field's actual value has been assigned from its combination data sets obtained from the `args.cellSets` in the [`AggregateCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AggregateCellInfo) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
