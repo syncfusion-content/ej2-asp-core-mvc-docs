@@ -25,10 +25,10 @@ Here is an example of brightness, contrast, and sharpness fine-tuning using the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/finetune/bightness/tagHelper %}
+{% include code-snippet/image-editor/finetune/brightness/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/finetune/bightness/default.cs %}
+{% include code-snippet/image-editor/finetune/brightness/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,10 +36,10 @@ Here is an example of brightness, contrast, and sharpness fine-tuning using the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/finetune/bightness/razor %}
+{% include code-snippet/image-editor/finetune/brightness/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/finetune/bightness/default.cs %}
+{% include code-snippet/image-editor/finetune/brightness/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
