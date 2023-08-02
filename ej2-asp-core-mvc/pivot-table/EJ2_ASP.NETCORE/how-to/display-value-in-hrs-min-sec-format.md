@@ -36,4 +36,4 @@ In the following example, each cell value of the **Sold** field's actual value 
 {% endtabs %}
 {% endif %}
 
-![output](../images/display-string-value.png)
+![Display string value to pivot table values](../images/display-string-value.png)

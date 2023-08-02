@@ -38,4 +38,4 @@ In the following example, the **complexToFlatJson()** method is used to convert 
 {% endtabs %}
 {% endif %}
 
-![output](../images/complex-to-flat-json.png)
+![Convert complex JSON to flat JSON and assign it to the pivot table](../images/complex-to-flat-json.png)

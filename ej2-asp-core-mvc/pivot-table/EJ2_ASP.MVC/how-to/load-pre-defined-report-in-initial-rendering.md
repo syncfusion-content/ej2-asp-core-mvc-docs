@@ -36,4 +36,4 @@ By default, the pivot table is displayed with the report bound at the code-behin
 {% endtabs %}
 {% endif %}
 
-![output](../images/load-pre-defined-report.png)
+![Load desired report from the report list as default](../images/load-pre-defined-report.png)

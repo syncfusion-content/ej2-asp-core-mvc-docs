@@ -37,4 +37,4 @@ The cell selection support is enabled using the [`allowSelection`](https://help.
 
 
 
-![output](../images/chart-selection.png)
+![Chart Based On Pivot Table Selection](../images/chart-selection.png)

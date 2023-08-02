@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show tooltip for row and column headers in Angular Pivotview component | Syncfusion
-description: Learn here all about Show tooltip for row and column headers in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: Show tooltip for row and column headers in ##Platform_Name## Pivot Table Component
+description: Learn here all about Show tooltip for row and column headers in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
 control: Show tooltip for row and column headers 
 documentation: ug
-domainurl: ##DomainURL##
+publishingplatform: ##Platform_Name##
 ---
 
-# Show tooltip for row and column headers in Angular Pivotview component
+# Show tooltip for row and column headers in ##Platform_Name## Pivot Table Component
 
 You can create and display the tooltip for each row and column header(s) in the pivot table by using an external tooltip component via the [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event.
 
@@ -35,4 +35,4 @@ You can create and display the tooltip for each row and column header(s) in the
 {% endtabs %}
 {% endif %}
 
-![output](../images/custom-tooltip.png)
+![Show tooltip for row and column headers](../images/custom-tooltip.png)

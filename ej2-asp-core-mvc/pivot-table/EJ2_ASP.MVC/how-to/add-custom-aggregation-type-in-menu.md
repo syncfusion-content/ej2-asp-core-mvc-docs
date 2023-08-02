@@ -39,4 +39,4 @@ In the following example, we have added the aggregation types **CustomAggregateT
 {% endtabs %}
 {% endif %}
 
-![output](../images/add-custom-aggregation-type-in-menu.png)
+![Add custom aggregation type to the menu](../images/add-custom-aggregation-type-in-menu.png)
