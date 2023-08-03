@@ -248,7 +248,7 @@ The following code example shows how to change the width for single/multiple col
 {% endtabs %}
 {% endif %}
 
-## Change the text in the column headers
+## Changing text in column headers
 
 Using the `beforeCellRender` event, you can change the text in the column headers. In that event, you can use the `e-header-cell` class to identify the header cell element and update its text value.
 
