@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Layouts in ASP.NET Core Ribbon Control
+# Ribbon Layouts
 
-The Ribbon offers to customize the layout by using the [activeLayout](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_ActiveLayout) property. The Ribbon control supports the following layouts:
+The Ribbon allows to customize the layout by using the [activeLayout](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_ActiveLayout) property. The Ribbon control supports the following layouts:
 
 ## Classic layout
 
-In classic layout, the Ribbon control organize the items and groups in a traditional form by setting the [activeLayout](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_ActiveLayout) property to [Classic](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonLayout.html). By default, the Ribbon control renders in `Classic` layout.
+In classic layout, the Ribbon control organizes the items and groups in a traditional form by setting the [activeLayout](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_ActiveLayout) property to [Classic](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonLayout.html). By default, the Ribbon control renders in the `Classic` layout.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -26,7 +26,7 @@ In classic layout, the Ribbon control organize the items and groups in a traditi
 
 ### Defining items size
 
-The [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property can be used to set the allowed size for an item. The Ribbon items can be appeared in three different sizes: Large(large icon with text), Medium(small icon with text) and Small(small icon only). On resizing, the items size can be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.
+You can use the [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property to set the allowed size for an item. The Ribbon items can be appeared in three different sizes: Large(large icon with text), Medium(small icon with text) and Small(small icon only). On resizing, the items size can be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -38,7 +38,7 @@ The [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 ### Defining items orientation
 
-The Ribbon group [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_Orientation) property allows to manage how the items are aligned. By default, the orientation is set to `Column`, in which the items are arranged vertically.
+The Ribbon group [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_Orientation) property allows to manage how the items are aligned either in a `Row` or `Column`. By default, the orientation is set to `Column`, in which the items are arranged vertically.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -52,7 +52,7 @@ The Ribbon group [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 ### Defining group header
 
-The [header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_Header) property is used to set the name for each group header.
+You can use the [header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_Header) property to set the name for each group header.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -64,7 +64,7 @@ The [header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 ### Defining group icon
 
-The [groupIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_GroupIconCss) property is used to customize the icons in the group overflow button. When the ribbon's size is adjusted, the group popup will appear.
+You can use the [groupIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_GroupIconCss) property to customize the icons in the group overflow button. When the ribbon's size is adjusted, the group popup will appear.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -76,7 +76,7 @@ The [groupIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 ### Enabling group launcher icon
 
-The [showLauncherIcon](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_ShowLauncherIcon) property can be used to enable or disable the launcher icon for each group. By default, the property is set to `false`.
+You can use the [showLauncherIcon](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_ShowLauncherIcon) property to enable or disable the launcher icon for each group. By default, the property is set to `false`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -88,7 +88,7 @@ The [showLauncherIcon](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 #### Customize launcher icon
 
-The [launcherIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_LauncherIconCss) property is used to customize the launcher icon by applying the custom styles.
+You can use the [launcherIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_LauncherIconCss) property to customize the launcher icon by applying the custom styles.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -100,7 +100,7 @@ The [launcherIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 ### Defining group collapsible state
 
-The [isCollapsible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_IsCollapsible) property can determine whether a group can be collapsed or not during resize. By default, the property is set to `true`. To prevent the group from being collapsed, set the property to `false`.
+You can use the [isCollapsible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_IsCollapsible) property to determine whether the group is collapsed or not during resize. By default, the property is set to `true`. To prevent the group from being collapsed, set the property to `false`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -112,7 +112,7 @@ The [isCollapsible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 #### Defining priority order for group collapse or expand
 
-The [priority](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_Priority) property define's the priority order for each group which should be collapsed or expanded on resizing. When collapsing, higher priority values are fetched first. When expanding, lower priority values are fetched first.
+You can use the [priority](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_Priority) property to set the priority order for each group which should be collapsed or expanded on resizing. When collapsing, higher priority values are fetched first. When expanding, lower priority values are fetched first.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -124,7 +124,7 @@ The [priority](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribb
 
 ## Simplified layout
 
-In simplified layout, the Ribbon control organize the items and groups into a single row by setting the [activeLayout](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_ActiveLayout) property to [Simplified](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonLayout.html).
+In simplified layout, the Ribbon control organizes the items and groups into a single row by setting the [activeLayout](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_ActiveLayout) property to [Simplified](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonLayout.html).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -136,7 +136,7 @@ In simplified layout, the Ribbon control organize the items and groups into a si
 
 ### Enabling group overflow popup
 
-The [enableGroupOverflow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_EnableGroupOverflow) property defines whether to add a separate popup for the overflow items in the group while resizing. The overflow items will appear in the standard overflow popup located at the right end of the tab content if it is set to `false`.
+You can use the [enableGroupOverflow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_EnableGroupOverflow) property to add a separate popup for the overflow items in the group while resizing. The overflow items will appear in the common overflow popup, located at the right end of the tab content if it is set to `false`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -150,7 +150,8 @@ The [enableGroupOverflow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 You can hide the Ribbon contents and display only the tab headers by double-clicking on the tab header. In minimized state, the Ribbon control expands to its normal state when click on the tab header.
 
-Also, you can render or programmatically change the Ribbon control to minimized state by setting the [isMinimized](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_IsMinimized) property to `true`.
+You can use the [isMinimized](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_IsMinimized) property to change the Ribbon component to minimized state. By default, the value is `false`.
+
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
