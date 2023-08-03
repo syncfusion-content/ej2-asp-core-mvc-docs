@@ -1,4 +1,4 @@
-<ejs-spreadsheet id="spreadsheet" openUrl="Open" allowOpen = "true" openComplete="openComplete">
+<ejs-spreadsheet id="spreadsheet" openUrl="Open" openComplete="openComplete">
 
 </ejs-spreadsheet>
 
