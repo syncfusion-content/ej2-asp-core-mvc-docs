@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Changing the active sheet while importing a file in ##Platform_Name## Spreadsheet Control | Syncfusion
-description: Learn here all about changing the active sheet index while importing a file in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
+description: Learn here all about changing the active sheet index while importing a file in Syncfusion ##Platform_Name## Spreadsheet control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Spreadsheet
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-## Changing the active sheet while importing a file in Spreadsheet Control
+## Changing the active sheet while importing a file in ##Platform_Name## Spreadsheet Control
 
 You can change the active sheet of imported file by updating [`activeSheetIndex`](https://ej2.syncfusion.com/react/documentation/api/spreadsheet/#activesheetindex) property on the [`openComplete`](https://ej2.syncfusion.com/react/documentation/api/spreadsheet/#opencomplete) event.
 
