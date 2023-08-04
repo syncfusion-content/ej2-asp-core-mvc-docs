@@ -10,7 +10,7 @@ documentation: ug
 
 # Configure data grid options on editing mode
 
-You can access the data grid options such as sort, group, filter on editing mode using the `beginDrillThrough` event in the pivot table. The event occurs in every value cell on double click and provides the data grid information before display the drill through grid pop-up.
+You can access the data grid options such as sort, group, filter on editing mode using the [`BeginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) event in the pivot table. The event occurs in every value cell on double click and provides the data grid information before display the drill through grid pop-up.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

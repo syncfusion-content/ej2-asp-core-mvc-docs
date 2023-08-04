@@ -10,11 +10,11 @@ documentation: ug
 
 # Tooltip
 
-The Ribbon supports tooltips, which give users more information when they hover over items and improving the user experience.
+The Ribbon component supports tooltip to show additional information in the Ribbon items. The tooltip appears when the user hovers over a Ribbon item.
 
 ## Adding Title
 
-The [Title](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_Title) property is used to set the tooltip title for each Ribbon item.
+You can use the [Title](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_Title) property to set the tooltip title for each Ribbon item.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -69,7 +69,7 @@ The [Title](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.R
 
 ## Adding Content
 
-The [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_Content) property can be used to set the tooltip content for each Ribbon item.
+You can use the [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_Content) property to set the tooltip content for each Ribbon item.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -125,7 +125,7 @@ The [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon
 
 ## Adding Icon
 
-In addition to the text and content, by using [IconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_IconCss) property you can define the custom style for the icons.
+You can use the [IconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_IconCss) property to specify the icons to be displayed in the tooltip.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -178,9 +178,9 @@ In addition to the text and content, by using [IconCss](https://help.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-## Tooltip Customization
+## Customization
 
-The [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_CssClass) property can be used to customize the appearance of the tooltip with your own custom styles.
+You can use the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonTooltipSettings.html#Syncfusion_EJ2_Ribbon_RibbonTooltipSettings_CssClass) property to customize the appearance of the tooltip with your own custom styles.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

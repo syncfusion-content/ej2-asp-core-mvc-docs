@@ -10,7 +10,7 @@ documentation: ug
 
 # Customize number, date, and time values
 
-You can format the number, date, and time values for each field using `formatSettings` option under `dataSourceSettings`. It can be configured through code behind, during initial rendering.
+You can format the number, date, and time values for each field using [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) option under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). It can be configured through code behind, during initial rendering.
 
 ## Number formatting
 
@@ -19,7 +19,7 @@ For numbers, the formatting settings required to apply through code behind are:
 * `name`: It allows to set the field name.
 * `format`: It allows to set the format of the respective field.
 
-N> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in `formatSettings` itself.
+N> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -56,7 +56,7 @@ For date and time, the formatting settings required to apply through code behind
 * `format`: It allows to set the format of the respective field.
 * `type`: It allows to set the type of format to be used for the respective field.
 
-N> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime) options in `formatSettings` itself.
+N> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime) options in [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
