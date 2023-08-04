@@ -37,8 +37,6 @@ The rendered pivot table can be printed directly from the browser by invoking th
 
 Similarly, to print the pivot chart, use the `print` method from the chart's instance. The below sample code illustrates the print option being invoked by an external button click.
 
-> To use pivot chart, you need to inject the `PivotChart` module in the pivot table.
-
 > To display the pivot chart, set the [`PivotViewDisplayOption`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html) property to either **Chart** or **Both**. 
 
 {% if page.publishingplatform == "aspnet-core" %}
