@@ -248,7 +248,28 @@ The following code example shows how to change the width for single/multiple col
 {% endtabs %}
 {% endif %}
 
+## Changing text in column headers
 
+Using the `beforeCellRender` event, you can change the text in the column headers. In that event, you can use the `e-header-cell` class to identify the header cell element and update its text value.
+
+The following code example shows how to change the text in the column headers.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/column-header-change/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/column-header-change/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Limitations of insert and delete
 
