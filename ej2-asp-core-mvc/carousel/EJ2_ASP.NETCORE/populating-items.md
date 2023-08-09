@@ -85,7 +85,7 @@ The Carousel component supports to show one complete slide and a partial view of
 
 N> Slide animation only applicable if the `partialVisible` is enabled.
 
-The last slide will be displayed as a partial slide at the initial rendering when the [`loop`](../api/carousel/#loop) and `partialVisible` properties are enabled.
+The last slide will be displayed as a partial slide at the initial rendering when the [`loop`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.navigations.carousel.html#Syncfusion_EJ2_Navigations_Carousel_Loop) and `partialVisible` properties are enabled.
 
 The previous slide is not displayed at the initial rendering when the `loop` is disabled.
 

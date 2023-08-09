@@ -9,7 +9,7 @@
             args.element.classList.contains('e-header-cell')
         ) {
             var text = 'custom header ' + args.colIndex.toString();
-            // Add the custom text to the innerHTML of the element.
+            // Add the custom text to the innerText of the element.
             args.element.innerText = text;
         }
     }

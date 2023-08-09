@@ -8,7 +8,7 @@
     }).build();
 
     function actionComplete(args) {
-        connection.send('BroadcastData', JSON.stringify(args)); 
+        connection.send('BroadcastData', JSON.stringify(args));
     }
 
     connection.on('dataReceived', (data) => {
