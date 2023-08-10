@@ -10,13 +10,15 @@ documentation: ug
 
 # Ribbon Resizing
 
-The Ribbon effectively resizes the ribbon elements while being resized. It extends when the ribbon size is increased and collapses when the ribbon size is decreased. The resizing can be performed in both the classic and simplified modes.
+The Ribbon effectively resizes the ribbon elements while being resized. It extends when the ribbon size is increased and collapses when the ribbon size is decreased. The resizing can be performed in both the classic and simplified modes. Also, we have an option to resize the ribbon elements in the custom order.
 
-By default, the ribbon elements are resized based on the group size with larger groups collapsing first, later the medium and small sized items.
+In classic mode on resizing, the items size will be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.
+
+In simplified mode on resizing, the items size will be changed based on the available width of the tab content from the order of Medium-> Small and viceversa.
 
 ## Defining items allowed size
 
-The [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property is used to maintain a constant size for an item when being resized. You can limit an items size by specifying its `allowedSizes` which keeps the size constant even when the Ribbon is being resized.
+You can use the [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property to maintain a constant size for an item. If `allowedSizes` is set, it keeps the size constant even when being resized.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -49,6 +51,4 @@ The [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 ## Defining items active size
 
-The [activeSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_ActiveSize) read-only property is used to set the size of the item which is displayed intially before it is being resized.
-
-> On resizing, the items size will be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.
+You can use the [activeSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_ActiveSize) property to define the item size intially, before it is being resized. When resized the `activeSize` property is updated based on the ribbon's overflow state, which is determined by the `allowedSizes` property being configured. By default, the value is `Medium`.

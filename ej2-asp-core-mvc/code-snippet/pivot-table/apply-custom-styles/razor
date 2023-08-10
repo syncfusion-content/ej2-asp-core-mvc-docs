@@ -1,0 +1,44 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).GridSettings(gridSettings => gridSettings.QueryCellInfo("querycell").HeaderCellInfo("headerCellInfo")).Render()
+<style>
+    .e-custom {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px !important;
+        background-color: pink !important;
+    }
+</style>
+<script>
+    function queryCell(args) {
+         var colIndex = Number(args.cell.getAttribute('data-colindex'));
+         var cells = args.data[colIndex] ? args.data[colIndex] : {};
+         // Here by using 'actualText' option, a custom class can be added to the specific row header and its value to apply custom style.
+         if (cells.actualText === 'Germany') {
+              args.cell.classList.add('e-custom');
+         } else if (cells.actualText === 'Amount' &&
+              cells.columnHeaders === 'FY 2016' && cells.rowHeaders === 'Germany') {
+              args.cell.classList.add('e-custom');
+         }
+    }
+    function headerCellInfo(args) {
+            var customAttributes = args.cell.column.customAttributes;
+            // Here custom class can be added to the specific column header by using unique level name, to apply custom style.
+            if (args.node.classList.contains('e-columnsheader') && customAttributes && 
+                customAttributes.cell.valueSort.levelName === 'FY 2016.Sold Amount') {
+                args.node.classList.add('e-custom');
+            }
+    }
+</script>
