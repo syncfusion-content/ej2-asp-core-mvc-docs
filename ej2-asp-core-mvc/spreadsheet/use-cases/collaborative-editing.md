@@ -143,7 +143,7 @@ The following code example shows how to prevent collaborative client from updati
 
 ## Perform import action for collaborative clients
 
-Using the `action` argument from the `actionComplete` event, you can identity whether the import action is performed or not. If the action is `import`, then you need to send the `response data` to the server and also update the same to the collaborative clients.
+Using the `action` argument from the [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_ActionComplete) event, you can identity whether the import action is performed or not. If the action is `import`, then you need to send the `response data` to the server and also update the same to the collaborative clients.
 
 The following code example shows how to perform the import functionality for collaborative clients.
 
