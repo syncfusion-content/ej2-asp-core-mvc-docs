@@ -10,7 +10,7 @@ documentation: ug
 
 # Show field list when pivot table is empty
 
-When there are no fields in a pivot table's row, column, value, and filter axes, a field list can still be displayed. To do so, use the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event and call the `onShowFieldList` method as shown below.
+When there are no fields in a pivot table's row, column, value, and filter axes, a field list can still be displayed. To do so, use the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound)event and call the `onShowFieldList` method as shown below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,4 +37,4 @@ When there are no fields in a pivot table's row, column, value, and filter axes,
 
 
 
-![output](../images/empty-report-all-axes.png)
+![Show field list when pivot table is empty](../images/empty-report-all-axes.png)

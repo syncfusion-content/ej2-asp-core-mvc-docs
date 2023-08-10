@@ -13,11 +13,13 @@ documentation: ug
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-We can prevent the tab selection on touch swipe action by using the Tab [selecting](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Tab~Selecting.html) &nbsp;event. Refer the below sample with preventing swipe selection.
+We can prevent the tab selection on touch swipe action by using the Tab [selecting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_Selecting) &nbsp;event. Refer the below sample with preventing swipe selection.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-We can prevent the tab selection on touch swipe action by using the Tab [selecting](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/aspnetmvc/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Tab~Selecting.html) &nbsp;event. Refer the below sample with preventing swipe selection.
+We can prevent the tab selection on touch swipe action by using the Tab [selecting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_Selecting) &nbsp;event. Refer the below sample with preventing swipe selection.
+
+{% endif %}
 
 {% if page.publishingplatform == "aspnet-core" %}
 
