@@ -239,7 +239,7 @@ In this case, if the user dragging action violated the predecessor type then the
 
 ## Dynamically show/hide the dependency line
 
-By default, if we map dependency field in taskFields we will get dependency lines in Gantt chart. However, if we want to show/hide the dependency line dynamically in the button click, search for the element with class name `.e-gantt-dependency-view-container`, then set its `visibility` style to `hidden` to hide dependency lines from UI.
+By default, mapping the dependency field in taskFields displays dependency lines in the Gantt chart. To hide the dependency line upon button click, set `visibility` style to hidden for the CSS class name `.e-gantt-dependency-view-container`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
