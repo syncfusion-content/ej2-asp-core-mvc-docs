@@ -17,6 +17,8 @@ The time slots are usually the time cells that are displayed on the Day, Week an
 * `interval` – Defines the time duration on which the time axis to be displayed either in 1 hour or 30 minutes interval and so on. It accepts the values in minutes and defaults to 60.
 * `slotCount` – Decides the number of slot count to be split for the specified time interval duration. It defaults to 2, thus displaying two slots to represent an hour(each slot depicting 30 minutes duration).
 
+>Note: The maximum slots we can render on a single day using the **interval** and **slotCount** properties of **timeScale** is 1000. Since the maximum **colspan** that we can use in the **table** element is 1000. So, it is not possible to use more than 1000 slots per day on Scheduler.
+
 ## Setting different time slot duration
 
 The `interval` and `slotCount` properties can be used together on the Scheduler to set different time slot duration which is depicted in the following code example. Here, six time slots together represents an hour.
