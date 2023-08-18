@@ -13,11 +13,11 @@ documentation: ug
 
 # Render chart from code behind and update the chart using partial view
 
-You can render the charts from code behind and update the charts in partial view by calling the partial view action method in ajax.
+You can render the charts from code behind and update the charts in partial view by calling the partial view action method in fetch.
 
 Follow the given steps to render and update the charts from code behind.
 
-**Step 1**: Initially, render the home view page, and then call the partial view action method via ajax call in the home view page. In that chart is rendered using client side content.
+**Step 1**: Initially, render the home view page, and then call the partial view action method via fetch call in the home view page. In that chart is rendered using client side content.
 
 ```html
 <div class="row" style="margin-top:10px">
@@ -30,13 +30,13 @@ Follow the given steps to render and update the charts from code behind.
 
 <script>
     function refreshChart() {
-        var ajax = new ej.base.Ajax();
-        ajax.url = "@Url.Action("Create")";
-        ajax.type = "GET";
-        ajax.successHandler = function (args) {
+        var fetchApi = new ej.base.Fetch();
+        fetchApi.url = "@Url.Action("Create")";
+        fetchApi.type = "GET";
+        fetchApi.successHandler = function (args) {
             $('#container').html(args);
         }
-        ajax.send();
+        fetchApi.send();
     }
 </script>
 
@@ -45,7 +45,7 @@ Follow the given steps to render and update the charts from code behind.
 **Initial Chart**
 ![Alt text](images/initialview.png)
 
-**Step 2**: Then create chart model properties in controller page. After initial rendering then update the created chart properties in the home view page through partial view action method in ajax call.
+**Step 2**: Then create chart model properties in controller page. After initial rendering then update the created chart properties in the home view page through partial view action method in fetch call.
 
 ```cs
 // partial view action method
