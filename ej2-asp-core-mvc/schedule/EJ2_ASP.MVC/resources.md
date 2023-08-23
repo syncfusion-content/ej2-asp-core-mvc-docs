@@ -483,7 +483,7 @@ It is possible to expand and collapse the resources which have child resource in
 {% endif %}
 
 
-![Hide child resources with timeline views in ASP.NET Core Scheduler](images/scheduler-collapse-child-resource-timelineview.png)
+![Hide child resources with timeline views in ASP.NET MVC Scheduler](images/scheduler-collapse-child-resource-timelineview.png)
 
 ## Displaying tooltip for resource headers
 
