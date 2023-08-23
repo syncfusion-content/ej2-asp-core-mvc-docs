@@ -1,0 +1,17 @@
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).RenderBaseline(
+        true).Height("450px").TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").BaselineStartDate(
+           "BaselineStartDate").Duration("Duration").BaselineEndDate("BaselineEndDate").Progress("Progress").Child("SubTasks").Dependency("Dependency")).ProjectStartDate(
+              "04/01/2019").ProjectEndDate("04/30/2019").BeforeTooltipRender("BeforeTooltipRender").EditSettings(es=>
+                    es.AllowAdding(true).AllowEditing(true).AllowDeleting(true).AllowTaskbarEditing(true)).Render()
+
+<script type="text/javascript">
+    function BeforeTooltipRender(args) {
+        if (args.args.target.classList.contains('e-gantt-child-taskbar') ||
+            args.args.target.classList.contains('e-gantt-parent-taskbar') ||
+            args.args.target.classList.contains('e-taskbar-left-resizer') ||
+            args.args.target.classList.contains('e-taskbar-right-resizer')) 
+        {
+            args.cancel = true;
+        }
+    }
+</script>
