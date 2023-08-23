@@ -1,0 +1,21 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Filemanager element declaration -->
+        <ejs-filemanager id="file" allowDragAndDrop="true" created="onCreated">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+    // Utilize the created event to prevent external drag and drop
+    function OnCreated() {
+        var filemanager = document.getElementById("file").ej2_instances[0];
+        // setting dropArea value as null
+        filemanager.uploadObj.dropArea = null;
+    }
+</script>
