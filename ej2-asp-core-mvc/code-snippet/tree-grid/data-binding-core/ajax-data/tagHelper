@@ -14,12 +14,12 @@
 <script>
     document.getElementById("updateTree").addEventListener("click", function (e) {
         var treegrid = document.getElementById('TreeGrid').ej2_instances[0];
-        var ajax = new ej.base.Ajax('https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData', 'GET');
+        var fetch  = new ej.base.Fetch('https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData', 'GET');
         treegrid.showSpinner();
-        ajax.send();
-        ajax.onSuccess = function (data) {
+        fetch.send();
+        fetch.onSuccess = function (data) {
             treegrid.hideSpinner();
-            treegrid.dataSource = JSON.parse(data);
+            treegrid.dataSource = data;
         };
     });
 </script>
