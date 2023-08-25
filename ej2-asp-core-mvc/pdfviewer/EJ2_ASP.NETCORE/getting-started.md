@@ -396,9 +396,7 @@ In the above code,
 
 **serviceUrl** is necessary to communicate with the server which also specifies the path of the controller. Here, PdfViewer is the name of the controller.
 
-**documentPath** is the property needed to load a PDF file in the PDF Viewer. The specified document must be placed inside the folder structure that matches with the path in the GetDocumentPath(string document) method inside the PdfViewerController.
-
-N> Add the PDF document to the `wwwroot` directory in the ASP.NET Core application.
+**documentPath** is the property needed to load a PDF file in the PDF Viewer.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core PDF Viewer control will be rendered in the default web browser.
 
