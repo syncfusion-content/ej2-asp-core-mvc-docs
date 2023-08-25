@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core PDF Viewer control
+# Getting Started with ASP.NET Core Standalone PDF Viewer control
 
 The [ASP.NET Core PDF Viewer](https://www.syncfusion.com/aspnet-core-ui-controls/pdf-viewer) control is used to viewing and printing PDF files in any web application. It provides the best viewing experience available with core interactions such as zooming, scrolling, text searching, text selection, and text copying. Thumbnail, bookmark, hyperlink and table of contents support provides easy navigation within and outside the PDF files. 
 
@@ -119,7 +119,7 @@ Add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` 
 }
 
 <div class="text-center">
-    <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/Index" documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    <ejs-pdfviewer id="pdfviewer" style="height:600px" documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 
@@ -394,11 +394,7 @@ In the above code,
 
 **ejs-pdfviewer** refers to the PDFViewer control among the EJ components with id as "pdfviewer".
 
-**serviceUrl** is necessary to communicate with the server which also specifies the path of the controller. Here, PdfViewer is the name of the controller.
-
-**documentPath** is the property needed to load a PDF file in the PDF Viewer. The specified document must be placed inside the folder structure that matches with the path in the GetDocumentPath(string document) method inside the PdfViewerController.
-
-N> Add the PDF document to the `wwwroot` directory in the ASP.NET Core application.
+**documentPath** is the property needed to load a PDF file in the PDF Viewer.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core PDF Viewer control will be rendered in the default web browser.
 
