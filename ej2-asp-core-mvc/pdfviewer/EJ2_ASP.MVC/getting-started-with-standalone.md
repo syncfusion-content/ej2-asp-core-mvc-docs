@@ -82,6 +82,8 @@ Add the required scripts using CDN inside the `<head>` of `~/Views/Shared/_Layou
 {% endhighlight %}
 {% endtabs %}
 
+N> While referring the scripts from the downloaded resources in your application, make sure to place the 'ej2-pdfviewer-lib' assets in the same directory as the 'ej2.min.js' script.
+
 ## Register Syncfusion Script Manager
 
 Open `~/Views/Shared/_Layout.cshtml` page and register the script manager in the ASP.NET MVC application as follows. 

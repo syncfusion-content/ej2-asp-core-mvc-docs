@@ -136,6 +136,7 @@ using Syncfusion.EJ2.PdfViewer;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Reflection;
+using System.Net;
 
 namespace PDFViewerSample.Pages
 {
@@ -170,7 +171,15 @@ namespace PDFViewerSample.Pages
                     }
                     else
                     {
-                        return this.Content(jsonObject["document"] + " is not found");
+                        string fileName = jsonObject["document"].Split(new string[] { "://" }, StringSplitOptions.None)[0];
+                        if (fileName == "http" || fileName == "https")
+                        {
+                            WebClient WebClient = new WebClient();
+                            byte[] pdfDoc = WebClient.DownloadData(jsonObject["document"]);
+                            stream = new MemoryStream(pdfDoc);
+                        }
+                        else
+                            return this.Content(jsonObject["document"] + " is not found");
                     }
                 }
                 else

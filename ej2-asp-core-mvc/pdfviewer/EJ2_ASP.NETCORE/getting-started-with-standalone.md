@@ -31,14 +31,11 @@ This section briefly explains about how to integrate ASP.NET Core PDF Viewer con
 
 ## ASP.NET Core PDF Viewer NuGet package installation
 
-To add ASP.NET Core PDF Viewer control, the following NuGet package need to be installed in your ASP.NET Core application based on the operating system of the server you intend to host.
+To add ASP.NET Core PDF Viewer control, the following NuGet package need to be installed in your ASP.NET Core application.
 
-* For **Windows**, use [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and [Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows/)
-* For **Linux**, use [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and [Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux/)
-* For **macOS**, use [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and [Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX/)
+* [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/)
 
-N> A new package called the [Syncfusion.EJ2.PdfViewer.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core) is introduced in the **21.1.0.35 (2023 Volume 1)** release, which is a multi-targeting package. This differs from the previous approach of platform-specific packages such as "Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows," "Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux," and "Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX". With the new multi-targeting package, all of these platforms will be supported by a single package.
-This simplifies the development process for developers using the Essential Studio, as they no longer need to worry about selecting the correct package for their operating system. Overall, this change should make it easier and more convenient for developers to use Essential Studio's PDF Viewer control in their applications.
+* [Syncfusion.EJ2.PdfViewer.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core)
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
@@ -85,6 +82,8 @@ Add the required scripts using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 
 {% endhighlight %}
 {% endtabs %}
+
+N> While referring the scripts from the downloaded resources in your application, make sure to place the 'ej2-pdfviewer-lib' assets in the same directory as the 'ej2.min.js' script.
 
 ## Register Syncfusion Script Manager
 
@@ -136,6 +135,7 @@ using Syncfusion.EJ2.PdfViewer;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Reflection;
+using System.Net;
 
 namespace PDFViewerSample.Pages
 {
@@ -170,7 +170,15 @@ namespace PDFViewerSample.Pages
                     }
                     else
                     {
-                        return this.Content(jsonObject["document"] + " is not found");
+                        string fileName = jsonObject["document"].Split(new string[] { "://" }, StringSplitOptions.None)[0];
+                        if (fileName == "http" || fileName == "https")
+                        {
+                            WebClient WebClient = new WebClient();
+                            byte[] pdfDoc = WebClient.DownloadData(jsonObject["document"]);
+                            stream = new MemoryStream(pdfDoc);
+                        }
+                        else
+                            return this.Content(jsonObject["document"] + " is not found");
                     }
                 }
                 else
