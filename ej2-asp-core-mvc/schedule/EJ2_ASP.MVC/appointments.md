@@ -1158,6 +1158,8 @@ N> By default, the event editor is prevented to open on the read-only events whe
 
 You can restrict the users to create and update more than one appointment on specific time slots. Also, you can disable the CRUD action on those time slots if it is already occupied, which can be achieved using Scheduler's public method `isSlotAvailable`.
 
+>Note: The existing **isSlotAvailable** method currently focuses on validating appointments within the current view date range. However, it does not extend this availability check to recurrence occurrences outside of the current date range.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

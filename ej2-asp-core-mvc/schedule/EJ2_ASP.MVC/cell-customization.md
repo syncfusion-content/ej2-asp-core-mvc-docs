@@ -46,6 +46,8 @@ The height and width of the Scheduler cells can be customized either to increase
 
 You can check whether the given time range slots are available for event creation or already occupied by other events using the `isSlotAvailable` method. In the following code example, if a specific time slot already contains an appointment, then no more appointments can be added to that cell.
 
+>Note: The existing **isSlotAvailable** method currently focuses on validating appointments within the current view date range. However, it does not extend this availability check to recurrence occurrences outside of the current date range.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
