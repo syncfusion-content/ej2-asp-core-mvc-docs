@@ -400,7 +400,7 @@ namespace PDFViewerSample.Pages
 
 In the above code,
 
-**ejs-pdfviewer** refers to the PDFViewer control among the EJ components with id as "pdfviewer".
+**ejs-pdfviewer** refers to the PDF Viewer control among the EJ components with id as "pdfviewer".
 
 **documentPath** is the property needed to load a PDF file in the PDF Viewer.
 

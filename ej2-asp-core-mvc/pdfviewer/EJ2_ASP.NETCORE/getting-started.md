@@ -401,7 +401,7 @@ namespace PDFViewerSample.Pages
 
 In the above code,
 
-**ejs-pdfviewer** refers to the PDFViewer control among the EJ components with id as "pdfviewer".
+**ejs-pdfviewer** refers to the PDF Viewer control among the EJ components with id as "pdfviewer".
 
 **serviceUrl** is necessary to communicate with the server which also specifies the path of the controller. Here, PdfViewer is the name of the controller.
 
