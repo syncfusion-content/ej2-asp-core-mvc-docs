@@ -1,0 +1,31 @@
+@(Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource)
+    .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").Child("SubTasks"))
+    .EditSettings(es => es.AllowAdding(true).AllowEditing(true).AllowDeleting(true).AllowTaskbarEditing(true).ShowDeleteConfirmDialog(true))
+    .Toolbar(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel" })
+    .Columns(col =>
+                {
+                    col.Field("TaskId").Width(80).Add();
+                    col.Field("TaskName").HeaderText("Job Name").Width(250).Add();
+                    col.Field("StartDate").Add();
+                    col.Field("Duration").Add();
+                    col.Field("Progress").Add();
+                    col.Field("Predecessor").Add();
+                    col.Field("Custom").Visible(false).Add();
+                })
+                .ActionBegin("actionBegin").ActionComplete("actionComplete")
+                .Render())
+
+<script type="text/javascript">
+    function actionBegin(args) {
+        var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+        if (args.requestType === 'beforeOpenEditDialog') {
+            ganttObj.columnByField["Custom"].visible = true;
+        }
+    }
+    function actionComplete(args) {
+        var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+        if (args.requestType === 'openEditDialog') {
+            ganttObj.columnByField["Custom"].visible = false;
+        }
+    }
+</script>
