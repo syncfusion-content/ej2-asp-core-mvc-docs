@@ -135,3 +135,100 @@ By using cell/ dialog edit option, we can add/remove the multiple resources for 
 ![Cell Edit](images/cellEdit-resource.png)
 
 ![Dialog Edit](images/dialogedit-resource.png)
+
+## Restricting Multiselect Resource Selection During Editing
+
+In the Gantt chart, when editing task resources in the edit dialog, the default behavior allows for multiple resource selections. However, there might be cases where you want to dynamically change the resource selection to a single selection during editing. This can be achieved using the `actionBegin` and `actionComplete` events. These events help restrict the resource selection to a single resource during the editing process.
+
+### Using the `actionBegin` and `actionComplete` events
+
+By utilizing the `actionBegin` and `actionComplete` events, you can customize the resource selection behavior during the editing process. The goal is to ensure that only one resource can be selected at a time when editing a task.
+
+In this code example, the actionBegin event is used to remove the first column from the resource selection tab, which effectively restricts the multiple selection behavior.
+
+```js
+
+function actionBegin(args) 
+{
+    if (args.requestType == 'beforeOpenEditDialog' ||
+        args.requestType == 'beforeOpenAddDialog') 
+	{
+        args.Resources.columns.splice(0, 1);
+    }
+}
+
+```
+
+The actionComplete event is employed to customize the resource selection behavior when the resource tab is selected. In this case, the selection mode is changed to single selection mode, and the selection is adjusted based on the resource information.
+
+```js
+
+function actionComplete(args) 
+{
+    if (args.requestType == 'openEditDialog' ||
+        args.requestType == 'openAddDialog') 
+	{
+        var resources = args.data.ganttProperties.resourceInfo;
+        var tabObj = document.getElementById('Gantt_Tab')['ej2_instances'][0];
+        tabObj.selected = function (args) 
+		{
+            if (args.selectedIndex == 1) 
+			{
+                var gridObj = document.getElementById('GanttResourcesTabContainer_gridcontrol')['ej2_instances'][0];
+                gridObj.selectionSettings =
+                {
+                    checkboxOnly: false,
+                    type: 'Single',
+                    persistSelection: false,
+                };
+                var currentViewData = gridObj.getCurrentViewRecords();
+                var indexs = [];
+                if (resources && resources.length > 0) 
+				{
+                    currentViewData.forEach(function (data, index) 
+					{
+                        for (var i = 0; i < resources.length; i++) 
+						{
+                            if (data.taskData['resourceId'] === resources[i]['resourceId'] &&
+                                !ej.base.isNullOrUndefined(gridObj.selectionModule) &&
+                                gridObj.getSelectedRowIndexes().indexOf(index) === -1) 
+							{
+                                indexs.push(index);
+                            }
+                        }
+                        gridObj.selectRows(indexs);
+                    });
+                }
+            }
+        };
+    }
+}
+
+```
+
+The following code snippet shows how to restrict multiselect resource selection during editing in a Gantt control.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/resources/singleresource/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SingleResource.cs" %}
+{% include code-snippet/gantt/resources/singleresource/singleresource.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/resources/singleresource/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SingleResource.cs" %}
+{% include code-snippet/gantt/resources/singleresource/singleresource.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/singleresource.png)
