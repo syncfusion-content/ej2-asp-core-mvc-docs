@@ -23,7 +23,7 @@
 
 <script>
     function actionComplete(args) {
-        if (args.actionName == 'New report added' && args.actionName == 'Report saved') {
+        if (args.actionName == 'New report added' || args.actionName == 'Report saved') {
             // Triggers when the toolbar UI actions such as add new report and save current report icon are completed.
         }
     }

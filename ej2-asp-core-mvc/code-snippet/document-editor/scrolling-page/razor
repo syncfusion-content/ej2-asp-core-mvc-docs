@@ -64,5 +64,4 @@
         documenteditor.open(JSON.stringify(defaultDocument));
         documenteditor.focusIn();
     }
-
 </script>

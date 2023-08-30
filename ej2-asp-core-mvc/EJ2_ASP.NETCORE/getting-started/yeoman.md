@@ -14,7 +14,7 @@ documentation: ug
 
 This article provides a step-by-step introduction to configure Essential JS 2 setup and build a simple ASP.NET Core web application using the [Yeoman tool](http://yeoman.io/#) in [Visual Studio Code](https://code.visualstudio.com/) (VS Code).
 
-> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET Core application to use the components.
+N> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET Core application to use the components.
 
 ## Getting Started with ASP.NET Core
 
@@ -43,7 +43,7 @@ dotnet new webapp -n SyncfusionDemo
 {% endhighlight %}
 {% endtabs %}
 
-> If you are using [dotnet new](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new) command instead of [generator-aspnet](https://www.npmjs.com/package/generator-aspnet) then skip the next two steps.
+N> If you are using [dotnet new](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new) command instead of [generator-aspnet](https://www.npmjs.com/package/generator-aspnet) then skip the next two steps.
 
 2.After installing the Yeoman generator successfully, run the following command to invoke a ASP.NET Core project creation wizard.
 
@@ -81,7 +81,7 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 
 ![asp.net core vscode adding syncfusion package in the project](images/dotnetnew.png)
 
-> Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package), to learn more details about `dotnet add` command.
+N> Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package), to learn more details about `dotnet add` command.
 
 2.Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 

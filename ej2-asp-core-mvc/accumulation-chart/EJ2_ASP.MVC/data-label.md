@@ -37,7 +37,7 @@ Accumulation chart provides support for placing the data label either `Inside` o
 
 ## Smart labels
 
-Datalabels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`EnableSmartLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_EnableSmartLabels) property.
+Data labels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`EnableSmartLabels`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_EnableSmartLabels) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -87,6 +87,75 @@ Text from the data source can be mapped to data label using `Name` property.
 {% endhighlight %}
 {% endtabs %}
 
+## Format
+
+Data label for the accumulation chart can be formatted using [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/format/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Format.cs" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/format/format.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+<table>
+  <tr>
+    <th>Value</th>
+    <th>Format</th>
+    <th>Resultant Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>n1</td>
+    <td>1000.0</td>
+    <td>The number is rounded to 1 decimal place.</td>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>n2</td>
+    <td>1000.00</td>
+    <td>The number is rounded to 2 decimal places.</td>
+  </tr>
+   <tr>
+    <td>1000</td>
+    <td>n3</td>
+    <td>1000.000</td>
+    <td>The number is rounded to 3 decimal place.</td>
+  </tr>
+  <tr>
+    <td>0.01</td>
+    <td>p1</td>
+    <td>1.0%</td>
+    <td>The number is converted to percentage with 1 decimal place.</td>
+  </tr>
+  <tr>
+    <td>0.01</td>
+    <td>p2</td>
+    <td>1.00%</td>
+    <td>The number is converted to percentage with 2 decimal place.</td>
+  </tr>
+   <tr>
+    <td>0.01</td>
+    <td>p3</td>
+    <td>1.000%</td>
+    <td>The number is converted to percentage with 3 decimal place.</td>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>c1</td>
+    <td>$1000.0</td>
+    <td>The currency symbol is appended to number and number is rounded to 1 decimal place.</td>
+  </tr>
+   <tr>
+    <td>1000</td>
+    <td>c2</td>
+    <td>$1000.00</td>
+    <td>The currency symbol is appended to number and number is rounded to 2 decimal place.</td>
+  </tr>
+</table>
 ## Customization
 
 Individual text can be customized using the `TextRender` event.
@@ -99,6 +168,20 @@ Individual text can be customized using the `TextRender` event.
 {% include code-snippet/chart/accumulation-charts/datalabel/custom/custom.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## Text wrap
+
+When the data label text exceeds the container, the text can be wrapped by using ['textWrap'](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_TextWrap) property. End user can also wrap the data label text based on ['maxWidth'](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_MaxWidth) property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/textwrap/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Textwrap.cs" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/textwrap/textwrap.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 
 ## Show percentages in data labels of pie chart
 

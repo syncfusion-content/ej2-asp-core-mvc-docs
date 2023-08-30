@@ -29,7 +29,7 @@ ListView supports different kind of data services such as OData, OData V4, and W
 | sortBy | string | Specifies sorting field, that is used to sort the listview data. |
 | htmlAttributes | string | Specifies list item html attributes field. |
 
-> When complex data bind to ListView, you should map the fields properly. Otherwise, the ListView properties remain as undefined or null.
+N> When complex data bind to ListView, you should map the fields properly. Otherwise, the ListView properties remain as undefined or null.
 
 ## Bind to local data
 

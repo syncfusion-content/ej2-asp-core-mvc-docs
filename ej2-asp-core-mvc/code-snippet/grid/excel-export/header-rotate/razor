@@ -1,0 +1,64 @@
+@{
+    var data = new int[] { 90, 180, 45, 135 };
+}
+
+@Html.EJS().DropDownList("dropdown").Placeholder("Select a degree").DataSource(data).Render()
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowExcelExport().ToolbarClick("toolbarClick").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").CustomAttributes(new { @class = "orientationcss" }).Add();
+   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+
+}).Created("setHeaderHeight").ExcelQueryCellInfo("excelQueryCellInfo").ExcelHeaderQueryCellInfo("excelHeaderQueryCellInfo").Toolbar(new List<string>() { "ExcelExport" }).Render()
+
+<style>
+    .orientationcss .e-headercelldiv {
+        transform: rotate(90deg);
+    }
+</style>
+
+<script>
+    function toolbarClick(args) {
+        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_excelexport') {
+            gridObj.excelExport();
+        }
+    }
+
+    function excelHeaderQueryCellInfo(args) {
+        var dropdownObj = document.getElementById("dropdown").ej2_instances[0];
+        var textWidth = document.querySelector(".orientationcss > div").scrollWidth;
+        if (args.gridCell.column.field == 'Freight') {
+            args.style = { backColor: '#99ffcc', vAlign: 'Bottom' };
+        }
+        else {
+            args.style = { vAlign: 'Center', rotation: dropdownObj.value };
+        }
+        args.cell.cellHeight = textWidth;
+    }
+
+    function excelQueryCellInfo(args) {
+        if (args.column.field == 'Freight') {
+            if (args.value < 30) {
+                args.style = { backColor: '#99ffcc' };
+            }
+            else if (args.value < 60) {
+                args.style = { backColor: '#ffffb3' };
+            }
+            else {
+                args.style = { backColor: '#ff704d' };
+            }
+        }
+    }
+
+    function setHeaderHeight(args) {
+        var textWidth = document.querySelector(".orientationcss > div").scrollWidth;
+        var headerCell = document.querySelectorAll(".e-headercell");
+        for (var i = 0; i < headerCell.length; i++) {
+            headerCell.item(i).style.height = textWidth + 'px';
+        }
+    }
+</script>

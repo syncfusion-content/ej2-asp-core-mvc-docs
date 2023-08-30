@@ -1,0 +1,77 @@
+@using dotnet_mvc_sample.Controllers;
+@{
+    List<object> toolbarItems = new List<object>();
+    toolbarItems.Add("Search");
+}
+@(Html.EJS().Grid<HomeController.BigData>("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("OrderID").IsPrimaryKey(true).Width("120").Add();
+    col.Field("CustomerID").HeaderText("CustomerID").Width("120").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Add();
+    col.Field("ShipCity").HeaderText("ShipCity").Width("120").Add();
+
+}).Toolbar(toolbarItems).ActionBegin("actionBegin").ActionComplete("actionComplete").Render())
+
+<script>
+    var values;
+    var key = '';
+    var refresh = false;
+    var removeQuery = false;
+    var valueAssign = false;
+
+    function actionBegin(args) {
+        if (args.requestType == 'searching') {
+            const keys = args.searchString.split(',');
+            var flag = true;
+            var predicate;
+            if (keys.length > 1) {
+                if (this.searchSettings.key !== '') {
+                    values = args.searchString;
+                    keys.forEach((key) => {
+                        this.getColumns().forEach((col) => {
+                            if (flag) {
+                                predicate = new ej.data.Predicate(
+                                    col.field,
+                                    'contains',
+                                    key,
+                                    true
+                                );
+
+                                flag = false;
+                            } else {
+                                var predic = new ej.data.Predicate(
+                                    col.field,
+                                    'contains',
+                                    key,
+                                    true
+                                );
+
+                                predicate = predicate.or(predic);
+                            }
+                        });
+                    });
+                    this.query = new ej.data.Query().where(predicate);
+                    this.searchSettings.key = '';
+                    refresh = true;
+                    valueAssign = true;
+                    removeQuery = true;
+                    this.refresh();
+                }
+            }
+        }
+    }
+    function actionComplete(args) {
+        if (args.requestType === 'refresh' && valueAssign) {
+            document.getElementById(this.element.id + '_searchbar').value = values;
+            valueAssign = false;
+        } else if (
+            document.getElementById(this.element.id + '_searchbar').value === '' &&
+            args.requestType === 'refresh' &&
+            removeQuery
+        ) {
+            this.query = new ej.data.Query();
+            removeQuery = false;
+            this.refresh();
+        }
+    }
+</script>

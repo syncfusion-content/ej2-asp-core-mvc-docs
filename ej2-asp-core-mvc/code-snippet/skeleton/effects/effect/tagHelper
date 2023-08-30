@@ -1,0 +1,41 @@
+@using Syncfusion.EJ2.Notifications
+
+<ul id="skeleton-list" class="e-card">
+    <li>
+        <div class="cardProfile">            
+            <ejs-skeleton id="skeleton" shape="Circle" width="40px" shimmerEffect="Pulse"></ejs-skeleton>
+        </div>
+        <div>            
+            <ejs-skeleton id="skeleton1" width="60%" height="15px" shimmerEffect="Pulse"></ejs-skeleton><br/>
+            <ejs-skeleton id="skeleton2" width="40%" height="15px" shimmerEffect="Pulse"></ejs-skeleton>
+        </div>
+    </li>
+    <li>
+        <div class="cardProfile">            
+            <ejs-skeleton id="skeleton3" shape="Circle" width="40px" shimmerEffect="Pulse"></ejs-skeleton>
+        </div>
+        <div>            
+            <ejs-skeleton id="skeleton4" width="60%" height="15px" shimmerEffect="Pulse"></ejs-skeleton><br/>
+            <ejs-skeleton id="skeleton5" width="40%" height="15px" shimmerEffect="Pulse"></ejs-skeleton>
+        </div>
+    </li>
+</ul>
+
+<style>
+    #skeleton-list {
+      padding-left: 12px;
+      padding-top: 7px;
+      line-height: inherit;
+    }
+
+    #skeleton-list li {
+      list-style: none;
+      display: flow-root;
+      margin-bottom: 9px;
+    }
+
+    .cardProfile {
+      float: left;
+      margin-right: 15px;
+    }
+</style>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sort in ##Platform_Name## Kanban Component
+title: Sort and Arrangement of Cards in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Sort in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sort
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sort
+# Sort in ASP.NET MVC Kanban control
 
 The Kanban provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone. Initially, users can change the arrangement of cards in the columns and position of the dropped card by using the [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property. The [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property contains three enumeration values as follows.
 
@@ -34,6 +34,9 @@ By default, SortBy `Index` property support without any [`field`](../api/kanban/
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/sort/index/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/sort/index/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -44,6 +47,9 @@ By default, SortBy `Index` property support without any [`field`](../api/kanban/
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/sort/index/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/sort/index/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -56,7 +62,7 @@ SortBy `Index` property also supports with [`field`](../api/kanban/sortSettingsM
 
 Cards are placed in a particular position in the columns where you can drop the cards by specifying the [`field`](../api/kanban/sortSettingsModel/#field) property, which is mapped from the data source. This property allows the users to drop the cards in the Kanban board where the dropped clone is created exactly. It is also helpful to render the cards based on the [`field`](../api/kanban/sortSettingsModel/#field) property value.
 
-> The [`field`](../api/kanban/sortSettingsModel/#field) property mapping key value must be in `number` format.
+N> The [`field`](../api/kanban/sortSettingsModel/#field) property mapping key value must be in `number` format.
 
 The following cases will dynamically change their [`field`](../api/kanban/sortSettingsModel/#field) value when dropping the cards.
 
@@ -86,6 +92,9 @@ Consider, Column A has Card A with priority value `1`, Card B with priority valu
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/sort/index-field/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/sort/index-field/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -96,6 +105,9 @@ Consider, Column A has Card A with priority value `1`, Card B with priority valu
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/sort/index-field/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/sort/index-field/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -115,6 +127,9 @@ The SortBy `DataSourceOrder` property does not require any [`field`](../api/kanb
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/sort/data-source-order/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/sort/data-source-order/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -125,6 +140,9 @@ The SortBy `DataSourceOrder` property does not require any [`field`](../api/kanb
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/sort/data-source-order/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/sort/data-source-order/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -146,6 +164,9 @@ The SortBy `Custom` property must require datasource [`field`](../api/kanban/sor
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/sort/custom-mapping/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/sort/custom-mapping/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -157,6 +178,9 @@ The SortBy `Custom` property must require datasource [`field`](../api/kanban/sor
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/sort/custom-mapping/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/sort/custom-mapping/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
@@ -166,7 +190,7 @@ The SortBy `Custom` property must require datasource [`field`](../api/kanban/sor
 
 Kanban board also provides support for aligning the cards in the columns using the [`direction`](../api/kanban/sortSettingsModel/#direction) property inside the [`sortSettings`](../api/kanban/#sortsettings) property. Based on this, cards can be aligned in the columns either in `Ascending` or `Descending` order. Sorting direction will be performed based on [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property.
 
-> By default, cards are aligned in the columns based on `Ascending` order.
+N> By default, cards are aligned in the columns based on `Ascending` order.
 
 In the following sample, cards are aligned in `Descending` order.
 
@@ -179,6 +203,9 @@ In the following sample, cards are aligned in `Descending` order.
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/sort/sort-direction/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/sort/sort-direction/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -189,6 +216,9 @@ In the following sample, cards are aligned in `Descending` order.
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/sort/sort-direction/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/sort/sort-direction/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

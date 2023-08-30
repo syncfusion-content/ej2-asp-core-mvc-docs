@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Buttons
+
+@Html.EJS().Fab("fab").Created("CreatedEvent()").IconCss("e-icons e-edit").Content("Edit").Render()
+
+<script>
+
+    function CreatedEvent() {
+        // Your required action here
+    }
+
+</script>

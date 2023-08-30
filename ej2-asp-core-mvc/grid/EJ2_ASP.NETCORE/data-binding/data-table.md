@@ -40,7 +40,7 @@ You can bind `DataTable` to the grid by using [`dataSource`](https://help.syncfu
 
 
 
-> `DataTable` will be supported from .Net Core 2.0.
+N> `DataTable` will be supported from .Net Core 2.0.
 
 ## DataTable with on-demand Grid actions
 

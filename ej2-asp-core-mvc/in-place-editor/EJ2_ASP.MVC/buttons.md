@@ -15,7 +15,7 @@ The In-place Editor had an action for save and cancel using buttons. The [`SaveB
 
 Buttons can be show or hide by sets a Boolean value to the [`ShowButtons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_ShowButtons) property.
 
-> Without buttons value will be processed via the following ways.
+N> Without buttons value will be processed via the following ways.
 
 * **`ActionOnBlur`**: By clicking out side the editor control get focus out and do action based on this property value.
 * **`SubmitOnEnter`**: Pressing `Enter` key it performs the submit action, if this property set to `true`.
@@ -24,7 +24,7 @@ In the following sample, the `content` and `cssClass` properties of `Button` val
 
 To restrict either save or cancel button rendering into a DOM, simply pass empty object `{}` in the  `SaveButton` or `CancelButton` properties.
 
-> For more details about buttons, refer this documentation section.
+N> For more details about buttons, refer this documentation section.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

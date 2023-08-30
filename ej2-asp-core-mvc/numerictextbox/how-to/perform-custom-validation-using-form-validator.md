@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Perform Custom Validation Using Form Validator in ##Platform_Name## Numerictextbox Component
+title: Perform Custom Validation Using Form Validator in ##Platform_Name## Numerictextbox Control | Syncfusion
 description: Learn here all about Perform Custom Validation Using Form Validator in Syncfusion ##Platform_Name## Numerictextbox component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Perform Custom Validation Using Form Validator
@@ -10,8 +10,7 @@ documentation: ug
 
 # Perform custom validation using FormValidator
 
-This section explains how to perform custom validation on the NumericTextBox using FormValidator. The NumericTextBox will be validated when the value changes or the user clicks the submit button.
-Validation can be performed by adding custom validation in the rules collection of the FormValidator.
+This section explains how to perform custom validation on the NumericTextBox using FormValidator. The NumericTextBox will be validated when the value changes or the user clicks the submit button. Validation can be performed by adding custom validation in the rules collection of the FormValidator.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

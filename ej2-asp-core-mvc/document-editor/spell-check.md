@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Spell Check
+# Spell Check in Document Editor Component
 
 Document editor supports performing spell checking for any input text. You can perform spell checking for the text in Document Editor and it will provide suggestions for the mis-spelled words through dialog and in context menu.
 
@@ -100,7 +100,7 @@ If dictionaries are initialized using `InitializeDictionaries` method, then defa
 ```csharp
 public string SpellCheck([FromBody] SpellCheckJsonData spellChecker)
 {
-            try
+      try
       {
             SpellChecker spellCheck = new SpellChecker();
             spellCheck.GetSuggestions(spellChecker.LanguageID, spellChecker.TexttoCheck, spellChecker.CheckSpelling, spellChecker.CheckSuggestion, spellChecker.AddWord);
@@ -114,6 +114,22 @@ public string SpellCheck([FromBody] SpellCheckJsonData spellChecker)
 ```
 
 Previously on every `SpellChecker.GetSuggestion()` method call, the `.aff` and dictionary data will be parsed to generate suggestion for miss spelled word. But, starting from `v20.1.0.xx`, the `.aff` and dictionary data will be parsed only for the first time alone while calling `SpellChecker.GetSuggestion()` method.
+
+### Add new root word and possible words to dictionary
+
+If you find any root word is missing in the dictionary file, then you can add that new root word and the rule to form the possible words to dictionary file using `AddNewWord` API in the server-side Spell check library.
+
+N>1. The rules are framed automatically using the root word, the possible words and affix file.
+<br/>2. If you pass null for the parameters `affPath` and `possibleWords`, then it will add a single root word to dictionary.
+<br/>3. This API is included starting from `v20.2.0.xx`.
+
+The following code example demonstrates how to add a new root word to the dictionary along with the rule to form the possible words.
+
+```csharp
+SpellChecker spellChecker = new SpellChecker();
+// Adds the specified new root word to the dictionary along with the rule to form the possible words.
+spellChecker.AddNewWord("en.dic","en.aff", "construct", new string[] { "constructs", "reconstruct", "constructed", "constructive" });
+```
 
 ## Context menu
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto Generated Columns in ##Platform_Name## Grid Component
+title: Auto Generated Columns in ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Auto Generated Columns in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Auto Generated Columns
@@ -10,8 +10,7 @@ documentation: ug
 
 # Auto Generated Columns
 
-The [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) are automatically generated when
-[`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) declaration is empty or undefined while initializing the grid. All the columns in the **DataSource** are bound as grid columns.
+The [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) are automatically generated when [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) declaration is empty or undefined while initializing the grid. All the columns in the **DataSource** are bound as grid columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,7 +37,7 @@ The [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gri
 
 
 
-> When columns are auto-generated, the column [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Type) will be determined from the first record of the **DataSource**.
+N> When columns are auto-generated, the column [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Type) will be determined from the first record of the **DataSource**.
 
 ## Set Primary key column for auto generated columns when editing is enabled
 
@@ -71,7 +70,7 @@ If Primary key "column index" is known then refer the following example
 
 
 
-> If Primary key "column fieldname" is known then you can get the column by using `var column = grid.getColumnByField('OrderID')` and then set primary key by defining [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property as true in **e-grid-column** tag helper.
+N> If Primary key "column fieldname" is known then you can get the column by using `var column = grid.getColumnByField('OrderID')` and then set primary key by defining [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property as true in **e-grid-column** tag helper.
 
 ## Set column options to auto generated columns
 

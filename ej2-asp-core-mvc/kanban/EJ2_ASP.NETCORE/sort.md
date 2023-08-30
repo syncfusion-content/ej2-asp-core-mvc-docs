@@ -56,7 +56,7 @@ SortBy `Index` property also supports with [`field`](../api/kanban/sortSettingsM
 
 Cards are placed in a particular position in the columns where you can drop the cards by specifying the [`field`](../api/kanban/sortSettingsModel/#field) property, which is mapped from the data source. This property allows the users to drop the cards in the Kanban board where the dropped clone is created exactly. It is also helpful to render the cards based on the [`field`](../api/kanban/sortSettingsModel/#field) property value.
 
-> The [`field`](../api/kanban/sortSettingsModel/#field) property mapping key value must be in `number` format.
+N> The [`field`](../api/kanban/sortSettingsModel/#field) property mapping key value must be in `number` format.
 
 The following cases will dynamically change their [`field`](../api/kanban/sortSettingsModel/#field) value when dropping the cards.
 
@@ -166,7 +166,7 @@ The SortBy `Custom` property must require datasource [`field`](../api/kanban/sor
 
 Kanban board also provides support for aligning the cards in the columns using the [`direction`](../api/kanban/sortSettingsModel/#direction) property inside the [`sortSettings`](../api/kanban/#sortsettings) property. Based on this, cards can be aligned in the columns either in `Ascending` or `Descending` order. Sorting direction will be performed based on [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property.
 
-> By default, cards are aligned in the columns based on `Ascending` order.
+N> By default, cards are aligned in the columns based on `Ascending` order.
 
 In the following sample, cards are aligned in `Descending` order.
 

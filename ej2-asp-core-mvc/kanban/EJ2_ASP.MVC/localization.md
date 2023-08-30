@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Kanban Component
+title: Localization in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Localization in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization
+# Globalization in ASP.NET MVC Kanban control
 
 The localization library allows you to localize the default text content of the Kanban to different cultures using the `Locale` property.
 
@@ -49,6 +49,9 @@ The following example demonstrates the Kanban in `Deutsch` culture.
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/localization/localization/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/localization/localization/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -59,6 +62,9 @@ The following example demonstrates the Kanban in `Deutsch` culture.
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/localization/localization/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/localization/localization/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -82,6 +88,9 @@ The Kanban provides an option to switch its text direction and layout from right
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/localization/rtl/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/localization/rtl/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -92,6 +101,9 @@ The Kanban provides an option to switch its text direction and layout from right
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/localization/rtl/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/localization/rtl/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -25,11 +25,11 @@ By default, all the Essential JS 2 component are specific to English culture ('e
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture specific JSON data under the location `\scripts\cldr-data`.
+Once the package installed, you can find the culture specific JSON data under the location `/scripts/cldr-data`.
 
 * Now use the [`loadCultureFiles`](https://ej2.syncfusion.com/aspnetmvc/documentation/base/intl.html#loading-culture-data) method to load the culture specific CLDR JSON data.
 
-In ASP.NET MVC refer the culture files directly from `\scripts\cldr-data` location. In ASP.NET Core refer the culture files directly from `\wwwroot\scripts\cldr-data` location as like the below code examples for both ASP.NET Core and MVC
+In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` location. In ASP.NET Core refer the culture files directly from `/wwwroot/scripts/cldr-data` location as like the below code examples for both ASP.NET Core and MVC
 
 ```sh
     function loadCultureFiles(de) {
@@ -101,7 +101,7 @@ In ASP.NET MVC refer the culture files directly from `\scripts\cldr-data` locati
 
 
 
-> * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
+N> * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
 
 <!-- markdownlint-disable MD009 -->
 
@@ -194,7 +194,7 @@ addToColumn | Add to Column
 addToValue | Add to Value
 addToFilter | Add to Filter
 emptyData | No records to display
-fieldExist | A field already exists in this name. Please enter a different name.
+fieldExist | A field already exists in this name. Enter a different name.
 confirmText | A calculation field already exists in this name. Do you want to replace it?
 noMatches | No matches
 format | Summaries values by
@@ -248,7 +248,7 @@ min | Min
 max | Max
 allFields | All Fields
 formula | Formula
-fieldExist | A field already exists in this name. Please enter a different name.
+fieldExist | A field already exists in this name. Enter a different name.
 confirmText | A calculation field already exists in this name. Do you want to replace it?
 noMatches | No matches
 format | Summaries values by
