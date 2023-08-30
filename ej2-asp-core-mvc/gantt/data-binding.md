@@ -310,9 +310,9 @@ The argument passed to the `actionFailure` event contains the error details retu
 
 
 
-#### Binding with Ajax
+#### Binding with Fetch
 
-You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Ajax request. In the below code we have fetched the data source from the server with the help of Ajax request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax/#onsuccess) event of the Ajax.
+You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax/#onsuccess) event of the Fetch.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -439,6 +439,33 @@ We can also define segment details as a flat data and this collection can be map
 ![Alt text](images/split-tasks.png)
 
 N> Segment id field contains id of a task which should be split at load time.
+
+## Improve performance by disabling validations
+
+The [`autoCalculateDateScheduling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AutoCalculateDateScheduling) property can help you reduce the time taken for the Gantt chart to render on the initial load. When this API is enabled, parent-child validation, data validation, and predecessor validation are restricted, allowing the Gantt chart to load more quickly. Since we are disabling the validations, data source provided to gantt should have all data such as start date, end date, duration, as proper data.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Virtual-scroll.cs" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/virtual-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Virtual-scroll.cs" %}
+{% include code-snippet/gantt/virtual-scroll-cs1/virtual-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Limitations
 

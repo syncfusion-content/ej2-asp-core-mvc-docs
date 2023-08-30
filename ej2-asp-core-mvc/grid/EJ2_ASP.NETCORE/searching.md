@@ -236,3 +236,7 @@ N> * Define multiple keywords by using a comma separator in search bar to search
 
 N> * Search operation can be performed in foreign key column based on following way.
 N> * When a value is searched on a grid with the foreign key column, a filter query is sent to the foreign key data source, and the appropriate column is filtered depending on the search value. The search query will be sent to the grid data source, and the value of the associated field will be returned.
+
+## See also
+
+* [How to perform search by using Wildcard and LIKE operator filter](./filtering/filtering/#wildcard-and-like-operator-filter)

@@ -11,17 +11,24 @@
        Maximum(180).
        RowIndex(1).
        PlotOffset(30).
-       Title("Price").LabelFormat("${value}").
-       Interval(20).MajorTickLines(ViewBag.majorTickLines).LineStyle(ViewBag.lineStyle).Add();
+       Title("Price").
+       LabelFormat("${value}").
+       Interval(20).
+       MajorTickLines(ViewBag.majorTickLines).
+       LineStyle(ViewBag.lineStyle).
+       Add();
    }
            ).Series(series =>
        {
            series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
-           .XName("x").YName("volume")
+           .XName("x")
+           .YName("volume")
            .Name("Volume")
-           .DataSource("returnValue").Add();
+           .DataSource("returnValue").
+           Add();
            series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle)
-           .XName("x").High("high")
+           .XName("x")
+           .High("high")
            .Low("low")
            .Close("close")
            .Open("open")
@@ -29,10 +36,26 @@
            .BullFillColor("#e74c3d")
            .DataSource("returnValue")
            .YAxisName("secondary")
-           .Name("Apple Inc").Add();
-       }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).MajorGridLines(ViewBag.majorGridLines).CrosshairTooltip(ViewBag.crosshairTooltip)
-       ).PrimaryYAxis(py => py.Minimum(500000000).Maximum(130000000).ValueType(Syncfusion.EJ2.Charts.ValueType.Logarithmic).OpposedPosition(true).Title("Volume").LineStyle(ViewBag.lineStyle)
-       ).Crosshair(cr => cr.Enable(true).LineType(Syncfusion.EJ2.Charts.LineType.Vertical)).ChartArea(area => area.Border(ViewBag.ChartBorder)).LegendSettings(lg => lg.Visible(true)).Tooltip(tt => tt.Enable(true).Shared(true)).Title("AAPL Historical").Width("60%").Load("load").Render()
+           .Name("Apple Inc")
+           .Add();
+       }).PrimaryXAxis(px => 
+                px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+                    .MajorGridLines(ViewBag.majorGridLines)
+                    .CrosshairTooltip(ViewBag.crosshairTooltip)
+       )
+       .PrimaryYAxis(py => 
+            py.Minimum(500000000)
+                .Maximum(130000000)
+                .ValueType(Syncfusion.EJ2.Charts.ValueType.Logarithmic)
+                .OpposedPosition(true)
+                .Title("Volume")
+                .LineStyle(ViewBag.lineStyle)
+       )
+       .Crosshair(cr => cr.Enable(true).LineType(Syncfusion.EJ2.Charts.LineType.Vertical))
+       .ChartArea(area => area.Border(ViewBag.ChartBorder))
+       .LegendSettings(lg => lg.Visible(true))
+       .Tooltip(tt => tt.Enable(true).Shared(true))
+       .Title("AAPL Historical").Width("60%").Load("load").Render()
 
  <script>
         var dataSource = window.chartData;

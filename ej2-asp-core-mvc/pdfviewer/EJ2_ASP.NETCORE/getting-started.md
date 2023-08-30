@@ -37,6 +37,9 @@ To add ASP.NET Core PDF Viewer control, the following NuGet package need to be i
 * For **Linux**, use [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and [Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux/)
 * For **macOS**, use [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and [Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX/)
 
+N> A new package called the [Syncfusion.EJ2.PdfViewer.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core) is introduced in the **21.1.0.35 (2023 Volume 1)** release, which is a multi-targeting package. This differs from the previous approach of platform-specific packages such as "Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows," "Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux," and "Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX". With the new multi-targeting package, all of these platforms will be supported by a single package.
+This simplifies the development process for developers using the Essential Studio, as they no longer need to worry about selecting the correct package for their operating system. Overall, this change should make it easier and more convenient for developers to use Essential Studio's PDF Viewer control in their applications.
+
 ## Add Syncfusion ASP.NET Core Tag Helper
 
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
@@ -360,7 +363,7 @@ namespace PDFViewerSample.Pages
         public string uniqueId { get; set; }
         public string data { get; set; }
         public string viewPortWidth { get; set; }
-        public string viewportHeight { get; set; }
+        public string viewPortHeight { get; set; }
         public string tilecount { get; set; }
         public bool isCompletePageSizeNotReceived { get; set; }
         public string freeTextAnnotation { get; set; }
@@ -377,10 +380,11 @@ namespace PDFViewerSample.Pages
         public string annotationCollection { get; set; }
         public string annotationsPageList { get; set; }
         public string formFieldsPageList { get; set; }
-        public string isAnnotationsExist { get; set; }
-        public string isFormFieldAnnotationsExist { get; set; }
+        public bool isAnnotationsExist { get; set; }
+        public bool isFormFieldAnnotationsExist { get; set; }
         public string documentLiveCount { get; set; }
         public string annotationDataFormat { get; set; }
+	public string importedData { get; set; }
     }
 }
 {% endhighlight %}

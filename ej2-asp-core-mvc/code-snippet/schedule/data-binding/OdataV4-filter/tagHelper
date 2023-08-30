@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Schedule
+
+@{
+    var dataManager = new DataManager() { 
+        Url = "https://services.odata.org/V4/Northwind/Northwind.svc/Orders/",
+        Adaptor = "ODataV4Adaptor",
+        CrossDomain = true 
+    };
+}
+
+<ejs-schedule id="schedule" height="650" readonly="true" selectedDate="new DateTime(1996, 7, 9)" currentView="Month">
+    <e-schedule-eventsettings dataSource="dataManager" query="new ej.data.Query()" includeFiltersInQuery="true">
+        <e-eventsettings-fields id="Id">
+            <e-field-subject name="ShipName"></e-field-subject>
+            <e-field-location name="ShipCountry"></e-field-location>
+            <e-field-description name="ShipAddress"></e-field-description>
+            <e-field-starttime name="OrderDate"></e-field-starttime>
+            <e-field-endtime name="RequiredDate"></e-field-endtime>
+            <e-field-recurrencerule name="ShipRegion"></e-field-recurrencerule>
+        </e-eventsettings-fields>
+    </e-schedule-eventsettings>
+</ejs-schedule>

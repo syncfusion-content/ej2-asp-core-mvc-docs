@@ -28,7 +28,7 @@ The following example demonstrates the message with different content alignments
 
 ## Rounded and Square
 
-To customize the Message control's appearance, add the custom class to the message through the `CssClass` property. This custom class will be added to the root element. Based on this custom class, the user can override the message styles at the application level.
+To customize the Message control's appearance, add the custom class to the message through the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Notifications.Message.html#Syncfusion_EJ2_Notifications_Message_CssClass) property. This custom class will be added to the root element. Based on this custom class, the user can override the message styles at the application level.
 
 The following example shows the rounded and squared appearance of the message, which can be achieved by adding the `CssClass` property.
 

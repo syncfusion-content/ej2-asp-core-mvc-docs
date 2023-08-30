@@ -1,0 +1,41 @@
+<ejs-spreadsheet id="spreadsheet" actionComplete="actionComplete" allowOpen="true" openUrl="Home/Open">
+</ejs-spreadsheet>
+
+<script>
+    // For signalR Hub connection
+    var connection = new signalR.HubConnectionBuilder().withUrl('https://localhost:44385/hubs/spreadsheethub', { // localhost from AspNetCore service
+        skipNegotiation: true,
+        transport: signalR.HttpTransportType.WebSockets
+    }).build();
+
+    function actionComplete(args) {
+        if (args.action === 'import') {
+            // Send the action data to the server in args.response at the time of importing an excel file.
+            connection.send("BroadcastData", JSON.stringify(args.response.data));
+        }
+        else {
+            // Send the action data to the server for other than import actions.
+            connection.send("BroadcastData", JSON.stringify(args));
+        }
+    }
+
+    connection.on('dataReceived', (data) => {
+        var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        var model = JSON.parse(data);
+        // Condition to check whether action performed is import.
+        if ( model['action'] === undefined || '') {
+            // Load the imported excel file data as JSON to the connected clients.
+            var jsonData = { Workbook: model };
+            spreadsheetObj.openFromJson({ file: jsonData });
+        }
+        else {
+            // Update the action details to the connected clients.
+            spreadsheetObj.updateAction(model);
+        }
+    });
+
+    connection.start().then(() => {
+        console.log('server connected!!!');
+    }).catch((err) => console.log(err));
+
+</script>

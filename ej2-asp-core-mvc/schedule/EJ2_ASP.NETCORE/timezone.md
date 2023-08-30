@@ -13,6 +13,8 @@ documentation: ug
 
 The Scheduler makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the `timezone` property needs to be used. Apart from the default action of applying specific timezone to the Scheduler, it is also possible to set different time zone values for each appointments through the properties `startTimezone` and `endTimezone` which can be defined as separate fields within the event fields collection.
 
+>Note: **timezone** property only applicable for the appointment processing and current time indication.
+
 ## Understanding date manipulation in JavaScript
 
 The `new Date()` in JavaScript returns the exact current date object with complete time and timezone information. For example, it may return value such as `Wed Dec 12 2018 05:23:27 GMT+0530 (India Standard Time)` which indicates that the current date is December 12, 2018 and the current time is 5.23 AM on browsers following the IST timezone.
@@ -52,7 +54,9 @@ The following code example displays an appointment from 9.00 AM to 10.00 AM when
 
 When a timezone is set to Scheduler through `timezone` property, the appointments will be displayed exactly based on the Scheduler timezone regardless of its client timezone. In core application, client timezone will be added by default. In order to render the appointments in the timezone which has been set to the scheduler, add the following code snippet in your `Startup.cs` file like below.
 
-```sh
+{% tabs %}
+{% highlight c# tabtitle=".NET 2.2"%}
+
 public void ConfigureServices(IServiceCollection services) {
     services.AddDbContext<ScheduleDataContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("ScheduleDataConnection"))
@@ -63,7 +67,23 @@ public void ConfigureServices(IServiceCollection services) {
         .AddJsonOptions(opt => opt.SerializerSettings.DateFormatHandling = DateFormatHandling.MicrosoftDateFormat)
         .AddJsonOptions(opt => opt.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc);
 }
-```
+
+{% endhighlight %}
+
+{% highlight c# tabtitle=".NET 3.0" %}
+
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddDbContext<ScheduleDataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ScheduleDataConnection")));
+    services.AddControllersWithViews(option => option.EnableEndpointRouting = false).AddNewtonsoftJson();
+    services.AddControllersWithViews()
+        .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver())
+        .AddNewtonsoftJson(opt => opt.SerializerSettings.DateFormatHandling = Newtonsoft.Json.DateFormatHandling.MicrosoftDateFormat)
+        .AddNewtonsoftJson(opt => opt.SerializerSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Local);
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 In the following code example, appointments will be displayed based on Eastern Time (UTC -05:00).
 
