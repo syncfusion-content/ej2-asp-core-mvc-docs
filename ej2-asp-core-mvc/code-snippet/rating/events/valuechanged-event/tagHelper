@@ -4,7 +4,7 @@
 
 <script>
 
-    function ValueChanged(RatingChangedEventArgs args) {
+    function ValueChanged(args) {
         // Here, you can customize your code.
     }
 

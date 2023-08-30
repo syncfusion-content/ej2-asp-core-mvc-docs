@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2;
+
+
+@Html.EJS().HeatMap("container").TitleSettings(ts => 
+ts.Text("Sales Revenue per Employee (in 1000 US$)").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+xAxis.Labels(ViewBag.xLabels)).YAxis(yaxis =>
+yaxis.Labels(ViewBag.yLabels)).AllowSelection(true).DataSource(ViewBag.dataSource).Render()
+
+@Html.EJS().Button("selection").IconCss("e-icons e-play-icon").Content("ClearSelection").CssClass("e-flat").Render()
+
+<script>
+    document.getElementById('selection').onclick = function () {
+        var heatmapObj = document.getElementById('container').ej2_instances[0];
+        heatmapObj.clearSelection();   
+    };
+</script>

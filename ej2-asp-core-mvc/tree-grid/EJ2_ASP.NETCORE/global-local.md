@@ -23,6 +23,8 @@ True | true
 False | false
 ExpandAll | Expand All
 CollapseAll | Collapse All
+RowIndent | Indent
+RowOutdent | Outdent
 InvalidFilterMessage | Invalid Filter Data
 FilterbarTitle | \s filter bar cell
 Add | Add

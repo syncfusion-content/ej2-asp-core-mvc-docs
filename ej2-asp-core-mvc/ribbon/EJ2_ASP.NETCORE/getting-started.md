@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with ##Platform_Name## Ribbon Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Getting Started
+control: Ribbon
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

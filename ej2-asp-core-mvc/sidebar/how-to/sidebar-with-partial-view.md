@@ -22,6 +22,9 @@ The following example demonstrates how to render the sidebar with partial view. 
 {% highlight c# tabtitle="TextBox.cshtml" %}
 {% include code-snippet/sidebar/partial-view/TextBox.cshtml %}
 {% endhighlight %}
+{% highlight c# tabtitle="_RenderPartialView_core.cshtml" %}
+{% include code-snippet/sidebar/partial-view/_RenderPartialView_core.cshtml %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -32,6 +35,9 @@ The following example demonstrates how to render the sidebar with partial view. 
 {% endhighlight %}
 {% highlight c# tabtitle="TextBox.cshtml" %}
 {% include code-snippet/sidebar/partial-view/TextBox.cshtml %}
+{% endhighlight %}
+{% highlight c# tabtitle="_RenderPartialView_mvc.cshtml" %}
+{% include code-snippet/sidebar/partial-view/_RenderPartialView_mvc.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

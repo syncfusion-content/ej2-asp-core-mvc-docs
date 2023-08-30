@@ -1,0 +1,50 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<MenuItem> fileOptions = new List<MenuItem>() {
+        new MenuItem { Text = "New", IconCss = "e-icons e-file-new" },
+        new MenuItem { Text = "Open", IconCss = "e-icons e-folder-open" },
+        new MenuItem { Text = "Rename", IconCss = "e-icons e-rename" },
+        new MenuItem { Text = "Save as", IconCss = "e-icons e-save",
+            Items= new List<MenuItem>() {
+                    new MenuItem { Text = "Microsoft Word (.docx)" },
+                    new MenuItem { Text = "Microsoft Word 97-2003(.doc)" },
+                    new MenuItem { Text = "Download as PDF" }
+                }
+            }
+        };
+}
+
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-filemenusettings visible="true" showItemOnClick="true" menuItems=fileMenuItems></e-ribbon-filemenusettings>
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-paste" content="Paste"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=Button>
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type=Button>
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>

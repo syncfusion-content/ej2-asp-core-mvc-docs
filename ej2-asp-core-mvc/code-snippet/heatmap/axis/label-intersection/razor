@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().HeatMap("container").TitleSettings(ts => ts.Text("Product wise Monthly sales revenue for a e-commerce website").
+    TextStyle(ViewBag.textStyle)).XAxis(
+        xAxis => xAxis.Labels(ViewBag.xLabels).OpposedPosition(true).LabelIntersectAction(LabelIntersectAction.Trim).EnableTrim(true)).YAxis(yaxis =>
+            yaxis.Labels(ViewBag.yLabels).LabelIntersectAction(LabelIntersectAction.Trim).EnableTrim(true)).PaletteSettings(ps => ps.Palette(palette => {
+                palette.Color("#F0C27B").Add();
+                palette.Color("#4B1248").Add();
+            })).LegendSettings(ls => ls.Visible(false)).DataSource(ViewBag.dataSource).Render()

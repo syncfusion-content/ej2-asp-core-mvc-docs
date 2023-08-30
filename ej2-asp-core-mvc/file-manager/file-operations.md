@@ -229,7 +229,7 @@ The following table represents the response parameters of *read* operations.
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |cwd|FileManagerDirectoryContent|-|Path (Current Working Directory) details.|
-|files|FileManagerDirectoryContent[]|-|Details of files and folders present in given path or directory.|
+|files|FileManagerDirectoryContent|-|Details of files and folders present in given path or directory.|
 |error|ErrorDetails|-|Error Details|
 
 *Refer [File request and response contents](#file-request-and-response-contents) for the contents of cwd, files, and error*.
