@@ -74,3 +74,9 @@ The steps below shows how to install the Essential Studio ASP.NET Core - EJ2 Mac
    
    ![Installed Location](images/Mac_Installer9.png)
 
+## License key registration in samples
+
+After the installation, the license key is required to register the demo source that is included in the Mac installer. To learn about the steps for license registration for the ASP.NET Core - EJ2 Mac installer, please refer to this.
+
+* Register the license key in the [Program.cs](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application#for-aspnet-core-application-using-net-60) file if you created the ASP.NET Core web application with Visual Studio 2022 and .NET 6.0.
+* Register the license key in Configure method of [Startup.cs](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application#for-aspnet-core-application-using-net-50-or-net-31)

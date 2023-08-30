@@ -71,10 +71,10 @@ padding-top: 20px;
 <table id="table">
 <tbody>
 <colgroup>
-<col style="width: 220px">
-<col style="width: 220px">
-<col style="width: 220px">
-<col style="width: 220px">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 </tbody>
 <tr>

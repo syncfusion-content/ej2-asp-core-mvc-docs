@@ -1,0 +1,68 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).DataBound("dataBound").Render()
+<script>
+    function dataBound() {
+        var pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        var headerTooltip;
+        if (!headerTooltip) {
+            headerTooltip = new ej.popups.Tooltip({
+                target: 'td.e-rowsheader,th.e-columnsheader', beforeRender: beforeRender
+            });
+            headerTooltip.appendTo(pivotObj.element);
+        }
+    }
+    function beforeRender(args) {
+        var pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        if (args.target.parentElement.querySelector('.e-rowsheader')) {
+            // Here you can set custom content for row header(s) tooltip from its cell information.
+            var index = Number(args.target.getAttributeNode('index').value);
+            var colIndex = Number(args.target.getAttributeNode('data-colindex').value);
+            var cell = pivotObj.engineModule.pivotValues[index][colIndex];
+            var valueText = cell.valueSort ? cell.valueSort : '';
+            if (cell.formattedText !== 'Grand Total') {
+                this.content =
+                    '<div>' +
+                    'FieldName: ' +
+                    valueText.axis +
+                    '</br>' +
+                    'Text: ' +
+                    cell.formattedText +
+                    '</div>';
+            } else {
+                this.content =
+                    '<div>' +
+                    'FieldName: ' +
+                    valueText.uniqueName +
+                    '</br>' +
+                    'Text: ' +
+                    cell.formattedText +
+                    '</div>';
+            }
+        } else {
+            // Here you can set custom content for column header(s) tooltip from its cell information.
+            if (args.target.querySelector('.e-cellvalue')) {
+                this.content = args.target.querySelector('.e-cellvalue').innerText;
+            } else if (args.target.querySelector('.e-headertext')) {
+                this.content = args.target.querySelector('.e-headertext').innerText;
+            } else if (args.target.querySelector('.e-stackedheadercelldiv')) {
+                this.content = args.target.querySelector('.e-stackedheadercelldiv').innerText;
+            } else {
+                this.content = '';
+            }
+        }
+    }
+</script>
