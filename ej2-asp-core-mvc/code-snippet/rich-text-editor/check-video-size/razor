@@ -1,0 +1,11 @@
+@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertVideoSettings(obj => obj.SaveUrl("https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save").Path("../Files/")).FileUploading("onFileUploading").Render()
+
+<script>
+    function onFileUploading(args) {
+        var imgSize = 500000;
+        var sizeInBytes = args.fileData.size;
+        if ( imgSize < sizeInBytes ) {
+            args.cancel = true;
+        }
+    }
+</script>

@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Groups(groups =>
+    {
+        groups.Header("Clipboard").Add();
+    }).Add();
+    tab.Header("Insert").Groups(groups =>
+    {
+        groups.Header("Tables").Add();
+    }).Add();
+}).Render()

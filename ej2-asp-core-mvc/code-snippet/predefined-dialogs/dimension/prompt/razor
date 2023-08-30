@@ -1,0 +1,13 @@
+<div style="height:400px;">
+    @Html.EJS().Button("promptBtn").Content("Prompt").IsPrimary(true).Render()
+</div>
+<script>
+    document.getElementById('promptBtn').onclick = function () {
+        ej.popups.DialogUtility.alert({
+            title: "Join chat group",
+            content: "<p>Enter your name: </p> <input id= inputEle type=text name=Required class=e-input placeholder=Type here.. />",
+            width : "350px",
+            height : "210px"
+        });
+    };
+</script>

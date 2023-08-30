@@ -1,6 +1,6 @@
 <div>
-@Html.EJS().Button("import").Content("Open Document").Click("onClick").Render()
-@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+    @Html.EJS().Button("import").Content("Open Document").Click("onClick").Render()
+    @Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
 </div>
 
 <script>

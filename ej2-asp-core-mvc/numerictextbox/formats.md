@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formats in ##Platform_Name## Numerictextbox Component
+title: Formats in ##Platform_Name## Numerictextbox Control | Syncfusion
 description: Learn here all about Formats in Syncfusion ##Platform_Name## Numerictextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Formats
@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# Number Formats
+# Number Formats in NumericTextBox Control
 
-You can format the value of NumericTextBox using [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property.
-The value will be displayed in the specified format when the control is in focused out state. The format string supports both the [standard numeric format string](../common/internationalization/#supported-format-string) and [custom numeric format string](../common/internationalization/#custom-number-formatting-and-parsing).
+You can format the value of NumericTextBox using [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format when the control is in focused out state. The format string supports both the [standard numeric format string](../common/internationalization/#supported-format-string) and [custom numeric format string](../common/internationalization/#custom-number-formatting-and-parsing).
 
 ## Standard formats
 

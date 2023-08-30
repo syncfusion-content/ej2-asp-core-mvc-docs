@@ -47,4 +47,4 @@ The below font style links are referred in the page.
 
 ```
 
-> In the above sample, you can see that we have added two Google web fonts (`Roboto` and `Great vibes`) to `Rich Text Editor`.
+N> In the above sample, you can see that we have added two Google web fonts (`Roboto` and `Great vibes`) to `Rich Text Editor`.

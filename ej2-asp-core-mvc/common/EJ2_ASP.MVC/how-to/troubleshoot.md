@@ -33,7 +33,7 @@ This error is thrown due to not including the required target library for the Ty
         <TypeScriptLib>dom,es2015</TypeScriptLib>
     ```
 
-    > If `tsconfig.json` exists in your project, the compiler will prioritize using the specified configuration options from `tsconfig.json` file. Otherwise, it’ll use the specified configuration options from the project file (`.csproj`).
+    N> If `tsconfig.json` exists in your project, the compiler will prioritize using the specified configuration options from `tsconfig.json` file. Otherwise, it’ll use the specified configuration options from the project file (`.csproj`).
 
     Refer [KB Link](https://www.syncfusion.com/kb/10136/typescript-library-upgrade-in-asp-net-mvc-project) for more details.
 

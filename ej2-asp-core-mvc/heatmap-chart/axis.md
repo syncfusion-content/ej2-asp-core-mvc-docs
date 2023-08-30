@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis in ##Platform_Name## Heatmap Chart Component
-description: Learn here all about Axis in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
+title: Axis in Syncfusion ##Platform_Name## HeatMap Chart Component
+description: Learn here all about axis in Syncfusion ##Platform_Name## HeatMap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,21 @@ documentation: ug
 ---
 
 
-# Axis
+# Axis in ##Platform_Name## HeatMap Chart Component
 
-Heat map consists of two axes namely, X-axis and Y-axis that displays the row headers and column headers to plot the data points respectively. You can define the type, format, and other customizing options for both axes in the heat map.
+HeatMap consists of two axes namely, X-axis and Y-axis that displays the row headers and column headers to plot the data points respectively. You can define the type, format, and other customizing options for both axes in the HeatMap.
 
 ## Types
 
-There are three different axis types available in the heat map, which defines the data type of the axis labels. You can define the axis type by using the [`valueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~ValueType.html) property in the heat map.
+{% if page.publishingplatform == "aspnet-core" %}
+
+There are three different axis types available in the HeatMap, which defines the data type of the axis labels. You can define the axis type by using the [valueType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_ValueType) property in the HeatMap.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+There are three different axis types available in the HeatMap, which defines the data type of the axis labels. You can define the axis type by using the [ValueType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_ValueType) property in the HeatMap.
+
+{% endif %}
 
 ### Category axis
 
@@ -43,7 +51,6 @@ Category axis type is used to represent the string values in axis labels.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 
 ### Numeric axis
@@ -77,9 +84,10 @@ Numeric axis type is used to represent the numeric values in axis labels.
 
 ### Date-time axis
 
-Date-time axis type is used to represent the date-time values in axis labels with a specific format. In date-time axis, you can define the start and end date/time using the [`minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~Minimum.html) and [`maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~Maximum.html) properties.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+Date-time axis type is used to represent the date-time values in axis labels with a specific format. In date-time axis, you can define the start and end date/time using the [minimum](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_Minimum) and [maximum](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_Maximum) properties.
+
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -92,6 +100,8 @@ Date-time axis type is used to represent the date-time values in axis labels wit
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+Date-time axis type is used to represent the date-time values in axis labels with a specific format. In date-time axis, you can define the start and end date/time using the [Minimum](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_Minimum) and [Maximum](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_Maximum) properties.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/axis/dateTime/razor %}
@@ -103,12 +113,11 @@ Date-time axis type is used to represent the date-time values in axis labels wit
 {% endif %}
 
 
-
 ## Inversed axis
 
-Heat map supports inversing the axis origin for both axes, where the axis labels are placed in an inversed manner. You can enable axis inversing by enabling the [`isInversed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~IsInversed.html) property.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+HeatMap supports inversing the axis origin for both axes, where the axis labels are placed in an inversed manner. You can enable axis inversing by enabling the [isInversed](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_IsInversed) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -120,6 +129,8 @@ Heat map supports inversing the axis origin for both axes, where the axis labels
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+HeatMap supports inversing the axis origin for both axes, where the axis labels are placed in an inversed manner. You can enable axis inversing by enabling the [IsInversed](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_IsInversed) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -135,9 +146,9 @@ Heat map supports inversing the axis origin for both axes, where the axis labels
 
 ## Opposed axis
 
-In heat map, you can place the axis label in an opposite position of its default axis label position by using the [`opposedPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~OpposedPosition.html) property.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+In HeatMap, you can place the axis label in an opposite position of its default axis label position by using the [opposedPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_OpposedPosition) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -150,6 +161,8 @@ In heat map, you can place the axis label in an opposite position of its default
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+In HeatMap, you can place the axis label in an opposite position of its default axis label position by using the [OpposedPosition](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_OpposedPosition) property.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/axis/opposed/razor %}
@@ -160,13 +173,145 @@ In heat map, you can place the axis label in an opposite position of its default
 {% endtabs %}
 {% endif %}
 
+## Axis labels customization
 
-
-## Label formatting
-
-Heat map supports formatting the axis labels by using the [`labelFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~LabelFormat.html) property. Using this property, you can customize the axis label by global string format ('P', 'C', etc) or customized format like '{value}°C'.
+### Customizing the text style
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+The text style of the axis labels can be customized using the following options available in the [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_TextStyle) property.
+
+* [color](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_Color) - It is used to change the text color of the axis labels.
+* [fontFamily](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_FontFamily) - It is used to change the font family of the axis labels.
+* [fontStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_FontStyle) - It is used to change the font style of the axis labels.
+* [fontWeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_FontWeight) - It is used to change the font weight of the axis labels.
+* [size](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_Size) - It is used to change the font size of the axis labels.
+* [textAlignment](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_TextAlignment) - It is used to position and align the axis labels. This property allows you to specify values such as **Near**, **Center**, and **Far**.
+* [textOverflow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_TextOverflow) - When the axis label exceeds the intended space, this property is used to trim or wrap it. This property takes values such as **None**, **Trim**, and **Wrap**.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/axis/textstyle/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TextStyle.cs" %}
+{% include code-snippet/heatmap/axis/textstyle/textstyle.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customizing the text style of axis labels in ASP.NET Core HeatMap chart](./images/heatmap-chart-axis-labels-text-style.png)
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The text style of the axis labels can be customized using the following options available in the [TextStyle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_TextStyle) property.
+
+* [Color](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_Color) - It is used to change the text color of the axis labels.
+* [FontFamily](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_FontFamily) - It is used to change the font family of the axis labels.
+* [FontStyle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_FontStyle) - It is used to change the font style of the axis labels.
+* [FontWeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_FontWeight) - It is used to change the font weight of the axis labels.
+* [Size](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_Size) - It is used to change the font size of the axis labels.
+* [TextAlignment](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_TextAlignment) - It is used to position and align the axis labels. This property allows you to specify values such as **Near**, **Center**, and **Far**.
+* [TextOverflow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapFont.html#Syncfusion_EJ2_HeatMap_HeatMapFont_TextOverflow) - When the axis label exceeds the intended space, this property is used to trim or wrap it. This property takes values such as **None**, **Trim**, and **Wrap**.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/axis/textstyle/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TextStyle.cs" %}
+{% include code-snippet/heatmap/axis/textstyle/textstyle.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customizing the text style of axis labels in ASP.NET MVC HeatMap chart](./images/heatmap-chart-axis-labels-text-style.png)
+
+{% endif %}
+
+### Customizing labels when intersecting with other labels
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+When the axis labels intersect, [labelIntersectAction](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_LabelIntersectAction) property is used to handle the intersection. The `labelIntersectAction` property can take the following values.
+
+* **None** - It specifies that no action is taken when the axis labels intersect.
+* **Trim** - It specifies to trim the axis labels when they intersect.
+* **Rotate45** - When the axis labels intersect, they are rotated to 45 degrees.
+* **MultipleRows** - It specifies to show all the axis labels as multiple rows when they intersect.
+
+The below example demonstrates to trim the axis labels by using the `labelIntersectAction` property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/axis/label-intersection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="LabelIntersectAction.cs" %}
+{% include code-snippet/heatmap/axis/label-intersection/label-intersection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customizing axis labels when intersecting with other labels in ASP.NET Core HeatMap chart](./images/heatmap-chart-label-intersect-action.png)
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+When the axis labels intersect, [LabelIntersectAction](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_LabelIntersectAction) property is used to handle the intersection. The `LabelIntersectAction` property can take the following values.
+
+* **None** - It specifies that no action is taken when the axis labels intersect.
+* **Trim** - It specifies to trim the axis labels when they intersect.
+* **Rotate45** - When the axis labels intersect, they are rotated to 45 degrees.
+* **MultipleRows** - It specifies to show all the axis labels as multiple rows when they intersect.
+
+The below example demonstrates to trim the axis labels by using the `LabelIntersectAction` property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/axis/label-intersection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="LabelIntersectAction.cs" %}
+{% include code-snippet/heatmap/axis/label-intersection/label-intersection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customizing axis labels when intersecting with other labels in ASP.NET MVC HeatMap chart](./images/heatmap-chart-label-intersect-action.png)
+
+{% endif %}
+
+### Rotating labels
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+The axis labels can be rotated to the desired angles by using the [labelRotation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_LabelRotation) property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/axis/label-rotation/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="LabelRotation.cs" %}
+{% include code-snippet/heatmap/axis/label-rotation/label-rotation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core HeatMap chart with rotated axis labels](./images/heatmap-chart-rotating-labels.png)
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The axis labels can be rotated to the desired angles by using the [LabelRotation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_LabelRotation) property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/axis/label-rotation/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="LabelRotation.cs" %}
+{% include code-snippet/heatmap/axis/label-rotation/label-rotation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC HeatMap chart with rotated axis labels](./images/heatmap-chart-rotating-labels.png)
+
+{% endif %}
+
+### Label formatting
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+HeatMap supports formatting the axis labels by using the [labelFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_LabelFormat) property. Using this property, you can customize the axis label by global string format ('P', 'C', etc) or customized format like '{value}°C'.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -179,6 +324,8 @@ Heat map supports formatting the axis labels by using the [`labelFormat`](https:
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+HeatMap supports formatting the axis labels by using the [LabelFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_LabelFormat) property. Using this property, you can customize the axis label by global string format ('P', 'C', etc) or customized format like '{value}°C'.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/axis/label-format/razor %}
@@ -189,19 +336,17 @@ Heat map supports formatting the axis labels by using the [`labelFormat`](https:
 {% endtabs %}
 {% endif %}
 
-
-
 ## Axis intervals
 
-In heat map, you can define an interval between the axis labels using the [`interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~Interval.html) property. In date-time axis, you can change the interval mode by using the [`intervalType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~IntervalType.html) property. The date-time axis supports the following interval types:
+{% if page.publishingplatform == "aspnet-core" %}
+
+In HeatMap, you can define an interval between the axis labels using the [interval](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_Interval) property. In date-time axis, you can change the interval mode by using the [intervalType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_IntervalType) property. The date-time axis supports the following interval types:
 
 * Years
 * Months
 * Days
 * Hours
 * Minutes
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -214,6 +359,14 @@ In heat map, you can define an interval between the axis labels using the [`inte
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+In HeatMap, you can define an interval between the axis labels using the [Interval](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_Interval) property. In date-time axis, you can change the interval mode by using the [IntervalType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_IntervalType) property. The date-time axis supports the following interval types:
+
+* Years
+* Months
+* Days
+* Hours
+* Minutes
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/axis/interval/razor %}
@@ -225,12 +378,11 @@ In heat map, you can define an interval between the axis labels using the [`inte
 {% endif %}
 
 
-
 ## Axis label increment
 
-Axis label increment in the heat map is used to display the axis labels with regular interval values in numeric and date-time axes. The labels will be displayed with tick gaps when you set the label interval. But, to achieve the same behavior without tick gaps, use the label increment. You can set the axis label increment using the [`increment`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~Increment.html) property and the default value of this property is 1.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+Axis label increment in the HeatMap is used to display the axis labels with regular interval values in numeric and date-time axes. The labels will be displayed with tick gaps when you set the label interval. But, to achieve the same behavior without tick gaps, use the label increment. You can set the axis label increment using the [increment](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_Increment) property and the default value of this property is **1**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -243,6 +395,8 @@ Axis label increment in the heat map is used to display the axis labels with reg
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+Axis label increment in the HeatMap is used to display the axis labels with regular interval values in numeric and date-time axes. The labels will be displayed with tick gaps when you set the label interval. But, to achieve the same behavior without tick gaps, use the label increment. You can set the axis label increment using the [Increment](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_Increment) property and the default value of this property is **1**.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/axis/increment/razor %}
@@ -254,18 +408,17 @@ Axis label increment in the heat map is used to display the axis labels with reg
 {% endif %}
 
 
-
 ## Limiting labels in date-time axis
 
-You can display the axis labels at specific time intervals along with the date-time axis using the [`showLabelOn`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~ShowLabelOn.html) property. This property supports the following types:
+{% if page.publishingplatform == "aspnet-core" %}
+
+You can display the axis labels at specific time intervals along with the date-time axis using the [showLabelOn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_ShowLabelOn) property. This property supports the following types:
 
 * **None**: Displays the axis labels based on the `intervalType` and `interval` property of the axis. This type is default value of the `showLabelOn` property.
 * **Years**: Displays the axis labels on every year between given date-time range.
 * **Months**: Displays the axis labels on every month between given date-time range.
 * **Days**: Displays the axis labels on every day between given date-time range.
 * **Minutes**: Displays the axis labels on every minute between given date-time range.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -278,6 +431,14 @@ You can display the axis labels at specific time intervals along with the date-t
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+You can display the axis labels at specific time intervals along with the date-time axis using the [ShowLabelOn](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapAxis.html#Syncfusion_EJ2_HeatMap_HeatMapAxis_ShowLabelOn) property. This property supports the following types:
+
+* **None**: Displays the axis labels based on the `IntervalType` and `Interval` property of the axis. This type is default value of the `ShowLabelOn` property.
+* **Years**: Displays the axis labels on every year between given date-time range.
+* **Months**: Displays the axis labels on every month between given date-time range.
+* **Days**: Displays the axis labels on every day between given date-time range.
+* **Minutes**: Displays the axis labels on every minute between given date-time range.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/axis/show-label/razor %}
@@ -289,159 +450,54 @@ You can display the axis labels at specific time intervals along with the date-t
 {% endif %}
 
 
-
-## Multi Level Labels
-
-You can add many levels of labels using the [`multiLevelLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~MultiLevelLabels.html) property. This property can be configured using the following properties:
-
-* Categories
-* Overflow
-* Alignment
-* Text style
-* Border
-
-### Categories
-
-Using this property, you can configure the  `start`, `end`, `text`, `maximumTextWidth` of the multilevel labels.
+## Multilevel Labels
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/axis/multi-level-category/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multi-level-category.cs" %}
-{% include code-snippet/heatmap/axis/multi-level-category/multi-level-category.cs %}
-{% endhighlight %}
-{% endtabs %}
+Multilevel labels are used to classify a group of axis labels as a single category, which is then displayed with a label. By using [multiLevelLabels](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#properties), you can add multiple levels on top of the axis labels.
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To divide and group the axis labels, you can use `multiLevelLabels` property. The starting and ending indexes of the axis labels can be set using the `start` and `end` properties in the [categories](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#Syncfusion_EJ2_HeatMap_HeatMapMultiLevelLabel_Categories). The `text` property can be used to specify a name for the grouped axis labels.
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/axis/multi-level-category/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multi-level-category.cs" %}
-{% include code-snippet/heatmap/axis/multi-level-category/multi-level-category.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-### Overflow
-
-Using this property, you can trim and wrap the multilevel labels.
-
-> This support works in x-axis only.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The multilevel labels can be customized by using the following properties.
+* [overflow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#Syncfusion_EJ2_HeatMap_HeatMapMultiLevelLabel_Overflow) - It is used to trim or wrap the multilevel labels when the label overflows the intended space. NOTE: This property is only for x-axis.
+* [alignment](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#Syncfusion_EJ2_HeatMap_HeatMapMultiLevelLabel_Alignment) - It is used to place and align the multilevel labels.
+* `maximumTextWidth` - It is used to set the maximum width of the text. When the text length exceeds the maximum text width, the overflow action will be performed.
+* [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#Syncfusion_EJ2_HeatMap_HeatMapMultiLevelLabel_TextStyle) - It is used to customize the font style of the multilevel labels.
+* [border](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#Syncfusion_EJ2_HeatMap_HeatMapMultiLevelLabel_Border) - It is used to customize the border of the multilevel labels displayed in the x-axis and y-axis.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/axis/multi-level-overflow/tagHelper %}
+{% include code-snippet/heatmap/axis/multi-level-labels/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Multi-level-overflow.cs" %}
-{% include code-snippet/heatmap/axis/multi-level-overflow/multi-level-overflow.cs %}
+{% highlight c# tabtitle="Multi-level-labels.cs" %}
+{% include code-snippet/heatmap/axis/multi-level-labels/multi-level-labels.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![ASP.NET Core HeatMap chart with multilevel labels](./images/heatmap-chart-multi-level-labels.png)
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/axis/multi-level-overflow/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multi-level-overflow.cs" %}
-{% include code-snippet/heatmap/axis/multi-level-overflow/multi-level-overflow.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+Multilevel labels are used to classify a group of axis labels as a single category, which is then displayed with a label. By using [MultiLevelLabels](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#properties) tag, you can add multiple levels on top of the axis labels.
 
+To divide and group the axis labels, you can use `MultiLevelLabels` property. The starting and ending indexes of the axis labels can be set using the `Start` and `End` properties in the [Categories](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#Syncfusion_EJ2_HeatMap_HeatMapMultiLevelLabel_Categories). The `Text` property can be used to specify a name for the grouped axis labels.
 
-
-### Alignment
-
-This property provides an option to position the multilevel labels at far, center, and near.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/axis/multi-level-alignment/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multi-level-alignment.cs" %}
-{% include code-snippet/heatmap/axis/multi-level-alignment/multi-level-alignment.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The multilevel labels can be customized by using the following properties and tags.
+* [Overflow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#Syncfusion_EJ2_HeatMap_HeatMapMultiLevelLabel_Overflow) - It is used to trim or wrap the multilevel labels when the label overflows the intended space. NOTE: This property is only for x-axis.
+* [Alignment](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#Syncfusion_EJ2_HeatMap_HeatMapMultiLevelLabel_Alignment) - It is used to place and align the multilevel labels.
+* `MaximumTextWidth` - It is used to set the maximum width of the text. When the text length exceeds the maximum text width, the overflow action will be performed.
+* [TextStyle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#Syncfusion_EJ2_HeatMap_HeatMapMultiLevelLabel_TextStyle) - It is used to customize the font style of the multilevel labels.
+* [Border](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel.html#Syncfusion_EJ2_HeatMap_HeatMapMultiLevelLabel_Border) - It is used to customize the border of the multilevel labels displayed in the x-axis and y-axis.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/axis/multi-level-alignment/razor %}
+{% include code-snippet/heatmap/axis/multi-level-labels/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Multi-level-alignment.cs" %}
-{% include code-snippet/heatmap/axis/multi-level-alignment/multi-level-alignment.cs %}
+{% highlight c# tabtitle="Multi-level-labels.cs" %}
+{% include code-snippet/heatmap/axis/multi-level-labels/multi-level-labels.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![ASP.NET MVC HeatMap chart with multilevel labels](./images/heatmap-chart-multi-level-labels.png)
+
 {% endif %}
-
-
-
-### Text Customization
-
-The [`textStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel~TextStyle.html) property of multilevel labels provides options to customize the size, color, fontFamily, fontWeight, fontStyle, opacity, textAlignment and textOverflow.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/axis/multi-level-textstyle/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multi-level-textstyle.cs" %}
-{% include code-snippet/heatmap/axis/multi-level-textstyle/multi-level-textstyle.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/axis/multi-level-textstyle/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multi-level-textstyle.cs" %}
-{% include code-snippet/heatmap/axis/multi-level-textstyle/multi-level-textstyle.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-### Border Customization
-
-Using the [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel~Border.html) property, you can customize the width, color, and type. The types of border are `Rectangle`, `WithoutTopBorder`, `WithoutBottomBorder`, `WithoutTopAndBottomBorder`, `Brace`, `WithoutBorder`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/axis/multi-level-border/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multi-level-border.cs" %}
-{% include code-snippet/heatmap/axis/multi-level-border/multi-level-border.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/axis/multi-level-border/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multi-level-border.cs" %}
-{% include code-snippet/heatmap/axis/multi-level-border/multi-level-border.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

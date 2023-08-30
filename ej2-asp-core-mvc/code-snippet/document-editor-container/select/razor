@@ -4,15 +4,15 @@
   var documenteditor;
   var container;
   function onCreated() {
-    var documenteditorElement = document.getElementById("container");
-    container = documenteditorElement.ej2_instances[0];
-    documenteditor = container.documentEditor;
-    // Event gets triggered on selection change in document
-    container.selectionChange = function () {
-      //Get the start index of current selection
-      let startOffset = container.documentEditor.selection.startOffset;
-      //Get the end index of current selection
-      let endOffset = container.documentEditor.selection.endOffset;
-    };
+      var documenteditorElement = document.getElementById("container");
+      container = documenteditorElement.ej2_instances[0];
+      documenteditor = container.documentEditor;
+      // Event gets triggered on selection change in document
+      container.selectionChange = function () {
+        //Get the start index of current selection
+        let startOffset = container.documentEditor.selection.startOffset;
+        //Get the end index of current selection
+        let endOffset = container.documentEditor.selection.endOffset;
+      };
   }
 </script>

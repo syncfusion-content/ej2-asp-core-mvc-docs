@@ -15,7 +15,7 @@
 
 <script>
     function actionBegin(args) {
-        if (args.actionName == 'Add new record' && args.actionName == 'Save edited records') {
+        if (args.actionName == 'Add new record' || args.actionName == 'Save edited records') {
             args.cancel = true;
         }
     }

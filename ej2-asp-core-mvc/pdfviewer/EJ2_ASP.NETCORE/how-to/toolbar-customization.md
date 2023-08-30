@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar_customization in ##Platform_Name## Pdfviewer Component
+title: Toolbar_customization in ##Platform_Name## Pdfviewer Control | Syncfusion
 description: Learn here all about Toolbar_customization in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Toolbar_customization
@@ -18,43 +18,50 @@ The PDF Viewer provides API for user interactions options provided in its built-
 **Step 2:** Hide the default toolbar of PDF Viewer using the following code snippet.,
 
 ```html
-<ejs-pdfviewer id="pdfviewer" style="height:641px" enableToolbar ="false" documentLoad="documentLoaded" pageChange="pageChanged" ></ejs-pdfviewer>
+<ejs-pdfviewer id="pdfviewer"
+               style="height:641px"
+               enableToolbar="false"
+               documentLoad="documentLoaded"
+               pageChange="pageChanged">
+</ejs-pdfviewer>
 ```
 
 **Step 3:** Add EJ2 toolbar for performing primary actions like Open,Previous page,Next page,Go to page,Print and Download using the following code snippet.,
 
 ```html
-   <ejs-toolbar id="topToolbar" height="56px">
-            <e-toolbar-items>
-                <e-toolbar-item prefixIcon="e-pv-open-document-icon" tooltipText="Open" align="Left" click="openPage" id="Openpage"></e-toolbar-item>
-                <e-toolbar-item prefixIcon="e-pv-previous-page-navigation-icon" tooltipText="Previous Page" align="Center" click="previousClicked" id="previousPage"></e-toolbar-item>
-                <e-toolbar-item prefixIcon="e-pv-next-page-navigation-icon" tooltipText="Next Page" align="Center" click="nextClicked" id="nextPage"></e-toolbar-item>
-                <e-toolbar-item template="@inputtemplate" tooltipText="Page Number" type="Input" align="Center"></e-toolbar-item>
-                <e-toolbar-item template="@template" align="Center" tooltipText="Page Number"></e-toolbar-item>
-                <e-toolbar-item prefixIcon="e-pv-print-document-icon" tooltipText="Print" align="Right" click="printClicked"></e-toolbar-item>
-                <e-toolbar-item prefixIcon="e-pv-download-document-icon" tooltipText="Download" align="Right" click="downloadClicked"></e-toolbar-item>
-            </e-toolbar-items>
-        </ejs-toolbar>
-<input type ="file" id="fileUpload" accept=".pdf" style="display:block;visibility:hidden;width:0;height:0;">
+<ejs-toolbar id="topToolbar" height="56px">
+    <e-toolbar-items>
+        <e-toolbar-item prefixIcon="e-pv-open-document-icon" tooltipText="Open" align="Left" click="openPage" id="Openpage"></e-toolbar-item>
+        <e-toolbar-item prefixIcon="e-pv-previous-page-navigation-icon" tooltipText="Previous Page" align="Center" click="previousClicked" id="previousPage"></e-toolbar-item>
+        <e-toolbar-item prefixIcon="e-pv-next-page-navigation-icon" tooltipText="Next Page" align="Center" click="nextClicked" id="nextPage"></e-toolbar-item>
+        <e-toolbar-item template="@inputtemplate" tooltipText="Page Number" type="Input" align="Center"></e-toolbar-item>
+        <e-toolbar-item template="@template" align="Center" tooltipText="Page Number"></e-toolbar-item>
+        <e-toolbar-item prefixIcon="e-pv-print-document-icon" tooltipText="Print" align="Right" click="printClicked"></e-toolbar-item>
+        <e-toolbar-item prefixIcon="e-pv-download-document-icon" tooltipText="Download" align="Right" click="downloadClicked"></e-toolbar-item>
+    </e-toolbar-items>
+</ejs-toolbar>
+<input type="file"
+       id="fileUpload"
+       accept=".pdf"
+       style="display:block;visibility:hidden;width:0;height:0;">
 ```
 
-**Step 3:** Add EJ2 toolbar for performing magnification actions in PDF Viewer using the following code snippet.,
+**Step 4:** Add EJ2 toolbar for performing magnification actions in PDF Viewer using the following code snippet.,
 
 ```html
-
- <div id="magnificationToolbarItems">
-                <ejs-toolbar id="magnificationToolbar">
-                    <e-toolbar-items id="magnificationToolbarItems">
-                        <e-toolbar-item prefixIcon="e-pv-fit-page" tooltipText="Fit to page" click="pageFitClicked"></e-toolbar-item>
-                        <e-toolbar-item prefixIcon="e-pv-zoom-in-icon" tooltipText="Zoom in" click="zoomInClicked"></e-toolbar-item>
-                        <e-toolbar-item prefixIcon="e-pv-zoom-out-icon" tooltipText="Zoom out" click="zoomOutClicked"></e-toolbar-item>
-                    </e-toolbar-items>
-                </ejs-toolbar>
-    </div>
+<div id="magnificationToolbarItems">
+    <ejs-toolbar id="magnificationToolbar">
+        <e-toolbar-items id="magnificationToolbarItems">
+            <e-toolbar-item prefixIcon="e-pv-fit-page" tooltipText="Fit to page" click="pageFitClicked"></e-toolbar-item>
+            <e-toolbar-item prefixIcon="e-pv-zoom-in-icon" tooltipText="Zoom in" click="zoomInClicked"></e-toolbar-item>
+            <e-toolbar-item prefixIcon="e-pv-zoom-out-icon" tooltipText="Zoom out" click="zoomOutClicked"></e-toolbar-item>
+        </e-toolbar-items>
+    </ejs-toolbar>
+</div>
 
 ```
 
-**Step 4:** Add the following style to achieve the custom toolbar styling.,
+**Step 5:** Add the following style to achieve the custom toolbar styling.,
 
 ```html
 <style>
@@ -161,13 +168,13 @@ The PDF Viewer provides API for user interactions options provided in its built-
 </style>
 ```
 
->The icons are embedded in the font file used in the previous code snippet.
+N>The icons are embedded in the font file used in the previous code snippet.
 
-**Step 5:** Add the following scripts for performing user interaction in PDF Viewer in code behind.
+**Step 6:** Add the following scripts for performing user interaction in PDF Viewer in code behind.
 
 ```html
 <script>
-     var currentPageBox
+    var currentPageBox
     var matchCase = false;
     var filename;
     window.onload = function () {
@@ -218,7 +225,7 @@ The PDF Viewer provides API for user interactions options provided in its built-
     }
     function pageChanged() {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-       document.getElementById('currentPage').value = pdfViewer.currentPageNumber;
+        document.getElementById('currentPage').value = pdfViewer.currentPageNumber;
         updatePageNavigation();
     }
     function onCurrentPageBoxKeypress(event) {

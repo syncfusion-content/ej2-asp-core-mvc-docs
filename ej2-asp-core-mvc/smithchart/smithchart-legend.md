@@ -17,7 +17,7 @@ Legend is a key used in smithchart, that contains symbol and descriptions. It pr
 
 ## Position and Alignment
 
-By default visibility of the legend is false. To enable the legend, kindly set visible as true in legendSettings. Default position for the legend is bottom. By using [`position`] property, you can change the position of the legend. You can either place the legend at bottom, top, right and left side of the smithchart. To use the legend in smithchart, you need to import and inject the SmithchartLegend from chart.
+By default visibility of the legend is false. To enable the legend, set visible as true in legendSettings. Default position for the legend is bottom. By using [`position`] property, you can change the position of the legend. You can either place the legend at bottom, top, right and left side of the smithchart. To use the legend in smithchart, you need to import and inject the SmithchartLegend from chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

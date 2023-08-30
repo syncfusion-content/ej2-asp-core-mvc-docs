@@ -1,5 +1,4 @@
-
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" actionComplete="actionComplete" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" allowPaging="true" actionBegin="actionBegin">
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource"  toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" allowPaging="true" actionBegin="actionBegin">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
     <e-grid-pagesettings pageCount="5 "></e-grid-pagesettings>
     <e-grid-columns>
@@ -11,7 +10,6 @@
 </ejs-grid>
 
 <script>
-
     function actionBegin(args) {
         if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
             for (var i = 0; i < this.columns.length; i++) {
@@ -23,9 +21,6 @@
                 }
             }
         }
-    }
-
-    function actionComplete(args) {
         if (args.requestType === 'save') {
             for (var i = 0; i < this.columns.length; i++) {
                 if (this.columns[i].field == "CustomerID") {
@@ -37,5 +32,4 @@
             }
         }
     }
-
 </script>

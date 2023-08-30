@@ -70,7 +70,7 @@ The Syncfusion ASP.NET Core UI input and editor controls can be validated by usi
 
 ![Validation error status](images/validation-error.png)
 
-> TextBox control supports three types of validation styles. Refer [here](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/validation).
+N> TextBox control supports three types of validation styles. Refer [here](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/validation).
 
 4.You can use the FormValidator [rules](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/#rules) property to display the custom validation error message for each input control.
 

@@ -117,7 +117,7 @@ Follow the below steps to change the size mode for an application at runtime.
 
 ![change-size-mode-for-application-at-runtime](images/change-size-mode-for-application-at-runtime.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-size-modes/tree/main/SizeModeApp)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-size-modes/tree/main/SizeModeApp)
 
 ## Change size mode for a control at runtime
 
@@ -173,7 +173,7 @@ Refer to the following code, in which the `e-bigger` class is added for enabling
 
 ![change-size-mode-for-a-control-at-runtime](images/change-size-mode-for-a-component-at-runtime.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-size-modes/tree/main/SizeModeControl)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-size-modes/tree/main/SizeModeControl)
 
 ## See Also
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Comments in ##Platform_Name## Document Editor Component
-description: Learn here all about comments in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+title: Comments in ##Platform_Name## Document Editor Control | Syncfusion
+description: Learn here all about comments in Syncfusion ##Platform_Name## Document Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Comments
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Comments
+# Comments in Document Editor Component
 
 Document editor allows to add comments to documents. You can add, navigate and remove comments in code and from the UI.
 
@@ -53,7 +53,7 @@ documentEditor.editor.deleteAllComments();
 
 Document Editor provides support for protecting the document with `CommentsOnly` protection. In this protection, user is allowed to add or edit comments alone in the document.
 
-Document editor provides an option to protect and unprotect document using [`enforceProtection`](../api/document-editor/editor/#enforceprotection) and [`stopProtection`](../api/document-editor/editor/#stopprotection) API.
+Document editor provides an option to protect and unprotect document using `enforceProtection` and `stopProtection` API.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,4 +79,4 @@ Comment only protection can be enabled in UI by using [Restrict Editing pane](..
 
 ![Enable comment only protection](images/commentsonly.png)
 
->Note: In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.
+N> In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.

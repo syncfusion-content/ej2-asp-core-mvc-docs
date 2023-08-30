@@ -45,7 +45,7 @@ To bind local JSON data to the Scheduler, you can simply assign a JavaScript obj
 
 
 
-> By default, `dataManager` uses `JsonAdaptor` for local data-binding.
+N> By default, `dataManager` uses `JsonAdaptor` for local data-binding.
 
 You can also bind different field names to the default event fields as well as include additional custom fields to the event object collection which can be referred [here](./appointments/#binding-different-field-names).
 
@@ -80,7 +80,38 @@ Any kind of remote data services can be bound to the Scheduler. To do so, create
 {% endtabs %}
 {% endif %}
 
+### Filter events using the in-built query
 
+To enable server-side filtering operations based on predetermined conditions, the [`includeFiltersInQuery`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_IncludeFiltersInQuery) API can be set to true, this allows the filter query to be constructed using the start date, end date, and recurrence rule which in turn enables the request to be filtered accordingly.
+
+This method greatly improves the component's performance by reducing the data that needs to be transferred to the client side. As a result, the component's efficiency and responsiveness are significantly enhanced, resulting in a better user experience. However, it is important to consider the possibility of longer query strings, which may cause issues with the maximum URL length or server limitations on query string length.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+The following image represents how the parameters are passed using ODataV4 filter.
+
+![OData V4 filter](images/odata-v4-filter.png)
 
 ### Using custom adaptor
 
@@ -140,7 +171,7 @@ You can bind the event data through external ajax request and assign it to the `
 
 
 
-> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
+N> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
 
 ## Passing additional parameters to the server
 
@@ -171,7 +202,7 @@ To send an additional custom parameter to the server-side post, you need to make
 
 
 
-> The parameters added using the `query` property will be sent along with the data request sent to the server on every scheduler actions.
+N> The parameters added using the `query` property will be sent along with the data request sent to the server on every scheduler actions.
 
 ## Handling failure actions
 
@@ -331,6 +362,7 @@ namespace ScheduleSample.Controllers
     }
 }
 ```
+N> You can find the working sample [here](https://github.com/SyncfusionExamples/aspnetcore-scheduler-crud-actions-with-editor-template).
 
 ## Configuring Scheduler with Google API service
 
@@ -361,4 +393,4 @@ We have assigned our custom created Google Calendar url to the DataManager and a
 
 
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

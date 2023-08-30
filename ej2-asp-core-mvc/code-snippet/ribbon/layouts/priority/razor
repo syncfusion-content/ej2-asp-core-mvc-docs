@@ -1,0 +1,91 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge format" }, new MenuItem { Text = "Keep text only" } };
+    List<MenuItem> findOptions = new List<MenuItem>() { new MenuItem { Text = "Find", IconCss = "e-icons e-search" }, new MenuItem { Text = "Advanced find", IconCss = "e-icons e-search" }, new MenuItem { Text = "Go to", IconCss = "e-icons e-arrow-right" } };
+    List<MenuItem> selectOptions = new List<MenuItem>() { new MenuItem { Text = "Select All" }, new MenuItem { Text = "Select Objects" } };
+    
+    List<string> fontSize = new List<string>() { "8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72", "96" };
+    List<string> fontStyle = new List<string>() { "Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia", "Impact", "Segoe Print", "Segoe Script", "Segoe UI", "Symbol", "Times New Roman", "Verdana", "Windings" };
+}
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Clipboard").GroupIconCss("e-icons e-paste").Priority(2).Collections(collection =>
+        {
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.SplitButton).SplitButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-paste").Content("Paste").Items(pasteOptions);
+                }).Add();
+            }).Add();
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-cut").Content("Cut");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-copy").Content("Copy");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-format-painter").Content("Format Painter");
+                }).Add();
+            }).Add();
+        }).Add();
+        group.Header("Font").GroupIconCss("e-icons e-bold").Priority(0).Collections(collection =>
+        {
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.ComboBox).ComboBoxSettings(button =>
+                {
+                    button.DataSource(fontStyle).Index(2);
+                }).Add();
+                item.Type(RibbonItemType.ComboBox).ComboBoxSettings(button =>
+                {
+                    button.DataSource(fontSize).Index(4);
+                }).Add();
+            }).Add();
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-bold").Content("Bold");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-italic").Content("Italic");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-underline").Content("Underline");
+                }).Add();
+            }).Add();
+        }).Add();
+        group.Header("Editing").GroupIconCss("e-icons e-bold").Priority(1).Collections(collection =>
+        {
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.SplitButton).SplitButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-search").Content("Find").Items(findOptions);
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-replace").Content("Replace");
+                }).Add();
+                item.Type(RibbonItemType.SplitButton).SplitButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-mouse-pointer").Content("Select").Items(selectOptions);
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()

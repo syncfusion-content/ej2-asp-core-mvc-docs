@@ -19,7 +19,7 @@ The Timeline views can have additional header rows other than its default date a
 * `Date`
 * `Hour`
 
-> The `Hour` row is not applicable for Timeline month view.
+N> The `Hour` row is not applicable for Timeline month view.
 
 The following example shows the Scheduler displaying all the available header rows on timeline views.
 
@@ -47,6 +47,7 @@ The following example shows the Scheduler displaying all the available header ro
 {% endif %}
 
 
+![Display Timeline Header Rows in ASP.NET Core Scheduler](images/scheduler-header-default.png)
 
 ## Display year and month rows in timeline views
 
@@ -76,6 +77,7 @@ To display the timeline Scheduler simply with year and month names alone, define
 {% endif %}
 
 
+![Display Year and Month in ASP.NET Core Scheduler Timeline Views](images/scheduler-header-year-month.png)
 
 ## Display week numbers in timeline views
 
@@ -105,6 +107,7 @@ The week number can be displayed in a separate header row of the timeline Schedu
 {% endif %}
 
 
+![Display Week Numbers in ASP.NET Core Scheduler Timeline Views](images/scheduler-header-week-number.png)
 
 ## Timeline view displaying dates of a complete year
 
@@ -134,6 +137,7 @@ It is possible to display a complete year in a timeline view by setting `interva
 {% endif %}
 
 
+![Display Dates of Complete Year in ASP.NET Core Scheduler Timeline Views](images/scheduler-header-date-complete-year.png)
 
 ## Customizing the header rows using template
 
@@ -163,5 +167,6 @@ You can customize the text of the header rows and display any images or formatte
 {% endif %}
 
 
+![Display Customizing the Header Rows using Template in ASP.NET Core Scheduler](images/scheduler-custom-header-template.png)
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

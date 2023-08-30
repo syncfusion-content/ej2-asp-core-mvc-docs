@@ -1,8 +1,16 @@
 @using Syncfusion.EJ2;
 @using Syncfusion.EJ2.Maps;
 
-@Html.EJS().Maps("maps").Layers(l =>
+@Html.EJS().Maps("maps").Load("mapsLoad").Layers(l =>
 {
-    l.LayerType(Syncfusion.EJ2.Maps.ShapeLayerType.Bing).Key('../bingmapkey').Add();
+    l.Add();
     l.ShapeSettings(s => s.Fill("blue")).ShapeData(ViewBag.africaShape).Type(Syncfusion.EJ2.Maps.Type.SubLayer).Add();
 }).Render()
+
+<script type="text/javascript">
+    function mapsLoad(args) {
+        args.maps.getBingUrlTemplate("https://dev.virtualearth.net/REST/V1/Imagery/Metadata/Aerial?output=json&uriScheme=https&key=?").then(function (url) {
+            args.maps.layers[0].urlTemplate = url;
+        });
+    }
+</script>
