@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Module in ##Platform_Name## Gantt Component
+title: Module in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Module in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Module
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Module injection
+# Module injection in Syncfusion ##Platform_Name## Gantt Component
 
 The modules that are available in Gantt are as follows.
 
@@ -28,5 +28,8 @@ The modules that are available in Gantt are as follows.
 | [`DayMarkers`](../api/gantt/dayMarkers)| Inject this module to use event markers.|
 | [`ContextMenu`](https://ej2.syncfusion.com/documentation/api/gantt/contextMenu/)| Inject this module to use context menu feature.|
 | [`ColumnMenu`](../api/gantt/columnMenu)| Inject this module to use column menu feature.|
+| `VirtualScroll`| Inject this module to use Virtual Scroll feature.|
+| `CriticalPath`| Inject this module to use CriticalPath feature.|
+
 
 These modules should be injected into the Gantt using the **Gantt.Inject** method.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Range Slider Component
+title: Types in ##Platform_Name## Range Slider Control | Syncfusion
 description: Learn here all about Types in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Types
+# Types in RangeSlider Control
 
 The types of Slider are as follows:
 
@@ -19,8 +19,7 @@ The types of Slider are as follows:
 | MinRange | Displays the shadow from the start value to the current selected value. |
 | Range | Selects a range of values. It also displays the shadow in-between the selection range. |
 
->Both the Default Slider and Min-Range Slider have same behavior that is used to select a single value.
-In Min-Range Slider, a shadow is considered from the start value to current handle position. But the Range Slider contains two handles that is used to select a range of values and a shadow is considered in between the two handles.
+N> Both the Default Slider and Min-Range Slider have same behavior that is used to select a single value. In Min-Range Slider, a shadow is considered from the start value to current handle position. But the Range Slider contains two handles that is used to select a range of values and a shadow is considered in between the two handles.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

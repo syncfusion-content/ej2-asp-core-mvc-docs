@@ -1,4 +1,14 @@
 @using Syncfusion.EJ2;
-@Html.EJS().Maps("maps").Layers(l=> {
-    l.LayerType(Syncfusion.EJ2.Maps.ShapeLayerType.Bing).Key("../bingmapkey").Add();
+ @Html.EJS().Maps("maps").Load("mapsLoad").Layers(l =>
+{
+    l.Add();
 }).Render()
+
+
+<script type="text/javascript">
+    function mapsLoad(args) {
+        args.maps.getBingUrlTemplate("https://dev.virtualearth.net/REST/V1/Imagery/Metadata/CanvasLight?output=json&uriScheme=https&key=AuQazZ3PUo3p2_c2KPhqMku-iKvee5fKcRREIg46MENqVTM9dp2ZyTbrHJpR9esZ").then(function (url) {
+            args.maps.layers[0].urlTemplate = url;
+        });
+    }
+</script>

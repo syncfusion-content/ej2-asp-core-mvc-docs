@@ -104,4 +104,4 @@ By setting value in percentage, chart gets its dimension with respect to its co
 
 
 
-> When you do not specify the size, it takes `450px` as the height and window size as its width.
+N> When you do not specify the size, it takes `450px` as the height and window size as its width.

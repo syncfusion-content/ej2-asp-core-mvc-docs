@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Toggle Button in ##Platform_Name## Toolbar Component
+title: Add Toggle Button in ##Platform_Name## Toolbar Control | Syncfusion
 description: Learn here all about Add Toggle Button in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Toggle Button
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Add Toggle Button
+# Add Toggle Button in ToolBar Control
 
 Toolbar supports to add a toggle Button by using the template property. Refer below steps
 
@@ -19,8 +19,7 @@ Toolbar supports to add a toggle Button by using the template property. Refer be
     template='<button class="e-btn" id="media_btn"></button>'
 ```
 
-* Now render the toggle Button into the targeted element in Toolbar created event handler and bind click event for it.
-On clicking the toggle Button, change the required icon and content based on current active state.
+* Now render the toggle Button into the targeted element in Toolbar created event handler and bind click event for it. On clicking the toggle Button, change the required icon and content based on current active state.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

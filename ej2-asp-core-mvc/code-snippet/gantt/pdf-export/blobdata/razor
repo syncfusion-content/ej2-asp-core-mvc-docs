@@ -1,0 +1,42 @@
+@(Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).AllowExcelExport(true).TaskFields(ts => ts.Id(
+        "TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Toolbar(new List<string>() {
+"PdfExport","ExcelExport" }).ToolbarClick("toolbarClick").PdfExportComplete("pdfExpComplete").ExcelExportComplete("excelExpComplete").TreeColumnIndex(1).Render())
+
+<script>
+    function toolbarClick(args) {
+        var ganttObj = document.getElementById("GanttContainer").ej2_instances[0];
+        if (args.item.id === "GanttContainer_pdfexport") {
+            ganttObj.pdfExport(null,null,null,true);
+        }
+        if (args.item.id === "GanttContainer_excelexport") {
+            ganttObj.excelExport(null,null,null,true);
+        }
+    }
+    let excelExpComplete = (args) => {
+        //This event will be triggered when excel exporting.
+            args.promise.then((e) => {
+        //In this `then` function, we can get blob data through the arguments after promise resolved.
+                exportBlob(e.blobData);
+    });
+};
+let pdfExpComplete = (args) => {
+    //This event will be triggered when pdf exporting.
+        args.promise.then((e) => {
+        //In this `then` function, we can get blob data through the arguments after promise resolved.
+        exportBlob(e.blobData);
+    });
+};
+
+
+let exportBlob = (blob) => {
+    let a = document.createElement('a');
+    document.body.appendChild(a);
+    a.style.display = 'none';
+    let urlg = window.URL.createObjectURL(blob);
+    a.href = url;
+    a.download = 'Export';
+    a.click();
+    window.URL.revokeObjectURL(url);
+    document.body.removeChild(a);
+}
+</script>

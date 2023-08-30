@@ -1,0 +1,105 @@
+<div class="msg-icon-section">
+  <div class="content-section">
+    <ejs-button id="btn1" content="Show Default Message" cssClass="e-outline e-primary msg-hidden"></ejs-button>
+    <ejs-message id="msg_default_icon" showCloseIcon="true" closed="defaultClosed" content="Editing is restricted">
+    </ejs-message>
+    <ejs-button id="btn2" content="Show Info Message" cssClass="e-outline e-primary e-info msg-hidden"></ejs-button>
+    <ejs-message id="msg_info_icon" severity="Info" showCloseIcon="true" closed="infoClosed"
+      content="Please read the comments carefully"></ejs-message>
+    <ejs-button id="btn3" content="Show Success Message" cssClass="e-outline e-primary e-success msg-hidden">
+    </ejs-button>
+    <ejs-message id="msg_success_icon" severity="Success" showCloseIcon="true" closed="successClosed"
+      content="Your message has been sent successfully"></ejs-message>
+    <ejs-button id="btn4" content="Show Warning Message" cssClass="e-outline e-primary e-warning msg-hidden">
+    </ejs-button>
+    <ejs-message id="msg_warning_icon" severity="Warning" showCloseIcon="true" closed="warningClosed"
+      content="There was a problem with your network connection"></ejs-message>
+    <ejs-button id="btn5" content="Show Error Message" cssClass="e-outline e-primary e-error msg-hidden"></ejs-button>
+    <ejs-message id="msg_error_icon" severity="Error" showCloseIcon="true" closed="errorClosed"
+      content="A problem has been occurred while submitting your data"></ejs-message>
+  </div>
+</div>
+
+<script type="text/javascript">
+  document.getElementById("btn1").onclick = function (e) {
+    var msgDefault = ej.base.getComponent(document.getElementById("msg_default_icon"), "message");
+    var defaultBtn = ej.base.getComponent(document.getElementById("btn1"), "btn");
+    show(msgDefault, defaultBtn);
+  }
+
+  document.getElementById("btn2").onclick = function (e) {
+    var msgInfo = ej.base.getComponent(document.getElementById("msg_info_icon"), "message");
+    var infoBtn = ej.base.getComponent(document.getElementById("btn2"), "btn");
+    show(msgInfo, infoBtn);
+  }
+
+  document.getElementById("btn3").onclick = function (e) {
+    var msgSuccess = ej.base.getComponent(document.getElementById("msg_success_icon"), "message");
+    var successBtn = ej.base.getComponent(document.getElementById("btn3"), "btn");
+    show(msgSuccess, successBtn);
+  }
+
+  document.getElementById("btn4").onclick = function (e) {
+    var msgWarning = ej.base.getComponent(document.getElementById("msg_warning_icon"), "message");
+    var warningBtn = ej.base.getComponent(document.getElementById("btn4"), "btn");
+    show(msgWarning, warningBtn);
+  }
+
+  document.getElementById("btn5").onclick = function (e) {
+    var msgError = ej.base.getComponent(document.getElementById("msg_error_icon"), "message");
+    var errorBtn = ej.base.getComponent(document.getElementById("btn5"), "btn");
+    show(msgError, errorBtn);
+  }
+
+  function defaultClosed() {
+    var defaultBtn = ej.base.getComponent(document.getElementById("btn1"), "btn");
+    defaultBtn.element.classList.remove("msg-hidden");
+  }
+
+  function infoClosed() {
+    var infoBtn = ej.base.getComponent(document.getElementById("btn2"), "btn");
+    infoBtn.element.classList.remove("msg-hidden");
+  }
+
+  function warningClosed() {
+    var warningBtn = ej.base.getComponent(document.getElementById("btn4"), "btn");
+    warningBtn.element.classList.remove("msg-hidden");
+  }
+
+  function successClosed() {
+    var successBtn = ej.base.getComponent(document.getElementById("btn3"), "btn");
+    successBtn.element.classList.remove("msg-hidden");
+  }
+
+  function errorClosed() {
+    var errorBtn = ej.base.getComponent(document.getElementById("btn5"), "btn");
+    errorBtn.element.classList.remove("msg-hidden");
+  }
+
+  function show(message, btn) {
+    message.visible = true;
+    btn.element.classList.add("msg-hidden");
+  }
+
+</script>
+
+<style>
+  .msg-icon-section .content-section {
+    margin: 0 auto;
+    max-width: 450px;
+    padding-top: 10px;
+  }
+
+  .msg-icon-section .e-message {
+    margin: 10px 0;
+  }
+
+  .msg-icon-section .e-btn {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .msg-icon-section .e-btn.msg-hidden {
+    display: none;
+  }
+</style>

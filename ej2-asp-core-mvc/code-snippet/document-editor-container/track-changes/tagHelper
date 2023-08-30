@@ -1,0 +1,2 @@
+
+<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true enableTrackChanges=true created="onCreated" height="590px"></ejs-documenteditorcontainer>

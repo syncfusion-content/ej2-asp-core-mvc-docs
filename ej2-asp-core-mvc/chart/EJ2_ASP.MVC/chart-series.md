@@ -43,7 +43,7 @@ You can add multiple series to the chart by using [`Series`](https://help.syncfu
 
 Combination of different types like Line, column etc, can be rendered in a chart.
 
->Bar series cannot be combined with any other series as the axis orientation is different from other series.
+N>Bar series cannot be combined with any other series as the axis orientation is different from other series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -72,7 +72,7 @@ Combination of different types like Line, column etc, can be rendered in a chart
 
 ## Enable Complex Property in Series
 
-By setting `EnableComplexProperty` value as `true` in series you can bind complex data to the chart.
+By setting [`EnableComplexProperty`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_EnableComplexProperty) value as **true** in series you can bind complex data to the chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

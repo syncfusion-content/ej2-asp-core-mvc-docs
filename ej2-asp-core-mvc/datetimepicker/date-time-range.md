@@ -40,4 +40,4 @@ When the min and max properties are configured and the selected datetime value i
 
 
 
-> If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range.
+N> If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot Chart in ##Platform_Name## Pivot Table Component
+title: Pivot Chart in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Pivot Chart in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pivot Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pivot Chart
+# Pivot Chart in ##Platform_Name## Pivot Table Component
 
 In pivot table component, pivot chart would act as an additional visualization component with its basic and important characteristic like drill down and drill up, 15+ chart types, series customization, axis customization, legend customization, export, print and tooltip. Its main purpose is to show the pivot data in graphical format.
 
@@ -52,13 +52,14 @@ For more information [`refer`](./data-binding) here.
 
 ## Chart Types
 
-Supports 19 different types of charts as follows,
+Supports 21 different types of charts as follows,
 
 * Line
 * Column
 * Area
 * Bar
 * StepArea
+* StackingLine
 * StackingColumn
 * StackingArea
 * StackingBar
@@ -68,6 +69,7 @@ Supports 19 different types of charts as follows,
 * Scatter
 * Spline
 * SplineArea
+* StackingLine100
 * StackingColumn100
 * StackingBar100
 * StackingArea100
@@ -152,7 +154,7 @@ In the accumulation charts, drill down and drill up operations can be performed 
 **Collapse** - It is to drill up the corresponding series until the first level.
 **Exit** - It is to close the context menu.
 
-> The drill operation in accumulation charts can be performed only for row headers.
+N> The drill operation in accumulation charts can be performed only for row headers.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -311,7 +313,7 @@ User can draw pie and doughnut charts within the specified range using the `Star
 ![output](images/accumulation-angle.png)
 
 Users can get doughnut chart from pie chart and vice-versa using the `InnerRadius` property in [`PivotChartSeries`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) class. If the property is greater than **0** percent, the doughnut chart will appear from the pie chart.
-> It takes the value only in percentage.
+N> It takes the value only in percentage.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -409,7 +411,7 @@ In the following sample, the `Popup` mode of field list is enabled in the pivot 
 
 User can enable the grouping bar by setting the property [`ShowGroupingBar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowGroupingBar) in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class as **true**. The grouping bar in pivot chart shows a dropdown list in value axis instead of buttons. The dropdown list holds list of value fields bounded in the [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) and it can be switched to draw the pivot chart with the selected value field. This has been defined as the default behavior in the pivot chart component. For more information regarding the grouping bar, refer the [grouping bar](./grouping-bar) topic.
 
-> For multiple axis support, buttons will be placed in value axis instead of dropdown list.
+N> For multiple axis support, buttons will be placed in value axis instead of dropdown list.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -502,7 +504,7 @@ By default, the pivot chart will be drawn with the value field (measure) which i
 
 User can draw the pivot chart with multiple value fields by setting the property [`EnableMultipleAxis`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableMultipleAxis) in [`ChartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ChartSettings) class as **true**. In the below code sample, the pivot chart will be drawn with both value fields "Sold" and "Amount" available in the [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html).
 
-> The multiple axis support is not applicable for the accumulation chart types like pie, doughnut, pyramid, and funnel.
+N> The multiple axis support is not applicable for the accumulation chart types like pie, doughnut, pyramid, and funnel.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -589,6 +591,72 @@ In the following code sample, the pivot chart can be seen as a single chart with
 
 
 
+Additionally, to display chart series for multiple values within a single y-axis, set the properties [`EnableMultipleAxis`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableMultipleAxis) to **true** and the [`MultipleAxisMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_MultipleAxisMode) to **Combined**, in the [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html).
+
+> The y-axis range values will be formatted using the first value field on the value axis. For example, if the first value field is in currency format and the remaining value fields are in different number formats or no format, the y-axis range values will be displayed in the currency format of the first value field.
+
+The pivot chart in the following code sample can be seen as a single chart with multiple value fields such as **Sold** and **Amount** drawn as a single y-axis.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="combinedYAxis.cs" %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/combinedYAxis.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="combinedYAxis.cs" %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/combinedYAxis.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Pivot Chart for multiple values in a single y-axis](images/single-combined-y-axis.png)
+
+### Show point color based on members
+
+When multiple axes are enabled, you can display the same color for each member in the column axis by setting the [`ShowPointColorByMembers`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowPointColorByMembers) property to **true** in the [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). As a result, the end user can easily identify each member across different measures in the entire chart.
+
+Furthermore, end user can see or hide specific members across different measures in the entire chart with a single click on the legend item.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ShowMemberSeries.cs" %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/ShowMemberSeries.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ShowMemberSeries.cs" %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/ShowMemberSeries.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Show point color based on members in Pivot Chart](images/showMemberSeries.png)
+
 ## Series Customization
 
 User can customize series of the pivot chart using [`ChartSeries`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) in [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) class. The changes handled in the property will be reflected commonly in all chart series.
@@ -657,7 +725,7 @@ In the following sample, the even series are hidden in the pivot chart.
 
 User can customize axis of the pivot chart using [`PrimaryXAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_PrimaryXAxis) and [`PrimaryYAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_PrimaryYAxis) properties in [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) class.
 
-> Axis customization is not applicable for the accumulation chart types like pie, doughnut, pyramid, and funnel.
+N> Axis customization is not applicable for the accumulation chart types like pie, doughnut, pyramid, and funnel.
 
 In the following sample, title of y-axis and x-axis are customized.
 
@@ -745,7 +813,7 @@ Also user can set the position of the legend in pivot chart using the property [
 * Right: Displays the legend at the right of the pivot chart.
 * Custom: Displays the legend based on the given x and y values.
 
-> By default, the legend is not visible for the accumulation chart types like pie, doughnut, pyramid, and funnel.
+N> By default, the legend is not visible for the accumulation chart types like pie, doughnut, pyramid, and funnel.
 
 In the following sample, the legend shape and its position can be customized.
 
@@ -784,7 +852,7 @@ User can enable and customize the marker and crosshair using [`MarkerSettings`](
 
 Also user can enable and customize the crosshair tooltip for axes using [`PrimaryXAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_PrimaryXAxis) and [`PrimaryYAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_PrimaryYAxis) classes.
 
-> Marker and crosshair is not applicable for the accumulation chart types like pie, doughnut, pyramid, and funnel.
+N> Marker and crosshair is not applicable for the accumulation chart types like pie, doughnut, pyramid, and funnel.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -832,7 +900,7 @@ and three modes of zooming direction that specifies whether to zoom vertically o
 
 This can be set using the property [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotZoomSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotZoomSettings_Mode) in [`ZoomSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotZoomSettings.html) class. By default, if the pivot chart is zoomed, a toolbar would display with the options - Zoom, ZoomIn, ZoomOut, Pan, Reset. User can also customize its option using the property [`ToolbarItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotZoomSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotZoomSettings_ToolbarItems) in [`ZoomSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotZoomSettings.html) class.
 
-> Zooming and panning is not applicable for the accumulation chart types like pie, doughnut, pyramid, and funnel.
+N> Zooming and panning is not applicable for the accumulation chart types like pie, doughnut, pyramid, and funnel.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -865,7 +933,7 @@ This can be set using the property [`Mode`](https://help.syncfusion.com/cr/aspne
 
 By default, tooltip for the pivot chart is enabled. User can customize it by using the property [`TooltipSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotTooltipSettings.html) in [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) class.
 
-> The tooltip can be disabled by setting the property [`Enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotTooltipSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotTooltipSettings_Enable) in [`TooltipSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotTooltipSettings.html) class as **false**.
+N> The tooltip can be disabled by setting the property [`Enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotTooltipSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotTooltipSettings_Enable) in [`TooltipSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotTooltipSettings.html) class as **false**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,0 +1,10 @@
+<ejs-kanban id="KanbanVirtualScrolling" keyField="Status" dataSource="@ViewBag.data" enableTooltip="true" enableVirtualization="true">
+    <e-kanban-columns>
+        <e-kanban-column headerText="To Do" keyField="Open"></e-kanban-column>
+        <e-kanban-column headerText="In Progress" keyField="InProgress"></e-kanban-column>
+        <e-kanban-column headerText="Code Review" keyField="Review"></e-kanban-column>
+        <e-kanban-column headerText="Done" keyField="Close"></e-kanban-column>
+    </e-kanban-columns>
+    <e-kanban-cardsettings headerField="Id" contentField="Summary" selectionType="Multiple"></e-kanban-cardsettings>
+    <e-kanban-dialogsettings fields="@ViewBag.dialogData"></e-kanban-dialogsettings>
+</ejs-kanban>

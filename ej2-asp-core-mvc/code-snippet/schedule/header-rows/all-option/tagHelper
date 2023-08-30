@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Schedule
 
-<ejs-schedule id="schedule" width="100%" height="650px" selectedDate="new DateTime(2018, 1, 1)" >
+<ejs-schedule id="schedule" width="100%" height="650px" selectedDate="new DateTime(2023, 1, 1)" >
     <e-schedule-header-rows>
         <e-schedule-header-row option="Year"></e-schedule-header-row>
         <e-schedule-header-row option="Month"></e-schedule-header-row>
