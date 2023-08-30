@@ -217,3 +217,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [How to customize the step value and hide spin buttons](./how-to/customize-the-step-value-and-hide-spin-buttons/)
 * [How to prevent nullable input in NumericTextBox](./how-to/prevent-nullable-input-in-numerictextbox/)
 * [How to maintain trailing zeros in NumericTextBox](./how-to/maintain-trailing-zeros-in-numerictextbox/)
+
+N> You can also explore our [ASP.NET Core Numeric TextBox Example](https://ej2.syncfusion.com/aspnetcore/NumericTextBox/DefaultFunctionalities#/material) that shows you how to render and configure the numeric textbox.
