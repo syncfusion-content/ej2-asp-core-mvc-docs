@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").Loaded("heatmapLoaded").TitleSettings(ts =>
+  ts.Text("Sales Revenue per Employee (in 1000 US$)").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+    xAxis.Labels(ViewBag.xLabels)).YAxis(yaxis =>
+      yaxis.Labels(ViewBag.yLabels)).DataSource(ViewBag.dataSource).Render()
+
+<script>
+  function heatmapLoaded(args) {
+    console.log("The loaded event has been triggered!!!");
+  }
+</script>
+

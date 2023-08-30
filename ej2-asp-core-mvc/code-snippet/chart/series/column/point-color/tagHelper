@@ -1,0 +1,18 @@
+    <ejs-chart id="columnContainer" title="USA CLIMATE - WEATHER BY MONTH">
+        <e-chart-primaryxaxis valueType="Category">
+            <e-majorgridlines width="0"></e-majorgridlines>
+        </e-chart-primaryxaxis>
+        <e-chart-primaryyaxis labelFormat="{value}°C">
+            <e-majorticklines width="0"></e-majorticklines>
+            <e-minorticklines width="0"></e-minorticklines>
+            <e-linestyle width="0"></e-linestyle>
+        </e-chart-primaryyaxis>
+        <e-chart-chartarea>
+            <e-chartarea-border width="0"></e-chartarea-border>
+        </e-chart-chartarea>
+        <e-series-collection>
+            <e-series pointColorMapping="color" dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+                <e-series-cornerradius topLeft="10" topRight="10"></e-series-cornerradius>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

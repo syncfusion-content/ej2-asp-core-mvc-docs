@@ -9,7 +9,7 @@ public class HomeController : Controller
         "LowerCase", "UpperCase", "|",
         "Formats", "Alignments", "OrderedList", "UnorderedList",
         "Outdent", "Indent", "|",
-        "CreateLink", "Image", "CreateTable", "|", "ClearFormat", "Print",
+        "CreateLink", "Image", "CreateTable", "|", "FormatPainter" , "ClearFormat", "Print",
         "SourceCode", "FullScreen", "|", "Undo", "Redo"
     };
         return View();

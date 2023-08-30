@@ -71,7 +71,7 @@
         return result;
     };
 
-    var pivotObj; var fieldListObj; var pivotGridModule;
+    var pivotObj; var fieldListObj;
     function onGridEnginePopulate(args) {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
         fieldListObj = document.getElementById('PivotFieldList').ej2_instances[0];
@@ -88,7 +88,7 @@
         //Getting component instance.
         fieldListObj = document.getElementById('PivotFieldList').ej2_instances[0];
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
-        pivotGridModule = pivotObj;
+        fieldListObj.pivotGridModule = pivotObj;
         //Assigning report to pivot table component.
         pivotObj.datasourcesettings = fieldListObj.datasourcesettings;
         //Generating page settings based on pivot table component’s size.

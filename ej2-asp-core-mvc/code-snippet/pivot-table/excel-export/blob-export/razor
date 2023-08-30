@@ -1,0 +1,31 @@
+@Html.EJS().Button("pdf").Content("Pdf Export").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").EnableVirtualization(true).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(true)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Sold").Add(); rows.Name("Amount").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Country").Caption("Units Sold").Add(); values.Name("Products").Caption("Sold Amount").Add();
+})).AllowExcelExport(true).ExportComplete("exportComplete").Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('pdf').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport({}, false, null, true);
+    }
+    function exportComplete(args) {
+        if (args.promise !== null) {
+            args.promise.then((e: { blobData: Blob }) => {
+                console.log(e.blobData);
+            });
+        }
+    }
+</script>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nodes in ##Platform_Name## Diagram Component
+title: Nodes in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Nodes in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Nodes
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Node
+# Node in Diagram Control
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
@@ -44,8 +44,6 @@ To create a node, define the [`node`](https://help.syncfusion.com/cr/aspnetcore-
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Add/Remove node at runtime
 
@@ -136,8 +134,6 @@ Nodes can be interactively drawn by clicking and dragging the diagram surface by
 {% endtabs %}
 {% endif %}
 
-
-
 ## Flip
 
 The diagram provides support to flip the node. [`flip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Flip) is performed to give the mirrored image of the original element.
@@ -172,7 +168,7 @@ The flip types are as follows:
 
 
 
-> The flip is also applicable for group and BPMN shapes.
+N> The flip is also applicable for group and BPMN shapes.
 
 ## Appearance
 
@@ -199,8 +195,6 @@ The flip types are as follows:
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Gradient
 
@@ -242,8 +236,6 @@ There are two types of gradients as follows:
 {% endtabs %}
 {% endif %}
 
-
-
 ## Radial gradient
 
 * [`RadialGradient`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.GradientType.html) defines a smooth transition between stops on a circle.
@@ -270,8 +262,6 @@ There are two types of gradients as follows:
 {% endtabs %}
 {% endif %}
 
-
-
 ## Shadow
 
 Diagram provides support to add [`shadow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Shadow) effect to a node that is disabled, by default. It can be enabled with the constraints property of the node.
@@ -295,8 +285,6 @@ Diagram provides support to add [`shadow`](https://help.syncfusion.com/cr/aspnet
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Customizing shadow
 
@@ -322,13 +310,11 @@ The angle, distance, and opacity of the shadow can be customized with the shadow
 {% endtabs %}
 {% endif %}
 
-
-
 ## Icon
 
 Diagram provides support to describe the state of the node. i.e., the node is expanded or collapsed state.
 
-> Icon can be created only when the node has outEdges.
+N> Icon can be created only when the node has outEdges.
 
 * To explore the properties of expand and collapse icon, refer to [`expandIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_ExpandIcon) and [`collapseIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_CollapseIcon).
 
@@ -354,8 +340,6 @@ Diagram provides support to describe the state of the node. i.e., the node is ex
 {% endtabs %}
 {% endif %}
 
-
-
 ## Customizing expand icon
 
 * Set the borderColor, borderWidth, and background color for an expandIcon using borderColor, borderWidth, and fill properties.
@@ -364,6 +348,8 @@ Diagram provides support to describe the state of the node. i.e., the node is ex
 
 * The expand icon can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
 
+* The [`iconColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_IconColor) property can be used to set the strokeColor of the Icon.
+
 ## Customizing collapse icon
 
 * Set the [`borderColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_BorderColor), [`borderWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_BorderWidth), background color for an collapseIcon using borderColor, borderWidth, and [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_Fill) properties.
@@ -371,6 +357,8 @@ Diagram provides support to describe the state of the node. i.e., the node is ex
 * Set a size for collapseIcon by using [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_Height) properties.
 
 * Like expand icon, collapse icon also can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
+
+* The [`iconColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_IconColor) property can be used to set the strokeColor of the Icon.
 
 ## Interaction
 
@@ -411,8 +399,6 @@ Node has the InEdges and OutEdges read-only property. In this property, you can 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## See Also
 

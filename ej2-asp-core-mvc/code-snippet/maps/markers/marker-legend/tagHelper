@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+<div id="control-section">
+    <ejs-maps id="maps">
+        <e-maps-legendsettings visible="true" type="Markers" useMarkerShape="true">
+            <e-legendsettings-togglelegendsettings enable="true" applyShapeSettings="false" fill="green">
+            </e-legendsettings-togglelegendsettings>
+        </e-maps-legendsettings>
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map">
+                <e-layersettings-shapesettings fill="#E5E5E5"></e-layersettings-shapesettings>
+                <e-layersettings-markers>
+                    <e-layersettings-marker colorValuePath="color" shapeValuePath="shape" legendText="Country" visible="true" dataSource="ViewBag.markerdata"></e-layersettings-marker>
+                </e-layersettings-markers>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

@@ -1,0 +1,4 @@
+@using Syncfusion.EJ2.Schedule
+</div>
+<ejs-recurrenceeditor id="recurrence" selectedType="1" endTypes='new[] { "until", "count" }'></ejs-recurrenceeditor>
+</div>

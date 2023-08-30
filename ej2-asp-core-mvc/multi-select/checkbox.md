@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Checkbox in ##Platform_Name## Multi Select Component
+title: Checkbox in ##Platform_Name## Multi Select Control | Syncfusion
 description: Learn here all about Checkbox in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Checkbox
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CheckBox
+# CheckBox in MultiSelect Control
 
 The MultiSelect has built-in support to select multiple values through checkbox, when [mode](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~Mode.html) property set as `CheckBox`.
 
@@ -44,11 +44,9 @@ To use checkbox, inject the `CheckBoxSelection` module in the MultiSelect.
 
 The MultiSelect control has in-built support to select the all list items using `Select All` options in the header.
 
-When the [showSelectAll](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~ShowSelectAll.html) property is set to true, by default Select All text will show.
-You can customize the name attribute of the Select All option by using [selectAllText](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~SelectAllText.html).
+When the [showSelectAll](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~ShowSelectAll.html) property is set to true, by default Select All text will show. You can customize the name attribute of the Select All option by using [selectAllText](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~SelectAllText.html).
 
-For the unSelect All option, by default unSelect All text will show.
-You can customize the name attribute of the unSelect All option by using `unSelectAllText`.
+For the unSelect All option, by default unSelect All text will show. You can customize the name attribute of the unSelect All option by using `unSelectAllText`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

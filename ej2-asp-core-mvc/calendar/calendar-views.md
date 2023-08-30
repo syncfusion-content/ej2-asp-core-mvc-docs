@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Calendar Views in ##Platform_Name## Calendar Component
-description: Learn here all about Calendar Views in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
+title: Calendar Views in ##Platform_Name## Calendar Control | Syncfusion
+description: Learn here all about Calendar Views in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Calendar Views
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Calendar Views
+# Calendar Views in Calendar Control
 
 The Calendar has the following pre-defined views that provide a flexible way to navigate back and forth when selecting dates.
 
@@ -28,9 +28,6 @@ The following example demonstrates how to set the `year` as the start view of th
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/calendar/calendar-view/views/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Views.cs" %}
-{% include code-snippet/calendar/calendar-view/views/views.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,16 +51,13 @@ By defining the start and depth property with the different view, drill-down and
 
 The following example displays the Calendar in `decade` view, and allows you to select a date in `month` view.
 
-> Depth view should always be smaller than the start view. If the `depth` and `start` views are the same, then the Calendar view remains unchanged.
+N> Depth view should always be smaller than the start view. If the `depth` and `start` views are the same, then the Calendar view remains unchanged.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/calendar/calendar-view/restriction/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Restriction.cs" %}
-{% include code-snippet/calendar/calendar-view/restriction/restriction.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -79,4 +73,4 @@ The following example displays the Calendar in `decade` view, and allows you to 
 {% endtabs %}
 {% endif %}
 
-
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarUGSample).

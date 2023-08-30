@@ -1,4 +1,4 @@
-    @Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
 
 <script>
     var documenteditor;
