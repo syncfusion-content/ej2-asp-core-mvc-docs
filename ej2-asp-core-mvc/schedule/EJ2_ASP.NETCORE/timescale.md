@@ -17,6 +17,8 @@ The time slots are usually the time cells that are displayed on the Day, Week an
 * `interval` – Defines the time duration on which the time axis to be displayed either in 1 hour or 30 minutes interval and so on. It accepts the values in minutes and defaults to 60.
 * `slotCount` – Decides the number of slot count to be split for the specified time interval duration. It defaults to 2, thus displaying two slots to represent an hour(each slot depicting 30 minutes duration).
 
+>Note: The upper limit for rendering slots within a single day, utilizing the **interval** and **slotCount** properties of the **timeScale**, stands at 1000. This constraint aligns with the maximum **colspan** value permissible for the **table** element, also capped at 1000. This particular restriction is relevant exclusively to the `TimelineDay`, `TimelineWeek` and `TimelineWorkWeek` views.
+
 ## Setting different time slot duration
 
 The `interval` and `slotCount` properties can be used together on the Scheduler to set different time slot duration which is depicted in the following code example. Here, six time slots together represents an hour.
@@ -45,6 +47,7 @@ The `interval` and `slotCount` properties can be used together on the Scheduler 
 {% endif %}
 
 
+![Display Setting Different Time Slot Duration in ASP.NET Core Scheduler](images/scheduler-timeslot-duration.png)
 
 ## Customizing time cells using template
 
@@ -77,6 +80,7 @@ The `timeScale` property also provides template option to allow customization of
 {% endif %}
 
 
+![Display Customizing Time Cells using Template in ASP.NET Core Scheduler](images/scheduler-custom-timecell.png)
 
 ## Hide the timescale
 
@@ -106,6 +110,7 @@ The grid lines which indicates the exact time duration can be enabled or disable
 {% endif %}
 
 
+![Display Hide the Timescale in ASP.NET Core Scheduler](images/scheduler-hide-timescale.png)
 
 ## Highlighting current date and time
 
@@ -135,5 +140,6 @@ By default, Scheduler indicates current date with a highlighted date header on a
 {% endif %}
 
 
+![Display Highlighting Current Date and Time in ASP.NET Core Scheduler](images/scheduler-highlight-date-time.png)
 
 N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

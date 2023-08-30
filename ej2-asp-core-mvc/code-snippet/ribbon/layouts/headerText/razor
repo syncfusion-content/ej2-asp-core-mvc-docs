@@ -1,0 +1,42 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge format" }, new MenuItem { Text = "Keep text only" } };
+}
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Clipboard").Collections(collection =>
+        {
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.SplitButton).SplitButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-paste").Content("Paste").Items(pasteOptions);
+                }).Add();
+            }).Add();
+        }).Add();
+        group.Header("Font").Collections(collection =>
+        {
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-bold").Content("Bold");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-italic").Content("Italic");
+                }).Add();
+                item.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-underline").Content("Underline");
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()

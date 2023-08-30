@@ -36,8 +36,8 @@ public List<DoctorData> GetDoctorData()
     {
         Id = 1,
         Subject = "Echocardiogram",
-        StartTime = new DateTime(2018, 4, 2, 9, 30, 0),
-        EndTime = new DateTime(2018, 4, 2, 11, 30, 0),
+        StartTime = new DateTime(2023, 4, 2, 9, 30, 0),
+        EndTime = new DateTime(2023, 4, 2, 11, 30, 0),
         IsAllDay = false,
         DoctorId = 1
     });
@@ -45,8 +45,8 @@ public List<DoctorData> GetDoctorData()
     {
         Id = 2,
         Subject = "Lumbar punctures",
-        StartTime = new DateTime(2018, 4, 2, 9, 30, 0),
-        EndTime = new DateTime(2018, 4, 2, 10, 45, 0),
+        StartTime = new DateTime(2023, 4, 2, 9, 30, 0),
+        EndTime = new DateTime(2023, 4, 2, 10, 45, 0),
         IsAllDay = false,
         DoctorId = 2
     });
@@ -54,8 +54,8 @@ public List<DoctorData> GetDoctorData()
     {
         Id = 3,
         Subject = "Osteoarthritis",
-        StartTime = new DateTime(2018, 4, 4, 10, 0, 0),
-        EndTime = new DateTime(2018, 4, 4, 12, 0, 0),
+        StartTime = new DateTime(2023, 4, 4, 10, 0, 0),
+        EndTime = new DateTime(2023, 4, 4, 12, 0, 0),
         IsAllDay = false,
         DoctorId = 3
     });

@@ -144,6 +144,7 @@ Usually a day view displays a single day with all its related appointments. It i
 {% endif %}
 
 
+![Displaying Day View in ASP.NET Core Scheduler](images/scheduler-views-day.png)
 
 N> All the above defined properties can be accessed within Day view except `allowVirtualScrolling` and `headerRows`.
 
@@ -175,6 +176,7 @@ The Week view displays a count of 7 days (from Sunday to Saturday) with all its 
 {% endif %}
 
 
+![Displaying Week View in ASP.NET Core Scheduler](images/scheduler-views-week.png)
 
 N> All the above defined properties in the table can be accessed within Week and Work week views except `allowVirtualScrolling` and `headerRows`.
 
@@ -208,6 +210,7 @@ The following code example depicts how to change the working days only on the `W
 {% endif %}
 
 
+![Displaying Work Week View in ASP.NET Core Scheduler](images/scheduler-views-workweek.png)
 
 N> The Week, Work week and Day views can display the all-day row appointments in a separate all-day row with an expand/collapse option to view it.
 
@@ -243,6 +246,7 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 {% endif %}
 
 
+![Displaying Month View in ASP.NET Core Scheduler](images/scheduler-views-month.png)
 
 ### Year view
 
@@ -274,6 +278,7 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 {% endif %}
 
 
+![Displaying Year View in ASP.NET Core Scheduler](images/scheduler-views-year.png)
 
 N> The year view also has module support. In that, you can get all the months of a particular year in a calendar view format. In that calendar view, appointment contained dates are highlighted with dots placed under the individual date. When you click on the date, the event popup will be displayed and the events will be listed.
 
@@ -308,6 +313,7 @@ The following code example depicts how to customize the display of events within
 
 N> Schedule Height is mandatory to set in pixels for Agenda view alone.
 
+![Displaying Agenda View in ASP.NET Core Scheduler](images/scheduler-views-agenda.png)
 
 
 ### Month Agenda view
@@ -340,6 +346,7 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 {% endif %}
 
 
+![Displaying Month Agenda View in ASP.NET Core Scheduler](images/scheduler-views-monthagenda.png)
 
 ### Timeline views – Day, Week, Work Week
 
@@ -369,6 +376,7 @@ Similar to the day view, timeline day view shows a single day with all its appoi
 {% endif %}
 
 
+![Displaying timeline Day View in ASP.NET Core Scheduler](images/scheduler-views-timeline-day.png)
 
 Similar to the Week view, the timeline week view shows 7 days with its associated appointments with the time slots displayed horizontally.
 
@@ -396,6 +404,7 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 {% endif %}
 
 
+![Displaying timeline Week View in ASP.NET Core Scheduler](images/scheduler-views-timeline-week.png)
 
 The following code example depicts how to display the timeline work week view on Scheduler,
 
@@ -425,6 +434,8 @@ The following code example depicts how to display the timeline work week view on
 
 
 N> Clicking on the dates in the date header bar of Timeline day, Timeline week and Timeline work week will allow you to navigate to the Agenda view.
+
+![Displaying timeline Week View in ASP.NET Core Scheduler](images/scheduler-views-timeline-workweek.png)
 
 ### Timeline Month view
 
@@ -457,6 +468,8 @@ A Timeline Month view displays the current month days along with its appointment
 
 N> Clicking on the dates in the date header bar of Timeline month will allow you to navigate to the Timeline day view.
 
+![Displaying Timeline Month View in ASP.NET Core Scheduler](images/scheduler-views-timeline-month.png)
+
 ### Timeline Year view
 
 In Timeline Year view, each row depicts a single resource. Whereas in the vertical view, each resource is grouped parallelly as columns. Here, the resource grouping follows the tree-view like hierarchical grouping structure and can contain any level of child resources.
@@ -487,6 +500,7 @@ To make use of the timeline Year view on Scheduler, import and inject `TimelineY
 {% endif %}
 
 
+![Displaying Timeline Year View in ASP.NET Core Scheduler](images/scheduler-views-timeline-year.png)
 
 #### Resource grouping
 
@@ -516,6 +530,7 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endif %}
 
 
+![Displaying Resource Grouping in ASP.NET Core Scheduler](images/scheduler-resource-grouping.png)
 
 #### Auto row height
 
@@ -545,6 +560,7 @@ Timeline Year view supports Auto row height. When the feature `rowAutoHeight` is
 {% endif %}
 
 
+![Displaying Auto Row Height in ASP.NET Core Scheduler](images/scheduler-auto-row-height.png)
 
 ## Extending view intervals
 
@@ -578,6 +594,8 @@ You can provide the alternative display name for such customized views on the Sc
 
 
 N> The view intervals can be extended on all the Scheduler view modes except Agenda and Month-Agenda views.
+
+![Displaying Auto Row Height in ASP.NET Core Scheduler](images/scheduler-extended-views.png)
 
 ## See Also
 
