@@ -26,7 +26,7 @@ The available PdfViewer modules are:
 * **Print**:- Print the entire document or a specific page directly from the browser.
 * **Annotation**:- Annotations can be added or edited in the PDF document.
 
->In addition to injecting the required modules in your application, enable corresponding properties to extend the functionality for a PDF Viewer instance.
+N>In addition to injecting the required modules in your application, enable corresponding properties to extend the functionality for a PDF Viewer instance.
 Refer to the following table.
 
 | Module | Property to enable the functionality for a PDF Viewer instance |

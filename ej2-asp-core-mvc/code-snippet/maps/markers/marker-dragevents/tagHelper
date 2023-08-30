@@ -1,0 +1,51 @@
+@using Syncfusion.EJ2.Maps;
+@{
+    var data = new[]
+    {
+        new { latitude = 49.95121990866204, longitude = 18.468749999999998, name= "MarkerOne" },
+        new { latitude = 59.88893689676585, longitude = -109.3359375, name="MarkerTwo"},
+        new { latitude = -6.64607562172573, longitude = -55.54687499999999 , name="MarkerThree"},
+        new { latitude = 23.644385824912135, longitude= 77.83189239539234  , name= "MarkerFour"},
+        new { latitude = 63.66569332894224, longitude= 98.2225173953924 , name= "MarkerFive"}
+    };
+    var border = new MapsBorder
+            {
+                Color = "#285255",
+                Width = 2,
+                Opacity = 1
+            };
+    var tooltip = new MapsTooltipSettings
+    {
+        Visible = true,
+        ValuePath = "name"
+    };
+}
+<ejs-maps id="container" markerDragStart="markerDragStart" markerDragEnd="markerDragEnd">
+    <e-maps-legendsettings visible="true" type="Markers">
+        <e-legendsettings-shapeborder width="2" color="#285255"></e-legendsettings-shapeborder>
+    </e-maps-legendsettings>
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.worldmap">
+            <e-layersettings-shapesettings fill="#C3E6ED"></e-layersettings-shapesettings>
+            <e-layersettings-markers>
+                <e-layersettings-marker visible="true" legendText="name" enableDrag="true" height="20" width="20"
+                                        animationDuration="0" dataSource="data"
+                                        shape="Balloon" border="border" tooltipSettings="tooltip">
+                </e-layersettings-marker>
+            </e-layersettings-markers>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>
+
+<script>
+    function markerDragStart(args){
+      // When the marker begins to move on the map, the event is triggered.
+    }
+
+    function markerDragEnd(args) {
+        // When the marker on the map stops dragging, the event is triggered.
+        var mapsInstance = document.getElementById('container').ej2_instances[0];
+        mapsInstance.layers[args.layerIndex].markerSettings[args.markerIndex].dataSource[args.dataIndex].name = 'Dragged Marker ' + (args.dataIndex + 1);
+        mapsInstance.refresh();
+    }
+</script>

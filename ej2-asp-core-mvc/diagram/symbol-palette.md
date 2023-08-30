@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Symbol Palette in ##Platform_Name## Diagram Component
+title: Symbol Palette in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Symbol Palette in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Symbol Palette
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Symbol Palette
+# Symbol Palette in Diagram
 
 The **SymbolPalette** displays a collection of palettes. The palette shows a set of nodes and connectors. It allows to drag and drop the nodes and connectors into the diagram.
 
@@ -36,8 +36,6 @@ The [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagr
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Add palettes to SymbolPalette
 
@@ -81,7 +79,7 @@ The [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diag
 
 The [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalettePalette.html#Syncfusion_EJ2_Diagrams_SymbolPalettePalette_IconCss) property sets the content of the symbol group.
 
-The [`description`](https://ej2.syncfusion.com/documentation/api/diagram/symbolDescription) defines the text to be displayed and how that is to be handled in `getSymbolInfo`.
+The [`description`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTextStyle.html#Syncfusion_EJ2_Diagrams_DiagramTextStyle_TextOverflow) defines the text to be displayed and how that is to be handled in `getSymbolInfo`.
 
 Also, any HTML element into a palette header can be embedded by defining the `getSymbolInfo` property.
 
@@ -176,7 +174,7 @@ The symbol palette panel can be restricted from getting expanded. The `cancel` a
 
 ## Stretch the symbols into the palette
 
-The [`fit`](https://ej2.syncfusion.com/documentation/api/diagram/symbolInfo#fit) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape.
+The [`fit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_SymbolInfo) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -312,7 +310,6 @@ While adding more number of symbols such as nodes and connectors to the palette,
         strokeWidth: 2
     };
 }
-
 function getSymbolInfo(symbol) {
     return {
         fit: true
@@ -374,6 +371,77 @@ The diagram provides support to add symbol description below each symbol of a pa
 }
 
 ```
+## Tooltip for symbols in symbol palette
+
+The Symbol palette supports displaying tooltips when mouse hovers over the symbols. You can customize the tooltip for each symbol in the symbol palette.
+
+### Default tooltip for symbols
+
+When hovering over symbols in the symbol palette, the default tooltip displays the symbol's ID.
+Refer to the image below for an illustration of the tooltip behavior in the symbol palette.
+
+
+![SymmbolPaletteTooltip](../diagram/images/SymbolPalatteTooltip.gif)
+
+### Custom tooltip for symbols
+
+To customize the tooltips for symbols in the symbol palette, assign a custom tooltip to the 'Tooltip' content property of each symbol. Once you define the custom tooltip, enable the Tooltip constraints for each symbol, ensuring that the tooltips are displayed when users hover over them.
+
+Here, the code provided below demonstrates how to define tooltip content to symbols within a symbol palette.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/symbol-palette/symboltooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Description.cs" %}
+{% include code-snippet/diagram/symbol-palette/symboltooltip/description.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Description.cs" %}
+{% include code-snippet/diagram/symbol-palette/symboltooltip/description.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+### How to provide different tooltip for Symbol palette and diagram elements.
+
+Differentiate the tooltips between symbols in the symbol palette and dropped nodes by utilizing the dragEnter event. When a custom tooltip is defined for a symbol, it will be displayed for both the symbol and the dropped node in the diagram canvas. However, to provide distinct tooltips for symbols in the palette and dropped nodes, capture the dragEnter event and assign specific tooltips dynamically.  
+
+When a symbol is dragged from the symbol palette and enters the diagram canvas, the [`DragEnter`] `IDragEnterEventArgs` event is triggered. Within this event, you can define a new tooltip for the dropped node. By assigning custom tooltip content to the Tooltip property of the node, you can provide a distinct tooltip that is specific to the dropped node.
+
+The following image illustrates the differentiation of tooltips displayed in the Symbol Palette and the Diagram.
+
+
+![SymmbolPaletteCustomTooltip](../diagram/images/SymbolCustomTooltip.gif)
+
+The following code snippet will demonstrate how to define two different tooltip for symbol in the symbol palette and dropped node in the diagram canvas.
+
+```js
+//Initialize the Diagram
+ let diagram: Diagram = new Diagram({
+            width: '100%', height: '500px',
+            connectors: connectors, nodes: nodes,
+            //event to change tooltip content while dragging symbols into Diagram
+            dragEnter: dragEnter,
+        });
+ diagram.appendTo('#diagram');
+
+function dragEnter(args:IDragEnterEventArgs)
+    {
+        //enable tooltip connstraints for the dragged symbol
+        args.dragItem.constraints = NodeConstraints.Default | NodeConstraints.Tooltip;
+
+        //change the tooltip content of the dragged symbol
+        args.dragItem.tooltip.content='This is Diagram Tooltip';
+    }
+```
 
 ## Palette interaction
 
@@ -391,7 +459,7 @@ Palette interaction notifies the element enter, leave, and dragging of the symbo
 
 [`DragOver`] `IDragOverEventArgs` notifies, when an element is dragged over another diagram element.
 
-> The diagram provides support to cancel the drag and drop operation from the symbol palette to the diagram when the ESC key is pressed.
+N> The diagram provides support to cancel the drag and drop operation from the symbol palette to the diagram when the ESC key is pressed.
 
 ## See Also
 

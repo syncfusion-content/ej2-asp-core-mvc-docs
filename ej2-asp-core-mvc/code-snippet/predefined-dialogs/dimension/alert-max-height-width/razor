@@ -1,0 +1,18 @@
+<div style="height:400px;">
+    @Html.EJS().Button("alertBtn").Content("Alert").CssClass("e-danger").Render()
+</div>
+<style>
+    .e-alert-dialog.customClass {
+        max-width: 350px;
+        max-height: 250px !important;
+    }
+</style>
+<script>
+    document.getElementById('alertBtn').onclick = function () {
+        ej.popups.DialogUtility.alert({
+            title: "About syncfusion succinctly series",
+            content: "In the succinctly series, syncfusion created a robust, free library of more than 130 technical e-books formatted for PDF, Kindle, and EPUB.",
+            cssClass: "customClass"
+        });
+    };
+</script>

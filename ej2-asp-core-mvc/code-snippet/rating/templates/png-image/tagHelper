@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.Inputs
+
+@{
+    var fulltemplate = ""; //Provide the URL for the image here.
+    var emptytemplate = ""; //Provide the URL for the image here.
+}
+
+<ejs-rating id="rating" value=3 emptyTemplate="#emptytemplate" fullTemplate="#fulltemplate"></ejs-rating>
+
+<script id="fulltemplate" type="text/x-jsrender">
+    <img src="@fulltemplate" width="25" height="25" />
+</script>
+
+<script id="emptytemplate" type="text/x-jsrender">
+    <img src="@emptytemplate" width="25" height="25" />
+</script>

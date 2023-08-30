@@ -1,0 +1,8 @@
+<ejs-treegrid id="TreeGrid" idMapping="TaskID" parentIdMapping="ParentValue" expandStateMapping="IsExpanded"  hasChildMapping="isParent" treeColumnIndex="1" height="400">
+        <e-data-manager url="/Home/DataSource" adaptor="UrlAdaptor"></e-data-manager>
+            <e-treegrid-columns>
+                <e-treegrid-column field="TaskID" headerText="ID" textAlign="Left" width="40"></e-treegrid-column>
+                <e-treegrid-column field="TaskName" headerText="Name" textAlign="Left" width="95"></e-treegrid-column>
+                <e-treegrid-column field="Duration" headerText="Tag Data" textAlign="Left" width="95"></e-treegrid-column>
+            </e-treegrid-columns>
+</ejs-treegrid>

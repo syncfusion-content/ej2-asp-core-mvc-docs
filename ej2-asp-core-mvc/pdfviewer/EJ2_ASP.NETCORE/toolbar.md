@@ -35,25 +35,25 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 * **Show/Hide toolbar using enableToolbar API as in the following code snippet**
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-                style="height:600px"
-                serviceUrl="/api/PdfViewer"
-                documentPath=@ViewBag.DocumentPath
-                enableToolbar="false">
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   enableToolbar="false">
+    </ejs-pdfviewer>
+</div>
 ```
 
 * **Show/Hide toolbar using showToolbar as in the following code snippet**
 
 ```html
-    <script>
-       window.onload = function () {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.toolbar.showToolbar(false);
-        }
-    </script>
+<script>
+    window.onload = function () {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.toolbar.showToolbar(false);
+    }
+</script>
 ```
 
 ## Show/Hide the default toolbaritem
@@ -63,27 +63,26 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 * **Show/Hide toolbaritem using toolbarSettings as in the following code snippet.**
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-                style="height:600px"
-                serviceUrl="/api/PdfViewer"
-                documentPath=@ViewBag.DocumentPath
-                enableToolbar="true"
-                toolbarSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings { ShowTooltip = true, ToolbarItem = "OpenOption"  })"
-                >
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   enableToolbar="true"
+                   toolbarSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings { ShowTooltip = true, ToolbarItem = "OpenOption"  })">
+    </ejs-pdfviewer>
+</div>
 ```
 
 * **Show/Hide toolbaritem using showToolbaritem as in the following code snippet**
 
 ```html
-    <script>
-       window.onload = function () {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.toolbar.showToolbarItem(new Array("DownloadOption"),true);
-        }
-    </script>
+<script>
+    window.onload = function () {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.toolbar.showToolbarItem(new Array("DownloadOption"), true);
+    }
+</script>
 ```
 
 ## See also

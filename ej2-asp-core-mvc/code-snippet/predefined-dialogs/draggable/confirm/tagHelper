@@ -1,0 +1,12 @@
+<div style="height:400px;">
+    <ejs-button id="confirmBtn" content="Confirm" cssClass="e-success"></ejs-button>
+</div>
+<script>
+    document.getElementById('confirmBtn').onclick = function () {
+        ej.popups.DialogUtility.confirm({
+            title: "Delete multiple items",
+            content: "Are you sure you want to permanently delete these items?",
+            isDraggable: true
+        });
+    }; 
+</script>

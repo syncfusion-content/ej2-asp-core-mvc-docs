@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.Buttons
+
+@Html.EJS().SpeedDial("speeddial").OpenIconCss("e-icons e-edit").Created("CreatedEvent").Items(ViewBag.datasource).Render()
+
+<script>
+    function CreatedEvent() {
+        //Your required action here
+    }
+</script>

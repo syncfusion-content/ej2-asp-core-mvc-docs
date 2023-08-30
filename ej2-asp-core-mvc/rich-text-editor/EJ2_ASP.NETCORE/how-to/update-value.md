@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Update Value in ##Platform_Name## Rich Text Editor Component
+title: Update Value in ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn here all about Update Value in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Update Value
@@ -12,6 +12,7 @@ documentation: ug
 # Capture ctrl+s to update the value
 
 To achieve this, we need to bind the `keydown` event to the Rich Text Editor content and capture the `ctrl + s` key press using its `keyCode`.
+
 In the `keydown` event handler, the `updateValue` method is called to update the [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property and then we can save the content in the required database using the same.
 
 {% if page.publishingplatform == "aspnet-core" %}

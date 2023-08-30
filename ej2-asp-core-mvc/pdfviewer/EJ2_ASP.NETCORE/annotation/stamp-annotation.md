@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Stamp Annotation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Stamp Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Stamp Annotation in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Stamp Annotation in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Stamp Annotation
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
 
-# Stamp Annotation in the ASP.NET Core PDF Viewer component
+# Stamp Annotation in the ASP.NET Core PDF Viewer Control
 
 The PDF Viewer control provides options to add, edit, delete, and rotate the following stamp annotation in the PDF documents:
 
@@ -47,19 +47,24 @@ In the pan mode, if the stamp annotation mode is entered, the PDF Viewer control
 
 * The file explorer dialog will appear, choose the image and then add the image to the PDF page.
 
->The JPG and JPEG image format is only supported in the custom stamp annotations.
+N>The JPG and JPEG image format is only supported in the custom stamp annotations.
 
 ## Setting default properties during control initialization
 
 The properties of the stamp annotation can be set before creating the control using the StampSettings.
 
 After editing the default opacity using the Edit Opacity tool, they will be changed to the selected values.
+
 Refer to the following code sample to set the default sticky note annotation settings.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath
-                       stampSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStampSettings {Opacity=0.3, Author="Guest User"})">
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   stampSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStampSettings
+            {Opacity=0.3, Author="Guest User"})">
+    </ejs-pdfviewer>
+</div>
 ```

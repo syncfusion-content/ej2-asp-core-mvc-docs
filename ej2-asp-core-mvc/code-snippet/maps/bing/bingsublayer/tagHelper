@@ -1,10 +1,20 @@
 
-<ejs-maps id="maps">
+<ejs-maps id="maps" load="onLoad">
     <e-maps-layers>
-        <e-maps-layer layerType="Bing" key="..// BingMap key here">
+        <e-maps-layer>
         </e-maps-layer>
         <e-maps-layer layerType="Geometry" type="SubLayer" shapeData="ViewBag.africa">
             <e-layersettings-shapesettings fill="blue"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
+
+<script>
+
+    function onLoad(args) {
+          args.maps.getBingUrlTemplate("https://dev.virtualearth.net/REST/V1/Imagery/Metadata/Aerial?output=json&uriScheme=https&key=?").then(function(url) {
+              args.maps.layers[0].urlTemplate= url;
+          });
+    }
+  
+</script>

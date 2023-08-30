@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mask Configuration in ##Platform_Name## Maskedtextbox Component
+title: Mask Configuration in ##Platform_Name## Maskedtextbox Control | Syncfusion
 description: Learn here all about Mask Configuration in Syncfusion ##Platform_Name## Maskedtextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Mask Configuration
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Mask Configuration
+# Mask Configuration in MaskedTextBox Control
 
 The mask is a combination of standard and custom mask elements that validates the user input based on its behavior.
 
-> When the mask value is empty, the MaskedTextBox behaves as an input element with text type.
+N> When the mask value is empty, the MaskedTextBox behaves as an input element with text type.
 
 ## Standard mask elements
 
@@ -110,8 +110,7 @@ Output be like the below.
 
 ### Regular expression
 
-Instead of the mask element, you can define your own regular expression to validate the input of a particular input place.
-The regular expressions should be wrapped by the square brackets (e.g., [`Regex`]).
+Instead of the mask element, you can define your own regular expression to validate the input of a particular input place. The regular expressions should be wrapped by the square brackets (e.g., [`Regex`]).
 
 In the following example, regular expression has been set for each input places.
 

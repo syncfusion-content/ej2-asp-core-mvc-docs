@@ -39,8 +39,8 @@ In this demo, the [`FrozenColumns`](https://help.syncfusion.com/cr/aspnetcore-js
 
 
 
-> Frozen rows and columns should not be set outside the grid view port.
-> Frozen Grid will support row and column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
+N> Frozen rows and columns should not be set outside the grid view port.
+<br/> Frozen Grid will support row and column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
 
 ## Limitations of Frozen Grid
 
@@ -118,7 +118,7 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 
 
 
-> * Freeze Direction is not compatible with the `isFrozen` and `frozenColumns` properties.
+N> * Freeze Direction is not compatible with the `isFrozen` and `frozenColumns` properties.
 
 ## Limitations of Freeze Direction
 

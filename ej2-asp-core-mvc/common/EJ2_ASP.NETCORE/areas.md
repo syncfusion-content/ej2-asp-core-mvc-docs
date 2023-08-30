@@ -46,7 +46,7 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 
 ![Common layout for all view pages](images/mvc-view-files.png)
 
->You can also add the `_ViewImports.cshtml` and `_ViewStart.cshtml` files to the appropriate Views folder under areas if you want to maintain it separately.
+N>You can also add the `_ViewImports.cshtml` and `_ViewStart.cshtml` files to the appropriate Views folder under areas if you want to maintain it separately.
 
 7.Open the `_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
@@ -58,7 +58,7 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 {% endhighlight %}
 {% endtabs %}
 
->If `_ViewImports.cshtml` file is added in the appropriate Views folder under the areas, import the `Syncfusion.EJ2` package into each `_ViewImports.cshtml` file.
+N>If `_ViewImports.cshtml` file is added in the appropriate Views folder under the areas, import the `Syncfusion.EJ2` package into each `_ViewImports.cshtml` file.
 
 8.Add the Area routing configuration before the default routing in the `Startup.cs` page.
 
@@ -108,7 +108,7 @@ app.UseEndpoints(endpoints =>
 {% endhighlight %}
 {% endtabs %}
 
->If `_ViewStart.cshtml` file is added in the appropriate Views folder under the areas, add the Syncfusion script manager in that referred layout page.
+N>If `_ViewStart.cshtml` file is added in the appropriate Views folder under the areas, add the Syncfusion script manager in that referred layout page.
 
 11.Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` View file in the `~/Areas/Products/Views/` folder.
 
@@ -142,7 +142,7 @@ app.UseEndpoints(endpoints =>
 
 ![Common layout for all razor pages](images/razor-view-files.png)
 
->You can also add the `_ViewImports.cshtml` and `_ViewStart.cshtml` files to the appropriate Pages folder under areas if you want to maintain it separately.
+N>You can also add the `_ViewImports.cshtml` and `_ViewStart.cshtml` files to the appropriate Pages folder under areas if you want to maintain it separately.
 
 5.Open the `_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
@@ -154,7 +154,7 @@ app.UseEndpoints(endpoints =>
 {% endhighlight %}
 {% endtabs %}
 
->If `_ViewImports.cshtml` file is added in the appropriate Pages folder under the areas, import the `Syncfusion.EJ2` package into each `_ViewImports.cshtml` file.
+N>If `_ViewImports.cshtml` file is added in the appropriate Pages folder under the areas, import the `Syncfusion.EJ2` package into each `_ViewImports.cshtml` file.
 
 6.Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Pages/Shared/_Layout.cshtml` layout page.
 
@@ -187,7 +187,7 @@ app.UseEndpoints(endpoints =>
 {% endhighlight %}
 {% endtabs %}
 
->If `_ViewStart.cshtml` file is added in the appropriate Pages folder under the areas, add the Syncfusion script manager in that referred layout page.
+N>If `_ViewStart.cshtml` file is added in the appropriate Pages folder under the areas, add the Syncfusion script manager in that referred layout page.
 
 8.Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` Razor Page file in the `~/Areas/Products/Pages/` folder.
 

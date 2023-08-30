@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set State Persistence Of The Tab Component in ##Platform_Name## Tab Component
+title: Set State Persistence in ##Platform_Name## Tab Control | Syncfusion
 description: Learn here all about Set State Persistence Of The Tab Component in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set State Persistence Of The Tab Component
@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# Set state persistence of the Tab component
+# Set state persistence of the Tab Control
 
-State persistence allows the Tab to retain the current modal value in the browser cookies for state maintenance. This action is handled through the enablePersistence property which is set to false by default.
-When it is set to true, some of the Tab component model values will be retained even after refreshing the page.
+State persistence allows the Tab to retain the current modal value in the browser cookies for state maintenance. This action is handled through the enablePersistence property which is set to false by default. When it is set to true, some of the Tab component model values will be retained even after refreshing the page.
 
 The following sample demonstrates how to set state persistence of the Tab component.
 
