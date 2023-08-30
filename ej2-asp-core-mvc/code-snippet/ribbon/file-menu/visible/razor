@@ -1,0 +1,40 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{ 
+    List<MenuItem> fileOptions = new List<MenuItem>()
+    {
+        new MenuItem { Text = "New", IconCss = "e-icons e-file-new" }
+    };
+}
+@Html.EJS().Ribbon("ribbon").FileMenu(file =>
+{
+    file.Visible(true).MenuItems(fileOptions);
+}).Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Clipboard").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-paste").Content("Paste");
+                }).Add();
+            }).Add();
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-cut").Content("Cut");
+                }).Add();
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-copy").Content("Copy");
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()

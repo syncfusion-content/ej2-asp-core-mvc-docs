@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Schedule Component
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Schedule Control | Syncfusion
+description: Learn here all about Localization in Syncfusion ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -21,7 +21,7 @@ The Internationalization library provides support for formatting and parsing the
 
 By default, Scheduler is set to follow the English culture ('en-US'). If you want to go with different culture other than English, follow the below steps.
 
-Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
+Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
 
 ```
 npm install cldr-data --save
@@ -154,6 +154,7 @@ Scheduler can be used with all valid date formats and by default it follows the 
 {% endif %}
 
 
+![Display Setting Date Format in ASP.NET Core Scheduler](images/schedule-date-format.png)
 
 ## Setting the time format
 
@@ -185,6 +186,7 @@ The following example demonstrates the Scheduler component in 24 hours format.
 {% endif %}
 
 
+![Display Setting Time Format in ASP.NET Core Scheduler](images/schedule-time-format.png)
 
 N> `timeFormat` property only accepts the valid time format's.
 
@@ -216,6 +218,7 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 {% endif %}
 
 
+![Display RTL Mode in ASP.NET Core Scheduler](images/schedule-rtl.png)
 
 N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
 

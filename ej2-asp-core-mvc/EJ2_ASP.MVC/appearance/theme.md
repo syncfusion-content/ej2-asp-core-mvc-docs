@@ -38,8 +38,8 @@ Syncfusion ASP.NET MVC themes can be used in your ASP.NET MVC application by ref
 Using the below approaches the themes can be referenced in the ASP.NET MVC application,
 
 1. [CDN](#cdn-reference) - Used to reference complete css via static web assets.
-2. [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator/) - Used to generate resources only for the selected (used) components.
-3. [Theme Studio](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
+2. [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator) - Used to generate resources only for the selected (used) components.
+3. [Theme Studio](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme-studio) - Used to customize and generate themes only for the selected (used) components.
 
 ## CDN Reference
 

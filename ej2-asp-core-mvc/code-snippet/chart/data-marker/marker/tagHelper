@@ -1,8 +1,12 @@
- <ejs-chart id="container" width="60%">
-        <e-series-collection>
-            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
-                      type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
-                <e-series-marker visible="true"></e-series-marker>
-            </e-series>
-        </e-series-collection>
-    </ejs-chart>
+<ejs-chart id="container" width="60%" title="Olympic Medal Counts - RIO">
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y1"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
