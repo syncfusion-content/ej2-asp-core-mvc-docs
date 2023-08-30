@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Kanban Component
+title: Data Binding in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data binding
+# Data binding in ASP.NET MVC Kanban component
 
 The Kanban uses `DataManager`, which supports both RESTful data service binding and list binding. The `DataSource`property of Kanban can be assigned either with the instance of `DataManager` or List, as it supports the following two data binding methods:
 
@@ -29,6 +29,9 @@ To bind local list data to the Kanban, you can simply assign a list to the `Data
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/data-binding/local-data/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/data-binding/local-data/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -40,6 +43,9 @@ To bind local list data to the Kanban, you can simply assign a list to the `Data
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/data-binding/local-data/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/data-binding/local-data/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
@@ -49,7 +55,7 @@ Output be like the below.
 
 ![kanban](./images/local-data.PNG)
 
-> By default, `DataManager` uses `JsonAdaptor` for binding local data.
+N> By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
 ## Remote data
 
@@ -84,7 +90,7 @@ Output be like the below.
 
 ![kanban](./images/remote-data.PNG)
 
-> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
+N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 
 ### OData services
 
@@ -255,7 +261,7 @@ public class Params {
 }
 ```
 
-> The `CrudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `SortBy` as `Index` properties are used for `CrudUrl` properties to update the modified bulk data to the server-side.
+N> The `CrudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `SortBy` as `Index` properties are used for `CrudUrl` properties to update the modified bulk data to the server-side.
 
 ### Custom adaptor
 
@@ -319,7 +325,7 @@ To add a custom parameter to the data request, use the **addParams** method of *
 
 
 
-> The parameters added using the `Query` property will be sent along with the data request for every kanban action.
+N> The parameters added using the `Query` property will be sent along with the data request for every kanban action.
 
 ### Handling HTTP error
 
@@ -357,7 +363,7 @@ Output be like the below.
 
 ![kanban](./images/http-error.PNG)
 
-> The `ActionFailure` event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
+N> The `ActionFailure` event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
 
 ## Loading data via ajax
 
@@ -392,4 +398,4 @@ Output be like the below.
 
 ![kanban](./images/ajax-data.PNG)
 
-> * If you bind the DataSource from this way, then it acts like a local dataSource. So you cannot perform any server-side crud actions.
+N> * If you bind the DataSource from this way, then it acts like a local dataSource. So you cannot perform any server-side crud actions.

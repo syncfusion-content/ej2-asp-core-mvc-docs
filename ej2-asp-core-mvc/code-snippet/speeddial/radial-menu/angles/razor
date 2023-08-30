@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.Buttons
+
+@Html.EJS().SpeedDial("speeddial").Mode(SpeedDialMode.Radial).RadialSettings(new SpeedDialRadialSettings { Direction = RadialDirection.AntiClockwise, StartAngle=180, EndAngle=360 }).Items(ViewBag.datasource).Position(FabPosition.MiddleCenter).OpenIconCss("e-icons e-edit").Render()

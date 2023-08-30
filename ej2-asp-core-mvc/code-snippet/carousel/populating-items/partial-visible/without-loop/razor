@@ -1,0 +1,67 @@
+@using Syncfusion.EJ2.Navigations;
+
+<div class="container">
+    <div class="control-container">
+        @(Html.EJS().Carousel("defaultCarousel").PartialVisible(true).Loop(false).Items(new List<CarouselItem> {
+            new CarouselItem { Template = "#itemTemplate1"  },
+            new CarouselItem { Template = "#itemTemplate2"  },
+            new CarouselItem { Template = "#itemTemplate3"  },
+            new CarouselItem { Template = "#itemTemplate4"  },
+            new CarouselItem { Template = "#itemTemplate5"  }
+            })
+            .Render()
+        )
+    </div>
+</div>
+<script id="itemTemplate1" type="text/x-template">
+    <figure class="img-container">
+        <img src="@Url.Content("~/Content/carousel/images/bridge.jpg")" alt="bridge" style="height:100%; width: 100%;" />
+        <figcaption class="img-caption">Golden Gate Bridge, San Francisco</figcaption>
+    </figure>
+</script>
+<script id="itemTemplate2" type="text/x-template">
+    <figure class="img-container">
+        <img src="@Url.Content("~/Content/carousel/images/trees.jpg")" alt="spring_trees" style="height:100%; width: 100%;" />
+        <figcaption class="img-caption">Spring Flower Trees</figcaption>
+    </figure>
+</script>
+<script id="itemTemplate3" type="text/x-template">
+    <figure class="img-container">
+        <img src="@Url.Content("~/Content/carousel/images/waterfall.jpg")" alt="waterfall" style="height:100%; width: 100%;" />
+        <figcaption class="img-caption">Oddadalen Waterfalls, Norway</figcaption>
+    </figure>
+</script>
+<script id="itemTemplate4" type="text/x-template">
+    <figure class="img-container">
+        <img src="@Url.Content("~/Content/carousel/images/sea.jpg")" alt="sea" style="height:100%; width: 100%;" />
+        <figcaption class="img-caption">Anse Source d'Argent, Seychelles</figcaption>
+    </figure>
+</script>
+<script id="itemTemplate5" type="text/x-template">
+    <figure class="img-container">
+        <img src="@Url.Content("~/Content/carousel/images/rocks.jpeg")" alt="rocks" style="height:100%; width: 100%;" />
+        <figcaption class="img-caption">Stonehenge, England</figcaption>
+    </figure>
+</script>
+<style>
+    .control-container {
+        background-color: #e5e5e5;
+        height: 360px;
+        margin: 0 auto;
+        width: 600px;
+    }
+  
+    .img-container {
+        height: 100%;
+        margin: 0;
+    }
+  
+    .img-caption {
+        color: #fff;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+</style>

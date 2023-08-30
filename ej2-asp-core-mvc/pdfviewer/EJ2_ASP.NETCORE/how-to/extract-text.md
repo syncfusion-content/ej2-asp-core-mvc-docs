@@ -17,7 +17,7 @@ For Linux and OSX operating systems, use the corresponding libraries as follows:
 * Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
 * Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX
 
->From Volume 2 2019 release Syncfusion.Pdf.Net.Core and Syncfusion.Compression.Net.Core packages are added as dependency for PDF Viewer control. Ensure the dependency packages are referred in your application properly.
+N>From Volume 2 2019 release Syncfusion.Pdf.Net.Core and Syncfusion.Compression.Net.Core packages are added as dependency for PDF Viewer control. Ensure the dependency packages are referred in your application properly.
 
 The following code snippet explains how to extract the text from a page.
 
@@ -37,4 +37,4 @@ System.IO.File.WriteAllText(@"currentDirectory\..\..\..\..\Data\data.txt", text)
 Sample:
 [http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExtractText-1972118166](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExtractText-1972118166)
 
->Ensure the provided document path and output text saved locations in your application level.
+N>Ensure the provided document path and output text saved locations in your application level.

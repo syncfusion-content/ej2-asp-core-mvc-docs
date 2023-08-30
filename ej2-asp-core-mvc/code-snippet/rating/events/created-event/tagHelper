@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-rating id="rating" created="createdEvent"></ejs-rating>
+
+<script>
+
+    function createdEvent() {
+        // Here, you can customize your code.
+    }
+
+</script>

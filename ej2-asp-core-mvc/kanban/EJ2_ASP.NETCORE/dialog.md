@@ -76,7 +76,7 @@ The following types are available in dialog fields.
 * TextBox
 * Input
 
-> If `type` is not defined in the fields, then it renders as the HTML input element in dialog.
+N> If `type` is not defined in the fields, then it renders as the HTML input element in dialog.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -235,7 +235,7 @@ The Kanban allows to prevent to open a dialog on card double-click by enabling `
 
 The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through `DataManager`. The `DataManager` has an option to bind all the CRUD related data in server-side.
 
-> For your information, the ODataAdaptor persists data in the server as per OData protocol.
+N> For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
 In the below section covers how to get the edited data details on the server-side using the `UrlAdaptor`.
 
@@ -444,4 +444,4 @@ public class EditParams {
 
 ```
 
-> The `crudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `sortBy` as `Index` properties are used for `crudUrl` properties to update the modified bulk data to the server-side.
+N> The `crudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `sortBy` as `Index` properties are used for `crudUrl` properties to update the modified bulk data to the server-side.

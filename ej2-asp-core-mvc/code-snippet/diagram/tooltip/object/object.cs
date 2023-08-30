@@ -21,7 +21,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
                     },
                     OffsetX = 100,
                     OffsetY = 100,
-                    Constraints = (NodeConstraints.Default & ~NodeConstraints.InheritTooltip) | NodeConstraints.Tooltip
+                    Constraints = (NodeConstraints.Default & ~NodeConstraints.InheritTooltip) | NodeConstraints.Tooltip,
                     Tooltip = new DiagramDiagramTooltip() { Content = "Nodes", Position = "TopLeft",  RelativeMode= TooltipRelativeMode.Object}
             });
             ViewBag.nodes = nodes;

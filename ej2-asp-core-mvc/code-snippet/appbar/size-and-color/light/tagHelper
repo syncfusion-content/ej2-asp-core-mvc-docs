@@ -1,0 +1,22 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Navigations;
+
+<ejs-appbar id="defaultAppBar">
+    <e-content-template>
+        <a href="https://www.syncfusion.com/aspnet-core-ui-controls" target="_blank" rel="noopener" role="link" aria-label="Syncfusion core controls">
+           <div class="syncfusion-logo"></div>
+        </a>
+        <div class="e-appbar-spacer"></div>
+        <ejs-button id="defaultButtonLogin" isPrimary=true content="FREE TRIAL"></ejs-button>
+    </e-content-template>
+</ejs-appbar>
+
+<style>
+    #defaultAppBar .syncfusion-logo {
+        background: url(https://cdn.syncfusion.com/blazor/images/demos/syncfusion-logo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 30px;
+        width: 150px;
+    }
+</style>

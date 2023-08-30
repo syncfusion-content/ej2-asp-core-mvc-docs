@@ -1,0 +1,32 @@
+@using Syncfusion.EJ2.Schedule
+
+<div>
+    <ejs-button id="btn1" content="Show Cell QuickInfo Popup"></ejs-button>
+    <ejs-button id="btn2" content="Show Event QuickInfo Popup"></ejs-button>
+</div>
+
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2022, 2, 5)" views="@ViewBag.view" >
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    document.getElementById('btn1').onclick = function () {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var cellData = {
+            Subject: 'Milky Way as Melting pot',
+            StartTime: new Date(2022, 2, 5, 20, 0, 0),
+            EndTime: new Date(2022, 2, 5, 21, 0, 0)
+        };
+        scheduleObj.openQuickInfoPopup(cellData, 'Add');
+    };
+    document.getElementById('btn2').onclick = function () {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var eventData = {
+            Id: 2,
+            Subject: 'Milky Way as Melting pot',
+            StartTime: new Date(2022, 2, 5, 20, 0, 0),
+            EndTime: new Date(2022, 2, 5, 21, 0, 0)
+        };
+        scheduleObj.openQuickInfoPopup(eventData, 'Save');
+    };
+</script>

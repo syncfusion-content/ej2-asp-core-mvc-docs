@@ -12,7 +12,7 @@ documentation: ug
 
 Syncfusion provides **Visual Studio Code project templates** for creating Syncfusion ASP.NET Core application. Syncfusion ASP.NET Core generates application that includes the necessary Syncfusion NuGet packages, namespaces, and component render code for the Calendar, Button, and DataGrid components, as well as the style for making Syncfusion component development easier.
 
-> The Syncfusion Visual Studio Code project template provides support for ASP.NET Core project templates from v20.1.0.47.
+N> The Syncfusion Visual Studio Code project template provides support for ASP.NET Core project templates from v20.1.0.47.
 
 The following instructions assist you in creating **Syncfusion ASP.NET Core Applications** using **Visual Studio Code**:
 
@@ -36,7 +36,7 @@ The following instructions assist you in creating **Syncfusion ASP.NET Core Appl
 
     ![project-configuration](images/project-configuration.png)
 
-    > In assets from the Installed location option will be available when the Syncfusion Essential JavaScript 2 build has been installed.
+    N> In assets from the Installed location option will be available when the Syncfusion Essential JavaScript 2 build has been installed.
 
 5. Click the **Create** button. The Syncfusion ASP.NET Core application will be created. The created Syncfusion ASP.NET Core application has the Syncfusion NuGet packages, NPM Packages, styles, and the component render code for the Syncfusion component added to the index page.T
 
