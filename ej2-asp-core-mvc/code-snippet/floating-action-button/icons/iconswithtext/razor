@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Buttons
 
-@Html.EJS("fab").IconCss("fab-icons fab-icon-people").Content("Contacts").Render()
+@Html.EJS().Fab("fab").IconCss("fab-icons fab-icon-people").Content("Contacts").Render()
 
 <style>
 

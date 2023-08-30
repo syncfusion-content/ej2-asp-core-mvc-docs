@@ -1,0 +1,47 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{ 
+    List<MenuItem> tableOptions = new List<MenuItem>() { new MenuItem { Text = "Insert Table" }, new MenuItem { Text = "This device" }, new MenuItem { Text = "Convert Table" }, new MenuItem { Text = "Excel SpreadSheet" } };
+}
+@Html.EJS().Ribbon("ribbon").ActiveLayout(RibbonLayout.Simplified).Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Clipboard").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-paste").Content("Paste");
+                }).Add();
+            }).Add();
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-cut").Content("Cut");
+                }).Add();
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-copy").Content("Copy");
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+    tab.Header("Insert").Groups(groups =>
+    {
+        groups.Header("Tables").Collections(collections =>
+        {
+            collections.Items(items =>
+            {
+                items.Type(RibbonItemType.DropDown).DropDownSettings(dropDown =>
+                {
+                    dropDown.IconCss("e-icons e-table").Content("Table").Items(tableOptions);
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()

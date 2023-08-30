@@ -1,7 +1,9 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
     @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { }).Render()
 </div>
-@Html.EJS().Button("btnClick").CssClass("e-primary").Content("Click").Click("clickHandler").Render()
+@Html.EJS().Button("customClick").CssClass("e-primary").Content("Custom").Click("customClick").Render()
+@Html.EJS().Button("squareClick").CssClass("e-primary").Content("Square").Click("squareClick").Render()
+@Html.EJS().Button("circleClick").CssClass("e-primary").Content("Circle").Click("circleClick").Render()
 
 <script>
     function created() {
@@ -13,9 +15,19 @@
         }
     }
 
-    function clickHandler() {
+    function customClick() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imageEditorObj.select("Custom");
+    }
+
+    function squareClick() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.select("Square");
+    }
+
+    function circleClick() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.select("Circle");
     }
 </script>
 

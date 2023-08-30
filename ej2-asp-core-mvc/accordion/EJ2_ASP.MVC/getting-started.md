@@ -43,7 +43,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add style sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -172,6 +172,6 @@ public class LineChartData
 
 ![ASP.NET MVC Accordion with Content Template](images/accordion-template.PNG)
 
-You can also render accordion without using `ContentTemplate` which can be referred [here](../../accordion/how-to/set-the-nested-accordion).
+You can also render accordion without using `ContentTemplate` which can be referred [here](https://ej2.syncfusion.com/aspnetmvc/documentation/accordion/how-to/set-the-nested-accordion).
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Accordion/ASP.NET%20MVC%20Razor%20Examples).

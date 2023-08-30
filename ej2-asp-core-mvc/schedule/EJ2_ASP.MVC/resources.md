@@ -647,7 +647,6 @@ To use the `HideNonWorkingDays` property, you need to include it in the configur
 {% endif %}
 
 
-{% endtab %}
 
 N> The `HideNonWorkingDays` property only applies when the Scheduler is grouped `byDate`.
 

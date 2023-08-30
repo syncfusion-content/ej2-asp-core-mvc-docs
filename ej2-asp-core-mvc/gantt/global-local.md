@@ -13,7 +13,7 @@ documentation: ug
 
 ## Localization
 
-The [`Localization`](../../common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value and translation object.
+The [`Localization`](../common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value and translation object.
 
 The following list of properties and its values are used in the Gantt.
 
@@ -144,7 +144,7 @@ The below example demonstrates the Gantt in **Deutsch** culture.
 
 ## Internationalization
 
-The [`Internationalization`](../../common/internationalization) library is used to globalize number, date, and time values in gantt component.
+The [`Internationalization`](../common/internationalization) library is used to globalize number, date, and time values in gantt component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -204,5 +204,5 @@ RTL provides an option to switch the text direction and layout of the Gantt comp
 
 ## See Also
 
-* [Internationalization](../../common/internationalization)
-* [Localization](../../common/localization)
+* [Internationalization](../common/internationalization)
+* [Localization](../common/localization)

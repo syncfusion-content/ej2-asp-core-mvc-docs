@@ -152,7 +152,7 @@ public ActionResult Index()
 
 ## Setting the time format
 
-Time formats is a way of representing the time value in different string format in textbox and popup list. By default, the TimePicker's format is based on the culture. You can also customize the format by using the [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Format) property. To know more about the time format standards, refer to the [Date and Time Format](../../common/internationalization#custom-formats) section.
+Time formats is a way of representing the time value in different string format in textbox and popup list. By default, the TimePicker's format is based on the culture. You can also customize the format by using the [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Format) property. To know more about the time format standards, refer to the [Date and Time Format](../common/internationalization#custom-formats) section.
 
 The following example demonstrates the TimePicker control in 24 hours format with 60 minutes interval. The time interval is set to 60 minutes by using the [Step](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Step) property.
 

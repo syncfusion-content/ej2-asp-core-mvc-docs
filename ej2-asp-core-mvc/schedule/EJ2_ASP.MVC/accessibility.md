@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Schedule Component
+title: Accessibility in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## Schedule Component
 
 The Scheduler has been designed based on the WAI-ARIA specifications, thus applying the appropriate ARIA roles, states and properties for the Scheduler elements. It is also available with a built-in keyboard navigation support, making it easier for the people who use assistive technologies or who completely rely on the Keyboard support. As per the accessibility standard, the navigated dates, views and other interactive actions performed on the Scheduler will be read out to the target users who use assistive technologies such as screen readers.
 
@@ -23,18 +23,12 @@ The following ARIA attributes are used in the Scheduler.
 
 | Attributes | Description |
 |-------|---------|
-| role="main" | This attribute added to the Scheduler element describes the actual role of the element and denote it as a main and unique content. |
-| aria-label | This attribute is assigned to the Scheduler parent element and its default value is Scheduler's current date. On every time, the date is navigated, this attribute is updated with appropriate current date values. It is also assigned to other scheduler UI elements such as previous and next date navigation buttons depicting its purpose, div element displaying date range in the header bar and appointment elements. |
-| role="link" | This attribute is added to the `e-header-date` element of Scheduler, to denote that it plays an anchor link role. |
-| role="row" | This attribute is added to the `tr` element present within the `e-content-table` element which holds the collection of work cell `td`s of Scheduler. |
-| role="gridcell" | This attribute is assigned to the `td` elements present within the `e-content-table` which represents the work cells of Scheduler. |
-| role="button" | This attribute is assigned to the appointments of Scheduler, to denote it as a clickable element. |
-| aria-readonly | This attribute is assigned to the appointments of Scheduler and defaults to `false`, which indicates that the appointments are editable by default. When it's value changes to `true`, it denotes that the appointments are in a not editable state. |
-| aria-selected | This attribute is assigned to both the work cells as well as appointments of Scheduler and defaults to `false`. The value changes to `true`, when the user selects a cell or an appointment by clicking on it. |
-| aria-grabbed | This attribute is assigned to the appointments of Scheduler and defaults to `true`, which indicates that the appointments are allowed to move over the Scheduler. When it's value changes to `false`, it indicates that the drag and drop of appointments are not allowed. |
-| aria-disabled | This attribute is assigned to the clickable elements on Scheduler such as previous and next date navigation buttons and view navigation buttons, and defaults to `false`. When changed to true, denotes that those elements on UI are in disabled state. |
-| aria-atomic | This attribute is assigned to the date range element displayed on the Scheduler header bar, to indicate that when date change takes place, the entire live region (Scheduler) should be updated to the user. It is set to `true`. |
-| aria-live="assertive" | This attribute is assigned to the date range element displayed on the Scheduler header bar, to indicate that it updates the date values frequently on every time the user navigates back and forth between the dates. The value `assertive` means that the newly modified date changes has a high priority, and your screen reader *should* notify you immediately regarding this.
+| role="main" |  Attribute added to the Scheduler element describes the actual role of the element and denote it as a main and unique content. |
+| role="button" | Attribute is assigned to the appointments of Scheduler, to denote it as a clickable element. |
+| aria-label | Attribute is set to the Scheduler parent element and its default value is Scheduler's current date. On every time, the date is navigated, this attribute is updated with appropriate current date values. It is also assigned to other scheduler UI elements such as previous and next date navigation buttons depicting its purpose, div element displaying date range in the header bar and appointment elements. |
+| aria-labelledby | It indicates editor dialog title to the user through assistive technologies. |
+| aria-describedby | It indicates editor dialog content description to the user through assistive technologies. |
+| aria-disabled | Attribute is set to the appointment element to indicates the disabled state of the Scheduler.
 
 ## Keyboard interaction
 

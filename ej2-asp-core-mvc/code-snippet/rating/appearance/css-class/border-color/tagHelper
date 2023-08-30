@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-rating id="rating" value=3 cssClass="custom-font"></ejs-rating>
+
+<style>
+
+    .e-rating-container.custom-font .e-rating-item-list:hover .e-rating-item-container .e-rating-icon,
+    .e-rating-container.custom-font .e-rating-item-container .e-rating-icon {
+        /* To change rating symbol border color */
+        -webkit-text-stroke: 2px #ae9e9d;
+    }
+
+</style>

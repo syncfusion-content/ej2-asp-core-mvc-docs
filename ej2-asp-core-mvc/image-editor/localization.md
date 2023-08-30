@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization
+# Localization in the ##Platform_Name## Image Editor control
 
 The `Localization` library allows you to localize the default text content of the Image Editor. The Image Editor has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
 
