@@ -11,7 +11,7 @@ documentation: ug
 
 # Kanban dimensions in ASP.NET MVC Kanban control
 
-The Kanban dimensions refers to both height and width of the entire layout and it accepts three types of values.
+The [ASP.NET MVC Kanban](https://www.syncfusion.com/aspnet-mvc-ui-controls/kanban-board) dimensions refers to both height and width of the entire layout and it accepts three types of values.
 
 * Auto
 * Pixel
