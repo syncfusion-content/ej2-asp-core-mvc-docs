@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## TreeMap Control
+title: Getting Started with ##Platform_Name## TreeMap Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## TreeMap control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -243,3 +243,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core TreeMap Example](https://ej2.syncfusion.com/aspnetcore/TreeMap/Default#/bootstrap5) that shows you how to render the TreeMap in ASP.NET Core.
