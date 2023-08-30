@@ -1,0 +1,27 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Readonly(true)
+    .EventSettings(e =>
+        e.DataSource(d =>
+            d.Url("https://services.odata.org/V4/Northwind/Northwind.svc/Orders/")
+            .Adaptor("ODataV4Adaptor")
+            .CrossDomain(true)
+        )
+        .Fields(f =>
+            f.Subject(sub => sub.Name("ShipName"))
+            .Id("Id")
+            .Location(loc => loc.Name("ShipCountry"))
+            .Description(des => des.Name("ShipAddress"))
+            .StartTime(st => st.Name("OrderDate"))
+            .EndTime(et => et.Name("RequiredDate"))
+            .RecurrenceRule(rec => rec.Name("ShipRegion"))
+        )
+        .Query("new ej.data.Query()")
+        .IncludeFiltersInQuery(true)
+        )
+    .SelectedDate(new DateTime(1996, 7, 9))
+    .Render()
+)

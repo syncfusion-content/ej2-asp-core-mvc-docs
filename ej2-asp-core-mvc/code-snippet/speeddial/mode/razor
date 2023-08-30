@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.Buttons
+
+@Html.EJS().SpeedDial("speeddial").Items(ViewBag.datasource).Mode(SpeedDialMode.Linear).Direction(LinearDirection.Left).OpenIconCss("e-icons e-edit").Render()

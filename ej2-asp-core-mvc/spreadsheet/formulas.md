@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formulas in ##Platform_Name## Spreadsheet Component
+title: Formulas in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Formulas in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Formulas
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Formulas
+# Formulas in Spreadsheet control
 
 Formulas are used for calculating the data in a worksheet. You can refer the cell reference from same sheet or from different sheets.
 
@@ -20,11 +20,11 @@ You can set formula for a cell in the following ways,
 * Using the `formula` property from `cell`, you can set the formula or expression to each cell at initial load.
 * Set the formula or expression through data binding.
 * You can set formula for a cell by [`editing`](./editing).
-* Using the [`updateCell`](../api/spreadsheet/#updatecell) method, you can set or update the cell formula.
+* Using the `updateCell` method, you can set or update the cell formula.
 
 ## User Defined Functions
 
-The list of formulas supported in the spreadsheet is sufficient for most of your calculations. If not, you can add your own custom function using the [`addCustomFunction`](../api/spreadsheet/#addcustomfunction) method. Use [`computeExpression`](../api/spreadsheet/#computeexpression) method, if you want to compute any formula or expression.
+The list of formulas supported in the spreadsheet is sufficient for most of your calculations. If not, you can add your own custom function using the `addCustomFunction` method. Use `computeExpression` method, if you want to compute any formula or expression.
 
 The following code example shows the calculation of data using supported and custom `formulas` in the spreadsheet.
 
@@ -55,15 +55,15 @@ The following code example shows the calculation of data using supported and cus
 
 ## Formula bar
 
-Formula bar is used to edit or enter cell data in much easier way. By default, the formula bar is enabled in the spreadsheet. Use the [`showFormulaBar`](../api/spreadsheet/#showformulabar) property to enable or disable the formula bar.
+Formula bar is used to edit or enter cell data in much easier way. By default, the formula bar is enabled in the spreadsheet. Use the [`showFormulaBar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_ShowFormulaBar) property to enable or disable the formula bar.
 
 ## Named Ranges
 
 You can define a meaningful name for a cell range and use it in the formula for calculation. It makes your formula much easier to understand and maintain. You can add named ranges to the Spreadsheet in the following ways,
 
-* Using the [`definedNames`](../api/spreadsheet/#definednames) collection, you can add multiple named ranges at initial load.
-* Use the [`addDefinedName`](../api/spreadsheet/#adddefinedname) method to add a named range dynamically.
-* You can remove an added named range dynamically using the [`removeDefinedName`](../api/spreadsheet/#removedefinedname) method.
+* Using the [`definedNames`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_DefinedNames) collection, you can add multiple named ranges at initial load.
+* Use the `addDefinedName` method to add a named range dynamically.
+* You can remove an added named range dynamically using the `removeDefinedName` method.
 * Select the range of cells, and then enter the name for the selected range in the name box.
 
 The following code example shows the usage of named ranges support.

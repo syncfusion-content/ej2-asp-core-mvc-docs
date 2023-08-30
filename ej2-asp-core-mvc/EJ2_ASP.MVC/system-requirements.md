@@ -1,14 +1,14 @@
 ---
 layout: post
-title: System Requirements in ##Platform_Name## control
-description: Learn here all about System Requirements in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: System Requirements in ##Platform_Name## - Syncfusion
+description: Checkout and learn here all about the system requirements needed to use Syncfusion ##Platform_Name## Components.
 platform: ej2-asp-core-mvc
 control: System Requirements
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# System Requirements for ASP.NET MVC Controls
+# System Requirements for ASP.NET MVC EJ2 Components
 
 To get start with ASP.NET MVC application, need to ensure the following software to be installed on the machine.
 
@@ -23,7 +23,11 @@ ASP.NET MVC Applications can be developed using one of the following IDEs. You c
 
 ## Frameworks
 
-The below tools required to run the Syncfusion ASP.NET MVC UI application.
+One of the the following .NET SDK is required to develop and run the Syncfusion UI controls for ASP.NET MVC.
 
-* .Net Framework 4.5 or above.
-* ASP.NET MVC 4 or ASP.NET MVC 5
+* [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+* [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+* [.NET Core SDK 3.1](https://dotnet.microsoft.com/en-us/download/dotnet/3.1)
+* [.NET Core SDK 2.0](https://dotnet.microsoft.com/en-us/download/dotnet/2.0)
+* [.NET 4.5 Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net45)
+

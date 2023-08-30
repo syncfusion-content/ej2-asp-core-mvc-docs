@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dimensions in ##Platform_Name## Heatmap Chart Component
+title: Dimensions in Syncfusion ##Platform_Name## Heatmap Chart Component
 description: Learn here all about Dimensions in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dimensions
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dimensions
+# Dimensions in ##Platform_Name## HeatMap Chart Component
 
 ## Size for container
 
@@ -23,7 +23,7 @@ Heat map can be rendered to its container size. You can set the size through inl
 
 ## Size for heat map
 
-You can  set the size of heat map directly by using the  [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Width.html) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Height.html) properties.
+You can  set the size of heat map directly by using the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Width.html) and [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Height.html) properties.
 
 ## In pixel
 

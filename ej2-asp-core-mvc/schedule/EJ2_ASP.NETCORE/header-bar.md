@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header Bar in ##Platform_Name## Schedule Component
+title: Header Bar in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Header Bar in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Header Bar
@@ -41,6 +41,7 @@ By default, the header bar holds the date and view navigation options, through w
 {% endif %}
 
 
+![Display Show or Hide Header Bar in ASP.NET Core Scheduler](images/scheduler-hide-header.png)
 
 ## Customizing header bar
 
@@ -70,6 +71,7 @@ Apart from the default date navigation and view options available on the header 
 {% endif %}
 
 
+![Display Customizing Header Bar in ASP.NET Core Scheduler](images/scheduler-custom-header.png)
 
 ## How to display the view options within the header bar popup
 
@@ -99,8 +101,9 @@ By default, the header bar holds the view navigation options, through which the 
 {% endif %}
 
 
+![Display Header Bar Popup in ASP.NET Core Scheduler](images/scheduler-header-popup.png)
 
-> Refer [here](./resources/#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
+N> Refer [here](./resources/#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
 
 ## Date header customization
 
@@ -134,6 +137,7 @@ The `dateHeaderTemplate` option is used to customize the date header cells of da
 {% endif %}
 
 
+![Display Date Header Customization with Template in ASP.NET Core Scheduler](images/scheduler-custom-header-with-template.png)
 
 ### Using renderCell event
 
@@ -162,7 +166,38 @@ In month view, the date header template is not applicable and therefore the same
 {% endtabs %}
 {% endif %}
 
+![Display Date Header Customization with Render Cell in ASP.NET Core Scheduler](images/scheduler-custom-header-with-rendercell.png)
 
+## Customizing the date range text
+
+The `DateRangeTemplate` option allows you to customize the text content of the date range displayed in the scheduler. By default, the date range text is determined by the scheduler view being used. However, you can use the `DateRangeTemplate` option to override the default text and specify your own custom text to be displayed.
+
+The `DateRangeTemplate` property includes `startDate`, `endDate` and `currentView` options, you can customize the date range text using these available options.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Display Customizing the Date Range Text in ASP.NET Core Scheduler](images/scheduler-custom-date-range-text.png)
 
 ## Customizing header indent cells
 
@@ -194,5 +229,6 @@ It is possible to customize the header indent cells using the `headerIndentTempl
 {% endif %}
 
 
+![Display Customizing Header Indent Cells in ASP.NET Core Scheduler](images/scheduler-header-indent-cell.png)
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing in ##Platform_Name## Pivot Table Component
+title: Editing in ##Platform_Name## Pivot Table Control | Syncfusion
 description: Learn here all about Editing in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Editing
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Editing
+# Editing in Pivot Table Control
 
-> This feature is applicable only for relational data source.
+N> This feature is applicable only for relational data source.
 
 Cell edit allows to add, delete, or update the raw items of any value cell from the pivot table. The raw items can be viewed in a data grid inside a new window on double-clicking the appropriate value cell. In the data grid, CRUD operations can be performed by double-clicking the cells or using toolbar options. Once user finishes editing raw items, aggregation will be performed for the updated values in pivot table component immediately. This support can be enabled by setting the [`allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowEditing) property in [`e-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) tag to **true**.
 
@@ -36,7 +36,7 @@ The following are the supported edit types in the data grid:
 
 In normal edit mode, when user starts editing, the state of the currently selected row alone will be completely changed to edit state. User can change the cell values and save it to the data source by clicking "Update" toolbar button. To enable the normal edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`e-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) tag to [**Normal**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.EditMode.html).
 
-> The normal edit mode is the default mode of editing..
+N> The normal edit mode is the default mode of editing..
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -68,8 +68,8 @@ In normal edit mode, when user starts editing, the state of the currently select
 ## Dialog
 
 In dialog edit mode, when you start editing, the currently selected row data will be shown in a dialog.
-You can change the cell values and save it to the data source by clicking **Save**.
-To enable the dialog edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`e-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) tag to [**Dialog**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.EditMode.html).
+
+You can change the cell values and save it to the data source by clicking **Save**. To enable the dialog edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`e-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) tag to [**Dialog**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.EditMode.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,8 +100,7 @@ To enable the dialog edit, set the [`mode`](https://help.syncfusion.com/cr/aspne
 
 ## Batch
 
-In batch edit mode, when you double-click the table cell, the state of target cell is changed to edit state.
-You can perform bulk save (added, changed, and deleted data in the single request) to the data source by clicking the toolbar's **Update** button.
+In batch edit mode, when you double-click the table cell, the state of target cell is changed to edit state. You can perform bulk save (added, changed, and deleted data in the single request) to the data source by clicking the toolbar's **Update** button.
 
 To enable the batch edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`e-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) tag to [**Batch**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.EditMode.html).
 
@@ -135,6 +134,7 @@ To enable the batch edit, set the [`mode`](https://help.syncfusion.com/cr/aspnet
 ## Command column
 
 An additional column appended in the grid layout holds the command buttons to perform the CRUD operation.
+
 To enable the command columns, set the [`allowCommandColumns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`e-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) tag to **true**.
 
 The available built-in command buttons are:

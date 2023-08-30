@@ -35,4 +35,4 @@ The below sample customizes the matched character in suggestion list by `e-highl
 {% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/AutoComplete/AutoCompleteCustomSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/AutoComplete/AutoCompleteCustomSample).

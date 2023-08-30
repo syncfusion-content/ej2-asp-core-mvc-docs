@@ -25,8 +25,8 @@ public List<EventsData> GetEventsData()
     {
         Id = 1,
         Subject = "Surgery - Nancy",
-        StartTime = new DateTime(2018, 2, 11, 10, 0, 0),
-        EndTime = new DateTime(2018, 2, 11, 12, 0, 0),
+        StartTime = new DateTime(2023, 2, 11, 10, 0, 0),
+        EndTime = new DateTime(2023, 2, 11, 12, 0, 0),
         EventType = "Confirmed",
         OwnerId = 1
     });
@@ -34,8 +34,8 @@ public List<EventsData> GetEventsData()
     {
         Id = 2,
         Subject = "Therapy - Smith",
-        StartTime = new DateTime(2018, 2, 12, 10, 0, 0),
-        EndTime = new DateTime(2018, 2, 12, 12, 0, 0),
+        StartTime = new DateTime(2023, 2, 12, 10, 0, 0),
+        EndTime = new DateTime(2023, 2, 12, 12, 0, 0),
         EventType = "New",
         OwnerId = 2
     });
@@ -43,8 +43,8 @@ public List<EventsData> GetEventsData()
     {
         Id = 3,
         Subject = "Surgery - Paul",
-        StartTime = new DateTime(2018, 2, 13, 10, 0, 0),
-        EndTime = new DateTime(2018, 2, 13, 12, 0, 0),
+        StartTime = new DateTime(2023, 2, 13, 10, 0, 0),
+        EndTime = new DateTime(2023, 2, 13, 12, 0, 0),
         EventType = "Requested",
         OwnerId = 3
     });

@@ -35,4 +35,4 @@ Badges in real-time needs to be updated dynamically based on the requirements. T
 
 ![Dynamic Badge Content](../images/badgecount.PNG)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Badge/BadgeCustomSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Badge/BadgeCustomSample).

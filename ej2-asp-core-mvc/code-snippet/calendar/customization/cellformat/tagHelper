@@ -1,4 +1,8 @@
-<ejs-calendar id="calendar" value="@ViewBag.value" renderDayCell="customDates"></ejs-calendar>
+@{
+    var value = new DateTime(2017, 3, 10);
+}
+
+<ejs-calendar id="calendar" value="@value" renderDayCell="customDates"></ejs-calendar>
 
 <script>
     var addClass = ej.base.addClass;

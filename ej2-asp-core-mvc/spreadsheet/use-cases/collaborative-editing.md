@@ -141,3 +141,31 @@ The following code example shows how to prevent collaborative client from updati
 {% endtabs %}
 {% endif %}
 
+## Perform import action for collaborative clients
+
+Using the `action` argument from the `actionComplete` event, you can identity whether the import action is performed or not. If the action is `import`, then you need to send the `response data` to the server and also update the same to the collaborative clients.
+
+The following code example shows how to perform the import functionality for collaborative clients.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/import-collaborative-mode/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="collaborativeImportController.cs" %}
+{% include code-snippet/spreadsheet/import-collaborative-mode/collaborativeImportController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/import-collaborative-mode/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="collaborativeImportController.cs" %}
+{% include code-snippet/spreadsheet/import-collaborative-mode/collaborativeImportController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

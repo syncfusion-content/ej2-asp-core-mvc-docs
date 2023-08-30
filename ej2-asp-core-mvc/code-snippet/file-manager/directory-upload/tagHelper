@@ -1,0 +1,39 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Filemanager element declaration -->
+        <ejs-filemanager id="file" created="onCreated">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+       function onCreated(args) {
+            var fileObject = document.getElementById("file").ej2_instances[0];
+            document.getElementById('filemanager_tb_upload').onclick = function (args) {
+                args.stopPropagation();
+            };
+            var items = [{ text: 'Folder' }, { text: 'Files' }];
+             var drpDownBtn = new ej.splitbuttons.DropDownButton(
+               {
+                 items: items,
+                 select: (args) => {
+                   if (args.item.text === 'Folder') {
+                     fileObject.uploadSettings.directoryUpload = true;
+                   } else {
+                     fileObject.uploadSettings.directoryUpload = false;
+                   }
+                   setTimeout(function () {
+                     let uploadBtn = document.querySelector('.e-file-select-wrap button');
+                     uploadBtn.click();
+                   }, 100);
+                 }
+               },
+               '#filemanager_tb_upload'
+             );
+        }
+</script>

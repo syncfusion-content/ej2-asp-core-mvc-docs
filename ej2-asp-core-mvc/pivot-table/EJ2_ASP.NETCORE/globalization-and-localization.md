@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization And Localization in ##Platform_Name## Pivot Table Component
+title: Globalization And Localization in ##Platform_Name## Pivot Table Control | Syncfusion
 description: Learn here all about Globalization And Localization in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Globalization And Localization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization
+# Globalization in Pivot Table Control
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/intl.html)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/localization.html)).
 
@@ -25,11 +25,11 @@ By default, all the Essential JS 2 component are specific to English culture ('e
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture specific JSON data under the location `\scripts\cldr-data`.
+Once the package installed, you can find the culture specific JSON data under the location `/scripts/cldr-data`.
 
 * Now use the [`loadCultureFiles`](https://ej2.syncfusion.com/aspnetcore/documentation/base/intl.html#loading-culture-data) method to load the culture specific CLDR JSON data.
 
-In ASP.NET MVC refer the culture files directly from `\scripts\cldr-data` location. In ASP.NET Core refer the culture files directly from `\wwwroot\scripts\cldr-data` location as like the below code examples for both ASP.NET Core and MVC
+In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` location. In ASP.NET Core refer the culture files directly from `/wwwroot/scripts/cldr-data` location as like the below code examples for both ASP.NET Core and MVC
 
 ```sh
     function loadCultureFiles(de) {
@@ -54,8 +54,7 @@ In ASP.NET MVC refer the culture files directly from `\scripts\cldr-data` locati
 
 ```
 
-* Before changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through `load` method of
-  `L10n` class.
+* Before changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through `load` method of `L10n` class.
 
 ```sh
       var L10n = ej.base.L10n;
@@ -102,7 +101,7 @@ In ASP.NET MVC refer the culture files directly from `\scripts\cldr-data` locati
 
 
 
-> * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
+N> * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
 
 <!-- markdownlint-disable MD009 -->
 
@@ -195,7 +194,7 @@ addToColumn | Add to Column
 addToValue | Add to Value
 addToFilter | Add to Filter
 emptyData | No records to display
-fieldExist | A field already exists in this name. Please enter a different name.
+fieldExist | A field already exists in this name. Enter a different name.
 confirmText | A calculation field already exists in this name. Do you want to replace it?
 noMatches | No matches
 format | Summaries values by
@@ -249,7 +248,7 @@ min | Min
 max | Max
 allFields | All Fields
 formula | Formula
-fieldExist | A field already exists in this name. Please enter a different name.
+fieldExist | A field already exists in this name. Enter a different name.
 confirmText | A calculation field already exists in this name. Do you want to replace it?
 noMatches | No matches
 format | Summaries values by

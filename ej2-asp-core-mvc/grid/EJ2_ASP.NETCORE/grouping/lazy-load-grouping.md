@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lazy Load Grouping in ##Platform_Name## Grid Component
+title: Lazy Load Grouping in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Lazy Load Grouping in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Lazy Load Grouping
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Lazy Load Grouping
+# Lazy Load Grouping in ASP.NET Core Grid Component
 
 The lazy load grouping allows you to load grouped records to the Grid through the on-demand concept. So, you can use this feature to load a huge amount of grouped data to the Grid without any performance degradation.
 
@@ -46,7 +46,7 @@ To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](
 
 ## Handling the lazy load grouping at server-side
 
-You can use the `UrlAdaptor` of `DataManager` when binding the remote data. Along with the default server request, this feature will additionally send the below details to handle the lazy load grouping. In the server end, these details are bound with the `IsLazyLoad` and `OnDemandGroupInfo` parameters in the `DataManagerRequest` model. Please refer to the below table and screenshots.
+You can use the `UrlAdaptor` of `DataManager` when binding the remote data. Along with the default server request, this feature will additionally send the below details to handle the lazy load grouping. In the server end, these details are bound with the `IsLazyLoad` and `OnDemandGroupInfo` parameters in the `DataManagerRequest` model. Refer to the below table and screenshots.
 
 Property Name |Description
 -----|-----
@@ -106,9 +106,41 @@ return dm.RequiresCounts ? Json(new { result = groupedData == null ? DataSource 
 
 ```
 
+## Lazy load grouping with infinite scrolling
+
+Infinite scrolling loads a huge amount of data without degrading the Grid's performance. By default, infinite scrolling is enabled only for the expanded grouped rows when lazy loading is enabled. Now, the Grid has an option to allow infinite scrolling for group caption rows. This is achieved by setting the [enableInfiniteScrolling](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableInfiniteScrolling) property as true when lazy loading is enabled in the grouped records.
+
+This is demonstrated in the following sample:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Lazy-load-scroll.cs" %}
+{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load-grouping-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Lazy-load-scroll.cs" %}
+{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load-grouping-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+> The Grid also supports the lazy load grouping with [virtualization](https://ej2.syncfusion.com/aspnetcore/documentation/grid/virtual-scroll/)(virtual scrolling).
+
 ## Limitations for lazy load grouping
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
 * DataManager's `UrlAdaptor` and `JsonAdaptor` only have the built-in lazy load grouping support.
-* Lazy load grouping is not compatible with virtual scroll, infinite scroll and batch editing, row template etc.
+* Lazy load grouping is not compatible batch editing, row template etc.
 * Programmatic selection is not supported.
