@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Timepicker Control
-description: Checkout and learn about getting started with ##Platform_Name## Timepicker control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core TimePicker Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET Core TimePicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -180,3 +180,5 @@ The following example demonstrates the TimePicker control in 24 hours format wit
 * [How to achieve validation with TimePicker](./how-to/client-side-validation-using-form-validator)
 * [Render TimePicker with specific culture](./globalization)
 * [How to get and set value in TimePickerFor](./how-to/timepicker-for-core)
+
+N> You can also explore our [ASP.NET Core TimePicker Example](https://ej2.syncfusion.com/aspnetcore/TimePicker/DefaultFunctionalities#/bootstrap5) that shows you how to render the TimePicker in ASP.NET Core.
