@@ -10,7 +10,7 @@ documentation: ug
 
 # Customization in Message control
 
-The Message control allows user to customize the content display positions and appearance. This section explains the details about changing the content alignments and border styles for messages.
+The [ASP.NET MVC Message](https://www.syncfusion.com/aspnet-mvc-ui-controls/message) control allows user to customize the content display positions and appearance. This section explains the details about changing the content alignments and border styles for messages.
 
 ## Content Alignment
 
