@@ -1,4 +1,4 @@
-<ejs-pivotview id="PivotGrid" height="300" showFieldList="true" actionBegin:"actionBegin">
+<ejs-pivotview id="PivotGrid" height="300" showFieldList="true" actionBegin="actionBegin">
     <e-datasource data="@ViewBag.DataSource" expandAll="false" enableSorting="true" allowLabelFilter="true" allowValueFilter="true">
         <e-formatsettings>
             <e-field name="Amount" format="C0" useGrouping="true"></e-field>

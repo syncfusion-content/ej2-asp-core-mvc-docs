@@ -1,0 +1,32 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
+    <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editsettings>
+    <e-grid-pageSettings pageSize="5"></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" type="number" headerText="Order ID" validationRules="@(new { required= true })" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" type="string" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="Freight" type="number" headerText="Freight" editType="numericedit" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" type="date" headerText="Order Date" width="120" customFormat="@(new { type ="date", format="hh:mm:ss a" })"  width="120" edit="@(new {create = "create", read = "read", destroy = "destroy", write = "write"})" ></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var timeObject;
+    var element
+    function create(args) {
+        element = document.createElement('input');
+        return element;
+    }
+    function read(e) {
+        return timeObject.value;
+    }
+    function destroy() {
+        timeObject.destroy();
+    }
+    function write(args) {
+        timeObject = new ej.calendars.TimePicker({
+            value: args.rowData[args.column.field],
+            step: 60
+        });
+        timeObject.appendTo(element);
+    }
+</script>

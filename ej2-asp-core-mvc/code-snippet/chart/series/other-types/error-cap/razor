@@ -3,8 +3,8 @@
     {
         sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
             .Name("Sales")
-            .XName("xValue")
-            .YName("yValue")
+            .XName("x")
+            .YName("y")
             .Marker(ViewBag.marker)
             .ErrorBar(ViewBag.errorBar)            
             .DataSource(ViewBag.dataSource).Add();

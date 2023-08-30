@@ -11,8 +11,8 @@ public List<AppointmentData> GetScheduleData()
     {
         Id = 1,
         Subject = "Paris",
-        StartTime = new DateTime(2018, 2, 15, 10, 0, 0),
-        EndTime = new DateTime(2018, 2, 15, 12, 30, 0),
+        StartTime = new DateTime(2023, 2, 15, 10, 0, 0),
+        EndTime = new DateTime(2023, 2, 15, 12, 30, 0),
         IsBlock = true,
         RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=5"
     });

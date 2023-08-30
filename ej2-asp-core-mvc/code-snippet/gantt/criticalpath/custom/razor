@@ -1,0 +1,15 @@
+
+ @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name("TaskName"
+ ).StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+ ).EnableCriticalPath(true).EditSettings(es => es.AllowAdding(true).AllowEditing(true).AllowDeleting(true)
+ ).QueryTaskbarInfo("queryTaskbarInfo").Render()
+
+ <script>
+        function queryTaskbarInfo(args) {
+             if ((args.data.isCritical || args.data.slack === '0 day') && !args.data.hasChildRecords) {
+                args.taskbarBgColor = 'rgb(242, 210, 189)';
+                args.progressBarBgColor = 'rgb(201, 169, 166)';
+            }
+    }
+    </script>
+        

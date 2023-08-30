@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.Buttons
+
+@Html.EJS().SpeedDial("speeddial").Items(ViewBag.datasource).ItemTemplate("#itemTemplate").Position(FabPosition.BottomRight).OpenIconCss("e-icons e-edit").Content("Edit").Render()
+
+<script type="text/x-jsrender" id="itemTemplate">
+    <div class="itemlist">
+        <span class="icon ${iconCss}" style="padding:3px"></span>
+        <span class="text" style="padding:0 5px">${text}</span>
+    </div>
+</script>
+
+<style>  
+    .e-speeddial-li .itemlist {
+        display: inherit;
+        width: 100%;
+        border: 1px solid transparent;
+        align-items: center;
+        padding: 5px;
+        border-radius: 500px;
+        background-color: rgba(104, 99, 104, 0.1);
+        box-shadow: 0 0 4px grey;
+    }
+</style>

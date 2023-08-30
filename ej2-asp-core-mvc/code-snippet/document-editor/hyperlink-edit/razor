@@ -16,6 +16,5 @@
                 args.isHandled = true;
             }
         };
-
     });    
 </script>

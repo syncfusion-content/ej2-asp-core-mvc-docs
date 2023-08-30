@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Submit Name And Value In Form in ##Platform_Name## Switch Component
+title: Submit Name And Value In Form in ##Platform_Name## Switch Control | Syncfusion
 description: Learn here all about Submit Name And Value In Form in Syncfusion ##Platform_Name## Switch component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Submit Name And Value In Form
@@ -13,8 +13,7 @@ documentation: ug
 
 The name attribute of the Switch is used to group Switches. When the Switches are grouped in form, the checked items value attribute will post to the server on form submit. The disabled and unchecked Switch values will not be sent to the server on form submit.
 
-In the following code snippet, USB and Wi-Fi in the checked state, and Bluetooth is in disabled state.
-Values that are in checked state only be sent on form submit.
+In the following code snippet, USB and Wi-Fi in the checked state, and Bluetooth is in disabled state. Values that are in checked state only be sent on form submit.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

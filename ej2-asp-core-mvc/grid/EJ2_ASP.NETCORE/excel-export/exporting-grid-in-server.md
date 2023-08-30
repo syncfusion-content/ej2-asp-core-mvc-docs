@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting Grid in Server in ##Platform_Name## Grid Component
+title: Exporting Grid in Server in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Exporting Grid in Server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Exporting Grid in Server
@@ -51,7 +51,7 @@ To Export the Grid in server side, You need to call the [`serverExcelExport`](ht
 
 
 
-> **Note:** Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
+N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
 
 ## CSV Export in server side
 
@@ -78,6 +78,39 @@ In the below demo, we have invoked the above method inside the [`toolbarClick`](
 {% endhighlight %}
 {% highlight c# tabtitle="Server-exportCore.cs" %}
 {% include code-snippet/grid/excel-export/server-csv-export/server-exportCore.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Rotate a header text to a certain degree in the exported grid on the server side
+
+The DataGrid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported Excel file. To achieve this requirement, use the `ServerExcelHeaderQueryCellInfo` event of the Grid.
+
+The `ServerExcelHeaderQueryCellInfo` will be triggered when creating a column header for the excel document to be exported in the server side. Customize the column header in this event.
+
+In the following demo, using the `HeaderCellRotate` method of the `GridExcelExport` class in the `ServerExcelHeaderQueryCellInfo` event, you can rotate the header text of the column header in the excel exported document.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/server-rotate-header/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-RotateHeader.cs" %}
+{% include code-snippet/grid/excel-export/server-rotate-header/server-rotate-header.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/server-rotate-header/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-RotateHeader.cs" %}
+{% include code-snippet/grid/excel-export/server-rotate-header/server-rotate-header.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

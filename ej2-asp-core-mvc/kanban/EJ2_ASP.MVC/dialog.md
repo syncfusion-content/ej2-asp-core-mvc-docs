@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dialog in ##Platform_Name## Kanban Component
+title: Usages of Dialog in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Dialog in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dialog
@@ -43,6 +43,9 @@ swimlaneSettings.keyField(If applicable) | DropDown | -
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/default/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/default/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -53,6 +56,9 @@ swimlaneSettings.keyField(If applicable) | DropDown | -
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/default/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/default/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -76,7 +82,7 @@ The following types are available in dialog fields.
 * TextBox
 * Input
 
-> If `Type` is not defined in the fields, then it renders as the HTML input element in dialog.
+N> If `Type` is not defined in the fields, then it renders as the HTML input element in dialog.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -86,6 +92,9 @@ The following types are available in dialog fields.
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/custom-fields/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/custom-fields/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -97,6 +106,9 @@ The following types are available in dialog fields.
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/custom-fields/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/custom-fields/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -120,6 +132,9 @@ By default, the fields `Key` mapping value is considered as a `Label` and you ca
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/custom-field-label/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/custom-field-label/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -130,6 +145,9 @@ By default, the fields `Key` mapping value is considered as a `Label` and you ca
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/custom-field-label/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/custom-field-label/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -153,6 +171,9 @@ The dialog fields can be validated while click on the `Save` button. This can be
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/fields-validation/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/fields-validation/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -163,6 +184,9 @@ The dialog fields can be validated while click on the `Save` button. This can be
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/fields-validation/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/fields-validation/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -182,6 +206,9 @@ Using the dialog template, you can render your own dialog by defining the `Templ
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/template/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/template/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -192,6 +219,9 @@ Using the dialog template, you can render your own dialog by defining the `Templ
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/template/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/template/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -215,6 +245,9 @@ The Kanban allows to prevent to open a dialog on card double-click by enabling `
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/prevent-dialog/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/prevent-dialog/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -226,6 +259,9 @@ The Kanban allows to prevent to open a dialog on card double-click by enabling `
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/prevent-dialog/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/prevent-dialog/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
@@ -235,7 +271,7 @@ The Kanban allows to prevent to open a dialog on card double-click by enabling `
 
 The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through `DataManager`. The `DataManager` has an option to bind all the CRUD related data in server-side.
 
-> For your information, the ODataAdaptor persists data in the server as per OData protocol.
+N> For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
 In the below section covers how to get the edited data details on the server-side using the `UrlAdaptor`.
 
@@ -372,6 +408,9 @@ The following code example describes the above behavior.
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/crud-url-adaptor/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/crud-url-adaptor/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -382,6 +421,9 @@ The following code example describes the above behavior.
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dialog/crud-url-adaptor/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/dialog/crud-url-adaptor/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -445,4 +487,4 @@ public class EditParams {
 
 ```
 
-> The `CrudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `SortBy` as `Index` properties are used for `CrudUrl` properties to update the modified bulk data to the server-side.
+N> The `CrudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `SortBy` as `Index` properties are used for `CrudUrl` properties to update the modified bulk data to the server-side.

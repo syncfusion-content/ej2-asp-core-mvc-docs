@@ -68,7 +68,7 @@ You can change the size mode of an application between touch and normal (mouse) 
 
 Follow the below steps to change the size mode for an application at runtime.
 
-1. Add the `e-bigger` CSS class in the `~/wwwroot/css/site.css` file.
+**1.**Add the `e-bigger` CSS class in the `~/wwwroot/css/site.css` file.
 
 {% tabs %}
 {% highlight c# tabtitle="~/site.css" %}
@@ -80,7 +80,7 @@ Follow the below steps to change the size mode for an application at runtime.
 {% endhighlight %}
 {% endtabs %}
 
-2. Refer to the following code for adding control and the JavaScript click action inside the script tag of `~/Pages/Index.cshtml` file to switch between touch and mouse mode using `e-bigger` class.
+**2.**Refer to the following code for adding control and the JavaScript click action inside the script tag of `~/Pages/Index.cshtml` file to switch between touch and mouse mode using `e-bigger` class.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -118,7 +118,7 @@ Follow the below steps to change the size mode for an application at runtime.
 
 ![change-size-mode-for-application-at-runtime](images/change-size-mode-for-application-at-runtime.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-size-modes/tree/main/SizeModeApp)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-size-modes/tree/main/SizeModeApp)
 
 ## Change size mode for a control at runtime
 
@@ -174,7 +174,7 @@ Refer to the following code, in which the `e-bigger` class is added for enabling
 
 ![change-size-mode-for-a-control-at-runtime](images/change-size-mode-for-a-component-at-runtime.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-size-modes/tree/main/SizeModeControl)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-size-modes/tree/main/SizeModeControl)
 
 ## Change font size for all controls
 

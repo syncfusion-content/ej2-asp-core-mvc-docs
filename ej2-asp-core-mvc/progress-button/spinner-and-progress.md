@@ -112,7 +112,7 @@ The progress state can be visualized to the specified interval by changing the `
 
 
 
-> The class `e-hide-spinner` hides the spinner in the ProgressButton, For more information, see [hide spinner](./how-to/hide-spinner) section
+N> The class `e-hide-spinner` hides the spinner in the ProgressButton, For more information, see [hide spinner](./how-to/hide-spinner) section
 
 ### Changing progress state dynamically
 
@@ -143,7 +143,7 @@ The progress state can be changed dynamically by modifying the `percent` propert
 
 
 
-> The method `dataBind` applies the property changes immediately to the component.
+N> The method `dataBind` applies the property changes immediately to the component.
 
 ### Start and stop methods
 

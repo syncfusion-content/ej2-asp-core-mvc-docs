@@ -24,8 +24,8 @@ public List<ResourceData> GetTimelineResourceData()
     {
         Id = 1,
         Subject = "Decoding",
-        StartTime = new DateTime(2018, 4, 3, 9, 30, 0),
-        EndTime = new DateTime(2018, 4, 3, 11, 30, 0),
+        StartTime = new DateTime(2023, 4, 3, 9, 30, 0),
+        EndTime = new DateTime(2023, 4, 3, 11, 30, 0),
         IsAllDay = false,
         ProjectId = 1,
         CategoryId = 1
@@ -34,8 +34,8 @@ public List<ResourceData> GetTimelineResourceData()
     {
         Id = 2,
         Subject = "Bug Automation",
-        StartTime = new DateTime(2018, 4, 4, 9, 30, 0),
-        EndTime = new DateTime(2018, 4, 4, 11, 30, 0),
+        StartTime = new DateTime(2023, 4, 4, 9, 30, 0),
+        EndTime = new DateTime(2023, 4, 4, 11, 30, 0),
         IsAllDay = false,
         ProjectId = 2,
         CategoryId = 1
@@ -44,8 +44,8 @@ public List<ResourceData> GetTimelineResourceData()
     {
         Id = 3,
         Subject = "Functionality testing",
-        StartTime = new DateTime(2018, 4, 5, 9, 30, 0),
-        EndTime = new DateTime(2018, 4, 5, 11, 30, 0),
+        StartTime = new DateTime(2023, 4, 5, 9, 30, 0),
+        EndTime = new DateTime(2023, 4, 5, 11, 30, 0),
         IsAllDay = false,
         ProjectId = 3,
         CategoryId = 1
@@ -54,8 +54,8 @@ public List<ResourceData> GetTimelineResourceData()
     {
         Id = 4,
         Subject = "Resolution-based testing",
-        StartTime = new DateTime(2018, 4, 3, 9, 30, 0),
-        EndTime = new DateTime(2018, 4, 3, 11, 30, 0),
+        StartTime = new DateTime(2023, 4, 3, 9, 30, 0),
+        EndTime = new DateTime(2023, 4, 3, 11, 30, 0),
         IsAllDay = false,
         ProjectId = 1,
         CategoryId = 2
@@ -64,8 +64,8 @@ public List<ResourceData> GetTimelineResourceData()
     {
         Id = 5,
         Subject = "Test report Validation",
-        StartTime = new DateTime(2018, 4, 4, 9, 30, 0),
-        EndTime = new DateTime(2018, 4, 4, 11, 30, 0),
+        StartTime = new DateTime(2023, 4, 4, 9, 30, 0),
+        EndTime = new DateTime(2023, 4, 4, 11, 30, 0),
         IsAllDay = false,
         ProjectId = 2,
         CategoryId = 2
@@ -74,8 +74,8 @@ public List<ResourceData> GetTimelineResourceData()
     {
         Id = 6,
         Subject = "Test case correction",
-        StartTime = new DateTime(2018, 4, 5, 9, 30, 0),
-        EndTime = new DateTime(2018, 4, 5, 11, 30, 0),
+        StartTime = new DateTime(2023, 4, 5, 9, 30, 0),
+        EndTime = new DateTime(2023, 4, 5, 11, 30, 0),
         IsAllDay = false,
         ProjectId = 3,
         CategoryId = 2

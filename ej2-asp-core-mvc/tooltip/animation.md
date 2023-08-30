@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Tooltip Component
+title: Animation in ##Platform_Name## Tooltip Control | Syncfusion
 description: Learn here all about Animation in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Animation
@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# Animation
+# Animation in Tooltip Control
 
-To animate the Tooltip, a set of specific animation effects are available, and it can be controlled using the `animation` property.
-The animation property also allows you to set delay, duration, and various other effects of your choice.
+To animate the Tooltip, a set of specific animation effects are available, and it can be controlled using the `animation` property. The animation property also allows you to set delay, duration, and various other effects of your choice.
 
 `AnimationModel` is derived from base to apply the chosen animation effect, duration, etc. on Tooltips.
 
@@ -47,8 +46,7 @@ Output be like the below.
 
 ![ASP .NET Core - Tooltip - Animation](./images/tooltip-animation.png)
 
-The default animation effect for the Tooltip is set to `FadeIn` for its open action, and `FadeOut` for its close action.
-The default `duration` is set to 150 ms and `delay` is set to 0.
+The default animation effect for the Tooltip is set to `FadeIn` for its open action, and `FadeOut` for its close action. The default `duration` is set to 150 ms and `delay` is set to 0.
 
 ## Animation effects
 
@@ -72,8 +70,8 @@ The animation effects that are applicable to Tooltips are:
 
 When the `effect` is specified as `None`, no effect will be applied to the Tooltip, and animation is considered to be set to `off`.
 
-> Some of the above animation effects suits the Tooltip better when its tip pointer is hidden.
-> This can be achieved by setting the `showTipPointer` to false.
+N> Some of the above animation effects suits the Tooltip better when its tip pointer is hidden.
+<br/> This can be achieved by setting the `showTipPointer` to false.
 
 ## Animating via open/close methods
 
