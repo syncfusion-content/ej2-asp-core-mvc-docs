@@ -1,0 +1,12 @@
+Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("x")
+                      .YName("y")
+                      .InnerRadius("65%").Add();
+            })
+            .CenterLabel(cl => cl.Text("Mobile<br>Browsers<br>Statistics")
+            .HoverTextFormat("${point.x} <br> Browser Share <br> ${point.y}%")
+            .TextStyle(ts => ts.FontWeight("900").Size("15px").Color("grey").FontFamily("Roboto").FontStyle("Italic")))
+            .LegendSettings(ls => ls.Visible(false)).Render()
+

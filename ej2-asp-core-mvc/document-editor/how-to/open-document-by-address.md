@@ -82,28 +82,26 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 
 ```csharp
-
-    [AcceptVerbs("Post")]
-    public string ImportFileURL([FromBody]FileUrlInfo param)
-    {
-        try {
-            using(WebClient client = new WebClient())
-            {
-                MemoryStream stream = new MemoryStream(client.DownloadData(param.fileUrl));
-                WordDocument document = WordDocument.Load(stream, FormatType.Docx);
-                string json = Newtonsoft.Json.JsonConvert.SerializeObject(document);
-                document.Dispose();
-                stream.Dispose();
-                return json;
-            }
-        }
-        catch (Exception) {
-            return "";
+[AcceptVerbs("Post")]
+public string ImportFileURL([FromBody]FileUrlInfo param)
+{
+    try {
+        using(WebClient client = new WebClient())
+        {
+            MemoryStream stream = new MemoryStream(client.DownloadData(param.fileUrl));
+            WordDocument document = WordDocument.Load(stream, FormatType.Docx);
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(document);
+            document.Dispose();
+            stream.Dispose();
+            return json;
         }
     }
-    public class FileUrlInfo {
-        public string fileUrl { get; set; }
-        public string Content { get; set; }
+    catch (Exception) {
+        return "";
     }
-
+}
+public class FileUrlInfo {
+    public string fileUrl { get; set; }
+    public string Content { get; set; }
+}
 ```

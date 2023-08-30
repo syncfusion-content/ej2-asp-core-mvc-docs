@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting in ##Platform_Name## Schedule Component
+title: Exporting in ##Platform_Name## Syncfusion Schedule Component
 description: Learn here all about Exporting in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Exporting
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Exporting
+# Exporting in ##Platform_Name## Schedule Component
 
 The Scheduler supports exporting all its appointments both to an Excel or ICS extension file at client-side. It offers different client-side methods to export its appointments in an Excel or ICal format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
 
@@ -17,7 +17,7 @@ The Scheduler supports exporting all its appointments both to an Excel or ICS ex
 
 The Scheduler allows you to export all its events into an Excel format file by using the [`exportToExcel`] client-side method. By default, it exports all the default fields of Scheduler mapped through `eventSettings` property.
 
-> Before you start with excel exporting functionality, you need to import and inject the `ExcelExport` module from the `'@syncfusion/ej2-schedule'` package using the `Inject` method of Scheduler.
+N> Before you start with excel exporting functionality, you need to import and inject the `ExcelExport` module from the `'@syncfusion/ej2-schedule'` package using the `Inject` method of Scheduler.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -106,7 +106,7 @@ By default, the Scheduler exports recurring events as a single data by exporting
 
 By default, the whole event collection bound to the Scheduler gets exported as an excel file. To export only specific events of Scheduler or some custom event collection, you need to pass those custom data collection as a parameter to the `exportToExcel` method as shown in this following example, through the `customData` option.
 
-> By default, the event data are taken from Scheduler dataSource.
+N> By default, the event data are taken from Scheduler dataSource.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -188,6 +188,23 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+
+### Custom separator in CSV
+
+The Scheduler exports the event data to CSV format with `,` as separator. You can change separator by setting `separator` property in `ExportOptions`.
+
+
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/excel-export/csv-format/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/excel-export/csv-format/data.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 
 
@@ -378,4 +395,4 @@ You can print the Schedule element based on your needs using the `print` method 
 
 
 
-> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

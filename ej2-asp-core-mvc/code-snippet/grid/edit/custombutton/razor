@@ -1,0 +1,22 @@
+@Html.EJS().Grid("DialogTemplateEdit").DataSource((IEnumerable<object>)ViewBag.DataSource).ActionComplete("actionComplete").Columns(col =>
+   {
+       col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = true }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+       col.Field("CustomerID").HeaderText("Customer Name").Width("150").ValidationRules(new { required = true, minLength = 3 }).Add();
+       col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").Add();
+   }).AllowPaging().PageSettings(page => page.PageCount(2)).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog); }).Toolbar(new List<string>() { "Add", "Edit", "Delete" }).Render()
+ 
+<script>
+    function actionComplete(args) {
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            let newFooterButton = {
+                buttonModel: { content: 'custom' },
+                click: onCustomButtonClick
+            };
+            args.dialog.buttons.push(newFooterButton);
+            args.dialog.refresh();
+        }
+    }
+    function onCustomButtonClick() {
+        alert('Add/Edit dialog custom footer button clicked');
+    }
+</script>

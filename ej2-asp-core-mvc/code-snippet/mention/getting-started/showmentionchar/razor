@@ -1,0 +1,10 @@
+@model List<string>
+
+@{ 
+    char nameMentionChar = '#';
+}
+
+<label style="font-size: 15px; font-weight: 600;">Comments</label>
+<div id="defaultMention" placeholder="Type @Html.Raw("#") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
+
+@Html.EJS().Mention("showMention").Target("#defaultMention").MentionChar(nameMentionChar).ShowMentionChar(true).DataSource((IEnumerable<object>)ViewBag.data).Render()

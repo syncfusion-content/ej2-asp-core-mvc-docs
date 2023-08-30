@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drill Down in ##Platform_Name## Maps Component
+title: Drill Down in Syncfusion ##Platform_Name## Maps Component
 description: Learn here all about Drill Down in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drill Down
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drill-down
+# Drill-down in ##Platform_Name## Maps Component
 
 By clicking a continent, all the countries available in that continent can be viewed using the drill-down feature. For example, the countries in the `Africa` continent have been showcased here. To showcase all the countries in `Africa` continent by clicking the `ShapeSelected` event as mentioned in the following example.
 

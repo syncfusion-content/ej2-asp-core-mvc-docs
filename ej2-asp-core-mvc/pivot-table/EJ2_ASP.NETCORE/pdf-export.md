@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pdf Export in ##Platform_Name## Pivot Table Component
+title: Pdf Export in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Pdf Export in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pdf Export
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# PDF Export
+# PDF Export in ##Platform_Name## Pivot Table Component
 
 PDF export allows exporting pivot table data as PDF document. To enable PDF export in the pivot table, set the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowPdfExport) as true. You need to use the `pdfExport` method for PDF exporting.
 
@@ -61,6 +61,35 @@ PDF export provides an option for exporting multiple pivot tables to same file. 
 {% endhighlight %}
 {% highlight c# tabtitle="MultipleExport.cs" %}
 {% include code-snippet/pivot-table/pdf-export/multiple-export/MultipleExport.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Export table and chart into the same document
+
+When the [`e-displayOption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html) is set to **Both**, you can export both the table and the chart into the same PDF document. To achieve this, use the `pdfExport` method and set the `exportBothTableAndChart` parameter to **true**.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="exportTableAndChart.cs" %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/exportTableAndChart.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="exportTableAndChart.cs" %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/exportTableAndChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -275,11 +304,73 @@ The PDF export provides an option to change page size of the document before exp
 
 
 
+### Changing document width and height while exporting
+
+Before exporting, you can change the height and width of the PDF document. To achieve this, use the **height** and **width** properties in the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event.
+
+> This option is only available if [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) is set to **true**. In addition, the `VirtualScroll` and `PDFExport` modules must be injected into the pivot table.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-customization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/exporting-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-customization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/exporting-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Customize the table column count while exporting
+
+Before exporting, you can split and export the pivot table columns on each page of the PDF document by using the **columnSize** property in the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event.
+
+> This option is only available if [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) is set to **true**. In addition, the `VirtualScroll` and `PDFExport` modules must be injected into the pivot table.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-columnCustomization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/exporting-columnCustomization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-columnCustomization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/exporting-columnCustomization.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Changing the pivot table style while exporting
 
 The PDF export provides an option to change colors for headers, caption and records in pivot table before exporting. In-order to apply colors, define **theme** settings in **pdfExportProperties** object and pass it as a parameter to the `pdfExport` method.
 
-> By default, material theme is applied to exported PDF document.
+N> By default, material theme is applied to exported PDF document.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -361,13 +452,13 @@ In addition to existing built-in fonts, custom fonts can also be used. The custo
 
 
 
-> The non-English alphabets can also be exported properly by setting its appropriate font.
+N> The non-English alphabets can also be exported properly by setting its appropriate font.
 
 ## Virtual Scroll Data
 
 You can export the pivot table virtual scroll data as PDF document by using PivotEngine export without any performance degradation. To enable PivotEngine export in the pivot table, set the `allowPdfExport` as true. You need to use the `exportToPDF` method for PivotEngine export.
 
-> PivotEngine export will be performed while enabling virtual scrolling by default
+N> PivotEngine export will be performed while enabling virtual scrolling by default
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -398,7 +489,7 @@ You can export the pivot table virtual scroll data as PDF document by using Pivo
 
 Repeat row headers on each page can be achieved using PivotEngine export option. To disable repeat row headers, you need to set `allowRepeatHeader` to **false** in beforeExport event. You need to use the `exportToPDF` method for PivotEngine export.
 
-> By default, repeat row headers is enabled in the PivotEngine export.
+N> By default, repeat row headers is enabled in the PivotEngine export.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -429,7 +520,7 @@ Repeat row headers on each page can be achieved using PivotEngine export option.
 
 The pivot engine exports the entire virtual data of the pivot table (i.e. the data that contains all of the records used to render the complete pivot table) as a PDF document. To export just the current viewport of the pivot table, set the [`exportAllPages`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportAllPages) property to **false**. To use the pivot engine export, add the `PDFExport` module into the pivot table.
 
-> By default, the pivot engine export will be performed while virtual scrolling is enabled.
+N> By default, the pivot engine export will be performed while virtual scrolling is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -522,6 +613,35 @@ The event `pdfHeaderQueryCellInfo` triggers on framing each column header cell d
 {% endtabs %}
 {% endif %}
 
+### ExportComplete
+
+The event [`ExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportComplete) is triggered after the pivot table data has been exported to an PDF document. You can use this event to acquire blob stream data for further customization and processing at your end by passing the `isBlob` parameter as **true** when using the `pdfExport` method. It has the following parameters:
+
+* `type` - It holds the current export type such as PDF, Excel, and CSV.
+* `promise` - It holds the promise object for blob data.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Blob-export.cs" %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/blob-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Blob-export.cs" %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/blob-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## See Also

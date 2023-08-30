@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create Buttongroup With Icons in ##Platform_Name## Button Group Component
-description: Learn here all about how to create Buttongroup with icons in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
+title: Create Buttongroup With Icons in ##Platform_Name## Button Group Control | Syncfusion
+description: Learn here all about how to create Buttongroup with icons in Syncfusion ##Platform_Name## Button Group control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Buttongroup With Icons
 publishingplatform: ##Platform_Name##
@@ -19,9 +19,6 @@ ButtonGroup with icons can be achieved by `IconCss` property of the Button compo
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/icon/demo/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/icon/demo/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -36,3 +33,4 @@ ButtonGroup with icons can be achieved by `IconCss` property of the Button compo
 {% endtabs %}
 {% endif %}
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupHowToSample).

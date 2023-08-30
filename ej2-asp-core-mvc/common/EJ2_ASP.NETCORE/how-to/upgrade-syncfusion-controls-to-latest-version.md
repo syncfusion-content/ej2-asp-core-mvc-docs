@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upgrade Syncfusion Controls to Latest Version in ##Platform_Name## | Syncfusion
-description: Checkout and learn about Upgrade Syncfusion Controls to Latest Version in ##Platform_Name##.
+description: Checkout and learn here about the Upgrade Syncfusion Controls to Latest Version in ##Platform_Name##.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -14,13 +14,13 @@ To upgrade Syncfusion ASP.NET Core Controls to the latest version, you need to e
 
 ## Compatible .NET version
 
-Syncfusion ASP.NET Core Controls in the latest version `'{:nuget-version:}'` are compatible with the latest version of .NET 5.0 and .NET Core 3.1. Also, refer to [version compatibility](../version-compatibility) documentation for more information about version compatibility of Syncfusion ASP.NET Core Controls and .NET Core SDK.
+Refer to [version compatibility](../version-compatibility) documentation to ensure the .NET version you are using is supported in latest version of Synncfusion components.
 
 ## Client resource file references
 
-Ensure your Script and CSS files have been properly configured in your application.
+Ensure to update version in Script and CSS file references in your application.
 
-* Add the required scripts and style sheet using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+* Update the version in scripts and style sheet if you are using CDN referece inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -36,11 +36,11 @@ Ensure your Script and CSS files have been properly configured in your applicati
 
 * Make sure that the version in the URLs matches the version of the `Syncfusion.EJ2.AspNet.Core` NuGet package in your application.
     
-> For production purpose and minimal requirement, Syncfusion provides an option to generate custom styles of selective controls by using the ThemeStudio web application. Refer to this [link](http://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
+N> For production purpose and minimal requirement, Syncfusion provides an option to generate custom styles of selective controls by using the ThemeStudio web application. Refer to this [link](http://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
 
 ## Breaking changes
 
-Some changes have been modified in our ASP samples for each release. So, we suggest you to ensure the breaking changes. Refer to this [release notes](https://ej2.syncfusion.com/aspnetcore/documentation/release-notes/index/?type=breaking-changes) for our ASP.NET Core controls.
+Check is there any breaking changes between the syncfusion version you are using and the version you want to upgrade using [upgrade guide](https://help.syncfusion.com/upgrade-guide/aspnet-core-ui-controls) or each version [release notes](https://ej2.syncfusion.com/aspnetcore/documentation/release-notes/index/?type=breaking-changes).
 
 ## Cache problem
 
@@ -48,7 +48,7 @@ Before restoring the NuGet packages, clean the older versions of Syncfusion ASP.
 
 The following steps explain how to clean the cache:
 
-1. Delete the Syncfusion ASP.NET Core NuGet packages from the installed location `{System-driver}\Users\{user-name}\.nuget\packages\`. In Windows, the installed location of Syncfusion ASP.NET Core NuGet packages can be found using `%userprofile%\.nuget\packages\`.
+1. Delete the Syncfusion ASP.NET Core NuGet packages from the installed location `{System-driver}/Users/{user-name}/.nuget/packages/`. In Windows, the installed location of Syncfusion ASP.NET Core NuGet packages can be found using `%userprofile%/.nuget/packages/`.
 
 2. Update the latest version of Syncfusion ASP.NET Core NuGet packages.
 

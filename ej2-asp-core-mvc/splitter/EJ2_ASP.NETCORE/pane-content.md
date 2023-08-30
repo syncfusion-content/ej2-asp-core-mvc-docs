@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pane Content in ##Platform_Name## Splitter Component
+title: Pane Content in ##Platform_Name## Splitter Control | Syncfusion
 description: Learn here all about Pane Content in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pane Content
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pane content
+# Pane content in Splitter Control
 
 This section explains how to provide plain text content or HTML markup or integrate other Syncfusion ASP.NET Core UI controls as content of splitter.
 
@@ -118,4 +118,4 @@ The following code demonstrates how to fetch an element from the document and lo
 
 Output be like the below.
 
-![Selector content](./images/selector-content.png)
+![Selector content](images/selector-content.png)

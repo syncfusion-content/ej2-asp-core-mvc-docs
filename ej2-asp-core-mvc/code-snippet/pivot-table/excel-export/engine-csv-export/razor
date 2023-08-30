@@ -19,6 +19,9 @@
     var pivotObj; var pivotObj2;
     document.getElementById('excel').onclick = function () {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
-        pivotObj.excelExportModule.exportToExcel('csv');
+        var excelExportProperties = {
+            fileName: 'csvexport.csv',
+        };
+        pivotObj.csvExport(excelExportProperties);
     }
 </script>

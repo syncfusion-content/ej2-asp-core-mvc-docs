@@ -1,0 +1,61 @@
+<div class="msg-template-section">
+<div class="msg-content-section">
+@Html.EJS().Button("showBtn").Content("Show pull request").CssClass("e-outline e-primary msg-hidden").Render()
+@Html.EJS().Message("msg_template").Severity(Severity.Success).Created("created").Closed("closed").ContentTemplate(@<div id="template"><h1>Merged pull request</h1><p>Pull request #41 merged after a successful build</p><button id='commitBtn' class='e-control e-btn e-link'>View Commit</button><button id='btn1' class='e-control e-btn e-link'>Dismiss</button></div>).Render()
+</div>
+</div>
+
+<script>
+  document.getElementById("showBtn").onclick = function (e) {
+    var msgTemplate = ej.base.getComponent(document.getElementById("msg_template"), "message");
+    var showBtn = ej.base.getComponent(document.getElementById("showBtn"), "btn");
+    msgTemplate.visible = true;
+    showBtn.element.classList.add("msg-hidden");
+  }
+</script>
+
+<script>
+  function created() {
+    document.getElementById("btn1").onclick = function (e) {
+      var msgTemplate = ej.base.getComponent(document.getElementById("msg_template"), "message");
+      msgTemplate.visible = false;
+    }
+  }
+
+  function closed() {
+    var showBtn = ej.base.getComponent(document.getElementById("showBtn"), "btn");
+    showBtn.element.classList.remove("msg-hidden");
+  }
+  </script>
+
+  <style>
+  .msg-template-section .content-section {
+  margin: 0 auto;
+  max-width: 450px;
+  padding-top: 20px;
+  }
+
+  .msg-template-section .e-btn.msg-hidden {
+  display: none;
+  }
+
+  .msg-template-section .e-message h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  }
+
+  .msg-template-section .e-message .e-msg-icon {
+  padding: 0 4px;
+  margin-top: 3px;
+  }
+
+  .msg-template-section .e-message p {
+  margin: 8px 0 4px;
+  }
+
+  .msg-template-section .e-message .e-btn {
+  padding: 0;
+  }
+  </style>

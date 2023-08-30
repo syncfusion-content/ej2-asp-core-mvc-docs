@@ -58,3 +58,19 @@ Use the following CSS to customize the TimePicker popup content
         font-size: 20px;
 }
 ```
+
+## Full screen mode support in mobiles and tablets
+
+The TimePicker full-screen mode feature enables users to view the popup element in full-screen mode on mobile devices with improved visibility and a better user experience. It is important to mention that this feature is exclusively available for mobile and tablet devices in both landscape and portrait orientations. To activate the full screen mode within the TimePicker, simply set the [FullScreenMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_FullScreenMode) API value to `true`. This action will extend the popup element to occupy the entire screen on mobile devices.
+
+{% if page.publishingplatform == "aspnet-core" %}
+```html
+<ejs-timepicker id="time" FullScreenMode=true></ejs-timepicker>
+```
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+```html
+@Html.EJS().TimePicker("time").FullScreenMode(true).Render()
+```
+{% endif %}
+![TimePickerFullScreen](./images/TimePickerFullScreen.gif)
