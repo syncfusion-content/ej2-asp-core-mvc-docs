@@ -17,7 +17,7 @@ In this sample, the `actionSuccess` event configured and the [`url`](https://hel
 
 But `actionSuccess` event will trigger the handler function with `null` argument values. In handler function data property [`primaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PrimaryKey) value checked, whether it empty or not. If it is empty custom class, added in the `e-value-wrapper` element to customize its styles.
 
-> To send input value to local, set the `url` property as empty.
+N> To send input value to local, set the `url` property as empty.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

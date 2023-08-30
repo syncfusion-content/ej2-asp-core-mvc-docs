@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Numerictextbox Component
+title: Globalization in ##Platform_Name## Numerictextbox Control | Syncfusion
 description: Learn here all about Globalization in Syncfusion ##Platform_Name## Numerictextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Globalization
@@ -9,14 +9,13 @@ documentation: ug
 ---
 
 
-# Globalization
+# Globalization in NumericTextBox Control
 
 ## Internationalization
 
 Internationalization library provides support for formatting and parsing the number by using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data. The NumericTextBox comes with built-in internationalization support to adapt based on culture. For more information about internationalization, refer to this [link](../common/internationalization).
 
-By default, all the Essential JS 2  control are specific to English culture (en-US).
-If you want to go with the different culture other than `English`, follow the below steps.
+By default, all the Essential JS 2  control are specific to English culture (en-US). If you want to go with the different culture other than `English`, follow the below steps.
 
 * Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
 
@@ -24,9 +23,9 @@ If you want to go with the different culture other than `English`, follow the be
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
+Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
-In ASP.NET Core, the static file contents are should present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `\wwwroot\scripts\cldr-data` location as like the below code examples
+In ASP.NET Core, the static file contents are should present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `/wwwroot/scripts/cldr-data` location as like the below code examples
 
 ```typescript
 
@@ -61,6 +60,7 @@ loadCultureFiles('de');
 ## Localization
 
 [Localization](../common/localization/) library allows users to localize the default text contents of the NumericTextBox to different cultures using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Locale) property.
+
 In NumericTextBox, spin buttons title for the tooltip will be localized based on the culture.
 
 | Locale key | en-US (default)  |

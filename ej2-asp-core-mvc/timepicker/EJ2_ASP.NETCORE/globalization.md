@@ -19,15 +19,15 @@ By default, TimePicker time format and meridian names are specific to the `Ameri
 
 To go with the different culture other than `English`, follow the below steps.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data refer the [CLDR-Data](http://cldr.unicode.org/index/cldr-spec/json) link.
+* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data refer the [CLDR-Data](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
 
 ```
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
+Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
-In ASP.NET Core, the static file contents are should present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `\wwwroot\scripts\cldr-data` location as like the below code examples.
+In ASP.NET Core, the static file contents are should present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `/wwwroot/scripts/cldr-data` location as like the below code examples.
 
 ```typescript
 
@@ -88,7 +88,7 @@ The following example demonstrates the TimePicker in `German` culture.
 
 The TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_EnableRtl) property to set the RTL direction.
 
-The following code example demonstrates the TimePicker control in `Arabic` culture. It also explains how to set localized text to the placeholder using [L10n.load](http://ej2.syncfusion.com/documentation/base/api/l10n/) method.
+The following code example demonstrates the TimePicker control in `Arabic` culture. It also explains how to set localized text to the placeholder using [`L10n.load`](https://ej2.syncfusion.com/documentation/api/base/l10n/) method.
 
 The following example demonstrates TimePicker in `Arabic` culture with right-to-left direction.
 

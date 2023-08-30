@@ -15,7 +15,7 @@ DateTime format is a way of representing the date and time value in different st
 
 By default the DateTimePicker's format is based on the culture. You can also set the own custom format by using the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Format) property.
 
-> Once the date format property has been defined it will be common to all the cultures.
+N> Once the date format property has been defined it will be common to all the cultures.
 
 To know more about the date and time format standards, refer to the [`Internationalization Date Time Format`](/common/internationalization/) section.
 

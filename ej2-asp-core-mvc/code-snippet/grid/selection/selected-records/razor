@@ -1,0 +1,20 @@
+@Html.EJS().Button("Button").Content("Clear Selection").CssClass("e-flat").Render()
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowSelection().Columns(col =>
+{
+    col.Type("checkbox").Width("150").Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+
+}).AllowPaging().PageSettings(page => page.PageCount(2)).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).PersistSelection(true)).Render()
+
+<script>
+    document.getElementById('Button').onclick = () => {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        var selectedrecords = grid.getSelectedRecords();
+        var selectedRecordsCount = selectedrecords.length;
+        alert(selectedRecordsCount);
+    }
+</script>
