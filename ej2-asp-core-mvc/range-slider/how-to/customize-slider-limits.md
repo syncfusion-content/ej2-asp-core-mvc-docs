@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Slider Limits in ##Platform_Name## Range Slider Component
+title: Customize Slider Limits in ##Platform_Name## Range Slider Control | Syncfusion
 description: Learn here all about Customize Slider Limits in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Slider Limits
@@ -11,7 +11,9 @@ documentation: ug
 # Customize Slider Limits
 
 Slider appearance can be customized via CSS. By overriding the slider CSS classes, the slider limit bar can be customized.
+
 Here, the limit bar is customized with different background color. By default, the slider has class `e-limits` for limits bar.
+
 You can override the class with our own color values as given in the following code snippet.
 
 ```css

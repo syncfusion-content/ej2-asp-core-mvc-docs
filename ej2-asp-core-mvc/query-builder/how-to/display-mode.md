@@ -38,5 +38,5 @@ Display options allow you to view the Query Builder Vertically or Horizontally. 
 
 
 
-> The default view in the desktop mode is Horizontal.
-> The default view in the mobile mode is Vertical.
+N> The default view in the desktop mode is Horizontal.
+<br/> The default view in the mobile mode is Vertical.

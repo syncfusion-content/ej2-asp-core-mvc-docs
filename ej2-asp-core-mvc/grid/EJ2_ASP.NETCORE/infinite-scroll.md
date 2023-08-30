@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Infinite Scroll in ##Platform_Name## Grid Component
+title: Infinite Scroll in Syncfusion ASP.NET Core Grid Control | Syncfusion
 description: Learn here all about Infinite Scroll in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Infinite Scroll
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Infinite scrolling
+# Infinite scrolling in ASP.NET Core Grid Component
 
 Infinite scrolling is used to load a huge amount of data without degrading the Grid performance. This feature works like the lazy loading concept, which means the buffer data is loaded only when the scrollbar reaches the end of the scroller.
 
 To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 
-> * In this feature, Grid will not make a new data request when you visit the same page again.
+N> * In this feature, Grid will not make a new data request when you visit the same page again.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -110,7 +110,7 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 * Initial loading rows total height must be greater than the viewport height.
 * Cell selection will not be persisted in cache mode.
 * Infinite scrolling is not compatible with batch editing, detail template and hierarchy features.
-* Group expand and collapse state will not be persisted in cache mode.
+* The group records cannot be collapsed in cache mode.
 * The aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the
 [`Group with Page`](./grouping/#Group-with-paging) topic.
 * Programmatic selection using the [`selectRows`](https://ej2.syncfusion.com/documentation/api/grid/#selectrows) and [`selectRow`](https://ej2.syncfusion.com/documentation/api/grid/#selectrow) method is not supported in infinite scrolling.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pie Dough Nut in ##Platform_Name## Accumulation Chart Component
+title: Pie Dough Nut in ##Platform_Name## Accumulation Chart Component | Syncfusion
 description: Learn here all about Pie Dough Nut in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pie Dough Nut
@@ -187,7 +187,7 @@ You can customize the start and end angle of the pie series using the [`startAng
 
 ## Color & Text Mapping
 
-The fill color and the text in the data source can be mapped to the chart using `pointColorMapping` in series and `name` in datalabel respectively.
+The fill color and the text in the data source can be mapped to the chart using [pointColorMapping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_PointColorMapping) in series and `name` in datalabel respectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,0 +1,13 @@
+<div style="height:400px;">
+    <ejs-button id="promptBtn" content="Prompt" isPrimary="true"></ejs-button>
+</div>
+<script>
+    document.getElementById('promptBtn').onclick = function () {
+        ej.popups.DialogUtility.confirm({
+            title: "Join Wi-Fi network",
+            content: "<table class=Table><tbody><tr><td>SSID: <b>AndroidAP</b></td></tr><tr> <td>Password:</td> </tr> <tr> <td> <span class=e - input - group> <input type=password id=password name=Required class=e - input> </span> </td> </tr> </tbody> </table>",
+            okButton: { text: "Connect" },
+            cancelButton: { text: "Close" }
+        });
+    };
+</script>

@@ -1,0 +1,25 @@
+<div class="msg-default">
+  <div id="msg" class="e-message" role="alert">
+    <span class="e-msg-icon"></span>
+    <div class="e-msg-content">Please read the comments carefully</div>
+  </div>
+</div>
+<style>
+.msg-custom-section .content-section {
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top: 10px;
+}
+
+.msg-custom-section .e-message {
+  margin: 10px 0;
+}
+
+.msg-custom-section .e-message.rounded {
+  border-radius: 5px;
+}
+
+.msg-custom-section .e-message.square {
+  border-radius: 1px;
+}
+</style>

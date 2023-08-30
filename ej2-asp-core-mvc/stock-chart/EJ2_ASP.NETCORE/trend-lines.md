@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trend Lines in ##Platform_Name## Stock Chart Component
+title: Trend Lines in ##Platform_Name## Stock Chart Control | Syncfusion
 description: Learn here all about Trend Lines in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Trend Lines
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Trendlines
+# Trendlines in Stock Chart Control
 
 Trendlines are used to show the direction and speed of price.
 
@@ -22,27 +22,31 @@ A linear trendline is a best fit straight line that is used with simpler data se
 ## Exponential
 
 An exponential trendline is a curved line that is most useful when data values rise or fall at increasingly higher rates. You cannot create an exponential trendline, if your data contains zero or negative values.
+
 To render a exponential trendline, use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `Exponential`.
 
 ## Logarithmic
 
 A logarithmic trendline is a best-fit curved line that is most useful when the rate of change in the data increases or decreases quickly and then levels out. A logarithmic trendline can use negative and/or positive values.
+
 To render a logarithmic trendline, use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `Logarithmic`.
 
 ## Polynomial
 
 A polynomial trendline is a curved line that is used when data fluctuates.
-To render a polynomial trendline, use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `Polynomial`.
-`polynomialOrder` used to define the polynomial value.
+
+To render a polynomial trendline, use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `Polynomial`. `polynomialOrder` used to define the polynomial value.
 
 ## Power
 
 A power trendline is a curved line that is best used with data sets that compare measurements that increase at a specific rate.
+
 To render a power trendline, use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `Power`.
 
 ## Moving Average
 
 A moving average trendline smoothen out fluctuations in data to show a pattern or trend more clearly.
+
 To render a moving average trendline, use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `MovingAverage`.
 
 `period` property defines the period to find the moving average.

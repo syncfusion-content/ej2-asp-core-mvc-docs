@@ -1,0 +1,60 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Maps
+
+@{
+    var data = new[]
+    {
+        new { latitude = 49.95121990866204, longitude = 18.468749999999998, name= "MarkerOne" },
+        new { latitude = 59.88893689676585, longitude = -109.3359375, name="MarkerTwo"},
+        new { latitude = -6.64607562172573, longitude = -55.54687499999999 , name="MarkerThree"},
+        new { latitude = 23.644385824912135, longitude= 77.83189239539234  , name= "MarkerFour"},
+        new { latitude = 63.66569332894224, longitude= 98.2225173953924 , name= "MarkerFive"}
+    };
+    var border = new MapsBorder
+            {
+                Color = "#285255",
+                Width = 2,
+                Opacity = 1
+            };
+}
+
+@Html.EJS().Maps("container").MarkerDragEnd("markerDragEnd").MarkerDragStart("markerDragStart").LegendSettings(legend => legend.Visible(true).Type(LegendType.Markers).ShapeBorder(shb => shb.Color("#285255").Width(2))).Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+         {
+                    new Syncfusion.EJ2.Maps.MapsLayer
+                    {
+                        ShapeData = ViewBag.world_map,
+                        ShapeSettings = new MapsShapeSettings {
+                            Fill="#C3E6ED"
+                        },
+                        MarkerSettings  = new List<Syncfusion.EJ2.Maps.MapsMarker>
+                        {
+                            new Syncfusion.EJ2.Maps.MapsMarker
+                            {
+                                Visible = true,
+                                LegendText="name",
+                                EnableDrag = true,
+                                AnimationDuration= 0,
+                                Shape= MarkerType.Balloon,
+                                Border = border,
+                                TooltipSettings = new MapsTooltipSettings {
+                                    Visible = true,
+                                    ValuePath = "name"
+                                },
+                                Width= 20,
+                                Height= 20,
+                                DataSource = data
+                            }
+                        }}}).Render()
+
+<script>
+    function markerDragStart(args){
+        // When the marker begins to move on the map, the event is triggered.
+    }
+
+    function markerDragEnd(args) {
+        // When the marker on the map stops dragging, the event is triggered.
+        var mapsInstance = document.getElementById('container').ej2_instances[0];
+        mapsInstance.layers[args.layerIndex].markerSettings[args.markerIndex].dataSource[args.dataIndex].name = 'Dragged Marker ' + (args.dataIndex + 1);
+        mapsInstance.refresh();
+    }
+</script>

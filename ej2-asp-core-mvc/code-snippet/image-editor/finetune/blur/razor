@@ -1,0 +1,59 @@
+<div class="col-lg-12 control-section e-img-editor-sample">
+    @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { }).Render()
+</div>
+@Html.EJS().Button("blurClick").CssClass("e-primary").Content("Blur").Click("blurClick").Render()
+@Html.EJS().Button("exposureClick").CssClass("e-primary").Content("Exposure").Click("exposureClick").Render()
+@Html.EJS().Button("hueClick").CssClass("e-primary").Content("Hue").Click("hueClick").Render()
+@Html.EJS().Button("opacityClick").CssClass("e-primary").Content("Opacity").Click("opacityClick").Render()
+
+<script>
+    function created() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        if (ej.base.Browser.isDevice) {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+        } else {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+        }
+    }
+
+    function blurClick() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imgObj.finetuneImage(ej.imageeditor.ImageFinetuneOption.Blur, 10)
+    }
+    function exposureClick() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imgObj.finetuneImage(ej.imageeditor.ImageFinetuneOption.Exposure, 10);
+    }
+
+    function hueClick() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imgObj.finetuneImage(ej.imageeditor.ImageFinetuneOption.Hue, 10)
+    }
+    function opacityClick() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imgObj.finetuneImage(ej.imageeditor.ImageFinetuneOption.Opacity, 10);
+    }
+
+</script>
+
+<style>
+    .image-editor {
+        margin: 0 auto;
+    }
+
+    .e-img-editor-sample {
+        height: 80vh;
+        width: 100%;
+    }
+
+    @@media only screen and (max-width: 700px) {
+        .e-img-editor-sample {
+            height: 75vh;
+            width: 100%;
+        }
+    }
+
+    .control-wrapper {
+        height: 100%;
+    }
+</style>

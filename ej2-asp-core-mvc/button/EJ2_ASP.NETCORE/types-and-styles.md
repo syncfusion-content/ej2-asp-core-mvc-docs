@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Types And Styles in ##Platform_Name## Button Component
-description: Learn here all about Types And Styles in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
+title: Types And Styles in ##Platform_Name## Button Control | Syncfusion
+description: Learn here all about Types And Styles in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types And Styles
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Types and Styles
+# Types and Styles in Button Control
 
 This section explains the different styles and types of Buttons.
 
 ## Button styles
 
-The Essential JS 2 Button has the following predefined styles that can be defined using the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property.
+The Essential JS 2 Button has the following predefined styles that can be defined using the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property.
 
 | Class | Description |
 | -------- | -------- |
@@ -32,9 +32,6 @@ The Essential JS 2 Button has the following predefined styles that can be define
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/styles/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Styles.cs" %}
-{% include code-snippet/button/styles/styles.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -49,9 +46,9 @@ The Essential JS 2 Button has the following predefined styles that can be define
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core Button styles](images/button-with-different-style.png)
 
-
-> Predefined Button styles provide only the visual indication. So, Button content should define the Button style for the users of assistive technologies such as screen readers.
+N> Predefined Button styles provide only the visual indication. So, Button content should define the Button style for the users of assistive technologies such as screen readers.
 
 ## Button types
 
@@ -81,9 +78,6 @@ In the following sample, `type` attribute of the Submit button is set using tag 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/types/basic/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Basicbutton.cs" %}
-{% include code-snippet/button/types/basic/basicbutton.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -98,28 +92,25 @@ In the following sample, `type` attribute of the Submit button is set using tag 
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core Button](images/button-basic-type.png)
 
 ### Flat Button
 
-The Flat Button is styled with no background color. To create a flat Button, set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-flat`.
+The Flat Button is styled with no background color. To create a flat Button, set the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-flat`.
 
 ### Outline Button
 
-An outline Button has a border with transparent background. To create an outline Button, set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-outline`.
+An outline Button has a border with transparent background. To create an outline Button, set the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-outline`.
 
 ### Round Button
 
-A round Button is shaped like a circle. Usually, it contains an icon representing its action. To create a round Button, set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-round`.
+A round Button is shaped like a circle. Usually, it contains an icon representing its action. To create a round Button, set the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-round`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/types/other-types/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Buttontypes.cs" %}
-{% include code-snippet/button/types/other-types/buttontypes.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,20 +126,17 @@ A round Button is shaped like a circle. Usually, it contains an icon representin
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core Button types](images/button-types.png)
 
 ### Toggle Button
 
-A toggle Button allows you to change between the two states. The Button is active in toggled state and can be recognized through the `e-active` class. The functionality of the toggle Button is handled by click event. To create a toggle Button, set the [`isToggle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IsToggle) property to `true`. In the following code snippet, the toggle Button text changes to play/pause based on the state of the Button with the use of click event.
+A toggle Button allows you to change between the two states. The Button is active in toggled state and can be recognized through the `e-active` class. The functionality of the toggle Button is handled by click event. To create a toggle Button, set the [isToggle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IsToggle) property to `true`. In the following code snippet, the toggle Button text changes to play/pause based on the state of the Button with the use of click event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/toggle/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Togglebutton.cs" %}
-{% include code-snippet/button/toggle/togglebutton.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -164,22 +152,19 @@ A toggle Button allows you to change between the two states. The Button is activ
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core Toggle Button](images/toggle-button.png)
 
 ## Icons
 
 ### Button with font icons
 
-The Button can have an icon to provide the visual representation of the action. To place the icon on a Button, set the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the Button. You can customize the icon's position by using the [`iconPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconPosition) property.
+The Button can have an icon to provide the visual representation of the action. To place the icon on a Button, set the [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the Button. You can customize the icon's position by using the [iconPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconPosition) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/icon/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Buttonicon.cs" %}
-{% include code-snippet/button/icon/buttonicon.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -195,13 +180,13 @@ The Button can have an icon to provide the visual representation of the action. 
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core Button with font icons](images/button-icon.png)
 
-
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property.
+N> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property.
 
 ### Button with SVG image
 
-SVG image can be added to the Button using [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property.
+SVG image can be added to the Button using [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property.
 
 In the following example, SVG image is added using the iconCss class `e-search-icon` by setting `height` and `width` property.
 
@@ -210,9 +195,6 @@ In the following example, SVG image is added using the iconCss class `e-search-i
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/svg/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Buttonsvg.cs" %}
-{% include code-snippet/button/svg/buttonsvg.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -228,20 +210,17 @@ In the following example, SVG image is added using the iconCss class `e-search-i
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core Button with SVG image](images/button-svg.png)
 
 ## Button size
 
-The two types of Button sizes are default and small. To change the size of the default Button to small Button, set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-small`.
+The two types of Button sizes are default and small. To change the size of the default Button to small Button, set the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-small`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/size/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Size.cs" %}
-{% include code-snippet/button/size/size.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -257,9 +236,11 @@ The two types of Button sizes are default and small. To change the size of the d
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core Button size](images/button-size.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonUGSample).
 
-## See Also
+## See also
 
 * [Customize Button appearance](./how-to/customize-button-appearance)
 * [How to create block button](./how-to/create-a-block-button)

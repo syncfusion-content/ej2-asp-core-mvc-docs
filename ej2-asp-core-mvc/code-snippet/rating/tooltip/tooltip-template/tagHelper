@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-rating id="rating" value=4 tooltipTemplate="#template"></ejs-rating>
+
+<script id="template" type="text/x-jsrender">
+    ${if(value==1)}
+    <b>Angry</b>${else if(value==2)}
+    <b>Sad</b>${else if(value==3)}
+    <b>Neutral</b>${else if(value==4)}
+    <b>Good</b>${else}
+    <b>Happy</b>
+    ${/if}
+</script>

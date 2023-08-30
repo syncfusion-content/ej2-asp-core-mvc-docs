@@ -44,7 +44,7 @@ The [ASP.NET Core Slider](https://www.syncfusion.com/aspnet-core-ui-controls/ran
 
 The Slider value can be changed by using the Increase and Decrease buttons. In Range Slider, by default the first handle value will be changed while clicking the button. Change the handle focus and press the button to change the last focused handle value.
 
-> After enabling the slider buttons if the 'Tab' key is pressed, the focus goes to the handle
+N> After enabling the slider buttons if the 'Tab' key is pressed, the focus goes to the handle
 and not to the button.
 
 {% if page.publishingplatform == "aspnet-core" %}

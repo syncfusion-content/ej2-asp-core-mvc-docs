@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Schedule
 
-<ejs-schedule id="schedule" height="650px" selectedDate="new DateTime(2018, 2, 15)" allowDragAndDrop="false" allowResizing="false">
+<ejs-schedule id="schedule" height="650px" selectedDate="new DateTime(2023, 2, 15)" allowDragAndDrop="false" allowResizing="false">
     <e-schedule-eventsettings dataSource="@ViewBag.appointments"></e-schedule-eventsettings>
 </ejs-schedule>
 
@@ -44,6 +44,8 @@
             ej.base.remove(newEventElement);
             ej.base.removeClass([document.querySelector('.e-selected-cell')], 'e-selected-cell');
         }
+        var scheduleObj = document.querySelector(".e-schedule").ej2_instances[0];
+        scheduleObj.closeQuickInfoPopup();
         var targetElement = args.event.target;
         if (ej.base.closest(targetElement, '.e-contextmenu')) {
             return;
@@ -55,7 +57,6 @@
             return;
         }
         if (selectedTarget.classList.contains('e-appointment')) {
-            var scheduleObj = document.querySelector(".e-schedule").ej2_instances[0];
             var eventObj = scheduleObj.getEventDetails(selectedTarget);
             if (eventObj.RecurrenceRule) {
                 this.showItems(['EditRecurrenceEvent', 'DeleteRecurrenceEvent'], true);

@@ -91,6 +91,7 @@
                     placeholder: 'Select a owner',
                     dataSource: ownerData,
                     fields: { text: 'text', value: 'id' },
+                    value: (args.data.OwnerId instanceof Array) ? args.data.OwnerId : [args.data.OwnerId]
                 });
                 multiSelectObject.appendTo(processElement);
             }

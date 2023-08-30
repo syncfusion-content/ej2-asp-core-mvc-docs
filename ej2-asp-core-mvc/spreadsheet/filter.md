@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter in ##Platform_Name## Spreadsheet Component
+title: Filter in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Filter in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filter
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Filtering
+# Filtering in Spreadsheet control
 
 Filtering helps you to view specific rows in the spreadsheet by hiding the other rows. You can use the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowFiltering) property to enable or disable filtering functionality.
 
-> * The default value for `allowFiltering` property is `true`.
+N> * The default value for `allowFiltering` property is `true`.
 
 By default, the `filter` module is injected internally into Spreadsheet to perform filtering.
 
@@ -26,14 +26,14 @@ In the active Spreadsheet, select a range of cells to filter by value of the cel
 * Use the `applyFilter()` method programmatically.
 * Use `Ctrl + Shift + L` keyboard shortcut to apply the filter.
 
-> * Use `Alt + Up/Down` keyboard shortcut to open the filter dialog.
+N> * Use `Alt + Up/Down` keyboard shortcut to open the filter dialog.
 
 ## Filter by criteria
 
-The [`applyFilter()`](../api/spreadsheet/#applyfilter) method will apply the filter UI, based on the predicate and range given in the arguments.
+The `applyFilter()` method will apply the filter UI, based on the predicate and range given in the arguments.
 
-> * The `beforeFilter` event will be triggered before filtering the specified range.
-> * The `filterComplete` event will be triggered after the filter action is completed successfully.
+N> * The `beforeFilter` event will be triggered before filtering the specified range.
+<br/> * The `filterComplete` event will be triggered after the filter action is completed successfully.
 
 The following code example shows `filter` functionality in the Spreadsheet control.
 

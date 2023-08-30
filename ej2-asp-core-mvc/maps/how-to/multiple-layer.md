@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple Layer in ##Platform_Name## Maps Component
+title: Multiple Layer in Syncfusion ##Platform_Name## Maps Component
 description: Learn here all about Multiple Layer in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Multiple Layer

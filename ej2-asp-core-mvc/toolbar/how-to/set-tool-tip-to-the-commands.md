@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set Tool Tip To The Commands in ##Platform_Name## Toolbar Component
+title: Set Tool Tip To The Commands in ##Platform_Name## Toolbar Component | Syncfusion
 description: Learn here all about Set Tool Tip To The Commands in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set Tool Tip To The Commands

@@ -1,5 +1,5 @@
 <div id="documenteditor" style="width:100%;height:100%">
-<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableSfdtExport=true id="DocumentEditor"></ejs-documenteditor>    
+    <ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableSfdtExport=true id="DocumentEditor"></ejs-documenteditor>    
 </div>
 <script>
     var documenteditor;
@@ -16,6 +16,5 @@
                 args.isHandled = true;
             }
         };
-
     });    
 </script>

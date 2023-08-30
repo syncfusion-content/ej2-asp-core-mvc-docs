@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons Support in ##Platform_Name## Combo Box Component
+title: Icons Support in ##Platform_Name## Combo Box Control | Syncfusion
 description: Learn here all about Icons Support in Syncfusion ##Platform_Name## Combo Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons Support
@@ -22,7 +22,12 @@ In the following sample, icon classes are mapped with `iconCss` field.
 {% include code-snippet/combobox/how-to/icons/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SocialMedia.cs" %}
-{% include code-snippet/combobox/how-to/icons/SocialMedia.cs %}
+public class SocialMedia
+{
+    public string Class { get; set; }
+    public string SocialMediaName { get; set; }
+    public string Id { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,3 +43,4 @@ In the following sample, icon classes are mapped with `iconCss` field.
 {% endtabs %}
 {% endif %}
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/ComboBoxHowToSample).
