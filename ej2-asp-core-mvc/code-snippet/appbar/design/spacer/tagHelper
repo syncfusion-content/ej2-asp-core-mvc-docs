@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Navigations;
+
+<ejs-appbar id="defaultAppBar" colorMode="Primary">
+    <e-content-template>
+        <ejs-button id="defaultButtonHome" cssClass="e-inherit" iconCss="e-icons e-home"></ejs-button>
+        <div class="e-appbar-spacer"></div>
+        <ejs-button id="defaultButtonCut" cssClass="e-inherit" iconCss="e-icons e-cut"></ejs-button>
+        <div class="e-appbar-spacer"></div>
+        <ejs-button id="defaultButtonPan" cssClass="e-inherit" iconCss="e-icons e-pan"></ejs-button>
+    </e-content-template>
+</ejs-appbar>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Infinite Scroll in ##Platform_Name## Tree Grid Component
+title: Infinite Scroll in Syncfusion ##Platform_Name## Tree Grid Component
 description: Learn here all about Infinite Scroll in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Infinite Scroll
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Infinite scrolling
+# Tree Grid Infinite scrolling
 
 Infinite scrolling is used to load a huge amount of data without degrading the Tree Grid performance. This feature works like the lazy loading concept, which means the buffer data is loaded only when the scrollbar reaches the end of the scroller.
 
 To use Infinite scrolling, set `EnableInfiniteScrolling` property as true.
 
-> * In this feature, Tree Grid will not make a new data request when you visit the same page again.
+N> * In this feature, Tree Grid will not make a new data request when you visit the same page again.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -109,8 +109,8 @@ To enable the cache mode in Infinite scrolling, set `EnableCache` property of `I
 * Due to the element height limitation in browsers, the maximum number of records loaded by the tree grid is limited due to the browser capability.
 * Initial loading rows total height must be greater than the viewport height.
 * Cell selection will not be persisted in cache mode.
-* Infinite scrolling is not compatible with batch editing, detail template and hierarchy features.
+* Infinite scrolling is not compatible with batch editing, cell editing, detail template and hierarchy features.
 * The aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the
 * Programmatic selection using the [`selectRows`](../api/treegrid/#selectrows) and [`selectRow`](../api/treegrid/#selectrow) method is not supported in infinite scrolling.
 
-> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigations and Indicators in ##Platform_Name## Carousel Control
+title: Navigations in Syncfusion ##Platform_Name## Carousel Control
 description: Checkout and learn about Navigations and Indicators in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Navigations and Indicators
@@ -28,12 +28,9 @@ The following example depicts the code to hide the navigators in the carousel.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/hidden/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/hidden/hidden.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel hidden navigators](../images/navigators_hidden.png)
+![Carousel hidden navigators](images/navigators_hidden.png)
 
 ### Show previous and next button on hover
 
@@ -43,12 +40,9 @@ In the carousel, you can show the previous and next buttons only on mouse hover 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/visible-hover/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/visible-hover/visible-hover.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel visible on hover navigators](../images/navigators_onhover.gif)
+![Carousel visible on hover navigators](images/navigators_onhover.gif)
 
 ### Previous and next button template
 
@@ -58,12 +52,9 @@ Template options are provided to customize the previous button using [previousBu
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/button-template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/button-template/button-template.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel navigators template](../images/navigators_template.png)
+![Carousel navigators template](images/navigators_template.png)
 
 ## Indicators
 
@@ -75,12 +66,9 @@ In indicators, the total slides and current slide state have been depicted. You 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/show-indicators/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/show-indicators/show-indicators.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel hidden indicators](../images/hidden_indicators.png)
+![Carousel hidden indicators](images/hidden_indicators.png)
 
 ### Indicators template
 
@@ -90,12 +78,9 @@ Template option is provided to customize the indicators by using the [indicators
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/indicator-template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/indicator-template/indicator-template.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel indicators template](../images/indicators_template.png)
+![Carousel indicators template](images/indicators_template.png)
 
 ### Showing preview of slide in indicator
 
@@ -105,12 +90,65 @@ You can customize the indicators by showing the preview image of each slide usin
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/indicator-preview/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/indicator-preview/indicator-preview.cs %}
+{% endtabs %}
+
+![Carousel indicators template preview](images/indicators_preview.png)
+
+### Indicators Types
+
+Choose different types of indicators available using the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) property. The indicator types are categorized as follows:
+
+* [Default Indicator](#default-indicator)
+* [Dynamic Indicator](#dynamic-indicator)
+* [Fraction Indicator](#fraction-indicator)
+* [Progress Indicator](#progress-indicator)
+
+#### Default Indicator
+
+A default indicator in a carousel is a set of dots that indicate the current position of the slide in the carousel. The Default indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Default`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel indicators template preview](../images/indicators_preview.png)
+![Carousel indicators type default](images/indicator-type-default.gif)
+#### Dynamic Indicator
+
+A dynamic indicator in a carousel provides visual cues or markers that dynamically change or update to indicate the current position. The Dynamic indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Dynamic`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type-dynamic/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel indicators type dynamic](images/indicator-type-dynamic.gif)
+
+#### Fraction Indicator
+
+The fraction indicator type displays the current slide index and total slide count as a fraction. The Fraction indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Fraction`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type-fraction/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel indicators type fraction](images/indicator-type-fraction.gif)
+
+#### Progress Indicator
+
+The Progress Indicator type displays the current slide as a progress bar. The Progress indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Progress`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type-progress/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel indicators type progress](images/indicator-type-progress.gif)
 
 ## Play button
 
@@ -122,12 +160,65 @@ In the carousel, [autoPlay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/play-button/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/play-button/play-button.cs %}
+{% endtabs %}
+
+![Carousel play button](images/play_button.png)
+
+### Indicators Types
+
+Choose different types of indicators available using the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) property. The indicator types are categorized as follows:
+
+* [Default Indicator](#default-indicator)
+* [Dynamic Indicator](#dynamic-indicator)
+* [Fraction Indicator](#fraction-indicator)
+* [Progress Indicator](#progress-indicator)
+
+#### Default Indicator
+
+A default indicator in a carousel is a set of dots that indicate the current position of the slide in the carousel. The Default indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Default`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel play button](../images/play_button.png)
+![Carousel indicators type default](images/indicator-type-default.gif)
+#### Dynamic Indicator
+
+A dynamic indicator in a carousel provides visual cues or markers that dynamically change or update to indicate the current position. The Dynamic indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Dynamic`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type-dynamic/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel indicators type dynamic](images/indicator-type-dynamic.gif)
+
+#### Fraction Indicator
+
+The fraction indicator type displays the current slide index and total slide count as a fraction. The Fraction indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Fraction`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type-fraction/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel indicators type fraction](images/indicator-type-fraction.gif)
+
+#### Progress Indicator
+
+The Progress Indicator type displays the current slide as a progress bar. The Progress indicator can be achieved by setting the [`indicatorsType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsType) to `Progress`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-type-progress/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel indicators type progress](images/indicator-type-progress.gif)
 
 ### Play button template
 
@@ -137,9 +228,8 @@ Template option is provided to customize the play button by using the [playButto
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/navigators/play-button-template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/play-button-template/play-button-template.cs %}
-{% endhighlight %}
 {% endtabs %}
 
-![Carousel play button template](../images/play_button_template.png)
+![Carousel play button template](images/play_button_template.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/NavigatorandIndicatorSample).

@@ -1,0 +1,50 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-rating id="rating" value=4 enableAnimation=false emptyTemplate='<svg width="35" height="25" class="e-rating-svg-icon">
+        <rect width="35" height="25" fill="transparent" style="stroke-width:2;stroke:rgb(173,181,189)"/>
+    </svg>' fullTemplate='<svg width="35" height="25" class="e-rating-svg-icon">
+        <defs>
+            <linearGradient id="grad${index}" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop class="start" offset="0%" />
+                <stop class="end" offset="100%" />
+            </linearGradient>
+        </defs>
+        <rect width="35" height="25" fill="url(#grad${index})" style="stroke-width:2;stroke:rgb(173,181,189)"/>
+    </svg>'>
+</ejs-rating>
+
+<style>
+    /* To change the size between items */
+    .e-rating-container .e-rating-item-container {
+        padding: 0px;
+    }
+
+    /* To set the gradient color */
+    .e-rating-svg-icon #grad0 .start {
+        stop-color: #FF0000;
+    }
+
+    .e-rating-svg-icon #grad0 .end,
+    .e-rating-svg-icon #grad1 .start {
+        stop-color: #ff5101;
+    }
+
+    .e-rating-svg-icon #grad1 .end,
+    .e-rating-svg-icon #grad2 .start {
+        stop-color: #ffc801;
+    }
+
+    .e-rating-svg-icon #grad2 .end,
+    .e-rating-svg-icon #grad3 .start {
+        stop-color: #dbe300;
+    }
+
+    .e-rating-svg-icon #grad3 .end,
+    .e-rating-svg-icon #grad4 .start {
+        stop-color: #8bc301;
+    }
+
+    .e-rating-svg-icon #grad4 .end {
+        stop-color: #4eaa01;
+    }
+</style>

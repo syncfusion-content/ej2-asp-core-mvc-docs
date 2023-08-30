@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tool Bar in ##Platform_Name## Grid Component
+title: Tool Bar in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Tool Bar in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tool Bar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# ToolBar
+# ToolBar in ASP.NET MVC Grid Component
 
 The Grid provides ToolBar support to handle grid actions. The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property accepts either the collection of built-in toolbar items and **ItemModel** objects for custom toolbar items or HTML element ID for toolbar template.
 
@@ -40,3 +40,29 @@ You can enable/disable toolbar items by using the **enableItems** method.
 {% endtabs %}
 {% endif %}
 
+## Add toolbar at the bottom of Grid
+
+You can add the Grid toolbar component at the bottom of Grid using the [Created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/toolbar/toolbar-bottom/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Toolbar-bottom.cs" %}
+{% include code-snippet/grid/toolbar/toolbar-bottom/toolbar-bottom.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/toolbar/toolbar-bottom/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Toolbar-bottom.cs" %}
+{% include code-snippet/grid/toolbar/toolbar-bottom/toolbar-bottom.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

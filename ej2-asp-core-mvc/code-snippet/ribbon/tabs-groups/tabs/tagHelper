@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+        </e-ribbon-tab>
+        <e-ribbon-tab header="Insert">
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>

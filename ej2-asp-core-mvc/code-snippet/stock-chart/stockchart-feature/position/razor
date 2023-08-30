@@ -1,0 +1,13 @@
+<script src="stock-chart/stockchart-feature/position/financialdata.js"></script>
+
+@(Html.EJS().StockChart("container").Load("stockload").Title("AAPL Stock Price")
+        .Series(sr =>
+        {
+            sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).DataSource("data").Add();
+        })
+        .Tooltip(tp => tp.Enable(true).Shared(true).Position("Nearest"))
+        .Render())
+
+    <script>
+        var data = window.chartData;
+    </script>

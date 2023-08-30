@@ -1,0 +1,43 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.Datasource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Type("string").Add();
+    col.Field("Freight").HeaderText("Freight").Type("number").Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCity").HeaderText("ShipCity").Type("string").Width("150").Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Add();
+
+}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+    var multiselectDatasource = [
+        { ShipCity: 'Berlin', Id: '1' },
+        { ShipCity: 'Madrid', Id: '2' },
+        { ShipCity: 'Cholchester', Id: '3' },
+        { ShipCity: 'Marseille', Id: '4' },
+        { ShipCity: 'Tsawassen', Id: '5' },
+    ];
+    var multiSelectObj;
+    var element
+    function create(args) {
+        element = document.createElement('input');
+        return element;
+    }
+    function read(e) {
+        return multiSelectObj.value.join(',');
+    }
+    function destroy() {
+        multiSelectObj.destroy();
+    }
+    function write(args) {
+        let multiSelectVal = args.rowData[args.column.field]
+            ? args.rowData[args.column.field].split(',')
+            : [];
+        multiSelectObj = new ej.dropdowns.MultiSelect({
+            value: multiSelectVal,
+            dataSource: multiselectDatasource,
+            fields: { value: 'ShipCity', text: 'ShipCity' },
+            floatLabelType: 'Never',
+            mode: 'Box',
+        });
+        multiSelectObj.appendTo(element);
+    }
+</script>

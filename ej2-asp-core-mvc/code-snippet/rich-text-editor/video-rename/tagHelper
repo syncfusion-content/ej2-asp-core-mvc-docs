@@ -1,0 +1,15 @@
+<ejs-richtexteditor id="editor" fileUploadSuccess="onFileUploadSuccess">
+    <e-richtexteditor-insertvideosettings saveUrl="/Home/Rename" path="./Uploads/"></e-richtexteditor-insertvideosettings>
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>
+
+<script>
+    function onFileUploadSuccess(args) {
+        if (args.e.currentTarget.getResponseHeader('name') != null) {
+            args.file.name = args.e.currentTarget.getResponseHeader('name');
+            var filename = document.querySelectorAll(".e-file-name")[0];
+            filename.innerHTML = args.file.name.replace(document.querySelectorAll(".e-file-type")[0].innerHTML, '');
+            filename.title = args.file.name;
+        }
+    }
+</script>

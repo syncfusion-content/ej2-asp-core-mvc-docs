@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.Buttons
+
+@{
+    List<SpeedDialItem> items = new List<SpeedDialItem>();
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-cut"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-copy"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-paste"
+    });
+}
+
+<ejs-speeddial id="speeddial" modal=true items="items" openIconCss="e-icons e-edit" position="BottomRight"></ejs-speeddial>

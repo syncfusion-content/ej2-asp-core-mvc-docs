@@ -78,7 +78,7 @@ Users can also view the underlying raw data though the pivot chart. By clicking 
 
 ## Maximum rows to retrieve
 
-> This property is applicable only for OLAP data sources.
+N> This property is applicable only for OLAP data sources.
 
 The [`maxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MaxRowsInDrillThrough) property allows to specify the maximum number of raw data to be returned during the drill through process. By default, this property is set to **"10000"** meaning that if you do not specify this property, you will get 10,000 or less raw data.
 
