@@ -18,7 +18,7 @@
     });
 
     function loadCultureFiles(name) {
-        var files = ['ca-gregorian.json', 'numbers.json', 'timeZoneNames.json'];
+        var files = ['ca-gregorian.json', 'numbers.json', 'timeZoneNames.json', 'weekData.json'];
         if (name === 'ar') {
             files.push('numberingSystems.json');
         }
