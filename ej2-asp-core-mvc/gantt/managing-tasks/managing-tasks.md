@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Tasks in ##Platform_Name## Gantt Component
+title: Managing Tasks in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Managing Tasks in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Managing Tasks
@@ -37,6 +37,39 @@ The following code example shows you how to enable the cell editing in Gantt con
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## Read-only Gantt
+
+In Gantt, all create, update, delete operations can be disabled by setting `readOnly` property as `true`. The following sample demonstrates, render Gantt chart as read only.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/readOnly/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ReadOnly.cs" %}
+{% include code-snippet/gantt/editing/readOnly/readOnly.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/readOnly/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ReadOnly.cs" %}
+{% include code-snippet/gantt/editing/readOnly/readOnly.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/readOnly.PNG)
+
+![Alt text](images/readOnlyEdit.png)
 
 ## Troubleshoot: Editing works only when primary key column is defined
 

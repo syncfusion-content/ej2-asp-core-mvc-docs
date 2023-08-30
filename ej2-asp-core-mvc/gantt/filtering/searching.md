@@ -73,7 +73,7 @@ In the Gantt control, you can load a task with some search criteria and this can
 
 ![Alt text](images/initialLoadSearch.png)
 
-> By default, Gantt searches all the bound column values. To customize this behaviour, define the [`SearchSettings.Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Fields.html) property.
+N> By default, Gantt searches all the bound column values. To customize this behavior, define the [`SearchSettings.Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Fields.html) property.
 
 ## Search operators
 
@@ -89,7 +89,7 @@ The following operators are supported in searching:
 |equal |Checks whether a value is equal to the specified value.|
 |notEqual |Checks for the values that are not equal to the specified value.|
 
-> By default, the [`SearchSettings.Operator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Operator.html) value is `contains`.
+N> By default, the [`SearchSettings.Operator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Operator.html) value is `contains`.
 
 ## Search by external button
 
@@ -149,7 +149,7 @@ By default, the Gantt control searches all the columns. You can search specific 
 
 
 
-> In above sample, you can search only `TaskName` and `Duration` column values.
+N> In above sample, you can search only `TaskName` and `Duration` column values.
 
 ## Clear search by external button
 

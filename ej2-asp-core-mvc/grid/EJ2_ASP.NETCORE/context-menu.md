@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu in Syncfusion ##Platform_Name## Grid Component
+title: Context Menu in Syncfusion ##Platform_Name## Grid Control
 description: Learn here all about Context Menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Context Menu
@@ -63,8 +63,7 @@ Items| Description
 
 ## Custom context menu items
 
-The custom context menu items can be added by defining the [`contextMenuItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuItems) as a collection of **ContextMenuItemModel**.
-Actions for this customized items can be defined in the [`contextMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event.
+The custom context menu items can be added by defining the [`contextMenuItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuItems) as a collection of **ContextMenuItemModel**. Actions for this customized items can be defined in the [`contextMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -91,7 +90,7 @@ Actions for this customized items can be defined in the [`contextMenuClick`](htt
 
 
 
-> You can hide or show an item in context menu for specific area inside of grid by defining the **Target** property.
+N> You can hide or show an item in context menu for specific area inside of grid by defining the **Target** property.
 
 ## Show context menu on left click
 
@@ -120,6 +119,36 @@ This is demonstrated in the following sample.
 {% endhighlight %}
 {% highlight c# tabtitle="Contextmenuclick.cs" %}
 {% include code-snippet/grid/context-menu/contextmenuclick/contextmenuclick.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+## Enable or disable context menu items
+
+It is possible to enable or disable the default and custom context menu items in the Grid component. This is achieved by using the `enableItems` method of the ContextMenu. To enable or disable menu items, set the `enable` parameter in the `enableItems` method to true, and vice versa.
+
+In the following sample, the Copy item is enabled or disabled based on some condition (as per the needs of the application) in the [RowSelected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowSelected) event of the Grid.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/context-menu/enablecontextmenu/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Contextmenu.cs" %}
+{% include code-snippet/grid/context-menu/enablecontextmenu/enablecontextmenu.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/context-menu/enablecontextmenu/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Contextmenu.cs" %}
+{% include code-snippet/grid/context-menu/enablecontextmenu/enablecontextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

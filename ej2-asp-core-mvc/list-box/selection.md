@@ -53,7 +53,7 @@ To enable multiple selection in the list box, `mode` should be set as `Multiple`
 
 To select multiple items, use the SHIFT, CTRL, and arrow keys to make selections.
 
-> By default, the selection mode is set as `Multiple`.
+N> By default, the selection mode is set as `Multiple`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,4 +80,4 @@ To select multiple items, use the SHIFT, CTRL, and arrow keys to make selections
 
 
 
-> To select all the items in the list box, [`showSelectAll`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings~ShowSelectAll.html) method can also be used.
+N> To select all the items in the list box, [`showSelectAll`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings~ShowSelectAll.html) method can also be used.

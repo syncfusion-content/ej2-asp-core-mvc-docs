@@ -1,6 +1,5 @@
 <div class="control-section">
     <ejs-button id="element" content="Export" onclick="exportServerSide()"></ejs-button>
-
     <ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated"
         height="590px"></ejs-documenteditorcontainer>
 </div>
@@ -13,7 +12,6 @@
         documenteditor = container.documentEditor;
     }
     function exportServerSide() {
-
         let http = new XMLHttpRequest();
         // Replace your running web service Url here
         http.open('POST', '/api/documenteditor/ExportPdf');

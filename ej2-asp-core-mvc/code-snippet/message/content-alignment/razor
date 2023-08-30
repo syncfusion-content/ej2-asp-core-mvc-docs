@@ -1,0 +1,20 @@
+<div class="msg-custom-section">
+    <div class="msg-content-section">
+        <h4>Content Alignment</h4>
+        @Html.EJS().Message("msg-content-left").Severity(Severity.Success).Content("Your license has been activated successfully").Render()
+        @Html.EJS().Message("msg-content-center").Severity(Severity.Warning).Content("The license will expire today").CssClass("e-content-center").Render()
+        @Html.EJS().Message("msg-content-right").Severity(Severity.Error).Content("The license key is invalid").CssClass("e-content-right").Render()
+    </div>
+</div>
+
+<style>
+  .msg-custom-section .content-section {
+    margin: 0 auto;
+    max-width: 400px;
+    padding-top: 10px;
+  }
+
+  .msg-custom-section .e-message {
+    margin: 10px 0;
+  }
+</style>

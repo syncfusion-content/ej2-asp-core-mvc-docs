@@ -6,7 +6,6 @@
 <script>
     var documenteditor;
     document.addEventListener('DOMContentLoaded', function () {
-
         documenteditor = document.getElementById("container").ej2_instances[0];
         documenteditor.resize();
         updateContainerSize();
@@ -136,7 +135,6 @@
     [class*=" e-de-icon-"] {
         font-family: 'Sample brower icons' !important;
     }
-
 
     .e-de-icon-Table:before {
         content: "\e70e";

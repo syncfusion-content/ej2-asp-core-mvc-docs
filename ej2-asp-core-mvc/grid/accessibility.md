@@ -30,7 +30,7 @@ The following ARIA attributes are used in the Grid:
 * aria-owns (attribute)
 * aria-label (attribute)
 
-> You can achieve a single table announcing on the JAWS screen reader by setting an **`e-gridcell-read`** class through [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property of the grid.
+N> You can achieve a single table announcing on the JAWS screen reader by setting an **`e-gridcell-read`** class through [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property of the grid.
 
 ## Keyboard navigation
 

@@ -36,7 +36,7 @@ Column B having Card D with priority value `5`. Dropped Card D between Card A an
 Column A having Card A with priority value `1`, Card B with priority value `3` and Card C with priority value `5`.
 Column B having Card D with priority value `5`. Dropped Card D between Card A and Card B. Now, Card D, B and C dynamically changed their priority value to `2, 3, 5`.
 
-> The `priority` property mapping key value must be `number` format.
+N> The `priority` property mapping key value must be `number` format.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

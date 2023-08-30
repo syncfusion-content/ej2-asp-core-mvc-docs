@@ -47,7 +47,7 @@ You can use the following key shortcuts to access the AutoComplete without inter
 | <kbd>Home</kbd> | Cursor moves to before of first character in input. |
 | <kbd>End</kbd> | Cursor moves to next of last character in input. |
 
-> In the below sample, focus the AutoComplete control using <kbd>alt+t</kbd> keys.
+N> In the below sample, focus the AutoComplete control using <kbd>alt+t</kbd> keys.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -69,4 +69,4 @@ You can use the following key shortcuts to access the AutoComplete without inter
 {% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/AutoComplete/GroupingandFilreringSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/AutoComplete/GroupingandFilreringSample).

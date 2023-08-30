@@ -13,7 +13,7 @@ documentation: ug
 
 The Calendar provides an option to change the first day of the week by using the [firstDayOfWeek](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_FirstDayOfWeek) property. Generally, the day of the week starts from 0 (Sunday) and ends with 6 (Saturday).
 
-> By default, the first day of the week is culture specific.
+N> By default, the first day of the week is culture specific.
 
 The following example shows the Calendar with `Tuesday` as the first day of the week.
 
@@ -36,4 +36,4 @@ The following example shows the Calendar with `Tuesday` as the first day of the 
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

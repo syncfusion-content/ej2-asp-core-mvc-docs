@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Duration Unit in ##Platform_Name## Gantt Component
+title: Duration Unit in ##Platform_Name## Gantt Component | Syncfusion
 description: Learn here all about Duration Unit in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Duration Unit
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Scheduling Tasks
+# Scheduling Tasks in ##Platform_Name## Gantt component
 
 ## Duration units
 
@@ -55,7 +55,7 @@ The below code snippet explains the mapping of duration unit data source field t
 
 ![Alt text](images/durationUnits.png)
 
-> The default value of the [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_DurationUnit_System_String_) property is `day`.
+N> The default value of the [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_DurationUnit_System_String_) property is `day`.
 
 ### Defining duration unit along with duration field
 
@@ -88,4 +88,4 @@ Duration units for the tasks can also be defined along with the duration values,
 
 ![Alt text](images/durationUnitswithDuration.png)
 
-> The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.
+N> The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.

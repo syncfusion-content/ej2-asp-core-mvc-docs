@@ -21,7 +21,7 @@ A task not assigned to any one of the resource are termed as unassigned tasks. T
 
 A task assigned to one or more resources are termed as resource task and it is added as child task to the respective resource. Already assigned task can also be shared or moved with other resources by adding a resource name to the task or removing resource name from the task by cell or dialog editing.
 
-> Currently there is no support for unscheduled task in Resource view Gantt.
+N> Currently there is no support for unscheduled task in Resource view Gantt.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -58,7 +58,7 @@ The available working time of resources for completing the task in a day will be
 
 The range of overallocation dates can be highlighted by a square bracket. It can be enabled by setting the `showOverallocation` property as `true`. The following code example demonstrates how to hide or show the over allocation by clicking the custom button.
 
-> By default, the `showOverAllocation` property value is `false`.
+N> By default, the `showOverAllocation` property value is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -95,7 +95,7 @@ The collapse or expand action of a resource record can be achieved only by using
 
 When a resource has multiple tasks scheduled on the same date, then the tasks will be overlapped one another. Taskbar editing is also possible to change the task scheduling on the collapsed state.
 
-> By default, the `enableMultiTaskbar` property value is `false`.
+N> By default, the `enableMultiTaskbar` property value is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -123,3 +123,63 @@ When a resource has multiple tasks scheduled on the same date, then the tasks wi
 
 
 ![Alt text](images/multitaskbar.PNG)
+
+### Enable taskbar drag and drop
+
+In Gantt, you can enable taskbar drag and drop between resources by using the [`AllowTaskbarDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowTaskbarDragAndDrop) property. This allows you to move a taskbar from one resource to another vertically, making it easier to schedule tasks and manage resources.
+
+>Note: By default, the `AllowTaskbarDragAndDrop` property value is `false`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/resource-view/taskbardragdrop/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarDragAndDrop.cs" %}
+{% include code-snippet/gantt/resource-view/taskbardragdrop/taskbardragdrop.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/resource-view/taskbardragdrop/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarDragAndDrop.cs" %}
+{% include code-snippet/gantt/resource-view/taskbardragdrop/taskbardragdrop.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Disable taskbar overlap
+
+In Gantt, you can disable taskbar overlap between resource tasks using the [`AllowTaskbarOverlap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowTaskbarOverlap) property. This prevents the taskbars for different tasks from overlapping on the same row, making it easier to distinguish between the different tasks and manage resources effectively.
+
+When `AllowTaskbarOverlap` is set to false, the resources are displayed in a single row and the row height will be extended to occupy the tasks of the resource when it is in a collapsed state. This view allows you to easily identify any overallocation of tasks for a resource in a project.
+
+It's important to note that when `AllowTaskbarOverlap` is disabled, task dependencies or relationships cannot be established between tasks that are rendered in multiple lines for the same resource. If you need to establish dependencies between tasks for the same resource, you may want to consider enabling taskbar overlap.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/resource-view/taskbaroverlap/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarOverlap.cs" %}
+{% include code-snippet/gantt/resource-view/taskbaroverlap/taskbaroverlap.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/resource-view/taskbaroverlap/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarOverlap.cs" %}
+{% include code-snippet/gantt/resource-view/taskbaroverlap/taskbaroverlap.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.Buttons
+
+@Html.EJS().SpeedDial("speeddial").OpenIconCss("e-icons e-edit").BeforeItemRender("BeforeItemRenderEvent").Items(ViewBag.datasource).Render()
+
+<script>
+    function BeforeItemRenderEvent() {
+        //Your required action here
+    }
+</script>

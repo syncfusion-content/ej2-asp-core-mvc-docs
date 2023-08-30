@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging in ##Platform_Name## Tree Grid Component
+title: Paging in ##Platform_Name## Tree Grid Control | Syncfusion
 description: Learn here all about Paging in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Paging
@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# Paging
+# Paging in in Tree Grid Control
 
-Paging provides an option to display TreeGrid data in page segments. To enable paging, set the [`AllowPaging`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowPaging.html) to true. When paging is enabled, pager component renders at the bottom of the treegrid.
-Paging options can be configured through the [`PageSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PageSettings.html).
+Paging provides an option to display TreeGrid data in page segments. To enable paging, set the [`AllowPaging`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowPaging.html) to true. When paging is enabled, pager component renders at the bottom of the treegrid. Paging options can be configured through the [`PageSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PageSettings.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,7 +38,7 @@ Paging options can be configured through the [`PageSettings`](https://help.syncf
 
 
 
-> You can achieve better performance by using treegrid paging to fetch only a pre-defined number of records from the data source.
+N> You can achieve better performance by using treegrid paging to fetch only a pre-defined number of records from the data source.
 
 ## Page Size Mode
 
@@ -77,8 +76,8 @@ With [`PageSizeMode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/S
 
 ## Template
 
-You can use custom elements inside the pager instead of default elements.
-The custom elements can be defined by using the [`Template`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings~Template.html) property.
+You can use custom elements inside the pager instead of default elements. The custom elements can be defined by using the [`Template`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings~Template.html) property.
+
 Inside this template, you can access the [`CurrentPage`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings~CurrentPage.html), [`PageSize`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings~PageSize.html), [`PageCount`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings~PageCount.html), `TotalPage` and `TotalRecordCount` values.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -166,7 +165,7 @@ By default, Pager will be rendered at the bottom of the TreeGrid. You can also r
 
 
 
-> During the paging action, the pager component triggers the below three events.
-> * The `created` event triggers when Pager is created.
-> * The `click` event triggers when the numeric items in the pager is clicked.
-> * The `dropDownChanged` event triggers when pageSize DropDownList value is selected.
+N> During the paging action, the pager component triggers the below three events.
+<br/> * The `created` event triggers when Pager is created.
+<br/> * The `click` event triggers when the numeric items in the pager is clicked.
+<br/> * The `dropDownChanged` event triggers when pageSize DropDownList value is selected.

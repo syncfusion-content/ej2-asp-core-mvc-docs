@@ -6,7 +6,6 @@
 <script>
     var documenteditor;
     document.addEventListener('DOMContentLoaded', function () {
-
         documenteditor = document.getElementById("container").ej2_instances[0];
         documenteditor.resize();
         updateContainerSize();

@@ -1,0 +1,17 @@
+<button id='insert'>Insert Text</button>
+<div class="control-section">
+    <ejs-documenteditorcontainer id="container" enableToolbar=true created="onCreated" height="590px"></ejs-documenteditorcontainer>
+</div>
+
+<script>
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+    }
+    document.getElementById('insert').addEventListener('click', () => {
+        // It will insert the provided text in current selection
+        container.documentEditor.editor.insertText('Syncfusion');
+    });
+</script>

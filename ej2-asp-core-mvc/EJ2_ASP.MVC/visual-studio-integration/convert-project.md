@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Project Conversion process for ASP.NET MVC- EJ2 platform
+title: Project Conversion process for ASP.NET MVC Application | Syncfusion
 description: Project Conversion is a add-in that converts ASP.NET MVC application into a Syncfusion ASP.NET MVC application by adding required Essential JS 2 components
-platform: ASP.NET MVC - EJ2
+platform: ej2-asp-core-mvc
 control: Syncfusion VS Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Converting ASP.NET MVC application to Syncfusion ASP.NET MVC application
+# Converting ASP.NET MVC application to ASP.NET MVC application
 
 Syncfusion ASP.NET MVC conversion is a Visual Studio add-in that converts an existing ASP.NET MVC application into a Syncfusion ASP.NET MVC (Essential JS 2) Web application by adding the required assemblies and resource files.
 
-> The Syncfusion ASP.NET MVC (Essential JS 2) Web Application Project conversion utility is available from v16.3.0.17. Before use, the Syncfusion ASP.NET MVC Project Conversion, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio version build installed or not. If the Essential Studio version is not same for both the Extension and build, then the Project Conversion will not be shown.
+N> The Syncfusion ASP.NET MVC (Essential JS 2) Web Application Project conversion utility is available from v16.3.0.17. Before use, the Syncfusion ASP.NET MVC Project Conversion, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio version build installed or not. If the Essential Studio version is not same for both the Extension and build, then the Project Conversion will not be shown.
 
 The steps below help you to convert the ASP.NET MVC application to the Syncfusion ASP.NET MVC application via the Visual Studio:
 
@@ -26,7 +26,7 @@ The steps below help you to convert the ASP.NET MVC application to the Syncfusio
 
     ![selected microsoft aspmvc](images/selected-microsoft-mvc-application.png)
 
-    > In Visual Studio 2017 or lower, Click Syncfusion Menu and choose Essential Studio for ASP.NET MVC > Convert to Syncfusion ASP.NET MVC Application… in Visual Studio Menu.
+    N> In Visual Studio 2017 or lower, Click Syncfusion Menu and choose Essential Studio for ASP.NET MVC > Convert to Syncfusion ASP.NET MVC Application… in Visual Studio Menu.
 
     ![convert-to-syncfusion](images/convert-project.png)
 
@@ -40,13 +40,13 @@ The steps below help you to convert the ASP.NET MVC application to the Syncfusio
 
     ![project conversion wizard](images/project-conversion-wizard.png)
 
-    > The versions are loaded from the Syncfusion ASP.NET MVC NuGet packages which published in [NuGet.org](https://www.nuget.org/packages?q=Tags%3A%22aspnetmvc%22syncfusion) and it requires internet connectivity.
+    N> The versions are loaded from the Syncfusion ASP.NET MVC NuGet packages which published in [NuGet.org](https://www.nuget.org/packages?q=Tags%3A%22aspnetmvc%22syncfusion) and it requires internet connectivity.
 
     The following configurations are used in the Project conversion wizard.
 
     **Assets From**: Load the Syncfusion Essential JS 2 assets to ASP.NET MVC Project, from either NuGet, CDN, or Installed Location.
 
-    > Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
+    N> Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
 
     **Choose the Theme**: Choose the required theme.
 
