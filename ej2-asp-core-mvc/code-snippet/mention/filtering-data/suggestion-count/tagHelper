@@ -1,6 +1,6 @@
 @{
     char nameMentionChar = '@';
-    var data = new EmailData().EmailList();
+    List<EmailData> data = new EmailData().EmailList();
 }
 <div id="mentionElement" placeholder="Type @@ and tag user"></div>
 <ejs-mention id="comments" mentionChar="@nameMentionChar" dataSource="@data" target="#mentionElement" suggestionCount=8>

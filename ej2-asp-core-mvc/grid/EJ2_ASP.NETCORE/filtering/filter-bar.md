@@ -116,3 +116,6 @@ You can change the default filter operator by extending **filterOperators** prop
 {% endtabs %}
 {% endif %}
 
+## See also
+
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)

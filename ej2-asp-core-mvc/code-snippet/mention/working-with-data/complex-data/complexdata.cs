@@ -9,7 +9,7 @@ namespace WebApplication1.Controllers
 {
     public class MultiSelectController : Controller
     {
-        public ActionResult complexdata()
+        public ActionResult Index()
         {
             return View();
         }

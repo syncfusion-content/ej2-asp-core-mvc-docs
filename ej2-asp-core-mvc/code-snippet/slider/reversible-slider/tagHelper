@@ -1,0 +1,4 @@
+<ejs-slider id="reversible" min="100" max="0" orientation="Vertical" type="Range" value="ViewBag.range">
+    <e-slider-ticksdata placement="Before" showSmallTicks="true" largeStep="20" smallStep="5"></e-slider-ticksdata>
+    <e-slider-tooltipdata isVisible="true" placement="Before"></e-slider-tooltipdata>
+</ejs-slider>

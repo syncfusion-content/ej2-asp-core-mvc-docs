@@ -1,0 +1,24 @@
+<ejs-chart id="container" title="Family Expense for Month">
+    <e-chart-primaryxaxis valueType="Category" interval="1">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Expense" interval="100" labelFormat="${value}">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="John" xName="x" width="2" yName="y" type="StackingLine"
+            dashArray="5,1" opacity="0.7" fill="blue">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Peter" xName="x" width="2" yName="y1" type="StackingLine"
+            dashArray="5,1" opacity="0.7" fill="green">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Steve" xName="x" width="2" yName="y2" type="StackingLine"
+            dashArray="5,1" opacity="0.7" fill="red">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Charle" xName="x" width="2" yName="y3" type="StackingLine"
+            dashArray="5,1" opacity="0.7" fill="black">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

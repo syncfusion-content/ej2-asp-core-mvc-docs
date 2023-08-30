@@ -41,7 +41,7 @@ An Outline ButtonGroup has a border with transparent background. To create Outli
 
 
 
-> ButtonGroup does not have support for `flat` and `round` types.
+N> ButtonGroup does not have support for `flat` and `round` types.
 
 ## ButtonGroup styles
 
@@ -77,9 +77,9 @@ The Essential JS 2 ButtonGroup has the following predefined styles. This can be 
 
 
 
-> Predefined ButtonGroup styles provide only the visual indication. So, ButtonGroup content should define the ButtonGroup style for the users of assistive technologies such as screen readers.
+N> Predefined ButtonGroup styles provide only the visual indication. So, ButtonGroup content should define the ButtonGroup style for the users of assistive technologies such as screen readers.
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupUGSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupUGSample).
 
 ## See also
 

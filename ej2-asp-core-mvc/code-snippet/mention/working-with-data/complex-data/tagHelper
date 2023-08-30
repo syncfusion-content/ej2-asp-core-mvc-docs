@@ -1,7 +1,7 @@
 @{
     
     char nameMentionChar = '@';
-    var data = new Complex().GetData();
+    List<CountryGroup> data = new CountryGroup().GetData();
 }
 <div id="mentionElement" placeholder = "Type @@ and tag country"></div>
 <ejs-mention id="comments" mentionChar="@nameMentionChar" dataSource="@data" target="#mentionElement" >

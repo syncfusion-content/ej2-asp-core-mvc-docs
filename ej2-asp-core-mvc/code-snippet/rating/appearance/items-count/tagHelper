@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-rating id="rating" value=3 itemsCount=8></ejs-rating>

@@ -15,13 +15,15 @@ Edited data can be persisted in the database using the RESTful web services.
 
 All the CRUD operations in the treegrid are done through **DataManager**. The **DataManager** has an option to bind all the CRUD related data in server-side.
 
-> For your information, the ODataAdaptor persists data in the server as per OData protocol.
+N> For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
 In the following section, we have explained how to perform CRUD operation in server-side using the **UrlAdaptor** and **RemoteSave Adaptor**.
 
 ## URL adaptor
 
-You can use the **UrlAdaptor** of **DataManager** when binding data source from remote data. In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of **DataManager**. You can map The CRUD operation in grid can be mapped to server-side Controller actions using the properties **InsertUrl**, **RemoveUrl**, **UpdateUrl** and **BatchUrl**.
+You can use the **UrlAdaptor** of **DataManager** when binding data source from remote data. In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of **DataManager**.
+
+You can map The CRUD operation in grid can be mapped to server-side Controller actions using the properties **InsertUrl**, **RemoveUrl**, **UpdateUrl** and **BatchUrl**.
 
 The following code example describes the above behavior.
 
@@ -83,7 +85,7 @@ The following code example describes the above behavior.
 
 
 
-The newly added record details are bound to the **value** parameter and **relationalKey** contains primaryKey value of an selected record helps to find out the position of newly added record. Please refer to the following screenshot.
+The newly added record details are bound to the **value** parameter and **relationalKey** contains primaryKey value of an selected record helps to find out the position of newly added record. Refer to the following screenshot.
 
 ![Insert](images/insertcore.PNG)
 
@@ -118,7 +120,7 @@ The following code example describes the previous behavior.
 
 
 
-The updated record details are bound to the **value** parameter. Please refer to the following screenshot.
+The updated record details are bound to the **value** parameter. Refer to the following screenshot.
 
 ![Update](images/updatecore.PNG)
 
@@ -153,11 +155,11 @@ The following code example describes the previous behavior.
 
 
 
-The deleted record primary key value is bound to the **key** parameter. Please refer to the following screenshot.
+The deleted record primary key value is bound to the **key** parameter. Refer to the following screenshot.
 
 ![Delete](images/deletecore.PNG)
 
-While delete parent record, the parent and child records is bound to the **deleted** parameter. Please refer to the following screenshot.
+While delete parent record, the parent and child records is bound to the **deleted** parameter. Refer to the following screenshot.
 
 ## Remote save adaptor
 
@@ -192,4 +194,4 @@ You can use the following code example to use **RemoteSaveAdaptor** in TreeGrid.
 
 
 
-> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.

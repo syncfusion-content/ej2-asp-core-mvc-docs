@@ -97,7 +97,7 @@ greaterthanorequal|Checks whether the value is greater than or equal to the spec
 lessthan |Checks whether the value is less than the specified value. |Number &#124; Date
 lessthanorequal |Checks whether the value is less than or equal to the specified value. |Number &#124; Date
 
-> By default, the `FilterSettings.Columns.Operator` value is `equal`
+N> By default, the `FilterSettings.Columns.Operator` value is `equal`
 
 ### Diacritics
 

@@ -3,11 +3,11 @@
         <!-- Declare filemanager element -->
         @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
         {
-            Url = "/Home/FileOperations",
-            GetImageUrl = "/Home/GetImage",
-            UploadUrl = "/Home/Upload",
-            DownloadUrl = "/Home/Download"
-        }).Render()
+            Url = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/FileOperations",
+            GetImageUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/GetImage",
+            UploadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/Upload",
+            DownloadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/Download"
+        }).View(Syncfusion.EJ2.FileManager.ViewType.Details).Render()
         <!-- end of filemanager element -->
     </div>
 </div>

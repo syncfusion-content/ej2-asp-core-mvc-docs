@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Ink Annotation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Ink Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Ink Annotation in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Ink Annotation in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ink Annotation
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -28,18 +28,21 @@ The ink annotations can be added to the PDF document using the annotation toolba
 Refer to the following code sample to switch to the ink annotation mode.
 
 ```html
-    <!--Element to set ink annotation mode-->
-    <button id="set" onclick="addAnnot()">Draw Ink</button>
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath>
-        </ejs-pdfviewer>
-    </div>
-    <script>
-        function addAnnot() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('Ink');
-        }
-    </script>
+<!--Element to set ink annotation mode-->
+<button id="set" onclick="addAnnot()">Draw Ink</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Ink');
+    }
+</script>
 ```
 
 ## Editing the properties of the ink annotation

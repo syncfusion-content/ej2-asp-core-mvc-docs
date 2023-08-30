@@ -15,7 +15,7 @@ documentation: ug
 
 The Card supports to include images within the elements, you can add image as direct element anywhere inside card root by adding the `e-card-image` class to `div` element. Using the class defined, you can write CSS styles to load images to that element.
 
-> By default, card images occupies full width of its parent element.
+N> By default, card images occupies full width of its parent element.
 
 ```html
     <div class = "e-card">
@@ -88,7 +88,7 @@ Divider used to separate the elements inside the card. You can add divider insid
 
 ![CSS Card Control with images and divider](./images/card-divider.PNG)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).
 
 ## See also
 

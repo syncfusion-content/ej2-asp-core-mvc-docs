@@ -1,8 +1,8 @@
 @{
     char nameMentionChar = '@';
-    var data = new SportsData().SportsList();
+    List<SportsData> data = new SportsData().SportsList();
 }
-<div id="mentionElement" placeholder = "Type @@ and tag user"></div>
+<div id="mentionElement" placeholder = "Type @@ and tag sport"></div>
 <ejs-mention id="comments" mentionChar="@nameMentionChar" dataSource="@data" target="#mentionElement" >
     <e-mention-fields text="Game" value="ID"></e-mention-fields>
 </ejs-mention>

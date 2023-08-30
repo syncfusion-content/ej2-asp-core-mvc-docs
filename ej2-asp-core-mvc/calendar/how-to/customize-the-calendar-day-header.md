@@ -13,7 +13,7 @@ documentation: ug
 
 You can change the format of the day that has to be displayed in header using [`dayHeaderFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_DayHeaderFormat) property.
 
-> By default, the format is `Short`.
+N> By default, the format is `Short`.
 
 | **Name** | **Description** |
 |------|---------------------|
@@ -46,4 +46,4 @@ You can change the format of the day that has to be displayed in header using [`
 
 ![calendar](../images/abbreviated.png)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

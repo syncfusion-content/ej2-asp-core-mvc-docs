@@ -18,7 +18,7 @@ Calculated field can also be included in the pivot table through code behind usi
 * [`formula`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html#Syncfusion_EJ2_PivotView_PivotViewCalculatedFieldSetting_Formula): It allows to set the formula.
 * [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format):  It helps to set the number format for the resultant value.
 
-> The calculated field is applicable only for value fields. Also, calculated field created through code behind will be automatically listed in the UI dialog as well.
+N> The calculated field is applicable only for value fields. Also, calculated field created through code behind will be automatically listed in the UI dialog as well.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -130,7 +130,7 @@ To apply format to calculated field values at runtime via UI, a built-in dropdow
 * **Custom** - Denotes the custom format. For example: "C2". This shows the value "9584.3" as "$9584.30."
 * **None** - Denotes that no format will be applied.
 
-> By default, **None** will be selected from the dropdown.
+N> By default, **None** will be selected from the dropdown.
 
 ![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.png "Applying format through calculated field dialog UI")
 
@@ -256,7 +256,7 @@ Syntax: min(number1, number2)
 Syntax: max(number1, number2)
 ```
 
-> Also, you can use JavaScript [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object properties and methods directly to the formula.
+N> Also, you can use JavaScript [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object properties and methods directly to the formula.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -340,7 +340,7 @@ The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 * `fieldInfo`: It holds the selected field information.
 
-> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
+N> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
 
 * `cancel`: It allows user to restrict the current action.
 
@@ -386,7 +386,7 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 * `fieldInfo`: It holds the selected field information.
 
-> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
+N> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
 
 * `actionInfo`:  It holds the unique information about the current UI action. For example, if the edit action is completed, this event will be triggered, and the argument will display information such as the entire calculated field information and its formula, including the field name.
 

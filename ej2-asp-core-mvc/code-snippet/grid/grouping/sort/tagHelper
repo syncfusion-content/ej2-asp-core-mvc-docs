@@ -1,0 +1,15 @@
+@{
+    List<object> cols = new List<object>();
+    cols.Add(new { field = "CustomerID", direction = "Descending" });
+}
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" allowSorting="true">
+    <e-grid-sortsettings columns="cols"></e-grid-sortsettings>
+    <e-grid-groupsettings columns="@(new string[] {"CustomerID"})"></e-grid-groupsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

@@ -24,8 +24,8 @@ public List<ResourceTeamData> GetResourceTeamData()
     {
         Id = 1,
         Subject = "Developers Meeting",
-        StartTime = new DateTime(2018, 4, 3, 10, 0, 0),
-        EndTime = new DateTime(2018, 4, 3, 12, 0, 0),
+        StartTime = new DateTime(2023, 4, 3, 10, 0, 0),
+        EndTime = new DateTime(2023, 4, 3, 12, 0, 0),
         RecurrenceRule = "FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,TU,WE,TH,FR",
         ProjectId = 1,
         CategoryId = 1
@@ -34,8 +34,8 @@ public List<ResourceTeamData> GetResourceTeamData()
     {
         Id = 2,
         Subject = "Test report Validation",
-        StartTime = new DateTime(2018, 4, 4, 10, 0, 0),
-        EndTime = new DateTime(2018, 4, 4, 12, 0, 0),
+        StartTime = new DateTime(2023, 4, 4, 10, 0, 0),
+        EndTime = new DateTime(2023, 4, 4, 12, 0, 0),
         RecurrenceRule = "FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,WE,FR",
         ProjectId = 1,
         CategoryId = 3
@@ -44,8 +44,8 @@ public List<ResourceTeamData> GetResourceTeamData()
     {
         Id = 3,
         Subject = "Requirement planning",
-        StartTime = new DateTime(2018, 4, 5, 10, 0, 0),
-        EndTime = new DateTime(2018, 4, 5, 12, 0, 0),
+        StartTime = new DateTime(2023, 4, 5, 10, 0, 0),
+        EndTime = new DateTime(2023, 4, 5, 12, 0, 0),
         RecurrenceRule = "FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,TU,WE,TH,FR",
         ProjectId = 2,
         CategoryId = 2

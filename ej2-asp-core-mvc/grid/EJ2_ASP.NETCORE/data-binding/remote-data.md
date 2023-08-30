@@ -37,7 +37,7 @@ To bind remote data to grid component, assign service data as an instance of `Da
 
 
 
-> By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
+N> By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
 
 ## OData adaptor - Binding OData service
 
@@ -107,7 +107,10 @@ You can use `WebApiAdaptor` to bind grid with Web API created using OData endpoi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/data-binding/webapi/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Webapi.cs" %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/grid/data-binding/webapi/controller.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="WebAPI.cs" %}
 {% include code-snippet/grid/data-binding/webapi/webapi.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -118,7 +121,10 @@ You can use `WebApiAdaptor` to bind grid with Web API created using OData endpoi
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/data-binding/webapi/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Webapi.cs" %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/grid/data-binding/webapi/controller.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="WebAPI.cs" %}
 {% include code-snippet/grid/data-binding/webapi/webapi.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -299,7 +305,7 @@ The parameters of DataManager bound to `DataManagerRequest` in the server. You c
 
 
 
-> If the grid rendered rows with empty/blank values then it can be resolved with the procedure explained [here](https://ej2.syncfusion.com/aspnetcore/documentation/grid/data-binding/data-binding#troubleshoot-grid-render-rows-without-data).
+N> If the grid rendered rows with empty/blank values then it can be resolved with the procedure explained [here](https://ej2.syncfusion.com/aspnetcore/documentation/grid/data-binding/data-binding#troubleshoot-grid-render-rows-without-data).
 
 ## WebMethod
 
@@ -343,4 +349,4 @@ The sample response object should look like below.
 }
 ```
 
-> The controller method's data parameter name must be `value`.
+N> The controller method's data parameter name must be `value`.

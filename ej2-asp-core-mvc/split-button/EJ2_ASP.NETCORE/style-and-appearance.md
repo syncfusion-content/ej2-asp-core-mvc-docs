@@ -11,7 +11,7 @@ documentation: ug
 
 # Styles and Appearances
 
-To modify the SplitButton appearance, you need to override the default CSS of SplitButton component. Please find the list of CSS classes and its corresponding section in SplitButton. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+To modify the SplitButton appearance, you need to override the default CSS of SplitButton component. Find the list of CSS classes and its corresponding section in SplitButton. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
 | CSS Class | Purpose of Class |
 |-----|-----|

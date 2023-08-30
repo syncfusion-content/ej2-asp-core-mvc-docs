@@ -93,7 +93,7 @@ The following properties in the `Layers` are used for binding data in the Maps c
 
 The `ShapePropertyPath` property is used to refer the field name in the `ShapeData` property of shape layers to identify the shape. When the values of `ShapeDataPath` property from the `DataSource` property and `ShapePropertyPath` property from the `ShapeData` property match, then the associated object from the data source is bound to the corresponding shape.
 
->`world-map.json` file contains following data and its field **name** value is used to map the corresponding shape with the provided data source.
+N>`world-map.json` file contains following data and its field **name** value is used to map the corresponding shape with the provided data source.
 
 ```json
 {

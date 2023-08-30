@@ -53,7 +53,7 @@ To Export the Grid in server side, You need to call the [`serverPdfExport`](http
 
 
 
-> **Note:** Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/MVC-EJ2-Grid-server-side-exporting).
+N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/MVC-EJ2-Grid-server-side-exporting).
 
 ## Rotate a header text to a certain degree in the exported grid on the server side
 
@@ -63,7 +63,7 @@ The `PdfHeaderQueryCellInfoEvent` will be triggered when creating a column heade
 
 In the following demo, the `DrawString` method from the `Graphics` is used to rotate the header text of the column header inside the `BeginCellLayout` event handler.
 
-> A PDF exporting is not supported to rotate the column header on the client side.
+N> A PDF exporting is not supported to rotate the column header on the client side.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
