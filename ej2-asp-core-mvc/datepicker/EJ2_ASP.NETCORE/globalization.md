@@ -31,7 +31,7 @@ In ASP.NET Core, the static file contents should be present under `wwwroot` fold
 
 ```typescript
 function loadCultureFiles(name) {
-        var files = ['ca-gregorian.json', 'numbers.json', 'timeZoneNames.json'];
+        var files = ['ca-gregorian.json', 'numbers.json', 'timeZoneNames.json', 'weekData.json'];
         var loader = ej.base.loadCldr;
         var loadCulture = function (prop) {
             var val, ajax;
