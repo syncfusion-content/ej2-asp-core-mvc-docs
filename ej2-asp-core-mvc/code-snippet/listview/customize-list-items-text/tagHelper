@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists
+
+<div class="control-section">
+    <div id="flat-list">
+        <h4>Flat List</h4>
+        <!-- ListView element -->
+        <ejs-listview enable="true" id="listview" dataSource="@ViewBag.dataSource" cssClass="custom">
+        </ejs-listview>
+    </div>
+</div>
+
+
+<style>
+    .custom.e-listview .e-list-item.e-high .e-text-content{
+        color: red;
+    }
+
+    .custom.e-listview .e-list-item.e-moderate .e-text-content {
+        color: yellow;
+    }
+
+    .custom.e-listview .e-list-item.e-normal .e-text-content {
+        color: black;
+    }
+</style>
