@@ -140,7 +140,7 @@ function contextMenuOpen() {
                 if (item.text === 'delete') {
                     var diagram = document.getElementById("container").ej2_instances[0];
                     if (!diagram.selectedItems.nodes.length && !diagram.selectedItems.connectors.length) {
-                        args.hiddenItems.push(item.text);
+                        args.hiddenItems.push(item.id);
                     }
                 }
             }
