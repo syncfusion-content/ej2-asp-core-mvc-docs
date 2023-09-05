@@ -36,14 +36,15 @@ In the pan mode, if the measurement annotation mode is entered, the PDF Viewer c
 
 Refer to the following code sample to switch to the distance annotation mode.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <!--Element to set measurement annotation mode-->
 <button id="set" onclick="addAnnot()">Distance</button>
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath>
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 <script>
@@ -52,7 +53,28 @@ Refer to the following code sample to switch to the distance annotation mode.
         pdfViewer.annotation.setAnnotationMode('Distance');
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<!--Element to set measurement annotation mode-->
+<button id="set" onclick="addAnnot()">Distance</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Distance');
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Editing the properties of measurement annotation
 
@@ -93,12 +115,13 @@ The properties of the line shapes such as distance and perimeter annotations can
 The properties of the shape annotations can be set before creating the control using DistanceSettings, PerimeterSettings, AreaSettings, RadiusSettings, and VolumeSettings.
 Refer to the following code sample to set the default annotation settings.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    distanceSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerDistanceSettings
             {FillColor="blue", Opacity=0.6, StrokeColor="green"})"
                    perimeterSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerPerimeterSettings
@@ -111,7 +134,30 @@ Refer to the following code sample to set the default annotation settings.
             {FillColor="pink", Opacity=0.6, StrokeColor="yellow"})">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   distanceSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerDistanceSettings
+            {FillColor="blue", Opacity=0.6, StrokeColor="green"})"
+                   perimeterSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerPerimeterSettings
+            {FillColor="green", Opacity=0.6, StrokeColor="blue"})"
+                   areaSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerAreaSettings
+            {FillColor="yellow", Opacity=0.6, StrokeColor="orange"})"
+                   radiusSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerRadiusSettings
+            {FillColor="orange", Opacity=0.6, StrokeColor="pink"})"
+                   volumeSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerVolumeSettings
+            {FillColor="pink", Opacity=0.6, StrokeColor="yellow"})">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Editing scale ratio and unit of the measurement annotation
 
@@ -139,7 +185,7 @@ The properties of scale ratio for measurement annotation can be set before creat
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    measurementSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerMeasurementSettings
             {ScaleRatio=2, ConversionUnit=Syncfusion.EJ2.PdfViewer.CalibrationUnit.Cm})">
     </ejs-pdfviewer>
