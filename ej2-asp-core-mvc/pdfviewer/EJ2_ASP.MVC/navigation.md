@@ -25,11 +25,22 @@ The default toolbar of PDF Viewer contains the following navigation options:
 
 You can enable/disable page navigation option in PDF Viewer using the following code snippet.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableNavigation(true).DocumentPath("Hive_Succinctly.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").EnableNavigation(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
 </div>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableNavigation(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+```
+{% endhighlight %}
+{% endtabs %}
 
 ![Alt text](./images/navigation.png)
 
@@ -38,11 +49,22 @@ You can enable/disable page navigation option in PDF Viewer using the following 
 The bookmarks saved in PDF files are loaded and made ready for easy navigation.
 You can enable/disable bookmark navigation by using the following code snippet.,
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableBookmark(true).DocumentPath("Hive_Succinctly.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").EnableBookmark(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
 </div>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableBookmark(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+```
+{% endhighlight %}
+{% endtabs %}
 
 ![Alt text](./images/bookmark.png)
 
@@ -51,11 +73,22 @@ You can enable/disable bookmark navigation by using the following code snippet.,
 Thumbnails is the miniature representation of actual pages in PDF files. This feature displays thumbnails of the pages and allows navigation.
 You can enable/disable thumbnail navigation by using the following code snippet.,
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableThumbnail(true).DocumentPath("Hive_Succinctly.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").EnableThumbnail(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
 </div>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableThumbnail(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+```
+{% endhighlight %}
+{% endtabs %}
 
 ![Alt text](./images/thumbnail.png)
 
@@ -71,19 +104,41 @@ Table of contents navigation allows users to navigate to different parts of a PD
 
 You can enable/disable link navigation by using the following code snippet.,
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableHyperlink(true).DocumentPath("Hive_Succinctly.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").EnableHyperlink(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
 </div>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableHyperlink(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+```
+{% endhighlight %}
+{% endtabs %}
 
 You can change the open state of the hyperlink in the PDF Viewer by using the following code snippet.,
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).hyperlinkOpenState(Syncfusion.EJ2.PdfViewer.LinkTarget.NewTab).DocumentPath("Hive_Succinctly.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").hyperlinkOpenState(Syncfusion.EJ2.PdfViewer.LinkTarget.NewTab).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
 </div>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).hyperlinkOpenState(Syncfusion.EJ2.PdfViewer.LinkTarget.NewTab).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+```
+{% endhighlight %}
+{% endtabs %}
 
 ![Alt text](./images/toc.png)
 

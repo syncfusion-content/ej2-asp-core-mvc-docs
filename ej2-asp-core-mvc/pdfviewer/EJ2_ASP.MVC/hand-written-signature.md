@@ -15,10 +15,20 @@ The PDF Viewer control supports adding handwritten signatures to a PDF document.
 
 The following code snippet describes how to enable the handwritten signature in PDF Viewer.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+```html
+@Html.EJS().PdfViewer("pdfviewer").EnableHandwrittenSignature(false).DocumentPath("HTTP Succinctly.pdf").Render()
+
+```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
 ```html
 @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).EnableHandwrittenSignature(false).DocumentPath("HTTP Succinctly.pdf").Render()
 
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding a handwritten signature to the PDF document
 
@@ -45,10 +55,20 @@ The stroke color, border thickness, and opacity of the handwritten signature can
 
 Refer to the following code snippet to set the default handwritten signature settings.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+```html
+@Html.EJS().PdfViewer("pdfviewer").HandWrittenSignatureSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerHandWrittenSignatureSettings { Opacity = 1, Thickness = 2 }).DocumentPath("HTTP Succinctly.pdf").Render()
+
+```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
 ```html
 @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).HandWrittenSignatureSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerHandWrittenSignatureSettings { Opacity = 1, Thickness = 2 }).DocumentPath("HTTP Succinctly.pdf").Render()
 
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## See also
 

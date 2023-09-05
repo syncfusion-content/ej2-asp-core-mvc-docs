@@ -34,11 +34,22 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 
 * **Show/Hide toolbar using enableToolbar API as in the following code snippet.**
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
     <div style="width:100%;height:600px">
-         @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableToolbar(false).DocumentPath("Hive_Succinctly.pdf").Render()
+         @Html.EJS().PdfViewer("pdfviewer").EnableToolbar(false).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
     </div>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+    <div style="width:100%;height:600px">
+         @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableToolbar(false).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+    </div>
+```
+{% endhighlight %}
+{% endtabs %}
 
 * **Show/Hide toolbar using showToolbar as in the following code snippet.**
 
@@ -57,11 +68,26 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 
 * **Show/Hide toolbaritem using toolbarSettings as in the following code snippet.**
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 ```html
     <div style="width:100%;height:600px">
-     @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableToolbar(false).ToolbarSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings{ ShowTooltip = true, ToolbarItem = "OpenOption" ).DocumentPath("Hive_Succinctly.pdf").Render()
+     @Html.EJS().PdfViewer("pdfviewer").EnableToolbar(false).ToolbarSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings{ ShowTooltip = true, ToolbarItem = "OpenOption" ).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
     </div>
 ```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+```html
+    <div style="width:100%;height:600px">
+     @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableToolbar(false).ToolbarSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings{ ShowTooltip = true, ToolbarItem = "OpenOption" ).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+    </div>
+```
+
+{% endhighlight %}
+{% endtabs %}
 
 * **Show/Hide toolbaritem using showToolbaritem as in the following code snippet.**
 

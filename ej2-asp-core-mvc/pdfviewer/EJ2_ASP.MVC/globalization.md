@@ -81,11 +81,24 @@ The following table shows the default text values used in Syncfusion PDF Viewer 
 
 The different locale value for the PDF Viewer can be specified using the locale property.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).Locale("ar-AE").DocumentPath("Hive_Succinctly.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").Locale("ar-AE").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
 </div>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+```html
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).Locale("ar-AE").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+```
+{% endhighlight %}
+{% endtabs %}
 
 You have to map the text content based on locale like the following script in sample level.,
 

@@ -29,11 +29,22 @@ The form fields displayed in the PDF Viewer are:
 
 The PDF Viewer control provides an option to disable the form fields feature. The code sample for disabling the form fields is as follows.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).EnableFormFields(false).DocumentPath("FormFillingDocument.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").EnableFormFields(false).DocumentPath("https://cdn.syncfusion.com/content/pdf/form-filling-document.pdf").Render()
 </div>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).EnableFormFields(false).DocumentPath("https://cdn.syncfusion.com/content/pdf/form-filling-document.pdf").Render()
+</div>
+```
+{% endhighlight %}
+{% endtabs %}
 
 ## How to draw handwritten signature in the signature field
 
@@ -65,10 +76,12 @@ The PDF Viewer control provides the support to import and export form fields usi
 
 You can import the form fields using JSON file or JSON object in code behind like the below code sample.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
 <button id="viewer" onclick="OnImportFormFieldsClick()">Import FormFields</button>
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("FormFillingDocument.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/form-filling-document.pdf").Render()
 </div>
 <script>
     function OnImportFormFieldsClick() {
@@ -78,6 +91,23 @@ You can import the form fields using JSON file or JSON object in code behind lik
     }
 </script>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+<button id="viewer" onclick="OnImportFormFieldsClick()">Import FormFields</button>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/form-filling-document.pdf").Render()
+</div>
+<script>
+    function OnImportFormFieldsClick() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        //The json file has been placed inside the App_Data folder.);
+        pdfViewer.importFormFields("D:/PDFViewer/Examples/mvcsample/App_Data/ImportFormFields.json");
+    }
+</script>
+```
+{% endhighlight %}
+{% endtabs %}
 
 N>The JSON file for importing the form fields should be placed in the desired location and the path should be provided correctly.
 
@@ -85,10 +115,12 @@ N>The JSON file for importing the form fields should be placed in the desired lo
 
 You can export the form fields as JSON file in code behind as the following code sample.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
 <button id="viewer" onclick="OnExportFormFieldsClick()">Export FormFields</button>
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("FormFillingDocument.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/form-filling-document.pdf").Render()
 </div>
 <script>
     function OnExportFormFieldsClick() {
@@ -97,3 +129,19 @@ You can export the form fields as JSON file in code behind as the following code
     }
 </script>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+<button id="viewer" onclick="OnExportFormFieldsClick()">Export FormFields</button>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/form-filling-document.pdf").Render()
+</div>
+<script>
+    function OnExportFormFieldsClick() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.exportFormFields();
+    }
+</script>
+```
+{% endhighlight %}
+{% endtabs %}
