@@ -238,6 +238,59 @@ The below screenshot shows the output of above code example.
 
 ![Alt text](images/editingTemplate.png)
 
+#### Preventing Baseline Tooltip Display
+
+In the Gantt chart, the baseline tooltip is automatically rendered when hovering over the baseline bar. However, there might be scenarios where you need to control the visibility of this tooltip based on certain conditions. You can achieve this by utilizing the [`beforeTooltipRender`](https://ej2.syncfusion.com/react/documentation/api/gantt/ganttModel/#beforetooltiprender) event. This event provides you with the opportunity to customize the behavior of the tooltip before it is displayed.
+
+##### Using the beforeTooltipRender Event
+
+The `beforeTooltipRender` event is triggered when hovering over chart elements, including baseline bars. By inspecting the target element's class and applying conditions, you can prevent the baseline tooltip from being displayed.
+
+```javascript
+function beforeTooltipRender(args) 
+{
+    if ( args.args.target.classList.contains('e-gantt-child-taskbar') || 
+         args.args.target.classList.contains('e-gantt-parent-taskbar') ||
+         args.args.target.classList.contains('e-taskbar-left-resizer') ||
+         args.args.target.classList.contains('e-taskbar-right-resizer') ) 
+	{
+        args.cancel = true;
+	}
+}
+
+```
+
+In this code example, the `beforeTooltipRender` function is used to examine the target element's class. If the class contains `e-baseline-bar`, it means the user is hovering over a baseline bar. By setting `args.cancel` to `true`, you prevent the baseline tooltip from being displayed.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/tooltip/taskbarTootipHide/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="taskbarTootipHide.cs" %}
+{% include code-snippet/gantt/tooltip/taskbarTooltipHide/taskbarTooltipHide.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/tooltip/taskbarTooltipHide/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="taskbarTooltipHide.cs" %}
+{% include code-snippet/gantt/tooltip/taskbarTooltipHide/taskbarTooltipHide.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+The below screenshot shows the output of above code example.
+
+![Alt text](images/taskbarTooltipHide.png)
+
 ### Baseline tooltip
 
 A baseline tooltip can be customized using the [`TooltipSettings.Baseline`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTooltipSettings.html#Syncfusion_EJ2_Gantt_GanttTooltipSettings_Baseline) property. The following code example shows how to customize the baseline tooltip in Gantt.
