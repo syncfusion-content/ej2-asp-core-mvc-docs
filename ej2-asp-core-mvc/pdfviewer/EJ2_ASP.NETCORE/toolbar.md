@@ -34,16 +34,31 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 
 * **Show/Hide toolbar using enableToolbar API as in the following code snippet**
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableToolbar="false">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableToolbar="false">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 * **Show/Hide toolbar using showToolbar as in the following code snippet**
 
@@ -62,17 +77,33 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 
 * **Show/Hide toolbaritem using toolbarSettings as in the following code snippet.**
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableToolbar="true"
                    toolbarSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings { ShowTooltip = true, ToolbarItem = "OpenOption"  })">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableToolbar="true"
+                   toolbarSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings { ShowTooltip = true, ToolbarItem = "OpenOption"  })">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% endtabs %}
 
 * **Show/Hide toolbaritem using showToolbaritem as in the following code snippet**
 

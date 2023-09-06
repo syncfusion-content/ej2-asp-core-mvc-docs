@@ -17,16 +17,31 @@ The PDF Viewer provides interaction mode for easy interaction with the loaded PD
 
 In this mode, the text selection can be performed in the PDF document loaded in PDF Viewer. The panning and scrolling of the pages by touch cannot be performed in this mode. It allows users to select and copy text from the PDF files. This is helpful for copying and sharing text content. You can enable/disable the text selection using the following code snippet.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableTextSelection="true">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableTextSelection="true">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Alt text](./images/selection.png)
 
@@ -38,16 +53,31 @@ In this mode, the panning and scrolling of the pages by touch can be performed i
 
 You can switch the interaction mode of PDF Viewer by using the following code snippet.,
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   InteractionMode=Syncfusion.EJ2.PdfViewer.InteractionMode.Pan>
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    InteractionMode=Syncfusion.EJ2.PdfViewer.InteractionMode.Pan>
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## See also
 

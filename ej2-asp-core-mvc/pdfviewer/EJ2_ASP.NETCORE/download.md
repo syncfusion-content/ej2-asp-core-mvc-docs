@@ -12,16 +12,27 @@ documentation: ug
 
 The PDF Viewer supports downloading the loaded PDF file. You can enable/disable the download using the following code snippet.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableDownload="true">
+    </ejs-pdfviewer>
+</div>
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableDownload="true">
     </ejs-pdfviewer>
 </div>
-```
+{% endhighlight %}
+{% endtabs %}
 
 ![Alt text](./images/download.png)
 
