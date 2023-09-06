@@ -27,42 +27,18 @@ In the pan mode, if the free text annotation mode is entered, the PDF Viewer con
 
 Refer to the following code sample to switch to the Free Text annotation mode.
 
-{% tabs %}
-{% highlight html tabtitle="Standalone" %}
-
-    <!--Element to set free text annotation mode-->
-    <button id="set" onclick="addAnnot()">FreeText</button>
-    <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
-    </div>
-    <script>
-        function addAnnot() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('FreeText');
-        }
-    </script>
-
-{% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
-
-    <!--Element to set free text annotation mode-->
-    <button id="set" onclick="addAnnot()">FreeText</button>
-    <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
-    </div>
-    <script>
-        function addAnnot() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('FreeText');
-        }
-    </script>
-
-{% endhighlight %}
-{% endtabs %}
-
-
 ```html
-
+    <!--Element to set free text annotation mode-->
+    <button id="set" onclick="addAnnot()">FreeText</button>
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
+    </div>
+    <script>
+        function addAnnot() {
+            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+            pdfViewer.annotation.setAnnotationMode('FreeText');
+        }
+    </script>
 ```
 
 ## Editing the properties of free text annotation
@@ -132,7 +108,7 @@ Refer to the following code sample to set the default free text annotation setti
 
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").FreeTextSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerFreeTextSettings { FillColor = "green", BorderColor = "blue", FontColor = "yellow" }).Render()
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").FreeTextSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerFreeTextSettings { FillColor = "green", BorderColor = "blue", FontColor = "yellow" }).Render()
 </div>
 ```
 
@@ -140,6 +116,6 @@ You can also enable the autofit support for free text annotation by using the En
 
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").FreeTextSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerFreeTextSettings { EnableAutoFit = true }).Render()
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").FreeTextSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerFreeTextSettings { EnableAutoFit = true }).Render()
 </div>
 ```
