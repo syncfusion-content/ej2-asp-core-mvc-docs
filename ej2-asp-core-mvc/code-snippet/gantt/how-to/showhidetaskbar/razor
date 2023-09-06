@@ -1,0 +1,40 @@
+<div class="switch-container">
+    <label for="switch" class="switch">Show/Hide Taskbar</label>
+    @Html.EJS().Switch("switch").Checked(false).Change("Change").Render()
+</div>
+
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate(
+      "StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").Child("SubTasks")).QueryTaskbarInfo("queryTaskbarInfo").QueryCellInfo("queryCellInfo").Render()
+
+<script type="text/javascript">
+    var switchChecked = false;
+    function Change(args) {
+        switchChecked = args.checked;
+        var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+        ganttObj.refresh();
+    }
+    function queryTaskbarInfo(args) {
+        if (switchChecked && args.data.ganttProperties.taskId == 1) {
+            for (var i = 0; i < args.rowElement.children[0].children.length; i++) {
+                args.rowElement.children[0].children[i].style.display = 'none';
+            }
+        }
+    }
+    function queryCellInfo(args) {
+        if (switchChecked && args.data.ganttProperties.taskId == 1) {
+            args.cell.innerText = '';
+        }
+    }
+</script>
+
+<style>
+    .switch-container {
+        display: flex;
+        align-items: center;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .switch {
+        margin-left: 10px;
+    }
+</style>
