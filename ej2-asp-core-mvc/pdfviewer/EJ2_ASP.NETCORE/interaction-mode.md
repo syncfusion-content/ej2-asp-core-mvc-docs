@@ -60,7 +60,7 @@ You can switch the interaction mode of PDF Viewer by using the following code sn
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
-                   InteractionMode=Syncfusion.EJ2.PdfViewer.InteractionMode.Pan>
+                   InteractionMode=@Syncfusion.EJ2.PdfViewer.InteractionMode.Pan>
     </ejs-pdfviewer>
 </div>
 
@@ -72,7 +72,7 @@ You can switch the interaction mode of PDF Viewer by using the following code sn
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
                    documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
-                   InteractionMode=Syncfusion.EJ2.PdfViewer.InteractionMode.Pan>
+                   InteractionMode=@Syncfusion.EJ2.PdfViewer.InteractionMode.Pan>
     </ejs-pdfviewer>
 </div>
 

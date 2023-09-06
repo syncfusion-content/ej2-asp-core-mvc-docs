@@ -138,8 +138,3 @@ We provided support to undo/redo the Form Field actions that are performed at ru
 
 {% endhighlight %}
 {% endtabs %}
-
-
-```html
-
-```
