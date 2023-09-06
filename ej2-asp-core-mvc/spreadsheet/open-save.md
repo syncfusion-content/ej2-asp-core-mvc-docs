@@ -140,6 +140,33 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 {% endtabs %}
 {% endif %}
 
+### Open an excel file in the uploader success event
+
+You can achieve this by using the uploader `success` event. In this event, you can get the uploaded file data in the argument and import the uploaded Excel into the spreadsheet by using the `open` method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-uploader/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opencontroller.cs" %}
+{% include code-snippet/spreadsheet/open-uploader/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-uploader/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opencontroller.cs" %}
+{% include code-snippet/spreadsheet/open-uploader/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Supported file formats
 
 The following list of Excel file formats are supported in Spreadsheet:
