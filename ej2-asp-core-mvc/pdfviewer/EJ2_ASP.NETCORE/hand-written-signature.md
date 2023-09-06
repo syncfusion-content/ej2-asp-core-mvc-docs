@@ -18,21 +18,25 @@ The following code snippet describes how to enable the handwritten signature in 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                enableHandwrittenSignature="true">
+    </ejs-pdfviewer>
+</div>
+
 {% endhighlight %}
 {% highlight html tabtitle="Server-Backed" %}
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                serviceUrl="/api/PdfViewer"
+                documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                enableHandwrittenSignature="true">
+    </ejs-pdfviewer>
+</div>
 
 {% endhighlight %}
 {% endtabs %}
-
-
-```html
-<ejs-pdfviewer id="pdfviewer1"
-               serviceUrl="/api/PdfViewer"
-               documentPath="HTTP Succinctly.pdf"
-               enableHandwrittenSignature="true">
-</ejs-pdfviewer>
-
-```
 
 ## Adding a handwritten signature to the PDF document
 
@@ -62,19 +66,31 @@ Refer to the following code snippet to set the default handwritten signature set
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                style="height:600px"
+                documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                handWrittenSignatureSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHandWrittenSignatureSettings {Opacity=0.5,StrokeColor="red",Thickness=3})">
+    </ejs-pdfviewer>
+</div>
+
 {% endhighlight %}
 {% highlight html tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                serviceUrl="/api/PdfViewer"
+                documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                handWrittenSignatureSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHandWrittenSignatureSettings {Opacity=0.5,StrokeColor="red",Thickness=3})">
+    </ejs-pdfviewer>
+</div>
+
 
 {% endhighlight %}
 {% endtabs %}
 
 
 ```html
-<ejs-pdfviewer id="pdfviewer1"
-               serviceUrl="/api/PdfViewer"
-               documentPath="HTTP Succinctly.pdf"
-               handWrittenSignatureSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHandWrittenSignatureSettings {Opacity=0.5,StrokeColor="red",Thickness=3})">
-</ejs-pdfviewer>
 
 ```
 

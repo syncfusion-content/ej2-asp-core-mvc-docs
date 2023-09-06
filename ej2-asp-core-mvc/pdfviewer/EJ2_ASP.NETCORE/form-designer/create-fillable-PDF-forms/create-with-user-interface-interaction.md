@@ -32,7 +32,7 @@ We should inject FormDesigner module and set enableFormDesignerToolbar as true t
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   documentPath=""https://cdn.syncfusion.com/content/pdf/form-designer.pdf""
+                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf"
                    enableFormDesignerToolbar="true">
     </ejs-pdfviewer>
 </div>
@@ -44,7 +44,7 @@ We should inject FormDesigner module and set enableFormDesignerToolbar as true t
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=""https://cdn.syncfusion.com/content/pdf/form-designer.pdf""
+                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf"
                    enableFormDesignerToolbar="true">
     </ejs-pdfviewer>
 </div>
@@ -97,7 +97,7 @@ We provided support to undo/redo the Form Field actions that are performed at ru
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   documentPath=""https://cdn.syncfusion.com/content/pdf/form-designer.pdf""
+                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf"
                    enableFormDesignerToolbar="true">
     </ejs-pdfviewer>
 </div>
@@ -121,7 +121,7 @@ We provided support to undo/redo the Form Field actions that are performed at ru
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=""https://cdn.syncfusion.com/content/pdf/form-designer.pdf""
+                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf"
                    enableFormDesignerToolbar="true">
     </ejs-pdfviewer>
 </div>

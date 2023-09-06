@@ -29,6 +29,7 @@ The PDF Viewer provides API for user interactions options provided in its built-
 **Step 3:** Add EJ2 toolbar for performing primary actions like Open,Previous page,Next page,Go to page,Print and Download using the following code snippet.,
 
 ```html
+
 <ejs-toolbar id="topToolbar" height="56px">
     <e-toolbar-items>
         <e-toolbar-item prefixIcon="e-pv-open-document-icon" tooltipText="Open" align="Left" click="openPage" id="Openpage"></e-toolbar-item>
@@ -40,10 +41,8 @@ The PDF Viewer provides API for user interactions options provided in its built-
         <e-toolbar-item prefixIcon="e-pv-download-document-icon" tooltipText="Download" align="Right" click="downloadClicked"></e-toolbar-item>
     </e-toolbar-items>
 </ejs-toolbar>
-<input type="file"
-       id="fileUpload"
-       accept=".pdf"
-       style="display:block;visibility:hidden;width:0;height:0;">
+<ejs-pdfviewer id="pdfviewer" style="height:641px" enableToolbar="false" enableNavigationToolbar="false" documentLoad="documentLoaded" pageChange="pageChanged"></ejs-pdfviewer>
+<input type="file" id="fileUpload" accept=".pdf" style="display:block;visibility:hidden;width:0;height:0;">
 ```
 
 **Step 4:** Add EJ2 toolbar for performing magnification actions in PDF Viewer using the following code snippet.,
@@ -65,11 +64,6 @@ The PDF Viewer provides API for user interactions options provided in its built-
 
 ```html
 <style>
-   .control-section {
-        width: 100%;
-        height: 716px;
-    }
-
     #magnificationToolbar {
         background: transparent;
         height: auto;
@@ -100,6 +94,7 @@ The PDF Viewer provides API for user interactions options provided in its built-
         top: 0px;
         z-index: 1001;
     }
+
     .material .e-pv-current-page-number {
         border-width: 1px;
     }
@@ -128,11 +123,13 @@ The PDF Viewer provides API for user interactions options provided in its built-
         font-size: 12px;
     }
 
-    .e-pv-download-document-icon::before {
+    #topToolbar .e-pv-download-document-icon::before {
+        padding-left: 4px;
         content: '\e914';
     }
 
-    .e-pv-print-document-icon::before {
+    #topToolbar .e-pv-print-document-icon::before {
+        padding-left: 1px;
         content: '\e917';
     }
 
@@ -155,6 +152,7 @@ The PDF Viewer provides API for user interactions options provided in its built-
     .e-pv-fit-page::before {
         content: '\e91b';
     }
+
     .e-pv-open-document-icon::before {
         content: '\e91c';
     }
@@ -173,14 +171,13 @@ N>The icons are embedded in the font file used in the previous code snippet.
 **Step 6:** Add the following scripts for performing user interaction in PDF Viewer in code behind.
 
 ```html
-<script>
+<script type="text/javascript">
     var currentPageBox
     var matchCase = false;
     var filename;
     window.onload = function () {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-        pdfViewer.serviceUrl = window.baseurl + 'api/PdfViewer';
-        pdfViewer.load("Hive_Succinctly.pdf", null);
+        pdfViewer.documentPath = "https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf";
         currentPageBox = document.getElementById('currentPage');
         currentPageBox.value = '1';
         document.getElementById('fileUpload').addEventListener('change', readFile, false);
@@ -203,6 +200,8 @@ N>The icons are embedded in the font file used in the previous code snippet.
             }
         });
     }
+
+
     function openPage() {
         document.getElementById('fileUpload').click();
     }

@@ -62,14 +62,45 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 
 * **Show/Hide toolbar using showToolbar as in the following code snippet**
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="showToolbar">
+    </ejs-pdfviewer>
+</div>
+
 <script>
-    window.onload = function () {
+    function showToolbar() {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         pdfViewer.toolbar.showToolbar(false);
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="showToolbar">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    function showToolbar() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.toolbar.showToolbar(false);
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Show/Hide the default toolbaritem
 
@@ -78,14 +109,14 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 * **Show/Hide toolbaritem using toolbarSettings as in the following code snippet.**
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight html tabtitle="Standalone" %} 
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableToolbar="true"
-                   toolbarSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings { ShowTooltip = true, ToolbarItem = "OpenOption"  })">
+                   toolbarSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings  { ShowTooltip = true, ToolbarItems = "OpenOption"  })">
     </ejs-pdfviewer>
 </div>
 
@@ -98,7 +129,7 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
                    serviceUrl="/api/PdfViewer"
                    documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableToolbar="true"
-                   toolbarSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings { ShowTooltip = true, ToolbarItem = "OpenOption"  })">
+                   toolbarSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings { ShowTooltip = true, ToolbarItems = "OpenOption"  })">
     </ejs-pdfviewer>
 </div>
 
@@ -107,14 +138,45 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 
 * **Show/Hide toolbaritem using showToolbaritem as in the following code snippet**
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="showToolbar">
+    </ejs-pdfviewer>
+</div>
+
 <script>
-    window.onload = function () {
+    function showToolbar() {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         pdfViewer.toolbar.showToolbarItem(new Array("DownloadOption"), true);
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="showToolbar">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    function showToolbar() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.toolbar.showToolbarItem(new Array("DownloadOption"), true);
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## See also
 
