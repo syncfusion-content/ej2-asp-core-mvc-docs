@@ -29,7 +29,6 @@ Using addFormField method, the form fields can be added to the PDF document prog
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 ```html
-
     <div style="width:100%;height:600px">
          @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/form-designer.pdf").DocumentLoad("documentLoad").DownloadEnd("documentLoad").Render()
     </div>
@@ -64,7 +63,6 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 ```html
-
     <div style="width:100%;height:600px">
          @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/form-designer.pdf").DocumentLoad("documentLoad").DownloadEnd("documentLoad").Render()
     </div>
@@ -103,7 +101,6 @@ Using deleteFormField method, the form field can be deleted programmatically. We
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 ```html
-
     <div style="width:100%;height:600px">
          @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/form-designer.pdf").DocumentLoad("documentLoad").DownloadEnd("documentLoad").Render()
     </div>
@@ -112,7 +109,7 @@ Using deleteFormField method, the form field can be deleted programmatically. We
             var viewer = document.getElementById('pdfviewer').ej2_instances[0];
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150,Height: 24 } });
-            viewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0] });
+            viewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0]);
            }
     </script>
 ```
@@ -128,7 +125,7 @@ Using deleteFormField method, the form field can be deleted programmatically. We
             var viewer = document.getElementById('pdfviewer').ej2_instances[0];
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150,Height: 24 } });
-            viewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0] });
+            viewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0]);
            }
     </script>
 ```
@@ -146,11 +143,12 @@ You can invoke download action using following code snippet.
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 ```html
-    <div style="width:100%;height:600px">
-          @Html.EJS().PdfViewer("pdfviewer").EnableDownload(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
-    </div>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").DocumentLoad("download").EnableDownload(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+
 <script>
-    window.onload = function () {
+    function download() {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         pdfViewer.download();
     }
@@ -161,10 +159,10 @@ You can invoke download action using following code snippet.
 {% highlight html tabtitle="Server-Backed" %}
 ```html
     <div style="width:100%;height:600px">
-          @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableDownload(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+          @Html.EJS().PdfViewer("pdfviewer").DocumentLoad("download").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableDownload(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
     </div>
 <script>
-    window.onload = function () {
+    function download() {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         pdfViewer.download();
     }
@@ -186,11 +184,12 @@ You can invoke print action using the following code snippet.,
 {% highlight html tabtitle="Standalone" %}
 
 ```html
-    <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").EnablePrint(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
-    </div>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").EnablePrint(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+
 <script>
-    window.onload = function () {
+    function print() {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         pdfViewer.print.print();
     }
@@ -201,11 +200,12 @@ You can invoke print action using the following code snippet.,
 {% highlight html tabtitle="Server-Backed" %}
 
 ```html
-    <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnablePrint(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
-    </div>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnablePrint(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+
 <script>
-    window.onload = function () {
+    function print() {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         pdfViewer.print.print();
     }

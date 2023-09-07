@@ -55,20 +55,10 @@ The stroke color, border thickness, and opacity of the handwritten signature can
 
 Refer to the following code snippet to set the default handwritten signature settings.
 
-{% tabs %}
-{% highlight html tabtitle="Standalone" %}
-```html
-@Html.EJS().PdfViewer("pdfviewer").HandWrittenSignatureSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerHandWrittenSignatureSettings { Opacity = 1, Thickness = 2 }).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
-
-```
-{% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
 ```html
 @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).HandWrittenSignatureSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerHandWrittenSignatureSettings { Opacity = 1, Thickness = 2 }).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
 
 ```
-{% endhighlight %}
-{% endtabs %}
 
 ## See also
 

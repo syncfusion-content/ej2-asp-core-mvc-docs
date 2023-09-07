@@ -106,7 +106,7 @@ You can export the form fields as JSON file in code behind as the following code
 <script>
     function OnExportFormFieldsClick() {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-        pdfViewer.exportFormFields();
+         pdfViewer.exportFormFields(null,'Json');
     }
 </script>
 ```
@@ -120,7 +120,7 @@ You can export the form fields as JSON file in code behind as the following code
 <script>
     function OnExportFormFieldsClick() {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-        pdfViewer.exportFormFields();
+         pdfViewer.exportFormFields(null,'Json');
     }
 </script>
 ```

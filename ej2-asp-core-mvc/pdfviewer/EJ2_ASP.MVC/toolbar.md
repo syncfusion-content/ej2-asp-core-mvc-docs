@@ -37,9 +37,9 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 ```html
-    <div style="width:100%;height:600px">
-         @Html.EJS().PdfViewer("pdfviewer").EnableToolbar(false).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
-    </div>
+<div style="width:100%;height:600px">
+     @Html.EJS().PdfViewer("pdfviewer").EnableToolbar(false).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
 ```
 {% endhighlight %}
 {% highlight html tabtitle="Server-Backed" %}
@@ -54,12 +54,13 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 * **Show/Hide toolbar using showToolbar as in the following code snippet.**
 
 ```html
-    <script>
-       window.onload = function () {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.toolbar.showToolbar(false);
-        }
-    </script>
+<button id="viewer" onclick="enableToolbar()">EnableToolbar</button>
+<script>
+    function enableToolbar() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.toolbar.showToolbar(true);
+    }
+</script>
 ```
 
 ## Show/Hide the default toolbaritem
@@ -72,33 +73,37 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 {% highlight html tabtitle="Standalone" %}
 
 ```html
-    <div style="width:100%;height:600px">
-     @Html.EJS().PdfViewer("pdfviewer").EnableToolbar(false).ToolbarSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings{ ShowTooltip = true, ToolbarItem = "OpenOption" ).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
-    </div>
+<button id="viewer" onclick="enableToolbarItem()">EnableToolbarItem</button>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").EnableToolbar(true).ToolbarSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings { ShowTooltip = true, ToolbarItems = "OpenOption" }).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+
+<script>
+    function enableToolbarItem() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.toolbar.showToolbarItem(new Array("DownloadOption"), true);
+    }
+</script>
 ```
 
 {% endhighlight %}
 {% highlight html tabtitle="Server-Backed" %}
 
 ```html
-    <div style="width:100%;height:600px">
+<button id="viewer" onclick="enableToolbarItem()">EnableToolbarItem</button>
+<div style="width:100%;height:600px">
      @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableToolbar(false).ToolbarSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings{ ShowTooltip = true, ToolbarItem = "OpenOption" ).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
-    </div>
+</div>
+<script>
+    function enableToolbarItem() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.toolbar.showToolbarItem(new Array("DownloadOption"), true);
+    }
+</script>
 ```
 
 {% endhighlight %}
 {% endtabs %}
-
-* **Show/Hide toolbaritem using showToolbaritem as in the following code snippet.**
-
-```html
-    <script>
-       window.onload = function () {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.toolbar.showToolbarItem(new Array("DownloadOption"),true);
-        }
-    </script>
-```
 
 ## See also
 
