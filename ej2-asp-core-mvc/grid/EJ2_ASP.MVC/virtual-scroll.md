@@ -197,7 +197,7 @@ this.dataManager = new DataManager({
     </ColumnsDirective>
 </GridComponent>
 <div className="pagearea2">
-    <ButtonComponent cssClass='e-info nxtbtn' onClick={this.nxtBtnClick} style={{ width: '100%' }}>Load Next Set...</ButtonComponent>
+    <ButtonComponent cssClass='e-info nxtbtn' onClick={this.nxtBtnClick} style="width:100%">Load Next Set...</ButtonComponent>
 </div>
 ```
 
