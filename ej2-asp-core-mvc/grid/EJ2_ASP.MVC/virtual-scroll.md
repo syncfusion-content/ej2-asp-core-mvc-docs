@@ -187,7 +187,7 @@ this.dataManager = new DataManager({
 
 ```csharp
 <div className="pagearea1">
-    <ButtonComponent cssClass='e-info prevbtn' onClick={this.prevBtnClick} style={{ width: '100%' }}>Load Previous Set...</ButtonComponent>
+    <ButtonComponent cssClass='e-info prevbtn' onClick={this.prevBtnClick} style="width:100%">Load Previous Set...</ButtonComponent>
 </div>
 
 <GridComponent id='grid' ref={g => this.grid = g} dataSource={this.dataManager} enableVirtualization={true} pageSettings={this.pageSettings} height={360} beforeDataBound={this.beforeDataBound} >
