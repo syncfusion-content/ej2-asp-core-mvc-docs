@@ -166,7 +166,7 @@ You have to map the text content based on locale like following script in sample
                         'Underline context': 'أكد',
                         'Strikethrough context': 'يتوسطه',
                         // tslint:disable-next-line:max-line-length
-                        'Server error': 'خدمة الانترنت لا يستمع. يعتمد قوات الدفاع الشعبي المشاهد على خدمة الويب لجميع ميزاته. يرجى بدء خدمة الويب للمتابعة.'
+                        'Server error': 'خدمة الانترنت لا يستمع. يعتمد قوات الدفاع الشعبي المشاهد على خدمة الويب لجميع ميزاته. يرجى بدء خدمة الويب للمتابعة.',
                         'Open text': 'افتح',
                         'First text': 'الصفحة الأولى',
                         'Previous text': 'الصفحة السابقة',
