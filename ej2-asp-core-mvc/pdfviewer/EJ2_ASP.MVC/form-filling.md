@@ -3,7 +3,7 @@ layout: post
 title: Form Filling in ##Platform_Name## Pdfviewer Component
 description: Learn here all about Form Filling in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Form Filling
+control: PDF Viewer
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -76,23 +76,6 @@ The PDF Viewer control provides the support to import and export form fields usi
 
 You can import the form fields using JSON file or JSON object in code behind like the below code sample.
 
-{% tabs %}
-{% highlight html tabtitle="Standalone" %}
-```html
-<button id="viewer" onclick="OnImportFormFieldsClick()">Import FormFields</button>
-<div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/form-filling-document.pdf").Render()
-</div>
-<script>
-    function OnImportFormFieldsClick() {
-        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-        //The json file has been placed inside the App_Data folder.);
-        pdfViewer.importFormFields("D:/PDFViewer/Examples/mvcsample/App_Data/ImportFormFields.json");
-    }
-</script>
-```
-{% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
 ```html
 <button id="viewer" onclick="OnImportFormFieldsClick()">Import FormFields</button>
 <div style="width:100%;height:600px">
@@ -106,8 +89,6 @@ You can import the form fields using JSON file or JSON object in code behind lik
     }
 </script>
 ```
-{% endhighlight %}
-{% endtabs %}
 
 N>The JSON file for importing the form fields should be placed in the desired location and the path should be provided correctly.
 
