@@ -336,30 +336,7 @@ Using the `exportFormFields` method, the form field data can be exported in the 
 
 The following code explains how to export the form field data as FDF.
 
-{% tabs %}
-{% highlight js tabtitle="Standalone" %}
-
-<button id="exportFdf" onclick="exportFdf()">Export FDF</button>
-
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf">
-    </ejs-pdfviewer>
-</div>
-
-<script>
-    // Event triggers on Export FDF button click.
-    function exportFdf() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        // Data must be the desired path for the exported document.
-        viewer.exportFormFields(null, FormFieldDataFormat.Fdf);
-    }
-</script>
-
-
-{% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
+```html
 
 <button id="exportFdf" onclick="exportFdf()">Export FDF</button>
 <button id="importFdf" onclick="importFdf()">Import FDF</button>
@@ -388,36 +365,13 @@ The following code explains how to export the form field data as FDF.
     }
 </script>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ### Export and import as XFDF
 
 The following code explains how to export the form field data as XFDF.
 
-{% tabs %}
-{% highlight js tabtitle="Standalone" %}
-
-<button id="exportXfdf" onclick="exportXfdf()">Export XFDF</button>
-
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf">
-    </ejs-pdfviewer>
-</div>
-
-<script>
-    // Event triggers on Export XFDF button click.
-    function exportXfdf() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        // Data must be the desired path for the exported document.
-        viewer.exportFormFields(null, FormFieldDataFormat.Xfdf);
-    }
-</script>
-
-{% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
+```html
 
 <button id="exportXfdf" onclick="exportXfdf()">Export XFDF</button>
 <button id="importXfdf" onclick="importXfdf()">Import XFDF</button>
@@ -446,36 +400,13 @@ The following code explains how to export the form field data as XFDF.
     }
 </script>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ### Export and import as JSON
 
 The following code explains how to export the form field data as JSON.
 
-{% tabs %}
-{% highlight js tabtitle="Standalone" %}
-
-<button id="exportJson" onclick="exportJson()">Export JSON</button>
-
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf">
-    </ejs-pdfviewer>
-</div>
-
-<script>
-    // Event triggers on Export JSON button click.
-    function exportJson() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        // Data must be the desired path for the exported document.
-        viewer.exportFormFields(null, FormFieldDataFormat.Json);
-    }
-</script>
-
-{% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
+```html
 
 <button id="exportJson" onclick="exportJson()">Export JSON</button>
 <button id="importJson" onclick="importJson()">Import JSON</button>
@@ -504,8 +435,7 @@ The following code explains how to export the form field data as JSON.
     }
 </script>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ### Export and import as Object
 
@@ -513,44 +443,7 @@ The PDF Viewer control supports exporting the form field data as an object, and 
 
 The following code shows how to export the form field data as an object and import the form field data from that object into the current PDF document via a button click.
 
-{% tabs %}
-{% highlight js tabtitle="Standalone" %}
-
-<button id="exportDataAsObject" onclick="exportDataAsObject()">Export Object</button>
-
-<div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf">
-    </ejs-pdfviewer>
-</div>
-
-<script>
-    var exportedData;
-
-    // Event triggers on Export Object button click.
-    function exportDataAsObject() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-
-        // Export the form field data to an FDF object.
-        viewer.exportFormFieldsAsObject(FormFieldDataFormat.Fdf).then(value => {
-            exportedData = value;
-        })
-
-        //// Export the form field data to an XFDF object.
-        //viewer.exportFormFieldsAsObject(FormFieldDataFormat.Xfdf).then(value => {
-        //    exportedData = value;
-        //})
-
-        //// Export the form field data to an JSON object.
-        //viewer.exportFormFieldsAsObject(FormFieldDataFormat.Json).then(value => {
-        //    exportedData = value;
-        //})
-    }
-</script>
-
-{% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
+```html
 
 <button id="exportDataAsObject" onclick="exportDataAsObject()">Export Object</button>
 <button id="importData" onclick="importData()">Import Data</button>
@@ -601,9 +494,7 @@ The following code shows how to export the form field data as an object and impo
     }
 </script>
 
-{% endhighlight %}
-{% endtabs %}
-
+```
 
 ## Signature and initial fields settings
 
