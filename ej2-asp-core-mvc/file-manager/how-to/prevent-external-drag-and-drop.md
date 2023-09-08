@@ -10,7 +10,7 @@ documentation: ug
 
 # How to prevent external drag and drop
 
-External drag and drop of files or folders can be prevented by utilizing the [`created`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_Created) event and configuring the `uploadObj's` `dropArea` as null. Additionally, eliminate the content within an empty folder by applying a display style of none.
+In the Blazor FileManager component, external drag and drop of files or folders can be prevented by utilizing the [`created`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_Created) event and by utilizing Uploader component instances, specifically the `uploadObj’s`, and configuring the `uploadObj's` `dropArea` as null.
 
 The following example demonstrates how to prevent external drag and drop functionality within the File Manager component.
 
