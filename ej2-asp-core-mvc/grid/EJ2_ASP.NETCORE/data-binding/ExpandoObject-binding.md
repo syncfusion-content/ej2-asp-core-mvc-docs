@@ -67,3 +67,4 @@ You can achieve ExpandoObject complex data binding in the datagrid by using the 
 N> You can perform the Data operations and CRUD operations for Complex ExpandoObject binding fields too.
 
 The following image represents ExpandoObject complex data binding,
+![Grid with ExpandoObject Binding](images/ExpandoObject-binding.png)

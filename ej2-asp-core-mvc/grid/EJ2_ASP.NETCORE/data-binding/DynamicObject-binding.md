@@ -69,3 +69,4 @@ You can achieve DynamicObject complex data binding in the datagrid by using the 
 N> You can perform the Data operations and CRUD operations for Complex DynamicObject binding fields too.
 
 The following image represents DynamicObject complex data binding,
+![Grid with DynamicObject Binding](images/DynamicObject-binding.png)
