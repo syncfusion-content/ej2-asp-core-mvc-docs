@@ -39,45 +39,73 @@ Anti-forgery token is used between the client and server to prevent cross-site r
 ## Server-side configuration for startup page:
 This section explains how to add the anti forgery tokens header in startup page.
 
-{% if page.publishingplatform == "aspnet-core" %}
+```csharp
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/how-to/razor-page/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Index.cshtml.cs" %}
-{% include code-snippet/rich-text-editor/how-to/razor-page/index.cshtml.cs %}
-{% endhighlight %}
-{% endtabs %}
+builder.Services.AddAntiforgery(o => o.HeaderName = "xsrf-token");
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Index.cshtml.cs" %}
-{% include code-snippet/rich-text-editor/how-to/razor-page/index.cshtml.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+```
 
 ## Server-side configuration for save action and remove action:
 This section explains how to handle the server-side action for saving and removing the image from server.
 
-{% if page.publishingplatform == "aspnet-core" %}
+```csharp
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/how-to/razor-page/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Index.cshtml.cs" %}
-{% include code-snippet/rich-text-editor/how-to/razor-page/index.cshtml.cs %}
-{% endhighlight %}
-{% endtabs %}
+[AcceptVerbs("Post")]
+    public IActionResult OnPostSave(IList<IFormFile> UploadFiles)
+    {
+        try
+        {
+            foreach (var file in UploadFiles)
+            {
+                string filename = hostingEnv.WebRootPath + $@"\\images\{file.FileName}";
+                if (!System.IO.File.Exists(filename))
+                {
+                    using (FileStream fs = System.IO.File.Create(filename))
+                    {
+                        file.CopyTo(fs);
+                        fs.Flush();
+                    }
+                }
+                else
+                {
+                    Response.Clear();
+                    Response.StatusCode = 204;
+                    Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "File already exists.";
+                }
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+            }
+        }
+        catch (Exception e)
+        {
+            Response.Clear();
+            Response.ContentType = "application/json; charset=utf-8";
+            Response.StatusCode = 204;
+            Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "No Content";
+            Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = e.Message;
+        }
+        return Content("");
+    }
+    [AcceptVerbs("Post")]
+    public IActionResult OnPostRemove(string UploadFiles)
+    {
+        try
+        {
+            string filename = hostingEnv.WebRootPath + $@"\\images\{UploadFiles}";
+            if (System.IO.File.Exists(filename))
+            {
+                System.IO.File.Delete(filename);
+            }
 
-{% tabs %}
-{% highlight c# tabtitle="Index.cshtml.cs" %}
-{% include code-snippet/rich-text-editor/how-to/razor-page/index.cshtml.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+        }
+        catch (Exception e)
+        {
+            Response.Clear();
+            Response.ContentType = "application/json; charset=utf-8";
+            Response.StatusCode = 204;
+            Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "No Content";
+            Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = e.Message;
+        }
+        return Content("");
+    }
+
+```
