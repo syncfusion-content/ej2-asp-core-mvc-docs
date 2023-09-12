@@ -25,16 +25,32 @@ The default toolbar of PDF Viewer contains the following navigation options
 
 You can enable/disable page navigation option in PDF Viewer using the following code snippet.,
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableNavigation="false">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableNavigation="false">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ![Alt text](./images/navigation.png)
 
@@ -43,16 +59,31 @@ You can enable/disable page navigation option in PDF Viewer using the following 
 The Bookmarks saved in PDF files are loaded and made ready for easy navigation.
 You can enable/disable bookmark navigation by using the following code snippet.,
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableBookmark="true">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableBookmark="true">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Alt text](./images/bookmark.png)
 
@@ -61,16 +92,31 @@ You can enable/disable bookmark navigation by using the following code snippet.,
 Thumbnails is the miniature representation of actual pages in PDF files. This feature displays thumbnails of the pages and allows navigation.
 You can enable/disable thumbnail navigation by using the following code snippet.,
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableThumbnail="true">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableThumbnail="true">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Alt text](./images/thumbnail.png)
 
@@ -86,29 +132,59 @@ Table of contents navigation allows users to navigate to different parts of a PD
 
 You can enable/disable link navigation by using the following code snippet.,
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableHyperlink="true">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableHyperlink="true">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 You can change the open state of the hyperlink in the PDF Viewer by using the following code snippet,
 
-```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-                style="height:600px"
-                serviceUrl="/api/PdfViewer"
-                documentPath=@ViewBag.DocumentPath
-                hyperlinkOpenState="@(Syncfusion.EJ2.PdfViewer.LinkTarget.NewTab)">
-        </ejs-pdfviewer>
-    </div>
-```
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+            hyperlinkOpenState="@(Syncfusion.EJ2.PdfViewer.LinkTarget.NewTab)">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+            hyperlinkOpenState="@(Syncfusion.EJ2.PdfViewer.LinkTarget.NewTab)">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Alt text](./images/toc.png)
 
