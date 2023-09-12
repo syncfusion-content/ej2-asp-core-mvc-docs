@@ -12,30 +12,69 @@ documentation: ug
 
 The PDF Viewer supports downloading the loaded PDF file. You can enable/disable the download using the following code snippet.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableDownload="true">
+    </ejs-pdfviewer>
+</div>
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableDownload="true">
     </ejs-pdfviewer>
 </div>
-```
+{% endhighlight %}
+{% endtabs %}
 
 ![Alt text](./images/download.png)
 
 You can invoke download action using following code snippet.,
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf"
+                   enableDownload="true"
+                   documentLoad="documentLoaded">
+    </ejs-pdfviewer>
+</div>
 <script>
-    window.onload = function () {
+    function documentLoaded() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.download();
+    }
+</script>
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf"
+                   enableDownload="true"
+                   documentLoad="documentLoaded">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function documentLoaded() {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         pdfViewer.download();
     }
 </script>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## See also
 

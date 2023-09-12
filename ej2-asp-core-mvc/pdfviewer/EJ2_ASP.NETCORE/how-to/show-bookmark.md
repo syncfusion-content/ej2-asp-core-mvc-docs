@@ -21,12 +21,29 @@ The following steps are used to show the bookmark.
 
 **Step 2:** Use the following code snippet to Show the Bookmark.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableBookmark="true">
+    </ejs-pdfviewer>
+</div>
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableBookmark="true">
+    </ejs-pdfviewer>
+</div>
+{% endhighlight %}
+{% endtabs %}
+
+
 ```html
-<ejs-pdfviewer id="pdfviewer"
-               serviceUrl="/api/PdfViewer"
-               documentPath="PDF Succinctly.pdf"
-               enableBookmark="true">
-</ejs-pdfviewer>
+
 ```
 
 Download the sample [how to show bookmark](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Coresample-473210677.zip)
