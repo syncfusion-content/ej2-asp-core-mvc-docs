@@ -1,0 +1,15 @@
+@(Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).TaskFields(ts => ts.Id(
+            "TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Toolbar(new List<string>() {
+     "PdfExport" }).ToolbarClick("toolbarClick").PdfQueryTaskbarInfo("pdfQueryTaskbarInfo").Render())
+
+<script>
+    function toolbarClick(args) {
+        var ganttObj = document.getElementById("GanttContainer").ej2_instances[0];
+        if (args.item.id === "GanttContainer_pdfexport") {
+            ganttObj.pdfExport();
+        }
+    }
+    function pdfQueryTaskbarInfo(args) {
+        args.taskbar.progressColor = new ej.pdfexport.PdfColor(255, 85, 85);
+    }
+</script>
