@@ -1,4 +1,4 @@
-@Html.EJS().RichTextEditor("custom-font").ToolbarSettings(e => e.Items((object)ViewBag.toolbar)).FontFamily(f => f.Width("80px").Items((object)ViewBag.fontFamilyItems)).FontSize(f => f.Width("60px").Items((object)ViewBag.fontSizeItems)).ContentTemplate(@<div>
+@Html.EJS().RichTextEditor("custom-font").ToolbarSettings(e => e.Items((object)ViewBag.toolbar)).FontFamily(f => f.Width("80px").default("Arial").Items((object)ViewBag.fontFamilyItems)).FontSize(f => f.Width("60px").default("10 px").Items((object)ViewBag.fontSizeItems)).ContentTemplate(@<div>
     <p>
         The Rich Text Editor control is WYSIWYG ('what you see is what you get') editor that provides the best user experience to create and update the content.
         Users can format their content using standard toolbar commands.
