@@ -39,7 +39,7 @@ ExpandoObject can be bound to datagrid by assigning to the DataSource property. 
 
 ## ExpandoObject Complex binding in ASP.Net MVC Grid Component
 
-You can achieve ExpandoObject complex data binding in the datagrid by using the dot(.) operator in the column.field. In the following examples, CustomerID.Name and ShipCountry.Country are complex data.
+You can achieve ExpandoObject complex data binding in the datagrid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight and Customer.ShipCountry are complex data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -14,16 +14,16 @@ Grid is a generic component which is strongly bound to a model type. There are c
 
 DynamicObject can be bound to datagrid by assigning to the DataSource property. Grid can also perform all kind of supported data operations and editing in DynamicObject.
 
-N> The GetDynamicMemberNames method of DynamicObject class must be overridden and return the property names to perform data operation and editing while using DynamicObject.
+N> The [`GetDynamicMemberNames`](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of DynamicObject class must be overridden and return the property names to perform data operation and editing while using DynamicObject.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/dynamicObject/tagHelper %}
+{% include code-snippet/grid/data-binding/dynamicObject-Binding/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="dynamicObject.cs" %}
-{% include code-snippet/grid/data-binding/dynamicObject/dynamicObject.cs %}
+{% include code-snippet/grid/data-binding/dynamicObject-Binding/dynamicObject.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,17 +31,17 @@ N> The GetDynamicMemberNames method of DynamicObject class must be overridden an
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/dynamicObject/razor %}
+{% include code-snippet/grid/data-binding/dynamicObject-Binding/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="dynamicObject.cs" %}
-{% include code-snippet/grid/data-binding/dynamicObject/dynamicObject.cs %}
+{% include code-snippet/grid/data-binding/dynamicObject-Binding/dynamicObject.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 ## DynamicObject Complex binding in ASP.Net MVC Grid Component
 
-You can achieve DynamicObject complex data binding in the datagrid by using the dot(.) operator in the column.field. In the following examples, CustomerID.Name and ShipCountry.Country are complex data.
+You can achieve DynamicObject complex data binding in the datagrid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight and Customer.ShipCountry are complex data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
