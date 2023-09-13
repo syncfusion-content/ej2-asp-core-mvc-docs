@@ -16,6 +16,8 @@ A DynamicObject can be bound to a data grid by assigning it to the DataSource pr
 
 N> You must override the [`GetDynamicMemberNames`](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of the DynamicObject class and return the property names to perform data operation and editing while using DynamicObject.
 
+The following code example shows how to bind DynamicObject datasource in grid using URL adaptor.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

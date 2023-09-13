@@ -14,6 +14,8 @@ The grid is a generic component that is firmly bound to a model type. There are 
 
 The ExpandoObject can be bound to the data grid by assigning it to the DataSource property. The grid can also perform all kinds of supported data operations and editing in ExpandoObject.
 
+The following code example shows how to bind ExpandoObject datasource in grid using URL adaptor.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
