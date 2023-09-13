@@ -1,18 +1,18 @@
 ---
 layout: post
 title: ExpandoObject binding in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about ExpandoObject binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn about ExpandoObject binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: ExpandoObject binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-## ExpandoObject binding in ASP.Net MVC Grid Component
+## ExpandoObject Binding in ASP.Net Core Grid Component
 
-Grid is a generic component which is strongly bound to a model type. There are cases when the model type is unknown during compile type. In such cases you can bound data to the grid as list of ExpandoObject.
+The grid is a generic component that is firmly bound to a model type. There are cases when the model type is unknown during the compile type. In such cases, bind data to the grid as a list of ExpandoObject.
 
-ExpandoObject can be bound to datagrid by assigning to the DataSource property. Grid can also perform all kind of supported data operations and editing in ExpandoObject.
+The ExpandoObject can be bound to the data grid by assigning it to the DataSource property. The grid can also perform all kinds of supported data operations and editing in ExpandoObject.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,9 +37,9 @@ ExpandoObject can be bound to datagrid by assigning to the DataSource property. 
 {% endtabs %}
 {% endif %}
 
-## ExpandoObject Complex binding in ASP.Net MVC Grid Component
+## ExpandoObject Complex Binding in ASP.Net Core Grid Component
 
-You can achieve ExpandoObject complex data binding in the datagrid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight and Customer.ShipCountry are complex data.
+You can achieve the ExpandoObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -64,7 +64,7 @@ You can achieve ExpandoObject complex data binding in the datagrid by using the 
 {% endtabs %}
 {% endif %}
 
-N> You can perform the Data operations and CRUD operations for Complex ExpandoObject binding fields too.
+N> Perform data and CRUD operations for Complex ExpandoObject binding fields as well.
 
-The following image represents ExpandoObject complex data binding,
+The following image represents ExpandoObject complex data binding.
 ![Grid with ExpandoObject Binding](images/ExpandoObject-binding.png)

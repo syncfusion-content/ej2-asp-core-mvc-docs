@@ -1,20 +1,20 @@
 ---
 layout: post
 title: DynamicObject binding in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about DynamicObject binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn about DynamicObject binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: DynamicObject binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-## DynamicObject binding in ASP.Net MVC Grid Component
+## DynamicObject Binding in ASP.Net MVC Grid Component
 
-Grid is a generic component which is strongly bound to a model type. There are cases when the model type is unknown during compile type. In such cases you can bound data to the grid as list of DynamicObject.
+The grid is a generic component that is firmly bound to a model type. There are cases when the model type is unknown during the compile type. In such cases, bind data to the grid as a list of DynamicObject.
 
-DynamicObject can be bound to datagrid by assigning to the DataSource property. Grid can also perform all kind of supported data operations and editing in DynamicObject.
+A DynamicObject can be bound to a data grid by assigning it to the DataSource property. The grid can also perform all kinds of supported data operations and editing in DynamicObject.
 
-N> The [`GetDynamicMemberNames`](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of DynamicObject class must be overridden and return the property names to perform data operation and editing while using DynamicObject.
+N> You must override the [`GetDynamicMemberNames`](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of the DynamicObject class and return the property names to perform data operation and editing while using DynamicObject.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,9 +39,9 @@ N> The [`GetDynamicMemberNames`](https://learn.microsoft.com/en-us/dotnet/api/sy
 {% endtabs %}
 {% endif %}
 
-## DynamicObject Complex binding in ASP.Net MVC Grid Component
+## DynamicObject Complex Binding in ASP.Net MVC Grid Component
 
-You can achieve DynamicObject complex data binding in the datagrid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight and Customer.ShipCountry are complex data.
+You can achieve DynamicObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -66,7 +66,7 @@ You can achieve DynamicObject complex data binding in the datagrid by using the 
 {% endtabs %}
 {% endif %}
 
-N> You can perform the Data operations and CRUD operations for Complex DynamicObject binding fields too.
+N>Perform data and CRUD operations for complex DynamicObject binding fields as well.
 
-The following image represents DynamicObject complex data binding,
+The following image represents DynamicObject complex data binding.
 ![Grid with DynamicObject Binding](images/DynamicObject-binding.png)
