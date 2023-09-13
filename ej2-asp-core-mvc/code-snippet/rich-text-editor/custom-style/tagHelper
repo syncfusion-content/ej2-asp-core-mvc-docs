@@ -1,7 +1,7 @@
 <ejs-richtexteditor id="custom-font">
-    <e-richtexteditor-fontfamily width="80px" items="@ViewBag.fontFamilyItems">
+    <e-richtexteditor-fontfamily default="Arial" width="80px" items="@ViewBag.fontFamilyItems">
     </e-richtexteditor-fontfamily>
-    <e-richtexteditor-fontsize width="60px" items="@ViewBag.fontsizeItems">
+    <e-richtexteditor-fontsize default="10 px" width="60px" items="@ViewBag.fontsizeItems">
     </e-richtexteditor-fontsize>
     <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
     <e-content-template>
