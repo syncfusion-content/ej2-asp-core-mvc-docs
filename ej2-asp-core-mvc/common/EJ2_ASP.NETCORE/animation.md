@@ -69,3 +69,25 @@ The `animate` method of `Animation` library can be used to animate the HTML elem
 ![animate the HTML element](images/animation.gif)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-animation)
+
+## Enable or disable animation globally
+
+Enable or disable animation for all ##Platform_Name## common controls globally by using the `setGlobalAnimation` method with one of the below options:
+
+* `GlobalAnimationMode.Enable` - Enables the animation for all components, regardless of the individual component's animation settings.
+* `GlobalAnimationMode.Disable` - Disables the animation for all components, regardless of the individual component's animation settings.
+* `GlobalAnimationMode.Default` - Animation is enabled or disabled based on the component's animation settings.
+
+In the below code snippet, animation is disabled.
+
+{% tabs %}
+{% highlight js tabtitle="~/_Layout.cshtml" %}
+
+<script>
+    ej.base.setGlobalAnimation(ej.base.GlobalAnimationMode.Disable);
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+> `setGlobalAnimation` method controls script-level animations only, and it is not applicable for direct CSS-level animations (animations defined from CSS classes or properties).
