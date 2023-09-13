@@ -1,7 +1,7 @@
 @{
     string[] exportGrids = { "FirstGrid", "SecondGrid" };
 }
-<ejs-grid id="FirstGrid" dataSource="@ViewBag.FirstGridData" allowPdfExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"PdfExport"})" exportGrids="exportGrids" allowPaging="true">
+<ejs-grid id="FirstGrid" dataSource="@ViewBag.FirstGridData" allowPdfExport="true" toolbarClick="toolbarClick" exportGrids="exportGrids" toolbar="@(new List<string>() {"PdfExport"})" allowPaging="true">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
@@ -24,7 +24,7 @@
         var firstGrid = document.getElementById("FirstGrid").ej2_instances[0];
         if (args.item.id === 'FirstGrid_pdfexport') {
             var appendPdfExportProperties = {
-                multipleExport: { type: 'NewPage' }
+                multipleExport: { type: "AppendToPage", blankSpace: 10 }
             };
             firstGrid.pdfExport(appendPdfExportProperties, true);
         }
