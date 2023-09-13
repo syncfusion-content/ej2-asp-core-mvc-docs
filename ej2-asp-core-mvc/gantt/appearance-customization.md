@@ -334,3 +334,49 @@ In Gantt, we can change the splitter position dynamically by using `setSplitterP
 {% endtabs %}
 {% endif %}
 
+## Customizing baseline appearance
+
+The [`queryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) function in your Gantt chart provides a convenient way to customize the appearance of baselines. This function allows you to access baseline elements and apply style modifications to meet your project's visual requirements.
+
+### Accessing baseline elements
+
+The `queryTaskbarInfo` function allows you to access baseline elements associated with taskbars in your Gantt chart. You can customize the baseline appearance by modifying its style properties. Here's an example of changing the background color of the baseline.
+
+```js
+queryTaskbarInfo: function(args) 
+{
+    var element = args.rowElement.querySelector('.e-baseline-bar ');
+    if (element) 
+    {
+        element.style.background = 'linear-gradient(red, yellow)';
+    }
+}
+
+```
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/appearance-and-styling/baseline-color-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Baseline-color.cs" %}
+{% include code-snippet/gantt/appearance-and-styling/baseline-color-cs1/baseline-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/appearance-and-styling/baseline-color-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Baseline-color.cs" %}
+{% include code-snippet/gantt/appearance-and-styling/baseline-color-cs1/baseline-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/baseline-color.png)
