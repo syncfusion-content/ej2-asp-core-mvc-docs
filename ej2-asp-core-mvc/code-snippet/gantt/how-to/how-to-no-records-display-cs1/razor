@@ -1,0 +1,13 @@
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate(
+      "StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").Child("SubTasks")).Locale("de-DE").Render()
+
+<script type="text/javascript">
+    ej.base.L10n.load({
+        'de-DE': {
+            'grid': {
+                "EmptyRecord": "Nothing to show here.",
+            }
+        }
+    });
+    ej.base.setCulture('de-DE');
+</script>
