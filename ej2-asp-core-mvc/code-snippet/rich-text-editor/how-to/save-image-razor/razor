@@ -1,5 +1,5 @@
 @Html.AntiForgeryToken()
-<ejs-richtexteditor id="defaulRTE" imageUploadSuccess="onUploadSuccess" imageUploadFailed="onUploadFailure" imageUploading="addTokens" imageRemoving="addTokens">
+<ejs-richtexteditor id="defaulRTE" imageUploadSuccess="onUploadSuccess" imageUploadFailed="onUploadFailure" imageUploading="addTokens" >
     <e-richtexteditor-insertimagesettings saveFormat=Base64 path=https://localhost:7088/images/ saveUrl="@Url.Content("/Index?handler=Save")" removeUrl="@Url.Content("/Index?handler=Remove")">
     </e-richtexteditor-insertimagesettings>
 </ejs-richtexteditor>
@@ -11,9 +11,8 @@
         }
     }
     function onUploadSuccess(args) {
-        alert("Success");
         if (args.operation === 'upload') {
-            console.log('success');
+            alert("Success");
         }
     }
     function onUploadFailure(args) {

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Save Image Server in ##Platform_Name## Rich Text Editor Control | Syncfusion
-description: Learn here all about Save Image Server in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn about Save Image Server in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Save Image Server
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Save and Remove action in ASP.NET Core Razor
+# Save and Remove Image in ASP.NET Core Razor
 
-The save action handler upload the image that needs to be specified in the [`saveUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_SaveUrl) property. The save handler receives the submitted image and manages the save process in server.
+The save action handler uploads the image that needs to be specified in the [`saveUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_SaveUrl) property. The save handler receives the submitted image and manages the save process on the server.
 
-Enabled the Cors and configured it with the Antiforgery token to provide proper security using the [`ImageUploading`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ImageUploading) and [`ImageRemoving`]() events. Set the [`SaveUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_SaveUrl) and [`RemoveUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_RemoveUrl) to the respective methods.
+Enable the Cors and configure it with the Anti-forgery token to provide proper security using the [`ImageUploading`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ImageUploading) events. Set the [`SaveUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_SaveUrl) and [`RemoveUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_RemoveUrl) to the respective methods.
 
-Anti-forgery token is used between the client and server to prevent cross-site request forgery (CSRF) attack. For more information on preventing CSRF attack, refer to the [`link.`](https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-7.0&viewFallbackFrom=aspnetcore-2.1#authentication-fundamentals)
+The anti-forgery token is used between the client and server to prevent cross-site request forgery (CSRF) attacks. For more information on preventing CSRF attacks, refer to this [`link.`](https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-7.0&viewFallbackFrom=aspnetcore-2.1#authentication-fundamentals)
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,9 +36,8 @@ Anti-forgery token is used between the client and server to prevent cross-site r
 {% endtabs %}
 {% endif %}
 
-## Server-side configuration for startup page:
-This section explains how to add the anti forgery tokens header in startup page.
-
+## Server-side Configuration for Startup Page
+This section explains adding the anti-forgery tokens header on the startup page.
 ```csharp
 
 builder.Services.AddAntiforgery(o => o.HeaderName = "xsrf-token");
@@ -54,8 +53,8 @@ builder.Services.AddCors(options =>
 
 ```
 
-## Server-side configuration for save action and remove action:
-This section explains how to handle the server-side action for saving and removing the image from server.
+## Server-side Configuration for Save and Remove Actions
+This section explains how to handle the server-side action for saving and removing the image from the server.
 
 ```csharp
 
