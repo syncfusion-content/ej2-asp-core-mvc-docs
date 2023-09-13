@@ -72,7 +72,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-an
 
 ## Enable or disable animation globally
 
-Enable or disable animation for all ASP.Net Core common controls globally by using the `setGlobalAnimation` method with one of the below options:
+Enable or disable animation for all ASP.Net Core controls globally by using the `setGlobalAnimation` method with one of the below options:
 
 * `GlobalAnimationMode.Enable` - Enables the animation for all components, regardless of the individual component's animation settings.
 * `GlobalAnimationMode.Disable` - Disables the animation for all components, regardless of the individual component's animation settings.
