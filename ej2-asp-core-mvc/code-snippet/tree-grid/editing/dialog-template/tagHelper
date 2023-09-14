@@ -16,13 +16,13 @@
 <script>
     function actionComplete(args) {
         if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-            var ajax = new ej.base.Ajax({
+            var fetch = new ej.base.Fetch({
                 url: "/Home/EditPartial", //render the partial view
                 type: "POST",
                 contentType: "application/json",
                 data: JSON.stringify({ value: args.rowData, isedit: args.requestType === 'beginEdit' })
             });
-            ajax.send().then(function (data) {
+            fetch.send().then(function (data) {
                 $("#dialogTemp").html(data); //Render the edit form with selected record
                 args.form.elements.namedItem((args.requestType === 'add' ? 'TaskId' : 'TaskName')).focus();
             }).catch(function (xhr) {

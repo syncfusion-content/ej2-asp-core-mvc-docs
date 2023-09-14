@@ -8,7 +8,6 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-
 # Text Markup Annotation in the ASP.NET Core PDF Viewer Control
 
 The PDF Viewer control provides the options to add, edit, and delete text markup annotations such as highlight, underline, and strikethrough annotations in the PDF document.
@@ -40,14 +39,15 @@ In the pan mode, if the highlight mode is entered, the PDF Viewer control will s
 
 Refer to the following code sample to switch to the highlight mode.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Highlight</button>
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath>
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 <script>
@@ -56,11 +56,34 @@ Refer to the following code sample to switch to the highlight mode.
         pdfViewer.annotation.setAnnotationMode('Highlight');
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Highlight</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Highlight');
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 Refer to the following code sample to switch back to normal mode from the highlight mode.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Highlight</button>
 <!--Element to set normal mode-->
@@ -68,8 +91,7 @@ Refer to the following code sample to switch back to normal mode from the highli
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath>
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 <script>
@@ -83,7 +105,35 @@ Refer to the following code sample to switch back to normal mode from the highli
         pdfViewer.annotation.setAnnotationMode('None');
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Highlight</button>
+<!--Element to set normal mode-->
+<button id="setNone" onclick="setNone()">Normal Mode</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Highlight');
+    }
+
+    function setNone() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('None');
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Underline a text
 
@@ -110,14 +160,15 @@ In the pan mode, if the underline mode is entered, the PDF Viewer control will s
 
 Refer to the following code sample to switch to the underline mode.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Underline</button>
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath>
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 <script>
@@ -126,11 +177,34 @@ Refer to the following code sample to switch to the underline mode.
         pdfViewer.annotation.setAnnotationMode('Underline');
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Underline</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Underline');
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 Refer to the following code sample to switch back to normal mode from the underline mode.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Underline</button>
 <!--Element to set normal mode-->
@@ -138,8 +212,7 @@ Refer to the following code sample to switch back to normal mode from the underl
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath>
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 <script>
@@ -153,7 +226,35 @@ Refer to the following code sample to switch back to normal mode from the underl
         pdfViewer.annotation.setAnnotationMode('None');
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Underline</button>
+<!--Element to set normal mode-->
+<button id="setNone" onclick="setNone()">Normal Mode</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Underline');
+    }
+
+    function setNone() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('None');
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Strikethrough a text
 
@@ -180,14 +281,15 @@ In the pan mode, if the strikethrough mode is entered, the PDF Viewer control wi
 
 Refer to the following code sample to switch to the strikethrough mode.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Strikethrough</button>
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath>
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 <script>
@@ -196,11 +298,34 @@ Refer to the following code sample to switch to the strikethrough mode.
         pdfViewer.annotation.setAnnotationMode('Strikethrough');
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Strikethrough</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Strikethrough');
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 Refer to the following code sample to switch back to normal mode from the strikethrough mode.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Strikethrough</button>
 <!--Element to set normal mode-->
@@ -208,8 +333,7 @@ Refer to the following code sample to switch back to normal mode from the strike
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath>
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 <script>
@@ -223,7 +347,35 @@ Refer to the following code sample to switch back to normal mode from the strike
         pdfViewer.annotation.setAnnotationMode('None');
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Strikethrough</button>
+<!--Element to set normal mode-->
+<button id="setNone" onclick="setNone()">Normal Mode</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Strikethrough');
+    }
+
+    function setNone() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('None');
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Deleting a text markup annotation
 
@@ -263,12 +415,13 @@ N>After editing the default color and opacity using the Edit Color tool and Edit
 
 Refer to the following code sample to set the default annotation settings.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    highlightSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHighlightSettings
             {Author="Guest User", Color="#ffff00", Opacity=0.9})"
                    underlineSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerUnderlineSettings
@@ -277,7 +430,26 @@ Refer to the following code sample to set the default annotation settings.
             {Author="Guest User", Color="#ff00ff", Opacity=0.9})">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   highlightSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHighlightSettings
+            {Author="Guest User", Color="#ffff00", Opacity=0.9})"
+                   underlineSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerUnderlineSettings
+            {Author="Guest User", Color="#00ffff", Opacity=0.9})"
+                   strikethroughSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStrikethroughSettings
+            {Author="Guest User", Color="#ff00ff", Opacity=0.9})">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Performing undo and redo
 
@@ -296,7 +468,9 @@ The undo and redo actions can be done by the following ways:
 
 Refer to the following code sample for calling undo and redo actions from the client-side.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <!--Element to call undo-->
 <button id="undo" onclick="Undo()">Undo</button>
 <!--Element to call redo-->
@@ -304,8 +478,7 @@ Refer to the following code sample for calling undo and redo actions from the cl
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath>
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 <script>
@@ -319,7 +492,35 @@ Refer to the following code sample for calling undo and redo actions from the cl
         pdfViewer.redo();
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<!--Element to call undo-->
+<button id="undo" onclick="Undo()">Undo</button>
+<!--Element to call redo-->
+<button id="redo" onclick="Redo()">Redo</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function Undo() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.undo();
+    }
+
+    function Redo() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.redo();
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Saving the text markup annotation
 
@@ -333,13 +534,28 @@ When the print tool is selected in the toolbar, the PDF document will be printed
 
 The PDF Viewer control provides an option to disable the text markup annotation feature. The code sample for disabling the feature is as follows.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   enableTextMarkupAnnotation=false
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    enableTextMarkupAnnotation=false
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath>
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}

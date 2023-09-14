@@ -27,14 +27,15 @@ In the pan mode, if the free text annotation mode is entered, the PDF Viewer con
 
 Refer to the following code sample to switch to the Free Text annotation mode.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <!--Element to set free text annotation mode-->
 <button id="set" onclick="addAnnot()">FreeText</button>
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath>
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 <script>
@@ -43,7 +44,28 @@ Refer to the following code sample to switch to the Free Text annotation mode.
         pdfViewer.annotation.setAnnotationMode('FreeText');
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<!--Element to set free text annotation mode-->
+<button id="set" onclick="addAnnot()">FreeText</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('FreeText');
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Editing the properties of free text annotation
 
@@ -110,27 +132,30 @@ The properties of the free text annotation can be set before creating the contro
 After editing the default values, they will be changed to the selected values.
 Refer to the following code sample to set the default free text annotation settings.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    freeTextSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerFreeTextSettings
             {FillColor="green", BorderColor="blue", FontColor="yellow"})">
     </ejs-pdfviewer>
 </div>
-```
 
-You can also enable the autofit support for free text annotation by using the EnableAutoFit boolean property in FreeTextSettings as below. The width of the free text rectangle box will be increased based on the text added to it.
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
 
-```html
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath="PDF_Succinctly.pdf"
-                   freeTextSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerFreeTextSettings {EnableAutoFit = true})">
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   freeTextSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerFreeTextSettings
+            {FillColor="green", BorderColor="blue", FontColor="yellow"})">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
