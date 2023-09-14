@@ -73,3 +73,32 @@ step 2: Then , `pdfExpComplete` return as blob object.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## Single Page Exporting in Gantt
+
+In Gantt, we have provided support to export the Gantt component where each rows are auto-fit to the PDF document page width by setting <code>IsFitToWidth</code> as true in <code>FitToWidthSettings</code> of <code>PdfExportProperties</code>.
+
+Also, we can customize the chart width and grid width in exported file using <code>ChartWidth</code> and <code>GridWidth</code> by defining it as percentage in string. 
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/singlepage/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Single-Page-Export.cs" %}
+{% include code-snippet/gantt/pdf-export/singlepage/single-page.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/singlepage/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Single-Page-Export.cs" %}
+{% include code-snippet/gantt/pdf-export/singlepage/single-page.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
