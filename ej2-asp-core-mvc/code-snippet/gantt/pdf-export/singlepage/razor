@@ -11,7 +11,12 @@
     function toolbarClick(args) {
         var ganttObj = document.getElementById("GanttContainer").ej2_instances[0];
         if (args.item.id === "GanttContainer_pdfexport") {
-            ganttObj.pdfExport();
+            var exportProperties = {
+                    fitToWidthSettings: {       
+                        isFitToWidth: true,       
+                    }       
+                };
+            ganttObj.pdfExport(exportProperties);
         }
     }
     </script>
