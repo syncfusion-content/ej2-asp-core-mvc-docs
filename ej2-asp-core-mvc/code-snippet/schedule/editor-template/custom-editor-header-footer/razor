@@ -6,7 +6,7 @@
 .PopupOpen("onPopupOpen")
 .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
 .EditorHeaderTemplate("#editor-header")
-.EditorFooterTemplate("editor-footer")
+.EditorFooterTemplate("#editor-footer")
 .Render()
 )
 
