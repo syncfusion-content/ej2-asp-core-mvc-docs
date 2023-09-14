@@ -11,11 +11,12 @@ documentation: ug
 
 # Export Multiple Grids
 
-PDF export provides an option for exporting multiple grids to same file. Multiple grids can be exported by providing their `IDs` in the `exportGrids` property of grid.
+PDF export provides an option for exporting multiple grids to the same file. Multiple grids can be exported by providing their `IDs` in the `exportGrids` property of the grid.
 
 ## Same page
 
-To export the grids in same page, define `multipleExport.type` as `AppendToPage` in `exportProperties`. It also have an option to provide blank space between the grids. These blank space can be defined by using  `multipleExport.blankSpace`.
+PDF exporting provides support to export multiple grids on the same page.
+To export the grids on the same page, define `multipleExport.type` as AppendToPage in `exportProperties`. It also has an option to provide blank space between the grids. This blank space can be defined by using `multipleExport.blankSpace`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +43,7 @@ To export the grids in same page, define `multipleExport.type` as `AppendToPage`
 
 ## New page
 
-Pdf exporting provides support to export multiple grids in new page. To export in new page, define  `multipleExport.type` as `NewSheet` in `exportProperties`.
+PDF exporting provides support to export multiple grids on a new page. To export on a new page, define `multipleExport.type` as `NewSheet` in `exportProperties`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
