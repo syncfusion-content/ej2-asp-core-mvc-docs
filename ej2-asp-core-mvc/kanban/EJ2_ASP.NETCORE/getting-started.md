@@ -123,7 +123,7 @@ To populate the empty Kanban with cards, define the list or remote data using th
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-{% tabs %}
+<!-- {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/kanban/getting-started/populating-cards/tagHelper %}
 {% endhighlight %}
@@ -143,7 +143,7 @@ public class KanbanDataModels
     public string Color { get; set; }        
 }
 {% endhighlight %}
-{% endtabs %}
+{% endtabs %} -->
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
