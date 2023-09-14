@@ -248,7 +248,7 @@ The following code example describes the CRUD operations handled at server-side.
     }
 ```
 
-### Load Child On Demand
+### Load child on demand
 
 To render child records on demand, assign a remote service URL in the instance of DataManager to the Url property. To interact with the remote data source, provide the endpoint URL and also define the [`HasChildMapping`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_HasChildMapping) property in taskFields of Gantt Chart.
 

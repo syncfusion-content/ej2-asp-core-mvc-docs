@@ -74,7 +74,7 @@ step 2: Then , `pdfExpComplete` return as blob object.
 {% endtabs %}
 {% endif %}
 
-## Single Page Exporting in Gantt
+## Single page exporting in gantt
 
 In Gantt, we have provided support to export the Gantt component where each rows are auto-fit to the PDF document page width by setting <code>IsFitToWidth</code> as true in <code>FitToWidthSettings</code> of <code>PdfExportProperties</code>.
 
