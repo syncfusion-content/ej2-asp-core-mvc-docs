@@ -13,12 +13,12 @@ documentation: ug
 
 ## Tooltip synchronization
 
-The tooltip can be synchronized across multiple charts using the `showTooltip` and `hideTooltip` methods. When we hover over a data point in one chart, we call the `showTooltip` method for the other charts to display related information in other connected charts simultaneously.
+The tooltip can be synchronized across multiple charts using the `ShowTooltip` and `HideTooltip` methods. When we hover over a data point in one chart, we call the `ShowTooltip` method for the other charts to display related information in other connected charts simultaneously.
 
-In the `showTooltip` method, specify the following parameters programmatically to enable tooltip for a particular chart:
+In the `ShowTooltip` method, specify the following parameters programmatically to enable tooltip for a particular chart:
 
-* `x` - Data point x-value or x-coordinate value.
-* `y` - Data point y-value or y-coordinate value.
+* `X` - Data point x-value or x-coordinate value.
+* `Y` - Data point y-value or y-coordinate value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,12 +47,12 @@ In the `showTooltip` method, specify the following parameters programmatically t
 
 ## Crosshair synchronization
 
-The crosshair can be synchronized across multiple charts using the `showCrosshair` and `hideCrosshair` methods. When we hover over one chart, we call the `showCrosshair` method for the other charts to align with data points in other connected charts, simplifying data comparison and analysis.
+The crosshair can be synchronized across multiple charts using the `ShowCrosshair` and `HideCrosshair` methods. When we hover over one chart, we call the `ShowCrosshair` method for the other charts to align with data points in other connected charts, simplifying data comparison and analysis.
 
-In the `showCrosshair` method, specify the following parameters programmatically to enable crosshair for a particular chart:
+In the `ShowCrosshair` method, specify the following parameters programmatically to enable crosshair for a particular chart:
 
-* `x` - Specifies the x-value of the point or x-coordinate.
-* `y` - Specifies the y-value of the point or y-coordinate.
+* `X` - Specifies the x-value of the point or x-coordinate.
+* `Y` - Specifies the y-value of the point or y-coordinate.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
