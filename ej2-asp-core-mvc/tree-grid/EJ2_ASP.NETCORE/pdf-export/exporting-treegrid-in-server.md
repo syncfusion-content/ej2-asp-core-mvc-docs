@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Exporting TreeGrid in Server in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Exporting TreeGrid in Server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Exporting Tree Grid in Server in Syncfusion ##Platform_Name## Tree Grid Component
+description: Learn here all about Exporting Tree Grid in Server in Syncfusion ##Platform_Name## Tree Grid Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Exporting Grid in Server
+control: Exporting Tree Grid in Server
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Exporting TreeGrid in Server
+# Exporting Tree Grid in Server
 
-The TreeGrid have an option to export the data to PDF in server side using TreeGrid server export library.
+The Tree Grid have an option to export the data to PDF in server side using tree grid server export library.
 
 ## Server dependencies
 
-The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridExport package, which is available in Essential Studio and [nuget.org](https://www.nuget.org/).The following list of dependencies is required for Grid server side PDF exporting action.
+The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridExport package, which is available in Essential Studio and [nuget.org](https://www.nuget.org/).The following list of dependencies is required for tree grid server side PDF exporting action.
 
 * Syncfusion.EJ2
 * Syncfusion.EJ2.TreeGridExport
@@ -24,16 +24,16 @@ The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridEx
 
 The following code snippet shows server configuration using ASP.NET Core Controller Action.
 
-To Export the TreeGrid in server side, You need to call the [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/grid/#serverpdfexport) method for passing the TreeGrid properties to server exporting action.
+To Export the tree grid in server side, You need to call the [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/treegrid/#serverpdfexport) method for passing the tree grid properties to server exporting action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/server-export/tagHelper %}
+{% include code-snippet/tree-grid/pdf-export/server-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Server-exportCore.cs" %}
-{% include code-snippet/grid/pdf-export/server-export/server-exportCore.cs %}
+{% include code-snippet/tree-grid/pdf-export/server-export/server-exportCore.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,10 +41,10 @@ To Export the TreeGrid in server side, You need to call the [`serverPdfExport`](
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/server-export/razor %}
+{% include code-snippet/tree-grid/pdf-export/server-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Server-exportCore.cs" %}
-{% include code-snippet/grid/pdf-export/server-export/server-exportCore.cs %}
+{% include code-snippet/tree-grid/pdf-export/server-export/server-exportCore.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -53,9 +53,9 @@ To Export the TreeGrid in server side, You need to call the [`serverPdfExport`](
 
 N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
 
-## Rotate a header text to a certain degree in the exported Treegrid on the server side
+## Rotate a header text to a certain degree in the exported tree grid on the server side
 
-The Grid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported PDF file. To achieve this requirement, define the `BeginCellLayout` event of the `PdfExportProperties` with an event handler to perform the required action.
+The Tree Grid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported PDF file. To achieve this requirement, define the `BeginCellLayout` event of the `PdfExportProperties` with an event handler to perform the required action.
 
 The `PdfHeaderQueryCellInfoEvent` will be triggered when creating a column header for the pdf document to be exported. Collect the column header details in this event and handle the custom in the BeginCellLayout event handler.
 
@@ -67,10 +67,10 @@ N> A PDF exporting is not supported to rotate the column header on the client si
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/rotate-header/tagHelper %}
+{% include code-snippet/tree-grid/pdf-export/rotate-header/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rotate-Header.cs" %}
-{% include code-snippet/grid/pdf-export/rotate-header/rotate-header.cs %}
+{% include code-snippet/tree-grid/pdf-export/rotate-header/rotate-header.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -78,11 +78,10 @@ N> A PDF exporting is not supported to rotate the column header on the client si
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/rotate-header/razor %}
+{% include code-snippet/tree-grid/pdf-export/rotate-header/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rotate-Header.cs" %}
-{% include code-snippet/grid/pdf-export/rotate-header/rotate-header.cs %}
+{% include code-snippet/tree-grid/pdf-export/rotate-header/rotate-header.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
