@@ -49,10 +49,6 @@ To Export the tree grid in server side, You need to call the [`serverPdfExport`]
 {% endtabs %}
 {% endif %}
 
-
-
-N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
-
 ## Rotate a header text to a certain degree in the exported tree grid on the server side
 
 The Tree Grid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported PDF file. To achieve this requirement, define the `BeginCellLayout` event of the `PdfExportProperties` with an event handler to perform the required action.
