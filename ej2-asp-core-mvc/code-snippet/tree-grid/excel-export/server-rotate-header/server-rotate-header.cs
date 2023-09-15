@@ -6,13 +6,13 @@ public IActionResult ExcelExport(string treeGridModel)
     }
     TreeGridExcelExport exp = new TreeGridExcelExport();
     Syncfusion.EJ2.TreeGrid.TreeGrid gridProperty = ConvertTreeGridObject(treeGridModel);
-    gridProperty.ServerExcelHeaderQueryCellInfo = ExcelHeaderQueryCellInfo;
+    gridProperty.ExcelHeaderCellRendering = ExcelHeaderQueryCellInfo;
     return (IActionResult)exp.ExcelExport<TreeGridItems>(gridProperty, TreeGridItems.GetDefaultData());
 }
 
 private void ExcelHeaderQueryCellInfo(object excel)
 {
-    Syncfusion.EJ2.TreeGridExport.ServerExcelHeaderQueryCellInfoEventArgs name = (Syncfusion.EJ2.TreeGridExport.ServerExcelHeaderQueryCellInfoEventArgs)excel;
+    Syncfusion.EJ2.TreeGridExport.ExcelHeaderCellEventArgs name = (Syncfusion.EJ2.TreeGridExport.ExcelHeaderCellEventArgs)excel;
     List<string> headerValues = new List<string>();
     headerValues.Add(name.Column.HeaderText);
     var longestString = headerValues.Where(s => s.Length == headerValues.Max(m => m.Length)).First();
