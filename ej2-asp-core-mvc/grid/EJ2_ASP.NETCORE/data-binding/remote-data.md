@@ -350,3 +350,71 @@ The sample response object should look like below.
 ```
 
 N> The controller method's data parameter name must be `value`.
+
+## ExpandoObject Complex Binding using URL adaptor in ASP.Net Core Grid Component
+
+You can achieve the ExpandoObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
+
+The following code example shows how to bind ExpandoObject datasource in grid using URL adaptor.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="expandoObject.cs" %}
+{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/expandoObject.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="expandoObject.cs" %}
+{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/expandoObject.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+N> Perform data and CRUD operations for Complex ExpandoObject binding fields as well.
+
+The following image represents ExpandoObject complex data binding.
+![Grid with ExpandoObject Binding](images/ExpandoObject-binding.png)
+
+## DynamicObject Complex Binding using URL adaptor in ASP.Net Core Grid Component
+
+You can achieve DynamicObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
+
+The following code example shows how to bind DynamicObject datasource in grid using URL adaptor.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="dynamicObject.cs" %}
+{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/dynamicObject.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="dynamicObject.cs" %}
+{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/dynamicObject.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+N> Perform data and CRUD operations for Complex DynamicObject binding fields as well.
+
+The following image represents DynamicObject complex data binding.
+![Grid with DynamicObject Binding](images/DynamicObject-binding.png)

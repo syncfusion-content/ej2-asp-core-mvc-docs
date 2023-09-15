@@ -1,6 +1,5 @@
-<ejs-grid id="DynamicObjectGrid" allowPaging="true" allowSorting="true" allowFiltering="true" toolbar="@(new List<string>() {"Add", "Edit", "Delete", "Update", "Cancel"})">
+<ejs-grid id="DynamicObjectGrid" dataSource="ViewBag.DynamicData" allowPaging="true" allowSorting="true" allowFiltering="true" toolbar="@(new List<string>() {"Add", "Edit", "Delete", "Update", "Cancel"})">
 <e-grid-groupSettings showGroupedColumn="true" showDropArea="true"></e-grid-groupSettings>
-    <e-data-manager url="/Home/UrlDataSource" adaptor="UrlAdaptor" insertUrl="/Home/Insert" updateUrl="/Home/Update" removeUrl="/Home/Remove"></e-data-manager>
             <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal" newRowPosition="Top"></e-grid-editSettings>
             <e-grid-columns>
                 <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" width="140"></e-grid-column>
