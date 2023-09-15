@@ -41,9 +41,9 @@ Tables can also be inserted through the `Insert Table` option in the pop-up wher
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
+<!-- {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/table/razor %}
-{% endhighlight %}
+{% endhighlight %} -->
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor/table/controller.cs %}
 {% endhighlight %}
@@ -152,9 +152,9 @@ The following image explains the table split action.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
+<!-- {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/table-cell/razor %}
-{% endhighlight %}
+{% endhighlight %} -->
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor/table-cell/controller.cs %}
 {% endhighlight %}

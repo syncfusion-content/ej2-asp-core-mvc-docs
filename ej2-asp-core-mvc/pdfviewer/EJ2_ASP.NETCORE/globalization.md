@@ -81,11 +81,33 @@ The following table shows the default text values used in PDF Viewer in 'en-US' 
 
 The different locale value for the PDF Viewer can be specified using the locale property.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer" style="height:600px"  locale ="ar-AE" serviceUrl="/api/PdfViewer"></ejs-pdfviewer>
+    <ejs-pdfviewer 
+        id="pdfviewer" 
+        documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+        style="height:600px"  
+        locale ="ar-AE">
+    </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer 
+        id="pdfviewer" 
+        style="height:600px" 
+        documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf" 
+        locale ="ar-AE" 
+        serviceUrl="/api/PdfViewer">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% endtabs %}
 
 You have to map the text content based on locale like following script in sample level.,
 
@@ -144,7 +166,7 @@ You have to map the text content based on locale like following script in sample
                         'Underline context': 'أكد',
                         'Strikethrough context': 'يتوسطه',
                         // tslint:disable-next-line:max-line-length
-                        'Server error': 'خدمة الانترنت لا يستمع. يعتمد قوات الدفاع الشعبي المشاهد على خدمة الويب لجميع ميزاته. يرجى بدء خدمة الويب للمتابعة.'
+                        'Server error': 'خدمة الانترنت لا يستمع. يعتمد قوات الدفاع الشعبي المشاهد على خدمة الويب لجميع ميزاته. يرجى بدء خدمة الويب للمتابعة.',
                         'Open text': 'افتح',
                         'First text': 'الصفحة الأولى',
                         'Previous text': 'الصفحة السابقة',

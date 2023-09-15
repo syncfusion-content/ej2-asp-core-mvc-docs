@@ -239,7 +239,7 @@ Quick commands are opened as context-menu on clicking the corresponding element.
 |----------------|---------|
 |image | 'Replace', 'Align', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText','Dimension'.|
 | link | 'Open', 'Edit', 'UnLink'.|
-| text (`Deprecated`) | 'Cut', 'Copy', 'Paste'.|
+| text | null <br> (Any toolbar [items](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/toolbar#toolbar-items) in the Rich Text Editor can be configured here).|
 | table| 'TableHeader', 'TableRows', 'TableColumns', 'BackgroundColor', '-', 'TableRemove', 'Alignments', 'TableCellVerticalAlign', 'Styles'.|
 
 Custom tool can be added to the corresponding quick toolbar, using [`quickToolbarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.

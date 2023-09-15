@@ -1,0 +1,22 @@
+            @Html.EJS().Gantt("DefaultFunctionalities").DataSource(dataManger =>
+                {
+                    dataManger.Url("https://services.syncfusion.com/aspnet/development/api/GanttLoadOnDemand").CrossDomain(true).Adaptor("WebApiAdaptor");
+                })
+                .Height("460px").EnableVirtualization(true).LoadChildOnDemand(false)
+                .TaskFields(ts => ts.Id("taskId").Name("taskName").StartDate("startDate").Progress("progress")
+                .Duration("duration").ParentID("parentID").EndDate("endDate").HasChildMapping("isParent"))
+                .Columns(col =>
+                {
+                    col.Field("taskId").Add();
+                    col.Field("taskName").Add();
+                    col.Field("startDate").Add();
+                    col.Field("duration").Add();
+                })
+                .TreeColumnIndex(1)
+                .AllowSelection(true)
+                .HighlightWeekends(true)
+                .IncludeWeekend(true)
+                .ProjectStartDate("01/02/2000")
+                .ProjectEndDate("12/01/2002")
+                .Render()
+        
