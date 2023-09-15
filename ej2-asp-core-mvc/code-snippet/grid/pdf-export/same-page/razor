@@ -22,14 +22,14 @@
 
 <script>
 
-    function toolbarClick(args) {
+function toolbarClick(args) {
     var firstGrid = document.getElementById("FirstGrid").ej2_instances[0];
     if (args.item.id === 'FirstGrid_pdfexport') {
         var appendPdfExportProperties = {
-            multipleExport: { type: 'NewPage' }
+            multipleExport: { type: "AppendToPage", blankSpace: 10 }
         };
         firstGrid.pdfExport(appendPdfExportProperties, true);
     }
-    }
+}
 
 </script>
