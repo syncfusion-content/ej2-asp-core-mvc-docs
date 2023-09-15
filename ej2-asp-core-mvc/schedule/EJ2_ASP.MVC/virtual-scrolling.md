@@ -46,7 +46,7 @@ By default, the Scheduler fetches all the relevant appointments from the server 
 
 When you enable this feature, the Scheduler becomes capable of fetching events from remote services only for the current view port alone to optimize the data retrieval. The remaining appointment data is fetched form the server on-demand based on currently rendered view port resources as you scroll's through the scheduler content.
 
-To enable this feature, you have to set the [`enableLazyLoading`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_EnableLazyLoading) property to `true` within the view specific settings.
+To enable this feature, you have to set the [`EnableLazyLoading`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_EnableLazyLoading) property to `true` within the view specific settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
