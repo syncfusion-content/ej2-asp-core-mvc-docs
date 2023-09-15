@@ -42,15 +42,15 @@ The rendered chart can be printed directly from the browser by calling the publi
 
 ## Export
 
-The rendered chart can be exported to `JPEG`, `PNG`, `SVG`, `PDF`, `XLSX`, or `CSV` format using the export method in chart. The input parameters for this method are `type` for format and `fileName` for result.
+The rendered chart can be exported to `JPEG`, `PNG`, `SVG`, `PDF`, `XLSX`, or `CSV` format using the export method in chart. The input parameters for this method are `Type` for format and `FileName` for result.
 
 The optional parameters for this method are,
-* `orientation` - either portrait or landscape mode during PDF export,
-* `controls` - pass collections of controls for multiple export,
-* `width` - width of chart export,
-* `height` - height of chart export,
-* `header` - header for the exported chart, and
-* `footer` - footer for the exported chart.
+* `Orientation` - either portrait or landscape mode during PDF export,
+* `Controls` - pass collections of controls for multiple export,
+* `Width` - width of chart export,
+* `Height` - height of chart export,
+* `Header` - header for the exported chart, and
+* `Footer` - footer for the exported chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,8 +80,8 @@ The optional parameters for this method are,
 
 In the export method, specify the following parameters to add a header and footer text to the exported PDF document:
 
-* `header` - Specify the text that should appear at the top of the exported PDF document.
-* `footer` - Specify the text that should appear at the bottom of the exported PDF document.
+* `Header` - Specify the text that should appear at the top of the exported PDF document.
+* `Footer` - Specify the text that should appear at the bottom of the exported PDF document.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -110,7 +110,7 @@ In the export method, specify the following parameters to add a header and foote
 
 ### Exporting charts into separate page during the PDF export
 
-During the PDF export, you can export each chart as a separate page by setting the `exportToMultiplePage` parameter to **true**.
+During PDF export, set the `ExportToMultiplePage` parameter to **true** to export each chart as a separate page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

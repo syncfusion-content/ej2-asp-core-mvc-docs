@@ -3,7 +3,7 @@ layout: post
 title: Axis Types in ##Platform_Name## Stock Chart Component
 description: Learn here all about Axis Types in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Axis Types
+control: Axis types
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -13,7 +13,7 @@ documentation: ug
 
 ## DateTime axis
 
-DateTime axis uses date time scale and displays the date time values as axis labels in the specified format. To use DateTime axis, set the [`ValueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) of axis to `DateTime`.
+DateTime axis uses date time scale and displays the date time values as axis labels in the specified format. To use DateTime axis, set the [`ValueType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) of axis to `DateTime`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ DateTime axis uses date time scale and displays the date time values as axis lab
 
 ## DateTimeCategory axis
 
-DateTimeCategory axis in the stock chart is used to display only business days. To use DateTimeCategory axis, set the [`ValueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) of axis to `DateTimeCategory`.
+DateTimeCategory axis in the stock chart is used to display only business days. To use DateTimeCategory axis, set the [`ValueType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) of axis to `DateTimeCategory`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,7 +73,7 @@ DateTimeCategory axis in the stock chart is used to display only business days. 
 
 <!-- markdownlint-disable MD033 -->
 
-Logarithmic axis uses logarithmic scale and it is very useful in visualizing data, when it has numerical values in both lower order of magnitude (eg: 10<sup>-6</sup>) and higher order of magnitude (eg: 10<sup>6</sup>). To use Logarithmic axis, set the[`ValueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) of axis to `Logarithmic`.
+Logarithmic axis uses logarithmic scale and it is very useful in visualizing data, when it has numerical values in both lower order of magnitude (eg: 10<sup>-6</sup>) and higher order of magnitude (eg: 10<sup>6</sup>). To use Logarithmic axis, set the[`ValueType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) of axis to `Logarithmic`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,6 +100,6 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing dat
 
 
 
-## See Also
+## See also
 
 * [Axis Customization](./axis-customization/)

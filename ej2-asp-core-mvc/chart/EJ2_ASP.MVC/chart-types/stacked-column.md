@@ -40,7 +40,7 @@ To render a stacked column series, use series [`Type`](https://help.syncfusion.c
 
 
 
-## Stacking Group
+## Stacking group
 
 You can use the [`StackingGroup`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_StackingGroup) property to group the stacked columns and 100% stacked columns. Columns with same group name are stacked on top of each other.
 

@@ -3,7 +3,7 @@ layout: post
 title: Chart Print in ##Platform_Name## Chart Component
 description: Learn here all about Chart Print in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Chart Print
+control: Chart print
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -42,15 +42,15 @@ The rendered chart can be printed directly from the browser by calling the publi
 
 ## Export
 
-The rendered chart can be exported to `JPEG`, `PNG`, `SVG`, or `PDF` format using the export method in chart. The input parameters for this method are `Export Type` for format and `fileName` for result.
+The rendered chart can be exported to `JPEG`, `PNG`, `SVG`, `PDF`, `XLSX`, or `CSV` format using the export method in chart. The input parameters for this method are `type` for format and `fileName` for result.
 
 The optional parameters for this method are,
-* `orientation` - either portrait or landscape,
-* `controls` - pass collections of controls for multiple export,
-* `width` - width of chart export,
-* `height` - height of chart export,
-* `header` - header for the exported chart, and
-* `footer` - footer for the exported chart.
+* `Orientation` - either portrait or landscape mode during PDF export,
+* `Controls` - pass collections of controls for multiple export,
+* `Width` - width of chart export,
+* `Height` - height of chart export,
+* `Header` - header for the exported chart, and
+* `Footer` - footer for the exported chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,6 +71,67 @@ The optional parameters for this method are,
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
 {% include code-snippet/chart/getting-started/export/export.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Adding header and footer in PDF export
+
+In the export method, specify the following parameters to add a header and footer text to the exported PDF document:
+
+* `Header` - Specify the text that should appear at the top of the exported PDF document.
+* `Footer` - Specify the text that should appear at the bottom of the exported PDF document.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/getting-started/header-footer/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Header-footer.cs" %}
+{% include code-snippet/chart/getting-started/header-footer/header-footer.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/getting-started/header-footer/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Header-footer.cs" %}
+{% include code-snippet/chart/getting-started/header-footer/header-footer.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Exporting charts into separate page during the PDF export
+
+During PDF export, set the `ExportToMultiplePage` parameter to **true** to export each chart as a separate page.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/getting-started/multi-page/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Multi-page.cs" %}
+{% include code-snippet/chart/getting-started/multi-page/multi-page.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/getting-started/multi-page/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Multi-page.cs" %}
+{% include code-snippet/chart/getting-started/multi-page/multi-page.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -106,15 +167,11 @@ The rendered chart can be exported to specific orientation, width and height by 
 
 
 
-## Multiple Chart Export
+## Multiple chart export
 
-You can export the multiple charts in single page by passing the multiple chart objects in the export method of chart.
+You can export the multiple charts in single page by passing the multiple chart objects in the export method of chart. To export multiple charts in a single page, follow the given steps:
 
-To export multiple charts in a single page, follow the given steps:
-
-**Step 1**:
-
-Initially, render more than one chart to export, and then add button to export the multiple charts. In button click, call the export private method in charts, and then pass the multiple chart objects in the export method.
+Initially, render more than one chart to export, and then add button to export the multiple charts. In button click, call the export method in charts, and then pass the multiple chart objects in the export method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -138,4 +195,5 @@ Initially, render more than one chart to export, and then add button to export t
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
 
