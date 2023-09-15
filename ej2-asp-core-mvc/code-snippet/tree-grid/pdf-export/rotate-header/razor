@@ -1,0 +1,17 @@
+@(Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+    {
+        col.Field("TaskId").HeaderText("Task ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("TaskName").HeaderText("Task Name").Width("150").Add();
+        col.Field("StartDate").HeaderText("Start Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+        col.Field("EndDate").HeaderText("End Date").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("Duration").HeaderText("Duration").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("Progress").HeaderText("Progress").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    }).AllowPdfExport().Toolbar(new List<string>() { "PdfExport" }).ToolbarClick("toolbarClick").Render()
+)
+
+<script>
+    function toolbarClick(args) {
+        var treeGridObj = document.getElementById("TreeGrid").ej2_instances[0];
+        treeGridObj.serverPdfExport("@Url.Action("PdfExport", "TreeGrid")");
+    }
+</script>
