@@ -2007,3 +2007,54 @@ The [select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 {% endhighlight %}
 {% endtabs %}
+
+## Backstage Menu events
+
+### BackStageItemClick
+
+The `BackStageItemClick` event is triggered when backstage item is selected.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<BackstageItem> backstageItems = new List<BackstageItem>() {
+        new BackstageItem { Id = "home", Text = "Home", IconCss = "e-icons e-home", Content = processBackstageContent("home"), BackStageItemClick = backStageItemClickEvent(args) },
+    };
+    BackStageMenu backstageSettings = new BackStageMenu() { Text = "File", Visible = true, BackButton = new BackstageBackButton { Text = "Close" }, Items = backstageItems };
+}
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-backstagemenusettings text="File" visible="true" backButton=backButtonSettings items=backstageItems></e-ribbon-backstagemenusettings>
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Header & Footer">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=Button>
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script>
+
+    function backStageItemClickEvent(BackstageItemClickArgs args) {
+        // Here, you can customize your code.
+    }
+
+</script>
+
+{% endhighlight %}
+{% endtabs %}
