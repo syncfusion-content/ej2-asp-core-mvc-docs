@@ -3,7 +3,7 @@ layout: post
 title: Stacked Column Chart in ##Platform_Name## Syncfusion Chart Component
 description: Learn here all about Stacked Column Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Stacked Column Chart
+control: Stacked column chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 # Stacked Column in ##Platform_Name## Charts Component
 
-## Stacked Column
+## Stacked column
 
 To render a stacked column series, use series [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`StackingColumn`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_StackingColumn).
 
@@ -69,6 +69,35 @@ You can use the [`StackingGroup`](https://help.syncfusion.com/cr/aspnetmvc-js2/S
 
 
 
+## Cylindrical stacked column chart
+
+To render a cylindrical stacked column chart, set the `ColumnFacet` property to `Cylinder` in the chart series.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column-charts/stackedcolumn-cylinder/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stackedcolumn-cylinder.cs" %}
+{% include code-snippet/chart/series/column-charts/stackedcolumn-cylinder/stackedcolumn-cylinder.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column-charts/stackedcolumn-cylinder/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stackedcolumn-cylinder.cs" %}
+{% include code-snippet/chart/series/column-charts/stackedcolumn-cylinder/stackedcolumn-cylinder.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Series customization
 
 The following properties can be used to customize the [`Stacked Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_StackingColumn) series.
@@ -103,7 +132,7 @@ The following properties can be used to customize the [`Stacked Column`](https:/
 
 
 
-## See Also
+## See also
 
 * [Data Label](../data-labels)
 * [Tooltip](../tool-tip)
