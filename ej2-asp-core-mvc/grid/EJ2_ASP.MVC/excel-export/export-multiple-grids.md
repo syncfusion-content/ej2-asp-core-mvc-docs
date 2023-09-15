@@ -11,7 +11,7 @@ documentation: ug
 
 # Export Multiple Grids
 
-The Excel export provides an option to export multiple grid data in the same Excel file. Each grid is identified by its unique ID. You can specify which grids to export by listing their **IDs** in the `exportGrids` property.
+The Excel export provides an option to export multiple grid data in the same or different sheets of an Excel file. Each grid is identified by its unique ID. You can specify which grids to export by listing their **IDs** in the `exportGrids` property.
 
 ## Same sheet
 
