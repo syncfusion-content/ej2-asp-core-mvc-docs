@@ -14,7 +14,7 @@ The grid is a generic component that is firmly bound to a model type. There are 
 
 A DynamicObject can be bound to a data grid by assigning it to the DataSource property. The grid can also perform all kinds of supported data operations and editing in DynamicObject.
 
-N> You must override the [`GetDynamicMemberNames`](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of the DynamicObject class and return the property names to perform data operation and editing while using DynamicObject.
+N> You must override the [GetDynamicMemberNames](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of the DynamicObject class and return the property names to perform data operation and editing while using DynamicObject.
 
 The following code example shows how to bind DynamicObject datasource in grid using URL adaptor.
 
@@ -43,7 +43,7 @@ The following code example shows how to bind DynamicObject datasource in grid us
 
 ## DynamicObject Complex Binding in ASP.Net MVC Grid Component
 
-You can achieve DynamicObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
+You can achieve DynamicObject complex data binding in the data grid by using the dot(.) operator in the `column.field`. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
