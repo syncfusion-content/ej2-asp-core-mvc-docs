@@ -101,7 +101,7 @@ You can achieve the ExpandoObject complex data binding in the data grid by using
 N> Perform data and CRUD operations for Complex ExpandoObject binding fields as well.
 
 The following image represents ExpandoObject complex data binding.
-![Grid with ExpandoObject Binding](images/ExpandoObject-binding.png)
+![Grid with ExpandoObject Binding](images/ExpandoObjectDemo.gif)
 
 ## DynamicObject Binding in ASP.Net Core Grid Component
 
@@ -164,7 +164,7 @@ You can achieve DynamicObject complex data binding in the data grid by using the
 N> Perform data and CRUD operations for Complex DynamicObject binding fields as well.
 
 The following image represents DynamicObject complex data binding.
-![Grid with DynamicObject Binding](images/DynamicObject-binding.png)
+![Grid with DynamicObject Binding](images/DynamicObjectDemo.gif)
 
 ## Refresh the data source
 

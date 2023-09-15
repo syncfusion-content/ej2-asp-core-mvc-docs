@@ -337,7 +337,7 @@ The following code example shows how to bind ExpandoObject datasource in grid us
 N> Perform data and CRUD operations for Complex ExpandoObject binding fields as well.
 
 The following image represents ExpandoObject complex data binding.
-![Grid with ExpandoObject Binding](images/ExpandoObject-binding.png)
+![Grid with ExpandoObject Binding](images/ExpandoObjectDemo.gif)
 
 ## DynamicObject Complex Binding using URL adaptor in ASP.Net MVC Grid Component
 
@@ -371,4 +371,4 @@ The following code example shows how to bind DynamicObject datasource in grid us
 N>Perform data and CRUD operations for complex DynamicObject binding fields as well.
 
 The following image represents DynamicObject complex data binding.
-![Grid with DynamicObject Binding](images/DynamicObject-binding.png)
+![Grid with DynamicObject Binding](images/DynamicObjectDemo.gif)
