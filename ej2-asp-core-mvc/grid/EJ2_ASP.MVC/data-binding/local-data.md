@@ -42,7 +42,7 @@ To bind list binding to the grid, you can assign a JavaScript object array to th
 
 N> By default, DataManager uses **JsonAdaptor** for list data-binding.
 
-## ExpandoObject Binding in ASP.Net MVC Grid Component
+## ExpandoObject binding
 
 The grid is a generic component that is firmly bound to a model type. There are cases when the model type is unknown during the compile type. In such cases, bind data to the grid as a list of the ExpandoObject.
 
@@ -71,7 +71,7 @@ The ExpandoObject can be bound to the data grid by assigning it to the DataSourc
 {% endtabs %}
 {% endif %}
 
-## ExpandoObject Complex Binding in ASP.Net MVC Grid Component
+## ExpandoObject complex binding
 
 You can achieve ExpandoObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
 
@@ -103,7 +103,7 @@ N> Perform data and CRUD operations for Complex ExpandoObject binding fields as 
 The following image represents ExpandoObject complex data binding.
 ![Grid with ExpandoObject Binding](images/ExpandoObjectDemo.gif)
 
-## DynamicObject Binding in ASP.Net MVC Grid Component
+## DynamicObject binding
 
 The grid is a generic component that is firmly bound to a model type. There are cases when the model type is unknown during the compile type. In such cases, bind data to the grid as a list of DynamicObject.
 
@@ -134,7 +134,7 @@ N> You must override the [GetDynamicMemberNames](https://learn.microsoft.com/en-
 {% endtabs %}
 {% endif %}
 
-## DynamicObject Complex Binding in ASP.Net MVC Grid Component
+## DynamicObject complex binding
 
 You can achieve DynamicObject complex data binding in the data grid by using the dot(.) operator in the `column.field`. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
 

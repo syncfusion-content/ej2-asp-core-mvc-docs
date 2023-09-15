@@ -351,7 +351,7 @@ The sample response object should look like below.
 
 N> The controller method's data parameter name must be `value`.
 
-## ExpandoObject Complex Binding using URL adaptor in ASP.Net Core Grid Component
+## ExpandoObject complex binding using URL adaptor
 
 You can achieve the ExpandoObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
 
@@ -385,7 +385,7 @@ N> Perform data and CRUD operations for Complex ExpandoObject binding fields as 
 The following image represents ExpandoObject complex data binding.
 ![Grid with ExpandoObject Binding](images/ExpandoObjectDemo.gif)
 
-## DynamicObject Complex Binding using URL adaptor in ASP.Net Core Grid Component
+## DynamicObject complex binding using URL adaptor
 
 You can achieve DynamicObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
 
