@@ -49,10 +49,6 @@ To Export the tree grid in server side, You need to call the [`serverExcelExport
 {% endtabs %}
 {% endif %}
 
-
-
-Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
-
 ## CSV Export in server side
 
 You can export the tree grid to CSV format by using the [`serverCsvExport`](https://ej2.syncfusion.com/documentation/api/treegrid/#servercsvexport) method which will pass the tree grid properties to server.
