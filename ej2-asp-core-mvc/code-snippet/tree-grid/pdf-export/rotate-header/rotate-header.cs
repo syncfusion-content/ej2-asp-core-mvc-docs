@@ -6,7 +6,7 @@ public IActionResult PdfExport(string treeGridModel)
     }
     TreeGridPdfExport exp = new TreeGridPdfExport();
     TreeGrid gridProperty = ConvertTreeGridObject(treeGridModel);
-    gridProperty.ServerExcelHeaderQueryCellInfo = PdfHeaderQueryCellInfo;
+    gridProperty.PdfHeaderCellRendering = PdfHeaderQueryCellInfo;
     PdfGrid grid = new PdfGrid();
     Syncfusion.EJ2.TreeGridExport.PdfExportProperties pdfExportProperties = new Syncfusion.EJ2.TreeGridExport.PdfExportProperties();
     pdfExportProperties.IsRepeatHeader = true;
@@ -34,7 +34,7 @@ public void BeginCellEvent(object sender, PdfGridBeginCellLayoutEventArgs args)
 
 private void PdfHeaderQueryCellInfo(object pdf)
 {
-    Syncfusion.EJ2.TreeGridExport.ServerPdfHeaderQueryCellInfoEventArgs name = (Syncfusion.EJ2.TreeGridExport.ServerPdfHeaderQueryCellInfoEventArgs)pdf;
+    Syncfusion.EJ2.TreeGridExport.PdfHeaderCellEventArgs name = (Syncfusion.EJ2.TreeGridExport.PdfHeaderCellEventArgs)pdf;
     PdfGrid grid = new PdfGrid();
     headerValues.Add(name.Column.HeaderText);
     var longestString = headerValues.Where(s => s.Length == headerValues.Max(m => m.Length)).First();
