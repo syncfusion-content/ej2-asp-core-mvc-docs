@@ -1,0 +1,21 @@
+<div class="control-section">
+    <div class="sample-container">
+        <!--  Filemanager element declaration -->
+        @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+            Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).AllowDragAndDrop(true).Created("onCreated").Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+    // Utilize the created event to prevent external drag and drop
+    function onCreated() {
+        var filemanager = document.getElementById("file").ej2_instances[0];
+        // setting dropArea value as null
+        filemanager.uploadObj.dropArea = null;
+    }
+</script>
