@@ -15,11 +15,11 @@ The frame feature in an Image Editor provides users with the capability to add d
 
 ## Apply frame to the Image
 
-The [`drawFrame`] method is a function designed to enable the application of various frame options to an image. This method simplifies the process of adding decorative frames, such as mat, bevel, line, hook, and inset, to an image by allowing users to specify their desired frame type.
+The `drawFrame` method is a function designed to enable the application of various frame options to an image. This method simplifies the process of adding decorative frames, such as mat, bevel, line, hook, and inset, to an image by allowing users to specify their desired frame type.
 
 Depending on the frame type selected, users may have additional customization options, such as adjusting the frame's thickness, color, texture, or other attributes. This allows for fine-tuning the appearance of the frame to match the image's theme or the user's preferences
 
-The [`drawFrame`] method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
+The `drawFrame` method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
 
 * frameType - Specified the image data or url of the image to be inserted.
 
@@ -39,7 +39,7 @@ The [`drawFrame`] method in the Image Editor control takes six parameters to def
 
 * lineCount - Specifies the line count for the line type frame. 
 
-Here is an example of Frame using the `applyImageFilter` method.
+Here is an example of Frame using the `drawFrame` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -69,12 +69,18 @@ Output be like the below.
 ![ImageEditor Sample](images/image-editor-filter.jpg)
 
 
-### Image filtering event 
+## Frame changing event
 
-The [`imageFiltering`] event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
+The `frameChanging` event is triggered when applying frame on the image. This event provides information encapsulated within an object, which includes details about the frame applied in an image. This information encompasses:
 
-The parameter available in the `ImageFilterEventArgs` event is, 
+Frame Type: This indicates the specific type of frame being applied, whether it's a mat, bevel, line, or hook.
 
-ImageFilterEventArgs.filter - The type of filtering as ImageFilterOption to be applied in the image editor. 
+Customization Values: These values contain information about any adjustments or modifications made to the frame. For instance, if the frame can be customized with attributes like color, size, or style, these details are conveyed within the event object.
 
-ImageFilterEventArgs.cancel – Specifies to cancel the filtering action.  
+The parameter available in the `FrameChangeEventArgs` is
+
+* `FrameChangeEventArgs.previousFrameSetting` - The frame settings including size, color, inset, offset, gradient color which is applied before changing the frame.
+
+* `FrameChangeEventArgs.currentFrameSetting` - The frame settings including size, color, inset, offset, gradient color which is going to apply after changing the frame.
+
+* `FrameChangeEventArgs.cancel` - Specifies a boolean value to cancel the frame changing action.  

@@ -15,7 +15,7 @@ The resize feature in an Image Editor is a valuable tool that empowers users to 
 
 ## Apply resize to the image 
 
-The Image Editor control includes a [`resize`] method, which allows you to adjust the size of an image. This method takes three parameters that define how the resizing should be carried out:
+The Image Editor control includes a `resize` method, which allows you to adjust the size of an image. This method takes three parameters that define how the resizing should be carried out:
 
 * width: Specifies the resizing width of the image.
 
@@ -23,7 +23,7 @@ The Image Editor control includes a [`resize`] method, which allows you to adjus
 
 * isAspectRatio: Specifies a boolean value indicating whether the image should maintain its original aspect ratio during resizing. When set to true, the image will be resized while preserving its aspect ratio 
 
-Here is an example of resizing the image using the [`resize`] method. 
+Here is an example of resizing the image using the `resize` method. 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -54,9 +54,9 @@ Output be like the below.
 
 ## Resizing event
 
-The [`resizing`] event is triggered when resizing the image. This event provides information encapsulated within an object, which includes details about the previous and current height and width of an image.
+The `resizing` event is triggered when resizing the image. This event provides information encapsulated within an object, which includes details about the previous and current height and width of an image.
 
-The parameter available in ResizeEventArgs is,
+The parameter available in `ResizeEventArgs` is,
 
 * ResizeEventArgs.previousWidth - The width of the image before resizing is performed.
 

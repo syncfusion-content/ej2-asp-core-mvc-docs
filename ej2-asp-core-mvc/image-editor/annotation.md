@@ -426,9 +426,9 @@ The image annotation feature in the Image Editor provides the capability to add 
 
 ### Add an image annotation.
 
-The [`drawImage`] method serves the purpose of inserting an image into the Image Editor control, allowing for image annotations to be added. These image annotations can be used for various purposes, such as adding logos, watermarks, or decorative elements to the image.
+The `drawImage` method serves the purpose of inserting an image into the Image Editor control, allowing for image annotations to be added. These image annotations can be used for various purposes, such as adding logos, watermarks, or decorative elements to the image.
 
-The [`drawImage`] method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
+The `drawImage` method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
 
 * data: Specified the image data or url of the image to be inserted.
 
@@ -442,7 +442,7 @@ The [`drawImage`] method in the Image Editor control takes six parameters to def
 
 * isAspectRatio: Specifies whether the image is rendered with aspect ratio or not.
 
-In the following example, you can use the [`drawImage`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#drawImage) method in the button click event.
+In the following example, you can use the `drawImage` method in the button click event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
