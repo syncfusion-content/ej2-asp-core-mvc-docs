@@ -1700,6 +1700,108 @@ The [click](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.
 {% endhighlight %}
 {% endtabs %}
 
+## GroupButton item events
+
+### BeforeClick
+
+The [BeforeClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_BeforeClick) event is triggered before selecting a button from the groupbutton items.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<RibbonGroupButtonItem> events = new List<RibbonGroupButtonItem>() {
+
+      new RibbonGroupButtonItem { IconCss = "e-icons e-bold", Content = "Bold", BeforeClick="beforeClickEvent" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-italic", Content = "Italic", Selected = true, BeforeClick="beforeClickEvent" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-underline", Content = "Underline", BeforeClick="beforeClickEvent" },
+      new RibbonGroupButtonItem { IconCss = "e-icons e-strikethrough", Content = "Strikethrough", BeforeClick="beforeClickEvent" }
+    };
+}
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Paragraph">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=GroupButton allowedSizes=Small>
+                                    <e-ribbon-groupbuttonsettings selection=Multiple items=events></e-ribbon-groupbuttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+
+<script>
+    function beforeClickEvent() {
+        // Here, you can customize your code.
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+### Click
+
+The [Click](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_Click) event is triggered when selecting a button from the groupbutton items.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<RibbonGroupButtonItem> events = new List<RibbonGroupButtonItem>() {
+
+      new RibbonGroupButtonItem { IconCss = "e-icons e-align-left", Content = "Align Left", Click="clickEvent" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-align-center", Content = "Align Center", Click="clickEvent", Selected = true },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-align-right", Content = "Align Right", Click="clickEvent" },
+      new RibbonGroupButtonItem { IconCss = "e-icons e-justify", Content = "Justify", Click="clickEvent" }
+    };
+}
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Paragraph">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=GroupButton allowedSizes=Small>
+                                    <e-ribbon-groupbuttonsettings selection=Single items=events></e-ribbon-groupbuttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+
+<script>
+    function clickEvent() {
+        // Here, you can customize your code.
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
 ## FileMenu events
 
 ### Before close

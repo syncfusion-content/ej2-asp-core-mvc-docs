@@ -1,0 +1,18 @@
+<ejs-treegrid id="TreeGrid" dataSource="ViewBag.dataSource" height="366" childMapping="Children" toolbarClick="toolbarClick" toolbar="@(new List<string>() { "CsvExport" })" treeColumnIndex="1">
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="95"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="220"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" type="date" width="115"></e-treegrid-column>
+        <e-treegrid-column field="EndDate" headerText=" End Date" textAlign="Right" format="yMd" type="date" width="115"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="100"></e-treegrid-column>
+        <e-treegrid-column field="Progress" headerText="Progress" textAlign="Right" width="105"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+
+<script>
+    function toolbarClick(args) {
+        var gridObj = document.getElementById("TreeGrid").ej2_instances[0];
+        gridObj.serverPdfExport("@Url.Action("CsvExport", "TreeGrid")");
+    }
+</script>
