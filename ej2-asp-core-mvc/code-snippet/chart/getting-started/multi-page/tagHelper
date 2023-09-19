@@ -1,0 +1,50 @@
+<ejs-chart id="container1" title="Crude Steel Production Annual Growth">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Million Metric Tons" minimum="0" maximum="20" interval="4">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" width="2" yName="y"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+<ejs-chart id="container2" title="Steel Production">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Million Metric Tons" minimum="0" maximum="20" interval="4">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" width="2" yName="y1"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+<ejs-chart id="container3" title="Annual Growth of Crude Steel Production">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Million Metric Tons" minimum="0" maximum="20" interval="4">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" width="2" yName="y2"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+<div>
+    <ejs-button id="button" content="Export" isPrimary="true"></ejs-button>
+</div>
+<script>
+    document.getElementById('button').onclick = () => {
+        var chart1 = document.getElementById('container1').ej2_instances[0];
+        var chart2 = document.getElementById('container2').ej2_instances[0];
+        var chart3 = document.getElementById('container3').ej2_instances[0];
+        chart.exportModule.export('PDF', 'Chart', null, [chart1, chart2, chart3], null, null, true, undefined, undefined, true);
+    };
+</script>

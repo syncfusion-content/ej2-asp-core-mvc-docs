@@ -1,0 +1,30 @@
+<ejs-chart id="container" title="Sales Comparision">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" title="Manager">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Sales" minimum="0" maximum="20000">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" width="2" yName="y"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+<div>
+    <ejs-button id="button" content="Export" isPrimary="true" style="float: right"></ejs-button>
+</div>
+<script>
+    document.getElementById('button').onclick = () => {
+        const header = {
+            content: 'Chart Header',
+            fontSize: 15
+        };
+
+        const footer = {
+            content: 'Chart Footer',
+            fontSize: 15,
+        };
+        chart.exportModule.export('PDF', 'Chart', 1, [chart], null, null, true, header, footer);
+    };
+</script>
