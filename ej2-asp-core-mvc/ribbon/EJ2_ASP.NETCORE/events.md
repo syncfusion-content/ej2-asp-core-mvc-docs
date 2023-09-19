@@ -2012,7 +2012,7 @@ The [select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 ### BackStageItemClick
 
-The `BackStageItemClick` event is triggered when backstage item is selected.
+The [BackStageItemClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.BackstageItem.html#Syncfusion_EJ2_Ribbon_BackstageItem_BackStageItemClick) event is triggered when backstage item is selected.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
