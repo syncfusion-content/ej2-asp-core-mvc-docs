@@ -1536,6 +1536,104 @@ The [Click](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.R
 {% endhighlight %}
 {% endtabs %}
 
+## GroupButton item events
+
+### BeforeClick
+
+The [BeforeClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_BeforeClick) event is triggered before selecting a button from the groupbutton items.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<RibbonGroupButtonItem> events = new List<RibbonGroupButtonItem>() {
+
+      new RibbonGroupButtonItem { IconCss = "e-icons e-bold", Content = "Bold", BeforeClick = "function(args){beforClickEvent(args)}" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-italic", Content = "Italic", Selected = true, BeforeClick = "function(args){beforClickEvent(args)}" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-underline", Content = "Underline", BeforeClick = "function(args){beforClickEvent(args)}" },
+      new RibbonGroupButtonItem { IconCss = "e-icons e-strikethrough", Content = "Strikethrough", BeforeClick = "function(args){beforClickEvent(args)}" }
+    };
+}
+
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Paragraph").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.GroupButton).AllowedSizes(RibbonItemSize.Small).GroupButtonSettings(groupButton =>
+                {
+                    groupButton.Selection(RibbonGroupButtonSelection.Multiple).Items(events);
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
+
+<script>
+    function beforClickEvent(args) {
+        // Here, you can customize your code.
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+### Click
+
+The [Click](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_Click) event is triggered when selecting a button from the groupbutton items.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<RibbonGroupButtonItem> events = new List<RibbonGroupButtonItem>() {
+
+      new RibbonGroupButtonItem { IconCss = "e-icons e-align-left", Content = "Align Left", Click = "function(args){clickEvent(args)}" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-align-center", Content = "Align Center", Click = "function(args){clickEvent(args)}", Selected = true },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-align-right", Content = "Align Right", Click = "function(args){clickEvent(args)}" },
+      new RibbonGroupButtonItem { IconCss = "e-icons e-justify", Content = "Justify", Click = "function(args){clickEvent(args)}" }
+    };
+}
+
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Paragraph").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.GroupButton).AllowedSizes(RibbonItemSize.Small).GroupButtonSettings(groupButton =>
+                {
+                    groupButton.Selection(RibbonGroupButtonSelection.Single).Items(events);
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
+
+<script>
+    function clickEvent(args) {
+        // Here, you can customize your code.
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
 ## FileMenu events
 
 ### Before close
