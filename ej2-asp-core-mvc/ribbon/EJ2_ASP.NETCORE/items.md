@@ -26,6 +26,7 @@ The following table explains the built-in items and their actions.
 | SplitButton | Renders splitbutton as ribbon item.|
 | ComboBox | Renders combobox as ribbon item.|
 | ColorPicker | Renders color picker as ribbon item.|
+| GroupButton | Renders groupbutton as ribbon item.|
 
 ### Button items
 
@@ -386,6 +387,87 @@ You can use the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 
 {% endhighlight %}
 {% endtabs %}
+
+### Groupbutton items
+
+You can render the built-in groupbutton Ribbon item by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `GroupButton`. You can also customize the groupbutton item using the [RibbonGroupButtonSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonSettings.html), which provides options such as `selection` and `items`.
+
+#### Items
+
+You can render the groupbutton items by using [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonSettings_Items) property. You can also customize the groupbutton items through [RibbonGroupButtonItem](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html), which provides options such as `Content`, `IconCss`, `Selected` and more.
+
+#### Item content
+
+You can use the [Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_Content) property to define the text content for the groupbutton.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/groupButtonContent/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Ribbon Control with Groupbutton Item content](./images/ribbon-groupbutton-content.png)
+
+#### Icon only
+
+You can use the [IconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_IconCss) property to customize the groupbutton icon. If the `IconCss` property is not defined, the groupbutton will not be rendered.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/groupButtonIcon/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Ribbon Control with Groupbutton Icon only](./images/ribbon-groupbutton-icon.png)
+
+#### Selection
+
+You can use the [Selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_Selected) property to select the groupbutton item initally. When set to `true`, the button will be selected. By default the `Selected` property is false.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/groupButtonSelected/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Ribbon Control with Groupbutton Selection](./images/ribbon-groupbutton-selected.png)
+
+#### Single selection
+
+You can set the [selection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonSettings_Selection) property value as `Single` to make one selection at a time. It automatically deselects the previous choice when a different item is clicked.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/singleSelection/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Ribbon Control with Groupbutton Single selection](./images/ribbon-groupbutton-single-selection.png)
+
+#### Multiple selection
+
+You can set the [selection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonSettings_Selection) property value as `Multiple` to select more than one button at a time. Users can select a button one by one to select multiple buttons.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/multipleSelection/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Ribbon Control with Groupbutton Multiple selection](./images/ribbon-groupbutton-multiple-selection.png)
+
+#### Groupbutton in simplified mode layout
+
+In simplified mode, the groupbutton will be rendered as a dropdownbutton. The dropdownbutton icon will be updated based on the button item selected. The initial button icon will be the set, if none of the buttons are selected.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/simplifiedModeGroupButton/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Ribbon Control with Groupbutton in simplified mode](./images/ribbon-simplifiedmode-groupbutton.png)
+
 
 ## Custom items
 
