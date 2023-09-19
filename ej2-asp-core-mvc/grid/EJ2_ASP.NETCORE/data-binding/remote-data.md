@@ -35,9 +35,75 @@ To bind remote data to grid component, assign service data as an instance of `Da
 {% endtabs %}
 {% endif %}
 
-
-
 N> By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
+
+## ExpandoObject with complex column binding using URL adaptor
+
+You can achieve the ExpandoObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
+
+The following code example shows how to bind ExpandoObject datasource in grid using URL adaptor.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="expandoObject.cs" %}
+{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/expandoObject.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="expandoObject.cs" %}
+{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/expandoObject.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+N> Perform data and CRUD operations for complex ExpandoObject binding fields as well.
+
+The following image represents ExpandoObject complex data binding.
+![Grid with ExpandoObject Binding](images/ExpandoObjectDemo.gif)
+
+## DynamicObject with complex column binding using URL adaptor
+
+You can achieve DynamicObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
+
+The following code example shows how to bind DynamicObject datasource in grid using URL adaptor.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="dynamicObject.cs" %}
+{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/dynamicObject.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="dynamicObject.cs" %}
+{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/dynamicObject.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+N> Perform data and CRUD operations for complex DynamicObject binding fields as well.
+
+The following image represents DynamicObject complex data binding.
+![Grid with DynamicObject Binding](images/DynamicObjectDemo.gif)
 
 ## OData adaptor - Binding OData service
 
@@ -66,8 +132,6 @@ N> By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
 {% endtabs %}
 {% endif %}
 
-
-
 ## OData v4 adaptor - Binding OData v4 service
 
 The ODataV4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [OData documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the `ODataV4Adaptor`.
@@ -94,8 +158,6 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Web API adaptor
 
@@ -129,8 +191,6 @@ You can use `WebApiAdaptor` to bind grid with Web API created using OData endpoi
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The response object should contain properties, `Items` and `Count`, whose values are a collection of entities and total count of the entities, respectively.
 
@@ -174,8 +234,6 @@ You can use the following code example to use `RemoteSaveAdaptor` in Grid.
 {% endtabs %}
 {% endif %}
 
-
-
 ## Custom adaptor
 
 You can create your own adaptor by extending the built-in adaptors. The following demonstrates custom adaptor approach and how to add a serial number for the records by overriding the built-in response processing using the `processResponse` method of the `ODataAdaptor`.
@@ -209,8 +267,6 @@ You can create your own adaptor by extending the built-in adaptors. The followin
 {% endtabs %}
 {% endif %}
 
-
-
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of `e-data-manager` tag helper.
@@ -238,8 +294,6 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% endtabs %}
 {% endif %}
 
-
-
 ## Handling on-demand grid actions
 
 `On-Demand` grid actions help you to improve the performance for large data application. To achieve `On-Demand` in the grid, use `UrlAdaptor`. To define `UrlAdaptor` in the grid, specify the data service in `url` and the `AdaptorType` as `UrlAdaptor` like below.
@@ -262,8 +316,6 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% highlight c# tabtitle="Dataoperations.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
-
-
 
 After defined `DataManager`, grid will request an AJAX POST for data. It will be sent to the specified data service for every grid actions with the needed parameters. This query parameters will help you to perform server-side operations for grid.
 
@@ -303,8 +355,6 @@ The parameters of DataManager bound to `DataManagerRequest` in the server. You c
 {% endtabs %}
 {% endif %}
 
-
-
 N> If the grid rendered rows with empty/blank values then it can be resolved with the procedure explained [here](https://ej2.syncfusion.com/aspnetcore/documentation/grid/data-binding/data-binding#troubleshoot-grid-render-rows-without-data).
 
 ## WebMethod
@@ -335,8 +385,6 @@ For every operations, an AJAX post will be send to the specified data service.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 `WebMethodAdaptor` expects JSON response from the server and the response object should contain properties `result` and `count` whose values are collection of entities and total count of the entities respectively.
 
