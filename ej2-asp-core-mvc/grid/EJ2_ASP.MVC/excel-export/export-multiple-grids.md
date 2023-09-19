@@ -71,3 +71,6 @@ Excel exporting provides support to export multiple grids in new sheet. To expor
 {% endtabs %}
 {% endif %}
 
+## Limitations
+
+Multiple grids exporting feature is not supported with server side exporting.
