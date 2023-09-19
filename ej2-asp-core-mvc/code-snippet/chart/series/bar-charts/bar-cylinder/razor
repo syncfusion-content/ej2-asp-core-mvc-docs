@@ -1,0 +1,22 @@
+@Html.EJS().Charts("container").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Bar).  
+      XName("x").
+      YName("y").
+      DataSource(ViewBag.dataSource).
+      ColumnFacet(Syncfusion.EJ2.Charts.ShapeType.Cylinder).
+      name("India").
+      Add();
+   })
+   .PrimaryXAxis(px => 
+         px.Interval(1)
+            .Minimum(2006)
+            .Maximum(2011)
+   )
+   .PrimaryYAxis(py => py
+            .Title("Percentage")
+            .Interval(1)
+            .Minimum(3)
+            .Maximum(12)
+   )
+   .Title("Unemployment rate in percentage").Render()
