@@ -24,7 +24,7 @@ The menu items can be added to the backstage view by using the `items` property.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Ribbon Control with backstage menu items](images/ribbon-backstage.png)
+![ASP.NET MVC Ribbon Control with backstage menu items](images/ribbon-backstage.gif)
 
 ## Adding footer items
 

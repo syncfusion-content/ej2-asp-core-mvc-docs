@@ -55,7 +55,7 @@
 
 <style>
     .e-ribbon-backstage-content{
-        width: 550px;
+        width: 500px;
         height: 350px;
     }
 

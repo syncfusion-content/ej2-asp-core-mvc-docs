@@ -85,3 +85,17 @@ You can use the `template` property to modify the backstage view menu items and 
 {% endtabs %}
 
 ![ASP.NET Core Ribbon Control with backstage template](images/ribbon-backstage-template.png)
+
+## Setting width and height
+
+You can customize the height and width of the backstage view using the `height` and `width` property. By default, dimensions are set based on the content added.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/backstage/customization/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Ribbon Control wiht backstage customization](images/ribbon-backstage-customization.png)
+
+> [Adding Backstage events](./events#backStageItemClick)

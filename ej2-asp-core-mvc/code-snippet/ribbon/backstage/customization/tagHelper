@@ -34,7 +34,7 @@
 }
 
 <ejs-ribbon id="ribbon">
-    <e-ribbon-backstagemenusettings height="350px" width="550px" text="File" visible="true" backButton=backButtonSettings items=backstageItems></e-ribbon-backstagemenusettings>
+    <e-ribbon-backstagemenusettings height="350px" width="500px" text="File" visible="true" backButton=backButtonSettings items=backstageItems></e-ribbon-backstagemenusettings>
     <e-ribbon-tabs>
         <e-ribbon-tab header="Home">
             <e-ribbon-groups>
