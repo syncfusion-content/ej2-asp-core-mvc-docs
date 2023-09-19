@@ -466,3 +466,7 @@ In the following example, you can use the `drawImage` method in the button click
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-add-image.png)

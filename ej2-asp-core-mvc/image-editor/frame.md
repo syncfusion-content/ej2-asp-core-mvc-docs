@@ -66,7 +66,7 @@ Here is an example of Frame using the `drawFrame` method.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-filter.jpg)
+![ImageEditor Sample](images/image-editor-frame.png)
 
 
 ## Frame changing event

@@ -50,7 +50,7 @@ Here is an example of resizing the image using the `resize` method.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-filter.jpg)
+![ImageEditor Sample](images/image-editor-resize.png)
 
 ## Resizing event
 
