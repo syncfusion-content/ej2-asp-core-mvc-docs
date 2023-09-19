@@ -26,6 +26,7 @@ The following table explains the built-in items and their actions.
 | SplitButton | Renders splitbutton as ribbon item.|
 | ComboBox | Renders combobox as ribbon item.|
 | ColorPicker | Renders color picker as ribbon item.|
+| GroupButton | Renders groupbutton as ribbon item.|
 
 ### Button items
 
@@ -359,6 +360,86 @@ You can use the [Value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.
 
 {% endhighlight %}
 {% endtabs %}
+
+### Groupbutton items
+
+You can render the built-in groupbutton Ribbon item by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `GroupButton`. You can also customize the groupbutton item using the [RibbonGroupButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonSettings.html), which provides options such as `Selection` and `Items`.
+
+#### Items
+
+You can render the groupbutton items by using [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonSettings_Items) property. You can also customize the groupbutton items through [RibbonGroupButtonItem](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html), which provides options such as `Content`, `IconCss`, `Selected` and more.
+
+#### Item content
+
+You can use the [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_Content) property to define the text content for the groupbutton.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/groupButtonContent/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Ribbon Control Groupbutton Item Content](./images/ribbon-groupbutton-content.png)
+
+#### Icon only
+
+You can use the [IconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_IconCss) property to customize the groupbutton icon. If the `IconCss` property is not defined, the groupbutton will not be rendered.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/groupButtonIcon/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Ribbon Control Groupbutton Icon only](./images/ribbon-groupbutton-icon.png)
+
+#### Selection
+
+You can use the [Selected](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_Selected) property to select the groupbutton item initally. When set to `true`, the button will be selected. By default the `Selected` property is false.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/groupButtonSelected/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Ribbon Control Groupbutton Selection](./images/ribbon-groupbutton-selected.png)
+
+#### Single selection
+
+You can set the [Selection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonSettings_Selection) property value as `RibbonGroupButtonSelection.Single` to make one selection at a time. It automatically deselects the previous choice when a different item is clicked.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/singleSelection/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Ribbon Control Groupbutton Single selection](./images/ribbon-groupbutton-single-selection.png)
+
+#### Multiple selection
+
+You can set the [Selection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonSettings_Selection) property value as `RibbonGroupButtonSelection.Multiple` to select more than one button at a time. Users can select a button one by one to select multiple buttons.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/multipleSelection/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Ribbon Control Groupbutton Multiple selection](./images/ribbon-groupbutton-multiple-selection.png)
+
+#### Groupbutton in simplified mode layout
+
+In simplified mode, the groupbutton will be rendered as a dropdownbutton. The dropdownbutton icon will be updated based on the button item selected. The initial button icon will be the set, if none of the buttons are selected.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/items/simplifiedModeGroupButton/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Ribbon Control Groupbutton in simplified mode](./images/ribbon-simplifiedmode-groupbutton.png)
 
 ## Custom items
 
