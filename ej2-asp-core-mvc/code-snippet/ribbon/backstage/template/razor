@@ -215,4 +215,40 @@
         border-radius: 5px;
         transition: all 0.3s;
     }
+
+    #targetElement{
+        width: 500px;
+        height: 500px;
+    }
+
+    #items-wrapper ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    #items-wrapper li {
+        height: 38px;
+        font-size: 16px;
+        list-style: none;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    #items-wrapper li span {
+        margin-right: 15px;
+        font-size: 14px;
+    }
+
+    #items-wrapper ul li:hover{
+        background-color: #a5bff4;
+    }
+
+    #content-wrapper .content-close{
+        display: none;
+    }
+
+    #content-wrapper .content-open{
+        display: block;
+    }
 </style>
