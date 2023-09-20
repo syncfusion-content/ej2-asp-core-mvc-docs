@@ -1929,3 +1929,48 @@ The [Select](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.
 
 {% endhighlight %}
 {% endtabs %}
+
+## Backstage Menu events
+
+### BackStageItemClick
+
+The [BackStageItemClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.BackstageItem.html#Syncfusion_EJ2_Ribbon_BackstageItem_BackStageItemClick) event is triggered when backstage item is selected.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<BackstageItem> backstageItems = new List<BackstageItem>() {
+        new BackstageItem { Id = "home", Text = "Home", IconCss = "e-icons e-home", Content = processBackstageContent("home"), BackStageItemClick = backStageItemClickEvent(args) },
+    };
+    BackStageMenu backstageSettings = new BackStageMenu() { Text = "File", Visible = true, BackButton = new BackstageBackButton { Text = "Close" }, Items = backstageItems };
+}
+@Html.EJS().Ribbon("backstage-ribbon").BackStageMenu(backstageSettings)).Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Clipboard").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-cut").Content("Cut");
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
+
+<script>
+    function backStageItemClickEvent(args) {
+        // Here, you can customize your code.
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
