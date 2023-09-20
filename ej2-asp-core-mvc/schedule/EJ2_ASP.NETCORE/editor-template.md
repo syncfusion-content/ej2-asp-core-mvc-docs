@@ -424,7 +424,7 @@ met.
 {% endif %}
 
 
-![Display Customize header and footer using template in ASP.NET Core Scheduler](images/schedule-editor-with-resource.png)
+![Display Customize header and footer using template in ASP.NET Core Scheduler](images/schedule-editor-custom-header-footer.png)
 ### How to add resource options within editor template
 
 The resource field can be added within editor template with MultiSelect control for allow multiple resources.
