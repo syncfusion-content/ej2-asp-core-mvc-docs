@@ -393,6 +393,38 @@ As we are using our Syncfusion sub-components within our editor using template i
 
 ![Display Customizing Event Editor Using Template in ASP.NET Core Scheduler](images/schedule-custom-editor-template.png)
 
+### How to customize header and footer using template
+
+The editor window's header and footer can be enhanced with custom designs using the [`editorHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorHeaderTemplate) and [`editorFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorFooterTemplate) options. To achieve this, create a script template that includes the necessary fields. Ensure that the template type is set to **text/x-template**.
+
+In this demo, we tailor the editor's header according to the appointment's subject field using the [`editorHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorHeaderTemplate). Furthermore, we make use of the [`editorFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorFooterTemplate) to handle the functionality of validating specific fields before proceeding with the save action or canceling it if validation requirements are not 
+met.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/custom-editor-header-footer/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/custom-editor-header-footer/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/custom-editor-header-footer/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/custom-editor-header-footer/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+![Display Customize header and footer using template in ASP.NET Core Scheduler](images/schedule-editor-custom-header-footer.png)
 ### How to add resource options within editor template
 
 The resource field can be added within editor template with MultiSelect control for allow multiple resources.
