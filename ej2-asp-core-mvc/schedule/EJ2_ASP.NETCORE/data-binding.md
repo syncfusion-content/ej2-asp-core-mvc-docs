@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Data-binding
 
 The Scheduler uses `dataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property can be assigned either with the instance of `dataManager` or JavaScript object array collection. It supports two kinds of data binding method:
@@ -74,7 +73,7 @@ N> By default, `dataManager` uses `JsonAdaptor` for local data-binding.
 
 You can also bind different field names to the default event fields as well as include additional custom fields to the event object collection which can be referred [here](./appointments/#binding-different-field-names).
 
-## Binding remote data
+## Remote data
 
 Any kind of remote data services can be bound to the Scheduler. To do so, create an instance of `dataManager` and provide the service URL to the `Url` option of `dataManager` and then assign it to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property within `e-schedule-eventsettings`.
 
@@ -229,6 +228,105 @@ The following sample code demonstrates binding data to the Scheduler component t
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+The server-side controller code to handle the CRUD operations is as follows.
+
+```sh
+namespace ScheduleSample.Controllers
+{
+    public class HomeController : Controller
+    {
+        ScheduleDataDataContext db = new ScheduleDataDataContext();
+        public ActionResult Index()
+        {
+            return View();
+        }  
+        public ActionResult LoadData()  // Here we get the Start and End Date and based on that can filter the data and return to Scheduler
+        {
+            var data = db.ScheduleEventDatas.ToList();
+            return Json(data);
+        }
+        [HttpPost]
+        public ActionResult UpdateData([FromBody] EditParams param)
+        {
+            if (param.action == "insert" || (param.action == "batch" && param.added != null)) // this block of code will execute while inserting the appointments
+            {
+                var value = (param.action == "insert") ? param.value : param.added[0];
+                int intMax = db.ScheduleEventDatas.ToList().Count > 0 ? db.ScheduleEventDatas.ToList().Max(p => p.Id) : 1;
+                DateTime startTime = Convert.ToDateTime(value.StartTime);
+                DateTime endTime = Convert.ToDateTime(value.EndTime);
+                ScheduleEventData appointment = new ScheduleEventData()
+                {
+                    Id = intMax + 1,
+                    StartTime = startTime,
+                    EndTime = endTime,
+                    Subject = value.Subject,
+                    IsAllDay = value.IsAllDay,
+                    StartTimezone = value.StartTimezone,
+                    EndTimezone = value.EndTimezone,
+                    RecurrenceRule = value.RecurrenceRule,
+                    RecurrenceID = value.RecurrenceID,
+                    RecurrenceException = value.RecurrenceException
+                };
+                db.ScheduleEventDatas.InsertOnSubmit(appointment);
+                db.SubmitChanges();
+            }
+            if (param.action == "update" || (param.action == "batch" && param.changed != null)) // this block of code will execute while updating the appointment
+            {
+                var value = (param.action == "update") ? param.value : param.changed[0];
+                var filterData = db.ScheduleEventDatas.Where(c => c.Id == Convert.ToInt32(value.Id));
+                if (filterData.Count() > 0)
+                {
+                    DateTime startTime = Convert.ToDateTime(value.StartTime);
+                    DateTime endTime = Convert.ToDateTime(value.EndTime);
+                    ScheduleEventData appointment = db.ScheduleEventDatas.Single(A => A.Id == Convert.ToInt32(value.Id));
+                    appointment.StartTime = startTime;
+                    appointment.EndTime = endTime;
+                    appointment.StartTimezone = value.StartTimezone;
+                    appointment.EndTimezone = value.EndTimezone;
+                    appointment.Subject = value.Subject;
+                    appointment.IsAllDay = value.IsAllDay;
+                    appointment.RecurrenceRule = value.RecurrenceRule;
+                    appointment.RecurrenceID = value.RecurrenceID;
+                    appointment.RecurrenceException = value.RecurrenceException;
+                }
+                db.SubmitChanges();
+            }
+            if (param.action == "remove" || (param.action == "batch" && param.deleted != null)) // this block of code will execute while removing the appointment
+            {
+                if (param.action == "remove")
+                {
+                    int key = Convert.ToInt32(param.key);
+                    ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == key).FirstOrDefault();
+                    if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
+                }
+                else
+                {
+                    foreach (var apps in param.deleted)
+                    {
+                        ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == apps.Id).FirstOrDefault();
+                        if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
+                    }
+                }
+                db.SubmitChanges();
+            }
+            var data = db.ScheduleEventDatas.ToList();
+            return Json(data);
+        }
+
+        public class EditParams
+        {
+            public string key { get; set; }
+            public string action { get; set; }
+            public List<ScheduleEventData> added { get; set; }
+            public List<ScheduleEventData> changed { get; set; }
+            public List<ScheduleEventData> deleted { get; set; }
+            public ScheduleEventData value { get; set; }
+        }
+    }
+}
+```
+```
 
 ### Passing additional parameters to the server
 
