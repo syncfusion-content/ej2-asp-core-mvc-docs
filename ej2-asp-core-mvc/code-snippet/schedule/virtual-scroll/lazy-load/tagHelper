@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Schedule
+
+@{
+    var dataManager = new DataManager() { Url = "https://services.syncfusion.com/aspnet/production/api/VirtualEventData", Adaptor = "WebApiAdaptor", CrossDomain = true };
+}
+
+<ejs-schedule id="schedule" width="100%" height="650" selectedDate="new DateTime(DateTime.Today.Year, 4, 1)" currentView="TimelineMonth" readonly="true">
+    <e-schedule-views>
+        <e-schedule-view option="TimelineMonth" enableLazyLoading="true"></e-schedule-view>
+    </e-schedule-views>
+    <e-schedule-group enableCompactView="false" resources="@ViewBag.Resource"></e-schedule-group>
+    <e-schedule-resources>
+        <e-schedule-resource field="ResourceId" dataSource="@ViewBag.resourcesData" title="Resource" name="Resources" textField="Text" idField="Id" colorField="Color"></e-schedule-resource>
+    </e-schedule-resources>
+    <e-schedule-eventsettings dataSource="dataManager"></e-schedule-eventsettings>
+</ejs-schedule>
