@@ -225,6 +225,39 @@ The text style of the axis labels can be customized using the following options 
 
 {% endif %}
 
+### Providing line breaks
+
+Axis labels with line breaks improve the readability of the HeatMap by splitting the text on an axis into multiple lines. The **"\<br>"** character is used to add line breaks to the axis labels.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/axis/line-breaks/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Line-breaks.cs" %}
+{% include code-snippet/heatmap/axis/line-breaks/line-breaks.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Axis Labels with line breaks in ASP.NET Core HeatMap chart](./images/heatmap-chart-axis-labels-with-line-breaks.png)
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/axis/line-breaks/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Line-breaks.cs" %}
+{% include code-snippet/heatmap/axis/line-breaks/line-breaks.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Axis Labels with line breaks in ASP.NET Core HeatMap chart](./images/heatmap-chart-axis-labels-with-line-breaks.png)
+
+{% endif %}
+
+
 ### Customizing labels when intersecting with other labels
 
 {% if page.publishingplatform == "aspnet-core" %}

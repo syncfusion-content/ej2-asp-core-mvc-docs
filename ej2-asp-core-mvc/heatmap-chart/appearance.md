@@ -334,3 +334,135 @@ The format of the data label, such as currency, decimal, percent etc. can be cha
 {% endtabs %}
 {% endif %}
 
+
+### Template
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+Any HTML elements can be added as a template in the data labels by using the [labelTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_LabelTemplate) property of [cellSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html) in the HeatMap.
+
+The following examples show various data binding methods in the HeatMap using the `labelTemplate` property.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Any HTML elements can be added as a template in the data labels by using the [LabelTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_LabelTemplate) property of [CellSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html) in the HeatMap.
+
+The following examples show various data binding methods in the HeatMap using the `LabelTemplate` property.
+
+{% endif %}
+
+#### Array binding
+
+By including `${value}` in the template content, the value from the data source for the corresponding cell can be displayed in the HeatMap cell as data label template content. Additionally, the x-axis and y-axis label values can be displayed by including `${xLabel}` and `${yLabel}` in the template content.
+
+**Table**
+
+The following example demonstrates how to add a data label template for array table binding.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/template-array-table/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-array-table.cs" %}
+{% include code-snippet/heatmap/appearance/template-array-table/template-array-table.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/template-array-table/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-array-table.cs" %}
+{% include code-snippet/heatmap/appearance/template-array-table/template-array-table.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Cell**
+
+The following example demonstrates how to add a data label template for array cell binding.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/template-array-cell/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-array-cell.cs" %}
+{% include code-snippet/heatmap/appearance/template-array-cell/template-array-cell.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/template-array-cell/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-array-cell.cs" %}
+{% include code-snippet/heatmap/appearance/template-array-cell/template-array-cell.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+#### JSON binding
+
+By including the desired field name in the template content, such as **${value}**, the value from the data source for the corresponding cell can be displayed in the HeatMap cell as data label template content.
+
+**Table**
+
+The following example demonstrates how to add a data label template for JSON table binding.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/template-json-table/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-json-table.cs" %}
+{% include code-snippet/heatmap/appearance/template-json-table/template-json-table.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/template-json-table/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-json-table.cs" %}
+{% include code-snippet/heatmap/appearance/template-json-table/template-json-table.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Cell**
+
+The following example demonstrates how to add a data label template for JSON cell binding.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/template-json-cell/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-json-cell.cs" %}
+{% include code-snippet/heatmap/appearance/template-json-cell/template-json-cell.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/template-json-cell/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-json-cell.cs" %}
+{% include code-snippet/heatmap/appearance/template-json-cell/template-json-cell.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
