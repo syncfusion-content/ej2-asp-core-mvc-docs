@@ -370,7 +370,7 @@ The following example demonstrates how to add a data label template for array ta
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core HeatMap chart with data label template with array table binding](./images/appearance/data-label-template-with-array-table-binding.png)
+![ASP.NET Core HeatMap chart with data label template and array table binding](./images/appearance/data-label-template-with-array-table-binding.png)
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -383,7 +383,7 @@ The following example demonstrates how to add a data label template for array ta
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMap chart with data label template with array table binding](./images/appearance/data-label-template-with-array-table-binding.png)
+![ASP.NET MVC HeatMap chart with data label template and array table binding](./images/appearance/data-label-template-with-array-table-binding.png)
 
 {% endif %}
 
@@ -403,7 +403,7 @@ The following example demonstrates how to add a data label template for array ce
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core HeatMap chart with data label template with array cell binding](./images/appearance/data-label-template-with-array-cell-binding.png)
+![ASP.NET Core HeatMap chart with data label template and array cell binding](./images/appearance/data-label-template-with-array-cell-binding.png)
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -416,7 +416,7 @@ The following example demonstrates how to add a data label template for array ce
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMap chart with data label template with array cell binding](./images/appearance/data-label-template-with-array-cell-binding.png)
+![ASP.NET MVC HeatMap chart with data label template and array cell binding](./images/appearance/data-label-template-with-array-cell-binding.png)
 
 {% endif %}
 
@@ -440,7 +440,7 @@ The following example demonstrates how to add a data label template for JSON tab
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core HeatMap chart with data label template with JSON table binding](./images/appearance/data-label-template-with-JSON-table-binding.png)
+![ASP.NET Core HeatMap chart with data label template and JSON table binding](./images/appearance/data-label-template-with-JSON-table-binding.png)
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -453,7 +453,7 @@ The following example demonstrates how to add a data label template for JSON tab
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMap chart with data label template with JSON table binding](./images/appearance/data-label-template-with-JSON-table-binding.png)
+![ASP.NET MVC HeatMap chart with data label template and JSON table binding](./images/appearance/data-label-template-with-JSON-table-binding.png)
 
 {% endif %}
 
@@ -473,7 +473,7 @@ The following example demonstrates how to add a data label template for JSON cel
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core HeatMap chart with data label template with JSON cell binding](./images/appearance/data-label-template-with-JSON-cell-binding.png)
+![ASP.NET Core HeatMap chart with data label template and JSON cell binding](./images/appearance/data-label-template-with-JSON-cell-binding.png)
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -486,6 +486,6 @@ The following example demonstrates how to add a data label template for JSON cel
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMap chart with data label template with JSON cell binding](./images/appearance/data-label-template-with-JSON-cell-binding.png)
+![ASP.NET MVC HeatMap chart with data label template and JSON cell binding](./images/appearance/data-label-template-with-JSON-cell-binding.png)
 
 {% endif %}
