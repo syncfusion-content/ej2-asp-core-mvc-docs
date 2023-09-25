@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+@{
+    var label = new MapsDataLabelSettings
+    {
+        Visible = true,
+        LabelPath = "name",
+        IntersectionAction = Syncfusion.EJ2.Maps.IntersectAction.Trim,
+        SmartLabelMode = Syncfusion.EJ2.Maps.SmartLabelMode.Hide,
+        AnimationDuration = 4000
+    };
+}
+
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.ShapeSettings(s => s.Autofill(true)).DataLabelSettings(label).TooltipSettings(ts =>ts.ValuePath("name").Visible(true)).
+      ShapeData(ViewBag.usmap).Add();
+}).Render()
