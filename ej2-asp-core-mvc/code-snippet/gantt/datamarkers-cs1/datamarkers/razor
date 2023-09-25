@@ -1,0 +1,14 @@
+            @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id(
+                "TaskID").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("subtasks")
+                ).Indicators("indicators").DataBound("DataBound").Render()
+            <script>
+              function DataBound() {
+                  let element: any = document.querySelectorAll('.e-indicator-span');
+                  for (let i = 0; i < element.length; i++) {
+                      element[i].addEventListener('click', function () {
+                      alert('Indicator Click');
+                    });
+                  }
+                }
+            </script>
+        

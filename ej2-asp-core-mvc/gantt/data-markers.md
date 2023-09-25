@@ -50,3 +50,36 @@ The following code example demonstrates how to implement data markers in the Gan
 
 
 ![Alt text](images/indicators.PNG)
+
+## Binding click event for Data markers
+
+To bind the click event for Data markers, one can make use of the [`dataBound`] event Inside the event you can bind the click event for the data markers using the class e-indicator-span.
+
+The following code example demonstrates how to implement data markers in the Gantt chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/datamarkers-cs1/datamarkers/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Datamarkers.cs" %}
+{% include code-snippet/gantt/datamarkers-cs1/datamarkers/datamarkers.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/datamarkers-cs1/datamarkers/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Datamarkers.cs" %}
+{% include code-snippet/gantt/datamarkers-cs1/datamarkers/datamarkers.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/datamarkerclick.PNG)
