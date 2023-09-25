@@ -1,4 +1,3 @@
-![image](https://github.com/syncfusion-content/ej2-asp-core-mvc-docs/assets/102576531/3a24ce59-197a-4077-86c7-5b1f5e756812)---
 layout: post
 title: Getting Started with Syncfusion ##Platform_Name## Diagram Control
 description: Checkout and learn about getting started with ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more details.
