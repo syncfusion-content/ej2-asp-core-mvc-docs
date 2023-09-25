@@ -137,6 +137,35 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 
 ![Change Gripper Icon in Taskbar](images/change-gripper-icon.png)
 
+### Taskbar based on resource group
+
+The default taskbar UI can be replaced with custom templates using the [`QueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event. The following code example shows customizing the taskbar UI based on resource group in resource collection.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/appearance-and-styling/taskbarCustomize/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarCustomize.cs" %}
+{% include code-snippet/gantt/appearance-and-styling/taskbarCustomize/taskbarCustomize.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/appearance-and-styling/taskbarCustomize/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarCustomize.cs" %}
+{% include code-snippet/gantt/appearance-and-styling/taskbarCustomize/taskbarCustomize.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Taskbar based on resource group](images/customize-taskbar.png)
+
 ## Task labels
 
 The Gantt control maps any data source fields to task labels using the [`LabelSettings.LeftLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttLabelSettings.html#Syncfusion_EJ2_Gantt_GanttLabelSettings_LeftLabel), [`LabelSettings.RightLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttLabelSettings.html#Syncfusion_EJ2_Gantt_GanttLabelSettings_RightLabel), and [`LabelSettings.TaskLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttLabelSettings.html#Syncfusion_EJ2_Gantt_GanttLabelSettings_TaskLabel) properties. You can customize the task labels with templates.
