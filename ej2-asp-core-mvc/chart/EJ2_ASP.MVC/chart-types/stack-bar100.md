@@ -3,7 +3,7 @@ layout: post
 title: 100% Stacked Bar Chart in ##Platform_Name## Syncfusion Chart Component
 description: Learn here all about 100% Stacked Bar Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: 100% Stacked Bar Chart
+control: 100% Stacked bar chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 # 100% Stacked Bar in ##Platform_Name## Charts Component
 
-## 100% Stacked Bar
+## 100% Stacked bar
 
 To render a 100% stacked bar series, use series [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`StackingBar100`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_StackingBar100).
 
@@ -34,6 +34,35 @@ To render a 100% stacked bar series, use series [`Type`](https://help.syncfusion
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedbar100.cs" %}
 {% include code-snippet/chart/series/bar-charts/100perstackedbar/stackedbar100.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## 100% Cylindrical stacked bar chart
+
+To render a 100% cylindrical stacked bar chart, set the `ColumnFacet` property to `Cylinder` in the chart series.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar-charts/stackedbar100-cylinder/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stackedbar100-cylinder.cs" %}
+{% include code-snippet/chart/series/bar-charts/stackedbar100-cylinder/stackedbar100-cylinder.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar-charts/stackedbar100-cylinder/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stackedbar100-cylinder.cs" %}
+{% include code-snippet/chart/series/bar-charts/stackedbar100-cylinder/stackedbar100-cylinder.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -74,7 +103,7 @@ The following properties can be used to customize the [`100% Stacked Bar`](https
 
 
 
-## See Also
+## See also
 
 * [Data Label](../data-labels)
 * [Tooltip](../tool-tip)
