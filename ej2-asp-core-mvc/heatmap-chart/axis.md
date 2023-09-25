@@ -253,7 +253,7 @@ Axis labels with line breaks improve the readability of the HeatMap by splitting
 {% endhighlight %}
 {% endtabs %}
 
-![Axis Labels with line breaks in ASP.NET Core HeatMap chart](./images/heatmap-chart-axis-labels-with-line-breaks.png)
+![Axis Labels with line breaks in ASP.NET MVC HeatMap chart](./images/heatmap-chart-axis-labels-with-line-breaks.png)
 
 {% endif %}
 

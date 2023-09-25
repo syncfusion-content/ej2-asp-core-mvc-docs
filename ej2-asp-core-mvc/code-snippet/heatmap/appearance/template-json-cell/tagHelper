@@ -1,4 +1,4 @@
-<ejs-heatmap id='container' showTooltip="true">
+<ejs-heatmap id='container' showTooltip="true" load="onHeatmapLoad">
   <e-heatmap-titlesettings text="Commercial Aviation Accidents and Fatalities by year 2015 - 2017"
     textStyle="ViewBag.textStyle">
   </e-heatmap-titlesettings>
@@ -8,7 +8,7 @@
   </e-heatmap-yaxis>
   <e-heatmap-cellsettings labelTemplate="<div> Accidents - ${Accidents}</div>"></e-heatmap-cellsettings>
   <e-heatmap-legendsettings visible="true"></e-heatmap-legendsettings>
-  <e-heatmap-datasourcesettings isJsonData="true" adaptorType="Cell" xDataMapping="Year" yDataMapping="Months">
+  <e-heatmap-datasourcesettings isJsonData="true" adaptorType="Cell" xDataMapping="Year" yDataMapping="Months" valueMapping="Fatalities">
   </e-heatmap-datasourcesettings>
 </ejs-heatmap>
 
@@ -33,4 +33,9 @@
     { Year: '2015', Months: 'Sep-Oct', Accidents: 5, Fatalities: 243 },
     { Year: '2015', Months: 'Nov-Dec', Accidents: 2, Fatalities: 45 },
   ];
+
+  window.onHeatmapLoad = function (args) {
+    args.heatmap.dataSource = dataSource;
+  }
+
 </script>

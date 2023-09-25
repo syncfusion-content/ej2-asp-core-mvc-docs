@@ -4,7 +4,7 @@
         xAxis.Labels(ViewBag.xLabels)).YAxis(yaxis =>
             yaxis.Labels(ViewBag.yLabels)).LegendSettings(ls =>
                 ls.Visible(true)).CellSettings(cs =>
-                    cs.LabelTemplate("<div> Accidents - ${Accidents}</div>")).DataSource("dataSource").DataSourceSettings(ds => { ds.IsJsonData(true).AdaptorType(Syncfusion.EJ2.HeatMap.AdaptorType.Cell).XDataMapping("Year").YDataMapping("Months").BubbleDataMapping(bm => bm.Size("Accidents").Color("Fatalities")); }).Render()
+                    cs.LabelTemplate("<div> Accidents - ${Accidents}</div>")).DataSource("dataSource").DataSourceSettings(ds => { ds.IsJsonData(true).AdaptorType(Syncfusion.EJ2.HeatMap.AdaptorType.Cell).XDataMapping("Year").YDataMapping("Months").ValueMapping("Fatalities"); }).Render()
 
     <script>
 

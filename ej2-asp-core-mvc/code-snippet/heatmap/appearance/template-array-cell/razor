@@ -4,7 +4,7 @@
         xAxis.Labels(ViewBag.xLabels)).YAxis(yaxis =>
             yaxis.Labels(ViewBag.yLabels)).LegendSettings(ls =>
                 ls.Visible(true)).CellSettings(cs =>
-                    cs.LabelTemplate("")).DataSource("dataSource").DataSourceSettings(ds => { ds.IsJsonData(false).AdaptorType(Syncfusion.EJ2.HeatMap.AdaptorType.Cell); }).Render()
+                    cs.LabelTemplate("<div style='width:25px;height:20px;text-align:center;padding-top:2px;background-color:#5BBB9C; border: 1px solid #000000; border-radius:50%;font-weight:bold;'>${value}</div>")).DataSource("dataSource").DataSourceSettings(ds => { ds.IsJsonData(false).AdaptorType(Syncfusion.EJ2.HeatMap.AdaptorType.Cell); }).Render()
 
 <script>
     var dataSource =  [

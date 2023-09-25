@@ -124,6 +124,8 @@ The data labels can be animated during the initial rendering of the Maps. This c
 {% endhighlight %}
 {% endtabs %}
 
+![ASP.NET Core Maps with Data Label Animation](./images/data-label-animation.gif)
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 The data labels can be animated during the initial rendering of the Maps. This can be enabled by setting the [AnimationDuration](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_AnimationDuration) property in the `DataLabelSettings` of the Maps. The duration of the animation is specified in milliseconds.
@@ -136,10 +138,11 @@ The data labels can be animated during the initial rendering of the Maps. This c
 {% include code-snippet/maps/datalabel/label-animation/label-animation.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![ASP.NET MVC Maps with Data Label Animation](./images/data-label-animation.gif)
+
 {% endif %}
 
-
-![Data Label Animation](./images/DataLabel/data-label-animation.gif)
 
 ## Smart labels
 
