@@ -1,0 +1,23 @@
+@{
+var label = new MapsDataLabelSettings
+{
+Visible = true,
+LabelPath = "name",
+IntersectionAction = Syncfusion.EJ2.Maps.IntersectAction.Trim,
+SmartLabelMode = Syncfusion.EJ2.Maps.SmartLabelMode.Hide,
+AnimationDuration = 4000
+};
+var tooltip = new Syncfusion.EJ2.Maps.MapsTooltipSettings
+{
+Visible = true,
+ValuePath = "name"
+};
+}
+@using Syncfusion.EJ2.Maps;
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.usa" dataLabelSettings="label" tooltipSettings="tooltip">
+            <e-layersettings-shapesettings autofill=true></e-layersettings-shapesettings>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>
