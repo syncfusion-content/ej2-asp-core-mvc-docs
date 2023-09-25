@@ -1,3 +1,4 @@
+---
 layout: post
 title: Getting Started with Syncfusion ##Platform_Name## Diagram Control
 description: Checkout and learn about getting started with ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more details.
