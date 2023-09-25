@@ -3,7 +3,7 @@ layout: post
 title: Bar Chart in ##Platform_Name## Syncfusion Chart Component
 description: Learn here all about Bar Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Bar Chart
+control: Bar chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -68,7 +68,7 @@ The [`ColumnSpacing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% endif %}
 
 
-## Grouped Bar
+## Grouped bar
 
 You can use the [`GroupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_GroupName) property to group the data points in the bar type charts. Data points with same group name are grouped together.
 
@@ -91,6 +91,35 @@ You can use the [`GroupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 {% endhighlight %}
 {% highlight c# tabtitle="Group-bar.cs" %}
 {% include code-snippet/chart/series/bar-charts/group-bar/group-bar.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Cylindrical bar chart
+
+To render a cylindrical bar chart, set the `ColumnFacet` property to `Cylinder` in the chart series.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar-charts/bar-cylinder/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-cylinder.cs" %}
+{% include code-snippet/chart/series/bar-charts/bar-cylinder/bar-cylinder.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar-charts/bar-cylinder/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-cylinder.cs" %}
+{% include code-snippet/chart/series/bar-charts/bar-cylinder/bar-cylinder.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -131,7 +160,7 @@ The following properties can be used to customize the [`Bar`](https://help.syncf
 
 
 
-## See Also
+## See also
 
 * [Data Label](../data-labels)
 * [Tooltip](../tool-tip)
