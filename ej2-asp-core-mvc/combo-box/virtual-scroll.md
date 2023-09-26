@@ -27,7 +27,7 @@ ComboBox virtualization is a technique used to efficiently render long lists of 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/combobox/virtual-scroll/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Itemtemplate.cs" %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
 {% include code-snippet/combobox/virtual-scroll/virtualscroll.cs %}
 {% endhighlight %}
 {% endtabs %}
