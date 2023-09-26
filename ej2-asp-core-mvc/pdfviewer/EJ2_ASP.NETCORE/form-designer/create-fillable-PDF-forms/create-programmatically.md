@@ -677,7 +677,7 @@ The following code example explains how to update the properties of the signatur
 {% endtabs %}
 
 
-![Signature Field Settings](../../../pdfviewer/images/signaturefield-setting.png)
+![Signature Field Settings](../../../pdfviewer/images/signature_field.png)
 
 The following code example explains how to update the properties of the initial field added to the document from the form designer toolbar.
 
