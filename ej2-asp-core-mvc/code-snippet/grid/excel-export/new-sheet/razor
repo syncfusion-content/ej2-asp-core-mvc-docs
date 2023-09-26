@@ -1,3 +1,6 @@
+@{
+    string[] exportGrids = { "FirstGrid", "SecondGrid" };
+}
 @Html.EJS().Grid("FirstGrid").DataSource((IEnumerable<object>)ViewBag.FirstGridData).AllowExcelExport().ToolbarClick("toolbarClick").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -6,7 +9,7 @@
    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
 
-}).AllowPaging().Toolbar(new List<string>() { "ExcelExport" }).Render()
+}).AllowPaging().ExportGrids(exportGrids).Toolbar(new List<string>() { "ExcelExport" }).Render()
 
 @Html.EJS().Grid("SecondGrid").DataSource((IEnumerable<object>)ViewBag.SecondGridData).AllowExcelExport().Columns(col =>
 {
@@ -21,15 +24,10 @@
     function toolbarClick(args) {
         if (args.item.id === 'FirstGrid_excelexport') {
             var firstGrid = document.getElementById("FirstGrid").ej2_instances[0];
-            var secondGrid = document.getElementById("SecondGrid").ej2_instances[0];
             var appendExcelExportProperties = {
                 multipleExport: { type: 'NewSheet' }
             };
-
-            var firstGridExport = firstGrid.excelExport(appendExcelExportProperties, true);
-            firstGridExport.then((fData) => {
-                secondGrid.excelExport(appendExcelExportProperties, false, fData);
-            });
+            firstGrid.excelExport(appendExcelExportProperties, true);
         }
     }
 </script>
