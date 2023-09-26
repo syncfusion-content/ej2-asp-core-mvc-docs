@@ -7,7 +7,7 @@
     .EventSettings(e =>
         e.DataSource(d =>
             d.Url("https://localhost:44360/api/")
-            .Adaptor("ODataAdaptor")
+            .Adaptor("ODataV4Adaptor")
             .CrossDomain(true)
         )
         .Query("new ej.data.Query().from('Events')")

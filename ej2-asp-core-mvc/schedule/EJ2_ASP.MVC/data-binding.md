@@ -42,7 +42,6 @@ To bind local JSON data to the Scheduler, you can simply assign a JavaScript obj
 {% endtabs %}
 {% endif %}
 
-
 N> By default, `DataManager` uses `JsonAdaptor` for local data-binding.
 
 You can also bind different field names to the default event fields as well as include additional custom fields to the event object collection which can be referred [here](./appointments/#binding-different-field-names).
@@ -54,7 +53,7 @@ It is possible to create your own custom adaptor by extending the built-in avail
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %} 
 {% include code-snippet/schedule/data-binding/custom-adaptor/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
@@ -115,10 +114,10 @@ You can retrieve data from OData service using the `dataManager`. Refer to the f
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/Odata/tagHelper %}
+{% include code-snippet/schedule/data-binding/OdataV4/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/Odata/data.cs %}
+{% include code-snippet/schedule/data-binding/OdataV4/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -126,10 +125,10 @@ You can retrieve data from OData service using the `dataManager`. Refer to the f
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/Odata/razor %}
+{% include code-snippet/schedule/data-binding/OdataV4/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/Odata/data.cs %}
+{% include code-snippet/schedule/data-binding/OdataV4/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -209,30 +208,28 @@ The following sample code demonstrates binding data to the Scheduler component t
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/URL-adaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/URL-adaptor/data.cs %}
-{% endhighlight %}
-{% endtabs %}
+```sh
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .EventSettings(e => e.DataSource(d => d.Url("Home/GetData").CrudUrl("Home/UpdateData").Adaptor("UrlAdaptor").CrossDomain(true)))
+    .SelectedDate(new DateTime(2017, 6, 5))
+    .Render()
+)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/URL-adaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/URL-adaptor/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+```
 
 The server-side controller code to handle the CRUD operations is as follows.
 
 ```sh
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using ScheduleSample.Models;
+
 namespace ScheduleSample.Controllers
 {
     public class HomeController : Controller
@@ -241,79 +238,57 @@ namespace ScheduleSample.Controllers
         public ActionResult Index()
         {
             return View();
-        }
-
-        public JsonResult LoadData(Params param)  // Here we get the Start and End Date of current view, based on that can filter the data and return to Scheduler 
+        }  
+        public ActionResult LoadData()  // Here we get the Start and End Date and based on that can filter the data and return to Scheduler
         {
-            var data = db.ScheduleEventDatas.Where(app => (app.StartTime >= param.StartDate && app.StartTime <= param.EndDate) || (app.RecurrenceRule != null && app.RecurrenceRule != "")).ToList();  // Here filtering the events based on the start and end date value. 
-            return Json(data, JsonRequestBehavior.AllowGet);
+            var data = db.ScheduleEventDatas.ToList();
+            return Json(data);
         }
-
-
-        public class Params
-        {
-            public DateTime StartDate { get; set; }
-            public DateTime EndDate { get; set; }
-        }
-
         [HttpPost]
-        public JsonResult UpdateData(EditParams param)
+        public ActionResult UpdateData([FromBody] EditParams param)
         {
             if (param.action == "insert" || (param.action == "batch" && param.added != null)) // this block of code will execute while inserting the appointments
             {
-                for (var i = 0; i < param.added.Count; i++)
+                var value = (param.action == "insert") ? param.value : param.added[0];
+                int intMax = db.ScheduleEventDatas.ToList().Count > 0 ? db.ScheduleEventDatas.ToList().Max(p => p.Id) : 1;
+                DateTime startTime = Convert.ToDateTime(value.StartTime);
+                DateTime endTime = Convert.ToDateTime(value.EndTime);
+                ScheduleEventData appointment = new ScheduleEventData()
                 {
-                    var value = (param.action == "insert") ? param.value : param.added[i];
-                    int intMax = db.ScheduleEventDatas.ToList().Count > 0 ? db.ScheduleEventDatas.ToList().Max(p => p.Id) : 1;
-                    DateTime startTime = Convert.ToDateTime(value.StartTime);
-                    DateTime endTime = Convert.ToDateTime(value.EndTime);
-                    ScheduleEventData appointment = new ScheduleEventData()
-                    {
-                        Id = intMax + 1,
-                        StartTime = startTime,
-                        EndTime = endTime,
-                        Subject = value.Subject,
-                        Location = value.Location,
-                        Description = value.Description,
-                        IsAllDay = value.IsAllDay,
-                        StartTimezone = value.StartTimezone,
-                        EndTimezone = value.EndTimezone,
-                        RecurrenceRule = value.RecurrenceRule,
-                        RecurrenceID = value.RecurrenceID,
-                        RecurrenceException = value.RecurrenceException,
-                        GroupID = value.GroupID.ToString()
-                    };
-                    db.ScheduleEventDatas.InsertOnSubmit(appointment);
-                    db.SubmitChanges();
-                }
+                    Id = intMax + 1,
+                    StartTime = startTime,
+                    EndTime = endTime,
+                    Subject = value.Subject,
+                    IsAllDay = value.IsAllDay,
+                    StartTimezone = value.StartTimezone,
+                    EndTimezone = value.EndTimezone,
+                    RecurrenceRule = value.RecurrenceRule,
+                    RecurrenceID = value.RecurrenceID,
+                    RecurrenceException = value.RecurrenceException
+                };
+                db.ScheduleEventDatas.InsertOnSubmit(appointment);
+                db.SubmitChanges();
             }
             if (param.action == "update" || (param.action == "batch" && param.changed != null)) // this block of code will execute while updating the appointment
             {
-                for (var i = 0; i < param.changed.Count; i++)
+                var value = (param.action == "update") ? param.value : param.changed[0];
+                var filterData = db.ScheduleEventDatas.Where(c => c.Id == Convert.ToInt32(value.Id));
+                if (filterData.Count() > 0)
                 {
-                    var value = (param.action == "update") ? param.value : param.changed[i];
-                    var filterData = db.ScheduleEventDatas.Where(c => c.Id == Convert.ToInt32(value.Id));
-                    if (filterData.Count() > 0)
-                    {
-                        DateTime startTime = Convert.ToDateTime(value.StartTime);
-                        DateTime endTime = Convert.ToDateTime(value.EndTime);
-                        ScheduleEventData appointment = db.ScheduleEventDatas.Single(A => A.Id == Convert.ToInt32(value.Id));
-                        appointment.StartTime = startTime;
-                        appointment.EndTime = endTime;
-                        appointment.StartTimezone = value.StartTimezone;
-                        appointment.EndTimezone = value.EndTimezone;
-                        appointment.Subject = value.Subject;
-                        appointment.Location = value.Location;
-                        appointment.Description = value.Description;
-                        appointment.IsAllDay = value.IsAllDay;
-                        appointment.RecurrenceRule = value.RecurrenceRule;
-                        appointment.RecurrenceID = value.RecurrenceID;
-                        appointment.RecurrenceException = value.RecurrenceException;
-                        appointment.GroupID = value.GroupID.ToString();
-                    }
-                    db.SubmitChanges();
-
+                    DateTime startTime = Convert.ToDateTime(value.StartTime);
+                    DateTime endTime = Convert.ToDateTime(value.EndTime);
+                    ScheduleEventData appointment = db.ScheduleEventDatas.Single(A => A.Id == Convert.ToInt32(value.Id));
+                    appointment.StartTime = startTime;
+                    appointment.EndTime = endTime;
+                    appointment.StartTimezone = value.StartTimezone;
+                    appointment.EndTimezone = value.EndTimezone;
+                    appointment.Subject = value.Subject;
+                    appointment.IsAllDay = value.IsAllDay;
+                    appointment.RecurrenceRule = value.RecurrenceRule;
+                    appointment.RecurrenceID = value.RecurrenceID;
+                    appointment.RecurrenceException = value.RecurrenceException;
                 }
+                db.SubmitChanges();
             }
             if (param.action == "remove" || (param.action == "batch" && param.deleted != null)) // this block of code will execute while removing the appointment
             {
@@ -328,13 +303,13 @@ namespace ScheduleSample.Controllers
                     foreach (var apps in param.deleted)
                     {
                         ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == apps.Id).FirstOrDefault();
-                        if (apps != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
+                        if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
                     }
                 }
                 db.SubmitChanges();
             }
             var data = db.ScheduleEventDatas.ToList();
-            return Json(data, JsonRequestBehavior.AllowGet);
+            return Json(data);
         }
 
         public class EditParams
@@ -441,125 +416,114 @@ You can bind the event data through external ajax request and assign it to the `
 
 N> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
 
-## Scheduler CRUD actions
+## Performing CRUD using Entity Framework
 
-The CRUD (Create, Read, Update and Delete) actions can be performed easily on Scheduler appointments using the various adaptors available within the `DataManager`. Most preferably, we will be using `UrlAdaptor` for performing CRUD actions on scheduler appointments.
+You need to follow the below steps to consume data from the Entity Framework in our Scheduler component.
+
+### Creating OData Controller
+
+A OData Controller has to be created which allows Scheduler directly to consume data from the Entity Framework. The following code example shows how to perform CRUD operations using Entity Framework.
 
 ```sh
+using ej2_web_api_crud.Data;
+using ej2_web_api_crud.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Formatter;
+using Microsoft.AspNetCore.OData.Query;
+using System.Collections.Specialized;
+using System.Text.RegularExpressions;
+using System.Web;
+
+namespace ej2_web_api_crud.Controllers
+{
+    public class EventsController : Controller
+    {
+        private readonly EventsContext dbContext;
+        public EventsController(EventsContext dbContext)
+        {
+            this.dbContext = dbContext;
+            if (this.dbContext.Events.Count() == 0)
+            {
+                foreach (var b in DataSource.GetEvents())
+                {
+                    dbContext.Events.Add(b);
+                }
+                dbContext.SaveChanges();
+            }
+        }
+
+        [HttpGet]
+        [EnableQuery]
+        public IActionResult Get()
+        {
+            return Ok(dbContext.Events);
+        }
+
+        [HttpPost]
+        public async Task Post([FromBody] Event events)
+        {
+            dbContext.Events.Add(events);
+            await dbContext.SaveChangesAsync();
+        }
+
+        [HttpPut]
+        public async Task Put([FromODataUri] int key, [FromBody] Event events)
+        {
+            var entity = await dbContext.Events.FindAsync(events.Id);
+            if(entity != null)
+            {
+                dbContext.Entry(entity).CurrentValues.SetValues(events);
+                await dbContext.SaveChangesAsync();
+            }
+        }
+
+        [HttpPatch]
+        public async Task Patch([FromODataUri] int key, [FromBody] Event events)
+        {
+            var entity = await dbContext.Events.FindAsync(key);
+            if(entity != null)
+            {
+                dbContext.Entry(entity).CurrentValues.SetValues(events);
+                await dbContext.SaveChangesAsync();
+            }
+        }
+        [HttpDelete]
+        public async Task Delete([FromODataUri] int key)
+        {
+            var app = dbContext.Events.Find(key);
+            if(app != null)
+            {
+                dbContext.Events.Remove(app);
+                await dbContext.SaveChangesAsync();
+            }
+        }
+    }
+}
+```
+
+### Configure Scheduler component using ODataV4Adaptor
+
+Now, the Scheduler can be configured using the `DataManager` to interact with the created OData service and consume the data appropriately. To interact with OData, use `ODataV4Adaptor`.
+
+```sh
+@using Syncfusion.EJ2.Schedule
 
 @(Html.EJS().Schedule("schedule")
     .Width("100%")
     .Height("550px")
-    .EventSettings(e => e.DataSource(d => d.Url("Home/GetData").CrudUrl("Home/UpdateData").Adaptor("UrlAdaptor").CrossDomain(true)))
-    .SelectedDate(new DateTime(2017, 6, 5))
+    .Readonly(true)
+    .EventSettings(e =>
+        e.DataSource(d =>
+            d.Url("https://localhost:44360/api/")
+            .Adaptor("ODataV4Adaptor")
+            .CrossDomain(true)
+        )
+        .Query("new ej.data.Query().from('Events')")
+    )
+    .SelectedDate(new DateTime(2020, 9, 20))
     .Render()
 )
 
-```
-
-The server-side controller code to handle the CRUD operations are as follows.
-
-```sh
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using ScheduleSample.Models;
-
-namespace ScheduleSample.Controllers
-{
-    public class HomeController : Controller
-    {
-        ScheduleDataDataContext db = new ScheduleDataDataContext();
-        public ActionResult Index()
-        {
-            return View();
-        }  
-        public ActionResult LoadData()  // Here we get the Start and End Date and based on that can filter the data and return to Scheduler
-        {
-            var data = db.ScheduleEventDatas.ToList();
-            return Json(data);
-        }
-        [HttpPost]
-        public ActionResult UpdateData([FromBody] EditParams param)
-        {
-            if (param.action == "insert" || (param.action == "batch" && param.added != null)) // this block of code will execute while inserting the appointments
-            {
-                var value = (param.action == "insert") ? param.value : param.added[0];
-                int intMax = db.ScheduleEventDatas.ToList().Count > 0 ? db.ScheduleEventDatas.ToList().Max(p => p.Id) : 1;
-                DateTime startTime = Convert.ToDateTime(value.StartTime);
-                DateTime endTime = Convert.ToDateTime(value.EndTime);
-                ScheduleEventData appointment = new ScheduleEventData()
-                {
-                    Id = intMax + 1,
-                    StartTime = startTime,
-                    EndTime = endTime,
-                    Subject = value.Subject,
-                    IsAllDay = value.IsAllDay,
-                    StartTimezone = value.StartTimezone,
-                    EndTimezone = value.EndTimezone,
-                    RecurrenceRule = value.RecurrenceRule,
-                    RecurrenceID = value.RecurrenceID,
-                    RecurrenceException = value.RecurrenceException
-                };
-                db.ScheduleEventDatas.InsertOnSubmit(appointment);
-                db.SubmitChanges();
-            }
-            if (param.action == "update" || (param.action == "batch" && param.changed != null)) // this block of code will execute while updating the appointment
-            {
-                var value = (param.action == "update") ? param.value : param.changed[0];
-                var filterData = db.ScheduleEventDatas.Where(c => c.Id == Convert.ToInt32(value.Id));
-                if (filterData.Count() > 0)
-                {
-                    DateTime startTime = Convert.ToDateTime(value.StartTime);
-                    DateTime endTime = Convert.ToDateTime(value.EndTime);
-                    ScheduleEventData appointment = db.ScheduleEventDatas.Single(A => A.Id == Convert.ToInt32(value.Id));
-                    appointment.StartTime = startTime;
-                    appointment.EndTime = endTime;
-                    appointment.StartTimezone = value.StartTimezone;
-                    appointment.EndTimezone = value.EndTimezone;
-                    appointment.Subject = value.Subject;
-                    appointment.IsAllDay = value.IsAllDay;
-                    appointment.RecurrenceRule = value.RecurrenceRule;
-                    appointment.RecurrenceID = value.RecurrenceID;
-                    appointment.RecurrenceException = value.RecurrenceException;
-                }
-                db.SubmitChanges();
-            }
-            if (param.action == "remove" || (param.action == "batch" && param.deleted != null)) // this block of code will execute while removing the appointment
-            {
-                if (param.action == "remove")
-                {
-                    int key = Convert.ToInt32(param.key);
-                    ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == key).FirstOrDefault();
-                    if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
-                }
-                else
-                {
-                    foreach (var apps in param.deleted)
-                    {
-                        ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == apps.Id).FirstOrDefault();
-                        if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
-                    }
-                }
-                db.SubmitChanges();
-            }
-            var data = db.ScheduleEventDatas.ToList();
-            return Json(data);
-        }
-
-        public class EditParams
-        {
-            public string key { get; set; }
-            public string action { get; set; }
-            public List<ScheduleEventData> added { get; set; }
-            public List<ScheduleEventData> changed { get; set; }
-            public List<ScheduleEventData> deleted { get; set; }
-            public ScheduleEventData value { get; set; }
-        }
-    }
-}
 ```
 
 ## Configuring Scheduler with Google API service
@@ -588,7 +552,5 @@ We have assigned our custom created Google Calendar url to the DataManager and a
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

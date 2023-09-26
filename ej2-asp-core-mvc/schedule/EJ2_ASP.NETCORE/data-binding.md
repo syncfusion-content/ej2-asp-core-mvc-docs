@@ -206,223 +206,6 @@ CRUD operations in the Scheduler can be mapped to server-side controller actions
 
 The following sample code demonstrates binding data to the Scheduler component through the SfDataManager using UrlAdaptor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/Odata/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/Odata/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/Odata/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/Odata/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-The server-side controller code to handle the CRUD operations is as follows.
-
-```sh
-namespace ScheduleSample.Controllers
-{
-    public class HomeController : Controller
-    {
-        ScheduleDataDataContext db = new ScheduleDataDataContext();
-        public ActionResult Index()
-        {
-            return View();
-        }  
-        public ActionResult LoadData()  // Here we get the Start and End Date and based on that can filter the data and return to Scheduler
-        {
-            var data = db.ScheduleEventDatas.ToList();
-            return Json(data);
-        }
-        [HttpPost]
-        public ActionResult UpdateData([FromBody] EditParams param)
-        {
-            if (param.action == "insert" || (param.action == "batch" && param.added != null)) // this block of code will execute while inserting the appointments
-            {
-                var value = (param.action == "insert") ? param.value : param.added[0];
-                int intMax = db.ScheduleEventDatas.ToList().Count > 0 ? db.ScheduleEventDatas.ToList().Max(p => p.Id) : 1;
-                DateTime startTime = Convert.ToDateTime(value.StartTime);
-                DateTime endTime = Convert.ToDateTime(value.EndTime);
-                ScheduleEventData appointment = new ScheduleEventData()
-                {
-                    Id = intMax + 1,
-                    StartTime = startTime,
-                    EndTime = endTime,
-                    Subject = value.Subject,
-                    IsAllDay = value.IsAllDay,
-                    StartTimezone = value.StartTimezone,
-                    EndTimezone = value.EndTimezone,
-                    RecurrenceRule = value.RecurrenceRule,
-                    RecurrenceID = value.RecurrenceID,
-                    RecurrenceException = value.RecurrenceException
-                };
-                db.ScheduleEventDatas.InsertOnSubmit(appointment);
-                db.SubmitChanges();
-            }
-            if (param.action == "update" || (param.action == "batch" && param.changed != null)) // this block of code will execute while updating the appointment
-            {
-                var value = (param.action == "update") ? param.value : param.changed[0];
-                var filterData = db.ScheduleEventDatas.Where(c => c.Id == Convert.ToInt32(value.Id));
-                if (filterData.Count() > 0)
-                {
-                    DateTime startTime = Convert.ToDateTime(value.StartTime);
-                    DateTime endTime = Convert.ToDateTime(value.EndTime);
-                    ScheduleEventData appointment = db.ScheduleEventDatas.Single(A => A.Id == Convert.ToInt32(value.Id));
-                    appointment.StartTime = startTime;
-                    appointment.EndTime = endTime;
-                    appointment.StartTimezone = value.StartTimezone;
-                    appointment.EndTimezone = value.EndTimezone;
-                    appointment.Subject = value.Subject;
-                    appointment.IsAllDay = value.IsAllDay;
-                    appointment.RecurrenceRule = value.RecurrenceRule;
-                    appointment.RecurrenceID = value.RecurrenceID;
-                    appointment.RecurrenceException = value.RecurrenceException;
-                }
-                db.SubmitChanges();
-            }
-            if (param.action == "remove" || (param.action == "batch" && param.deleted != null)) // this block of code will execute while removing the appointment
-            {
-                if (param.action == "remove")
-                {
-                    int key = Convert.ToInt32(param.key);
-                    ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == key).FirstOrDefault();
-                    if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
-                }
-                else
-                {
-                    foreach (var apps in param.deleted)
-                    {
-                        ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == apps.Id).FirstOrDefault();
-                        if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
-                    }
-                }
-                db.SubmitChanges();
-            }
-            var data = db.ScheduleEventDatas.ToList();
-            return Json(data);
-        }
-
-        public class EditParams
-        {
-            public string key { get; set; }
-            public string action { get; set; }
-            public List<ScheduleEventData> added { get; set; }
-            public List<ScheduleEventData> changed { get; set; }
-            public List<ScheduleEventData> deleted { get; set; }
-            public ScheduleEventData value { get; set; }
-        }
-    }
-}
-```
-```
-
-### Passing additional parameters to the server
-
-To send an additional custom parameter to the server-side post, you need to make use of the `addParams` method of `query`. Now, assign this `query` object with additional parameters to the [`query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~Query.html)property of Scheduler.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/additional-parameter/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/additional-parameter/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/additional-parameter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/additional-parameter/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-N> The parameters added using the `query` property will be sent along with the data request sent to the server on every scheduler actions.
-
-### Handling failure actions
-
-During server interaction from the Scheduler, sometimes server-side exceptions might occur. These error messages or exception details can be acquired in client-side using the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event.
-
-The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event contains the error details returned from the server.
-
-The following sample code demonstrates notifying user when server-side exception has occurred,
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/failure-actions/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/failure-actions/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/failure-actions/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/failure-actions/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-N> The argument passed to the `actionFailure` event contains the error details returned from the server.
-
-## Loading data via AJAX post
-
-You can bind the event data through external ajax request and assign it to the `dataSource` property of Scheduler. In the following code example, we have retrieved the data from server with the help of ajax request and assigned the resultant data to the `dataSource` property of Scheduler within the `onSuccess` event of Ajax.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/ajax/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/ajax/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/ajax/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/ajax/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-N> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
-
-## Scheduler CRUD actions
-
-The CRUD (Create, Read, Update and Delete) actions can be performed easily on Scheduler appointments using the various adaptors available within the `dataManager`. Most preferably, we will be using `UrlAdaptor` for performing CRUD actions on scheduler appointments.
-
 ```sh
 @using Syncfusion.EJ2
 
@@ -442,7 +225,7 @@ The CRUD (Create, Read, Update and Delete) actions can be performed easily on Sc
 
 ```
 
-The server-side controller code to handle the CRUD operations are as follows.
+The server-side controller code to handle the CRUD operations is as follows.
 
 ```sh
 using System;
@@ -546,7 +329,207 @@ namespace ScheduleSample.Controllers
     }
 }
 ```
+
 N> You can find the working sample [here](https://github.com/SyncfusionExamples/aspnetcore-scheduler-crud-actions-with-editor-template).
+
+### Passing additional parameters to the server
+
+To send an additional custom parameter to the server-side post, you need to make use of the `addParams` method of `query`. Now, assign this `query` object with additional parameters to the [`query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~Query.html)property of Scheduler.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/additional-parameter/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/additional-parameter/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/additional-parameter/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/additional-parameter/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+N> The parameters added using the `query` property will be sent along with the data request sent to the server on every scheduler actions.
+
+### Handling failure actions
+
+During server interaction from the Scheduler, sometimes server-side exceptions might occur. These error messages or exception details can be acquired in client-side using the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event.
+
+The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event contains the error details returned from the server.
+
+The following sample code demonstrates notifying user when server-side exception has occurred,
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/failure-actions/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/failure-actions/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/failure-actions/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/failure-actions/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+N> The argument passed to the `actionFailure` event contains the error details returned from the server.
+
+## Loading data via AJAX post
+
+You can bind the event data through external ajax request and assign it to the `dataSource` property of Scheduler. In the following code example, we have retrieved the data from server with the help of ajax request and assigned the resultant data to the `dataSource` property of Scheduler within the `onSuccess` event of Ajax.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/ajax/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/ajax/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/ajax/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/ajax/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+N> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
+
+## Performing CRUD using Entity Framework
+
+You need to follow the below steps to consume data from the Entity Framework in our Scheduler component.
+
+### Creating OData Controller
+
+A OData Controller has to be created which allows Scheduler directly to consume data from the Entity Framework. The following code example shows how to perform CRUD operations using Entity Framework.
+
+```sh
+using ej2_web_api_crud.Data;
+using ej2_web_api_crud.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Formatter;
+using Microsoft.AspNetCore.OData.Query;
+using System.Collections.Specialized;
+using System.Text.RegularExpressions;
+using System.Web;
+
+namespace ej2_web_api_crud.Controllers
+{
+    public class EventsController : Controller
+    {
+        private readonly EventsContext dbContext;
+        public EventsController(EventsContext dbContext)
+        {
+            this.dbContext = dbContext;
+            if (this.dbContext.Events.Count() == 0)
+            {
+                foreach (var b in DataSource.GetEvents())
+                {
+                    dbContext.Events.Add(b);
+                }
+                dbContext.SaveChanges();
+            }
+        }
+
+        [HttpGet]
+        [EnableQuery]
+        public IActionResult Get()
+        {
+            return Ok(dbContext.Events);
+        }
+
+        [HttpPost]
+        public async Task Post([FromBody] Event events)
+        {
+            dbContext.Events.Add(events);
+            await dbContext.SaveChangesAsync();
+        }
+
+        [HttpPut]
+        public async Task Put([FromODataUri] int key, [FromBody] Event events)
+        {
+            var entity = await dbContext.Events.FindAsync(events.Id);
+            if(entity != null)
+            {
+                dbContext.Entry(entity).CurrentValues.SetValues(events);
+                await dbContext.SaveChangesAsync();
+            }
+        }
+
+        [HttpPatch]
+        public async Task Patch([FromODataUri] int key, [FromBody] Event events)
+        {
+            var entity = await dbContext.Events.FindAsync(key);
+            if(entity != null)
+            {
+                dbContext.Entry(entity).CurrentValues.SetValues(events);
+                await dbContext.SaveChangesAsync();
+            }
+        }
+        [HttpDelete]
+        public async Task Delete([FromODataUri] int key)
+        {
+            var app = dbContext.Events.Find(key);
+            if(app != null)
+            {
+                dbContext.Events.Remove(app);
+                await dbContext.SaveChangesAsync();
+            }
+        }
+    }
+}
+```
+
+### Configure Scheduler component using ODataV4Adaptor
+
+Now, the Scheduler can be configured using the `DataManager` to interact with the created OData service and consume the data appropriately. To interact with OData, use `ODataV4Adaptor`.
+
+```sh
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Schedule
+
+@{
+    var dataManager = new DataManager() { 
+        Url = "https://localhost:44360/api/",
+        Adaptor = "ODataV4Adaptor",
+        CrossDomain = true 
+    };
+}
+
+<ejs-schedule id="schedule" width="100%" height="550" selectedDate="new DateTime(2020, 9, 20)" readonly="true">
+    <e-schedule-eventsettings dataSource="dataManager" query="new ej.data.Query().from('Events')">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+```
 
 ## Configuring Scheduler with Google API service
 
