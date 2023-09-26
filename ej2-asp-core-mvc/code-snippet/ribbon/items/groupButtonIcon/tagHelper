@@ -1,0 +1,33 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<RibbonGroupButtonItem> groupButtonIcon = new List<RibbonGroupButtonItem>() {
+
+      new RibbonGroupButtonItem { IconCss = "e-icons e-align-left" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-align-center" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-align-right" },
+      new RibbonGroupButtonItem { IconCss = "e-icons e-justify" }
+    };
+}
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Paragraph">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=GroupButton allowedSizes=Small>
+                                    <e-ribbon-groupbuttonsettings items=groupButtonIcon></e-ribbon-groupbuttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
