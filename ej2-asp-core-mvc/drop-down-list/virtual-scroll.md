@@ -15,22 +15,22 @@ Dropdown list virtualization is a technique used to efficiently render long list
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-<!-- {% tabs %}
+{% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdownlist/virtual-scroll/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Itemtemplate.cs" %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
 {% include code-snippet/dropdownlist/virtual-scroll/virtualscroll.cs %}
 {% endhighlight %}
-{% endtabs %} -->
+{% endtabs %} 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-<!-- {% highlight razor tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dropdownlist/virtual-scroll/razor %}
-{% endhighlight %} -->
-{% highlight c# tabtitle="Itemtemplate.cs" %}
+{% endhighlight %} 
+{% highlight c# tabtitle="virtualscroll.cs" %}
 {% include code-snippet/dropdownlist/virtual-scroll/virtualscroll.cs %}
 {% endhighlight %}
 {% endtabs %}
