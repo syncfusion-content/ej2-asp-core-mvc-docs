@@ -1,26 +1,25 @@
 @{
     string[] exportGrids = { "FirstGrid", "SecondGrid" };
 }
-@Html.EJS().Grid("FirstGrid").DataSource((IEnumerable<object>)ViewBag.FirstGridData).AllowExcelExport().ToolbarClick("toolbarClick").Columns(col =>
-{
-   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+<ejs-grid id="FirstGrid" dataSource="@ViewBag.FirstGridData" allowExcelExport="true" exportGrids="exportGrids" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"ExcelExport"})" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>               
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="140" ></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
 
-}).AllowPaging().ExportGrids(exportGrids).Toolbar(new List<string>() { "ExcelExport" }).Render()
+<ejs-grid id="SecondGrid" dataSource="@ViewBag.SecondGridData" allowExcelExport="true" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="FirstName" headerText="Name" width="140"></e-grid-column>               
+        <e-grid-column field="Title" headerText="Title" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="BirthDate" format="yMd" headerText="Birth Date" width="140" ></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
 
-@Html.EJS().Grid("SecondGrid").DataSource((IEnumerable<object>)ViewBag.SecondGridData).AllowExcelExport().Columns(col =>
-{
-   col.Field("EmployeeID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("FirstName").Width("140").Add();
-   col.Field("City").Width("120").Add();
-   col.Field("Country").Width("140").Add();
-
-}).AllowPaging().Render()
-
-<script>
+ <script>
     function toolbarClick(args) {
         if (args.item.id === 'FirstGrid_excelexport') {
             var firstGrid = document.getElementById("FirstGrid").ej2_instances[0];
