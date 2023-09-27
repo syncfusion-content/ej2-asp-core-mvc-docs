@@ -1,0 +1,24 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport().ToolbarClick("toolbarClick").ExportGroupCaption("exportGroupCaption").Columns(col =>
+    {
+       col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+       col.Field("FirstName").HeaderText("Name").Width("120").Add();
+       col.Field("City").HeaderText("City").Add();
+       col.Field("Title").HeaderText("Title").Width("170").Add();
+
+    }).Toolbar(new List<string>() { "PdfExport" }).AllowGrouping().GroupSettings(group => { group.Columns(new string[] { "EmployeeID" }).CaptionTemplate("#captiontemplate"); }).Render()
+
+<script type="text/x-template" id="captiontemplate">
+    ${field} - ${key}
+</script>
+
+<script>
+    function toolbarClick(args) {
+        if (args['item'].id === 'Grid_pdfexport') {
+            this.pdfExport();
+        }
+    }
+
+    function exportGroupCaption(args) {
+        args.captionText = args.data.field + ' - ' + args.data.key;
+    }
+</script>
