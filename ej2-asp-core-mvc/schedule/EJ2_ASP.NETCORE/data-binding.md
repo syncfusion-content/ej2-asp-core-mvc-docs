@@ -427,6 +427,36 @@ N> Definition for the controller method `GetData` can be referred [here](#schedu
 
 You need to follow the below steps to consume data from the Entity Framework in our Scheduler component.
 
+### Create DBContext class
+
+The first step is to create a DBContext class called ScheduleDataContext to connect to a Microsoft SQL Server database.
+
+```sh
+using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
+
+namespace RestfulServices.Models
+{
+    public class ScheduleDataContext : DbContext
+    {
+
+        public ScheduleDataContext(DbContextOptions<ScheduleDataContext> options)
+            : base(options)
+        {
+        }
+
+        public DbSet<EventData> EventsData { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+        }
+
+    }
+}
+```
+
 ### Creating OData Controller
 
 A OData Controller has to be created which allows Scheduler directly to consume data from the Entity Framework. The following code example shows how to perform CRUD operations using Entity Framework.
