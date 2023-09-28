@@ -109,8 +109,6 @@ Detail template is not supported with the following features:
 * Immutable mode
 * Infinite scrolling
 * Virtual scrolling
-* Pdf export
-* Excel export
 * Print
 * Row template
 * Row spanning
@@ -130,8 +128,6 @@ Detail template is not supported with the following features:
 * Immutable mode
 * Infinite scrolling
 * Virtual scrolling
-* Pdf export
-* Excel export
 * Print
 * Row template
 * Row spanning
