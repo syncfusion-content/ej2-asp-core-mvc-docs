@@ -19,7 +19,10 @@ AutoComplete virtualization is a technique used to efficiently render long lists
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/virtual-scroll/tagHelper %}
 {% endhighlight %}
-{% endtabs %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/autocomplete/virtual-scroll/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %} 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -27,7 +30,7 @@ AutoComplete virtualization is a technique used to efficiently render long lists
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/virtual-scroll/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Itemtemplate.cs" %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
 {% include code-snippet/autocomplete/virtual-scroll/virtualscroll.cs %}
 {% endhighlight %}
 {% endtabs %}

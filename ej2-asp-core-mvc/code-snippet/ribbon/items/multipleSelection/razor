@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<RibbonGroupButtonItem> multipleSelection = new List<RibbonGroupButtonItem>() {
+
+      new RibbonGroupButtonItem { IconCss = "e-icons e-bold", Content = "Bold" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-italic", Content = "Italic", Selected = true },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-underline", Content = "Underline" },
+      new RibbonGroupButtonItem { IconCss = "e-icons e-strikethrough", Content = "Strikethrough", Selected = true }
+    };
+}
+
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Paragraph").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.GroupButton).AllowedSizes(RibbonItemSize.Small).GroupButtonSettings(groupButton =>
+                {
+                    groupButton.Selection(RibbonGroupButtonSelection.Multiple).Items(multipleSelection);
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
