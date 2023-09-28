@@ -1,0 +1,53 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowExcelExport="true" toolbar="@(new List<string>() {"ExcelExport"})"
+    toolbarClick="toolbarClick" excelQueryCellInfo="excelQueryCellInfo"> 
+    <e-grid-columns>
+        <e-grid-column headerText="Employee Image" textAlign="Center" template="#imageTemplate" width="150"></e-grid-column> 
+        <e-grid-column field="EmployeeID" headerText="Employee ID" width="125"></e-grid-column> 
+        <e-grid-column field="FirstName" headerText="First Name" width="120"></e-grid-column>
+        <e-grid-column field="EmailID" headerText="Email ID" template="#mailTemplate" width="170"></e-grid-column> 
+    </e-grid-columns> 
+</ejs-grid>
+
+<style type="text/css" class="cssStyles">
+    .image img {
+        border-radius: 50px;
+        box-shadow: inset 0 0 1px #e0e0e0, inset 0 0 14px rgba(0,0,0,0.2);
+        height: 55px;
+        width: 55px;
+    }
+</style>
+
+<script type="text/x-template" id="imageTemplate">
+    <div class="image">
+        <img src="data:image/jpeg;base64,${EmployeeImage}" alt="${EmployeeID}" />
+    </div>
+</script>
+<script type="text/x-template" id="mailTemplate">
+    <div class="link">
+        <a href="mailto:${EmailID}">${EmailID}</a>
+    </div>
+</script>
+
+<script>
+    function toolbarClick(args) {
+        if (args['item'].id === 'Grid_excelexport') {
+            this.excelExport();
+        }
+    }
+
+    function excelQueryCellInfo(args) {
+        if (args.column.headerText === 'Employee Image') {
+            args.image = {
+                base64: args.data.EmployeeImage,
+                height: 70,
+                width: 70,
+            };
+        }
+        if (args.column.headerText === 'Email ID') {
+            args.hyperLink = {
+                target: 'mailto:' + args.data.EmailID,
+                displayText: args.data.EmailID,
+            };
+        }
+    }
+</script>
