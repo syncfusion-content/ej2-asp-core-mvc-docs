@@ -47,4 +47,19 @@
         height = parseInt(height) + (length * 55) + 'px';
         document.getElementById('dropArea').style.height = height;
     }
+    document.getElementById('dropArea').onclick = (e) => {
+        let uploadObj = document.getElementById('UploadFiles').ej2_instances[0];
+        let target = e.target;
+        if (target.classList.contains('e-file-delete-btn')) {
+            for (let i = 0; i < uploadObj.getFilesData().length; i++) {
+                if (target.closest('li').getAttribute('data-file-name') === uploadObj.getFilesData()[i].name) 
+                {
+                    uploadObj.remove(uploadObj.getFilesData()[i]);
+                }
+            }
+        } 
+        else if(target.classList.contains('e-file-remove-btn')) {
+            detach(target.closest('li'));
+        }
+    };
 </script>
