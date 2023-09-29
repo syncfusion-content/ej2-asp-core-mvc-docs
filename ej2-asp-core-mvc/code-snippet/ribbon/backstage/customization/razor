@@ -1,0 +1,115 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<BackstageItem> backstageItems = new List<BackstageItem>() {
+        new BackstageItem { Id = "home", Text = "Home", IconCss = "e-icons e-home", Content = processBackstageContent("home") },
+        new BackstageItem { Id = "new", Text = "New", IconCss = "e-icons e-file-new", Content = processBackstageContent("new") },
+        new BackstageItem { Id = "open", Text = "Open", IconCss = "e-icons e-folder-open", Content = processBackstageContent("open") },
+    };
+    BackStageMenu backstageSettings = new BackStageMenu() { Height = "350px" , Width = "500px" , Text = "File", Visible = true, BackButton = new BackstageBackButton { Text = "Close" }, Items = backstageItems };
+}
+
+@functions {
+    string processBackstageContent(string item)
+    {
+        string content = "";
+        switch (item)
+        {
+            case "home": 
+            {
+                content = "<div id='home-wrapper' style='padding: 20px;'><div id='new-section' class='new-wrapper'><div class='section-title'> New </div><div class='category_container'><div class='doc_category_image'></div><span class='doc_category_text'> New document </span></div></div><div id='block-wrapper'><div class='section-title'> Recent </div><div class='section-content' style='padding: 12px 0px; cursor: pointer'><table><tbody><tr><td> <span class='doc_icon e-icons e-open-link'></span> </td><td> <span style='display: block; font-size: 14px'> Ribbon.docx </span><span style='font-size: 12px'> EJ2 >> Components >> Navigations >> Ribbon >> default </span></td></tr></tbody></table></div></div></div>";
+                break;
+            }
+            case "new":
+            {
+                content = "<div id='new-section' class='new-wrapper'><div class='section-title'> New </div><div class='category_container'><div class='doc_category_image'></div> <span class='doc_category_text'> New document </span></div></div>";
+                break;
+            }
+            case "open":
+            {
+                content = "<div id='open-content' style='padding: 20px;'><div class='section-content' style='padding: 12px 0px; cursor: pointer'><table><tbody><tr><td> <span class='doc_icon e-icons e-open-link'></span> </td><td> <span style='display: block; font-size: 14px'> Open in Desktop App </span><span style='font-size: 12px'> Use the full functionality of Ribbon </span></td></tr></tbody></table></div><div class='section-content' style='padding: 12px 0px; cursor: pointer'><table><tbody><tr><td> <span class='doc_icon e-icons e-protect-sheet'></span> </td><td> <span style='display: block; font-size: 14px'> Protect Document </span><span style='font-size: 12px'>To prevent accidental changes, this document has been set to open as view-only.</span></td></tr></tbody></table></div></div>";
+                break;
+            }
+        }
+        return content;
+    }
+}
+
+@Html.EJS().Ribbon("ribbon").BackStageMenu(backstageSettings).Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Clipboard").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-paste").Content("Paste");
+                }).Add();
+            }).Add();
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-cut").Content("Cut");
+                }).Add();
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-copy").Content("Copy");
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
+
+<style>
+    .section-title {
+        font-size: 22px;
+    }
+
+    .new-docs {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .category_container {
+        width: 150px;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .doc_category_image {
+        width: 80px;
+        height: 100px;
+        background-color: #fff;
+        border: 1px solid rgb(125, 124, 124);
+        text-align: center;
+        overflow: hidden;
+        margin: 0px auto 10px;
+    }
+
+    .doc_category_text {
+        font-size: 16px;
+    }
+
+    .section-content {
+        padding: 12px 0px;
+        cursor: pointer;
+    }
+
+    .doc_icon {
+        font-size: 16px;
+        padding: 0px 10px;
+    }
+
+    .category_container:hover, .section-content:hover {
+        background-color: #dfdfdf;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+</style>

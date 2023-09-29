@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<RibbonGroupButtonItem> groupButtonSelected = new List<RibbonGroupButtonItem>() {
+
+      new RibbonGroupButtonItem { IconCss = "e-icons e-align-left", Content = "Align Left" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-align-center", Content = "Align Center", Selected = true },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-align-right", Content = "Align Right" },
+      new RibbonGroupButtonItem { IconCss = "e-icons e-justify", Content = "Justify" }
+    };
+}
+
+
+@Html.EJS().Ribbon("ribbon").ActiveLayout(RibbonLayout.Simplified).Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Paragraph").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.GroupButton).AllowedSizes(RibbonItemSize.Small).GroupButtonSettings(groupButton =>
+                {
+                    groupButton.Selection(RibbonGroupButtonSelection.Single).Items(groupButtonSelected);
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
