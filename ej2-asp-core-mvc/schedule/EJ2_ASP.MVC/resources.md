@@ -30,6 +30,7 @@ The default options available within the `Resources` collection are as follows,
 | `DataSource` | Object | Assigns the resource `DataSource`, where data can be passed either as an array of JavaScript objects, or else can create an instance of [`DataManager`](http://ej2.syncfusion.com/documentation/data/api-dataManager.html) in case of processing remote data and can be assigned to the `DataSource` property. With the remote data assigned to `DataSource`, check the available [adaptors](http://ej2.syncfusion.com/documentation/data/adaptors.html) to customize the data processing. |
 | `Query` | Query | Defines the external [`Query`](http://ej2.syncfusion.com/documentation/data/api-query.html) that will be executed along with the data processing. |
 | `IdField` | String | Binds the resource ID field name from the resources `DataSource`. |
+| `ExpandedField` | String | Binds the `ExpandedField` name from the resources `DataSource`. It usually holds boolean value which decide whether the resource of timeline views is in collapse or expand state on initial load. |
 | `TextField` | String | Binds the text field name from the resources `DataSource`. It usually holds the resource names. |
 | `GroupIDField` | String | Binds the group ID field name from the resource `DataSource`. It usually holds the value of resource IDs of parent level resources. |
 | `ColorField` | String | Binds the color field name from the resource `DataSource`. The color value mapped in this field will be applied to the events of resources. |
@@ -453,7 +454,35 @@ It is possible to customize the resource headers to display with multiple column
 {% endtabs %}
 {% endif %}
 
+## Collapse/Expand child resources in timeline views
 
+It is possible to expand and collapse the resources which have child resource in timeline views dynamically. By default, resources are in expanded state with their child resource. We can collapse and expand the child resources in UI by setting `ExpandedField` option as `false` whereas its default value is `true`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/resources/timeline-multiple-resources-collapse-child/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/resources/timeline-multiple-resources-collapse-child/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/resources/timeline-multiple-resources-collapse-child/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/resources/timeline-multiple-resources-collapse-child/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+![Collapse/Expand child resources with timeline views in ASP.NET MVC Scheduler](images/scheduler-collapse-child-resource-timelineview.png)
 
 ## Displaying tooltip for resource headers
 
