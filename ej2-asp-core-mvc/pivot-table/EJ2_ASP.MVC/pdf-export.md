@@ -421,7 +421,7 @@ As shown in the code example below, the **"Mountain Bikes"** row under **"France
 {% endtabs %}
 {% endif %}
 
-> This option is only available if [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) is set to **true**.
+> This option is only available if [EnableVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) is set to **true**.
 
 
 ## Changing the pivot table style while exporting
