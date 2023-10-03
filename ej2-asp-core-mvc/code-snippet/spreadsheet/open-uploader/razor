@@ -7,7 +7,7 @@
     function onSuccess(args) {
         var ssObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
         if (args.operation === 'upload')
-        ssObj.open({ file: args.file.rawFile }); // To open the uploaded excel file in spreadsheet
+        ssObj.open({ file: args.file.rawFile });
     }
 
 </script>
