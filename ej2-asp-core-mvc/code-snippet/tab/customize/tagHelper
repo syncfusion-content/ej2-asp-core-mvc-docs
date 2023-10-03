@@ -15,106 +15,114 @@
 </ejs-tab>
 
 <style type="text/css">
-    #container {
-        visibility: hidden;
+
+#container {
+    visibility: hidden;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+#template-wrap {
+    display: flex;
+}
+
+.e-content .e-item {
+    font-size: 12px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.container {
+    min-width: 350px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.e-image {
+    background-size: 33px;
+    width: 33px;
+    height: 33px;
+    margin: 0 auto;
+}
+
+.e-image.e-andrew {
+    /* csslint allow: adjoining-classes */
+    background-image: url('https://ej2.syncfusion.com/demos/src/images/employees/3.png');
+}
+
+.e-image.e-margaret {
+    /* csslint allow: adjoining-classes */
+    background-image: url('https://ej2.syncfusion.com/demos/src/images/employees/6.png');
+}
+
+.e-image.e-janet {
+    /* csslint allow: adjoining-classes */
+    background-image: url('https://ej2.syncfusion.com/demos/src/images/employees/7.png');
+}
+
+#ej2Tab.e-tab .e-toolbar-item .e-title {
+    margin-top: 8px;
+}
+
+#ej2Tab.e-toolbar .e-toolbar-items .e-toolbar-item:not(.e-separator),
+#ej2Tab.e-toolbar .e-toolbar-items .e-toolbar-item .e-tab-wrap {
+    width: 125px;
+    height: 50px;
+}
+
+#ej2Tab.e-tab .e-tab-header .e-toolbar-item.e-active .e-tab-wrap {
+    /* csslint allow: adjoining-classes */
+    background-color: #08c;
+}
+
+#ej2Tab.e-tab .e-tab-header {
+    background-color: #e6e6e6;
+}
+
+#ej2Tab.e-tab .e-tab-header .e-toolbar-item:not(.e-active) .e-tab-wrap:hover {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+#ej2Tab.e-tab .e-toolbar .e-toolbar-items .e-toolbar-item .e-text-wrap {
+    height: 50px;
+}
+
+#ej2Tab.e-tab .e-toolbar-item.e-active .e-title {
+    /* csslint allow: adjoining-classes */
+    display: block;
+    color: white;
+}
+
+#ej2Tab.e-tab .e-toolbar-item .e-text-wrap,
+#ej2Tab.e-tab .e-toolbar-item .e-tab-text {
+    width: inherit;
+    text-align: center;
+}
+
+#ej2Tab.e-tab .e-toolbar-item.e-active .e-title.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+@@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
     }
 
-    #loader {
-        color: #008cff;
-        height: 40px;
-        left: 45%;
-        position: absolute;
-        top: 45%;
-        width: 30%;
-    }
-
-    .e-content .e-item {
-        font-size: 12px;
-        margin: 10px;
-        text-align: justify;
-    }
-
-    .container {
-        min-width: 350px;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-
-    .e-image {
-        background-size: 33px;
-        width: 33px;
-        height: 30px;
-        margin: 0 auto;
-    }
-
-        .e-image.e-andrew {
-            background-image: url('./1.png');
-        }
-
-        .e-image.e-margaret {
-            background-image: url('./2.png');
-        }
-
-        .e-image.e-janet {
-            background-image: url('./3.png');
-        }
-
-    #ej2Tab.e-tab .e-toolbar-item .e-title {
-        display: none;
-    }
-
-    #ej2Tab.e-toolbar .e-toolbar-items .e-toolbar-item:not(.e-separator),
-    #ej2Tab.e-toolbar .e-toolbar-items .e-toolbar-item .e-tab-wrap {
-        width: 105px;
-        height: 50px;
-    }
-
-    #ej2Tab.e-tab .e-tab-header .e-toolbar-item.e-active .e-tab-wrap {
-        background-color: #08c;
-    }
-
-    #ej2Tab.e-tab .e-tab-header {
-        background-color: #e6e6e6;
-    }
-
-    #ej2Tab.e-tab .e-tab-header .e-toolbar-item:not(.e-active) .e-tab-wrap:hover {
-        background-color: #f2f2f2;
-        color: #000;
-    }
-
-    #ej2Tab.e-tab .e-toolbar .e-toolbar-items .e-toolbar-item .e-text-wrap {
-        height: 50px;
-    }
-
-    #ej2Tab.e-tab .e-toolbar-item.e-active .e-image {
-        display: none;
-    }
-
-    #ej2Tab.e-tab .e-toolbar-item.e-active .e-title {
-        display: block;
-        color: white;
-    }
-
-    #ej2Tab.e-tab .e-toolbar-item .e-text-wrap,
-    #ej2Tab.e-tab .e-toolbar-item .e-tab-text {
-        width: inherit;
-        text-align: center;
-    }
-
-    .fade-in {
+    100% {
         opacity: 1;
-        animation-name: fadeInOpacity;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-duration: 0.5s;
     }
+}
 
-    @@keyframes fadeInOpacity {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
 </style>
