@@ -1,0 +1,113 @@
+<div class="control-section">
+    <div class="row">
+        <div class="col" id="container1">
+            <ejs-chart id="lineContainer1" load="load" title="US to EURO" zoomComplete="zoomComplete">
+                <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime"
+                    minimum="new DateTime(2023, 2, 18)" maximum="new DateTime(2023, 8, 18)" labelFormat="MMM d">
+                    <e-majorgridlines width="0"></e-majorgridlines>
+                    <e-linestyle width="0"></e-linestyle>
+                </e-chart-primaryxaxis>
+                <e-chart-primaryyaxis labelFormat="n2" minimum="0.86" maximum="0.96" interval="0.025">
+                    <e-majorticklines width="0"></e-majorticklines>
+                    <e-linestyle width="0"></e-linestyle>
+                </e-chart-primaryyaxis>
+                <e-chart-chartarea>
+                    <e-chartarea-border width="0"></e-chartarea-border>
+                </e-chart-chartarea>
+                <e-series-collection>
+                    <e-series width="2" xName="USD" yName="EUR" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+                        <e-series-emptypointsettings
+                            mode="@Syncfusion.EJ2.Charts.EmptyPointMode.Drop"></e-series-emptypointsettings>
+                    </e-series>
+                </e-series-collection>
+                <e-chart-zoomsettings enableMouseWheelZooming="true" enableSelectionZooming="true"
+                    enableScrollbar="false" enablePinchZooming="true" enableDeferredZooming="true" enablePan="true"
+                    mode="@Syncfusion.EJ2.Charts.ZoomMode.X" toolbarItems="ViewBag.toolBarItems"></e-chart-zoomsettings>
+                <e-chart-titlestyle textAlignment="@Syncfusion.EJ2.Charts.Alignment.Near"></e-chart-titlestyle>
+            </ejs-chart>
+        </div>
+        <div class="col" id="container2">
+            <ejs-chart id="lineContainer2" load="load" title="US to INR" zoomComplete="zoomComplete">
+                <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime"
+                    minimum="new DateTime(2023, 2, 18)" maximum="new DateTime(2023, 8, 18)" labelFormat="MMM d">
+                    <e-majorgridlines width="0"></e-majorgridlines>
+                    <e-linestyle width="0"></e-linestyle>
+                </e-chart-primaryxaxis>
+                <e-chart-primaryyaxis labelFormat="n1" minimum="79" maximum="85" interval="1.5">
+                    <e-majorticklines width="0"></e-majorticklines>
+                    <e-linestyle width="0"></e-linestyle>
+                </e-chart-primaryyaxis>
+                <e-chart-chartarea>
+                    <e-chartarea-border width="0"></e-chartarea-border>
+                </e-chart-chartarea>
+                <e-series-collection>
+                    <e-series width="2" opacity="0.6" xName="USD" yName="INR"
+                        type="@Syncfusion.EJ2.Charts.ChartSeriesType.SplineArea">
+                        <e-series-border width="2"></e-series-border>
+                    </e-series>
+                </e-series-collection>
+                <e-chart-zoomsettings enableMouseWheelZooming="true" enableSelectionZooming="true"
+                    enableScrollbar="false" enablePinchZooming="true" enableDeferredZooming="true" enablePan="true"
+                    mode="@Syncfusion.EJ2.Charts.ZoomMode.X" toolbarItems="ViewBag.toolBarItems"></e-chart-zoomsettings>
+                <e-chart-titlestyle textAlignment="@Syncfusion.EJ2.Charts.Alignment.Near"></e-chart-titlestyle>
+            </ejs-chart>
+        </div>
+    </div>
+</div>
+
+<script src="chart/user-interaction/synchronization/crosshair/sync-data.js"></script>
+<script>
+    var chart1;
+    var chart2;
+    var charts = [];
+    var zoomFactor = 0;
+    var zoomPosition = 0;
+    var ChartPoints = synchronizedData;
+    function load(args) {
+        var selectedTheme = location.hash.split('/')[1];
+        selectedTheme = selectedTheme ? selectedTheme : 'Material';
+        args.chart.theme = (selectedTheme.charAt(0).toUpperCase() + selectedTheme.slice(1).replace(/-dark/i, 'Dark').replace(/contrast/i, 'Contrast'));
+        args.chart.series[0].dataSource = ChartPoints;
+        args.chart.primaryXAxis.interval = ej.base.Browser.isDevice ? 2 : 1;
+        args.chart.primaryXAxis.edgeLabelPlacement = ej.base.Browser.isDevice ? 'None' : 'Shift';
+        args.chart.primaryXAxis.labelRotation = ej.base.Browser.isDevice ? -45 : 0;
+    }
+
+    function zoomComplete(args) {
+        if (args.axis.name === 'primaryXAxis') {
+            zoomFactor = args.currentZoomFactor;
+            zoomPosition = args.currentZoomPosition;
+            zoomCompleteFunction(args);
+        }
+    }
+
+    function zoomCompleteFunction(args) {
+        chart1 = document.getElementById('lineContainer1').ej2_instances[0];
+        chart2 = document.getElementById('lineContainer2').ej2_instances[0];
+        charts = [chart1, chart2];
+        for (var i = 0; i < charts.length; i++) {
+            if (args.axis.series[0].chart.element.id !== charts[i].element.id) {
+                charts[i].primaryXAxis.zoomFactor = zoomFactor;
+                charts[i].primaryXAxis.zoomPosition = zoomPosition;
+                charts[i].zoomModule.isZoomed = args.axis.series[0].chart.zoomModule.isZoomed;
+                charts[i].zoomModule.isPanning = args.axis.series[0].chart.zoomModule.isPanning;
+            }
+        }
+    }
+
+</script>
+<style>
+    #control-container {
+        padding: 0px !important;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .col {
+        width: 50%;
+        margin: 10px;
+        height: 270px;
+    }
+</style>

@@ -1,0 +1,87 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("scheduler")
+.Width("100%")
+.Height("550px")
+.PopupOpen("onPopupOpen")
+.EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+.EditorHeaderTemplate("#editor-header")
+.EditorFooterTemplate("#editor-footer")
+.Render()
+)
+
+<style>
+#verify {
+  position: fixed;
+  padding: 0 20px;
+}
+
+#text {
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 14px;
+  user-select: none;
+  margin-left: 8px;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+#right-button {
+  padding: 0 10px;
+}
+</style>
+
+<script id="editor-header" type="text/x-template">
+    ${if (!Subject)}<div>Create New Event</div>${else}<div>${Subject}</div>${/if}
+</script>
+
+<script id="editor-footer" type="text/x-template">
+    <div id="verify">
+        <input type="checkbox" id="check-box" value="unchecked">
+        <label id="text">Verified</label>
+    </div>
+    <div id="right-button">
+        <button id="Save" class="e-control e-btn e-primary" disabled data-ripple="true">Save</button>
+        <button id="Cancel" class="e-control e-btn e-primary"  data-ripple="true">Cancel</button>
+    </div>
+</script>
+
+<script type="text/javascript">
+    function onPopupOpen(args) {
+        if (args.type === 'Editor') {
+            let scheduleObj = document.getElementById('scheduler').ej2_instances[0];
+            const saveButton = args.element.querySelector("#Save");
+            const cancelButton = args.element.querySelector("#Cancel");
+            const checkBox = args.element.querySelector("#check-box");
+            checkBox.onchange = () => {
+                if (!checkBox.checked) {
+                    saveButton.setAttribute("disabled", "");
+                } else {
+                    saveButton.removeAttribute("disabled");
+                }
+            };
+            saveButton.onclick = () => {
+                const data = {
+                    Id: args.data.Id,
+                    Subject: args.element.querySelector("#Subject").value,
+                    StartTime: args.element.querySelector("#StartTime").ej2_instances[0].value,
+                    EndTime: args.element.querySelector("#EndTime").ej2_instances[0].value,
+                    IsAllDay: args.element.querySelector("#IsAllDay").checked,
+                };
+                if (args.target.classList.contains("e-appointment")) {
+                    scheduleObj.saveEvent(data, "Save");
+                } else {
+                    data.Id = scheduleObj.getEventMaxID();
+                    scheduleObj.addEvent(data);
+                }
+                scheduleObj.closeEditor();
+            };
+            cancelButton.onclick = () => {
+                scheduleObj.closeEditor();
+            };
+        }
+    }
+</script>

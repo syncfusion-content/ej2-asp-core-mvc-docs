@@ -26,12 +26,24 @@ The PDF viewer control provides the option for interaction with Form Fields such
 
 We should inject FormDesigner module and set enableFormDesignerToolbar as true to enable the Form designer icon on the toolbar. By default, enableFormDesignerToolbar is set as true. Use the following code to inject FormDesigner module and to enable the enableFormDesignerToolbar property.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
     <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableFormDesignerToolbar(true).DocumentPath("Hive_Succinctly.pdf").Render()
+        @Html.EJS().PdfViewer("pdfviewer").EnableFormDesignerToolbar(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
     </div>
 
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableFormDesignerToolbar(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+    </div>
+
+```
+{% endhighlight %}
+{% endtabs %}
 
 ## Add the form field dynamically
 
@@ -71,11 +83,13 @@ The PDF Viewer control supports the clipboard operations such as cut, copy and p
 
 We provided support to undo/redo the Form Field actions that are performed at runtime. Use the following code example to perform undo/redo actions.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
 <button id="undo">Undo</button>
 <button id="redo">Redo</button>
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("Hive_Succinctly.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
 </div>
 <script>
     document.getElementById('undo').addEventListener('click', function () {
@@ -88,3 +102,24 @@ We provided support to undo/redo the Form Field actions that are performed at ru
     });
 </script>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+<button id="undo">Undo</button>
+<button id="redo">Redo</button>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+<script>
+    document.getElementById('undo').addEventListener('click', function () {
+        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+        pdfviewer.undo();
+    });
+    document.getElementById('redo').addEventListener('click', function () {
+        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+        pdfviewer.redo();
+    });
+</script>
+```
+{% endhighlight %}
+{% endtabs %}

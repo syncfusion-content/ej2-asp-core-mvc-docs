@@ -15,19 +15,11 @@ The PDF Viewer provides API for user interactions options provided in it's built
 
 **Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/aspnetmvc/documentation/pdfviewer/getting-started/) to create simple PDF Viewer sample.
 
-**Step 2:** Hide the default toolbar of PDF Viewer using below code snippet,
+**Step 2:** Add EJ2 Toolbar for perform primary actions like Open, Previous page, Next page, Go to page,Print and Download using the following code snippet,
 
 ```html
-@Html.EJS().PdfViewer("pdfviewer")
-.ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/"))
-.EnableToolbar(false).EnableThumbnail(false)
-.DocumentLoad("documentLoaded").PageChange("pageChanged")
-.DocumentPath("Hive_Succinctly.pdf").Render()
-```
+@using Syncfusion.EJ2.Navigations;
 
-**Step 3:** Add EJ2 Toolbar for perform primary actions like Open, Previous page, Next page, Go to page,Print and Download using the following code snippet,
-
-```html
 @Html.EJS().Toolbar("topToolbar").Height("56px").Items(new List<ToolbarItem> {
 new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-open-document-icon",TooltipText = "Open",Align=ItemAlign.Left,Click="openFile"},
 new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-previous-page-navigation-icon",TooltipText = "Previous Page",Align=ItemAlign.Center,Click="previousClicked",Id="previousPage"},
@@ -40,7 +32,31 @@ new ToolbarItem { Type = ItemType.Button,  PrefixIcon = "e-pv-download-document-
 <input type ="file" id="fileUpload" accept=".pdf" style="display:block;visibility:hidden;width:0;height:0;">
 ```
 
-**Step 3:** Add EJ2 Toolbar for perform magnification actions in PDF Viewer using following code snippet,
+**Step 3:** Hide the default toolbar of PDF Viewer using below code snippet,
+
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+```html
+@Html.EJS().PdfViewer("pdfviewer")
+.EnableToolbar(false).EnableThumbnail(false)
+.DocumentLoad("documentLoaded").PageChange("pageChanged")
+.DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+```html
+@Html.EJS().PdfViewer("pdfviewer")
+.ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/"))
+.EnableToolbar(false).EnableThumbnail(false)
+.DocumentLoad("documentLoaded").PageChange("pageChanged")
+.DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+```
+{% endhighlight %}
+{% endtabs %}
+
+**Step 4:** Add EJ2 Toolbar for perform magnification actions in PDF Viewer using following code snippet,
 
 ```html
 
@@ -52,7 +68,7 @@ new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-zoom-out-icon", Too
 
 ```
 
-**Step 4:** Add the following style to achieve the custom toolbar styling,
+**Step 5:** Add the following style to achieve the custom toolbar styling,
 
 ```html
 <style>
@@ -155,10 +171,10 @@ new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-zoom-out-icon", Too
 
 N>The icons are embedded in the font file used in above code snippet.
 
-**Step 5:** Add the following scripts for performing user interaction in PDF Viewer in code behind
+**Step 6:** Add the following scripts for performing user interaction in PDF Viewer in code behind
 
 ```html
-<script>
+<script type="text/javascript">
     var currentPageBox;
     var matchCase = false;
     var filename;

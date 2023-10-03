@@ -108,6 +108,42 @@ The following properties are available in the `MapsDataLabelSettings` to customi
 
 ![Data label customization](./images/Datalabel/label-customization.PNG)
 
+
+## Label animation
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+The data labels can be animated during the initial rendering of the Maps. This can be enabled by setting the [animationDuration](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_AnimationDuration) property in the `dataLabelSettings` of the Maps. The duration of the animation is specified in milliseconds.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/datalabel/label-animation/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Label-animation.cs" %}
+{% include code-snippet/maps/datalabel/label-animation/label-animation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Maps with Data Label Animation](./images/data-label-animation.gif)
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The data labels can be animated during the initial rendering of the Maps. This can be enabled by setting the [AnimationDuration](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_AnimationDuration) property in the `DataLabelSettings` of the Maps. The duration of the animation is specified in milliseconds.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/datalabel/label-animation/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Label-animation.cs" %}
+{% include code-snippet/maps/datalabel/label-animation/label-animation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Maps with Data Label Animation](./images/data-label-animation.gif)
+
+{% endif %}
+
+
 ## Smart labels
 
 The Maps component provides an option to handle the labels when they intersect with the corresponding shape borders using the `SmartLabelMode` property. The following options are available in the `SmartLabelMode` property.
@@ -182,7 +218,7 @@ The Maps component provides an option to handle the labels when a label intersec
 
 The data label can be added as a template in the Maps component. The `Template` property of `MapsDataLabelSettings` is used to set the data label as a template. Any text or HTML element can be added as the template in data labels.
 
-N>The customization properties of data label, `SmartLabelMode` and `IntersectionAction` properties are not applicable to `Template` property. The styles can be applied to the label template using the CSS styles of the template element.
+N>The properties of data label such as, `SmartLabelMode` , `IntersectionAction`, `AnimationDuration`, `Border`, `Fill`, `Opacity` and `TextStyle` properties are not applicable to `Template` property. The styles can be applied to the label template using the CSS styles of the HTML element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -222,6 +222,11 @@ Output be like the below.
 
 ![FileManager toolbar customization ](./images/toolbar_item.PNG)
 
+
+### See Also
+
+* [How to add new items or customize default items](../file-manager/how-to/adding-custom-item-to-toolbar.md)
+
 ## Upload customization
 
 The upload settings like, minimum and maximum file size and enabling auto upload can be customized using [uploadSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~UploadSettings.html) property.
