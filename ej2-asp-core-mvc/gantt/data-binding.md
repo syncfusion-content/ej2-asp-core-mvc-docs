@@ -572,6 +572,7 @@ The following code example describes handling of Load on demand at server end.
 * Filtering, sorting  and searching are not supported in load on demand.
 * Only Self-Referential type data is supported with remote data binding in Gantt Chart.
 * Load-on-demand supports only the validated data source
+* Load-on-demand does not have support for resource view.
 
 ### Sending additional parameters to the server
 
