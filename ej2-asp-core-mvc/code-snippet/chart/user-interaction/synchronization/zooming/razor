@@ -21,8 +21,7 @@
                 ).ChartArea(area => area.Border(br => br.Width(0))
                 ).TitleStyle(tl => tl.TextAlignment(Syncfusion.EJ2.Charts.Alignment.Near)
                 ).ZoomSettings(zn => zn.EnableMouseWheelZooming(true).EnableScrollbar(false).EnableDeferredZooming(false).EnableSelectionZooming(true).EnablePan(true).Mode(Syncfusion.EJ2.Charts.ZoomMode.X).EnablePinchZooming(true).ToolbarItems(ViewBag.toolbarItems)
-                ).Title("US to INR").Load("load").ZoomComplete("zoomComplete").Render()
-            </div>
+                ).Title("US to INR").Load("load").ZoomComplete("zoomComplete").Render()            
         </div>
     </div>
 </div>

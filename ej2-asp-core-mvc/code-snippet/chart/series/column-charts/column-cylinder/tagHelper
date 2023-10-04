@@ -3,7 +3,7 @@
     <e-chart-primaryyaxis title="Medal Count" minimum="0" maximum="80" interval="10">
     </e-chart-primaryyaxis>
     <e-series-collection>
-        <e-series dataSource="ViewBag.dataSource" xName="country" yName="gold"
+        <e-series dataSource="ViewBag.dataSource" xName="country" yName="gold" tooltipMappingName="tooltipMappingName"
             columnFacet="@Syncfusion.EJ2.Charts.ShapeType.Cylinder"
             type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
         </e-series>
