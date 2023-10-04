@@ -26,16 +26,31 @@ The PDF viewer control provides the option for interaction with Form Fields such
 
 We should inject FormDesigner module and set enableFormDesignerToolbar as true to enable the Form designer icon on the toolbar. By default, enableFormDesignerToolbar is set as true. Use the following code to inject FormDesigner module and to enable the enableFormDesignerToolbar property.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf"
+                   enableFormDesignerToolbar="true">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath="FormDesigner.pdf"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf"
                    enableFormDesignerToolbar="true">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add the form field dynamically
 
@@ -75,14 +90,14 @@ The PDF Viewer control supports the clipboard operations such as cut, copy and p
 
 We provided support to undo/redo the Form Field actions that are performed at runtime. Use the following code example to perform undo/redo actions.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 <button id="undo">Undo</button>
 <button id="redo">Redo</button>
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath="FormDesigner.pdf"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf"
                    enableFormDesignerToolbar="true">
     </ejs-pdfviewer>
 </div>
@@ -96,4 +111,30 @@ We provided support to undo/redo the Form Field actions that are performed at ru
         pdfviewer.redo();
     });
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<button id="undo">Undo</button>
+<button id="redo">Redo</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf"
+                   enableFormDesignerToolbar="true">
+    </ejs-pdfviewer>
+</div>
+<script>
+    document.getElementById('undo').addEventListener('click', function () {
+        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+        pdfviewer.undo();
+    });
+    document.getElementById('redo').addEventListener('click', function () {
+        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+        pdfviewer.redo();
+    });
+</script>
+
+{% endhighlight %}
+{% endtabs %}

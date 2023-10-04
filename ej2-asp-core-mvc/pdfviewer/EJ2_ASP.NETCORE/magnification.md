@@ -15,16 +15,32 @@ The magnification tools of the PDF Viewer contains ZoomIn, ZoomOut, Zoom, FitPag
 
 The following code snippet describes how to enable the magnification in PDF Viewer.
 
-```html
+
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   enableMagnification="true">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableMagnification="true">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The following magnification options are available in the default toolbar of PDF Viewer,
 

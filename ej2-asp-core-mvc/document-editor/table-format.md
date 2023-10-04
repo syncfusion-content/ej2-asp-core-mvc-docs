@@ -205,6 +205,22 @@ This property is valid if a table row does not fit in the current page during ta
 documenteditor.selection.rowFormat.allowRowBreakAcrossPages=false;
 ```
 
+### Title
+
+Document Editor expose API to get or set the table title of the selected table. Refer to the following sample code to set title.
+
+```typescript
+documenteditor.selection.tableFormat.title = 'Shipping Details';
+```
+
+### Description
+
+Document Editor expose API to get or set the table description of the selected image. Refer to the following sample code to set description.
+
+```typescript
+documenteditor.selection.tableFormat.description = 'Freight cost and shipping details';
+```
+
 ## See Also
 
 * [Table properties dialog](../document-editor/dialog#table-properties-dialog)

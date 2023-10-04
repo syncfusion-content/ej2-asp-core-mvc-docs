@@ -327,9 +327,9 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
+<!-- {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/overview/razor %}
-{% endhighlight %}
+{% endhighlight %} -->
 {% highlight c# tabtitle="HomeController_core.cs" %}
 {% include code-snippet/file-manager/overview/HomeController_core.cs %}
 {% endhighlight %}

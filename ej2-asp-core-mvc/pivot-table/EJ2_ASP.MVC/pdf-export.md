@@ -365,6 +365,64 @@ Before exporting, you can split and export the pivot table columns on each page 
 {% endif %}
 
 
+### Changing the table's column width and row height while exporting
+
+You can change the column width and row height in the PDF document during the pivot table export by using the [OnPdfCellRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_OnPdfCellRender) event. Within this event, the `args.column.width` property allows you to change the width of specific columns.
+
+As shown in the code example below, the **"Unit Sold"** column under **"FY 2015"** is changed to a width of **60** pixels.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnWidthCustomization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-columnWidthCustomization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnWidthCustomization/exporting-columnWidthCustomization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnWidthCustomization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-columnWidthCustomization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnWidthCustomization/exporting-columnWidthCustomization.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Similarly, you can change the height of specific rows in the PDF document by using the `args.cell.height` property in the [OnPdfCellRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_OnPdfCellRender) event. 
+
+As shown in the code example below, the **"Mountain Bikes"** row under **"France"** is changed to a height of **30** pixels.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-rowHeightCustomization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-rowHeightCustomization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-rowHeightCustomization/exporting-rowHeightCustomization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-rowHeightCustomization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-rowHeightCustomization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-rowHeightCustomization/exporting-rowHeightCustomization.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+> This option is only available if [EnableVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) is set to **true**.
+
 
 ## Changing the pivot table style while exporting
 

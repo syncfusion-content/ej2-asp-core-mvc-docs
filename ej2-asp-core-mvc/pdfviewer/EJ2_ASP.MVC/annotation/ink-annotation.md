@@ -27,11 +27,13 @@ The ink annotations can be added to the PDF document using the annotation toolba
 
 Refer to the following code sample to switch to the ink annotation mode.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
     <!--Element to set ink annotation mode-->
     <button id="set" onclick="addAnnot()">Draw Ink</button>
     <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").Render()
+        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
     </div>
     <script>
         function addAnnot() {
@@ -40,6 +42,23 @@ Refer to the following code sample to switch to the ink annotation mode.
         }
     </script>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+    <!--Element to set ink annotation mode-->
+    <button id="set" onclick="addAnnot()">Draw Ink</button>
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+    </div>
+    <script>
+        function addAnnot() {
+            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+            pdfViewer.annotation.setAnnotationMode('Ink');
+        }
+    </script>
+```
+{% endhighlight %}
+{% endtabs %}
 
 ## Editing the properties of the ink annotation
 

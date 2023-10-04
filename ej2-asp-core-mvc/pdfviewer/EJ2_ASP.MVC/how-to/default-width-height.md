@@ -15,7 +15,7 @@ To change the default width and height of the Syncfusion PDF Viewer, modify the 
 ```html
 <div>
     <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("PDF_Succinctly.pdf").Height("1000px").Width("80%").Render()
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Height("1000px").Width("80%").Render()
     </div>
 </div>
 ```

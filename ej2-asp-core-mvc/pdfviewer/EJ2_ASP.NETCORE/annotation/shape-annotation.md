@@ -8,7 +8,6 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-
 # Shape Annotation in the ASP.NET Core PDF Viewer component
 
 The PDF Viewer control provides the options to add, edit, and delete the shape annotations. The shape annotation types supported in the PDF Viewer control are:
@@ -36,14 +35,15 @@ In the pan mode, if the shape annotation mode is entered, the PDF Viewer control
 
 Refer to the following code sample to switch to the circle annotation mode.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <!--Element to set shape annotation mode-->
 <button id="set" onclick="addAnnot()">Circle</button>
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath>
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 <script>
@@ -52,7 +52,28 @@ Refer to the following code sample to switch to the circle annotation mode.
         pdfViewer.annotation.setAnnotationMode('Circle');
     }
 </script>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<!--Element to set shape annotation mode-->
+<button id="set" onclick="addAnnot()">Circle</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Circle');
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Editing the properties of the shape annotation
 
@@ -94,12 +115,13 @@ Refer to the following code sample to set the default annotation settings.
 
 The properties of the shape annotations can be set before creating the control using LineSettings, ArrowSettings, RectangleSettings, CircleSettings, and PolygonSettings.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    lineSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerLineSettings
             {FillColor="blue", Opacity=0.6, StrokeColor="green"})"
                    arrowSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerArrowSettings
@@ -112,4 +134,27 @@ The properties of the shape annotations can be set before creating the control u
             {FillColor="pink", Opacity=0.6, StrokeColor="yellow"})">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   lineSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerLineSettings
+            {FillColor="blue", Opacity=0.6, StrokeColor="green"})"
+                   arrowSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerArrowSettings
+            {FillColor="green", Opacity=0.6, StrokeColor="blue"})"
+                   rectangleSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerRectangleSettings
+            {FillColor="yellow", Opacity=0.6, StrokeColor="orange"})"
+                   circleSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerCircleSettings
+            {FillColor="orange", Opacity=0.6, StrokeColor="pink"})"
+                   polygonSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerPolygonSettings
+            {FillColor="pink", Opacity=0.6, StrokeColor="yellow"})">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% endtabs %}

@@ -1,0 +1,68 @@
+@{
+    var imageTool = new string[] { };
+}
+
+<div class="col-lg-12 control-section e-img-editor-sample">
+    <ejs-imageeditor id="image-editor" created="created" toolbar="@imageTool"></ejs-imageeditor>
+</div>
+<ejs-button id="matbtnClick" onclick="matClick()" cssClass="e-primary" content="Mat"></ejs-button>
+<ejs-button id="bevelbtnClick" onclick="bevelClick()" cssClass="e-primary" content="Bevel"></ejs-button>
+<ejs-button id="linebtnClick" onclick="lineClick()" cssClass="e-primary" content="Line"></ejs-button>
+<ejs-button id="insetbtnClick" onclick="insetClick()" cssClass="e-primary" content="Inset"></ejs-button>
+<ejs-button id="hookbtnClick" onclick="hookClick()" cssClass="e-primary" content="Hook"></ejs-button>
+<ejs-button id="invertbtnClick" onclick="invertClick()" cssClass="e-primary" content="Invert"></ejs-button>
+
+<script>
+    function created() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        if (ej.base.Browser.isDevice) {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+        } else {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+        }
+    }
+    
+    function matClick() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imgObj.drawFrame(FrameType.Mat, 'red', 'blue', 20, 20, 20, 20, 'solid', 1);
+    }
+    function bevelClick() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imgObj.drawFrame(FrameType.Bevel, 'red', 'blue', 20, 20, 20, 20, 'solid', 1);
+    }
+    function lineClick() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imgObj.drawFrame(FrameType.Line, 'red', 'blue', 20, 20, 20, 20, 'solid', 1);
+    }
+    function insetClick() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imgObj.drawFrame(FrameType.Inset, 'red', 'blue', 20, 20, 20, 20, 'solid', 1);
+    }
+    function hookClick() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imgObj.drawFrame(FrameType.Hook, 'red', 'blue', 20, 20, 20, 20, 'solid', 1);
+    }
+
+</script>
+
+<style>
+    .image-editor {
+        margin: 0 auto;
+    }
+
+    .e-img-editor-sample {
+        height: 80vh;
+        width: 100%;
+    }
+
+    @@media only screen and (max-width: 700px) {
+        .e-img-editor-sample {
+            height: 75vh;
+            width: 100%;
+        }
+    }
+
+    .control-wrapper {
+        height: 100%;
+    }
+</style>

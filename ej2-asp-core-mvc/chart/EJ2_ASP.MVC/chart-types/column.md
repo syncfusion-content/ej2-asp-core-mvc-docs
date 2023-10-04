@@ -3,7 +3,7 @@ layout: post
 title: Column Chart in ##Platform_Name## Syncfusion Chart Component
 description: Learn here all about Column Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Column Chart
+control: Column chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -69,7 +69,7 @@ The [`ColumnSpacing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ
 
 
 
-## Grouped Column
+## Grouped column
 
 You can use the [`GroupName`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_GroupName) property to group the data points in the column type charts. Data points with same group name are grouped together.
 
@@ -92,6 +92,35 @@ You can use the [`GroupName`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncf
 {% endhighlight %}
 {% highlight c# tabtitle="Group-column.cs" %}
 {% include code-snippet/chart/series/column-charts/group-column/group-column.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Cylindrical column chart
+
+To render a cylindrical column chart, set the `ColumnFacet` property to `Cylinder` in the chart series.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column-charts/column-cylinder/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Column-cylinder.cs" %}
+{% include code-snippet/chart/series/column-charts/column-cylinder/column-cylinder.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column-charts/column-cylinder/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Column-cylinder.cs" %}
+{% include code-snippet/chart/series/column-charts/column-cylinder/column-cylinder.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -132,7 +161,7 @@ The following properties can be used to customize the [`Column`](https://help.sy
 
 
 
-## See Also
+## See also
 
 * [Data Label](../data-labels)
 * [Tooltip](../tool-tip)

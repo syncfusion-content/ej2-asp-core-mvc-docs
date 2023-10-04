@@ -1,0 +1,63 @@
+<ejs-heatmap id='container' showTooltip="true" load="onHeatmapLoad">
+  <e-heatmap-titlesettings text="Commercial Aviation Accidents and Fatalities by year 2015 - 2017"
+    textStyle="ViewBag.textStyle">
+  </e-heatmap-titlesettings>
+  <e-heatmap-xaxis labels="ViewBag.xLabels">
+  </e-heatmap-xaxis>
+  <e-heatmap-yaxis labels="ViewBag.yLabels">
+  </e-heatmap-yaxis>
+  <e-heatmap-palettesettings type="Gradient">
+    <e-palettes>
+      <e-palette color="#C06C84"></e-palette>
+      <e-palette color="#6C5B7B"></e-palette>
+      <e-palette color="#355C7D"></e-palette>
+    </e-palettes>
+  </e-heatmap-palettesettings>
+  <e-heatmap-cellsettings
+    labelTemplate="<div><img style='width:20px;height:20px;' src='${image}'/> </div>"></e-heatmap-cellsettings>
+  <e-heatmap-legendsettings visible="true"></e-heatmap-legendsettings>
+  <e-heatmap-datasourcesettings isJsonData="true" adaptorType="Table"
+    xDataMapping="Year"></e-heatmap-datasourcesettings>
+</ejs-heatmap>
+
+<script>
+  var dataSource = [
+    {
+      Year: '2017',
+      image:
+        'https://ej2.syncfusion.com/demos/src/circular-gauge/images/golfball.png',
+      'Jan-Feb': [4, 39],
+      'Mar-Apr': [3, 8],
+      'May-Jun': [1, 3],
+      'Jul-Aug': [1, 10],
+      'Sep-Oct': [4, 4],
+      'Nov-Dec': [2, 15]
+    },
+    {
+      Year: '2016',
+      image:
+        'https://ej2.syncfusion.com/demos/src/circular-gauge/images/basketball.png',
+      'Jan-Feb': [4, 28],
+      'Mar-Apr': [5, 92],
+      'May-Jun': [5, 73],
+      'Jul-Aug': [3, 1],
+      'Sep-Oct': [3, 4],
+      'Nov-Dec': [4, 126]
+    },
+    {
+      Year: '2015',
+      image:
+        'https://ej2.syncfusion.com/demos/src/circular-gauge/images/football.png',
+      'Jan-Feb': [4, 45],
+      'Mar-Apr': [5, 152],
+      'May-Jun': [0, 44],
+      'Jul-Aug': [4, 54],
+      'Sep-Oct': [5, 243],
+      'Nov-Dec': [2, 45]
+    }
+  ];
+  window.onHeatmapLoad = function (args) {
+    args.heatmap.dataSource = dataSource;
+  }
+
+</script>

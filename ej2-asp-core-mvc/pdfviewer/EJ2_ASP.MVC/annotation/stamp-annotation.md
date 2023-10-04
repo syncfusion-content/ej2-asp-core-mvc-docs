@@ -56,8 +56,19 @@ The properties of the stamp annotation can be set before creating the control us
 After editing the default opacity using the Edit Opacity tool, they will be changed to the selected values.
 Refer to the following code sample to set the default sticky note annotation settings.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 ```html
     <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("PDF_Succinctly.pdf").StampSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerStampSettings { Opacity = 0.3, Author = "Guest User" }).Render()
+        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").StampSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerStampSettings { Opacity = 0.3, Author = "Guest User" }).Render()
     </div>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+```html
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").StampSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerStampSettings { Opacity = 0.3, Author = "Guest User" }).Render()
+    </div>
+```
+{% endhighlight %}
+{% endtabs %}

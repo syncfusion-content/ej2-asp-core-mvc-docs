@@ -57,14 +57,30 @@ After editing the default opacity using the Edit Opacity tool, they will be chan
 
 Refer to the following code sample to set the default sticky note annotation settings.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   serviceUrl="/api/PdfViewer"
-                   documentPath=@ViewBag.DocumentPath
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    stampSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStampSettings
             {Opacity=0.3, Author="Guest User"})">
     </ejs-pdfviewer>
 </div>
-```
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   stampSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStampSettings
+            {Opacity=0.3, Author="Guest User"})">
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% endtabs %}

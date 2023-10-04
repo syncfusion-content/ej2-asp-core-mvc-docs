@@ -1,0 +1,107 @@
+ <div class="control-section">
+    <div class="row">
+        <div class="col" id="container1">
+            @Html.EJS().Chart("lineContainer1").Series(series =>
+                {
+                series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).XName("USD").YName("EUR").Width(2)
+                .EmptyPointSettings(es => es.Mode(Syncfusion.EJ2.Charts.EmptyPointMode.Drop)).DataSource("ChartPoints").Add();
+                }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).Minimum(new DateTime(2023, 2, 18)).Maximum(new DateTime(2023, 8, 18)).LabelFormat("MMM d").MajorGridLines(mg => mg.Width(0)).LineStyle(ls => ls.Width(0))
+                ).PrimaryYAxis(px => px.LabelFormat("n2").Minimum(0.86).Maximum(0.96).Interval(0.025).LineStyle(ls => ls.Width(0)).MajorTickLines(mg => mg.Width(0))
+                ).ChartArea(area => area.Border(br => br.Width(0))
+                ).TitleStyle(tl => tl.TextAlignment(Syncfusion.EJ2.Charts.Alignment.Near)
+                ).ZoomSettings(zn => zn.EnableSelectionZooming(true).Mode(Syncfusion.EJ2.Charts.ZoomMode.X)
+                ).Title("US to EURO").Load("load").ZoomComplete("zoomComplete").SelectionComplete("selectionComplete").SelectionMode(Syncfusion.EJ2.Charts.SelectionMode.Point).SelectionPattern(Syncfusion.EJ2.Charts.SelectionPattern.Box).Render()
+        </div>
+        <div class="col" id="container2">
+            @Html.EJS().Chart("lineContainer2").Series(series =>
+                {
+                series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Spline).XName("USD").YName("INR").Width(2).Opacity(0.6).Border(br => br.Width(2)).DataSource("ChartPoints").Add();
+                }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).Minimum(new DateTime(2023, 2, 18)).Maximum(new DateTime(2023, 8, 18)).LabelFormat("MMM d").MajorGridLines(mg => mg.Width(0)).LineStyle(ls => ls.Width(0))
+                ).PrimaryYAxis(px => px.LabelFormat("n1").Minimum(79).Maximum(85).Interval(1.5).LineStyle(ls => ls.Width(0)).MajorTickLines(mg => mg.Width(0))
+                ).ChartArea(area => area.Border(br => br.Width(0))
+                ).TitleStyle(tl => tl.TextAlignment(Syncfusion.EJ2.Charts.Alignment.Near)
+                ).ZoomSettings(zn => zn.EnableSelectionZooming(true).Mode(Syncfusion.EJ2.Charts.ZoomMode.X)
+                ).Title("US to INR").Load("load").ZoomComplete("zoomComplete").SelectionComplete("selectionComplete").SelectionMode(Syncfusion.EJ2.Charts.SelectionMode.Point).SelectionPattern(Syncfusion.EJ2.Charts.SelectionPattern.Box).Render()
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="chart/user-interaction/synchronization/crosshair/sync-data.js"></script>
+<script>
+    var chart1;
+    var chart2;
+    var count;
+    var charts = [];
+    var zoomFactor = 0;
+    var zoomPosition = 0;
+    var ChartPoints = synchronizedData;
+    function load(args) {
+        var selectedTheme = location.hash.split('/')[1];
+        selectedTheme = selectedTheme ? selectedTheme : 'Material';
+        args.chart.theme = (selectedTheme.charAt(0).toUpperCase() + selectedTheme.slice(1).replace(/-dark/i, 'Dark').replace(/contrast/i, 'Contrast'));
+        args.chart.series[0].dataSource = ChartPoints;
+        args.chart.primaryXAxis.interval = ej.base.Browser.isDevice ? 2 : 1;
+        args.chart.primaryXAxis.edgeLabelPlacement = ej.base.Browser.isDevice ? 'None' : 'Shift';
+        args.chart.primaryXAxis.labelRotation = ej.base.Browser.isDevice ? -45 : 0;
+    }
+
+    function zoomComplete(args) {
+        if (args.axis.name === 'primaryXAxis') {
+            zoomFactor = args.currentZoomFactor;
+            zoomPosition = args.currentZoomPosition;
+            zoomCompleteFunction(args);
+        }
+    }
+
+    function zoomCompleteFunction(args) {
+        chart1 = document.getElementById('lineContainer1').ej2_instances[0];
+        chart2 = document.getElementById('lineContainer2').ej2_instances[0];
+        charts = [chart1, chart2];
+        for (var i = 0; i < charts.length; i++) {
+            if (args.axis.series[0].chart.element.id !== charts[i].element.id) {
+                charts[i].primaryXAxis.zoomFactor = zoomFactor;
+                charts[i].primaryXAxis.zoomPosition = zoomPosition;
+                charts[i].zoomModule.isZoomed = args.axis.series[0].chart.zoomModule.isZoomed;
+                charts[i].zoomModule.isPanning = args.axis.series[0].chart.zoomModule.isPanning;
+            }
+        }
+    }
+
+    function selectionComplete (args) {
+        selectionCompleteFunction(args);
+    }
+
+    function selectionCompleteFunction(args) {
+        if (count == 0) {
+            for (var j = 0; j < args.selectedDataValues.length; j++) {
+                args.selectedDataValues[j].point = args.selectedDataValues[j].pointIndex;
+                args.selectedDataValues[j].series = args.selectedDataValues[j].seriesIndex;
+            }
+            for (var i = 0; i < charts.length; i++) {
+                if (args.chart.element.id !== charts[i].element.id) {
+                    charts[i].selectedDataIndexes = args.selectedDataValues;
+                    count += 1;
+                    charts[i].dataBind();
+                }
+            }
+            count = 0;
+        }
+    }
+
+</script>
+<style>
+    #control-container {
+        padding: 0px !important;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .col {
+        width: 50%;
+        margin: 10px;
+        height: 270px;
+    }
+</style>

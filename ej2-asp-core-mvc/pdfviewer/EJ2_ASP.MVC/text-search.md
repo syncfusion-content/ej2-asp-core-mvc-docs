@@ -12,11 +12,24 @@ documentation: ug
 
 The Text Search option in PDF Viewer is used to find and highlight the text content from the document. You can enable/disable the text search using the following code snippet.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 ```html
     <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableTextSearch(true).DocumentPath("Hive_Succinctly.pdf").Render()
+        @Html.EJS().PdfViewer("pdfviewer").EnableTextSearch(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
     </div>
 ```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+```html
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableTextSearch(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+    </div>
+```
+{% endhighlight %}
+{% endtabs %}
 
 ![Alt text](./images/search.png)
 
