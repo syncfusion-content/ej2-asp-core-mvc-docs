@@ -1,4 +1,4 @@
-@Html.EJS().Chart("container").Series(series =>
+@(Html.EJS().Chart("container").Series(series =>
    {
       series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100).  
       XName("x").
@@ -38,7 +38,7 @@
    .PrimaryYAxis(py => 
       py.Title("GDP (%) Per Annum")
          .LabelFormat("{value}%")
-         .RangePadding(Syncfusion.EJ2.Charts.RangePadding.None)
-       ).
+         .RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.None)
+       )
    .Title("Gross Domestic Product Growth")
-   .Render()
+   .Render())

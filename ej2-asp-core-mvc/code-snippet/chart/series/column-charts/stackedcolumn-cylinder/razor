@@ -1,4 +1,4 @@
-@Html.EJS().Chart("container").Series(series =>
+@(Html.EJS().Chart("container").Series(series =>
    {
       series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn).  
       XName("x").
@@ -37,6 +37,5 @@
    .PrimaryYAxis(py => 
       py.Title("Sales in Billions")
          .Interval(100).Minimum(0).Maximum(700).LabelFormat("{value}B")
-       ).
-   .Title("Mobile Game Market by Country")
-   .Render()
+       )
+   .Render())

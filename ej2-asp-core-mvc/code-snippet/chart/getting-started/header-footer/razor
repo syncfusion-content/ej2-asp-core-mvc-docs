@@ -10,6 +10,7 @@
 </div>
 <script>
     document.getElementById('togglebtn').onclick = () => {
+        var chart = document.getElementById('container').ej2_instances[0];
         const header = {
             content: 'Chart Header',
             fontSize: 15
