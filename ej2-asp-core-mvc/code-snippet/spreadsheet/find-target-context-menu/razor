@@ -3,14 +3,14 @@
 <script>
 
     function ContextMenuBeforeOpen(args) {
-        if (closest(args.event.target, '.e-sheet-content')) {
-            console.log('Cell contextMenu');
-        } else if (closest(args.event.target, '.e-colhdr-table')) {
-            console.log('Column header contextMenu');
-        } else if (closest(args.event.target, '.e-rowhdr-table')) {
-            console.log('Row header contextMenu');
-        } else if (closest(args.event.target, '.e-toolbar-item')) {
-            console.log('Footer contextMenu');
+        if (ejs.base.closest(args.event.target, '.e-sheet-content')) {
+            console.log('Cell Context Menu');
+        } else if (ejs.base.closest(args.event.target, '.e-colhdr-table')) {
+            console.log('Column Header Context Menu');
+        } else if (ejs.base.closest(args.event.target, '.e-rowhdr-table')) {
+            console.log('Row Header Context Menu');
+        } else if (ejs.base.closest(args.event.target, '.e-toolbar-item')) {
+            console.log('Footer Context Menu');
         }
     }
 
