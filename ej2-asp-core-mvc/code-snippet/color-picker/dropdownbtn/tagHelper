@@ -13,7 +13,7 @@
     // Triggers after the ddb popup open.
     function onDdbOpen(args) {
         args.element.parentElement.querySelector('.e-cancel').addEventListener('click', closePopup);
-        toolTip();
+        showTooltip();
     }
     // Triggers before closing the ddb popup.
     function onDdbBeforeClose(args) {
@@ -23,7 +23,7 @@
     function closePopup() {
         ej.base.getInstance(document.getElementById('ddb'), ejs.splitbuttons.DropDownButton).toggle();
     }
-    function toolTip() {
+    function showTooltip() {
         var zindex = document.getElementsByClassName('e-color-picker-tooltip')[0].style.zIndex;
         var zindexIntValue = parseInt(zindex) + 2;
         document.getElementsByClassName('e-color-picker-tooltip')[0].style.zIndex = zindexIntValue.toString();
