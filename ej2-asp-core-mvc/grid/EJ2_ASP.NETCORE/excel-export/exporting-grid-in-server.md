@@ -117,5 +117,5 @@ In the following demo, using the `HeaderCellRotate` method of the `GridExcelExpo
 
 ## Limitations
 
-* The export feature for detail templates is not supported in server-side exporting.
+* The export feature for detail and caption templates is not supported in server-side exporting.
 * Multiple grids exporting feature is not supported with server side exporting.
