@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Dialog Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Dialog Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Dialog control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -292,3 +292,5 @@ The below sample demonstrates the different Dialog positions.
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
 * [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
 * [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
+
+N> You can refer to our [ASP.NET MVC Dialog](https://www.syncfusion.com/aspnet-mvc-ui-controls/modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Dialog example](https://ej2.syncfusion.com/aspnetmvc/Dialog/DefaultFunctionalities#/fabric) that shows you how to render the Dialog in ASP.NET MVC.
