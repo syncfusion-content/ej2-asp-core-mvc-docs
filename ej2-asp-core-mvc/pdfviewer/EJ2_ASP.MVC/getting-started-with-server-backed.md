@@ -120,7 +120,6 @@ Add the Syncfusion ASP.NET MVC PDF Viewer control in `~/Views/Home/Index.cshtml`
 {% endtabs %}
 
 N> After initializing the control and specifying the service URL, it is essential to call the dataBind() method. Ensure that this step is performed after version 23.1.36.
-pdfViewer.dataBind();
 
 Add the below code in the `HomeController.cs` file which is placed inside `Controllers` folder.
 

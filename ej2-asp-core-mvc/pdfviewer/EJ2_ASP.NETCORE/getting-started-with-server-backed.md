@@ -126,7 +126,6 @@ Add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` 
 {% endtabs %}
 
 N> After initializing the control and specifying the service URL, it is essential to call the dataBind() method. Ensure that this step is performed after version 23.1.36.
-pdfViewer.dataBind();
 
 Add the below code in the Index.cshtml.cs which is placed inside the Pages folder.
 
