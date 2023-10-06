@@ -8,7 +8,6 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-
 # Getting Started with ASP.NET Core PDF Viewer control
 
 The [ASP.NET Core PDF Viewer](https://www.syncfusion.com/aspnet-core-ui-controls/pdf-viewer) control is used to viewing and printing PDF files in any web application. It provides the best viewing experience available with core interactions such as zooming, scrolling, text searching, text selection, and text copying. Thumbnail, bookmark, hyperlink and table of contents support provides easy navigation within and outside the PDF files. 
@@ -125,6 +124,9 @@ Add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` 
 
 {% endhighlight %}
 {% endtabs %}
+
+N> After initializing the control and specifying the service URL, it is essential to call the dataBind() method. Ensure that this step is performed after version 23.1.36.
+pdfViewer.dataBind();
 
 Add the below code in the Index.cshtml.cs which is placed inside the Pages folder.
 
