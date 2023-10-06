@@ -424,11 +424,11 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 
 The image annotation feature in the Image Editor provides the capability to add and customize images directly onto the image. With this feature, you can easily insert image or icons at specific locations within the image and customize various aspects of the image to meet your requirements. You have control over the customization options including rotate, flip, transparency for the image annotation.
 
-### Add an image annotation.
+### Add an image annotation
 
 The `drawImage` method serves the purpose of inserting an image into the Image Editor control, allowing for image annotations to be added. These image annotations can be used for various purposes, such as adding logos, watermarks, or decorative elements to the image.
 
-The `drawImage` method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
+The `drawImage` method in the Image Editor control takes six parameters to define the properties of the image annotation:
 
 * data: Specified the image data or url of the image to be inserted.
 
