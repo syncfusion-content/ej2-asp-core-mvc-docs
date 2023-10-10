@@ -399,9 +399,10 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ![ASP.NET MVC PDF Viewer Control](AspNetMVC_Images/pdfviewer-control.png)
 
 N> We've provided the support to dynamically change the `serviceURL`. So, after changing the `serviceURL` dynamically, you need invoke the `viewer.dataBind()` method to update the `serviceURL` quickly. This will effectively change the `serviceURL` dynamically. Ensure that this step is performed after version 23.1.36.
+    string serviceUrl = VirtualPathUtility.ToAbsolute("~/Home/");
     function load() {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-        pdfViewer.serviceUrl = "/Index";
+        pdfViewer.serviceUrl = '@serviceUrl'
         pdfViewer.documentPath = "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf";
         pdfViewer.dataBind();
         pdfViewer.load(pdfViewer.documentPath, null);
