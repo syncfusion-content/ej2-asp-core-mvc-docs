@@ -34,8 +34,6 @@ To add ASP.NET Core PDF Viewer control, the following NuGet package need to be i
 
 * [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/)
 
-* [Syncfusion.EJ2.PdfViewer.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core)
-
 ## Add Syncfusion ASP.NET Core Tag Helper
 
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
