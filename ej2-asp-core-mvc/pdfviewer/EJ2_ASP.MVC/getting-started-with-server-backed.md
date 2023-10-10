@@ -119,10 +119,6 @@ Add the Syncfusion ASP.NET MVC PDF Viewer control in `~/Views/Home/Index.cshtml`
 {% endhighlight %}
 {% endtabs %}
 
-N> After initializing the control and specifying the service URL, it is essential to call the dataBind() method. Ensure that this step is performed after version 23.1.36.
-
-Add the below code in the `HomeController.cs` file which is placed inside `Controllers` folder.
-
 {% tabs %}
 {% highlight c# tabtitle="~/HomeController.cs" %}
 
@@ -401,6 +397,15 @@ namespace GettingStartedMVC.Controllers
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC PDF Viewer control will be rendered in the default web browser.
 
 ![ASP.NET MVC PDF Viewer Control](AspNetMVC_Images/pdfviewer-control.png)
+
+N> We've provided the support to dynamically change the `serviceURL`. So, after changing the `serviceURL` dynamically, you need invoke the `viewer.dataBind()` method to update the `serviceURL` quickly. This will effectively change the `serviceURL` dynamically. Ensure that this step is performed after version 23.1.36.
+    function load() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.serviceUrl = "/Index";
+        pdfViewer.documentPath = "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf";
+        pdfViewer.dataBind();
+        pdfViewer.load(pdfViewer.documentPath, null);
+    }
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20MVC%20Razor%20Examples).
 

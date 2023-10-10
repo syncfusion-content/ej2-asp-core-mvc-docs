@@ -125,10 +125,6 @@ Add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` 
 {% endhighlight %}
 {% endtabs %}
 
-N> After initializing the control and specifying the service URL, it is essential to call the dataBind() method. Ensure that this step is performed after version 23.1.36.
-
-Add the below code in the Index.cshtml.cs which is placed inside the Pages folder.
-
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml.cs" %}
 using Microsoft.AspNetCore.Mvc;
@@ -411,6 +407,15 @@ In the above code,
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core PDF Viewer control will be rendered in the default web browser.
 
 ![ASP.NET Core PDF Viewer Control](Core_Images/pdfviewer-control.png)
+
+N> We've provided the support to dynamically change the `serviceURL`. So, after changing the `serviceURL` dynamically, you need invoke the `viewer.dataBind()` method to update the `serviceURL` quickly. This will effectively change the `serviceURL` dynamically. Ensure that this step is performed after version 23.1.36.
+    function load() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.serviceUrl = "/Index";
+        pdfViewer.documentPath = "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf";
+        pdfViewer.dataBind();
+        pdfViewer.load(pdfViewer.documentPath, null);
+    }
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
