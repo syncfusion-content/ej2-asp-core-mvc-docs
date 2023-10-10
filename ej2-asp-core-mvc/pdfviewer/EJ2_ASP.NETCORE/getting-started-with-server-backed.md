@@ -125,6 +125,8 @@ Add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` 
 {% endhighlight %}
 {% endtabs %}
 
+Add the below code in the Index.cshtml.cs which is placed inside the Pages folder.
+
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml.cs" %}
 using Microsoft.AspNetCore.Mvc;

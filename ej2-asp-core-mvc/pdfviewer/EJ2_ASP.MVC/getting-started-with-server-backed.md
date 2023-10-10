@@ -119,6 +119,8 @@ Add the Syncfusion ASP.NET MVC PDF Viewer control in `~/Views/Home/Index.cshtml`
 {% endhighlight %}
 {% endtabs %}
 
+Add the below code in the `HomeController.cs` file which is placed inside `Controllers` folder.
+
 {% tabs %}
 {% highlight c# tabtitle="~/HomeController.cs" %}
 
