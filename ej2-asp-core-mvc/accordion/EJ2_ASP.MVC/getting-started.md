@@ -30,7 +30,7 @@ To add ASP.NET MVC controls in the application, open the NuGet package manager i
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
 
-Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.releaseversion }}
+Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -53,9 +53,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-{% tabs %}
-{% highlight c# tabtitle="~/_Layout.cshtml" %}
-
+```
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
@@ -63,16 +61,11 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
     <!-- Syncfusion ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
+```
 
-{% endhighlight %}
-{% endtabs %}
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls.
-
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows.
-
-{% tabs %}
-{% highlight c# tabtitle="~/_Layout.cshtml" %}
+```
 
 <body>
 ...
@@ -80,8 +73,8 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
     @Html.EJS().ScriptManager()
 </body>
 
-{% endhighlight %}
-{% endtabs %}
+```
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls.
 
 ## Add ASP.NET MVC Accordion control
 
@@ -107,7 +100,7 @@ Now, add the Syncfusion ASP.NET MVC Accordion control in `~/Home/Index.cshtml` p
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Accordion control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the app. Then, the Syncfusion ASP.NET MVC Accordion control will be rendered in the default web browser.
 
 ![ASP.NET MVC Accordion Control](images/accordion-control.PNG)
 
