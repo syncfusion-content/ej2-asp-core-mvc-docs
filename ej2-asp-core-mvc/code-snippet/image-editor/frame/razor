@@ -19,23 +19,23 @@
 
     function matClick() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imgObj.drawFrame(FrameType.Mat, 'red', 'blue', 20, 20, 20, 20, 'solid', 1);
+        imgObj.drawFrame(ej.imageeditor.FrameType.Mat, 'red', 'blue', 20, 20, 20, 20, ej.imageeditor.FrameLineStyle.Solid, 1);
     }
     function bevelClick() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imgObj.drawFrame(FrameType.Bevel, 'red', 'blue', 20, 20, 20, 20, 'solid', 1);
+        imgObj.drawFrame(ej.imageeditor.FrameType.Bevel, 'red', 'blue', 20, 20, 20, 20, ej.imageeditor.FrameLineStyle.Solid, 1);
     }
     function lineClick() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imgObj.drawFrame(FrameType.Line, 'red', 'blue', 20, 20, 20, 20, 'solid', 1);
+        imgObj.drawFrame(ej.imageeditor.FrameType.Line, 'red', 'blue', 20, 20, 20, 20, ej.imageeditor.FrameLineStyle.Solid, 1);
     }
     function insetClick() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imgObj.drawFrame(FrameType.Inset, 'red', 'blue', 20, 20, 20, 20, 'solid', 1);
+        imgObj.drawFrame(ej.imageeditor.FrameType.Inset, 'red', 'blue', 20, 20, 20, 20, ej.imageeditor.FrameLineStyle.Solid, 1);
     }
     function hookClick() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imgObj.drawFrame(FrameType.Hook, 'red', 'blue', 20, 20, 20, 20, 'solid', 1);
+        imgObj.drawFrame(ej.imageeditor.FrameType.Hook, 'red', 'blue', 20, 20, 20, 20, ej.imageeditor.FrameLineStyle.Solid, 1);
     }
 
 </script>
