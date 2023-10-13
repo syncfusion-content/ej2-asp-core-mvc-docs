@@ -82,26 +82,27 @@ Also, register the script manager <ejs-script> at the end of `<body>` in the ASP
 
 N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls.
 
-## Render a Dialog using utility functions
+## Render a Dialog using Utility Functions
 
-The Dialog control provides built-in utility functions to render the alert and confirm dialogs with the minimal code. The following options are used as an argument on calling the utility functions:
+The Dialog control provides built-in utility functions to render the alert and confirm dialogs with minimal code. The following options are used as arguments when calling the utility functions:
 
-| Options   | Description |
-|-----------|-------------|
-| title | Specifies the title of dialog like the [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property.|
-| content | Specifies the value that can be displayed in dialog's content area like the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Content) property. |
-| isModal | Specifies the Boolean value whether the dialog can be displayed as modal or non-modal. For more details, refer to the [`isModal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) property.|
-| position | Specifies the value where the alert or confirm dialog is positioned within the document. For more details, refer to the [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Position) property { X: ‘center’, Y: ‘center’}|
-| okButton | Configures the `OK button` that contains button properties with the click events. `okButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for OK button click', text: 'Yes' // <-- Default value is 'OK' }`|
-| cancelButton | Configures the `Cancel button` that contains button properties with the click events. `cancelButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for ‘Cancel’ button click', text: 'No' // <-- Default value is 'Cancel'}`|
-|isDraggable|Specifies the value whether the alert or confirm dialog can be dragged by the user.|
-| showCloseIcon | When set to true, the close icon is shown in the Dialog control. |
-| closeOnEscape|When set to true, you can close the dialog by pressing ESC key.|
-| cssClass | Specifies the CSS class name that can be appended to the dialog.|
-| zIndex | Specifies the order of the dialog, that is displayed in front or behind of another component.|
-| open | Event which is triggered after the dialog is opened.|
-| Close | Event which is triggered after the dialog is closed.|
-| animationSettings | Specifies the animation settings of the dialog component. |
+| Options         | Description |
+|-----------------|-------------|
+| `title`         | Specifies the title of the dialog, like the [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property. |
+| `content`       | Specifies the value that can be displayed in the dialog's content area, like the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Content) property. |
+| `isModal`       | Specifies the Boolean value whether the dialog can be displayed as modal or non-modal. For more details, refer to the [`isModal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) property. |
+| `position`      | Specifies the value where the alert or confirm dialog is positioned within the document. For more details, refer to the [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Position) property `{ X: 'center', Y: 'center' }`. |
+| `okButton`      | Configures the `OK button` that contains button properties with the click events. `okButton: { icon: 'prefix icon to the button', cssClass: 'custom class to the button', click: 'action for OK button click', text: 'Yes' // <-- Default value is 'OK' }`. |
+| `cancelButton`  | Configures the `Cancel button` that contains button properties with the click events. `cancelButton: { icon: 'prefix icon to the button', cssClass: 'custom class to the button', click: 'action for 'Cancel' button click', text: 'No' // <-- Default value is 'Cancel' }`. |
+| `isDraggable`   | Specifies the value whether the alert or confirm dialog can be dragged by the user. |
+| `showCloseIcon` | When set to true, the close icon is shown in the Dialog control. |
+| `closeOnEscape` | When set to true, you can close the dialog by pressing the ESC key. |
+| `cssClass`      | Specifies the CSS class name that can be appended to the dialog. |
+| `zIndex`        | Specifies the order of the dialog, that is displayed in front or behind another component. |
+| `open`          | Event which is triggered after the dialog is opened. |
+| `close`         | Event which is triggered after the dialog is closed. |
+| `animationSettings` | Specifies the animation settings of the dialog component. |
+
 ## Add ASP.NET Core Predefined Dialogs
 
 Now, add the Syncfusion ASP.NET Core Pregefined Dialogs tag helper in `~/Pages/Index.cshtml` page.
