@@ -2,16 +2,11 @@
 @using Syncfusion.EJ2.Schedule
 
 
-    <div class="control-section">
-        <div class="content-wrapper">
-            @Html.EJS().Schedule("schedule").Width("100%").Height("550px").Readonly(true).EventSettings(e => e.DataSource(dataManager).SelectedDate(new DateTime(2017, 6, 11)).Render()
-        </div>
+<div class="control-section">
+    <div class="content-wrapper">
+        @Html.EJS().Schedule("schedule").Width("100%").Height("650px").CurrentView(View.Month).EventSettings(es => es.DataSource(dataManager =>
+            {
+                dataManager.Url("https://services.syncfusion.com/aspnet/production/api/schedule").CrossDomain(true).Adaptor("WebApiAdaptor");
+            })).Readonly(true).Render()
     </div>
-
-    <script type="text/javascript">
-        var ajax = new ej.base.Ajax('/Home/GetData', 'GET', false);
-        ajax.send();
-        ajax.onSuccess = function (data) {
-            var dataManager = value;
-        }
-    </script>
+</div>
