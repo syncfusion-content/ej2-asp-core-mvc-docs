@@ -23,7 +23,7 @@ PDF exporting provides support for exporting multiple grids on the same page. To
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/pdf-export/same-page/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Multiple.cs" %}
+{% highlight c# tabtitle="same-page.cs" %}
 {% include code-snippet/grid/pdf-export/same-page/same-page.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -34,8 +34,8 @@ PDF exporting provides support for exporting multiple grids on the same page. To
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/pdf-export/same-page/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Multiple.cs" %}
-{% include code-snippet/grid/pdf-export/same-page/multiple.cs %}
+{% highlight c# tabtitle="same-page.cs" %}
+{% include code-snippet/grid/pdf-export/same-page/same-page.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
