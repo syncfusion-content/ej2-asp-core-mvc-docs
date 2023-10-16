@@ -71,7 +71,7 @@ You can use the [`StackingGroup`](https://help.syncfusion.com/cr/aspnetcore-js2/
 
 ## Cylindrical stacked bar chart
 
-To render a cylindrical stacked bar chart, set the `ColumnFacet` property to `Cylinder` in the chart series.
+To render a cylindrical stacked bar chart, set the [`ColumnFacet`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnFacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
