@@ -25,7 +25,7 @@ This section briefly explains about how to include [ASP.NET MVC Accordion](https
 
 ## Install ASP.NET MVC package in the application
 
-To add ASP.NET MVC controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
+To add `ASP.NET MVC` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
