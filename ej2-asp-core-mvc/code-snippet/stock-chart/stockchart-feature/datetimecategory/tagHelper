@@ -1,4 +1,4 @@
-<ejs-stockchart id="stockchart" load="stockload">
+<ejs-stockchart id="stockchart" load="stockload" title="AAPL Stock Price">
     <e-stockchart-series-collection>
         <e-stockchart-series type='Line' xName="x" yName="y"> </e-stockchart-series>
     </e-stockchart-series-collection>
@@ -7,11 +7,12 @@
         <e-crosshairtooltip enable="true"></e-crosshairtooltip>
     </e-stockchart-primaryxaxis>
     <e-stockchart-crosshairsettings enable="true"></e-stockchart-crosshairsettings>
-    <e-stockchart-tooltipsettings enable="true" title="AAPL Stock Price"></e-stockchart-tooltipsettings>
+    <e-stockchart-tooltipsettings enable="true" header="AAPL Stock Price"></e-stockchart-tooltipsettings>
 </ejs-stockchart>
 
 <script>
-    var datetimeCategoryData = [
+
+    let datetimeCategoryData = [
         { x: new Date(2021, 1, 11) }, { x: new Date(2021, 1, 12) }, { x: new Date(2021, 1, 13) }, { x: new Date(2021, 1, 14) }, { x: new Date(2021, 1, 15) },
         { x: new Date(2021, 1, 19) }, { x: new Date(2021, 1, 20) }, { x: new Date(2021, 1, 21) }, { x: new Date(2021, 1, 22) }, { x: new Date(2021, 3, 1) },
         { x: new Date(2021, 3, 2) }, { x: new Date(2021, 4, 1) }, { x: new Date(2021, 4, 5) }, { x: new Date(2021, 4, 6) }, { x: new Date(2021, 4, 7) },
@@ -26,18 +27,24 @@
     function stockload(args) {
         let series2 = [];
         let point2;
-        for (var i = 1; i < 46; i++) {
+        for (var i = 0; i < 46; i++) {
             point2 = {
-                x: datetimeCategoryData[i],
-                y: parseInt((Math.floor(Math.random() * (130 - 120 + 1)) + 120).toString(), 10),
-                High: parseInt((Math.floor(Math.random() * (92 - 88 + 1)) + 88).toString(), 10),
-                Low: parseInt((Math.floor(Math.random() * (86 - 76 + 1)) + 76).toString(), 10),
-                Open: parseInt((Math.floor(Math.random() * (85 - 75 + 1)) + 75).toString(), 10),
-                Close: parseInt((Math.floor(Math.random() * (90 - 85 + 1)) + 85).toString(), 10),
-                Volume: parseInt((Math.floor(Math.random() * (965935749 - 660187068 + 1)) + 660187068).toString(), 10)
+                x: datetimeCategoryData[i].x,
+                y: getRandomInRange(120, 130),
+                high: getRandomInRange(88, 92),
+                low: getRandomInRange(76, 86),
+                open: getRandomInRange(75, 85),
+                close: getRandomInRange(85, 90),
+                volume: getRandomInRange(660187068, 965935749)
             };
             series2.push(point2);
         }
         args.stockChart.series[0].dataSource = series2;
     }
+    function getRandomInRange(min, max) {
+        const randomDecimal = Math.random();
+        const randomValue = randomDecimal * (max - min) + min;
+        return randomValue;
+    }
+
 </script>

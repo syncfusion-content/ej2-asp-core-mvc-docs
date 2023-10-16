@@ -42,7 +42,7 @@ To render a 100% stacked bar series, use series [`Type`](https://help.syncfusion
 
 ## 100% Cylindrical stacked bar chart
 
-To render a 100% cylindrical stacked bar chart, set the `ColumnFacet` property to `Cylinder` in the chart series.
+To render a 100% cylindrical stacked bar chart, set the [`ColumnFacet`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnFacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
