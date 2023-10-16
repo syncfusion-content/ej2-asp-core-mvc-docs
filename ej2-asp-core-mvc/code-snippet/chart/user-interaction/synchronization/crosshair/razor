@@ -22,7 +22,6 @@
                 ).TitleStyle(tl => tl.TextAlignment(Syncfusion.EJ2.Charts.Alignment.Near)
                 ).Crosshair(cr => cr.LineType(Syncfusion.EJ2.Charts.LineType.Vertical).Enable(true).DashArray("2,2")
                 ).Title("US to INR").Load("load").ChartMouseMove("chartMouseMove2").ChartMouseLeave("chartMouseLeave2").ChartMouseUp("chartMouseUp2").Render()
-            </div>
         </div>
     </div>
 </div>
@@ -51,7 +50,7 @@
         }
     }
 
-    function chartMouseMove4(args) {
+    function chartMouseMove2(args) {
         chart1 = document.getElementById('lineContainer1').ej2_instances[0];
         chart2 = document.getElementById('lineContainer2').ej2_instances[0];
         if ((!ej.base.Browser.isDevice && !chart2.isTouch && !chart2.isChartDrag) || chart2.startMove) {
@@ -65,7 +64,7 @@
         chart2.hideCrosshair();
     }
 
-    function chartMouseLeave4(args) {
+    function chartMouseLeave2(args) {
         chart1 = document.getElementById('lineContainer1').ej2_instances[0];
         chart1.hideCrosshair();
     }
@@ -78,7 +77,7 @@
         }
     }
 
-    function chartMouseUp4(args) {
+    function chartMouseUp2(args) {
         chart1 = document.getElementById('lineContainer1').ej2_instances[0];
         chart2 = document.getElementById('lineContainer2').ej2_instances[0];
         if (ej.base.Browser.isDevice && chart2.startMove) {

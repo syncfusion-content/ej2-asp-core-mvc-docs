@@ -1,4 +1,4 @@
-<ejs-chart id="container" title="Mobile Game Market by Country">
+<ejs-chart id="container">
     <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" interval="1"
         title=Years></e-chart-primaryxaxis>
     <e-chart-primaryyaxis title="Sales in Billions" minimum="0" maximum="700" interval="100" labelFormat="{value}B">
