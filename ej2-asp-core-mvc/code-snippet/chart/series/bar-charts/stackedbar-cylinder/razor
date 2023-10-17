@@ -1,4 +1,4 @@
-@Html.EJS().Charts("container").Series(series =>
+@(Html.EJS().Chart("container").Series(series =>
    {
       series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingBar).  
       XName("x").
@@ -19,4 +19,4 @@
       ColumnFacet(Syncfusion.EJ2.Charts.ShapeType.Cylinder).
       Add();
    })
-   .Render()
+   .Render())

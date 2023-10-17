@@ -124,7 +124,7 @@ The data labels can be animated during the initial rendering of the Maps. This c
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Maps with Data Label Animation](./images/data-label-animation.gif)
+![ASP.NET Core Maps with Data Label Animation](./images/Datalabel/data-label-animation.gif)
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -139,7 +139,7 @@ The data labels can be animated during the initial rendering of the Maps. This c
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Maps with Data Label Animation](./images/data-label-animation.gif)
+![ASP.NET MVC Maps with Data Label Animation](./images/Datalabel/data-label-animation.gif)
 
 {% endif %}
 

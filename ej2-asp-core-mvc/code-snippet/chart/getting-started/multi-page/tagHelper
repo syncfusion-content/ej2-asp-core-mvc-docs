@@ -45,6 +45,6 @@
         var chart1 = document.getElementById('container1').ej2_instances[0];
         var chart2 = document.getElementById('container2').ej2_instances[0];
         var chart3 = document.getElementById('container3').ej2_instances[0];
-        chart.exportModule.export('PDF', 'Chart', null, [chart1, chart2, chart3], null, null, true, undefined, undefined, true);
+        chart1.exportModule.export('PDF', 'Chart', null, [chart1, chart2, chart3], null, null, true, undefined, undefined, true);
     };
 </script>
