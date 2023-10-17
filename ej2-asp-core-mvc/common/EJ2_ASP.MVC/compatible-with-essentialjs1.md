@@ -16,7 +16,7 @@ This documentation explains how to render  Essential JS 1 and Essential JS 2 Syn
 
 You can create Essential JS 1 and Essential JS 2 controls using the following links:
 
-Getting started for [`EJ2 ASPMVC control`](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc/)
+Getting started for [`EJ2 ASPMVC control`](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc)
 
 Getting started for [`EJ1 ASPMVC control`](https://help.syncfusion.com/aspnetmvc/grid/getting-started)
 
