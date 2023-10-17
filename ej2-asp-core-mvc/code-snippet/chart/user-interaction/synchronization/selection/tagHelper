@@ -42,7 +42,7 @@
                     <e-chartarea-border width="0"></e-chartarea-border>
                 </e-chart-chartarea>
                 <e-series-collection>
-                    <e-series width="2" opacity="0.6" xName="USD" yName="INR"
+                    <e-series width="2" xName="USD" yName="INR"
                         type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline">
                         <e-series-border width="2"></e-series-border>
                     </e-series>
