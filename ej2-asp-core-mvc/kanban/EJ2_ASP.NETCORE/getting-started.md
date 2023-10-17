@@ -75,7 +75,7 @@ In this getting started walk-through, the required scripts are referred using CD
 
 ## Register Syncfusion Script Manager
 
-Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -121,31 +121,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 To populate the empty Kanban with cards, define the list or remote data using the `dataSource` property. To define `dataSource`, the mandatory fields in the list should be relevant to `keyField`. In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-<!-- {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/populating-cards/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class KanbanDataModels
-{
-    public string Id { get; set; }
-    public string Title { get; set; }
-    public string Status { get; set; }
-    public string Summary { get; set; }
-    public string Type { get; set; }
-    public string Priority { get; set; }
-    public string Tags { get; set; }
-    public Double Estimate { get; set; }
-    public string Assignee { get; set; }
-    public int RankId { get; set; }
-    public string Color { get; set; }        
-}
-{% endhighlight %}
-{% endtabs %} -->
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -182,7 +158,7 @@ public class KanbanDataModels
     public Double Estimate { get; set; }
     public string Assignee { get; set; }
     public int RankId { get; set; }
-    public string Color { get; set; }        
+    public string Color { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
