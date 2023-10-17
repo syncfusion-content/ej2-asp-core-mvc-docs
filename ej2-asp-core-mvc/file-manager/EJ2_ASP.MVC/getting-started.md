@@ -29,7 +29,7 @@ Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.
 
 N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-N> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
+N> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it.
 
 ## Add namespace
 
@@ -75,7 +75,7 @@ In this getting started walk-through, the required scripts are referred using CD
 
 ## Register Syncfusion Script Manager
 
-Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows. 
+Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -216,9 +216,6 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-<!-- {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/overview/razor %}
-{% endhighlight %} -->
 {% highlight c# tabtitle="HomeController.cs" %}
 {% include code-snippet/file-manager/overview/HomeController_mvc.cs %}
 {% endhighlight %}
