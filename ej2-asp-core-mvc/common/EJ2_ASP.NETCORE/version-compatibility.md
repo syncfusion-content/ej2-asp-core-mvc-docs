@@ -40,5 +40,5 @@ For example, if the release a package version is `23.1.36`, the version number i
 
 ## See also
 
-* [Syncfusion Product release lifecycle](https://www.syncfusion.com/support/product-lifecycle/)
+* [Syncfusion Product release lifecycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 * [.NET and .NET Core release lifecycle](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core)
