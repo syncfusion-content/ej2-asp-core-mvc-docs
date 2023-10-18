@@ -11,7 +11,7 @@ documentation: ug
 
 # Enable or disable items
 
-To enable or disable items in the list box, [`enableItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~EnableItems.html) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items are disabled by default and by clicking `Enable Items` buttons, the disabled items will be enabled.
+To enable or disable items in the list box, [`enableItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items are disabled by default and by clicking `Enable Items` buttons, the disabled items will be enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
