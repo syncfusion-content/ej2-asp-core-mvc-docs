@@ -40,7 +40,7 @@ N> Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nu
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
