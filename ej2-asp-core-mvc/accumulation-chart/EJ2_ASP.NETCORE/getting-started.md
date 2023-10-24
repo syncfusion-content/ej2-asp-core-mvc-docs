@@ -83,10 +83,11 @@ Also, register the script manager <ejs-script> at the end of `<body>` in the ASP
 {% endtabs %}
 
 N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls.
+N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
-## Add ASP.NET Core AccumulationChart Control
+## Add ASP.NET Core Accumulation Chart Control
 
-Now, add the Syncfusion ASP.NET Core AccumulationChart tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Accumulation Chart tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -137,7 +138,7 @@ public class PieChartData
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core AccumulationChart control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Accumulation Chart control will be rendered in the default web browser.
 
 ![ASP.NET Core AccumulationChart Control](images/accumulation-chart-component.png)
 
