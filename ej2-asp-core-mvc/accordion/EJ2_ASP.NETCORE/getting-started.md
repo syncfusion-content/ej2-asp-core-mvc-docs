@@ -52,7 +52,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight C# tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
@@ -67,7 +67,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 Also, register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
 
 {% tabs %}
-{% highlight C# tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <body>
     ...
