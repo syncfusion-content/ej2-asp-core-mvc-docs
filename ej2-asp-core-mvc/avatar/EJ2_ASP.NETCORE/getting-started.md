@@ -28,7 +28,7 @@ This section briefly explains about how to include [ASP.NET Core Avatar](https:/
 Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight c# tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
