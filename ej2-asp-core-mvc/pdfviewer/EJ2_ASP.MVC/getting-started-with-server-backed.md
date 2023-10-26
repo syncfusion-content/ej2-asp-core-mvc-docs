@@ -8,7 +8,6 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-
 # Getting Started with ASP.NET MVC PDF Viewer Control
 
 The [ASP.NET MVC PDF Viewer](https://www.syncfusion.com/aspnet-mvc-ui-controls/pdf-viewer) control is used to viewing and printing PDF files in any web application. It provides the best viewing experience available with core interactions such as zooming, scrolling, text searching, text selection, and text copying. Thumbnail, bookmark, hyperlink and table of contents support provides easy navigation within and outside the PDF files. 
@@ -400,6 +399,16 @@ namespace GettingStartedMVC.Controllers
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC PDF Viewer control will be rendered in the default web browser.
 
 ![ASP.NET MVC PDF Viewer Control](AspNetMVC_Images/pdfviewer-control.png)
+
+N> We have provided the support to dynamically change the `serviceURL`. So, after changing the `serviceURL` dynamically, you need invoke the `pdfViewer.dataBind()` method to update the `serviceURL` quickly. This will effectively change the `serviceURL` dynamically. Ensure that this step is performed after version 23.1.36.
+    string serviceUrl = VirtualPathUtility.ToAbsolute("~/Home/");
+    function load() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.serviceUrl = '@serviceUrl'
+        pdfViewer.documentPath = "https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf";
+        pdfViewer.dataBind();
+        pdfViewer.load(pdfViewer.documentPath, null);
+    }
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20MVC%20Razor%20Examples).
 

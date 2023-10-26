@@ -17,7 +17,7 @@ public IActionResult Index()
 }
 public class MultiExportChartData
 {
-    public string x;
+    public DateTime x;
     public double y;
     public double y1;
     public double y2;

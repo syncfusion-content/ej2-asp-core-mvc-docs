@@ -12,10 +12,11 @@
     </e-series-collection>
 </ejs-chart>
 <div>
-    <ejs-button id="button" content="Export" isPrimary="true" style="float: right"></ejs-button>
+    <ejs-button id="button" content="Export" isPrimary="true" style="float: left"></ejs-button>
 </div>
 <script>
     document.getElementById('button').onclick = () => {
+        var chart = document.getElementById('container').ej2_instances[0];
         const header = {
             content: 'Chart Header',
             fontSize: 15
