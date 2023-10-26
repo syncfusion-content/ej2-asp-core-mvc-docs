@@ -1,0 +1,40 @@
+<div class="control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        @Html.EJS().FileManager("filemanager").View(Syncfusion.EJ2.FileManager.ViewType.Details).AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+            Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).DetailsViewSettings(new Syncfusion.EJ2.FileManager.FileManagerDetailsViewSettings()
+        {
+            Columns = new List<Syncfusion.EJ2.FileManager.FileManagerColumn>
+            {
+                new Syncfusion.EJ2.FileManager.FileManagerColumn
+                {
+                    Field = "name",
+                    HeaderText = "File Name",
+                    Width = "auto",
+                    Template = "${name}",
+                    CustomAttributes = new Dictionary<string, string>
+                    {
+                        { "class", "e-fe-grid-name" }
+                    }
+                },
+                new Syncfusion.EJ2.FileManager.FileManagerColumn
+                {
+                    Field = "size",
+                    HeaderText = "File Size",
+                    Template = "${size}"
+                },
+                new Syncfusion.EJ2.FileManager.FileManagerColumn
+                {
+                    Field = "_fm_modified",
+                    HeaderText = "Date Modified",
+                }
+            }
+        }).Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>
