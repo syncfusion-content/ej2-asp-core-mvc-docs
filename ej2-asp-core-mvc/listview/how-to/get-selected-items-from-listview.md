@@ -14,7 +14,7 @@ Single or many items can be selected by users in the ListView component. An API 
 
 **`getSelectedItems` method**
 
-This is used to get the details of the currently selected item from the list items. It returns the [`SelectedItem`](https://ej2.syncfusion.com/documentation/api/list-view/selectedItem/) | [`SelectedCollection`](https://ej2.syncfusion.com/documentation/api/list-view/selectedCollection/)
+This is used to get the details of the currently selected item from the list items. It returns the [`SelectedItem`](https://ej2.syncfusion.com/documentation/api/list-view/selecteditem/) | [`SelectedCollection`](https://ej2.syncfusion.com/documentation/api/list-view/selectedcollection/)
 
 The `getSelectedItems` method returns the following items from the selected list items.
 
