@@ -18,17 +18,49 @@ The following steps are used to delete a specific annotation from PDF Document.
 
 **Step 2:** Use the following code snippet to delete a specific annotation using deleteAnnotationById() method.
 
-```html
+
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 
 <button onclick="deleteAnnotationbyId()">deleteAnnotationbyId</button>
 
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer 
+        id="pdfviewer"
+        documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+
 <script>
     function deleteAnnotationbyId() {
-        var viewer = document.getElementById('pdfviewer1').ej2_instances[0];
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         viewer.annotationModule.deleteAnnotationById(viewer.annotationCollection[0].annotationId);
     }
 </script>
 
-```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
 
-Download the sample [how to delete a specific annotation using deleteAnnotationById](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EJ2PDFViewer_Core3.0-586159002)
+<button onclick="deleteAnnotationbyId()">deleteAnnotationbyId</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer 
+        id="pdfviewer"
+        serviceUrl='/Index'
+        documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    function deleteAnnotationbyId() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.annotationModule.deleteAnnotationById(viewer.annotationCollection[0].annotationId);
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+
+[View sample in GitHub]()

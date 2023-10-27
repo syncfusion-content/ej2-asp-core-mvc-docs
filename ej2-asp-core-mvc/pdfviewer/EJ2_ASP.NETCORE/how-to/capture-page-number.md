@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Capture the current page number being viewed
 
 The PDF Viewer server library allows you to capture the page number that is currently being viewed in the load PDF document. Use the [**currentPageNumber**](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/#currentpagenumber) property to get the page number which is currently in view.
@@ -19,8 +18,18 @@ The following steps are used to capture the current page number.
 
 **Step 2:** Use the following code snippet to Capture the current page number being viewed.
 
-```html
+
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
 <button onclick="currentPage()">currentpage</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer 
+        id="pdfviewer"
+        documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
 
 <script>
     function currentPage() {
@@ -29,6 +38,29 @@ The following steps are used to capture the current page number.
         alert("current page number is" + pageNumber);
     }
 </script>
-```
 
-Download the sample [how to capture the current page number being viewed](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EJ2PDFViewer_Core3.0-928043304.zip)
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+<button onclick="currentPage()">currentpage</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer 
+        id="pdfviewer"
+        documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+        serviceUrl='/Index'>
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    function currentPage() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var pageNumber = viewer.currentPageNumber;
+        alert("current page number is" + pageNumber);
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+[View sample in GitHub]()

@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Import and Export annotation as object
 
 The PDF Viewer library allows you to import annotations from objects or streams instead of loading it as a file. To import such annotation objects, the PDF Viewer control must export the PDF annotations as objects using the [**ExportAnnotationsAsObject()**](https://ej2.syncfusion.com/documentation/api/pdfviewer/#exportannotationsasobject) method. Only the annotations objects that are exported from the PDF Viewer can be imported.
@@ -19,25 +18,79 @@ The following steps are used to import and export annotation as object.
 
 **Step 2:** Use the following code snippet to perform import and export annotation.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+@page "{handler?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
 <button type="button" onclick="exportAnnotation()">Export Annoatation</button>
 <button type="button" onclick="importAnnotation()">Import Annoatation</button>
 
-<script>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script type ="text/javascript">
+
     var exportObject;
     //Export annotation as object.
     function exportAnnotation() {
-        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         viewer.exportAnnotationsAsObject().then(function (value) {
             exportObject = value
         });
     }
     //Import annotation that are exported as object.
     function importAnnotation() {
-        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         viewer.importAnnotation(JSON.parse(exportObject));
     }
 </script>
-```
 
-Find the Sample, [how to import and export annotation as object](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EJ2CoreSample2013977937.zip)
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+@page "{handler?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<button type="button" onclick="exportAnnotation()">Export Annoatation</button>
+<button type="button" onclick="importAnnotation()">Import Annoatation</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl= "/Index"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script type ="text/javascript">
+
+    var exportObject;
+    //Export annotation as object.
+    function exportAnnotation() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.exportAnnotationsAsObject().then(function (value) {
+            exportObject = value
+        });
+    }
+    //Import annotation that are exported as object.
+    function importAnnotation() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.importAnnotation(JSON.parse(exportObject));
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+[View sample in GitHub]()

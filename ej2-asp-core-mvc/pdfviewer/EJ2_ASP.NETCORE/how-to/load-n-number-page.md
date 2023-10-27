@@ -16,7 +16,8 @@ To utilize this capability in Syncfusion PDF Viewer, use the [initialRenderPages
 
 Using the `initialRenderPages` property judiciously is advisable, especially when dealing with larger documents. It is more suitable for scenarios where a smaller range of pages, such as 10-20, can be loaded to provide a quick initial view of the document.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
 
 @{
     ViewData["Title"] = "Home page";
@@ -24,10 +25,33 @@ Using the `initialRenderPages` property judiciously is advisable, especially whe
 }
 
 <div class="text-center">
-    <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/Index" initialRenderPages="@InitialRenderPages" documentPath="Data/PDF_Succinctly.pdf">
+    <ejs-pdfviewer 
+        id="pdfviewer" 
+        style="height:600px" 
+        initialRenderPages="@InitialRenderPages" 
+        documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 
-```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+@{
+    ViewData["Title"] = "Home page";
+    double InitialRenderPages = 5;
+}
+
+<div class="text-center">
+    <ejs-pdfviewer 
+        id="pdfviewer" 
+        style="height:600px" 
+        serviceUrl="/Index" 
+        initialRenderPages="@InitialRenderPages" 
+        documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+{% endhighlight %}
+{% endtabs %}
+
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Load%20N%20no%20of%20pages)
