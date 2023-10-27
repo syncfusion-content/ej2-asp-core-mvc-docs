@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Calendar Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential ASP.NET MVC Calendar control, it's elements and more.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -19,7 +19,7 @@ This section briefly explains about how to include [ASP.NET MVC Calendar](https:
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
 
 * [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
