@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Strongly Typed Html Helper in ##Platform_Name## Common Component
-description: Learn here all about Strongly Typed Html Helper in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Strongly typed html helper in .NET MVC Common Component | Syncfusion
+description: Learn here all about strongly typed html helper in Syncfusion Essential ASP.NET MVC Common component, it's elements and more details.
 platform: ej2-asp-core-mvc
 control: Strongly Typed Html Helper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-# Strongly-Typed HTML Helper
+# Strongly typed HTML helper in ASP.NET MVC Common Component
 
 The Syncfusion editor controls supports the strongly typed HTML helpers represented by lambda expressions that have the model or template passed into the view. The Extension method is used to get a value from the model.
 
@@ -71,7 +71,7 @@ public ActionResult Index()
 </div>
 ```
 
-![aspnetmvc4 numeric textbox control](images/numeric-textbox.png)
+![ASP.NET MVC Common numeric textbox control](images/asp-net-mvc-common-numeric-textbox.png)
 
 The following steps explain how to get the values by using the Scaffolding methods in Post back.
 
@@ -91,7 +91,7 @@ public ActionResult Index(EditorValue model)
 
 On clicking the button, the Post method will be triggered. In that, the selected value will be obtained as follows.
 
-![aspnetmvc4 numeric value](images/numeric-value.png)
+![ASP.NET MVC Common numeric value](images/asp-net-mvc-common-numeric-value.png)
 
 
 ## Server Side Validation
@@ -137,4 +137,4 @@ public class EditorValue
 
 When you press the “POST” button on this page then it will post the data to the server and the code written with in EditorFor action will validate the NumericTextBox value by checking the ModelState.IsValid property. If the NumericTextBox value is not selected, the ModelState.IsValid will return false and display error message.
 
-![aspnetmvc4 numeric required](images/numeric-required.png)
+![ASP.NET MVC Common numeric required](images/asp-net-mvc-common-numeric-required.png)
