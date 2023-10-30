@@ -75,7 +75,7 @@ In this getting started walk-through, the required scripts are referred using CD
 
 ## Register Syncfusion Script Manager
 
-Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -94,7 +94,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 
 Now, add the Syncfusion ASP.NET Core Uploader tag helper in `~/Pages/Index.cshtml` page.
 
-N> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests. 
+N> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests.
 Hence, use the third party `promise` library like blue-bird to use the uploader in Internet Explorer.
 
 {% if page.publishingplatform == "aspnet-core" %}
