@@ -35,7 +35,7 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 * **Show/Hide toolbar using enableToolbar API as in the following code snippet**
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -46,7 +46,7 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -63,7 +63,7 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 * **Show/Hide toolbar using showToolbar as in the following code snippet**
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -81,7 +81,7 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -109,7 +109,7 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 * **Show/Hide toolbaritem using toolbarSettings as in the following code snippet.**
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %} 
+{% highlight cshtml tabtitle="Standalone" %} 
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -121,7 +121,7 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -139,7 +139,7 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 * **Show/Hide toolbaritem using showToolbaritem as in the following code snippet**
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -157,7 +157,7 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
