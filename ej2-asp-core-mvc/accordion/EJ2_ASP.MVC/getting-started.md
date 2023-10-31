@@ -53,7 +53,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-```
+```cshtml
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
@@ -65,7 +65,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 
 Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
 
-```
+```cshtml
 
 <body>
 ...
@@ -109,7 +109,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 You can bind any data in Accordion items, by simply using the content template property in ASP.NET Accordion. Accordion is already provided with the content template support and hence this support can be utilized to load the other HTML elements or as per your requirement.
 
-In the below demo, the Accordion items are given with [chart](../chart/getting-started), [grid](../grid/getting-started-mvc), [calender](../calendar/getting-started) as their content using the content template.
+In the below demo, the Accordion items are given with [Chart](../chart/getting-started), [Grid](../grid/getting-started-mvc), [Calender](../calendar/getting-started) as their content using the content template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -10,7 +10,7 @@
         @<div class="e-accordion-container">
             <div>
                 <div>
-                    <div> Chart </div>
+                    <div> ASP.NET MVC Chart </div>
                 </div>
                 <div>
                     <div>
@@ -27,7 +27,7 @@
             </div>
             <div>
                 <div>
-                    <div> Grid </div>
+                    <div> ASP.NET MVC Grid </div>
                 </div>
                 <div>
                     <div>
@@ -51,11 +51,11 @@
             </div>
             <div>
                 <div>
-                    <div> Calendar </div>
+                    <div> ASP.NET MVC Calendar </div>
                 </div>
                 <div>
                     <div>
-                        @Html.EJS().Calendar("calnder").Render()
+                        @Html.EJS().Calendar("calendar").Render()
                     </div>
                 </div>
             </div>
