@@ -13,7 +13,7 @@ documentation: ug
 The Text Search option in PDF Viewer is used to find and highlight the text content from the document. You can enable/disable the text search using the following code snippet.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -24,7 +24,7 @@ The Text Search option in PDF Viewer is used to find and highlight the text cont
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
