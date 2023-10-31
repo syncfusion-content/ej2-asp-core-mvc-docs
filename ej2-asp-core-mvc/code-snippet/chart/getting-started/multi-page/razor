@@ -8,13 +8,13 @@
 {
   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).Width(2).XName("x").YName("y1").DataSource(ViewBag.dataSource).Add();
   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).MajorGridLines(mg=>mg.Width(0))
-  ).PrimaryYAxis(py => py.Title("Million Metric Tons").MajorTickLines(mt=>mt.Width(0)).Minimum(0).Maximum(20000).Interval(4)
+  ).PrimaryYAxis(py => py.Title("Million Metric Tons").MajorTickLines(mt=>mt.Width(0)).Minimum(0).Maximum(20).Interval(4)
   ).Title("Steel Production").Render()
 @Html.EJS().Chart("container3").Series(series =>
 {
   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Spline).Width(2).XName("x").YName("y2").DataSource(ViewBag.dataSource).Add();
   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).MajorGridLines(mg=>mg.Width(0))
-  ).PrimaryYAxis(py => py.Title("Million Metric Tons").MajorTickLines(mt=>mt.Width(0)).Minimum(0).Maximum(20000).Interval(4)
+  ).PrimaryYAxis(py => py.Title("Million Metric Tons").MajorTickLines(mt=>mt.Width(0)).Minimum(0).Maximum(20).Interval(4)
   ).Title("Annual Growth of Crude Steel Production").Render() 
 <div>      
   @Html.EJS().Button("togglebtn").IsPrimary(true).Content("Export").Render()       
@@ -24,6 +24,6 @@
       var chart1 = document.getElementById('container1').ej2_instances[0];
       var chart2 = document.getElementById('container2').ej2_instances[0];
       var chart3 = document.getElementById('container3').ej2_instances[0];
-      chart.exportModule.export('PDF', 'Chart', null, [chart1, chart2, chart3], null, null, true, undefined, undefined, true);
+      chart1.exportModule.export('PDF', 'Chart', null, [chart1, chart2, chart3], null, null, true, undefined, undefined, true);
     };
 </script>

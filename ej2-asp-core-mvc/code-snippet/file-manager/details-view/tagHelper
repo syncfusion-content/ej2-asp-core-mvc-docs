@@ -1,0 +1,26 @@
+@{
+    var customAttribute = new Dictionary<string, string>
+    {
+        { "class", "e-fe-grid-name" }
+    };
+}
+<div class=" control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        <ejs-filemanager id="filemanager" view="Details">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+            <e-filemanager-detailsviewsettings>
+                <e-detailsviewsettings-columns>
+                    <e-detailsviewsettings-column field="name" headerText="File Name" minWidth="120" width="auto" customAttributes="customAttribute" template="${name}"></e-detailsviewsettings-column>
+                    <e-detailsviewsettings-column field="size" headerText="File Size" minWidth="120" width="110" template="${size}"></e-detailsviewsettings-column>
+                    <e-detailsviewsettings-column field="_fm_modified" headerText="Date Modified" minWidth="50" width="190"></e-detailsviewsettings-column>
+                </e-detailsviewsettings-columns>
+            </e-filemanager-detailsviewsettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>

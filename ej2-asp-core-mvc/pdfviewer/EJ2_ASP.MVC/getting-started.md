@@ -8,7 +8,6 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-
 # Getting Started with ASP.NET MVC Standalone PDF Viewer Control
 
 The [ASP.NET MVC PDF Viewer](https://www.syncfusion.com/aspnet-mvc-ui-controls/pdf-viewer) control is used to viewing and printing PDF files in any web application. It provides the best viewing experience available with core interactions such as zooming, scrolling, text searching, text selection, and text copying. Thumbnail, bookmark, hyperlink and table of contents support provides easy navigation within and outside the PDF files. 
@@ -33,7 +32,6 @@ This section briefly explains about how to integrate ASP.NET MVC PDF Viewer cont
 
 To add .NET PDF Viewer control, the following NuGet packages need to be installed in your ASP.NET MVC application.
 
-* [Syncfusion.EJ2.PdfViewer.AspNet.Mvc5](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Mvc5/)
 * [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5)
 
 N> If you creating ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
