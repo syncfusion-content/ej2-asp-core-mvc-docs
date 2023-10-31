@@ -96,7 +96,7 @@ Now, add the Syncfusion ASP.NET MVC Chart control in `~/Home/Index.cshtml` page.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<ejs-chart id="container"></ejs-chart>
+@Html.EJS().Chart("container").Render()
 
 {% endhighlight %}
 {% endtabs %}
