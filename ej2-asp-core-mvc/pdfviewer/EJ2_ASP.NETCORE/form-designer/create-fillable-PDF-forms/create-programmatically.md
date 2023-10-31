@@ -26,7 +26,7 @@ The PDF Viewer control provides the option to add, edit and delete the Form Fiel
 Using addFormField method, the form fields can be added to the PDF document programmatically. We need to pass two parameters in this method. They are Form Field Type and Properties of Form Field Type. To add form field programmatically, Use the following code.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -46,7 +46,7 @@ Using addFormField method, the form fields can be added to the PDF document prog
     }
 </script>
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -74,7 +74,7 @@ Using addFormField method, the form fields can be added to the PDF document prog
 Using updateFormField method, Form Field can be updated programmatically. We should get the Form Field object/Id from FormFieldCollections property that you would like to edit and pass it as a parameter to updateFormField method. The second parameter should be the properties that you would like to update for Form Field programmatically. We have updated the value and background Color properties of Textbox Form Field.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -96,7 +96,7 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -126,7 +126,7 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 Using deleteFormField method, the form field can be deleted programmatically. We should retrieve the Form Field object/Id from FormFieldCollections property that you would like to delete and pass it as a parameter to deleteFormField method. To delete a Form Field programmatically, use the following code.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -147,7 +147,7 @@ Using deleteFormField method, the form field can be deleted programmatically. We
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -181,7 +181,7 @@ When the download icon is selected on the toolbar, the Form Fields will be saved
 You can invoke download action using following code snippet.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
@@ -197,7 +197,7 @@ You can invoke download action using following code snippet.
     }
 </script>
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -228,7 +228,7 @@ When the print icon is selected on the toolbar, the PDF document will be printed
 You can invoke print action using the following code snippet.,
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -247,7 +247,7 @@ You can invoke print action using the following code snippet.,
 
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -281,7 +281,7 @@ The form fields in the PDF Document will be validated when the `enableFormFields
 Add the following code snippet to validate the form fields,
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -298,7 +298,7 @@ Add the following code snippet to validate the form fields,
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -516,7 +516,7 @@ Using the `updateFormField` method, the form fields can be updated programmatica
 The following code example explains how to update the signature field properties on a button click.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -546,7 +546,7 @@ The following code example explains how to update the signature field properties
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -583,7 +583,7 @@ The following code example explains how to update the signature field properties
 The following code example explains how to update the properties of the signature field added to the document from the form designer toolbar.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -629,7 +629,7 @@ The following code example explains how to update the properties of the signatur
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -723,7 +723,7 @@ Using the `updateFormField` method, the form fields can be updated programmatica
 The following code example explains how to update the Textbox field properties on a button click.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -764,7 +764,7 @@ The following code example explains how to update the Textbox field properties o
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -810,7 +810,7 @@ The following code example explains how to update the Textbox field properties o
 The following code example explains how to update the properties of the textbox field added to the document from the form designer toolbar.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -865,7 +865,7 @@ The following code example explains how to update the properties of the textbox 
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -932,7 +932,7 @@ Using the `updateFormField` method, the form fields can be updated programmatica
 The following code example explains how to update the Password field properties on a button click.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -972,7 +972,7 @@ The following code example explains how to update the Password field properties 
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -1019,7 +1019,7 @@ The following code example explains how to update the Password field properties 
 The following code example explains how to update the properties of the password field added to the document from the form designer toolbar.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -1072,7 +1072,7 @@ The following code example explains how to update the properties of the password
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -1138,7 +1138,7 @@ Using the `updateFormField` method, the form fields can be updated programmatica
 The following code example explains how to update the CheckBox field properties on a button click.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -1171,7 +1171,7 @@ The following code example explains how to update the CheckBox field properties 
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -1210,7 +1210,7 @@ The following code example explains how to update the CheckBox field properties 
 The following code example explains how to update the properties of the CheckBox field added to the document from the form designer toolbar.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -1253,7 +1253,7 @@ The following code example explains how to update the properties of the CheckBox
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -1308,7 +1308,7 @@ Using the `updateFormField` method, the form fields can be updated programmatica
 The following code example explains how to update the RadioButton field properties on a button click.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -1341,7 +1341,7 @@ The following code example explains how to update the RadioButton field properti
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -1381,7 +1381,7 @@ The following code example explains how to update the RadioButton field properti
 The following code example explains how to update the properties of the RadioButton field added to the document from the form designer toolbar.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -1424,7 +1424,7 @@ The following code example explains how to update the properties of the RadioBut
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -1480,7 +1480,7 @@ Using the `updateFormField` method, the form fields can be updated programmatica
 The following code example explains how to update the ListBox field properties on a button click.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -1523,7 +1523,7 @@ The following code example explains how to update the ListBox field properties o
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -1573,7 +1573,7 @@ The following code example explains how to update the ListBox field properties o
 The following code example explains how to update the properties of the ListBox field added to the document from the form designer toolbar.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -1631,7 +1631,7 @@ The following code example explains how to update the properties of the ListBox 
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -1702,7 +1702,7 @@ Using the `updateFormField` method, the form fields can be updated programmatica
 The following code example explains how to update the DropDown field properties on a button click.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -1745,7 +1745,7 @@ The following code example explains how to update the DropDown field properties 
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -1794,7 +1794,7 @@ The following code example explains how to update the DropDown field properties 
 The following code example explains how to update the properties of the dropdown field added to the document from the form designer toolbar.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -1852,7 +1852,7 @@ The following code example explains how to update the properties of the dropdown
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"

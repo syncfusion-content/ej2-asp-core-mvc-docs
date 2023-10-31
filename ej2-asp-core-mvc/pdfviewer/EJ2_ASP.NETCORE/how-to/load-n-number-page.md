@@ -17,7 +17,7 @@ To utilize this capability in Syncfusion PDF Viewer, use the [initialRenderPages
 Using the `initialRenderPages` property judiciously is advisable, especially when dealing with larger documents. It is more suitable for scenarios where a smaller range of pages, such as 10-20, can be loaded to provide a quick initial view of the document.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 @{
     ViewData["Title"] = "Home page";
@@ -34,7 +34,7 @@ Using the `initialRenderPages` property judiciously is advisable, especially whe
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 @{
     ViewData["Title"] = "Home page";

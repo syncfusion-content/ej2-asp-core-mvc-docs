@@ -18,9 +18,8 @@ The following steps are used to load the PDF document dynamically.
 
 **Step 2:** Use the following code snippet to load PDF document using base64 string.
 
-
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button type="button" onclick="load1()">LoadDocumentFromBase64</button>
 
@@ -41,7 +40,7 @@ The following steps are used to load the PDF document dynamically.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button type="button" onclick="load1()">LoadDocumentFromBase64</button>
 
@@ -69,9 +68,8 @@ The following steps are used to load the PDF document dynamically.
 
 **Step 3:** Use the following code snippet to load PDF document using document name.
 
-
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button type="button" onclick="load2()">LoadDocument</button>
 
@@ -92,7 +90,7 @@ The following steps are used to load the PDF document dynamically.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cs tabtitle="Server-Backed" %}
 
 <button type="button" onclick="load2()">LoadDocument</button>
 
@@ -116,4 +114,5 @@ The following steps are used to load the PDF document dynamically.
 {% endhighlight %}
 {% endtabs %}
 
-[View sample in GitHub]()
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Load%20PDF%20documents%20dynamically)

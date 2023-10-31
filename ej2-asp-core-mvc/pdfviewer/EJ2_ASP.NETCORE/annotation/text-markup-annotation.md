@@ -40,7 +40,7 @@ In the pan mode, if the highlight mode is entered, the PDF Viewer control will s
 Refer to the following code sample to switch to the highlight mode.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Highlight</button>
@@ -58,7 +58,7 @@ Refer to the following code sample to switch to the highlight mode.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Highlight</button>
@@ -82,7 +82,7 @@ Refer to the following code sample to switch to the highlight mode.
 Refer to the following code sample to switch back to normal mode from the highlight mode.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Highlight</button>
@@ -107,7 +107,7 @@ Refer to the following code sample to switch back to normal mode from the highli
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Highlight</button>
@@ -161,7 +161,7 @@ In the pan mode, if the underline mode is entered, the PDF Viewer control will s
 Refer to the following code sample to switch to the underline mode.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Underline</button>
@@ -179,7 +179,7 @@ Refer to the following code sample to switch to the underline mode.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Underline</button>
@@ -203,7 +203,7 @@ Refer to the following code sample to switch to the underline mode.
 Refer to the following code sample to switch back to normal mode from the underline mode.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Underline</button>
@@ -228,7 +228,7 @@ Refer to the following code sample to switch back to normal mode from the underl
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Underline</button>
@@ -282,7 +282,7 @@ In the pan mode, if the strikethrough mode is entered, the PDF Viewer control wi
 Refer to the following code sample to switch to the strikethrough mode.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Strikethrough</button>
@@ -300,7 +300,7 @@ Refer to the following code sample to switch to the strikethrough mode.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Strikethrough</button>
@@ -324,7 +324,7 @@ Refer to the following code sample to switch to the strikethrough mode.
 Refer to the following code sample to switch back to normal mode from the strikethrough mode.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Strikethrough</button>
@@ -349,7 +349,7 @@ Refer to the following code sample to switch back to normal mode from the strike
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <!--Element to set text markup annotation mode-->
 <button id="set" onclick="addAnnot()">Strikethrough</button>
@@ -416,7 +416,7 @@ N>After editing the default color and opacity using the Edit Color tool and Edit
 Refer to the following code sample to set the default annotation settings.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -432,7 +432,7 @@ Refer to the following code sample to set the default annotation settings.
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -469,7 +469,7 @@ The undo and redo actions can be done by the following ways:
 Refer to the following code sample for calling undo and redo actions from the client-side.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <!--Element to call undo-->
 <button id="undo" onclick="Undo()">Undo</button>
@@ -494,7 +494,7 @@ Refer to the following code sample for calling undo and redo actions from the cl
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <!--Element to call undo-->
 <button id="undo" onclick="Undo()">Undo</button>
@@ -535,7 +535,7 @@ When the print tool is selected in the toolbar, the PDF document will be printed
 The PDF Viewer control provides an option to disable the text markup annotation feature. The code sample for disabling the feature is as follows.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -546,7 +546,7 @@ The PDF Viewer control provides an option to disable the text markup annotation 
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"

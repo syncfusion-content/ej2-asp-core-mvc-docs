@@ -20,7 +20,7 @@ The following steps are used to capture the current page number.
 
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button onclick="currentPage()">currentpage</button>
 
@@ -40,7 +40,7 @@ The following steps are used to capture the current page number.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button onclick="currentPage()">currentpage</button>
 
@@ -63,4 +63,4 @@ The following steps are used to capture the current page number.
 {% endhighlight %}
 {% endtabs %}
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Capture%20the%20current%20page%20number)

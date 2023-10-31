@@ -19,7 +19,7 @@ The following steps are used to import and export annotation as object.
 **Step 2:** Use the following code snippet to perform import and export annotation.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 @page "{handler?}"
 @model IndexModel
 @{
@@ -54,7 +54,7 @@ The following steps are used to import and export annotation as object.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 @page "{handler?}"
 @model IndexModel
@@ -93,4 +93,4 @@ The following steps are used to import and export annotation as object.
 {% endhighlight %}
 {% endtabs %}
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Import%20and%20Export%20annotation%20as%20object)

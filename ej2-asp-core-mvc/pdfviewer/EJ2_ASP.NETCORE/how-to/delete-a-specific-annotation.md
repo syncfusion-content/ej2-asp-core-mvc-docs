@@ -20,7 +20,7 @@ The following steps are used to delete a specific annotation from PDF Document.
 
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button onclick="deleteAnnotationbyId()">deleteAnnotationbyId</button>
 
@@ -40,7 +40,7 @@ The following steps are used to delete a specific annotation from PDF Document.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button onclick="deleteAnnotationbyId()">deleteAnnotationbyId</button>
 
@@ -63,4 +63,4 @@ The following steps are used to delete a specific annotation from PDF Document.
 {% endtabs %}
 
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Delete%20a%20specific%20annotation%20using%20deleteAnnotationById)

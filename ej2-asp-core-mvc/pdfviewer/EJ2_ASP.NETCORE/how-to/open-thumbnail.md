@@ -19,7 +19,7 @@ The following steps are used to open the thumbnail.
 **Step 2:** Use the following code snippet to open thumbnail.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button type="button" onclick="openThumbnail()">Open Thumbnail Pane</button>
 
@@ -38,7 +38,7 @@ The following steps are used to open the thumbnail.
     }
 </script>
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button type="button" onclick="openThumbnail()">Open Thumbnail Pane</button>
 
@@ -62,4 +62,4 @@ The following steps are used to open the thumbnail.
 {% endtabs %}
 
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Open%20Thumbnail%20pane%20programmatically)

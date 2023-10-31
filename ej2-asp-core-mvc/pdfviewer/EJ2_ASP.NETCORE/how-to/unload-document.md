@@ -19,7 +19,7 @@ The following steps are used to unload the PDF document programmatically.
 **Step 2:** Add the following code snippet to perform the unload operation.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button type="button" onclick="unload()">Unload Document</button>
 
@@ -39,7 +39,7 @@ The following steps are used to unload the PDF document programmatically.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button type="button" onclick="unload()">Unload Document</button>
 
@@ -63,4 +63,4 @@ The following steps are used to unload the PDF document programmatically.
 {% endtabs %}
 
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Unload%20the%20PDF%20document%20programmatically)

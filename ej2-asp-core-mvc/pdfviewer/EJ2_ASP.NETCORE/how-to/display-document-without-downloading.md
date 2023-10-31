@@ -19,7 +19,7 @@ The following steps are used to display the downloaded without downloading in th
 **Step 2:** Use the following code snippet to Display document without downloading.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button onclick="downloadDocument()">downloadDocument</button>
 
@@ -47,7 +47,7 @@ The following steps are used to display the downloaded without downloading in th
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button onclick="downloadDocument()">downloadDocument</button>
 
@@ -77,4 +77,4 @@ The following steps are used to display the downloaded without downloading in th
 {% endhighlight %}
 {% endtabs %}
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Display%20document%20without%20downloading)
