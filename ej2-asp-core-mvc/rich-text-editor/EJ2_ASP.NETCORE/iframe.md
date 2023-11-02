@@ -100,4 +100,4 @@ Likewise, add the external script file to the `<iframe>` element using `scripts`
 
 ## See Also
 
-* [How to change the editor mode](./formation/#markdown-editor)
+* [How to change the editor mode](./formation#markdown-editor)

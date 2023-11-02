@@ -11,9 +11,9 @@ documentation: ug
 
 # Getting Started
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET MVC application to use our controls.
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your ASP.NET MVC application to use our controls.
 
-This section briefly explains how to include simple DropDownList control in your ASP.NET MVC application. You can refer to [ASP.NET MVC Getting Started documentation](../getting-started/) page for system requirements, and configure common specifications.
+This section briefly explains how to include simple DropDownList control in your ASP.NET MVC application. You can refer to [ASP.NET MVC Getting Started documentation](../getting-started) page for system requirements, and configure common specifications.
 
 ## Initialize DropDownList control to the Application
 
@@ -112,4 +112,4 @@ In the following sample, popup list's width and height are configured.
 
 ## See Also
 
-* [How to bind the data](./data-binding/)
+* [How to bind the data](./data-binding)
