@@ -19,7 +19,7 @@ This section briefly explains about how to include [ASP.NET MVC Toast](https://w
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
 
 * [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
@@ -123,8 +123,8 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 * [Real time example using Toast](https://ej2.syncfusion.com/aspnetmvc/Toast/Template#/material)
 
-* [How to close the toast with click/tap](./how-to/close-the-toast-with-click-tap/)
+* [How to close the toast with click/tap](./how-to/close-the-toast-with-click-tap)
 
-* [How to prevent duplicate toast display](./how-to/prevent-duplicate-toast-display/)
+* [How to prevent duplicate toast display](./how-to/prevent-duplicate-toast-display)
 
-* [How to show different types of toast](./how-to/show-different-types-of-toast/)
+* [How to show different types of toast](./how-to/show-different-types-of-toast)
