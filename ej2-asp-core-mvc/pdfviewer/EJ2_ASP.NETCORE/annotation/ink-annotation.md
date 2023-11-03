@@ -28,7 +28,7 @@ The ink annotations can be added to the PDF document using the annotation toolba
 Refer to the following code sample to switch to the ink annotation mode.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <!--Element to set ink annotation mode-->
 <button id="set" onclick="addAnnot()">Draw Ink</button>
@@ -46,7 +46,7 @@ Refer to the following code sample to switch to the ink annotation mode.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <!--Element to set ink annotation mode-->
 <button id="set" onclick="addAnnot()">Draw Ink</button>

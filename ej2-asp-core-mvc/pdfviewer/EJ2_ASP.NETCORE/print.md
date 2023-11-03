@@ -13,7 +13,7 @@ documentation: ug
 The PDF Viewer supports printing the loaded PDF file. You can enable/disable the print using the following code snippet.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -24,7 +24,7 @@ The PDF Viewer supports printing the loaded PDF file. You can enable/disable the
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -43,7 +43,7 @@ The PDF Viewer supports printing the loaded PDF file. You can enable/disable the
 You can invoke print action using the following code snippet.,
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -61,7 +61,7 @@ You can invoke print action using the following code snippet.,
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"

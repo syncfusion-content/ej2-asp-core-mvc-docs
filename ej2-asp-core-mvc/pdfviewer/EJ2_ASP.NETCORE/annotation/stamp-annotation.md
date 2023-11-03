@@ -58,7 +58,7 @@ After editing the default opacity using the Edit Opacity tool, they will be chan
 Refer to the following code sample to set the default sticky note annotation settings.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -70,7 +70,7 @@ Refer to the following code sample to set the default sticky note annotation set
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"

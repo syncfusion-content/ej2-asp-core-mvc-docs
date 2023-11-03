@@ -26,7 +26,7 @@ The default toolbar of PDF Viewer contains the following navigation options
 You can enable/disable page navigation option in PDF Viewer using the following code snippet.,
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -37,7 +37,7 @@ You can enable/disable page navigation option in PDF Viewer using the following 
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -60,7 +60,7 @@ The Bookmarks saved in PDF files are loaded and made ready for easy navigation.
 You can enable/disable bookmark navigation by using the following code snippet.,
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -71,7 +71,7 @@ You can enable/disable bookmark navigation by using the following code snippet.,
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -93,7 +93,7 @@ Thumbnails is the miniature representation of actual pages in PDF files. This fe
 You can enable/disable thumbnail navigation by using the following code snippet.,
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -104,7 +104,7 @@ You can enable/disable thumbnail navigation by using the following code snippet.
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -133,7 +133,7 @@ Table of contents navigation allows users to navigate to different parts of a PD
 You can enable/disable link navigation by using the following code snippet.,
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -144,7 +144,7 @@ You can enable/disable link navigation by using the following code snippet.,
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -161,7 +161,7 @@ You can enable/disable link navigation by using the following code snippet.,
 You can change the open state of the hyperlink in the PDF Viewer by using the following code snippet,
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -172,7 +172,7 @@ You can change the open state of the hyperlink in the PDF Viewer by using the fo
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"

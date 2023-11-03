@@ -27,7 +27,7 @@ The PDF viewer control provides the option for interaction with Form Fields such
 We should inject FormDesigner module and set enableFormDesignerToolbar as true to enable the Form designer icon on the toolbar. By default, enableFormDesignerToolbar is set as true. Use the following code to inject FormDesigner module and to enable the enableFormDesignerToolbar property.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -38,7 +38,7 @@ We should inject FormDesigner module and set enableFormDesignerToolbar as true t
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -91,7 +91,7 @@ The PDF Viewer control supports the clipboard operations such as cut, copy and p
 We provided support to undo/redo the Form Field actions that are performed at runtime. Use the following code example to perform undo/redo actions.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 <button id="undo">Undo</button>
 <button id="redo">Redo</button>
 <div style="width:100%;height:600px">
@@ -113,7 +113,7 @@ We provided support to undo/redo the Form Field actions that are performed at ru
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button id="undo">Undo</button>
 <button id="redo">Redo</button>
