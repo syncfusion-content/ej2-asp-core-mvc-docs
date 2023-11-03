@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Diagram Control
 
-his section briefly explains about how to include [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -64,7 +64,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-Also, register the script manager <ejs-script> at the end of **<body>** in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}

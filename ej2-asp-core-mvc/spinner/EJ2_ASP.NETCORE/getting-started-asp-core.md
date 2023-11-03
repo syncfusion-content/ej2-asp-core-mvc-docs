@@ -39,7 +39,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-Also, register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -78,7 +78,7 @@ Now, add the `Spinner` using Syncfusion Essential JavaScript library in `~/Pages
     document.getElementById('showSpinnerButton').addEventListener('click', function () {
         ej.popups.showSpinner(spinTarget);
                 setInterval(function () {
-                    //hideSpinner() method is used to hide the Spinner  
+                    //hideSpinner() method is used to hide the Spinner
                     ej.popups.hideSpinner(spinTarget);
                 }, 5000);
     });
