@@ -13,7 +13,7 @@ documentation: ug
 The PDF Viewer supports downloading the loaded PDF file. You can enable/disable the download using the following code snippet.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
@@ -22,7 +22,7 @@ The PDF Viewer supports downloading the loaded PDF file. You can enable/disable 
     </ejs-pdfviewer>
 </div>
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
@@ -39,7 +39,7 @@ The PDF Viewer supports downloading the loaded PDF file. You can enable/disable 
 You can invoke download action using following code snippet.,
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
@@ -55,7 +55,7 @@ You can invoke download action using following code snippet.,
     }
 </script>
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"

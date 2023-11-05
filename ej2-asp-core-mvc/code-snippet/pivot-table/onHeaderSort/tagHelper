@@ -1,4 +1,4 @@
-<ejs-pivotview id="PivotView" height="300" showGroupingBar="true" onHeadersSort:"onHeadersSort">
+<ejs-pivotview id="PivotView" height="300" showGroupingBar="true" onHeadersSort="onHeadersSort">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
         <e-rows>
             <e-field name="Country"></e-field>
