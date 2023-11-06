@@ -859,7 +859,7 @@ var glob = require('glob');
 gulp.task("copy-client-resource", function (done) {
     let packagePath = './node_modules/@syncfusion/';
     let destCommonPath = 'wwwroot/syncfusion'
-    let installedPackages = glob.sync(`${packagePath}*`);
+    let installedPackages = glob.sync(`${packagePath}*`, { posix: true, dotRelative: true });
     for (let insPackage of installedPackages) {
         let packagename = insPackage.replace(packagePath, '');
         gulp.src(`${insPackage}/dist/global/**/*`)
