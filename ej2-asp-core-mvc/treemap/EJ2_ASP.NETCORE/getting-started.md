@@ -98,25 +98,11 @@ Now, add the Syncfusion ASP.NET Core TreeMap tag helper in `~/Pages/Index.cshtml
 
 This section explains how to render the tree map with data source.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/treemap/getting-started/data-source/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/getting-started/data-source/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data-source.cs" %}
-{% include code-snippet/treemap/getting-started/data-source/data-source.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core TreeMap control will be rendered in the default web browser.
 
@@ -128,25 +114,11 @@ Here, the tree map is created with data source and set with the `weightValuePath
 
 The color mapping feature supports customization of item colors based on the underlying value of item received from bound data source. Specify the field name from the values that have to be compared for the item in the `equalColorValuePath` or `rangeColorValuePath` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/treemap/getting-started/color-mapping/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/getting-started/color-mapping/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Color-mapping.cs" %}
-{% include code-snippet/treemap/getting-started/color-mapping/color-mapping.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core TreeMap with ColorMapping](images/treemap-with-color-mapping.png)
 
@@ -154,25 +126,11 @@ The color mapping feature supports customization of item colors based on the und
 
 You can show legend for the tree map by setting the `visible` property to **true** in `legendSettings` object.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/treemap/getting-started/legend/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/getting-started/legend/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Legend.cs" %}
-{% include code-snippet/treemap/getting-started/legend/legend.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core TreeMap with Legend](images/treemap-with-legend.png)
 
@@ -180,25 +138,11 @@ You can show legend for the tree map by setting the `visible` property to **true
 
 The labels are added to show additional information of the items in tree map. By default, the visibility of the label is **true**. This can be customized using the `showLabels` property in `leafItemSettings`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/treemap/getting-started/labels/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/getting-started/labels/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Labels.cs" %}
-{% include code-snippet/treemap/getting-started/labels/labels.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core TreeMap with Label](images/treemap-with-labels.png)
 
@@ -206,25 +150,11 @@ The labels are added to show additional information of the items in tree map. By
 
 The tooltips are used when labels cannot display information due to space constraints. Tooltips can be enabled by setting the `visible` property to **true** in `tooltipSettings` object.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/treemap/getting-started/tooltip/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/getting-started/tooltip/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% include code-snippet/treemap/getting-started/tooltip/tooltip.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core TreeMap with Tooltip](images/treemap-with-tooltip.png)
 

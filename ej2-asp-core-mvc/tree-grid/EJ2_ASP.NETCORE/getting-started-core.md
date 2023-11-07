@@ -87,26 +87,15 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core TreeGrid tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/getting-start-core/tree-grid/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Tree-grid.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
 ## Defining Row Data
 
 To bind data for the TreeGrid control, you can assign a IEnumerable object to the [`dataSource`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~DataSource.html) property. The list data source can also be provided as an instance of the **DataManager**.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -202,15 +191,6 @@ public class TreeGridItems
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Page.cs" %}
-{% include code-snippet/tree-grid/getting-start-core/databinding/page.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core TreeGrid control will be rendered in the default web browser.
 
 ![ASP.NET Core TreeGrid Control](images/treegrid-control.png)
@@ -230,8 +210,6 @@ Let’s check the properties used here:
 * The [`headerText`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~HeaderText.html) property is to change the title of columns.
 * The [`textAlign`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~TextAlign.html) property is to change the alignment of columns. By default, columns will be left aligned. To change columns to right align, you need to define **textAlign** as **Right**.
 * Using [`format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property, you can format number and date values to standard or custom formats. Here, you have defined it for the conversion of numeric values to currency.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -327,22 +305,11 @@ public class TreeGridItems
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Page.cs" %}
-{% include code-snippet/tree-grid/getting-start-core/columns/page.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![ASP.NET Core TreeGrid Columns](images/treegrid-columns.png)
 
 ## Enable Paging
 
 The paging feature enables users to view the treegrid record in a paged view. It can be enabled by setting the  [`allowPaging`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowPaging.html) property to true. Pager can be customized using [`e-treegrid-pagesettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings.html) tag helper.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -438,22 +405,11 @@ public class TreeGridItems
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Page.cs" %}
-{% include code-snippet/tree-grid/getting-start-core/page/page.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![ASP.NET Core TreeGrid with Paging](images/treegrid-with-paging.png)
 
 ## Enable Sorting
 
 The sorting feature enables you to order the records. It can be enabled by setting the  [`allowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowSorting.html) property as true. Sorting feature can be customized using [`e-treegrid-sortsettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSortSettings.html) tag helper.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -548,15 +504,6 @@ public class TreeGridItems
 }
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Sorting.cs" %}
-{% include code-snippet/tree-grid/getting-start-core/sorting/sorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Sorting in ASP.NET Core TreeGrid](images/treegrid-sorting.png)
 

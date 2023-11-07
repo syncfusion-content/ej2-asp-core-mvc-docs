@@ -87,25 +87,11 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core Barcode tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/getting-started/barcode/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/barcode/getting-started/barcode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Barcode.cs" %}
-{% include code-snippet/barcode/getting-started/barcode/barcode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Barcode control will be rendered in the default web browser.
 
@@ -117,25 +103,11 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 You can add the QR code in the barcode generator control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/getting-started/qrcode/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/barcode/getting-started/qrcode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Qrcode.cs" %}
-{% include code-snippet/barcode/getting-started/qrcode/qrcode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core QR Genarator Control](images/qrcode-control.png)
 
@@ -143,25 +115,11 @@ You can add the QR code in the barcode generator control.
 
 You can add the datamatrix code in the barcode generator control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/getting-started/datamatrix/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/barcode/getting-started/datamatrix/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datamatrix.cs" %}
-{% include code-snippet/barcode/getting-started/datamatrix/datamatrix.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core Datamatrix Genarator Control](images/datamatrix-control.png)
 

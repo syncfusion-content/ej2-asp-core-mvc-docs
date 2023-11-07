@@ -108,18 +108,6 @@ By default, Syncfusion ASP.NET Core TextBox control is rendered in In-place Edit
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/in-place-editor/getting-started-text/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/in-place-editor/getting-started-text/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![ASP.NET Core In-place Editor with TextBox](images/inplaceeditor-with-textbox.png)
 
 ## Configuring DropDownList
@@ -128,25 +116,11 @@ You can render the Syncfusion ASP.NET Core DropDownList by changing the [`type`
 
 In the following sample, `type` and model values are configured to render the `DropDownList` control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/in-place-editor/getting-started-drop/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/in-place-editor/getting-started-drop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/in-place-editor/getting-started-drop/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core In-placeEditor with DropDownList](images/inplaceeditor-with-dropdownlist.png)
 
@@ -156,49 +130,21 @@ You can render the Essential JS2 DatePicker by changing the [`type`](https://he
 
 In the following sample, `type` and `model` values are configured to render the `DatePicker` control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/in-place-editor/getting-started-date/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/in-place-editor/getting-started-date/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/in-place-editor/getting-started-date/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![ASP.NET Core In-place Editor with DatePicker](images/inplaceeditor-with-datepicker.png)
 
 In the following sample, type and model values are configured to render the TextBox, DropDownList and DatePicker control.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/in-place-editor/getting-started-form/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/in-place-editor/getting-started-form/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/in-place-editor/getting-started-form/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core In-place Editor control will be rendered in the default web browser.
 
@@ -220,25 +166,11 @@ N> The `primaryKey` property is mandatory. If it's not set, edited data are not
 
 The edited data is submitted to the server and you can see the new values getting reflected in the In-place Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/in-place-editor/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/in-place-editor/getting-started/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/in-place-editor/getting-started/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core In-place Editor with Editing Value](images/getting-started.PNG)
 

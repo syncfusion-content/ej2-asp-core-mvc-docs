@@ -87,25 +87,11 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core MaskedTextBox tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/maskedtextbox/gettingstarted/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maskedtextbox/gettingstarted/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Gettingstarted.cs" %}
-{% include code-snippet/maskedtextbox/gettingstarted/gettingstarted.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core MaskedTextBox control will be rendered in the default web browser.
 
@@ -117,25 +103,11 @@ You can set the mask to the MaskedTextBox to validate the user input by using th
 
 The following example demonstrates the usage of mask element `0` that allows any single digit from `0` to `9`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/maskedtextbox/mask/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maskedtextbox/mask/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Mask.cs" %}
-{% include code-snippet/maskedtextbox/mask/mask.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core MaskedTextBox with Mask Element](./images/mask.png)
 

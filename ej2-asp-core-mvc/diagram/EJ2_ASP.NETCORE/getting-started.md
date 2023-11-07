@@ -86,25 +86,11 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core Diagram tag helper in `~/Pages/Index.cshtml` page. Create and add a `node` (JSON data) with specific position, size, label, and shape.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/diagram/getting-started/node/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/getting-started/node/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Node.cs" %}
-{% include code-snippet/diagram/getting-started/node/node.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Diagram control will be rendered in the default web browser.
 
@@ -113,7 +99,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ## Connect two Nodes with a Connector
 
 Add two nodes to the diagram as shown in the previous example. Connect these nodes by adding a connector using the `connector` property and refer the source and target end by using the `sourceNode` and `targetNode` properties.
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -124,18 +109,6 @@ Add two nodes to the diagram as shown in the previous example. Connect these nod
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/getting-started/connector/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Connector.cs" %}
-{% include code-snippet/diagram/getting-started/connector/connector.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![Connection between two Nodes in ASP.NET Core Diagram](images/diagram-with-nodes-connector.png)
 
 ## Adding default values
@@ -143,7 +116,6 @@ Add two nodes to the diagram as shown in the previous example. Connect these nod
 Default values for all `nodes` and `connectors` can be set using the `getNodeDefaults` and `getConnectorDefaults` properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
 
 For example, if all the nodes have same `height` and `width`, set such properties as follows.
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -154,25 +126,9 @@ For example, if all the nodes have same `height` and `width`, set such propertie
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/getting-started/defaultvalues/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Defaultvalues.cs" %}
-{% include code-snippet/diagram/getting-started/defaultvalues/defaultvalues.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Flow Diagram
 
 Similarly, the required nodes and connectors can be added to form a complete flow diagram.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -182,20 +138,6 @@ Similarly, the required nodes and connectors can be added to form a complete flo
 {% include code-snippet/diagram/getting-started/flowchart/flowchart.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/getting-started/flowchart/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Flowchart.cs" %}
-{% include code-snippet/diagram/getting-started/flowchart/flowchart.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Automatic Organization Chart
 
@@ -305,8 +247,6 @@ You can configure the above "Employee Information" with diagram, so that the nod
 
 The following code examples indicates how to define the default appearance of nodes and connectors. The `setNodeTemplate` is used to update each node based on employee data.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/diagram/getting-started/orgchart/tagHelper %}
@@ -315,19 +255,5 @@ The following code examples indicates how to define the default appearance of no
 {% include code-snippet/diagram/getting-started/orgchart/orgchart.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/getting-started/orgchart/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Orgchart.cs" %}
-{% include code-snippet/diagram/getting-started/orgchart/orgchart.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Diagram/ASP.NET%20Core%20Tag%20Helper%20Examples).

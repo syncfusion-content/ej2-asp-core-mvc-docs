@@ -87,25 +87,11 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core Tooltip tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/tooltip/getting-started/core/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tooltip/getting-started/core/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/tooltip/getting-started/core/HomeController.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 N> In the above sample code, `#target` is the `id` of the element in a page to which the `Tooltip` is initialized.
 
@@ -119,25 +105,11 @@ You can create Tooltips on multiple targets within a container. To do so, you ha
 
 Refer to the following code example to create a Tooltip on multiple targets within a container.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/tooltip/getting-started/multiple-target-core/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tooltip/getting-started/multiple-target-core/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/tooltip/getting-started/multiple-target-core/HomeController.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core Tooltip with Accessibility](./images/tooltip-container.png)
 

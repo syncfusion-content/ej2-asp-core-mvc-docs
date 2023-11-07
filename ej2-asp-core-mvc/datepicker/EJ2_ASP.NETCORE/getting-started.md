@@ -87,23 +87,11 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core DatePicker tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/datepicker/getting-started/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/datepicker/getting-started/getting-started/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Getting-started.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core DatePicker control will be rendered in the default web browser.
 
@@ -115,25 +103,11 @@ To restrict the selection of date within a specified range, use the min and max 
 
 The below example demonstrates the DatePicker to select a date within a range from 5 to 27 in a current month.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/datepicker/getting-started/daterange/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/datepicker/getting-started/daterange/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/datepicker/getting-started/daterange/daterange.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core DatePicker with Minumum and Maximum Values](images/datepicker-with-min-and-max-values.png)
 

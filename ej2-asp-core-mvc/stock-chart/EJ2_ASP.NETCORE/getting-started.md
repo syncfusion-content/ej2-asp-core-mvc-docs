@@ -110,25 +110,11 @@ Add a series object to the chart by using [`series`](https://help.syncfusion.com
 
 Since the JSON contains DateTime data, set the [`valueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) for horizontal axis to DateTime. By default, the axis valueType is Numeric.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/stock-chart/getting-started/populateData/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stock-chart/getting-started/populateData/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="PopulateData.cs" %}
-{% include code-snippet/stock-chart/getting-started/populateData/populateData.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core Stock Chart with Data](images/stockchart.png)
 

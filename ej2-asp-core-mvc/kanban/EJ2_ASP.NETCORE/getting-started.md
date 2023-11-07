@@ -87,25 +87,11 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core Kanban tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/kanban/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/default/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/getting-started/default/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Kanban control will be rendered in the default web browser.
 
@@ -115,49 +101,11 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 To populate the empty Kanban with cards, define the list or remote data using the `dataSource` property. To define `dataSource`, the mandatory fields in the list should be relevant to `keyField`. In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-<!-- {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/populating-cards/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class KanbanDataModels
-{
-    public string Id { get; set; }
-    public string Title { get; set; }
-    public string Status { get; set; }
-    public string Summary { get; set; }
-    public string Type { get; set; }
-    public string Priority { get; set; }
-    public string Tags { get; set; }
-    public Double Estimate { get; set; }
-    public string Assignee { get; set; }
-    public int RankId { get; set; }
-    public string Color { get; set; }
-}
-{% endhighlight %}
-{% endtabs %} -->
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/populating-cards/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/kanban/getting-started/populating-cards/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![kanban](./images/populating-cards.PNG)
 
 ## Enable swimlane
 
 `Swimlane` can be enabled by mapping the tags `swimlaneSettings.keyField` to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -180,18 +128,6 @@ public class KanbanDataModels
 }
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/enable-swimlane/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/kanban/getting-started/enable-swimlane/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core Kanban with Swimlane](./images/enable-swimlane.PNG)
 

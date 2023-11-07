@@ -91,25 +91,11 @@ Now, add the Syncfusion ASP.NET Core Uploader tag helper in `~/Pages/Index.cshtm
 N> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests.
 Hence, use the third party `promise` library like blue-bird to use the uploader in Internet Explorer.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/uploader/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/uploader/getting-started/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Getting-started.cs" %}
-{% include code-snippet/uploader/getting-started/getting-started.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Uploader control will be rendered in the default web browser.
 
@@ -121,31 +107,15 @@ By default, the uploader control allows to upload files by drag the files from f
 
 In the following sample, drop target is configured.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/uploader/drop-area/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/uploader/drop-area/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Drop-area.cs" %}
-{% include code-snippet/uploader/drop-area/drop-area.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Configure asynchronous settings
 
 The uploader control process the files to upload in Asynchronous mode by default. Define the properties [saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) and [removeUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_RemoveUrl) to handle the save and remove action as follows.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -153,41 +123,15 @@ The uploader control process the files to upload in Asynchronous mode by default
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/uploader/async-settings/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Async-settings.cs" %}
-{% include code-snippet/uploader/async-settings/async-settings.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Handle success and failed upload
 
 You can handle the success and failure actions using the [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) and [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) events. To handle these events, define the function and assign it to the corresponding event as follows.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/uploader/success-failed/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/uploader/success-failed/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Success_failed.cs" %}
-{% include code-snippet/uploader/success-failed/success-failed.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core Uploader](images/uploader-auto-01.png)
 

@@ -97,8 +97,6 @@ Now, add the Syncfusion ASP.NET Core RangeNavigator tag helper in `~/Pages/Index
 
 Now, we are going to provide data to the range navigator. Add a series object to the range navigator by using series property. Now map the field names x and y in the JSON data to the `xName` and `yName`properties of the `series`, then set the JSON data to dataSource property. Since the JSON contains Datetime data, set the `valueType` as `DateTime`. By default, the axis valueType is Numeric.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/range-navigator/getting-started/data/tagHelper %}
@@ -112,18 +110,6 @@ public class data
 }
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/range-navigator/getting-started/data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/range-navigator/getting-started/data/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core RangeNavigator control will be rendered in the default web browser.
 

@@ -87,25 +87,11 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core Toolbar tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/toolbar/getting-started/data/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/toolbar/getting-started/data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/toolbar/getting-started/data/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Toolbar control will be rendered in the default web browser.
 
@@ -117,8 +103,6 @@ You can bind any HTML elements or other components in Toolbar items, by simply u
 
 In the below demo, the Toolbar items are given as [Button](../button), [MaskedTextBox](../maskedtextbox), [RadioButton](../radio-button), [DropDownList](../drop-down-list) using the content template. In the content template property of Toolbar, you can directly render these controls like below in the code.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/toolbar/how-to/contenttemplate/tagHelper %}
@@ -127,18 +111,6 @@ In the below demo, the Toolbar items are given as [Button](../button), [MaskedTe
 {% include code-snippet/toolbar/how-to/contenttemplate/contenttemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/toolbar/how-to/contenttemplate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Contenttemplate.cs" %}
-{% include code-snippet/toolbar/how-to/contenttemplate/contenttemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![content template](images/contenttemplate.PNG)
 

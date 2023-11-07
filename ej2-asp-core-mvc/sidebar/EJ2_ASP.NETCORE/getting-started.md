@@ -87,25 +87,11 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core Sidebar tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/getting-started/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/getting-started/getting-started/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Getting-started.cs" %}
-{% include code-snippet/sidebar/getting-started/getting-started/getting-started.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Sidebar control will be rendered in the default web browser.
 
@@ -119,25 +105,11 @@ N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent
 
 The following example shows a Sidebar component with enabled backdrop.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/getting-started/backdrop/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/getting-started/backdrop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Backdrop.cs" %}
-{% include code-snippet/sidebar/getting-started/backdrop/backdrop.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Enable Backdrop in ASP.NET Core Sidebar](images/backdrop.png)
 
@@ -147,25 +119,11 @@ Positioning the Sidebar to the right or left of the main content can be achieved
 
 In the following sample, the sidebar is rendered with position property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/getting-started/position/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/getting-started/position/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Position.cs" %}
-{% include code-snippet/sidebar/getting-started/position/position.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Changing ASP.NET Core Sidebar Position](images/position.png)
 
@@ -173,25 +131,11 @@ In the following sample, the sidebar is rendered with position property.
 
 Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Animate.html) property. By default , [`animate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Animate.html) property is set to true. [`enableRTL`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~EnableRtl.html) will display the sidebar in the right-to-left direction.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/animate/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/animate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Animate.cs" %}
-{% include code-snippet/sidebar/animate/animate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Sidebar Sample](images/backdrop.png)
 
@@ -199,25 +143,11 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 
 Sidebar can be closed on document click by setting [`closeOnDocumentClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~CloseOnDocumentClick.html) to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using [`isOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~IsOpen.html) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/document-click/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/document-click/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Document-click.cs" %}
-{% include code-snippet/sidebar/document-click/document-click.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Sidebar Sample](images/document-click.png)
 
@@ -225,25 +155,11 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 Expand or collapse the Sidebar while swiping in touch devices using [`enableGestures`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~EnableGestures.html) property. By default, [`enableGestures`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~EnableGestures.html) is set to true.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/gestures/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/gestures/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Gestures.cs" %}
-{% include code-snippet/sidebar/gestures/gestures.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core Sidebar with Gesture](images/backdrop.png)
 
