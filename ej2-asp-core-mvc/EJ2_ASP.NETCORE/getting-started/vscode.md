@@ -57,16 +57,6 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 Refer to [NuGet packages topic](../nuget-packages/) for more details about NuGet packages.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
-
-Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
-
-{% tabs %}
-{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
-@addTagHelper *, Syncfusion.EJ2
-{% endhighlight %}
-{% endtabs %}
-
-## Add Syncfusion ASP.NET Core Tag Helper
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
