@@ -58,6 +58,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -99,23 +100,11 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 You can change the type of progress bar by using `type` property. By default `Linear` type of progress bar will render.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/progress-bar/getting-started/default/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core Progress Bar Control](images/default.png)
 

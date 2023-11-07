@@ -58,6 +58,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -85,47 +86,19 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core DocumentEditor tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/document-editor/getting-started/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor/getting-started/document-editor.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 For example, the Document Editor Container component is added to the `~/Pages/Index.cshtml` page.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/document-editor-container/getting-started/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Document-editor-continer.cs" %}
-{% include code-snippet/document-editor-container/getting-started/document-editor-continer.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core DocumentEditor control will be rendered in the default web browser.
 

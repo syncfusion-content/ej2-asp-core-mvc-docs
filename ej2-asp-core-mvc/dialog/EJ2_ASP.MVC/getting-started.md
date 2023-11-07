@@ -19,7 +19,7 @@ This section briefly explains about how to include [ASP.NET MVC Dialog](https://
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
 * [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
@@ -87,25 +87,11 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 Now, add the Syncfusion ASP.NET MVC Dialog control in `~/Views/Home/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dialog/getting-started/getting-started/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/getting-started/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/getting-started/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Dialog control will be rendered in the default web browser.
 
@@ -121,25 +107,11 @@ While the user clicks the overlay, the action can be handled through the [Overla
 
 N> When the modal dialog is opened, the Dialog's target scrolling will be disabled. The scrolling will be enabled again once close the Dialog.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dialog/getting-started/modal/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/modal/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/modal/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Modal Dialog](images/modal-dialog-getting.png)
 
@@ -157,27 +129,11 @@ html, body {
 
 The Dialog header can be enabled by adding the header content as text or HTML content through the [Header](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dialog/getting-started/enable-header/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/enable-header/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/enable-header/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Enable footer
 
@@ -189,19 +145,6 @@ N> When the Dialog initialize with more than one primary buttons, the first prim
 
 The below sample render with button and its click event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dialog/getting-started/enable-footer/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/enable-footer/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/enable-footer/razor %}
@@ -210,28 +153,12 @@ The below sample render with button and its click event.
 {% include code-snippet/dialog/getting-started/enable-footer/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Draggable
 
 The Dialog supports to [drag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_AllowDragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
 
 N> The Dialog can be draggable only when the Dialog header is enabled. From `16.2.x` version, enabled draggable support for modal dialog also.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dialog/getting-started/draggable/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/draggable/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -241,9 +168,6 @@ N> The Dialog can be draggable only when the Dialog header is enabled. From `16.
 {% include code-snippet/dialog/getting-started/draggable/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Positioning
 
@@ -256,25 +180,11 @@ For example <code>position:{ X:'center', Y:'center' }</code> the possible values
 
 The below sample demonstrates the different Dialog positions.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dialog/getting-started/positioning/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/positioning/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/positioning/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Dialog/ASP.NET%20MVC%20Razor%20Examples).
 

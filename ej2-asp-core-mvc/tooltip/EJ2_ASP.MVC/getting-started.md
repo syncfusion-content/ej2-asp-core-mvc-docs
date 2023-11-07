@@ -19,7 +19,7 @@ This section briefly explains about how to include [ASP.NET MVC Tooltip](https:/
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
 * [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
@@ -105,25 +105,11 @@ You can create Tooltips on multiple targets within a container. To do so, you ha
 
 Refer to the following code example to create a Tooltip on multiple targets within a container.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tooltip/getting-started/multiple-target-mvc/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/tooltip/getting-started/multiple-target-mvc/HomeController.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tooltip/getting-started/multiple-target-mvc/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Accessibility in ASP.NET MVC Tooltip](images/tooltip-container.png)
 

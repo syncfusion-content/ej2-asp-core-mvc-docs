@@ -59,6 +59,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -99,25 +100,11 @@ Now, add the Syncfusion ASP.NET Core HeatmapChart tag helper in `~/Pages/Index.c
 
 This section explains how to populate the following two-dimensional array data to the heat map.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/data/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/getting-started/data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/heatmap/getting-started/data/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core HeatMapChart control will be rendered in the default web browser.
 
@@ -127,25 +114,11 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 You can add axis labels to the heat map and format those labels using the [xAxis](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~XAxis.html) and [yAxis](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~YAxis.html) properties. Axis labels provide additional information about the data points populated in the heat map.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/axis/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/getting-started/axis/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/heatmap/getting-started/axis/axis.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core HeatmapChart with Axis Labels](images/heatmap-with-axis-labels.png)
 
@@ -153,25 +126,11 @@ You can add axis labels to the heat map and format those labels using the [xAxis
 
 Add a title using the [titleSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~TitleSettings.html) property to the heat map to provide quick information to the user about the data populated in the heat map.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/title/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/getting-started/title/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/heatmap/getting-started/title/title.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core HeatmapChart with Title](images/heatmap-with-title.png)
 
@@ -179,25 +138,11 @@ Add a title using the [titleSettings](https://help.syncfusion.com/cr/aspnetcore-
 
 Use a legend for the heat map in the [legendSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~LegendSettings.html) object by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Visible.html) property to **true**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/legend/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/getting-started/legend/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Legend.cs" %}
-{% include code-snippet/heatmap/getting-started/legend/legend.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core HeatmapChart with Legend](images/heatmap-with-legend.png)
 
@@ -205,25 +150,11 @@ Use a legend for the heat map in the [legendSettings](https://help.syncfusion.co
 
 Add data labels to improve the readability of the heat map. This can be achieved by setting the [showLabel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~ShowLabel.html) property to **true** in the [cellSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellSettings.html) object.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/label/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/getting-started/label/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Label.cs" %}
-{% include code-snippet/heatmap/getting-started/label/label.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core HeatmapChart with DataLabel](images/heatmap-with-datalabel.png)
 
@@ -231,25 +162,11 @@ Add data labels to improve the readability of the heat map. This can be achieved
 
 The default palette settings of the heat map cells can be customized by using the [paletteSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~PaletteSettings.html) property. Using the [palette](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPalette.html) property in `paletteSettings` object, you can change the color set for the cells. You can change the color mode of the cells to fixed or gradient mode using the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings~Type.html) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/palette/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/getting-started/palette/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Palette.cs" %}
-{% include code-snippet/heatmap/getting-started/palette/palette.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core HeatmapChart with Custom Palette](images/heatmap-with-palette.png)
 
@@ -257,25 +174,11 @@ The default palette settings of the heat map cells can be customized by using th
 
 The tooltip is used when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [showTooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~ShowTooltip.html) property to **true**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/tooltip/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/getting-started/tooltip/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% include code-snippet/heatmap/getting-started/tooltip/tooltip.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core HeatmapChart with Tooltip](images/heatmap-with-tooltip.png)
 

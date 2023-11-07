@@ -59,6 +59,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -86,8 +87,6 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index.cshtml` page. Populate the action items in `DropDownButton` by using the `items` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdownbutton/getting-started/demo/tagHelper %}
@@ -113,16 +112,6 @@ Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index
 
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dropdownbutton/getting-started/demo/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Demo.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core DropDownButton control will be rendered in the default web browser.
 

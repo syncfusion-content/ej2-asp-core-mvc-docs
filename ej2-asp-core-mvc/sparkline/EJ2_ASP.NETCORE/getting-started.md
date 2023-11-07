@@ -58,6 +58,7 @@ Here, script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 
 <head>
     ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -97,8 +98,6 @@ Now, add the Syncfusion ASP.NET Core Sparkline tag helper in `~/Pages/Index.csht
 
 The `dataSource` property is used for binding data source to the sparkline. This property takes the collection value as input. For example, the list of objects can be provided as input.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sparkline/getting-started/data-source/tagHelper %}
@@ -128,18 +127,6 @@ public class DataSource
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/getting-started/data-source/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data-source.cs" %}
-{% include code-snippet/sparkline/getting-started/data-source/data-source.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Sparkline control will be rendered in the default web browser.
 
 ![ASP.NET Core Sparkline Control](images/sparkline-control.png)
@@ -147,8 +134,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ## Change the type of Sparkline
 
 You can change the sparkline type by setting the `type` property to `Line`, `Column`, `WinLoss`, `Pie`, or `Area`. Here, the sparkline type has been set to `area`.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -179,25 +164,11 @@ public class DataSource
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/getting-started/type/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Type.cs" %}
-{% include code-snippet/sparkline/getting-started/type/type.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![ASP.NET Core Area Sparkline](images/area-sparkline.png)
 
 ## Enable tooltip for Sparkline
 
 The sparkline displays additional information through tooltip when the mouse is hovered over the sparkline. You can enable tooltip by setting the `visible` property to true in `tooltipSettings` object.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -227,18 +198,6 @@ public class DataSource
 }
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/getting-started/tooltip/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% include code-snippet/sparkline/getting-started/tooltip/tooltip.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core Sparkline with Tooltip](images/sparkline-with-tooltip.png)
 

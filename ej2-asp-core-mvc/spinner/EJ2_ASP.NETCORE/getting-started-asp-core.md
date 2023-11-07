@@ -33,6 +33,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -60,6 +61,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentati
 Initialize the Spinner using `createSpinner` method and show/hide the spinner using `showSpinner` and `hideSpinner` methods accordingly. Set the target to the spinner to render it based on specific target.
 
 Now, add the `Spinner` using Syncfusion Essential JavaScript library in `~/Pages/Index.cshtml` page.
+
 ```cshtml
 ....
 <div id="container" style="position:center; height: 300px;">
@@ -85,4 +87,3 @@ Now, add the `Spinner` using Syncfusion Essential JavaScript library in `~/Pages
 </script>
 
 ```
-* Show and hide this spinner by using `showSpinner` and `hideSpinner` methods for loading in your page.

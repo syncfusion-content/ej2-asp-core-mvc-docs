@@ -59,6 +59,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -86,25 +87,11 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core NumericTextBox tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/numeric-textbox/getting-started/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/numeric-textbox/getting-started/getting-started/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Demo.cs" %}
-{% include code-snippet/numeric-textbox/getting-started/getting-started/demo.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core NumericTextBox control will be rendered in the default web browser.
 
@@ -118,27 +105,11 @@ The validation behavior depends on the [strictMode](https://help.syncfusion.com/
 
 The below example demonstrates range validation.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/numeric-textbox/getting-started/range/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/numeric-textbox/getting-started/range/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Range.cs" %}
-{% include code-snippet/numeric-textbox/getting-started/range/range.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Formatting the value
 
@@ -146,25 +117,11 @@ User can set the format of the NumericTextBox control using [format](https://hel
 
 The below example demonstrates format the value by using currency format value `c2`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/numeric-textbox/getting-started/format/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/numeric-textbox/getting-started/format/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Format.cs" %}
-{% include code-snippet/numeric-textbox/getting-started/format/format.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core NumericTextBox with Formatting](images/format.png)
 
@@ -176,25 +133,11 @@ So, you can't enter the number whose precision is greater than the mentioned dec
 * If `validateDecimalOnType` is false, number of decimals will not be restricted.
 Else, number of decimals will be restricted while typing in the NumericTextBox.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/numeric-textbox/getting-started/precision/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/numeric-textbox/getting-started/precision/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Precision.cs" %}
-{% include code-snippet/numeric-textbox/getting-started/precision/precision.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Restricting Decimal Values in ASP.NET Core NumericTextBox](./images/precision.png)
 

@@ -59,6 +59,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -86,25 +87,11 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Now, add the Syncfusion ASP.NET Core Fab tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/speeddial/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/getting-started/demo/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/speeddial/getting-started/demo/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core SpeedDial control will be rendered in the default web browser.
 
@@ -113,7 +100,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ## Positioning
 
 The speed dial can be positioned using the [position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Position) property. The speed dial is positioned based on the [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Target), if target is defined else positioned based on the browser viewport. The position values are TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -121,43 +107,17 @@ The speed dial can be positioned using the [position](https://help.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/getting-started/position/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Position.cs" %}
-{% include code-snippet/speeddial/getting-started/position/position.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![ASP.NET Core SpeedDial Control](images/speeddial-position-sample.png)
 
 ## Linear and radial display modes
 
 You can use the [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property to either display the menu in linear order like a list or like a radial menu in radial (circular) direction.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/speeddial/getting-started/mode/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/getting-started/mode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Mode.cs" %}
-{% include code-snippet/speeddial/getting-started/mode/mode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core SpeedDial Control](images/speeddial-mode-linear-sample.png)
 
@@ -167,24 +127,10 @@ You can use the [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 The speed dial control triggers the [clicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Clicked) event when an action item is clicked. You can use this event to perform the required action.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/speeddial/getting-started/click/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/getting-started/click/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ItemClick.cs" %}
-{% include code-snippet/speeddial/getting-started/click/click.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core SpeedDial Control](images/speeddial-event-sample.png)

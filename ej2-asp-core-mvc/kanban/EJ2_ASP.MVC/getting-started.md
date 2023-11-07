@@ -19,7 +19,7 @@ This section briefly explains about how to include [ASP.NET MVC Kanban](https://
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
 * [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
@@ -87,25 +87,11 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 Now, add the Syncfusion ASP.NET MVC Kanban control in `~/Views/Home/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/default/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/getting-started/default/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/kanban/getting-started/default/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Kanban control will be rendered in the default web browser.
 
@@ -114,19 +100,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ## Populating cards
 
 To populate the empty Kanban with cards, define the list or remote data using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource) property. To define `DataSource`, the mandatory fields in the list should be relevant to [KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-<!-- {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/populating-cards/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/kanban/getting-started/populating-cards/datasource.cs %}
-{% endhighlight %}
-{% endtabs %} -->
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -192,7 +165,6 @@ public class KanbanDataModels
 }
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Kanban with Cards](images/populating-cards.PNG)
 
@@ -200,25 +172,11 @@ public class KanbanDataModels
 
 `Swimlane` can be enabled by mapping the tags [SwimlaneSettings.KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanSwimlaneSettings.html#Syncfusion_EJ2_Kanban_KanbanSwimlaneSettings_KeyField) to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/enable-swimlane/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/kanban/getting-started/enable-swimlane/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/kanban/getting-started/enable-swimlane/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Kanban with Swimlane](images/enable-swimlane.PNG)
 

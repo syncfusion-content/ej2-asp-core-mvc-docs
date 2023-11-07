@@ -19,7 +19,7 @@ This section briefly explains about how to include [ASP.NET MVC ListView](https:
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
 * [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
@@ -99,19 +99,6 @@ Now, add the Syncfusion ASP.NET MVC ListView control in `~/Views/Home/Index.csht
 
 After initialization, populate the ListView with data using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Lists.ListView.html#Syncfusion_EJ2_Lists_ListView_DataSource) property. Here, the JSON values are passed to the ListView control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/listview/getting-started/mvc/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/listview/getting-started/mvc/HomeController.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/listview/getting-started/mvc/razor %}
@@ -120,7 +107,6 @@ After initialization, populate the ListView with data using the [DataSource](htt
 {% include code-snippet/listview/getting-started/mvc/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC ListView control will be rendered in the default web browser.
 

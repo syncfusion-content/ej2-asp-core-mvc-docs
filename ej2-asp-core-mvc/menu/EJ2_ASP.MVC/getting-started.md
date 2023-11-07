@@ -19,7 +19,7 @@ This section briefly explains about how to include [ASP.NET MVC Menu](https://ww
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
 * [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
@@ -87,19 +87,6 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 Now, add the Syncfusion ASP.NET MVC Menu control in `~/Views/Home/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/menu/getting-started/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/menu/getting-started/Default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/menu/getting-started/razor %}
@@ -160,7 +147,6 @@ public ActionResult Index()
 }
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Menu control will be rendered in the default web browser.
 
@@ -171,19 +157,6 @@ N> This example demonstrates the basic rendering of Menu with items support. For
 ## Group menu items with separator
 
 The separators are both horizontal and vertical lines used to separate the menu items. You cannot select the separators, but you can enable separators to group the menu items using the [Separator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.MenuItem.html#Syncfusion_EJ2_Navigations_MenuItem_Separator) property. The `Open` and `Save` sub menu items are grouped using the `separator` property in the following sample.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/menu/separator/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/menu/separator/Separator.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -246,7 +219,6 @@ public ActionResult Index()
 }
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Menu with Separator](images/menu-with-separator.png)
 

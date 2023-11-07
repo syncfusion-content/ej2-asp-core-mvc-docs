@@ -19,7 +19,7 @@ This section briefly explains about how to include [ASP.NET MVC TextBox](https:/
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
 * [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
@@ -87,25 +87,11 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 Now, add the Syncfusion ASP.NET MVC TextBox control in `~/Views/Home/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/textbox/getting-started/input/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Input.cs" %}
-{% include code-snippet/textbox/getting-started/input/input.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/textbox/getting-started/input/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC TextBox control will be rendered in the default web browser.
 
@@ -115,49 +101,21 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 You can create a TextBox with icon as a group by creating the parent div element with the class `e-input-group` and add the icon element as span with the class `e-input-group-icon`. For detailed information, refer to the [Groups](./groups/) section.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/textbox/getting-started/icon/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Icon.cs" %}
-{% include code-snippet/textbox/getting-started/icon/icon.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/textbox/getting-started/icon/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Floating label
 
 The floating label TextBox floats the label above the TextBox after focusing, or filled with value in the TextBox. You can create the floating label TextBox by using the [FloatLabelType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_FloatLabelType) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/textbox/getting-started/textbox-component/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Floating.cs" %}
-{% include code-snippet/textbox/getting-started/textbox-component/floating.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/textbox/getting-started/textbox-component/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC TextBox with Floating Label](images/textbox-with-floating-label.png)
 
