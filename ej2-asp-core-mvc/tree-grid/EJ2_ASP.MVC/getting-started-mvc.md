@@ -87,36 +87,15 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 Now, add the Syncfusion ASP.NET MVC Tree Grid control in `~/Views/Home/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Initialize.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/getting-start-mvc/initialize/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Defining Row Data
 
 To bind data for the TreeGrid component, you can assign a IEnumerable object to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataSource) property. The list data source can also be provided as an instance of the **DataManager**.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/tree-grid/getting-start-mvc/databinding/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -126,8 +105,6 @@ To bind data for the TreeGrid component, you can assign a IEnumerable object to 
 {% include code-snippet/tree-grid/getting-start-mvc/databinding/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 N> [ChildMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ChildMapping) specifies the mapping property path for subtasks in dataSource.
 <br/> [TreeColumnIndex](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_TreeColumnIndex) specifies the index of the column that needs to have the expander button.
@@ -149,16 +126,6 @@ Let’s check the properties used here:
 * The [TextAlign](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_TextAlign) property is to change the alignment of columns. By default, columns will be left aligned. To change columns to right align, you need to define **textAlign** as **Right**.
 * Using [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Format) property, you can format number and date values to standard or custom formats. Here, you have defined it for the conversion of numeric values to currency.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Columns.cs" %}
-{% include code-snippet/tree-grid/getting-start-mvc/columns/columns.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/getting-start-mvc/columns/razor %}
@@ -167,7 +134,6 @@ Let’s check the properties used here:
 {% include code-snippet/tree-grid/getting-start-mvc/columns/columns.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Tree Grid Columns](images/treegrid-columns.png)
 
@@ -177,16 +143,6 @@ The paging feature enables users to view the treegrid record in a paged view. It
 
 In root-level paging mode, paging is based on the root-level rows only, i.e., it ignores the child row count and it can be enabled by using the [PageSizeMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridPageSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridPageSettings_PageSizeMode) property of [PageSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PageSettings).
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Page.cs" %}
-{% include code-snippet/tree-grid/getting-start-mvc/page/page.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/getting-start-mvc/page/razor %}
@@ -195,23 +151,12 @@ In root-level paging mode, paging is based on the root-level rows only, i.e., it
 {% include code-snippet/tree-grid/getting-start-mvc/page/page.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Tree Grid with Paging](images/treegrid-with-paging.png)
 
 ## Enable Sorting
 
 The sorting feature enables you to order the records. It can be enabled by setting the [AllowSorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowSorting) property as true. Sorting feature can be customized using [SortSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_SortSettings) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Sorting.cs" %}
-{% include code-snippet/tree-grid/getting-start-mvc/sorting/sorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -221,7 +166,6 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% include code-snippet/tree-grid/getting-start-mvc/sorting/sorting.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Tree Grid with Sorting](images/treegrid-sorting.png)
 
@@ -231,16 +175,6 @@ The filtering feature enables you to view reduced amount of records based on fil
 
 By default, filtered records are shown along with its parent records. This behavior can be changed by using the [HierarchyMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridFilterSettings_HierarchyMode) property of [FilterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FilterSettings).
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/tree-grid/getting-start-mvc/filtering/filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/getting-start-mvc/filtering/razor %}
@@ -249,7 +183,6 @@ By default, filtered records are shown along with its parent records. This behav
 {% include code-snippet/tree-grid/getting-start-mvc/filtering/filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Tree Grid with Filtering](images/treegrid-sample.png)
 

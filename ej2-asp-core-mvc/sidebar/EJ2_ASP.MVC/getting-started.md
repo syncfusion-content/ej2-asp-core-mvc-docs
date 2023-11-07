@@ -87,25 +87,11 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 Now, add the Syncfusion ASP.NET MVC Sidebar control in `~/Views/Home/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/getting-started/getting-started/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Getting-started.cs" %}
-{% include code-snippet/sidebar/getting-started/getting-started/getting-started.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/getting-started/getting-started/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Sidebar control will be rendered in the default web browser.
 
@@ -117,25 +103,11 @@ Enabling the [ShowBackdrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the **target** for the Sidebar. Alternatively, you can place an empty div container after the target container.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/getting-started/backdrop/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Backdrop.cs" %}
-{% include code-snippet/sidebar/getting-started/backdrop/backdrop.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/getting-started/backdrop/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Enabling Backdrop in ASP.NET MVC Sidebar Control](images/backdrop.png)
 
@@ -143,25 +115,11 @@ N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent
 
 Positioning the Sidebar to the right or left of the main content can be achieved by using the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Position) property. If the position is not set, the Sidebar will expand from the left to the body element. [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_EnablePersistence) will persist the component's state between page reloads. [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Change) event will be triggered when the state(expand/collapse) of the component is changed.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/getting-started/position/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Position.cs" %}
-{% include code-snippet/sidebar/getting-started/position/position.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/getting-started/position/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Changing Side Position in ASP.NET MVC Sidebar](images/position.png)
 
@@ -169,25 +127,11 @@ Positioning the Sidebar to the right or left of the main content can be achieved
 
 Animation transitions can be set while expanding or collapsing the Sidebar using the [Animate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Animate) property. By default , `Animate` property is set to true. [EnableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_EnableRtl) will display the sidebar in the right-to-left direction.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/animate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Animate.cs" %}
-{% include code-snippet/sidebar/animate/animate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/animate/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Animation in ASP.NET MVC Sidebar Control](images/backdrop.png)
 
@@ -195,25 +139,11 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 
 Sidebar can be closed on document click by setting [CloseOnDocumentClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_CloseOnDocumentClick) to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using [IsOpen](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_IsOpen) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/document-click/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Document-click.cs" %}
-{% include code-snippet/sidebar/document-click/document-click.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/document-click/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Close on Document Click in ASP.NET MVC Sidebar](images/document-click.png)
 
@@ -221,25 +151,11 @@ Sidebar can be closed on document click by setting [CloseOnDocumentClick](https:
 
 Expand or collapse the Sidebar while swiping in touch devices using [EnableGestures](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_EnableGestures) property. By default, `EnableGestures` is set to true.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/gestures/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Gestures.cs" %}
-{% include code-snippet/sidebar/gestures/gestures.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/gestures/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Enabling Gestures in ASP.NET MVC Sidebar Control](images/backdrop.png)
 

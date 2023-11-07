@@ -102,25 +102,11 @@ Add a series object to the chart by using [Series](https://help.syncfusion.com/c
 
 Since the JSON contains category data, set the [valueType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) for horizontal axis to Category. By default, the axis valueType is Numeric.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/stock-chart/getting-started/populateData/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="PopulateData.cs" %}
-{% include code-snippet/stock-chart/getting-started/populateData/populateData.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/stock-chart/getting-started/populateData/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Stock Chart control will be rendered in the default web browser.
 

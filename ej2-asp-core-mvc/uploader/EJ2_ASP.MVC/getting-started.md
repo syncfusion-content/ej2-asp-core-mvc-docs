@@ -87,25 +87,11 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 Now, add the Syncfusion ASP.NET MVC Uploader control in `~/Views/Home/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/uploader/getting-started/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Getting-started.cs" %}
-{% include code-snippet/uploader/getting-started/getting-started.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/uploader/getting-started/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Uploader control will be rendered in the default web browser.
 
@@ -115,77 +101,31 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 By default, the uploader control allows to upload files by drag the files from file explorer, and drop into the drop area.  You can configure any other external element as drop target using [DropArea](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_DropArea) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/uploader/drop-area/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Drop-area.cs" %}
-{% include code-snippet/uploader/drop-area/drop-area.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/uploader/drop-area/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Configure asynchronous settings
 
 The uploader control process the files to upload in Asynchronous mode by default. Define the properties [SaveUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) and [RemoveUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_RemoveUrl) to handle the save and remove action as follows.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/uploader/async-settings/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Async-settings.cs" %}
-{% include code-snippet/uploader/async-settings/async-settings.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/uploader/async-settings/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Handle success and failed upload
 
 You can handle the success and failure actions using the [Success](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) and [Failure](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) &nbsp;events. To handle these events, define the function and assign it to the corresponding event as follows.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/uploader/success-failed/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Success_failed.cs" %}
-{% include code-snippet/uploader/success-failed/success-failed.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/uploader/success-failed/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Uploader Actions](images/uploader-auto-01.png)
 

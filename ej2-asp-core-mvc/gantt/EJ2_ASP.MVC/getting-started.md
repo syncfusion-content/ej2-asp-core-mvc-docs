@@ -89,19 +89,6 @@ Now, add the Syncfusion ASP.NET MVC Gantt control in `~/Views/Home/Index.cshtml`
 
 Bind the data with Gantt control by using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property. It accepts an array of JavaScript object or the DataManager instance. The data source fields that are required to render the tasks are mapped to the Gantt control using the [TaskFields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskFields) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/getting-started/gantt/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Gantt.cs" %}
-{% include code-snippet/gantt/getting-started/gantt/gantt.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt/getting-started/gantt/razor %}
@@ -200,7 +187,6 @@ public class GanttDataSource
 }
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Gantt control will be rendered in the default web browser.
 
@@ -215,25 +201,11 @@ Gantt has an option to define columns as an array. You can customize the Gantt c
 * [TextAlign](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_TextAlign) : Changes the alignment of columns. By default, columns will be left aligned. To change the columns to right align, set `TextAlign` to right.
 * [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) : Formats the number and date values to standard or custom formats. Here, it is defined for the conversion of numeric values to currency.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/getting-started/definingColumns/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefiningColumns.cs" %}
-{% include code-snippet/gantt/getting-started/definingColumns/definingColumns.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt/getting-started/definingColumns/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Gantt with Column Values](images/gantt-column.png)
 
@@ -252,25 +224,11 @@ The following editing options are available to update the tasks in Gantt:
 
 Modify the task details through cell editing by setting the edit mode to `Auto`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/getting-started/cellEditing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CellEditing.cs" %}
-{% include code-snippet/gantt/getting-started/cellEditing/cellEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt/getting-started/cellEditing/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Cell Editing in ASP.NET MVC Gantt Control](images/gantt-cell-editing.png)
 
@@ -280,25 +238,11 @@ N> When the edit mode is set to `Auto`, you can change the cells to editable mod
 
 Modify the task details through dialog by setting the edit mode to `Dialog`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/getting-started/dialogEditing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DialogEditing.cs" %}
-{% include code-snippet/gantt/getting-started/dialogEditing/dialogEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt/getting-started/dialogEditing/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 N> In dialog editing mode, the edit dialog will appear while performing double-click action in both TreeGrid and chart sides.
 
@@ -306,44 +250,17 @@ N> In dialog editing mode, the edit dialog will appear while performing double-c
 
 Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [AllowTaskbarEditing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowTaskbarEditing) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/getting-started/taskbarEditing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="TaskbarEditing.cs" %}
-{% include code-snippet/gantt/getting-started/taskbarEditing/taskbarEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt/getting-started/taskbarEditing/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Taskbar Editing in ASP.NET MVC Gantt Control](images/gantt-taskbar-editing.png)
 
 ### Dependency editing
 
 Modify the task dependencies using mouse interactions by enabling the [AllowTaskbarEditing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowTaskbarEditing) property along with mapping the task dependency data source field to the [Dependency](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Dependency) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/getting-started/dependencyEditing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DependencyEditing.cs" %}
-{% include code-snippet/gantt/getting-started/dependencyEditing/dependencyEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -448,33 +365,16 @@ public class GanttDataSource
 }
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Enable filtering
 
 The filtering feature enables you to view the reduced amount of records based on filter criteria. Gantt provides the menu filtering support for each column. It can be enabled by setting the [AllowFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowFiltering) property to `true`. Filtering feature can also be customized using the [FilterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_FilterSettings) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/getting-started/filtering/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/gantt/getting-started/filtering/filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt/getting-started/filtering/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Filtering in ASP.NET MVC Gantt Control](images/filtering.png)
 
@@ -482,25 +382,11 @@ The filtering feature enables you to view the reduced amount of records based on
 
 The sorting feature enables you to order the records. It can be enabled by setting the [AllowSorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSorting) property to `true`. The sorting feature can be customized using the [SortSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SortSettings) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/getting-started/sorting/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Sorting.cs" %}
-{% include code-snippet/gantt/getting-started/sorting/sorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt/getting-started/sorting/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 [Sorting in ASP.NET MVC Gantt Control](images/sorting.png)
 
@@ -515,44 +401,15 @@ Predecessor or task dependency in the Gantt control is used to depict the relati
 
 You can show the relationship in tasks by using the [Dependency](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Dependency) property as shown in the following code example.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/predecessor/enableDependency/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="EnableDependency.cs" %}
-{% include code-snippet/gantt/predecessor/enableDependency/enableDependency.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt/predecessor/enableDependency/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Assigning Resources
 
 You can display and assign the resource for each task in the Gantt control. Create a collection of JSON object, which contains id, name, unit and group of the resources and assign it to the [Resources](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resources) property. Map these fields to the Gantt control using the [ResourceFields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ResourceFields) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/resources/assignResource/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="AssignResource.cs" %}
-{% include code-snippet/gantt/resources/assignResource/assignResource.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -746,7 +603,6 @@ public class GanttDataSource
 }
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Gantt with Resources](images/gantt-assign-resource.png)
 

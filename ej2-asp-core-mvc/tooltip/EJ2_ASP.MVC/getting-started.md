@@ -105,25 +105,11 @@ You can create Tooltips on multiple targets within a container. To do so, you ha
 
 Refer to the following code example to create a Tooltip on multiple targets within a container.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tooltip/getting-started/multiple-target-mvc/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/tooltip/getting-started/multiple-target-mvc/HomeController.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tooltip/getting-started/multiple-target-mvc/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Accessibility in ASP.NET MVC Tooltip](images/tooltip-container.png)
 

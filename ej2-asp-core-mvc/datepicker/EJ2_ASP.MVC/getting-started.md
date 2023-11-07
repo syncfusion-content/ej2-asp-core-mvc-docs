@@ -87,23 +87,11 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 Now, add the Syncfusion ASP.NET MVC DatePicker control in `~/Views/Home/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/datepicker/getting-started/getting-started/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Getting-started.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/datepicker/getting-started/getting-started/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC DatePicker control will be rendered in the default web browser.
 
@@ -117,25 +105,11 @@ To restrict the selection of date within a specified range, use the [Min](https:
 
 The below example demonstrates the DatePicker to select a date within a range from 5 to 27 in a current month.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/datepicker/getting-started/daterange/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/datepicker/getting-started/daterange/daterange.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/datepicker/getting-started/daterange/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC DatePicker with Minimum and Maximum Values Range](images/datepicker-values.png)
 

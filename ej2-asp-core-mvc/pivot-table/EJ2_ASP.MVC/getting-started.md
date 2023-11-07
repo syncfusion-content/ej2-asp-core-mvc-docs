@@ -89,19 +89,6 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 * The Pivot Table control further needs to be populated with an appropriate data source. For illustration purpose, a collection of objects mentioning the sales details of certain products over a period and region has been prepared. This sample data is assigned to the pivot table control through [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) class.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/initial-pivot/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Initial.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/initial-pivot/initial.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/initial-pivot/razor %}
@@ -188,7 +175,6 @@ public ActionResult Index()
 }
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Pivot Table control will be rendered in the default web browser.
 
@@ -214,25 +200,11 @@ In-order to define each field in the respective axis, the following basic proper
 
 In this illustration, "Year" and "Quarter" are added in column, "Country" and "Products" in row, and "Sold" and "Amount" in value section respectively.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/add-fields/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fields.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/add-fields/fields.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/add-fields/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Pivot Table with Fields](images/pivottable-fields.png)
 
@@ -242,25 +214,11 @@ Formatting defines a way in which values should be displayed. For example, forma
 
 N> Only fields from value section, which is in the form of numeric data values are applicable for formatting.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/format/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Format.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/format/format.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/format/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Formatting in ASP.NET MVC Pivot Table](images/pivottable-value-format.png)
 
@@ -268,25 +226,11 @@ N> Only fields from value section, which is in the form of numeric data values a
 
 The grouping bar feature automatically populates fields from the bound data source and allows end users to drag fields between different axes such as columns, rows, values, and filters, and alter pivot table at runtime. It also provides option to sort, filter and remove fields. It can be enabled by setting the [ShowGroupingBar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowGroupingBar) property to **true**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/groupingbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Groupingbar.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/groupingbar/groupingbar.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/groupingbar/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Grouping in ASP.NET MVC Pivot Table](images/pivottable-group.png)
 
@@ -294,25 +238,11 @@ The grouping bar feature automatically populates fields from the bound data sour
 
 The field list allows to add or remove fields and also rearrange the fields between different axes, including column, row, value, and filter along with filter and sort options dynamically at runtime. It can be enabled by setting the [ShowFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/fieldlist/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/fieldlist/fieldlist.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/fieldlist/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Pivot Table with Field List](images/pivottable-with-pivotfield.png)
 
@@ -322,25 +252,11 @@ The calculated field feature allows user to insert or add a new calculated field
 
 N> Calculated field is applicable only for value fields.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/calculatedfield/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Calculatedfield.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/calculatedfield/calculatedfield.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/calculatedfield/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Pivot Table with Calculate Field](images/pivottable-calculatefield.png)
 

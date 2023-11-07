@@ -87,19 +87,6 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 Now, add the Syncfusion ASP.NET MVC Tab control in `~/Views/Home/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tab/gettingstarted/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Gettingstarted.cs" %}
-{% include code-snippet/tab/gettingstarted/gettingstarted.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tab/gettingstarted/razor %}
@@ -108,7 +95,6 @@ Now, add the Syncfusion ASP.NET MVC Tab control in `~/Views/Home/Index.cshtml` p
 {% include code-snippet/tab/gettingstarted/gettingstarted.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Tab control will be rendered in the default web browser.
 
@@ -117,19 +103,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ## Initialize the Tab using JSON items collection
 
 The Tab can be rendered by defining a JSON array. The item is rendered with [header](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabHeader.html) text and [content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabTabItem.html#Syncfusion_EJ2_Navigations_TabTabItem_Content) for each Tab.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tab/items/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Items.cs" %}
-{% include code-snippet/tab/items/items.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -146,9 +119,6 @@ public ActionResult Index()
 }
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Initialize the Tab using HTML elements
 
@@ -173,25 +143,11 @@ You need to follow the below structure of HTML elements to render the Tab,
 
 * Add the HTML template data with its id attribute and add it in your `index.cshtml` file to initialize the Tab.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tab/htmldom/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Htmldom.cs" %}
-{% include code-snippet/tab/htmldom/htmldom.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tab/htmldom/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Tabs/ASP.NET%20MVC%20Razor%20Examples).
 

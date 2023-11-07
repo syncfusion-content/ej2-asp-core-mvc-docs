@@ -87,19 +87,6 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 To create simple ButtonGroup add the div tag with class name as `e-btn-group` and add `Button` component that should inside the `div` element in your **Index.cshtml** page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/button-group/getting-started/demo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/getting-started/demo/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/button-group/getting-started/demo/razor %}
@@ -108,9 +95,6 @@ To create simple ButtonGroup add the div tag with class name as `e-btn-group` an
 {% include code-snippet/button-group/getting-started/demo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 
@@ -122,19 +106,6 @@ After successful compilation of your application, simply press `F5` to run the a
 
 The following example shows a default rendering of ButtonGroup.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/button-group/getting-started/demo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/getting-started/demo/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/button-group/getting-started/demo/razor %}
@@ -143,9 +114,6 @@ The following example shows a default rendering of ButtonGroup.
 {% include code-snippet/button-group/getting-started/demo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Orientation
 
@@ -157,19 +125,6 @@ ButtonGroup can be aligned vertically by using the built-in CSS class `e-vertica
 
 The following example illustrates how to achieve vertical orientation in ButtonGroup.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/button-group/orientation/demo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/orientation/demo/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/button-group/orientation/demo/razor %}
@@ -178,9 +133,6 @@ The following example illustrates how to achieve vertical orientation in ButtonG
 {% include code-snippet/button-group/orientation/demo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> ButtonGroup does not support SplitButton component nesting in a vertical orientation.
 
