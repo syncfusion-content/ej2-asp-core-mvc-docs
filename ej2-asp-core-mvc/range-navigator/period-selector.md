@@ -147,4 +147,4 @@ The `disableRangeSelector` property allows the users to display only the period 
 
 ## See Also
 
-* [LightWeight](./light-weight/)
+* [LightWeight](./light-weight)
