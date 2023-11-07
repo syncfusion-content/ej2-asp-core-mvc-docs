@@ -25,7 +25,7 @@ N> Visual Studio Code displays a dialog box that asks `Do you trust the authors 
 <br/> * Yes, I trust the authors.
 
 2.Open the [Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) by selecting a menu using **View > Terminal** in VS Code.
-3.Run the following command in the terminal to create a new ASP.NET Core web application. 
+3.Run the following command in the terminal to create a new ASP.NET Core web application.
 
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}
@@ -35,7 +35,7 @@ dotnet new webapp -o AspNetCoreWebApp
 
 The `dotnet new` command creates new Razor Pages project in the AspNetCoreWebApp folder. Refer to this [topic](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=net60) for more information about .NET CLI commands.
 
-4.Run the following command in the terminal to open the project in current instance of the VS Code. 
+4.Run the following command in the terminal to open the project in current instance of the VS Code.
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}
 
@@ -56,7 +56,7 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 
 Refer to [NuGet packages topic](../nuget-packages/) for more details about NuGet packages.
 
-## Add Syncfusion ASP.NET Core Tag Helper 
+## Add Syncfusion ASP.NET Core Tag Helper
 
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
@@ -66,45 +66,52 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 {% endhighlight %}
 {% endtabs %}
 
-## Add style sheet
-
-Checkout the [Themes topic](../appearance/theme/) to learn different ways ([CDN](../common/adding-script-references), [NPM package](../common/adding-script-references#node-package-manager-npm), and [CRG](../common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+## Add Syncfusion ASP.NET Core Tag Helper
+Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="~/_Layout.cshtml" %}
+{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+
+@addTagHelper *, Syncfusion.EJ2
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add stylesheet and script resources
+
+Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls style -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
-</head>
-{% endhighlight %}
-{% endtabs %}
-
-## Add script reference
-In this getting started walk-through, the required scripts are referred using [CDN](../common/adding-script-references) inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
-
-{% tabs %}
-{% highlight c# tabtitle="~/_Layout.cshtml" %}
-<head>
-    ...
     <!-- Syncfusion ASP.NET Core controls script -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
+
 {% endhighlight %}
 {% endtabs %}
 
-## Register Syncfusion Script Manager
-Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
-{% highlight c# tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+
 <body>
     ...
     <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
+
 {% endhighlight %}
 {% endtabs %}
+
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls.
+
+N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Add ASP.NET Core Calendar control
 
