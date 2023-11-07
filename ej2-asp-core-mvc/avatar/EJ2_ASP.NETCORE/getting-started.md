@@ -45,26 +45,11 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentati
 
 Now, add the Syncfusion ASP.NET Core Avatar tag helper in `~/Pages/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/getting-started/core/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/avatar/getting-started/core/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/getting-started/core/HomeController.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![ASP.NET Core Avatar Control](images/avatar.PNG)
 

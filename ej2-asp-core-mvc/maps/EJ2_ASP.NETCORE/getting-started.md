@@ -59,6 +59,7 @@ Here, script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 
 <head>
     ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
