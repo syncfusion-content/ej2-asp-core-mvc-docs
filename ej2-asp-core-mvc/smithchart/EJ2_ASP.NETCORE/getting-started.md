@@ -58,11 +58,16 @@ Here, script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 
 <head>
     ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
+
+N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+
+## Register Syncfusion Script Manager
 
 Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
 
@@ -77,8 +82,6 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 {% endhighlight %}
 {% endtabs %}
-
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Add ASP.NET Core SmithChart Control
 
@@ -109,25 +112,11 @@ The following two ways demonstrate adding two series to the Smith chart.
 * First series Transmission1 shows dataSource bound series.
 * Second series Transmission2 shows points bound series.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/series/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/smithchart/getting-started/series/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Series.cs" %}
-{% include code-snippet/smithchart/getting-started/series/series.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core SmithChart with Series](images/smithchart-series.png)
 
@@ -135,25 +124,11 @@ The following two ways demonstrate adding two series to the Smith chart.
 
 smithchart `title` API used to add title for smithchart. In that `text` API used to set text of the title. API `visible` used to toggle the title.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/title/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/smithchart/getting-started/title/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/smithchart/getting-started/title/title.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core SmithChart with Title](images/smithchart-with-title.png)
 
@@ -161,25 +136,11 @@ smithchart `title` API used to add title for smithchart. In that `text` API used
 
 To use marker in series and its customization in Smith chart, use series `marker` API. To display marker for a particular series, specify the `marker visible` to true. The following sample marker is enabled for the first series only.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/marker/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/smithchart/getting-started/marker/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Marker.cs" %}
-{% include code-snippet/smithchart/getting-started/marker/marker.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core SmithChart with Marker](images/smithchart-with-marker.png)
 
@@ -187,25 +148,11 @@ To use marker in series and its customization in Smith chart, use series `marker
 
 To use marker data label and its customization in Smith chart, use marker `dataLabel`. To display data label for a particular series marker, specify the `dataLabel visible` to true in that series `marker`. The following sample data label is enabled for the first series.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/data-label/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/smithchart/getting-started/data-label/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data-label.cs" %}
-{% include code-snippet/smithchart/getting-started/data-label/data-label.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core SmithChart with DataLabel](images/smithchart-with-datalabel.png)
 
@@ -213,51 +160,21 @@ To use marker data label and its customization in Smith chart, use marker `dataL
 
 The legend feature is used to denote the corresponding series. You can enable the legend for the smithchart by setting the [`visible`] property to true in [`legendSettings`] object. The following sample shows enabling legend for Smith chart. The series name can be customized using the series `name`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/legend/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/smithchart/getting-started/legend/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Legend.cs" %}
-{% include code-snippet/smithchart/getting-started/legend/legend.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Enable tooltip for the Smith chart series
 
 The tooltip feature is used to show the values of the current point. You can enable tooltip by setting the [`visible`] property to true in [`tooltipSettings`] object. The following sample shows enabling tooltip for Smith chart series collection.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/tooltip/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/smithchart/getting-started/tooltip/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% include code-snippet/smithchart/getting-started/tooltip/tooltip.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core SmithChart with Tooltip](images/smithchart-with-tooltip.png)
 

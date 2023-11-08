@@ -58,11 +58,16 @@ Here, script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 
 <head>
     ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
+
+N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+
+## Register Syncfusion Script Manager
 
 Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
 
@@ -77,8 +82,6 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 {% endhighlight %}
 {% endtabs %}
-
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Add ASP.NET Core Bullet Chart control
 
@@ -100,8 +103,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 Now, assign the data to `dataSource` property. **value** and **target** values should be mapped with `valueField` and `targetField` respectively.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/getting-started/default/tagHelper %}
@@ -115,23 +116,9 @@ public class DefaultBulletData
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/bullet-chart/getting-started/default/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/bullet-chart/getting-started/default/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Add Bullet Chart Title
 
 You can add a title using `title` property to the bullet chart to provide quick information to the user about the data plotted in the bullet chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -146,25 +133,11 @@ public class DefaultBulletData
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/bullet-chart/getting-started/title/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/bullet-chart/getting-started/title/title.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![ASP.NET Core Bullet Chart with Title](images/bullet-chart-with-title.png)
 
 ## Ranges
 
 You can add a range using `e-bullet-range` of the `e-bullet-range-collection`.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -179,23 +152,9 @@ public class DefaultBulletData
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/bullet-chart/getting-started/ranges/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Ranges.cs" %}
-{% include code-snippet/bullet-chart/getting-started/ranges/ranges.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Tooltip
 
 You can use tooltip for the bullet chart by setting the `enable` property to true in `e-bulletchart-tooltipsettings`.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -209,18 +168,6 @@ public class DefaultBulletData
 }
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/bullet-chart/getting-started/tooltip/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% include code-snippet/bullet-chart/getting-started/tooltip/tooltip.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ASP.NET Core Bullet Chart with Tooltip](images/bullet-chart-with-tooltip.png)
 
