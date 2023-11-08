@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Multiline in ##Platform_Name## Textbox Component
-description: Learn here all about Multiline in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
+title: Multiline in ASP.NET Core Textbox Component
+description: Learn here all about Multiline in Syncfusion ASP.NET Core Textbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Multiline
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

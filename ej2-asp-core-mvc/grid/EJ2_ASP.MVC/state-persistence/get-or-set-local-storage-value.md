@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Get or Set Local Storage Value in ##Platform_Name## Grid Component
-description: Learn here all about Get or Set Local Storage Value in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Get or Set Local Storage Value in ASP.NET MVC Grid Component
+description: Learn here all about Get or Set Local Storage Value in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Get or Set Local Storage Value
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 

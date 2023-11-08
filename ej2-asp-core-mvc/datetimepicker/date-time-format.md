@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Date Time Format in ##Platform_Name## Datetimepicker Component
-description: Learn here all about Date Time Format in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Date Time Format in ASP.NET MVC Datetimepicker Component
+description: Learn here all about Date Time Format in Syncfusion ASP.NET MVC Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Date Time Format
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
