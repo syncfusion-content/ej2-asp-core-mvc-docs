@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Set Cursor Position While Focus On The Input Textbox in ##Platform_Name## Maskedtextbox Component
-description: Learn here all about Set Cursor Position While Focus On The Input Textbox in Syncfusion ##Platform_Name## Maskedtextbox component of syncfusion and more.
+title: Set Cursor Position While Focus On The Input Textbox in ASP.NET MVC Maskedtextbox Component
+description: Learn here all about Set Cursor Position While Focus On The Input Textbox in Syncfusion ASP.NET MVC Maskedtextbox Component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Set Cursor Position While Focus On The Input Textbox
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: State Persistence in ##Platform_Name## Grid Component
-description: Learn here all about State Persistence in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: State Persistence in ASP.NET MVC Grid Component
+description: Learn here all about State Persistence in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: State Persistence
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
