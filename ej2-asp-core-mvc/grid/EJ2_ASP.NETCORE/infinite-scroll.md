@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Infinite Scroll in Syncfusion ASP.NET Core Grid Control | Syncfusion
-description: Learn here all about Infinite Scroll in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Infinite Scroll in Syncfusion ASP.NET Core Grid Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Infinite Scroll
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

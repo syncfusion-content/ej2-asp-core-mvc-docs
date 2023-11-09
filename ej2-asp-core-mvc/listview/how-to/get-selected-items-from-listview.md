@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Get Selected Items From Listview in ##Platform_Name## Listview Control | Syncfusion
-description: Learn here all about Get Selected Items From Listview in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Get Selected Items From Listview in ASP.NET Core Listview Control | Syncfusion
+description: Learn here all about Get Selected Items From Listview in Syncfusion ASP.NET Core Listview Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Get Selected Items From Listview
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
