@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core MVC using HTML and Tag Helpers
 
-This article provides step-by-step instructions for building ASP.NET Core MVC application with Accordion control using HTML and Tag helpers in Visual Studio. You can utilize any one of the `HTML` or `Tag` Helpers to create the ASP.NET Core MVC application Accordion control in Visual Studio.
+This article guides you in building an ASP.NET Core MVC app with an `Accordion` control using HTML and Tag helpers in Visual Studio. Choose any `HTML` or `Tag` Helper to create the Accordion in your ASP.NET Core MVC app.
 
 ## Prerequisites
 
@@ -18,9 +18,7 @@ This article provides step-by-step instructions for building ASP.NET Core MVC ap
 
 ## Create ASP.NET Core MVC application
 
- * [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
-
- * [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+ * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-8.0&tabs=visual-studio#create-a-web-app)
 
 ## Install ASP.NET Core package in the application
 
@@ -38,21 +36,20 @@ N> Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nu
 
 ## Add Syncfusion ASP.NET Core namespace and Tag Helpers
 
-Open `~/Views/_ViewImports.cshtml` file and add the `Syncfusion.EJ2` namespace or `Syncfusion.EJ2` TagHelper.
+Open `~/Views/_ViewImports.cshtml` file and add the `Syncfusion.EJ2` namespace or `Syncfusion.EJ2` Tag Helper.
 
 {% tabs %}
+{% highlight c# tabtitle="Tag Helpers" %}
+
+@addTagHelper *, Syncfusion.EJ2
+
+{% endhighlight %}
 {% highlight c# tabtitle="HTML Helpers" hl_lines="3" %}
 
 @using WebApplication1
 @using WebApplication1.Models
 @using Syncfusion.EJ2
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-
-{% endhighlight %}
-
-{% highlight c# tabtitle="Tag Helpers" %}
-
-@addTagHelper *, Syncfusion.EJ2
 
 {% endhighlight %}
 {% endtabs %}
@@ -75,22 +72,13 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Views
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls.
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core MVC  application, and to have the expected appearance for Syncfusion ASP.NET Core controls.
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core MVC application.
 
 Also, register the script manager at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="HTML Helpers" %}
-
-<body>
-    ...
-    <!-- Syncfusion Script Manager -->
-    @Html.EJS().ScriptManager()
-</body>
-
-{% endhighlight %}
 {% highlight cshtml tabtitle="Tag Helpers" %}
 
 <body>
@@ -100,17 +88,21 @@ Also, register the script manager at the end of `<body>` in the `~/Views/Shared/
 </body>
 
 {% endhighlight %}
-{% endtabs %}
+{% highlight cshtml tabtitle="HTML Helpers" %}
 
-## Add ASP.NET Core MVC Accordion control
+<body>
+    ...
+    <!-- Syncfusion Script Manager -->
+    @Html.EJS().ScriptManager()
+</body>
 
-Now, add the Syncfusion ASP.NET Core MVC Accordion control in `~/Home/Index.cshtml` page.
-
-{% tabs %}
-{% highlight razor tabtitle="HTML Helpers" %}
-{% include code-snippet/accordion/getting-started/data/razor %}
 {% endhighlight %}
 {% endtabs %}
+
+## Add ASP.NET Core Accordion control
+
+Now, add the Syncfusion ASP.NET Core Accordion control in `~/Home/Index.cshtml` page.
+
 {% tabs %}
 {% highlight cshtml tabtitle="Tag Helpers" %}
 {% include code-snippet/accordion/getting-started/data/tagHelper %}
@@ -118,8 +110,13 @@ Now, add the Syncfusion ASP.NET Core MVC Accordion control in `~/Home/Index.csht
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/accordion/getting-started/data/data.cs %}
 {% endhighlight %}
+{% highlight razor tabtitle="HTML Helpers" %}
+{% include code-snippet/accordion/getting-started/data/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% tabs %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the app. Then, the Syncfusion ASP.NET MVC Accordion control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the app. Then, the Syncfusion ASP.NET Core Accordion control will be rendered in the default web browser.
 
 ![ASP.NET MVC Accordion Control](images/accordion-control.PNG)
