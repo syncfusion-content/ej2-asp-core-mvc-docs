@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Submit Name And Value In Form in ##Platform_Name## Switch Control | Syncfusion
-description: Learn here all about Submit Name And Value In Form in Syncfusion ##Platform_Name## Switch component of Syncfusion Essential JS 2 and more.
+title: Submit Name And Value In Form in ASP.NET Core Switch Control | Syncfusion
+description: Learn here all about Submit Name And Value In Form in Syncfusion ASP.NET Core Switch Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Submit Name And Value In Form
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

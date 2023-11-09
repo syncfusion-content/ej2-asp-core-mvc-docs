@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Context Menu Control | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ASP.Net Core Context Menu Control | Syncfusion
+description: Learn here all about Data Binding in Syncfusion ASP.Net Core Context Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.Net Core
 documentation: ug
 ---
 

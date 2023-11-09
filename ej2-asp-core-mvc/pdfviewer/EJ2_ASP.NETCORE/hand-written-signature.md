@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hand Written Signature in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
-description: Learn here all about Hand Written Signature in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Hand Written Signature in ASP.NET CORE PDF Viewer Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Hand Written Signature
 publishingplatform: ej2-asp-core-mvc
