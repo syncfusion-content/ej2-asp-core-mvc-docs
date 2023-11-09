@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Drop Down List Component
-description: Learn here all about data binding in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ASP.NET Core Drop Down List Component
+description: Learn here all about data binding in Syncfusion ASP.NET Core Drop Down List Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

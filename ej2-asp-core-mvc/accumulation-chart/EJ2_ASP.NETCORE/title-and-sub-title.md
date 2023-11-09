@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Title And Sub Title in ##Platform_Name## Accumulation Chart Component
-description: Learn here all about Title And Sub Title in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
+title: Title And Sub Title in ASP.NET Core Accumulation Chart Component
+description: Learn here all about Title And Sub Title in Syncfusion ASP.NET Core Accumulation Chart Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Title And Sub Title
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

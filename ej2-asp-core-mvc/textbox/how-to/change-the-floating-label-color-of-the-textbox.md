@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Change The Floating Label Color Of The Textbox in ##Platform_Name## Textbox Component
-description: Learn here all about Change The Floating Label Color Of The Textbox in Syncfusion ##Platform_Name## Textbox component of syncfusion and more.
+title: Change The Floating Label Color Of The Textbox in ASP.NET Core Textbox Component
+description: Learn here all about Change The Floating Label Color Of The Textbox in Syncfusion ASP.NET Core Textbox Component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Change The Floating Label Color Of The Textbox
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
 
-# Change the floating label color of the TextBox
+# Change the Floating Label color of the TextBox
 
 You can change the floating label color of the TextBox for both `success` and `warning` validation states by applying the following CSS styles.
 

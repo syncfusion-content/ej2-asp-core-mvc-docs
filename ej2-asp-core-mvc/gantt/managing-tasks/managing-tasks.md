@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Managing Tasks in Syncfusion ##Platform_Name## Gantt Component
-description: Learn here all about Managing Tasks in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+title: Managing Tasks in Syncfusion ASP.NET Core Gantt Component
+description: Learn here all about Managing Tasks in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Managing Tasks
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

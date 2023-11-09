@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Add Google Fonts in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about Add Google Fonts in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Add Google Fonts in ASP.NET Core Rich Text Editor Component
+description: Learn here all about Add Google Fonts in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Google Fonts
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

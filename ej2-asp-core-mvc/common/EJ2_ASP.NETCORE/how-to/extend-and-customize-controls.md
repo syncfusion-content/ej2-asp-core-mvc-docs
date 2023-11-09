@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Extend and Customize ASP.NET Core Controls | Syncfusion
-description: Checkout the documentation and learn about Extend and Customize Syncfusion ##Platform_Name## Controls.
+description: Checkout the documentation and learn about Extend and Customize Syncfusion ASP.NET Core Controls.
 platform: ej2-asp-core-mvc
 control: Common
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
