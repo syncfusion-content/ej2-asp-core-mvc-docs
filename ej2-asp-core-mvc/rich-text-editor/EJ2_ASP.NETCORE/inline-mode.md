@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Inline Mode in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about Inline Mode in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Inline Mode in ASP.NET Core Rich Text Editor Component
+description: Learn here all about Inline Mode in Syncfusion ASP.NET Core Rich Text Editor Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Inline Mode
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

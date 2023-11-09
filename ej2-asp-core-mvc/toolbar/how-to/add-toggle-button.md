@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Add Toggle Button in ##Platform_Name## Toolbar Control | Syncfusion
-description: Learn here all about Add Toggle Button in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: Add Toggle Button in ASP.NET Core Toolbar Control | Syncfusion
+description: Learn here all about Add Toggle Button in Syncfusion ASP.NET Core Toolbar Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Toggle Button
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Position Sizing Of Panels in ##Platform_Name## Dashboard Layout Component
-description: Learn here all about Position Sizing of Panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
+title: Position Sizing Of Panels in ASP.NET Core Dashboard Layout Component
+description: Learn here all about Position Sizing of Panels in Syncfusion ASP.NET Core Dashboard Layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Position Sizing Of Panels
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

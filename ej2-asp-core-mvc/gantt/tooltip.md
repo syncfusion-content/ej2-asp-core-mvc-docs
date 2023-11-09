@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Gantt Component
-description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+title: Tooltip in ASP.NET Core Gantt Component
+description: Learn here all about Tooltip in Syncfusion ASP.NET Core Gantt Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
