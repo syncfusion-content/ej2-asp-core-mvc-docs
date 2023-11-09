@@ -170,17 +170,17 @@ this.dataManager = new DataManager({
             …………..
         </ColumnsDirective>
 </GridComponent>
-```                
+```
 
 3.In the beforeDataBound event, we set the args.count as 0.5 million to perform scrolling with 0.5 million records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 0.5 million means it will directly assigned the original segmented count instead of 0.5 million.
 
 ```csharp
     beforeDataBound(args) {
         // storing the total records count which means 2 million records count
-        totalRecords = args.count; 
+        totalRecords = args.count;
 
         // change the count with respect to maxRecordsPerPageSet (maxRecordsPerPageSet = 500000)
-        args.count = args.count - ((pageSet - 1) * maxRecordsPerPageSet) > maxRecordsPerPageSet ? maxRecordsPerPageSet : args.count - ((pageSet - 1) * maxRecordsPerPageSet);   
+        args.count = args.count - ((pageSet - 1) * maxRecordsPerPageSet) > maxRecordsPerPageSet ? maxRecordsPerPageSet : args.count - ((pageSet - 1) * maxRecordsPerPageSet);
     }
 ```
 
@@ -188,7 +188,7 @@ this.dataManager = new DataManager({
 
 ```csharp
 <div className="pagearea1">
-    <ButtonComponent cssClass='e-info prevbtn' onClick={this.prevBtnClick} style={{ width: '100%' }}>Load Previous Set...</ButtonComponent>
+    <ButtonComponent cssClass='e-info prevbtn' onClick={this.prevBtnClick} style="{ width: '100%' }">Load Previous Set...</ButtonComponent>
 </div>
 
 <GridComponent id='grid' ref={g => this.grid = g} dataSource={this.dataManager} enableVirtualization={true} pageSettings={this.pageSettings} height={360} beforeDataBound={this.beforeDataBound} >
@@ -198,7 +198,7 @@ this.dataManager = new DataManager({
     </ColumnsDirective>
 </GridComponent>
 <div className="pagearea2">
-    <ButtonComponent cssClass='e-info nxtbtn' onClick={this.nxtBtnClick} style={{ width: '100%' }}>Load Next Set...</ButtonComponent>
+    <ButtonComponent cssClass='e-info nxtbtn' onClick={this.nxtBtnClick} style="{ width: '100%' }">Load Next Set...</ButtonComponent>
 </div>
 ```
 
@@ -213,7 +213,7 @@ this.dataManager = new DataManager({
             this.rerenderGrid(); // Re-render the Grid component.
         }
     }
- ``` 
+ ```
 
  You can find the full code sample from the below GitHub location.
 
