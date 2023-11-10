@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Template Engine in ##Platform_Name## Common Component
-description: Learn here all about Template Engine in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Template Engine in ASP.NET MVC Common Component
+description: Learn here all about Template Engine in Syncfusion ASP.NET MVC Common component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Template Engine
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
