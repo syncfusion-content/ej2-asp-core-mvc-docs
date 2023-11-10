@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Listview Component
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ASP.NET MVC Listview Component
+description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Listview Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
