@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Spinner Component
-description: Checkout and learn about getting started with ##Platform_Name## Spinner component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Spinner Component
+description: Checkout and learn about getting started with ASP.NET MVC Spinner Component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Asp Mvc
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Calculated Field in ##Platform_Name## Syncfusion Pivot Table Component
-description: Learn here all about Calculated Field in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Calculated Field in ASP.NET MVC Syncfusion Pivot Table Component
+description: Learn here all about Calculated Field in Syncfusion ASP.NET MVC Pivot Table Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Calculated Field
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
 
-# Calculated Field in ##Platform_Name## Pivot Table Component
+# Calculated Field in ASP.NET MVC Pivot Table Component
 
 Allows end user to create a new calculated field in the pivot table, based on available fields from the bound data source or using simple formula with basic arithmetic operators. It can be added at runtime through the built-in dialog, invoked from Field List UI. To do so, set the [`AllowCalculatedField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true** in the pivot table. End user can now see a "CALCULATED FIELD" button enabled in Field List UI automatically, which on clicking will invoke the calculated field dialog and perform necessary operation.
 
