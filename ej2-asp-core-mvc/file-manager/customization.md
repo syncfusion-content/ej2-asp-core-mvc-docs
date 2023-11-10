@@ -14,6 +14,7 @@ documentation: ug
 The file manager component allows customizing its functionalities like, context menu, searching, uploading, toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager,
 
 * [Context menu customization](#context-menu-customization)
+* [Details view customization](#details-view-customization)
 * [Navigation pane customization](#navigation-pane-customization)
 * [Show/Hide file extension](#showhide-file-extension)
 * [Show/Hide hidden items](#showhide-hidden-items)
@@ -54,6 +55,37 @@ The context menu settings like, items to be displayed on files, folders and layo
 Output be like the below.
 
 ![FileManager contextmenu ](./images/contextmenu_item.PNG)
+
+## Details view customization
+
+The details view settings like, column width, header text, template for each field can be customized using [detailsViewSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_DetailsViewSettings) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/details-view/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% include code-snippet/file-manager/details-view/HomeController_mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/details-view/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% include code-snippet/file-manager/details-view/HomeController_mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![FileManager details-view ](./images/details-view.png)
 
 ## Navigation pane customization
 

@@ -906,7 +906,7 @@ Validation rules
 <br>
 
 {% highlight html %}
-    <ej-date-picker id="date" validation-rules="new Dictionary<string, object>() {{ 'required',true}}"></ej-date-picker>
+    <ej-date-picker id="date" validation-rules="new Dictionary<string, object>() { { 'required' , true} }"></ej-date-picker>
 {% endhighlight %}
 
 </td>
@@ -937,7 +937,7 @@ Validation message
 <br>
 
 {% highlight html %}
-    <ej-date-picker id="date" validation-rules="new Dictionary<string, object>() {{ 'required',true}}" validation-messages="new Dictionary<string, object>() {{ 'required','Required Date value'}}"></ej-date-picker>
+    <ej-date-picker id="date" validation-rules="new Dictionary<string, object>() { { 'required' , true} }" validation-messages="new Dictionary<string, object>() { { 'required' ,'Required Date value'} }"></ej-date-picker>
 {% endhighlight %}
 
 </td>
@@ -957,7 +957,7 @@ Validation message
         }};
         var formObject = new ej.inputs.FormValidator('#form-element', options);
         });
-    </script>  
+    </script>
 {% endhighlight %}
 
 </td>
@@ -1349,7 +1349,7 @@ Close
 <b>Event:</b> <i>close</i>
 <br>
 {% highlight html %}
-    <ej-date-picker id="date" close="onClose"></ej-date-picker>  
+    <ej-date-picker id="date" close="onClose"></ej-date-picker>
 
     <script>
         function onClose() { }
@@ -1514,7 +1514,7 @@ Navigation
 <b>Event:</b> <i>navigate</i>
 <br>
 {% highlight html %}
-    <ej-date-picker id="date" navigate="onNavigate"></ej-date-picker>  
+    <ej-date-picker id="date" navigate="onNavigate"></ej-date-picker>
 
     <script>
         function onNavigate() { }

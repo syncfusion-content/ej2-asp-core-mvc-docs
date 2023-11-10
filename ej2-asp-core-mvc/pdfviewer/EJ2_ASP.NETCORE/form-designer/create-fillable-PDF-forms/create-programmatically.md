@@ -8,7 +8,6 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-
 # Create form fields programmatically
 
 The PDF Viewer control provides the option to add, edit and delete the Form Fields. The Form Fields type supported by the PDF Viewer Control are:
@@ -27,7 +26,7 @@ The PDF Viewer control provides the option to add, edit and delete the Form Fiel
 Using addFormField method, the form fields can be added to the PDF document programmatically. We need to pass two parameters in this method. They are Form Field Type and Properties of Form Field Type. To add form field programmatically, Use the following code.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -47,7 +46,7 @@ Using addFormField method, the form fields can be added to the PDF document prog
     }
 </script>
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -75,7 +74,7 @@ Using addFormField method, the form fields can be added to the PDF document prog
 Using updateFormField method, Form Field can be updated programmatically. We should get the Form Field object/Id from FormFieldCollections property that you would like to edit and pass it as a parameter to updateFormField method. The second parameter should be the properties that you would like to update for Form Field programmatically. We have updated the value and background Color properties of Textbox Form Field.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -97,7 +96,7 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -127,7 +126,7 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 Using deleteFormField method, the form field can be deleted programmatically. We should retrieve the Form Field object/Id from FormFieldCollections property that you would like to delete and pass it as a parameter to deleteFormField method. To delete a Form Field programmatically, use the following code.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -148,7 +147,7 @@ Using deleteFormField method, the form field can be deleted programmatically. We
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -182,7 +181,7 @@ When the download icon is selected on the toolbar, the Form Fields will be saved
 You can invoke download action using following code snippet.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
@@ -198,7 +197,7 @@ You can invoke download action using following code snippet.
     }
 </script>
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -229,7 +228,7 @@ When the print icon is selected on the toolbar, the PDF document will be printed
 You can invoke print action using the following code snippet.,
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -248,7 +247,7 @@ You can invoke print action using the following code snippet.,
 
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -282,7 +281,7 @@ The form fields in the PDF Document will be validated when the `enableFormFields
 Add the following code snippet to validate the form fields,
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -299,7 +298,7 @@ Add the following code snippet to validate the form fields,
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -496,21 +495,35 @@ The following code shows how to export the form field data as an object and impo
 
 ```
 
-## Signature and initial fields settings
+
+## Form Field Properties 
+
+Form field properties in Syncfusion PDF Viewer allow you to customize and interact with form fields embedded within PDF documents. This documentation provides an overview of the form field properties supported by the Syncfusion PDF Viewer and explains how to use them effectively.
+
+  * Textbox
+  * Password
+  * CheckBox
+  * RadioButton
+  * ListBox
+  * DropDown
+  * SignatureField
+  * InitialField
+
+### Signature and initial fields settings
 
 Using the `updateFormField` method, the form fields can be updated programmatically.
 
 The following code example explains how to update the signature field properties on a button click.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf">
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 
@@ -521,19 +534,19 @@ The following code example explains how to update the signature field properties
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         var formField = viewer.retrieveFormFields();
         viewer.formDesignerModule.updateFormField(formField[0], {
-            name: 'Initial',
+            name: 'Signature',
             isReadOnly: true,
             visibility: 'visible',
             isRequired: false,
             isPrint: true,
-            tooltip: 'Initial',
+            tooltip: 'Signature',
             thickness: 4
         });
     }
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <button id="updateProperties" onclick="updateProperties()">Update Properties</button>
 
@@ -541,7 +554,7 @@ The following code example explains how to update the signature field properties
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    serviceUrl="/api/PdfViewer"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf">
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 
@@ -552,12 +565,12 @@ The following code example explains how to update the signature field properties
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         var formField = viewer.retrieveFormFields();
         viewer.formDesignerModule.updateFormField(formField[0], {
-            name: 'Initial',
+            name: 'Signature',
             isReadOnly: true,
             visibility: 'visible',
             isRequired: false,
             isPrint: true,
-            tooltip: 'Initial',
+            tooltip: 'Signature',
             thickness: 4
         });
     }
@@ -565,3 +578,1339 @@ The following code example explains how to update the signature field properties
 
 {% endhighlight %}
 {% endtabs %}
+
+
+The following code example explains how to update the properties of the signature field added to the document from the form designer toolbar.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload"
+                   >
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.signatureFieldSettings = {
+            // Set the name of the form field element.
+            name: 'Signature',
+            // Specify whether the signature field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the signature field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'Signature',
+            // Set the thickness of the signature field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Specify the properties of the signature indicator in the signature field.
+            signatureIndicatorSettings: {
+                opacity: 1,
+                backgroundColor: '#daeaf7ff',
+                height: 50,
+                fontSize: 15,
+                text: 'Signature Field',
+                color: 'white'
+            }
+        }
+    }
+
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload"
+                   >
+    </ejs-pdfviewer>
+</div>
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.signatureFieldSettings = {
+            // Set the name of the form field element.
+            name: 'Signature',
+            // Specify whether the signature field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the signature field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'Signature',
+            // Set the thickness of the signature field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Specify the properties of the signature indicator in the signature field.
+            signatureIndicatorSettings: {
+                opacity: 1,
+                backgroundColor: '#daeaf7ff',
+                height: 50,
+                fontSize: 15,
+                text: 'Signature Field',
+                color: 'white'
+            }
+        }
+    }
+
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+
+![Signature Field Settings](../../../pdfviewer/images/signature_field.png)
+
+The following code example explains how to update the properties of the initial field added to the document from the form designer toolbar.
+
+<script type="text/javascript">
+
+window.onload = function () {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    viewer.initialFieldSettings  = {
+        // Set the name of the form field element.
+        name: 'Initial',
+        // Specify whether the initial field is in read-only or read-write mode.
+        isReadOnly: false,
+        // Set the visibility of the form field.
+        visibility: 'visible',
+        // Specify whether the field is mandatory or not.
+        isRequired: false,
+        // Specify whether to print the initial field.
+        isPrint: true,
+        // Set the text to be displayed as tooltip.
+        tooltip: 'Initial',
+        // Set the thickness of the initial field. To hide the borders, set the value to 0 (zero).
+        thickness: 4,
+        // Specify the properties of the initial indicator in the initial field.
+        initialIndicatorSettings: {
+        opacity: 1,
+        backgroundColor: '#daeaf7ff',
+        height: 50,
+        fontSize: 15,
+        text: 'Initial Field',
+        color: 'white'
+        },
+    }
+}
+
+</script>
+
+![Initial Field Settings](../../../pdfviewer/images/initialfield.png)
+
+### Textbox field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the Textbox field properties on a button click.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+            name: 'Textbox',
+            isReadOnly: false,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'Textbox',
+            thickness: 4,
+            value:'Textbox',
+            fontFamily: 'Courier',
+            fontSize: 10,
+            fontStyle: 'None',
+            color: 'black',
+            borderColor: 'black',
+            backgroundColor: '#daeaf7ff',
+            alignment: 'Left',
+            maxLength: 0,
+            isMultiline: false,
+            bounds: { X: 146, Y: 229, Width: 150, Height: 24 }
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+            name: 'Textbox',
+            isReadOnly: false,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'Textbox',
+            thickness: 4,
+            value:'Textbox',
+            fontFamily: 'Courier',
+            fontSize: 10,
+            fontStyle: 'None',
+            color: 'black',
+            borderColor: 'black',
+            backgroundColor: '#daeaf7ff',
+            alignment: 'Left',
+            maxLength: 0,
+            isMultiline: false,
+            bounds: { X: 146, Y: 229, Width: 150, Height: 24 }
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code example explains how to update the properties of the textbox field added to the document from the form designer toolbar.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.textFieldSettings = {
+            // Set the name of the form field element.
+            name: 'Textbox',
+            // Specify whether the Textbox field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the Textbox field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'Textbox',
+            // Set the thickness of the Textbox field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Set the value of the form field element.
+            value:'Textbox',
+            // Set the font family of the textbox field.
+            fontFamily: 'Courier',
+            // Set the font size of the textbox field.
+            fontSize: 10,
+            // Specify the font style
+            fontStyle: 'None',
+            // Set the font color of the textbox field.
+            color: 'black',
+            // Set the border color of the textbox field.
+            borderColor: 'black',
+            // Set the background color of the textbox field.
+            backgroundColor: '#daeaf7ff',
+            // Set the alignment of the text.
+            alignment: 'Left',
+            // Set the maximum character length.
+            maxLength: 0,
+            // Allows multiline input in the text field. FALSE, by default.
+            isMultiline: false
+        }
+    }
+
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.textFieldSettings = {
+            // Set the name of the form field element.
+            name: 'Textbox',
+            // Specify whether the Textbox field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the Textbox field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'Textbox',
+            // Set the thickness of the Textbox field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Set the value of the form field element.
+            value:'Textbox',
+            // Set the font family of the textbox field.
+            fontFamily: 'Courier',
+            // Set the font size of the textbox field.
+            fontSize: 10,
+            // Specify the font style
+            fontStyle: 'None',
+            // Set the font color of the textbox field.
+            color: 'black',
+            // Set the border color of the textbox field.
+            borderColor: 'black',
+            // Set the background color of the textbox field.
+            backgroundColor: '#daeaf7ff',
+            // Set the alignment of the text.
+            alignment: 'Left',
+            // Set the maximum character length.
+            maxLength: 0,
+            // Allows multiline input in the text field. FALSE, by default.
+            isMultiline: false
+        }
+    }
+
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Textbox Field Settings](../../../pdfviewer/images/Textbox.png)
+
+### Password field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the Password field properties on a button click.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+            name: 'Password',
+            isReadOnly: false,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'Password',
+            thickness: 4,
+            value:'Password',
+            fontFamily: 'Courier',
+            fontSize: 10,
+            fontStyle: 'None',
+            color: 'black',
+            borderColor: 'black',
+            backgroundColor:'#daeaf7ff',
+            alignment: 'Left',
+            maxLength: 0,
+            bounds: { X: 148, Y: 229, Width: 150, Height: 24 }
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+            name: 'Password',
+            isReadOnly: false,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'Password',
+            thickness: 4,
+            value:'Password',
+            fontFamily: 'Courier',
+            fontSize: 10,
+            fontStyle: 'None',
+            color: 'black',
+            borderColor: 'black',
+            backgroundColor:'#daeaf7ff',
+            alignment: 'Left',
+            maxLength: 0,
+            bounds: { X: 148, Y: 229, Width: 150, Height: 24 }
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+
+The following code example explains how to update the properties of the password field added to the document from the form designer toolbar.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+            viewer.passwordFieldSettings = {
+            // Set the name of the form field element.
+            name: 'Password',
+            // Specify whether the Password field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the Password field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'Password',
+            // Set the thickness of the Password field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Set the value of the form field element.
+            value:'Password',
+            // Set the font family of the Password field.
+            fontFamily: 'Courier',
+            // Set the font size of the Password field.
+            fontSize: 10,
+            // Specify the font style
+            fontStyle: 'None',
+            // Set the font color of the Password field.
+            color: 'black',
+            // Set the border color of the Password field.
+            borderColor: 'black',
+            // Set the background color of the Password field.
+            backgroundColor: '#daeaf7ff',
+            // Set the alignment of the text.
+            alignment: 'Left',
+            // Set the maximum character length.
+            maxLength: 0,
+        }
+    }
+
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+            viewer.passwordFieldSettings = {
+            // Set the name of the form field element.
+            name: 'Password',
+            // Specify whether the Password field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the Password field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'Password',
+            // Set the thickness of the Password field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Set the value of the form field element.
+            value:'Password',
+            // Set the font family of the Password field.
+            fontFamily: 'Courier',
+            // Set the font size of the Password field.
+            fontSize: 10,
+            // Specify the font style
+            fontStyle: 'None',
+            // Set the font color of the Password field.
+            color: 'black',
+            // Set the border color of the Password field.
+            borderColor: 'black',
+            // Set the background color of the Password field.
+            backgroundColor: '#daeaf7ff',
+            // Set the alignment of the text.
+            alignment: 'Left',
+            // Set the maximum character length.
+            maxLength: 0,
+        }
+    }
+
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+
+![Password Field Settings](../../../pdfviewer/images/Password.png)
+
+### CheckBox field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the CheckBox field properties on a button click.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+            name: 'CheckBox',
+            isReadOnly: true,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'CheckBox',
+            thickness: 4,
+            isChecked: true,
+            backgroundColor: '#daeaf7ff',
+            borderColor: 'black',
+            value: 'CheckBox'
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+            name: 'CheckBox',
+            isReadOnly: true,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'CheckBox',
+            thickness: 4,
+            isChecked: true,
+            backgroundColor: '#daeaf7ff',
+            borderColor: 'black',
+            value: 'CheckBox'
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code example explains how to update the properties of the CheckBox field added to the document from the form designer toolbar.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.checkBoxFieldSettings = {
+            // Set the name of the form field element.
+            name: 'CheckBox',
+            // Specify whether the CheckBox field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the CheckBox field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'CheckBox',
+            // Set the thickness of the CheckBox field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Specifies whether the check box is in checked state or not.
+            isChecked: true,
+            // Set the background color of the check box in hexadecimal string format.
+            backgroundColor: '#daeaf7ff',
+            // Set the border color of the check box field.
+            borderColor: 'black'
+            // Set the value of the form field element.
+            value: 'CheckBox'
+        }
+    }
+
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.checkBoxFieldSettings = {
+            // Set the name of the form field element.
+            name: 'CheckBox',
+            // Specify whether the CheckBox field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the CheckBox field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'CheckBox',
+            // Set the thickness of the CheckBox field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Specifies whether the check box is in checked state or not.
+            isChecked: true,
+            // Set the background color of the check box in hexadecimal string format.
+            backgroundColor: '#daeaf7ff',
+            // Set the border color of the check box field.
+            borderColor: 'black'
+            // Set the value of the form field element.
+            value: 'CheckBox'
+        }
+    }
+
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+![CheckBox Field Settings](../../../pdfviewer/images/Checkbox.png)
+
+### RadioButton field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the RadioButton field properties on a button click.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+            name: 'RadioButton',
+            isReadOnly: false,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'RadioButton',
+            thickness: 4,
+            isSelected: true,
+            backgroundColor: '#daeaf7ff',
+            borderColor: 'black',
+            value: 'RadioButton'
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+            name: 'RadioButton',
+            isReadOnly: false,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'RadioButton',
+            thickness: 4,
+            isSelected: true,
+            backgroundColor: '#daeaf7ff',
+            borderColor: 'black',
+            value: 'RadioButton'
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+
+The following code example explains how to update the properties of the RadioButton field added to the document from the form designer toolbar.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.radioButtonFieldSettings = {
+            // Set the name of the form field element.
+            name: 'RadioButton',
+            // Specify whether the RadioButton field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the RadioButton field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'RadioButton',
+            // Set the thickness of the RadioButton field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Specifies whether the radio button is in checked state or not.
+            isSelected: true,
+            // Set the background color of the radio button in hexadecimal string format.
+            backgroundColor: '#daeaf7ff',
+            // Set the border color of the radio button field.
+            borderColor: 'black'
+            // Set the value of the form field element.
+            value: 'RadioButton'
+        }
+    }
+
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.radioButtonFieldSettings = {
+            // Set the name of the form field element.
+            name: 'RadioButton',
+            // Specify whether the RadioButton field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the RadioButton field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'RadioButton',
+            // Set the thickness of the RadioButton field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Specifies whether the radio button is in checked state or not.
+            isSelected: true,
+            // Set the background color of the radio button in hexadecimal string format.
+            backgroundColor: '#daeaf7ff',
+            // Set the border color of the radio button field.
+            borderColor: 'black'
+            // Set the value of the form field element.
+            value: 'RadioButton'
+        }
+    }
+
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+
+![RadioButton Field Settings](../../../pdfviewer/images/Radiobutton.png)
+
+### ListBox field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the ListBox field properties on a button click.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        const customOptions = [
+            { itemName: 'item1', itemValue: 'item1' },
+            { itemName: 'item2', itemValue: 'item2' },
+            { itemName: 'item3', itemValue: 'item3' }
+        ];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+ name: 'ListBox',
+            isReadOnly: false,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'ListBox',
+            thickness: 4,
+            fontFamily: 'Courier',
+            fontSize: 10,
+            fontStyle: 'None',
+            color: 'black',
+            borderColor: 'black',
+            backgroundColor: '#daeaf7ff',
+            alignment: 'Left',
+            options: customOptions
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        const customOptions = [
+            { itemName: 'item1', itemValue: 'item1' },
+            { itemName: 'item2', itemValue: 'item2' },
+            { itemName: 'item3', itemValue: 'item3' }
+        ];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+ name: 'ListBox',
+            isReadOnly: false,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'ListBox',
+            thickness: 4,
+            fontFamily: 'Courier',
+            fontSize: 10,
+            fontStyle: 'None',
+            color: 'black',
+            borderColor: 'black',
+            backgroundColor: '#daeaf7ff',
+            alignment: 'Left',
+            options: customOptions
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+
+The following code example explains how to update the properties of the ListBox field added to the document from the form designer toolbar.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        const customOptions = [
+        { itemName: 'item1', itemValue: 'item1' },
+        { itemName: 'item2', itemValue: 'item2' },
+        { itemName: 'item3', itemValue: 'item3' }
+        ];
+        viewer.listBoxFieldSettings = {
+            // Set the name of the form field element.
+            name: 'ListBox',
+            // Specify whether the ListBox field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the ListBox field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'ListBox',
+            // Set the thickness of the ListBox field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Set the value of the form field element.
+            value:'ListBox',
+            // Set the font family of the ListBox field.
+            fontFamily: 'Courier',
+            // Set the font size of the ListBox field.
+            fontSize: 10,
+            // Specify the font style
+            fontStyle: 'None',
+            // Set the  font color of the ListBox field.
+            color: 'black',
+            // Set the border color of the ListBox field.
+            borderColor: 'black',
+            // Set the background color of the ListBox field.
+            backgroundColor: '#daeaf7ff',
+            // Set the alignment of the text.
+            alignment: 'Left',
+            // Set the listbox items.
+            options: customOptions
+        }
+    };
+
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        const customOptions = [
+        { itemName: 'item1', itemValue: 'item1' },
+        { itemName: 'item2', itemValue: 'item2' },
+        { itemName: 'item3', itemValue: 'item3' }
+        ];
+        viewer.listBoxFieldSettings = {
+            // Set the name of the form field element.
+            name: 'ListBox',
+            // Specify whether the ListBox field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the ListBox field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'ListBox',
+            // Set the thickness of the ListBox field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Set the value of the form field element.
+            value:'ListBox',
+            // Set the font family of the ListBox field.
+            fontFamily: 'Courier',
+            // Set the font size of the ListBox field.
+            fontSize: 10,
+            // Specify the font style
+            fontStyle: 'None',
+            // Set the  font color of the ListBox field.
+            color: 'black',
+            // Set the border color of the ListBox field.
+            borderColor: 'black',
+            // Set the background color of the ListBox field.
+            backgroundColor: '#daeaf7ff',
+            // Set the alignment of the text.
+            alignment: 'Left',
+            // Set the listbox items.
+            options: customOptions
+        }
+    };
+
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+
+![ListBox Field Settings](../../../pdfviewer/images/Listbox.png)
+
+### DropDown field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the DropDown field properties on a button click.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        const customOptions = [
+            { itemName: 'item1', itemValue: 'item1' },
+            { itemName: 'item2', itemValue: 'item2' },
+            { itemName: 'item3', itemValue: 'item3' }
+        ];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+           name: 'DropDown',
+            isReadOnly: false,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'DropDown',
+            thickness: 4,
+            fontFamily: 'Courier',
+            fontSize: 10,
+            fontStyle: 'None',
+            color: 'black',
+            borderColor: 'black',
+            backgroundColor: '#daeaf7ff',
+            alignment: 'Left',
+            options: customOptions,
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        const customOptions = [
+            { itemName: 'item1', itemValue: 'item1' },
+            { itemName: 'item2', itemValue: 'item2' },
+            { itemName: 'item3', itemValue: 'item3' }
+        ];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+           name: 'DropDown',
+            isReadOnly: false,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'DropDown',
+            thickness: 4,
+            fontFamily: 'Courier',
+            fontSize: 10,
+            fontStyle: 'None',
+            color: 'black',
+            borderColor: 'black',
+            backgroundColor: '#daeaf7ff',
+            alignment: 'Left',
+            options: customOptions,
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code example explains how to update the properties of the dropdown field added to the document from the form designer toolbar.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        const customOptions = [
+        { itemName: 'item1', itemValue: 'item1' },
+        { itemName: 'item2', itemValue: 'item2' },
+        { itemName: 'item3', itemValue: 'item3' }
+        ];
+        viewer.DropdownFieldSettings = {
+            // Set the name of the form field element.
+            name: 'DropDown',
+            // Specify whether the DropDown field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the DropDown field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'DropDown',
+            // Set the thickness of the DropDown field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Set the value of the form field element.
+            value:'DropDown',
+            // Set the font family of the DropDown field.
+            fontFamily: 'Courier',
+            // Set the font size of the DropDown field.
+            fontSize: 10,
+            // Specify the font style
+            fontStyle: 'None',
+            // Set the  font color of the DropDown field.
+            color: 'black',
+            // Set the border color of the DropDown field.
+            borderColor: 'black',
+            // Set the background color of the DropDown field.
+            backgroundColor: '#daeaf7ff',
+            // Set the alignment of the text.
+            alignment: 'Left',
+            // Set the DropDown items.
+            options: customOptions
+        } 
+    };
+
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="onload">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        const customOptions = [
+        { itemName: 'item1', itemValue: 'item1' },
+        { itemName: 'item2', itemValue: 'item2' },
+        { itemName: 'item3', itemValue: 'item3' }
+        ];
+        viewer.DropdownFieldSettings = {
+            // Set the name of the form field element.
+            name: 'DropDown',
+            // Specify whether the DropDown field is in read-only or read-write mode.
+            isReadOnly: false,
+            // Set the visibility of the form field.
+            visibility: 'visible',
+            // Specify whether the field is mandatory or not.
+            isRequired: false,
+            // Specify whether to print the DropDown field.
+            isPrint: true,
+            // Set the text to be displayed as a tooltip.
+            tooltip: 'DropDown',
+            // Set the thickness of the DropDown field. To hide the borders, set the value to 0 (zero).
+            thickness: 4,
+            // Set the value of the form field element.
+            value:'DropDown',
+            // Set the font family of the DropDown field.
+            fontFamily: 'Courier',
+            // Set the font size of the DropDown field.
+            fontSize: 10,
+            // Specify the font style
+            fontStyle: 'None',
+            // Set the  font color of the DropDown field.
+            color: 'black',
+            // Set the border color of the DropDown field.
+            borderColor: 'black',
+            // Set the background color of the DropDown field.
+            backgroundColor: '#daeaf7ff',
+            // Set the alignment of the text.
+            alignment: 'Left',
+            // Set the DropDown items.
+            options: customOptions
+        } 
+    };
+
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+![DropDownBox Field Settings](../../../pdfviewer/images/Dropdown.png)

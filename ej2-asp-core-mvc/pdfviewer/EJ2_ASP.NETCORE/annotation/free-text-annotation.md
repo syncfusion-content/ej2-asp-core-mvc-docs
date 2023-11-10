@@ -28,7 +28,7 @@ In the pan mode, if the free text annotation mode is entered, the PDF Viewer con
 Refer to the following code sample to switch to the Free Text annotation mode.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <!--Element to set free text annotation mode-->
 <button id="set" onclick="addAnnot()">FreeText</button>
@@ -46,7 +46,7 @@ Refer to the following code sample to switch to the Free Text annotation mode.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <!--Element to set free text annotation mode-->
 <button id="set" onclick="addAnnot()">FreeText</button>
@@ -133,7 +133,7 @@ After editing the default values, they will be changed to the selected values.
 Refer to the following code sample to set the default free text annotation settings.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -145,7 +145,7 @@ Refer to the following code sample to set the default free text annotation setti
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
