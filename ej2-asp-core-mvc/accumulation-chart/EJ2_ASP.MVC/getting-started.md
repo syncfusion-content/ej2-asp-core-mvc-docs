@@ -93,7 +93,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 ## Add ASP.NET MVC AccumulationChart control
 
-Now, add the Syncfusion ASP.NET MVC AccumulationChart control in `~/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC AccumulationChart control in `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -129,10 +129,10 @@ public ActionResult Index()
 {
     List<PieChartData> chartData = new List<PieChartData>
     {
-        new PieChartData { xValue = "Chrome", yValue = 37, text = "37%", fill="#498fff"},
-        new PieChartData { xValue = "UC Browser", yValue = 17, text = "17%", fill="#ffa060"},
-        new PieChartData { xValue = "iPhone", yValue = 19, text = "19%", fill="#ff68b6"},
-        new PieChartData { xValue = "Others", yValue = 4 , text = "4%", fill="#81e2a1"},
+        new PieChartData { xValue = "Chrome", yValue = 37, text = "37%"},
+        new PieChartData { xValue = "UC Browser", yValue = 17, text = "17%"},
+        new PieChartData { xValue = "iPhone", yValue = 19, text = "19%"},
+        new PieChartData { xValue = "Others", yValue = 4 , text = "4%"}
     };
     return View(chartData);
 }
@@ -141,7 +141,6 @@ public class PieChartData
     public string xValue;
     public double yValue;
     public string text;
-    public string fill;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -149,6 +148,6 @@ public class PieChartData
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC AccumulationChart control will be rendered in the default web browser.
 
-![ASP.NET MVC AccumulationChart Control](images/accumulationchart.png)
+![ASP.NET MVC AccumulationChart Control](images/accumulation-chart-component.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/AccumulationChart/ASP.NET%20MVC%20Razor%20Examples).

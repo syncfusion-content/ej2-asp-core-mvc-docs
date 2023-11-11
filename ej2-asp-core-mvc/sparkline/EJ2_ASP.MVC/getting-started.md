@@ -96,6 +96,8 @@ Now, add the Syncfusion ASP.NET MVC Sparkline control in `~/Views/Home/Index.csh
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
+﻿@model List<SparklineSample.Controllers.DataSource>
+
 <h2> Essential JS 2 for ASP.NET MVC Sparkline </h2>
 @Html.EJS().Sparkline("spark").DataSource(Model).XName("xval").YName("yval").Height("100").Width("70").Render()
 
