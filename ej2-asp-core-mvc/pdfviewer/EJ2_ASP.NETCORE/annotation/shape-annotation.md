@@ -36,7 +36,7 @@ In the pan mode, if the shape annotation mode is entered, the PDF Viewer control
 Refer to the following code sample to switch to the circle annotation mode.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <!--Element to set shape annotation mode-->
 <button id="set" onclick="addAnnot()">Circle</button>
@@ -54,7 +54,7 @@ Refer to the following code sample to switch to the circle annotation mode.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <!--Element to set shape annotation mode-->
 <button id="set" onclick="addAnnot()">Circle</button>
@@ -116,7 +116,7 @@ Refer to the following code sample to set the default annotation settings.
 The properties of the shape annotations can be set before creating the control using LineSettings, ArrowSettings, RectangleSettings, CircleSettings, and PolygonSettings.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -136,7 +136,7 @@ The properties of the shape annotations can be set before creating the control u
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"

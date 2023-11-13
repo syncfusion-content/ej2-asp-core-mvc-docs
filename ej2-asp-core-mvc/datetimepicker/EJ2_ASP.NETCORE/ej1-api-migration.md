@@ -229,7 +229,7 @@ Disabled dates
 
 {% highlight html %}
     <ejs-datetimepicker id="datetime" renderdaycell="disableDatetime"></ejs-datetimepicker>
-  
+
     <script>
     function disableDatetime(args) {
         if (args.date.getDay() === 0 || args.date.getDay() === 6) {
@@ -694,7 +694,7 @@ Validation rules
 <b>Property:</b> <i>validation-rules</i>
 
 {% highlight html %}
-<ej-date-time-picker id="datetime" validation-rules="new Dictionary<string, object>() {{ 'required',true}}"></ej-date-time-picker>
+<ej-date-time-picker id="datetime" validation-rules="new Dictionary<string, object>() { { 'required', true } }"></ej-date-time-picker>
 {% endhighlight %}
 
 </td>
@@ -711,7 +711,7 @@ Validation rules
             var options = { rules: { 'datetime': { required: true } } };
             var formObject = new ej.inputs.FormValidator('#form-element', options);
         });
-    </script>  
+    </script>
 {% endhighlight %}
 
 </td>
@@ -724,7 +724,7 @@ Validation message
 <b>Property:</b> <i>validation-messages</i>
 
 {% highlight html %}
-<ej-date-time-picker id="datetime" validation-rules="new Dictionary<string, object>() {{ 'required',true}}" validation-messages="new Dictionary<string, object>() {{ 'required','Required Date Time value'}}"></ej-date-time-picker>
+<ej-date-time-picker id="datetime" validation-rules="new Dictionary<string, object>() { { 'required', true } }" validation-messages="new Dictionary<string, object>() { { 'required', 'Required Date Time value' } }"></ej-date-time-picker>
 {% endhighlight %}
 
 </td>
@@ -736,13 +736,21 @@ Validation message
     </form>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var options = { rules: { 'datetime': { required: true } },
-                customPlacement: (inputElement, errorElement) => { inputElement.parentElement.parentElement.appendChild(errorElement);
-        }};
+    document.addEventListener('DOMContentLoaded', function () {
+        var options = {
+            rules: {
+                'datetime': {
+                    required: true
+                }
+            },
+            customPlacement: (inputElement, errorElement) => {
+                inputElement.parentElement.parentElement.appendChild(errorElement);
+            }
+        };
+
         var formObject = new ej.inputs.FormValidator('#form-element', options);
-        });
-    </script>
+    });
+</script>
 {% endhighlight %}
 </td>
 </tr>
@@ -1062,7 +1070,7 @@ Focus out event
     <script>
         function onBlur() { }
     </script>
-  
+
 {% endhighlight %}
 
 </td>
@@ -1092,7 +1100,7 @@ Change event
     <script>
         function onChange() { }
     </script>
-  
+
 {% endhighlight %}
 
 </td>

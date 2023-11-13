@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Display document without downloading
 
 The PDF Viewer server library allows you to display the downloaded PDF document in the PDF Viewer control without downloading a document in the local machine using the **load** method.
@@ -19,8 +18,17 @@ The following steps are used to display the downloaded without downloading in th
 
 **Step 2:** Use the following code snippet to Display document without downloading.
 
-```html
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
 <button onclick="downloadDocument()">downloadDocument</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer 
+            id="pdfviewer"
+            documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
 
 <script>
     function downloadDocument() {
@@ -37,6 +45,36 @@ The following steps are used to display the downloaded without downloading in th
         });
     }
 </script>
-```
 
-Download the sample [how to display document without downloading](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Coresample-473210677.zip)
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button onclick="downloadDocument()">downloadDocument</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer 
+            id="pdfviewer"
+            documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    function downloadDocument() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.saveAsBlob().then(function (value) {
+            var data = value;
+            var reader = new FileReader();
+            reader.readAsDataURL(data);
+            reader.onload = () => {
+                var base64data = reader.result;
+                console.log(base64data);
+                viewer.load(base64data, null);
+            };
+        });
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Display%20document%20without%20downloading)
