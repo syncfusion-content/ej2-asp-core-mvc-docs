@@ -136,4 +136,4 @@ N> During the paging action, the pager component triggers the below three events
 
 ## See Also
 
-* [Group with Paging](./grouping##group-with-paging)
+* [Group with Paging](./grouping/grouping#group-with-paging)
