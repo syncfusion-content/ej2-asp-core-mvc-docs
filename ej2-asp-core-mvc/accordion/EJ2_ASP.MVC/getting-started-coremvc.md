@@ -76,7 +76,9 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentati
 
 N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core MVC application.
 
-Also, register the script manager at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
+## Register Syncfusion Script Manager
+
+Register the Syncfusion script manager at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Tag Helpers" %}
