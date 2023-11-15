@@ -107,14 +107,11 @@ Now, add the Syncfusion ASP.NET Core Accordion control in `~/Home/Index.cshtml` 
 {% highlight cshtml tabtitle="Tag Helpers" %}
 {% include code-snippet/accordion/getting-started/data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/accordion/getting-started/data/data.cs %}
-{% endhighlight %}
+{% endtabs %}
+{% tabs %}
 {% highlight razor tabtitle="HTML Helpers" %}
 {% include code-snippet/accordion/getting-started/data/razor %}
 {% endhighlight %}
-{% endtabs %}
-{% tabs %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the app. Then, the Syncfusion ASP.NET Core Accordion control will be rendered in the default web browser.
