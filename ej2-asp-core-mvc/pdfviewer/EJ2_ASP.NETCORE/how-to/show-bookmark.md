@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Show Bookmark
 
 The PDF Viewer server library allows you to show the bookmark programmatically by setting the [**enableBookmark**](https://ej2.syncfusion.com/javascript/documentation/api/pdfviewer/#enablebookmark) property to `true`. We can also disable the bookmark by setting the property to `false`.
@@ -22,28 +21,27 @@ The following steps are used to show the bookmark.
 **Step 2:** Use the following code snippet to Show the Bookmark.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableBookmark="true">
     </ejs-pdfviewer>
 </div>
+
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
-                   serviceUrl="/api/PdfViewer"
+                   serviceUrl='/Index'
                    documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    enableBookmark="true">
     </ejs-pdfviewer>
 </div>
+
 {% endhighlight %}
 {% endtabs %}
 
-
-```html
-
-```
-
-Download the sample [how to show bookmark](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Coresample-473210677.zip)
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Show%20Bookmark)
