@@ -76,7 +76,9 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentati
 
 N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core MVC application.
 
-Also, register the script manager at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
+## Register Syncfusion Script Manager
+
+Register the Syncfusion script manager at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Tag Helpers" %}
@@ -107,14 +109,11 @@ Now, add the Syncfusion ASP.NET Core Accordion control in `~/Home/Index.cshtml` 
 {% highlight cshtml tabtitle="Tag Helpers" %}
 {% include code-snippet/accordion/getting-started/data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/accordion/getting-started/data/data.cs %}
-{% endhighlight %}
+{% endtabs %}
+{% tabs %}
 {% highlight razor tabtitle="HTML Helpers" %}
 {% include code-snippet/accordion/getting-started/data/razor %}
 {% endhighlight %}
-{% endtabs %}
-{% tabs %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the app. Then, the Syncfusion ASP.NET Core Accordion control will be rendered in the default web browser.
