@@ -14,5 +14,8 @@
             <e-field name="Sold" caption="Unit Sold"></e-field>
             <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
+        <e-groupsettings>
+            <e-field name="Date" type="Date" groupInterval="@(new string[]{ "Years", "Months"})" startingAt="2015-07-01" endingAt="2017-07-31"></e-field>
+        </e-groupsettings>
     </e-datasourcesettings>
 </ejs-pivotview>
