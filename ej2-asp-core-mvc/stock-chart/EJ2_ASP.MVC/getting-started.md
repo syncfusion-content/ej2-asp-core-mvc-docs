@@ -91,7 +91,7 @@ Now, add the Syncfusion ASP.NET MVC Stock Chart control in `~/Views/Home/Index.c
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@(Html.EJS().StockChart("container").Load("load").Series(sr => { sr.Add(); }).Render())
+@(Html.EJS().StockChart("container").Series(sr => { sr.Add(); }).Render())
 
 {% endhighlight %}
 {% endtabs %}
