@@ -86,7 +86,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 ## Add ASP.NET MVC Bullet Chart control
 
-Now, add the Syncfusion ASP.NET MVC BulletChart control in `~/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC BulletChart control in `~~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
