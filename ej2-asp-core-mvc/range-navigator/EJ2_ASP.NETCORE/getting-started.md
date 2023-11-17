@@ -90,7 +90,7 @@ Now, add the Syncfusion ASP.NET Core RangeNavigator tag helper in `~/Pages/Index
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<ejs-rangenavigator id="rangeNavigator"></ejs-rangenavigator>
+<ejs-rangenavigator></ejs-rangenavigator>
 
 {% endhighlight %}
 {% endtabs %}

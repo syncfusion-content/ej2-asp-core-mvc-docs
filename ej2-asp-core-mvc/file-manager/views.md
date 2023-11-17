@@ -69,6 +69,9 @@ The default appearance of the file manager can be changed from largeicons to det
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+<!-- {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/overview/razor %}
+{% endhighlight %} -->
 {% highlight c# tabtitle="HomeController_mvc.cs" %}
 {% include code-snippet/file-manager/overview/HomeController_mvc.cs %}
 {% endhighlight %}
