@@ -30,13 +30,15 @@ The following table represents the supported .NET and .NET Core versions by diff
 
 ## Syncfusion Version Information
 
-In a year, Syncfusion releases new volumes once every three months. Syncfusion ASP.NET Core controls follows sequence-based identifiers to process software releases based on the **Major.Minor.Revision** format to track all the release changes. It helps developers to keep track of the changes in every release. 
+Syncfusion follows a quarterly release schedule, introducing new volumes every three months. To track these releases and their associated changes, Syncfusion ASP.NET Core components utilize a sequence-based identifier system, employing the format **Major.Minor.Revision**. This system enables developers to easily monitor modifications made in each release.
 
-For example, if the release a package version is `23.1.36`, the version number indicates the details as follows,
+For example, if the release package version is `23.1.36`, the version number can be interpreted as follows:
 
-* **23** denotes `Major release` version which changes every year.
-* **1** denotes `Volume release`. Syncfusion releases a new volume once every three months. Here `3` represents the third release of the year.
-* **36** denotes `Patch Number` also known as revision number which increases for each service pack release and weekly patch release.
+* **23** represents the `major release` version. This number changes every three months and encompasses significant updates, new features, as well as bug fixes and breaking changes.
+
+* **1** corresponds to the `minor release` version. This number signifies releases primarily focused on new features and addressing bugs, without introducing breaking changes.
+
+* **36** denotes the `revision number`, also referred to as the `patch number`. This number increases for weekly patch releases, which predominantly consist of bug fixes and do not introduce new features or breaking changes.
 
 ## See also
 

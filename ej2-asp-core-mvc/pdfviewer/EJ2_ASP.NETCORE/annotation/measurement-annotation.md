@@ -37,7 +37,7 @@ In the pan mode, if the measurement annotation mode is entered, the PDF Viewer c
 Refer to the following code sample to switch to the distance annotation mode.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <!--Element to set measurement annotation mode-->
 <button id="set" onclick="addAnnot()">Distance</button>
@@ -55,7 +55,7 @@ Refer to the following code sample to switch to the distance annotation mode.
 </script>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <!--Element to set measurement annotation mode-->
 <button id="set" onclick="addAnnot()">Distance</button>
@@ -116,7 +116,7 @@ The properties of the shape annotations can be set before creating the control u
 Refer to the following code sample to set the default annotation settings.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -136,7 +136,7 @@ Refer to the following code sample to set the default annotation settings.
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -181,7 +181,7 @@ The Units of measurements supported for the measurement annotations in the PDF V
 The properties of scale ratio for measurement annotation can be set before creating the control using the ScaleRatioSettings as shown in the following code sample.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -193,7 +193,7 @@ The properties of scale ratio for measurement annotation can be set before creat
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"

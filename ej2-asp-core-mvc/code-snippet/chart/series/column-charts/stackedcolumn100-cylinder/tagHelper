@@ -1,8 +1,8 @@
-<ejs-chart id="container" title="Gross Domestic Product Growth">
+<ejs-chart id="container" title="Gross Domestic Product Growth" width="50%">
     <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime" labelFormat="y" interval="1"
         title="Years"></e-chart-primaryxaxis>
     <e-chart-primaryyaxis title="GDP (%) Per Annum" labelFormat="{value}%"
-        rangePadding="@Syncfusion.EJ2.Charts.RangePadding.None">
+        rangePadding="@Syncfusion.EJ2.Charts.ChartRangePadding.None">
     </e-chart-primaryyaxis>
     <e-series-collection>
         <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="UK"

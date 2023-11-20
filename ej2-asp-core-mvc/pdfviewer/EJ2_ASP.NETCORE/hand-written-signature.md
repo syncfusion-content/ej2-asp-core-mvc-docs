@@ -16,7 +16,7 @@ The PDF Viewer control supports adding handwritten signatures to a PDF document.
 The following code snippet describes how to enable the handwritten signature in PDF Viewer.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -26,7 +26,7 @@ The following code snippet describes how to enable the handwritten signature in 
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                 serviceUrl="/api/PdfViewer"
@@ -64,7 +64,7 @@ The stroke color, border thickness, and opacity of the handwritten signature can
 Refer to the following code snippet to set the default handwritten signature settings.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
@@ -75,7 +75,7 @@ Refer to the following code snippet to set the default handwritten signature set
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"

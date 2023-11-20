@@ -15,14 +15,13 @@
         <div class="col" id="container2">
             @Html.EJS().Chart("lineContainer2").Series(series =>
                 {
-                series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Spline).XName("USD").YName("INR").Width(2).Opacity(0.6).Border(br => br.Width(2)).DataSource("ChartPoints").Add();
+                series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Spline).XName("USD").YName("INR").Width(2).Border(br => br.Width(2)).DataSource("ChartPoints").Add();
                 }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).Minimum(new DateTime(2023, 2, 18)).Maximum(new DateTime(2023, 8, 18)).LabelFormat("MMM d").MajorGridLines(mg => mg.Width(0)).LineStyle(ls => ls.Width(0))
                 ).PrimaryYAxis(px => px.LabelFormat("n1").Minimum(79).Maximum(85).Interval(1.5).LineStyle(ls => ls.Width(0)).MajorTickLines(mg => mg.Width(0))
                 ).ChartArea(area => area.Border(br => br.Width(0))
                 ).TitleStyle(tl => tl.TextAlignment(Syncfusion.EJ2.Charts.Alignment.Near)
                 ).ZoomSettings(zn => zn.EnableSelectionZooming(true).Mode(Syncfusion.EJ2.Charts.ZoomMode.X)
                 ).Title("US to INR").Load("load").ZoomComplete("zoomComplete").SelectionComplete("selectionComplete").SelectionMode(Syncfusion.EJ2.Charts.SelectionMode.Point).SelectionPattern(Syncfusion.EJ2.Charts.SelectionPattern.Box).Render()
-            </div>
         </div>
     </div>
 </div>

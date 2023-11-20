@@ -82,7 +82,7 @@ The following table shows the default text values used in PDF Viewer in 'en-US' 
 The different locale value for the PDF Viewer can be specified using the locale property.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer 
@@ -94,7 +94,7 @@ The different locale value for the PDF Viewer can be specified using the locale 
 </div>
 
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
     <ejs-pdfviewer 

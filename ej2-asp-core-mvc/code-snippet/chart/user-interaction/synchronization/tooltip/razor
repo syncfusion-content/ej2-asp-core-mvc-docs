@@ -20,7 +20,6 @@
                 ).Tooltip(tt => tt.Enable(true).Shared(true).Header("").Format("<b>₹${point.y}</b> <br> ${point.x} 2023").EnableMarker(false)).ChartArea(area => area.Border(br => br.Width(0))
                 ).TitleStyle(tl => tl.TextAlignment(Syncfusion.EJ2.Charts.Alignment.Near)
                 ).Title("US to INR").Load("load").ChartMouseMove("chartMouseMove2").ChartMouseLeave("chartMouseLeave2").ChartMouseUp("chartMouseUp2").Render()
-            </div>
         </div>
     </div>
 </div>
@@ -54,7 +53,7 @@
         chart1 = document.getElementById('lineContainer1').ej2_instances[0];
         chart2 = document.getElementById('lineContainer2').ej2_instances[0];
         if ((!ej.base.Browser.isDevice && !chart2.isTouch && !chart2.isChartDrag) || chart2.startMove) {
-            chart1.startMove = chart4.startMove;
+            chart1.startMove = chart2.startMove;
             chart1.showTooltip(args.x, args.y);
         }
     }
