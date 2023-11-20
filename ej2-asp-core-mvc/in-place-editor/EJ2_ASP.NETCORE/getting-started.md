@@ -103,8 +103,6 @@ Now, add the Syncfusion ASP.NET Core In-place Editor tag helper in `~/Pages/Inde
 
 By default, Syncfusion ASP.NET Core TextBox control is rendered in In-place Editor with the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property sets as Text.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/in-place-editor/getting-started-text/tagHelper %}
