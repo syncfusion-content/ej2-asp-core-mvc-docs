@@ -150,4 +150,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [How to bind the data](./data-binding/)
+* [How to bind the data](./data-binding)
