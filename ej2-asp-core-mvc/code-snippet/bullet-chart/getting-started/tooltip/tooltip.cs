@@ -4,7 +4,8 @@ public IActionResult Index()
             {
                 new DefaultBulletData { value = 270, target = 250}     
             };
-            return View(bulletData);
+            ViewBag.dataSource = bulletData;
+            return View();
         }
         public class DefaultBulletData
         {           

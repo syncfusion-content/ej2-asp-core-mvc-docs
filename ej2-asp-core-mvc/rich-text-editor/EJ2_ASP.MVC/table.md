@@ -152,6 +152,9 @@ The following image explains the table split action.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+<!-- {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/table-cell/razor %}
+{% endhighlight %} -->
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor/table-cell/controller.cs %}
 {% endhighlight %}
