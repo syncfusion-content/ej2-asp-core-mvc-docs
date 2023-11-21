@@ -1,0 +1,16 @@
+<div>
+    @Html.EJS().Button("container_ruler_button").Content("Show/Hide Ruler").Click("onClick").Render()
+    @Html.EJS().DocumentEditorContainer("container").Created("onCreate").DocumentEditorSettings("settings").Render()
+</div>
+
+<script>
+    var container;
+    var settings = { showRuler: true };
+    function onCreate() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+    }
+    function onClick() {
+       container.documentEditorSettings.showRuler = !container.documentEditorSettings.showRuler;
+    }
+</script>
