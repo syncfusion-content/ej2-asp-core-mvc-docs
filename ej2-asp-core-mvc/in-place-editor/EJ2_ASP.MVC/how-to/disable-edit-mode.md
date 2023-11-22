@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Disable Edit Mode in ##Platform_Name## In Place Editor Component
-description: Learn here all about Disable Edit Mode in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: Disable Edit Mode in ASP.NET MVC In Place Editor Component
+description: Learn here all about Disable Edit Mode in Syncfusion ASP.NET MVC In Place Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Disable Edit Mode
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 

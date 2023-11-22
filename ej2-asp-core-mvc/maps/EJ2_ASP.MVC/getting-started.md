@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Maps Component | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Syncfusion ASP.NET MVC Maps Component | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Maps Component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 

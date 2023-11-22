@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Text Markup Annotation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Text Markup Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Text Markup Annotation in ASP.NET MVC Pdfviewer Component
+description: Learn here all about Text Markup Annotation in Syncfusion ASP.NET MVC Pdfviewer Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Markup Annotation
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
 
-# Text Markup Annotation in the ASP.NET MVC PDF Viewer component
+# Text Markup Annotation in the ASP.NET MVC PDF Viewer Component
 
 The PDF Viewer control provides the options to add, edit, and delete text markup annotations such as highlight, underline, and strikethrough annotations in the PDF document.
 

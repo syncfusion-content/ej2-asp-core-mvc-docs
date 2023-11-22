@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Style And Appearance in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Style And Appearance in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Style And Appearance in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 

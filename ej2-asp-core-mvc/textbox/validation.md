@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Textbox Component
-description: Learn here all about Validation in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
+title: Validation in ASP.NET MVC Textbox Component
+description: Learn here all about Validation in Syncfusion ASP.NET MVC Textbox Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Validation
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
