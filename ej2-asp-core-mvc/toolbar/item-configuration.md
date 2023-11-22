@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Item Configuration in ##Platform_Name## Toolbar Component | Syncfusion
-description: Learn here all about Item Configuration in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: Item Configuration in ASP.NET Core Toolbar Component | Syncfusion
+description: Learn here all about Item Configuration in Syncfusion ASP.NET Core Toolbar Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Item Configuration
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

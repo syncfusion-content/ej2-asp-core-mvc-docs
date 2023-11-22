@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Row Spanning in ##Platform_Name## Grid Component
-description: Learn here all about Row Spanning in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Row Spanning in ASP.NET Core Grid Component
+description: Learn here all about Row Spanning in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row Spanning
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

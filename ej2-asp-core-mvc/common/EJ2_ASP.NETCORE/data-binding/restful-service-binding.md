@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Bind data from RESTful services to ##Platform_Name## control | Syncfusion
-description: Learn here all about retrieve data from RESTful service, bind data to Syncfusion ##Platform_Name## Common control and more.
+title: Bind data from RESTful services to ASP.NET Core Control | Syncfusion
+description: Learn here all about retrieve data from RESTful service, bind data to Syncfusion ASP.NET Core Common control and more.
 platform: ej2-asp-core-mvc
 control: Common
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
@@ -56,7 +56,7 @@ Now, click on **Update Database**.
 
 Open Visual Studio and create an empty ASP.NET Core Web Application with MVC(views and controllers) and name it as ODataServiceProject.
 
-[Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017/)
+[Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017)
 
 After creating the application, install **Microsoft.AspNetCore.OData** package by running the following command in the Package Manager Console.
 * **Install-Package Microsoft.AspNetCore.OData -Version 8.0.7**: This package contains everything you need to create OData v4.0 endpoints using ASP.NET Core MVC and to support OData query syntax for your web APIs.

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Add Link To A Button in ##Platform_Name## Button Control | Syncfusion
-description: Learn here all about add link to a Button in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
+title: Add Link To A Button in ASP.NET Core Button Control | Syncfusion
+description: Learn here all about add link to a Button in Syncfusion ASP.NET Core Button control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Link To A Button
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

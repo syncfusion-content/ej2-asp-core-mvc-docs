@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Undo Redo in Syncfusion ##Platform_Name## Diagram Component
-description: Learn here all about Undo Redo in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: Undo Redo in Syncfusion ASP.NET Core Diagram Component
+description: Learn here all about Undo Redo in Syncfusion ASP.NET Core Diagram Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Undo Redo
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
