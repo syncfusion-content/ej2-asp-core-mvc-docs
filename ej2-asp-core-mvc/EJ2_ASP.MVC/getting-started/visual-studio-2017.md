@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Component | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Component | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Visual Studio 2017
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
@@ -319,7 +319,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
     </configuration>
     ```
 
-4. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
+4. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
 
     ```html
     <head>

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Introduction in ##Platform_Name## Controls | Syncfusion
-description: Learn here all about Introduction in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Introduction in ASP.NET MVC Controls | Syncfusion
+description: Learn here all about Introduction in Syncfusion ASP.NET MVC Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Introduction
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
@@ -234,7 +234,7 @@ N> Syncfusion does not collect any kind of information when our components are u
 
 * Product Development
     
-    * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
+    * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
 * Syncfusion Project Template
 
