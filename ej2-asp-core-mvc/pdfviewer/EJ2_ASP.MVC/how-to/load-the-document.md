@@ -15,7 +15,7 @@ The PDF Viewer server library allows you to load the PDF document in the PDF Vie
 
 The following steps are used to load a PDF document.
 
-**Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/aspnetmvc/documentation/pdfviewer/getting-started/) to create a simple PDF Viewer sample.
+**Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/aspnetmvc/documentation/pdfviewer/getting-started) to create a simple PDF Viewer sample.
 
 **Step 2:** Add the following code snippet in PDFViewerController.cs file to load a PDF document.
 
