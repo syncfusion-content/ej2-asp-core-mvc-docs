@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Timescale in ##Platform_Name## Schedule Component
-description: Learn here all about Timescale in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
+title: Timescale in ASP.MVC Schedule Component
+description: Learn here all about Timescale in Syncfusion ASP.MVC Schedule Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Timescale
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.MVC
 documentation: ug
 ---
 

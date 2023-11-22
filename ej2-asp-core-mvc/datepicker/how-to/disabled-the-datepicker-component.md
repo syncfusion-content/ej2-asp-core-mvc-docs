@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Disabled The Datepicker Component in ##Platform_Name## Datepicker Component
-description: Learn here all about how to disable the Datepicker component in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+title: Disabled The Datepicker Component in ASP.NET MVC Datepicker Component
+description: Learn here all about how to disable the Datepicker component in Syncfusion ASP.NET MVC Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Disabled The Datepicker Component
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 

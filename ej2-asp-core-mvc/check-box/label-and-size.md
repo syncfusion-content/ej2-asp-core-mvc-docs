@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Label And Size in ##Platform_Name## Check Box Control | Syncfusion
-description: Learn here all about Label And Size in Syncfusion ##Platform_Name## Check Box control of Syncfusion Essential JS 2 and more.
+title: Label And Size in ASP.NET MVC Check Box Control | Syncfusion
+description: Learn here all about Label And Size in Syncfusion ASP.NET MVC Check Box Control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Label And Size
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
