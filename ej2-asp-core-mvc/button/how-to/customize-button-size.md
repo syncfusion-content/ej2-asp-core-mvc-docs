@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Customize Button Size in ##Platform_Name## Button Component
-description: Learn here all about how to customize Button Size in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
+title: Customize Button Size in ASP.NET Core Button Component
+description: Learn here all about how to customize Button Size in Syncfusion ASP.NET Core Button Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Button Size
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

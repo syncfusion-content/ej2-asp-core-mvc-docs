@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Split Button Control | Syncfusion
-description: Learn here all about Icons in Syncfusion ##Platform_Name## Split Button component of Syncfusion Essential JS 2 and more.
+title: Icons in ASP.NET Core Split Button Control | Syncfusion
+description: Learn here all about Icons in Syncfusion ASP.NET Core Split Button Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

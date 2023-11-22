@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Working Days in ##Platform_Name## Schedule Control | Syncfusion
-description: Learn here all about Working Days in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
+title: Working Days in ASP.NET Core Schedule Control | Syncfusion
+description: Learn here all about Working Days in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Working Days
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

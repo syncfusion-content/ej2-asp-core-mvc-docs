@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Layout Page Sidebar in ##Platform_Name## Sidebar Component
-description: Learn here all about Layout Page Sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Layout Page Sidebar in ASP.NET Core Sidebar Component
+description: Learn here all about Layout Page Sidebar in Syncfusion ASP.NET Core Sidebar Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Layout Page Sidebar
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

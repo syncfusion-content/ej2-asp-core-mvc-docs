@@ -1,10 +1,10 @@
 ---
 layout: post
-title: File Operations in ##Platform_Name## Syncfusion File Manager Component
-description: Learn here all about File Operations in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+title: File Operations in ASP.NET Core Syncfusion File Manager Component
+description: Learn here all about File Operations in Syncfusion ASP.NET Core File Manager Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File Operations
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

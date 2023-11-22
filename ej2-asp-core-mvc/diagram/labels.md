@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Labels in Syncfusion ##Platform_Name## Diagram Component
-description: Learn here all about Labels in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: Labels in Syncfusion ASP.NET Core Diagram Component
+description: Learn here all about Labels in Syncfusion ASP.NET Core Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Labels
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
