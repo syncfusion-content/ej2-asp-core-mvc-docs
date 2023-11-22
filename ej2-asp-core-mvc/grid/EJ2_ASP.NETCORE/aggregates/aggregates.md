@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Aggregates in ##Platform_Name## Grid Component
-description: Learn here all about Aggregates in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Aggregates in ASP.NET Core Grid Component
+description: Learn here all about Aggregates in Syncfusion ASP.NET Core Grid Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Aggregates
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
