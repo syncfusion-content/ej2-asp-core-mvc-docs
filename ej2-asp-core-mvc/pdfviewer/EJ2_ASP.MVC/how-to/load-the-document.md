@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load the document in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn how to doad the document in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+description: Learn how to doad the document in ASP.NET MVC PDF Viewer Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load The Document
 publishingplatform: ej2-asp-core-mvc
@@ -15,7 +15,7 @@ The PDF Viewer server library allows you to load the PDF document in the PDF Vie
 
 The following steps are used to load a PDF document.
 
-**Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/aspnetmvc/documentation/pdfviewer/getting-started/) to create a simple PDF Viewer sample.
+**Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/aspnetmvc/documentation/pdfviewer/getting-started) to create a simple PDF Viewer sample.
 
 **Step 2:** Add the following code snippet in PDFViewerController.cs file to load a PDF document.
 

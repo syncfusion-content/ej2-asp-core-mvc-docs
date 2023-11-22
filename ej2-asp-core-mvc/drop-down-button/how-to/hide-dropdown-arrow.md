@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Hide Dropdown Arrow in ##Platform_Name## Drop Down Button Component
-description: Learn here all about how to hide dropdown arrow in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
+title: Hide Dropdown Arrow in ASP.NET MVC Drop Down Button Component
+description: Learn here all about how to hide dropdown arrow in Syncfusion ASP.NET MVC Drop Down Button Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Hide Dropdown Arrow
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 

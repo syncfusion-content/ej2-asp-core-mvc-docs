@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Scrolling in ##Platform_Name## Grid Component
-description: Learn here all about Scrolling in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Scrolling in ASP.NET MVC Grid Component
+description: Learn here all about Scrolling in Syncfusion ASP.NET MVC Grid Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scrolling
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Styling in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about Styling in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Styling in ASP.NET MVC Rich Text Editor Component
+description: Learn here all about Styling in Syncfusion ASP.NET MVC Rich Text Editor Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Styling
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 

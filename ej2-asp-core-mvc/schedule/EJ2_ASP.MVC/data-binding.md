@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Schedule Component
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ASP.NET MVC Schedule Component
+description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Schedule Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
