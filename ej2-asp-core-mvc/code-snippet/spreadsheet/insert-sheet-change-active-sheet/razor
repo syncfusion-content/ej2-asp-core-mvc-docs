@@ -1,0 +1,38 @@
+@Html.EJS().Button("insertSheet").Content("InsertSheet").Render();
+@Html.EJS().Spreadsheet("spreadsheet").Sheets(sheet =>
+{
+     sheet.Name("Price Details").Ranges(ranges =>
+	   {
+		   ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A1").Add();
+	   }).Columns(column =>
+	   {
+		   column.Width(130).Add();
+		   column.Width(100).Add();
+		   column.Width(100).Add();
+	   }).Add();
+   }).Render()
+
+    <script>
+    document.getElementById("insertSheet").addEventListener('click', function () {
+            var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
+            spreadsheetObj.insertSheet(
+                [
+                    {
+                        index: 1,
+                        name: 'new_sheet',
+                        ranges: [
+                            {
+                                dataSource: ViewBag.NewData,
+                                startCell: 'A1'
+                            },
+                        ]
+                    },
+                ]
+            );
+            // Timeout function to wait until the sheet is inserted.
+            setTimeout(() => {
+                // Method to switch to the new sheet.
+                spreadsheet.goTo('new_sheet!A1');
+            })
+        });
+    </script>
