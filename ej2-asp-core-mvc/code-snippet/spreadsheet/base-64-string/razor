@@ -1,0 +1,54 @@
+@Html.EJS().Button("importBtn").Content("Import").Render();
+@Html.EJS().Button("exportBtn").Content("Export").Render();
+@Html.EJS().Spreadsheet("spreadsheet").BeforeSave("beforeSave").SaveComplete("saveComplete").Sheets(sheet =>
+{
+     sheet.Name("Price Details").Ranges(ranges =>
+	   {
+		   ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A1").Add();
+	   }).Columns(column =>
+	   {
+		   column.Width(130).Add();
+		   column.Width(100).Add();
+		   column.Width(100).Add();
+	   }).Add();
+   }).Render()
+
+    <script>
+        var blob; var base64String;
+        function beforeSave(args) {
+            args.needBlobData = true; //To trigger saveComplete event
+            args.isFullPost = false; // To get blob data of Spreadsheet
+        }
+
+        function saveComplete(args) {
+            // Assign blobdata to a variable.
+            blob = args.blobData;
+            // Convert blob data to base64 string.
+            let reader = new FileReader();
+            reader.readAsDataURL(blob);
+            reader.onloadend = function () {
+                base64String = reader.result;
+            };
+        }
+
+        document.getElementById("importBtn").addEventListener('click', function () {
+            var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
+            // Open the file based on saved base64 string.
+            fetch(base64String)
+                .then((response) => response.blob())
+                .then((fileBlob) => {
+                    var file = new File([fileBlob], 'Sample.xlsx'); // to open the blob file
+                    spreadsheetObj.open({ file: file });
+                });
+        });
+        document.getElementById("exportBtn").addEventListener('click', function () {
+            var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
+            spreadsheetObj.save({
+                url: 'Home/Save',
+                fileName: 'Worksheet',
+                saveType: 'Xlsx',
+            }); // Specifies the save URL, filename, file type need to be saved.
+            // Logs base64 string into the console.
+            console.log('Base64 String - ', base64String);
+        });
+    </script>
