@@ -54,7 +54,7 @@ In the following example, **code**, **name**, and **countries** columns from hie
 {% endtabs %}
 {% endif %}
 
-![Hierarichal datasource Sample](./images/hierarichal-data.PNG)
+![Hierarichal datasource Sample.](./images/hierarichal-data.PNG)
 
 ### Self-referential data
 
@@ -89,7 +89,7 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% endtabs %}
 {% endif %}
 
-![Self referential datasource Sample](./images/self-referential.PNG)
+![Self referential datasource Sample.](./images/self-referential.PNG)
 
 ## Remote data
 
@@ -145,7 +145,7 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 {% endif %}
 
 
-![Remote datasource Sample](./images/remote-data.PNG)
+![Remote datasource Sample.](./images/remote-data.PNG)
 
 ## Prevent Node selection
 
@@ -177,4 +177,4 @@ The `Selectable` property is disabled and the selection is prevented for parent 
 {% endif %}
 
 
-![Prevent Node Selection Sample](./images/prevent-node.gif)
+![Prevent Node Selection Sample.](./images/prevent-node.gif)
