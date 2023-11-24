@@ -594,7 +594,7 @@ Validation rules
 <td>
 <b>Property:</b> <i>validation-rules</i>
 {% highlight html %}
-    <ej-time-picker id="time" validation-rules="new Dictionary<string, object>() {{ 'required',true}}"></ej-time-picker>
+    <ej-time-picker id="time" validation-rules="new Dictionary<string, object>() { { 'required' , true} }"></ej-time-picker>
 {% endhighlight %}
 </td>
 <td>
@@ -622,7 +622,7 @@ Validation message
 <b>Property:</b> <i>validation-messages</i>
 
 ```html
-    <ej-time-picker id="time" validation-rules="new Dictionary<string, object>() {{ 'required',true}}" validation-messages="new Dictionary<string, object>() {{ 'required','Required Time value'}}"></ej-time-picker>
+    <ej-time-picker id="time" validation-rules="new Dictionary<string, object>() { { 'required' , true} }" validation-messages="new Dictionary<string, object>() { { 'required' , 'Required Time value'} }"></ej-time-picker>
 ```
 
 </td>

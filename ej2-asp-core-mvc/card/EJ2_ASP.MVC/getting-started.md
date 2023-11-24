@@ -19,13 +19,13 @@ This section briefly explains about how to include [ASP.NET MVC Card](https://ww
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
 * [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
-## Add style sheet
+## Add stylesheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -38,6 +38,8 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/a
 
 {% endhighlight %}
 {% endtabs %}
+
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls.
 
 ## Add ASP.NET MVC Card control
 
@@ -70,25 +72,11 @@ You can create Card with a header in a specific structure. For adding header you
     </div>
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/demo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/demo/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/card/demo/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Card](images/card-control.PNG)
 

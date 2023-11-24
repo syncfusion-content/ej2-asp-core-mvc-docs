@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Open Thumbnail pane programmatically
 
 The PDF Viewer library allows you to open the thumbnail pane programmatically using the [**openThumbnailPane()**](https://ej2.syncfusion.com/documentation/api/pdfviewer/thumbnailView/#openthumbnailpane) method.
@@ -19,16 +18,48 @@ The following steps are used to open the thumbnail.
 
 **Step 2:** Use the following code snippet to open thumbnail.
 
-```html
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
 <button type="button" onclick="openThumbnail()">Open Thumbnail Pane</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="openThumbnail">
+    </ejs-pdfviewer>
+</div>
 
 <script>
     function openThumbnail() {
-        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-        // Open Thumbnail Pane.
-        viewer.thumbnailViewModule.openThumbnailPane();
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.thumbnailViewModule.openThumbnailPane();
     }
 </script>
-```
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
-Find the sample, [how to open the thumbnail pane programmatically](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EJ2CoreSample-1092111159.zip)
+<button type="button" onclick="openThumbnail()">Open Thumbnail Pane</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl='/Index'
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   documentLoad="openThumbnail">
+    </ejs-pdfviewer>
+</div>
+
+<script>
+    function openThumbnail() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.thumbnailViewModule.openThumbnailPane();
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Open%20Thumbnail%20pane%20programmatically)
