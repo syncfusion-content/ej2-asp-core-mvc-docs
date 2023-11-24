@@ -38,7 +38,7 @@ In the following sample, the first tile of the color palette represents the no c
 {% endtabs %}
 {% endif %}
 
-
+>if the noColor property is set to true, ensure that the modeswitcher property is set to false.
 
 ## Custom no color
 
