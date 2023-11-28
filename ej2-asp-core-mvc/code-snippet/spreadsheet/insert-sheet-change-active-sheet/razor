@@ -22,16 +22,16 @@
                         name: 'new_sheet',
                         ranges: [
                             {
-                                dataSource: ViewBag.NewData,
+                                dataSource: ViewBag.ProductData,
                                 startCell: 'A1'
                             },
                         ]
                     },
                 ]
             );
-            // Timeout function to wait until the sheet is inserted.
+            // Use the timeout function to wait until the sheet is inserted.
             setTimeout(() => {
-                // Method to switch to the new sheet.
+                // Method for switching to a new sheet.
                 spreadsheet.goTo('new_sheet!A1');
             })
         });

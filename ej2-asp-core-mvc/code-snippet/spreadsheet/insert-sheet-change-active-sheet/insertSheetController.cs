@@ -26,7 +26,7 @@ public IActionResult Index()
                 new { ProductId= "7",  ProductName= "Uncle Bob\'s Organic Dried Pears",  SupplierId= "3",  QuantityPerUnit= "12 - 1 lb pkgs.",  UnitPrice= "30.00",  UnitsInStock= "15",  Discontinued= "true" },
                 new { ProductId= "10",  ProductName= "Queso Cabrales",  SupplierId= "5",  QuantityPerUnit= "1 kg pkg.",  UnitPrice= "21.00",  UnitsInStock= "22",  Discontinued= "false" },
             };
-            ViewBag.NewData = data;
+            ViewBag.ProductData = data;
             return View();
 
         }
