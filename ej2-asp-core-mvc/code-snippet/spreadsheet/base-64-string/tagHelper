@@ -1,5 +1,5 @@
-<ejs-button id="importBtn" content="Import"></ejs-button>
-<ejs-button id="exportBtn" content="Export"></ejs-button>
+<ejs-button id="importBtn" content="Import Base64"></ejs-button>
+<ejs-button id="exportBtn" content="Export as Base64"></ejs-button>
 <ejs-spreadsheet id="spreadsheet" beforeSave="beforeSave" saveComplete="saveComplete" openUrl="Home/Open">
             <e-spreadsheet-sheets>
                 <e-spreadsheet-sheet name="Price Details">
@@ -16,18 +16,16 @@
         </ejs-spreadsheet>
 
     <script>
-    var blob; var base64String;
+    var base64String;
     function beforeSave(args) {
-		args.needBlobData = true; //To trigger saveComplete event
-        args.isFullPost = false; // To get blob data of Spreadsheet
+		args.needBlobData = true; //To trigger the saveComplete event.
+        args.isFullPost = false; // Get the spreadsheet data as blob data in the saveComplete event.
     }
 
     function saveComplete(args) {
-        // Assign blobdata to a variable.
-        blob = args.blobData;
         // Convert blob data to base64 string.
         let reader = new FileReader();
-        reader.readAsDataURL(blob);
+        reader.readAsDataURL(args.blobData);
         reader.onloadend = function () {
             base64String = reader.result;
         };

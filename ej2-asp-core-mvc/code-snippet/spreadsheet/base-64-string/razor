@@ -1,5 +1,5 @@
-@Html.EJS().Button("importBtn").Content("Import").Render();
-@Html.EJS().Button("exportBtn").Content("Export").Render();
+@Html.EJS().Button("importBtn").Content("Import Base64").Render();
+@Html.EJS().Button("exportBtn").Content("Export as Base64").Render();
 @Html.EJS().Spreadsheet("spreadsheet").BeforeSave("beforeSave").SaveComplete("saveComplete").Sheets(sheet =>
 {
      sheet.Name("Price Details").Ranges(ranges =>
@@ -14,18 +14,16 @@
    }).Render()
 
     <script>
-        var blob; var base64String;
+        var base64String;
         function beforeSave(args) {
-            args.needBlobData = true; //To trigger saveComplete event
-            args.isFullPost = false; // To get blob data of Spreadsheet
+            args.needBlobData = true; //To trigger the saveComplete event.
+            args.isFullPost = false; // Get the spreadsheet data as blob data in the saveComplete event.
         }
 
         function saveComplete(args) {
-            // Assign blobdata to a variable.
-            blob = args.blobData;
             // Convert blob data to base64 string.
             let reader = new FileReader();
-            reader.readAsDataURL(blob);
+            reader.readAsDataURL(args.blobData);
             reader.onloadend = function () {
                 base64String = reader.result;
             };
