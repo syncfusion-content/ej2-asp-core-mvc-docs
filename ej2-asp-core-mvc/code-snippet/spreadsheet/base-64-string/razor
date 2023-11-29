@@ -35,7 +35,7 @@
             fetch(base64String)
                 .then((response) => response.blob())
                 .then((fileBlob) => {
-                    var file = new File([fileBlob], 'Sample.xlsx'); // to open the blob file
+                    var file = new File([fileBlob], 'Sample.xlsx');
                     spreadsheetObj.open({ file: file });
                 });
         });
