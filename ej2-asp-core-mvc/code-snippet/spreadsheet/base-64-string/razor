@@ -16,7 +16,7 @@
     <script>
         var base64String;
         function beforeSave(args) {
-            args.needBlobData = true; //To trigger the saveComplete event.
+            args.needBlobData = true; // To trigger the saveComplete event.
             args.isFullPost = false; // Get the spreadsheet data as blob data in the saveComplete event.
         }
 
