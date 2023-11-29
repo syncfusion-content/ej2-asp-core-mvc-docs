@@ -13,34 +13,34 @@
 					</e-spreadsheet-columns>
                 </e-spreadsheet-sheet>
             </e-spreadsheet-sheets>
-        </ejs-spreadsheet>
+</ejs-spreadsheet>
 
-    <script>
+<script>
     var base64String;
     function beforeSave(args) {
-		args.needBlobData = true; // To trigger the saveComplete event.
+        args.needBlobData = true; // To trigger the saveComplete event.
         args.isFullPost = false; // Get the spreadsheet data as blob data in the saveComplete event.
     }
 
     function saveComplete(args) {
         // Convert blob data to base64 string.
-        let reader = new FileReader();
+        var reader = new FileReader();
         reader.readAsDataURL(args.blobData);
         reader.onloadend = function () {
             base64String = reader.result;
         };
     }
 
-	 document.getElementById("importBtn").addEventListener('click', function () {
+    document.getElementById("importBtn").addEventListener('click', function () {
         var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
-           // Open the file based on saved base64 string.
-         fetch(base64String)
-             .then((response) => response.blob())
-             .then((fileBlob) => {
-                 var file = new File([fileBlob], 'Sample.xlsx');
-                 spreadsheetObj.open({ file: file });
-             });
-        });
+        // Open the file based on saved base64 string.
+        fetch(base64String)
+            .then((response) => response.blob())
+            .then((fileBlob) => {
+                var file = new File([fileBlob], 'Sample.xlsx');
+                spreadsheetObj.open({ file: file });
+            });
+    });
     document.getElementById("exportBtn").addEventListener('click', function () {
         var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
         spreadsheetObj.save({
@@ -51,4 +51,4 @@
         // Logs base64 string into the console.
         console.log('Base64 String - ', base64String);
     });
-    </script>
+</script>
