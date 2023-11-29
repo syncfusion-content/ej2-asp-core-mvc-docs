@@ -12,7 +12,7 @@ documentation: ug
 
 Sheet is a collection of cells organized in the form of rows and columns that allows you to store, format, and manipulate the data. Using `insertSheet` method, you can insert one or more sheets at your desired index. Now, you can make the inserted sheet as active sheet by focusing the start cell of that sheet using `goTo` method.
 
-The following code example shows how to set the active sheet when importing an Excel file.
+The following code example shows how to insert a sheet programmatically and make it the active sheet.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
