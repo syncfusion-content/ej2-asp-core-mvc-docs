@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-## Save and open Spreadsheet data as a Base64 string in Spreadsheet control
+## Save and open Spreadsheet data as a Base64 string in ##Platform_Name## Spreadsheet control
 
 In the Spreadsheet control, there is currently no direct option to save and open data as a `Base64` string. You can achieve this by saving the Spreadsheet data as blob data and then converting that saved blob data to a `Base64` string using `FileReader`. 
 
