@@ -21,7 +21,7 @@
                 "cancel": "Annuler",
                 "delete": "Supprimer le fichier",
                 "totalFiles": 'Total des fichiers',
-                "size": 'taille',
+                "size": 'taille'
             }
         }
     })
