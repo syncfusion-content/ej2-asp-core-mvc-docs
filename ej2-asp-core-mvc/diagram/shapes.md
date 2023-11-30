@@ -195,7 +195,7 @@ Html elements can be embedded in the diagram using [`Html`](https://help.syncfus
 
 ## Native
 
-Diagram provides support to embed SVG element into a node. The shape property of node allows to set the type of node. To create a [`native`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) node, it should be set as **native**.
+Diagram provides support to embed SVG element into a node. The shape property of node allows to set the type of node. To create a [`native`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html#Syncfusion_EJ2_Diagrams_Shapes_Native) node, it should be set as **native**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -238,7 +238,7 @@ The following tables illustrates all the possible scale options for the node.
 
 ## Basic shapes
 
-* The [`Basic`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the type of the shape should be set as **basic**. Its shape property can be set with any one of the built-in shape.
+* The [`Basic`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html#Syncfusion_EJ2_Diagrams_Shapes_Basic) shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the type of the shape should be set as **basic**. Its shape property can be set with any one of the built-in shape.
 
 * To render a rounded rectangle, you need to set the type as basic and shape as rectangle. Set the [`cornerRadius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBasicShape.html#Syncfusion_EJ2_Diagrams_DiagramBasicShape_CornerRadius) property to specify the radius of rounded rectangle.
 
@@ -276,7 +276,7 @@ The list of basic shapes are as follows.
 
 ## Path
 
-The [`Path`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, specify the shape as **path**. The path property of node allows you to define the path to be drawn.
+The [`Path`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html#Syncfusion_EJ2_Diagrams_Shapes_Path) node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, specify the shape as **path**. The path property of node allows you to define the path to be drawn.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -302,7 +302,7 @@ The [`Path`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagra
 
 ## Flow Shapes
 
-The [`flow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, specify the shape type as **flow**. Flow shapes and by default, it is considered as **process**.
+The [`flow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html#Syncfusion_EJ2_Diagrams_Shapes_Flow) shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, specify the shape type as **flow**. Flow shapes and by default, it is considered as **process**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

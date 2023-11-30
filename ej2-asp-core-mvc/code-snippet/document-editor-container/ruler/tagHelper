@@ -1,0 +1,14 @@
+<ejs-button id="container_ruler_button" content="Show/hide ruler" onclick="onClick()"></ejs-button>
+<ejs-documenteditorcontainer id="container" (created)="onCreate()" documentEditorSettings="settings"></ejs-documenteditorcontainer>
+
+<script>
+    var container;
+    var settings = { showRuler: true };
+    function onCreate() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+    }
+    function onClick() {
+        container.documentEditorSettings.showRuler = !container.documentEditorSettings.showRuler;
+    }
+</script>
