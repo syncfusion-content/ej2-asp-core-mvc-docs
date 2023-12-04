@@ -50,7 +50,7 @@ If you are using [Syncfusion JavaScript Components](https://ej2.syncfusion.com/h
 N>  From 2022 Vol 1 (v20.1) only the license key registration required for Syncfusion Javascript Components.
 
 {% tabs %}
-{% highlight c# tabtitle="Program.cs" %}
+{% highlight c# tabtitle="Program.cs" hl_lines="3" %}
 
 var app = builder.Build();
 //Register Syncfusion license
@@ -66,7 +66,7 @@ if (!app.Environment.IsDevelopment())
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="~/_Layout.cshtml"  %}
+{% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="9" %}
 
 <head>
     ...
