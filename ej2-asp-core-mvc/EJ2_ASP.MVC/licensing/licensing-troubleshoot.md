@@ -51,7 +51,7 @@ If you are using [Syncfusion JavaScript Components](https://ej2.syncfusion.com/h
 N>  From 2022 Vol 1 (v20.1) only the license key registration required for Syncfusion Javascript Components.
 
 {% tabs %}
-{% highlight c# tabtitle="Global.asax.cs" %}
+{% highlight c# tabtitle="Global.asax.cs" hl_lines="4" %}
 
 protected void Application_Start()
 {
@@ -66,7 +66,7 @@ protected void Application_Start()
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="~/_Layout.cshtml"  %}
+{% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="9" %}
 
 <head>
     ...
