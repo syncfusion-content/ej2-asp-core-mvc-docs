@@ -56,7 +56,7 @@ N>  From 2022 Vol 1 (v20.1) only the license key registration required for Syncf
 protected void Application_Start()
 {
       //Register Syncfusion license
-	    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+      Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
            
       AreaRegistration.RegisterAllAreas();
       FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
@@ -70,6 +70,10 @@ protected void Application_Start()
 
 <head>
     ...
+    <!-- Syncfusion ASP.NET MVC controls styles -->
+    <link rel="stylesheet" href= https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css />
+    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <script src= https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js></script>
     <script>
         // Registering Syncfusion license key
         ej.base.registerLicense('License Key');
