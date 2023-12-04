@@ -45,7 +45,7 @@ If you have directly obtained Syncfusion assemblies from [NuGet.org](http://nuge
 
 ## Registering license key for Syncfusion JavaScript Components used in ASP.NET Core App
 
-If you are using [Syncfusion JavaScript Components](https://ej2.syncfusion.com/home/) in application, then you have to register license for ASP.NET Core in `Program.cs` and for JavaScript components register license in `_Layout.cshtml` after referring to the Syncfusion styles and scripts as follows:
+If you are using [Syncfusion JavaScript Components](https://ej2.syncfusion.com/home/) in application, then you have to register license for ASP.NET Core in `Program.cs` and for JavaScript components register license in `_Layout.cshtml` after referring to the Syncfusion styles and scripts as follows,
 
 N>  From 2022 Vol 1 (v20.1) only the license key registration required for Syncfusion Javascript Components.
 
