@@ -4,7 +4,7 @@
       {
           ranges.ShowFieldAsHeader(false).StartCell("A2").Query("new ej.data.Query().select(['OrderID', 'CustomerID', 'ShipName', 'ShipCity', 'ShipCountry', 'Freight']).take(200)").DataSource(dataManger =>
    {
-       dataManger.Url("https://js.syncfusion.com/demos/ejServices//wcf/Northwind.svc/Orders").CrossDomain(true);
+       dataManger.Url("https://services.syncfusion.com/js/production/api/Orders").CrossDomain(true);
    }).Add();
       }).Rows(row =>
       {
