@@ -95,11 +95,11 @@ Now, add the Syncfusion ASP.NET Core 3D Chart tag helper in `~/Pages/Index.cshtm
         { X: "Aion",     Y: 80308  }
     ]
 }
-<ejs-chart3d id="columnContainer" load="load" axisLabelRender="axisLabelRender" pointRender="labelRender" title="Top Selling Electric Cars in China" enableRotation="true" wallColor="transparent" rotation="7" tilt="10" depth="100" height="400">
+<ejs-chart3d id="columnContainer" enableRotation="true" rotation="7" tilt="10" depth="100">
     <e-chart3d-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" labelPlacement="@Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks" labelRotation="-45">
     </e-chart3d-primaryxaxis>
     <e-chart3d-series-collection>
-        <e-chart3d-series dataSource="data" xName="X" yName="Y" name="Gold" columnSpacing="0.1" type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column">
+        <e-chart3d-series dataSource="data" xName="X" yName="Y" name="Gold" type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column">
         </e-chart3d-series>
     </e-chart3d-series-collection>
 </ejs-chart3d>
