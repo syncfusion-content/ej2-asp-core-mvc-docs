@@ -100,7 +100,7 @@ Now, add the Syncfusion ASP.NET MVC 3D Chart control in `~/Home/Index.cshtml` pa
 @Html.EJS().Chart3D("container").EnableRotation(true).Rotation(7).Tilt(10).Depth(100).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks).LabelRotation(-45)
 ).Series(series =>
 {
-    series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).DataSource("data").XName("X").YName("Y").Name("Gold").ColumnSpacing(0.1).Add();
+    series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).DataSource("data").XName("X").YName("Y").Name("Gold").Add();
 }).Render()
 
 {% endhighlight %}
