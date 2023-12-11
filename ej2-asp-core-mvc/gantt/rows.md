@@ -336,7 +336,34 @@ The following code example shows how to drag and drop a row on button click acti
 {% endtabs %}
 {% endif %}
 
+### Perform taskbar drag and drop
 
+Gantt provides option to perform taskbar drag allows users to conveniently organize and manage applications on the taskbar by moving and rearranging their positions using a simple drag-and-drop action. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
+
+This mode can be enable by setting the `AllowTaskbarDragAndDrop` property to `true`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/taskbardragdrop/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarDragDrop.cs" %}
+{% include code-snippet/gantt/rows/taskbardragdrop/taskbardragdrop.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/taskbardragdrop/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarDragDrop.cs" %}
+{% include code-snippet/gantt/rows/taskbardragdrop/taskbardragdrop.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Customize rows
 

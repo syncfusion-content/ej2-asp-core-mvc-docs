@@ -48,6 +48,36 @@ This mode can be enable by setting the `EnableVirtualization` property to `true`
 
 ![Alt text](images/virtual-scroll.png)
 
+## Timeline Virtualization
+
+
+Timeline virtualization allows you to load data sources having a large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.
+
+This mode can be enable by setting the `EnableTimelineVirtualization` property to `true`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/virtual-scroll-cs2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Timeline-Virtual-scroll.cs" %}
+{% include code-snippet/gantt/virtual-scroll-cs2/virtual-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/virtual-scroll-cs2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Timeline-Virtual-scroll.cs" %}
+{% include code-snippet/gantt/virtual-scroll-cs2/virtual-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Limitations for Virtual Scroll
 
 * Due to the element height limitation in browsers, the maximum number of records loaded is limited by the browser capacity.
