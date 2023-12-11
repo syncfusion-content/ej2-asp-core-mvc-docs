@@ -443,6 +443,32 @@ function dragEnter(args:IDragEnterEventArgs)
     }
 ```
 
+## Adding UML Nodes in Symbol palette
+
+UML Class diagram is used to represent the static view of an application. The class diagrams are widely used in the modelling of object oriented systems because they are the only UML diagrams which can be mapped directly with object-oriented languages. Diagram supports to generate the class diagram shapes from business logic.
+
+The following code example illustrates how to render the UML nodes such as Class,Enumeration and Interface in palette.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/symbol-palette/uml/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Umlclass.cs" %}
+{% include code-snippet/diagram/symbol-palette/uml/umlclass.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Umlclass.cs" %}
+{% include code-snippet/diagram/symbol-palette/uml/umlclass.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Palette interaction
 
 Palette interaction notifies the element enter, leave, and dragging of the symbols into the diagram.
