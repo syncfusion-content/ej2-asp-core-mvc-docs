@@ -86,26 +86,28 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 Now, add the Syncfusion ASP.NET Core 3D Chart tag helper in `~/Pages/Index.cshtml` page.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
-
-@{
-    var data = [
-        { X: "Tesla",    Y: 137429 },
-        { X: "Aion",     Y: 80308  }
-    ]
-}
-<ejs-chart3d id="columnContainer" enableRotation="true" rotation="7" tilt="10" depth="100">
-    <e-chart3d-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" labelPlacement="@Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks" labelRotation="-45">
-    </e-chart3d-primaryxaxis>
-    <e-chart3d-series-collection>
-        <e-chart3d-series dataSource="data" xName="X" yName="Y" name="Gold" type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column">
-        </e-chart3d-series>
-    </e-chart3d-series-collection>
-</ejs-chart3d>
-
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/3d-chart/getting-started/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Getting-started.cs" %}
+{% include code-snippet/3d-chart/getting-started/getting-started.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/3d-chart/getting-started/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Getting-started.cs" %}
+{% include code-snippet/3d-chart/getting-started/getting-started.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Chart control will be rendered in the default web browser.
 

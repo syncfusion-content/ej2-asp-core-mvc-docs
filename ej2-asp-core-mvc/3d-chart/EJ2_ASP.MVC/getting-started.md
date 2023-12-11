@@ -87,24 +87,28 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 Now, add the Syncfusion ASP.NET MVC 3D Chart control in `~/Home/Index.cshtml` page.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-
-@{
-    var data = [
-        { X: "Tesla",    Y: 137429 },
-        { X: "Aion",     Y: 80308  }
-    ]
-}
-
-@Html.EJS().Chart3D("container").EnableRotation(true).Rotation(7).Tilt(10).Depth(100).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks).LabelRotation(-45)
-).Series(series =>
-{
-    series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).DataSource("data").XName("X").YName("Y").Name("Gold").Add();
-}).Render()
-
+{% include code-snippet/3d-chart/getting-started/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Getting-started.cs" %}
+{% include code-snippet/3d-chart/getting-started/getting-started.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/3d-chart/getting-started/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Getting-started.cs" %}
+{% include code-snippet/3d-chart/getting-started/getting-started.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC 3D Chart control will be rendered in the default web browser.
 
