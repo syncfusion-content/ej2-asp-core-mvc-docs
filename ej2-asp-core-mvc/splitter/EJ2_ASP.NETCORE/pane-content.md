@@ -119,3 +119,19 @@ The following code demonstrates how to fetch an element from the document and lo
 Output be like the below.
 
 ![Selector content](images/selector-content.png)
+
+## ContentTemplate
+
+The Splitter content can be provided through the [`contentTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.layouts.splitter.html#Syncfusion_EJ2_Layouts_Splitter_ContentTemplate) property, and it accepts both text and HTML string as content by using `e-content-template` tag helper. `It is necessary to encase the designated content within a div container`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/splitter/content-template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/splitter/content-template/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
