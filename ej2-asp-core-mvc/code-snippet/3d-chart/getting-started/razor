@@ -7,11 +7,8 @@
     };
 }
  
-<ejs-chart3d id="columnContainer" enableRotation="true" rotation="7" tilt="10" depth="100">
-<e-chart3d-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" labelPlacement="@Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks" labelRotation="-45">
-</e-chart3d-primaryxaxis>
-<e-chart3d-series-collection>
-<e-chart3d-series dataSource="data" xName="X" yName="Y" name="Gold" type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column">
-</e-chart3d-series>
-</e-chart3d-series-collection>
-</ejs-chart3d>
+@Html.EJS().Chart3D("container").EnableRotation(true).Rotation(7).Tilt(10).Depth(100).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks).LabelRotation(-45)
+).Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).DataSource("data").XName("X").YName("Y").Name("Gold").Add();
+}).Render()
