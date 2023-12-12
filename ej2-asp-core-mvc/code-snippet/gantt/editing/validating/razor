@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.Grids
+
+
+@{
+    var dict = new Dictionary<string, object>();
+    dict.Add("number", true);
+    dict.Add("min", 0);
+}
+        @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
+                "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+                ).AllowSelection(true).Columns(col =>
+                {
+                    col.Field("TaskId").Width(80).Add();
+                    col.Field("TaskName").HeaderText("Job Name").Width(250).ValidationRules(new { required = true }).Add();
+                    col.Field("StartDate").ValidationRules(new { required = true }).Add();
+                    col.Field("EndDate").ValidationRules(new { required = true }).Add();
+                    col.Field("Duration").ValidationRules(new { required = true }).Add();
+                    col.Field("Progress").ValidationRules(new { required = true }).Add();
+                }).EditSettings(es => es.AllowAdding(true).AllowEditing(true).AllowDeleting(true).AllowTaskbarEditing(true).ShowDeleteConfirmDialog(true)).Render()
+        
