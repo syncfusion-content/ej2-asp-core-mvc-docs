@@ -58,7 +58,6 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
             Palettes.Add(new SymbolPalettePalette() { Id = "UMLClass", Expanded = true, Symbols = umlShapes, Title = "UML Nodes" });
             ViewBag.palettes = Palettes;
             ViewBag.getSymbolInfo = "getSymbolInfo";
-            ViewBag.Multiple = ExpandMode.Multiple;
             ViewBag.getSymbolDefaults = "getSymbolDefaults";
             return View();
         }
