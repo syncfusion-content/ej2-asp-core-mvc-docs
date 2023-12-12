@@ -11,7 +11,7 @@
         <e-gantt-columns>
            <e-gantt-column field="TaskId" width="150"> </e-gantt-column>
            <e-gantt-column field="TaskName" headerText="Job Name" width="250" validationRules="@(new { required=true})"></e-gantt-column>
-           <e-gantt-column field="StartDate" validationRules="@(new { required=true})"></e-gantt-column>
+           <e-gantt-column field="StartDate" validationRules="@(new {required = true, date = true})" format="yMd" editType="datetimepickeredit" textAlign="Right" width="185"></e-gantt-column>
            <e-gantt-column field="EndDate" validationRules="@(new { required=true})"></e-gantt-column>
            <e-gantt-column field="Duration" validationRules="@(new { required=true})"></e-gantt-column>
            <e-gantt-column field="Progress" validationRules="@(new { required=true})"></e-gantt-column>

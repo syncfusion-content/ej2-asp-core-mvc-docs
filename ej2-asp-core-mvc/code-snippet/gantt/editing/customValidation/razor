@@ -6,7 +6,8 @@
                 {
                     col.Field("TaskId").Width(80).Add();
                     col.Field("TaskName").HeaderText("Job Name").Width(250).ValidationRules(new { required = true }).Add();
-                    col.Field("StartDate").ValidationRules(new { required = true }).Add();
+                    col.Field("StartDate").EditType("datetimepickeredit").ValidationRules(new { required = true, date = true })
+                    .TextAlign(TextAlign.Right).Format("yMd").Add();
                     col.Field("EndDate").ValidationRules(new { required = true }).Add();
                     col.Field("Duration").ValidationRules(new { required = true }).Add();
                     col.Field("Progress").ValidationRules(new { required = true }).Add();
