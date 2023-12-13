@@ -137,4 +137,33 @@ By default, with the feature `RowAutoHeight`, there will be a space in the botto
 
 **Note**: The property `IgnoreWhitespace` will be applicable only when `RowAutoHeight` feature is enabled in the Scheduler
 
+## How to limit maximum number of events to display
+
+By default, the scheduler will render the overlapping events based on the start and end time. Now we can customize the number of events displayed in a cell by using the `maxEventsPerRow` property grouped under the `views` property. The `maxEventsPerRow` property is only applicable for month, timeline month, and timeline year views. The following code example shows how to limit number of events displayed in a cell as follows.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/row-auto-height/max-events-per-row/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/row-auto-height/max-events-per-row/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/row-auto-height/max-events-per-row/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/row-auto-height/max-events-per-row/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+> The property `maxEventsPerRow` will be applicable only when `rowAutoHeight` feature is disabled in the Scheduler.
+
 N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
