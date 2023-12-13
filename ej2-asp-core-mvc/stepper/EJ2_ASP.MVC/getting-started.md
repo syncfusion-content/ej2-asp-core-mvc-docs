@@ -102,9 +102,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Stepper Control](images/stepper-control.png)
 
-## Icon and Label
+## Configure Icon and Label
 
-You can set the stepper with icon and label by using the `IconCss` and `Label` property.
+You can set the stepper `IconCss` and `Label` by using the `Steps` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
