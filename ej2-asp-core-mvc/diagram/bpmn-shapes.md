@@ -715,7 +715,7 @@ The following table contains various representation of message flows.
 
 | Message | Image |
 | -------- | -------- |
-| Default | ![Default Message BPMN Shape](images/Default1.png) |
+| Default | ![Default Message BPMN Shape](images/Message-default.png) |
 | InitiatingMessage | ![InitiatingMessage Message BPMN Shape](images/IMessage.png) |
 | NonInitiatingMessage | ![NonInitiatingMessage Message BPMN Shape](images/NIMessage.png) |
 
