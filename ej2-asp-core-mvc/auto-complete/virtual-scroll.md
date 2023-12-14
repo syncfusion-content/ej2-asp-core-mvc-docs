@@ -17,6 +17,11 @@ During virtual scrolling, the data retrieved from the data source depends on the
  
 When fetching data from the data source, the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.autocomplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_ActionBegin) event is triggered before data retrieval begins. Then, the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.autocomplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_ActionComplete) event is triggered once the data is successfully fetched.
 
+
+## Binding local data
+
+Local data can be represented in two ways as described below.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -40,7 +45,56 @@ When fetching data from the data source, the [actionBegin](https://help.syncfusi
 {% endtabs %}
 {% endif %}
 
-## Limitation of virtualization
+## Binding remote data
 
-* Virtualization is not supported in the grouping feature.
-* Virtual scrolling in a AutoComplete control may not perform optimally when users attempt to interact with the component using the down and up arrow keys while the dropdown popup is closed.
+Remote data can be represented in two ways as described below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/autocomplete/virtual-scroll-remote/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/autocomplete/virtual-scroll-remote/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %} 
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/autocomplete/virtual-scroll-remote/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/autocomplete/virtual-scroll-remote/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Grouping
+
+Local data can be represented in two ways as described below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/autocomplete/virtual-scroll-group/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/autocomplete/virtual-scroll-group/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %} 
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/autocomplete/virtual-scroll-group/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/autocomplete/virtual-scroll-group/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

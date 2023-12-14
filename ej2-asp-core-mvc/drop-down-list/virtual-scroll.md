@@ -17,6 +17,11 @@ During virtual scrolling, the data retrieved from the data source depends on the
  
 When fetching data from the data source, the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.dropdownlist.html#Syncfusion_EJ2_DropDowns_DropDownList_ActionBegin) event is triggered before data retrieval begins. Then, the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.dropdownlist.html#Syncfusion_EJ2_DropDowns_DropDownList_ActionComplete) event is triggered once the data is successfully fetched.
 
+
+## Binding local data
+
+Local data can be represented in two ways as described below.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -40,7 +45,56 @@ When fetching data from the data source, the [actionBegin](https://help.syncfusi
 {% endtabs %}
 {% endif %}
 
-## Limitation of virtualization
+## Binding remote data
 
-* Virtualization is not supported in the grouping feature.
-* Virtual scrolling in a Dropdown List control may not perform optimally when using incremental search. This limitation arises when the dropdown popup is closed, and users attempt to interact with the component using keyboard input.
+Remote data can be represented in two ways as described below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/dropdownlist/virtual-scroll-remote/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/dropdownlist/virtual-scroll-remote/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %} 
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/dropdownlist/virtual-scroll-remote/razor %}
+{% endhighlight %} 
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/dropdownlist/virtual-scroll-remote/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Grouping
+
+Local data can be represented in two ways as described below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/dropdownlist/virtual-scroll-group/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/dropdownlist/virtual-scroll-group/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %} 
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/dropdownlist/virtual-scroll-group/razor %}
+{% endhighlight %} 
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/dropdownlist/virtual-scroll-group/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
