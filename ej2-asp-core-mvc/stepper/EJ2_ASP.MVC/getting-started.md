@@ -90,6 +90,18 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 Now, add the Syncfusion ASP.NET MVC Stepper control in `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@Html.EJS().Stepper("stepper").Render()
+
+{% endhighlight %}
+{% endtabs %}
+
+## Adding Stepper Steps
+
+You can use the `Steps` property of Stepper to define the steps like below.
+
+{% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/stepper/getting-started/demo/razor %}
 {% endhighlight %}
@@ -104,7 +116,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Configure Icon and Label
 
-You can set the stepper `IconCss` and `Label` by using the `Steps` property.
+You can set the `IconCss` and `Label` by using the `Steps` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

@@ -90,6 +90,18 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 Now, add the Syncfusion ASP.NET Core Stepper tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+<ejs-stepper id="stepper"><ejs-stepper>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Adding Stepper Steps
+
+You can use the `e-stepper-step` tag helper to define the steps like below.
+
+{% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/stepper/getting-started/demo/tagHelper %}
 {% endhighlight %}
@@ -101,7 +113,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Configure Icon and Label
 
-You can set the stepper `iconCss` and `label` by using the `steps` property.
+You can set the `iconCss` and `label` by using the `e-stepper-step` tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
