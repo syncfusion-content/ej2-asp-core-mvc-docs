@@ -6,7 +6,7 @@
             <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
             <e-stepper-step label="Address" iconCss="sf-icon-user"></e-stepper-step>
             <e-stepper-step label="Delivery" iconCss="sf-icon-transport"></e-stepper-step>
-            <e-stepper-step label="Payment" iconCss="sf-icon-payment" optional=true></e-stepper-step>
+            <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
             <e-stepper-step label="Ordered" iconCss="sf-icon-success"></e-stepper-step>
         </e-stepper-steps>
     </ejs-stepper>
