@@ -53,7 +53,7 @@ This mode can be enable by setting the `EnableVirtualization` property to `true`
 
 Timeline virtualization allows you to load data sources having a large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.
 
-This mode can be enable by setting the `EnableTimelineVirtualization` property to `true`.
+This mode can be enable by setting the [EnableTimelineVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableTimelineVirtualization) property to `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
