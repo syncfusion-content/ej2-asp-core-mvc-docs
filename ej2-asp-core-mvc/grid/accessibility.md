@@ -44,29 +44,29 @@ The Grid component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patte
 
 | Attributes | Purpose |
 | --- | --- |
-| `role=grid` | To represent the element containing the grid widget. |
+| `role=grid` | To represent the element containing the grid component. |
 | `role=row` | To represent the element containing the cells of the row in the grid. |
-| `role=rowgroup` | To establishes a relationship between owned row elements in the grid. |
-| `role=columnheader` | To represent the cell in a row contains header information for a column |
-| `role=gridcell` | To represent the a cell in a grid widget. |
-| `role=button` | To represent the element that acts as a button in grid. |
-| `role=search` | To represent the element that acts as a search region the grid. |
+| `role=rowgroup` | To represent the group of rows in the grid. |
+| `role=columnheader` | To represent the cell in a row contains header information for a column in the grid. |
+| `role=gridcell` | To represent a cell in the grid component. |
+| `role=button` | To represent the element that acts as a button in the grid. |
+| `role=search` | To represent the element that acts as a search region in the grid. |
 | `role=presentation` | To represent the element to be not available for accessibility concerns. |
-| `role=navigation` | To represent the element containg pager elements to navigate from one page to another. |
-| `aria-colindex` | Defines an element's column index or position with respect to the total number of columns within the grid. |
-| `aria-rowindex` | Defines an element's position with respect to the total number of rows within the grid,  |
-| `aria-selected` | Indicates the current "selected" state of the rows and cells in the grid. |
-| `aria-expanded` | Indicate if the expand icon in the hierarchy grid or grouped grid or detail grid is expanded or collapsed |
-| `aria-sort` | Indicates if items in the grid are sorted in ascending or descending order. |
-| `aria-busy` | Indicates an element is being modified and that assistive technologies may want to wait until the changes are complete before informing the user about the update. |
-| `aria-owns` | Identifies an element in order to define a visual, functional, or contextual relationship between a parent and its child elements. |
-| `aria-hidden` | Hides the element from accessibility concerns. |
-| `aria-labelledby` | Provides an accessible name for the checkbox labels in excel filter, checkbox filter and column chooser dialog.  |
-| `aria-describedby` | Provides an description about the header features enabled in the when the grid header cell is focused |
+| `role=navigation` | To represent the element containing pager elements to navigate from one page to another. |
+| `aria-colindex` | Defines the column index of the column with respect to the total number of columns within the grid. |
+| `aria-rowindex` | Defines row index of the row with respect to the total number of rows within the grid.  |
 | `aria-rowspan` | Defines the number of rows spanned by a cell within the grid.  |
 | `aria-colspan` | Defines the number of columns spanned by a cell within the grid. |
 | `aria-rowcount` | Defines the total number of rows in the grid.  |
 | `aria-colcount` | Defines the total number of columns in the grid. |
+| `aria-selected` | Indicates the current "selected" state of the rows and cells in the grid. |
+| `aria-expanded` | Indicate if the expand icon in the hierarchy grid or grouped grid or detail grid is expanded or collapsed |
+| `aria-sort` | Indicates whether the data in the grid are sorted in ascending or descending order. |
+| `aria-busy` | Indicates an element is being modified and that assistive technologies may want to wait until the changes are complete before informing the user about the update. |
+| `aria-owns` | Identifies an element in order to define a visual, functional, or contextual relationship between a parent and its child elements. |
+| `aria-hidden` | Hides the element from accessibility concerns. |
+| `aria-labelledby` | Provides an accessible name for the checkbox labels in excel filter, checkbox filter and column chooser dialog.  |
+| `aria-describedby` | Provides an description about the features enabled in the header when the grid header cell is focused. |
 
 ## Keyboard interaction
 
@@ -75,48 +75,50 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 **Windows**  | **MAC** | **To do this**
 -----|----- | -----
 <b>Pager</b>||
-<kbd>Tab / Shift + Tab</kbd> | <kbd>Tab / Shift + Tab</kbd> | Focus on the next/previous pager item.
+<kbd>Tab</kbd> | <kbd>Tab</kbd> | Focus on the next pager item.
+<kbd>Shift + Tab</kbd> | <kbd>Shift + Tab</kbd> | Focus on the previous pager item.
 <kbd>Enter / Space</kbd> | <kbd>Enter / Space</kbd> | Select the currently focused page.
-<kbd>Right Arrow / PageDown</kbd> | <kbd>Right Arrow / Fn + Down Arrow</kbd> | Navigate to next page.
-<kbd>Left Arrow / PageUp</kbd> | <kbd>Left Arrow / Fn + Up Arrow</kbd> | Navigate to previous page.
-<kbd>Home / End</kbd> | <kbd>Fn + Left Arrow</kbd> / <kbd>Fn + Right Arrow</kbd> | Navigate to first and last page.
+<kbd>PageUp / Left Arrow</kbd> | <kbd>Left Arrow</kbd> | Navigate to previous page.
+<kbd>PageDown / Right Arrow</kbd> | <kbd>Right Arrow</kbd> | Navigate to next page.
+<kbd>Home / Ctrl + Alt + PageUp</kbd> | <kbd>Fn + Left Arrow</kbd> | Navigate to first page.
+<kbd>End / Ctrl + Alt + PageDown</kbd> | <kbd>Fn + Right Arrow</kbd> | Navigate to last page.
 <b>Focus Elements</b>||
-<kbd>Home</kbd> | <kbd>Fn + Left Arrow</kbd> | Goes to the first cell.
-<kbd>End</kbd> | <kbd>Fn + Right Arrow</kbd> | Goes to the last cell.
-<kbd>Ctrl + Home</kbd> | <kbd>Command + Fn + Left Arrow</kbd> | Goes to the first row.
-<kbd>Ctrl + End</kbd> | <kbd>Command +  Fn + Right Arrow</kbd> | Goes to the last row.
-<kbd>DownArrow</kbd> | <kbd>DownArrow</kbd> | Moves the cell focus downward.
-<kbd>UpArrow</kbd> | <kbd>UpArrow</kbd> | Moves the cell focus upward.
-<kbd>LeftArrow</kbd> | <kbd>LeftArrow</kbd> | Moves the cell focus left side.
-<kbd>RightArrow</kbd> | <kbd>RightArrow</kbd> | Moves the cell focus right side.
-<kbd>Alt + J</kbd> | <kbd>Alt + J</kbd> | To focus grid header element.
-<kbd>Alt + W</kbd> | <kbd>Alt + W</kbd> | To focus grid content element.
+<kbd>Home</kbd> | <kbd>Fn + Left Arrow</kbd> | Moves the focus to the first cell of the focused row.
+<kbd>End</kbd> | <kbd>Fn + Right Arrow</kbd> | Moves the focus to the last cell of the focused row.
+<kbd>Ctrl + Home</kbd> | <kbd>Command + Fn + Left Arrow</kbd> | Moves the focus to the first Cell of the first row in the grid.
+<kbd>Ctrl + End</kbd> | <kbd>Command +  Fn + Right Arrow</kbd> | Moves the focus to the last Cell of the last row in the grid.
+<kbd>UpArrow</kbd> | <kbd>UpArrow</kbd> | Moves the cell focus upward from the focused cell.
+<kbd>DownArrow</kbd> | <kbd>DownArrow</kbd> |  Moves the cell focus downward from the focused cell.
+<kbd>RightArrow</kbd> | <kbd>RightArrow</kbd> | Moves the cell focus right side from the focused cell.
+<kbd>LeftArrow</kbd> | <kbd>LeftArrow</kbd> |  Moves the cell focus left side from the focused cell.
+<kbd>Alt + J</kbd> | <kbd>Alt + J</kbd> | Moves the focus to the entire grid.
+<kbd>Alt + W</kbd> | <kbd>Alt + W</kbd> | Move the focus to the grid content element.
 <b>Selection</b>||
-<kbd>Shift + DownArrow</kbd> | <kbd>Shift + DownArrow</kbd> | Extends the row/cell selection downwards.
-<kbd>Shift + UpArrow</kbd> | <kbd>Shift + UpArrow</kbd> | Extends the row/cell selection upwards.
-<kbd>Shift + LeftArrow</kbd> | <kbd>Shift + LeftArrow</kbd> | Extends the cell selection to the left side.
-<kbd>Shift + RightArrow</kbd> | <kbd>Shift + RightArrow</kbd> | Extends the cell selection to the right side.
-<kbd>Enter</kbd> | <kbd>Enter</kbd> | Moves the row/cell selection downward.
+<kbd>UpArrow</kbd> | <kbd>UpArrow</kbd> | Moves up a row/cell selection from the selected row/cell.
+<kbd>DownArrow</kbd> | <kbd>DownArrow</kbd> | Moves down a row/cell selection from the selected row/cell.
+<kbd>RightArrow</kbd> | <kbd>RightArrow</kbd> | Moves to the right cell selection from the selected cell.
+<kbd>LeftArrow</kbd> | <kbd>LeftArrow</kbd> | Moves to the left cell selection from the selected cell.
+<kbd>Shift + UpArrow</kbd> | <kbd>Shift + UpArrow</kbd> | Extends the row/cell selection upwards from the selected row/cell.
+<kbd>Shift + DownArrow</kbd> | <kbd>Shift + DownArrow</kbd> | Extends the row/cell selection downwards from the selected row/cell.
+<kbd>Shift + RightArrow</kbd> | <kbd>Shift + RightArrow</kbd> | Extends the cell selection to the right side from the selected cell.
+<kbd>Shift + LeftArrow</kbd> | <kbd>Shift + LeftArrow</kbd> | Extends the cell selection to the left side from the selected cell.
+<kbd>Enter</kbd> | <kbd>Enter</kbd> | Moves the row/cell selection downward from the selected cell/row.
 <kbd>Shift + Enter</kbd> | <kbd>Shift + Enter</kbd> | Moves the row/cell selection upward.
-<kbd>Esc</kbd> | <kbd>Esc</kbd> | Deselects all the rows/cells.
-<kbd>Ctrl + A</kbd> | <kbd>Ctrl + A</kbd> | Selects all the rows/cells.
-<kbd>UpArrow</kbd> | <kbd>UpArrow</kbd> | Moves up a row/cell selection.
-<kbd>DownArrow</kbd> | <kbd>DownArrow</kbd> | Moves down a row/cell selection.
-<kbd>RightArrow</kbd> | <kbd>RightArrow</kbd> | Moves to the right cell selection.
-<kbd>LeftArrow</kbd> | <kbd>LeftArrow</kbd> | Moves to the left cell selection.
+<kbd>Esc</kbd> | <kbd>Esc</kbd> | Deselects all the selected row/cells.
+<kbd>Ctrl + A</kbd> | <kbd>Ctrl + A</kbd> | Select all the row/cells in the current page.
 <b>Grouping</b>||
-<kbd>Ctrl + DownArrow</kbd> | <kbd>Command + DownArrow</kbd> | Expands all the visible groups.
 <kbd>Ctrl + UpArrow</kbd> | <kbd>Command + UpArrow</kbd> | Collapses all the visible groups.
+<kbd>Ctrl + DownArrow</kbd> | <kbd>Command + DownArrow</kbd> | Expands all the visible groups.
 <kbd>Ctrl + Space</kbd> | <kbd>Ctrl + Space</kbd> | Performs grouping when focused on a header element.
 <kbd>Enter</kbd> | <kbd>Enter</kbd> | If the current cell is an expand/collapse cell then expands/collapses the current group/detailrow/childgrid.
 <b>Print</b>||
 <kbd>Ctrl + P</kbd> | <kbd>Command + P</kbd>| Prints the Grid.
 <b>Clipboard</b>||
-<kbd>Ctrl + C</kbd> | <kbd>Command + C</kbd> | Copy selected rows or cells data into clipboard
-<kbd>Ctrl + Shift + H</kbd> | <kbd>Ctrl + Shift + H</kbd> | Copy selected rows or cells data with header into clipboard
-<b>Edit</b>||
-<kbd>F2</kbd> | <kbd>F2</kbd> | Edits current selected row/cell in Grid.
-<kbd>Enter</kbd> | <kbd>Enter</kbd> | If current row/cell is in edit state, then completes the editing.
+<kbd>Ctrl + C</kbd> | <kbd>Command + C</kbd> | Copies selected rows or cells data into the clipboard.
+<kbd>Ctrl + Shift + H</kbd> | <kbd>Ctrl + Shift + H</kbd> | Copies selected rows or cells data with header into clipboard
+<b>Editing</b>||
+<kbd>F2</kbd> | <kbd>F2</kbd> | Starts editing of selected row if Mode is Normal/Dialog or Starts editing of selected cell if Mode is Batch.
+<kbd>Enter</kbd> | <kbd>Enter</kbd> | Saves the current form it the Mode is Normal or Dialog / Saves the current cell and starts editing the next row cell if Mode is Batch.
 <kbd>Insert</kbd> | <kbd>Ctrl + Command + Enter<kbd> | Creates a new add form depending on the NewRowPosition.
 <kbd>Delete</kbd> | <kbd>Delete</kbd> | Deletes the current selected record.
 <kbd>Tab</kbd> | <kbd>Tab</kbd> | Navigates to the next editable cell if the Mode is Normal or Dialog / Saves the current cell and starts editing the next cell is Mode is Batch.
@@ -129,9 +131,13 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 <b>Reordering</b>||
 <kbd>Ctrl + left arrow or right arrow</kbd> | <kbd>Command  + left arrow or right arrow</kbd> | Reorders the focused header column to the left or right side.
 <b>Sorting</b>||
+<kbd>Enter</kbd> | <kbd>Enter</kbd> | Performs sorting(ascending/descending) on a column when its header element is in focused state.
 <kbd>Ctrl + Enter</kbd> | <kbd>Command + Enter</kbd> | Performs multi-sorting on a column when its header element is in focused state.
 <kbd>Shift + Enter</kbd> | <kbd>Shift + Enter</kbd> | Clears sorting for the focused header column.
-<kbd>Enter</kbd> | <kbd>Enter</kbd> | Performs sorting(ascending/descending) on a column when its header element is in focused state.
+
+> <br>
+* The <kbd>Command</kbd> and <kbd>Control</kbd> keys on Mac devices can be interchanged. When this switch occurs, use the <kbd>Command</kbd> key in place of the <kbd>Control</kbd> key and the <kbd>Control</kbd> key in place of the <kbd>Command</kbd> key for the above listed key interactions with Mac devices. <br>
+* For example, after switching the keys to group the columns when the header element is focused use <kbd>Command + Space</kbd> and for expanding the visible groups use <kbd>Ctrl + DownArrow</kbd>.
 
 ## Ensuring accessibility
 
