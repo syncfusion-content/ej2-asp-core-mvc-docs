@@ -443,32 +443,6 @@ function dragEnter(args:IDragEnterEventArgs)
     }
 ```
 
-## Adding UML Nodes in Symbol palette
-
-UML built-in shapes are efficiently rendered in a symbol palette. The `symbols` property is utilized to define UML symbols with the necessary classes and methods. By incorporating this feature, you can seamlessly augment the palette with a curated collection of predefined UML symbols, thereby enhancing the versatility of your UML diagramming application.
-
-The following code example showcases the rendering of UML built-in shapes in a symbol palette.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/symbol-palette/uml/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Umlclass.cs" %}
-{% include code-snippet/diagram/symbol-palette/uml/umlclass.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Umlclass.cs" %}
-{% include code-snippet/diagram/symbol-palette/uml/umlclass.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Palette interaction
 
 Palette interaction notifies the element enter, leave, and dragging of the symbols into the diagram.
