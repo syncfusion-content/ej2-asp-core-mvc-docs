@@ -38,7 +38,7 @@ In the following sample, the first tile of the color palette represents the no c
 {% endtabs %}
 {% endif %}
 
->if the noColor property is set to true, ensure that the modeswitcher property is set to false.
+>If the [noColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_NoColor) property is enabled, make sure to disable the [modeswitcher](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_ModeSwitcher) property.
 
 ## Custom no color
 
