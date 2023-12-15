@@ -34,35 +34,35 @@
     function fileOpened() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         let dimension = imageEditorObj.getImageDimension();
-        imageEditorObj.drawText(dimension.x, dimension.y, null, 'Arial');
+        imageEditorObj.drawText(dimension.x, dimension.y, 'Syncfusion', 'Arial');
     }
 
     function brushScriptMTClick() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imageEditorObj.reset();
         let dimension = imageEditorObj.getImageDimension();
-	    imageEditorObj.drawText(dimension.x,dimension.y, null, 'Brush Script MT');
+	    imageEditorObj.drawText(dimension.x,dimension.y, 'Syncfusion', 'Brush Script MT');
     }
 
     function papyrusClick() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imageEditorObj.reset();
         let dimension = imageEditorObj.getImageDimension();
-	    imageEditorObj.drawText(dimension.x,dimension.y, null, 'Papyrus');
+	    imageEditorObj.drawText(dimension.x,dimension.y, 'Syncfusion', 'Papyrus');
     }
 
     function timesNewRomanClick() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imageEditorObj.reset();
         let dimension = imageEditorObj.getImageDimension();
-	    imageEditorObj.drawText(dimension.x,dimension.y, null, 'Times New Roman');
+	    imageEditorObj.drawText(dimension.x,dimension.y, 'Syncfusion', 'Times New Roman');
     }
 
     function courierNewClick() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imageEditorObj.reset();
         let dimension = imageEditorObj.getImageDimension();
-	    imageEditorObj.drawText(dimension.x,dimension.y, null, 'Courier New');
+	    imageEditorObj.drawText(dimension.x,dimension.y, 'Syncfusion', 'Courier New');
     }
 </script>
 
