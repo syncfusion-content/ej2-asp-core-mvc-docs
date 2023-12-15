@@ -1,0 +1,1 @@
+@Html.EJS().ComboBox("records").Placeholder("Select a item").PopupHeight("200px").DataSource(obj =>obj.Url("https://ej2services.syncfusion.com/aspnet/development/api/orders").CrossDomain(true).Adaptor("WebApiAdaptor")).EnableVirtualization(true).AllowFiltering(true).Fields(new Syncfusion.EJ2.DropDowns.ComboBoxFieldSettings { Text = "OrderID", Value = "OrderID" }).Render()
