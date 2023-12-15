@@ -135,9 +135,10 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 <kbd>Ctrl + Enter</kbd> | <kbd>Command + Enter</kbd> | Performs multi-sorting on a column when its header element is in focused state.
 <kbd>Shift + Enter</kbd> | <kbd>Shift + Enter</kbd> | Clears sorting for the focused header column.
 
-> <br>
-* The <kbd>Command</kbd> and <kbd>Control</kbd> keys on Mac devices can be interchanged. When this switch occurs, use the <kbd>Command</kbd> key in place of the <kbd>Control</kbd> key and the <kbd>Control</kbd> key in place of the <kbd>Command</kbd> key for the above listed key interactions with Mac devices. <br>
-* For example, after switching the keys to group the columns when the header element is focused use <kbd>Command + Space</kbd> and for expanding the visible groups use <kbd>Ctrl + DownArrow</kbd>.
+<br>
+
+> * The <kbd>Command</kbd> and <kbd>Control</kbd> keys on Mac devices can be interchanged. When this switch occurs, use the <kbd>Command</kbd> key in place of the <kbd>Control</kbd> key and the <kbd>Control</kbd> key in place of the <kbd>Command</kbd> key for the above listed key interactions with Mac devices. 
+> * For example, after switching the keys to group the columns when the header element is focused use <kbd>Command + Space</kbd> and for expanding the visible groups use <kbd>Ctrl + DownArrow</kbd>.
 
 ## Ensuring accessibility
 
