@@ -92,7 +92,7 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 <kbd>End</kbd> | <kbd>Fn + Right Arrow</kbd> | Moves the focus to the last cell of the focused row.
 <kbd>Ctrl + Home</kbd> | <kbd>Command + Fn + Left Arrow</kbd> | Moves the focus to the first Cell of the first row in the grid.
 <kbd>Ctrl + End</kbd> | <kbd>Command +  Fn + Right Arrow</kbd> | Moves the focus to the last Cell of the last row in the grid.
-<kbd>UpArrow</kbd> | <kbd>UpArrow</kbd> | Moves the cell focus upward from the focused cell.
+<kbd>Up Arrow</kbd> | <kbd>Up Arrow</kbd> | Moves the cell focus upward from the focused cell.
 <kbd>Down Arrow</kbd> | <kbd>Down Arrow</kbd> |  Moves the cell focus downward from the focused cell.
 <kbd>Right Arrow</kbd> | <kbd>Right Arrow</kbd> | Moves the cell focus right side from the focused cell.
 <kbd>LeftArrow</kbd> | <kbd>LeftArrow</kbd> |  Moves the cell focus left side from the focused cell.
@@ -103,11 +103,11 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 
 **Windows**  | **MAC** | **To do this**
 -----|----- | -----
-<kbd>UpArrow</kbd> | <kbd>UpArrow</kbd> | Moves up a row/cell selection from the selected row/cell.
+<kbd>Up Arrow</kbd> | <kbd>Up Arrow</kbd> | Moves up a row/cell selection from the selected row/cell.
 <kbd>Down Arrow</kbd> | <kbd>Down Arrow</kbd> | Moves down a row/cell selection from the selected row/cell.
 <kbd>Right Arrow</kbd> | <kbd>Right Arrow</kbd> | Moves to the right cell selection from the selected cell.
 <kbd>LeftArrow</kbd> | <kbd>LeftArrow</kbd> | Moves to the left cell selection from the selected cell.
-<kbd>Shift + UpArrow</kbd> | <kbd>Shift + UpArrow</kbd> | Extends the row/cell selection upwards from the selected row/cell.
+<kbd>Shift + Up Arrow</kbd> | <kbd>Shift + Up Arrow</kbd> | Extends the row/cell selection upwards from the selected row/cell.
 <kbd>Shift + Down Arrow</kbd> | <kbd>Shift + Down Arrow</kbd> | Extends the row/cell selection downwards from the selected row/cell.
 <kbd>Shift + Right Arrow</kbd> | <kbd>Shift + Right Arrow</kbd> | Extends the cell selection to the right side from the selected cell.
 <kbd>Shift + LeftArrow</kbd> | <kbd>Shift + LeftArrow</kbd> | Extends the cell selection to the left side from the selected cell.
@@ -120,7 +120,7 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 
 **Windows**  | **MAC** | **To do this**
 -----|----- | -----
-<kbd>Ctrl + UpArrow</kbd> | <kbd>Command + UpArrow</kbd> | Collapses all the visible groups.
+<kbd>Ctrl + Up Arrow</kbd> | <kbd>Command + Up Arrow</kbd> | Collapses all the visible groups.
 <kbd>Ctrl + Down Arrow</kbd> | <kbd>Command + Down Arrow</kbd> | Expands all the visible groups.
 <kbd>Ctrl + Space</kbd> | <kbd>Ctrl + Space</kbd> | Performs grouping when focused on a header element.
 <kbd>Enter</kbd> | <kbd>Enter</kbd> | If the current cell is an expand/collapse cell then expands/collapses the current group/detailrow/childgrid.
