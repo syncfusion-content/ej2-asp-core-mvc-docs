@@ -3,7 +3,7 @@
         <e-spreadsheet-sheet name="Shipment Details">
             <e-spreadsheet-ranges>
                 <e-spreadsheet-range showFieldAsHeader=false startCell="A2" query="new ej.data.Query().select(['OrderID', 'CustomerID', 'ShipName', 'ShipCity', 'ShipCountry', 'Freight']).take(200)">
-                    <e-data-manager url="https://js.syncfusion.com/demos/ejServices//wcf/Northwind.svc/Orders" crossdomain=true></e-data-manager>
+                    <e-data-manager url="https://services.syncfusion.com/js/production/api/Orders" crossdomain=true></e-data-manager>
                 </e-spreadsheet-range>
             </e-spreadsheet-ranges>
             <e-spreadsheet-rows>
