@@ -139,7 +139,9 @@ By default, with the feature `RowAutoHeight`, there will be a space in the botto
 
 ## How to limit maximum number of events to display
 
-By default, the scheduler will render the overlapping events based on the start and end time. Now we can customize the number of events displayed in a cell by using the `maxEventsPerRow` property grouped under the `views` property. The `maxEventsPerRow` property is only applicable for month, timeline month, and timeline year views. The following code example shows how to limit number of events displayed in a cell as follows.
+In the Scheduler, the default behavior is to display concurrent events based on cell height, with each new event represented as `+n more` characters. However, you may want to improve the quality of the presentation by limiting the number of concurrent events. This can be accomplished by using the `maxEventsPerRow` property, which is defaulted to the `views` property.
+
+The `maxEventsPerRow` property is specific to the month, timeline month, and timeline year views, allowing you to view events visually in these rows. Below is a code example that demonstrates how to use this constraint and the events displayed in a cell have been created:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
