@@ -5,7 +5,7 @@
     Click on the command and choose the special character you want to include from the popup.
 </p></div>).Created("created").ToolbarSettings(e => e.Items((object)ViewBag.items)).Render()
 
-    @Html.EJS().Dialog("customTbarDialog").Visible(false).Header("Special Characters").Created("onDialogCreate").ZIndex(1000).ShowCloseIcon(false).IsModal(true).cssClass('e-rte-elements').OverlayClick("dialogOverlay").Buttons(e =>
+    @Html.EJS().Dialog("customTbarDialog").Visible(false).Header("Special Characters").Created("onDialogCreate").ZIndex(1000).ShowCloseIcon(false).IsModal(true).OverlayClick("dialogOverlay").Buttons(e =>
     {
     e.ButtonModel(ViewBag.button).Click("onInsert").Add();
     e.ButtonModel(ViewBag.button1).Click("dialogOverlay").Add();

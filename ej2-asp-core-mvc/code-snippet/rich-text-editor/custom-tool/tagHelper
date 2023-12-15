@@ -10,7 +10,7 @@
         </e-content-template>       
     </ejs-richtexteditor>
 </div>
-<ejs-dialog id="customTbarDialog" visible="false" header='Special Characters'  created="onDialogCreate" zIndex="1000" showCloseIcon="false" isModal="true" cssClass='e-rte-elements' overlayClick="dialogOverlay">
+<ejs-dialog id="customTbarDialog" visible="false" header='Special Characters'  created="onDialogCreate" zIndex="1000" showCloseIcon="false" isModal="true" overlayClick="dialogOverlay">
     <e-dialog-buttons>
         <e-dialog-dialogbutton buttonModel="ViewBag.button" click="onInsert"></e-dialog-dialogbutton>
         <e-dialog-dialogbutton buttonModel="ViewBag.button1" click="dialogOverlay"></e-dialog-dialogbutton>
