@@ -55,7 +55,7 @@ N> Refer to the GitHub sample for quick implementation and testing from [here](h
 
 ## Export grid as memory stream
 
-The Grid offers an option to export the data as a Memory Stream instead of downloading it as a file in the browser. To obtain the Memory Stream of the exported grid, set the `IsMemoryStream` parameter to true in the [PdfExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridPdfExport.html#Syncfusion_EJ2_GridExport_GridPdfExport_PdfExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_Syncfusion_EJ2_GridExport_PdfExportProperties_) method.
+The Grid offers an option to export the data as a Memory Stream instead of downloading it as a file in the browser. To obtain the Memory Stream of the exported grid, set the `IsMemoryStream` parameter to **true** in the [PdfExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridPdfExport.html#Syncfusion_EJ2_GridExport_GridPdfExport_PdfExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_Syncfusion_EJ2_GridExport_PdfExportProperties_) method.
 
 The following code demonstrates how to get the memory stream of exported grid.
 
@@ -84,7 +84,7 @@ The following code demonstrates how to get the memory stream of exported grid.
 
 ## Merge grid's memory stream with an existing stream
 
-The [`Essential PDF`](https://help.syncfusion.com/file-formats/pdf/overview) library is used to merge the multiple memory streams into a single stream.
+The [Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview) library is used to merge the multiple memory streams into a single stream.
 
 In the following code, the [Merge](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.PdfDocumentBase.html#Syncfusion_Pdf_PdfDocumentBase_Merge_Syncfusion_Pdf_PdfDocumentBase_Syncfusion_Pdf_Parsing_PdfLoadedDocument_) method of the [PdfDocumentBase](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.PdfDocumentBase.html) class is used to merge the grid's Memory Stream with another existing PDF file.
 

@@ -85,7 +85,7 @@ In the below demo, we have invoked the above method inside the [`toolbarClick`](
 
 ## Export grid as memory stream
 
-The Grid offers an option to export the data as a Memory Stream instead of downloading it as a file in the browser. To obtain the Memory Stream of the exported grid, set the `IsMemoryStream` parameter to true in the [ExcelExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_ExcelExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_Syncfusion_EJ2_GridExport_ExcelExportProperties_) method.
+The Grid offers an option to export the data as a Memory Stream instead of downloading it as a file in the browser. To obtain the Memory Stream of the exported grid, set the `IsMemoryStream` parameter to **true** in the [ExcelExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_ExcelExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_Syncfusion_EJ2_GridExport_ExcelExportProperties_) and [CsvExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_CsvExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_Syncfusion_EJ2_GridExport_ExcelExportProperties_) methods.
 
 The following code demonstrates how to get the memory stream of exported grid.
 
@@ -114,7 +114,7 @@ The following code demonstrates how to get the memory stream of exported grid.
 
 ## Merge grid's memory stream with an existing stream
 
-The [`Essential XlsIO`](https://help.syncfusion.com/file-formats/xlsio/overview) library is used to merge the multiple memory streams into a single stream.
+The [Essential XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview) library is used to merge the multiple memory streams into a single stream.
 
 In the following code, `ExcelEngine` is used to open the grid's and external XLSX file's stream as a workbook and copy all the worksheets from the source workbook to the destination workbook using the `AddCopy` method of WorkSheets.
 
