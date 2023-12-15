@@ -70,6 +70,7 @@ The Grid component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patte
 
 ## Keyboard interaction
 
+
 The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Grid component.
 
 <b>Pager</b>
@@ -95,7 +96,7 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 <kbd>Up Arrow</kbd> | <kbd>Up Arrow</kbd> | Moves the cell focus upward from the focused cell.
 <kbd>Down Arrow</kbd> | <kbd>Down Arrow</kbd> |  Moves the cell focus downward from the focused cell.
 <kbd>Right Arrow</kbd> | <kbd>Right Arrow</kbd> | Moves the cell focus right side from the focused cell.
-<kbd>LeftArrow</kbd> | <kbd>LeftArrow</kbd> |  Moves the cell focus left side from the focused cell.
+<kbd>Left Arrow</kbd> | <kbd>Left Arrow</kbd> |  Moves the cell focus left side from the focused cell.
 <kbd>Alt + J</kbd> | <kbd>Alt + J</kbd> | Moves the focus to the entire grid.
 <kbd>Alt + W</kbd> | <kbd>Alt + W</kbd> | Move the focus to the grid content element.
 
@@ -106,11 +107,11 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 <kbd>Up Arrow</kbd> | <kbd>Up Arrow</kbd> | Moves up a row/cell selection from the selected row/cell.
 <kbd>Down Arrow</kbd> | <kbd>Down Arrow</kbd> | Moves down a row/cell selection from the selected row/cell.
 <kbd>Right Arrow</kbd> | <kbd>Right Arrow</kbd> | Moves to the right cell selection from the selected cell.
-<kbd>LeftArrow</kbd> | <kbd>LeftArrow</kbd> | Moves to the left cell selection from the selected cell.
+<kbd>Left Arrow</kbd> | <kbd>Left Arrow</kbd> | Moves to the left cell selection from the selected cell.
 <kbd>Shift + Up Arrow</kbd> | <kbd>Shift + Up Arrow</kbd> | Extends the row/cell selection upwards from the selected row/cell.
 <kbd>Shift + Down Arrow</kbd> | <kbd>Shift + Down Arrow</kbd> | Extends the row/cell selection downwards from the selected row/cell.
 <kbd>Shift + Right Arrow</kbd> | <kbd>Shift + Right Arrow</kbd> | Extends the cell selection to the right side from the selected cell.
-<kbd>Shift + LeftArrow</kbd> | <kbd>Shift + LeftArrow</kbd> | Extends the cell selection to the left side from the selected cell.
+<kbd>Shift + Left Arrow</kbd> | <kbd>Shift + Left Arrow</kbd> | Extends the cell selection to the left side from the selected cell.
 <kbd>Enter</kbd> | <kbd>Enter</kbd> | Moves the row/cell selection downward from the selected cell/row.
 <kbd>Shift + Enter</kbd> | <kbd>Shift + Enter</kbd> | Moves the row/cell selection upward.
 <kbd>Esc</kbd> | <kbd>Esc</kbd> | Deselects all the selected row/cells.
