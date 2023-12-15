@@ -1,0 +1,78 @@
+<div class="col-lg-12 control-section e-img-editor-sample">
+    @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { }).FontFamily(
+        new {default = "Arial", items = new object[] {new { id = "arial", text = "Arial" },
+                new { id = "brush script mt", text = "Brush Script MT" }, new { id = "papyrus", text = "Papyrus" },
+                new { id = "times new roman", text = "Times New Roman" }, new { id = "courier new", text = "Courier New" }
+            }
+        };
+    ).
+FileOpened("fileOpened").Render()
+</div>
+@Html.EJS().Button("brushScriptMT").CssClass("e-primary").Content("Brush Script MT").Click("brushScriptMTClick").Render()
+@Html.EJS().Button("papyrus").CssClass("e-primary").Content("Papyrus").Click("papyrusClick").Render()
+@Html.EJS().Button("timesNewRoman").CssClass("e-primary").Content("Times New Roman").Click("timesNewRomanClick").Render()
+@Html.EJS().Button("courierNew").CssClass("e-primary").Content("Courier New").Click("courierNewClick").Render()
+
+<script>
+    function created() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        if (ej.base.Browser.isDevice) {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+        } else {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+        }
+    }
+
+    function fileOpened() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        let dimension = imageEditorObj.getImageDimension();
+        imageEditorObj.drawText(dimension.x,dimension.y, null, 'Arial');
+    }
+
+    function brushScriptMTClick() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.reset();
+        let dimension = imageEditorObj.getImageDimension();
+	    imageEditorObj.drawText(dimension.x,dimension.y, null, 'Brush Script MT');
+    }
+    function papyrusClick() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.reset();
+        let dimension = imageEditorObj.getImageDimension();
+	    imageEditorObj.drawText(dimension.x,dimension.y, null, 'Papyrus');
+    }
+    function timesNewRomanClick() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.reset();
+        let dimension = imageEditorObj.getImageDimension();
+	    imageEditorObj.drawText(dimension.x,dimension.y, null, 'Times New Roman');
+    }
+    function courierNewClick() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.reset();
+        let dimension = imageEditorObj.getImageDimension();
+	    imageEditorObj.drawText(dimension.x,dimension.y, null, 'Courier New');
+    }
+</script>
+
+<style>
+    .image-editor {
+        margin: 0 auto;
+    }
+
+    .e-img-editor-sample {
+        height: 80vh;
+        width: 100%;
+    }
+
+    @@media only screen and (max-width: 700px) {
+        .e-img-editor-sample {
+            height: 75vh;
+            width: 100%;
+        }
+    }
+
+    .control-wrapper {
+        height: 100%;
+    }
+</style>
