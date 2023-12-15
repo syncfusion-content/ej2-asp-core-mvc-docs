@@ -1,0 +1,1 @@
+@Html.EJS().ComboBox("records").Placeholder("Select a item").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).EnableVirtualization(true).AllowFiltering(true).Fields(new Syncfusion.EJ2.DropDowns.ComboBoxFieldSettings { GroupBy = "Group", Value = "ID", Text="Text" }).Render()
