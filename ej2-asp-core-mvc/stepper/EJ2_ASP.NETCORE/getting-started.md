@@ -57,7 +57,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" />
     <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
@@ -111,9 +111,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Stepper Control](images/stepper-control.png)
 
-## Configure Icon and Label
+## Configure icon and label
 
-You can set the `iconCss` and `label` by using the `e-stepper-step` tag helper.
+You can define the step icon and label by setting the `iconCss` and `label` properties using `e-stepper-step` tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
