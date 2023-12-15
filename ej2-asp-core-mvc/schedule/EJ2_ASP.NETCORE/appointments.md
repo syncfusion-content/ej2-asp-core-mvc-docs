@@ -1281,7 +1281,7 @@ The `maxEventsPerRow` property is specific to the month, timeline month, and tim
 
 > The property `maxEventsPerRow` will be applicable only when [rowAutoHeight](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight) feature is disabled in the Scheduler.
 
-![maximum number of events to display in ASP.NET Core Scheduler](images/max-events-per-row.png)
+![Maximum number of events to display in ASP.NET Core Scheduler](images/max-events-per-row.png)
 
 ## Display tooltip for appointments
 
