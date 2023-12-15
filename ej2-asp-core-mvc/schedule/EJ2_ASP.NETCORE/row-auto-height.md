@@ -141,35 +141,4 @@ By default, with the feature `rowAutoHeight`, there will be a space in the botto
 
 **Note**: The property `ignoreWhitespace` will be applicable only when `rowAutoHeight` feature is enabled in the Scheduler.
 
-## How to limit maximum number of events to display
-
-In the Scheduler, the default behavior is to display concurrent events based on cell height, with each new event represented as `+n more` characters. However, you may want to improve the quality of the presentation by limiting the number of concurrent events. This can be accomplished by using the `maxEventsPerRow` property, which is defaulted to the `views` property.
-
-The `maxEventsPerRow` property is specific to the month, timeline month, and timeline year views, allowing you to view events visually in these rows. Below is a code example that demonstrates how to use this constraint and the events displayed in a cell have been created:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/row-auto-height/max-events-per-row/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/row-auto-height/max-events-per-row/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/row-auto-height/max-events-per-row/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/row-auto-height/max-events-per-row/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-> The property `maxEventsPerRow` will be applicable only when `rowAutoHeight` feature is disabled in the Scheduler.
-
 N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

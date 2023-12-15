@@ -1241,7 +1241,36 @@ We can show more indicator if more than one appointment is available in a same c
 {% endtabs %}
 {% endif %}
 
+## How to limit maximum number of events to display
 
+In the Scheduler, the default behavior is to display concurrent events based on cell height, with each new event represented as `+n more` characters. However, you may want to improve the quality of the presentation by limiting the number of concurrent events. This can be accomplished by using the `maxEventsPerRow` property, which is defaulted to the [views](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html) property.
+
+The `maxEventsPerRow` property is specific to the month, timeline month, and timeline year views, allowing you to view events visually in these rows. Below is a code example that demonstrates how to use this constraint and the events displayed in a cell have been created:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/row-auto-height/max-events-per-row/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/row-auto-height/max-events-per-row/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/row-auto-height/max-events-per-row/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/row-auto-height/max-events-per-row/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+> The property `maxEventsPerRow` will be applicable only when [rowAutoHeight](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight) feature is disabled in the Scheduler.
 
 ## Display tooltip for appointments
 
