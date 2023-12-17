@@ -201,6 +201,35 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 
 ![Alt text](images/multidrag.png)
 
+### Taskbar drag and drop between rows
+
+The Gantt feature empowers users to efficiently reorganize records by seamlessly moving taskbar and rearranging their positions through a simple drag-and-drop action. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
+
+This mode can be enable by setting the [AllowTaskbarDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowTaskbarDragAndDrop) property to `true`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/taskbardragdrop/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarDragDrop.cs" %}
+{% include code-snippet/gantt/rows/taskbardragdrop/taskbardragdrop.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/taskbardragdrop/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskbarDragDrop.cs" %}
+{% include code-snippet/gantt/rows/taskbardragdrop/taskbardragdrop.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Drag and drop events
 
 We provide various events to customize the row drag and drop action, the following table explains about the available events and its details.
@@ -242,8 +271,6 @@ You can prevent drag action of the particular record by setting the `cancel` pro
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 #### Validating drop position
 
@@ -335,8 +362,6 @@ The following code example shows how to drag and drop a row on button click acti
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Customize rows
 

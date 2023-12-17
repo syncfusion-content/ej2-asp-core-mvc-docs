@@ -1,0 +1,8 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="records" placeholder="Select a item" allowFiltering="true" enableVirtualization="true" popupHeight="200px">
+            <e-data-manager adaptor="WebApiAdaptor" url="https://services.syncfusion.com/js/production/api/orders" crossDomain="true"></e-data-manager>
+            <e-dropdownlist-fields text="OrderID" value="OrderID"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
