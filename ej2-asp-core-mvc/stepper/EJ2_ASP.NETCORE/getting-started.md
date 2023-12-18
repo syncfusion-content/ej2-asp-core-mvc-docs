@@ -37,6 +37,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 N> Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
+
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
@@ -85,21 +86,21 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Stepper Control
+## Add ASP.NET Core Stepper control
 
 Now, add the Syncfusion ASP.NET Core Stepper tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight c# tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
 <ejs-stepper id="stepper"><ejs-stepper>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Stepper Steps
+## Adding steps
 
-You can use the `e-stepper-step` tag helper to define the steps like below.
+You can define steps by using `e-stepper-step` tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

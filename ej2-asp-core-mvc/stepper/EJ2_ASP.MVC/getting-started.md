@@ -92,14 +92,16 @@ Now, add the Syncfusion ASP.NET MVC Stepper control in `~/Views/Home/Index.cshtm
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
 
+@using Syncfusion.EJ2.Navigations
+
 @Html.EJS().Stepper("stepper").Render()
 
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Stepper Steps
+## Adding steps
 
-You can use the `Steps` property of Stepper to define the steps like below.
+You can define steps by setting the `Steps` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
