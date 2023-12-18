@@ -41,6 +41,34 @@ N> Currently, we don't have support for exporting the manually scheduled tasks.
 {% endtabs %}
 {% endif %}
 
+## Indicators in PDF exporting 
+
+The PDF export functionality allows users to export Gantt charts enriched with dynamic indicators and accompanying images.
+These indicators, represented by images,can be effortlessly defined using the `base64` encoding value in the data object of datasource.This data object field should be mapped to indiactor property of [`task fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/pdfexportindicator/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Pdfexport.cs" %}
+{% include code-snippet/gantt/pdf-export/pdfexportindicator/pdfexport.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/pdfexportindicator/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Pdfexport.cs" %}
+{% include code-snippet/gantt/pdf-export/pdfexportindicator/pdfexport.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Exporting Gantt data as a blob object
 
 In Gantt, you can export the Gantt chart data as a blob object, which allows you to preview or modify the data before exporting it.
