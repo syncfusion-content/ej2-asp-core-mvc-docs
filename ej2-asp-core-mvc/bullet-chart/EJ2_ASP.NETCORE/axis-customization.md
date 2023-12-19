@@ -9,18 +9,18 @@ documentation: ug
 ---
 
 
-# Axis Customization
+# Axis customization
 
-## MajorTickLines and MinorTickLines Customization
+## MajorTickLines and MinorTickLines customization
 
-You can customize the `width`, `color`, and `size` of minor and major tick lines using the [`majorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMajorTickLines.html) and [`minorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMinorTickLines.html) properties of the bullet-chart.
+You can customize the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMajorTickLines.html#Syncfusion_EJ2_Charts_BulletChartMajorTickLines_Width), [`Color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMajorTickLines.html#Syncfusion_EJ2_Charts_BulletChartMajorTickLines_Color), and [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMajorTickLines.html#Syncfusion_EJ2_Charts_BulletChartMajorTickLines_Height) of minor and major tick lines using the [`MajorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMajorTickLines.html) and [`MinorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMinorTickLines.html) properties of the bullet chart.
 
-The following properties can be used to customize `majorTicklines` and `minorTicklines`.
+The following properties can be used to customize `MajorTicklines` and `MinorTicklines`.
 
-* **width** - Specifies the width of ticklines.
-* **height** - Specifies the height of ticklines.
-* **color** - Specifies the color of ticklines.
-* **useRangeColor** - Specifies the color of ticklines and represents the color from corresponding range colors.
+* **Width** - Specifies the width of ticklines.
+* **Height** - Specifies the height of ticklines.
+* **Color** - Specifies the color of ticklines.
+* **UseRangeColor** - Specifies the color of ticklines and represents the color from corresponding range colors.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,9 +48,9 @@ The following properties can be used to customize `majorTicklines` and `minorTic
 
 ![Customizing Major and Minor TickLines in Bullet Chart](images/blazor-bullet-chart-tick-line-customization.png)
 
-## Tick Placement
+## Tick placement
 
-The major and the minor ticks can be placed **inside** or **outside** the ranges using the `tickPosition` property.
+The major and the minor ticks can be placed **Inside** or **Outside** the ranges using the [`TickPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_TickPosition) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -75,9 +75,9 @@ The major and the minor ticks can be placed **inside** or **outside** the ranges
 {% endtabs %}
 {% endif %}
 
-## Label Format
+## Label format
 
-Axis numeric labels can be formatted by using the `labelFormat` property. Axis labels support all globalize formats.
+Axis numeric labels can be formatted by using the [`LabelFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_LabelFormat) property. Axis labels support all globalize formats.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -166,9 +166,9 @@ The following table describes the result of applying some commonly used formats 
 </tr>
 </table>
 
-## GroupingSeparator
+## Grouping separator
 
-To separate groups of thousands, use the [`enableGroupSeparator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBuilder.html) property of bullet-chart. To separate the groups of thousands, set the `enableGroupSeparator` property to **true**.
+To separate groups of thousands, use the [`EnableGroupSeparator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_EnableGroupSeparator) property of bullet-chart. To separate the groups of thousands, set the `EnableGroupSeparator` property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -194,9 +194,9 @@ To separate groups of thousands, use the [`enableGroupSeparator`](https://help.s
 {% endif %}
 
 
-## Custom Label Format
+## Custom label format
 
-Using the `labelFormat` property, axis labels can be specified with a custom defined format in addition to the axis value. The label format uses a placeholder such as **${value}K**, which represents the axis label.
+Using the [`LabelFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_LabelFormat) property, axis labels can be specified with a custom defined format in addition to the axis value. The label format uses a placeholder such as **${value}K**, which represents the axis label.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -225,9 +225,9 @@ Using the `labelFormat` property, axis labels can be specified with a custom def
 
 ![Bullet Chart with Custom Label Format](images/blazor-bullet-chart-custom-label-format.png)
 
-## Label Placement
+## Label placement
 
-You can customize the axis labels `inside` or `outside` the bullet-chart using the [`labelPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.LabelPosition.html) property.
+You can customize the axis labels **Inside** or **Outside** the bullet chart using the [`LabelPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_LabelPosition) property.
 
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -254,9 +254,9 @@ You can customize the axis labels `inside` or `outside` the bullet-chart using t
 {% endif %}
 
 
-## Opposed Position
+## Opposed position
 
-To place an axis opposite to its original position, set the `opposedPosition` property to **true**.
+To place an axis opposite to its original position, set the [`OpposedPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_OpposedPosition) property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -282,9 +282,9 @@ To place an axis opposite to its original position, set the `opposedPosition` pr
 {% endif %}
 
 
-## Category Label
+## Category label
 
-The Bullet Chart supports X-axis label by specifying the property from the data source to the `categoryField`. It helps to understand the input data in a more efficient way.
+The Bullet Chart supports X-axis label by specifying the property from the data source to the [`CategoryField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_CategoryField). It helps to understand the input data in a more efficient way.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -313,9 +313,9 @@ The Bullet Chart supports X-axis label by specifying the property from the data 
 
 ![Bullet Chart with Category Label](images/blazor-bullet-chart-category-label.png)
 
-## Category Label Customization
+## Category label customization
 
-The label color, opacity, font size, font family, font weight, and font style can be customized by using the `categoryLabelStyle` setting for category and the `labelStyle` setting for axis label. The `useRangeColor` property specifies the color of the axis label and represents the color from the corresponding range colors.
+The label color, opacity, font size, font family, font weight, and font style can be customized by using the [`CategoryLabelStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_CategoryLabelStyle) setting for category and the [`LabelStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_LabelStyle) setting for axis label. The [`UseRangeColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBulletLabelStyle.html#Syncfusion_EJ2_Charts_BulletChartBulletLabelStyle_UseRangeColor) property specifies the color of the axis label and represents the color from the corresponding range colors.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
