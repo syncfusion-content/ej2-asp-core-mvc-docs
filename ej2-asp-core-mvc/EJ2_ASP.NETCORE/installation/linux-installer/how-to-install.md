@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Installing Syncfusion Essential Studio Linux installer - Syncfusion
-description: Learn here about how to install Syncfusion Essential Studio Linux installer after downloading from our Syncfusion website.
-platform: common
-control: Essential Studio
+title: Installing Syncfusion ##Platform_Name## Linux installer - Syncfusion
+description: Learn here about how to install Syncfusion ##Platform_Name## linux installer after downloading from our Syncfusion website.
+platform: ej2-asp-core-mvc
+control: Installation and Deployment
 documentation: ug
+
 ---
 
-# Installing Syncfusion Essential Studio Linux installer
+# Installing Syncfusion ASP.NET Core Linux installer
 
 ## Overview
 
@@ -26,9 +27,9 @@ Syncfusion provides the Linux installer for the following Essential Studio produ
 
 ## Step-by-Step Installation
 
-The steps below show how to install Essential Studio Linux installer.
+The steps below show how to install ASP.NET Core Linux installer.
 
-1. Extract the Syncfusion Essential Studio Linux installer(.zip) file. The files are extracted in your machine.
+1. Extract the Syncfusion ASP.NET Core Linux installer(.zip) file. The files are extracted in your machine.
 
    ![Welcome wizard](images/Linux_Installer1.png)
    
