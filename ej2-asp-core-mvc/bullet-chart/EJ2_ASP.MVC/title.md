@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Title and Subtitle
+# Title and subtitle
 
 ## Title
 
-The title of the Bullet Chart displays the information about the data plotted by specifying it in the `title` property.
+The title of the Bullet Chart displays the information about the data plotted by specifying it in the [`Title`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Title) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,7 +44,7 @@ The title of the Bullet Chart displays the information about the data plotted by
 
 ## Subtitle
 
-To show additional information about the data plotted, the Bullet Chart can also be given a subtitle using the `subtitle` property.
+To show additional information about the data plotted, the Bullet Chart can also be given a subtitle using the [`Subtitle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Subtitle) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,13 +73,13 @@ To show additional information about the data plotted, the Bullet Chart can also
 
 ![Bullet Chart with Subtitle](images/blazor-bullet-chart-subtitle.png)
 
-## Title and SubTitle Position
+## Title and subTitle position
 
-The title and the subtitle positions can be customized using the `titlePosition` property. Possible positions are **Left**, **Right**, **Top**, and **Bottom**.
+The title and the subtitle positions can be customized using the [`TitlePosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_TitlePosition) property. Possible positions are **Left**, **Right**, **Top**, and **Bottom**.
 
-### Position as Left
+### Position as left
 
-By setting the `titlePosition` to **Left**, you can display the title and subtitle at the left side of the Bullet Chart.
+By setting the [`TitlePosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_TitlePosition) to **Left**, you can display the title and subtitle at the left side of the Bullet Chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -106,9 +106,9 @@ By setting the `titlePosition` to **Left**, you can display the title and subtit
 
 
 
-### Position as Right
+### Position as right
 
-By setting the `titlePosition` to **Right**, you can display the title and subtitle at the right side of the Bullet Chart.
+By setting the [`TitlePosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_TitlePosition) to **Right**, you can display the title and subtitle at the right side of the Bullet Chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -135,9 +135,9 @@ By setting the `titlePosition` to **Right**, you can display the title and subti
 
 
 
-### Position as Top
+### Position as top
 
-By setting the `titlePosition` to **Top**, you can display the title and subtitle at the top of the Bullet Chart. The default title and subtitle positions of the Bullet Chart is **Top**.
+By setting the [`TitlePosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_TitlePosition) to **Top**, you can display the title and subtitle at the top of the Bullet Chart. The default title and subtitle positions of the Bullet Chart is **Top**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -164,9 +164,9 @@ By setting the `titlePosition` to **Top**, you can display the title and subtitl
 
 
 
-### Position as Bottom
+### Position as bottom
 
-By setting the `titlePosition` to **Bottom**, you can display the title and subtitle at the bottom of the Bullet Chart.
+By setting the [`TitlePosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_TitlePosition) to **Bottom**, you can display the title and subtitle at the bottom of the Bullet Chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -195,9 +195,9 @@ By setting the `titlePosition` to **Bottom**, you can display the title and subt
 
 ![Title and Subtitle Position in Bullet Chart](images/blazor-bullet-chart-title-positions.png)
 
-## Title Customization
+## Title customization
 
-The title color, opacity, font size, font family, font weight, and font style can be customized using the `titleStyle` property.
+The title color, opacity, font size, font family, font weight, and font style can be customized using the [`TitleStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_TitleStyle) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -224,9 +224,9 @@ The title color, opacity, font size, font family, font weight, and font style ca
 
 
 
-## SubTitle Customization
+## SubTitle customization
 
-The sub-title color, opacity, font size, font family, font weight, and font style can be customized using the `subtitleStyle` property.
+The sub-title color, opacity, font size, font family, font weight, and font style can be customized using the [`SubtitleStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_SubtitleStyle) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

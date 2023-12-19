@@ -1,4 +1,4 @@
-@Html.EJS().Chart("container").Series(series =>
+@(Html.EJS().Chart("container").Series(series =>
    {
       series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea).  
       XName("x").
@@ -7,6 +7,7 @@
       Fill("pink").
       Opacity(0.7).
       DashArray("5,5").
+      Step(Syncfusion.EJ2.Charts.StepPosition.Center).
       DataSource(ViewBag.dataSource).
       Add();
 
@@ -17,6 +18,7 @@
       Fill("blue").
       Opacity(0.7).
       DashArray("5,5").
+      Step(Syncfusion.EJ2.Charts.StepPosition.Center).
       DataSource(ViewBag.dataSource).
       Add();
 
@@ -27,7 +29,8 @@
       Fill("green").
       Opacity(0.7).
       DashArray("5,5").
+      Step(Syncfusion.EJ2.Charts.StepPosition.Center).
       DataSource(ViewBag.dataSource).
       Add();
    })
-   .Render()
+   .Render())

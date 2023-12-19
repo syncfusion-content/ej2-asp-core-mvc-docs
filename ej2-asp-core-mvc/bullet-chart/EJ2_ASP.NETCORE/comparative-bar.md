@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Target Bar
+# Target bar
 
-The line marker that runs perpendicular to the orientation of the graph is known as the **Comparative Measure** and it is used as a target marker to compare against the feature measure value. This is also called as the **Target Bar** in the Bullet Chart. To display the target bar, the `targetField` should be mapped to the appropriate field from the datasource.
+The line marker that runs perpendicular to the orientation of the graph is known as the **Comparative Measure** and it is used as a target marker to compare against the feature measure value. This is also called as the **Target Bar** in the Bullet Chart. To display the target bar, the [`TargetField`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_TargetField) should be mapped to the appropriate field from the datasource.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,9 +40,9 @@ The line marker that runs perpendicular to the orientation of the graph is known
 
 ![Target Bar in Bullet Chart](images/blazor-bullet-chart-target-bar.png)
 
-## Types of Target Bar
+## Types of target bar
 
-The shape of the target bar can be customized using the `targetTypes` property and it supports **Circle**, **Cross**, and **Rect** shapes. The default type of the target bar is **Rect**.
+The shape of the target bar can be customized using the [`TargetTypes`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_TargetTypes) property and it supports **Circle**, **Cross**, and **Rect** shapes. The default type of the target bar is **Rect**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -69,12 +69,12 @@ The shape of the target bar can be customized using the `targetTypes` property a
 
 ![Rectangle Target Bar with Bullet Chart](images/blazor-bullet-chart-rectangle-target-bar.png)
 
-## Target Bar Customization
+## Target bar customization
 
-The following properties can be used to customize the Target Bar.
+The following properties can be used to customize the target bar. Also, you can bind the color for the target bar from [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_DataSource) for the bullet chart.
 
-* `targetColor` - Specifies the fill color of Target Bar.
-* `targetWidth` - Specifies the width of Target Bar.
+* [`TargetColor`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_TargetColor) - Specifies the fill color of target bar.
+* [`TargetWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_TargetWidth) - Specifies the width of target bar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
