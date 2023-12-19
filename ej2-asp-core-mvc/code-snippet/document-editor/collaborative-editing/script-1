@@ -1,0 +1,41 @@
+<script>
+    var connection = new signalR.HubConnectionBuilder().withUrl(serviceUrl + '/documenteditorhub', {
+        skipNegotiation: true,
+        transport: signalR.HttpTransportType.WebSockets
+    }).withAutomaticReconnect().build();
+
+    connection.onclose(async () => {
+        if (connection.state === signalR.HubConnectionState.Disconnected) {
+            alert('Connection lost. Please relod the browser to continue.');
+        }
+    });
+
+    async function start(data) {
+        try {
+            connection.start().then(function () {
+                connection.send('JoinGroup', { roomName: data.roomName, currentUser: data.currentUser });
+                console.log('server connected!!!');
+            });
+        } catch (err) {
+            console.log(err);
+            setTimeout(start, 5000);
+        }
+    };
+
+    connection.on('dataReceived', onDataRecived.bind(this));
+
+    function onDataRecived(action, data) {
+        if (connections) {
+            if (action == 'connectionId') {
+                connectionId = data;
+            } else if (connectionId != data.connectionId) {
+                if (action == 'action' || action == 'addUser') {
+                    titleBar.addUser(data);
+                } else if (action == 'removeUser') {
+                    titleBar.removeUser(data);
+                }
+            }
+            connections.applyAction(action, data);
+        }
+    }
+</script>
