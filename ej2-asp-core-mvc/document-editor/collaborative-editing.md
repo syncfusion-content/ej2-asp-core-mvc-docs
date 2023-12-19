@@ -2,6 +2,7 @@
 title: Collaborative Editing (preview)
 component: DocumentEditor
 description: Learn how to perform collaborative editing in ##Platform_Name## document editor
+publishingplatform: ##Platform_Name##
 ---
 
 # Collaborative Editing (preview)
@@ -24,28 +25,26 @@ Following things are needed to enable collaborative editing in Document Editor
 To enable collaborative editing, inject `CollaborativeEditingHandler` and set the property `enableCollaborativeEditing` to true in the Document Editor, like in the code snippet below.
 
 {% if page.publishingplatform == "aspnet-core" %}
-```javascript
-<div id="documenteditor_titlebar" class="e-de-ctn-title" style="height:35px;"></div>
-<ejs-documenteditorcontainer id="container" style="width: 100%;height: 100%;"></ejs-documenteditorcontainer>
-<script>
-    // Inject collaborative editing module.
-    ejs.documenteditor.DocumentEditor.Inject(ejs.documenteditor.CollaborativeEditingHandler);
-    ejs.documenteditor.DocumentEditorContainer.Inject(ejs.documenteditor.Toolbar);
 
-    // Documenteditor control rendering starts
-    let serviceUrl = window.location.origin;
-    var container = new ejs.documenteditor.DocumentEditorContainer({ height: '590px', showPropertiesPane: false, enableToolbar: true });
-    container.serviceUrl = serviceUrl + "/api/documenteditor/";
-    container.currentUser = "G";
-    container.appendTo('#container');
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/collaborative-editing/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor/collaborative-editing/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-    // Enable collaborative editing in Document Editor.
-    container.documentEditor.enableCollaborativeEditing = true;
-</script>
-
-```
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/collaborative-editing/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor/collaborative-editing/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## Step 2: Configure SignalR to send and receive changes
@@ -53,49 +52,20 @@ To enable collaborative editing, inject `CollaborativeEditingHandler` and set th
 To broadcast the changes made and receive changes from remote users, configure SignalR like below.
 
 {% if page.publishingplatform == "aspnet-core" %}
-```javascript
-var connection = new signalR.HubConnectionBuilder().withUrl(serviceUrl + '/documenteditorhub', {
-    skipNegotiation: true,
-    transport: signalR.HttpTransportType.WebSockets
-}).withAutomaticReconnect().build();
 
-connection.onclose(async () => {
-    if (connection.state === signalR.HubConnectionState.Disconnected) {
-        alert('Connection lost. Please relod the browser to continue.');
-    }
-});
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/collaborative-editing/script-1 %}
+{% endhighlight %}
+{% endtabs %}
 
-async function start(data) {
-    try {
-        connection.start().then(function () {
-            connection.send('JoinGroup', { roomName: data.roomName, currentUser: data.currentUser });
-            console.log('server connected!!!');
-        });
-    } catch (err) {
-        console.log(err);
-        setTimeout(start, 5000);
-    }
-};
-
-connection.on('dataReceived', onDataRecived.bind(this));
-
-function onDataRecived(action, data) {
-    if (connections) {
-        if (action == 'connectionId') {
-            connectionId = data;
-        } else if (connectionId != data.connectionId) {
-            if (action == 'action' || action == 'addUser') {
-                titleBar.addUser(data);
-            } else if (action == 'removeUser') {
-                titleBar.removeUser(data);
-            }
-        }
-        connections.applyAction(action, data);
-    }
-}
-```
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/collaborative-editing/script-1 %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ### Step 3: Join SignalR room while opening the document
@@ -103,51 +73,20 @@ function onDataRecived(action, data) {
 When opening a document, we need to generate a unique ID for each document. These unique IDs are then used to create rooms using SignalR, which facilitates sending and receiving data from the server.
 
 {% if page.publishingplatform == "aspnet-core" %}
-```javascript
-var connectionId = '';
-let serviceUrl = window.location.origin;
-function loadDefaultDocument() {
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    let roomId = urlParams.get('id');
 
-    if (roomId == null) {
-        roomId = Math.random().toString(32).slice(2)
-        window.history.replaceState({}, "", `?id=` + roomId);
-    }
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/collaborative-editing/script-2 %}
+{% endhighlight %}
+{% endtabs %}
 
-    ejs.popups.showSpinner(document.getElementById('editor_area'));
-    var httpRequest = new XMLHttpRequest();
-    httpRequest.open('Post', '/api/CollaborativeEditing/ImportFile', true);
-    httpRequest.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    httpRequest.onreadystatechange = function () {
-        if (httpRequest.readyState === 4) {
-            if (httpRequest.status === 200 || httpRequest.status === 304) {
-                var data = JSON.parse(httpRequest.responseText);
-                connections = container.documentEditor.collaborativeEditingHandlerModule;
-
-                connections.updateRoomInfo(roomId, data.version, serviceUrl + '/');
-
-                container.documentEditor.open(data.sfdt);
-                setTimeout(function () {
-                    start({ action: 'connect', roomName: roomId, currentUser: container.currentUser }, null);
-                });
-                ejs.popups.hideSpinner(document.getElementById('editor_area'));
-                tooltip.open();
-            }
-            else {
-                ejs.popups.hideSpinner(document.getElementById('editor_area'));
-                alert('Fail to load the document');
-            }
-        }
-    };
-    container.documentEditor.documentName = 'Giant Panda';
-    httpRequest.send(JSON.stringify({ "fileName": 'Giant Panda.docx', "roomName": roomId }));
-    titleBar.updateDocumentTitle();
-}
-```
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/collaborative-editing/script-2 %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ### Step 5: Broadcast current editing changes to remote users
@@ -155,16 +94,20 @@ function loadDefaultDocument() {
 Changes made on the client-side need to be sent to the server-side to broadcast them to other connected users. To send the changes made to the server, use the method shown below from the document editor using the `contentChange` event.
 
 {% if page.publishingplatform == "aspnet-core" %}
-```javascript
-let connections;
-container.contentChange = function (args) {
-    if (connections) {
-        connections.sendActionToServer(args.operations);
-    }
-}
-```
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/collaborative-editing/script-3 %}
+{% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/collaborative-editing/script-3 %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## How to enable collaborative editing in ASP.NET Core
