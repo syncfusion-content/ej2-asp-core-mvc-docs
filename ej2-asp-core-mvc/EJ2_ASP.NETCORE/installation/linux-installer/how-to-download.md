@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Downloading Syncfusion ASP.NET Core Linux installer - Syncfusion
-description: Learn here about the how to download Syncfusion ASP.NET Core Linux installer from our syncfusion website with license.
-platform: common
+title: Downloading Syncfusion ##Platform_Name## Linux installer - Syncfusion
+description: Learn here about the how to download Syncfusion ##Platform_Name## linux installer packages from syncfusion website.
+platform: ej2-asp-core-mvc
+control: Download
+publishingplatform: ##Platform_Name##
 documentation: ug
---- 
+---
 
 # Download Syncfusion ASP.NET Core Linux Installer
 
