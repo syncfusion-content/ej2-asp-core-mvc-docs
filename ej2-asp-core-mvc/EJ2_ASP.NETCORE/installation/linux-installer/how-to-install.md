@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Installing Syncfusion ASP.NET Core Linux installer - Syncfusion
-description: Learn here about how to install Syncfusion ASP.NET Core Linux installer after downloading from our Syncfusion website.
-platform: common
-control: ASP.NET Core
+title: Installing Syncfusion ##Platform_Name## Linux installer - Syncfusion
+description: Learn here about how to install Syncfusion ##Platform_Name## linux installer after downloading from our Syncfusion website.
+platform: ej2-asp-core-mvc
+control: Installation and Deployment
 documentation: ug
+
 ---
 
 # Installing Syncfusion ASP.NET Core Linux installer
