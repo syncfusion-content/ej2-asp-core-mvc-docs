@@ -23,21 +23,36 @@ Following things are needed to enable collaborative editing in Document Editor
 
 To enable collaborative editing, inject `CollaborativeEditingHandler` and set the property `enableCollaborativeEditing` to true in the Document Editor, like in the code snippet below.
 
+{% if page.publishingplatform == "aspnet-core" %}
 ```javascript
-ej.documenteditor.DocumentEditor.Inject(ej.documenteditor.CollaborativeEditingHandler);
-// Documenteditor control rendering starts
-var container = new ej.documenteditor.DocumentEditorContainer({ height: '590px', showPropertiesPane: false, toolbarItems: toolbarItems, enableToolbar: true });
-container.serviceUrl = serviceUrl + "/api/documenteditor/";
-container.currentUser = "G";
-container.appendTo('#container');
-container.documentEditor.enableCollaborativeEditing = true;
+<div id="documenteditor_titlebar" class="e-de-ctn-title" style="height:35px;"></div>
+<ejs-documenteditorcontainer id="container" style="width: 100%;height: 100%;"></ejs-documenteditorcontainer>
+<script>
+    // Inject collaborative editing module.
+    ejs.documenteditor.DocumentEditor.Inject(ejs.documenteditor.CollaborativeEditingHandler);
+    ejs.documenteditor.DocumentEditorContainer.Inject(ejs.documenteditor.Toolbar);
+
+    // Documenteditor control rendering starts
+    let serviceUrl = window.location.origin;
+    var container = new ejs.documenteditor.DocumentEditorContainer({ height: '590px', showPropertiesPane: false, enableToolbar: true });
+    container.serviceUrl = serviceUrl + "/api/documenteditor/";
+    container.currentUser = "G";
+    container.appendTo('#container');
+
+    // Enable collaborative editing in Document Editor.
+    container.documentEditor.enableCollaborativeEditing = true;
+</script>
 
 ```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% endif %}
 
 ## Step 2: Configure SignalR to send and receive changes
 
 To broadcast the changes made and receive changes from remote users, configure SignalR like below.
 
+{% if page.publishingplatform == "aspnet-core" %}
 ```javascript
 var connection = new signalR.HubConnectionBuilder().withUrl(serviceUrl + '/documenteditorhub', {
     skipNegotiation: true,
@@ -79,11 +94,15 @@ function onDataRecived(action, data) {
     }
 }
 ```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% endif %}
 
 ### Step 3: Join SignalR room while opening the document
 
 When opening a document, we need to generate a unique ID for each document. These unique IDs are then used to create rooms using SignalR, which facilitates sending and receiving data from the server.
 
+{% if page.publishingplatform == "aspnet-core" %}
 ```javascript
 var connectionId = '';
 let serviceUrl = window.location.origin;
@@ -127,11 +146,15 @@ function loadDefaultDocument() {
     titleBar.updateDocumentTitle();
 }
 ```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% endif %}
 
 ### Step 5: Broadcast current editing changes to remote users
 
 Changes made on the client-side need to be sent to the server-side to broadcast them to other connected users. To send the changes made to the server, use the method shown below from the document editor using the `contentChange` event.
 
+{% if page.publishingplatform == "aspnet-core" %}
 ```javascript
 let connections;
 container.contentChange = function (args) {
@@ -140,6 +163,9 @@ container.contentChange = function (args) {
     }
 }
 ```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% endif %}
 
 ## How to enable collaborative editing in ASP.NET Core
 
