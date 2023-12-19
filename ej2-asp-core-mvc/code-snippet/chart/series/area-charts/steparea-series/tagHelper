@@ -1,7 +1,11 @@
 <ejs-chart id="container">
     <e-series-collection>
-        <e-series dataSource="ViewBag.dataSource" xName="x" high="high" low="low" fill="blue" opacity="0.5"
-            dashArray="5,5" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepArea">
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="low" fill="blue" opacity="0.5"
+            dashArray="5,5" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepArea" step="@Syncfusion.EJ2.Charts.StepPosition.Right">
+            <e-series-border width="2" color="black"></e-series-border>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="high" fill="green" opacity="0.5"
+            dashArray="5,5" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepArea" step="@Syncfusion.EJ2.Charts.StepPosition.Right">
             <e-series-border width="2" color="black"></e-series-border>
         </e-series>
     </e-series-collection>
