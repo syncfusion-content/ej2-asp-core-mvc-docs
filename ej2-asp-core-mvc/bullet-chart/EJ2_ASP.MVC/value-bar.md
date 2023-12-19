@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Actual Bar
+# Actual bar
 
-To display the primary data or the current value of the data being measured known as the **Feature Measure** that should be encoded as a bar. This is called as the **Actual Bar** or the **Feature Bar** in the Bullet Chart, and to display the actual bar the `valueField` should be mapped to the appropriate field from the data source.
+To display the primary data or the current value of the data being measured known as the **Feature Measure** that should be encoded as a bar. This is called as the **Actual Bar** or the **Feature Bar** in the Bullet Chart, and to display the actual bar the [`ValueField`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_ValueField) should be mapped to the appropriate field from the data source.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,9 +40,9 @@ To display the primary data or the current value of the data being measured know
 
 ![Actual Bar in Bullet Chart](images/blazor-bullet-chart-actual-bar.png)
 
-## Types of Actual Bar
+## Types of actual bar
 
-The shape of the actual bar can be customized using the `type` property of the Bullet Chart. The actual bar contains `Rect` and `Dot` shapes. By default, the actual bar shape is Rect.
+The shape of the actual bar can be customized using the [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_Type) property of the Bullet Chart. The actual bar contains `Rect` and `Dot` shapes. By default, the actual bar shape is Rect.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,11 +71,11 @@ The shape of the actual bar can be customized using the `type` property of the B
 
 ![Bullet Chart with Dot Actual Bar](images/blazor-bullet-chart-dot-actual-bar.png)
 
-## Actual Bar Customization
+## Actual bar customization
 
-### Border Customization
+### Border customization
 
-Using the `valueBorder` property of the bullet chart, you can customize the border `color` and `width` of the actual bar.
+Using the [`ValueBorder`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_ValueBorder) property of the bullet chart, you can customize the border [`Color`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChartBorder.html#Syncfusion_EJ2_Charts_BulletChartBorder_Color) and [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChartBorder.html#Syncfusion_EJ2_Charts_BulletChartBorder_Width) of the actual bar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -102,9 +102,9 @@ Using the `valueBorder` property of the bullet chart, you can customize the bord
 
 
 
-### Fill color and height Customization
+### Fill color and height customization
 
-Customize the fill color and height of the actual bar using the `valueFill` and `valueHeight` properties of the bullet chart.
+Customize the fill color and height of the actual bar using the [`ValueFill`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_ValueFill) and [`ValueHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_ValueHeight) properties of the bullet chart. Also, you can bind the color for the actual bar from [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_DataSource) for the bullet chart using [`ValueFill`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_ValueFill) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

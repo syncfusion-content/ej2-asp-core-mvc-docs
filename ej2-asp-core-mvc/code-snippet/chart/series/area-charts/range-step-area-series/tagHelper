@@ -8,7 +8,7 @@
     </e-chart-primaryyaxis>
     <e-series-collection>
         <e-series name="India" xName="x" high="high1" low="low1" dataSource="ViewBag.dataSource" opacity="0.7"
-            fill="blue" dashArray="5,5" type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeStepArea">
+            fill="blue" dashArray="5,5" type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeStepArea" step="@Syncfusion.EJ2.Charts.StepPosition.Center">
             <e-series-border width="2" color="black"></e-series-border>
         </e-series>
     </e-series-collection>
