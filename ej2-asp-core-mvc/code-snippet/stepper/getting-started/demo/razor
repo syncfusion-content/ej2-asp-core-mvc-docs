@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2.Navigations
+
+<div id="default-Stepper">
+    @Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).Render()
+</div>
