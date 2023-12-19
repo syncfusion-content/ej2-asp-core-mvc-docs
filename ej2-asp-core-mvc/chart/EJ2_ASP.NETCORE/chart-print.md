@@ -198,7 +198,7 @@ Initially, render more than one chart to export, and then add button to export t
 
 ## Exporting chart using base64 string
 
-The chart can be exported to image as a base64 string by adding the chart component in the canvas element and get the base64 string.
+The chart can be exported as an image in the form of a base64 string by utilizing HTML canvas. This process involves rendering the chart onto a canvas element and then converting the canvas content to a base64 string.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
