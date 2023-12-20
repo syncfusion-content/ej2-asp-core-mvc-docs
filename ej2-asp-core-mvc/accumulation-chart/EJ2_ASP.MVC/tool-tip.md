@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Tooltip in ##Platform_Name## Accumulation Chart Component
+# Tooltip in ##Platform_Name## Accumulation chart component
 
-Tooltip for the accumulation chart can be enabled by using the `Enable` property.
+Tooltip for the accumulation chart can be enabled by using the [`Enable`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Enable) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,7 +40,7 @@ Tooltip for the accumulation chart can be enabled by using the `Enable` proper
 
 ## Header
 
-We can specify header for the tooltip using `Header` property.
+We can specify header for the tooltip using [`Header`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Header) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -96,9 +96,9 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 
 
-## Tooltip Format
+## Tooltip format
 
-Any HTML element can be displayed in the tooltip by using the `Template` property.
+Any HTML element can be displayed in the tooltip by using the [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Template) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -125,9 +125,38 @@ Any HTML element can be displayed in the tooltip by using the `Template` propert
 
 
 
+## Fixed tooltip
+
+By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the [`Location`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Location) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-fixed/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-fixed.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-fixed/tooltip-fixed.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-fixed/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-fixed.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-fixed/tooltip-fixed.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Customization
 
-The [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Fill) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Border) properties are used to customize the background color and border of the tooltip respectively. The [`TextStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_TextStyle) property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_HighlightColor) property can be used to change the color of the data point when hovering.
+The [`Fill`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Fill) and [`Border`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Border) properties are used to customize the background color and border of the tooltip respectively. The [`TextStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_TextStyle) property in the tooltip is used to customize the font of the tooltip text. The [`HighlightColor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_HighlightColor) property can be used to change the color of the data point when hovering.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -156,7 +185,7 @@ The [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts
 
 ## To customize individual tooltip
 
-Using `TooltipRender` event, you can customize a tooltip for particular point. event, you can customize a tooltip for particular point.
+Using [`TooltipRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_TooltipRender) event, you can customize a tooltip for particular point. event, you can customize a tooltip for particular point.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -183,9 +212,9 @@ Using `TooltipRender` event, you can customize a tooltip for particular point.�
 
 
 
-## Tooltip Mapping Name
+## Tooltip mapping name
 
-By default, tooltip shows information of x and y value in points. You can show more information from datasource in tooltip by using the `TooltipMappingName` property of the tooltip. You can use the `${point.tooltip}` as place holders to display the specified tooltip content.
+By default, tooltip shows information of x and y value in points. You can show more information from datasource in tooltip by using the [`TooltipMappingName`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_TooltipMappingName) property of the tooltip. You can use the `${point.tooltip}` as place holders to display the specified tooltip content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

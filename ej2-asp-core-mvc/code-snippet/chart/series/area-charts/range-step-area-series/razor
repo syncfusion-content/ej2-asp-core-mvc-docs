@@ -1,4 +1,4 @@
-@Html.EJS().Chart("container").Series(series =>
+@(Html.EJS().Chart("container").Series(series =>
     {
         series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.RangeStepArea).
         Opacity(0.7).
@@ -8,6 +8,7 @@
         XName("x").
         High("high1").
         Low("low1").
+        Step(Syncfusion.EJ2.Charts.StepPosition.Center).
         DataSource(ViewBag.dataSource).
         Name("India").
         Add();
@@ -24,4 +25,4 @@
             .MajorTickLines(mt => mt.Width(0))
             .LineStyle(ls => ls.Width(0))
     )
-    .Title("Monthly Temperature Range").Render()
+    .Title("Monthly Temperature Range").Render())
