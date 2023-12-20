@@ -51,7 +51,7 @@ The virtual scrolling option allows you to load the large amounts of data withou
 * Grouping, which takes additional time to splitting the raw items into the provided format.
 * Date Formatting, which takes additional time to convert date format.
 * Date Formatting with sorting, here additionally full date time format should be framed to perform sorting along with the provided date format which lags the performance.
-* When using OLAP data, subtotals and grandtotals are only displayed when measures are bound at the last position in the [`Row`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html) or [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.ColumnsDataSourceSettings.html) axis. Otherwise, the data from the pivot table will be shown without summary totals.
+* When using OLAP data, subtotals and grandtotals are only displayed when measures are bound at the last position in the [Row](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html) or [Column](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.ColumnsDataSourceSettings.html) axis. Otherwise, the data from the pivot table will be shown without summary totals.
 * Even if virtual scrolling is enabled, not only is the current view port data retrieved, but also the data for the immediate previous page and the immediate next page. As a result, when the end user scrolls slightly ahead or behind, the next or previous page data is displayed immediately without requiring a refresh. **Note:** If the pivot table's width and height are large, the loading data count in the current, previous, and next view ports (pages) will also increase, affecting performance.
 
 ## Data Compression
