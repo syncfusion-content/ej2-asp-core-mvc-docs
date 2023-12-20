@@ -207,7 +207,7 @@ Here is an example of adding additional font family to the text annotation using
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-customize-font-color.jpg)
+![ImageEditor Sample](images/image-editor-add-font-family.png)
 
 ## Freehand drawing 
 

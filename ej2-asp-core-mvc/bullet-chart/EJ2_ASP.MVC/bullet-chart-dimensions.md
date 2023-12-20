@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Bullet Chart Dimensions
+# Bullet chart dimensions
 
-## Size for Container
+## Size for container
 
 The size of the Bullet Chart is determined by the container size, and it can be changed inline or via CSS as following.
 
@@ -40,9 +40,9 @@ The size of the Bullet Chart is determined by the container size, and it can be 
 
 
 
-## Size for Bullet Chart
+## Size for bullet chart
 
-The `width` and `height` properties are used to adjust the size of the Bullet Chart.
+The [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Width) and [`Height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Height) properties are used to adjust the size of the Bullet Chart.
 
 ### Pixel
 
