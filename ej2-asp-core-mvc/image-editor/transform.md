@@ -86,7 +86,7 @@ The straightening feature in an Image Editor allows users to adjust an image by 
 
 * degree: Specifies the amount of rotation for straightening the image. Positive values indicate clockwise rotation, while negative values indicate counterclockwise rotation.
 
-Here is an example of straightening the image using the `straightenImage` method.
+Here is an example of straightening the image.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -113,7 +113,7 @@ Here is an example of straightening the image using the `straightenImage` method
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-resize.png)
+![ImageEditor Sample](images/image-editor-straighten.png)
 
 ## Zoom in or out an image 
 
