@@ -123,7 +123,7 @@ var group= {
 diagram.add(group);
 ```
 
-## Add children To group at runtime
+## Add children to group at runtime
 
 A childNode can be added to the specified Group at runtime by utilizing the client-side method `diagram.addChildToGroup`. 
 
