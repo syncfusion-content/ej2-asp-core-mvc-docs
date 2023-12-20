@@ -1,19 +1,19 @@
 public class IndexModel : PageModel
+{
+    private readonly ILogger<IndexModel> _logger;
+ 
+    public IndexModel(ILogger<IndexModel> logger)
     {
-        private readonly ILogger<IndexModel> _logger;
- 
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
-        }
- 
-        public void OnGet()
-        {
- 
-        }
+        _logger = logger;
     }
-    public class Data
+ 
+    public void OnGet()
     {
-        public string? X;
-        public double Y;
+ 
     }
+}
+public class Data
+{
+    public string X;
+    public double Y;
+}
