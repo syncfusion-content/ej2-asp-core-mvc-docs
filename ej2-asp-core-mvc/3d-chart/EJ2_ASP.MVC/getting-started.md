@@ -51,7 +51,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add script resources
 
-Here, the script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the script is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -69,7 +69,7 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/d
 
 ## Register Syncfusion script manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -112,6 +112,6 @@ Now, add the Syncfusion ASP.NET MVC 3D Chart control in `~/Home/Index.cshtml` pa
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC 3D Chart control will be rendered in the default web browser.
 
-![ASP.NET MVC 3D Chart Control](how-to/images/chart.png)
+![ASP.NET MVC 3D Chart Control](images/3d-chart.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Chart/ASP.NET%20MVC%20Razor%20Examples).
