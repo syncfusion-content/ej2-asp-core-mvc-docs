@@ -100,11 +100,11 @@ When the [`e-displayOption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 PDF export provides option to customize mapping of pivot table to the exported PDF document.
 
-### To add header and footer
+### To add header and footer while exporting
 
-You can customize text, page number, line, page size and changing orientation in header and footer.
+You can customize text, page number, line, page size and changing orientation in header and footer of the exported document.
 
-#### How to write a text in header/footer
+#### To add a text in header/footer
 
 You can add text either in header or footer of the exported PDF document like in the below code example.
 
@@ -128,7 +128,7 @@ var pdfExportProperties = {
 
 ```
 
-#### How to draw a line in header/footer
+#### To draw a line in header/footer
 
 You can add line either in header or footer of the exported PDF document like in the below code example.
 
@@ -213,7 +213,53 @@ The below code illustrates the PDF export customization options.
 {% endtabs %}
 {% endif %}
 
+#### Add an image in header/footer
 
+You can add image (Base64 string) either in header or footer of the exported PDF document like in the below code example.
+
+```javascript
+
+ var pdfExportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+                type: 'Image',
+                src: image,
+                position: { x: 20, y: 10 },
+                size: { height: 100, width: 100 },
+            }
+        ]
+    }
+}
+
+```
+
+The below code illustrates the PDF export customization options.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/header-footer-image/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ThemeExport.cs" %}
+{% include code-snippet/pivot-table/pdf-export/header-footer-image/ThemeExport.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/header-footer-image/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ThemeExport.cs" %}
+{% include code-snippet/pivot-table/pdf-export/header-footer-image/ThemeExport.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Changing the file name while exporting
 
