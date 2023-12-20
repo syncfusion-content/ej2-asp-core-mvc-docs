@@ -1,16 +1,12 @@
-public class IndexModel : PageModel
+public IActionResult Index()
 {
-    private readonly ILogger<IndexModel> _logger;
- 
-    public IndexModel(ILogger<IndexModel> logger)
+    List<Data> data = new List<Data>
     {
-        _logger = logger;
-    }
- 
-    public void OnGet()
-    {
- 
-    }
+        new Data { X= "Tesla", Y= 137429 },
+        new Data { X= "Aion",  Y= 80308  }
+    };
+    ViewBag.dataSource = data;
+    return View();
 }
 public class Data
 {
