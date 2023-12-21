@@ -1,0 +1,3 @@
+<button type="button" id="addmethod">addmethod</button>
+<ejs-diagram id="container" width="100%" height="700px" nodes="@ViewBag.nodes">
+</ejs-diagram>
