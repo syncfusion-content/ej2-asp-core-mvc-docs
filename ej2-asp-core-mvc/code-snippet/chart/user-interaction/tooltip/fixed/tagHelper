@@ -1,0 +1,11 @@
+ <ejs-chart id="container">
+        <e-chart-tooltipsettings enable="true">
+            <e-tooltipsettings-location x="120" y="20"></e-tooltipsettings-location>
+        </e-chart-tooltipsettings>
+        <e-chart-legendsettings visible="false"></e-chart-legendsettings>
+        <e-chart-primaryxaxis valueType="Category" interval="1"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Gold" xName="xValue" width="2" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

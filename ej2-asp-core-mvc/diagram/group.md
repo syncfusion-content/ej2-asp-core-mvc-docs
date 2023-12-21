@@ -123,6 +123,71 @@ var group= {
 diagram.add(group);
 ```
 
+## Add children to group at runtime
+
+A childNode can be added to the specified Group at runtime by utilizing the client-side method `diagram.addChildToGroup`. 
+
+This functionality is achieved by passing the group and existing children as arguments to the method.
+
+The following code illustrates how a child node and a group node can be passed as arguments to the method and executed at runtime.
+
+```html
+
+diagram.addChildToGroup(groupNode, childNode); 
+
+```
+## Remove children from group at runtime
+
+A specific child from a group node can be removed at runtime by utilizing the client-side method `diagram.removeChildFromGroup `. 
+
+This functionality is achieved by passing the group and its children as arguments to the method.
+
+The following code illustrates how a child node is removed from a group at runtime.
+
+```html
+
+diagram.removeChildFromGroup (groupNode, childNode); 
+
+```
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/group/groupchild/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="GroupChild.cs" %}
+{% include code-snippet/diagram/group/groupchild/groupchild.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="groupchild.cs" %}
+{% include code-snippet/diagram/group/groupchild/groupchild.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+```javascript
+var diagram = document.getElementById("container").ej2_instances[0];
+
+//Assign the group Node
+let group=diagram.nodes[3];
+
+//Assign the child Node
+let child=diagram.nodes[2];
+
+//To Add child to specifc group at Runtime
+diagramInstance.addChildToGroup(group, child);
+
+//To remove the specific children from group at runtime
+diagramInstance.removeChildFromGroup(group, child);
+
+```
+
 ## Container
 
 Containers are used to automatically measure and arrange the size and position of the child elements in a predefined manner. There are two types of containers available.
