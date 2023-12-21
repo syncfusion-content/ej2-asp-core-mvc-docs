@@ -13,7 +13,7 @@ documentation: ug
 
 ## Orientation
 
-The Bullet Chart can be rendered in different orientations such as **Horizontal** or **Vertical** via the `orientation` property. By default, the Bullet Chart is rendered in the **Horizontal** orientation.
+The Bullet Chart can be rendered in different orientations such as **Horizontal** or **Vertical** via the [`Orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Orientation) property. By default, the Bullet Chart is rendered in the **Horizontal** orientation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -43,7 +43,7 @@ The Bullet Chart can be rendered in different orientations such as **Horizontal*
 
 ## Right-to-left (RTL)
 
-The Bullet Chart supports the right-to-left rendering that can be enabled by setting the `enableRtl` property to **true**.
+The Bullet Chart supports the right-to-left rendering that can be enabled by setting the [`EnableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_EnableRtl) property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -74,7 +74,7 @@ The Bullet Chart supports the right-to-left rendering that can be enabled by set
 
 ## Animation
 
-The actual and the target bar supports the linear animation via the `animation` setting. The speed and the delay are controlled using the `duration` and `delay` properties respectively.
+The actual and the target bar supports the linear animation via the [`Animation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Animation) setting. The speed and the delay are controlled using the [`Duration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartAnimation.html#Syncfusion_EJ2_Charts_BulletChartAnimation_Duration) and [`Delay`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartAnimation.html#Syncfusion_EJ2_Charts_BulletChartAnimation_Delay) properties respectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -103,7 +103,7 @@ The actual and the target bar supports the linear animation via the `animation` 
 
 ## Theme
 
-The Bullet Chart supports different type of themes via the `theme` property.
+The Bullet Chart supports different type of themes via the [`Theme`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Theme) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
