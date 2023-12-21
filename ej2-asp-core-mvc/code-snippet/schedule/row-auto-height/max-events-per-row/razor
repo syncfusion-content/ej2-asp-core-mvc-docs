@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(view => {
+        view.Option(View.Month).MaxEventsPerRow(3).Add();
+        view.Option(View.TimelineMonth).MaxEventsPerRow(3).Add();
+        view.Option(View.TimelineYear).DisplayName("Horizontal Timeline Year").MaxEventsPerRow(3).Add();
+        view.Option(View.TimelineYear).DisplayName("Vertical Timeline Year").Orientation(Orientation.Vertical).MaxEventsPerRow(3).Add();
+    })
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .SelectedDate(new DateTime(2023, 11, 10))
+    .Render()
+)
