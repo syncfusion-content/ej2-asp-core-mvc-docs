@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC 3D Chart Control
+# Getting started with ASP.NET MVC 3D Chart control
 
 This section briefly explains about how to include [ASP.NET MVC 3D Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control in your ASP.NET MVC application using Visual Studio.
 
@@ -114,4 +114,4 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC 3D Chart Control](images/3d-chart.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Chart/ASP.NET%20MVC%20Razor%20Examples).
+N> `View Sample in GitHub`.
