@@ -36,7 +36,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 N> Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-## Add Syncfusion ASP.NET Core Tag Helper
+## Add Syncfusion ASP.NET Core tag helper
 
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
@@ -66,7 +66,7 @@ Here, script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 
 N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
-## Register Syncfusion Script Manager
+## Register Syncfusion script manager
 
 Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
 
@@ -113,7 +113,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core 3D Chart Control](images/3d-chart.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Chart/ASP.NET%20Core%20Tag%20Helper%20Examples).
+N> `View Sample in GitHub`.
 
 ## See also
 
