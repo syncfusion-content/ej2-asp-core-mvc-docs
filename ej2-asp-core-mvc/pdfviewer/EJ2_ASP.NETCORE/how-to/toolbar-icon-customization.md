@@ -23,32 +23,55 @@ PDF Viewer allows you to customize(add, show, hide, enable, and disable) existin
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 
+
 <div style="width:100%;height:600px">
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
-                   resourceUrl="https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib"
-                   created="toolbarIcons">
+                   resourceUrl='https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib'
+                   toolbarClick="toolbarClick">
     </ejs-pdfviewer>
 </div>
-<script>
-    function toolbarIcons() {
-        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+
+<script type="text/javascript">
+    window.onload = function () {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         var toolItem = {
             prefixIcon: 'e-icons e-paste',
             id: 'print',
             tooltipText: 'Custom toolbar item',
             align: 'left'
         };
-        pdfviewer.toolbarItems = [toolItem, 'OpenOption', 'PageNavigationTool', 'MagnificationTool', 'PanTool', 'SelectionTool', 'SearchOption', 'PrintOption', 'DownloadOption', 'UndoRedoTool', 'AnnotationEditTool', 'FormDesignerEditTool', 'CommentTool', 'SubmitForm'];
-        pdfviewer.toolbarClick = function (args) {
-           if (args.item && args.item.id === 'print') {
-              viewer.printModule.print();
-            }
-           else if (args.item && args.item.id === 'download') {
-              viewer.download();
-            }
+        pdfViewer.toolbarSettings = {
+            showTooltip: true,
+            toolbarItems: [
+                toolItem,
+                "OpenOption",
+                "PageNavigationTool",
+                "MagnificationTool",
+                "PanTool",
+                "SelectionTool",
+                "SearchOption",
+                "PrintOption",
+                "DownloadOption",
+                "UndoRedoTool",
+                "AnnotationEditTool",
+                "FormDesignerEditTool",
+                "CommentTool",
+                "SubmitForm"
+            ]
         };
+    }
+
+    // Define the toolbarClick event handler
+    function toolbarClick(args) {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+
+        if (args.item && args.item.id === 'print') {
+            pdfViewer.printModule.print();
+        } else if (args.item && args.item.id === 'download') {
+            pdfViewer.download();
+        }
     }
 </script>
 
@@ -59,28 +82,50 @@ PDF Viewer allows you to customize(add, show, hide, enable, and disable) existin
     <ejs-pdfviewer id="pdfviewer"
                    style="height:600px"
                    documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
-                   serviceUrl="/api/PdfViewer"
-                   created="toolbarIcons">
+                   serviceUrl="/Index"
+                   toolbarClick="toolbarClick">
     </ejs-pdfviewer>
 </div>
-<script>
-    function toolbarIcons() {
-        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+
+<script type="text/javascript">
+    window.onload = function () {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         var toolItem = {
             prefixIcon: 'e-icons e-paste',
             id: 'print',
             tooltipText: 'Custom toolbar item',
             align: 'left'
         };
-        pdfviewer.toolbarItems = [toolItem, 'OpenOption', 'PageNavigationTool', 'MagnificationTool', 'PanTool', 'SelectionTool', 'SearchOption', 'PrintOption', 'DownloadOption', 'UndoRedoTool', 'AnnotationEditTool', 'FormDesignerEditTool', 'CommentTool', 'SubmitForm' ];
-        pdfviewer.toolbarClick = function (args) {
-           if (args.item && args.item.id === 'print') {
-              viewer.printModule.print();
-            }
-           else if (args.item && args.item.id === 'download') {
-              viewer.download();
-            }
+        pdfViewer.toolbarSettings = {
+            showTooltip: true,
+            toolbarItems: [
+                toolItem,
+                "OpenOption",
+                "PageNavigationTool",
+                "MagnificationTool",
+                "PanTool",
+                "SelectionTool",
+                "SearchOption",
+                "PrintOption",
+                "DownloadOption",
+                "UndoRedoTool",
+                "AnnotationEditTool",
+                "FormDesignerEditTool",
+                "CommentTool",
+                "SubmitForm"
+            ]
         };
+    }
+
+    // Define the toolbarClick event handler
+    function toolbarClick(args) {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+
+        if (args.item && args.item.id === 'print') {
+            pdfViewer.printModule.print();
+        } else if (args.item && args.item.id === 'download') {
+            pdfViewer.download();
+        }
     }
 </script>
 
