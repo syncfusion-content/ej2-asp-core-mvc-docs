@@ -23,56 +23,100 @@ PDF Viewer allows you to customize(add, show, hide, enable, and disable) existin
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 
-<div id="documenteditor" style="width:100%;height:100%">
-    @Html.EJS().DocumentEditorpdfviewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Created("toolbarIcons").Render()
+<div>
+    <div style="height:500px;width:100%;">
+        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").ResourceUrl("https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib").ToolbarClick("toolbarClick").Render()
+    </div>
 </div>
 
-<script>
-    function toolbarIcons() {
-        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+<script type="text/javascript">
+    window.onload = function () {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         var toolItem = {
             prefixIcon: 'e-icons e-paste',
             id: 'print',
             tooltipText: 'Custom toolbar item',
             align: 'left'
         };
-        pdfviewer.toolbarItems = [toolItem, 'OpenOption', 'PageNavigationTool', 'MagnificationTool', 'PanTool', 'SelectionTool', 'SearchOption', 'PrintOption', 'DownloadOption', 'UndoRedoTool', 'AnnotationEditTool', 'FormDesignerEditTool', 'CommentTool', 'SubmitForm'];
-        pdfviewer.toolbarClick = function (args) {
-           if (args.item && args.item.id === 'print') {
-              viewer.printModule.print();
-            }
-           else if (args.item && args.item.id === 'download') {
-              viewer.download();
-            }
+        pdfViewer.toolbarSettings = {
+            showTooltip: true,
+            toolbarItems: [
+                toolItem,
+                "OpenOption",
+                "PageNavigationTool",
+                "MagnificationTool",
+                "PanTool",
+                "SelectionTool",
+                "SearchOption",
+                "PrintOption",
+                "DownloadOption",
+                "UndoRedoTool",
+                "AnnotationEditTool",
+                "FormDesignerEditTool",
+                "CommentTool",
+                "SubmitForm"
+            ]
         };
+    }
+
+    // Define the toolbarClick event handler
+    function toolbarClick(args) {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        if (args.item && args.item.id === 'print') {
+            pdfViewer.printModule.print();
+        } else if (args.item && args.item.id === 'download') {
+            pdfViewer.download();
+        }
     }
 </script>
 
 {% endhighlight %}
 {% highlight html tabtitle="Server-Backed" %}
 
-<div id="documenteditor" style="width:100%;height:100%">
-    @Html.EJS().DocumentEditorpdfviewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Created("toolbarIcons").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).Render()
+<div>
+    <div style="height:500px;width:100%;">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").ResourceUrl("https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib").ToolbarClick("toolbarClick").Render()
+    </div>
 </div>
 
-<script>
-    function toolbarIcons() {
-        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+<script type="text/javascript">
+    window.onload = function () {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         var toolItem = {
             prefixIcon: 'e-icons e-paste',
             id: 'print',
             tooltipText: 'Custom toolbar item',
             align: 'left'
         };
-        pdfviewer.toolbarItems = [toolItem, 'OpenOption', 'PageNavigationTool', 'MagnificationTool', 'PanTool', 'SelectionTool', 'SearchOption', 'PrintOption', 'DownloadOption', 'UndoRedoTool', 'AnnotationEditTool', 'FormDesignerEditTool', 'CommentTool', 'SubmitForm'];
-        pdfviewer.toolbarClick = function (args) {
-           if (args.item && args.item.id === 'print') {
-              viewer.printModule.print();
-            }
-           else if (args.item && args.item.id === 'download') {
-              viewer.download();
-            }
+        pdfViewer.toolbarSettings = {
+            showTooltip: true,
+            toolbarItems: [
+                toolItem,
+                "OpenOption",
+                "PageNavigationTool",
+                "MagnificationTool",
+                "PanTool",
+                "SelectionTool",
+                "SearchOption",
+                "PrintOption",
+                "DownloadOption",
+                "UndoRedoTool",
+                "AnnotationEditTool",
+                "FormDesignerEditTool",
+                "CommentTool",
+                "SubmitForm"
+            ]
         };
+    }
+
+    // Define the toolbarClick event handler
+    function toolbarClick(args) {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        if (args.item && args.item.id === 'print') {
+            pdfViewer.printModule.print();
+        } else if (args.item && args.item.id === 'download') {
+            pdfViewer.download();
+        }
     }
 </script>
 
