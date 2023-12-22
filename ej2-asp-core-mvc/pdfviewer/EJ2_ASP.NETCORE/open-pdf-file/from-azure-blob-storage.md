@@ -16,9 +16,9 @@ To load a PDF file from Azure Blob Storage in a PDF Viewer, you can follow the s
 
 Log in to the Azure Portal. Create a new Storage Account with preferred settings. Note access keys during the setup. Within the Storage Account, create a Blob Container following the steps in this [link](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
 
-**Step 2:** Create a PDF Viewer sample in ASP.NET Core
+**Step 2:** Create PDF Viewer Sample in ASP.NET Core
 
-Follow the instructions provided in this [link](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started-with-server-backed) to create a simple PDF Viewer sample in ASP.NET Core. 
+Follow instructions provided in the Syncfusion PDF Viewer Getting Started [Guide](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started-with-server-backed) to create a simple PDF Viewer sample in ASP.NET Core.
 
 **Step 3:** Modify the `Index.cshtml.cs` File in the Project 
 
