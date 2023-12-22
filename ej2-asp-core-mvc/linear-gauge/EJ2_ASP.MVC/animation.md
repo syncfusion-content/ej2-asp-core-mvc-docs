@@ -19,6 +19,7 @@ All of the elements in the Linear Gauge, such as the axis lines, ticks, labels, 
 
 The animation of the Linear Gauge is demonstrated in the following example.
 
+{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -28,7 +29,7 @@ The animation of the Linear Gauge is demonstrated in the following example.
 {% include code-snippet/lineargauge/animation/animation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
+{% endif %}
 N> Only the pointer of the Linear Gauge can be animated individually, not the axis lines, ticks, labels, ranges, and annotations. You can refer this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/linear-gauge/pointers#pointer-animation) to enable only pointer animation.
 
 ![Linear Gauge with animation](../linear-gauge/images/animation.gif)

@@ -19,6 +19,8 @@ All of the elements in the Linear Gauge, such as the axis lines, ticks, labels, 
 
 The animation of the Linear Gauge is demonstrated in the following example.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/lineargauge/animation/tagHelper %}
@@ -28,7 +30,8 @@ The animation of the Linear Gauge is demonstrated in the following example.
 {% endhighlight %}
 {% endtabs %}
 
-N> Only the pointer of the Linear Gauge can be animated individually, not the axis lines, ticks, labels, ranges, and annotations. You can refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/pointers#pointer-animation) to enable only pointer animation.
+{% endif %}
 
+N> Only the pointer of the Linear Gauge can be animated individually, not the axis lines, ticks, labels, ranges, and annotations. You can refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/pointers#pointer-animation) to enable only pointer animation.
 
 ![Linear Gauge with Animation](../linear-gauge/images/animation.gif)
