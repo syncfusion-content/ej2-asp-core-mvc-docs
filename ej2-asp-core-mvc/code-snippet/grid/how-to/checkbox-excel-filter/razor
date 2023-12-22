@@ -1,0 +1,11 @@
+@Html.EJS().Grid("OnDemandExcelFilter").DataSource(dataManger =>
+{
+    dataManger.Url("https://ej2services.syncfusion.com/aspnet/release/api/UrlDataSource").CrossDomain(true).Adaptor("UrlAdaptor");
+
+}).AllowFiltering().FilterSettings(Filter => Filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel).EnableInfiniteScrolling(true).ItemsCount(40).LoadingIndicator(Syncfusion.EJ2.Grids.IndicatorType.Spinner)).Columns(col =>
+{
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Employees").HeaderText("Employee Name").Width("150").Add();
+    col.Field("Designation").HeaderText("Designation").Width("120").Add();
+    col.Field("CurrentSalary").HeaderText("Current Salary").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).AllowPaging().Render()
