@@ -1,40 +1,15 @@
 @using Syncfusion.EJ2.LinearGauge;
 
-@Html.EJS().LinearGauge("container").Load("onGaugeLoad").Orientation(Orientation.Horizontal).Container(
-    new Syncfusion.EJ2.LinearGauge.LinearGaugeContainer {
-        Width = 30, Offset = 30 }
-    ).Margin(new Syncfusion.EJ2.LinearGauge.LinearGaugeMargin{ Bottom=50}).Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
-        {
-            new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
-            {
-                Minimum = 0, Maximum = 100,
-                Line = new Syncfusion.EJ2.LinearGauge.LinearGaugeLine { Width = 0 },
-                MajorTicks = new Syncfusion.EJ2.LinearGauge.LinearGaugeTick { Interval= 25, Height= 0 },
-                MinorTicks = new Syncfusion.EJ2.LinearGauge.LinearGaugeTick { Height=0 },
-                LabelStyle = new Syncfusion.EJ2.LinearGauge.LinearGaugeLabel {  Offset = 55 },
-            }
-        }
-    ).Render();
+@Html.EJS().LinearGauge("container").Load("gaugeLoad").Orientation(Syncfusion.EJ2.LinearGauge.Orientation.Horizontal).Annotations(
+    annotation => annotation.AxisIndex(0).AxisValue(10).X(10).Y(-70).ZIndex("1").Content("<div style='width: 70px;margin-left:-3%;margin-top: 42%;font-size: 16px;'>10 MPH</div>").Add()).Axes(axes =>
+        axes.Pointers(pointer => pointer.Width(15).Height(15).Value(10).Offset("-40").Placement(Syncfusion.EJ2.LinearGauge.Placement.Near).MarkerType(Syncfusion.EJ2.LinearGauge.MarkerType.Triangle).Add())
+            .MajorTicks(majorTick => majorTick.Interval(10).Height(20).Color("#9E9E9E"))
+            .MinorTicks(minorTick => minorTick.Interval(2).Height(10).Color("#9E9E9E"))
+            .Ranges(range => range.Start(0).End(50).StartWidth(10).EndWidth(10).Color("#F45656").Offset(35).Add())
+            .LabelStyle(labelStyle => labelStyle.Offset(48).Font(font => font.FontFamily("inherit"))).Add()).Render()
 
-<script type="text/javascript">
-    function onGaugeLoad(sender) {
-        sender.gauge.axes[0].pointers = [{
-            value: 80, height: 25,
-            width: 35, placement: 'Near',
-            offset: -44, markerType: 'Triangle',
-            color: '#f54ea2'
-        }];
-        sender.gauge.axes[0].ranges = [{
-            start: 0, end: 80,
-            startWidth: 30, endWidth: 30,
-            offset: 30,
-            linearGradient: {
-                startValue: '0%',
-                endValue: '100%',
-                colorStop: [
-                { color: '#fef3f9', offset: '0%', opacity: 1 },
-                { color: '#f54ea2', offset: '100%', opacity: 1 }]
-            }
-        }]
-    }
+<script>
+    window.gaugeLoad = function (args) {
+        args.gauge.animationDuration = 3000;
+        }
 </script>

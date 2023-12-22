@@ -1,51 +1,34 @@
 @using Syncfusion.EJ2.LinearGauge
 
-<ejs-lineargauge id="gauge" Load="onGaugeLoad" Orientation="Horizontal">
-    <e-lineargauge-container Width="30" Offset="30"> </e-lineargauge-container>
+@{
+    var labelFont = new Syncfusion.EJ2.LinearGauge.LinearGaugeFont { FontFamily = "inherit" };
+}
+
+<ejs-lineargauge id="linear" load="gaugeLoad" orientation="Horizontal">
+    <e-lineargauge-border color="Transparent"></e-lineargauge-border>
     <e-lineargauge-axes>
         <e-lineargauge-axis>
-            <e-axis-line Width="0"></e-axis-line>
+            <e-axis-labelstyle offset="48" font="labelFont">
+            </e-axis-labelstyle>
+            <e-axis-majorticks Interval="10" Height="20" Color="#9E9E9E"></e-axis-majorticks>
+            <e-axis-minorticks Interval="2" Height="10" Color="#9E9E9E"></e-axis-minorticks>
+            <e-lineargauge-pointers>
+                <e-lineargauge-pointer Type="Marker" MarkerType=Triangle Value="10" Height=15 Width=15 offset="-40" Placement=Near>
+                </e-lineargauge-pointer>
+            </e-lineargauge-pointers>
+            <e-lineargauge-ranges>
+                <e-lineargauge-range Start="0" End="50" startwidth="10" endwidth="10" offset="35" color="#F45656"></e-lineargauge-range>
+            </e-lineargauge-ranges>
         </e-lineargauge-axis>
     </e-lineargauge-axes>
-</ejs-lineargauge>
+    <e-lineargauge-annotations>
+        <e-lineargauge-annotation Content='<div style="width: 70px;margin-left:-3%;margin-top: 42%;font-size: 16px;">10 MPH</div>' X="10" Y="-70" AxisValue=10 AxisIndex=0 ZIndex="1"></e-lineargauge-annotation>
+    </e-lineargauge-annotations >
+</ejs-lineargauge >
 
-<script type="text/javascript">
-    function onGaugeLoad(sender) {
-        window.gauge = sender.gauge;
-        var axis = sender.gauge.axes[0];
-        axis.majorTicks = {
-            height: 0,
-            interval: 25
-        };
-        axis.minorTicks = {
-            height: 0
-        };
-        axis.labelStyle = {
-            font: {
-                color: '#424242',
-            },
-            offset: 55
-        };
-        axis.pointers = [{
-            value: 80,
-            markerType: 'Triangle',
-            height: 25,
-            width: 35,
-            placement: 'Near',
-            offset: -44,
-            color: '#f54ea2'
-        }];
-        axis.ranges = [{
-            start: 0, end: 80,
-            startWidth: 30, endWidth: 30,
-            offset: 30,
-            linearGradient: {
-                startValue: '0%',
-                endValue: '100%',
-                colorStop: [
-                    { color: '#fef3f9', offset: '0%', opacity: 1 },
-                    { color: '#f54ea2', offset: '100%', opacity: 1 }]
-            }
-        }];
-    }
-</script>
+    <script>
+        window.gaugeLoad = function (args) {
+            args.gauge.animationDuration = 3000;
+        }
+    </script>
+
