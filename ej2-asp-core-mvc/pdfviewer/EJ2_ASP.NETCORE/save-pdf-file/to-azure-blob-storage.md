@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Open PDF files from Azure Blob Storage in  EJ2 ASP.NET CORE PDF Viewer | Syncfusion
-description: Learn here all about how to Open PDF files from Azure Blob Storage in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Save PDF files to Azure Blob Storage in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Save PDF files to Azure Blob Storage in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
 publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# Open PDF file from Azure Blob Storage
+# Save PDF file to Azure Blob Storage
 
-To load a PDF file from Azure Blob Storage in a PDF Viewer, you can follow the steps below
+To save a PDF file to Azure Blob Storage, you can follow the steps below
 
 **Step 1:** Create the Azure Blob Storage account
 
@@ -48,34 +48,36 @@ public IndexModel(Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnviro
 }
 ```
 
-3. Modify the `OnPostLoad()` method to load the PDF files from  Azure Blob Storage
+3. Modify the `OnPostDownload()` method to save the downloaded PDF files to Azure Blob Storage container
 
 ```csharp
 
-public IActionResult OnPostLoad([FromBody] jsonObjects responseData)
+public IActionResult OnPostDownload([FromBody] jsonObjects responseData)
 {
     PdfRenderer pdfviewer = new PdfRenderer(_cache);
-    MemoryStream stream = new MemoryStream();
     var jsonObject = JsonConverterstring(responseData);
-    object jsonResult = new object();
-    if (jsonObject != null && jsonObject.ContainsKey("document"))
+    string documentBase = pdfviewer.GetDocumentAsBase64(jsonObject);
+    string document = jsonObject["documentId"];
+
+    // Create a BlobServiceClient object
+    BlobServiceClient blobServiceClient = new BlobServiceClient(_storageConnectionString);
+
+    // Get a reference to the blob container
+    BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(_storageContainerName);
+
+    string result = Path.GetFileNameWithoutExtension(document);
+    // Get a reference to the blob
+    BlobClient blobClient = containerClient.GetBlobClient(result + "_download.pdf");
+
+    // Convert the document base64 string to bytes
+    byte[] bytes = Convert.FromBase64String(documentBase.Split(",")[1]);
+
+    // Upload the document to Azure Blob Storage
+    using (MemoryStream stream = new MemoryStream(bytes))
     {
-        if (bool.Parse(jsonObject["isFileName"]))
-        {
-            BlobServiceClient blobServiceClient = new BlobServiceClient(_storageConnectionString);
-            string fileName = jsonObject["document"];
-            BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(_storageContainerName);
-            BlockBlobClient blockBlobClient = containerClient.GetBlockBlobClient(fileName);
-            blockBlobClient.DownloadTo(stream);
-        }
-        else
-        {
-            byte[] bytes = Convert.FromBase64String(jsonObject["document"]);
-            stream = new MemoryStream(bytes);
-        }
+        blobClient.Upload(stream, true);
     }
-    jsonResult = pdfviewer.Load(stream, jsonObject);
-    return Content(JsonConvert.SerializeObject(jsonResult));
+    return Content(documentBase);
 }
 
 ```
