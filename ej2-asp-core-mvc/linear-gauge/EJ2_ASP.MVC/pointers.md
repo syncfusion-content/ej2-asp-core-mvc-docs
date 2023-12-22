@@ -65,19 +65,6 @@ By default, the marker shape for the pointer is **InvertedTriangle**. To change 
 * Image
 * Text
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/pointers/marker-pointer/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Marker-pointer.cs" %}
-{% include code-snippet/lineargauge/pointers/marker-pointer/marker-pointer.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/lineargauge/pointers/marker-pointer/razor %}
@@ -86,25 +73,9 @@ By default, the marker shape for the pointer is **InvertedTriangle**. To change 
 {% include code-snippet/lineargauge/pointers/marker-pointer/marker-pointer.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Linear Gauge with pointer as circle](../linear-gauge/images/marker-pointer.png)
 
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-Image can be rendered instead of rendering a shape as a pointer. It can be achieved by setting the [markerType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_MarkerType) property to **Image** and setting the source URL of image to [imageUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_ImageUrl) property in [pointer](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html).
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/pointers/marker-pointer/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Marker-pointer.cs" %}
-{% include code-snippet/lineargauge/pointers/marker-pointer/marker-pointer.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 Image can be rendered instead of rendering a shape as a pointer. It can be achieved by setting the [MarkerType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_MarkerType) property to **Image** and setting the source URL of image to [ImageUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_ImageUrl) property in [Pointer](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html).
 
@@ -116,32 +87,9 @@ Image can be rendered instead of rendering a shape as a pointer. It can be achie
 {% include code-snippet/lineargauge/pointers/marker-pointer-image/marker-pointer-image.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Linear Gauge with image pointer](../linear-gauge/images/marker-pointer-image.png)
 
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-Text can be added instead of rendering a shape as a pointer. It can be achieved by setting the [markerType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_MarkerType) property to **Text**, and the text content can be set using the [text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_Text)  property in [pointer](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html).
-
-The following properties in the [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_TextStyle) property can be used to set the text style for the text pointer.
-
-* [fontFamily](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeFont.html#Syncfusion_EJ2_LinearGauge_LinearGaugeFont_FontFamily) - It is used to set the font family for the text pointer.
-* [fontStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeFont.html#Syncfusion_EJ2_LinearGauge_LinearGaugeFont_FontStyle) - It is used to set the font style for the text pointer.
-* [fontWeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeFont.html#Syncfusion_EJ2_LinearGauge_LinearGaugeFont_FontWeight) - It is used to set the font weight for the text pointer.
-* [size](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeFont.html#Syncfusion_EJ2_LinearGauge_LinearGaugeFont_Size) - It is used to set the font size for the text pointer.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/pointers/marker-pointer-text/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Marker-pointer-text.cs" %}
-{% include code-snippet/lineargauge/pointers/marker-pointer-text/marker-pointer-text.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 Text can be added instead of rendering a shape as a pointer. It can be achieved by setting the [MarkerType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_MarkerType) property to **Text**, and the text content can be set using the [Text](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_Text)  property in [Pointer](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html).
 
@@ -160,8 +108,6 @@ The following properties in the [TextStyle](https://help.syncfusion.com/cr/aspne
 {% include code-snippet/lineargauge/pointers/marker-pointer-text/marker-pointer-text.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 ![Linear Gauge with text pointer](../linear-gauge/images/marker-pointer-text.png)
 
