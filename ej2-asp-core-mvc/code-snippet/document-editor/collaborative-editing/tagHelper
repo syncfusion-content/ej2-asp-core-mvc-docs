@@ -1,0 +1,12 @@
+<div id="documenteditor_titlebar" class="e-de-ctn-title" style="height:35px;"></div>
+<ejs-documenteditorcontainer id="container" style="width: 100%;height: 100%;"></ejs-documenteditorcontainer>
+<script>
+    // Documenteditor control rendering starts
+    let serviceUrl = window.location.origin;
+    var container = new ejs.documenteditor.DocumentEditorContainer({ height: '590px', showPropertiesPane: false, enableToolbar: true });
+    container.serviceUrl = serviceUrl + "/api/documenteditor/";
+    container.appendTo('#container');
+
+    // Enable collaborative editing in Document Editor.
+    container.documentEditor.enableCollaborativeEditing = true;
+</script>

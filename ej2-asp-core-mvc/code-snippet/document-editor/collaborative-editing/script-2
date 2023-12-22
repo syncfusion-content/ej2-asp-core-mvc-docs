@@ -1,0 +1,45 @@
+<script>
+    var connectionId = '';
+    let serviceUrl = window.location.origin;
+    let connections;
+    
+    function loadDefaultDocument() {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        let roomId = urlParams.get('id');
+
+        if (roomId == null) {
+            roomId = Math.random().toString(32).slice(2)
+            window.history.replaceState({}, "", `?id=` + roomId);
+        }
+
+        ejs.popups.showSpinner(document.getElementById('editor_area'));
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.open('Post', '/api/CollaborativeEditing/ImportFile', true);
+        httpRequest.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        httpRequest.onreadystatechange = function () {
+            if (httpRequest.readyState === 4) {
+                if (httpRequest.status === 200 || httpRequest.status === 304) {
+                    var data = JSON.parse(httpRequest.responseText);
+                    connections = container.documentEditor.collaborativeEditingHandlerModule;
+
+                    connections.updateRoomInfo(roomId, data.version, serviceUrl + '/');
+
+                    container.documentEditor.open(data.sfdt);
+                    setTimeout(function () {
+                        start({ action: 'connect', roomName: roomId, currentUser: container.currentUser }, null);
+                    });
+                    ejs.popups.hideSpinner(document.getElementById('editor_area'));
+                    tooltip.open();
+                }
+                else {
+                    ejs.popups.hideSpinner(document.getElementById('editor_area'));
+                    alert('Fail to load the document');
+                }
+            }
+        };
+        container.documentEditor.documentName = 'Giant Panda';
+        httpRequest.send(JSON.stringify({ "fileName": 'Giant Panda.docx', "roomName": roomId }));
+        titleBar.updateDocumentTitle();
+    }
+</script>

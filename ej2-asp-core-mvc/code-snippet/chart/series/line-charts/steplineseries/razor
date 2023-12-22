@@ -1,4 +1,4 @@
-@Html.EJS().Chart("container").Series(series =>
+@(Html.EJS().Chart("container").Series(series =>
    {
       series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepLine).  
       XName("x").
@@ -6,10 +6,11 @@
       DataSource(ViewBag.dataSource).
       Width(3).
       Opacity(0.5).
-      DashArray("5, 5").
+      DashArray("5,5").
       Fill("blue").
+      Step(Syncfusion.EJ2.Charts.StepPosition.Left).
       Add();
    })
    .PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category))
    .Title("Olympic Medals")
-   .Width("60%").Render()
+   .Render())

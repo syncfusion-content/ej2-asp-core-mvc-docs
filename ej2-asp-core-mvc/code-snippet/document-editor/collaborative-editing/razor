@@ -1,0 +1,7 @@
+<div>
+	<div id='documenteditor_titlebar' class="e-de-ctn-title"></div>
+	@Html.EJS().DocumentEditorContainer("container").Height("590px").EnableToolbar(true).Render()
+</div>
+<script>
+    container.documentEditor.enableCollaborativeEditing = true;
+</script>

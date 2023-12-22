@@ -1,0 +1,8 @@
+<div class="col-lg-8 control-section" style="float:left;padding:0px">
+    <div class="content-wrapper">
+        @(Html.EJS().SymbolPalette("symbolPalette").Palettes(ViewBag.Palette).GetSymbolInfo("getSymbolInfo").ExpandMode(ExpandMode.Multiple).Width("100%").Height("700px")
+        .SymbolMargin(new SymbolPaletteMargin() { Left = 15, Right = 15, Top = 15, Bottom = 15 }).SymbolHeight(60).SymbolWidth(60)
+        .GetNodeDefaults("getSymbolNodes").Render())
+    </div>
+</div>
+

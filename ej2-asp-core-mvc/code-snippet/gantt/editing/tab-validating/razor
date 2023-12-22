@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2.Grids
+
+
+@{
+    var dict = new Dictionary<string, object>();
+    dict.Add("number", true);
+    dict.Add("min", 0);
+}
+        @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
+                "TaskName").StartDate("StartDate").Dependency("Predecessor").ResourceInfo("ResourceId").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+                ).AllowSelection(true).ResourceFields(rf => rf.Id("ResourceId").Name("ResourceName"))
+                .Resources((IEnumerable<object>)ViewBag.Resources).ActionBegin("ActionBegin").Columns(col =>
+                {
+                    col.Field("TaskId").Width(80).Add();
+                    col.Field("TaskName").HeaderText("Job Name").Width(250).ValidationRules(new { required = true }).Add();
+                    col.Field("StartDate").EditType("datetimepickeredit").ValidationRules(new { required = true, date = true })
+                    .TextAlign(TextAlign.Right).Format("yMd").Add();
+                    col.Field("EndDate").ValidationRules(new { required = true }).Add();
+                    col.Field("Duration").ValidationRules(new { required = true }).Add();
+                    col.Field("Progress").ValidationRules(new { required = true }).Add();
+                }).EditSettings(es => es.AllowAdding(true).AllowEditing(true).AllowDeleting(true).AllowTaskbarEditing(true).ShowDeleteConfirmDialog(true)).Render()
+
+<script>
+function ActionBegin(args) {
+    if (args.requestType == "beforeOpenEditDialog" ||args.requestType == "beforeOpenAddDialog") {
+      args.Dependency.columns[3].validationRules = { required: true }
+      args.Resources.columns[2].allowEditing = true
+      args.Resources.columns[2].validationRules = { required: true }
+    }
+}
+</script>
