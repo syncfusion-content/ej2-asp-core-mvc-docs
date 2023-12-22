@@ -55,3 +55,4 @@ The animation of the Circular Gauge is demonstrated in the following example.
 
 {% endif %}
 
+![Circular Gauge with Animation](../circular-gauge/images/animation.gif)

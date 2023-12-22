@@ -31,4 +31,4 @@ The animation of the Linear Gauge is demonstrated in the following example.
 N> Only the pointer of the Linear Gauge can be animated individually, not the axis lines, ticks, labels, ranges, and annotations. You can refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/pointers#pointer-animation) to enable only pointer animation.
 
 
-![Linear Gauge with Animation](../linear-gauge/images/animation.png)
+![Linear Gauge with Animation](../linear-gauge/images/animation.gif)
