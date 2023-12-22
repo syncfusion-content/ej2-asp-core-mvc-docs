@@ -553,7 +553,7 @@ To enable the selection for markers in Maps, set the `MapsSelectionSettings` in 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-When the [enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Enable) property of [selectionSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#properties) is set to **true**, the polygon shapes can be selected via user interaction. The following properties are available in `selectionSettings` to customize the polygon shape when it is selected.
+When the [enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Enable) property of [selectionSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsPolygonSettings.html#Syncfusion_EJ2_Maps_MapsPolygonSettings_SelectionSettings) is set to **true**, the polygon shapes can be selected via user interaction. The following properties are available in `selectionSettings` to customize the polygon shape when it is selected.
 
 * [enableMultiSelect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_EnableMultiSelect) - It is used to enable multiple selection of polygon shapes.
 * [fill](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Fill) - It is used to change the color of the selected polygon shape.
@@ -573,7 +573,7 @@ The following example shows how to select the polygon shape in the geometry map.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-When the [Enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Enable) property of [SelectionSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#properties) is set to **true**, the polygon shapes can be selected via user interaction. The following properties are available in `SelectionSettings` to customize the polygon shape when it is selected.
+When the [Enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Enable) property of [SelectionSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsPolygonSettings.html#Syncfusion_EJ2_Maps_MapsPolygonSettings_SelectionSettings) is set to **true**, the polygon shapes can be selected via user interaction. The following properties are available in `SelectionSettings` to customize the polygon shape when it is selected.
 
 * [EnableMultiSelect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_EnableMultiSelect) - It is used to enable multiple selection of polygon shapes.
 * [Fill](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Fill) - It is used to change the color of the selected polygon shape.
@@ -794,7 +794,7 @@ To enable the highlight for markers in Maps, set the `MapsHighlightSettings` in 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The polygon shapes can be highlighted via user interaction if the [enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Enable) property of [highlightSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html) is set to **true**. The following properties are available in `highlightSettings` to customize the polygon shape when it is highlighted.
+The polygon shapes can be highlighted via user interaction if the [enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Enable) property of [highlightSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsPolygonSettings.html#Syncfusion_EJ2_Maps_MapsPolygonSettings_HighlightSettings) is set to **true**. The following properties are available in `highlightSettings` to customize the polygon shape when it is highlighted.
 
 * [fill](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Fill) - It is used to change the color of the highlighted polygon shape.
 * [opacity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Opacity) - It is used to change the opacity of the highlighted polygon shape.
@@ -813,7 +813,7 @@ The following example shows how to highlight a polygon shape on a geometry map.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-The polygon shapes can be highlighted via user interaction if the [Enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Enable) property of [HighlightSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html) is set to **true**. The following properties are available in `HighlightSettings` to customize the polygon shape when it is highlighted.
+The polygon shapes can be highlighted via user interaction if the [Enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Enable) property of [HighlightSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsPolygonSettings.html#Syncfusion_EJ2_Maps_MapsPolygonSettings_HighlightSettings) is set to **true**. The following properties are available in `HighlightSettings` to customize the polygon shape when it is highlighted.
 
 * [Fill](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Fill) - It is used to change the color of the highlighted polygon shape.
 * [Opacity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Opacity) - It is used to change the opacity of the highlighted polygon shape.
