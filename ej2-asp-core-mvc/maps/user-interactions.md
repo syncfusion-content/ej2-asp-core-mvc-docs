@@ -833,7 +833,7 @@ The following example shows how to highlight a polygon shape on a geometry map.
 
 
 
-![Enable highlight for polygons](./images/Polygon/polygon-shape-highlight.PNG)
+![Enable highlight for polygons](./images/Polygon/polygon-shape-highlight.gif)
 
 ## Tooltip
 
