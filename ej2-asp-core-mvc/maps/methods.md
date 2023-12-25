@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Methods in Syncfusion ##Platform_Name## Maps Component
-description: Learn here all about methods in the Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+description: Learn here all about the methods in the Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Maps
 publishingplatform: ##Platform_Name##
