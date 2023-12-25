@@ -81,10 +81,10 @@ Image can be rendered instead of rendering a shape as a pointer. It can be achie
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/pointers/marker-pointer/tagHelper %}
+{% include code-snippet/lineargauge/pointers/marker-pointer-image/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Marker-pointer.cs" %}
-{% include code-snippet/lineargauge/pointers/marker-pointer/marker-pointer.cs %}
+{% include code-snippet/lineargauge/pointers/marker-pointer-image/marker-pointer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
