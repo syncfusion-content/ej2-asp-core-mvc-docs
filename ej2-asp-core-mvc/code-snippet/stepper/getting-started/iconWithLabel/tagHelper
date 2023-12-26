@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Navigations;
 
-<div id="stepper">
+<div>
     <ejs-stepper>
         <e-stepper-steps>
             <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
