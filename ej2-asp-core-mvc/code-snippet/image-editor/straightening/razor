@@ -1,5 +1,5 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
-    @Html.EJS().ImageEditor("image-editor").Created("created").FontFamily(@ViewBag.fontFamily).Render()
+    @Html.EJS().ImageEditor("image-editor").Created("created").Render()
 </div>
 
 <script>
