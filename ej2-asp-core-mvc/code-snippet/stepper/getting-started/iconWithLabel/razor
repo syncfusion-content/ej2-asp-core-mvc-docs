@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Navigations
 
-<div id="Stepper">
+<div>
     @Html.EJS().Stepper("iconWithLabel").Steps(ViewBag.datasource).Render()
 </div>
 

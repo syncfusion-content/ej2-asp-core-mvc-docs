@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Navigations;
 
-<div id="stepper">
-    <ejs-stepper id="iconWithLabel">
+<div>
+    <ejs-stepper>
         <e-stepper-steps>
             <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
             <e-stepper-step label="Address" iconCss="sf-icon-user"></e-stepper-step>
