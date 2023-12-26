@@ -33,7 +33,7 @@ public ActionResult ExcelExport([FromForm] string gridModel)
     fileStreamResult.FileDownloadName = "Export.xlsx";
     //Dispose the instance of ExcelEngine
     excelEngine.Dispose();
-    //Disposes the streams.
+    //Dispose the streams.
     ms1.Dispose();
     ms2.Dispose();
     // return the file

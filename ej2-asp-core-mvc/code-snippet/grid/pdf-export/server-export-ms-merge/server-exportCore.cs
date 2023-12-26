@@ -26,7 +26,7 @@ public object PdfExport([FromForm] string gridModel)
     ms3.Position = 0;
     //Close the document.
     finalDoc.Close(true);
-    //Disposes the streams.
+    //Dispose the streams.
     ms1.Dispose();
     ms2.Dispose();
     return ms3;

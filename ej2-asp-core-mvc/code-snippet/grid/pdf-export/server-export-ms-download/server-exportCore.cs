@@ -24,7 +24,7 @@ public ActionResult PdfExport([FromForm] string gridModel)
     fileStreamResult.FileDownloadName = "Export.pdf";
     //Close the document.
     finalDoc.Close(true);
-    //Disposes the streams.
+    //Dispose the streams.
     ms1.Dispose();
     ms2.Dispose();
     // return the file

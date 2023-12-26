@@ -86,7 +86,7 @@ In the below demo, we have invoked the above method inside the [`toolbarClick`](
 
 ## Export grid as memory stream
 
-The Grid offers an option to export the data as a `MemoryStream` instead of downloading it as a file in the browser. To obtain the memory stream of the exported grid, set the `AsMemoryStream` parameter to **true** in the [ExcelExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_ExcelExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_System_Boolean_Syncfusion_EJ2_GridExport_ExcelExportProperties_) and [CsvExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_CsvExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_System_Boolean_Syncfusion_EJ2_GridExport_ExcelExportProperties_) methods.
+The Grid offers an option to export the data as a memory stream instead of downloading it as a file in the browser. To obtain the memory stream of the exported grid, set the `AsMemoryStream` parameter to **true** in the [ExcelExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_ExcelExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_System_Boolean_Syncfusion_EJ2_GridExport_ExcelExportProperties_) and [CsvExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_CsvExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_System_Boolean_Syncfusion_EJ2_GridExport_ExcelExportProperties_) methods.
 
 The following code demonstrates how to get the memory stream of exported grid.
 
@@ -117,11 +117,11 @@ The following code demonstrates how to get the memory stream of exported grid.
 
 The [Essential XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#move-or-copy-a-worksheet).
 
-You can merge a MemoryStream, a FileStream, and a local file with the Grid's MemoryStream in the following ways:
+You can merge a memory stream, a file stream, and a local file with the Grid's memory stream in the following ways:
 
-### Merging with an exisiting memory stream
+### Merging with an existing memory stream
 
-If you already have a MemoryStream, you can directly use it to merge with the Grid's MemoryStream.
+If you already have a memory stream, you can directly use it to merge with the Grid's memory stream.
 
 In the following code, `ExcelEngine` and `AddCopy` method of Worksheets are used to merge the grid's memory stream with an existing memory stream.
 
@@ -148,9 +148,9 @@ In the following code, `ExcelEngine` and `AddCopy` method of Worksheets are used
 {% endtabs %}
 {% endif %}
 
-### Merging with an exisiting file stream
+### Merging with an existing file stream
 
-If you already have a FileStream, you can directly use it to merge with the Grid's MemoryStream. In the following code, the existing file stream is merged with the Grid's memory stream.
+If you already have a file stream, you can directly use it to merge with the Grid's memory stream. In the following code, the existing file stream is merged with the Grid's memory stream.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -177,7 +177,7 @@ If you already have a FileStream, you can directly use it to merge with the Grid
 
 ### Merging with a local file
 
-To merge a local file with the Grid's MemoryStream, you need to convert it into a FileStream before merging. In the following code, the existing local file is merged with the Grid's memory stream.
+To merge a local file with the Grid's memory stream, you need to convert it into a file stream before merging. In the following code, the existing local file is merged with the Grid's memory stream.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -204,7 +204,7 @@ To merge a local file with the Grid's MemoryStream, you need to convert it into 
 
 ### Downloading the merged memory stream
 
-You can download the merged MemoryStream by converting it into a FileStreamResult. In the following code, the merged memory stream is downloaded to the browser.
+You can download the merged memory stream by converting it into a `FileStreamResult`. In the following code, the merged memory stream is downloaded to the browser.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

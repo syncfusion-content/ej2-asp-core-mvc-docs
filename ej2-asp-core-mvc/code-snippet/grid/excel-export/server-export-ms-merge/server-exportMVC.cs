@@ -36,7 +36,7 @@ public object ExcelExport(string gridModel)
     ms3.Position = 0;
     //Dispose the instance of ExcelEngine
     excelEngine.Dispose();
-    //Disposes the streams.
+    //Dispose the streams.
     ms1.Dispose();
     ms2.Dispose();
     return ms3;
