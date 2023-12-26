@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Navigations;
 
-<div id="default-Stepper">
-    <ejs-stepper id="stepper">
+<div>
+    <ejs-stepper>
         <e-stepper-steps>
             <e-stepper-step></e-stepper-step>
             <e-stepper-step></e-stepper-step>
