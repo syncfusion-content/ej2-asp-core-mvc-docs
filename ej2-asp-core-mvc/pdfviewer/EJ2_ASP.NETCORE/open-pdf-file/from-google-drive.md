@@ -27,6 +27,8 @@ Follow instructions provided in the Syncfusion PDF Viewer Getting Started [Guide
 ```csharp
 using System.IO;
 using Google.Apis.Drive.v3;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Services;
 using Google.Apis.Util.Store;
 ```
 
