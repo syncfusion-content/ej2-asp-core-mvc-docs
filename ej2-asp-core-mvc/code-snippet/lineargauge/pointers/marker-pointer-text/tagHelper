@@ -1,0 +1,27 @@
+@using Syncfusion.EJ2.LinearGauge
+
+@{
+    var labelFont = new Syncfusion.EJ2.LinearGauge.LinearGaugeFont { FontFamily = "inherit" };
+}
+<ejs-lineargauge id='container'
+                style='display:block;height:100px;'
+               Orientation='Horizontal'>
+    <e-lineargauge-axes>
+        <e-lineargauge-axis Minimum="0" Maximum="100" OpposedPosition="true">
+            <e-axis-majorticks Interval="20" Height="7" Width="1" Position=Inside></e-axis-majorticks>
+            <e-axis-minorticks Interval="10" Height="3" Position=Inside></e-axis-minorticks>
+            <e-axis-line Width="5"></e-axis-line>
+            <e-axis-labelstyle Position=Inside font=labelFont></e-axis-labelstyle>
+            <e-lineargauge-pointers>
+                    <e-lineargauge-pointer value="13" markerType="Text" text="Low" color="black" offset="-55" textStyle="textStyle"></e-lineargauge-pointer>
+                    <e-lineargauge-pointer value="48" markerType="Text" text="Moderate" color="black" offset="-55" textStyle="textStyle"></e-lineargauge-pointer>
+                    <e-lineargauge-pointer value="83" markerType="Text" text="High" color="black" offset="-55" textStyle="textStyle"></e-lineargauge-pointer>
+            </e-lineargauge-pointers>
+            <e-lineargauge-ranges>
+                <e-lineargauge-range Start="0" End="30" Color="#FB7D55" StartWidth="50" EndWidth="50" Position="Inside"></e-lineargauge-range>
+                <e-lineargauge-range Start="30" End="65" Color="#ECC85B" StartWidth="50" EndWidth="50"  Position="Inside"></e-lineargauge-range>
+                <e-lineargauge-range Start="65" End="100" Color="#6FC78A" StartWidth="50" EndWidth="50"  Position="Inside"></e-lineargauge-range>
+            </e-lineargauge-ranges>
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>
