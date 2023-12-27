@@ -1,0 +1,45 @@
+@using Syncfusion.EJ2.Schedule
+@using Syncfusion.EJ2.Navigations
+@using Syncfusion.EJ2.DropDowns
+
+@{
+string dropelement = "#drop-content";
+}
+
+<ejs-schedule id="schedule" height="550" views="@ViewBag.view" selectedDate="new DateTime(2023, 10, 15)">
+    <e-schedule-resources>
+        <e-schedule-resource field="OwnerId" title="Owners" name="Owners" allowMultiple="true"
+            dataSource="@ViewBag.Calendars" query="new ej.data.Query().where('OwnerId', 'equal', 1)"
+            textField="OwnerText" idField="OwnerId" colorField="Color"></e-schedule-resource>
+    </e-schedule-resources>
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+    <e-schedule-toolbaritems>
+        <e-schedule-toolbaritem name="Previous" align="Left"></e-schedule-toolbaritem>
+        <e-schedule-toolbaritem name="Next" align="Left"></e-schedule-toolbaritem>
+        <e-schedule-toolbaritem name="DateRangeText" align="Left"></e-schedule-toolbaritem>
+        <e-schedule-toolbaritem template="@dropelement" type=Input align="Center"></e-schedule-toolbaritem>
+        <e-schedule-toolbaritem name="Today" align="Right"></e-schedule-toolbaritem>
+    </e-schedule-toolbaritems>
+</ejs-schedule>
+<div width="125px">
+    <ejs-dropdownlist id="drop-content" dataSource="@ViewBag.Calendars" width="125px" value="value"
+        showClearButton=false change="onResChange">
+        <e-dropdownlist-fields text="OwnerText" value="OwnerId"></e-dropdownlist-fields>
+    </ejs-dropdownlist>
+</div>
+
+<script type="text/javascript">
+    function onResChange(args) {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var resourcePredicate;
+        var value = args.value;
+            if (resourcePredicate) {
+                resourcePredicate = resourcePredicate.or(new ej.data.Predicate('OwnerId', 'equal', value));
+            }
+            else {
+                resourcePredicate = new ej.data.Predicate('OwnerId', 'equal', value);
+            }
+        scheduleObj.resources[0].query = resourcePredicate ? new ej.data.Query().where(resourcePredicate) :
+            new ej.data.Query().where('OwnerId', 'equal', 1);
+    }
+</script>
