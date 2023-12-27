@@ -53,8 +53,7 @@ public PdfViewerController(IWebHostEnvironment hostingEnvironment, IMemoryCache 
 
 ```
 
-3. Modify the `OnPostDownload()` method to load the PDF files from Box cloud file storage.
-
+3. Modify the `OnPostDownload()` method to save the downloaded PDF files to Box cloud file storage folder.
 ```csharp
 
 public async Task<IActionResult> OnPostDownload([FromBody] jsonObjects responseData)
