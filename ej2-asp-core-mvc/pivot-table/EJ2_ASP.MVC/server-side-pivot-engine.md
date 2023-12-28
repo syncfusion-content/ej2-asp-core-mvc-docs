@@ -39,7 +39,7 @@ This section briefs the Syncfusion assembly [`Syncfusion.Pivot.Engine`](https://
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 ).Render()
 
@@ -49,7 +49,7 @@ This section briefs the Syncfusion assembly [`Syncfusion.Pivot.Engine`](https://
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .FormatSettings(formatsettings =>
 {
@@ -153,7 +153,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .FormatSettings(formatsettings =>
 {
@@ -232,7 +232,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .Type(Syncfusion.EJ2.PivotView.DataSourceType.CSV)
 .FormatSettings(formatsettings =>
@@ -350,7 +350,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .Type(Syncfusion.EJ2.PivotView.DataSourceType.CSV)
 .FormatSettings(formatsettings =>
@@ -453,7 +453,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .FormatSettings(formatsettings =>
 {
@@ -536,7 +536,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .Rows(rows =>
 {
@@ -630,7 +630,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .Rows(rows =>
 {
