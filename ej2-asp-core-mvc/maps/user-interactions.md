@@ -789,8 +789,7 @@ To enable the highlight for markers in Maps, set the `MapsHighlightSettings` in 
 
 ![Enable highlight for markers](./images/UserInteraction/selection-marker.PNG)
 
-
- ### Enable highlight for polygons
+### Enable highlight for polygons
 
 {% if page.publishingplatform == "aspnet-core" %}
 
