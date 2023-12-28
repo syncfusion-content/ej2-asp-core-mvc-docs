@@ -40,7 +40,7 @@ This section briefs the Syncfusion assembly [`Syncfusion.Pivot.Engine`](https://
 ```html
 
 <ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="http://localhost:61379/api/pivot/post" mode="Server">
+    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
     </e-datasourcesettings>
 </ejs-pivotview>
 
@@ -51,7 +51,7 @@ This section briefs the Syncfusion assembly [`Syncfusion.Pivot.Engine`](https://
 ```html
 
 <ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="http://localhost:61379/api/pivot/post" mode="Server">
+    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
         <e-formatsettings>
             <e-field name="Price" format="C"></e-field>
         </e-formatsettings>
@@ -155,7 +155,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 ```html
 
 <ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="http://localhost:61379/api/pivot/post" mode="Server">
+    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
         <e-formatsettings>
             <e-field name="Price" format="C"></e-field>
         </e-formatsettings>
@@ -234,7 +234,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 ```html
 
 <ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="http://localhost:61379/api/pivot/post" mode="Server" type="JSON">
+    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server" type="JSON">
         <e-formatsettings>
             <e-field name="ProCost" format="C"></e-field>
         </e-formatsettings>
@@ -351,7 +351,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 ```html
 
 <ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="http://localhost:61379/api/pivot/post" mode="Server" type="CSV">
+    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server" type="CSV">
         <e-formatsettings>
             <e-field name="UnitPrice" format="C"></e-field>
         </e-formatsettings>
@@ -453,7 +453,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 ```html
 
 <ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="http://localhost:61379/api/pivot/post" mode="Server">
+    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
         <e-formatsettings>
             <e-field name="Price" format="C"></e-field>
         </e-formatsettings>
@@ -536,7 +536,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 ```html
 
 <ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="http://localhost:61379/api/pivot/post" mode="Server">
+    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
         <e-rows>
             <e-field name="CustomerID" caption="Product ID"></e-field>
         </e-rows>
@@ -630,7 +630,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 ```html
 
 <ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="http://localhost:61379/api/pivot/post" mode="Server">
+    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
         <e-rows>
             <e-field name="CustomerID" caption="Product ID"></e-field>
         </e-rows>
