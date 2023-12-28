@@ -1,8 +1,11 @@
 ---
-title: Collaborative Editing (preview)
-component: DocumentEditor
+layout: post
+title: Collaborative Editing (preview) in ##Platform_Name## Document Editor Component
 description: Learn how to perform collaborative editing in ##Platform_Name## document editor
+platform: ej2-asp-core-mvc
+control: Collaborative Editing
 publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
 # Collaborative Editing (preview)
