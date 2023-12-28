@@ -9,7 +9,6 @@ new { latitude= 25.0700428, longitude= 67.2847875}
 
 }
 
-Core Sample
 
 <button id="button">GetMinMaxLatitudeLongitude</button>
 <p id="coordinatesDisplay"></p>

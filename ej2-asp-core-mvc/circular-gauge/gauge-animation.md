@@ -26,6 +26,9 @@ The animation of the Circular Gauge is demonstrated in the following example.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-animation/animation/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Animation.cs" %} 
+{% include code-snippet/circulargauge/gauge-animation/animation.cs %} 
+{% endhighlight %}
 {% endtabs %}
 
 ![Circular Gauge with Animation](../circular-gauge/images/animation.gif)
