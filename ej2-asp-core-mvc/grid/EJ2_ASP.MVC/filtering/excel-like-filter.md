@@ -36,7 +36,7 @@ You can enable Excel like filter by defining [`Type`](https://help.syncfusion.co
 {% endtabs %}
 {% endif %}
 
-## Render checkbox list data in on-demand for excel/Checkbox filtering
+## Render checkbox list data in on-demand for excel/checkbox filtering
 
 The Excel/Checkbox filter type of Grid has a restriction where only the first 1000 unique sorted items are accessible to view in the filter dialog checkbox list content by scrolling. This limitation is in place to avoid any rendering delays when opening the filter dialog. However, the searching and filtering processes consider all unique items in that particular column.
 
@@ -62,7 +62,7 @@ A loading effect is presented to signify that loading is in progress when the ch
 @Html.EJS().Grid("OnDemandExcelFilter").DataSource(ViewBag.DataSource).FilterSettings(Filter => Filter.EnableInfiniteScrolling(true).LoadingIndicator(Syncfusion.EJ2.Grids.IndicatorType.Spinner))
 ```
 
-In the provided example, On-Demand Excel filter has been enabled for the ##Platform_Name## Grid:
+In the provided example, On-Demand Excel filter has been enabled for the ##Platform_Name## Grid
 
 {% if page.publishingplatform == "aspnet-core" %}
 
