@@ -1,6 +1,6 @@
 @Html.EJS().Grid("OnDemandExcelFilter").DataSource(dataManger =>
 {
-    dataManger.Url("https://ej2services.syncfusion.com/aspnet/release/api/UrlDataSource").CrossDomain(true).Adaptor("UrlAdaptor");
+    dataManger.Url("https://services.syncfusion.com/aspnet/production/api/UrlDataSource").CrossDomain(true).Adaptor("UrlAdaptor");
 
 }).AllowFiltering().FilterSettings(Filter => Filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel).EnableInfiniteScrolling(true)).Columns(col =>
 {
