@@ -1,4 +1,4 @@
-@)Html.EJS().AccumulationChart("container").Series(series =>
+@(Html.EJS().AccumulationChart("container").Series(series =>
 {
      series.DataSource(ViewBag.dataSource)
           .XName("xValue")
