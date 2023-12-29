@@ -36,7 +36,7 @@ You can enable Excel like filter by defining. [`type`](https://help.syncfusion.c
 {% endtabs %}
 {% endif %}
 
-## Render checkbox list data in on-demand for excel/Checkbox filtering
+## Render checkbox list data in on-demand for excel/checkbox filtering
 
 The Excel/Checkbox filter type of Grid has a restriction where only the first 1000 unique sorted items are accessible to view in the filter dialog checkbox list content by scrolling. This limitation is in place to avoid any rendering delays when opening the filter dialog. However, the searching and filtering processes consider all unique items in that particular column.
 
