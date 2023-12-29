@@ -1,12 +1,11 @@
 @using Syncfusion.EJ2.Navigations;
 
-<ejs-stepper id="stepper">
+<ejs-stepper id="stepper" activeStep=1>
     <e-stepper-steps>
-        <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
-        <e-stepper-step label="Address" iconCss="sf-icon-user"></e-stepper-step>
-        <e-stepper-step label="Delivery" iconCss="sf-icon-transport"></e-stepper-step>
-        <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
-        <e-stepper-step label="Ordered" iconCss="sf-icon-success"></e-stepper-step>
+        <e-stepper-step iconCss="sf-icon-cart" cssClass="stepper-customize"></e-stepper-step>
+        <e-stepper-step iconCss="sf-icon-transport"></e-stepper-step>
+        <e-stepper-step iconCss="sf-icon-payment"></e-stepper-step>
+        <e-stepper-step iconCss="sf-icon-success"></e-stepper-step>
     </e-stepper-steps>
 </ejs-stepper>
 
@@ -34,10 +33,6 @@
         content: "\e710";
     }
 
-    .sf-icon-user:before {
-        content: "\e708";
-    }
-
     .sf-icon-transport:before {
         content: "\e702";
     }
@@ -48,5 +43,10 @@
 
     .sf-icon-success:before {
         content: "\e715";
+    }
+    
+    #stepper.e-stepper .e-step-container.stepper-customize .e-step {
+        border-radius: 20%;
+        font-size: 20px;
     }
 </style>

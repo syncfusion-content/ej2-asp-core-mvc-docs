@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Navigations;
 
-<ejs-stepper id="stepper">
+<ejs-stepper id="stepper" stepChanging="function(args){ stepChangingEvent(args) }">
     <e-stepper-steps>
         <e-stepper-step></e-stepper-step>
         <e-stepper-step></e-stepper-step>
@@ -10,3 +10,8 @@
     </e-stepper-steps>
 </ejs-stepper>
 
+<script>
+    function stepChangingEvent(args) {
+        alert("Step Changing from "+args.previousStep + " to " + args.activeStep)
+    }
+</script>

@@ -1,14 +1,18 @@
-@using Syncfusion.EJ2.Navigations;
+@using Syncfusion.EJ2.Navigations
 
-<ejs-stepper id="stepper">
-    <e-stepper-steps>
-        <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
-        <e-stepper-step label="Address" iconCss="sf-icon-user"></e-stepper-step>
-        <e-stepper-step label="Delivery" iconCss="sf-icon-transport"></e-stepper-step>
-        <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
-        <e-stepper-step label="Ordered" iconCss="sf-icon-success"></e-stepper-step>
-    </e-stepper-steps>
-</ejs-stepper>
+
+@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).Locale("fr-BE").Render()
+
+<script>
+    ej.base.L10n.load({
+        'fr-BE': {
+            'stepper': {
+                'optional': "facultatif"
+            }
+        }
+    });
+</script>
+
 
 <style>
     @@font-face {
@@ -34,10 +38,6 @@
         content: "\e710";
     }
 
-    .sf-icon-user:before {
-        content: "\e708";
-    }
-
     .sf-icon-transport:before {
         content: "\e702";
     }
@@ -48,5 +48,9 @@
 
     .sf-icon-success:before {
         content: "\e715";
+    }
+
+    .stepper-section {
+        margin: 50px 100px;
     }
 </style>

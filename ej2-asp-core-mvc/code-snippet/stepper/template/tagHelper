@@ -1,14 +1,22 @@
 @using Syncfusion.EJ2.Navigations;
 
-<ejs-stepper id="stepper">
+<ejs-stepper id="stepperTemplate" activeStep=1 template="#template">
     <e-stepper-steps>
         <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
-        <e-stepper-step label="Address" iconCss="sf-icon-user"></e-stepper-step>
-        <e-stepper-step label="Delivery" iconCss="sf-icon-transport"></e-stepper-step>
+        <e-stepper-step label="Shipped" iconCss="sf-icon-transport"></e-stepper-step>
         <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
-        <e-stepper-step label="Ordered" iconCss="sf-icon-success"></e-stepper-step>
+        <e-stepper-step label="Delivered" iconCss="sf-icon-success"></e-stepper-step>
     </e-stepper-steps>
 </ejs-stepper>
+
+<script id="template" type="text/x-jsrender">
+    <span>
+        <span class="e-step e-indicator ${step.iconCss}"></span>
+        <span class="e-step-label-container e-label-after">
+            <span class="e-label">${step.label}</span>
+        </span>
+    </span>
+</script>
 
 <style>
     @@font-face {
@@ -34,10 +42,6 @@
         content: "\e710";
     }
 
-    .sf-icon-user:before {
-        content: "\e708";
-    }
-
     .sf-icon-transport:before {
         content: "\e702";
     }
@@ -48,5 +52,45 @@
 
     .sf-icon-success:before {
         content: "\e715";
+    }
+
+    /* Template styles */
+
+    .stepper-template-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        min-width: 85px;
+    }
+    #stepperTemplate.e-stepper .e-stepper-progressbar {
+        height: 5px;
+        top: 22%;
+    }
+    #stepperTemplate.e-stepper .e-stepper-progressbar > .e-progressbar-value {
+        background: repeating-linear-gradient(45deg, #4e97e8, #4e97e8 11px, #100303 10px, #100303 20px);
+    }
+    #stepperTemplate.e-stepper .e-stepper-steps .e-step-container .e-step,
+    #stepperTemplate.e-stepper .e-stepper-steps .e-step-container .e-step-label-container {
+        min-height: 30px;
+        width: 65px;
+    }
+    #stepperTemplate.e-stepper .e-stepper-steps .e-step-container.e-step-completed .e-step,
+    #stepperTemplate.e-stepper .e-stepper-steps .e-step-container.e-stepper-selected .e-step,
+    #stepperTemplate.e-stepper .e-stepper-steps .e-step-container .e-step {
+        background: #4e97e8;
+    }
+    #stepperTemplate.e-stepper .e-stepper-steps .e-step-container.e-step-notstarted .e-step {
+        background: #d9d9d9;
+    }
+    #stepperTemplate.e-stepper .e-stepper-steps .e-step-container.e-step-inprogress .e-step {
+        background: #32408f;
+    }
+    #stepperTemplate.e-stepper .e-stepper-steps .e-step-container.e-stepper-selected .e-step {
+        border: 2px solid black;
+    }
+    #stepperTemplate.e-stepper .e-stepper-steps .e-step-container .e-label {
+        margin-top: 6px;
+    }
+    #stepperTemplate.e-stepper .e-stepper-steps .e-step-container .e-step {
+        font-size: 20px;
     }
 </style>

@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).StepChanging("function(args) { stepChangingEvent(args) }").Render()
+
+<script>
+    function stepChangingEvent(args) {
+        alert("Step Changing from "+args.previousStep + " to " + args.activeStep)
+    }
+</script>

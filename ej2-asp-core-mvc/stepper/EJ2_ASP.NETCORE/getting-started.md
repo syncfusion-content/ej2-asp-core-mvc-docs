@@ -58,7 +58,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
     <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
@@ -110,7 +110,7 @@ You can define steps by using `e-stepper-step` tag helper.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Stepper control will be rendered in the default web browser.
 
-![ASP.NET Core Stepper Control](images/stepper-control.png)
+![ASP.NET Core Stepper Control](images/getting-started.jpg)
 
 ## Configure icon and label
 
@@ -122,4 +122,4 @@ You can define the step icon and label by setting the `iconCss` and `label` prop
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Stepper Icon and Label](images/stepper-icon-label.png)
+![ASP.NET Core Stepper Icon and Label](images/stepper-iconLabel.jpg)

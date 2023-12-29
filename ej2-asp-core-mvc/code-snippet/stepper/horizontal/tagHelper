@@ -1,12 +1,11 @@
 @using Syncfusion.EJ2.Navigations;
 
-<ejs-stepper id="stepper">
+<ejs-stepper id="stepper" orientation=Horizontal>
     <e-stepper-steps>
-        <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
-        <e-stepper-step label="Address" iconCss="sf-icon-user"></e-stepper-step>
-        <e-stepper-step label="Delivery" iconCss="sf-icon-transport"></e-stepper-step>
-        <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
-        <e-stepper-step label="Ordered" iconCss="sf-icon-success"></e-stepper-step>
+        <e-stepper-step iconCss="sf-icon-cart"></e-stepper-step>
+        <e-stepper-step iconCss="sf-icon-transport"></e-stepper-step>
+        <e-stepper-step iconCss="sf-icon-payment"></e-stepper-step>
+        <e-stepper-step iconCss="sf-icon-success"></e-stepper-step>
     </e-stepper-steps>
 </ejs-stepper>
 
@@ -32,10 +31,6 @@
 
     .sf-icon-cart:before {
         content: "\e710";
-    }
-
-    .sf-icon-user:before {
-        content: "\e708";
     }
 
     .sf-icon-transport:before {

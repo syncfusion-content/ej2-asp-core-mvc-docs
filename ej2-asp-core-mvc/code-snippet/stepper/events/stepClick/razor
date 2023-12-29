@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).StepClick("function(args) { stepClickEvent(args) }").Render()
+
+<script>
+    function stepClickEvent(args) {
+        // your required action here..
+    }
+</script>

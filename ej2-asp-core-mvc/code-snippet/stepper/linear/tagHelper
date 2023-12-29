@@ -1,14 +1,31 @@
 @using Syncfusion.EJ2.Navigations;
 
-<ejs-stepper id="stepper">
-    <e-stepper-steps>
-        <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
-        <e-stepper-step label="Address" iconCss="sf-icon-user"></e-stepper-step>
-        <e-stepper-step label="Delivery" iconCss="sf-icon-transport"></e-stepper-step>
-        <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
-        <e-stepper-step label="Ordered" iconCss="sf-icon-success"></e-stepper-step>
-    </e-stepper-steps>
-</ejs-stepper>
+<div id="container">
+    <div class="e-btn-group">
+        <input type="radio" id="linear" name="Linear" value="true" onclick="updateLinear(this)" checked />
+        <label class="e-btn" for="linear">Linear</label>
+        <input type="radio" id="nonLinear" name="Linear" value="false" onclick="updateLinear(this)" />
+        <label class="e-btn" for="nonLinear">Non-Linear</label>
+    </div>
+    <div class="stepper-section">
+        <ejs-stepper id="stepper" linear=true activeStep=1>
+            <e-stepper-steps>
+                <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
+                <e-stepper-step label="Delivery Address" iconCss="sf-icon-transport"></e-stepper-step>
+                <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
+                <e-stepper-step label="Confirmation" iconCss="sf-icon-success"></e-stepper-step>
+            </e-stepper-steps>
+        </ejs-stepper>
+    </div>
+</div>
+
+<script>
+    function updateLinear(args) {
+        var stepper = document.getElementById('stepper').ej2_instances[0];
+        stepper.linear = (/true/).test(args.value) ? true : false;
+        stepper.reset();
+    }
+</script>
 
 <style>
     @@font-face {
@@ -34,10 +51,6 @@
         content: "\e710";
     }
 
-    .sf-icon-user:before {
-        content: "\e708";
-    }
-
     .sf-icon-transport:before {
         content: "\e702";
     }
@@ -48,5 +61,13 @@
 
     .sf-icon-success:before {
         content: "\e715";
+    }
+    
+    #container {
+        text-align:center;
+    }
+
+    .stepper-section {
+        margin: 50px 100px;
     }
 </style>

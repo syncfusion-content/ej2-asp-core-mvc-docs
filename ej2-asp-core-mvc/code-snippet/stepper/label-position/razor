@@ -1,14 +1,28 @@
-@using Syncfusion.EJ2.Navigations;
+@using Syncfusion.EJ2.Navigations
 
-<ejs-stepper id="stepper">
-    <e-stepper-steps>
-        <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
-        <e-stepper-step label="Address" iconCss="sf-icon-user"></e-stepper-step>
-        <e-stepper-step label="Delivery" iconCss="sf-icon-transport"></e-stepper-step>
-        <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
-        <e-stepper-step label="Ordered" iconCss="sf-icon-success"></e-stepper-step>
-    </e-stepper-steps>
-</ejs-stepper>
+<div id="container">
+    <div class="e-btn-group">
+        <input type="radio" id="start" name="position" value="start" onclick="updateLabelPosition(this);" />
+        <label class="e-btn" for="start">Start</label>
+        <input type="radio" id="end" name="position" value="end" onclick="updateLabelPosition(this);" />
+        <label class="e-btn" for="end">End</label>
+        <input type="radio" id="top" name="position" value="top" onclick="updateLabelPosition(this);" />
+        <label class="e-btn" for="top">Top</label>
+        <input type="radio" id="bottom" name="position" value="bottom" onclick="updateLabelPosition(this);" checked />
+        <label class="e-btn" for="bottom">Bottom</label>
+    </div>
+    <div class="stepper-section">
+        @Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).Render()
+    </div>
+</div>
+
+<script>
+    function updateLabelPosition(args) {
+        var stepper = document.getElementById('stepper').ej2_instances[0];
+        stepper.labelPosition = args.value;
+    }
+</script>
+
 
 <style>
     @@font-face {
@@ -34,10 +48,6 @@
         content: "\e710";
     }
 
-    .sf-icon-user:before {
-        content: "\e708";
-    }
-
     .sf-icon-transport:before {
         content: "\e702";
     }
@@ -48,5 +58,9 @@
 
     .sf-icon-success:before {
         content: "\e715";
+    }
+
+    .stepper-section {
+        margin: 50px 100px;
     }
 </style>

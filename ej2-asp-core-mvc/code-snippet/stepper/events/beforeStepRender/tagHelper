@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Navigations;
 
-<ejs-stepper id="stepper">
+<ejs-stepper id="stepper" beforeStepRender="function(args){ beforeStepRenderEvent(args) }">
     <e-stepper-steps>
         <e-stepper-step></e-stepper-step>
         <e-stepper-step></e-stepper-step>
@@ -10,3 +10,8 @@
     </e-stepper-steps>
 </ejs-stepper>
 
+<script>
+    function beforeStepRenderEvent(args) {
+        // your required action here..
+    }
+</script>
