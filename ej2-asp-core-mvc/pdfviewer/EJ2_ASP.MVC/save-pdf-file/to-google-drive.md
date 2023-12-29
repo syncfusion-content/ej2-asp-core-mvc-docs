@@ -35,7 +35,15 @@ using Google.Apis.Util.Store;
 3. Modify the `Download()` method to save the downloaded PDF files to Google Drive bucket
 
 ```csharp
- public async Task<ActionResult> Download(jsonObjects jsonObject)
+
+    // Specify the path to the credentials file
+    private string credentialsPath = "Your Path to the OAuth 2.0 Client IDs json file";
+    // Specify the folder ID where you want to upload the PDF on Google Drive
+    private readonly string folderId = "Your Google Drive Folder ID";
+    private readonly string ApplicationName = "Your Application Name";
+    private readonly string tokenjson = "Path to create token.json file";
+
+  public async Task<ActionResult> Download(jsonObjects jsonObject)
  {
      PdfRenderer pdfviewer = new PdfRenderer();
      var jsonData = JsonConverter(jsonObject);
@@ -49,17 +57,12 @@ using Google.Apis.Util.Store;
      string fileName = result + "_downloaded.pdf";
 
      UserCredential credential;
-     // Specify the path to the credentials file
-     string credentialPath = "Your Path to the OAuth 2.0 Client IDs json file";
-     // Specify the folder ID where you want to upload the PDF on Google Drive
-     string folderId = "Your Google Drive Folder ID";
-     string ApplicationName = "Your Application Name";
 
-     using (var streammen = new FileStream(credentialPath, FileMode.Open, FileAccess.Read))
+     using (var streammen = new FileStream(credentialsPath, FileMode.Open, FileAccess.Read))
      {
          // The file token.json stores the user's access and refresh tokens and is created
          // automatically when the authorization flow completes for the first time.
-         string tokenPath = "D:\\path\\to\\your\\token.json";
+         string tokenPath = tokenjson;
          credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
              GoogleClientSecrets.Load(streammen).Secrets,
              Scopes,
@@ -90,7 +93,6 @@ using Google.Apis.Util.Store;
          request = service.Files.Create(fileMetadata, stream, "application/pdf");
          request.Fields = "id";
          var uploadedFile = await request.UploadAsync();
-
      }
 
      return Content(documentBase);
@@ -120,4 +122,4 @@ Set the `documentPath` property of the PDF viewer component to the desired name 
 
 N> The **Google.Apis.Drive.v3** NuGet package must be installed in your application to use the previous code example.
 
-[View sample in GitHub]().
+[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-google-drive)

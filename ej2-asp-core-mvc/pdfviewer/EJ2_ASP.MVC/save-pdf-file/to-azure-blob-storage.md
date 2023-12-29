@@ -34,6 +34,9 @@ using Azure.Storage.Blobs.Specialized;
 
 ```csharp
 
+private readonly string _connectionString = "Your Connection string from Azure";
+private readonly string _containerName = "Your container name in Azure";
+
 public ActionResult Download(jsonObjects jsonObject)
 {
     PdfRenderer pdfviewer = new PdfRenderer();
@@ -43,14 +46,8 @@ public ActionResult Download(jsonObjects jsonObject)
 
     string document = jsonData["documentId"];
 
-    //Connection String of Storage Account
-    string _connectionString = "Your Connection string from Azure";
-
     // Create a BlobServiceClient object by passing the connection string.
     BlobServiceClient blobServiceClient = new BlobServiceClient(_connectionString);
-
-    // Get a reference to the container
-    string _containerName = "Your container name in Azure";
 
     // Get a reference to the container
     BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(_containerName);
@@ -96,4 +93,4 @@ Set the `documentPath` property of the PDF viewer component to the desired name 
 
 N> The **Azure.Storage.Blobs** NuGet package must be installed in your application to use the previous code example.
 
-[View sample in GitHub]().
+[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-azure-blob-storage).

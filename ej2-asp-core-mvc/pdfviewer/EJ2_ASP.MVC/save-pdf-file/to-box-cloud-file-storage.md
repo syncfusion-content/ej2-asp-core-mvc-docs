@@ -95,4 +95,4 @@ N> The **Box.V2.Core** NuGet package must be installed in your application to us
 
 N> Replace `PDF_Succinctly.pdf` with the actual document name that you want to load from Box cloud file storage. Make sure to pass the document name from the box folder to the `documentPath` property of the PDF viewer component
 
-[View sample in GitHub]().
+[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-box-cloud-file-storage)

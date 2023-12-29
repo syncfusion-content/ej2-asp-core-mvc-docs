@@ -34,17 +34,17 @@ using Azure.Storage.Blobs.Specialized;
 
 ```csharp
 
+private IConfiguration _configuration;
 private readonly string _storageConnectionString;
 private readonly string _storageContainerName;
-private readonly ILogger<IndexModel> _logger;
 
-public IndexModel(Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment, IMemoryCache cache, IConfiguration configuration, ILogger<IndexModel> logger)
+public IndexModel(Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment, IMemoryCache cache, IConfiguration configuration)
 {
     _hostingEnvironment = hostingEnvironment;
     _cache = cache;
+    _configuration = configuration;
     _storageConnectionString = configuration.GetValue<string>("connectionString");
     _storageContainerName = configuration.GetValue<string>("containerName");
-    _logger = logger;
 }
 ```
 
@@ -119,4 +119,4 @@ Set the `documentPath` property of the PDF viewer component to the desired name 
 
 N> The **Azure.Storage.Blobs** NuGet package must be installed in your application to use the previous code example.
 
-[View sample in GitHub]().
+[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-azure-blob-storage).

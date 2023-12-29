@@ -98,7 +98,6 @@ public async Task<IActionResult> OnPostDownloadAsync([FromBody] jsonObjects resp
     return Content(documentBase);
 }
 
-
 ```
 
 4. Open the `appsettings.json` file in your web service project, Add the following lines below the existing `"AllowedHosts"` configuration
@@ -143,4 +142,4 @@ Set the `documentPath` property of the PDF viewer component to the desired name 
 
 N> The **Google.Apis.Drive.v3** NuGet package must be installed in your application to use the previous code example.
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-google-drive)

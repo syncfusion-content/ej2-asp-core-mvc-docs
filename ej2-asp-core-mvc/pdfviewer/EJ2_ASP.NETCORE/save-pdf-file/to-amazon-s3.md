@@ -40,7 +40,7 @@ public readonly string _accessKey;
 public readonly string _secretKey;
 public readonly string _bucketName;
 
-public PdfViewerController(IWebHostEnvironment hostingEnvironment, IMemoryCache cache, IConfiguration configuration)
+public IndexModel(Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment, IMemoryCache cache, IConfiguration configuration)
 {
   _hostingEnvironment = hostingEnvironment;
   _cache = cache;
