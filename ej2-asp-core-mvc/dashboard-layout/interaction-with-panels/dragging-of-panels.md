@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dragging of panels
+# Dragging of panels in ASP.NET Core Dashboard Layout
 
 The Dashboard Layout component is provided with dragging functionality to drag and reorder the panels within the layout. While dragging a panel, a holder will be highlighted below the panel indicating the panel placement on panel drop. This helps the user to decide whether to place the panel in the current position or revert to previous position without disturbing the layout.
 
