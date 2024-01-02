@@ -13,6 +13,11 @@ documentation: ug
 
 This section briefly explains about how to include [ASP.NET Core Schedule](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) control in your ASP.NET Core application using Visual Studio.
 
+To get start quickly with ASP.NET Core Scheduler, you can check on this video:
+
+{% youtube
+"youtube:https://www.youtube.com/watch?v=1YVOmjid1Ow"%}
+
 ## Prerequisites
 
 [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
