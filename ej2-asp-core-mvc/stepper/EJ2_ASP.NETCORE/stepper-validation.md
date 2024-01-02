@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Validating steps 
+# Steps validation in ##Platform_Name## Stepper control
 
-Use the [isValid](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_IsValid) property in the Stepper to check the status of a specific step.
+You can define the validation state of each step by setting the [isValid](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_IsValid) property. If the [isValid](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_IsValid) is set as `true`, it shows the success state if `false` it displays the error state of the steps. The default value is `null`.
 
-When [isValid](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_IsValid) is set to `true`, the step meets the required criteria. If set to `false`, the step needs attention or completion. It provides clear feedback on the status of individual steps within the Stepper, enhancing the user interaction.
+> Based on the Stepper `stepType`, the validation icons will be displayed either as an indicator or as part of the step label/text.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

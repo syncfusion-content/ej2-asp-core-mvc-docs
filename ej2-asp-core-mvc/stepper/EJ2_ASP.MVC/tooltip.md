@@ -8,6 +8,10 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Tooltip in ##Platform_Name## Stepper control
+
+The Stepper control supports tooltip to show additional information in the steps by setting the [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ShowTooltip) property. If enabled, the tooltip appears when the user hovers over the step such as the label or text. By default, the `ShowTooltip` property is `false`.
+
 # Tooltips in Stepper
 
 Improve user interaction and offer extra information with tooltips in the Stepper control. You can customize tooltips using the following properties:

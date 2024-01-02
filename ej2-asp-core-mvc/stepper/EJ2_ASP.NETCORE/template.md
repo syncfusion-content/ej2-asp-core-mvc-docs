@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customizing Stepper steps with templates
+# Customizing the steps with templates in ##Platform_Name## Stepper control
 
-The Stepper control allows you to customize the appearance of the stepper steps using [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Template) property. You can use template to define a unique layout for the stepper. This allows you to create a more customized and interactive experience for the user.
+The Stepper control allows you to customize the appearance of the Stepper steps by using the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Template) property to define a unique layout for the Stepper. This allows you to create a personalized experience for the user. 
 
-The following example shows the customization of stepper with `icon` and `label` using [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Template) property.
+The following example shows the customization of Stepper with `icon` and `label` using [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Template) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

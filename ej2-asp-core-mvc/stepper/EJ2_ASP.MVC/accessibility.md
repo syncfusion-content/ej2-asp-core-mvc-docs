@@ -10,19 +10,11 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## Stepper control
 
-Accessibility is achieved in the Stepper control through WAI-ARIA standard and keyboard navigations. The Stepper control can be effectively accessed through assistive technologies such as screen readers.
+Accessibility is achieved in the Stepper control through `WAI-ARIA` standard and keyboard navigations. The Stepper control can be effectively accessed through assistive technologies such as screen readers.
 
-## ARIA attribute
+## Keyboard interaction
 
-The following ARIA attributes are used in Stepper control based on its state.
-
-| Properties | Functionality |
-| ------------ | ----------------------- |
-| `aria-label` | Attribute provides the text label with some default description for the Stepper. |
-| `aria-current` | Indicates the current activestep in the stepper. |
-| `aria-disabled`| Indicates when the stepper step is disabled and cannot be interacted. |
-
-## User interaction with keyboard
+The Stepper control is interactive with the below keyboard shortcuts.
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
@@ -33,4 +25,13 @@ The following ARIA attributes are used in Stepper control based on its state.
 | <kbd>Home</kbd> | Focuses on the first step of the Stepper. |
 | <kbd>End</kbd> | Focuses on the last step of the Stepper. |
 | <kbd>Enter / Space</kbd> | Activates the currently focused step. |
-| <kbd>Tab</kbd> | Moves the focus away from the Stepper. |
+
+## ARIA attribute
+
+The following ARIA attributes are used in Stepper control based on its state.
+
+| Properties | Functionality |
+| ------------ | ----------------------- |
+| `aria-label` | Attribute provides a string value that labels an interactive element for accessibility. |
+| `aria-current` | Indicates the current activestep in the stepper. |
+| `aria-disabled`| Indicates when the Stepper step is disabled and cannot be interacted. |

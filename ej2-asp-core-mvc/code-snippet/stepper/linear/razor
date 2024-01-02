@@ -8,7 +8,7 @@
         <label class="e-btn" for="nonLinear">Non-Linear</label>
     </div>
     <div class="stepper-section">
-        @Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).Linear(true).ActiveStep(1).Render()
+        @Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).Linear(true).Render()
     </div>
 </div>
 

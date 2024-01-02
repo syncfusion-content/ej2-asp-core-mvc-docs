@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Orientation
+# Orientation in ##Platform_Name## Stepper control
 
-You can use the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to set `Horizontal` or `Vertical` orientations, which controls the sequence order of the steps displayed in the Stepper. By default, the orientation is set to `Horizontal`.
+The Stepper layouts can be displayed either in a `Horizontal` or `Vertical` orientations by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property. The default orientation is `Horizontal`.
 
 ## Horizontal
 
-The Stepper steps are arranged in a side-by-side manner, by setting the `Horizontal` in the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property.
+The steps are arranged in a side-by-side manner by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Horizontal`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -26,7 +26,7 @@ The Stepper steps are arranged in a side-by-side manner, by setting the `Horizon
 
 ## Vertical
 
-To display the steps vertically, use the `Vertical` in the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property, to arrange the steps one below the other.
+You can arrange the steps one below the other vertically, by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Vertical`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

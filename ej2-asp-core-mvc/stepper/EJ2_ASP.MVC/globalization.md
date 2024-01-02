@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Global local in ##Platform_Name## Stepper control
+# Globalization in ##Platform_Name## Stepper control
 
 ## Localization
 
-The Localization library allows you to localize `Optional` property of the Stepper. Optional property of the stepper control can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `Locale` value and translation object. In the below sample, `French` culture is set to Stepper and changed the optional property text.
+The Localization library allows you to localize `Optional` property of the Stepper. Optional property of the Stepper control can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `Locale` value and translation object. In the below sample, `French` culture is set to Stepper and changed the optional property text.
 
 Locale key |en-US (default)
 -----|-----
@@ -31,7 +31,7 @@ optional | Optional
 
 ## RTL
 
-RTL provides an option to switch the text direction and layout of the Stepper control from right to left. It improves the user experiences and accessibility for users who use right-to-left languages. To enable RTL, set the [EnableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_EnableRtl) to true.
+RTL provides an option to switch the text direction and layout of the Stepper control from right to left by setting the [EnableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_EnableRtl) property to `true`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

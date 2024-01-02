@@ -8,7 +8,7 @@
         <label class="e-btn" for="nonLinear">Non-Linear</label>
     </div>
     <div class="stepper-section">
-        <ejs-stepper id="stepper" linear=true activeStep=1>
+        <ejs-stepper id="stepper" linear=true>
             <e-stepper-steps>
                 <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
                 <e-stepper-step label="Delivery Address" iconCss="sf-icon-transport"></e-stepper-step>

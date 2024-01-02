@@ -26,7 +26,7 @@ duration</td><td>
 Specifies the animation duration to complete with one animation cycle. By default, the value is `1000` milliseconds.</td></tr>
 </table>
 
-In the below sample, animation is enabled and the `duration`, `delay` are configured for the Stepper.
+In the below sample, animation is enabled and the `Duration`, `Delay` are configured for the Stepper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

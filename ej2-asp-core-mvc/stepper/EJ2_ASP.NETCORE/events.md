@@ -14,7 +14,7 @@ This section describes the stepper events that will be triggered when an appropr
 
 ## created
 
-The [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Created) event is triggered when the Stepper control is initially created.
+The Stepper control triggers the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Created) event when the control rendering is completed.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -24,7 +24,7 @@ The [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navig
 
 ## stepChanged
 
-The [stepChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_StepChanged) event occurs when the active step in the Stepper changes.
+The Stepper control triggers the [stepChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_StepChanged) event after the active step is changed.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -34,7 +34,7 @@ The [stepChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.N
 
 ## stepChanging
 
-The [stepChanging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_StepChanging) event is triggered before the active step changes in the Stepper.
+The Stepper control triggers the [stepChanging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_StepChanging) event before the active step change.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -44,7 +44,7 @@ The [stepChanging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 ## stepClick
 
-The [stepClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_StepClick) event is triggered when a step in the Stepper is clicked.
+The Stepper control triggers the [stepClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_StepClick) event when the step is clicked.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -54,7 +54,7 @@ The [stepClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Nav
 
 ## beforeStepRender
 
-The [beforeStepRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_BeforeStepRender) event occurs before a step is rendered in the Stepper.
+The Stepper control triggers the [beforeStepRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_BeforeStepRender) event before rendering each step.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
