@@ -1,19 +1,11 @@
-<div class="col-lg-8 control-section" style="float:left;padding:0px">
-    <div class="content-wrapper">
+<div id="umlActivityDiagram" style="width: 100%; height: 521px">
+    <div id="palette-space" class="sb-mobile-palette">
         @(Html.EJS().SymbolPalette("symbolPalette").Palettes(ViewBag.Palette).GetSymbolInfo("getSymbolInfo").ExpandMode(ExpandMode.Multiple).Width("100%").Height("700px")
         .SymbolMargin(new SymbolPaletteMargin() { Left = 15, Right = 15, Top = 15, Bottom = 15 }).SymbolHeight(60).SymbolWidth(60)
         .GetNodeDefaults("getSymbolNodes").Render())
     </div>
-</div>
-
-    <div id="umlActivityDiagram" style="width: 100%; height: 521px">
-        <div id="palette-space" class="sb-mobile-palette">
-            @(Html.EJS().SymbolPalette("symbolPalette").Palettes(ViewBag.Palette).GetSymbolInfo("getSymbolInfo").ExpandMode(ExpandMode.Multiple).Width("100%").Height("700px")
-            .SymbolMargin(new SymbolPaletteMargin() { Left = 15, Right = 15, Top = 15, Bottom = 15 }).SymbolHeight(60).SymbolWidth(60)
-            .GetNodeDefaults("getSymbolNodes").Render())
-        </div>
-        <div id="diagram-space" class="sb-mobile-diagram">
-            @(Html.EJS().Diagram("diagram").Width("100%").Height("700px").Render()
-              )
-        </div>
+    <div id="diagram-space" class="sb-mobile-diagram">
+        @(Html.EJS().Diagram("diagram").Width("100%").Height("700px").Render()
+          )
     </div>
+</div>
