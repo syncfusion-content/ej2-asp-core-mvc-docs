@@ -8,13 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Tooltips in Stepper
+# Tooltip in ##Platform_Name## Stepper control
 
-Improve user interaction and offer extra information with tooltips in the Stepper control. You can customize tooltips using the following properties:
+The Stepper control supports tooltip to show additional information in the steps by setting the [showTooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ShowTooltip) property to `true`.
 
-## Show tooltip
-
-The [showTooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ShowTooltip) property allows you to control the visibility of tooltip within the Stepper.
+The tooltip appears when the user hovers over the step, providing the information such as the label or text. By default, the `showTooltip` property is `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -26,4 +24,14 @@ The [showTooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.N
 
 ## Tooltip template
 
-The [tooltipTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_TooltipTemplate) property enables you to customize the content and appearance of tooltips. It can be used based on your specific tooltip requirements.
+You can use the [tooltipTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_TooltipTemplate) property to specify a custom template for the tooltips, providing detailed information about the steps.
+
+When hovering over the step, the current step model is passed in the template context, allowing you to include dynamic information about the step.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/stepper/tooltip-template/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Stepper Tooltip Template](images/stepper-tooltip-template.jpg)

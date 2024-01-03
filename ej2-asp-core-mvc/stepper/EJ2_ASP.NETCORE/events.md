@@ -10,7 +10,7 @@ documentation: ug
 
 # Events
 
-This section describes the stepper events that will be triggered when an appropriate actions are performed. The following events are available in the stepper control.
+This section describes the Stepper events that will be triggered when an appropriate actions are performed. The following events are available in the Stepper control.
 
 ## created
 

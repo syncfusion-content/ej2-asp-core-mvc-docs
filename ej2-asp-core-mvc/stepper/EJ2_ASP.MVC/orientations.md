@@ -10,11 +10,11 @@ documentation: ug
 
 # Orientation in ##Platform_Name## Stepper control
 
-The Stepper layouts can be displayed either in a `Horizontal` or `Vertical` orientations by setting the [Orientation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property. The default orientation is `Horizontal`.
+The Stepper control supports the display of steps in both horizontal and vertical orientations by using the [Orientation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property.
 
 ## Horizontal
 
-The steps are arranged in a side-by-side manner by setting the [Orientation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Horizontal`.
+In horizontal orientation, the steps are displayed in a side-by-side manner by setting the [Orientation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Horizontal`. By default, the steps are displayed in the horizontal orientation.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -29,7 +29,7 @@ The steps are arranged in a side-by-side manner by setting the [Orientation](htt
 
 ## Vertical
 
-You can arrange the steps one below the other vertically, by setting the [Orientation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Vertical`.
+You can display the steps one below the other vertically by setting the [Orientation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Vertical`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -39,3 +39,5 @@ You can arrange the steps one below the other vertically, by setting the [Orient
 {% include code-snippet/stepper/vertical/vertical.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![ASP.NET MVC Stepper Vertical](images/stepper-vertical.jpg)

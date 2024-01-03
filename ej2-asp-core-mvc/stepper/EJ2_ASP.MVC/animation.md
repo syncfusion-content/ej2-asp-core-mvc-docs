@@ -10,23 +10,16 @@ documentation: ug
 
 # Animation in ##Platform_Name## Stepper control
 
-The Stepper progressbar can be animated for each step transition. You can enable/disable the animation by setting the [Enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.StepperAnimationSettings.html#Syncfusion_EJ2_Navigations_StepperAnimationSettings_Enable) property. By default, the property value is `true`.
+The Stepper progress state can be animated, smoothly transitioning from one step to another. You can customize the animation's [Duration](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.StepperAnimationSettings.html#Syncfusion_EJ2_Navigations_StepperAnimationSettings_Duration) and [Delay](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.StepperAnimationSettings.html#Syncfusion_EJ2_Navigations_StepperAnimationSettings_Delay), by using the [Animation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Animation) property.
 
-You can also customize the animation's [Duration](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.StepperAnimationSettings.html#Syncfusion_EJ2_Navigations_StepperAnimationSettings_Duration) & [Delay](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.StepperAnimationSettings.html#Syncfusion_EJ2_Navigations_StepperAnimationSettings_Delay), by using the [Animation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Animation) property.
+You can disable the animation by setting the [Enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.StepperAnimationSettings.html#Syncfusion_EJ2_Navigations_StepperAnimationSettings_Enable) property to `false`. By default, the value is `true`.
 
-<!-- markdownlint-disable MD033 -->
-<table>
-<tr>
-<td>
-delay</td><td>
-The Stepper animation will start with the mentioned delay. The default value is `0` milliseconds.</td></tr>
-<tr>
-<td>
-duration</td><td>
-Specifies the animation duration to complete with one animation cycle. By default, the value is `1000` milliseconds.</td></tr>
-</table>
+| Fields | Type | Description |
+|------|------|-------------|
+| [Duration](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.StepperAnimationSettings.html#Syncfusion_EJ2_Navigations_StepperAnimationSettings_Duration) | `number` | Specifies the duration of the animated transition for each step. The default value is `2000` milliseconds. |
+| [Delay](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.StepperAnimationSettings.html#Syncfusion_EJ2_Navigations_StepperAnimationSettings_Delay) | `number` | Specifies the delay to initiate the animated transition for each step in milliseconds. The default value is `0`. |
 
-In the below sample, animation is enabled and the `Duration`, `Delay` are configured for the Stepper.
+The example demonstrates the animation `Duration` and `Delay` settings for the Stepper.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -36,4 +29,3 @@ In the below sample, animation is enabled and the `Duration`, `Delay` are config
 {% include code-snippet/stepper/animation/animation.cs %}
 {% endhighlight %}
 {% endtabs %}
-

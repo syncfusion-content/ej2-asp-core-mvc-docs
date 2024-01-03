@@ -10,15 +10,9 @@ documentation: ug
 
 # Tooltip in ##Platform_Name## Stepper control
 
-The Stepper control supports tooltip to show additional information in the steps by setting the [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ShowTooltip) property. If enabled, the tooltip appears when the user hovers over the step such as the label or text. By default, the `ShowTooltip` property is `false`.
+The Stepper control supports tooltip to show additional information in the steps by setting the [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ShowTooltip) property to `true`.
 
-# Tooltips in Stepper
-
-Improve user interaction and offer extra information with tooltips in the Stepper control. You can customize tooltips using the following properties:
-
-## Show tooltip
-
-The [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ShowTooltip) property allows you to control the visibility of tooltip within the Stepper.
+The tooltip appears when the user hovers over the step, providing the information such as the label or text. By default, the `ShowTooltip` property is `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -33,4 +27,17 @@ The [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Na
 
 ## Tooltip template
 
-The [TooltipTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_TooltipTemplate) property enables you to customize the content and appearance of tooltips. It can be used based on your specific tooltip requirements.
+You can use the [TooltipTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_TooltipTemplate) property to specify a custom template for the tooltips, providing detailed information about the steps.
+
+When hovering over the step, the current step model is passed in the template context, allowing you to include dynamic information about the step.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/stepper/tooltip-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TooltipTemplate.cs" %}
+{% include code-snippet/stepper/tooltip-template/tooltipTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Stepper Tooltip Template](images/stepper-tooltip-template.jpg)

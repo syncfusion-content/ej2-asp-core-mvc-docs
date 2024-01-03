@@ -1,13 +1,15 @@
 @using Syncfusion.EJ2.Navigations;
 
-<ejs-stepper id="stepper" orientation=Vertical>
-    <e-stepper-steps>
-        <e-stepper-step iconCss="sf-icon-cart"></e-stepper-step>
-        <e-stepper-step iconCss="sf-icon-transport"></e-stepper-step>
-        <e-stepper-step iconCss="sf-icon-payment"></e-stepper-step>
-        <e-stepper-step iconCss="sf-icon-success"></e-stepper-step>
-    </e-stepper-steps>
-</ejs-stepper>
+<div class="stepper-vertical">
+    <ejs-stepper id="stepper" orientation=Vertical>
+        <e-stepper-steps>
+            <e-stepper-step iconCss="sf-icon-cart"></e-stepper-step>
+            <e-stepper-step iconCss="sf-icon-transport"></e-stepper-step>
+            <e-stepper-step iconCss="sf-icon-payment"></e-stepper-step>
+            <e-stepper-step iconCss="sf-icon-success"></e-stepper-step>
+        </e-stepper-steps>
+    </ejs-stepper>
+</div>
 
 <style>
     @@font-face {
@@ -43,5 +45,9 @@
 
     .sf-icon-success:before {
         content: "\e715";
+    }
+
+    .stepper-vertical {
+        min-height: 450px;
     }
 </style>

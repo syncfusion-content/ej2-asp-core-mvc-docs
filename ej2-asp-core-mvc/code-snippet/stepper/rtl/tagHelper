@@ -2,10 +2,10 @@
 
 <ejs-stepper id="stepper" enableRtl=true>
     <e-stepper-steps>
-        <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
-        <e-stepper-step label="Delivery Address" iconCss="sf-icon-transport"></e-stepper-step>
-        <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
-        <e-stepper-step label="Confirmation" iconCss="sf-icon-success"></e-stepper-step>
+        <e-stepper-step text="Cart" iconCss="sf-icon-cart"></e-stepper-step>
+        <e-stepper-step text="Delivery Address" iconCss="sf-icon-transport"></e-stepper-step>
+        <e-stepper-step text="Payment" iconCss="sf-icon-payment"></e-stepper-step>
+        <e-stepper-step text="Confirmation" iconCss="sf-icon-success"></e-stepper-step>
     </e-stepper-steps>
 </ejs-stepper>
 

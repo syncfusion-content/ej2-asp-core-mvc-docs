@@ -10,15 +10,15 @@ documentation: ug
 
 # Steps in ##Platform_Name## Stepper control
 
-You can define the Stepper steps by using the [steps](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Steps) property. You can configure each step which provides options such as `iconCss`, `text`, `label` and more.
+The JavaScript Stepper allows you to add steps using the [steps](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Steps) property. Each step can be configured with options such as `iconCss`, `text`, `label`, `cssClass` and more.
 
-## Steps
+## Adding steps
 
-You can customize the icon, text and label of the steps by using the `iconCss`, `text` and `label` properties.
+You can define the icon and text content for each step using the `iconCss`, `text` and `label` properties.
 
-### Defining step icons
+### Defining icon CSS
 
-You can display only icons for each step by using the [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_IconCss) property.
+You can define the CSS class to show the icon for each step using the [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_IconCss) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -26,12 +26,11 @@ You can display only icons for each step by using the [iconCss](https://help.syn
 {% endhighlight %}
 {% endtabs %}
 
-### Defining step content
+### Defining text content
 
-You can display only text for each step by setting the [text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_Text) property. You can show only label for each step by setting the [label](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_Label) property.
+You can define text instead of an icon by setting the [text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_Text) property and display label content for a step using the [label](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_Label) property.
 
-> Depending on the `stepType`, if both label and text are defined, the label takes priority to diplay the content.
-In the below sample, the Stepper is rendered with texts.
+> When both label and text are defined, the label takes priority for display based on the `stepType`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -39,17 +38,9 @@ In the below sample, the Stepper is rendered with texts.
 {% endhighlight %}
 {% endtabs %}
 
-In the below sample, the Stepper is rendered with labels.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/steps/label/razor %}
-{% endhighlight %}
-{% endtabs %}
-
 ## Optional steps
 
-You can determine whether the step can be skipped or not by setting the `optional` property. By default, the `optional` property is false.
+You can show whether the step is optional or not by using `optional` property. By default, the `optional` property is `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -57,9 +48,11 @@ You can determine whether the step can be skipped or not by setting the `optiona
 {% endhighlight %}
 {% endtabs %}
 
-## Enable or disable steps
+![ASP.NET Core Stepper Optional step](images/step-optional.jpg)
 
-You can make any step active or in-active by setting the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_Disabled) property. By default, the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_Disabled) property is false.
+## Disabling steps
+
+You can use the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_Disabled) property to disable a step, preventing user interaction when set to `true`. By default, the value is `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -67,11 +60,11 @@ You can make any step active or in-active by setting the [disabled](https://help
 {% endhighlight %}
 {% endtabs %}
 
-## Defining active step
+![ASP.NET Core Stepper Disabled step](images/step-disabled.jpg)
 
-You can specify the currently focused or user-selected step by using the [activeStep](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ActiveStep) property. By default, the activeStep is `0`.
+## Setting active step
 
-The following example showcases how to utilize the active step property.
+You can set the active step by specifying its index using the [activeStep](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ActiveStep) property. The default value is `0`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -79,11 +72,21 @@ The following example showcases how to utilize the active step property.
 {% endhighlight %}
 {% endtabs %}
 
-## Steps status
+![ASP.NET Core Stepper Active step](images/stepper-activestep.jpg)
 
-The progress states of each activeStep can be updated by using the [status](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_Status) property. The possible values are `NotStarted`, `InProgress` and `Completed`. By default, the value is `NotStarted.`
+## Step status
 
-## Customization
+Each step's progress state can be specified using the [status](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_Status) property. The possible values are `NotStarted`, `InProgress` and `Completed`. By default, the value is `NotStarted.`
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/stepper/steps/status/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Stepper Status](images/step-status.jpg)
+
+## Step styling
 
 You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_CssClass) property to customize the appearance of the each step.
 
@@ -93,13 +96,13 @@ You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Stepper CSSClass](images/stepper-cssclass.jpg)
+![ASP.NET Core Stepper CSSClass](images/step-cssclass.jpg)
 
-## Steps validation
+## Step validation
 
-Specifes whether the step is valid or not. By default, the [isValid](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_IsValid) property is `null`.
+You can set the validation state for each step to displaying a success or error icon by using [isValid](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html#Syncfusion_EJ2_Navigations_Step_IsValid) property.
 
-> To know more about Stepper validation, refer the [Validation](./stepper-validation.md) section.
+> To know more about Stepper validation, refer the [Validation](./steps-validation.md) section.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -107,4 +110,4 @@ Specifes whether the step is valid or not. By default, the [isValid](https://hel
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Stepper Validation](images/stepper-validation.jpg)
+![ASP.NET Core Stepper Validation](images/stepper-validation.jpg)

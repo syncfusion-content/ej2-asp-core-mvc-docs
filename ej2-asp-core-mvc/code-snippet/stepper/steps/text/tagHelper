@@ -1,11 +1,20 @@
 @using Syncfusion.EJ2.Navigations;
 
-<ejs-stepper id="stepper">
+<ejs-stepper id="textOnly">
     <e-stepper-steps>
-        <e-stepper-step text="Cart"></e-stepper-step>
-        <e-stepper-step text="Delivery Address"></e-stepper-step>
-        <e-stepper-step text="Payment"></e-stepper-step>
-        <e-stepper-step text="Confirmation"></e-stepper-step>
+        <e-stepper-step text="A"></e-stepper-step>
+        <e-stepper-step text="B"></e-stepper-step>
+        <e-stepper-step text="C"></e-stepper-step>
+        <e-stepper-step text="D"></e-stepper-step>
+    </e-stepper-steps>
+</ejs-stepper>
+
+<ejs-stepper id="labelOnly">
+    <e-stepper-steps>
+        <e-stepper-step label="Cart"></e-stepper-step>
+        <e-stepper-step label="Delivery Address"></e-stepper-step>
+        <e-stepper-step label="Payment"></e-stepper-step>
+        <e-stepper-step label="Confirmation"></e-stepper-step>
     </e-stepper-steps>
 </ejs-stepper>
 
@@ -43,5 +52,9 @@
 
     .sf-icon-success:before {
         content: "\e715";
+    }
+
+    #labelOnly {
+        margin-top: 50px;
     }
 </style>

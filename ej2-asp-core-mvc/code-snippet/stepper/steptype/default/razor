@@ -1,26 +1,6 @@
 @using Syncfusion.EJ2.Navigations
 
-<div id="container">
-    <div class="e-btn-group">
-        <input type="radio" id="default" name="stepType" value="default" onclick="updateType(this)" checked/>
-        <label class="e-btn" for="default">Default</label>
-        <input type="radio" id="label" name="stepType" value="label" onclick="updateType(this)" />
-        <label class="e-btn" for="label">Label</label>
-        <input type="radio" id="indicator" name="stepType" value="indicator" onclick="updateType(this)" />
-        <label class="e-btn" for="indicator">Indicator</label>
-    </div>
-    <div class="stepper-section">
-        @Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).Render()
-    </div>
-</div>
-
-<script>
-    function updateType(args) {
-        var stepper = document.getElementById('stepper').ej2_instances[0];
-        stepper.stepType = args.value;
-    }
-</script>
-
+@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).StepType(StepType.Default).Render()
 
 <style>
     @@font-face {
@@ -56,9 +36,5 @@
 
     .sf-icon-success:before {
         content: "\e715";
-    }
-
-    .stepper-section {
-        margin: 50px 100px;
     }
 </style>

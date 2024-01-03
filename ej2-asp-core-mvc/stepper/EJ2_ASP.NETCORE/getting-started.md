@@ -110,7 +110,7 @@ You can define steps by using `e-stepper-step` tag helper.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Stepper control will be rendered in the default web browser.
 
-![ASP.NET Core Stepper Control](images/getting-started.jpg)
+![ASP.NET Core Stepper Control](images/stepper-gettingstarted.jpg)
 
 ## Configure icon and label
 

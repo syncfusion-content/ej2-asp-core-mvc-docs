@@ -10,11 +10,11 @@ documentation: ug
 
 # Orientation in ##Platform_Name## Stepper control
 
-The Stepper layouts can be displayed either in a `Horizontal` or `Vertical` orientations by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property. The default orientation is `Horizontal`.
+The Stepper control supports the display of steps in both horizontal and vertical orientations by using the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property.
 
 ## Horizontal
 
-The steps are arranged in a side-by-side manner by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Horizontal`.
+In horizontal orientation, the steps are displayed in a side-by-side manner by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Horizontal`. By default, the steps are displayed in the horizontal orientation.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -26,10 +26,12 @@ The steps are arranged in a side-by-side manner by setting the [orientation](htt
 
 ## Vertical
 
-You can arrange the steps one below the other vertically, by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Vertical`.
+You can display the steps one below the other vertically by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Vertical`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/stepper/vertical/razor %}
 {% endhighlight %}
 {% endtabs %}
+
+![ASP.NET Core Stepper Vertical](images/stepper-vertical.jpg)

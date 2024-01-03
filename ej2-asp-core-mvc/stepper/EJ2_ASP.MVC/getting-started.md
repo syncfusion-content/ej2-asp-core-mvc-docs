@@ -114,7 +114,7 @@ You can define steps by setting the `Steps` property.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Stepper control will be rendered in the default web browser.
 
-![ASP.NET MVC Stepper Control](images/getting-started.jpg)
+![ASP.NET MVC Stepper Control](images/stepper-gettingstarted.jpg)
 
 ## Configure icon and label
 

@@ -1,30 +1,26 @@
-@using Syncfusion.EJ2.Navigations;
+@using Syncfusion.EJ2.Navigations
 
-<div id="container">
-    <div class="e-btn-group">
-        <input type="radio" id="default" name="stepType" value="default" onclick="updateType(this)" checked/>
-        <label class="e-btn" for="default">Default</label>
-        <input type="radio" id="label" name="stepType" value="label" onclick="updateType(this)" />
-        <label class="e-btn" for="label">Label</label>
-        <input type="radio" id="indicator" name="stepType" value="indicator" onclick="updateType(this)" />
-        <label class="e-btn" for="indicator">Indicator</label>
-    </div>
-    <div class="stepper-section">
-        <ejs-stepper id="stepper">
-            <e-stepper-steps>
-                <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
-                <e-stepper-step label="Delivery Address" iconCss="sf-icon-transport"></e-stepper-step>
-                <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
-                <e-stepper-step label="Confirmation" iconCss="sf-icon-success"></e-stepper-step>
-            </e-stepper-steps>
-        </ejs-stepper>
-    </div>
+<div class="stepper-section"> 
+    @Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).StepChanged("handleStepChange").Render()
+    <div id="paymentStatus" style="margin-top: 50px">Your payment has not started yet</div>
 </div>
 
 <script>
-    function updateType(args) {
+    function handleStepChange() {
         var stepper = document.getElementById('stepper').ej2_instances[0];
-        stepper.stepType = args.value;
+        var stepStatus = stepper.steps[1].status;
+        var statusMap = {
+            'NotStarted': { text: 'Your payment has not started yet', color: '#e74d4d' },
+            'InProgress': { text: 'Processing your payment', color: 'orange' },
+            'Completed': { text: 'Payment successful', color: '#4CAF50' }
+        };
+
+        var currentStatus = document.getElementById("paymentStatus");
+        if (currentStatus) {
+            var { text, color } = statusMap[stepStatus];
+            currentStatus.innerText = text;
+            currentStatus.style.backgroundColor = color;
+        }
     }
 </script>
 
@@ -52,10 +48,6 @@
         content: "\e710";
     }
 
-    .sf-icon-transport:before {
-        content: "\e702";
-    }
-
     .sf-icon-payment:before {
         content: "\e706";
     }
@@ -64,11 +56,22 @@
         content: "\e715";
     }
 
-    #container {
-        text-align:center;
+    #paymentStatus {
+        padding: 10px;
+        background-color: #e74d4d;
+        color: white;
+        border-radius: 5px;
+        margin: 10px auto;
+        text-align: center; 
+        font-weight: bold; 
+        max-width: 350px;
+
     }
 
     .stepper-section {
-        margin: 50px 100px;
+        width: 75%;
+        margin: 0px auto;
+        min-width: 85px;
+        padding: 25px 0;
     }
 </style>

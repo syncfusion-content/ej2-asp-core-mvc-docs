@@ -1,25 +1,6 @@
 @using Syncfusion.EJ2.Navigations
 
-<div id="container">
-    <div class="e-btn-group">
-        <input type="radio" id="linear" name="Linear" value="true" onclick="updateLinear(this)" checked />
-        <label class="e-btn" for="linear">Linear</label>
-        <input type="radio" id="nonLinear" name="Linear" value="false" onclick="updateLinear(this)" />
-        <label class="e-btn" for="nonLinear">Non-Linear</label>
-    </div>
-    <div class="stepper-section">
-        @Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).Linear(true).Render()
-    </div>
-</div>
-
-<script>
-    function updateLinear(args) {
-        var stepper = document.getElementById('stepper').ej2_instances[0];
-        stepper.linear = (/true/).test(args.value) ? true : false;
-        stepper.reset();
-    }
-</script>
-
+@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).Linear(true).Render()
 
 <style>
     @@font-face {
@@ -57,11 +38,4 @@
         content: "\e715";
     }
 
-    #container {
-        text-align:center;
-    }
-
-    .stepper-section {
-        margin: 50px 100px;
-    }
 </style>
