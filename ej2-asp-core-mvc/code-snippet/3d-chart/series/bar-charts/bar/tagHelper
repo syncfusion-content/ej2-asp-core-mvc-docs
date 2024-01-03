@@ -1,0 +1,7 @@
+<ejs-chart3d id="container" wallColor="transparent" enableRotation="true" rotation="7" tilt="10" depth="100">
+    <e-chart3d-primaryxaxis valueType="Category"></e-chart3d-primaryxaxis>
+    <e-chart3d-series-collection>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="country" yName="gold"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Bar"></e-chart3d-series>
+    </e-chart3d-series-collection>
+</ejs-chart3d>
