@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ASP.NET MVC Kanban component
+# Accessibility in ASP.NET Core Kanban component
 
 The Kanban component has been designed, keeping in mind the WAI-ARIA specifications, and applies the WAI-ARIA roles, states, and properties. This component is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 
@@ -117,4 +117,4 @@ The accessibility compliance of the Kanban component is shown in the following s
 
 ## See also
 
-* [Accessibility in Syncfusion ASP.NET MVC components](../common/accessibility)
+* [Accessibility in Syncfusion ASP.NET Core components](../common/accessibility)
