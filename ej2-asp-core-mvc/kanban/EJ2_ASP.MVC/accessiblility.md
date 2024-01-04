@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Accessiblility in Syncfusion ##Platform_Name## Kanban Component
-description: Learn here all about Accessiblility in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
+title: Accessiblility in Syncfusion ##Platform_Name## Kanban Control
+description: Learn here all about Accessiblility in Syncfusion ##Platform_Name## Kanban control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessiblility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ASP.NET MVC Kanban component
+# Accessibility in ASP.NET MVC Kanban control
 
-The Kanban component has been designed, keeping in mind the WAI-ARIA specifications, and applies the WAI-ARIA roles, states, and properties. This component is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
+The Kanban control has been designed, keeping in mind the WAI-ARIA specifications, and applies the WAI-ARIA roles, states, and properties. This control is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 
-The accessibility compliance for the Kanban component is outlined below.
+The accessibility compliance for the Kanban control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -32,28 +32,28 @@ The accessibility compliance for the Kanban component is outlined below.
         margin: 0.5em 0;
     }
 </style>
-![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) - All features of the component meet the requirement.
+![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) - All features of the control meet the requirement.
 
-![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png)  - Some features of the component do not meet the requirement.
+![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png)  - Some features of the control do not meet the requirement.
 
-![No](https://cdn.syncfusion.com/content/images/landing-page/no.png)  - The component does not meet the requirement.
+![No](https://cdn.syncfusion.com/content/images/landing-page/no.png)  - The control does not meet the requirement.
 
 ## WAI-ARIA attributes
 
-The Kanban component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Kanban component:
+The Kanban control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Kanban control:
 
 | Attributes | Purpose |
 | --- | --- |
-| `aria-label` |  It helps to provides information about elements in a kanban component for assistive technology. |
+| `aria-label` |  It helps to provides information about elements in a kanban control for assistive technology. |
 | `aria-expanded` | Attributes indicate the state of a collapsible element. |
-| `aria-selected` | This attribute is assigned to the Kanban component for the selection of elements, and its default value is `false`. The value changes to true when the user selects a Kanban card. |
+| `aria-selected` | This attribute is assigned to the Kanban control for the selection of elements, and its default value is `false`. The value changes to true when the user selects a Kanban card. |
 | `aria-grabbed` | Indicates whether the attribute is set to true. It has been selected for dragging. If this attribute is set to false, the element can be grabbed for a drag-and-drop operation but will not be currently grabbed. |
 | `aria-describedby` | This attribute contains the ID of the Kanban header column to indicate that the attribute establishes an association between the Kanban header column and the Kanban column body. |
-| `aria-roledescription` | This attribute is assigned to the Kanban component and is used to provide alternative descriptions for card elements. |
+| `aria-roledescription` | This attribute is assigned to the Kanban control and is used to provide alternative descriptions for card elements. |
 
 ## Keyboard interaction
 
-The Kanban component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Kanban component.
+The Kanban control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Kanban control.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -109,12 +109,12 @@ Disables all the functionalities in the Kanban board performed using keyboard by
 
 ## Ensuring accessibility
 
-The Kanban component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Kanban control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Kanban component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/kanban.html) in a new window to evaluate the accessibility of the Kanban component with accessibility tools.
+The accessibility compliance of the Kanban control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/kanban.html) in a new window to evaluate the accessibility of the Kanban control with accessibility tools.
 
 {% previewsample "<https://ej2.syncfusion.com/accessibility/kanban.html>" %}
 
 ## See also
 
-* [Accessibility in Syncfusion ASP.NET MVC components](../common/accessibility)
+* [Accessibility in Syncfusion ASP.NET MVC control](../common/accessibility)
