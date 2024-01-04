@@ -10,7 +10,7 @@ documentation: ug
 
 # Steps in ##Platform_Name## Stepper control
 
-The ASP Net Core Stepper allows you to add steps using the `e-stepper-step` tag helper. Each step can be configured with options such as `iconCss`, `text`, `label`, `cssClass` and more.
+The ASP.NET Core Stepper allows you to add steps using the `e-stepper-step` tag helper. Each step can be configured with options such as `iconCss`, `text`, `label`, `cssClass` and more.
 
 ## Adding steps
 

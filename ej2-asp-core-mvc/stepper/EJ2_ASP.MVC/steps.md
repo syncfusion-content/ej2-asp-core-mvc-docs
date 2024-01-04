@@ -10,7 +10,7 @@ documentation: ug
 
 # Steps in ##Platform_Name## Stepper control
 
-The ASP Net MVC Stepper allows you to add steps using the [Steps](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Steps) property. Each step can be configured with options such as `IconCss`, `Text`, `Label`, `CssClass` and more.
+The ASP.NET MVC Stepper allows you to add steps using the [Steps](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Steps) property. Each step can be configured with options such as `IconCss`, `Text`, `Label`, `CssClass` and more.
 
 ## Adding steps
 
