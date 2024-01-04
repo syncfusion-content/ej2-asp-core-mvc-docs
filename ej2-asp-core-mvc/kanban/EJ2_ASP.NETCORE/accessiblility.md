@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ASP.NET MVC Kanban control
+# Accessibility in ASP.NET Core Kanban control
 
 The Kanban control has been designed, keeping in mind the WAI-ARIA specifications, and applies the WAI-ARIA roles, states, and properties. This control is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 
@@ -109,7 +109,7 @@ Disables all the functionalities in the Kanban board performed using keyboard by
 
 ## Ensuring accessibility
 
-The Kanban control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Kanban control accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Kanban control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/kanban.html) in a new window to evaluate the accessibility of the Kanban control with accessibility tools.
 
@@ -117,4 +117,4 @@ The accessibility compliance of the Kanban control is shown in the following sam
 
 ## See also
 
-* [Accessibility in Syncfusion ASP.NET MVC control](../common/accessibility)
+* [Accessibility in Syncfusion ASP.NET Core control](../common/accessibility)
