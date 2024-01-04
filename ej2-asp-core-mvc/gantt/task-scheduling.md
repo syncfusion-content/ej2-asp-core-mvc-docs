@@ -21,7 +21,7 @@ The Gantt control supports three types of mode. They are:
 
 N> The default value of [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) is `Auto`.
 
-## Automatically Scheduled Tasks
+## Automatically scheduled tasks
 
 When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) property is set as `Auto`, the start date and end date of all the tasks in the project will be automatically validated. That is, dates are validated based on various factors such as working time, holidays, weekends and predecessors.
 
@@ -52,7 +52,7 @@ When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 ![Alt text](images/auto-tasks.png)
 
-## Manually Scheduled Tasks
+## Manually scheduled tasks
 
 When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) property is set as `Manual`, the start date and end date of all the tasks in the project will be same as given in the data source. That is, dates are not validated based on various factors such as dependencies between tasks, holidays, weekends, working time. We can restrict this mode in predecessor validation alone. That is, we can automatically validate the dates based on predecessor values by enabling the [`validateManualTasksOnLinking`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ValidateManualTasksOnLinking) property.
 
@@ -114,7 +114,7 @@ When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 ![Alt text](images/custom-tasks.png)
 
-## Unscheduled Tasks
+## Unscheduled tasks
 
 Unscheduled tasks are planned for a project without any definite schedule dates. The Gantt control supports rendering the unscheduled tasks. You can create or update the tasks with anyone of start date, end date, and duration values or none. You can enable or disable the unscheduled tasks by using the [`allowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property. The following images represent the various types of unscheduled tasks in Gantt.
 
@@ -160,7 +160,7 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 N> If the [`allowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property is set to false, then the Gantt control automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
 
-## Working Time Range
+## Working time range
 
 In the Gantt control, working hours in a day for a project can be defined by using the [`dayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property. Based on the working hours, automatic date scheduling and duration validations for a task are performed.
 
@@ -229,3 +229,82 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 
 N> By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
 <br/> In the Gantt control, you can make weekend as working day by setting the [`includeWeekend`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_IncludeWeekend) property to `true`.
+
+## Duration units
+
+In Gantt, the task's duration value can be measured by the following duration units,
+
+* Day
+* Hour
+* Minute
+
+In Gantt, we can define duration unit for whole project by using [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
+
+* Using [`taskFields.durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_DurationUnit_System_String_) property, to map the duration unit data source field.
+* Defining the duration unit value along with the duration field in the data source.
+
+### Mapping the duration unit field
+
+The below code snippet explains the mapping of duration unit data source field to the Gantt control using the [`taskFields.durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_DurationUnit_System_String_) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/durationUnits/durationUnits/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="DurationUnits.cs" %}
+{% include code-snippet/gantt/durationUnits/durationUnits/durationUnits.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/durationUnits/durationUnits/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="DurationUnits.cs" %}
+{% include code-snippet/gantt/durationUnits/durationUnits/durationUnits.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/durationUnits.png)
+
+N> The default value of the [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_DurationUnit_System_String_) property is `day`.
+
+### Defining duration unit along with duration field
+
+Duration units for the tasks can also be defined along with the duration values, the below code snippet explains the duration unit for a task along with duration value,
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/durationUnits/durationUnitswithDuration/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="DurationUnitswithDuration.cs" %}
+{% include code-snippet/gantt/durationUnits/durationUnitswithDuration/durationUnitswithDuration.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/durationUnits/durationUnitswithDuration/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="DurationUnitswithDuration.cs" %}
+{% include code-snippet/gantt/durationUnits/durationUnitswithDuration/durationUnitswithDuration.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/durationUnitswithDuration.png)
+
+N> The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.

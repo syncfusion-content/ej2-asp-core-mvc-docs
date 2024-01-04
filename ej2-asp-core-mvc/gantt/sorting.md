@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sorting
+# Sorting in ##Platform_Name## Gantt Chart Component
 
 Sorting enables you to sort data in the ascending or descending order. To sort a column, click the column header.
 
@@ -175,7 +175,7 @@ During the sort action, the Gantt control triggers two events. The [`ActionBegin
 
 N> The `args.requestType` is the current action name. For example, for sorting the `args.requestType`, value is **sorting**.
 
-## Sorting Custom Columns
+## Sorting custom columns
 
 In Gantt, you can sort custom columns of different types like string, numeric, etc., By adding the custom column in the column collection, you can perform initial sort using the `sortSettings` or you can also sort the column dynamically by a button click.
 
@@ -204,3 +204,11 @@ The following code snippets explains how to achieve this.
 {% endtabs %}
 {% endif %}
 
+
+## Touch interaction
+
+To perform `tap` action on a column header, trigger [`sorting`](sorting/#sorting) operation to the selected column. A popup is displayed for multi-column sorting. To sort multiple columns, tap the popup, and then tap the desired column headers.
+
+The following screenshot shows Gantt touch sorting,
+
+![Multiple Sorting](images/multiple-sorting.png)
