@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Task Dependencies in Gantt
+# Task dependencies in Gantt
 
 Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
 
