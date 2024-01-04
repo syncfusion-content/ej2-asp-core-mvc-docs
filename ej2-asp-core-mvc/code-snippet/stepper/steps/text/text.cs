@@ -1,19 +1,19 @@
 public ActionResult Demo()
 {
-    List<Step> textOnlySteps = new List<Step>();
-    stepperSteps.Add(new Step { Text = "A" });
-    stepperSteps.Add(new Step { Text = "B" });
-    stepperSteps.Add(new Step { Text = "C" });
-    stepperSteps.Add(new Step { Text = "D" });
+    List<Step> textOnly = new List<Step>();
+    textOnly.Add(new Step { Text = "A" });
+    textOnly.Add(new Step { Text = "B" });
+    textOnly.Add(new Step { Text = "C" });
+    textOnly.Add(new Step { Text = "D" });
 
-    List<Step> labelOnlySteps = new List<Step>();
-    stepperSteps.Add(new Step { Label = "Cart" });
-    stepperSteps.Add(new Step { Label = "Delivery Address" });
-    stepperSteps.Add(new Step { Label = "Payment" });
-    stepperSteps.Add(new Step { Label = "Confirmation" });
+    List<Step> labelOnly = new List<Step>();
+    labelOnly.Add(new Step { Label = "Cart" });
+    labelOnly.Add(new Step { Label = "Delivery Address" });
+    labelOnly.Add(new Step { Label = "Payment" });
+    labelOnly.Add(new Step { Label = "Confirmation" });
     
-    ViewBag.labelOnly = labelOnlySteps;
-    ViewBag.textOnly = textOnlySteps;
+    ViewBag.labelOnly = labelOnly;
+    ViewBag.textOnly = textOnly;
     
     return View();
 }

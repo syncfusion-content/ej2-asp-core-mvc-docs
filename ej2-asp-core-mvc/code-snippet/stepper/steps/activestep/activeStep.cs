@@ -1,11 +1,11 @@
 public ActionResult Demo()
 {
-    List<Step> stepperSteps = new List<Step>();
-    stepperSteps.Add(new Step { IconCss = "sf-icon-cart" });
-    stepperSteps.Add(new Step { IconCss = "sf-icon-transport" });
-    stepperSteps.Add(new Step { IconCss = "sf-icon-payment"});
-    stepperSteps.Add(new Step { IconCss = "sf-icon-success" });
-    ViewBag.datasource = stepperSteps;
+    List<Step> iconOnly = new List<Step>();
+    iconOnly.Add(new Step { IconCss = "sf-icon-cart" });
+    iconOnly.Add(new Step { IconCss = "sf-icon-transport" });
+    iconOnly.Add(new Step { IconCss = "sf-icon-payment"});
+    iconOnly.Add(new Step { IconCss = "sf-icon-success" });
+    ViewBag.datasource = iconOnly;
     
     return View();
 }

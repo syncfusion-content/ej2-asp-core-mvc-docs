@@ -2,10 +2,10 @@
 
 <ejs-stepper id="stepper">
     <e-stepper-steps>
-        <e-stepper-step iconCss="sf-icon-cart" cssClass="stepper-customize"></e-stepper-step>
-        <e-stepper-step iconCss="sf-icon-transport"></e-stepper-step>
-        <e-stepper-step iconCss="sf-icon-payment"></e-stepper-step>
-        <e-stepper-step iconCss="sf-icon-success"></e-stepper-step>
+    <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
+    <e-stepper-step label="Delivery Address" iconCss="sf-icon-transport"></e-stepper-step>
+    <e-stepper-step label="Payment" iconCss="sf-icon-payment" cssClass="custom-step" optional=true></e-stepper-step>
+    <e-stepper-step label="Ordered" iconCss="sf-icon-success"></e-stepper-step>
     </e-stepper-steps>
 </ejs-stepper>
 
@@ -45,8 +45,10 @@
         content: "\e715";
     }
     
-    #stepper.e-stepper .e-step-container.stepper-customize .e-step {
-        border-radius: 20%;
-        font-size: 20px;
+    /* Custom styles */
+    #stepper .custom-step .e-step-label-optional {
+        font-style: italic;
+        font-weight: 900;
+        color: #299100;
     }
 </style>

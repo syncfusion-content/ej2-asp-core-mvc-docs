@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Getting Started
+control: Stepper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

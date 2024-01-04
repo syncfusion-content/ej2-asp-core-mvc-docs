@@ -1,20 +1,20 @@
 public ActionResult Demo()
 {
 
-    List<Step> textSteps = new List<Step>();
-    textSteps.Add(new Step { Text = "1" });
-    textSteps.Add(new Step { Text = "2" });
-    textSteps.Add(new Step { Text = "3" });
-    textSteps.Add(new Step { Text = "4" });
+    List<Step> textOnly = new List<Step>();
+    textOnly.Add(new Step { Text = "1" });
+    textOnly.Add(new Step { Text = "2" });
+    textOnly.Add(new Step { Text = "3" });
+    textOnly.Add(new Step { Text = "4" });
 
-    List<Step> stepperSteps = new List<Step>();
-    stepperSteps.Add(new Step {  });
-    stepperSteps.Add(new Step {  });
-    stepperSteps.Add(new Step {  });
-    stepperSteps.Add(new Step {  });
+    List<Step> defaultSteps = new List<Step>();
+    defaultSteps.Add(new Step {  });
+    defaultSteps.Add(new Step {  });
+    defaultSteps.Add(new Step {  });
+    defaultSteps.Add(new Step {  });
     
-    ViewBag.textOnly = textSteps;
-    ViewBag.stepperSteps = stepperSteps;
+    ViewBag.textOnly = textOnly;
+    ViewBag.stepperSteps = defaultSteps;
     
     return View();
 }

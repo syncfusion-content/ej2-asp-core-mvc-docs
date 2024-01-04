@@ -1,12 +1,12 @@
 public ActionResult Demo()
 {
-    List<Step> stepperSteps = new List<Step>();
-    stepperSteps.Add(new Step { Label = "Cart" });
-    stepperSteps.Add(new Step { Label = "Delivery Address" });
-    stepperSteps.Add(new Step { Label = "Payment" });
-    stepperSteps.Add(new Step { Label = "Confirmation" });
+    List<Step> labelOnly = new List<Step>();
+    labelOnly.Add(new Step { Label = "Cart" });
+    labelOnly.Add(new Step { Label = "Delivery Address" });
+    labelOnly.Add(new Step { Label = "Payment" });
+    labelOnly.Add(new Step { Label = "Confirmation" });
     
-    ViewBag.datasource = stepperSteps;
+    ViewBag.datasource = labelOnly;
     
     return View();
 }

@@ -1,12 +1,12 @@
 public ActionResult Demo()
 {
-    List<Step> stepperSteps = new List<Step>();
-    stepperSteps.Add(new Step { });
-    stepperSteps.Add(new Step { });
-    stepperSteps.Add(new Step { });
-    stepperSteps.Add(new Step { });
-    stepperSteps.Add(new Step { });
+    List<Step> defaultStepper = new List<Step>();
+    defaultStepper.Add(new Step { });
+    defaultStepper.Add(new Step { });
+    defaultStepper.Add(new Step { });
+    defaultStepper.Add(new Step { });
+    defaultStepper.Add(new Step { });
 
-    ViewBag.datasource = stepperSteps;
+    ViewBag.datasource = defaultStepper;
     return View();
 }

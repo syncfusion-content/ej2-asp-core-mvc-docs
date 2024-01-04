@@ -38,8 +38,10 @@
         content: "\e715";
     }
     
-    #stepper.e-stepper .e-step-container.stepper-customize .e-step {
-        border-radius: 20%;
-        font-size: 20px;
+    /* Custom styles */
+    #stepper .custom-step .e-step-label-optional {
+        font-style: italic;
+        font-weight: 900;
+        color: #299100;
     }
 </style>

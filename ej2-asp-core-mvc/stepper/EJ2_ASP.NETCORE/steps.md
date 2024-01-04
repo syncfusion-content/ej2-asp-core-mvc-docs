@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Steps in ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about Steps in ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about Steps in ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Getting Started
+control: Stepper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Steps in ##Platform_Name## Stepper control
 
-The JavaScript Stepper allows you to add steps using the [steps](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Steps) property. Each step can be configured with options such as `iconCss`, `text`, `label`, `cssClass` and more.
+The ASP Net Core Stepper allows you to add steps using the `e-stepper-step` tag helper. Each step can be configured with options such as `iconCss`, `text`, `label`, `cssClass` and more.
 
 ## Adding steps
 
