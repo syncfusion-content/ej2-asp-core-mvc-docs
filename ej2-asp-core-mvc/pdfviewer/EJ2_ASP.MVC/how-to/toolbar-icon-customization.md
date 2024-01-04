@@ -165,7 +165,7 @@ The tooltip property is used to set the tooltip text for a toolbar item. Tooltip
 
 The cssClass property is used to apply custom CSS classes to a toolbar item. It allows custom styling of the toolbar item.
 
-### prefix Property
+### Prefix Property
 
 The prefix property is used to set the CSS class or icon that should be added as a prefix to the existing content of the toolbar item.
 
