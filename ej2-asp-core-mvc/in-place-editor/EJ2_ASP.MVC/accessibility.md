@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Splitter Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Inplace editor component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Inplace editor component of Syncfusion Essential JS 2 and more.
+control: Accessibility 
 platform: ej2-asp-core-mvc
-control: Accessibility
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
-The Splitter component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+# Accessibility in ##Platform_Name## Inplace editor component
 
-The accessibility compliance for the Splitter component is outlined below.
+The Inplace editor component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+
+The accessibility compliance for the Inplace editor component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -36,28 +38,22 @@ The accessibility compliance for the Splitter component is outlined below.
 
 <div><img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> - The component does not meet the requirement.</div>
 
+## Keyboard interaction
 
-# Keyboard interaction
-
-You can use the following key shortcuts to access the splitter without interruptions:
+You can use the following key shortcuts to access the Inplace editor without interruptions:
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
-| <kbd>Tab</kbd> | Helps in focusing the splitter on the page and switching between the consecutive splitter bars. |
-| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Helps in focusing the previous splitter bar element on the splitter. |
-| <kbd>Right arrow</kbd> | Helps in moving the active `horizontal` orientated splitter bar to its `Right` side. |
-| <kbd>Left arrow</kbd> | Helps in moving the active `horizontal` orientated splitter bar to its `Left` side. |
-| <kbd>Up arrow</kbd> | Helps in moving the active `vertical` orientated splitter bar to its `Up` side. |
-| <kbd>Down arrow</kbd> | Helps in moving the active `vertical` orientated splitter bar to its `Down` side. |
-| <kbd>Enter</kbd> | Helps to toggle between `expand` and `collapse` actions of the splitter bar when it is active. |
+| <kbd>Tab</kbd> | Helps in focusing the Inplace editor on the page and switching between the consecutive Inplace editor bars. |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Helps in focusing the previous Inplace editor bar element on the Inplace editor. |
 
 ## Ensuring accessibility
 
-The Splitter component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Inplace editor component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Splitter component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/splitter.html) in a new window to evaluate the accessibility of the Splitter component with accessibility tools.
+The accessibility compliance of the Inplace editor component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/inplace-editor.html) in a new window to evaluate the accessibility of the Inplace editor component with accessibility tools.
 
-{% previewsample "https://ej2.syncfusion.com/accessibility/splitter.html" %}
+{% previewsample "https://ej2.syncfusion.com/accessibility/inplace-editor.html" %}
 
 ## See also
 
