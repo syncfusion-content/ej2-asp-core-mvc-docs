@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Navigations
 
-@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).BeforeStepRender("function(args) { beforeStepRenderEvent(args) }").Render()
+@Html.EJS().Stepper("stepper").Steps(ViewBag.DefaultStepper).BeforeStepRender("function(args) { beforeStepRenderEvent(args) }").Render()
 
 <script>
     function beforeStepRenderEvent(args) {

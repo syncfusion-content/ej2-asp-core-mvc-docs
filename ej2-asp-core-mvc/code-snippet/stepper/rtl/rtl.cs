@@ -6,7 +6,7 @@ public ActionResult Demo()
     iconText.Add(new Step { Text = "Payment", IconCss = "sf-icon-payment" });
     iconText.Add(new Step { Text = "Confirmation", IconCss = "sf-icon-success" });
     
-    ViewBag.datasource = iconText;
+    ViewBag.IconText = iconText;
     
     return View();
 }

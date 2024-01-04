@@ -9,7 +9,7 @@ public ActionResult Demo()
 
     var animationSettings = new StepperAnimationSettings { Enable = true, Duration = 2000, Delay = 500 };
 
-    ViewBag.datasource = defaultStepper;
+    ViewBag.default = defaultStepper;
     ViewBag.animation = animationSettings;
     return View();
 }

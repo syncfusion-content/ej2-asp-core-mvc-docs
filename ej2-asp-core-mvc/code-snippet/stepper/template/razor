@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Navigations
 
 <div class="default-stepper-section">
-    @Html.EJS().Stepper("stepperTemplate").Steps(ViewBag.datasource).ActiveStep(1).Template("#template").Render()
+    @Html.EJS().Stepper("stepperTemplate").Steps(ViewBag.IconLabel).ActiveStep(1).Template("#template").Render()
 </div>
 
 <script id="template" type="text/x-jsrender">

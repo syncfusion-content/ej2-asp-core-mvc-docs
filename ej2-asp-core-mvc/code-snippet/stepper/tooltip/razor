@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Navigations
 
-@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).ShowTooltip(true).Render()
+@Html.EJS().Stepper("stepper").Steps(ViewBag.IconLabel).ShowTooltip(true).Render()
 
 
 <style>

@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Navigations
 
-@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).ShowTooltip(true).TooltipTemplate("#tooltip-template").Render()
+@Html.EJS().Stepper("stepper").Steps(ViewBag.TextLabelIcon).ShowTooltip(true).TooltipTemplate("#tooltip-template").Render()
 
 <script id="tooltip-template" type="text/x-jsrender">
     <span class="template-content">

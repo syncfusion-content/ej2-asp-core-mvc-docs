@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Navigations
 
 
-@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).Locale("fr-BE").Render()
+@Html.EJS().Stepper("stepper").Steps(ViewBag.IconLabel).Locale("fr-BE").Render()
 
 <script>
     ej.base.L10n.load({

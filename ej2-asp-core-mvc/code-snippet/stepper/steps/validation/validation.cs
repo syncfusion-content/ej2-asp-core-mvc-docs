@@ -12,8 +12,8 @@ public ActionResult Demo()
     labelSteps.Add(new Step { Label = "Payment", IsValid = false  });
     labelSteps.Add(new Step { Label = "Confirmation" });
 
-    ViewBag.iconSteps = iconSteps;
-    ViewBag.labelSteps = labelSteps;
+    ViewBag.IconSteps = iconSteps;
+    ViewBag.LabelSteps = labelSteps;
     
     return View();
 }

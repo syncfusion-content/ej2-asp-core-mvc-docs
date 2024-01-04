@@ -5,7 +5,7 @@ public ActionResult Demo()
     iconLabel.Add(new Step { Label = "Delivery Address"  IconCss = "sf-icon-transport" });
     iconLabel.Add(new Step { Label = "Payment" IconCss = "sf-icon-payment", CssClass = "custom-step", Optional = true});
     iconLabel.Add(new Step { Label = "Confirmation" IconCss = "sf-icon-success" });
-    ViewBag.datasource = iconLabel;
+    ViewBag.IconLabel = iconLabel;
     
     return View();
 }

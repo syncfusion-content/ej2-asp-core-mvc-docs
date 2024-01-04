@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Navigations
 
 
-@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).Render()
+@Html.EJS().Stepper("stepper").Steps(ViewBag.LabelOnly).Render()
 
 
 <style>

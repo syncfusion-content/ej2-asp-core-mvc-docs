@@ -6,7 +6,7 @@ public ActionResult Demo()
     defaultStepper.Add(new Step { });
     defaultStepper.Add(new Step { });
     defaultStepper.Add(new Step { });
-    ViewBag.datasource = defaultStepper;
+    ViewBag.DefaultStepper = defaultStepper;
     
     return View();
 }

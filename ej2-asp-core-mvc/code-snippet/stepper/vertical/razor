@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Navigations
 
-@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).Orientation(StepperOrientation.Vertical).Render()
+@Html.EJS().Stepper("stepper").Steps(ViewBag.IconOnly).Orientation(StepperOrientation.Vertical).Render()
 
 <style>
     @@font-face {

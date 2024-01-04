@@ -13,8 +13,8 @@ public ActionResult Demo()
     defaultSteps.Add(new Step {  });
     defaultSteps.Add(new Step {  });
     
-    ViewBag.textOnly = textOnly;
-    ViewBag.stepperSteps = defaultSteps;
+    ViewBag.TextOnly = textOnly;
+    ViewBag.StepperSteps = defaultSteps;
     
     return View();
 }

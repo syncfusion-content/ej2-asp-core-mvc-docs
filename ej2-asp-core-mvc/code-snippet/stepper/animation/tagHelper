@@ -1,10 +1,6 @@
 @using Syncfusion.EJ2.Navigations;
 
-@{
-    var animationSettings = new StepperAnimationSettings { Enable = true, Duration = 2000, Delay = 500 };
-}
-
-<ejs-stepper id="stepper" animation=animationSettings>
+<ejs-stepper id="stepper">
     <e-stepper-steps>
         <e-stepper-step></e-stepper-step>
         <e-stepper-step></e-stepper-step>
@@ -12,4 +8,5 @@
         <e-stepper-step></e-stepper-step>
         <e-stepper-step></e-stepper-step>
     </e-stepper-steps>
+    <e-stepper-animation duration=2000 delay=500 enable="true"></e-stepper-animation>
 </ejs-stepper>

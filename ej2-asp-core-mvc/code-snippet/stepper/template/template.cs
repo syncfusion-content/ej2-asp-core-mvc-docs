@@ -5,7 +5,7 @@ public ActionResult Demo()
     iconLabel.Add(new Step { Label = "Presentation", IconCss = "sf-icon-projector" });
     iconLabel.Add(new Step { Label = "Backup", IconCss = "sf-icon-onedrive"});
     
-    ViewBag.datasource = iconLabel;
+    ViewBag.IconLabel = iconLabel;
     
     return View();
 }

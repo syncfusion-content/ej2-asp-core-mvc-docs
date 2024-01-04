@@ -1,3 +1,3 @@
 @using Syncfusion.EJ2.Navigations
 
-@Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).StepType(StepType.Label).Render()
+@Html.EJS().Stepper("stepper").Steps(ViewBag.IconLabel).StepType(StepType.Label).Render()

@@ -6,7 +6,7 @@ public ActionResult Demo()
     labelOnly.Add(new Step { Label = "Payment" });
     labelOnly.Add(new Step { Label = "Confirmation" });
     
-    ViewBag.datasource = labelOnly;
+    ViewBag.LabelOnly = labelOnly;
     
     return View();
 }

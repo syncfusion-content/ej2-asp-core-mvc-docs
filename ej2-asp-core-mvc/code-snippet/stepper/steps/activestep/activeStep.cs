@@ -5,7 +5,7 @@ public ActionResult Demo()
     iconOnly.Add(new Step { IconCss = "sf-icon-transport" });
     iconOnly.Add(new Step { IconCss = "sf-icon-payment"});
     iconOnly.Add(new Step { IconCss = "sf-icon-success" });
-    ViewBag.datasource = iconOnly;
+    ViewBag.IconOnly = iconOnly;
     
     return View();
 }

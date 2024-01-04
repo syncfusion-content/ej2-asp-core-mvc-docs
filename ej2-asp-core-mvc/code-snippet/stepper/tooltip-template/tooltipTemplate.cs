@@ -6,7 +6,7 @@ public ActionResult Demo()
     textLabelIcon.Add(new Step { Text = "Complete your purchase securely", Label = "Payment", IconCss = "sf-icon-payment" });
     textLabelIcon.Add(new Step { Text = "Verify your order details", Label = "Confirmation", IconCss = "sf-icon-success" });
     
-    ViewBag.datasource = textLabelIcon;
+    ViewBag.TextLabelIcon = textLabelIcon;
     
     return View();
 }

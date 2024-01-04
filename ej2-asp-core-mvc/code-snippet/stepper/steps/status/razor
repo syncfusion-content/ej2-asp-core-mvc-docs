@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Navigations
 
 <div class="stepper-section"> 
-    @Html.EJS().Stepper("stepper").Steps(ViewBag.datasource).StepChanged("handleStepChange").Render()
+    @Html.EJS().Stepper("stepper").Steps(ViewBag.IconLabel).StepChanged("handleStepChange").Render()
     <div id="paymentStatus" style="margin-top: 50px">Your payment has not started yet</div>
 </div>
 
