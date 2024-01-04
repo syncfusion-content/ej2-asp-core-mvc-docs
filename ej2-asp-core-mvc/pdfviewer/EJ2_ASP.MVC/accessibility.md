@@ -44,12 +44,19 @@ The accessibility compliance for the PDF Viewer component is outlined below.
 
 | Attributes | Purpose |
 | --- | --- |
-|||
-|||
-|||
-|||
-|||
-|||
+| `aria-disabled`| Indicates whether the PDF Viewer component is in a disabled state or not.|
+| `aria-expanded`| Indicates whether the suggestion list has expanded or not. |
+| `aria-readonly` | Indicates the readonly state of the PDF Viewer element. |
+| `aria-haspopup` | Indicates whether the PDF Viewer input element has a suggestion list or not. |
+| `aria-label` | Indicates the breadcrumb item text. |
+| `aria-labelledby` | Provides a label for the PDF Viewer. Typically, the "aria-labelledby" attribute will contain the id of the element used as the PDF Viewer's title. |
+| `aria-describedby` | This attribute points to the PDF Viewer element describing the one it's set on. |
+| `aria-orientation` | Indicates whether the PDF Viewer element is oriented horizontally or vertically. |
+| `aria-valuetext` | Returns the current text of the PDF Viewer. |
+| `aria-valuemax` | Indicates the Maximum value of the PDF Viewer. |
+| `aria-valuemin` | Indicates the Minimum value of the PDF Viewer. |
+| `aria-valuenow` | Indicates the current value of the PDF Viewer. |
+| `aria-controls` | Attribute is set to the button and it points to the corresponding content. |
 
 ## Keyboard interaction
 
