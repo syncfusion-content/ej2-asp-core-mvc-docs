@@ -16,15 +16,15 @@ The accessibility compliance for the Kanban component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
+| WCAG 2.2 Support | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
 | [Section 508 Support](../common/accessibility#accessibility-standards) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Screen Reader Support](../common/accessibility#screen-reader-support) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Right-To-Left Support](../common/accessibility#right-to-left-support) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Color Contrast](../common/accessibility#color-contrast) | ![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png) |
-| [Mobile Device Support](../common/accessibility#mobile-device-support) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
+| Screen Reader Support | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
+| Right-To-Left Support | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
+| Color Contrast | ![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png) |
+| Mobile Device Support | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
 | [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | ![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png) |
-| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
+| Accessibility Checker Validation | ![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png) |
+| Axe-core Accessibility Validation | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
 
 <style>
     .post .post-content img {
