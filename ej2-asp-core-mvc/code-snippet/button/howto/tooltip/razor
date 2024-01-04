@@ -1,4 +1,4 @@
-@Html.EJS().Button("primarybtn").Title("Primary Button").Content("Button").IsPrimary(true).Render()
+@Html.EJS().Button("primarybtn").HtmlAttributes(ViewBag.Attributes).Content("Button").IsPrimary(true).Render()
 
 <style>
 

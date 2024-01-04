@@ -50,7 +50,7 @@ To enable collaborative editing, inject `CollaborativeEditingHandler` and set th
 {% endtabs %}
 {% endif %}
 
-## Step 2: Configure SignalR to send and receive changes
+### Step 2: Configure SignalR to send and receive changes
 
 To broadcast the changes made and receive changes from remote users, configure SignalR like below.
 
@@ -92,7 +92,7 @@ When opening a document, we need to generate a unique ID for each document. Thes
 {% endtabs %}
 {% endif %}
 
-### Step 5: Broadcast current editing changes to remote users
+### Step 4: Broadcast current editing changes to remote users
 
 Changes made on the client-side need to be sent to the server-side to broadcast them to other connected users. To send the changes made to the server, use the method shown below from the document editor using the `contentChange` event.
 

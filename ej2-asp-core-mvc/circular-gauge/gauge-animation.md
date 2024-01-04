@@ -24,7 +24,10 @@ The animation of the Circular Gauge is demonstrated in the following example.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/circulargauge/gauge-animation/animation/tagHelper %}
+{% include code-snippet/circulargauge/gauge-animation/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Animation.cs" %} 
+{% include code-snippet/circulargauge/gauge-animation/gauge-animation.cs %} 
 {% endhighlight %}
 {% endtabs %}
 
@@ -46,10 +49,10 @@ The animation of the Circular Gauge is demonstrated in the following example.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/circulargauge/gauge-animation/animation/razor %}
+{% include code-snippet/circulargauge/gauge-animation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Animation.cs" %}
-{% include code-snippet/circulargauge/gauge-animation/animation/animation.cs %}
+{% include code-snippet/circulargauge/gauge-animation/gauge-animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
