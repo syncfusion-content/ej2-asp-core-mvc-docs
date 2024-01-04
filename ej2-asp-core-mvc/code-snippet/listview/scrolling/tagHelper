@@ -1,0 +1,54 @@
+<div class="control-section">
+    <div class="grid-container">
+        <div>
+            <h3>Chat</h3>
+            <!-- ListView element -->
+            <ejs-listview id="listview" dataSource="initialData" height="320" width="400" cssClass='e-list-template' template="@template" scroll="onListScrolled">
+    </ejs-listview>
+        </div>
+    </div>
+</div>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        align-items: center;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    /* Optional: Add styling to headings and divs */
+    .grid-container > div {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #f4f4f4;
+    }
+
+    .e-listview{
+        background-color: white;
+    }
+    </style>
+<script>
+    function onListScrolled(args) {
+        var listObj_1 = document.getElementById('listview').ej2_instances[0];
+        var data = listObj_1.dataSource;
+        var itemsPerScroll = 5;
+        var result = [];        
+        if (args.scrollDirection === 'Bottom') {
+            if (args.distanceY < 100) {
+                if (initialData < data.length) {
+                    var startIndex = initialData;
+                    var endIndex = Math.min(initialData + itemsPerScroll, data.length);
+                    result = data.slice(startIndex, endIndex);
+                    listObj_1.addItem(result);
+                    initialData = endIndex;
+                }
+            }
+        }
+    }
+</script>
+
