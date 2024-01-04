@@ -10,33 +10,15 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## Maps Component
 
-Maps provides built-in compliance with the [`WAI-ARIA`](https://www.w3.org/WAI/ARIA/apg/) specifications. The WAI-ARIA accessibility support is achieved through the attribute like `aria-label` in the SVG element. It helps to provide information about elements in a document for assistive technology. This attribute sets the text label with some default description for the following elements in Maps.
+## WAI-ARIA attributes
 
-<!-- markdownlint-disable MD033 -->
-<table>
-<tr>
-<td><b>Element</b></td>
-<td><b>Default description</b></td>
-</tr>
-<tr>
-<td>Maps container</td>
-<td>Specifies the Maps component.</td>
-</tr>
-<tr>
-<td>Maps title</td>
-<td>Specifies the title of the Maps.</td>
-</tr>
-<tr>
-<td>Maps subtitle</td>
-<td>Specifies the sub-title of the Maps.</td>
-</tr>
-<tr>
-<td>Legend title</td>
-<td>Specifies the title of legend in the Maps.</td>
-</tr>
-</table>
+To meet accessibility standards, the Maps component follows to the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns. In the Maps component, the following ARIA attributes are used:
 
-To change this default description, use the `Description` property available in `MapsCommonTitleSettings`, `MapsTitleSettings`, `MapsSubTitleSettings` and `Maps`. It helps the screen reader to read for an assistive purpose.
+| Attributes | Purpose |
+| --- | --- |
+| `role=region` | It specifies the Maps areas that do not support interactive functions like selection and highlight. |
+| `role=button` | It specifies the Maps areas where interactive functions such as selection and highlight are available. |
+| `aria-label` | Provides an accessible name for the Maps container, title, subtitle and legend title. |
 
 ## Keyboard Navigation
 
@@ -54,3 +36,15 @@ Interaction Keys |Description
 <kbd>Down arrow</kbd> |When zoomed in, the map can be scrolled downward.
 <kbd> R </kbd> |When zooming is enabled, reset operation can be performed.
 <kbd>Enter</kbd> |The page can be navigated to the next and previous states in legend. Similarly, the selection can be made while navigating over the shape.
+
+## Ensuring accessibility
+
+The Maps component's accessibility levels are ensured using an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+
+The accessibility compliance of the Maps component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/maps.html) in a new window to evaluate the accessibility of the Maps component with accessibility tools.
+
+{% previewsample "https://ej2.syncfusion.com/accessibility/maps.html" %}
+
+## See also
+
+* [Accessibility in Syncfusion Maps components](../common/accessibility)

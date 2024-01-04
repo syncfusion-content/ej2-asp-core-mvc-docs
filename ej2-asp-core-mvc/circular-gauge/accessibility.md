@@ -11,28 +11,23 @@ documentation: ug
 
 # Accessibility in Circular Gauge Control
 
-Circular gauge provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provides information about elements in a document for assistive technology.
+## WAI-ARIA attributes
 
-**Aria-label:**  Attribute provides the text label with some default description for below elements in gauge.
+The Circular Gauge component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Circular Gauge component:
 
-<!-- markdownlint-disable MD033 -->
-<table>
-<tr>
-<td><b>Element</b></td>
-<td><b>Default description</b></td>
-</tr>
-<tr>
-<td>Pointer</td>
-<td>Reads the pointer value</td>
-</tr>
-<tr>
-<td>Annotation</td>
-<td>Read the annotation description</td>
-</tr>
-<tr>
-<td>Gauge Title</td>
-<td>Reads the gauge title</td>
-</tr>
-</table>
+| Attributes | Purpose |
+| --- | --- |
+| `role=region` | It is specified in the pointer where the interactive drag and drop function is supported to update the pointer value. |
+| `aria-label` | Provides an accessible name for the title. |
 
-You can change this default description, using description property available in [Pointers](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html), [Annotations](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAnnotation.html) and [CircularGauge](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html) object. It helps the screen reader to read for assistive purpose.
+## Ensuring accessibility
+
+The Circular Gauge component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+
+The accessibility compliance of the Circular Gauge component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/circular-gauge.html) in a new window to evaluate the accessibility of the Circular Gauge component with accessibility tools.
+
+{% previewsample "https://ej2.syncfusion.com/accessibility/circular-gauge.html" %}
+
+## See also
+
+* [Accessibility in Syncfusion Circular Gauge components](../common/accessibility)

@@ -11,23 +11,23 @@ documentation: ug
 
 # Accessibility in ASP.NET MVC Linear Gauge
 
-<!-- markdownlint-disable MD013 -->
-Linear Gauge provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. The WAI-ARIA accessibility support is achieved through the attribute like `aria-label` in the SVG element. It helps to provide information about elements in a document for assistive technology. This attribute sets the text label with some default descriptions for the following elements in the Linear Gauge.
+## WAI-ARIA attributes
 
-<!-- markdownlint-disable MD033 -->
-<table>
-<tr>
-<td><b>Element</b></td>
-<td><b>Default description</b></td>
-</tr>
-<tr>
-<td>Gauge title</td>
-<td>Specifies the title of the Linear Gauge.</td>
-</tr>
-<tr>
-<td>Pointer value</td>
-<td>Specifies the value of the pointer in the Linear Gauge.</td>
-</tr>
-</table>
+The Linear Gauge component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Linear Gauge component:
 
-To change this default description, use the [`Description`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Description) property available in [`LinearGaugePointer`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_Description) and [`LinearGauge`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Description). It helps the screen reader to read for an assistive purpose.
+| Attributes | Purpose |
+| --- | --- |
+| `role=region` | It is specified in the pointer where the interactive drag and drop function is supported to update the pointer value. |
+| `aria-label` | Provides an accessible name for the title. |
+
+## Ensuring accessibility
+
+The Linear Gauge component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+
+The accessibility compliance of the Linear Gauge component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/linear-gauge.html) in a new window to evaluate the accessibility of the Linear Gauge component with accessibility tools.
+
+{% previewsample "https://ej2.syncfusion.com/accessibility/linear-gauge.html" %}
+
+## See also
+
+* [Accessibility in Syncfusion Linear Gauge components](../common/accessibility)
