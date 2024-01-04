@@ -8,7 +8,7 @@ namespace WebApplication1.Controllers
 {
     public class ListViewController : Controller
     {
-        public IActionResult grouping()
+        public IActionResult scrolling()
         {  List<object> listdata = new List<object>();
             listdata.Add(new
     {
