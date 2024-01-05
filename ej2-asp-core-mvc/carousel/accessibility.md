@@ -41,7 +41,7 @@ The accessibility compliance for the Carousel component is outlined below.
 
 ## ARIA attributes
 
-The carousel component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/#keyboardinteraction) standard. Carousel is supported with ARIA Accessibility which is accessible by on-screen readers and other assistive technology devices. The following list of attributes is added to the Carousel.
+The carousel component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) standard. Carousel is supported with ARIA Accessibility which is accessible by on-screen readers and other assistive technology devices. The following list of attributes is added to the Carousel.
 
 | **Roles and Attributes** | **Functionalities**                                                                                                                             |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
