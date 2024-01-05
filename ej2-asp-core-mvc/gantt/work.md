@@ -9,7 +9,9 @@ documentation: ug
 ---
 
 
-# Work
+# Work in Gantt component
+
+## Work
 
 The work is the total hours required to complete a task. Work can be mapped from the data source field using the property [`taskFields.work`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Work_System_String_). Work can be measured in `Hour`, `Day`, `Minute`. By default, work is measured in `Hour` and it can be changed, by using the property [`workUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.WorkUnit.html).
 
