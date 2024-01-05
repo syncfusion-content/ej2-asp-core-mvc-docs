@@ -475,6 +475,11 @@ By default, the scheduler will render the overlapping events based on the start 
 
 Appointments can be rescheduled to any time by dragging and dropping them onto the desired location. To work with drag and drop functionality make sure that `allowDragAndDrop` is set to **true** on Scheduler. In mobile mode, you can drag and drop the events by tap holding an event and dropping them on to the desired location.
 
+To get start quickly about drag and drop options available in our Scheduler, you can check on this video:
+
+{% youtube
+"youtube:https://www.youtube.com/watch?v=d8BzAZCwZ5k"%}
+
 N> By default, drag and drop action is applicable on all Scheduler views, except Agenda, Month-Agenda and Year view.
 
 ### Drag and drop multiple appointments
