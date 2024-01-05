@@ -1,8 +1,6 @@
 @using Syncfusion.EJ2.Navigations
 
-<div id="Stepper">
-    @Html.EJS().Stepper("iconWithLabel").Steps(ViewBag.datasource).Render()
-</div>
+@Html.EJS().Stepper("stepper").Steps(ViewBag.IconWithLabel).Render()
 
 <style>
     @@font-face {

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Timeline
+# Timeline 
 
 In the Gantt control, timeline is used to represent the project duration as individual cells with defined unit and formats.
 
@@ -178,3 +178,34 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 
 
 ![Alt text](images/hourMode.png)
+
+## Timeline cells tooltip
+
+In the Gantt control, you can enable or disable the mouse hover tooltip of timeline cells using the [`TimelineSettings.ShowTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineSettings_ShowTooltip) property. The default value of this property is true. The following code example shows how to enable the timeline cells tooltip in Gantt.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/tooltip/timelinecellTooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TimelinecellTooltip.cs" %}
+{% include code-snippet/gantt/tooltip/timelinecellTooltip/timelinecellTooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/tooltip/timelinecellTooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TimelinecellTooltip.cs" %}
+{% include code-snippet/gantt/tooltip/timelinecellTooltip/timelinecellTooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/timelinecellTooltip.png)

@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2.Navigations;
+
+<ejs-stepper id="stepper" created="function(args){ createdEvent(args) }">
+    <e-stepper-steps>
+        <e-stepper-step></e-stepper-step>
+        <e-stepper-step></e-stepper-step>
+        <e-stepper-step></e-stepper-step>
+        <e-stepper-step></e-stepper-step>
+        <e-stepper-step></e-stepper-step>
+    </e-stepper-steps>
+</ejs-stepper>
+
+<script>
+    function createdEvent() {
+        // your required action here..
+    }
+</script>
