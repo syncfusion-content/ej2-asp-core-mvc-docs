@@ -12,7 +12,7 @@ string dropelement = "#drop-content";
             dataSource="@ViewBag.Calendars" query="new ej.data.Query().where('OwnerId', 'equal', 1)"
             textField="OwnerText" idField="OwnerId" colorField="Color"></e-schedule-resource>
     </e-schedule-resources>
-    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource" query="new ej.data.Query().where('OwnerId', 'equal', 1)"></e-schedule-eventsettings>
     <e-schedule-toolbaritems>
         <e-schedule-toolbaritem name="Previous" align="Left"></e-schedule-toolbaritem>
         <e-schedule-toolbaritem name="Next" align="Left"></e-schedule-toolbaritem>
@@ -30,16 +30,11 @@ string dropelement = "#drop-content";
 
 <script type="text/javascript">
     function onResChange(args) {
-        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
-        var resourcePredicate;
         var value = args.value;
-            if (resourcePredicate) {
-                resourcePredicate = resourcePredicate.or(new ej.data.Predicate('OwnerId', 'equal', value));
-            }
-            else {
-                resourcePredicate = new ej.data.Predicate('OwnerId', 'equal', value);
-            }
+        var resourcePredicate;
+        resourcePredicate = new ej.data.Predicate('OwnerId', 'equal', value);
         scheduleObj.resources[0].query = resourcePredicate ? new ej.data.Query().where(resourcePredicate) :
             new ej.data.Query().where('OwnerId', 'equal', 1);
+        scheduleObj.eventSettings.query = new ej.data.Query().where('OwnerId', 'equal', value);
     }
 </script>
