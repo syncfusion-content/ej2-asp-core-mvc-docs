@@ -138,7 +138,7 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](../a
 
 
 
-## Multiple Selection based on condition
+## Multiple selection based on condition
 
 You can select multiple rows based on condition by using the [`selectRows`](../api/grid/#selectrows) method.
 
@@ -170,6 +170,16 @@ In the following code, the rows which contains `TaskId` value as 3 and 4 are sel
 
 
 ![Alt text](images/conditionalSelection.png)
+
+## Touch interaction
+
+When you `tap` gantt row, tapped row will be selected.
+
+[`Single selection`](selection/#selection-mode) : To select a single row or cell, perform `single tap` on it.
+
+[`Multiple selection`](selection/#multiple-row-selection) : To perform multiple selection, `tap` on the multiple selection popup, and then tap the desired rows or cells.
+
+![Multiple selection](../images/multiple-selection.PNG)
 
 ## See Also
 

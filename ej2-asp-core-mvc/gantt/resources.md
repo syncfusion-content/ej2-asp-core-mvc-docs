@@ -75,7 +75,7 @@ GanttDataSource Child1 = new GanttDataSource()
 
 ```
 
-### Assign resource with unit
+### Assign resources with unit
 
 We can assign the quantity of work done by the resources for the specific task as like below code snippet.
 
