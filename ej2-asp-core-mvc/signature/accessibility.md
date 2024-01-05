@@ -55,4 +55,6 @@ The Signature component's accessibility levels are ensured through an [accessibi
 
 The accessibility compliance of the Signature component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/signature.html) in a new window to evaluate the accessibility of the Signature component with accessibility tools.
 
-![Signature Sample](./images/default.PNG)
+## See also
+
+* [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)

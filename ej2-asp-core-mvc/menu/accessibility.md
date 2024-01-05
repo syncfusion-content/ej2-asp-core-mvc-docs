@@ -73,3 +73,7 @@ The Menu component's accessibility levels are ensured through an [accessibility-
 
 The accessibility compliance of the Menu component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/menu.html) in a new window to evaluate the accessibility of the Menu component with accessibility tools.
 
+## See also
+
+* [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)
+

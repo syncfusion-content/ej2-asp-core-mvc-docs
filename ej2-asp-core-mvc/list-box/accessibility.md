@@ -70,3 +70,7 @@ The ListBox component followed the [keyboard interaction](https://www.w3.org/WAI
 The ListBox component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the ListBox component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/list-box.html) in a new window to evaluate the accessibility of the ListBox component with accessibility tools.
+
+## See also
+
+* [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)

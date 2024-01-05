@@ -70,3 +70,7 @@ The Color picker component followed the [keyboard interaction](https://www.w3.or
 The Color picker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Color picker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/color-picker.html) in a new window to evaluate the accessibility of the Color picker component with accessibility tools.
+
+## See also
+
+* [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)

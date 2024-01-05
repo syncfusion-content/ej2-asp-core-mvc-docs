@@ -70,4 +70,8 @@ The Split button component's accessibility levels are ensured through an [access
 
 The accessibility compliance of the Split button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/split-button.html) in a new window to evaluate the accessibility of the Split button component with accessibility tools.
 
+## See also
+
+* [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)
+
 

@@ -60,3 +60,7 @@ The Progress button component followed the [keyboard interaction] guideline, mak
 The Progress button component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Progress button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/progress-button.html) in a new window to evaluate the accessibility of the Progress button component with accessibility tools.
+
+## See also
+
+* [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)

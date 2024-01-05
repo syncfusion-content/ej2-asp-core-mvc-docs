@@ -55,3 +55,7 @@ The Image Editor component followed the keyboard interaction guideline, making i
 The Image Editor component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Image Editor component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/image-editor.html) in a new window to evaluate the accessibility of the Image Editor component with accessibility tools.
+
+## See also
+
+* [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)
