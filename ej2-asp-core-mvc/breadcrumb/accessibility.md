@@ -64,7 +64,3 @@ The Breadcrumb component followed the [keyboard interaction](https://www.w3.org/
 The Breadcrumb component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Breadcrumb component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/breadcrumb.html) in a new window to evaluate the accessibility of the Breadcrumb component with accessibility tools.
-
-## See also
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Breadcrumb/BreadcrumbSamples).
