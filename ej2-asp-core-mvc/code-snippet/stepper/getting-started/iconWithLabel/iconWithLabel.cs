@@ -6,7 +6,7 @@ public ActionResult Demo()
     iconWithLabel.Add(new Step { Label = "Delivery", IconCss = "sf-icon-transport" });
     iconWithLabel.Add(new Step { Label = "Payment", IconCss = "sf-icon-payment"});
     iconWithLabel.Add(new Step { Label = "Ordered", IconCss = "sf-icon-success" });
-    ViewBag.datasource = iconWithLabel;
+    ViewBag.IconWithLabel = iconWithLabel;
     
     return View();
 }

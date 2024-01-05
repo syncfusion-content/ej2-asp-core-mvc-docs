@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2.Navigations;
+
+<ejs-stepper id="stepper" stepType="Label">
+    <e-stepper-steps>
+        <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
+        <e-stepper-step label="Delivery Address" iconCss="sf-icon-transport"></e-stepper-step>
+        <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
+        <e-stepper-step label="Confirmation" iconCss="sf-icon-success"></e-stepper-step>
+    </e-stepper-steps>
+</ejs-stepper>
