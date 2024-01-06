@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Radio Button Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Button Control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in Radio Button Component
+# Accessibility in Button Control
 
-The Radio button component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Button component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Radio button component is outlined below.
+The accessibility compliance for the Button component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,29 +40,26 @@ The accessibility compliance for the Radio button component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Radio button component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/radio/) patterns to meet the accessibility. The following ARIA attributes are used in the Radio button component:
+The Button component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/button/) patterns to meet the accessibility. The following ARIA attributes are used in the Button component:
 
 | Attributes | Purpose |
 | --- | --- |
-| `aria-disabled` | Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable. |
+| `aria-label` | Provides an accessible name for the icon only button. |
 
 ## Keyboard interaction
 
-The Radio button component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/radio/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Radio button component.
+The Button component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/button/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Button component.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>UP/Left arrow</kbd> | Move and select the previous options. |
-| <kbd>Down/Right arrow</kbd> | Move and select the next options. |
+| <kbd>Space</kbd> | When the button has focus, pressing the space key changes the state of the button. |
 
 ## Ensuring accessibility
 
-The Radio button component component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Button component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Radio button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/Radio button.html) in a new window to evaluate the accessibility of the Radio button component with accessibility tools.
+The accessibility compliance of the Button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/button.html) in a new window to evaluate the accessibility of the Button component with accessibility tools.
 
 ## See also
 
 * [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)
-
-
