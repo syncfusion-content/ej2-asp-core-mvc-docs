@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Radio Button Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Query builder control
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Query builder control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in Radio Button Component
+# Accessibility in Query builder control
 
-The Radio button component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Query Builder component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Radio button component is outlined below.
+The accessibility compliance for the Query Builder component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,29 +40,28 @@ The accessibility compliance for the Radio button component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Radio button component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/radio/) patterns to meet the accessibility. The following ARIA attributes are used in the Radio button component:
+WAI-ARIA (Accessibility Initiative – Accessible Rich Internet Applications) defines a way to increase the accessibility of web pages, dynamic content, and user interface components developed with Ajax, HTML, JavaScript, and related technologies. ARIA provides additional semantics to describe the role, state, and functionality of web components.
+
+The following list of ARIA attributes is used in Query Builder.
 
 | Attributes | Purpose |
 | --- | --- |
-| `aria-disabled` | Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable. |
+| `role` | Indicates the query builder component. |
 
 ## Keyboard interaction
 
-The Radio button component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/radio/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Radio button component.
+The Query Builder component followed the keyboard interaction guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Query Builder component.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>UP/Left arrow</kbd> | Move and select the previous options. |
-| <kbd>Down/Right arrow</kbd> | Move and select the next options. |
+| <kbd>Tab / Shift + Tab</kbd> | To focus the next item in the rule. |
 
 ## Ensuring accessibility
 
-The Radio button component component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Query Builder component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Radio button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/Radio button.html) in a new window to evaluate the accessibility of the Radio button component with accessibility tools.
+The accessibility compliance of the Query Builder component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/query-builder.html) in a new window to evaluate the accessibility of the Query Builder component with accessibility tools.
 
 ## See also
 
 * [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)
-
-
