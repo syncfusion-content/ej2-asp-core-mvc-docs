@@ -1,16 +1,14 @@
 @using Syncfusion.EJ2.Navigations;
 
-<div id="stepper">
-    <ejs-stepper id="iconWithLabel">
-        <e-stepper-steps>
-            <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
-            <e-stepper-step label="Address" iconCss="sf-icon-user"></e-stepper-step>
-            <e-stepper-step label="Delivery" iconCss="sf-icon-transport"></e-stepper-step>
-            <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
-            <e-stepper-step label="Ordered" iconCss="sf-icon-success"></e-stepper-step>
-        </e-stepper-steps>
-    </ejs-stepper>
-</div>
+<ejs-stepper id="stepper">
+    <e-stepper-steps>
+        <e-stepper-step label="Cart" iconCss="sf-icon-cart"></e-stepper-step>
+        <e-stepper-step label="Address" iconCss="sf-icon-user"></e-stepper-step>
+        <e-stepper-step label="Delivery" iconCss="sf-icon-transport"></e-stepper-step>
+        <e-stepper-step label="Payment" iconCss="sf-icon-payment"></e-stepper-step>
+        <e-stepper-step label="Ordered" iconCss="sf-icon-success"></e-stepper-step>
+    </e-stepper-steps>
+</ejs-stepper>
 
 <style>
     @@font-face {

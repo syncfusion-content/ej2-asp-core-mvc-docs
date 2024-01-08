@@ -94,26 +94,6 @@ Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdownbutton/getting-started/demo/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="CSHTML.cs" %}
-
-@{
-    ...
-    List<object> items = new List<object>();
-    items.Add(new
-    {
-        text = "Cut"
-    });
-    items.Add(new
-    {
-        text = "Copy"
-    });
-    items.Add(new
-    {
-        text = "Paste"
-    });
-}
-
-{% endhighlight %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core DropDownButton control will be rendered in the default web browser.
