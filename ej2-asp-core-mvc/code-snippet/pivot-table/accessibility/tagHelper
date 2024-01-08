@@ -53,7 +53,6 @@
 </ejs-pivotview>
 
 <script>
-    debugger;
     function saveReport(args) {
         var reports = [];
         var isSaved = false;
