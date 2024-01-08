@@ -241,7 +241,7 @@ The accessibility compliance of the pivot table component is shown in the follow
 {% include code-snippet/pivot-table/accessibility/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/pivot-table/accessibility/DeferUpdate.cs %}
+{% include code-snippet/pivot-table/accessibility/accessibility.cs %}
 {% endhighlight %}
 {% endtabs %}
 
