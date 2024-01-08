@@ -234,34 +234,28 @@ The pivot table component's accessibility levels are ensured through an [accessi
 
 The accessibility compliance of the pivot table component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/pivot-view.html) in a new window to evaluate the accessibility of the pivot table component with accessibility tools.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/accessibility/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class Pivot_Data
-{
-    public string _id { get; set; }
-    public int index { get; set; }
-    public string guid { get; set; }
-    public Boolean isActive { get; set; }
-    public Double balance { get; set; }
-    public int advance { get; set; }
-    public int quantity { get; set; }
-    public int age { get; set; }
-    public string eyeColor { get; set; }
-    public string name { get; set; }
-    public string gender { get; set; }
-    public string company { get; set; }
-    public string email { get; set; }
-    public string phone { get; set; }
-    public string date { get; set; }
-    public string product { get; set; }
-    public string state { get; set; }
-    public string pno { get; set; }
-}
+{% highlight c# tabtitle="Accessibility.cs" %}
+{% include code-snippet/pivot-table/accessibility/DeferUpdate.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/accessibility/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Accessibility.cs" %}
+{% include code-snippet/pivot-table/accessibility/accessibility.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See also
 
