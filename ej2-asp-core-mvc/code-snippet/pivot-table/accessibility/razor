@@ -1,0 +1,161 @@
+@Html.EJS().PivotView("pivotview").Width("100%").Height("450").ShowFieldList(true).ShowGroupingBar(true).AllowExcelExport(true
+).AllowConditionalFormatting(true).AllowNumberFormatting(true).AllowPdfExport(true).AllowGrouping(true).ShowToolbar(true).AllowCalculatedField(true
+).ShowFieldList(true).AllowDeferLayoutUpdate(true).SaveReport("saveReport").LoadReport("loadReport").FetchReport("fetchReport").RenameReport("renameReport"
+).RemoveReport("removeReport").NewReport("newReport").ToolbarRender("beforeToolbarRender").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource(
+    (IEnumerable<object>)ViewBag.Data).ExpandAll(true).EnableSorting(true).AllowLabelFilter(true).AllowValueFilter(true).Rows(rows =>
+    {
+        rows.Name("state").Add();
+        rows.Name("eyeColor").Add();
+    })
+    .Columns(columns =>
+    {
+        columns.Name("gender").Caption("Population").Add();
+        columns.Name("isActive").Add();
+    })
+    .Values(values =>
+    {
+        values.Name("balance").Caption("Balance").Add();
+        values.Name("quantity").Caption("Quantity").Add();
+    })
+    .SortSettings(sortSettings =>
+    {
+        sortSettings.Name("company").Order(Syncfusion.EJ2.PivotView.Sorting.Descending).Add();
+    })
+    .FormatSettings(formatsettings =>
+    {
+        formatsettings.Name("balance").Format("C").Add();
+        formatsettings.Name("date").Format("dd/MM/yyyy-hh:mm").Type("date").Add();
+    })
+    .DrilledMembers(drilledMembers =>
+    {
+        drilledMembers.Name("product").Items(ViewBag.drilledMembersProduct).Add();
+        drilledMembers.Name("gender").Items(ViewBag.drilledMembersGender).Add();
+    })
+    .FilterSettings(filterSettings =>
+    {
+        filterSettings.Name("date").Type(Syncfusion.EJ2.PivotView.FilterType.Date).Condition(Syncfusion.EJ2.PivotView.Operators.Between).Value1("new Date('02/16/2000')").Value2("new Date('02/16/2002')").Add();
+        filterSettings.Name("age").Type(Syncfusion.EJ2.PivotView.FilterType.Number).Condition(Syncfusion.EJ2.PivotView.Operators.Between).Value1("25").Value2("35").Add();
+        filterSettings.Name("eyeColor").Type(Syncfusion.EJ2.PivotView.FilterType.Exclude).Items(ViewBag.filterSettingsEyeColor).Add();
+    }).ConditionalFormatSettings(format =>
+    {
+        format.Measure("balance").Conditions(Syncfusion.EJ2.PivotView.Condition.LessThan).Value1(100000).Style(styles =>
+        {
+            styles.BackgroundColor("#80cbc4").Color("black").FontFamily("Tahoma").FontSize("12px");
+        }
+        ).Add();
+        format.Measure("quantity").Conditions(Syncfusion.EJ2.PivotView.Condition.Between).Value1(10).Value2(20).Style(style =>
+        {
+            style.BackgroundColor("#f48fb1").Color("black").FontFamily("Tahoma").FontSize("12px");
+        }
+        ).Add();
+    })
+).ChartSettings(chartSettings => chartSettings.Value("Amount").EnableExport(true).EnableMultipleAxis(true).ChartSeries(
+    chartSeries => chartSeries.Type(ChartSeriesType.Column).Animation(animation =>
+    {
+        animation.Enable(true);
+    }))
+).DisplayOption(new PivotViewDisplayOption { View = View.Both }).GroupingBarSettings(groupingBarSettings =>
+{
+    groupingBarSettings.AllowDragAndDrop(false);
+}).GridSettings(gridSettings =>
+{
+    gridSettings.ColumnWidth(140).ContextMenuItems(ViewBag.contextMenuItems);
+}).GroupingBarSettings(groupingBarSettings => {
+    groupingBarSettings.ShowFieldsPanel(true);
+}).Toolbar(ViewBag.toolbar).Render();
+
+<script>
+    function saveReport(args) {
+        var reports = [];
+        var isSaved = false;
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reports = JSON.parse(localStorage.pivotviewReports);
+        }
+        if (args.report && args.reportName && args.reportName !== '') {
+            reports.map(function (item) {
+                if (args.reportName === item.reportName) {
+                    item.report = args.report;
+                    isSaved = true;
+                }
+            });
+            if (!isSaved) {
+                reports.push(args);
+            }
+            localStorage.pivotviewReports = JSON.stringify(reports);
+        }
+    }
+    function fetchReport(args) {
+        var reportCollection = [];
+        var reeportList = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item) {
+            reeportList.push(item.reportName);
+        });
+        args.reportName = reeportList;
+    }
+    function loadReport(args) {
+        var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+        var reportCollection = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item) {
+            if (args.reportName === item.reportName) {
+                args.report = item.report;
+            }
+        });
+        if (args.report) {
+            pivotObj.dataSourceSettings = JSON.parse(args.report).dataSourceSettings;
+        }
+    }
+    function removeReport(args) {
+        var reportCollection = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        for (var i = 0; i < reportCollection.length; i++) {
+            if (reportCollection[i].reportName === args.reportName) {
+                reportCollection.splice(i, 1);
+            }
+        }
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            localStorage.pivotviewReports = JSON.stringify(reportCollection);
+        }
+    }
+    function renameReport(args) {
+        var reportCollection = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item) {
+            if (args.reportName === item.reportName) {
+                item.reportName = args.rename;
+            }
+        });
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            localStorage.pivotviewReports = JSON.stringify(reportCollection);
+        }
+    }
+    function newReport() {
+        var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+        pivotObj.setProperties({
+            dataSourceSettings: {
+                columns: [],
+                rows: [],
+                values: [],
+                filters: []
+            }
+        }, false);
+    }
+    function beforeToolbarRender(args) {
+        args.customToolbar.splice(12, 0, {
+            prefixIcon: 'e-tool-expand e-icons', tooltipText: 'Expand/Collapse',
+            click: function (args) {
+                var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
+                pivotTableObj.dataSourceSettings.expandAll = !pivotTableObj.dataSourceSettings.expandAll;
+            },
+        });
+    }
+</script>
