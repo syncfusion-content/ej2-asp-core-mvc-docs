@@ -10,71 +10,64 @@ documentation: ug
 
 # Accessibility
 
-## ARIA attributes
+The Context menu component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. ContextMenu provides built-in compliance with `WAI-ARIA` specifications. `WAI-ARIA` support is achieved through the attributes like `aria-expanded` and `aria-haspopup` applied for menu item in ContextMenu. It helps the people with disabilities by providing information about the widget for assistive technology in the screen readers. ContextMenu component contains the `menu` role and `menuItem` role.
+The accessibility compliance for the Context menu component is outlined below.
 
-| Properties | Functionality |
-| ------------ | ----------------------- |
-| menu | This role will be specified for an item which have sub menu. |
-| menuItem | This role will be specified for an item that do not have sub menus. |
-| aria-haspopup | Indicates the availability and type of interactive popup element. |
-| aria-expanded | Indicates whether the subtree can be expanded or collapsed, as well as indicates whether its current state is expanded or collapsed. |
+| Accessibility Criteria | Compatibility |
+| -- | -- |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support| <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| Color Contrast | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| Mobile Device Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Accessibility Checker](https://www.npmjs.com/package/accessibility-checker) Validation | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Axe-core](https://www.npmjs.com/package/axe-core) Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+
+<style>
+    .post .post-content img {
+        display: inline-block;
+        margin: 0.5em 0;
+    }
+</style>
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> - All features of the component meet the requirement.</div>
+
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> - The component does not meet the requirement.</div>
+
+## WAI-ARIA attributes
+
+The Context menu component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/) patterns to meet the accessibility. The following ARIA attributes are used in the Context menu component:
+
+| Attributes | Purpose |
+| --- | --- |
+| `role` | Indicates Context menu component popup as `menu`, and the popup items as `menuitem`. |
+| `aria-haspopup` | Indicates the availability and type of interactive popup element. |
+| `aria-expanded` | Indicates whether the subtree can be expanded or collapsed, as well as indicates whether its current state is expanded or collapsed. |
+| `aria-label` | Indicates the menu item text. |
 
 ## Keyboard interaction
 
-<!-- markdownlint-disable MD033 -->
-<table>
-<tr>
-<td>
-<b>Keyboard shortcuts</b></td><td>
-<b>Actions</b></td></tr>
-<tr>
-<td>
-<kbd>Esc</kbd></td><td>
-Closes the opened ContextMenu.</td></tr>
-<tr>
-<td>
-<kbd>Enter</kbd></td><td>
-Selects the focused item.</td></tr>
-<tr>
-<td>
-<kbd>Up</kbd></td><td>
-Navigates up or to the previous menu item.</td></tr>
-<tr>
-<td>
-<kbd>Down</kbd></td><td>
-Navigates down or to the next menu item.</td></tr>
-<tr>
-<td>
-<kbd>Left</kbd></td><td>
-Close the current sub menu and navigates to the parent menu.</td></tr>
-<tr>
-<td>
-<kbd>Right</kbd></td><td>
-Navigates and open the next sub menu.</td></tr>
-</table>
+The Context menu component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Context menu component.
 
-{% if page.publishingplatform == "aspnet-core" %}
+| **Press** | **To do this** |
+| --- | --- |
+| <kbd>Esc</kbd> | Closes the opened sub menu. |
+| <kbd>Enter</kbd> | Selects the focused item. |
+| <kbd>Up</kbd> | Navigates up or to the previous menu item. |
+| <kbd>Down</kbd> | Navigates down or to the next menu item. |
+| <kbd>Left</kbd> | Close the current sub menu and navigates to the parent menu. |
+| <kbd>Right</kbd> | Navigates and open the next sub menu. |
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/context-menu/accessibility/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/context-menu/accessibility/accessibility.cs %}
-{% endhighlight %}
-{% endtabs %}
+## Ensuring accessibility
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The Context menu component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/context-menu/accessibility/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/context-menu/accessibility/accessibility.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+The accessibility compliance of the Context menu component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/context-menu.html) in a new window to evaluate the accessibility of the Context menu component with accessibility tools.
 
+## See also
+
+* [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)
