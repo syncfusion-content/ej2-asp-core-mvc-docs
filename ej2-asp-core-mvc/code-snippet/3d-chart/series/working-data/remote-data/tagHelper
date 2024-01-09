@@ -1,0 +1,16 @@
+<ejs-chart3d id="container" wallColor="transparent" enableRotation="true" rotation="7" tilt="10" depth="100">
+    <e-chart3d-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category"
+        labelPlacement="@Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks" labelRotation="-45">
+    </e-chart3d-primaryxaxis>
+    <e-chart3d-series-collection>
+        <e-chart3d-series dataSource="dataManager" xName="CustomerID" yName="Freight"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"></e-chart3d-series>
+    </e-chart3d-series-collection>
+</ejs-chart3d>
+
+<script>
+    var dataManager = new ej.data.DataManager({
+        url: 'https://services.syncfusion.com/aspnet/production/api/orders'
+    });
+    var query = new ej.data.Query().take(5).where('Estimate', 'lessThan', 3, false);
+</script>
