@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Export
+# PDF Export in ASP.NET MVC Gantt Component
 
 ## PDF Export
 
