@@ -1,0 +1,14 @@
+<ejs-chart3d id="container" wallColor="transparent" enableRotation="true" rotation="7" tilt="10" depth="100">
+    <e-chart3d-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category"></e-chart3d-primaryxaxis>
+    <e-chart3d-primaryyaxis interval="25"></e-chart3d-primaryyaxis>
+    <e-chart3d-legendsettings enableHighlight="true">
+    </e-chart3d-legendsettings>
+    <e-chart3d-series-collection>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="General Motors" fill="red"
+            opacity="0.6" type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingColumn100"></e-chart3d-series>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y1" name="Honda" fill="green" opacity="0.6"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingColumn100"></e-chart3d-series>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y2" name="Suzuki" fill="yellow" opacity="0.6"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingColumn100"></e-chart3d-series>
+    </e-chart3d-series-collection>
+</ejs-chart3d>
