@@ -1,0 +1,41 @@
+@(Html.EJS().Chart3D("container").WallColor("transparent").EnableRotation(true).Rotation(7).Tilt(10).Depth(100)
+   .Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("x").
+      YName("y").
+      Name("December 2007").
+      DataSource(ViewBag.dataSource).
+      Add();
+
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("x").
+      YName("y1").
+      Name("December 2008").
+      DataSource(ViewBag.dataSource).
+      Add();
+
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("x").
+      YName("y2").
+      Name("December 2009").
+      DataSource(ViewBag.dataSource).
+      Add();
+
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("x").
+      YName("y3").
+      Name("December 2010").
+      DataSource(ViewBag.dataSource).
+      Add();
+   })
+   .PrimaryXAxis(px => 
+      px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).Title("Countries").Interval(1)
+      .LabelIntersectAction(Syncfusion.EJ2.Charts.LabelIntersectAction.Rotate45)
+   )
+   .PrimaryYAxis(py => 
+      py.Minimum(0).Maximum(90).LabelFormat("{value}%").Title("Penetration (%)")
+   )
+   .Title("FB Penetration of Internet Audience")
+   .LegendSettings(lg => lg.ItemPadding("30").EnablePages(false))
+   .Render())
