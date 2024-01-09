@@ -1,0 +1,13 @@
+<ejs-chart3d id="container" title="Olympic Medals" wallColor="transparent" enableRotation="true" rotation="7" tilt="10"
+    depth="100">
+    <e-chart3d-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category">
+    </e-chart3d-primaryxaxis>
+    <e-chart3d-series-collection>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="country" yName="gold"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column">
+            <e-chart3d-series-datalabel visible=true>
+                <e-chart3ddatalabelsettings-border width="2" color="red"></e-chart3ddatalabelsettings-border>
+            </e-chart3d-series-datalabel>
+        </e-chart3d-series>
+    </e-chart3d-series-collection>
+</ejs-chart3d>

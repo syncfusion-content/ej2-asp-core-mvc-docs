@@ -1,0 +1,9 @@
+<ejs-chart3d id="container" wallColor="transparent" enableRotation="true" rotation="7" tilt="10" depth="100">
+    <e-chart3d-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category"
+        labelIntersectAction="@Syncfusion.EJ2.Charts.LabelIntersectAction.Hide">
+    </e-chart3d-primaryxaxis>
+    <e-chart3d-series-collection>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"></e-chart3d-series>
+    </e-chart3d-series-collection>
+</ejs-chart3d>

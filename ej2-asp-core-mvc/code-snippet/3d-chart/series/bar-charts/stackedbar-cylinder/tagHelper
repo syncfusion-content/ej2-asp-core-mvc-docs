@@ -1,0 +1,17 @@
+<ejs-chart3d id="container" enableRotation="true" rotation="22" depth="100">
+    <e-chart3d-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category"></e-chart3d-primaryxaxis>
+    <e-chart3d-primaryyaxis interval="20"></e-chart3d-primaryyaxis>
+    <e-chart3d-legendsettings enableHighlight="true">
+    </e-chart3d-legendsettings>
+    <e-chart3d-series-collection>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="America"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingBar"
+            columnFacet="@Syncfusion.EJ2.Charts.ShapeType.Cylinder"></e-chart3d-series>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y1" name="Canada"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingBar"
+            columnFacet="@Syncfusion.EJ2.Charts.ShapeType.Cylinder"></e-chart3d-series>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y2" name="France"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingBar"
+            columnFacet="@Syncfusion.EJ2.Charts.ShapeType.Cylinder"></e-chart3d-series>
+    </e-chart3d-series-collection>
+</ejs-chart3d>
