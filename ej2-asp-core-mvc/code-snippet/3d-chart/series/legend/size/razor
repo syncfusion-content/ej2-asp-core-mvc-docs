@@ -1,0 +1,36 @@
+@(Html.EJS().Chart3D("container").WallColor("transparent").EnableRotation(true).Rotation(7).Tilt(10).Depth(100)
+   .Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("country").
+      YName("gold").
+      Name("Gold").
+      LegendShape(Syncfusion.EJ2.Charts.LegendShape.Circle).
+      DataSource(ViewBag.dataSource).
+      Add();
+
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("country").
+      YName("silver").
+      Name("Silver").
+      LegendShape(Syncfusion.EJ2.Charts.LegendShape.Circle).
+      DataSource(ViewBag.dataSource).
+      Add();
+
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("country").
+      YName("bronze").
+      Name("Bronze").
+      LegendShape(Syncfusion.EJ2.Charts.LegendShape.Circle).
+      DataSource(ViewBag.dataSource).
+      Add();
+   })
+   .PrimaryXAxis(px => 
+      px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).Title("Countries")
+   )
+   .PrimaryYAxis(py => 
+      py.Minimum(0).Maximum(80).Interval(20).Title("Medals")
+   )
+   .Title("Olympic Medals")
+   .LegendSettings(lg => lg.Visible(true).Width("500").Height("100").Border(br => br.Width(1).Color("pink")))
+   .Render())

@@ -1,0 +1,36 @@
+@(Html.EJS().Chart3D("container").WallColor("transparent").EnableRotation(true).Rotation(7).Tilt(10).Depth(100)
+   .Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("x").
+      YName("y").
+      Animation(an => an.Enable(false)).
+      Name("Product X").
+      DataSource("series1").
+      Add();
+   })
+   .PrimaryXAxis(px => 
+      px.Title("Years").MaximumLabels(1)
+      .EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift).MajorGridLines(mg => mg.Width(0))
+   )
+   .PrimaryYAxis(py => 
+      py.Title("Profit ($)")
+      .RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.None).MajorTickLines(mg => mg.Width(0))
+   ).Title("Sales History of Product X")
+   .Render())
+
+<script>
+    var series1 = [];
+    var point1;
+    var value = 80;
+    var i;
+    for (i = 1; i < 50; i++) {
+        if (Math.random() > .5) {
+            value += Math.random();
+        } else {
+            value -= Math.random();
+        }
+        point1 = { x: i, y: value.toFixed(1) };
+        series1.push(point1);
+    }
+</script>
