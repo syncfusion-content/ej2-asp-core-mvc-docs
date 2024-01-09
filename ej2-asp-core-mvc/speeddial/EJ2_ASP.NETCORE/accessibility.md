@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn here all about in Syncfusion ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn here all about Accessibility in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
