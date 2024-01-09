@@ -1,0 +1,35 @@
+@(Html.EJS().Chart3D("container").EnableRotation(true).Rotation(22).Depth(100)
+   .Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingBar).  
+      XName("x").
+      YName("y").      
+      Name("America").
+      StackingGroup("JohnAndAndrew").
+      DataSource(ViewBag.dataSource).
+      Add();
+
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingBar).   
+      XName("x").
+      YName("y1").
+      Name("Canada").
+      StackingGroup("JohnAndAndrew").
+      DataSource(ViewBag.dataSource).
+      Add();
+
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.StackingBar).   
+      XName("x").
+      YName("y2").
+      Name("France").
+      StackingGroup("ThomasAndMichael").
+      DataSource(ViewBag.dataSource).
+      Add();
+   })
+   .PrimaryXAxis(px => 
+      px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+   )
+   .PrimaryYAxis(py => 
+      py.Interval(20)
+   )
+   .LegendSettings(leg => leg.EnableHighlight(true))
+   .Render())

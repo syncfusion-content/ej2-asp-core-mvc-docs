@@ -1,0 +1,35 @@
+@(Html.EJS().Chart3D("container").WallColor("transparent").EnableRotation(true).Rotation(7).Tilt(10).Depth(100)
+   .Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("x").
+      YName("y").
+      Name("Germany").
+      DataSource(ViewBag.dataSource).
+      Add();
+
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("x").
+      YName("y1").
+      Name("Japan").
+      YAxisName("yAxis").
+      DataSource(ViewBag.dataSource).
+      Add();
+   })
+   .Rows(rows =>
+   {
+      rows.Height("50%").Add();
+      rows.Height("50%").Add();
+   })
+   .Axes(ax =>
+   {
+      ax.OpposedPosition(true).RowIndex(1).Minimum(24).Maximum(36).Interval(4).Name("yAxis").Title("Temperature (Celsius)").LabelFormat("{value}°C").MajorGridLines(mg => mg.Width(0)).Add();
+   })
+   .PrimaryXAxis(px => 
+      px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).Title("Months").Interval(1)
+   )
+   .PrimaryYAxis(py => 
+      py.Minimum(0).Maximum(90).Interval(20).Title("Temperature (Fahrenheit)").LabelFormat("{value}°F").Span(2)
+   )
+   .Title("Weather Condition")
+   .Render())

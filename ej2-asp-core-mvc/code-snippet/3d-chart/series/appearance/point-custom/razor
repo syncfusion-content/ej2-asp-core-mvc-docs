@@ -1,0 +1,23 @@
+@(Html.EJS().Chart3D("container").WallColor("transparent").EnableRotation(true).Rotation(7).Tilt(10).Depth(100)
+   .Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("country").
+      YName("gold").
+      DataSource(ViewBag.dataSource).
+      Add();
+   })
+   .PrimaryXAxis(px => 
+      px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+   ).Title("Olympic Medals")
+   .PointRender("pointRender")
+   .Render())
+
+<script>
+   var colors = ["#00bdae", "#404041", "#357cd2", "#e56590", "#f8b883",
+      "#70ad47", "#dd8abd", "#7f84e8", "#7bb4eb", "#ea7a57"];
+
+   function pointRender(args) {
+      args.fill = colors[args.point.index];
+   }
+</script>
