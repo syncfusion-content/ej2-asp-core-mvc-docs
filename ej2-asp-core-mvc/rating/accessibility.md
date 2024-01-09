@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Rating Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+description: Checkout and learn here all about Accessibility in ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
