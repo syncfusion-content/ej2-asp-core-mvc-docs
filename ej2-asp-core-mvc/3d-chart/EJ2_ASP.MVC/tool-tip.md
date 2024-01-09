@@ -10,11 +10,11 @@ documentation: ug
 
 # Tooltip in ##Platform_Name## 3D Chart Component
 
-3D Chart will display details about the points through tooltip, when the mouse is moved over the specific point.
+The 3D Chart will display details about the points through tooltip, when the mouse is moved over the specific point.
 
 ## Default tooltip
 
-By default, tooltip is not visible. The tooltip can be enabled by setting [`Enable`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DTooltipSettings.html#Syncfusion_EJ2_Charts_Chart3DTooltipSettings_Enable) property to **true**.
+By default, tooltip is not visible. The tooltip can be enabled by setting the [`Enable`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DTooltipSettings.html#Syncfusion_EJ2_Charts_Chart3DTooltipSettings_Enable) property in `TooltipSettings` to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -72,7 +72,7 @@ By default, tooltip track the mouse movement, but the tooltip can be set in fixe
 
 ## Format the tooltip
 
-By default, tooltip shows information of x and y value in points. In addition to that, more information can be shown in tooltip by using the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DTooltipSettings.html#Syncfusion_EJ2_Charts_Chart3DTooltipSettings_Format) property. For example the format `${series.name} : ${point.y}` shows series name and point x value.
+By default, tooltip shows information of x and y value in points. In addition to that, more information can be shown in tooltip by using the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DTooltipSettings.html#Syncfusion_EJ2_Charts_Chart3DTooltipSettings_Format) property. For example the format `${series.name} : ${point.y}` shows series name and point y value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

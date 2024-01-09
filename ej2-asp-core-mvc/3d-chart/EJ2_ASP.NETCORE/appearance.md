@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Chart Appearance in ##Platform_Name## Syncfusion 3D Chart Component
-description: Learn here all about Chart Appearance in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
+title: Appearance in ##Platform_Name## Syncfusion 3D Chart Component
+description: Learn here all about appearance in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Chart Appearance
+control: Appearance
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Chart appearance in ##Platform_Name## 3D Chart Component
+# Appearance in ##Platform_Name## 3D Chart Component
 
 ## Custom color palette
 
@@ -40,7 +40,7 @@ The default color of series or points can be customized by providing a custom co
 
 ## Data point customization
 
-The color of an individual data point can be customized using the options below.
+The color of an individual data point can be customized using the below options.
 
 ### Point color mapping
 
@@ -106,7 +106,7 @@ The data label and fill color of each data point can be customized using the [`P
 
 **Customize the chart background**
 
-The background color and border of the chart can be customized using the [`Background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Background) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Border) properties.
+The background color and border of the 3D chart can be customized using the [`Background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Background) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Border) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -135,7 +135,7 @@ The background color and border of the chart can be customized using the [`Backg
 
 **Chart margin**
 
-The chart's margin can be set from its container using the [`Margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Margin) property.
+The 3D chart's margin can be set from its container using the [`Margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Margin) property.
 
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -165,7 +165,7 @@ The chart's margin can be set from its container using the [`Margin`](https://he
 
 ## Animation
 
-To customize the animation for a particular series, the [`Animation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DSeries.html#Syncfusion_EJ2_Charts_Chart3DSeries_Animation) property can be used. It can be enabled or disabled by using `Enable` property. The `Duration` property specifies the duration of an animation and `Delay` property allows us to start the animation at desire time.
+To customize the animation for a particular series, the [`Animation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DSeries.html#Syncfusion_EJ2_Charts_Chart3DSeries_Animation) property can be used. It can be enabled or disabled by using the `Enable` property. The `Duration` property specifies the duration of an animation and the `Delay` property allows us to start the animation at desire time.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -194,7 +194,7 @@ To customize the animation for a particular series, the [`Animation`](https://he
 
 ## Chart rotation
 
-Chart can be roatated by using the [`EnableRotation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_EnableRotation) property in the chart.
+The 3D chart can be roatated by using the [`EnableRotation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_EnableRotation) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -220,9 +220,9 @@ Chart can be roatated by using the [`EnableRotation`](https://help.syncfusion.co
 {% endif %}
 
 
-## Chart title
+## Title
 
-Chart can be given a title by using [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Title) property, to show the information about the data plotted.
+The 3D chart can be given a title by using [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Title) property, to show the information about the data plotted.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -251,7 +251,7 @@ Chart can be given a title by using [`Title`](https://help.syncfusion.com/cr/asp
 
 ### Title position
 
-By using the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DTitleSettings.html#Syncfusion_EJ2_Charts_Chart3DTitleSettings_Position) property in [`TitleStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_TitleStyle), the [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Title) can be positioned at left, right, top or bottom of the chart. The title is positioned at the top of the chart, by default.
+By using the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DTitleSettings.html#Syncfusion_EJ2_Charts_Chart3DTitleSettings_Position) property in [`TitleStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_TitleStyle), the [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Title) can be positioned at left, right, top or bottom of the 3D chart. The title is positioned at the top of the 3D chart, by default.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -278,7 +278,7 @@ By using the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 
 
-The custom option is used to position the title anywhere in the chart using [`X`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DTitleSettings.html#Syncfusion_EJ2_Charts_Chart3DTitleSettings_X) and [`Y`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DTitleSettings.html#Syncfusion_EJ2_Charts_Chart3DTitleSettings_Y) coordinates.
+The custom option is used to position the title anywhere in the 3D chart using [`X`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DTitleSettings.html#Syncfusion_EJ2_Charts_Chart3DTitleSettings_X) and [`Y`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DTitleSettings.html#Syncfusion_EJ2_Charts_Chart3DTitleSettings_Y) coordinates.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -307,7 +307,7 @@ The custom option is used to position the title anywhere in the chart using [`X`
 
 ### Title alignment
 
-The title can be aligned to the near, far, or center of the chart by using the [`TextAlignment`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DTitleSettings.html#Syncfusion_EJ2_Charts_Chart3DTitleSettings_TextAlignment) property.
+The title can be aligned to the near, far, or center of the 3D chart by using the [`TextAlignment`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DTitleSettings.html#Syncfusion_EJ2_Charts_Chart3DTitleSettings_TextAlignment) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -336,7 +336,7 @@ The title can be aligned to the near, far, or center of the chart by using the [
 
 ### Title customization
 
-The [`TitleStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_TitleStyle) property of chart title provides options to customize the title by using the following properties.
+The [`TitleStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_TitleStyle) property of the 3D chart provides options to customize the title by using the following properties.
 
 * [`Size`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DTitleSettings.html#Syncfusion_EJ2_Charts_Chart3DTitleSettings_Size) - Specifies the size of the title.
 * [`Color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DTitleSettings.html#Syncfusion_EJ2_Charts_Chart3DTitleSettings_Color) - Specifies the color for the title. 

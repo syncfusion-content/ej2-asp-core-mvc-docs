@@ -11,11 +11,11 @@ documentation: ug
 
 # Legend in ##Platform_Name## 3D Chart Component
 
-Legend provides information about the series rendered in the chart.
+Legend provides information about the series rendered in the 3D chart.
 
 ## Position and alignment
 
-By using the [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_Position) property, the legend can be positioned at left, right, top or bottom of the chart. The legend is positioned at the bottom of the chart, by default.
+By using the [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_Position) property, the legend can be positioned at left, right, top or bottom of the 3D chart. The legend is positioned at the bottom of the 3D chart, by default.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ By using the [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 
 
-Custom position helps you to position the legend anywhere in the chart using X, Y coordinates.
+The custom position helps you to position the legend anywhere in the 3D chart using X and Y coordinates.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -69,7 +69,7 @@ Custom position helps you to position the legend anywhere in the chart using X, 
 
 
 
-**Legend reverse**
+### Legend reverse
 
 The order of the legend items can be reversed by using the [`Reverse`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_Reverse) property. By default, legend for the first series in the collection will be placed first.
 
@@ -98,9 +98,9 @@ The order of the legend items can be reversed by using the [`Reverse`](https://h
 
 
 
-**Legend alignment**
+### Legend alignment
 
-The legend can be aligned at center, far or near to the chart using [`Alignment`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_Alignment) property.
+The legend can be aligned at near, far or center to the 3D chart using the [`Alignment`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_Alignment) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -127,9 +127,9 @@ The legend can be aligned at center, far or near to the chart using [`Alignment`
 
 
 
-## Customization
+## Legend customization
 
-To change the legend icon shape, [`LegendShape`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DSeries.html#Syncfusion_EJ2_Charts_Chart3DSeries_LegendShape) property in the [`Series`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DSeries.html) can be used. By default legend icon shape is `SeriesType`.
+To change the legend icon shape, [`LegendShape`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DSeries.html#Syncfusion_EJ2_Charts_Chart3DSeries_LegendShape) property in the [`Series`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DSeries.html) can be used. By default, the legend icon shape is `SeriesType`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -158,7 +158,7 @@ To change the legend icon shape, [`LegendShape`](https://help.syncfusion.com/cr/
 
 ### Legend size
 
-By default, legend takes 20% - 25% of the chart's height horizontally, when it is placed on top or bottom position and 20% - 25% of the width vertically, while placing on left or right position of the chart. You can change this default legend size by using the [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_Width) and [`Height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_Height) property of the `LegendSettings`.
+By default, legend takes 20% - 25% of the 3D chart's height horizontally, when it is placed on top or bottom position and 20% - 25% of the 3D chart's width vertically, when it is placed on left or right position. You can change this default legend size by using the [`Height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_Height) and [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_Width) properties of the `LegendSettings`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -187,7 +187,7 @@ By default, legend takes 20% - 25% of the chart's height horizontally, when it i
 
 ### Legend item size
 
-The size of the legend items can be customised by using the [`ShapeHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_ShapeHeight) and [`ShapeWidth`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_ShapeWidth) property.
+The size of the legend items can be customised by using the [`ShapeHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_ShapeHeight) and [`ShapeWidth`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_ShapeWidth) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -244,7 +244,7 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 
 ### Legend text wrap
 
-When the legend text exceeds the container, the text can be wrapped by using [`TextWrap`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_TextWrap) Property. End user can also wrap the legend text based on the [`MaximumLabelWidth`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_MaximumLabelWidth) property.
+When the legend text exceeds the container, the text can be wrapped by using the [`TextWrap`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_TextWrap) property. End user can also wrap the legend text based on the [`MaximumLabelWidth`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_MaximumLabelWidth) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -271,9 +271,9 @@ When the legend text exceeds the container, the text can be wrapped by using [`T
 
 
 
-## Series selection on legend
+## Series selection through legend
 
-By default, legend click enables you to collapse the series visibility.  On other hand, if you need to select a series through legend click, disable the [`ToggleVisibility`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_ToggleVisibility).
+By default, you can collapse the series visibility by clicking the legend. On the other hand, turn off the [`ToggleVisibility`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_ToggleVisibility) property if you must use a legend click to choose a series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -331,7 +331,7 @@ By default, series name will be displayed as legend. To skip the legend for a pa
 
 ## Legend title
 
-You can set title for legend using [`Title`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_Title) property in [`LegendSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_LegendSettings). The [`FontStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_FontStyle), [`Size`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_Size), [`FontWeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_FontWeight), [`Color`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_Color), [`TextAlignment`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_TextAlignment), [`FontFamily`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_FontFamily), [`Opacity`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_Opacity) and [`TextOverflow`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_TextOverflow) of legend title can be customized by using the [`TitleStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_TitleStyle) property in [`LegendSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_LegendSettings). [`TitlePosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_TitlePosition) is used to set the legend position in `Top`, `Left` and `Right` position. [`MaximumTitleWidth`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_MaximumTitleWidth) is used to set the width of the legend title. By default, it will be `100px`.
+You can set title for legend using [`Title`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_Title) property in [`LegendSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_LegendSettings). The [`Size`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_Size), [`Color`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_Color), [`Opacity`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_Opacity), [`FontStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_FontStyle), [`FontWeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_FontWeight), [`FontFamily`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_FontFamily), [`TextAlignment`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_TextAlignment), and [`TextOverflow`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DFont.html#Syncfusion_EJ2_Charts_Chart3DFont_TextOverflow) of legend title can be customized by using the [`TitleStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_TitleStyle) property in [`LegendSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_LegendSettings). The [`TitlePosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_TitlePosition) is used to set the legend position in `Top`, `Left` and `Right` position. The [`MaximumTitleWidth`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_MaximumTitleWidth) is used to set the width of the legend title. By default, it will be `100px`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -360,7 +360,7 @@ You can set title for legend using [`Title`](https://help.syncfusion.com/cr/aspn
 
 ## Arrow page navigation
 
-By default, the page number will be enabled while legend paging. Now, the page number can be disabled and also the left and right arrows gets rendered for page navigation. To render the arrow page navigation, the [`EnablePages`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_EnablePages) propert should be set to `false`.
+The page number will always be visible while using legend paging. It is now possible to disable the page number and enable page navigation with the left and right arrows. The [`EnablePages`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_EnablePages) property needs to be set to **false** in order to render the arrow page navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -11,9 +11,7 @@ documentation: ug
 
 # Data labels in ##Platform_Name## 3D Chart Component
 
-Data labels are fields that includes information about the sample point connected to an output.
-
-Data label can be added to a chart series by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DDataLabelSettings.html#Syncfusion_EJ2_Charts_Chart3DDataLabelSettings_Visible) option in the dataLabel. By default, the labels will arrange smartly without overlapping.
+Data labels are fields that includes information about the sample point connected to an output. It can be added to a chart series by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DDataLabelSettings.html#Syncfusion_EJ2_Charts_Chart3DDataLabelSettings_Visible) property in the [`DataLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DSeries.html#Syncfusion_EJ2_Charts_Chart3DSeries_DataLabel). By default, the labels will arrange smartly without overlapping.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,7 +98,7 @@ Label content can be formatted by using the template option. Inside the template
 
 ## Text mapping
 
-Text from the data source can be mapped using [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DDataLabelSettings.html#Syncfusion_EJ2_Charts_Chart3DDataLabelSettings_Name) property.
+Text from the data source can be mapped using the [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DDataLabelSettings.html#Syncfusion_EJ2_Charts_Chart3DDataLabelSettings_Name) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -129,7 +127,7 @@ Text from the data source can be mapped using [`Name`](https://help.syncfusion.c
 
 ## Format
 
-Data label for the chart can be formatted using [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DDataLabelSettings.html#Syncfusion_EJ2_Charts_Chart3DDataLabelSettings_Format) property. The global formatting options can be used as 'n', 'p', and 'c'.
+Data label for the chart can be formatted using the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DDataLabelSettings.html#Syncfusion_EJ2_Charts_Chart3DDataLabelSettings_Format) property. The global formatting options can be used as 'n', 'p', and 'c'.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -215,7 +213,7 @@ Data label for the chart can be formatted using [`Format`](https://help.syncfusi
 
 ## Margin
 
-[`Margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DDataLabelSettings.html#Syncfusion_EJ2_Charts_Chart3DDataLabelSettings_Margin) for data label can be applied by using [`Left`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DMargin.html#Syncfusion_EJ2_Charts_Chart3DMargin_Left), [`Right`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DMargin.html#Syncfusion_EJ2_Charts_Chart3DMargin_Right), [`Bottom`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DMargin.html#Syncfusion_EJ2_Charts_Chart3DMargin_Bottom) and [`Top`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DMargin.html#Syncfusion_EJ2_Charts_Chart3DMargin_Top) properties.
+The [`Margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DDataLabelSettings.html#Syncfusion_EJ2_Charts_Chart3DDataLabelSettings_Margin) for data label can be applied by using [`Left`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DMargin.html#Syncfusion_EJ2_Charts_Chart3DMargin_Left), [`Right`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DMargin.html#Syncfusion_EJ2_Charts_Chart3DMargin_Right), [`Bottom`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DMargin.html#Syncfusion_EJ2_Charts_Chart3DMargin_Bottom) and [`Top`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DMargin.html#Syncfusion_EJ2_Charts_Chart3DMargin_Top) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -271,9 +269,9 @@ The `Stroke` and `Border` of data label can be customized using [`Fill`](https:/
 
 
 
-## Customizing specific point
+## Customizing specific label
 
-Specific label can be customized by using [`TextRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_TextRender) event.  The `TextRender` event allows you to change the text for the point.
+A specific label can be customized by using the [`TextRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_TextRender) event.  The `TextRender` event allows you to change the label text for the point.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

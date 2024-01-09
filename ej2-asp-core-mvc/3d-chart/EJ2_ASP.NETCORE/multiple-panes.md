@@ -11,11 +11,11 @@ documentation: ug
 
 # Multiple panes in ##Platform_Name## 3D Chart Component
 
-Chart area can be divided into multiple panes using [`Rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Rows) and [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Columns).
+The chart area can be divided into multiple panes using [`Rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Rows) and [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Columns).
 
 ## Rows
 
-To split the chart area vertically into number of rows, use [`Rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Rows) property of the chart.
+To split the chart area vertically into number of rows, use [`Rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Rows) property of the 3D chart.
 
 * The space for each row can be allocated by using the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DRow.html#Syncfusion_EJ2_Charts_Chart3DRow_Height) property. The value can be either in percentage or in pixel.
 * To associate a vertical axis to a particular row, specify its index to [`RowIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_RowIndex) property of the axis.
@@ -45,7 +45,7 @@ To split the chart area vertically into number of rows, use [`Rows`](https://hel
 
 
 
-To spanning the vertical axis along multiple rows, use [`Span`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_Span)  property of an axis.
+For spanning the vertical axis along multiple rows, use [`Span`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_Span) property of an axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -74,7 +74,7 @@ To spanning the vertical axis along multiple rows, use [`Span`](https://help.sy
 
 ## Columns
 
-To split the chart area horizontally into number of columns, use [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Columns) property of the chart.
+To split the chart area horizontally into number of columns, use [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Columns) property of the 3D chart.
 
 * The space for each column can be allocated by using the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DColumn.html#Syncfusion_EJ2_Charts_Chart3DColumn_Width) property. The given width can be either in percentage or in pixel.
 * To associate a horizontal axis to a particular column, specify its index to [`ColumnIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_ColumnIndex) property of the axis.

@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Date time axis in ##Platform_Name## 3D Chart Component
-description: Learn here all about date time axis in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
+title: DateTime axis in ##Platform_Name## 3D Chart Component
+description: Learn here all about datetime axis in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Date Time Axis
+control: DateTime Axis
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Date time axis in ##Platform_Name## 3D Chart Component
+# DateTime axis in ##Platform_Name## 3D Chart Component
 
 ## DateTime axis
 
-Date time axis uses date time scale and displays the date time values as axis labels in the specified format.
+DateTime axis uses date time scale and displays the date time values as axis labels in the specified format.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,9 +39,9 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 
 
-## DateTimeCategory axis
+## DateTime category axis
 
-Date-time category axis is used to display the date-time values with non-linear intervals. For example, the business days alone have been depicted in a week here.
+DateTime category axis is used to display the date time values with non-linear intervals. For example, the business days alone have been depicted in a week here.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -70,7 +70,7 @@ Date-time category axis is used to display the date-time values with non-linear 
 
 ### Range
 
-Range of an axis will be calculated automatically based on the provided data, you can also customize the range of the axis using [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_Minimum), [`Maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_Maximum) and [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_Interval) property of the axis.
+Range of an axis will be calculated automatically based on the provided data. You can also customize the range of an axis using [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_Minimum), [`Maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_Maximum) and [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_Interval) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -99,7 +99,7 @@ Range of an axis will be calculated automatically based on the provided data, yo
 
 ### Interval customization
 
-Date time intervals can be customized by using the [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_Interval) and [`IntervalType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_IntervalType) properties of the axis. For example, when you set interval as 2 and intervalType as years, it considers 2 years as interval. Datetime axis supports following interval types,
+Date time intervals can be customized by using the [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_Interval) and [`IntervalType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_IntervalType) properties of the axis. For example, when you set `Interval` as **2** and `IntervalType` as **Years**, it considers 2 years as interval. DateTime axis supports following interval types,
 
 * Auto
 * Years
@@ -136,13 +136,13 @@ Date time intervals can be customized by using the [`Interval`](https://help.syn
 
 **Applying padding to the range**
 
-Padding can be applied to the minimum and maximum extremes of the range by using the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_RangePadding) property. Date time axis supports the following types of padding,
+Padding can be applied to the minimum and maximum extremes of the range by using the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_RangePadding) property. DateTime axis supports the following types of padding,
 
 * None
 * Round
 * Additional
 
-**Datetime - None**
+**DateTime - None**
 
 When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_RangePadding) is set to `None`, minimum and maximum of an axis is based on the data.
 
@@ -171,9 +171,9 @@ When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 
 
-**Datetime - Round**
+**DateTime - Round**
 
-When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_RangePadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value, which is divisible by interval. For example, when the minimum is 15th Jan, interval is 1 and the interval type is ‘month’, then the axis minimum will be Jan 1st.
+When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_RangePadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value, which is divisible by interval. For example, when the minimum is **15th Jan**, interval is **1** and interval type is **Month**, then the axis minimum will be **Jan 1st**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -200,7 +200,7 @@ When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 
 
-**Datetime - Additional**
+**DateTime - Additional**
 
 When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_RangePadding) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
 
@@ -231,7 +231,7 @@ When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 ## Label format
 
-The date can be formatted and parsed to all globalize format using [`LabelFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_LabelFormat) property in an axis.
+The date can be formatted and parsed to all globalize format using the [`LabelFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_LabelFormat) property in an axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -258,7 +258,7 @@ The date can be formatted and parsed to all globalize format using [`LabelForma
 
 
 
-The following table describes the result of applying some common date time formats to the `LabelFormat` property
+The following table describes the result of applying some common date time formats to the `LabelFormat` property.
 
 <!-- markdownlint-disable MD033 -->
 

@@ -10,9 +10,9 @@ documentation: ug
 
 # Selection in ##Platform_Name## 3D Chart Component
 
-Chart provides selection support for the series and its data points on mouse click.
+The 3D chart provides selection support for the series and its data points on mouse click.
 
->When Mouse is clicked on the data points, the corresponding series legend also will be selected.
+>When mouse is clicked on the data points, the corresponding series legend will also be selected.
 
 We have different types of selection mode for selecting a data.
 
@@ -137,9 +137,9 @@ To select multiple points or series, enable the [`IsMultiSelect`](https://help.s
 
 
 
-## Selection on load
+## Selection during initial loading
 
-To select a point or series programmatically on a chart use [`SelectedDataIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_SelectedDataIndexes) property.
+In a 3D chart, selecting a point or series during initial loading can only be done programmatically. The [`SelectedDataIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_SelectedDataIndexes) property can be used for this.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -166,9 +166,9 @@ To select a point or series programmatically on a chart use [`SelectedDataIndexe
 
 
 
-## Selection through on legend
+## Selection through legend
 
-To select a point or series through on legend use [`ToggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_ToggleVisibility) property. Also, use [`EnableHighlight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_EnableHighlight) property for highlighting the series through legend.
+To select a point or series through legend use the [`ToggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_ToggleVisibility) property. Also, use [`EnableHighlight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DLegendSettings.html#Syncfusion_EJ2_Charts_Chart3DLegendSettings_EnableHighlight) property for highlighting the series through legend.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

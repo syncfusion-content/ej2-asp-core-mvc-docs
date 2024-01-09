@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Chart dimensions in ##Platform_Name## 3D Chart Component
-description: Learn here all about chart dimensions in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
+title: Dimensions in ##Platform_Name## 3D Chart Component
+description: Learn here all about dimensions in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Chart Dimensions
+control: Dimensions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Chart dimensions in ##Platform_Name## 3D Chart Component
+# Dimensions in ##Platform_Name## 3D Chart Component
 
 ## Size for container
 
-Chart can be rendered to its container size and it can be set via inline or CSS as demonstrated below.
+The 3D chart can be rendered to its container size and it can be set via inline or CSS as demonstrated below.
 
 ```index.cshtml
     @(Html.EJS().Chart3D("container").Width("650px").Height("350px"))
@@ -47,11 +47,11 @@ Chart can be rendered to its container size and it can be set via inline or CSS 
 
 <!-- markdownlint-disable MD036 -->
 
-The size of the chart can be set directly through [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Width) and [`Height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Height) properties.
+The size of the 3D chart can be set directly through [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Width) and [`Height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3D.html#Syncfusion_EJ2_Charts_Chart3D_Height) properties.
 
 **In pixel**
 
-The size of the chart can be set in pixel as demonstrated below.
+The size of the 3D chart can be set in pixel as demonstrated below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,7 +80,7 @@ The size of the chart can be set in pixel as demonstrated below.
 
 **In percentage**
 
-By setting the value in percentage, chart gets its dimension with respect to its container. For example, when the height is ‘50%’, chart renders to half of the container height.
+By setting the value in percentage, 3D chart gets its dimension with respect to its container. For example, when the height is **50%**, chart renders to half of the container height.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

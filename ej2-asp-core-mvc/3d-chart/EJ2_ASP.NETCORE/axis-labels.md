@@ -17,7 +17,7 @@ Axis labels are the labels that are positioned adjacent to the y-axis and beneat
 
 When the axis labels overlap with each other, [`LabelIntersectAction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_LabelIntersectAction) property in the axis can be used to place them smartly.
 
-When setting `LabelIntersectAction` as `Hide`
+Case 1: When setting `LabelIntersectAction` as `Hide`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,7 +44,7 @@ When setting `LabelIntersectAction` as `Hide`
 
 
 
-When setting `LabelIntersectAction` as `Rotate45`
+Case 2: When setting `LabelIntersectAction` as `Rotate45`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +71,7 @@ When setting `LabelIntersectAction` as `Rotate45`
 
 
 
-When setting `LabelIntersectAction` as `Rotate90`
+Case 3: When setting `LabelIntersectAction` as `Rotate90`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,8 +100,8 @@ When setting `LabelIntersectAction` as `Rotate90`
 
 ## Edge label placement
 
-Labels with long text at the edges of an axis may appear partially in the chart. To avoid this,
-use [`EdgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_EdgeLabelPlacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
+Labels with long text at the edges of an axis may appear partially in the 3D chart. To avoid this,
+use the [`EdgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_EdgeLabelPlacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -130,7 +130,7 @@ use [`EdgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 ## Maximum labels
 
-The labels will be rendered based on the count in the [`MaximumLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_MaximumLabels) property per 100 pixel. If the range (minimum, maximum, interval) and maximumLabels are set, then the priority goes to range. If the range is not set, then it gives priority to maximumLabels property.
+The labels will be rendered based on the count in the [`MaximumLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_MaximumLabels) property per 100 pixel. If the range (minimum, maximum, interval) and `MaximumLabels` are set, then the priority goes to range. If the range is not set, then the priority goes to `MaximumLabels` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

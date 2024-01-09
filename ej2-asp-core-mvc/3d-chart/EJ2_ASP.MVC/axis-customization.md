@@ -11,8 +11,6 @@ documentation: ug
 
 # Axis customization in ##Platform_Name## 3D Chart Component
 
-The following topics shows how to customize the axis.
-
 ## Title
 
 The title for the axis can be added by using the [`Title`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_Title) property. It helps to provide quick information to the user about the data plotted in the axis. Title style can be customized using [`TitleStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_TitleStyle) property of the axis.
@@ -100,7 +98,7 @@ The [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts
 
 ## Grid lines customization
 
-The [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DMajorGridLines.html#Syncfusion_EJ2_Charts_Chart3DMajorGridLines_Width), and [`Color`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DMajorGridLines.html#Syncfusion_EJ2_Charts_Chart3DMajorGridLines_Color) of the minor and major grid lines can be customized by using the [`MajorGridLines`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_MajorGridLines) and [`MinorGridLines`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_MinorGridLines) properties in the axis.
+The [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DMajorGridLines.html#Syncfusion_EJ2_Charts_Chart3DMajorGridLines_Width) and [`Color`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DMajorGridLines.html#Syncfusion_EJ2_Charts_Chart3DMajorGridLines_Color) of the minor and major grid lines can be customized by using the [`MajorGridLines`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_MajorGridLines) and [`MinorGridLines`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_MinorGridLines) properties in the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -158,7 +156,7 @@ In addition to primary X and Y axis, n number of axis can be added to the chart.
 
 ## Inversed axis
 
-When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set the [`IsInversed`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_IsInversed) property to **true**.
+When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner, set the [`IsInversed`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_IsInversed) property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -187,7 +185,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 
 ## Opposed position
 
-To place an axis opposite from its original position, set [`OpposedPosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_OpposedPosition) property to **true**.
+To place an axis opposite from its original position, set the [`OpposedPosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_OpposedPosition) property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
