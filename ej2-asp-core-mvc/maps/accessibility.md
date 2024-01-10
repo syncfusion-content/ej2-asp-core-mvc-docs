@@ -10,6 +10,8 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## Maps Component
 
+Maps has built-in accessibility features like screen reading, keyboard navigation, and WAI-ARIA attributes.
+
 ## WAI-ARIA attributes
 
 To meet accessibility standards, the Maps component follows to the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns. In the Maps component, the following ARIA attributes are used:
@@ -18,7 +20,22 @@ To meet accessibility standards, the Maps component follows to the [WAI-ARIA](ht
 | --- | --- |
 | `role=region` | It specifies the Maps areas that do not support interactive functions like selection and highlight. |
 | `role=button` | It specifies the Maps areas where interactive functions such as selection and highlight are available. |
-| `aria-label` | Provides an accessible name for the Maps container, title, subtitle and legend title. |
+| `aria-label` | Provides an accessible name for the Maps shapes, legend title, legend item label, data label, annotation, marker template and tooltip template. |
+
+## Screen reading in Maps
+
+Accessibility in the Maps component ensures that all users, regardless of ability or disability, can use screen reading. The following Map elements will be read aloud using screen reading software, such as Narrator for Windows.
+
+| Elements | Description |
+| --- | --- |
+| Maps title | Reads the contents of the title set in Maps. |
+| Shapes in the layer | Reads the names of the geographical shapes (such as countries, states, and regions) that appear on the Maps. |
+| Legend title | Reads the contents of the legend's title as specified in Maps. |
+| Legend item label | Reads the label of a legend item in Maps. |
+| Data label | Reads the label specified for the shapes in the Maps layer. |
+| Annotation | Reads the content specified in the annotation. |
+| Marker template | Reads the content provided in the marker template. |
+| Tooltip template | Reads the content provided in the tooltip template. |
 
 ## Keyboard Navigation
 
@@ -42,8 +59,6 @@ Interaction Keys |Description
 The Maps component's accessibility levels are ensured using an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Maps component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/maps.html) in a new window to evaluate the accessibility of the Maps component with accessibility tools.
-
-{% previewsample "https://ej2.syncfusion.com/accessibility/maps.html" %}
 
 ## See also
 
