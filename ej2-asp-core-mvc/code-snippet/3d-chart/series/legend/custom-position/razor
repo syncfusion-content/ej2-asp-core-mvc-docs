@@ -31,5 +31,5 @@
    .Title("Olympic Medals")
    .LegendSettings(lg => lg.Visible(true)
       .Position(Syncfusion.EJ2.Charts.LegendPosition.Custom)
-      .Location(lc => lc.X("200").Y("20")))
+      .Location(lc => lc.X(200).Y(20)))
    .Render())

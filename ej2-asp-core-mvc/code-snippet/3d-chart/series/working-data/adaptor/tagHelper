@@ -3,15 +3,9 @@
         labelPlacement="@Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks" labelRotation="-45">
     </e-chart3d-primaryxaxis>
     <e-chart3d-series-collection>
-        <e-chart3d-series dataSource="dataManager" xName="CustomerID" yName="Freight"
-            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"></e-chart3d-series>
+        <e-chart3d-series xName="CustomerID" yName="Freight" type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"
+            query="new ej.data.Query()"></e-chart3d-series>
     </e-chart3d-series-collection>
+    <e-data-manager url='https://services.syncfusion.com/aspnet/production/api/orders' adaptor="ODataAdaptor">
+    </e-data-manager>
 </ejs-chart3d>
-
-<script>
-    var dataManager = new ej.data.DataManager({
-        url: 'https://services.syncfusion.com/aspnet/production/api/orders',
-        adaptor: new ej.data.ODataAdaptor()
-    });
-    var query = new ej.data.Query();
-</script>

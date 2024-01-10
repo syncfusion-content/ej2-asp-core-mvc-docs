@@ -4,7 +4,6 @@
       series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
       XName("x").
       YName("y").
-      Animation(an => an.Enable(false)).
       Name("Product X").
       DataSource("series1").
       Add();
