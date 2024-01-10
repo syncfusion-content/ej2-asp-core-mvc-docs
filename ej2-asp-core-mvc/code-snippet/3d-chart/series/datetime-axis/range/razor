@@ -9,8 +9,8 @@
    })
    .PrimaryXAxis(px => 
       px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
-      .Minimum(new DateTime(2000, 06, 01))
-      .Maximum(new DateTime(2010, 01, 01))
+      .Minimum(new DateTime(2000, 07, 01))
+      .Maximum(new DateTime(2010, 02, 01))
       .Interval(1)
    )
    .Render())
