@@ -12,6 +12,6 @@
       px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
       .LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks).LabelRotation(-45)
    )
-   .Tooltip(tp => tp.Enable(true).Format("${series.name} ${point.x} : ${point.y}").Fill("#7bb4eb")
+   .Tooltip(tp => tp.Enable(true).Format("${point.x} : ${point.y}").Fill("#7bb4eb")
             .Border(br => br.Width(2).Color("grey")))
    .Render())

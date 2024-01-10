@@ -5,7 +5,8 @@
     <e-chart3d-series-collection>
         <e-chart3d-series dataSource="ViewBag.dataSource" xName="month" yName="sales"
             type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column">
-            <e-chart3d-series-emptypointsettings mode="Gap"></e-chart3d-series-emptypointsettings>
+            <e-chart3d-series-emptypointsettings
+                mode="@Syncfusion.EJ2.Charts.EmptyPointMode.Gap"></e-chart3d-series-emptypointsettings>
         </e-chart3d-series>
     </e-chart3d-series-collection>
 </ejs-chart3d>

@@ -11,7 +11,7 @@
    .PrimaryXAxis(px => 
       px.ValueType(Syncfusion.EJ2.Charts.ValueType.Double)
    )
-   .PrimaryYAxis(px => 
-      px.LabelFormat('c')
+   .PrimaryYAxis(py => 
+      py.LabelFormat("c")
    )
    .Render())

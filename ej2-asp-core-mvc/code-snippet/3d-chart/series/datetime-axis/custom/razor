@@ -11,6 +11,6 @@
       px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
    )
    .PrimaryYAxis(py => 
-      py.labelFormat("${value}K")
+      py.LabelFormat("${value}K")
    )
    .Render())
