@@ -8,6 +8,6 @@
       Add();
    })
    .PrimaryXAxis(px => 
-      px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).labelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.OnTicks)
+      px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.OnTicks)
    ).Title("Olympic Medals")
    .Render())
