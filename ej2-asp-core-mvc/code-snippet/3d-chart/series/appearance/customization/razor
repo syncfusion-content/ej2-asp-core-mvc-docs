@@ -9,5 +9,5 @@
    })
    .PrimaryXAxis(px => 
       px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
-   ).Title("Olympic Medals").TitleStyle(ts => ts.Size("18px").Color("red").TextOverflow("Wrap"))
+   ).Title("Olympic Medals").TitleStyle(ts => ts.Size("18px").Color("red").TextOverflow(Syncfusion.EJ2.Charts.TextOverflow.Wrap))
    .Render())

@@ -37,5 +37,5 @@
       py.Minimum(0).Maximum(90).LabelFormat("{value}%").Title("Penetration (%)")
    )
    .Title("FB Penetration of Internet Audience")
-   .LegendSettings(lg => lg.ItemPadding("30").EnablePages(false))
+   .LegendSettings(lg => lg.ItemPadding(30).EnablePages(false))
    .Render())

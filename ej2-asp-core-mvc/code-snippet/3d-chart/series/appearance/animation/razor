@@ -4,7 +4,7 @@
       series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
       XName("country").
       YName("gold").
-      Animation(an => an.Enable(true).Duration(2000).Delay(200))
+      Animation(an => an.Enable(true).Duration(2000).Delay(200)).
       DataSource(ViewBag.dataSource).
       Add();
    })

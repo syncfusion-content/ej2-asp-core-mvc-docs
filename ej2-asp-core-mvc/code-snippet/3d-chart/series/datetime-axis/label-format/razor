@@ -9,6 +9,6 @@
    })
    .PrimaryXAxis(px => 
       px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
-      .labelFormat("yMd")
+      .LabelFormat("yMd")
    )
    .Render())
