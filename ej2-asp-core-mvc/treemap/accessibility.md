@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## TreeMap component
 
 TreeMap has built-in accessibility features like screen reading and WAI-ARIA attributes.
 
@@ -21,7 +21,7 @@ The TreeMap component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/pat
 | --- | --- |
 | `role=region` | It specifies the TreeMap areas that do not support interactive functions like selection and highlight. |
 | `role=button` | It specifies the TreeMap areas where interactive functions such as selection and highlight are available. |
-| `aria-label` | Provides an accessible name for the TreeMap data labels, legend title and legend item label. |
+| `aria-label` | Provides an accessible name for the data labels, legend title, and legend item labels. |
 
 ## Screen reading in TreeMap
 
@@ -41,4 +41,4 @@ The accessibility compliance of the TreeMap component is shown in the following 
 
 ## See also
 
-* [Accessibility in Syncfusion TreeMap components](../common/accessibility)
+* [Accessibility in ##Platform_Name## components](../common/accessibility)
