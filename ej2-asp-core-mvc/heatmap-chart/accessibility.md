@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ##Platform_Name## HeatMap Chart Component
+# Accessibility in ##Platform_Name## HeatMap chart component
 
 HeatMap has built-in accessibility features like screen reading. Screen reading in the HeatMap component allows all users, regardless of ability or disability, to use the component. The following HeatMap elements will be read aloud with screen reading software like Narrator for Windows.
 
