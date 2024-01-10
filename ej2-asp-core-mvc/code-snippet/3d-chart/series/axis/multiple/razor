@@ -17,5 +17,5 @@
    .PrimaryXAxis(px => 
       px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
    )
-   .Axes(ax => {ax.RowIndex(0).Name("yAxis")})
+   .Axes(ax => {ax.RowIndex(0).Name("yAxis").Add();})
    .Render())
