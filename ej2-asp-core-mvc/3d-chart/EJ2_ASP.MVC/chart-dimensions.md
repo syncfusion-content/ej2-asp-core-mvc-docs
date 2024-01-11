@@ -14,10 +14,6 @@ documentation: ug
 
 The 3D chart can be rendered to its container size and it can be set via inline or CSS as demonstrated below.
 
-```index.cshtml
-    @(Html.EJS().Chart3D("container").Width("650px").Height("350px"))
-```
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

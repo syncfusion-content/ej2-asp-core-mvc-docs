@@ -253,7 +253,7 @@ When the legend text exceeds the container, the text can be wrapped by using the
 {% include code-snippet/3d-chart/series/legend/text-wrap/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text-wrap.cs" %}
-{% include code-snippet/3d-chart/series/legend/text-wrap/text--wrap.cs %}
+{% include code-snippet/3d-chart/series/legend/text-wrap/text-wrap.cs %}
 {% endhighlight %}
 {% endtabs %}
 
