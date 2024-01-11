@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Circular Gauge Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Circular Gauge component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in Circular Gauge Control
+# Accessibility in Circular Gauge component
 
 Circular Gauge has built-in accessibility features like screen reading and WAI-ARIA attributes.
 
@@ -42,4 +42,4 @@ The accessibility compliance of the Circular Gauge component is shown in the fol
 
 ## See also
 
-* [Accessibility in Syncfusion Circular Gauge components](../common/accessibility)
+* [Accessibility in Syncfusion ##Platform_Name## components](../common/accessibility)
