@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Syncfusion ##Platform_Name## Maps Component
+title: Accessibility in Syncfusion ##Platform_Name## Maps component
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ##Platform_Name## Maps Component
+# Accessibility in ##Platform_Name## Maps component
 
 Maps has built-in accessibility features like screen reading, keyboard navigation, and WAI-ARIA attributes.
 
