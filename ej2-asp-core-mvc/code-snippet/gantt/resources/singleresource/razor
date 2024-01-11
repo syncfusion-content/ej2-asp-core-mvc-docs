@@ -1,0 +1,61 @@
+@(Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>
+    )ViewBag.DataSource)
+    .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress")
+    .ResourceInfo("Resources").Child("SubTasks"))
+    .ResourceFields(rf => rf.Id("ResourceId").Name("ResourceName").Unit("ResourceUnit"))
+        .Resources((IEnumerable<object>)ViewBag.projectResources)
+            .Columns(col =>
+            {
+                col.Field("TaskId").Visible(false).Add();
+                col.Field("TaskName").HeaderText("Task Name").Width(180).Add();
+                col.Field("Resources").HeaderText("Resources").Width(160).Add();
+                col.Field("Duration").Width(100).Add();
+            })
+            .LabelSettings(ls => ls.RightLabel("Resources"))
+            .EditSettings(es =>
+                    es.AllowAdding(true).AllowEditing(true).AllowTaskbarEditing(true).AllowDeleting(true))
+            .ActionBegin("actionBegin").ActionComplete("actionComplete")
+            .Render()
+            )
+
+<script type="text/javascript">
+    function actionBegin(args) {
+        if (args.requestType == 'beforeOpenEditDialog' ||
+            args.requestType == 'beforeOpenAddDialog') {
+            args.Resources.columns.splice(0, 1);
+        }
+    }
+    function actionComplete(args) {
+        if (args.requestType == 'openEditDialog' ||
+            args.requestType == 'openAddDialog') {
+            var resources = args.data.ganttProperties.resourceInfo;
+            var tabObj = document.getElementById('Gantt_Tab')['ej2_instances'][0];
+            tabObj.selected = function (args) {
+                if (args.selectedIndex == 1) {
+                    var gridObj = document.getElementById('GanttResourcesTabContainer_gridcontrol')['ej2_instances'][0];
+                    gridObj.selectionSettings =
+                    {
+                        checkboxOnly: false,
+                        type: 'Single',
+                        persistSelection: false,
+                    };
+                    var currentViewData = gridObj.getCurrentViewRecords();
+                    var indexs = [];
+                    if (resources && resources.length > 0) {
+                        currentViewData.forEach(function (data, index) {
+                            for (var i = 0; i < resources.length; i++) {
+                                if (data.taskData['resourceId'] === resources[i]['resourceId'] &&
+                                    !ej.base.isNullOrUndefined(gridObj.selectionModule) &&
+                                    gridObj.getSelectedRowIndexes().indexOf(index) === -1) {
+
+                                    indexs.push(index);
+                                }
+                            }
+                            gridObj.selectRows(indexs);
+                        });
+                    }
+                }
+            };
+        }
+    }
+</script>
