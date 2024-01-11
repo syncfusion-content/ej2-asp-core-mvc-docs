@@ -40,4 +40,4 @@ The accessibility compliance of the Linear Gauge component is shown in the follo
 
 ## See also
 
-* [Accessibility in Syncfusion Linear Gauge components](../common/accessibility)
+* [Accessibility in Syncfusion ASP.NET Core components](../common/accessibility)
