@@ -1,0 +1,16 @@
+@(Html.EJS().Chart3D("container").WallColor("transparent").EnableRotation(true).Rotation(7).Tilt(10).Depth(100)
+   .Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("month").
+      YName("sales").
+      Name("Month").
+      DataSource(ViewBag.dataSource).
+      Add();
+   })
+   .PrimaryXAxis(px => 
+      px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+      .LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks).LabelRotation(-45)
+   )
+   .Tooltip(tp => tp.Enable(true).Header("Unemployment").Format("<b>${series.name} : ${point.y}</b>"))
+   .Render())

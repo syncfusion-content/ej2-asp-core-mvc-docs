@@ -1,0 +1,30 @@
+@(Html.EJS().Chart3D("container").WallColor("transparent").EnableRotation(true).Rotation(7).Tilt(10).Depth(100)
+   .Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("country").
+      YName("gold").
+      Name("Gold").
+      DataSource(ViewBag.dataSource).
+      Add();
+
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("country").
+      YName("silver").
+      Name("Silver").
+      DataSource(ViewBag.dataSource).
+      Add();
+
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("country").
+      YName("bronze").
+      Name("Bronze").
+      DataSource(ViewBag.dataSource).
+      Add();
+   })
+   .PrimaryXAxis(px => 
+      px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+   )
+   .Title("Olympic Medals")
+   .SelectionMode(Syncfusion.EJ2.Charts.Chart3DSelectionMode.Series)
+   .Render())
