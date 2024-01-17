@@ -12,9 +12,9 @@ documentation: ug
 
 # Getting Started with Essential JS 2 for ASP.NET MVC in Visual Studio
 
-This article provides a step-by-step introduction to configure Essential JS 2 setup, build and publish a simple ASP.NET MVC web application using [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
+This article provides a step-by-step introduction to configure Essential JS 2 setup, build and publish a simple ASP.NET MVC web application using [Visual Studio](https://visualstudio.microsoft.com/downloads/).
 
-N> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET MVC application to use the components.
+N> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your ASP.NET MVC application to use the components.
 
 ## Using Visual Studio 2019
 
@@ -206,7 +206,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
     </configuration>
     ```
 
-4. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
+4. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
 
     ```html
     <head>
@@ -319,7 +319,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
     </configuration>
     ```
 
-4. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
+4. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
 
     ```html
     <head>
