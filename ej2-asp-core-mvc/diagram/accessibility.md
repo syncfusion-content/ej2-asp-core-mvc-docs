@@ -17,15 +17,15 @@ The accessibility compliance for the diagram component is outlined below.
 
 | Accessibility Criteria                                                              | Compatibility                                                                        |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| WCAG 2.2 Support                 | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="intermediate"> |
-| Section 508 Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="intermediate"> |
-| Screen Reader Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| Right-To-Left Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> |
-| Color Contrast                            | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| Mobile Device Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="intermediate"> |
-| Accessibility Checker Validation  | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| Axe-core Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| WCAG 2.2 Support                 | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="intermediate"> |
+| Section 508 Support             | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="intermediate"> |
+| Screen Reader Support             | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| Right-To-Left Support             | <img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> |
+| Color Contrast                            | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| Mobile Device Support             | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="intermediate"> |
+| Accessibility Checker Validation  | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| Axe-core Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 
 <style>
     .post .post-content img {
@@ -33,11 +33,11 @@ The accessibility compliance for the diagram component is outlined below.
         margin: 0.5em 0;
     }
 </style>
-<div><img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> - All features of the component meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> - The component does not meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
 ## WAI-ARIA attributes
 
