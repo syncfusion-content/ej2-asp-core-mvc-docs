@@ -37,3 +37,9 @@ In the following demo, employee **Davolio** is doing testing from 9.00 A.M. to 1
 {% endtabs %}
 {% endif %}
 
+## Limitations
+
+* Column spanning is not compatible with the following features:
+    1. Virtual scrolling
+    2. Infinite scrolling
+    3. Lazy load grouping
