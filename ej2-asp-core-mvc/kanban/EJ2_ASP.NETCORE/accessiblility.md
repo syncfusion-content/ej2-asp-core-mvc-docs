@@ -16,15 +16,15 @@ The accessibility compliance for the Kanban control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| WCAG 2.2 Support | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Section 508 Support](../common/accessibility#accessibility-standards) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| Screen Reader Support | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| Right-To-Left Support | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| Color Contrast | ![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png) |
-| Mobile Device Support | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| Accessibility Checker Validation | ![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png) |
-| Axe-core Accessibility Validation | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
+| WCAG 2.2 Support | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| [Section 508 Support](../common/accessibility#accessibility-standards) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| Screen Reader Support | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| Right-To-Left Support | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| Color Contrast | ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) |
+| Mobile Device Support | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| Accessibility Checker Validation | ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) |
+| Axe-core Accessibility Validation | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
 
 <style>
     .post .post-content img {
@@ -32,11 +32,11 @@ The accessibility compliance for the Kanban control is outlined below.
         margin: 0.5em 0;
     }
 </style>
-![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) - All features of the control meet the requirement.
+![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) - All features of the control meet the requirement.
 
-![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png)  - Some features of the control do not meet the requirement.
+![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png)  - Some features of the control do not meet the requirement.
 
-![No](https://cdn.syncfusion.com/content/images/landing-page/no.png)  - The control does not meet the requirement.
+![No](https://cdn.syncfusion.com/content/images/documentation/not-supported.png)  - The control does not meet the requirement.
 
 ## WAI-ARIA attributes
 
