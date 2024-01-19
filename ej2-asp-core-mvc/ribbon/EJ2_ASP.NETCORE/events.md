@@ -59,7 +59,7 @@ The [tabSelected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 
 <script>
 
-    function tabSelectedEvent(TabSelectedEventArgs args) {
+    function tabSelectedEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -115,7 +115,7 @@ The [`tabSelecting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 <script>
 
-    function tabSelectingEvent(TabSelectingEventArgs args) {
+    function tabSelectingEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -156,7 +156,7 @@ The [ribbonCollapsing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 <script>
 
-    function ribbonCollapsingEvent(ExpandCollapseEventArgs args) {
+    function ribbonCollapsingEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -197,7 +197,7 @@ The [ribbonExpanding](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 <script>
 
-    function ribbonExpandingEvent(ExpandCollapseEventArgs args) {
+    function ribbonExpandingEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -238,7 +238,7 @@ The [launcherIconClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 
 <script>
 
-    function launcherIconClickEvent(LauncherClickEventArgs args) {
+    function launcherIconClickEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -531,7 +531,7 @@ The [open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.R
 
 <script>
 
-    function openEvent(OpenEventArgs args) {
+    function openEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -572,7 +572,7 @@ The [select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 <script>
 
-    function selectEvent(ColorPickerEventArgs args) {
+    function selectEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -613,7 +613,7 @@ The [beforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 
 <script>
 
-    function beforeCloseEvent(BeforeOpenCloseEventArgs args) {
+    function beforeCloseEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -654,7 +654,7 @@ The [beforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ri
 
 <script>
 
-    function beforeOpenEvent(BeforeOpenCloseEventArgs args) {
+    function beforeOpenEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -695,7 +695,7 @@ The [beforeTileRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 <script>
 
-    function beforeTileRenderEvent(PaletteTileEventArgs args) {
+    function beforeTileRenderEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -787,7 +787,7 @@ The [close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.
 
 <script>
 
-    function closeEvent(PopupEventArgs args) {
+    function closeEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -832,7 +832,7 @@ The [open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.R
 
 <script>
 
-    function openEvent(PopupEventArgs args) {
+    function openEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -922,7 +922,7 @@ The [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Rib
 
 <script>
 
-    function filteringEvent(FilteringEventArgs args) {
+    function filteringEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -967,7 +967,7 @@ The [select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 <script>
 
-    function selectEvent(SelectEventArgs args) {
+    function selectEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1012,7 +1012,7 @@ The [beforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ri
 
 <script>
 
-    function beforeOpenEvent(BeforeOpenEventArgs args) {
+    function beforeOpenEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1059,7 +1059,7 @@ The [beforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 
 <script>
 
-    function beforeCloseEvent(BeforeOpenCloseMenuEventArgs args) {
+    function beforeCloseEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1104,7 +1104,7 @@ The [beforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ri
 
 <script>
 
-    function beforeOpenEvent(BeforeOpenCloseMenuEventArgs args) {
+    function beforeOpenEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1149,7 +1149,7 @@ The [beforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 <script>
 
-    function beforeItemRenderEvent(MenuEventArgs args) {
+    function beforeItemRenderEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1194,7 +1194,7 @@ The [open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.R
 
 <script>
 
-    function openEvent(OpenCloseMenuEventArgs args) {
+    function openEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1239,7 +1239,7 @@ The [close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.
 
 <script>
 
-    function closeEvent(OpenCloseMenuEventArgs args) {
+    function closeEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1329,7 +1329,7 @@ The [select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 <script>
 
-    function selectEvent(MenuEventArgs args) {
+    function selectEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1376,7 +1376,7 @@ The [beforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 
 <script>
 
-    function beforeCloseEvent(BeforeOpenCloseMenuEventArgs args) {
+    function beforeCloseEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1421,7 +1421,7 @@ The [beforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ri
 
 <script>
 
-    function beforeOpenEvent(BeforeOpenCloseMenuEventArgs args) {
+    function beforeOpenEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1466,7 +1466,7 @@ The [beforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 <script>
 
-    function beforeItemRenderEvent(MenuEventArgs args) {
+    function beforeItemRenderEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1511,7 +1511,7 @@ The [open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.R
 
 <script>
 
-    function openEvent(OpenCloseMenuEventArgs args) {
+    function openEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1556,7 +1556,7 @@ The [close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.
 
 <script>
 
-    function closeEvent(OpenCloseMenuEventArgs args) {
+    function closeEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1646,7 +1646,7 @@ The [select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 <script>
 
-    function selectEvent(MenuEventArgs args) {
+    function selectEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1846,7 +1846,7 @@ The [beforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 
 <script>
 
-    function beforeCloseEvent(FileMenuBeforeOpenCloseEventArgs args) {
+    function beforeCloseEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1897,7 +1897,7 @@ The [beforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ri
 
 <script>
 
-    function beforeOpenEvent(FileMenuBeforeOpenCloseEventArgs args) {
+    function beforeOpenEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1948,7 +1948,7 @@ The [beforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 <script>
 
-    function beforeItemRenderEvent(FileMenuEventArgs args) {
+    function beforeItemRenderEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -1999,7 +1999,7 @@ The [open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.F
 
 <script>
 
-    function openEvent(FileMenuOpenCloseEventArgs args) {
+    function openEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -2050,7 +2050,7 @@ The [close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.
 
 <script>
 
-    function closeEvent(FileMenuOpenCloseEventArgs args) {
+    function closeEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -2101,7 +2101,7 @@ The [select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 
 <script>
 
-    function selectEvent(FileMenuEventArgs args) {
+    function selectEvent(args) {
         // Here, you can customize your code.
     }
 
@@ -2152,7 +2152,7 @@ The [BackStageItemClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 
 <script>
 
-    function backStageItemClickEvent(BackstageItemClickArgs args) {
+    function backStageItemClickEvent(args) {
         // Here, you can customize your code.
     }
 
