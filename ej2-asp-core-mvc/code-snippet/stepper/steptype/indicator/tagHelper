@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.Navigations;
+
+<ejs-stepper id="stepper" stepType="Indicator">
+    <e-stepper-steps>
+        <e-stepper-step></e-stepper-step>
+        <e-stepper-step></e-stepper-step>
+        <e-stepper-step></e-stepper-step>
+        <e-stepper-step></e-stepper-step>
+    </e-stepper-steps>
+</ejs-stepper>
+
+<ejs-stepper id="textStepper" stepType="Indicator">
+    <e-stepper-steps>
+        <e-stepper-step text="1"></e-stepper-step>
+        <e-stepper-step text="2"></e-stepper-step>
+        <e-stepper-step text="3"></e-stepper-step>
+        <e-stepper-step text="4"></e-stepper-step>
+    </e-stepper-steps>
+</ejs-stepper>

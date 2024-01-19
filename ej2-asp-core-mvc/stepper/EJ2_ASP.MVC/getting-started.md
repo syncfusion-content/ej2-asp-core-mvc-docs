@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Getting Started
+control: Stepper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -59,7 +59,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
     <!-- Syncfusion ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
@@ -108,13 +108,13 @@ You can define steps by setting the `Steps` property.
 {% include code-snippet/stepper/getting-started/demo/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/stepper/getting-started/demo/default.cs %}
+{% include code-snippet/stepper/getting-started/demo/demo.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Stepper control will be rendered in the default web browser.
 
-![ASP.NET MVC Stepper Control](images/stepper-control.png)
+![ASP.NET MVC Stepper Control](images/stepper-gettingstarted.jpg)
 
 ## Configure icon and label
 
@@ -124,9 +124,9 @@ You can define the step icon and label by setting the `IconCss` and `Label` prop
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/stepper/getting-started/iconWithLabel/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/stepper/getting-started/iconWithLabel/default.cs %}
+{% highlight c# tabtitle="IconWithLabel.cs" %}
+{% include code-snippet/stepper/getting-started/iconWithLabel/iconWithLabel.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Stepper Icon and Label](images/stepper-icon-label.png)
+![ASP.NET MVC Stepper Icon and Label](images/stepper-iconLabel.jpg)

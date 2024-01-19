@@ -1,0 +1,35 @@
+<ejs-chart3d id="container" title="Sales History of Product X" wallColor="transparent" enableRotation="true"
+    rotation="7" tilt="10" depth="100" load="load">
+    <e-chart3d-primaryxaxis title="Years" maximumLabels="1"
+        edgeLabelPlacement="@Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart3d-primaryxaxis>
+    <e-chart3d-primaryyaxis title="Profit ($)" rangePadding="@Syncfusion.EJ2.Charts.ChartRangePadding.None">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart3d-primaryyaxis>
+    <e-chart3d-series-collection>
+        <e-chart3d-series xName="x" yName="y" name="Product X"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column">
+        </e-chart3d-series>
+    </e-chart3d-series-collection>
+</ejs-chart3d>
+
+<script>
+    var series1 = [];
+    var point1;
+    var value = 80;
+    var i;
+    for (i = 1; i < 50; i++) {
+        if (Math.random() > .5) {
+            value += Math.random();
+        } else {
+            value -= Math.random();
+        }
+        point1 = { x: i, y: value.toFixed(1) };
+        series1.push(point1);
+    }
+
+    function load(args) {
+        args.chart.series[0].dataSource = series1;
+    }
+</script>
