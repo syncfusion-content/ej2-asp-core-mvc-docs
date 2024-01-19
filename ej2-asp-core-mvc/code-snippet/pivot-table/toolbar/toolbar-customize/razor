@@ -28,7 +28,7 @@
     function beforeToolbarRender(args) {
        args.customToolbar.splice(12, 0, {
                 prefixIcon: 'e-tool-expand e-icons', tooltipText: 'Expand/Collapse',
-                click: function (args: ClickEventArgs) {
+                click: function (args) {
                     var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
                     pivotTableObj.dataSourceSettings.expandAll = !pivotTableObj.dataSourceSettings.expandAll;
                 },

@@ -47,13 +47,13 @@
     function beforeToolbarRender(args) {
         args.customToolbar.splice(2, 0, {
             prefixIcon: 'e-rename-report e-icons', tooltipText: 'Custom Button',
-            click: function (args: ClickEventArgs) {
+            click: function (args) {
                 // Here you can customize the click event for custom button
             },
         });
         args.customToolbar.splice(3, 0, {
             prefixIcon: 'e-tool-expand e-icons', tooltipText: 'Expand/Collapse',
-                click: function (args: ClickEventArgs) {
+                click: function (args) {
                     var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
                     pivotTableObj.dataSourceSettings.expandAll = !pivotTableObj.dataSourceSettings.expandAll;
                 },
