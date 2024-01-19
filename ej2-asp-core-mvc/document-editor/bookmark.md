@@ -82,5 +82,5 @@ The following example shows how to open bookmark dialog in Document Editor.
 
 ## See Also
 
-* [Feature modules](../document-editor/feature-module/)
-* [Bookmark dialog](../document-editor/dialog/#bookmark-dialog)
+* [Feature modules](../document-editor/feature-module)
+* [Bookmark dialog](../document-editor/dialog#bookmark-dialog)
