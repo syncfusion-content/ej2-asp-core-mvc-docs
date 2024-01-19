@@ -1,0 +1,6 @@
+@using Syncfusion.EJ2.Navigations
+
+
+@Html.EJS().Stepper("textOnly").Steps(ViewBag.TextOnly).Render()
+
+@Html.EJS().Stepper("labelOnly").Steps(ViewBag.LabelOnly).Render()

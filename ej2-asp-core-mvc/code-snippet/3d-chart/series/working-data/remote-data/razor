@@ -1,0 +1,22 @@
+@(Html.EJS().Chart3D("container").WallColor("transparent").EnableRotation(true).Rotation(7).Tilt(10).Depth(100)
+   .Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).  
+      XName("CustomerID").
+      YName("Freight").
+      DataSource("dataManager").
+      Query("query").
+      Add();
+   })
+   .PrimaryXAxis(px => 
+      px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+      .LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks).LabelRotation(-45)
+   ).Render())
+
+
+<script>
+    var dataManager = new ej.data.DataManager({
+        url: 'https://services.syncfusion.com/aspnet/production/api/orders'
+    });
+    var query = new ej.data.Query().take(5).where('Estimate', 'lessThan', 3, false);
+</script>

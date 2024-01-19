@@ -73,7 +73,7 @@ You can select a row at the time of loading by setting the index of the row to t
 
 ## Selecting a row dynamically
 
-You can also select a row dynamically using the `selectRow` method. The following code demonstrates how to select a row dynamically by clicking the custom button.
+You can select a single row dynamically using the [`selectRow`](https://ej2.syncfusion.com/vue/documentation/api/gantt/selection/#selectrow) method. Similarly, you can use the [`selectRows`](https://ej2.syncfusion.com/vue/documentation/api/gantt/selection/#selectrows) method to dynamically select multiple rows. The following code demonstrates how to select a single or multiple rows dynamically by clicking the custom button.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -97,7 +97,6 @@ You can also select a row dynamically using the `selectRow` method. The followin
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 
 ## Multiple row selection
@@ -128,37 +127,6 @@ You can select multiple rows by setting the [`SelectionSettings.Type`](https://h
 {% endif %}
 
 
-
-## Selecting multiple rows dynamically
-
-You can also select rows dynamically using the `selectRows` method. The following code demonstrates how to select rows dynamically by clicking the custom button.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/selection/selectRows/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="SelectRows.cs" %}
-{% include code-snippet/gantt/selection/selectRows/selectRows.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt/selection/selectRows/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SelectRows.cs" %}
-{% include code-snippet/gantt/selection/selectRows/selectRows.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/selectRows.png)
 
 ## Customize row selection action
 

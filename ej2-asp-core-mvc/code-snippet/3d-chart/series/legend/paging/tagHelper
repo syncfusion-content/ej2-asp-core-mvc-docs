@@ -1,0 +1,21 @@
+<ejs-chart3d id="container" title="FB Penetration of Internet Audience" wallColor="transparent" enableRotation="true"
+    rotation="7" tilt="10" depth="100">
+    <e-chart3d-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" title="Countries" interval="1"
+        labelIntersectAction="@Syncfusion.EJ2.Charts.LabelIntersectAction.Rotate45">
+    </e-chart3d-primaryxaxis>
+    <e-chart3d-primaryyaxis minimum="0" maximum="90" labelFormat="{value}%" title="Penetration (%)">
+    </e-chart3d-primaryyaxis>
+    <e-chart3d-series-collection>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="December 2007"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"></e-chart3d-series>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y1" name="December 2008"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"></e-chart3d-series>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y2" name="December 2009"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"></e-chart3d-series>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y3" name="December 2010"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"></e-chart3d-series>
+    </e-chart3d-series-collection>
+    <e-chart3d-legendsettings visible="true" padding="10" shapePadding="10" width="200">
+        <e-chart3dlegendsettings-border width="2" color="grey"></e-chart3dlegendsettings-border>
+    </e-chart3d-legendsettings>
+</ejs-chart3d>
