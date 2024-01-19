@@ -1,0 +1,22 @@
+<ejs-chart3d id="container" title="Weather Condition" wallColor="transparent" enableRotation="true" rotation="7"
+    tilt="10" depth="100">
+    <e-chart3d-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" interval="1"
+        span="2"></e-chart3d-primaryxaxis>
+    <e-chart3d-primaryyaxis minimum="0" maximum="90" title="Temperature (Fahrenheit)" interval="10"
+        labelFormat="{value}°F"></e-chart3d-primaryyaxis>
+    <e-chart3d-series-collection>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="Germany"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"></e-chart3d-series>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="x" yName="y1" name="Japan" xAxisName="xAxis"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"></e-chart3d-series>
+    </e-chart3d-series-collection>
+    <e-chart3d-columns>
+        <e-chart3d-column width="50%"></e-chart3d-column>
+        <e-chart3d-column width="50%"></e-chart3d-column>
+    </e-chart3d-columns>
+    <e-chart3d-axes>
+        <e-chart3d-axis columnIndex="1" valueType="@Syncfusion.EJ2.Charts.ValueType.Category" name="xAxis">
+            <e-majorgridlines width="0"></e-majorgridlines>
+        </e-chart3d-axis>
+    </e-chart3d-axes>
+</ejs-chart3d>
