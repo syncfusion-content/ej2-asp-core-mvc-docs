@@ -17,7 +17,7 @@
                 // Replace your running Url here
                 req.open(
                     'POST',
-                    'http://localhost:62870/api/documenteditor/SaveToS3',
+                    window.baseurl + 'api/documenteditor/SaveToS3',
                     true
                 );
                 req.onreadystatechange = () => {

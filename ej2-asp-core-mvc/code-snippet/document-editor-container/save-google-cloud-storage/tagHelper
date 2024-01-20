@@ -17,7 +17,7 @@
                 // Replace your running Url here
                 req.open(
                     'POST',
-                    'http://localhost:62870/api/documenteditor/SaveToGoogleCloud',
+                    window.baseurl + 'api/documenteditor/SaveToGoogleCloud',
                     true
                 );
                 req.onreadystatechange = () => {

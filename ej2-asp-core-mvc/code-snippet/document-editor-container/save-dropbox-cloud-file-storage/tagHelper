@@ -17,7 +17,7 @@
                 // Replace your running Url here
                 req.open(
                     'POST',
-                    'http://localhost:62870/api/documenteditor/SaveToDropBox',
+                    window.baseurl + 'api/documenteditor/SaveToDropBox',
                     true
                 );
                 req.onreadystatechange = () => {

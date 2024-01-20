@@ -17,7 +17,7 @@
                 // Replace your running Url here
                 req.open(
                     'POST',
-                    'http://localhost:62870/api/documenteditor/SaveToAzure',
+                    window.baseurl + 'api/documenteditor/SaveToAzure',
                     true
                 );
                 req.onreadystatechange = () => {

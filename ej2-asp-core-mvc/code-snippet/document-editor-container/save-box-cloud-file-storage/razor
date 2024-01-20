@@ -18,7 +18,7 @@
                 // Replace your running Url here
                 req.open(
                     'POST',
-                    'http://localhost:62870/api/documenteditor/SaveToBoxCloud',
+                    window.baseurl + 'api/documenteditor/SaveToBoxCloud',
                     true
                 );
                 req.onreadystatechange = () => {

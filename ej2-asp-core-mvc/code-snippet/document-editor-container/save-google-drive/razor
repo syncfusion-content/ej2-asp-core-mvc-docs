@@ -18,7 +18,7 @@
                 // Replace your running Url here
                 req.open(
                     'POST',
-                    'http://localhost:62870/api/documenteditor/SaveToGoogleDrive',
+                    window.baseurl + 'api/documenteditor/SaveToGoogleDrive',
                     true
                 );
                 req.onreadystatechange = () => {

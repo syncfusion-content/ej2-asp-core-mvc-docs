@@ -18,7 +18,7 @@
                 // Replace your running Url here
                 req.open(
                     'POST',
-                    'http://localhost:62870/api/documenteditor/SaveToOneDrive',
+                    window.baseurl + 'api/documenteditor/SaveToOneDrive',
                     true
                 );
                 req.onreadystatechange = () => {

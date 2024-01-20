@@ -7,7 +7,7 @@
         container = documenteditorElement.ej2_instances[0];
         document.getElementById('load').addEventListener('click', function () {
             fetch(
-                'http://localhost:62870/api/documenteditor/LoadFromGoogleCloud',
+                window.baseurl + 'api/documenteditor/LoadFromGoogleCloud',
                 {
                     method: 'Post',
                     headers: { 'Content-Type': 'application/json;charset=UTF-8' },
