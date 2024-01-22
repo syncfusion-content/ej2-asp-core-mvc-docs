@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Pointers in ASP.NET MVC Circular Gauge Control
+# Pointers in Circular Gauge Control
 
 Pointers are used to indicate values on the axis. Value of the pointer can be modified using the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html#Syncfusion_EJ2_CircularGauge_CircularGaugePointer_Value) property.
 

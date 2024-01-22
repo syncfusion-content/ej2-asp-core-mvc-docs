@@ -8,7 +8,7 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# Accessibility in Syncfusion ASP.NET MVC PDF Viewer components
+# Accessibility in Syncfusion PDF Viewer components
 
 The PDF Viewer component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

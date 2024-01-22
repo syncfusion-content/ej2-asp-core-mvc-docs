@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip in ASP.NET MVC Tooltip Chart
+# Tooltip in Tooltip Chart
 
 <!-- markdownlint-disable MD036 -->
 
