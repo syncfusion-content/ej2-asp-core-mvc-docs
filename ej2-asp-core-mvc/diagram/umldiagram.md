@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# UML Diagram Shapes in ASP.NET Core Diagram
+# UML Diagram Shapes in Diagram
 
 ## UML Class Diagram
 

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Axis customization in ASP.NET Core Bullet Chart
+# Axis customization in Bullet Chart
 
 ## MajorTickLines and MinorTickLines customization
 
