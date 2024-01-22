@@ -1,0 +1,32 @@
+<ejs-button id="load">Open Document From One Drive</ejs-button>
+<ejs-documenteditorcontainer id="container"></ejs-documenteditorcontainer>
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        var documenteditorElement = document.getElementById("container");        
+        container = documenteditorElement.ej2_instances[0];
+        document.getElementById('load').addEventListener('click', function () {
+            fetch(
+                window.baseurl + 'api/documenteditor/LoadFromOneDrive',
+                {
+                    method: 'Post',
+                    headers: { 'Content-Type': 'application/json;charset=UTF-8' },
+                    body: JSON.stringify({ documentName: 'Getting Started.docx' })
+                }
+            )
+                .then(response => {
+                    if (response.status === 200 || response.status === 304) {
+                        return response.json(); // Return the Promise
+                    } else {
+                        throw new Error('Error loading data');
+                    }
+                })
+                .then(json => {
+                    container.documentEditor.open(JSON.stringify(json));
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        });
+    }); 
+</script>
