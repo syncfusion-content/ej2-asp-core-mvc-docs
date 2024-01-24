@@ -457,7 +457,7 @@ createCalculatedField | Create Calculated Field
 fieldName | Enter the field name
 error | Error
 invalidFormula | Invalid formula.
-dropText | Example: ('Sum(Order_Count)' + 'Sum(In_Stock)'') * 250
+dropText | Example: ('Sum(Order_Count)' + 'Sum(In_Stock)') * 250
 dropTextMobile | Add fields and edit formula here.
 dropAction | Calculated field cannot be place in any other region except value axis.
 search | Search
