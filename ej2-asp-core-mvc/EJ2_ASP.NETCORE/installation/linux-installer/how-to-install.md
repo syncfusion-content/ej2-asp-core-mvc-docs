@@ -9,21 +9,6 @@ documentation: ug
 
 # Installing Syncfusion Essential Studio Linux installer
 
-## Overview
-
-Syncfusion provides the Linux installer for the following Essential Studio products.
-
-* Blazor
-* Flutter
-* ASP.NET Core
-* JavaScript
-* File Formats
-* PDF
-* Word
-* Excel
-* PowerPoint
-
-
 ## Step-by-Step Installation
 
 The steps below show how to install Essential Studio Linux installer.
