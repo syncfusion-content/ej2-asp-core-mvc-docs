@@ -50,3 +50,4 @@ N> * To disable the spanning for particular grid page, we need to use **requestT
     2. Infinite scrolling
     3. Lazy load grouping
     4. Row drag and drop
+    5. Grouping
