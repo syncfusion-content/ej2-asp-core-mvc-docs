@@ -460,5 +460,5 @@ In the following sample, the `rowDataBound` event of the Grid is used to set the
 * [Group Column by Format](../grouping#group-by-format)
 * [How to set complex column as Foreignkey column](../how-to/complex-column-as-foreign-key-column)
 * [Complex Data Binding with list of Array Of Objects](../how-to/list-of-array-of-objects)
-* [How to display image on the base64 Grid column](https://www.syncfusion.com/kb/11513/how-to-display-image-on-the-base64-grid-column)
+* [How to display image on the base64 Grid column](https://support.syncfusion.com/kb/article/9862/how-to-display-a-picture-on-the-base64-grid-column-in-javascript-application)
 * [How to change the data source or columns dynamically](../data-binding/how-to-change-the-data-source-or-columns-dynamically)

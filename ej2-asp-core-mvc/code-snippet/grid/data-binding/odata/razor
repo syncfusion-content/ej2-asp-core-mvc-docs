@@ -1,6 +1,6 @@
 @Html.EJS().Grid("OData").DataSource(dataManger =>
 {
-    dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders?$top=7").CrossDomain(true).Adaptor("ODataAdaptor");
+    dataManger.Url("https://services.odata.org/V3/Northwind/Northwind.svc/Orders/").CrossDomain(true).Adaptor("ODataAdaptor");
 }).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
