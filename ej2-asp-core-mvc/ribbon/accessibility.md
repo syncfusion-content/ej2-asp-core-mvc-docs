@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ##Platform_Name## Ribbon Control
+# Accessibility in ##Platform_Name## Ribbon control
 
 The Ribbon control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -54,14 +54,14 @@ The Ribbon control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patte
 | `role=option` | Used for selectable items in a combobox. |
 | `role=gridcell` | Specified as gridcell for the tiles in the color palette. |
 | `aria-orientation` | Indicates the element's orientation as horizontal, vertical, or unknown/ambiguous. |
-| `aria-selected` | Indicates the current "selected" state of various widgets. |
+| `aria-selected` | Indicates the current `selected` state of various widgets. |
 | `aria-labelledby` | Sets to the Tab content element to indicates the associated Tab header for the content. |
 | `aria-controls` | Indicates the associated tabpanel for the header by setting the attribute on Tab items. |
 | `aria-haspopup` | Indicates availability and type of interactive popup triggered by the element it's set on. |
 | `aria-disabled` | Indicates that the element is perceivable but disabled, making it not editable or operable. |
 | `aria-expanded` | Indicates whether a control is expanded or collapsed, set on the respective element. |
 | `aria-label` | Defines a string value that labels an interactive element for accessibility. |
-| `aria-checked` |  Indicates the current "checked" state of checkboxes, radio buttons, and other widgets. |
+| `aria-checked` |  Indicates the current `checked` state of checkboxes, radio buttons, and other widgets. |
 | `aria-owns` | Identifies an element or elements, establishing a relationship when DOM hierarchy can't represent it. |
 | `aria-readonly` |  Indicates that the element is not editable but is otherwise operable. |
 | `aria-activedescendent` | Identifies the currently active element when focus is on a combobox, textbox, group, or application. |
@@ -77,12 +77,12 @@ The Ribbon control followed the [keyboard interaction](https://www.w3.org/WAI/AR
 | <kbd>Tab</kbd> | To focus the ribbon tabs. |
 | <kbd>Right Arrow</kbd> | Moves focus to the next Tab.  |
 | <kbd>Left Arrow</kbd> | Moves focus to the previous Tab. |
-| <kbd>Enter / Space</kbd> | To select the currently focussed ribbon tab. |
+| <kbd>Enter / Space</kbd> | To select the currently focused ribbon tab. |
 <b>Ribbon Items</b>||
 | <kbd>Tab</kbd> | To focus the ribbon Items. |
 | <kbd>Right Arrow</kbd> | Focuses the next item. |
 | <kbd>Left Arrow</kbd> | Focuses the previous item. |
-| <kbd>Enter / Space</kbd> | To select the currently focussed ribbon item. |
+| <kbd>Enter / Space</kbd> | To select the currently focused ribbon item. |
 <b>Ribbon Dropdown Items/ Ribbon Split button</b>||
 | <kbd>Esc</kbd> | Closes the popup. |
 | <kbd>Enter / Space</kbd> | Opens the popup, or activates the highlighted item and closes the popup. |
