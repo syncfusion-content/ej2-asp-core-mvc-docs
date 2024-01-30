@@ -42,7 +42,7 @@ The accessibility compliance for the Skeleton control is outlined below.
 
 The Skeleton control followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Skeleton control:
 
-| Properties | Functionality |
+| Attributes | Purpose |
 | ------------ | ----------------------- |
 | `role=alert` | Used to convey important, time-sensitive or contextual message to the user. |
 | `aria-label` | Attribute provides the text label for the Skeleton. |
