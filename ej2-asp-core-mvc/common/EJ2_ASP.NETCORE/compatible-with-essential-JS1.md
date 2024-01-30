@@ -16,7 +16,7 @@ This documentation explains how to render Essential JS 1 and Essential JS 2 Sync
 
 You can create Essential JS 1 and Essential JS 2 controls using the following links:
 
-Getting started for [EJ2 ASP.NET Core control](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core/)
+Getting started for [EJ2 ASP.NET Core control](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core)
 
 Getting started for [EJ1 ASP.NET Core control](https://help.syncfusion.com/aspnet-core/grid/getting-started)
 
