@@ -1,0 +1,30 @@
+<ejs-chart id="container">
+    <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" width="2" opacity="1" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<ejs-button id="togglebtn" content="Export" iconCss="e-icons e-play-icon" cssClass="e-flat" isPrimary="true"></ejs-button>
+
+<script>
+    document.getElementById('togglebtn').onclick = function () {
+        var svg = document.querySelector("#container_svg");
+        var svgData = new XMLSerializer().serializeToString(svg);
+        var canvas = document.createElement("canvas");
+        document.body.appendChild(canvas);
+        var svgSize = svg.getBoundingClientRect();
+        canvas.width = svgSize.width;
+        canvas.height = svgSize.height;
+        var ctx = canvas.getContext("2d");
+        var img = document.createElement("img");
+        img.setAttribute("src", "data:image/svg+xml;base64," + btoa(svgData));
+        img.onload = function () {
+            ctx.drawImage(img, 0, 0);
+            var imagedata = canvas.toDataURL("image/png");
+            console.log(imagedata); // printed base64 in console
+            canvas.remove();
+        };
+    };
+</script>

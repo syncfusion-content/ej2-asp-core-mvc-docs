@@ -88,8 +88,8 @@ The PDF Viewer component followed the [keyboard interaction](https://www.w3.org/
 
 The PDF Viewer component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the PDF Viewer component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/pdf-viewer.html) in a new window to evaluate the accessibility of the PDF Viewer component with accessibility tools.
+The accessibility compliance of the PDF Viewer component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/pdfviewer.html) in a new window to evaluate the accessibility of the PDF Viewer component with accessibility tools.
 
-{% previewsample "https://ej2.syncfusion.com/accessibility/pdf-viewer.html" %}
+{% previewsample "https://ej2.syncfusion.com/accessibility/pdfviewer.html" %}
 
 N> Follow the steps provided in the [link](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started/) to create a simple PDF Viewer sample.

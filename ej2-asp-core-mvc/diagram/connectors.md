@@ -511,29 +511,7 @@ Padding is used to leave the space between the Connector's end point and the obj
 {% endtabs %}
 {% endif %}
 
-## Hit padding
 
-The [`hitPadding`](../api/diagram/connector#hitpadding) property enables you to define the clickable area around the connector path.The default value for hitPadding is 10.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/connectors/hitPadding/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Padding.cs" %}
-{% include code-snippet/diagram/connectors/hitPadding/padding.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Padding.cs" %}
-{% include code-snippet/diagram/connectors/hitPadding/padding.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Flip
 
