@@ -13,8 +13,6 @@ documentation: ug
 
 This section briefly explains about how to include [ASP.NET MVC Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control in your ASP.NET MVC application using Visual Studio.
 
-{% youtube "https://www.youtube.com/watch?v=Vll9DXQ7z4Q" %}
-
 ## Prerequisites
 
 [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
