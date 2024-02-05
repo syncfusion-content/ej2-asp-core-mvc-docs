@@ -1,5 +1,0 @@
-@using Syncfusion.EJ2;
-
-<div id="container">
-    <ejs-circulargauge id="circular" height="350px" width="650px"></ejs-circulargauge>
-</div>

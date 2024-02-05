@@ -24,7 +24,7 @@ You can set the size of the gauge in pixel as demonstrated below.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/circulargauge/gauge-dimension/gauge-dimension/tagHelper %}
+
 {% endhighlight %}
 {% endtabs %}
 
