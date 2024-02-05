@@ -28,7 +28,7 @@ Start and end value of a range in an axis can be customized by using [start](htt
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/circulargauge/gauge-ranges/ranges/razor %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="Ranges.cs" %}
 {% include code-snippet/circulargauge/gauge-ranges/ranges/ranges.cs %}
@@ -54,10 +54,10 @@ Color and thickness of the range can be customized by using [color](https://help
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/circulargauge/gauge-ranges/customization/razor %}
+
 {% endhighlight %}
 {% highlight c# tabtitle="Customization.cs" %}
-{% include code-snippet/circulargauge/gauge-ranges/customization/customization.cs %}
+
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
