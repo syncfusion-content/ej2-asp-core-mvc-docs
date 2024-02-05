@@ -38,8 +38,6 @@ The rendered chart can be printed directly from the browser by calling the publi
 {% endtabs %}
 {% endif %}
 
-
-
 ## Export
 
 The rendered chart can be exported to `Image`(jpeg or png) or `SVG` or `PDF` format by using the export method. Input parameters for this method are `Export` Type for `format` and `fileName` of result.
