@@ -167,9 +167,9 @@ The [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.
 
 #### Customize Dropdown button item
 
-You can customize the dropdown button item by specifying a custom class through the [beforeItemRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeItemRender) event.
+You can customize the dropdown button item by specifying a custom cssClass using the [beforeItemRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeItemRender) event.
 
-The following sample showcases how to customize a specific item in the dropdown.
+The following sample showcases how to customize a specific dropdown item.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
