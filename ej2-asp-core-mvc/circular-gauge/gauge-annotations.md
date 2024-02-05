@@ -20,7 +20,6 @@ You can place any custom element on the axis area by assigning the id of the ele
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/circulargauge/gauge-annotations/annotations/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,7 +30,7 @@ You can place any custom element on the axis area by assigning the id of the ele
 {% include code-snippet/circulargauge/gauge-annotations/annotations/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Annotations.cs" %}
-{% include code-snippet/circulargauge/gauge-annotations/annotations/annotations.cs %}
+
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

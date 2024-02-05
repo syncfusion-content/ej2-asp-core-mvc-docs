@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in ##Platform_Name## Button Control | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+platform: ej2-asp.net-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug

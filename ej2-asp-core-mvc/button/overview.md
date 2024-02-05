@@ -2,7 +2,7 @@
 layout: post
 title: Overview in ##Platform_Name## Button Component
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+platform: ej2-asp.net-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
