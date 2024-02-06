@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Document Editor Component
+title: Accessibility in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ##Platform_Name##
+domainurl: ##DomainURL##
 documentation: ug
 ---
 
-# Accessibility
+# Accessibility in ##Platform_Name## Document editor component
 
 The accessibility compliance for the Document editor component is outlined below.
 
