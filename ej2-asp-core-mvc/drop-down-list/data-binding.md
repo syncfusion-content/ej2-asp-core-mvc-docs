@@ -268,11 +268,11 @@ To avoid post back for every action, set the DropDownList to load all data on in
 
 ## See Also
 
-* [How to load data using template](./templates/#item-template)
+* [How to load data using template](./templates#item-template)
 * [How to group the data using header](./grouping)
 * [How to filter the bound data](./filtering)
 * [How to get the count of the data when using remote data](./how-to/remote-data-bind)
-* [How to acheive cascading](./how-to/cascading/)
-* [How to add item in between the options](./how-to/add-item/)
-* [How to remove an item](./how-to/remove-item/)
-* [How to preselect the items in dropdownlist](./how-to/multiple-cascading/)
+* [How to acheive cascading](./how-to/cascading)
+* [How to add item in between the options](./how-to/add-item)
+* [How to remove an item](./how-to/remove-item)
+* [How to preselect the items in dropdownlist](./how-to/multiple-cascading)

@@ -1,0 +1,33 @@
+@Html.EJS().Button("load").Content("Open Document From AWS S3 Bucket").Render()
+@Html.EJS().DocumentEditorContainer("container").EnableToolbar(true).Render()
+
+<script>
+    var container;
+    document.addEventListener('DOMContentLoaded', function () {
+        var documenteditorElement = document.getElementById("container");        
+        container = documenteditorElement.ej2_instances[0];
+        document.getElementById('load').addEventListener('click', function () {
+            fetch(
+                window.baseurl + 'api/documenteditor/LoadFromS3',
+                {
+                    method: 'Post',
+                    headers: { 'Content-Type': 'application/json;charset=UTF-8' },
+                    body: JSON.stringify({ documentName: 'Getting Started.docx' })
+                }
+            )
+                .then(response => {
+                    if (response.status === 200 || response.status === 304) {
+                        return response.json(); // Return the Promise
+                    } else {
+                        throw new Error('Error loading data');
+                    }
+                })
+                .then(json => {
+                    container.documentEditor.open(JSON.stringify(json));
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        });
+    }); 
+</script>
