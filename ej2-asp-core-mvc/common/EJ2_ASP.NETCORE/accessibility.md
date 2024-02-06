@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Adding script references in ##Platform_Name## control | Syncfusion
-description: Learn here all about adding script references in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: Accessibility in Syncfusion ##Platform_Name## control
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common
-publishingplatform: ##Platform_Name##
+domainurl: ##DomainURL##
 documentation: ug
 ---
 
@@ -139,6 +139,7 @@ padding-top: 20px;
         <div><p class="controlcategory-topics">GRIDS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/accessibility">DataGrid</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/accessibility">Pivot Table</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/accessibility">SpreadSheet</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/accessibility">TreeGrid</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/image-editor/accessibility">Image Editor</a></div>
@@ -149,6 +150,7 @@ padding-top: 20px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/listview/accessibility">ListView</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/splitter/accessibility">Splitter</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/accessibility">Dashboard</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/accessibility">ToolTip</a></div>
     </td>
     <td>
         <div><p class="controlcategory-topics">DATA VISUALIZATION</p></div>
@@ -156,9 +158,12 @@ padding-top: 20px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/accumulation-chart/accessibility">Accumulation Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/bullet-chart/accessibility">Bullet Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/3d-chart/accessibility">3D Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/smithchart/accessibility">Smith Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/sparkline/accessibility">SparkLine Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/accessibility">Stock Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/accessibility">Circular Gauge</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/diagram/accessibility">Diagram</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/kanban/accessiblility">Kanban</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/accessibility">Linear Gauge</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/accessibility">Map</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/treemap/accessibility">TreeMap</a></div>
@@ -167,6 +172,8 @@ padding-top: 20px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/button-group/accessibility">Button Group</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-button/accessibility">Dropdown Button</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/floating-action-button/accessibility">Floating Action Button</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/accessibility">Progress Bar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/radio-button/accessibility">Radio Button</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-button/accessibility">Progress Button</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/split-button/accessibility">SplitButton</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/chips/accessibility">Chips</a></div>
@@ -186,10 +193,13 @@ padding-top: 20px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/accessibility">Numeric TextBox</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/check-box/accessibility">CheckBox</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/color-picker/accessibility">Color Picker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/uploader/wai-aria-accessibility">File Upload</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/range-slider/accessibility">Range Slider</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/switch/accessibility">Toggle Switch Button</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/signature/accessibility">Signature</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/rating/accessibility">Rating</a></div>
+        <div><p class="controlcategory">FORMS</p></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/accessibility">Query Builder</a></div>
     </td>
     <td>
         <div><p class="controlcategory-topics">DROPDOWNS</p></div>
@@ -207,6 +217,8 @@ padding-top: 20px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/carousel/accessibility">Carousel</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/context-menu/accessibility">Context Menu</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/menu/accessibility">Menu Bar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/range-navigator/accessibility">Range Navigator</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/ribbon/accessibility">Ribbon</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tab/accessibility">Tabs</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/toolbar/accessibility">Toolbar</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/treeview/accessibility">TreeView</a></div>
