@@ -22,7 +22,7 @@ The component is said to be accessible when it is constructed in accordance with
 
 The accessibility of the components consists of the following standards and aspects:
 
-[ADA](https://www.ada.gov/) - A law to ensure that people with disabilities have the same opportunities and access as people without disabilities.
+[ADA](https://www.ada.gov) - A law to ensure that people with disabilities have the same opportunities and access as people without disabilities.
 
 [WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/) - The Web Content Accessibility Guidelines (WCAG) provide guidelines developed by the World Wide Web Consortium (W3C) to ensure web content is accessible to people with disabilities. WCAG 2.2 establishes a framework of accessibility principles and their associated success criteria. The level of accessibility conformance achieved by a web application is determined by the extent to which it meets these success criteria, categorized into three levels: A, AA, and AAA.
 
