@@ -256,7 +256,7 @@ To avoid post back for every action, set the ComboBox to load all data on initia
 
 ## See also
 
-* [How to acheive cascading](./how-to/cascading/)
-* [How to load data using template](./templates/#item-template)
-* [How to group the data using header](./grouping/)
-* [How to filter the bound data](./filtering/)
+* [How to acheive cascading](./how-to/cascading)
+* [How to load data using template](./templates#item-template)
+* [How to group the data using header](./grouping)
+* [How to filter the bound data](./filtering)

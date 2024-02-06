@@ -231,4 +231,4 @@ In the following example, the textbox is rendered in the Freight column using a 
 
 ## See Also
 
-* [How to set custom format in edit state of Grid](https://www.syncfusion.com/kb/13424/how-to-set-custom-format-in-edit-state-of-grid)
+* [How to set custom format in edit state of Grid](https://support.syncfusion.com/kb/article/11763/how-to-set-custom-format-in-edit-state-of-grid)

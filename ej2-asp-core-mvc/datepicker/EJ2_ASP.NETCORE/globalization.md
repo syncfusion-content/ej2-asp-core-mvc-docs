@@ -11,9 +11,9 @@ documentation: ug
 
 # Globalization in ASP.NET CORE Datepicker Control
 
-Globalization is the combination of adapting the component to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization/) and also by adding cultural specific customizations and translating the text [`localization`](../common/localization/).
+Globalization is the combination of adapting the component to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization) and also by adding cultural specific customizations and translating the text [`localization`](../common/localization).
 
-By default, DatePicker date format, week and month names are specific to the `American English` culture. It utilizes the [Essential JavaScript 2 Internationalization](../common/internationalization/) package to parse and format the date object based on the culture by using the official [UNICODE CLDR](http://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data.
+By default, DatePicker date format, week and month names are specific to the `American English` culture. It utilizes the [Essential JavaScript 2 Internationalization](../common/internationalization) package to parse and format the date object based on the culture by using the official [UNICODE CLDR](http://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data.
 
 * Set the culture by using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Locale) property.
 
