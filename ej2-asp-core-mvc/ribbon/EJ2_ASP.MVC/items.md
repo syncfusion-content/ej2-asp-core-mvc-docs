@@ -165,6 +165,55 @@ The [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.
 {% endhighlight %}
 {% endtabs %}
 
+#### Customize Dropdown button item
+
+You can customize the dropdown button item by specifying a custom cssClass using the [beforeItemRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeItemRender) event.
+
+The following sample showcases how to customize a specific dropdown item.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<MenuItem> tableOptions = new List<MenuItem>() { new MenuItem { Text = "Insert Table" }, new MenuItem { Text = "This device" }, new MenuItem { Text = "Convert Table" }, new MenuItem { Text = "Excel SpreadSheet" } };
+}
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Insert").Groups(group =>
+    {
+        group.Header("Tables").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.DropDown).DropDownSettings(dropDown =>
+                {
+                    dropDown.IconCss("e-icons e-table").Content("Table").Items(tableOptions).BeforeItemRender("function(args){beforeItemRenderEvent(args)}");
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
+
+<script>
+    function beforeItemRenderEvent(args) {
+        if (args.item.text === 'Insert Table') {
+            args.element.classList.add("e-custom-class");
+        }
+    }
+</script>
+
+<style>
+    .e-custom-class {
+        color: green;
+    }
+</style>
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Split button items
 
 You can render the built-in splitButton Ribbon item by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `SplitButton` you can render a splitButton item. You can also customize the SplitButton item through [RibbonSplitButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonSplitButtonSettings.html#properties), which provides options such as `IconCss`, `Items`, `Target` and more.
