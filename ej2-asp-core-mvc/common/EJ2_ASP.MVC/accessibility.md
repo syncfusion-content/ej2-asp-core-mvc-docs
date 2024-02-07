@@ -165,69 +165,66 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/bullet-chart/accessibility">Bullet Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/accessiblility">Kanban</a></div>
         <div><p class="controlcategory">BUTTONS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/button/accessibility">Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/button-group/accessibility">Button Group</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/drop-down-button/accessibility">Dropdown Menu</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/progress-button/accessibility">Progress Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/split-button/accessibility">Split Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/chips/accessibility">Chips</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/floating-action-button/accessibility">FAB</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/speed-dial/accessibility">Speed Dial</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/button/accessibility">Button</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/button-group/accessibility">Button Group</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-button/accessibility">Dropdown Menu</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/progress-button/accessibility">Progress Button</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/split-button/accessibility">Split Button</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/chips/accessibility">Chips</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/floating-action-button/accessibility">FAB</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/speeddial/accessibility">Speed Dial</a></div>
     </td>
     <td>
         <div><p class="controlcategory">CALENDARS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/schedule/accessibility">Scheduler</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/calendar/accessibility">Calendar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/datepicker/accessibility">DatePicker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/daterangepicker/accessibility">DateRangePicker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/datetimepicker/accessibility">DateTime Picker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/timepicker/accessibility">TimePicker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/gantt/accessibility">Gantt Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/accessibility">Scheduler</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/calendar/accessibility">Calendar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/accessibility">DatePicker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/daterangepicker/accessibility">DateRangePicker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/accessibility">DateTime Picker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/timepicker/accessibility">TimePicker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/accessibility">Gantt Chart</a></div>
         <div><p class="controlcategory">INPUTS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/textbox/accessibility">TextBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/maskedtextbox/accessibility">Input Mask</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/maskedtextbox/accessibility">Masked TextBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/numerictextbox/accessibility">Numeric TextBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/radio-button/accessibility">Radio Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/check-box/accessibility">CheckBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/color-picker/accessibility">Color Picker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/uploader/wai-aria-accessibility">File Upload</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/range-slider/accessibility">Range Slider</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/switch/accessibility">Toggle Switch Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/signature/accessibility">Signature</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/rating/accessibility">Rating</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/textbox/accessibility">TextBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/maskedtextbox/accessibility">Masked TextBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/accessibility">Numeric TextBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/radio-button/accessibility">Radio Button</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/accessibility">CheckBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/color-picker/accessibility">Color Picker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/uploader/wai-aria-accessibility">File Upload</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/range-slider/accessibility">Range Slider</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/switch/accessibility">Toggle Switch Button</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/signature/accessibility">Signature</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/rating/accessibility">Rating</a></div>
         <div><p class="controlcategory">FORMS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/query-builder/accessibility">Query Builder</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/query-builder/accessibility">Query Builder</a></div>
     </td>
     <td>
         <div><p class="controlcategory">DROPDOWNS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/auto-complete/accessibility">AutoComplete</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/combo-box/accessibility">ComboBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/drop-down-list/accessibility">Dropdown List</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/drop-down-tree/accessibility">DropDown Tree</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/multi-select/accessibility">Multiselect DropDown</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/mention/accessibility">Mention</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/list-box/accessibility">ListBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/auto-complete/accessibility">AutoComplete</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/combo-box/accessibility">ComboBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/accessibility">Dropdown List</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-tree/accessibility">DropDown Tree</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/accessibility">Multiselect DropDown</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/mention/accessibility">Mention</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/list-box/accessibility">ListBox</a></div>
         <div><p class="controlcategory">NAVIGATION</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/accordion/accessibility">Accordion</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/appbar/accessibility">AppBar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/breadcrumb/accessibility">Breadcrumb</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/carousel/accessibility">Carousel</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/context-menu/accessibility">Context Menu</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/menu/accessibility">Menu Bar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/sidebar/accessibility">Sidebar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/tab/accessibility">Tabs</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/toolbar/accessibility">Toolbar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/ribbon/accessibility">Ribbon</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/treeview/accessibility">TreeView</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/file-manager/accessibility">File Manager</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/pager/accessibility">Pager</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/stepper/accessibility">Stepper</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/accordion/accessibility">Accordion</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/appbar/accessibility">AppBar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/breadcrumb/accessibility">Breadcrumb</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/carousel/accessibility">Carousel</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/context-menu/accessibility">Context Menu</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/menu/accessibility">Menu Bar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tab/accessibility">Tabs</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/toolbar/accessibility">Toolbar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/ribbon/accessibility">Ribbon</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/treeview/accessibility">TreeView</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/accessibility">File Manager</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/stepper/accessibility">Stepper</a></div>
         <div><p class="controlcategory">NOTIFICATION</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/message/accessibility">Message</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/toast/accessibility">Toast</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/progress-bar/accessibility">Progress Bar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/vue/documentation/skeleton/accessibility">Skeleton</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/message/accessibility">Message</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/toast/accessibility">Toast</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/progress-bar/accessibility">Progress Bar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/skeleton/accessibility">Skeleton</a></div>
     </td>
 </tr>
 </table>
