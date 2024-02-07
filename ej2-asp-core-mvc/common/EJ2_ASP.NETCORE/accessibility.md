@@ -83,7 +83,7 @@ Syncfusion ASP.NET Core controls will keep improving when there is anything requ
 Consult the component-specific documents below for detailed information about how Syncfusion ASP.NET Core controls ensure compliance with accessibility standards, encompassing Section 508, WAI-ARIA, WCAG 2.2, keyboard navigation, and more.
 
 <style>
-# table
+.table
 {
 border:0 !important;
 line-height: 160% !important;
@@ -125,7 +125,7 @@ padding-top: 20px;
 }
 </style>
 
-<table id="table">
+<table class="table">
 <tbody>
 <colgroup>
 <col style="width: 25%">

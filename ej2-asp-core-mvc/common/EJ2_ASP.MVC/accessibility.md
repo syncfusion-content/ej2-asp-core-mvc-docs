@@ -83,7 +83,7 @@ Syncfusion ASP.NET MVC controls will keep improving when there is anything requi
 Consult the component-specific documents below for detailed information about how Syncfusion ASP.NET MVC controls components ensure compliance with accessibility standards, encompassing Section 508, WAI-ARIA, WCAG 2.2, keyboard navigation, and more.
 
 <style>
-# table
+.table
 {
 border:0 !important;
 line-height: 2!important;
@@ -115,10 +115,9 @@ text-align: left !important;
 font-weight: bold !important;
 letter-spacing: 0.7px;
 }
-}
 </style>
 
-<table id="table" style="border: 0px;">
+<table class="table" style="border: 0px;">
 <tbody>
 <colgroup>
 <col style="width: 25%">
