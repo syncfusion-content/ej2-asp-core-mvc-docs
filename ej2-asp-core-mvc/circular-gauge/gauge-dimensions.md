@@ -24,7 +24,6 @@ You can set the size of the gauge in pixel as demonstrated below.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/circulargauge/gauge-dimension/gauge-dimension/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,7 +57,6 @@ By setting value in percentage, gauge gets its dimension with respect to its con
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/circulargauge/gauge-dimension/percentage/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Percentage.cs" %}
 {% include code-snippet/circulargauge/gauge-dimension/percentage/percentage.cs %}

@@ -2,7 +2,7 @@
 layout: post
 title: Barcodegenerator in ##Platform_Name## Barcode Control | Syncfusion
 description: Learn here all about Barcodegenerator in Syncfusion ##Platform_Name## Barcode control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+platform: ej2-asp.net-core-mvc
 control: Barcodegenerator
 publishingplatform: ##Platform_Name##
 documentation: ug
