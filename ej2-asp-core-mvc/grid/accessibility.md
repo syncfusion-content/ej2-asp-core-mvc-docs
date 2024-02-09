@@ -4,7 +4,7 @@ title: Accessibility in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ##Platform_Name##
+publishingplatform: ##platform_name##
 documentation: ug
 ---
 
