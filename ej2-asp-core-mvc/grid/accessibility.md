@@ -68,15 +68,31 @@ The Grid component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patte
 | `aria-labelledby` | Provides an accessible name for the checkbox labels in excel filter, checkbox filter and column chooser dialog.  |
 | `aria-describedby` | Provides an description about the features enabled in the header when the grid header cell is focused. |
 
-The Syncfusion Grid component is structured with a two-table architecture for its header and content. In order to improve accessibility for screen readers, roles and aria-attributes are incorporated for both the grid parent and all its child elements.
+The Syncfusion Grid component is structured with a two-table architecture for its header and content. To enhance accessibility for screen readers, roles and ARIA attributes are incorporated for both the grid parent and all its child elements. Although this architectural approach may have some limitations with accessibility checker tools. It's important to note that these limitations do not affect the readability of the grid content over screen readers.
 
-The accessibility checker highlights the following known issues:
+The accessibility checker tools highlights the following known issues:
 
 * aria-required-children: This warning appears when rendering the grid without any features, as it contains textarea and grid content. Additionally, it appears when enabling features such as the toolbar and grouping.
 
-![Accessibility checker issue](images/accessibility-checker-issue.png)
+* color-contrast: This warning appears when you are enabling the search item in the grid's toolbar.
 
-It's important to note that this limitation does not impact the readability of the grid content over screen readers. 
+* An explicit ARIA 'role' is not valid for `<tr>` element within an ARIA role 'grid' per the ARIA in HTML specification.
+
+* An explicit ARIA 'role' is not valid for `<th>` element within an ARIA role 'grid' per the ARIA in HTML specification.
+
+* An explicit ARIA 'role' is not valid for `<td>` element within an ARIA role 'grid' per the ARIA in HTML specification.
+
+* The element with role "button" contains descendants with roles "rowgroup" which are ignored by browsers.
+
+* Content is not within a landmark element.
+
+* Multiple elements with "search" role do not have unique labels.
+
+* Text contrast of 4.10 with its background is less than the WCAG AA minimum requirements for text of size 13px and weight of 400.
+
+* Interactive component with ARIA role 'grid' does not have a programmatically associated name.
+
+* The element with role "rowgroup" is not contained in or owned by an element with one of the following roles: "grid, table, treegrid".
 
 ## Keyboard interaction
 
