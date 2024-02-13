@@ -15,8 +15,8 @@ The Stepper control allows you to set the validation state for each step, displa
 > Based on the [stepType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_StepType), the validation state icon will be displayed either as an indicator or as part of the step label/text.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/steps/validation/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/steps/validation/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
