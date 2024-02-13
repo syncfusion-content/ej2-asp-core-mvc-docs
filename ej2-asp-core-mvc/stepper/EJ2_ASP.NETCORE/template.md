@@ -15,8 +15,8 @@ The Stepper control allows you to customize the default appearance and content o
 The [StepModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Step.html) and current step index are passed as `step` and `currentStep` properties in the template context for customization.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/template/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/template/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 

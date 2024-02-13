@@ -15,8 +15,8 @@ The Stepper control supports tooltip to show additional information in the steps
 The tooltip appears when the user hovers over the step, providing the information such as the label or text. By default, the `showTooltip` property is `false`.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/tooltip/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/tooltip/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -29,8 +29,8 @@ You can use the [tooltipTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/
 When hovering over the step, the current step model is passed in the template context, allowing you to include dynamic information about the step.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/tooltip-template/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/tooltip-template/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
