@@ -17,8 +17,8 @@ The Stepper control supports the display of steps in both horizontal and vertica
 In horizontal orientation, the steps are displayed in a side-by-side manner by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Horizontal`. By default, the steps are displayed in the horizontal orientation.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/horizontal/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/horizontal/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -29,8 +29,8 @@ In horizontal orientation, the steps are displayed in a side-by-side manner by s
 You can display the steps one below the other vertically by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property to `Vertical`.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/vertical/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/vertical/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
