@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Aggregates in ##Platform_Name## Tree Grid Component
+# Aggregates in Tree Grid Component
 
 Aggregate values are displayed in the TreeGrid footer and in parent row footer for child row aggregate values. It can be configured through [`Aggregates`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Aggregates.html) property.
  [`Field`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~Field.html) and [`Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~Type.html) are the minimum properties required to represent an aggregate column.

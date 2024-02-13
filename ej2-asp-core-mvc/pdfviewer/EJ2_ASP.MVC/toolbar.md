@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar in ##Platform_Name## Pdfviewer Component
+title: Toolbar in ##Platform_Name## Pdfviewer Component | Syncfusion
 description: Learn here all about Toolbar in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Toolbar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Built-in toolbar
+# Built-in Toolbar in PDF Viewer 
 
 The PDF Viewer comes with a powerful built-in toolbar to execute important actions such as page navigation,text search,view mode,download print,bookmark and thumbnails.
 
