@@ -19,7 +19,7 @@ The Code 39 character set includes the digits 0-9, the letters A-Z (upper case o
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/barcode/barcodegenerator/code39/tagHelper %}
+{% include code-snippet/barcode/barcodegenerator/ %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -45,7 +45,7 @@ Code 39 Extended is an extended version of Code 39 that supports ASCII character
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/barcode/barcodegenerator/code39Extd/tagHelper %}
+{% include code-snippet/barcode/barcodegenerator/. %}
 {% endhighlight %}
 {% endtabs %}
 
