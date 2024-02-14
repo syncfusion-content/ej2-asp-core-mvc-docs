@@ -21,8 +21,8 @@ The Localization library allows you to localize the default text content of the 
 In this example, the `French` culture is set to Stepper and the default text is updated with the content defined by the locale key.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/localization/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/localization/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,8 +33,8 @@ In this example, the `French` culture is set to Stepper and the default text is 
 RTL provides an option to switch the text direction and layout of the Stepper control from right to left by setting the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_EnableRtl) property to `true`.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/rtl/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/rtl/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
