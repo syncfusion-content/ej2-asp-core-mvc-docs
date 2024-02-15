@@ -117,9 +117,9 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 * Selected column details are only retained within the viewport. When the next set of columns is loaded, the selection for previously visible columns is lost.
 * While using infinite scrolling, fixed position applied only viewport column. If scroll the next set of column fixed position is removed.
 * Limitations of row drag and drop with infinite scrolling
-    1. In cache mode, the grid refreshes automatically if the content's tr element count exceeds the cache limit of the grid's content after the drop action.
+    1. In cache mode, the grid refreshes automatically if the content's **tr** element count exceeds the cache limit of the grid's content after the drop action.
     2. When performing row drag and drop with lazy load grouping, the grid will refresh automatically.
-    3. In remote data, changes are applied only in the UI. They will be lost once the grid is refreshed. To restore them, you need to update the changes in your database. By using the rowDrop event, you can send the request to the server and apply the changes in your database. After this, you need to refresh the grid to show the updated data.
+    3. In remote data, changes are applied only in the UI. They will be lost once the grid is refreshed. To restore them, you need to update the changes in your database. By using the [rowDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDrop) event, you can send the request to the server and apply the changes in your database. After this, you need to refresh the grid to show the updated data.
 * The following features are compatible with infinite scrolling and work within the viewport:
    1. Column resizing
    2. Column reordering
