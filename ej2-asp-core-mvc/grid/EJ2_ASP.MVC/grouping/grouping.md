@@ -227,7 +227,7 @@ The `CustomerID` column will be sorted in descending order when the grid is init
 ## Limitations
 
 * Grouping is not compatible with the following features:
-    1. Autofill with auto scroll
+    1. Autofill
 
 ## See Also
 
