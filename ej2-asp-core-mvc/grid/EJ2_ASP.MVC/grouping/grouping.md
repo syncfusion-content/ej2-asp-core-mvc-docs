@@ -224,6 +224,11 @@ The `CustomerID` column will be sorted in descending order when the grid is init
 {% endtabs %}
 {% endif %}
 
+## Limitations
+
+* Grouping is not compatible with the following features:
+    1. Autofill with auto scroll
+
 ## See Also
 
 * [Exporting grouped records](../../EJ2_ASP.MVC/excel-export/excel-exporting#Exporting-grouped-records)

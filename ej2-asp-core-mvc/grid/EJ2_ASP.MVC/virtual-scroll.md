@@ -88,7 +88,8 @@ N> The collapsed/expanded state will persist only for local dataSource while scr
 * While using column virtual scrolling, column width should be in the pixel. Percentage values are not accepted.
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited by the browser capability.
 * The cell selection is not supported for both row and column virtual scrolling.
-* Virtual scrolling is not compatible with batch editing, detail template, rowspan, colspan and hierarchy features.
+* While using column virtualization, fixed position applied only viewport column. If scroll the next set of column fixed position is removed.
+* Virtual scrolling is not compatible with batch editing, detail template, rowspan, colspan, autofill and hierarchy features.
 * Group expand and collapse state will not be persisted.
 * Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [`Group with Page`](./grouping##Group-with-paging) topic.
 * The page size provided must be two times larger than the number of visible rows in the grid. If the page size is failed to meet this condition then the size will be determined by grid.
@@ -99,8 +100,6 @@ N> The collapsed/expanded state will persist only for local dataSource while scr
     height: 2em;
 }
 ```
-
-
 * Programmatic selection using the `selectRows` method is not supported in virtual scrolling.
 
 ## Browser height limitation in virtual scrolling and solution

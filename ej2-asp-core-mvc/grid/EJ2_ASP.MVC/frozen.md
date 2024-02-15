@@ -48,6 +48,7 @@ The following features are not supported in frozen rows and columns:
 
 * Detail Template
 * Hierarchy Grid
+* AutoFill with auto scroll
 
 ## Freeze particular columns
 

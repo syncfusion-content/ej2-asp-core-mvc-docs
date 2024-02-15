@@ -39,7 +39,9 @@ In the following demo, employee **Davolio** is doing testing from 9.00 A.M. to 1
 
 ## Limitations
 
+* When freezing columns, it becomes unable to set columnspan values as the table reaches its boundaries.
 * Column spanning is not compatible with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
-    3. Lazy load grouping
+    3. Grouping
+    4. Autofill
