@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frozen in ##Platform_Name## Grid Component
+title: Frozen in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Frozen in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Frozen
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Frozen rows and columns
+# Frozen rows and columns in ASP.NET Core Grid Component
 
 Frozen rows and columns provides an option to make rows and columns always visible in the top and left side of the grid while scrolling.
 

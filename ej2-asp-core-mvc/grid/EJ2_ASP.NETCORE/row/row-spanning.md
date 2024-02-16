@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row Spanning in ##Platform_Name## Grid Component
+title: Row Spanning in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Row Spanning in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row Spanning
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row Spanning
+# Row Spanning in ASP.NET Core Grid Component
 
 The grid has option to span row cells. To achieve this, You need to define the **rowSpan** attribute to span cells in the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event.
 
