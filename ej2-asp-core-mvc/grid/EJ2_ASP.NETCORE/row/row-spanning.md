@@ -53,3 +53,4 @@ N> * To disable the spanning for particular grid page, we need to use **requestT
     5. Autofill
     6. Inline editing
     7. Batch editing
+    8. CRUD
