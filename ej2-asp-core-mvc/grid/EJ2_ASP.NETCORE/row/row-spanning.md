@@ -45,7 +45,6 @@ N> * To disable the spanning for particular grid page, we need to use **requestT
 
 ## Limitations
 
-* When freezing rows, it becomes unable to set rowspan values as the table reaches its boundaries.
 * Row spanning is not compatible with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
