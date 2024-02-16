@@ -23,4 +23,4 @@ The Syncfusion ASP.NET Core controls are supported by all modern web browsers on
 
 ## See also
 
-* [ASP.NET Core supported platforms](https://docs.microsoft.com/en-us/aspnet/core/blazor/supported-platforms)
+* [ASP.NET Core supported platforms](https://learn.microsoft.com/en-us/aspnet/core/blazor/supported-platforms?view=aspnetcore-8.0)
