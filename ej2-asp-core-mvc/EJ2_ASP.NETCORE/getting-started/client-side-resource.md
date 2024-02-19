@@ -222,7 +222,7 @@ gulp.task("copy-client-resource", function (done) {
 
 Syncfusion provides an online web tool named [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) to generate scripts (JavaScript ES5) and styles for needed EJ2 Components by selecting it from the list of Syncfusion EJ2 Component.
 
-1.	Detailed step-by-step information to generate scripts and styles for required EJ2 components can be found from [CRG Documentation](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator).
+1.	Detailed step-by-step information to generate scripts and styles for required EJ2 components can be found from [CRG Documentation](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator).
 2.	Generate and download the custom scripts and styles from CRG.
 3.	Extract the downloaded custom scripts and styles into “**wwwroot**” folder of the ASP.NET Core Web Application.
 4.	Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`.

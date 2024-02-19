@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Search in ##Platform_Name## Auto Complete Component
+title: Custom Search in ##Platform_Name## AutoComplete Component | Syncfusion
 description: Learn here all about Custom Search in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Custom Search

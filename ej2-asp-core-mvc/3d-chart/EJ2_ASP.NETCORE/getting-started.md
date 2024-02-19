@@ -111,7 +111,7 @@ Now, add the Syncfusion ASP.NET Core 3D Chart tag helper in `~/Pages/Index.cshtm
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Chart control will be rendered in the default web browser.
 
-![ASP.NET Core 3D Chart Control](images/3d-chart.png)
+![ASP.NET Core 3D Chart Control](images/three-d-chart.png)
 
 N> `View Sample in GitHub`.
 
