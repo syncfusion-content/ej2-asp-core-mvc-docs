@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Theme Studio in ##Platform_Name## Control | Syncfusion
-description: Learn here all about theme studio in Syncfusion ##Platform_Name##. Customize and generate a theme for specific controls. 
+description: Learn here all about theme studio in Syncfusion ##Platform_Name##. Customize and generate a theme for specific controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -54,7 +54,7 @@ You can download the custom styles after customizing the theme colors.
 
 ![download-icon](images/download-icon.png)
 
-**Step 2:** Assign a theme name in the File Name field and click the Download button. If your application uses both Essential JS 1 and Essential JS 2 controls, then select the Include compatibility css check box before downloading the theme. This option will generate the custom theme for Essential JS 2 compatibility styles, which are compatible as Essential JS 1 styles. Refer this [link](../common/compatible-with-essential-JS1/) for more details about Essential JS 1 and Essential JS 2 compatibility.
+**Step 2:** Assign a theme name in the File Name field and click the Download button. If your application uses both Essential JS 1 and Essential JS 2 controls, then select the Include compatibility css check box before downloading the theme. This option will generate the custom theme for Essential JS 2 compatibility styles, which are compatible as Essential JS 1 styles. Refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/common/compatible-with-essential-js1) for more details about Essential JS 1 and Essential JS 2 compatibility.
 
 ![download-dialog](images/download-dialog.png)
 
