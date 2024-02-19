@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core ColorPicker tag helper in `~/Pages/Index.cs
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core ColorPicker control will be rendered in the default web browser.
 
-![ASP.NET Core ColorPicker Control](images/color-picker.PNG)
+![ASP.NET Core ColorPicker Control](images/color-picker.png)
 
 ## Inline type
 

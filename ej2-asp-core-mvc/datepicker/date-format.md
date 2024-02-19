@@ -17,7 +17,7 @@ By default the DatePicker's format is based on the culture. You can also set the
 
 N> Once the date format property has been defined, it will be common to all the cultures.
 
-To know more about the date format standards, refer to the [`Internationalization Date Format`](../common/internationalization/) section.
+To know more about the date format standards, refer to the [`Internationalization Date Format`](https://ej2.syncfusion.com/aspnetcore/documentation/datepicker/globalization) section.
 
 The following example demonstrates the DatePicker with the custom format (`yyyy-MM-dd`).
 

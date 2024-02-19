@@ -15,7 +15,7 @@ The ComboBox has been provided with several options to customize each list item,
 
 ## Item template
 
-The content of each list item within the ComboBox can be customized with the help of [itemTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~ItemTemplate.html) property.
+The content of each list item within the ComboBox can be customized with the help of [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_ItemTemplate) property.
 
 In the following sample, each list item is split into two columns to display relevant data.
 
@@ -43,7 +43,7 @@ In the following sample, each list item is split into two columns to display rel
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be customized with the help of [groupTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~GroupTemplate.html) property. This template is common for both inline and floating group header template.
+The group header title under which appropriate sub-items are categorized can also be customized with the help of [groupTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_GroupTemplate) property. This template is common for both inline and floating group header template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -69,7 +69,7 @@ The group header title under which appropriate sub-items are categorized can als
 
 ## Header template
 
-The header element is shown statically at the top of the popup list items within the ComboBox, and any custom element can be placed as a header element using the [headerTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~HeaderTemplate.html) property.
+The header element is shown statically at the top of the popup list items within the ComboBox, and any custom element can be placed as a header element using the [headerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_HeaderTemplate) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -95,7 +95,7 @@ The header element is shown statically at the top of the popup list items within
 
 ## Footer template
 
-The ComboBox has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using the [footerTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~FooterTemplate.html) property.
+The ComboBox has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using the [footerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_FooterTemplate) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -121,7 +121,7 @@ The ComboBox has options to show a footer element at the bottom of the list item
 
 ## No records template
 
-The ComboBox is provided with support to custom design the popup list content when no data is found and no matches are found on search with the help of [noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~NoRecordsTemplate.html) property.
+The ComboBox is provided with support to custom design the popup list content when no data is found and no matches are found on search with the help of [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_NoRecordsTemplate) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -147,7 +147,7 @@ The ComboBox is provided with support to custom design the popup list content wh
 
 ## Action failure template
 
-There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~ActionFailureTemplate.html) property.
+There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_ActionFailureTemplate) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -173,6 +173,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG
 
 ## See also
 
-* [How to acheive filtering](./filtering/)
-* [How to group the data using header](./grouping/)
-* [How to show the list items with icon](./how-to/icons-support/)
+* [How to acheive filtering](https://ej2.syncfusion.com/aspnetcore/documentation/combo-box/filtering)
+* [How to group the data using header](https://ej2.syncfusion.com/aspnetcore/documentation/combo-box/grouping)
+* [How to show the list items with icon](https://ej2.syncfusion.com/aspnetcore/documentation/combo-box/how-to/icons-support)
