@@ -38,7 +38,7 @@ Syncfusion ASP.NET Core themes can be used in your ASP.NET Core application by r
 Using the below approaches the themes can be referenced in the ASP.NET Core application,
 
 1. [CDN](#cdn-reference) - Used to reference complete css via static web assets.
-2. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/) - Used to generate resources only for the selected (used) components.
+2. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator) - Used to generate resources only for the selected (used) components.
 3. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
 4. [NPM Packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet's in an application.
 5. [LibMan](#libman) - Used to downloads popular libraries and frameworks from a file system or a content delivery network (CDN) in an application.
@@ -625,7 +625,7 @@ You can add the theme for the ASP.NET Core applications through **npm packages**
 * To install Web Compiler, open Visual Studio and click the **Manage Extensions** in the toolbar.
 
 ![Themes-npm-package-extension](images/themes-npm-package-extension.png)
- 
+
 ![Themes-npm-package-web-compiler](images/themes-npm-package-web-compiler.png)
 
 * Open Command Prompt from the application root directory and run the following command to install the Syncfusion `node_modules` in this application.
@@ -651,7 +651,7 @@ npm install @syncfusion/ej2
 
 * Right-click the `SCSS` file and click the Web Compiler to compile the file.
 
-![Themes-npm-packages-compile](images/themes-npm-packages-compile.png) 
+![Themes-npm-packages-compile](images/themes-npm-packages-compile.png)
 
 * The `compilerconfig.json` file is created. Then, provide the location of the compiled CSS file and include a path as shown in the following code snippet.
 
@@ -692,7 +692,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-cs
 
 ## LibMan
 
-Library Manager ([LibMan](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/libman-vs?view=aspnetcore-6.0)) is a client-side library acquisition tool that is simple to use. LibMan is a program that downloads popular libraries and frameworks from a file system or a content delivery network (CDN).
+Library Manager ([LibMan](https://learn.microsoft.com/en-us/aspnet/core/client-side/libman/libman-vs?view=aspnetcore-6.0)) is a client-side library acquisition tool that is simple to use. LibMan is a program that downloads popular libraries and frameworks from a file system or a content delivery network (CDN).
 
 LibMan offers the following advantages,
 

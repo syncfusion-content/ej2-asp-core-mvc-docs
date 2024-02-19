@@ -11,7 +11,7 @@ documentation: ug
 
 # Data binding in ##Platform_Name## AutoComplete Control
 
-The AutoComplete loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~DataSource.html) property. It supports the data type of array or [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html).
+The AutoComplete loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property. It supports the data type of array or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
 
 The AutoComplete also supports different kind of data services such as OData, OData V4, Web API and data formats such as XML, JSON, JSONP with the help of DataManager Adaptors.
 
@@ -55,7 +55,7 @@ The AutoComplete has support to load array of primitive data such as strings and
 
 ### Array of object
 
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~Fields.html) property.
+The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#fields) property.
 
 In the following example, `Name` column from complex data have been mapped to the `value` field.
 
@@ -86,7 +86,7 @@ In the following example, `Name` column from complex data have been mapped to 
 
 ### Array of complex object
 
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~Fields.html) property.
+The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#fields) property.
 
 In the following example, `Country.CountryId` column from complex data have been mapped to the `value` field.
 
@@ -117,7 +117,7 @@ In the following example, `Country.CountryId` column from complex data have be
 
 ## Bind to remote data
 
-The AutoComplete supports retrieval of data from remote data services with the help of [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html) control. The [Query](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoComplete~Query.html) property is used to fetch data from the database and bind it to the AutoComplete.
+The AutoComplete supports retrieval of data from remote data services with the help of [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html) control. The [Query](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Query) property is used to fetch data from the database and bind it to the AutoComplete.
 
 The following sample displays the first 6 contacts from the `Customers` table of the `Northwind` data service.
 
@@ -266,6 +266,6 @@ To avoid post back for every action, set the autocomplete to load all data on in
 
 ## See Also
 
-* [How to load data using template](./templates/#item-template)
-* [How to group the data using header](./grouping/)
-* [How to filter the bound data](./filtering/)
+* [How to load data using template](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/templates#item-template)
+* [How to group the data using header](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/grouping)
+* [How to filter the bound data](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/filtering)
