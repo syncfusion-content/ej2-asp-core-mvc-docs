@@ -98,7 +98,7 @@ Now, add the Syncfusion ASP.NET Core CheckBox tag helper in `~/Pages/Index.cshtm
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core CheckBox control will be rendered in the default web browser.
 
-![ASP.NET Core CheckBox Control](images/check-box.PNG)
+![ASP.NET Core CheckBox Control](images/check-box.png)
 
 ## Change the CheckBox state
 

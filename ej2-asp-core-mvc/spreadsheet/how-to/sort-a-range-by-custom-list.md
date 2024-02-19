@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sort A Range By Custom List in ##Platform_Name## Spreadsheet Component
+title: Sort A Range By Custom List in ##Platform_Name## Spreadsheet Component | Syncfusion
 description: Learn here all about Sort A Range By Custom List in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sort A Range By Custom List
@@ -43,5 +43,5 @@ In the following demo, the `Trustworthiness` column is sorted based on the custo
 ## See Also
 
 * [Filtering](./filter)
-* [Sorting](./sort)
+* [Sorting](https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/sort)
 * [Hyperlink](./link)

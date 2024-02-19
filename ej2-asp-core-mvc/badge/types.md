@@ -48,7 +48,7 @@ The Essential JS 2 Badge has the following predefined styles that can be used wi
 {% endif %}
 
 
-![Badge Styles](images/badgestyles.PNG)
+![Badge Styles](images/badgestyles.png)
 
 ## Badge types
 
@@ -87,7 +87,7 @@ The circle badge style can be applied by adding the modifier class `.e-badge-cir
 {% endif %}
 
 
-![Badge Circle Type](images/circle.PNG)
+![Badge Circle Type](images/circle.png)
 
 ### Pill
 
@@ -114,7 +114,7 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 {% endif %}
 
 
-![Badge Pill Type](images/pill.PNG)
+![Badge Pill Type](images/pill.png)
 
 ### Link
 
@@ -141,7 +141,7 @@ When badge modifier classes are applied to the anchor tag, the badge’s appeara
 {% endif %}
 
 
-![Badge Link Type](images/link.PNG)
+![Badge Link Type](images/link.png)
 
 ### Notification
 
@@ -168,7 +168,7 @@ The notification badge style can be applied by adding the modifier class `.e-bad
 {% endif %}
 
 
-![Badge Notification Type](images/notification.PNG)
+![Badge Notification Type](images/notification.png)
 
 ### Dot
 
@@ -195,7 +195,7 @@ Dot can be applied by adding the modifier class `.e-badge-dot` to the target ele
 {% endif %}
 
 
-![Badge Dot Type](images/dot.PNG)
+![Badge Dot Type](images/dot.png)
 
 ### Overlap
 
@@ -222,7 +222,7 @@ The overlap badge can be used with `notification` or `dot` badge, which overlaps
 {% endif %}
 
 
-![Badge Overlap Type](images/overlap.PNG)
+![Badge Overlap Type](images/overlap.png)
 
 ### Position
 
@@ -248,6 +248,6 @@ The default position of the `notification` or `dot` badge is top. But, the posit
 {% endtabs %}
 {% endif %}
 
-![Badge Position Type](images/position.PNG)
+![Badge Position Type](images/position.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Badge/BadgeTypesSample).
