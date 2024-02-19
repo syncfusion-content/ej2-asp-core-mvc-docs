@@ -2,7 +2,7 @@
 layout: post
 title: Comparative Bar in ##Platform_Name## Bullet Chart Component
 description: Learn here all about Comparative Bar in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+platform: ej2-core-mvc
 control: Comparative Bar
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -17,10 +17,10 @@ The line marker that runs perpendicular to the orientation of the graph is known
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/bullet-chart/target-bar/target-bar/tagHelper %}
+{% include code-snippet/bullet-chart/target-bar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Target-bar.cs" %}
-{% include code-snippet/bullet-chart/target-bar/target-bar/target-bar.cs %}
+{% include code-snippet/target-bar/target-bar/target-bar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
