@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Drop Down List Component
+title: Filtering in ##Platform_Name## Drop Down List Component | Syncfusion
 description: Learn here all about filtering in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filtering

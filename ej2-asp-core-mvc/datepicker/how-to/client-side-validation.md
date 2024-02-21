@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Client Side Validation in ##Platform_Name## Datepicker Component
+title: Client Side Validation in Syncfusion ##Platform_Name## Datepicker
 description: Learn here all about Client Side Validation in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Client Side Validation

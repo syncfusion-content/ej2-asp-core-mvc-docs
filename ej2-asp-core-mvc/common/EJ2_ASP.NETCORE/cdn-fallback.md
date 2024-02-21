@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CDN fallback in ASP.NET Core | Syncfusion
-description: Learn here about content delivery network (CDN) fallback handling in ASP.NET Core app.
+description: Learn here about content delivery network (CDN) fallback handling in Syncfusion ASP.NET Core controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

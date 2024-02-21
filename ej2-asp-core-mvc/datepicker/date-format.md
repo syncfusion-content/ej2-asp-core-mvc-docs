@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date Format in ##Platform_Name## Datepicker Component
+title: Date Format in ##Platform_Name## Datepicker Component | Syncfusion
 description: Learn here all about Date Format in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Date Format
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Date Format
+# Date Format in Syncfusion Datepicker Component
 
 Date format is a way of representing the date value in different string format in textbox.
 

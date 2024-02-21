@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Drop Down List Control
+title: Getting Started with ##Platform_Name## Drop Down List Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Drop Down List control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -128,4 +128,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-* [How to bind the data](./data-binding/)
+* [How to bind the data](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/data-binding)

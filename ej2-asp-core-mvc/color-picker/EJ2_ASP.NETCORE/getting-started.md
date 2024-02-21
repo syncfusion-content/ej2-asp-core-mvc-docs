@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Color Picker Control
+title: Getting Started with ##Platform_Name## Syncfusion Color Picker Control
 description: Checkout and learn about getting started with ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
