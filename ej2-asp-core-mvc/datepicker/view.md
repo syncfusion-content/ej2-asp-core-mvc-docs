@@ -1,6 +1,6 @@
 ---
 layout: post
-title: View in ##Platform_Name## Datepicker Component
+title: View in ##Platform_Name## Datepicker Component | Syncfusion
 description: Learn here all about View in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: View
@@ -73,4 +73,4 @@ N> Always the depth view has to be smaller than the start view, otherwise the vi
 
 
 
-N> To know more about Calendar views refer the Calendar's [Calendar Views](../calendar/calendar-views/) section.
+N> To know more about Calendar views refer the Calendar's [Calendar Views](https://ej2.syncfusion.com/aspnetcore/documentation/calendar/calendar-views) section.
