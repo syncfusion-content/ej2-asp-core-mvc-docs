@@ -4,7 +4,7 @@ title: Accessibility in Syncfusion ##Platform_Name## control
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common
-domainurl: ##DomainURL##
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
