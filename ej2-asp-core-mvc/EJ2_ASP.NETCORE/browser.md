@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Browser Compatibility in ##Platform_Name## controls
-description: Learn here all about Browser compatibility of Syncfusion ##Platform_Name## controls and more.
+title: Browser Compatibility in ##Platform_Name## controls | Syncfusion
+description: Learn here all about Browser compatibility of Syncfusion ##Platform_Name## controls in desktop and mobile devices.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -23,4 +23,4 @@ The Syncfusion ASP.NET Core controls are supported by all modern web browsers on
 
 ## See also
 
-* [ASP.NET Core supported platforms](https://docs.microsoft.com/en-us/aspnet/core/blazor/supported-platforms)
+* [ASP.NET Core supported platforms](https://learn.microsoft.com/en-us/aspnet/core/blazor/supported-platforms?view=aspnetcore-8.0)

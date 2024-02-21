@@ -46,7 +46,7 @@ The Essential JS 2 Avatar has the following predefined sizes that can be used wi
 {% endif %}
 
 
-![Avatar Size](./images/size.PNG)
+![Avatar Size](./images/size.png)
 
 ## Avatar types
 
@@ -105,6 +105,6 @@ The circle avatar style can be applied by adding the modifier class `.e-avatar-c
 {% endtabs %}
 {% endif %}
 
-![Avatar Circle](./images/circle.PNG)
+![Avatar Circle](./images/circle.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Avatar/AvatarUGSample).

@@ -13,7 +13,7 @@ documentation: ug
 
 The `format` feature used to customize the units of Slider values to desired format. The formatted values will also be applied to the ARIA attributes of the slider. There are two ways of achieving formatting in slider.
 
-* Use the [format](https://ej2.syncfusion.com/documentation/slider/api-tooltipData.html?lang=es5#format) API of slider which utilizes our [Internationalization](../common/internationalization#loading-culture-data) to format values.
+* Use the [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTooltipData.html#Syncfusion_EJ2_Inputs_SliderTooltipData_Format) API of slider which utilizes our [Internationalization](../common/internationalization#loading-culture-data) to format values.
 
 * Customize using the events namely `renderingTicks` and `tooltipChange`.
 

@@ -10,9 +10,9 @@ documentation: ug
 
 
 <!-- markdownlint-disable MD002 MD022 -->
-## Spinner
+# Spinner
 
-### Change spinner position
+## Change spinner position
 
 Spinner position can be changed by modifying the `position` property of [`spinSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_SpinSettings). By default, the spinner is positioned at the left of the ProgressButton. You can position it at the `left`, `right`, `top`, `bottom`, or `center` of the text content.
 
