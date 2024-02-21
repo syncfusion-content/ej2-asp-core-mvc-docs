@@ -22,7 +22,7 @@ You can disable the animation by setting the [enable](https://help.syncfusion.co
 The example demonstrates the animation `Duration` and `Delay` settings for the Stepper.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/animation/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/animation/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
