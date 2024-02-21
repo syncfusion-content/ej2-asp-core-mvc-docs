@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## DropDownButton Control
+title: Getting Started with Syncfusion ##Platform_Name## DropDownButton Control
 description: Checkout and learn about getting started with ##Platform_Name## DropDownButton control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -98,11 +98,11 @@ Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core DropDownButton control will be rendered in the default web browser.
 
-![ASP.NET Core DropDownButton Control](images/drop-down-button.PNG)
+![ASP.NET Core DropDownButton Control](images/drop-down-button.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DropDownButton/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
-* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
