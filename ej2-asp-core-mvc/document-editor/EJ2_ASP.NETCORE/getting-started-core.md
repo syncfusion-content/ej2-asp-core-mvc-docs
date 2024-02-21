@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Document Editor Control
+title: Getting Started with Syncfusion ##Platform_Name## Document Editor Control
 description: Checkout and learn about getting started with ##Platform_Name## Document Editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
@@ -111,7 +111,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 ## See also
 
-* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [How to localize the Documenteditor container](../document-editor/global-local).
 * [How to load the document by default](../document-editor/how-to/open-default-document).

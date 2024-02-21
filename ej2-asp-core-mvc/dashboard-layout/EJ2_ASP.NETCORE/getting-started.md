@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Dashboard Layout Control
+title: Getting Started with ##Platform_Name## Syncfusion Dashboard Layout
 description: Checkout and learn about getting started with ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -91,13 +91,13 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 Now, add the Syncfusion ASP.NET Core DashboardLayout tag helper in `~/Pages/Index.cshtml` page.
 
 * Defined the panels property as the attribute in the content template.
-* Using the [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property through tag helper.
+* Using the [`panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property through tag helper.
 
 ### Setting the panels property using content template
 
-DashboardLayout control can be rendered by using the [`ejs-dashboardlayout`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout.html) tag helper in ASP.NET Core application. Add the below simple code to your `index.cshtml` page which is available within the `Views/Home` folder, to initialize the DashboardLayout.
+DashboardLayout control can be rendered by using the [`ejs-dashboardlayout`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html) tag helper in ASP.NET Core application. Add the below simple code to your `index.cshtml` page which is available within the `Views/Home` folder, to initialize the DashboardLayout.
 
-In the following sample, the dashboardlayout is rendered with [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property using content template.
+In the following sample, the dashboardlayout is rendered with [`panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property using content template.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -115,13 +115,13 @@ public class spacingModel
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core DashboardLayout control will be rendered in the default web browser.
 
-![Dashboard content template](images/content_template.PNG)
+![Dashboard content template](images/content_template.png)
 
 ### Setting the panels property using tag helper
 
-You can render the DashboardLayout control by using the **panels** property through [`e-dashboardlayout-panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayoutPanels.html) tag helper.
+You can render the DashboardLayout control by using the **panels** property through [`e-dashboardlayout-panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanels.html) tag helper.
 
-In the following sample, the dashboardlayout is rendered with [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property using tag helper.
+In the following sample, the dashboardlayout is rendered with [`panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property using tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -137,11 +137,11 @@ public class spacingModel
 {% endhighlight %}
 {% endtabs %}
 
-![Dashboard tag helper](images/tag_helper.PNG)
+![Dashboard tag helper](images/tag_helper.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DashboardLayout/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
-* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

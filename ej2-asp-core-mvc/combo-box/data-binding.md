@@ -11,9 +11,9 @@ documentation: ug
 
 # Data Binding in Combo Box Control
 
-The ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~DataSource.html) property. It supports the data type of `array` or [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html).
+The ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_DataSource) property. It supports the data type of `array` or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
 
-The ComboBox also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html) adaptors.
+The ComboBox also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html) adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -56,7 +56,7 @@ The ComboBox has supported to load array of primitive data such as strings and n
 
 ### 2. Array of JSON data
 
-The ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~Fields.html) property.
+The ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_Fields) property.
 
 In the following example, `Vegetable` column from complex data has been mapped to the `value` field.
 
@@ -84,7 +84,7 @@ In the following example, `Vegetable` column from complex data has been mapped t
 
 ### 3. Array of Complex data
 
-The ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~Fields.html) property.
+The ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_Fields) property.
 
 In the following example, `Code.Id` column and `Country.CountryId` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -112,7 +112,7 @@ In the following example, `Code.Id` column and `Country.CountryId` column from c
 
 ## Binding remote data
 
-The ComboBox supports retrieval of data from remote data services with the help of [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html) component. The [Query](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~Query.html) property is used to fetch data from the database and bind it to the ComboBox.
+The ComboBox supports retrieval of data from remote data services with the help of [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html) component. The [Query](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_Query) property is used to fetch data from the database and bind it to the ComboBox.
 
 In the following sample, displayed first 6 contacts from the `customer` table of `Northwind` Data Service.
 
@@ -227,7 +227,7 @@ Use the `WebApiAdaptor` to bind ComboBox with Web API created using OData.
 
 ### Offline mode
 
-To avoid post back for every action, set the ComboBox to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html).
+To avoid post back for every action, set the ComboBox to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

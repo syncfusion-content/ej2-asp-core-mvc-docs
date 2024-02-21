@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Color Picker Control
+title: Getting Started with ##Platform_Name## Syncfusion Color Picker Control
 description: Checkout and learn about getting started with ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core ColorPicker tag helper in `~/Pages/Index.cs
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core ColorPicker control will be rendered in the default web browser.
 
-![ASP.NET Core ColorPicker Control](images/color-picker.PNG)
+![ASP.NET Core ColorPicker Control](images/color-picker.png)
 
 ## Inline type
 
