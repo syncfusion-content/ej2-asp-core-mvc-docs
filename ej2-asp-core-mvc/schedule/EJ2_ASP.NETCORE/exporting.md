@@ -13,6 +13,11 @@ documentation: ug
 
 The Scheduler supports exporting all its appointments both to an Excel or ICS extension file at client-side. It offers different client-side methods to export its appointments in an Excel or ICal format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
 
+To get start quickly with ASP.NET Core Scheduler exporting, you can check on this video:
+
+{% youtube
+"youtube:https://www.youtube.com/watch?v=leP6CAluwiY"%}
+
 ## Excel Exporting
 
 The Scheduler allows you to export all its events into an Excel format file by using the [`exportToExcel`] client-side method. By default, it exports all the default fields of Scheduler mapped through `<e-schedule-eventsettings>` property.

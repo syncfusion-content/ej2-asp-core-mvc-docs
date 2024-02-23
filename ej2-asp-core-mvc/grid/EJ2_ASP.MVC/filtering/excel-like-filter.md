@@ -70,8 +70,8 @@ In the provided example, On-Demand Excel filter has been enabled for the ##Platf
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/checkbox-excel-filter/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Excelfilter.cs" %}
-{% include code-snippet/grid/checkbox-excel-filter/excelfilter.cs %}
+{% highlight c# tabtitle="OnDemandExcelFilter.cs" %}
+{% include code-snippet/grid/checkbox-excel-filter/ondemandexcelfilter.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,8 +81,8 @@ In the provided example, On-Demand Excel filter has been enabled for the ##Platf
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/checkbox-excel-filter/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Excelfilter.cs" %}
-{% include code-snippet/grid/checkbox-excel-filter/excelfilter.cs %}
+{% highlight c# tabtitle="OnDemandExcelFilter.cs" %}
+{% include code-snippet/grid/checkbox-excel-filter/ondemandexcelfilter.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

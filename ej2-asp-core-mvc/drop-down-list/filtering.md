@@ -164,6 +164,6 @@ DropDownList supports diacritics filtering which will ignore the [diacritics](ht
 
 ## See Also
 
-* [How to limit the search result while filtering](./how-to/search-on-filtering/)
-* [How to highlight the matched characters in filtering](./how-to/highlight-filtering/)
-* [How to modify the result data using remote data source](./how-to/modify-data/)
+* [How to limit the search result while filtering](./how-to/search-on-filtering)
+* [How to highlight the matched characters in filtering](./how-to/highlight-filtering)
+* [How to modify the result data using remote data source](./how-to/modify-data)
