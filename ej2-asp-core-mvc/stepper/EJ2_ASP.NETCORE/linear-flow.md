@@ -15,7 +15,7 @@ The Stepper control enables users to progress sequentially through each step, en
 The example demonstrates the functionality of both linear and non-linear flow in the Stepper.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/linear/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/linear/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

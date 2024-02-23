@@ -14,7 +14,7 @@ This section explains how to render the ASP.NET Core application in IE11 web bro
 
 ## Prerequisites
 
-[System requirements for ASP.NET Core components](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
+[System requirements for ASP.NET Core components](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
 
 ## ASP.NET Core application
 

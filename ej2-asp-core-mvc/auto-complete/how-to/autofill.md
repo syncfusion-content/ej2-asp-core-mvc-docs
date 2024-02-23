@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Autofill in ##Platform_Name## Auto Complete Component
+title: Autofill in ##Platform_Name## Auto Complete Component | Syncfusion
 description: Learn here all about Autofill in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Autofill
@@ -11,7 +11,7 @@ documentation: ug
 
 # Autofill supported with AutoComplete
 
-The AutoComplete supports the autofill behavior with the help of [autofill](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~AutoFill.html) property. Whenever you change the input value, the AutoComplete will autocomplete your data by matching the typed character. Suppose, if no matches were found, then AutoComplete doesn't suggest any item.
+The AutoComplete supports the autofill behavior with the help of [autofill](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_Autofill_System_Boolean_) property. Whenever you change the input value, the AutoComplete will autocomplete your data by matching the typed character. Suppose, if no matches were found, then AutoComplete doesn't suggest any item.
 
 In the below sample, showcase that how to work `autofill` with AutoComplete.
 

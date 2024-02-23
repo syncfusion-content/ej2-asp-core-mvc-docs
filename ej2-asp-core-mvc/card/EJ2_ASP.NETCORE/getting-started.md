@@ -80,7 +80,7 @@ You can create Card with a header in a specific structure. For adding header you
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Card Control](images/card-control.PNG)
+![ASP.NET Core Card Control](images/card-control.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Card/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

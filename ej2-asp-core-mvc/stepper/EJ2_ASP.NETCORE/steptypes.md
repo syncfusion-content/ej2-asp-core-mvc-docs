@@ -17,8 +17,8 @@ The Stepper control provides support for displaying steps with the following ste
 In default type, the Stepper displays steps with a combination of both indicators and labels by setting the [stepType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_StepType) property as `Default`. By default, the Stepper displays steps in the `Default` type.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/stepType/default/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/stepType/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,8 +31,8 @@ In label type, the Stepper displays the steps with only the step labels by setti
 > When both label and text are defined, the label takes priority in displaying the steps.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/stepType/label/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/stepType/label/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,8 +52,8 @@ The following label positions are supported in Stepper:
 | `End` | Positions the label to the right side of each step. |
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/label-position/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/label-position/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,8 +64,8 @@ The following label positions are supported in Stepper:
 In indicator type, the Stepper displays steps with only the step indicators by setting the [stepType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_StepType) property as `Indicator`.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/stepper/stepType/indicator/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/stepType/indicator/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
