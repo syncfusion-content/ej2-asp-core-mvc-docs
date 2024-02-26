@@ -158,7 +158,7 @@ By customizing sort comparer, you can define the sort action as desired.
 
 N> * The `sortComparer` is an optional property of `sortDescriptor`.
 
-For custom sort comparer example, refer to the [`Sort a range by custom list`](./how-to/sort-a-range-by-custom-list) in the `how-to` section.
+For custom sort comparer example, refer to the [`Sort a range by custom list`](https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/how-to/sort-a-range-by-custom-list) in the `how-to` section.
 
 ## Known error validations
 
@@ -175,7 +175,7 @@ The following errors have been handled for sorting,
 
 ## See Also
 
-* [Sort a range by custom list](./how-to/sort-a-range-by-custom-list.md)
+* [Sort a range by custom list](https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/how-to/sort-a-range-by-custom-list)
 * [Hyperlink](./link)
 * [Filtering](./filter)
 * [Undo Redo](./undo-redo)

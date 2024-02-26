@@ -15,7 +15,7 @@ The AutoComplete has been provided with several options to customize each list i
 
 ## Item template
 
-The content of each list item within the AutoComplete can be customized with the help of [itemTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoComplete~ItemTemplate.html) property.
+The content of each list item within the AutoComplete can be customized with the help of [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_ItemTemplate) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,7 +41,7 @@ The content of each list item within the AutoComplete can be customized with the
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be customized with the help of [groupTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoComplete~GroupTemplate.html) property. This template is common for both inline and floating group header template.
+The group header title under which appropriate sub-items are categorized can also be customized with the help of [groupTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_GroupTemplate) property. This template is common for both inline and floating group header template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -67,7 +67,7 @@ The group header title under which appropriate sub-items are categorized can als
 
 ## Header template
 
-The header element is shown statically at the top of the suggestion list items within the AutoComplete, and any custom element can be placed as a header element using [headerTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoComplete~HeaderTemplate.html) property.
+The header element is shown statically at the top of the suggestion list items within the AutoComplete, and any custom element can be placed as a header element using [headerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_HeaderTemplate) property.
 
 In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
 
@@ -95,7 +95,7 @@ In the following sample, the list items and its headers are designed and display
 
 ## Footer template
 
-The AutoComplete has options to show a footer element at the bottom of the list items in the suggestion list. Here, you can place any custom element as a footer element using [footerTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoComplete~FooterTemplate.html) property.
+The AutoComplete has options to show a footer element at the bottom of the list items in the suggestion list. Here, you can place any custom element as a footer element using [footerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_FooterTemplate) property.
 
 In the following sample, footer element displays the total number of list items present in the AutoComplete.
 
@@ -123,7 +123,7 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The AutoComplete is provided with support to custom design the suggestion list content when no data is found and no matches are found on search with the help of [`noRecordsTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoComplete~NoRecordsTemplate.html) property.
+The AutoComplete is provided with support to custom design the suggestion list content when no data is found and no matches are found on search with the help of [`noRecordsTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_NoRecordsTemplate) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -149,7 +149,7 @@ The AutoComplete is provided with support to custom design the suggestion list c
 
 ## Action failure template
 
-There is also an option to custom design the suggestion list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoComplete~ActionFailureTemplate.html) property.
+There is also an option to custom design the suggestion list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_ActionFailureTemplate) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -175,6 +175,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG
 
 ## See also
 
-* [How to acheive filtering](./filtering/)
+* [How to acheive filtering](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/filtering)
 * [How to group the data using header](./grouping#grouping)
-* [How to show the list items with icon](./how-to/icon-support/)
+* [How to show the list items with icon](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/how-to/icon-support)

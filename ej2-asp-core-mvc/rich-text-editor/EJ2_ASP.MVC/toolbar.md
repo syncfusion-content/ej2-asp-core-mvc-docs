@@ -229,7 +229,7 @@ Click the “Ω” command to show the special characters list, and then choose 
 {% endtabs %}
 {% endif %}
 
-
+> The focus will be lost while rendering the required component for the custom toolbar, causing it to render outside the Rich Text Editor and triggering a blur event. During that time, proper functionality will not be achievable. Therefore, it is recommended to set the cssClass property or class as `e-rte-elements` in the dependency component.
 
 ## Quick Inline Toolbar
 

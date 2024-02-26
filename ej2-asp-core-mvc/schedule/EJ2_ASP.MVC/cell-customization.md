@@ -207,6 +207,57 @@ Providing the `minDate` and `maxDate` property with some date values, allows the
 
 N>By default, the `minDate` property value is set to new Date(1900, 0, 1) and `maxDate` property value is set to new Date(2099, 11, 31). The user can also set the customized `minDate` and `maxDate` property values.
 
+## Customizing the weekend cells background color
+
+You can customize the background color of weekend cells by utilizing the [`RenderCell`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event and checking the `elementType` option within the event.
+
+```javascript
+
+function onRendercell(args) {
+        if (args.elementType == "workCells") {
+            // To change the color of weekend columns in week view
+            if (args.date) {
+                if (args.date.getDay() === 6) {
+                    (args.element).style.background = '#ffdea2';
+                }
+                if (args.date.getDay() === 0) {
+                    (args.element).style.background = '#ffdea2';
+                }
+            }
+        }
+    }
+
+```
+
+And, the background color for weekend cells in the Month view through the [`cssClass`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_CssClass) property, which overrides the default CSS applied on cells.
+
+```css
+
+.schedule-cell-customization.e-schedule .e-month-view .e-work-cells:not(.e-work-days) {
+    background-color: #f08080;
+}
+
+```
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/customization/weekend-cell-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Weekend-cell-color.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/customization/weekend-cell-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Weekend-cell-color.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
 ## How to disable multiple cell and row selection in Schedule
 
 By default, the `AllowMultiCellSelection` and `AllowMultiRowSelection` properties of the Schedule are set to `true`. So, the Schedule allows user to select multiple cells and rows. If the user want to disable this multiple cell and row selection. The user can disable this feature by setting up `false` to these properties.

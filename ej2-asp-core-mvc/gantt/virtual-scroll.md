@@ -13,7 +13,7 @@ documentation: ug
 
 Virtual Scroll support in Gantt allows you to load large amount of data without performance degradation. To enable Virtual Scrolling, you need to inject `VirtualScroll` module in Gantt.
 
-## Row Virtualization
+## Row virtualization
 
 Row virtualization allows you to load and render a large number of tasks in Gantt with effective performance. In this mode, all tasks are fetched initially from the datasource and rendered in the DOM within a compact viewport area.
 
@@ -48,7 +48,36 @@ This mode can be enable by setting the `EnableVirtualization` property to `true`
 
 ![Alt text](images/virtual-scroll.png)
 
-## Limitations for Virtual Scroll
+## Timeline virtualization
+
+Timeline virtualization allows you to load a data source having large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.
+
+This mode can be enable by setting the [EnableTimelineVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableTimelineVirtualization) property to `true`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/virtual-scroll-cs2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Timeline-Virtual-scroll.cs" %}
+{% include code-snippet/gantt/virtual-scroll-cs2/virtual-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/virtual-scroll-cs2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Timeline-Virtual-scroll.cs" %}
+{% include code-snippet/gantt/virtual-scroll-cs2/virtual-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Limitations for virtual scroll
 
 * Due to the element height limitation in browsers, the maximum number of records loaded is limited by the browser capacity.
 * Cell selection will not be persisted.

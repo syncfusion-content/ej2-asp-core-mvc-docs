@@ -1,0 +1,26 @@
+@Html.EJS().Button("getFilterData").Content("Get Filtered Data").Render();
+@Html.EJS().Spreadsheet("spreadsheet").AllowFiltering(true).Sheets((sheet) =>
+{
+    sheet.Ranges((ranges) =>
+    {
+        ranges.DataSource(@ViewBag.DefaultData).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    document.getElementById("getFilterData").addEventListener('click', function () {
+            var spreadsheet = document.getElementById("spreadsheet").ej2_instances[0];
+            var activeSheet = spreadsheet.getActiveSheet();
+            var usedRange = activeSheet.usedRange;
+            for (var i = 0; i <= usedRange.rowIndex; i++) {
+                // Get the filtered row using isFiltered property.
+                var filteredRow = (activeSheet.rows[i]).isFiltered;
+                if (!filteredRow) {
+                    var rowData = spreadsheet.getRowData(i);
+                    console.log("Row:", i + 1, "Cells", rowData);
+                }
+            }
+    });
+
+</script>
