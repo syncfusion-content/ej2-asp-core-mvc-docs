@@ -10,11 +10,11 @@ documentation: ug
 
 # PageRenderStarted and PageRenderCompleted event
 
-In Syncfusion PDF Viewer, `pageRenderStart` and `pageRenderCompleted` actions are events that occur during the rendering process of PDF documents. 
+In Syncfusion PDF Viewer, `PageRenderStarted` and `pageRenderCompleted` actions are events that occur during the rendering process of PDF documents. 
 
-**pageRenderStart** 
+**PageRenderStarted** 
 
-The `pageRenderStart` event is triggered when the rendering of a page in the PDF document begins. This event provides developers with an opportunity to perform any necessary initialization or setup before the rendering of the page content commences. It can be utilized to prepare resources, set up rendering parameters, or execute any other actions required before the page rendering process starts.
+The `PageRenderStarted` event is triggered when the rendering of a page in the PDF document begins. This event provides developers with an opportunity to perform any necessary initialization or setup before the rendering of the page content commences. It can be utilized to prepare resources, set up rendering parameters, or execute any other actions required before the page rendering process starts.
 
 **pageRenderCompleted**
 
@@ -25,18 +25,18 @@ The `pageRenderCompleted` event is triggered when the rendering of a page in the
 {% highlight html tabtitle="Standalone" %}
 \
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").DocumentLoad("download").EnableDownload(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").PageRenderStart("pageRenderStart").PageRenderCompleted("pageRenderCompleted").Render()
+    @Html.EJS().PdfViewer("pdfviewer").DocumentLoad("download").EnableDownload(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").PageRenderStarted("PageRenderStarted").PageRenderCompleted("pageRenderCompleted").Render()
 </div>
 
 <script>
 pdfviewer.pageRenderStart = args => {
    // This method is called when the page rendering starts
-  console.log('Rendering of page ' + e.pageNumber + ' started.');
+  console.log('Rendering of page ' + args.pageNumber + ' started.');
 };
 
 pdfviewer.pageRenderCompleted = args => {
    // This method is called when the page rendering completes
-  console.log('Rendering of page ' + e.pageNumber + ' completed.');
+  console.log('Rendering of page ' + args.pageNumber + ' completed.');
 };
 </script>
 
@@ -44,24 +44,24 @@ pdfviewer.pageRenderCompleted = args => {
 {% highlight html tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").DocumentLoad("download")..ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableDownload(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").PageRenderStart("pageRenderStart").PageRenderCompleted("pageRenderCompleted").Render()
+    @Html.EJS().PdfViewer("pdfviewer").DocumentLoad("download")..ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableDownload(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").PageRenderStarted("PageRenderStarted").PageRenderCompleted("pageRenderCompleted").Render()
 </div>
 
 <script>
 pdfviewer.pageRenderStart = args => {
    // This method is called when the page rendering starts
-  console.log('Rendering of page ' + e.pageNumber + ' started.');
+  console.log('Rendering of page ' + args.pageNumber + ' started.');
 };
 
 pdfviewer.pageRenderCompleted = args => {
    // This method is called when the page rendering completes
-  console.log('Rendering of page ' + e.pageNumber + ' completed.');
+  console.log('Rendering of page ' + args.pageNumber + ' completed.');
 };
 </script>
 
 {% endhighlight %}
 {% endtabs %}
 
-The provided code demonstrates how to subscribe to the `pageRenderStart` and `pageRenderCompleted` events in the Syncfusion PDF Viewer component. 
+The provided code demonstrates how to subscribe to the `PageRenderStarted` and `pageRenderCompleted` events in the Syncfusion PDF Viewer component. 
 
 [View sample in GitHub]()
