@@ -65,10 +65,13 @@ The PDF Viewer component followed the [keyboard interaction](https://www.w3.org/
 | **Press (Windows)** |**Press (Macintosh)** | **To do this** |
 | --- | --- | --- |
 |||**Shortcuts for page navigation**|
-| <kbd>Home</kbd> | <kbd>Function + Left arrow</kbd> |Navigate to the first page |
-| <kbd>End</kbd> |<kbd>Function + Right arrow</kbd> |Navigate to the last page |
-|<kbd>Up Arrow</kbd> |<kbd>Up Arrow</kbd> |Navigate to the previous page|
-| <kbd>Down Arrow</kbd> | <kbd>Down Arrow</kbd> | Navigate to the next page |
+| <kbd>CONTROL + Left Arrow (or) CONTROL + Up Arrow</kbd> | <kbd>COMMAND + Left Arrow (or) COMMAND + Up Arrow </kbd> |Navigate to the first page |
+| <kbd>CONTROL + Right Arrow (or) CONTROL + Down Arrow</kbd> |<kbd>COMMAND + Right Arrow (or) COMMAND + Down Arrow</kbd> |Navigate to the last page |
+|<kbd>Left Arrow</kbd> |<kbd> Left Arrow (or) Shift + Space </kbd> |Navigate to the previous page|
+| <kbd>Right Arrow</kbd> | <kbd>Right Arrow (or) Space</kbd> | Navigate to the next page |
+| <kbd>CONTROL + G</kbd> | <kbd>COMMAND + G</kbd> | Go To The Page|
+|<kbd>Up Arrow</kbd> |<kbd>Up Arrow </kbd> |Scroll up|
+| <kbd>Down Arrow</kbd> | <kbd>Down Arrow</kbd> | Scroll down|
 |||**Shortcuts for Zooming**|
 |<kbd>CONTROL + =</kbd> |<kbd>COMMAND + =</kbd> | Perform zoom-in operation |
 | <kbd>CONTROL + -</kbd> | <kbd>COMMAND + -</kbd> | Perform zoom-out operation |
@@ -82,8 +85,15 @@ The PDF Viewer component followed the [keyboard interaction](https://www.w3.org/
 |||**Shortcuts for the general operation**|
 | <kbd>CONTROL + Z</kbd> | <kbd>CONTROL + Z</kbd> |Undo the action|
 |<kbd>CONTROL + Y</kbd> |<kbd>CONTROL + Y</kbd> |Redo the action|
-| <kbd>CONTROL + P</kbd> | <kbd>CONTROL + P</kbd> |Print the document|
+| <kbd>CONTROL + P</kbd> | <kbd>CONTROL + P COMMAND + P(or) </kbd> |Print the document|
 |<kbd>Delete</kbd> |<kbd>Delete</kbd> |Delete the annotations and form fields|
+|<kbd>CONTROL + Shift + A</kbd> |<kbd>COMMAND + Shift + A</kbd> |Toggle Annotation Toolbar|
+|<kbd>CONTROL + Alt + 0</kbd> |<kbd>COMMAND + Option + 0</kbd> |Show Command panel|
+|<kbd>CONTROL + Alt + 2</kbd> |<kbd>COMMAND + Option + 2</kbd> |Show Bookmarks|
+|<kbd>CONTROL + Alt + 1</kbd> |<kbd>COMMAND + Option + 1</kbd> |Show Thumbnails|
+|<kbd>CONTROL + S</kbd> |<kbd>COMMAND + S</kbd> |Download|
+|<kbd>Shift + H</kbd> |<kbd>Shift + H</kbd> |Enable pan mode|
+|<kbd>Shift + V</kbd> |<kbd>Shift + V</kbd> |Enable text selection mode|
 
 ## Ensuring accessibility
 
