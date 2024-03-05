@@ -94,6 +94,124 @@ The PDF Viewer component followed the [keyboard interaction](https://www.w3.org/
 |<kbd>Shift + H</kbd> |<kbd>Shift + H</kbd> |Enable pan mode|
 |<kbd>Shift + V</kbd> |<kbd>Shift + V</kbd> |Enable text selection mode|
 
+The current implementation of our PDF Viewer includes keyboard shortcuts for various functions like scrolling, zooming, text search, printing, and annotation deletion.
+
+To enhance user experience, we're adding additional keyboard shortcuts for actions such as navigating between pages, accessing specific pages, toggling annotation tools, and displaying PDF elements like outlines, annotations, bookmarks, and thumbnails.
+
+To support this, we're introducing a new class called **commandManager**, which handles custom commands triggered by specific key gestures. These custom commands will be defined by users and executed accordingly.
+
+The **commandManager** will have a parameter called Commands, which will hold the collection of custom keyboard commands specified by users. Each custom command will be represented by a KeyboardCommand class, containing the `command name` and associated `keyboard combination`.
+
+Additionally, we're introducing the **keyboardCustomCommands** parameter for the CommandManager, which will utilize the EventCallback to handle keyboard events and trigger appropriate methods when specific key combinations are pressed.
+
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   commandManager="commandManager">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+
+    function commandManager() {
+       keyboardCommand: [{
+            name: 'customCopy',
+            gesture: {
+                pdfKeys: PdfKeys.G,
+                modifierKeys: ModifierKeys.Shift | ModifierKeys.Alt
+               }
+            },
+            {
+            name: 'customPaste',
+            gesture: {
+                pdfKeys: PdfKeys.H,
+                modifierKeys: ModifierKeys.Shift | ModifierKeys.Alt
+               }
+            },
+            {
+            name: 'customCut',
+            gesture: {
+                pdfKeys: PdfKeys.Z,
+                modifierKeys: ModifierKeys.Control
+               }
+            },
+            {
+            name: 'customSelectAll',
+            gesture: {
+                pdfKeys: PdfKeys.E,
+                modifierKeys: ModifierKeys.Control
+               }
+            },
+        ] 
+    }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   serviceUrl='/Index'
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   commandManager="commandManager">
+    </ejs-pdfviewer>
+</div>
+
+<script type="text/javascript">
+    function commandManager() {
+       keyboardCommand: [{
+            name: 'customCopy',
+            gesture: {
+                pdfKeys: PdfKeys.G,
+                modifierKeys: ModifierKeys.Shift | ModifierKeys.Alt
+               }
+            },
+            {
+            name: 'customPaste',
+            gesture: {
+                pdfKeys: PdfKeys.H,
+                modifierKeys: ModifierKeys.Shift | ModifierKeys.Alt
+               }
+            },
+            {
+            name: 'customCut',
+            gesture: {
+                pdfKeys: PdfKeys.Z,
+                modifierKeys: ModifierKeys.Control
+               }
+            },
+            {
+            name: 'customSelectAll',
+            gesture: {
+                pdfKeys: PdfKeys.E,
+                modifierKeys: ModifierKeys.Control
+               }
+            },
+        ] 
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+
+Each `keyboardCommand` object consists of a name property, specifying the `name` of the `custom command`, and a `gesture property`, defining the key gesture associated with the command.
+
+For example, the first command named `customCopy` is associated with the **G** key and requires both the **Shift** and **Alt** modifier keys to be pressed simultaneously.
+
+Additionally, there's an explanation of the key modifiers used in the gestures:
+
+* Ctrl corresponds to the Control key, represented by the value `1`.
+* Alt corresponds to the Alt key, represented by the value `2`.
+* Shift corresponds to the Shift key, represented by the value `4`.
+* Meta corresponds to the Command key on macOS or the Windows key on Windows, represented by the value `8`.
+
+This setup allows users to perform custom actions within the PDF viewer by pressing specific key combinations, enhancing the user experience and providing more efficient navigation and interaction options.
+
 ## Ensuring accessibility
 
 The PDF Viewer component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
