@@ -85,7 +85,7 @@ The PDF Viewer component followed the [keyboard interaction](https://www.w3.org/
 |||**Shortcuts for the general operation**|
 | <kbd>CONTROL + Z</kbd> | <kbd>CONTROL + Z</kbd> |Undo the action|
 |<kbd>CONTROL + Y</kbd> |<kbd>CONTROL + Y</kbd> |Redo the action|
-| <kbd>CONTROL + P</kbd> | <kbd>CONTROL + P COMMAND + P(or) </kbd> |Print the document|
+| <kbd>CONTROL + P</kbd> | <kbd>COMMAND + P</kbd> |Print the document|
 |<kbd>Delete</kbd> |<kbd>Delete</kbd> |Delete the annotations and form fields|
 |<kbd>CONTROL + Shift + A</kbd> |<kbd>COMMAND + Shift + A</kbd> |Toggle Annotation Toolbar|
 |<kbd>CONTROL + Alt + 0</kbd> |<kbd>COMMAND + Option + 0</kbd> |Show Command panel|
