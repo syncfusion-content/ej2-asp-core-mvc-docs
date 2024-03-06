@@ -126,6 +126,8 @@ public class CircularChartData
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Circular Chart 3D control will be rendered in the default web browser.
 
+![ASP.NET Core CircularChart3D Control](images/circular-chart-3d.png)
+
 N> `View Sample in GitHub`.
 
 ## See also
