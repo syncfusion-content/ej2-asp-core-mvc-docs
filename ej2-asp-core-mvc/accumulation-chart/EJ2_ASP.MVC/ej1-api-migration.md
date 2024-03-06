@@ -2,7 +2,7 @@
 layout: post
 title: Ej1 Api Migration in ##Platform_Name## Accumulation Chart Component
 description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+platform: ej2-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
