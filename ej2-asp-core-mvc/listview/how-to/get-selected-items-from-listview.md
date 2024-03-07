@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Get Selected Items From Listview in ##Platform_Name## Listview Control | Syncfusion
-description: Learn here all about Get Selected Items From Listview in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Get selected items in ASP.NET Core ListView Control | Syncfusion
+description: Learn here all about get selected items in Syncfusion ASP.NET Core ListView control, it's elements and more.
 platform: ej2-asp-core-mvc
 control: Get Selected Items From Listview
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Get selected items from ListView
+# Get selected items in ASP.NET Core ListView Control
 
 Single or many items can be selected by users in the ListView component. An API is used to get selected items from the list items. This is called as the [`getSelectedItems`](https://ej2.syncfusion.com/documentation/api/list-view/#getselecteditems) method.
 
