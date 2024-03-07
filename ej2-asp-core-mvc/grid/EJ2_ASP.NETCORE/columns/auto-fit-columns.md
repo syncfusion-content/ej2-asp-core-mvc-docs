@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutoFit Columns in ##Platform_Name## Grid Component
+title: AutoFit Columns in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about AutoFit Columns in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: AutoFit Columns
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# AutoFit Columns
+# AutoFit Columns in ASP.NET Core Grid Component
 
 The Grid has a feature that allows it to automatically adjust column widths based on the maximum content width of each column when you double-click on the resizer symbol located in a specific column header.  This feature ensures that all data in the grid rows is displayed without wrapping. To use this feature, you need to enable the resizer symbol in the column header by setting the [allowResizing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowResizing) property to true in the grid.
 
@@ -65,7 +65,7 @@ You can enable this feature by setting the [autoFit](https://help.syncfusion.com
 {% include code-snippet/grid/columns/autofit-column/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AutoFit.cs" %}
-{% include code-snippet/grid/columns/autofit/autofit-column.cs %}
+{% include code-snippet/grid/columns/autofit-column/autofit.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

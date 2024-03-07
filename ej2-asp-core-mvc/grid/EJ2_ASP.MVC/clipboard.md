@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clipboard in ##Platform_Name## Grid Component
+title: Clipboard in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Clipboard
@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Clipboard
+# Clipboard in ASP.NET MVC Grid Component
 
 The clipboard provides an option to copy selected rows or cells data into the clipboard.
 
