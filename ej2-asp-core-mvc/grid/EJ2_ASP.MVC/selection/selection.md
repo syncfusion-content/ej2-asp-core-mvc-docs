@@ -81,7 +81,7 @@ The grid supports three types of selection mode that can be set by using the [`M
 When you tap a grid row on touchscreen device, the tapped row is selected. It also shows a popup 
 ![selection in ASP.NET MVC Grid.](../../images/aspnet-mvc-grid-selection-popup.jpg) 
 for multi-row selection. To select multiple rows or cells, tap the popup
-![mselection in ASP.NET MVC Grid.](../../images/aspnet-mvc-grid-selection-multiple-row.jpg)  and then tap the desired rows or cells.
+![Multiple selection in ASP.NET MVC Grid.](../../images/aspnet-mvc-grid-selection-multiple-row.jpg)  and then tap the desired rows or cells.
 
 N> Multi-selection requires the selection `Type` to be `Multiple`.
 
