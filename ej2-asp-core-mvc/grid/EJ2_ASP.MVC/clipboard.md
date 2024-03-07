@@ -110,6 +110,7 @@ N> If [`EnableAutoFill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 
 * Since the string values are not parsed to number and date type, so when the selected string type cells are dragged to number type cells then it will display as **NaN**. For date type cells, when the selected string type cells are dragged to date type cells then it will display as an **empty cell**.
 * Linear series and the sequential data generations are not supported in this autofill feature.
+* The Auto Fill feature can only be applied to the viewport cell when enabling the features of virtual scrolling, infinite scrolling, or column virtualization in the grid.
 
 ## Paste
 
