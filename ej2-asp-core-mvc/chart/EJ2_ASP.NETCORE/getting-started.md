@@ -12,6 +12,8 @@ documentation: ug
 
 This section briefly explains about how to include [ASP.NET Core Chart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control in your ASP.NET Core application using Visual Studio.
 
+To get start quickly with ASP.NET Core Charts, you can check on this video:
+
 {% youtube "https://www.youtube.com/watch?v=Vll9DXQ7z4Q" %}
 
 ## Prerequisites
