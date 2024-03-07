@@ -134,3 +134,4 @@ The Splitter content can be provided through the `e-content-template` tag helper
 {% include code-snippet/splitter/content-template/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
