@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in ASP.NET MVC Grid Component | Syncfusion
-description: Learn here all about selection in Syncfusion Essential ASP.NET MVC Grid component of JS 2 it's elements and more details.
+description: Learn here all about selection in Syncfusion Essential ASP.NET MVC Grid component of JS 2, it's elements and more details.
 platform: ej2-asp-core-mvc
 control: Selection
 publishingplatform: ##Platform_Name##
