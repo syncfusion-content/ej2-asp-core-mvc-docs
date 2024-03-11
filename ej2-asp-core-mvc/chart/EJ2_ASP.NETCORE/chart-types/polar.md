@@ -11,6 +11,10 @@ documentation: ug
 
 # Polar in ##Platform_Name## Charts Component
 
+To get started with the ASP.NET Core Polar charts, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=cwIaOclRzwY" %}
+
 ## Polar
 
 To render a polar series, use series[`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`Polar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_Polar).
