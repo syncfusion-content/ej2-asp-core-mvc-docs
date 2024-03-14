@@ -10,18 +10,16 @@ documentation: ug
 
 # Reverse in ##Platform_Name## Timeline control
 
-This section explains how to display Timeline items in reverse order, starting with the most recent events. This is achieved using the reverse property of the Timeline control.
-
-By default, Timeline items are often ordered with the oldest events at the top (or left in horizontal orientation). Reversing the timeline allows users to view the most recent activity without needing to scroll through long lists.
+You can display the Timeline items in reverse order, for different alignments by using the `reverse` property which provides adaptability and improves user interaction.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/reverse/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/Timeline/reverse/reverse.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -29,10 +27,12 @@ By default, Timeline items are often ordered with the oldest events at the top (
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/Timeline/reverse/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/Timeline/reverse/reverse.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Reverse](images/reverse.png)

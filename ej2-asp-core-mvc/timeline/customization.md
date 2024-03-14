@@ -10,22 +10,22 @@ documentation: ug
 
 # Customization in ##Platform_Name## Timeline control
 
-The Timeline control empowers you to personalize its appearance beyond the basic structure. This section explains various ways you can customize the Timeline items.
+You can customize the Timeline items dot size, connectors, dot borders, dot outer space and more to personalize its appearance. This section explains the different ways for styling the items.
 
-## Connector Styling
+## Connector styling
 
-### Common Styling
+### Common styling
 
-Define styles applicable to all connectors throughout the timeline.
+You can define the styles applicable to the all the Timeline item connectors.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/customization/connector-common/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/connector-common/connectorcommon.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,26 +33,28 @@ Define styles applicable to all connectors throughout the timeline.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/customization/connector-common/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/connector-common/connectorcommon.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-### Individual Styling
+![Common styling](images/connector-common.gif)
 
-You can also apply unique styles to individual connectors, enabling you to visually differentiate specific items within the timeline.
+### Individual styling
+
+You can also apply unique styles to individual connectors, to differentiate specific items within the timeline.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/customization/connector-individual/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/connector-individual/connectorindividual.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -60,28 +62,30 @@ You can also apply unique styles to individual connectors, enabling you to visua
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/customization/connector-individual/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/connector-individual/connectorindividual.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-## Dot Styling
+![Individual styling](images/connector-individual.gif)
 
-### Dot Color
+## Dot styling
 
-Modify the color of the dots to enhance visual clarity and potentially highlight specific items or categories of events.
+### Dot color
+
+You can modify the color of the dots to highlight the specific Timeline items.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/customization/dot-color/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/dot-color/dotcolor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -89,26 +93,28 @@ Modify the color of the dots to enhance visual clarity and potentially highlight
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/customization/dot-color/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/dot-color/dotcolor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-### Dot Size
+![Dot color](images/dot-color.png)
 
-Adjust the size of the dot to make it larger or smaller as desired.
+### Dot size
+
+You can adjust the size of the dot to make it larger or smaller by using the `--dot-size` variable.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/customization/dot-size/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/dot-size/dotsize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -116,26 +122,28 @@ Adjust the size of the dot to make it larger or smaller as desired.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/customization/dot-size/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/dot-size/dotsize.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-### Dot Shadow
+![Dot size](images/dot-size.png)
 
-Add a subtle shadow effect to the dots, providing depth and dimension to the timeline, making it feel more visually engaging.
+### Dot shadow
+
+You can add shadow effects to the Timeline dots to make it feel visually engaging by using the `--dot-outer-space` & `--dot-border` variables.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/customization/dot-shadow/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/dot-shadow/dotshadow.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -143,26 +151,28 @@ Add a subtle shadow effect to the dots, providing depth and dimension to the tim
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/customization/dot-shadow/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/dot-shadow/dotshadow.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-### Dot Variant
+![Dot shadow](images/dot-shadow.png)
 
-You can achieve the desired dot variant by customizing the border, outline colors of the timeline dots.
+### Dot variant
+
+You can achieve the desired dot variant by customizing the border, outline and background colors of the Timeline dots.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/customization/dot-varient/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/dot-varient/dotvarient.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -170,10 +180,41 @@ You can achieve the desired dot variant by customizing the border, outline color
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/customization/dot-varient/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/customization/dot-varient/dotvarient.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Dot variant](images/dot-variant.png)
+
+### Dot outline
+
+By adding the `e-outline` class to the timeline cssClass property it enables the dots to have an outline state.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/timeline/customization/dot-outline/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Separator.cs" %}
+{% include code-snippet/timeline/customization/dot-outline/dotvarient.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/timeline/customization/dot-outline/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Separator.cs" %}
+{% include code-snippet/timeline/customization/dot-outline/dotvarient.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Dot outline](images/dot-outline.png)

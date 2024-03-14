@@ -10,23 +10,23 @@ documentation: ug
 
 # Template in ##Platform_Name## Timeline control
 
-The Timeline control allows you to customize the look and information displayed for each item, providing a unique experience for users. This customization is achieved using the `template` property, where you can define the content you want to show within each timeline item.
+The Timeline control allows you to customize the appearance for each item by using the `template` to modify the dot items, templated contents, progress bar styling and more.
 
-The template receives two pieces of information within its context:
+The `template` context receives the following information:
 
 | Type | Purpose |
 | --- | --- |
-| `item` | Represents the data specific to the particular timeline item. |
-| `currentItem` | Indicates the current index of the timeline item. |
+| `item` | Indicates the current data of the Timeline item. |
+| `currentItem` | Indicates the current index of the Timeline item. |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/template/template.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,10 +34,12 @@ The template receives two pieces of information within its context:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/template/template.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Template](template/reverse.png)

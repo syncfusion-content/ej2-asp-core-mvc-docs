@@ -10,20 +10,20 @@ documentation: ug
 
 # Alignment in ##Platform_Name## Timeline control
 
-The `align` property in the Timeline control determines how item content is positioned relative to each other within the timeline. The available values are `Before`, `After`, `Alternate` and `AlternateReverse`.
+You can display the Timeline content `Before`, `After`, `Alternate` and `AlternateReverse` by using the `align`property. The oppositeContent will be displayed parallel to the content when configured in the `TimelineItemModel`.
 
 ## Before
 
-The `Before` alignment places item content at the top and opposite content at the bottom in `horizontal` orientation whereas in `vertical`, it positions content to the left and opposite content to the right.
+In `Before` alignment, for `horizontal` orientation the item content is placed at the top and oppositeContent at the bottom whereas in `vertical`, the content to the left and oppositeContent to the right.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/align/before/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/align/before/before.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,26 +31,28 @@ The `Before` alignment places item content at the top and opposite content at th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/align/before/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/align/before/before.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Before Alignment](images/align-before.png)
 
 ## After
 
-The `After` alignment places item content at the bottom and opposite content at the top in `horizontal` orientation whereas in `vertical`, it positions content to the right and opposite content to the left.
+In `After` alignment, for `horizontal` orientation the item content is placed at the bottom and oppositeContent at the top whereas in `vertical`, the content to the right and oppositeContent to the left.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/align/after/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/align/after/after.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,26 +60,28 @@ The `After` alignment places item content at the bottom and opposite content at 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/align/after/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/align/after/after.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![After Alignment](images/align-after.png)
 
 ## Alternate
 
-The `Alternate` option positions item content in an alternating manner where items are arranged in a back-and-forth pattern, regardless of the Timeline's orientation.
+In `Alternate` alignment, the item content are arranged alternatively regardless of the Timeline orientation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/align/alternate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/align/alternate/alternate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -85,26 +89,28 @@ The `Alternate` option positions item content in an alternating manner where ite
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/align/alternate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/align/alternate/alternate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Alternate Alignment](images/align-alternate.png)
 
 ## Alternate reverse
 
-The `AlternateReverse` option organizes item content in a reverse alternating style providing an alternative method for displaying timeline items, regardless of the Timeline's orientation.
+In `AlternateReverse` alignment, the item content are arranged in reverse alternate regardless of the Timeline orientation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/align/alternate-reverse/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/align/alternate-reverse/alternatereverse.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -112,10 +118,12 @@ The `AlternateReverse` option organizes item content in a reverse alternating st
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/align/alternate-reverse/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/align/alternate-reverse/alternatereverse.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![AlternateReverse Alignment](images/align-alternate-reverse.png)

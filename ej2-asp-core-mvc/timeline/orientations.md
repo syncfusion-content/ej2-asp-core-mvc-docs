@@ -10,47 +10,20 @@ documentation: ug
 
 # Orientations in ##Platform_Name## Timeline control
 
-The `orientation` property in the Timeline control allows you to specify the layout direction of the Timeline.
-
-## Horizontal
-
-The Timeline items can be arranged along a horizontal axis, with each item positioned sequentially from left to right by setting the `orientation` property to `Horizontal`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+The Timeline control supports the display of items in both horizontal and vertical direction by using the `orientation`.
 
 ## Vertical
 
-By setting the `orientation` property to `Vertical`, the timeline items can be arranged from top to bottom manner. By default, the Timeline items are displayed in `vertical` orientation.
+You can display the items one below the other vertically by setting the `orientation` property to `Vertical`. By default, the items are displayed in vertical orientation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/orientations/horizontal/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/orientations/horizontal/horizontal.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,10 +31,41 @@ By setting the `orientation` property to `Vertical`, the timeline items can be a
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/orientations/horizontal/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/orientations/horizontal/horizontal.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Vertical](images/vertical.png)
+
+## Horizontal
+
+In horizontal orientation, the items are displayed in a side-by-side manner by setting the `orientation` property to `Horizontal`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/timeline/orientations/vertical/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Separator.cs" %}
+{% include code-snippet/timeline/orientations/vertical/vertical.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/timeline/orientations/vertical/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Separator.cs" %}
+{% include code-snippet/timeline/orientations/vertical/vertical.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Horizontal](images/horizontal.png)

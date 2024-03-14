@@ -43,16 +43,12 @@ The following ARIA attributes are used in the Timeline control:
 
 | Attributes | Purpose |
 | --- | --- |
-| `role=navigation` | The navigation role in a timeline control signifies its purpose as a navigational element. |
+| `role=navigation` | Specified its purpose as a navigational element. |
 | `aria-label` | Provides an accessibile name for an element when a visible label is not present |
 
 ## Ensuring accessibility
 
 The Timeline control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
-
-The accessibility compliance of the Timeline control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/Timeline.html) in a new window to evaluate the accessibility of the Timeline control with accessibility tools.
-
-{% previewsample "https://ej2.syncfusion.com/accessibility/Timeline.html" %}
 
 ## See also
 

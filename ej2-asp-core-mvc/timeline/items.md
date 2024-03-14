@@ -1,4 +1,4 @@
----
+	---
 layout: post
 title: Items in ##Platform_Name## Timeline Control | Syncfusion
 description: Checkout and learn about Items in Syncfusion ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
@@ -10,24 +10,24 @@ documentation: ug
 
 # Items in ##Platform_Name## Timeline control
 
-The `items` property in Timeline is responsible for providing the data that will be displayed as individual timeline entries where each item can be customized using various properties.
+The Timeline items can be added by using the `items` property. Each item can be configured with options such as `content`, `oppositeContent`, `dotCss`, `disabled` and `cssClass`.
 
-## Defining Content
+## Adding content
 
-The `content` property specifies the main text or information displayed within the timeline item.
+You can define the item content using the `content` property.
 
-### String-based Content
+### String-based content
 
-You can directly provide a simple, static content that describes the timeline item.
+You can define string content for the Timeline items.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/items/content/string-based/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/items/content/string-based/stringbased.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,26 +35,28 @@ You can directly provide a simple, static content that describes the timeline it
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/items/content/string-based/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/items/content/string-based/stringbased.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-### Template-based Content
+![String-based content](images/content.png)
 
-This allows you to have greater control over the content displayed in each item which enables you to define item content using HTML elements.
+### Templated content
+
+You can specify the template content for the items, by using the selector for an element in HTML.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/items/content/template-based/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/items/content/template-based/templatebased.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,26 +64,28 @@ This allows you to have greater control over the content displayed in each item 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/items/content/template-based/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/items/content/template-based/templatebased.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-## Adding Opposite Content
+![Templated content](images/content-template.png)
 
-The oppositeContent property defines additional content that appears opposite to the main content within the timeline item. Similar to the `content`, you can also define opposite content as either a `string` or a `template`.
+## Adding opposite content
+
+You can add additional information to each Timeline item, by using the `oppositeContent` property which is positioned opposite to the item content. Similar to the `content` property you can define `string` or `function` as contents to the oppositeContent.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/items/opposite-content/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/items/opposite-content/oppositecontent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -89,38 +93,40 @@ The oppositeContent property defines additional content that appears opposite to
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/items/opposite-content/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/items/opposite-content/oppositecontent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-## Defining Dot item
+![opposite content](images/opposite-content.png)
 
-The `dotCss` property allows you to specify a class to personalize the appearance of the dot associated with each timeline item.
+## Dot item
 
-### Displaying Icons
+You can define CSS class to set icons, background colors, or images to personalize the appearance of dots associated with each Timeline item by using the `dotCss` property.
 
-By using the `dotCss` property, you can define an Icon CSS class to render an icon in the timeline item.
+### Adding icons
 
-### Adding Images
+You can define the CSS class to show the icon for each item using the `dotCss` property.
 
-You can use the `dotCss` property to specify a class and set background image for it which embeds an image in the timeline item.
+### Adding images
 
-### Including Text
+You can include images for the Timeline items using the `dotCss` property, by setting the CSS `background-image` property.
 
-You can also define a class using the `dotCss` property and utilize the pseudo-selector to define the content property within the CSS to showcase text directly in timeline item.
+### Adding text
+
+You can display text for the Timeline items using the `dotCss` property, by adding text to the CSS `content` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/items/dot-item/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/items/dot-item/dotitem.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -128,26 +134,28 @@ You can also define a class using the `dotCss` property and utilize the pseudo-s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/items/dot-item/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/items/dot-item/dotitem.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-## Disabled Item
+![Dot items](images/dot-item.png)
 
-The `disabled` property determines whether the timeline item is active or inactive. When set to `true`, the item is disabled and may appear grayed out, indicating that it is not currently accessible.
+## Disabling items
+
+You can use the `disabled` property to disable an item when set to `true`. By default, the value is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/items/disabled/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/items/disabled/disabled.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -155,14 +163,15 @@ The `disabled` property determines whether the timeline item is active or inacti
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/items/disabled/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/items/disabled/disabled.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+![Disabling items](images/disabled.png)
 
 ## CSS class
 

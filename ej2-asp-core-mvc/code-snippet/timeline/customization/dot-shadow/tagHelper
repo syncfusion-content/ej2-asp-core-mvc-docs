@@ -1,0 +1,22 @@
+@using Syncfusion.EJ2.Layouts;
+
+<div class="container" style="height: 250px">
+    <ejs-timeline id="timeline">
+        <e-timeline-items>
+            <e-timeline-item content="Ordered"></e-timeline-item>
+            <e-timeline-item content="Shipped"></e-timeline-item>
+            <e-timeline-item content="Delivered"></e-timeline-item>
+        </e-timeline-items>
+    </ejs-timeline>
+</div>
+
+<style>
+    .e-timeline-item .e-dot {
+        --dot-outer-space: 3px;
+        --dot-border: 3px;
+        --dot-size: 20px;
+        outline-color: #dee2e6;
+        border-color: #fff;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5), 2px -2px 4px rgba(255, 255, 255, 0.5) inset;
+    }
+</style>

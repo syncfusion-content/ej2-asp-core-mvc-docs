@@ -1,0 +1,47 @@
+@using Syncfusion.EJ2.Layouts;
+
+<div class="container" style="height:250px">
+    <ejs-timeline id="timeline">
+        <e-timeline-items>
+            <e-timeline-item content="Filled" oppositeContent="dot-filled"></e-timeline-item>
+            <e-timeline-item content="Flat" oppositeContent="dot-flat"></e-timeline-item>
+            <e-timeline-item content="Outlined" oppositeContent="dot-outlined"></e-timeline-item>
+        </e-timeline-items>
+    </ejs-timeline>
+</div>
+
+<style>
+    .e-timeline-item.dot-filled .e-dot::before {
+        content: 'A';
+        color: #fff;
+    }
+
+    .e-timeline-item.dot-flat .e-dot::before {
+        content: 'B';
+        color: #fff;
+    }
+
+    .e-timeline-item.dot-outlined .e-dot::before {
+        content: 'C';
+    }
+
+    .e-timeline-item.dot-filled .e-dot {
+        background: #33cc33;
+        --dot-outer-space: 3px;
+        outline-color: #81ff05;
+        --dot-size: 25px;
+    }
+
+    .e-timeline-item.dot-flat .e-dot {
+        background: #33cc33;
+        --dot-size: 25px;
+        --dot-radius: 10%;
+    }
+
+    .e-timeline-item.dot-outlined .e-dot {
+        outline-color: #33cc33;
+        --dot-outer-space: 3px;
+        background-color: unset;
+        --dot-size: 25px;
+    }
+</style>

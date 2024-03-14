@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.Layouts
+
+<div id="container" style="height: 250px;">
+    @Html.EJS().Timeline("timeline").Items(ViewBag.orderStatus).Render()
+</div>
+
+<style>
+    .e-timeline-item.state-completed .e-dot {
+        background-color: #ff9900;
+        outline: 1px dashed #ff9900;
+        border-color: #ff9900;
+    }
+
+    .e-timeline-item.state-progress .e-dot {
+        background: #33cc33;
+        outline: 1px dashed #33cc33;
+        border-color: #33cc33;
+    }
+</style>

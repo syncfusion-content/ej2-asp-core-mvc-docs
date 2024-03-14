@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2.Layouts;
+
+<div class="container" style="height: 250px">
+    <ejs-timeline id="timeline">
+        <e-timeline-items>
+            <e-timeline-item content="Ordered" cssClass="state-completed"></e-timeline-item>
+            <e-timeline-item content="Shipped" cssClass="state-progress"></e-timeline-item>
+            <e-timeline-item content="Delivered"></e-timeline-item>
+        </e-timeline-items>
+    </ejs-timeline>
+</div>
+
+<style>
+    .e-timeline-item.state-completed .e-dot {
+        background-color: #ff9900;
+        outline: 1px dashed #ff9900;
+        border-color: #ff9900;
+    }
+
+    .e-timeline-item.state-progress .e-dot {
+        background: #33cc33;
+        outline: 1px dashed #33cc33;
+        border-color: #33cc33;
+    }
+</style>

@@ -12,19 +12,18 @@ documentation: ug
 
 This section describes the Timeline events that will be triggered when an appropriate actions are performed. The following events are available in the Timeline control.
 
-
 ## created
 
-The `created` event is triggered when the Timeline control is created and fully initialized.
+The Timeline control triggers the `created` event when the control rendering is completed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/events/beforeItemRender/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/events/beforeItemRender/beforeItemRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,26 +31,26 @@ The `created` event is triggered when the Timeline control is created and fully 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/events/beforeItemRender/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/events/beforeItemRender/beforeItemRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 ## beforeItemRender
 
-The `beforeItemRender` event is fired before each item is rendered in Timeline control. By utilizing this, you can modify the appearance or content of the items based on specific conditions.
+The Timeline control triggers the `beforeItemRender` event before rendering each item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
+{% include code-snippet/timeline/events/created/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/events/created/created.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,64 +58,10 @@ The `beforeItemRender` event is fired before each item is rendered in Timeline c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
+{% include code-snippet/timeline/events/created/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## Alternate
-
-The `Alternate` option positions item content in an alternating manner where items are arranged in a back-and-forth pattern, regardless of the Timeline's orientation.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## Alternate reverse
-
-The `AlternateReverse` option organizes item content in a reverse alternating style providing an alternative method for displaying timeline items, regardless of the Timeline's orientation.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/item-configuration/separator/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/item-configuration/separator/separator.cs %}
+{% include code-snippet/timeline/events/created/created.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
