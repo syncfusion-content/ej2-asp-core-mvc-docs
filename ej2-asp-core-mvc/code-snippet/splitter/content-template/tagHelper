@@ -1,0 +1,50 @@
+<ejs-splitter id="splitter" height="400px" width="100%" separatorSize="5" orientation="Horizontal">
+
+    <e-splitter-panes>
+
+        <e-splitter-pane size="75%">
+
+            <e-content-template>
+                
+                <div>
+
+                    <div class="row">
+
+                        <div class="col-12">
+
+                            I am the first bootstrap row in panel 1
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12">
+
+                            I am the second bootstrap row in panel 1
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </e-content-template>
+
+        </e-splitter-pane>
+
+    </e-splitter-panes>
+
+</ejs-splitter>
+
+<style>
+    .content {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        height: 100%;
+    }
+</style>
