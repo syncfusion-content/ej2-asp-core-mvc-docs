@@ -43,7 +43,7 @@ The following ARIA attributes are used in the Timeline control:
 
 | Attributes | Purpose |
 | --- | --- |
-| `role=navigation` | Specified its purpose as a navigational element. |
+| `role=navigation` | Specifies its purpose as a navigational element. |
 | `aria-label` | Provides an accessibile name for an element when a visible label is not present |
 
 ## Ensuring accessibility
@@ -52,4 +52,4 @@ The Timeline control's accessibility levels are ensured through an [accessibilit
 
 ## See also
 
-- [Accessibility in Syncfusion components](../common/accessibility)
+- [Accessibility in Syncfusion controls](../common/accessibility)

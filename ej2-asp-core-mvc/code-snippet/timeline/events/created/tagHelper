@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Navigations;
 
 <div class="container" style="height: 350px">
-    <ejs-timeline id="timeline" created="function(args){ createdEvent(args) }">
+    <ejs-timeline id="timeline" created="function(args){ createdEvent() }">
         <e-timeline-items>
             <e-timeline-item content="Planning"></e-timeline-item>
             <e-timeline-item content="Developing"></e-timeline-item>

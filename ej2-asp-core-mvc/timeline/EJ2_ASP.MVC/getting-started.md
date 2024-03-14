@@ -100,4 +100,4 @@ Now, add the Syncfusion ASP.NET MVC Timeline control in `~/Views/Home/Index.csht
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Timeline control will be rendered in the default web browser.
 
-![ASP.NET MVC Timeline Control](images/default.PNG)
+![ASP.NET MVC Timeline Control](images/default.png)

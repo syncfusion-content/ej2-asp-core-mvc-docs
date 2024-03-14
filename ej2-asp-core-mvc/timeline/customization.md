@@ -45,7 +45,7 @@ You can define the styles applicable to the all the Timeline item connectors.
 
 ### Individual styling
 
-You can also apply unique styles to individual connectors, to differentiate specific items within the timeline.
+You can also apply unique styles to individual connectors, to differentiate specific items within the Timeline.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -169,10 +169,10 @@ You can achieve the desired dot variant by customizing the border, outline and b
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/timeline/customization/dot-varient/tagHelper %}
+{% include code-snippet/timeline/customization/dot-variant/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-varient/dotvarient.cs %}
+{% include code-snippet/timeline/customization/dot-variant/dotvarient.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -180,10 +180,10 @@ You can achieve the desired dot variant by customizing the border, outline and b
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/timeline/customization/dot-varient/razor %}
+{% include code-snippet/timeline/customization/dot-variant/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-varient/dotvarient.cs %}
+{% include code-snippet/timeline/customization/dot-variant/dotvarient.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -192,7 +192,7 @@ You can achieve the desired dot variant by customizing the border, outline and b
 
 ### Dot outline
 
-By adding the `e-outline` class to the timeline cssClass property it enables the dots to have an outline state.
+By adding the `e-outline` class to the Timeline `cssClass` property it enables the dots to have an outline state.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

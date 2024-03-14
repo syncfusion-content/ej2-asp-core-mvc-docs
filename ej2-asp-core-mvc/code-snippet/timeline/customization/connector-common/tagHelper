@@ -11,7 +11,7 @@
 </div>
 
 <style>
-    .custom-connector.e-timeline .e-timeline-item.e-connector::after {
+    .custom-connector .e-timeline-item.e-connector::after {
         border-color: #f7c867;
         border-width: 1.4px;
         animation: progress 2s;

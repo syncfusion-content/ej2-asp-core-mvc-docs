@@ -1,38 +1,38 @@
 @using Syncfusion.EJ2.Layouts
 
 <div id="container" style="height: 250px;">
-    @Html.EJS().Timeline("timeline").Items(ViewBag.dotVariants).Render()
+    @Html.EJS().Timeline("timeline").CssClass("dot-variant").Items(ViewBag.dotVariants).Render()
 </div>
 
 <style>
-    .e-timeline-item.dot-filled .e-dot::before {
+    .dot-variant .dot-filled .e-dot::before {
         content: 'A';
         color: #fff;
     }
 
-    .e-timeline-item.dot-flat .e-dot::before {
+    .dot-variant .dot-flat .e-dot::before {
         content: 'B';
         color: #fff;
     }
 
-    .e-timeline-item.dot-outlined .e-dot::before {
+    .dot-variant .dot-outlined .e-dot::before {
         content: 'C';
     }
 
-    .e-timeline-item.dot-filled .e-dot {
+    .dot-variant .dot-filled .e-dot {
         background: #33cc33;
         --dot-outer-space: 3px;
         outline-color: #81ff05;
         --dot-size: 25px;
     }
 
-    .e-timeline-item.dot-flat .e-dot {
+    .dot-variant .dot-flat .e-dot {
         background: #33cc33;
         --dot-size: 25px;
         --dot-radius: 10%;
     }
 
-    .e-timeline-item.dot-outlined .e-dot {
+    .dot-variant .dot-outlined .e-dot {
         outline-color: #33cc33;
         --dot-outer-space: 3px;
         background-color: unset;

@@ -16,7 +16,7 @@ The Timeline items can be added by using the `items` property. Each item can be 
 
 You can define the item content using the `content` property.
 
-### String-based content
+### String content
 
 You can define string content for the Timeline items.
 
@@ -175,4 +175,4 @@ You can use the `disabled` property to disable an item when set to `true`. By de
 
 ## CSS class
 
-The `cssClass` property allows you to define a custom class to modify the appearance of the timeline item.
+The `cssClass` property allows you to define a custom class to modify the appearance of the Timeline item.

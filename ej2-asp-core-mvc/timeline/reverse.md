@@ -19,7 +19,7 @@ You can display the Timeline items in reverse order, for different alignments by
 {% include code-snippet/timeline/reverse/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/reverse/reverse.cs %}
+{% include code-snippet/timeline/reverse/reverse.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -27,10 +27,10 @@ You can display the Timeline items in reverse order, for different alignments by
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Timeline/reverse/razor %}
+{% include code-snippet/timeline/reverse/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/Timeline/reverse/reverse.cs %}
+{% include code-snippet/timeline/reverse/reverse.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

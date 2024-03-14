@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Layouts;
 
 <div class="container" style="height: 250px">
-    <ejs-timeline id="timeline">
+    <ejs-timeline id="timeline" cssClass="dot-size">
         <e-timeline-items>
             <e-timeline-item content="Extra Small" cssClass="x-small"></e-timeline-item>
             <e-timeline-item content="Small" cssClass="small"></e-timeline-item>
@@ -12,23 +12,23 @@
 </div>
 
 <style>
-    .e-timeline-item .e-dot {
+    .dot-size .e-dot {
         background: #33cc33;
     }
 
-    .e-timeline-item.x-small .e-dot {
+    .dot-size .x-small .e-dot {
         --dot-size: 12px;
     }
 
-    .e-timeline-item.small .e-dot {
+    .dot-size .small .e-dot {
         --dot-size: 18px;
     }
 
-    .e-timeline-item.medium .e-dot {
+    .dot-size .medium .e-dot {
         --dot-size: 24px;
     }
 
-    .e-timeline-item.large .e-dot {
+    .dot-size .large .e-dot {
         --dot-size: 30px;
     }
 </style>

@@ -10,40 +10,11 @@ documentation: ug
 
 # Orientations in ##Platform_Name## Timeline control
 
-The Timeline control supports the display of items in both horizontal and vertical direction by using the `orientation`.
+The Timeline control supports the display of items in both horizontal and vertical direction by using the `orientation` property.
 
 ## Vertical
 
 You can display the items one below the other vertically by setting the `orientation` property to `Vertical`. By default, the items are displayed in vertical orientation.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/timeline/orientations/horizontal/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/orientations/horizontal/horizontal.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/timeline/orientations/horizontal/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/orientations/horizontal/horizontal.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-![Vertical](images/vertical.png)
-
-## Horizontal
-
-In horizontal orientation, the items are displayed in a side-by-side manner by setting the `orientation` property to `Horizontal`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -64,6 +35,35 @@ In horizontal orientation, the items are displayed in a side-by-side manner by s
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
 {% include code-snippet/timeline/orientations/vertical/vertical.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Vertical](images/vertical.png)
+
+## Horizontal
+
+In horizontal orientation, the items are displayed in a side-by-side manner by setting the `orientation` property to `Horizontal`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/timeline/orientations/horizontal/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Separator.cs" %}
+{% include code-snippet/timeline/orientations/horizontal/horizontal.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/timeline/orientations/horizontal/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Separator.cs" %}
+{% include code-snippet/timeline/orientations/horizontal/horizontal.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

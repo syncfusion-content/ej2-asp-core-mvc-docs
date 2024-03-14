@@ -20,33 +20,6 @@ The Timeline control triggers the `created` event when the control rendering is 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/timeline/events/beforeItemRender/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/events/beforeItemRender/beforeItemRender.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/timeline/events/beforeItemRender/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/events/beforeItemRender/beforeItemRender.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## beforeItemRender
-
-The Timeline control triggers the `beforeItemRender` event before rendering each item.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/events/created/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
@@ -62,6 +35,33 @@ The Timeline control triggers the `beforeItemRender` event before rendering each
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
 {% include code-snippet/timeline/events/created/created.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## beforeItemRender
+
+The Timeline control triggers the `beforeItemRender` event before rendering each item.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/timeline/events/beforeItemRender/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Separator.cs" %}
+{% include code-snippet/timeline/events/beforeItemRender/beforeItemRender.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/timeline/events/beforeItemRender/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Separator.cs" %}
+{% include code-snippet/timeline/events/beforeItemRender/beforeItemRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
