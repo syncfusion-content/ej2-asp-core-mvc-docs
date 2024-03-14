@@ -9,7 +9,9 @@
     }).Values(values => {
         values.Name("Price").Caption("Unit Price").Add();
         values.Name("Sold").Caption("Unit Sold").Add();
-    }).EnableVirtualization(true)
+    })
+).EnableVirtualization(true).VirtualScrollSettings(
+    new Syncfusion.EJ2.PivotView.VirtualScrollSettingsModel { allowSinglePage = true }
 ).Render()
 
 <script>

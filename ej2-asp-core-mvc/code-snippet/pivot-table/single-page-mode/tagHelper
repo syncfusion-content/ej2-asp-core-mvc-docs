@@ -11,6 +11,7 @@
             <e-field name="Sold" caption="Units Sold"></e-field>
         </e-fieldlist-values>
     </e-datasourcesettings>
+    <e-virtualScrollSettings allowSinglePage="true"></e-gridSettings>
 </ejs-pivotview>
 
 <script>
