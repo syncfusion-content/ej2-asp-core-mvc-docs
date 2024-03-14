@@ -1,12 +1,12 @@
 public ActionResult Demo()
 {
-    List<Step> defaultStepper = new List<Step>();
-    defaultStepper.Add(new Step { });
-    defaultStepper.Add(new Step { });
-    defaultStepper.Add(new Step { });
-    defaultStepper.Add(new Step { });
-    defaultStepper.Add(new Step { });
-    ViewBag.DefaultStepper = defaultStepper;
+    List<TimelineItem> defaultItems = new List<TimelineItem>();
+    defaultItems.Add(new TimelineItem { });
+    defaultItems.Add(new TimelineItem { });
+    defaultItems.Add(new TimelineItem { });
+    defaultItems.Add(new TimelineItem { });
+
+    ViewBag.defaultItems = defaultItems;
     
     return View();
 }

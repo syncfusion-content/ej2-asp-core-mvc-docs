@@ -1,12 +1,12 @@
-@using Syncfusion.EJ2.Navigations;
+@using Syncfusion.EJ2.Layouts;
 
-<ejs-stepper id="stepper">
-    <e-stepper-steps>
-        <e-stepper-step></e-stepper-step>
-        <e-stepper-step></e-stepper-step>
-        <e-stepper-step></e-stepper-step>
-        <e-stepper-step></e-stepper-step>
-        <e-stepper-step></e-stepper-step>
-    </e-stepper-steps>
-</ejs-stepper>
-
+<div class="container" style="height: 250px">
+    <ejs-timeline id="timeline">
+        <e-timeline-items>
+            <e-timeline-item></e-timeline-item>
+            <e-timeline-item></e-timeline-item>
+            <e-timeline-item></e-timeline-item>
+            <e-timeline-item></e-timeline-item>
+        </e-timeline-items>
+    </ejs-timeline>
+</div>

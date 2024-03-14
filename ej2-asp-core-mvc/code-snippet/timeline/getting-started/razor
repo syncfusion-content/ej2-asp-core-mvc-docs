@@ -1,5 +1,5 @@
-@using Syncfusion.EJ2.Navigations
+@using Syncfusion.EJ2.Layouts
 
-<div id="default-Stepper">
-    @Html.EJS().Stepper("stepper").Steps(ViewBag.DefaultStepper).Render()
+<div class="container" style="height: 250px;">
+    @Html.EJS().Timeline("timeline").Items(ViewBag.defaultItems).Render()
 </div>
