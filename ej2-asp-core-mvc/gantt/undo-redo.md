@@ -18,9 +18,7 @@ The undo redo feature can be enabled in Gantt by using the [EnableUndoRedo](http
 
 ## Configure the feature set for undo redo actions
 
-The actions to be restored can be specified using [UndoRedoActions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UndoRedoActions) property.
-
-By default, the following table shows the list of gantt feature for undo redo actions.
+By default, all the gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [UndoRedoActions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UndoRedoActions) property.
 
 | Built-in Undo Redo Items | Actions |
 |------------------------|---------|
@@ -68,13 +66,13 @@ In the following code example, `Edit` and `Delete` actions are specified in `Und
 {% endtabs %}
 {% endif %}
 
-## Configure the storage step count for undo redo actions
+## Configuring the Storage Step Count for Undo and Redo Actions
 
-The number of actions to be restored can be specfified using [UndoRedoStepsCount](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UndoRedoStepsCount) property.
+You can specify the number of actions to be stored for undo and redo operations using the [UndoRedoStepsCount](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UndoRedoStepsCount) property.
 
-By default `UndoRedoStepsCount` value is 10.
+By default, the value of` UndoRedoStepsCount` is set to 10.
 
-When the number of actions performed exceeds the `UndoRedoStepsCount`, then the undo collection gets popped and latest action performed will be pushed in the collection.
+When the number of actions performed exceeds the `UndoRedoStepsCount`, the oldest action in the undo collection is removed, and the latest action performed is added to the collection. This ensures that the number of stored actions does not exceed the specified limit, maintaining efficient memory usage.
 
 In the following example, `UndoRedoStepsCount` value is set to 5.
 
@@ -103,7 +101,9 @@ In the following example, `UndoRedoStepsCount` value is set to 5.
 
 ## Perform undo redo actions programatically
 
-You can perform undo and redo actions programatically using [undo](https://ej2.syncfusion.com/react/documentation/api/gantt/#undo) and [redo](https://ej2.syncfusion.com/react/documentation/api/gantt/#redo) methods.The following code example demonstrates how to invoke the `undo` and `redo` method by clicking the external button.
+You can perform undo and redo actions programatically using [undo](https://ej2.syncfusion.com/react/documentation/api/gantt/#undo) and [redo](https://ej2.syncfusion.com/react/documentation/api/gantt/#redo) methods.
+
+The following code example demonstrates how to invoke the `undo` and `redo` method by clicking the external button.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -130,7 +130,7 @@ You can perform undo and redo actions programatically using [undo](https://ej2.s
 
 ## Retrieve undo and redo stack collection
 
-By default, when undo or redo action is performed, the performed action will be pushed to respective `getUndoActions` or `getUndoActions` collection. So, you can retrieve undo and redo collection using [getUndoActions](https://ej2.syncfusion.com/react/documentation/api/gantt/#getundoactions) and [getRedoActions](https://ej2.syncfusion.com/react/documentation/api/gantt/#getredoactions) methods.
+By default, when an undo or redo action is performed, the actions are stored in an array collection. To retrieve the undo and redo stack array collections, you can use the [getUndoActions](https://ej2.syncfusion.com/react/documentation/api/gantt/#getundoactions) and [getRedoActions](https://ej2.syncfusion.com/react/documentation/api/gantt/#getredoactions) methods.
 
 The following code example demonstrates how to retrieve the undo and redo collection using method by clicking the external button.
 
@@ -159,7 +159,7 @@ The following code example demonstrates how to retrieve the undo and redo collec
 
 ## Clear undo and redo collection
 
-You can clear undo and redo collection at anytime using [clearUndoCollection](https://ej2.syncfusion.com/react/documentation/api/gantt/#clearundocollection) and [clearRedoCollection](https://ej2.syncfusion.com/react/documentation/api/gantt/#clearredocollection) methods.
+At any point, you can clear the undo and redo collections using the [clearUndoCollection](https://ej2.syncfusion.com/react/documentation/api/gantt/#clearundocollection) and [clearRedoCollection](https://ej2.syncfusion.com/react/documentation/api/gantt/#clearredocollection) methods. This allows you to reset the undo and redo stacks as needed during runtime.
 
 The following code example demonstrates how to clear the undo and redo collection using method by clicking the external button.
 
