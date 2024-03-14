@@ -1,0 +1,9 @@
+@model List<CircularChart3DSample.Controllers.CircularChartData>
+ 
+@Html.EJS().CircularChart3D("container").Tilt(-45).Title("Browser Market Shares in November 2023"
+).Series(series =>
+{
+    series.XName("X").YName("Y").DataLabel(dl => dl.Visible(true).Position(Syncfusion.EJ2.Charts.CircularChart3DLabelPosition.Outside).Name("X").Font(ft => ft.FontWeight("600"))
+    .ConnectorStyle(cl => cl.Length("40px"))).DataSource(Model).Add();
+}
+).LegendSettings(leg => leg.Visible(true).Position(Syncfusion.EJ2.Charts.LegendPosition.Right)).Render()
