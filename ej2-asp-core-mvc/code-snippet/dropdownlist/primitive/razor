@@ -1,0 +1,1 @@
+@Html.EJS().DropDownList("records").Placeholder("Select a item").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Value((string[])ViewBag.value).AllowFiltering(false).Render()
