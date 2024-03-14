@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Virtual Scrolling
+# Virtual Scrolling in ##Platform_Name## Pivot Table Control
 
 ## Virtual Scrolling
 

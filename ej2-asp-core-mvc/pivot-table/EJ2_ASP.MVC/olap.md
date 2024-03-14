@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# OLAP
+# OLAP in ##Platform_Name## Pivot Table Component
 
 ## Getting Started with ASP.NET MVC
 
