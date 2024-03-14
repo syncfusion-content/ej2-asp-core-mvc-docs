@@ -42,4 +42,4 @@ The `template` context receives the following information:
 {% endtabs %}
 {% endif %}
 
-![Template](template/reverse.png)
+![Template](images/template.png)

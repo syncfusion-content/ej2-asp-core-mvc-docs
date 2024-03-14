@@ -188,7 +188,7 @@ You can achieve the desired dot variant by customizing the border, outline and b
 {% endtabs %}
 {% endif %}
 
-![Dot variant](images/dot-variant.png)
+![Dot variant](images/dot-varient.png)
 
 ### Dot outline
 
