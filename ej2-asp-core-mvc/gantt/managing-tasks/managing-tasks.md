@@ -224,6 +224,92 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 ![Gantt new task dialog with default values](images/task-dialog-with-default-values.png)
 
+
+## Customize control in add/edit dialog
+
+In Gantt Chart, add and edit dialog can be customized by using [addDialogFields](https://ej2.syncfusion.com/vue/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/vue/documentation/api/gantt/editDialogFieldSettings/) respectively. Input fields can be added or removed in the general tab. The grid which is rendered in dependency, segment and resource tab and RTE which is rendered in notes tab can be customized by using [additionalParams](https://ej2.syncfusion.com/vue/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property.
+
+### Customize general tab of dialog 
+
+In the general tab of add/edit dialog, the custom input fields can be included by defining the field names either from the data source or template in the field property of General tab in [addDialogFields](https://ej2.syncfusion.com/vue/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/vue/documentation/api/gantt/editDialogFieldSettings/) respectively. The custom fields can be added / removed in the general tab as shown below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value1/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value1/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Customize dependency, segments and resources tab of dialog 
+
+[Grid](https://ej2.syncfusion.com/vue/documentation/api/grid/) component in the dependency, segment and resource tab of add/edit dialog can be customized, by defining grid module properties in the [additionalParams](https://ej2.syncfusion.com/vue/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property of [addDialogFields](https://ej2.syncfusion.com/vue/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/vue/documentation/api/gantt/editDialogFieldSettings/). The customizations performed in these tabs are shown below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value2/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value2/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Customize note dialog tab
+
+ [RTE](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/) component in notes tab of add and edit dialog can be customized, by defining RTE module properties in the [additionalParams](https://ej2.syncfusion.com/vue/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property of [addDialogFields](https://ej2.syncfusion.com/vue/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/vue/documentation/api/gantt/editDialogFieldSettings/). The customizations performed in notes tab are shown below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value3/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value3/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value3/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value3/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Troubleshoot: Editing works only when primary key column is defined
 
 Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property, it is mandatory that any one of the columns, must be a primary column. By default, the [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column will be the primary key column.  If [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column is not defined, we need to enable [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property.
