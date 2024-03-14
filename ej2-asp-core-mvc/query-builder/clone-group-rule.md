@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clone Group/Rule in ##Platform_Name## Query Builder Component
+title: Clone Group/Rule in ##Platform_Name## Query builder control | Syncfusion
 description: Learn here all about Clone Group/Rule in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Clone Group/Rule
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Clone Group/Rule
+# Clone Group/Rule in ##Platform_Name## Query builder control
 
 Query Builder allows you to clone rules as well as groups. The Clone options will create an exact replica of a rule or group next to the original. You can use `ShowButtons` to enable/disable these buttons.
 

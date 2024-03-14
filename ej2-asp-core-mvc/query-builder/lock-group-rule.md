@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lock Group/Rule in ##Platform_Name## Query Builder Component
+title: Lock Group/Rule in ##Platform_Name## Query Builder Component | Syncfusion
 description: Learn here all about Lock Group/Rule in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Lock Group/Rule
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Lock Group/Rule
+# Lock Group/Rule in ##Platform_Name## Query builder control
 
 Query Builder allows you to lock rules as well as groups. When a rule is locked, the field, operator, and value will be disabled. When a group is locked, all the elements within the group will be disabled. You can use `ShowButtons` to enable/disable these buttons.
 
