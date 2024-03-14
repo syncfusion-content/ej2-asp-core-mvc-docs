@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 <!-- markdownlint-disable MD036 -->
 
 # Virtual Scrolling
@@ -40,9 +39,34 @@ The virtual scrolling option allows you to load the large amounts of data withou
 {% endtabs %}
 {% endif %}
 
-
-
 ![output](images/virtualscrolling.png)
+
+## Single Page Mode
+
+When virtual scrolling is enabled, the pivot table renders not only the current view page, but also the previous and next pages by default. This default behavior, however, can cause performance delays when dealing with a large number of rows and columns. This is because the same number of rows and columns from adjacent pages are also processed, resulting in additional computational load. This performance constraint can be avoided by setting the [allowSinglePage]() property to **true** within the [virtualScrollSettings]().
+
+Enabling this property causes the pivot table to render only the rows and columns that are relevant to the current view page during virtual scrolling. This optimization significantly improves the performance of the pivot table, particularly in Blazor WASM applications, during initial rendering and when performing UI actions such as drill up/down, sorting, filtering, and more.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/single-page-mode/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SinglePageMode.cs" %}
+{% include code-snippet/pivot-table/single-page-mode/SinglePageMode.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/single-page-mode/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SinglePageMode.cs" %}
+{% include code-snippet/pivot-table/single-page-mode/SinglePageMode.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 **Limitations for virtual scrolling**
 
@@ -52,51 +76,6 @@ The virtual scrolling option allows you to load the large amounts of data withou
 * Date Formatting, which takes additional time to convert date format.
 * Date Formatting with sorting, here additionally full date time format should be framed to perform sorting along with the provided date format which lags the performance.
 * Even if virtual scrolling is enabled, not only is the current view port data retrieved, but also the data for the immediate previous page and the immediate next page. As a result, when the end user scrolls slightly ahead or behind, the next or previous page data is displayed immediately without requiring a refresh. **Note:** If the pivot table's width and height are large, the loading data count in the current, previous, and next view ports (pages) will also increase, affecting performance.
-
-## Data Compression
-
-N> This property is applicable only for relational data source.
-
-When we bind one million raw data, the pivot table will process all raw data to generate aggregated data during initial rendering and report manipulation. But in data compression, the data will be compressed based on the uniqueness of the raw data, and unique records will be provided as input for the Pivot Table. The compressed data will be used for further operations at all times, reducing the looping complexity and improving the performance of the pivot table. For example, if the pivot table  is connected to one million raw data aggregated to 1,000 unique data means, it will be rendered within 3 seconds rather than 10 seconds. You can enable this option by using the [`allowDataCompression`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDataCompression) property along with [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property.
-
-N> This options will only function when the virtual scrolling is enabled.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/virtual-scrolling-compression/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="VirtualScrolling.cs" %}
-{% include code-snippet/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/virtual-scrolling-compression/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="VirtualScrolling.cs" %}
-{% include code-snippet/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-**Limitations during data compression**
-
-* The following aggregation types will not be supported.
-    * Average
-    * Populationstdev
-    * Samplestdev
-    * Populationvar
-    * Samplevar
-* If you use any of the aggregations above, it will result in an aggregation type **"Sum"**.
-* Distinctcount will act as **"Count"** aggregation type.
-* In the calculated field, an existing field can be inserted without altering its default aggregation type Even if we change it, it would use the default aggregation type back for calculation.
 
 ## Virtual scrolling for static field list
 
@@ -124,4 +103,3 @@ Virtual scrolling automatically works with "Popup" field list on setting the [`e
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
