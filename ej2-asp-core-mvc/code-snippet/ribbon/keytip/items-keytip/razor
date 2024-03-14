@@ -1,0 +1,134 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge format" }, new MenuItem { Text = "Keep text only" } };
+    List<MenuItem> tableOptions = new List<MenuItem>() { new MenuItem { Text = "Insert Table" }, new MenuItem { Text = "This device" }, new MenuItem { Text = "Convert Table" }, new MenuItem { Text = "Excel SpreadSheet" } };
+
+    List<string> fontSize = new List<string>() { "8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72", "96" };
+    List<string> fontStyle = new List<string>() { "Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia", "Impact", "Segoe Print", "Segoe Script", "Segoe UI", "Symbol", "Times New Roman", "Verdana", "Windings" };
+
+    List<RibbonGroupButtonItem> groupButtonSingle = new List<RibbonGroupButtonItem>() {
+
+      new RibbonGroupButtonItem { IconCss = "e-icons e-bold", KeyTip="1", Content = "Bold", Selected = true },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-italic", KeyTip="2", Content = "Italic" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-underline", KeyTip="3", Content = "Underline" },
+      new RibbonGroupButtonItem { IconCss = "e-icons e-strikethrough", KeyTip="4", Content = "Strikethrough" },
+      new RibbonGroupButtonItem { IconCss = "e-icons e-change-case", KeyTip="5", Content = "Change Case" }
+    };
+}
+
+
+@Html.EJS().Ribbon("ribbon").EnableKeyTips(true).Created("ribbonCreated").Tabs(tab => {
+    tab.Header("Home").KeyTip("H").Groups(group =>
+    {
+        group.Header("Clipboard").KeyTip("CD").GroupIconCss("e-icons e-paste").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.SplitButton).KeyTip("PA").SplitButtonSettings(splitbutton =>
+                {
+                    splitbutton.IconCss("e-icons e-paste").Items(pasteOptions).Content("Paste");
+                }).Add();
+            }).Add();
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).KeyTip("CU").ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-cut").Content("Cut");
+                }).Add();
+                items.Type(RibbonItemType.Button).KeyTip("CO").ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-copy").Content("Copy");
+                }).Add();
+                items.Type(RibbonItemType.Button).KeyTip("CS").ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-format-painter").Content("Format Painter");
+                }).Add();
+            }).Add();
+        }).Add();
+        group.Header("Font").EnableGroupOverflow(true).Orientation(ItemOrientation.Row).GroupIconCss("e-icons e-bold").CssClass("font-group").Collections(collections =>
+        {
+            collections.Id("ribbon-collection").Items(items =>
+            {
+                items.Type(RibbonItemType.ComboBox).KeyTip("O1").ComboBoxSettings(comboBox =>
+                {
+                    comboBox.DataSource(fontStyle).Index(3).AllowFiltering(true).Width("150px");
+                }).Add();
+                items.Type(RibbonItemType.ComboBox).KeyTip("O2").ComboBoxSettings(comboBox =>
+                {
+                    comboBox.DataSource(fontSize).Index(3).Width("65px");
+                }).Add();
+            }).Add();
+            collections.Items(items =>
+            {
+                items.Type(RibbonItemType.GroupButton).KeyTip("GB").AllowedSizes(RibbonItemSize.Small).GroupButtonSettings(groupButton =>
+                {
+                    groupButton.Selection(RibbonGroupButtonSelection.Single).Header("Format Styles").Items(groupButtonSingle);
+                }).Add();
+                items.Type(RibbonItemType.ColorPicker).KeyTip("CP").AllowedSizes(RibbonItemSize.Small).ColorPickerSettings(colorPicker =>
+                {
+                    colorPicker.Value("#123456");
+                }).Add();
+            }).Add();
+        }).Add();
+        group.Header("Gallery").GroupIconCss("e-icons e-paste").Collections(collections =>
+        {
+            collections.Items(items =>
+            {
+                items.Type(RibbonItemType.Gallery).KeyTip("GY").GallerySettings(gallery =>
+                {
+                    gallery.ItemCount(3).Groups(galleryGroups =>
+                    {
+                        galleryGroups.Header("Styles").ItemWidth("100").Items(galleryItems =>
+                        {
+                            galleryItems.Content("Normal").Add();
+                            galleryItems.Content("No Spacing").Add();
+                            galleryItems.Content("Heading 1").Add();
+                            galleryItems.Content("Heading 2").Add();
+                            galleryItems.Content("Heading 3").Add();
+                            galleryItems.Content("Heading 4").Add();
+                            galleryItems.Content("Heading 5").Add();
+                        }).Add();
+                    });
+                }).Add();
+            }).Add();
+        }).Add();
+        group.Header("Tables").IsCollapsible(false).Collections(collections =>
+        {
+            collections.Items(items =>
+            {
+                items.Type(RibbonItemType.DropDown).KeyTip("T").AllowedSizes(RibbonItemSize.Large).DropDownSettings(dropDown =>
+                {
+                    dropDown.IconCss("e-icons e-table").Content("Table").Items(tableOptions);
+                }).Add();
+            }).Add();
+        }).Add();
+        group.Header("Show").IsCollapsible(false).Collections(collections =>
+        {
+            collections.Items(items =>
+            {
+                items.Type(RibbonItemType.CheckBox).KeyTip("R1").CheckBoxSettings(checkBox =>
+                {
+                    checkBox.Label("Ruler").Checked(false);
+                }).Add();
+                items.Type(RibbonItemType.CheckBox).KeyTip("R2").CheckBoxSettings(checkBox =>
+                {
+                    checkBox.Label("Gridlines").Checked(false);
+                }).Add();
+                items.Type(RibbonItemType.CheckBox).KeyTip("R3").CheckBoxSettings(checkBox =>
+                {
+                    checkBox.Label("Navigation Pane").Checked(true);
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
+
+<script>
+   function ribbonCreated() {
+        ribbon = this;
+        ribbon.ribbonKeyTipModule.showKeyTips('H');
+    }
+</script>
