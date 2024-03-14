@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Organize Pages in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+title: Organize Pages in Syncfusion EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 description: Learn here all about Organize Pages in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
