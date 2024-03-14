@@ -124,8 +124,6 @@ Output be like the below.
 
 The Splitter content can be provided through the `e-content-template` tag helper, and it accepts both text and HTML strings as content. It is necessary to wrap the designated content within a div container.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/splitter/content-template/tagHelper %}
