@@ -141,7 +141,7 @@ The following code example demonstrates how to retrieve the undo and redo collec
 {% include code-snippet/gantt/undo-redo/retrieve/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt/undo-redo/retrieve/dynamic.cs %}
+{% include code-snippet/gantt/undo-redo/retrieve/retrieve.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -152,7 +152,7 @@ The following code example demonstrates how to retrieve the undo and redo collec
 {% include code-snippet/gantt/undo-redo/retrieve/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt/undo-redo/retrieve/dynamic.cs %}
+{% include code-snippet/gantt/undo-redo/retrieve/retrieve.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -170,7 +170,7 @@ The following code example demonstrates how to clear the undo and redo collectio
 {% include code-snippet/gantt/undo-redo/clear/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt/undo-redo/clear/dynamic.cs %}
+{% include code-snippet/gantt/undo-redo/clear/clear.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -181,7 +181,7 @@ The following code example demonstrates how to clear the undo and redo collectio
 {% include code-snippet/gantt/undo-redo/clear/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt/undo-redo/clear/dynamic.cs %}
+{% include code-snippet/gantt/undo-redo/clear/clear.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
