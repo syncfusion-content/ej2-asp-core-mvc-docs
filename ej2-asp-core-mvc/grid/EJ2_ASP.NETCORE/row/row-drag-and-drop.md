@@ -105,4 +105,4 @@ By setting the [targetID](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 * Multiple rows can be drag and drop in the row selections basis.
 * Single row is able to drag and drop in same grid without enable the row selection.
-* Row drag and drop feature is not having built in support with sorting, filtering, hierarchy grid and grouping features of grid.
+* Row drag and drop feature is not having built in support with sorting, filtering and hierarchy grid features of grid.

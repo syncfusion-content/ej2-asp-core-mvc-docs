@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clipboard in ##Platform_Name## Grid Component
+title: Clipboard in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Clipboard
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Clipboard
+# Clipboard in ASP.NET Core Grid Component
 
 The clipboard provides an option to copy selected rows or cells data into the clipboard.
 
@@ -110,6 +110,7 @@ N> * If [`enableAutoFill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 * Since the string values are not parsed to number and date type, so when the selected string type cells are dragged to number type cells then it will display as **NaN**. For date type cells, when the selected string type cells are dragged to date type cells then it will display as an **empty cell**.
 * Linear series and the sequential data generations are not supported in this autofill feature.
+* The Auto Fill feature can only be applied to the viewport cell when enabling the features of virtual scrolling, infinite scrolling, or column virtualization in the grid.
 
 ## Paste
 

@@ -109,7 +109,12 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
 * Initial loading rows total height must be greater than the viewport height.
 * Cell selection will not be persisted in cache mode.
-* Infinite scrolling is not compatible with batch editing, detail template and hierarchy features.
+* Infinite scrolling is not compatible with batch editing, detail template, autofill and hierarchy features.
 * The group records cannot be collapsed in cache mode.
 * The aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [`Group with Page`](./grouping/#Group-with-paging) topic.
 * Programmatic selection using the [`selectRows`](https://ej2.syncfusion.com/documentation/api/grid/#selectrows) and [`selectRow`](https://ej2.syncfusion.com/documentation/api/grid/#selectrow) method is not supported in infinite scrolling.
+* Limitations of row drag and drop with infinite scrolling
+    1. In cache mode, the grid refreshes automatically if the content's **tr** element count exceeds the cache limit of the grid's content after the drop action.
+    2. When performing row drag and drop with lazy load grouping, the grid will refresh automatically.
+    3. In remote data, changes are applied only in the UI. They will be lost once the grid is refreshed. To restore them, you need to update the changes in your database. By using the [rowDrop](https://ej2.syncfusion.com/aspnetmvc/documentation/api/grid/#rowdrop) event, you can send the request to the server and apply the changes in your database. After this, you need to refresh the grid to show the updated data.
+* Limitations of column virtualization with infinite scrolling in this documentation link [here](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/virtual-scroll#limitations-for-virtual-scrolling)
