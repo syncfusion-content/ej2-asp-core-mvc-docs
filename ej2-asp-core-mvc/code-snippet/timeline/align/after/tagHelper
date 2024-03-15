@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.Layouts;
+
+<div class="container" style="height:350px">
+    <ejs-timeline id="timeline" align="After">
+        <e-timeline-items>
+            <e-timeline-item content="ReactJs" oppositeContent="Owned by Facebook"></e-timeline-item>
+            <e-timeline-item content="Angular" oppositeContent="Owned by Google"></e-timeline-item>
+            <e-timeline-item content="VueJs" oppositeContent="Owned by Evan you"></e-timeline-item>
+            <e-timeline-item content="Svelte" oppositeContent="Owned by Rich Harris"></e-timeline-item>
+        </e-timeline-items>
+    </ejs-timeline>
+</div>

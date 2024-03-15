@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2.Layouts
+
+<div id="container" style="height: 250px;">
+    @Html.EJS().Timeline("timeline").Items(ViewBag.disabledItem).Render()
+</div>
