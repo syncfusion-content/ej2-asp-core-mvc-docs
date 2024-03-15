@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Customize context menu in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about Customize context menu in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Customize context menu in ##Platform_Name## PDF Viewer Control | Syncfusion
+description: Learn here all about Customize context menu in Syncfusion ##Platform_Name## PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -15,6 +15,7 @@ PDF Viewer allows you to add custom option in context menu. It can be achieved b
 ### Add Custom Option
 
 The following code shows how to add custom option in context menu.
+
 ```
 <script>
    var menuItems = [
