@@ -10,9 +10,33 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## Maps component
 
-Maps has built-in accessibility features like screen reading, keyboard navigation, and WAI-ARIA attributes.
+The Maps component follows commonly used accessibility guidelines and standards, such as [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles).
 
-## WAI-ARIA attributes
+The accessibility compliance for the Maps component is outlined below.
+
+| Accessibility Criteria | Compatibility |
+| -- | -- |
+| [WCAG 2.2 Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Section 508 Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Screen Reader Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Color Contrast](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Mobile Device Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Keyboard Navigation Support](../common/accessibility) |<img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Accessibility Checker Validation](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Axe-core Accessibility Validation](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+
+<style>
+    .post .post-content img {
+        display: inline-block;
+        margin: 0.5em 0;
+    }
+</style>
+
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
+
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
 To meet accessibility standards, the Maps component follows to the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns. In the Maps component, the following ARIA attributes are used:
 
@@ -20,7 +44,7 @@ To meet accessibility standards, the Maps component follows to the [WAI-ARIA](ht
 | --- | --- |
 | `role=region` | It specifies the Maps areas that do not support interactive functions like selection and highlight. |
 | `role=button` | It specifies the Maps areas where interactive functions such as selection and highlight are available. |
-| `aria-label` | Provides an accessible name for Maps elements such as geometric map shapes, legend title, data labels, and so on. To learn more, see the next topic. |
+| `aria-label` | Provides an accessible name for Maps elements such as geometric map shapes, title, subtitle, legend title, legend item labels, data labels, and so on. To learn more, see the next topic. |
 
 ## Screen reading in Maps
 
@@ -29,6 +53,8 @@ Accessibility in the Maps component ensures that all users, regardless of abilit
 | Elements | Description |
 | --- | --- |
 | Shapes in the layer | Reads the names of the geographical shapes (such as countries, states, and regions) that appear on the Maps. |
+| Title | Reads the title content in the Maps. |
+| Subtitle | Reads the title below the main title content in the Maps. |
 | Legend title | Reads the contents of the legend's title as specified in Maps. |
 | Legend item label | Reads the label of a legend item in Maps. |
 | Data label | Reads the label specified for the shapes in the Maps layer. |
