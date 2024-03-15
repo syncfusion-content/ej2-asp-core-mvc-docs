@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Organize Pages in ##Platform_Name## PDF Viewer Control | Syncfusion
-description: Learn here all about Organize Pages in Syncfusion ##Platform_Name## PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Organize Pages with EJ2 ASP.NET Core PDF Viewer | Syncfusion
+description: Learn here all about Organize Pages in ASP.NET Core Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
