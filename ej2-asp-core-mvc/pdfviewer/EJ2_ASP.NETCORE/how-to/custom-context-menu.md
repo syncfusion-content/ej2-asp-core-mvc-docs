@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Customize contextmenu in ##Platform_Name## Pdfviewer Control | Syncfusion
-description: Learn here all about Customize contextmenu in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Customize context menu with EJ2 ASP.NET Core PDF Viewer | Syncfusion
+description: Learn here all about Customize context menu in ASP.NET Core Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
