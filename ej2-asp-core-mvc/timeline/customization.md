@@ -201,7 +201,7 @@ By adding the `e-outline` class to the Timeline `cssClass` property it enables t
 {% include code-snippet/timeline/customization/dot-outline/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-outline/dotvarient.cs %}
+{% include code-snippet/timeline/customization/dot-outline/dot-outline.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -212,7 +212,7 @@ By adding the `e-outline` class to the Timeline `cssClass` property it enables t
 {% include code-snippet/timeline/customization/dot-outline/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-outline/dotvarient.cs %}
+{% include code-snippet/timeline/customization/dot-outline/dot-outline.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
