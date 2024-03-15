@@ -1,0 +1,12 @@
+@{
+    var data = new Record().RecordModelList();
+    var value = new { ID = "id5", Text = "Item 5" };
+}
+
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-combobox id="records" dataSource="@data" placeholder="Select a item" allowFiltering="false" allowObjectBinding="true" value="@value" popupHeight="200px">
+            <e-combobox-fields value="ID" text="Text"></e-combobox-fields>
+        </ejs-combobox>
+    </div>
+</div>

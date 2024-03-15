@@ -1,0 +1,6 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-multiselect id="records" dataSource="@ViewBag.data" placeholder="Select a item" value="@ViewBag.value" allowFiltering="false"  popupHeight="200px">
+        </ejs-multiselect>
+    </div>
+</div>
