@@ -1,10 +1,10 @@
 public IActionResult Index()
 {
-    ViewBag.DataSource = ganttData();
+    ViewBag.DataSource = projectViewMultiTaskData();
     return View();
 }
 
- public static List<GanttDataSource> ganttData()
+ public static List<GanttDataSource> projectViewMultiTaskData()
         {
             List<GanttDataSource> GanttDataSourceCollection = new List<GanttDataSource>();
 
