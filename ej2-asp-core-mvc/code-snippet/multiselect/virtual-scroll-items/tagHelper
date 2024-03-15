@@ -1,0 +1,13 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-multiselect id="records" dataSource="@ViewBag.data" query="new ej.data.Query().take(20)" actionBegin="onbegin" placeholder="Select a item" allowFiltering="false" enableVirtualization="true" popupHeight="200px">
+            <e-multiselect-fields value="ID" text="Text"></e-multiselect-fields>
+        </ejs-multiselect>
+    </div>
+</div>
+
+<script>
+    function onbegin(e) {
+        e.query = new ej.data.Query().take(25);
+    }
+</script>
