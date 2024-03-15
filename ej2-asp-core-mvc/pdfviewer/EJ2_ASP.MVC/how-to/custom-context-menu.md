@@ -336,27 +336,25 @@ The following is the output of custom context menu with customization.
 
     function lockAnnotations(args) {
         var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
-        var selectedAnnotations = pdfviewer.selectedItems.annotations;
-        for (var i = 0; i < selectedAnnotations.length; i++) {
-            var annotation = selectedAnnotations[i];
-            if (annotation && annotation.annotationSettings) {
-                annotation.annotationSettings.isLock = true;
-                pdfviewer.annotationModule.editAnnotation(annotation);
-                args.cancel = false;
+        for (var i = 0; i < pdfviewer.annotationCollection.length; i++) {
+            if (pdfviewer.annotationCollection[i].uniqueKey === pdfviewer.selectedItems.annotations[0].id) {
+                pdfviewer.annotationCollection[i].annotationSettings.isLock = true;
+                pdfviewer.annotationCollection[i].isCommentLock = true;
+                pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
             }
+            args.cancel = false;
         }
     }
 
     function unlockAnnotations(args) {
         var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
-        var selectedAnnotations = pdfviewer.selectedItems.annotations;
-        for (var i = 0; i < selectedAnnotations.length; i++) {
-            var annotation = selectedAnnotations[i];
-            if (annotation && annotation.annotationSettings) {
-                annotation.annotationSettings.isLock = false;
-                pdfviewer.annotationModule.editAnnotation(annotation);
-                args.cancel = false;
+        for (var i = 0; i < pdfviewer.annotationCollection.length; i++) {
+            if (pdfviewer.annotationCollection[i].uniqueKey === pdfviewer.selectedItems.annotations[0].id) {
+                pdfviewer.annotationCollection[i].annotationSettings.isLock = false;
+                pdfviewer.annotationCollection[i].isCommentLock = false;
+                pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
             }
+            args.cancel = false;
         }
     }
 
