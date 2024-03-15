@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2.Layouts;
+
+<div class="container" style="height: 250px">
+    <ejs-timeline id="timeline" cssClass="custom-connector">
+        <e-timeline-items>
+            <e-timeline-item content="Eat"></e-timeline-item>
+            <e-timeline-item content="Code"></e-timeline-item>
+            <e-timeline-item content="Repeat"></e-timeline-item>
+        </e-timeline-items>
+    </ejs-timeline>
+</div>
+
+<style>
+    .custom-connector .e-timeline-item.e-connector::after {
+        border-color: #f7c867;
+        border-width: 1.4px;
+        animation: progress 2s;
+    }
+
+    @@keyframes progress {
+        from { height: 0%; }
+        to { height: 100%; }
+    }
+</style>

@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.Layouts;
+
+<div class="container" style="height: 350px">
+    <ejs-timeline id="timeline" align="Before" reverse=true>
+        <e-timeline-items>
+            @for (int i = 0; i < ViewBag.careerProgress.Count; i++)
+            {
+                <e-timeline-item content="@ViewBag.careerProgress[i].Content" oppositeContent="@ViewBag.careerProgress[i].OppositeContent"></e-timeline-item>
+            }
+        </e-timeline-items>
+    </ejs-timeline>
+</div>

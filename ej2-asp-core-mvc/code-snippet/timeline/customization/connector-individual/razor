@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2.Layouts
+
+<div id="container" style="height: 250px;">
+    @Html.EJS().Timeline("timeline").CssClass("custom-connector").Items(ViewBag.dailyRoutine).Render()
+</div>
+
+<style>
+    .custom-connector .state-initial.e-connector::after {
+        border: 1.5px #f8c050 dashed;
+        animation: progress 1.5s ease-in-out;
+    }
+    .custom-connector .state-intermediate.e-connector::after {
+        border: 1.5px #4d85f5 dashed;
+        animation: progress 1.5s ease-in-out;
+    }
+
+    @@keyframes progress {
+        from { height: 0%; }
+        to { height: 100%; }
+    }
+</style>
