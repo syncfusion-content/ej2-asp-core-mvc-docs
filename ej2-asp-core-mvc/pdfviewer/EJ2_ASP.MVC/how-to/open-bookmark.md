@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Open Bookmark in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about Open Bookmark in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Open and Close Bookmark in ##Platform_Name## PDF Viewer Control | Syncfusion
+description: Learn here all about Open and Close Bookmark in Syncfusion ##Platform_Name## PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

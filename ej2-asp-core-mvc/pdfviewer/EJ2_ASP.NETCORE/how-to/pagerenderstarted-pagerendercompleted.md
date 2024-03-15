@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PageRenderInitiate and pageRenderComplete event in ##Platform_Name## PDF Viewer Component
-description: Learn here all about pageRenderInitiate and pageRenderComplete event in Syncfusion ##Platform_Name## PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Rendering event in ##Platform_Name## PDF Viewer Control | Syncfusion
+description: Learn here all about Organize Pages in Syncfusion ##Platform_Name## PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
 publishingplatform: ##Platform_Name##
