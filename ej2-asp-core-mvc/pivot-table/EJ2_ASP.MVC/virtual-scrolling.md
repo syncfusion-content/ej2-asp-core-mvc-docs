@@ -104,3 +104,8 @@ Virtual scrolling automatically works with "Popup" field list on setting the [`E
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## See also
+
+* [Paging in Syncfusion EJ2 Typescript components](./paging)
+* [Data Compression in Syncfusion EJ2 Typescript components](./data-compression)
