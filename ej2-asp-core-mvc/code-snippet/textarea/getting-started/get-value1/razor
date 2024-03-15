@@ -1,0 +1,14 @@
+<div class="control-section">
+    <div class="control_wrapper textarea-control-section">
+        @Html.EJS().TextArea("comments").Value("Comments").Render()
+        <button id="valuebtn">Get Value</button>
+    </div>
+</div>
+
+<script>
+    var textareaObj = document.getElementById("comments").ej2_instances[0];
+    document.getElementById('valuebtn').onclick = () => {
+        // get the TextArea value
+        let textareaValue = textareaObj.value;
+    }
+</script>

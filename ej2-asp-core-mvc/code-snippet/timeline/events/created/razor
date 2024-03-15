@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.Layouts
+
+@Html.EJS().Timeline("timeline").Items(ViewBag.productLifecycle).Created("function(args) { createdEvent() }").Render()
+
+<script>
+    function createdEvent() {
+        // your required action here..
+    }
+</script>
