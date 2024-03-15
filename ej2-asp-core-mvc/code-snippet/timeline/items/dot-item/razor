@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2.Navigations
+
+<div id="container" style="height: 350px;">
+    @Html.EJS().Timeline("timeline").Items(ViewBag.dotItems).Render()
+</div>
+
+<style>
+    .e-dot.custom-image {
+        background-image: url("./../images/Skeleton/dot-image.png");
+    }
+
+    .e-dot.custom-text::before {
+        content: 'A';
+    }
+</style>

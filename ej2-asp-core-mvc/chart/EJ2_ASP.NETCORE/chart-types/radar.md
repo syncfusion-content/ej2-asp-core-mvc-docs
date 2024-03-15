@@ -11,6 +11,10 @@ documentation: ug
 
 # Radar in ##Platform_Name## Charts Component
 
+To get started with the ASP.NET Core Radar charts, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=cwIaOclRzwY" %}
+
 ## Radar
 
 To render a radar series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`Radar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_Radar).
