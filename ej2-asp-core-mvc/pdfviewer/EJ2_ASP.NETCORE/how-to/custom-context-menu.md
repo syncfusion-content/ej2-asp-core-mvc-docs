@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize context menu in EJ2 ASP.NET Core PDF Viewer Control | Syncfusion
-description: Learn here all about Customize contextmenu in Syncfusion ##Platform_Name## Pdf Viewer component of Syncfusion Essential JS 2 and more.
+title: Customize contextmenu in ##Platform_Name## Pdfviewer Control | Syncfusion
+description: Learn here all about Customize contextmenu in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
 publishingplatform: ##Platform_Name##
@@ -311,27 +311,25 @@ The following is the output of custom context menu with customization.
 
     function lockAnnotations(args) {
         var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
-        var selectedAnnotations = pdfviewer.selectedItems.annotations;
-        for (var i = 0; i < selectedAnnotations.length; i++) {
-            var annotation = selectedAnnotations[i];
-            if (annotation && annotation.annotationSettings) {
-                annotation.annotationSettings.isLock = true;
-                pdfviewer.annotationModule.editAnnotation(annotation);
-                args.cancel = false;
+        for (var i = 0; i < pdfviewer.annotationCollection.length; i++) {
+            if (pdfviewer.annotationCollection[i].uniqueKey === pdfviewer.selectedItems.annotations[0].id) {
+                pdfviewer.annotationCollection[i].annotationSettings.isLock = true;
+                pdfviewer.annotationCollection[i].isCommentLock = true;
+                pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
             }
+            args.cancel = false;
         }
     }
 
     function unlockAnnotations(args) {
         var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
-        var selectedAnnotations = pdfviewer.selectedItems.annotations;
-        for (var i = 0; i < selectedAnnotations.length; i++) {
-            var annotation = selectedAnnotations[i];
-            if (annotation && annotation.annotationSettings) {
-                annotation.annotationSettings.isLock = false;
-                pdfviewer.annotationModule.editAnnotation(annotation);
-                args.cancel = false;
+        for (var i = 0; i < pdfviewer.annotationCollection.length; i++) {
+            if (pdfviewer.annotationCollection[i].uniqueKey === pdfviewer.selectedItems.annotations[0].id) {
+                pdfviewer.annotationCollection[i].annotationSettings.isLock = false;
+                pdfviewer.annotationCollection[i].isCommentLock = false;
+                pdfviewer.annotation.editAnnotation(pdfviewer.annotationCollection[i]);
             }
+            args.cancel = false;
         }
     }
 
