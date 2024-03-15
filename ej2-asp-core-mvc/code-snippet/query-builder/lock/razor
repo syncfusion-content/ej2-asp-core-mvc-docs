@@ -1,0 +1,24 @@
+  @Html.EJS().QueryBuilder("querybuilder").Width("72%").Columns(col =>
+   {
+       col.Field("EmployeeID").Label("Employee ID").Type("number").Add();
+       col.Field("FirstName").Label("First Name").Type("string").Add();
+       col.Field("TitleOfCourtesy").Label("Title Of Courtesy").Type("boolean").Values(new List<string> { "Mr.", "Mrs." }).Add();
+       col.Field("Title").Label("Title").Type("string").Add();
+       col.Field("HireDate").Label("Hire Date").Type("date").Format("dd/MM/yyyy").Add();
+       col.Field("Country").Label("Country").Type("string").Add();
+       col.Field("City").Label("City").Type("string").Add();
+   }).Rule(ViewBag.rule).ShowButtons(new Syncfusion.EJ2.QueryBuilder.QueryBuilderShowButtons { GroupDelete = true, GroupInsert = true, RuleDelete = true, LockGroup = true, LockRule = true }).Render()
+
+@Html.EJS().Button("lockgroup").CssClass("e-primary").Content("Add Group").Render()
+@Html.EJS().Button("lockrule").CssClass("e-primary").Content("Add Rule").Render()
+ 
+ <script>
+    document.getElementById('lockgroup').onclick = function () {
+        var querybuilderObj = ej.base.getInstance(document.getElementById("querybuilder"), ej.querybuilder.QueryBuilder);
+        querybuilderObj.lockGroup("querybuilder_group0");
+    }
+    document.getElementById('lockrule').onclick = function () {
+        var querybuilderObj = ej.base.getInstance(document.getElementById("querybuilder"), ej.querybuilder.QueryBuilder);
+        querybuilderObj.lockRule("querybuilder_group0_rule0");
+    }
+ </script>
