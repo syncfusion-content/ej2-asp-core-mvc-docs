@@ -1,0 +1,1 @@
+@Html.EJS().MultiSelect("records").Placeholder("Select a item").AllowCustomValue(true).PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).EnableVirtualization(true).AllowFiltering(false).Fields(new Syncfusion.EJ2.DropDowns.MultiSelectFieldSettings { Value = "ID", Text="Text" }).Render()

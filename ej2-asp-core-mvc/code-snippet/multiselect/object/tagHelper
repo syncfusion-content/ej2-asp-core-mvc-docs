@@ -1,0 +1,7 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-multiselect id="records" dataSource="@ViewBag.data" placeholder="Select a item" value="@ViewBag.value" allowFiltering="false" allowObjectBinding="true" popupHeight="200px">
+            <e-multiselect-fields value="ID" text="Text"></e-multiselect-fields>
+        </ejs-multiselect>
+    </div>
+</div>
