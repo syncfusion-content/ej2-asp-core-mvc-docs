@@ -5,8 +5,9 @@
 </div>
 
 <style>
+    /* Provide the URL for the image here. */
     .e-dot.custom-image {
-        background-image: url("./../images/Skeleton/dot-image.png");
+        background-image: url("./images/timeline/dot-image.png");
     }
 
     .e-dot.custom-text::before {

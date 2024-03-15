@@ -172,7 +172,7 @@ You can achieve the desired dot variant by customizing the border, outline and b
 {% include code-snippet/timeline/customization/dot-variant/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-variant/dotvarient.cs %}
+{% include code-snippet/timeline/customization/dot-variant/dotvariant.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -183,12 +183,12 @@ You can achieve the desired dot variant by customizing the border, outline and b
 {% include code-snippet/timeline/customization/dot-variant/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-variant/dotvarient.cs %}
+{% include code-snippet/timeline/customization/dot-variant/dotvariant.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![Dot variant](images/dot-varient.png)
+![Dot variant](images/dot-variant.png)
 
 ### Dot outline
 
@@ -201,7 +201,7 @@ By adding the `e-outline` class to the Timeline `cssClass` property it enables t
 {% include code-snippet/timeline/customization/dot-outline/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-outline/dotvarient.cs %}
+{% include code-snippet/timeline/customization/dot-outline/dot-outline.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -212,7 +212,7 @@ By adding the `e-outline` class to the Timeline `cssClass` property it enables t
 {% include code-snippet/timeline/customization/dot-outline/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-outline/dotvarient.cs %}
+{% include code-snippet/timeline/customization/dot-outline/dot-outline.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
