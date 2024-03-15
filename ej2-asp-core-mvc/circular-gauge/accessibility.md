@@ -8,6 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Accessibility in ##Platform_Name## Circular Gauge component
 
 The Circular Gauge component follows commonly used accessibility guidelines and standards, such as [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles).
 
