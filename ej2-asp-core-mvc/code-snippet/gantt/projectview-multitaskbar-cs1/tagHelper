@@ -1,0 +1,5 @@
+                <ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" enableMultiTaskbar="true" height="450px">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" child="SubTasks" progress="Progress"
+                        endDate="EndDate" expandState="isExpand">
+                    </e-gantt-taskfields>
+                </ejs-gantt>
