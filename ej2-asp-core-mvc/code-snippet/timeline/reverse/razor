@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2.Layouts
+
+<div id="container" style="height: 350px;">
+    @Html.EJS().Timeline("timeline").Align(TimelineAlign.Before).Reverse(true).Items(ViewBag.careerProgress).Render()
+</div>

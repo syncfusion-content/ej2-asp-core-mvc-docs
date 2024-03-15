@@ -1,0 +1,65 @@
+@using Syncfusion.EJ2.Layouts
+
+<div id="container" style="height: 350px;">
+    @Html.EJS().Timeline("timeline").Items(ViewBag.orderStatus).Render()
+</div>
+
+<script id="content-template" type="text/x-jsrender">
+    <div class="content-container">
+        <div class="title">
+            ${if(itemIndex==0)} Shipped
+            ${else if(itemIndex==1)} Departed
+            ${else if(itemIndex==2)} Arrived
+            ${/if}
+        </div>
+        <span class="description">
+            ${if(itemIndex==0)} Package details received
+            ${else if(itemIndex==1)} In-transit
+            ${else if(itemIndex==2)} Package arrived at nearest hub
+            ${/if}
+        </span>
+        <div class="info">
+            ${if(itemIndex==0)} - Awaiting dispatch
+            ${else if(itemIndex==1)} (International warehouse)
+            ${else if(itemIndex==2)} (New york - US)
+            ${/if}
+        </div>
+    </div>
+</script>
+
+<style>
+    .content-container {
+        position: relative;
+        width: 180px;
+        padding: 10px;
+        margin-left: 5px;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        background-color: ghostwhite;
+    }
+
+    .content-container::before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 8px solid silver;
+    }
+
+    .content-container .title {
+        font-size: 16px;
+    }
+
+    .content-container .description {
+        color: #999999;
+        font-size: 12px;
+    }
+
+    .content-container .info {
+        color: #999999;
+        font-size: 10px;
+    }
+</style>
