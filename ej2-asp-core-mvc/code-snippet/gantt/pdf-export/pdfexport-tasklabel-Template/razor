@@ -3,7 +3,7 @@
     ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks").Toolbar(new
     List<string>() {
         "PdfExport"
-        }).ToolbarClick("toolbarClick").pdfQueryTaskbarInfo("pdfQueryTaskbarInfo").ResourceInfo("ResourceId")).ResourceFields(rf
+        }).ToolbarClick("toolbarClick").PdfQueryTaskbarInfo("pdfQueryTaskbarInfo").ResourceInfo("ResourceId")).ResourceFields(rf
         =>
         rf.Id("ResourceId").Name("ResourceName")).Resources((
         IEnumerable<object>)ViewBag.projectResources).Columns(col =>

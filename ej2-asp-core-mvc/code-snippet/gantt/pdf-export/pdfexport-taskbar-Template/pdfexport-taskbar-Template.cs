@@ -1,11 +1,11 @@
 public IActionResult Index()
 {
-     ViewBag.DataSource = ganttData();
-     ViewBag.projectResources = projectResources();
+     ViewBag.DataSource = GanttData();
+     ViewBag.projectResources = ProjectResources();
     return View();
 }
 
-public static List<GanttResources> projectResources()
+public static List<GanttResources> ProjectResources()
         {
             List<GanttResources> GanttResourcesCollection = new List<GanttResources>();
 
@@ -83,7 +83,7 @@ public static List<GanttResources> projectResources()
             GanttResourcesCollection.Add(Record12);
             return GanttResourcesCollection;
         }
-        public static List<GanttDataSource> ganttData()
+        public static List<GanttDataSource> GanttData()
         {
             List<GanttDataSource> GanttDataSourceCollection = new List<GanttDataSource>();
 

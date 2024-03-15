@@ -8,10 +8,7 @@
         <e-gantt-column field="TaskId" headerText="Task Id" width="50"></e-gantt-column>
         <e-gantt-column field="TaskName" headerText="Task Name" width="250"></e-gantt-column>
     </e-gantt-columns>
-    .ResourceFields(rf => rf.Id("ResourceId").Name("ResourceName")).Resources((IEnumerable<object>)ViewBag.Resources)
-    .LabelSettings(ls => ls.LeftLabel("#leftLabel").RightLabel("#rightLabel").TaskLabel("${Progress}%"))
-    .ProjectStartDate("03/24/2019")
-    .ProjectEndDate("05/04/2019")
+    <e-gantt-labelSettings leftLabel="#leftLabel" rightLabel="#rightLabel" taskLabel="${Progress}%"></e-gantt-labelSettings>
 </ejs-gantt>
 
 
