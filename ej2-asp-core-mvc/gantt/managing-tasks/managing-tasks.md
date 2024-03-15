@@ -227,11 +227,11 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 ## Customize control in add/edit dialog
 
-In Gantt Chart, the controls such as form elements, grid and RTE in add and edit dialog can be customized by using [additionalParams](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_AdditionalParams) property.
+In Gantt Chart, the controls such as form elements, grid and RTE in add and edit dialog can be customized by using [AdditionalParams](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_AdditionalParams) property.
 
 ### Customize general tab of dialog 
 
-In the general tab of add/edit dialog, the custom input [fields](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettings/#fields) can be included into fields by defining the field names either from the data source or template in [addDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [editDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html) respectively.
+In the general tab of add/edit dialog, the custom input [Fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_Fields) can be included into fields by defining the field names either from the data source or template in [AddDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [EditDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html) respectively.
 
 In the below sample, added field from the template to general tab.
 
@@ -260,7 +260,7 @@ In the below sample, added field from the template to general tab.
 
 ### Customize dependency, segments and resources tab of dialog 
 
-[Grid](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html) component in the dependency, segment and resource tab of add/edit dialog can be customized, by defining grid module properties in the [additionalParams](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_AdditionalParams) property of [addDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [editDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html).
+[Grid](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html) component in the dependency, segment and resource tab of add/edit dialog can be customized, by defining grid module properties in the [AdditionalParams](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_AdditionalParams) property of [AddDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [EditDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html).
 
 In the below code show cases, how to add additional features to dependency, segments and resources tab.
 
@@ -289,7 +289,7 @@ In the below code show cases, how to add additional features to dependency, segm
 
 ### Customize note dialog tab
 
- [RTE](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html) component in notes tab of add and edit dialog can be customized, by defining RTE module properties in the [additionalParams](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_AdditionalParams) property of [addDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [editDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html).
+ [RTE](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html) component in notes tab of add and edit dialog can be customized, by defining RTE module properties in the [AdditionalParams](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_AdditionalParams) property of [AddDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [EditDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html).
 
 The below code shows how to enable inline mode to RTE in notes tab.
 
