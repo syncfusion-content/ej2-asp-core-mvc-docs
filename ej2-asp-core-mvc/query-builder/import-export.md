@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import Export in ##Platform_Name## Query Builder Component
+title: Import Export in ##Platform_Name## Query Builder Component | Syncfusion
 description: Learn here all about Import Export in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Import Export
@@ -8,12 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Import export in ##Platform_Name## Query builder control
 
-# Importing
+Importing allows you to view or edit the predefined conditions which is available in JSON or SQL. You can import the conditions either initial rendering or post rendering.
 
-Importing allows you to view or edit the predefined conditions. You can import the conditions by using methods and initial rendering.
+## Importing
 
-## Initial Rendering
+### Importing from JSON
+
+#### Initial Rendering
 
 To apply conditions initially, you can define the `Rule`. Here, you can import structured JSON object by defining the `Rule` property.
 
@@ -40,11 +43,7 @@ To apply conditions initially, you can define the `Rule`. Here, you can import s
 {% endtabs %}
 {% endif %}
 
-
-
-## Post Rendering
-
-### Import from JSON
+#### Post Rendering
 
 You can set the conditions from structured JSON object through the `setRules` method.
 
@@ -73,9 +72,11 @@ You can set the conditions from structured JSON object through the `setRules` me
 
 
 
-### Import From SQL
+### Importing From SQL
 
-You can set the conditions from SQL query through the `setRulesFromSql` method.
+#### Importing from Inline SQL
+
+You can set the conditions from Inline SQL query through the `setRulesFromSql` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,19 +101,101 @@ You can set the conditions from SQL query through the `setRulesFromSql` method.
 {% endtabs %}
 {% endif %}
 
+#### Importing from Parameter SQL
+
+You can set the conditions from Parameter SQL query through the `setParameterizedSql` method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/import-sql2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/import-sql2/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/import-sql2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/import-sql2/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+#### Importing from Named Parameter SQL
+
+You can set the conditions from Named Parameter SQL query through the `setParameterizedNamedSql` method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/import-sql3/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/import-sql3/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/import-sql3/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/import-sql3/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Importing from MongoDB
+
+You can set the conditions from MongoDB query through the `setMongoQuery` method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/import-mongo/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/import-mongo/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/import-mongo/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/import-mongo/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## Exporting
 
 Exporting allows you to save or maintain the created conditions through the Query Builder. You can export the defined conditions by the following ways.
 
-### JSON Export
+### Exporting to JSON
 
 You can export the defined conditions to structured JSON object through the `getRules` method.
 
-### SQL Support
+### Exporting to SQL
 
-You can export the defined conditions to SQL query through the `getRulesFromSQL` method.
+#### Exporting to Inline SQL
+
+You can export the defined conditions to Inline SQL query through the `getRulesFromSQL` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -133,6 +216,87 @@ You can export the defined conditions to SQL query through the `getRulesFromSQL`
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
 {% include code-snippet/query-builder/import-export/export-sql/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+#### Exporting to Parameter SQL
+
+You can export the defined conditions to Parameter SQL query through the `getParameterizedSql` method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/export-sql2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/export-sql2/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/export-sql2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/export-sql2/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+#### Exporting to Named Parameter SQL
+
+You can export the defined conditions to Named Parameter SQL query through the `getParameterizedNamedSql` method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/export-sql3/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/export-sql3/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/export-sql3/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/export-sql3/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Exporting to MongoDB
+
+You can export the defined conditions to MongoDB query through the `getMongoQuery` method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/export-mongo/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/export-mongo/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/query-builder/import-export/export-mongo/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/query-builder/import-export/export-mongo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
