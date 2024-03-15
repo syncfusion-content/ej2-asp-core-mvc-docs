@@ -1,7 +1,7 @@
 public IActionResult Index()
 {
      ViewBag.DataSource = GanttData();
-     ViewBag.projectResources = ProjectResources();
+     ViewBag.ProjectResources = ProjectResources();
     return View();
 }
 
