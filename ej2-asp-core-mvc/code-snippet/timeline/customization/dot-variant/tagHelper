@@ -3,9 +3,9 @@
 <div class="container" style="height:250px">
     <ejs-timeline id="timeline" cssClass="dot-variant">
         <e-timeline-items>
-            <e-timeline-item content="Filled" oppositeContent="dot-filled"></e-timeline-item>
-            <e-timeline-item content="Flat" oppositeContent="dot-flat"></e-timeline-item>
-            <e-timeline-item content="Outlined" oppositeContent="dot-outlined"></e-timeline-item>
+            <e-timeline-item content="Filled" cssClass="dot-filled"></e-timeline-item>
+            <e-timeline-item content="Flat" cssClass="dot-flat"></e-timeline-item>
+            <e-timeline-item content="Outlined" cssClass="dot-outlined"></e-timeline-item>
         </e-timeline-items>
     </ejs-timeline>
 </div>
