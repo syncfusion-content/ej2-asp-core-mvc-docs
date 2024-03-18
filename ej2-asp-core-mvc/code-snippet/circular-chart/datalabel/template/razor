@@ -1,0 +1,6 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
+{
+    series.XName("X").YName("Y").DataLabel(dl => dl.Visible(true).Name("Text")
+    .Template("<div id='templateWrap' style='background-color:#bd18f9;border-radius: 3px; float: right;padding: 2px;line-height: 20px;text-align: center;'>"+ "<img src='https://ej2.syncfusion.com/demos/src/chart/images/sunny.png' />" + "<div style='color:white; font-family:Roboto; font-style: medium; fontp-size:14px;float: right;padding: 2px;line-height: 20px;text-align: center;padding-right:6px'><span>${point.y}</span></div></div>")).DataSource(ViewBag.dataSource).Add();
+}
+).LegendSettings(leg => leg.Visible(false)).Render()

@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.Layouts;
+
+<div class="container" style="height: 350px">
+    <ejs-timeline id="timeline">
+        <e-timeline-items>
+            <e-timeline-item content="Default"></e-timeline-item>
+            <e-timeline-item content="Icon" dotCss="e-icons e-check"></e-timeline-item>
+            <e-timeline-item content="Image" dotCss="custom-image"></e-timeline-item>
+            <e-timeline-item content="Text" dotCss="custom-text"></e-timeline-item>
+        </e-timeline-items>
+    </ejs-timeline>
+</div>
+
+<style>
+    /* Provide the URL for the image here. */
+    .e-dot.custom-image {
+        background-image: url("./images/timeline/dot-image.png");
+    }
+
+    .e-dot.custom-text::before {
+        content: 'A';
+    }
+</style>

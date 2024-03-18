@@ -131,7 +131,9 @@ Also, we can customize the chart width and grid width in exported file using <co
 {% endtabs %}
 {% endif %}
 
-## Exporting with column template
+## Exporting with template
+
+### Exporting with column template
 
 The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](https://helpej2.syncfusion.com/documentation/api/gantt/pdfQueryCellInfoEventArgs/) event.
 
@@ -158,6 +160,99 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 {% endhighlight %}
 {% highlight c# tabtitle="PDF-columnTemplate.cs" %}
 {% include code-snippet/gantt/pdf-export/pdf-columnTemplate/pdf-columnTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Exporting with taskbar template
+
+The PDF export functionality allows to export taskbar templates that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/#pdfquerytaskbarinfo) event. Taskbars in the exported PDF document can be customized or formatted using the `pdfQueryTaskbarInfo` event for parent taskbar templates, taskbar template and milestone templates.
+
+In the following sample, taskbar templates with images and text are exported to PDF using [taskbarTemplate](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs/#taskbarTemplate) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/#pdfquerytaskbarinfo) event.
+
+>Note: PDF Export supports base64 string to export the images.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-taskbar-Template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdfexport-taskbar-Template.cs" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-taskbar-Template/pdfexport-taskbar-Template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-taskbar-Template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdfexport-taskbar-Template.cs" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-taskbar-Template/pdfexport-taskbar-Template.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Exporting with task label template
+
+The PDF export functionality allows to export task label template that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/#pdfquerytaskbarinfo) event.
+
+In the following sample, task label template with images and text are exported to PDF using [labelSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs/#labelSettings) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/#pdfquerytaskbarinfo) event.
+
+>Note: PDF Export supports base64 string to export the images.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-tasklabel-Template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdfexport-tasklabel-Template.cs" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-tasklabel-Template/pdfexport-tasklabel-Template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-tasklabel-Template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdfexport-tasklabel-Template.cs" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-tasklabel-Template/pdfexport-tasklabel-Template.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Exporting with header template
+
+The PDF export functionality allows to export header template that include `images` and `text` to an PDF document using [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/) event.
+
+In the following sample, header template with images and text are exported to PDF using [headerTemplate](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/#headerTemplate) properties in the [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/) event.
+
+>Note: PDF Export supports base64 string to export the images.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-header-Template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdfexport-header-Template.cs" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-header-Template/pdfexport-header-Template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-header-Template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdfexport-header-Template.cs" %}
+{% include code-snippet/gantt/pdf-export/pdfexport-header-Template/pdfexport-header-Template.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

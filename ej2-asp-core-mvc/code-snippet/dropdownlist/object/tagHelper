@@ -1,0 +1,7 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="records" dataSource="@ViewBag.data" value="@ViewBag.value" placeholder="Select a item" allowFiltering="false" allowObjectBinding="true" popupHeight="200px">
+            <e-dropdownlist-fields value="ID" text="Text"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
