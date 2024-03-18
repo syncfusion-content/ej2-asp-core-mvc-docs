@@ -11,13 +11,13 @@ documentation: ug
 
 # Ribbon Keytips
 
-The Ribbon supports keyboard navigations to interact the ribbon items using the keytips which can be enabled by setting the `enableKeyTips` property.
+The Ribbon supports keyboard navigations to interact the ribbon items using the keytips which can be enabled by setting the `EnableKeyTips` property.
 
 The keytips will be shown when the `Alt + Windows/Command` keys are pressed.
 
 ## Ribbon items keytip
 
-You can add keytips to all the ribbon items by using the `keyTip` property.
+You can add keytips to all the ribbon items by using the `KeyTip` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -29,7 +29,7 @@ You can add keytips to all the ribbon items by using the `keyTip` property.
 
 ## File menu keytip
 
-You can add keytips to the file menu by using the `keyTip` property.
+You can add keytips to the file menu by using the `KeyTip` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -41,7 +41,7 @@ You can add keytips to the file menu by using the `keyTip` property.
 
 ## Backstage menu keytip
 
-You can add keytips to backstage menu items by using the `keyTip` property.
+You can add keytips to backstage menu items by using the `KeyTip` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -53,7 +53,7 @@ You can add keytips to backstage menu items by using the `keyTip` property.
 
 ## Ribbon layout switcher keytip
 
-You can add keytip to the layout switcher by using the `layoutSwitcherKeyTip` property.
+You can add keytip to the layout switcher by using the `LayoutSwitcherKeyTip` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -65,7 +65,7 @@ You can add keytip to the layout switcher by using the `layoutSwitcherKeyTip` pr
 
 ## Ribbon launcher icon keytip
 
-You can add keytip to the launcher icon by using the `launcherIconKeyTip` property.
+You can add keytip to the launcher icon by using the `LauncherIconKeyTip` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
