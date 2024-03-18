@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual Scrolling in ##Platform_Name## Pivot Table Component | Syncfusion
+title: Virtual Scrolling in ##Platform_Name## Pivot Table component | Syncfusion
 description: Learn here all about Virtual Scrolling in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtual Scrolling
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Virtual Scrolling in ##Platform_Name## Pivot Table Component
+# Virtual Scrolling in ##Platform_Name## Pivot Table component
 
 ## Virtual Scrolling
 
