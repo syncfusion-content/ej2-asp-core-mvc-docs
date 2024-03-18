@@ -41,11 +41,11 @@ The virtual scrolling option allows you to load the large amounts of data withou
 
 ![output](images/virtualscrolling.png)
 
-## Single Page Mode
+## Virtual scrolling with single page mode
 
-When virtual scrolling is enabled, the pivot table renders not only the current view page, but also the previous and next pages by default. This default behavior, however, can cause performance delays when dealing with a large number of rows and columns. This is because the same number of rows and columns from adjacent pages are also processed, resulting in additional computational load. This performance constraint can be avoided by setting the [allowSinglePage]() property to **true** within the [virtualScrollSettings]().
+When virtual scrolling is enabled, the pivot table renders not only the current view page, but also the previous and next pages by default. This default behavior, however, can cause performance delays when dealing with a large number of rows and columns. This is because the same number of rows and columns from adjacent pages are also processed, resulting in additional computational load. This performance constraint can be avoided by setting the [allowSinglePage](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewVirtualScrollSettings.html#Syncfusion_EJ2_PivotView_PivotViewVirtualScrollSettings_AllowSinglePage) property to **true** within the [virtualScrollSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewVirtualScrollSettings.html).
 
-Enabling this property causes the pivot table to render only the rows and columns that are relevant to the current view page during virtual scrolling. This optimization significantly improves the performance of the pivot table, particularly in Blazor WASM applications, during initial rendering and when performing UI actions such as drill up/down, sorting, filtering, and more.
+Enabling this property causes the pivot table to render only the rows and columns that are relevant to the current view page during virtual scrolling. This optimization significantly improves the performance of the pivot table during initial rendering and when performing UI actions such as drill up/down, sorting, filtering, and more.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
