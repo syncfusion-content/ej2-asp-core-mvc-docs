@@ -1,0 +1,153 @@
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+  List<RibbonContextualTab> contextTabs = new List<RibbonContextualTab>()
+  {
+    new RibbonContextualTab
+    {
+      Visible = true,
+      Tabs = new List<RibbonTab>()
+      {
+        new RibbonTab()
+        {
+          Id="ShapeFormat", Header = "Shape Format" ,
+          Groups = new List<RibbonGroup>()
+          {
+            new RibbonGroup()
+            {
+              Header="Text decoration",
+              ShowLauncherIcon=true,
+              Collections = new List<RibbonCollection>()
+              {
+                new RibbonCollection()
+                {
+                  Items = new List<RibbonItem>()
+                  {
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Text Header",
+                        IconCss = "e-icons e-text-header"
+                      }
+                    },
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Text Wrap",
+                        IconCss = "e-icons e-text-wrap"
+                      }
+                    },
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Text Annotation",
+                        IconCss = "e-icons e-text-annotation"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            new RibbonGroup()
+            {
+              Header="Accessibility",
+              Collections = new List<RibbonCollection>()
+              {
+                new RibbonCollection()
+                {
+                  Items = new List<RibbonItem>()
+                  {
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      AllowedSizes = RibbonItemSize.Large,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Alt Text",
+                        IconCss = "e-icons e-text-alternative"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            new RibbonGroup()
+            {
+              Header="Arrange",
+              ShowLauncherIcon=true,
+              Collections = new List<RibbonCollection>()
+              {
+                new RibbonCollection()
+                {
+                  Items = new List<RibbonItem>()
+                  {
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Bring Forward",
+                        IconCss = "e-icons e-bring-forward"
+                      }
+                    },
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Send Backward",
+                        IconCss = "e-icons e-send-backward"
+                      }
+                    },
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Selection Pane",
+                        IconCss = "e-icons e-show-hide-panel"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  };
+}
+
+@Html.EJS().Ribbon("ribbon").ContextualTabs(contextTabs).Tabs(tab =>
+{
+  tab.Header("Home").Groups(groups =>
+
+  {
+    groups.Header("Clipboard").GroupIconCss("e-icons e-paste").ShowLauncherIcon(true).Id("lipboardGroup").Collections(collection =>
+    {
+      collection.Items(items =>
+      {
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-cut").Content("Cut");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-copy").Content("Copy");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-format-painter").Content("Format Painter");
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
+}).Render()
