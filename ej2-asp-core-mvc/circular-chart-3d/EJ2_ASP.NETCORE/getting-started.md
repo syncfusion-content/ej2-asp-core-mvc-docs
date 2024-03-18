@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Circular Chart 3D Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Circular Chart 3D control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## 3D Circular Chart Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Circular Chart 3D Control
+# Getting Started with ASP.NET Core 3D Circular Chart Control
 
-This section briefly explains about how to include [ASP.NET Core Circular Chart 3D](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core 3D Circular Chart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -82,9 +82,9 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Circular Chart 3D control
+## Add ASP.NET Core 3D Circular Chart control
 
-Now, add the Syncfusion ASP.NET Core Circular Chart 3D tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core 3D Circular Chart tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -124,7 +124,7 @@ public class CircularChartData
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Circular Chart 3D control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core 3D Circular Chart control will be rendered in the default web browser.
 
 ![ASP.NET Core CircularChart3D Control](images/circular-chart-3d.png)
 
