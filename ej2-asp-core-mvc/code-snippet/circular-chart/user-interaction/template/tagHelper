@@ -1,0 +1,13 @@
+<ejs-circularchart3d id="container" tilt="-45">
+    <e-circularchart3d-legendsettings visible="false">
+    </e-circularchart3d-legendsettings>
+    <e-circularchart3d-tooltipsettings enable="true" 
+    template="<div id='templateWrap' style='background-color:#bd18f9;border-radius: 3px; float: right;padding: 2px;line-height: 20px;text-align: center;'>"+
+        "<img src='https://ej2.syncfusion.com/demos/src/chart/images/sunny.png' />" +
+        "<div style='color:white; font-family:Roboto; font-style: medium; fontp-size:14px;float: right;padding: 2px;line-height: 20px;text-align: center;padding-right:6px'><span>${y}</span></div></div>">
+    </e-circularchart3d-tooltipsettings>
+    <e-circularchart3d-series-collection>
+        <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y">
+        </e-circularchart3d-series>
+    </e-circularchart3d-series-collection>
+</ejs-circularchart3d>
