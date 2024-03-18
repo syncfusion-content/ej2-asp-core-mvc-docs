@@ -86,7 +86,7 @@ Interaction Keys |Description
 
 The Maps component's accessibility levels are ensured using an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Maps component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/maps.html) in a new window to evaluate the accessibility of the Maps component with accessibility tools.
+The accessibility compliance of the Maps component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/aspnet/accessibility/maps/default) in a new window to evaluate the accessibility of the Maps component with accessibility tools.
 
 ## See also
 
