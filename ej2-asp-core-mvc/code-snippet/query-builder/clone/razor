@@ -7,7 +7,7 @@
        col.Field("HireDate").Label("Hire Date").Type("date").Format("dd/MM/yyyy").Add();
        col.Field("Country").Label("Country").Type("string").Add();
        col.Field("City").Label("City").Type("string").Add();
-   }).Rule(ViewBag.rule).ShowButtons(new Syncfusion.EJ2.QueryBuilder.QueryBuilderShowButtons { GroupDelete = true, GroupInsert = true, RuleDelete = true, CloneGroup = true, CloneRule = true }).Render()
+   }).Rule(ViewBag.rule).ShowButtons(new Syncfusion.EJ2.QueryBuilder.QueryBuilderShowButtons { GroupDelete = true, GroupInsert = true, RuleDelete = true, CloneGroup = false, CloneRule = false }).Render()
 
 @Html.EJS().Button("clonegroup").CssClass("e-primary").Content("Clone Group").Render()
 @Html.EJS().Button("clonerule").CssClass("e-primary").Content("Clone Rule").Render()
