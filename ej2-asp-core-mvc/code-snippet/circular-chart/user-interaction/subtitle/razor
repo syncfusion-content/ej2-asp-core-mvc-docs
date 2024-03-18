@@ -1,0 +1,7 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).Title("Oil and other liquid imports in USA"
+).Series(series =>
+{
+    series.XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
+}
+).SubTitle("In the year 2014 - 2015"
+).LegendSettings(leg => leg.Visible(false)).Render()

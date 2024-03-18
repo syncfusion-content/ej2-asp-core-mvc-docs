@@ -1,0 +1,14 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).TextRender("textRender").Series(series =>
+{
+    series.XName("X").YName("Y").DataLabel(dl => dl.Visible(true).Name("Text").Position(Syncfusion.EJ2.Charts.CircularChart3DLabelPosition.Outside)).DataSource(ViewBag.dataSource).Add();
+}
+).LegendSettings(leg => leg.Visible(false)).Render()
+
+<script>
+    textRender: (args) => {
+        if (args.text.indexOf('Mar') > -1) {
+            args.color = 'red';
+            args.border.width = 1;
+        }
+    }
+</script>
