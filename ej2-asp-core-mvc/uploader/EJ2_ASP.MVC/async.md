@@ -343,7 +343,7 @@ The Uploader control allows you to add the additional headers with `save` and `r
 The following code block shows how to add the additional headers with save and remove action request.
 
 ```html
-   @Html.EJS().Uploader("UploadFiles").DropArea(".control-fluid").Uploading("addHeaders").Removing("addHeaders").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" }).Render()
+   @Html.EJS().Uploader("UploadFiles").DropArea(".control-fluid").Uploading("addHeaders").Removing("addHeaders").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save", RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).Render()
 
 ```
 
