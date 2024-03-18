@@ -1,4 +1,4 @@
-@Html.EJS().Uploader("UploadFiles").Selected("onFileSelected").Success("onUploadSuccess").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" }).Render()
+@Html.EJS().Uploader("UploadFiles").Selected("onFileSelected").Success("onUploadSuccess").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save", RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).Render()
 <script>
     function onFileSelected(args) {
         // Filter the 5 files only to showcase
