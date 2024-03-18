@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Olap in ##Platform_Name## Pivot Table Component | Syncfusion
+title: Olap in ##Platform_Name## Pivot Table component | Syncfusion
 description: Learn here all about Olap in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Olap
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# OLAP in ##Platform_Name## Pivot Table Control
+# OLAP in ##Platform_Name## Pivot Table component
 
 ## Getting Started with ASP.NET Core
 
