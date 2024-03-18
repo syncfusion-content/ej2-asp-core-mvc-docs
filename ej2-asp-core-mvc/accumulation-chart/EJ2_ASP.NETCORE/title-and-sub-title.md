@@ -9,8 +9,9 @@ documentation: ug
 ---
 
 <!-- markdownlint-disable MD036 -->
+# Title and sub title in ##Platform_Name## Accumulation Chart Component
 
-# Title
+## Title
 
 Accumulation Chart can be given a title using [`title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_Title) property, to show the information about the data plotted.
 
