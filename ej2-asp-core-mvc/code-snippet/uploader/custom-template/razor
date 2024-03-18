@@ -3,7 +3,7 @@
         <span id='drop' class="droparea"> Drop files here or <a href="" id='browse'><u>Browse</u></a> </span>
         @Html.EJS().Uploader("UploadFiles").Success("onuploadSuccess").DropArea("#dropArea").Failure("onuploadFailed").Selected("onSelect").Progress("onFileUpload").Template("<span class='wrapper'><span class='icon sf-icon-${type}'></span><span class='name file-name'>${name}</span></span>" +
         "<span class='file-size-td file-size'>${size} bytes</span> <span class='e-icons e-file-remove-btn' title='Remove'></span> <br/> " +
-        "<progress id='progressBar' class='progressbar' value='0' max='100'></progress> <span class='percent-td percent'></span>").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" }).AutoUpload(false).Render()
+        "<progress id='progressBar' class='progressbar' value='0' max='100'></progress> <span class='percent-td percent'></span>").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save", RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).AutoUpload(false).Render()
     </div>
 </div>
 
