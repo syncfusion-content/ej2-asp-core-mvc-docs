@@ -2,7 +2,7 @@
     <div class="control_wrapper">
         <div id='dropArea'>
             <span id='drop' class="droparea"> Drop files here or <a href="" id='browse'><u>Browse</u></a> </span>
-            @Html.EJS().Uploader("UploadFiles").Selected("onFileSelect").Progress("onFileUpload").Success("onUploadSuccess").Failure("onUploadFailed").AutoUpload(false).AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" }).Render()
+            @Html.EJS().Uploader("UploadFiles").Selected("onFileSelect").Progress("onFileUpload").Success("onUploadSuccess").Failure("onUploadFailed").AutoUpload(false).AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save", RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).Render()
         </div>
         <div style="margin-left: 50px; padding-top:25px;">
             @Html.EJS().Button("clearbtn").Content("Clear All").Render()
