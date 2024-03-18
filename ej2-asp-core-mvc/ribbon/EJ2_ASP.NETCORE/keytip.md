@@ -10,13 +10,13 @@ documentation: ug
 
 # Ribbon Keytips
 
-The Ribbon supports keyboard navigations to interact the ribbon items using the keytips which can be enabled by setting the `enableKeyTips` property.
+The Ribbon supports keyboard navigations to interact the ribbon items using the keytips which can be enabled by setting the [enableKeyTips](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.ribbon.ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_EnableKeyTips) property.
 
 The keytips will be shown when the `Alt + Windows/Command` keys are pressed.
 
 ## Ribbon items keytip
 
-You can add keytips to all the ribbon items by using the `keyTip` property.
+You can add keytips to all the ribbon items by using the [keyTip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_KeyTip) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -28,7 +28,7 @@ You can add keytips to all the ribbon items by using the `keyTip` property.
 
 ## File menu keytip
 
-You can add keytips to the file menu by using the `keyTip` property.
+You can add keytips to the file menu by using the [keyTip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.FileMenuSettings.html#Syncfusion_EJ2_Ribbon_FileMenuSettings_KeyTip) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -40,7 +40,7 @@ You can add keytips to the file menu by using the `keyTip` property.
 
 ## Backstage menu keytip
 
-You can add keytips to backstage menu items by using the `keyTip` property.
+You can add keytips to backstage menu items by using the [keyTip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.BackStageMenu.html#Syncfusion_EJ2_Ribbon_BackStageMenu_KeyTip) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -52,7 +52,7 @@ You can add keytips to backstage menu items by using the `keyTip` property.
 
 ## Ribbon layout switcher keytip
 
-You can add keytip to the layout switcher by using the `layoutSwitcherKeyTip` property.
+You can add keytip to the layout switcher by using the [layoutSwitcherKeyTip](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.ribbon.ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_LayoutSwitcherKeyTip) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -64,7 +64,7 @@ You can add keytip to the layout switcher by using the `layoutSwitcherKeyTip` pr
 
 ## Ribbon launcher icon keytip
 
-You can add keytip to the launcher icon by using the `launcherIconKeyTip` property.
+You can add keytip to the launcher icon by using the [launcherIconKeyTip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroup.html#Syncfusion_EJ2_Ribbon_RibbonGroup_LauncherIconKeyTip) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -73,6 +73,18 @@ You can add keytip to the launcher icon by using the `launcherIconKeyTip` proper
 {% endtabs %}
 
 ![ASP.NET Core Ribbon Control with launcher icon keytip](./images/ribbon-launchericon-keytip.png)
+
+## Methods
+
+### Show keytips
+
+You can use the `showKeyTips` method to shown the keytips dynamically.
+
+In order to show specific keytips, pass the key string as an argument in the `showKeyTips` method.
+
+### Hide keytips
+
+You can remove the keytips dynamically using the `hideKeyTips` method in the Ribbon. This will remove all the visible keytips.
 
 ## Guidelines for adding keytips
 
