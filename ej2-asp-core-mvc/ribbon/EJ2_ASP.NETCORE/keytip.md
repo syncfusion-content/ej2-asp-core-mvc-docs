@@ -80,11 +80,11 @@ You can add keytip to the launcher icon by using the [launcherIconKeyTip](https:
 
 You can use the `showKeyTips` method to shown the keytips dynamically.
 
-In order to show specific keytips, pass the key string as an argument in the `showKeyTips` method.
+In order to show specific keytips, pass the key string as an argument in the `showKeyTips('H')` method.
 
 ### Hide keytips
 
-You can remove the keytips dynamically using the `hideKeyTips` method in the Ribbon. This will remove all the visible keytips.
+You can use the `hideKeyTips` method in Ribbon to remove the keytips dynamically. This will remove all the visible keytips.
 
 ## Guidelines for adding keytips
 
