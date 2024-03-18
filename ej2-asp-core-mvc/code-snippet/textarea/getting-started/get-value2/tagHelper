@@ -1,0 +1,13 @@
+<div class="control-section">
+    <div class="control_wrapper TextArea-control-section">
+        <ejs-textarea id="default" value="Comments" change="ChangeHandler"></ejs-textarea>
+        <button id="valuebtn">Get Value</button>
+    </div>
+</div>
+
+<script>
+    function ChangeHandler(args) {
+        // get TextArea value from the arguments
+        let textareaValue = args.value;
+    }
+</script>
