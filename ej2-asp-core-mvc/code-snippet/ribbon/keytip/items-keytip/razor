@@ -128,7 +128,7 @@
 
 <script>
    function ribbonCreated() {
-        ribbon = this;
+        var ribbon = this;
         ribbon.ribbonKeyTipModule.showKeyTips('H');
     }
 </script>
