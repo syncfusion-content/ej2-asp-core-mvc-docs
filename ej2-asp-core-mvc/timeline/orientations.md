@@ -10,11 +10,11 @@ documentation: ug
 
 # Orientations in ##Platform_Name## Timeline control
 
-The Timeline control supports the display of items in both horizontal and vertical direction by using the `orientation` property.
+The Timeline control supports the display of items in both horizontal and vertical direction by using the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Orientation) property.
 
 ## Vertical
 
-You can display the items one below the other vertically by setting the `orientation` property to `Vertical`. By default, the items are displayed in vertical orientation.
+You can display the items one below the other vertically by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Orientation) property to `Vertical`. By default, the items are displayed in vertical orientation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -43,7 +43,7 @@ You can display the items one below the other vertically by setting the `orienta
 
 ## Horizontal
 
-In horizontal orientation, the items are displayed in a side-by-side manner by setting the `orientation` property to `Horizontal`.
+In horizontal orientation, the items are displayed in a side-by-side manner by setting the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Orientation) property to `Horizontal`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

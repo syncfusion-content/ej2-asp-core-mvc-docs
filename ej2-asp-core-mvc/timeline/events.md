@@ -14,7 +14,7 @@ This section describes the Timeline events that will be triggered when an approp
 
 ## created
 
-The Timeline control triggers the `created` event when the control rendering is completed.
+The Timeline control triggers the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Created) event when the control rendering is completed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,7 +41,7 @@ The Timeline control triggers the `created` event when the control rendering is 
 
 ## beforeItemRender
 
-The Timeline control triggers the `beforeItemRender` event before rendering each item.
+The Timeline control triggers the [beforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_BeforeItemRender) event before rendering each item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
