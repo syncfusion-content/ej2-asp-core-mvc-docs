@@ -1,9 +1,8 @@
-@Html.EJS().CircularChart3D("container").Tilt(-45
-).Series(series =>
+@Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
 {
     series.XName("X").YName("Y").Radius("100%").DataSource(ViewBag.dataSource).Add();
 }
-).LegendSettings(leg => leg.Visible(false)).Render()
+).LegendSettings(leg => leg.Visible(false)).EnableExport(true).Render()
 
 <div>
     @Html.EJS().Button("export").IsPrimary(true).Content("Export").Render()
