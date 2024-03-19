@@ -8,7 +8,7 @@
 </ejs-circularchart3d>
 
 <script>
-    pointRender: (args) => {
+    var pointRender = function(args) {
         if ((args.point.x).indexOf('Apr') > -1) {
             args.fill = '#f4bc42';
         }

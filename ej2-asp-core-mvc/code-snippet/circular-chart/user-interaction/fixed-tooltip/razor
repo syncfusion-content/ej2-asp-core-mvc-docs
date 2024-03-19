@@ -2,5 +2,5 @@
 {
     series.XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
 }
-).Tooltip(tt => tt.Enable(true).Location(lc => lc.X("200").Y("20"))
+).Tooltip(tt => tt.Enable(true).Location(lc => lc.X(200).Y(20))
 ).LegendSettings(leg => leg.Visible(false)).Render()
