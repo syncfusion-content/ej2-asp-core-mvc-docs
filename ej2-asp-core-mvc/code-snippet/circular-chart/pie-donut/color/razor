@@ -1,0 +1,6 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
+{
+    series.XName("X").YName("Y").PointColorMapping("fill").DataLabel(dl => dl.Visible(true).Name("Text"))
+    .DataSource(ViewBag.dataSource).Add();
+}
+).LegendSettings(leg => leg.Visible(false)).Render()

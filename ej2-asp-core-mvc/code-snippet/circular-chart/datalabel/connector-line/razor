@@ -1,0 +1,6 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
+{
+    series.XName("X").YName("Y").DataLabel(dl => dl.Visible(true).Name("Text").Position(Syncfusion.EJ2.Charts.CircularChart3DLabelPosition.Outside)
+    .ConnectorStyle(cs => cs.Length("50px").Width(2).Color("#f4429e").dashArray("5,3"))).DataSource(ViewBag.dataSource).Add();
+}
+).LegendSettings(leg => leg.Visible(false)).Render()
