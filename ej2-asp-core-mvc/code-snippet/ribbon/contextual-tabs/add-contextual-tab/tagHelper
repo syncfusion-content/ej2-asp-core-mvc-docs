@@ -1,0 +1,83 @@
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon">
+     <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" id="clipboardGroup" groupIconCss="e-icons e-paste" showLauncherIcon=true>
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+         </e-ribbon-tab>
+    </e-ribbon-tabs>
+    <e-ribbon-contextual-tabs>
+        <e-ribbon-contextual-tab visible=true>
+            <e-ribbon-tabs>
+                <e-ribbon-tab header="Shape Format" id="ShapeFormat">
+                    <e-ribbon-groups>
+                        <e-ribbon-group header="Text decoration" id="Textdecoration" showLauncherIcon=true>
+                            <e-ribbon-collections>
+                                <e-ribbon-collection>
+                                    <e-ribbon-items>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-text-header" content="Text Header"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-text-wrap" content="Text Wrap"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-text-annotation" content="Text Annotation"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                    </e-ribbon-items>
+                                </e-ribbon-collection>
+                            </e-ribbon-collections>
+                        </e-ribbon-group>
+                        <e-ribbon-group header="Accessibility">
+                            <e-ribbon-collections>
+                                <e-ribbon-collection>
+                                    <e-ribbon-items>
+                                        <e-ribbon-item type="Button" allowedSizes=Large>
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-text-alternative" content="Alt Text"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                    </e-ribbon-items>
+                                </e-ribbon-collection>
+                            </e-ribbon-collections>
+                        </e-ribbon-group>
+                        <e-ribbon-group header="Arrange" showLauncherIcon=true>
+                            <e-ribbon-collections>
+                                <e-ribbon-collection>
+                                    <e-ribbon-items>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-bring-forward" content="Bring Forward"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-send-backward" content="Send Backward"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-show-hide-panel" content="Selection Pane"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                    </e-ribbon-items>
+                                </e-ribbon-collection>
+                            </e-ribbon-collections>
+                        </e-ribbon-group>
+                    </e-ribbon-groups>
+                </e-ribbon-tab>
+            </e-ribbon-tabs>
+        </e-ribbon-contextual-tab>
+    </e-ribbon-contextual-tabs>
+</ejs-ribbon>
