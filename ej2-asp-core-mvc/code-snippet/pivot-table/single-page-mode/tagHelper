@@ -1,0 +1,51 @@
+<ejs-pivotview id="PivotView" height="350" width="100%" enableVirtualization="true">
+    <e-datasourcesettings dataSource="data(1000)" expandAll="false" enableSorting="true">
+        <e-fieldlist-rows>
+            <e-field name="ProductID"></e-field>
+        </e-fieldlist-rows>
+        <e-fieldlist-columns>
+            <e-field name="Year"></e-field>
+        </e-fieldlist-columns>
+        <e-fieldlist-values>
+            <e-field name="Price" caption="Unit Price"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+        </e-fieldlist-values>
+    </e-datasourcesettings>
+    <e-virtualScrollSettings allowSinglePage="true"></e-gridSettings>
+</ejs-pivotview>
+
+<script>
+    var dt = 0;
+    var data = function (count) {
+        var result = [];
+        for (var i = 1; i < (count + 1); i++) {
+            dt++;
+            var round = void 0;
+            var toString_1 = i.toString();
+            if (toString_1.length === 1) {
+                round = '0000' + (i);
+            }
+            else if (toString_1.length === 2) {
+                round = '000' + i;
+            }
+            else if (toString_1.length === 3) {
+                round = '00' + i;
+            }
+            else if (toString_1.length === 4) {
+                round = '0' + i;
+            }
+            else {
+                round = toString_1;
+            }
+            result.push({
+                ProductID: 'PRO-' + round,
+                Year: "FY " + (dt + 2013),
+                Price: Math.round(Math.random() * 5000) + 5000,
+                Sold: Math.round(Math.random() * 80) + 10,
+            });
+            if (dt / 4 == 1)
+                dt = 0;
+        }
+        return result;
+    };
+</script>
