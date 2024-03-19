@@ -1,0 +1,78 @@
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<div>
+  <button class="e-btn" id="show-contextual"> Show tab </button>
+  <button class="e-btn" id="hide-contextual"> Hide tab </button>
+</div>
+<ejs-ribbon id="ribbon" created="ribbonCreated">
+     <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" id="clipboardGroup" groupIconCss="e-icons e-paste" showLauncherIcon=true>
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+         </e-ribbon-tab>
+    </e-ribbon-tabs>
+    <e-ribbon-contextual-tabs>
+        <e-ribbon-contextual-tab>
+            <e-ribbon-tabs>
+                <e-ribbon-tab header="Arrange & View" id="ArrangeView">
+                    <e-ribbon-groups>
+                        <e-ribbon-group header="Arrange" showLauncherIcon=true>
+                            <e-ribbon-collections>
+                                <e-ribbon-collection>
+                                    <e-ribbon-items>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-bring-forward" content="Bring Forward"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-send-backward" content="Send Backward"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-show-hide-panel" content="Selection Pane"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                    </e-ribbon-items>
+                                </e-ribbon-collection>
+                            </e-ribbon-collections>
+                        </e-ribbon-group>
+                    </e-ribbon-groups>
+                </e-ribbon-tab>
+            </e-ribbon-tabs>
+        </e-ribbon-contextual-tab>
+    </e-ribbon-contextual-tabs>
+</ejs-ribbon>
+
+<script>
+    var ribbon;
+    function ribbonCreated () {
+        ribbon = document.getElementById('ribbon').ej2_instances[0];
+    }
+    document.getElementById('show-contextual').onclick = () => {
+      ribbon.showTab('ArrangeView', true);
+    }
+    document.getElementById('hide-contextual').onclick = () => {
+      ribbon.hideTab('ArrangeView', true);
+    }
+</script>
+
+<style>
+  #ribbon {
+    margin-top: 20px;
+  }
+</style>

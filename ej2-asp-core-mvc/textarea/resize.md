@@ -43,7 +43,6 @@ The TextArea allows users to input and edit large amounts of text. Resizing this
 {% endtabs %}
 {% endif %}
 
-
 ## Width of ##Platform_Name## TextArea control
 
 You can easily customize the width of the TextArea using the [Width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_Width) property. This property allows precise adjustment of the TextArea's width according to the specific layout requirements of the application.
