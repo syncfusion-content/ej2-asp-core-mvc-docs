@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Ribbon Keytips
+# Keytips in ASP.NET MVC Ribbon Control
 
 The Ribbon supports keyboard navigations to interact the ribbon items using the keytips which can be enabled by setting the [EnableKeyTips](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.ribbon.ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_EnableKeyTips) property.
 
