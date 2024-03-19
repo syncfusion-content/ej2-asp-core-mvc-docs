@@ -1,0 +1,13 @@
+<div class="control-section">
+    <div class="control_wrapper textarea-control-section">
+        @Html.EJS().TextArea("default").Render()
+        <button id="button">Focus-Out</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("button").onclick = function() {
+        var textareaObj = document.getElementById('default').ej2_instances[0];
+        textareaObj.focusOut();
+    };
+</script>
