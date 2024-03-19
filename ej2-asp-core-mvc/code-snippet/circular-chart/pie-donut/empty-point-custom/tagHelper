@@ -3,7 +3,7 @@
     </e-circularchart3d-legendsettings>
     <e-circularchart3d-series-collection>
         <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y">
-            <e-circularchart3d-series-emptyPointSettings mode="Average" fill="pink"></e-circularchart3d-series-emptyPointSettings>
+            <e-circularchart3dseries-emptyPointSettings mode="@Syncfusion.EJ2.Charts.EmptyPointMode.Average" fill="pink"></e-circularchart3dseries-emptyPointSettings>
         </e-circularchart3d-series>
     </e-circularchart3d-series-collection>
 </ejs-circularchart3d>

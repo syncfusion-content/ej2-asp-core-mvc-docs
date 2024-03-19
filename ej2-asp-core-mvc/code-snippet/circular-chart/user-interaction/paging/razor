@@ -2,4 +2,4 @@
 {
     series.XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
 }
-).LegendSettings(leg => leg.Width(80).Height(150)).Render()
+).LegendSettings(leg => leg.Width("80").Height("150")).Render()
