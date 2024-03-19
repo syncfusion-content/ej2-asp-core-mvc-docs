@@ -39,3 +39,7 @@ The `rows`attribute determines the initial visible number of lines within the Te
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![textarea](./images/textarea-rowscols.png)
