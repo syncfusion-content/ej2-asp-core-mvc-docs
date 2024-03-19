@@ -1,0 +1,111 @@
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+  List<RibbonContextualTab> contextTabs = new List<RibbonContextualTab>()
+{
+    new RibbonContextualTab
+    {
+      Tabs = new List<RibbonTab>()
+  {
+        new RibbonTab()
+        {
+          Header = "Arrange & View",
+          Id = "ArrangeView",
+          Groups = new List<RibbonGroup>()
+      {
+            new RibbonGroup()
+            {
+              Header="Arrange",
+              ShowLauncherIcon=true,
+              Collections = new List<RibbonCollection>()
+          {
+                new RibbonCollection()
+                {
+                  Items = new List<RibbonItem>()
+              {
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Bring Forward",
+                        IconCss = "e-icons e-bring-forward"
+                      }
+                    },
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Send Backward",
+                        IconCss = "e-icons e-send-backward"
+                      }
+                    },
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Selection Pane",
+                        IconCss = "e-icons e-show-hide-panel"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  };
+}
+<div>
+  <button class="e-btn" id="show-contextual"> Show tab </button>
+  <button class="e-btn" id="hide-contextual"> Hide tab </button>
+</div>
+@Html.EJS().Ribbon("ribbon").ContextualTabs(contextTabs).Created("ribbonCreated").Tabs(tab =>
+{
+  tab.Header("Home").Groups(groups =>
+
+  {
+    groups.Header("Clipboard").GroupIconCss("e-icons e-paste").ShowLauncherIcon(true).Id("lipboardGroup").Collections(collection =>
+    {
+      collection.Items(items =>
+      {
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-cut").Content("Cut");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-copy").Content("Copy");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-format-painter").Content("Format Painter");
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
+}).Render()
+
+<script>
+  var ribbon;
+  function ribbonCreated() {
+      ribbon = document.getElementById('ribbon').ej2_instances[0];
+  }
+  document.getElementById('show-contextual').onclick = () => {
+    ribbon.showTab('ArrangeView', true);
+  }
+  document.getElementById('hide-contextual').onclick = () => {
+    ribbon.hideTab('ArrangeView', true);
+  }
+</script>
+
+<style>
+  #ribbon {
+    margin-top: 20px;
+  }
+</style>
