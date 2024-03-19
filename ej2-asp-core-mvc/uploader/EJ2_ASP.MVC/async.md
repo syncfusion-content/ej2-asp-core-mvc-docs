@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Async in ##Platform_Name## Syncfusion Uploader Component
+title: Async in ##Platform_Name## Uploader Component | Syncfusion
 description: Learn here all about Async in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Async
