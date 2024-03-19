@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Asynchronous upload
+# Asynchronous upload in Uploader
 
 The uploader control allows you to upload the files asynchronously. 
 The upload process requires save and remove action URL to manage the upload process in the server.
