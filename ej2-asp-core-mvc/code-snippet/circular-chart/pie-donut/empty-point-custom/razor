@@ -1,6 +1,6 @@
 @Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
 {
-    series.XName("X").YName("Y").EmptyPointSettings(em => em.Mode("Average").Fill("pink"))
+    series.XName("X").YName("Y").EmptyPointSettings(em => em.Mode(Syncfusion.EJ2.Charts.EmptyPointMode.Average).Fill("pink"))
     .DataSource(ViewBag.dataSource).Add();
 }
 ).LegendSettings(leg => leg.Visible(false)).Render()

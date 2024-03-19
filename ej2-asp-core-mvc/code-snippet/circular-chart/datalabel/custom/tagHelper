@@ -10,7 +10,7 @@
 </ejs-circularchart3d>
 
 <script>
-    textRender: (args) => {
+    var textRender = function(args) {
         if (args.text.indexOf('Mar') > -1) {
             args.color = 'red';
             args.border.width = 1;

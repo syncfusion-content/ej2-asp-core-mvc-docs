@@ -1,7 +1,7 @@
 <ejs-circularchart3d id="container" tilt="-45">
     <e-circularchart3d-legendsettings width="150" height="100">
-        <e-circularchart3d-legendsettings-border width="1" color="pink">
-        </e-circularchart3d-legendsettings-border>
+        <e-circularchart3dlegendsettings-border width="1" color="pink">
+        </e-circularchart3dlegendsettings-border>
     </e-circularchart3d-legendsettings>
     <e-circularchart3d-series-collection>
         <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y">
