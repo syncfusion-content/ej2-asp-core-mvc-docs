@@ -125,7 +125,7 @@ Any HTML element can be rendered in the tooltip of the polygon shapes using the 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/maps/polygon/polygon-shape-tooltip-template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Polygon-shape.cs" %}
+{% highlight c# tabtitle="Polygon-shape-tooltip-template.cs" %}
 {% include code-snippet/maps/polygon/polygon-shape-tooltip-template/polygon-shape-tooltip-template.cs %}
 {% endhighlight %}
 {% endtabs %}
