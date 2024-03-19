@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Empty points in ##Platform_Name## 3D Circular Chart Component
+title: Empty points in ##Platform_Name## Syncfusion 3D Circular Chart Component
 description: Learn here all about empty points in Syncfusion ##Platform_Name## 3D Circular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Empty points

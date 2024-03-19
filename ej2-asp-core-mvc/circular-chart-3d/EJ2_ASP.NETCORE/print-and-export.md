@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print and Export in ##Platform_Name## 3D Circular Chart Component
+title: Print and Export in ##Platform_Name## Syncfusion 3D Circular Chart Component
 description: Learn here all about print and export in Syncfusion ##Platform_Name## 3D Circular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print and Export
