@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Linear Gauge component
+title: Animation in the Syncfusion ##Platform_Name## Linear Gauge component
 description: Learn here all about animation in the Syncfusion ##Platform_Name## Linear Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Animation
