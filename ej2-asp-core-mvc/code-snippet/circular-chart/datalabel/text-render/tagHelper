@@ -10,7 +10,7 @@
 </ejs-circularchart3d>
 
 <script>
-    textRender: (args) => {
+    var textRender = function(args) {
         args.text = args.point.percentage + "%";
     }
 </script>

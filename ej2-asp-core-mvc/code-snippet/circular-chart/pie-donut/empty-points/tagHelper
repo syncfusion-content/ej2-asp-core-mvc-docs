@@ -5,7 +5,7 @@
         <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y">
             <e-circularchart3d-series-datalabel visible="true" position="@Syncfusion.EJ2.Charts.CircularChart3DLabelPosition.Outside">
             </e-circularchart3d-series-datalabel>
-            <e-circularchart3d-series-emptyPointSettings mode="Zero"></e-circularchart3d-series-emptyPointSettings>
+            <e-circularchart3dseries-emptyPointSettings mode="@Syncfusion.EJ2.Charts.EmptyPointMode.Zero"></e-circularchart3dseries-emptyPointSettings>
         </e-circularchart3d-series>
     </e-circularchart3d-series-collection>
 </ejs-circularchart3d>

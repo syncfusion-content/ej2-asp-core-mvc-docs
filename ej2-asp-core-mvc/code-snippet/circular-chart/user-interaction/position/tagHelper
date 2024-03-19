@@ -1,5 +1,5 @@
 <ejs-circularchart3d id="container" tilt="-45">
-    <e-circularchart3d-legendsettings position="Top" alignment="Near">
+    <e-circularchart3d-legendsettings position="@Syncfusion.EJ2.Charts.LegendPosition.Top" alignment="@Syncfusion.EJ2.Charts.Alignment.Near">
     </e-circularchart3d-legendsettings>
     <e-circularchart3d-series-collection>
         <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y">

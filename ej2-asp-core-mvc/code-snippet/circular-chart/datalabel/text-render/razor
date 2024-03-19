@@ -5,7 +5,7 @@
 ).LegendSettings(leg => leg.Visible(false)).Render()
 
 <script>
-    textRender: (args) => {
+    var textRender = function(args) {
         args.text = args.point.percentage + "%";
     }
 </script>
