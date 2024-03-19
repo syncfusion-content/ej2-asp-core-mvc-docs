@@ -1,0 +1,25 @@
+<ejs-circularchart3d id="container" tilt="-45" pointRender="pointRender">
+    <e-circularchart3d-legendsettings visible="false">
+    </e-circularchart3d-legendsettings>
+    <e-circularchart3d-series-collection>
+        <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y">
+        </e-circularchart3d-series>
+    </e-circularchart3d-series-collection>
+</ejs-circularchart3d>
+
+<script>
+    var pointRender = function(args) {
+        if ((args.point.x).indexOf('Apr') > -1) {
+            args.fill = '#f4bc42';
+        }
+        else if ((args.point.x).indexOf('Mar') > -1) {
+            args.fill = '#DE3D8A';
+        }
+        else if ((args.point.x).indexOf('Feb') > -1) {
+            args.fill = '#F7523F';
+        }
+        else {
+            args.fill = '#597cf9';
+        }
+    }
+</script>

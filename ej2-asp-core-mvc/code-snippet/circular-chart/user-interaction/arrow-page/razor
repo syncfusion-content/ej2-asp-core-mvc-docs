@@ -1,0 +1,5 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
+{
+    series.XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
+}
+).LegendSettings(leg => leg.Width("260px").Height("50px").EnablePages(false).Position(Syncfusion.EJ2.Charts.LegendPosition.Bottom)).Render()
