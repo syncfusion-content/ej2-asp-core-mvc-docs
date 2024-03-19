@@ -26,31 +26,30 @@
     }).Add();
 }).Render()
 
-<sctipt>
+<script>
     function loadCultureFiles(name) {
         ej.base.setCulture(name);
         ej.base.setCurrencyCode('EUR');
         var files = ['ca-gregorian.json', 'currencies.json', 'numbers.json', 'timeZoneNames.json', 'numberingSystems.json'];
         var loader = ej.base.loadCldr;
         var loadCulture = function (prop) {
-            var ajax;
-            if (prop === 'numberingSystems.json') {
-                ajax = new ej.base.Ajax(location.origin + '/../../scripts/cldr-data/supplemental/' + files[prop], 'GET', false);
+            var val, ajax;
+            if (files[prop] === 'numberingSystems.json') {
+                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/supplemental/' + files[prop], 'GET', false);
             } else {
-                ajax = new ej.base.Ajax(location.origin + '/../../scripts/cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/main/' + name + '/' + files[prop], 'GET', false);
             }
             ajax.onSuccess = function (value) {
-                loader(JSON.parse(value));
+                val = value;
             };
             ajax.send();
+            loader(JSON.parse(val));
         };
         for (var prop = 0; prop < files.length; prop++) {
             loadCulture(prop);
         }
     }
-    document.addEventListener('DOMContentLoaded', function () {
-        loadCultureFiles('de');
-    });
+    loadCultureFiles('de');
 
     function created() {
         var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
