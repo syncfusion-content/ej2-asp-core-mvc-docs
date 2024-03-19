@@ -109,28 +109,14 @@ By utilizing the `CssClass` API, users can apply custom CSS classes to the TextA
 
 To disable the TextArea, you can utilize the [Enabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_Enabled) property. When set to `false`, the TextArea becomes disabled, preventing user interaction.
 
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-import { TextArea } from '@syncfusion/ej2-inputs';
-
-// Initialize TextArea component
-let textareaObj: TextArea = new TextArea({
-    enabled: false
-});
-textareaObj.appendTo('#default');
-
+{% if page.publishingplatform == "aspnet-core" %}
+```html
+<ejs-textarea id="default" enabled=false></ejs-daterangepicker>
 ```
-{% elsif page.publishingplatform == "javascript" %}
 
-```js
-// Initialize TextArea component
-var textareaObj= new ej.inputs.TextArea({
-    enabled: false
-});
-
-textareaObj.appendTo('#default');
-
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+```html
+@Html.EJS().TextArea("default").Enabled(false).Render()
 ```
 {% endif %}
 
@@ -138,30 +124,14 @@ textareaObj.appendTo('#default');
 
 To make the TextArea read-only , you can use the [Readonly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_Readonly) property. When set to `true`, it prevents users from editing the content of the TextArea.
 
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-import { TextArea } from '@syncfusion/ej2-inputs';
-
-// Initialize TextArea component
-let textareaObj: TextArea = new TextArea({
-    value: 'Readonly',
-    readonly: true
-});
-textareaObj.appendTo('#default');
-
+{% if page.publishingplatform == "aspnet-core" %}
+```html
+<ejs-textarea id="default" value="Readonly" readonly=true></ejs-daterangepicker>
 ```
-{% elsif page.publishingplatform == "javascript" %}
 
-```js
-// Initialize TextArea component
-var textareaObj= new ej.inputs.TextArea({
-    value: 'Readonly',
-    readonly: true
-});
-
-textareaObj.appendTo('#default');
-
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+```html
+@Html.EJS().TextArea("default").Readonly(true).Value("Readonly").Render()
 ```
 {% endif %}
 
