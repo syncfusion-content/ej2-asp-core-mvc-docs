@@ -44,6 +44,10 @@ By applying these classes, users can easily customize the appearance of the Text
 
 {% endif %}
 
+Output be like the below.
+
+![textarea](./images/textarea-sizing.png)
+
 ## Filled and Outline mode
 
 The Filled and Outline modes can be enabled in the TextArea component by adding the `e-outline` or `e-filled` class to the [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_CssClass) API.
@@ -72,6 +76,10 @@ By adding these classes, users can choose between a filled or outline appearance
 {% endtabs %}
 
 {% endif %}
+
+Output be like the below.
+
+![textarea](./images/textarea-filledOutlined.png)
 
 >Note: Filled and Outline theme customization are available only with Material themes.
 
@@ -109,28 +117,14 @@ By utilizing the `CssClass` API, users can apply custom CSS classes to the TextA
 
 To disable the TextArea, you can utilize the [Enabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_Enabled) property. When set to `false`, the TextArea becomes disabled, preventing user interaction.
 
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-import { TextArea } from '@syncfusion/ej2-inputs';
-
-// Initialize TextArea component
-let textareaObj: TextArea = new TextArea({
-    enabled: false
-});
-textareaObj.appendTo('#default');
-
+{% if page.publishingplatform == "aspnet-core" %}
+```html
+<ejs-textarea id="default" enabled=false></ejs-daterangepicker>
 ```
-{% elsif page.publishingplatform == "javascript" %}
 
-```js
-// Initialize TextArea component
-var textareaObj= new ej.inputs.TextArea({
-    enabled: false
-});
-
-textareaObj.appendTo('#default');
-
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+```html
+@Html.EJS().TextArea("default").Enabled(false).Render()
 ```
 {% endif %}
 
@@ -138,30 +132,14 @@ textareaObj.appendTo('#default');
 
 To make the TextArea read-only , you can use the [Readonly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_Readonly) property. When set to `true`, it prevents users from editing the content of the TextArea.
 
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-import { TextArea } from '@syncfusion/ej2-inputs';
-
-// Initialize TextArea component
-let textareaObj: TextArea = new TextArea({
-    value: 'Readonly',
-    readonly: true
-});
-textareaObj.appendTo('#default');
-
+{% if page.publishingplatform == "aspnet-core" %}
+```html
+<ejs-textarea id="default" value="Readonly" readonly=true></ejs-daterangepicker>
 ```
-{% elsif page.publishingplatform == "javascript" %}
 
-```js
-// Initialize TextArea component
-var textareaObj= new ej.inputs.TextArea({
-    value: 'Readonly',
-    readonly: true
-});
-
-textareaObj.appendTo('#default');
-
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+```html
+@Html.EJS().TextArea("default").Readonly(true).Value("Readonly").Render()
 ```
 {% endif %}
 
@@ -207,6 +185,10 @@ To display a static clear button in the TextArea component, you can add the `e-s
 
 {% endif %}
 
+Output be like the below.
+
+![textarea](./images/textarea-static-clear.png)
+
 ## Customize the TextArea background color and text color
 
 You can customize the TextArea styles such as background-color, text-color and border-color by overriding its default styles to achieve the desired appearance for the TextArea.
@@ -234,6 +216,10 @@ You can customize the TextArea styles such as background-color, text-color and b
 {% endtabs %}
 
 {% endif %}
+
+Output be like the below.
+
+![textarea](./images/textarea-color.png)
 
 ## Change the floating label color of the TextArea
 
@@ -281,6 +267,10 @@ You can change the floating label color of the TextArea for both `success` and `
 
 {% endif %}
 
+Output be like the below.
+
+![textarea](./images/textarea-floatLabel-color.png)
+
 ## Adding mandatory asterisk to placeholder
 
 To add a mandatory asterisk (*) to the placeholder in the TextArea component, you can utilize CSS to append the asterisk after the placeholder text.
@@ -318,3 +308,7 @@ To add a mandatory asterisk (*) to the placeholder in the TextArea component, yo
 {% endtabs %}
 
 {% endif %}
+
+Output be like the below.
+
+![textarea](./images/textarea-asterisk.png)
