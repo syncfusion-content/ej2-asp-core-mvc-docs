@@ -13,6 +13,6 @@
 <script>
     document.getElementById('export').onclick = () => {
         var circularchart = document.getElementById('container').ej2_instances[0];
-        circularchart.export('PNG', 'result');
+        circularchart.circularChartExport3DModule.export('PNG', 'result');
     };
 </script>
