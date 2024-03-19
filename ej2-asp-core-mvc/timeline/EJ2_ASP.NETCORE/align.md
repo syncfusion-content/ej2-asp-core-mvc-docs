@@ -10,7 +10,7 @@ documentation: ug
 
 # Alignment in ##Platform_Name## Timeline control
 
-You can display the Timeline content `Before`, `After`, `Alternate` and `AlternateReverse` by using the [align](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Align) property. The oppositeContent will be displayed parallel to the content when configured in the [TimelineItem](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html).
+You can display the Timeline content `Before`, `After`, `Alternate` and `AlternateReverse` by using the [align](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Align) property. The oppositeContent will be displayed parallel to the content when configured.
 
 ## Before
 
