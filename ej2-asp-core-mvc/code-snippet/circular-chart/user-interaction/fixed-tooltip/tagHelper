@@ -2,7 +2,7 @@
     <e-circularchart3d-legendsettings visible="false">
     </e-circularchart3d-legendsettings>
     <e-circularchart3d-tooltipsettings enable="true">
-        <e-circularchart3d-tooltipsettings-location x="200" y="20"></e-circularchart3d-tooltipsettings-location>
+        <e-circularchart3dtooltipsettings-location x="200" y="20"></e-circularchart3dtooltipsettings-location>
     </e-circularchart3d-tooltipsettings>
     <e-circularchart3d-series-collection>
         <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y">

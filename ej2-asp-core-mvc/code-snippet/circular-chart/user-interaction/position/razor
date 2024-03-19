@@ -2,4 +2,4 @@
 {
     series.XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
 }
-).LegendSettings(leg => leg.Position("Top").Alignment("Near")).Render()
+).LegendSettings(leg => leg.Position(Syncfusion.EJ2.Charts.LegendPosition.Top).Alignment(Syncfusion.EJ2.Charts.Alignment.Near)).Render()
