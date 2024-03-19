@@ -1,0 +1,5 @@
+<div class="control-section">
+    <div class="control_wrapper TextArea-control-section">
+        <ejs-textarea id="default" placeholder="Enter your comments" floatLabelType="Auto"></ejs-textarea>
+    </div>
+</div>

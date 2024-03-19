@@ -1,0 +1,13 @@
+<div class="control-section">
+    <div class="control_wrapper TextArea-control-section">
+        <ejs-textarea id="default" placeholder="Enter your comments" floatLabelType="Auto"></ejs-textarea>
+    </div>
+</div>
+
+<style>
+    /* To add asterick to float label in textarea */ 
+    .e-float-input.e-control-wrapper .e-float-text::after {
+        content: '*';
+        color: red;
+    }
+</style>

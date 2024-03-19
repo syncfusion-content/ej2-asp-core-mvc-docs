@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Async in ##Platform_Name## Uploader Component
+title: Async in ##Platform_Name## Uploader Component | Syncfusion
 description: Learn here all about Async in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Async
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Asynchronous upload
+# Asynchronous upload in Uploader
 
 The uploader control allows you to upload the files asynchronously. 
 The upload process requires save and remove action URL to manage the upload process in the server.
@@ -343,7 +343,7 @@ The Uploader control allows you to add the additional headers with `save` and `r
 The following code block shows how to add the additional headers with save and remove action request.
 
 ```html
-   @Html.EJS().Uploader("UploadFiles").DropArea(".control-fluid").Uploading("addHeaders").Removing("addHeaders").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" }).Render()
+   @Html.EJS().Uploader("UploadFiles").DropArea(".control-fluid").Uploading("addHeaders").Removing("addHeaders").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save", RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).Render()
 
 ```
 

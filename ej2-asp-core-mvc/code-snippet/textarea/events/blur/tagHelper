@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-textarea id="default" blur="blurHandler"></ejs-textarea>
+
+<script>
+
+    function blurHandler(args) {
+        // Here, you can customize your code.
+    }
+
+</script>

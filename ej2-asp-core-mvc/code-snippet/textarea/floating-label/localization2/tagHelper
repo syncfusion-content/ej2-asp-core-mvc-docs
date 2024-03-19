@@ -1,0 +1,17 @@
+<div class="control-section">
+    <div class="control_wrapper TextArea-control-section">
+        <ejs-textarea id="default" locale="de-DE" floatLabelType="Auto"></ejs-textarea>
+    </div>
+</div>
+
+<script>
+    var L10n = ej.base.L10n;
+    L10n.load({
+        'de-DE': {
+            'textarea': {
+                placeholder: 'Geben Sie Ihre Kommentare ein'
+            }
+        }
+    });
+    loadCultureFiles('de-DE');
+</script>
