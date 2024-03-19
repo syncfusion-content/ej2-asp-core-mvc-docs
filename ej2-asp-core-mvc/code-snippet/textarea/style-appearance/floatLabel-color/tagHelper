@@ -1,0 +1,37 @@
+<div class="control-section">
+    <div class="control_wrapper TextArea-control-section">
+        <div>
+            <ejs-textarea id="default1" placeholder="Success" floatLabelType="Auto" cssClass="e-success"></ejs-textarea>
+        </div>
+        <div>
+            <ejs-textarea id="default2" placeholder="Warning" floatLabelType="Auto" cssClass="e-warning"></ejs-textarea>
+        </div>
+    </div>
+</div>
+
+<style>
+    .e-float-input.e-success label.e-float-text{ /* csslint allow: adjoining-classes */
+    color: #22b24b;
+    }
+
+    .e-float-input.e-success input:focus ~ label.e-float-text{ /* csslint allow: adjoining-classes */
+    color: #22b24b;
+    }
+
+    .e-float-input.e-success input:valid ~ label.e-float-text { /* csslint allow: adjoining-classes */
+    color: #22b24b;
+    }
+
+
+    .e-float-input.e-warning label.e-float-text{ /* csslint allow: adjoining-classes */
+    color: #ffca1c;
+    }
+
+    .e-float-input.e-warning input:focus ~ label.e-float-text{ /* csslint allow: adjoining-classes */
+    color: #ffca1c;
+    }
+
+    .e-float-input.e-warning input:valid ~ label.e-float-text { /* csslint allow: adjoining-classes */
+    color: #ffca1c;
+    }
+</style>

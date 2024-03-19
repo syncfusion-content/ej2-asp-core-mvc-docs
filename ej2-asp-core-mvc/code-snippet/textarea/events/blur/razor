@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+@Html.EJS().TextArea("default").Blur("BlurHandler").Render()
+
+<script>
+
+    function BlurHandler(args) {
+        // Here, you can customize your code.
+    }
+
+</script>
