@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+@Html.EJS().TextArea("default").Input("InputHandler").Render()
+
+<script>
+
+    function InputHandler(args) {
+        // Here, you can customize your code.
+    }
+
+</script>

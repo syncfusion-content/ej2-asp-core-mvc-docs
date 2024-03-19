@@ -1,0 +1,12 @@
+<div class="control-section">
+    <div class="control_wrapper textarea-control-section">
+        <label className="custom-input-label"> Filled TextArea </label>
+        <div id='container'>
+            @Html.EJS().TextArea("filled").Placeholder("Filled").FloatLabelType(FloatLabelType.Auto).CssClass("e-filled").Render()
+        </div>
+        <label className="custom-input-label"> Outlined TextArea </label>
+        <div id='container1'>
+            @Html.EJS().TextArea("outlined").Placeholder("Outlined").FloatLabelType(FloatLabelType.Auto).CssClass("e-outline").Render()
+        </div>
+    </div>
+</div>
