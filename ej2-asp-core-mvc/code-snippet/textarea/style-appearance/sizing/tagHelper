@@ -1,0 +1,43 @@
+<div class="control-section">
+    <h4> Small Size </h4>
+
+    <div class="e-input-group e-small">
+        <textarea class="e-input" placeholder="Enter your comments"></textarea>
+    </div>
+
+    <h4> Bigger Size </h4>
+
+    <div class="e-input-group e-bigger">
+        <textarea class="e-input" placeholder="Enter your comments"></textarea>
+    </div>
+</div>
+
+<script>
+    var input = document.querySelectorAll('.e-input-group .e-input,.e-float-input.e-input-group textarea');
+    var focusFn = function (index) {
+        return function () {
+            getParentNode(input[index]).classList.add('e-input-focus');
+        };
+    };
+
+    var blurFn = function (index) {
+        return function () {
+            getParentNode(input[index]).classList.remove('e-input-focus');
+        };
+    };
+
+    for (var index = 0; index < input.length; index++) {
+        //Focus Event binding for textarea component
+        input[index].addEventListener('focus', focusFn(index));
+        //Blur Event binding for textarea component
+        input[index].addEventListener('blur', blurFn(index));
+    }
+
+    function getParentNode(element) {
+        var parentNode = element.parentNode;
+        if (parentNode.classList.contains('e-input-in-wrap')) {
+            return parentNode.parentNode;
+        }
+        return parentNode;
+    }
+</script>

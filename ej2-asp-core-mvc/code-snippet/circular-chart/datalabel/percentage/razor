@@ -1,0 +1,5 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
+{
+    series.XName("X").YName("Y").DataLabel(dl => dl.Visible(true).Template("<div id='dataLabelTemplate'>${point.percentage}%</div>")).DataSource(ViewBag.dataSource).Add();
+}
+).LegendSettings(leg => leg.Visible(false)).Render()

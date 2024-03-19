@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-textarea id="default" change="changeHandler"></ejs-textarea>
+
+<script>
+
+    function changeHandler() {
+        // Here, you can customize your code.
+    }
+
+</script>
