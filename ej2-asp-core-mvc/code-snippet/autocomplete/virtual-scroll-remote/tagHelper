@@ -1,7 +1,7 @@
 <div class="control-wrapper">
     <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>
         <ejs-autocomplete id="records" dataSource="@ViewBag.data" placeholder="e.g. Item 1" allowFiltering="true" enableVirtualization="true" popupheight="200px">
-            <e-data-manager adaptor="WebApiAdaptor" url="https://services.syncfusion.com/js/production/api/orders" crossDomain="true"></e-data-manager>
+            <e-data-manager adaptor="WebApiAdaptor" url="https://services.syncfusion.com/aspnet/production/api/Orders" crossDomain="true"></e-data-manager>
             <e-autocomplete-fields  value="OrderID" ></e-autocomplete-fields>
         </ejs-autocomplete>
     </div>

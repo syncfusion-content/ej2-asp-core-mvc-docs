@@ -6,7 +6,7 @@
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user"></div>
 
 @Html.EJS().Mention("employee").MentionChar(nameMentionChar).Target("#mentionElement").DataSource(obj =>
-obj.Url("https://ej2services.syncfusion.com/production/web-services/api/Employees").CrossDomain(true).Adaptor("WebApiAdaptor")).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings
+obj.Url("https://services.syncfusion.com/aspnet/production/api/Employees").CrossDomain(true).Adaptor("WebApiAdaptor")).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings
 {
    Text = "FirstName",
    Value = "EmployeeID"
