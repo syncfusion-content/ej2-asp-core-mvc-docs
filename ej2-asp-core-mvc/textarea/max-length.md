@@ -39,4 +39,8 @@ You can enforce a maximum length limit for the text input in the TextArea using 
 {% endtabs %}
 {% endif %}
 
+Output be like the below.
+
+![textarea](./images/textarea-maxLength.png)
+
 When the user reaches the specified limit, the TextArea prevents further input, ensuring compliance with the defined character limit. This feature helps maintain data integrity and provides users with clear feedback on the allowed input length.

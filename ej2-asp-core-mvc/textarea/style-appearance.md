@@ -44,6 +44,10 @@ By applying these classes, users can easily customize the appearance of the Text
 
 {% endif %}
 
+Output be like the below.
+
+![textarea](./images/textarea-sizing.png)
+
 ## Filled and Outline mode
 
 The Filled and Outline modes can be enabled in the TextArea component by adding the `e-outline` or `e-filled` class to the [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_CssClass) API.
@@ -72,6 +76,10 @@ By adding these classes, users can choose between a filled or outline appearance
 {% endtabs %}
 
 {% endif %}
+
+Output be like the below.
+
+![textarea](./images/textarea-filledOutlined.png)
 
 >Note: Filled and Outline theme customization are available only with Material themes.
 
@@ -177,6 +185,10 @@ To display a static clear button in the TextArea component, you can add the `e-s
 
 {% endif %}
 
+Output be like the below.
+
+![textarea](./images/textarea-static-clear.png)
+
 ## Customize the TextArea background color and text color
 
 You can customize the TextArea styles such as background-color, text-color and border-color by overriding its default styles to achieve the desired appearance for the TextArea.
@@ -204,6 +216,10 @@ You can customize the TextArea styles such as background-color, text-color and b
 {% endtabs %}
 
 {% endif %}
+
+Output be like the below.
+
+![textarea](./images/textarea-color.png)
 
 ## Change the floating label color of the TextArea
 
@@ -251,6 +267,10 @@ You can change the floating label color of the TextArea for both `success` and `
 
 {% endif %}
 
+Output be like the below.
+
+![textarea](./images/textarea-floatLabel-color.png)
+
 ## Adding mandatory asterisk to placeholder
 
 To add a mandatory asterisk (*) to the placeholder in the TextArea component, you can utilize CSS to append the asterisk after the placeholder text.
@@ -288,3 +308,7 @@ To add a mandatory asterisk (*) to the placeholder in the TextArea component, yo
 {% endtabs %}
 
 {% endif %}
+
+Output be like the below.
+
+![textarea](./images/textarea-asterisk.png)

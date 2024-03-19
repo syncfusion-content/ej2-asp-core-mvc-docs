@@ -42,6 +42,10 @@ The floating label functionality in the TextArea control allows the placeholder 
 {% endtabs %}
 {% endif %}
 
+Output be like the below.
+
+![textarea](./images/textarea-float-label.png)
+
 ## Placeholder with localization
 
 Localization library allows to localize the placeholder text of the TextArea to different cultures using the `Locale` property.
@@ -68,6 +72,10 @@ Localization library allows to localize the placeholder text of the TextArea to 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![textarea](./images/textarea-localization1.png)
 
 To load translation object in an application use `load` function of `L10n` class.
 In the below sample, `German` culture is loaded to the TextArea placeholder text.
