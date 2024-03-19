@@ -1,6 +1,6 @@
 @Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
 {
-    series.XName("X").YName("Y").EmptyPointSettings(em => em.Mode("Zero"))
+    series.XName("X").YName("Y").EmptyPointSettings(em => em.Mode(Syncfusion.EJ2.Charts.EmptyPointMode.Zero))
     .DataLabel(dl => dl.Visible(true).Position(Syncfusion.EJ2.Charts.CircularChart3DLabelPosition.Outside))
     .DataSource(ViewBag.dataSource).Add();
 }

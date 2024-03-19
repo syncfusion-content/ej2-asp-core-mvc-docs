@@ -4,8 +4,8 @@
     <e-circularchart3d-series-collection>
         <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y">
             <e-circularchart3d-series-datalabel visible="true" name="Text" position="@Syncfusion.EJ2.Charts.CircularChart3DLabelPosition.Outside">
-                <e-circularchart3d-series-datalabel-connectorStyle length="50px" width="2" color="#f4429e" dashArray="5,3">
-                </e-circularchart3d-series-datalabel-connectorStyle>
+                <e-connectorStyle length="50px" width="2" color="#f4429e" dashArray="5,3">
+                </e-connectorStyle>
             </e-circularchart3d-series-datalabel>
         </e-circularchart3d-series>
     </e-circularchart3d-series-collection>

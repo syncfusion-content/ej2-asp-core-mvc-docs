@@ -2,4 +2,4 @@
 {
     series.XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
 }
-).LegendSettings(leg => leg.Width("260px").Height("50px").Position("Bottom").ItemPadding(30)).Render()
+).LegendSettings(leg => leg.Width("260px").Height("50px").Position(Syncfusion.EJ2.Charts.LegendPosition.Bottom).ItemPadding(30)).Render()

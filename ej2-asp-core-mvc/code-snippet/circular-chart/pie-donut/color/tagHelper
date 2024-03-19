@@ -2,7 +2,7 @@
     <e-circularchart3d-legendsettings visible="false">
     </e-circularchart3d-legendsettings>
     <e-circularchart3d-series-collection>
-        <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y" pointColorMapping="fill">
+        <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y" pointColorMapping="Fill">
             <e-circularchart3d-series-datalabel visible="true" name="Text">
             </e-circularchart3d-series-datalabel>
         </e-circularchart3d-series>

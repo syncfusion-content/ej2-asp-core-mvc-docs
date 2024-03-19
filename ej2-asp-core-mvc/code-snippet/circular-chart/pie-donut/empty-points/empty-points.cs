@@ -4,11 +4,11 @@ public IActionResult Index()
     {
         new CircularChartData { X = "Jan",  Y = 3 },
         new CircularChartData { X = "Feb",  Y = 3.5 },
-        new CircularChartData { X = "Mar",  Y = undefined },
+        new CircularChartData { X = "Mar",  Y = double.NaN },
         new CircularChartData { X = "Apr",  Y = 13.5 },
         new CircularChartData { X = "May",  Y = 19 },
         new CircularChartData { X = "Jun",  Y = 23.5 },
-        new CircularChartData { X = "Jul",  Y = null },
+        new CircularChartData { X = "Jul",  Y = double.NaN },
         new CircularChartData { X = "Aug",  Y = 25 },
         new CircularChartData { X = "Sep",  Y = 21 },
         new CircularChartData { X = "Oct",  Y = 15 }

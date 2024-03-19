@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title and subtitle in ##Platform_Name## 3D Circular Chart Component
+title: Title and subtitle in ##Platform_Name## Syncfusion 3D Circular Chart Component
 description: Learn here all about title and subtitle in Syncfusion ##Platform_Name## 3D Circular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Title and subtitle

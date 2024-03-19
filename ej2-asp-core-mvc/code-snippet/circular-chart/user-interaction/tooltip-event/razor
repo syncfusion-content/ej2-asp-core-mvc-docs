@@ -6,7 +6,7 @@
 ).LegendSettings(leg => leg.Visible(false)).Render()
 
 <script>
-    tooltipRender: (args) => {
+    var tooltipRender = function(args) {
         if (args.point.index === 3) {
             args.text = args.point.x + '' + ':' + args.point.y + '' + ' ' +'customtext';
             args.textStyle.color = '#f48042';

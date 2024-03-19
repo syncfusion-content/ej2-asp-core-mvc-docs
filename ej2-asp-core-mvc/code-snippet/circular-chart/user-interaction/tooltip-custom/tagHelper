@@ -1,8 +1,8 @@
-<ejs-circularchart3d id="container" tilt="-45" highlightColor="red" highlightMode="Point">
+<ejs-circularchart3d id="container" tilt="-45" highlightColor="red" highlightMode="@Syncfusion.EJ2.Charts.CircularChart3DHighlightMode.Point">
     <e-circularchart3d-legendsettings visible="false">
     </e-circularchart3d-legendsettings>
     <e-circularchart3d-tooltipsettings enable="true" format="${series.name} ${point.x} : ${point.y}" fill="#7bb4eb">
-        <e-circularchart3d-tooltipsettings-border width="2" color="grey"></e-circularchart3d-tooltipsettings-location>
+        <e-circularchart3dtooltipsettings-border width="2" color="grey"/>
     </e-circularchart3d-tooltipsettings>
     <e-circularchart3d-series-collection>
         <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y">
