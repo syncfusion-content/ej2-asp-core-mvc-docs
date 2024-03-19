@@ -113,7 +113,7 @@ The following properties are available in the [TooltipSettings](https://help.syn
 {% endtabs %}
 {% endif %}
 
-![Maps with polygon shape tooltip](./images/Polygon/polygon-shape-tooltip.png)
+![Maps with tooltip for polygon shape](./images/Polygon/polygon-shape-tooltip.png)
 
 ### Tooltip template
 
@@ -144,4 +144,4 @@ Any HTML element can be rendered in the tooltip of the polygon shapes using the 
 {% endtabs %}
 {% endif %}
 
-![Maps with polygon shape tooltip template](./images/Polygon/polygon-shape-tooltip-template.png)
+![Maps with tooltip template for polygon shape](./images/Polygon/polygon-shape-tooltip-template.png)
