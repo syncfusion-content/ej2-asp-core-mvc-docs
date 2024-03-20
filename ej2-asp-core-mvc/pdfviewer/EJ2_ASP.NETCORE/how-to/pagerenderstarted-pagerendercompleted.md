@@ -27,25 +27,27 @@ The `pageRenderComplete` event is triggered when the rendering of a page in the 
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <ejs-pdfviewer 
-        id="pdfviewer" 
-        style="height:600px" 
-        pageRenderInitiate="pageRenderInitiate"
-        pageRenderComplete="pageRenderComplete"
-        documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   resourceUrl="https://cdn.syncfusion.com/ej2/23.2.6/dist/ej2-pdfviewer-lib"
+                   pageRenderInitiate="pageRenderInitiate"
+                   pageRenderComplete="pageRenderComplete">
     </ejs-pdfviewer>
 </div>
-<script>
-pdfviewer.pageRenderInitiate = args => {
-   // This method is called when the page rendering starts
-    console.log('Rendering of pages started' + args);
-};
+<script type="text/javascript">
 
-pdfviewer.pageRenderComplete = args => {
-   // This method is called when the page rendering completes
-   console.log('Rendering of pages completed' + args);
-};
+    function pageRenderInitiate(args) { 
+        // This method is called when the page rendering starts
+        console.log('Rendering of pages started');
+        console.log(args);
+    }
+    function pageRenderComplete(args) {
+        // This method is called when the page rendering completes
+        console.log('Rendering of pages completed');
+        console.log(args); 
+    };
+
 </script>
 
 {% endhighlight %}
@@ -55,27 +57,27 @@ pdfviewer.pageRenderComplete = args => {
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <ejs-pdfviewer 
-        id="pdfviewer" 
-        style="height:600px" 
-        serviceUrl="/Index" 
-        pageRenderInitiate="pageRenderInitiate"
-        pageRenderComplete="pageRenderComplete"
-        documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
+                   serviceUrl="/Index" 
+                   pageRenderInitiate="pageRenderInitiate"
+                   pageRenderComplete="pageRenderComplete">
     </ejs-pdfviewer>
 </div>
+<script type="text/javascript">
 
-<script>
-pdfviewer.pageRenderInitiate = args => {
-   // This method is called when the page rendering starts
-    console.log('Rendering of pages started' + args);
-};
+    function pageRenderInitiate(args) { 
+        // This method is called when the page rendering starts
+        console.log('Rendering of pages started');
+        console.log(args);
+    }
+    function pageRenderComplete(args) {
+        // This method is called when the page rendering completes
+        console.log('Rendering of pages completed');
+        console.log(args); 
+    };
 
-pdfviewer.pageRenderComplete = args => {
-   // This method is called when the page rendering completes
-   console.log('Rendering of pages completed' + args);
-};
 </script>
 {% endhighlight %}
 {% endtabs %}
