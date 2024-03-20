@@ -18,7 +18,7 @@ You can utilize the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ## Adding contextual tabs
 
-You can utilize the [contextualTabs](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.ribbon.ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_ContextualTabs) property to add contextual tabs in the Ribbon. This property accepts an array of Ribbon tabs, where you can add multiple tabs based on your needs.
+You can utilize the `e-ribbon-contextual-tabs` tag directive to add contextual tabs in the Ribbon where you can add multiple tabs based on your needs.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
