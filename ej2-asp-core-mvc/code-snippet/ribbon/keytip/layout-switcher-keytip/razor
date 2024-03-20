@@ -1,0 +1,50 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge format" }, new MenuItem { Text = "Keep text only" } };
+    List<MenuItem> fileOptions = new List<MenuItem>()
+    {
+        new MenuItem { Text = "New", IconCss = "e-icons e-file-new", Id="new" },
+        new MenuItem { Text = "Open", IconCss = "e-icons e-folder-open", Id="Open" },
+        new MenuItem { Text = "Rename", IconCss = "e-icons e-rename", Id="rename" },
+        new MenuItem { Text = "Save as", IconCss = "e-icons e-save", Id="save" }
+    };
+    FileMenuSettings FileMenuSettings = new FileMenuSettings() { Text = "File", Visible = true, MenuItems = fileOptions };
+}
+
+
+@Html.EJS().Ribbon("ribbon").EnableKeyTips(true).LayoutSwitcherKeyTip("LS").Created("ribbonCreated").FileMenu(FileMenuSettings).Tabs(tab => {
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Clipboard").GroupIconCss("e-icons e-paste").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.SplitButton).SplitButtonSettings(splitbutton =>
+                {
+                    splitbutton.IconCss("e-icons e-paste").Items(pasteOptions).Content("Paste");
+                }).Add();
+            }).Add();
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-cut").Content("Cut");
+                }).Add();
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-copy").Content("Copy");
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
+
+<script>
+   function ribbonCreated() {
+        var ribbon = this;
+        ribbon.ribbonKeyTipModule.showKeyTips();
+    }
+</script>
