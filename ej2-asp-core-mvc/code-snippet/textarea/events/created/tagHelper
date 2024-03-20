@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-textarea id="default" created="created"></ejs-textarea>
+
+<script>
+
+    function created() {
+        // Here, you can customize your code.
+    }
+
+</script>

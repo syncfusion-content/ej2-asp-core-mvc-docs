@@ -1,0 +1,37 @@
+<div class="control-section">
+    <div class="control_wrapper textarea-control-section">
+        <div>
+            @Html.EJS().TextArea("default1").Placeholder("Success").FloatLabelType(FloatLabelType.Auto).CssClass("e-success").Render()
+        </div>
+        <div>
+            @Html.EJS().TextArea("default2").Placeholder("Warning").FloatLabelType(FloatLabelType.Auto).CssClass("e-warning").Render()
+        </div>
+    </div>
+</div>
+
+<style>
+    .e-float-input.e-success label.e-float-text{ /* csslint allow: adjoining-classes */
+    color: #22b24b;
+    }
+
+    .e-float-input.e-success input:focus ~ label.e-float-text{ /* csslint allow: adjoining-classes */
+    color: #22b24b;
+    }
+
+    .e-float-input.e-success input:valid ~ label.e-float-text { /* csslint allow: adjoining-classes */
+    color: #22b24b;
+    }
+
+
+    .e-float-input.e-warning label.e-float-text{ /* csslint allow: adjoining-classes */
+    color: #ffca1c;
+    }
+
+    .e-float-input.e-warning input:focus ~ label.e-float-text{ /* csslint allow: adjoining-classes */
+    color: #ffca1c;
+    }
+
+    .e-float-input.e-warning input:valid ~ label.e-float-text { /* csslint allow: adjoining-classes */
+    color: #ffca1c;
+    }
+</style>
