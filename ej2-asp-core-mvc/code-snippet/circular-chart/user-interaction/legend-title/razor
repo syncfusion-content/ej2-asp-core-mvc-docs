@@ -1,0 +1,5 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
+{
+    series.XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
+}
+).LegendSettings(leg => leg.Visible(true).Title("Months").Position(Syncfusion.EJ2.Charts.LegendPosition.Bottom)).Render()

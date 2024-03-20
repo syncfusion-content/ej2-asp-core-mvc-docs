@@ -1,0 +1,15 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).TooltipRender("tooltipRender").Series(series =>
+{
+    series.XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
+}
+).Tooltip(tt => tt.Enable(true)
+).LegendSettings(leg => leg.Visible(false)).Render()
+
+<script>
+    var tooltipRender = function(args) {
+        if (args.point.index === 3) {
+            args.text = args.point.x + '' + ':' + args.point.y + '' + ' ' +'customtext';
+            args.textStyle.color = '#f48042';
+        }
+    }
+</script>

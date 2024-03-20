@@ -1,0 +1,21 @@
+<div class="control-section">
+    <div class="control_wrapper textarea-control-section">
+        @Html.EJS().TextArea("default").Placeholder("Enter your comments").FloatLabelType(FloatLabelType.Auto).Render()
+    </div>
+</div>
+
+<style>
+    /* To change the background-color and text-color for textarea */ 
+    .e-input-group,
+    .e-float-input,
+    .e-float-input.e-input-group { /* csslint allow: adjoining-classes */
+        background : lightgray;
+        color: green;
+    }
+
+    /* To change the border-color of the textarea */ 
+    .e-input-group:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left),
+    .e-input-group:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left) { /* csslint allow: adjoining-classes */
+        border-color: #0800ff;
+    }
+</style>

@@ -1,0 +1,11 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).TextRender("textRender").Series(series =>
+{
+    series.XName("X").YName("Y").DataLabel(dl => dl.Visible(true)).DataSource(ViewBag.dataSource).Add();
+}
+).LegendSettings(leg => leg.Visible(false)).Render()
+
+<script>
+    var textRender = function(args) {
+        args.text = args.point.percentage + "%";
+    }
+</script>
