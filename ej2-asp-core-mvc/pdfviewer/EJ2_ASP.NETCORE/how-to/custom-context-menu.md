@@ -22,7 +22,7 @@ The following code shows how to add custom option in context menu.
         {
             text: 'Search In Google',
             id: 'search_in_google',
-            iconCss: 'e-icons e-de-ctnr-find'
+            iconCss: 'e-icons e-search'
         },
         {
             text: 'Lock Annotation',
@@ -64,7 +64,7 @@ The PDF Viewer feature enables customization of custom options and the ability t
         {
             text: 'Search In Google',
             id: 'search_in_google',
-            iconCss: 'e-icons e-de-ctnr-find'
+            iconCss: 'e-icons e-search'
         },
         {
             text: 'Lock Annotation',
@@ -106,7 +106,7 @@ The following code shows how to hide/show added custom option in context menu us
         {
             text: 'Search In Google',
             id: 'search_in_google',
-            iconCss: 'e-icons e-de-ctnr-find'
+            iconCss: 'e-icons e-search'
         },
         {
             text: 'Lock Annotation',
@@ -165,7 +165,7 @@ The following code shows how to hide/show added custom option in context menu us
         }
     };
 
-    function customContextMenuBeforeOpen(args) {
+   function customContextMenuBeforeOpen(args) {
         for (var i = 0; i < args.ids.length; i++) {
             var search = document.getElementById(args.ids[i]);
             var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
@@ -201,6 +201,7 @@ The following code shows how to hide/show added custom option in context menu us
             }
         }
     };
+
 </script>   
 ```
 
@@ -214,7 +215,7 @@ The following is the output of custom context menu with customization.
         {
             text: 'Search In Google',
             id: 'search_in_google',
-            iconCss: 'e-icons e-de-ctnr-find'
+            iconCss: 'e-icons e-search'
         },
         {
             text: 'Lock Annotation',
@@ -284,6 +285,7 @@ The following is the output of custom context menu with customization.
                     search.style.display = 'block';
                 } else if (args.ids[i] === "lock_annotation" || args.ids[i] === "unlock_annotation") {
                     var isLockOption = args.ids[i] === "lock_annotation";
+
                     for (var j = 0; j < pdfviewer.selectedItems.annotations.length; j++) {
                         var selectedAnnotation = pdfviewer.selectedItems.annotations[j];
                         if (selectedAnnotation && selectedAnnotation.annotationSettings) {
