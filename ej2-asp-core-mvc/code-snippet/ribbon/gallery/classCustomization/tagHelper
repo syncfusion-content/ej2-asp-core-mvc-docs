@@ -1,0 +1,88 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge format" }, new MenuItem { Text = "Keep text only" } };
+}
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" groupIconCss="e-icons e-paste">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="SplitButton">
+                                    <e-ribbon-splitButtonSettings iconCss="e-icons e-paste" content="Paste" items=pasteOptions></e-ribbon-splitButtonSettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Gallery">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery">
+                                    <e-ribbon-gallerySettings>
+                                        <e-ribbon-gallery-groups>
+                                            <e-ribbon-gallery-group header="Good, Bad and Neutral">
+                                                <e-ribbon-gallery-items>
+                                                    <e-ribbon-gallery-item content="Normal" cssClass="normal"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Bad" cssClass="bad"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Good" cssClass="good"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Neutral" cssClass="neutral"></e-ribbon-gallery-item>
+                                                </e-ribbon-gallery-items>
+                                            </e-ribbon-gallery-group>
+                                        </e-ribbon-gallery-groups>
+                                    </e-ribbon-gallerySettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<style>
+    .e-ribbon-gallery-item {
+        margin: 5px;
+    }
+
+    .e-ribbon-gallery-item.normal {
+        background: #f0f0f0;
+        color: #333;
+    }
+
+    .e-ribbon-gallery-item.bad {
+        background: #ffb6b6;
+        color: #800000;
+    }
+
+    .e-ribbon-gallery-item.good {
+        background: #c7ebc9;
+        color: #004d00;
+    }
+
+    .e-ribbon-gallery-item.neutral {
+        background: #eedd9d;
+        color: #6c5429;
+    }
+</style>

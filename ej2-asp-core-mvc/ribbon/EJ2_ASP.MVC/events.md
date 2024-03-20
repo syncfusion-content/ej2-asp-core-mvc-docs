@@ -1974,3 +1974,287 @@ The [BackStageItemClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 
 {% endhighlight %}
 {% endtabs %}
+
+## Gallery events
+
+### popupOpen
+
+The [PopupOpen](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_PopupOpen) event is triggered when the gallery popup opens.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+  tab.Header("Home").Groups(group =>
+
+  {
+    group.Header("Gallery").Collections(collections =>
+    {
+      collections.Items(items =>
+      {
+        items.Type(RibbonItemType.Gallery).GallerySettings(gallery =>
+        {
+          gallery.PopupOpen("popupOpen").Groups(galleryGroups =>
+          {
+            galleryGroups.Header("Styles").Items(galleryItems =>
+            {
+              galleryItems.Content("Normal").Add();
+              galleryItems.Content("No Spacing").Add();
+              galleryItems.Content("Heading 1").Add();
+              galleryItems.Content("Heading 2").Add();
+            }).Add();
+          });
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
+}).Render()
+
+<script>
+  function popupOpen() {
+    // Your required action here
+  }
+</script>
+
+
+{% endhighlight %}
+{% endtabs %}
+
+### popupClose
+
+The [PopupClose](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_PopupClose) event is triggered when the gallery popup closes.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+  tab.Header("Home").Groups(group =>
+
+  {
+    group.Header("Gallery").Collections(collections =>
+    {
+      collections.Items(items =>
+      {
+        items.Type(RibbonItemType.Gallery).GallerySettings(gallery =>
+        {
+          gallery.PopupClose("popupClose").Groups(galleryGroups =>
+          {
+            galleryGroups.Header("Styles").Items(galleryItems =>
+            {
+              galleryItems.Content("Normal").Add();
+              galleryItems.Content("No Spacing").Add();
+              galleryItems.Content("Heading 1").Add();
+              galleryItems.Content("Heading 2").Add();
+            }).Add();
+          });
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
+}).Render()
+
+<script>
+  function popupClose() {
+    // Your required action here
+  }
+</script>
+
+`
+{% endhighlight %}
+{% endtabs %}
+
+### itemHover
+
+The [ItemHover](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_ItemHover) event is triggered when hover over the gallery item.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+  tab.Header("Home").Groups(group =>
+
+  {
+    group.Header("Gallery").Collections(collections =>
+    {
+      collections.Items(items =>
+      {
+        items.Type(RibbonItemType.Gallery).GallerySettings(gallery =>
+        {
+          gallery.ItemHover("itemHover").Groups(galleryGroups =>
+          {
+            galleryGroups.Header("Styles").Items(galleryItems =>
+            {
+              galleryItems.Content("Normal").Add();
+              galleryItems.Content("No Spacing").Add();
+              galleryItems.Content("Heading 1").Add();
+              galleryItems.Content("Heading 2").Add();
+            }).Add();
+          });
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
+}).Render()
+
+<script>
+  function itemHover() {
+    // Your required action here
+  }
+</script>
+
+
+{% endhighlight %}
+{% endtabs %}
+
+### beforeItemRender
+
+The [BeforeItemRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_BeforeItemRender) event is triggered while rendering each gallery item.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+  tab.Header("Home").Groups(group =>
+
+  {
+    group.Header("Gallery").Collections(collections =>
+    {
+      collections.Items(items =>
+      {
+        items.Type(RibbonItemType.Gallery).GallerySettings(gallery =>
+        {
+          gallery.BeforeItemRender("beforeItemRender").Groups(galleryGroups =>
+          {
+            galleryGroups.Header("Styles").Items(galleryItems =>
+            {
+              galleryItems.Content("Normal").Add();
+              galleryItems.Content("No Spacing").Add();
+              galleryItems.Content("Heading 1").Add();
+              galleryItems.Content("Heading 2").Add();
+            }).Add();
+          });
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
+}).Render()
+
+<script>
+  function beforeItemRender() {
+    // Your required action here
+  }
+</script>
+
+
+{% endhighlight %}
+{% endtabs %}
+
+### beforeSelect
+
+The [BeforeSelect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_BeforeSelect) event is triggered before selecting an item in the Ribbon gallery.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+  tab.Header("Home").Groups(group =>
+
+  {
+    group.Header("Gallery").Collections(collections =>
+    {
+      collections.Items(items =>
+      {
+        items.Type(RibbonItemType.Gallery).GallerySettings(gallery =>
+        {
+          gallery.BeforeSelect("beforeSelect").Groups(galleryGroups =>
+          {
+            galleryGroups.Header("Styles").Items(galleryItems =>
+            {
+              galleryItems.Content("Normal").Add();
+              galleryItems.Content("No Spacing").Add();
+              galleryItems.Content("Heading 1").Add();
+              galleryItems.Content("Heading 2").Add();
+            }).Add();
+          });
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
+}).Render()
+
+<script>
+  function beforeSelect() {
+    // Your required action here
+  }
+</script>
+
+
+{% endhighlight %}
+{% endtabs %}
+
+### select
+
+The [Select](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_Select) event is triggered while selecting an item in the Ribbon Gallery.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+  tab.Header("Home").Groups(group =>
+
+  {
+    group.Header("Gallery").Collections(collections =>
+    {
+      collections.Items(items =>
+      {
+        items.Type(RibbonItemType.Gallery).GallerySettings(gallery =>
+        {
+          gallery.Select("select").Groups(galleryGroups =>
+          {
+            galleryGroups.Header("Styles").Items(galleryItems =>
+            {
+              galleryItems.Content("Normal").Add();
+              galleryItems.Content("No Spacing").Add();
+              galleryItems.Content("Heading 1").Add();
+              galleryItems.Content("Heading 2").Add();
+            }).Add();
+          });
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
+}).Render()
+
+<script>
+  function select() {
+    // Your required action here
+  }
+</script>
+
+
+{% endhighlight %}
+{% endtabs %}
