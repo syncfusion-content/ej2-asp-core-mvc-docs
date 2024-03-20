@@ -10,7 +10,7 @@ documentation: ug
 
 # Template in ##Platform_Name## Timeline control
 
-The Timeline control allows you to customize the appearance for each item by using the `template` property to modify the dot items, templated contents, progress bar styling and more.
+The Timeline control allows you to customize the appearance for each item by using the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Template) property to modify the dot items, templated contents, progress bar styling and more.
 
 The `template` context receives the following information:
 
