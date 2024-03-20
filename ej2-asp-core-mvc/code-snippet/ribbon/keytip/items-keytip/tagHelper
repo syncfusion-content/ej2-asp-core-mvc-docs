@@ -1,0 +1,136 @@
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+
+@{
+
+    List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge Format" }, new MenuItem { Text = "Keep Text Only" } };
+    List<MenuItem> tableOptions = new List<MenuItem>() { new MenuItem { Text = "Insert Table" }, new MenuItem { Text = "Draw Table" }, new MenuItem { Text = "Convert Table" }, new MenuItem { Text = "Excel SpreadSheet" } };
+    List<string> fontStyle = new List<string>() { "Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia", "Impact", "Segoe Print", "Segoe Script", "Segoe UI", "Symbol", "Times New Roman", "Verdana", "Windings" };
+    List<string> fontSize = new List<string>() { "8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72", "96" };
+    List<RibbonGroupButtonItem> groupButtonSingle = new List<RibbonGroupButtonItem>() {
+
+      new RibbonGroupButtonItem { IconCss = "e-icons e-bold", Content = "Bold", Selected = true, KeyTip="1" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-italic", Content = "Italic", KeyTip="2" },
+      new RibbonGroupButtonItem {IconCss = "e-icons e-underline", Content = "Underline", KeyTip="3" },
+      new RibbonGroupButtonItem { IconCss = "e-icons e-strikethrough", Content = "Strikethrough", KeyTip="4" },
+      new RibbonGroupButtonItem { IconCss = "e-icons e-change-case", Content = "Change Case", KeyTip="5" }
+    };
+}
+<ejs-ribbon id="ribbon" enableKeyTips=true created="ribbonCreated">
+     <e-ribbon-tabs>
+        <e-ribbon-tab header="Home" keyTip="H">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" id="clipboard" groupIconCss="e-icons e-paste" keyTip="CD">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="SplitButton" id="pastebtn" allowedSizes=Large keyTip="PA">
+                                    <e-ribbon-splitButtonSettings iconCss="e-icons e-paste" content="Paste" items=pasteOptions></e-ribbon-splitButtonSettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button" keyTip="CD">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button" keyTip="CO">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button" keyTip="CS">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Font" orientation=Row enableGroupOverflow=true overflowHeader="More Font Options" isCollapsible=false groupIconCss="e-icons e-bold" cssClass="font-group">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="ComboBox" keyTip="O1">
+                                    <e-ribbon-comboboxsettings dataSource=fontStyle label="Font Style" index=3 allowFiltering=true width="115px" popupWidth="150px"></e-ribbon-comboboxsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="ComboBox" keyTip="O2">
+                                    <e-ribbon-comboboxsettings dataSource=fontSize label="Font Size" index=3 allowFiltering=true width="65px" popupWidth="85px"></e-ribbon-comboboxsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=GroupButton allowedSizes=Small keyTip="GB">
+                                    <e-ribbon-groupbuttonsettings selection=Single header="Format Styles" items=groupButtonSingle></e-ribbon-groupbuttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type=ColorPicker allowedSizes=Small keyTip="CP">
+                                    <e-ribbon-colorpickersettings value="#123456"></e-ribbon-colorpickersettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Gallery" groupIconCss="e-icons e-paste">
+                  <e-ribbon-collections>
+                    <e-ribbon-collection>
+                      <e-ribbon-items>
+                        <e-ribbon-item type=Gallery keyTip="GY">
+                          <e-ribbon-gallerysettings itemCount=3>
+                            <e-ribbon-gallery-groups>
+                              <e-ribbon-gallery-group itemWidth="100" header="Styles">
+                                <e-ribbon-gallery-items>
+                                  <e-ribbon-gallery-item content="Normal"></e-ribbon-gallery-item>
+                                  <e-ribbon-gallery-item content="No Spacing"></e-ribbon-gallery-item>
+                                  <e-ribbon-gallery-item content="Heading 1"></e-ribbon-gallery-item>
+                                  <e-ribbon-gallery-item content="Heading 2"></e-ribbon-gallery-item>
+                                  <e-ribbon-gallery-item content="Heading 3"></e-ribbon-gallery-item>
+                                  <e-ribbon-gallery-item content="Heading 4"></e-ribbon-gallery-item>
+                                  <e-ribbon-gallery-item content="Heading 5"></e-ribbon-gallery-item>
+                                </e-ribbon-gallery-items>
+                              </e-ribbon-gallery-group>
+                            </e-ribbon-gallery-groups>
+                          </e-ribbon-gallerysettings>
+                        </e-ribbon-item>
+                      </e-ribbon-items>
+                    </e-ribbon-collection>
+                  </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Tables" groupIconCss="e-icons e-table">
+                  <e-ribbon-collections>
+                    <e-ribbon-collection>
+                      <e-ribbon-items>
+                        <e-ribbon-item type=DropDown keyTip="T" allowedSizes=Large>
+                          <e-ribbon-dropdownsettings content="Table" iconCss="e-icons e-table" items=tableOptions></e-ribbon-dropdownsettings>
+                        </e-ribbon-item>
+                      </e-ribbon-items>
+                    </e-ribbon-collection>
+                  </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Show" isCollapsible=false>
+                  <e-ribbon-collections>
+                    <e-ribbon-collection>
+                        <e-ribbon-items>
+                          <e-ribbon-item type=CheckBox keyTip="R1">
+                              <e-ribbon-checkboxsettings checked=false label="Ruler"></e-ribbon-checkboxsettings>
+                          </e-ribbon-item>
+                          <e-ribbon-item type=CheckBox keyTip="R2">
+                              <e-ribbon-checkboxsettings checked=false label="Gridlines"></e-ribbon-checkboxsettings>
+                          </e-ribbon-item>
+                          <e-ribbon-item type=CheckBox keyTip="R3">
+                              <e-ribbon-checkboxsettings checked=true label="Navigation Pane"></e-ribbon-checkboxsettings>
+                          </e-ribbon-item>
+                      </e-ribbon-items>
+                    </e-ribbon-collection>
+                </e-ribbon-collections>
+              </e-ribbon-group>
+            </e-ribbon-groups>
+         </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+
+<script>
+  function ribbonCreated() {
+        var ribbon = document.getElementById('ribbon').ej2_instances[0];
+        ribbon.ribbonKeyTipModule.showKeyTips('H');
+    }
+</script>
