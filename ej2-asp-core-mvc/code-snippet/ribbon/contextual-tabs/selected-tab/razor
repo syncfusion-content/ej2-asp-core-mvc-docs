@@ -1,0 +1,90 @@
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+  List<RibbonContextualTab> contextTabs = new List<RibbonContextualTab>()
+  {
+    new RibbonContextualTab
+    {
+      Visible = true,
+      IsSelected = true,
+      Tabs = new List<RibbonTab>()
+      {
+        new RibbonTab()
+        {
+          Header = "Styles" ,
+          Groups = new List<RibbonGroup>()
+          {
+            new RibbonGroup()
+            {
+              Header="Style",
+              ShowLauncherIcon=true,
+              Collections = new List<RibbonCollection>()
+              {
+                new RibbonCollection()
+                {
+                  Items = new List<RibbonItem>()
+                  {
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Style",
+                        IconCss = "e-icons e-style"
+                      }
+                    },
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Text Box",
+                        IconCss = "e-icons e-font-name"
+                      }
+                    },
+                    new RibbonItem()
+                    {
+                      Type = RibbonItemType.Button,
+                      ButtonSettings = new RibbonButtonSettings
+                      {
+                        Content = "Paint",
+                        IconCss = "e-icons e-paint-bucket"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  };
+}
+
+@Html.EJS().Ribbon("ribbon").ContextualTabs(contextTabs).Tabs(tab =>
+{
+  tab.Header("Home").Groups(groups =>
+
+  {
+    groups.Header("Clipboard").GroupIconCss("e-icons e-paste").ShowLauncherIcon(true).Id("lipboardGroup").Collections(collection =>
+    {
+      collection.Items(items =>
+      {
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-cut").Content("Cut");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-copy").Content("Copy");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-format-painter").Content("Format Painter");
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
+}).Render()
