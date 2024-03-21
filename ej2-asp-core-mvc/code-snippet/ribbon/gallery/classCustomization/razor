@@ -1,0 +1,84 @@
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+  List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge Format" }, new MenuItem { Text = "Keep Text Only" } };
+}
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+  tab.Header("Home").Groups(group =>
+
+  {
+    group.Id("clipboard").Header("Clipboard").GroupIconCss("e-icons e-paste").Collections(collection =>
+    {
+      collection.Items(items =>
+      {
+        items.Type(RibbonItemType.SplitButton).Id("pastebtn").AllowedSizes(RibbonItemSize.Large).SplitButtonSettings(splitButton =>
+        {
+          splitButton.IconCss("e-icons e-paste").Items(pasteOptions).Content("Paste");
+        }).Add();
+      }).Add();
+      collection.Items(items =>
+      {
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-cut").Content("Cut");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-copy").Content("Copy");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-format-painter").Content("Format Painter");
+        }).Add();
+      }).Add();
+    }).Add();
+    group.Header("Gallery").Collections(collections =>
+    {
+      collections.Items(items =>
+      {
+        items.Type(RibbonItemType.Gallery).GallerySettings(gallery =>
+        {
+          gallery.Groups(galleryGroups =>
+          {
+            galleryGroups.Header("Good, Bad and Neutral").Items(galleryItems =>
+            {
+              galleryItems.Content("Normal").CssClass("normal").Add();
+              galleryItems.Content("Bad").CssClass("bad").Add();
+              galleryItems.Content("Good").CssClass("good").Add();
+              galleryItems.Content("Neutral").CssClass("neutral").Add();
+            }).Add();
+          });
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
+}).Render()
+
+<style>
+  .e-ribbon-gallery-item {
+    margin: 5px;
+  }
+
+  .e-ribbon-gallery-item.normal {
+    background: #f0f0f0;
+    color: #333;
+  }
+
+  .e-ribbon-gallery-item.bad {
+    background: #ffb6b6;
+    color: #800000;
+  }
+
+  .e-ribbon-gallery-item.good {
+    background: #c7ebc9;
+    color: #004d00;
+  }
+
+  .e-ribbon-gallery-item.neutral {
+    background: #eedd9d;
+    color: #6c5429;
+    }
+</style>
