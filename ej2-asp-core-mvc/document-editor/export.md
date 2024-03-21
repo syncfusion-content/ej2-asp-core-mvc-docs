@@ -82,6 +82,35 @@ The following example shows how to export the document as Word document (.docx).
 
 N>To enable word export for a document editor instance, set [`enableWordExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_EnableWordExport) to true.
 
+## Word Template Export 
+
+The following example shows how to export the document as Word Template (.dotx).
+
+>Note: The Syncfusion Document Editor component's document pagination (page-by-page display) can't be guaranteed for all the Word documents to match the pagination of Microsoft Word application. For more information about [why the document pagination (page-by-page display) differs from Microsoft Word](../document-editor/import/#why-the-document-pagination-differs-from-microsoft-word)
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/export-dotx/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor/export-dotx/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/export-dotx/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor/export-dotx/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Text export
 
 The following example shows how to export document as text document (.txt).
