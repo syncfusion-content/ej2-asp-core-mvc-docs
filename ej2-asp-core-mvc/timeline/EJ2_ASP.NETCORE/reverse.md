@@ -10,7 +10,7 @@ documentation: ug
 
 # Reverse in ##Platform_Name## Timeline control
 
-You can display the Timeline items in reverse order, for different alignments by using the `reverse` property which provides adaptability and improves user interaction.
+You can display the Timeline items in reverse order, for different alignments by using the [reverse](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Reverse) property which provides adaptability and improves user interaction.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
