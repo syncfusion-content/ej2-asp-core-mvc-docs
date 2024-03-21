@@ -32,10 +32,10 @@ The TextArea control triggers the [Created](https://help.syncfusion.com/cr/aspne
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/textarea/created/razor %}
+{% include code-snippet/textarea/events/created/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Clear.cs" %}
-{% include code-snippet/textarea/created/created.cs %}
+{% include code-snippet/textarea/events/created/created.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -60,10 +60,10 @@ The [InputEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/textarea/input/razor %}
+{% include code-snippet/textarea/events/input/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Clear.cs" %}
-{% include code-snippet/textarea/input/input.cs %}
+{% include code-snippet/textarea/events/input/input.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -88,10 +88,10 @@ The [ChangedEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/textarea/change/razor %}
+{% include code-snippet/textarea/events/change/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Clear.cs" %}
-{% include code-snippet/textarea/change/change.cs %}
+{% include code-snippet/textarea/events/change/change.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -116,10 +116,10 @@ The [FocusInEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/textarea/focus/razor %}
+{% include code-snippet/textarea/events/focus/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Clear.cs" %}
-{% include code-snippet/textarea/focus/focus.cs %}
+{% include code-snippet/textarea/events/focus/focus.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -144,10 +144,10 @@ The [FocusOutEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/textarea/blur/razor %}
+{% include code-snippet/textarea/events/blur/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Clear.cs" %}
-{% include code-snippet/textarea/blur/blur.cs %}
+{% include code-snippet/textarea/events/blur/blur.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -171,10 +171,10 @@ The TextArea control triggers the [Destroyed](https://help.syncfusion.com/cr/asp
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/textarea/destroyed/razor %}
+{% include code-snippet/textarea/events/destroyed/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Clear.cs" %}
-{% include code-snippet/textarea/destroyed/destroyed.cs %}
+{% include code-snippet/textarea/events/destroyed/destroyed.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
