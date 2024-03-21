@@ -22,7 +22,7 @@ The following code shows how to add custom option in context menu.
         {
             text: 'Search In Google',
             id: 'search_in_google',
-            iconCss: 'e-icons e-de-ctnr-find'
+            iconCss: 'e-icons e-search'
         },
         {
             text: 'Lock Annotation',
@@ -63,7 +63,7 @@ The PDF Viewer feature enables customization of custom options and the ability t
         {
             text: 'Search In Google',
             id: 'search_in_google',
-            iconCss: 'e-icons e-de-ctnr-find'
+            iconCss: 'e-icons e-search'
         },
         {
             text: 'Lock Annotation',
@@ -104,7 +104,7 @@ The following code shows how to hide/show added custom option in context menu us
         {
             text: 'Search In Google',
             id: 'search_in_google',
-            iconCss: 'e-icons e-de-ctnr-find'
+            iconCss: 'e-icons e-search'
         },
         {
             text: 'Lock Annotation',
@@ -170,7 +170,7 @@ The following code shows how to hide/show added custom option in context menu us
         }
     };
 
-    function customContextMenuBeforeOpen(args) {
+ function customContextMenuBeforeOpen(args) {
         for (var i = 0; i < args.ids.length; i++) {
             var search = document.getElementById(args.ids[i]);
             var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
@@ -205,6 +205,7 @@ The following code shows how to hide/show added custom option in context menu us
             }
         }
     };
+
 </script>
 ```
 
@@ -214,26 +215,17 @@ The following is the output of custom context menu with customization.
 
 @using Syncfusion.EJ2
 
-@section ControlsSection{
-    <div class="col-lg-9 control-section">
-        <div class="flex-container">
-            <label class="switchLabel" for="checked">Standalone PDF Viewer</label>
-            <div class="e-message render-mode-info">
-                <span class="e-msg-icon render-mode-info-icon" title="Turn OFF to render the PDF Viewer as server-backed"></span>
-            </div>
-            <div>
-                @Html.EJS().Switch("checked").Checked(true).Change("change").CssClass("buttonSwitch").Render()
-            </div>
-        </div>
-        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").ResourceUrl("https://cdn.syncfusion.com/ej2/23.2.6/dist/ej2-pdfviewer-lib").DocumentLoad("documentLoad").CustomContextMenuSelect("customContextMenuSelect").CustomContextMenuBeforeOpen("customContextMenuBeforeOpen").Render()
+<div>
+    <div style="height:500px;width:100%;">
+        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").ResourceUrl("https://cdn.syncfusion.com/ej2/23.2.6/dist/ej2-pdfviewer-lib").CustomContextMenuSelect("customContextMenuSelect").CustomContextMenuBeforeOpen("customContextMenuBeforeOpen").DocumentLoad("documentLoaded").Render()
     </div>
-}
+</div>
 <script type="text/javascript">
    var menuItems = [
         {
             text: 'Search In Google',
             id: 'search_in_google',
-            iconCss: 'e-icons e-de-ctnr-find'
+            iconCss: 'e-icons e-search'
         },
         {
             text: 'Lock Annotation',
@@ -246,17 +238,16 @@ The following is the output of custom context menu with customization.
             id: 'unlock_annotation'
         },
         {
-            text: 'Lock Form Fields',
+            text: 'Lock Form Field',
             iconCss: 'e-icons e-lock',
             id: 'read_only_true'
         },
         {
-            text: 'Unlock Form Fields',
+            text: 'Unlock Form Field',
             iconCss: 'e-icons e-unlock',
             id: 'read_only_false'
         },
     ];
-
     function documentLoaded(arg) {
         var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
         pdfviewer.addCustomMenu(menuItems, false, false);
@@ -387,6 +378,10 @@ The following is the output of custom context menu with customization.
         }
     }
 
+    function contextmenuHelper(args) {
+        var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfviewer.addCustomMenu(menuItems, enable.checked, position.checked);
+    }
 
 </script>
 

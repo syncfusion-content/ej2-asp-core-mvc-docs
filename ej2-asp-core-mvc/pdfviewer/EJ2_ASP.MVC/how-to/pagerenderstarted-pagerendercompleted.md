@@ -20,42 +20,53 @@ The `pageRenderInitiate` event is triggered when the rendering of a page in the 
 
 The `pageRenderComplete` event is triggered when the rendering of a page in the PDF document is completed. This event allows developers to perform cleanup tasks or finalize rendering-related processes after the rendering of the page content finishes. It can be used to release resources, finalize rendering settings, or handle any post-rendering tasks necessary for the application.
 
-
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
-\
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").DocumentLoad("download").EnableDownload(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").pageRenderInitiate("pageRenderInitiate").pageRenderComplete("pageRenderComplete").Render()
+    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").PageRenderInitiate("pageRenderInitiate").PageRenderComplete("pageRenderComplete").Render()
 </div>
 
 <script>
-pdfviewer.pageRenderStart = args => {
+function pageRenderInitiate(args) { 
    // This method is called when the page rendering starts
-    console.log('Rendering of pages started' + args);
+    console.log('Rendering of pages started');
+    console.log(args);
 };
 
-pdfviewer.pageRenderComplete = args => {
+function pageRenderComplete(args) {
    // This method is called when the page rendering completes
-   console.log('Rendering of pages completed' + args);
+   console.log('Rendering of pages completed');
+   console.log(args);
 };
 </script>
 
 {% endhighlight %}
 {% highlight html tabtitle="Server-Backed" %}
 
+@{
+    ViewBag.Title = "Home Page";
+}
+
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").DocumentLoad("download")..ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableDownload(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").pageRenderInitiate("pageRenderInitiate").pageRenderComplete("pageRenderComplete").Render()
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").PageRenderInitiate("pageRenderInitiate").PageRenderComplete("pageRenderComplete").Render()
 </div>
 
 <script>
-pdfviewer.pageRenderStart = args => {
+function pageRenderInitiate(args) { 
    // This method is called when the page rendering starts
-    console.log('Rendering of pages started' + args);
+    console.log('Rendering of pages started');
+    console.log(args);
 };
 
-pdfviewer.pageRenderComplete = args => {
+function pageRenderComplete(args) {
    // This method is called when the page rendering completes
-   console.log('Rendering of pages completed' + args);
+   console.log('Rendering of pages completed');
+   console.log(args);
 };
 </script>
 
