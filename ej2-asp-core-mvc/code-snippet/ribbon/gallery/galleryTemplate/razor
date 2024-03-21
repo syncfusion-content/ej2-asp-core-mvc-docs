@@ -1,31 +1,232 @@
-@using Syncfusion.EJ2
 @using Syncfusion.EJ2.Ribbon
 @using Syncfusion.EJ2.Navigations
 
 @{
-    List<RibbonGroupButtonItem> groupButtonContent = new List<RibbonGroupButtonItem>() {
-
-      new RibbonGroupButtonItem { IconCss = "e-icons e-align-left", Content = "Align Left" },
-      new RibbonGroupButtonItem {IconCss = "e-icons e-align-center", Content = "Align Center" },
-      new RibbonGroupButtonItem {IconCss = "e-icons e-align-right", Content = "Align Right" },
-      new RibbonGroupButtonItem { IconCss = "e-icons e-justify", Content = "Justify" }
-    };
+  List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge Format" }, new MenuItem { Text = "Keep Text Only" } };
 }
-
 
 @Html.EJS().Ribbon("ribbon").Tabs(tab =>
 {
-    tab.Header("Home").Groups(group =>
+  tab.Header("Home").Groups(group =>
+
+  {
+    group.Id("clipboard").Header("Clipboard").GroupIconCss("e-icons e-paste").Collections(collection =>
     {
-        group.Header("Paragraph").Collections(collection =>
+      collection.Items(items =>
+      {
+        items.Type(RibbonItemType.SplitButton).Id("pastebtn").AllowedSizes(RibbonItemSize.Large).SplitButtonSettings(splitButton =>
         {
-            collection.Items(items =>
-            {
-                items.Type(RibbonItemType.GroupButton).AllowedSizes(RibbonItemSize.Medium).GroupButtonSettings(groupButton =>
-                {
-                    groupButton.Items(groupButtonContent);
-                }).Add();
-            }).Add();
+          splitButton.IconCss("e-icons e-paste").Items(pasteOptions).Content("Paste");
         }).Add();
+      }).Add();
+      collection.Items(items =>
+      {
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-cut").Content("Cut");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-copy").Content("Copy");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-format-painter").Content("Format Painter");
+        }).Add();
+      }).Add();
     }).Add();
+    group.Header("Table Styles").Collections(collections =>
+    {
+      collections.Items(items =>
+      {
+        items.Type(RibbonItemType.Gallery).GallerySettings(gallery =>
+        {
+          gallery.ItemCount(7).Template("#galleryTemplate").PopupTemplate("#galleryTemplate").Groups(galleryGroups =>
+          {
+            galleryGroups.Header("Plain Tables").Items(galleryItems =>
+            {
+              galleryItems.CssClass("plainTables_item_1").Add();
+              galleryItems.CssClass("plainTables_item_2").Add();
+              galleryItems.CssClass("plainTables_item_3").Add();
+              galleryItems.CssClass("plainTables_item_4").Add();
+              galleryItems.CssClass("plainTables_item_5").Add();
+              galleryItems.CssClass("plainTables_item_6").Add();
+              galleryItems.CssClass("plainTables_item_7").Add();
+            }).Add();
+            galleryGroups.Header("List Tables").Items(galleryItems =>
+            {
+              galleryItems.CssClass("listTables_item_1").Add();
+              galleryItems.CssClass("listTables_item_2").Add();
+              galleryItems.CssClass("listTables_item_3").Add();
+              galleryItems.CssClass("listTables_item_4").Add();
+              galleryItems.CssClass("listTables_item_5").Add();
+              galleryItems.CssClass("listTables_item_6").Add();
+              galleryItems.CssClass("listTables_item_7").Add();
+            }).Add();
+          });
+        }).Add();
+      }).Add();
+    }).Add();
+    group.Id("insert").Header("Insert").Collections(collection =>
+    {
+      collection.Items(items =>
+      {
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-insert-above").Content("Above");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-insert-below").Content("Below");
+        }).Add();
+      }).Add();
+      collection.Items(items =>
+      {
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-insert-left").Content("Left");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-insert-right").Content("Right");
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
 }).Render()
+
+<script type="text/x-jsrender" id="galleryTemplate">
+  <div class="gallery-template ${items.cssClass}">
+    <table class="gallery-table">
+      <tbody>
+        <tr class="row_one">
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+        </tr>
+        <tr class="row_two">
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+        </tr>
+        <tr class="row_three">
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+          <td class="tableContent">-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</script>
+
+<style>
+
+  /* plain table styles */
+  .plainTables_item_1 .tableContent {
+    border: 1px solid black;
+  }
+
+  .plainTables_item_2 .tableContent,
+  .plainTables_item_3 .tableContent {
+    border: 1px solid #c1c1c1;
+  }
+
+  .plainTables_item_4 .row_one .tableContent {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .plainTables_item_4 .row_three .tableContent {
+    border-bottom: 1px solid black;
+  }
+
+  .plainTables_item_5 .row_one .tableContent {
+    border-bottom: 1px solid black;
+  }
+
+  .plainTables_item_5 .row_one .tableContent,
+  .plainTables_item_7 .row_one .tableContent {
+    border-bottom: 1px solid black;
+  }
+
+  .plainTables_item_5 .row_two .tableContent:first-child,
+  .plainTables_item_5 .row_three .tableContent:first-child,
+  .plainTables_item_7 .row_two .tableContent:first-child,
+  .plainTables_item_7 .row_three .tableContent:first-child {
+    border-right: 1px solid black;
+  }
+
+  /* list table styles */
+
+  .listTables_item_1 .row_one .tableContent {
+    border-bottom: 1px solid #83caeb;
+  }
+
+  .listTables_item_2 .row_one .tableContent,
+  .listTables_item_2 .row_two .tableContent,
+  .listTables_item_2 .row_three .tableContent {
+    border-bottom: 1px solid #83caeb;
+    border-top: 1px solid #83caeb;
+  }
+
+  .listTables_item_3 .row_one .tableContent {
+    border-top: 1px solid #156082;
+    border-bottom: 1px solid #156082;
+    background-color: #156082;
+    color: white;
+  }
+
+  .listTables_item_3 .row_three .tableContent {
+    border-bottom: 1px solid #156082;
+  }
+
+  .listTables_item_5 .row_one .tableContent,
+  .listTables_item_7 .row_one .tableContent {
+    border-bottom: 1px solid white;
+  }
+
+  .listTables_item_5 .row_two .tableContent:first-child,
+  .listTables_item_5 .row_three .tableContent:first-child,
+  .listTables_item_7 .row_two .tableContent:first-child,
+  .listTables_item_7 .row_three .tableContent:first-child {
+    border-right: 1px solid white;
+  }
+
+  .listTables_item_5 .tableContent {
+    background-color: #156082;
+    color: white;
+  }
+
+  .listTables_item_7 .row_one .tableContent {
+    border-bottom: 1px solid black;
+  }
+
+  .listTables_item_7 .row_two .tableContent:first-child,
+  .listTables_item_7 .row_three .tableContent:first-child {
+    border-right: 1px solid black;
+  }
+
+  .listTables_item_4 .row_one .tableContent {
+    border-top: 1px solid #156082;
+    border-bottom: 1px solid #156082;
+  }
+
+  .listTables_item_4 .row_three .tableContent {
+    border-bottom: 1px solid #156082;
+  }
+
+  .gallery-table {
+    border-collapse: collapse;
+    line-height: 14px;
+  }
+
+  .tableContent {
+    width: 12px;
+  }
+</style>

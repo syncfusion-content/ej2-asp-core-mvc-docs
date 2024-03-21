@@ -178,4 +178,22 @@ The example demonstrates the customization of popup with `popupHeight` and `popu
 
 ![ASP.NET Core Ribbon Control with gallery popup width and height](./images/ribbon-gallery-popup-styles.png)
 
+## Template
+
+You can customize the default appearance and content of Ribbon gallery items by using the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_Template) property.
+
+### Popup Template
+
+You can customize the appearance of Ribbon gallery popup by using the [popupTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_PopupTemplate) property.
+
+The below example demonstrates the customization of both the `template` and `popupTemplate` properties:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/gallery/galleryTemplate/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Ribbon Control with gallery template](./images/ribbon-gallery-template.png)
+
 > To know more about the built-in Ribbon items, please refer to the [Ribbon Items](./items) section.
