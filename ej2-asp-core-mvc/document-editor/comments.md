@@ -80,3 +80,28 @@ Comment only protection can be enabled in UI by using [Restrict Editing pane](..
 ![Enable comment only protection](images/commentsonly.png)
 
 N> In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.
+
+## Mention Support in comments
+
+Mention support displays a list of items that users can select or tag from the suggested list. To use this feature, type the `@` character in the comment box and select or tag the user from the suggestion list.
+
+The following example illustrates how to enable mention support in Document Editor
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/comments-mention/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Comment-only.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/comments-mention/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Comment-only.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
