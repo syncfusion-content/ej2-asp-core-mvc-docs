@@ -1,0 +1,132 @@
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+
+@{
+    List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge Format" }, new MenuItem { Text = "Keep Text Only" } };
+    var backButtonSettings = new { text = "Close" };
+    List<BackstageItem> backstageItems = new List<BackstageItem>() {
+        new BackstageItem { Id = "home", Text = "Home", KeyTip="H", IconCss = "e-icons e-home", Content = processBackstageContent("home") },
+        new BackstageItem { Id = "new", Text = "New", KeyTip="N", IconCss = "e-icons e-file-new", Content = processBackstageContent("new") },
+        new BackstageItem { Id = "open", Text = "Open", KeyTip="O", IconCss = "e-icons e-folder-open", Content = processBackstageContent("open") }
+    };
+    string processBackstageContent(string item)
+    {
+        string content = "";
+        switch (item)
+        {
+            case "home":
+                {
+                    content = "<div id='block-wrapper'><div class='section-title'> Recent </div><div class='section-content' style='padding: 12px 0px; cursor: pointer'><table><tbody><tr><td> <span class='doc_icon e-icons e-open-link'></span> </td><td> <span style='display: block; font-size: 14px'> Ribbon.docx </span><span style='font-size: 12px'> EJ2 >> Components >> Navigations >> Ribbon >> default </span></td></tr></tbody></table></div></div></div>";
+                    break;
+                }
+            case "new":
+                {
+                    content = "<div id='new-section' class='new-wrapper'><div class='section-title'> New </div><div class='category_container'><div class='doc_category_image'></div> <span class='doc_category_text'> New document </span></div></div>";
+                    break;
+                }
+            case "open":
+                {
+                    content = "<div id='open-content' style='padding: 20px;'><div class='section-content' style='padding: 12px 0px; cursor: pointer'><table><tbody><tr><td> <span class='doc_icon e-icons e-open-link'></span> </td><td> <span style='display: block; font-size: 14px'> Open in Desktop App </span><span style='font-size: 12px'> Use the full functionality of Ribbon </span></td></tr></tbody></table></div><div class='section-content' style='padding: 12px 0px; cursor: pointer'><table><tbody><tr><td> <span class='doc_icon e-icons e-protect-sheet'></span> </td><td> <span style='display: block; font-size: 14px'> Protect Document </span><span style='font-size: 12px'>To prevent accidental changes, this document has been set to open as view-only.</span></td></tr></tbody></table></div></div>";
+                    break;
+                }
+            case "print":
+                {
+                    content = "<div style='min-width: 300px; padding: 20px;'><h2>Print this document</h2><button id='togglebtn' class='e-control e-btn e-lib e-flat e-primary'><span class='e-btn-icon e-btn-sb-icons e-icons e-print e-icon-left'></span>Print</button></div>";
+                    break;
+                }
+        }
+        return content;
+    }
+}
+<ejs-ribbon id="ribbon" enableKeyTips=true created="ribbonCreated">
+    <e-ribbon-backstagemenusettings text="File" keyTip="F" visible="true" backButton=backButtonSettings items=backstageItems></e-ribbon-backstagemenusettings>
+     <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" id="clipboard" groupIconCss="e-icons e-paste">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="SplitButton" id="pastebtn" allowedSizes=Large>
+                                    <e-ribbon-splitButtonSettings iconCss="e-icons e-paste" content="Paste" items=pasteOptions></e-ribbon-splitButtonSettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+         </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script>
+  function ribbonCreated() {
+        var ribbon = document.getElementById('ribbon').ej2_instances[0];
+        ribbon.ribbonKeyTipModule.showKeyTips('F');
+    }
+</script>
+
+<style>
+    .e-ribbon-backstage-content{
+        width: 500px;
+        height: 350px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .new-docs {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .category_container {
+        width: 150px;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .doc_category_image {
+        width: 80px;
+        height: 100px;
+        background-color: #fff;
+        border: 1px solid rgb(125, 124, 124);
+        text-align: center;
+        overflow: hidden;
+        margin: 0px auto 10px;
+    }
+
+    .doc_category_text {
+        font-size: 16px;
+    }
+
+    .section-content {
+        padding: 12px 0px;
+        cursor: pointer;
+    }
+
+    .doc_icon {
+        font-size: 16px;
+        padding: 0px 10px;
+    }
+
+    .category_container:hover, .section-content:hover {
+        background-color: #dfdfdf;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+</style>
