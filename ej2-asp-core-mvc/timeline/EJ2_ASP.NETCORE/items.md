@@ -1,4 +1,4 @@
-	---
+---
 layout: post
 title: Items in ##Platform_Name## Timeline Control | Syncfusion
 description: Checkout and learn about Items in Syncfusion ##Platform_Name## Timeline control of Syncfusion Essential JS 2 and more.
