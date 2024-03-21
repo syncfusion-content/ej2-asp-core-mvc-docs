@@ -10,7 +10,7 @@ documentation: ug
 
 # Items in ##Platform_Name## Timeline control
 
-The Timeline items can be added by using the [items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Items) property. Each item can be configured with options such as `content`, `oppositeContent`, `dotCss`, `disabled` and `cssClass`.
+The Timeline items can be added by using the `<e-timeline-items>` tag helper. Each item can be configured with options such as `content`, `oppositeContent`, `dotCss`, `disabled` and `cssClass`.
 
 ## Adding content
 
