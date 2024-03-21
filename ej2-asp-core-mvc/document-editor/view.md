@@ -74,7 +74,7 @@ The following example illustrates how to enable heading navigation pane in Docum
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/heading-navigation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
+{% highlight c# tabtitle="heading-navigation.cs" %}
 {% include code-snippet/document-editor/heading-navigation/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -85,7 +85,7 @@ The following example illustrates how to enable heading navigation pane in Docum
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/heading-navigation/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
+{% highlight c# tabtitle="heading-navigation.cs" %}
 {% include code-snippet/document-editor/heading-navigation/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}

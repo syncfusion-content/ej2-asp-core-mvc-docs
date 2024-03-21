@@ -93,7 +93,7 @@ The following example illustrates how to enable mention support in Document Edit
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/comments-mention/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Comment-only.cs" %}
+{% highlight c# tabtitle="comments-mention.cs" %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -102,6 +102,6 @@ The following example illustrates how to enable mention support in Document Edit
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/comments-mention/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Comment-only.cs" %}
+{% highlight c# tabtitle="comments-mention.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
