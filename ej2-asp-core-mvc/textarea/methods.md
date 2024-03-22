@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Methods in ##Platform_Name## TextArea control | Syncfusion
-description: Handling methods in the ##Platform_Name## TextArea control of Syncfusion Essential JS 2 and more.
+description: Checkout and learn about methods in the ##Platform_Name## TextArea control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Methods 
 publishingplatform: ##Platform_Name##
