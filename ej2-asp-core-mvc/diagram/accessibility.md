@@ -127,6 +127,40 @@ The Diagram component followed the [keyboard interaction](https://www.w3.org/WAI
 | <kbd>Right Arrow</kbd> | Move selected object to right |
 | <kbd>Enter</kbd> | Start Annotation Edit |
 | <kbd>Escape</kbd> | End Annotation Edit |
+| Tab |  Select the diagram element based on the rendering order |
+| Shift + Tab | This command is employed to shift the selection to the preceding object based on the z-order.|
+| Control + B | Bold |
+| Control + I | Italic |
+| Control + U | Underline |
+| Control + D | Duplicate the selected shape.|
+| Control + G | Group the selected elements |
+| Control + Shift + U | UnGroup previously grouped elements.|
+| Control + R | Rotate the selected nodes in clockwise.|
+| Control + L | Rotate the selected nodes in counterclockwise.|
+| Control + H | Flip the selected elements horizontally.|
+| Control + J | Flip the selected elements vertically.|
+| Control + 1 | Activate the pointer tool.|
+| Control + 2 | Activate the text  tool.|
+| Control + 3 | Activate the connector tool.|
+| Control + 5 | Activate the freeform tool.|
+| Control + 6 | Activate the polyline tool.|
+| Control + + | Zoom in the diagram.|
+| Control + - | Zoom out the diagram.|
+| Shift + Up Arrow | Moves the selected elements towards up by 5 pixel.|
+| Shift + Down Arrow | Moves the selected elements towards down by 5 pixel.|
+| Shift + Left Arrow | Moves the selected elements towards left by 5 pixel.|
+| Shift + Right Arrow | Moves the selected elements towards right by 5 pixel.|
+| Control + Shift + L | Align the selected text to the left.|
+| Control + Shift + C | Center the selected text horizontally.|
+| Control + Shift + R | Align the selected text to the right.|
+| Control + Shift + J | Justify the selected text, aligning it to both the left and right margins.|
+| Control + Shift + E | Align the selected text to the top vertically.|
+| Control + Shift + M | Center the selected text vertically.|
+| Control + Shift + V | Align the selected text to the bottom vertically.|
+| Control + Shift + B | Send the selected shape backward in the stacking order, making it appear behind other shapes.|
+| Control + Shift + F | Bring the selected shape forward in the stacking order, making it appear in front of other shapes.|
+| Control + [ | Move the selected shape one step backward in the layer order. |
+| Control + ] | Move the selected shape one step forward in the layer order.|
 
 
 ## Ensuring accessibility
