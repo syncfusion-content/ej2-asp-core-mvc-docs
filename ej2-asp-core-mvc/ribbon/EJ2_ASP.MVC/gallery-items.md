@@ -182,7 +182,7 @@ The example demonstrates the customization of popup with `PopupHeight` and `Popu
 
 You can customize the default appearance and content of Ribbon gallery items by using the [Template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_Template) property.
 
-### Popup Template
+### Popup template
 
 You can customize the appearance of Ribbon gallery popup by using the [PopupTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_PopupTemplate) property.
 
