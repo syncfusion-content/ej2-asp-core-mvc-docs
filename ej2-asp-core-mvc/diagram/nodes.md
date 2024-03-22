@@ -196,6 +196,22 @@ N> The flip is also applicable for group and BPMN shapes.
 {% endtabs %}
 {% endif %}
 
+## Customize the style of main node on multi-selection.
+
+The style of the main node can be customized by using the className `e-diagram-first-selection-indicator`.
+
+Use the following CSS to customize the style of main node on multiple selection.
+
+```css
+
+ .e-diagram-first-selection-indicator{
+   stroke-width: 5px;
+   stroke: red;
+   stroke-dasharray: 1,1;
+  } 
+
+```
+
 ## Gradient
 
 The [`gradient`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_Gradient) property of the node allows to define and apply the gradient effect to that node.
