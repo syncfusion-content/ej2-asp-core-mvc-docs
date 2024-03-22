@@ -19,30 +19,28 @@ The [focusIn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Input
 
 By calling the `focusIn` method, you can programmatically set focus to the TextArea control, allowing users to interact with it via keyboard input or other means.
 
-{% if page.publishingplatform == "typescript" %}
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/textarea/methods-cs1/index.ts %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/textarea/methods-cs1/tagHelper %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/textarea/methods-cs1/index.html %}
+{% highlight c# tabtitle="Clear.cs" %}
+{% include code-snippet/textarea/methods-cs1/methods1.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/textarea/methods-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/textarea/methods-cs1/index.js %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/textarea/methods-cs1/razor %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/textarea/methods-cs1/index.html %}
+{% highlight c# tabtitle="Clear.cs" %}
+{% include code-snippet/textarea/methods-cs1/methods1.cs %}
 {% endhighlight %}
 {% endtabs %}
-          
 {% previewsample "page.domainurl/code-snippet/textarea/methods-cs1" %}
 {% endif %}
 
@@ -51,30 +49,27 @@ By calling the `focusIn` method, you can programmatically set focus to the TextA
 The [focusOut](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_focusOut) method in the TextArea control is used to remove focus from the textarea element, ending user interaction.
 This method is beneficial for scenarios where user need to programmatically remove focus from the TextArea control, such as after completing a specific task or when navigating to another element in the application.
 
-{% if page.publishingplatform == "typescript" %}
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/textarea/methods-cs2/index.ts %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/textarea/methods-cs2/tagHelper %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/textarea/methods-cs2/index.html %}
+{% highlight c# tabtitle="Clear.cs" %}
+{% include code-snippet/textarea/methods-cs2/methods2.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/textarea/methods-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/textarea/methods-cs2/index.js %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/textarea/methods-cs2/razor %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/textarea/methods-cs2/index.html %}
+{% highlight c# tabtitle="Clear.cs" %}
+{% include code-snippet/textarea/methods-cs2/methods2.cs %}
 {% endhighlight %}
 {% endtabs %}
-          
 {% previewsample "page.domainurl/code-snippet/textarea/methods-cs2" %}
 {% endif %}
 
@@ -83,26 +78,27 @@ This method is beneficial for scenarios where user need to programmatically remo
 The [getPersistData](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_getPersistData) method in the TextArea control retrieves the properties that need to be maintained in the persisted state.
 This method returns an object containing the properties to be persisted, which can include various configuration options and state information of the TextArea control. 
 
-{% if page.publishingplatform == "typescript" %}
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/textarea/methods-cs3/index.ts %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/textarea/methods-cs3/tagHelper %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/textarea/methods-cs3/index.html %}
+{% highlight c# tabtitle="Clear.cs" %}
+{% include code-snippet/textarea/methods-cs3/methods3.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "javascript" %}
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/textarea/methods-cs3/index.js %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/textarea/methods-cs3/razor %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/textarea/methods-cs3/index.html %}
+{% highlight c# tabtitle="Clear.cs" %}
+{% include code-snippet/textarea/methods-cs3/methods3.cs %}
 {% endhighlight %}
 {% endtabs %}
-
+{% previewsample "page.domainurl/code-snippet/textarea/methods-cs3" %}
 {% endif %}
