@@ -1,0 +1,62 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge format" }, new MenuItem { Text = "Keep text only" } };
+}
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" groupIconCss="e-icons e-paste">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="SplitButton">
+                                    <e-ribbon-splitButtonSettings iconCss="e-icons e-paste" content="Paste" items=pasteOptions></e-ribbon-splitButtonSettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Gallery">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery">
+                                    <e-ribbon-gallerySettings>
+                                        <e-ribbon-gallery-groups>
+                                            <e-ribbon-gallery-group header="Transitions">
+                                                <e-ribbon-gallery-items>
+                                                    <e-ribbon-gallery-item content="None" iconCss="e-icons e-rectangle"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Fade" iconCss="e-icons e-send-backward"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Reveal" iconCss="e-icons e-bring-forward"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Zoom" iconCss="e-icons e-zoom-to-fit"></e-ribbon-gallery-item>
+                                                </e-ribbon-gallery-items>
+                                            </e-ribbon-gallery-group>
+                                        </e-ribbon-gallery-groups>
+                                    </e-ribbon-gallerySettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>

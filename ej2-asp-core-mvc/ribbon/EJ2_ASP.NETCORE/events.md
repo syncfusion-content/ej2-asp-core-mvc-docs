@@ -2160,3 +2160,311 @@ The [BackStageItemClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 
 {% endhighlight %}
 {% endtabs %}
+
+## Gallery events
+
+### popupOpen
+
+The [popupOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_PopupOpen) event is triggered when the gallery popup opens.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Gallery">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery">
+                                    <e-ribbon-gallerySettings popupOpen="popupOpen">
+                                        <e-ribbon-gallery-groups>
+                                            <e-ribbon-gallery-group header="Styles">
+                                                <e-ribbon-gallery-items>
+                                                    <e-ribbon-gallery-item content="Normal"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="No Spacing"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 1"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 2"></e-ribbon-gallery-item>
+                                                </e-ribbon-gallery-items>
+                                            </e-ribbon-gallery-group>
+                                        </e-ribbon-gallery-groups>
+                                    </e-ribbon-gallerySettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script>
+  function popupOpen() {
+    // Your required action here
+  }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+### popupClose
+
+The [popupClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_PopupClose) event is triggered when the gallery popup closes.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Gallery">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery">
+                                    <e-ribbon-gallerySettings popupClose="popupClose">
+                                        <e-ribbon-gallery-groups>
+                                            <e-ribbon-gallery-group header="Styles">
+                                                <e-ribbon-gallery-items>
+                                                    <e-ribbon-gallery-item content="Normal"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="No Spacing"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 1"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 2"></e-ribbon-gallery-item>
+                                                </e-ribbon-gallery-items>
+                                            </e-ribbon-gallery-group>
+                                        </e-ribbon-gallery-groups>
+                                    </e-ribbon-gallerySettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script>
+  function popupClose() {
+    // Your required action here
+  }
+</script>
+`
+{% endhighlight %}
+{% endtabs %}
+
+### itemHover
+
+The [itemHover](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_ItemHover) event is triggered when hover over the gallery item.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Gallery">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery">
+                                    <e-ribbon-gallerySettings itemHover="itemHover">
+                                        <e-ribbon-gallery-groups>
+                                            <e-ribbon-gallery-group header="Styles">
+                                                <e-ribbon-gallery-items>
+                                                    <e-ribbon-gallery-item content="Normal"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="No Spacing"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 1"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 2"></e-ribbon-gallery-item>
+                                                </e-ribbon-gallery-items>
+                                            </e-ribbon-gallery-group>
+                                        </e-ribbon-gallery-groups>
+                                    </e-ribbon-gallerySettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script>
+  function itemHover() {
+    // Your required action here
+  }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+### beforeItemRender
+
+The [beforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_BeforeItemRender) event is triggered while rendering each gallery item.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Gallery">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery">
+                                    <e-ribbon-gallerySettings beforeItemRender="beforeItemRender">
+                                        <e-ribbon-gallery-groups>
+                                            <e-ribbon-gallery-group header="Styles">
+                                                <e-ribbon-gallery-items>
+                                                    <e-ribbon-gallery-item content="Normal"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="No Spacing"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 1"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 2"></e-ribbon-gallery-item>
+                                                </e-ribbon-gallery-items>
+                                            </e-ribbon-gallery-group>
+                                        </e-ribbon-gallery-groups>
+                                    </e-ribbon-gallerySettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script>
+  function beforeItemRender() {
+    // Your required action here
+  }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+### beforeSelect
+
+The [beforeSelect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_BeforeSelect) event is triggered before selecting an item in the Ribbon gallery.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Gallery">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery">
+                                    <e-ribbon-gallerySettings beforeSelect="beforeSelect">
+                                        <e-ribbon-gallery-groups>
+                                            <e-ribbon-gallery-group header="Styles">
+                                                <e-ribbon-gallery-items>
+                                                    <e-ribbon-gallery-item content="Normal"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="No Spacing"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 1"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 2"></e-ribbon-gallery-item>
+                                                </e-ribbon-gallery-items>
+                                            </e-ribbon-gallery-group>
+                                        </e-ribbon-gallery-groups>
+                                    </e-ribbon-gallerySettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script>
+  function beforeSelect() {
+    // Your required action here
+  }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+### select
+
+The [select](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_Select) event is triggered while selecting an item in the Ribbon Gallery.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Gallery">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery">
+                                    <e-ribbon-gallerySettings select="select">
+                                        <e-ribbon-gallery-groups>
+                                            <e-ribbon-gallery-group header="Styles">
+                                                <e-ribbon-gallery-items>
+                                                    <e-ribbon-gallery-item content="Normal"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="No Spacing"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 1"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item content="Heading 2"></e-ribbon-gallery-item>
+                                                </e-ribbon-gallery-items>
+                                            </e-ribbon-gallery-group>
+                                        </e-ribbon-gallery-groups>
+                                    </e-ribbon-gallerySettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script>
+  function select() {
+    // Your required action here
+  }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
