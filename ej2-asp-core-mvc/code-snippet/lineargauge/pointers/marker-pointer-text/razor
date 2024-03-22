@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@{
+     var textStyle = new Syncfusion.EJ2.LinearGauge.LinearGaugeFont { Size = "18px", FontWeight = "bold" };
+}
+
+@Html.EJS().LinearGauge("gauge").Orientation(Syncfusion.EJ2.LinearGauge.Orientation.Horizontal).Axes(axes => axes.Minimum(0).Maximum(100)
+           .Line(line => line.Width(0)).LabelStyle(labelStyle => labelStyle.Font(font => font.FontFamily("inherit")).Position(Syncfusion.EJ2.LinearGauge.Position.Outside))
+           .Pointers(pointer =>
+           {
+               pointer.Value(13).MarkerType(Syncfusion.EJ2.LinearGauge.MarkerType.Text).Text("Low").Color("Black").Offset("-35").TextStyle(textStyle).Add();
+               pointer.Value(48).MarkerType(Syncfusion.EJ2.LinearGauge.MarkerType.Text).Text("Moderate").Color("Black").Offset("-35").TextStyle(textStyle).Add();
+               pointer.Value(83).MarkerType(Syncfusion.EJ2.LinearGauge.MarkerType.Text).Text("High").Color("Black").Offset("-35").TextStyle(textStyle).Add();
+           })
+           .Ranges(range =>
+           {
+               range.Start(0).End(30).StartWidth(50).EndWidth(50).Color("#FB7D55").Position(Syncfusion.EJ2.LinearGauge.Position.Outside).Add();
+               range.Start(30).End(65).StartWidth(50).EndWidth(50).Color("#ECC85B").Position(Syncfusion.EJ2.LinearGauge.Position.Outside).Add();
+               range.Start(65).End(100).StartWidth(50).EndWidth(50).Color("#6FC78A").Position(Syncfusion.EJ2.LinearGauge.Position.Outside).Add();
+           }).MajorTicks(majorTick => majorTick.Interval(20).Height(7).Width(1).Position(Syncfusion.EJ2.LinearGauge.Position.Outside)).MinorTicks(minorTick => minorTick.Height(3).Interval(10).Position(Syncfusion.EJ2.LinearGauge.Position.Outside)).Add()).Render()
+
