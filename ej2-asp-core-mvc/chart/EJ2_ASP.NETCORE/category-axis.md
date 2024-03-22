@@ -9,8 +9,8 @@ documentation: ug
 ---
 
 
-# Category Axis
-
+# Category Axis in Syncfusion ASP.NET Core Chart component
+ 
 <!-- markdownlint-disable MD036 -->
 
 Category axis are used to represent, the string values instead of numbers. To get started with the category axis in chart, you can check on this video:
