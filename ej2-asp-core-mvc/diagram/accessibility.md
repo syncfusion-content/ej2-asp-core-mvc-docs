@@ -162,6 +162,7 @@ The Diagram component followed the [keyboard interaction](https://www.w3.org/WAI
 | Control + [ | Move the selected shape one step backward in the layer order. |
 | Control + ] | Move the selected shape one step forward in the layer order.|
 
+
 ## Ensuring accessibility
 
 The Diagram component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
