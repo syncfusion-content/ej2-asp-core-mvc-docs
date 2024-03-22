@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form Support in ##Platform_Name## TextArea control
+# Form Support in ##Platform_Name## TextArea Control
 
 The TextArea control seamlessly integrates with HTML forms, enabling efficient submission of longer text data. By including TextArea inputs within HTML forms, users can conveniently input multiline text content and submit it as part of form submissions.
 

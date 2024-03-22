@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maximum Length in ##Platform_Name## TextArea control
+# Maximum Length in ##Platform_Name## TextArea Control
 
 You can enforce a maximum length limit for the text input in the TextArea using the [MaxLength](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_MaxLength) property. This property allows to define the maximum number of characters that users can input into the TextArea.
 
