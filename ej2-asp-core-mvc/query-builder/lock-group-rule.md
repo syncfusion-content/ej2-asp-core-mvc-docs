@@ -11,7 +11,7 @@ documentation: ug
 
 # Lock Group/Rule in ##Platform_Name## Query builder control
 
-Query Builder allows you to lock rules as well as groups. When a rule is locked, the field, operator, and value will be disabled. When a group is locked, all the elements within the group will be disabled. You can use `ShowButtons` to enable/disable these buttons.
+The Query Builder provides the functionality to lock individual rules or entire groups. When a rule is locked, it prevents users from modifying its field, operator, and value, effectively disabling these components. Similarly, locking a group disables all elements contained within it. This feature offers users greater control over their query configurations, ensuring that specific rules or groups remain unchanged. Additionally, users can manage the visibility of locking buttons through the `ShowButtons` function, allowing for seamless control over the locking mechanism.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
