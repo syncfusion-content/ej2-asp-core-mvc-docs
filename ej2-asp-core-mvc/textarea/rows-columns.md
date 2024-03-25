@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Rows and Columns in ##Platform_Name## TextArea control
+# Rows and Columns in ##Platform_Name## TextArea Control
 
 Two essential attributes, `rows` and `columns`, play a pivotal role in customizing the TextArea's appearance and layout.
 The `rows`attribute determines the initial visible number of lines within the TextArea, controlling its vertical size. Conversely, the `columns` attribute specifies the visible width of the TextArea in characters per line, determining its initial width.

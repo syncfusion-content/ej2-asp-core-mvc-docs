@@ -1,5 +1,10 @@
-  @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").Toolbar(new List<string>() 
-  { "Add", "Edit", "Update", "Delete", "Search", "ZoomIn", "ZoomOut", "ZoomToFit","Indent","Outdent", 
-        "PrevTimeSpan", "NextTimeSpan","Undo","Redo"}).EnableUndoRedo(true).UndoRedoActions(new List<string>() { "Delete", "Edit" }).TaskFields(ts =>
-   ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
-   ).EditSettings(es=>es.AllowEditing(true).AllowAdding(true).AllowDeleting(true).AllowRowDragAndDrop(true).ShowColumnMenu(true)).Render()
+  @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).
+  Height("450px").
+  Toolbar(new List<string>(){ "Add", "Edit", "Update", "Delete", "Search", "ZoomIn", "ZoomOut", "ZoomToFit",
+   "Indent","Outdent","PrevTimeSpan", "NextTimeSpan","Undo","Redo"}).
+  AllowRowDragAndDrop(true).
+  UndoRedoActions(new List<string>() { "Delete", "Edit" }).
+  EnableUndoRedo(true).
+  TaskFields(ts =>ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).
+  EditSettings(es=>es.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).
+  ShowColumnMenu(true).Render()
