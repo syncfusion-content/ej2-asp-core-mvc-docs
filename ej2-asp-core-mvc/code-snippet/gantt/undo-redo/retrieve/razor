@@ -12,8 +12,8 @@
   UndoRedoActions(new List<string>() { "Sorting", "Add", "ColumnReorder", "ColumnResize", "ColumnState", "Delete",
    "Edit", "Filtering", "Indent", "Outdent", "NextTimeSpan", "PreviousTimeSpan", "RowDragAndDrop", "Search", "ZoomIn", "ZoomOut", "ZoomToFit" }).
   TaskFields(ts =>ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).
-  EditSettings(es=>es.AllowEditing(true).AllowAdding(true).AllowDeleting(true).
-  ShowColumnMenu(true)).Render()
+  EditSettings(es=>es.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).
+  ShowColumnMenu(true).Render()
 
    <script>
         document.getElementById('GetUndoCollection').addEventListener('click', function (args) {
