@@ -1,5 +1,5 @@
 ---
-title: Collaborative Editing
+title: Collaborative Editing in ##Platform_Name## Document Editor Control | Syncfusion
 component: DocumentEditor
 description: Learn how to perform collaborative editing in ##Platform_Name## document editor
 publishingplatform: ##Platform_Name##
