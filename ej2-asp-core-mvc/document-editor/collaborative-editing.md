@@ -1,7 +1,7 @@
 ---
 title: Collaborative Editing in ##Platform_Name## Document Editor Control | Syncfusion
 component: DocumentEditor
-description: Learn how to perform collaborative editing in ##Platform_Name## document editor
+description: Learn how to enable and perform collaborative editing in Syncfusion ##Platform_Name## Document editor.
 publishingplatform: ##Platform_Name##
 ---
 
