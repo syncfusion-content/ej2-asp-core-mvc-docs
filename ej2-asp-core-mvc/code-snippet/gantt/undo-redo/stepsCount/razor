@@ -7,6 +7,6 @@
   UndoRedoActions(new List<string>() { "Sorting", "Add", "ColumnReorder", "ColumnResize", "ColumnState", "Delete",
    "Edit", "Filtering", "Indent", "Outdent", "NextTimeSpan", "PreviousTimeSpan", "RowDragAndDrop", "Search", "ZoomIn", "ZoomOut", "ZoomToFit" }).
   TaskFields(ts =>ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).
-  EditSettings(es=>es.AllowEditing(true).AllowAdding(true).AllowDeleting(true).
+  EditSettings(es=>es.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).
   AllowRowDragAndDrop(true).
-  ShowColumnMenu(true)).Render()
+  ShowColumnMenu(true).Render()
