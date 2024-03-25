@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sizing in ##Platform_Name## TextArea control
+# Sizing in ##Platform_Name## TextArea Control
 
 you can adjust the size of the TextArea by applying specific classes:
 
@@ -48,10 +48,10 @@ Output be like the below.
 
 ![textarea](./images/textarea-sizing.png)
 
-## Filled and Outline mode
+## Filled and outline mode
 
-The Filled and Outline modes can be enabled in the TextArea component by adding the `e-outline` or `e-filled` class to the [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_CssClass) API.
-By adding these classes, users can choose between a filled or outline appearance for the TextArea component, aligning with the design aesthetics of their application.
+The Filled and Outline modes can be enabled in the TextArea control by adding the `e-outline` or `e-filled` class to the [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_CssClass) API.
+By adding these classes, users can choose between a filled or outline appearance for the TextArea control, aligning with the design aesthetics of their application.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -85,9 +85,9 @@ Output be like the below.
 
 ## Custom styling with cssClass API in TextArea
 
-The `CssClass` Api provides a powerful way to apply custom styling to the TextArea component, allowing users to customize its appearance and layout according to their design requirements.
+The `CssClass` Api provides a powerful way to apply custom styling to the TextArea control, allowing users to customize its appearance and layout according to their design requirements.
 
-By utilizing the `CssClass` API, users can apply custom CSS classes to the TextArea component's container, enabling control over its styling properties such as color, padding, margins, borders, and more.
+By utilizing the `CssClass` API, users can apply custom CSS classes to the TextArea control's container, enabling control over its styling properties such as color, padding, margins, borders, and more.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -157,9 +157,9 @@ Render the TextArea with `rounded corner` by adding the `e-corner` class to the 
 
 ```
 
-## Static Clear Button in TextArea
+## Static clear button in TextArea
 
-To display a static clear button in the TextArea component, you can add the `e-static-clear` class to the `CssClass` property. This class ensures that the clear button remains visible at all times, providing users with the ability to easily clear the TextArea content without needing to focus on the control.
+To display a static clear button in the TextArea control, you can add the `e-static-clear` class to the `CssClass` property. This class ensures that the clear button remains visible at all times, providing users with the ability to easily clear the TextArea content without needing to focus on the control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -273,7 +273,7 @@ Output be like the below.
 
 ## Adding mandatory asterisk to placeholder
 
-To add a mandatory asterisk (*) to the placeholder in the TextArea component, you can utilize CSS to append the asterisk after the placeholder text.
+To add a mandatory asterisk (*) to the placeholder in the TextArea control, you can utilize CSS to append the asterisk after the placeholder text.
 
 ```css
 

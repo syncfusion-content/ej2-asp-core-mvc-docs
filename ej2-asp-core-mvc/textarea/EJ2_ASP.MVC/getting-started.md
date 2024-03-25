@@ -69,7 +69,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 
 N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
 
-## Register Syncfusion script manager
+## Register syncfusion script manager
 
 Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
 
@@ -102,7 +102,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Getting and setting values
 
-To set the initial value of the TextArea component, you can utilize the [`value`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_Value) property. Here's how you can achieve it:
+To set the initial value of the TextArea control, you can utilize the [`value`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_Value) property. Here's how you can achieve it:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -124,7 +124,7 @@ To set the initial value of the TextArea component, you can utilize the [`value`
 {% endhighlight %}
 {% endtabs %}
 
-* You can dynamically retrieve the value of the TextArea component using the `value` property from the TextArea component instance.
+* You can dynamically retrieve the value of the TextArea control using the `value` property from the TextArea control instance.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
