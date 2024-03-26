@@ -260,3 +260,5 @@ The following example code illustrates how to customize the formatting exception
 {% highlight c# tabtitle="form-field-settings.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
+
+>Note: You can customize formatting exceptions in application level, but cannot be exported in file level
