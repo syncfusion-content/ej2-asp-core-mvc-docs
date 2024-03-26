@@ -10,7 +10,7 @@ documentation: ug
 
 # Items in ##Platform_Name## Timeline control
 
-The Timeline items can be added by using the `<e-timeline-items>` tag helper. Each item can be configured with options such as `content`, `oppositeContent`, `dotCss`, `disabled` and `cssClass`.
+The Timeline items can be added by using the `<e-timeline-item>` tag helper. Each item can be configured with options such as `content`, `oppositeContent`, `dotCss`, `disabled` and `cssClass`.
 
 ## Adding content
 
