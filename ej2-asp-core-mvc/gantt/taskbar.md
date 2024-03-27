@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Taskbar in ##Platform_Name## Gantt Component
-description: Learn here all about Taskbar in Syncfusion ##Platform_Name##Syncfusion Gantt component of Syncfusion Essential JS 2 and more.
+title: Taskbar in ##Platform_Name##Syncfusion Gantt Component
+description: Learn here all about Taskbar in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Taskbar
 publishingplatform: ##Platform_Name##
