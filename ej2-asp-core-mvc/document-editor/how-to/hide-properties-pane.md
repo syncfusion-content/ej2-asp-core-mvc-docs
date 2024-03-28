@@ -16,18 +16,18 @@ The following example code illustrates how to hide the properties pane.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/document-editor-container/hide-the-default-propertiespane/tagHelper %}
+{% include code-snippet/document-editor-container/hide-properties-pane/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Hide-the-default-propertiespane.cs" %}
+{% highlight c# tabtitle="hide-properties-pane.cs" %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/document-editor-container/hide-the-default-propertiespane/razor %}
+{% include code-snippet/document-editor-container/hide-properties-pane/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Hide-the-default-propertiespane.cs" %}
+{% highlight c# tabtitle="hide-properties-pane.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
