@@ -386,3 +386,5 @@ The following is the output of custom context menu with customization.
 </script>
 
 ```
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to/Custom%20Context%20Menu/PDFViewerSample)

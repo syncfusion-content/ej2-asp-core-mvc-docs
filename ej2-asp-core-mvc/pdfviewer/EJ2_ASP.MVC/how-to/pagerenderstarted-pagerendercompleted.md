@@ -74,3 +74,5 @@ function pageRenderComplete(args) {
 {% endtabs %}
 
 The provided code demonstrates how to subscribe to the `pageRenderInitiate` and `pageRenderComplete` events in the Syncfusion PDF Viewer component. 
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to/PageRenderStarted%20and%20PageRenderCompleted%20event/PDFViewerSample)
