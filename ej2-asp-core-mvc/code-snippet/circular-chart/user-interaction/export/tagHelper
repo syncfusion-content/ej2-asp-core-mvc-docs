@@ -1,0 +1,18 @@
+<ejs-circularchart3d id="container" tilt="-45" enableExport="true">
+    <e-circularchart3d-legendsettings visible="false">
+    </e-circularchart3d-legendsettings>
+    <e-circularchart3d-series-collection>
+        <e-circularchart3d-series dataSource="ViewBag.dataSource" xName="X" yName="Y" radius="100%">
+        </e-circularchart3d-series>
+    </e-circularchart3d-series-collection>
+</ejs-circularchart3d>
+
+<div>
+    <ejs-button id="export" content="Export" isPrimary="true"></ejs-button>
+</div>
+<script>
+    document.getElementById('export').onclick = () => {
+        var circularchart = document.getElementById('container').ej2_instances[0];
+        circularchart.circularChartExport3DModule.export('PNG', 'result');
+    };
+</script>

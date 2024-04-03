@@ -1,0 +1,7 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
+{
+    series.XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
+}
+).Tooltip(tt => tt.Enable(true).Format("${series.name} ${point.x} : ${point.y}").Fill("#7bb4eb").Border(br => br.Width(2).Color("grey"))
+).HighlightColor("red").HighlightMode(Syncfusion.EJ2.Charts.CircularChart3DHighlightMode.Point
+).LegendSettings(leg => leg.Visible(false)).Render()

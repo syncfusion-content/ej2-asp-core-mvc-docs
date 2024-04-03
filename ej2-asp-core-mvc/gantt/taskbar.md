@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Taskbar in ##Platform_Name## Gantt Component
+title: Taskbar in ##Platform_Name## Syncfusion Gantt Component
 description: Learn here all about Taskbar in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Taskbar
@@ -167,6 +167,10 @@ The following code example shows how to use this property.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+
+![Multitaskbar support in projectview](images/project-multitaskbar.png)
 
 ## Connector lines
 

@@ -1,0 +1,7 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).Title("Oil and other liquid imports in USA"
+).Series(series =>
+{
+    series.XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
+}
+).TitleStyle(ts => ts.FontFamily("Arial").FontStyle("italic").FontWeight("regular").Color("#E27F2D").Size("23px")
+).LegendSettings(leg => leg.Visible(false)).Render()

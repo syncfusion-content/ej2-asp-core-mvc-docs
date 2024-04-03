@@ -1,0 +1,14 @@
+<div class="control-section">
+    <div class="control_wrapper TextArea-control-section">
+        <ejs-textarea id="default"></ejs-textarea>
+        <br/>
+        <button id="button">Focus-in</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("button").onclick = function() {
+        var textareaObj = document.getElementById('default').ej2_instances[0];
+        textareaObj.focusIn();
+    };
+</script>

@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-textarea id="default" destroyed="destroyed"></ejs-textarea>
+
+<script>
+
+    function destroyed() {
+        // Here, you can customize your code.
+    }
+
+</script>

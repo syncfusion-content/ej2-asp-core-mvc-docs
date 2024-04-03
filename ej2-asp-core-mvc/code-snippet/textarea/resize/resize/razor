@@ -1,0 +1,5 @@
+<div class="control-section">
+    <div class="control_wrapper textarea-control-section">
+        @Html.EJS().TextArea("default").Placeholder("Enter your comments").ResizeMode(ResizeMode.Both).Render()
+    </div>
+</div>
