@@ -1,0 +1,25 @@
+@Html.EJS().Spreadsheet("spreadsheet").Created("createdHandler").OpenUrl("Home/Open").Render()
+
+<button class="e-btn custom-btn" id="savejson">To save json data</button>
+<script>
+    function createdHandler() {
+        fetch('https://cdn.syncfusion.com/scripts/spreadsheet/Sample.xlsx') // fetch the remote url
+            .then((response) => {
+                response.blob().then((fileBlob) => {
+                    // convert the excel file to blob
+                    let file = new File([fileBlob], 'Sample.xlsx'); //convert the blob into file
+                    this.open({ file: file }); // open the file into Spreadsheet
+                });
+            });
+    }
+
+    document.getElementById('savejson').onclick = () => {
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        // Save the spreadsheet data as JSON.
+        spreadsheet.saveAsJson().then((Json) => {
+            console.log(JSON.stringify(Json));
+            alert('JSON saved successfully');
+        });
+    };
+
+</script>
