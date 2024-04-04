@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Olap in ##Platform_Name## Pivot Table Component
+title: Olap in ##Platform_Name## Pivot Table component | Syncfusion
 description: Learn here all about Olap in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Olap
@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# OLAP
+# OLAP in ##Platform_Name## Pivot Table component
 
 ## Getting Started with ASP.NET MVC
 
@@ -448,7 +447,7 @@ Previous changes can be cleared by using the "Clear" option while performing ope
 
 ![output](images/clear-edit-olap.png "Editing the calculated field")
 
-#### Virtual Scrolling
+### Virtual Scrolling
 
 Allows large amounts of data to be loaded without any performance degradation by rendering rows and columns in relation to the current viewport. Rest of the data will be brought into the viewport dynamically based on vertical or horizontal scroll position. This feature can be enabled by setting the [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**.
 
@@ -475,15 +474,14 @@ Allows large amounts of data to be loaded without any performance degradation by
 {% endtabs %}
 {% endif %}
 
-
-
 ![output](images/olap-virtual.png)
 
-##### Limitations for virtual scrolling
+#### Limitations for virtual scrolling
 
-* The [`ColumnWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnWidth) property in [`GridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) should be in pixels. The percentage value is not accepted.
-* Resizing columns and setting the width of individual columns will affect scrolling and is therefore not recommended.
-* The grand totals option is not supported by virtual scrolling.
+* In virtual scrolling, the [ColumnWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnWidth) property in [GridSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) should be in pixels, and percentage values are not accepted.
+* Resizing columns or setting width to individual columns affects the calculation used to pick the correct page on scrolling.
+* When using OLAP data, subtotals and grand totals are only displayed when measures are bound at the last position in the [Rows](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Rows) or [Columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Columns) axis. Otherwise, the data from the pivot table will be shown without summary totals.
+* When the pivot table's width and height are large, the loading data count in the current, previous, and next viewports (pages) will also increase, affecting performance.
 
 ## Data Binding
 

@@ -1,0 +1,8 @@
+<ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" enableUndoRedo="true" toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Search", "ZoomIn", "ZoomOut", "ZoomToFit","Indent","Outdent", 
+    "PrevTimeSpan", "NextTimeSpan","Undo","Redo" })" allowSorting="true" allowFiltering="true" showColumnMenu="true" allowResizing="true" allowReordering="true" allowRowDragAndDrop="true"
+    undoRedoActions="@(new List<string>() { "Edit","Delete"})">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+         endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+    </e-gantt-taskfields>
+    <e-gantt-editsettings allowAdding="true" allowEditing="true" allowDeleting="true"></e-gantt-editsettings>
+</ejs-gantt>

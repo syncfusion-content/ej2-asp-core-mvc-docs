@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with EJ2 ASP.NET Core PDF Viewer Control | Syncfusion
-description: Learn how to getting started with PDF Viewer control in ASP.NET Core application. You can view and comment on PDFs in ease and also can fill forms. 
+description: Learn how to getting started with PDF Viewer control in ASP.NET Core application. You can view and comment on PDFs in ease and also can fill forms.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
 publishingplatform: ej2-asp-core-mvc
@@ -10,23 +10,23 @@ documentation: ug
 
 # Getting Started with ASP.NET Core PDF Viewer control
 
-The [ASP.NET Core PDF Viewer](https://www.syncfusion.com/aspnet-core-ui-controls/pdf-viewer) control is used to viewing and printing PDF files in any web application. It provides the best viewing experience available with core interactions such as zooming, scrolling, text searching, text selection, and text copying. Thumbnail, bookmark, hyperlink and table of contents support provides easy navigation within and outside the PDF files. 
+The [ASP.NET Core PDF Viewer](https://www.syncfusion.com/aspnet-core-ui-controls/pdf-viewer) control is used to viewing and printing PDF files in any web application. It provides the best viewing experience available with core interactions such as zooming, scrolling, text searching, text selection, and text copying. Thumbnail, bookmark, hyperlink and table of contents support provides easy navigation within and outside the PDF files.
 
 This section briefly explains about how to integrate ASP.NET Core PDF Viewer control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
-[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
 
 ## Integrate PDF Viewer into an ASP.NET Core application
 
-1. Start Visual Studio and select **Create a new project**. 
+1. Start Visual Studio and select **Create a new project**.
 2. In the **Create a new project** dialog, select **ASP.NET Core Web App**.
 ![select-aspnet-core-web-app](Core_Images/Select-aspnet-core-project.png)
 3. In the **Configure your new project** dialog, enter *Project Name* and select Next.
 ![Set-project-name](Core_Images/Set-project-name.png)
-4. In the **Additional information** dialog, select **.NET 6.0 (Long-term Support) and then select Create**. 
-![Set-framework](Core_Images/additional-info.png) 
+4. In the **Additional information** dialog, select **.NET 6.0 (Long-term Support) and then select Create**.
+![Set-framework](Core_Images/additional-info.png)
 
 ## ASP.NET Core PDF Viewer NuGet package installation
 
@@ -67,7 +67,7 @@ The theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.c
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. 
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls.
 
 ## Add script reference
 
@@ -87,7 +87,7 @@ Add the required scripts using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 
 ## Register Syncfusion Script Manager
 
-Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager in the ASP.NET Core application as follows. 
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}

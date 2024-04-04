@@ -10,7 +10,7 @@ documentation: ug
 
 # Including Client-Side Resources
 
-This article provides the details extensively about all the possible ways of including the client-side resources of Syncfusion EJ2 Components in an ASP.NET Core web application. 
+This article provides the details extensively about all the possible ways of including the client-side resources of Syncfusion EJ2 Components in an ASP.NET Core web application.
 
 ## From Content Delivery Network (CDN)
 
@@ -20,7 +20,7 @@ Improved website loading time, reduced bandwidth in website hosting, development
 
 ### Syncfusion EJ2 CDN
 
-Syncfusion hosts every EJ2 component as a separate node package in CDN, from which scripts and style sheets of the individual package can be loaded. Syncfusion also hosts a single node package with all EJ2 Components on it, from which scripts and style sheets of all the EJ2 components can be loaded as single script and style file. 
+Syncfusion hosts every EJ2 component as a separate node package in CDN, from which scripts and style sheets of the individual package can be loaded. Syncfusion also hosts a single node package with all EJ2 Components on it, from which scripts and style sheets of all the EJ2 components can be loaded as single script and style file.
 
 Here, the generic syntax of the Syncfusion EJ2 CDN URL for the both Individual EJ2 Component package and Complete EJ2 Component package has been explained.
 
@@ -104,15 +104,15 @@ Scripts and style sheets of Syncfusion EJ2 Components can be included in an ASP.
 
 #### Installing NPM packages in ASP.NET Core Web Application
 
-1. Open the Source Explorer and right click the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
+1. Open the Source Explorer and right click the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window.
 
     ![Add New Item Window](images/add-new-item.png)
 
-2. Select “**Web**” on the left side Tree View and select “**npm configuration File**” in “**Add New Item**” window which will include and configure “**package.json**” file in root folder of the ASP.NET Core web application. 
+2. Select “**Web**” on the left side Tree View and select “**npm configuration File**” in “**Add New Item**” window which will include and configure “**package.json**” file in root folder of the ASP.NET Core web application.
 
     ![Adding package.json](images/add-package-json.png)
 
-3. Open the Source Explorer and right click on the application name. Then, select “**Open Folder in File Explorer**”. 
+3. Open the Source Explorer and right click on the application name. Then, select “**Open Folder in File Explorer**”.
 
 4. Open the Command Prompt for this location and install the required Syncfusion packages using “**npm install @syncfusion/{PACKAGE_NAME} --save**”
 
@@ -135,7 +135,7 @@ By using either one of the following methods, Client-Side Resource can be loaded
 
 #### Copying by Gulp
 
-Install required Syncfusion EJ2 Component packages as mentioned in “[**Installing NPM Packages in ASP.NET Core Web Application**](#installing-npm-packages-in-aspnet-core-web-application)”. 
+Install required Syncfusion EJ2 Component packages as mentioned in “[**Installing NPM Packages in ASP.NET Core Web Application**](#installing-npm-packages-in-aspnet-core-web-application)”.
 
 1. In addition to Syncfusion EJ2 packages, install gulp and glob packages using below commands.
 
@@ -150,7 +150,7 @@ N>Gulp Installation - **npm install gulp --save**
 2. To set up the server, open Dependencies -> Manage NuGet Packages -> Browse. Then, search and install "**Microsoft.AspNetCore.StaticFiles**" and "**Microsoft.TypeScript.MSBuild**" packages.
 
     ![Install NuGet Packages](images/install-nuGet-package.png)
-     
+
 Open up your "**Startup.cs**" file and edit your Configure function to look like the below code snippet.
 
 ```js
@@ -166,13 +166,13 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 ```
 Restart Visual Studio for the red squiggly lines below "**UseDefaultFiles**" and "**UseStaticFiles**" to disappear.
 
-3. Open the Source Explorer and right click on the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
+3. Open the Source Explorer and right click on the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window.
 
 4. Select “**ASP.NET Core**” on the left side Tree View and select “**JavaScript File**” in the “**Add New Item**” window. It will include a js file in the root folder of the ASP.NET Core web application. Rename the js file as “**gulpfile.js**”.
 
     ![Add gulpjs file](images/add-gulpjs.png)
 
-5. Copy the following code snippet and paste it in gulpfile.js for automatically copying the script and styles from “**node_modules**” to “**wwwroot**” while building the web application. 
+5. Copy the following code snippet and paste it in gulpfile.js for automatically copying the script and styles from “**node_modules**” to “**wwwroot**” while building the web application.
 
 ```js
 /// <binding BeforeBuild='copy-client-resource'/>
@@ -199,7 +199,7 @@ gulp.task("copy-client-resource", function (done) {
 
     ![Copied to wwwroot](images/copied-to-wwwroot.png)
 
-7. Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion EJ2 Calendar has been loaded for example.  
+7. Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion EJ2 Calendar has been loaded for example.
 
 ```html
 <head>
@@ -222,26 +222,26 @@ gulp.task("copy-client-resource", function (done) {
 
 Syncfusion provides an online web tool named [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) to generate scripts (JavaScript ES5) and styles for needed EJ2 Components by selecting it from the list of Syncfusion EJ2 Component.
 
-1.	Detailed step-by-step information to generate scripts and styles for required EJ2 components can be found from [CRG Documentation](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator).
-2.	Generate and download the custom scripts and styles from CRG. 
-3.	Extract the downloaded custom scripts and styles into “**wwwroot**” folder of the ASP.NET Core Web Application. 
-4.	Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. 
+1.	Detailed step-by-step information to generate scripts and styles for required EJ2 components can be found from [CRG Documentation](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator).
+2.	Generate and download the custom scripts and styles from CRG.
+3.	Extract the downloaded custom scripts and styles into “**wwwroot**” folder of the ASP.NET Core Web Application.
+4.	Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`.
 
 ## Offline Setup with Syncfusion EJ2 Components
 
-This part of article provides information on setting up ASP.NET Core Web application development environment with Syncfusion Essential JS2 for ASP.NET Core without internet connection. Instead of having a well-connected internet, you may need to set up / start your application development in an isolated intranet to protect data from security attacks. 
+This part of article provides information on setting up ASP.NET Core Web application development environment with Syncfusion Essential JS2 for ASP.NET Core without internet connection. Instead of having a well-connected internet, you may need to set up / start your application development in an isolated intranet to protect data from security attacks.
 
 ### Downloading Client Side Resources of Essential JS 2 for ASP.NET Core
 
-The required script and style files could be downloaded either form npm packages or Custom Resource Generator (CRG) utilitity site. 
+The required script and style files could be downloaded either form npm packages or Custom Resource Generator (CRG) utilitity site.
 
 #### From NPM packages
 
 1. Run the below command from the machine which has internet connection to install the `@syncfusion/ej2` package.
    ```sh
-   npm i @syncfusion/ej2 
+   npm i @syncfusion/ej2
    ```
-2. Navigate to the `./node_modules/@syncfusion/ej2/dist/` then copy the `ej2.min.js` file to your desired location. 
+2. Navigate to the `./node_modules/@syncfusion/ej2/dist/` then copy the `ej2.min.js` file to your desired location.
 
    ![Offline Script](images/offline-script.png)
 
@@ -249,7 +249,7 @@ The required script and style files could be downloaded either form npm packages
 
    ![Offline Script](images/offline-style.png)
 
-4. Copy these script and style files to the machine which is connected to an isolated network. 
+4. Copy these script and style files to the machine which is connected to an isolated network.
 
 5. Then, navigate to `wwwroot` directory of  ASP.NET Core application and paste the copied files from `@syncfusion/ej2` package.
 
@@ -263,13 +263,13 @@ The required script and style files could be downloaded either form npm packages
 
 #### From Custom Resource Generator (CRG)
 
-From [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/), scripts and styles can be generated for the required Essential JS 2 for ASP.NET Core components by selecting from the component list to improve the performance.
+From [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator), scripts and styles can be generated for the required Essential JS 2 for ASP.NET Core components by selecting from the component list to improve the performance.
 
 1. Open the [CRG](https://crg.syncfusion.com/) utility site and select required component to generate the script and style files.
 
    ![Offline layout](images/offline-crg.png)
 
-2. Extract the downloaded script into `wwwroot` directory of the ASP.NET Core web application which is connected with isolated intranet.  
+2. Extract the downloaded script into `wwwroot` directory of the ASP.NET Core web application which is connected with isolated intranet.
 
    ![Offline layout](images/offline-wwwrootcrg.png)
 

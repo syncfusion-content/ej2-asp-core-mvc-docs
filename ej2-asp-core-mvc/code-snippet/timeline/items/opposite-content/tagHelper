@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Layouts;
+
+<div class="container" style="height:350px">
+    <ejs-timeline id="timeline">
+        <e-timeline-items>
+            <e-timeline-item content="Breakfast" oppositeContent="8:00 AM"></e-timeline-item>
+            <e-timeline-item content="Lunch" oppositeContent="1:00 PM"></e-timeline-item>
+            <e-timeline-item content="Dinner" oppositeContent="8:00 PM"></e-timeline-item>
+        </e-timeline-items>
+    </ejs-timeline>
+</div>

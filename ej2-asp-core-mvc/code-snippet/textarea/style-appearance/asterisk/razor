@@ -1,0 +1,13 @@
+<div class="control-section">
+    <div class="control_wrapper textarea-control-section">
+        @Html.EJS().TextArea("default").Placeholder("Enter your comments").FloatLabelType(FloatLabelType.Auto).Render()
+    </div>
+</div>
+
+<style>
+    /* To add asterick to float label in textarea */ 
+    .e-float-input.e-control-wrapper .e-float-text::after {
+        content: '*';
+        color: red;
+    }
+</style>

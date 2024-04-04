@@ -1,6 +1,6 @@
 <div id='dropArea'>
     <span id='drop' class="droparea"> Drop files here or <a href="" id='browse'><u>Browse</u></a> </span>
-    @Html.EJS().Uploader("UploadFiles").DropArea("#dropArea").Selected("onFileSelect").Progress("onFileUpload").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" }).AllowedExtensions("image/*").Success("onUploadSuccess").Removing("onFileRemove").Failure("onUploadFailed").Render()
+    @Html.EJS().Uploader("UploadFiles").DropArea("#dropArea").Selected("onFileSelect").Progress("onFileUpload").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save", RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).AllowedExtensions("image/*").Success("onUploadSuccess").Removing("onFileRemove").Failure("onUploadFailed").Render()
 </div>
 
 <script>

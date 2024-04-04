@@ -9,7 +9,11 @@ documentation: ug
 ---
 
 
-# Hilo in ##Platform_Name## Charts Component
+# Hilo in ASP.NET Core Charts Component
+
+To get started with the ASP.NET Core Hilo charts, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=O3akshh4BvM" %}
 
 ## Hilo
 

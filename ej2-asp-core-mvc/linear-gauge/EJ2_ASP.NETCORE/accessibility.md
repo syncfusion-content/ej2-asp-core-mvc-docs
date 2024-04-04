@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Linear Gauge Component
+title: Accessibility in Syncfusion ##Platform_Name## Linear Gauge component.
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Linear Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -11,23 +11,69 @@ documentation: ug
 
 # Accessibility in ASP.NET Core Linear Gauge
 
-<!-- markdownlint-disable MD013 -->
-Linear Gauge provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. The WAI-ARIA accessibility support is achieved through the attribute like `aria-label` in the SVG element. It helps to provide information about elements in a document for assistive technology. This attribute sets the text label with some default descriptions for the following elements in the Linear Gauge.
+The Linear Gauge component follows commonly used accessibility guidelines and standards, such as [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles).
 
-<!-- markdownlint-disable MD033 -->
-<table>
-<tr>
-<td><b>Element</b></td>
-<td><b>Default description</b></td>
-</tr>
-<tr>
-<td>Gauge title</td>
-<td>Specifies the title of the Linear Gauge.</td>
-</tr>
-<tr>
-<td>Pointer value</td>
-<td>Specifies the value of the pointer in the Linear Gauge.</td>
-</tr>
-</table>
+The accessibility compliance for the Linear Gauge component is outlined below.
 
-To change this default description, use the [`Description`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Description) property available in [`e-lineargauge-pointer`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_Description) and [`ejs-lineargauge`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Description). It helps the screen reader to read for an assistive purpose.
+| Accessibility Criteria | Compatibility |
+| -- | -- |
+| [WCAG 2.2 Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Section 508 Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Screen Reader Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Color Contrast](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Mobile Device Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Accessibility Checker Validation](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Axe-core Accessibility Validation](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+
+<style>
+    .post .post-content img {
+        display: inline-block;
+        margin: 0.5em 0;
+    }
+</style>
+
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
+
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+
+<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
+
+## WAI-ARIA attributes
+
+The Linear Gauge component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Linear Gauge component:
+
+| Attributes | Purpose |
+| --- | --- |
+| `role=region` | It is specified in the title and pointer. The pointer supports the interactive drag-and-drop function to update the pointer value. |
+| `aria-label`  | Provides an accessible name for the title, axis labels, text pointer and annotation. |
+
+## Screen reading in Linear Gauge
+
+Accessibility in the Linear Gauge component ensures that all users, regardless of ability or disability, can use screen reading. The following Linear Gauge elements will be read aloud using screen reading software, such as Narrator for Windows.
+
+| Elements | Description |
+| --- | --- |
+| Title | Reads the title of the Linear Gauge.|
+| Axis labels | Reads the axis labels of the Linear Gauge.|
+| Text pointer | Reads the text content shown as a pointer in Linear Gauge. |
+| Annotation | Reads the content specified in the annotation. |
+
+## Screen reading in Linear Gauge
+
+Accessibility in the Linear Gauge component ensures that all users, regardless of ability or disability, can use screen reading. The following Linear Gauge elements will be read aloud using screen reading software, such as Narrator for Windows.
+
+| Elements | Description |
+| --- | --- |
+| Axis labels | Reads the axis labels of the Linear Gauge.|
+| Text pointer | Reads the text content shown as a pointer in Linear Gauge. |
+| Annotation | Reads the content specified in the annotation. |
+
+## Ensuring accessibility
+
+The Linear Gauge component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+
+The accessibility compliance of the Linear Gauge component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/aspnet/accessibility/linear-gauge/default) in a new window to evaluate the accessibility of the Linear Gauge component with accessibility tools.
+
+## See also
+
+* [Accessibility in Syncfusion ASP.NET Core components](../common/accessibility)

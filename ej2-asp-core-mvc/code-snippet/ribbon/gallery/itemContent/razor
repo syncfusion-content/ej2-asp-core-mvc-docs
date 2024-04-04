@@ -1,0 +1,58 @@
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+  List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge Format" }, new MenuItem { Text = "Keep Text Only" } };
+}
+
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+  tab.Header("Home").Groups(group =>
+
+  {
+    group.Id("clipboard").Header("Clipboard").GroupIconCss("e-icons e-paste").Collections(collection =>
+    {
+      collection.Items(items =>
+      {
+        items.Type(RibbonItemType.SplitButton).Id("pastebtn").AllowedSizes(RibbonItemSize.Large).SplitButtonSettings(splitButton =>
+        {
+          splitButton.IconCss("e-icons e-paste").Items(pasteOptions).Content("Paste");
+        }).Add();
+      }).Add();
+      collection.Items(items =>
+      {
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-cut").Content("Cut");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-copy").Content("Copy");
+        }).Add();
+        items.Type(RibbonItemType.Button).ButtonSettings(button =>
+        {
+          button.IconCss("e-icons e-format-painter").Content("Format Painter");
+        }).Add();
+      }).Add();
+    }).Add();
+    group.Header("Gallery").Collections(collections =>
+    {
+      collections.Items(items =>
+      {
+        items.Type(RibbonItemType.Gallery).GallerySettings(gallery =>
+        {
+          gallery.Groups(galleryGroups =>
+          {
+            galleryGroups.Header("Styles").Items(galleryItems =>
+            {
+              galleryItems.Content("Normal").Add();
+              galleryItems.Content("No Spacing").Add();
+              galleryItems.Content("Heading 1").Add();
+              galleryItems.Content("Heading 2").Add();
+            }).Add();
+          });
+        }).Add();
+      }).Add();
+    }).Add();
+  }).Add();
+}).Render()

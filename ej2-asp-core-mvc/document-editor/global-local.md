@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Global Local in ##Platform_Name## Document Editor Component
+title: Global Local in Syncfusion ##Platform_Name## Document Editor Component
 description: Learn here all about Global Local in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Global Local
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Globalization
+# Globalization in Document Editor Component
 
 ## Localization
 
-The [`Localization`](../common/localization/) library allows to localize default text content of the DocumentEditor. The document editor component has static text on some features (like find & replace, context-menu, dialogs) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the locale value and translation object. Refer the sample link [RTL](https://ej2.syncfusion.com/aspnetcore/DocumentEditor/RightToLeft#/material).
+The [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library allows to localize default text content of the DocumentEditor. The document editor component has static text on some features (like find & replace, context-menu, dialogs) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the locale value and translation object. Refer the sample link [RTL](https://ej2.syncfusion.com/aspnetcore/DocumentEditor/RightToLeft#/material).
 
 N> Refer the [Locale](https://github.com/syncfusion/ej2-locale).
 

@@ -1,0 +1,6 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>
+        <ejs-autocomplete id="records" dataSource="@ViewBag.data" placeholder="e.g. Item 1" allowFiltering="true" value="@ViewBag.value" popupheight="200px">
+        </ejs-autocomplete>
+    </div>
+</div>
