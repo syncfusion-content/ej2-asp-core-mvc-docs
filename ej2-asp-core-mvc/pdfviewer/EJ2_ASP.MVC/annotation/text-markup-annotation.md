@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Markup Annotation in ##Platform_Name## Pdfviewer Component
+title: Text Markup Annotation in ##Platform_Name## Pdfviewer Component | Syncfusion
 description: Learn here all about text markup annotation in Syncfusion Essential ##Platform_Name## Pdfviewer component, it's elements and more.
 platform: ej2-asp-core-mvc
 control: Text Markup Annotation
