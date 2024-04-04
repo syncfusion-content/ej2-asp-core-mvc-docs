@@ -216,7 +216,7 @@ The following sample showcases how to customize a specific dropdown item.
 
 #### Create Dropdown Popup on Demand
 
-The [createPopupOnClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_CreatePopupOnClick) property allows you to have control over popup creation. When you set it to `true`, the popup is created only when you open it. By default, it's set to `false`.
+You can handle the creation of popups, by using the [createPopupOnClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_CreatePopupOnClick) property. If set to `true`, the popup will only be created upon opening. By default the value is `false`.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
