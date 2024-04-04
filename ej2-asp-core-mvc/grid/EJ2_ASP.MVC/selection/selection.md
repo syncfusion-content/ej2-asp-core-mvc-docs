@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Grid Component
+title: Selection in ##Platform_Name## Grid Component | Syncfusion
 description: Learn here all about Selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -79,12 +79,12 @@ The grid supports three types of selection mode that can be set by using the [`M
 ## Touch interaction
 
 When you tap a grid row on touchscreen device, the tapped row is selected. It also shows a popup 
-![selection](images/selection.jpg) 
+![Selection in ASP.NET MVC Grid.](../../images/aspnet-mvc-grid-selection.jpg) 
 for multi-row selection. To select multiple rows or cells, tap the popup
-![mselection](images/mselection.jpg)  and then tap the desired rows or cells.
+![Multiple selection in ASP.NET MVC Grid.](../../images/aspnet-mvc-grid-multiple-row-selection.jpg)  and then tap the desired rows or cells.
 
 N> Multi-selection requires the selection `Type` to be `Multiple`.
 
 The following screenshot represents a grid touch selection in the device.
 
-![Touch interaction](images/touch-selection.jpg)
+![Touch interaction in ASP.NET MVC Grid.](../../images/aspnet-mvc-grid-touch-selection.jpg)
