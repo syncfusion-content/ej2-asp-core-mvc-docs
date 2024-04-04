@@ -8,7 +8,7 @@
             var record = {
                 TaskId: 10,
                 TaskName: 'Newly Added Record',
-                StartDate: new Date('04/02/2019'),
+                StartDate: new Date('04/02/2024'),
                 Duration: 3,
                 Progress: 50
             };

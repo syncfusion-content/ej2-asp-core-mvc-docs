@@ -23,8 +23,8 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 1,
                 TaskName = "Product concept",
-                StartDate = new DateTime(2019, 04, 02),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 02),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
 
@@ -32,7 +32,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 2,
                 TaskName = "Defining the product and its usage",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Progress = 30,
                 Duration = 3,
             };
@@ -41,7 +41,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 3,
                 TaskName = "Defining target audience",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 3,
             };
 
@@ -49,7 +49,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 4,
                 TaskName = "Prepare product sketch and notes",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Progress = 30,
                 Duration = 2,
                 Predecessor = "2"
@@ -62,11 +62,11 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 5,
                 TaskName = "Concept approval",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 0,
                 Predecessor = "3, 4",
                 Indicators = new List<IndicatorsModel>() {
-                    new IndicatorsModel() { date = "04/10/2019", name= "Design Phase", tooltip="Design phase completed", iconClass="okIcon e-icons" }
+                    new IndicatorsModel() { date = "04/10/2024", name= "Design Phase", tooltip="Design phase completed", iconClass="okIcon e-icons" }
                 }
             };
 
@@ -74,8 +74,8 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 6,
                 TaskName = "Market research",
-                StartDate = new DateTime(2019, 04, 02),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 02),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
 
@@ -83,8 +83,8 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 7,
                 TaskName = "Demand analysis",
-                StartDate = new DateTime(2019, 04, 04),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 04),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
 
@@ -92,7 +92,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 8,
                 TaskName = "Customer strength",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Predecessor = "5",
                 Progress = 30
@@ -102,7 +102,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 9,
                 TaskName = "Market opportunity analysis",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Predecessor = "5",
             };
@@ -113,7 +113,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 10,
                 TaskName = "Competitor analysis",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Predecessor = "7, 8",
                 Progress = 30,
@@ -122,7 +122,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 11,
                 TaskName = "Product strength analsysis",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Predecessor = "9",
             };
@@ -130,11 +130,11 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 12,
                 TaskName = "Research complete",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 0,
                 Predecessor = "10",
                 Indicators = new List<IndicatorsModel>() {
-                    new IndicatorsModel() { date = "04/20/2019", name= "Research completed", tooltip="Research completed", iconClass="description e-icons" }
+                    new IndicatorsModel() { date = "04/20/2024", name= "Research completed", tooltip="Research completed", iconClass="description e-icons" }
                 }
             };
             Record3.SubTasks.Add(Record6Child1);
@@ -146,15 +146,15 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 13,
                 TaskName = "Product design and development",
-                StartDate = new DateTime(2019, 04, 04),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 04),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Record13Child1 = new GanttDataSource()
             {
                 TaskId = 14,
                 TaskName = "Functionality design",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 3,
                 Progress = 30,
                 Predecessor = "12"
@@ -163,7 +163,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 15,
                 TaskName = "Quality design",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 3,
                 Predecessor = "12"
             };
@@ -171,7 +171,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 16,
                 TaskName = "Define reliability",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 2,
                 Progress = 30,
                 Predecessor = "15"
@@ -180,7 +180,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 17,
                 TaskName = "Identifying raw materials",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 2,
                 Predecessor = "15"
             };
@@ -188,15 +188,15 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 18,
                 TaskName = "Define cost plan",
-                StartDate = new DateTime(2019, 04, 04),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 04),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Record18Child1 = new GanttDataSource()
             {
                 TaskId = 19,
                 TaskName = "Manufacturing cost",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 2,
                 Predecessor = "17",
                 Progress = 30
@@ -205,7 +205,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 20,
                 TaskName = "Selling cost",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 2,
                 Predecessor = "17",
             };
@@ -216,15 +216,15 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 21,
                 TaskName = "Development of the final design",
-                StartDate = new DateTime(2019, 04, 04),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 04),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Record21Child1 = new GanttDataSource()
             {
                 TaskId = 22,
                 TaskName = "Defining dimensions and package volume",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 2,
                 Predecessor = "19, 20",
                 Progress = 30
@@ -233,7 +233,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 23,
                 TaskName = "Develop design to meet industry standards",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 2,
                 Predecessor = "22",
             };
@@ -241,7 +241,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 24,
                 TaskName = "Include all the details",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 3,
                 Predecessor = "23",
             };
@@ -252,7 +252,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 25,
                 TaskName = "CAD Computer-aided design",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 3,
                 Progress = 30,
                 Predecessor = "24"
@@ -261,7 +261,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 26,
                 TaskName = "CAM Computer-aided manufacturing",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 3,
                 Predecessor = "25"
             };
@@ -269,7 +269,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 27,
                 TaskName = "Design complete",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 0,
                 Predecessor = "26",
             };
@@ -277,7 +277,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 28,
                 TaskName = "Prototype testing",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Progress = 30,
                 Predecessor = "27"
@@ -286,18 +286,18 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 29,
                 TaskName = "Include feedback",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Predecessor = "28ss",
                 Indicators = new List<IndicatorsModel>() {
-                    new IndicatorsModel() { date = "05/24/2019", name= "Production phase", tooltip="Production phase completed", iconClass="okIcon e-icons" }
+                    new IndicatorsModel() { date = "05/24/2024", name= "Production phase", tooltip="Production phase completed", iconClass="okIcon e-icons" }
                 }
             };
             GanttDataSource Record7 = new GanttDataSource()
             {
                 TaskId = 30,
                 TaskName = "Manufacturing",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 5,
                 Progress = 30,
                 Predecessor = "28, 29"
@@ -306,7 +306,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 31,
                 TaskName = "Assembling materials to finsihed goods",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 5,
                 Predecessor = "30"
             };
@@ -324,15 +324,15 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 32,
                 TaskName = "Feedback and testing",
-                StartDate = new DateTime(2019, 04, 04),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 04),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Record9Child1 = new GanttDataSource()
             {
                 TaskId = 33,
                 TaskName = "Internal testing and feedback",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 3,
                 Progress = 45,
                 Predecessor = "31",
@@ -341,7 +341,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 34,
                 TaskName = "Customer testing and feedback",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 3,
                 Progress = 50,
                 Predecessor = "33",
@@ -352,15 +352,15 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 35,
                 TaskName = "Final product development",
-                StartDate = new DateTime(2019, 04, 04),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 04),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Record10Child1 = new GanttDataSource()
             {
                 TaskId = 36,
                 TaskName = "Important improvements",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Progress = 30,
                 Predecessor = "34",
@@ -369,12 +369,12 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 37,
                 TaskName = "Address any unforeseen issues",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Progress = 30,
                 Predecessor = "36ss",
                 Indicators = new List<IndicatorsModel>() {
-                    new IndicatorsModel() { date = "06/21/2019", name= "Sales and marketing", tooltip="Sales and marketing", iconClass="description e-icons" }
+                    new IndicatorsModel() { date = "06/21/2024", name= "Sales and marketing", tooltip="Sales and marketing", iconClass="description e-icons" }
                 }
             };
             Record10.SubTasks.Add(Record10Child1);
@@ -383,15 +383,15 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 38,
                 TaskName = "Final product",
-                StartDate = new DateTime(2019, 04, 04),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 04),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Record11Child1 = new GanttDataSource()
             {
                 TaskId = 39,
                 TaskName = "Branding product",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Predecessor = "37",
             };
@@ -399,7 +399,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 40,
                 TaskName = "Marketing and presales",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Progress = 30,
                 Predecessor = "39",

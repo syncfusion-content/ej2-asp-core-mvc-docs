@@ -678,15 +678,15 @@ GanttDataSource Record2Child1 = new GanttDataSource()
             {
                 TaskId = 3,
                 TaskName = "Plan timeline",
-                StartDate = new DateTime(2019, 02, 04),
-                EndDate = new DateTime(2019, 02, 10),
+                StartDate = new DateTime(2024, 02, 04),
+                EndDate = new DateTime(2024, 02, 10),
                 Duration = 10,
                 Progress = 60,
                 Segments = new List<GanttSegment>
                 {
-                    new GanttSegment {StartDate = new DateTime(2019,02,04), Duration = 2},
-                    new GanttSegment {StartDate = new DateTime(2019,02,05), Duration = 5},
-                    new GanttSegment {StartDate = new DateTime(2019,02,08), Duration = 3}
+                    new GanttSegment {StartDate = new DateTime(2024,02,04), Duration = 2},
+                    new GanttSegment {StartDate = new DateTime(2024,02,05), Duration = 5},
+                    new GanttSegment {StartDate = new DateTime(2024,02,08), Duration = 3}
                 }
             };
 
@@ -729,7 +729,7 @@ We can also define segment details as a flat data and this collection can be map
             {
                 segmentId = 2,
                 Duration = 2,
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
             };
 
 ```

@@ -1,6 +1,6 @@
 @(Html.EJS().Gantt("GanttContainer1").DataSource((IEnumerable<object>)ViewBag.FirstData).Height("280px").AllowExcelExport(true).TaskFields(ts => 
 ts.Id("TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Toolbar(new List<string>() { 
-    "ExcelExport" }).ToolbarClick("toolbarClick").TreeColumnIndex(1).ProjectStartDate("03/31/2019").ProjectEndDate("04/14/2019").Render())
+    "ExcelExport" }).ToolbarClick("toolbarClick").TreeColumnIndex(1).ProjectStartDate("03/31/2024").ProjectEndDate("04/14/2024").Render())
 
 @(Html.EJS().Gantt("GanttContainer2").DataSource((IEnumerable<object>)ViewBag.FirstData).Height("250px").AllowExcelExport(true)
     .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks"))

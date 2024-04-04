@@ -5,7 +5,7 @@
     @Html.EJS().Gantt("DefaultFunctionalities").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
      ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency(
          "Predecessor").Child("SubTasks")).LabelSettings(ls => ls.LeftLabel("TaskName")).ProjectStartDate(
-             "03/24/2019").ProjectEndDate("04/28/2019").Render()
+             "03/24/2024").ProjectEndDate("04/28/2024").Render()
 			  
 <script>
     var ganttObj = document.getElementById('GanttZooming').ej2_instances[0];

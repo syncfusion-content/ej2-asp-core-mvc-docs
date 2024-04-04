@@ -17,21 +17,21 @@ public IActionResult Index()
             {
                 TaskId = 2,
                 TaskName = "Identify site location",
-                StartDate = new DateTime(2019, 04, 02)
+                StartDate = new DateTime(2024, 04, 02)
             });
             GanttDataSourceCollection.Add(new GanttDataSource()
             {
                 TaskId = 3,
                 TaskName = "Perform soil test",
-                EndDate = new DateTime(2019, 04, 08)
+                EndDate = new DateTime(2024, 04, 08)
             });
 
             GanttDataSourceCollection.Add(new GanttDataSource()
             {
                 TaskId = 4,
                 TaskName = "Soil test approval",
-                StartDate = new DateTime(2019, 04, 02),
-                EndDate = new DateTime(2019, 04, 06),
+                StartDate = new DateTime(2024, 04, 02),
+                EndDate = new DateTime(2024, 04, 06),
                 Progress=50
             });
             GanttDataSourceCollection.Add(new GanttDataSource()

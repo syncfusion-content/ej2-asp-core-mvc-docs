@@ -10,7 +10,7 @@
                                         "StartDate").BaselineStartDate("BaselineStartDate").BaselineEndDate("BaselineEndDate").Duration("Duration"
                                         ).Progress("Progress").EndDate("EndDate").Child("SubTasks")).EventMarkers(em =>
                         {
-                            em.Day("04/10/2019").Label("Project approval and kick-off").CssClass("e-custom-event-marker").Add();
+                            em.Day("04/10/2024").Label("Project approval and kick-off").CssClass("e-custom-event-marker").Add();
                         }).Render()
 
         

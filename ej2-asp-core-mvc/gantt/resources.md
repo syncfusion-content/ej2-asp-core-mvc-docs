@@ -67,7 +67,7 @@ GanttDataSource Child1 = new GanttDataSource()
             {
                 TaskId = 2,
                 TaskName = "Identify site location",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 4,
                 Progress = 50,
                 ResourceId = new int[] { 1 },
@@ -85,7 +85,7 @@ GanttDataSource Record1Child1 = new GanttDataSource()
             {
                 TaskId = 2,
                 TaskName = "Identify Site location",
-                StartDate = new DateTime(2019, 03, 29),
+                StartDate = new DateTime(2024, 03, 29),
                 Duration = 2,
                 Progress = 30,
                 Work = 10,

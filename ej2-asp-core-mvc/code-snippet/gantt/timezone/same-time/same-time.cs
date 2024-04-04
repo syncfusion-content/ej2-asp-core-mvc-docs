@@ -12,23 +12,23 @@ public IActionResult Index()
             {
                 TaskId = 1,
                 TaskName = "Project schedule",
-                StartDate = new DateTime(2019, 02, 04, 08, 00, 00),
-                EndDate = new DateTime(2019, 03, 10)
+                StartDate = new DateTime(2024, 02, 04, 08, 00, 00),
+                EndDate = new DateTime(2024, 03, 10)
             };
             GanttDataSource Record2 = new GanttDataSource()
             {
                 TaskId = 2,
                 TaskName = "Planning",
-                StartDate = new DateTime(2019, 02, 04, 08, 00, 00),
-                EndDate = new DateTime(2019, 02, 10),
+                StartDate = new DateTime(2024, 02, 04, 08, 00, 00),
+                EndDate = new DateTime(2024, 02, 10),
                 ParentID = 1
             };
             GanttDataSource Record3 = new GanttDataSource()
             {
                 TaskId = 3,
                 TaskName = "Plan timeline",
-                StartDate = new DateTime(2019, 02, 04, 08, 00, 00),
-                EndDate = new DateTime(2019, 02, 10),
+                StartDate = new DateTime(2024, 02, 04, 08, 00, 00),
+                EndDate = new DateTime(2024, 02, 10),
                 Duration = 6,
                 Progress = 60,
                 ParentID = 2
@@ -37,8 +37,8 @@ public IActionResult Index()
             {
                 TaskId = 4,
                 TaskName = "Plan budget",
-                StartDate = new DateTime(2019, 02, 04, 08, 00, 00),
-                EndDate = new DateTime(2019, 02, 10),
+                StartDate = new DateTime(2024, 02, 04, 08, 00, 00),
+                EndDate = new DateTime(2024, 02, 10),
                 Duration = 6,
                 Progress = 90,
                 ParentID = 2
@@ -47,8 +47,8 @@ public IActionResult Index()
             {
                 TaskId = 5,
                 TaskName = "Allocate resources",
-                StartDate = new DateTime(2019, 02, 04, 08, 00, 00),
-                EndDate = new DateTime(2019, 02, 10),
+                StartDate = new DateTime(2024, 02, 04, 08, 00, 00),
+                EndDate = new DateTime(2024, 02, 10),
                 Duration = 6,
                 Progress = 75,
                 ParentID = 2
@@ -57,8 +57,8 @@ public IActionResult Index()
             {
                 TaskId = 6,
                 TaskName = "Planning complete",
-                StartDate = new DateTime(2019, 02, 06, 08, 00, 00),
-                EndDate = new DateTime(2019, 02, 10),
+                StartDate = new DateTime(2024, 02, 06, 08, 00, 00),
+                EndDate = new DateTime(2024, 02, 10),
                 Duration = 0,
                 Predecessor = "3, 4, 5",
                 ParentID = 2
@@ -67,16 +67,16 @@ public IActionResult Index()
             {
                 TaskId = 7,
                 TaskName = "Design",
-                StartDate = new DateTime(2019, 02, 13, 08, 00, 00),
-                EndDate = new DateTime(2019, 02, 17),
+                StartDate = new DateTime(2024, 02, 13, 08, 00, 00),
+                EndDate = new DateTime(2024, 02, 17),
                 ParentID = 1
             };
             GanttDataSource Record8 = new GanttDataSource()
             {
                 TaskId = 8,
                 TaskName = "Software specification",
-                StartDate = new DateTime(2019, 02, 13, 08, 00, 00),
-                EndDate = new DateTime(2019, 02, 15),
+                StartDate = new DateTime(2024, 02, 13, 08, 00, 00),
+                EndDate = new DateTime(2024, 02, 15),
                 Duration = 3,
                 Progress = 60,
                 Predecessor = "6",
@@ -86,8 +86,8 @@ public IActionResult Index()
             {
                 TaskId = 9,
                 TaskName = "Develop prototype",
-                StartDate = new DateTime(2019, 02, 13, 08, 00, 00),
-                EndDate = new DateTime(2019, 02, 15),
+                StartDate = new DateTime(2024, 02, 13, 08, 00, 00),
+                EndDate = new DateTime(2024, 02, 15),
                 Duration = 3,
                 Progress = 100,
                 Predecessor = "6",
@@ -97,8 +97,8 @@ public IActionResult Index()
             {
                 TaskId = 10,
                 TaskName = "Get approval from customer",
-                StartDate = new DateTime(2019, 02, 16, 08, 00, 00),
-                EndDate = new DateTime(2019, 02, 17),
+                StartDate = new DateTime(2024, 02, 16, 08, 00, 00),
+                EndDate = new DateTime(2024, 02, 17),
                 Duration = 2,
                 Progress = 100,
                 Predecessor = "9",
@@ -108,8 +108,8 @@ public IActionResult Index()
             {
                 TaskId = 11,
                 TaskName = "Design complete",
-                StartDate = new DateTime(2019, 02, 17, 08, 00, 00),
-                EndDate = new DateTime(2019, 02, 17),
+                StartDate = new DateTime(2024, 02, 17, 08, 00, 00),
+                EndDate = new DateTime(2024, 02, 17),
                 Duration = 0,
                 Predecessor = "10",
                 ParentID = 7

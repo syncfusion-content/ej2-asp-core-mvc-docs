@@ -22,15 +22,15 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 1,
                 TaskName = "Project initiation",
-                StartDate = new DateTime(2019, 03, 29),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 03, 29),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Record1Child1 = new GanttDataSource()
             {
                 TaskId = 2,
                 TaskName = "Identify Site location",
-                StartDate = new DateTime(2019, 03, 29),
+                StartDate = new DateTime(2024, 03, 29),
                 Duration = 2,
                 Progress = 30,
                 Work = 10,
@@ -43,7 +43,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 3,
                 TaskName = "Perform soil test",
-                StartDate = new DateTime(2019, 03, 29),
+                StartDate = new DateTime(2024, 03, 29),
                 Duration = 4,
                 Progress = 30,
                 Work = 20,
@@ -56,7 +56,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 4,
                 TaskName = "Soil test approval",
-                StartDate = new DateTime(2019, 03, 29),
+                StartDate = new DateTime(2024, 03, 29),
                 Duration = 1,
                 Progress = 30,
                 Work = 10,
@@ -74,15 +74,15 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 5,
                 TaskName = "Project estimation",
-                StartDate = new DateTime(2019, 03, 29),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 03, 29),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Record2Child1 = new GanttDataSource()
             {
                 TaskId = 6,
                 TaskName = "Develop floor plan for estimation",
-                StartDate = new DateTime(2019, 03, 29),
+                StartDate = new DateTime(2024, 03, 29),
                 Duration = 3,
                 Progress = 30,
                 Work = 30,
@@ -96,7 +96,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 7,
                 TaskName = "List materials",
-                StartDate = new DateTime(2019, 04, 01),
+                StartDate = new DateTime(2024, 04, 01),
                 Duration = 3,
                 Progress = 30,
                 Work = 40,
@@ -109,7 +109,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 8,
                 TaskName = "Estimation approval",
-                StartDate = new DateTime(2019, 04, 01),
+                StartDate = new DateTime(2024, 04, 01),
                 Duration = 2,
                 Progress = 30,
                 Work = 60,
@@ -126,7 +126,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 9,
                 TaskName = "Sign contract",
-                StartDate = new DateTime(2019, 04, 01),
+                StartDate = new DateTime(2024, 04, 01),
                 Duration = 1,
                 Progress = 30,
             };

@@ -2,7 +2,7 @@
                 <ejs-button id="zoomOut" content="ZoomOut" cssClass="e-primary"></ejs-button>
                 <ejs-button id="fitToProject" content="FitToProject" cssClass="e-primary"></ejs-button>
                 <ejs-gantt id='GanttZooming' dataSource="ViewBag.dataSource" height="450px"
-                           projectStartDate="03/24/2019" projectEndDate="04/28/2019">
+                           projectStartDate="03/24/2024" projectEndDate="04/28/2024">
                     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress"
                                         dependency="Predecessor" child="SubTasks">
                     </e-gantt-taskfields>
