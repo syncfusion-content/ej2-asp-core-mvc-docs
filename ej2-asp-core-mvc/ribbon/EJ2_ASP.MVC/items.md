@@ -504,7 +504,14 @@ You can customize the ribbon items with non-built-in items or HTML content by se
 {
     tab.Header("Home").Groups(group =>
     {
-        group.Header("View").Collections(collection =>
+        group.Header("Templates").IsCollapsible(false).Collections(collection =>
+        {
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.Template).ItemTemplate("<div class="custom-template ${activeSize}"><label for="fname">First name:</label><input type="text" id="fname" name="fname"/><br/><br/><label for="lname">Last name:</label><input type="text" id="lname" name="lname"></div>").Add();
+            }).Add();
+        }).Add();
+        group.Header("Multimedia").Collections(collection =>
         {
             collection.Items(item =>
             {
@@ -539,6 +546,20 @@ You can customize the ribbon items with non-built-in items or HTML content by se
 
         .ribbonTemplate.Small .text {
             display: none;
+        }
+
+        .custom-template input {
+            margin-left: 10px;
+            width: 100px;
+        }
+        
+        .custom-template.Medium {
+            display: flex;
+            align-items: center;
+        }
+        .custom-template.Medium input {
+            height: 14px;
+            margin-right: 10px;
         }
 </style >
 
