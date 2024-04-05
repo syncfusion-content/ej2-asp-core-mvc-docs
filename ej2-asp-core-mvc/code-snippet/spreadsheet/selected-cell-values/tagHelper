@@ -24,7 +24,7 @@
         // Get the collection of selected cell values by using the getData() method.
         spreadsheet.getData(range).then((cells) => {
             cells.forEach((cell) => {
-                vlaueObject.push(cell.value);
+                vlaueObject.push(isNullOrUndefined(cell.value) ? '' : cell.value);
             });
         console.log("Collection of selected cell values:", vlaueObject);
         });
