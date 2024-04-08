@@ -1540,7 +1540,7 @@ The following code example explains how to update the ListBox field properties o
     function updateProperties() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         var formField = viewer.retrieveFormFields();
-        const customOptions = [
+         customOptions = [
             { itemName: 'item1', itemValue: 'item1' },
             { itemName: 'item2', itemValue: 'item2' },
             { itemName: 'item3', itemValue: 'item3' }
