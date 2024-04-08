@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Buttons
+
+<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
+    @Html.EJS().SpeedDial("speeddial").Target("#target").OpenIconCss("e-icons e-edit").CloseIconCss("e-icons e-close").CssClass("custom-css").Items(ViewBag.datasource).Render()
+</div>
+
+<style>
+    .custom-css .e-btn-icon {
+        color: black;
+    }
+</style>
