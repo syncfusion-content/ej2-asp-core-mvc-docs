@@ -66,3 +66,19 @@ By using [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% endif %}
 
 ![Asp.Net Core Floating Action Button control with Hover](images/onhover.png)
+
+## Customized outlines
+
+By using the [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_CssClass) property, you can customize the outline of the Floating Action Button, providing increased flexibility to adjust its appearance according to your preferences.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/floating-action-button/styles/custom-outline/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+![Asp.Net Core Floating Action Button control with Outline](images/FabOutline.png)
