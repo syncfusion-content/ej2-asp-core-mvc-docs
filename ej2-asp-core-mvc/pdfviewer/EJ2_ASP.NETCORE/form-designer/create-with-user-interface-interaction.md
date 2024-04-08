@@ -4,7 +4,7 @@ title: User Interface Interaction in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
 description: Learn here all about User Interface Interaction in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create With User Interface Interaction
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

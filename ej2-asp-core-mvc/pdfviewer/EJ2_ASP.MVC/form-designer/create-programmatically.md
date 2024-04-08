@@ -4,7 +4,7 @@ title: Create Programmatically in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 description: Learn here all about Create Programmatically in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Programmatically
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -69,7 +69,7 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
        function documentLoad() {
             var viewer = document.getElementById('pdfviewer').ej2_instances[0];
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
+            viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
             viewer.formDesignerModule.updateFormField(pdfviewer.formFieldCollections[0], { backgroundColor: 'red' });
        }
     </script>
@@ -85,7 +85,7 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
        function documentLoad() {
             var viewer = document.getElementById('pdfviewer').ej2_instances[0];
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
+            viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
             viewer.formDesignerModule.updateFormField(pdfviewer.formFieldCollections[0], { backgroundColor: 'red' });
        }
     </script>
@@ -107,7 +107,7 @@ Using deleteFormField method, the form field can be deleted programmatically. We
        function documentLoad() {
             var viewer = document.getElementById('pdfviewer').ej2_instances[0];
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150,Height: 24 } });
+            viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 300, Y: 229, Width: 150,Height: 24 } });
             viewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0]);
            }
     </script>
@@ -123,7 +123,7 @@ Using deleteFormField method, the form field can be deleted programmatically. We
        function documentLoad() {
             var viewer = document.getElementById('pdfviewer').ej2_instances[0];
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150,Height: 24 } });
+            viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 300, Y: 229, Width: 150,Height: 24 } });
             viewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0]);
            }
     </script>
@@ -234,7 +234,7 @@ Add the following code snippet to validate the form fields,
 </div>
 <script>
     function validateFormFields(args) {
-        var nonfilledFormFields = args.nonFillableFields;
+        var non_filledFormFields = args.nonFillableFields;
     }
 </script>
 
@@ -247,7 +247,7 @@ Add the following code snippet to validate the form fields,
 </div>
 <script>
     function validateFormFields(args) {
-        var nonfilledFormFields = args.nonFillableFields;
+        var non_filledFormFields = args.nonFillableFields;
     }
 </script>
 
@@ -1292,7 +1292,7 @@ The following code example explains how to update the properties of the listbox 
 
 window.onload = function () {
     var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-    const customOptions = [
+    var customOptions = [
         { itemName: 'item1', itemValue: 'item1' },
         { itemName: 'item2', itemValue: 'item2' },
         { itemName: 'item3', itemValue: 'item3' }
@@ -1358,7 +1358,7 @@ The following code example explains how to update the DropDown field properties 
     function updateProperties() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         var formField = viewer.retrieveFormFields();
-        const customOptions = [
+        var customOptions = [
             { itemName: 'item1', itemValue: 'item1' },
             { itemName: 'item2', itemValue: 'item2' },
             { itemName: 'item3', itemValue: 'item3' }
