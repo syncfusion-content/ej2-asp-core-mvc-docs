@@ -223,7 +223,7 @@ You can invoke download action using following code snippet.
 
 When the print icon is selected on the toolbar, the PDF document will be printed along with the Form Fields added to the pages and this action will not affect the original document. Refer the below GIF for further reference.
 
-![Alt text](../../../pdfviewer/images/printformfield.gif)
+![Alt text](../../pdfviewer/images/printformfield.gif)
 
 You can invoke print action using the following code snippet.,
 
@@ -272,7 +272,7 @@ You can invoke print action using the following code snippet.,
 
 We can open the already saved PDF document contains Form Fields in it by clicking the open icon in the toolbar. Refer the below GIF for further reference.
 
-![Alt text](../../../pdfviewer/images/openexistingpdf.gif)
+![Alt text](../../pdfviewer/images/openexistingpdf.gif)
 
 ## Validate form fields
 
@@ -677,7 +677,7 @@ The following code example explains how to update the properties of the signatur
 {% endtabs %}
 
 
-![Signature Field Settings](../../../pdfviewer/images/signature_field.png)
+![Signature Field Settings](../../pdfviewer/images/signature_field.png)
 
 The following code example explains how to update the properties of the initial field added to the document from the form designer toolbar.
 
@@ -714,7 +714,7 @@ window.onload = function () {
 
 </script>
 
-![Initial Field Settings](../../../pdfviewer/images/initialfield.png)
+![Initial Field Settings](../../pdfviewer/images/initialfield.png)
 
 ### Textbox field settings
 
@@ -923,7 +923,7 @@ The following code example explains how to update the properties of the textbox 
 {% endhighlight %}
 {% endtabs %}
 
-![Textbox Field Settings](../../../pdfviewer/images/Textbox.png)
+![Textbox Field Settings](../../pdfviewer/images/Textbox.png)
 
 ### Password field settings
 
@@ -1129,7 +1129,7 @@ The following code example explains how to update the properties of the password
 {% endtabs %}
 
 
-![Password Field Settings](../../../pdfviewer/images/Password.png)
+![Password Field Settings](../../pdfviewer/images/Password.png)
 
 ### CheckBox field settings
 
@@ -1299,7 +1299,7 @@ The following code example explains how to update the properties of the CheckBox
 {% endhighlight %}
 {% endtabs %}
 
-![CheckBox Field Settings](../../../pdfviewer/images/Checkbox.png)
+![CheckBox Field Settings](../../pdfviewer/images/Checkbox.png)
 
 ### RadioButton field settings
 
@@ -1471,7 +1471,7 @@ The following code example explains how to update the properties of the RadioBut
 {% endtabs %}
 
 
-![RadioButton Field Settings](../../../pdfviewer/images/Radiobutton.png)
+![RadioButton Field Settings](../../pdfviewer/images/Radiobutton.png)
 
 ### ListBox field settings
 
@@ -1693,7 +1693,7 @@ The following code example explains how to update the properties of the ListBox 
 {% endtabs %}
 
 
-![ListBox Field Settings](../../../pdfviewer/images/Listbox.png)
+![ListBox Field Settings](../../pdfviewer/images/Listbox.png)
 
 ### DropDown field settings
 
@@ -1913,4 +1913,4 @@ The following code example explains how to update the properties of the dropdown
 {% endhighlight %}
 {% endtabs %}
 
-![DropDownBox Field Settings](../../../pdfviewer/images/Dropdown.png)
+![DropDownBox Field Settings](../../pdfviewer/images/Dropdown.png)
