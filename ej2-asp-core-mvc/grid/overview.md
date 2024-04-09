@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview of Grid Control
 
 The Grid component is used to display and manipulate tabular data with configuration options to control the way the data is presented. It can pull data from data sources such as array of JavaScript objects, `OData web services`, or `DataManager` and binding data fields to columns. It also displays the column header to identify the field with support for grouped records.
 
