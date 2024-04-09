@@ -5,7 +5,7 @@
 <div class="control-wrapper">
     <div id="default" style='padding-top:75px;'>
         <ejs-combobox id="records" dataSource="@data" placeholder="Select a item" allowFiltering="true" enableVirtualization="true" popupHeight="200px">
-            <e-data-manager adaptor="WebApiAdaptor" url="https://services.syncfusion.com/js/production/api/orders" crossDomain="true"></e-data-manager>
+            <e-data-manager adaptor="WebApiAdaptor" url="https://services.syncfusion.com/aspnet/production/api/Orders" crossDomain="true"></e-data-manager>
             <e-combobox-fields text="OrderID" value="OrderID"></e-combobox-fields>
         </ejs-combobox>
     </div>

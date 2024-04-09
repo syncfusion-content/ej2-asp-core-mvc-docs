@@ -1,0 +1,55 @@
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon">
+     <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" id="clipboardGroup" groupIconCss="e-icons e-paste" showLauncherIcon=true>
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+         </e-ribbon-tab>
+    </e-ribbon-tabs>
+    <e-ribbon-contextual-tabs>
+        <e-ribbon-contextual-tab visible=true isSelected=true>
+            <e-ribbon-tabs>
+                <e-ribbon-tab header="Styles">
+                    <e-ribbon-groups>
+                        <e-ribbon-group header="Style" showLauncherIcon=true>
+                            <e-ribbon-collections>
+                                <e-ribbon-collection>
+                                    <e-ribbon-items>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-style" content="Style"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-font-name" content="Text Box"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                        <e-ribbon-item type="Button">
+                                            <e-ribbon-buttonsettings iconCss="e-icons e-paint-bucket" content="Paint"></e-ribbon-buttonsettings>
+                                        </e-ribbon-item>
+                                    </e-ribbon-items>
+                                </e-ribbon-collection>
+                            </e-ribbon-collections>
+                        </e-ribbon-group>
+                    </e-ribbon-groups>
+                </e-ribbon-tab>
+            </e-ribbon-tabs>
+        </e-ribbon-contextual-tab>
+    </e-ribbon-contextual-tabs>
+</ejs-ribbon>

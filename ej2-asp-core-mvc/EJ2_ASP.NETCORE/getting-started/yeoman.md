@@ -12,15 +12,15 @@ documentation: ug
 
 # Getting Started with ASP.NET Core and Yeoman in Visual Studio Code
 
-This article provides a step-by-step introduction to configure Essential JS 2 setup and build a simple ASP.NET Core web application using the [Yeoman tool](http://yeoman.io/#) in [Visual Studio Code](https://code.visualstudio.com/) (VS Code).
+This article provides a step-by-step introduction to configure Essential JS 2 setup and build a simple ASP.NET Core web application using the [Yeoman tool](https://yeoman.io/) in [Visual Studio Code](https://code.visualstudio.com/) (VS Code).
 
-N> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET Core application to use the components.
+N> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your ASP.NET Core application to use the components.
 
 ## Getting Started with ASP.NET Core
 
 ### Prerequisites
 
-The official prerequisites to create and run an ASP.NET Core application on Windows environment are described in the [.NET Core documentation website](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net60#dependencies).
+The official prerequisites to create and run an ASP.NET Core application on Windows environment are described in the [.NET Core documentation website](https://learn.microsoft.com/en-us/dotnet/core/install/windows?tabs=net60#dependencies).
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Node.js](https://nodejs.org/en/)
@@ -43,7 +43,7 @@ dotnet new webapp -n SyncfusionDemo
 {% endhighlight %}
 {% endtabs %}
 
-N> If you are using [dotnet new](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new) command instead of [generator-aspnet](https://www.npmjs.com/package/generator-aspnet) then skip the next two steps.
+N> If you are using [dotnet new](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-new) command instead of [generator-aspnet](https://www.npmjs.com/package/generator-aspnet) then skip the next two steps.
 
 2.After installing the Yeoman generator successfully, run the following command to invoke a ASP.NET Core project creation wizard.
 
@@ -81,7 +81,7 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 
 ![asp.net core vscode adding syncfusion package in the project](images/dotnetnew.png)
 
-N> Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package), to learn more details about `dotnet add` command.
+N> Refer to [here](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package), to learn more details about `dotnet add` command.
 
 2.Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
@@ -93,7 +93,7 @@ N> Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add
 {% endhighlight %}
 {% endtabs %}
 
-3.Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+3.Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}

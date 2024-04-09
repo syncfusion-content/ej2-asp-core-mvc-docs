@@ -1,0 +1,10 @@
+<div class="control-section">
+    <div class="control_wrapper textarea-control-section">
+        <div>
+            @Html.EJS().TextArea("default1").Placeholder("Enter your comments").FloatLabelType(FloatLabelType.Auto).rowsCount(3).columnsCount(35).Render()
+        </div>
+        <div>
+            @Html.EJS().TextArea("default2").Placeholder("Enter your comments").FloatLabelType(FloatLabelType.Auto).rowsCount(5).columnsCount(40).Render()
+        </div>
+    </div>
+</div>

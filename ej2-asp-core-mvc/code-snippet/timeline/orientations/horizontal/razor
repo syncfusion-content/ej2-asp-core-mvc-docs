@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2.Layouts
+
+<div id="container">
+    @Html.EJS().Timeline("timeline").Orientation(TimelineOrientation.Horizontal).Items(ViewBag.tripItenerary).Render()
+</div>

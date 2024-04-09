@@ -1,0 +1,35 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Views(ViewBag.view)
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .CssClass("schedule-cell-customization")
+    .Height("550px")
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .RenderCell("onRendercell")
+    .Render()
+)
+
+<script>
+    function onRendercell(args) {
+        if (args.elementType == "workCells") {
+            // To change the color of weekend columns in week view
+            if (args.date) {
+                if (args.date.getDay() === 6) {
+                    (args.element).style.background = '#ffdea2';
+                }
+                if (args.date.getDay() === 0) {
+                    (args.element).style.background = '#ffdea2';
+                }
+            }
+        }
+    }
+</script>
+
+
+<style>
+    .schedule-cell-customization.e-schedule .e-month-view .e-work-cells:not(.e-work-days) {
+        background-color: #f08080;
+    }
+</style>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Spanning in ##Platform_Name## Grid Component
+title: Column Spanning in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Column Spanning in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Spanning
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column Spanning
+# Column Spanning in ASP.NET MVC Grid Component
 
 The grid has option to span the adjacent cells. You need to define the **colSpan** attribute to span cells in the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event.
 
@@ -37,3 +37,10 @@ In the following demo, employee **Davolio** is doing testing from 9.00 A.M. to 1
 {% endtabs %}
 {% endif %}
 
+## Limitations
+
+* Column spanning is not compatible with the following features:
+    1. Virtual scrolling
+    2. Infinite scrolling
+    3. Grouping
+    4. Autofill

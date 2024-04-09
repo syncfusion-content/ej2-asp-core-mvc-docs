@@ -2,7 +2,7 @@
    var location = new { x = 200, y = 20 };
 }
 <ejs-chart id="container" title="Olympic Medals">
-        <e-chart-legendsettings visible="true" position="Custom" location="location"></e-chart-legendsettings>
+        <e-chart-legendsettings visible="true" alignment="Far"></e-chart-legendsettings>
         <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
         <e-series-collection>
             <e-series dataSource="ViewBag.dataSource" name="Gold" xName="country" width="2" opacity="1" yName="gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>

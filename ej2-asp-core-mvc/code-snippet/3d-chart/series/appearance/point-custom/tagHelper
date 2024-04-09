@@ -1,0 +1,17 @@
+<ejs-chart3d id="container" title="Olympic Medals" wallColor="transparent" enableRotation="true" rotation="7" tilt="10"
+    depth="100" pointRender="pointRender">
+    <e-chart3d-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category"></e-chart3d-primaryxaxis>
+    <e-chart3d-series-collection>
+        <e-chart3d-series dataSource="ViewBag.dataSource" xName="country" yName="gold"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"></e-chart3d-series>
+    </e-chart3d-series-collection>
+</ejs-chart3d>
+
+<script>
+    var colors = ["#00bdae", "#404041", "#357cd2", "#e56590", "#f8b883",
+        "#70ad47", "#dd8abd", "#7f84e8", "#7bb4eb", "#ea7a57"];
+
+    function pointRender(args) {
+        args.fill = colors[args.point.index];
+    }
+</script>

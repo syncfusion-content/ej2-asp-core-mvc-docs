@@ -1,0 +1,15 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
+{
+    series.XName("X").YName("Y").Radius("100%").DataSource(ViewBag.dataSource).Add();
+}
+).LegendSettings(leg => leg.Visible(false)).EnableExport(true).Render()
+
+<div>
+    @Html.EJS().Button("export").IsPrimary(true).Content("Export").Render()
+</div>
+<script>
+    document.getElementById('export').onclick = () => {
+        var circularchart = document.getElementById('container').ej2_instances[0];
+        circularchart.circularChartExport3DModule.export('PNG', 'result');
+    };
+</script>

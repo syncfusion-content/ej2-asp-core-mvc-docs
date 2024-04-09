@@ -1,0 +1,232 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<MenuItem> pasteOptions = new List<MenuItem>() { new MenuItem { Text = "Keep Source Format" }, new MenuItem { Text = "Merge format" }, new MenuItem { Text = "Keep text only" } };
+}
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" groupIconCss="e-icons e-paste">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="SplitButton">
+                                    <e-ribbon-splitButtonSettings iconCss="e-icons e-paste" content="Paste" items=pasteOptions></e-ribbon-splitButtonSettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-copy" content="Copy"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-format-painter" content="Format Painter"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Table Styles">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery">
+                                    <e-ribbon-gallerySettings itemCount=7 template="#galleryTemplate" popupTemplate="#galleryTemplate">
+                                        <e-ribbon-gallery-groups>
+                                            <e-ribbon-gallery-group header="Plain Tables">
+                                                <e-ribbon-gallery-items>
+                                                    <e-ribbon-gallery-item cssClass="plainTables_item_1"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="plainTables_item_2"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="plainTables_item_3"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="plainTables_item_4"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="plainTables_item_5"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="plainTables_item_6"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="plainTables_item_7"></e-ribbon-gallery-item>
+                                                </e-ribbon-gallery-items>
+                                            </e-ribbon-gallery-group>
+                                            <e-ribbon-gallery-group header="List Tables">
+                                                <e-ribbon-gallery-items>
+                                                    <e-ribbon-gallery-item cssClass="listTables_item_1"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="listTables_item_2"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="listTables_item_3"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="listTables_item_4"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="listTables_item_5"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="listTables_item_6"></e-ribbon-gallery-item>
+                                                    <e-ribbon-gallery-item cssClass="listTables_item_7"></e-ribbon-gallery-item>
+                                                </e-ribbon-gallery-items>
+                                            </e-ribbon-gallery-group>
+                                        </e-ribbon-gallery-groups>
+                                    </e-ribbon-gallerySettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Insert">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-insert-above" content="Above"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-insert-below" content="Below"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-insert-left" content="Left"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button">
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-insert-right" content="Right"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script type="text/x-jsrender" id="galleryTemplate">
+    <div class="gallery-template ${items.cssClass}">
+      <table class="gallery-table">
+        <tbody>
+          <tr class="row_one">
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+          </tr>
+          <tr class="row_two">
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+          </tr>
+          <tr class="row_three">
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+            <td class="tableContent">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</script>
+
+<style>
+
+    /* plain table styles */
+    .plainTables_item_1 .tableContent {
+        border: 1px solid black;
+    }
+
+    .plainTables_item_2 .tableContent,
+    .plainTables_item_3 .tableContent {
+        border: 1px solid #c1c1c1;
+    }
+
+    .plainTables_item_4 .row_one .tableContent {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .plainTables_item_4 .row_three .tableContent {
+        border-bottom: 1px solid black;
+    }
+
+    .plainTables_item_5 .row_one .tableContent {
+        border-bottom: 1px solid black;
+    }
+
+    .plainTables_item_5 .row_one .tableContent,
+    .plainTables_item_7 .row_one .tableContent {
+        border-bottom: 1px solid black;
+    }
+
+    .plainTables_item_5 .row_two .tableContent:first-child,
+    .plainTables_item_5 .row_three .tableContent:first-child,
+    .plainTables_item_7 .row_two .tableContent:first-child,
+    .plainTables_item_7 .row_three .tableContent:first-child {
+        border-right: 1px solid black;
+    }
+
+    /* list table styles */
+
+    .listTables_item_1 .row_one .tableContent {
+        border-bottom: 1px solid #83caeb;
+    }
+
+    .listTables_item_2 .row_one .tableContent,
+    .listTables_item_2 .row_two .tableContent,
+    .listTables_item_2 .row_three .tableContent {
+        border-bottom: 1px solid #83caeb;
+        border-top: 1px solid #83caeb;
+    }
+
+    .listTables_item_3 .row_one .tableContent {
+        border-top: 1px solid #156082;
+        border-bottom: 1px solid #156082;
+        background-color: #156082;
+        color: white;
+    }
+
+    .listTables_item_3 .row_three .tableContent {
+        border-bottom: 1px solid #156082;
+    }
+
+    .listTables_item_5 .row_one .tableContent,
+    .listTables_item_7 .row_one .tableContent {
+        border-bottom: 1px solid white;
+    }
+
+    .listTables_item_5 .row_two .tableContent:first-child,
+    .listTables_item_5 .row_three .tableContent:first-child,
+    .listTables_item_7 .row_two .tableContent:first-child,
+    .listTables_item_7 .row_three .tableContent:first-child {
+        border-right: 1px solid white;
+    }
+
+    .listTables_item_5 .tableContent {
+        background-color: #156082;
+        color: white;
+    }
+
+    .listTables_item_7 .row_one .tableContent {
+        border-bottom: 1px solid black;
+    }
+
+    .listTables_item_7 .row_two .tableContent:first-child,
+    .listTables_item_7 .row_three .tableContent:first-child {
+        border-right: 1px solid black;
+    }
+
+    .listTables_item_4 .row_one .tableContent {
+        border-top: 1px solid #156082;
+        border-bottom: 1px solid #156082;
+    }
+
+    .listTables_item_4 .row_three .tableContent {
+        border-bottom: 1px solid #156082;
+    }
+
+    .gallery-table {
+        border-collapse: collapse;
+        line-height: 14px;
+    }
+</style>

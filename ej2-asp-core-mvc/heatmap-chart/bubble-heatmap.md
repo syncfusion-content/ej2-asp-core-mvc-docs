@@ -25,7 +25,7 @@ The data points can be represented in color fill or bubble shape by defining the
 
 {% endif %}
 
-The cell customizations and color mapping for rect tile type is defined in [appearance](./appearance/) and [palette](./palette/) sections in detail.
+The cell customizations and color mapping for rect tile type is defined in [appearance](./appearance) and [palette](./palette) sections in detail.
 
 ## Bubble types
 

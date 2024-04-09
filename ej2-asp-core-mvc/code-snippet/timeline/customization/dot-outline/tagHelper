@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.Layouts;
+
+<div class="container" style="height: 250px">
+    <ejs-timeline id="timeline" cssClass="e-outline">
+        <e-timeline-items>
+            <e-timeline-item content="Shipped"></e-timeline-item>
+            <e-timeline-item content="Departed"></e-timeline-item>
+            <e-timeline-item content="Arrived"></e-timeline-item>
+            <e-timeline-item content="Out for Delivery"></e-timeline-item>
+        </e-timeline-items>
+    </ejs-timeline>
+</div>
