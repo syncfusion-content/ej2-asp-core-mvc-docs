@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Print in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Print in ##Platform_Name## PDF Viewer Component | Syncfusion
+description: Learn here all about print support in Syncfusion ##Platform_Name## PDF Viewer component, it's elements and more.
 platform: ej2-asp-core-mvc
 control: Print
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Print
+# How to print the loaded PDF file
 
 The PDF Viewer supports printing the loaded PDF file. You can enable/disable the print using the following code snippet.
 
