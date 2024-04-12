@@ -41,7 +41,7 @@ You can define the styles applicable to the all the Timeline item connectors.
 {% endtabs %}
 {% endif %}
 
-![Common styling](images/connector-common.gif)
+![Common styling](images/connector-common.png)
 
 ### Individual styling
 
@@ -70,7 +70,7 @@ You can also apply unique styles to individual connectors, to differentiate spec
 {% endtabs %}
 {% endif %}
 
-![Individual styling](images/connector-individual.gif)
+![Individual styling](images/connector-individual.png)
 
 ## Dot styling
 
