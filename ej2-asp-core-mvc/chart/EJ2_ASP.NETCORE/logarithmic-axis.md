@@ -8,6 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+<!-- markdownlint-disable MD036 -->
 
 # Logarithmic Axis
 
