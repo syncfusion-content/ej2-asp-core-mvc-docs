@@ -8,9 +8,8 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-<!-- markdownlint-disable MD036 -->
 
-# Logarithmic Axis
+# ASP.NET Core Logarithmic Axis
 
 <!-- markdownlint-disable MD033 -->
 

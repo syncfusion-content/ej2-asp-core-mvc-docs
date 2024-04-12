@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Category Axis
+# ASP.NET Core Category Axis
 
 <!-- markdownlint-disable MD036 -->
 
