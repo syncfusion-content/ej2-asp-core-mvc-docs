@@ -159,3 +159,15 @@ You can use the [IsMinimized](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncf
 {% endtabs %}
 
 ![ASP.NET MVC Ribbon Control in Minimized state](images/ribbon-minimize.png)
+
+## Show hide the layout switcher
+
+You can use the [hideLayoutSwitcher](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_HideLayoutSwitcher) property to show/hide the Ribbon layout switcher button. By default, the value is `false`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/layouts/hideLayoutSwitcher/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Ribbon Control layout switcher](./images/ribbon-layout-switcher.png)
