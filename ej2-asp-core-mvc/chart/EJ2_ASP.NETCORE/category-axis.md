@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Category Axis in ##Platform_Name## Chart Component
+title: Category Axis in ##Platform_Name## Chart Component | Syncfusion
 description: Learn here all about Category Axis in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Category Axis
@@ -9,11 +9,15 @@ documentation: ug
 ---
 
 
-# Category Axis
+# ASP.NET Core Category Axis
 
 <!-- markdownlint-disable MD036 -->
 
 Category axis are used to represent, the string values instead of numbers.
+
+To quickly get started with Syncfusion ASP.NET Core Category Axis, you can check out this video:
+
+{% youtube "https://www.youtube.com/watch?v=l3M5ZvM1Ozs" %}
 
 {% if page.publishingplatform == "aspnet-core" %}
 
