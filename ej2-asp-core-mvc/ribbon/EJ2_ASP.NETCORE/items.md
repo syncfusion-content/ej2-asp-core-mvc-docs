@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Ribbon Items
+# Items in ASP.NET Core Ribbon control
 
 Ribbon renders various built-in items based on the item [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property. By default, the type property is set as `Button` which renders the Button.
 
@@ -177,7 +177,7 @@ The [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
 {% endhighlight %}
 {% endtabs %}
 
-#### Customize Dropdown button item
+#### Customize dropdown button item
 
 You can customize the dropdown button item by specifying a custom cssClass using the [beforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeItemRender) event.
 
@@ -536,7 +536,17 @@ You can customize the ribbon items with non-built-in items or HTML content by se
     <e-ribbon-tabs>
         <e-ribbon-tab header="Home">
             <e-ribbon-groups>
-                <e-ribbon-group header="Font">
+                <e-ribbon-group header="Templates" isCollapsible=false>
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=Template itemTemplate='<div class="custom-template ${activeSize}"><label for="fname">First name:</label><input type="text" id="fname" name="fname"/><br/><br/><label for="lname">Last name:</label><input type="text" id="lname" name="lname"></div>'>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Multimedia">
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>
@@ -578,6 +588,19 @@ You can customize the ribbon items with non-built-in items or HTML content by se
             display: none;
         }
 
+        .custom-template input {
+            margin-left: 10px;
+            width: 100px;
+        }
+        
+        .custom-template.Medium {
+            display: flex;
+            align-items: center;
+        }
+        .custom-template.Medium input {
+            height: 14px;
+            margin-right: 10px;
+        }
 </style>
 
 {% endhighlight %}
