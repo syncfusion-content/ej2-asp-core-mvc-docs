@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Logarithmic Axis in ##Platform_Name## Chart Component
+title: Logarithmic Axis in ##Platform_Name## Chart Component | Syncfusion
 description: Learn here all about Logarithmic Axis in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Logarithmic Axis
@@ -8,6 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+<!-- markdownlint-disable MD036 -->
 
 # Logarithmic Axis
 
