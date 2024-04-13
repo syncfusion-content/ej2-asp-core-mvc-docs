@@ -4,7 +4,7 @@ title: Getting Started with EJ2 ASP.NET Core PDF Viewer Control | Syncfusion
 description: Learn how to getting started with PDF Viewer control in ASP.NET Core application. You can view and comment on PDFs in ease and also can fill forms.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -377,7 +377,7 @@ namespace PDFViewerSample.Pages
         public string freeTextAnnotation { get; set; }
         public string signatureData { get; set; }
         public string fieldsData { get; set; }
-        public string FormDesigner { get; set; }
+        public string formDesigner { get; set; }
         public string inkSignatureData { get; set; }
         public bool hideEmptyDigitalSignatureFields { get; set; }
         public bool showDigitalSignatureAppearance { get; set; }
