@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Global Local in ##Platform_Name## Query Builder Component
+title: Global Local in Syncfusion ##Platform_Name## Query Builder Component
 description: Learn here all about Global Local in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Global Local
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization
+# Localization in Syncfusion Query Builder Control
 
 The `Localization` library allows you to localize the default text content of the Query Builder. The Query Builder has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `Locale` value and translation object.
 
@@ -26,7 +26,10 @@ The following list of properties and its values are used in the Query Builder.
 | SelectOperator | Select operator |
 | StartsWith | Starts With|
 | EndsWith | Ends With |
+| DoesNotStartWith | Does Not Start With |
+| DoesNotEndWith | Does Not End With |
 | Contains | Contains |
+| DoesNotContain | Does Not Contain |
 | Equal | Equal |
 | NotEqual | Not Equal |
 | LessThan | Less Than |
