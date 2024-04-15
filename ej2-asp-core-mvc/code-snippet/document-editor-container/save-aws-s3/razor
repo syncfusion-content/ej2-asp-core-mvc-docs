@@ -1,0 +1,35 @@
+@Html.EJS().Button("export").Content("Save to AWS S3 Bucket").Render()
+@Html.EJS().DocumentEditorContainer("container").EnableToolbar(true).Render()
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        var documenteditorElement = document.getElementById("container");        
+        container = documenteditorElement.ej2_instances[0];
+        document.getElementById('export').addEventListener('click', function () {
+            container.documentEditor.saveAsBlob('Docx').then((blob) => {
+                var exportedDocument = blob;
+                //Now, save the document where ever you want.
+                var formData = new FormData();
+                formData.append('documentName', container.documentEditor.documentName);
+                formData.append('data', exportedDocument);
+                /* tslint:disable */
+                var req = new XMLHttpRequest();
+                // Replace your running Url here
+                req.open(
+                    'POST',
+                    window.baseurl + 'api/documenteditor/SaveToS3',
+                    true
+                );
+                req.onreadystatechange = () => {
+                    if (req.readyState === 4) {
+                        if (req.status === 200 || req.status === 304) {
+                            console.log('Saved sucessfully');
+                        }
+                    }
+                };
+                req.send(formData);
+            });
+        });
+    }); 
+</script>

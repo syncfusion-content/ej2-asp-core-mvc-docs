@@ -17,27 +17,21 @@ The accessibility compliance for the diagram component is outlined below.
 
 | Accessibility Criteria                                                              | Compatibility                                                                        |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| WCAG 2.2 Support                 | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="intermediate"> |
-| Section 508 Support             | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="intermediate"> |
-| Screen Reader Support             | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Right-To-Left Support             | <img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> |
-| Color Contrast                            | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Mobile Device Support             | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="intermediate"> |
-| Accessibility Checker Validation  | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Axe-core Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| WCAG 2.2 Support                 | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="intermediate"> |
+| Section 508 Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="intermediate"> |
+| Screen Reader Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| Right-To-Left Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> |
+| Color Contrast                            | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| Mobile Device Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="intermediate"> |
+| Accessibility Checker Validation  | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| Axe-core Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 
-<style>
-    .post .post-content img {
-        display: inline-block;
-        margin: 0.5em 0;
-    }
-</style>
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
+<div style="display: flex; align-items: center;"><img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes" style="margin-right: 5px;"> - All features of the component meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+<div style="display: flex; align-items: center;"><img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate" style="margin-right: 5px;"> - Some features of the component do not meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
+<div style="display: flex; align-items: center;"><img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No" style="margin-right: 1px;"> - The component does not meet the requirement.</div>
 
 ## WAI-ARIA attributes
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events
+# Events in ##Platform_Name## Stepper control
 
 This section describes the Stepper events that will be triggered when an appropriate actions are performed. The following events are available in the Stepper control.
 

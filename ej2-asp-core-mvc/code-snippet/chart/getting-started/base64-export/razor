@@ -1,0 +1,30 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+        .XName("x").YName("yValue").DataSource(ViewBag.dataSource).Add();
+
+    }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+    ).Render()
+
+@Html.EJS().Button("togglebtn").IsPrimary(true).IconCss("e-icons e-play-icon").Content("Export").CssClass("e-flat").Render()
+
+<script>
+    document.getElementById('togglebtn').onclick = function () {
+        var svg = document.querySelector("#container_svg");
+        var svgData = new XMLSerializer().serializeToString(svg);
+        var canvas = document.createElement("canvas");
+        document.body.appendChild(canvas);
+        var svgSize = svg.getBoundingClientRect();
+        canvas.width = svgSize.width;
+        canvas.height = svgSize.height;
+        var ctx = canvas.getContext("2d");
+        var img = document.createElement("img");
+        img.setAttribute("src", "data:image/svg+xml;base64," + btoa(svgData));
+        img.onload = function () {
+            ctx.drawImage(img, 0, 0);
+            var imagedata = canvas.toDataURL("image/png");
+            console.log(imagedata); // printed base64 in console
+            canvas.remove();
+        };
+    };
+</script>

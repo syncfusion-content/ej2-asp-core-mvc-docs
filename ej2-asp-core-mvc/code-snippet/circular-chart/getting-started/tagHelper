@@ -1,0 +1,25 @@
+@{
+    ...
+    List<CircularChartData> circularData = new List<CircularChartData>
+    {
+        new CircularChartData { X = "Chrome",            Y = 62.92 },
+        new CircularChartData { X = "Internet Explorer", Y = 6.12  },
+        new CircularChartData { X = "Opera",             Y = 3.15  },
+        new CircularChartData { X = "Edge",              Y = 5.5   },
+        new CircularChartData { X = "Safari",            Y = 19.97 },
+        new CircularChartData { X = "Others",            Y = 2.34  }
+    };
+}
+ 
+<ejs-circularchart3d id="container" title="Browser Market Shares in November 2023" tilt="-45">
+    <e-circularchart3d-legendsettings visible="true" position="@Syncfusion.EJ2.Charts.LegendPosition.Right">
+    </e-circularchart3d-legendsettings>
+    <e-circularchart3d-series-collection>
+        <e-circularchart3d-series dataSource="@circularData" xName="X" yName="Y">
+            <e-circularchart3d-series-datalabel visible="true" position="@Syncfusion.EJ2.Charts.CircularChart3DLabelPosition.Outside" name="X">
+                <e-font fontWeight="600"></e-font>
+                <e-connectorstyle length="40px"></e-connectorstyle>
+            </e-circularchart3d-series-datalabel>
+        </e-circularchart3d-series>
+    </e-circularchart3d-series-collection>
+</ejs-circularchart3d>

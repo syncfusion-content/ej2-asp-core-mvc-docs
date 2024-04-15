@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2.Layouts
+
+<div id="container" style="height: 250px;">
+    @Html.EJS().Timeline("timeline").CssClass("custom-connector").Items(ViewBag.dailyRoutine).Render()
+</div>
+
+<style>
+    .custom-connector .e-timeline-item.e-connector::after {
+        border-color: #f7c867;
+        border-width: 1.4px;
+        animation: progress 2s;
+    }
+
+    @@keyframes progress {
+        from { height: 0%; }
+        to { height: 100%; }
+    }
+</style>

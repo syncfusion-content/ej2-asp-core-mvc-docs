@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Ribbon Items
+# Items in ASP.NET Core Ribbon control
 
 Ribbon renders various built-in items based on the item [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property. By default, the type property is set as `Button` which renders the Button.
 
@@ -173,6 +173,59 @@ The [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon
     </e-ribbon-tabs>
 </ejs-ribbon>
 <ejs-listview id="pictureList" showHeader=true headerTitle="Insert Picture From" dataSource=pictureOptions></ejs-listview>
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Customize dropdown button item
+
+You can customize the dropdown button item by specifying a custom cssClass using the [beforeItemRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeItemRender) event.
+
+The following sample showcases how to customize a specific dropdown item.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<MenuItem> tableOptions = new List<MenuItem>() { new MenuItem { Text = "Insert Table" }, new MenuItem { Text = "This device" }, new MenuItem { Text = "Convert Table" }, new MenuItem { Text = "Excel SpreadSheet" } };
+}
+
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Insert">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Tables">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=DropDown>
+                                    <e-ribbon-dropdownsettings iconCss="e-icons e-table" content="Table" items="tableOptions" beforeItemRender="beforeItemRenderEvent"></e-ribbon-dropdownsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script>
+    function beforeItemRenderEvent(args) {
+        if (args.item.text === 'Insert Table') {
+            args.element.classList.add("e-custom-class");
+        }
+    }
+</script>
+
+<style>
+    .e-custom-class {
+        color: green;
+    }
+</style>
 
 {% endhighlight %}
 {% endtabs %}
@@ -483,7 +536,17 @@ You can customize the ribbon items with non-built-in items or HTML content by se
     <e-ribbon-tabs>
         <e-ribbon-tab header="Home">
             <e-ribbon-groups>
-                <e-ribbon-group header="Font">
+                <e-ribbon-group header="Templates" isCollapsible=false>
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=Template itemTemplate='<div class="custom-template ${activeSize}"><label for="fname">First name:</label><input type="text" id="fname" name="fname"/><br/><br/><label for="lname">Last name:</label><input type="text" id="lname" name="lname"></div>'>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Multimedia">
                     <e-ribbon-collections>
                         <e-ribbon-collection>
                             <e-ribbon-items>
@@ -525,6 +588,19 @@ You can customize the ribbon items with non-built-in items or HTML content by se
             display: none;
         }
 
+        .custom-template input {
+            margin-left: 10px;
+            width: 100px;
+        }
+        
+        .custom-template.Medium {
+            display: flex;
+            align-items: center;
+        }
+        .custom-template.Medium input {
+            height: 14px;
+            margin-right: 10px;
+        }
 </style>
 
 {% endhighlight %}

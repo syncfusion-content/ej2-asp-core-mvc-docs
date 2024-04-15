@@ -1,11 +1,8 @@
 ---
-layout: post
-title: Collaborative Editing (preview) in ##Platform_Name## Document Editor Component
+title: Collaborative Editing (preview)
+component: DocumentEditor
 description: Learn how to perform collaborative editing in ##Platform_Name## document editor
-platform: ej2-asp-core-mvc
-control: Collaborative Editing
 publishingplatform: ##Platform_Name##
-documentation: ug
 ---
 
 # Collaborative Editing (preview)
@@ -50,7 +47,7 @@ To enable collaborative editing, inject `CollaborativeEditingHandler` and set th
 {% endtabs %}
 {% endif %}
 
-### Step 2: Configure SignalR to send and receive changes
+## Step 2: Configure SignalR to send and receive changes
 
 To broadcast the changes made and receive changes from remote users, configure SignalR like below.
 
@@ -92,7 +89,7 @@ When opening a document, we need to generate a unique ID for each document. Thes
 {% endtabs %}
 {% endif %}
 
-### Step 4: Broadcast current editing changes to remote users
+### Step 5: Broadcast current editing changes to remote users
 
 Changes made on the client-side need to be sent to the server-side to broadcast them to other connected users. To send the changes made to the server, use the method shown below from the document editor using the `contentChange` event.
 
@@ -347,4 +344,4 @@ private ActionInfo AddOperationsToTable(ActionInfo action)
 
 Full version of the code discussed about can be found in below GitHub location.
 
-Github Example: [`Collaborative editing examples`](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Collaborative-Editing)
+Github Example: [`Collaborative editing examples`](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Collabrative-Editing)

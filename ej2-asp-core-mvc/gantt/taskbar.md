@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Taskbar in ##Platform_Name## Gantt Component
+title: Taskbar in ##Platform_Name## Syncfusion Gantt Component
 description: Learn here all about Taskbar in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Taskbar
@@ -137,6 +137,40 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 
 ![Change Gripper Icon in Taskbar](images/change-gripper-icon.png)
 
+## Multi Taskbar support in project view
+
+The Gantt component, supports rendering multi-taskbars in the project view. With this feature the parent taskbar, when it is collapsed, visually summarize the progress of all its child taskbars.
+
+This feature can be enabled by setting the [EnableMultiTaskbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableMultiTaskbar) property value to `true`. 
+
+The following code example shows how to use this property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/projectview-multitaskbar-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Projectview-multitaskbar.cs" %}
+{% include code-snippet/gantt/projectview-multitaskbar-cs1/projectview-multitaskbar.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/projectview-multitaskbar-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Projectview-multitaskbar.cs" %}
+{% include code-snippet/gantt/projectview-multitaskbar-cs1/Projectview-multitaskbar.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Multitaskbar support in projectview](images/project-multitaskbar.png)
 
 ## Connector lines
 

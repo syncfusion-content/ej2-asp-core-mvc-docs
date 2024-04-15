@@ -1,0 +1,7 @@
+@Html.EJS().CircularChart3D("container").Tilt(-15).Title("Countries compared by population density and total area").Series(series =>
+{
+    series.XName("X").YName("Y").Radius("R").InnerRadius("20%")
+    .DataLabel(dl => dl.Visible(true).Position(Syncfusion.EJ2.Charts.CircularChart3DLabelPosition.Outside).Name("X"))
+    .DataSource(ViewBag.dataSource).Add();
+}
+).EnableAnimation(true).LegendSettings(leg => leg.Visible(true)).Render()

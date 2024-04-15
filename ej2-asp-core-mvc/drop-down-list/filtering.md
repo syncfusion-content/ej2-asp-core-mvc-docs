@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Drop Down List Component
+title: Filtering in ##Platform_Name## Drop Down List Component | Syncfusion
 description: Learn here all about filtering in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filtering
@@ -11,9 +11,9 @@ documentation: ug
 
 # Filtering
 
-The DropDownList has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~AllowFiltering.html) is enabled. The filter operation starts as soon as you start typing characters in the search box.
+The DropDownList has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownListBuilder.html#Syncfusion_EJ2_DropDowns_DropDownListBuilder_AllowFiltering_System_Boolean_) is enabled. The filter operation starts as soon as you start typing characters in the search box.
 
-To display the filtered items in the popup, filter the required data and return it to the DropDownList via `updateData` method by using the [filtering](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~Filtering.html) event.
+To display the filtered items in the popup, filter the required data and return it to the DropDownList via `updateData` method by using the [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownListBuilder.html#Syncfusion_EJ2_DropDowns_DropDownListBuilder_Filtering_System_String_) event.
 
 The following sample illustrates how to query the data source and pass the data to the DropDownList through the `updateData` method in `filtering` event.
 
@@ -135,7 +135,7 @@ Data items can be filtered either with or without case sensitivity using the Dat
 
 ## Diacritics Filtering
 
-DropDownList supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~IgnoreAccent.html) is enabled.
+DropDownList supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownListBuilder.html#Syncfusion_EJ2_DropDowns_DropDownListBuilder_IgnoreAccent_System_Boolean_) is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

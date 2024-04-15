@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Range Slider component
+title: Accessibility in ##Platform_Name## Range Slider Component
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -8,71 +8,59 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ##Platform_Name## Range Slider component
 
-The Range Slider component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+# Accessibility
 
-The accessibility compliance for the Range Slider component is outlined below.
+The Slider is characterized with complete ARIA Accessibility support that helps to access by on-screen readers and other assistive technology devices. This control is designed with the reference of guidelines document given in the [WAI ARAI Accessibility Practices](https://www.w3.org/TR/wai-aria-practices/#slider).
 
-| Accessibility Criteria | Compatibility |
-| -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Color Contrast | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Mobile Device Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Accessibility Checker](https://www.npmjs.com/package/accessibility-checker) Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Axe-core](https://www.npmjs.com/package/axe-core) Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+The Slider control uses the Slider role and the following ARIA properties for its element based on the state.
 
-<style>
-    .post .post-content img {
-        display: inline-block;
-        margin: 0.5em 0;
-    }
-</style>
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
-
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
-
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
-
-## WAI-ARIA attributes
-
-The Range Slider component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/slider/) patterns to meet the accessibility. The following ARIA attributes are used in the Range Slider component:
-
-| Attributes | Purpose |
+| **Properties** | **Functionalities** |
 | --- | --- |
-| `role=slider` | Used to convey a significant and contextual message to the user. |
-| `aria-valuemin` | Indicates the Minimum value of the slider. |
-| `aria-valuemax` | Indicates the Maximum value of the slider. |
-| `aria-valuenow` | Indicates the current value of the slider. |
-| `aria-valuetext` | Returns the current text of the slider. |
-| `aria-orientation` | Indicates whether the Slider is oriented horizontally or vertically. |
-| `aria-label` | Provides an accessible name for the Slider, serving as label text for the Slider's left and right buttons (for increment and decrement). |
+| `aria-valuenow` | It Indicates the current value of the slider. |
+| `aria-valuetext`| Returns the current text of the slider. |
+| `aria-valuemin` | It Indicates the Minimum value of the slider. |
+| `aria-valuemax` | It Indicates the Maximum value of the slider. |
+| `aria-orientation` | It Indicates the Slider Orientation. |
+| `aria-label` | Slider left and right button label text (increment and decrement). |
+| `aria-labelledby` | It indicates the name of the Slider. |
 
 ## Keyboard interaction
 
-The Range Slider component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Range Slider component.
+The Keyboard interaction of the Slider control is designed based on the [WAI-ARIA Practices](https://www.w3.org/TR/wai-aria-practices/#slider) described for Slider. Users can use the following shortcut keys to interact with the Slider.
 
-| **Press** | **To do this** |
+| **Keyboard shortcuts** | **Actions** |
 | --- | --- |
-| <kbd>Right Arrow</kbd>/<kbd>Up Arrow</kbd> | Increase the Slider value. |
-| <kbd>Left Arrow</kbd>/<kbd>Down Arrow</kbd> | Decrease the Slider value. |
+| <kbd>Right Arrow</kbd> <kbd>Up Arrow</kbd> | Increase the Slider value.|
+| <kbd>Left Arrow</kbd> <kbd>Down Arrow</kbd> | Decrease the Slider value. |
 | <kbd>Home</kbd> | Moves to the start value (for Range Slider when the second thumb is focused and the Home key is pressed, it moves to the first thumb value). |
-| <kbd>End | Moves to the end value (for Range Slider when the first thumb is focused and the End key is pressed, it moves to the second thumb value). |
-| <kbd>Page Up</kbd> | 	Increases the Slider by `largeStep` value. |
+| <kbd>End</kbd> | Moves to the end value (for Range Slider when the first thumb is focused and the End key is pressed, it moves to the second thumb value). |
+| <kbd>Page Up</kbd> | Increases the Slider by `largeStep` value. |
 | <kbd>Page Down</kbd> | Decreases the Slider by `largeStep` value. |
 
-## Ensuring accessibility
+{% if page.publishingplatform == "aspnet-core" %}
 
-The Range Slider component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/slider/accessbility/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Accessbility.cs" %}
+{% include code-snippet/slider/accessbility/accessbility.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-The accessibility compliance of the Range Slider component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/slider.html) in a new window to evaluate the accessibility of the Range Slider component with accessibility tools.
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% previewsample "https://ej2.syncfusion.com/accessibility/slider.html" %}
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/slider/accessbility/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Accessbility.cs" %}
+{% include code-snippet/slider/accessbility/accessbility.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
-## See also
 
-* [Accessibility in Syncfusion ##Platform_Name## components](../common/accessibility)
+
+![ASP .NET Core - Slider - Accessibility](./images/slider-accessibility.png)

@@ -1,0 +1,56 @@
+<div class="control-section">
+    <div class="control_wrapper" id="control_wrapper">
+        <h3 class="form-title">Feedback</h3>
+        <div class="control_wrapper textarea-form">
+            <form id="form1" method="post">
+                <div class="form-group">
+                    <div class="e-float-input">
+                        <label>Email</label>
+                        <input type="email" id="email" name="email" data-email-message="Please enter valid email address."
+                        data-required-message="Required field" required data-msg-containerid="emailError"/>
+                        <span class="e-float-line"></span>
+                    </div>
+                    <div id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label>Comments</label>
+                        <br/>
+                        <div class="control_wrapper textarea-control-section">
+                            @Html.EJS().TextArea("default").Placeholder("Enter your comments").FloatLabelType(FloatLabelType.Auto).HtmlAttributes(new { @name = "comments", @required = "", @data-msg-containerid="commentError" }).Render()
+                        </div>
+                    </div>
+                    <div id="commentError"></div>
+                </div>
+                <div class="row">
+                    <div style="float: left">
+                        <button class="btn" type="submit">Submit</button>
+                    </div>
+                    <div style="float: left;">
+                        <button class="btn" type="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br />
+        <br />
+    </div>
+</div>
+
+<script>
+    // sets required property in the FormValidator rules collection
+    var options = {
+        rules: {
+            'email': { required: [true, '* Please enter valid email'] },
+            comments: { required: [true, '* Please enter your comments'] }
+        },
+    };
+    // defines FormValidator to validate the TextArea
+    var formObject = new ej.inputs.FormValidator('#form1', options);
+
+    // places error label outside the TextArea using the customPlacement event of FormValidator
+
+    formObject.customPlacement = function (element, errorElement) {
+        document.querySelector("#default").parentNode.appendChild(errorElement);
+    };
+</script>

@@ -340,62 +340,14 @@ The [addChildToUmlNode](https://ej2.syncfusion.com/documentation/api/diagram#add
 
 The following code illustrates how to add methods to UML nodes in diagram.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlmethod/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="method.cs" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlmethod/method.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlmethod/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="method.cs" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlmethod/method.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 ```ts
-let node = diagram.nodes[0];
+let node = diagram.selectedItems.nodes[0];
 let methods = { name: 'getHistory', style: { color: "red", }, parameters: [{ name: 'Date', style: {} }], type: 'History' };
 diagram.addChildToUmlNode(node, methods, 'Methods');
 
 ```
 
 The following code illustrates how to add attributes to UML nodes in diagram.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlattribute/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="attribute.cs" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlattribute/attribute.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlattribute/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="attribute.cs" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlattribute/attribute.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ```ts
 let node = diagram.selectedItems.nodes[0];
@@ -405,30 +357,6 @@ diagram.addChildToUmlNode(node, attributes, "Attributes");
 ```
 
 The following code illustrates how to add members to UML nodes in diagram.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlmember/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="member.cs" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlmember/member.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlmember/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="member.cs" %}
-{% include code-snippet/diagram/umldiagramshapes/Umlmember/member.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ```ts
 let node = diagram.selectedItems.nodes[0];
@@ -479,7 +407,7 @@ The following code example showcases the rendering of UML built-in shapes in a s
 
 You can edit the name, attributes, and methods of the class diagram shapes just double clicking, similar to editing a node annotation.
 
-![Editing Class Diagram](images/Editing.gif)
+![Editing Class Diagram](images/ClassEdit.png)
 
 
 ## UML Activity diagram
@@ -539,9 +467,9 @@ To create a UmlActivity, define type as "UmlActivity" and the list of built-in s
 
 
 
-### Uml Activity connector
+### UmlActivity connector
 
-To create an Uml Activity connector, define the type as "UmlActivity" and flow as either "Exception" or "Control" or "Object".
+To create an UmlActivity connector, define the type as "UmlActivity" and flow as either "Exception" or "Control" or "Object".
 
 {% if page.publishingplatform == "aspnet-core" %}
 

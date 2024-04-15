@@ -17,6 +17,10 @@ It is also possible to assign one or more resources to the same appointment, by 
 
 The HTML5 JavaScript Scheduler groups the resources based on different criteria. It includes grouping appointments based on resources, grouping resources based on dates, and timeline scheduling. Also, the data for resources bind with Scheduler either as a local JSON collection or URL, retrieving data from remote data services.
 
+To render a ASP.NET Core Scheduler with appointments from multiple resources, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=JqW0boD7Wv4" %}
+
 ## Resource fields
 
 The default options available within the `resources` collection are as follows,

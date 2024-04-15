@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.Layouts;
+
+<div class="container">
+    <ejs-timeline id="timeline" orientation="Vertical">
+        <e-timeline-items>
+            <e-timeline-item content="Day 1, 4:00 PM" oppositeContent="Check-in and campsite visit"></e-timeline-item>
+            <e-timeline-item content="Day 1, 7:00 PM" oppositeContent="Dinner with music"></e-timeline-item>
+            <e-timeline-item content="Day 2, 5:30 AM" oppositeContent="Sunrise between mountains"></e-timeline-item>
+            <e-timeline-item content="Day 2, 8:00 AM" oppositeContent="Breakfast and check-out"></e-timeline-item>
+        </e-timeline-items>
+    </ejs-timeline>
+</div>
+
+<style>
+    #container {
+        width: 60%;
+        margin: 30px auto;
+        padding: 30px;
+    }
+    .container:has(.e-vertical) {
+        height: 350px;
+    }
+</style>

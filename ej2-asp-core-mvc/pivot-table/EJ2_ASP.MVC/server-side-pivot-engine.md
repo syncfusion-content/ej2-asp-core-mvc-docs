@@ -13,7 +13,7 @@ N> In general, the Pivot Table is created using the built-in engine for given da
 
 # Getting Started with Syncfusion Server-side Pivot Engine
 
-This section briefs the Syncfusion assembly [`Syncfusion.Pivot.Engine`](https://www.nuget.org/packages/Syncfusion.Pivot.Engine/), which is used in a server-side application to perform all Pivot calculations such as aggregation, filtering, sorting, grouping, and so on, and only the information to be displayed in the Pivot Table's viewport is passed to the client-side (browser) via web service (Web API) rather than the entire data source. It reduces network traffic and improves the rendering performance of the Pivot Table, especially when dealing with large amounts of data. It also works best with virtual scrolling enabled and supports all the Pivot Table's existing features.
+This section briefs the Syncfusion assembly [`Syncfusion.EJ2.Pivot`](https://www.nuget.org/packages/Syncfusion.EJ2.Pivot/), which is used in a server-side application to perform all Pivot calculations such as aggregation, filtering, sorting, grouping, and so on, and only the information to be displayed in the Pivot Table's viewport is passed to the client-side (browser) via web service (Web API) rather than the entire data source. It reduces network traffic and improves the rendering performance of the Pivot Table, especially when dealing with large amounts of data. It also works best with virtual scrolling enabled and supports all the Pivot Table's existing features.
 
 ## Quick steps to render the Pivot Table by using the server-side Pivot Engine
 
@@ -27,7 +27,7 @@ This section briefs the Syncfusion assembly [`Syncfusion.Pivot.Engine`](https://
 * **DataSource.cs** file under **DataSource** folder – This file has model classes to define the structure of the data sources.
 * The sample data source files **sales.csv** and **sales-analysis.json** under **DataSource** folder.
 
-**3.** Open the **PivotController** application in Visual Studio where the Syncfusion library [`Syncfusion.Pivot.Engine`](https://www.nuget.org/packages/Syncfusion.Pivot.Engine/) will be downloaded automatically from the nuget.org site.
+**3.** Open the **PivotController** application in Visual Studio where the Syncfusion library [`Syncfusion.EJ2.Pivot`](https://www.nuget.org/packages/Syncfusion.EJ2.Pivot/) will be downloaded automatically from the nuget.org site.
 
 ![Solution Explorer](images/solution-explorer.png)
 
@@ -39,7 +39,7 @@ This section briefs the Syncfusion assembly [`Syncfusion.Pivot.Engine`](https://
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 ).Render()
 
@@ -49,7 +49,7 @@ This section briefs the Syncfusion assembly [`Syncfusion.Pivot.Engine`](https://
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .FormatSettings(formatsettings =>
 {
@@ -153,7 +153,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .FormatSettings(formatsettings =>
 {
@@ -232,7 +232,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .Type(Syncfusion.EJ2.PivotView.DataSourceType.CSV)
 .FormatSettings(formatsettings =>
@@ -350,7 +350,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .Type(Syncfusion.EJ2.PivotView.DataSourceType.CSV)
 .FormatSettings(formatsettings =>
@@ -453,7 +453,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .FormatSettings(formatsettings =>
 {
@@ -536,7 +536,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .Rows(rows =>
 {
@@ -630,7 +630,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```html
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://localhost:44350/api/pivot/post")
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
 .Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .Rows(rows =>
 {
