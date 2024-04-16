@@ -19,8 +19,13 @@ To render a funnel series, use the series [`type`](https://help.syncfusion.com/c
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/funnel/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chart/accumulation-charts/funnel/default/default.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class FunnelChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -48,8 +53,13 @@ The size of the funnel chart can be customized by using the `width` and `height`
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/funnel/size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Size.cs" %}
-{% include code-snippet/chart/accumulation-charts/funnel/size/size.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class FunnelChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,8 +87,13 @@ The funnel's neck size can be customized by using the `neckWidth` and `neckHeigh
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/funnel/neck-size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Neck-size.cs" %}
-{% include code-snippet/chart/accumulation-charts/funnel/neck-size/neck-size.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class FunnelChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,8 +121,13 @@ Funnel chart provides options to customize the space between the segments by usi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/funnel/gap/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Gap.cs" %}
-{% include code-snippet/chart/accumulation-charts/funnel/gap/gap.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class FunnelChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,8 +155,13 @@ Points can be exploded on mouse click by setting the `explode` property to true.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/funnel/explode/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Explode.cs" %}
-{% include code-snippet/chart/accumulation-charts/funnel/explode/explode.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class FunnelChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -164,8 +189,14 @@ It provides the data label smart arrangement of the funnel and pyramid series. T
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/funnel/data-label/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data-label.cs" %}
-{% include code-snippet/chart/accumulation-charts/funnel/data-label/data-label.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class FunnelChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -193,8 +224,13 @@ Individual points can be customized using the `pointRender` event.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/funnel/custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/chart/accumulation-charts/funnel/custom/custom.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class FunnelChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
