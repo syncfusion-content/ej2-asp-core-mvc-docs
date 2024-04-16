@@ -4,7 +4,7 @@ title: Create Programmatically in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 description: Learn here all about Create Programmatically in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Programmatically
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -69,7 +69,7 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
        function documentLoad() {
             var viewer = document.getElementById('pdfviewer').ej2_instances[0];
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
+            viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
             viewer.formDesignerModule.updateFormField(pdfviewer.formFieldCollections[0], { backgroundColor: 'red' });
        }
     </script>
@@ -85,7 +85,7 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
        function documentLoad() {
             var viewer = document.getElementById('pdfviewer').ej2_instances[0];
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
+            viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
             viewer.formDesignerModule.updateFormField(pdfviewer.formFieldCollections[0], { backgroundColor: 'red' });
        }
     </script>
@@ -107,7 +107,7 @@ Using deleteFormField method, the form field can be deleted programmatically. We
        function documentLoad() {
             var viewer = document.getElementById('pdfviewer').ej2_instances[0];
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150,Height: 24 } });
+            viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 300, Y: 229, Width: 150,Height: 24 } });
             viewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0]);
            }
     </script>
@@ -123,7 +123,7 @@ Using deleteFormField method, the form field can be deleted programmatically. We
        function documentLoad() {
             var viewer = document.getElementById('pdfviewer').ej2_instances[0];
             viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-            viewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150,Height: 24 } });
+            viewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 300, Y: 229, Width: 150,Height: 24 } });
             viewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0]);
            }
     </script>
@@ -135,7 +135,7 @@ Using deleteFormField method, the form field can be deleted programmatically. We
 
 When the download icon is selected on the toolbar, the Form Fields will be saved in the PDF document and this action will not affect the original document. Refer the below GIF for further reference.
 
-![Alt text](../../../pdfviewer/images/saveformfield.gif)
+![Alt text](../../pdfviewer/images/saveformfield.gif)
 
 You can invoke download action using following code snippet.
 
@@ -175,7 +175,7 @@ You can invoke download action using following code snippet.
 
 When the print icon is selected on the toolbar, the PDF document will be printed along with the Form Fields added to the pages and this action will not affect the original document. Refer the below GIF for further reference.
 
-![Alt text](../../../pdfviewer/images/printformfield.gif)
+![Alt text](../../pdfviewer/images/printformfield.gif)
 
 You can invoke print action using the following code snippet.,
 
@@ -218,7 +218,7 @@ You can invoke print action using the following code snippet.,
 
 We can open the already saved PDF document contains Form Fields in it by clicking the open icon in the toolbar. Refer the below GIF for further reference.
 
-![Alt text](../../../pdfviewer/images/openexistingpdf.gif)
+![Alt text](../../pdfviewer/images/openexistingpdf.gif)
 
 ## Validate form fields
 
@@ -234,7 +234,7 @@ Add the following code snippet to validate the form fields,
 </div>
 <script>
     function validateFormFields(args) {
-        var nonfilledFormFields = args.nonFillableFields;
+        var non_filledFormFields = args.nonFillableFields;
     }
 </script>
 
@@ -247,7 +247,7 @@ Add the following code snippet to validate the form fields,
 </div>
 <script>
     function validateFormFields(args) {
-        var nonfilledFormFields = args.nonFillableFields;
+        var non_filledFormFields = args.nonFillableFields;
     }
 </script>
 
@@ -667,7 +667,7 @@ The following code example explains how to update the properties of the signatur
 
 </script>
 
-![Signature Field Settings](../../../pdfviewer/images/signature_field.png)
+![Signature Field Settings](../../pdfviewer/images/signature_field.png)
 
 The following code example explains how to update the properties of the initial field added to the document from the form designer toolbar.
 
@@ -704,7 +704,7 @@ window.onload = function () {
 
 </script>
 
-![Initial Field Settings](../../../pdfviewer/images/InitialField.png)
+![Initial Field Settings](../../pdfviewer/images/InitialField.png)
 
 ### Textbox field settings
 
@@ -840,7 +840,7 @@ window.onload = function () {
 
 </script>
 
-![Textbox Field Settings](../../../pdfviewer/images/Textbox.png)
+![Textbox Field Settings](../../pdfviewer/images/Textbox.png)
 
 ### Password field settings
 
@@ -972,7 +972,7 @@ window.onload = function () {
 
 </script>
 
-![Password Field Settings](../../../pdfviewer/images/Password.png)
+![Password Field Settings](../../pdfviewer/images/Password.png)
 
 ### CheckBox field settings
 
@@ -1080,7 +1080,7 @@ window.onload = function () {
 
 </script>
 
-![CheckBox Field Settings](../../../pdfviewer/images/Checkbox.png)
+![CheckBox Field Settings](../../pdfviewer/images/Checkbox.png)
 
 ### RadioButton field settings
 
@@ -1190,7 +1190,7 @@ window.onload = function () {
 
 </script>
 
-![RadioButton Field Settings](../../../pdfviewer/images/Radiobutton.png)
+![RadioButton Field Settings](../../pdfviewer/images/Radiobutton.png)
 
 ### ListBox field settings
 
@@ -1213,7 +1213,7 @@ The following code example explains how to update the ListBox field properties o
     function updateProperties() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         var formField = viewer.retrieveFormFields();
-        const customOptions = [
+        var customOptions = [
             { itemName: 'item1', itemValue: 'item1' },
             { itemName: 'item2', itemValue: 'item2' },
             { itemName: 'item3', itemValue: 'item3' }
@@ -1255,7 +1255,7 @@ The following code example explains how to update the ListBox field properties o
     function updateProperties() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         var formField = viewer.retrieveFormFields();
-        const customOptions = [
+        var customOptions = [
             { itemName: 'item1', itemValue: 'item1' },
             { itemName: 'item2', itemValue: 'item2' },
             { itemName: 'item3', itemValue: 'item3' }
@@ -1292,7 +1292,7 @@ The following code example explains how to update the properties of the listbox 
 
 window.onload = function () {
     var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-    const customOptions = [
+    var customOptions = [
         { itemName: 'item1', itemValue: 'item1' },
         { itemName: 'item2', itemValue: 'item2' },
         { itemName: 'item3', itemValue: 'item3' }
@@ -1335,7 +1335,7 @@ window.onload = function () {
 
 </script>
 
-![ListBox Field Settings](../../../pdfviewer/images/Listbox.png)
+![ListBox Field Settings](../../pdfviewer/images/Listbox.png)
 
 ### DropDown field settings
 
@@ -1358,7 +1358,7 @@ The following code example explains how to update the DropDown field properties 
     function updateProperties() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         var formField = viewer.retrieveFormFields();
-        const customOptions = [
+        var customOptions = [
             { itemName: 'item1', itemValue: 'item1' },
             { itemName: 'item2', itemValue: 'item2' },
             { itemName: 'item3', itemValue: 'item3' }
@@ -1400,7 +1400,7 @@ The following code example explains how to update the DropDown field properties 
     function updateProperties() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         var formField = viewer.retrieveFormFields();
-        const customOptions = [
+        var customOptions = [
             { itemName: 'item1', itemValue: 'item1' },
             { itemName: 'item2', itemValue: 'item2' },
             { itemName: 'item3', itemValue: 'item3' }
@@ -1437,7 +1437,7 @@ The following code example explains how to update the properties of the dropdown
 
 window.onload = function () {
     var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-    const customOptions = [
+    var customOptions = [
         { itemName: 'item1', itemValue: 'item1' },
         { itemName: 'item2', itemValue: 'item2' },
         { itemName: 'item3', itemValue: 'item3' }
@@ -1480,4 +1480,4 @@ window.onload = function () {
 
 </script>
 
-![DropDownBox Field Settings](../../../pdfviewer/images/Dropdown.png)
+![DropDownBox Field Settings](../../pdfviewer/images/Dropdown.png)
