@@ -4,7 +4,7 @@ title: Open PDF files from Azure Blob Storage in  EJ2 ASP.NET MVC PDF Viewer | S
 description: Learn here all about how to Open PDF files from Azure Blob Storage in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
