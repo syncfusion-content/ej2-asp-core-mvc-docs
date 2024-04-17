@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google Drive in ##Platform_Name## PDF Viewer Component
+title: Google Drive in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 description: Learn here all about how to Open PDF files from Google Drive in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
