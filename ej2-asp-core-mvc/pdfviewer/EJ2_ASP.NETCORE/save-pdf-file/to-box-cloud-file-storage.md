@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save PDF files to Box cloud file storage in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+title: Box cloud file storage in ##Platform_Name## PDF Viewer Component
 description: Save PDF files to Box cloud file storage in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Open PDF file from Box cloud file storage
+# Save PDF file to Box cloud file storage
 
 To save a PDF file to Box cloud file storage, you can follow the steps below
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Save PDF files from Google Drive in  EJ2 ASP.NET CORE PDF Viewer | Syncfusion
-description: Learn here all about how to Save PDF files from Google Drive in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Google Drive in ##Platform_Name## PDF Viewer Component
+description: Save PDF files to Google Drive in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
 publishingplatform: ##Platform_Name##

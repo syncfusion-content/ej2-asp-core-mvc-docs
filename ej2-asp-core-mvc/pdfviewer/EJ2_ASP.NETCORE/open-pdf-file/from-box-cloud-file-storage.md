@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open PDF files from Box cloud file storage in  EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+title: Box cloud file storage in ##Platform_Name## PDF Viewer Component
 description: Learn here all about how to Open PDF files from Box cloud file storage in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
