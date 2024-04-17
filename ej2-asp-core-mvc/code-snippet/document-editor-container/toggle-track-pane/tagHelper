@@ -1,5 +1,4 @@
-<ejs-button id="import" content="Load Document" onclick="onClick()"></ejs-button>
-<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true    enableTrackChanges=true created="onCreated" height="590px"></ejs-documenteditorcontainer>
+<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true    enableTrackChanges=true height="590px"></ejs-documenteditorcontainer>
 
 <script>
     var documenteditor;
