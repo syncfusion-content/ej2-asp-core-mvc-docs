@@ -930,6 +930,11 @@ The look and feel of the Scheduler events can be customized using any one of the
 
 Any kind of text, images and links can be added to customize the look of the events. The user can format and change the default appearance of the events by making use of the `template` option available within the `e-schedule-eventsettings` tag helper. The following code example customizes the appointment's default color and time format.
 
+Learn how easily you can customize the basic look and feel of ASP.NET Core Scheduler appointments using template from this video:
+
+{% youtube
+"youtube:https://www.youtube.com/watch?v=Op8cW9-8GIc"%}
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
