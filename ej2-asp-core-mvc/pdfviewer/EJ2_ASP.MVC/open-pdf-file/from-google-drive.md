@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Google Drive in ##Platform_Name## PDF Viewer Component
-description: Learn here all about how to Open PDF files from Google Drive in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: AWS S3 in ##Platform_Name## PDF Viewer Component
+description: Learn here all about how to Open PDF files from AWS S3 in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
 publishingplatform: ##Platform_Name##
@@ -121,7 +121,7 @@ N> Replace **Your Google Drive Folder ID**, **Your Application name**, **tokenPa
 
 **Step 4:** Set the PDF Viewer Properties in ASP.NET MVC PDF viewer component
 
-Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Google Drive. Ensure that you correctly pass the document name from the files available in your azure contanier to the documentPath property.
+Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Google Drive. Ensure that you correctly pass the document name from the files available in your azure container to the documentPath property.
 
 ```csharp
 
