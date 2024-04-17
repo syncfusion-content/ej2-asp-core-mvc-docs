@@ -1,0 +1,12 @@
+<div>
+    @Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).EnableTrackChanges(true).Render()
+</div>
+
+<script>
+    var documenteditor;
+    var container;
+    var documenteditorElement = document.getElementById("container");
+    container = documenteditorElement.ej2_instances[0];
+    container.documentEditor.showRevisions = true; // To show revisions pane
+    container.documentEditor.showRevisions = false; // To hide revisions pane
+</script>

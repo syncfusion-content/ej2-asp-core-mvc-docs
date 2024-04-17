@@ -35,6 +35,31 @@ The following example demonstrates how to enable track changes.
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
+## Show/Hide Revisions Pane
+ 
+The Show/Hide Revisions Pane feature in the Document Editor allows users to toggle the visibility of the revisions pane, providing flexibility in managing tracked changes within the document.
+ 
+The following example code illustrates how to show/hide the revisions pane.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/toggle-track-pane/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Track-changes-only.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/toggle-track-pane/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Track-changes-only.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
 ## Get all tracked revisions
 
 The following example demonstrate how to get all tracked revision from current document.
