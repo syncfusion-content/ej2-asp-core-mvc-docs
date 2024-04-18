@@ -20,8 +20,14 @@ You can club or group few points of the series based on [`groupTo`](https://help
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/grouping/group/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Group.cs" %}
-{% include code-snippet/chart/accumulation-charts/grouping/group/group.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class GroupingChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -51,8 +57,14 @@ You can visualize all points available in club or group points by clicking on th
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/grouping/slice/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Slice.cs" %}
-{% include code-snippet/chart/accumulation-charts/grouping/slice/slice.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class GroupingChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -80,8 +92,14 @@ Slice can also be grouped based on the number of points by specifying the [`grou
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/grouping/groupmode/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Groupmode.cs" %}
-{% include code-snippet/chart/accumulation-charts/grouping/groupmode/groupmode.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class GroupingChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -109,8 +127,14 @@ You can customize the grouped point and its data label using `pointRender` and `
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/grouping/custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/chart/accumulation-charts/grouping/custom/custom.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class GroupingChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
