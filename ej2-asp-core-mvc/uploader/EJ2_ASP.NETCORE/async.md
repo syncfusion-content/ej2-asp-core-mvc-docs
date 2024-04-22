@@ -202,6 +202,73 @@ public void Save(IList<IFormFile> chunkFile, IList<IFormFile> UploadFiles)
 
 ```
 
+### Server-side configuration for save action with returned response
+
+Here’s how to handle the server-side action for saving the file in server with returned response.
+
+```c#
+[AcceptVerbs("Post")]
+public IActionResult Save()
+{
+    // for JSON Data
+    try
+     {
+        // Process uploaded data
+        var responseData = new
+        {
+            Success = true,
+            Message = "Files uploaded successfully",
+            // Additional data can be added here
+        };
+
+        return Json(responseData);
+     }
+     catch (Exception e)
+     {
+         var errorResponse = new
+         {
+            Success = false,
+            Message = "File upload failed: " + e.Message
+         };
+
+         return Json(errorResponse);
+     }
+
+    // for String Data
+    try
+    {
+        // Process string data
+        var data = "success";
+        // Return the string data
+        return Content(data);
+    }
+    catch (Exception)
+    {
+        var data = "failed";
+        return Content(data);
+    }
+
+    // for File Data
+    try
+    {
+        // Example: Retrieve file path for stream.txt
+        var filePath = "stream.txt"; // Example file path
+        
+        // Get full file path
+        var fullPath = Path.GetFullPath(filePath);
+
+        // Return the file
+        return PhysicalFile(fullPath, "text/plain");
+    }
+    catch (Exception e)
+    {
+        // Handle file retrieval failure
+        return Content("Failed to retrieve file response: " + e.Message, "text/plain");
+    }
+}
+
+```
+
 ## Remove action
 
 The remove action is optional. Specify the URL to handle remove process from server. 
