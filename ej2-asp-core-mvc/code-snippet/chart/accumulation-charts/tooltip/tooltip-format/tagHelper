@@ -1,15 +1,28 @@
+@{
+    List<PieChartData> chartData = new List<PieChartData>
+    {
+        new PieChartData { xValue = "Chrome", yValue = 37 },
+        new PieChartData { xValue = "UC Browser", yValue = 17 },
+        new PieChartData { xValue = "iPhone", yValue = 19 },
+        new PieChartData { xValue = "Others", yValue = 4  },
+        new PieChartData { xValue = "Opera", yValue = 11 },
+        new PieChartData { xValue = "Android", yValue = 12 },
+    };
+}
 
-      <ejs-accumulationchart id="container" title="Mobile Browser Statistics">
-         <e-accumulationchart-tooltipsettings enable="true"
-         template="<div id='templateWrap' style='background-color:#bd18f9;border-radius: 3px; float: right;padding: 2px;line-height: 20px;text-align: center;'>"+
-                 "<img src='sun_annotation.png' />" +
-                 "<div style='color:white; font-family:Roboto; font-style: medium; fontp-size:14px;float: right;padding: 2px;line-height: 20px;text-align: center;padding-right:6px'><span>${y}</span></div></div>" ))
-                 ></e-accumulationchart-tooltipsettings>
-            <e-accumulationchart-legendsettings visible="false">
-            </e-accumulationchart-legendsettings>
-            <e-accumulation-series-collection>
-                <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser">
-                </e-accumulation-series>
-            </e-accumulation-series-collection>
-        </ejs-accumulationchart>
- 
+<script id="chartMaterial" type="text/x-template">
+    <div id='templateWrap' style='background-color:#bd18f9;border-radius: 3px; float: right;padding: 2px;line-height: 20px;text-align: center;'>
+        <img src='sun_annotation.png' />
+        <div style='color:white; font-family:Roboto; font-style: medium; fontp-size:14px;float: right;padding: 2px;line-height: 20px;text-align: center;padding-right:6px'><span>${y}</span></div>
+    </div>
+</script>
+
+<ejs-accumulationchart id="container" title="Mobile Browser Statistics">
+    <e-accumulationchart-tooltipsettings enable="true" template="#chartMaterial"></e-accumulationchart-tooltipsettings>
+    <e-accumulationchart-legendsettings visible="false">
+    </e-accumulationchart-legendsettings>
+    <e-accumulation-series-collection>
+        <e-accumulation-series dataSource="chartData" xName="xValue" yName="yValue" name="Browser">
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>

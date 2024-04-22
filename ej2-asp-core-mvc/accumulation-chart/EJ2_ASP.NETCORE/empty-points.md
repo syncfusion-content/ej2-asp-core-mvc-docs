@@ -19,8 +19,13 @@ The data points those uses the `null` or `undefined` as value are considered as 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/empty-points/empty/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Empty.cs" %}
-{% include code-snippet/chart/accumulation-charts/empty-points/empty/empty.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class EmptyPointsChartData
+{
+    public string xValue;
+    public Nullable<double> yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -48,8 +53,13 @@ Specific color for an empty point can be set by using the `fill` property in `em
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/empty-points/custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/chart/accumulation-charts/empty-points/custom/custom.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class EmptyPointsChartData
+{
+    public string xValue;
+    public Nullable<double> yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
