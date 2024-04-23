@@ -1,0 +1,16 @@
+<ejs-button id="export">Export</ejs-button>
+<div id="documenteditor" style="width:100%;height:100%">
+    <ejs-documenteditorcontainer id="container" isReadOnly=false enableEditor=true enableSelection=true enableSfdtExport=true></ejs-documenteditorcontainer> 
+</div>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        container.resize();
+        document.getElementById('export').addEventListener('click', function () {
+            container.documentEditor.save('sample', 'Docx');
+        });
+    }); 
+</script>
