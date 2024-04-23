@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dragging Of Panels in ##Platform_Name## Dashboard Layout Component
+title: Dragging Of Panels in ##Platform_Name## Dashboard Layout Component | Syncfusion
 description: Learn here all about Dragging Of Panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dragging Of Panels
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dragging of panels
+# Dragging of Panels in ASP.NET Core Dashboard Layout Component
 
 The Dashboard Layout component is provided with dragging functionality to drag and reorder the panels within the layout. While dragging a panel, a holder will be highlighted below the panel indicating the panel placement on panel drop. This helps the user to decide whether to place the panel in the current position or revert to previous position without disturbing the layout.
 
