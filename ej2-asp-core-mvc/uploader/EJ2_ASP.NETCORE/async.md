@@ -204,7 +204,7 @@ public void Save(IList<IFormFile> chunkFile, IList<IFormFile> UploadFiles)
 
 ### Server-side configure save action to returned response
 
-The following example demonstrates how the server-side action for saving the file in server to returned response in JSON, String and File type datas.
+The following example demonstrates how the server-side action for saving the file in server to returned response in JSON, String and File type data's.
 
 ```c#
 [AcceptVerbs("Post")]
