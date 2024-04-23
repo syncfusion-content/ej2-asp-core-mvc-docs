@@ -167,9 +167,9 @@ public void Save()
 }
 ```
 
-### Server-side configuration for save action with returned response
+### Server-side configure save action to returned response
 
-Here’s how to handle the server-side action for saving the file in server with returned response.
+The following example demonstrates how the server-side action for saving the file in server to returned response in JSON, String and file type datas
 
 ```c#
 [AcceptVerbs("Post")]
