@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotation in ##Platform_Name## Accumulation Chart Component
+title: Annotation in ##Platform_Name## Accumulation Chart Component | Syncfusion
 description: Learn here all about Annotation in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Annotation
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Annotation
+# Annotation in ##Platform_Name## Accumulation Chart Component
 
 The annotations are used to mark the specific area of interest in the chart area with texts, shapes or images.
 

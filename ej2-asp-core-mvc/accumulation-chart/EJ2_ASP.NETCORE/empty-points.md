@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Empty Points in ##Platform_Name## Accumulation Chart Component
+title: Empty Points in ##Platform_Name## Accumulation Chart Component | Syncfusion
 description: Learn here all about Empty Points in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Empty Points
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Empty Points
+# Empty Points in ##Platform_Name## Accumulation Chart Component
 
 The data points those uses the `null` or `undefined` as value are considered as empty points. The empty data points are ignored and not plotted in the chart. You can customize those points, using the `emptyPointSettings` property in series. The default mode of the empty point is `Gap`. Other supported modes are `Average` and `Zero`.
 
