@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Measurement Annotation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Measurement Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Measurement Annotation in ##Platform_Name## PDF Viewer Component | Syncfusion
+description: Learn here all about Measurement Annotation in Syncfusion ##Platform_Name## PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Measurement Annotation
 publishingplatform: ##Platform_Name##

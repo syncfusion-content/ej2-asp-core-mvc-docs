@@ -4,7 +4,7 @@ title: Measurement Annotation in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
 description: Learn here all about Measurement Annotation in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Measurement Annotation
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
