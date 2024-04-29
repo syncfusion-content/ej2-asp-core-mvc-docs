@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Sticky Notes Annotation in the ASP.NET MVC PDF Viewer component
 
 The PDF Viewer control provides the options to add, edit, and delete the sticky note annotations in the PDF document.
@@ -33,6 +32,104 @@ Annotation comments can be added to the PDF document using the comment panel.
 * Now, you can add Comments, Reply, and Status using the Comment Panel.
 
 ![StickyNotesComment](../images/stickynotes_comment.png)
+
+## Adding a sticky note annotation to the PDF document Programmatically
+
+With the PDF Viewer library, you can add a sticky note annotation to the PDF Viewer control programmatically using the **addAnnotation()** method.
+
+Here's a example of how you can utilize the **addAnnotation()** method to include a sticky note annotation programmatically:
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="set" onclick="addAnnotation()">Add annotation programmatically</button>
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+    </div>
+<script>
+  function addAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    viewer.annotation.addAnnotation("StickyNotes", {
+      offset: { x: 100, y: 200 },
+      pageNumber: 1,
+      isLock: false
+    });
+  }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="set" onclick="addAnnotation()">Add annotation programmatically</button>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+</div>
+<script>
+  function addAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    viewer.annotation.addAnnotation("StickyNotes", {
+      offset: { x: 100, y: 200 },
+      pageNumber: 1,
+      isLock: false
+    });
+  }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Edit the existing sticky note annotation programmatically
+
+To modify existing sticky note annotation in the Syncfusion PDF viewer programmatically, you can use the **editAnnotation()** method.
+
+Here is an example of how you can use the **editAnnotation()** method:
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="set" onclick="editAnnotation()">Edit annotation programmatically</button>
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+    </div>
+<script>
+  function editAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    for (let i = 0; i < viewer.annotationCollection.length; i++) 
+    {
+      if (viewer.annotationCollection[i].shapeAnnotationType === "sticky") {
+        var width = viewer.annotationCollection[i].bounds.width;
+        var height = viewer.annotationCollection[i].bounds.height;
+        viewer.annotationCollection[i].bounds = {x : 100, y: 100, width: width, height: height }; 
+        viewer.annotation.editAnnotation(viewer.annotationCollection[i]);
+      }
+    }
+  }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="set" onclick="editAnnotation()">Edit annotation programmatically</button>
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+    </div>
+<script>
+  function editAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    for (let i = 0; i < viewer.annotationCollection.length; i++) 
+    {
+      if (viewer.annotationCollection[i].shapeAnnotationType === "sticky") {
+        var width = viewer.annotationCollection[i].bounds.width;
+        var height = viewer.annotationCollection[i].bounds.height;
+        viewer.annotationCollection[i].bounds = {x : 100, y: 100, width: width, height: height }; 
+        viewer.annotation.editAnnotation(viewer.annotationCollection[i]);
+      }
+    }
+  }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Editing the properties of the sticky note annotation
 

@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Comments in the ASP.NET Core PDF Viewer component
 
 The PDF Viewer control provides options to add, edit, and delete the comments to the following annotation in the PDF documents:
