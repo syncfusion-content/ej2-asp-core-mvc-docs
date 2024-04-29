@@ -10,7 +10,7 @@ documentation: ug
 
 
 <!-- markdownlint-disable MD002 MD022 -->
-# Spinner
+# Spinner and progress in ##Platform_Name## Progress Button
 
 ## Change spinner position
 
