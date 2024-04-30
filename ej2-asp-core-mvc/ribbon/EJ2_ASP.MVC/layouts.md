@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Layouts in ASP.NET MVC Ribbon Control
+# Layouts in ASP.NET MVC Ribbon control
 
 The Ribbon allows to customize the layout by using the [ActiveLayout](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_ActiveLayout) property. The Ribbon control supports the following layouts:
 

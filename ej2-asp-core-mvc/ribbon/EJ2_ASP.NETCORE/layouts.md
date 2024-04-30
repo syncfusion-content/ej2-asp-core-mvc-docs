@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Layouts in ASP.NET Core Ribbon Control
+# Layouts in ASP.NET Core Ribbon control
 
 The Ribbon allows to customize the layout by using the [activeLayout](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_ActiveLayout) property. The Ribbon control supports the following layouts:
 
