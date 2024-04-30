@@ -83,7 +83,6 @@
                     break;
             }
         }
-
         function appendDropdownBtn(id) {
             var ddlItem = [
                 {

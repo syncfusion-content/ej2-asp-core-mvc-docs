@@ -74,7 +74,6 @@
             case 'CSV': this.save({ saveType: 'Csv' });
                 break;
         }}
-
     function appendDropdownBtn(id) {
         var ddlItem = [
             {
