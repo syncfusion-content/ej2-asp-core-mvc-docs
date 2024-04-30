@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Ribbon Layouts
+# Layouts in ASP.NET MVC Ribbon control
 
 The Ribbon allows to customize the layout by using the [ActiveLayout](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_ActiveLayout) property. The Ribbon control supports the following layouts:
 
@@ -26,7 +26,7 @@ In classic layout, the Ribbon control organizes the items and groups in a tradit
 
 ### Defining items size
 
-You can use the [AllowedSizes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property to set the allowed size for an item. The Ribbon items can be appeared in three different sizes: Large(large icon with text), Medium(small icon with text) and Small(small icon only). On resizing, the items size can be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.
+You can use the [AllowedSizes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_AllowedSizes) property to set the allowed size for an item. The Ribbon items can be appeared in three different sizes: Large(large icon with text), Medium(small icon with text) and Small(small icon only). On resizing, the items size can be changed based on the available width of the tab content from the order of Large-> Medium-> Small and vice versa.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -159,3 +159,15 @@ You can use the [IsMinimized](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncf
 {% endtabs %}
 
 ![ASP.NET MVC Ribbon Control in Minimized state](images/ribbon-minimize.png)
+
+## Show hide the layout switcher
+
+You can use the [hideLayoutSwitcher](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_HideLayoutSwitcher) property to show/hide the Ribbon layout switcher button. By default, the value is `false`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ribbon/layouts/hideLayoutSwitcher/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Ribbon Control layout switcher](./images/ribbon-layout-switcher.png)
