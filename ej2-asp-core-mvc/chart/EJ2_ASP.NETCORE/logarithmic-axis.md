@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Logarithmic Axis in ##Platform_Name## Chart Component
+title: Logarithmic Axis in ##Platform_Name## Chart Component | Syncfusion
 description: Learn here all about Logarithmic Axis in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Logarithmic Axis
@@ -9,11 +9,15 @@ documentation: ug
 ---
 
 
-# Logarithmic Axis
+# ASP.NET Core Logarithmic Axis
 
 <!-- markdownlint-disable MD033 -->
 
 Logarithmic axis uses logarithmic scale and it is very useful in visualizing data, when it has numeric values in both lower order of magnitude (eg: 10<sup>-6</sup>) and higher order of magnitude (eg: 10<sup>6</sup>).
+
+To quickly get started with Syncfusion ASP.NET Core Logarithmic Axis, you can check out this video:
+
+{% youtube "https://www.youtube.com/watch?v=l3M5ZvM1Ozs" %}
 
 {% if page.publishingplatform == "aspnet-core" %}
 
