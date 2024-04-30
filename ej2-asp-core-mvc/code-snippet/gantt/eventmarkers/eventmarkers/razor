@@ -9,7 +9,7 @@
     ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
     ).EventMarkers(em =>
             {
-                em.Day("04/10/2019").Label("Project approval and kick-off").CssClass("e-custom-event-marker").Add();
+                em.Day("04/10/2024").Label("Project approval and kick-off").CssClass("e-custom-event-marker").Add();
             }).Render()
         
    

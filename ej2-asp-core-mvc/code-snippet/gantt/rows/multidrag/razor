@@ -3,5 +3,5 @@
       "Duration").Progress("Progress").Dependency("Predecessor").Child("SubTasks")).SelectionSettings(sel =>
 		   {
 			sel.Type(SelectionType.Multiple);
-		}).ProjectStartDate("03/24/2019").ProjectEndDate("07/06/2019").Render()
+		}).ProjectStartDate("03/24/2024").ProjectEndDate("07/06/2024").Render()
         

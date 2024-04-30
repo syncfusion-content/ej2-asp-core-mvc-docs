@@ -10,6 +10,6 @@
                 endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
         </e-gantt-taskfields>
         <e-gantt-eventmarkers>
-            <e-gantt-eventmarker day="04/10/2019" label="Project approval and kick-off" cssClass="e-custom-event-marker"></e-gantt-eventmarker>
+            <e-gantt-eventmarker day="04/10/2024" label="Project approval and kick-off" cssClass="e-custom-event-marker"></e-gantt-eventmarker>
         </e-gantt-eventmarkers>
     </ejs-gantt>

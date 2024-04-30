@@ -132,11 +132,11 @@ You can also use the custom format string to format the date values. Some of the
 
 |Format | Formatted value|
 |-----|-----|
-|{ type:'date', format:'dd/MM/yyyy' } | 04/07/2019|
-|{ type:'date', format:'dd.MM.yyyy' } | 04.07.2019|
+|{ type:'date', format:'dd/MM/yyyy' } | 04/07/2024|
+|{ type:'date', format:'dd.MM.yyyy' } | 04.07.2024|
 |{ type:'date', skeleton:'short' } | 7/4/19|
-|{ type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/2019 12:00 AM|
-|{ type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2019 12:00:00 AM|
+|{ type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/2024 12:00 AM|
+|{ type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2024 12:00:00 AM|
 
 {% if page.publishingplatform == "aspnet-core" %}
 

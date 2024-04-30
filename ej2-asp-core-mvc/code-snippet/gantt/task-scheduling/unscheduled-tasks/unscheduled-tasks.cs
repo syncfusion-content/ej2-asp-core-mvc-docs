@@ -20,8 +20,8 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 1,
                 TaskName = "Task 1",
-                StartDate = new DateTime(2019, 01, 03),
-                EndDate = new DateTime(2019, 01, 08),
+                StartDate = new DateTime(2024, 01, 03),
+                EndDate = new DateTime(2024, 01, 08),
                 Duration = 5,
                 TaskType = "",
             };
@@ -36,7 +36,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 3,
                 TaskName = "Task 3",
-                StartDate = new DateTime(2019, 01, 03),
+                StartDate = new DateTime(2024, 01, 03),
                 TaskType = "Task with start date only",
 
             };
@@ -44,7 +44,7 @@ namespace WebApplication8.Controllers
             {
                 TaskId = 4,
                 TaskName = "Task 4",
-                EndDate = new DateTime(2019, 01, 08),
+                EndDate = new DateTime(2024, 01, 08),
                 TaskType = "Task with end date only",
             };
             ganttData.Add(record1);

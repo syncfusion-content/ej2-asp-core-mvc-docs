@@ -11,15 +11,15 @@ public static List<GanttDataSource> ganttData()
             {
                 TaskId = 1,
                 TaskName = "Project initiation",
-                StartDate = new DateTime(2019, 04, 02),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 02),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Child1 = new GanttDataSource()
             {
                 TaskId = 2,
                 TaskName = "Identify site locàtion",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 4,
                 Progress = 50,
                 ResourceId = new int[] { 1 },
@@ -28,7 +28,7 @@ public static List<GanttDataSource> ganttData()
             {
                 TaskId = 3,
                 TaskName = "Perförm soil test",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 4,
                 Progress = 50,
                 ResourceId = new int[] { 2, 3, 5 },
@@ -37,7 +37,7 @@ public static List<GanttDataSource> ganttData()
             {
                 TaskId = 4,
                 TaskName = "Soil tëst appröval",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 4,
                 Progress = 50,
             };
@@ -49,15 +49,15 @@ public static List<GanttDataSource> ganttData()
             {
                 TaskId = 5,
                 TaskName = "Project estimation",
-                StartDate = new DateTime(2019, 04, 02),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 02),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Child4 = new GanttDataSource()
             {
                 TaskId = 6,
                 TaskName = "Develop floor plan for estimation",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 3,
                 Progress = 50,
                 ResourceId = new int[] { 4 },
@@ -67,7 +67,7 @@ public static List<GanttDataSource> ganttData()
             {
                 TaskId = 7,
                 TaskName = "List materials",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 3,
                 Progress = 50,
                 ResourceId = new int[] { 4, 8 },

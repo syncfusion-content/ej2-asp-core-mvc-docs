@@ -12,8 +12,8 @@ public static List<GanttDataSource> ProjectNewData()
             {
                 TaskId = 1,
                 TaskName = "Product concept",
-                StartDate = new DateTime(2019, 04, 02),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 02),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
 
@@ -21,7 +21,7 @@ public static List<GanttDataSource> ProjectNewData()
             {
                 TaskId = 2,
                 TaskName = "Defining the product and its usage",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Progress = 30,
                 Duration = 3,
             };
@@ -30,7 +30,7 @@ public static List<GanttDataSource> ProjectNewData()
             {
                 TaskId = 3,
                 TaskName = "Defining target audience",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 3,
                 Predecessor = "2FS+2d"
             };
@@ -39,7 +39,7 @@ public static List<GanttDataSource> ProjectNewData()
             {
                 TaskId = 4,
                 TaskName = "Prepare product sketch and notes",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Progress = 30,
                 Duration = 2,
                 Predecessor = "3FF+960m"
@@ -52,7 +52,7 @@ public static List<GanttDataSource> ProjectNewData()
             {
                 TaskId = 5,
                 TaskName = "Concept approval",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 0,
                 SubTasks = new List<GanttDataSource>(),
                
@@ -61,8 +61,8 @@ public static List<GanttDataSource> ProjectNewData()
             {
                 TaskId = 6,
                 TaskName = "Demand analysis",
-                StartDate = new DateTime(2019, 04, 04),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 04),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
 
@@ -70,7 +70,7 @@ public static List<GanttDataSource> ProjectNewData()
             {
                 TaskId = 7,
                 TaskName = "Customer strength",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Progress = 30,
                 Predecessor = "6SS+16h"

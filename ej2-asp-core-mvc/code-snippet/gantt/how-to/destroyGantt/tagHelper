@@ -9,7 +9,7 @@
                              endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
                     </e-gantt-taskfields>
                     <e-gantt-holidays>
-                        <e-gantt-holiday from="04/11/2019" to="04/12/2019" label="Public holidays" cssClass="e-custom-holiday"></e-gantt-holiday>
-                        <e-gantt-holiday from="04/01/2019" to="04/01/2019" label="Public holiday" cssClass="e-custom-holiday"></e-gantt-holiday>
+                        <e-gantt-holiday from="04/11/2024" to="04/12/2024" label="Public holidays" cssClass="e-custom-holiday"></e-gantt-holiday>
+                        <e-gantt-holiday from="04/01/2024" to="04/01/2024" label="Public holiday" cssClass="e-custom-holiday"></e-gantt-holiday>
                     </e-gantt-holidays>
   </ejs-gantt>

@@ -12,8 +12,8 @@ public IActionResult Index()
             {
                 TaskId = 1,
                 TaskName = "Product Concept",
-                StartDate = new DateTime(2019, 04, 02),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 02),
+                EndDate = new DateTime(2024, 04, 21),
                 isExpand = false,
                 SubTasks = new List<GanttDataSource>(),
             };
@@ -21,7 +21,7 @@ public IActionResult Index()
             {
                 TaskId = 2,
                 TaskName = "Defining the product and its usage",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 3,
                 Progress = 30
               
@@ -30,7 +30,7 @@ public IActionResult Index()
             {
                 TaskId = 3,
                 TaskName = "Defining target audience",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 3,
                 
             };
@@ -38,7 +38,7 @@ public IActionResult Index()
             {
                 TaskId = 4,
                 TaskName = "Prepare product sketch and notes",
-                StartDate = new DateTime(2019, 04, 10),
+                StartDate = new DateTime(2024, 04, 10),
                 Duration = 3,
                 Progress = 30
             };
@@ -50,8 +50,8 @@ public IActionResult Index()
             {
                 TaskId = 5,
                 TaskName = "Feedback and Testing",
-                StartDate = new DateTime(2019, 04, 04),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 04),
+                EndDate = new DateTime(2024, 04, 21),
                 isExpand = true,
                 SubTasks = new List<GanttDataSource>()
             };
@@ -59,7 +59,7 @@ public IActionResult Index()
             {
                 TaskId = 6,
                 TaskName = "Internal testing and feedback",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 5,
                 Progress = 30
             };
@@ -67,7 +67,7 @@ public IActionResult Index()
             {
                 TaskId = 7,
                 TaskName = "Customer testing and feedback",
-                StartDate = new DateTime(2019, 04, 10),
+                StartDate = new DateTime(2024, 04, 10),
                 Duration = 7,
                 Progress = 30
             };
@@ -78,8 +78,8 @@ public IActionResult Index()
             {
                 TaskId = 8,
                 TaskName = "Product Development",
-                StartDate = new DateTime(2019, 04, 04),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 04),
+                EndDate = new DateTime(2024, 04, 21),
                 isExpand = false,
                 SubTasks = new List<GanttDataSource>()
             };
@@ -87,7 +87,7 @@ public IActionResult Index()
             {
                 TaskId = 9,
                 TaskName = "Important improvements",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 2,
                 Progress = 30
             };
@@ -95,7 +95,7 @@ public IActionResult Index()
             {
                 TaskId = 10,
                 TaskName = "Address any unforeseen issues",
-                StartDate = new DateTime(2019, 04, 06),
+                StartDate = new DateTime(2024, 04, 06),
                 Duration = 2,
                 Progress = 30
             };
@@ -106,8 +106,8 @@ public IActionResult Index()
             {
                 TaskId = 11,
                 TaskName = "Final Product",
-                StartDate = new DateTime(2019, 04, 04),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 04),
+                EndDate = new DateTime(2024, 04, 21),
                 isExpand = false,
                 SubTasks = new List<GanttDataSource>()
             };
@@ -115,14 +115,14 @@ public IActionResult Index()
             {
                 TaskId = 12,
                 TaskName = "Branding product",
-                StartDate = new DateTime(2019, 04, 06),
+                StartDate = new DateTime(2024, 04, 06),
                 Duration = 5
             };
             GanttDataSource Child9 = new GanttDataSource()
             {
                 TaskId = 13,
                 TaskName = "Marketing and pre-sales",
-                StartDate = new DateTime(2019, 04, 12),
+                StartDate = new DateTime(2024, 04, 12),
                 Duration = 10,
                 Progress = 30
             };

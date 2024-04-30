@@ -9,7 +9,7 @@
             var data = {
                 TaskId: 3,
                 TaskName: 'Updated by index value',
-                StartDate: new Date('04/02/2019'),
+                StartDate: new Date('04/02/2024'),
                 Duration: 4,
                 Progress: 50
             };

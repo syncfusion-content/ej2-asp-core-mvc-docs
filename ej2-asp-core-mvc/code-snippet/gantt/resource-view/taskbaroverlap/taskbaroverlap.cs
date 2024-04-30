@@ -12,15 +12,15 @@ public ActionResult Index()
             {
                 TaskId = 1,
                 TaskName = "Project Initiation",
-                StartDate = new DateTime(2019, 03, 29),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 03, 29),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Record1Child1 = new GanttDataSource()
             {
                 TaskId = 2,
                 TaskName = "Identify Site Location",
-                StartDate = new DateTime(2019, 03, 29),
+                StartDate = new DateTime(2024, 03, 29),
                 Duration = 3,
                 Progress = 30,
                 Work = 10,
@@ -33,7 +33,7 @@ public ActionResult Index()
             {
                 TaskId = 3,
                 TaskName = "Perform Soil Test",
-                StartDate = new DateTime(2019, 04, 03),
+                StartDate = new DateTime(2024, 04, 03),
                 Duration = 4,
                 Resources = new List<ResourceModel>
                 {
@@ -47,7 +47,7 @@ public ActionResult Index()
             {
                 TaskId = 4,
                 TaskName = "Soil Test Approval",
-                StartDate = new DateTime(2019, 04, 09),
+                StartDate = new DateTime(2024, 04, 09),
                 Duration = 4,
                 Resources = new List<ResourceModel>
                 {
@@ -65,15 +65,15 @@ public ActionResult Index()
             {
                 TaskId = 5,
                 TaskName = "Project Estimation",
-                StartDate = new DateTime(2019, 03, 29),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 03, 29),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>()
             };
             GanttDataSource Record2Child1 = new GanttDataSource()
             {
                 TaskId = 6,
                 TaskName = "Develop Floor Plan for Estimation",
-                StartDate = new DateTime(2019, 04, 01),
+                StartDate = new DateTime(2024, 04, 01),
                 Duration = 5,
                 Progress = 30,
                 Resources = new List<ResourceModel>
@@ -86,7 +86,7 @@ public ActionResult Index()
             {
                 TaskId = 7,
                 TaskName = "List Materials",
-                StartDate = new DateTime(2019, 04, 04),
+                StartDate = new DateTime(2024, 04, 04),
                 Duration = 4,
                 Resources = new List<ResourceModel>
                 {
@@ -100,7 +100,7 @@ public ActionResult Index()
             {
                 TaskId = 8,
                 TaskName = "Estimation Approval",
-                StartDate = new DateTime(2019, 04, 09),
+                StartDate = new DateTime(2024, 04, 09),
                 Duration = 4,
                 Resources = new List<ResourceModel>
                 {
@@ -118,7 +118,7 @@ public ActionResult Index()
             {
                 TaskId = 9,
                 TaskName = "Sign Contract",
-                StartDate = new DateTime(2019, 04, 09),
+                StartDate = new DateTime(2024, 04, 09),
                 Duration = 1,
                 Resources = new List<ResourceModel>
                 {

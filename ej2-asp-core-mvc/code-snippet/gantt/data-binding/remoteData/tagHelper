@@ -1,4 +1,4 @@
-                <ejs-gantt id='RemoteData' treeColumnIndex="0" height="450px" projectStartDate="02/24/2019" projectEndDate="06/10/2019">
+                <ejs-gantt id='RemoteData' treeColumnIndex="0" height="450px" projectStartDate="02/24/2024" projectEndDate="06/10/2024">
                     <e-data-manager url="https://ej2services.syncfusion.com/production/web-services/api/GanttData" adaptor="WebApiAdaptor" crossDomain="true"></e-data-manager>
                     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
                           duration="Duration" progress="Progress" dependency="Predecessor" child="SubTasks">

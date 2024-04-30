@@ -12,15 +12,15 @@ public IActionResult Index()
             {
                 TaskId = 1,
                 TaskName = "Project initiation",
-                StartDate = new DateTime(2019, 04, 02),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 02),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Child1 = new GanttDataSource()
             {
                 TaskId = 2,
                 TaskName = "Identify site location",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 5,
                 Progress = 70,
             };
@@ -28,7 +28,7 @@ public IActionResult Index()
             {
                 TaskId = 3,
                 TaskName = "Perform soil test",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 5,
                 Progress = 50,
             };
@@ -36,7 +36,7 @@ public IActionResult Index()
             {
                 TaskId = 4,
                 TaskName = "Soil test approval",
-                StartDate = new DateTime(2019, 04, 02),
+                StartDate = new DateTime(2024, 04, 02),
                 Duration = 5,
                 Progress = 50,
 
@@ -49,15 +49,15 @@ public IActionResult Index()
             {
                 TaskId = 5,
                 TaskName = "Project estimation",
-                StartDate = new DateTime(2019, 04, 02),
-                EndDate = new DateTime(2019, 04, 21),
+                StartDate = new DateTime(2024, 04, 02),
+                EndDate = new DateTime(2024, 04, 21),
                 SubTasks = new List<GanttDataSource>(),
             };
             GanttDataSource Child4 = new GanttDataSource()
             {
                 TaskId = 6,
                 TaskName = "Develop floor plan for estimation",
-                StartDate = new DateTime(2019, 04, 02, 8, 10, 0),
+                StartDate = new DateTime(2024, 04, 02, 8, 10, 0),
                 Duration = 5,
                 Progress = 70,
             };
@@ -65,7 +65,7 @@ public IActionResult Index()
             {
                 TaskId = 7,
                 TaskName = "List materials",
-                StartDate = new DateTime(2019, 04, 02, 8, 10, 0),
+                StartDate = new DateTime(2024, 04, 02, 8, 10, 0),
                 Duration = 5,
                 Progress = 50,
             };

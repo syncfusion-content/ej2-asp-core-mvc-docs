@@ -2,8 +2,8 @@
      ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency(
          "Predecessor").Child("SubTasks")).Toolbar(new List<string>()
          {"Edit","ZoomToFit" }).LabelSettings(ls => ls.LeftLabel("TaskName")).EditSettings(es =>
-       es.AllowTaskbarEditing(true).AllowEditing(true)).ProjectStartDate("03/24/2019").ProjectEndDate(
-             "04/28/2019").Render()
+       es.AllowTaskbarEditing(true).AllowEditing(true)).ProjectStartDate("03/24/2024").ProjectEndDate(
+             "04/28/2024").Render()
 
 <script>
     function actionComplete(args) {

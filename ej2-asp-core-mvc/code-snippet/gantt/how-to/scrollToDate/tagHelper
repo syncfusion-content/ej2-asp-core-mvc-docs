@@ -8,6 +8,6 @@
 	<script>
         document.getElementById('scrollToDate').addEventListener('click', function (args) {
             var ganttObj = document.getElementById('Gantt').ej2_instances[0];
-            ganttObj.scrollToDate('05/20/2019');
+            ganttObj.scrollToDate('05/20/2024');
         });
     </script>

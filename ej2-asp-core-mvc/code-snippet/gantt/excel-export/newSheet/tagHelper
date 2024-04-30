@@ -1,5 +1,5 @@
 <ejs-gantt id='GanttContainer1' dataSource="ViewBag.FirstData" height="280px" allowExcelExport="true"
-    toolbar="@(new List<string>() { "ExcelExport"})" toolbarClick="toolbarClick" treeColumnIndex="1" projectStartDate="03/31/2019" projectEndDate="04/14/2019">
+    toolbar="@(new List<string>() { "ExcelExport"})" toolbarClick="toolbarClick" treeColumnIndex="1" projectStartDate="03/31/2024" projectEndDate="04/14/2024">
     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" child="SubTasks">
     </e-gantt-taskfields>
 </ejs-gantt>
