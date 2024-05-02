@@ -94,6 +94,25 @@ When you want to reapply the filter after some changes happened in the rows. It 
 The following errors have been handled for filtering,
 * *Out of range validation:* When the selected range is not a used range of the active sheet, it is considered as invalid and the out of range alert with the message `Select a cell or range inside the used range and try again` will be displayed. No filter will be performed if the range is invalid.
 
+## Show all the possible data to filter
+
+We initially display filter values for up to 1000 rows in the opened filter popup in our spreadsheet, which is our default behavior.
+
+To display filter values beyond the 1000 rows, you can assign your required count value to the `filterChoiceCount` parameter from the event's arguments in the [`actionBegin`](https://ej2.syncfusion.com/documentation/api/spreadsheet/#actionbegin) event.
+
+Ensure that the `requestType` from the actionBegin event arguments is `filterchoicerequest`, and then set the count value to the `filterChoiceCount` parameter according to your specific requirements.
+
+```javascript
+
+    function actionBegin (args) {
+        if (args.requestType && args.requestType === 'filterchoicerequest') {
+            var spreadsheet = document.getElementById("spreadsheet").ej2_instances[0];
+            var activeSheet = spreadsheet.getActiveSheet();
+            args.filterChoiceCount = activeSheet.usedRange.rowIndex + 1; // Here, we used the rowIndex of the usedRange to show data up to the last row of the used range in the filter popup.
+        }
+    }
+```
+
 ## Limitations
 
 The following features have some limitations in Filter:
