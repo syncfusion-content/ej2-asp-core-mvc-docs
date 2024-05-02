@@ -54,7 +54,6 @@ The following example shows how to export documents in document editor as Syncfu
 {% include code-snippet/document-editor/export-sfdt/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -103,7 +102,6 @@ The following example shows how to export the document as Word document (.docx).
 {% include code-snippet/document-editor/export-docx/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -154,7 +152,6 @@ The following example shows how to export the document as Word Template (.dotx).
 {% include code-snippet/document-editor/export-dotx/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -200,7 +197,6 @@ The following example shows how to export document as text document (.txt).
 {% include code-snippet/document-editor/export-txt/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -244,7 +240,6 @@ Document editor also supports API to store the document into a blob.
 {% endhighlight %}
 {% highlight c# tabtitle="Export-blob.cs" %}
 {% endhighlight %}{% endtabs %}
-{% endif %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
