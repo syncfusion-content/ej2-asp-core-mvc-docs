@@ -9,16 +9,16 @@ documentation: ug
 ---
 
 
-# Export in Document Editor Component
+# Export in Document Editor Component 
 
 Document editor exports the document into various known file formats in client-side such as Microsoft Word document (.docx), text document (.txt), and its own format called **Syncfusion Document Text (.sfdt)**.
 
 We are providing two types of save APIs  as mentioned below.
 
-|API name|Purpose|
-|--------|---------|
-|save(filename,FormatType):void<br>FormatType: Sfdt or Docx or Txt|Creates the document with specified file name and format type. Then, the created file is downloaded in the client browser by default.|
-|saveAsBlob(FormatType):Blob|Creates the document in specified format type and returns the created document as Blob.<br>This blob can be uploaded to your required server, database, or file path.|
+|API name|Purpose|Code Snippet for Document Editor|Code Snippet for Document Editor Container|
+|--------|---------|----------|----------|
+|save(filename,FormatType):void<br>FormatType: Sfdt or Docx or Txt|Creates the document with specified file name and format type. Then, the created file is downloaded in the client browser by default.|documenteditor.save('sample', 'Docx')|container.documentEditor.save('sample', 'Docx')|
+|saveAsBlob(FormatType):Blob|Creates the document in specified format type and returns the created document as Blob.<br>This blob can be uploaded to your required server, database, or file path.|documenteditor.saveAsBlob('Docx')|container.documentEditor.saveAsBlob('Docx')|
 
 ## Sfdt export
 
@@ -35,6 +35,15 @@ The following example shows how to export documents in document editor as Syncfu
 {% endhighlight %}
 {% endtabs %}
 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/export-container-sfdt/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor-container/export-container-sfdt/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
@@ -47,6 +56,15 @@ The following example shows how to export documents in document editor as Syncfu
 {% endtabs %}
 {% endif %}
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/export-container-sfdt/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor-container/export-container-sfdt/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 N>To enable Sfdt export for a document editor instance, set [`enableSfdtExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_EnableSfdtExport) to true.
@@ -66,6 +84,15 @@ The following example shows how to export the document as Word document (.docx).
 {% endhighlight %}
 {% endtabs %}
 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/export-container-docx/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor-container/export-container-docx/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
@@ -78,9 +105,66 @@ The following example shows how to export the document as Word document (.docx).
 {% endtabs %}
 {% endif %}
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/export-container-docx/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor-container/export-container-docx/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 N>To enable word export for a document editor instance, set [`enableWordExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_EnableWordExport) to true.
+
+## Word Template Export 
+
+The following example shows how to export the document as Word Template (.dotx).
+
+>Note: The Syncfusion Document Editor component's document pagination (page-by-page display) can't be guaranteed for all the Word documents to match the pagination of Microsoft Word application. For more information about [why the document pagination (page-by-page display) differs from Microsoft Word](../document-editor/import/#why-the-document-pagination-differs-from-microsoft-word)
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/export-dotx/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor/export-dotx/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/export-container-dotx/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor-container/export-container-dotx/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/export-dotx/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor/export-dotx/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/export-container-dotx/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor-container/export-container-dotx/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Text export
 
@@ -97,6 +181,15 @@ The following example shows how to export document as text document (.txt).
 {% endhighlight %}
 {% endtabs %}
 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/export-container-txt/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor-container/export-container-txt/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
@@ -105,6 +198,16 @@ The following example shows how to export document as text document (.txt).
 {% endhighlight %}
 {% highlight c# tabtitle="Document-editor.cs" %}
 {% include code-snippet/document-editor/export-txt/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/export-container-txt/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Document-editor.cs" %}
+{% include code-snippet/document-editor-container/export-container-txt/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -126,11 +229,26 @@ Document editor also supports API to store the document into a blob.
 {% highlight c# tabtitle="Export-blob.cs" %}
 {% endhighlight %}{% endtabs %}
 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/export-container-blob/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Export-blob.cs" %}
+{% endhighlight %}{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/export-blob/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Export-blob.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/export-container-blob/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-blob.cs" %}
 {% endhighlight %}{% endtabs %}

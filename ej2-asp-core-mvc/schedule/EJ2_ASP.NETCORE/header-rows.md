@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header Rows in ##Platform_Name## Schedule Component
+title: Header Rows in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Header Rows in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Header Rows
@@ -142,6 +142,11 @@ It is possible to display a complete year in a timeline view by setting `interva
 ## Customizing the header rows using template
 
 You can customize the text of the header rows and display any images or formatted text on each individual header rows using the built-in `template` option available within the `headerRows` property.
+
+To get start quickly about header row template option available in our Scheduler, you can check on this video:
+
+{% youtube
+"youtube:https://www.youtube.com/watch?v=oX2cPQGyIkk"%}
 
 {% if page.publishingplatform == "aspnet-core" %}
 

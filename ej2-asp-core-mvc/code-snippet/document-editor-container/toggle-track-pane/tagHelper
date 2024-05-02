@@ -1,0 +1,10 @@
+<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true    enableTrackChanges=true height="590px"></ejs-documenteditorcontainer>
+
+<script>
+    var documenteditor;
+    var container;
+    var documenteditorElement = document.getElementById("container");
+    container = documenteditorElement.ej2_instances[0];
+    container.documentEditor.showRevisions = true; // To show revisions pane
+    container.documentEditor.showRevisions = false; // To hide revisions pane
+</script>

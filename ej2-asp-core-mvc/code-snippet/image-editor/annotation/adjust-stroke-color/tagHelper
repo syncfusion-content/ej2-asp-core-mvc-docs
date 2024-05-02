@@ -15,6 +15,7 @@
     function shapeChanging(args) {
         if (args.currentShapeSettings.type === 'FreehandDraw') {
             args.currentShapeSettings.strokeColor = 'red';
+            args.currentShapeSettings.strokeWidth = 10;
         }
     }
 </script>
