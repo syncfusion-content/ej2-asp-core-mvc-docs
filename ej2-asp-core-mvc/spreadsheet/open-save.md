@@ -168,6 +168,35 @@ The following list of Excel file formats are supported in Spreadsheet:
 * Excel Macro-Enabled Workbook (.xlsm)
 * Excel Binary Workbook(.xlsb)
 
+### Load JSON data
+
+You can load the JSON data into the spreadsheet by using the `openFromJson` method. The JSON data must look like the workbook object that the `saveAsJson` method returns. **NOTE:** You can also create your own workbook object by using this [reference section](https://ej2.syncfusion.com/documentation/spreadsheet/how-to/create-a-object-structure). 
+
+If required, set the `triggerEvent` argument in the `openFromJson` method to `true` to trigger the `openComplete` event after the JSON is loaded into the spreadsheet UI.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-json/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opencontroller.cs" %}
+{% include code-snippet/spreadsheet/open-json/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-json/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opencontroller.cs" %}
+{% include code-snippet/spreadsheet/open-json/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Save
 
 The Spreadsheet component saves its data, style, format, and more as Excel file document. To enable this feature, set [`allowSave`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowSave) as `true` and assign service url to the [`saveUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SaveUrl) property.
@@ -313,6 +342,34 @@ The following list of Excel file formats are supported in Spreadsheet:
 * Microsoft Excel 97-2003 (.xls)
 * Comma Separated Values (.csv)
 * Portable Document Format (.pdf)
+
+### Save spreadsheet data as JSON
+
+You can save the spreadsheet data in JSON format using the `saveAsJson` method. To reload the same into our spreadsheet, you can use the `openFromJson` method.
+
+> You can also convert the resultant JSON object from the `saveAsJson` method to a string and move it to any of the databases for later use. For more details, refer [here](https://support.syncfusion.com/kb/article/10357/how-to-save-and-retrieve-the-javascript-spreadsheet-data-as-json-in-database).
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-json/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveJsonController.cs" %}
+{% include code-snippet/spreadsheet/save-json/SaveJsonController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-json/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveJsonController.cs" %}
+{% include code-snippet/spreadsheet/save-json/SaveJsonController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Methods
 
