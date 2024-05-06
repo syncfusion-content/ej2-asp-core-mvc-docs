@@ -272,6 +272,6 @@ The following example for remote data binding and enabled offline mode.
 
 ## See Also
 
-* [How to load data using template](./templates/#item-template)
+* [How to load data using template](./templates#item-template)
 * [How to group the data using header](./grouping/)
 * [How to filter the bound data](./filtering/)
