@@ -298,7 +298,7 @@ private ActionInfo AddOperationsToTable(ActionInfo action)
 
 #### Add Web API to get previous operation as a backup to get lost operations
 
-On the client side, messages broadcasted using SignalR may be received in a different order, or some operations may be missed due to network issues. In these cases, we need a backup method to retrieve missing records from the database.
+On the client side, messages broadcast using SignalR may be received in a different order, or some operations may be missed due to network issues. In these cases, we need a backup method to retrieve missing records from the database.
 Using the following method, we can retrieve all operations after the last successful client-synced version and return all missing operations to the requesting client.
 
 ```csharp
@@ -307,7 +307,7 @@ public async Task<ActionInfo> UpdateAction([FromBody] ActionInfo param)
     try
     {
         ActionInfo modifiedAction = AddOperationsToTable(param);
-        //After transformation broadcast changes to all users in the gropu
+        //After transformation broadcast changes to all users in the group
         await _hubContext.Clients.Group(param.RoomName).SendAsync("dataReceived", "action", modifiedAction);
         return modifiedAction;
     }
@@ -383,4 +383,4 @@ builder.Services.AddDistributedMemoryCache().AddSignalR().AddStackExchangeRedis(
 
 Full version of the code discussed about can be found in below GitHub location.
 
-Github Example: [`Collaborative editing examples`](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Collabrative-Editing)
+GitHub Example: [`Collaborative editing examples`](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Collabrative-Editing)
