@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Box cloud file storage in ##Platform_Name## PDF Viewer Component
+title: Box cloud file storage in ##Platform_Name## PDF Viewer Component| Syncfusion
 description: Save PDF files to Box cloud file storage in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
