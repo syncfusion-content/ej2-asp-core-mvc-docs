@@ -1,0 +1,38 @@
+<ejs-chart id="container1" title="Crude Steel Production Annual Growth">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Million Metric Tons" minimum="0" maximum="20" interval="4">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" width="2" yName="y"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+<div>
+    <ejs-button id="button" content="Export" isPrimary="true"></ejs-button>
+</div>
+
+<script>
+    document.getElementById('button').onclick = () => {
+    var chart1 = document.getElementById('container1').ej2_instances[0];
+    const header = {
+        content: 'Chart Header',
+        font: {
+            fontSize: 15,
+            fontStyle: "TimesNewRoman"
+        },            
+        x: 10,
+        y: 10
+    };
+    const footer = {
+        content: 'Chart Footer',
+        fontSize: 15,
+        x: 0,
+        y: 0
+    };
+    chart1.exportModule.export('PDF', 'Chart', null, [chart1], null, null, true, header, footer, true);
+};
+</script>

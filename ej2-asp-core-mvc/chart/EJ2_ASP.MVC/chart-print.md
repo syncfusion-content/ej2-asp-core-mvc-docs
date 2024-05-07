@@ -49,8 +49,10 @@ The optional parameters for this method are,
 * `Controls` - pass collections of controls for multiple export,
 * `Width` - width of chart export,
 * `Height` - height of chart export,
-* `Header` - header for the exported chart, and
-* `Footer` - footer for the exported chart.
+* `IsVertical` -  decides the chart export in vertical or horizontal direction,
+*  `Header` - header for the exported chart,
+* `Footer` - footer for the exported chart, and
+* `ExportToMultiplePages` - decides to export multiple charts on separate pages for PDF export.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
