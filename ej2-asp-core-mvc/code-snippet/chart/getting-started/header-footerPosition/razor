@@ -1,0 +1,31 @@
+  @Html.EJS().Chart("container").Series(series =>
+       {
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).Width(2).XName("x").YName("y").DataSource(ViewBag.dataSource).Add();
+       }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).Title("Manager").MajorGridLines(mg=>mg.Width(0))
+       ).PrimaryYAxis(py => py.Title("Sales").MajorTickLines(mt=>mt.Width(0)).Minimum(0).Maximum(20000)
+       ).Title("Sales Comparision").Render()
+
+<div>
+    @Html.EJS().Button("togglebtn").IsPrimary(true).Content("Export").Render()
+</div>
+<script>
+document.getElementById('togglebtn').onclick = () => {
+    var chart1 = document.getElementById('container').ej2_instances[0];
+    const header = {
+        content: 'Chart Header',
+        font: {
+            fontSize: 15,
+            fontStyle: "TimesNewRoman"
+        },            
+        x: 10,
+        y: 10
+    };
+    const footer = {
+        content: 'Chart Footer',
+        fontSize: 15,
+        x: 0,
+        y: 0
+    };
+    chart1.exportModule.export('PDF', 'Chart', null, [chart1], null, null, true, header, footer, true);
+};
+</script>
