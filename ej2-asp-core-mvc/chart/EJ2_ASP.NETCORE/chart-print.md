@@ -109,7 +109,7 @@ In the export method, specify the following parameters to add a header and foote
 
 ### Positioning the header and footer in PDF export
 
-The header and footer of the PDF page can be positioned by using the `x` and `y` properties in the header and footer.
+The headers and footers can be positioned anywhere on the PDF page using the `x` and `y` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
