@@ -79,7 +79,7 @@ The following sample demonstrates customizing the dragging handler of the panels
 
 ![Customizing the dragging handler](./../images/dragging_handler.PNG)
 
-# Disable dragging of panels
+## Disable dragging of panels
 
 By default, the dragging of panels is enabled in Dashboard Layout. It can also be disabled with the help of [`allowDragging`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~AllowDragging.html) API. Setting [`allowDragging`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~AllowDragging.html) to false disables the dragging functionality in Dashboard Layout.
 
