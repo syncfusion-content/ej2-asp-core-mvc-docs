@@ -167,6 +167,69 @@ public void Save()
 }
 ```
 
+### Server-side configuration for saving and returning responses
+
+The following example demonstrates the server-side action for saving files on the server and returning responses in JSON, String, and File formats.
+
+```c#
+[AcceptVerbs("Post")]
+public ActionResult Save()
+{
+    // for JSON Data
+    try
+     {
+        // Process uploaded data
+        var responseData = new
+        {
+            Success = true,
+            Message = "Files uploaded successfully",
+            // Additional data can be added here
+        };
+
+        return Json(responseData);
+     }
+     catch (Exception e)
+     {
+         var errorResponse = new
+         {
+            Success = false,
+            Message = "File upload failed: " + e.Message
+         };
+
+         return Json(errorResponse);
+     }
+
+    // for String Data
+    try
+    {
+        // Process string data
+        var data = "success";
+        // Return the string data
+        return Content(data);
+    }
+    catch (Exception)
+    {
+        var data = "failed";
+        return Content(data);
+    }
+
+    // for File Data
+    try
+    {
+        // Example: Retrieve file path for stream.txt
+        var filePath = "/stream.txt"; // Example file path
+   
+        // Return the file
+        return File(filePath, "text/plain");
+    }
+    catch (Exception e)
+    {
+        return Content("Failed to retrieve file response: " + e.Message, "text/plain");
+    }
+}
+
+```
+
 ## Remove action
 
 The remove action is optional. Specify the URL to handle remove process from server. 
@@ -302,9 +365,9 @@ By default, the uploader control process multiple files to upload simultaneously
 
 
 
-## Preload files
+## Preloaded files
 
-The uploader control allows you to preload the list of files that are uploaded in the server. The preloaded files are useful to view and remove the files from server that can be achieved by the [files](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Files) property. By default, the files are configured with uploaded successfully state on rendering file list. The following properties are mandatory to configure the preloaded files:
+The uploader control allows you to preloaded the list of files that are uploaded in the server. The preloaded files are useful to view and remove the files from server that can be achieved by the [files](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Files) property. By default, the files are configured with uploaded successfully state on rendering file list. The following properties are mandatory to configure the preloaded files:
 
     *   Name
     *   Size

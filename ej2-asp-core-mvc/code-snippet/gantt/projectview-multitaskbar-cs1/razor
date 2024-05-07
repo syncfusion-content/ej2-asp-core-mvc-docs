@@ -8,4 +8,4 @@
      Duration("Duration").
      Progress("Progress").
      Child("SubTasks").
-     ExpandState("isExpand")).Render()   
+     ExpandState("isExpand")).Render()
