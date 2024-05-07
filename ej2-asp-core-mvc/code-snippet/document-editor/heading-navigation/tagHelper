@@ -1,0 +1,13 @@
+<ejs-documenteditor id="container">
+    <ejs-documenteditorcontainerevent (created)="onCreate()" documentEditorSettings="settings" isReadOnly=false></ejs-documenteditorcontainerevent>
+</ejs-documenteditor>
+
+<script>
+    var container;
+    var settings = { showNavigationPane: true };
+    function onCreate() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        container.enableAllModules();
+    }
+</script>
