@@ -14,11 +14,7 @@ The Timeline items can be added by using the `<e-timeline-item>` tag helper. Eac
 
 ## Adding content
 
-<<<<<<<< HEAD:ej2-asp-core-mvc/timeline/EJ2_ASP.MVC/items.md
-You can define the item content using the [content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_Content) property.
-========
 You can define the item content using the [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_Content) property.
->>>>>>>> remotes/origin/hotfix/hotfix-v25.1.35:ej2-asp-core-mvc/timeline/EJ2_ASP.NETCORE/items.md
 
 ### String content
 
@@ -51,11 +47,7 @@ You can define string content for the Timeline items.
 
 ### Templated content
 
-<<<<<<<< HEAD:ej2-asp-core-mvc/timeline/EJ2_ASP.MVC/items.md
-You can specify the [Template Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_ContentTemplate) for the items, by using the selector for an element in HTML.
-========
-You can specify the [Template Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_ContentTemplate) for the items, by using the selector for an element in HTML.
->>>>>>>> remotes/origin/hotfix/hotfix-v25.1.35:ej2-asp-core-mvc/timeline/EJ2_ASP.NETCORE/items.md
+You can specify the [Template Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_ContentTemplate) content for the items, by using the selector for an element in HTML.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -84,11 +76,7 @@ You can specify the [Template Content](https://help.syncfusion.com/cr/aspnetcore
 
 ## Adding opposite content
 
-<<<<<<<< HEAD:ej2-asp-core-mvc/timeline/EJ2_ASP.MVC/items.md
 You can add additional information to each Timeline item, by using the [oppositeContent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_OppositeContent) property which is positioned opposite to the item content. Similar to the `content` property you can define `string` or `function` as contents to the oppositeContent.
-========
-You can add additional information to each Timeline item, by using the [oppositeContent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_OppositeContent) property which is positioned opposite to the item content. Similar to the `content` property you can define `string` or `function` as contents to the oppositeContent.
->>>>>>>> remotes/origin/hotfix/hotfix-v25.1.35:ej2-asp-core-mvc/timeline/EJ2_ASP.NETCORE/items.md
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -117,11 +105,7 @@ You can add additional information to each Timeline item, by using the [opposite
 
 ## Dot item
 
-<<<<<<<< HEAD:ej2-asp-core-mvc/timeline/EJ2_ASP.MVC/items.md
-You can define CSS class to set icons, background colors, or images to personalize the appearance of dots associated with each Timeline item by using the [dotCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_DotCss) property.
-========
 You can define CSS class to set icons, background colors, or images to personalize the appearance of dots associated with each Timeline item by using the [dotCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_DotCss) property.
->>>>>>>> remotes/origin/hotfix/hotfix-v25.1.35:ej2-asp-core-mvc/timeline/EJ2_ASP.NETCORE/items.md
 
 ### Adding icons
 
@@ -162,11 +146,7 @@ You can display text for the Timeline items using the `dotCss` property, by addi
 
 ## Disabling items
 
-<<<<<<<< HEAD:ej2-asp-core-mvc/timeline/EJ2_ASP.MVC/items.md
-You can use the [disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_Disabled) property to disable an item when set to `true`. By default, the value is `false`.
-========
 You can use the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_Disabled) property to disable an item when set to `true`. By default, the value is `false`.
->>>>>>>> remotes/origin/hotfix/hotfix-v25.1.35:ej2-asp-core-mvc/timeline/EJ2_ASP.NETCORE/items.md
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -195,8 +175,4 @@ You can use the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 ## CSS class
 
-<<<<<<<< HEAD:ej2-asp-core-mvc/timeline/EJ2_ASP.MVC/items.md
-The [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_CssClass) property allows you to define a custom class to modify the appearance of the Timeline item.
-========
 The [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_CssClass) property allows you to define a custom class to modify the appearance of the Timeline item.
->>>>>>>> remotes/origin/hotfix/hotfix-v25.1.35:ej2-asp-core-mvc/timeline/EJ2_ASP.NETCORE/items.md
