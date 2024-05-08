@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Orientation(Syncfusion.EJ2.LinearGauge.Orientation.Horizontal).Axes(axes => axes.Minimum(0).Maximum(100)
+           .LabelStyle(labelStyle => labelStyle.Font(font => font.FontFamily("inherit")).Position(Syncfusion.EJ2.LinearGauge.Position.Outside))
+           .Pointers(pointer =>
+           {
+               pointer.Value(60).MarkerType(Syncfusion.EJ2.LinearGauge.MarkerType.Image).Width(40).Height(40).ImageUrl("https://ej2.syncfusion.com/aspnetmvc/Content/LinearGauge/step-count.png").Offset("-27").Add();
+           })
+           .MajorTicks(majorTick => majorTick.Interval(20).Height(7).Width(1).Position(Syncfusion.EJ2.LinearGauge.Position.Outside)).MinorTicks(minorTick => minorTick.Height(3).Width(1).Position(Syncfusion.EJ2.LinearGauge.Position.Outside)).Add()).Render()
+

@@ -1,0 +1,60 @@
+@using Syncfusion.EJ2.Maps
+
+@{
+var data = new[]
+{
+new { latitude= 22.572646, longitude= 88.363895 },
+new { latitude= 25.0700428, longitude= 67.2847875}
+};
+
+}
+
+
+<button id="button">GetMinMaxLatitudeLongitude</button>
+<p id="coordinatesDisplay"></p>
+
+<ejs-maps id="maps" width="450px">
+    <e-maps-centerposition latitude="21.815447" longitude="80.1932"></e-maps-centerposition>
+    <e-maps-zoomsettings enable="true" zoomFactor="7"></e-maps-zoomsettings>
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.world_map">
+            <e-layersettings-markers>
+                <e-layersettings-marker visible="true" shape="Circle" animationDuration="1500" dataSource="data"
+                    height="25" width="25"></e-layersettings-marker>
+            </e-layersettings-markers>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>
+
+<script>
+    function formatKey(key) {
+        if (key === 'minLatitude') {
+            return 'Minimum Latitude';
+        } else if (key === 'maxLatitude') {
+            return 'Maximum Latitude';
+        } else if (key === 'minLongitude') {
+            return 'Minimum Longitude';
+        } else if (key === 'maxLongitude') {
+            return 'Maximum Longitude';
+        }
+    }
+
+    document.getElementById('button').onclick = () => {
+        var maps = document.getElementById('maps').ej2_instances[0];
+        mapBoundCoordinates = maps.getMinMaxLatitudeLongitude();
+        const displayDiv = document.getElementById('coordinatesDisplay');
+        displayDiv.innerHTML = '';
+        if (mapBoundCoordinates) {
+            for (const key in mapBoundCoordinates) {
+                if (Object.hasOwnProperty.call(mapBoundCoordinates, key)) {
+                    const p = document.createElement('p');
+                    const formattedKey = formatKey(key);
+                    p.textContent = `${formattedKey}: ${mapBoundCoordinates[key]}`;
+                    displayDiv.appendChild(p);
+                }
+            }
+        } else {
+            displayDiv.textContent = 'No coordinates available';
+        }
+    };
+</script>
