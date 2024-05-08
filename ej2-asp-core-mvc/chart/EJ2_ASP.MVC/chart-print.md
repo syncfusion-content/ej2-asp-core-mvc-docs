@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Print and Export in ASP.NET Core chart component
+# Print and Export in ASP.NET Core Chart component
 
 ## Print
 

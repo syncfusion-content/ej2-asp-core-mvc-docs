@@ -19,7 +19,6 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 {% youtube "https://www.youtube.com/watch?v=DnMIgbn6bco" %}
 
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
