@@ -710,11 +710,11 @@ LibMan offers the following advantages,
 
 ![Select unpkg provider](images/client-library-unpkg.png)
 
-3.you can refer the combined control styles by using `@syncfusion/ej2@{{ site.ej2version }}` in the library textbox.
+3.You can refer the combined control styles by using `@syncfusion/ej2@{{ site.ej2version }}` in the library textbox.
 
 ![Specify Syncfusion library](images/library-unpkg.png)
 
-4.you can able to choose specific files or include all library files like below.
+4.You can able to choose specific files or include all library files like below.
 
 For example, Choose specific files and the bootstrap5 theme is selected in the dialog.
 
@@ -758,6 +758,87 @@ N> If you use individual control styles, you should install their dependent cont
 <head>
   ...
   <link href="~/themes/syncfusion/ej2/bootstrap5.css" rel="stylesheet" />
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+8.Run the application and see the bootstrap5 themes downloaded from LibMan were applied.
+
+You can also choose `SCSS` file and customize theme variables using the [Web Compiler 2022+](https://marketplace.visualstudio.com/items?itemName=Failwyn.WebCompiler64) by following steps.
+
+![Choose SCSS file](images/library-unpkg-theme-scss.png)
+
+1.Now, use a specific target location and click the install button to get the `libman.json` with the following content.
+
+{% tabs %}
+{% highlight cshtml tabtitle="libman.json" %}
+
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "@syncfusion/ej2@{{ site.ej2version }}",
+      "destination": "wwwroot/lib/syncfusion/ej2/",
+      "files": [
+        "base/bootstrap5.scss"
+      ]
+    }
+  ]
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+2.Open Command Prompt from the application root directory and run the following command to install the Syncfusion `node_modules` in this application.
+
+{% tabs %}
+{% highlight c# tabtitle="CMD" %}
+
+npm install @syncfusion/ej2
+
+{% endhighlight %}
+{% endtabs %}
+
+3.Open Visual Studio 2022 and click the Extensions in the toolbar.
+
+![VS Extension](images/vs_extension.png)
+
+4.Search the `Web Compiler 2022+` in search box and download the extension.
+
+![Web Compiler 2022+](images/web_compiler.png)
+
+5.Right-click the `SCSS` file and click the Web Compiler to compile the file.
+
+![Themes-libman-compile](images/themes-libman-compile.png)
+
+6.The `compilerconfig.json` file is created by default. Then, provide the location of the compiled CSS file and include a path as shown in the following code snippet.
+
+{% tabs %}
+{% highlight c# tabtitle="compilerconfig.json" %}
+
+[
+  {
+    "inputFile": "wwwroot/lib/syncfusion/ej2/base/bootstrap5.scss",
+    "outputFile": "wwwroot/lib/syncfusion/ej2/base/bootstrap5.css",
+    "options": {
+      "includePath": "node_modules/@syncfusion"
+    }
+  }
+]
+
+{% endhighlight %}
+{% endtabs %}
+
+7.You can refer to the theme sheet which was downloaded from the client-side library in the `<head>` element of the **~/Pages/Shared/_Layout.cshtml** file.
+
+{% tabs %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+
+<head>
+  ...
+  <link href="~/lib/syncfusion/ej2/base/bootstrap5.css" rel="stylesheet" />
 </head>
 
 {% endhighlight %}

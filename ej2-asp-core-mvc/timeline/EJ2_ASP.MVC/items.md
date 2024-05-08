@@ -14,7 +14,7 @@ The Timeline items can be added by using the `<e-timeline-item>` tag helper. Eac
 
 ## Adding content
 
-You can define the item content using the [content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_Content) property.
+You can define the item content using the [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_Content) property.
 
 ### String content
 
@@ -47,7 +47,7 @@ You can define string content for the Timeline items.
 
 ### Templated content
 
-You can specify the [Template Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_ContentTemplate) content for the items, by using the selector for an element in HTML.
+You can specify the [Template Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_ContentTemplate) for the items, by using the selector for an element in HTML.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -76,7 +76,7 @@ You can specify the [Template Content](https://help.syncfusion.com/cr/aspnetmvc-
 
 ## Adding opposite content
 
-You can add additional information to each Timeline item, by using the [oppositeContent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_OppositeContent) property which is positioned opposite to the item content. Similar to the `content` property you can define `string` or `function` as contents to the oppositeContent.
+You can add additional information to each Timeline item, by using the [oppositeContent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_OppositeContent) property which is positioned opposite to the item content. Similar to the `content` property you can define `string` or `function` as contents to the oppositeContent.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -105,7 +105,7 @@ You can add additional information to each Timeline item, by using the [opposite
 
 ## Dot item
 
-You can define CSS class to set icons, background colors, or images to personalize the appearance of dots associated with each Timeline item by using the [dotCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_DotCss) property.
+You can define CSS class to set icons, background colors, or images to personalize the appearance of dots associated with each Timeline item by using the [dotCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_DotCss) property.
 
 ### Adding icons
 
@@ -146,7 +146,7 @@ You can display text for the Timeline items using the `dotCss` property, by addi
 
 ## Disabling items
 
-You can use the [disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_Disabled) property to disable an item when set to `true`. By default, the value is `false`.
+You can use the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_Disabled) property to disable an item when set to `true`. By default, the value is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -175,4 +175,4 @@ You can use the [disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 ## CSS class
 
-The [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_CssClass) property allows you to define a custom class to modify the appearance of the Timeline item.
+The [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_CssClass) property allows you to define a custom class to modify the appearance of the Timeline item.
