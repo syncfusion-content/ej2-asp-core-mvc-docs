@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Print in ##Platform_Name## Chart Component
+title: Chart Print in Syncfusion ##Platform_Name## Chart Component
 description: Learn here all about Chart Print in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chart print
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Print and Export
+# Print and Export in ASP.NET Core chart component
 
 ## Print
 
@@ -49,8 +49,10 @@ The optional parameters for this method are,
 * `Controls` - pass collections of controls for multiple export,
 * `Width` - width of chart export,
 * `Height` - height of chart export,
-* `Header` - header for the exported chart, and
-* `Footer` - footer for the exported chart.
+* `IsVertical` -  decides the chart export in vertical or horizontal direction,
+* `Header` - header for the exported chart,
+* `Footer` - footer for the exported chart, and
+* `ExportToMultiplePages` - decides to export multiple charts on separate pages for PDF export.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -107,7 +109,32 @@ In the export method, specify the following parameters to add a header and foote
 {% endtabs %}
 {% endif %}
 
+### Positioning the header and footer in PDF export
 
+The headers and footers can be positioned anywhere on the PDF page using the `x` and `y` properties.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/getting-started/header-footerPosition/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Header-footerPosition.cs" %}
+{% include code-snippet/chart/getting-started/header-footerPosition/header-footerPosition.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/getting-started/header-footerPosition/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Header-footerPosition.cs" %}
+{% include code-snippet/chart/getting-started/header-footerPosition/header-footerPosition.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Exporting charts into separate page during the PDF export
 

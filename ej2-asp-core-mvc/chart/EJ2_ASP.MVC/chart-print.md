@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Print in ##Platform_Name## Chart Component
+title: Chart Print in Syncfusion ##Platform_Name## Chart Component
 description: Learn here all about Chart Print in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chart print
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Print and Export
+# Print and Export in ASP.NET Core Chart component
 
 ## Print
 
