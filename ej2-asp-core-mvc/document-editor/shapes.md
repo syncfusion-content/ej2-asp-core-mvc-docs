@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Shapes in DocumentEditor Component
+# Shapes in ASP.NET Core DocumentEditor Component
 
 Shapes are drawing objects that include a text box, rectangles, lines, curves, circles, etc. It can be preset or custom geometry. At present, DocumentEditor does not have support to insert shapes. However, if the document contains a shape while importing, it will be preserved properly.
 
