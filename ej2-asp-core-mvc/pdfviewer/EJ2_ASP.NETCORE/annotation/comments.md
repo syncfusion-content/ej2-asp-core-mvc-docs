@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Comments in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Comments in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Comments in ##Platform_Name## PDF Viewer Component | Syncfusion
+description: Learn here all about Comments in Syncfusion ##Platform_Name## PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Comments
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
 
 # Comments in the ASP.NET Core PDF Viewer component
 

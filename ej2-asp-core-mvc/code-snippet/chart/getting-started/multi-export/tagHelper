@@ -19,6 +19,6 @@
     document.getElementById('button').onclick = () => {
         var chart = document.getElementById('container').ej2_instances[0];
         var chart1 = document.getElementById('container1').ej2_instances[0];
-        chart.export('PNG', 'chart', 'Landscape', [chart,chart1]);
+        chart.exportModule.export('PNG', 'chart', 'Landscape', [chart,chart1]);
     };
 </script>
