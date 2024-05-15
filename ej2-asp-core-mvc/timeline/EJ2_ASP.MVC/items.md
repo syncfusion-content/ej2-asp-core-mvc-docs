@@ -47,7 +47,7 @@ You can define string content for the Timeline items.
 
 ### Templated content
 
-You can specify the [Template Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_ContentTemplate) content for the items, by using the selector for an element in HTML.
+You can specify the [Template Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_ContentTemplate) for the items, by using the selector for an element in HTML.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
