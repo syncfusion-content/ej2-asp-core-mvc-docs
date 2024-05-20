@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Shapes in ##Platform_Name## DocumentEditor
+# Shapes in ##Platform_Name## Document Editor
 
 Shapes are drawing objects that include a text box, rectangles, lines, curves, circles, etc. It can be preset or custom geometry. At present, DocumentEditor does not have support to insert shapes. However, if the document contains a shape while importing, it will be preserved properly.
 
