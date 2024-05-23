@@ -1,6 +1,6 @@
             @Html.EJS().Gantt("DefaultFunctionalities").DataSource(dataManger =>
                 {
-                    dataManger.Url("https://services.syncfusion.com/aspnet/development/api/GanttLoadOnDemand").CrossDomain(true).Adaptor("WebApiAdaptor");
+                    dataManger.Url("https://services.syncfusion.com/aspnet/production/api/GanttLoadOnDemand").CrossDomain(true).Adaptor("WebApiAdaptor");
                 })
                 .Height("460px").EnableVirtualization(true).LoadChildOnDemand(false)
                 .TaskFields(ts => ts.Id("taskId").Name("taskName").StartDate("startDate").Progress("progress")
