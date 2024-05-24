@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import an excel document using file uploader in ##Platform_Name## Spreadsheet Control | Syncfusion
+title: Import excel document in ##Platform_Name## Spreadsheet | Syncfusion
 description: Learn here all about import an excel document using file uploader in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Spreadsheet
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Import an excel document using file uploader in ##Platform_Name## Spreadsheet control
+# Import an excel document in ##Platform_Name## Spreadsheet control
 
 If you explore your machine to select and upload an excel document using the file uploader, you will receive the uploaded document as a raw file in the `success` event of the file uploader. In this `success` event, you should pass the received raw file as an argument to the Spreadsheet's `open` method to see the appropriate output.
 
