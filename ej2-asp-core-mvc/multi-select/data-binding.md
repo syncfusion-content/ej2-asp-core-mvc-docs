@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Multi Select Component
+title: Data Binding in ##Platform_Name## Multi Select Component | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding
+# Data Binding in ##Platform_Name## Multi Select Component
 
 The MultiSelect loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~DataSource.html) property. It supports the data type of `array` or [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html).
 
@@ -272,6 +272,6 @@ The following example for remote data binding and enabled offline mode.
 
 ## See Also
 
-* [How to load data using template](./templates/#item-template)
+* [How to load data using template](./templates#item-template)
 * [How to group the data using header](./grouping/)
 * [How to filter the bound data](./filtering/)
