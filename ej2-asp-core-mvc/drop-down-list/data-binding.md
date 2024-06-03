@@ -4,7 +4,7 @@ title: Data Binding in ASP.NET Core Dropdown List Component | Syncfusion
 description: Learn here all about data binding in ASP.NET Core Dropdown List component of Syncfusion Essential JS 2, its elements, and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
