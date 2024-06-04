@@ -42,6 +42,6 @@ In the following demo, the `Trustworthiness` column is sorted based on the custo
 
 ## See Also
 
-* [Filtering](./filter)
+* [Filtering](https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/filter)
 * [Sorting](https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/sort)
-* [Hyperlink](./link)
+* [Hyperlink](https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/link)

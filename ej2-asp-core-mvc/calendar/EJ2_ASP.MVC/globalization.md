@@ -11,9 +11,9 @@ documentation: ug
 
 # Globalization in ##Platform_Name## Calendar Control
 
-Globalization is the combination of  adapting the control to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization/) and also by adding cultural specific customizations and translating the text [localization](../common/localization/).
+Globalization is the combination of  adapting the control to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization) and also by adding cultural specific customizations and translating the text [localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization).
 
-By default, Calendar date format, week and month names are specific to American English culture. It utilizes the [Essential JavaScript 2 Internationalization](http://ej2.syncfusion.com/documentation/base/internationalization/) package to parse and format the date object based on the culture by uses the official [UNICODE CLDR](http://cldr.unicode.org/) JSON data.
+By default, Calendar date format, week and month names are specific to American English culture. It utilizes the [Essential JavaScript 2 Internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) package to parse and format the date object based on the culture by uses the official [UNICODE CLDR](https://cldr.unicode.org/) JSON data.
 
 * Set the culture by using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Locale) property.
 
