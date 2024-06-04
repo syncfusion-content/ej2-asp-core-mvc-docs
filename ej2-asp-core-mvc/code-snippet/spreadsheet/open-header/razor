@@ -6,8 +6,7 @@
 
 function beforeOpen(args) {
     args.requestData["headers"] = {
-      ...args.requestData,
-      headers: { Authorization: "YOUR TEXT" }
+      Authorization: "YOUR TEXT"
     };
 
   }

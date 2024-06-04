@@ -8,6 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
 # Print and Export in ASP.NET Core Chart component
 
 ## Print
@@ -48,10 +49,8 @@ The optional parameters for this method are,
 * `Controls` - pass collections of controls for multiple export,
 * `Width` - width of chart export,
 * `Height` - height of chart export,
-* `IsVertical` -  decides the chart export in vertical or horizontal direction,
-*  `Header` - header for the exported chart,
-* `Footer` - footer for the exported chart, and
-* `ExportToMultiplePages` - decides to export multiple charts on separate pages for PDF export.
+* `Header` - header for the exported chart, and
+* `Footer` - footer for the exported chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

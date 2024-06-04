@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Items in ##Platform_Name## Ribbon control
+# Items in ASP.NET MVC Ribbon control
 
 Ribbon renders various built-in items based on the item [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property. By default, the type property is set as `Button` which renders the Button.
 
@@ -210,39 +210,6 @@ The following sample showcases how to customize a specific dropdown item.
         color: green;
     }
 </style>
-
-{% endhighlight %}
-{% endtabs %}
-
-#### Create dropdown popup on demand
-
-You can handle the creation of popups, by using the [createPopupOnClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_CreatePopupOnClick) property. If set to `true`, the popup will only be created upon opening. By default the value is `false`.
-
-{% tabs %}
-{% highlight c# tabtitle="Index.cshtml" %}
-
-@using Syncfusion.EJ2.Ribbon
-@using Syncfusion.EJ2.Navigations
-
-@{
-    List<MenuItem> tableOptions = new List<MenuItem>() { new MenuItem { Text = "Insert Table" }, new MenuItem { Text = "This device" }, new MenuItem { Text = "Convert Table" }, new MenuItem { Text = "Excel SpreadSheet" } };
-}
-@Html.EJS().Ribbon("ribbon").Tabs(tab =>
-{
-    tab.Header("Insert").Groups(group =>
-    {
-        group.Header("Tables").Collections(collection =>
-        {
-            collection.Items(items =>
-            {
-                items.Type(RibbonItemType.DropDown).DropDownSettings(dropDown =>
-                {
-                    dropDown.IconCss("e-icons e-table").Content("Table").Items(tableOptions).CreatePopupOnClick(true);
-                }).Add();
-            }).Add();
-        }).Add();
-    }).Add();
-}).Render()
 
 {% endhighlight %}
 {% endtabs %}
