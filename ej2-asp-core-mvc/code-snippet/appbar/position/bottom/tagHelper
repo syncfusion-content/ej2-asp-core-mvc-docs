@@ -1,6 +1,3 @@
-@using Syncfusion.EJ2;
-@using Syncfusion.EJ2.Navigations;
-
 <div class="default-appbar-section">
     <ejs-appbar id="defaultAppBar" colorMode="Primary" position="Bottom">
         <e-content-template>

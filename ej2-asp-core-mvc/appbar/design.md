@@ -22,9 +22,6 @@ The following example depicts the code to provide spacing between the home and p
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/design/spacer/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Spacer.cs" %}
-{% include code-snippet/appbar/design/spacer/spacer.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -53,9 +50,6 @@ The following example depicts the code to provide a vertical line between a grou
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/design/separator/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/appbar/design/separator/separator.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -81,9 +75,6 @@ Media Query is used to adjusting the AppBar for different screen sizes. Resize t
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/design/media/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Media.cs" %}
-{% include code-snippet/appbar/design/media/media.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,6 +1,3 @@
-@using Syncfusion.EJ2;
-@using Syncfusion.EJ2.Navigations;
-
 <ejs-appbar id="defaultAppBar" colorMode="Primary">
     <e-content-template>
         <ejs-button id="defaultButtonMenu" cssClass="e-inherit" iconCss="e-icons e-menu"></ejs-button>
