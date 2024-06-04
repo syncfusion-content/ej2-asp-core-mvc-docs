@@ -19,8 +19,13 @@ Tooltip for the accumulation chart can be enabled by using the [`Enable`](https
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chart/accumulation-charts/tooltip/default/default.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -48,8 +53,13 @@ We can specify header for the tooltip using [`Header`](https://help.syncfusion.c
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/header/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Header.cs" %}
-{% include code-snippet/chart/accumulation-charts/tooltip/header/header.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,8 +87,13 @@ By default, tooltip shows information of x and y value in points. In addition to
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/format/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Format.cs" %}
-{% include code-snippet/chart/accumulation-charts/tooltip/format/format.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,8 +121,13 @@ Any HTML element can be displayed in the tooltip by using the [`Template`](https
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/tooltip-format/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip-format.cs" %}
-{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-format/tooltip-format.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -164,8 +184,13 @@ The [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/chart/accumulation-charts/tooltip/custom/custom.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -193,8 +218,13 @@ Using [`TooltipRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/individual/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Individual.cs" %}
-{% include code-snippet/chart/accumulation-charts/tooltip/individual/individual.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -222,8 +252,14 @@ By default, tooltip shows information of x and y value in points. You can show m
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/mapping/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Mapping.cs" %}
-{% include code-snippet/chart/accumulation-charts/tooltip/mapping/mapping.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class GroupingChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 

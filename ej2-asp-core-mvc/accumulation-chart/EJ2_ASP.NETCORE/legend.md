@@ -19,8 +19,13 @@ Like chart, the legend is also available for accumulation charts, which gives in
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/default/default.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -48,8 +53,13 @@ By using the position property, you can position the legend at the `left`, `
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/position/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Position.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/position/position.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,8 +87,13 @@ You can reverse the order of the legend items by using the [`reverse`](https://h
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/reverse/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Reverse.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/reverse/reverse.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,8 +121,13 @@ To change the legend icon shape, use the `legendShape` property in the `series
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/legend-shape/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Legend-shape.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/legend-shape/legend-shape.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,8 +155,14 @@ The legend size can be changed by using the `width` and `height` properties of t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Size.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/size/size.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -164,8 +190,13 @@ You can customize the size of the legend items by using the `shapeHeight` and `s
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/item-size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Item-size.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/item-size/item-size.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -193,8 +224,13 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/paging/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/paging/paging.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -220,8 +256,13 @@ When the legend text exceeds the container, the text can be wrapped by using **t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/text-wrap/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Textwrap.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/text-wrap/textwrap.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -248,8 +289,14 @@ You can customize the animation while clicking legend by setting enableAnimation
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/accumulation-animation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Accumulation-animation.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/accumulation-animation/accumulation-animation.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class GroupingChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -277,8 +324,13 @@ You can set title for legend using `Title` property in `LegendSettings`. You can
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/title/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/title/title.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -306,8 +358,13 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/arrow-page/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Arrow-page.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/arrow-page/arrow-page.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -333,8 +390,13 @@ The [`itemPadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/legend/itemPadding/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ItemPadding.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/itemPadding/itemPadding.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 

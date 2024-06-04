@@ -20,8 +20,14 @@ Accumulation Chart can be given a title using [`title`](https://help.syncfusion.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/title/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/title/title.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -49,8 +55,14 @@ Accumulation Chart can be customized a title using [`titleStyle`](https://help.s
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/title-cus/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/title-cus/title.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -78,8 +90,14 @@ Accumulation Chart can be given a subtitle using [`subTitle`](https://help.syncf
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title/title.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -107,8 +125,14 @@ Accumulation Chart can be customized a subtitle using [`subTitleStyle`](https://
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title-cus/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title-cus/title.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
