@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ASP.NET Core Dropdown List Component | Syncfusion 
-description: Learn here all about data binding in ASP.NET Core Dropdown List component of Syncfusion Essential JS 2, its elements, and more.
+title: Data Binding in ##Platform_Name## Dropdown List Component | Syncfusion 
+description: Learn here all about data binding in ##Platform_Name## Dropdown List component of Syncfusion Essential JS 2, its elements, and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding in ASP.NET Core Dropdown List Component
+# Data Binding in ##Platform_Name## Dropdown List Component
 
 The DropDownList loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_DataSource) property. It supports the data type of `array` or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
 
