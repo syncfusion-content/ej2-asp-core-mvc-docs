@@ -1,0 +1,77 @@
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).Height("450px").RowHeight(60).TaskFields(ts
+    =>
+    ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks").Toolbar(new
+    List<string>() {
+        "PdfExport"
+        }).ToolbarClick("toolbarClick").PdfQueryTaskbarInfo("pdfQueryTaskbarInfo").ResourceInfo("ResourceId")).ResourceFields(rf
+        =>
+        rf.Id("ResourceId").Name("ResourceName")).Resources((
+        IEnumerable<object>)ViewBag.projectResources).Columns(col =>
+            {
+            col.Field("TaskId").HeaderText("Task ID").Width(250).Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(250).Add();
+            col.Field("ResourceId").HeaderText("Resources").Template("#columnTemplate").Add();
+            col.Field("StartDate").Add();
+            col.Field("Duration").Add();
+            col.Field("Progress").Add();
+            }
+            )
+            .ResourceFields(rf => rf.Id("ResourceId").Name("ResourceName")).Resources((IEnumerable<object>)ViewBag.Resources)
+            .LabelSettings(ls => ls.LeftLabel("#leftLabel").RightLabel("#rightLabel").TaskLabel("${Progress}%"))
+            .ProjectStartDate("03/24/2019")
+            .ProjectEndDate("05/04/2019")
+            .Render()
+
+            <script>
+                function toolbarClick(args) {
+                    var ganttObj = document.getElementById("GanttContainer").ej2_instances[0];
+                    if (args.item.id === "GanttContainer_pdfexport") {
+                        ganttObj.pdfExport();
+                    }
+                }
+                function pdfQueryTaskbarInfo(args) {
+                    args.labelSettings.leftLabel.value = args.data.ganttProperties.taskName + '[' + args.data.ganttProperties.progress + ']';
+                    if (args.data.ganttProperties.resourceNames) {
+                        args.labelSettings.rightLabel.value = args.data.ganttProperties.resourceNames;
+                        args.labelSettings.rightLabel.image = [{
+                            base64: (args).data.taskData.resourcesImage, width: 20, height: 20
+                        }]
+
+                    }
+                    args.labelSettings.taskLabel.value = args.data.ganttProperties.progress + '%'
+                }
+            </script>
+
+<script type="text/x-template" id="leftLabel">
+    <div style="margin-top=-7px;">
+        <div id="leftLabel">
+            <span>${TaskName} [ ${Progress}% ]</span>
+        </div>
+    </div>
+</script>
+<script type="text/x-template" id="rightLabel">
+    <div style="margin-top=-7px;">
+        ${if(ganttProperties.resourceInfo)}
+        <div id="rightLabel">
+            ${getResourceElements(ganttProperties.resourceInfo)}
+        </div>
+        ${/if}
+    </div>
+</script>
+<script>
+    function getResourceElements(value) {
+        var out = "";
+        var img = document.createElement('img');
+        img.height = 40;
+        var span = document.createElement('span');
+        span.style.marginLeft = "5px";
+        span.style.marginRight = "5px";
+        for (var index = 0; index < value.length; index++) {
+            var imgName = value[index].ResourceName;
+            img.src = '../Content/gantt/images/' + value[index].ResourceName + '.png';
+            span.innerHTML = value[index].ResourceName;
+            out = out + img.outerHTML + span.outerHTML;
+        }
+        return out;
+    }
+</script>
