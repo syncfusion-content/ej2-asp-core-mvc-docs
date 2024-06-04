@@ -1,4 +1,4 @@
-@Html.EJS().RichTextEditor("drag-drop").InsertImageSettings(obj => obj.SaveUrl("https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save")).ContentTemplate(@<div><p>
+@Html.EJS().RichTextEditor("drag-drop").InsertImageSettings(obj => obj.SaveUrl("https://services.syncfusion.com/aspnet/production/api/uploadbox/Save")).ContentTemplate(@<div><p>
             The Rich Text Editor control is WYSIWYG ('what you see is what you get') editor that provides the best user experience to create and update the content.
             Users can format their content using standard toolbar commands.
         </p>
