@@ -104,7 +104,7 @@ The following code example shows how to bind DynamicObject datasource in grid us
 
 > Perform data and CRUD operations for complex DynamicObject binding fields as well.
 
-The following image represents DynamicObject complex data binding.
+The following image represents DynamicObject complex data binding. 
 
 ![Grid with DynamicObject Binding](../../images/DynamicObjectDemo.gif)
 

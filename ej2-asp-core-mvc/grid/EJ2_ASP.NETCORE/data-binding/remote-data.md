@@ -68,7 +68,7 @@ The following code example shows how to bind ExpandoObject datasource in grid us
 
 > Perform data and CRUD operations for complex ExpandoObject binding fields as well.
 
-The following image represents ExpandoObject complex data binding.
+The following image represents ExpandoObject complex data binding. 
 
 ![Grid with ExpandoObject Binding](../../images/ExpandoObjectDemo.gif)
 
