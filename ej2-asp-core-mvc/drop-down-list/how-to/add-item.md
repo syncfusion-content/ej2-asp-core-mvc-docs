@@ -11,7 +11,7 @@ documentation: ug
 
 # Add item in between in DropDownList
 
-You can add item in between based on item [index](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~Index.html). If you add new item without item index, item will be added as last item in list.
+You can add item in between based on item [index](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Index). If you add new item without item index, item will be added as last item in list.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

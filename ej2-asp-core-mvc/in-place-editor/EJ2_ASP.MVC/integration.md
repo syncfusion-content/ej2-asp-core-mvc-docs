@@ -60,4 +60,4 @@ Template mode, the [`Value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 The output will be as follows.
 
-![html-template](./images/html-template.PNG)
+![html-template](./images/html-template.png)

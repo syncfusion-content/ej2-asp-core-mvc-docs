@@ -11,11 +11,11 @@ documentation: ug
 
 # Filtering
 
-The MultiSelect has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~AllowFiltering.html) is enabled. The filter operation starts as soon as you start typing characters in the MultiSelect input.
+The MultiSelect has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowFiltering) is enabled. The filter operation starts as soon as you start typing characters in the MultiSelect input.
 
-To display filtered items in the popup, filter the required data and return it to the MultiSelect via `updateData` method by using the [filtering](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~Filtering.html) event.
+To display filtered items in the popup, filter the required data and return it to the MultiSelect via `updateData` method by using the [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Filtering) event.
 
-The following sample illustrates how to query the data source and pass the data to the MultiSelect through the `updateData` method in [filtering](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~Filtering.html) event.
+The following sample illustrates how to query the data source and pass the data to the MultiSelect through the `updateData` method in [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Filtering) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -137,7 +137,7 @@ The following example shows how to perform case-sensitive filter.
 
 ## Diacritics Filtering
 
-MultiSelect supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~IgnoreAccent.html) is enabled.
+MultiSelect supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_IgnoreAccent) is enabled.
 
 In the following sample,data with diacritics are bound as dataSource for MultiSelect.
 
@@ -168,6 +168,6 @@ In the following sample,data with diacritics are bound as dataSource for MultiSe
 
 ## See Also
 
-* [How to bind the data](./data-binding/)
-* [How to group the data using header](./grouping/)
-* [How to add custom value to the MultiSelect](./custom-value/)
+* [How to bind the data](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/data-binding)
+* [How to group the data using header](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/grouping)
+* [How to add custom value to the MultiSelect](https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/custom-value)
