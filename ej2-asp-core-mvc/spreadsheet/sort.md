@@ -158,7 +158,7 @@ By customizing sort comparer, you can define the sort action as desired.
 
 N> * The `sortComparer` is an optional property of `sortDescriptor`.
 
-For custom sort comparer example, refer to the [`Sort a range by custom list`](https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/how-to/sort-a-range-by-custom-list) in the `how-to` section.
+For custom sort comparer example, refer to the [`Sort a range by custom list`] below section.
 
 ## Sort a range by custom list
 

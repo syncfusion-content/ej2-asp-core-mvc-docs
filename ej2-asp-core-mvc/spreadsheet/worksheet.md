@@ -46,7 +46,7 @@ The following code example shows the insert sheet operation in spreadsheet.
 {% endtabs %}
 {% endif %}
 
-### Insert a sheet programmatically and make it the active sheet in ##Platform_Name## Spreadsheet control
+## Insert a sheet programmatically and make it the active sheet
 
 A sheet is a collection of cells organized in the form of rows and columns that allows you to store, format, and manipulate the data. Using `insertSheet` method, you can insert one or more sheets at the desired index. Then, you can make the inserted sheet as active sheet by focusing the start cell of that sheet using the `goTo` method.
 
@@ -89,7 +89,7 @@ You can dynamically rename an existing worksheet in the following way,
 
 * Right-click on the sheet tab, and then select `Rename` option from the context menu.
 
-## Print in Spreadsheet Control
+## Print Sheet
 
 You can use the `print` method by importing from ej2-base package. Here, the `Select` event in the dropdown and the `dataBound` event are used to print the single/multiple sheets of data. To print the single/multiple sheets, use the dropdown button and select the `Print` (or) `Print All` option. In the following sample, you can be able to print the single/multiple sheets.
 
@@ -155,8 +155,6 @@ The following code example shows the headers and gridlines operation in spreadsh
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Sheet visibility
 
