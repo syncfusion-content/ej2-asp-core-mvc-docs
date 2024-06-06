@@ -2,7 +2,7 @@
 {
     public ActionResult Index()
     {
-        string hostUrl = "https://ej2-aspcore-service.azurewebsites.net/";
+        string hostUrl = "https://services.syncfusion.com/aspnet/production/";
         ViewBag.ajaxSettings = new {
             url = hostUrl + "api/FileManager/FileOperations",
             getImageUrl = hostUrl + "api/FileManager/GetImage",
