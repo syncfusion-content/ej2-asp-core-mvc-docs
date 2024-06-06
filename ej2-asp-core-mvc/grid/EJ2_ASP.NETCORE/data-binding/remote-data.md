@@ -66,10 +66,11 @@ The following code example shows how to bind ExpandoObject datasource in grid us
 {% endtabs %}
 {% endif %}
 
-N> Perform data and CRUD operations for complex ExpandoObject binding fields as well.
+> Perform data and CRUD operations for complex ExpandoObject binding fields as well.
 
-The following image represents ExpandoObject complex data binding.
-![Grid with ExpandoObject Binding](images/ExpandoObjectDemo.gif)
+The following image represents ExpandoObject complex data binding. 
+
+![Grid with ExpandoObject Binding](../../images/ExpandoObjectDemo.gif)
 
 ## DynamicObject with complex column binding using URL adaptor
 
@@ -100,10 +101,11 @@ The following code example shows how to bind DynamicObject datasource in grid us
 {% endtabs %}
 {% endif %}
 
-N> Perform data and CRUD operations for complex DynamicObject binding fields as well.
+> Perform data and CRUD operations for complex DynamicObject binding fields as well.
 
 The following image represents DynamicObject complex data binding.
-![Grid with DynamicObject Binding](images/DynamicObjectDemo.gif)
+
+![Grid with DynamicObject Binding](../../images/DynamicObjectDemo.gif)
 
 ## OData adaptor - Binding OData service
 
@@ -155,6 +157,112 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 {% endhighlight %}
 {% highlight c# tabtitle="OdataV4.cs" %}
 {% include code-snippet/grid/data-binding/odataV4/odataV4.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Odata with custom url
+
+The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
+
+**Configuring Custom URLs**
+
+To work with custom URLs for CRUD operations in the Syncfusion Grid, you can use the following properties:
+
+* insertUrl: Specifies the custom URL for inserting new records.
+* removeUrl: Specifies the custom URL for deleting records.
+* updateUrl: Specifies the custom URL for updating records.
+* batchUrl: Specifies the custom URL for batch editing operations.
+
+> Ensure that the routing configurations on the server-side are properly updated to handle these custom URLs.
+
+The following code example describes the above behavior.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+<ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
+    <e-data-manager url="http://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7" adaptor="ODataV4Adaptor" 
+    updateUrl= "https://localhost:xxxx/odata/Orders/Update" 
+    insertUrl= "https://localhost:xxxx/odata/Orders/Insert"
+    removeUrl= "https://localhost:xxxx/odata/Orders/Delete" 
+    crossdomain="true"></e-data-manager>
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120" isPrimaryKey="true" validationRules="@(new { required=true})"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140" validationRules="@(new { required=true, minLength=3})"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' textAlign="Right" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+@Html.EJS().Grid("OdataV4").DataSource(dataManger =>
+{
+    dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").InsertUrl("https://localhost:xxxx/odata/Orders/Insert").
+    RemoveUrl("https://localhost:xxxx/odata/Orders/Delete").
+    UpdateUrl("https://localhost:xxxx/odata/Orders/Update").
+    CrossDomain(true).
+    Adaptor("ODataV4Adaptor");
+}).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(new { required = "true", minLength=3 }).Width("160").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+For batch editing, you can specify a custom batch URL as follows:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+<ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
+    <e-data-manager url="http://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7" adaptor="ODataV4Adaptor"
+    BatchUrl="https://localhost:xxxx/odata/Orders/BatchUpdate"
+    crossdomain="true"></e-data-manager>
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120" isPrimaryKey="true" validationRules="@(new { required=true})"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140" validationRules="@(new { required=true, minLength=3})"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' textAlign="Right" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+@Html.EJS().Grid("OdataV4").DataSource(dataManger =>
+{
+    dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").
+    BatchUrl("https://localhost:xxxx/odata/Orders/BatchUpdate").
+    CrossDomain(true).
+    Adaptor("ODataV4Adaptor");
+}).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(new { required = "true", minLength=3 }).Width("160").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
