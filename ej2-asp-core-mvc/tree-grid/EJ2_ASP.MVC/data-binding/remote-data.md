@@ -50,7 +50,65 @@ N>Remote Data Binding supports only Self-Referential Data and by default the `pa
 {% endtabs %}
 {% endif %}
 
+**Service code snippet:**
 
+```ts
+
+namespace Controllers
+{
+    [Produces("application/json")]
+    [Route("api/Tasks")]
+    public class TaskController : Controller
+    {
+        public static List<SelfReferenceData> tree = new List<SelfReferenceData>();
+        // GET: api/Tasks
+        [HttpGet]
+
+        public object Get()
+        {
+            var queryString = Request.Query;
+            if (tree.Count == 0)
+                tree = SelfReferenceData.GetTree();
+            //Filtering
+            if (queryString.Keys.Contains("$filter") && !queryString.Keys.Contains("$top"))
+            {
+                StringValues filter;
+                queryString.TryGetValue("$filter", out filter);
+                int fltr = Int32.Parse(filter[0].ToString().Split("eq")[1]);
+                IQueryable<SelfReferenceData> data1 = tree.Where(f => f.ParentItem == fltr).AsQueryable();
+                return new { result = data1.ToList(), count = data1.Count() };
+            }
+            List<SelfReferenceData> data = tree.ToList();
+            if (queryString.Keys.Contains("$select"))
+            {
+                data = (from ord in tree
+                        select new SelfReferenceData
+                        {
+                            ParentItem = ord.ParentItem
+                        }
+                        ).ToList();
+                return data;
+            }
+            data = data.Where(p => p.ParentItem == null).ToList();
+            int count = data.Count;
+             //Paging
+            if (queryString.Keys.Contains("$inlinecount"))
+            {
+                StringValues Skip;
+                StringValues Take;
+
+                int skip = (queryString.TryGetValue("$skip", out Skip)) ? Convert.ToInt32(Skip[0]) : 0;
+                int top = (queryString.TryGetValue("$top", out Take)) ? Convert.ToInt32(Take[0]) : data.Count();
+
+                return new { result = tree.Skip(skip).Take(top), count = tree.Count };
+            }
+            else
+            {
+                return SelfReferenceData.GetTree();
+            }
+        }
+
+```
 
 N> By default, **DataManager** uses **ODataAdaptor** for remote data-binding.
 <br/> Based on the RESTful web services, set the corresponding adaptor to DataManager. Refer [`here`](https://ej2.syncfusion.com/documentation/data/adaptors/?no-cache=1) for more details.
