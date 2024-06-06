@@ -12,14 +12,14 @@ documentation: ug
 
 Content Security Policy (CSP) is a security feature implemented by web browsers to protect against attacks such as cross-site scripting (XSS) and data injection. It limits the sources from which content can be loaded on a web page. To enable strict Content Security Policy (CSP), certain browser features are disabled by default. To use Syncfusion controls with strict CSP mode, it is essential to include the following directives:
 
-Nonce attribute is used in CSP to validate requests and prevent attackers from injecting JavaScript code into a web application.
+`nonce` attribute is used in CSP to validate requests and prevent attackers from injecting JavaScript code into a web application.
 
 
 ## Steps to Create and Include the Nonce Attribute in an ASP.NET Core Application
 
 * Generate the `nonce` attribute value by adding the below code in **Program.cs** file.
 
-* Syncfusion material and tailwind built-in themes contain a reference to the Roboto’s external font, which is also blocked. To allow them, add the external font reference to the style-src and font-src directives in the above meta tag.
+* Syncfusion material and tailwind built-in themes contain a reference to the Roboto’s external font, which is also blocked. To allow them, add the external font reference to the `style-src` and `font-src` directives in the above meta tag.
 
 {% tabs %}
 {% highlight c# tabtitle="Program.cs" %}
@@ -70,9 +70,9 @@ app.Use(async (context, next) =>
 {% endhighlight %}
 {% endtabs %}
 
-N> The `unsafe-eval` directive needs to be added in script-src for samples that use the template properties.
+N> The `unsafe-eval` directive needs to be added in `script-src` for controls which uses the templates.
 
-* Run the application then see the DOM, nonce attribute is added in script tag and it's value hidden for security purpose.
+* Run the application then see the DOM, `nonce` attribute is added in script tag and it's value hidden for security purpose.
 
 
 
