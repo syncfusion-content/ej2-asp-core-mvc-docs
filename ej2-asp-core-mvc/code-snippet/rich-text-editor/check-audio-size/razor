@@ -1,4 +1,4 @@
-@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertAudioSettings(obj => obj.SaveUrl("https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save").Path("../Files/")).FileUploading("onFileUploading").Render()
+@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertAudioSettings(obj => obj.SaveUrl("https://services.syncfusion.com/aspnet/production/api/uploadbox/Save").Path("../Files/")).FileUploading("onFileUploading").Render()
 
 <script>
     function onFileUploading(args) {
