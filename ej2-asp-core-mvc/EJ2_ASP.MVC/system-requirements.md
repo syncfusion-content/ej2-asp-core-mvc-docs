@@ -14,7 +14,7 @@ To get start with ASP.NET MVC application, need to ensure the following software
 
 ## Integrated Development Environment (IDE)
 
-ASP.NET MVC Applications can be developed using one of the following IDEs. You can also develop using [.NET CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/) without below IDEs.
+ASP.NET MVC Applications can be developed using one of the following IDEs. You can also develop using [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/) without below IDEs.
 
 * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloads/)

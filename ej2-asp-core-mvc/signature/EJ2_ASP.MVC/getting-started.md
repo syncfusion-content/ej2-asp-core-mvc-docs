@@ -97,6 +97,6 @@ Now, add the Syncfusion ASP.NET MVC Signature control in `~/Views/Home/Index.csh
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Signature control will be rendered in the default web browser.
 
-![ASP.NET MVC Signature Control](images/default.PNG)
+![ASP.NET MVC Signature Control](images/default.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Signature/ASP.NET%20MVC%20Razor%20Examples).
