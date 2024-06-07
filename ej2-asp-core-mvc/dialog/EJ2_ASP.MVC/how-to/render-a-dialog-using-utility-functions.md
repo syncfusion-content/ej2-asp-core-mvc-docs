@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render A Dialog Using Utility Functions in ASP.NET MVC Dialog Component | Syncfusion
+title: Render A Dialog Using Utility Functions in ##Platform_Name## Dialog Component | Syncfusion
 description: Learn here all about Render A Dialog Using Utility Functions in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Render A Dialog Using Utility Functions

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Modify the result data before passing to DropDownList when binding remote data source
+# Modify data before passing to DropDownList for remote data binding
 
 When binding the remote data source, by using the [actionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ActionComplete) event, you can modify the result data before passing it to DropDownList.
 
