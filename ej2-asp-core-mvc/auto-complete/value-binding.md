@@ -59,8 +59,22 @@ The following sample shows the example for preselect values for object data type
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/object/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Arrayofobjects.cs" %}
-{% include code-snippet/autocomplete/object/object.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class Record
+{
+    public string ID { get; set; }
+    public string Text { get; set; }
+    public List<Record> RecordList { set; get; }
+    public List<Record> RecordModelList()
+    {
+        return Enumerable.Range(1, 150).Select(i => new Record()
+        {
+            ID = i.ToString(),
+            Text = "Item " + i,
+        }).ToList();
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 

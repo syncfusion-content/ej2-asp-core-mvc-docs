@@ -102,9 +102,6 @@ AppBar is rendered with a Menu component in its AppBar header area. Menu compone
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/design/menu/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Menu.cs" %}
-{% include code-snippet/appbar/design/menu/menu.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -131,9 +128,6 @@ The AppBar is rendered with a Button and DropDownButton component in its AppBar 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/design/buttons/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Button.cs" %}
-{% include code-snippet/appbar/design/buttons/buttons.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -159,9 +153,6 @@ The AppBar is rendered with the SideBar component below the AppBar. Click on the
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/design/sidebar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Sidebar.cs" %}
-{% include code-snippet/appbar/design/sidebar/sidebar.cs %}
 {% endhighlight %}
 {% endtabs %}
 

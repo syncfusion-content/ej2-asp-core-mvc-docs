@@ -1,4 +1,4 @@
-<ejs-breadcrumb id="itemTemplate" cssClass="e-breadcrumb-chips" separatorTemplate="@Html.Raw("<span class="e-icons e-bullet-arrow"></span>")">
+<ejs-breadcrumb id="separatorTemplate" cssClass="e-breadcrumb-chips" separatorTemplate="@Html.Raw("<span class='e-icons e-bullet-arrow'></span>")">
     <e-breadcrumb-items>
         <e-breadcrumb-item text="Cart"></e-breadcrumb-item>
         <e-breadcrumb-item text="Billing"></e-breadcrumb-item>
@@ -7,10 +7,11 @@
     </e-breadcrumb-items>
 </ejs-breadcrumb>
 
-style>
-    .e-bullet-arrow::before {
-        content: '\e253';
-        font-size: 21px;
+<style>
+    .e-bullet-arrow:before {
+        content: "\e706";
+        font-weight: 800;
+        font-size: 12px;
     }
 
     @@font-face {

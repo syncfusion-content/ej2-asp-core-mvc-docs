@@ -76,9 +76,6 @@ Avatars can be used with a wide variety of media formats like SVG, font-icons, i
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/media-formats/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/media-formats/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

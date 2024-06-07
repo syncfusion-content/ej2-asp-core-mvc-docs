@@ -34,9 +34,6 @@ CssClass is used for AppBar customization based on the custom class. In the exam
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/style-and-appearance/cssclass/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="CssClass.cs" %}
-{% include code-snippet/appbar/style-and-appearance/cssclass/cssclass.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -63,8 +60,13 @@ It can be used for additional inline attributes by specifying as inline attribut
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/style-and-appearance/htmlattributes/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HtmlAttributes.cs" %}
-{% include code-snippet/appbar/style-and-appearance/htmlattributes/htmlattributes.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class HtmlAttributes : PageModel
+{
+    public Dictionary<string, object> htmlAttribute = new Dictionary<string, object>()
+        {   {"aria-label", "appbar" } };
+    ...
+}
 {% endhighlight %}
 {% endtabs %}
 
