@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons Support in ##Platform_Name## Drop Down List Component | Syncfusion
+title: Icons Support in ##Platform_Name## Syncfusion Drop Down List Component
 description: Learn here all about icons support in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons Support
