@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rendering event in EJ2 ASP.NET Core PDF Viewer | Syncfusion
-description: Learn here all about Rendering event in ASP.NET Core Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Signature selection events in EJ2 ASP.NET Core PDF Viewer | Syncfusion
+description: Learn here all about selection event in ASP.NET Core Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
 publishingplatform: ##Platform_Name##

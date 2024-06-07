@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Signature selection events in  EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about signatureSelect and signatureUnselect event event in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+description: Learn here all about signatureSelect and signatureUnselect event in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
 publishingplatform: ##Platform_Name##
