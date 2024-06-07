@@ -18,7 +18,7 @@ The most important features available in the TreeGrid component are paging, sort
 ## Key features
 
 * **Data sources**: Binds the TreeGrid component with an array of JavaScript objects or DataManager.
-* **Adaptive Layout**: The Tree Grid user interface (UI) has been redesigned to provide an optimal viewing experience and improve usability on small screens.
+* **Adaptive Layout**: The Tree Grid user interface (UI) has been designed to provide an optimal viewing experience and improve usability on small screens.
 * **Sorting**: Supports **n** levels of sorting.
 * **Filtering**: Supports filtering records with filter bar and menu filtering modes.
 * **Paging**: Allows easy switching between pages using the pager bar.
