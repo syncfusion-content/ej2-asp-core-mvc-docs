@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Tree Grid Component  | Syncfusion
+title: Overview in ##Platform_Name## Tree Grid Component
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ##Platform_Name## Tree Grid Component
+# Overview
 
 The TreeGrid component is a feature-rich control used to visualize self-referential hierarchical data effectively in a tabular format. It can pull data from data sources such as an array of JSON, RESTful services, `OData services`, `WCF services` or `DataManager`, and binding data fields to columns. It also expands or collapses child data using the tree column.
 
@@ -18,12 +18,10 @@ The most important features available in the TreeGrid component are paging, sort
 ## Key features
 
 * **Data sources**: Binds the TreeGrid component with an array of JavaScript objects or DataManager.
-* **Adaptive Layout**: The Tree Grid user interface (UI) has been redesigned to provide an optimal viewing experience and improve usability on small screens.
 * **Sorting**: Supports **n** levels of sorting.
 * **Filtering**: Supports filtering records with filter bar and menu filtering modes.
 * **Paging**: Allows easy switching between pages using the pager bar.
 * **Editing**: Offers cell and row editing modes for updating the records.
-* **Virtual scrolling**: To efficiently handle and display a large amount of data without experiencing any performance degradation.
 * **Columns**: The column definitions are used as the datasource schema in the TreeGrid. This plays a vital role in rendering column values in the required tree structure.
 * **Reordering**: Allows dragging and dropping of any column anywhere in the treegrid’s column header row, thus allowing repositioning of columns.
 * **Resizing**: Resizing allows changing column width on the fly by simply dragging the right corner of the column header.
