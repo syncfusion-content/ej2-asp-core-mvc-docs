@@ -57,11 +57,11 @@ N>Remote Data Binding supports only Self-Referential Data and by default the `pa
 namespace Controllers
 {
     [Produces("application/json")]
-    [Route("api/Tasks")]
-    public class TaskController : Controller
+    [Route("api/SelfReferenceData")]
+    public class SelfReferenceDataController : Controller
     {
         public static List<SelfReferenceData> tree = new List<SelfReferenceData>();
-        // GET: api/Tasks
+        // GET: api/SelfReferenceData
         [HttpGet]
 
         public object Get()
