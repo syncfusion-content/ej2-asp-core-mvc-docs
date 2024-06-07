@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Item in ##Platform_Name## Drop Down List Component
+title: Add Item in ##Platform_Name## Drop Down List Component | Syncfusion
 description: Learn here all about how to add item in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Item

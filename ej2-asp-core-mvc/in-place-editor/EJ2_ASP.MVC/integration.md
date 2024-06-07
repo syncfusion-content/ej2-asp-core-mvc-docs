@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration in ##Platform_Name## In Place Editor Component
+title: Integration in ##Platform_Name## In Place Editor Component | Syncfusion
 description: Learn here all about Integration in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integration

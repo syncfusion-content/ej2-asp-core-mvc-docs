@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Drop Down List Component
+title: Templates in ##Platform_Name## Drop Down List Component | Syncfusion
 description: Learn here all about templates in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Templates
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Templates
+# Templates of Drop Down List Component
 
 The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential JS 2 `Template engine` to compile and render the elements properly.
 
