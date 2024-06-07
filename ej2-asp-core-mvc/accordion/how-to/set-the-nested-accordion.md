@@ -33,7 +33,6 @@ Accordion supports to render `nested` level of Accordion by using content proper
 {% endtabs %}
 {% endif %}
 
-
-![Alt text](../images/nested.PNG)
+![Alt text](../images/nested.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Accordion/AccordionUGSamples).
