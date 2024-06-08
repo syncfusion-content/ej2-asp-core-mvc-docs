@@ -90,7 +90,7 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 
 It is possible to show the week number count of a week in the header bar of the Scheduler by setting true to `ShowWeekNumber` property. By default, its default value is `false`. In Month view, the week numbers are displayed as a first column.
 
-N> The `ShowWeekNumber` property is not applicable on Timeline views, as it has the equivalent [HeaderRows](./header-rows/#display-week-numbers-in-timeline-views) property to handle such requirement with additional customization.
+N> The `ShowWeekNumber` property is not applicable on Timeline views, as it has the equivalent [HeaderRows](./https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/header-rows#display-week-numbers-in-timeline-views) property to handle such requirement with additional customization.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -127,7 +127,7 @@ By default, week numbers are shown in the Scheduler based on the first day of th
 
 `FirstFullWeek` – The first week of the year begins when meeting the first day of the week (firstDayOfWeek) and the first day of the year.
 
-For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks)
+For more details refer to [this link](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-8.0#remarks)
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -313,7 +313,7 @@ N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspne
 
 ## See Also
 
-* [To display the current time indicator](./timescale/#highlighting-current-date-and-time)
-* [To set different working hours dynamically](./how-to/set-different-work-hours)
-* [To set different working hours for each resources](./resources/#set-different-work-hours)
-* [To set different working days for each resources](./resources/#set-different-work-days)
+* [To display the current time indicator](https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/timescale#highlighting-current-date-and-time)
+* [To set different working hours dynamically](https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/how-to/set-different-work-hours)
+* [To set different working hours for each resources](https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/resources#set-different-work-hours)
+* [To set different working days for each resources](https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/resources#set-different-work-days)

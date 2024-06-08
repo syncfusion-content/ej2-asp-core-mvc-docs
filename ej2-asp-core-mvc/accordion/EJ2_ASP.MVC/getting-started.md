@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET MVC Accordion control in `~/Home/Index.cshtml` p
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the app. Then, the Syncfusion ASP.NET MVC Accordion control will be rendered in the default web browser.
 
-![ASP.NET MVC Accordion Control](images/accordion-control.PNG)
+![ASP.NET MVC Accordion Control](images/accordion-control.png)
 
 ## Render the Accordion using content template
 
@@ -137,7 +137,7 @@ public class LineChartData
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Accordion with Content Template](images/accordion-template.PNG)
+![ASP.NET MVC Accordion with Content Template](images/accordion-template.png)
 
 You can also render accordion without using `ContentTemplate` which can be referred [here](https://ej2.syncfusion.com/aspnetmvc/documentation/accordion/how-to/set-the-nested-accordion).
 
