@@ -140,6 +140,26 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 {% endtabs %}
 {% endif %}
 
+### Configure JSON serialization options
+
+Previously, when saving the Spreadsheet as a workbook JSON object using the [saveAsJson](../api/spreadsheet/#saveasjson) method, the entire workbook with all loaded features were processed and saved as a JSON object. 
+
+Now, you have the option to selectively ignore some features while saving the Spreadsheet as a JSON object by configuring serialization options and passing them as arguments to the `saveAsJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be saved without ignoring any features.
+
+| Options | Description |
+| ----- | ----- |
+| onlyValues |  If **true**, includes only the cell values in the JSON output. |
+| ignoreStyle | If **true**, excludes styles from the JSON output. |
+| ignoreFormula | If **true**, excludes formulas from the JSON output. |
+| ignoreFormat | If **true**, excludes number formats from the JSON output. |
+| ignoreConditionalFormat | If **true**, excludes conditional formatting from the JSON output. |
+| ignoreValidation | If **true**, excludes data validation rules from the JSON output. |
+| ignoreFreezePane | If **true**, excludes freeze panes from the JSON output. |
+| ignoreWrap | If **true**, excludes text wrapping settings from the JSON output. |
+| ignoreChart | If **true**, excludes charts from the JSON output. |
+| ignoreImage | If **true**, excludes images from the JSON output. |
+| ignoreNote | If **true**, excludes notes from the JSON output. |
+
 ### External workbook confirmation dialog
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
@@ -304,6 +324,26 @@ The possible values are:
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+### Configure JSON serialization options
+
+Previously, when saving the Spreadsheet as a workbook JSON object using the [saveAsJson](../api/spreadsheet/#saveasjson) method, the entire workbook with all loaded features were processed and saved as a JSON object. 
+
+Now, you have the option to selectively ignore some features while saving the Spreadsheet as a JSON object by configuring serialization options and passing them as arguments to the `saveAsJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be saved without ignoring any features.
+
+| Options | Description |
+| ----- | ----- |
+| onlyValues |  If **true**, includes only the cell values in the JSON output. |
+| ignoreStyle | If **true**, excludes styles from the JSON output. |
+| ignoreFormula | If **true**, excludes formulas from the JSON output. |
+| ignoreFormat | If **true**, excludes number formats from the JSON output. |
+| ignoreConditionalFormat | If **true**, excludes conditional formatting from the JSON output. |
+| ignoreValidation | If **true**, excludes data validation rules from the JSON output. |
+| ignoreFreezePane | If **true**, excludes freeze panes from the JSON output. |
+| ignoreWrap | If **true**, excludes text wrapping settings from the JSON output. |
+| ignoreChart | If **true**, excludes charts from the JSON output. |
+| ignoreImage | If **true**, excludes images from the JSON output. |
+| ignoreNote | If **true**, excludes notes from the JSON output. |
 
 ### Supported file formats
 
