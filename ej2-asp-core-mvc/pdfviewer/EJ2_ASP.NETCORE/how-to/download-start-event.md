@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Controlling File Downloads in ##Platform_Name## Pdfviewer Component
+title: Controlling File Downloads in EJ2 ASP.NET Core PDF Viewer| Syncfusion
 description: Learn here how to Controlling File Downloads in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-## Controlling File Downloads in Syncfusion PDF Viewer
+# Controlling File Downloads in Syncfusion PDF Viewer
 
 In the Syncfusion PDF Viewer, we've introduced a new feature that enables you to manage file downloads more effectively. This feature allows you to intercept and potentially skip the download process of a PDF document, providing enhanced control over user interactions within your application.
 
@@ -55,7 +55,7 @@ The key to this functionality lies in the downloadStart event, which offers a me
 {% endhighlight %}
 {% endtabs %}
 
-By default, the cancel argument is set to `false`, indicating that the download action will proceed unless explicitly cancelled by your custom logic.
+By default, the cancel argument is set to `false`, indicating that the download action will proceed unless explicitly canceled by your custom logic.
 
 ### Enhanced Flexibility
 

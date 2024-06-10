@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-## Controlling File Downloads in Syncfusion PDF Viewer
+# Controlling File Downloads in Syncfusion PDF Viewer
 
 In the Syncfusion PDF Viewer, we've introduced a new feature that enables you to manage file downloads more effectively. This feature allows you to intercept and potentially skip the download process of a PDF document, providing enhanced control over user interactions within your application.
 
@@ -56,7 +56,7 @@ function downloadStart(args) {
 {% endtabs %}
 
 
-By default, the cancel argument is set to `false`, indicating that the download action will proceed unless explicitly cancelled by your custom logic.
+By default, the cancel argument is set to `false`, indicating that the download action will proceed unless explicitly canceled by your custom logic.
 
 ### Enhanced Flexibility
 
