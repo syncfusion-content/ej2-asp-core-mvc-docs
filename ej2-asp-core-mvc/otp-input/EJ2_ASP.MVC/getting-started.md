@@ -94,6 +94,6 @@ Now, add the Syncfusion ASP.NET MVC OTP Input control in `~/Home/Index.cshtml` p
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC OTP Inut control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC OTP Input control will be rendered in the default web browser.
 
 ![ASP.NET MVC OTP Input Control](images/otp-default.png)
