@@ -1,7 +1,7 @@
 <ejs-chart id="container" title="Sales by product" axisRangeCalculated="axisRangeCalculated">
     <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" labelIntersectAction="@Syncfusion.EJ2.Charts.LabelIntersectAction.Rotate90">
         <e-majorgridlines width="0"></e-majorgridlines>
-        <e-labelStyle size="12px"></e-linestyle>
+        <e-labelstyle size="12px"></e-labelstyle>
     </e-chart-primaryxaxis>
     <e-chart-primaryyaxis title="Sales (in percentage)" minimum="0" maximum="100" interval="5" labelFormat="{value}%">
         <e-linestyle width="0"></e-linestyle>

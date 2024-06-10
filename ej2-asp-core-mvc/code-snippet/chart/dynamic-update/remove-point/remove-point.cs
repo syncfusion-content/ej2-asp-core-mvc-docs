@@ -9,7 +9,7 @@ public ActionResult Index()
         new DynamicChartData{ x= "China",          y= 721.4 },
         new DynamicChartData{ x= "USA",            y= 286.9 },
         new DynamicChartData{ x= "Great Britain",  y= 115.1 },
-        new DynamicChartData{ x= "Nigeria",        y= 97.2  },
+        new DynamicChartData{ x= "Nigeria",        y= 97.2  }
     };
     ViewBag.dataSource = chartData;
     return View();
