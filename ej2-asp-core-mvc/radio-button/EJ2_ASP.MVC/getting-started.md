@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET MVC Radio Button control in `~/Views/Home/Index.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Radio Button control will be rendered in the default web browser.
 
-![ASP.NET MVC Radio Button Control](images/radio-button.PNG)
+![ASP.NET MVC Radio Button Control](images/radio-button.png)
 
 ## Change the Radio Button state
 

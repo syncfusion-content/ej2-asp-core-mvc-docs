@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timeout in ##Platform_Name## Toast Component
+title: Timeout in ##Platform_Name## Toast Component | Syncfusion
 description: Learn here all about Timeout in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Timeout
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Time out
+# Time out in Toast Control
 
 The toast can be expired based on the [`TimeOut`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_TimeOut) property. The toast can live till the time out reaches without user interaction, a time out value is considered as a millisecond.
 
@@ -75,4 +75,4 @@ You can prevent auto hiding in a toast as visible like static by setting zero (`
 
 ## See Also
 
-* [How to close the toast with click/tab](./how-to/close-the-toast-with-click-tap/)
+* [How to close the toast with click/tab](./how-to/close-the-toast-with-click-tap)

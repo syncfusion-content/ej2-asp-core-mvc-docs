@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Maps Component
 
-This section briefly explains about how to include [ASP.NET MVC Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) component in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps-library) component in your ASP.NET MVC application using Visual Studio.
 
 You can explore some useful features in the Maps component using the following video.
 

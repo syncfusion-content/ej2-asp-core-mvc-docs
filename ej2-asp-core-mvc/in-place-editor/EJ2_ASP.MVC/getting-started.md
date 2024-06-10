@@ -159,7 +159,7 @@ In the following sample, type and model values are configured to render the Text
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with Form](images/getting-started-form.PNG)
+![ASP.NET MVC In-place Editor with Form](images/getting-started-form.png)
 
 ## Submitting data to the server (save)
 
@@ -186,7 +186,7 @@ The edited data is submitted to the server and you can see the new values gettin
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with Editing Value](images/getting-started.PNG)
+![ASP.NET MVC In-place Editor with Editing Value](images/getting-started.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/InPlaceEditor/ASP.NET%20MVC%20Razor%20Examples).
 
