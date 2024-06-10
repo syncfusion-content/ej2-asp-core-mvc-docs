@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with ##Platform_Name## OTP Input Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Getting Started
+control: OTP Input
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
