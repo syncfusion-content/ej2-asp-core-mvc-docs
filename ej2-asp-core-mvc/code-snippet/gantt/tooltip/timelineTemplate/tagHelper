@@ -1,26 +1,26 @@
-                <ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="450px" timelineTemplate = "#TimelineTemplates">
-                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+                <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" allowSelection="true" treeColumnIndex="1"
+                    projectStartDate="03/31/2024" projectEndDate="04/23/2024" timelineTemplate="#timelineTemplates">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+                        progress="Progress" dependency="Predecessor" child="SubTasks">
                     </e-gantt-taskfields>
-                       <e-gantt-splitterSettings columnIndex="1"></e-gantt-splitterSettings>
-                         <e-gantt-columns>
-                        <e-gantt-column field="TaskId" visible = false></e-gantt-column>
-                        <e-gantt-column field="TaskName" headerText="Name" width="250"></e-gantt-column>
+                    <e-gantt-columns>
+                        <e-gantt-column field="TaskId" visible=false></e-gantt-column>
+                        <e-gantt-column field="TaskName" width="300"></e-gantt-column>
                         <e-gantt-column field="StartDate"></e-gantt-column>
+                        <e-gantt-column field="EndDate"></e-gantt-column>
                         <e-gantt-column field="Duration"></e-gantt-column>
                         <e-gantt-column field="Progress"></e-gantt-column>
-                        <e-gantt-column field="Predecessor"></e-gantt-column>
                     </e-gantt-columns>
-                    <e-gantt-holidays>
-                        <e-gantt-holiday from="04/04/2019" to="04/04/2019" label="Local Holiday"></e-gantt-holiday>
-                        <e-gantt-holiday from="04/19/2019" to="04/19/2019" label="Good Friday"></e-gantt-holiday>
-                        <e-gantt-holiday from="04/30/2019" to="04/30/2019" label="Release Holiday"></e-gantt-holiday>
-                    </e-gantt-holidays>
-                    <e-gantt-labelSettings leftLabel="TaskName"></e-gantt-labelSettings>
                     <e-gantt-timelinesettings timelineUnitSize="100">
                         <e-timelinesettings-toptier unit="Week" format="MMM dd, y"></e-timelinesettings-toptier>
                         <e-timelinesettings-bottomtier unit="Day"></e-timelinesettings-bottomtier>
                     </e-gantt-timelinesettings>
-
+                    <e-gantt-labelSettings leftLabel="TaskName"></e-gantt-labelSettings>
+                    <e-gantt-splittersettings columnIndex="1"></e-gantt-splittersettings>
+                    <e-gantt-holidays>
+                        <e-gantt-holiday from="04/04/2019" to="04/04/2019" label="Local Holiday"></e-gantt-holiday>
+                        <e-gantt-holiday from="04/19/2019" to="04/19/2019" label="Public holiday"></e-gantt-holiday>
+                    </e-gantt-holidays>
                 </ejs-gantt>
                 <script type="text/x-jsrender" id="TimelineTemplates">
                         ${if(tier == 'topTier')} 

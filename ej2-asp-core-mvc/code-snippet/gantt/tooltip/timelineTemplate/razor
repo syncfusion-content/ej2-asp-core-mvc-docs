@@ -1,10 +1,24 @@
-    @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
-        "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).TimelineTemplate("#timelineTemplates") .TimelineSettings(ts => ts.TimelineUnitSize(100).TopTier(tt => tt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Week).Format("MMM dd, yyyy"))
-    .BottomTier(bt => bt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Day).Count(1))).Holidays(hol => {
-                    hol.From("04/04/2019").To("04/05/2019").Label("Local Holiday").Add();
-                    hol.From("04/12/2019").To("04/12/2019").Label("Public holiday").Add();
-                }) .LabelSettings(ls => ls.LeftLabel("TaskName")).Render()
-
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable < object >)ViewBag.DataSource).Height("450px").AllowSelection(true).TreeColumnIndex(1)
+    .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress")
+        .Dependency("Predecessor").Child("SubTasks")).TimelineTemplate("#timelineTemplates").TimelineSettings(ts => ts.TimelineUnitSize(100).TopTier(tt => tt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Week).Format("MMM dd, yyyy"))
+            .BottomTier(bt => bt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Day).Count(1)))
+{
+    col.Field("TaskId").Visible(false).Add();
+    col.Field("TaskName").Width(300).Add();
+    col.Field("StartDate").Add();
+    col.Field("EndDate").Add();
+    col.Field("Duration").Add();
+    col.Field("Progress").Add();
+})
+    .LabelSettings(ls => ls.LeftLabel("TaskName"))
+    .SplitterSettings(sp => sp.ColumnIndex(1))
+    .ProjectStartDate("03/31/2024")
+    .ProjectEndDate("04/23/2024")
+    .Holidays(hol => {
+        hol.From("04/04/2019").To("04/05/2019").Label("Local Holiday").Add();
+        hol.From("04/12/2019").To("04/12/2019").Label("Public holiday").Add();
+    })
+    .Render()
                 <script type="text/x-jsrender" id="TimelineTemplates">
                 ${if(tier == 'topTier')} 
                 <div class="e-header-cell-label e-gantt-top-cell-text" style="width:100%;background-color: #FBF9F1 ;  font-weight: bold;height: 100%;display: flex; justify-content: center ; align-items: center;   "title=${date}> 
