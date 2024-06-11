@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core OTP Input Control
+# Getting Started with ASP.NET Core OTP Input control
 
 This section briefly explains about how to include `ASP.NET Core OTP Input` control in your ASP.NET Core application using Visual Studio.
 
