@@ -140,25 +140,25 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 {% endtabs %}
 {% endif %}
 
-### Configure JSON serialization options
+### Configure JSON deserialization options
 
-Previously, when saving the Spreadsheet as a workbook JSON object using the [saveAsJson](../api/spreadsheet/#saveasjson) method, the entire workbook with all loaded features were processed and saved as a JSON object. 
+Previously, when opening a workbook JSON object into the Spreadsheet using the `openFromJson` method, the entire workbook, including all features specified in the JSON object, was processed and loaded into the Spreadsheet. 
 
-Now, you have the option to selectively ignore some features while saving the Spreadsheet as a JSON object by configuring serialization options and passing them as arguments to the `saveAsJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be saved without ignoring any features.
+Now, you have the option to selectively ignore some features during the opening of the JSON object by configuring deserialization options and passing them as arguments to the `openFromJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be loaded without ignoring any features.
 
 | Options | Description |
 | ----- | ----- |
-| onlyValues |  If **true**, includes only the cell values in the JSON output. |
-| ignoreStyle | If **true**, excludes styles from the JSON output. |
-| ignoreFormula | If **true**, excludes formulas from the JSON output. |
-| ignoreFormat | If **true**, excludes number formats from the JSON output. |
-| ignoreConditionalFormat | If **true**, excludes conditional formatting from the JSON output. |
-| ignoreValidation | If **true**, excludes data validation rules from the JSON output. |
-| ignoreFreezePane | If **true**, excludes freeze panes from the JSON output. |
-| ignoreWrap | If **true**, excludes text wrapping settings from the JSON output. |
-| ignoreChart | If **true**, excludes charts from the JSON output. |
-| ignoreImage | If **true**, excludes images from the JSON output. |
-| ignoreNote | If **true**, excludes notes from the JSON output. |
+| onlyValues |  If **true**, only the cell values will be loaded. |
+| ignoreStyle | If **true**, styles will be excluded when loading the JSON data. |
+| ignoreFormula | If **true**, formulas will be excluded when loading the JSON data. |
+| ignoreFormat | If **true**, number formats will be excluded when loading the JSON data. |
+| ignoreConditionalFormat | If **true**, conditional formatting will be excluded when loading the JSON data. |
+| ignoreValidation | If **true**, data validation rules will be excluded when loading the JSON data. |
+| ignoreFreezePane | If **true**, freeze panes will be excluded when loading the JSON data. |
+| ignoreWrap | If **true**, text wrapping settings will be excluded when loading the JSON data. |
+| ignoreChart | If **true**, charts will be excluded when loading the JSON data. |
+| ignoreImage | If **true**, images will be excluded when loading the JSON data. |
+| ignoreNote | If **true**, notes will be excluded when loading the JSON data. |
 
 ### External workbook confirmation dialog
 
@@ -327,7 +327,7 @@ The possible values are:
 
 ### Configure JSON serialization options
 
-Previously, when saving the Spreadsheet as a workbook JSON object using the [saveAsJson](../api/spreadsheet/#saveasjson) method, the entire workbook with all loaded features were processed and saved as a JSON object. 
+Previously, when saving the Spreadsheet as a workbook JSON object using the `saveAsJson` method, the entire workbook with all loaded features were processed and saved as a JSON object. 
 
 Now, you have the option to selectively ignore some features while saving the Spreadsheet as a JSON object by configuring serialization options and passing them as arguments to the `saveAsJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be saved without ignoring any features.
 
