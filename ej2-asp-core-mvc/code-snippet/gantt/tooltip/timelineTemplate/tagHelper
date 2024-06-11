@@ -1,5 +1,5 @@
                 <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" allowSelection="true" treeColumnIndex="1"
-                    projectStartDate="03/31/2024" projectEndDate="04/23/2024" timelineTemplate="#timelineTemplates">
+                    projectStartDate="03/31/2024" projectEndDate="04/23/2024" timelineTemplate="#TimelineTemplates">
                     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
                         progress="Progress" dependency="Predecessor" child="SubTasks">
                     </e-gantt-taskfields>

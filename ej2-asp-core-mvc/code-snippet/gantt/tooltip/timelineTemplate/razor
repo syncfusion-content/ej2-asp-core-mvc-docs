@@ -1,6 +1,6 @@
 @Html.EJS().Gantt("Gantt").DataSource((IEnumerable < object >)ViewBag.DataSource).Height("450px").AllowSelection(true).TreeColumnIndex(1)
     .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress")
-        .Dependency("Predecessor").Child("SubTasks")).TimelineTemplate("#timelineTemplates").TimelineSettings(ts => ts.TimelineUnitSize(100).TopTier(tt => tt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Week).Format("MMM dd, yyyy"))
+        .Dependency("Predecessor").Child("SubTasks")).TimelineTemplate("#TimelineTemplates").TimelineSettings(ts => ts.TimelineUnitSize(100).TopTier(tt => tt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Week).Format("MMM dd, yyyy"))
             .BottomTier(bt => bt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Day).Count(1)))
 {
     col.Field("TaskId").Visible(false).Add();
