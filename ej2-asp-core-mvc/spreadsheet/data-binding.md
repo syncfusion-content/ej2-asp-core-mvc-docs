@@ -49,6 +49,12 @@ Refer to the following code example for local data binding.
 
 N> The local data source can also be provided as an instance of the `DataManager`. By default, `DataManager` uses `JsonAdaptor` for local data-binding.
 
+### Customizing column data mapping
+
+By default, when a data source is bound to a sheet, columns are auto-assigned from the data source fields sequentially. This means that the first field in the data source is assigned to Column A, the second to Column B, and so on, sequentially. However, now you can customize the column assignments by specifying the appropriate field names in the desired order using the `fieldsOrder` property.
+
+> You can customize the mapping of column data only in the local data binding support.
+
 ## Remote data
 
 To bind remote data to the Spreadsheet control, assign service data as an instance of `DataManager` to the `dataSource` property. To interact with remote data source, provide the service endpoint `url`.
