@@ -11,7 +11,7 @@ documentation: ug
 
 # Group items in Popup
 
-Grouped items are possible in SplitButton by templating entire popup with ListView. Check ListView [`grouping`](../list-view/grouping#grouping) and create such items. Create ListView with id `listview` and provide element of the ListView as target of SplitButton to render it in popup area.
+Grouped items are possible in SplitButton by templating entire popup with ListView. Check ListView [`grouping`](https://ej2.syncfusion.com/aspnetmvc/documentation/listview/grouping) and create such items. Create ListView with id `listview` and provide element of the ListView as target of SplitButton to render it in popup area.
 
 In this following example, ListView is created and its element is set as [`target`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.SplitButton.html#Syncfusion_EJ2_SplitButtons_SplitButton_Target) for SplitButton.
 

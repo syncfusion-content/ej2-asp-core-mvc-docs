@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET MVC CheckBox control in `~/Home/Index.cshtml` pa
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC CheckBox control will be rendered in the default web browser.
 
-![ASP.NET MVC CheckBox Control](images/check-box.PNG)
+![ASP.NET MVC CheckBox Control](images/check-box.png)
 
 ## Change the CheckBox state
 
