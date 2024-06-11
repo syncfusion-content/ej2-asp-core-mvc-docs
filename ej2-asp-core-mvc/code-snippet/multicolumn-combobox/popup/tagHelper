@@ -1,6 +1,5 @@
-
-<div class="container" style="width: 500px">
-    <ejs-multicolumncombobox id="default" dataSource="ViewBag.EmpData" placeholder="Select a employee">
+<div style="width: 550px">
+    <ejs-multicolumncombobox id="popup" dataSource="ViewBag.EmpData" popupHeight="250px" popupWidth="550px" placeholder="Select a employee">
         <e-multicolumncombobox-fields text="Name" value="EmpID"></e-multicolumncombobox-fields>
         <e-multicolumncombobox-columns>
             <e-multicolumncombobox-column field="EmpID" header="Employee ID" width="120"></e-multicolumncombobox-column>

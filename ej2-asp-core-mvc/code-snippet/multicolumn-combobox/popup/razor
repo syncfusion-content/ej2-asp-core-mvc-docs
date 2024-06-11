@@ -1,0 +1,10 @@
+<div id="container" style="width: 550px">
+    @Html.EJS().MultiColumnComboBox("popup").DataSource((IEnumerable<object>)Model).PopupHeight("250px").PopupWidth("550px").Placeholder("Select a employee").Fields(
+    new Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBoxFieldSettings { Text = "Name", Value = "EmpID" }).Columns(col =>
+    {
+        col.Field("EmpID").Header("Employee ID").Width("120").Add();
+        col.Field("Name").Header("Name").Width("120").Add();
+        col.Field("Designation").Header("Designation").Width("120").Add();
+        col.Field("Country").Header("Country").Width("100").Add();
+    }).Render()
+</div>

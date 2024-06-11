@@ -101,3 +101,22 @@ Now, add the Syncfusion ASP.NET MVC MultiColumn ComboBox control in `~/Views/Hom
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC MultiColumn ComboBox control will be rendered in the default web browser.
 
 ![ASP.NET MVC MultiColumn ComboBox Control](images/default.png)
+
+## Configure the popup list
+
+By default, the width of the popup list automatically adjusts according to the MultiColumn ComboBox input element's width, and the height of the popup list has `300px`.
+
+The height and width of the popup list can also be customized using the `popupHeight` and `popupWidth` properties respectively.
+
+In the following sample, popup list's width and height are configured.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/popup/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/multicolumn-combobox/popup/gettingstarted.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC MultiColumn ComboBox Popup Control](images/popup.png)
