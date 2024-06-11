@@ -17,7 +17,7 @@
     };
 }
 
-@Html.EJS().Maps("maps").TooltipRender("tooltipRender").Layers(l =>
+@Html.EJS().Maps("maps").TooltipRender("tooltipRender").Layers(layer =>
 {
-    l.TooltipSettings(tooltip).ShapeData(ViewBag.worldMap).Add();
+    layer.TooltipSettings(tooltip).ShapeData(ViewBag.worldMap).Add();
 }).Render()
