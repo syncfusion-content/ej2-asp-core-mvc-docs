@@ -901,6 +901,33 @@ The following properties are available in the `MapsTooltipSettings` to customize
 
 ![Enable tooltip](./images/UserInteraction/tooltip-customization.PNG)
 
+### Tooltip in mobile mode
+
+The **duration** property in `MapsTooltipSettings` allows you to change the duration of tooltips in mobile mode. By default, this property is set to **2000** milliseconds. Setting the value to **0** will keep the tooltip visible indefinitely. If it is greater than **0**, the tooltip will be removed after the specified time.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-duration.cs" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/tooltip-duration.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-duration.cs" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/tooltip-duration.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Tooltip template
 
 The HTML element can be rendered in the tooltip of the Maps using the `Template` property of the `MapsTooltipSettings`. In the following example, ${value1} and ${value2} are the place holders in the HTML element to display the value1 and value2 values of the corresponding shape.
