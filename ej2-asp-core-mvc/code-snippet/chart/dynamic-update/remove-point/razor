@@ -1,0 +1,26 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Spline).
+        XName("x").
+        YName("y").
+        Name("Users").
+        Width(2).
+        Marker(mr => mr.Visible(true).DataLabel(dl => dl.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top)
+                .Font(font => font.FontWeight("600"))))
+        DataSource(ViewBag.dataSource).
+        Add();
+   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).EnableTrim(false).MajorGridLines(mg => mg.Width(0)).MajorTickLines(mt => mt.Width(0))
+   ).PrimaryYAxis(py => py.Minimum(0).Maximum(800).LabelFormat("{value}M").EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
+   ).Title("Internet Users - 2016").LegendSettings(leg => leg.Visible(false)
+   ).ChartArea(area => area.Border(br => br.Width(1))).Render()
+
+<div>      
+  @Html.EJS().Button("remove").IsPrimary(true).Content("Remove Point").Render()       
+</div>
+<script>
+    document.getElementById('remove').onclick = () => {
+        var chart = document.getElementById('container').ej2_instances[0];
+        chart.series[0].removePoint(0);
+    }
+</script>
+    
