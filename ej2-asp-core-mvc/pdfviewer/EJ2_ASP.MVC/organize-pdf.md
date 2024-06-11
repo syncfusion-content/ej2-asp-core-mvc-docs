@@ -8,70 +8,61 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Organize Pages Feature in ASP.NET MVC PDF Viewer control
+# Organize Pages
+
+The PDF Viewer allows you to manage your PDF documents efficiently by organizing pages seamlessly. Whether you need to add new pages, remove unnecessary ones, rotate pages, move pages within the document, and copy or duplicate pages, the PDF Viewer faciliates these tasks effortlessly.
  
-## Introduction
+## Getting started
 
-Welcome to the User Guide for the Organize Pages feature in EJ2 PDF Viewer. This powerful feature allows you to manage your PDF documents efficiently by organizing pages seamlessly. Whether you need to add new pages, remove unnecessary ones, or adjust page orientation, this feature has got you covered.
- 
-## Getting Started
+To access the organize pages feature, simply open the PDF document in the PDF Viewer and navigate to the left vertical toolbar. Look for the `Organize Pages` option to begin utilizing these capabilities.
 
-To access the Organize Pages feature, simply open the PDF document in the EJ2 PDF Viewer and navigate to the toolbar. Look for the `Organize Pages` option to begin utilizing these capabilities.
- 
-## Key Functionalities
+The page organization support enables you to perform various actions such as rotating, rearranging, inserting, copying, and deleting pages within a PDF document using organize pages dialog.
 
-- **Add New Pages:** Easily integrate additional content by adding new pages to your document. Simply select the option to insert new pages and customize them as needed.
+### Rotating PDF pages
 
-- **Remove Pages:** Streamline your document management process by removing unnecessary pages with ease. Select the pages you wish to delete and confirm to remove them from the document.
- 
-- **Rotate Pages:** Resolve orientation issues by rotating pages clockwise or counterclockwise as required. This feature ensures that your document displays correctly, maintaining clarity and readability.
- 
-- **Select All Pages:** Make uniform adjustments and modifications by conveniently selecting all pages at once. This allows for efficient editing and formatting across the entire document.
- 
-- **Real-Time Updates:** Experience instant updates as any changes made to the page organization are instantly reflected within the PDF Viewer. Simply click the **Save** button to ensure that your modifications are preserved.
- 
-- **Save As Feature:** Preserve your edits by utilizing the **Save As** feature. This allows you to download the modified version of the PDF document for future reference, ensuring that your changes are stored securely.
+You can adjust the orientation of PDF pages to ensure proper alignment. The rotate icon offers the following options:
 
-## Organize Pages Features
+* `Rotate clockwise`: Rotate the selected pages 90 degrees clockwise.
+* `Rotate counter-clockwise`: Rotate the selected pages 90 degrees counter-clockwise.
 
-Organize pages support allows you to rotate, rearrange, insert, rearrange, copy and delete from a PDF document using a miniature preview of the PDF pages.
+### Rearranging PDF pages
 
-* Click the `organize pages` button in the left pane, this displays the organize pages pane in the PDF Viewer.
+You can easily change the sequence of pages within your document using the drag and drop method:
 
-### Rotating PDF Pages
+* `Drag and drop`: Click and drag a page thumbnail to the desired position within the document, then release it to rearrange the page order.
 
-You can rotate PDF pages to ensure they are oriented correctly. The Rotate icon allows you to:
+### Inserting new pages
 
-* `Rotate Clockwise`: Rotate the selected pages 90 degrees clockwise.
+Effortlessly add new pages to your document with the following options:
 
-* `Rotate Counterclockwise`: Rotate the selected pages 90 degrees counterclockwise.
+* `Insert blank page left`: Insert a blank page to the left of the selected page using the respective icon.
+* `Insert blank page right`: Insert a blank page to the right of the selected page using the corresponding icon.
 
-### Rearrange PDF Pages
+### Deleting PDF pages
 
-* `Drag and Drop` : Click on a page thumbnail and drag it to the desired position within the document. Release it to rearrange the order of the pages.
+Removing unwanted pages from your document is straight forward:
 
-### Inserting New Pages
+* `Select pages to delete`: Click on the page thumbnails you wish to remove. You can select multiple pages at once.
+* `Delete selected pages`: Use the delete option in the organize pages pane to remove the selected pages from the document.
 
-You can add new pages to your document effortlessly
+### Copying PDF pages
 
-* `Insert Blank Pages Left` : Use the icon to insert a blank page to the left of the selected page.
+Duplicate the pages within your PDF document effortlessly:
 
-* `Insert Blank Pages Right`: Use the icon to insert a blank page to the right of the selected page.
+* `Select pages to copy`: Click on the page thumbnails you wish to duplicate. Use the copy option to create duplicates. When a page is copied, the duplicate is automatically added to the right of the selected page. Multiple copies can be made using the toolbar action.
 
-### Deleting PDF Pages
+### Selecting all pages 
 
-Removing unwanted pages from your document is simple
+Make comprehensive adjustments by selecting all pages simultaneously. This facilitates efficient editing and formatting across the entire document.
 
-* `Select Pages to Delete`: Click on the page thumbnails you wish to remove. You can select multiple pages at once.
+### Real-time updates 
 
-* `Delete Selected Pages`: Use the delete option in the organize pages delete icon to remove the selected pages from the document.
+Witness instant changes in page organization reflected within the PDF Viewer. Simply click the **Save** button to preserve your modifications.
 
-### Copying PDF Pages
+### SaveAs functionality 
 
-For documentation purposes or to duplicate content within your PDF
-
-* `Select Pages to Copy`: Click on the image on the organize PDF thumbnails you wish to copy. Use the copy option to duplicate the selected pages. When a page is copied, the duplicate is automatically added to the right of the selected page. Multiple copies can be achieved using the toolbar action.
-
+Safeguard your edits by utilizing the **Save As** feature. This enables you to download the modified version of the PDF document for future reference, ensuring that your changes are securely stored.
+  
 ## API's supported
 
 **enablePageOrganizer:** This API enables or disables the page organizer feature in the PDF Viewer. By default, it is set to `true`, indicating that the page organizer is enabled.
@@ -281,13 +272,13 @@ export class AppComponent implements OnInit {
 
 ## Keyboard shortcuts
 
-The following keyboard shortcuts are available at miniature preview mode to organize the PDF pages
+The following keyboard shortcuts are available at the organize pages dialog.
 
 * **Ctrl+Z** : Undo the last action performed.
 * **Ctrl+Y** : Redo the action that was undone
 
 #### Conclusion
 
-With the Organize Pages feature in EJ2 PDF Viewer, managing your PDF documents has never been easier. Whether you're adding new content, adjusting page orientation, or removing unnecessary pages, this feature provides the tools you need to streamline your document management workflow. Explore these capabilities today and take control of your PDF documents with ease!
+With the Organize Pages feature in the PDF Viewer, managing your PDF documents has never been easier. Whether you are adding new content, adjusting page orientation, moving the pages, duplicating the pages, or removing unnecessary pages, this feature provides the tools you need to streamline your document management workflow. Explore these capabilities today and take control of your PDF documents with ease!
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to/Organize%20pdf/PDFViewerSample)
