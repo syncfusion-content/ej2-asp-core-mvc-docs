@@ -113,7 +113,7 @@ The validation behavior depends on the [StrictMode](https://help.syncfusion.com/
 
 ## Formatting the value
 
-User can set the format of the NumericTextBox control using [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format, when the control is in focused out state. For more information about formatting the value, refer to this [link](./formats/).
+User can set the format of the NumericTextBox control using [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format, when the control is in focused out state. For more information about formatting the value, refer to this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/formats).
 
 The below example demonstrates format the value by using currency format value `c2`.
 
@@ -143,9 +143,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [How to perform custom validation using FormValidator](./how-to/perform-custom-validation-using-form-validator/)
-* [How to customize the UI appearance of the control](./how-to/customize-the-ui-appearance-of-the-control/)
-* [How to customize the spin button’s up and down arrow](./how-to/customize-the-spin-buttons-up-and-down-arrow/)
-* [How to customize the step value and hide spin buttons](./how-to/customize-the-step-value-and-hide-spin-buttons/)
-* [How to prevent nullable input in NumericTextBox](./how-to/prevent-nullable-input-in-numerictextbox/)
-* [How to maintain trailing zeros in NumericTextBox](./how-to/maintain-trailing-zeros-in-numerictextbox/)
+* [How to perform custom validation using FormValidator](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/how-to/perform-custom-validation-using-form-validator)
+* [How to customize the UI appearance of the control](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/how-to/customize-the-ui-appearance-of-the-control)
+* [How to customize the spin button’s up and down arrow](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/how-to/customize-the-spin-buttons-up-and-down-arrow)
+* [How to customize the step value and hide spin buttons](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/how-to/customize-the-step-value-and-hide-spin-buttons)
+* [How to prevent nullable input in NumericTextBox](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/how-to/prevent-nullable-input-in-numerictextbox)
+* [How to maintain trailing zeros in NumericTextBox](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/how-to/maintain-trailing-zeros-in-numerictextbox)

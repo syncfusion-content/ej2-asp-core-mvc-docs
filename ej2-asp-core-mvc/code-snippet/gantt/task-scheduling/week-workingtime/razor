@@ -1,0 +1,22 @@
+<div class="col-lg-9 control-section">
+@{
+    List<GanttDayWorkingTime> timeRanges = new List<GanttDayWorkingTime>();
+    GanttDayWorkingTime timeRange1 = new GanttDayWorkingTime()
+    {
+        From = 10,
+        To = 18
+    };
+    timeRanges.Add(timeRange1);
+}
+    <div class="content-wrapper">
+        @(Html.EJS().Gantt("WorkingTimeRange").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px")
+        .WeekWorkingTime(ts =>
+        {
+        ts.DayOfWeek(Syncfusion.EJ2.Gantt.DayOfWeek.Tuesday).TimeRange(timeRanges);
+        })
+        .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks"))
+        .TimelineSettings(ts => ts.TopTier(tt => tt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Day)).BottomTier(bt => bt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Hour)))
+        .Render()
+        )
+    </div>
+</div>

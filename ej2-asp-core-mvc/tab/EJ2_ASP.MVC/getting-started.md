@@ -100,7 +100,7 @@ Now, add the Syncfusion ASP.NET MVC Tab control in `~/Views/Home/Index.cshtml` p
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Tab control will be rendered in the default web browser.
 
-![ASP.NET MVC Tab Control](images/gettingstarted.PNG)
+![ASP.NET MVC Tab Control](images/gettingstarted.png)
 
 ## Initialize the Tab using JSON items collection
 
@@ -155,4 +155,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [How to load tab with DataSource](./how-to/load-tab-with-data-source/)
+* [How to load tab with DataSource](https://ej2.syncfusion.com/aspnetmvc/documentation/tab/how-to/load-tab-with-data-source)

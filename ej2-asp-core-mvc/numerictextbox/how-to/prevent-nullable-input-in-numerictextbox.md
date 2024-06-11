@@ -39,4 +39,4 @@ By default, the value of the NumericTextBox sets to null. In some applications, 
 
 Output be like the below.
 
-![NumericTextBox Sample](../images/nullableInput.png)
+![NumericTextBox Sample](../images/nullableinput.png)
