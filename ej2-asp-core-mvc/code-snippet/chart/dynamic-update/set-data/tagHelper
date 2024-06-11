@@ -1,0 +1,51 @@
+<ejs-chart id="container" title="Sales by product" axisRangeCalculated="axisRangeCalculated">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" labelIntersectAction="@Syncfusion.EJ2.Charts.LabelIntersectAction.Rotate90">
+        <e-majorgridlines width="0"></e-majorgridlines>
+        <e-labelstyle size="12px"></e-labelstyle>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Sales (in percentage)" minimum="0" maximum="100" interval="5" labelFormat="{value}%">
+        <e-linestyle width="0"></e-linestyle>
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-chart-chartarea>
+        <e-chartarea-border width="0"></e-chartarea-border>
+    </e-chart-chartarea>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" columnWidth="0.5">
+            <e-series-cornerRadius topLeft="15" topRight="15">
+            </e-series-cornerRadius>
+            </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<div>      
+  <ejs-button id="update" content="Update Data" isPrimary="true"></ejs-button>       
+</div>
+<script>
+    function axisRangeCalculated(args) {
+        if (args.axis.name === 'primaryYAxis') {
+            args.maximum = args.maximum > 100 ? 100 : args.maximum;
+            if (args.maximum > 80) {
+                args.interval = 20;
+            }
+            else if (args.maximum > 40) {
+                args.interval = 10;
+            }
+        }
+    }
+
+    document.getElementById('update').onclick = () => {
+        var chart = document.getElementById('container').ej2_instances[0];
+        var newData = chart.series[0].dataSource.map(function (item) {
+            var value = getRandomInt(10, 90);
+            return { x: item.x, y: value };
+        });
+        if (chart.series.length > 0) {
+            chart.series[0].setData(newData, 500);
+        }
+    }
+
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+</script>

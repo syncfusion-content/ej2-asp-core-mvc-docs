@@ -11,11 +11,11 @@ documentation: ug
 
 # Number Formats in NumericTextBox Control
 
-You can format the value of NumericTextBox using [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format when the control is in focused out state. The format string supports both the [standard numeric format string](../common/internationalization/#supported-format-string) and [custom numeric format string](../common/internationalization/#custom-number-formatting-and-parsing).
+You can format the value of NumericTextBox using [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format when the control is in focused out state. The format string supports both the [standard numeric format string](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#supported-format-string) and [custom numeric format string](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#custom-number-formatting-and-parsing).
 
 ## Standard formats
 
-From the [standard numeric format](../common/internationalization/#supported-format-string), you can use the numeric related format specifiers such as `n`,`p` and `c` in the NumericTextBox control. By using these format specifiers, you can achieve the percentage and currency textbox behavior also.
+From the [standard numeric format](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#supported-format-string), you can use the numeric related format specifiers such as `n`,`p` and `c` in the NumericTextBox control. By using these format specifiers, you can achieve the percentage and currency textbox behavior also.
 
 The below example demonstrates percentage and currency formats.
 

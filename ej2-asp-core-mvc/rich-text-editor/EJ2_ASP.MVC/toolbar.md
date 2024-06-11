@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar in ##Platform_Name## Rich Text Editor Component
+title: Toolbar in ##Platform_Name## Rich Text Editor Component | Syncfusion
 description: Learn here all about Toolbar in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Toolbar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Toolbar
+# Toolbar in ##Platform_Name## Rich text editor control
 
 The Rich Text Editor’s toolbar contains a collection of tools such as bold, italic and text alignment buttons that are used to format the content. However, in most integrations, it's desirable to change the toolbar configuration to suit needs. Fortunately, that's quite easy to do too.
 
@@ -134,6 +134,7 @@ The following table lists the available tools on the toolbar.
 | FontColor | ![FontColor icon](./images/font-color.png) | Specifies an array of colors can be used in the colors popup for font color.|toolbarSettings: { items: ['FontColor']}|
 | BackgroundColor | ![BackgroundColor icon](./images/background-color.png) | Specifies an array of colors can be used in the colors popup for background color.|toolbarSettings: { items: ['BackgroundColor']}|
 | Format | ![Format icon](./images/formats.png) | An Object with the options that will appear in the Paragraph Format dropdown from the toolbar. |toolbarSettings: { items: ['Formats']}|
+| Blockquote | ![Blockquote icon](./images/blockquote.png) | Blockquotes visually highlight important text within an editor, emphasizing key information or quotations. | toobarSettings: { items: ['Blockquote']}|
 | StrikeThrough | ![StrikeThrough icon](./images/strikethrough.png) | Apply double line strike through formatting for the selected text. |toolbarSettings: { items: ['StrikeThrough']}|
 | ClearFormat | ![ClearFormat icon](./images/clear-format.png) | The clear format tool is useful to remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. As a result, all the text formatting will be cleared and return to its default formatting styles.|toolbarSettings: { items: ['ClearFormat']}|
 | FullScreen | ![FullScreen icon](./images/maximize.png) | Stretches the editor to the maximum width and height of the browser window.|toolbarSettings: { items: ['FullScreen']}|
@@ -179,7 +180,7 @@ The following table lists the available tools on the toolbar.
 
 By default, tool will be arranged in following order.
 
-N> items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', '|', 'SourceCode', 'Undo', 'Redo']
+N> items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'Blockquote', 'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', '|', 'SourceCode', 'Undo', 'Redo']
 
 We can customize the tools order as our application requirement. If you are not specifying any tools order, the editor will create the toolbar with default items.
 
@@ -273,4 +274,4 @@ The below sample demonstrates the option to insert the image to the Rich Text Ed
 
 ## See Also
 
-* [How to render the toolbar in inline mode](./inline-mode/)
+* [How to render the toolbar in inline mode](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/inline-mode)

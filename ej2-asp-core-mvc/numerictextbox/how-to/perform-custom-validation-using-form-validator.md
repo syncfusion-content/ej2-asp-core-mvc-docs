@@ -39,4 +39,4 @@ This section explains how to perform custom validation on the NumericTextBox usi
 
 Output be like the below.
 
-![NumericTextBox Sample](../images/customValidation.png)
+![NumericTextBox Sample](../images/customvalidation.png)

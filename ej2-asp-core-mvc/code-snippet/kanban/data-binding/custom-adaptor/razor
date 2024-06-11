@@ -23,7 +23,7 @@
         }
         var kanban = document.querySelector('#kanban').ej2_instances[0];
         kanban.dataSource = new ej.data.DataManager({
-            url: "https://ej2services.syncfusion.com/production/web-services/api/Kanban",
+        url: "https://services.syncfusion.com/aspnet/production/api/Kanban",
             adaptor: new TaskIdAdaptor()
         });
     }

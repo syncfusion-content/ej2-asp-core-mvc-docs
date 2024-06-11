@@ -99,7 +99,7 @@ Now, add the Syncfusion ASP.NET MVC Range Slider control in `~/Views/Home/Index.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Range Slider control will be rendered in the default web browser.
 
-![ASP.NET MVC Range Slider Control](images/slider.PNG)
+![ASP.NET MVC Range Slider Control](images/slider.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RangeSlider/ASP.NET%20MVC%20Razor%20Examples)
 
