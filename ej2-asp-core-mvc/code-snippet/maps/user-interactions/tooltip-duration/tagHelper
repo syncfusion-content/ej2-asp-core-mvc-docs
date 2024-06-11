@@ -18,7 +18,7 @@
 <div id="control-section">
     <ejs-maps id="maps">
         <e-maps-layers>
-            <e-maps-layer shapeData="ViewBag.world_map" tooltipSettings="tooltip">
+            <e-maps-layer shapeData="ViewBag.worldMap" tooltipSettings="tooltip">
             </e-maps-layer>
         </e-maps-layers>
     </ejs-maps>
