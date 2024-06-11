@@ -100,7 +100,7 @@ Now, add the Syncfusion ASP.NET MVC FileManager control in `~/Views/Home/Index.c
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC FileManager control will be rendered in the default web browser.
 
-![ASP.NET MVC FileManager Control](images/getting-started.PNG)
+![ASP.NET MVC FileManager Control](images/getting-started.png)
 
 N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for file manager service.
 
@@ -148,7 +148,7 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager overview](images/overview.PNG)
+![FileManager overview](images/overview.png)
 
 N> The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_CssClass) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
 
@@ -165,7 +165,7 @@ The initial view of the File Manager can be changed to details or largeicons vie
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager switching view ](images/overview.PNG)
+![FileManager switching view ](images/overview.png)
 
 ## Maintaining component state on page reload
 
@@ -185,7 +185,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enable persistence](images/enable_persistence.PNG)
+![FileManager enable persistence](images/enable_persistence.png)
 
 N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
 
@@ -202,7 +202,7 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enablertl](images/enable_rtl.PNG)
+![FileManager enablertl](images/enable_rtl.png)
 
 ## Specifying the current path of the File Manager
 

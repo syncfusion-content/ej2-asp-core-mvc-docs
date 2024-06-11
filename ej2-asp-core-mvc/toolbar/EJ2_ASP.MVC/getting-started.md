@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET MVC Toolbar control in `~/Views/Home/Index.cshtm
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Toolbar control will be rendered in the default web browser.
 
-![ASP.NET MVC Toolbar Control](images/gettingstarted.PNG)
+![ASP.NET MVC Toolbar Control](images/gettingstarted.png)
 
 ## Render the Toolbar items using content template
 
@@ -118,7 +118,7 @@ public ActionResult Index()
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Toolbar with Content Template](images/contenttemplate.PNG)
+![ASP.NET MVC Toolbar with Content Template](images/contenttemplate.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Toolbar/ASP.NET%20MVC%20Razor%20Examples).
 

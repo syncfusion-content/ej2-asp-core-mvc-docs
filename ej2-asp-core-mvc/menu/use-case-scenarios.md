@@ -13,7 +13,7 @@ documentation: ug
 
 ## Scrollable menu
 
-The menu component supports horizontal and vertical scrolling to render large menus and submenus in an adaptive way. This can be achieved by enabling the [`enableScrolling`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~EnableScrolling.html) property and by restricting the corresponding menu/submenu size.
+The menu component supports horizontal and vertical scrolling to render large menus and submenus in an adaptive way. This can be achieved by enabling the [`enableScrolling`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_EnableScrolling) property and by restricting the corresponding menu/submenu size.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

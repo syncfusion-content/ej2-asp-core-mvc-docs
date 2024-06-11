@@ -1,0 +1,69 @@
+<ejs-chart id="container" load="load" chartMouseClick="chartMouseClick" axisRangeCalculated="axisRangeCalculated" title="User supplied data">
+    <e-chart-primaryxaxis edgeLabelPlacement="@Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift" rangePadding="@Syncfusion.EJ2.Charts.ChartRangePadding.Additional">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Value" interval="20">
+        <e-majorticklines width="0"></e-majorticklines>
+        <e-linestyle width="0"></e-linestyle>
+    </e-chart-primaryyaxis>
+    <e-chart-chartarea>
+        <e-chartarea-border width="0"></e-chartarea-border>
+    </e-chart-chartarea>
+    <e-chart-tooltipsettings enable="true">
+    </e-chart-tooltipsettings>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line" width="3">
+            <e-series-marker visible="true" width="13" height="13" isFilled="true">
+            </e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    var chart;
+    function load(args) {
+        chart = args.chart;
+        args.chart.series[0].marker.border.width = 2;
+        args.chart.series[0].marker.border.color = "white";
+    }
+    
+    function chartMouseClick(args) {
+        var isRemoved = false;
+        if (args.axisData) {
+            for (var i = 0; i < chart.series[0].points.length; i++) {
+                var markerWidth = chart.series[0].marker.width / 2;
+                var roundedX = Math.round(args.axisData.primaryXAxis) + markerWidth;
+                var roundedY = Math.round(args.axisData.primaryYAxis) + markerWidth;
+                var pointX = Math.round(chart.series[0].points[i].x) + markerWidth;
+                var pointY = Math.round(chart.series[0].points[i].y) + markerWidth;
+                if ((roundedX === pointX || roundedX + 1 === pointX || roundedX - 1 === pointX) &&
+                    (roundedY === pointY || roundedY + 1 === pointY || roundedY - 1 === pointY)) {
+                    if (chart.series[0].points.length > 1) {
+                        var points = chart.series[0].points;
+                        var duration = i === 0 || i === points[points.length - 1].index ? 500 : 0;
+                        chart.series[0].removePoint(i, duration);
+                    }
+                    isRemoved = true;
+                }
+            }
+            if (!isRemoved) {
+                chart.series[0].addPoint({ x: Math.round(args.axisData['primaryXAxis']), y: Math.round(args.axisData['primaryYAxis']) });
+            }
+        }
+    }
+
+    function axisRangeCalculated(args) {
+        if (args.axis.name === 'primaryXAxis') {
+            if (args.interval < 10) {
+                args.maximum = args.maximum + 10;
+                args.minimum = args.minimum - 10;
+                args.interval = 10;
+            }
+        }
+        if (args.axis.name === 'primaryYAxis') {
+            if (args.maximum <= 60) {
+                args.interval = 10;
+            }
+        }
+    }
+</script>

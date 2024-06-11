@@ -14,7 +14,7 @@ documentation: ug
 
 ## Loading Culture Data
 
-It requires the following [CLDR](http://cldr.unicode.org/) data to be loaded using `loadCldr` function for cultures other than `en-US`.
+It requires the following [CLDR](https://cldr.unicode.org/) data to be loaded using `loadCldr` function for cultures other than `en-US`.
 
 | File Name | Path |
 | ------------- | ------------- |

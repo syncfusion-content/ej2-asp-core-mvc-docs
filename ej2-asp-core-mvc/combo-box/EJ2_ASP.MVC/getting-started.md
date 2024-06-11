@@ -148,4 +148,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [How to bind the data](./data-binding/)
+* [How to bind the data](https://ej2.syncfusion.com/aspnetmvc/documentation/combo-box/data-binding)
