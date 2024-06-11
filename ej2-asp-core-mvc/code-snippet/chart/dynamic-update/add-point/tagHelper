@@ -1,0 +1,32 @@
+<ejs-chart id="container" title="Internet Users - 2016">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" enableTrim="false">
+        <e-majorgridlines width="0"></e-majorgridlines>
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis minimum="0" maximum="800" labelFormat="{value}M" edgeLabelPlacement="@Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift">
+    </e-chart-primaryyaxis>
+    <e-chart-chartarea>
+        <e-chartarea-border width="1"></e-chartarea-border>
+    </e-chart-chartarea>
+    <e-chart-legendsettings visible="false">
+    </e-chart-legendsettings>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline" width="2" name="Users">
+            <e-series-marker visible="true">
+                <e-series-datalabel visible="true" position="@Syncfusion.EJ2.Charts.LabelPosition.Top">
+                    <e-font fontWeight="600"></e-font>
+                </e-series-datalabel>
+            </e-series-marker>
+            </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<div>      
+  <ejs-button id="add" content="Add Point" isPrimary="true"></ejs-button>       
+</div>
+<script>
+    document.getElementById('add').onclick = () => {
+        var chart = document.getElementById('container').ej2_instances[0];
+        chart.series[0].addPoint({ x: "Japan", y: 118.2 });
+    }
+</script>
