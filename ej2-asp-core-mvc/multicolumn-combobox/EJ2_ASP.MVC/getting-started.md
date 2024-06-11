@@ -115,7 +115,7 @@ In the following sample, popup list's width and height are configured.
 {% include code-snippet/multicolumn-combobox/popup/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/multicolumn-combobox/popup/gettingstarted.cs %}
+{% include code-snippet/multicolumn-combobox/popup/popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 
