@@ -99,5 +99,5 @@ The quick toolbar for the Link has the following options.
 
 ## See Also
 
-* [How to edit the quick toolbar settings](./toolbar/#quick-inline-toolbar)
-* [How to insert image link editing option in the toolbar items](./image/#image-with-link)
+* [How to edit the quick toolbar settings](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/toolbar#quick-inline-toolbar)
+* [How to insert image link editing option in the toolbar items](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/image#image-with-link)

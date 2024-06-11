@@ -96,15 +96,15 @@ Scripts and style sheets of Syncfusion ASP.NET MVC controls can be included in a
 
 #### Installing NPM packages in ASP.NET MVC Web Application
 
-1.Open the Source Explorer and right click the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
+1.Open the Source Explorer and right click the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window.
 
 ![Add New Item Window](images/add-new-item.png)
 
-2.Select “**Web**” on the left side Tree View and select “**npm configuration File**” in “**Add New Item**” window which will include and configure “**package.json**” file in root folder of the ASP.NET MVC web application. 
+2.Select “**Web**” on the left side Tree View and select “**npm configuration File**” in “**Add New Item**” window which will include and configure “**package.json**” file in root folder of the ASP.NET MVC web application.
 
 ![Adding package.json](images/add-package-json.png)
 
-3.Open the Source Explorer and right click on the application name. Then, select “**Open Folder in File Explorer**”. 
+3.Open the Source Explorer and right click on the application name. Then, select “**Open Folder in File Explorer**”.
 
 4.Open the Command Prompt for this location and install the required Syncfusion packages using “**npm install @syncfusion/{PACKAGE_NAME} --save**”
 
@@ -133,7 +133,7 @@ By using either one of the following methods, Client-Side Resource can be loaded
 
 #### Copying by Gulp
 
-Install required Syncfusion ASP.NET MVC control packages as mentioned in “[**Installing NPM Packages in ASP.NET MVC Web Application**](#installing-npm-packages-in-aspnet-mvc-web-application)”. 
+Install required Syncfusion ASP.NET MVC control packages as mentioned in “[**Installing NPM Packages in ASP.NET MVC Web Application**](#installing-npm-packages-in-aspnet-mvc-web-application)”.
 
 1.In addition to Syncfusion ASP.NET MVC packages, install gulp and glob packages using below commands.
 
@@ -161,7 +161,7 @@ npm install glob@latest --save
 
 ![Install NuGet Packages](images/install-nuGet-package.png)
 
-3.Open the Source Explorer and right click on the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
+3.Open the Source Explorer and right click on the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window.
 
 4.Select “**ASP.NET Core**” on the left side Tree View and select “**JavaScript File**” in the “**Add New Item**” window. It will include a js file in the root folder of the ASP.NET MVC web application. Rename the js file as “**gulpfile.js**”.
 
@@ -196,13 +196,13 @@ gulp.task("copy-client-resource", function (done) {
 
 6.Build the ASP.NET MVC web application and notice that a new folder named “**Syncfusion**” is created in “**Content**” folder.
 
-![Copied to Content](images/copied-to-Content.png)
+![Copied to Content](images/copied-to-content.png)
 
 7.Right click the “**Syncfusion**” folder and include in project like below.
 
 ![Include Syncfusion in project](images/include-syncfusion-package.png)
 
-8.Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion ASP.NET MVC Calendar has been loaded for example.  
+8.Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion ASP.NET MVC Calendar has been loaded for example.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}

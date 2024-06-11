@@ -107,7 +107,7 @@ Use [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigati
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Breadcrumb control will be rendered in the default web browser.
 
-![ASP.NET MVC Breadcrumb Control](images/items.PNG)
+![ASP.NET MVC Breadcrumb Control](images/items.png)
 
 ## Enable or Disable Navigation
 

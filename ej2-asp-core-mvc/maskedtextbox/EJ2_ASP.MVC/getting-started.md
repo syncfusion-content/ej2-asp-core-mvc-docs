@@ -101,7 +101,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Set the mask
 
-You can set the mask to the MaskedTextBox to validate the user input by using the [Mask](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.MaskedTextBox.html#Syncfusion_EJ2_Inputs_MaskedTextBox_Mask) property. To know more about the usage of mask and configuration, refer to this [link](./mask-configuration/).
+You can set the mask to the MaskedTextBox to validate the user input by using the [Mask](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.MaskedTextBox.html#Syncfusion_EJ2_Inputs_MaskedTextBox_Mask) property. To know more about the usage of mask and configuration, refer to this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/maskedtextbox/mask-configuration).
 
 The following example demonstrates the usage of mask element `0` that allows any single digit from `0` to `9`.
 
@@ -117,7 +117,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [How to perform custom validation using FormValidator](./how-to/perform-custom-validation-using-form-validator/)
-* [How to customize the UI appearance of the control](./how-to/customize-the-ui-appearance-of-the-control/)
-* [How to set cursor position while focus on the input textbox](./how-to/set-cursor-position-while-focus-on-the-input-textbox/)
-* [How to display numeric keypad when focus on mobile devices](./how-to/display-numeric-keypad-when-focus-on-mobile-devices/)
+* [How to perform custom validation using FormValidator](https://ej2.syncfusion.com/aspnetmvc/documentation/maskedtextbox/how-to/perform-custom-validation-using-form-validator)
+* [How to customize the UI appearance of the control](https://ej2.syncfusion.com/aspnetmvc/documentation/maskedtextbox/how-to/customize-the-ui-appearance-of-the-control)
+* [How to set cursor position while focus on the input textbox](https://ej2.syncfusion.com/aspnetmvc/documentation/maskedtextbox/how-to/set-cursor-position-while-focus-on-the-input-textbox)
+* [How to display numeric keypad when focus on mobile devices](https://ej2.syncfusion.com/aspnetmvc/documentation/maskedtextbox/how-to/display-numeric-keypad-when-focus-on-mobile-devices)
