@@ -146,6 +146,10 @@ Previously, when opening a workbook JSON object into the Spreadsheet using the `
 
 Now, you have the option to selectively ignore some features during the opening of the JSON object by configuring deserialization options and passing them as arguments to the `openFromJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be loaded without ignoring any features.
 
+```ts
+spreadsheet.openFromJson({ file: file }, { ignoreStyle: true });
+```
+
 | Options | Description |
 | ----- | ----- |
 | onlyValues |  If **true**, only the cell values will be loaded. |
@@ -330,6 +334,10 @@ The possible values are:
 Previously, when saving the Spreadsheet as a workbook JSON object using the `saveAsJson` method, the entire workbook with all loaded features were processed and saved as a JSON object. 
 
 Now, you have the option to selectively ignore some features while saving the Spreadsheet as a JSON object by configuring serialization options and passing them as arguments to the `saveAsJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be saved without ignoring any features.
+
+```ts
+spreadsheet.saveAsJson({ onlyValues: true });
+```
 
 | Options | Description |
 | ----- | ----- |
