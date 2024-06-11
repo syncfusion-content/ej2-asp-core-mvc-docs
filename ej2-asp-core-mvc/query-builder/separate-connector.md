@@ -4,8 +4,8 @@ title: Separate Connector in ##Platform_Name## Query Builder Component | Syncfus
 description: Learn here all about Separate Connector in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Separate Connector
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 

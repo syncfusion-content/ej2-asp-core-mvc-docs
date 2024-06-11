@@ -4,8 +4,8 @@ title: Drag and drop in ##Platform_Name## Query Builder Component | Syncfusion
 description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drag and drop
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 

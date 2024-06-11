@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Z-order in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about Z-order in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
-platform:  ej2-asp-core-mvc
-control: Z-order 
-publishingplatform: ##Platform_Name##
+title: Z-order in Image Editor control | Syncfusion
+description: Learn here all about Z-order in Syncfusion Image Editor control of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Z-order
 documentation: ug
 domainurl: ##DomainURL##
 ---
