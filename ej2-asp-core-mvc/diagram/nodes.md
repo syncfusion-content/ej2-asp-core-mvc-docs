@@ -81,7 +81,7 @@ diagram.add(node);
 ```
 ## Add collection of nodes at runtime
 
-* The collection of nodes can be dynamically added using addElements method.Each time an element is added to the diagram canvas, the ['collectionChange'] event will be triggered.
+* The collection of nodes can be dynamically added using 'addElements' method.Each time an element is added to the diagram canvas, the 'collectionChange' event will be triggered.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

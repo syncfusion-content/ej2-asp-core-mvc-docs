@@ -102,7 +102,7 @@ diagram.remove(connectors)
 
 ## Add collection of connectors at runtime
 
-* The collection of connectors can be dynamically added using addElements method.Each time an element is added to the diagram canvas, the ['collectionChange'] event will be triggered.
+* The collection of connectors can be dynamically added using 'addElements' method.Each time an element is added to the diagram canvas, the 'collectionChange' event will be triggered.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
