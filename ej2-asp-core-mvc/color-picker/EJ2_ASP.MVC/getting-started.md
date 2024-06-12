@@ -96,7 +96,7 @@ Now, add the Syncfusion ASP.NET MVC ColorPicker control in `~/Views/Home/Index.c
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC ColorPicker control will be rendered in the default web browser.
 
-![ASP.NET MVC ColorPicker Control](images/color-picker.PNG)
+![ASP.NET MVC ColorPicker Control](images/color-picker.png)
 
 ## Inline type
 
