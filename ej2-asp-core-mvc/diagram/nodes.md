@@ -79,6 +79,29 @@ var node = {
 };
 diagram.add(node);
 ```
+## Add collection of nodes at runtime
+
+* The collection of nodes can be dynamically added using 'addElements' method.Each time an element is added to the diagram canvas, the 'collectionChange' event will be triggered.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/node/nodescollection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Nodescollection.cs" %}
+{% include code-snippet/diagram/node/nodescollection/nodescollection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Nodescollection.cs" %}
+{% include code-snippet/diagram/node/nodescollection/nodescollection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Add node from palette
 
