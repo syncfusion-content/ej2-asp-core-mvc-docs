@@ -214,7 +214,7 @@ The following code example shows how to use the [actionFailure](https://help.syn
 {% include code-snippet/tree-grid/getting-start-mvc/error-handling/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/tree-grid/getting-start-mvc/error-handling/failure.cs %}
+{% include code-snippet/tree-grid/getting-start-mvc/error-handling/errorHandling.cs %}
 {% endhighlight %}
 {% endtabs %}
 

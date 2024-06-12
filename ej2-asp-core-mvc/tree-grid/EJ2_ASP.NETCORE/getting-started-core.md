@@ -637,8 +637,8 @@ The following code example shows how to use the [actionFailure](https://help.syn
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/getting-start-core/error-handling/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Failure.cs" %}
-{% include code-snippet/tree-grid/getting-start-mvc/error-handling/failure.cs %}
+{% highlight c# tabtitle="ErrorHandling.cs" %}
+{% include code-snippet/tree-grid/getting-start-mvc/error-handling/errorHandling.cs %}
 {% endhighlight %}
 {% endtabs %}
 
