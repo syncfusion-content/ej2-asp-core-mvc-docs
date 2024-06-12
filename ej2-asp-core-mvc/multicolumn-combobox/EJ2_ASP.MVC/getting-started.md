@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC MultiColumn ComboBox Control
+# Getting Started with ASP.NET MVC MultiColumn ComboBox control
 
 This section briefly explains about how to include `ASP.NET MVC MultiColumn ComboBox` control in your ASP.NET MVC application using Visual Studio.
 
