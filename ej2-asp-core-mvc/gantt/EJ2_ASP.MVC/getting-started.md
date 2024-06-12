@@ -627,7 +627,10 @@ The following code example shows how to use the [actionFailure](https://help.syn
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt/exception-handling/razor %}
+{% include code-snippet/gantt/getting-started/exception-handling/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="DefiningColumns.cs" %}
+{% include code-snippet/gantt/getting-started/exception-handling/definingColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 
