@@ -1,3 +1,5 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
 <div id="container" style="width: 500px">
     @Html.EJS().MultiColumnComboBox("default").DataSource((IEnumerable<object>)Model).Placeholder("Select a employee").Fields(
     new Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBoxFieldSettings { Text = "Name", Value = "EmpID" }).Columns(col =>

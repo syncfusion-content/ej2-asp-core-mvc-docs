@@ -27,3 +27,11 @@ public ActionResult Demo()
     ViewBag.EmpData = employees;
     return View(ViewBag.EmpData);
 }
+
+public class Employee
+{
+	public int EmpID { get; set; }
+	public string Name { get; set; }
+	public string Designation { get; set; }
+	public string Country { get; set; }
+}

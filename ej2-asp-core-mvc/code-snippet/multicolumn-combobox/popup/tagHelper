@@ -1,3 +1,5 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
 <div style="width: 550px">
     <ejs-multicolumncombobox id="popup" dataSource="ViewBag.EmpData" popupHeight="250px" popupWidth="550px" placeholder="Select a employee">
         <e-multicolumncombobox-fields text="Name" value="EmpID"></e-multicolumncombobox-fields>

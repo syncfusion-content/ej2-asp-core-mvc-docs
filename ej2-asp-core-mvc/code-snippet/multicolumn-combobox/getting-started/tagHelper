@@ -1,6 +1,7 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
 
 <div class="container" style="width: 500px">
-    <ejs-multicolumncombobox id="default" dataSource="ViewBag.EmpData" placeholder="Select a employee">
+    <ejs-multicolumncombobox id="default" dataSource="ViewBag.EmpData">
         <e-multicolumncombobox-fields text="Name" value="EmpID"></e-multicolumncombobox-fields>
         <e-multicolumncombobox-columns>
             <e-multicolumncombobox-column field="EmpID" header="Employee ID" width="120"></e-multicolumncombobox-column>
