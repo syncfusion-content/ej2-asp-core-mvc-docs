@@ -1,3 +1,5 @@
 @using Syncfusion.EJ2.Inputs
 
-<ejs-otpinput id="otpInput"></ejs-otpinput>
+<div id='container' style="width: 350px;">
+    <ejs-otpinput id="otpInput"></ejs-otpinput>
+</div>

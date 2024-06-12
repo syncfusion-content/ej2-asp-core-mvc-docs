@@ -1,5 +1,5 @@
 @using Syncfusion.EJ2.Inputs
 
 <div id='container' style="width: 350px;">
-    @Html.EJS().OtpInput("otpInput").Render()
+    <ejs-otpinput id="otpInput" placeholder="x"></ejs-otpinput>
 </div>
