@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## Multi Select Component
+title: Virtualization in ##Platform_Name## Multi Select Component | Syncfusion
 description: Learn here all about Virtualization in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtualization
@@ -195,7 +195,7 @@ The following sample shows the example for checkbox with Virtualization.
 
 ## Custom value with virtualization
 
-The MultiSelect component supports custom valie with Virtualization. When the [`allowCustomValue`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowCustomValue) property is enabled, the MultiSelect enables users to include a new option not currently available in the component value. Upon selecting this newly added custom value, the MultiSelect triggers the [`customValueSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_CustomValueSelection) event and also custom value will be added to the end of the complete list.
+The MultiSelect component supports custom value with Virtualization. When the [`allowCustomValue`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowCustomValue) property is enabled, the MultiSelect enables users to include a new option not currently available in the component value. Upon selecting this newly added custom value, the MultiSelect triggers the [`customValueSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_CustomValueSelection) event and also custom value will be added to the end of the complete list.
 
 The following sample shows the example for custom value with Virtualization.
 
