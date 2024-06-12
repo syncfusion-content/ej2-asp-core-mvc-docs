@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Navigation
 
 The ASP.NET Core PDF Viewer supports different internal and external navigations.
