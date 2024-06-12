@@ -931,3 +931,32 @@ The HTML element can be rendered in the tooltip of the Maps using the `Template`
 
 
 ![Enable tooltip](./images/UserInteraction/tooltip-template.PNG)
+
+### Changing duration in mobile devices
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+To change the duration of the tooltips and tooltip templates in mobile devices, you can use the [Duration](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html#Syncfusion_EJ2_Maps_MapsTooltipSettings_Duration) property in [MapsTooltipSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html). By default, this property is set to **2000** milliseconds. Setting the value to **0** will keep the tooltip visible indefinitely. If it is greater than **0**, the tooltip will be removed after the specified time.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-duration.cs" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/tooltip-duration.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+To change the duration of the tooltips and tooltip templates in mobile devices, you can use the [Duration](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html#Syncfusion_EJ2_Maps_MapsTooltipSettings_Duration) property in [MapsTooltipSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html). By default, this property is set to **2000** milliseconds. Setting the value to **0** will keep the tooltip visible indefinitely. If it is greater than **0**, the tooltip will be removed after the specified time.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-duration.cs" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/tooltip-duration.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
