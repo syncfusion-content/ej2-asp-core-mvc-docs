@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.Inputs
+
+<ejs-otpinput id="otpInput"></ejs-otpinput>
