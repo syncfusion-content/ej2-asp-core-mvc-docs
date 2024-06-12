@@ -119,4 +119,4 @@ In the following sample, popup list's width and height are configured.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC MultiColumn ComboBox Popup Control](images/popup.png)
+![Popup](images/popup.png)

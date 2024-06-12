@@ -1,0 +1,31 @@
+---
+layout: post
+title: Sorting in ##Platform_Name## MultiColumn Combobox Control | Syncfusion
+description: Checkout and learn about Sorting in Syncfusion ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Sorting
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Sorting in ##Platform_Name## MultiColumn Combobox control
+
+The MultiColumn ComboBox control provides built-in support for sorting data-bound columns in ascending or descending order. To enable sorting in the MultiColumn ComboBox, set the [AllowSorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_AllowSorting) property to true.
+
+To sort a particular column in the MultiColumn ComboBox, click on the popup grid column header. Each click on the header toggles the sorting order of the column between Ascending and Descending
+
+## Sort order
+
+You can use the [SortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_SortOrder) property to set the order of the column. It supports three types of sorting [None](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.SortOrder.html#Syncfusion_EJ2_MultiColumnComboBox_SortOrder_None), [Ascending](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.SortOrder.html#Syncfusion_EJ2_MultiColumnComboBox_SortOrder_Ascending) and [Descending](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.SortOrder.html#Syncfusion_EJ2_MultiColumnComboBox_SortOrder_Descending).
+
+When you click on a column header for the first time, it sorts the column in ascending order. Clicking the same column header again will sort the column in descending order. A repetitive third click on the same column header will clear the sorting.
+
+In the following examples, data sorting is done with `Descending` type.
+
+## Sort type
+
+You can use the [SortType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_SortType) property to set the type of sorting applied to the columns. It supports tow types [OneColumn](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.SortType.html#Syncfusion_EJ2_MultiColumnComboBox_SortType_OneColumn) and [MultipleColumns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.SortType.html#Syncfusion_EJ2_MultiColumnComboBox_SortType_MultipleColumns). By default the `SortType` is oneColumn.
+
+To sort multiple columns press and hold the CTRL key and click on the column headers. This feature is useful when you want to sort your data based on multiple criteria to analyze it in various ways.
+
+In the following examples, data sorting type is set with `MultipleColumns`.
