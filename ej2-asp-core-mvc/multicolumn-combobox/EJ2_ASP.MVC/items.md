@@ -217,17 +217,50 @@ You can use the [GridSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Sync
 You can use [GridLines](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBoxGridSettings.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBoxGridSettings_GridLines) property to set the mode of the gridlines. You can set [Horizontal](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.GridLine.html#Syncfusion_EJ2_MultiColumnComboBox_GridLine_Horizontal), [Vertical](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.GridLine.html#Syncfusion_EJ2_MultiColumnComboBox_GridLine_Vertical), [Default](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.GridLine.html#Syncfusion_EJ2_MultiColumnComboBox_GridLine_Default), [None](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.GridLine.html#Syncfusion_EJ2_MultiColumnComboBox_GridLine_None) and [Both](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.GridLine.html#Syncfusion_EJ2_MultiColumnComboBox_GridLine_Both).
 
 * Both: Displays both horizontal and vertical grid lines.
-* None: : No grid lines are displayed.
+* None: No grid lines are displayed.
 * Horizontal: Displays the horizontal grid lines only.
 * Vertical: Displays the vertical grid lines only.
 * Default: Displays grid lines based on the theme.
 
 In the following examples, gridLines is set with `Horizontal`.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/items/gridline/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Gridline.cs" %}
+{% include code-snippet/multicolumn-combobox/items/gridline/gridline.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![GridLines](images/gridline.png)
+
 ### Setting row height
 
 You can use [RowHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBoxGridSettings.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBoxGridSettings_RowHeight) property to set the height of the rows in the popup content.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/items/rowheight/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RowHeight.cs" %}
+{% include code-snippet/multicolumn-combobox/items/rowheight/rowheight.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![RowHeight](images/rowheight.png)
+
 ### Setting alternate rows
 
 You can use the [EnableAltRow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBoxGridSettings.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBoxGridSettings_EnableAltRow) property to enable the alternate row styles in the multicolumn combobox. If enabled, it will add the `e-altrow` CSS class to the list of items in the popup.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/items/altrow/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Altrow.cs" %}
+{% include code-snippet/multicolumn-combobox/items/altrow/altrow.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Alternate Rows](images/altrow.png)

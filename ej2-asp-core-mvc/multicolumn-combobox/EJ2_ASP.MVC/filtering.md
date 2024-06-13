@@ -17,3 +17,14 @@ The MultiColumn ComboBox has built-in support to filter the data items, which al
 You can change the filter type by using the [FilterType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_FilterType) property. The `FilterType` supports filtering options such as [StartsWith](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.FilterType.html#Syncfusion_EJ2_MultiColumnComboBox_FilterType_StartsWith), [EndsWith](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.FilterType.html#Syncfusion_EJ2_MultiColumnComboBox_FilterType_EndsWith) and [Contains](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.FilterType.html#Syncfusion_EJ2_MultiColumnComboBox_FilterType_Contains).
 
 In the following example, data filtering is done with `EndsWith` type.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/filtering/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Filtering.cs" %}
+{% include code-snippet/multicolumn-combobox/filtering/filtering.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Filtering](images/filtering.png)

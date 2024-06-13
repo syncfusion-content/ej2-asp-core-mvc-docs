@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.MultiColumnComboBox;
 
 <div class="container" style="width: 500px">
-    <ejs-multicolumncombobox id="text" dataSource="ViewBag.EmpData" allowSorting=true>
+    <ejs-multicolumncombobox id="close" dataSource="ViewBag.EmpData" close="function(args){ close(args) }">
         <e-multicolumncombobox-fields text="Name" value="EmpID"></e-multicolumncombobox-fields>
         <e-multicolumncombobox-columns>
             <e-multicolumncombobox-column field="EmpID" header="Employee ID" width="90"></e-multicolumncombobox-column>
@@ -11,3 +11,9 @@
         </e-multicolumncombobox-columns>
     </ejs-multicolumncombobox>
 </div>
+
+<script>
+    function close(args) {
+    // your required action here..
+}
+</script>

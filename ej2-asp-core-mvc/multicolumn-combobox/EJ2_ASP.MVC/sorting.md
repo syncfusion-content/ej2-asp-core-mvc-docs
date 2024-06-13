@@ -22,6 +22,17 @@ When you click on a column header for the first time, it sorts the column in asc
 
 In the following examples, data sorting is done with `Descending` order.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/sorting/sort-order/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sorting.cs" %}
+{% include code-snippet/multicolumn-combobox/sorting/sort-order/sort-order.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![SortOrder](images/sortorder.png)
+
 ## Sort type
 
 You can use the [SortType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_SortType) property to set the type of sorting applied to the columns. It supports tow types [OneColumn](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.SortType.html#Syncfusion_EJ2_MultiColumnComboBox_SortType_OneColumn) and [MultipleColumns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.SortType.html#Syncfusion_EJ2_MultiColumnComboBox_SortType_MultipleColumns). By default the `SortType` is oneColumn.
@@ -29,3 +40,14 @@ You can use the [SortType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 To sort multiple columns press and hold the CTRL key and click on the column headers. This feature is useful when you want to sort your data based on multiple criteria to analyze it in various ways.
 
 In the following examples, data sorting type is set with `MultipleColumns`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/sorting/sort-type/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SortType.cs" %}
+{% include code-snippet/multicolumn-combobox/sorting/sort-type/sort-type.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![SortType](images/sorttype.png)

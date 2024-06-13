@@ -18,6 +18,28 @@ Enabling the [EnableVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2
 
 The MultiColumn Combobox can generate its list items through an object arrays of data. For this, the appropriate columns should be mapped to the `Fields` property. When using virtual scrolling, the list updates based on the scroll offset value, triggering a request to fetch more data from the server.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/virtualization/localdata/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sorting.cs" %}
+{% include code-snippet/multicolumn-combobox/virtualization/localdata/localdata.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![SortOrder](images/sortorder.png)
+
 ## Binding remote data
 
 The MultiColumn Combobox supports retrieval of data from remote data services with the help of DataManager component. When using remote data, it initially fetches all the data from the server and then stores the data locally. During virtual scrolling, additional data is retrieved from the locally stored data.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/virtualization/sort-order/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sorting.cs" %}
+{% include code-snippet/multicolumn-combobox/virtualization/sort-order/sort-order.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![SortOrder](images/sortorder.png)
