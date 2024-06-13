@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## RichTextEditor Control
-description: Checkout and learn about getting started with ##Platform_Name## RichTextEditor control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Rich Text Editor Control
+description: Checkout and learn about getting started with ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core RichTextEditor Control
+# Getting Started with ASP.NET Core Rich Text Editor Control
 
-This section briefly explains about how to include [ASP.NET Core RichTextEditor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -86,9 +86,9 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core RichTextEditor control
+## Add ASP.NET Core Rich Text Editor control
 
-Now, add the Syncfusion ASP.NET Core RichTextEditor tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Rich Text Editor tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -96,9 +96,9 @@ Now, add the Syncfusion ASP.NET Core RichTextEditor tag helper in `~/Pages/Index
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core RichTextEditor control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Rich Text Editor control will be rendered in the default web browser.
 
-![ASP.NET Core RichTextEditor Control](images/richtexteditor-control.png)
+![ASP.NET Core Rich Text Editor Control](images/richtexteditor-control.png)
 
 ## Configure the Toolbar
 
@@ -110,7 +110,7 @@ Configure the toolbar with the tools using items field of the [`toolbarSettings`
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core RichTextEditor with Toolbar](images/richtexteditor-with-toolbar.png)
+![ASP.NET Core Rich Text Editor with Toolbar](images/richtexteditor-with-toolbar.png)
 
 N> `|` and `-` can insert a vertical and horizontal separator lines in the toolbar.
 
