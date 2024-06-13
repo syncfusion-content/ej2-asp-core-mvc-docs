@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div id="container" style="width: 500px">
+    @Html.EJS().MultiColumnComboBox("filtering").DataSource((IEnumerable<object>)Model).Filtering("function(args) { filtering(args) }").Fields(new MultiColumnComboBoxFieldSettings
+    { Text = "Name", Value = "EmpID" }).Columns(col =>
+    {
+        col.Field("EmpID").Header("Employee ID").Width("90").Add();
+        col.Field("Name").Header("Name").Width("90").Add();
+        col.Field("Designation").Header("Designation").Width("90").Add();
+        col.Field("Country").Header("Country").Width("70").Add();
+    }).Render()
+</div>
+
+<script>
+    function filtering(args) {
+        // your required action here..
+    }
+</script>
