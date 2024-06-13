@@ -17,9 +17,8 @@ The MultiColumn ComboBox also supports different kinds of data services such as 
 | Fields | Type | Description |
 |------|------|-------------|
 | text |  `string` | Specifies the display text of each list item. |
-| value |  `number or string` | Specifies the hidden data value mapped to each list item that should contain a unique value. |
+| value |  `string` | Specifies the hidden data value mapped to each list item that should contain a unique value. |
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
-| iconCss |  `string` | Specifies the icon class of each list item. |
 
 > The fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
