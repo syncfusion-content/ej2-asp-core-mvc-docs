@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render A Dialog Using Utility Functions in ##Platform_Name## Dialog Component
+title: Render A Dialog Using Utility Functions in Syncfusion Dialog Component
 description: Learn here all about Render A Dialog Using Utility Functions in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Render A Dialog Using Utility Functions
@@ -146,8 +146,8 @@ A confirm dialog displays a specified message along with ‘OK’ and ‘Cancel�
 
 When rendering an Alert and Confirmation dialog through utility methods, You can close the dialog using the following ways.
 
-* By pressing the escape key if the [closeOnEscape](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Popups.Dialog~CloseOnEscape.html) property is enabled.
-* By clicking the close button if the [showCloseIcon](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Popups.Dialog~ShowCloseIcon.html) property is enabled.
+* By pressing the escape key if the [closeOnEscape](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_CloseOnEscape) property is enabled.
+* By clicking the close button if the [showCloseIcon](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ShowCloseIcon) property is enabled.
 
 You can also manually close the Dialogs by creating an instance to the dialog and call the "hide" method.
 

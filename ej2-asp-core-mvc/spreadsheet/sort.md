@@ -113,7 +113,7 @@ The custom sort dialog helps sorting multiple columns in the selected range by u
 
 You can add multiple criteria using the `Add Column` button at the bottom of the dialog. Thus, multiple columns can be specified with different sort order. The newly added sort criteria items can be removed using the `delete` icons at the end of each items.
 
-You can refer to the [`Data contains header`](./sort/#data-contains-header) topic to learn more about `Data contains header` checkbox. To learn more about `Case sensitive` checkbox, you can refer to [`Case sensitive sort`](./sort/#case-sensitive-sort) topic.
+You can refer to the [`Data contains header`](https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/sort#data-contains-header) topic to learn more about `Data contains header` checkbox. To learn more about `Case sensitive` checkbox, you can refer to [`Case sensitive sort`](https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/sort#case-sensitive-sort) topic.
 
 ### Passing sort criteria manually
 
@@ -158,7 +158,7 @@ By customizing sort comparer, you can define the sort action as desired.
 
 N> * The `sortComparer` is an optional property of `sortDescriptor`.
 
-For custom sort comparer example, refer to the [`Sort a range by custom list`](https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/how-to/sort-a-range-by-custom-list) in the `how-to` section.
+For custom sort comparer example, refer to the [`Sort a range by custom list`](https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/how-to/sort-a-range-by-custom-list) in the `how-to` section.
 
 ## Known error validations
 
@@ -175,7 +175,7 @@ The following errors have been handled for sorting,
 
 ## See Also
 
-* [Sort a range by custom list](https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/how-to/sort-a-range-by-custom-list)
+* [Sort a range by custom list](https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/how-to/sort-a-range-by-custom-list)
 * [Hyperlink](./link)
 * [Filtering](./filter)
 * [Undo Redo](./undo-redo)

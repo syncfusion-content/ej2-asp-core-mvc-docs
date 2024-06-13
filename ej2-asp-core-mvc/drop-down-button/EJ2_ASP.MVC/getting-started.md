@@ -116,7 +116,7 @@ public ActionResult Index()
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC DropDownButton control will be rendered in the default web browser.
 
-![ASP.NET MVC DropDownButton Control](images/drop-down-button.PNG)
+![ASP.NET MVC DropDownButton Control](images/drop-down-button.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/DropDownButton/ASP.NET%20MVC%20Razor%20Examples).
 
