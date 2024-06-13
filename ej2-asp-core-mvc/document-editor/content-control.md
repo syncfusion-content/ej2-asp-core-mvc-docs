@@ -32,40 +32,40 @@ Content control can be inserted using `insertContentControl` method in editor mo
 
 {% highlight ts %}
 //Insert Rich Text Content Control
-documentEditor.editor.insertContentControl('RichText');
+this.container.documentEditor.editor.insertContentControl('RichText');
 //Insert Rich Text Content Control with default sfdt string
 var sfdt = {"sections":[{"blocks":[{"inlines":[{"text": "Hello"}]}]}]};
-documentEditor.editor.insertContentControl('RichText', sfdt);
+this.container.documentEditor.editor.insertContentControl('RichText', sfdt);
 
 //Insert Plain Text Content Control
 documentEditor.editor.insertContentControl('Text');
 //Insert Plain Text Content Control with default string
-documentEditor.editor.insertContentControl('Text', 'Hello World');
+this.container.documentEditor.editor.insertContentControl('Text', 'Hello World');
 
 //Insert CheckBox Content Control
-documentEditor.editor.insertContentControl('CheckBox');
+this.container.documentEditor.editor.insertContentControl('CheckBox');
 //Insert CheckBox Content Control with mention checked state
-documentEditor.editor.insertContentControl('CheckBox', true);
+this.container.documentEditor.editor.insertContentControl('CheckBox', true);
 
 //Insert ComboBox Content Control
-documentEditor.editor.insertContentControl('ComboBox');
+this.container.documentEditor.editor.insertContentControl('ComboBox');
 //Insert ComboBox Content Control with items
-documentEditor.editor.insertContentControl('ComboBox', 'One', ['One', 'Two', 'Three']);
+this.container.documentEditor.editor.insertContentControl('ComboBox', 'One', ['One', 'Two', 'Three']);
 
 //Insert Date Content Control
-documentEditor.editor.insertContentControl('Date');
+this.container.documentEditor.editor.insertContentControl('Date');
 //Insert Date Content Control
-documentEditor.editor.insertContentControl('Date', '01/01/2024');
+this.container.documentEditor.editor.insertContentControl('Date', '01/01/2024');
 
 //Insert DropDownList Content Control
-documentEditor.editor.insertContentControl('DropDownList');
+this.container.documentEditor.editor.insertContentControl('DropDownList');
 //Insert DropDownList Content Control with items
-documentEditor.editor.insertContentControl('DropDownList', 'One', ['One', 'Two', 'Three']);
+this.container.documentEditor.editor.insertContentControl('DropDownList', 'One', ['One', 'Two', 'Three']);
 
 //Insert Picture Content Control
-documentEditor.editor.insertContentControl('Picture');
+this.container.documentEditor.editor.insertContentControl('Picture');
 //Insert Picture Content Control with default image
-documentEditor.editor.insertContentControl('Picture', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADgSURBVEhLY3jx4sV/WuDBafCluXH/D6ydhlWObIMPLmn8/32KPBiD2OjyKAY7+zbDsX945/91azehiBWU9IPVgVwJMxSX4SgG65jXwrGVa+v/6TOXoojBDEZ2LQh/m676/+D+/XBzQJgsg0EY5GqQgSCDsYUz2QaDMCiosIUvCKMYDFKIjK9dvYrCB3kXJIaMkfUjY5JdDEpioCCAYZCFyGbAMFkGI0fcMDUYpAgZY4s8EEYWwxWBJLsYhJHFQIYjmwHDQ9xgkGEwDCp0QAYji8EMRhYjymBq4lGDofjFfwCV5AGEIf9DQQAAAABJRU5ErkJggg==');
+this.container.documentEditor.editor.insertContentControl('Picture', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADgSURBVEhLY3jx4sV/WuDBafCluXH/D6ydhlWObIMPLmn8/32KPBiD2OjyKAY7+zbDsX945/91azehiBWU9IPVgVwJMxSX4SgG65jXwrGVa+v/6TOXoojBDEZ2LQh/m676/+D+/XBzQJgsg0EY5GqQgSCDsYUz2QaDMCiosIUvCKMYDFKIjK9dvYrCB3kXJIaMkfUjY5JdDEpioCCAYZCFyGbAMFkGI0fcMDUYpAgZY4s8EEYWwxWBJLsYhJHFQIYjmwHDQ9xgkGEwDCp0QAYji8EMRhYjymBq4lGDofjFfwCV5AGEIf9DQQAAAABJRU5ErkJggg==');
 {% endhighlight %}
 
 ## Import content control properties
@@ -76,7 +76,7 @@ Content control properties can be set using the `ContentControlInfo` and import 
 var data = [];
 var contentControlData = { title: placeHolderPrefix + 'Name', tag: '', value: 'John', canDelete: false, canEdit: false, type: 'RichText' };
 data.push(contentControlData);
-documentEditor.importContentControlData(data);
+this.container.documentEditor.importContentControlData(data);
 {% endhighlight %}
 
 ## Export content control properties
@@ -84,7 +84,7 @@ documentEditor.importContentControlData(data);
 Content control properties can be exported using the `exportContentControlData`
 
 {% highlight ts %}
-var contentControlInfos = documentEditor.exportContentControlData();
+var contentControlInfos = this.container.documentEditor.exportContentControlData();
 {% endhighlight %}
 
 ## Reset content control
@@ -95,7 +95,7 @@ Content control properties can be reset using the `resetcontentcontroldata`
 var data = [];
 var contentControlData = { title: placeHolderPrefix + 'Name', tag: '', value: 'John', canDelete: false, canEdit: false, type: 'RichText' };
 data.push(contentControlData);
-documentEditor.resetContentControlData(data);
+this.container.documentEditor.resetContentControlData(data);
 {% endhighlight %}
 
 N> Content control with custom XML mapping of file type WordML is converted as normal Rich Text Content Control to provide lossless round-tripping upon saving.
