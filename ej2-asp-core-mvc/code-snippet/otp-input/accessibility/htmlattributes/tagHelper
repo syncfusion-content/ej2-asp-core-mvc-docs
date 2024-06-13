@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.Inputs
+
+@{
+    Dictionary<string, object> htmlAttribues = new Dictionary<string, object>()
+    {
+        { "title", "One-Time Password" }
+    };
+}
+
+<div id='container' style="width: 350px;">
+    <ejs-otpinput id="otpInput" htmlAttributes="htmlAttribues"></ejs-otpinput>
+</div>
