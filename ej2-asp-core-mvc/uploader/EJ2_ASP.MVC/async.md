@@ -235,11 +235,12 @@ public ActionResult Save()
 The following example demonstrates the client-side action for saving files on the server and returning responses in JSON, String, and File formats.
 
 ```c#
-@Html.EJS().Uploader("UploadFiles").Success("onFileSuccess").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "http://localhost:55793/Uploader/Save", RemoveUrl = "http://localhost:55793/Uploader/Remove" }).Render()
+
+@Html.EJS().Uploader("UploadFiles").Success("OnSuccessHandler").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "api/Uploader/Save" }).Render()
 
 <script>
 
-    function onFileSuccess(args) {
+    function OnSuccessHandler(args) {
         if (args.e !== null) // Check if the event argument is not null
         { 
             var responseText = args.e.target.responseText;
