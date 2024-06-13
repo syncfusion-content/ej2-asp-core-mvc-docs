@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div id="container" style="width: 500px">
+    @Html.EJS().MultiColumnComboBox("remote").Placeholder("Select the name").DataSource(obj => obj.Url("https://services.syncfusion.com/aspnet/production/api/Employees").Adaptor(
+    "WebApiAdaptor").CrossDomain(true)).Fields(new MultiColumnComboBoxFieldSettings { Text = "FirstName", Value = "EmployeeID" }).Columns(col =>
+    {
+        col.Field("EmployeeID").Header("Employee ID").Width("120").Add();
+        col.Field("FirstName").Header("Name").Width("130").Add();
+        col.Field("Designation").Header("Designation").Width("120").Add();
+        col.Field("Country").Header("Country").Width("90").Add();
+    }).PopupHeight("230px").Render()
+</div>

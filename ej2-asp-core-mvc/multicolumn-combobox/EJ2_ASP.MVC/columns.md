@@ -14,21 +14,39 @@ The [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiC
 
 You can customize the column by using [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Columns) property, which provides options such as `Field`, `Header`, `Width`, `Format`, `Template` and more.
 
-## Adding column field
+In the following examples, column is customized with `field`, `header` and `width`.
 
-Specifies the data fields to be displayed in each column, mapping the fields from the data source to the multicolumn combobox. You can use the `Field` property to add field content.
+* `field` property - Specifies the data fields to be displayed in each column, mapping the fields from the data source to the multicolumn combobox.
 
-## Setting header
+* `header` property - which is used to display the column header.
 
-You can define the column header by using `Header` property, which is used to display the column header.
+* `width` property - which is used to define the column width.
 
-## Setting width
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/items/text/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ColumnField.cs" %}
+{% include code-snippet/multicolumn-combobox/items/text/text.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-You can define the column width by using `Width` property.
+![ColumnField](images/text.png)
 
 ## Setting text align
 
 You can use the `TextAlign` property to define the text alignment of the column.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/columns/text-align/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TextAlign.cs" %}
+{% include code-snippet/multicolumn-combobox/columns/text-align/text-align.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![TextAlign](images/textalign.png)
 
 ## Setting template
 

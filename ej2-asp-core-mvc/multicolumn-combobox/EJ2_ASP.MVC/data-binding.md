@@ -27,6 +27,28 @@ The MultiColumn ComboBox also supports different kinds of data services such as 
 
 The local binding in the MultiColumn ComboBox allows you to connect the component to various data sources, enabling dynamic and flexible data display.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/items/text/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="LocalData.cs" %}
+{% include code-snippet/multicolumn-combobox/items/text/text.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Text](images/text.png)
+
 ## Binding remote data
 
 The MultiColumn ComboBox supports retrieval of data from remote data services with the help of `DataManager` component. The [Query](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Query) property is used to fetch data from the database and bind it to the MultiColumn ComboBox.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multicolumn-combobox/remotedata/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RemoteData.cs" %}
+{% include code-snippet/multicolumn-combobox/remotedata/remotedata.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Text](images/remotedata.png)
