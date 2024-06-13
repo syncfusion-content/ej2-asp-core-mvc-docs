@@ -35,7 +35,7 @@ app.Use(async (context, next) =>
     string nonceValue = Convert.ToBase64String(nonceBytes);
     context.Items.Add("ScriptNonce", nonceValue);
     context.Response.Headers.Add("Content-Security-Policy", string.Format(
-    "script-src 'self' 'unsafe-inline' 'nonce-{0}' https://cdn.syncfusion.com;" +
+    "script-src 'self' 'nonce-{0}' https://cdn.syncfusion.com;" +
     "style-src-elem 'self' 'unsafe-inline' https://cdn.syncfusion.com https://fonts.googleapis.com;" +
     "font-src 'self' data: https://fonts.gstatic.com;" +
     "object-src 'none';", nonceValue));
