@@ -1,0 +1,21 @@
+@{
+    List<Tag> tag = new List<Tag>();
+        tag.Add(new Tag() { Text = "Add to KB", State= false });
+        tag.Add(new Tag() { Text = "Crisis", State= false });
+        tag.Add(new Tag() { Text = "Enhancement", State= true });
+        tag.Add(new Tag() { Text = "Presale", State= false });
+        tag.Add(new Tag() { Text = "Needs Approval", State= false });
+        tag.Add(new Tag() { Text = "Approved", State= true });
+        tag.Add(new Tag() { Text = "Internal Issue", State= true });
+        tag.Add(new Tag() { Text = "Breaking Issue", State= false });
+        tag.Add(new Tag() { Text = "New Feature", State= true });
+        tag.Add(new Tag() { Text = "New Component", State= false });
+        tag.Add(new Tag() { Text = "Mobile Issue", State= false });    
+}
+<div id='groupList' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-multiselect id="tags" placeholder="Select Tags" popupHeight="200px" dataSource="@tag">
+            <e-multiselect-fields value="Text" disabled="State" ></e-multiselect-fields>
+        </ejs-multiselect>
+    </div>
+</div>
