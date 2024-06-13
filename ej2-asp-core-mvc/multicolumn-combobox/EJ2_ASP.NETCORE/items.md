@@ -10,7 +10,7 @@ documentation: ug
 
 # Items in ##Platform_Name## MultiColumn Combobox control
 
-## Text
+## Setting text
 
 You can use [text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Text) property to set the display text of the selected item.
 
@@ -25,7 +25,7 @@ You can use [text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 ![Text](images/text.png)
 
-## Value
+## Setting value
 
 You can use [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Value) property to set the value of the selected item.
 
@@ -40,7 +40,7 @@ You can use [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 ![Value](images/value.png)
 
-## Index
+## Setting index
 
 You can use [index](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Index) property to set the index of the selected item.
 
@@ -55,7 +55,7 @@ You can use [index](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 ![Index](images/index.png)
 
-## Query
+## Adding query
 
 The [Query](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Query) property is used to accept the external query, which will execute along with the data processing.
 
@@ -70,39 +70,9 @@ The [Query](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiCo
 
 ![Query](images/query.png)
 
-## Allow filtering
+## Adding placeholder
 
-The [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_AllowFiltering) property enables the filtering functionality, allowing users to filter the list of items based on their input. To activate this feature, set `allowFiltering` to true, as its default value is true.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/multicolumn-combobox/items/allow-filtering/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="AllowFiltering.cs" %}
-{% include code-snippet/multicolumn-combobox/items/allow-filtering/allow-filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Allow filtering](images/filtering.png)
-
-## Allow sorting
-
-The [allowSorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_AllowSorting) property is used to specify whether sorting is allowed. By default its value is true.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/multicolumn-combobox/items/allow-sorting/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="AllowSorting.cs" %}
-{% include code-snippet/multicolumn-combobox/items/allow-sorting/allow-sorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Allow sorting](images/sorting.png)
-
-## Placeholder
-
-You can use the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Placeholder) property to set a short hint that describes the expected value of the multicolumn combobox component.
+You can use the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Placeholder) property to set a short hint that describes the expected value in the multicolumn combobox control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -115,7 +85,7 @@ You can use the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ![Placeholder](images/placeholder.png)
 
-## Floatlabel type
+## Setting the floatlabel type
 
 You can use the [floatLabelType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_FloatLabelType) property to display a floating label above the input element. This will work when a placeholder is used.
 
@@ -140,7 +110,7 @@ The following example shows the `floatLabelType` with `Auto`
 
 ## Adding html attributes
 
-You can use the [htmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_HtmlAttributes) property to add HTML attributes to the MultiColumn Combobox.
+You can use the [htmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_HtmlAttributes) property to add HTML attributes to the multicolumn combobox.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -151,9 +121,9 @@ You can use the [htmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/S
 {% endhighlight %}
 {% endtabs %}
 
-## Adding width
+## Setting width
 
-You can use the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Width) property to set the width of the component. By default, the component's width is set based on the width of its parent container.
+You can use the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Width) property to set the width of the control. By default, the width is determined by the width of its parent container.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -164,9 +134,9 @@ You can use the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-## Popup width
+## Setting popup width
 
-You can use the [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_PopupWidth) property to set the width of the popup list. By default, the popup width set based on the width of the component.
+You can use the [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_PopupWidth) property to set the width of the popup list. By default, the popup width is determined by the width of the control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -179,9 +149,9 @@ You can use the [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 ![Popup width](images/popupwidth.png)
 
-## Popup height
+## Setting popup height
 
-You can use the [popupHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_PopupHeight) property to set the height of the popup list. By default, the value is 300px.
+You can use the [popupHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_PopupHeight) property to set the height of the popup list. By default, the value is `300px`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -194,9 +164,9 @@ You can use the [popupHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ![Popup height](images/popupheight.png)
 
-## Show clear button
+## Adding clear button
 
-The [showClearButton](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_ShowClearButton) property is used to specify whether to show or hide the clear button. By default, its value is false. When the clear button is clicked, the value, text, and index properties are reset to null.
+The [showClearButton](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_ShowClearButton) property is used to specify whether to show or hide the clear button. By default, its value is `false`. When the clear button is clicked, the value, text and index properties are reset to null.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -209,35 +179,13 @@ The [showClearButton](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 ![Show clear button](images/showclearbutton.png)
 
-## Enable virtualization
+## CssClass
 
-You can set the [enableVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_EnableVirtualization) property to true to enable virtual scrolling.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/multicolumn-combobox/items/virtualization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Virtualization.cs" %}
-{% include code-snippet/multicolumn-combobox/items/virtualization/virtualization.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-## Css class
-
-You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_CssClass) property to customize the MultiColumn Combobox.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/multicolumn-combobox/items/cssclass/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CssClass.cs" %}
-{% include code-snippet/multicolumn-combobox/items/cssclass/cssclass.cs %}
-{% endhighlight %}
-{% endtabs %}
+You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_CssClass) property to customize the multicolumn combobox control.
 
 ## Disabled
 
-The [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Disabled) property is used to specify whether the component is disabled. By default, its value is false.
+The [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Disabled) property is used to disable the multicolumn combobox. By default, its value is `false`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -248,9 +196,9 @@ The [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Mult
 {% endhighlight %}
 {% endtabs %}
 
-## Read only
+## Setting read only
 
-You can use [readonly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Readonly) property to disable the user interactions of the component.
+You can use [readonly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Readonly) property to disable the user interactions in the multicolumn combobox control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -260,3 +208,27 @@ You can use [readonly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% include code-snippet/multicolumn-combobox/items/readonly/readonly.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## Configure grid settings
+
+You can use the [gridSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_GridSettings) properties to configure the columns in the popup content. You can customize the gridSettings by using `e-multicolumncombobox-gridsettings` tag helper, which provides options such as [gridLines](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBoxGridSettings.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBoxGridSettings_GridLines), [rowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBoxGridSettings.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBoxGridSettings_RowHeight) and [enableAltRow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBoxGridSettings.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBoxGridSettings_EnableAltRow).
+
+### Setting grid lines
+
+You can use [gridLines](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBoxGridSettings.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBoxGridSettings_GridLines) property to set the mode of the gridlines. You can set [Horizontal](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.GridLine.html#Syncfusion_EJ2_MultiColumnComboBox_GridLine_Horizontal), [Vertical](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.GridLine.html#Syncfusion_EJ2_MultiColumnComboBox_GridLine_Vertical), [Default](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.GridLine.html#Syncfusion_EJ2_MultiColumnComboBox_GridLine_Default), [None](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.GridLine.html#Syncfusion_EJ2_MultiColumnComboBox_GridLine_None) and [Both](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.GridLine.html#Syncfusion_EJ2_MultiColumnComboBox_GridLine_Both).
+
+* Both: Displays both horizontal and vertical grid lines.
+* None: : No grid lines are displayed.
+* Horizontal: Displays the horizontal grid lines only.
+* Vertical: Displays the vertical grid lines only.
+* Default: Displays grid lines based on the theme.
+
+In the following examples, gridLines is set with `Horizontal`.
+
+### Setting row height
+
+You can use [rowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBoxGridSettings.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBoxGridSettings_RowHeight) property to set the height of the rows in the popup content.
+
+### Setting alternate rows
+
+You can use the [enableAltRow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBoxGridSettings.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBoxGridSettings_EnableAltRow) property to enable the alternate row styles in the multicolumn combobox. If enabled, it will add the `e-altrow` CSS class to the list of items in the popup.

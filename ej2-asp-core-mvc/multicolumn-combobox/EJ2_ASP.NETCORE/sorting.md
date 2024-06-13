@@ -10,17 +10,17 @@ documentation: ug
 
 # Sorting in ##Platform_Name## MultiColumn Combobox control
 
-The MultiColumn ComboBox control provides built-in support for sorting data-bound columns in ascending or descending order. To enable sorting in the MultiColumn ComboBox, set the [allowSorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_AllowSorting) property to true.
+The MultiColumn ComboBox control provides built-in support for sorting data-bound columns in ascending or descending order by using the [allowSorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_AllowSorting) property. By default, the value is `true`.
 
-To sort a particular column in the MultiColumn ComboBox, click on the popup grid column header. Each click on the header toggles the sorting order of the column between Ascending and Descending
+To sort a particular column in the MultiColumn ComboBox, click on the grid column header in the popup. Each click on the header toggles the sorting order of the column between `Ascending` and `Descending`.
 
-## Sort order
+## Setting the sort order
 
 You can use the [sortOrder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_SortOrder) property to set the order of the column. It supports three types of sorting [None](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.SortOrder.html#Syncfusion_EJ2_MultiColumnComboBox_SortOrder_None), [Ascending](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.SortOrder.html#Syncfusion_EJ2_MultiColumnComboBox_SortOrder_Ascending) and [Descending](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.SortOrder.html#Syncfusion_EJ2_MultiColumnComboBox_SortOrder_Descending).
 
 When you click on a column header for the first time, it sorts the column in ascending order. Clicking the same column header again will sort the column in descending order. A repetitive third click on the same column header will clear the sorting.
 
-In the following examples, data sorting is done with `Descending` type.
+In the following examples, data sorting is done with `Descending` order.
 
 ## Sort type
 

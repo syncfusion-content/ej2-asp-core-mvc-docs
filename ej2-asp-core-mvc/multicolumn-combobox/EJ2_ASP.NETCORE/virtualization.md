@@ -16,8 +16,8 @@ Enabling the [enableVirtualization](https://help.syncfusion.com/cr/aspnetcore-js
 
 ## Binding local data
 
-The MultiColumn Combobox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the `fields` property. When using virtual scrolling, the list updates based on the scroll offset value, triggering a request to fetch more data from the server.
+The MultiColumn Combobox can generate its list items through an object arrays of data. For this, the appropriate columns should be mapped to the `fields` property. When using virtual scrolling, the list updates based on the scroll offset value, triggering a request to fetch more data from the server.
 
-## Binding Remote data
+## Binding remote data
 
 The MultiColumn Combobox supports retrieval of data from remote data services with the help of DataManager component. When using remote data, it initially fetches all the data from the server and then stores the data locally. During virtual scrolling, additional data is retrieved from the locally stored data.

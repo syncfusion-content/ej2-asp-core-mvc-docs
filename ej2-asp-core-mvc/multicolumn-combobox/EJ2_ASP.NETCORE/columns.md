@@ -10,38 +10,34 @@ documentation: ug
 
 # Columns in ##Platform_Name## MultiColumn Combobox control
 
-The columns are essential elements that enhance the usability and functionality of MultiColumn ComboBox. The `columns` property allow you to define what data fields to display, how to format and style them, and how to enable interactive features within the MultiColumn Combobox.
+The [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Columns) property allow you to define what data fields is to be displayed in the MultiColumn ComboBox.
 
 You can customize the column by using `e-multicolumncombobox-column` tag helper, which provides options such as `field`, `header`, `width`, `format`, `template` and more.
 
-## Column Field
+## Adding column field
 
 Specifies the data fields to be displayed in each column, mapping the fields from the data source to the multicolumn combobox. You can use the `field` property to add field content.
 
-## Column Header
+## Setting header
 
 You can define the column header by using `header` property, which is used to display the column header.
 
-## Column Width
+## Setting width
 
 You can define the column width by using `width` property.
 
-## Column Format
-
-The `format` property is used to control how data is displayed in each column.
-
-## Column Textalign
+## Setting text align
 
 You can use the `textAlign` property to define the text alignment of the column.
 
-## Column Template
+## Setting template
 
 You can use the `template` property to customize the each cell of the column. It accepts either a template string or an HTML element.
 
-## Display as CheckBox
+## Setting display as checkBox
 
 You can use `displayAsCheckBox` property to display the column value as checkbox instead of a boolean value. By default, the value is `false`.
 
-## Custom attributes
+## Setting custom attributes
 
 You can use the `customAttributes` property to customize the CSS styles and attributes of each column's content cells.

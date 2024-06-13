@@ -38,7 +38,7 @@ The [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Mul
 
 ## open
 
-The [open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Open) event is triggered when the popup is opens.
+The [open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Open) event is triggered when the popup is opened.
 
 ## close
 

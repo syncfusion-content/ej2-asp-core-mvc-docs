@@ -10,7 +10,7 @@ documentation: ug
 
 # Data binding in ##Platform_Name## MultiColumn Combobox control
 
-The MultiColumn ComboBox loads the data either from local data sources or remote data services using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_DataSource) property. It supports the data type of `array` or `DataManager`.
+The MultiColumn ComboBox loads the data either from local data sources or remote data services using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_DataSource) property. It supports the data type of `object arrays` or `DataManager`.
 
 The MultiColumn ComboBox also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
@@ -21,23 +21,11 @@ The MultiColumn ComboBox also supports different kinds of data services such as 
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
-> When binding complex data to the ComboBox, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+> The fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Binding local data
 
-Local data can be represented in two ways as described below.
-
-### 1. Array of simple data
-
-The MultiColumn ComboBox has support to load array of primitive data such as strings and numbers.
-
-### 2. Array of JSON data
-
-The MultiColumn ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [Fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Fields) property.
-
-### 3. Array of Complex data
-
-The MultiColumn ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [Fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Fields) property.
+The local binding in the MultiColumn ComboBox allows you to connect the component to various data sources, enabling dynamic and flexible data display.
 
 ## Binding remote data
 
