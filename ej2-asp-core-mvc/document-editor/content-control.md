@@ -30,7 +30,7 @@ InlineContentControl: Among inline content inside, as a child of a paragraph. Bl
 
 Content control can be inserted using `insertContentControl` method in editor module.
 
-```c#
+{% highlight ts %}
 //Insert Rich Text Content Control
 container.documentEditor.editor.insertContentControl('RichText');
 //Insert Rich Text Content Control with default sfdt string
@@ -66,48 +66,35 @@ container.documentEditor.editor.insertContentControl('DropDownList', 'One', ['On
 container.documentEditor.editor.insertContentControl('Picture');
 //Insert Picture Content Control with default image
 container.documentEditor.editor.insertContentControl('Picture', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADgSURBVEhLY3jx4sV/WuDBafCluXH/D6ydhlWObIMPLmn8/32KPBiD2OjyKAY7+zbDsX945/91azehiBWU9IPVgVwJMxSX4SgG65jXwrGVa+v/6TOXoojBDEZ2LQh/m676/+D+/XBzQJgsg0EY5GqQgSCDsYUz2QaDMCiosIUvCKMYDFKIjK9dvYrCB3kXJIaMkfUjY5JdDEpioCCAYZCFyGbAMFkGI0fcMDUYpAgZY4s8EEYWwxWBJLsYhJHFQIYjmwHDQ9xgkGEwDCp0QAYji8EMRhYjymBq4lGDofjFfwCV5AGEIf9DQQAAAABJRU5ErkJggg==');
-```
+{% endhighlight %}
 
 ## Import content control properties
 
 Content control properties can be set using the `ContentControlInfo` and import it using `importContentControlData`
 
-```c#
+{% highlight ts %}
 var data = [];
-var contentControlData = new Object();
-contentControlData.title = placeHolderPrefix + 'Name';
-contentControlData.tag = '';
-contentControlData.value = 'John';
-contentControlData.canDelete = false;
-contentControlData.canEdit = false;
-contentControlData.type = 'RichText';
-data.push(contentControlData);
+var contentControlData = { title: placeHolderPrefix + 'Name', tag: '', value: 'John', canDelete: false, canEdit: false, type: 'RichText' };
 container.documentEditor.importContentControlData(data);
-```
+{% endhighlight %}
 
 ## Export content control properties
 
 Content control properties can be exported using the `exportContentControlData`
 
-```c#
+{% highlight ts %}
 var contentControlInfos = container.documentEditor.exportContentControlData();
-```
+{% endhighlight %}
 
 ## Reset content control
 
 Content control properties can be reset using the `resetcontentcontroldata`
 
-```c#
+{% highlight ts %}
 var data = [];
-var contentControlData = new Object();
-contentControlData.title = placeHolderPrefix + 'Name';
-contentControlData.tag = '';
-contentControlData.value = 'John';
-contentControlData.canDelete = false;
-contentControlData.canEdit = false;
-contentControlData.type = 'RichText';
+var contentControlData = { title: placeHolderPrefix + 'Name', tag: '', value: 'John', canDelete: false, canEdit: false, type: 'RichText' };
 data.push(contentControlData);
 container.documentEditor.resetContentControlData(data);
-```
+{% endhighlight %}
 
 N> Content control with custom XML mapping of file type WordML is converted as normal Rich Text Content Control to provide lossless round-tripping upon saving.
