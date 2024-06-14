@@ -642,6 +642,8 @@ The following code example shows how to use the [actionFailure](https://help.syn
 {% endhighlight %}
 {% endtabs %}
 
+![ASP.NET CORE Tree Grid with Handling errors](images/error-handling.png)
+
 ## See also
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
