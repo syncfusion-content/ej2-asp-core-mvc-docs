@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div id="container" style="width: 500px">
+    @Html.EJS().MultiColumnComboBox("localization").Locale("fr-BE").Placeholder("Sélectionnez un client").DataSource((IEnumerable<object>)Model).Columns(col =>
+    {
+        col.Field("ContactName").Header("Contact Name").Width("90").Add();
+        col.Field("CustomerID").Header("Customer ID").Width("90").Add();
+    }).Render()
+</div>
+
+<script>
+    ej.base.L10n.load({
+        'fr-BE': {
+            'multicolumncombobox': {
+                'noRecordsTemplate': "Aucun enregistrement trouvé"
+            }
+        }
+    });
+</script>
