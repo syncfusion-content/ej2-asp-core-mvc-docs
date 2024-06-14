@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div class="container" style="width: 500px">
+    <ejs-multicolumncombobox id="virtualization" dataSource="ViewBag.EmpData" enableVirtualization="true" popupHeight="230px"
+    placeholder="Select an engineer">
+        <e-multicolumncombobox-gridsettings rowHeight=40></e-multicolumncombobox-gridsettings>
+        <e-multicolumncombobox-fields text="Engineer" value="TaskID"></e-multicolumncombobox-fields>
+        <e-multicolumncombobox-columns>
+            <e-multicolumncombobox-column field="TaskID" header="Task ID" width="100"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="Engineer" header="Engineer" width="140"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="Designation" header="Designation" width="130"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="Estimation" header="Estimation" width="120"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="Status" header="Status" width="120"></e-multicolumncombobox-column>
+        </e-multicolumncombobox-columns>
+    </ejs-multicolumncombobox>
+</div>
