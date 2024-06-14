@@ -10,7 +10,7 @@ documentation: ug
 
 # Columns in ##Platform_Name## MultiColumn Combobox control
 
-The `e-multicolumncombobox-column` tag helps you to define the data fields to be displayed in the MultiColumn ComboBox.
+The `e-multicolumncombobox-column` tag helper allows to define the data fields to be displayed in the MultiColumn ComboBox.
 
 You can customize the column, which provides options such as `field`, `header`, `width`, `format`, `template` and more.
 

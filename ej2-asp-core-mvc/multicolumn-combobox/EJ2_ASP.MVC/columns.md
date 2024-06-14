@@ -10,7 +10,7 @@ documentation: ug
 
 # Columns in ##Platform_Name## MultiColumn Combobox control
 
-The [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Columns) property allow you to define the data fields to be displayed in the MultiColumn ComboBox.
+The [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Columns) property allows to define the data fields to be displayed in the MultiColumn ComboBox.
 
 You can customize the column by using [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Columns) property, which provides options such as `Field`, `Header`, `Width`, `Format`, `Template` and more.
 
