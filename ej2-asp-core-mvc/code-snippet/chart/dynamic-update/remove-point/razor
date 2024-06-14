@@ -6,7 +6,7 @@
         Name("Users").
         Width(2).
         Marker(mr => mr.Visible(true).DataLabel(dl => dl.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top)
-                .Font(font => font.FontWeight("600"))))
+                .Font(font => font.FontWeight("600")))).
         DataSource(ViewBag.dataSource).
         Add();
    }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).EnableTrim(false).MajorGridLines(mg => mg.Width(0)).MajorTickLines(mt => mt.Width(0))
