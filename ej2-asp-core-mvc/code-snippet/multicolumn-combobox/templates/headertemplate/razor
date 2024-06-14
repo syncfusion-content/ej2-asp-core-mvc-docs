@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div id="container" style="width: 500px">
+    @Html.EJS().MultiColumnComboBox("headerTemplate").DataSource((IEnumerable<object>)Model).Fields(new MultiColumnComboBoxFieldSettings
+    { Text = "Name", Value = "EmpID" }).Placeholder("Select an employee").Columns(col =>
+    {
+        col.Field("EmpID").HeaderTemplate("<div class=\"header\"> <span>Employee ID</span> </div>").Width("90").Add();
+        col.Field("Name").HeaderTemplate("<div class=\"header\"> <span>Employee Name</span> </div>").Width("160").Add();
+        col.Field("Designation").HeaderTemplate("<div class=\"header\"> <span>Designation</span> </div>").Width("90").Add();
+        col.Field("Country").HeaderTemplate("<div class=\"header\"> <span>Country</span> </div>").Width("80").Add();
+    }).Render()
+</div>
