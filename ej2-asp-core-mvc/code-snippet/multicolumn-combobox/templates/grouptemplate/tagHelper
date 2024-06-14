@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div class="container" style="width: 500px">
+    <ejs-multicolumncombobox id="groupTemplate" dataSource="ViewBag.OrderData" groupTemplate='<div class="e-group-temp">Key is: ${key}, Field is: ${field}, Count is: ${count}</div>'>
+        <e-multicolumncombobox-fields text="CustomerID" value="OrderID" groupBy="CustomerID"></e-multicolumncombobox-fields>
+        <e-multicolumncombobox-columns>
+            <e-multicolumncombobox-column field="OrderID" header="Order ID" width="120"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="CustomerID" header="Customer ID" width="140"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="Freight" header="Freight" width="120"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="OrderDate" header="Order Date" width="140"></e-multicolumncombobox-column>
+        </e-multicolumncombobox-columns>
+    </ejs-multicolumncombobox>
+</div>
