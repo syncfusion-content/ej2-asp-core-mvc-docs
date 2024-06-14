@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.Inputs
+
+@{
+    string[] ariaLabels = { "First digit", "Second digit", "Third digit", "Fourth digit" };
+}
+
+<div id='container' style="width: 350px;">
+    <ejs-otpinput id="otpInput" ariaLabels="ariaLabels"></ejs-otpinput>
+</div>
