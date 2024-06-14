@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div class="container" style="width: 500px">
+    <ejs-multicolumncombobox id="itemTemplate" dataSource="ViewBag.EmpData" itemTemplate="<tr><td class ='emp-id'>${EmpID}</td><td class='name'>${Name}</td><td class ='city'>${Designation}</td></tr>">
+        <e-multicolumncombobox-fields text="Name" value="EmpID"></e-multicolumncombobox-fields>
+        <e-multicolumncombobox-columns>
+            <e-multicolumncombobox-column field="EmpID" header="Employee ID" width="120"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="Name" header="Name" width="100"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="Designation" header="Designation" width="120"></e-multicolumncombobox-column>
+        </e-multicolumncombobox-columns>
+    </ejs-multicolumncombobox>
+</div>
+
+<style>
+    .name, .emp-id, .city {
+        border: 1px solid;
+        border-color: #e0e0e0;
+        padding: 2px 2px 3px 4px;
+    }
+</style>
