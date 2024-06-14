@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div id="container" style="width: 500px">
+    @Html.EJS().MultiColumnComboBox("itemTemplate").DataSource((IEnumerable<object>)Model).Fields(new MultiColumnComboBoxFieldSettings
+    { Text = "Name", Value = "EmpID" }).Columns(col =>
+    {
+        col.Field("EmpID").Header("Employee ID").Width("120").Add();
+        col.Field("Name").Header("Name").Width("100").Add();
+        col.Field("Designation").Header("Designation").Width("120").Add();
+    }).ItemTemplate("<tr><td class ='emp-id'>${EmpID}</td><td class='name'>${Name}</td><td class ='city'>${Designation}</td></tr>").Render()
+</div>
+
+<style>
+    .name, .emp-id, .city {
+        border: 1px solid;
+        border-color: #e0e0e0;
+        padding: 2px 2px 3px 4px;
+    }
+</style>
