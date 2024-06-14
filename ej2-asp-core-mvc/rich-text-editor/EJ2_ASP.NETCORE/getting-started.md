@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## RichTextEditor Control
-description: Checkout and learn about getting started with ##Platform_Name## RichTextEditor control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Rich Text Editor Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core RichTextEditor Control
+# Getting Started with ASP.NET Core Rich Text Editor Control
 
-This section briefly explains about how to include [ASP.NET Core RichTextEditor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -86,9 +86,9 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core RichTextEditor control
+## Add ASP.NET Core Rich Text Editor control
 
-Now, add the Syncfusion ASP.NET Core RichTextEditor tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Rich Text Editor tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -96,21 +96,9 @@ Now, add the Syncfusion ASP.NET Core RichTextEditor tag helper in `~/Pages/Index
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core RichTextEditor control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Rich Text Editor control will be rendered in the default web browser.
 
-![ASP.NET Core RichTextEditor Control](images/richtexteditor-control.png)
-
-### Initialize from iframe element
-
-Initialize the Rich Text Editor on `<div>` element as shown below and set the `enable` field of [`iframeSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_IframeSettings) property as true to render the Rich Text Editor content in an `<iframe>` and its isolated from the rest of the page.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/basic/iframe/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core RichTextEditor with Iframe Element](images/richtexteditor-iframe-element.png)
+![ASP.NET Core Rich Text Editor Control](images/richtexteditor-control.png)
 
 ## Configure the Toolbar
 
@@ -122,75 +110,9 @@ Configure the toolbar with the tools using items field of the [`toolbarSettings`
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core RichTextEditor with Toolbar](images/richtexteditor-with-toolbar.png)
+![ASP.NET Core Rich Text Editor with Toolbar](images/richtexteditor-with-toolbar.png)
 
 N> `|` and `-` can insert a vertical and horizontal separator lines in the toolbar.
-
-## Insert Images and Links
-
-The `Image` module inserts an image into RichTextEditor’s content area, and the `Link` module links external resources such as website URLs, to selected text in the RichTextEditor’s content, respectively.
-
-The link inject module adds a link icon to the toolbar and the image inject module adds an image icon to the toolbar.
-
-Specifies the items to be rendered in quick toolbar based on the target element such image, link and text element. The quick toolbar opens to customize the element by clicking the target element.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/basic/image/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-## Send formatted content using XmlHttpRequest
-
-The Html string of the Rich Text Editor can be passed from View to the Controller through the `XMLHttpRequest` `Post` action. The HTML value binds to the corresponding mapped controller, and you can access it in the Post action parameter.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/basic/rtevalue/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class RichTextEditorValue
-{
-    public string text { get; set; }
-}
-{% endhighlight %}
-{% endtabs %}
-
-## Retrieve the Formatted Content
-
-To retrieve the editor contents, use [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property of Rich Text Editor.
-
-```javascript
-  var rteValue = this.rteObj.value;
-```
-
-Or, you can use the public method, `getHtml` to retrieve the Rich Text Editor content.
-
-```javascript
-  var rteValue = this.rteObj.getHtml();
-```
-
-To fetch the Rich Text Editor's text content, use `getText` method of Rich Text Editor.
-
-```javascript
-  var rteValue = this.rteObj.getText();
-```
-
-## Retrieve the number of characters
-
-To get the maximum number of characters in the Rich Text Editor's content, use `getCharCount`
-
-```typescript
-  let rteCount = this.rteObj.getCharCount();
-```
-
-The final output will be displayed as follows
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/basic/link/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
