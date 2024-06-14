@@ -30,7 +30,7 @@ InlineContentControl: Among inline content inside, as a child of a paragraph. Bl
 
 Content control can be inserted using `insertContentControl` method in editor module.
 
-```typescript
+```c#
 //Insert Rich Text Content Control
 container.documentEditor.editor.insertContentControl('RichText');
 //Insert Rich Text Content Control with default sfdt string
@@ -72,7 +72,7 @@ container.documentEditor.editor.insertContentControl('Picture', 'data:image/png;
 
 Content control properties can be set using the `ContentControlInfo` and import it using `importContentControlData`
 
-```typescript
+```c#
 var data = [];
 var contentControlData = { title: placeHolderPrefix + 'Name', tag: '', value: 'John', canDelete: false, canEdit: false, type: 'RichText' };
 data.push(contentControlData);
@@ -83,7 +83,7 @@ container.documentEditor.importContentControlData(data);
 
 Content control properties can be exported using the `exportContentControlData`
 
-```typescript
+```c#
 var contentControlInfos = container.documentEditor.exportContentControlData();
 ```
 
@@ -91,7 +91,7 @@ var contentControlInfos = container.documentEditor.exportContentControlData();
 
 Content control properties can be reset using the `resetcontentcontroldata`
 
-```typescript
+```c#
 var data = [];
 var contentControlData = { title: placeHolderPrefix + 'Name', tag: '', value: 'John', canDelete: false, canEdit: false, type: 'RichText' };
 data.push(contentControlData);
