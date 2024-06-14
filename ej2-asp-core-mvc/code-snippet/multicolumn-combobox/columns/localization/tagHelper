@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div class="container" style="width: 500px">
+    <ejs-multicolumncombobox id="localization" dataSource="ViewBag.EmpData" locale="fr-BE" placeholder="Sélectionnez un client">
+        <e-multicolumncombobox-columns>
+            <e-multicolumncombobox-column field="ContactName" header="Contact Name" width="90"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="CustomerID" header="Customer ID" width="90"></e-multicolumncombobox-column>
+        </e-multicolumncombobox-columns>
+    </ejs-multicolumncombobox>
+</div>
+
+<script>
+    ej.base.L10n.load({
+        'fr-BE': {
+            'multicolumncombobox': {
+                'noRecordsTemplate': "Aucun enregistrement trouvé"
+            }
+        }
+    });
+</script>
