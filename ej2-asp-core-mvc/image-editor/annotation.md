@@ -174,7 +174,7 @@ Here is an example of changing the text’s color and its font family using the 
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-custom-font-color.jpg)
+![ImageEditor Sample](images/image-editor-custom-font-color.png)
 
 ### Add Additional font family
 
