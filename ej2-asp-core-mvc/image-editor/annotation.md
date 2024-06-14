@@ -209,7 +209,7 @@ Here is an example of adding additional font family to the text annotation using
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-add-font-family.png)
+![ImageEditor Sample](images/image-editor-add-font-family.jpg)
 
 ## Freehand drawing 
 
@@ -525,4 +525,4 @@ In the following example, you can use the `drawImage` method in the button click
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-add-image.png)
+![ImageEditor Sample](images/image-editor-add-image.jpg)
