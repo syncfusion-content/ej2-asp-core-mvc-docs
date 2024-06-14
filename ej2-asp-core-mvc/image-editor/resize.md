@@ -54,7 +54,7 @@ Output be like the below.
 
 ## Resizing event
 
-The `resizing` event is triggered when resizing the image. This event provides information encapsulated within an object, which includes details about the previous and current height and width of an image.
+The [`resizing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Resizing) event is triggered when resizing the image. This event provides information encapsulated within an object, which includes details about the previous and current height and width of an image.
 
 The parameter available in `ResizeEventArgs` is,
 

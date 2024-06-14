@@ -91,7 +91,7 @@ Output be like the below.
 
 ## File opened event 
 
-The `FileOpened` event is triggered in the Image Editor control after an image is successfully loaded. It provides the `FileOpenEventArgs` as the event argument, which contains two specific arguments: 
+The [`FileOpened`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_FileOpened) event is triggered in the Image Editor control after an image is successfully loaded. It provides the `FileOpenEventArgs` as the event argument, which contains two specific arguments: 
 
 * FileName: This argument is a string that contains the file name of the opened image. It represents the name of the file that was selected or provided when loading the image into the Image Editor. 
 
@@ -101,7 +101,7 @@ By accessing these arguments within the FileOpened event handler, you can retrie
 
 ## Saving event 
 
-The `saving` event is triggered in the Image Editor control when an image is being saved to the local disk. It provides the `SaveEventArgs` as the event argument, which includes the following specific arguments: 
+The [`saving`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Saved) event is triggered in the Image Editor control when an image is being saved to the local disk. It provides the `SaveEventArgs` as the event argument, which includes the following specific arguments: 
 
 * FileName: This argument is a string that holds the file name of the saved image. It represents the name of the file that will be used when saving the image to the local disk. 
 
@@ -113,11 +113,11 @@ By accessing these arguments within the Saving event handler, you can retrieve i
 
 ## Created event 
 
-The `created` event is triggered once the Image Editor control is created. This event serves as a notification that the component has been fully initialized and is ready to be used. It provides a convenient opportunity to render the Image Editor with a predefined set of initial settings, including the image, annotations, and transformations. 
+The [`created`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Created) event is triggered once the Image Editor control is created. This event serves as a notification that the component has been fully initialized and is ready to be used. It provides a convenient opportunity to render the Image Editor with a predefined set of initial settings, including the image, annotations, and transformations. 
 
 ## Destroyed event 
 
-The `destroyed` event is triggered once the Image Editor control is destroyed or removed from the application. This event serves as a notification that the component and its associated resources have been successfully cleaned up and are no longer active. 
+The [`destroyed`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Destroyed) event is triggered once the Image Editor control is destroyed or removed from the application. This event serves as a notification that the component and its associated resources have been successfully cleaned up and are no longer active. 
 
 ## Reset an image 
 
