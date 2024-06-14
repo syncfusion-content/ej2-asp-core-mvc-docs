@@ -74,7 +74,13 @@ Content control properties can be set using the `ContentControlInfo` and import 
 
 ```c#
 var data = [];
-var contentControlData = { title: placeHolderPrefix + 'Name', tag: '', value: 'John', canDelete: false, canEdit: false, type: 'RichText' };
+var contentControlData = new Object();
+contentControlData.title = placeHolderPrefix + 'Name';
+contentControlData.tag = '';
+contentControlData.value = 'John';
+contentControlData.canDelete = false;
+contentControlData.canEdit = false;
+contentControlData.type = 'RichText';
 data.push(contentControlData);
 container.documentEditor.importContentControlData(data);
 ```
@@ -93,7 +99,13 @@ Content control properties can be reset using the `resetcontentcontroldata`
 
 ```c#
 var data = [];
-var contentControlData = { title: placeHolderPrefix + 'Name', tag: '', value: 'John', canDelete: false, canEdit: false, type: 'RichText' };
+var contentControlData = new Object();
+contentControlData.title = placeHolderPrefix + 'Name';
+contentControlData.tag = '';
+contentControlData.value = 'John';
+contentControlData.canDelete = false;
+contentControlData.canEdit = false;
+contentControlData.type = 'RichText';
 data.push(contentControlData);
 container.documentEditor.resetContentControlData(data);
 ```
