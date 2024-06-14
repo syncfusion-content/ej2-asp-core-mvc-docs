@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Pivot Table Component
+title: Overview in ##Platform_Name## Pivot Table Component | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview in ##Platform_Name## Pivot Table Component
 
 The pivot table is a multi-dimensional data visualization component built on top of the relational data sources. The pivot report can be managed dynamically at runtime along with other capabilities like aggregation, filtering and sorting (field and value based).
 
