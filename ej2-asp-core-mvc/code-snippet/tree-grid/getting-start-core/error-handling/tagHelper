@@ -1,0 +1,17 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.dataSource" height="400" childMapping="Children" treeColumnIndex="1" actionFailure="actionFailure" >
+    <e-treegrid-editsettings allowAdding="true" allowEditing="true" allowDeleting="true"></e-treegrid-editsettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="100"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" editType="stringedit" width="190"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" editType="datepickeredit" textAlign="Right" format="yMd" type="date" width="130"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" editType="numericedit" textAlign="Right" width="120"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+<script>
+    function actionFailure(e) {
+       var span = document.createElement('span');
+       this.element.parentNode.insertBefore(span, this.element);
+       span.style.color = '#FF0000'
+       span.innerHTML = e.error[0];
+    }
+</script>
