@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Inputs
+
+<div id='container' style="width: 350px;">
+    <ejs-otpinput id="otpInput" valueChanged="valueChanged"></ejs-otpinput>
+</div>
+
+<script>
+    function valueChanged(args) {
+        // Here, you can customize your code.
+    }
+</script>

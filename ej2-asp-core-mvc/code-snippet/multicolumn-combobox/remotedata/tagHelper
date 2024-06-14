@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div class="container" style="width: 500px">
+    <ejs-multicolumncombobox id="multicolumnRemote" popupHeight="230px" placeholder="Select a name">
+        <e-data-manager url="https://services.syncfusion.com/js/production/api/Employees" adaptor="WebApiAdaptor" crossdomain="true"></e-data-manager>
+        <e-multicolumncombobox-fields text="FirstName" value="EmployeeID"></e-multicolumncombobox-fields>
+        <e-multicolumncombobox-columns>
+            <e-multicolumncombobox-column field="EmployeeID" header="Employee ID" width="120"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="FirstName" header="Name" width="130"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="Designation" header="Designation" width="120"></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="Country" header="Country" width="90"></e-multicolumncombobox-column>
+        </e-multicolumncombobox-columns>
+    </ejs-multicolumncombobox>
+</div>
