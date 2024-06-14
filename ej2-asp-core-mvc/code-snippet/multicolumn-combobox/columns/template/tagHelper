@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div class="container" style="width: 500px">
+    <ejs-multicolumncombobox id="template" dataSource="ViewBag.EmpData" cssClass="multicolumn-customize" popupHeight="230px"
+    placeholder="Select an employee">
+        <e-multicolumncombobox-gridsettings rowHeight=40></e-multicolumncombobox-gridsettings>
+        <e-multicolumncombobox-fields text="Name" value="Eimg"></e-multicolumncombobox-fields>
+        <e-multicolumncombobox-columns>
+            <e-multicolumncombobox-column field="Eimg" header="Photos" width="90" template='<div><img class="empImage" src="./../images/${Eimg}.png" alt="employee"/> </div>'></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="Name" header="Employee Name" width="160" template='<div class="ename"> ${Name} </div><div class="job"> ${Designation} </div>'></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="DateofJoining" header="Date Of Joining" width="165" template='<div class="dateOfJoining"> ${DateofJoining} </div>'></e-multicolumncombobox-column>
+            <e-multicolumncombobox-column field="Country" header="Country" width="100" template='<div class="country"> ${Country} </div>'></e-multicolumncombobox-column>
+        </e-multicolumncombobox-columns>
+    </ejs-multicolumncombobox>
+</div>
