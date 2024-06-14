@@ -205,7 +205,7 @@ Error handling in Tree Grid identifies exceptions and notifies them through the 
 * When using the default filter ([filterbar](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/filtering/filter-bar)) type, do not apply the other [filterType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.FilterType.html) to any column in the same tree grid, as this will cause an error.
 * In Tree Grid, avoid enabling [idMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_IdMapping) and [childMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ChildMapping) simultaneously. Enabling both properties at the same time will result in an error.
 * The `showCheckbox` column should only be defined in the tree column. Defining it elsewhere will result in an error.
-* The `textAlign` right is not applicable for tree columns in the Tree Grid. Enabling right alignment (`textAlign`: 'Right') for tree columns will result in an error.
+* The `textAlign` right is not applicable for tree columns in the Tree Grid. Enabling right alignment for tree columns will result in an error.
 
 The following code example shows how to use the [actionFailure](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.treegrid.treegrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionFailure) event in the Tree Grid control to display an exception when `isPrimaryKey` are not configured properly in the Tree Grid.
 
