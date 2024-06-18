@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize
+# Resize in the ##Platform_Name## Image Editor control
 
 The resize feature in an Image Editor is a valuable tool that empowers users to modify the size or dimensions of an image to meet their specific requirements. Whether it's for printing, web display, or any other purpose, this feature allows users to tailor images to their desired specifications.
 
@@ -52,7 +52,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-resize.png)
 
-## Resizing event in the ##Platform_Name## Image Editor control
+## Resizing event 
 
 The [`resizing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Resizing) event is triggered when resizing the image. This event provides information encapsulated within an object, which includes details about the previous and current height and width of an image.
 
