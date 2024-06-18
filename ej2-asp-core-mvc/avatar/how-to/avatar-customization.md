@@ -10,9 +10,9 @@ documentation: ug
 
 # Avatar Customization
 
-## Colour customization
+## Color customization
 
-The avatar comes with default background colour (grey). This can be easily customized to desired colour by adding custom class or directly selecting the avatar class from the CSS.
+The avatar comes with default background color (Grey). This can be easily customized to desired color by adding custom class or directly selecting the avatar class from the CSS.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
