@@ -11,7 +11,7 @@ documentation: ug
 
 # Chip Customization
 
-The MultiSelect allows the user to customize the selected chip element through the [tagging](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~Tagging.html) event. In that event, you can set the custom classes to chip element via that event argument of `setClass` method.
+The MultiSelect allows the user to customize the selected chip element through the [tagging](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Tagging) event. In that event, you can set the custom classes to chip element via that event argument of `setClass` method.
 
 The following sample demonstrates chip-customization with the MultiSelect control.
 

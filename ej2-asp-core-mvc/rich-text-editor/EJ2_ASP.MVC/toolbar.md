@@ -273,4 +273,4 @@ The below sample demonstrates the option to insert the image to the Rich Text Ed
 
 ## See Also
 
-* [How to render the toolbar in inline mode](./inline-mode/)
+* [How to render the toolbar in inline mode](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/inline-mode)
