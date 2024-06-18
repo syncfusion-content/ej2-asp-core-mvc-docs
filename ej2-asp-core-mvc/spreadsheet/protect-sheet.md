@@ -140,6 +140,31 @@ spreadsheet.setRangeReadOnly(true, 'A:A', 0)
 
 You can make the cells read-only in the cell data binding by setting the `isReadOnly` property to **true** for the respective rows, columns, and cells.
 
+The following example demonstrates how to make rows, columns, and cells read-only without protecting the sheet:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/read-only/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ReadOnlyController.cs" %}
+{% include code-snippet/spreadsheet/read-only/readOnlyController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/read-only/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ReadOnlyController.cs" %}
+{% include code-snippet/spreadsheet/read-only/readOnlyController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Protect Workbook
 
 Protect workbook feature helps you to protect the workbook so that users cannot insert, delete, rename, hide the sheets in the spreadsheet.
