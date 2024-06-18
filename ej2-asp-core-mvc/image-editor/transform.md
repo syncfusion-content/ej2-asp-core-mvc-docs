@@ -113,7 +113,7 @@ Here is an example of straightening the image.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-straighten.png)
+![ImageEditor Sample](images/image-editor-straighten.jpg)
 
 ## Zoom in or out an image 
 
