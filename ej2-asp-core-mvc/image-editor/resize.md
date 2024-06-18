@@ -52,7 +52,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-resize.png)
 
-## Resizing event
+## Resizing event in the ##Platform_Name## Image Editor control
 
 The [`resizing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Resizing) event is triggered when resizing the image. This event provides information encapsulated within an object, which includes details about the previous and current height and width of an image.
 
