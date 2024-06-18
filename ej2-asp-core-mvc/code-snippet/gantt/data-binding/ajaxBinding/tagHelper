@@ -8,7 +8,7 @@
 <script>
         document.getElementById('dataBind').addEventListener('click', function (args) {
             var ganttObj = document.getElementById('Gantt').ej2_instances[0];
-            let fetch = new Fetch("https://ej2services.syncfusion.com/production/web-services/api/GanttData","GET");
+            let fetch = new Fetch("https://services.syncfusion.com/aspnet/production/api/GanttData","GET");
             ganttObj.showSpinner();
             fetch.send();
             fetch.onSuccess = function (data: any) {
