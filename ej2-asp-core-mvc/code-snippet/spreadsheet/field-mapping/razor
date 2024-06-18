@@ -3,8 +3,3 @@
         ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).FieldsOrder(ViewBag.Order).Add();
     }).Add();
 }).Render()
-
-<script>
-
-    
-</script>
