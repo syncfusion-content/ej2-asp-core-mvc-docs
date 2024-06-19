@@ -10,7 +10,7 @@ documentation: ug
 
 # Annotation in the ##Platform_Name## Image Editor control
 
-The Image Editor allows adding annotations to the image, including text, freehand drawings, and shapes like rectangles, ellipses, arrows, paths, and lines. This gives the flexibility to mark up the image with notes, sketches, and other visual elements as needed. These annotation tools can help to communicate and share ideas more effectively. 
+The Image Editor allows adding annotations to the image, including text, freehand drawings, and shapes like rectangles, ellipses, arrows, paths, and lines. This gives the flexibility to mark up the image with notes, sketches, and other visual elements as needed. These annotation tools can help to communicate and share ideas more effectively. Users are allowed to draw multiple annotations simultaneously, enhancing creative flexibility. Furthermore, every action, including customizations, will be tracked in the undo/redo collection, ensuring a seamless user experience and making it easier to experiment with different designs.
 
 ## Text annotation 
 
@@ -174,7 +174,7 @@ Here is an example of changing the text’s color and its font family using the 
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-customize-font-color.jpg)
+![ImageEditor Sample](images/image-editor-custom-font-color.png)
 
 ### Add Additional font family
 
@@ -209,7 +209,7 @@ Here is an example of adding additional font family to the text annotation using
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-add-font-family.png)
+![ImageEditor Sample](images/image-editor-add-font-family.jpg)
 
 ## Freehand drawing 
 
@@ -525,4 +525,4 @@ In the following example, you can use the `drawImage` method in the button click
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-add-image.png)
+![ImageEditor Sample](images/image-editor-add-image.jpg)

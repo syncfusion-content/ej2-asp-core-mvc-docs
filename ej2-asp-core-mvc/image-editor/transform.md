@@ -113,7 +113,7 @@ Here is an example of straightening the image.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-straighten.png)
+![ImageEditor Sample](images/image-editor-straighten.jpg)
 
 ## Zoom in or out an image 
 
@@ -232,7 +232,7 @@ The parameter available in the `panEventArgs` events are,
 
 ## Zooming event 
 
-The `zooming` event is triggered when performing zooming the image. This event can be used to perform certain actions, such as updating the position of the image. This event is passed an object that contains information about the zooming event, such as the amount of zooming performed. And this event uses `ZoomEventArgs` to handle the zooming action in the image.
+The [`zooming`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Zooming) event is triggered when performing zooming the image. This event can be used to perform certain actions, such as updating the position of the image. This event is passed an object that contains information about the zooming event, such as the amount of zooming performed. And this event uses `ZoomEventArgs` to handle the zooming action in the image.
 
 The parameter available in the Zooming event is, 
 
@@ -248,7 +248,7 @@ The parameter available in the Zooming event is,
 
 ## Rotating event 
 
-The `rotating` event is triggered when performing rotating the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. And this event uses `RotateEventArgs` to handle the rotating action in the image.
+The [`rotating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Rotating) event is triggered when performing rotating the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. And this event uses `RotateEventArgs` to handle the rotating action in the image.
 
 The parameter available in the Rotating event is, 
 
@@ -260,7 +260,7 @@ RotateEventArgs.cancel – Specifies a boolean value to cancel the rotating acti
 
 ## Flipping event 
 
-The `flipping` event is triggered when performing flipping the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. And this event uses `FlipEventArgs` to handle the flipping action in the image.
+The [`flipping`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Flipping) event is triggered when performing flipping the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. And this event uses `FlipEventArgs` to handle the flipping action in the image.
 
 The parameter available in the `flipping` event is, 
 
