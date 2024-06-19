@@ -30,7 +30,28 @@ The `printOptions` contain three properties, as described below.
 
 > When the `print` method is called without any parameters, the default printing will be performed.
 
+{% if page.publishingplatform == "aspnet-core" %}
 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/print-cs2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="PrintController.cs" %}
+{% include code-snippet/spreadsheet/print-cs2/printController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/print-cs2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="PrintController.cs" %}
+{% include code-snippet/spreadsheet/print-cs2/printController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Disable printing
 
