@@ -126,7 +126,7 @@ diagram.add(group);
 
 ## Add collection of group nodes at runtime
 
-* The collection of group nodes can be dynamically added using `addElements` method.Each time an element is added to the diagram canvas, the `collectionChang` event will be triggered.
+* The collection of group nodes can be dynamically added using `addElements` method.Each time an element is added to the diagram canvas, the `collectionChange` event will be triggered.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
