@@ -22,7 +22,7 @@ The MultiColumn Combobox can generate its list items through an object arrays of
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/multicolumn-combobox/virtualization/localdata/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Sorting.cs" %}
+{% highlight c# tabtitle="LocalData.cs" %}
 {% include code-snippet/multicolumn-combobox/virtualization/localdata/localdata.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -35,10 +35,10 @@ The MultiColumn Combobox supports retrieval of data from remote data services wi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/multicolumn-combobox/virtualization/sort-order/razor %}
+{% include code-snippet/multicolumn-combobox/virtualization/remotedata/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Sorting.cs" %}
-{% include code-snippet/multicolumn-combobox/virtualization/sort-order/sort-order.cs %}
+{% highlight c# tabtitle="RemoteData.cs" %}
+{% include code-snippet/multicolumn-combobox/virtualization/remotedata/remotedata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
