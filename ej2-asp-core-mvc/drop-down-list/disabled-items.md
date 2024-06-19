@@ -56,4 +56,4 @@ The disableItem method can be used to handle dynamic changing in disable state o
 
 If you want to disabled the overall component to set the [enabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Enabled) property to false.
 
-{% [Disabled DropDownList Component](./images/dropdownlist-disable.png)" %}
+![Disabled DropDownList Component](./images/dropdownlist-disable.png)
