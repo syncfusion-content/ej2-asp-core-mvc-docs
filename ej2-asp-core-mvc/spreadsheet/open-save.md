@@ -353,6 +353,31 @@ spreadsheet.saveAsJson({ onlyValues: true });
 | ignoreImage | If **true**, excludes images from the JSON output. |
 | ignoreNote | If **true**, excludes notes from the JSON output. |
 
+The following code snippet demonstrates how to configure the serialization options and pass them as arguments to the saveAsJson method:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-as-json/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveController.cs" %}
+{% include code-snippet/spreadsheet/save-as-json/saveController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-as-json/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveController.cs" %}
+{% include code-snippet/spreadsheet/save-as-json/saveController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Supported file formats
 
 The following list of Excel file formats are supported in Spreadsheet:
