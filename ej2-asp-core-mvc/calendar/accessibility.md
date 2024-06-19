@@ -58,7 +58,7 @@ It helps disabled persons by providing information about the widget for assistiv
 
 * **Role**: Gives information to assistive technologies about how to handle each element in a widget.
 
-* **Grid-cell**: Defines the individual cell that can be focussed and selected.
+* **Grid-cell**: Defines the individual cell that can be focused and selected.
 
 ## Keyboard interaction
 
