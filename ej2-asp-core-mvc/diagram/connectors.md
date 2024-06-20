@@ -102,7 +102,7 @@ diagram.remove(connectors)
 
 ## Add collection of connectors at runtime
 
-* The collection of connectors can be dynamically added using `addElements` method.Each time an element is added to the diagram canvas, the `collectionChange` event will be triggered.
+* The collection of connectors can be dynamically added using `addElements` method.Each time an element is added to the diagram canvas, the [`collectionChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_CollectionChange) event will be triggered.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
