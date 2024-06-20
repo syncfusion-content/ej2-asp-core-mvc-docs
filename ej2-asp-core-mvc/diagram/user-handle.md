@@ -312,3 +312,27 @@ To show tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) property 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+### Tooltip support for Fixed User Handle
+
+The diagram provides support to show tooltip when the mouse hovers over any fixed user handle. To show the tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) property of diagram model needs to be set with the tooltip [`content`](../api/diagram/diagramTooltip/#content) and [`position`](../api/diagram/diagramTooltip/#position) as shown in the following example.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/interaction/nodefixeduserhandle2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Node.cs" %}
+{% include code-snippet/diagram/interaction/nodefixeduserhandle2/node.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Node.cs" %}
+{% include code-snippet/diagram/interaction/nodefixeduserhandle2/node.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
