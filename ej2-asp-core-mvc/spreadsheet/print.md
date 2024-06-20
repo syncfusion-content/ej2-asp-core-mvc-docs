@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Spreadsheet Control
+title: Print in ##Platform_Name## Spreadsheet Component
 description: Learn here all about print feature in ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print
@@ -8,7 +8,8 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Print in ##Platform_Name## Spreadsheet control
+
+# Print in Spreadsheet control
 
 The printing functionality allows end-users to print all contents, such as tables, charts, images, and formatted contents, available in the active worksheet or entire workbook in the Spreadsheet. You can enable or disable print functionality by using the `allowPrint` property, which defaults to **true**.
 

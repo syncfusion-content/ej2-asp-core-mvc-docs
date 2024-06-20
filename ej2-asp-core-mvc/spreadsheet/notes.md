@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes in ##Platform_Name## Spreadsheet Control
+title: Notes in ##Platform_Name## Spreadsheet Component
 description: Learn here all about the notes feature in ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Notes
@@ -8,7 +8,8 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Notes in ##Platform_Name## Spreadsheet control
+
+# Notes in Spreadsheet control
 
 The **Notes** feature is used to insert comments, provide feedback, suggest changes, or leave remarks on specific cells while reviewing documents in the Spreadsheet. You can enable or disable the notes functionality using the [`enableNotes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_EnableNotes) property, which defaults to **true**.
 
@@ -40,7 +41,6 @@ In the below example, you can add, edit, save, and delete notes.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 ## Adding a note
 
