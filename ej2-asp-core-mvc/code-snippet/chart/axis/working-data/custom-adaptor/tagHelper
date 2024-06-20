@@ -1,0 +1,28 @@
+<ejs-chart id="container" title="Order Details" load="load">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category"></e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series xName="CustomerID" yName="Sno" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" query="query">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    class SerialNoAdaptor extends ej.data.ODataAdaptor {
+        processResponse() {
+            var i= 0;
+            // calling base class processResponse function
+            var original = super.processResponse.apply(this, arguments);
+            // adding serial number
+            original.result.forEach(function(item){item['Sno'] = ++i});
+            return { result: original.result, count: original.count };
+        }
+    }
+    var dataManager = new ej.data.DataManager({
+        url: 'https://services.syncfusion.com/js/production/api/orders',
+        adaptor: new SerialNoAdaptor()
+    });
+    var query = new ej.data.Query();
+    function load(args) {   
+        args.chart.series[0].dataSource = dataManager;
+    }
+</script>
