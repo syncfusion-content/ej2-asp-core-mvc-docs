@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Spreadsheet Component
-description: Learn here all about print feature in ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
+title: Print in ##Platform_Name## Syncfusion Spreadsheet Control
+description: Learn here all about print feature in ##Platform_Name## Spreadsheet Control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print
 publishingplatform: ##Platform_Name##
