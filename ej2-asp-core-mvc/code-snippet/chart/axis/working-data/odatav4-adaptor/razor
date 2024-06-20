@@ -1,0 +1,18 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+        XName("CustomerID").
+        YName("Freight").
+        DataSource("dataManager").
+        Query("query").
+        Add();
+    }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+    ).Title("Order Details").Render()
+
+<script>
+    var dataManager = new ej.data.DataManager({
+        url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders',
+        adaptor: new ej.data.ODataV4Adaptor()
+    });
+    var query = new ej.data.Query();
+</script>
