@@ -164,6 +164,31 @@ spreadsheet.openFromJson({ file: file }, { ignoreStyle: true });
 | ignoreImage | If **true**, images will be excluded when loading the JSON data. |
 | ignoreNote | If **true**, notes will be excluded when loading the JSON data. |
 
+The following code snippet demonstrates how to configure the deserialization options and pass them as arguments to the openFromJson method:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-from-json/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/open-from-json/openController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-from-json/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/open-from-json/openController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### External workbook confirmation dialog
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
