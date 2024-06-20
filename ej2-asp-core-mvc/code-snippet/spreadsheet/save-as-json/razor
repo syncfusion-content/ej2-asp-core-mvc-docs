@@ -11,8 +11,8 @@
     <input type="checkbox" id="chart"><label for="chart">Ignore Chart</label>
     <input type="checkbox" id="image"><label for="image">Ignore Image</label>
     <input type="checkbox" id="note"><label for="note">Ignore Note</label>
-    <button id="save" onclick="saveFile()">Save with JSON Serialization</button>
 </div>
+@Html.EJS().Button("save").Content("Save with JSON Serialization").Render();
 @Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Open").AllowOpem(true).Render()
 
 <style>
@@ -20,10 +20,11 @@
         margin-top: 10px;
         margin-bottom: 20px;
     }
-    
+
     #Saveasjson input[type="checkbox"] {
         margin: 7px;
     }
+
     #Saveasjson label {
         font-size: 14px;
     }
@@ -61,31 +62,42 @@
         return options;
     }
 
-    function saveFile() {
-        let valueOnlyCheckbox = document.getElementById("valueOnly").checked;
-        let options = valueOnlyCheckbox ? { onlyValues: true } : createOptions();
-        var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
-        spreadsheetObj.saveAsJson(options).then((response) => {
-            let formData = new FormData();
-            formData.append('JSONData', JSON.stringify(response.jsonObject.Workbook));
-            formData.append('fileName', 'Sample');
-            formData.append('saveType', 'Xlsx');
-            formData.append('pdfLayoutSettings', JSON.stringify({ fitSheetOnOnePage: false, orientation: 'Portrait' }));
-            fetch('https://services.syncfusion.com/js/production/api/spreadsheet/save', {
-                method: 'POST',
-                body: formData,
-            }).then((response) => {
-                response.blob().then((data) => {
-                    let anchor = document.createElement('a');
-                    anchor.download = 'Sample.xlsx';
-                    let url = URL.createObjectURL(data);
-                    anchor.href = url;
-                    document.body.appendChild(anchor);
-                    anchor.click();
-                    URL.revokeObjectURL(url);
-                    document.body.removeChild(anchor);
-                });
+    var saveElement = document.getElementById("save");
+    if (saveElement) {
+        // Save button click event listener
+        saveElement.onclick = () => {
+            var valueOnlyCheckbox = document.getElementById("valueOnly").checked;
+            var options = valueOnlyCheckbox ? { onlyValues: true } : createOptions();
+            var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
+            spreadsheetObj.saveAsJson(options).then((response) => {
+                var formData = new FormData();
+                formData.append(
+                    'JSONData',
+                    JSON.stringify(response.jsonObject.Workbook)
+                );
+                formData.append('fileName', 'Sample');
+                formData.append('saveType', 'Xlsx');
+                formData.append('pdfLayoutSettings', JSON.stringify({ fitSheetOnOnePage: false, orientation: 'Portrait' })),
+                    fetch(
+                        'https://services.syncfusion.com/aspnet/production/api/spreadsheet/save',
+                        {
+                            method: 'POST',
+                            body: formData,
+                        }
+                    ).then((response) => {
+                        response.blob().then((data) => {
+                            var anchor = ej.base.createElement('a', {
+                                attrs: { download: 'Sample.xlsx' },
+                            });
+                            var url = URL.createObjectURL(data);
+                            anchor.href = url;
+                            document.body.appendChild(anchor);
+                            anchor.click();
+                            URL.revokeObjectURL(url);
+                            document.body.removeChild(anchor);
+                        });
+                    });
             });
-        });
+        };
     }
 </script>
