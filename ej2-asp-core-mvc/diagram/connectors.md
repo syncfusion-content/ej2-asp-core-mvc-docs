@@ -833,3 +833,6 @@ The connectors [`zIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 * [How to add connectors to the symbol palette](./symbol-palette)
 * [How to perform the interaction on the connector](./interaction)
 * [How to create diagram connectors using drawing tools](./tools#tools)
+
+
+
