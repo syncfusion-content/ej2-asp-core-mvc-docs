@@ -5,7 +5,7 @@
     .Height("550px")
     .Readonly(true)
     .EventSettings(e => 
-        e.DataSource(d => d.Url("https://ej2services.syncfusion.com/development/web-services/odata/")
+        e.DataSource(d => d.Url("https://services.syncfusion.com/aspnet/production/odata/")
             .Adaptor("ODataV4Adaptor")
             .CrossDomain(true)
         )
