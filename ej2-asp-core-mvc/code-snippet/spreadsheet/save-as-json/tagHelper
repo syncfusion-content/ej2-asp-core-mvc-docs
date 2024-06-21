@@ -13,7 +13,7 @@
     <input type="checkbox" id="note"><label for="note">Ignore Note</label>
     <button id="save">Save with JSON Serialization</button>
 </div>
-<ejs-spreadsheet id="spreadsheet" openUrl="Open" allowOpen="true"> </ejs-spreadsheet>
+<ejs-spreadsheet id="spreadsheet" openUrl="Home/Open" allowOpen="true"> </ejs-spreadsheet>
 
 <style>
     #Saveasjson {
