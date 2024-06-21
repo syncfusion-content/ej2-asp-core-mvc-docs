@@ -11,8 +11,8 @@ public void Save(SaveSettings saveSettings)
 }
 
 public IActionResult Index()
-        {
-            List<object> defaultData = new List<object>()
+{
+    List<object> defaultData = new List<object>()
             {
                 new { Item Name= "Casual Shoes", Date= "02/14/2014", Time= "11:34:32 AM", Quantity= "10", Price= "20", Amount= "200", Discount= "1", Profit= "10" },
                 new { Item Name= "Sports Shoes", Date= "06/11/2014", Time= "05:56:32 AM", Quantity= "20", Price= "30", Amount= "600", Discount= "5", Profit= "50" },
@@ -25,7 +25,7 @@ public IActionResult Index()
                 new { Item Name= "Cricket Shoes", Date= "07/09/2014", Time= "11:32:14 AM", Quantity= "41", Price= "30", Amount= "1210", Discount= "12", Profit= "166" },
                 new { Item Name= "T-Shirts", Date= "10/31/2014", Time= "12:01:44 AM", Quantity= "50", Price= "10", Amount= "500", Discount= "9", Profit= "55" }
             };
-            ViewBag.DefaultData = defaultData;
-            return View();
+    ViewBag.DefaultData = data;
+    return View();
 
-        }
+}
