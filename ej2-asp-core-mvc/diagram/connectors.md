@@ -32,7 +32,7 @@ The [`sourcePoint`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+
 
 {% tabs %}
 {% highlight c# tabtitle="Default.cs" %}
