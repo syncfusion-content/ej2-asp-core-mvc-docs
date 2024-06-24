@@ -27,9 +27,9 @@ The following table shows built-in toolbar items and its actions:-
 | UndoRedoTool | This tool provides options to undo and redo the annotation actions performed in the PDF Viewer.|
 | AnnotationEditTool | This tool provides options to enable or disable the edit mode of annotation in the PDF Viewer.|
 
-## Show/Hide the default toolbar
+## Show/Hide the built-in toolbar
 
-The PDF Viewer has an option to show or hide the complete default toolbar. You can achieve this by using the following two ways.,
+The PDF Viewer has an option to show or hide the complete built-in toolbar. You can achieve this by using the following two ways.,
 
 * **Show/Hide toolbar using enableToolbar API as in the following code snippet.**
 
@@ -62,9 +62,9 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 </script>
 ```
 
-## Show/Hide the default toolbaritem
+## Show/Hide the built-in toolbaritem
 
-The PDF Viewer has an option to show or hide these grouped items in the default toolbar.
+The PDF Viewer has an option to show or hide these grouped items in the built-in toolbar.
 
 * **Show/Hide toolbaritem using toolbarSettings as in the following code snippet.**
 
@@ -276,7 +276,7 @@ N> When customizing toolbar items, you have the flexibility to include either ic
 
 ## Custom Toolbar
 
-The PDF Viewer provides API for user interactions options provided in it's built-in toolbar. Using this we can create our own User Interface for toolbar actions in application level by hiding the default toolbar. The following steps are used to create the custom toolbar for PDF Viewer,
+The PDF Viewer provides API for user interactions options provided in it's built-in toolbar. Using this we can create our own User Interface for toolbar actions in application level by hiding the built-in toolbar. The following steps are used to create the custom toolbar for PDF Viewer,
 
 **Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/aspnetmvc/documentation/pdfviewer/getting-started/) to create simple PDF Viewer sample.
 
@@ -297,7 +297,7 @@ new ToolbarItem { Type = ItemType.Button,  PrefixIcon = "e-pv-download-document-
 <input type ="file" id="fileUpload" accept=".pdf" style="display:block;visibility:hidden;width:0;height:0;">
 ```
 
-**Step 3:** Hide the default toolbar of PDF Viewer using below code snippet,
+**Step 3:** Hide the built-in toolbar of PDF Viewer using below code snippet,
 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
