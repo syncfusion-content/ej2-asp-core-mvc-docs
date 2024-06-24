@@ -27,7 +27,7 @@ The following table shows built-in toolbar items and its actions:-
 | UndoRedoTool | This tool provides options to undo and redo the annotation actions performed in the PDF Viewer.|
 | AnnotationEditTool | This tool provides options to enable or disable the edit mode of annotation in the PDF Viewer.|
 
-### Show/Hide the default toolbar
+## Show/Hide the default toolbar
 
 The PDF Viewer has an option to show or hide the complete default toolbar. You can achieve this by using following two ways.,
 
@@ -101,7 +101,7 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 {% endhighlight %}
 {% endtabs %}
 
-### Show/Hide the default toolbaritem
+## Show/Hide the default toolbaritem
 
 The PDF Viewer has an option to show or hide these grouped items in the default toolbar.
 
