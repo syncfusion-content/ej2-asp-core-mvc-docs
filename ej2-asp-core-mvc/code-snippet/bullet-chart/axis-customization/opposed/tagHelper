@@ -1,7 +1,14 @@
+@{
+    List<OpposedPositionData> bulletData = new List<OpposedPositionData>
+    {
+        new OpposedPositionData { value = 1500, target = 1300}
+    };
+}
+
 <ejs-bulletchart id="bulletgraph" opposedPosition="true" minimum="0" maximum="30" interval="5" valueField="value" targetField="target" dataSource="ViewBag.dataSource">
-        <e-bullet-range-collection>
-            <e-bullet-range end="20"></e-bullet-range>
-            <e-bullet-range end="25"></e-bullet-range>
-            <e-bullet-range end="30"></e-bullet-range>
-        </e-bullet-range-collection>
+    <e-bullet-range-collection>
+        <e-bullet-range end="20"></e-bullet-range>
+        <e-bullet-range end="25"></e-bullet-range>
+        <e-bullet-range end="30"></e-bullet-range>
+    </e-bullet-range-collection>
 </ejs-bulletchart>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Bullet Chart Component
+title: Data Binding in ##Platform_Name## Bullet Chart Component | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Working with data
+# Working with data in Bullet Chart Control
 
 Bullet Chart can visualise data bound from local or remote data.
 
@@ -23,8 +23,14 @@ You can bind a simple JSON data to the chart using [`DataSource`](https://help.s
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/working-with-data/working-with-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Working-with-data.cs" %}
-{% include code-snippet/bullet-chart/working-with-data/working-with-data/working-with-data.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class LocalBulletData
+{
+    public double value;
+    public double comparativeMeasureValue;
+    public string category;
+}
 {% endhighlight %}
 {% endtabs %}
 
