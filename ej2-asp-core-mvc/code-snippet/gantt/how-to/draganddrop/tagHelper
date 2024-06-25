@@ -12,6 +12,7 @@
 </ejs-treeview>
 <script>
     function nodeDragStop(args) {
+        args.cancel = true;
         var ganttChart = document.getElementById('Gantt').ej2_instances[0];
         var chartEle = ej.base.closest(args.target, '.e-chart-row');
         var gridEle = ej.base.closest(args.target, '.e-row');
@@ -20,8 +21,8 @@
             ganttChart.selectRow(index);
         }
         if(chartEle){
-            var index = chartEle.ariaRowIndex;
-           ganttChart.selectRow(Number(index));
+            var index = chartEle.rowIndex;
+            ganttChart.selectRow(index);
         }
         var record = args.draggedNodeData;
         var selectedData = ganttChart.flatData[ganttChart.selectedRowIndex];
@@ -39,10 +40,6 @@
                 Resources: resources
             };
             ganttChart.updateRecordByID(data);
-            var elements = document.querySelectorAll('.e-drag-item');
-            while (elements.length > 0 && elements[0].parentNode) {
-                elements[0].parentNode.removeChild(elements[0]);
-            }
         }
     }
 </script>
