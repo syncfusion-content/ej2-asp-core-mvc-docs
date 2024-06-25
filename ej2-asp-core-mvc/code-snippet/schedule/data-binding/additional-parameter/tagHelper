@@ -3,7 +3,7 @@
 
 @{
     var dataManager = new DataManager() {
-        Url = "https://ej2services.syncfusion.com/development/web-services/odata/",
+        Url = "https://services.syncfusion.com/aspnet/production/odata/",
         Adaptor = "ODataV4Adaptor",
         CrossDomain = true
     };
