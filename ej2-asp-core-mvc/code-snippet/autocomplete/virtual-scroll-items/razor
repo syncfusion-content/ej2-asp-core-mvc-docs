@@ -1,0 +1,7 @@
+@Html.EJS().AutoComplete("records").Placeholder("Select a item").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).EnableVirtualization(true).Fields(new Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings { Value = "Text" }).ActionBegin("onbegin").Query("new ej.data.Query().take(40)").Render()
+
+<script>
+    function onbegin(e) {
+         e.query = new ej.data.Query().take(45);
+    }
+</script>

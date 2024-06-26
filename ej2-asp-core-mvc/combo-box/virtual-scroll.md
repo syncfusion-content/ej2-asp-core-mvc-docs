@@ -73,6 +73,35 @@ The following sample displays the OrderId from the `Orders` Data Service.
 {% endtabs %}
 {% endif %}
 
+## Customizing items count in virtualization 
+
+When the `enableVirtualization` property is enabled, the `take` property provided by the user within the Query parameter at the initial state or during the `actionBegin` event will be considered. Internally, it calculates the items that fit onto the current page (i.e., probably twice the amount of the popup's height). If the user-provided take value is less than the minimum number of items that fit into the popup, the user-provided take value will not be considered.
+
+The following sample shows the example for Customizing items count in virtualization.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/combobox/virtual-scroll-items/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/combobox/virtual-scroll-items/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %} 
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/combobox/virtual-scroll-items/razor %}
+{% endhighlight %} 
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/combobox/virtual-scroll-items/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Grouping
 
 The Combobox component supports grouping with Virtualization. It allows you to organize elements into groups based on different categories. Each item in the list can be classified using the [groupBy](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBoxFieldSettings~GroupBy.html) field in the data table. After grouping, virtualization works similarly to local data binding, providing a seamless user experience. When the data source is bound to remote data, an initial request is made to retrieve all data for the purpose of grouping. Subsequently, the grouped data works in the same way as local data binding virtualization, enhancing performance and responsiveness.
