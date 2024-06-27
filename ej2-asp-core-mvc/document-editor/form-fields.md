@@ -126,3 +126,139 @@ Document editor provides an option to protect and unprotect document using `enfo
 {% endif %}
 
 N> In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.
+
+## Form Field Settings
+
+Document editor provides options to customize the form field settings using [`formFieldSettings`](../../api/document-editor/documentEditorSettingsModel/#formFieldSettings) in Document editor settings.This functionality allows users to customize various aspects of form fields. These include customizing shading colors, applying these custom colors to form fields, adjusting the color used for selecting form fields, defining the form filling mode, and specifying formatting exceptions for form fields"
+
+### Shading color
+
+By default, the shading color [`shadingColor`](../../api/document-editor/documentEditorSettingsModel/formFieldSettings/#shadingcolor) for form fields is '#cfcfcf'. To change it, simply specify a different hexadecimal color value in the shading color property of formFieldSettings.
+
+The following example code illustrates how to customize the shading color property of formFieldSettings in Document editor container.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/form-field-settings/shading-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="form-field-settings.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/form-field-settings/shading-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="form-field-settings.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
+>Note: You can customize shading color in application level, but cannot be exported in file level
+
+### Apply shading
+
+By default, the apply shading [`applyshading`](../../api/document-editor/documentEditorSettingsModel/formFieldSettings/#applyshading) for form fields is true. To toggle the default shading for form fields, simply switch between true and false.
+
+The following example code illustrates how to customize the apply shading property of form field settings in Document editor container.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/form-field-settings/apply-shading/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="form-field-settings.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/form-field-settings/apply-shading/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="form-field-settings.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
+
+### Selection color
+
+By default, the selection color [`selectioncolor`](../../api/document-editor/documentEditorSettingsModel/formFieldSettings/#selectioncolor) for form fields is '#cccccc'. To change it, simply specify a different hexadecimal color value in the shadingColor property of form field settings.
+
+The following example code illustrates how to customize the selection color property of form field settings in Document editor container.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/form-field-settings/selection-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="form-field-settings.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/form-field-settings/selection-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="form-field-settings.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
+### Form filling mode 
+
+The default form filling mode [`formfillingmode`](../../api/document-editor/documentEditorSettingsModel/formFieldSettings/#formfillingmode) for form fields is 'Popup'. To change this default behavior, switch between 'Inline' and 'Popup' as needed.
+
+The following example code illustrates how to customize the form filling mode property of form field settings in Document editor container.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/form-field-settings/form-filling-mode/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="form-field-settings.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/form-field-settings/form-filling-mode/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="form-field-settings.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
+### Formatting exceptions
+
+The default formatting exceptions [`formattingexceptions`](../../api/document-editor/documentEditorSettingsModel/formFieldSettings/#formattingexceptions) for form fields are an empty array, indicating no exceptions. To modify this default behavior, specify the desired formatting exceptions in the array assigned to the formattingExceptions property, utilizing the provided list of acceptable values.
+
+The customizable options for formatting exceptions in form fields include: 'Bold', 'Italic', 'FontSize', 'FontFamily', 'HighlightColor', 'BaselineAlignment', 'Strikethrough', 'Underline', 'FontColor', 'TextAlignment', 'LeftIndent', 'RightIndent', 'LineSpacing', 'LineSpacingType', 'FirstLineIndent', 'AfterSpacing', 'BeforeSpacing', 'ContextualSpacing', and 'ListFormat'.
+
+The following example code illustrates how to customize the formatting exceptions property of form field settings in Document editor container.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/form-field-settings/formatting-exceptions/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="form-field-settings.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/form-field-settings/formatting-exceptions/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="form-field-settings.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
+>Note: You can customize formatting exceptions in application level, but cannot be exported in file level
