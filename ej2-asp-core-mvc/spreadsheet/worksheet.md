@@ -46,7 +46,7 @@ The following code example shows the insert sheet operation in spreadsheet.
 {% endtabs %}
 {% endif %}
 
-## Insert a sheet programmatically and make it the active sheet
+### Insert a sheet programmatically and make it the active sheet
 
 A sheet is a collection of cells organized in the form of rows and columns that allows you to store, format, and manipulate the data. Using `insertSheet` method, you can insert one or more sheets at the desired index. Then, you can make the inserted sheet as active sheet by focusing the start cell of that sheet using the `goTo` method.
 
@@ -88,34 +88,6 @@ The Spreadsheet has support for removing an existing worksheet. You can dynamica
 You can dynamically rename an existing worksheet in the following way,
 
 * Right-click on the sheet tab, and then select `Rename` option from the context menu.
-
-## Print Sheet
-
-You can use the `print` method by importing from ej2-base package. Here, the `Select` event in the dropdown and the `dataBound` event are used to print the single/multiple sheets of data. To print the single/multiple sheets, use the dropdown button and select the `Print` (or) `Print All` option. In the following sample, you can be able to print the single/multiple sheets.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/spreadsheet/print/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="PrintController.cs" %}
-{% include code-snippet/spreadsheet/print/printController.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/spreadsheet/print/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="PrintController.cs" %}
-{% include code-snippet/spreadsheet/print/printController.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ## Headers
 

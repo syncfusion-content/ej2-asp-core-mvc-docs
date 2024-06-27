@@ -160,7 +160,7 @@ N> * The `sortComparer` is an optional property of `sortDescriptor`.
 
 For custom sort comparer example, refer to the [`Sort a range by custom list`] below section.
 
-## Sort a range by custom list
+### Sort a range by custom list
 
 You can also define the sorting of cell values based on your own customized personal list. In this article, custom list is achieved using `custom sort comparer`.
 
