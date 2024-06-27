@@ -218,6 +218,35 @@ The following code snippet demonstrates how to configure the deserialization opt
 {% endtabs %}
 {% endif %}
 
+### To Open Spreadsheet data as a Base64 string
+
+In the Syncfusion Spreadsheet component, there is no direct option to open data as a `Base64` string. To achieve this, the `import()` function fetches the `Base64` string, converts it to a Blob, creates a File object from the Blob, and then opens it using the `open` method in the spreadsheet.
+
+The following code example shows how to open the spreadsheet data as base64 string.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/base-64-string/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/base-64-string/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### External workbook confirmation dialog
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
@@ -432,6 +461,37 @@ The following code snippet demonstrates how to configure the serialization optio
 {% endtabs %}
 {% endif %}
 
+### To Save Spreadsheet data as a Base64 string
+
+In the Spreadsheet control, there is currently no direct option to save and open data as a `Base64` string. You can achieve this by saving the Spreadsheet data as blob data and then converting that saved blob data to a `Base64` string using `FileReader`. 
+
+> You can get the Spreadsheet data as blob in the [saveComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SaveComplete) event when you set the  `needBlobData` as **true** and `isFullPost` as **false** in the [beforeSave](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_BeforeSave) event.
+
+The following code example shows how to save the spreadsheet data as base64 string.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/base-64-string/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/base-64-string/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Supported file formats
 
 The following list of Excel file formats are supported in Spreadsheet:
@@ -490,36 +550,6 @@ Open and save helper functions are shipped in the Syncfusion.EJ2.Spreadsheet pac
 | ASP.NET MVC4 | Syncfusion.EJ2.MVC4 <br/>Syncfusion.EJ2.Spreadsheet.AspNet.MVC4 <br/> Syncfusion.Compression.Base <br/> Syncfusion.XlsIO.AspNet.Mvc4 <br/> Syncfusion.ExcelToPdfConverter.AspNet.Mvc4 <br/> | [Syncfusion.EJ2.Spreadsheet.AspNet.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.Spreadsheet.AspNet.MVC4) <br/> [Syncfusion.ExcelToPdfConverter.AspNet.Mvc4](https://www.nuget.org/packages/Syncfusion.ExcelToPdfConverter.AspNet.Mvc4) |
 | ASP.NET MVC5 | Syncfusion.EJ2.MVC5 <br/>Syncfusion.EJ2.Spreadsheet.AspNet.MVC5 <br/> Syncfusion.Compression.Base <br/> Syncfusion.XlsIO.AspNet.Mvc5 <br/> Syncfusion.ExcelToPdfConverter.AspNet.Mvc5 <br/> | [Syncfusion.EJ2.Spreadsheet.AspNet.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.Spreadsheet.AspNet.MVC5) <br/> [Syncfusion.ExcelToPdfConverter.AspNet.Mvc5](https://www.nuget.org/packages/Syncfusion.ExcelToPdfConverter.AspNet.Mvc5) |
 
-## Save and Open data as a Base64 string
-
-In the Spreadsheet control, there is currently no direct option to save and open data as a `Base64` string. You can achieve this by saving the Spreadsheet data as blob data and then converting that saved blob data to a `Base64` string using `FileReader`. 
-
-> You can get the Spreadsheet data as blob in the [saveComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SaveComplete) event when you set the  `needBlobData` as **true** and `isFullPost` as **false** in the [beforeSave](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_BeforeSave) event.
-
-The following code example shows how to save and open the spreadsheet data as base64 string.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/spreadsheet/base-64-string/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/spreadsheet/base-64-string/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## See Also
 
