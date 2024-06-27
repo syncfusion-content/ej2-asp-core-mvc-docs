@@ -169,6 +169,55 @@ The following code example shows how to import an excel document using file uplo
 {% endtabs %}
 {% endif %}
 
+### Configure JSON deserialization options
+
+Previously, when opening a workbook JSON object into the Spreadsheet using the `openFromJson` method, the entire workbook, including all features specified in the JSON object, was processed and loaded into the Spreadsheet. 
+
+Now, you have the option to selectively ignore some features during the opening of the JSON object by configuring deserialization options and passing them as arguments to the `openFromJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be loaded without ignoring any features.
+
+```ts
+spreadsheet.openFromJson({ file: file }, { ignoreStyle: true });
+```
+
+| Options | Description |
+| ----- | ----- |
+| onlyValues |  If **true**, only the cell values will be loaded. |
+| ignoreStyle | If **true**, styles will be excluded when loading the JSON data. |
+| ignoreFormula | If **true**, formulas will be excluded when loading the JSON data. |
+| ignoreFormat | If **true**, number formats will be excluded when loading the JSON data. |
+| ignoreConditionalFormat | If **true**, conditional formatting will be excluded when loading the JSON data. |
+| ignoreValidation | If **true**, data validation rules will be excluded when loading the JSON data. |
+| ignoreFreezePane | If **true**, freeze panes will be excluded when loading the JSON data. |
+| ignoreWrap | If **true**, text wrapping settings will be excluded when loading the JSON data. |
+| ignoreChart | If **true**, charts will be excluded when loading the JSON data. |
+| ignoreImage | If **true**, images will be excluded when loading the JSON data. |
+| ignoreNote | If **true**, notes will be excluded when loading the JSON data. |
+
+The following code snippet demonstrates how to configure the deserialization options and pass them as arguments to the openFromJson method:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-from-json/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/open-from-json/openController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-from-json/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/open-from-json/openController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### External workbook confirmation dialog
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
@@ -330,6 +379,55 @@ The possible values are:
 {% endhighlight %}
 {% highlight c# tabtitle="pdfOrientationController.cs" %}
 {% include code-snippet/spreadsheet/pdf-orientation/pdfOrientationController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Configure JSON serialization options
+
+Previously, when saving the Spreadsheet as a workbook JSON object using the `saveAsJson` method, the entire workbook with all loaded features were processed and saved as a JSON object. 
+
+Now, you have the option to selectively ignore some features while saving the Spreadsheet as a JSON object by configuring serialization options and passing them as arguments to the `saveAsJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be saved without ignoring any features.
+
+```ts
+spreadsheet.saveAsJson({ onlyValues: true });
+```
+
+| Options | Description |
+| ----- | ----- |
+| onlyValues |  If **true**, includes only the cell values in the JSON output. |
+| ignoreStyle | If **true**, excludes styles from the JSON output. |
+| ignoreFormula | If **true**, excludes formulas from the JSON output. |
+| ignoreFormat | If **true**, excludes number formats from the JSON output. |
+| ignoreConditionalFormat | If **true**, excludes conditional formatting from the JSON output. |
+| ignoreValidation | If **true**, excludes data validation rules from the JSON output. |
+| ignoreFreezePane | If **true**, excludes freeze panes from the JSON output. |
+| ignoreWrap | If **true**, excludes text wrapping settings from the JSON output. |
+| ignoreChart | If **true**, excludes charts from the JSON output. |
+| ignoreImage | If **true**, excludes images from the JSON output. |
+| ignoreNote | If **true**, excludes notes from the JSON output. |
+
+The following code snippet demonstrates how to configure the serialization options and pass them as arguments to the saveAsJson method:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-as-json/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveController.cs" %}
+{% include code-snippet/spreadsheet/save-as-json/saveController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-as-json/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveController.cs" %}
+{% include code-snippet/spreadsheet/save-as-json/saveController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

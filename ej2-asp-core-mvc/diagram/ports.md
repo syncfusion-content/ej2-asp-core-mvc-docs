@@ -237,3 +237,36 @@ The offset property of port is used to align the port based on fractions. 0 repr
 ## Constraints
 
 The constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [`Port Constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.PortConstraints.html).
+
+## Specify connection direction to port
+
+The [connectionDirection] property of a port allows users to specify the direction in which a connector should establish a connection. This can be either to the port (incoming) or from the port (outgoing).
+
+```javascript
+
+
+var port= [{
+        id: 'port1',
+        offset: {
+            x: 0,
+            y: 0.5
+        },
+        //specify the connectionDirection of the Port
+        connectionDirection:'Right'
+    } {
+        id: 'port2',
+        offset: {
+            x: 1,
+            y: 0.5
+        },
+        //specify the connectionDirection of the Port
+        connectionDirection:'Left'
+    },
+   
+];
+
+
+```
+
+
+![maxSegmentThumb](images\connectionDirection.png)

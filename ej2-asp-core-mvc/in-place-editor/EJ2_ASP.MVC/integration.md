@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration in ##Platform_Name## In Place Editor Component
+title: Integration in ##Platform_Name## In Place Editor Component | Syncfusion
 description: Learn here all about Integration in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integration
@@ -60,4 +60,4 @@ Template mode, the [`Value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 The output will be as follows.
 
-![html-template](./images/html-template.PNG)
+![html-template](./images/html-template.png)

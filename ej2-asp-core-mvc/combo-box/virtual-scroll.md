@@ -49,7 +49,7 @@ In the following example, `id` column and `text` column from complex data have b
 
 ## Binding remote data
 
-The Combobox supports retrieval of data from remote data services with the help of `DataManager` component. When using remote data, it initially fetches all the data from the server, triggering the `actionBegin` and `actionComplete` events, and then stores the data locally. During virtual scrolling, additional data is retrieved from the locally stored data, triggering the `actionBegin` and `actionComplete` events at that time as well.
+The Combobox supports the retrieval of data from remote data services with the help of the `DataManager` component, triggering the `actionBegin` and `actionComplete` events, and then updating the list data. During virtual scrolling, additional data is retrieved from the server, triggering the `actionBegin` and `actionComplete` events at that time as well.
 
 The following sample displays the OrderId from the `Orders` Data Service.
 
@@ -69,6 +69,35 @@ The following sample displays the OrderId from the `Orders` Data Service.
 {% endhighlight %}
 {% highlight c# tabtitle="virtualscroll.cs" %}
 {% include code-snippet/combobox/virtual-scroll-remote/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Customizing items count in virtualization 
+
+When the `enableVirtualization` property is enabled, the `take` property provided by the user within the Query parameter at the initial state or during the `actionBegin` event will be considered. Internally, it calculates the items that fit onto the current page (i.e., probably twice the amount of the popup's height). If the user-provided take value is less than the minimum number of items that fit into the popup, the user-provided take value will not be considered.
+
+The following sample shows the example for Customizing items count in virtualization.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/combobox/virtual-scroll-items/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/combobox/virtual-scroll-items/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %} 
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/combobox/virtual-scroll-items/razor %}
+{% endhighlight %} 
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/combobox/virtual-scroll-items/virtualscroll.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

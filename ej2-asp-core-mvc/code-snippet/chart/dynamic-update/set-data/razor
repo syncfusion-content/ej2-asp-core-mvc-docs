@@ -1,0 +1,45 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+        XName("x").
+        YName("y").
+        ColumnWidth(0.5).
+        CornerRadius(cr => cr.TopLeft(15).TopRight(15)).
+        DataSource(ViewBag.dataSource).
+        Add();
+   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).MajorGridLines(mg => mg.Width(0)).LabelStyle(ls => ls.Size("12px")).LabelIntersectAction(Syncfusion.EJ2.Charts.LabelIntersectAction.Rotate90)
+   ).PrimaryYAxis(py => py.Title("Sales (in percentage)").Minimum(0).Maximum(100).Interval(5).LabelFormat("{value}%").LineStyle(ls => ls.Width(0)).MajorTickLines(mt => mt.Width(0))
+   ).Title("Sales by product").ChartArea(area => area.Border(br => br.Width(0))).AxisRangeCalculated("axisRangeCalculated").Render()
+
+<div>      
+  @Html.EJS().Button("update").IsPrimary(true).Content("Update Data").Render()       
+</div>
+<script>
+    function axisRangeCalculated(args) {
+        if (args.axis.name === 'primaryYAxis') {
+            args.maximum = args.maximum > 100 ? 100 : args.maximum;
+            if (args.maximum > 80) {
+                args.interval = 20;
+            }
+            else if (args.maximum > 40) {
+                args.interval = 10;
+            }
+        }
+    }
+
+    document.getElementById('update').onclick = () => {
+        var chart = document.getElementById('container').ej2_instances[0];
+        var newData = chart.series[0].dataSource.map(function (item) {
+            var value = getRandomInt(10, 90);
+            return { x: item.x, y: value };
+        });
+        if (chart.series.length > 0) {
+            chart.series[0].setData(newData, 500);
+        }
+    }
+
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+</script>
+    

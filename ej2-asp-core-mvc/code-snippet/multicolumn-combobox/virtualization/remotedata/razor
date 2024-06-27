@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div id="container" style="width: 500px">
+    @Html.EJS().MultiColumnComboBox("remoteVirtualization").Placeholder("Select a country").DataSource(obj => obj.Url("https://services.syncfusion.com/js/production/api/Orders").Adaptor(
+    "WebApiAdaptor").CrossDomain(true)).Fields(new MultiColumnComboBoxFieldSettings { Text = "ShipCountry", Value = "CustomerID" }).Columns(col =>
+    {
+        col.Field("OrderID").Header("Order ID").Width("120").Add();
+        col.Field("CustomerID").Header("Customer ID").Width("130").Add();
+        col.Field("ShipCountry").Header("Ship Country").Width("120").Add();
+    }).PopupHeight("230px").GridSettings(new MultiColumnComboBoxGridSettings { RowHeight = 40 }).EnableVirtualization(true).Render()
+</div>

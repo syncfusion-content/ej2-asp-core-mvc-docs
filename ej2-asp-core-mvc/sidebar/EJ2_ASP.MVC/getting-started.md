@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET MVC Sidebar control in `~/Views/Home/Index.cshtm
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Sidebar control will be rendered in the default web browser.
 
-![ASP.NET MVC Sidebar Control](images/getting_Started.png)
+![ASP.NET MVC Sidebar Control](images/getting_started.png)
 
 ## Enable backdrop
 
