@@ -19,7 +19,13 @@ Using [`centerLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% include code-snippet/chart/accumulation-charts/chart-print/centerlabel/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Centerlabel.cs" %}
-{% include code-snippet/chart/accumulation-charts/chart-print/centerlabel/centerlabel.cs %}
+...
+public class PieChartData
+{
+    public string x;
+    public double y;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,8 +37,14 @@ The default text in the center label can be changed when the mouse pointer hover
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/chart-print/hovertext/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Hovertext.cs" %}
-{% include code-snippet/chart/accumulation-charts/chart-print/hovertext/hovertext.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string x;
+    public double y;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,8 +56,14 @@ Customize the center label text using the [`textStyle`](https://help.syncfusion.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/chart-print/customization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Customization.cs" %}
-{% include code-snippet/chart/accumulation-charts/chart-print/customization/customization.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string x;
+    public double y;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 

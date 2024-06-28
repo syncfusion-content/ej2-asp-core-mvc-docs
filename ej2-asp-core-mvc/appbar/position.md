@@ -26,9 +26,6 @@ The top AppBar is the default one in which it positions the AppBar at the top of
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/position/top/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Top.cs" %}
-{% include code-snippet/appbar/position/top/top.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -55,9 +52,6 @@ This position can be set to the AppBar by setting `Bottom` to the position prope
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/position/bottom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Bottom.cs" %}
-{% include code-snippet/appbar/position/bottom/bottom.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -83,9 +77,6 @@ This position can be set to the AppBar by setting `true` to the sticky property.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/position/sticky/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Sticky.cs" %}
-{% include code-snippet/appbar/position/sticky/sticky.cs %}
 {% endhighlight %}
 {% endtabs %}
 
