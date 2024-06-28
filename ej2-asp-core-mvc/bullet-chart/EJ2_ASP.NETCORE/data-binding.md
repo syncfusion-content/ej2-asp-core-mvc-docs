@@ -11,7 +11,7 @@ documentation: ug
 
 # Working with data in Bullet Chart Control
 
-Bullet Chart can visualise data bound from local or remote data.
+Bullet Chart can visualize data bound from local or remote data.
 
 ## Local data
 
