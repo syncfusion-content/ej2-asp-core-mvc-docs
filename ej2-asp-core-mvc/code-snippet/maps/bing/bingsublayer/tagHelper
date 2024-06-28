@@ -3,7 +3,7 @@
     <e-maps-layers>
         <e-maps-layer>
         </e-maps-layer>
-        <e-maps-layer layerType="Geometry" type="SubLayer" shapeData="ViewBag.africa">
+        <e-maps-layer type="SubLayer" shapeData="ViewBag.africa">
             <e-layersettings-shapesettings fill="blue"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>

@@ -12,7 +12,7 @@
       {
           Enable = true,
           ShouldZoomInitially = true,
-          HorizontalAlignment = Alignment.Near
+          ToolbarSettings = new {horizontalAlignment = "Near"}
       }).Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
          {
                     new Syncfusion.EJ2.Maps.MapsLayer

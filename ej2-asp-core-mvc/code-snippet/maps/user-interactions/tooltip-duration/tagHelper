@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var tooltip = new Syncfusion.EJ2.Maps.MapsTooltipSettings
+    {
+        Visible = true,
+        ValuePath = "name",
+        Fill = "#D0D0D0",
+        TextStyle = new MapsFont
+        {
+            Color = "green",
+            FontFamily = "Times New Roman",
+            FontStyle = "Sans-serif"
+        },
+        Duration = 3000
+    };
+}
+<div id="control-section">
+    <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.worldMap" tooltipSettings="tooltip">
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

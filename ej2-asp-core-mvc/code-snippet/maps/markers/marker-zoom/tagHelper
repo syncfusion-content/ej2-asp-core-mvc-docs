@@ -9,13 +9,14 @@
     {
         new MapsMarker{Visible=true, DataSource=data}
     };
+    var toolbarSettings = new { horizontalAlignment = "Near"};
     }
 
 @using Syncfusion.EJ2.Maps;
 @using Syncfusion.EJ2;
 <div id="control-section">
     <ejs-maps id="maps">
-    <e-maps-zoomsettings enable="true" shouldZoomInitially="true" horizontalAlignment="Near"></e-maps-zoomsettings>
+    <e-maps-zoomsettings enable="true" shouldZoomInitially="true" toolbarSettings="toolbarSettings"></e-maps-zoomsettings>
         <e-maps-layers>
             <e-maps-layer shapeData="ViewBag.worldmap" markerSettings="marker"></e-maps-layer>
         </e-maps-layers>
