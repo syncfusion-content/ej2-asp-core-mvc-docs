@@ -241,7 +241,7 @@ This article describes the API migration process of Maps component from Essentia
 | Enable Pan | **Property:** *enablePan*<br/><br/> `@(Html.EJ().Map("container").EnablePan(true)`| Not Applicable |
 | Enable Navigation | **Property:** *navigationControl.enableNavigation*<br/><br/>  `@(Html.EJ().Map("container").NavigationControl(new{ enableNavigation=true })`| Not Applicable |
 | Navigation Orientation | **Property:** *navigationControl.orientation*<br/><br/> `@(Html.EJ().Map("container").NavigationControl(new{ orientation='vertical' })`| Not Applicable |
-| Navigation Dock Position | **Property:** *navigationControl.dockPosition*<br/><br/>`@(Html.EJ().Map("container").NavigationControl(new{ dockPosition='centerleft' })`| Not Applicable |
+| Navigation Dock Position | **Property:** *navigationControl.dockPosition*<br/><br/>`@(Html.EJ().Map("container").NavigationControl(new{ dockPosition='centerLeft' })`| Not Applicable |
 | Navigation Absolute Position | **Property:** *navigationControl.absolutePosition*<br/><br/> `@(Html.EJ().Map("container").NavigationControl(new{ absolutePosition={ x: 100, y : 100 }  })`| Not Applicable |
 | Dragging Selection | **Property:** *draggingOnSelection*<br/><br/> `@(Html.EJ().Map("container").DraggingOnSelection(true)`| Not Applicable |
 | Resize | **Property:** *enableResize*<br/><br/>`@(Html.EJ().Map("container").EnableResize(true))`| Not Applicable |
