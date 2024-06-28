@@ -56,4 +56,4 @@ The disableItem method can be used to handle dynamic changing in disable state o
 
 If you want to disabled the overall component to set the [enabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Enabled) property to false.
 
-{% [Disabled MultiSelect Component](./images/multiselect-disable.png)" %}
+![Disabled MultiSelect Component](./images/multiselect-disable.png)

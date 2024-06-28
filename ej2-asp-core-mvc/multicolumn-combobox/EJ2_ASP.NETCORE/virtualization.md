@@ -33,9 +33,9 @@ The MultiColumn Combobox supports retrieval of data from remote data services wi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/multicolumn-combobox/sorting/remotedata/tagHelper %}
+{% include code-snippet/multicolumn-combobox/virtualization/remotedata/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RemoteData.cs" %}
-{% include code-snippet/multicolumn-combobox/sorting/remotedata/remotedata.cs %}
+{% include code-snippet/multicolumn-combobox/virtualization/remotedata/remotedata.cs %}
 {% endhighlight %}
 {% endtabs %}
