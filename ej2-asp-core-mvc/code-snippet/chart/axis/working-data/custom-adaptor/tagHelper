@@ -18,7 +18,7 @@
         }
     }
     var dataManager = new ej.data.DataManager({
-        url: 'https://services.syncfusion.com/js/production/api/orders',
+        url: 'https://services.syncfusion.com/aspnet/production/api/orders',
         adaptor: new SerialNoAdaptor()
     });
     var query = new ej.data.Query();
