@@ -106,9 +106,9 @@ Using [background](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-appearance/area-customization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Area-customization.cs" %}
+<!-- {% highlight c# tabtitle="Area-customization.cs" %}
 {% include code-snippet/circulargauge/gauge-appearance/area-customization/area-customization.cs %}
-{% endhighlight %}
+{% endhighlight %} -->
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -135,9 +135,9 @@ You can set margin for gauge from its container through [margin](https://help.sy
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-appearance/margin/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Margin.cs" %}
+<!-- {% highlight c# tabtitle="Margin.cs" %}
 {% include code-snippet/circulargauge/gauge-appearance/margin/margin.cs %}
-{% endhighlight %}
+{% endhighlight %} -->
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
