@@ -204,7 +204,6 @@ The following errors have been handled for sorting,
 
 ## See Also
 
-* [Sort a range by custom list](https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/how-to/sort-a-range-by-custom-list)
 * [Hyperlink](./link)
 * [Filtering](./filter)
 * [Undo Redo](./undo-redo)
