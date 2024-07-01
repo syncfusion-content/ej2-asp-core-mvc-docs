@@ -94,7 +94,7 @@ When you want to reapply the filter after some changes happened in the rows. It 
 The following errors have been handled for filtering,
 * *Out of range validation:* When the selected range is not a used range of the active sheet, it is considered as invalid and the out of range alert with the message `Select a cell or range inside the used range and try again` will be displayed. No filter will be performed if the range is invalid.
 
-## Get the filtered rows
+## Get data from filtered rows
 
 Filtering allows you to view specific rows in a spreadsheet while hiding the others. The [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowFiltering) property allows you to enable or disable filtering functionality through the UI. You can also use the [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowFiltering) property and `applyFilter` method combination to filter data via code behind. The filtered rows can be identified by iterating through the row collection on the sheet and using the `isFiltered` property available in each row object.
 
