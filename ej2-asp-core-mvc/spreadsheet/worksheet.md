@@ -46,7 +46,7 @@ The following code example shows the insert sheet operation in spreadsheet.
 {% endtabs %}
 {% endif %}
 
-### Insert a sheet programmatically and make it the active sheet
+### Insert a sheet programmatically and make it active sheet
 
 A sheet is a collection of cells organized in the form of rows and columns that allows you to store, format, and manipulate the data. Using `insertSheet` method, you can insert one or more sheets at the desired index. Then, you can make the inserted sheet as active sheet by focusing the start cell of that sheet using the `goTo` method.
 
