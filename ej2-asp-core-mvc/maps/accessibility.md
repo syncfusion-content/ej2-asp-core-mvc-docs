@@ -19,7 +19,7 @@ The accessibility compliance for the Maps component is outlined below.
 | [WCAG 2.2 Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | [Section 508 Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | [Screen Reader Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| [Right-To-Left Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> |
+| [Right-To-Left Support](../common/accessibility) | Not Applicable |
 | [Color Contrast](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | [Mobile Device Support](../common/accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | [Keyboard Navigation Support](../common/accessibility) |<img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |

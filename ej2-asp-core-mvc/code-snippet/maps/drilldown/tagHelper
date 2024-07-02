@@ -23,7 +23,7 @@
 <div id="map">
     <ejs-maps id="maps" shapeSelected="shapeSelected">
         <e-maps-layers>
-            <e-maps-layer shapeData="ViewBag.worldmap" layerType="Geometry" shapeDataPath="continent" shapePropertyPath='new[] { "continent" }' 
+            <e-maps-layer shapeData="ViewBag.worldmap" shapeDataPath="continent" shapePropertyPath='new[] { "continent" }' 
                           dataSource="data">
             <e-layersettings-shapesettings colorValuePath="drillColor"></e-layersettings-shapesettings>
                 <e-layersettings-markers>
@@ -32,7 +32,7 @@
                     </e-layersettings-marker>
                 </e-layersettings-markers>
             </e-maps-layer>
-            <e-maps-layer layerType="Geometry" shapeData="ViewBag.africa ">
+            <e-maps-layer shapeData="ViewBag.africa ">
                 <e-layersettings-shapesettings fill="#80306A"></e-layersettings-shapesettings>
             </e-maps-layer>
         </e-maps-layers>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pyramid in ##Platform_Name## Accumulation Chart Component
+title: Pyramid in ##Platform_Name## Accumulation Chart Component | Syncfusion
 description: Learn here all about Pyramid in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pyramid
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pyramid Chart
+# Pyramid Chart in ##Platform_Name## Accumulation Chart Component
 
 To render a pyramid series, use the series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Type) as `Pyramid`.
 
@@ -19,8 +19,13 @@ To render a pyramid series, use the series [`type`](https://help.syncfusion.com/
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pyramid/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chart/accumulation-charts/pyramid/default/default.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PyramidChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -48,8 +53,13 @@ The Pyramid chart supports linear and surface modes of rendering. The default ty
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pyramid/mode/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Mode.cs" %}
-{% include code-snippet/chart/accumulation-charts/pyramid/mode/mode.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PyramidChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,7 +69,7 @@ The Pyramid chart supports linear and surface modes of rendering. The default ty
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pyramid/mode/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Mode.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 {% include code-snippet/chart/accumulation-charts/pyramid/mode/mode.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -77,8 +87,13 @@ The size of the pyramid chart can be customized by using the `width` and `height
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pyramid/size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Size.cs" %}
-{% include code-snippet/chart/accumulation-charts/pyramid/size/size.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PyramidChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,8 +121,13 @@ Pyramid chart provides options to customize the space between the segments by us
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pyramid/gap/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Gap.cs" %}
-{% include code-snippet/chart/accumulation-charts/pyramid/gap/gap.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PyramidChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,8 +155,12 @@ Points can be exploded on mouse click by setting the `explode` property to true.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pyramid/explode/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Explode.cs" %}
-{% include code-snippet/chart/accumulation-charts/pyramid/explode/explode.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class PyramidChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -163,8 +187,12 @@ Individual points can be customized using the `pointRender` event.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pyramid/custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/chart/accumulation-charts/pyramid/custom/custom.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class PyramidChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title in ##Platform_Name## Bullet Chart Component
+title: Title in ##Platform_Name## Bullet Chart Component | Syncfusion
 description: Learn here all about Title in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Title
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Title and subtitle
+# Title and subtitle in Bullet Chart Control
 
 ## Title
 
@@ -21,8 +21,13 @@ The title of the Bullet Chart displays the information about the data plotted by
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/title/title/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/bullet-chart/title/title/title.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class DefaultBulletData
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,8 +57,13 @@ To show additional information about the data plotted, the Bullet Chart can also
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/title/sub-title/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Sub-title.cs" %}
-{% include code-snippet/bullet-chart/title/sub-title/sub-title.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class SubTitleData
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -87,8 +97,13 @@ By setting the `titlePosition` to **Left**, you can display the title and subtit
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/title/left/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Left.cs" %}
-{% include code-snippet/bullet-chart/title/left/left.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class Position
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -116,8 +131,13 @@ By setting the [`TitlePosition`](https://help.syncfusion.com/cr/aspnetcore-js2/S
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/title/right/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Right.cs" %}
-{% include code-snippet/bullet-chart/title/right/right.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class RightPositionData
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -145,8 +165,13 @@ By setting the [`TitlePosition`](https://help.syncfusion.com/cr/aspnetcore-js2/S
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/title/top/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Top.cs" %}
-{% include code-snippet/bullet-chart/title/top/top.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class TopPositionData
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -174,8 +199,13 @@ By setting the [`TitlePosition`](https://help.syncfusion.com/cr/aspnetcore-js2/S
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/title/bottom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Bottom.cs" %}
-{% include code-snippet/bullet-chart/title/bottom/bottom.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class BottomPositionData
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -205,8 +235,13 @@ The title color, opacity, font size, font family, font weight, and font style ca
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/title/title-custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title-custom.cs" %}
-{% include code-snippet/bullet-chart/title/title-custom/title-custom.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class Customization
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -234,8 +269,13 @@ The sub-title color, opacity, font size, font family, font weight, and font styl
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/title/sub-title-custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Sub-title-custom.cs" %}
-{% include code-snippet/bullet-chart/title/sub-title-custom/sub-title-custom.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class Custom
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 

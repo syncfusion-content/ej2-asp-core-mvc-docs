@@ -19,7 +19,7 @@ The ComboBox supports the `autofill` behaviour with the help of [autofill](https
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/how-to/autofill/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Countries.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class Countries
 {
     public string Name { get; set; }

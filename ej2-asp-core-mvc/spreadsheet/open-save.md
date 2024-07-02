@@ -140,6 +140,35 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 {% endtabs %}
 {% endif %}
 
+### Open an excel file using a file uploader
+
+If you explore your machine to select and upload an excel document using the file uploader, you will receive the uploaded document as a raw file in the `success` event of the file uploader. In this `success` event, you should pass the received raw file as an argument to the Spreadsheet's `open` method to see the appropriate output.
+
+The following code example shows how to import an excel document using file uploader in spreadsheet.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-uploader/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opencontroller.cs" %}
+{% include code-snippet/spreadsheet/open-uploader/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-uploader/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opencontroller.cs" %}
+{% include code-snippet/spreadsheet/open-uploader/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Configure JSON deserialization options
 
 Previously, when opening a workbook JSON object into the Spreadsheet using the `openFromJson` method, the entire workbook, including all features specified in the JSON object, was processed and loaded into the Spreadsheet. 
@@ -185,6 +214,35 @@ The following code snippet demonstrates how to configure the deserialization opt
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
 {% include code-snippet/spreadsheet/open-from-json/openController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Open an excel file from Base64 string data
+
+In the Syncfusion Spreadsheet component, there is no direct option to open data as a `Base64` string. To achieve this, the `import()` function fetches the `Base64` string, converts it to a Blob, creates a File object from the Blob, and then opens it using the `open` method in the spreadsheet.
+
+The following code example shows how to open the spreadsheet data as base64 string.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/base-64-string/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/base-64-string/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -403,6 +461,37 @@ The following code snippet demonstrates how to configure the serialization optio
 {% endtabs %}
 {% endif %}
 
+### To save data as a Base64 string
+
+In the Spreadsheet control, there is currently no direct option to save data as a `Base64` string. You can achieve this by saving the Spreadsheet data as blob data and then converting that saved blob data to a `Base64` string using `FileReader`. 
+
+> You can get the Spreadsheet data as blob in the [saveComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SaveComplete) event when you set the  `needBlobData` as **true** and `isFullPost` as **false** in the [beforeSave](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_BeforeSave) event.
+
+The following code example shows how to save the spreadsheet data as base64 string.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/base-64-string/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/base-64-string/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Supported file formats
 
 The following list of Excel file formats are supported in Spreadsheet:
@@ -460,6 +549,7 @@ Open and save helper functions are shipped in the Syncfusion.EJ2.Spreadsheet pac
 | ASP.NET Core (Targeting .NET Core) | Syncfusion.EJ2.AspNet.Core <br/> Syncfusion.EJ2.Spreadsheet.AspNet.Core <br/> Syncfusion.Compression.Net.Core <br/> Syncfusion.XlsIO.Net.Core <br/> Syncfusion.XlsIORenderer.Net.Core <br/> | [Syncfusion.EJ2.Spreadsheet.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.Spreadsheet.AspNet.Core) <br/> [Syncfusion.XlsIORenderer.Net.Core](https://www.nuget.org/packages/Syncfusion.XlsIORenderer.Net.Core) |
 | ASP.NET MVC4 | Syncfusion.EJ2.MVC4 <br/>Syncfusion.EJ2.Spreadsheet.AspNet.MVC4 <br/> Syncfusion.Compression.Base <br/> Syncfusion.XlsIO.AspNet.Mvc4 <br/> Syncfusion.ExcelToPdfConverter.AspNet.Mvc4 <br/> | [Syncfusion.EJ2.Spreadsheet.AspNet.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.Spreadsheet.AspNet.MVC4) <br/> [Syncfusion.ExcelToPdfConverter.AspNet.Mvc4](https://www.nuget.org/packages/Syncfusion.ExcelToPdfConverter.AspNet.Mvc4) |
 | ASP.NET MVC5 | Syncfusion.EJ2.MVC5 <br/>Syncfusion.EJ2.Spreadsheet.AspNet.MVC5 <br/> Syncfusion.Compression.Base <br/> Syncfusion.XlsIO.AspNet.Mvc5 <br/> Syncfusion.ExcelToPdfConverter.AspNet.Mvc5 <br/> | [Syncfusion.EJ2.Spreadsheet.AspNet.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.Spreadsheet.AspNet.MVC5) <br/> [Syncfusion.ExcelToPdfConverter.AspNet.Mvc5](https://www.nuget.org/packages/Syncfusion.ExcelToPdfConverter.AspNet.Mvc5) |
+
 
 ## See Also
 
