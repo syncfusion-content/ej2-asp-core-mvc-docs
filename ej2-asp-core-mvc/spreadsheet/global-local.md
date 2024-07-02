@@ -12,7 +12,15 @@ documentation: ug
 
 ## Localization
 
-The [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/) library allows you to localize the default text content of the Spreadsheet. The Spreadsheet has static text on some features (cell formatting, Merge, Data validation, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_Locale) value and translation object.
+{% if page.publishingplatform == "aspnet-core" %}
+
+The [Localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library allows you to localize the default text content of the Spreadsheet. The Spreadsheet has static text on some features (cell formatting, Merge, Data validation, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_Locale) value and translation object.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/) library allows you to localize the default text content of the Spreadsheet. The Spreadsheet has static text on some features (cell formatting, Merge, Data validation, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_Locale) value and translation object.
+
+{% endif %}
 
 The following list of properties and their values are used in the Spreadsheet.
 
@@ -468,4 +476,12 @@ RTL provides an option to switch the text direction and layout of the Spreadshee
 
 ## See Also
 
-* [Localization](../common/localization)
+{% if page.publishingplatform == "aspnet-core" %}
+
+* [Localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+* [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/)
+
+{% endif %}
