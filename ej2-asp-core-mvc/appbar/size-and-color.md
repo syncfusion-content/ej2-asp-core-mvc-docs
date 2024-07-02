@@ -28,9 +28,6 @@ This mode is the default one in which the AppBar is displayed with the default h
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/size-and-color/regular/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Regular.cs" %}
-{% include code-snippet/appbar/size-and-color/regular/regular.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -57,9 +54,6 @@ This height mode can be set to the AppBar by setting `Prominent` to the mode pro
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/size-and-color/prominent/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Prominent.cs" %}
-{% include code-snippet/appbar/size-and-color/prominent/prominent.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -85,9 +79,6 @@ This height mode can be set to the AppBar by setting `Dense` to the mode propert
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/size-and-color/dense/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dense.cs" %}
-{% include code-snippet/appbar/size-and-color/dense/dense.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -124,9 +115,6 @@ This color mode is the default one in which the AppBar can be displayed with a l
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/size-and-color/light/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Light.cs" %}
-{% include code-snippet/appbar/size-and-color/light/light.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -152,9 +140,6 @@ This color mode can be set to the AppBar by setting `Dark` to the property color
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/size-and-color/dark/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dark.cs" %}
-{% include code-snippet/appbar/size-and-color/dark/dark.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -182,9 +167,6 @@ This color mode can be set to the AppBar by setting `Primary` to the property co
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/size-and-color/primary/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Primary.cs" %}
-{% include code-snippet/appbar/size-and-color/primary/primary.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -210,9 +192,6 @@ This color mode can be set to the AppBar by setting `Inherit` to the property co
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/appbar/size-and-color/inherit/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Inherit.cs" %}
-{% include code-snippet/appbar/size-and-color/inherit/inherit.cs %}
 {% endhighlight %}
 {% endtabs %}
 

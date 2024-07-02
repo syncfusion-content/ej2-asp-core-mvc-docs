@@ -1,13 +1,27 @@
- @section ControlsSection{
-      <ejs-accumulationchart id="container" title="Mobile Browser Statistics" enableSmartLabels="true">
-                    <e-accumulationchart-legendsettings visible="false">
-                    </e-accumulationchart-legendsettings>
-                    <e-accumulation-series-collection>
-                        <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser">
-                            <e-accumulationseries-datalabel name="text" visible="true" position="Inside" 
-                                                   template="<div id='templateWrap' style='background-color:#bd18f9;border-radius: 3px; float: right;padding: 2px;line-height: 20px;text-align: center;'>"+ "<img src='sun_annotation.png' />" + "<div style='color:white; font-family:Roboto; font-style: medium; fontp-size:14px;float: right;padding: 2px;line-height: 20px;text-align: center;padding-right:6px'><span>${point.y}</span></div></div>">
-                            </e-accumulationseries-datalabel>
-                        </e-accumulation-series>
-                    </e-accumulation-series-collection>
-                </ejs-accumulationchart>
- }
+@{
+    List<PieChartData> chartData = new List<PieChartData>
+    {
+        new PieChartData { xValue = "Chrome", yValue = 37, text = "37%", fill="#498fff"},
+        new PieChartData { xValue = "UC Browser", yValue = 17, text = "17%", fill="#ffa060"},
+        new PieChartData { xValue = "iPhone", yValue = 19, text = "19%", fill="#ff68b6"},
+        new PieChartData { xValue = "Others", yValue = 4 , text = "4%", fill="#81e2a1"},
+    };
+}
+
+<script id="ChartMaterial" type="text/x-template">
+    <div id='templateWrap' style = 'background-color:#bd18f9;border-radius: 3px; float: right;padding: 2px;line-height: 20px;text-align: center;' > 
+        <img src = 'sun_annotation.png' />
+        <div style = 'color:white; font-family:Roboto; font-style: medium; fontp-size:14px;float: right;padding: 2px;line-height: 20px;text-align: center;padding-right:6px' > <span>${ point.y } </span></div>
+    </div>
+</script>
+
+<ejs-accumulationchart id="container" title="Mobile Browser Statistics" enableSmartLabels="true">
+    <e-accumulationchart-legendsettings visible="false">
+    </e-accumulationchart-legendsettings>
+    <e-accumulation-series-collection>
+        <e-accumulation-series dataSource="chartData" xName="xValue" yName="yValue" name="Browser">
+            <e-accumulationseries-datalabel name="text" visible="true" position="Inside" template="#ChartMaterial">
+            </e-accumulationseries-datalabel>
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>

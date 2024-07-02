@@ -65,8 +65,12 @@ In the following example, `Name` column from complex data have been mapped to 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/data-binding/arrayofobjects/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Arrayofobjects.cs" %}
-{% include code-snippet/autocomplete/data-binding/arrayofobjects/arrayofobjects.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class Countries
+{
+    public string Name { get; set; }
+    public string Code { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,8 +100,20 @@ In the following example, `Country.CountryId` column from complex data have be
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/data-binding/complexdata/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Complex.cs" %}
-{% include code-snippet/autocomplete/data-binding/complexdata/Complex.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class Code
+{
+    public string Id { get; set; }
+}
+public class Country
+{
+    public string CountryId { get; set; }
+}
+public class Complex
+{
+    public Country Country { get; set; }
+    public Code Code { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -126,9 +142,6 @@ The following sample displays the first 6 contacts from the `Customers` table of
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/data-binding/remotedata/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
-{% include code-snippet/autocomplete/data-binding/remotedata/remotedata.cs %}
 {% endhighlight %}
 {% endtabs %}
 

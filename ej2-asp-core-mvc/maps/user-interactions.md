@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# User Interactions
+# User Interactions in ##Platform_Name## Maps Component
 
 ## Zooming
 

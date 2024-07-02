@@ -21,8 +21,13 @@ To render a pie series, use the series [`type`](https://help.syncfusion.com/cr/a
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/pie/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Pie.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/pie/pie.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -51,7 +56,12 @@ By default, radius of the pie series will be 80% of the size (minimum of chart w
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/radius/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Radius.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/radius/radius.cs %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -80,7 +90,13 @@ The center position of the pie can be changed by Center X and Center Y. By defau
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/piecenter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Piecenter.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/piecenter/piecenter.cs %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -109,7 +125,13 @@ You can use radius mapping to render the slice with different [`radius`](https:/
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/various-radius/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Various-radius.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/various-radius/various-radius.cs %}
+...
+public class PieRadiusChartData
+{
+    public string xValue;
+    public double yValue;
+    public string r;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -138,7 +160,11 @@ To achieve a doughnut in pie series, customize the [`innerRadius`](https://help.
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/doughnut/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Doughnut.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/doughnut/doughnut.cs %}
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -167,7 +193,12 @@ You can customize the start and end angle of the pie series using the [`startAng
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/start-angle/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Start-angle.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/start-angle/start-angle.cs %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -196,7 +227,14 @@ The fill color and the text in the data source can be mapped to the chart using 
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/map/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Map.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/map/map.cs %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -225,7 +263,12 @@ Individual points can be customized using the `pointRender` event.
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/custom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/custom/custom.cs %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -254,7 +297,12 @@ By default, the border will appear in the pie or doughnut chart while mouse hove
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/border/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Border.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/border/border.cs %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -283,7 +331,12 @@ You can customize the color of the point using the `palettes` property.
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/palette/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Palette.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/palette/palette.cs %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 

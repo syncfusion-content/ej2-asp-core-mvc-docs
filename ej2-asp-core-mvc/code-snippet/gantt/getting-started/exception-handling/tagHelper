@@ -1,0 +1,21 @@
+<ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+            endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks"
+            actionFailure="actionFailure">
+    </e-gantt-taskfields>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskName" headerText="Job Name" width="250"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="StartDate"></e-gantt-column>
+        <e-gantt-column field="EndDate" headerText="EndDate"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+
+<script>
+    function actionFailure(e) {
+       var span = document.createElement('span');
+       this.element.parentNode.insertBefore(span, this.element);
+       span.style.color = '#FF0000'
+       span.innerHTML = e.error[0];
+    }
+</script>
