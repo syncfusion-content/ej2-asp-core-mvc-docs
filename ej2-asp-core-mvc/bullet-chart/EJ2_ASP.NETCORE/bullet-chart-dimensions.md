@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bullet Chart Dimensions in ##Platform_Name## Bullet Chart Component
+title: Bullet Chart Dimensions in ##Platform_Name## Bullet Chart Component | Syncfusion
 description: Learn here all about Bullet Chart Dimensions in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Bullet Chart Dimensions
@@ -21,8 +21,13 @@ The size of the Bullet Chart is determined by the container size, and it can be 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/bullet-chart-dimensions/container/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/bullet-chart/bullet-chart-dimensions/container/container.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class DefaultBulletData
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,8 +59,13 @@ Sets the size of the Bullet Chart in pixels as shown below.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/bullet-chart-dimensions/pixel/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Pixel.cs" %}
-{% include code-snippet/bullet-chart/bullet-chart-dimensions/pixel/pixel.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class BulletData
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -83,8 +93,13 @@ By setting a value in percentage, the Bullet Chart gets its dimension with respe
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/bullet-chart-dimensions/percentage/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Percentage.cs" %}
-{% include code-snippet/bullet-chart/bullet-chart-dimensions/percentage/percentage.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class DefaultBulletChartData
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 

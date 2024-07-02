@@ -291,7 +291,7 @@ The following example demonstrates the client-side action for saving files on th
         { 
             var responseText = args.e.target.responseText;
             if (responseText.trim() !== "") {
-                
+
                 // for JSON and File Datas
                 var jsonResponse = JSON.parse(responseText);
                 if (jsonResponse !== null && jsonResponse.hasOwnProperty("success"))

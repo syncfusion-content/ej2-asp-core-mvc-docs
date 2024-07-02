@@ -654,7 +654,7 @@ The constraints property of annotation allows to enable or disable certain annot
 
 ## Annotation rotation
 
-The [`rotationReference`] property of an annotation allows you to control whether the text should rotate relative to its parent node or the Page. The following code examples illustrate how to configure rotationReference for an annotation.
+The [`rotationReference`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.RotationReference.html) property of an annotation allows you to control whether the text should rotate relative to its parent node or the Page. The following code examples illustrate how to configure rotationReference for an annotation.
 
 ```javascript
 var diagramElement = document.getElementById('element');

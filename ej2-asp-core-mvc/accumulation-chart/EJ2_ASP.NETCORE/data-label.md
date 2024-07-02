@@ -17,8 +17,15 @@ Data label can be added to a chart series by enabling the [`visible`](https://h
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/default/default.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,8 +37,15 @@ Accumulation chart provides support for placing the data label either `inside` o
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/position/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Position.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/position/position.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -43,8 +57,15 @@ Data labels will be arranged smartly without overlapping with each other. You ca
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/smartlabels/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Smartlabels.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/smartlabels/smartlabels.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,8 +77,15 @@ Label content can be formatted by using the template option. Inside the template
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Template.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/template/template.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,8 +97,15 @@ Connector line will be visible when the data label is placed `outside` the chart
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/connector/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Connector.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/connector/connector.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -83,8 +118,15 @@ Text from the data source can be mapped to data label using `name` property.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/map/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Map.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/map/map.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -97,8 +139,15 @@ Data label for the accumulation chart can be formatted using [`format`](https://
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/format/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="format.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/format/format.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -167,8 +216,15 @@ Individual text can be customized using the `textRender` event.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/custom/custom.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -180,8 +236,15 @@ When the data label text exceeds the container, the text can be wrapped by using
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/textwrap/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Textwrap.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/textwrap/textwrap.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string x;
+    public double y;
+    public string text;
+    public string tooltipMappingName;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -197,8 +260,15 @@ You can customize the data label of pie chart using [TextRender](https://help.sy
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/percentage/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Percentage.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/percentage/percentage.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -210,8 +280,15 @@ You can display the percentage values in data label of pie chart using `template
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/template-percentage/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Template-percentage.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/template-percentage/template-percentage.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 

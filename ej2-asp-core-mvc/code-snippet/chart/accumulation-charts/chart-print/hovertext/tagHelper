@@ -1,11 +1,22 @@
+@{
+    List<PieChartData> chartData = new List<PieChartData>
+    {
+        new PieChartData { x = "Chrome", y = 61.3, text = "Chrome: 61.3%"},
+        new PieChartData { x = "Safari", y = 24.6, text = "Safari: 24.6%"},
+        new PieChartData { x = "Edge", y = 5.0, text = "Edge: 5.0%"},
+        new PieChartData { x = "Samsung Internet", y = 2.7, text = "Samsung Internet: 2.7%"},
+        new PieChartData { x = "Firefox", y = 2.6, text = "Firefox: 2.6%"},
+        new PieChartData { x = "Others", y = 3.6, text = "Others: 3.6%"}
+    };
+}
+
 <ejs-accumulationchart id="container">
     <e-accumulation-series-collection>
-        <e-accumulation-series dataSource="ViewBag.dataSource" xName="x" yName="y" innerRadius="65%">
+        <e-accumulation-series dataSource="chartData" xName="x" yName="y" innerRadius="65%">
         </e-accumulation-series>
     </e-accumulation-series-collection>
     <e-accumulationchart-centerlabel text="Mobile<br>Browsers<br>Statistics"
-        hoverTextFormat="${point.x} <br> Browser Share <br> ${point.y}%">
+                                     hoverTextFormat="${point.x} <br> Browser Share <br> ${point.y}%">
     </e-accumulationchart-centerlabel>
     <e-accumulationchart-legendsettings visible="false">
     </e-accumulationchart-legendsettings>
-</ejs-accumulationchart>

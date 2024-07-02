@@ -6,13 +6,11 @@
 
 <ejs-circulargauge id="container" load="gaugeLoad">
     <e-circulargauge-axes>
-        <e-circulargauge-axis startAngle="230" endAngle="130" minimum="0" maximum="100" radius="80%">
+        <e-circulargauge-axis startAngle="230" endAngle="130" minimum="0" maximum="100" radius="80%" labelStyle="@new CircularGaugeLabel(){Font=labelFont,Offset=-1}">
             <e-circulargauge-annotations>
                 <e-circulargauge-annotation angle="165" radius="35%" content='<div style=" font-size:18px;margin-left: -20px;margin-top: -12px; color:#9DD55A">60</div>' zIndex="1"></e-circulargauge-annotation>
             </e-circulargauge-annotations>
             <e-axis-linestyle width="8" color="#E0E0E0"></e-axis-linestyle>
-            <e-axis-labelstyle offset="-1" font="labelFont">
-            </e-axis-labelstyle>
             <e-circulargauge-pointers>
                 <e-circulargauge-pointer value="60" radius="60%" color="#c06c84" pointerWidth=7>
                     <e-pointer-animation enable="true" duration=500></e-pointer-animation>

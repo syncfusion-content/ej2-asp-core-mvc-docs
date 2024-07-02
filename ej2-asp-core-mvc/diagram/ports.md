@@ -240,7 +240,7 @@ The constraints property allows to enable/disable certain behaviors of ports. Fo
 
 ## Specify connection direction to port
 
-The [connectionDirection] property of a port allows users to specify the direction in which a connector should establish a connection. This can be either to the port (incoming) or from the port (outgoing).
+The [`connectionDirection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.PortConnectionDirection.html) property of a port allows users to specify the direction in which a connector should establish a connection. This can be either to the port (incoming) or from the port (outgoing).
 
 ```javascript
 
@@ -269,4 +269,4 @@ var port= [{
 ```
 
 
-![maxSegmentThumb](images\connectionDirection.png)
+![maxSegmentThumb](images/connectionDirection.png)

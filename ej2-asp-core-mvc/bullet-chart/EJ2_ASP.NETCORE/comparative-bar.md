@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Comparative Bar in ##Platform_Name## Bullet Chart Component
+title: Comparative Bar in ##Platform_Name## Bullet Chart Component | Syncfusion
 description: Learn here all about Comparative Bar in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Comparative Bar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Target bar
+# Target bar in Bullet Chart Control
 
 The line marker that runs perpendicular to the orientation of the graph is known as the **Comparative Measure** and it is used as a target marker to compare against the feature measure value. This is also called as the **Target Bar** in the Bullet Chart. To display the target bar, the [`TargetField`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_TargetField) should be mapped to the appropriate field from the datasource.
 
@@ -19,8 +19,13 @@ The line marker that runs perpendicular to the orientation of the graph is known
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/target-bar/target-bar/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Target-bar.cs" %}
-{% include code-snippet/bullet-chart/target-bar/target-bar/target-bar.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class TargetBarData
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,8 +55,13 @@ The shape of the target bar can be customized using the [`TargetTypes`](https://
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/target-bar/target-types/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Target-types.cs" %}
-{% include code-snippet/bullet-chart/target-bar/target-types/target-types.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class TargetType
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,8 +92,13 @@ The following properties can be used to customize the target bar. Also, you can 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/target-bar/target-color/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Target-color.cs" %}
-{% include code-snippet/bullet-chart/target-bar/target-color/target-color.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class TargetBarCustomization
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 

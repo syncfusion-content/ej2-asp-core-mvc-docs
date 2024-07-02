@@ -1,13 +1,21 @@
- @section ControlsSection{
-      <ejs-accumulationchart id="container" title="Mobile Browser Statistics" enableSmartLabels="true">
-                    <e-accumulationchart-legendsettings visible="false">
-                    </e-accumulationchart-legendsettings>
-                    <e-accumulation-series-collection>
-                        <e-accumulation-series dataSource="ViewBag.dataSource" xName="x" yName="y" startAngle="270" endAngle="90" tooltipMappingName="tooltipMappingName">
-                            <e-accumulationseries-datalabel name="text" visible="true" position="Inside" 
-                                                  maxWidth="100" textWrap="Wrap" enableRotation="true" >
-                            </e-accumulationseries-datalabel>
-                        </e-accumulation-series>
-                    </e-accumulation-series-collection>
-                </ejs-accumulationchart>
- }
+@{
+    List<PieChartData> chartData = new List<PieChartData>
+    {
+        new PieChartData   { x = "Chrome", y = 100, text= "Chrome (100M)<br>40%", tooltipMappingName= "40%" },
+        new PieChartData   { x=" UC Browser", y= 40, text= "UC Browser (40M)<br>16%", tooltipMappingName= "16%" },
+        new PieChartData   { x= "Opera" , y= 30, text= "Opera (30M)<br>12%", tooltipMappingName= "12%" },
+        new PieChartData    { x= "Safari", y= 30, text= "Safari (30M)<br>12%", tooltipMappingName= "12%" },
+    };
+}
+
+<ejs-accumulationchart id="container" title="Mobile Browser Statistics" enableSmartLabels="true">
+    <e-accumulationchart-legendsettings visible="false">
+    </e-accumulationchart-legendsettings>
+    <e-accumulation-series-collection>
+        <e-accumulation-series dataSource="chartData" xName="x" yName="y" startAngle="270" endAngle="90" tooltipMappingName="tooltipMappingName">
+            <e-accumulationseries-datalabel name="text" visible="true" position="Inside"
+                                            maxWidth="100" textWrap="Wrap" enableRotation="true">
+            </e-accumulationseries-datalabel>
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>
