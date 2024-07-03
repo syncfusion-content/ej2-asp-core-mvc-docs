@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview in ##Platform_Name## Tree Grid Component  | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Overview in Syncfusion ##Platform_Name## Tree Grid component, its elements, and more.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
