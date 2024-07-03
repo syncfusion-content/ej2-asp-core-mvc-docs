@@ -40,7 +40,7 @@ You can disable the OTP Input control by using the [Disabled](https://help.syncf
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC OTP Input Control as Disabled](images/otp-disabled.jpg)
+![ASP.NET MVC OTP Input Control as Disabled](images/otp-disabled.png)
 
 ## CssClass
 
