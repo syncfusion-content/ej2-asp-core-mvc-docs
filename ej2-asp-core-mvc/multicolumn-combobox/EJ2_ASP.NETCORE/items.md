@@ -196,7 +196,7 @@ The [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Mult
 {% endhighlight %}
 {% endtabs %}
 
-![Disabled](images/disabled.jpg)
+![Disabled](images/disabled.png)
 
 ## Setting read only
 
