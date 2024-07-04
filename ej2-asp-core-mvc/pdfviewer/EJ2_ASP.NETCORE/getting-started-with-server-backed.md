@@ -394,6 +394,7 @@ namespace PDFViewerSample.Pages
         public string annotationDataFormat { get; set; }
 	    public string importedData { get; set; }
     }
+}
 {% endhighlight %}
 {% endtabs %}
 
