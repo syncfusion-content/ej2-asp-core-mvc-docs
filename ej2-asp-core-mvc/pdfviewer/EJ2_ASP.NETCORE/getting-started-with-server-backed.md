@@ -393,7 +393,6 @@ namespace PDFViewerSample.Pages
         public string documentLiveCount { get; set; }
         public string annotationDataFormat { get; set; }
 	    public string importedData { get; set; }
-        public bool digitalSignaturePresent { get; set; }
     }
 }
 {% endhighlight %}
