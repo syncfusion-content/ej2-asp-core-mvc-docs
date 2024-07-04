@@ -384,7 +384,7 @@ namespace GettingStartedMVC.Controllers
         public string freeTextAnnotation { get; set; }
         public string signatureData { get; set; }
         public string fieldsData { get; set; }
-        public string FormDesigner { get; set; }
+        public string formDesigner { get; set; }
         public string inkSignatureData { get; set; }
         public string tileXCount { get; set; }
         public string tileYCount { get; set; }
