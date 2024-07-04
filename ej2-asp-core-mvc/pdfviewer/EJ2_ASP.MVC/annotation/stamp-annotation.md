@@ -109,7 +109,7 @@ N>The JPG and JPEG image format is only supported in the custom stamp annotation
 
 With the PDF Viewer library, you can add a Stamp annotation to the PDF Viewer control programmatically using the **addAnnotation()** method.
 
-Here's a example of how you can utilize the **addAnnotation()** method to include a Stamp annotation programmatically:
+Here's a example of how you can utilize the [**addAnnotation()**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_AnnotationAdd) method to include a Stamp annotation programmatically:
 
 {% tabs %}
 {% highlight cshtml tabtitle="Standalone" %}

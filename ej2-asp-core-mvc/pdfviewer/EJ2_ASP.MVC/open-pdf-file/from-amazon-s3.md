@@ -31,7 +31,7 @@ using Amazon.S3;
 using Amazon.S3.Model;
 ```
 
-2. Modify the `Load()` method to load the PDF files from AWS S3.
+2. Modify the [Load()](https://ej2.syncfusion.com/documentation/api/pdfviewer/#load) method to load the PDF files from AWS S3.
 
 ```csharp
     private readonly string _accessKey = "Your Access Key from AWS S35";

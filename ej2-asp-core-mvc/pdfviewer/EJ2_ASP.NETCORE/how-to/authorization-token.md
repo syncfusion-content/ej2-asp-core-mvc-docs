@@ -10,7 +10,7 @@ documentation: ug
 
 # Include the Authorization token
 
-The PDF Viewer library allows you to include the authorization token in the PDF viewer AJAX request using the properties of the ajaxRequest header available in `AjaxRequestSettings`, and it will be included in every AJAX request send from PDF Viewer.
+The PDF Viewer library allows you to include the authorization token in the PDF viewer AJAX request using the properties of the ajaxRequest header available in [AjaxRequestSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_AjaxRequestSettings), and it will be included in every AJAX request send from PDF Viewer.
 
 The following steps are used to include the authorization token to the PDF viewer control.
 

@@ -14,7 +14,7 @@ The initial rendering in a PDF viewer allows users to control the number of page
 
 To utilize this capability in Syncfusion PDF Viewer, use the [initialRenderPages](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pdfviewer.pdfviewer.html?_ga=2.144520115.723518961.1687236178-1796867613.1686804317#:~:text=value%20is%20null-,InitialRenderPages,-Initially%20renders%20the) property. You can achieve the desired outcome by setting this property to the desired number of pages you want to load initially. However, it's important to exercise caution when setting a high value for the initialRenderPages in large documents with numerous pages. Rendering a large number of pages simultaneously can increase memory usage and slow down loading times, impacting the performance of the PDF viewer.
 
-Using the `initialRenderPages` property judiciously is advisable, especially when dealing with larger documents. It is more suitable for scenarios where a smaller range of pages, such as 10-20, can be loaded to provide a quick initial view of the document.
+Using the [initialRenderPages](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pdfviewer.pdfviewer.html?_ga=2.144520115.723518961.1687236178-1796867613.1686804317#:~:text=value%20is%20null-,InitialRenderPages,-Initially%20renders%20the) property judiciously is advisable, especially when dealing with larger documents. It is more suitable for scenarios where a smaller range of pages, such as 10-20, can be loaded to provide a quick initial view of the document.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Standalone" %}

@@ -112,7 +112,7 @@ PDF Viewer allows you to customize(add, show, hide, enable, and disable) existin
 
 * Show, Hide - Existing items can be shown or hidden using the [`ToolbarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings.html) property. Pre-defined toolbar items are available with [`ToolbarItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings.html#Syncfusion_EJ2_PdfViewer_PdfViewerToolbarSettings_ToolbarItems) .
 
-* Enable, Disable - Toolbar items can be enabled or disable using `enabletoolbaritem`.
+* Enable, Disable - Toolbar items can be enabled or disable using [enabletoolbaritem](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_EnableToolbar).
 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}

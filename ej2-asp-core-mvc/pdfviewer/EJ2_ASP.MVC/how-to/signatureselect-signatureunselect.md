@@ -10,17 +10,17 @@ documentation: ug
 
 # SignatureSelect and SignatureUnselect event
 
-The Syncfusion PDF Viewer provides event-handling capabilities for various actions, including selecting and unselecting handwritten signatures. The `signatureSelect` and `signatureUnselect` events enable developers to programmatically manage the selection state of signatures within the PDF Viewer component.
+The Syncfusion PDF Viewer provides event-handling capabilities for various actions, including selecting and unselecting handwritten signatures. The [signatureSelect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_SignatureSelect) and [signatureUnselect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_SignatureUnselect) events enable developers to programmatically manage the selection state of signatures within the PDF Viewer component.
 
 **signatureSelect** 
 
-The `signatureSelect` event triggers when a handwritten signature annotation is selected. This event allows developers to capture the signature selection and handle it programmatically, such as updating the UI or storing the selection data for further processing.
+The [signatureSelect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_SignatureSelect) event triggers when a handwritten signature annotation is selected. This event allows developers to capture the signature selection and handle it programmatically, such as updating the UI or storing the selection data for further processing.
 
 **signatureUnselect**
 
-The `signatureUnselect` event triggers when a handwritten signature annotation is unselected. This event enables developers to manage the unselection programmatically, which can be useful for tasks like cleanup operations or updating the application's state to reflect that a signature is no longer selected.
+The [signatureUnselect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_SignatureUnselect) event triggers when a handwritten signature annotation is unselected. This event enables developers to manage the unselection programmatically, which can be useful for tasks like cleanup operations or updating the application's state to reflect that a signature is no longer selected.
 
-The code snippet demonstrates how to subscribe to the `signatureSelect` and `signatureUnselect` events in the Syncfusion PDF Viewer component.
+The code snippet demonstrates how to subscribe to the [signatureSelect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_SignatureSelect) and [signatureUnselect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_SignatureUnselect) events in the Syncfusion PDF Viewer component.
 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
@@ -68,4 +68,4 @@ function signatureUnselect(args) {
 {% endhighlight %}
 {% endtabs %}
 
-The `signatureSelect` and `signatureUnselect` events in Syncfusion PDF Viewer offer robust options for managing the state of handwritten signatures within your application. By handling these events, developers can create a more interactive and dynamic user experience, responding programmatically to signature selection and unselection.
+The [signatureSelect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_SignatureSelect) and [signatureUnselect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_SignatureUnselect) events in Syncfusion PDF Viewer offer robust options for managing the state of handwritten signatures within your application. By handling these events, developers can create a more interactive and dynamic user experience, responding programmatically to signature selection and unselection.

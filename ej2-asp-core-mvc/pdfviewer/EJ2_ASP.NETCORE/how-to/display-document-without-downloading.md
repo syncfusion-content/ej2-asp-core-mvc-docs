@@ -10,7 +10,7 @@ documentation: ug
 
 # Display document without downloading
 
-The PDF Viewer server library allows you to display the downloaded PDF document in the PDF Viewer control without downloading a document in the local machine using the **load** method.
+The PDF Viewer server library allows you to display the downloaded PDF document in the PDF Viewer control without downloading a document in the local machine using the [**load**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfRenderer.html#Syncfusion_EJ2_PdfViewer_PdfRenderer_Load_System_String_) method.
 
 The following steps are used to display the downloaded without downloading in the local machine.
 

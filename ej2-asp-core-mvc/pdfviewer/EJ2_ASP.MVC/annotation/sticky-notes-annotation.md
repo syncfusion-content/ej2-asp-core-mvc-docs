@@ -35,7 +35,7 @@ Annotation comments can be added to the PDF document using the comment panel.
 
 ## Adding a sticky note annotation to the PDF document Programmatically
 
-With the PDF Viewer library, you can add a sticky note annotation to the PDF Viewer control programmatically using the **addAnnotation()** method.
+With the PDF Viewer library, you can add a sticky note annotation to the PDF Viewer control programmatically using the [**addAnnotation()**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_AnnotationAdd) method.
 
 Here's a example of how you can utilize the **addAnnotation()** method to include a sticky note annotation programmatically:
 

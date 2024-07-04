@@ -65,7 +65,7 @@ Refer to the following code sample to switch to the Free Text annotation mode.
 
 The PDF Viewer library allows you to add the free text annotation in the PDF Viewer control programmatically using the **addAnnotation()** method.
 
-Here is an example of how you can use the **addAnnotation()** method to move the free text annotation programmatically:
+Here is an example of how you can use the [**addAnnotation()**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_AnnotationAdd) method to move the free text annotation programmatically:
 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}

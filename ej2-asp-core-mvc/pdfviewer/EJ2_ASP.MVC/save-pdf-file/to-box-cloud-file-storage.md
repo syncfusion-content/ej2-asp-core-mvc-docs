@@ -31,7 +31,7 @@ using Box.V2.Config;
 using Box.V2.Models;
 ```
 
-3. Modify the `Download()` method to save the downloaded PDF files to Box cloud file storage folder.
+3. Modify the [Download()](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DownloadStart) method to save the downloaded PDF files to Box cloud file storage folder.
 
 ```csharp
 
@@ -75,7 +75,7 @@ N> replace **Your_Box_Storage_Access_Token** with your actual box access token, 
 
 **Step 4:** Set the PDF Viewer Properties in ASP.NET MVC PDF viewer component
 
-Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Box cloud file storage. Ensure that you correctly pass the document name from the files available in your azure container to the documentPath property.
+Set the [documentPath](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DocumentPath) property of the PDF viewer component to the desired name of the PDF file you wish to load from Box cloud file storage. Ensure that you correctly pass the document name from the files available in your azure container to the documentPath property.
 
 ```csharp
 
@@ -93,6 +93,6 @@ Set the `documentPath` property of the PDF viewer component to the desired name 
 
 N> The **Box.V2.Core** NuGet package must be installed in your application to use the previous code example.
 
-N> Replace `PDF_Succinctly.pdf` with the actual document name that you want to load from Box cloud file storage. Make sure to pass the document name from the box folder to the `documentPath` property of the PDF viewer component
+N> Replace `PDF_Succinctly.pdf` with the actual document name that you want to load from Box cloud file storage. Make sure to pass the document name from the box folder to the [documentPath](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DocumentPath) property of the PDF viewer component
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-box-cloud-file-storage)

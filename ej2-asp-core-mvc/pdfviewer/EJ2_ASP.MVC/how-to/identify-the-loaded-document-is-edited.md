@@ -10,7 +10,7 @@ documentation: ug
 
 # Identify the loaded document is edited
 
-The PDF Viewer server library allows you to identify whether loaded PDF document is edited or not. Use the **isDocumentEdited** property to identify whether the changes made in PDF document.
+The PDF Viewer server library allows you to identify whether loaded PDF document is edited or not. Use the [**isDocumentEdited**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_IsDocumentEdited) property to identify whether the changes made in PDF document.
 
 The following steps are used to identify loaded document is edited in PDF viewer control,
 

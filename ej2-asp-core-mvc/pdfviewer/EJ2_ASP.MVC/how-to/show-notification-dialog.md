@@ -13,9 +13,9 @@ documentation: ug
 
 The PDF Viewer server library allows you to show the notification dialog in UI when fields in the form are not filled or empty using the following properties and events below,
 
-* **EnableFormFieldsValidation**
-* **ShowNotificationDialog**
-* **validateFormFields**
+* [**EnableFormFieldsValidation**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_EnableFormFieldsValidation)
+* [**ShowNotificationDialog**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_ShowNotificationDialog)
+* [**validateFormFields**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_ValidateFormFields)
 
 The following steps are used to show the notification dialog in UI.
 

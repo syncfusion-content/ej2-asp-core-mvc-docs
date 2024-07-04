@@ -11,7 +11,7 @@ documentation: ug
 
 # Access file name
 
-The PDF Viewer server library allows you to can access the filename of the loaded PDF document using the **documentLoad** and **downloadEnd** event. Using these events, we can access the filename while loading and downloading the PDF document.
+The PDF Viewer server library allows you to can access the filename of the loaded PDF document using the [**documentLoad**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DocumentLoad) and [**downloadEnd**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DownloadEnd) event. Using these events, we can access the filename while loading and downloading the PDF document.
 
 The following steps are used to access the file name of loaded PDF document in PDF viewer control,
 

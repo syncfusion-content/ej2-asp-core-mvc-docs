@@ -121,9 +121,9 @@ Refer to the following code sample to switch back to normal mode from the highli
 
 ## Highlight a text programmatically
 
-The PDF Viewer library enables you to programmatically highlight text within the PDF Viewer control using the **addAnnotation()** method.
+The PDF Viewer library enables you to programmatically highlight text within the PDF Viewer control using the [**addAnnotation()**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_AnnotationAdd) method.
 
-Here's an example of how you can use the **addAnnotation()** method to apply highlighting programmatically:
+Here's an example of how you can use the [**addAnnotation()**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_AnnotationAdd) method to apply highlighting programmatically:
 
 {% tabs %}
 {% highlight cshtml tabtitle="Standalone" %}

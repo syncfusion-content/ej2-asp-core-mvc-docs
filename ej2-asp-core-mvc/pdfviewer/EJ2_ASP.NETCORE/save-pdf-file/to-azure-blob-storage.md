@@ -102,7 +102,7 @@ N> Replace **Your Connection string from Azure** with the actual connection stri
 
 **Step 4:** Set the PDF Viewer Properties in ASP.NET Core PDF viewer component
 
-Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Azure Blob Storage. Ensure that you correctly pass the document name from the files available in your azure container to the documentPath property.
+Set the [documentPath](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DocumentPath) property of the PDF viewer component to the desired name of the PDF file you wish to load from Azure Blob Storage. Ensure that you correctly pass the document name from the files available in your azure container to the documentPath property.
 
 ```csharp
 
