@@ -373,14 +373,26 @@ namespace PDFViewerSample.Pages
         public string viewPortWidth { get; set; }
         public string viewPortHeight { get; set; }
         public string tilecount { get; set; }
-        public string isCompletePageSizeNotReceived { get; set; }
+        public bool isCompletePageSizeNotReceived { get; set; }
         public string freeTextAnnotation { get; set; }
         public string signatureData { get; set; }
         public string fieldsData { get; set; }
-        public string FormDesigner { get; set; }
+        public string formDesigner { get; set; }
         public string inkSignatureData { get; set; }
+        public bool hideEmptyDigitalSignatureFields { get; set; }
+        public bool showDigitalSignatureAppearance { get; set; }
+        public bool digitalSignaturePresent { get; set; }
         public string tileXCount { get; set; }
         public string tileYCount { get; set; }
+        public string digitalSignaturePageList { get; set; }
+        public string annotationCollection { get; set; }
+        public string annotationsPageList { get; set; }
+        public string formFieldsPageList { get; set; }
+        public bool isAnnotationsExist { get; set; }
+        public bool isFormFieldAnnotationsExist { get; set; }
+        public string documentLiveCount { get; set; }
+        public string annotationDataFormat { get; set; }
+	    public string importedData { get; set; }
         public bool digitalSignaturePresent { get; set; }
     }
 }
