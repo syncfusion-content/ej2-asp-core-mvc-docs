@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Add Save Button in Built-In Toolbar | Syncfusion
-description:  Learn here all about adding save button in built-in Toolbar in Syncfusion ej2-asp-core-mvc Pdfviewer component of Syncfusion Essential JS 2 and more.
+description:  Learn here all about adding save button in built-in Toolbar in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Save Button
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-## Add Save Button in Built-In Toolbar
+# Add Save Button in Built-In Toolbar
 
 PDF Viewer allows you to customize(add, show, hide, enable, and disable) existing items in a toolbar.
 
