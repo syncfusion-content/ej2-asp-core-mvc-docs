@@ -247,6 +247,67 @@ The following code example shows how to open the spreadsheet data as base64 stri
 {% endtabs %}
 {% endif %}
 
+### To open an Excel file located on a server
+
+By default, the Spreadsheet component provides an option to browse files from the local file system and open them within the component. If you want to load an Excel file located on a server, you need to configure the server endpoint to fetch the Excel file from the server location, process it using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, and send it back to the client as `JSON data`. On the client side, you should use the `openFromJson` method to load that `JSON data` into the Spreadsheet component.
+
+**Server endpoint code**:
+
+```csharp
+
+    public IActionResult Open([FromBody] FileOptions options)
+    {
+        OpenRequest open = new OpenRequest();
+        string filePath = _env.ContentRootPath.ToString() + "\\Files\\" + options.FileName + ".xlsx";
+        // Getting the file stream from the file path.
+        FileStream fileStream = new FileStream(filePath, FileMode.Open);
+        // Converting MemoryStream to IFormFile.
+        IFormFile formFile = new FormFile(fileStream, 0, fileStream.Length, "", options.FileName + ".xlsx"); 
+        open.File = formFile;
+        // Processing the Excel file and return the workbook JSON.
+        var result = Workbook.Open(open);
+        fileStream.Close();
+        return Content(result);
+    }
+
+    public class FileOptions
+    {
+        public string FileName { get; set; } = string.Empty;
+    }
+```
+
+**Client-side code**:
+
+```js
+
+    // Fetch call to server to load the Excel.
+    fetch('https://localhost:{{Your port number}}/Home/Open', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ FileName: 'Sample' }),
+    })
+    .then((response) => response.json())
+    .then((data) => {
+            // Load the JSON data into spreadsheet.
+            spreadsheet.openFromJson({ file: data });
+    })
+
+```
+
+You can find the server endpoint code to fetch and process the Excel file in this attachment(https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187).
+
+After launching the server endpoint, you need to update the file fetch URL on the client-side sample as shown below.
+
+```js
+
+// To open an Excel file from the server.
+
+fetch('https://localhost:{port number}/Home/Open')
+
+```
+
 ### External workbook confirmation dialog
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
@@ -491,6 +552,78 @@ The following code example shows how to save the spreadsheet data as base64 stri
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+### To save an Excel file to a server location
+
+By default, the spreadsheet saves the Excel file and downloads it to the local file system. If you want to save an Excel file to a server location, you need to configure the server endpoint to convert the spreadsheet data into a file stream and save it to the server location. On the client side, you must convert the spreadsheet data into `JSON` format using the `saveAsJson` method and send it to the server endpoint. On the server endpoint, you should convert the received spreadsheet `JSON` data into a file stream using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, convert the stream into an Excel file, and then save it to the server location.
+
+**Client-side code**:
+
+```js
+
+    // Convert the spreadsheet workbook to JSON data.
+    spreadsheet.saveAsJson().then((json) => {
+        const formData = new FormData();
+        formData.append('FileName', "Sample");
+        formData.append('saveType', 'Xlsx');
+        // Passing the JSON data to perform the save operation.
+        formData.append('JSONData', JSON.stringify(json.jsonObject.Workbook));
+        formData.append('PdfLayoutSettings', JSON.stringify({ FitSheetOnOnePage: false }));
+        // Using fetch to invoke the save process.
+        fetch('https://localhost:{{Your port number}}/Home/Save', {
+            method: 'POST',
+            body: formData
+        }).then((response) => {
+            console.log(response);
+        });
+    });
+
+```
+
+**Server endpoint code**:
+
+```csharp
+
+    public string Save(SaveSettings saveSettings)
+    {
+        ExcelEngine excelEngine = new ExcelEngine();
+        IApplication application = excelEngine.Excel;
+        try
+        {
+            
+            // Save the workbook as Stream.
+            Stream fileStream = Workbook.Save<Stream>(saveSettings);
+            // Using XLSIO, we are opening the file stream and saving the file in the server under Files folder.
+            // You can also save the stream file in your server location.
+            IWorkbook workbook = application.Workbooks.Open(fileStream);
+            string basePath = _env.ContentRootPath + "\\Files\\" + saveSettings.FileName + ".xlsx";
+            var file = System.IO.File.Create(basePath);
+            fileStream.Seek(0, SeekOrigin.Begin);
+            // To convert the stream to file options.
+            fileStream.CopyTo(file);
+            file.Dispose();
+            fileStream.Dispose();
+            return string.Empty;
+        }
+        catch (Exception ex)
+        {
+            return ex.Message;
+        }
+    }
+
+```
+
+You can find the server endpoint code to save the spreadsheet JSON data as an Excel file in the attached documentation(https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187).
+
+After launching the server endpoint, you need to update the file fetch URL on the client-side sample as shown below.
+
+```js
+
+//To save an Excel file to the server.
+
+fetch('https://localhost:{port number}/Home/Save')
+
+```
 
 ### Supported file formats
 
