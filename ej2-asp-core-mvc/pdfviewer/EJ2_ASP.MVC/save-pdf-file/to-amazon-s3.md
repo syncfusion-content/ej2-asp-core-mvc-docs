@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS S3 in ##Platform_Name## PDF Viewer Component
+title: AWS S3 in ##Platform_Name## PDF Viewer Component | Syncfusion
 description: Save the PDF files to AWS S3 in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
