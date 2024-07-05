@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add save button in ##Platform_Name## Document Editor Component
+title: Add save button in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here to add save button in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add save button tool bar 
