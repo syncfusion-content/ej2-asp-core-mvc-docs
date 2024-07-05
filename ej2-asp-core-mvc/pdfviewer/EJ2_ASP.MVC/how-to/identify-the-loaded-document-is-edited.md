@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Identify The Loaded Document Is Edited in ##Platform_Name## Pdfviewer Component
+title: Identify Loaded PDF Is Edited #Platform_Name# Pdfviewer | Syncfusion
 description: Learn here all about Identify The Loaded Document Is Edited in Syncfusion ##Platform_Name## Pdfviewer component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Identify The Loaded Document Is Edited

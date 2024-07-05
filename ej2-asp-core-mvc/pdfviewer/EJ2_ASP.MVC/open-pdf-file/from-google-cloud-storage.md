@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google Cloud Storage in ##Platform_Name## PDF Viewer Component
+title: Google Cloud  in ##Platform_Name## PDFViewer Component | Syncfusion
 description: Learn here all about how to Open PDF files from Google Cloud Storage in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer

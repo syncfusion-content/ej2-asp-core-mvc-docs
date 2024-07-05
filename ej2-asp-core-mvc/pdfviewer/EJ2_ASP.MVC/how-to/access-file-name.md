@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Access File Name in ##Platform_Name## Pdfviewer Component
+title: Access FileName in ##Platform_Name## Pdfviewer Component | Syncfusion
 description: Learn here all about Access File Name in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Access File Name
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Access file name
+# Access file name in ##Platform_Name## Pdfviewer Component
 
 The PDF Viewer server library allows you to can access the filename of the loaded PDF document using the [**documentLoad**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DocumentLoad) and [**downloadEnd**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DownloadEnd) event. Using these events, we can access the filename while loading and downloading the PDF document.
 
