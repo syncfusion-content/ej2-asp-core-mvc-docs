@@ -92,3 +92,5 @@ You can use the `customAttributes` property to customize the CSS styles and attr
 {% include code-snippet/multicolumn-combobox/columns/customattribute/customattribute.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![CustomAttribute](images/customAttribute.png)
