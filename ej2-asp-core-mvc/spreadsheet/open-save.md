@@ -249,19 +249,18 @@ The following code example shows how to open the spreadsheet data as base64 stri
 
 ### To open an Excel file located on a server
 
-By default, the Spreadsheet component provides an option to browse files from the local file system and open them within the component. If you want to load an Excel file located on a server, you need to configure the server endpoint to fetch the Excel file from the server location, process it using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, and send it back to the client as `JSON data`. On the client side, you should use the `openFromJson` method to load that `JSON data` into the Spreadsheet component.
+By default, the Spreadsheet control provides an option to browse files from the local file system and open them within the control. If you want to load an Excel file located on a server, you need to configure the server endpoint to fetch the Excel file from the server location, process it using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, and send it back to the client side as `JSON data`. On the client side, you should use the `openFromJson` method to load that `JSON data` into the Spreadsheet control.
 
-**Server endpoint code**:
+**Server Endpoint**:
 
 ```csharp
-
     public IActionResult Open([FromBody] FileOptions options)
     {
         OpenRequest open = new OpenRequest();
         string filePath = _env.ContentRootPath.ToString() + "\\Files\\" + options.FileName + ".xlsx";
         // Getting the file stream from the file path.
         FileStream fileStream = new FileStream(filePath, FileMode.Open);
-        // Converting MemoryStream to IFormFile.
+        // Converting "MemoryStream" to "IFormFile".
         IFormFile formFile = new FormFile(fileStream, 0, fileStream.Length, "", options.FileName + ".xlsx"); 
         open.File = formFile;
         // Processing the Excel file and return the workbook JSON.
@@ -276,11 +275,11 @@ By default, the Spreadsheet component provides an option to browse files from th
     }
 ```
 
-**Client-side code**:
+**Client Side**:
 
 ```js
 
-    // Fetch call to server to load the Excel.
+    // Fetch call to server to load the Excel file.
     fetch('https://localhost:{{Your port number}}/Home/Open', {
         method: 'POST',
         headers: {
@@ -296,16 +295,11 @@ By default, the Spreadsheet component provides an option to browse files from th
 
 ```
 
-You can find the server endpoint code to fetch and process the Excel file in this attachment(https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187).
-
-After launching the server endpoint, you need to update the file fetch URL on the client-side sample as shown below.
+You can find the server endpoint code to fetch and process the Excel file in this [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187). After launching the server endpoint, you need to update the URL on the client side sample as shown below.
 
 ```js
-
 // To open an Excel file from the server.
-
 fetch('https://localhost:{port number}/Home/Open')
-
 ```
 
 ### External workbook confirmation dialog
@@ -555,9 +549,9 @@ The following code example shows how to save the spreadsheet data as base64 stri
 
 ### To save an Excel file to a server location
 
-By default, the spreadsheet saves the Excel file and downloads it to the local file system. If you want to save an Excel file to a server location, you need to configure the server endpoint to convert the spreadsheet data into a file stream and save it to the server location. On the client side, you must convert the spreadsheet data into `JSON` format using the `saveAsJson` method and send it to the server endpoint. On the server endpoint, you should convert the received spreadsheet `JSON` data into a file stream using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, convert the stream into an Excel file, and then save it to the server location.
+By default, the Spreadsheet control saves the Excel file and downloads it to the local file system. If you want to save an Excel file to a server location, you need to configure the server endpoint to convert the spreadsheet data into a file stream and save it to the server location. To do this, first, on the client side, you must convert the spreadsheet data into `JSON` format using the `saveAsJson` method and send it to the server endpoint. On the server endpoint, you should convert the received spreadsheet `JSON` data into a file stream using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, then convert the stream into an Excel file, and finally save it to the server location.
 
-**Client-side code**:
+**Client Side**:
 
 ```js
 
@@ -580,7 +574,7 @@ By default, the spreadsheet saves the Excel file and downloads it to the local f
 
 ```
 
-**Server endpoint code**:
+**Server Endpoint**:
 
 ```csharp
 
@@ -591,9 +585,9 @@ By default, the spreadsheet saves the Excel file and downloads it to the local f
         try
         {
             
-            // Save the workbook as Stream.
+            // Save the workbook as stream.
             Stream fileStream = Workbook.Save<Stream>(saveSettings);
-            // Using XLSIO, we are opening the file stream and saving the file in the server under Files folder.
+            // Using XLSIO, we are opening the file stream and saving the file in the server under "Files" folder.
             // You can also save the stream file in your server location.
             IWorkbook workbook = application.Workbooks.Open(fileStream);
             string basePath = _env.ContentRootPath + "\\Files\\" + saveSettings.FileName + ".xlsx";
@@ -613,16 +607,11 @@ By default, the spreadsheet saves the Excel file and downloads it to the local f
 
 ```
 
-You can find the server endpoint code to save the spreadsheet JSON data as an Excel file in the attached documentation(https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187).
-
-After launching the server endpoint, you need to update the file fetch URL on the client-side sample as shown below.
+You can find the server endpoint code to save the spreadsheet data as an Excel file in this [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187). After launching the server endpoint, you need to update the URL on the client side sample as shown below.
 
 ```js
-
 //To save an Excel file to the server.
-
 fetch('https://localhost:{port number}/Home/Save')
-
 ```
 
 ### Supported file formats
