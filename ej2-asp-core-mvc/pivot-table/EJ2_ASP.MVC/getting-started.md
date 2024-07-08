@@ -100,7 +100,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
  {
      public ActionResult Index()
      {
-         return View(PivotData.GetAllDetails());
+         return View(PivotData.GetPivotData());
         
      }
  }
@@ -127,7 +127,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
         Quarter = quarter;
     }
 
-    public static List<PivotData> GetAllDetails()
+    public static List<PivotData> GetPivotData()
     {
         if (pivotDataList.Count == 0)
         {
