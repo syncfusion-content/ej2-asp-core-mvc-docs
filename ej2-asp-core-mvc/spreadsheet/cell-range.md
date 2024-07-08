@@ -65,7 +65,7 @@ You can merge the range of cells in the following ways,
 
 * Set the `rowSpan` and `colSpan` property in `cell` to merge the number of cells at initial load.
 * Select the range of cells and apply merge by selecting the desired option from ribbon toolbar.
-* Use `merge`] method to merge the range of cells, once the component is loaded.
+* Use `merge` method to merge the range of cells, once the component is loaded.
 
 The available merge options in spreadsheet are,
 
