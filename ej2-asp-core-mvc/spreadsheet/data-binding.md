@@ -250,4 +250,3 @@ N> For `add` action, the value for all the fields will be `null` in the data. In
 * [Filtering](filter)
 * [Sorting](sort)
 * [Hyperlink](link)
-* [`Collaborative Editing`](use-cases/collaborative-editing)
