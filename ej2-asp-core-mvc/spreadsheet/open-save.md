@@ -247,6 +247,12 @@ The following code example shows how to open the spreadsheet data as base64 stri
 {% endtabs %}
 {% endif %}
 
+### To Open an Excel File from Blob Data
+
+By default, the Spreadsheet component provides an option to browse files from the local file system and open them within the component. If you want to open an Excel file from `Blob data`, you need to fetch the `Blob data` from the server or another source and convert this `Blob data` into a `File` object. Then, you can use the `open` method in the Spreadsheet component to load that File object.
+
+Please find the code to fetch the Blob data and load it into the Spreadsheet component below.
+
 ### External workbook confirmation dialog
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
@@ -491,6 +497,12 @@ The following code example shows how to save the spreadsheet data as base64 stri
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+### To Save an Excel File as Blob Data
+
+By default, the spreadsheet saves the Excel file and downloads it to the local file system. If you want to save an Excel file as `Blob data`, you need to set `needBlobData` to **true** and `isFullPost` to **false** in the [beforeSave](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_BeforeSave) event. You will then receive the spreadsheet data as a Blob in the [saveComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SaveComplete) event of the Spreadsheet component. You can post the `Blob data` to the server endpoint for saving.
+
+Please find the code to get the Blob data from the Spreadsheet component below.
 
 ### Supported file formats
 
