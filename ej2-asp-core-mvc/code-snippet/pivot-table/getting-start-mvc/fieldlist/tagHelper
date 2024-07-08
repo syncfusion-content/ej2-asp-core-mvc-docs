@@ -1,5 +1,5 @@
 @{
-    List<PivotData> pivotData = new List<PivotData>();
+	List<PivotData> pivotData = new List<PivotData>();
     pivotData.Add(new PivotData { Sold = 31, Amount = 52824, Country = "France", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q1" });
     pivotData.Add(new PivotData { Sold = 51, Amount = 86904, Country = "France", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q2" });
     pivotData.Add(new PivotData { Sold = 90, Amount = 153360, Country = "France", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q3" });
@@ -76,22 +76,22 @@
     pivotData.Add(new PivotData { Sold = 109, Amount = 29576, Country = "United States", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q3" });
 }
 
-< ejs - pivotview id = "PivotView" height = "300" showFieldList = "true" >
-    < e - datasourcesettings dataSource = "@pivotData" expandAll = "false" enableSorting = "true" allowLabelFilter = "true" allowValueFilter = "true" >
-        < e - formatsettings >
-            < e - field name = "Amount" format = "C0" maximumSignificantDigits = "10" minimumSignificantDigits = "1" useGrouping = "true" ></ e - field >
-        </ e - formatsettings >
-        < e - rows >
-            < e - field name = "Country" ></ e - field >
-            < e - field name = "Products" ></ e - field >
-        </ e - rows >
-        < e - columns >
-            < e - field name = "Year" caption = "Year" ></ e - field >
-            < e - field name = "Quarter" ></ e - field >
-        </ e - columns >
-        < e - values >
-            < e - field name = "Sold" caption = "Units Sold" ></ e - field >
-            < e - field name = "Amount" caption = "Sold Amount" ></ e - field >
-        </ e - values >
-    </ e - datasourcesettings >
-</ ejs - pivotview >
+<ejs-pivotview id="PivotView" height="300" showFieldList="true">
+    <e-datasourcesettings dataSource="@pivotData" expandAll="false" enableSorting="true" allowLabelFilter="true" allowValueFilter="true">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>
