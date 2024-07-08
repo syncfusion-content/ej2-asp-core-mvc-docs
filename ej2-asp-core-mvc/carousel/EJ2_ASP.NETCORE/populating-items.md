@@ -33,7 +33,7 @@ When rendering the Carousel component using data binding, you can assign a commo
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/item-datasource/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class CarouselDataBinding
 {
     public int Id { get; set; }

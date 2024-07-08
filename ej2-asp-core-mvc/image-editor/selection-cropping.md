@@ -131,7 +131,7 @@ Output be like the below.
 
 ## Cropping event 
 
-The `cropping` event is triggered when performing cropping on the image. This event is passed an object that contains information about the cropping event, such as the start and end point of the selection region. And this event uses `CropEventArgs` to handle the cropping action in the image.
+The [`cropping`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Cropping) event is triggered when performing cropping on the image. This event is passed an object that contains information about the cropping event, such as the start and end point of the selection region. And this event uses `CropEventArgs` to handle the cropping action in the image.
 
 The parameter available in the `cropping` event is, 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ranges in ##Platform_Name## Bullet Chart Component
+title: Ranges in ##Platform_Name## Bullet Chart Component | Syncfusion
 description: Learn here all about Ranges in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ranges
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Ranges
+# Ranges in Bullet Chart Control
 
 Ranges represent the quality of a specific range such as **Good**, **Bad** and **Satisfactory** in the Bullet Chart scale. The ending point of a qualitative range is specified in the [`End`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Range.html#Syncfusion_EJ2_Charts_Range_End) property in [`Ranges`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Ranges). The [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Minimum) value of a quantitative scale is considered the starting point of the first range or the previous range end point.
 
@@ -19,8 +19,14 @@ Ranges represent the quality of a specific range such as **Good**, **Bad** and *
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/ranges/ranges/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Ranges.cs" %}
-{% include code-snippet/bullet-chart/ranges/ranges/ranges.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class Range
+{           
+    public double value;
+    public double target;
+    public string category;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,8 +56,14 @@ Enhance the readability of ranges with color and opacity. It can be applied usin
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/ranges/ranges-custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Ranges-custom.cs" %}
-{% include code-snippet/bullet-chart/ranges/ranges-custom/ranges-custom.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class Custom
+{           
+    public double value;
+    public double target;
+    public string category;
+}
 {% endhighlight %}
 {% endtabs %}
 

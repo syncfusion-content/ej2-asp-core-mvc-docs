@@ -113,7 +113,57 @@ In protected spreadsheet, to make some particular cell or range of cells are edi
 {% endtabs %}
 {% endif %}
 
+## Make cells read-only without protecting worksheet
 
+Previously, you could make cells read-only by protecting the entire sheet using the `protectSheet` method or through the UI option. Meanwhile, to make a specific range of cells editable within a protected sheet, you needed to use the `lockCells` method, passing the `range` parameter and setting the `isLocked` property to **false**. 
+
+Now, you can make an entire row, an entire column, or a specific range of cells read-only using the `setRangeReadOnly` method without protecting the entire sheet. This method accepts three parameters, as detailed in the following table:
+
+| Parameter | Description |
+|-----|------|
+| `readOnly` | Specifies whether an entire row, an entire column, or a specific range of cells should be set as read-only (**true**) or editable (**false**). |.
+| `range` | Specifies the particular range of cells to be set as read-only. |
+| `sheetIndex` | Specifies the index of the sheet. |
+
+You can make an entire row, an entire column, or a specific range of cells read-only by passing the range as shown in the code snippet below:
+
+```js
+// To set read-only for single cell.
+spreadsheet.setRangeReadOnly(true, 'A2', 0)
+// To set read-only for range of cells.
+spreadsheet.setRangeReadOnly(true, 'A2:B5', 0)
+// To set read-only for entire row.
+spreadsheet.setRangeReadOnly(true, '3:3', 0)
+// To set read-only for entire column.
+spreadsheet.setRangeReadOnly(true, 'A:A', 0)
+```
+
+You can make the cells read-only in the cell data binding by setting the `isReadOnly` property to **true** for the respective rows, columns, and cells.
+
+The following example demonstrates how to make rows, columns, and cells read-only without protecting the sheet:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/read-only/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ReadOnlyController.cs" %}
+{% include code-snippet/spreadsheet/read-only/readOnlyController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/read-only/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ReadOnlyController.cs" %}
+{% include code-snippet/spreadsheet/read-only/readOnlyController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Protect Workbook
 

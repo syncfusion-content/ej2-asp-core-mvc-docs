@@ -1,0 +1,8 @@
+<ejs-chart id="container" title="Order Details">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category"></e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series xName="CustomerID" yName="Freight" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" query="new ej.data.Query()">
+            <e-data-manager url="https://services.syncfusion.com/aspnet/production/api/orders" adaptor="ODataAdaptor" offline="true"></e-data-manager>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div id="container" style="width: 500px">
+    @Html.EJS().MultiColumnComboBox("groupTemplate").DataSource((IEnumerable<object>)Model).Fields(new MultiColumnComboBoxFieldSettings
+    { Text = "CustomerID", Value = "OrderID", GroupBy= "CustomerID" }).Columns(col =>
+    {
+        col.Field("OrderID").Header("Order ID").Width("120").Add();
+        col.Field("CustomerID").Header("Customer ID").Width("140").Add();
+        col.Field("Freight").Header("Freight").Width("120").Add();
+        col.Field("OrderDate").Header("Order Date").Width("140").Add();
+    }).GroupTemplate("<div class=\"e-group-temp\">Key is: ${key}, Field is: ${field}, Count is: ${count}</div>").Render()
+</div>

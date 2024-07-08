@@ -105,8 +105,8 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 * [Real time example using Toast](https://ej2.syncfusion.com/aspnetmvc/Toast/Template#/material)
 
-* [How to close the toast with click/tap](./how-to/close-the-toast-with-click-tap/)
+* [How to close the toast with click/tap](https://ej2.syncfusion.com/aspnetmvc/documentation/toast/how-to/close-the-toast-with-click-tap)
 
-* [How to prevent duplicate toast display](./how-to/prevent-duplicate-toast-display/)
+* [How to prevent duplicate toast display](https://ej2.syncfusion.com/aspnetmvc/documentation/toast/how-to/prevent-duplicate-toast-display)
 
-* [How to show different types of toast](./how-to/show-different-types-of-toast/)
+* [How to show different types of toast](https://ej2.syncfusion.com/aspnetmvc/documentation/toast/how-to/show-different-types-of-toast)

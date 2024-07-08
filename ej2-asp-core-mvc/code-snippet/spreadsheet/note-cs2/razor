@@ -1,0 +1,16 @@
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Open").AllowOpen(true).SaveUrl("Save").AllowSave(true).EnableNotes(false).Created("created").Sheets(sheet =>
+{
+    sheet.Name("Price Details").Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+    }).Add();
+}).Render()
+
+< script >
+
+    function created() {
+    this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+    this.cellFormat({ verticalAlign: 'middle' }, 'A1:H1');
+}
+
+</ script >

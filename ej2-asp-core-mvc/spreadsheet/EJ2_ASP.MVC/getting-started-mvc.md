@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET MVC Spreadsheet control in `~/Views/Home/Index.c
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Spreadsheet control will be rendered in the default web browser.
 
-![ASP.NET MVC Spreadsheet Control](images/spreadsheet.PNG)
+![ASP.NET MVC Spreadsheet Control](images/spreadsheet.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Spreadsheet/ASP.NET%20MVC%20Razor%20Examples).
 

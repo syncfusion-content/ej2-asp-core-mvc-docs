@@ -1,6 +1,23 @@
 @using Syncfusion.EJ2;
 @using Syncfusion.EJ2.Navigations;
 
+@{
+    Dictionary<string, object> htmlAttribute = new Dictionary<string, object>()
+        { { "class", "sidebar-treeview" } };
+    
+    List<TreeDatas> treedata = new List<TreeDatas>();
+    treedata.Add(new TreeDatas { nodeId = "01", nodeText = "Installation" });
+    treedata.Add(new TreeDatas { nodeId = "02", nodeText = "Deployment" });
+    treedata.Add(new TreeDatas { nodeId = "03", nodeText = "Quick Start" });
+    treedata.Add(new TreeDatas { nodeId = "04", nodeText = "Components", hasChild = true });
+    treedata.Add(new TreeDatas { nodeId = "04-01", nodeText = "Calendar", pid = "04" });
+    treedata.Add(new TreeDatas { nodeId = "04-02", nodeText = "DatePicker", pid = "04" });
+    treedata.Add(new TreeDatas { nodeId = "04-03", nodeText = "DateTimePicker", pid = "04" });
+    treedata.Add(new TreeDatas { nodeId = "04-04", nodeText = "DateRangePicker", pid = "04" });
+    treedata.Add(new TreeDatas { nodeId = "04-05", nodeText = "TimePicker", pid = "04" });
+    treedata.Add(new TreeDatas { nodeId = "04-06", nodeText = "SideBar", pid = "04" });
+}
+
 <div class="default-appbar-section">
     <div>
         <ejs-appbar id="defaultAppBar">
@@ -12,7 +29,7 @@
             </e-content-template>
         </ejs-appbar>
     </div>
-    <ejs-sidebar id="sideTree" htmlAttributes="ViewBag.HtmlAttribute" width="290px" target=".main-content" mediaQuery="(min-width: 600px)" isOpen="true">
+    <ejs-sidebar id="sideTree" htmlAttributes="@htmlAttribute" width="290px" target=".main-content" mediaQuery="(min-width: 600px)" isOpen="true">
         <e-content-template>
            <div class='main-menu'>
                <div class="table-content">
@@ -21,7 +38,7 @@
                </div>
                <div>
                    <ejs-treeview id="mainTree" cssClass="main-treeview" expandOn="Click">
-                      <e-treeview-fields id="nodeId" text="nodeText" dataSource="ViewBag.TreeData" hasChildren="hasChild" parentID="pid"></e-treeview-fields>
+                      <e-treeview-fields id="nodeId" text="nodeText" dataSource="@treedata" hasChildren="hasChild" parentID="pid"></e-treeview-fields>
                    </ejs-treeview>
                </div>
            </div>

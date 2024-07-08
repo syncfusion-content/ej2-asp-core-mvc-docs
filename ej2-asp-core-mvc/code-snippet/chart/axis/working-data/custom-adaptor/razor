@@ -1,0 +1,28 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+        XName("CustomerID").
+        YName("Sno").
+        DataSource("dataManager").
+        Query("query").
+        Add();
+    }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+    ).Title("Order Details").Render()
+
+<script>
+    class SerialNoAdaptor extends ej.data.ODataAdaptor {
+        processResponse() {
+            var i= 0;
+            // calling base class processResponse function
+            var original = super.processResponse.apply(this, arguments);
+            // adding serial number
+            original.result.forEach(function(item){item['Sno'] = ++i});
+            return { result: original.result, count: original.count };
+        }
+    }
+    var dataManager = new ej.data.DataManager({
+        url: 'https://services.syncfusion.com/aspnet/production/api/orders',
+        adaptor: new SerialNoAdaptor()
+    });
+    var query = new ej.data.Query();
+</script>

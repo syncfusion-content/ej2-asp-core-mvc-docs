@@ -269,6 +269,51 @@ public IActionResult Save()
 
 ```
 
+### Client-side configuration for saving and returning responses
+
+The following example demonstrates the client-side action for saving files on the server and returning responses in JSON, String, and File formats.
+
+```c#
+
+@using Syncfusion.EJ2
+
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = @Url.Content("/api/FileUploader/Save") };
+}
+
+<ejs-uploader id="UploadFiles" success="OnSuccessHandler" asyncSettings="@asyncSettings">
+</ejs-uploader>
+
+<script>
+
+    function OnSuccessHandler(args) {
+        if (args.e !== null) // Check if the event argument is not null
+        { 
+            var responseText = args.e.target.responseText;
+            if (responseText.trim() !== "") {
+
+                // for JSON and File Datas
+                var jsonResponse = JSON.parse(responseText);
+                if (jsonResponse !== null && jsonResponse.hasOwnProperty("success"))
+                {
+                    var isSuccess = jsonResponse["success"];
+                    if (isSuccess) {
+                        // File upload success
+                        var message = jsonResponse.hasOwnProperty("message") ? jsonResponse["message"] : "File uploaded successfully";
+                        // Additional processing as needed
+                    }
+                }
+
+                // for string Data
+                var message = responseText;
+                // Additional processing as needed
+            }
+        }
+    }
+</script>
+
+```
+
 ## Remove action
 
 The remove action is optional. Specify the URL to handle remove process from server. 
@@ -523,3 +568,5 @@ N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/as
 * [How to add confirm dialog to remove the files](./how-to/add-confirm-dialog-to-remove-the-files)
 * [Check the MIME type of file before uploading it](./how-to/check-the-mime-type-of-file-before-upload-it)
 * [How to open and edit the uploaded files](./how-to/open-and-edit-the-uploaded-files)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/aspcore-uploader-webservices).

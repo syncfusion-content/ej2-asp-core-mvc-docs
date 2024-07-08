@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotation in ##Platform_Name## Accumulation Chart Component
+title: Annotation in ##Platform_Name## Accumulation Chart Component | Syncfusion
 description: Learn here all about Annotation in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Annotation
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Annotation
+# Annotation in ##Platform_Name## Accumulation Chart Component
 
 The annotations are used to mark the specific area of interest in the chart area with texts, shapes or images.
 
@@ -23,8 +23,13 @@ By using the <code>content</code> option of annotation property, you can specify
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/annotation/annotation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Annotation.cs" %}
-{% include code-snippet/chart/accumulation-charts/annotation/annotation/annotation.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,8 +57,13 @@ The annotation can be placed with respect to either `Series` or `Chart`.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/annotation/region/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Region.cs" %}
-{% include code-snippet/chart/accumulation-charts/annotation/region/region.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string x;
+    public double y;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,8 +91,13 @@ Specifies the coordinate units of an annotation either in `Pixel` or `Point`.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/annotation/co-ordinate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Co-ordinate.cs" %}
-{% include code-snippet/chart/accumulation-charts/annotation/co-ordinate/co-ordinate.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string x;
+    public double y;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,8 +125,13 @@ The annotations can be moved vertically and horizontally from its default positi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/annotation/alignment/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Alignment.cs" %}
-{% include code-snippet/chart/accumulation-charts/annotation/alignment/alignment.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class PieChartData
+{
+    public string x;
+    public double y;
+}
 {% endhighlight %}
 {% endtabs %}
 

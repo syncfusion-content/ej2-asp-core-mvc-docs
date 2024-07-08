@@ -11,7 +11,7 @@ documentation: ug
 
 # CustomValue
 
-The MultiSelect allows user to add a new non-present option to the control value when [allowCustomValue](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~AllowCustomValue.html) is enabled. while selecting the new custom value `customValueSelection` event will be triggered.
+The MultiSelect allows user to add a new non-present option to the control value when [allowCustomValue](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowCustomValue) is enabled. while selecting the new custom value `customValueSelection` event will be triggered.
 
 The following sample demonstrates configuration of custom value support with the MultiSelect control.
 

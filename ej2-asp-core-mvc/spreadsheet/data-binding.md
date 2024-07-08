@@ -49,6 +49,37 @@ Refer to the following code example for local data binding.
 
 N> The local data source can also be provided as an instance of the `DataManager`. By default, `DataManager` uses `JsonAdaptor` for local data-binding.
 
+### Customizing column data mapping
+
+By default, when a data source is bound to a sheet, columns are auto-assigned from the data source fields sequentially. This means that the first field in the data source is assigned to Column A, the second to Column B, and so on, sequentially. However, now you can customize the column assignments by specifying the appropriate field names in the desired order using the `fieldsOrder` property.
+
+> You can customize the mapping of column data only in the local data binding support.
+
+The following code example demonstrates how to customize the mapping of column data:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/field-mapping/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="FieldMappingController.cs" %}
+{% include code-snippet/spreadsheet/field-mapping/fieldMappingController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/field-mapping/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="FieldMappingController.cs" %}
+{% include code-snippet/spreadsheet/field-mapping/fieldMappingController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Remote data
 
 To bind remote data to the Spreadsheet control, assign service data as an instance of `DataManager` to the `dataSource` property. To interact with remote data source, provide the service endpoint `url`.
@@ -219,4 +250,3 @@ N> For `add` action, the value for all the fields will be `null` in the data. In
 * [Filtering](filter)
 * [Sorting](sort)
 * [Hyperlink](link)
-* [`Collaborative Editing`](use-cases/collaborative-editing)

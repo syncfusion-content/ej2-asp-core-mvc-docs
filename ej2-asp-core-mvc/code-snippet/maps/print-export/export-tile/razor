@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2;
 @Html.EJS().Button("togglebtn").IconCss("e-icons e-play-icon").Content("Export").CssClass("e-flat").Render()
 @Html.EJS().Maps("maps").AllowImageExport(true).Layers(l=> {
-    l.LayerType(Syncfusion.EJ2.Maps.ShapeLayerType.OSM).Add();
+    l.UrlTemplate("https://tile.openstreetmap.org/level/tileX/tileY.png").Add();
 }).Render()
 <script>
     document.getElementById('togglebtn').onclick = function () {
