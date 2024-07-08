@@ -1,0 +1,51 @@
+
+@Html.EJS().DocumentEditorContainer("container").Created("onCreate").EnableToolbar(true).Render()
+
+
+<script>
+    var container;
+    var containerPanel;
+    var contentChanged =false;
+    document.addEventListener('DOMContentLoaded', function () {
+        var documenteditorElement = document.getElementById("container");
+    container = documenteditorElement.ej2_instances[0];
+    container.contentChange=function(){
+        contentChanged = true;
+    }
+    });
+    function onCreate() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        setInterval(() => {
+            if (contentChanged) {
+                //You can save the document as below
+                container.documentEditor.saveAsBlob('Docx').then((blob) => {
+                    console.log('Saved sucessfully');
+                    let exportedDocument = blob;
+                    //Now, save the document where ever you want.
+                    let formData = new FormData();
+                    formData.append('fileName', 'sample.docx');
+                    formData.append('data', exportedDocument);
+                    /* tslint:disable */
+                    var req = new XMLHttpRequest();
+                    // Replace your running Url here
+                    req.open(
+                        'POST',
+                        'http://localhost:62869/api/documenteditor/AutoSave',
+                        true
+                    );
+                    req.onreadystatechange = () => {
+                        if (req.readyState === 4) {
+                            if (req.status === 200 || req.status === 304) {
+                                console.log('Saved sucessfully');
+                            }
+                        }
+                    };
+                    req.send(formData);
+                });
+                contentChanged = false;
+            }
+        }, 1000);
+    }
+
+</script>
