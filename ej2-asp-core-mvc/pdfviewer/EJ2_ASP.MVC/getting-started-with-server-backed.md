@@ -389,8 +389,7 @@ namespace GettingStartedMVC.Controllers
         public string tileXCount { get; set; }
         public string tileYCount { get; set; }
         public bool digitalSignaturePresent { get; set; }
-}
-
+    }
 }
 
 {% endhighlight %}

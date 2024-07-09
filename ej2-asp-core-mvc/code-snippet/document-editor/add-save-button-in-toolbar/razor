@@ -1,0 +1,23 @@
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditorContainer("container").Created("onDocCreate").EnableToolbar(true).Render()
+</div>
+
+<script>
+    function onDocCreate() {
+        var container = document.getElementById("container").ej2_instances[0];
+        var toolItem = {
+            prefixIcon: "e-save icon",
+            tooltipText: "Save the Document",
+            text: "Save",
+            id: "save"
+        };
+        container.toolbarItems = ['New','Open',toolItem, 'Separator' ,'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'InsertFootnote', 'InsertEndnote', 'Separator', 'Find', 'Separator', 'Comments', 'TrackChanges', 'Separator', 'LocalClipboard', 'RestrictEditing', 'Separator', 'FormFields', 'UpdateFields','ContentControl'];
+        container.toolbarClick = function (args) {
+            switch (args.item.id) {
+                case 'save':
+                    container.documentEditor.save('sample','Docx');
+                    break;
+            }
+        };
+    }
+</script>
