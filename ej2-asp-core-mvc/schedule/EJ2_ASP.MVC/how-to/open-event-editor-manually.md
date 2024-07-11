@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Event Editor Manually in ##Platform_Name## Schedule Component
+title: Open Event Editor Manually in ##Platform_Name## Schedule | Syncfusion
 description: Learn here all about Open Event Editor Manually in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open Event Editor Manually
