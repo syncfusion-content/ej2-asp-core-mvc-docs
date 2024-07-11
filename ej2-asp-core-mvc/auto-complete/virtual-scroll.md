@@ -31,8 +31,22 @@ In the following example, `text` column from complex data have been mapped to th
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/virtual-scroll/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="virtualscroll.cs" %}
-{% include code-snippet/autocomplete/virtual-scroll/virtualscroll.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class RecordData
+{
+    public string ID { get; set; }
+    public string Text { get; set; }
+    public List<RecordData> RecordList { set; get; }
+    public List<RecordData> RecordModelList()
+    {
+        return Enumerable.Range(1, 150).Select(i => new RecordData()
+        {
+            ID = i.ToString(),
+            Text = "Item " + i,
+        }).ToList();
+    }
+}
 {% endhighlight %}
 {% endtabs %} 
 
@@ -60,8 +74,22 @@ The following sample displays the OrderId from the `Orders` Data Service.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/virtual-scroll-remote/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="virtualscroll.cs" %}
-{% include code-snippet/autocomplete/virtual-scroll-remote/virtualscroll.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class BindingRecord
+{
+    public string ID { get; set; }
+    public string Text { get; set; }
+    public List<BindingRecord> RecordList { set; get; }
+    public List<BindingRecord> RecordModelList()
+    {
+        return Enumerable.Range(1, 150).Select(i => new BindingRecord()
+        {
+            ID = i.ToString(),
+            Text = "Item " + i,
+        }).ToList();
+    }
+}
 {% endhighlight %}
 {% endtabs %} 
 
@@ -73,6 +101,35 @@ The following sample displays the OrderId from the `Orders` Data Service.
 {% endhighlight %}
 {% highlight c# tabtitle="virtualscroll.cs" %}
 {% include code-snippet/autocomplete/virtual-scroll-remote/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Customizing items count in virtualization 
+
+When the `enableVirtualization` property is enabled, the `take` property provided by the user within the Query parameter at the initial state or during the `actionBegin` event will be considered. Internally, it calculates the items that fit onto the current page (i.e., probably twice the amount of the popup's height). If the user-provided take value is less than the minimum number of items that fit into the popup, the user-provided take value will not be considered.
+
+The following sample shows the example for Customizing items count in virtualization.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/autocomplete/virtual-scroll-items/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/autocomplete/virtual-scroll-items/virtualscroll.cs %}
+{% endhighlight %}
+{% endtabs %} 
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/autocomplete/virtual-scroll-items/razor %}
+{% endhighlight %} 
+{% highlight c# tabtitle="virtualscroll.cs" %}
+{% include code-snippet/autocomplete/virtual-scroll-items/virtualscroll.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -89,8 +146,44 @@ The following sample shows the example for Grouping with Virtualization.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/virtual-scroll-group/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="virtualscroll.cs" %}
-{% include code-snippet/autocomplete/virtual-scroll-group/virtualscroll.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class GroupingRecord
+{
+    public string ID { get; set; }
+    public string Text { get; set; }
+    public string Group { get; set; }
+    public List<GroupingRecord> RecordList { set; get; }
+    public List<GroupingRecord> RecordModelList()
+    {
+        Random random = new Random();
+        return Enumerable.Range(1, 150).Select(i => new GroupingRecord()
+        {
+            ID = i.ToString(),
+            Text = "Item " + i,
+            Group = GetRandomGroup(random),
+
+        }).ToList();
+    }
+    public string GetRandomGroup(Random random)
+    {
+        // Generate a random number between 1 and 4 to determine the group
+        int randomGroup = random.Next(1, 5);
+        switch (randomGroup)
+        {
+            case 1:
+                return "Group A";
+            case 2:
+                return "Group B";
+            case 3:
+                return "Group C";
+            case 4:
+                return "Group D";
+            default:
+                return string.Empty;
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %} 
 

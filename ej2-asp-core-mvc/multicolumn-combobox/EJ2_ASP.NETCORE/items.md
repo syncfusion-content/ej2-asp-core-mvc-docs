@@ -196,6 +196,8 @@ The [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Mult
 {% endhighlight %}
 {% endtabs %}
 
+![Disabled](images/disabled.png)
+
 ## Setting read only
 
 You can use [readonly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Readonly) property to disable the user interactions in the multicolumn combobox control.

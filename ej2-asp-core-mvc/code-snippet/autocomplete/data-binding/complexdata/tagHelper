@@ -1,6 +1,16 @@
+@{
+    List<Complex> data = new List<Complex>();
+    data.Add(new Complex() { Country = new Country() { CountryId = "Australia"  }, Code = new Code() { Id = "AU" } });
+    data.Add(new Complex() { Country = new Country() { CountryId = "Bermuda" }, Code = new Code() { Id = "BM" } });
+    data.Add(new Complex() { Country = new Country() { CountryId = "Canada" }, Code = new Code() { Id = "CA" } });
+    data.Add(new Complex() { Country = new Country() { CountryId = "Cameroon" }, Code = new Code() { Id = "CM" } });
+    data.Add(new Complex() { Country = new Country() { CountryId = "Denmark" }, Code = new Code() { Id = "DK" } });
+    data.Add(new Complex() { Country = new Country() { CountryId = "France" }, Code = new Code() { Id = "FR" } });
+}
+
 <div class="control-wrapper">
     <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>
-        <ejs-autocomplete id="country" datasource="@ViewBag.data" placeholder="Select a Country" popupheight="220px">
+        <ejs-autocomplete id="country" datasource="@data" placeholder="Select a Country" popupheight="220px">
             <e-autocomplete-fields value="Country.CountryId"></e-autocomplete-fields>
         </ejs-autocomplete>
     </div>

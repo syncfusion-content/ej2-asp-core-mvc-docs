@@ -106,3 +106,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 * [How to load the document by default](../document-editor/how-to/open-default-document).
 * [How to customize tool bar](../document-editor/how-to/customize-tool-bar).
 * [How to resize Document editor component](../document-editor/how-to/resize-document-editor).
+* [How to add a save button to the DocumentEditorContainer component toolbar](../document-editor/how-to/add-save-button-in-toolbar)
