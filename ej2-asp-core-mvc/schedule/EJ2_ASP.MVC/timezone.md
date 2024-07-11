@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timezone in ##Platform_Name## Schedule Component
+title: Timezone in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Timezone in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Timezone
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Timezone
+# Timezone Customization
 
 The Scheduler makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the [`Timezone`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Timezone) property needs to be used. Apart from the default action of applying specific timezone to the Scheduler, it is also possible to set different time zone values for each appointments through the properties [`StartTimezone`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_StartTimezone) and [`EndTimezone`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_EndTimezone) which can be defined as separate fields within the event fields collection.
 

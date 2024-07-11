@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recurrence Editor in ##Platform_Name## Schedule Component
+title: Recurrence Editor in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Recurrence Editor in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Recurrence Editor
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Recurrence editor
+# Recurrence editor in ##Platform_Name## Schedule Component
 
 The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 

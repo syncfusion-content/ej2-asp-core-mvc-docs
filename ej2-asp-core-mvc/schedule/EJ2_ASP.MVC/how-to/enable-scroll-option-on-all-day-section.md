@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable Scroll Option On All Day Section in ##Platform_Name## Schedule Component
+title: Enable Scroll Option On All Day Section in ##Platform_Name## Schedule| Syncfusion
 description: Learn here all about Enable Scroll Option On All Day Section in Syncfusion ##Platform_Name## Schedule component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Enable Scroll Option On All Day Section

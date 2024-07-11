@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Customization in ##Platform_Name## Schedule Component
+title: Cell Customization in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Cell Customization in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cell Customization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cell Customization
+# Cell Customization in ##Platform_Name## Schedule Component
 
 The cells of the Scheduler can be easily customized either using the cell template or [`RenderCell`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event.
 

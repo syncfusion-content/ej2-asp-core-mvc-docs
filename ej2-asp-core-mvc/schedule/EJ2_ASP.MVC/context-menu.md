@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu in ##Platform_Name## Schedule Component
+title: Context Menu in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Context Menu in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Context Menu
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Context menu
+# Context menu in ##Platform_Name## Schedule Component
 
 You can display context menu on work cells and appointments of Scheduler by making use of the [`ContextMenu`](https://ej2.syncfusion.com/aspnetmvc/documentation/context-menu/getting-started) control manually from the application end. In the following code example, context menu control is being added from sample end and set its target as `Scheduler`.
 

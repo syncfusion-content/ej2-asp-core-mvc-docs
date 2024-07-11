@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Crud Actions in ##Platform_Name## Schedule Component
+title: Crud Actions in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Crud Actions in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Crud Actions
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CRUD Actions
+# CRUD Actions in ##Platform_Name## Schedule Component
 
 Events, a.k.a. Appointments, play an important role in Scheduler with which the users mostly interact. You can easily manipulate (add/edit/delete) the desired appointments as and when required either using the editor window or through the drag and resize action.
 

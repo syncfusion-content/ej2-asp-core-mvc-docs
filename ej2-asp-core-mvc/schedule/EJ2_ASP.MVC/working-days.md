@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working Days in ##Platform_Name## Schedule Component
+title: Working Days in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Working Days in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Working Days
@@ -127,7 +127,7 @@ By default, week numbers are shown in the Scheduler based on the first day of th
 
 `FirstFullWeek` – The first week of the year begins when meeting the first day of the week (firstDayOfWeek) and the first day of the year.
 
-For more details refer to [this link](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-8.0#remarks)
+For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks)
 
 {% if page.publishingplatform == "aspnet-core" %}
 
