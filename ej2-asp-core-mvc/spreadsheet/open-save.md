@@ -253,6 +253,29 @@ By default, the Spreadsheet control provides an option to browse files from the 
 
 Please find the code to fetch the blob data and load it into the Spreadsheet control below.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-from-blob/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/open-from-blob/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-from-blob/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/open-from-blob/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### External workbook confirmation dialog
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
