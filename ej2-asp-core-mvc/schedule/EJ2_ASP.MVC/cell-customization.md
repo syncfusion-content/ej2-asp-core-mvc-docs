@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Customization in ##Platform_Name## Schedule Component
+title: Cell Customization in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Cell Customization in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cell Customization
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Cell Customization
+# Cell Customization in ##Platform_Name## Schedule Component
 
-The cells of the Scheduler can be easily customized either using the cell template or `RenderCell` event.
+The cells of the Scheduler can be easily customized either using the cell template or [`RenderCell`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event.
 
 ## Setting cell dimensions in all views
 
-The height and width of the Scheduler cells can be customized either to increase or reduce its size through the `CssClass` property, which overrides the default CSS applied on cells.
+The height and width of the Scheduler cells can be customized either to increase or reduce its size through the [`CssClass`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CssClass) property, which overrides the default CSS applied on cells.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,11 +73,11 @@ You can check whether the given time range slots are available for event creatio
 
 ## Customizing cells in all the views
 
-It is possible to customize the appearance of the cells using both template options and `RenderCell` event on all the views.
+It is possible to customize the appearance of the cells using both template options and [`RenderCell`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event on all the views.
 
 ### Using template
 
-The `CellTemplate` option accepts the template string and is used to customize the cell background with specific images or appropriate text on the given date values.
+The [`CellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CellTemplate) option accepts the template string and is used to customize the cell background with specific images or appropriate text on the given date values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -106,7 +106,7 @@ The `CellTemplate` option accepts the template string and is used to customize t
 
 ### Using renderCell event
 
-An alternative to `CellTemplate` is the `RenderCell` event, which can also be used to customize the cells with appropriate images or formatted text values.
+An alternative to [`CellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CellTemplate) is the [`RenderCell`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event, which can also be used to customize the cells with appropriate images or formatted text values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -133,7 +133,7 @@ An alternative to `CellTemplate` is the `RenderCell` event, which can also be us
 
 
 
-You can customize cells such as work cells, month cells, all-day cells, header cells, resource header cells using `RenderCell` event by checking the `elementType` option within the event. You can check `elementType` with any of the following.
+You can customize cells such as work cells, month cells, all-day cells, header cells, resource header cells using [`RenderCell`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event by checking the `elementType` option within the event. You can check `elementType` with any of the following.
 
 | Element type | Description |
 |-------|---------|
@@ -151,7 +151,7 @@ You can customize cells such as work cells, month cells, all-day cells, header c
 
 ## Customizing cell header in month view
 
-The month header of each date cell in the month view can be customized using the `CellHeaderTemplate` option which accepts the string or HTMLElement. The corresponding date can be accessed with the template.
+The month header of each date cell in the month view can be customized using the [`CellHeaderTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CellHeaderTemplate) option which accepts the string or HTMLElement. The corresponding date can be accessed with the template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -178,7 +178,7 @@ The month header of each date cell in the month view can be customized using the
 
 ## Customizing the minimum and maximum date values
 
-Providing the `minDate` and `maxDate` property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler date that lies beyond this minimum and maximum date range will be in a disabled state so that the date navigation will be blocked beyond the specified date range.
+Providing the [`minDate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MinDate) and [`maxDate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MaxDate) property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler date that lies beyond this minimum and maximum date range will be in a disabled state so that the date navigation will be blocked beyond the specified date range.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -205,7 +205,7 @@ Providing the `minDate` and `maxDate` property with some date values, allows the
 
 
 
-N>By default, the `minDate` property value is set to new Date(1900, 0, 1) and `maxDate` property value is set to new Date(2099, 11, 31). The user can also set the customized `minDate` and `maxDate` property values.
+N>By default, the [`minDate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MinDate) property value is set to new Date(1900, 0, 1) and [`maxDate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MaxDate) property value is set to new Date(2099, 11, 31). The user can also set the customized [`minDate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MinDate) and [`maxDate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MaxDate) property values.
 
 ## Customizing the weekend cells background color
 
@@ -260,6 +260,6 @@ And, the background color for weekend cells in the Month view through the [`cssC
 
 ## How to disable multiple cell and row selection in Schedule
 
-By default, the `AllowMultiCellSelection` and `AllowMultiRowSelection` properties of the Schedule are set to `true`. So, the Schedule allows user to select multiple cells and rows. If the user want to disable this multiple cell and row selection. The user can disable this feature by setting up `false` to these properties.
+By default, the [`AllowMultiCellSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowMultiCellSelection) and [`AllowMultiRowSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowMultiRowSelection) properties of the Schedule are set to `true`. So, the Schedule allows user to select multiple cells and rows. If the user want to disable this multiple cell and row selection. The user can disable this feature by setting up `false` to these properties.
 
 N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
