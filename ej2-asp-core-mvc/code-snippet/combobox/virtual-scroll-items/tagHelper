@@ -1,0 +1,13 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-combobox id="records" dataSource="@ViewBag.data" query="new ej.data.Query().take(40)" actionBegin="onbegin" placeholder="Select a item" allowFiltering="false" enableVirtualization="true" popupHeight="200px">
+            <e-combobox-fields value="ID" text="Text"></e-combobox-fields>
+        </ejs-combobox>
+    </div>
+</div>
+
+<script>
+    function onbegin(e) {
+        e.query = new ej.data.Query().take(45);
+    }
+</script>

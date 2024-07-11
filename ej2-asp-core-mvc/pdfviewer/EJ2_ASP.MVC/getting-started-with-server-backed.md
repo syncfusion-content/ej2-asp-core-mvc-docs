@@ -378,14 +378,17 @@ namespace GettingStartedMVC.Controllers
         public string uniqueId { get; set; }
         public string data { get; set; }
         public string viewPortWidth { get; set; }
-        public string viewportHeight { get; set; }
+        public string viewPortHeight { get; set; }
         public string tilecount { get; set; }
         public string isCompletePageSizeNotReceived { get; set; }
         public string freeTextAnnotation { get; set; }
         public string signatureData { get; set; }
         public string fieldsData { get; set; }
-        public string FormDesigner { get; set; }
+        public string formDesigner { get; set; }
         public string inkSignatureData { get; set; }
+        public string tileXCount { get; set; }
+        public string tileYCount { get; set; }
+        public bool digitalSignaturePresent { get; set; }
     }
 }
 
