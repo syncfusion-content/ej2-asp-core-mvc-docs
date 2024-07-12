@@ -1,0 +1,10 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height(270).Columns(col =>
+{
+    col.Type("checkbox").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderID").HeaderText("Order ID").Type("number").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Type("string").Width("100").Add();
+    col.Field("Freight").HeaderText("Freight").Type("number").Format("C2").Width("80").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Type("date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+    col.Field("ShippedDate").HeaderText("Shipped Date").Type("date").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("dd/MM/yyyy hh:mm").Add();
+    col.Field("Verified").HeaderText("Verified").Type("boolean").DisplayAsCheckBox(true).Width("80").Add();
+}).Render()
