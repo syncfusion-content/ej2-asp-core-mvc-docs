@@ -8,12 +8,11 @@
             text: "Disable Image",
             id: "Custom"
         };
-        container.toolbarItems = [toolItem, 'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'InsertFootnote', 'InsertEndnote', 'Separator', 'Find', 'Separator', 'Comments', 'TrackChanges', 'Separator', 'LocalClipboard', 'RestrictEditing', 'Separator', 'FormFields', 'UpdateFields','ContentControl'];
+        container.toolbarItems = ['New','Open',toolItem, 'Separator' ,'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'Comments', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'Separator', 'Find', 'Separator', 'LocalClipboard', 'RestrictEditing'];
         container.toolbarClick = function (args) {
             switch (args.item.id) {
                 case 'Custom':
-                    //Disable image toolbar item.
-                    container.toolbar.enableItems(4, false);
+                    container.documentEditor.save('Sample', 'Docx');
                     break;
             }
         };
