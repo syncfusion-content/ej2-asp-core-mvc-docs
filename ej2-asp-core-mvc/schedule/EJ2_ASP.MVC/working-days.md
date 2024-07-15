@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working Days in ##Platform_Name## Schedule Component
+title: Working Days in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Working Days in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Working Days
@@ -127,7 +127,7 @@ By default, week numbers are shown in the Scheduler based on the first day of th
 
 `FirstFullWeek` – The first week of the year begins when meeting the first day of the week (firstDayOfWeek) and the first day of the year.
 
-For more details refer to [this link](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-8.0#remarks)
+For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks)
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -160,9 +160,9 @@ For more details refer to [this link](https://learn.microsoft.com/en-us/dotnet/a
 
 Working hours indicates the work hour limit within the Scheduler, which is visually highlighted with an active color on work cells. The working hours can be set on Scheduler using the `WorkHours` property which is of object type and includes the following sub-options,
 
-* `Highlight` – enables/disables the highlighting of work hours.
-* `Start` - sets the start time of the working/business hour of a day.
-* `End` - sets the end time limit of the working/business hour of a day.
+* [`Highlight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_Highlight) – enables/disables the highlighting of work hours.
+* [`Start`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_Start) - sets the start time of the working/business hour of a day.
+* [`End`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_End) - sets the end time limit of the working/business hour of a day.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -191,7 +191,7 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 
 ## Scheduler displaying custom hours
 
-It is possible to display the event Scheduler layout with specific time durations by hiding the unwanted hours. To do so, set the start and end hour for the Scheduler using the `StartHour` and `EndHour` properties respectively.
+It is possible to display the event Scheduler layout with specific time durations by hiding the unwanted hours. To do so, set the start and end hour for the Scheduler using the [`StartHour`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_StartHour) and [`EndHour`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EndHour) properties respectively.
 
 The following code example displays the Scheduler starting from the time range 7.00 AM to 6.00 PM and the remaining hours are hidden on the UI.
 
@@ -222,7 +222,7 @@ The following code example displays the Scheduler starting from the time range 7
 
 ## Setting start day of the week
 
-By default, Scheduler defaults to `Sunday` as its first day of a week. To change the Scheduler's start day of a week with different day, set the `FirstDayOfWeek` property with the values ranging from 0 to 6.
+By default, Scheduler defaults to `Sunday` as its first day of a week. To change the Scheduler's start day of a week with different day, set the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_FirstDayOfWeek) property with the values ranging from 0 to 6.
 
 > Here, Sunday is always denoted as 0, Monday as 1 and so on.
 
