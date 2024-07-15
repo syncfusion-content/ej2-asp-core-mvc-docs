@@ -59,7 +59,15 @@ docker-compose up
 
 Now the Spreadsheet server Docker instance runs on localhost with the provided port number `http://localhost:6002`. Open this link in a browser and navigate to the Spreadsheet Web API open and save service at `http://localhost:6002/api/spreadsheet/open` and `http://localhost:6002/api/spreadsheet/save`.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 **Step 4:** Append the URLs of the Docker instance running services to the [`openUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_OpenUrl) property as `http://localhost:6002/api/spreadsheet/open` and the [`saveUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SaveUrl) property as `http://localhost:6002/api/spreadsheet/save` in the client-side Spreadsheet control. For more information on how to get started with the Spreadsheet control, refer to this [`getting started page.`](https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/getting-started-core)
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+**Step 4:** Append the URLs of the Docker instance running services to the [`openUrl`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_OpenUrl) property as `http://localhost:6002/api/spreadsheet/open` and the [`saveUrl`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SaveUrl) property as `http://localhost:6002/api/spreadsheet/save` in the client-side Spreadsheet control. For more information on how to get started with the Spreadsheet control, refer to this [`getting started page.`](https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/getting-started-mvc)
+
+{% endif %}
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -81,19 +89,6 @@ Now the Spreadsheet server Docker instance runs on localhost with the provided p
 ```
 
 {% endhighlight %}
-
-{% highlight c# tabtitle="Opencontroller.cs" %}
-
-```cs
-public IActionResult Open(IFormCollection openRequest)
-{
-    OpenRequest open = new OpenRequest();
-    open.File = openRequest.Files[0];
-    return Content(Workbook.Open(open));
-}
-```
-
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -111,16 +106,6 @@ public IActionResult Open(IFormCollection openRequest)
     }
 
 </script>
-```
-{% endhighlight %}
-{% highlight c# tabtitle="Opencontroller.cs" %}
-```cs
-public IActionResult Open(IFormCollection openRequest)
-{
-    OpenRequest open = new OpenRequest();
-    open.File = openRequest.Files[0];
-    return Content(Workbook.Open(open));
-}
 ```
 {% endhighlight %}
 {% endtabs %}
