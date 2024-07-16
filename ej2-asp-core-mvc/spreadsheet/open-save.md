@@ -187,6 +187,7 @@ The following code example shows how to open an Excel file using a hosted web se
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+
 ```
 @Html.EJS().Spreadsheet("spreadsheet").OpenUrl("https://xxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/open").AllowOpen(true).BeforeOpen("beforeOpen").Render()
 
@@ -234,11 +235,11 @@ The following code example shows how to open an Excel file using a hosted web se
 
 </script>
 ```
+
 {% endhighlight %}
 
 {% endtabs %}
 {% endif %}
-
 
 ### Open an excel file from Base64 string data
 
@@ -465,7 +466,7 @@ The following code example shows how to save an Excel file using a hosted web se
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-`
+
 ```
 <ejs-spreadsheet id="spreadsheet" saveUrl="https://xxxxxxxxxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/save" allowSave = "true" beforeSave="beforeSave">
 
@@ -537,6 +538,7 @@ The following code example shows how to save an Excel file using a hosted web se
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+
 ```
 @Html.EJS().Spreadsheet("spreadsheet").SaveUrl("https://xxxxxxxxxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/save").AllowSave(true).BeforeSave("beforeSave").Render()
 
@@ -598,6 +600,7 @@ The following code example shows how to save an Excel file using a hosted web se
     };
 </script>
 ```
+
 {% endhighlight %}
 
 {% endtabs %}
