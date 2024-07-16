@@ -127,9 +127,6 @@ The following code example shows how to open an Excel file using a hosted web se
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
 ```
 <ejs-spreadsheet id="spreadsheet" openUrl="https://xxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/open" allowOpen = "true" beforeOpen="beforeOpen">
 
@@ -180,13 +177,7 @@ The following code example shows how to open an Excel file using a hosted web se
 </script>
 ```
 
-{% endhighlight %}
-{% endtabs %}
-
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
 
 ```
 @Html.EJS().Spreadsheet("spreadsheet").OpenUrl("https://xxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/open").AllowOpen(true).BeforeOpen("beforeOpen").Render()
@@ -236,9 +227,6 @@ The following code example shows how to open an Excel file using a hosted web se
 </script>
 ```
 
-{% endhighlight %}
-
-{% endtabs %}
 {% endif %}
 
 ### Open an excel file from Base64 string data
