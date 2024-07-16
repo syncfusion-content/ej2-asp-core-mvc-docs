@@ -247,6 +247,35 @@ The following code example shows how to open the spreadsheet data as base64 stri
 {% endtabs %}
 {% endif %}
 
+### To open an excel file from blob data
+
+By default, the Spreadsheet control provides an option to browse files from the local file system and open them within the control. If you want to open an Excel file from blob data, you need to fetch the blob data from the server or another source and convert this blob data into a `File` object. Then, you can use the `open` method in the Spreadsheet control to load that `File` object.
+
+Please find the code to fetch the blob data and load it into the Spreadsheet control below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-from-blob/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/open-from-blob/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-from-blob/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/open-from-blob/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### To open an Excel file located on a server
 
 By default, the Spreadsheet control provides an option to browse files from the local file system and open them within the control. If you want to load an Excel file located on a server, you need to configure the server endpoint to fetch the Excel file from the server location, process it using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, and send it back to the client side as `JSON data`. On the client side, you should use the `openFromJson` method to load that `JSON data` into the Spreadsheet control.
@@ -534,6 +563,35 @@ The following code example shows how to save the spreadsheet data as base64 stri
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
 {% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### To save an excel file as blob data
+
+By default, the Spreadsheet control saves the Excel file and downloads it to the local file system. If you want to save an Excel file as blob data, you need to set `needBlobData` property to **true** and `isFullPost` property to **false** in the `beforeSave` event of the spreadsheet. Subsequently, you will receive the spreadsheet data as a blob in the `saveComplete` event. You can then post the blob data to the server endpoint for saving.
+
+Please find below the code to retrieve blob data from the Spreadsheet control below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-as-blob/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveController.cs" %}
+{% include code-snippet/spreadsheet/save-as-blob/savecontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-as-blob/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveController.cs" %}
+{% include code-snippet/spreadsheet/save-as-blob/savecontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
