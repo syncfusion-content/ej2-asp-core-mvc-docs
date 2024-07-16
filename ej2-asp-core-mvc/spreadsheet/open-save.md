@@ -251,8 +251,6 @@ The following code example shows how to open the spreadsheet data as base64 stri
 
 By default, the Spreadsheet control provides an option to browse files from the local file system and open them within the control. If you want to load an Excel file located on a server, you need to configure the server endpoint to fetch the Excel file from the server location, process it using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, and send it back to the client side as `JSON data`. On the client side, you should use the `openFromJson` method to load that `JSON data` into the Spreadsheet control.
 
-**Server Endpoint**:
-
 ```csharp
     public IActionResult Open([FromBody] FileOptions options)
     {
@@ -275,12 +273,10 @@ By default, the Spreadsheet control provides an option to browse files from the 
     }
 ```
 
-**Client Side**:
-
 ```js
 
     // Fetch call to server to load the Excel file.
-    fetch('https://localhost:{{Your port number}}/Home/Open', {
+    fetch('Home/Open', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -295,12 +291,7 @@ By default, the Spreadsheet control provides an option to browse files from the 
 
 ```
 
-You can find the server endpoint code to fetch and process the Excel file in this [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187). After launching the server endpoint, you need to update the URL on the client side sample as shown below.
-
-```js
-// To open an Excel file from the server.
-fetch('https://localhost:{port number}/Home/Open')
-```
+You can find the server endpoint code to fetch and process the Excel file in this [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187). 
 
 ### External workbook confirmation dialog
 
@@ -551,8 +542,6 @@ The following code example shows how to save the spreadsheet data as base64 stri
 
 By default, the Spreadsheet control saves the Excel file and downloads it to the local file system. If you want to save an Excel file to a server location, you need to configure the server endpoint to convert the spreadsheet data into a file stream and save it to the server location. To do this, first, on the client side, you must convert the spreadsheet data into `JSON` format using the `saveAsJson` method and send it to the server endpoint. On the server endpoint, you should convert the received spreadsheet `JSON` data into a file stream using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, then convert the stream into an Excel file, and finally save it to the server location.
 
-**Client Side**:
-
 ```js
 
     // Convert the spreadsheet workbook to JSON data.
@@ -564,7 +553,7 @@ By default, the Spreadsheet control saves the Excel file and downloads it to the
         formData.append('JSONData', JSON.stringify(json.jsonObject.Workbook));
         formData.append('PdfLayoutSettings', JSON.stringify({ FitSheetOnOnePage: false }));
         // Using fetch to invoke the save process.
-        fetch('https://localhost:{{Your port number}}/Home/Save', {
+        fetch('Home/Save', {
             method: 'POST',
             body: formData
         }).then((response) => {
@@ -573,8 +562,6 @@ By default, the Spreadsheet control saves the Excel file and downloads it to the
     });
 
 ```
-
-**Server Endpoint**:
 
 ```csharp
 
@@ -607,12 +594,7 @@ By default, the Spreadsheet control saves the Excel file and downloads it to the
 
 ```
 
-You can find the server endpoint code to save the spreadsheet data as an Excel file in this [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187). After launching the server endpoint, you need to update the URL on the client side sample as shown below.
-
-```js
-//To save an Excel file to the server.
-fetch('https://localhost:{port number}/Home/Save')
-```
+You can find the server endpoint code to save the spreadsheet data as an Excel file in this [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187).
 
 ### Supported file formats
 
@@ -649,7 +631,6 @@ To save the Spreadsheet document as an `xlsx, xls, csv, or pdf` file, by using `
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 
 ## Server Configuration
