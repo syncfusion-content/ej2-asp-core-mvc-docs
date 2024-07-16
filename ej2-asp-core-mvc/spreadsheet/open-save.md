@@ -130,6 +130,7 @@ The following code example shows how to open an Excel file using a hosted web se
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
+```
 <ejs-spreadsheet id="spreadsheet" openUrl="https://xxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/open" allowOpen = "true" beforeOpen="beforeOpen">
 
 </ejs-spreadsheet>
@@ -177,6 +178,7 @@ The following code example shows how to open an Excel file using a hosted web se
     };
 
 </script>
+```
 
 {% endhighlight %}
 {% endtabs %}
@@ -463,7 +465,8 @@ The following code example shows how to save an Excel file using a hosted web se
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-
+`
+```
 <ejs-spreadsheet id="spreadsheet" saveUrl="https://xxxxxxxxxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/save" allowSave = "true" beforeSave="beforeSave">
 
 </ejs-spreadsheet>
@@ -525,6 +528,7 @@ The following code example shows how to save an Excel file using a hosted web se
         });        
     };
 </script>
+```
 
 {% endhighlight %}
 {% endtabs %}
