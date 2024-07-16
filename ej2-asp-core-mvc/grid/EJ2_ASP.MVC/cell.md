@@ -36,7 +36,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 > * If the property is set to **false**, the HTML tags will be removed and displayed as plain text.
 > * Disabling HTML encoding can potentially introduce security vulnerabilities, so use caution when enabling this feature.
 > * If [EnableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableHtmlSanitizer) property of grid is set to true, then the content is sanitized to prevent any potential security vulnerabilities.
-> * You can also disable the `DisableHtmlEncode` property of the column using [getColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumns) method on [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event of Switch component.This is demonstrated in the below code snippet, 
+> * You can also disable the `DisableHtmlEncode` property of the column using `getColumns` method on [change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event of Switch component.This is demonstrated in the below code snippet, 
 
 ```javascript
 function change(args) {
@@ -51,12 +51,31 @@ function change(args) {
 
 ## Autowrap the content
 
+The auto wrap feature allows the cell content in the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Syncfusion Grid, you should set the appropriate [Width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
 
+To enable auto wrap, set the [allowTextWrap](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowTextWrap) property to **true**. You can also configure the wrap mode by setting the [textWrapSettings.wrapMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridTextWrapSettings.html#Syncfusion_EJ2_Grids_GridTextWrapSettings_WrapMode) property.
 
+Grid provides the below three options for configuring:
+
+* **Both** - This is the default value for wrapMode. With this option, both the grid **Header** and **Content** text is wrapped.
+* **Header** - With this option, only the grid header text is wrapped.
+* **Content** - With this option, only the grid content is wrapped.
+
+The following example demonstrates how to set the `allowTextWrap` property to **true** and specify the wrap mode as **Content** by setting the `textWrapSettings.wrapMode` property. Also change the `textWrapSettings.wrapMode` property to **Content** and **Both** on changing the dropdown value using the [change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the DropDownList component.
+
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/cell/autowrap/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Autowrap.cs" %}
+{% include code-snippet/grid/cell/autowrap/autowrap.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Auto Wrap the content ](../images/cell/auto-wrap.png)
 
 > * If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
 > * If a column's header text contains no white space, the text may not be wrapped.
-> * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) properties of the column to customize the appearance of the header and cell content.
+> * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the `headerTemplate` and `template` properties of the column to customize the appearance of the header and cell content.
 
 ## Customize cell styles
 
@@ -157,7 +176,7 @@ The following example demonstrates how to use getColumnHeaderByIndex and getCell
 
 ![Customize cell using property](../images/cell/customize-cell-using-method.png)
 
-> Make sure to pass the correct row and column indices to [getCellFromIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcellfromindex) method, or else the appearance of the wrong cell might get customized.
+> Make sure to pass the correct row and column indices to `getCellFromIndex` method, or else the appearance of the wrong cell might get customized.
 
 ## Clip Mode
 
@@ -169,4 +188,110 @@ There are three types of `ClipMode` available:
 * **Ellipsis**: Displays ellipsis when the cell content overflows its area.
 * **EllipsisWithTooltip**: Displays ellipsis when the cell content overflows its area, also it will display the tooltip while hover on ellipsis is applied. Also it will display the tooltip while hover on ellipsis is applied.
 
-The following example demonstrates, how to set the `clipMode` property to **Clip** , **Ellipsis** and **EllipsisWithTooltip** for the **Main Fields of Invention** column, on changing the dropdown value using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the `DropDownList` component. The [refresh](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method is used to refresh the grid and display the updated content.
+The following example demonstrates, how to set the `clipMode` property to **Clip** , **Ellipsis** and **EllipsisWithTooltip** for the **Main Fields of Invention** column, on changing the dropdown value using the [change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the `DropDownList` component. The `refresh` method is used to refresh the grid and display the updated content.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/cell/clipmode/tagHelper %}
+{% endhighlight %}c
+{% highlight c# tabtitle="Clipmode.cs" %}
+{% include code-snippet/grid/cell/clipmode/clipmode.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Clip Mode](../images/cell/clip-mode.gif)
+
+> * By default, `ClipMode` value is **Ellipsis**.
+> * If you set the [width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) property of a column, the clip mode feature will be automatically applied to that column if the content exceeds the specified width.
+> * Be careful when using the Clip mode, as it may result in important information being cut off. It is generally recommended to use the Ellipsis or EllipsisWithTooltip modes instead.
+
+## Tooltip
+
+The Syncfusion Grid allows you to display information about the grid columns to the user when they hover over them with the mouse.
+
+### Render bootstrap tooltip in grid cells
+
+The Grid control allows rendering Bootstrap tooltips in the cells. To enable this feature, you need to add the Bootstrap CDN link and call the tooltip() method to initialize the tooltip. 
+
+This is demonstrated in the sample code below which shows how to enable Bootstrap tooltip for the **CustomerID** field using `template` property in grid cells,
+
+Step 1: Add the CDN link of Boostrap in the `_Layout.cshtml` file. Place the `link` tag in the `head` for the CSS. 
+
+```html
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+```
+
+Step 2: The following code demonstrates how to render Bootstrap tooltip for the **CustomerID** field with `template` on grid cells.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/cell/tooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="tooltip.cs" %}
+{% include code-snippet/grid/cell/tooltip/clipmode.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot represents the Bootstrap tooltip for the **CustomerID** field,
+
+![ Render bootstrap tooltip in grid](../images/cell/render-tooltip.png)
+
+> * The Bootstrap CDN link must be added to the HTML file.
+
+### Display custom tooltip for columns
+
+The Grid provides a feature to display custom tooltips for its columns using the `EJ2 Tooltip` component. This allows you to provide additional information about the columns when the user hovers over them.
+
+To enable custom tooltips for columns in the Grid, you can render the Grid control inside the Tooltip component and set the target as `.e-rowcell`. This will display the tooltip when hovering over the grid cells.
+
+Change the tooltip content for the grid cells by using the following code in the [beforeRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Tooltip.html#Syncfusion_EJ2_Popups_Tooltip_BeforeRender) event.
+
+```typescript
+ beforeRender(args): void {
+    if (args.target.classList.contains('e-rowcell')) {
+        // event triggered before render the tooltip on target element.
+        this.tooltip.content = 'This is value "' + args.target.innerText + '" ';
+    }
+  }
+
+```
+
+The following example demonstrates how to customize the tooltip content for the grid cells by using the `beforeRender` event of the EJ2 Tooltip component.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/cell/custom-tooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="tooltip.cs" %}
+{% include code-snippet/grid/cell/custom-tooltip/clipmode.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Display custom tooltip](../images/cell/custom-tooltip.png)
+
+## Grid lines
+
+The [GridLines](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GridLines) in a grid are used to separate the cells with horizontal and vertical lines for better readability. You can enable the grid lines by setting the `GridLines` property to one of the following values:
+
+| Modes      | Actions                                               |
+| ---------- | ----------------------------------------------------- |
+| Both       | Displays both the horizontal and vertical grid lines. |
+| None       | No grid lines are displayed.                          |
+| Horizontal | Displays the horizontal grid lines only.              |
+| Vertical   | Displays the vertical grid lines only.                |
+| Default    | Displays grid lines based on the theme.               |
+
+The following example demonstrates how to set the `GridLines` property based on changing the dropdown value using the [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the DropDownList component.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/cell/gridlines/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Gridlines.cs" %}
+{% include code-snippet/grid/cell/gridlines/gridlines.cs %}
+{% endhighlight %}
+{% endtabs %}
