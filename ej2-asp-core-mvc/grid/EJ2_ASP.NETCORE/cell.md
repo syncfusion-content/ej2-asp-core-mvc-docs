@@ -21,7 +21,7 @@ Displaying HTML content in a Grid can be useful in scenarios where you want to d
 In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) component is added  to enable and disable the `DisableHtmlEncode` property. When the switch is toggled, the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event is triggered and the `DisableHtmlEncode` property of the column is updated accordingly. The `refreshColumns` method is called to refresh the grid and display the updated content.
 
 {% tabs %}
-{% highlight tagHelper tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/display-html-content/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Html.cs" %}
@@ -63,7 +63,8 @@ Grid provides the below three options for configuring:
 
 The following example demonstrates how to set the `allowTextWrap` property to **true** and specify the wrap mode as **Content** by setting the `textWrapSettings.wrapMode` property. Also change the `textWrapSettings.wrapMode` property to **Content** and **Both** on changing the dropdown value using the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the DropDownList component.
 
-{% highlight tagHelper tabtitle="CSHTML" %}
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/autowrap/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Autowrap.cs" %}
@@ -88,7 +89,7 @@ To customize the appearance of the grid cell, you can use the [queryCellInfo](ht
 The following example demonstrates how to add a `queryCellInfo` event handler to the grid. In the event handler, checked whether the current column is **Freight** field and then applied the appropriate CSS class to the cell based on its value.
 
 {% tabs %}
-{% highlight tagHelper tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/customize-cell-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Html.cs" %}
@@ -114,7 +115,7 @@ You can apply styles to the cells using CSS selectors. The Grid provides a class
 The following example demonstrates how to customize the appearance of a specific row in the grid on selection using `className`. 
 
 {% tabs %}
-{% highlight tagHelper tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/customize-cell-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Html.cs" %}
@@ -144,7 +145,7 @@ Here, setting the `customAttributes` property of the **ShipCity** column to an o
 The following example demonstrates how to customize the appearance of the **OrderID** and **ShipCity** columns using custom attributes. 
 
 {% tabs %}
-{% highlight tagHelper tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/customize-cell-cs3/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Html.cs" %}
@@ -167,7 +168,7 @@ The Grid provides below methods to customize the appearance of the grid columns 
 The following example demonstrates how to use getColumnHeaderByIndex and getCellFromIndex methods to customize the appearance of the **CustomerID** column header and specific cell inside the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the grid.
 
 {% tabs %}
-{% highlight tagHelper tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/customize-cell-cs4/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Html.cs" %}
@@ -289,10 +290,12 @@ The [GridLines](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gri
 The following example demonstrates how to set the `GridLines` property based on changing the dropdown value using the [Change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the DropDownList component.
 
 {% tabs %}
-{% highlight tagHelper tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/gridlines/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Gridlines.cs" %}
 {% include code-snippet/grid/cell/gridlines/gridlines.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Grid Lines](../images/cell/grid-lines.gif)
