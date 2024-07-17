@@ -71,44 +71,18 @@ Now the Spreadsheet server Docker instance runs on localhost with the provided p
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
 ```
-<ejs-spreadsheet id="spreadsheet" openUrl="Open" allowOpen = "true" beforeOpen="beforeOpen">
+<ejs-spreadsheet id="spreadsheet" openUrl="http://localhost:6002/api/spreadsheet/open" allowOpen = "true" saveUrl="http://localhost:6002/api/spreadsheet/save" allowSave="true">
 
 </ejs-spreadsheet>
-
-<script>
-
-    function beforeOpen(args) {
-        // your code snippets here
-    }
-
-</script>
 ```
-
-{% endhighlight %}
-{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-
 ```
-@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("http://localhost:6002/api/spreadsheet/open").SaveUrl("http://localhost:6002/api/spreadsheet/save").AllowOpen(true).AllowSave(true).BeforeOpen("beforeOpen").Render()
-
-<script>
-
-    function beforeOpen(args) {
-        // your code snippets here
-    }
-
-</script>
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("http://localhost:6002/api/spreadsheet/open").SaveUrl("http://localhost:6002/api/spreadsheet/save").AllowOpen(true).AllowSave(true).Render()
 ```
-{% endhighlight %}
-{% endtabs %}
+
 {% endif %}
 
 ## How to configure different cultures using a Docker compose file
