@@ -71,17 +71,24 @@ Now the Spreadsheet server Docker instance runs on localhost with the provided p
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-```
-<ejs-spreadsheet id="spreadsheet" openUrl="http://localhost:6002/api/spreadsheet/open" allowOpen = "true" saveUrl="http://localhost:6002/api/spreadsheet/save" allowSave="true">
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
+<ejs-spreadsheet id="spreadsheet" openUrl="http://localhost:6002/api/spreadsheet/open" allowOpen="true" saveUrl="http://localhost:6002/api/spreadsheet/save" allowSave="true">
 </ejs-spreadsheet>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-```
-@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("http://localhost:6002/api/spreadsheet/open").SaveUrl("http://localhost:6002/api/spreadsheet/save").AllowOpen(true).AllowSave(true).Render()
-```
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("http://localhost:6002/api/spreadsheet/open").AllowOpen(true).SaveUrl("http://localhost:6002/api/spreadsheet/save").AllowSave(true).Render()
+
+{% endhighlight %}
+{% endtabs %}
 
 {% endif %}
 
