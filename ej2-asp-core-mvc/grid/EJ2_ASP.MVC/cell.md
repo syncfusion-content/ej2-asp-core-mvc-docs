@@ -63,6 +63,7 @@ Grid provides the below three options for configuring:
 
 The following example demonstrates how to set the `allowTextWrap` property to **true** and specify the wrap mode as **Content** by setting the `textWrapSettings.wrapMode` property. Also change the `textWrapSettings.wrapMode` property to **Content** and **Both** on changing the dropdown value using the [change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the DropDownList component.
 
+{% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/autowrap/razor %}
 {% endhighlight %}
