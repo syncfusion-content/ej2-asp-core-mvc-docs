@@ -296,3 +296,5 @@ The following example demonstrates how to set the `GridLines` property based on 
 {% include code-snippet/grid/cell/gridlines/gridlines.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Grid Lines](../images/cell/grid-lines.gif)
