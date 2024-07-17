@@ -1,0 +1,13 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-autocomplete id="records" dataSource="@ViewBag.data" query="new ej.data.Query().take(40)" actionBegin="onbegin" placeholder="Select a item" allowFiltering="false" enableVirtualization="true" popupHeight="200px">
+            <e-autocomplete-fields value="Text"></e-autocomplete-fields>
+        </ejs-autocomplete>
+    </div>
+</div>
+
+<script>
+    function onbegin(e) {
+        e.query = new ej.data.Query().take(45);
+    }
+</script>
