@@ -101,7 +101,7 @@ N> By default, the [Operator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncf
 
 The Syncfusion Grid component allows you to perform searches programmatically, enabling you to search for records using an external button instead of relying solely on the built-in search bar. This feature provides flexibility and allows for custom search implementations within your application. To search for records using an external button, you can utilize the `search` method provided by the Grid component.
 
-The `search` method allows you to perform a search operation based on a search key or criteria. The following example demonstatres how to implement `search` by an external button using the following steps:
+The `search` method allows you to perform a search operation based on a search key or criteria. The following example demonstrates how to implement `search` by an external button using the following steps:
 
 1. Add a button element outside of the grid component.
 2. Attach a click event handler to the button.
@@ -135,20 +135,9 @@ The `search` method allows you to perform a search operation based on a search k
 
 ## Search specific columns
 
-By default, grid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`Fields`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields) property of [`SearchSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html).
+By default, the `search` functionality searches all visible columns. However, if you want to `search` only specific columns, you can define the specific column's field names in the [Fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields) property of [SearchSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html). This allows you to narrow down the search to a targeted set of columns, which is particularly useful when dealing with large datasets or grids with numerous columns.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/search-a-column/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Search-a-column.cs" %}
-{% include code-snippet/grid/search/search-a-column/search-a-column.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The following example demonstrates how to search specific columns such as **CustomerID**, **Freight**, and **ShipCity** by using the `Fields` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -158,9 +147,8 @@ By default, grid searches all visible columns. You can search specific columns b
 {% include code-snippet/grid/search/search-a-column/search-a-column.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
+![Search Specific columns]()
 
 ## Clear search by external button
 
