@@ -1,18 +1,21 @@
-@Html.EJS().Button("search").Content("Search").Render()
+	<div class="e-float-input" style="width: 120px; display: inline-block;padding-bottom:2px">
+	@Html.EJS().TextBox("text").Placeholder("Search Text").Render()
+	</div>
+	@Html.EJS().Button("search").Content("Search").Render()
 
-@Html.EJS().Grid("Search").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("160").Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
-    col.Field("Freight").HeaderText("Freight").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
-    col.Field("OrderDate").HeaderText("Order Date").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+	@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
+	{
+		col.Field("OrderID").HeaderText("Order ID").Width("90").Add();
+		col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
+		col.Field("ShipCity").HeaderText("Ship City").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+		col.Field("ShipCountry").HeaderText("Ship Country").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 
-}).AllowPaging().PageSettings(page=>page.PageCount(2)).Render()
+	}).Render()
 
-<script>
-    document.getElementById('search').addEventListener('click', () => {
-        var gridObj = document.getElementById("Search").ej2_instances[0];
-        var searchString = "AL";
-        gridObj.search(searchString);
-    });
-</script>
+	<script>
+		document.getElementById('search').addEventListener('click', function () {
+			var searchText = document.getElementById('text').value;
+			var grid = document.getElementById("Grid").ej2_instances[0];
+			grid.search(searchText);
+		});
+	</script>
