@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to the Figma UI Kit in ##Platform_Name## control
+title: Introduction to the Figma UI Kit in ##Platform_Name## control | Syncfusion
 description: Check out and learn about the introduction to the Figma UI Kit in Syncfusion ##Platform_Name##. Also, listed the icons by theme-wise.
 platform: ej2-asp-core-mvc
 control: Common
