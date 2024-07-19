@@ -115,6 +115,81 @@ You can achieve to access the remote excel file by using the [`created`](https:/
 {% endtabs %}
 {% endif %}
 
+### Open an excel file from blob data
+
+By default, the Spreadsheet control provides an option to browse files from the local file system and open them within the control. If you want to open an Excel file from blob data, you need to fetch the blob data from the server or another source and convert this blob data into a `File` object. Then, you can use the `open` method in the Spreadsheet control to load that `File` object.
+
+Please find the code to fetch the blob data and load it into the Spreadsheet control below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-from-blob/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/open-from-blob/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-from-blob/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/open-from-blob/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Open an Excel file located on a server
+
+By default, the Spreadsheet control provides an option to browse files from the local file system and open them within the control. If you want to load an Excel file located on a server, you need to configure the server endpoint to fetch the Excel file from the server location, process it using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, and send it back to the client side as `JSON data`. On the client side, you should use the `openFromJson` method to load that `JSON data` into the Spreadsheet control.
+
+```csharp
+    public IActionResult Open([FromBody] FileOptions options)
+    {
+        OpenRequest open = new OpenRequest();
+        string filePath = _env.ContentRootPath.ToString() + "\\Files\\" + options.FileName + ".xlsx";
+        // Getting the file stream from the file path.
+        FileStream fileStream = new FileStream(filePath, FileMode.Open);
+        // Converting "MemoryStream" to "IFormFile".
+        IFormFile formFile = new FormFile(fileStream, 0, fileStream.Length, "", options.FileName + ".xlsx"); 
+        open.File = formFile;
+        // Processing the Excel file and return the workbook JSON.
+        var result = Workbook.Open(open);
+        fileStream.Close();
+        return Content(result);
+    }
+
+    public class FileOptions
+    {
+        public string FileName { get; set; } = string.Empty;
+    }
+```
+
+```js
+
+    // Fetch call to server to load the Excel file.
+    fetch('Home/Open', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ FileName: 'Sample' }),
+    })
+    .then((response) => response.json())
+    .then((data) => {
+            // Load the JSON data into spreadsheet.
+            spreadsheet.openFromJson({ file: data });
+    })
+
+```
+
+You can find the server endpoint code to fetch and process the Excel file in this [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187).
+
 ### Open an excel file using a hosted web service in AWS Lambda
 
 Before proceeding with the opening process, you should deploy the spreadsheet open/save web API service in AWS Lambda. To host the open/save web service in the AWS Lambda environment, please refer to the following KB documentation.
@@ -127,7 +202,9 @@ The following code example shows how to open an Excel file using a hosted web se
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <ejs-spreadsheet id="spreadsheet" openUrl="https://xxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/open" allowOpen = "true" beforeOpen="beforeOpen">
 
 </ejs-spreadsheet>
@@ -175,11 +252,15 @@ The following code example shows how to open an Excel file using a hosted web se
     };
 
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-```
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+
 @Html.EJS().Spreadsheet("spreadsheet").OpenUrl("https://xxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/open").AllowOpen(true).BeforeOpen("beforeOpen").Render()
 
 <script>
@@ -225,7 +306,9 @@ The following code example shows how to open an Excel file using a hosted web se
     };
 
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 {% endif %}
 
@@ -359,82 +442,7 @@ You can add your own custom header to the open action in the Spreadsheet. For pr
 {% include code-snippet/spreadsheet/open-header/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-### To open an excel file from blob data
-
-By default, the Spreadsheet control provides an option to browse files from the local file system and open them within the control. If you want to open an Excel file from blob data, you need to fetch the blob data from the server or another source and convert this blob data into a `File` object. Then, you can use the `open` method in the Spreadsheet control to load that `File` object.
-
-Please find the code to fetch the blob data and load it into the Spreadsheet control below.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/spreadsheet/open-from-blob/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/open-from-blob/opencontroller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/spreadsheet/open-from-blob/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/open-from-blob/opencontroller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-### To open an Excel file located on a server
-
-By default, the Spreadsheet control provides an option to browse files from the local file system and open them within the control. If you want to load an Excel file located on a server, you need to configure the server endpoint to fetch the Excel file from the server location, process it using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, and send it back to the client side as `JSON data`. On the client side, you should use the `openFromJson` method to load that `JSON data` into the Spreadsheet control.
-
-```csharp
-    public IActionResult Open([FromBody] FileOptions options)
-    {
-        OpenRequest open = new OpenRequest();
-        string filePath = _env.ContentRootPath.ToString() + "\\Files\\" + options.FileName + ".xlsx";
-        // Getting the file stream from the file path.
-        FileStream fileStream = new FileStream(filePath, FileMode.Open);
-        // Converting "MemoryStream" to "IFormFile".
-        IFormFile formFile = new FormFile(fileStream, 0, fileStream.Length, "", options.FileName + ".xlsx"); 
-        open.File = formFile;
-        // Processing the Excel file and return the workbook JSON.
-        var result = Workbook.Open(open);
-        fileStream.Close();
-        return Content(result);
-    }
-
-    public class FileOptions
-    {
-        public string FileName { get; set; } = string.Empty;
-    }
-```
-
-```js
-
-    // Fetch call to server to load the Excel file.
-    fetch('Home/Open', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ FileName: 'Sample' }),
-    })
-    .then((response) => response.json())
-    .then((data) => {
-            // Load the JSON data into spreadsheet.
-            spreadsheet.openFromJson({ file: data });
-    })
-
-```
-
-You can find the server endpoint code to fetch and process the Excel file in this [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187). 
+{% endif %} 
 
 ### External workbook confirmation dialog
 
@@ -515,6 +523,93 @@ N> * Use `Ctrl + S` keyboard shortcut to save the Spreadsheet data as Excel file
 <br/> * The default value of [allowSave](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowSave) property is `true`. For demonstration purpose, we have showcased the [allowSave](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowSave) property in previous code snippet.
 <br/> * Demo purpose only, we have used the online web service url link.
 
+### Save an excel file as blob data
+
+By default, the Spreadsheet control saves the Excel file and downloads it to the local file system. If you want to save an Excel file as blob data, you need to set `needBlobData` property to **true** and `isFullPost` property to **false** in the `beforeSave` event of the spreadsheet. Subsequently, you will receive the spreadsheet data as a blob in the `saveComplete` event. You can then post the blob data to the server endpoint for saving.
+
+Please find below the code to retrieve blob data from the Spreadsheet control below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-as-blob/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveController.cs" %}
+{% include code-snippet/spreadsheet/save-as-blob/savecontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-as-blob/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveController.cs" %}
+{% include code-snippet/spreadsheet/save-as-blob/savecontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Save an Excel file to a server
+
+By default, the Spreadsheet control saves the Excel file and downloads it to the local file system. If you want to save an Excel file to a server location, you need to configure the server endpoint to convert the spreadsheet data into a file stream and save it to the server location. To do this, first, on the client side, you must convert the spreadsheet data into `JSON` format using the `saveAsJson` method and send it to the server endpoint. On the server endpoint, you should convert the received spreadsheet `JSON` data into a file stream using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, then convert the stream into an Excel file, and finally save it to the server location.
+
+```js
+
+    // Convert the spreadsheet workbook to JSON data.
+    spreadsheet.saveAsJson().then((json) => {
+        const formData = new FormData();
+        formData.append('FileName', "Sample");
+        formData.append('saveType', 'Xlsx');
+        // Passing the JSON data to perform the save operation.
+        formData.append('JSONData', JSON.stringify(json.jsonObject.Workbook));
+        formData.append('PdfLayoutSettings', JSON.stringify({ FitSheetOnOnePage: false }));
+        // Using fetch to invoke the save process.
+        fetch('Home/Save', {
+            method: 'POST',
+            body: formData
+        }).then((response) => {
+            console.log(response);
+        });
+    });
+
+```
+
+```csharp
+
+    public string Save(SaveSettings saveSettings)
+    {
+        ExcelEngine excelEngine = new ExcelEngine();
+        IApplication application = excelEngine.Excel;
+        try
+        {
+            
+            // Save the workbook as stream.
+            Stream fileStream = Workbook.Save<Stream>(saveSettings);
+            // Using XLSIO, we are opening the file stream and saving the file in the server under "Files" folder.
+            // You can also save the stream file in your server location.
+            IWorkbook workbook = application.Workbooks.Open(fileStream);
+            string basePath = _env.ContentRootPath + "\\Files\\" + saveSettings.FileName + ".xlsx";
+            var file = System.IO.File.Create(basePath);
+            fileStream.Seek(0, SeekOrigin.Begin);
+            // To convert the stream to file options.
+            fileStream.CopyTo(file);
+            file.Dispose();
+            fileStream.Dispose();
+            return string.Empty;
+        }
+        catch (Exception ex)
+        {
+            return ex.Message;
+        }
+    }
+
+```
+
+You can find the server endpoint code to save the spreadsheet data as an Excel file in this [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187).
+
 ### Save an excel file using a hosted web service in AWS Lambda
 
 Before proceeding with the save process, you should deploy the spreadsheet open/save web API service in AWS Lambda. To host the open/save web service in the AWS Lambda environment, please refer to the following KB documentation.
@@ -530,8 +625,7 @@ The following code example shows how to save an Excel file using a hosted web se
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-```
-<ejs-spreadsheet id="spreadsheet" saveUrl="https://xxxxxxxxxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/save" allowSave = "true" beforeSave="beforeSave">
+<ejs-spreadsheet id="spreadsheet" saveUrl="https://xxxxxxxxxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/save" allowSave="true" beforeSave="beforeSave">
 
 </ejs-spreadsheet>
 
@@ -592,7 +686,6 @@ The following code example shows how to save an Excel file using a hosted web se
         });        
     };
 </script>
-```
 
 {% endhighlight %}
 {% endtabs %}
@@ -602,7 +695,6 @@ The following code example shows how to save an Excel file using a hosted web se
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 
-```
 @Html.EJS().Spreadsheet("spreadsheet").SaveUrl("https://xxxxxxxxxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/save").AllowSave(true).BeforeSave("beforeSave").Render()
 
 <script>
@@ -662,11 +754,10 @@ The following code example shows how to save an Excel file using a hosted web se
         });        
     };
 </script>
-```
 
 {% endhighlight %}
-
 {% endtabs %}
+
 {% endif %}
 
 ### Save data as a Base64 string
@@ -835,93 +926,6 @@ The possible values are:
 {% endtabs %}
 {% endif %}
 
-### To save an excel file as blob data
-
-By default, the Spreadsheet control saves the Excel file and downloads it to the local file system. If you want to save an Excel file as blob data, you need to set `needBlobData` property to **true** and `isFullPost` property to **false** in the `beforeSave` event of the spreadsheet. Subsequently, you will receive the spreadsheet data as a blob in the `saveComplete` event. You can then post the blob data to the server endpoint for saving.
-
-Please find below the code to retrieve blob data from the Spreadsheet control below.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/spreadsheet/save-as-blob/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="SaveController.cs" %}
-{% include code-snippet/spreadsheet/save-as-blob/savecontroller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/spreadsheet/save-as-blob/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SaveController.cs" %}
-{% include code-snippet/spreadsheet/save-as-blob/savecontroller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-### To save an Excel file to a server location
-
-By default, the Spreadsheet control saves the Excel file and downloads it to the local file system. If you want to save an Excel file to a server location, you need to configure the server endpoint to convert the spreadsheet data into a file stream and save it to the server location. To do this, first, on the client side, you must convert the spreadsheet data into `JSON` format using the `saveAsJson` method and send it to the server endpoint. On the server endpoint, you should convert the received spreadsheet `JSON` data into a file stream using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, then convert the stream into an Excel file, and finally save it to the server location.
-
-```js
-
-    // Convert the spreadsheet workbook to JSON data.
-    spreadsheet.saveAsJson().then((json) => {
-        const formData = new FormData();
-        formData.append('FileName', "Sample");
-        formData.append('saveType', 'Xlsx');
-        // Passing the JSON data to perform the save operation.
-        formData.append('JSONData', JSON.stringify(json.jsonObject.Workbook));
-        formData.append('PdfLayoutSettings', JSON.stringify({ FitSheetOnOnePage: false }));
-        // Using fetch to invoke the save process.
-        fetch('Home/Save', {
-            method: 'POST',
-            body: formData
-        }).then((response) => {
-            console.log(response);
-        });
-    });
-
-```
-
-```csharp
-
-    public string Save(SaveSettings saveSettings)
-    {
-        ExcelEngine excelEngine = new ExcelEngine();
-        IApplication application = excelEngine.Excel;
-        try
-        {
-            
-            // Save the workbook as stream.
-            Stream fileStream = Workbook.Save<Stream>(saveSettings);
-            // Using XLSIO, we are opening the file stream and saving the file in the server under "Files" folder.
-            // You can also save the stream file in your server location.
-            IWorkbook workbook = application.Workbooks.Open(fileStream);
-            string basePath = _env.ContentRootPath + "\\Files\\" + saveSettings.FileName + ".xlsx";
-            var file = System.IO.File.Create(basePath);
-            fileStream.Seek(0, SeekOrigin.Begin);
-            // To convert the stream to file options.
-            fileStream.CopyTo(file);
-            file.Dispose();
-            fileStream.Dispose();
-            return string.Empty;
-        }
-        catch (Exception ex)
-        {
-            return ex.Message;
-        }
-    }
-
-```
-
-You can find the server endpoint code to save the spreadsheet data as an Excel file in this [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_(1)-880363187).
-
 ### Supported file formats
 
 The following list of Excel file formats are supported in Spreadsheet:
@@ -959,6 +963,7 @@ To save the Spreadsheet document as an `xlsx, xls, csv, or pdf` file, by using `
 {% endif %}
 
 
+
 ## Server Configuration
 
 In Spreadsheet component, import and export operation processed in `server-side`, to use importing and exporting in your projects, it is required to create a server with any of the following web services.
@@ -985,3 +990,4 @@ Open and save helper functions are shipped in the Syncfusion.EJ2.Spreadsheet pac
 * [Filtering](filter)
 * [Sorting](sort)
 * [Hyperlink](link)
+* [Docker Image](./docker-deployment)
