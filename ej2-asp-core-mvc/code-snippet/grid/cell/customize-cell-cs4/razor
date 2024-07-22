@@ -1,0 +1,21 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+	{
+	col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	col.Field("CustomerID").HeaderText("Customer ID").Width("250").Add();
+	col.Field("ShipCity").HeaderText("ShipCity").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+
+	}).DataBound("dataBound").Render()
+
+@section Scripts {
+	<script type="text/javascript">
+		function dataBound() {
+			var grid = document.getElementById("Grid").ej2_instances[0];
+			var header = grid.getHeaderContent().querySelector('.e-headercell');
+			header.style.backgroundColor = 'red';
+			header.style.color = 'white';
+			var cell = grid.getCellFromIndex(1, 2);
+			cell.style.background = '#f9920b';
+			cell.style.color = 'white';
+		}</script>
+}
