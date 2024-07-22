@@ -16,9 +16,9 @@ The Grid component allows you to customize the appearance and behavior of cells 
 
 ## Displaying the HTML content
 
-Displaying HTML content in a Grid can be useful in scenarios where you want to display formatted content, such as images, links, or tables, in a tabular format. Grid component allows you to display HTML tags in the Grid header and content. By default, the HTML content is encoded to prevent potential security vulnerabilities. However, you can enable the `DisableHtmlEncode` property by setting the value as **false** to display HTML tags without encoding. This feature is useful when you want to display HTML content in a grid cell.
+Displaying HTML content in a Grid can be useful in scenarios where you want to display formatted content, such as images, links, or tables, in a tabular format. Grid component allows you to display HTML tags in the Grid header and content. By default, the HTML content is encoded to prevent potential security vulnerabilities. However, you can enable the `disableHtmlEncode` property by setting the value as **false** to display HTML tags without encoding. This feature is useful when you want to display HTML content in a grid cell.
 
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) component is added  to enable and disable the `DisableHtmlEncode` property. When the switch is toggled, the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event is triggered and the `DisableHtmlEncode` property of the column is updated accordingly. The `refreshColumns` method is called to refresh the grid and display the updated content.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) component is added  to enable and disable the `disableHtmlEncode` property. When the switch is toggled, the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The `refreshColumns` method is called to refresh the grid and display the updated content.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -31,12 +31,12 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ![Display HTML content](../images/cell/display-html-content.gif)
 
-> * The `DisableHtmlEncode` property disables HTML encoding for the corresponding column in the grid. 
+> * The `disableHtmlEncode` property disables HTML encoding for the corresponding column in the grid. 
 > * If the property is set to **true**, any HTML tags in the column's data will be displayed. 
 > * If the property is set to **false**, the HTML tags will be removed and displayed as plain text.
 > * Disabling HTML encoding can potentially introduce security vulnerabilities, so use caution when enabling this feature.
-> * If [EnableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableHtmlSanitizer) property of grid is set to true, then the content is sanitized to prevent any potential security vulnerabilities.
-> * You can also disable the `DisableHtmlEncode` property of the column using `getColumns` method on [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event of Switch component.This is demonstrated in the below code snippet, 
+> * If [enableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableHtmlSanitizer) property of grid is set to true, then the content is sanitized to prevent any potential security vulnerabilities.
+> * You can also disable the `disableHtmlEncode` property of the column using `getColumns` method on [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event of Switch component.This is demonstrated in the below code snippet, 
 
 ```javascript
 function change(args) {
@@ -51,9 +51,9 @@ function change(args) {
 
 ## Autowrap the content
 
-The auto wrap feature allows the cell content in the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Syncfusion Grid, you should set the appropriate [Width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
+The auto wrap feature allows the cell content in the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Syncfusion Grid, you should set the appropriate [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
 
-To enable auto wrap, set the [allowTextWrap](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowTextWrap) property to **true**. You can also configure the wrap mode by setting the [textWrapSettings.wrapMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridTextWrapSettings.html#Syncfusion_EJ2_Grids_GridTextWrapSettings_WrapMode) property.
+To enable auto wrap, set the [allowTextWrap](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowTextWrap) property to **true**. You can also configure the wrap mode by setting the [wrapMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridTextWrapSettings.html#Syncfusion_EJ2_Grids_GridTextWrapSettings_WrapMode) property.
 
 Grid provides the below three options for configuring:
 
@@ -61,7 +61,7 @@ Grid provides the below three options for configuring:
 * **Header** - With this option, only the grid header text is wrapped.
 * **Content** - With this option, only the grid content is wrapped.
 
-The following example demonstrates how to set the `allowTextWrap` property to **true** and specify the wrap mode as **Content** by setting the `textWrapSettings.wrapMode` property. Also change the `textWrapSettings.wrapMode` property to **Content** and **Both** on changing the dropdown value using the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the DropDownList component.
+The following example demonstrates how to set the `allowTextWrap` property to **true** and specify the wrap mode as **Content** by setting the `wrapMode` property. Also change the `wrapMode` property to **Content** and **Both** on changing the dropdown value using the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the DropDownList component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -182,9 +182,9 @@ The following example demonstrates how to use getColumnHeaderByIndex and getCell
 
 ## Clip Mode
 
-The clip mode feature is useful when you have a long text or content in a grid cell, which overflows the cell's width or height. It provides options to display the overflow content by either truncating it, displaying an ellipsis or displaying an ellipsis with a tooltip. You can enable this feature by setting [ClipMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.ClipMode.html) property to one of the below available options.
+The clip mode feature is useful when you have a long text or content in a grid cell, which overflows the cell's width or height. It provides options to display the overflow content by either truncating it, displaying an ellipsis or displaying an ellipsis with a tooltip. You can enable this feature by setting [clipMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.ClipMode.html) property to one of the below available options.
 
-There are three types of `ClipMode` available:
+There are three types of `clipMode` available:
 
 * **Clip**: Truncates the cell content when it overflows its area.
 * **Ellipsis**: Displays ellipsis when the cell content overflows its area.
@@ -203,7 +203,7 @@ The following example demonstrates, how to set the `clipMode` property to **Clip
 
 ![Clip Mode](../images/cell/clip-mode.gif)
 
-> * By default, `ClipMode` value is **Ellipsis**.
+> * By default, `clipMode` value is **Ellipsis**.
 > * If you set the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) property of a column, the clip mode feature will be automatically applied to that column if the content exceeds the specified width.
 > * Be careful when using the Clip mode, as it may result in important information being cut off. It is generally recommended to use the Ellipsis or EllipsisWithTooltip modes instead.
 
@@ -277,7 +277,7 @@ The following example demonstrates how to customize the tooltip content for the 
 
 ## Grid lines
 
-The [GridLines](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GridLines) in a grid are used to separate the cells with horizontal and vertical lines for better readability. You can enable the grid lines by setting the `GridLines` property to one of the following values:
+The [gridLines](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GridLines) in a grid are used to separate the cells with horizontal and vertical lines for better readability. You can enable the grid lines by setting the `gridLines` property to one of the following values:
 
 | Modes      | Actions                                               |
 | ---------- | ----------------------------------------------------- |
@@ -287,7 +287,7 @@ The [GridLines](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gri
 | Vertical   | Displays the vertical grid lines only.                |
 | Default    | Displays grid lines based on the theme.               |
 
-The following example demonstrates how to set the `GridLines` property based on changing the dropdown value using the [Change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the DropDownList component.
+The following example demonstrates how to set the `gridLines` property based on changing the dropdown value using the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the DropDownList component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
