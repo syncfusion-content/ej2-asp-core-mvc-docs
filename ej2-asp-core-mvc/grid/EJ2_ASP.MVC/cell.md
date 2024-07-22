@@ -76,7 +76,7 @@ The following example demonstrates how to set the `AllowTextWrap` property to **
 
 > * If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
 > * If a column's header text contains no white space, the text may not be wrapped.
-> * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the `headerTemplate` and `template` properties of the column to customize the appearance of the header and cell content.
+> * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the `HeaderTemplate` and `Template` properties of the column to customize the appearance of the header and cell content.
 
 ## Customize cell styles
 
@@ -136,7 +136,7 @@ To customize the style of grid cells, define `CustomAttributes` property to the 
   color:navy
 }
 ```
-Here, setting the `customAttributes` property of the **ShipCity** column to an object that contains the CSS class **'custom-css'**. This CSS class will be applied to all the cells in the **ShipCity** column of the grid.
+Here, setting the `CustomAttributes` property of the **ShipCity** column to an object that contains the CSS class **'custom-css'**. This CSS class will be applied to all the cells in the **ShipCity** column of the grid.
 
 ```js
 		col.Field("ShipCity").HeaderText("Ship City").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).CustomAttributes(new { @class = "custom-css" }).Add();
@@ -214,7 +214,7 @@ The Syncfusion Grid allows you to display information about the grid columns to 
 
 The Grid control allows rendering Bootstrap tooltips in the cells. To enable this feature, you need to add the Bootstrap CDN link and call the tooltip() method to initialize the tooltip. 
 
-This is demonstrated in the sample code below which shows how to enable Bootstrap tooltip for the **CustomerID** field using `template` property in grid cells,
+This is demonstrated in the sample code below which shows how to enable Bootstrap tooltip for the **CustomerID** field using `Template` property in grid cells,
 
 Step 1: Add the CDN link of Boostrap in the `_Layout.cshtml` file. Place the `link` tag in the `head` for the CSS. 
 
@@ -226,7 +226,7 @@ Step 1: Add the CDN link of Boostrap in the `_Layout.cshtml` file. Place the `li
 
 ```
 
-Step 2: The following code demonstrates how to render Bootstrap tooltip for the **CustomerID** field with `template` on grid cells.
+Step 2: The following code demonstrates how to render Bootstrap tooltip for the **CustomerID** field with `Template` on grid cells.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

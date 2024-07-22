@@ -139,7 +139,7 @@ To customize the style of grid cells, define `customAttributes` property to the 
 Here, setting the `customAttributes` property of the **ShipCity** column to an object that contains the CSS class **'custom-css'**. This CSS class will be applied to all the cells in the **ShipCity** column of the grid.
 
 ```html
-    <e-grid-column field="ShipCity" headerText="Ship City" width="100" CustomAttributes=@(new{@class="custom-css"
+    <e-grid-column field="ShipCity" headerText="Ship City" width="100" customAttributes=@(new{@class="custom-css"
         })></e-grid-column>
 ```
 The following example demonstrates how to customize the appearance of the **OrderID** and **ShipCity** columns using custom attributes. 
