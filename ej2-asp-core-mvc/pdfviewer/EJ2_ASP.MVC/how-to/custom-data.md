@@ -1,18 +1,18 @@
 ---
 layout: post
-title: How to Add and Update Custom Data for Form Fields in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn how customData is used to store and associate custom metadata with form fields in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Custom Data for Form Fields in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Discover how customData stores and links custom metadata to form fields in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Custom data for form fields
 publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# How to Add and Update Custom Data for Form Fields
+# Add and Update Custom Data for Form Fields
 
 The customData property allows you to associate custom data with form fields in the Syncfusion EJ2 PDF Viewer. This property can be used to attach additional metadata or information to form fields which can be retrieved or manipulated as needed.
 
-# Add form field
+### Add form field
 
 The addFormField method allows you to add a new form field to the PDF document in the Syncfusion EJ2 PDF Viewer and set the customData value with respective form fields.
 
@@ -41,7 +41,7 @@ viewer.initialFieldSettigs = {
 
 ```
 
-# Update form field
+### Update form field
 
 The updateFormField method enables you to update the properties of an existing form field in the PDF document, including setting the customData value.
 
