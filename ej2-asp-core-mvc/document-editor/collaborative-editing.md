@@ -209,7 +209,7 @@ Configure the Redis that stores temporary data for the collaborative editing ses
 ```json
 .....
 "ConnectionStrings": {
-  "Redis": "<<Redis connection string>>"
+  "Redis": "<Redis connection string>"
 }
 .....
 
