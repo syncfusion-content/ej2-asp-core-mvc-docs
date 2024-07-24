@@ -338,7 +338,7 @@ private ActionInfo AddOperationsToTable(ActionInfo action)
      {
         // Set the current action to the last operation in the list
         action = previousOperations.Last();
-        // Transform operations that have not been transformed yet
+        // Transform operations that have not been transformed yet 
         previousOperations.Where(op => !op.IsTransformed).ToList().ForEach(op => CollaborativeEditingHandler.TransformOperation(op, previousOperations));
      }
      action = actions[actions.Count - 1];
