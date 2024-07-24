@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Appearance Component | Syncfusion
+title: Icons in ##Platform_Name## Control | Syncfusion
 description: Learn here all about Icons in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons

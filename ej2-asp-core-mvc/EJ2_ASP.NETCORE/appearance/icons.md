@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Appearance Component | Syncfusion
+title: Icons in ##Platform_Name## Control | Syncfusion
 description: Learn here all about icons with its customization in Syncfusion ##Platform_Name##. Also, listed the icons by theme-wise.
 platform: ej2-asp-core-mvc
 control: Common
