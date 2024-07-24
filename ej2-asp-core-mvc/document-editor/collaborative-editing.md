@@ -14,7 +14,7 @@ Allows multiple users to work on the same document simultaneously. This can be d
 Following things are needed to enable collaborative editing in Document Editor
 
 - SignalR
-- Microsoft SQL Server
+- Redis cache
 
 ## How to enable collaborative editing in client side
 
@@ -204,12 +204,12 @@ CollaborativeEditingController.UpdateOperationsToSourceDocument(roomName, “<<d
 
 ### Step 3: Configure Microsoft SQL database connection string in application level
 
-Configure the SQL database that stores temporary data for the collaborative editing session. Provide the SQL database connection string in `appsettings.json` file.
+Configure the Redis that stores temporary data for the collaborative editing session. Provide the Redis connection string in `appsettings.json` file.
 
 ```json
 .....
 "ConnectionStrings": {
-  "DocumentEditorDatabase": "<SQL server connection string>"
+  "Redis": "<<Redis connection string>>"
 }
 .....
 
@@ -219,8 +219,8 @@ Configure the SQL database that stores temporary data for the collaborative edit
 
 #### Import File
 
-1.	When opening a document, create a database table to store temporary data for the collaborative editing session.
-2.	If the table already exists, retrieve the records from the table and apply them to the WordDocument instance using the `UpdateActions` method before converting it to the SFDT format.
+1.	When opening a document, check the redis list for pending operations and get them for the collaborative editing session.
+2.	If the pending operations already exists, apply them to the WordDocument instance using the `UpdateActions` method before converting it to the SFDT format.
 
 ```csharp
 public string ImportFile([FromBody] FileInfo param)
@@ -231,11 +231,11 @@ public string ImportFile([FromBody] FileInfo param)
 
      .....
      //Get source document from database/file system/blob storage
-     WordDocument document = GetDocumentFromDatabase(param.fileName, param.documentOwner);
+     WordDocument document = GetSourceDocument(param.fileName);
      .....
-     //Get temporary records from database 
-     List<ActionInfo> actions = CreatedTable(param.fileName);
-     if(actions!=null)
+     //Get the temporary operations
+     List<ActionInfo> actions = await GetPendingOperations(param.fileName, 0, -1);
+     if(actions!=null && actions.Count > 0)
      {
          //Apply temporary data to the document.
          document.UpdateActions(actions);
@@ -246,11 +246,21 @@ public string ImportFile([FromBody] FileInfo param)
      return Newtonsoft.Json.JsonConvert.SerializeObject(content);
  }
 
+ public async Task<List<ActionInfo>> GetPendingOperations(string listKey, long startIndex, long endIndex)
+ {
+     // Get the database connection from the Redis connection multiplexer
+     var db = _redisConnection.GetDatabase();
+     // Fetch the list of operations from Redis using the provided key and index range
+     var values = await db.ListRangeAsync(listKey, startIndex, endIndex);
+     // Deserialize the operations from JSON to ActionInfo objects and return as a list
+     return values.Select(value => Newtonsoft.Json.JsonConvert.DeserializeObject<ActionInfo>(value)).ToList();
+ }
+
 ```
 
 #### Update editing records to database.
 
-Each edit operation made by the user is sent to the server and is pushed to the database. Each operation receives a version number after being inserted into the database.
+Each edit operation made by the user is sent to the server and is pushed into the redis list data structure. Each operation receives a version number after being inserted into the redis.
 After inserting the records to the server, the position of the current editing operation must be transformed against any previous editing operations not yet synced with the client using the TransformOperation method.
 After performing the transformation, the current operation is broadcast to all connected users within the group.
 
@@ -273,18 +283,18 @@ public async Task<ActionInfo> UpdateAction([FromBody] ActionInfo param)
 private ActionInfo AddOperationsToTable(ActionInfo action)
  {
      int clientVersion = action.Version;
-     string tableName = action.RoomName;
      …………
      …………
      …………
      ………… 
-     List<ActionInfo> actions = GetOperationsQueue(table);
-     foreach (ActionInfo info in actions)
+     List<ActionInfo> previousOperations = ((RedisResult[])results[1]).Select(value => JsonConvert.DeserializeObject<ActionInfo>(value.ToString())).ToList();
+     previousOperations.ForEach(op => op.Version = ++clientVersion);
+     if (previousOperations.Count > 1)
      {
-      if (!info.IsTransformed)
-      {
-        CollaborativeEditingHandler.TransformOperation(info, actions);
-      }
+        // Set the current action to the last operation in the list
+        action = previousOperations.Last();
+        // Transform operations that have not been transformed yet
+        previousOperations.Where(op => !op.IsTransformed).ToList().ForEach(op => CollaborativeEditingHandler.TransformOperation(op, previousOperations));
      }
      action = actions[actions.Count - 1];
      action.Version = updateVersion;
@@ -296,7 +306,7 @@ private ActionInfo AddOperationsToTable(ActionInfo action)
 
 #### Add Web API to get previous operation as a backup to get lost operations
 
-On the client side, messages broadcast using SignalR may be received in a different order, or some operations may be missed due to network issues. In these cases, we need a backup method to retrieve missing records from the database.
+On the client side, messages broadcast using SignalR may be received in a different order, or some operations may be missed due to network issues. In these cases, we need a backup method to retrieve missing operations from the redis.
 Using the following method, we can retrieve all operations after the last successful client-synced version and return all missing operations to the requesting client.
 
 ```csharp
@@ -318,18 +328,18 @@ public async Task<ActionInfo> UpdateAction([FromBody] ActionInfo param)
 private ActionInfo AddOperationsToTable(ActionInfo action)
  {
      int clientVersion = action.Version;
-     string tableName = action.RoomName;
      …………
      …………
      …………
      ………… 
-     List<ActionInfo> actions = GetOperationsQueue(table);
-     foreach (ActionInfo info in actions)
+     List<ActionInfo> previousOperations = ((RedisResult[])results[1]).Select(value => JsonConvert.DeserializeObject<ActionInfo>(value.ToString())).ToList();
+     previousOperations.ForEach(op => op.Version = ++clientVersion);
+     if (previousOperations.Count > 1)
      {
-      if (!info.IsTransformed)
-      {
-        CollaborativeEditingHandler.TransformOperation(info, actions);
-      }
+        // Set the current action to the last operation in the list
+        action = previousOperations.Last();
+        // Transform operations that have not been transformed yet
+        previousOperations.Where(op => !op.IsTransformed).ToList().ForEach(op => CollaborativeEditingHandler.TransformOperation(op, previousOperations));
      }
      action = actions[actions.Count - 1];
      action.Version = updateVersion;
