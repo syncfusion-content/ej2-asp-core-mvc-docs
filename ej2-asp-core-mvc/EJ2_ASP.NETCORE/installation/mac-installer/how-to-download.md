@@ -38,7 +38,7 @@ Our 30-day trial can be downloaded in two ways.
 
     ![Start Trial download](images/start-trial-download-installer.png)
 
-6. Click the More Download Options (element 2 in above screenshot) button to get the Essential Studio ASP. NET Core  - EJ2 Offline trial installer which is available in PKG format.
+6. Click the More Download Options (element 2 in above screenshot) button to get the Essential Studio ASP. NET Core  - EJ2 Offline trial installer which is available in DMG format.
 
    ![License and downloads of Syncfusion Essential Studio](images/Mac_Download.PNG)
 
@@ -73,7 +73,7 @@ You should initiate an evaluation if you have already obtained our components th
    ![License and downloads of Syncfusion Essential Studio](images/license-download.png)
    
 4. Unlock key is not required to install the Syncfusion Flutter Mac trial installer.   
-5. For Mac OS, PKG formats is available for download.
+5. For Mac OS, DMG formats is available for download.
    
    ![License and downloads of Syncfusion Essential Studio](images/Mac_Download.PNG)
 
