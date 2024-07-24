@@ -1,0 +1,36 @@
+<div id="changeHeight">
+    <ejs-button id="small" content="Change height 20px"></ejs-button>
+    <ejs-button id="medium" content="Default height 42px"></ejs-button>
+    <ejs-button id="big" content="Change height 60px"></ejs-button>
+</div>
+<div style='padding:20px 0px 0px 0px'>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+    <e-grid-columns>
+        <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight"  format='C' textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" type='date' format="yMd" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+</div>
+<style>
+#medium,
+#big {
+  margin-left: 20px;
+}
+</style>
+<script>
+    document.getElementById('changeHeight').addEventListener('click', function (event) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        const heightMap = {
+              small: "20px",
+              medium: "34px",
+              big: "60px",
+        };
+        const headerCells = grid.getHeaderContent().querySelectorAll(".e-headercell");
+        headerCells.forEach((headerCell) => {
+          headerCell.style.height = heightMap[event.target.id];
+        });
+    });
+</script>
