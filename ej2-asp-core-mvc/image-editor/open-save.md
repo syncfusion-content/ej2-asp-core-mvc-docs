@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open and Save in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Open and Save in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Open and Save in Syncfusion ##Platform_Name## ImageEditor component  JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open and Save
 publishingplatform: ##Platform_Name##
