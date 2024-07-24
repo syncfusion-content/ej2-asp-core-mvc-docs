@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Component
+title: Icons in ##Platform_Name## Control | Syncfusion
 description: Learn here all about Icons in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons Library
+# Predefined Icons Library in Syncfusion ASP.NET MVC Controls
 
 The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons, that can be utilized in the ASP.NET MVC application.
 
@@ -220,6 +220,15 @@ The following code example explains the direct rendering of Syncfusion `download
 The complete pack of Syncfusion ASP.NET MVC icons is listed in the following table. The corresponding icon content can be referred to the content section.
 
 <!-- markdownlint-disable MD033 -->
+
+### Material 3
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/material3/demo.html" style="height:1000px;width:100%;"></iframe>
+
+### Fluent 2
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/fluent2/demo.html" 
+style="height:1000px;width:100%;"></iframe>
 
 ### Bootstrap 5
 
