@@ -4,7 +4,7 @@ title: Load Documents in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 description: Learn here all about Load Documents in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Documents
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -69,6 +69,6 @@ public ActionResult GetDocument()
 </script>
 ```
 
-T> Also can add the base64 string directly in the `DocumentPath()` method.
+T> Also can add the base64 string directly in the [DocumentPath()](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DocumentPath) method.
 
 Download the sample, [how to load PDF documents dynamically](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EJ2MvcSample-1778613339.zip)

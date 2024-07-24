@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google Cloud Storage in ##Platform_Name## PDF Viewer Component
+title: Google Cloud  in ##Platform_Name## PDFViewer Component | Syncfusion
 description: Learn here all about how to Open PDF files from Google Cloud Storage in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
@@ -49,7 +49,7 @@ using Google.Apis.Auth.OAuth2;
     }  
 
 ```
-3. Modify the `Load()` method to load the PDF files from Google Cloud Storage bucket.
+3. Modify the [Load()](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_Load) method to load the PDF files from Google Cloud Storage bucket.
 
 ```csharp
 
@@ -90,7 +90,7 @@ N> Replace **path/to/service-account-key.json** with the actual file path to you
 
 **Step 4:** Set the PDF Viewer Properties in ASP.NET MVC PDF viewer component
 
-Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Google Cloud Storage. Ensure that you correctly pass the document name from the files available in your azure container to the documentPath property.
+Set the [documentPath](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DocumentPath) property of the PDF viewer component to the desired name of the PDF file you wish to load from Google Cloud Storage. Ensure that you correctly pass the document name from the files available in your azure container to the documentPath property.
 
 ```csharp
 

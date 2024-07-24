@@ -11,7 +11,7 @@ documentation: ug
 
 # Extract Text using TextLineCollection
 
-The PDF Viewer server library allows you to extract the text from a page along with the bounds using TextLineCollection. Text extracting can be done using the **ExtractText()** method.
+The PDF Viewer server library allows you to extract the text from a page along with the bounds using TextLineCollection. Text extracting can be done using the [**ExtractText()**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_ExtractTextCompleted) method.
 
 Add the following dependency to your application using the `NuGet Package Manager`.
 * Syncfusion.EJ2.PdfViewer.AspNet.Mvc5

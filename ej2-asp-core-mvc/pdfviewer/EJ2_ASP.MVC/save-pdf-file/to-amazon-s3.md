@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AWS S3 in ##Platform_Name## Syncfusion PDF Viewer Component
-description: Learn here all about how to Save PDF files from AWS S3 in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: AWS S3 in ##Platform_Name## PDF Viewer Component | Syncfusion
+description: Save the PDF files to AWS S3 in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
 publishingplatform: ##Platform_Name##
@@ -146,7 +146,7 @@ using Amazon.S3;
 using Amazon.S3.Model
 ```
 
-3. Modify the `Download()` method to save the downloaded PDF files to AWS S3 container
+3. Modify the [Download()](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DownloadStart) method to save the downloaded PDF files to AWS S3 container
 
 ```csharp
  private readonly string _accessKey = "Your Access Key from AWS S35";
@@ -187,7 +187,7 @@ N> Replace **Your Access Key from AWS S3**, **Your Secret Key from AWS S3**, and
 
 **Step 4:** Set the PDF Viewer Properties in ASP.NET MVC PDF viewer component
 
-Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from AWS S3. Ensure that you correctly pass the document name from the files available in your azure container to the documentPath property.
+Set the [documentPath](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DocumentPath) property of the PDF viewer component to the desired name of the PDF file you wish to load from AWS S3. Ensure that you correctly pass the document name from the files available in your azure container to the documentPath property.
 
 ```csharp
 

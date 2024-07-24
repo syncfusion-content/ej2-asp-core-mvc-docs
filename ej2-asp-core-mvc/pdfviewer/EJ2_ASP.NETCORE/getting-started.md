@@ -126,7 +126,7 @@ In the above code,
 
 **ejs-pdfviewer** refers to the PDF Viewer control among the EJ components with id as "pdfviewer".
 
-**documentPath** is the property needed to load a PDF file in the PDF Viewer.
+[**documentPath**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DocumentPath) is the property needed to load a PDF file in the PDF Viewer.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core PDF Viewer control will be rendered in the default web browser.
 

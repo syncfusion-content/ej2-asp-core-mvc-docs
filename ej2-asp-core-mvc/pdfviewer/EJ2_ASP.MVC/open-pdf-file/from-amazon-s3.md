@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS S3 in ##Platform_Name## Syncfusion PDF Viewer Component
+title: AWS S3 in ##Platform_Name## PDF Viewer Component | Syncfusion
 description: Learn here all about how to Open PDF files from AWS S3 in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
@@ -111,7 +111,7 @@ using Amazon.S3;
 using Amazon.S3.Model;
 ```
 
-2. Modify the `Load()` method to load the PDF files from AWS S3.
+2. Modify the [Load()](https://ej2.syncfusion.com/documentation/api/pdfviewer/#load) method to load the PDF files from AWS S3.
 
 ```csharp
     private readonly string _accessKey = "Your Access Key from AWS S35";
