@@ -305,7 +305,6 @@ Here's an example of how to use the `BeforeRender` event to add a custom tooltip
 
 ![Display HTML content](../../images/columns/Column-headertext-tooltip.png)
 
-
 > * The [headerCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderCellInfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
 
 ## Customize header text styles 
