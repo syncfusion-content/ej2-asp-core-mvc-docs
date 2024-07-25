@@ -5,4 +5,4 @@
     col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
 
-}).AllowPaging().SearchSettings(search => { search.Fields(new string[] { "CustomerID", "ShipCity", "ShipName" }); }).PageSettings(page => page.PageCount(2)).Toolbar(new List<string>() { "Search" }).Render()
+}).AllowPaging().SearchSettings(search => { search.Fields(new string[] { "CustomerID", "ShipCity", "ShipName" }); }).Toolbar(new List<string>() { "Search" }).Render()

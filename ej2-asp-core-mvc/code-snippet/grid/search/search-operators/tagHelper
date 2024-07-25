@@ -1,0 +1,23 @@
+<div style="display: flex">
+    <label style="padding: 10px 10px 26px 0"> Change the search operators </label>
+    <span style="height:fit-content">
+        <ejs-dropdownlist id="dropdown" dataSource="@ViewBag.dropdownData" change="Change"></ejs-dropdownlist>
+    </span>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" toolbar="@(new List<string>() { " Search"})">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" textAlign="Right" width="110"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" textAlign="Right" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+
+
+<script>
+    function Change(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.searchSettings.operator = args.value;
+    }
+</script>

@@ -1,0 +1,22 @@
+
+	<div style="display: flex">
+		<label style="padding: 10px 10px 26px 0">Change the search operators: </label>
+		<span style="height:fit-content">
+			@Html.EJS().DropDownList("dropdown").Width("180px").DataSource(@ViewBag.dropdownData).Change("change").Render()
+		</span>
+	</div>
+
+	@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
+	{
+	  col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("90").Add();
+	  col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
+	  col.Field("ShipName").HeaderText("Ship Name").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	  col.Field("ShipCountry").HeaderText("Ship Country").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	}).Toolbar(new List<string>() { "Search" }).Render()
+
+<script>
+	function change(args) {
+		var grid = document.getElementById("Grid").ej2_instances[0];
+		grid.searchSettings.operator = args.value;
+	}
+</script>
