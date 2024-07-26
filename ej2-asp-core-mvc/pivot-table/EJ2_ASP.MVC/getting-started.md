@@ -96,6 +96,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 {% include code-snippet/pivot-table/getting-start-mvc/initial-pivot/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
+
 public class HomeController : Controller
  {
      public ActionResult Index()
