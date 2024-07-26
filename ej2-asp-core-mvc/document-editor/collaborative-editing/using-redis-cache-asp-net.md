@@ -1,8 +1,11 @@
 ---
+layout: post
 title: Collaborative Editing in ##Platform_Name## Document Editor Control | Syncfusion
 component: DocumentEditor
 description: Learn how to enable and perform collaborative editing in Syncfusion ##Platform_Name## Document editor.
 publishingplatform: ##Platform_Name##
+documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Collaborative Editing
@@ -14,7 +17,64 @@ Allows multiple users to work on the same document simultaneously. This can be d
 Following things are needed to enable collaborative editing in Document Editor
 
 - SignalR
-- Redis cache
+- Redis
+
+## SignalR
+
+In collaborative editing, real-time communication is essential for users to see each other's changes instantly. We use a real-time transport protocol to efficiently send and receive data as edits occur. For this, we utilize SignalR, which supports real-time data exchange between the client and server. SignalR ensures that updates are transmitted immediately, allowing seamless collaboration by handling the complexities of connection management and offering reliable communication channels.
+
+To make SignalR work in a distributed environment (with more than one server instance), it needs to be configured with either Azure SignalR Service or a Redis backplane.
+
+### Scale-out SignalR using Azure SignalR service
+
+Azure SignalR Service is a scalable, managed service for real-time communication in web applications. It enables real-time messaging between web clients (browsers) and your server-side application(across multiple servers). 
+
+Below is a code snippet to configure Azure SignalR in an ASP.NET Core application using the ```AddAzureSignalR``` method
+
+```csharp
+builder.Services.AddSignalR() .AddAzureSignalR("<your-azure-signalr-service-connection-string>", options => { 
+    // Specify the channel name 
+    options.Channels.Add("document-editor");
+ }); 
+```
+
+### Scale-out SignalR using Redis
+
+Using a Redis backplane, you can achieve horizontal scaling of your SignalR application. The SignalR leverages Redis to efficiently broadcast messages across multiple servers. This allows your application to handle large user bases with minimal latency.
+
+In the SignalR app, install the following NuGet package:
+* ` Microsoft.AspNetCore.SignalR.StackExchangeRedis`
+
+Below is a code snippet to configure Redis backplane in an ASP.NET Core application using the ```AddStackExchangeRedis ``` method
+
+```csharp
+builder.Services.AddSignalR().AddStackExchangeRedis("<your_redis_connection_string>");
+```
+Configure options as needed:
+
+The following example shows how to add a channel prefix in the ConfigurationOptions object. 
+
+```csharp
+builder.Services.AddDistributedMemoryCache().AddSignalR().AddStackExchangeRedis(connectionString, options =>
+  {
+      options.Configuration.ChannelPrefix = "document-editor";
+  });
+```
+
+## Redis
+
+In collaborative editing, Redis is used to store temporary data that helps queue editing operations and resolve conflicts using the `Operational Transformation` algorithm. 
+
+All editing operations in collaborative editing are stored in the Redis cache. To prevent memory buildup, we can configure  a `SaveThreshold` limit at the application level. If the `SaveThreshold` is 100, editing operations up to twice the save threshold limit are kept in Redis per document. Once exceeded, the first 100 operations (as defined by the save threshold) are removed from the cache and automatically saved to the source input document.
+
+The configuration and store size of the Redis cache can be adjusted based on the following considerations.
+
+- *Storage Requirements*: A minimum of 400KB of cache memory is needed for editing a single document, with the capacity to store up to 100 editing operations. Storage needs may increase based on following factor.
+    - *Images*: Increases with the number of images added to the document.
+    - *Pasted content*: Depends on the size of the SFDT content.
+- *Connection Limits*: Redis has a limit on concurrent connections. Choose the Redis configuration based on your user base to ensure optimal performance.
+
+> For better performance, we recommend to have minimum `SaveThreshold` limit of 100.
 
 ## How to enable collaborative editing in client side
 
@@ -202,14 +262,14 @@ CollaborativeEditingController.UpdateOperationsToSourceDocument(roomName, “<<d
 
 ```
 
-### Step 3: Configure Redis connection string in application level
+### Step 3: Configure Redis cache connection string in application level
 
 Configure the Redis that stores temporary data for the collaborative editing session. Provide the Redis connection string in `appsettings.json` file.
 
 ```json
 .....
 "ConnectionStrings": {
-  "Redis": "<Redis connection string>"
+  "RedisConnectionString": "<<Your Redis connection string>>"
 }
 .....
 
@@ -219,8 +279,8 @@ Configure the Redis that stores temporary data for the collaborative editing ses
 
 #### Import File
 
-1.	When opening a document, check the redis list for pending operations and get them for the collaborative editing session.
-2.	If the pending operations already exists, apply them to the WordDocument instance using the `UpdateActions` method before converting it to the SFDT format.
+1.	When opening a document, check the Redis cache for pending operations and retrieve them for the collaborative editing session.
+2.	If pending operations exist, apply them to the WordDocument instance using the `UpdateActions` method before converting it to the SFDT format.
 
 ```csharp
 public string ImportFile([FromBody] FileInfo param)
@@ -246,23 +306,15 @@ public string ImportFile([FromBody] FileInfo param)
      return Newtonsoft.Json.JsonConvert.SerializeObject(content);
  }
 
- public async Task<List<ActionInfo>> GetPendingOperations(string listKey, long startIndex, long endIndex)
- {
-     // Get the database connection from the Redis connection multiplexer
-     var db = _redisConnection.GetDatabase();
-     // Fetch the list of operations from Redis using the provided key and index range
-     var values = await db.ListRangeAsync(listKey, startIndex, endIndex);
-     // Deserialize the operations from JSON to ActionInfo objects and return as a list
-     return values.Select(value => Newtonsoft.Json.JsonConvert.DeserializeObject<ActionInfo>(value)).ToList();
- }
-
 ```
 
-#### Update editing operations to redis.
+#### Update editing records to Redis cache.
 
-Each edit operation made by the user is sent to the server and is pushed into the redis list data structure. Each operation receives a version number after being inserted into the redis.
-After inserting the records to the server, the position of the current editing operation must be transformed against any previous editing operations not yet synced with the client using the TransformOperation method.
-After performing the transformation, the current operation is broadcast to all connected users within the group.
+Each edit operation made by the user is sent to the server and pushed into a Redis list data structure. Each operation is assigned a version number upon insertion into Redis.
+
+After inserting the records to the server, the position of the current editing operation must be transformed relative to any previous editing operations not yet synced with the client using the `TransformOperation` method to resolve any potential conflicts with the help of the `Operational Transformation` algorithm.
+
+Once the conflict is resolved, the current operation is broadcast to all connected users within the group.
 
 ```csharp
 public async Task<ActionInfo> UpdateAction([FromBody] ActionInfo param)
@@ -283,11 +335,21 @@ public async Task<ActionInfo> UpdateAction([FromBody] ActionInfo param)
 private ActionInfo AddOperationsToTable(ActionInfo action)
  {
      int clientVersion = action.Version;
+     string insertScript = "-------"
      …………
      …………
      …………
      ………… 
-     List<ActionInfo> previousOperations = ((RedisResult[])results[1]).Select(value => JsonConvert.DeserializeObject<ActionInfo>(value.ToString())).ToList();
+
+    IDatabase database = _redisConnection.GetDatabase();
+    // Define the keys for Redis operations based on the action's room name
+    RedisKey[] keys = new RedisKey[] { action.RoomName + CollaborativeEditingHelper.VersionSuffix, action.RoomName, action.RoomName + CollaborativeEditingHelper.RevisionSuffix };
+    // Serialize the action and prepare values for the Redis script
+    RedisValue[] values = new RedisValue[] { JsonConvert.SerializeObject(action), clientVersion.ToString(), CollaborativeEditingHelper.SaveThreshold.ToString() };
+    // Execute the Lua script in Redis and store the results
+    RedisResult[] results = (RedisResult[])await database.ScriptEvaluateAsync(insertScript, keys, values);
+
+    List<ActionInfo> previousOperations = ((RedisResult[])results[1]).Select(value => JsonConvert.DeserializeObject<ActionInfo>(value.ToString())).ToList();
      previousOperations.ForEach(op => op.Version = ++clientVersion);
      if (previousOperations.Count > 1)
      {
@@ -306,88 +368,46 @@ private ActionInfo AddOperationsToTable(ActionInfo action)
 
 #### Add Web API to get previous operation as a backup to get lost operations
 
-On the client side, messages broadcast using SignalR may be received in a different order, or some operations may be missed due to network issues. In these cases, we need a backup method to retrieve missing operations from the redis.
-Using the following method, we can retrieve all operations after the last successful client-synced version and return all missing operations to the requesting client.
+On the client side, messages broadcast using SignalR might be received out of order or lost due to network issues. In such cases, we need a backup method to retrieve missing operations from Redis. By using the following method, we can retrieve all operations performed after the last successful client-synchronized version and return any missing operations to the requesting client.
 
 ```csharp
-public async Task<ActionInfo> UpdateAction([FromBody] ActionInfo param)
-{
-    try
-    {
-        ActionInfo modifiedAction = AddOperationsToTable(param);
-        //After transformation broadcast changes to all users in the group
-        await _hubContext.Clients.Group(param.RoomName).SendAsync("dataReceived", "action", modifiedAction);
-        return modifiedAction;
-    }
-    catch
-    {
-        return null;
-    }
-}
-
-private ActionInfo AddOperationsToTable(ActionInfo action)
- {
-     int clientVersion = action.Version;
-     …………
-     …………
-     …………
-     ………… 
-     List<ActionInfo> previousOperations = ((RedisResult[])results[1]).Select(value => JsonConvert.DeserializeObject<ActionInfo>(value.ToString())).ToList();
-     previousOperations.ForEach(op => op.Version = ++clientVersion);
-     if (previousOperations.Count > 1)
-     {
-        // Set the current action to the last operation in the list
-        action = previousOperations.Last();
-        // Transform operations that have not been transformed yet
-        previousOperations.Where(op => !op.IsTransformed).ToList().ForEach(op => CollaborativeEditingHandler.TransformOperation(op, previousOperations));
-     }
-     action = actions[actions.Count - 1];
-     action.Version = updateVersion;
-     //Return the transformed operation to broadcast it to other clients.
-     return action;
- }
-
-```
-## How to perform Scaling in Collaborative Editing.
-
-As the number of user increases, maintaining responsiveness and performance becomes challenging. Scaling tackles this by distributing the workload across resources. You can scale the collaborative editing application using either ```Azure SignalR service or Redis backplane service```
-
-### 1. Scaling with Azure SignalR
-
-Azure SignalR Service is a scalable, managed service for real-time communication in web applications. It enables real-time messaging between web clients (browsers) and your server-side application(across multiple servers). 
-
-Below is a code snippet to configure Azure SignalR in an ASP.NET Core application using the ```AddAzureSignalR``` method
-
-```csharp
-builder.Services.AddSignalR() .AddAzureSignalR("<your-connection-string>", options => { 
-// Specify the channel name 
-options.Channels.Add("document-editor");
- }); 
-```
-
-### 2. Scaling with Redis backplane
-
-Using a Redis backplane, you achieve horizontal scaling of your SignalR application. The SignalR leverages Redis to efficiently broadcast messages across multiple servers. This allows your application to handle large user bases with minimal latency.
-
-In the SignalR app, install the following NuGet package:
-* ` Microsoft.AspNetCore.SignalR.StackExchangeRedis`
-
-Below is a code snippet to configure Redis backplane in an ASP.NET Core application using the ```AddStackExchangeRedis ``` method
-
-```csharp
-builder.Services.AddSignalR().AddStackExchangeRedis("<your_Redis_connection_string>");
-```
-Configure options as needed:
-
-The following example shows how to add a channel prefix in the ConfigurationOptions object. 
-
-```csharp
-builder.Services.AddDistributedMemoryCache().AddSignalR().AddStackExchangeRedis(connectionString, options =>
+public async Task<string> GetActionsFromServer(ActionInfo param)
   {
-      options.Configuration.ChannelPrefix = "document-editor";
-  });
-```
+      try
+      {
+          // Initialize necessary variables from the parameters and helper class
+          int saveThreshold = CollaborativeEditingHelper.SaveThreshold;
+          string tableName = param.RoomName;
+          int lastSyncedVersion = param.Version;
+          int clientVersion = param.Version;
 
+          // Retrieve the database connection
+          IDatabase database = _redisConnection.GetDatabase();
+
+          // Fetch actions that are effective and pending based on the last synced version
+          List<ActionInfo> actions = await GetEffectivePendingVersion(tableName, lastSyncedVersion);
+
+          // Increment the version for each action sequentially
+          actions.ForEach(action => action.Version = ++clientVersion);
+
+          // Filter actions to only include those that are newer than the client's last known version
+          actions = actions.Where(action => action.Version > lastSyncedVersion).ToList();
+
+          // Transform actions that have not been transformed yet
+          actions.Where(action => !action.IsTransformed).ToList()
+              .ForEach(action => CollaborativeEditingHandler.TransformOperation(action, actions));
+
+          // Serialize the filtered and transformed actions to JSON and return
+          return Newtonsoft.Json.JsonConvert.SerializeObject(actions);
+      }
+      catch (Exception ex)
+      {
+          // In case of an exception, return an empty JSON object
+          return "{}";
+      }
+  }
+
+```
 
 Full version of the code discussed about can be found in below GitHub location.
 
