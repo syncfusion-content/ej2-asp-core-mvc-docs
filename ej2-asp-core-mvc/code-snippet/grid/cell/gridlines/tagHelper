@@ -1,9 +1,23 @@
-
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="315" gridLines="Both" >            
+<div style="display: flex">
+    <label style="padding: 10px 10px 26px 0"> Change the Grid lines: : </label>
+    <span style="height:fit-content">
+        <ejs-dropdownlist id="dropdown" dataSource="@ViewBag.dropdownData" change="change"></ejs-dropdownlist>
+    </span>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>               
-        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
-        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+        <e-grid-column field="NumberOfPatentFamilies" headerText="Number of Patent families" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Inventor" headerText="Inventor Name" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="NumberOfINPADOCPatents" headerText="NumberOfINPADOCPatents" width="150"></e-grid-column>
+        <e-grid-column field="MainFieldsOfInvention" headerText="Main Fields Of Invention" width="150"></e-grid-column>
+        <e-grid-column field="Active" headerText="Active" textAlign="Right" width="150"></e-grid-column>
     </e-grid-columns>
- </ejs-grid>
+</ejs-grid>
+</div>
+
+<script type="text/javascript">
+    function change(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.gridLines = args.value;
+    }
+</script>
