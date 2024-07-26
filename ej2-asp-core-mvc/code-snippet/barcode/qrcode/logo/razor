@@ -1,0 +1,6 @@
+@(Html.EJS().QRCodeGenerator("container").
+Width("200px").
+foreColor("red").
+Height("150px").
+logo(s => s.imageSource("https://www.syncfusion.com/web-stories/wp-content/uploads/sites/2/2022/02/cropped-Syncfusion-logo.png")).
+Value("SYNCFUSION").Render() )
