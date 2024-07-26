@@ -51,7 +51,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -71,7 +71,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 ## Register Syncfusion script manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -98,18 +98,6 @@ Now, add the Syncfusion ASP.NET MVC Rich Text Editor control in `~/Views/Home/In
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Rich Text Editor control will be rendered in the default web browser.
 
 ![ASP.NET MVC Rich Text Editor Control](images/richtexteditor-control.png)
-
-### Initialize from iframe element
-
-Initialize the Rich Text Editor on `<div>` element as shown below and set the enable field of [IframeSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_IframeSettings) property as true to render the Rich Text Editor content in an `<iframe>` and its isolated from the rest of the page.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/basic/iframe/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET MVC Rich Text Editor with IFrame Element](images/richtexteditor-iframe-element.png)
 
 ## Configure the Toolbar
 
@@ -140,102 +128,6 @@ public ActionResult Index()
 
 N> `|` and `-` can insert a vertical and horizontal separator lines in the toolbar.
 
-## Insert Images and Links
-
-The `Image` module inserts an image into Rich Text Editor’s content area, and the `Link` module links external resources such as website URLs, to selected text in the Rich Text Editor’s content, respectively.
-
-The link inject module adds a link icon to the toolbar and the image inject module adds an image icon to the toolbar.
-
-Specifies the items to be rendered in quick toolbar based on the target element such image, link and text element. The quick toolbar opens to customize the element by clicking the target element.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/basic/image/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-public ActionResult Index()
-{
-    ViewBag.image = new[] {
-        "Replace", "Align", "Caption", "Remove", "InsertLink", "OpenImageLink", "-",
-        "EditImageLink", "RemoveImageLink", "Display", "AltText", "Dimension"
-    };
-    List<string> tools = new List<string>() {
-        "Bold", "Italic", "Underline", "StrikeThrough",
-        "FontName", "FontSize", "FontColor", "BackgroundColor",
-        "LowerCase", "UpperCase", "|",
-        "Formats", "Alignments", "OrderedList", "UnorderedList",
-        "Outdent", "Indent", "|",
-        "CreateLink", "Image", "CreateTable", "|", "ClearFormat", "Print",
-        "SourceCode", "FullScreen", "|", "Undo", "Redo"
-    };
-    return View(tools);
-}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET MVC Rich Text Editor with Image](images/richtexteditor-with-image.png)
-
-## Send formatted content using XmlHttpRequest
-
-The Html string of the Rich Text Editor can be passed from View to the Controller through the `XMLHttpRequest` `Post` action. The HTML value binds to the corresponding mapped controller, and you can access it in the Post action parameter.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/basic/rtevalue/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-## Retrieve the Formatted Content
-
-To retrieve the editor contents, use [value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property of Rich Text Editor.
-
-```javascript
-  var rteValue = this.rteObj.value;
-```
-
-Or, you can use the public method, `getHtml` to retrieve the Rich Text Editor content.
-
-```javascript
-  var rteValue = this.rteObj.getHtml();
-```
-
-To fetch the Rich Text Editor's text content, use `getText` method of Rich Text Editor.
-
-```javascript
-  var rteValue = this.rteObj.getText();
-```
-
-## Retrieve the number of characters
-
-To get the maximum number of characters in the Rich Text Editor's content, use `getCharCount`
-
-```typescript
-  let rteCount = this.rteObj.getCharCount();
-```
-
-The final output will be displayed as follows
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/basic/link/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-public ActionResult Index()
-{
-    List<string> tools = new List<string>() {
-        "Bold", "Italic", "Underline", "StrikeThrough",
-        "FontName", "FontSize", "FontColor", "BackgroundColor",
-        "LowerCase", "UpperCase", "|",
-        "Formats", "Alignments", "OrderedList", "UnorderedList",
-        "Outdent", "Indent", "|",
-        "CreateLink", "Image", "CreateTable", "|", "ClearFormat", "Print",
-        "SourceCode", "FullScreen", "|", "Undo", "Redo"
-    };
-    return View(tools);
-}
-{% endhighlight %}
-{% endtabs %}
-
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
@@ -245,5 +137,8 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 * [How to change the editor type](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/formation)
 * [How to render the iframe](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/iframe)
 * [How to render the toolbar in inline mode](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/inline-mode)
+* [Accessibility in Rich text editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/accessibility)
+* [Keyboard support in Rich text editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/keyboard-support)
+* [Globalization in Rich text editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/globalization)
 
 N> You can refer to our [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Rich Text Editor example](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/DefaultFunctionalities#/material) that shows how to render the rich text editor tools.
