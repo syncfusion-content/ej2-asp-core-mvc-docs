@@ -141,4 +141,4 @@ The column menu in Syncfusion ##Platform_Name## Grid provides a set of events th
 {% endhighlight %}
 {% endtabs %}
 
-![Column menu events](../../images/column-menu/column-menu-events.gif)
+![Column menu events](../../images/column-menu/column-menu-events.gif) 
