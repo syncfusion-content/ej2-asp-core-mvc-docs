@@ -1,3 +1,4 @@
+<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
 
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" showColumnMenu="true">
     <e-grid-columns>
@@ -10,6 +11,6 @@
 
 <style>
    .e-grid .e-columnheader .e-icons.e-columnmenu::before {
-        content: "\e969";
+        content: "\e799";
     }   
 </style>
