@@ -45,30 +45,6 @@ let commentProperties = {
 // Insert the comment with the specified properties into the document editor.
 documentEditor.editor.insertComment('Hello world', commentProperties);
 ```
-## Add a New Comment with Date, Author, and Status
-
-Comments can be inserted into the selected text with a specified date, author, and status.
-
-```typescript
-// In this example, a comment with the text "Hello world"
-// is added by the author Nancy Davolio on July 23, 2024, at 2:30 PM. 
-// The isResolved status is set to false.
-
-// Create a specific date: July 23, 2024, at 2:30:00 PM.
-// Note: July is represented by 6 (0-based index).
-let specificDate = new Date(2024, 6, 23, 14, 30, 0); 
-
-
-// Define the properties of the comment including author, date, and resolution status.
-let commentProperties = { 
-    author: 'Nancy Davolio',          // The author of the comment.
-    dateTime: specificDate,           // The date and time when the comment is created.
-    isResolved: false                 // The status of the comment; false indicates it is unresolved.
-};
-
-// Insert the comment with the specified properties into the document editor.
-documentEditor.editor.insertComment('Hello world', commentProperties);
-```
 
 ## Add a Reply Comment with Date, Author, and Status
 
