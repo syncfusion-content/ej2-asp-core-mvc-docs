@@ -10,7 +10,7 @@ documentation: ug
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-## Rendering Flat JSON Data in the ASP.Net Core File Manager Component
+# Rendering Flat JSON Data in the ASP.Net Core File Manager Component
 
 The File Manager uses a flat data JSON as an array of objects for rendering, eliminating the need to define [ajaxSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) url. To load a folder data as an array of objects, use the File Manager component's [fileSystemData](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_FileSystemData) object. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your code using the FileManager's action events.
 
