@@ -32,11 +32,11 @@ Comments can be inserted into the selected text with a specified date, author, a
 
 // Create a specific date: July 23, 2024, at 2:30:00 PM.
 // Note: July is represented by 6 (0-based index).
-let specificDate = new Date(2024, 6, 23, 14, 30, 0); 
+var specificDate = new Date(2024, 6, 23, 14, 30, 0); 
 
 
 // Define the properties of the comment including author, date, and resolution status.
-let commentProperties = { 
+var commentProperties = { 
     author: 'Nancy Davolio',          // The author of the comment.
     dateTime: specificDate,           // The date and time when the comment is created.
     isResolved: false                 // The status of the comment; false indicates it is unresolved.
@@ -57,17 +57,17 @@ Reply comments can be inserted into the parent comment with a specified date, au
 
 // Create a specific date: July 23, 2024, at 2:30:00 PM.
 // Note: July is represented by 6 (0-based index).
-let specificDate = new Date(2024, 6, 23, 14, 30, 0);
+var specificDate = new Date(2024, 6, 23, 14, 30, 0);
 
 // Define the properties of the comment including author, date, and resolution status.
-let commentProperties = { 
+var commentProperties = { 
     author: 'Nancy Davolio',          // The author of the comment.
     dateTime: specificDate,           // The date and time when the comment is created.
     isResolved: false                 // The status of the comment; false indicates it is unresolved.
 };
 
 // Insert the comment with the specified properties into the Document Editor.
-let comment = documentEditor.editor.insertComment('Hello world', commentProperties);
+var comment = documentEditor.editor.insertComment('Hello world', commentProperties);
 // Insert a reply comment with specified properties into the Document Editor
 documentEditor.editor.insertReplyComment(comment.id, 'Hello world', commentProperties);
 ```
@@ -78,7 +78,7 @@ Document Editor allows to get the comments along with its reply and comment prop
 
 ```typescript
 //Get Comments in the document along with the properties author, date, status.
-let commentinfo = container.documentEditor.getComments();
+var commentinfo = container.documentEditor.getComments();
 ```
 
 ## Comment navigation
