@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FlatData in ##Platform_Name## File Manager Component
+title: FlatData in Syncfusion ##Platform_Name## File Manager Component
 description: Learn here all about Flat Data in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: FlatData
@@ -10,7 +10,7 @@ documentation: ug
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-# Rendering Flat JSON Data in the ASP.Net Core File Manager Component
+## Rendering Flat JSON Data in the ASP.Net Core File Manager Component
 
 The File Manager uses a flat data JSON as an array of objects for rendering, eliminating the need to define [ajaxSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) url. To load a folder data as an array of objects, use the File Manager component's [fileSystemData](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_FileSystemData) object. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your code using the FileManager's action events.
 
@@ -45,7 +45,7 @@ To render the root-level folder, specify the `parentId` as null, or there is no 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-# Rendering Flat JSON Data in the ASP.Net MVC File Manager Component
+## Rendering Flat JSON Data in the ASP.Net MVC File Manager Component
 
 The File Manager uses a flat data JSON as an array of objects for rendering, eliminating the need to define [ajaxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) url. To load a folder data as an array of objects, use the File Manager component's [fileSystemData](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_FileSystemData) object. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your code using the FileManager's action events.
 
