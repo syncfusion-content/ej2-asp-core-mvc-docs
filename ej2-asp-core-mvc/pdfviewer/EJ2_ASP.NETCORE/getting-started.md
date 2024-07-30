@@ -4,7 +4,7 @@ title: Getting Started with EJ2 ASP.NET Core PDF Viewer Control | Syncfusion
 description: Learn how to getting started with PDF Viewer control in ASP.NET Core application. You can view and comment on PDFs in ease and also can fill forms.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -133,22 +133,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ![ASP.NET Core PDF Viewer Control](Core_Images/pdfviewer-control.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20Core%20Tag%20Helper%20Examples%20-%20Standalone%20PDF%20Viewer).
-
-## Limitation over Server-Backed PDF Viewer to Standalone PDF Viewer control
-
-When comparing a Standalone PDF Viewer to a Server-Backed PDF Viewer control, it's crucial to understand the limitations that the Standalone PDF Viewer may have in comparison. These limitations are important to consider
-
-### PNG Image Support
-
-The Standalone PDF Viewer does not have the capability to utilize PNG format for adding images to handwritten annotations ,custom stamp ,signature and initial form fields. It's important to be aware that only certain image formats, such as JPEG, are compatible for these purposes.
-
-### Local File Access
-
-* The Standalone PDF Viewer control does not have the capability to directly access and load local physical files from a user's device. As a result, it is not possible to use a documentPath to load a PDF file directly from a local server within the viewer.
-
-* The Standalone PDF Viewer allows users to export annotations and form fields from the viewer, it's important to be aware that the viewer does not support the direct import of annotations and form fields from a locally specified file path. In other words, you can extract annotations and form fields from the viewer, but you cannot reintroduce them into the viewer from external sources by specifying a file path located on your local device.
-
-N> These limitations are temporary and are expected to be addressed in the near future.
 
 ## See also
 

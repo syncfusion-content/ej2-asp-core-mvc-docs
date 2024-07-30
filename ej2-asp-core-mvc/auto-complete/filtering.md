@@ -139,9 +139,6 @@ An AutoComplete supports diacritics filtering which will ignore the [diacritics]
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/filtering/diacritics/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Diacritics.cs" %}
-{% include code-snippet/autocomplete/filtering/diacritics/diacritics.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

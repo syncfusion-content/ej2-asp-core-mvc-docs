@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Avatar Customization in ##Platform_Name## Avatar Component
+title: Avatar Customization in ##Platform_Name## Avatar Component | Syncfusion
 description: Learn here all about Avatar Customization in Syncfusion ##Platform_Name## Avatar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Avatar Customization
@@ -10,9 +10,9 @@ documentation: ug
 
 # Avatar Customization
 
-## Colour customization
+## Color customization
 
-The avatar comes with default background colour (grey). This can be easily customized to desired colour by adding custom class or directly selecting the avatar class from the CSS.
+The avatar comes with default background color (Grey). This can be easily customized to desired color by adding custom class or directly selecting the avatar class from the CSS.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -75,9 +75,6 @@ Avatars can be used with a wide variety of media formats like SVG, font-icons, i
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/media-formats/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/media-formats/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -51,10 +51,12 @@ Output be like the below.
 
 ### Image filtering event 
 
-The [`imageFiltering`] event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
+The [`imageFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ImageFiltering) event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
 
 The parameter available in the `ImageFilterEventArgs` event is, 
 
 ImageFilterEventArgs.filter - The type of filtering as ImageFilterOption to be applied in the image editor. 
 
 ImageFilterEventArgs.cancel – Specifies to cancel the filtering action. 
+
+> Please note that the Filter and Finetune features were unavailable on iOS due to the non-functioning CanvasContext.filter property on this platform.

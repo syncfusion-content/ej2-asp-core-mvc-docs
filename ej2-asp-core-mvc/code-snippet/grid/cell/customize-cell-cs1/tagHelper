@@ -1,0 +1,38 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" queryCellInfo="customizeCell">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="100"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+@section Scripts {
+<style>
+    .below-30 {
+        background-color: orangered;
+    }
+
+    .below-80 {
+        background-color: yellow;
+    }
+
+    .above-80 {
+        background-color: greenyellow;
+    }
+</style>
+<script type="text/javascript">
+    function customizeCell(args) {
+        console.log(args.column);
+        if (args.column.field === 'Freight') {
+            var freightData = args.data['Freight'];
+            if (freightData <= 30) {
+                args.cell.classList.add('below-30');
+            } else if (freightData > 30 && freightData < 80) {
+                args.cell.classList.add('below-80');
+            } else {
+                args.cell.classList.add('above-80');
+            }
+        }
+    }</script>
+}

@@ -15,7 +15,7 @@ The Scheduler supports exporting all its appointments both to an Excel or ICS ex
 
 ## Excel Exporting
 
-The Scheduler allows you to export all its events into an Excel format file by using the [`exportToExcel`] client-side method. By default, it exports all the default fields of Scheduler mapped through `eventSettings` property.
+The Scheduler allows you to export all its events into an Excel format file by using the [`exportToExcel`] client-side method. By default, it exports all the default fields of Scheduler mapped through [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property.
 
 N> Before you start with excel exporting functionality, you need to import and inject the `ExcelExport` module from the `'@syncfusion/ej2-schedule'` package using the `Inject` method of Scheduler.
 
@@ -46,7 +46,7 @@ N> Before you start with excel exporting functionality, you need to import and i
 
 ### Exporting with custom fields
 
-By default, Scheduler exports all the default event fields that are mapped to it through the `eventSettings` property. To limit the number of fields on the exported excel file, it provides an option to export only the custom fields of the event data. To export such custom fields alone, define the required `fields` and pass it as argument to the `exportToExcel` method as shown in the following example. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
+By default, Scheduler exports all the default event fields that are mapped to it through the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property. To limit the number of fields on the exported excel file, it provides an option to export only the custom fields of the event data. To export such custom fields alone, define the required `fields` and pass it as argument to the `exportToExcel` method as shown in the following example. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

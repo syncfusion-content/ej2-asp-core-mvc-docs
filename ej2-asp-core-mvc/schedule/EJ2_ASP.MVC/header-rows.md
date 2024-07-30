@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header Rows in ##Platform_Name## Schedule Component
+title: Header Rows in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Header Rows in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Header Rows
@@ -11,7 +11,7 @@ documentation: ug
 
 # Timeline header rows
 
-The Timeline views can have additional header rows other than its default date and time header rows. It is possible to show individual header rows for displaying year, month and week separately using the `HeaderRows` property. This property is applicable only on the timeline views. The possible rows which can be added using `HeaderRows` property are as follows.
+The Timeline views can have additional header rows other than its default date and time header rows. It is possible to show individual header rows for displaying year, month and week separately using the [`HeaderRows`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property. This property is applicable only on the timeline views. The possible rows which can be added using `HeaderRows` property are as follows.
 
 * `Year`
 * `Month`
@@ -50,7 +50,7 @@ The following example shows the Scheduler displaying all the available header ro
 
 ## Display year and month rows in timeline views
 
-To display the timeline Scheduler simply with year and month names alone, define the option `Year` and `Month` within the `HeaderRows` property.
+To display the timeline Scheduler simply with year and month names alone, define the option `Year` and `Month` within the [`HeaderRows`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,7 +79,7 @@ To display the timeline Scheduler simply with year and month names alone, define
 
 ## Display week numbers in timeline views
 
-The week number can be displayed in a separate header row of the timeline Scheduler by setting `Week` option within `HeaderRows` property.
+The week number can be displayed in a separate header row of the timeline Scheduler by setting `Week` option within [`HeaderRows`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -108,7 +108,7 @@ The week number can be displayed in a separate header row of the timeline Schedu
 
 ## Timeline view displaying dates of a complete year
 
-It is possible to display a complete year in a timeline view by setting `Interval` value as 12 and defining **TimelineMonth** view option within the `Views` property of Scheduler.
+It is possible to display a complete year in a timeline view by setting [`Interval`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleTimeScale.html#Syncfusion_EJ2_Schedule_ScheduleTimeScale_Interval) value as 12 and defining **TimelineMonth** view option within the [`Views`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Views) property of Scheduler.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -137,7 +137,7 @@ It is possible to display a complete year in a timeline view by setting `Interva
 
 ## Customizing the header rows using template
 
-You can customize the text of the header rows and display any images or formatted text on each individual header rows using the built-in `Template` option available within the `HeaderRows` property.
+You can customize the text of the header rows and display any images or formatted text on each individual header rows using the built-in `Template` option available within the [`HeaderRows`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

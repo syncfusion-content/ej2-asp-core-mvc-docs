@@ -157,9 +157,6 @@ There is also an option to custom design the suggestion list content when the da
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/templates/actionfailuretemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Actionfailuretemplate.cs" %}
-{% include code-snippet/autocomplete/templates/actionfailuretemplate/actionfailuretemplate.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

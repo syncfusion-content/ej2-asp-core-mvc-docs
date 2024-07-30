@@ -83,7 +83,7 @@ Output be like the below.
 
 ## Finetune value changing event 
 
-The `finetuneValueChanging` event is triggered when performing fine-tuning on the image. This event is passed an object that contains information about the fine-tuning event, such as the type of fine-tuning and the value of fine-tuning performed. 
+The [`finetuneValueChanging`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_FinetuneValueChanging) event is triggered when performing fine-tuning on the image. This event is passed an object that contains information about the fine-tuning event, such as the type of fine-tuning and the value of fine-tuning performed. 
 
 The parameter available in the `FinetuneEventArgs` event is, 
 
@@ -92,3 +92,5 @@ FinetuneEventArgs.finetune - The type of fine-tuning as ImageFinetuneOption to b
 FinetuneEventArgs.value - The fine-tuning value to be applied in the image editor. 
 
 FinetuneEventArgs.cancel – Specifies a boolean value to cancel the fine-tuning action. 
+
+> Please note that the Filter and Finetune features were unavailable on iOS due to the non-functioning CanvasContext.filter property on this platform.

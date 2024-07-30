@@ -80,6 +80,30 @@ var node = {
 diagram.add(node);
 ```
 
+## Add collection of nodes at runtime
+
+* The collection of nodes can be dynamically added using `addElements` method.Each time an element is added to the diagram canvas, the `collectionChange` event will be triggered.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/node/nodescollection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Nodescollection.cs" %}
+{% include code-snippet/diagram/node/nodescollection/nodescollection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Nodescollection.cs" %}
+{% include code-snippet/diagram/node/nodescollection/nodescollection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Add node from palette
 
 Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information about adding nodes from symbol palette, refer to [`Symbol Palette`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html).

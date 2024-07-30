@@ -20,6 +20,7 @@ function fileMenuItemSelect(args) {
         );
         formData.append("fileName", "Sample");
         formData.append("saveType", "Xlsx");
+        formData.append("pdfLayoutSettings", JSON.stringify({ fitSheetOnOnePage: false, orientation: "Portrait" }));
         fetch(
           "https://services.syncfusion.com/aspnet/production/api/spreadsheet/save",
           {

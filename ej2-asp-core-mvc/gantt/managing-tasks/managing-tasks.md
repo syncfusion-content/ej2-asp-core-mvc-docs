@@ -224,6 +224,104 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 ![Gantt new task dialog with default values](images/task-dialog-with-default-values.png)
 
+
+## Customize control in add/edit dialog
+
+In Gantt Chart, the controls such as form elements, grid and RTE in add and edit dialog can be customized by using [AdditionalParams](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_AdditionalParams) property.
+
+### Customize general tab of dialog
+
+The form element in the `General` tab of the add/edit dialog can be added or removed by using the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_Fields) property within the [addDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [editDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html) settings respectively.
+
+The controls of the `fields` can be customized by using the [edit](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/managing-tasks/managing-tasks#cell-edit-template) template feature.
+
+In the below sample, `General` tab is customized using the `fields` property. The fields **TaskID**, **TaskName** and **newInput** are added in both `addDialogFields` and `editDialogFields` settings.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value1/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value1/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Customize dependency, segments and resources tab of dialog
+
+You can customize the dependency, segments, and resource tabs of the dialog box using the [additionalParams](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_AdditionalParams) property within the [addDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [editDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html) settings respectively. This customization involves defining properties from the [grid](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html) within the `additionalParams` property.
+
+In the example below: 
+* The `dependency` tab enables [sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) options. 
+* The `segments` tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://help.syncfusion.com/cr/aspnetcore-js2#Syncfusion_EJ2_Grids_GridColumn_Field).
+* The `resources` tab defines a new column `Segment Task`  with specific properties such as `field`, [width](https://ej2.syncfusion.com/vue/documentation/api/grid/columnModel/#width) and [headerText](https://help.syncfusion.com/cr/aspnetcore-js2#Syncfusion_EJ2_Grids_GridColumn_HeaderText).
+These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value2/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value2/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Customize note dialog tab
+
+You can customize the note dialog tab using the [additionalParams](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_AdditionalParams) property within the [addDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [editDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html) settings respectively. This customization involves defining properties from the [RTE](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.html) module within the `additionalParams` property.
+
+In the following example, the `notes` tab is customized with the [inlinemode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorInlineMode.html) property enabled, allowing for in-place editing. Additionally, the `OnSelection` property is enabled, which opens the toolbar inline upon selecting text.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value3/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value3/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value3/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value3/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Troubleshoot: Editing works only when primary key column is defined
 
 Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property, it is mandatory that any one of the columns, must be a primary column. By default, the [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column will be the primary key column.  If [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column is not defined, we need to enable [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property.
@@ -238,7 +336,9 @@ The following table describes different types of editing modes available in Gant
 |-----|-----|
 |[`Cell editing`](managing-tasks/#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.|
 |[`Dialog editing`](managing-tasks/#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.|
-|[`Taskbar editing`](managing-tasks/#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> ![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> ![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.|
+|[`Taskbar editing`](managing-tasks/#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> 
+![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> 
+![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.|
 
 ### Task dependency editing
 

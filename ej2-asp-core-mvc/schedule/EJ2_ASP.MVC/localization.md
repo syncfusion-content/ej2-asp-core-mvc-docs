@@ -13,11 +13,11 @@ documentation: ug
 
 The Scheduler integrates different date-time formats and cultures, which allows it to function globally, thus meeting the diverse needs of different regions.
 
-You can adapt the Scheduler to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization/)), adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/)).
+You can adapt the Scheduler to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization)), adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization)).
 
 ## Globalization
 
-The Internationalization library provides support for formatting and parsing the number, date, and time by using the official [`Unicode CLDR`](http://cldr.unicode.org/) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data.
+The Internationalization library provides support for formatting and parsing the number, date, and time by using the official [`Unicode CLDR`](https://cldr.unicode.org/) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data.
 
 By default, Scheduler is set to follow the English culture ('en-US'). If you want to go with different culture other than English, follow the below steps.
 
@@ -128,7 +128,7 @@ For example, the following code example lets you to define the Hungarian transla
 
 ## Setting date format
 
-Scheduler can be used with all valid date formats and by default it follows the universal date format "MM/dd/yyyy". If the `DateFormat` property is not specified particularly, then it will work based on the locale that is assigned to the Scheduler. As the default locale applied on Scheduler is "en-US", this makes it to follow the "MM/dd/yyyy" pattern.
+Scheduler can be used with all valid date formats and by default it follows the universal date format "MM/dd/yyyy". If the [`DateFormat`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateFormat) property is not specified particularly, then it will work based on the locale that is assigned to the Scheduler. As the default locale applied on Scheduler is "en-US", this makes it to follow the "MM/dd/yyyy" pattern.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -157,7 +157,7 @@ Scheduler can be used with all valid date formats and by default it follows the 
 
 ## Setting the time format
 
-Time formats is a way of representing the time value in different string formats in the Scheduler. By default, the time mode of the Scheduler can be either 12 or 24 hours format which is completely based on the `locale` set to the Scheduler. Since the default `locale` value of the Scheduler is en-US, the time mode will be set to 12 hours format automatically. You can also customize the format by using the `timeFormat` property. To know more about the time format standards, refer to the [Date and Time Format](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization/#custom-formats) section.
+Time formats is a way of representing the time value in different string formats in the Scheduler. By default, the time mode of the Scheduler can be either 12 or 24 hours format which is completely based on the `locale` set to the Scheduler. Since the default `locale` value of the Scheduler is en-US, the time mode will be set to 12 hours format automatically. You can also customize the format by using the [`timeFormat`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeFormat) property. To know more about the time format standards, refer to the [Date and Time Format](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization/#custom-formats) section.
 
 The following example demonstrates the Scheduler component in 24 hours format.
 
@@ -186,11 +186,11 @@ The following example demonstrates the Scheduler component in 24 hours format.
 
 
 
-N> `timeFormat` property only accepts the valid time format's.
+N> [`timeFormat`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeFormat) property only accepts the valid time format's.
 
 ## Displaying Scheduler in RTL mode
 
-The Scheduler layout and its behavior can be changed as per the common RTL (Right to Left) conventions by setting `EnableRtl` to `true`. By doing so, the Scheduler will display its usual layout from right to left. It's default value is `false`.
+The Scheduler layout and its behavior can be changed as per the common RTL (Right to Left) conventions by setting [`EnableRtl`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EnableRtl) to `true`. By doing so, the Scheduler will display its usual layout from right to left. It's default value is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -221,4 +221,4 @@ N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspne
 
 ## See Also
 
-* [How to change first day of the week in the Scheduler](./working-days/#setting-start-day-of-the-week)
+* [How to change first day of the week in the Scheduler](https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/working-days#setting-start-day-of-the-week)

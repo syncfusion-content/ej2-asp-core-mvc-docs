@@ -100,6 +100,30 @@ diagram.remove(connectors)
 
 ```
 
+## Add collection of connectors at runtime
+
+* The collection of connectors can be dynamically added using `addElements` method.Each time an element is added to the diagram canvas, the `collectionChange` event will be triggered.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/connectors/connectorCollection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ConnectorCollection.cs" %}
+{% include code-snippet/diagram/connectors/connectorCollection/connectorCollection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="ConnectorCollection.cs" %}
+{% include code-snippet/diagram/connectors/connectorCollection/connectorCollection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Connectors from palette
 
 Connectors can be predefined and added to the symbol palette. You can drop those connectors into the diagram, when required.

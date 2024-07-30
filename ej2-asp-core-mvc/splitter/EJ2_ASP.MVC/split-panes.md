@@ -255,7 +255,7 @@ Output be like the below.
 
 ## See Also
 
-* [Resizable split panes](./resizing/)
-* [Collapsible panes](./expand-and-collapse/)
-* [Define size to a panes](./pane-sizing/ )
-* [Specify content to a panes](./pane-content/)
+* [Resizable split panes](https://ej2.syncfusion.com/aspnetmvc/documentation/splitter/resizing)
+* [Collapsible panes](https://ej2.syncfusion.com/aspnetmvc/documentation/splitter/expand-and-collapse)
+* [Define size to a panes](https://ej2.syncfusion.com/aspnetmvc/documentation/splitter/pane-sizing )
+* [Specify content to a panes](https://ej2.syncfusion.com/aspnetmvc/documentation/splitter/pane-content)

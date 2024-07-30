@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Buttons
+
+<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
+    @Html.EJS().Fab("fab").Target("#target").IconCss("e-icons e-people").Content("Contact").CssClass("custom-css").Render()
+</div>
+<style>
+    .custom-css.e-fab.e-btn {
+        border-color: darkgrey;
+        border-width: 4px;
+    }
+</style>

@@ -188,6 +188,46 @@ By default, filtered records are shown along with its parent records. This behav
 
 ![ASP.NET MVC Tree Grid with Filtering](images/treegrid-sample.png)
 
+## Handling errors
+
+Error handling in Tree Grid identifies exceptions and notifies them through the [actionFailure](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.treegrid.treegrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionFailure) event. When configuring the Tree Grid or enabling specific features through its API, mistakes can occur. The `actionFailure` event can be used to manage these errors. This event triggers when such mistakes happen. The `actionFailure` event handles various scenarios, including:
+
+* For CRUD operations, row drag and drop, and persisiting the selection, ensure the `isPrimaryKey` property is mapped to a unique data column. Failure to do so will cause an error.
+* [Paging](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/paging) is not supported with [virtualization](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/virtual-scroll). Enabling `paging` with `virtualization` will result in an error.
+* To render the Tree Grid, map either the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataSource) or [columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Columns) property. Failure to do so will result in an error.
+* Freeze columns by mapping either `isFrozen` or [frozenColumns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenColumns). Enabling both properties simultaneously will result in an error.
+* The [detailTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DetailTemplate) is not supported with `virtualization` and `stacked header`. Enabling them with these features will result in an error.
+* The [frozenRows](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenRows) and `frozenColumns` are not supported with [rowTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowTemplate), `detailTemplate`, and [cell editing](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/editing/cell-editing). Enabling them with these features will result in an error.
+* In `stacked header`, the `freeze` direction is incompatible with [column reordering](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/columns/column-reorder).
+* [Selection](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/selection/selection) functionality is not supported when using `rowTemplate`. Enabling both properties simultaneously will result in an error.
+* Set the [treeColumnIndex](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_TreeColumnIndex) value to display the tree structure. Make sure the value does not exceed the total column count, or it will result in an error.
+* For `virtualization`, do not specify height and width in percentages. Using percentages will result in an error.
+* When using the default filter ([filterbar](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/filtering/filter-bar)) type, do not apply the other [filterType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.FilterType.html) to any column in the same tree grid, as this will cause an error.
+* In Tree Grid, avoid enabling [idMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_IdMapping) and [childMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ChildMapping) simultaneously. Enabling both properties at the same time will result in an error.
+* The `showCheckbox` column should only be defined in the tree column. Defining it elsewhere will result in an error.
+* The `textAlign` right is not applicable for tree columns in the Tree Grid. Enabling right alignment for tree columns will result in an error.
+
+The following code example shows how to use the [actionFailure](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.treegrid.treegrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionFailure) event in the Tree Grid control to display an exception when `isPrimaryKey` are not configured properly in the Tree Grid.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/getting-start-mvc/error-handling/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/tree-grid/getting-start-mvc/error-handling/errorHandling.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Tree Grid with Handling errors](images/error-handling.png)
+
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/TreeGrid/ASP.NET%20MVC%20Razor%20Examples).
 
 N> You can refer to our [ASP.NET MVC Tree Grid](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Tree Grid example](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+
+* [Getting Started with Syncfusion JavaScript documentation](https://ej2.syncfusion.com/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion JavaScript (ES5) documentation](https://ej2.syncfusion.com/javascript/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion Angular documentation](https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion React documentation](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion ASP.NET Core documentation](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core)
+* [Getting Started with Syncfusion Vue documentation](https://ej2.syncfusion.com/vue/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion Blazor documentation](https://blazor.syncfusion.com/documentation/treegrid/getting-started-webapp)

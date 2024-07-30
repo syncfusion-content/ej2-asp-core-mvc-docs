@@ -123,6 +123,32 @@ var group= {
 diagram.add(group);
 ```
 
+
+## Add collection of group nodes at runtime
+
+* The collection of group nodes can be dynamically added using `addElements` method.Each time an element is added to the diagram canvas, the `collectionChange` event will be triggered.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/group/groupCollection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="GroupCollection.cs" %}
+{% include code-snippet/diagram/group/groupCollection/groupCollection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="GroupCollection.cs" %}
+{% include code-snippet/diagram/group/groupCollection/groupCollection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
 ## Container
 
 Containers are used to automatically measure and arrange the size and position of the child elements in a predefined manner. There are two types of containers available.

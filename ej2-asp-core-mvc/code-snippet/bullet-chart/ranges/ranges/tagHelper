@@ -1,7 +1,16 @@
-<ejs-bulletchart id="bulletgraph" minimum="0" maximum="100" interval="20" categoryField="category" valueField="value" targetField="target" dataSource="ViewBag.dataSource">
-        <e-bullet-range-collection>
-            <e-bullet-range end="35"></e-bullet-range>
-            <e-bullet-range end="50"></e-bullet-range>
-            <e-bullet-range end="100"></e-bullet-range>
-        </e-bullet-range-collection>
+@{
+    List<Range> bulletData = new List<Range>
+    {
+        new Range { value = 55, target = 75, category = "Year 1"},
+        new Range { value = 70, target = 70, category = "Year 2"},
+        new Range { value = 85, target = 75, category = "Year 3"}
+    };
+}
+
+<ejs-bulletchart id="bulletgraph" minimum="0" maximum="100" interval="20" categoryField="category" valueField="value" targetField="target" dataSource="bulletData">
+    <e-bullet-range-collection>
+        <e-bullet-range end="35"></e-bullet-range>
+        <e-bullet-range end="50"></e-bullet-range>
+        <e-bullet-range end="100"></e-bullet-range>
+    </e-bullet-range-collection>
 </ejs-bulletchart>

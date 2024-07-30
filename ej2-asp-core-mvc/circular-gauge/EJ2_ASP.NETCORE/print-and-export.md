@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print And Export in ##Platform_Name## Circular Gauge Component
+title: Print And Export in ##Platform_Name## Circular Gauge Component | Syncfusion
 description: Learn here all about Print And Export in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print And Export
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Print and Export
+# Print and Export in Circular Gauge Control
 
 ## Print
 
@@ -19,9 +19,6 @@ To use the print functionality, set the [`allowPrint`](https://ej2.syncfusion.co
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/print-and-export/print/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Print.cs" %}
-{% include code-snippet/circulargauge/print-and-export/print/print.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,9 +52,6 @@ To use the image export functionality, set the [`allowImageExport`](https://ej2.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/print-and-export/export/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/circulargauge/print-and-export/export/export.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -81,9 +75,6 @@ The image file is got as base64 string for the JPEG and PNG formats. The circula
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/print-and-export/base64/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/circulargauge/print-and-export/base64/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,9 +101,6 @@ To use the PDF export functionality, the [`allowPdfExport`](https://ej2.syncfusi
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/print-and-export/exportPdf/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/circulargauge/print-and-export/exportPdf/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
