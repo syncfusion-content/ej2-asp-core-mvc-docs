@@ -16,7 +16,6 @@ col.HeaderText("Shipped Details").HeaderTemplate("#shipDetailsTemplate").Columns
         font-weight: normal;
         font-style: normal;
     }
-
     .e-icon-calender::before {
         font-family: "ej2-headertemplate";
         content: "\e960";

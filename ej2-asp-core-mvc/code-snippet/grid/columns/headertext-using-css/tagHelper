@@ -7,7 +7,6 @@
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <style>
     .e-grid .e-headercell {
         background-color: #a2d6f4;

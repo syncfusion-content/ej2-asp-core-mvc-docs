@@ -7,7 +7,6 @@
     </e-grid-columns>
 </ejs-grid>
 
-
 <style>
     @@font-face {
         font-family: 'ej2-headertemplate';

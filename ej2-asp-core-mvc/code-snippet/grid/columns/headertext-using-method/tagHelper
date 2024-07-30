@@ -19,6 +19,5 @@
         grid.getColumnHeaderByIndex(columnIndex).style.color = 'green';
         const index = grid.getColumnIndexByUid('grid-column2');
         grid.getColumnHeaderByIndex(index).style.color = 'green';
-
     }
 </script>

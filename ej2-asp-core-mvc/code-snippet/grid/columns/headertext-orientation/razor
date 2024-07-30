@@ -12,7 +12,6 @@
         transform: rotate(90deg);
     }
 </style>
-
 <script>
     function setHeaderHeight(args) {
         var textWidth = document.querySelector(".orientationcss > div").scrollWidth; // obtain the width of the headerText content.

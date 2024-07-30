@@ -12,7 +12,6 @@
         background-color: rgb(43, 195, 226);
         color: rgb(10, 8, 8);
     }
-
     .e-grid .e-headercell {
         background-color: #a2d6f4;
     }

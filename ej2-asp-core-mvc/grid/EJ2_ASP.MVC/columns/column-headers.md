@@ -24,15 +24,15 @@ To enable the `HeaderText` property, you simply need to define it in the **e-gri
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Headertext.cs" %}
 {% include code-snippet/grid/columns/headertext/headertext.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 ![Header text](../../images/columns/Column-headertext.png)
 
-> * If both the `field` and `HeaderText` are not defined in the column, the column renders with **empty** header text.
-> * The `headerText` property is optional, and if it is not defined, then the corresponding column's field value is set as header text for that column.  
+> * If both the `Field` and `HeaderText` are not defined in the column, the column renders with **empty** header text.
+> * The `HeaderText` property is optional, and if it is not defined, then the corresponding column's field value is set as header text for that column.  
 > * You can also use the `HeaderTemplate` property to apply custom HTML content to the header cell.
 
 ## Header template
@@ -47,8 +47,8 @@ The following example demonstrate, the custom element is rendered for both **Cus
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertemplate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/headertemplate/headertext.cs %}
+{% highlight c# tabtitle="Headertemplate.cs" %}
+{% include code-snippet/grid/columns/headertemplate/headertemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,8 +69,8 @@ Here's an example of how to use stacked headers with a custom `HeaderTemplate` i
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-stacked/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/headertext-stacked/headertext.cs %}
+{% highlight c# tabtitle="Stackedheader.cs" %}
+{% include code-snippet/grid/columns/headertext-stacked/stackedHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,7 +91,7 @@ The following example demonstrates how to dynamically change the alignment of th
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-textalign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Headertext.cs" %}
 {% include code-snippet/grid/columns/headertext-textalign/headertext.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -123,7 +123,7 @@ The following example demonstrates how to dynamically change the auto-wrap of th
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-autowrap/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Headertext.cs" %}
 {% include code-snippet/grid/columns/headertext-autowrap/headertext.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -154,7 +154,7 @@ The following example demonstrates how to dynamically change the height of the h
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-change-height/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Headertext.cs" %}
 {% include code-snippet/grid/columns/headertext-change-height/headertext.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -187,15 +187,15 @@ The Grid component provides several methods that allow you to change the column 
 
 2.	`getColumnHeaderByField`: Retrieves the header element of a column based on its field name. You can modify the **textContent** property of the header element to change the header text. This method does not return a reference to the column object itself, only to the header element.
 
-3.	`getColumnIndexByField`: Retrieves the index of a column based on its field name. You can then use the `getColumnByIndex` method to retrieve the column object and modify its `headerText` property to change the header text.
+3.	`getColumnIndexByField`: Retrieves the index of a column based on its field name. You can then use the `getColumnByIndex` method to retrieve the column object and modify its `HeaderText` property to change the header text.
 
-4.	`getColumnByUid`: Retrieves the column object based on its unique identifier (UID). You can modify the `headerText` property of the column object to change the header text.
+4.	`getColumnByUid`: Retrieves the column object based on its unique identifier (UID). You can modify the `HeaderText` property of the column object to change the header text.
 
 5.	`getColumnHeaderByIndex`: Retrieves the header element of a column based on its zero-based index. You can modify the **textContent** property of the header element to change the header text. This method does not return a reference to the column object itself, only to the header element.
 
-6.	`getColumnIndexByUid`: Retrieves the index of a column based on its unique identifier (UID). You can then use the `getColumnByIndex` method to retrieve the column object and modify its `headerText` property to change the header text.
+6.	`getColumnIndexByUid`: Retrieves the index of a column based on its unique identifier (UID). You can then use the `getColumnByIndex` method to retrieve the column object and modify its `HeaderText` property to change the header text.
 
-7.	`getColumnHeaderByUid`: Retrieves the header element of a column based on its unique identifier (UID). You can modify the **textContent** property of the  header element to change the header text. This method does not return a reference to the column object itself, only to the header element.If you only have an `template` for the column header, and the column itself is not defined with a `field` , then you can use the `getColumnHeaderByUid` method to get a reference to the header element and modify its text content to change the header text.
+7.	`getColumnHeaderByUid`: Retrieves the header element of a column based on its unique identifier (UID). You can modify the **textContent** property of the  header element to change the header text. This method does not return a reference to the column object itself, only to the header element.If you only have an `Template` for the column header, and the column itself is not defined with a `field` , then you can use the `getColumnHeaderByUid` method to get a reference to the header element and modify its text content to change the header text.
 	
 >* When you change the header text dynamically, you need to **refresh** the Grid to reflect the changes by calling the `refreshHeader` method.
 >* The UID is automatically generated by the Grid component and may change whenever the grid is refreshed or updated.
@@ -206,7 +206,7 @@ Here is an example of how to change the header text of a column using the `getCo
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-change/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columntext.cs" %}
 {% include code-snippet/grid/columns/headertext-change/columntext.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -222,7 +222,7 @@ If you want to change the header text of all columns in the grid, you can loop t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-change-all/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columntext.cs" %}
 {% include code-snippet/grid/columns/headertext-change-all/columntext.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -237,7 +237,7 @@ Follow the below steps to change the orientation of the header text in Grid:
 
 **Step 1**: **Create a CSS class with orientation style for grid header cell**
 
-To `rotate` the header text, you can create a CSS class with the `transform` property that rotates the header text 90 degrees. This class will be added to the header cell using the `customAttributes` property.
+To `rotate` the header text, you can create a CSS class with the `transform` property that rotates the header text 90 degrees. This class will be added to the header cell using the `CustomAttributes` property.
 
 ```css
 .orientationcss .e-headercelldiv {
@@ -247,7 +247,7 @@ To `rotate` the header text, you can create a CSS class with the `transform` pro
 
 **Step 2**: **Add the custom CSS class to the grid column**
 
-Once you have created the CSS class, you can add it to the particular column by using the `customAttributes` property. This property allows you to add any custom  attribute to the grid column.
+Once you have created the CSS class, you can add it to the particular column by using the `CustomAttributes` property. This property allows you to add any custom  attribute to the grid column.
 
 For example, to add the orientationcss class to the Freight column, you can use the following code:
 
@@ -277,7 +277,7 @@ The following example demonstrates how to change the orientation of the **Freigh
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-orientation/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Headertext.cs" %}
 {% include code-snippet/grid/columns/headertext-orientation/headertext.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -296,7 +296,7 @@ Here's an example of how to use the `BeforeRender` event to add a custom tooltip
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-tooltip/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Headertext.cs" %}
 {% include code-snippet/grid/columns/headertext-tooltip/headertext.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -325,7 +325,7 @@ Here's an example that demonstrates how to customize the appearance of a column 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-using-css/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Headertext.cs" %}
 {% include code-snippet/grid/columns/headertext-using-css/headertext.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -334,7 +334,7 @@ Here's an example that demonstrates how to customize the appearance of a column 
 
 ### Using property 
 
-You can customize the appearance of the column headers in Grid using the `CustomAttributes` property. The `customAttributes` property takes an object with the name-value pair to customize the CSS properties for grid header cells. You can also set multiple CSS properties to the custom class using the `customAttributes` property.
+You can customize the appearance of the column headers in Grid using the `CustomAttributes` property. The `CustomAttributes` property takes an object with the name-value pair to customize the CSS properties for grid header cells. You can also set multiple CSS properties to the custom class using the `CustomAttributes` property.
 
 To customize the header of a column, you can follow the steps below:
 
@@ -360,7 +360,7 @@ The following example demonstrates how to customize the appearance of the **Orde
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-using-property/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Headertext.cs" %}
 {% include code-snippet/grid/columns/headertext-using-property/headertext.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -386,7 +386,7 @@ Here's an example of how to use these methods to change the style of a specific 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-using-method/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Headertext.cs" %}
 {% include code-snippet/grid/columns/headertext-using-method/headertext.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -405,7 +405,7 @@ The following example demonstrates how to add a `HeaderCellInfo` event handler t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-using-event/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Headertext.cs" %}
 {% include code-snippet/grid/columns/headertext-using-event/headertext.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -424,7 +424,7 @@ The following example demonstrates how to use the `refreshHeader` method to upda
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/headertext-refresh/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Headertext.cs" %}
 {% include code-snippet/grid/columns/headertext-refresh/headertext.cs %}
 {% endhighlight %}
 {% endtabs %}
