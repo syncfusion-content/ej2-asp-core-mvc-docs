@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# User Interactions
+# User Interactions in ##Platform_Name## Maps Component
 
 ## Zooming
 
@@ -549,6 +549,54 @@ To enable the selection for markers in Maps, set the `MapsSelectionSettings` in 
 
 ![Enable selection for markers](./images/UserInteraction/selection-marker.PNG)
 
+### Enable selection for polygons
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+When the [enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Enable) property of [selectionSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsPolygonSettings.html#Syncfusion_EJ2_Maps_MapsPolygonSettings_SelectionSettings) is set to **true**, the polygon shapes can be selected via user interaction. The following properties are available in `selectionSettings` to customize the polygon shape when it is selected.
+
+* [enableMultiSelect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_EnableMultiSelect) - It is used to enable multiple selection of polygon shapes.
+* [fill](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Fill) - It is used to change the color of the selected polygon shape.
+* [opacity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Opacity) - It is used to change the opacity of the selected polygon shape.
+* [border](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Border) - This property is used to change the color, width, and opacity of the border of the selected polygon shape.
+
+The following example shows how to select the polygon shape in the geometry map.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/polygon/polygon-shape-selection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Polygon-shape-selection.cs" %}
+{% include code-snippet/maps/polygon/polygon-shape-selection/polygon-shape-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+When the [Enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Enable) property of [SelectionSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsPolygonSettings.html#Syncfusion_EJ2_Maps_MapsPolygonSettings_SelectionSettings) is set to **true**, the polygon shapes can be selected via user interaction. The following properties are available in `SelectionSettings` to customize the polygon shape when it is selected.
+
+* [EnableMultiSelect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_EnableMultiSelect) - It is used to enable multiple selection of polygon shapes.
+* [Fill](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Fill) - It is used to change the color of the selected polygon shape.
+* [Opacity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Opacity) - It is used to change the opacity of the selected polygon shape.
+* [Border](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsSelectionSettings.html#Syncfusion_EJ2_Maps_MapsSelectionSettings_Border) - This property is used to change the color, width, and opacity of the border of the selected polygon shape.
+
+The following example shows how to select the polygon shape in the geometry map.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/polygon/polygon-shape-selection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Polygon-shape-selection.cs" %}
+{% include code-snippet/maps/polygon/polygon-shape-selection/polygon-shape-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Enable selection for polygons](./images/Polygon/polygon-shape-selection.gif)
+
+
 ### Public method for the shape selection
 
 The `shapeSelection` method can be used to select each shape in the Maps. LayerIndex, propertyName, country name, and selected value as a boolean state(true / false) are the input parameters for this method.
@@ -741,6 +789,51 @@ To enable the highlight for markers in Maps, set the `MapsHighlightSettings` in 
 
 ![Enable highlight for markers](./images/UserInteraction/selection-marker.PNG)
 
+### Enable highlight for polygons
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+The polygon shapes can be highlighted via user interaction if the [enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Enable) property of [highlightSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsPolygonSettings.html#Syncfusion_EJ2_Maps_MapsPolygonSettings_HighlightSettings) is set to **true**. The following properties are available in `highlightSettings` to customize the polygon shape when it is highlighted.
+
+* [fill](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Fill) - It is used to change the color of the highlighted polygon shape.
+* [opacity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Opacity) - It is used to change the opacity of the highlighted polygon shape.
+* [border](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Border) - This property is used to change the color, width, and opacity of the border of the highlighted polygon shape.
+
+The following example shows how to highlight a polygon shape on a geometry map.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/polygon/polygon-shape-highlight/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Polygon-shape-highlight.cs" %}
+{% include code-snippet/maps/polygon/polygon-shape-highlight/polygon-shape-highlight.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The polygon shapes can be highlighted via user interaction if the [Enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Enable) property of [HighlightSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsPolygonSettings.html#Syncfusion_EJ2_Maps_MapsPolygonSettings_HighlightSettings) is set to **true**. The following properties are available in `HighlightSettings` to customize the polygon shape when it is highlighted.
+
+* [Fill](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Fill) - It is used to change the color of the highlighted polygon shape.
+* [Opacity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Opacity) - It is used to change the opacity of the highlighted polygon shape.
+* [Border](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsHighlightSettings.html#Syncfusion_EJ2_Maps_MapsHighlightSettings_Border) - This property is used to change the color, width, and opacity of the border of the highlighted polygon shape.
+
+The following example shows how to highlight a polygon shape on a geometry map.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/polygon/polygon-shape-highlight/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Polygon-shape-highlight.cs" %}
+{% include code-snippet/maps/polygon/polygon-shape-highlight/polygon-shape-highlight.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Enable highlight for polygons](./images/Polygon/polygon-shape-highlight.gif)
+
 ## Tooltip
 
 On mouse over or touch end event, the tooltip is used to get more information about the layer, bubble, or marker. It can be enabled separately for layer or bubble or marker by using the `Visible` property of `MapsTooltipSettings` as **true**. The `ValuePath` property in the tooltip takes the field name that presents in data source and displays that value as tooltip text. The `TooltipDisplayMode` property is used to change the display mode of the tooltip in Maps. Following display modes of tooltip are available in the Maps component. By default, `TooltipDisplayMode` is set to **MouseMove**.
@@ -838,3 +931,32 @@ The HTML element can be rendered in the tooltip of the Maps using the `Template`
 
 
 ![Enable tooltip](./images/UserInteraction/tooltip-template.PNG)
+
+### Changing duration in mobile devices
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+To change the duration of the tooltips and tooltip templates in mobile devices, you can use the [Duration](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html#Syncfusion_EJ2_Maps_MapsTooltipSettings_Duration) property in [MapsTooltipSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html). By default, this property is set to **2000** milliseconds. Setting the value to **0** will keep the tooltip visible indefinitely. If it is greater than **0**, the tooltip will be removed after the specified time.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-duration.cs" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/tooltip-duration.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+To change the duration of the tooltips and tooltip templates in mobile devices, you can use the [Duration](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html#Syncfusion_EJ2_Maps_MapsTooltipSettings_Duration) property in [MapsTooltipSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html). By default, this property is set to **2000** milliseconds. Setting the value to **0** will keep the tooltip visible indefinitely. If it is greater than **0**, the tooltip will be removed after the specified time.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-duration.cs" %}
+{% include code-snippet/maps/user-interactions/tooltip-duration/tooltip-duration.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

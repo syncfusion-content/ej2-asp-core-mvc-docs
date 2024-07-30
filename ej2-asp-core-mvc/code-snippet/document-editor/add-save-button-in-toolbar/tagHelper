@@ -1,0 +1,20 @@
+<ejs-documenteditorcontainer id="container" created="onDocCreate"></ejs-documenteditorcontainer>
+<script>
+    function onDocCreate() {
+        var container = document.getElementById("container").ej2_instances[0];
+        var toolItem = {
+            prefixIcon: "e-de-ctnr-lock",
+            tooltipText: "Disable Image",
+            text: "Disable Image",
+            id: "Custom"
+        };
+        container.toolbarItems = ['New','Open',toolItem, 'Separator' ,'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'Comments', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'Separator', 'Find', 'Separator', 'LocalClipboard', 'RestrictEditing'];
+        container.toolbarClick = function (args) {
+            switch (args.item.id) {
+                case 'Custom':
+                    container.documentEditor.save('Sample', 'Docx');
+                    break;
+            }
+        };
+    }
+</script>

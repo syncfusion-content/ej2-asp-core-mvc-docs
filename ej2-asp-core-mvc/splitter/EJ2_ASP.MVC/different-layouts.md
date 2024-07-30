@@ -263,4 +263,4 @@ Once the above configurations has been completed, you will get the output like [
 
 ## See Also
 
-[Multiple panes in Splitter](./split-panes/)
+[Multiple panes in Splitter](https://ej2.syncfusion.com/aspnetmvc/documentation/splitter/split-panes)

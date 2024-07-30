@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Frames
+# Frames in the ##Platform_Name## Image Editor control
 
 The frame feature in an Image Editor provides users with the capability to add decorative borders or frames around their images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
 
@@ -66,18 +66,18 @@ Here is an example of Frame using the `drawFrame` method.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-frame.png)
+![ImageEditor Sample](images/image-editor-frame.jpg)
 
 
 ## Frame changing event
 
-The `frameChanging` event is triggered when applying frame on the image. This event provides information encapsulated within an object, which includes details about the frame applied in an image. This information encompasses:
+The [`frameChanging](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_FrameChange) event is triggered when applying frame on the image. This event provides information encapsulated within an object, which includes details about the frame applied in an image. This information encompasses:
 
 Frame Type: This indicates the specific type of frame being applied, whether it's a mat, bevel, line, or hook.
 
 Customization Values: These values contain information about any adjustments or modifications made to the frame. For instance, if the frame can be customized with attributes like color, size, or style, these details are conveyed within the event object.
 
-The parameter available in the `FrameChangeEventArgs` is
+The parameter available in the [`FrameChangeEventArgs`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_FrameChange) is
 
 * `FrameChangeEventArgs.previousFrameSetting` - The frame settings including size, color, inset, offset, gradient color which is applied before changing the frame.
 

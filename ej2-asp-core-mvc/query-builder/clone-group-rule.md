@@ -11,7 +11,7 @@ documentation: ug
 
 # Clone Group/Rule in ##Platform_Name## Query builder control
 
-Query Builder allows you to clone rules as well as groups. The Clone options will create an exact replica of a rule or group next to the original. You can use `ShowButtons` to enable/disable these buttons.
+The Query Builder functionality extends to cloning both individual rules and entire groups. Utilizing the Clone options will generate an exact duplicate of a rule or group adjacent to the original one. This feature enables users to replicate complex query structures effortlessly. The [`ShowButtons`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_ShowButtons) function offers users the ability to toggle the visibility of these cloning buttons, providing convenient control over the cloning process within the Query Builder interface.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

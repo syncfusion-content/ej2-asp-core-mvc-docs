@@ -1,9 +1,22 @@
-@Html.EJS().Grid("GridLine").DataSource((IEnumerable<object>)ViewBag.dataSource).GridLines(Syncfusion.EJ2.Grids.GridLine.Both).Columns(col =>
-{
-   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-   col.Field("Freight").HeaderText("Freight").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
-   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+	<div style="display: flex">
+		<label style="padding: 10px 10px 26px 0">Change the Grid lines: </label>
+		<span style="height:fit-content">
+			@Html.EJS().DropDownList("GridLines").Width("180px").DataSource(new List<object> { "Default", "Both", "Horizontal", "Vertical", "None" }).Change("change").Render()
+		</span>
 
-}).AllowPaging().PageSettings(page => { page.PageCount(5);}).Render()
+	</div>
+	@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+	  {
+		  col.Field("NumberOfPatentFamilies").HeaderText("NumberofPatentFamilies").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+		  col.Field("Inventor").HeaderText("Inventor").Width("150").Add();
+		  col.Field("NumberOfINPADOCPatents").HeaderText("NumberofINPADOCpatents").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+		  col.Field("MainFieldsOfInvention").HeaderText("Mainfieldsofinvention").Width("150").Add();
+		  col.Field("Active").HeaderText("Active").Width("150").Add();
+	  }).Render()
+
+<script>
+	function change(args) {
+		var grid = document.getElementById("Grid").ej2_instances[0];
+		grid.gridLines = args.value;
+	}
+</script>

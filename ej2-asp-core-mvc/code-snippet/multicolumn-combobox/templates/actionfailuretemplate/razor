@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.MultiColumnComboBox;
+
+<div id="container" style="width: 500px">
+    @Html.EJS().MultiColumnComboBox("actionfailureTemp").Placeholder("Select the country").DataSource(obj => obj.Url("https://services.syncfusion.com/js/production/api/Order").Adaptor(
+    "WebApiAdaptor").CrossDomain(true)).Fields(new MultiColumnComboBoxFieldSettings { Text = "ShipCountry", Value = "CustomerID" }).Columns(col =>
+    {
+        col.Field("OrderID").Header("Order ID").TextAlign(TextAlign.Right).Width("120").Add();
+        col.Field("CustomerID").Header("Customer ID").Width("130").Add();
+        col.Field("ShipCountry").Header("Ship Country").Width("120").Add();
+    }).ActionFailureTemplate("<span class='action-failure'> Data fetch get fails</span>").PopupHeight("230px").Render()
+</div>

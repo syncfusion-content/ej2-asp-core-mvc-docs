@@ -86,7 +86,7 @@ The following code example shows an unsupported formula in the spreadsheet.
 {% endtabs %}
 {% endif %}
 
-Second, if you want to directly compute any formula or expression, you can use the [computeExpression](../api/spreadsheet/#computeexpression) method. This method will work for both built-in and used-defined/custom formula.
+Second, if you want to directly compute any formula or expression, you can use the `computeExpression` method. This method will work for both built-in and used-defined/custom formula.
 
 The following code example shows how to use `computeExpression` method in the spreadsheet.
 
@@ -267,5 +267,5 @@ If you enter an invalid formula in a cell, an error dialog with an error message
 
 * [Editing](./editing)
 * [Formatting](./formatting)
-* [Open](./open)
-* [Save](./save)
+* [Open](./open-save#open)
+* [Save](./open-save#save)

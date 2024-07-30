@@ -107,9 +107,6 @@ By default, the ColorPicker will be rendered using SplitButton and open the pop-
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/color-picker/getting-started/inline/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Inline.cs" %}
-{% include code-snippet/color-picker/getting-started/inline/inline.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 ![ASP.NET Core ColorPicker with Inline](images/color-picker-with-inline.png)

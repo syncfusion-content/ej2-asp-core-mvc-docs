@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis Customization in ##Platform_Name## Bullet Chart Component
+title: Axis Customization in ##Platform_Name## Bullet Chart Component | Syncfusion
 description: Learn here all about Axis Customization in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis Customization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Axis customization
+# Axis customization in Bullet Chart Control
 
 ## MajorTickLines and MinorTickLines customization
 
@@ -28,8 +28,13 @@ The following properties can be used to customize `MajorTicklines` and `MinorTic
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/axis-customization/ticks/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Ticks.cs" %}
-{% include code-snippet/bullet-chart/axis-customization/ticks/ticks.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class TicklinesData
+{
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,8 +63,13 @@ The major and the minor ticks can be placed **Inside** or **Outside** the ranges
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/axis-customization/tick-placement/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tick-placement.cs" %}
-{% include code-snippet/bullet-chart/axis-customization/tick-placement/tick-placement.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class Position
+{
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -85,8 +95,13 @@ Axis numeric labels can be formatted by using the [`LabelFormat`](https://help.s
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/axis-customization/label-format/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Label-format.cs" %}
-{% include code-snippet/bullet-chart/axis-customization/label-format/label-format.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class FormatData
+{
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -176,8 +191,13 @@ To separate groups of thousands, use the [`EnableGroupSeparator`](https://help.s
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/axis-customization/grouping/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/bullet-chart/axis-customization/grouping/grouping.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class Separator
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -204,8 +224,13 @@ Using the [`LabelFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/axis-customization/custom-label/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom-label.cs" %}
-{% include code-snippet/bullet-chart/axis-customization/custom-label/custom-label.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class CustomFormatData
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -237,7 +262,12 @@ You can customize the axis labels **Inside** or **Outside** the bullet chart usi
 {% include code-snippet/bullet-chart/axis-customization/label-placement/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Label-placement.cs" %}
-{% include code-snippet/bullet-chart/axis-customization/label-placement/label-placement.cs %}
+...
+public class Placement
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -264,8 +294,13 @@ To place an axis opposite to its original position, set the [`OpposedPosition`](
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/axis-customization/opposed/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Opposed.cs" %}
-{% include code-snippet/bullet-chart/axis-customization/opposed/opposed.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class OpposedPositionData
+{           
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -292,8 +327,14 @@ The Bullet Chart supports X-axis label by specifying the property from the data 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/axis-customization/category/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Category.cs" %}
-{% include code-snippet/bullet-chart/axis-customization/category/category.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class Category
+{           
+    public double value;
+    public double target;
+    public string category;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -324,7 +365,13 @@ The label color, opacity, font size, font family, font weight, and font style ca
 {% include code-snippet/bullet-chart/axis-customization/category-label/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Category-label.cs" %}
-{% include code-snippet/bullet-chart/axis-customization/category-label/category-label.cs %}
+...
+public class CustomCategory
+{           
+    public double value;
+    public double target;
+    public string category;
+}
 {% endhighlight %}
 {% endtabs %}
 

@@ -21,7 +21,7 @@ In the following sample, icon classes are mapped with `iconCss` field.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/how-to/icons/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="SocialMedia.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class SocialMedia
 {
     public string Class { get; set; }

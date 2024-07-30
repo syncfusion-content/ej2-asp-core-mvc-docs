@@ -4,7 +4,7 @@ title: Text Markup Annotation in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
 description: Learn here all about Text Markup Annotation in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Markup Annotation
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -135,6 +135,56 @@ Refer to the following code sample to switch back to normal mode from the highli
 {% endhighlight %}
 {% endtabs %}
 
+## Highlight a text programmatically
+
+The PDF Viewer library enables you to programmatically highlight text within the PDF Viewer control using the **addAnnotation()** method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply highlighting programmatically:
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="set" onclick="addAnnotation()">Add annotation programmatically</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+  function addAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    viewer.annotation.addAnnotation("Highlight", {
+      bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+      pageNumber: 1
+    });
+  }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="set" onclick="addAnnotation()">Add annotation programmatically</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+  function addAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    viewer.annotation.addAnnotation("Highlight", {
+      bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+      pageNumber: 1
+    });
+  }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Underline a text
 
 There are two ways to underline a text in the PDF document:
@@ -256,6 +306,56 @@ Refer to the following code sample to switch back to normal mode from the underl
 {% endhighlight %}
 {% endtabs %}
 
+## Underline a text programmatically
+
+The PDF Viewer library enables you to programmatically Underline text within the PDF Viewer control using the **addAnnotation()** method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply Underline programmatically:
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="set" onclick="addAnnotation()">Add annotation programmatically</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+  function addAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    viewer.annotation.addAnnotation("Underline", {
+      bounds: [{ x: 250, y: 148, width: 345, height: 14 }],
+      pageNumber: 2
+    })
+  }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="set" onclick="addAnnotation()">Add annotation programmatically</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+  function addAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    viewer.annotation.addAnnotation("Underline", {
+      bounds: [{ x: 250, y: 148, width: 345, height: 14 }],
+      pageNumber: 2
+    })
+  }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Strikethrough a text
 
 There are two ways to strikethrough a text in the PDF document:
@@ -372,6 +472,56 @@ Refer to the following code sample to switch back to normal mode from the strike
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         pdfViewer.annotation.setAnnotationMode('None');
     }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Strikethrough a text programmatically
+
+The PDF Viewer library enables you to programmatically Strikethrough text within the PDF Viewer control using the **addAnnotation()** method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply Strikethrough programmatically:
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="set" onclick="addAnnotation()">Add annotation programmatically</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+  function addAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    viewer.annotation.addAnnotation("Strikethrough", {
+      bounds: [{ x: 250, y: 144, width: 345, height: 14 }],
+      pageNumber: 2
+    });
+  }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="set" onclick="addAnnotation()">Add annotation programmatically</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
+</div>
+<script>
+  function addAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    viewer.annotation.addAnnotation("Strikethrough", {
+      bounds: [{ x: 250, y: 144, width: 345, height: 14 }],
+      pageNumber: 2
+    });
+  }
 </script>
 
 {% endhighlight %}

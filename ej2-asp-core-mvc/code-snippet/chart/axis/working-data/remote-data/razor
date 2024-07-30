@@ -2,8 +2,8 @@
 @Html.EJS().Chart("container").Series(series =>
 {
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
-    XName("Assignee").Marker(ViewBag.marker).
-    YName("Estimate").DataSource("dataManager").
+    XName("CustomerID").Marker(ViewBag.marker).
+    YName("Freight").DataSource("dataManager").
     Query("query").
     Name("Story Point").Add();
 
@@ -20,7 +20,7 @@
 }
 <script>
         var dataManager = new ej.data.DataManager({
-            url: 'https://mvc.syncfusion.com/Services/Northwnd.svc/Tasks/'
+            url: 'https://services.syncfusion.com/aspnet/production/api/orders'
         });
         var query = new ej.data.Query().take(5).where('Estimate', 'lessThan', 3, false);
 </script>

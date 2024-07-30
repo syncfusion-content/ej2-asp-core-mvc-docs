@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Ribbon Items
+# Items in ##Platform_Name## Ribbon control
 
 Ribbon renders various built-in items based on the item [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property. By default, the type property is set as `Button` which renders the Button.
 
@@ -165,7 +165,7 @@ The [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.
 {% endhighlight %}
 {% endtabs %}
 
-#### Customize Dropdown button item
+#### Customize dropdown button item
 
 You can customize the dropdown button item by specifying a custom cssClass using the [beforeItemRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_BeforeItemRender) event.
 
@@ -210,6 +210,39 @@ The following sample showcases how to customize a specific dropdown item.
         color: green;
     }
 </style>
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Create dropdown popup on demand
+
+You can handle the creation of popups, by using the [createPopupOnClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonDropDownSettings.html#Syncfusion_EJ2_Ribbon_RibbonDropDownSettings_CreatePopupOnClick) property. If set to `true`, the popup will only be created upon opening. By default the value is `false`.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+@{
+    List<MenuItem> tableOptions = new List<MenuItem>() { new MenuItem { Text = "Insert Table" }, new MenuItem { Text = "This device" }, new MenuItem { Text = "Convert Table" }, new MenuItem { Text = "Excel SpreadSheet" } };
+}
+@Html.EJS().Ribbon("ribbon").Tabs(tab =>
+{
+    tab.Header("Insert").Groups(group =>
+    {
+        group.Header("Tables").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.DropDown).DropDownSettings(dropDown =>
+                {
+                    dropDown.IconCss("e-icons e-table").Content("Table").Items(tableOptions).CreatePopupOnClick(true);
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
 
 {% endhighlight %}
 {% endtabs %}
@@ -504,7 +537,14 @@ You can customize the ribbon items with non-built-in items or HTML content by se
 {
     tab.Header("Home").Groups(group =>
     {
-        group.Header("View").Collections(collection =>
+        group.Header("Templates").IsCollapsible(false).Collections(collection =>
+        {
+            collection.Items(item =>
+            {
+                item.Type(RibbonItemType.Template).ItemTemplate("<div class="custom-template ${activeSize}"><label for="fname">First name:</label><input type="text" id="fname" name="fname"/><br/><br/><label for="lname">Last name:</label><input type="text" id="lname" name="lname"></div>").Add();
+            }).Add();
+        }).Add();
+        group.Header("Multimedia").Collections(collection =>
         {
             collection.Items(item =>
             {
@@ -539,6 +579,20 @@ You can customize the ribbon items with non-built-in items or HTML content by se
 
         .ribbonTemplate.Small .text {
             display: none;
+        }
+
+        .custom-template input {
+            margin-left: 10px;
+            width: 100px;
+        }
+        
+        .custom-template.Medium {
+            display: flex;
+            align-items: center;
+        }
+        .custom-template.Medium input {
+            height: 14px;
+            margin-right: 10px;
         }
 </style >
 

@@ -1,0 +1,65 @@
+                <ejs-gantt id='resAllocation' dataSource="ViewBag.dataSource" resources="ViewBag.projectResources" highlightWeekends="true"
+                            height="450px" queryTaskbarInfo="queryTaskbarInfo">
+                    <e-gantt-columns>
+                        <e-gantt-column field="TaskName" headerText="Task Name" width="270"></e-gantt-column>
+                        <e-gantt-column field="Resources" width="175" template="#resColumnTemplate"></e-gantt-column>
+                        <e-gantt-column field="StartDate"></e-gantt-column>
+                        <e-gantt-column field="Duration"></e-gantt-column>
+                    </e-gantt-columns>
+                    <e-gantt-labelSettings rightLabel="Resources"></e-gantt-labelSettings>
+                    <e-gantt-splitterSettings columnIndex="2"></e-gantt-splitterSettings>
+
+                    <e-gantt-resourcefields id="ResourceId" name="ResourceName">
+                    </e-gantt-resourcefields>
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                        endDate="EndDate" duration="Duration" progress="Progress"
+                        child="SubTasks" resourceInfo="Resources">
+                    </e-gantt-taskfields>
+                </ejs-gantt>
+	<script>	
+		function queryTaskbarInfo(args) {
+            if(args.data.Resources === 'Martin Tamer'){
+                args.taskbarBgColor = '#DFECFF';
+                args.progressBarBgColor = '#006AA6'
+            }else if(args.data.Resources === 'Rose Fuller'){
+                args.taskbarBgColor = '#E4E4E7';
+                args.progressBarBgColor = '#766B7C'
+            }
+            else if(args.data.Resources === 'Margaret Buchanan'){
+                args.taskbarBgColor = '#DFFFE2';
+                args.progressBarBgColor = '#00A653'
+            }
+            else if(args.data.Resources === 'Tamer Vinet'){
+                args.taskbarBgColor = '#FFEBE9';
+                args.progressBarBgColor = '#FF3740'
+            }
+        }
+    </script>
+
+    <script type="text/x-template" id="resColumnTemplate">
+        ${if(ganttProperties.resourceNames)}
+            ${if(ganttProperties.resourceNames === 'Martin Tamer')}
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 110px; height: 24px; border-radius: 24px; background: #DFECFF">
+                    <span style="color: #006AA6; font-weight: 500;">${ganttProperties.resourceNames}</span>
+                </div>
+            ${/if}
+
+            ${if(ganttProperties.resourceNames === 'Rose Fuller')}
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 110px; height: 24px; border-radius: 24px; background: #E4E4E7">
+                    <span style="color: #766B7C; font-weight: 500;">${ganttProperties.resourceNames}</span>
+                </div>
+            ${/if}
+
+            ${if(ganttProperties.resourceNames === 'Margaret Buchanan')}
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 160px; height: 24px; border-radius: 24px; background: #DFFFE2">
+                    <span style="color: #00A653; font-weight: 500;">${ganttProperties.resourceNames}</span>
+                </div>
+            ${/if}
+
+            ${if(ganttProperties.resourceNames === 'Tamer Vinet')}
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 110px; height: 24px; border-radius: 24px; background: #FFEBE9">
+                    <span style="color: #FF3740; font-weight: 500;">${ganttProperties.resourceNames}</span>
+                </div>
+            ${/if}
+        ${/if}
+    </script>

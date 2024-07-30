@@ -1,13 +1,37 @@
-<ejs-accumulationchart id="container" title="Top Population Countries in the world 2017" load="load">
-            <e-accumulationchart-tooltipsettings enable="true" format="${point.x} : <b>${point.y}</b>"></e-accumulationchart-tooltipsettings>
-            <e-accumulationchart-legendsettings visible="false">
-            </e-accumulationchart-legendsettings>
-            <e-accumulation-series-collection>
-                <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" type="@Syncfusion.EJ2.Charts.AccumulationType.Funnel" neckWidth="15%" neckHeight="18%">
-                    <e-accumulationseries-datalabel visible="true" name="text" position="Outside">
-                        <e-connectorstyle length="6%"></e-connectorstyle>
-                    </e-accumulationseries-datalabel>
-                </e-accumulation-series>
-            </e-accumulation-series-collection>
-        </ejs-accumulationchart>
- 
+@page
+@using static PyramidFunnelTypeSample.Pages.FunnelSmartLabelModel
+@model PyramidFunnelTypeSample.Pages.FunnelSmartLabelModel
+@{
+    List<FunnelData> chartData = new List<FunnelData>
+    {
+        new FunnelData { xValue = "China", yValue = 1409517397, text = "China" },
+        new FunnelData { xValue = "India", yValue = 1339180127, text = "India" },
+        new FunnelData { xValue = "United States", yValue = 324459463, text = "United States" },
+        new FunnelData { xValue = "Indonesia", yValue = 263991379, text = "Indonesia" },
+        new FunnelData { xValue = "Brazil", yValue = 209288278, text = "Brazil" },
+        new FunnelData { xValue = "Pakistan", yValue = 197015955, text = "Pakistan" },
+        new FunnelData { xValue = "Nigeria", yValue = 190886311, text = "Nigeria" },
+        new FunnelData { xValue = "Bangladesh", yValue = 164669751, text = "Bangladesh" },
+        new FunnelData { xValue = "Russia", yValue = 143989754, text = "Russia" },
+        new FunnelData { xValue = "Mexico", yValue = 129163276, text = "Mexico" },
+        new FunnelData { xValue = "Japan", yValue = 127484450, text = " Japan" },
+        new FunnelData { xValue = "Ethiopia", yValue = 104957438, text = "Ethiopia" },
+        new FunnelData { xValue = "Philippines", yValue = 104918090, text = "Philippines" },
+        new FunnelData { xValue = "Egypt", yValue = 97553151, text = "Egypt" },
+        new FunnelData { xValue = "Vietnam", yValue = 95540800, text = "Vietnam" },
+        new FunnelData { xValue = "Germany", yValue = 82114224, text = "Germany" },
+    };
+}
+
+<ejs-accumulationchart id="container" title="Top Population Countries in the world 2017" enableSmartLabels="true">
+    <e-accumulation-series-collection>
+        <e-accumulation-series dataSource="chartData" xName="xValue" yName="yValue" type="@Syncfusion.EJ2.Charts.AccumulationType.Funnel" neckWidth="15%" neckHeight="18%">
+            <e-accumulationseries-datalabel visible="true" name="text" position="@Syncfusion.EJ2.Charts.AccumulationLabelPosition.Outside">
+                <e-connectorstyle type="Curve" length="6%"></e-connectorstyle>
+            </e-accumulationseries-datalabel>
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+    <e-accumulationchart-tooltipsettings enable="true" format="${point.x} : <b>${point.y}</b>"></e-accumulationchart-tooltipsettings>
+    <e-accumulationchart-legendsettings visible="false">
+    </e-accumulationchart-legendsettings>
+</ejs-accumulationchart>

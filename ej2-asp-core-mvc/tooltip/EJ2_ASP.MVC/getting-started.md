@@ -99,7 +99,7 @@ Now, add the Syncfusion ASP.NET MVC Tooltip control in `~/Views/Home/Index.cshtm
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Tooltip control will be rendered in the default web browser.
 
-![ASP.NET MVC Tooltip Control](images/tooltip.PNG)
+![ASP.NET MVC Tooltip Control](images/tooltip.png)
 
 ## Initialize Tooltip within a container
 

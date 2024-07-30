@@ -23,7 +23,7 @@ The following sample illustrates how to query the data source and pass the data 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/filtering/filter/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Countries.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class Countries
 {
     public string Name { get; set; }

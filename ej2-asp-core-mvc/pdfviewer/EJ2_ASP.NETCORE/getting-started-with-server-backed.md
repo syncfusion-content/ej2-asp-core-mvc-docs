@@ -4,7 +4,7 @@ title: Getting Started with EJ2 ASP.NET Core PDF Viewer Control | Syncfusion
 description: Learn how to getting started with PDF Viewer control in ASP.NET Core application. You can view and comment on PDFs in ease and also can fill forms.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -377,7 +377,7 @@ namespace PDFViewerSample.Pages
         public string freeTextAnnotation { get; set; }
         public string signatureData { get; set; }
         public string fieldsData { get; set; }
-        public string FormDesigner { get; set; }
+        public string formDesigner { get; set; }
         public string inkSignatureData { get; set; }
         public bool hideEmptyDigitalSignatureFields { get; set; }
         public bool showDigitalSignatureAppearance { get; set; }
@@ -392,7 +392,7 @@ namespace PDFViewerSample.Pages
         public bool isFormFieldAnnotationsExist { get; set; }
         public string documentLiveCount { get; set; }
         public string annotationDataFormat { get; set; }
-	public string importedData { get; set; }
+	    public string importedData { get; set; }
     }
 }
 {% endhighlight %}
@@ -422,6 +422,13 @@ N> We have provided the support to dynamically change the `serviceURL`. So, afte
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 N> When configuring the server-backed PDF viewer, it's essential to understand that there is no need to include the pdfium.js and pdfium.wasm files. Unlike the standalone PDF viewer, which relies on these files for local rendering, the server-backed PDF viewer fetches and renders PDFs directly from the server. Consequently, you can exclude the copy command for deployment process, as they are not required to load and display PDFs in this context.
+
+N> For hosting the web service on the Linux platform, ensure to include the [SkiaSharp.NativeAssets.Linux](https://nuget.org/packages/SkiaSharp.NativeAssets.Linux/2.88.6). Additionally, for AWS environments, utilize the following packages:
+
+| **Amazon Web Services (AWS)** |**NuGet package name** |
+| --- | --- |
+| AWS Lambda|[SkiaSharp.NativeAssets.Linux](https://nuget.org/packages/SkiaSharp.NativeAssets.Linux/2.88.6)|
+| AWS Elastic Beanstalk |[SkiaSharp.NativeAssets.Linux.NoDependencies v2.88.6](https://www.nuget.org/packages/SkiaSharp.NativeAssets.Linux.NoDependencies/2.88.6)|
 
 ## See also
 

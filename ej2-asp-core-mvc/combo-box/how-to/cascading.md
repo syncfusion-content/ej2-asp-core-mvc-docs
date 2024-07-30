@@ -21,7 +21,7 @@ The following example shows the cascade behavior of country, state, and city Com
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/how-to/cascading/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="State.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class State
 {
     public string StateName { get; set; }

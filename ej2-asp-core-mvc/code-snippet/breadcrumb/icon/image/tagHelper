@@ -16,7 +16,7 @@
     }
 
     .e-svg-home {
-        background-image: url(home.svg);
+        background-image: url(@Url.Content("~/css/home.svg"));
         height: 30px;
         width: 30px;
     }

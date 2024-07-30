@@ -59,7 +59,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 You can create Card with a header in a specific structure. For adding header you need to create a `div` element with `e-card-header` class added.
 
-* You can include heading inside the Card header by adding a `div` element with `e-card-header-caption` class, and also content will be added by adding element with `e-card-content`. For detailed information, refer to the [Header and Content](./header-content/).
+* You can include heading inside the Card header by adding a `div` element with `e-card-header-caption` class, and also content will be added by adding element with `e-card-content`. For detailed information, refer to the [Header and Content](https://ej2.syncfusion.com/aspnetmvc/documentation/card/header-content).
 
 ```html
     <div class = "e-card">                    --> Root Element
@@ -78,11 +78,11 @@ You can create Card with a header in a specific structure. For adding header you
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Card](images/card-control.PNG)
+![ASP.NET MVC Card](images/card-control.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Card/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
 * [Real time example using Card](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
-* [How to add a header and content](./header-content/)
+* [How to add a header and content](https://ej2.syncfusion.com/aspnetmvc/documentation/card/header-content)

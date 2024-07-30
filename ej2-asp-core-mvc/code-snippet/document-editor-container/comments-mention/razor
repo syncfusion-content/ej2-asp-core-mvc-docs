@@ -1,0 +1,17 @@
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+
+<script>
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById('container');
+        container = documenteditorElement.ej2_instances[0];
+        documenteditor = container.documentEditor;
+        let mentionData = [
+            { "Name": "Mary Kate", "EmailId": "marry@company.com" },
+            { "Name": "Andrew James", "EmailId": "james@company.com" },
+            { "Name": "Andrew Fuller", "EmailId": "andrew@company.com"}
+        ];
+        container.documentEditorSettings.mentionSettings = { dataSource: mentionData, fields: { text: 'Name' }};
+    }
+</script>
