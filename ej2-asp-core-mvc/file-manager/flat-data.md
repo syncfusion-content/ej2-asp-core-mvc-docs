@@ -32,7 +32,7 @@ Event Name | Description
 
 The FileManager can be populated with local data that contains the array of [FileSystemData](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_FileSystemData) objects with `parentId` mapping.
 
-To render the root-level folder, specify the `parentId` as null, or there is no need to specify the `parentId` in the array of `ileSystemData` objects.
+To render the root-level folder, specify the `parentId` as null, or there is no need to specify the `parentId` in the array of `FileSystemData` objects.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
