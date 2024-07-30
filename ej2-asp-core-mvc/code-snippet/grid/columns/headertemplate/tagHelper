@@ -1,11 +1,11 @@
-    <ejs-grid id="Grid" dataSource="@(ViewBag.DataSource)" headerCellInfo="onHeaderCellInfo">
-        <e-grid-columns>
-            <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
-            <e-grid-column field="CustomerID" headerTemplate="#customerTemplate" width="130"></e-grid-column>
-            <e-grid-column field="Freight" headerText='Freight' width="120" headerTemplate="#freightTemplate" textAlign="Right"></e-grid-column>
-            <e-grid-column field="OrderDate" headerTemplate="#datetemplate" textAlign="Right" type='date' format="yMd" width="130"></e-grid-column>
-        </e-grid-columns>
-    </ejs-grid>
+<ejs-grid id="Grid" dataSource="@(ViewBag.DataSource)" headerCellInfo="onHeaderCellInfo">
+    <e-grid-columns>
+        <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
+        <e-grid-column field="CustomerID" headerTemplate="#customerTemplate" width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText='Freight' width="120" headerTemplate="#freightTemplate" textAlign="Right"></e-grid-column>
+        <e-grid-column field="OrderDate" headerTemplate="#datetemplate" textAlign="Right" type='date' format="yMd" width="130"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
 
 
 <style>
@@ -66,7 +66,6 @@
 
         }
     }
-
     function onSwitchToggle(args) {
         headerText = args.checked ? "Purchase Date" : "Order Date";
         document.getElementById('dateLabel').innerText = headerText;

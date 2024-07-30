@@ -1,8 +1,7 @@
 public IActionResult Index()
 {
-    var Order = OrderDetails.GetAllRecords();
+    var Order = OrdersDetails.GetAllRecords();
     ViewBag.DataSource = Order;
-    ViewBag.dropdownData = new string[] { "Right","Left", "Center", "Justify"};
     return View();
 } 
 

@@ -1,5 +1,5 @@
 @Html.EJS().Tooltip("tooltip").Target(".e-headertext").Position(Syncfusion.EJ2.Popups.Position.TopCenter).ContentTemplate(@<div>
-    @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)Model).Columns(col =>
+    @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
     {
         col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
         col.Field("Freight").HeaderText("Freight").Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
