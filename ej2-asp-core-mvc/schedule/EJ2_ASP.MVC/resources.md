@@ -19,7 +19,7 @@ The Scheduler groups the resources based on different criteria. It includes grou
 
 ## Resource fields
 
-The default options available within the `Resources` collection are as follows,
+The default options available within the [`Resources`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) collection are as follows,
 
 | Field name | Type | Description |
 |-------|---------| --------------- |
@@ -45,7 +45,7 @@ The data for resources can bind with Scheduler either as a local JSON collection
 
 ### Using local JSON data
 
-The following code example depicts how to bind the local JSON data to the `DataSource` of `Resources` collection.
+The following code example depicts how to bind the local JSON data to the `DataSource` of [`Resources`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) collection.
 
 * Give the resource datasource in Index method
 * Add the Scheduler code in View page
@@ -113,7 +113,7 @@ It is possible to display the Scheduler in default mode without visually showcas
 
 The appointments belonging to the different resources will be displayed altogether on the default Scheduler, which will be differentiated based on the resource color assigned in the `Resources` (depicting to which resource that particular appointment belongs) collection.
 
-**Example:** To display default Scheduler with multiple resource options in the event editor, ignore the group option and simply define the `Resources` property with all its internal options.
+**Example:** To display default Scheduler with multiple resource options in the event editor, ignore the group option and simply define the [`Resources`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) property with all its internal options.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -237,7 +237,7 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 
 
 
-N> The `Name` field defined in the **resources** collection namely `Owners` will be mapped within the `Group` property, in order to enable the grouping option with those resource levels on the Scheduler.
+N> The `Name` field defined in the **resources** collection namely `Owners` will be mapped within the [`Group`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property, in order to enable the grouping option with those resource levels on the Scheduler.
 
 ### Grouping multi-level resources
 
@@ -270,7 +270,7 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
 
 ### One-to-One grouping
 
-In multi-level grouping, Scheduler usually groups the resources on the child level based on the `GroupIDField` that maps with the `IdField` field of parent level resources (as `ByGroupID` set to true by default). There are also option which allows you to group all the child resource(s) against each of its parent resource(s). To enable this kind of grouping, set `false` to the `ByGroupID` option within the `Group` property. In the following code example, there are two levels of resources, on which all the 3 resources at the child level is mapped one to one with each resource on the first level.
+In multi-level grouping, Scheduler usually groups the resources on the child level based on the `GroupIDField` that maps with the `IdField` field of parent level resources (as [`ByGroupID`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByGroupID) set to true by default). There are also option which allows you to group all the child resource(s) against each of its parent resource(s). To enable this kind of grouping, set `false` to the [`ByGroupID`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByGroupID) option within the [`Group`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property. In the following code example, there are two levels of resources, on which all the 3 resources at the child level is mapped one to one with each resource on the first level.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -299,7 +299,7 @@ In multi-level grouping, Scheduler usually groups the resources on the child lev
 
 ### Grouping resources by date
 
-It groups the number of resources under each date and is applicable only on the calendar views such as Day, Week, Work Week, Month, Agenda and Month-Agenda. To enable such grouping, set `ByDate` option to `true` within the `Group` property.
+It groups the number of resources under each date and is applicable only on the calendar views such as Day, Week, Work Week, Month, Agenda and Month-Agenda. To enable such grouping, set [`ByDate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByDate) option to `true` within the [`Group`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property.
 
 **Example:** To display the Scheduler with resources grouped by date,
 
@@ -332,7 +332,7 @@ N> This kind of grouping by date is not applicable on any of the **timeline view
 
 ## Customizing parent resource cells
 
-In timeline view work cells of parent resource can be customized by checking the `elementType` as `resourceGroupCells` in the event `RenderCell`. In the following code example, background color of the work hours has been changed.
+In timeline view work cells of parent resource can be customized by checking the `elementType` as `resourceGroupCells` in the event [`RenderCell`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell). In the following code example, background color of the work hours has been changed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -361,7 +361,7 @@ In timeline view work cells of parent resource can be customized by checking the
 
 ## Working with shared events
 
-Multiple resources can share the same events, thus allowing the CRUD action made on it to reflect on all other shared instances simultaneously. To enable such option, set `AllowGroupEdit` option to `true` within the `Group` property. With this property enabled, a single appointment object will be maintained within the appointment collection, even if it is shared by more than one resource – whereas the resource fields of such appointment object will be in array which hold the IDs of the multiple resources.
+Multiple resources can share the same events, thus allowing the CRUD action made on it to reflect on all other shared instances simultaneously. To enable such option, set [`AllowGroupEdit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_AllowGroupEdit) option to `true` within the [`Group`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property. With this property enabled, a single appointment object will be maintained within the appointment collection, even if it is shared by more than one resource – whereas the resource fields of such appointment object will be in array which hold the IDs of the multiple resources.
 
 N> Any actions such as create, edit or delete held on any one of the shared event instances, will be reflected on all other related instances visible on the UI.
 
@@ -486,7 +486,7 @@ It is possible to expand and collapse the resources which have child resource in
 
 ## Displaying tooltip for resource headers
 
-It is possible to display tooltip over the resource headers showing the resource information. By default, there won't be any tooltip displayed on the resource headers, and to enable it, you need to assign the customized template design to the `HeaderTooltipTemplate` option within the `Group` property.
+It is possible to display tooltip over the resource headers showing the resource information. By default, there won't be any tooltip displayed on the resource headers, and to enable it, you need to assign the customized template design to the [`HeaderTooltipTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_HeaderTooltipTemplate) option within the [`Group`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -515,7 +515,7 @@ It is possible to display tooltip over the resource headers showing the resource
 
 ## Choosing between resource colors for appointments
 
-By default, the colors defined on the top level resources collection will be applied for the events. In case, if you want to apply specific resource color to events irrespective of its top-level parent resource color, it can be achieved by defining `ResourceColorField` option within the `EventSettings` property.
+By default, the colors defined on the top level resources collection will be applied for the events. In case, if you want to apply specific resource color to events irrespective of its top-level parent resource color, it can be achieved by defining [`ResourceColorField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_ResourceColorField) option within the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property.
 
 In the following example, the colors mentioned in the second level will get applied over the events.
 
@@ -544,7 +544,7 @@ In the following example, the colors mentioned in the second level will get appl
 
 
 
-N> The value of the `ResourceColorField` field should be mapped with the `Name` value given within the `Resources` property.
+N> The value of the `ResourceColorField` field should be mapped with the `Name` value given within the [`Resources`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Resources) property.
 
 ## Dynamically add and remove resources
 
@@ -579,11 +579,14 @@ To remove the resources dynamically, `removeResource` method is used which accep
 
 ## Setting different working days and hours for resources
 
-Each resource in the Scheduler can have different working hours as well as different working days set to it. There are default options available within the `Resources` collection, to customize the default working hours and days of the Scheduler.
+Each resource in the Scheduler can have different `working hours` as well as different `working days` set to it. There are default options available within the `Resources` collection, to customize the default working hours and days of the Scheduler.
+
+* [Using the work day field for different work days](#Set-different-work-days)
+* [Using the start hour and end hour fields for different work hours](#Set-different-work-hours)
 
 ### Set different work days
 
-Different working days can be set for the resources of Scheduler using the `WorkDaysField` property which maps the working days field from the resource dataSource. This field accepts the collection of day indexes (from 0 to 6) of a week. By default, it is set to [1, 2, 3, 4, 5] and in the following example, each resource has been set with different values and therefore each of them will render only those working days. This option is applicable only on the calendar views and is not applicable on timeline views.
+Different `working days` can be set for the resources of Scheduler using the `WorkDaysField` property which maps the working days field from the resource dataSource. This field accepts the collection of day indexes (from 0 to 6) of a week. By default, it is set to [1, 2, 3, 4, 5] and in the following example, each resource has been set with different values and therefore each of them will render only those working days. This option is applicable only on the calendar views and is not applicable on timeline views.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -612,10 +615,12 @@ Different working days can be set for the resources of Scheduler using the `Work
 
 ### Set different work hours
 
-Working hours indicates the work hour duration of a day, which is highlighted visually with active color over the work cells. Each resource on the Scheduler can be defined with its own set of working hours as depicted in the following example.
+Different `working Hours` can be set for the resources of Scheduler using the `startHourField` and `endHourField` property which maps the `startHourField` and `endHourField` field from the resource dataSource.
 
 * `StartHourField` - Denotes the start time of the working/business hour in a day.
 * `EndHourField` - Denotes the end time limit of the working/business hour in a day.
+
+Working hours indicates the work hour duration of a day, which is highlighted visually with active color over the work cells. Each resource on the Scheduler can be defined with its own set of working hours as depicted in the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -681,7 +686,7 @@ N> The `HideNonWorkingDays` property only applies when the Scheduler is grouped 
 
 ## Compact view in mobile
 
-Although the Scheduler views are designed keeping in mind the responsiveness of the control in mobile devices, however when using Scheduler with multiple resources - it is difficult to view all the resources and its relevant events at once on the mobile. Therefore, we have introduced a new compact mode specially for displaying multiple resources of Scheduler on mobile devices. By default, this mode is enabled while using Scheduler with multiple resources on mobile devices. If in case, you need to disable this compact mode, set `false` to the `EnableCompactView` option within the `Group` property. Disabling this option will display the exact desktop mode of Scheduler view on mobile devices.
+Although the Scheduler views are designed keeping in mind the responsiveness of the control in mobile devices, however when using Scheduler with multiple resources - it is difficult to view all the resources and its relevant events at once on the mobile. Therefore, we have introduced a new compact mode specially for displaying multiple resources of Scheduler on mobile devices. By default, this mode is enabled while using Scheduler with multiple resources on mobile devices. If in case, you need to disable this compact mode, set `false` to the [`EnableCompactView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_EnableCompactView) option within the [`Group`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property. Disabling this option will display the exact desktop mode of Scheduler view on mobile devices.
 
 With this compact view enabled on mobile, you can view only single resource at a time and to switch to other resources, there is a TreeView at the left listing out all other available resources - clicking on which will display that particular resource and its related appointments.
 
@@ -689,7 +694,7 @@ With this compact view enabled on mobile, you can view only single resource at a
 
 ## Adaptive UI in desktop
 
-By default, the Scheduler layout adapts automatically in the desktop and mobile devices with appropriate UI changes. In case, if the user wants to display the Adaptive scheduler in desktop mode with adaptive enhancements, then the property `EnableAdaptiveUI` can be set to true. Enabling this option will display the exact mobile mode of Scheduler view on desktop devices.
+By default, the Scheduler layout adapts automatically in the desktop and mobile devices with appropriate UI changes. In case, if the user wants to display the Adaptive scheduler in desktop mode with adaptive enhancements, then the property [`EnableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EnableAdaptiveUI) can be set to true. Enabling this option will display the exact mobile mode of Scheduler view on desktop devices.
 
 Some of the default changes made for compact Scheduler to render in desktop devices are as follows,
 * View options displayed in the Navigation drawer.

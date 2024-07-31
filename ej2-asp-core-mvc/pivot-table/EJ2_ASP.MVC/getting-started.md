@@ -96,7 +96,8 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 {% include code-snippet/pivot-table/getting-start-mvc/initial-pivot/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
- public class HomeController : Controller
+
+public class HomeController : Controller
  {
      public ActionResult Index()
      {
@@ -288,7 +289,7 @@ The field list allows to add or remove fields and also rearrange the fields betw
 
 The calculated field feature allows user to insert or add a new calculated field based on the available fields from the bound data source using basic arithmetic operators. The calculated field can be included in pivot table using the [CalculatedFieldSetting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html) class from code behind. Or else, calculated fields can be added at run time through the built-in dialog by just setting the [AllowCalculatedField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property to **true** in pivot table. You will see a button enabled in the Field List UI automatically to invoke the calculated field dialog and perform necessary operation.
 
-N> Calculated field is applicable only for value fields.
+N> By default, the calculated fields created through code-behind are only added to the field list and calculated field dialog UI. To display the calculated field in the pivot table UI, it must be added to the [`Values`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Values) property, as shown in the code below. Additionally, calculated fields can only be added to the value axis.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
