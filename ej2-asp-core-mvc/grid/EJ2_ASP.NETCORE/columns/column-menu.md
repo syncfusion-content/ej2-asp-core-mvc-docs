@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Column menu in ##Platform_Name## Grid component
 
 The column menu in the Syncfusion ##Platform_Name## Grid component provides options to enable features such as sorting, grouping, filtering, column chooser, and autofit. When users click on the column header's menu icon, a menu will be displayed with these integrated features. To enable the column menu, you need to set the [showColumnMenu](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnMenu) property to **true** in the Grid configuration.
@@ -32,7 +31,7 @@ The default column menu items are displayed in following table.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnmenu/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnmenu.cs" %}
 {% include code-snippet/grid/columns/columnmenu/columnmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -53,8 +52,8 @@ Consider the following example, which demonstrates how to add a custom column me
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/customcolumnmenu/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/customcolumnmenu/customcolumnmenu.cs %}
+{% highlight c# tabtitle="Columnmenu.cs" %}
+{% include code-snippet/grid/columns/customcolumnmenu/columnmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,8 +69,8 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/customizecolumnmenu/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/customizecolumnmenu/customizecolumnmenu.cs %}
+{% highlight c# tabtitle="Columnmenu.cs" %}
+{% include code-snippet/grid/columns/customizecolumnmenu/columnmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -86,15 +85,15 @@ To enable the nested column menu feature, you need to define the [columnMenuItem
 Here is an example of how to configure the `columnMenuItems` property to include a nested menu:
 
 {% tabs %}
-{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid/column/default-cs35/app-composition.vue %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/columnmenu-stacked/tagHelper %}
 {% endhighlight %}
-{% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid/column/default-cs35/app.vue %}
+{% highlight c# tabtitle="Columnmenu.cs" %}
+{% include code-snippet/grid/columns/columnmenu-stacked/columnmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/grid/column/default-cs35" %}
+
+![Render nested column menu](../../images/column-menu/Column-menu-stacked.png)
 
 ## Customize the icon of column menu
 
@@ -106,7 +105,7 @@ To customize the column menu icon, follow the below step:
 
 ```css
   .e-grid .e-columnheader .e-icons.e-columnmenu::before {
-              content: "\e725";
+              content: "\e799";
       }
 ```
 
@@ -117,8 +116,8 @@ Here is an example that demonstrates how to customize the column menu icon in th
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/custom-column-menu-icon/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/custom-column-menu-icon/column-icon.cs %}
+{% highlight c# tabtitle="Columnmenu.cs" %}
+{% include code-snippet/grid/columns/custom-column-menu-icon/columnmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -136,8 +135,8 @@ The column menu in Syncfusion ##Platform_Name## Grid provides a set of events th
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnmenuevents/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/columnmenuevents/columnmenuevents.cs %}
+{% highlight c# tabtitle="Columnmenu.cs" %}
+{% include code-snippet/grid/columns/columnmenuevents/columnmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 

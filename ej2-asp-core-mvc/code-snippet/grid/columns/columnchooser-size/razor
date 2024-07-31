@@ -1,4 +1,4 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)Model).ShowColumnChooser(true).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).ShowColumnChooser(true).Columns(col =>
 {
 col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 col.Field("CustomerID").HeaderText("Customer ID").Width("130").Add();
@@ -12,7 +12,6 @@ col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
         height: 500px;
         width: 200px;
     }
-
     .e-grid .e-ccdlg .e-cc-contentdiv {
             height: 200px;
             width: 230px;

@@ -9,10 +9,10 @@ documentation: ug
 ---
 
 # Column reorder in ##Platform_Name## Grid component
+ 
+The Syncfusion ##Platform_Name## Grid component allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid.
 
-The Syncfusion ##Platform_Name## Grid component allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid. This feature can be enabled by injecting the **Reorder** in the provider section.
-
-To reorder the columns, set the [AllowReordering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowReordering) property to **true** in the grid.
+To reorder the columns, set the [AllowReordering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowReordering) property to **true** in the grid.
 
 Here's an example for column reordering in your Grid component:
 
@@ -20,14 +20,14 @@ Here's an example for column reordering in your Grid component:
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/reorder/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Reorder.cs" %}
 {% include code-snippet/grid/columns/reorder/reorder.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Column reorder](../../images/column-reorder/column-reorders.gif)
+![Column reorder](../../images/column-reorder/column-reorder.gif)
 
->* You can customize the appearance of the column headers during drag and drop by using the [ColumnDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrag) and [ColumnDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrop) events.
+>* You can customize the appearance of the column headers during drag and drop by using the [ColumnDrag](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrag) and [ColumnDrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrop) events.
 >* When columns are reordered, the position of the corresponding column data will also be changed. As a result, you should ensure that any additional code or logic that relies on the order of the column data is updated accordingly.
 
 ## Prevent reordering for particular column
@@ -40,7 +40,7 @@ In this example, the **ShipName** column is prevented from being reordered by se
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/reorder-prevent/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Reorder.cs" %}
 {% include code-snippet/grid/columns/reorder-prevent/reorder.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -68,7 +68,7 @@ In this example, we are moving the column at index **1** to index **3**.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/reordercols/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Reorder.cs" %}
 {% include code-snippet/grid/columns/reordercols/reorder.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -88,7 +88,7 @@ Here is an example of how to use the `reorderColumnByTargetIndex` method to reor
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/reordertargetcolumns/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Reorder.cs" %}
 {% include code-snippet/grid/columns/reordertargetcolumns/reorder.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -108,10 +108,10 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/reorder-field/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Reorder.cs" %}
 {% include code-snippet/grid/columns/reorder-field/reorder.cs %}
 {% endhighlight %}
-{% endtabs %}
+{% endtabs %} 
 
 ![Reorder column based on field names](../../images/column-reorder/column-reorder-field.gif)
 
@@ -119,11 +119,11 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 
 When reordering columns in the Syncfusion ##Platform_Name## Grid component, you may want to take some specific action in response to the drag and drop events. To handle these events, you can define event handlers for the following events:
 
-1.The [ColumnDragStart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDragStart) event triggers when column header element drag (move) starts.
+1.The [ColumnDragStart](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDragStart) event triggers when column header element drag (move) starts.
 
-2.The [ColumnDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrag) event triggers when column header element is dragged (moved) continuously.
+2.The [ColumnDrag](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrag) event triggers when column header element is dragged (moved) continuously.
 
-3.The [ColumnDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrop) event triggers when a column header element is dropped on the target column.
+3.The [ColumnDrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrop) event triggers when a column header element is dropped on the target column.
 
 In the following example, we have implemented the `columnDragStart`, `columnDrag`, and `columnDrop` events in the Syncfusion Grid component.
 
@@ -131,7 +131,7 @@ In the following example, we have implemented the `columnDragStart`, `columnDrag
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/reorderevents/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Reorder.cs" %}
 {% include code-snippet/grid/columns/reorderevents/reorder.cs %}
 {% endhighlight %}
 {% endtabs %}

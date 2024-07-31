@@ -10,15 +10,13 @@ documentation: ug
 
 # Column chooser in ##Platform_Name## Grid component
 
-The column chooser feature in the Syncfusion ##Platform_Name## Grid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) property as **true**.
-
-To use the column chooser, you need to inject the **ColumnChooser** in the **provide** section
+The column chooser feature in the Syncfusion ##Platform_Name## Grid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) property as **true**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -37,14 +35,14 @@ In this example, the `columns.showInColumnChooser` property is set to false for 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser-hide/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser-hide/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 ![Hide column in column chooser dialog](../../images/column-chooser/Colum-chooser-hide.png)
 
->The `columns.showInColumnChooser` property is applied to each <e-column> element individually. By setting it to false, you can hide specific columns from the column chooser dialog.
+>The `columns.showInColumnChooser` property is applied to each column element individually. By setting it to false, you can hide specific columns from the column chooser dialog.
 
 ## Open column chooser by externally
 
@@ -56,7 +54,7 @@ Here's an example of how to open the column chooser in the Grid using an externa
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser-external/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser-external/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -83,7 +81,7 @@ To customize the column chooser dialog size, you can use the following CSS style
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser-size/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser-size/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -94,7 +92,7 @@ To customize the column chooser dialog size, you can use the following CSS style
 
 The column chooser dialog in the Syncfusion ##Platform_Name## Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startsWith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
 
-To change the default search operator of the column chooser in Syncfusion Grid, you need to use the [operator](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_Operator) property of the columnChooserSettings.
+To change the default search operator of the column chooser in Syncfusion Grid, you need to use the [operator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_Operator) property of the columnChooserSettings.
 
 Here's an example of how to change the default search operator of the column chooser to **contains** in the ##Platform_Name## Grid:
 
@@ -102,7 +100,7 @@ Here's an example of how to change the default search operator of the column cho
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser-contains/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser-contains/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -111,7 +109,7 @@ Here's an example of how to change the default search operator of the column cho
 
 ## Diacritics searching in column chooser
 
-By default, the grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [columnchoosersettings.ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_IgnoreAccent) property to **true**.
+By default, the grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [columnchoosersettings.ignoreAccent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_IgnoreAccent) property to **true**.
 
 Here is an example that demonstrates the usage of the `ignoreAccent` property to include diacritic characters for searching in the column chooser:
 
@@ -119,7 +117,7 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser-diacritics/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser-diacritics/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}

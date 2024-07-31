@@ -12,13 +12,11 @@ documentation: ug
 
 The column chooser feature in the Syncfusion ##Platform_Name## Grid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) property as **true**.
 
-To use the column chooser, you need to inject the **ColumnChooser** in the **provide** section
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -37,14 +35,14 @@ In this example, the `columns.showInColumnChooser` property is set to false for 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser-hide/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser-hide/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 ![Hide column in column chooser dialog](../../images/column-chooser/Colum-chooser-hide.png)
 
->The `columns.showInColumnChooser` property is applied to each <e-column> element individually. By setting it to false, you can hide specific columns from the column chooser dialog.
+>The `columns.showInColumnChooser` property is applied to each <e-grid-column> element individually. By setting it to false, you can hide specific columns from the column chooser dialog.
 
 ## Open column chooser by externally
 
@@ -56,7 +54,7 @@ Here's an example of how to open the column chooser in the Grid using an externa
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser-external/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser-external/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -83,7 +81,7 @@ To customize the column chooser dialog size, you can use the following CSS style
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser-size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser-size/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -102,7 +100,7 @@ Here's an example of how to change the default search operator of the column cho
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser-contains/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser-contains/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -119,7 +117,7 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/columnchooser-diacritics/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
 {% include code-snippet/grid/columns/columnchooser-diacritics/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}

@@ -14,18 +14,16 @@ Grid component provides an intuitive user interface for resizing columns to fit 
 
 Once column resizing is enabled, columns width can be resized by clicking and dragging at the right edge of the column header. While dragging the column, the width of the respective column will be resized immediately.
 
-To use the column resize, inject **ResizeService** in the provider section of **AppModule**.
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/resize/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/resize/reorder.cs %}
+{% highlight c# tabtitle="Resize.cs" %}
+{% include code-snippet/grid/columns/resize/resize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Reorder events](../../images/column-resize/column-resize.gif)
+![Column resizing](../../images/column-resize/column-resize.gif)
 
 >* You can disable Resizing for a particular column, by specifying `columns.allowResizing` to **false**.
 >* In RTL mode, you can click and drag the left edge of header cell to resize the column.
@@ -43,12 +41,12 @@ In the below code, **OrderID**, **Ship Name** and **Ship Country** columns are d
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/resize-max/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/resize-max/reorder.cs %}
+{% highlight c# tabtitle="Resize.cs" %}
+{% include code-snippet/grid/columns/resize-max/resize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Reorder events](../../images/column-resize/Colum-resize-max.gif)
+![Restrict the resizing based on minimum and maximum width](../../images/column-resize/Colum-resize-max.gif)
 
 >* The `columns.minWidth` and `columns.maxWidth` properties will be considered only when the user resizes the column. When resizing the window, these properties will not be considered. This is because columns cannot be re-rendered when resizing the window.
 >* When setting the `minWidth` and `maxWidth` properties, ensure that the values are appropriate for your data and layout requirements.
@@ -64,12 +62,10 @@ You can disable resizing for a particular column by setting the `allowResizing` 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/resize-prevent/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/resize-prevent/reorder.cs %}
+{% highlight c# tabtitle="Resize.cs" %}
+{% include code-snippet/grid/columns/resize-prevent/resize.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-![Reorder events](../../images/column-resize/column-resize-prevent.gif)
 
 > You can also prevent resizing by setting `args.cancel` to **true** in the [resizeStart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ResizeStart) event.
 
@@ -87,8 +83,8 @@ The following example demonstrates how to set the [resizeSettings.mode](https://
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/resize-mode/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/resize-mode/reorder.cs %}
+{% highlight c# tabtitle="Resize.cs" %}
+{% include code-snippet/grid/columns/resize-mode/resize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -104,8 +100,8 @@ In this below code, we have disabled resize for **Ship City** column.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/resize-stacked/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/resize-stacked/reorder.cs %}
+{% highlight c# tabtitle="Resize.cs" %}
+{% include code-snippet/grid/columns/resize-stacked/resize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -129,7 +125,7 @@ To resize columns on a touch device:
 
 The following screenshot represents the column resizing on the touch device.
 
-![Touch Interaction](../images/column-resizing.jpg)
+![Touch Interaction](../../images/column-resizing.jpg)
 
 ## Resizing column externally
 
@@ -141,8 +137,8 @@ The following example demonstrates how to resize the columns in a grid. This is 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/resize-external/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/resize-external/reorder.cs %}
+{% highlight c# tabtitle="Resize.cs" %}
+{% include code-snippet/grid/columns/resize-external/resize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -166,8 +162,8 @@ The following is an example of using the resizing events, the `resizeStart` even
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/resizeevents/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/columns/resizeevents/reorder.cs %}
+{% highlight c# tabtitle="Resize.cs" %}
+{% include code-snippet/grid/columns/resizeevents/resize.cs %}
 {% endhighlight %}
 {% endtabs %}
 

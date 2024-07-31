@@ -1,5 +1,5 @@
   <p id='message' style="color:red;text-align:center"></p>
-  @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)Model).AllowReordering().Columns(col =>
+  @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowReordering().Columns(col =>
   {
   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
  col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
@@ -8,6 +8,7 @@
  col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
  col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
   }).ColumnDragStart("columnDragStart").ColumnDrag("columnDrag").ColumnDrop("columnDrop").Render()
+  
 <style>
     .e-grid .e-headercell.customcss, .e-grid .e-rowcell.customcss {
           background-color: rgb(43, 195, 226);
@@ -20,14 +21,12 @@
             args.cancel = true;
         }
     }
-
     function columnDrag(args) {
         var index = args.target.getAttribute('data-colIndex');
         if (index) {
             document.getElementById('message').innerText = `columnDrag event triggered. ${args.column.headerText} column is dragged to index ${index}`;
         }
     }
-
     function columnDrop(args) {
         document.getElementById('message').innerText = `columnDrop event triggered`;
         if (args.column.allowReordering === true) {

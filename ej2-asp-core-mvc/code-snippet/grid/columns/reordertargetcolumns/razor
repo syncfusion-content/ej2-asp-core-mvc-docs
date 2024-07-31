@@ -2,7 +2,7 @@
     @Html.EJS().Button("reordersingle").CssClass("e-info").Content("Reorder single column").Render()
     @Html.EJS().Button("reordermultiple").CssClass("e-info").Content("Reorder mutiple columns").Render()
 </div>
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)Model).AllowReordering().Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowReordering().Columns(col =>
 {
 col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
