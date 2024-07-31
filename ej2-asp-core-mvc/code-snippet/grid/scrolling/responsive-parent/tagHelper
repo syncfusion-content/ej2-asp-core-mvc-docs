@@ -1,4 +1,6 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.datasource" height="100%"  > 
+<div style="height:500px;width:600px">
+
+    <ejs-grid id="Grid" dataSource="@ViewBag.datasource" height='100%' width='100%'>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
@@ -8,3 +10,4 @@
         <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+</div>
