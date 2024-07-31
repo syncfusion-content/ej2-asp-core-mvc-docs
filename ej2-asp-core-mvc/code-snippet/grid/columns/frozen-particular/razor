@@ -4,7 +4,7 @@
    @Html.EJS().DropDownList("dropdown").Index(1).Width("180px").DataSource(@ViewBag.dropdownData).Change("columnChange").Render()
   </span>
 </div>
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)Model).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
 {
 col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 col.Field("CustomerID").HeaderText("Customer ID").IsFrozen(true).Width("130").Add();

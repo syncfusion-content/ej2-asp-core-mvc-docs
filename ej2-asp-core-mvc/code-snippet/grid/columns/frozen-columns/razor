@@ -1,7 +1,7 @@
 <label style="padding: 10px 10px 26px 0;font-weight:bold">Change the frozen columns:</label>
 @Html.EJS().NumericTextBox("frozenColumns").Min('0').Max('3').Width("100").Format("n").Value(2).ValidateDecimalOnType(true).Decimals(3).Render()
 @Html.EJS().Button("button").Content("Update").Render()
-@Html.EJS().Grid("Grid").FrozenColumns(2).DataSource((IEnumerable<object>)Model).Columns(col =>
+@Html.EJS().Grid("Grid").FrozenColumns(2).DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
 {
 col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 col.Field("CustomerID").HeaderText("Customer ID").Width("130").Add();

@@ -67,10 +67,10 @@ In the following example, the **ShipCountry** column is frozen on the left side,
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/frozen-particular/tagHelper %}
+{% include code-snippet/grid/columns/frozen-direction/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Frozen.cs" %}
-{% include code-snippet/grid/columns/frozen-particular/frozen.cs %}
+{% include code-snippet/grid/columns/frozen-direction/frozen.cs %}
 {% endhighlight %}
 {% endtabs %}
 
