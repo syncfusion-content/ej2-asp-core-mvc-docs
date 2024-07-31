@@ -1,0 +1,30 @@
+<ejs-tooltip id="tooltip" position="TopCenter" target=".e-headertext" beforeRender="beforeRender">
+    <e-content-template>
+        <ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+            <e-grid-columns>
+                <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
+                <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Center" width="120"></e-grid-column>
+                <e-grid-column field="ShipName" headerText="Ship Name" width="120"></e-grid-column>
+                <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" type='date' format="yMd" width="130"></e-grid-column>
+                <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </e-content-template>
+</ejs-tooltip>
+<script>
+    function beforeRender(args) {
+        const columnDescriptions = {
+            "Order ID": "A unique number assigned to each order.",
+            "Freight": "The cost of shipping the order.",
+            "Ship Name": "The name of the person or company who will receive the shipment.",
+            "Ship Country": "The country to which the shipment will be sent.",
+            "Order Date": "The date when the order was placed.",
+        };
+        var tooltip = document.getElementById("tooltip").ej2_instances[0];
+        const headerText = args.target.innerText;
+        const description = columnDescriptions[headerText];
+        if (description) {
+            tooltip.content = headerText + ": " + description;
+        }
+    }
+</script>
