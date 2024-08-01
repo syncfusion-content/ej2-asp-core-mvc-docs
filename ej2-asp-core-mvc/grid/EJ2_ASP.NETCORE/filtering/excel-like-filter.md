@@ -36,6 +36,35 @@ You can enable Excel like filter by defining. [type](https://help.syncfusion.com
 {% endtabs %}
 {% endif %}
 
+## Bind custom remote datasource for excel/checkbox filtering
+
+The Syncfusion Grid allows you to dynamically change the filter data source for the Excel or Checkbox filter [Type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) using custom remote data as well. This can be achieved by either assigning a custom remote `DataManager` as the filter model dataSource or by initially fetching the data, storing it in a global variable, and then assigning this global variable directly to the filter model dataSource in the [ActionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event for the `filterBeforeOpen` [requestType](https://ej2.syncfusion.com/documentation/api/grid/filterEventArgs/#requesttype), as detailed in our [knowledge base](https://support.syncfusion.com/kb/article/10065/how-to-change-the-data-source-for-checkbox-filter-popup-in-grid).
+
+The following example demonstrates how to dynamically change the remote custom dataSource for all columns in the Excel or Checkbox filter dialog using a `DataManager` with `UrlAdaptor`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/filtering/excelfiltercustomremotedata/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Excelfilter.cs" %}
+{% include code-snippet/grid/filtering/excelfiltercustomremotedata/excelfilter.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/filtering/excelfiltercustomremotedata/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Excelfilter.cs" %}
+{% include code-snippet/grid/filtering/excelfiltercustomremotedata/excelfilter.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Render checkbox list data in on-demand for excel/checkbox filtering
 
 The Excel/Checkbox filter type of Grid has a restriction where only the first 1000 unique sorted items are accessible to view in the filter dialog checkbox list content by scrolling. This limitation is in place to avoid any rendering delays when opening the filter dialog. However, the searching and filtering processes consider all unique items in that particular column.
