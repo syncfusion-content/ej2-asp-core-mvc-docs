@@ -1,22 +1,23 @@
 ---
 layout: post
-title: Add the custom fonts during the initial loading ##Platform_Name## Pdfviewer Component
-description: Learn here all about Custom Fonts in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: How to add custom fonts to the PDF viewer used in the PDF document ##Platform_Name## Pdfviewer Component
+description: Learn here all about how to add custom fonts to the PDF viewer used in the PDF document in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Custom Fonts
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Add the custom fonts during the initial loading
+# How to add custom fonts to the PDF viewer used in the PDF document
 
-To add a custom fonts in the Syncfusion PDF viewer, you need to add the custom font TTF files to the correct directory and configure the viewer to load these fonts. You can add the custom fonts by using the **customFonts** property. This property consists of an array of font path locations as strings.
+To use custom fonts in the Syncfusion PDF Viewer within your PDF document, you need to add the custom TTF font files to the resource URL directory and configure the viewer to load these fonts. You can specify the custom font names using the
+**customFonts** property, which accepts an array of font names.
 
 The following steps are used to customize the selection border.
 
-**Step 1:** We need to add the custom font TTF file to the **src/pdfviewer/ej2-pdfviewer-lib** directory.
+**Step 1:** Add the custom TTF font files to the resource URL path referenced in your application. For example, place the custom TTF files in the ej2-pdfviewer-lib folder, which will serve as the resource URL path.
 
-**Step 2:** The following code snippet are how you can add the custom fonts during the initial loading.
+**Step 2:** The following code snippet are how you can add custom fonts to the PDF viewer.
 
 ```html
 
