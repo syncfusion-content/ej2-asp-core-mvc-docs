@@ -1,0 +1,8 @@
+<ejs-qrcodegenerator id="container" width="200px" height="150px" mode="SVG" value="Syncfusion"></ejs-qrcodegenerator>
+<script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', function () {
+         var barcode = document.getElementById("container").ej2_instances[0];
+         barcode.logo = { imageSource: 
+		 'https://www.syncfusion.com/web-stories/wp-content/uploads/sites/2/2022/02/cropped-Syncfusion-logo.png'};
+    });
+</script>

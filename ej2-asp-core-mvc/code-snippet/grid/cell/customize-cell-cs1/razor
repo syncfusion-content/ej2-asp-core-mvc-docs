@@ -1,0 +1,37 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+	{
+	col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+	col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+
+	}).EnableHover(false).AllowSelection(false).QueryCellInfo("customizeCell").Render()
+
+@section Scripts {
+	<style>
+	.below-30 {
+	background-color: orangered;
+	}
+	.below-80 {
+	background-color: yellow;
+	}
+	.above-80 {
+	background-color: greenyellow;
+	}
+	</style>
+	<script type="text/javascript">
+		function customizeCell(args) {
+			console.log(args.column);
+			if (args.column.field === 'Freight') {
+				var freightData = args.data['Freight'];
+				if (freightData <= 30) {
+					args.cell.classList.add('below-30');
+				} else if (freightData > 30 && freightData < 80) {
+					args.cell.classList.add('below-80');
+				} else {
+					args.cell.classList.add('above-80');
+				}
+			}
+		}</script>
+}

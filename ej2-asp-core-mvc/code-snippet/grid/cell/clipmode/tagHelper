@@ -1,11 +1,25 @@
+<div style="display: flex">
+    <label style="padding: 10px 10px 26px 0">Change the clip mode: </label>
+    <span style="height:fit-content">
+      <ejs-dropdownlist id="dropdown" dataSource="@ViewBag.dropdownData" change="Change"></ejs-dropdownlist>
+    </span>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+    <e-grid-columns>
+            <e-grid-column field="NumberOfPatentFamilies" headerText="Number of Patent families" textAlign="Right" width="120"></e-grid-column>
+
+        <e-grid-column field="Inventor" headerText="Inventor Name" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="NumberOfINPADOCPatents" headerText="NumberOfINPADOCPatents" width="150"></e-grid-column>
+        <e-grid-column field="MainFieldsOfInvention" headerText="Main Fields Of Invention" width="150"></e-grid-column>
+        <e-grid-column field="Active" headerText="Active" textAlign="Right" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
 
 
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="315" allowPaging="true">
-	<e-grid-columns>
-		<e-grid-column field="RoolNo" headerText="Rool No" textAlign="Right" width="100"></e-grid-column>
-		<e-grid-column field="Name" headerText="Name of the inventor" clipMode="Clip" width="80"></e-grid-column>
-		<e-grid-column field="patentfamilies" headerText="No of patentfamilies" clipMode="Ellipsis" width="100"></e-grid-column>
-		<e-grid-column field="Country" headerText="Country" width="100"></e-grid-column>
-		<e-grid-column field="mainfields" headerText="Main fields of Invention" clipMode="EllipsisWithTooltip" width="100"></e-grid-column>
-	</e-grid-columns>
- </ejs-grid>
+<script type="text/javascript">
+    function Change(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.getColumnByField('MainFieldsOfInvention').clipMode = args.value;
+        grid.refresh();
+    }
+</script>

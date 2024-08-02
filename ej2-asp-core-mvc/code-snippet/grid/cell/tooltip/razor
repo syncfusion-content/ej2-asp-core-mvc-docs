@@ -1,0 +1,19 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+	{
+	col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	col.Field("CustomerID").HeaderText("Customer ID").Width("250").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Template("#template").Add();
+	col.Field("ShipCity").HeaderText("ShipCity").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+
+}).Render()
+
+@section Scripts {
+	<script id="template" type="text/x-template">
+		<span data-toggle="tooltip" title="${CustomerID}" data-container="body" data-placement="left" data-delay='{"show":"800", "hide":"300"}'><i class="fas fa-pencil-alt"></i>${CustomerID}</span>
+	</script>
+	<script>
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+}

@@ -18,7 +18,88 @@ Document editor allows to add comments to documents. You can add, navigate and r
 Comments can be inserted to the selected text.
 
 ```typescript
-documentEditor.editor.insertComment("Test comment");
+documentEditor.editor.insertComment('Test comment');
+```
+
+## Add a New Comment with Date, Author, and Status
+
+Comments can be inserted into the selected text with a specified date, author, and status.
+
+```typescript
+// In this example, a comment with the text "Nancy Davolio" is added by the author Rachel Green on July 23, 2024, at 2:30 PM. The isResolved status is set to false.
+
+// Create a specific date: July 23, 2024, at 2:30:00 PM.
+let specificDate = new Date(2024, 6, 23, 14, 30, 0); // Note: July is represented by 6 (0-based index).
+
+// Define the properties of the comment including author, date, and resolution status.
+let commentProperties = { 
+    author: 'Nancy Davolio',          // The author of the comment.
+    dateTime: specificDate,           // The date and time when the comment is created.
+    isResolved: false                 // The status of the comment; false indicates it is unresolved.
+};
+
+// Insert the comment with the specified properties into the document editor.
+documentEditor.editor.insertComment('Hello world', commentProperties);
+```
+
+## Add a New Comment with Date, Author, and Status
+
+Comments can be inserted into the selected text with a specified date, author, and status `insertComment`.
+
+```typescript
+// In this example, a comment with the text "Hello world"
+// is added by the author Nancy Davolio on July 23, 2024, at 2:30 PM. 
+// The isResolved status is set to false.
+
+// Create a specific date: July 23, 2024, at 2:30:00 PM.
+// Note: July is represented by 6 (0-based index).
+var specificDate = new Date(2024, 6, 23, 14, 30, 0); 
+
+
+// Define the properties of the comment including author, date, and resolution status.
+var commentProperties = { 
+    author: 'Nancy Davolio',          // The author of the comment.
+    dateTime: specificDate,           // The date and time when the comment is created.
+    isResolved: false                 // The status of the comment; false indicates it is unresolved.
+};
+
+// Insert the comment with the specified properties into the document editor.
+documentEditor.editor.insertComment('Hello world', commentProperties);
+```
+
+## Add a Reply Comment with Date, Author, and Status
+
+Reply comments can be inserted into the parent comment with a specified date, author using `insertReplyComment`.
+
+```typescript
+// In this example, a comment with the text "Hello world"
+// is added by the author Nancy Davolio on July 23, 2024, at 2:30 PM. 
+// The isResolved status is set to false.
+
+// Create a specific date: July 23, 2024, at 2:30:00 PM.
+// Note: July is represented by 6 (0-based index).
+var specificDate = new Date(2024, 6, 23, 14, 30, 0);
+
+// Define the properties of the comment including author, date, and resolution status.
+var commentProperties = { 
+    author: 'Nancy Davolio',          // The author of the comment.
+    dateTime: specificDate,           // The date and time when the comment is created.
+    isResolved: false                 // The status of the comment; false indicates it is unresolved.
+};
+
+// Insert the comment with the specified properties into the Document Editor.
+var comment = documentEditor.editor.insertComment('Hello world', commentProperties);
+// Insert a reply comment with specified properties into the Document Editor
+documentEditor.editor.insertReplyComment(comment.id, 'Hello world', commentProperties);
+```
+
+## Get Comments
+
+Document Editor allows to get the comments along with its reply and comment properties using `getComments`.
+
+```typescript
+//Get Comments in the document along with the properties author, date, status.
+var commentinfo = container.documentEditor.getComments();
 ```
 
 ## Comment navigation
@@ -35,10 +116,20 @@ documentEditor.selection.navigatePreviousComment();
 
 ## Delete comment
 
-Current comment can be deleted using the below code snippet.
+Current comment can be deleted using `deleteComment`.
 
 ```typescript
-documentEditor.editor.deleteComment();
+//Delete the current selected comment.
+container.documentEditor.editor.deleteComment();
+
+//Get Comments in the document along with the properties author, date, status.
+let commentinfo = container.documentEditor.getComments();
+
+//Delete the particular parent comments and all of its reply comments
+container.documentEditor.editor.deleteComment(commentinfo[0].id);
+
+//Delete the particular reply comment.
+container.documentEditor.editor.deleteComment(commentinfo[0].replies[0].id);
 ```
 
 ## Delete all comment
