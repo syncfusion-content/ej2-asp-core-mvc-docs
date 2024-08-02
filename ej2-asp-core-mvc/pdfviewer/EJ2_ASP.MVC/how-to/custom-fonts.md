@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add custom fonts to the PDF viewer used in the PDF document | Syncfusion
+title: Add custom fonts to the PDF Viewer using the PDF document | Syncfusion
 description: Learn here all about how to add custom fonts to the PDF viewer used in the PDF document in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Custom Fonts
