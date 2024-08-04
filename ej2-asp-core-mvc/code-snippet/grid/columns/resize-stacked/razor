@@ -1,0 +1,8 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowResizing(true).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.HeaderText("Order Details").Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "OrderDate", Width = "135", HeaderText = "Order Date",TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right,Format="yMd", MinWidth="10" },
+        new Syncfusion.EJ2.Grids.GridColumn { Field = "Freight", Width = "130", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right, HeaderText = "Freight($)", Format="C2", MinWidth="10"} }).Add();
+    col.HeaderText("Shipped Details").Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipCity", Width = "140", HeaderText = "Ship City",AllowResizing=false, MinWidth="10" },
+        new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipCountry", Width = "145",  HeaderText = "Ship Country", MinWidth="10" } }).Add();
+}).Render()

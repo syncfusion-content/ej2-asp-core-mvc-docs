@@ -1,0 +1,23 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" dataBound="dataBound" height="320">
+    <e-grid-columns>
+        <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight"  format='C' textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function dataBound(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.getColumnHeaderByIndex(0).style.color = 'green';
+        grid.getColumnHeaderByField('CustomerID').style.background = 'rgb(217, 244, 235)';
+        grid.getColumnHeaderByField('OrderID').style.background = 'rgb(217, 244, 235)';
+        grid.getColumnHeaderByField('ShipCountry').style.background = 'rgb(217, 244, 235)';
+        grid.getColumnHeaderByField('CustomerID').style.color = 'green';
+        grid.getColumnHeaderByUid('grid-column2').style.background = 'rgb(217, 244, 235)';
+        const columnIndex = grid.getColumnIndexByField('ShipCountry');
+        grid.getColumnHeaderByIndex(columnIndex).style.color = 'green';
+        const index = grid.getColumnIndexByUid('grid-column2');
+        grid.getColumnHeaderByIndex(index).style.color = 'green';
+    }
+</script>

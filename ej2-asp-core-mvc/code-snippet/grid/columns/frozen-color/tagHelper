@@ -1,0 +1,29 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource">
+    <e-grid-columns>
+        <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" freeze='Left' width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="ShipAddress" headerText="Ship Address" freeze='Fixed' width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" type='date' format="yMd" width="130"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name"  width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" freeze='Right' width="120"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<style>
+    .e-grid .e-fixedfreeze.e-freezeleftborder {
+        border-left-color: rgb(9, 209, 9) !important;
+    }
+
+    .e-grid .e-fixedfreeze.e-freezerightborder {
+        border-right-color: rgb(10, 224, 10) !important;
+    }
+
+    .e-grid .e-rightfreeze.e-freezerightborder {
+        border-left-color: rgb(19, 228, 243) !important;
+    }
+
+    .e-grid .e-leftfreeze.e-freezeleftborder {
+        border-right-color: rgb(198, 30, 204) !important;
+    }
+</style>

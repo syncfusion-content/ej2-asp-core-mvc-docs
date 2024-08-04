@@ -1,22 +1,29 @@
-@{ 
+@{
+    List<object> columnMenuitems = new List<object>();
+    columnMenuitems.Add(new { text = "Clear Sorting", id = "gridclearsorting" });
+     List<object> cols = new List<object>();
+    cols.Add(new { field = "OrderID", direction = "Ascending" });
+}
 
-        List<object> columnMenuitems = new List<object>();
-        columnMenuitems.Add(new { text = "Clear Sorting", id = "gridclearsorting" });
- }
- <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" columnMenuItems="columnMenuitems"  columnMenuClick="columnMenuClick" showColumnMenu="true" allowSorting="true"  allowPaging="true" >
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging='true' allowSorting='true'
+          showColumnMenu='true' columnMenuItems='columnMenuitems' columnMenuClick='columnMenuClick'>
+    <e-grid-sortsettings columns='cols'></e-grid-sortsettings>
+
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID"  width="200"  textAlign="Right" showInColumnChooser="false" ></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right"  format="C2" editType="numericedit" width="150"></e-grid-column>
-        <e-grid-column field="ShipName" headerText="Ship Name"  width="300"></e-grid-column>
-        <e-grid-column field="ShipCountry"  headerText="Ship Country" visible="false"  width="200" ></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City"  width="200"></e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="130"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="130"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
 <script>
     function columnMenuClick(args) {
         if (args.item.id === 'gridclearsorting') {
-            this.clearSorting();
+           var grid = document.getElementById("Grid").ej2_instances[0];
+           grid.clearSorting();
         }
     }
 </script>
