@@ -1,0 +1,12 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="270">
+    <e-grid-columns>
+        <e-grid-column type="checkbox" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" type='number' width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" textAlign="Right" type='string' width="100"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" type='number' format='C2' width="80"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="100" textAlign="Right" type='date' format="yMd"></e-grid-column>
+        <e-grid-column field="ShippedDate" headerText="Shipped Date" width="100" textAlign="Right" type='date' format='dd/MM/yyyy hh:mm'></e-grid-column>
+        <e-grid-column field="Verified" headerText="Verified" textAlign="Right" type='boolean' displayAsCheckBox='true' width="80"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
