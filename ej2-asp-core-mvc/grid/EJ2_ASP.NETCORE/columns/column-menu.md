@@ -38,7 +38,7 @@ The default column menu items are displayed in following table.
 
 ![Column menu](../../images/column-menu/Column-menu.png)
 
-> You can disable column menu for a particular column by defining the `columns.showColumnMenu` as false.
+> You can disable column menu for a particular column by defining the `columns.showColumnMenu` as **false**.
 
 > You can customize the default items by defining the [columnMenuItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuItems) with required items.
 
@@ -61,7 +61,7 @@ Consider the following example, which demonstrates how to add a custom column me
 
 ## Customize menu items for particular columns
 
-Sometimes, you have a scenario that to hide an item from column menu for particular columns. In that case, you need to define the `columnMenuOpenEventArgs.hide` as true in the [columnMenuOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuOpen) event.
+Sometimes, you have a scenario that to hide an item from column menu for particular columns. In that case, you need to define the `columnMenuOpenEventArgs.hide` as **true** in the [columnMenuOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuOpen) event.
 
 The following sample, **Filter** item was hidden in column menu when opens for the **OrderID** column.
 

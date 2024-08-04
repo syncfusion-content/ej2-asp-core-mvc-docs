@@ -29,7 +29,7 @@ The column chooser feature in the Syncfusion ASP.NET MVC Grid component allows y
 
 You can hide the column names in column chooser by defining the `Columns.ShowInColumnChooser` as **false**. This feature is useful when working with a large number of columns or when you want to limit the number of columns that are available for selection in the column chooser dialog.
 
-In this example, the `Columns.ShowInColumnChooser` property is set to false for the **Order ID** column. As a result, the **Order ID** column will not be displayed in the column chooser dialog.
+In this example, the `Columns.ShowInColumnChooser` property is set to **false** for the **Order ID** column. As a result, the **Order ID** column will not be displayed in the column chooser dialog.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -42,7 +42,7 @@ In this example, the `Columns.ShowInColumnChooser` property is set to false for 
 
 ![Hide column in column chooser dialog](../../images/column-chooser/Colum-chooser-hide.png)
 
->The `Columns.ShowInColumnChooser` property is applied to each column element individually. By setting it to false, you can hide specific columns from the column chooser dialog.
+>The `Columns.ShowInColumnChooser` property is applied to each column element individually. By setting it to **false**, you can hide specific columns from the column chooser dialog.
 
 ## Open column chooser by externally
 
