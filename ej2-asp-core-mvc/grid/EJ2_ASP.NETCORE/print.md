@@ -40,10 +40,10 @@ You can print the grid's content using an external button by utilizing the `prin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/print/tagHelper %}
+{% include code-snippet/grid/print/external-btn/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="print.cs" %}
-{% include code-snippet/grid/print/print/print.cs %}
+{% highlight c# tabtitle="External-btn.cs" %}
+{% include code-snippet/grid/print/external-btn/external-btn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,10 +55,10 @@ By default, the Syncfusion ASP.NET Core Grid prints all the pages of the grid. T
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/print/tagHelper %}
+{% include code-snippet/grid/print/current-page/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="print.cs" %}
-{% include code-snippet/grid/print/print/print.cs %}
+{% highlight c# tabtitle="Current-page.cs" %}
+{% include code-snippet/grid/print/current-page/current-page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,10 +72,10 @@ Below is an example code that demonstrates how to print only the selected record
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/print/tagHelper %}
+{% include code-snippet/grid/print/print-select/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="print.cs" %}
-{% include code-snippet/grid/print/print/print.cs %}
+{% highlight c# tabtitle="Print.cs" %}
+{% include code-snippet/grid/print/print-select/print.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -95,10 +95,10 @@ The `hierarchyPrintMode` property in the Vue Grid lets you control the printing 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/print/tagHelper %}
+{% include code-snippet/grid/print/hierarchyprint/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="print.cs" %}
-{% include code-snippet/grid/print/print/print.cs %}
+{% highlight c# tabtitle="Hierarchyprint.cs" %}
+{% include code-snippet/grid/print/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -112,10 +112,10 @@ The [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.g
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/print/tagHelper %}
+{% include code-snippet/grid/print/masterdetailgrid/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="print.cs" %}
-{% include code-snippet/grid/print/print/print.cs %}
+{% highlight c# tabtitle="Master-Detail.cs" %}
+{% include code-snippet/grid/print/masterdetailgrid/masterdetailgrid.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -141,10 +141,10 @@ Here's a code example that demonstrates how to show a hidden column (CustomerID)
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/print/tagHelper %}
+{% include code-snippet/grid/print/show-hide-columns/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="print.cs" %}
-{% include code-snippet/grid/print/print/print.cs %}
+{% highlight c# tabtitle="Show-hide.cs" %}
+{% include code-snippet/grid/print/show-hide-columns/show-hide.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -162,10 +162,10 @@ The Syncfusion ASP.NET Core Grid provides a [beforePrint](https://help.syncfusio
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/print/tagHelper %}
+{% include code-snippet/grid/print/print-style/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="print.cs" %}
-{% include code-snippet/grid/print/print/print.cs %}
+{% include code-snippet/grid/print/print-style/print.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -179,10 +179,10 @@ Here is an example of how to print grid along with chart component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/print/tagHelper %}
+{% include code-snippet/grid/print/print-custom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="print.cs" %}
-{% include code-snippet/grid/print/print/print.cs %}
+{% include code-snippet/grid/print/print-custom/print.cs %}
 {% endhighlight %}
 {% endtabs %}
 
