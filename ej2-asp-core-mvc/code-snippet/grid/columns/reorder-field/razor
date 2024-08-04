@@ -1,0 +1,31 @@
+<div style="padding:0px 0px 20px 0px">
+    @Html.EJS().Button("reordersingle").CssClass("e-info").Content("Reorder single column").Render()
+    @Html.EJS().Button("reordermultiple").CssClass("e-info").Content("Reorder mutiple columns").Render()
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowReordering().Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("130").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
+}).Render()
+
+</div>
+<style>
+.e-btn.e-info, .e-css.e-btn.e-info {
+    margin-right: 4px;
+    margin-bottom: 3px;
+}
+</style>
+<script type="text/javascript">
+document.getElementById('reordersingle').addEventListener('click', function () {
+    var grid = document.getElementById("Grid").ej2_instances[0];
+    grid.reorderColumns("ShipCity", "OrderID");
+});
+document.getElementById('reordermultiple').addEventListener('click', function () {
+    var grid = document.getElementById("Grid").ej2_instances[0];
+    grid.reorderColumns(['ShipName', 'ShipCity', 'ShipCountry'], 'OrderID');
+});
+</script>

@@ -1,0 +1,16 @@
+<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" showColumnMenu="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID"  width="150"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<style>
+   .e-grid .e-columnheader .e-icons.e-columnmenu::before {
+        content: "\e799";
+    }   
+</style>
