@@ -120,7 +120,7 @@ The following example demonstrates how to change the default frozen line color u
 {% endhighlight %}
 {% endtabs %}
 
-![Change default frozen line color](../../images/column-chooser/Colum-chooser.png)
+![Change default frozen line color](../../images/column-chooser/frozon-color.png)
 
 ## Deprecated methods 
 

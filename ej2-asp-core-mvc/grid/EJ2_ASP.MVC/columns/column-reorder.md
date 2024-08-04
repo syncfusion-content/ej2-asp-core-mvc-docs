@@ -125,7 +125,7 @@ When reordering columns in the Syncfusion ASP.NET MVC Grid component, you may wa
 
 3.The [ColumnDrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrop) event triggers when a column header element is dropped on the target column.
 
-In the following example, we have implemented the `columnDragStart`, `columnDrag`, and `columnDrop` events in the Syncfusion Grid component.
+In the following example, we have implemented the `ColumnDragStart`, `ColumnDrag`, and `ColumnDrop` events in the Syncfusion Grid component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

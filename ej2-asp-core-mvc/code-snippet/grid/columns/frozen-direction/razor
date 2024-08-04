@@ -16,13 +16,13 @@
 
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
 {
-col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-col.Field("Freight").HeaderText("Freight").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Fixed).Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-col.Field("CustomerID").HeaderText("Customer ID").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Right).Width("130").Add();
-col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
-col.Field("ShipAddress").HeaderText("Ship Address").Width("120").Add();
-col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Fixed).Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Right).Width("130").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+    col.Field("ShipAddress").HeaderText("Ship Address").Width("120").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 col.Field("ShipCountry").HeaderText("Ship Country").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Left).Width("120").Add();
 }).Render()
 

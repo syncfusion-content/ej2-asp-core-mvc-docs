@@ -10,7 +10,7 @@ documentation: ug
 
 # Column chooser in ASP.NET MVC Grid component
 
-The column chooser feature in the Syncfusion ASP.NET MVC Grid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) property as **true**.
+The column chooser feature in the Syncfusion ASP.NET MVC Grid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [ShowColumnChooser](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) property as **true**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -27,9 +27,9 @@ The column chooser feature in the Syncfusion ASP.NET MVC Grid component allows y
 
 ## Hide column in column chooser dialog
 
-You can hide the column names in column chooser by defining the `columns.showInColumnChooser` as **false**. This feature is useful when working with a large number of columns or when you want to limit the number of columns that are available for selection in the column chooser dialog.
+You can hide the column names in column chooser by defining the `Columns.ShowInColumnChooser` as **false**. This feature is useful when working with a large number of columns or when you want to limit the number of columns that are available for selection in the column chooser dialog.
 
-In this example, the `columns.showInColumnChooser` property is set to false for the **Order ID** column. As a result, the **Order ID** column will not be displayed in the column chooser dialog.
+In this example, the `Columns.ShowInColumnChooser` property is set to false for the **Order ID** column. As a result, the **Order ID** column will not be displayed in the column chooser dialog.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -42,7 +42,7 @@ In this example, the `columns.showInColumnChooser` property is set to false for 
 
 ![Hide column in column chooser dialog](../../images/column-chooser/Colum-chooser-hide.png)
 
->The `columns.showInColumnChooser` property is applied to each column element individually. By setting it to false, you can hide specific columns from the column chooser dialog.
+>The `Columns.ShowInColumnChooser` property is applied to each column element individually. By setting it to false, you can hide specific columns from the column chooser dialog.
 
 ## Open column chooser by externally
 
@@ -109,9 +109,9 @@ Here's an example of how to change the default search operator of the column cho
 
 ## Diacritics searching in column chooser
 
-By default, the grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [columnchoosersettings.ignoreAccent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_IgnoreAccent) property to **true**.
+By default, the grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [Columnchoosersettings.IgnoreAccent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_IgnoreAccent) property to **true**.
 
-Here is an example that demonstrates the usage of the `ignoreAccent` property to include diacritic characters for searching in the column chooser:
+Here is an example that demonstrates the usage of the `IgnoreAccent` property to include diacritic characters for searching in the column chooser:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
