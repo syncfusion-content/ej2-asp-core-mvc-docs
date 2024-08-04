@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column resizing in ##Platform_Name## Grid component
+# Column resizing in ASP.NET MVC Grid component
 
 Grid component provides an intuitive user interface for resizing columns to fit their content. This feature allows users to easily adjust the width of the columns to improve readability and aesthetics of the data presented. To enable column resizing, set the [AllowResizing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowResizing) property of the grid to **true**.
 
@@ -25,7 +25,7 @@ Once column resizing is enabled, columns width can be resized by clicking and dr
 
 ![Column resizing](../../images/column-resize/column-resize.gif)
 
->* You can disable Resizing for a particular column, by specifying `columns.allowResizing` to **false**.
+>* You can disable Resizing for a particular column, by specifying `Columns.AllowResizing` to **false**.
 >* In RTL mode, you can click and drag the left edge of header cell to resize the column.
 >* The `Width` property of the column can be set initially to define the default width of the column. However, when column resizing is enabled, you can override the default width by manually resizing the columns.
 
