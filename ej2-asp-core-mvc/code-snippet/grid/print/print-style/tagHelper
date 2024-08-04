@@ -1,0 +1,36 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" beforePrint="beforePrint" toolbar="@(new List<string>() { "Print" })">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<style>
+.e-grid .e-headercell {
+  background: #24a0ed !important;
+}
+.e-grid .e-row .e-rowcell {
+  background: #cbecff !important;
+}
+.e-grid .e-altrow .e-rowcell {
+  background: #e7d7f7 !important;
+}
+</style>
+<script>
+    function beforePrint() {
+            const styleElement = document.createElement('style');
+            styleElement.innerHTML = `
+              .e-grid .e-headercell {
+          background: #24a0ed !important;
+        }
+        .e-grid .e-row .e-rowcell {
+          background: #cbecff !important;
+        }
+        .e-grid .e-altrow .e-rowcell {
+          background: #e7d7f7 !important;
+        }
+      `;
+            document.head.appendChild(styleElement);
+    }; 
+</script>

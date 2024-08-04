@@ -1,0 +1,25 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging='true'
+beforePrint="beforePrint" toolbar="@(new List<string>() { "Print" })">
+    <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
+    <e-grid-pagesettings pageSize="6"></e-grid-pagesettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function beforePrint(args) {
+        var rows = document.getElementById('Grid').ej2_instances[0].getSelectedRows();
+        if (rows.length) {
+            args.element["ej2_instances"][0].getContent().querySelector("tbody").remove();
+            var tbody = document.createElement("tbody");
+            rows = [...rows];
+            for (var r = 0; r < rows.length; r++) {
+                tbody.appendChild(rows[r].cloneNode(true));
+            }
+            args.element["ej2_instances"][0].getContentTable().appendChild(tbody);
+        }
+    };
+</script>
