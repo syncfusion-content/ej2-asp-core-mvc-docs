@@ -1,0 +1,8 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowResizing(true).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").AllowResizing(false).Width("130").Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipAddress").HeaderText("Ship Address").Width("150").Add();
+}).Render()

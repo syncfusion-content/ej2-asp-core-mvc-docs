@@ -1,25 +1,38 @@
-@Html.EJS().Grid("ColumnResize").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowResizing(true).Columns(col =>
+<div style="margin-left:180px">
+  <p style="color:red;" id="message"></p>
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowResizing(true).Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").Width("200").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("200").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipName").HeaderText("Ship Country").Width("300").Add();
-   col.Field("ShippedDate").HeaderText("Shipped Date").Width("200").Format("yMd").AllowResizing(false).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipName").HeaderText("Ship Country").Width("200").Add();
-
-}).AllowPaging().ResizeStart("resizeStart").Resizing("resizing").ResizeStop("resizeStop").Render()
-
-<script>
-
-    function resizeStart() {
-        alert('resizeStart event is triggered')
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("130").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).ResizeStart("resizeStart").Resizing("resizing").ResizeStop("resizeStop").Render()
+<style>
+    .e-grid .customcss {
+        background-color: rgb(43, 195, 226);
+    }
+</style>
+<script type="text/javascript">
+    function resizeStart(args) {
+        document.getElementById('message').innerText = `resizeStart event triggered`;
+        if (args.column.field === 'OrderID') {
+            args.cancel = true;
+        }
     }
     function resizing() {
-        alert('resizing event is triggered')
+        document.getElementById('message').innerText = `resizing event triggered`;
     }
-    function resizeStop() {
-        alert('resizeStop event is triggered')
+    function resizeStop(args) {
+        document.getElementById('message').innerText = `resizeStop event triggered`;
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        const headerCell = grid.getColumnHeaderByField(args.column.field);
+        headerCell.classList.add('customcss');
+        const columnCells = grid.getContentTable()
+            .querySelectorAll(`[data-colindex="${args.column.index}"]`);
+        columnCells.forEach(cell => {
+            cell.style.backgroundColor = 'rgb(43, 195, 226)';
+        });
     }
-
 </script>
