@@ -16,7 +16,7 @@ In the following example, the [FrozenColumns](https://help.syncfusion.com/cr/asp
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/frozen-columns/tagHelper %}
+{% include code-snippet/grid/columns/frozen-columns/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Frozen.cs" %}
 {% include code-snippet/grid/columns/frozen-columns/frozen.cs %}
@@ -40,7 +40,7 @@ The following example demonstrates how to freeze particular column in grid using
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/frozen-particular/tagHelper %}
+{% include code-snippet/grid/columns/frozen-particular/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Frozen.cs" %}
 {% include code-snippet/grid/columns/frozen-particular/frozen.cs %}
@@ -67,7 +67,7 @@ In the following example, the **ShipCountry** column is frozen on the left side,
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/frozen-direction/tagHelper %}
+{% include code-snippet/grid/columns/frozen-direction/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Frozen.cs" %}
 {% include code-snippet/grid/columns/frozen-direction/frozen.cs %}
@@ -113,7 +113,7 @@ The following example demonstrates how to change the default frozen line color u
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/frozen-color/tagHelper %}
+{% include code-snippet/grid/columns/frozen-color/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Frozen.cs" %}
 {% include code-snippet/grid/columns/frozen-color/frozen.cs %}
