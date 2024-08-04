@@ -28,7 +28,7 @@
     @Html.EJS().DropDownList("dropdown").Index(0).DataSource(@ViewBag.dropdownData).Change("onModeChange").Render()
   </span>
 </div>
- @Html.EJS().Grid("HierarchyPrint").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+ @Html.EJS().Grid("HierarchyPrint").DataSource((IEnumerable<object>)ViewBag.EmpDataSource).Columns(col =>
  {
     col.Field("EmployeeID").HeaderText("Employee ID").Width("125").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("FirstName").HeaderText("Name").Width("125").Add();
