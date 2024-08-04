@@ -1,0 +1,27 @@
+@Html.EJS().Tooltip("tooltip").Target(".e-headertext").Position(Syncfusion.EJ2.Popups.Position.TopCenter).ContentTemplate(@<div>
+    @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("Freight").HeaderText("Freight").Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+        col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+    }).Render()
+</div>).BeforeRender("beforeRender").Render()
+<script>
+    function beforeRender(args) {
+        const columnDescriptions = {
+            "Order ID": "A unique number assigned to each order.",
+            "Freight": "The cost of shipping the order.",
+            "Ship Name": "The name of the person or company who will receive the shipment.",
+            "Ship Country": "The country to which the shipment will be sent.",
+            "Order Date": "The date when the order was placed.",
+        };
+        var tooltip = document.getElementById("tooltip").ej2_instances[0];
+        const headerText = args.target.innerText;
+        const description = columnDescriptions[headerText];
+        if (description) {
+            tooltip.content = headerText + ": " + description;
+        }
+    }
+</script>

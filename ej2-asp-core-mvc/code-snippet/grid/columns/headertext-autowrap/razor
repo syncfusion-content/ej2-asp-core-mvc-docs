@@ -1,0 +1,21 @@
+<div style="display: flex">
+    <label style="padding: 10px 10px 26px 0"> Change the wrapmode of auto wrap feature: </label>
+    <span style="height:fit-content">
+        @Html.EJS().DropDownList("Wrap").Index(0).Width("180px").DataSource(@ViewBag.dropdownData).Change("valueChange").Render()
+    </span>
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowTextWrap().Columns(col =>
+{
+    col.Field("Inventor").HeaderText("Inventor Name").Width("130").Add();
+    col.Field("NumberOfPatentFamilies").HeaderText("Number of Patent Families").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Country").HeaderText("Country").Width("100").Add();
+    col.Field("Active").HeaderText("Active").Width("100").Add();
+    col.Field("Mainfieldsofinvention").HeaderText("Main Fields Of Invention").Width("150").Add();
+}).TextWrapSettings(text => { text.WrapMode(Syncfusion.EJ2.Grids.WrapMode.Header); }).Render()
+
+<script>
+    function valueChange(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.textWrapSettings.wrapMode = args.value;
+    }
+</script>
