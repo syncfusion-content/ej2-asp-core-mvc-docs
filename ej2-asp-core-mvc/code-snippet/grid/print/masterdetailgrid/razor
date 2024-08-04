@@ -1,36 +1,42 @@
 <div>
     <B>Master Grid</B>
-    @Html.EJS().Grid("masterGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).Width("auto").SelectedRowIndex(0).Columns(col =>
-        {
-            col.Field("EmployeeID").HeaderText("EmployeeID").IsPrimaryKey(true).Add();
-            col.Field("OrderID").HeaderText("OrderID").Add();
-            col.Field("CustomerID").HeaderText("FirstName").Add();
-        }).RowSelected("selected").BeforePrint("beforePrint").Toolbar(new List<string>() { "Print" }).Render()
+    @Html.EJS().Grid("masterGrid").DataSource((IEnumerable<object>)ViewBag.EmployeeData).SelectedRowIndex(1).Columns(col =>
+{
+   col.Field("ContactName").HeaderText("Customer Name").Width(150).Add();
+   col.Field("CompanyName").HeaderText("CompanyName").Width(150).Add();
+   col.Field("Address").HeaderText("Address").Width(150).Add();
+   col.Field("Country").HeaderText("Country").Width(130).Add();
+
+}).RowSelected("rowSelected").BeforePrint("beforePrint").Toolbar(new List<string>() { "Print" }).Render()
 </div>
-<p><div class='e-statustext'> Showing orders of Customer:  <b id=key></b></div></p>
+<p><div style="padding: 8px 0px 10px 0px;" class='e-statustext'> Showing orders of Customer:  <b id=key></b></div></p>
 <div>
-    @Html.EJS().Grid("detailGrid").DataSource((IEnumerable<object>)ViewBag.dataSource1).Columns(col =>
-                {
-                    col.Field("EmployeeID").HeaderText("EmployeeID").IsPrimaryKey(true).Add();
-                    col.Field("ShipCountry").HeaderText("ShipCountry").Add();
-                    col.Field("ShipName").HeaderText("ShipName").Add();
-                }).Render()
+@Html.EJS().Grid("childGrid").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+   col.Field("ShipAddress").HeaderText("Ship Address").Width("150").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+
+
+}).Render()
 </div>
 <script>
-    function selected(args) {
-        var selectedRecord = args.data;
-        var data = @Html.Raw(Json.Encode(ViewBag.datasource));
-        var employeeID = args.data.EmployeeID;
-        var detaildata = new ej.data.DataManager(data).executeLocal(new ej.data.Query().where("EmployeeID", "equal", employeeID, false).take(10));
-        var grid = document.getElementById("detailGrid").ej2_instances[0];
-        document.getElementById('key').innerHTML = selectedRecord.EmployeeID;
-        grid.dataSource = new ej.data.DataManager(detaildata.slice(0, 5)).dataSource.json;
-    }
-    function beforePrint(args) {
-        var customEle = document.createElement('div');
-        var grid = document.getElementById("detailGrid").ej2_instances[0];
-        customEle.innerHTML = document.getElementsByClassName('e-statustext')[0].innerHTML + grid.element.innerHTML;
-        customEle.appendChild(document.createElement('br'));
-        args.element.append(customEle);
-    }
+function rowSelected(args) {
+    let selectedRecord = args.data;
+    var data = @Html.Raw(Json.Encode(ViewBag.Datasource));
+    var employeeID = args.data.EmployeeID;
+    var detaildata = new ej.data.DataManager(data).executeLocal(new ej.data.Query().where("EmployeeID", "equal", employeeID, false));
+    var grid = document.getElementById("childGrid").ej2_instances[0];
+    grid.dataSource = new ej.data.DataManager(detaildata).dataSource.json;
+    document.getElementById("key").innerHTML = selectedRecord.ContactName;
+};
+function beforePrint(args) {
+    var customEle = document.createElement('div');
+    var grid = document.getElementById("childGrid").ej2_instances[0];
+    customEle.innerHTML = document.getElementsByClassName('e-statustext')[0].innerHTML + grid.element.innerHTML;
+    customEle.appendChild(document.createElement('br'));
+    args.element.append(customEle);
+};
 </script>
