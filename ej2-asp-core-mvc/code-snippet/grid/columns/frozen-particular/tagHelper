@@ -5,7 +5,7 @@
     </span>
 </div>
 
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource">
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
         <e-grid-column field="CustomerID"  headerText="Customer ID" isFrozen="true" width="130"></e-grid-column>

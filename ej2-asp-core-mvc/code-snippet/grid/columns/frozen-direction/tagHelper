@@ -14,7 +14,7 @@
     </div>
 </div>
 
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource">
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" format='C' freeze='Fixed' textAlign="Right" width="120"></e-grid-column>

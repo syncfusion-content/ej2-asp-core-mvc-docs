@@ -2,7 +2,7 @@
 <ejs-numerictextbox id="frozenColumns" min="0" max="3" validateDecimalOnType="true"
 decimals="0" format="n" value="2" width="100px"></ejs-numerictextbox>
 <ejs-button id="button" content="Update"></ejs-button>
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" frozenColumns='2'>
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" frozenColumns='2'>
 <e-grid-columns>
     <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
     <e-grid-column field="CustomerID"  headerText="Customer ID" width="130"></e-grid-column>
