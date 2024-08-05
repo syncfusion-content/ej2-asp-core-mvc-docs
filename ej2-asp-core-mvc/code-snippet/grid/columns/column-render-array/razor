@@ -1,0 +1,16 @@
+@{
+    var valueAccess = "valueAccessFn";
+}
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height(350).Columns(col =>
+{
+    col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("Name").HeaderText("Full Name").ValueAccessor(valueAccess).Width("150").Add();
+    col.Field("Title").HeaderText("Title").Width("150").Add();
+}).Render()
+
+<script>
+    function valueAccessFn(field, data) {
+        return data[field].map((s) => { return s.LastName || s.FirstName; }).join(' ');
+    }
+</script>

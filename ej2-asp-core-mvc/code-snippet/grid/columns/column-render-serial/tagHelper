@@ -1,0 +1,23 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" height="350" rowDataBound='rowDataBound' allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column headerText='S.No' width=90 textAlign='Center'></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="100" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" width="120" ></e-grid-column>
+        <e-grid-column field="ShipCity"  headerText="Ship City" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function rowDataBound (args) {
+        let grid = document.getElementById('Grid').ej2_instances[0];
+        if (args.row) {
+            var rowIndex = parseInt(args.row.getAttribute('aria-rowIndex'));
+            var currentPageNumber = grid.pageSettings.currentPage;
+            var pageSize = grid.pageSettings.pageSize;
+            var startIndex = (currentPageNumber - 1) * pageSize;
+            args.row.querySelector('.e-rowcell').innerHTML = (
+                startIndex + rowIndex
+            ).toString();
+        }
+    }
+</script>
