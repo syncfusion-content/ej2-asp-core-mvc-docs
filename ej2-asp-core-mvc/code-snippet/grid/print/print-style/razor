@@ -1,0 +1,37 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).BeforePrint("beforePrint").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+
+}).Toolbar(new List<string>() { "Print" }).Render()
+
+<style>
+   .e-grid .e-headercell {
+      background: #24a0ed !important;
+   }
+   .e-grid .e-row .e-rowcell {
+      background: #cbecff !important;
+   }
+   .e-grid .e-altrow .e-rowcell {
+      background: #e7d7f7 !important;
+   }
+</style>
+<script>
+   function beforePrint() {
+      const styleElement = document.createElement('style');
+      styleElement.innerHTML = `
+         .e-grid .e-headercell {
+            background: #24a0ed !important;
+         }
+         .e-grid .e-row .e-rowcell {
+            background: #cbecff !important;
+         }
+         .e-grid .e-altrow .e-rowcell {
+            background: #e7d7f7 !important;
+         }
+          `;
+      document.head.appendChild(styleElement);
+   };
+</script>
