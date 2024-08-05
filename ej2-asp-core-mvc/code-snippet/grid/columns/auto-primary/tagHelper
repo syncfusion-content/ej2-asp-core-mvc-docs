@@ -1,0 +1,10 @@
+<ejs-grid id="Auto" dataSource="@ViewBag.dataSource" dataBound="dataBound">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true">
+    </e-grid-editSettings>
+</ejs-grid>
+
+<script>
+    function dataBound() {
+        document.getElementById('Auto').ej2_instances[0].columns[0].isPrimaryKey = 'true';
+    }
+</script>
