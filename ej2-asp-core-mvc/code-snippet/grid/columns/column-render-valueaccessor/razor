@@ -1,0 +1,21 @@
+@{ 
+    var currencyFormatter = "currencyFormatterFn";
+    var concatenateFields = "concatenateFieldsFn";
+}
+
+@Html.EJS().Grid("ValueAccessor").DataSource((IEnumerable<object>)ViewBag.DataSource).Height(350).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").ValueAccessor(currencyFormatter).Add();
+    col.Field("ShipCity").HeaderText("Ship City").ValueAccessor(concatenateFields).Width("150").Add();
+}).Render()
+
+<script>
+    function currencyFormatterFn(field, data) {
+        return '€' + data['Freight']
+    }
+    function concatenateFieldsFn(field, data) {
+        return data['ShipCity'] + '-' + data['ShipRegion'];
+    }
+</script>
