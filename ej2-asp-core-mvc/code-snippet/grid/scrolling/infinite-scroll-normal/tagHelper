@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.datasource" enableVirtualization="true"  height="300" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" enableInfiniteScrolling="true" height="300" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
     <e-grid-pageSettings pageSize=50></e-grid-pageSettings>
     <e-grid-columns>
