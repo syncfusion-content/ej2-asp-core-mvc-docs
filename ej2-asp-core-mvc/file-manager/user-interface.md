@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Interface in ##Platform_Name## File Manager Component
+title: User Interface in ##Platform_Name## File Manager | Syncfusion
 description: Learn here all about User Interface in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: User Interface
@@ -35,7 +35,7 @@ The `Toolbar` provides easy access to the file operations using different button
 
 If the toolbar items exceed the size of the toolbar, then the exceeding toolbar size will be moved to toolbar popup with a dropdown button at the end of toolbar.
 
-*Refer [Toolbar](./file-operations/#toolbar) section in file operations to know more about the buttons present in toolbar*.
+*Refer [Toolbar](./file-operations#toolbar) section in file operations to know more about the buttons present in toolbar*.
 
 ![Toolbar](./images/toolbar.png "Responsiveness of Toolbar")
 
@@ -83,6 +83,6 @@ The context menu appears on user interaction such as right-click. The file manag
 
 Context menu can be customized using the `contextMenuSettings`, `menuOpen`, and `menuClick` events.
 
-*Refer [Context Menu](./file-operations/#context-menu) section in file operations to know more about the menu items present in context menu*.
+*Refer [Context Menu](./file-operations#context-menu) section in file operations to know more about the menu items present in context menu*.
 
 ![Context Menu](./images/contextmenu.png "Context Menu")
