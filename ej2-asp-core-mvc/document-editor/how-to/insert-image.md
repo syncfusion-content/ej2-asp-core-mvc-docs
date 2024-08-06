@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Insert an image in ##Platform_Name## Document Editor Component
-description: Insert an image in Syncfusion ##Platform_Name## Document Editor Component
+title: Insert an image in ##Platform_Name## Document Editor Component | Syncfusion
+description: Learn here all about how to Insert an image in Syncfusion ##Platform_Name## Document Editor Component
 platform: ej2-asp-core-mvc
 control: Insert an image
 publishingplatform: ##Platform_Name##
