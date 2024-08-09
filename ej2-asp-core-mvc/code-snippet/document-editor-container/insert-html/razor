@@ -1,0 +1,66 @@
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditorContainer("container").Created("onDocCreate").EnableToolbar(true).Render()
+</div>
+
+<script>
+    function onDocCreate() {
+        var container = document.getElementById("container").ej2_instances[0];
+        var toolItem = {
+            prefixIcon: "e-paste icon",
+            tooltipText: "Insert HTML",
+            text: "Insert HTML",
+            id: "insert"
+        };
+        container.toolbarItems = ['New','Open',toolItem, 'Separator' ,'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'InsertFootnote', 'InsertEndnote', 'Separator', 'Find', 'Separator', 'Comments', 'TrackChanges', 'Separator', 'LocalClipboard', 'RestrictEditing', 'Separator', 'FormFields', 'UpdateFields','ContentControl'];
+        container.toolbarClick = function (args) {
+            switch (args.item.id) {
+                case 'insert':
+                    insertHtml();
+                    break;
+            }
+        };
+    }
+
+    function insertHtml() {
+        var container = document.getElementById("container").ej2_instances[0];
+        var http = new XMLHttpRequest();
+        http.responseType = 'json';
+        var url = container.documentEditor.serviceUrl + 'SystemClipboard';
+        http.open('POST', url, true);
+        http.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+        http.onreadystatechange = () => {
+            if (http.readyState === 4) {
+                if (http.status === 200 || http.status === 304) {
+                    container.documentEditor.editor.paste(http.response);
+                }
+            }
+        };
+
+        var htmlContent = `
+        <html>
+            <body style='font-size: "12px"; font-family: "Algerian"; color: "#e02222";'>
+                <table title='hello' border='1' bordercolor='black' cellspacing='0'>
+                    <thead>
+                        <tr>
+                        <th>hello</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>World</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </body>
+        </html>`;
+
+        htmlContent = htmlContent.replace(/\s+/g, ' ').trim();
+
+        var sfdt = {
+            content: htmlContent,
+            type: '.html',
+        };
+
+        http.send(JSON.stringify(sfdt));
+    }
+</script>
