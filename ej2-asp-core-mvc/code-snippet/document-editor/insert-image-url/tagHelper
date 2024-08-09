@@ -1,0 +1,12 @@
+<ejs-documenteditor id="container" created="onCreate" isReadOnly=false enableEditor=true enableSelection=true >
+</ejs-documenteditor>
+
+<script>
+    var container;
+    function onCreate() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        //Insert Image From URL with alternate text.
+        container.editor.insertImage('https://cdn.syncfusion.com/content/images/Logo/Logo_Black_72dpi_without.png', 200, 200, 'Syncfusion');
+    }
+</script>

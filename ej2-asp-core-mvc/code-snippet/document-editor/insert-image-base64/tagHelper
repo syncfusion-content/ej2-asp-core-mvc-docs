@@ -1,0 +1,14 @@
+<ejs-documenteditor id="container" created="onCreate" isReadOnly=false enableEditor=true enableSelection=true >
+</ejs-documenteditor>
+
+<script>
+    var container;
+    function onCreate() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        // Base64 string representing an image in PNG format
+        var image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAkCAMAAAA5MMHRAAAAM1BMVEUAAAA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0S9NMEAAAAEHRSTlMAgEC/MO8QYCDfn4/PUK9wCi7XYAAAAmFJREFUWMPVl92anCAMQBNAftXJ+z9tNwGirnasn23HPRfKiIlHMOLA7/Eens08PtswEw0OnkugL4YAT2Wiygs+DlIFTWtYAHADNTJ8gFNBn6jz+Uo5FBypMUT4NHvBVsPCA+r4WBBe0n5CFR8ICmEgQngAx4JSyZ+v4GPBH7MYP4RgK8G1RgHbkGF8zXYBLuCypIU3FEl5fYqpoUuKAhdINS28wXLKW4Je/S4LOj4/2fBvBQPvRlQuCHK6Au8JiHhLUDpnWBONMX3veSu4Vb8QDb/p81ejB3gOEPMOgOMt4yfElyTZpTwXxN399L2RrTAUYF6JKtqBPcBIAOBAHZ1iX0hIE8AqJV4cwWNBpdQV/EQwkKKCftRDQX0Y/MNnMFkhozsU/OqSK/j2FW4Zg5m7EM1GUJTGjEIXzByVUZLEnjLxhTdzHr1Ovmnsqjh/E9RfRX6N609w04ZgJzh+q+LIfq6Nf9bz57YHgxUTsRJgVbMu0ZpwIKhX9zL8p4JUDOO7YNDbGojS5gInU7y9gZmPzO8ERelEMFNnCE1QMumAXhdUAvfdFNysTPEvC5ozQcfP0Ikg+EnnA6vRSz+M0z3BooLuWFAu4I4EnZ6iLIKOC7v/1Z2vClpFqqVIloSIdiuov4aCjApqQK5TbCplEZStnYy8wqergrRhiFJqwl5w/cZdBP0mwNKCq4Lr5zLDLcHkQNMdCYK3O0EN2AkWXepc0kM7wbP3ICqymGtEnWJuigTHRmkEFOohowGVCAE7Zv01MxVrZ4z9ZN3fgMvwkf9Z3FIyCZ6IIWWCJ6KC4//x+wW4X1lUibNfbQAAAABJRU5ErkJggg==";
+        //Insert image.
+        container.editor.insertImage(image);
+    }
+</script>
