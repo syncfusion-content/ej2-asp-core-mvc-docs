@@ -10,7 +10,7 @@ documentation: ug
 
 
 <!-- markdownlint-disable MD002 MD022 -->
-# Spinner
+# Spinner and Progress in ASP.NET MVC Progress Button
 
 ## Change spinner position
 
