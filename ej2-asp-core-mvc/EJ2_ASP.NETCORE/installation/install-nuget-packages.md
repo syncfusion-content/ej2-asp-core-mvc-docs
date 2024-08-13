@@ -110,4 +110,4 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
 4. The NuGet package manager console will install the Syncfusion ASP.NET Core JS2 NuGet package as well as the dependencies it has. When the installation is complete, the console will show that your Syncfusion ASP.NET Core JS2 package has been successfully added to the application.
 
-5. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion ASP.NET Core JS2 components](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [ASP.NET Core JS2 help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction/) for development.
+5. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion ASP.NET Core JS2 components](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [ASP.NET Core JS2 help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction) for development.
