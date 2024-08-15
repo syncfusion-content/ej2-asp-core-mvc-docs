@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction of Syncfusion ##Platform_Name## controls | Syncfusion
+title: Introduction of Syncfusion ##Platform_Name## Controls | Syncfusion
 description: Learn here all about introduction of 70+ Syncfusion ##Platform_Name## UI controls powered by Essential JS 2.
 platform: ej2-asp-core-mvc
 control: Common
