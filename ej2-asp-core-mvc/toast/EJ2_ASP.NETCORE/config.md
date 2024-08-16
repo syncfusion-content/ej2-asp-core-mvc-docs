@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Config in ##Platform_Name## Toast Component
+title: Config in ##Platform_Name## Toast Component | Syncfusion
 description: Learn here all about Config in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Config
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Configuring Options
+# Configuring Options in EJ2 ASP.Net Core
 
 This section explains the steps required to customize the appearance of the toast using built-in APIs.
 
