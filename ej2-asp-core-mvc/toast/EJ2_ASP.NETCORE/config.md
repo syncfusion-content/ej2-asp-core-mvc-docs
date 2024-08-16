@@ -133,6 +133,6 @@ Both the width and height properties allow setting pixels/numbers/percentage. Th
 
 ## See Also
 
-* [Prevent duplicate toasts](./how-to/prevent-duplicate-toast-display/)
+* [Prevent duplicate toasts](./how-to/prevent-duplicate-toast-display)
 
-* [Customize the progress bar](./how-to/customize-progress-bar-theme-and-sizing/)
+* [Customize the progress bar](./how-to/customize-progress-bar-theme-and-sizing)
