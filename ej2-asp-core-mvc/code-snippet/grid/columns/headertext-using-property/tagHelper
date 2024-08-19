@@ -1,0 +1,18 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+    <e-grid-columns>
+        <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' customAttributes="@(new { @class="customcss" })" width=120></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" customAttributes="@(new { @class="customcss" })" format='C' textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" type='date' format="yMd" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" customAttributes="@(new { @class="customcss" })" width="120"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<style>
+    .e-grid .e-headercell.customcss {
+        background-color: rgb(43, 195, 226);
+        color: rgb(10, 8, 8);
+    }
+    .e-grid .e-headercell {
+        background-color: #a2d6f4;
+    }
+</style>

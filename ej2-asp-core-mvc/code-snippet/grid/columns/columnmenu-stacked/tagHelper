@@ -1,0 +1,50 @@
+@{
+    
+    var columnMenuItems = new List<object>
+        {
+            "SortAscending",
+            "SortDescending",
+            "Group",
+            "Ungroup",
+            "Filter",
+            new
+            {
+                text = "Sub Menu",
+                items = new List<object>
+                {
+                    new { text = "Option 1", id = "option1" },
+                    new { text = "Option 2", id = "option2" },
+                    new { text = "Option 3", id = "option3" },
+                    new
+                    {
+                        text = "Nested Sub Menu",
+                        items = new List<object>
+                        {
+                            new { text = "Nested Option 1", id = "nestedoption1" },
+                            new { text = "Nested Option 2", id = "nestedoption2" }
+                        }
+                    }
+                }
+            }
+        };
+    
+}
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging='true' allowSorting='true' columnMenuItems='columnMenuItems' 
+showColumnMenu='true' allowFiltering='true' allowGrouping='true' columnMenuClick='columnMenuClick'>
+    <e-grid-filtersettings type="CheckBox"></e-grid-filtersettings>
+    <e-grid-groupsettings showGroupedColumn="true"></e-grid-groupsettings>
+    <e-grid-columns>
+        <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="130"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="130"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function columnMenuClick(args) {
+        if (args.item.id === 'option1') {
+                // custom function
+        }
+    }
+</script>

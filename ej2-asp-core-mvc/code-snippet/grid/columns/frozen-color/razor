@@ -1,0 +1,28 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Left).Width("130").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipAddress").HeaderText("Ship Address").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Fixed).Width("120").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Right).Width("120").Add();
+}).Render()
+<style>
+    .e-grid .e-fixedfreeze.e-freezeleftborder {
+        border-left-color: rgb(9, 209, 9) !important;
+    }
+
+    .e-grid .e-fixedfreeze.e-freezerightborder {
+        border-right-color: rgb(10, 224, 10) !important;
+    }
+
+    .e-grid .e-rightfreeze.e-freezerightborder {
+        border-left-color: rgb(19, 228, 243) !important;
+    }
+
+    .e-grid .e-leftfreeze.e-freezeleftborder {
+        border-right-color: rgb(198, 30, 204) !important;
+    }
+</style>
