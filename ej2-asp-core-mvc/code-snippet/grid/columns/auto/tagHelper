@@ -1,3 +1,2 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
-           
+<ejs-grid id="Grid" allowPaging=true dataSource="@ViewBag.DataSource">   
 </ejs-grid>
