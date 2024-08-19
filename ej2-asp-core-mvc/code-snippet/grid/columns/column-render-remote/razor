@@ -1,0 +1,12 @@
+@Html.EJS().Grid("Grid").DataSource(dataManger =>
+{
+    dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/Orders/").CrossDomain(true).Adaptor("ODataV4Adaptor");
+
+}).Query("new ej.data.Query().expand('Employee')").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("120").Add();
+     col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
+    col.Field("Employee.City").HeaderText("City").Width("130").Add();
+
+}).AllowPaging().Render()
