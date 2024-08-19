@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2.DropDowns
+
+
+@Html.EJS().MultiSelect("icons").Mode(VisualMode.Delimiter).Placeholder("Favorite Sports").DataSource((string[])ViewBag.data).Render()
+
+<style>
+    .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+        display: none;
+    }
+</style>
