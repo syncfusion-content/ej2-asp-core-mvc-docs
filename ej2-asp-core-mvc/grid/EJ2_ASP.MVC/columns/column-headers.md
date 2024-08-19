@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Headers in ##Platform_Name## Grid component
+# Headers in ASP.NET MVC Grid component
 
-The Syncfusion ##Platform_Name## Grid component provides a comprehensive set of options to customize and manage headers efficiently. Headers play a crucial role in organizing and presenting data effectively in the grid.
+The Syncfusion ASP.NET MVC Grid component provides a comprehensive set of options to customize and manage headers efficiently. Headers play a crucial role in organizing and presenting data effectively in the grid.
 
 ## Header text
 
-The `HeaderText` feature proves particularly beneficial when there is a need for more meaningful and descriptive column headers in the Syncfusion ##Platform_Name## Grid component.
+The `HeaderText` feature proves particularly beneficial when there is a need for more meaningful and descriptive column headers in the Syncfusion ASP.NET MVC Grid component.
 
 By default, the header text of a column in Grid is displayed from the column's `Field` value. However, you can easily override the default header title and provide a custom header text for the column using the `HeaderText` property. 
 
@@ -37,9 +37,9 @@ To enable the `HeaderText` property, you simply need to define it in the **e-gri
 
 ## Header template
 
-The header template feature in the Syncfusion ##Platform_Name## Grid component allows you to create custom header layouts and content, providing enhanced functionality such as sorting or filtering.
+The header template feature in the Syncfusion ASP.NET MVC Grid component allows you to create custom header layouts and content, providing enhanced functionality such as sorting or filtering.
 
-To implement a header template, set the `HeaderTemplate` property within a specific column definition. This allows you to render custom HTML elements or ##Platform_Name## components to the header.
+To implement a header template, set the `HeaderTemplate` property within a specific column definition. This allows you to render custom HTML elements or ASP.NET MVC components to the header.
 
 The following example demonstrate, the custom element is rendered for both **CustomerID**,**Freight** and **OrderDate** column headers.
 
@@ -55,13 +55,13 @@ The following example demonstrate, the custom element is rendered for both **Cus
 ![Header template](../../images/columns/Column-headertext-headerTemplate.png)
 
 >* The `HeaderTemplate` property is only applicable to Grid columns that have a header element.
->* You can use any HTML or ##Platform_Name## component in the header template to add additional functionality to the header element.
+>* You can use any HTML or ASP.NET MVC component in the header template to add additional functionality to the header element.
 
 ## Stacked header 
 
 In Grid, you can group multiple levels of column headers by stacking the Grid columns. This feature allows you to organize the Grid columns in a more structured and understandable way. This can be achieved by setting the [columns->columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) property. Within this property, you can define an array of column objects to group together as sub-headers under a main header. You can define the `HeaderText` property of each sub-header column to set the text for that sub-header.
 
-You can customize the appearance of the stacked header elements by using the `HeaderTemplate` property. This allows you to render custom HTML elements or ##Platform_Name## components to the header. 
+You can customize the appearance of the stacked header elements by using the `HeaderTemplate` property. This allows you to render custom HTML elements or ASP.NET MVC components to the header. 
 
 Here's an example of how to use stacked headers with a custom `HeaderTemplate` in Syncfusion Grid.
 
@@ -307,7 +307,7 @@ Here's an example of how to use the `BeforeRender` event to add a custom tooltip
 
 ## Customize header text styles 
 
-Customizing the grid header styles allows you to modify the appearance of the column header in the Grid control to meet your design requirements. You can customize the font, background color, and other styles of the header cells. To customize the header styles in the grid, you can use CSS, properties, methods, or event support provided by the Syncfusion ##Platform_Name## Grid component.
+Customizing the grid header styles allows you to modify the appearance of the column header in the Grid control to meet your design requirements. You can customize the font, background color, and other styles of the header cells. To customize the header styles in the grid, you can use CSS, properties, methods, or event support provided by the Syncfusion ASP.NET MVC Grid component.
 
 ### Using CSS
 
@@ -414,7 +414,7 @@ The following example demonstrates how to add a `HeaderCellInfo` event handler t
 
 ## How to refresh header 
 
-The refresh header feature in the Syncfusion ##Platform_Name## Grid allows you to update the header section of the grid whenever changes are made to the grid's columns. This feature is useful when you want to reflect changes in the header immediately, such as modifying the column header text, width, or alignment.
+The refresh header feature in the Syncfusion ASP.NET MVC Grid allows you to update the header section of the grid whenever changes are made to the grid's columns. This feature is useful when you want to reflect changes in the header immediately, such as modifying the column header text, width, or alignment.
 
 To use the refresh header feature, you can call the `refreshHeader` method of the Grid component. This method updates the grid header with the latest changes made to the columns.
 
