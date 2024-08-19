@@ -8,9 +8,17 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-## Get the selected cell values as a collection programmatically in ##Platform_Name## Spreadsheet control
+# Get the selected cell values as a collection programmatically in ##Platform_Name## Spreadsheet Control
 
-You can select single or multiple cells, rows, or columns using mouse and keyboard interactions. Additionally, you can also programmatically perform selection using the [selectRange](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#selectrange) method. This selection behavior is controlled based on the [selectionSettings](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#selectionsettings) property. Now, retrieving the selected cell values as a collection is achievable using the [getData](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#getdata) method.
+{% if page.publishingplatform == "aspnet-core" %}
+
+You can select single or multiple cells, rows, or columns using mouse and keyboard interactions. Additionally, you can also programmatically perform selection using the [selectRange](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#selectrange) method. This selection behavior is controlled based on the [selectionSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SelectionSettings) property. Now, retrieving the selected cell values as a collection is achievable using the [getData](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#getdata) method.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+You can select single or multiple cells, rows, or columns using mouse and keyboard interactions. Additionally, you can also programmatically perform selection using the [selectRange](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#selectrange) method. This selection behavior is controlled based on the [selectionSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SelectionSettings) property. Now, retrieving the selected cell values as a collection is achievable using the [getData](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#getdata) method.
+
+{% endif %}
 
 Below is a code example demonstrating how to retrieve the selected cell values as a collection programmatically:
 
