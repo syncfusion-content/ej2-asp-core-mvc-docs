@@ -1,0 +1,22 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).BeforePrint("beforePrint").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+
+}).AllowPaging().SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).PageSettings(page => page.PageSize(6)).Toolbar(new List<string>() { "Print" }).Render()
+<script>
+   function beforePrint(args) {
+      var rows = document.getElementById('Grid').ej2_instances[0].getSelectedRows();
+      if (rows.length) {
+         args.element["ej2_instances"][0].getContent().querySelector("tbody").remove();
+         var tbody = document.createElement("tbody");
+         rows = [...rows];
+         for (var r = 0; r < rows.length; r++) {
+            tbody.appendChild(rows[r].cloneNode(true));
+         }
+         args.element["ej2_instances"][0].getContentTable().appendChild(tbody);
+      }
+   };
+</script>
