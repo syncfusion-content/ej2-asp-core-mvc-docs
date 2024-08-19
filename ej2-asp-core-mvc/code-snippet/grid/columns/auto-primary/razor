@@ -2,8 +2,6 @@
 
 <script>
     function dataBound() {
-        var grid = document.getElementById('Auto').ej2_instances[0];
-        var column = grid.columns[0];
-        column.isPrimaryKey = 'true';
+        document.getElementById('Auto').ej2_instances[0].columns[0].isPrimaryKey = 'true';
     }
 </script>
