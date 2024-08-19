@@ -5,6 +5,7 @@
       {
         new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="Customer ID", Width="90", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right },
         new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCountry", HeaderText="Ship Country", Width="90" },
+        new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipAddress", HeaderText="ShipAddress", Width="90" },
       }
   };
 
@@ -21,11 +22,23 @@
     };
 }
 
-@Html.EJS().Grid("HierarchyPrint").DataSource((IEnumerable<object>)ViewBag.EmpDataSource).HierarchyPrintMode(Syncfusion.EJ2.Grids.HierarchyGridPrintMode.All).Columns(col =>
-{
-   col.Field("EmployeeID").HeaderText("Employee ID").Width("125").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("FirstName").HeaderText("Name").Width("125").Add();
-   col.Field("Country").HeaderText("Country").Width("180").Add();
-   col.Field("City").HeaderText("City").Width("135").Add();
+<div style="display: flex">
+  <label style="padding: 3px 10px 26px 0;font-weight:bold">  Select Mode: </label>
+  <span style="height:fit-content">
+    @Html.EJS().DropDownList("dropdown").Index(0).DataSource(@ViewBag.dropdownData).Change("onModeChange").Render()
+  </span>
+</div>
+ @Html.EJS().Grid("HierarchyPrint").DataSource((IEnumerable<object>)ViewBag.EmpDataSource).Columns(col =>
+ {
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("125").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("FirstName").HeaderText("Name").Width("125").Add();
+    col.Field("Country").HeaderText("Country").Width("180").Add();
+    col.Field("City").HeaderText("City").Width("135").Add();
 
-}).AllowSorting().Toolbar(new List<string>() { "Print"}).ChildGrid(ChildGrid).Render()
+ }).Toolbar(new List<string>() { "Print" }).ChildGrid(ChildGrid).Render()
+ <script>
+     function onModeChange(args) {
+         document.getElementById('HierarchyPrint').ej2_instances[0].hierarchyPrintMode = args.value;
+     };
+
+ </script>
