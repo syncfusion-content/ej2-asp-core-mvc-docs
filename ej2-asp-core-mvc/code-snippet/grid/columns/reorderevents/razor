@@ -1,22 +1,36 @@
-@Html.EJS().Grid("Reorder").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowReordering().Columns(col =>
-{
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("125").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("FirstName").HeaderText("Name").Width("125").Add();
-    col.Field("City").HeaderText("City").Width("190").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Country").HeaderText("Country").Width("135").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-
-}).ColumnDragStart("columnDragStart").ColumnDrag("columnDrag").ColumnDrop("columnDrop").Render()
-
-<script>
-
-    function columnDragStart() {
-        alert('columnDragStart event is triggered')
+  <p id='message' style="color:red;text-align:center"></p>
+  @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowReordering().Columns(col =>
+  {
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("130").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
+  }).ColumnDragStart("columnDragStart").ColumnDrag("columnDrag").ColumnDrop("columnDrop").Render()
+  
+<style>
+    .e-grid .e-headercell.customcss, .e-grid .e-rowcell.customcss {
+          background-color: rgb(43, 195, 226);
     }
-    function columnDrag() {
-        alert('columnDrag event is triggered')
+</style>
+<script type="text/javascript">
+    function columnDragStart(args) {
+        document.getElementById('message').innerText = `columnDragStart event triggered`;
+        if (args.column.field === 'OrderID') {
+            args.cancel = true;
+        }
     }
-    function columnDrop() {
-        alert('columnDrop event is triggered')
+    function columnDrag(args) {
+        var index = args.target.getAttribute('data-colIndex');
+        if (index) {
+            document.getElementById('message').innerText = `columnDrag event triggered. ${args.column.headerText} column is dragged to index ${index}`;
+        }
     }
-
+    function columnDrop(args) {
+        document.getElementById('message').innerText = `columnDrop event triggered`;
+        if (args.column.allowReordering === true) {
+            args.column.customAttributes = { class: 'customcss' };
+        }
+    }
 </script>
