@@ -463,3 +463,4 @@ In the following sample, the `RowDataBound` event of the Grid is used to set the
 * [How can I put a Sparkline in a child grid that is on a Grid with hierarchy in ASP.NET MVC Grid](https://www.syncfusion.com/forums/145389/how-can-i-put-a-sparkline-in-a-child-grid-that-is-on-a-grid-with-hierarchy-in-asp-net-mvc)
 * [How can I enable or disable a menu option that is inside a template in ASP.NET MVC Grid](https://www.syncfusion.com/forums/153923/how-can-i-enable-or-disable-a-menu-option-that-is-inside-a-template-in-asp-net-mvc-grid)
 * [How to change the data source or columns dynamically](../data-binding/how-to-change-the-data-source-or-columns-dynamically)
+
