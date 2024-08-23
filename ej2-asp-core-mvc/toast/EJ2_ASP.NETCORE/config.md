@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Configuring Options in EJ2 ASP.Net Core
+# Configuring Options in ASP.Net Core Toast
 
 This section explains the steps required to customize the appearance of the toast using built-in APIs.
 
