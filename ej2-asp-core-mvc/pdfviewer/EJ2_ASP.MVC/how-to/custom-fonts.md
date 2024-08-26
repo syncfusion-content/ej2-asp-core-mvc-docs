@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to change the font family ASP .MVC Pdfviewer component
-description: Learn how to change the font family in Syncfusion ASP .MVC Pdfviewer component.
+title: How to change the font family in Syncfusion ASP .MVC Pdfviewer component
+description: Learn how to change the font family in Form Field's Type Signature in Syncfusion ASP .MVC Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Change the Font Family in Type Signature
 publishingplatform: ##Platform_Name##

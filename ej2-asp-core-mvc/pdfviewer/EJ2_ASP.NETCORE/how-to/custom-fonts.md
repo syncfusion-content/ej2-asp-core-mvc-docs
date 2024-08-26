@@ -1,12 +1,15 @@
 ---
 layout: post
-title: How to change the font family in ASP .NETCORE Pdfviewer component.
-description: Learn how to change the font family in Syncfusion ASP .NETCORE Pdfviewer component.
+title: How to change the font family in Syncfusion ASP .NETCORE Pdfviewer component.
+description: Learn how to change the font family in Form Field's Type Signature in Syncfusion ASP .NETCORE Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Change the Font Family in Type Signature
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
+
+# To Change the Font Family 
+Change the Font Family in Type Signature of the Syncfusion PDF Viewer by adding a custom css stylesheet to the document , and then apply the desired font family to the type signature element. Include the Google font link in the HTML head section to apply the Google Font.
 
 ### Signature Field property
 The Syncfusion PDF Viewer provides the ability to change the font family for Signature and Initial Field using `typeSignatureFonts` and `typeInitialFonts` property.
