@@ -26,7 +26,7 @@ The Syncfusion PDF Viewer provides the ability to change the font family for Sig
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inspiration">
 ``` 
-```
+
 <div style="width:100%;height:600px">
     @Html.EJS().PdfViewer("pdfviewer").ChangeFontFamily("changeFontFamily").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
 </div>
@@ -43,7 +43,7 @@ The Syncfusion PDF Viewer provides the ability to change the font family for Sig
 		];
 	}
 </script>
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,7 +58,7 @@ Insert the following code snippet to implement the functionality for using custo
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inspiration">
 ```
-```
+
 <div style="width:100%;height:600px">
     @Html.EJS().PdfViewer("pdfviewer").ChangeFontFamily("changeFontFamily").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
 </div>
@@ -75,7 +75,7 @@ Insert the following code snippet to implement the functionality for using custo
 		];
 	}
 </script>
-```
+
 {% endhighlight %}
 {% endtabs %}
 
