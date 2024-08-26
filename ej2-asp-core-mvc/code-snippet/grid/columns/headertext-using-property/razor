@@ -1,0 +1,18 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").CustomAttributes(new { @class = "customcss" }).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("130").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").CustomAttributes(new { @class = "customcss" }).Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").CustomAttributes(new { @class = "customcss" }).Width("120").Add();
+}).Render()
+
+<style>
+   .e-grid .e-headercell.customcss {
+        background-color: rgb(43, 195, 226);
+        color: rgb(10, 8, 8);
+    }
+    .e-grid .e-headercell {
+        background-color: #a2d6f4;
+    }
+</style> 

@@ -1,9 +1,7 @@
-@Html.EJS().Grid("HeaderText").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+@Html.EJS().Grid("HeaderText").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
 {
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("FirstName").HeaderText("First Name").Width("140").Add();
-    col.Field("BirthDate").HeaderText("Birth Date").Format("yMd").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("City").Width("120").Add();
-    col.Field("Country").HeaderText("Country").Width("140").Add();
-
-}).AllowPaging().Render()
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
+    col.Field("Freight").HeaderText("Freight").Format("yMd").Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("140").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).Render()

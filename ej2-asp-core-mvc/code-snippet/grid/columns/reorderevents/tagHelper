@@ -1,23 +1,41 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowReordering="true" height="315" columnDragStart="columnDragStart"
-columnDrag="columnDrag" columnDrop="columnDrop">   
+<p id='message' style="color:red;text-align:center"></p>
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowReordering='true' columnDragStart="columnDragStart" columnDrag="columnDrag" columnDrop="columnDrop">
     <e-grid-columns>
-        <e-grid-column field="EmployeeID" headerText="Employee ID"  width="100"></e-grid-column>
-        <e-grid-column field="FirstName" headerText="First Name"  width="120"></e-grid-column>
-        <e-grid-column field="Title" headerText="Title" width="100"></e-grid-column>
-        <e-grid-column field="BirthDate" headerText="Birth Date" width="100" format="yMd"></e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="130"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="130"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
-  <script>
+<style>
+    .e-grid .e-headercell.customcss, .e-grid .e-rowcell.customcss {
+        background-color: rgb(43, 195, 226);
+    }
+</style>
 
-    function columnDragStart() {
-        alert('columnDragStart event is triggered')
+<script type="text/javascript">
+    function columnDragStart(args) {
+        document.getElementById('message').innerText = `columnDragStart event triggered`;
+        if (args.column.field === 'OrderID') {
+            args.cancel = true; // Prevent reordering
+        }
     }
-    function columnDrag() {
-        alert('columnDrag event is triggered')
+
+    function columnDrag(args) {
+        var index = args.target.getAttribute('data-colIndex');
+        if (index) {
+            document.getElementById('message').innerText = `columnDrag event triggered. ${args.column.headerText} column is dragged to index ${index}`;
+        }
     }
-    function columnDrop() {
-        alert('columnDrop event is triggered')
+
+    function columnDrop(args) {
+        document.getElementById('message').innerText = `columnDrop event triggered`;
+        if (args.column.allowReordering === true) {
+            args.column.customAttributes = { class: 'customcss' };
+        }
     }
-    
-  </script>
+</script>
