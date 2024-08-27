@@ -1,0 +1,19 @@
+@{ 
+    var totalCalories = "totalCaloriesFn";
+}
+
+<ejs-grid id="ValueAccessor" dataSource="@ViewBag.DataSource" height="280">
+    <e-grid-columns>
+        <e-grid-column field='FoodName' headerText='Food Name' width=150></e-grid-column>
+        <e-grid-column field='Protein' headerText='Protein' textAlign='Right' width=120></e-grid-column>
+        <e-grid-column field='Fat' headerText='Fat' textAlign='Right' width=80></e-grid-column>
+        <e-grid-column field='Carbohydrate' headerText='Carbohydrate' textAlign='Right' width=120></e-grid-column>
+        <e-grid-column headerText='Calories Intake' textAlign='Right' valueAccessor='totalCalories' width=150></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function totalCaloriesFn(field, data) {
+        return data.Protein * 4 + data.Fat * 9 + data.Carbohydrate * 4;
+    }
+</script>

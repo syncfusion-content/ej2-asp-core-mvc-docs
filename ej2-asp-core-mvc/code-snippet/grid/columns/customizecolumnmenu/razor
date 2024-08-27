@@ -1,13 +1,11 @@
-@Html.EJS().Grid("CustomizeColumnMenu").DataSource((IEnumerable<object>)ViewBag.dataSource).ShowColumnMenu(true).AllowSorting().AllowFiltering(true).AllowGrouping().ColumnMenuOpen("columnMenuOpen").Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ShowColumnMenu(true).AllowSorting().AllowFiltering(true).AllowGrouping(true).Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-   col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
-
-}).FilterSettings(filter=> { filter.Type(Syncfusion.EJ2.Grids.FilterType.CheckBox); }).GroupSettings(group=>group.ShowGroupedColumn(true)).AllowPaging().Render()
-
+col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+col.Field("Freight").HeaderText("Freight").Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
+col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
+}).AllowPaging().ColumnMenuOpen("columnMenuOpen").FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Menu); }).Render()
 
 <script>
     function columnMenuOpen(args) {
