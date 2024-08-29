@@ -13,7 +13,7 @@ documentation: ug
 
 The period selector allows to select a range with specified periods. By default the period selector is enabled in stock chart.
 
-# Selecting Range
+## Selecting Range
 
 The left and right thumb of RangeNavigator are used to indicate the selected range in the large collection of data. Following are the ways you can select a range.
 
