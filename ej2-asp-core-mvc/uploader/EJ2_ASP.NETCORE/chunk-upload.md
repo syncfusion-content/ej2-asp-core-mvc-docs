@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chunk Upload in ##Platform_Name## Uploader Component
+title: Chunk Upload in ##Platform_Name## Uploader Component | Syncfusion
 description: Learn here all about Chunk Upload in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chunk Upload
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Chunk Upload
+# Chunk Upload in ASP.NET CORE Uploader Component
 
 The Uploader sends the large file split into small chunks and transmits to the server using AJAX. You can also pause, resume, and retry the failed chunk file.
 
