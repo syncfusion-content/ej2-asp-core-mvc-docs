@@ -21,28 +21,20 @@ The following section explains you the steps required to create TextBox with `ic
 
 ```html
       <div class="e-input-group">
-            <input class="e-input" name='input' type="text" placeholder="Enter Date"/>
+           <ejs-textbox id="icon-textbox" placeholder="Enter Date"></ejs-textbox>
       </div>
 ```
 
 **Floating label:**
 
-* Add the `e-float-input` class to the parent div element.
+Use the `FloatLabelType` property to add a floating label to the TextBox. This property controls the behavior of the placeholder text, allowing it to float above the TextBox based on the following values:
 
-* Remove the e-input class and add `required` attribute to the input element.
-
-* Place the span element with class `e-float-line` after the input element.
-
-* Place the label element with class `e-float-text` after the above created span element. When you focus or filled with value in the TextBox, the label floats above the TextBox.
-
-N> Creating the Floating label TextBox, you have to set the `required` attribute to the Input element to achieve the floating label functionality which is used for validating the value existence in TextBox. If you want to render the Floating label TextBox without `required` attribute then refer to the [Floating label without required attribute](#floating-label-without-required-attribute) section.
+* Never: The placeholder text never floats.
+* Always: The placeholder text always floats above the TextBox.
+* Auto: The placeholder text floats above the TextBox when focused or when a value is entered.
 
 ```html
-        <div class="e-float-input e-input-group">
-            <input type="text" required/>
-            <span class="e-float-line"></span>
-            <label class="e-float-text">Enter Name </label>
-        </div>
+      <ejs-textbox id="float-icon-textbox" placeholder="Enter Name" floatLabelType="Auto"></ejs-textbox>
 ```
 
 And refer to the following sections to add the icons to the TextBox.
@@ -75,7 +67,6 @@ For the floating label enabled TextBox add the icon element as first or last ele
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 
 Output be like the below.
@@ -111,7 +102,6 @@ You can add the clear button to the TextBox by enabling `showClearButton` API.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 
 Output be like the below.
@@ -151,12 +141,9 @@ Class Name        | Description
 {% endif %}
 
 
-
 ## Multi-line input with floating label
 
-Add the HTML`textarea` element with the `e-input` class to create default multi-line input.
-
-Add the floating label support to the `multi-line input` by creating the floating label structure as defined in the initial section.
+To create a multi-line input field, use the `multiline` property. This will turn the input into a TextArea component, allowing you to resize the number of rows as needed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

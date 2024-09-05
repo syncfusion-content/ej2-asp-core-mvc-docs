@@ -11,7 +11,7 @@ documentation: ug
 
 # Set the read-only TextBox
 
-You can make the TextBox as `read-only` by setting the `readonly` attribute to the input element.
+To make the TextBox `read-only`, set the [readonly](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.inputs.textbox.html#Syncfusion_EJ2_Inputs_TextBox_Readonly) property to `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
