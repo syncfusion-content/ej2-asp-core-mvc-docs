@@ -45,6 +45,7 @@ The PDF Viewer supports printing the loaded PDF file. You can enable/disable the
 
 ![Alt text](images/print.png)
 
+
 ## See also
 
 * [Toolbar items](./toolbar)
