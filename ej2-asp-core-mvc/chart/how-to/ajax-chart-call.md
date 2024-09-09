@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ajax Chart Call in ##Platform_Name## Chart Component
+title: Ajax Chart Call in ##Platform_Name## Chart Component | Syncfusion
 description: Learn here all about Ajax Chart Call in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ajax Chart Call
@@ -123,4 +123,4 @@ Make ajax call to the GetServerData() action method in chart load event to get J
 
 **Sample reference**
 
-Sample for how to get data from ajax call is available in [`chart sample`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/samples1051291506).
+Sample for how to get data from ajax call is available in [`chart sample`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/samples1051291506).
