@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Ej2-asp-core-mvc Stock Chart Range Selector
+# Range Selector in Ej2-asp-core-mvc Stock Chart
 
 The period selector allows to select a range with specified periods. By default the period selector is enabled in stock chart.
 
