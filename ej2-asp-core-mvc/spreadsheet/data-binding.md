@@ -243,7 +243,13 @@ N> For `add` action, the value for all the fields will be `null` in the data. In
 {% endtabs %}
 {% endif %}
 
+## Dynamic data binding using updateRange method
 
+The `updateRange` method allows you to dynamically update the `dataSource` in a spreadsheet without manually iterating through each cell. This method is especially useful for efficiently applying bulk updates to a specific range within the spreadsheet.
+
+To use the `updateRange` method, provide the new `dataSource` and specify the starting cell for the update using the `startCell` property of the `RangeModel`. Additionally, set the `sheetIndex` to target the appropriate sheet for the update.
+
+The following code example demonstrates how to dynamically update data using the `updateRange` method.
 
 ## See Also
 
