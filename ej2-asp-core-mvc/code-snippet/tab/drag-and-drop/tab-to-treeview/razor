@@ -12,11 +12,11 @@
 
 <div id='container'>
     @(Html.EJS().Tab("draggableTab")
-             .Items(new List<TabTabItem> {
-                new TabTabItem { Header = ViewBag.headerTextOne, Content = @contentOne },
-                new TabTabItem { Header = ViewBag.headerTextTwo, Content = @contentTwo },
-                new TabTabItem { Header = ViewBag.headerTextThree, Content = @contentThree },
-                new TabTabItem { Header = ViewBag.headerTextFour, Content = @contentFour }
+             .Items(new List<TabItem> {
+                new TabItem { Header = ViewBag.headerTextOne, Content = @contentOne },
+                new TabItem { Header = ViewBag.headerTextTwo, Content = @contentTwo },
+                new TabItem { Header = ViewBag.headerTextThree, Content = @contentThree },
+                new TabItem { Header = ViewBag.headerTextFour, Content = @contentFour }
              })
              .HeightAdjustMode(HeightStyles.Auto)
              .DragArea("#container")
