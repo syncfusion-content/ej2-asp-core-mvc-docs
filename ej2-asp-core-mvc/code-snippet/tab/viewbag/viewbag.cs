@@ -1,9 +1,9 @@
 ﻿public ActionResult Index()
 {
-    List<TabTabItem> tabItems = new List<TabTabItem>();
-    tabItems.Add(new TabTabItem { Header = new TabHeader { Text = "Chart" }, Content = "#Content1" });
-    tabItems.Add(new TabTabItem { Header = new TabHeader { Text = "Grid" }, Content = "#Content2" });
-    tabItems.Add(new TabTabItem { Header = new TabHeader { Text = "Calender" }, Content = "#Content3" });
+    List<TabItem> tabItems = new List<TabItem>();
+    tabItems.Add(new TabItem { Header = new TabHeader { Text = "Chart" }, Content = "#Content1" });
+    tabItems.Add(new TabItem { Header = new TabHeader { Text = "Grid" }, Content = "#Content2" });
+    tabItems.Add(new TabItem { Header = new TabHeader { Text = "Calender" }, Content = "#Content3" });
     ViewBag.items = tabItems;
     //chart data
     List<ColumnChartData> chartData = new List<ColumnChartData>
