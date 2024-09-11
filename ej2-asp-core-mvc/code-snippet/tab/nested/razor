@@ -1,10 +1,10 @@
 @using Syncfusion.EJ2.Navigations;
 
 @(Html.EJS().Tab("ej2Tab")
-    .Items(new List<TabTabItem> {
-        new TabTabItem { Header = ViewBag.headerTextOne, Content = "<div id='usa_tab'></div>" },
-        new TabTabItem { Header = ViewBag.headerTextTwo, Content = "<div id='france_tab'></div>" },
-        new TabTabItem { Header = ViewBag.headerTextThree, Content = "<div id='australia_tab'></div>" }
+    .Items(new List<TabItem> {
+        new TabItem { Header = ViewBag.headerTextOne, Content = "<div id='usa_tab'></div>" },
+        new TabItem { Header = ViewBag.headerTextTwo, Content = "<div id='france_tab'></div>" },
+        new TabItem { Header = ViewBag.headerTextThree, Content = "<div id='australia_tab'></div>" }
     })
     .Selected("handleSelectEvent")
     .Created("handleCreatedEvent")
