@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Adding script references in ##Platform_Name## control | Syncfusion
-description: Learn here all about adding script references in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: Adding script references in ASP.NET Core Platform | Syncfusion
+description: Learn here all about adding script references support in Syncfusion Essential ASP.NET Core platform, it's elements and more.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Reference Scripts in ASP.NET Core Application
+# Add reference scripts in ASP.NET Core Application
 
 This section provides information about reference scripts from CDN and Custom resource generator (CRG) for Syncfusion ASP.NET Core controls.
 
