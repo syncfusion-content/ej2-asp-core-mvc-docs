@@ -4,7 +4,7 @@
 @{
     var dataManager = new DataManager() { 
         Url = "https://localhost:44360/api/",
-        Adaptor = "ODataAdaptor",
+        Adaptor = "ODataV4Adaptor",
         CrossDomain = true 
     };
 }
