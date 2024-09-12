@@ -92,7 +92,7 @@ Now, add the Syncfusion ASP.NET Core AI AssistView tag helper in `~/Pages/Index.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/ai-assist/getting-started/tagHelper %}
+{% include code-snippet/ai-assistview/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 

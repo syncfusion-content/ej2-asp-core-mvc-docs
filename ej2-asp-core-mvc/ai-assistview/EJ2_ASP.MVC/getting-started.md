@@ -91,10 +91,10 @@ Now, add the Syncfusion ASP.NET MVC AI AssistView control in `~/Views/Home/Index
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/ai-assist/getting-started/razor %}
+{% include code-snippet/ai-assistview/getting-started/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/ai-assist/getting-started/gettingstarted.cs %}
+{% include code-snippet/ai-assistview/getting-started/gettingstarted.cs %}
 {% endhighlight %}
 {% endtabs %}
 
