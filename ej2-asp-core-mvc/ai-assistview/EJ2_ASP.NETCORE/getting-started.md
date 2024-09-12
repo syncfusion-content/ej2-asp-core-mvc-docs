@@ -99,3 +99,15 @@ Now, add the Syncfusion ASP.NET Core AI AssistView tag helper in `~/Pages/Index.
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core AI AssistView control will be rendered in the default web browser.
 
 ![ASP.NET Core AI AssistView Control](images/ai-assistview-component.png)
+
+## Configure suggestions and responses
+
+You can use the `promptSuggestions` property and the `promptRequest` event to add matching responses for prompts, or the default responses will be displayed.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/defaultprompts/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core AI AssistView default prompt](images/default-prompt.png)

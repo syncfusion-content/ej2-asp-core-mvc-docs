@@ -101,3 +101,18 @@ Now, add the Syncfusion ASP.NET MVC AI AssistView control in `~/Views/Home/Index
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC AI AssistView control will be rendered in the default web browser.
 
 ![ASP.NET MVC AI AssistView Control](images/ai-assistview-component.png)
+
+## Configure suggestions and responses
+
+You can use the `promptSuggestions` property and the `promptRequest` event to add matching responses for prompts, or the default responses will be displayed.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/defaultprompts/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/ai-assistview/defaultprompts/defaultprompt.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC AI AssistView default prompt](images/default-prompt.png)
