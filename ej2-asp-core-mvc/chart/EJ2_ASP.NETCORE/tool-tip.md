@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tool Tip in ##Platform_Name## Chart Component
-description: Learn here all about Tool Tip in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## Chart Component | Syncfusion
+description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tool Tip
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip
+# Tooltip in Chart
 
 <!-- markdownlint-disable MD036 -->
 
