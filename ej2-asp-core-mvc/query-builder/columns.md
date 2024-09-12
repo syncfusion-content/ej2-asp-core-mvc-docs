@@ -60,8 +60,11 @@ The available operators and its supported data types are:
 | Operators | Description | Supported Types |
 | ------------ | ----------------------- | ------------------ |
 | startswith  | Checks whether the value begins with the specified value. | String |
+| notstartswith  | Checks whether the value does not begin with the specified prefix. | String |
 | endswith  | Checks whether the value ends with the specified value. | String |
+| notendswith  | Checks whether the value does not end with the specified value. | String |
 | contains | Checks whether the value contains the specified value. | String |
+| notcontains | Checks whether the value does not include the specified value. | String |
 | equal | Checks whether the value is equal to the specified value. | String|Number/Date/Boolean |
 | notequal | Checks for values not equal to the specified value. | String/Number| Date| Boolean |
 | greaterthan | Checks whether the value is greater than the specified value. | Date/Number |
