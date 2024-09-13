@@ -1,14 +1,7 @@
 <div class="e-bigger">
 <ejs-grid id="Grid" dataSource="ViewBag.DataSource" enableAdaptiveUI="true" adaptiveUIMode="Mobile" allowPaging="true" allowFiltering="true" showColumnChooser='true'
-allowSorting="true" allowGrouping="true" allowResizing="true" allowReordering="true" allowExcelExporting="true" allowPdfExporting="true" toolbarClick="toolbarClick"
+allowSorting="true" allowGrouping="true" allowExcelExporting="true" allowPdfExporting="true" toolbarClick="toolbarClick"
 toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search", "ColumnChooser", "ExcelExport", "PdfExport" })">
-    <e-grid-aggregates>
-        <e-grid-aggregate>
-            <e-aggregate-columns>
-                <e-aggregate-column  field="Freight" type="Sum" format="C2" footerTemplate="Sum:${Sum}"></e-aggregate-column>                        
-            </e-aggregate-columns>
-        </e-grid-aggregate>
-    </e-grid-aggregates>
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
     <e-grid-filterSettings type="Excel"></e-grid-filterSettings>    
     <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings> 
