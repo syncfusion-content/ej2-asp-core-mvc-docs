@@ -21,10 +21,10 @@ When we enable the [enableAdaptiveUI](https://help.syncfusion.com/cr/aspnetcore-
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/adaptive/tagHelper %}
+{% include code-snippet/grid/adaptive/adaptive-dialog/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/grid/adaptive/default.cs %}
+{% include code-snippet/grid/adaptive/adaptive-dialog/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,10 +32,10 @@ When we enable the [enableAdaptiveUI](https://help.syncfusion.com/cr/aspnetcore-
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/adaptive/razor %}
+{% include code-snippet/grid/adaptive/adaptive-dialog/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/grid/adaptive/default.cs %}
+{% include code-snippet/grid/adaptive/adaptive-dialog/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -93,3 +93,18 @@ A snapshot of the adaptive grid displaying enabled paging along with a pager dro
 ![AdaptivePagerDropdown](../images/PagerDropdown_Adaptive.gif)
 
 > The Column Menu feature, which includes grouping, sorting, autofit, filter, and column chooser, is exclusively supported for the Grid in **Horizontal** [`rowRenderingMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowRenderingMode).
+
+## Rendering an adaptive layout for smaller screens alone
+
+By default, adaptive UI layout is rendered in both mobile devices and desktop mode too while setting the [enableAdaptiveUI](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableAdaptiveUI) property as **true**. Now the DataGrid component has an option to render an adaptive layout only for mobile screen sizes. This can be achieved by specifying the `AdaptiveUIMode` property value as `Mobile`. The default value of the `AdaptiveUIMode` property is "Both".
+
+> The [rowRenderingMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowRenderingMode) property is rendered on the adaptive layout based on the `AdaptiveUIMode` property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/adaptive/small-screen-adaptive/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Html.cs" %}
+{% include code-snippet/grid/adaptive/small-screen-adaptive/default.cs %}
+{% endhighlight %}
+{% endtabs %}

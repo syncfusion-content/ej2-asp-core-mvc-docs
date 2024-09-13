@@ -1,0 +1,25 @@
+<div class="e-bigger">
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).EnableAdaptiveUI(true).AdaptiveUIMode(Syncfusion.EJ2.Grids.AdaptiveMode.Mobile).AllowPaging(true).AllowFiltering(true).AllowSorting(true).AllowReordering(true).AllowResizing(true).AllowGrouping(true).ShowColumnChooser(true).AllowPdfExport().AllowExcelExport().ToolbarClick("toolbarClick").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("180").IsPrimaryKey(true).ValidationRules(new { required = true, number = true }).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("180").ValidationRules(new { required = true}).Add();
+    col.Field("Freight").HeaderText("Freight").Width("180").Format("C2").EditType("numericedit").ValidationRules(new { required = true }).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right)..Format(new { type = "datetime", format: 'M/d/y hh:mm a' }).EditType("datepickeredit").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("140").EditType("dropdownedit").Add();
+}).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel); }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog); }).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search", "ColumnChooser", "ExcelExport", "PdfExport" }).Aggregates(agg=> { agg.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Type = "Sum", FooterTemplate = "Sum: ${Sum}" } }).Add(); }).Render()
+</div>
+
+<script>
+function toolbarClick(args) {
+    var gridObj = document.getElementById("Grid").ej2_instances[0];
+    if (args.item.id === 'Grid_pdfexport') {
+        gridObj.pdfExport();
+    }
+    if (args.item.id === 'Grid_excelexport') {
+        gridObj.excelExport();
+    }
+    if (args.item.id === 'Grid_csvexport') {
+        gridObj.csvExport();
+    }
+}
+</script>    
