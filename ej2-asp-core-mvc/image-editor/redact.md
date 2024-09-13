@@ -80,4 +80,4 @@ Here's an example demonstrating how to draw, select, delete, update, and get red
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-resize.png)
+![ImageEditor Sample](images/image-editor-redact.png)
