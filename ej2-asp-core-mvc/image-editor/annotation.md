@@ -326,7 +326,7 @@ The Image Editor control provides the ability to add shape annotations to an ima
 
 The `drawRectangle` method is used to insert a rectangle to the Image Editor control. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context.
 
-The `drawRectangle` method in the Image Editor control takes seven parameters to define the properties of the rectangle annotation: 
+The `drawRectangle` method in the Image Editor control takes ten parameters to define the properties of the rectangle annotation: 
 
 * x: Specifies the x-coordinate of the top-left corner of the rectangle. 
 
