@@ -49,7 +49,7 @@ The template expression should be provided inside the ${...} interpolation synta
 {% endtabs %}
 {% endif %}
 
-![##Platform_Name## DropDown Tree with ItemTemplate](./images/item-template.PNG)
+![DropDown Tree with ItemTemplate](./images/item-template.PNG)
 
 ## Value template
 
@@ -87,7 +87,7 @@ The template expression should be provided inside the ${...} interpolation synta
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-![##Platform_Name## DropDown Tree with ViewTemplate](./images/value-template.PNG)
+![DropDown Tree with ValueTemplate](./images/value-template.PNG)
 
 ## Header template
 
