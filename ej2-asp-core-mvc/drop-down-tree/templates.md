@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Drop Down Tree Component
+title: Templates in ##Platform_Name## Syncfusion Drop Down Tree Component
 description: Learn here all about templates in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Templates
