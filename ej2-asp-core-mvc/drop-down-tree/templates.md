@@ -51,6 +51,44 @@ The template expression should be provided inside the ${...} interpolation synta
 
 ![##Platform_Name## DropDown Tree with ItemTemplate](./images/item-template.PNG)
 
+## Value template
+
+The currently selected value that is displayed by default on the DropDownTree input element can be customized using the `valueTemplate` property.
+
+In the following sample, the selected value is displayed as a combined text of both `Name` and `Job` in the DropDownTree input, which is separated by a hyphen.
+
+The template expression should be provided inside the ${...} interpolation syntax.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ValueTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/valueTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/DropDownTreeTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ValueTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/valueTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/DropDownTreeTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+![##Platform_Name## DropDown Tree with ViewTemplate](./images/value-template.PNG)
+
 ## Header template
 
 The header element is shown statically at the top of the popup list items within the Dropdown Tree. A custom element can be placed as a header element using the `headerTemplate` property.
