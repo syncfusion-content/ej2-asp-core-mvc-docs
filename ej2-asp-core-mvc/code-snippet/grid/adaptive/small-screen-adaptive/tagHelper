@@ -31,8 +31,5 @@ function toolbarClick(args) {
     if (args.item.id === 'Grid_excelexport') {
         gridObj.excelExport();
     }
-    if (args.item.id === 'Grid_csvexport') {
-        gridObj.csvExport();
-    }
 }
 </script>            
