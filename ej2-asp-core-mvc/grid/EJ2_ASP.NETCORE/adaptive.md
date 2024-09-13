@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adaptive in ##Platform_Name## Grid Component
+title: Adaptive in ##Platform_Name## Grid Component | Syncfusion
 description: Learn here all about Adaptive in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Adaptive
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Adaptive View
+# Adaptive in ##Platform_Name## Grid component
 
 The Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, column chooser, column menu(supports only when the `rowRenderingMode` as Horizontal) and edit dialogs adaptively and have an option to render the grid row elements in the vertical direction.
 
@@ -68,8 +68,6 @@ The grid will render the row elements in vertical order while setting the [`rowR
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> * [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableAdaptiveUI) property must be enabled for vertical row rendering.
 
