@@ -22,7 +22,7 @@ The Localization library allows you to localize static text content of the `noRe
 
 To load translation object to your application, use load function of the **L10n** class.
 
-In the following sample, French culture is set to the AutoComplete and no data is loaded. Hence, the [noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~NoRecordsTemplate.html) property displays its text in French culture initially and if the sample is run offline, the [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~ActionFailureTemplate.html) property displays its text appropriately.
+In the following sample, French culture is set to the AutoComplete and no data is loaded. Hence, the [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_NoRecordsTemplate) property displays its text in French culture initially and if the sample is run offline, the [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_ActionFailureTemplate) property displays its text appropriately.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,5 +48,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG
 
 ## See also
 
-* [Accessibility](./accessibility/)
-* [How to bind the data to the autocomplete](./data-binding/)
+* [Accessibility](./accessibility)
+* [How to bind the data to the autocomplete](./data-binding)
