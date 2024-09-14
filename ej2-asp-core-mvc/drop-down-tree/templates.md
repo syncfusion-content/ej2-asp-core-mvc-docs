@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Drop Down Tree Component
+title: Templates in ##Platform_Name## Syncfusion Drop Down Tree Component
 description: Learn here all about templates in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Templates
@@ -49,7 +49,45 @@ The template expression should be provided inside the ${...} interpolation synta
 {% endtabs %}
 {% endif %}
 
-![##Platform_Name## DropDown Tree with ItemTemplate](./images/item-template.PNG)
+![DropDown Tree with ItemTemplate](./images/item-template.PNG)
+
+## Value template
+
+The currently selected value that is displayed by default on the DropDownTree input element can be customized using the `valueTemplate` property.
+
+In the following sample, the selected value is displayed as a combined text of both `Name` and `Job` in the DropDownTree input, which is separated by a hyphen.
+
+The template expression should be provided inside the ${...} interpolation syntax.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ValueTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/valueTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/DropDownTreeTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ValueTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/valueTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/DropDownTreeTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+![DropDown Tree with ValueTemplate](./images/value-template.PNG)
 
 ## Header template
 
