@@ -1,0 +1,54 @@
+@Html.EJS().Spreadsheet("spreadsheet").ActionBegin("actionBegin").Sheets((sheet) =>
+{
+    sheet.Ranges((ranges) =>
+    {
+        ranges.DataSource(@ViewBag.DefaultData).Add();
+    }).Add();
+}).Render()
+
+<script>
+    function generateCellCollection(range) {
+        var spreadsheet = document.getElementById("spreadsheet").ej2_instances[0];
+        var collection = [];
+        // Split the range string into start and end cell references.
+        var [startCell, endCell] = range.split(':');
+        // Get the name of the active sheet.
+        var activeSheetName = spreadsheet.getActiveSheet().name;
+        // Extract column and row numbers from start and end cell references.
+        var [startCol, startRow] = startCell.match(/[A-Z]+|\d+/g) || [];
+        var [endCol, endRow] = endCell.match(/[A-Z]+|\d+/g) || [];
+        // Calculate ASCII codes for start and end columns.
+        var colRange = [startCol.charCodeAt(0), endCol.charCodeAt(0)];
+        // Parse start and end row numbers.
+        var rowRange = [parseInt(startRow), parseInt(endRow)];
+        // Iterate over columns and rows within the specified range.
+        for (var col = colRange[0]; col <= colRange[1]; col++) {
+            for (var row = rowRange[0]; row <= rowRange[1]; row++) {
+                // Push each cell reference into the collection array
+                collection.push(`${activeSheetName}!${String.fromCharCode(col)}${row}`);
+            }
+        }
+        // Return the array of cell references.
+        return collection;
+    }
+    function actionBegin(args) {
+        var spreadsheet = document.getElementById("spreadsheet").ej2_instances[0];
+        //Check the action is beforeReplaceAll.
+        if (args.action === 'beforeReplaceAll') {
+            //Check the mode is Sheet.
+            if (args.args.eventArgs.mode === 'Sheet') {
+                //Get the active sheet's selected range.
+                var selectedRange = spreadsheet.getActiveSheet().selectedRange;
+                //Convert the selected range into cell collection.
+                var selectedRangeCollection = generateCellCollection(selectedRange);
+                var replaceAllCollection = args.args.eventArgs.addressCollection;
+                //Check the addressCollection of replaceAll action contains the cells in the selected range and update in newCollection.
+                var newCollection = selectedRangeCollection.filter(item => replaceAllCollection.indexOf(item) !== -1);
+                if (newCollection.length > 0) {
+                    //Assign the newly created cell collection to the addressCollection of replaceAll action.
+                    args.args.eventArgs.addressCollection = newCollection;
+                }
+            }
+        }
+    }
+</script>
