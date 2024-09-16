@@ -6,11 +6,10 @@
         .Name("Product X")
         .Border(br => br.Width(0.5).Color("#00bdae"))
         .Animation(an => an.Enable(false))
-        .DataSource("series1")
         .Add();
 }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).ZoomFactor(0.2).ZoomPosition(0.6)
  ).ZoomSettings(z => z.EnableSelectionZooming(true).EnablePan(true).EnableAnimation(true)
- ).Title("Sales History of Product X").LegendSettings(leg => leg.Visible(false)).Render()
+ ).Title("Sales History of Product X").LegendSettings(leg => leg.Visible(false)).Load("load").Render()
 
 <script>
     var series1 = [];
@@ -26,5 +25,9 @@
         }
         point1 = { x: new Date(1950, i + 2, i), y: value.toFixed(1) };
         series1.push(point1);
+    }
+
+    function load(args) {
+        args.chart.series[0].dataSource = series1;
     }
 </script>

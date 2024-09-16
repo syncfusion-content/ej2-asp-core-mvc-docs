@@ -1,9 +1,9 @@
-<ejs-chart id="container" title="Sales History of Product X">
+<ejs-chart id="container" load="load" title="Sales History of Product X">
     <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime" zoomFactor="0.2" zoomPosition="0.6"></e-chart-primaryxaxis>
     <e-chart-legendsettings visible="false"></e-chart-legendsettings>
     <e-chart-zoomsettings enableSelectionZooming="true" enablePan="true" enableAnimation="true"></e-chart-zoomsettings>
     <e-series-collection>
-        <e-series dataSource="series1" xName="x" yName="y" name="Product X" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Area">
+        <e-series xName="x" yName="y" name="Product X" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Area">
             <e-series-border width="0.5" color="#00bdae"></e-series-border>
             <e-series-animation enable="false"></e-series-animation>
         </e-series>
@@ -23,5 +23,9 @@
         }
         point1 = { x: new Date(1950, i + 2, i), y: value.toFixed(1) };
         series1.push(point1);
+    }
+
+    function load(args) {
+        args.chart.series[0].dataSource = series1;
     }
 </script>
