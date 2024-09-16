@@ -83,10 +83,10 @@ The [`NoRisers`] feature allows the step area series to appear as a continuous f
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/area-charts/steparea/no-risers/tagHelper %}
+{% include code-snippet/chart/series/area-charts/stepareaseries/no-risers/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="No-risers.cs" %}
-{% include code-snippet/chart/series/area-charts/steparea/no-risers/no-risers.cs %}
+{% include code-snippet/chart/series/area-charts/stepareaseries/no-risers/no-risers.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,10 +94,10 @@ The [`NoRisers`] feature allows the step area series to appear as a continuous f
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/area-charts/steparea/no-risers/razor %}
+{% include code-snippet/chart/series/area-charts/stepareaseries/no-risers/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="No-risers.cs" %}
-{% include code-snippet/chart/series/area-charts/steparea/no-risers/no-risers.cs %}
+{% include code-snippet/chart/series/area-charts/stepareaseries/no-risers/no-risers.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

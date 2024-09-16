@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Zooming and Panning
+# Zooming and Panning in ##Platform_Name## Chart Component
 
 ## Enable zooming
 
