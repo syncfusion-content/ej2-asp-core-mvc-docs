@@ -252,7 +252,7 @@ public class PieChartData
 
 
 
-## Border Radius
+## Border radius
 
 You can create rounded corners for each slice by using the [BorderRadius] option, which gives the chart a modern and polished appearance.
 

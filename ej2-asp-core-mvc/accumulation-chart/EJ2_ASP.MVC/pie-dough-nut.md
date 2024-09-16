@@ -214,7 +214,7 @@ The fill color and the text in the data source can be mapped to the chart using 
 
 
 
-## Border Radius
+## Border radius
 
 You can create rounded corners for each slice by using the [BorderRadius] option, which gives the chart a modern and polished appearance.
 
