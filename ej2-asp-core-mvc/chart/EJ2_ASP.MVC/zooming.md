@@ -170,6 +170,35 @@ Using the [`EnableScrollbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncf
 
 
 
+## Enable animation
+
+Enable the [EnableAnimation] property to experience smooth transitions when zooming in on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/zoom/animation/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Animation.cs" %}
+{% include code-snippet/chart/user-interaction/zoom/animation/animation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/zoom/animation/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Animation.cs" %}
+{% include code-snippet/chart/user-interaction/zoom/animation/animation.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Auto interval on zooming
 
 By using [`EnableAutoIntervalOnZooming`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html) property, the axis interval will get calculated automatically with respect to the zoomed range.

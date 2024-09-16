@@ -1,0 +1,30 @@
+@Html.EJS().Chart("container").Series(series =>
+{
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Area)
+        .XName("x")
+        .YName("y")
+        .Name("Product X")
+        .Border(br => br.Width(0.5).Color("#00bdae"))
+        .Animation(an => an.Enable(false))
+        .DataSource("series1")
+        .Add();
+}).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).ZoomFactor(0.2).ZoomPosition(0.6)
+ ).ZoomSettings(z => z.EnableSelectionZooming(true).EnablePan(true).EnableAnimation(true)
+ ).Title("Sales History of Product X").LegendSettings(leg => leg.Visible(false)).Render()
+
+<script>
+    var series1 = [];
+    var point1;
+    var value = 40;
+    var i;
+    for (i = 1; i < 500; i++) {
+        if (Math.random() > .5) {
+            value += Math.random();
+        }
+        else {
+            value -= Math.random();
+        }
+        point1 = { x: new Date(1950, i + 2, i), y: value.toFixed(1) };
+        series1.push(point1);
+    }
+</script>

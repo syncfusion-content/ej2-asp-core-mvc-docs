@@ -252,6 +252,35 @@ public class PieChartData
 
 
 
+## Border Radius
+
+You can create rounded corners for each slice by using the [borderRadius] option, which gives the chart a modern and polished appearance.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/border-radius/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Border-radius.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/border-radius/border-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/border-radius/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Border-radius.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/border-radius/border-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Customization
 
 Individual points can be customized using the `pointRender` event.
@@ -280,6 +309,35 @@ public class PieChartData
 {% endhighlight %}
 {% highlight c# tabtitle="Custom.cs" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/custom/custom.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Patterns
+
+You can apply different patterns to the pie slices using the [`applyPattern`] property in the series and the [`pointRender`] event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/patterns/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Patterns.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/patterns/patterns.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/patterns/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Patterns.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/patterns/patterns.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
