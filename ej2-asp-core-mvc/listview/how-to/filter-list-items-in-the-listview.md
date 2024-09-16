@@ -10,7 +10,7 @@ documentation: ug
 
 # Filter List Items in the ListView
 
-The filtered data can be displayed in the ListView component depending upon on user inputs using the [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started/). Refer to the following steps to render the ListView with filtered data.
+The filtered data can be displayed in the ListView component depending upon on user inputs using the [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started). Refer to the following steps to render the ListView with filtered data.
 
 * Render a textbox to get input for filtering data.
 
