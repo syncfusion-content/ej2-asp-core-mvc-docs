@@ -15,7 +15,7 @@ The PDF export provides an option to export multiple grids to the same or differ
 
 ## Same page
 
-PDF exporting provides support for exporting multiple grids on the same page. To export the grids on the same page, define `multipleExport.type` as **AppendToPage** in `exportProperties`. It also has an option to provide blank space between the grids. This blank space can be defined by using `multipleExport.blankSpace` property.
+PDF exporting provides support for exporting multiple grids on the same page. To export the grids on the same page, define `multipleExport.type` as **AppendToPage** in `exportProperties`. It also has an option to provide blank space between the grids. This blank space can be defined by using **multipleExport.blankSpace** property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
