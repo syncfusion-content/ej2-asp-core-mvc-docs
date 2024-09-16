@@ -153,3 +153,6 @@ The CheckBox indeterminate state can be set through [Indeterminate](https://help
 ![ASP.NET MVC CheckBox with Different States](images/checkbox-state.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/CheckBox/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC Checkbox example](https://ej2.syncfusion.com/aspnetmvc/Button/CheckBox#/material) that shows you how to render and configure the Checkbox in ASP.NET MVC.
+
