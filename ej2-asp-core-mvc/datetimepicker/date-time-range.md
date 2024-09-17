@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# DateTime Range     
+# DateTime Range Restriction
 
 ## DateTime Restriction
 
