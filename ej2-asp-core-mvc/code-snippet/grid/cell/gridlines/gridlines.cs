@@ -1,6 +1,7 @@
 public IActionResult Index()
 {
-    var Order = OrderDetails.GetAllRecords();
+    var Order = InventoryDetails.GetAllRecords();
     ViewBag.DataSource = Order;
+    ViewBag.dropdownData = new string[] { "Default", "Both", "Horizontal", "Vertical", "None" };
     return View();
-} 
+}

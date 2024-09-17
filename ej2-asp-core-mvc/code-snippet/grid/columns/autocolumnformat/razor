@@ -1,17 +1,19 @@
-@Html.EJS().Grid("Auto").DataSource((IEnumerable<object>)ViewBag.dataSource).DataBound("dataBound").Render()
-
+@Html.EJS().Grid("Auto").DataSource((IEnumerable<object>)ViewBag.DataSource).DataBound("dataBound").Render()
 <script>
     function dataBound() {
-        for (var i = 0; i < this.columns.length; i++) {
-            this.columns[0].width = 120;
-            if (this.columns[i].field === "OrderDate") {
-                this.columns[i].type = "date";
+        const grid = document.getElementById('Auto').ej2_instances[0];
+        for (const cols of grid.columns) {
+            if (cols.field === 'OrderID') {
+                cols.width = 120;
             }
-            if (this.columns[i].type === "date") {
-                this.columns[i].format = { type: "date", format: "dd/MM/yyyy" };
+            if (cols.field === 'OrderDate') {
+                cols.type = 'date';
+                cols.format = 'yMd';
             }
-            this.columns[3].format = "P2";
+            if (cols.field === 'Freight') {
+                cols.format = 'P2';
+            }
         }
-        this.refreshColumns();
+        grid.refreshColumns();
     }
 </script>

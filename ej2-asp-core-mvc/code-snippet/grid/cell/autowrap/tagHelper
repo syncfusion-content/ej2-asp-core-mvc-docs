@@ -1,10 +1,22 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" gridLines="Default" height="315" allowTextWrap="true">
-    <e-grid-textwrapsettings wrapMode="Content"></e-grid-textwrapsettings>
+<div style="display: flex">
+    <label style="padding: 10px 10px 26px 0"> Change the wrapmode of auto wrap feature: </label>
+    <span style="height:fit-content">
+<ejs-dropdownlist id="dropdown" dataSource="@ViewBag.dropdownData" change="Change"></ejs-dropdownlist>
+</span>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowTextWrap=true>
+<e-grid-textwrapsettings wrapMode="Content"></e-grid-textwrapsettings>
     <e-grid-columns>
-        <e-grid-column field="RoolNo" headerText="Rool No"  textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="Name" headerText="Name of the inventor"  width="100"></e-grid-column>                
-        <e-grid-column field="patentfamilies" headerText="No of patentfamilies"  width="130"></e-grid-column>
-        <e-grid-column field="Country" headerText="Country" width="130"></e-grid-column>
-        <e-grid-column field="mainfields" headerText="Main fields of Invention" width="150"></e-grid-column>
+        <e-grid-column field="Inventor" headerText="Inventor Name" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="NumberOfPatentFamilies" headerText="Number of Patent families" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Country" headerText="Country" width="150"></e-grid-column>
+        <e-grid-column field="Active" headerText="Active" textAlign="Right" width="150"></e-grid-column>
     </e-grid-columns>
- </ejs-grid>
+</ejs-grid>
+
+<script type="text/javascript">
+    function Change(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.textWrapSettings.wrapMode = args.value;
+    }
+</script>

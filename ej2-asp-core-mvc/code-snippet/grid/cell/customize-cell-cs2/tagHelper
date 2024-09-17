@@ -1,0 +1,19 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+    <e-grid-selectionsettings mode=Cell type="Multiple"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' width="100"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="100"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+@section Scripts {
+<style>
+    .e-grid td.e-cellselectionbackground {
+        background: #9ac5ee;
+        font-style: italic;
+    }
+</style>
+}

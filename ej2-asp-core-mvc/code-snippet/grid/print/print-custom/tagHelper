@@ -1,0 +1,55 @@
+<div style="padding-bottom:20px">
+<ejs-button id="print" cssClass="e-danger" content="Print"></ejs-button>
+</div>
+<!-- Grid Component -->
+<ejs-grid id="HierarchyPrint" dataSource="@ViewBag.DataSource" allowPaging="true" printMode="CurrentPage"
+   dataBound="dataBound" actionComplete="actionComplete" beforePrint="beforePrint">
+    <e-grid-pagesettings pageSize="10"></e-grid-pagesettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="130" format="yMd" textAlign="Right"></e-grid-column>
+        <e-grid-column field="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<!-- Chart Component -->
+<h4>Chart</h4>
+<div>
+    <ejs-chart id="chart" title="Order Data" width="60%">
+        <e-chart-primaryxaxis valueType="DateTime" labelFormat="MMMd"></e-chart-primaryxaxis>
+        <e-chart-primaryyaxis labelFormat='{value}'></e-chart-primaryyaxis>
+        <e-series-collection>
+            <e-series type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line" xName="OrderDate" yName="Freight" width="1" columnWidth="0.4">
+                <e-series-marker visible="true"></e-series-marker>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>
+</div>
+
+<script>
+    function dataBound() {
+        var chart = document.getElementById('chart').ej2_instances[0];
+        chart.series[0].marker = { visible: true };
+        chart.series[0].xName = 'OrderDate';
+        chart.series[0].yName = 'Freight';
+        chart.series[0].dataSource = document.getElementById('HierarchyPrint').ej2_instances[0].getCurrentViewRecords();
+    }
+    document.getElementById('print').onclick = function () {
+        var grid = document.getElementById('HierarchyPrint').ej2_instances[0];
+        grid.print();
+    }
+
+    function beforePrint(args) {
+        var chartContainer = document.getElementById('chart').ej2_instances[0].element;
+        var clonedChartContainer = chartContainer.cloneNode(true);
+        args.element.appendChild(clonedChartContainer);
+    }
+
+    function actionComplete(args) {
+        if (args.requestType === 'paging') {
+            var chart = document.getElementById('chart').ej2_instances[0];
+
+           chart.series[0].dataSource = document.getElementById('HierarchyPrint').ej2_instances[0].getCurrentViewRecords();
+           chart.refresh();
+        }
+    }
+</script>

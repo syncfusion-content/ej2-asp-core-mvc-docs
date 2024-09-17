@@ -1,0 +1,12 @@
+<ejs-chart id="container" title="England - Run Rate">
+    <e-chart-primaryxaxis title="Overs">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Runs">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="X" yName="Y" noRisers="true" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepArea">
+        </e-series>
+    </e-series-collection>
+    <e-chart-tooltipsettings enable="true">
+    </e-chart-tooltipsettings>
+</ejs-chart>

@@ -25,7 +25,7 @@ By default, there are 5 types of repeat options available in recurrence editor s
 * Monthly
 * Yearly
 
-It is possible to customize the recurrence editor to display only the specific repeat options such as `Daily` and `Weekly` options alone by setting the appropriate `frequencies` option.
+It is possible to customize the recurrence editor to display only the specific repeat options such as `Daily` and `Weekly` options alone by setting the appropriate [`frequencies`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.RecurrenceEditor.html#Syncfusion_EJ2_Schedule_RecurrenceEditor_Frequencies) option.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

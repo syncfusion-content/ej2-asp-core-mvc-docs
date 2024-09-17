@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Schedule Component
+title: Data Binding in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data-binding
+# Data-binding in ##Platform_Name## Schedule Component
 
 The Scheduler uses `dataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property can be assigned either with the instance of `dataManager` or JavaScript object array collection. It supports two kinds of data binding method:
 
@@ -47,7 +47,7 @@ To bind local JSON data to the Scheduler, you can simply assign a JavaScript obj
 
 N> By default, `dataManager` uses `JsonAdaptor` for local data-binding.
 
-You can also bind different field names to the default event fields as well as include additional custom fields to the event object collection which can be referred [here](./appointments/#binding-different-field-names).
+> You can also bind different field names to the default event fields as well as include additional `custom fields` to the event object collection which can be referred [here](./appointments/#binding-different-field-names).
 
 ## Binding remote data
 
@@ -144,7 +144,7 @@ It is possible to create your own custom adaptor by extending the built-in avail
 
 ## Loading data via AJAX post
 
-You can bind the event data through external ajax request and assign it to the `dataSource` property of Scheduler. In the following code example, we have retrieved the data from server with the help of ajax request and assigned the resultant data to the `dataSource` property of Scheduler within the `onSuccess` event of Ajax.
+You can bind the event data through external ajax request and assign it to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property of Scheduler. In the following code example, we have retrieved the data from server with the help of ajax request and assigned the resultant data to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property of Scheduler within the `onSuccess` event of Ajax.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -233,7 +233,7 @@ During the time of Scheduler interacting with server, there are chances that som
 
 
 
-The argument passed to the `actionFailure` event contains the error details returned from the server.
+The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event contains the error details returned from the server.
 
 ## Scheduler CRUD actions
 
@@ -366,7 +366,7 @@ N> You can find the working sample [here](https://github.com/SyncfusionExamples/
 
 ## Configuring Scheduler with Google API service
 
-We have assigned our custom created Google Calendar url to the DataManager and assigned the same to the Scheduler `dataSource`. Since the events data retrieved from the Google Calendar will be in its own object format, therefore it needs to be resolved manually within the Scheduler’s `dataBinding` event. Within this event, the event fields needs to be mapped properly and then assigned to the result.
+We have assigned our custom created Google Calendar url to the DataManager and assigned the same to the Scheduler [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html). Since the events data retrieved from the Google Calendar will be in its own object format, therefore it needs to be resolved manually within the Scheduler’s [`dataBinding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DataBinding) event. Within this event, the event fields needs to be mapped properly and then assigned to the result.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

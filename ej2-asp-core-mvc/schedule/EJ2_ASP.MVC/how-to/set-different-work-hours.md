@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set Different Work Hours in ##Platform_Name## Schedule Component
+title: Set Different Work Hours in ##Platform_Name## Schedule | Syncfusion
 description: Learn here all about Set Different Work Hours in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set Different Work Hours
@@ -10,7 +10,7 @@ documentation: ug
 
 # Set Different Working Hours on Different Days
 
-By default, the work hours of the Scheduler is highlighted based on the start and end values provided within the `WorkHours` property which remains same for all days. To highlight different work hours range for different days,`setWorkHours` method. You can pass date object/ multiple date objects collection as first argument and start and end time need to be added as work hours should be passed as second and third arguments respectively. In the following code example, on button click 11:00 AM to 08:00 PM of 15th and 17th February has been added in work hours.
+By default, the work hours of the Scheduler is highlighted based on the start and end values provided within the [`WorkHours`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_WorkHours) property which remains same for all days. To highlight different work hours range for different days,`setWorkHours` method. You can pass date object/ multiple date objects collection as first argument and start and end time need to be added as work hours should be passed as second and third arguments respectively. In the following code example, on button click 11:00 AM to 08:00 PM of 15th and 17th February has been added in work hours.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

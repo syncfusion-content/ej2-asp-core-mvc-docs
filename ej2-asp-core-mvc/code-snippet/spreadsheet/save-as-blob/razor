@@ -1,0 +1,22 @@
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Open").SaveUrl("Save").BeforeSave("beforeSave").SaveComplete("saveComplete").Sheets(sheet => {
+    sheet.Name("Price Details").Ranges(ranges => {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A1").Add();
+    }).Columns(column => {
+        column.Width(130).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+    }).Add();
+}).Render()
+
+<script>
+    function beforeSave(args) {
+        args.needBlobData = true; // To trigger the saveComplete event.
+        args.isFullPost = false; // Get the spreadsheet data as blob data in the saveComplete event.
+    }
+
+    function saveComplete(args) {
+        // To obtain the blob data
+        console.log('Spreadsheet BlobData : ', args.blobData);
+    }
+
+</script>

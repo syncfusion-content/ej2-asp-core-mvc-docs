@@ -20,11 +20,11 @@
 
 <div id='container'>
     @(Html.EJS().Tab("firstTab")
-             .Items(new List<TabTabItem> {
-                new TabTabItem { Header = ViewBag.headerTextOne, Content = @contentOne },
-                new TabTabItem { Header = ViewBag.headerTextTwo, Content = @contentTwo },
-                new TabTabItem { Header = ViewBag.headerTextThree, Content = @contentThree },
-                new TabTabItem { Header = ViewBag.headerTextFour, Content = @contentFour }
+             .Items(new List<TabItem> {
+                new TabItem { Header = ViewBag.headerTextOne, Content = @contentOne },
+                new TabItem { Header = ViewBag.headerTextTwo, Content = @contentTwo },
+                new TabItem { Header = ViewBag.headerTextThree, Content = @contentThree },
+                new TabItem { Header = ViewBag.headerTextFour, Content = @contentFour }
              })
              .HeightAdjustMode(HeightStyles.Auto)
              .DragArea("#container")
@@ -34,11 +34,11 @@
              .Render()
             )
     @(Html.EJS().Tab("secondTab")
-             .Items(new List<TabTabItem> {
-                new TabTabItem { Header = ViewBag.headerTextFive, Content = @contentFive },
-                new TabTabItem { Header = ViewBag.headerTextSix, Content = @contentSix },
-                new TabTabItem { Header = ViewBag.headerTextSeven, Content = @contentSeven },
-                new TabTabItem { Header = ViewBag.headerTextEight, Content = @contentEight }
+             .Items(new List<TabItem> {
+                new TabItem { Header = ViewBag.headerTextFive, Content = @contentFive },
+                new TabItem { Header = ViewBag.headerTextSix, Content = @contentSix },
+                new TabItem { Header = ViewBag.headerTextSeven, Content = @contentSeven },
+                new TabItem { Header = ViewBag.headerTextEight, Content = @contentEight }
              })
              .HeightAdjustMode(HeightStyles.Auto)
              .DragArea("#container")

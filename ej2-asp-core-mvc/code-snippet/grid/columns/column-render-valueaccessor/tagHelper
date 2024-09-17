@@ -1,0 +1,23 @@
+@{ 
+    var currencyFormatter = "currencyFormatterFn";
+    var concatenateFields = "concatenateFieldsFn";
+}
+
+<ejs-grid id="ValueAccessor" dataSource="@ViewBag.DataSource" height="350">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="100" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right"  width="120"  valueAccessor="currencyFormatter" ></e-grid-column>                               
+        <e-grid-column field="ShipCity" valueAccessor="concatenateFields" headerText="Ship City" width="150"></e-grid-column> 
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function currencyFormatterFn(field, data) {
+        return '€' + data['Freight']
+    }
+
+    function concatenateFieldsFn(field, data) {
+        return data['ShipCity'] + '-' + data['ShipRegion']; // Assuming concatenation of ShipCity and ShipCountry
+    }
+</script>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Form Filling in ##Platform_Name## Pdfviewer Component
+title: Form Filling in ##Platform_Name## Pdfviewer Component | Syncfusion
 description: Learn here all about Form Filling in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Form Filling
+# Form Filling in the ASP.NET MVC PDF Viewer component
 
 PDF Viewer component allows you to display the form fields available in the PDF document. By using this, you can edit and download the form fields.
 
@@ -23,7 +23,7 @@ The form fields displayed in the PDF Viewer are:
 * Signature Field
 * List box
 
-![FormFilling](../../pdfviewer/images/formfilling.png)
+![FormFilling](./images/formfilling.png)
 
 ## Disabling form fields
 
@@ -52,21 +52,21 @@ Signature can be added to the Signature field by using the following steps:
 
 * Click the Signature Field in the PDF document. The signature panel will appear.
 
-![SignatureField](../../pdfviewer/images/signaturefield.png)
+![SignatureField](./images/signaturefield.png)
 
 * Draw the signature in the signature panel.
 
-![SignaturePanel](../../pdfviewer/images/signature.png)
+![SignaturePanel](./images/signature.png)
 
 * Click the **CREATE** button, the drawn signature will be added in the signature field.
 
-![Signature](../../pdfviewer/images/sign.png)
+![Signature](./images/sign.png)
 
 ## Delete the signature inside the signature field
 
 You can also delete the signature in the signature field by using Delete Option in the annotation toolbar.
 
-![DeleteSign](../../pdfviewer/images/deletesign.png)
+![DeleteSign](./images/deletesign.png)
 
 ## Import and export form fields
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recurrence Editor in ##Platform_Name## Schedule Component
+title: Recurrence Editor in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Recurrence Editor in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Recurrence Editor
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Recurrence editor
+# Recurrence editor in ##Platform_Name## Schedule Component
 
 The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 
@@ -25,7 +25,7 @@ By default, there are 5 types of repeat options available in recurrence editor s
 * Monthly
 * Yearly
 
-It is possible to customize the recurrence editor to display only the specific repeat options such as `Daily` and `Weekly` options alone by setting the appropriate `frequencies` option.
+It is possible to customize the recurrence editor to display only the specific repeat options such as `Daily` and `Weekly` options alone by setting the appropriate [`frequencies`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.RecurrenceEditor.html#Syncfusion_EJ2_Schedule_RecurrenceEditor_Frequencies) option.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

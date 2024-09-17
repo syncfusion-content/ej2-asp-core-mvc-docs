@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Crud Actions in ##Platform_Name## Schedule Component
+title: Crud Actions in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Crud Actions in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Crud Actions
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CRUD Actions
+# CRUD Actions in ##Platform_Name## Schedule Component
 
 Events, a.k.a. Appointments, play an important role in Scheduler with which the users mostly interact. You can easily manipulate (add/edit/delete) the desired appointments as and when required either using the editor window or through the drag and resize action.
 
@@ -119,7 +119,7 @@ Additionally, the regex condition has been added to the Location field, so that 
 
 
 
-You can also dynamically prevent the creation of appointments on Scheduler. For example, say if you want to decline the creation of appointments on weekend days, you can check for its appropriate condition within the `actionBegin` event.
+You can also dynamically prevent the creation of appointments on Scheduler. For example, say if you want to decline the creation of appointments on weekend days, you can check for its appropriate condition within the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionBegin) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -190,11 +190,11 @@ The appointments can be edited and updated manually using the `saveEvent` method
 
 
 
-**Recurring event** - The following code example shows how to edit a single occurrence of a recurring event. In this case, the modified data should hold an additional field namely `recurrenceID` mapping to its parent recurring event's Id value. Also, this modified occurrence will be considered as a new event in the Scheduler dataSource, where it is linked with its parent event through the `recurrenceID` field value. The `saveEvent` method takes 2 arguments, first one accepting the modified event data object and second argument accepting either of the 2 text values - `EditOccurrence` or `EditSeries`.
+**Recurring event** - The following code example shows how to edit a single occurrence of a recurring event. In this case, the modified data should hold an additional field namely [`recurrenceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceID) mapping to its parent recurring event's Id value. Also, this modified occurrence will be considered as a new event in the Scheduler dataSource, where it is linked with its parent event through the [`recurrenceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceID) field value. The `saveEvent` method takes 2 arguments, first one accepting the modified event data object and second argument accepting either of the 2 text values - `EditOccurrence` or `EditSeries`.
 
 When the second argument is passed as `EditOccurrence`, which means that the passed event data is a single modified occurrence - whereas if the second argument is passed as `EditSeries`, it means that the modified data needs to be edited as a whole series and therefore no new event object will be maintained in the Scheduler dataSource.
 
-In case of modifying the single occurrence, it is also necessary to update the `recurrenceException` field of parent event altogether with the occurrence editing. To know more about how to set `recurrenceException` values, refer the [recurring events](./appointments/#adding-exceptions) topic.
+In case of modifying the single occurrence, it is also necessary to update the [`recurrenceException`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field of parent event altogether with the occurrence editing. To know more about how to set [`recurrenceException`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) values, refer the [recurring events](./appointments/#adding-exceptions) topic.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -260,9 +260,9 @@ The recurring appointments can be edited in either of the following two ways.
 
 **Editing single occurrence** - When you double click on a recurring event, a popup prompts you to choose either to edit the single event or entire series. From this, if you choose to select **EDIT EVENT** option, a single occurrence of the recurring appointment alone will be edited. The following process takes place while editing a single occurrence,
 
-* A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the `recurrenceID` field will be added to it, that holds the `id` value of the parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
+* A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the [`recurrenceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceID) field will be added to it, that holds the `id` value of the parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
 
-* The parent recurring event needs to be updated with appropriate `recurrenceException` field to hold the edited occurrence appointment's date collection.
+* The parent recurring event needs to be updated with appropriate [`recurrenceException`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field to hold the edited occurrence appointment's date collection.
 
 Therefore, when a single occurrence is edited from a recurring event, the batch action takes place by allowing both the `Add` and `Edit` action requests to take place together.
 
@@ -368,9 +368,9 @@ The recurring appointments can be edited from current and following events when 
 
 **Editing Following Events** - When you double click on a recurring event, a popup prompts you to choose either to edit the single event or Edit Following Events or entire series. From this, if you choose to select **EDIT FOLLOWING EVENTS** option, a current and following events of the recurring appointment will be edited. The following process takes place while editing a following events,
 
-* A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the `followingID` field will be added to it, that holds the `id` value of the immediate parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
+* A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the [`followingID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_FollowingID) field will be added to it, that holds the `id` value of the immediate parent recurring event. Also, a new [`Id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_Id) will be generated for this event in the dataSource.
 
-* The parent recurring event needs to be updated with appropriate `recurrenceRule` field to hold the modified occurrence appointment's end date.
+* The parent recurring event needs to be updated with appropriate [`recurrenceRule`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceRule) field to hold the modified occurrence appointment's end date.
 
 Therefore, when a following events are edited from a recurring event, the batch action takes place by allowing the `Add`, `Edit` and `Delete` action requests to take place together.
 
@@ -442,7 +442,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ### Restricting edit action based on specific criteria
 
-You can also dynamically prevent the editing of appointments on Scheduler. For example, say if you want to decline the updating of appointments on non-working hours, you can check for its appropriate condition within the `actionBegin` event.
+You can also dynamically prevent the editing of appointments on Scheduler. For example, say if you want to decline the updating of appointments on non-working hours, you can check for its appropriate condition within the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionBegin) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -579,7 +579,7 @@ The recurring events can be deleted in either of the following two ways.
 **Single occurrence** - When you attempt to delete the recurring events, a popup prompts you to choose either to delete the single event or entire series. From this, if you choose to select **DELETE EVENT** option, a single occurrence of the recurring appointment alone will be removed. The following process takes place while removing a single occurrence,
 
 * The selected occurrence will be deleted from the Scheduler user interface.
-* In code, the parent recurring event object will be updated with appropriate `recurrenceException` field, to hold the deleted occurrence appointment's date collection.
+* In code, the parent recurring event object will be updated with appropriate [`recurrenceException`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field, to hold the deleted occurrence appointment's date collection.
 
 Therefore, when a single occurrence is deleted from a recurring event, the `update` action takes place on the parent recurring event as shown in the following code example.
 
@@ -639,7 +639,7 @@ The recurring events can be deleted from current and following events only when 
 **Delete Following Events** - When you attempt to delete the recurring events, a popup prompts you to choose either to delete the single event or Following Events or entire series. From this, if you choose to select **FOLLOWING EVENT** option, a current and following events of the recurring appointment alone will be removed. The following process takes place while removing a single occurrence,
 
 * The selected occurrence and the following events in same series will be deleted from the Scheduler user interface.
-* In code, the parent recurring event object will be updated with appropriate `recurrenceRule` field, to update the end date of the recurring events.
+* In code, the parent recurring event object will be updated with appropriate [`recurrenceRule`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceRule) field, to update the end date of the recurring events.
 
 Therefore, when following events are deleted from a recurring event, the `remove` and `update` action takes place on the immediate parent recurring event as shown in the following code example.
 
