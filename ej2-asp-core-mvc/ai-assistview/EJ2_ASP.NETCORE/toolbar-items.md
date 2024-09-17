@@ -10,7 +10,7 @@ documentation: ug
 
 # Toolbar items in ##Platform_Name## AI AssistView control
 
-You can render the AI AssistView toolbar items by using the `items` property in the `toolbarSettings`, `responseToolbarSettings` & `promptToolbarSettings` properties.
+You can render the AI AssistView toolbar items by using the `items` property in the `e-aiassistview-toolbarsettings`, `e-aiassistview-responsetoolbarsettings` & `e-aiassistview-prompttoolbarsettings` tag helpers.
 
 ## Adding header toolbar items
 
@@ -130,7 +130,7 @@ For example, to enable tab key navigation for two Toolbar items, you can use the
 {% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
 
 <ejs-aiassistview id="aiAssistView">
-    <e-aiassistview-toolbarsettings items="@Model.ToolbarItems"></e-aiassistview-toolbarsettings>
+    <e-aiassistview-toolbarsettings items="ViewBag.ToolbarItems"></e-aiassistview-toolbarsettings>
 </ejs-aiassistview>
 ....
 
@@ -158,7 +158,7 @@ If you set the `tabIndex` value to 0 for all Toolbar items, tab key navigation w
 {% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
 
 <ejs-aiassistview id="aiAssistView">
-    <e-aiassistview-toolbarsettings items="@Model.ToolbarItems"></e-aiassistview-toolbarsettings>
+    <e-aiassistview-toolbarsettings items="ViewBag.ToolbarItems"></e-aiassistview-toolbarsettings>
 </ejs-aiassistview>
 ....
 
@@ -268,11 +268,11 @@ The `itemClicked` event is triggered when the response toolbar item is clicked.
 
 ## Adding custom toolbar items
 
-You can also add custom toolbar items in the AI AssistView by using the `toolbarSettings`, `responseToolbarSettings` & `promptToolbarSettings` properties.
+You can also add custom toolbar items in the AI AssistView by using the `e-aiassistview-toolbarsettings`, `e-aiassistview-responsetoolbarsettings` & `e-aiassistview-prompttoolbarsettings` tag helpers.
 
 ### Prompt
 
-You can use the `promptToolbarSettings` property to add custom items for the prompt toolbar in the AI AssistView.
+You can use the `e-aiassistview-prompttoolbarsettings` tag helper to add custom items for the prompt toolbar in the AI AssistView.
 
 > To know more about the items, please refer to the [items](./toolbar-items#items) section.
 
@@ -286,7 +286,7 @@ You can use the `promptToolbarSettings` property to add custom items for the pro
 
 ### Response
 
-You can use the `responseToolbarSettings` property to add custom response toolbar in the AI AssistView.
+You can use the `e-aiassistview-responsetoolbarsettings` tag helper to add custom response toolbar in the AI AssistView.
 
 > To know more about the items, please refer to the [items](./toolbar-items#items) section.
 
@@ -300,4 +300,4 @@ You can use the `responseToolbarSettings` property to add custom response toolba
 
 #### Item clicked
 
-The `itemClicked` event is triggered when the custom toolbar item is clicked.
+The `itemClicked` event is triggered when a custom toolbar item is clicked. This event applies to both prompt and response toolbar items.

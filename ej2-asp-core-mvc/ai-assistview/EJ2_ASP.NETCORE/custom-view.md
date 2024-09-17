@@ -12,7 +12,7 @@ documentation: ug
 
 ## Adding custom views
 
-By using the `views` property you can define the collection of different assist view models in the AI AssistView. You can customize the default and the custom views added.
+By using the `e-aiassistview-view` tag helper you can define the collection of different assist view models in the AI AssistView. You can customize the default and the custom views added.
 
 ### Setting view type
 
