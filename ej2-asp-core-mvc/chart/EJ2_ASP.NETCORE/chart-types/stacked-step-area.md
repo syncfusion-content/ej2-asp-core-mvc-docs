@@ -75,6 +75,35 @@ The following properties can be used to customize the [`Stacked Step Area`](http
 
 
 
+**No risers**
+
+The [`NoRisers`] feature allows the stacked step area series to appear as a continuous flow, eliminating the vertical lines between points. This approach is useful for highlighting trends without the distraction of risers.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/area-charts/stackedsteparea/no-risers/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="No-risers.cs" %}
+{% include code-snippet/chart/series/area-charts/stackedsteparea/no-risers/no-risers.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/area-charts/stackedsteparea/no-risers/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="No-risers.cs" %}
+{% include code-snippet/chart/series/area-charts/stackedsteparea/no-risers/no-risers.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## See also
 
 * [Data Label](../data-labels)

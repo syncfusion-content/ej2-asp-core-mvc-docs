@@ -1,5 +1,5 @@
 @using Syncfusion.EJ2.Navigations;
-@model List<TabTabItem>
+@model List<TabItem>
 
 @Html.EJS().Tab("ej2Tab").Items(Model).Render()
 
