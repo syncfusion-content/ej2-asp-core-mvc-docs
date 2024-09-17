@@ -12,7 +12,7 @@ documentation: ug
 
 This section describes the AI AssistView events that will be triggered when appropriate actions are performed. The following events are available in the AI AssistView control.
 
-## Created
+## created
 
 The AI AssistView control triggers the `created` event when the control rendering is completed.
 

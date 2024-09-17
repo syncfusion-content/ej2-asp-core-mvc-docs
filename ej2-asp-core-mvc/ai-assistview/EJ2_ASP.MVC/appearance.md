@@ -29,7 +29,7 @@ You can use the `Width` property to set the width of the AI AssistView.
 
 You can use the `Height` property to set the height of the AI AssistView.
 
-> By default, the control `width` & `height` will be inherited based on the parent dimensions.
+> By default, the control `Width` & `Height` will be inherited based on the parent dimensions.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
