@@ -10,7 +10,7 @@ documentation: ug
 
 # Toolbar items in ##Platform_Name## AI AssistView control
 
-You can render the AI AssistView toolbar items by using the `items` property in the `e-aiassistview-toolbarsettings`, `e-aiassistview-responseToolbarSettings` & `e-aiassistview-promptToolbarSettings` tag helpers.
+You can render the AI AssistView toolbar items by using the `items` property in the `e-aiassistview-toolbarsettings`, `e-aiassistview-responsetoolbarsettings` & `e-aiassistview-prompttoolbarsettings` tag helpers.
 
 ## Adding header toolbar items
 
@@ -268,11 +268,11 @@ The `itemClicked` event is triggered when the response toolbar item is clicked.
 
 ## Adding custom toolbar items
 
-You can also add custom toolbar items in the AI AssistView by using the `e-aiassistview-toolbarsettings`, `e-aiassistview-responseToolbarSettings` & `e-aiassistview-promptToolbarSettings` tag helpers.
+You can also add custom toolbar items in the AI AssistView by using the `e-aiassistview-toolbarsettings`, `e-aiassistview-responsetoolbarsettings` & `e-aiassistview-prompttoolbarsettings` tag helpers.
 
 ### Prompt
 
-You can use the `e-aiassistview-promptToolbarSettings` tag helper to add custom items for the prompt toolbar in the AI AssistView.
+You can use the `e-aiassistview-prompttoolbarsettings` tag helper to add custom items for the prompt toolbar in the AI AssistView.
 
 > To know more about the items, please refer to the [items](./toolbar-items#items) section.
 
@@ -286,7 +286,7 @@ You can use the `e-aiassistview-promptToolbarSettings` tag helper to add custom 
 
 ### Response
 
-You can use the `e-aiassistview-responseToolbarSettings` tag helper to add custom response toolbar in the AI AssistView.
+You can use the `e-aiassistview-responsetoolbarsettings` tag helper to add custom response toolbar in the AI AssistView.
 
 > To know more about the items, please refer to the [items](./toolbar-items#items) section.
 
