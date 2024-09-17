@@ -19,7 +19,7 @@ In the following sample, State are grouped according on its category using `disa
 {% include code-snippet/mention/disabled-items/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/disabled-items/SportsData.cs %}
+{% include code-snippet/mention/disabled-items/DisableStatusData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
