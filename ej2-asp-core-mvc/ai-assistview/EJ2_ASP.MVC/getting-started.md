@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ASP.NET MVC AI AssistView control
 
 This section briefly explains about how to include `ASP.NET MVC AI AssistView` control in your ASP.NET MVC application using Visual Studio.

@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ASP.NET Core AI AssistView control
 
 This section briefly explains about how to include `ASP.NET Core AI AssistView` control in your ASP.NET Core application using Visual Studio.

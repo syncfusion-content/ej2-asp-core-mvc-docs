@@ -1,0 +1,17 @@
+<ejs-accumulationchart id="container">
+    <e-accumulation-series-collection>
+        <e-accumulation-series dataSource="ViewBag.dataSource" xName="X" yName="Y"
+            type="@Syncfusion.EJ2.Charts.AccumulationType.Pie">
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>
+
+<div>
+    <ejs-button id="remove" content="Remove Point" isPrimary="true"></ejs-button>
+</div>
+<script>
+    document.getElementById('remove').onclick = () => {
+        var piechart = document.getElementById('container').ej2_instances[0];
+        piechart.series[0].removePoint(0);
+    }
+</script>
