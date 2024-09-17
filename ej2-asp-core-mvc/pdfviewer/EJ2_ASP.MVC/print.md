@@ -47,7 +47,7 @@ The PDF Viewer supports printing the loaded PDF file. You can enable/disable the
 
 ## Customization of Print Quality using printScaleFactor API.
 
-The PDF viewer allows you to adjust the print quality using the PrintScaleFactor API. The quality of the print improves as the print quality value increases from 0.5 to 5.
+The PDF Viewer allows you to adjust the print quality using the [PrintScaleFactor](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.pdfviewer.pdfviewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_PrintScaleFactor) API. The quality of the print improves as the print quality value increases from 0.5 to 5.
 
 When the value is less than 0.5, the PDF is printed at a standard quality. When the value exceeds 5, the PDF is still printed at the standard quality. In standard quality, printScaleFactor value is set to 1 as default value.
 The effective range for print quality is between 0.5 and 5. Higher values within this range will result in better print quality, but also increase the print time. 
@@ -60,7 +60,7 @@ By default, the printScaleFactor is set to 1.
 {% highlight html tabtitle="Standalone" %}
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").EnablePrint(true).DocumentLoad("print").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render().printScaleFactor(0.5)
+    @Html.EJS().PdfViewer("pdfviewer").EnablePrint(true).DocumentLoad("print").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render().PrintScaleFactor(0.5)
 </div>
 
 <script>
@@ -74,7 +74,7 @@ By default, the printScaleFactor is set to 1.
 {% highlight html tabtitle="Server-Backed" %}
 ```html
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnablePrint(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render().printScaleFactor(0.5)
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnablePrint(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render().PrintScaleFactor(0.5)
 </div>
 
 <script>
@@ -84,6 +84,9 @@ By default, the printScaleFactor is set to 1.
     }
 </script>
 ```
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to/Customization%20of%20Print%20Quality)
+
 ## See also
 
 * [Toolbar items](./toolbar)

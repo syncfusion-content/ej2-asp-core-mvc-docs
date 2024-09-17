@@ -84,7 +84,7 @@ You can invoke print action using the following code snippet.,
 
 ## Customization of Print Quality using printScaleFactor API.
 
-The PDF viewer allows you to adjust the print quality using the PrintScaleFactor API. The quality of the print improves as the print quality value increases from 0.5 to 5.
+The PDF Viewer allows you to adjust the print quality using the [PrintScaleFactor](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pdfviewer.pdfviewer.html#PrintScaleFactor) API. The quality of the print improves as the print quality value increases from 0.5 to 5.
 
 When the value is less than 0.5, the PDF is printed at a standard quality. When the value exceeds 5, the PDF is still printed at the standard quality. In standard quality, printScaleFactor value is set to 1 as default value.
 The effective range for print quality is between 0.5 and 5. Higher values within this range will result in better print quality, but also increase the print time. 
@@ -120,6 +120,8 @@ By default, the printScaleFactor is set to 1.
 
 {% endhighlight %}
 {% endtabs %}
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Customize%20print%20Quality)
 
 ## See also
 
