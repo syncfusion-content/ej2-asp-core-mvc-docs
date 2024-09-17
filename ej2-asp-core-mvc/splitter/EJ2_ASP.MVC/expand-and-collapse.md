@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand And Collapse in ##Platform_Name## Splitter Component
-description: Learn here all about Expand And Collapse in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
+title: Expand And Collapse in ASP.NET MVC Splitter Component | Syncfusion
+description: Learn here all about Expand And Collapse in Syncfusion ASP.NET MVC Splitter component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Expand And Collapse
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Expand and Collapse
+# Expand and Collapse in ASP.NET MVC Splitter
 
 ## Collapsible panes
 
-The Splitter panes can be configured with built-in expand and collapse functionalities. By default, the `Collapsible` behavior is disabled. Enable the `Collapsible` behavior in the [`PaneSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Splitter.html#Syncfusion_EJ2_Layouts_Splitter_PaneSettings) property to show or hide the expand or collapse icons in the panes. You can dynamically expand and collapse the panes by the corresponding icons.
+The [ASP.NET MVC Splitter](https://www.syncfusion.com/aspnet-mvc-ui-controls/splitter) panes can be configured with built-in expand and collapse functionalities. By default, the `Collapsible` behavior is disabled. Enable the `Collapsible` behavior in the [`PaneSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Splitter.html#Syncfusion_EJ2_Layouts_Splitter_PaneSettings) property to show or hide the expand or collapse icons in the panes. You can dynamically expand and collapse the panes by the corresponding icons.
 
 The following code shows how to enable collapsible behavior.
 
