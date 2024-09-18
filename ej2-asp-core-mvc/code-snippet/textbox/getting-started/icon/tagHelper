@@ -1,24 +1,12 @@
 <div class="control-section">
-      <ejs-textbox id="default" placeholder="Enter Date" created="createHanlder"></ejs-textbox>   
+    <div class="control_wrapper accordion-control-section">
+        <ejs-textbox id="default" placeholder="Enter date" created="onCreateIcon"></ejs-textbox>
+    </div>
 </div>
 
-<style>
-    .e-icons.e-input-group-icon.e-input-popup-date {
-        font-size:16px;
-    }
-
-    .e-icons.e-input-group-icon.e-input-popup-date:before {
-        content: "\e901";
-    }
-
-</style>
-
 <script>
-    
-    function createHanlder(){
-    
-       var TextBoxInstance = document.getElementById('default').ej2_instances[0];
-
-        TextBoxInstance.addIcon('append', 'e-icons e-input-group-icon e-input-popup-date');
+    function onCreateIcon() {
+        var textboxObj = document.getElementById("default");
+        textboxObj.ej2_instances[0].addIcon("append", "e-date-icon");
     }
 </script>

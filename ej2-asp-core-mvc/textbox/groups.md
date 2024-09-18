@@ -15,10 +15,6 @@ The following section explains you the steps required to create TextBox with `ic
 
 **TextBox:**
 
-* Create a parent div element with the class `e-input-group`
-
-* Place input element with the class `e-input` inside the parent div element.
-
 ```html
       <div class="e-input-group">
            <ejs-textbox id="icon-textbox" placeholder="Enter Date"></ejs-textbox>
@@ -27,7 +23,7 @@ The following section explains you the steps required to create TextBox with `ic
 
 **Floating label:**
 
-Use the `FloatLabelType` property to add a floating label to the TextBox. This property controls the behavior of the placeholder text, allowing it to float above the TextBox based on the following values:
+Use the [FloatLabelType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_FloatLabelType) property to add a floating label to the TextBox. This property controls the behavior of the placeholder text, allowing it to float above the TextBox based on the following values:
 
 * Never: The placeholder text never floats.
 * Always: The placeholder text always floats above the TextBox.
@@ -41,9 +37,7 @@ And refer to the following sections to add the icons to the TextBox.
 
 ## With icon and floating label
 
-Create an icon element as a span with the class `e-input-group-icon`, and the user can place the icon in either side of TextBox by adding the created icon element before/after the input.
-
-For the floating label enabled TextBox add the icon element as first or last element inside the TextBox wrapper,and based on the element position it will act as prefix or suffix icon.
+Create an icon in the TextBox using the [addIcon]() method and enable the float label using the [FloatLabelType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_FloatLabelType) property. The user can place the icon on either side of the TextBox by specifying "append" or "prepend" in the [addIcon]() method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -108,42 +102,10 @@ Output be like the below.
 
 ![textbox](./images/textbox-clear.png)
 
-## Floating label without required attribute
-
-You can render the `Floating label TextBox` without `required` attribute by manually float the label above of the TextBox using input events. You can manually float the label above of the TextBox by adding the below list of classes to the floating label element. The classes are:
-
-Class Name        | Description
-------------------| -------------
-  e-label-top     | Floats the label above of the TextBox.
-  e-label-bottom  | Label to be placed as placeholder for the TextBox.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/textbox/groups/floating/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Floating.cs" %}
-{% include code-snippet/textbox/groups/floating/floating.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/textbox/groups/floating/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Floating.cs" %}
-{% include code-snippet/textbox/groups/floating/floating.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ## Multi-line input with floating label
 
-To create a multi-line input field, use the `multiline` property. This will turn the input into a TextArea component, allowing you to resize the number of rows as needed.
+To create a multi-line input field, use the [multiline](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_Multiline) property. This will turn the input into a TextArea component, allowing you to resize the number of rows as needed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
