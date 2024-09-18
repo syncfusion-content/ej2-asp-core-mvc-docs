@@ -1,0 +1,27 @@
+<ejs-spreadsheet id="spreadsheet" beforeSave="beforeSave" saveComplete="saveComplete" openUrl="Home/Open" saveUrl="Home/Save">
+            <e-spreadsheet-sheets>
+                <e-spreadsheet-sheet name="Price Details">
+                    <e-spreadsheet-ranges>
+                        <e-spreadsheet-range dataSource="ViewBag.DefaultData" startCell="A1"></e-spreadsheet-range>
+                    </e-spreadsheet-ranges>
+					<e-spreadsheet-columns>
+						<e-spreadsheet-column width="130"></e-spreadsheet-column>
+						<e-spreadsheet-column width="100"></e-spreadsheet-column>
+						<e-spreadsheet-column width="100"></e-spreadsheet-column>
+					</e-spreadsheet-columns>
+                </e-spreadsheet-sheet>
+            </e-spreadsheet-sheets>
+</ejs-spreadsheet>
+
+<script>
+    function beforeSave(args) {
+        args.needBlobData = true; // To trigger the saveComplete event.
+        args.isFullPost = false; // Get the spreadsheet data as blob data in the saveComplete event.
+    }
+
+    function saveComplete(args) {
+        // To obtain the blob data
+        console.log('Spreadsheet BlobData : ', args.blobData);
+    }
+
+</script>

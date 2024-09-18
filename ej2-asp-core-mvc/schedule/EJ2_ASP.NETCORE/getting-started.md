@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Schedule Control
+title: Getting Started with ##Platform_Name## Schedule Control| Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -107,7 +107,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Populating appointments
 
-To populate an empty Scheduler with appointments, bind the event data to it by assigning the `dataSource` property under `e-schedule-eventsettings` tag Helper.
+To populate an empty Scheduler with appointments, bind the event data to it by assigning the [DataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property under `e-schedule-eventsettings` tag Helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -128,7 +128,7 @@ public class AppointmentData
 
 ## Setting date
 
-Scheduler usually displays the system date as its current date. To change the current date of scheduler with specific date, define the `selectedDate` property.
+Scheduler usually displays the system date as its current date. To change the current date of scheduler with specific date, define the [`selectedDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_SelectedDate) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -147,7 +147,7 @@ public class AppointmentData
 
 ## Specific view
 
-Scheduler displays `week` view by default. To change the current view, define the applicable view name to the `currentView` property. The applicable view names are,
+Scheduler displays `week` view by default. To change the current view, define the applicable view name to the [`currentView`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CurrentView) property. The applicable view names are,
 
 * Day
 * Week

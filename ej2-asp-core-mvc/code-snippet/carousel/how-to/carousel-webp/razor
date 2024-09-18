@@ -1,0 +1,55 @@
+@using Syncfusion.EJ2.Navigations;
+
+<div class="container">
+    <div class="control-container">
+        @(Html.EJS().Carousel("defaultCarousel").PartialVisible(true).Items(new List<CarouselItem> {
+            new CarouselItem { Template = "#itemTemplate1"  },
+            new CarouselItem { Template = "#itemTemplate2"  },
+            new CarouselItem { Template = "#itemTemplate3"  },
+            })
+            .Render()
+        )
+    </div>
+</div>
+<script id="itemTemplate1" type="text/x-template">
+    <figure class="img-container">
+        <img src="https://www.gstatic.com/webp/gallery/1.webp" alt="Majestic Valley View" style="height:100%;width:100%;" />
+        <figcaption class="img-caption">Majestic Valley View</figcaption>
+    </figure>
+</script>
+
+<script id="itemTemplate1" type="text/x-template">
+    <figure class="img-container">
+        <img src="https://www.gstatic.com/webp/gallery/2.webp" alt="Thrilling Rapids Adventure" style="height:100%;width:100%;" />
+        <figcaption class="img-caption">Thrilling Rapids Adventure</figcaption>
+    </figure>
+</script>
+
+<script id="itemTemplate1" type="text/x-template">
+    <figure class="img-container">
+        <img src="https://www.gstatic.com/webp/gallery/3.webp" alt="Snowy Stroll" style="height:100%;width:100%;" />
+        <figcaption class="img-caption">Snowy Stroll</figcaption>
+    </figure>
+</script>
+<style>
+    .control-container {
+        background-color: #e5e5e5;
+        height: 360px;
+        margin: 0 auto;
+        width: 600px;
+    }
+  
+    .img-container {
+        height: 100%;
+        margin: 0;
+    }
+  
+    .img-caption {
+        color: #fff;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+</style>

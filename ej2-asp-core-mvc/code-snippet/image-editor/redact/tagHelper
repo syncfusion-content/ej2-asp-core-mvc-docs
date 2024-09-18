@@ -1,0 +1,73 @@
+@{
+    var imageTool = new string[] { };
+}
+
+<div class="col-lg-12 control-section e-img-editor-sample">
+    <ejs-imageeditor id="image-editor" created="created" toolbar="@imageTool"></ejs-imageeditor>
+</div>
+<ejs-button id="add-redact" onclick="addRedact()" cssClass="e-primary" content="Add Redact"></ejs-button>
+<ejs-button id="update-redact" onclick="updateRedact()" cssClass="e-primary" content="Update Redact"></ejs-button>
+<ejs-button id="select-redact" onclick="selectRedact()" cssClass="e-primary" content="Select Redact"></ejs-button>
+<ejs-button id="delete-redact" onclick="deleteRedact()" cssClass="e-primary" content="Delete Redact"></ejs-button>
+
+<script>
+    function created() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        if (ej.base.Browser.isDevice) {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+        } else {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+        }
+    }
+    
+    function addRedact() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        let dimension = imgObj.getImageDimension();
+        imgObj.drawRedact(RedactType.Blur, dimension.x, dimension.y, 200, 300);
+    }
+    function updateRedact() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        let redacts = imgObj.getRedacts();
+        if (redacts.length > 0) {
+          redacts[redacts.length - 1].blurIntensity = 100;
+          imgObj.updateRedact(redacts[redacts.length - 1]);
+        }
+    }
+    function selectRedact() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        let redacts = imgObj.getRedacts();
+        if (redacts.length > 0) {
+            imgObj.selectRedact(redacts[redacts.length - 1].id);
+        }
+    }
+    function deleteRedact() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        let redacts = imgObj.getRedacts();
+        if (redacts.length > 0) {
+            imgObj.deleteRedact(redacts[redacts.length - 1].id);
+        }
+    }
+
+</script>
+
+<style>
+    .image-editor {
+        margin: 0 auto;
+    }
+
+    .e-img-editor-sample {
+        height: 80vh;
+        width: 100%;
+    }
+
+    @@media only screen and (max-width: 700px) {
+        .e-img-editor-sample {
+            height: 75vh;
+            width: 100%;
+        }
+    }
+
+    .control-wrapper {
+        height: 100%;
+    }
+</style>

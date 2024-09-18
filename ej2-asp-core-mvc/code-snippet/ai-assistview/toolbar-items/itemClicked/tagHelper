@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    <ejs-aiassistview id="aiAssistView" promptRequest="onPromptRequest" created="onCreated">
+        <e-aiassistview-toolbarsettings items="@Model.Items" itemClicked="function(args){ itemClicked(args) }"></e-aiassistview-toolbarsettings>
+    </ejs-aiassistview>
+</div>
+
+<script>
+    var assistObj;
+    function onCreated() {
+        assistObj = this;
+    }
+    function onPromptRequest(args) {
+        setTimeout(() => {
+            let defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            assistObj.addPromptResponse(defaultResponse);
+        }, 2000);
+    }
+</script>
+
+<script>
+    function itemClicked(args) {
+        // your required action here..
+    }
+</script>

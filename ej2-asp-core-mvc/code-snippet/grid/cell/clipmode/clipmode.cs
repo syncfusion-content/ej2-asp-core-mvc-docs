@@ -1,6 +1,7 @@
 public IActionResult Index()
 {
-    var Order = OrderDetails.GetAllRecords();
+    var Order = InventorDetails.GetAllRecords();
     ViewBag.DataSource = Order;
+    ViewBag.dropdownData = new string[] { "Clip", "Ellipsis", "EllipsisWithTooltip" };
     return View();
-} 
+}

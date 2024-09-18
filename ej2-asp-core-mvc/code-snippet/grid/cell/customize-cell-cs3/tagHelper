@@ -1,0 +1,20 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" customAttributes=@(new {
+            @class="custom-css" } ) width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100" CustomAttributes=@(new{@class="custom-css"
+            })></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" textAlign="Right" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+@section Scripts {
+<style>
+    .custom-css {
+        background: #d7f0f4;
+        font-style: italic;
+        color: navy
+    }
+</style>
+}
