@@ -21,11 +21,11 @@
     }
     function outlineHandler() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imageEditorObj.drawText(500, 500, 'Syncfusion', 'Arial', 70, false, false, '', false, null, '', 'green', 8);
+        imageEditorObj.drawText(600, 600, 'Syncfusion', 'Arial', 70, false, false, '', false, null, '', 'green', 8);
     }
     function backgroundHandler() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imageEditorObj.drawText(500, 500, 'Syncfusion', 'Arial', 70, false, false, '', false, null, 'red', '', null);
+        imageEditorObj.drawText(700, 700, 'Syncfusion', 'Arial', 70, false, false, '', false, null, 'red', '', null);
     }
 </script>
 
