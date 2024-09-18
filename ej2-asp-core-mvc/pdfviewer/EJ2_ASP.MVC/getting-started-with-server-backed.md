@@ -184,6 +184,55 @@ namespace GettingStartedMVC.Controllers
             return Content(JsonConvert.SerializeObject(jsonResult));
         }
 
+        [System.Web.Mvc.HttpPost]
+        public ActionResult ValidatePassword(jsonObjects jsonObject)
+        {
+            PdfRenderer pdfviewer = new PdfRenderer();
+            MemoryStream stream = new MemoryStream();
+            var jsonData = JsonConverter(jsonObject);
+            object jsonResult = new object();
+            if (jsonObject != null && jsonData.ContainsKey("document"))
+            {
+                if (bool.Parse(jsonData["isFileName"]))
+                {
+                    string documentPath = GetDocumentPath(jsonData["document"]);
+
+                    if (!string.IsNullOrEmpty(documentPath))
+                    {
+                        byte[] bytes = System.IO.File.ReadAllBytes(documentPath);
+                        stream = new MemoryStream(bytes);
+                    }
+                    else
+                    {
+                        string fileName = jsonData["document"].Split(new string[] { "://" }, StringSplitOptions.None)[0];
+                        if (fileName == "http" || fileName == "https")
+                        {
+                            var WebClient = new WebClient();
+                            byte[] pdfDoc = WebClient.DownloadData(jsonData["document"]);
+                            stream = new MemoryStream(pdfDoc);
+                        }
+                        else
+                        {
+                            return this.Content(jsonData["document"] + " is not found");
+                        }
+                    }
+                }
+                else
+                {
+                    byte[] bytes = Convert.FromBase64String(jsonData["document"]);
+                    stream = new MemoryStream(bytes);
+
+                }
+            }
+            string password = null;
+            if (jsonObject != null && jsonData.ContainsKey("password"))
+            {
+                password = jsonData["password"];
+            }
+            var result = pdfviewer.Load(stream, password);
+            return Content(JsonConvert.SerializeObject(result));
+        }
+
         public Dictionary<string, string> JsonConverter(jsonObjects results)
         {
             Dictionary<string, object> resultObjects = new Dictionary<string, object>();

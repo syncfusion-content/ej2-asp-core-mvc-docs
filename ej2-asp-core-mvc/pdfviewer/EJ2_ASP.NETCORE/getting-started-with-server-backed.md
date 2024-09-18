@@ -191,6 +191,51 @@ namespace PDFViewerSample.Pages
             return Content(JsonConvert.SerializeObject(jsonResult));
         }
 
+        public IActionResult OnPostValidatePassword([FromBody] jsonObjects responseData)
+        {
+            PdfRenderer pdfviewer = new PdfRenderer(_cache);
+            MemoryStream stream = new MemoryStream();
+            var jsonObject = JsonConverterstring(responseData);
+            object jsonResult = new object();
+            if (jsonObject != null && jsonObject.ContainsKey("document"))
+            {
+                if (bool.Parse(jsonObject["isFileName"]))
+                {
+                    string documentPath = GetDocumentPath(jsonObject["document"]);
+                    if (!string.IsNullOrEmpty(documentPath))
+                    {
+                        byte[] bytes = System.IO.File.ReadAllBytes(documentPath);
+                        stream = new MemoryStream(bytes);
+                    }
+                    else
+                    {
+                        string fileName = jsonObject["document"].Split(new string[] { "://" }, StringSplitOptions.None)[0];
+                        if (fileName == "http" || fileName == "https")
+                        {
+                            WebClient WebClient = new WebClient();
+                            byte[] pdfDoc = WebClient.DownloadData(jsonObject["document"]);
+                            stream = new MemoryStream(pdfDoc);
+                        }
+                        else
+                            return this.Content(jsonObject["document"] + " is not found");
+                    }
+                }
+                else
+                {
+                    byte[] bytes = Convert.FromBase64String(jsonObject["document"]);
+                    stream = new MemoryStream(bytes);
+                }
+            }
+            string password = null;
+            if (jsonObject.ContainsKey("password"))
+            {
+                password = jsonObject["password"];
+            }
+            var result = pdfviewer.Load(stream, password);
+
+            return Content(JsonConvert.SerializeObject(result));
+        }
+
         public Dictionary<string, string> JsonConverterstring(jsonObjects results)
         {
             Dictionary<string, object> resultObjects = new Dictionary<string, object>();
