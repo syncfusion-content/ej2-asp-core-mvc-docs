@@ -3,7 +3,7 @@ layout: post
 title: Range selector in Syncfusion ASP.NET MVC Stock Chart | Syncfusion
 description: Learn here all about Range selector in Syncfusion ASP.NET MVC Stock Chart component, its elements, and more.
 platform: ej2-asp-core-mvc
-control: Range Selector
+control: Stock Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
