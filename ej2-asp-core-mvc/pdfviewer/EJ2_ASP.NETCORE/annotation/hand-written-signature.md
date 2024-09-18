@@ -57,9 +57,9 @@ The handwritten signature can be added to the PDF document using the annotation 
 
 ## Adding a Handwritten signature to the PDF document Programmatically
 
-With the PDF Viewer library, you can programmatically add a Handwritten signature to the PDF Viewer control using the **addAnnotation()** method.
+With the PDF Viewer library, you can programmatically add a handwritten signature to the PDF Viewer control using the **addAnnotation()** method.
 
-Here's a example of how you can utilize the **addAnnotation()** method to include a Handwritten signature programmatically
+Here is an example of how you can use the **addAnnotation()** method to add the Handwritten signature programmatically
 
 {% tabs %}
 {% highlight cshtml tabtitle="Standalone" %}
@@ -170,8 +170,6 @@ Here's a example of how you can utilize the **addAnnotation()** method to includ
 
 {% endhighlight %}
 {% endtabs %}
-
-[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Add%20Handwritten%20Signature%20Programmatically)
 
 ## Editing the properties of handwritten signature
 
