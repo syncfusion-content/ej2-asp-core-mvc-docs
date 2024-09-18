@@ -121,8 +121,6 @@ By default, the printScaleFactor is set to 1.
 {% endhighlight %}
 {% endtabs %}
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Customize%20print%20Quality)
-
 ## See also
 
 * [Toolbar items](./toolbar)

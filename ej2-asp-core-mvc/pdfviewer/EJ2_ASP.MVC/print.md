@@ -84,9 +84,6 @@ By default, the printScaleFactor is set to 1.
     }
 </script>
 ```
-
-[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to/Customization%20of%20Print%20Quality)
-
 ## See also
 
 * [Toolbar items](./toolbar)
