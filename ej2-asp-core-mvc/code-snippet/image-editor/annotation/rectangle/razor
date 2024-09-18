@@ -15,8 +15,8 @@
 
     function clickHandler() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        var dimension = imageEditorObj.getImageDimension();
-        imgObj.drawRectangle(dimension.x, dimension.y);
+        var dimension = imgObj.getImageDimension();
+        imgObj.drawRectangle(dimension.x, dimension.y, 300, 200, null, '', '', null, null, 8);
         imgObj.drawEllipse(dimension.x, dimension.y);
         imgObj.drawLine(dimension.x, dimension.y);
         imgObj.drawArrow(dimension.x, dimension.y + 10, dimension.x + 50, dimension.y + 10, 10);
