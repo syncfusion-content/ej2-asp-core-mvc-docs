@@ -77,7 +77,28 @@ In Gantt, the zoom in and zoom out actions are performed based on the predefined
 {% endtabs %}
 {% endif %}
 
+## Zoom action by Touch Swipe Gestures
 
+The Gantt chart now supports `ZoomIn` and `ZoomOut` actions using touch swipe gestures:
+
+   * Zoom In - Pinch `outward` with two fingers.
+   * Zoom Out - Pinch `inward` with two fingers.
+
+To achieve this functionality, the Gantt chart continuously monitors the pixel difference between the two fingers. If the pixel difference exceeds 15 pixels, the corresponding zoom action (either `ZoomIn` and `ZoomOut`) is triggered based on the gesture's pixel difference.
+
+* Mouse Pad(Track Pad) - The Gantt chart also supports `ZoomIn` and `ZoomOut` actions using pinch gestures on a track pad or mouse pad:
+
+    * Zoom In - Pinch `outward` with two fingers.
+    * Zoom Out - Pinch `inward` with two fingers.
+
+The Gantt chart monitors the pixel movement on the mouse pad. If the deltaY pixel value is less than 15, a `ZoomIn` action occurs. If it's greater than 15, a `ZoomOut` action is triggered.
+
+* Mouse Wheel - The Gantt chart also now supports `ZoomIn` and `ZoomOut` actions using the mouse wheel along with the `Ctrl` key:
+
+    * Zoom In - Scroll the mouse wheel `upward` (deltaY pixel value less than 0).
+    * Zoom Out - Scroll the mouse wheel `downward` (deltaY pixel value greater than 0).
+
+The Gantt chart continuously monitors the mouse wheel movement. If the deltaY pixel value is less than 0, a `ZoomIn` action occurs, and if it's greater than 0, a `ZoomOut` action is triggered.
 
 ## Zoom action by methods
 
