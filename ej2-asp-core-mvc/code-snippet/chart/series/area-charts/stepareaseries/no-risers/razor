@@ -1,0 +1,11 @@
+@Html.EJS().Chart("container").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepArea)
+        .XName("X")
+        .YName("Y")
+        .NoRisers(true)
+        .DataSource(ViewBag.dataSource)
+        .Add();
+}).PrimaryXAxis(px => px.Title("Overs")
+ ).PrimaryYAxis(py => py.Title("Runs")
+ ).Title("England - Run Rate").Tooltip(tt => tt.Enable(true)).Render()

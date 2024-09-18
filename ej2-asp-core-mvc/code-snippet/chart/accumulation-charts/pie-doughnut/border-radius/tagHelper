@@ -1,0 +1,6 @@
+<ejs-accumulationchart id="container">
+    <e-accumulation-series-collection>
+        <e-accumulation-series dataSource="ViewBag.dataSource" xName="X" yName="Y" borderRadius="8" type="@Syncfusion.EJ2.Charts.AccumulationType.Pie">
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>

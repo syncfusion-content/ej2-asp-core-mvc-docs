@@ -5,7 +5,9 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
     <ejs-imageeditor id="image-editor" created="created" toolbar="@imageTool"></ejs-imageeditor>
 </div>
-<ejs-button id="btnClick" onclick="clickHandler()" cssClass="e-primary" content="Click"></ejs-button>
+<ejs-button id="addText" onclick="addTextHandler()" cssClass="e-primary" content="Add Text"></ejs-button>
+<ejs-button id="outline" onclick="outlineHandler()" cssClass="e-primary" content="Text Outline"></ejs-button>
+<ejs-button id="background" onclick="backgroundHandler()" cssClass="e-primary" content="Text Background Color"></ejs-button>
 
 <script>
     function created() {
@@ -17,9 +19,17 @@
         }
     }
 
-    function clickHandler() {
+    function addTextHandler() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imageEditorObj.drawText(500, 500, 'Syncfusion', 'Arial', 100, true, true, '#000');
+    }
+    function outlineHandler() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.drawText(500, 500, 'Syncfusion', 'Arial', 70, false, false, '', false, null, '', 'green', 8);
+    }
+    function backgroundHandler() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.drawText(500, 500, 'Syncfusion', 'Arial', 70, false, false, '', false, null, 'red', '', null);
     }
 </script>
 
