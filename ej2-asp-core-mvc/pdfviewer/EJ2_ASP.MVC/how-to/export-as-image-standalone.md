@@ -3,7 +3,7 @@ layout: post
 title: Export As Image in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 description: Learn here all about Export As Image in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Export As Image
+control: PDF Viewer
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
