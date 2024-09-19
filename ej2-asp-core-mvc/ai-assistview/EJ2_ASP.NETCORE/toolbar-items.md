@@ -10,7 +10,7 @@ documentation: ug
 
 # Toolbar items in ##Platform_Name## AI AssistView control
 
-You can render the AI AssistView toolbar items by using the `items` property in the `e-aiassistview-toolbarsettings`, `e-aiassistview-responsetoolbarsettings` & `e-aiassistview-prompttoolbarsettings` tag helpers.
+You can render the AI AssistView toolbar items by using the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewToolbarSettings_Items) property in the `e-aiassistview-toolbarsettings`, `e-aiassistview-responsetoolbarsettings` & `e-aiassistview-prompttoolbarsettings` tag helpers.
 
 ## Adding header toolbar items
 
@@ -18,7 +18,7 @@ You can render the AI AssistView toolbar items by using the `items` property in 
 
 The AI AssistView toolbar's can be rendered by defining an array of items. Items can be constructed with the following built-in command types or item template.
 
-#### Adding iconCSS
+#### Adding iconCss
 
 You can customize the toolbar icons by using the `iconCss` property.
 
@@ -194,7 +194,7 @@ You can use the `template` property to add custom toolbar item in the AI AssistV
 
 ### Item clicked
 
-The `itemClicked` event is triggered when the header toolbar item is clicked.
+The [itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewToolbarSettings_ItemClicked) event is triggered when the header toolbar item is clicked.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -222,11 +222,11 @@ In the following example, AI AssistView control rendered with built-in toolbar i
 
 #### Setting width
 
-You can use the `width` property to set the width of the prompt toolbar in the AI AssistView.
+You can use the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewPromptToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewPromptToolbarSettings_Width) property to set the width of the prompt toolbar in the AI AssistView.
 
 #### Item clicked
 
-The `itemClicked` event is triggered when the prompt toolbar item is clicked.
+The [itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewPromptToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewPromptToolbarSettings_ItemClicked) event is triggered when the prompt toolbar item is clicked.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -252,11 +252,11 @@ In the following example, AI AssistView renders with built-in toolbar items.
 
 #### Setting width
 
-You can use the `width` property to set the width of the response toolbar in the AI AssistView.
+You can use the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewResponseToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewResponseToolbarSettings_Width) property to set the width of the response toolbar in the AI AssistView.
 
 #### Item clicked
 
-The `itemClicked` event is triggered when the response toolbar item is clicked.
+The [itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewResponseToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewResponseToolbarSettings_ItemClicked) event is triggered when the response toolbar item is clicked.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -274,7 +274,7 @@ You can also add custom toolbar items in the AI AssistView by using the `e-aiass
 
 You can use the `e-aiassistview-prompttoolbarsettings` tag helper to add custom items for the prompt toolbar in the AI AssistView.
 
-> To know more about the items, please refer to the [items](./toolbar-items#items) section.
+> To know more about the items, please refer to the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewPromptToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewPromptToolbarSettings_Items) section.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -288,7 +288,7 @@ You can use the `e-aiassistview-prompttoolbarsettings` tag helper to add custom 
 
 You can use the `e-aiassistview-responsetoolbarsettings` tag helper to add custom response toolbar in the AI AssistView.
 
-> To know more about the items, please refer to the [items](./toolbar-items#items) section.
+> To know more about the items, please refer to the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewResponseToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewResponseToolbarSettings_Items) section.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

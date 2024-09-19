@@ -1,10 +1,10 @@
 @using Syncfusion.EJ2.InteractiveChat
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    @Html.EJS().AIAssistView("aiAssistView").PromptRequest("onPromptRequest").ActiveView(1).Created("onCreated").Views(view =>
+    @Html.EJS().AIAssistView("aiAssistView").PromptRequest("onPromptRequest").Created("onCreated").Views(view =>
     {
         view.Type(AssistViewType.Assist).Add();
-        view.Type(AssistViewType.Custom).Name("Response").ViewTemplate("<div class=\"view-container\"><h5>Response view content</h5></div>").IconCss("e-icons e-comment-show").Add();
+        view.Type(AssistViewType.Custom).Name("Response").ViewTemplate("<div class=\"view-container\"><h5>Response view content</h5></div>").Add();
     }).Render()
 </div>
 
@@ -20,12 +20,3 @@
         }, 2000);
     }
 </script>
-
-<style>
-    .view-container {
-        height: inherit;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
