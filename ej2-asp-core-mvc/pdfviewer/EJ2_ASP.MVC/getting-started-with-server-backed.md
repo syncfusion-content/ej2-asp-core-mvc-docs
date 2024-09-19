@@ -303,6 +303,15 @@ namespace GettingStartedMVC.Controllers
         }
 
         [System.Web.Mvc.HttpPost]
+        public ActionResult RenderPdfTexts(jsonObjects jsonObject)
+        {
+            PdfRenderer pdfviewer = new PdfRenderer();
+            var jsonData = JsonConverter(jsonObject);
+            object jsonResult = pdfviewer.GetDocumentText(jsonData);
+            return Content(JsonConvert.SerializeObject(jsonResult));
+        }
+
+        [System.Web.Mvc.HttpPost]
         public ActionResult Unload(jsonObjects jsonObject)
         {
             PdfRenderer pdfviewer = new PdfRenderer();

@@ -257,6 +257,14 @@ namespace PDFViewerSample.Pages
             return Content(JsonConvert.SerializeObject(jsonResult));
         }
 
+        public IActionResult OnPostRenderPdfTexts([FromBody] jsonObjects responseData)
+        {
+            PdfRenderer pdfviewer = new PdfRenderer(_cache);
+            var jsonObject = JsonConverterstring(responseData);
+            object jsonResult = pdfviewer.GetDocumentText(jsonObject);
+            return Content(JsonConvert.SerializeObject(jsonResult));
+        }
+
         //Post action for unloading and disposing the PDF document resources
         public IActionResult OnPostUnload([FromBody] jsonObjects responseData)
         {
