@@ -16,67 +16,39 @@ By using the `e-aiassistview-view` tag helper you can define the collection of d
 
 ### Setting view type
 
-You can set the type of view by using the `type` property. It accepts two values such as `Assist`, and `Custom`.
+You can set the type of view by using the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AssistViewType.html) property. It accepts two values such as [Assist](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AssistViewType.html#Syncfusion_EJ2_InteractiveChat_AssistViewType_Assist), and [Custom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AssistViewType.html#Syncfusion_EJ2_InteractiveChat_AssistViewType_Custom).
 
 {% tabs %}
-{% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
-
-<ejs-aiassistview id="aiAssistView">
-    <e-aiassistview-views>
-        <e-aiassistview-view type="Assist"></e-aiassistview-view>
-        <e-aiassistview-view type="Custom"></e-aiassistview-view>
-    </e-aiassistview-views>
-</ejs-aiassistview>
-....
-
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/views/viewType/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![ViewType](images/view-type.png)
 
 ### Setting name
 
 You can use the `name` property to specifies the header name of the `Assist` or `Custom` views in the AI AssistView.
 
 {% tabs %}
-{% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
-
-<ejs-aiassistview id="aiAssistView">
-    <e-aiassistview-views>
-        <e-aiassistview-view name="Prompt"></e-aiassistview-view>
-        <e-aiassistview-view type="Custom" name="Response"></e-aiassistview-view>
-    </e-aiassistview-views>
-</ejs-aiassistview>
-....
-
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/views/viewName/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-### Setting iconCSS
+![ViewName](images/view-name.png)
+
+### Setting iconCss
 
 You can customize the view icons by using the `iconCss` property. By default the `e-assistview-icon` class is added as built-in header icon for the AI AssistView.
 
 {% tabs %}
-{% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
-
-<ejs-aiassistview id="aiAssistView">
-    <e-aiassistview-views>
-        <e-aiassistview-view iconCss="e-icons e-assistview-icon"></e-aiassistview-view>
-        <e-aiassistview-view type="Custom" iconCss="e-icons e-comment-show"></e-aiassistview-view>
-    </e-aiassistview-views>
-</ejs-aiassistview>
-....
-
-{% endhighlight %}
-{% endtabs %}
-
-The following example illustrates how types, name, and iconCss are used in a AI AssistView control.
-
-{% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/ai-assistview/views/itemType/tagHelper %}
+{% include code-snippet/ai-assistview/views/viewIcon/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-![ItemType](images/itemType.png)
+![ViewIcon](images/view-icon.png)
 
 ### Setting view template 
 

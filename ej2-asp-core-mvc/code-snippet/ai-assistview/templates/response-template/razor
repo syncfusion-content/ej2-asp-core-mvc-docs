@@ -9,7 +9,7 @@
     var promptsJson = @Html.Raw(JsonConvert.SerializeObject(promptsData));
 }
 
-<div class="aiassist-container" style="height: 350px; width: 650px;">
+<div class="aiassist-container" style="height: 400px; width: 650px;">
     @Html.EJS().AIAssistView("aiAssistView").Prompts(promptsData).ResponseItemTemplate("#responseItemTemplate").PromptRequest("onPromptRequest").Created("onCreated").Render()
 </div>
 
@@ -32,32 +32,32 @@
     <div class="responseItemContent">
         <div class="response-header">
             <span class="e-icons e-assistview-icon"></span>
-            AI AssistView
+            AI Assist
         </div>
-        <div class="content">${response}</div>
+        <div class="responseContent">${response}</div>
     </div>
 </script>
 
 <style>
-    .e-assistview-icon:before {
-        margin-right: 10px;
-    }
-
     .responseItemContent {
         display: flex;
         flex-direction: column;
         gap: 10px;
         margin-left: 20px
     }
-
     .responseItemContent .response-header {
         font-size: 20px;
         font-weight: bold;
         display: flex;
         align-items: center;
     }
-
-    .responseItemContent .content {
+    .responseItemContent .responseContent {
+        margin-left: 35px;
+    }
+    .responseItemContent .response-header .e-assistview-icon:before {
+        margin-right: 10px;
+    }
+    .aiassist-container .e-response-item-template .e-toolbar-items {
         margin-left: 35px;
     }
 </style>

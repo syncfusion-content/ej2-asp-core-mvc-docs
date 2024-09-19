@@ -12,7 +12,7 @@ documentation: ug
 
 ## Setting width
 
-You can use the `Width` property to set the width of the AI AssistView.
+You can use the [Width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_Width) property to set the width of the AI AssistView. The default value is `100%`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -27,9 +27,7 @@ You can use the `Width` property to set the width of the AI AssistView.
 
 ## Setting height
 
-You can use the `Height` property to set the height of the AI AssistView.
-
-> By default, the control `Width` & `Height` will be inherited based on the parent dimensions.
+You can use the [Height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_Height) property to set the height of the AI AssistView. The default value is `100%`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -42,9 +40,9 @@ You can use the `Height` property to set the height of the AI AssistView.
 
 ![Height](images/height.png)
 
-## CssClass
+## Cssclass
 
-You can customize the appearance of the AI AssistView control by using the `CssClass` property.
+You can customize the appearance of the AI AssistView control by using the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_CssClass) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

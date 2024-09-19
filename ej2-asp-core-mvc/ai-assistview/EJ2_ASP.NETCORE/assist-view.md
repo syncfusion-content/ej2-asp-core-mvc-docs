@@ -12,7 +12,7 @@ documentation: ug
 
 ## Setting prompt text
 
-You can use the `prompt` property to define the prompt text for the AI AssistView control.
+You can use the [prompt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_Prompt) property to define the prompt text for the AI AssistView control.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -24,7 +24,7 @@ You can use the `prompt` property to define the prompt text for the AI AssistVie
 
 ## Setting prompt placeholder
 
-You can use the `promptPlaceholder` property to set the placeholder text for the prompt textarea. The default value is `Type prompt for assistance...`.
+You can use the [promptPlaceholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptPlaceholder) property to set the placeholder text for the prompt textarea. The default value is `Type prompt for assistance...`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -36,7 +36,7 @@ You can use the `promptPlaceholder` property to set the placeholder text for the
 
 ## Prompt-response collection
 
-By using the `prompts`, you can specify the collection of prompts and responses, allowing you to load pre-defined pairs or individual entries ensuring the AI AssistView control is initialized with the configured data.
+You can use the [prompts](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_Prompts) property to initialize the control with the configured data as a collection of prompts and responses or individual entries.
 
 > The `prompts` collection stores all the prompts and responses generated.
 
@@ -50,7 +50,7 @@ By using the `prompts`, you can specify the collection of prompts and responses,
 
 ## Adding prompt suggestions
 
-By using the `promptSuggestions` property, you can configure the list of suggested prompts in the AI AssistView. Users can choose from these suggestions to use as their prompts.
+You can use the [promptSuggestions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptSuggestions) property, to add the suggestions in both initial and on-demand which help users to refine their prompts. Additionally, custom header can be set for suggestions further enhancing the user experience.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -62,7 +62,7 @@ By using the `promptSuggestions` property, you can configure the list of suggest
 
 ### Adding suggestion headers
 
-You can use the `promptSuggestionsHeader` property to set the header text for the prompt suggestions in the AI AssistView.
+You can use the [promptSuggestionsHeader](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptSuggestionsHeader) property to set the header text for the prompt suggestions in the AI AssistView.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -72,9 +72,9 @@ You can use the `promptSuggestionsHeader` property to set the header text for th
 
 ![SuggestionsHeader](images/suggestionsHeader.png)
 
-## Adding prompt iconCSS
+## Adding prompt iconCss
 
-You can customize the appearance of the prompter avatar by using the `promptIconCss` property.
+You can customize the appearance of the prompter avatar by using the [promptIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptIconCss) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -84,9 +84,9 @@ You can customize the appearance of the prompter avatar by using the `promptIcon
 
 ![PromptIconCss](images/promptIconCss.png)
 
-## Adding response iconCSS
+## Adding response iconCss
 
-You can use the `responseIconCss` property to customize the appearance of the responder avatar. By default, the `e-assistview-icon` class is added as the built-in AI AssistView response icon.
+You can use the [responseIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_ResponseIconCss) property to customize the appearance of the responder avatar. By default, the `e-assistview-icon` class is added as the built-in AI AssistView response icon.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -98,7 +98,7 @@ You can use the `responseIconCss` property to customize the appearance of the re
 
 ## Show or hide clear button
 
-You can use the `showClearButton` property to show or hide the clear button. By default, its value is `false`, when the clear button is clicked, the prompt text entered will be cleared.
+You can use the [showClearButton](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_ShowClearButton) property to show or hide the clear button. By default, its value is `false`, when the clear button is clicked, the prompt text entered will be cleared.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

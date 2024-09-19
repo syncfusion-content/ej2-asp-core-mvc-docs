@@ -1,10 +1,10 @@
 @using Syncfusion.EJ2.InteractiveChat;
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    <ejs-aiassistview id="aiAssistView" activeView="1" promptRequest="onPromptRequest" created="onCreated">
+    <ejs-aiassistview id="aiAssistView" promptRequest="onPromptRequest" created="onCreated">
         <e-aiassistview-views>
-            <e-aiassistview-view type="Assist" name="Prompt"></e-aiassistview-view>
-            <e-aiassistview-view type="Custom" name="Response" iconCss="e-icons e-comment-show"></e-aiassistview-view>
+            <e-aiassistview-view type="Assist"></e-aiassistview-view>
+            <e-aiassistview-view type="Custom" name="Response" viewTemplate="<div class='view-container'><h5>Response view content</h5></div>"></e-aiassistview-view>
         </e-aiassistview-views>
     </ejs-aiassistview>
 </div>
