@@ -58,23 +58,33 @@ When the 'Match Any Word' option is enabled, the entered text in the search inpu
 
 ![Alt text](./images/MultiSearchPopup.png)
 
-### Find text method :- 
+## Find text method
 Searches for the specified text or an array of strings within the document and returns the bounding rectangles for each occurrence. The search can be case-sensitive based on the provided parameters. If a specific page index is provided, it returns the bounding rectangles for these search strings on that page; otherwise, it returns the bounding rectangles for all pages in the document where the strings were found.
 
 ### Find and get the bounds of a text
 Searches for the specified text within the document and returns the bounding rectangles of the matched text. The search can be case-sensitive based on the provided parameter. It returns the bounding rectangles for all pages in the document where the text was found. The below code snippet shows how to get the bounds of the given text:
 
 {% tabs %}
-{% highlight MVC tabtitle="MVC Code Block" %}
+{% highlight MVC tabtitle="Standalone" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
-
 <div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
-                   resourceUrl="https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib">
-    </ejs-pdfviewer>
+    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+
+<script>
+    function findTextBounds() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        console.log(viewer.textSearch.findText('pdf', false));
+    }
+</script>
+
+{% endhighlight %}
+{% highlight MVC tabtitle="Server-backed" %}
+
+<button type="button" onclick="findTextBounds()">FindTextBounds</button>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
 </div>
 
 <script>
@@ -91,16 +101,26 @@ Searches for the specified text within the document and returns the bounding rec
 Searches for the specified text within the document and returns the bounding rectangles of the matched text. The search can be case-sensitive based on the provided parameter. It returns the bounding rectangles for that page in the document where the text was found. The below code snippet shows how to get the bounds of the given text from the desired page:
 
 {% tabs %}
-{% highlight MVC tabtitle="MVC Code Block" %}
+{% highlight MVC tabtitle="Standalone" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
-
 <div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
-                   resourceUrl="https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib">
-    </ejs-pdfviewer>
+    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+
+<script>
+    function findTextBounds() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        console.log(viewer.textSearch.findText('pdf', false, 7));
+    }
+</script>
+
+{% endhighlight %}
+{% highlight MVC tabtitle="Server-backed" %}
+
+<button type="button" onclick="findTextBounds()">FindTextBounds</button>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
 </div>
 
 <script>
@@ -117,16 +137,26 @@ Searches for the specified text within the document and returns the bounding rec
 Searches for an array of strings within the document and returns the bounding rectangles for each occurrence. The search can be case-sensitive based on the provided parameters. It returns the bounding rectangles for all pages in the document where the strings were found.
 
 {% tabs %}
-{% highlight MVC tabtitle="MVC Code Block" %}
+{% highlight MVC tabtitle="Standalone" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
-
 <div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
-                   resourceUrl="https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib">
-    </ejs-pdfviewer>
+    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+
+<script>
+    function findTextBounds() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        console.log(viewer.textSearch.findText(['pdf', 'adobe'], false));
+    }
+</script>
+
+{% endhighlight %}
+{% highlight MVC tabtitle="Server-backed" %}
+
+<button type="button" onclick="findTextBounds()">FindTextBounds</button>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
 </div>
 
 <script>
@@ -143,16 +173,26 @@ Searches for an array of strings within the document and returns the bounding re
 Searches for an array of strings within the document and returns the bounding rectangles for each occurrence. The search can be case-sensitive based on the provided parameters. It returns the bounding rectangles for these search strings on that particular page where the strings were found.
 
 {% tabs %}
-{% highlight MVC tabtitle="MVC Code Block" %}
+{% highlight MVC tabtitle="standalone" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
-
 <div style="width:100%;height:600px">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
-                   resourceUrl="https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib">
-    </ejs-pdfviewer>
+    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+</div>
+
+<script>
+    function findTextBounds() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        console.log(viewer.textSearch.findText(['pdf', 'adobe'], false, 7));
+    }
+</script>
+
+{% endhighlight %}
+{% highlight MVC tabtitle="Server-backed" %}
+
+<button type="button" onclick="findTextBounds()">FindTextBounds</button>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
 </div>
 
 <script>
