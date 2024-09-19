@@ -48,7 +48,7 @@ In the following example, toolbar item type is set as `Button`.
 {% endhighlight %}
 {% endtabs %}
 
-![Itemtype](images/itemtype.png)
+![Itemtype](images/align.png)
 
 #### Setting text
 
@@ -228,8 +228,6 @@ The [ItemClicked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.In
 {% endhighlight %}
 {% endtabs %}
 
-![ItemClicked](images/itemClicked.png)
-
 ## Built-in toolbar items
 
 ### Prompt
@@ -266,8 +264,6 @@ The [ItemClicked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.In
 {% endhighlight %}
 {% endtabs %}
 
-![PromptItemClick](images/promptItemClick.png)
-
 ### Response
 
 By default, the response toolbar renders the built-in items like `copy`, `like`, and `dislike` items to perform response copy and perform rating actions.
@@ -301,8 +297,6 @@ The [ItemClicked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.In
 {% include code-snippet/ai-assistview/toolbar-items/responseItemClick/responseItemClick.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-![ResponseItemClick](images/responseItemClick.png)
 
 ## Adding custom toolbar items
 

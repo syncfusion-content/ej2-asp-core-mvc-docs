@@ -202,8 +202,6 @@ The [itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.I
 {% endhighlight %}
 {% endtabs %}
 
-![ItemClicked](images/itemClicked.png)
-
 ## Built-in toolbar items
 
 ### Prompt
@@ -234,8 +232,6 @@ The [itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.I
 {% endhighlight %}
 {% endtabs %}
 
-![PromptItemClick](images/promptItemClick.png)
-
 ### Response
 
 By default, the response toolbar renders the built-in items like `copy`, `like`, and `dislike` items to perform response copy and perform rating actions.
@@ -263,8 +259,6 @@ The [itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.I
 {% include code-snippet/ai-assistview/toolbar-items/responseItemClick/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-![ResponseItemClick](images/responseItemClick.png)
 
 ## Adding custom toolbar items
 
