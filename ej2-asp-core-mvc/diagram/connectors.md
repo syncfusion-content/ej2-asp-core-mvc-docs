@@ -396,6 +396,33 @@ The [`length`](https://ej2.syncfusion.com/documentation/api/diagram/orthogonalSe
 
 N> You need to mention the segment type as same as what you mentioned in connector type. There should be no contradiction between connector type and segment type.
 
+## How to customize Orthogonal Segment Thumb Size
+
+Orthogonal segment thumbs default to size 10. This can be adjusted globally or for individual connectors using the [`segmentThumbSize`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) property.
+To change the thumb size for all Orthogonal connectors, set the [`segmentThumbSize`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) property in the diagram’s model.
+To customize the thumb size for a specific connector, disable the [`InheritSegmentThumbSize`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) constraint, then set the desired [`segmentThumbSize`](https://ej2.syncfusion.com/documentation/api/diagram/segments/).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/connectors/orthogonalThumbSize/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="orthogonal.cs" %}
+{% include code-snippet/diagram/connectors/orthogonalThumbSize/orthogonal.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="orthogonal.cs" %}
+{% include code-snippet/diagram/connectors/orthogonalThumbSize/orthogonal.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
 ## Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target nodes.
@@ -474,6 +501,31 @@ The [`vector1`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegme
 {% endtabs %}
 {% endif %}
 
+## How to customize Bezier Segment Thumb Size
+
+Bezier segment thumbs default to size 10. This can be adjusted globally or for individual connectors using the [`segmentThumbSize`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) property.
+To change the thumb size for all Bezier connectors, set the [`segmentThumbSize`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) property in the diagram’s model.
+To customize the thumb size for a specific connector, disable the [`InheritSegmentThumbSize`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) constraint, then set the desired [`segmentThumbSize`](https://ej2.syncfusion.com/documentation/api/diagram/segments/).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/connectors/bezierThumbSize/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="bezier.cs" %}
+{% include code-snippet/diagram/connectors/bezierThumbSize/bezier.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="bezier.cs" %}
+{% include code-snippet/diagram/connectors/bezierThumbSize/bezier.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## Decorator
