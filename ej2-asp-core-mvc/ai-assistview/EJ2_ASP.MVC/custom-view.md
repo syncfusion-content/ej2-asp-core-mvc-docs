@@ -12,71 +12,52 @@ documentation: ug
 
 ## Adding custom views
 
-By using the `Views` property you can define the collection of different assist view models in the AI AssistView. You can customize the default and the custom views added.
+By using the [Views](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_Views) property you can define the collection of different assist view models in the AI AssistView. You can customize the default and the custom views added.
 
 ### Setting view type
 
-You can set the type of view by using the `Type` property. It accepts two values such as `Assist`, and `Custom`.
+You can set the type of view by using the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AssistViewType.html) property. It accepts two values such as [Assist](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AssistViewType.html#Syncfusion_EJ2_InteractiveChat_AssistViewType_Assist), and [Custom](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AssistViewType.html#Syncfusion_EJ2_InteractiveChat_AssistViewType_Custom).
 
 {% tabs %}
-{% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
-
-  @Html.EJS().AIAssistView("aiAssistView").Views(view =>
-  {
-    view.Type(AssistViewType.Assist).Add();
-    view.Type(AssistViewType.Custom).Add();
-  }).Render()
-....
-
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/views/viewType/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ViewType.cs" %}
+{% include code-snippet/ai-assistview/views/viewType/viewType.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![ViewType](images/view-type.png)
 
 ### Setting name
 
 You can use the `Name` property to specifies the header name of the `Assist` or `Custom` views in the AI AssistView.
 
 {% tabs %}
-{% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
-
-  @Html.EJS().AIAssistView("aiAssistView").Views(view =>
-  {
-    view.Name("Prompt").Add();
-    view.Type(AssistViewType.Custom).Name("Response").Add();
-  }).Render()
-....
-
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/views/viewName/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="viewName.cs" %}
+{% include code-snippet/ai-assistview/views/viewName/viewName.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-### Setting iconCSS
+![ViewName](images/view-name.png)
+
+### Setting iconCss
 
 You can customize the view icons by using the `IconCss` property. By default the `e-assistview-icon` class is added as built-in header icon for the AI AssistView.
 
 {% tabs %}
-{% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
-
-  @Html.EJS().AIAssistView("aiAssistView").Views(view =>
-  {
-    view.IconCss("e-icons e-assistview-icon").Add();
-    view.Type(AssistViewType.Custom).IconCss("e-icons e-comment-show").Add();
-  }).Render()
-....
-
-{% endhighlight %}
-{% endtabs %}
-
-The following example illustrates how types, name, and iconCss are used in a AI AssistView control.
-
-{% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/ai-assistview/views/itemType/razor %}
+{% include code-snippet/ai-assistview/views/viewIcon/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="ItemType.cs" %}
-{% include code-snippet/ai-assistview/views/itemType/itemType.cs %}
+{% highlight c# tabtitle="ViewIcon.cs" %}
+{% include code-snippet/ai-assistview/views/viewIcon/viewIcon.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![ItemType](images/itemType.png)
+![ViewIcon](images/view-icon.png)
 
 ### Setting view template 
 

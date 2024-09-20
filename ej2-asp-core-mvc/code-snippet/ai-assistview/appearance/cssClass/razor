@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.InteractiveChat
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    @Html.EJS().AIAssistView("aiAssistView").CssClass("e-custom").PromptRequest("onPromptRequest").Created("onCreated").Render()
+    @Html.EJS().AIAssistView("aiAssistView").CssClass("custom-container").PromptRequest("onPromptRequest").Created("onCreated").Render()
 </div>
 
 <script>
@@ -18,18 +18,18 @@
 </script>
 
 <style>
-    .aiassist-container .e-aiassistview.e-custom {
+    .aiassist-container .e-aiassistview.custom-container {
         border-color: #e0e0e0;
         background-color: #f4f4f4;
         box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
     }
 
-    .aiassist-container .e-aiassistview.e-custom .e-view-header .e-toolbar,
-    .aiassist-container .e-aiassistview.e-custom .e-view-header .e-toolbar-items {
+    .aiassist-container .e-aiassistview.custom-container .e-view-header .e-toolbar,
+    .aiassist-container .e-aiassistview.custom-container .e-view-header .e-toolbar-items {
         background: #d5d5d5;
     }
 
-    .aiassist-container .e-aiassistview.e-custom .e-view-content .e-input-group {
+    .aiassist-container .e-aiassistview.custom-container .e-view-content .e-input-group {
         border: 3px solid #e0e0e0 !important;
     }
 </style>

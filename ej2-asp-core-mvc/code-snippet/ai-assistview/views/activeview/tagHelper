@@ -3,8 +3,8 @@
 <div class="aiassist-container" style="height: 350px; width: 650px;">
     <ejs-aiassistview id="aiAssistView" activeView="1" promptRequest="onPromptRequest" created="onCreated">
         <e-aiassistview-views>
-            <e-aiassistview-view type="Assist" name="Prompt"></e-aiassistview-view>
-            <e-aiassistview-view type="Custom" name="Response" iconCss="e-icons e-comment-show"></e-aiassistview-view>
+            <e-aiassistview-view type="Assist"></e-aiassistview-view>
+            <e-aiassistview-view type="Custom" name="Response" iconCss="e-icons e-comment-show" viewTemplate="<div class='view-container'><h5>Response view content</h5></div>"></e-aiassistview-view>
         </e-aiassistview-views>
     </ejs-aiassistview>
 </div>
@@ -21,3 +21,12 @@
         }, 2000);
     }
 </script>
+
+<style>
+    .view-container {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
