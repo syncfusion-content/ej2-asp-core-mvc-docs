@@ -92,10 +92,10 @@ namespace WebApplication.Controllers
         }
         public ActionResult Index()
         {
-            List<TabTabItem> orientationItems = new List<TabTabItem>
+            List<TabItem> orientationItems = new List<TabItem>
             {
-                new TabTabItem { Header = new TabHeader { Text = "Overview" }, Content = "#overview" },
-                new TabTabItem { Header = new TabHeader { Text = "Filemanager" }, Content = "#filemanager" }
+                new TabItem { Header = new TabHeader { Text = "Overview" }, Content = "#overview" },
+                new TabItem { Header = new TabHeader { Text = "Filemanager" }, Content = "#filemanager" }
             };
             ViewBag.orientationItems = orientationItems;
             return View();

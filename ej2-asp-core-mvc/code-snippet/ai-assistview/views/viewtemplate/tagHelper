@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div class="aiassist-container" style="width: max(50%, 500px); margin: 30px auto;">
+    <ejs-aiassistview id="aiAssistView">
+        <e-aiassistview-views>
+            <e-aiassistview-view type="Assist" name="Prompt" viewTemplate="<div class='view-container'><h5>Prompt view content</h5></div>"></e-aiassistview-view>
+            <e-aiassistview-view type="Custom" name="Response" iconCss="e-icons e-comment-show" viewTemplate="<div class='view-container'><h5>Response view content</h5></div>"></e-aiassistview-view>
+        </e-aiassistview-views>
+    </ejs-aiassistview>
+</div>
+
+<style>
+    .view-container {
+        margin: 20px auto;
+        width: 80%;
+    }
+</style>
