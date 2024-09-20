@@ -149,10 +149,10 @@ In the image editor, when an image is cropped, it is usually enlarged or scaled 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/tagHelper %}
+{% include code-snippet/image-editor/selection-cropping/maintain-size/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/default.cs %}
+{% include code-snippet/image-editor/selection-cropping/maintain-size/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -160,10 +160,10 @@ In the image editor, when an image is cropped, it is usually enlarged or scaled 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/razor %}
+{% include code-snippet/image-editor/selection-cropping/maintain-size/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/default.cs %}
+{% include code-snippet/image-editor/selection-cropping/maintain-size/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -180,10 +180,10 @@ When selecting an area for cropping, users can typically resize the selection fr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/tagHelper %}
+{% include code-snippet/image-editor/selection-cropping/lock-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/default.cs %}
+{% include code-snippet/image-editor/selection-cropping/lock-selection/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -191,10 +191,10 @@ When selecting an area for cropping, users can typically resize the selection fr
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/razor %}
+{% include code-snippet/image-editor/selection-cropping/lock-selection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/default.cs %}
+{% include code-snippet/image-editor/selection-cropping/lock-selection/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -211,10 +211,10 @@ Users can perform cropping either through the toolbar or by using our public met
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/tagHelper %}
+{% include code-snippet/image-editor/selection-cropping/custom-crop/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/default.cs %}
+{% include code-snippet/image-editor/selection-cropping/custom-crop/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -222,10 +222,10 @@ Users can perform cropping either through the toolbar or by using our public met
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/razor %}
+{% include code-snippet/image-editor/selection-cropping/custom-crop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/selection-cropping/cropping/default.cs %}
+{% include code-snippet/image-editor/selection-cropping/custom-crop/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

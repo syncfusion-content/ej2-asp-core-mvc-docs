@@ -55,10 +55,10 @@ Users can easily open images in the Image Editor using a Base64-encoded string. 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/open-image/tagHelper %}
+{% include code-snippet/image-editor/open-save/open-image-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/open-image/default.cs %}
+{% include code-snippet/image-editor/open-save/open-image-cs1/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,10 +66,10 @@ Users can easily open images in the Image Editor using a Base64-encoded string. 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/open-image/razor %}
+{% include code-snippet/image-editor/open-save/open-image-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/open-image/default.cs %}
+{% include code-snippet/image-editor/open-save/open-image-cs1/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -84,10 +84,10 @@ User can easily open images in the Image Editor from Blob storage. This method a
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/open-image/tagHelper %}
+{% include code-snippet/image-editor/open-save/open-image-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/open-image/default.cs %}
+{% include code-snippet/image-editor/open-save/open-image-cs2/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -95,10 +95,10 @@ User can easily open images in the Image Editor from Blob storage. This method a
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/open-image/razor %}
+{% include code-snippet/image-editor/open-save/open-image-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/open-image/default.cs %}
+{% include code-snippet/image-editor/open-save/open-image-cs2/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -111,10 +111,10 @@ You can utilize the [`fileOpened`](https://helpej2.syncfusion.com/angular/docume
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/open-image/tagHelper %}
+{% include code-snippet/image-editor/open-save/open-image-cs3/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/open-image/default.cs %}
+{% include code-snippet/image-editor/open-save/open-image-cs3/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -122,10 +122,10 @@ You can utilize the [`fileOpened`](https://helpej2.syncfusion.com/angular/docume
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/open-image/razor %}
+{% include code-snippet/image-editor/open-save/open-image-cs3/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/open-image/default.cs %}
+{% include code-snippet/image-editor/open-save/open-image-cs3/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -186,10 +186,10 @@ To save an image as a base64 format, use the [`getImageData`](https://helpej2.sy
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/save-image/tagHelper %}
+{% include code-snippet/image-editor/open-save/save-image-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/save-image/default.cs %}
+{% include code-snippet/image-editor/open-save/save-image-cs1/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -197,10 +197,10 @@ To save an image as a base64 format, use the [`getImageData`](https://helpej2.sy
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/save-image/razor %}
+{% include code-snippet/image-editor/open-save/save-image-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/save-image/default.cs %}
+{% include code-snippet/image-editor/open-save/save-image-cs1/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -221,10 +221,10 @@ To save an image as a blob, use the [`getImageData`](https://helpej2.syncfusion.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/save-image/tagHelper %}
+{% include code-snippet/image-editor/open-save/save-image-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/save-image/default.cs %}
+{% include code-snippet/image-editor/open-save/save-image-cs2/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -232,10 +232,10 @@ To save an image as a blob, use the [`getImageData`](https://helpej2.syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/save-image/razor %}
+{% include code-snippet/image-editor/open-save/save-image-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/save-image/default.cs %}
+{% include code-snippet/image-editor/open-save/save-image-cs2/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -252,10 +252,10 @@ You can utilize the [`fileOpened`](https://helpej2.syncfusion.com/angular/docume
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/save-image/tagHelper %}
+{% include code-snippet/image-editor/open-save/save-image-cs3/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/save-image/default.cs %}
+{% include code-snippet/image-editor/open-save/save-image-cs3/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -263,10 +263,10 @@ You can utilize the [`fileOpened`](https://helpej2.syncfusion.com/angular/docume
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/open-save/save-image/razor %}
+{% include code-snippet/image-editor/open-save/save-image-cs3/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/open-save/save-image/default.cs %}
+{% include code-snippet/image-editor/open-save/save-image-cs3/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
