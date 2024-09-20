@@ -3,7 +3,7 @@ layout: post
 title: Reset an image in Image Editor Component | Syncfusion
 description: Learn here all about How to Reset an image in Image Component of Syncfusion Essential JS 2 and more.
 control: Reset
-platform: ej2-react
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
