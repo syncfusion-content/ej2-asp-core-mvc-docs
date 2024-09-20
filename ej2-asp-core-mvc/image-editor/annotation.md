@@ -563,7 +563,7 @@ We provide default settings for stroke color, stroke width, fill color, and othe
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-        
+
 Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-default-stroke.jpg)
