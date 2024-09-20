@@ -2,7 +2,7 @@ public List<ToolbarItemModel> Items { get; set; } = new List<ToolbarItemModel>()
 
 public ActionResult CssClass()
 {
-    Items.Add(new ToolbarItemModel { align = "Right", iconCss = "e-icons e-user", cssClass = "e-custom", type = "Button" });
+    Items.Add(new ToolbarItemModel { align = "Right", iconCss = "e-icons e-user", cssClass = "custom-btn", type = "Button" });
     ViewBag.Items = Items;
     return View();
 }

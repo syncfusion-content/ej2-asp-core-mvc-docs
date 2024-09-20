@@ -14,7 +14,7 @@ This section describes the AI AssistView events that will be triggered when appr
 
 ## created
 
-The AI AssistView control triggers the `created` event when the control rendering is completed.
+The AI AssistView control triggers the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_Created) event when the control rendering is completed.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -24,7 +24,7 @@ The AI AssistView control triggers the `created` event when the control renderin
 
 ## promptRequest
 
-The `promptRequest` event is triggered when the prompt request is made in the AI AssistView control.
+The [promptRequest](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptRequest) event is triggered when the prompt request is made in the AI AssistView control.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -34,7 +34,7 @@ The `promptRequest` event is triggered when the prompt request is made in the AI
 
 ## promptChanged
 
-The `promptChanged` event is triggered when the prompt text is changed in the AI AssistView control.
+The [promptChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptChanged) event is triggered when the prompt text is changed in the AI AssistView control.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

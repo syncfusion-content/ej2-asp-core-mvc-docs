@@ -1,10 +1,12 @@
-@using Syncfusion.EJ2.InteractiveChat
+@using Syncfusion.EJ2.InteractiveChat;
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    @Html.EJS().AIAssistView("aiAssistView").PromptRequest("onPromptRequest").Created("onCreated").ToolbarSettings(new AIAssistViewToolbarSettings()
-    {
-        Items = ViewBag.Items
-    }).Render()
+    <ejs-aiassistview id="aiAssistView" promptRequest="onPromptRequest" created="onCreated">
+        <e-aiassistview-views>
+            <e-aiassistview-view type="Assist" name="Prompt"></e-aiassistview-view>
+            <e-aiassistview-view type="Custom" name="Response" viewTemplate="<div class='view-container'><h5>Response view content</h5></div>"></e-aiassistview-view>
+        </e-aiassistview-views>
+    </ejs-aiassistview>
 </div>
 
 <script>
@@ -19,13 +21,3 @@
         }, 2000);
     }
 </script>
-
-<style>
-    .custom-btn .e-user::before {
-        color: blue;
-        font-size: 15px;
-    }
-    .custom-btn.e-toolbar-item button.e-tbar-btn {
-        border: 1px solid #dcdcdc;
-    }
-</style>

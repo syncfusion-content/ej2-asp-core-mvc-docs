@@ -10,7 +10,7 @@
 }
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    @Html.EJS().AIAssistView("aiAssistView").Prompts(promptsData).ResponseIconCss("e-icons e-star-filled").PromptRequest("onPromptRequest").Created("onCreated").Render()
+    @Html.EJS().AIAssistView("aiAssistView").Prompts(promptsData).ResponseIconCss("e-icons e-bullet-4").PromptRequest("onPromptRequest").Created("onCreated").Render()
 </div>
 
 <script>
