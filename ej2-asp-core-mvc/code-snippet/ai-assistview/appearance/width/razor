@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.InteractiveChat
 
-<div class="aiassist-container" style="height: 350px; width: 750px;">
+<div class="aiassist-container" style="height: 350px;">
     @Html.EJS().AIAssistView("aiAssistView").Width("650px").PromptRequest("onPromptRequest").Created("onCreated").Render()
 </div>
 
