@@ -74,6 +74,10 @@ Users can easily open images in the Image Editor using a Base64-encoded string. 
 {% endtabs %}
 {% endif %}
 
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-save-base.jpg)
+
 ### Open an image from Blob storage.
 
 User can easily open images in the Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the open method, and the image will be loaded into the editor.
@@ -102,6 +106,10 @@ User can easily open images in the Image Editor from Blob storage. This method a
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-open-blob.jpg)
 
 ### Add Watermarks while opening an image
 
@@ -132,7 +140,7 @@ You can utilize the [`fileOpened`](https://helpej2.syncfusion.com/angular/docume
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-open.jpg)
+![ImageEditor Sample](images/image-editor-watermark.jpg)
 
 ## Supported image formats 
 
@@ -273,7 +281,7 @@ You can utilize the [`fileOpened`](https://helpej2.syncfusion.com/angular/docume
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-save.jpg)
+![ImageEditor Sample](images/image-editor-watermark.jpg)
 
 ### Remove default Save button and add custom button to save the image to server
 
