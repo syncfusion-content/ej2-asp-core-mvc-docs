@@ -140,7 +140,7 @@ You can utilize the [`fileOpened`](https://helpej2.syncfusion.com/angular/docume
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-watermark.jpg)
+![ImageEditor Sample](images/image-editor-open.jpg)
 
 ## Supported image formats 
 

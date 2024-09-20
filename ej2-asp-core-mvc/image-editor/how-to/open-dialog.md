@@ -39,3 +39,7 @@ Here is an example of redndering an dialog in image Editor control
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-dialog.jpg)

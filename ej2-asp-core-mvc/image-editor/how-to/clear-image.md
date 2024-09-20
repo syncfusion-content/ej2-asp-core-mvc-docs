@@ -37,3 +37,7 @@ Here is an example of clearing an Image using `clear` method.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-clear-image.jpg)
