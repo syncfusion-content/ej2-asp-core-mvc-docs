@@ -44,14 +44,13 @@
 <script id="footerContent" type="text/x-jsrender">
     <div class="custom-footer">
         <textarea id="promptTextArea" class="e-input" rows="2" placeholder="Enter your prompt here"></textarea>
-        <button id="sendPrompt" class="e-btn e-primary">Send</button>
+        <button id="sendPrompt" class="e-btn e-primary">Generate</button>
     </div>
 </script>
 
 <style>
     .custom-footer {
         display: flex;
-        flex-direction: column;
         gap: 10px;
         padding: 10px;
         background-color: transparent;
@@ -66,5 +65,6 @@
 
     #sendPrompt {
         padding: 5px 15px;
+        align-self: flex-end;
     }
 </style>

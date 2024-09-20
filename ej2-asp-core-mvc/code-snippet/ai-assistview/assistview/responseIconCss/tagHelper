@@ -11,7 +11,7 @@
 }
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    <ejs-aiassistview id="aiAssistView" prompts="@promptsData" responseIconCss="e-icons e-star-filled" promptRequest="onPromptRequest" created="onCreated"></ejs-aiassistview>
+    <ejs-aiassistview id="aiAssistView" prompts="@promptsData" responseIconCss="e-icons e-bullet-4" promptRequest="onPromptRequest" created="onCreated"></ejs-aiassistview>
 </div>
 
 <script>
