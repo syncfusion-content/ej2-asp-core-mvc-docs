@@ -13,9 +13,19 @@
         assistObj = this;
     }
     function onPromptRequest(args) {
-        setTimeout(function () {
-            var defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+        setTimeout(() => {
+            let defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
             assistObj.addPromptResponse(defaultResponse);
         }, 2000);
     }
 </script>
+
+<style>
+    .custom-btn .e-user::before {
+        color: blue;
+        font-size: 15px;
+    }
+    .custom-btn.e-toolbar-item button.e-tbar-btn {
+        border: 1px solid #dcdcdc;
+    }
+</style>
