@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Range selector in ##Platform_Name## Stock Chart | Syncfusion
-description: Learn here all about Range selector in Syncfusion ##Platform_Name## Stock Chart control, its elements, and more.
+description: Learn here all about range selector support in Syncfusion ##Platform_Name## Stock Chart control, its elements, and more.
 platform: ej2-asp-core-mvc
 control: Stock Chart
 publishingplatform: ##Platform_Name##
