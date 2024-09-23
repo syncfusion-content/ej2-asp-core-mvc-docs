@@ -1,10 +1,10 @@
 @using Syncfusion.EJ2.Navigations;
 
 @(Html.EJS().Tab("ej2Tab")
-    .Items(new List<TabTabItem> {
-        new TabTabItem { Header = ViewBag.headerTextOne, Content = "Andrew received his BTS commercial in 1974 and a Ph.D. in international marketing from the University of Dallas in 1981.He is fluent in French and Italian and reads German.He joined the company as a sales representative, was promoted to sales manager in January 1992 and to vice president of sales in March 1993.Andrew is a member of the Sales Management Roundtable, the Seattle Chamber of Commerce, and the Pacific Rim Importers Association." },
-        new TabTabItem { Header = ViewBag.headerTextTwo, Content = "Margaret holds a BA in English literature from Concordia College (1958) and an MA from the American Institute of Culinary Arts (1966).She was assigned to the London office temporarily from July through November 1992." },
-        new TabTabItem { Header = ViewBag.headerTextThree, Content = "Janet has a BS degree in chemistry from Boston College (1984).She has also completed a certificate program in food retailing management.Janet was hired as a sales associate in 1991 and promoted to sales representative in February 1992." },
+    .Items(new List<TabItem> {
+        new TabItem { Header = ViewBag.headerTextOne, Content = "Andrew received his BTS commercial in 1974 and a Ph.D. in international marketing from the University of Dallas in 1981.He is fluent in French and Italian and reads German.He joined the company as a sales representative, was promoted to sales manager in January 1992 and to vice president of sales in March 1993.Andrew is a member of the Sales Management Roundtable, the Seattle Chamber of Commerce, and the Pacific Rim Importers Association." },
+        new TabItem { Header = ViewBag.headerTextTwo, Content = "Margaret holds a BA in English literature from Concordia College (1958) and an MA from the American Institute of Culinary Arts (1966).She was assigned to the London office temporarily from July through November 1992." },
+        new TabItem { Header = ViewBag.headerTextThree, Content = "Janet has a BS degree in chemistry from Boston College (1984).She has also completed a certificate program in food retailing management.Janet was hired as a sales associate in 1991 and promoted to sales representative in February 1992." },
     })
     .HeightAdjustMode(HeightStyles.Auto)
     .OverflowMode(OverflowMode.Popup)

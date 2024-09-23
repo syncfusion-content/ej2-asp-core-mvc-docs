@@ -336,3 +336,27 @@ The diagram provides support to show tooltip when the mouse hovers over any fixe
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+### Customizing Fixed User Handles with HTML Templates
+
+Fixed user handles are interactive elements added to nodes and connectors. Their appearance can be customized using HTML templates. To render fixed user handle with HTML templates, we need to create an HTML element inside a `<script>` tag then add the template reference using the [`fixedUserHandleTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUserHandle.html) property in the diagram model.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/interaction/fixeduserhandletemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Node.cs" %}
+{% include code-snippet/diagram/interaction/fixeduserhandletemplate/node.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Node.cs" %}
+{% include code-snippet/diagram/interaction/fixeduserhandletemplate/node.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

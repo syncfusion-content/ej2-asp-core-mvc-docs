@@ -1,7 +1,9 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
     @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { }).Render()
 </div>
-@Html.EJS().Button("btnClick").CssClass("e-primary").Content("Click").Click("clickHandler").Render()
+@Html.EJS().Button("addText").CssClass("e-primary").Content("Add Text").Click("addTextHandler").Render()
+@Html.EJS().Button("outline").CssClass("e-primary").Content("Text Outline").Click("outlineHandler").Render()
+@Html.EJS().Button("background").CssClass("e-primary").Content("Text Background Color").Click("backgroundHandler").Render()
 
 <script>
     function created() {
@@ -13,9 +15,17 @@
         }
     }
 
-    function clickHandler() {
+    function addTextHandler() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imageEditorObj.drawText(500, 500, 'Syncfusion', 'Arial', 100, true, true, '#000');
+    }
+    function outlineHandler() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.drawText(500, 500, 'Syncfusion', 'Arial', 70, false, false, '', false, null, '', 'green', 8);
+    }
+    function backgroundHandler() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.drawText(500, 500, 'Syncfusion', 'Arial', 70, false, false, '', false, null, 'red', '', null);
     }
 </script>
 
