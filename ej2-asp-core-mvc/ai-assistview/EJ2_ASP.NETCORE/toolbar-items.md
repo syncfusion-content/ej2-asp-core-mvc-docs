@@ -26,6 +26,9 @@ You can customize the toolbar icons by using the `iconCss` property.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/align/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Align.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/align/align.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![IconCss](images/align.png)
@@ -40,6 +43,9 @@ In the following example, toolbar item type is set as `Button`.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/itemtype/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Itemtype.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/itemtype/itemtype.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Itemtype](images/align.png)
@@ -51,6 +57,9 @@ You can use the `text` property to set the text for toolbar item.
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/text/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Text.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/text/text.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,6 +73,9 @@ You can use the `visible` property to specify whether to show or hide the toolba
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/visible/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Visible.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/visible/visible.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Visible](images/visible.png)
@@ -75,6 +87,9 @@ You can use the `disabled` property to disable the toolbar item. By default, its
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/disabled/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Disabled.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/disabled/disabled.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,6 +103,9 @@ You can use the `tooltip` property to specify the tooltip text to be displayed o
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/tooltip/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Tooltip.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/tooltip/tooltip.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Tooltip](images/tooltip.png)
@@ -99,6 +117,9 @@ You can use the `cssClass` property to customize the toolbar item.
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/cssClass/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CssClass.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/cssClass/cssClass.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -113,6 +134,9 @@ In the following example, toolbar item type is set with `Right`.
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/align/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Align.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/align/align.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -188,6 +212,9 @@ You can use the `template` property to add custom toolbar item in the AI AssistV
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/template/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/template/template.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Template](images/template.png)
@@ -199,6 +226,9 @@ The [itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.I
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/itemClicked/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ItemClicked.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/itemClicked/itemClicked.cs %}
 {% endhighlight %}
 {% endtabs %}
 
