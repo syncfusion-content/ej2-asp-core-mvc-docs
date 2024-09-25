@@ -143,7 +143,7 @@ You can use [OpensOnHover](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 ## Customized icon
 
-You can enhance the appearance of the Speed Dial Control in its default primary state by customizing the icon color using the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_CssClass) property.
+You can use the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_CssClass) property to customize the appearance of the speedDial control in its default primary state. Below example demonstrates the `cssClass` property usage in speedDial.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
