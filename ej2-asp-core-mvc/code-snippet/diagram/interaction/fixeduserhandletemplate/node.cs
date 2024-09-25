@@ -9,25 +9,74 @@ using System.Drawing;
 namespace EJ2MVCSampleBrowser.Controllers.Diagram {
     public partial class DiagramController: Controller {
         public ActionResult Nodes() {
-            List < DiagramNode > nodes = new List < DiagramNode > ();
-            // A fixed user handle is created and stored in fixed user handle collection of Node.
-            List<DiagramNodeFixedUserHandle> handle = new List<DiagramNodeFixedUserHandle>();
-            handle.Add(new DiagramNodeFixedUserHandle() { Tooltip = new DiagramDiagramTooltip() { Content = "handle1", Position = "TopLeft",  RelativeMode= TooltipRelativeMode.Object}, Margin = new DiagramMargin() {Right=20 },Width=20,Height=20, PathData = "M60.3,18H27.5c-3,0-5.5,2.4-5.5,5.5v38.2h5.5V23.5h32.7V18z M68.5,28.9h-30c-3,0-5.5,2.4-5.5,5.5v38.2c0,3,2.4,5.5,5.5,5.5h30c3,0,5.5-2.4,5.5-5.5V34.4C73.9,31.4,71.5,28.9,68.5,28.9z M68.5,72.5h-30V34.4h30V72.5z" });
-            nodes.Add(new DiagramNode() {
-                Id = "node1",
+              List<DiagramNode> nodes = new List<DiagramNode>
+            {
+                new DiagramNode
+                {
+                    Id = "node1",
+                    OffsetX = 250,
+                    OffsetY = 250,
                     Width = 100,
                     Height = 100,
-                    BorderWidth=2,
-                    Style = new NodeStyleNodes() {
-                        Fill = "darkcyan"
+                    Style = new NodeStyle { Fill = "#6BA5D7", StrokeColor = "white" },
+                    FixedUserHandles = new List<DiagramNodeFixedUserHandle>
+                    {
+                        new DiagramNodeFixedUserHandle
+                        {
+                            Offset = new { x = 0, y = 0 },
+                            Margin = new { right = 20 },
+                            Width = 50,
+                            Height = 20,
+                            Id = "usercon1"
+                        }
+                    }
+                }
+            };
+
+            // Create connectors
+            List<DiagramConnector> connectors = new List<DiagramConnector>
+            {
+                new DiagramConnector
+                {
+                    Id = "connector1",
+                    Style = new ConnectorStyle
+                    {
+                        StrokeColor = "#6BA5D7",
+                        Fill = "#6BA5D7",
+                        StrokeWidth = 2
                     },
-                    OffsetX = 100,
-                    OffsetY = 100,
-                    FixedUserHandles = handle
-            });
-            ViewBag.nodes = nodes;
+                    TargetDecorator = new Decorator
+                    {
+                        Style = new DecoratorStyle
+                        {
+                            Fill = "#6BA5D7",
+                            StrokeColor = "#6BA5D7"
+                        }
+                    },
+                    SourcePoint = new DiagramPoint { X = 400, Y = 200 },
+                    TargetPoint = new DiagramPoint { X = 500, Y = 300 },
+                    Type = Segments.Orthogonal,
+                    FixedUserHandles = new List<DiagramConnectorFixedUserHandle>
+                    {
+                        new DiagramConnectorFixedUserHandle
+                        {
+                            Offset = 0.5,
+                            Width = 120,
+                            Alignment = "Before",
+                            Height = 20,
+                            Id = "usercon2",
+                            Displacement = new { x = 10, y = 10 }
+                        }
+                    }
+                }
+            };
+
+            ViewBag.Nodes = nodes;
+            ViewBag.Connectors = connectors;
+
             return View();
         }
     }
-    
 }
+    
+
