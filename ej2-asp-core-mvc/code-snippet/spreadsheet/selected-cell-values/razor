@@ -1,4 +1,4 @@
-@Html.EJS().Button("getSelectedCellValues").Content("Get Selected Cell Values").Render();
+@Html.EJS().Button("getSelectedCellValues").Content("Get Selected Cell Values").Render()
 @Html.EJS().Spreadsheet("spreadsheet").Sheets((sheet) =>
 {
     sheet.Ranges((ranges) =>
@@ -13,17 +13,17 @@
         var spreadsheet = document.getElementById("spreadsheet").ej2_instances[0];
         var sheet = spreadsheet.getActiveSheet();
         var selectedRange = sheet.selectedRange;
-        var index = getRangeIndexes(selectedRange);
-        var cellRange = getSwapRange(index);
-        var swappedRange = getRangeAddress(cellRange);
+        var index = ej.spreadsheet.getRangeIndexes(selectedRange);
+        var cellRange = ej.spreadsheet.getSwapRange(index);
+        var swappedRange = ej.spreadsheet.getRangeAddress(cellRange);
         var valueObject = [];
         var range = sheet.name + '!' + swappedRange;
         // Get the collection of selected cell values by using the getData() method.
         spreadsheet.getData(range).then((cells) => {
             cells.forEach((cell) => {
-                valueObject.push(isNullOrUndefined(cell.value) ? '' : cell.value);
+                valueObject.push(ej.base.isNullOrUndefined(cell.value) ? '' : cell.value);
             });
-        console.log("Collection of selected cell values:", valueObject);
+            console.log("Collection of selected cell values:", valueObject);
         });
     });
 
