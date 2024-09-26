@@ -16,10 +16,10 @@
     function clickHandler() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         var dimension = imgObj.getImageDimension();
-        imgObj.drawRectangle(dimension.x, dimension.y, 300, 200, null, '', '', null, null, 8);
-        imgObj.drawEllipse(dimension.x, dimension.y);
-        imgObj.drawLine(dimension.x, dimension.y);
-        imgObj.drawArrow(dimension.x, dimension.y + 10, dimension.x + 50, dimension.y + 10, 10);
+        imgObj.drawRectangle(dimension.x + 10, dimension.y + 60, 300, 200, null, '', '', null, null, 8);
+        imgObj.drawEllipse(dimension.x, dimension.y + 200);
+        imgObj.drawLine(dimension.x + 300, dimension.y + 30);
+        imgObj.drawArrow(dimension.x + 100, dimension.y + 30, dimension.x + 100, dimension.y + 10, 10);
         imgObj.drawPath([{ x: dimension.x, y: dimension.y }, { x: dimension.x + 50, y: dimension.y + 50 }, { x: dimension.x + 20, y: dimension.y + 50 }], 8);
     }
 </script>
