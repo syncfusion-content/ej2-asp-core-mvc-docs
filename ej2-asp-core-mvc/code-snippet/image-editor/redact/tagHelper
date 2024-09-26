@@ -23,7 +23,7 @@
     function addRedact() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         let dimension = imgObj.getImageDimension();
-        imgObj.drawRedact(RedactType.Blur, dimension.x + 180, dimension.y + 240, 200, 300);
+        imgObj.drawRedact(RedactType.Blur, dimension.x + 100, dimension.y + 100, 200, 300);
     }
     function updateRedact() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
