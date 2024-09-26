@@ -123,6 +123,31 @@ Compared to Excel, the date, time, currency, and accounting formats vary across 
 
 > The format code should use the default decimal separator (.) and group separator (,).
 
+The following code example demonstrates how to configure culture-based formats for different cultures in the spreadsheet.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/globalization-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CultureController.cs" %}
+{% include code-snippet/spreadsheet/globalization-cs1/cultureController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/globalization-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CultureController.cs" %}
+{% include code-snippet/spreadsheet/globalization-cs1/cultureController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Text and cell formatting
 
 Text and cell formatting enhances the look and feel of your cell. It helps to highlight a particular cell or range of cells from a whole workbook. You can apply formats like font size, font family, font color, text alignment, border etc. to a cell or range of cells. Use the [`allowCellFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowCellFormatting) property to enable or disable the text and cell formatting option in Spreadsheet. You can set the formats in following ways,
