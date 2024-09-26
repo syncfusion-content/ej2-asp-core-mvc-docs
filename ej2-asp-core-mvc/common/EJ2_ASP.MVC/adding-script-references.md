@@ -177,10 +177,10 @@ npm install glob@latest --save
 const fs = require('fs');
 var gulp = require('gulp');
 var glob = require('glob');
-// gulp task for copying file form “node_modules” to “wwwroot” directory
+// gulp task for copying file form “node_modules” to “Content” directory
 gulp.task("copy-client-resource", function (done) {
     let packagePath = './node_modules/@syncfusion/';
-    let destCommonPath = 'wwwroot/syncfusion'
+    let destCommonPath = 'Content/syncfusion'
     let installedPackages = glob.sync(`${packagePath}*`);
     for (let insPackage of installedPackages) {
         let packagename = insPackage.replace('node_modules\\@syncfusion\\', '');
