@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cross-Site Scripting in ##Platform_Name## Common Control
-description: Learn here all about Cross-Site Scripting in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+title: Cross site scripting in ASP.NET Core Platform | Syncfusion
+description: Learn here all about cross site scripting in Syncfusion Essential ASP.NET Core platform, it's element and more.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Cross-Site Scripting (XSS)
+# Cross-Site Scripting (XSS) in ASP.NET Core
 
 Cross-Site Scripting is a security vulnerability and a client-side injection attack. Attackers inject the malicious code in a web application, usually JavaScript but could also be HTML or CSS. To prevent this aspect, the API `EnableHtmlSanitizer` is provided and its default value is set to true.
 
