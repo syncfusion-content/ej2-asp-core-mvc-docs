@@ -174,19 +174,24 @@ npm install glob@latest --save
 
 /// <binding BeforeBuild='copy-client-resource'/>
 // nodejs requiring statement for importing and using the package in this js file
+const fs = require('fs');
 var gulp = require('gulp');
 var glob = require('glob');
-// gulp task for copying file form “node_modules” to “Content” directory
+// gulp task for copying file form “node_modules” to “wwwroot” directory
 gulp.task("copy-client-resource", function (done) {
     let packagePath = './node_modules/@syncfusion/';
-    let destCommonPath = 'Content/syncfusion'
+    let destCommonPath = 'wwwroot/syncfusion'
     let installedPackages = glob.sync(`${packagePath}*`);
     for (let insPackage of installedPackages) {
-        let packagename = insPackage.replace(packagePath, '');
-        gulp.src(`${insPackage}/dist/global/**/*`)
-            .pipe(gulp.dest(`${destCommonPath}/${packagename}/`));
-        gulp.src(`${insPackage}/styles/**/*.css`)
-            .pipe(gulp.dest(`${destCommonPath}/${packagename}/styles/`));
+        let packagename = insPackage.replace('node_modules\\@syncfusion\\', '');
+       if (fs.existsSync(`${insPackage}/dist/global`)) {
+            gulp.src(`${`${insPackage}/dist/global`}/**/*`)
+                .pipe(gulp.dest(`${destCommonPath}/${packagename}/`));
+       }
+       if (fs.existsSync(`${insPackage}/styles/**/*.css`)) {
+            gulp.src(`${insPackage}/styles/**/*.css`)
+                .pipe(gulp.dest(`${destCommonPath}/${packagename}/styles/`));
+       }
     }
     done();
 });
