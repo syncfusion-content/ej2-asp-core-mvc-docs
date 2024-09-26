@@ -251,6 +251,29 @@ To use the `updateRange` method, provide the new `dataSource` and specify the st
 
 The following code example demonstrates how to dynamically update data using the `updateRange` method.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="UpdateRangeController.cs" %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/updateRangeController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="UpdateRangeController.cs" %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/updateRangeController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## See Also
 
 * [Filtering](filter)
