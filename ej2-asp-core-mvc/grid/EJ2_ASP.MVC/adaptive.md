@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adaptive in ##Platform_Name## Grid Component
+title: Adaptive in ##Platform_Name## Grid Component | Syncfusion
 description: Learn here all about Adaptive in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Adaptive
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Adaptive View
+# Adaptive View in Grid
 
 The Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, column chooser, column menu(supports only when the `rowRenderingMode` as Horizontal) column chooser, column menu(supports only when the `rowRenderingMode` as Horizontal) and edit dialogs adaptively and have an option to render the grid row elements in the vertical direction.
 
@@ -86,10 +86,10 @@ The following features are only supported in vertical row rendering:
 * Infinite scroll
 * Toolbar - Options like **Add**, **Filter**, **Sort**, **Edit**, **Delete**, **Search**, and **Toolbar template** are available when their respective features are enabled. The toolbar dynamically includes a three-dotted icon, containing additional features like **ColumnChooser**, **Print**, **PdfExport**, **ExcelExport**, or **CsvExport**, once these features are enabled. Please refer to the following snapshot.
 
-![VerticalmodeColumnMenu](../images/VerticalmodeColumnMenu.gif)
+![VerticalmodeColumnMenu.](../images/VerticalmodeColumnMenu.gif)
 
 A snapshot of the adaptive grid displaying enabled paging along with a pager dropdown.
 
-![AdaptivePagerDropdown](../images/PagerDropdown_Adaptive.gif)
+![AdaptivePagerDropdown.](../images/PagerDropdown_Adaptive.gif)
 
 > The Column Menu feature, which includes grouping, sorting, autofit, filter, and column chooser, is exclusively supported for the Grid in **Horizontal** [`rowRenderingMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowRenderingMode).

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## Drop Down List Component
-description: Learn here all about Virtualization in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Virtualization in ##Platform_Name## DropDown List Component | Syncfusion
+description: Learn here all about Virtualization in Syncfusion ##Platform_Name## DropDown List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtualization
 publishingplatform: ##Platform_Name##
