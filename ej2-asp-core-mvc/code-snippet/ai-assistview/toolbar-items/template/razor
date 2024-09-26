@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.InteractiveChat
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    @Html.EJS().AIAssistView("template").PromptRequest("onPromptRequest").Created("onCreated").ToolbarSettings(new AIAssistViewToolbarSettings()
+    @Html.EJS().AIAssistView("aiAssistView").PromptRequest("onPromptRequest").Created("onCreated").ToolbarSettings(new AIAssistViewToolbarSettings()
     {
         Items = ViewBag.Items
     }).Render()
@@ -11,6 +11,17 @@
     var assistObj;
     function onCreated() {
         assistObj = this;
+        var splitBtnObj = new ej.splitbuttons.DropDownButton({
+            items: [
+                { text: 'हिंदी' },
+                { text: 'தமிழ்' },
+                { text: 'తెలుగు' }
+            ],
+            content: 'English',
+            iconCss: 'e-icons e-translate',
+            cssClass: 'custom-dropdown'
+        });
+        splitBtnObj.appendTo('#ddMenu');
     }
     function onPromptRequest() {
         setTimeout(function () {
@@ -19,10 +30,9 @@
         }, 2000);
     }
 </script>
+
 <style>
-    #template .e-template {
-        font-size: 14px;
-        font-weight: 300;
-        text-shadow: 1px 1px 2px rgb(87 83 83 / 50%);
+    .custom-dropdown.e-dropdown-popup ul {
+        min-width: 100px;
     }
 </style>

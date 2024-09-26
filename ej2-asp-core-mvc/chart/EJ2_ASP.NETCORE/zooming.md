@@ -172,7 +172,7 @@ Using the [`EnableScrollbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ## Enable animation
 
-Enable the [EnableAnimation] property to experience smooth transitions when zooming in on the chart.
+Enable the [`EnableAnimation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html#Syncfusion_EJ2_Charts_ChartZoomSettings_EnableAnimation) property to experience smooth transitions when zooming in on the chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
