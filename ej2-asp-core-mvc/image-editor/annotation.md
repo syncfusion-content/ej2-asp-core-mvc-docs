@@ -77,7 +77,7 @@ Here is an example of adding a text in a button click using `drawText` method.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-text.jpg)
+![ImageEditor Sample](images/image-editor-text.png)
 
 ### Multiline text 
 
@@ -446,6 +446,10 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-annotation.png)
 
 ## Delete a shape 
 
