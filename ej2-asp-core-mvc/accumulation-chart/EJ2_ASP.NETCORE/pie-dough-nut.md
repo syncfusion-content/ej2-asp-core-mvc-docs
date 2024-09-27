@@ -254,7 +254,7 @@ public class PieChartData
 
 ## Border radius
 
-You can create rounded corners for each slice by using the [BorderRadius] option, which gives the chart a modern and polished appearance.
+You can create rounded corners for each slice by using the `BorderRadius` option, which gives the chart a modern and polished appearance.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -317,7 +317,7 @@ public class PieChartData
 
 ## Patterns
 
-You can apply different patterns to the pie slices using the [`ApplyPattern`] property in the series and the [`PointRender`] event.
+You can apply different patterns to the pie slices using the `ApplyPattern` property in the series and the [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_PointRender) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
