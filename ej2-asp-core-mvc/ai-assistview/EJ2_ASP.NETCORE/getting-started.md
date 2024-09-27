@@ -101,7 +101,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Configure suggestions and responses
 
-You can use the `promptSuggestions` property to add prompt suggestions and the `promptRequest` event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
+You can use the [promptSuggestions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptSuggestions) property to add prompt suggestions and the [promptRequest](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptRequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
