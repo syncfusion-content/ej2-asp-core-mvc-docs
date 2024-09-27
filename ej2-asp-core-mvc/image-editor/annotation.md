@@ -570,4 +570,4 @@ We provide default settings for stroke color, stroke width, fill color, and othe
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-default-stroke.jpg)
+![ImageEditor Sample](images/image-editor-default-stroke.png)
