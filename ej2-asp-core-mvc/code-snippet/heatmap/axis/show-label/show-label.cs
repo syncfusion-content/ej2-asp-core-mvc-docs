@@ -14,9 +14,9 @@ public ActionResult ShowLabel()
     return View();
 }
 
- private int[,] GetDataSource()
+ private int?[,] GetDataSource()
  {
-     int?[,] dataSource = new int?[,]
+     int?[,] data = new int?[,]
             {
                 { null, null, null, null, 16, 48, 0 },
                 {0, 15, 0, 24, 0, 39, 0},

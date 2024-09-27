@@ -6,7 +6,7 @@ yaxis.Labels(ViewBag.yLabels)).PaletteSettings(ps => ps.Palette(palette =>
 {
     palette.Color("#F0ADCE").Add();
     palette.Color("#19307B").Add();
-})).DataSource(ViewBag.dataSource).LegendSettings(ls => ls.Visible(false)).Load("load").Render()
+})).LegendSettings(ls => ls.Visible(false)).DataSource(ViewBag.dataSource).Load("load").Render()
 
 <script>
     var load = function (args) {

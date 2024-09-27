@@ -9,6 +9,6 @@
 
 <script>
   window.onHeatmapCellRender = function (args) {
-      args.displayText = (args.value) + '$';
+      args.displayText = (args.value) + 'K';
   };
 </script>

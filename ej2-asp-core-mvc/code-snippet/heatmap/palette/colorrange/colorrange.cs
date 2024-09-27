@@ -1,4 +1,4 @@
-public ActionResult LabelFormat()
+public ActionResult PaletteColor()
 {
     ViewBag.textStyle = new
      {
@@ -6,9 +6,13 @@ public ActionResult LabelFormat()
          fontWeight= "500",
          fontStyle= "Normal",
          fontFamily= "Segoe UI"
-    };
-    ViewBag.dataSource = GetDataSource();
-    return View();
+         };
+         string[] xlabels = new string[12] { "Nancy", "Andrew", "Janet", "Margaret", "Steven", "Michael", "Robert", "Laura", "Anne", "Paul", "Karin", "Mario" };
+         ViewBag.xLabels = xlabels;
+         string[] yLabels = new string[6] { "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat" };
+         ViewBag.yLabels = yLabels;
+         ViewBag.dataSource = GetDataSource();
+         return View();
 }
 
  private int[,] GetDataSource()
@@ -28,5 +32,5 @@ public ActionResult LabelFormat()
                 {25, 56, 55, 58, 12, 82},
                 {74, 33, 88, 23, 86, 59}
             };
-            return data;
+    return data;
  }
