@@ -10,7 +10,7 @@ documentation: ug
 
 # Shapes in ASP.NET MVC Skeleton Control
 
-The Skeleton control support various built-in shape variants to design layout of the page. You can use the [Shape](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Notifications.Skeleton.html#Syncfusion_EJ2_Notifications_Skeleton_Shape) property to create a preview of any layout.
+The [ASP.NET MVC Skeleton](https://www.syncfusion.com/aspnet-mvc-ui-controls/skeleton) control support various built-in shape variants to design layout of the page. You can use the [Shape](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Notifications.Skeleton.html#Syncfusion_EJ2_Notifications_Skeleton_Shape) property to create a preview of any layout.
 
 The Skeleton control supports the following content shapes:
 
