@@ -53,6 +53,66 @@ To Export the Grid in server side, You need to call the [`serverPdfExport`](http
 
 N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
 
+## Export grid as memory stream
+
+The Grid offers an option to export the data as a Memory Stream instead of downloading it as a file in the browser. To obtain the Memory Stream of the exported grid, set the `IsMemoryStream` parameter to **true** in the [PdfExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridPdfExport.html#Syncfusion_EJ2_GridExport_GridPdfExport_PdfExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_Syncfusion_EJ2_GridExport_PdfExportProperties_) method.
+
+The following code demonstrates how to get the memory stream of exported grid.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/server-export-ms/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-exportCore.cs" %}
+{% include code-snippet/grid/pdf-export/server-export-ms/server-exportCore.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/server-export-ms/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-exportCore.cs" %}
+{% include code-snippet/grid/pdf-export/server-export-ms/server-exportCore.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Merge grid's memory stream with an existing stream
+
+The [Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview) library is used to merge the multiple memory streams into a single stream.
+
+In the following code, the [Merge](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.PdfDocumentBase.html#Syncfusion_Pdf_PdfDocumentBase_Merge_Syncfusion_Pdf_PdfDocumentBase_Syncfusion_Pdf_Parsing_PdfLoadedDocument_) method of the [PdfDocumentBase](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.PdfDocumentBase.html) class is used to merge the grid's Memory Stream with another existing PDF file.
+
+To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/file-formats/pdf/merge-documents).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/server-export-merge/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-exportCore.cs" %}
+{% include code-snippet/grid/pdf-export/server-export-merge/server-exportCore.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/server-export-merge/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-exportCore.cs" %}
+{% include code-snippet/grid/pdf-export/server-export-merge/server-exportCore.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Rotate a header text to a certain degree in the exported grid on the server side
 
 The Grid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported PDF file. To achieve this requirement, define the `BeginCellLayout` event of the `PdfExportProperties` with an event handler to perform the required action.

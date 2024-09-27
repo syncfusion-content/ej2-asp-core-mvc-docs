@@ -339,3 +339,32 @@ In the following example, we have used Advent Pro font to export the grid with H
 
 
 N> **ej.pdfexport.PdfTrueTypeFont** accepts base 64 format of the Custom Font.
+
+## Export grid as blob
+
+The Grid offers an option to export the data as a Blob instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the [pdfExport](https://ej2.syncfusion.com/documentation/api/grid/#pdfexport) method. The grid returns the promise of a blob in the [pdfExportComplete](https://ej2.syncfusion.com/documentation/api/grid/#pdfexportcomplete) event.
+
+The following example demonstrates how to obtain the blob data of the exported grid by executing the promise in the `pdfExportComplete` event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/export-grid-as-blob/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Export-blob.cs" %}
+{% include code-snippet/grid/pdf-export/export-grid-as-blob/export-blob.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/export-grid-as-blob/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Export-blob.cs" %}
+{% include code-snippet/grid/pdf-export/export-grid-as-blob/export-blob.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
