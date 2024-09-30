@@ -1,0 +1,13 @@
+<ejs-chart id="container">
+    <e-chart-primaryxaxis valueType="Category">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" high="high" low="low"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeArea">
+            <e-series-marker visible="true" height="7" width="7" isFilled="true"></e-series-marker>
+            <e-series-emptypointsettings mode="Syncfusion.EJ2.Charts.EmptyPointMode.Zero" fill="red">
+                <e-emptypointsettings-border width="2" color="green"></e-emptypointsettings-border>
+            </e-series-emptypointsettings>
+        </e-series>        
+    </e-series-collection>
+</ejs-chart>

@@ -1,0 +1,15 @@
+@Html.EJS().Chart("container-vertical").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y").Width(2).Opacity(0.5).DataSource(ViewBag.dataSource)
+    .Name("John").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y1").Width(2).Opacity(0.5).DataSource(ViewBag.dataSource)
+    .Name("Peter").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y2").Width(2).Opacity(0.5).DataSource(ViewBag.dataSource)
+    .Name("Steve").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y3").Width(2).Opacity(0.5).DataSource(ViewBag.dataSource)
+    .Name("Charle").Add();
+}).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Title("Family Expense for Month").Render()

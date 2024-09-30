@@ -1,0 +1,29 @@
+<ejs-chart id="container" title="Family Expense for Month" pointRender="changeColor">
+    <e-chart-primaryxaxis valueType="Category" interval="1">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="John" xName="x" width="2" yName="y" type="StackingArea">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Peter" xName="x" width="2" yName="y1" type="StackingArea">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Steve" xName="x" width="2" yName="y2" type="StackingArea">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Charle" xName="x" width="2" yName="y3" type="StackingArea">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function changeColor(args) {
+        if (args.point.y < 100) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>
