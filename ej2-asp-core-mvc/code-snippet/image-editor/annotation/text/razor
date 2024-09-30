@@ -17,15 +17,18 @@
 
     function addTextHandler() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imageEditorObj.drawText(500, 500, 'Syncfusion', 'Arial', 100, true, true, '#000');
+        var dimension = imageEditorObj.getImageDimension();
+        imageEditorObj.drawText(dimension.x, dimension.y, 'Syncfusion');
     }
     function outlineHandler() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imageEditorObj.drawText(600, 600, 'Syncfusion', 'Arial', 70, false, false, '', false, null, '', 'green', 8);
+        var dimension = imageEditorObj.getImageDimension();
+        imageEditorObj.drawText(dimension.x + 50, dimension.y + 50, 'Syncfusion', 'Arial', 30, false, false, '', false, null, '', 'green', 8);
     }
     function backgroundHandler() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imageEditorObj.drawText(700, 700, 'Syncfusion', 'Arial', 70, false, false, '', false, null, 'red', '', null);
+        var dimension = imageEditorObj.getImageDimension();
+        imageEditorObj.drawText(dimension.x + 100, dimension.y + 100, 'Syncfusion', 'Arial', 30, false, false, '', false, null, 'red', '', null);
     }
 </script>
 
