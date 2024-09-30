@@ -13,16 +13,18 @@ documentation: ug
 
 ## Step area
 
-To render a step area series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`StepArea`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_StepArea).
+To render a [step area](https://www.syncfusion.com/aspnet-core-ui-controls/charts/chart-types/step-area-chart) series in your chart, you need to follow a few steps to configure it correctly. Here’s a concise guide on how to do this:
+
+* **Set the series type:** Define the series `type` as **StepArea** in your chart configuration. This indicates that the data should be represented as a step area chart, which connects data points with vertical and horizontal lines, creating a step like appearance.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/area-charts/steparea/tagHelper %}
+{% include code-snippet/chart/series/step-area/steparea/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Steparea.cs" %}
-{% include code-snippet/chart/series/area-charts/steparea/steparea.cs %}
+{% include code-snippet/chart/series/step-area/steparea/steparea.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,14 +32,40 @@ To render a step area series, use series [`Type`](https://help.syncfusion.com/cr
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/area-charts/steparea/razor %}
+{% include code-snippet/chart/series/step-area/steparea/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Steparea.cs" %}
-{% include code-snippet/chart/series/area-charts/steparea/steparea.cs %}
+{% include code-snippet/chart/series/step-area/steparea/steparea.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Binding data with series
+
+You can bind data to the chart using the `dataSource` property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series `xName` and `yName` properties.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/step-area/steparea/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Steparea.cs" %}
+{% include code-snippet/chart/series/step-area/steparea/steparea.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/step-area/steparea/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Steparea.cs" %}
+{% include code-snippet/chart/series/step-area/steparea/steparea.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## Series customization
