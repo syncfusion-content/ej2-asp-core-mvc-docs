@@ -77,7 +77,7 @@ Here is an example of adding a text in a button click using `drawText` method.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-text.jpg)
+![ImageEditor Sample](images/image-editor-text.png)
 
 ### Multiline text 
 
@@ -447,6 +447,10 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 {% endtabs %}
 {% endif %}
 
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-annotation.png)
+
 ## Delete a shape 
 
 The `deleteShape` method in the Image Editor allows you to remove a shape annotation from the image editor. To use this method, you need to pass the `shapeId` of the annotation as a parameter. 
@@ -566,4 +570,4 @@ We provide default settings for stroke color, stroke width, fill color, and othe
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-default-stroke.jpg)
+![ImageEditor Sample](images/image-editor-default-stroke.png)
