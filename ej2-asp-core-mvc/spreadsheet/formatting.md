@@ -123,7 +123,7 @@ Compared to Excel, the date, time, currency, and accounting formats vary across 
 
 > The format code should use the default decimal separator (.) and group separator (,).
 
-The code below illustrates how culture-based format codes are mapped to their corresponding number format ID for the `German (de)` culture.
+The code below illustrates how culture-based format codes are mapped to their corresponding number format ID for the `German` culture.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
