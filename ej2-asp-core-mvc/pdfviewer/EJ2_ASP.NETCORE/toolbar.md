@@ -777,7 +777,8 @@ N>The icons are embedded in the font file used in the previous code snippet.
 {% endhighlight %}
 {% endtabs %}
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Create%20Custom%20Toolbar)
+Sample:
+[https://ej2.syncfusion.com/aspnetcore/PdfViewer/CustomToolbar#/material](https://ej2.syncfusion.com/aspnetcore/PdfViewer/CustomToolbar#/material)
 
 ## See also
 

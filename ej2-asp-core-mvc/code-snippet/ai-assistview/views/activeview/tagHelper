@@ -1,0 +1,32 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    <ejs-aiassistview id="aiAssistView" activeView="1" promptRequest="onPromptRequest" created="onCreated">
+        <e-aiassistview-views>
+            <e-aiassistview-view type="Assist"></e-aiassistview-view>
+            <e-aiassistview-view type="Custom" name="Response" iconCss="e-icons e-comment-show" viewTemplate="<div class='view-container'><h5>Response view content</h5></div>"></e-aiassistview-view>
+        </e-aiassistview-views>
+    </ejs-aiassistview>
+</div>
+
+<script>
+    var assistObj;
+    function onCreated() {
+        assistObj = this;
+    }
+    function onPromptRequest(args) {
+        setTimeout(() => {
+            let defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            assistObj.addPromptResponse(defaultResponse);
+        }, 2000);
+    }
+</script>
+
+<style>
+    .view-container {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
