@@ -1,0 +1,18 @@
+@Html.EJS().AccumulationChart("container").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+        .XName("X")
+        .YName("Y")
+        .DataSource(ViewBag.dataSource)
+        .Add();
+}).Render()
+
+<div>      
+  @Html.EJS().Button("remove").IsPrimary(true).Content("Remove Point").Render()       
+</div>
+<script>
+    document.getElementById('remove').onclick = () => {
+        var piechart = document.getElementById('container').ej2_instances[0];
+        piechart.series[0].removePoint(0);
+    }
+</script>

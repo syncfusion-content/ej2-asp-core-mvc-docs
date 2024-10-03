@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Zooming and Panning
+# Zooming and Panning in ##Platform_Name## Chart Component
 
 ## Enable zooming
 
@@ -141,7 +141,7 @@ Using [`enablePan`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 
 
-## Eanble scrollbar
+## Enable scrollbar
 
 Using the [`EnableScrollbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html#Syncfusion_EJ2_Charts_ChartZoomSettings_EnableScrollbar) property, you can add a scrollbar to a zoomed chart. This scrollbar allows you to zoom or pan the chart. The appearance of the scrollbar can be customized using properties in [`ScrollbarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartScrollbarSettings.html). For example, you can use [`TrackColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartScrollbarSettings.html#Syncfusion_EJ2_Charts_ChartScrollbarSettings_TrackColor) and [`TrackRadius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartScrollbarSettings.html#Syncfusion_EJ2_Charts_ChartScrollbarSettings_TrackRadius) properties to customize the track of the scrollbar, and [`ScrollbarRadius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartScrollbarSettings.html#Syncfusion_EJ2_Charts_ChartScrollbarSettings_ScrollbarRadius) and [`ScrollbarColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartScrollbarSettings.html#Syncfusion_EJ2_Charts_ChartScrollbarSettings_ScrollbarColor) properties to customize the scroller. The ability to zoom through the scrollbar can be enabled or disabled using the [`EnableZoom`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartScrollbarSettings.html#Syncfusion_EJ2_Charts_ChartScrollbarSettings_EnableZoom) property in [`ScrollbarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartScrollbarSettings.html). Additionally, you can change the color of the grip and height of the scrollbar using the [`GripColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartScrollbarSettings.html#Syncfusion_EJ2_Charts_ChartScrollbarSettings_GripColor) and [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartScrollbarSettings.html#Syncfusion_EJ2_Charts_ChartScrollbarSettings_Height) properties.
 
@@ -164,6 +164,35 @@ Using the [`EnableScrollbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 {% endhighlight %}
 {% highlight c# tabtitle="Scrollbar.cs" %}
 {% include code-snippet/chart/user-interaction/zoom/scrollbar/scrollbar.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Enable animation
+
+Enable the [`EnableAnimation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html#Syncfusion_EJ2_Charts_ChartZoomSettings_EnableAnimation) property to experience smooth transitions when zooming in on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/zoom/animation/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Animation.cs" %}
+{% include code-snippet/chart/user-interaction/zoom/animation/animation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/zoom/animation/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Animation.cs" %}
+{% include code-snippet/chart/user-interaction/zoom/animation/animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

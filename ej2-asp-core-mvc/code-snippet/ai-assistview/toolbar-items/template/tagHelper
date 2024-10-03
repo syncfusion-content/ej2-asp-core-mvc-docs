@@ -1,0 +1,37 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    <ejs-aiassistview id="aiAssistView" promptRequest="onPromptRequest" created="onCreated">
+        <e-aiassistview-toolbarsettings items="ViewBag.Items"></e-aiassistview-toolbarsettings>
+    </ejs-aiassistview>
+</div>
+
+<script>
+    var assistObj;
+    function onCreated() {
+        assistObj = this;
+        var splitBtnObj = new ej.splitbuttons.DropDownButton({
+            items: [
+                { text: 'हिंदी' },
+                { text: 'தமிழ்' },
+                { text: 'తెలుగు' }
+            ],
+            content: 'English',
+            iconCss: 'e-icons e-translate',
+            cssClass: 'custom-dropdown'
+        });
+        splitBtnObj.appendTo('#ddMenu');
+    }
+    function onPromptRequest(args) {
+        setTimeout(() => {
+            let defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            assistObj.addPromptResponse(defaultResponse);
+        }, 2000);
+    }
+</script>
+
+<style>
+    .custom-dropdown.e-dropdown-popup ul {
+        min-width: 100px;
+    }
+</style>

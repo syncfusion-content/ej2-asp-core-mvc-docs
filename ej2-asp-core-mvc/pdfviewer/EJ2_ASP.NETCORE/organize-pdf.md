@@ -63,6 +63,14 @@ Duplicate the pages within your PDF document effortlessly:
 
 ![Alt text](./images/copy.gif)
 
+### Importing a PDF Document
+
+Seamlessly import a PDF document into your existing document:
+
+* `Import PDF document`: Click the **Import Document** button to import a PDF. If a page is selected, the imported document’s thumbnail will be inserted to the right of the selected page. If multiple or no pages are selected, the thumbnail will be added as the first page. When **Save** or **Save As** is clicked, the imported PDF will be merged with the current document. You can insert a blank page to the left or right of the imported thumbnail, delete it, or drag and drop it to reposition as needed.
+
+![Alt text](./images/import.gif)
+
 ### Selecting all pages 
 
 Make comprehensive adjustments by selecting all pages simultaneously. This facilitates efficient editing and formatting across the entire document.
@@ -127,7 +135,7 @@ Safeguard your edits by utilizing the **Save As** feature. This enables you to d
 {% endhighlight %}
 {% endtabs %}
 
-**pageOrganizerSettings:** This API allows control over various page management functionalities within the PDF Viewer. It includes options to enable or disable actions such as deleting, inserting, rotating, and rearranging pages. By default, all these actions are enabled.
+**pageOrganizerSettings:** This API allows control over various page management functionalities within the PDF Viewer. It includes options to enable or disable actions such as deleting, inserting, rotating, copying, importing and rearranging pages. By default, all these actions are enabled.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Standalone" %}
@@ -136,7 +144,7 @@ Safeguard your edits by utilizing the **Save As** feature. This enables you to d
                    style="height:600px"
                    documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    pageOrganizerSettings= pageOrganizerSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerPageOrganizerSettings
-                   {canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true })">
+                   {canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true, canImport: true })">
     </ejs-pdfviewer>
 </div>
 {% endhighlight %}
@@ -147,7 +155,7 @@ Safeguard your edits by utilizing the **Save As** feature. This enables you to d
                    serviceUrl="/api/PdfViewer"
                    documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
                    pageOrganizerSettings= pageOrganizerSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerPageOrganizerSettings
-                   {canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true })">
+                   {canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true, canImport: true })">
     </ejs-pdfviewer>
 </div>
 {% endhighlight %}

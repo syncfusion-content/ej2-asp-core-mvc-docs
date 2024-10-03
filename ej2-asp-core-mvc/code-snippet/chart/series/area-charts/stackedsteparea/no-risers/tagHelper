@@ -1,0 +1,16 @@
+<ejs-chart id="container" title="Trend in Sales of Ethical Produce">
+    <e-chart-primaryxaxis title="Years" edgeLabelPlacement="@Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis labelFormat="{value}B" minimum="0" maximum="4" interval="1" title="Spend in Billions">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="X" yName="Y" name="Organic" noRisers="true" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="X" yName="Y1" name="Fair-trade" noRisers="true" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="X" yName="Y2" name="Others" noRisers="true" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

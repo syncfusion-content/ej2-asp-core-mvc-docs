@@ -16,7 +16,7 @@ The Image Editor allows adding annotations to the image, including text, freehan
 
 The text annotation feature in the Image Editor provides the capability to add and customize labels, captions, and other text elements directly onto the image. With this feature, you can easily insert text at specific locations within the image and customize various aspects of the text to meet your requirements. 
 
-You have control over the customization options including text content, font family, font style and font size for the text annotation. 
+You have control over the customization options including text content, font family, font style, font color, fill color, stroke color, stroke width and font size for the text annotation. 
 
 ### Add a text 
 
@@ -39,6 +39,14 @@ The `drawText` method in the Image Editor allows you to insert a text annotation
 * color: Specifies the font color of the text, allowing you to define the desired color using appropriate color values or names.
 
 * isSelected: Specifies to show the text in the selected state.
+
+* degree: Specifies the degree to rotate the text.
+
+* fillColor: Specifies the background color of the text.
+
+* strokeColor: Specifies the outline color of the text annotation.
+
+* strokeWidth: Specifies the outline stroke width of the text annotation.
 
 By utilizing the DrawText method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
@@ -69,7 +77,7 @@ Here is an example of adding a text in a button click using `drawText` method.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-text.jpg)
+![ImageEditor Sample](images/image-editor-text.png)
 
 ### Multiline text 
 
@@ -318,7 +326,7 @@ The Image Editor control provides the ability to add shape annotations to an ima
 
 The `drawRectangle` method is used to insert a rectangle to the Image Editor control. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context.
 
-The `drawRectangle` method in the Image Editor control takes seven parameters to define the properties of the rectangle annotation: 
+The `drawRectangle` method in the Image Editor control takes ten parameters to define the properties of the rectangle annotation: 
 
 * x: Specifies the x-coordinate of the top-left corner of the rectangle. 
 
@@ -337,6 +345,8 @@ The `drawRectangle` method in the Image Editor control takes seven parameters to
 * degree: Specifies the degree to rotate the rectangle.
 
 * isSelected: Specifies to show the rectangle in the selected state.
+
+* borderRadius: Specifies the radius to apply border radius to rectangle.
 
 The `drawEllipse` method is used to insert a ellipse to the Image Editor control. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
@@ -437,6 +447,10 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 {% endtabs %}
 {% endif %}
 
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-annotation.png)
+
 ## Delete a shape 
 
 The `deleteShape` method in the Image Editor allows you to remove a shape annotation from the image editor. To use this method, you need to pass the `shapeId` of the annotation as a parameter. 
@@ -526,3 +540,34 @@ In the following example, you can use the `drawImage` method in the button click
 Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-add-image.jpg)
+
+### Customize Default Stroke Color for Shapes 
+
+We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`] event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/default-stroke-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/default-stroke-color/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/default-stroke-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/default-stroke-color/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-default-stroke.png)

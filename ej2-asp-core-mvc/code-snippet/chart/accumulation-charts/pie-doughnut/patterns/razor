@@ -1,0 +1,9 @@
+@Html.EJS().AccumulationChart("container").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+        .XName("X")
+        .YName("Y")
+        .ApplyPattern(true)
+        .DataSource(ViewBag.dataSource)
+        .Add();
+}).Render()

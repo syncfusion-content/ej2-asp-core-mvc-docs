@@ -1,0 +1,26 @@
+@Html.EJS().AccumulationChart("container").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+        .XName("X")
+        .YName("Y")
+        .DataSource(ViewBag.dataSource)
+        .Add();
+}).Render()
+
+<div>      
+  @Html.EJS().Button("update").IsPrimary(true).Content("Update Series").Render()       
+</div>
+<script>
+    document.getElementById('update').onclick = () => {
+        var newData = [
+            { X: 'Jan', Y: 3 },
+            { X: 'Feb', Y: 3.5 },
+            { X: 'Mar', Y: 7 },
+            { X: 'Aug', Y: 25 },
+            { X: 'Sep', Y: 21 },
+            { X: 'Oct', Y: 15 }
+        ];
+        var piechart = document.getElementById('container').ej2_instances[0];
+        piechart.series[0].setData(newData, 500);
+    }
+</script>

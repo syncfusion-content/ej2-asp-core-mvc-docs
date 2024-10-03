@@ -1,0 +1,10 @@
+<ejs-chart id="container" title="CO2 - Intensity Analysis">
+    <e-chart-primaryxaxis title="Year" minimum="2004" maximum="2013" interval="1">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Intensity (g/kWh)" minimum="330" maximum="450" interval="30">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="X" yName="Y" noRisers="true" width="4" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepLine">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

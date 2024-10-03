@@ -853,6 +853,8 @@ Restart Visual Studio for the red squiggly lines below "**UseDefaultFiles**" and
 
 /// <binding BeforeBuild='copy-client-resource'/>
 // nodejs requiring statement for importing and using the package in this js file
+var fs = require('fs');
+var path = require('path');
 var gulp = require('gulp');
 var glob = require('glob');
 // gulp task for copying file form “node_modules” to “wwwroot” directory
@@ -861,11 +863,15 @@ gulp.task("copy-client-resource", function (done) {
     let destCommonPath = 'wwwroot/syncfusion'
     let installedPackages = glob.sync(`${packagePath}*`);
     for (let insPackage of installedPackages) {
-        let packagename = insPackage.replace(packagePath, '');
-        gulp.src(`${insPackage}/dist/global/**/*`)
-            .pipe(gulp.dest(`${destCommonPath}/${packagename}/`));
-        gulp.src(`${insPackage}/styles/**/*.css`)
-            .pipe(gulp.dest(`${destCommonPath}/${packagename}/styles/`));
+        let packagename = insPackage.split(path.join('node_modules', '@syncfusion') + path.sep).pop();
+       if (fs.existsSync(`${insPackage}/dist/global`)) {
+            gulp.src(`${`${insPackage}/dist/global`}/**/*`)
+                .pipe(gulp.dest(`${destCommonPath}/${packagename}/`));
+       }
+       if (fs.existsSync(`${insPackage}/styles/**/*.css`)) {
+            gulp.src(`${insPackage}/styles/**/*.css`)
+                .pipe(gulp.dest(`${destCommonPath}/${packagename}/styles/`));
+       }
     }
     done();
 });

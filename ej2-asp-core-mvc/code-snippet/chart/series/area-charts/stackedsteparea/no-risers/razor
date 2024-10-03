@@ -1,0 +1,33 @@
+@Html.EJS().Chart("container").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea)
+        .XName("X")
+        .YName("Y")
+        .Name("Organic")
+        .NoRisers(true)
+        .DataSource(ViewBag.dataSource)
+        .Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea)
+        .XName("X")
+        .YName("Y1")
+        .Name("Fair-trade")
+        .NoRisers(true)
+        .DataSource(ViewBag.dataSource)
+        .Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea)
+        .XName("X")
+        .YName("Y2")
+        .Name("Others")
+        .NoRisers(true)
+        .DataSource(ViewBag.dataSource)
+        .Add();
+}).PrimaryXAxis(px => px.EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
+    .Title("Years")
+    .MajorTickLines(mt => mt.Width(0))
+ ).PrimaryYAxis(py => py.LabelFormat("{value}B")
+    .Minimum(0)
+    .Maximum(4)
+    .Interval(1)
+    .Title("Spend in Billions")
+    .MajorTickLines(mt => mt.Width(0))
+ ).Title("Trend in Sales of Ethical Produce").Render()

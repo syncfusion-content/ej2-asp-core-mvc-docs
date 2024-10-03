@@ -1,0 +1,38 @@
+@using Syncfusion.EJ2.InteractiveChat
+@using Newtonsoft.Json
+
+@{
+    var promptsData = new[]
+    {
+        new { prompt = "What is AI?", response = "<div> AI stands for Artificial Intelligence, enabling machines to mimic human intelligence for tasks such as learning, problem - solving, and decision - making.</ div >", suggestionData = new List<string> { } }
+    };
+    var promptsJson = @Html.Raw(JsonConvert.SerializeObject(promptsData));
+}
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    @Html.EJS().AIAssistView("aiAssistView").Prompts(promptsData).PromptRequest("onPromptRequest").Created("onCreated").ResponseToolbarSettings(new AIAssistViewResponseToolbarSettings()
+    {
+        ItemClicked = "responseItemClicked"
+    }).Render()
+</div>
+
+<script>
+    var assistObj;
+    var prompts = @Html.Raw(promptsJson);
+    function onCreated() {
+        assistObj = this;
+    }
+    function onPromptRequest(args) {
+        setTimeout(function () {
+            var foundPrompt = prompts.find(prompt => prompt.prompt == args.prompt);
+            var defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            assistObj.addPromptResponse(foundPrompt ? foundPrompt.response : defaultResponse);
+        }, 2000);
+    }
+</script>
+
+<script>
+    function responseItemClicked(args) {
+        // your required action here..
+    }
+</script>

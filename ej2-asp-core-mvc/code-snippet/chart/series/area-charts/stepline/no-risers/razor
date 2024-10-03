@@ -1,0 +1,12 @@
+@Html.EJS().Chart("container").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepLine)
+        .XName("X")
+        .YName("Y")
+        .NoRisers(true)
+        .Width(4)
+        .DataSource(ViewBag.dataSource)
+        .Add();
+}).PrimaryXAxis(px => px.Title("Year").Minimum(2004).Maximum(2013).Interval(1)
+ ).PrimaryYAxis(py => py.Title("Intensity (g/kWh)").Minimum(330).Maximum(450).Interval(30)
+ ).Title("CO2 - Intensity Analysis").Render()
