@@ -50,6 +50,36 @@ diagram.loadDiagram(saveData);
 
 N> Before loading a new diagram, existing diagram is cleared.
 
+## Loaded Event
+
+The [`loaded`](../api/diagram#loaded) event triggers when all diagram elements are loaded using [`loadDiagram`](../api/diagram#loadDiagram) method. You can use this event to customize diagram elements during the loading process.
+
+```javascript
+ let diagram: Diagram = new Diagram ({
+          width: '100%', height: 900,
+           loaded:(args: ILoadedEventArgs) {
+            //You can use this event to customize diagram elements during the loading process.
+      }
+ })
+
+```
+
+The event has two arguments such as name, diagram
+
+**name**
+
+Type: String
+
+Description: Returns the event name.
+
+**diagram**
+
+Type: Diagram
+
+Description: Returns the diagram model properties.
+
+Users can perform customizations or modifications to the diagram elements once the loading process is complete.
+
 ## Prevent Default Values
 
 The [`preventDefaults`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSerializationSettings.html#Syncfusion_EJ2_Diagrams_DiagramSerializationSettings_PreventDefaults) property of serializationSettings is used to simplifying the saved JSON object without adding the default properties that are presented in the diagram.

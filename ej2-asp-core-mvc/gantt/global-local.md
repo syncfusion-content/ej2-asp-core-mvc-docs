@@ -110,6 +110,10 @@ The following list of properties and its values are used in the Gantt.
 |taskType | Task Type|
 |unassignedTask | Unassigned Task|
 |group | Group|
+|FF | FF|
+|FS | FS|
+|SF | SF|
+|SS | SS|
 
 ### Loading translations
 
