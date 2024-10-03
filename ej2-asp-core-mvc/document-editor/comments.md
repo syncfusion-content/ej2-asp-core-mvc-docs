@@ -175,3 +175,28 @@ The following example illustrates how to enable mention support in Document Edit
 {% highlight c# tabtitle="comments-mention.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
+
+## Events
+
+DocumentEditor provides `beforeCommentAction` event, which is triggered on comment actions like Post, edit, reply, resolve and reopen. This event provides an opportunity to perform custom logic on comment actions like Post, edit, reply, resolve and reopen. The event handler receives the `CommentActionEventArgs` object as an argument, which allows access to information about the comment.
+
+To demonstrate a specific use case, let’s consider an example where we want to restrict the delete functionality based on the author’s name. The following code snippet illustrates how to allow only the author of a comment to delete:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/comments-event/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="comments-event.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/comments-event/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="comments-event.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
