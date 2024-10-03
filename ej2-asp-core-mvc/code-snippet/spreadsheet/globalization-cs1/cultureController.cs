@@ -21,67 +21,67 @@ public IActionResult Index()
         new { Culture= "English", Locale= "en-US USD ," }
     };
 
-    var localeFormats = new Dictionary<string, List<object>> {
-    { "de", new List<object> {
-        new { id = 37, code = @"#,##0;-#,##0" },
-        new { id = 38, code = @"#,##0;[Red]-#,##0" },
-        new { id = 39, code = @"#,##0.00;-#,##0.00" },
-        new { id = 40, code = @"#,##0.00;[Red]-#,##0.00" },
-        new { id = 5, code = @"#,##0 ""€"";-#,##0 ""€""" },
-        new { id = 6, code = @"#,##0 ""€"";[Red]-#,##0 ""€""" },
-        new { id = 7, code = @"#,##0.00 ""€"";-#,##0.00 ""€""" },
-        new { id = 8, code = @"#,##0.00 ""€"";[Red]-#,##0.00 ""€""" },
-        new { id = 41, code = @"_-* #,##0_-;-* #,##0_-;_-* ""-""_-;_-@_-" },
-        new { id = 42, code = @"_-* #,##0 ""€""_-;-* #,##0 ""€""_-;_-* ""-"" ""€""_-;_-@_-" },
-        new { id = 43, code = @"_-* #,##0.00_-;-* #,##0.00_-;_-* ""-""??_-;_-@_-" },
-        new { id = 44, code = @"_-* #,##0.00 ""€""_-;-* #,##0.00 ""€""_-;_-* ""-""?? ""€""_-;_-@_-" },
-        new { id = 14, code = @"dd.MM.yyyy" },
-        new { id = 15, code = @"dd. MMM yy" },
-        new { id = 16, code = @"dd. MMM" },
-        new { id = 17, code = @"MMM yy" },
-        new { id = 20, code = @"hh:mm" },
-        new { id = 21, code = @"hh:mm:ss" },
-        new { id = 22, code = @"dd.MM.yyyy hh:mm" }
-    }},
-    { "zh", new List<object> {
-        new  { id = 37, code = @"#,##0;-#,##0" },
-        new  { id = 38, code = @"#,##0;[Red]-#,##0" },
-        new  { id = 39, code = @"#,##0.00;-#,##0.00" },
-        new  { id = 40, code = @"#,##0.00;[Red]-#,##0.00" },
-        new  { id = 5, code = @"""¥""#,##0;""¥""-#,##0" },
-        new  { id = 6, code = @"""¥""#,##0;[Red]""¥""-#,##0" },
-        new  { id = 7, code = @"""¥""#,##0.00;""¥""-#,##0.00" },
-        new  { id = 8, code = @"""¥""#,##0.00;[Red]""¥""-#,##0.00" },
-        new  { id = 41, code = @"_ * #,##0_ ;_ * -#,##0_ ;_ * ""-""_ ;_ @_" },
-        new  { id = 42, code = @"_ ""¥""* #,##0_ ;_ ""¥""* -#,##0_ ;_ ""¥""* ""-""_ ;_ @_" },
-        new  { id = 43, code = @"_ * #,##0.00_ ;_ * -#,##0.00_ ;_ * ""-""??_ ;_ @_" },
-        new  { id = 44, code = @"_ ""¥""* #,##0.00_ ;_ ""¥""* -#,##0.00_ ;_ ""¥""* ""-""??_ ;_ @_" },
-        new  { id = 14, code = @"yyyy/m/d" },
-        new  { id = 22, code = @"yyyy/m/d h:mm" }
-    }},
-    { "fr-CH", new List<object> {
-        new { id = 37, code = @"#,##0;-#,##0" },
-        new { id = 38, code = @"#,##0;[Red]-#,##0" },
-        new { id = 39, code = @"#,##0.00;-#,##0.00" },
-        new { id = 40, code = @"#,##0.00;[Red]-#,##0.00" },
-        new { id = 5, code = @"#,##0 ""CHF"";-#,##0 ""CHF""" },
-        new { id = 6, code = @"#,##0 ""CHF"";[Red]-#,##0 ""CHF""" },
-        new { id = 7, code = @"#,##0.00 ""CHF"";-#,##0.00 ""CHF""" },
-        new { id = 8, code = @"#,##0.00 ""CHF"";[Red]-#,##0.00 ""CHF""" },
-        new { id = 14, code = @"dd.MM.yyyy" },
-        new { id = 15, code = @"dd.MMM.yy" },
-        new { id = 16, code = @"dd.MMM" },
-        new { id = 17, code = @"MMM.yy" },
-        new { id = 20, code = @"HH:mm" },
-        new { id = 21, code = @"HH:mm:ss" },
-        new { id = 22, code = @"dd.MM.yyyy HH:mm" },
-        new { id = 42, code = @"_-* #,##0 ""CHF""_-;-* #,##0 ""CHF""_-;_-* ""-"" ""CHF""_-;_-@__-" },
-        new { id = 44, code = @"_-* #,##0.00 ""CHF""_-;-* #,##0.00 ""CHF""_-;_-* ""-""?? ""CHF""_-;_-@__-" },
-        new { id = 41, code = @"_-* #,##0_-;-* #,##0_-;_-* ""-""_-;_-@__-" },
-        new { id = 43, code = @"_-* #,##0.00_-;-* #,##0.00_-;_-* ""-""??_-;_-@__-" }
-    }},
-    { "en-US", new List<object>() }
-    };
+    Dictionary<string, List<object>> localeFormats = new Dictionary<string, List<object>> {
+            { "de", new List<object> {
+                new { id = 37, code = @"#,##0;-#,##0" },
+                new { id = 38, code = @"#,##0;[Red]-#,##0" },
+                new { id = 39, code = @"#,##0.00;-#,##0.00" },
+                new { id = 40, code = @"#,##0.00;[Red]-#,##0.00" },
+                new { id = 5, code = @"#,##0 ""€"";-#,##0 ""€""" },
+                new { id = 6, code = @"#,##0 ""€"";[Red]-#,##0 ""€""" },
+                new { id = 7, code = @"#,##0.00 ""€"";-#,##0.00 ""€""" },
+                new { id = 8, code = @"#,##0.00 ""€"";[Red]-#,##0.00 ""€""" },
+                new { id = 41, code = @"_-* #,##0_-;-* #,##0_-;_-* ""-""_-;_-@_-" },
+                new { id = 42, code = @"_-* #,##0 ""€""_-;-* #,##0 ""€""_-;_-* ""-"" ""€""_-;_-@_-" },
+                new { id = 43, code = @"_-* #,##0.00_-;-* #,##0.00_-;_-* ""-""??_-;_-@_-" },
+                new { id = 44, code = @"_-* #,##0.00 ""€""_-;-* #,##0.00 ""€""_-;_-* ""-""?? ""€""_-;_-@_-" },
+                new { id = 14, code = @"dd.MM.yyyy" },
+                new { id = 15, code = @"dd. MMM yy" },
+                new { id = 16, code = @"dd. MMM" },
+                new { id = 17, code = @"MMM yy" },
+                new { id = 20, code = @"hh:mm" },
+                new { id = 21, code = @"hh:mm:ss" },
+                new { id = 22, code = @"dd.MM.yyyy hh:mm" }
+            }},
+            { "zh", new List<object> {
+                new  { id = 37, code = @"#,##0;-#,##0" },
+                new  { id = 38, code = @"#,##0;[Red]-#,##0" },
+                new  { id = 39, code = @"#,##0.00;-#,##0.00" },
+                new  { id = 40, code = @"#,##0.00;[Red]-#,##0.00" },
+                new  { id = 5, code = @"""¥""#,##0;""¥""-#,##0" },
+                new  { id = 6, code = @"""¥""#,##0;[Red]""¥""-#,##0" },
+                new  { id = 7, code = @"""¥""#,##0.00;""¥""-#,##0.00" },
+                new  { id = 8, code = @"""¥""#,##0.00;[Red]""¥""-#,##0.00" },
+                new  { id = 41, code = @"_ * #,##0_ ;_ * -#,##0_ ;_ * ""-""_ ;_ @_" },
+                new  { id = 42, code = @"_ ""¥""* #,##0_ ;_ ""¥""* -#,##0_ ;_ ""¥""* ""-""_ ;_ @_" },
+                new  { id = 43, code = @"_ * #,##0.00_ ;_ * -#,##0.00_ ;_ * ""-""??_ ;_ @_" },
+                new  { id = 44, code = @"_ ""¥""* #,##0.00_ ;_ ""¥""* -#,##0.00_ ;_ ""¥""* ""-""??_ ;_ @_" },
+                new  { id = 14, code = @"yyyy/m/d" },
+                new  { id = 22, code = @"yyyy/m/d h:mm" }
+            }},
+            { "fr-CH", new List<object> {
+                new { id = 37, code = @"#,##0;-#,##0" },
+                new { id = 38, code = @"#,##0;[Red]-#,##0" },
+                new { id = 39, code = @"#,##0.00;-#,##0.00" },
+                new { id = 40, code = @"#,##0.00;[Red]-#,##0.00" },
+                new { id = 5, code = @"#,##0 ""CHF"";-#,##0 ""CHF""" },
+                new { id = 6, code = @"#,##0 ""CHF"";[Red]-#,##0 ""CHF""" },
+                new { id = 7, code = @"#,##0.00 ""CHF"";-#,##0.00 ""CHF""" },
+                new { id = 8, code = @"#,##0.00 ""CHF"";[Red]-#,##0.00 ""CHF""" },
+                new { id = 14, code = @"dd.MM.yyyy" },
+                new { id = 15, code = @"dd.MMM.yy" },
+                new { id = 16, code = @"dd.MMM" },
+                new { id = 17, code = @"MMM.yy" },
+                new { id = 20, code = @"HH:mm" },
+                new { id = 21, code = @"HH:mm:ss" },
+                new { id = 22, code = @"dd.MM.yyyy HH:mm" },
+                new { id = 42, code = @"_-* #,##0 ""CHF""_-;-* #,##0 ""CHF""_-;_-* ""-"" ""CHF""_-;_-@__-" },
+                new { id = 44, code = @"_-* #,##0.00 ""CHF""_-;-* #,##0.00 ""CHF""_-;_-* ""-""?? ""CHF""_-;_-@__-" },
+                new { id = 41, code = @"_-* #,##0_-;-* #,##0_-;_-* ""-""_-;_-@__-" },
+                new { id = 43, code = @"_-* #,##0.00_-;-* #,##0.00_-;_-* ""-""??_-;_-@__-" }
+            }},
+            { "en-US", new List<object>() }
+            };
     ViewBag.LocaleFormats = localeFormats;
     ViewBag.CultureList = cultureList;
     ViewBag.DefaultData = data;
