@@ -1,18 +1,27 @@
 
-<ejs-button id="search" content="Search" ></ejs-button>
-<ejs-grid id="Grid" dataSource="@ViewBag.datasource" height="272"> 
+
+
+<div style="padding:0px 0px 20px 0px">
+    <ejs-textbox id="searchInput" placeholder="Search text" width="220">
+    </ejs-textbox>
+    <ejs-button style="margin-left: 10px"  id="SearchButton" content="Search" >
+    </ejs-button>
+</div>
+
+<ejs-grid id="Search" dataSource="@ViewBag.datasource" height="272"> 
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="150"></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City"  width="150"></e-grid-column>
-        <e-grid-column field="ShipName" headerText="Ship Name"  width="150"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' textAlign="Right" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
+
 <script>
-document.getElementById('search').addEventListener('click', () => {
-    var gridObj = document.getElementById("Grid").ej2_instances[0];
-    var searchString = "Ha";
-    gridObj.search(searchString);
-});
+    document.getElementById('SearchButton').addEventListener('click', () => {
+        var gridObj = document.getElementById("Search").ej2_instances[0];
+        const searchText = document.getElementById("searchInput").ej2_instances[0].value;
+        gridObj.search(searchText);
+    });
 </script>
