@@ -1,0 +1,24 @@
+<label style="padding: 10px 10px 26px 0;font-weight:bold">Change the frozen columns:</label>
+<ejs-numerictextbox id="frozenColumns" min="0" max="3" validateDecimalOnType="true"
+decimals="0" format="n" value="2" width="100px"></ejs-numerictextbox>
+<ejs-button id="button" content="Update"></ejs-button>
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" frozenColumns='2'>
+<e-grid-columns>
+    <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
+    <e-grid-column field="CustomerID"  headerText="Customer ID" width="130"></e-grid-column>
+    <e-grid-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-grid-column>
+    <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Right" width="120"></e-grid-column>
+    <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" type='date' format="yMd" width="130"></e-grid-column>
+    <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
+    <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+    <e-grid-column field="ShipAddress" headerText="Ship Address" width="120"></e-grid-column>
+    <e-grid-column field="ShipName" headerText="Ship Name" width="120"></e-grid-column>
+</e-grid-columns>
+</ejs-grid>
+<script type="text/javascript">
+document.getElementById('button').addEventListener('click', function () {
+    var grid = document.getElementById("Grid").ej2_instances[0];
+    grid.frozenColumns = document.getElementById("frozenColumns").ej2_instances[0].value;
+
+});
+</script>

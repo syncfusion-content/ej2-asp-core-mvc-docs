@@ -28,9 +28,9 @@
     </div>
 </div>
 @(Html.EJS().Tab("ej2Tab")
-    .Items(new List<TabTabItem> {
-        new TabTabItem { Header = ViewBag.headerTextOne, Content = "#tab1_content" },
-        new TabTabItem { Header = ViewBag.headerTextTwo, Content = "#form-container" }
+    .Items(new List<TabItem> {
+        new TabItem { Header = ViewBag.headerTextOne, Content = "#tab1_content" },
+        new TabItem { Header = ViewBag.headerTextTwo, Content = "#form-container" }
     })
     .Created("tabCreated")
     .Selected("tabSelected")

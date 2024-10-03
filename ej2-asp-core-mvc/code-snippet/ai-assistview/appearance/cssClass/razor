@@ -1,0 +1,35 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    @Html.EJS().AIAssistView("aiAssistView").CssClass("custom-container").PromptRequest("onPromptRequest").Created("onCreated").Render()
+</div>
+
+<script>
+    var assistObj;
+    function onCreated() {
+        assistObj = this;
+    }
+    function onPromptRequest(args) {
+        setTimeout(function () {
+            var defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            assistObj.addPromptResponse(defaultResponse);
+        }, 2000);
+    }
+</script>
+
+<style>
+    .aiassist-container .e-aiassistview.custom-container {
+        border-color: #e0e0e0;
+        background-color: #f4f4f4;
+        box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .aiassist-container .e-aiassistview.custom-container .e-view-header .e-toolbar,
+    .aiassist-container .e-aiassistview.custom-container .e-view-header .e-toolbar-items {
+        background: #d5d5d5;
+    }
+
+    .aiassist-container .e-aiassistview.custom-container .e-view-content .e-input-group {
+        border: 3px solid #e0e0e0 !important;
+    }
+</style>

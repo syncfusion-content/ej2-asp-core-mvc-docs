@@ -1,0 +1,9 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowResizing='true'>
+    <e-grid-columns>
+        <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' minWidth="100" width="150" maxWidth="250"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" minWidth="150" width="200" maxWidth="300"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" type='date' format="yMd" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" minWidth="120" width="150" maxWidth="260"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

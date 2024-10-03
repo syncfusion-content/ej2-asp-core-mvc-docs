@@ -28,10 +28,10 @@
 </span>
 
 @(Html.EJS().Tab("ej2Tab")
-    .Items(new List<TabTabItem> {
-        new TabTabItem { Header = ViewBag.headerTextOne, Content = @content0 },
-        new TabTabItem { Header = ViewBag.headerTextTwo, Content = @content1 },
-        new TabTabItem { Header = ViewBag.headerTextThree, Content = @content2 }
+    .Items(new List<TabItem> {
+        new TabItem { Header = ViewBag.headerTextOne, Content = @content0 },
+        new TabItem { Header = ViewBag.headerTextTwo, Content = @content1 },
+        new TabItem { Header = ViewBag.headerTextThree, Content = @content2 }
     })
     .CssClass("e-background")
     .Created("tabCreated")

@@ -1,0 +1,70 @@
+@using Syncfusion.EJ2.InteractiveChat
+@using Newtonsoft.Json
+
+@{
+    var suggestions = new string[] { "How do I prioritize my tasks?", "How can I improve my time management skills?" };
+
+    var prompts = new[]
+    {
+        new { prompt = "How do I prioritize my tasks?", response = "Prioritize tasks by urgency and impact: tackle high-impact tasks first, delegate when possible, and break large tasks into smaller steps. For more assistance, feel free to ask—I’m here to help!", suggestionData = new List<string> { } },
+        new { prompt = "How can I improve my time management skills?", response = "To improve time management skills, try setting clear goals, using a planner or digital tools, prioritizing tasks, breaking tasks into smaller steps, and minimizing distractions. Regularly review and adjust your approach for better efficiency.", suggestionData = new List<string>  { } }
+    };
+
+    var promptsJson = @Html.Raw(JsonConvert.SerializeObject(prompts));
+}
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    @Html.EJS().AIAssistView("aiAssistView").FooterTemplate("#footerContent").PromptRequest("onPromptRequest").Created("onCreated").Render()
+</div>
+
+<script>
+    var assistObj;
+    var prompts = @Html.Raw(promptsJson);
+    function onCreated() {
+        assistObj = this;
+    }
+    function onPromptRequest() {
+        setTimeout(function () {
+            var defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            assistObj.addPromptResponse(defaultResponse);
+        }, 2000);
+    }
+    document.addEventListener('click', function (event) {
+        if (event.target && event.target.id === 'sendPrompt') {
+            const textArea = document.getElementById('promptTextArea');
+            if (textArea) {
+                textArea.value = '';
+                let defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+                assistObj.addPromptResponse(defaultResponse);
+            }
+        }
+    });
+</script>
+
+<script id="footerContent" type="text/x-jsrender">
+    <div class="custom-footer">
+        <textarea id="promptTextArea" class="e-input" rows="2" placeholder="Enter your prompt here"></textarea>
+        <button id="sendPrompt" class="e-btn e-primary">Generate</button>
+    </div>
+</script>
+
+<style>
+    .custom-footer {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        background-color: transparent;
+    }
+
+    #promptTextArea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    #sendPrompt {
+        padding: 5px 15px;
+        align-self: flex-end;
+    }
+</style>
