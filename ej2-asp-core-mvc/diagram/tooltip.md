@@ -270,3 +270,29 @@ To animate the tooltip, a set of specific animation effects are available, and i
 {% endtabs %}
 {% endif %}
 
+## Tooltip for Annotation
+
+Tooltips can be added to annotations to display additional information on mouseover. 
+To display tooltips on mouseover, set the desired tooltip text to the [`tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDiagramTooltip.html#Syncfusion_EJ2_Diagrams_DiagramDiagramTooltip_Animation) property of the annotation.
+Tooltips for Annotations can be enabled or disabled by setting the [`AnnotationConstraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.AnnotationConstraints.html) property as [`Tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.AnnotationConstraints.html). 
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/tooltip/annotationTooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Animation.cs" %}
+{% include code-snippet/diagram/tooltip/annotationTooltip/annotation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Animation.cs" %}
+{% include code-snippet/diagram/tooltip/annotationTooltip/annotation.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+

@@ -1,0 +1,13 @@
+<ejs-chart id="container" title="Monthly Temperature Range">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" title="Month" edgeLabelPlacement="@Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis labelFormat="{value}˚C" minimum="10" maximum="40" title="Temperature">
+        <e-linestyle width="0"></e-linestyle>
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="X" high="High" low="Low" noRisers="true" type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeStepArea">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
