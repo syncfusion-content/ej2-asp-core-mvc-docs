@@ -20,6 +20,7 @@ public IActionResult Index()
         new { Culture= "Chinese - China", Locale= "zh CNY ," },
         new { Culture= "English", Locale= "en-US USD ," }
     };
+    
     Dictionary<string, List<object>> localeFormats = new Dictionary<string, List<object>> {
             { "de", new List<object> {
                 new { id = 37, code = @"#,##0;-#,##0" },
