@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.InteractiveChat;
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    <ejs-aiassistview id="aiAssistView" bannerTemplate="<div class='banner-content'><h3><span class='e-icons e-assistview-icon'></span>AI Assistance</h3></div>" promptRequest="onPromptRequest" created="onCreated"></ejs-aiassistview>
+    <ejs-aiassistview id="aiAssistView" bannerTemplate="#bannerContent" promptRequest="onPromptRequest" created="onCreated"></ejs-aiassistview>
 </div>
 
 <script>
@@ -17,7 +17,27 @@
     }
 </script>
 
+<script id="bannerContent" type="text/x-jsrender">
+    <div class="banner-content">
+        <div class="e-icons e-assistview-icon"></div>
+        <h3>AI Assistance</h3>
+        <div>Your everyday AI companion.</div>
+    </div>
+</script>
+
 <style>
+    .aiassist-container .e-view-container {
+        margin: auto;
+    }
+
+    .aiassist-container .e-banner-view {
+        margin-left: 0;
+    }
+
+    .banner-content .e-assistview-icon:before {
+        font-size: 35px;
+    }
+
     .banner-content {
         text-align: center;
     }

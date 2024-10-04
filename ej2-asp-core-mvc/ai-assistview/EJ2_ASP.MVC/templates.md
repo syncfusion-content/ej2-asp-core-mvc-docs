@@ -14,7 +14,7 @@ The AI AssistView provides several template options to customize the banner, pro
 
 ## Banner template
 
-You can use the `BannerTemplate` property to customize the banner view in the AI AssistView.
+You can use the [BannerTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_BannerTemplate) property to display additional information, such as a welcome note, and more in the AI AssistView. This banner is positioned at the top of the prompt and response conversation area within the AI AssistView.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -29,7 +29,7 @@ You can use the `BannerTemplate` property to customize the banner view in the AI
 
 ## Prompt item template
 
-You can use the `PromptItemTemplate` property to customize the prompt items in the AI AssistView. The template context includes `Prompt`, `ToolbarItems` and `Index` items.
+You can use the [PromptItemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptItemTemplate) property to customize the prompt items in the AI AssistView. The template context includes `Prompt`, `ToolbarItems` and `Index` items.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -44,7 +44,7 @@ You can use the `PromptItemTemplate` property to customize the prompt items in t
 
 ## Response item template
 
-You can use the `ResponseItemTemplate` property to customize response items within the AI AssistView. The template context includes the `Prompt`, `Response`, `Index`, `ToolbarItems` and `Output` items.
+You can use the [ResponseItemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_ResponseItemTemplate) property to customize response items within the AI AssistView. The template context includes the `Prompt`, `Response`, `Index`, `ToolbarItems` and `Output` items.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -59,7 +59,7 @@ You can use the `ResponseItemTemplate` property to customize response items with
 
 ## Prompt suggestion item template
 
-You can use the `PromptSuggestionItemTemplate` property to customize the prompt suggestion items in the AI AssistView. The template context includes the `Index` and `PromptSuggestion`.
+You can use the [PromptSuggestionItemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptSuggestionItemTemplate) property to customize the prompt suggestion items in the AI AssistView. The template context includes the `Index` and `PromptSuggestion`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -73,6 +73,8 @@ You can use the `PromptSuggestionItemTemplate` property to customize the prompt 
 ![SuggestionTemplate](images/suggestion-template.png)
 
 ## Footer template
+
+You can use the [FooterTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_FooterTemplate) property to customize the default footer area and manage prompt request actions in the AI AssistView. This allows users to create unique footers that meet their specific needs.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
