@@ -123,6 +123,77 @@ Compared to Excel, the date, time, currency, and accounting formats vary across 
 
 > The format code should use the default decimal separator (.) and group separator (,).
 
+The code below illustrates how culture-based format codes are mapped to their corresponding number format ID for the `German` culture.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+```csharp
+List<object> deLocaleFormats = new List<object>()
+{
+    new { id = 37, code = @"#,##0;-#,##0" },
+    new { id = 38, code = @"#,##0;[Red]-#,##0" },
+    new { id = 39, code = @"#,##0.00;-#,##0.00" },
+    new { id = 40, code = @"#,##0.00;[Red]-#,##0.00" },
+    new { id = 5, code = @"#,##0 ""€"";-#,##0 ""€""" },
+    new { id = 6, code = @"#,##0 ""€"";[Red]-#,##0 ""€""" },
+    new { id = 7, code = @"#,##0.00 ""€"";-#,##0.00 ""€""" },
+    new { id = 8, code = @"#,##0.00 ""€"";[Red]-#,##0.00 ""€""" },
+    new { id = 41, code = @"_-* #,##0_-;-* #,##0_-;_-* ""-""_-;_-@_-" },
+    new { id = 42, code = @"_-* #,##0 ""€""_-;-* #,##0 ""€""_-;_-* ""-"" ""€""_-;_-@_-" },
+    new { id = 43, code = @"_-* #,##0.00_-;-* #,##0.00_-;_-* ""-""??_-;_-@_-" },
+    new { id = 44, code = @"_-* #,##0.00 ""€""_-;-* #,##0.00 ""€""_-;_-* ""-""?? ""€""_-;_-@_-" },
+    new { id = 14, code = @"dd.MM.yyyy" },
+    new { id = 15, code = @"dd. MMM yy" },
+    new { id = 16, code = @"dd. MMM" },
+    new { id = 17, code = @"MMM yy" },
+    new { id = 20, code = @"hh:mm" },
+    new { id = 21, code = @"hh:mm:ss" },
+    new { id = 22, code = @"dd.MM.yyyy hh:mm" }
+};
+ViewBag.deLocaleFormats = deLocaleFormats;
+
+<script>
+    var deLocaleFormats = @Html.Raw(Json.Serialize(deLocaleFormats));
+    // Mapping culture-based number formats for the "de" culture: The "spreadsheet" parameter is an instance of the spreadsheet component, and the "deLocaleFormats" parameter is an array containing format codes and their corresponding format IDs for the "de" culture.
+    ej.spreadsheet.configureLocalizedFormat(spreadsheet, deLocaleFormats);
+</script>
+```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+```csharp
+List<object> deLocaleFormats = new List<object>()
+{
+    new { id = 37, code = @"#,##0;-#,##0" },
+    new { id = 38, code = @"#,##0;[Red]-#,##0" },
+    new { id = 39, code = @"#,##0.00;-#,##0.00" },
+    new { id = 40, code = @"#,##0.00;[Red]-#,##0.00" },
+    new { id = 5, code = @"#,##0 ""€"";-#,##0 ""€""" },
+    new { id = 6, code = @"#,##0 ""€"";[Red]-#,##0 ""€""" },
+    new { id = 7, code = @"#,##0.00 ""€"";-#,##0.00 ""€""" },
+    new { id = 8, code = @"#,##0.00 ""€"";[Red]-#,##0.00 ""€""" },
+    new { id = 41, code = @"_-* #,##0_-;-* #,##0_-;_-* ""-""_-;_-@_-" },
+    new { id = 42, code = @"_-* #,##0 ""€""_-;-* #,##0 ""€""_-;_-* ""-"" ""€""_-;_-@_-" },
+    new { id = 43, code = @"_-* #,##0.00_-;-* #,##0.00_-;_-* ""-""??_-;_-@_-" },
+    new { id = 44, code = @"_-* #,##0.00 ""€""_-;-* #,##0.00 ""€""_-;_-* ""-""?? ""€""_-;_-@_-" },
+    new { id = 14, code = @"dd.MM.yyyy" },
+    new { id = 15, code = @"dd. MMM yy" },
+    new { id = 16, code = @"dd. MMM" },
+    new { id = 17, code = @"MMM yy" },
+    new { id = 20, code = @"hh:mm" },
+    new { id = 21, code = @"hh:mm:ss" },
+    new { id = 22, code = @"dd.MM.yyyy hh:mm" }
+};
+ViewBag.deLocaleFormats = deLocaleFormats;
+
+<script>
+    var deLocaleFormats = @Html.Raw(Json.Encode(deLocaleFormats));
+    // Mapping culture-based number formats for the "de" culture: The "spreadsheet" parameter is an instance of the spreadsheet component, and the "deLocaleFormats" parameter is an array containing format codes and their corresponding format IDs for the "de" culture.
+    ej.spreadsheet.configureLocalizedFormat(spreadsheet, deLocaleFormats);
+</script>
+```
+
+{% endif %}
+
 The following code example demonstrates how to configure culture-based formats for different cultures in the spreadsheet.
 
 {% if page.publishingplatform == "aspnet-core" %}
