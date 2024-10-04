@@ -72,7 +72,7 @@
         applyFormats();
     }
 
-    function applyFormats() {
+function applyFormats() {
         var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
         // Apply format to the specified range in the active sheet.
         // The getFormatFromType method returns the culture-based format code based on the mapped formats.
