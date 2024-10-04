@@ -1,12 +1,12 @@
 
 <div style="display: flex">
-	<label style="padding: 10px 10px 26px 0"> Change the search operators: </label>
+	<label style="padding: 7px 10px 26px 0"> Change the search operators: </label>
 	<span style="height:fit-content">
-		@Html.EJS().DropDownList("search").Width("180px").Index(0).DataSource(new List<object> { "startswith", "endswith","wildcard","like","equal","notequal" }).Change("change").Render()
+		@Html.EJS().DropDownList("search").Width("180px").Index(0).DataSource(@ViewBag.dropdownData).Change("change").Render()
 	</span>
 </div>
 
-@Html.EJS().Grid("Search").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
+@Html.EJS().Grid("Search").DataSource((IEnumerable<object>)ViewBag.datasource).Height("350px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("160").Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();

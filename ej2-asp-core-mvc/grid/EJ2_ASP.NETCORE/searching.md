@@ -15,10 +15,10 @@ The Syncfusion  ASP.NET Core Grid includes a powerful built-in searching feature
 To further enhance the search functionality, you can integrate a search text box directly into the grid's toolbar. This allows users to enter search criteria conveniently within the grid interface. To add the search item to the grid's toolbar, use the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property and add **Search** item.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/search/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/search/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="search.cs" %}
 {% include code-snippet/grid/search/search/search.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -50,10 +50,10 @@ The following example demonstrates how to set an initial search in the grid usin
 5. `ignoreAccent`: **true** will ignores diacritic characters or accents during the search operation.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/initial-search/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/initial-search/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="initial-search.cs" %}
 {% include code-snippet/grid/search/initial-search/initial-search.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -83,15 +83,15 @@ These operators provide flexibility in defining the search behavior and allow yo
 The following example demonstrates how to set the `searchSettings.operator` property based on changing the dropdown value using the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) component.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/search-operators/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/search-operators/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="search-operators.cs" %}
 {% include code-snippet/grid/search/search-operators/search-operators.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Display HTML content](../images/cell/display-html-content.gif)
+![Search operators](../images/search/search-operator.gif)
 
 ## Search by external button
 
@@ -105,10 +105,10 @@ The `search` method allows you to perform a search operation based on a search k
 4. Invoke the `search` method of the grid by passing the search key as a parameter.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/external-btn/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/external-btn/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="external-btn.cs" %}
 {% include code-snippet/grid/search/external-btn/external-btn.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -122,15 +122,15 @@ By default, the `search` functionality searches all visible columns. However, if
 The following example demonstrates how to search specific columns such as **CustomerID**, **Freight**, and **ShipCity** by using the `searchSettings.fields` property.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/search-a-column/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/search-a-column/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="search-a-column.cs" %}
 {% include code-snippet/grid/search/search-a-column/search-a-column.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Search specific columns](../images/search/search-specific.png)
+![Search specific columns](../images/search/search-specific.gif)
 
 ## Search on each key stroke
 
@@ -141,10 +141,10 @@ To achieve this, you need to bind the `keyup` event to the search input element 
 In the following example, the `created` event is bound to the grid component, and inside the event handler, the `keyup` event is bound to the `search` input element. Whenever the `keyup` event is triggered, the current `search` string is obtained from the `search` input element, and the `search` method is invoked on the grid instance with the current search string as a parameter. This allows the search results to be displayed in real-time as you type in the search box.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/search-each-key/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/search-each-key/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="search-each-key.cs" %}
 {% include code-snippet/grid/search/search-each-key/search-each-key.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -160,15 +160,15 @@ By default, the search operation considers the underlying raw data of each cell 
 The following example demonstrates how to implement searching based on column formatting in the Grid. In the `actionBegin` event, retrieve the search value from the `getColumns` method. Iterate through the columns and check whether the column has a format specified. If the column has a format specified, use the `grid.valueFormatterService.fromView` method to get the formatted value of the cell. If the formatted value matches the search value, set the **OR** predicate that includes the current column filter and the new filter based on the formatted value.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/column-formatting/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/column-formatting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="column-formatting.cs " %}
 {% include code-snippet/grid/search/column-formatting/column-formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Display HTML content](../images/cell/display-html-content.gif)
+![Perform search based on column formatting](../images/search/search-format.png)
 
 ## Perform search operation in Grid using multiple keywords
 
@@ -179,15 +179,15 @@ The following example demonstrates, how to perform a search with multiple keywor
 On the other hand, the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event is used to manage the completion of the `search` operation. It ensures that the search input value is updated if necessary and clears the `query` when the search input is empty.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search-multiple-keywords/search/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/search-multiple-keywords/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="search-multiple-keywords.cs" %}
 {% include code-snippet/grid/search/search-multiple-keywords/search-multiple-keywords.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Display HTML content](../images/cell/display-html-content.gif)
+![multiple keywords](../images/search/search-multiple-key.png)
 
 > By using this approach, you can perform a search operation in the grid using multiple keywords.
 
@@ -198,15 +198,15 @@ By default, the searching operation in the Grid component does not ignore diacri
 The following example demonstrates how to define the `ignoreAccent` property within the [searchSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html) property of the grid. Additionally, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) component is included to modify the value of the `searchSettings.ignoreAccent` property. When the switch is toggled, the `change` event is triggered, and the `searchSettings.ignoreAccent` property is updated accordingly. This functionality helps to visualize the impact of the `searchSettings.ignoreAccent` setting when performing search operations.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/ignore-accent/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/ignore-accent/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="ignore-accent.cs" %}
 {% include code-snippet/grid/search/ignore-accent/ignore-accent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Display HTML content](../images/cell/display-html-content.gif)
+![ignore accent while searching](../images/search/search-accent.png)
 
 > * You can set [searchSettings.ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_IgnoreAccent) property along with other search settings such as [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields), [operator](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Operator), and [ignoreCase](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_IgnoreCase) to achieve the desired search behavior.
 > * This feature works only for the characters that are not in the ASCII range.
@@ -221,15 +221,15 @@ To achieve search text highlighting in the Grid, you can utilize the [queryCellI
 The following example demonstrates how to highlight search text in grid using the `queryCellInfo` event. The `queryCellInfo` event checks if the current cell is in the desired search column, retrieves the cell value, search keyword and uses the `includes` method to check if the cell value contains the search keyword. If it does, the matched text is replaced with the same text wrapped in a `span` tag with a `customcss` class. You can then use CSS to define the `customcss` class and style to easily identify where the search keywords are present in the grid.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/Highlight-text/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/highlight-text/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/search/Highlight-text/Highlight-text.cs %}
+{% highlight c# tabtitle="Highlight-text.cs" %}
+{% include code-snippet/grid/search/highlight-text/Highlight-text.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Display HTML content](../images/cell/display-html-content.gif)
+![Highlight the search text](../images/search/search-highlight.png)
 
 ## Clear search by external button
 
@@ -240,10 +240,10 @@ To clear the searched grid records from an external button, you can set the [sea
 The following example demonstrates how to clear the searched records using an external button.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/clear-search/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/clear-search/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="clear-search.cs" %}
 {% include code-snippet/grid/search/clear-search/clear-search.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -255,5 +255,5 @@ The following example demonstrates how to clear the searched records using an ex
 
 ## See also
 
-* [How to perform search by using Wildcard and LIKE operator filter](./filtering/filtering/#wildcard-and-like-operator-filter)
+* [How to perform search by using Wildcard and LIKE operator filter](https://ej2.syncfusion.com/aspnetcore/documentation/grid/filtering/filtering#wildcard-and-like-operator-filter)
 

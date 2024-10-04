@@ -2,11 +2,11 @@
 <div style="display: flex"></div>
     <label style="padding: 10px 10px 26px 0"> Change the search operators: </label>
     <span style="height:fit-content">
-<ejs-dropdownlist id="dropdown" dataSource="@ViewBag.dropdownData" change="Change"></ejs-dropdownlist>
+<ejs-dropdownlist id="dropdown" dataSource="@ViewBag.dropdownData" index="0" change="change"></ejs-dropdownlist>
 </span>
 </div>
 
-<ejs-grid id="Search" dataSource="@ViewBag.datasource" toolbar="@(new List<string>() { "Search"})"> 
+<ejs-grid id="Search" dataSource="@ViewBag.datasource" toolbar="@(new List<string>() { "Search"})" height="350px"> 
     <e-grid-searchSettings operator="contains"></e-grid-searchSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>

@@ -1,5 +1,3 @@
-
-
 <ejs-grid id="Grid" dataSource="@ViewBag.datasource" height="350" toolbar="@(new List<string>() { "Search"})"> 
     <e-grid-searchsettings fields="@(new string[] { "CustomerID","ShipCity","ShipName"})" ></e-grid-searchsettings>
     <e-grid-columns>

@@ -18,7 +18,7 @@ To further enhance the search functionality, you can integrate a search text box
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/search/search/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="search.cs" %}
 {% include code-snippet/grid/search/search/search.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -53,7 +53,7 @@ The following example demonstrates how to set an initial search in the grid usin
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/search/initial-search/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="initial-search.cs" %}
 {% include code-snippet/grid/search/initial-search/initial-search.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -91,7 +91,7 @@ The following example demonstrates how to set the `SearchSettings.Operator` prop
 {% endhighlight %}
 {% endtabs %}
 
-![Search operators](../images/cell/display-html-content.gif)
+![Search operators](../images/search/search-operator.gif)
 
 ## Search by external button
 
@@ -108,7 +108,7 @@ The `search` method allows you to perform a search operation based on a search k
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/search/external-btn/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="external-btn.cs" %}
 {% include code-snippet/grid/search/external-btn/external-btn.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -125,12 +125,12 @@ The following example demonstrates how to search specific columns such as **Cust
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/search/search-a-column/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="search-a-column.cs" %}
 {% include code-snippet/grid/search/search-a-column/search-a-column.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Search specific columns](../images/search/search-specific.png)
+![Search specific columns](../images/search/search-specific.gif)
 
 ## Search on each key stroke
 
@@ -144,7 +144,7 @@ In the following example, the `Created` event is bound to the grid component, an
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/search/search-each-key/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="search-each-key.cs" %}
 {% include code-snippet/grid/search/search-each-key/search-each-key.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -163,12 +163,12 @@ The following example demonstrates how to implement searching based on column fo
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/search/column-formatting/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="column-formatting.cs" %}
 {% include code-snippet/grid/search/column-formatting/column-formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Display HTML content](../images/cell/display-html-content.gif)
+![Perform search based on column formatting](../images/search/search-format.png)
 
 ## Perform search operation in Grid using multiple keywords
 
@@ -180,14 +180,14 @@ On the other hand, the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search-multiple-keywords/search/razor %}
+{% include code-snippet/grid/search/search-multiple-keywords/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="search-multiple-keywords.cs" %}
 {% include code-snippet/grid/search/search-multiple-keywords/search-multiple-keywords.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Display HTML content](../images/cell/display-html-content.gif)
+![multiple keywords](../images/search/search-multiple-key.png)
 
 > By using this approach, you can perform a search operation in the grid using multiple keywords.
 
@@ -201,12 +201,12 @@ The following example demonstrates how to define the `IgnoreAccent` property wit
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/search/ignore-accent/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="ignore-accent.cs" %}
 {% include code-snippet/grid/search/ignore-accent/ignore-accent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Display HTML content](../images/cell/display-html-content.gif)
+![ignore accent while searching](../images/search/search-accent.png)
 
 > * You can set [SearchSettings.IgnoreAccent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_IgnoreAccent) property along with other search settings such as [Fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields), [Operator](hhttps://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Operator), and [IgnoreCase](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_IgnoreCase) to achieve the desired search behavior.
 > * This feature works only for the characters that are not in the ASCII range.
@@ -222,14 +222,14 @@ The following example demonstrates how to highlight search text in grid using th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/Highlight-text/razor %}
+{% include code-snippet/grid/search/highlight-text/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/search/Highlight-text/Highlight-text.cs %}
+{% highlight c# tabtitle="Highlight-text.cs" %}
+{% include code-snippet/grid/search/highlight-text/Highlight-text.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Display HTML content](../images/cell/display-html-content.gif)
+![Highlight the search text](../images/search/search-highlight.png)
 
 ## Clear search by external button
 
@@ -243,7 +243,7 @@ The following example demonstrates how to clear the searched records using an ex
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/search/clear-search/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="clear-search.cs" %}
 {% include code-snippet/grid/search/clear-search/clear-search.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -254,7 +254,7 @@ The following example demonstrates how to clear the searched records using an ex
 
 ## See also
 
-* [How to perform search by using Wildcard and LIKE operator filter](./filtering/filtering/#wildcard-and-like-operator-filter)
+* [How to perform search by using Wildcard and LIKE operator filter](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/filtering/filtering#wildcard-and-like-operator-filter)
 
 * [Add clear icon in search in ASP.NET MVC  Grid](https://www.syncfusion.com/forums/139361/add-clear-icon-in-search-in-asp-net-mvc-grid)
 

@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.datasource" toolbar="@(new List<string>() { "Search"})"> 
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" toolbar="@(new List<string>() { "Search"})" height="350px"> 
     <e-grid-searchSettings fields="@(new string[] { "CustomerID"})" operator="contains" key="Ha" ignoreCase="true"></e-grid-searchSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>

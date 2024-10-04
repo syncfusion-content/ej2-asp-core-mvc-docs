@@ -1,0 +1,61 @@
+@Html.EJS().Grid("Search").DataSource((IEnumerable<object>)ViewBag.datasource).Height("350px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("OrderID").IsPrimaryKey(true).Width("120").Add();
+    col.Field("CustomerID").HeaderText("CustomerID").Width("120").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Add();
+    col.Field("OrderDate").HeaderText("OrderDate").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width("120").Add();
+}).Toolbar(new List<string>() { "Search" }).ActionBegin("actionBegin").KeyPressed("keyPressed").Render()
+
+
+<script>
+    function actionBegin(args) {
+        if (args.requestType == 'searching') {
+            var grid = document.getElementById("Search").ej2_instances[0];
+
+            args.cancel = true;
+            setTimeout(() => {
+                var columns = grid.getColumns();
+                var predicate = null;
+                for (var i = 0; i < columns.length; i++) {
+                    var val = grid.valueFormatterService.fromView(
+                        args.searchString,
+                        columns[i].getParser(),
+                        columns[i].type
+                    );
+                    if (val) {
+                        if (predicate == null) {
+                            predicate = new ej.data.Predicate(
+                                columns[i].field,
+                                'contains',
+                                val,
+                                true,
+                                true
+                            );
+                        } else {
+                            predicate = predicate.or(
+                                columns[i].field,
+                                'contains',
+                                val,
+                                true,
+                                true
+                            );
+                        }
+                    }
+                }
+                grid.query = new ej.data.Query().where(predicate);
+            }, 200);
+        }
+    }
+
+    function keyPressed(args) {
+       if (
+            args.key == 'Enter' &&
+            args.target &&
+            args.target.closest('.e-search') &&
+            args.target.value == ''
+            ) {
+            args.cancel = true;
+            document.getElementById("Search").ej2_instances[0].query = new ej.data.Query();
+        }
+    }
+</script>
