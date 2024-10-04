@@ -1,7 +1,6 @@
 @{
     var ChildGrid = new Syncfusion.EJ2.Grids.Grid()
     {
-        DataSource = (IEnumerable<object>)ViewBag.DataSource,
         QueryString = "EmployeeID",
         Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
 			new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
@@ -19,5 +18,11 @@
         col.Field("FirstName").HeaderText("Name").Width("120").Add();
         col.Field("LastName").HeaderText("LastName").Width("120").Add();
         col.Field("City").HeaderText("City").Width("120").Add();
-    }).ChildGrid(ChildGrid).Render()
-    </div>
+    }).ChildGrid(ChildGrid).Load("load").Render()
+</div>
+<script>
+   function load() {
+        var ordersDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
+        this.childGrid.dataSource = ordersDataSource;
+    }
+</script>

@@ -13,11 +13,16 @@
 }
 
 <div>
-        @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Columns(col =>
+    @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Columns(col =>
     {
         col.Field("EmployeeID").HeaderText("Employee ID").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
         col.Field("FirstName").HeaderText("Name").Width("120").Add();
         col.Field("LastName").HeaderText("LastName").Width("120").Add();
         col.Field("City").HeaderText("City").Width("120").Add();
-    }).ChildGrid(ChildGrid).Render()
-    </div>
+    }).ChildGrid(ChildGrid).DataBound("dataBound").Render()
+</div>
+<script>
+    function dataBound() {
+        this.detailRowModule.expand(2); // initial expand 2 chid Grid.
+    }
+</script>

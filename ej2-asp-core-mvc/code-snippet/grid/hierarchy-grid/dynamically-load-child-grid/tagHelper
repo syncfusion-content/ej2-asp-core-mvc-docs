@@ -2,7 +2,6 @@
     ViewData["Title"] = "Home page";
     var ChildGrid = new Syncfusion.EJ2.Grids.Grid()
             {
-                DataSource = ViewBag.DataSource,
                 QueryString = "EmployeeID",
                 Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
                 new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
@@ -14,12 +13,18 @@
 }
 
 <div>
-    <ejs-grid id="Grid" dataSource="@ViewBag.EmployeeDataSource" childGrid="@ChildGrid" height="250">
+    <ejs-grid id="Grid" dataSource="@ViewBag.EmployeeDataSource" childGrid="@ChildGrid" Load="load" height="250">
         <e-grid-columns>
             <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="80"></e-grid-column>
             <e-grid-column field="FirstName" headerText="Name" width="120"></e-grid-column>
-            <e-grid-column field="LastName" headerText="LastName" width="120"></e-grid-column>            
+            <e-grid-column field="LastName" headerText="LastName" width="120"></e-grid-column>
             <e-grid-column field="City" headerText="City" width="130"></e-grid-column>
         </e-grid-columns>
     </ejs-grid>
 </div>
+<script>
+    function load() {
+        var ordersDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
+        this.childGrid.dataSource = ordersDataSource;
+    }
+</script>

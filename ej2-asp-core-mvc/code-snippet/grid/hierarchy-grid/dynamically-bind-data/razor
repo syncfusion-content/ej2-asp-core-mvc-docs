@@ -1,8 +1,6 @@
 @{
     var ChildGrid = new Syncfusion.EJ2.Grids.Grid()
     {
-        DataSource = (IEnumerable<object>)ViewBag.DataSource,
-        QueryString = "EmployeeID",
         Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
 			new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
             new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="Customer ID", Width="150" },
@@ -19,5 +17,16 @@
         col.Field("FirstName").HeaderText("Name").Width("120").Add();
         col.Field("LastName").HeaderText("LastName").Width("120").Add();
         col.Field("City").HeaderText("City").Width("120").Add();
-    }).ChildGrid(ChildGrid).Render()
-    </div>
+    }).ChildGrid(ChildGrid).DetailDataBound("detailDataBound").Render()
+</div>
+<script>
+   function detailDataBound(args) {
+        var ordersDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
+        var empIdValue = args.data['EmployeeID'];
+        var childGridData = new ej.data.DataManager(ordersDataSource).executeLocal(
+            new ej.data.Query().where('EmployeeID', 'equal', empIdValue, true)
+        );
+        args.childGrid.query = new ej.data.Query();
+        args.childGrid.dataSource = childGridData;        
+    }
+</script>

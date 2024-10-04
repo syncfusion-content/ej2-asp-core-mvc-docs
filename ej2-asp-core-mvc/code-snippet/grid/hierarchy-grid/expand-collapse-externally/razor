@@ -13,11 +13,25 @@
 }
 
 <div>
-        @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Columns(col =>
+    <div style="margin:0px 0px 10px 0px">
+        @Html.EJS().Button("expand").Content("Expand All").Render()
+        @Html.EJS().Button("collapse").Content("Collapse All").Render()
+    </div>
+    @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Columns(col =>
     {
         col.Field("EmployeeID").HeaderText("Employee ID").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
         col.Field("FirstName").HeaderText("Name").Width("120").Add();
         col.Field("LastName").HeaderText("LastName").Width("120").Add();
         col.Field("City").HeaderText("City").Width("120").Add();
     }).ChildGrid(ChildGrid).Render()
-    </div>
+</div>
+<script>
+    document.getElementById('expand').addEventListener('click', function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.detailRowModule.expandAll();
+    });
+    document.getElementById('collapse').addEventListener('click', function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.detailRowModule.collapseAll();
+    })
+</script>

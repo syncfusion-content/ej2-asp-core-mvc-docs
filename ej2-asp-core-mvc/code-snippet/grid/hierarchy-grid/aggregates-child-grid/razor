@@ -7,13 +7,30 @@
 			new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
             new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="Customer ID", Width="150" },
             new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="120" },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="Freight", HeaderText="Freight", Format="C2", Width="100" },
             new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="130" },
+        },
+        Aggregates = new List<Syncfusion.EJ2.Grids.GridAggregate>
+        {
+            new Syncfusion.EJ2.Grids.GridAggregate
+            {
+                Columns = new List<Syncfusion.EJ2.Grids.GridAggregateColumn>
+                {
+                    new Syncfusion.EJ2.Grids.GridAggregateColumn
+                    {
+                        Field = "Freight",
+                        Type = "Sum",
+                        Format = "C2",
+                        FooterTemplate = "Sum: ${Sum}"
+                    }
+                }
+            }
         },
     };
 }
 
 <div>
-        @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Columns(col =>
+    @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Columns(col =>
     {
         col.Field("EmployeeID").HeaderText("Employee ID").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
         col.Field("FirstName").HeaderText("Name").Width("120").Add();

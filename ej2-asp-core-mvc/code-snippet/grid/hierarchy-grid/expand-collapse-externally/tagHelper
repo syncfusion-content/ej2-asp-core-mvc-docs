@@ -14,6 +14,10 @@
 }
 
 <div>
+    <div style="margin:0px 0px 10px 0px">
+        <ejs-button id="expand"  content="Expand All"></ejs-button>
+        <ejs-button id="collapse" content="Collapse All"></ejs-button>
+    </div>
     <ejs-grid id="Grid" dataSource="@ViewBag.EmployeeDataSource" childGrid="@ChildGrid" height="250">
         <e-grid-columns>
             <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="80"></e-grid-column>
@@ -23,3 +27,13 @@
         </e-grid-columns>
     </ejs-grid>
 </div>
+<script>
+    document.getElementById('expand').addEventListener('click', function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.detailRowModule.expandAll();
+    });
+    document.getElementById('collapse').addEventListener('click', function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.detailRowModule.collapseAll();
+    })
+</script>

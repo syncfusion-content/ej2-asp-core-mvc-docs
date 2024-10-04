@@ -2,7 +2,8 @@
     var ChildGrid = new Syncfusion.EJ2.Grids.Grid()
     {
         DataSource = (IEnumerable<object>)ViewBag.DataSource,
-        QueryString = "EmployeeID",
+        QueryString = "ID",
+        Load="load",
         Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
 			new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
             new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="Customer ID", Width="150" },
@@ -20,4 +21,9 @@
         col.Field("LastName").HeaderText("LastName").Width("120").Add();
         col.Field("City").HeaderText("City").Width("120").Add();
     }).ChildGrid(ChildGrid).Render()
-    </div>
+</div>
+<script>
+    function load() {
+        this.parentDetails.parentKeyFieldValue = this.parentDetails.parentRowData['EmployeeID'];
+    }
+</script>
