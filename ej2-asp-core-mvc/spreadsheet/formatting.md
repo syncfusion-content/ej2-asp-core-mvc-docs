@@ -128,9 +128,8 @@ The code below illustrates how culture-based format codes are mapped to their co
 {% if page.publishingplatform == "aspnet-core" %}
 
 ```csharp
-
-Dictionary<string, List<object>> localeFormats = new Dictionary<string, List<object>> {
-{ "de", new List<object> {
+List<object> deLocaleFormats = new List<object>()
+{
     new { id = 37, code = @"#,##0;-#,##0" },
     new { id = 38, code = @"#,##0;[Red]-#,##0" },
     new { id = 39, code = @"#,##0.00;-#,##0.00" },
@@ -150,22 +149,20 @@ Dictionary<string, List<object>> localeFormats = new Dictionary<string, List<obj
     new { id = 20, code = @"hh:mm" },
     new { id = 21, code = @"hh:mm:ss" },
     new { id = 22, code = @"dd.MM.yyyy hh:mm" }
-}}
-}
-ViewBag.LocaleFormats = localeFormats;
+};
+ViewBag.deLocaleFormats = deLocaleFormats;
 
 <script>
-    var localeFormats = @Html.Raw(Json.Serialize(localeFormats));
+    var deLocaleFormats = @Html.Raw(Json.Serialize(deLocaleFormats));
     // Mapping culture-based number formats for the "de" culture: The "spreadsheet" parameter is an instance of the spreadsheet component, and the "deLocaleFormats" parameter is an array containing format codes and their corresponding format IDs for the "de" culture.
-    ej.spreadsheet.configureLocalizedFormat(spreadsheet, localeFormats['de']);
+    ej.spreadsheet.configureLocalizedFormat(spreadsheet, deLocaleFormats);
 </script>
 ```
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 ```csharp
-
-Dictionary<string, List<object>> localeFormats = new Dictionary<string, List<object>> {
-{ "de", new List<object> {
+List<object> deLocaleFormats = new List<object>()
+{
     new { id = 37, code = @"#,##0;-#,##0" },
     new { id = 38, code = @"#,##0;[Red]-#,##0" },
     new { id = 39, code = @"#,##0.00;-#,##0.00" },
@@ -185,14 +182,13 @@ Dictionary<string, List<object>> localeFormats = new Dictionary<string, List<obj
     new { id = 20, code = @"hh:mm" },
     new { id = 21, code = @"hh:mm:ss" },
     new { id = 22, code = @"dd.MM.yyyy hh:mm" }
-}}
-}
-ViewBag.LocaleFormats = localeFormats;
+};
+ViewBag.deLocaleFormats = deLocaleFormats;
 
 <script>
-    var localeFormats = @Html.Raw(Json.Encode(localeFormats));
+    var deLocaleFormats = @Html.Raw(Json.Encode(deLocaleFormats));
     // Mapping culture-based number formats for the "de" culture: The "spreadsheet" parameter is an instance of the spreadsheet component, and the "deLocaleFormats" parameter is an array containing format codes and their corresponding format IDs for the "de" culture.
-    ej.spreadsheet.configureLocalizedFormat(spreadsheet, localeFormats['de']);
+    ej.spreadsheet.configureLocalizedFormat(spreadsheet, deLocaleFormats);
 </script>
 ```
 
