@@ -26,7 +26,7 @@ The following example demonstrates how to enable the hierarchy feature in the gr
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/hierarchy-grid/hierarchy-grid/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Childgrid.cs" %}
 {% include code-snippet/grid/hierarchy-grid/hierarchy-grid/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -49,7 +49,7 @@ In the following example, the `load` event is utilized to customize the mapping 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/hierarchy-grid/hierarchy-grid-different-field/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Different-field.cs" %}
 {% include code-snippet/grid/hierarchy-grid/hierarchy-grid-different-field/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -68,7 +68,7 @@ In the provided example, expand the third record of the grid by utilizing the `e
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/hierarchy-grid/expand-child-grid/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Expand.cs" %}
 {% include code-snippet/grid/hierarchy-grid/expand-child-grid/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -89,7 +89,7 @@ The following example demonstrates how to dynamically load child grid data using
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/hierarchy-grid/dynamically-load-child-grid/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Load.cs" %}
 {% include code-snippet/grid/hierarchy-grid/dynamically-load-child-grid/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -108,7 +108,7 @@ In the `detailDataBound` event handler, you can filter the child grid's dataSour
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/hierarchy-grid/dynamically-bind-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Dynamicbind.cs" %}
 {% include code-snippet/grid/hierarchy-grid/dynamically-bind-data/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -127,7 +127,7 @@ In the following example, the parent and child grids are related by the **Employ
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/hierarchy-grid/add-record-child-grid/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="AddRecord.cs" %}
 {% include code-snippet/grid/hierarchy-grid/add-record-child-grid/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -146,7 +146,7 @@ The following example demonstrates, how to show a custom image in the **Employee
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/hierarchy-grid/template-column-child-grid/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Templategrid.cs" %}
 {% include code-snippet/grid/hierarchy-grid/template-column-child-grid/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -165,7 +165,7 @@ The following example demonstrates how to obtain parent details in a child grid 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/hierarchy-grid/get-parent-grid-details/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Parent-detail.cs" %}
 {% include code-snippet/grid/hierarchy-grid/get-parent-grid-details/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -184,7 +184,7 @@ The following example demonstrates how to render aggregates in a child grid to d
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/hierarchy-grid/aggregates-child-grid/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Aggregates.cs" %}
 {% include code-snippet/grid/hierarchy-grid/aggregates-child-grid/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -203,7 +203,7 @@ The following example demonstrates how to expand and collapse the hierarchy grid
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/hierarchy-grid/expand-collapse-externally/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="External-expand.cs" %}
 {% include code-snippet/grid/hierarchy-grid/expand-collapse-externally/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -255,7 +255,7 @@ The following example demonstrates how to hide the expand/collapse icon in the r
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/hierarchy-grid/hide-expand-icon/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
+{% highlight c# tabtitle="Expandicon.cs" %}
 {% include code-snippet/grid/hierarchy-grid/hide-expand-icon/html.cs %}
 {% endhighlight %}
 {% endtabs %}
