@@ -3,7 +3,6 @@
     {
         DataSource = ViewBag.DataSource,
         QueryString = "EmployeeID",
-        Created="created",
         Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
 			new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
             new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="Customer ID", Width="150" },
@@ -14,22 +13,34 @@
 }
 
 <div>
-    <div style="margin-left:100px;">
-      <p style="color:black; font-size: large;" id="message"></p>
-    </div>
     @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Columns(col =>
     {
         col.Field("EmployeeID").HeaderText("Employee ID").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
         col.Field("FirstName").HeaderText("Name").Width("120").Add();
         col.Field("LastName").HeaderText("LastName").Width("120").Add();
         col.Field("City").HeaderText("City").Width("120").Add();
-    }).ChildGrid(ChildGrid).Render()
+    }).ChildGrid(ChildGrid)..RowDataBound("rowDataBound").Render()
 </div>
 <script>
-   function created() {
-      var parentRowData = this.parentDetails.parentRowData; // 'this' refers to the instance of the child grid.
-      document.getElementById(
-        'message'
-      ).innerHTML = `EmployeeID: ${parentRowData.EmployeeID}, FirstName: ${parentRowData.FirstName}, Title: ${parentRowData.Title}`;
+   function rowDataBound(args) {
+        var ordersDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
+        var parentData = (args.data)['EmployeeID'];
+        var childrecord = new ej.data.DataManager(ordersDataSource).executeLocal(new ej.data.Query().where('EmployeeID', 'equal', parentData, true));
+        if (childrecord.length === 0) {
+            // Here hide which parent row has no child records
+            var rowElement = args.row;
+            var cellElement = rowElement.querySelector('td')
+            cellElement.innerHTML = ' ';
+            cellElement.className = 'e-customizedexpandcell';
+        }
     }
 </script>
+<style>
+        .e-row[aria-selected="true"] .e-customizedexpandcell {
+    background-color: #e0e0e0;
+    }
+
+    .e-grid.e-gridhover tr[role='row']:hover {
+        background-color: #eee;
+    }
+</style>
