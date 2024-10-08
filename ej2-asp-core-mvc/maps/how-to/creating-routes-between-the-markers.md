@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to create the routes in Syncfusion ##Platform_Name## Maps Component
-description: Learn here all about creating the routes between the markers in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: How to create routes between markers in Syncfusion ##Platform_Name## Maps Component
+description: Learn here all about creating routes between markers in the Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Maps
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Creating routes between the markers in the ##Platform_Name## Maps Component
+# Creating Routes Between Markers in the ##Platform_Name## Maps Component
 
 The Syncfusion Maps component supports plotting routes between two locations (source and destination) using the navigation line feature. Markers can be placed at these locations to visually indicate the source and destination, making it easier to view the path between them on the map.
 
