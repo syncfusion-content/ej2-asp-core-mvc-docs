@@ -34,7 +34,7 @@ To access the Google Maps Directions API, include the following script file in y
 
 ## Create Input Fields for Source and Destination
 
-To obtain the source and destination from the user, create two input fields as text boxes. Additionally, include a button to generate routes on the map based on their input. When the user provides addresses in the input fields, you can geocode the addresses to get the corresponding coordinates, add markers to the map at those locations, and draw the route between them will be explained in detail in the topics below.
+To obtain the source and destination from the user, create two input fields as text boxes. Additionally, include a button to generate routes on the map based on their input. The process for generating routes based on the button click is explained in the next section.
 
 ## Fetch coordinates from Google API
 
