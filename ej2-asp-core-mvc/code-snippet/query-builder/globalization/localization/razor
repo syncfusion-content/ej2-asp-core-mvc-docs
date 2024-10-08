@@ -42,6 +42,10 @@
             'NotIn': 'Nicht in',
             'Remove': 'LÖSCHEN',
             'ValidationMessage': 'Dieses Feld wird benötigt',
+            'IsEmpty': 'Ist leer',
+            'IsNotEmpty': 'Ist nicht leer',
+            'IsNull': 'Ist Null',
+            'IsNotNull': 'Ist nicht Null',
         }
     }
     });
