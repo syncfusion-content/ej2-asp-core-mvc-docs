@@ -13,16 +13,22 @@ documentation: ug
 
 ## Candle
 
-Candle series are similar to Hilo Open Close series, are used to represent the low, high, open and closing price over time. To render a candle series, use series [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`Candle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_Candle).
+The Candle series, similar to the Hilo Open Close series, is used to represent the low, high, open, and closing prices over time. It is commonly used in financial charts to visualize stock price movements.
+
+To render a `candle` series in your chart, you need to follow a few steps to configure it correctly. Here’s a concise guide on how to do this:
+
+* **Set the series type:** Define the series `Type` as **Candle** in your chart configuration. This indicates that the data should be represented as a candle chart, providing a detailed view of stock price fluctuations by displaying the high, low, open, and close values for each time period.
+
+* **Provide high, low, open, and close values:** The Candle series requires five fields (x, high, low, open, and close) to accurately display the stock’s high, low, open, and close prices. Ensure that your data source includes these fields to create a detailed representation of stock price movements over time.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/financial-charts/candle/tagHelper %}
+{% include code-snippet/chart/series/candle/candle/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Candle.cs" %}
-{% include code-snippet/chart/series/financial-charts/candle/candle.cs %}
+{% include code-snippet/chart/series/candle/candle/candle.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,21 +36,44 @@ Candle series are similar to Hilo Open Close series, are used to represent the l
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/financial-charts/candle/razor %}
+{% include code-snippet/chart/series/candle/candle/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Candle.cs" %}
-{% include code-snippet/chart/series/financial-charts/candle/candle.cs %}
+{% include code-snippet/chart/series/candle/candle/candle.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Binding data with series
 
+You can bind data to the chart using the `DataSource` property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To pdisplay the data correctly, map the fields from the data to the chart series `XName`, `High`, `Low`, `Open` and `Close` properties.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/candle/candle/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Candle.cs" %}
+{% include code-snippet/chart/series/candle/candle/candle.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/candle/candle/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Candle.cs" %}
+{% include code-snippet/chart/series/candle/candle/candle.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Hollow Candles
 
-Candle charts allow to visually compare the current price with previous price by customizing the appearance.
-
-Candles are filled/left as hollow based on the following criteria.
+Hollow candles in candle charts allow you to visually compare the current price with the previous price by coloring them differently. The candles are filled or left hollow based on the following criteria:
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -54,37 +83,33 @@ Candles are filled/left as hollow based on the following criteria.
 </tr>
 <tr>
 <td>Filled</td>
-<td>candle sticks are filled when the close value is lesser than the open value</td>
+<td>Candlesticks are filled when the close value is less than the open value.</td>
 </tr>
 <tr>
 <td>Unfilled</td>
-<td>candle sticks are unfilled when the close value is greater than the open value</td>
+<td>Candlesticks are unfilled when the close value is greater than the open value.</td>
 </tr>
 </table>
 
-The color of the candle will be defined by comparing with previous values.
+The color of the candle will be defined by comparing it with previous values. The bear color will be applied when the current closing value is greater than the previous closing value. The bull color will be applied when the current closing value is less than the previous closing value.
 
-* Bear color  will be applied when the current closing value is greater than the previous closing value.
-* Bull color will be applied when the current closing value is less than the previous closing value.
-
-By default, bullFillColor is set as red and bearFillColor is set as green.
-
-
+By default, the `BullFillColor` is set to **red** and the `BearFillColor` is set to **green**.
 
 ## Solid Candles
 
-[`EnableSolidCandles`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_EnableSolidCandles) is used to enable/disable the solid candles. By default is set to be false. The fill color of the candle will be defined by its opening and closing values.
+The `EnableSolidCandles` property is used to enable or disable solid candles. By default, it is set to false. The fill color of the candle will be determined by its opening and closing values.
 
-[`BearFillColor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BearFillColor) will be applied when the opening value is less than the closing value. [`BullFillColor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BullFillColor) will be applied when the opening value is greater than closing value.
+* The `BearFillColor` will be applied when the opening value is less than the closing value.
+* The `BullFillColor` will be applied when the opening value is greater than the closing value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/financial-charts/solid-candles/tagHelper %}
+{% include code-snippet/chart/series/candle/solid-candle/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Solid-candles.cs" %}
-{% include code-snippet/chart/series/financial-charts/solid-candles/solid-candles.cs %}
+{% highlight c# tabtitle="Solid-candle.cs" %}
+{% include code-snippet/chart/series/candle/solid-candle/solid-candle.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,16 +117,127 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/financial-charts/solid-candles/razor %}
+{% include code-snippet/chart/series/candle/solid-candle/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Solid-candles.cs" %}
-{% include code-snippet/chart/series/financial-charts/solid-candles/solid-candles.cs %}
+{% highlight c# tabtitle="Solid-candle.cs" %}
+{% include code-snippet/chart/series/candle/solid-candle/solid-candle.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Empty points
 
+Data points with **null** or **undefined** values are considered empty. Empty data points are ignored and not plotted on the chart.
 
+**Mode**
+
+Use the `Mode` property to define how empty or missing data points are handled in the series. The default mode for empty points is **Gap**.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/candle/empty/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty.cs" %}
+{% include code-snippet/chart/series/candle/empty/empty.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/candle/empty/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty.cs" %}
+{% include code-snippet/chart/series/candle/empty/empty.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Fill**
+
+Use the `Fill` property to customize the fill color of empty points in the series.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/candle/empty-fill/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-fill.cs" %}
+{% include code-snippet/chart/series/candle/empty-fill/empty-fill.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/candle/empty-fill/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-fill.cs" %}
+{% include code-snippet/chart/series/candle/empty-fill/empty-fill.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Events
+
+### Series render
+
+The `SeriesRender` event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/candle/series-render/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/candle/series-render/series-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/candle/series-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/candle/series-render/series-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Point render
+
+The `PointRender` event allows you to customize each data point before it is rendered on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/candle/point-render/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/candle/point-render/point-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/candle/point-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/candle/point-render/point-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 ## See Also
 
 * [Data Label](../data-labels)

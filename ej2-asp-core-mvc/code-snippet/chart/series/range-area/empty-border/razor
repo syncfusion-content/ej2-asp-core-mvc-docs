@@ -1,6 +1,6 @@
 @Html.EJS().Chart("container").Series(series =>
     {
-        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.RangeStepArea).
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.RangeArea).
         XName("x").
         High("high").
         Low("low").

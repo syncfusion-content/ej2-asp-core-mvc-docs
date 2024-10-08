@@ -7,6 +7,7 @@
       DataSource(ViewBag.dataSource).
       Name("Gold").
       DashArray("5,5").
+      Border(ViewBag.border).
       Add();
    }).PrimaryXAxis(px =>
       px.Interval(1)

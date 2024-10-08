@@ -1,0 +1,16 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle)
+            .XName("x")
+            .Open("open")
+            .BearFillColor("#e56590")
+            .BullFillColor("#f8b883")
+            .High("high")
+            .Low("low")
+            .Close("close")
+            .Name("Volume")
+            .DataSource(ViewBag.dataSource).Add();
+    }).PrimaryXAxis(px =>
+         px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+    ).Title("AAPL Historical").Render()
+ 

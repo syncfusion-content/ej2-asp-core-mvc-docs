@@ -3,7 +3,7 @@
     </e-chart-primaryxaxis>
     <e-series-collection>
         <e-series dataSource="ViewBag.dataSource" xName="month" yName="sales"
-                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepLine" width="2">
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepArea" width="2">
             <e-series-marker visible="true" width="7" height="7" isFilled="true"></e-series-marker>
         </e-series>
     </e-series-collection>

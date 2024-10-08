@@ -1,6 +1,6 @@
 @Html.EJS().Chart("container").Series(series =>
    {
-      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepLine).
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepArea).
       XName("month").
       YName("sales").
       DataSource(ViewBag.dataSource).

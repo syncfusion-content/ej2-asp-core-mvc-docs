@@ -264,7 +264,7 @@ Use the `Mode` property to define how empty or missing data points are handled i
 {% endtabs %}
 {% endif %}
 
-**Fil**
+**Fill**
 
 Use the `Fill` property to customize the fill color of empty points in the series.
 

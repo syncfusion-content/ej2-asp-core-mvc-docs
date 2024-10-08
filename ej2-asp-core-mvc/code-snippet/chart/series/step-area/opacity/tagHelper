@@ -3,6 +3,6 @@
     </e-chart-primaryxaxis>
     <e-series-collection>
         <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
-                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepLine" opacity="0.5"></e-series>
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepArea" opacity="0.5"></e-series>
     </e-series-collection>
 </ejs-chart>

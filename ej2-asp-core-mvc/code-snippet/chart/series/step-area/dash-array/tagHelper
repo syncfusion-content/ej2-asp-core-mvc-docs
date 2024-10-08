@@ -4,5 +4,6 @@
     <e-series-collection>
         <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
                   type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepLine" dashArray="5,5"></e-series>
+            <e-series-border width="2" color="green"></e-series-border>
     </e-series-collection>
 </ejs-chart>

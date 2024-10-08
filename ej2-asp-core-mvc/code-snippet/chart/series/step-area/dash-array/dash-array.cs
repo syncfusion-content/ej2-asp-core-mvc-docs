@@ -15,7 +15,11 @@ public IActionResult Index()
         new AxisLabelData { x= "Brazil", y= 75.9 },
         new AxisLabelData { x= "China", y= 51.4 }
     };
-    ViewBag.dataSource = chartData;
+    ViewBag.dataSource = chartData;    
+    ChartBorder border = new ChartBorder();
+    border.Width = 2;
+    border.Color = "green";
+    ViewBag.border = border;
     return View();
 }
 
