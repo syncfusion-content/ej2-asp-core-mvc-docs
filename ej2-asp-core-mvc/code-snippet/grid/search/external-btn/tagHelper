@@ -14,7 +14,6 @@
     </e-grid-columns>
 </ejs-grid>
 
-
 <script>
     document.getElementById('SearchButton').addEventListener('click', () => {
         var gridObj = document.getElementById("Search").ej2_instances[0];

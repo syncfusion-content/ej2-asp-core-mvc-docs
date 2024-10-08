@@ -11,20 +11,19 @@
     let key = '';
     function onActionBegin(args) {
         if (args.requestType === 'searching') {
-            this.key = args.searchString.toLowerCase();
+           this.key=args.searchString.toLowerCase();
         }
     }
     function onQueryCellInfo(args) {
         if (this.key !== '') {
             var cellContent = args.data[(args.column).field];
-            if (cellContent != null && typeof cellContent === 'string') {
-                var parsedContent = cellContent.toLowerCase();
-                if (parsedContent.includes(this.key)) {
+                var parsedContent = cellContent.toString().toLowerCase();
+            if (parsedContent.includes(this.key)) {
                     var i = 0;
                     var searchStr = '';
                     while (i < this.key.length) {
                         var index = parsedContent.indexOf(this.key[i]);
-                        searchStr = searchStr + cellContent[index];
+                    searchStr = searchStr + cellContent.toString()[index];
                         i++;
                     }
                     args.cell.innerHTML = args.cell.innerText.replaceAll(
@@ -32,10 +31,10 @@
                         "<span class='customcss'>" + searchStr + '</span>'
                     );
                 }
-            }
         }
     }
 </script>
+
 <style>
     .customcss {
         background-color: yellow;

@@ -2,7 +2,7 @@
     <label style="padding: 1px 10px 20px 0px">
         Enable or disable ignoreAccent property
     </label>
-@Html.EJS().Switch("switch").Change("onSwitchChange").Render()
+    @Html.EJS().Switch("switch").Change("onSwitchChange").Render()
 </div>
 @Html.EJS().Grid("Search").DataSource((IEnumerable<object>)ViewBag.datasource).Height("350px").Columns(col =>
 {

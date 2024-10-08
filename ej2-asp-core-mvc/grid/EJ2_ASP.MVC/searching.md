@@ -12,6 +12,8 @@ documentation: ug
 
 The Syncfusion ASP.NET MVC Grid includes a powerful built-in searching feature that allows users to search for specific data within the grid. This feature enables efficient filtering of grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
 
+To set the [allowSearching](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#allowsearching) property to true to enable the searching feature in the grid.
+
 To further enhance the search functionality, you can integrate a search text box directly into the grid's toolbar. This allows users to enter search criteria conveniently within the grid interface. To add the search item to the grid's toolbar, use the [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property and add **Search** item.
 
 {% tabs %}
@@ -44,7 +46,7 @@ Property |Description
 The following example demonstrates how to set an initial search in the grid using the `searchSettings` property. The `searchSettings` property is set with the following values:
 
 1. `Fields`: **CustomerID** specifies that the search should be performed only in the 'CustomerID' field.
-2. `0perator`: **contains** indicates that the search should find records that contain the specified search key.
+2. `Operator`: **contains** indicates that the search should find records that contain the specified search key.
 3. `Key`: **Ha** is the initial search key that will be applied when the grid is rendered.
 4. `IgnoreCase`: **true** makes the search case-insensitive.
 5. `IgnoreAccent`: **true** will ignores diacritic characters or accents during the search operation.
@@ -149,7 +151,7 @@ In the following example, the `Created` event is bound to the grid component, an
 {% endhighlight %}
 {% endtabs %}
 
-![Search on each key stroke](../images/search/search-keyvalue.gif)
+![Search on each key stroke](../images/search/search-keystoke.gif)
 
 > Search on each key stroke approach may affect the performance of the application when dealing with a large number of records.
 
@@ -224,7 +226,7 @@ The following example demonstrates how to highlight search text in grid using th
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/search/highlight-text/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Highlight-text.cs" %}
+{% highlight c# tabtitle="highlight-text.cs" %}
 {% include code-snippet/grid/search/highlight-text/Highlight-text.cs %}
 {% endhighlight %}
 {% endtabs %}
