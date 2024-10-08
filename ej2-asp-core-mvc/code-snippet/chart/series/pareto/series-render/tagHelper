@@ -1,0 +1,19 @@
+<ejs-chart id="container" enableAnimation="true" seriesRender="changeColor">
+    <e-chart-primaryyaxis title="Frequency">
+    </e-chart-primaryyaxis>
+    <e-chart-primaryxaxis title="Defect" valueType="Category">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="Gold" xName="x" yName="y"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Pareto">
+            <e-series-marker visible="true" width="10" height="10">
+            </e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+ <script>
+      function changeColor(args) {
+         args.fill = 'green';
+      }
+   </script>

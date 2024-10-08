@@ -15,17 +15,11 @@ To get started with the ASP.NET Core Polar charts, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=cwIaOclRzwY" %}
 
-## Polar
+## Polar chart
 
-To render a polar series, use series[`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`Polar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_Polar).
+To render a [polar](https://www.syncfusion.com/aspnet-core-ui-controls/charts/chart-types/polar-chart) series in your chart, you need to follow a few steps to configure it correctly. Here’s a concise guide on how to do this:
 
-## Draw Types
-
-Polar drawType property is used to change the series plotting type to line, column, area, range column, spline, scatter, stacking area and stacking column. The default value of drawType is [`Line`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Line).
-
-### Line
-
-To render a line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`Line`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Line). [`IsClosed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IsClosed) property specifies whether to join start and end point of a line series used in polar chart to form a closed path. Default value of isClosed is true.
+* **Set the series type:** Define the series `type` as **Polar** in your chart configuration. This indicates that the data should be represented as a polar chart, which is ideal for plotting data points on a circular graph.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -50,11 +44,71 @@ To render a line draw type, use series [`DrawType`](https://help.syncfusion.com/
 {% endtabs %}
 {% endif %}
 
+## Binding data with series
 
+You can bind data to the chart using the `dataSource` property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series `xName` and `yName` properties.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/polar-line/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Polar-line.cs" %}
+{% include code-snippet/chart/series/polar-radar/polar-line/polar-line.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/polar-line/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Polar-line.cs" %}
+{% include code-snippet/chart/series/polar-radar/polar-line/polar-line.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Draw types
+
+Use the `drawType` property to change the series plotting type in a Polar chart to line, column, area, range column, spline, scatter, stacking area, spline area, or stacking column. The default value of `drawType` is **Line**.
+
+### Line
+
+To render a line draw type, you need to follow a few steps to configure it correctly.
+
+**Set the series type:** Define the series `drawType` as **Line** in your chart configuration. This indicates that the data should be represented as a polar line chart, with lines connecting each data point.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/polar-line/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Polar-line.cs" %}
+{% include code-snippet/chart/series/polar-radar/polar-line/polar-line.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/polar-line/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Polar-line.cs" %}
+{% include code-snippet/chart/series/polar-radar/polar-line/polar-line.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Spline
 
-To render a spline line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`Spline`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Spline).
+To render a spline draw type, you need to follow a few steps to configure it correctly.
+
+**Set the series type:** Define the series `drawType` as **Spline** in your chart configuration. This indicates that the data should be represented as a polar spline chart, with smooth, curved lines connecting each data point.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,11 +133,11 @@ To render a spline line draw type, use series [`DrawType`](https://help.syncfusi
 {% endtabs %}
 {% endif %}
 
-
-
 ### Area
 
-To render a area line draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`Area`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Area).
+To render an area draw type, you need to follow a few steps to configure it correctly.
+
+**Set the series type:** Define the series `drawType` as **Area** in your chart configuration. This indicates that the data should be represented as a polar area chart, with filled areas below the lines connecting each data point.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -108,11 +162,11 @@ To render a area line draw type, use series [`DrawType`](https://help.syncfusion
 {% endtabs %}
 {% endif %}
 
-
-
 ### Stacked Area
 
-To render a stacked area draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`StackingArea`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_StackingArea).
+To render a stacked area draw type, you need to follow a few steps to configure it correctly.
+
+**Set the series type:** Define the series `drawType` as **StackingArea** in your chart configuration. This indicates that the data should be represented as a polar stacked area chart, with areas stacked on top of each other, displaying the cumulative value of multiple series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -137,11 +191,11 @@ To render a stacked area draw type, use series [`DrawType`](https://help.syncfus
 {% endtabs %}
 {% endif %}
 
-
-
 ### Column
 
-To render a column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Column).
+To render a column draw type, you need to follow a few steps to configure it correctly.
+
+**Set the series type:** Define the series `drawType` as **Column** in your chart configuration. This indicates that the data should be represented as a polar column chart, allowing for the comparison of values across categories.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -166,11 +220,11 @@ To render a column draw type, use series [`DrawType`](https://help.syncfusion.co
 {% endtabs %}
 {% endif %}
 
-
-
 ### Stacked Column
 
-To render a stacked column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`StackingColumn`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_StackingColumn).
+To render a stacked column draw type, you need to follow a few steps to configure it correctly.
+
+**Set the series type:** Define the series `drawType` as **StackingColumn** in your chart configuration. This indicates that the data should be represented as a polar stacked column chart, with each column consisting of multiple segments stacked on top of each other.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -195,11 +249,11 @@ To render a stacked column draw type, use series [`DrawType`](https://help.syncf
 {% endtabs %}
 {% endif %}
 
-
-
 ### Range Column
 
-To render a range column draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`RangeColumn`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_RangeColumn).
+To render a range column draw type, you need to follow a few steps to configure it correctly.
+
+**Set the series type:** Define the series `drawType` as **RangeColumn** in your chart configuration. This indicates that the data should be represented as a polar range column chart, where each column spans a range of values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -224,11 +278,11 @@ To render a range column draw type, use series [`DrawType`](https://help.syncfus
 {% endtabs %}
 {% endif %}
 
-
-
 ### Scatter
 
-To render a scatter draw type, use series [`DrawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as [`Scatter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDrawType.html#Syncfusion_EJ2_Charts_ChartDrawType_Scatter).
+To render a scatter draw type, you need to follow a few steps to configure it correctly.
+
+**Set the series type:** Define the series `drawType` as **Scatter** in your chart configuration. This indicates that the data should be represented as a polar scatter chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -253,13 +307,40 @@ To render a scatter draw type, use series [`DrawType`](https://help.syncfusion.c
 {% endtabs %}
 {% endif %}
 
+### Spline area
 
+To render an spline area draw type, you need to follow a few steps to configure it correctly.
+
+**Set the series type:** Define the series `drawType` as **SplineArea** in your chart configuration. This indicates that the data should be represented as a polar spline area chart, where the series is drawn with smooth, curved lines connecting each data point, and the area beneath the line is filled with color.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/polar-splinearea/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Polar-splinearea.cs" %}
+{% include code-snippet/chart/series/polar-radar/polar-splinearea/polar-splinearea.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/polar-splinearea/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Polar-splinearea.cs" %}
+{% include code-snippet/chart/series/polar-radar/polar-splinearea/polar-splinearea.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Series customization
 
 ### Start Angle
 
-You can customize the start angle of the polar series using [`StartAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_StartAngle) property. By default, `StartAngle` is 0 degree.
+You can customize the start angle of the polar series using startAngle property. By default, `startAngle` is **0** degree.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -284,11 +365,9 @@ You can customize the start angle of the polar series using [`StartAngle`](https
 {% endtabs %}
 {% endif %}
 
+### Radius
 
-
-### Coefficient in axis
-
-You can customize the radius of the polar series using [`Coefficient`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Coefficient) property. By default, `Coefficient` is 100.
+You can customize the radius of the polar series using `coefficient` property. By default, `coefficient` is **100**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -313,7 +392,146 @@ You can customize the radius of the polar series using [`Coefficient`](https://h
 {% endtabs %}
 {% endif %}
 
+## Empty points
 
+Data points with **null** or **undefined** values are considered empty. Empty data points are ignored and not plotted on the chart.
+
+**Mode**
+
+Use the `mode` property to define how empty or missing data points are handled in the series. The default mode for empty points is **Gap**.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/empty/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty.cs" %}
+{% include code-snippet/chart/series/polar-radar/empty/empty.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/empty/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty.cs" %}
+{% include code-snippet/chart/series/polar-radar/empty/empty.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Fill**
+
+Use the `fill` property to customize the fill color of empty points in the series.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/empty-fill/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-fill.cs" %}
+{% include code-snippet/chart/series/polar-radar/empty-fill/empty-fill.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/empty-fill/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-fill.cs" %}
+{% include code-snippet/chart/series/polar-radar/empty-fill/empty-fill.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Border**
+
+Use the `border` property to customize the width and color of the border for empty points.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/empty-border/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-border.cs" %}
+{% include code-snippet/chart/series/polar-radar/empty-border/empty-border.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/empty-border/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-border.cs" %}
+{% include code-snippet/chart/series/polar-radar/empty-border/empty-border.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Events
+
+### Series render
+
+The `seriesRender` event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/series-render/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/polar-radar/series-render/series-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/series-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/polar-radar/series-render/series-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Point render
+
+The `pointRender` event allows you to customize each data point before it is rendered on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/point-render/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/polar-radar/point-render/point-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/polar-radar/point-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/polar-radar/point-render/point-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See Also
 
