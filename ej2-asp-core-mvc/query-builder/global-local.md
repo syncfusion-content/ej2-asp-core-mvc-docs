@@ -19,7 +19,7 @@ The following list of properties and its values are used in the Query Builder.
 | ------------ | ----------------------- |
 | AddGroup  | Add Group |
 | AddCondition  | Add Condition |
-| AddButton | Add Button |
+| AddButton | Add Group/Condition |
 | DeleteRule | Remove this condition |
 | DeleteGroup | Delete group |
 | Edit | EDIT |
