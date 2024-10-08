@@ -46,7 +46,7 @@ To render a `candle` series in your chart, you need to follow a few steps to con
 
 ## Binding data with series
 
-You can bind data to the chart using the `DataSource` property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To pdisplay the data correctly, map the fields from the data to the chart series `XName`, `High`, `Low`, `Open` and `Close` properties.
+You can bind data to the chart using the `DataSource` property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series `XName`, `High`, `Low`, `Open` and `Close` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -152,7 +152,7 @@ To customize the length, width, opacity, and fill color of the error bar caps, y
 
 ## Customizing error bar color
 
-To customise the error bar color for individual errors, use the `ErrorBarColorMapping` property. You can also customize the vertical error, horizontal error, horizontal negative and positive error, and vertical negative and positive error for an individual point using the `VerticalError`, `HorizontalError`, `HorizontalNegativeError`, `HorizontalPositiveError`, `VerticalNegativeError`, and `VerticalPositiveError` properties.
+To customize the error bar color for individual errors, use the `ErrorBarColorMapping` property. You can also customize the vertical error, horizontal error, horizontal negative and positive error, and vertical negative and positive error for an individual point using the `VerticalError`, `HorizontalError`, `HorizontalNegativeError`, `HorizontalPositiveError`, `VerticalNegativeError`, and `VerticalPositiveError` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
