@@ -49,8 +49,8 @@ To obtain the geographic coordinates (latitude and longitude) from the Google Di
         initMap();
     });
     function initMap() {
-        const directionsService = new google.maps.DirectionsService();
-        const onButtonClick = function () {
+        var directionsService = new google.maps.DirectionsService();
+        var onButtonClick = function () {
             source = document.getElementById('input').value.toLowerCase();
             destination = document.getElementById('output').value.toLowerCase();
             if (
@@ -87,7 +87,7 @@ To obtain the geographic coordinates (latitude and longitude) from the Google Di
                     latitude: response.routes[0].legs[0].end_location.lat(),
                     longitude: response.routes[0].legs[0].end_location.lng(),
                 });
-                var navigationlines = maps.ej2_instances[0].layers[0].navigationLineSettings;
+                var navigationLines = maps.ej2_instances[0].layers[0].navigationLineSettings;
                 var latLngs = response.routes[0].overview_path;
                 var latitudes = [];
                 var longitudes = [];
@@ -95,8 +95,8 @@ To obtain the geographic coordinates (latitude and longitude) from the Google Di
                     latitudes.push(latLngs[i].lat());
                     longitudes.push(latLngs[i].lng());
                 }
-                navigationlines[0].latitude = latitudes;
-                navigationlines[0].longitude = longitudes;
+                navigationLines[0].latitude = latitudes;
+                navigationLines[0].longitude = longitudes;
             })
             .catch((e) => window.alert('Directions request failed due to ' + status));
     }
@@ -112,8 +112,8 @@ To obtain the geographic coordinates (latitude and longitude) from the Google Di
         initMap();
     });
     function initMap() {
-        const directionsService = new google.maps.DirectionsService();
-        const onButtonClick = function () {
+        var directionsService = new google.maps.DirectionsService();
+        var onButtonClick = function () {
             source = document.getElementById('input').value.toLowerCase();
             destination = document.getElementById('output').value.toLowerCase();
             if (
@@ -150,7 +150,7 @@ To obtain the geographic coordinates (latitude and longitude) from the Google Di
                     latitude: response.routes[0].legs[0].end_location.lat(),
                     longitude: response.routes[0].legs[0].end_location.lng(),
                 });
-                var navigationlines = maps.ej2_instances[0].layers[0].navigationLineSettings;
+                var navigationLines = maps.ej2_instances[0].layers[0].navigationLineSettings;
                 var latLngs = response.routes[0].overview_path;
                 var latitudes = [];
                 var longitudes = [];
@@ -158,8 +158,8 @@ To obtain the geographic coordinates (latitude and longitude) from the Google Di
                     latitudes.push(latLngs[i].lat());
                     longitudes.push(latLngs[i].lng());
                 }
-                navigationlines[0].latitude = latitudes;
-                navigationlines[0].longitude = longitudes;
+                navigationLines[0].latitude = latitudes;
+                navigationLines[0].longitude = longitudes;
             })
             .catch((e) => window.alert('Directions request failed due to ' + status));
     }
@@ -216,7 +216,7 @@ To generate and visualize the route, use the geographic coordinates obtained fro
 {% if page.publishingplatform == "aspnet-core" %}
 
 ```
-        var navigationlines = maps.ej2_instances[0].layers[0].navigationLineSettings;
+        var navigationLines = maps.ej2_instances[0].layers[0].navigationLineSettings;
         var latLngs = response.routes[0].overview_path;
         var latitudes = [];
         var longitudes = [];
@@ -224,14 +224,14 @@ To generate and visualize the route, use the geographic coordinates obtained fro
             latitudes.push(latLngs[i].lat());
             longitudes.push(latLngs[i].lng());
         }
-        navigationlines[0].latitude = latitudes;
-        navigationlines[0].longitude = longitudes;
+        navigationLines[0].latitude = latitudes;
+        navigationLines[0].longitude = longitudes;
 ```
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 ```
-          var navigationlines = maps.ej2_instances[0].layers[0].navigationLineSettings;
+          var navigationLines = maps.ej2_instances[0].layers[0].navigationLineSettings;
           var latLngs = response.routes[0].overview_path;
           var latitudes = [];
           var longitudes = [];
@@ -239,8 +239,8 @@ To generate and visualize the route, use the geographic coordinates obtained fro
               latitudes.push(latLngs[i].lat());
               longitudes.push(latLngs[i].lng());
           }
-          navigationlines[0].latitude = latitudes;
-          navigationlines[0].longitude = longitudes;
+          navigationLines[0].latitude = latitudes;
+          navigationLines[0].longitude = longitudes;
 ```
 
 {% endif %}
