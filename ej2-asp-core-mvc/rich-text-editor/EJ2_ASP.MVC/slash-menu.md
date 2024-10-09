@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slash Menu in ##Platform_Name## Rich Text Editor Component
+title: Slash Menu in ##Platform_Name## Rich Text Editor Component | Syncfusion
 description: Learn here all about Slash Menu in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Slash Menu
