@@ -47,7 +47,6 @@ ViewBag.SlashMenuSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorSlas
     PopupWidth = "250px"
 };
 
-
 ```
 
 ## Adding Custom Slash Menu Items
