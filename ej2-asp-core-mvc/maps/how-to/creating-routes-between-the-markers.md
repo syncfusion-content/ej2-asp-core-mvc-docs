@@ -249,10 +249,10 @@ You can find a demonstration of integrating the Google Maps Directions API with 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-[Sample in the GitHub](https://github.com/SyncfusionExamples/How-to-create-a-route-between-the-markers-on-the-Core-Maps-from-the-external-source/tree/master)
+[Sample in the GitHub](https://github.com/SyncfusionExamples/how-to-create-a-route-between-the-markers-in-the-Core-maps)
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-[Sample in the GitHub](https://github.com/SyncfusionExamples/How-to-create-a-route-between-the-markers-on-the-MVC-Maps-from-the-external-source/tree/master)
+[Sample in the GitHub](https://github.com/SyncfusionExamples/how-to-create-a-route-between-the-markers-in-the-MVC-maps)
 
 {% endif %}
