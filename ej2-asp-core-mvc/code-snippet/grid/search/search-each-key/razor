@@ -1,11 +1,11 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height(400).Width("100%").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("160").Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
 
-}).AllowPaging().Created("created").Toolbar(new List<string>() { "Search" }).Render()
+}).Created("created").Toolbar(new List<string>() { "Search" }).Render()
 
 <script>
 function created() {
