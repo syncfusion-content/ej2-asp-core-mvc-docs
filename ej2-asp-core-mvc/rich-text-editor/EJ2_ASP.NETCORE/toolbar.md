@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar in ##Platform_Name## Rich Text Editor Component
+title: Toolbar in ##Platform_Name## Rich Text Editor Component | Syncfusion
 description: Learn here all about Toolbar in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Toolbar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Toolbar
+# Toolbar in ##Platform_Name## Rich text editor control
 
 The Rich Text Editor’s toolbar contains a collection of tools such as bold, italic and text alignment buttons that are used to format the content. However, in most integrations, it’s desirable to change the toolbar configuration to suit needs. Fortunately, that’s quite easy to do too.
 

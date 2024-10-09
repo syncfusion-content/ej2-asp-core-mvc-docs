@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard Support in ##Platform_Name## Rich Text Editor Component
+title: Keyboard Support in ##Platform_Name## Rich Text Editor Component | Syncfusion
 description: Learn here all about Keyboard Support in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Keyboard Support
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Keyboard Support
+# Keyboard Support in ##Platform_Name## Rich Text Editor component
 
 The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs.
 
