@@ -88,12 +88,12 @@ To obtain the geographic coordinates (latitude and longitude) from the Google Di
                     longitude: response.routes[0].legs[0].end_location.lng(),
                 });
                 var navigationLines = maps.ej2_instances[0].layers[0].navigationLineSettings;
-                var latLngs = response.routes[0].overview_path;
+                var coordinates = response.routes[0].overview_path;
                 var latitudes = [];
                 var longitudes = [];
-                for (var i = 0; i < latLngs.length; i++) {
-                    latitudes.push(latLngs[i].lat());
-                    longitudes.push(latLngs[i].lng());
+                for (var i = 0; i < coordinates.length; i++) {
+                    latitudes.push(coordinates[i].lat());
+                    longitudes.push(coordinates[i].lng());
                 }
                 navigationLines[0].latitude = latitudes;
                 navigationLines[0].longitude = longitudes;
@@ -151,12 +151,12 @@ To obtain the geographic coordinates (latitude and longitude) from the Google Di
                     longitude: response.routes[0].legs[0].end_location.lng(),
                 });
                 var navigationLines = maps.ej2_instances[0].layers[0].navigationLineSettings;
-                var latLngs = response.routes[0].overview_path;
+                var coordinates = response.routes[0].overview_path;
                 var latitudes = [];
                 var longitudes = [];
-                for (var i = 0; i < latLngs.length; i++) {
-                    latitudes.push(latLngs[i].lat());
-                    longitudes.push(latLngs[i].lng());
+                for (var i = 0; i < coordinates.length; i++) {
+                    latitudes.push(coordinates[i].lat());
+                    longitudes.push(coordinates[i].lng());
                 }
                 navigationLines[0].latitude = latitudes;
                 navigationLines[0].longitude = longitudes;
@@ -217,12 +217,12 @@ To generate and visualize the route, use the geographic coordinates obtained fro
 
 ```
         var navigationLines = maps.ej2_instances[0].layers[0].navigationLineSettings;
-        var latLngs = response.routes[0].overview_path;
+        var coordinates = response.routes[0].overview_path;
         var latitudes = [];
         var longitudes = [];
-        for (var i = 0; i < latLngs.length; i++) {
-            latitudes.push(latLngs[i].lat());
-            longitudes.push(latLngs[i].lng());
+        for (var i = 0; i < coordinates.length; i++) {
+            latitudes.push(coordinates[i].lat());
+            longitudes.push(coordinates[i].lng());
         }
         navigationLines[0].latitude = latitudes;
         navigationLines[0].longitude = longitudes;
@@ -232,12 +232,12 @@ To generate and visualize the route, use the geographic coordinates obtained fro
 
 ```
           var navigationLines = maps.ej2_instances[0].layers[0].navigationLineSettings;
-          var latLngs = response.routes[0].overview_path;
+          var coordinates = response.routes[0].overview_path;
           var latitudes = [];
           var longitudes = [];
-          for (var i = 0; i < latLngs.length; i++) {
-              latitudes.push(latLngs[i].lat());
-              longitudes.push(latLngs[i].lng());
+          for (var i = 0; i < coordinates.length; i++) {
+              latitudes.push(coordinates[i].lat());
+              longitudes.push(coordinates[i].lng());
           }
           navigationLines[0].latitude = latitudes;
           navigationLines[0].longitude = longitudes;
