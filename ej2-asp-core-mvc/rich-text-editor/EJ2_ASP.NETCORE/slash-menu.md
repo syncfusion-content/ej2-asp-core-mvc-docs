@@ -15,7 +15,7 @@ The Slash Menu in the Rich Text Editor provides users with an efficient way to a
 
 ## Enabling the Slash Menu
 
-To enable the Slash Menu, set the `Enable` property within [`slashMenuSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html) to `true`. By default, this feature is disabled. Once enabled, the Slash Menu will appear when the user types the "/" character in the editor.
+To enable the Slash Menu, set the `Enable` property within [`SlashMenuSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html) to `true`. By default, this feature is disabled. Once enabled, the Slash Menu will appear when the user types the "/" character in the editor.
 
 ## Configuring the Slash Menu Items
 
