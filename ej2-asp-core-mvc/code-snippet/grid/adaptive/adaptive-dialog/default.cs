@@ -1,6 +1,5 @@
 public IActionResult Index()
 {
-    var Order = OrderDetails.GetAllRecords();
-    ViewBag.DataSource = Order;
+    ViewBag.AdaptiveDataSource = AdaptiveDetails.GetAllRecords();
     return View();
 } 
