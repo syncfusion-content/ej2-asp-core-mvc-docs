@@ -9,10 +9,10 @@ public class HomeController : Controller
         "Outdent", "Indent", "|",
         "CreateLink", "Image", "Video", "Audio", "CreateTable", "|", "FormatPainter", "ClearFormat", "|", "EmojiPicker", "|",
         "SourceCode", "|", "Undo", "Redo" };
-        return View();
-        RichTextEditorSlashMenuSettings SlashMenuSettings = new RichTextEditorSlashMenuSettings
-        {
-        Items = new object[] { "Paragraph", "Heading 1", "Heading 2", "Heading 3", "Heading 4", "OrderedList", "UnorderedList",
+         ViewBag.SlashMenuSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings
+            {
+                Enable = true,
+                Items = new object[] { "Paragraph", "Heading 1", "Heading 2", "Heading 3", "Heading 4", "OrderedList", "UnorderedList",
                     "CodeBlock", "Blockquote", "Link", "Image", "Video", "Audio", "Table", "Emojipicker",
                     new {
                         text= "Meeting notes",
@@ -27,8 +27,9 @@ public class HomeController : Controller
                         iconCss= "e-icons e-signature",
                         type= "Custom",
                         command= "Signature"
-                    }               
+                    }
+                }
             }
-        }
+        return View();
     }
 }
