@@ -1,0 +1,11 @@
+<ejs-richtexteditor id="exportRTE" value="@Value" enableXhtml="true">
+  <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+  <e-richtexteditor-insertimagesettings saveUrl="@InsertImageSettings.SaveUrl" removeUrl="@InsertImageSettings.RemoveUrl"
+      path="@InsertImageSettings.Path"></e-richtexteditor-insertimagesettings>
+  <e-richtexteditor-exportword serviceUrl="@ExportWord.ServiceUrl"
+      fileName="@ExportWord.FileName" stylesheet="@ExportWord.Stylesheet">
+  </e-richtexteditor-exportword>
+  <e-richtexteditor-exportpdf serviceUrl="@ExportPdf.ServiceUrl"
+      fileName="@ExportPdf.FileName" stylesheet="@ExportPdf.Stylesheet">
+  </e-richtexteditor-exportpdf>
+</ejs-richtexteditor>
