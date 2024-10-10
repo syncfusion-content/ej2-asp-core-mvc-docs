@@ -1,0 +1,2 @@
+@Html.EJS().RichTextEditor("importEditor").ToolbarSettings(e =>
+e.Items((object)ViewBag.items)).ImportWord(ViewBag.ImportWord).Value((string)ViewBag.Value).EnableXhtml(true).InsertImageSettings(ViewBag.InsertImageSettings).Render()
