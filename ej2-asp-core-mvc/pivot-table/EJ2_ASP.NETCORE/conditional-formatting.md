@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting in ##Platform_Name## Pivot Table Component
+title: Conditional Formatting in ##Platform_Name## Pivot Table Component | Syncfusion
 description: Learn here all about Conditional Formatting in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Conditional Formatting
