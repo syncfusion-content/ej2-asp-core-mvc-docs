@@ -1,0 +1,38 @@
+@{
+    var ChildGrid = new Syncfusion.EJ2.Grids.Grid()
+    {
+        DataSource = ViewBag.DataSource,
+        QueryString = "EmployeeID",
+        Toolbar = new List<string> { "Add", "Edit", "Delete", "Update", "Cancel" },
+        EditSettings = new Syncfusion.EJ2.Grids.GridEditSettings{ AllowAdding = true, AllowEditing = true, AllowDeleting = true },
+        ActionBegin="actionBegin",
+        Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120", IsPrimaryKey=true  },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="EmployeeID", HeaderText="Employee ID", AllowEditing=false, Width="150" },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="120" },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="130" },
+        },
+    };
+}
+
+<div>
+        @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Columns(col =>
+    {
+        col.Field("EmployeeID").HeaderText("Employee ID").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("FirstName").HeaderText("Name").Width("120").Add();
+        col.Field("LastName").HeaderText("LastName").Width("120").Add();
+        col.Field("City").HeaderText("City").Width("120").Add();
+    }).ChildGrid(ChildGrid).Render()
+</div>
+<script>
+    function actionBegin(args) {
+        if (args.requestType === 'add') {
+        // `parentKeyFieldValue` refers to the queryString field value of the parent record.
+        var parentFieldValue = this.parentDetails?.parentKeyFieldValue;
+
+            if (typeof parentFieldValue === 'number') {
+                args.data.EmployeeID = parentFieldValue;
+            }
+        }        
+    }
+</script>
