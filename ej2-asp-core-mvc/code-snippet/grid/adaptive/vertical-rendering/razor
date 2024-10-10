@@ -1,0 +1,115 @@
+<div style="display: flex">
+    <label style="margin: 3px 5px 5px 0px"> Select row rendering mode: </label>
+    <span style="height:fit-content; margin-bottom:20px">
+        @Html.EJS().DropDownList("dropdown").Index(0).Width("180px").DataSource(@ViewBag.dropdownData).Change("change").Render()
+    </span>
+</div>
+<div class="control-wrapper e-bigger e-adaptive-demo">
+    <div class="e-mobile-layout">
+        <div class="e-mobile-content">
+            @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.AdaptiveDataSource).Height("100%").EnableAdaptiveUI(true).AllowPaging(true).RowRenderingMode(Syncfusion.EJ2.Grids.RowRenderingDirection.Horizontal).AllowFiltering(true).AllowSorting(true).Load("load").Columns(col =>
+            {
+            col.Field("SNO").HeaderText("SNO").Width("80").IsPrimaryKey(true).ValidationRules(new { required = true, number = true }).Add();
+            col.Field("Model").HeaderText("Model").Width("150").EditType("dropdownedit").ValidationRules(new { required = true }).Add();
+            col.Field("Developer").HeaderText("Developer").Width("150").Filter(new { type = "Menu" }).Add();
+            col.Field("ReleaseDate").HeaderText("Release Date").Width("130").Format("yMMM").EditType("datepickeredit").Add();
+            col.Field("AndroidVersion").HeaderText("Android Version").Width("120").Filter(new { type = "CheckBox" }).Add();
+            }).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel); }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Aggregates(agg =>
+            {
+                agg.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>
+                () { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Model", Format = "C2", Type = "Count", FooterTemplate = "Total Models: ${Count}" } }).Add();
+            }).Render()
+        </div>
+    </div>
+</div>
+<script>
+    function load() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0];
+    }
+    function change(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.rowRenderingMode = args.value 
+    }
+</script>
+<style>
+        /* The device with borders */
+        .e-mobile-layout {
+            position: relative;
+            width: 360px;
+            height: 640px;
+            margin: auto;
+            border: 16px #f4f4f4 solid;
+            border-top-width: 60px;
+            border-bottom-width: 60px;
+            border-radius: 36px;
+            box-shadow: 0 0px 2px rgb(144 144 144), 0 0px 10px rgb(0 0 0 / 16%);
+        }
+        
+        .tailwind-dark .e-mobile-layout,
+        .material-dark .e-mobile-layout,
+        .fabric-dark .e-mobile-layout,
+        .bootstrap-dark .e-mobile-layout,
+        .bootstrap5-dark .e-mobile-layout {
+            border: 16px rgb(255 255 255 / 10%) solid;
+            border-top-width: 60px;
+            border-bottom-width: 60px;
+        }
+
+            /* The horizontal line on the top of the device */
+            .e-mobile-layout:before {
+                content: '';
+                display: block;
+                width: 60px;
+                height: 5px;
+                position: absolute;
+                top: -30px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #ebebeb;
+                border-radius: 10px;
+            }
+            
+        .tailwind-dark .e-mobile-layout::before,
+        .tailwind-dark .e-mobile-layout::after,
+        .material-dark .e-mobile-layout::before,
+        .material-dark .e-mobile-layout::after,
+        .fabric-dark .e-mobile-layout::before,
+        .fabric-dark .e-mobile-layout::after,
+        .bootstrap-dark .e-mobile-layout::before,
+        .bootstrap-dark .e-mobile-layout::after,
+        .bootstrap5-dark .e-mobile-layout::before,
+        .bootstrap5-dark .e-mobile-layout::after {
+            background: rgb(255 255 255 / 20%);
+        }
+
+            /* The circle on the bottom of the device */
+            .e-mobile-layout:after {
+                content: '';
+                display: block;
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                left: 50%;
+                bottom: -65px;
+                transform: translate(-50%, -50%);
+                background: #e8e8e8;
+                border-radius: 50%;
+            }
+
+            /* The screen (or content) of the device */
+            .e-mobile-layout .e-mobile-content {
+                overflow: hidden;
+                width: 328px;
+                height: 100%;
+                background: transparent;
+                border: 0px solid #dddddd;
+            }
+
+            .highcontrast .e-mobile-layout {
+                border: 16px #000000 solid;
+                border-top-width: 60px;
+                border-bottom-width: 60px;
+                box-shadow: -1px 2px white, -2px -2px white, 2px -2px white, 2px 1px white;
+            }
+    </style>

@@ -1,12 +1,106 @@
-<div class="e-bigger">
-<ejs-grid id="adaptivebrowser" dataSource="ViewBag.DataSource" enableAdaptiveUI="true" allowPaging="true" allowFiltering="true" allowSorting="true" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" })">
-    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
-    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
-    <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" width="180" isPrimaryKey="true" validationRules="@(new { required=true, number=true})"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" format="C2" width="200" editType="numericedit" validationRules="@(new { required=true})"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="180" validationRules="@(new { required=true})"></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City" width="180"></e-grid-column>
-    </e-grid-columns>
-</ejs-grid>
+<div class="control-wrapper e-bigger e-adaptive-demo">
+    <div class="e-mobile-layout">
+        <div class="e-mobile-content">
+            <ejs-grid id="Grid" dataSource="@ViewBag.AdaptiveDataSource" enableAdaptiveUI="true" height="100%" allowPaging="true" 
+            allowFiltering="true" allowSorting="true" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})" load="load">
+                <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
+                <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+                <e-grid-columns>
+                    <e-grid-column field="SNO" headerText="SNO" textAlign="Right" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" width="80"></e-grid-column>
+                    <e-grid-column field="Model" headerText="Model" validationRules="@(new { required=true})" editType="dropdownedit" width="200"></e-grid-column>
+                    <e-grid-column field="Developer" headerText="Developer" filter="@(new { type="Menu"})" width="200"></e-grid-column>
+                    <e-grid-column field="ReleaseDate" headerText="Release Date" editType= "datepickeredit" customFormat="@(new { type ="date", format="yMMM" })" type="date" width="200"></e-grid-column>
+                    <e-grid-column field="AndroidVersion" headerText="Android Version" filter="@(new { type="CheckBox"})" width="200"></e-grid-column>
+                </e-grid-columns>
+            </ejs-grid>
+        </div>
+    </div>
 </div>
+
+<script>
+    function load() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0];
+    }
+</script>
+<style>
+    /* The device with borders */
+    .e-mobile-layout {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px #f4f4f4 solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    box-shadow: 0 0px 2px rgb(144 144 144), 0 0px 10px rgb(0 0 0 / 16%);
+    }
+
+    .tailwind-dark .e-mobile-layout,
+    .material-dark .e-mobile-layout,
+    .fabric-dark .e-mobile-layout,
+    .bootstrap-dark .e-mobile-layout,
+    .bootstrap5-dark .e-mobile-layout {
+    border: 16px rgb(255 255 255 / 10%) solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    }
+
+    /* The horizontal line on the top of the device */
+    .e-mobile-layout:before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 5px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ebebeb;
+        border-radius: 10px;
+    }
+
+    .tailwind-dark .e-mobile-layout::before,
+    .tailwind-dark .e-mobile-layout::after,
+    .material-dark .e-mobile-layout::before,
+    .material-dark .e-mobile-layout::after,
+    .fabric-dark .e-mobile-layout::before,
+    .fabric-dark .e-mobile-layout::after,
+    .bootstrap-dark .e-mobile-layout::before,
+    .bootstrap-dark .e-mobile-layout::after,
+    .bootstrap5-dark .e-mobile-layout::before,
+    .bootstrap5-dark .e-mobile-layout::after {
+    background: rgb(255 255 255 / 20%);
+    }
+
+    /* The circle on the bottom of the device */
+    .e-mobile-layout:after {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: 50%;
+        bottom: -65px;
+        transform: translate(-50%, -50%);
+        background: #e8e8e8;
+        border-radius: 50%;
+    }
+
+    /* The screen (or content) of the device */
+    .e-mobile-layout .e-mobile-content {
+        overflow: hidden;
+        width: 328px;
+        height: 100%;
+        background: transparent;
+        border: 0px solid #dddddd;
+    }
+
+    .highcontrast .e-mobile-layout {
+        border: 16px #000000 solid;
+        border-top-width: 60px;
+        border-bottom-width: 60px;
+        box-shadow: -1px 2px white, -2px -2px white, 2px -2px white, 2px 1px white;
+    }
+</style>
