@@ -23,7 +23,7 @@ The following code example demonstrates how to enable and utilize adaptive dialo
 {% include code-snippet/grid/adaptive/adaptive-dialog/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/grid/adaptive/adaptive-dialog/default.cs %}
+{% include code-snippet/grid/adaptive/adaptive-dialog/adaptive.cs %}
 {% endhighlight %}
 {% endtabs %}
 
