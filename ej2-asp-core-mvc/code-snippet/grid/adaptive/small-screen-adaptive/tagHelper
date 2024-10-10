@@ -1,28 +1,116 @@
-<div class="e-bigger">
-<ejs-grid id="Grid" dataSource="ViewBag.DataSource" enableAdaptiveUI="true" adaptiveUIMode="Mobile" allowPaging="true" allowFiltering="true" showColumnChooser='true'
-allowSorting="true" allowGrouping="true" allowExcelExporting="true" allowPdfExporting="true" toolbarClick="toolbarClick"
-toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search", "ColumnChooser", "ExcelExport", "PdfExport" })">
-    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
-    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>    
-    <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings> 
-    <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" width="180" isPrimaryKey="true" validationRules="@(new { required=true, number=true})"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width='160' minWidth=80 maxWidth=300 validationRules="@(new { required=true})"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" format="{type: 'dateTime', format: 'M/d/y hh:mm a'}" width='160' minWidth=80 maxWidth=300 editType="numericedit" validationRules="@(new { required=true})"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd"  width="130" editType="datepickeredit"></e-grid-column>   
-        <e-grid-column field="ShipCountry" headerText="Ship Country" width="180" editType='dropdownedit'></e-grid-column>
-    </e-grid-columns>
-</ejs-grid>
+<div class="control-wrapper e-bigger e-adaptive-demo">
+    <div class="e-mobile-layout">
+        <div class="e-mobile-content">
+            <ejs-grid id="Grid" dataSource="ViewBag.AdaptiveDataSource" enableAdaptiveUI="true" adaptiveUIMode="Mobile" allowPaging="true" allowFiltering="true" showColumnChooser='true'
+            allowSorting="true" allowGrouping="true" allowExcelExporting="true" allowPdfExporting="true" toolbarClick="toolbarClick"
+            toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search", "ColumnChooser", "ExcelExport", "PdfExport" })">
+                <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
+                <e-grid-filterSettings type="Excel"></e-grid-filterSettings>    
+                <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings> 
+                <e-grid-columns>
+                    <e-grid-column field="OrderID" headerText="Order ID" width="180" isPrimaryKey="true" validationRules="@(new { required=true, number=true})"></e-grid-column>
+                    <e-grid-column field="CustomerID" headerText="Customer ID" width='160' minWidth=80 maxWidth=300 validationRules="@(new { required=true})"></e-grid-column>
+                    <e-grid-column field="Freight" headerText="Freight" format="{type: 'dateTime', format: 'M/d/y hh:mm a'}" width='160' minWidth=80 maxWidth=300 editType="numericedit" validationRules="@(new { required=true})"></e-grid-column>
+                    <e-grid-column field="OrderDate" headerText="Order Date" format="yMd"  width="130" editType="datepickeredit"></e-grid-column>   
+                    <e-grid-column field="ShipCountry" headerText="Ship Country" width="180" editType='dropdownedit'></e-grid-column>
+                </e-grid-columns>
+            </ejs-grid>
+        </div>
+    </div>
 </div>
-
 <script>
-function toolbarClick(args) {
-    var gridObj = document.getElementById("Grid").ej2_instances[0];
-    if (args.item.id === 'Grid_pdfexport') {
-        gridObj.pdfExport();
+    function load() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0];
     }
-    if (args.item.id === 'Grid_excelexport') {
-        gridObj.excelExport();
+    function toolbarClick(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_pdfexport') {
+            grid.pdfExport();
+        }
+        if (args.item.id === 'Grid_excelexport') {
+            grid.excelExport();
+        }
     }
-}
-</script>            
+</script>
+<style>
+    /* The device with borders */
+    .e-mobile-layout {
+        position: relative;
+        width: 360px;
+        height: 640px;
+        margin: auto;
+        border: 16px #f4f4f4 solid;
+        border-top-width: 60px;
+        border-bottom-width: 60px;
+        border-radius: 36px;
+        box-shadow: 0 0px 2px rgb(144 144 144), 0 0px 10px rgb(0 0 0 / 16%);
+    }
+
+    .tailwind-dark .e-mobile-layout,
+    .material-dark .e-mobile-layout,
+    .fabric-dark .e-mobile-layout,
+    .bootstrap-dark .e-mobile-layout,
+    .bootstrap5-dark .e-mobile-layout {
+        border: 16px rgb(255 255 255 / 10%) solid;
+        border-top-width: 60px;
+        border-bottom-width: 60px;
+    }
+
+    /* The horizontal line on the top of the device */
+    .e-mobile-layout:before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 5px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ebebeb;
+        border-radius: 10px;
+    }
+    
+    .tailwind-dark .e-mobile-layout::before,
+    .tailwind-dark .e-mobile-layout::after,
+    .material-dark .e-mobile-layout::before,
+    .material-dark .e-mobile-layout::after,
+    .fabric-dark .e-mobile-layout::before,
+    .fabric-dark .e-mobile-layout::after,
+    .bootstrap-dark .e-mobile-layout::before,
+    .bootstrap-dark .e-mobile-layout::after,
+    .bootstrap5-dark .e-mobile-layout::before,
+    .bootstrap5-dark .e-mobile-layout::after {
+        background: rgb(255 255 255 / 20%);
+    }
+
+    /* The circle on the bottom of the device */
+    .e-mobile-layout:after {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: 50%;
+        bottom: -65px;
+        transform: translate(-50%, -50%);
+        background: #e8e8e8;
+        border-radius: 50%;
+    }
+
+    /* The screen (or content) of the device */
+    .e-mobile-layout .e-mobile-content {
+        overflow: hidden;
+        width: 328px;
+        height: 100%;
+        background: transparent;
+        border: 0px solid #dddddd;
+    }
+
+    .highcontrast .e-mobile-layout {
+        border: 16px #000000 solid;
+        border-top-width: 60px;
+        border-bottom-width: 60px;
+        box-shadow: -1px 2px white, -2px -2px white, 2px -2px white, 2px 1px white;
+    }
+</style>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adaptive in Syncfusion ##Platform_Name## Grid Component | Syncfusion
+title: Adaptive in Syncfusion ##Platform_Name## Grid Component 
 description: Learn here all about Adaptive in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Adaptive
@@ -31,32 +31,24 @@ The following code example demonstrates how to enable and utilize adaptive dialo
 
 ## Vertical row rendering
 
-The grid will render the row elements in vertical order while setting the [`rowRenderingMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowRenderingMode) property value as **Vertical**.
+The Syncfusion ASP.NET Core Grid introduces the feature of vertical row rendering, allowing you to display row elements in a vertical order. This is particularly useful for scenarios where a vertical presentation enhances data visibility. This is achieved by setting the [rowRenderingMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowRenderingMode) property to the value **Vertical**.
 
-{% if page.publishingplatform == "aspnet-core" %}
+>The default row rendering mode is **Horizontal**.
+
+The following sample demonstrates how to dynamically change the row rendering mode between **Vertical** and **Horizontal** based on a DropDownList selection:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/vertical-rendering/tagHelper %}
+{% include code-snippet/grid/adaptive/vertical-rendering/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/grid/vertical-rendering/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/vertical-rendering/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/grid/vertical-rendering/default.cs %}
+{% highlight c# tabtitle="Rowrender.cs" %}
+{% include code-snippet/grid/adaptive/vertical-rendering/rowrender.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-N> * [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableAdaptiveUI) property must be enabled for vertical row rendering.
+![Row rendering](../images/adaptive-view/row-rendering-mode.gif)
+
+> [enableAdaptiveUI](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableAdaptiveUI) property must be enabled for vertical row rendering.
 
 ### Supported features by vertical row rendering
 
@@ -71,13 +63,13 @@ The following features are only supported in vertical row rendering:
 * Infinite scroll
 * Toolbar - Options like **Add**, **Filter**, **Sort**, **Edit**, **Delete**, **Search**, and **Toolbar template** are available when their respective features are enabled. The toolbar dynamically includes a three-dotted icon, containing additional features like **ColumnChooser**, **Print**, **PdfExport**, **ExcelExport**, or **CsvExport**, once these features are enabled. Please refer to the following snapshot.
 
-![VerticalmodeColumnMenu](../images/VerticalmodeColumnMenu.gif)
+![VerticalmodeColumnMenu](../images/adaptive-view/vertical-column-menu.gif)
 
 A snapshot of the adaptive grid displaying enabled paging along with a pager dropdown.
 
-![AdaptivePagerDropdown](../images/PagerDropdown_Adaptive.gif)
+![AdaptivePagerDropdown](../images/adaptive-view/pager-dropdown.gif)
 
-> The Column Menu feature, which includes grouping, sorting, autofit, filter, and column chooser, is exclusively supported for the Grid in **Horizontal** [`rowRenderingMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowRenderingMode).
+> The Column Menu feature, which includes grouping, sorting, autofit, filter, and column chooser, is exclusively supported for the Grid in **Horizontal** [rowRenderingMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowRenderingMode).
 
 ## Rendering an adaptive layout for smaller screens alone
 
@@ -89,7 +81,9 @@ By default, adaptive UI layout is rendered in both mobile devices and desktop mo
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/adaptive/small-screen-adaptive/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/adaptive/small-screen-adaptive/default.cs %}
+{% highlight c# tabtitle="Smallscreen.cs" %}
+{% include code-snippet/grid/adaptive/small-screen-adaptive/smallscreen.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Rendering an adaptive layout for smaller screens](../images/adaptive-view/small-screen-adptive.png)
