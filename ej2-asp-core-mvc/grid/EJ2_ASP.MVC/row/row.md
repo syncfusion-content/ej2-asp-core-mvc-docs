@@ -10,42 +10,40 @@ documentation: ug
 
 # Row in ASP.NET MVC Grid Control
 
-The row represents record details fetched from data source.
+Each row typically represents a single record or item from a data source. Rows in a grid are used to present data in a tabular format. Each row displays a set of values representing the fields of an individual data record. Rows allow users to interact with the data in the grid. Users can select rows, edit cell values, perform sorting or filtering operations, and trigger events based on actions.
 
-## Row customization
+## Customize row styles 
+
+Customizing the styles of rows in a Syncfusion Grid allows you to modify the appearance of rows to meet your design requirements. This feature is useful when you want to highlight certain rows or change the font style, background color, and other properties of the row to enhance the visual appeal of the grid. To customize the row styles in the grid, you can use CSS, properties, methods, or event support provided by the Syncfusion ASP.NET MVC Grid component.
 
 ### Using event
 
-You can customize the appearance of a row by using the [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event. The [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event triggers for every row. In the event handler, you can get the **RowDataBoundEventArgs** that contains details of the row.
+You can customize the appearance of the rows by using the [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event. This event triggers for every row when it is bound to the data source. In the event handler, you can get the `RowDataBoundEventArgs` object, which contains details of the row. You can use this object to modify the row's appearance, add custom elements, or perform any other customization.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/row/custom-rows/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Custom-rows.cs" %}
-{% include code-snippet/grid/row/custom-rows/custom-rows.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Here's an example of how you can use the `rowDataBound` event to customize the styles of rows based on the value of the **Freight** column. This example involves checking the value of the Freight column for each row and adding a CSS class to the row based on the value. The CSS classes **below-30**, **below-80**, and **above-80** can then be defined in your stylesheet to apply the desired styles to the rows.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/row/custom-rows/razor %}
+{% include code-snippet/grid/row/row-style-event/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom-rows.cs" %}
-{% include code-snippet/grid/row/custom-rows/custom-rows.cs %}
+{% highlight c# tabtitle="Style.cs" %}
+{% include code-snippet/grid/row/row-style-event/event-style.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Row style using event](../../images/row/style-using-event.png)
 
+> The [QueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event can also be used to customize cells and is triggered for every cell in the grid. It can be useful when you need to customize cells based on certain conditions or criteria.
 
-### Styling alternate rows
+### Using CSS
 
-You can change the grid's alternative rows' background color by overriding the **.e-altrow** class.
+You can apply styles to the rows using CSS selectors. The Grid provides a class name for each row element, which you can use to apply styles to that specific row. 
+
+**Customize alternate rows**
+
+You can customize the appearance of the alternate rows using CSS. This can be useful for improving the readability of the data and making it easier to distinguish between rows. By default, Syncfusion Grid provides the CSS class **.e-altrow** to style the alternate rows. You can customize this default style by overriding the **.e-altrow** class with your custom CSS styles. 
+
+To change the background color of the alternate rows, you can add the following CSS code to your application's stylesheet:
 
 ```css
 .e-grid .e-altrow {
@@ -53,20 +51,7 @@ You can change the grid's alternative rows' background color by overriding the *
 }
 ```
 
-Refer to the following example.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/row/style-alt-row/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Style-alt-row.cs" %}
-{% include code-snippet/grid/row/style-alt-row/style-alt-row.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Here's an example of how to use the **.e-altrow** class to style alternate rows:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -76,7 +61,6 @@ Refer to the following example.
 {% include code-snippet/grid/row/style-alt-row/style-alt-row.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Using CSS customize selected row
 
