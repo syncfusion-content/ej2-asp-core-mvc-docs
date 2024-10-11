@@ -41,16 +41,16 @@ The conditional formatting can be applied at runtime through the built-in dialog
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/toolbar_cformatting.png "Conditional formatting icon in toolbar")
+![Conditional formatting icon in toolbar](images/toolbarcformatting.png)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_dialog.png "Adding new conditional format")
+![Adding new conditional format](images/toolbarcformattingdialog.png)
 <br/>
 <br/>
-![output](images/toolbarcformattingdialogapply.png "Setting conditional format criteria")
+![Setting conditional format criteria](images/toolbarcformattingdialogapply.png)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_grid.png "Resultant pivot table on applied conditional format")
+![Resultant pivot table on applied conditional format](images/toolbarcformattinggrid.png)
 
 Conditional formatting can also be included in the pivot table through code-behind using the [PivotViewConditionalFormatSetting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html) class. The required properties to apply a new conditional formatting are,
 
@@ -95,7 +95,7 @@ Meanwhile, user can also view conditional formatting dialog in UI by invoking `S
 
 
 
-![output](images/cond-format-btn.png)
+![output](images/condformatbtn.png)
 
 ![output](images/conditionalformattingbtn2.png)
 
@@ -128,7 +128,7 @@ Allows end user to apply conditional formatting commonly for all value fields ju
 
 
 
-![output](images/cformatting_all.png)
+![output](images/cformattingall.png)
 
 ## Conditional formatting for specific value field
 
@@ -159,7 +159,7 @@ Allows end user to apply conditional formatting to a specific value field by set
 
 
 
-![output](images/cformatting_single.png)
+![output](images/cformattingsingle.png)
 
 ### Conditional formatting for specific row or column
 
