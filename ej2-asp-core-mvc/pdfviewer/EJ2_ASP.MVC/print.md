@@ -84,6 +84,7 @@ By default, the printScaleFactor is set to 1.
     }
 </script>
 ```
+{% endhighlight %}
 ## See also
 
 * [Toolbar items](./toolbar)
