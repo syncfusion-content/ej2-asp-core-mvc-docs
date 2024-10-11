@@ -47,7 +47,7 @@ The conditional formatting can be applied at runtime through the built-in dialog
 ![output](images/toolbar_cformatting_dialog.png "Adding new conditional format")
 <br/>
 <br/>
-![output](images/toolbar_cformatting_dialog_apply.png "Setting conditional format criteria")
+![output](images/toolbarcformattingdialogapply.png "Setting conditional format criteria")
 <br/>
 <br/>
 ![output](images/toolbar_cformatting_grid.png "Resultant pivot table on applied conditional format")
@@ -97,7 +97,7 @@ Meanwhile, user can also view conditional formatting dialog in UI by invoking `s
 
 ![output](images/cond-format-btn.png)
 
-![output](images/cond-format-btn2.png)
+![output](images/conditionalformattingbtn2.png)
 
 ## Conditional formatting for all fields
 
@@ -200,7 +200,7 @@ You can apply conditional formatting for specific row or column using [label](ht
 
 Editing and removing existing conditional format can be done through the UI at runtime. To do so, open the conditional formatting dialog and edit the "Value", "Condition" and "Format" options based on user requirement and click "OK". To remove a conditional format, click the "Delete" icon besides the respective condition.  
 
-![output](images/cformatting_remove.png)
+![output](images/cformattingremove.png)
 
 ## Event
 
