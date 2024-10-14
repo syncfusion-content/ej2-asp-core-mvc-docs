@@ -188,7 +188,7 @@ The `width` property specifies the stroke width applied to the series.
 {% include code-snippet/chart/series/stacked-line-100/stacked-line-100/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stacked-line-100.cs" %}
-{% include code-snippet/chart/series/stacked-line-100/stacked-line-100.cs %}
+{% include code-snippet/chart/series/stacked-line-100/stacked-line-100/stacked-line-100.cs %}
 {% endhighlight %}
 {% endtabs %}
 
