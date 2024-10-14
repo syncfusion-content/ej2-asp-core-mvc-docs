@@ -1,6 +1,10 @@
 ---
 layout: post
+<<<<<<< HEAD
 title: Getting Started with ##Platform_Name## Numerictextbox | Syncfusion
+=======
+title: Getting Started with ##Platform_Name## Numeric Textbox | Syncfusion
+>>>>>>> parent of 24584b956 (resolved)
 description: Checkout and learn about getting started with ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
