@@ -1,55 +1,49 @@
 <div style="display: flex; margin-bottom: 5px">
-    @Html.EJS().Button("add").CssClass("e-outline").Content("Add New Row").Render()
+  @Html.EJS().CheckBox("checkbox").Change("onCheckBoxChange").Label("Show / Hide Row").Render()
 </div>
-
+<p id="message"></p>
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("120").Add();
-   col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
-   col.Field("Freight").HeaderText("Freight").Width("100").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("130").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("ShippedDate").HeaderText("Shipped Date").Width("130").Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
 
-}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Render()
+}).Render()
 
 <script>
-    document.getElementById('add').onclick = function () {
-        var grid = document.getElementById('Grid').ej2_instances[0];
-        var newRecord = {
-            OrderID: generateOrderId(),
-            CustomerID: generateCustomerId(),
-            ShipCity: generateShipCity(),
-            Freight: generateFreight(),
-            ShipName: generateShipName()
-            };
-            grid.addRecord(newRecord, 0);
-    };
-    // Generate a random OrderID
-    function generateOrderId() {
-      return Math.floor(10000 + Math.random() * 90000);
-    }
-     // Generate a random CustomerID
-    function generateCustomerId() {
-      var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-      let result = '';
-      for (let i = 0; i < 5; i++) {
-        result += characters.charAt(Math.floor(Math.random() * characters.length));
-      }
-      return result;
-    }
-    // Generate a random ShipCity
-    function generateShipCity() {
-      var cities = ['London', 'Paris', 'New York', 'Tokyo', 'Berlin'];
-      return cities[Math.floor(Math.random() * cities.length)];
-    }
-     // Generate a random Freight value
-    function generateFreight() {
-      return Math.random() * 100;
-    }
-     // Generate a random Freight value
-    function generateShipName() {
-      var names = ['Que Delícia', 'Bueno Foods', 'Island Trading', 'Laughing Bacchus Winecellars'];
-      return names[Math.floor(Math.random() * names.length)];
+    var hiddenRows = [];
+    function onCheckBoxChange(args) {
+        if (args.checked) {
+            var grid = document.getElementById('Grid').ej2_instances[0];
+            for (var i = 0; i < grid.getRowsObject().length; i++) {
+                if (grid.getRowsObject()[i].data.CustomerID === 'VINET') {
+                    // check the row value
+                    var rowIndex = grid.getRowsObject()[i].index;  //get particular row index
+                    grid.getRowByIndex(rowIndex).style.display = 'none'; //hide row
+                    hiddenRows.push(rowIndex); // add row index to hiddenRows array
+                }
+            }
+            if (hiddenRows.length > 0) {
+                document.getElementById('message').innerText = 'Rows with a customer name column value of VINET have been hidden';
+            }
+        } else {
+            var grid = document.getElementById('Grid').ej2_instances[0];
+            // Show hidden rows
+            hiddenRows.forEach((rowIndex) => {
+                grid.getRowByIndex(rowIndex).style.display = '';
+            });
+            hiddenRows = [];
+            document.getElementById('message').innerText = 'Show all hidden rows';
+        }
     }
 </script>
-
+<style>
+    #message {
+        color: red;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>

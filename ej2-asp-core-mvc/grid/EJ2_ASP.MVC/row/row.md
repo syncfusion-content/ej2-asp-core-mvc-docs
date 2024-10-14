@@ -196,9 +196,9 @@ Here's an example that demonstrates how to use the `RowDataBound` event and `get
 
 ## Row pinning (Frozen)
 
-The Syncfusion ASP.NET Core Grid allows you to freeze rows to keep them visible while scrolling vertically through large datasets. This feature enhances the experience by maintaining important information within view at all times.
+The Syncfusion ASP.NET MVC Grid allows you to freeze rows to keep them visible while scrolling vertically through large datasets. This feature enhances the experience by maintaining important information within view at all times.
 
-In the following example, the [FrozenRows](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FrozenRows) property is set to **2**. This configuration freezes the top three rows of the grid, and they will remain fixed in their positions while the rest of the grid can be scrolled vertically.
+In the following example, the [FrozenRows](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FrozenRows) property is set to **2**. This configuration freezes the top three rows of the grid, and they will remain fixed in their positions while the rest of the grid can be scrolled vertically.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -304,6 +304,8 @@ If the checkbox is unchecked, the method iterates through the hiddenRows array a
 {% include code-snippet/grid/row/show-hide-row/show-hide-row.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Show or hide row](../../images/row/show-hide-row.gif)
 
 ## How to get the row data and element
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row in ASP.NET CORE Grid Control
+# Row in ASP.NET Core Grid Control
 
 Each row typically represents a single record or item from a data source. Rows in a grid are used to present data in a tabular format. Each row displays a set of values representing the fields of an individual data record. Rows allow users to interact with the data in the grid. Users can select rows, edit cell values, perform sorting or filtering operations, and trigger events based on actions.
 
@@ -305,6 +305,8 @@ If the checkbox is unchecked, the method iterates through the hiddenRows array a
 {% include code-snippet/grid/row/show-hide-row/show-hide-row.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Show or hide row](../../images/row/show-hide-row.gif)
 
 ## How to get the row data and element
 
