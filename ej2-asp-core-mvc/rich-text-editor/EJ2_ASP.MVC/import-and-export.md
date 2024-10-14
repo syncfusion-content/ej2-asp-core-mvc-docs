@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Import/Export in ##Platform_Name## Rich Text Editor Component | Syncfusion
-description: Learn here all about Import/Export in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Import/Export in ##Platform_Name## Rich Text Editor Control | Syncfusion
+description: Learn here all about Import/Export in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Import/Export
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Import/Export in ##Platform_Name## Rich Text Editor component
+# Import/Export in ##Platform_Name## Rich Text Editor control
 
 ## Import from Microsoft Word
 
