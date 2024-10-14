@@ -147,7 +147,11 @@ The autoscroll border is used to specify the maximum distance between the object
 {% endtabs %}
 {% endif %}
 
+## Controlling Autoscroll Speed
 
+You can control how often the scrolling needs to be performed automatically in the Diagram component during the auto-scrolling behavior. You can now adjust the frequency, ranging from slow and smooth to quick and rapid, to suit their preferences. To configure, set the value in milliseconds to the [`autoScrollFrequency`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramScrollSettings.html#Syncfusion_EJ2_Diagrams_DiagramScrollSettings_autoScrollFrequency) property within the scrollSettings class, allowing precise control over how often auto-scrolling occurs. 
+
+![AutoscrollFrequency](images/AutoscrollFrequency.gif)
 
 ## Scroll limit
 

@@ -1,0 +1,24 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("130").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).DataBound("dataBound").Render()
+    
+<script>
+    function dataBound() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.getColumnHeaderByIndex(0).style.color = 'green';
+        grid.getColumnHeaderByField('CustomerID').style.background = 'rgb(217, 244, 235)';
+        grid.getColumnHeaderByField('OrderID').style.background = 'rgb(217, 244, 235)';
+        grid.getColumnHeaderByField('ShipCountry').style.background = 'rgb(217, 244, 235)';
+        grid.getColumnHeaderByField('CustomerID').style.color = 'green';
+        grid.getColumnHeaderByUid('grid-column2').style.background = 'rgb(217, 244, 235)';
+        const columnIndex = grid.getColumnIndexByField('ShipCountry');
+        grid.getColumnHeaderByIndex(columnIndex).style.color = 'green';
+        const index = grid.getColumnIndexByUid('grid-column2');
+        grid.getColumnHeaderByIndex(index).style.color = 'green';
+    
+    }
+</script>

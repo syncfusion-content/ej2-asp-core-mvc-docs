@@ -1,11 +1,12 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" showColumnMenu="true" allowSorting="true" allowFiltering="true" allowPaging="true" allowGrouping="true"> 
-   <e-grid-groupsettings showGroupedColumn="true"></e-grid-groupsettings>
-    <e-grid-filtersettings type="CheckBox"></e-grid-filtersettings>   
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging='true' allowGrouping='true' allowSorting='true'
+   showColumnMenu='true'  allowFiltering='true' >
+    <e-grid-groupsettings showGroupedColumn="true"></e-grid-groupsettings>
+    <e-grid-filtersettings type="CheckBox"></e-grid-filtersettings>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID"  width="200"  textAlign="Right" showInColumnChooser="false" ></e-grid-column>        
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right"  format="C2" editType="numericedit" width="150"></e-grid-column>
-        <e-grid-column field="ShipName" headerText="Ship Name"  width="300"></e-grid-column>
-        <e-grid-column field="ShipCountry"  headerText="Ship Country" visible="false"  width="200" ></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City"  width="200"></e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="130"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="130"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
