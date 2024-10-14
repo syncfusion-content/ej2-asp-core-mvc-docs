@@ -1,0 +1,14 @@
+@Html.EJS().Chart("container").Series(sr =>
+    {
+        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Polar)
+            .DrawType(Syncfusion.EJ2.Charts.ChartDrawType.Line)
+            .Name("Warmest")
+            .EmptyPointSettings(empty => empty.Mode(EmptyPointMode.Zero))
+            .XName("x")
+            .YName("y")
+            .Width(2)
+            .Marker(marker => marker.Visible(true))
+            .DataSource(ViewBag.dataSource).Add();
+    }).PrimaryXAxis(xaxis =>
+         xaxis.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+      ).Title("Alaska Weather Statistics - 2016").Render()
