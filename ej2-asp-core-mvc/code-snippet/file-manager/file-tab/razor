@@ -23,9 +23,9 @@
                 </div>
             </div>
             @(Html.EJS().Tab("orientationTab")
-              .Items(new List<TabTabItem> {
-                new TabTabItem { Header = ViewBag.headerText1, Content = "#overview" },
-                new TabTabItem { Header = ViewBag.headerText2, Content = "#filemanager" },
+              .Items(new List<TabItem> {
+                new TabItem { Header = ViewBag.headerText1, Content = "#overview" },
+                new TabItem { Header = ViewBag.headerText2, Content = "#filemanager" },
               }).Height("320").ShowCloseButton(true).Selected("onSelect").Render()
             )
         </div>

@@ -1,5 +1,7 @@
 public IActionResult Index()
 {
-    ViewBag.DataSource = OrderDetails.GetAllRecords();
+    ViewBag.DataSource = OrdersDetails.GetAllRecords();
+    ViewBag.dropdownData = new string[] { "AllPages", "CurrentPage" };
+
     return View();
 } 

@@ -1,12 +1,9 @@
-@Html.EJS().Grid("ColumnResize").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowResizing(true).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowResizing(true).Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").Width("200").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("200").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipName").HeaderText("Ship Country").Width("300").Add();
-   col.Field("ShippedDate").HeaderText("Shipped Date").Width("200").Format("yMd").AllowResizing(false).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipName").HeaderText("Ship Country").Width("200").Add();
-   col.Field("ShipName").HeaderText("Ship Country").Width("200").Add();
-
-}).AllowPaging().Render()
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("130").Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+    col.Field("ShipAddress").HeaderText("Ship Address").Width("120").Add();
+}).Render()

@@ -1,0 +1,19 @@
+@{ 
+    var totalCalories = "totalCaloriesFn";
+}
+
+@Html.EJS().Grid("ValueAccessor").DataSource((IEnumerable<object>)ViewBag.DataSource).Height(350).Columns(col =>
+{
+    col.Field("FoodName").HeaderText("Food Name").Width("150").Add();
+    col.Field("Protein").HeaderText("Protein").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("Fat").HeaderText("Fat").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("80").Add();
+    col.Field("Carbohydrate").HeaderText("Carbohydrate").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.HeaderText("Calories Intake").ValueAccessor(totalCalories).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
+
+}).Render()
+
+<script>
+    function totalCaloriesFn(field, data) {
+        return data.Protein * 4 + data.Fat * 9 + data.Carbohydrate * 4;
+    }
+</script>

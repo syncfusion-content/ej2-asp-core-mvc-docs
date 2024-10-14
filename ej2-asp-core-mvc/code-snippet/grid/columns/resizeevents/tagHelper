@@ -1,26 +1,41 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowResizing="true" height="315" resizeStart="resizeStart"
-resizing="resizing" resizeStop="resizeStop">   
+<div style="margin-left:180px">
+    <p style="color:red;" id="message"></p>
+</div>
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowResizing='true' resizeStart="resizeStart"
+          resizing="resizing" resizeStop="resizeStop">
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" width="150" ></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" width="150"></e-grid-column>        
-        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
-        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
-        <e-grid-column field="ShipAddress" headerText="Ship Address" width="150"></e-grid-column>
-        <e-grid-column field="ShipCountry"  headerText="Ship Country" width="150"></e-grid-column>
-        <e-grid-column field="ShipPostalCode" headerText="Ship Postal Code" width="150"></e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" type='date' format="yMd" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
-  <script>
-
-    function resizeStart() {
-        alert('resizeStart event is triggered')
+<style>
+    .e-grid .customcss {
+        background-color: rgb(43, 195, 226);
+    }
+</style>
+<script type="text/javascript">
+    function resizeStart(args) {
+        document.getElementById('message').innerText = `resizeStart event triggered`;
+        if (args.column.field === 'OrderID') {
+            args.cancel = true;
+        }
     }
     function resizing() {
-        alert('resizing event is triggered')
+        document.getElementById('message').innerText = `resizing event triggered`;
     }
-    function resizeStop() {
-        alert('resizeStop event is triggered')
+    function resizeStop(args) {
+        document.getElementById('message').innerText = `resizeStop event triggered`;
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        const headerCell = grid.getColumnHeaderByField(args.column.field);
+        headerCell.classList.add('customcss');
+        const columnCells = grid.getContentTable()
+            .querySelectorAll(`[data-colindex="${args.column.index}"]`);
+        columnCells.forEach(cell => {
+            cell.style.backgroundColor = 'rgb(43, 195, 226)';
+        });
     }
-  </script>
+</script>

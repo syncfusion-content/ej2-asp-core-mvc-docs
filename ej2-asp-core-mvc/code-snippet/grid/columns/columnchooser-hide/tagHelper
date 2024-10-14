@@ -1,0 +1,9 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="270px" showColumnChooser='true' toolbar="@(new List<string>() { "ColumnChooser"})">
+    <e-grid-columns>
+        <e-grid-column field='OrderID' headerText='Order ID' showInColumnChooser="false" textAlign='Right' width=120></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" type='date' format="yMd" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

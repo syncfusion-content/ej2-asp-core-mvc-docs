@@ -1,0 +1,23 @@
+<div style="display: flex">
+    <label style="padding: 3px 10px 26px 0"> Change the wrapmode of auto wrap feature: </label>
+    <span style="height:fit-content">
+        <ejs-dropdownlist id="dropdown" index="0" dataSource="@ViewBag.dropdownData" change="valueChange"></ejs-dropdownlist>
+    </span>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowTextWrap=true>
+    <e-grid-textwrapsettings wrapMode="Header"></e-grid-textwrapsettings>
+    <e-grid-columns>
+        <e-grid-column field="Inventor" headerText="Inventor Name" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="NumberOfPatentFamilies" headerText="Number of Patent families" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="Country" headerText="Country" width="100"></e-grid-column>
+        <e-grid-column field="Active" headerText="Active" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="Mainfieldsofinvention" headerText="Main Fields Of Invention" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script type="text/javascript">
+    function valueChange(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.textWrapSettings.wrapMode = args.value;
+    }
+</script>
