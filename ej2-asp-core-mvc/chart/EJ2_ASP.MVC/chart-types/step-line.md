@@ -67,8 +67,6 @@ You can bind data to the chart using the `DataSource` property within the series
 {% endtabs %}
 {% endif %}
 
-{% endif %}
-
 ## Series customization
 
 The following properties can be used to customize the `step line` series.
