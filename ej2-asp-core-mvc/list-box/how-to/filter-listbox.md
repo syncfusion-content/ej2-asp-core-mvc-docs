@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter ListBox Data Using TextBox Component in ##Platform_Name## List Box Component
+title: Filter ListBox Data Using TextBox in ##Platform_Name## List Box Component
 description: Learn here all about Filter ListBox Data Using TextBox Component in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filter List Box
