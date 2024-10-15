@@ -1,0 +1,18 @@
+<ejs-listbox id="listbox" dataSource="@ViewBag.data" created="create" ></ejs-listbox>
+<div id="container" style="margin:10px auto 0; width:250px;">
+    <label for="filter">Enter Text: </label>
+    <input id="filter" oninput="handleFilterChange(event)" />
+    <ejs-listbox id="listbox" dataSource="@ViewBag.data" created="create"></ejs-listbox>
+</div>
+<script>
+    function handleFilterChange(event) {
+        var listboxobj;
+        listboxobj = ej.base.getInstance(document.getElementById('listbox'), ejs.dropdowns.ListBox);
+        const input = event.target.value;
+        if (listboxobj) {
+            const query = new ej.data.Query().where('text', 'contains', input, true);
+            listboxobj.query = query;
+            listboxobj.dataBind();
+        }
+    }
+</script>
