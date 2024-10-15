@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Pdfviewer Component
+title: Globalization in ##Platform_Name## Pdfviewer Component | Syncfusion
 description: Learn here all about Globalization in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Globalization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization
+# Localization in the ASP.NET Core PDF Viewer component
 
 The text contents provided in the PDF Viewer can be localized using the collection of localized strings for different cultures. By default, the PDF Viewer is localized in “__en-US__”.
 
