@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events
+# Events in ##Platform_Name## Ribbon control
 
 This section describes the ribbon events that will be triggered when appropriate actions are performed. The following events are available in the ribbon control.
 
