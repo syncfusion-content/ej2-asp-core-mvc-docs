@@ -1,0 +1,43 @@
+@Html.EJS().Grid("Search").DataSource((IEnumerable<object>)ViewBag.datasource).Height("350px").Columns(col =>
+	{
+		col.Field("OrderID").HeaderText("Order ID").Width("160").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+		col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
+		col.Field("ShipName").HeaderText("ShipName").Width("170").Add();
+		col.Field("ShipCountry").HeaderText("Ship Country").Width("170").Add();
+
+	}).Toolbar(new List<string>() { "Search" }).ActionBegin("onActionBegin").QueryCellInfo("onQueryCellInfo").Render();
+
+
+<script>
+    let key = '';
+    function onActionBegin(args) {
+        if (args.requestType === 'searching') {
+           this.key=args.searchString.toLowerCase();
+        }
+    }
+    function onQueryCellInfo(args) {
+        if (this.key !== '') {
+            var cellContent = args.data[(args.column).field];
+                var parsedContent = cellContent.toString().toLowerCase();
+            if (parsedContent.includes(this.key)) {
+                    var i = 0;
+                    var searchStr = '';
+                    while (i < this.key.length) {
+                        var index = parsedContent.indexOf(this.key[i]);
+                    searchStr = searchStr + cellContent.toString()[index];
+                        i++;
+                    }
+                    args.cell.innerHTML = args.cell.innerText.replaceAll(
+                        searchStr,
+                        "<span class='customcss'>" + searchStr + '</span>'
+                    );
+                }
+        }
+    }
+</script>
+
+<style>
+	.customcss {
+		background-color: yellow;
+	}
+</style>

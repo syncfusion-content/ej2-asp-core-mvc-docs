@@ -1,0 +1,25 @@
+<div style="display:flex">
+    <label style="padding: 1px 10px 20px 0px">
+        Enable or disable ignoreAccent property
+    </label>
+    <ejs-switch id="switch" change="onSwitchChange"></ejs-switch>
+</div>
+<ejs-grid id="Search" dataSource="@ViewBag.datasource" toolbar="@(new List<string>() { "Search"})" height="350px">
+    <e-grid-columns>
+        <e-grid-column field="CategoryName" headerText="Category Name" textAlign="Right" width="160"></e-grid-column>
+        <e-grid-column field="ProductName" headerText="Product Name" width="170"></e-grid-column>
+        <e-grid-column field="QuantityPerUnit" headerText="Quantity Per Unit" width="170"></e-grid-column>
+        <e-grid-column field="UnitsInStock" headerText="Units In Stock" width="170"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function onSwitchChange(args) {
+        var gridObj = document.getElementById("Search").ej2_instances[0];
+        if (args.checked) {
+            gridObj.searchSettings.ignoreAccent = true;
+        } else {
+            gridObj.searchSettings.ignoreAccent = false;
+        }
+    }
+</script>
