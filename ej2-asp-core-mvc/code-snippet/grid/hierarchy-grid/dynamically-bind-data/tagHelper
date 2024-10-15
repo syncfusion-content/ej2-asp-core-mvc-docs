@@ -24,9 +24,9 @@
 <script>
     function detailDataBound(args) {
         var ordersDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
-        var empIdValue = args.data['EmployeeID'];
+        var employeeIdValue = args.data['EmployeeID'];
         var childGridData = new ej.data.DataManager(ordersDataSource).executeLocal(
-            new ej.data.Query().where('EmployeeID', 'equal', empIdValue, true)
+            new ej.data.Query().where('EmployeeID', 'equal', employeeIdValue, true)
         );
         args.childGrid.query = new ej.data.Query();
         args.childGrid.dataSource = childGridData;        

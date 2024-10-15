@@ -33,6 +33,10 @@ The following example demonstrates how to enable the hierarchy feature in the gr
 
 ![Hierarchy grid](../images/hierarchy-grid/hierarchy-grid.png)
 
+> * Grid supports n level of child grids.
+> * Hierarchical binding is not supported when [Detail Template](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/row/detail-template) is enabled.
+> * In Syncfusion Grid component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
+
 ## Bind hierarchy grid with different field
 
 By default, the parent and child grids have the same field name to map and render a hierarchical grid. However, the component supports establishing a parent-child relationship between grids with different field names. This feature is beneficial when you want to create a parent-child relationship between grids but need to use distinct field names for mapping the data. As a result, you can easily establish the desired relationship between the parent and child grids, even with different field names for data mapping.
@@ -72,6 +76,8 @@ In the provided example, expand the third record of the grid by utilizing the `e
 {% endtabs %}
 
 ![Expand child grid initially](../images/hierarchy-grid/expand-child-grid.gif)
+
+> Index values begin with **"0"**, allowing you to provide the desired target index to expand a specific child grid initially.
 
 ## Dynamically load child grid data
 
@@ -167,6 +173,25 @@ The following example demonstrates how to obtain parent details in a child grid 
 {% endtabs %}
 
 ![Get parent detail in child grid](../images/hierarchy-grid/get-parent-grid-details.png)
+
+## Render aggregates in child grid
+
+The Aggregates feature in the Syncfusion ASP.NET MVC Grid component allows you to display aggregate values in the footer, group footer, and group caption of the child grid. With this feature, you can easily perform calculations on specific columns and show summary information. 
+
+Rendering aggregates in a child grid involves displaying summary data at the footer or group caption of the grid. This can be particularly useful in hierarchical grids where each child grid represents detailed data that needs to be summarized.
+
+The following example demonstrates how to render aggregates in a child grid to display the sum and maximum values of the **Freight** column.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/hierarchy-grid/aggregates-child-grid/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Aggregates.cs" %}
+{% include code-snippet/grid/hierarchy-grid/aggregates-child-grid/html.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Render aggregates in child grid](../images/hierarchy-grid/aggregates-child-grid.png)
 
 ## Expand all by external button
 
