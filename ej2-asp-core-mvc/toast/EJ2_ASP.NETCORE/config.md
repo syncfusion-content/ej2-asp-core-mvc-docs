@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Configuring Options
+# Config in ##Platform_Name## Toast Component
 
 This section explains the steps required to customize the appearance of the toast using built-in APIs.
 
