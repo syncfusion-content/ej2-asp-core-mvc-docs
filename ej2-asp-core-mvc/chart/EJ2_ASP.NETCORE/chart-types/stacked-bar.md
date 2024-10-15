@@ -211,10 +211,10 @@ Use the `stackingGroup` property to group stacked bars and 100% stacked bars. Ba
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/group/tagHelper %}
+{% include code-snippet/chart/series/stacked-bar/group/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Group.cs" %}
-{% include code-snippet/chart/series/bar-charts/group/group.cs %}
+{% include code-snippet/chart/series/stacked-bar/group/group.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -222,10 +222,10 @@ Use the `stackingGroup` property to group stacked bars and 100% stacked bars. Ba
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/group/razor %}
+{% include code-snippet/chart/series/stacked-bar/group/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Group.cs" %}
-{% include code-snippet/chart/series/bar-charts/group/group.cs %}
+{% include code-snippet/chart/series/stacked-bar/group/group.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -238,10 +238,10 @@ To render a cylindrical stacked bar chart, set the `columnFacet` property to **C
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/stackedbar-cylinder/tagHelper %}
+{% include code-snippet/chart/series/stacked-bar/stackedbar-cylinder/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedbar-cylinder.cs" %}
-{% include code-snippet/chart/series/bar-charts/stackedbar-cylinder/stackedbar-cylinder.cs %}
+{% include code-snippet/chart/series/stacked-bar/stackedbar-cylinder/stackedbar-cylinder.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -249,10 +249,10 @@ To render a cylindrical stacked bar chart, set the `columnFacet` property to **C
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/stackedbar-cylinder/razor %}
+{% include code-snippet/chart/series/stacked-bar/stackedbar-cylinder/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedbar-cylinder.cs" %}
-{% include code-snippet/chart/series/bar-charts/stackedbar-cylinder/stackedbar-cylinder.cs %}
+{% include code-snippet/chart/series/stacked-bar/stackedbar-cylinder/stackedbar-cylinder.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
