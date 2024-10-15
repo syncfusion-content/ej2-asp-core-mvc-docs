@@ -1,0 +1,18 @@
+<div id="container" style="margin:10px auto 0; width:250px;">
+    <label for="filter">Enter Text: </label>
+    <input id="filter" oninput="handleFilterChange(event)" />
+    @Html.EJS().ListBox("listbox").DataSource((IEnumerable<object>)ViewBag.data).Render()
+</div>
+
+
+<script>
+    function handleFilterChange(event) {
+        var listbox = document.getElementById("listbox").ej2_instances[0];
+        var input = event.target.value;
+        if (listbox) {
+            var query = new ej.data.Query().where('text', 'contains', input, true);
+            listbox.query = query;
+            listbox.dataBind();
+        }
+    }
+</script>
