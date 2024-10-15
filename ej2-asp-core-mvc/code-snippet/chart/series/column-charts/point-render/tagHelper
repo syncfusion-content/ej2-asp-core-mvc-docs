@@ -1,0 +1,21 @@
+<ejs-chart id="container" title="Olympic Medals" pointRender="changeColor" width="60%">
+    <e-chart-primaryxaxis valueType="Category">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="month" yName="sales"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" width="2">
+            <e-series-marker visible="true" width="7" height="7" isFilled="true"></e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function changeColor(args) {
+        if (args.point.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>
