@@ -1,26 +1,35 @@
+<div style="display: flex">
+    <label style="margin: 3px 5px 5px 0px"> Select row rendering mode: </label>
+    <span style="height:fit-content; margin-bottom:20px">
+        @Html.EJS().DropDownList("dropdown").Index(0).Width("180px").DataSource(@ViewBag.dropdownData).Change("change").Render()
+    </span>
+</div>
 <div class="control-wrapper e-bigger e-adaptive-demo">
     <div class="e-mobile-layout">
         <div class="e-mobile-content">
-            <ejs-grid id="Grid" dataSource="@ViewBag.AdaptiveDataSource" enableAdaptiveUI="true" height="100%" allowPaging="true" 
-            allowFiltering="true" allowSorting="true" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})" load="load">
-                <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
-                <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
-                <e-grid-columns>
-                    <e-grid-column field="SNO" headerText="SNO" textAlign="Right" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" width="100"></e-grid-column>
-                    <e-grid-column field="Model" headerText="Model" validationRules="@(new { required=true})" editType="dropdownedit" width="200"></e-grid-column>
-                    <e-grid-column field="Developer" headerText="Developer" filter="@(new { type="Menu"})" width="200"></e-grid-column>
-                    <e-grid-column field="ReleaseDate" headerText="Release Date" editType= "datepickeredit" customFormat="@(new { type ="date", format="yMMM" })" type="date" width="200"></e-grid-column>
-                    <e-grid-column field="AndroidVersion" headerText="Android Version" filter="@(new { type="CheckBox"})" width="200"></e-grid-column>
-                </e-grid-columns>
-            </ejs-grid>
+            @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.AdaptiveDataSource).Height("100%").EnableAdaptiveUI(true).AllowPaging(true).RowRenderingMode(Syncfusion.EJ2.Grids.RowRenderingDirection.Horizontal).AllowFiltering(true).AllowSorting(true).Load("load").Columns(col =>
+            {
+            col.Field("SNO").HeaderText("SNO").Width("100").IsPrimaryKey(true).ValidationRules(new { required = true, number = true }).Add();
+            col.Field("Model").HeaderText("Model").Width("150").EditType("dropdownedit").ValidationRules(new { required = true }).Add();
+            col.Field("Developer").HeaderText("Developer").Width("150").Filter(new { type = "Menu" }).Add();
+            col.Field("ReleaseDate").HeaderText("Release Date").Width("130").Format("yMMM").EditType("datepickeredit").Add();
+            col.Field("AndroidVersion").HeaderText("Android Version").Width("120").Filter(new { type = "CheckBox" }).Add();
+            }).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel); }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Aggregates(agg =>
+            {
+                agg.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>
+                () { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Model", Format = "C2", Type = "Count", FooterTemplate = "Total Models: ${Count}" } }).Add();
+            }).Render()
         </div>
     </div>
 </div>
-
 <script>
     function load() {
         var grid = document.getElementById("Grid").ej2_instances[0];
         grid.adaptiveDialogTarget = document.getElementsByClassName('e-mobile-content')[0];
+    }
+    function change(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.rowRenderingMode = args.value 
     }
 </script>
 <style>
