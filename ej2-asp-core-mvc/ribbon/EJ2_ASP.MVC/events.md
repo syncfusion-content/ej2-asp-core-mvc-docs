@@ -249,11 +249,11 @@ The [LauncherIconClick](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.
 
 ## Overflow popup open
 
-The [OverflowPopupOpen](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_OverflowPopupOpen) event is triggered when the overflow popup opens.
+The [OverflowPopupOpen](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_OverflowPopupOpen) event is triggered while opening the overflow popup.
 
 ## Overflow popup close
 
-The [OverflowPopupClose](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_OverflowPopupClose) event is triggered when the overflow popup closes.
+The [OverflowPopupClose](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_OverflowPopupClose) event is triggered while closing the overflow popup.
 
 The following code example demonstrates the ribbon rendered with `OverflowPopupOpen` and `OverflowPopupClose` events.
 
