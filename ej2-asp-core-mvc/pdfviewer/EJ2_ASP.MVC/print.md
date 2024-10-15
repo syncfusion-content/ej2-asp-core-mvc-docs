@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Pdfviewer Component
+title: Print in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 description: Learn here all about Print in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Print
+# Print in ASP.NET MVC PDFViewer Control
 
 The PDF Viewer supports printing the loaded PDF file. You can enable/disable the print using the following code snippet.
 
@@ -84,6 +84,8 @@ By default, the printScaleFactor is set to 1.
     }
 </script>
 ```
+{% endhighlight %}
+{% endtabs %}
 ## See also
 
 * [Toolbar items](./toolbar)

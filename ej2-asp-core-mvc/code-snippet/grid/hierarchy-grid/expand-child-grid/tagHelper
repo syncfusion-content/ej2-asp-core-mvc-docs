@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Home page";
+    var ChildGrid = new Syncfusion.EJ2.Grids.Grid()
+            {
+                DataSource = ViewBag.DataSource,
+                QueryString = "EmployeeID",
+                Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
+                    new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
+                    new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="Customer ID", Width="150" },
+                    new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="120" },
+                    new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="130" },
+        },
+            };
+}
+
+<div>
+    <ejs-grid id="Grid" dataSource="@ViewBag.EmployeeDataSource" childGrid="@ChildGrid" dataBound="dataBound" height="250">
+        <e-grid-columns>
+            <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="80"></e-grid-column>
+            <e-grid-column field="FirstName" headerText="Name" width="120"></e-grid-column>
+            <e-grid-column field="LastName" headerText="LastName" width="120"></e-grid-column>
+            <e-grid-column field="City" headerText="City" width="130"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>
+<script>
+    function dataBound() {
+        this.detailRowModule.expand(2); // initial expand 2 chid Grid.
+    }
+</script>

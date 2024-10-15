@@ -131,10 +131,10 @@ The `Opacity` property specifies the transparency level of the fill. Adjusting t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/column-charts/column-series/tagHelper %}
+{% include code-snippet/chart/series/column-charts/opacity/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Column-series.cs" %}
-{% include code-snippet/chart/series/column-charts/column-series/column-series.cs %}
+{% highlight c# tabtitle="Opacity.cs" %}
+{% include code-snippet/chart/series/column-charts/opacity/opacity.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -142,10 +142,10 @@ The `Opacity` property specifies the transparency level of the fill. Adjusting t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/column-charts/column-series/razor %}
+{% include code-snippet/chart/series/column-charts/opacity/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Column-series.cs" %}
-{% include code-snippet/chart/series/column-charts/column-series/column-series.cs %}
+{% highlight c# tabtitle="Opacity.cs" %}
+{% include code-snippet/chart/series/column-charts/opacity/opacity.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
