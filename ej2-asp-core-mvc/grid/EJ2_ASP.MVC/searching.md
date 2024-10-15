@@ -33,7 +33,7 @@ To further enhance the search functionality, you can integrate a search text box
 
 By default, the search operation can be performed on the grid data after the grid renders. However, there might be scenarios where need to perform a search operation on the grid data during the initial rendering of the grid. In such cases, you can make use of the initial search feature provided by the grid.
 
-To apply search at initial rendering, need to set the following properties in the [SearchSettings](htthttps://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_SearchSettings) object.
+To apply search at initial rendering, need to set the following properties in the [SearchSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_SearchSettings) object.
 
 Property |Description
 --------|-----
@@ -43,7 +43,7 @@ Property |Description
 **IgnoreCase** |`IgnoreCase` specifies whether the search operation needs to be case-sensitive or case-insensitive.
 **IgnoreAccent** |`IgnoreAccent`property will ignore the diacritic characters or accents in the text during a search operation.
 
-The following example demonstrates how to set an initial search in the grid using the `searchSettings` property. The `searchSettings` property is set with the following values:
+The following example demonstrates how to set an initial search in the grid using the `SearchSettings` property. The `SearchSettings` property is set with the following values:
 
 1. `Fields`: **CustomerID** specifies that the search should be performed only in the 'CustomerID' field.
 2. `Operator`: **contains** indicates that the search should find records that contain the specified search key.
@@ -121,7 +121,7 @@ The `search` method allows you to perform a search operation based on a search k
 
 By default, the `search` functionality searches all visible columns. However, if you want to `search` only specific columns, you can define the specific column's field names in the [SearchSettings.Fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields) property. This allows you to narrow down the search to a targeted set of columns, which is particularly useful when dealing with large datasets or grids with numerous columns.
 
-The following example demonstrates how to search specific columns such as **CustomerID**, **Freight**, and **ShipCity** by using the `searchSettings.Fields` property.
+The following example demonstrates how to search specific columns such as **CustomerID**, **Freight**, and **ShipCity** by using the `SearchSettings.Fields` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -140,7 +140,7 @@ The search on each keystroke feature in Syncfusion Grid enables you to perform r
 
 To achieve this, you need to bind the `keyup` event to the search input element inside the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Created) event of the grid component. 
 
-In the following example, the `Created` event is bound to the grid component, and inside the event handler, the `keyup` event is bound to the [search](https://ej2.syncfusion.com/ASP.NET MVC/documentation/api/grid/#search) input element. Whenever the `keyup` event is triggered, the current `search` string is obtained from the `search` input element, and the `search` method is invoked on the grid instance with the current search string as a parameter. This allows the search results to be displayed in real-time as you type in the search box.
+In the following example, the `Created` event is bound to the grid component, and inside the event handler, the `keyup` event is bound to the `search` input element. Whenever the `keyup` event is triggered, the current `search` string is obtained from the `search` input element, and the `search` method is invoked on the grid instance with the current search string as a parameter. This allows the search results to be displayed in real-time as you type in the search box.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
