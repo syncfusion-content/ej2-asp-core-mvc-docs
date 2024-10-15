@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to Filter ListBox Data Using TextBox Component
+# Filter List box Data
 
 This example demonstrates how to filter data in the Syncfusion ListBox using a TextBox component. It shows the implementation of a TextBox filter for data filtering in ListBox items.
 
