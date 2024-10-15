@@ -1,16 +1,10 @@
-@using dotnet_mvc_sample.Controllers;
-@{
-    List<object> toolbarItems = new List<object>();
-    toolbarItems.Add("Search");
-}
-@(Html.EJS().Grid<HomeController.BigData>("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
-{
+@Html.EJS().Grid("Search").DataSource((IEnumerable < object >)ViewBag.datasource).Height("350px").Columns(col => {
     col.Field("OrderID").HeaderText("OrderID").IsPrimaryKey(true).Width("120").Add();
     col.Field("CustomerID").HeaderText("CustomerID").Width("120").Add();
     col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Add();
     col.Field("ShipCity").HeaderText("ShipCity").Width("120").Add();
 
-}).Toolbar(toolbarItems).ActionBegin("actionBegin").ActionComplete("actionComplete").Render())
+}).Toolbar(new List < string > () { "Search" }).ActionBegin("actionBegin").ActionComplete("actionComplete").Render()
 
 <script>
     var values;
@@ -21,57 +15,49 @@
 
     function actionBegin(args) {
         if (args.requestType == 'searching') {
+            var grid = document.getElementById("Search").ej2_instances[0];
             const keys = args.searchString.split(',');
             var flag = true;
             var predicate;
-            if (keys.length > 1) {
-                if (this.searchSettings.key !== '') {
-                    values = args.searchString;
-                    keys.forEach((key) => {
-                        this.getColumns().forEach((col) => {
-                            if (flag) {
-                                predicate = new ej.data.Predicate(
-                                    col.field,
-                                    'contains',
-                                    key,
-                                    true
-                                );
-
-                                flag = false;
-                            } else {
-                                var predic = new ej.data.Predicate(
-                                    col.field,
-                                    'contains',
-                                    key,
-                                    true
-                                );
-
-                                predicate = predicate.or(predic);
-                            }
-                        });
+            if (keys.length > 1 && grid.searchSettings.key !== '') {
+                this.values = args.searchString;
+                keys.forEach((key) => {
+                    grid.getColumns().forEach((colum) => {
+                        if (flag) {
+                            predicate = new ej.data.Predicate(colum.field, 'contains', key, true);
+                            flag = false;
+                        }
+                        else {
+                            var newPredicate = new ej.data.Predicate(colum.field, 'contains', key, true);
+                            predicate = predicate.or(newPredicate);
+                        }
                     });
-                    this.query = new ej.data.Query().where(predicate);
-                    this.searchSettings.key = '';
-                    refresh = true;
-                    valueAssign = true;
-                    removeQuery = true;
-                    this.refresh();
-                }
+                });
+
+                grid.query = new ej.data.Query().where(predicate);
+                grid.searchSettings.key = '';
+                this.valueAssign = true;
+                this.removeQuery = true;
+                grid.refresh();
             }
         }
     }
     function actionComplete(args) {
-        if (args.requestType === 'refresh' && valueAssign) {
-            document.getElementById(this.element.id + '_searchbar').value = values;
-            valueAssign = false;
-        } else if (
-            document.getElementById(this.element.id + '_searchbar').value === '' &&
-            args.requestType === 'refresh' &&
-            removeQuery
-        ) {
-            this.query = new ej.data.Query();
-            removeQuery = false;
-            this.refresh();
+        if (args.requestType === 'refresh') {
+            var grid = document.getElementById("Search").ej2_instances[0];
+            var searchBar = document.querySelector('#' + grid.element.id + '_searchbar');
+
+            if (searchBar) {
+                if (this.valueAssign) {
+                    searchBar.value = this.values || '';
+                    this.valueAssign = false;
+                } else if (removeQuery) {
+                    searchBar.value = ''
+                    grid.query = new ej.data.Query();
+                    removeQuery = false;
+                    grid.refresh();
+                }
+            }
         }
     }
 </script>

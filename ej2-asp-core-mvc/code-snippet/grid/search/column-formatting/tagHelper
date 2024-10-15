@@ -1,0 +1,60 @@
+<ejs-grid id="Search" dataSource="@ViewBag.datasource" toolbar="@(new List<string>() { "Search"})" height="350px" actionBegin="actionBegin" keyPressed="keyPressed"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID"  width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="OrderDate" format='yMd' textAlign="Right" width="120"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function actionBegin(args) {
+        if (args.requestType == 'searching') {
+            var grid = document.getElementById("Search").ej2_instances[0];
+            args.cancel = true;
+            setTimeout(() => {
+                var columns = grid.getColumns();
+                var predicate = null;
+                for (var i = 0; i < columns.length; i++) {
+                    var val = grid.valueFormatterService.fromView(
+                        args.searchString,
+                        columns[i].getParser(),
+                        columns[i].type
+                    );
+                    if (val) {
+                        if (predicate == null) {
+                            predicate = new ej.data.Predicate(
+                                columns[i].field,
+                                'contains',
+                                val,
+                                true,
+                                true
+                            );
+                        } else {
+                            predicate = predicate.or(
+                                columns[i].field,
+                                'contains',
+                                val,
+                                true,
+                                true
+                            );
+                        }
+                    }
+                }
+                grid.query = new ej.data.Query().where(predicate);
+            }, 200);
+        }
+    }
+
+    function keyPressed(args) {
+       if (
+            args.key == 'Enter' &&
+            args.target &&
+            args.target.closest('.e-search') &&
+            args.target.value == ''
+            ) {
+            args.cancel = true;
+            document.getElementById("Search").ej2_instances[0].query = new ej.data.Query();
+        }
+    }
+</script>
