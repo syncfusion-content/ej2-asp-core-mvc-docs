@@ -4,9 +4,6 @@
       XName("x").
       YName("y").
       DataSource(ViewBag.dataSource).
-      ColumnSpacing(0.2).
-      ColumnWidth(0.2).
+      ColumnSpacing(0.5).
       Add();
-   })
-   .PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category))
-   .Render()
+   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Render()

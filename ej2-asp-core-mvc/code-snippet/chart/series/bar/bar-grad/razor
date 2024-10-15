@@ -1,0 +1,22 @@
+<svg style="width:1px; height:1px">
+    <defs>
+        <linearGradient id="gradient">
+            <stop offset="0%" style="stop-color:blue;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:violet;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+
+@Html.EJS().Chart("container").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Bar).
+      XName("x").
+      YName("y").
+      DataSource(ViewBag.dataSource).
+      Name("Gold").Fill("url(#gradient)").
+      Add();
+   }).PrimaryXAxis(px =>
+      px.Interval(1)
+         .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+         .IsIndexed(true)
+   ).Title("Olympic Medal Counts - RIO").Render()
