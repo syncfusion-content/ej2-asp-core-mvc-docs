@@ -1,3 +1,4 @@
+@using Newtonsoft.Json;
 @{
     ViewData["Title"] = "Home page";
     var ChildGrid = new Syncfusion.EJ2.Grids.Grid()
@@ -30,8 +31,8 @@
    function rowDataBound(args) {
         var ordersDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
         var parentData = (args.data)['EmployeeID'];
-        var childrecord = new ej.data.DataManager(ordersDataSource).executeLocal(new ej.data.Query().where('EmployeeID', 'equal', parentData, true));
-        if (childrecord.length === 0) {
+        var childRecord = new ej.data.DataManager(ordersDataSource).executeLocal(new ej.data.Query().where('EmployeeID', 'equal', parentData, true));
+        if (childRecord.length === 0) {
             // Here hide which parent row has no child records
             var rowElement = args.row;
             var cellElement = rowElement.querySelector('td')
