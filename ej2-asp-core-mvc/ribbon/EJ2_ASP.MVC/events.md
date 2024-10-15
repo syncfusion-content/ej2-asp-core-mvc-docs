@@ -1596,7 +1596,7 @@ The [Click](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.R
 
 ### BeforeClick
 
-The [BeforeClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_BeforeClick) event is triggered before selecting a button from the groupbutton items.
+The [BeforeClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_BeforeClick) event is triggered before selecting a button from the GroupButton items.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1644,7 +1644,7 @@ The [BeforeClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ri
 
 ### Click
 
-The [Click](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_Click) event is triggered when selecting a button from the groupbutton items.
+The [Click](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_Click) event is triggered when selecting a button from the GroupButton items.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
