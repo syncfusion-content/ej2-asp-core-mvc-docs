@@ -247,6 +247,57 @@ The [launcherIconClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 {% endhighlight %}
 {% endtabs %}
 
+## Overflow popup open
+
+The [overflowPopupOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_OverflowPopupOpen) event is triggered when the overflow popup opens.
+
+## Overflow popup close
+
+The [overflowPopupClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_OverflowPopupClose) event is triggered when the overflow popup closes.
+
+The following code example demonstrates the ribbon rendered with `overflowPopupOpen` and `overflowPopupClose` events.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon" overflowPopupOpen="overflowPopupOpen" overflowPopupClose="overflowPopupClose" activelayout="Simplified">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=Button>
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script>
+
+    function overflowPopupOpen(args) {
+        // Here, you can customize your code.
+    }
+
+    function overflowPopupClose(args) {
+        // Here, you can customize your code.
+    }
+
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Button item events
 
 ### Clicked

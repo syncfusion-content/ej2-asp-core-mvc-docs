@@ -247,6 +247,62 @@ The [LauncherIconClick](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
+## Overflow popup open
+
+The [OverflowPopupOpen](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_OverflowPopupOpen) event is triggered when the overflow popup opens.
+
+## Overflow popup close
+
+The [OverflowPopupClose](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_OverflowPopupClose) event is triggered when the overflow popup closes.
+
+The following code example demonstrates the ribbon rendered with `OverflowPopupOpen` and `OverflowPopupClose` events.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Ribbon
+
+@Html.EJS().Ribbon("ribbon").OverflowPopupOpen("function(args){overflowPopupOpen(args)}").OverflowPopupClose("function(args){overflowPopupClose(args)}").ActiveLayout(RibbonLayout.Simplified).Tabs(tab =>
+{
+    tab.Header("Home").Groups(group =>
+    {
+        group.Header("Clipboard").Collections(collection =>
+        {
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-paste").Content("Paste");
+                }).Add();
+            }).Add();
+            collection.Items(items =>
+            {
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-cut").Content("Cut");
+                }).Add();
+                items.Type(RibbonItemType.Button).ButtonSettings(button =>
+                {
+                    button.IconCss("e-icons e-copy").Content("Copy");
+                }).Add();
+            }).Add();
+        }).Add();
+    }).Add();
+}).Render()
+
+<script>
+    function overflowPopupOpen(args) {
+        // Here, you can customize your code.
+    }
+    function overflowPopupClose(args) {
+    // Here, you can customize your code.
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Button item events
 
 ### Clicked
