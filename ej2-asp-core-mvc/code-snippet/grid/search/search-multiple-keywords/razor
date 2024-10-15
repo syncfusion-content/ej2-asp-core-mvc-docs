@@ -19,47 +19,44 @@
             const keys = args.searchString.split(',');
             var flag = true;
             var predicate;
-            if (keys.length > 1) {
-                if (grid.searchSettings.key !== '') {
-                    this.values = args.searchString;
-                    keys.forEach((key) => {
-                        grid.getColumns().forEach((col) => {
-                           if (flag) {
-                              predicate = new ej.data.Predicate(col.field, 'contains', key, true);
-                              flag = false;
-                            }
-                          else {
-                            var predic = new ej.data.Predicate(col.field, 'contains', key, true);
-                            predicate = predicate.or(predic);
-                           }
-                       });
+            if (keys.length > 1 && grid.searchSettings.key !== '') {
+                this.values = args.searchString;
+                keys.forEach((key) => {
+                    grid.getColumns().forEach((colum) => {
+                        if (flag) {
+                            predicate = new ej.data.Predicate(colum.field, 'contains', key, true);
+                            flag = false;
+                        }
+                        else {
+                            var newPredicate = new ej.data.Predicate(colum.field, 'contains', key, true);
+                            predicate = predicate.or(newPredicate);
+                        }
                     });
+                });
 
-                 grid.query = new ej.data.Query().where(predicate);
-                 grid.searchSettings.key = '';
-                 this.valueAssign = true;
-                 this.removeQuery = true;
-                 grid.refresh();
-                }
+                grid.query = new ej.data.Query().where(predicate);
+                grid.searchSettings.key = '';
+                this.valueAssign = true;
+                this.removeQuery = true;
+                grid.refresh();
             }
         }
     }
     function actionComplete(args) {
-        if (args.requestType === 'refresh' && this.valueAssign) {
+        if (args.requestType === 'refresh') {
             var grid = document.getElementById("Search").ej2_instances[0];
-            const searchBar = document.querySelector('#' + grid.element.id + '_searchbar');
+            var searchBar = document.querySelector('#' + grid.element.id + '_searchbar');
+
             if (searchBar) {
-               searchBar.value = this.values || '';
-               this.valueAssign = false;
-            }
-            else if (args.requestType === 'refresh' && this.removeQuery ) {
-                const searchBar = document.querySelector('#' + grid.element.id + '_searchbar');
-                if (searchBar) {
-                    searchBar.value = '';
+                if (this.valueAssign) {
+                    searchBar.value = this.values || '';
+                    this.valueAssign = false;
+                } else if (removeQuery) {
+                    searchBar.value = ''
+                    grid.query = new ej.data.Query();
+                    removeQuery = false;
+                    grid.refresh();
                 }
-            grid.query = new ej.data.Query();
-            this.removeQuery = false;
-                grid.refresh();
             }
         }
     }
