@@ -1,0 +1,25 @@
+<div style="display:flex">
+    <label style="padding: 1px 10px 20px 0px">
+        Enable or disable ignoreAccent property
+    </label>
+    @Html.EJS().Switch("switch").Change("onSwitchChange").Render()
+</div>
+@Html.EJS().Grid("Search").DataSource((IEnumerable<object>)ViewBag.datasource).Height("350px").Columns(col =>
+{
+    col.Field("CategoryName").HeaderText("Category Name").Width("160").Add();
+    col.Field("ProductName").HeaderText("Product Name").Width("170").Add();
+    col.Field("QuantityPerUnit").HeaderText("Quantity Per Unit").Width("170").Add();
+    col.Field("UnitsInStock").HeaderText("Units In Stock").Width("170").Add();
+
+}).Toolbar(new List<string>() { "Search" }).Render();
+
+<script>
+    function onSwitchChange(args) { 
+        var gridObj = document.getElementById("Search").ej2_instances[0];
+        if (args.checked) {
+            gridObj.searchSettings.ignoreAccent = true;
+        } else {
+            gridObj.searchSettings.ignoreAccent = false;
+        }
+    }
+</script>
