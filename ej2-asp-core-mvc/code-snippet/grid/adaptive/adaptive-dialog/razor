@@ -1,9 +1,148 @@
-<div class="e-bigger">
-@Html.EJS().Grid("adaptivebrowser").DataSource((IEnumerable<object>)ViewBag.DataSource).EnableAdaptiveUI(true).AllowPaging(true).AllowFiltering(true).AllowSorting(true).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("180").IsPrimaryKey(true).ValidationRules(new { required = true, number = true }).Add();
-    col.Field("Freight").HeaderText("Freight").Width("180").Format("C2").EditType("numericedit").ValidationRules(new { required = true }).Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("180").ValidationRules(new { required = true, minLength = 3 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("180").Add();
-}).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel); }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Render()
+<div class="control-wrapper e-bigger e-adaptive-demo">
+    <div class="e-mobile-layout">
+        <div class="e-mobile-content">
+            @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.AdaptiveDataSource).Height("100%").EnableAdaptiveUI(true).AllowPaging(true).AllowFiltering(true).AllowSorting(true).Load("load")
+            .Columns(col =>
+            {
+            col.Field("SNO").HeaderText("SNO").Width("100").IsPrimaryKey(true).ValidationRules(new { required = true, number = true }).Add();
+            col.Field("Model").HeaderText("Model").Width("150").EditType("dropdownedit").ValidationRules(new { required = true }).Add();
+            col.Field("Developer").HeaderText("Developer").Width("150").Filter(new { type = "Menu" }).Add();
+            col.Field("ReleaseDate").HeaderText("Release Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMMM").EditType("datepickeredit").Add();
+            col.Field("AndroidVersion").HeaderText("Android Version").Width("120").Filter(new { type = "CheckBox" }).Add();
+            }).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel); }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog); })
+            .Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Render()
+        </div>
+    </div>
 </div>
+
+<script>
+    function load() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.adaptiveDialogTarget = document.getElementsByClassName('e-mobile-content')[0];
+    }
+</script>
+
+<style>
+    /* Mobile Layout Styles */
+    .e-mobile-layout {
+        position: relative;
+        width: 360px;
+        height: 640px;
+        margin: auto;
+        border: 16px solid #f4f4f4;
+        border-top-width: 60px;
+        border-bottom-width: 60px;
+        border-radius: 36px;
+        box-shadow: 0 0px 2px rgb(144, 144, 144), 0 0px 10px rgb(0, 0, 0 / 16%);
+    }
+
+    .e-mobile-layout:before,
+    .e-mobile-layout:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ebebeb;
+        border-radius: 10px;
+    }
+
+    .e-mobile-layout:before {
+        width: 60px;
+        height: 5px;
+        top: -30px;
+    }
+
+    .e-mobile-layout:after {
+        width: 35px;
+        height: 35px;
+        bottom: -65px;
+        background: #e8e8e8;
+        border-radius: 50%;
+    }
+
+    .e-mobile-layout .e-mobile-content {
+        overflow-x: hidden;
+        height: 100%;
+        background: white;
+        border: 0px solid #dddddd;
+    }
+
+    /* Adaptive Pager Styles */
+    .e-adaptive-demo .e-pager {
+        padding: 13px 0;
+    }
+
+    .e-adaptive-demo .e-pager div.e-parentmsgbar {
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 0;
+        text-align: center;
+        vertical-align: top;
+        width: calc(60% - 48px);
+    }
+
+    .e-adaptive-demo .e-pager .e-pagesizes,
+    .e-adaptive-demo .e-pager .e-pagecountmsg,
+    .e-adaptive-demo .e-pager .e-pagercontainer {
+        display: none;
+    }
+
+    .e-adaptive-demo .e-pager .e-icons {
+        font-size: 11px;
+    }
+
+    .e-adaptive-demo .e-pager .e-mfirst,
+    .e-adaptive-demo .e-pager .e-mprev,
+    .e-adaptive-demo .e-pager .e-mnext,
+    .e-adaptive-demo .e-pager .e-mlast {
+        border: 0;
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 1% 5%;
+    }
+
+    .e-adaptive-demo .e-pager .e-mfirst,
+    .e-adaptive-demo .e-pager .e-mlast {
+        width: calc(10% + 11px);
+    }
+
+    .e-adaptive-demo .e-pager .e-mprev,
+    .e-adaptive-demo .e-pager .e-mnext {
+        width: 10%;
+    }
+
+    .e-adaptive-demo .e-pager .e-mfirst {
+        margin-right: 4px;
+        text-align: right;
+    }
+
+    .e-adaptive-demo .e-pager .e-mprev {
+        margin: 0 4px;
+        text-align: right;
+    }
+
+    .e-adaptive-demo .e-pager .e-mnext {
+        margin: 0 4px;
+        text-align: left;
+    }
+
+    .e-adaptive-demo .e-pager .e-mlast {
+        margin-left: 4px;
+        text-align: left;
+    }
+
+    .e-adaptive-demo .e-bigger .e-pager {
+        padding: 19px 0;
+    }
+
+    /* Responsive Dialog */
+    .e-responsive-dialog {
+        box-shadow: none;
+        border: 1px solid #dddddd;
+    }
+
+    .e-dlg-target.e-scroll-disabled {
+        overflow: auto;
+    }
+</style>
