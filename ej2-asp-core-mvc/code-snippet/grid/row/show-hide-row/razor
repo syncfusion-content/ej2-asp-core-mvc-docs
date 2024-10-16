@@ -1,0 +1,49 @@
+<div style="display: flex; margin-bottom: 5px">
+  @Html.EJS().CheckBox("checkbox").Change("onCheckBoxChange").Label("Show / Hide Row").Render()
+</div>
+<p id="message"></p>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("130").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("ShippedDate").HeaderText("Shipped Date").Width("130").Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+
+}).Render()
+
+<script>
+    var hiddenRows = [];
+    function onCheckBoxChange(args) {
+        if (args.checked) {
+            var grid = document.getElementById('Grid').ej2_instances[0];
+            for (var i = 0; i < grid.getRowsObject().length; i++) {
+                if (grid.getRowsObject()[i].data.CustomerID === 'VINET') {
+                    // check the row value
+                    var rowIndex = grid.getRowsObject()[i].index;  //get particular row index
+                    grid.getRowByIndex(rowIndex).style.display = 'none'; //hide row
+                    hiddenRows.push(rowIndex); // add row index to hiddenRows array
+                }
+            }
+            if (hiddenRows.length > 0) {
+                document.getElementById('message').innerText = 'Rows with a customer name column value of VINET have been hidden';
+            }
+        } else {
+            var grid = document.getElementById('Grid').ej2_instances[0];
+            // Show hidden rows
+            hiddenRows.forEach((rowIndex) => {
+                grid.getRowByIndex(rowIndex).style.display = '';
+            });
+            hiddenRows = [];
+            document.getElementById('message').innerText = 'Show all hidden rows';
+        }
+    }
+</script>
+<style>
+    #message {
+        color: red;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>

@@ -1,0 +1,20 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).FrozenRows(3).Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+  col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+  col.Field("EmployeeID").HeaderText("EmployeeID").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipName").HeaderText("Ship Name").Width("100").Add();
+  col.Field("ShipAddress").HeaderText("Ship Address").Width("100").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("100").Add();
+  col.Field("ShipRegion").HeaderText("Ship Region").Width("100").Add();
+  col.Field("ShipPostalCode").HeaderText("Ship Postal Code").Width("100").Add();
+  col.Field("Freight").HeaderText("Freight").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+}).Render()
+
+<style>
+  .e-grid .e-frozenrow-border {
+  background-color: rgb(5, 114, 47);
+}    
+</style>

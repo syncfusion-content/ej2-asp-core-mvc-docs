@@ -1,0 +1,49 @@
+<div style="display:flex; margin-bottom:5px">
+    <ejs-checkbox id="checkbox" label="Show / Hide Row" change="onCheckBoxChange"></ejs-checkbox>
+</div>
+<p id="message"></p>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" enableHover="false" allowSelection="false" width="550" height="210">
+  <e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+    <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign='Right' width="130"></e-grid-column>
+    <e-grid-column field="Freight" headerText="Freight" textAlign='Right' format="C" width="120"></e-grid-column>
+    <e-grid-column field="ShippedDate" headerText="Shipped Date" textAlign='Right' format="yMd" width="130"></e-grid-column>
+    <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+  </e-grid-columns>
+</ejs-grid>
+
+<script>
+  var hiddenRows = [];
+  function onCheckBoxChange(args) {
+      if (args.checked) {
+          var grid = document.getElementById('Grid').ej2_instances[0];
+          for (var i = 0; i < grid.getRowsObject().length; i++) {
+              if (grid.getRowsObject()[i].data.CustomerID === 'VINET') {
+                  // check the row value
+                  var rowIndex = grid.getRowsObject()[i].index;  //get particular row index
+                  grid.getRowByIndex(rowIndex).style.display = 'none'; //hide row
+                  hiddenRows.push(rowIndex); // add row index to hiddenRows array
+              }
+          }
+          if (hiddenRows.length > 0) {
+              document.getElementById('message').innerText = 'Rows with a customer name column value of VINET have been hidden';
+          }
+      } else {
+          var grid = document.getElementById('Grid').ej2_instances[0];
+          // Show hidden rows
+          hiddenRows.forEach((rowIndex) => {
+              grid.getRowByIndex(rowIndex).style.display = '';
+          });
+          hiddenRows = [];
+          document.getElementById('message').innerText = 'Show all hidden rows';
+      }
+  }
+</script>
+<style>
+  #message{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+  }
+</style>
