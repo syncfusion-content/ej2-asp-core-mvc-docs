@@ -8,43 +8,33 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row Spanning in ASP.NET Core Grid Component
+# Row spanning in ASP.NET Core Grid component
 
-The grid has option to span row cells. To achieve this, You need to define the **rowSpan** attribute to span cells in the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event.
+The grid provides an option to span row cells, allowing you to merge two or more cells in a row into a single cell. This feature can be useful in scenarios where you want to display information that spans across multiple rows, but want to avoid repeating the same information in each row.
 
-In the following demo, **Davolio** cell is spanned to two rows in the **EmployeeName** column.
+To achieve this, You need to define the `rowSpan` attribute to span cells in the [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event. The `rowSpan` attribute is used to specify the number of rows that the current cell should span.
 
-Also Grid supports the spanning of rows and columns for same cells. **Lunch Break** cell is spanned to two rows and three columns in the **1:00** column.
+The `queryCellInfo` event is triggered for each cell in the grid, and allows you to customize the cells in the grid. By handling this event, you can set the `rowSpan` attribute for a cell to achieve row spanning.
 
-{% if page.publishingplatform == "aspnet-core" %}
+In the following code example, **Davolio** cell is spanned to two rows in the **EmployeeName** column. Also Grid supports the spanning of rows and columns for same cells. **Lunch Break** cell is spanned to two rows and three columns in the **1:00** column.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/row/rowspanning/tagHelper %}
+{% include code-snippet/grid/row/row-span/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Rowspanning.cs" %}
-{% include code-snippet/grid/row/rowspanning/rowspanning.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/row/rowspanning/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rowspanning.cs" %}
-{% include code-snippet/grid/row/rowspanning/rowspanning.cs %}
+{% highlight c# tabtitle="Span.cs" %}
+{% include code-snippet/grid/row/row-span/row-span.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Row span](../../images/row/row-span.png)
 
-
-N> * To disable the spanning for particular grid page, we need to use **requestType** from [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event argument.
+> * To disable the spanning for particular grid page, you need to use **requestType** from [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event argument.
+> * The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.
 
 ## Limitations
 
+* The `updateCell` method does not support row spanning.
 * Row spanning is not compatible with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
