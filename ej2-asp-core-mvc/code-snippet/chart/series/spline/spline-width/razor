@@ -1,0 +1,9 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Spline).
+      XName("x").
+      YName("y").
+      DataSource(ViewBag.dataSource).
+      Width(4).
+      Add();
+   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Title("Olympic Medals").Render()

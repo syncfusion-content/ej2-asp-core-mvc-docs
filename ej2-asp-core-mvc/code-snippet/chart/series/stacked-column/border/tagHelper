@@ -1,0 +1,18 @@
+<ejs-chart id="container" title="Family Expense for Month">
+    <e-chart-primaryxaxis valueType="Category" interval="1">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="John" xName="x" yName="y" type="StackingColumn">
+            <e-series-border width="3" color="#ff4251"></e-series-border>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Peter" xName="x" yName="y1" type="StackingColumn">
+            <e-series-border width="3" color="#4C4C4C"></e-series-border>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Steve" xName="x" yName="y2" type="StackingColumn">
+            <e-series-border width="3" color="#794F1B"></e-series-border>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Charle" xName="x" yName="y3" type="StackingColumn">
+            <e-series-border width="3" color="#1a9a6f"></e-series-border>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

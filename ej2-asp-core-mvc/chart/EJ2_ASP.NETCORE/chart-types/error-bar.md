@@ -13,16 +13,20 @@ documentation: ug
 
 ## Error Bar
 
-Error bars are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement. To render the error bar for the series, set [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_Visible) as `true` in error bar object.
+Error bars are graphical representations of the variability of data and are used on graphs to indicate the error or uncertainty in a reported measurement.
+
+To render error bars for the series in your chart, you need to follow a few steps to configure it correctly. Here’s a concise guide on how to do this:
+
+**Set visibility:** Set the visible property to true for the error bars to be displayed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/errorbar/tagHelper %}
+{% include code-snippet/chart/series/error-bar/errorbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Errorbar.cs" %}
-{% include code-snippet/chart/series/other-types/errorbar/errorbar.cs %}
+{% include code-snippet/chart/series/error-bar/errorbar/errorbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,28 +34,26 @@ Error bars are graphical representations of the variability of data and used on 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/errorbar/razor %}
+{% include code-snippet/chart/series/error-bar/errorbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Errorbar.cs" %}
-{% include code-snippet/chart/series/other-types/errorbar/errorbar.cs %}
+{% include code-snippet/chart/series/error-bar/errorbar/errorbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Customizing error bar
 
-
-## Error Bar Type
-
-To change the error bar rendering type using [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_Type) option of error bar. To change the error bar line length you can use [`VerticalError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_VerticalError) property.
+To customize the error bar type, set the error bar `type` to **Custom**, and then change the horizontal or vertical positive and negative error values for the error bar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/error-type/tagHelper %}
+{% include code-snippet/chart/series/error-bar/errorbar-custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Error-type.cs" %}
-{% include code-snippet/chart/series/other-types/error-type/error-type.cs %}
+{% highlight c# tabtitle="Errorbar-custom.cs" %}
+{% include code-snippet/chart/series/error-bar/errorbar-custom/errorbar-custom.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,28 +61,26 @@ To change the error bar rendering type using [`Type`](https://help.syncfusion.co
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/error-type/razor %}
+{% include code-snippet/chart/series/error-bar/errorbar-custom/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Error-type.cs" %}
-{% include code-snippet/chart/series/other-types/error-type/error-type.cs %}
+{% highlight c# tabtitle="Errorbar-custom.cs" %}
+{% include code-snippet/chart/series/error-bar/errorbar-custom/errorbar-custom.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Error bar mode
 
-
-## Customizing Error Bar Type
-
-To customize the error bar type, set error bar [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_Type) as `Custom` and then change the horizontal/vertical positive and negative error of error bar.
+The error bar mode is used to define whether the error bar line is drawn horizontally, vertically or on both sides. To change the error bar mode, use the `mode` option.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/custom-error/tagHelper %}
+{% include code-snippet/chart/series/error-bar/mode/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom-error.cs" %}
-{% include code-snippet/chart/series/other-types/custom-error/custom-error.cs %}
+{% highlight c# tabtitle="Mode.cs" %}
+{% include code-snippet/chart/series/error-bar/mode/mode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,28 +88,26 @@ To customize the error bar type, set error bar [`Type`](https://help.syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/custom-error/razor %}
+{% include code-snippet/chart/series/error-bar/mode/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom-error.cs" %}
-{% include code-snippet/chart/series/other-types/custom-error/custom-error.cs %}
+{% highlight c# tabtitle="Mode.cs" %}
+{% include code-snippet/chart/series/error-bar/mode/mode.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
+{% endif %} 
 
+## Error bar direction
 
-
-## Error Bar Mode
-
-Error bar mode is used to define whether the error bar line has to be drawn horizontally, vertically or in both side. To change the error bar mode use [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_Mode) option.
+To change the direction of the error bars to plus, minus, or both sides, use the `direction` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/error-mode/tagHelper %}
+{% include code-snippet/chart/series/error-bar/direction/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Error-mode.cs" %}
-{% include code-snippet/chart/series/other-types/error-mode/error-mode.cs %}
+{% highlight c# tabtitle="Direction.cs" %}
+{% include code-snippet/chart/series/error-bar/direction/direction.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -117,28 +115,26 @@ Error bar mode is used to define whether the error bar line has to be drawn hori
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/error-mode/razor %}
+{% include code-snippet/chart/series/error-bar/direction/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Error-mode.cs" %}
-{% include code-snippet/chart/series/other-types/error-mode/error-mode.cs %}
+{% highlight c# tabtitle="Direction.cs" %}
+{% include code-snippet/chart/series/error-bar/direction/direction.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Customizing error bar cap
 
-
-## Error Bar Direction
-
-To change the error bar direction to plus, minus or both side using [`Direction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_Direction) option.
+To customize the length, width, opacity, and fill color of the error bar caps, you can use the `errorBarCap` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/error-direction/tagHelper %}
+{% include code-snippet/chart/series/error-bar/errorbarcap/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Error-direction.cs" %}
-{% include code-snippet/chart/series/other-types/error-direction/error-direction.cs %}
+{% highlight c# tabtitle="Errorbarcap.cs" %}
+{% include code-snippet/chart/series/error-bar/errorbarcap/errorbarcap.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -146,28 +142,26 @@ To change the error bar direction to plus, minus or both side using [`Direction`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/error-direction/razor %}
+{% include code-snippet/chart/series/error-bar/errorbarcap/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Error-direction.cs" %}
-{% include code-snippet/chart/series/other-types/error-direction/error-direction.cs %}
+{% highlight c# tabtitle="Errorbarcap.cs" %}
+{% include code-snippet/chart/series/error-bar/errorbarcap/errorbarcap.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Customizing error bar color
 
-
-## Customizing Error Bar Cap
-
-To customize the error bar cap length, width and fill color, you can use [`ErrorBarCap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_ErrorBarCap) option.
+To customize the error bar color for individual errors, use the `errorBarColorMapping` property. You can also customize the vertical error, horizontal error, horizontal negative and positive error, and vertical negative and positive error for an individual point using the `verticalError`, `horizontalError`, `horizontalNegativeError`, `horizontalPositiveError`, `verticalNegativeError`, and `verticalPositiveError` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/error-cap/tagHelper %}
+{% include code-snippet/chart/series/error-bar/errorbarcolor/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Error-cap.cs" %}
-{% include code-snippet/chart/series/other-types/error-cap/error-cap.cs %}
+{% highlight c# tabtitle="Errorbarcolor.cs" %}
+{% include code-snippet/chart/series/error-bar/errorbarcolor/errorbarcolor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -175,28 +169,28 @@ To customize the error bar cap length, width and fill color, you can use [`Error
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/error-cap/razor %}
+{% include code-snippet/chart/series/error-bar/errorbarcolor/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Error-cap.cs" %}
-{% include code-snippet/chart/series/other-types/error-cap/error-cap.cs %}
+{% highlight c# tabtitle="Errorbarcolor.cs" %}
+{% include code-snippet/chart/series/error-bar/errorbarcolor/errorbarcolor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Events
 
+### Series render
 
-## Customizing Error Bar Color
-
-To customize the error bar color for individual errors, use the [`ErrorBarColorMapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_ErrorBarColorMapping) property. You can also customize the vertical error, horizontal error, horizontal negative and positive error and vertical negative and positive error for an individual point using [`VerticalError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_VerticalError), [`HorizontalError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_HorizontalError), [`HorizontalNegativeError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_HorizontalNegativeError), [`HorizontalPositiveError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_HorizontalPositiveError), [`VerticalNegativeError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_VerticalNegativeError) and [`VerticalPositiveError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartErrorBarSettings.html#Syncfusion_EJ2_Charts_ChartErrorBarSettings_VerticalPositiveError) properties.
+The `seriesRender` event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/error-bar-color/tagHelper %}
+{% include code-snippet/chart/series/error-bar/series-render/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Error-bar-color.cs" %}
-{% include code-snippet/chart/series/other-types/error-bar-color/error-bar-color.cs %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/error-bar/series-render/series-render.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -204,15 +198,40 @@ To customize the error bar color for individual errors, use the [`ErrorBarColorM
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/other-types/error-bar-color/razor %}
+{% include code-snippet/chart/series/error-bar/series-render/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Error-bar-color.cs" %}
-{% include code-snippet/chart/series/other-types/error-bar-color/error-bar-color.cs %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/error-bar/series-render/series-render.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+### Point render
 
+The `pointRender` event allows you to customize each data point before it is rendered on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/error-bar/point-render/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/error-bar/point-render/point-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/error-bar/point-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/error-bar/point-render/point-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See Also
 

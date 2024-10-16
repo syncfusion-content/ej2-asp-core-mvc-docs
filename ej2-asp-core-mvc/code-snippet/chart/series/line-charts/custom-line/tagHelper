@@ -3,6 +3,6 @@
     </e-chart-primaryxaxis>
     <e-series-collection>
         <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line"
-            fill="red" width="4" dashArray="5,5"></e-series>
+                  opacity="0.5"></e-series>
     </e-series-collection>
 </ejs-chart>

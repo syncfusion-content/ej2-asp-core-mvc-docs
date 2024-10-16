@@ -1,0 +1,15 @@
+@Html.EJS().Chart("container").SeriesRender("changeColor").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea).
+        XName("x").
+        High("high").
+        Low("low").
+        DataSource(ViewBag.dataSource).
+        Add();
+   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Render()
+
+<script>
+    function changeColor(args) {
+        args.fill = '#ff6347';
+    }
+</script>

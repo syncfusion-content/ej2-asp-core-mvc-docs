@@ -1,0 +1,21 @@
+<ejs-chart id="container" pointRender="changeColor">
+    <e-chart-primaryxaxis valueType="Category">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" high="high" low="low"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea">
+            <e-series-marker visible="true" height="7" width="7" isFilled="true"></e-series-marker>
+        </e-series>        
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function changeColor(args) {
+        if (args.point.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>

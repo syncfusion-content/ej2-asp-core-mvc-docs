@@ -1,0 +1,10 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle)
+        .EmptyPointSettings(empty => empty.Mode("Average"))
+        .XName("x").Open("open").High("high").Low("low").Close("close")
+        .Name("Volume").DataSource(ViewBag.dataSource).Add();
+    }).PrimaryXAxis(px =>
+         px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+    ).Title("AAPL Historical").Render()
+ 

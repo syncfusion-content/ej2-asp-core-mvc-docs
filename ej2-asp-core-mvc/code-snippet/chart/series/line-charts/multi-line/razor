@@ -1,16 +1,14 @@
 @Html.EJS().Chart("container").Series(series =>
    {
-      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.MultiColoredLine).  
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.MultiColoredLine).
       XName("x").
       YName("y").
       DataSource(ViewBag.dataSource).
       PointColorMapping("color").
       Name("Gold").
-      Add();   
-   })
-   .PrimaryXAxis(px => 
+      Add();
+   }).PrimaryXAxis(px =>
       px.Interval(1)
          .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
          .IsIndexed(true)
-   )
-   .Title("Olympic Medal Counts - RIO").Render()
+   ).Title("Olympic Medal Counts - RIO").Render()

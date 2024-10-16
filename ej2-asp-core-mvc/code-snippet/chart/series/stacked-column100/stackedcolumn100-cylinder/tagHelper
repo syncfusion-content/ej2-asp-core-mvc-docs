@@ -1,0 +1,24 @@
+<ejs-chart id="container">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" interval="1"
+        title=Years></e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Sales in Billions" minimum="0" maximum="700" interval="100" labelFormat="{value}B">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="UK"
+            columnFacet="@Syncfusion.EJ2.Charts.ShapeType.Cylinder"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y1" name="Germany"
+            columnFacet="@Syncfusion.EJ2.Charts.ShapeType.Cylinder"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y2" name="France"
+            columnFacet="@Syncfusion.EJ2.Charts.ShapeType.Cylinder"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y3" name="Italy"
+            columnFacet="@Syncfusion.EJ2.Charts.ShapeType.Cylinder"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

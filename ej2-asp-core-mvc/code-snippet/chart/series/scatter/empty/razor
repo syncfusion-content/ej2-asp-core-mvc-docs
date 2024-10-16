@@ -1,0 +1,12 @@
+
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Scatter).
+        XName("x").
+        YName("y").
+        Name("Gold").
+        EmptyPointSettings(empty => empty.Mode(Syncfusion.EJ2.Charts.EmptyPointMode.Zero)).
+        Marker(marker => marker.Shape(Syncfusion.EJ2.Charts.ChartShape.Diamond).Height(7).Width(7)).
+        DataSource(ViewBag.dataSource).
+        Add();
+   }).Title("Olympic Medal Counts - RIO").Render()

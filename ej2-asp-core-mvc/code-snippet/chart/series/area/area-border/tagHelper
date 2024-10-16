@@ -1,0 +1,10 @@
+<ejs-chart id="container" width="60%">
+    <e-chart-primaryxaxis valueType="Category">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Area" fill="#69D2E7">
+            <e-series-border width="2" color="#962D18"></e-series-border>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

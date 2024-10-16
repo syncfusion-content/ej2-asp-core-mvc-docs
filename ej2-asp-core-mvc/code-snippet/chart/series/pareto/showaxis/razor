@@ -1,0 +1,22 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Pareto).
+      ParetoOptions(option => option.Fill("#F7523F").Width(2)
+         .Marker(marker => marker.Visible(true).Width(7).Height(7).IsFilled(true))
+         .ShowAxis(false)
+      ).
+      XName("x").
+      YName("y").
+      DataSource(ViewBag.dataSource).
+      Name("Gold").
+      Width(2).
+      Add();
+   }).PrimaryXAxis(px =>
+         px.Title("Defects")
+            .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+   ).PrimaryYAxis(py =>
+      py.Title("Frequency")
+         .Minimum(0)
+         .Maximum(150)
+         .Interval(30)
+   ).Render()

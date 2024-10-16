@@ -1,0 +1,23 @@
+@{
+    var index = new int[] { 4 };
+    var sumindex = new int[] { 8 };
+}
+
+@Html.EJS().Chart("container").Series(series =>
+    {
+       series.Width(2).
+       XName("xValue").
+       YName("yValue").
+       IntermediateSumIndexes(index).
+       SumIndexes(sumindex).
+       Name("USA").
+       EmptyPointSettings(empty => empty.Mode("Average")).
+       Type(Syncfusion.EJ2.Charts.ChartSeriesType.Waterfall).
+       DataSource(ViewBag.dataSource).
+       Add();
+    }).PrimaryXAxis(py =>
+        py.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+            .PlotOffset(20)
+    ).PrimaryYAxis(py =>
+        py.Title("Expenditure")
+    ).Title("Company Revenue and Profit").Render()

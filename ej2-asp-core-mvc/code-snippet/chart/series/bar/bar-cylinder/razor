@@ -1,0 +1,16 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Bar).  
+      XName("country").
+      YName("gold").
+      ColumnFacet(Syncfusion.EJ2.Charts.ShapeType.Cylinder).
+      DataSource(ViewBag.dataSource).
+      TooltipMappingName("tooltipMappingName").
+      Add();
+   }).PrimaryXAxis(px => 
+      px.Interval(1)
+         .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+   ).PrimaryYAxis(py => 
+      py.Title("Medal Count")
+         .Interval(10).Minimum(0).Maximum(80)
+       ).Title("Olympic Gold Medal Counts - RIO").Render()

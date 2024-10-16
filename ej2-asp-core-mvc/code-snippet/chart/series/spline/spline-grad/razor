@@ -1,0 +1,18 @@
+<svg style="width:1px; height:1px">
+    <defs>
+        <linearGradient id="gradient">
+            <stop offset="0%" style="stop-color:#FF0000;stop-opacity:5" />
+            <stop offset="70%" style="stop-color:#00FF00;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+
+@Html.EJS().Chart("container").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Spline).
+      XName("x").
+      YName("y").
+      DataSource(ViewBag.dataSource).
+      Fill("url(#gradient)").
+      Add();
+   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Title("Olympic Medals").Render()

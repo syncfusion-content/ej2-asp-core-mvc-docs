@@ -1,0 +1,11 @@
+
+<ejs-chart id="container">
+    <e-chart-primaryxaxis valueType="Category">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" high="high" low="low"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeStepArea">
+            <e-series-emptypointsettings mode="Syncfusion.EJ2.Charts.EmptyPointMode.Gap"></e-series-emptypointsettings>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
