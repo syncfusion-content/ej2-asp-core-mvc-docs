@@ -1,0 +1,53 @@
+<p class="event-message" id="message"></p>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowSelection(true).AllowRowDragAndDrop(true).Columns(col=> {
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("120").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("120").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+}).RowDragStartHelper("rowDragStartHelper").RowDragStart("rowDragStart").RowDrag("rowDrag").RowDrop("rowDrop").SelectionSettings(select=>select.Type( Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
+
+<script>
+    function rowDragStartHelper(args) {
+      document.getElementById('message').innerText = `rowDragStartHelper event triggered`;
+      if (args.data[0].OrderID === 10248) {
+        args.cancel = true;
+        document.getElementById('message').innerText = `Drag and drop cancelled for 10248 row`;
+      }
+    };
+    function rowDragStart(args) {
+      document.getElementById('message').innerText = `rowDragStart event triggered`;
+      args.cancel = true;
+    };
+    function rowDrag(args) {
+      document.getElementById('message').innerText = `rowDrag event triggered`;
+      args.rows.forEach((row) => {
+        row.classList.add('drag-limit');
+      });
+    };
+    function rowDrop(args) {
+      var grid = document.getElementById('Grid').ej2_instances[0];
+      document.getElementById('message').innerText = `rowDrop event triggered`;
+      var value = [];
+      for (var index = 0; index < args.rows.length; index++) {
+        value.push(args.fromIndex + index);
+      }
+      grid.reorderRows(value, args.dropIndex);
+    };
+</script>
+<style>
+    .event-message {
+      text-align: center;
+      color: red;
+      font-size: 16px;
+    }
+    .drag-limit .e-rowcell {
+      border: 1px solid red;
+    }
+</style>
+
+
+
+
+
+
+

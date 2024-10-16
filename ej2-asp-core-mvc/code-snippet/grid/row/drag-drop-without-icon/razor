@@ -1,0 +1,27 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowSelection(true).AllowRowDragAndDrop(true).Columns(col=> {
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("120").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("120").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
+}).RowDrop("rowDrop").SelectionSettings(select=>select.Type( Syncfusion.EJ2.Grids.SelectionType.Multiple)).RowDropSettings(new Syncfusion.EJ2.Grids.GridRowDropSettings() { TargetID = "Grid" }).Render()
+
+<script>
+  function rowDrop(args){
+    var grid = document.getElementById('Grid').ej2_instances[0];
+    args.cancel = true;
+    var value = [];
+    for (var index = 0; index < args.rows.length; index++) {
+        value.push(args.fromIndex + index);
+    }
+    grid.reorderRows(value, args.dropIndex);
+  }
+</script>
+
+
+
+
+
+
+

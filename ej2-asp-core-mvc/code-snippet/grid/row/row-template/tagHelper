@@ -1,9 +1,42 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="335" width="auto" rowTemplate="#rowtemplate">
+<ejs-grid id="Grid" dataSource="@ViewBag.EmployeeDataSource" height="335" width="auto" rowTemplate="#rowtemplate">
     <e-grid-columns>
-        <e-grid-column headerText="Employee Image" width="150" textAlign="Center"> </e-grid-column>
+        <e-grid-column headerText="Employee Image" width="150" textAlign="Center" field= 'OrderID'> </e-grid-column>
         <e-grid-column headerText="Employee Details" width="300" field="EmployeeID" textAlign="Left"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+
+<script id="rowtemplate" type="text/x-template">
+    <tr>
+        <td class="photo">
+            <img src="https://ej2.syncfusion.com/demos/src/grid/images/${EmployeeID}.png" alt="${EmployeeID}" />
+        </td>
+        <td class="details">
+            <table class="CardTable" cellpadding="3" cellspacing="2">
+                <colgroup>
+                    <col width="50%">
+                    <col width="50%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td class="CardHeader">First Name </td>
+                        <td>${FirstName} </td>
+                    </tr>
+                    <tr>
+                        <td class="CardHeader">Last Name</td>
+                        <td>${LastName} </td>
+                    </tr>
+                    <tr>
+                        <td class="CardHeader">Title
+                        </td>
+
+                        <td>${Title}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+     </tr>
+</script>
 
 <style type="text/css" class="cssStyles">
     .photo img {
@@ -49,53 +82,3 @@
         padding: 2px 2px 3px 4px;
     }
 </style>
-<script id="rowtemplate" type="text/x-template">
-    <tr>
-        <td class="photo">
-            <img src="/Content/images/Employees/${EmployeeID}.png" alt="${EmployeeID}" />
-        </td>
-        <td class="details">
-            <table class="CardTable" cellpadding="3" cellspacing="2">
-                <colgroup>
-                    <col width="50%">
-                    <col width="50%">
-                </colgroup>
-                <tbody>
-                    <tr>
-                        <td class="CardHeader">First Name </td>
-                        <td>${FirstName} </td>
-                    </tr>
-                    <tr>
-                        <td class="CardHeader">Last Name</td>
-                        <td>${LastName} </td>
-                    </tr>
-                    <tr>
-                        <td class="CardHeader">
-                            Title
-                        </td>
-
-                        <td>
-                            ${Title}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="CardHeader">
-                            Birth Date
-                        </td>
-                        <td>
-                            ${BirthDate.toLocaleDateString()}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="CardHeader">
-                            Hire Date
-                        </td>
-                        <td>
-                            ${HireDate.toLocaleDateString()}
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </td>
-    </tr>
-</script>
