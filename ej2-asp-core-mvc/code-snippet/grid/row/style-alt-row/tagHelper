@@ -2,8 +2,8 @@
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>       
-        <e-grid-column field="Freight" headerText="Freight"  width="120" format='C2'></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="140"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight"  width="120" textAlign="Right" format='C2'></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="140"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 

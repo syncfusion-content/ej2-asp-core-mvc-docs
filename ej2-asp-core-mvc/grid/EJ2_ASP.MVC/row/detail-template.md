@@ -8,53 +8,32 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Detail Template in ASP.Net MVC Grid Component
+# Detail template in ASP.NET MVC Grid component 
 
-The detail template provides additional information about a particular row by expanding or collapsing detail content. The [`DetailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property accepts either the template string or HTML element ID.
+The detail template in the Grid component allows you to display additional information about a specific row in the grid by expanding or collapsing detail content. This feature is useful when you need to show additional data or custom content that is specific to each row in the grid. You can use the [DetailTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property to define an HTML template for the detail row. This template can include any HTML element or ASP.NET MVC component that you want to display as detail content.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/row/detail-temp/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Detail-temp.cs" %}
-{% include code-snippet/grid/row/detail-temp/detail-temp.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Here's an example of using the `DetailTemplate` property in the grid component:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/row/detail-temp/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Detail-temp.cs" %}
+{% highlight c# tabtitle="Detail-template.cs" %}
 {% include code-snippet/grid/row/detail-temp/detail-temp.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
+![Detail template](../../images/row/detail-template.png)
 
 ## Rendering custom component
 
-To render the custom component inside the detail row, define the template in the [`DetailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) and render the component in the [`DetailDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event.
+The Grid component provides a powerful feature that allows you to render custom components inside the detail row. This feature is helpful when you need to add additional information or functionality for a specific row in the grid.
 
-For example, to render grid inside the detail row, place an HTML div element as the [`DetailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) and render the DIV element as grid component in the [`DetailDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event.
+To render a custom component inside the detail row, you need to define a template using the [DetailTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property and handle the [DetailDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event.This template can include any HTML element or ASP.NET MVC component that you want to display as the detail content.
 
-{% if page.publishingplatform == "aspnet-core" %}
+The `DetailDataBound` event is an event that is triggered after a detail row is bound to data. This event provides an object of type `DetailDataBoundEventArgs` as a parameter.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/row/custom-component/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Custom-component.cs" %}
-{% include code-snippet/grid/row/custom-component/custom-component.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+For example, to render grid inside the detail row, place an HTML div element as the `DetailTemplate` and render the DIV element as grid component in the `DetailDataBound` event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -64,26 +43,16 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% include code-snippet/grid/row/custom-component/custom-component.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
+![Custom component in detail template](../../images/row/custom-component.png)
 
 ## Expand by external button
 
-By default, detail rows render in collapsed state. You can expand a detail row by invoking the **expand** method using the external button.
+The Grid provides a feature that allows users to expand the detail row of a grid using an external button. By default, detail rows render in a collapsed state, but this feature enables users to view additional details associated with a particular row. 
 
-{% if page.publishingplatform == "aspnet-core" %}
+To achieve expanding the detail row of a grid using an external button, you need to invoke the `expand` method provided by the **DetailRowModule** object of the Syncfusion Grid library. This method will expand the detail row of a specific grid row.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/row/expand-external/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Expand-external.cs" %}
-{% include code-snippet/grid/row/expand-external/expand-external.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Here is an example of how to use the `expand` method to expand a detail row:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -93,15 +62,38 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 {% include code-snippet/grid/row/expand-external/expand-external.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Expand detail template](../../images/row/detail-template-expand.gif)
 
+## Customize detail template icon
 
+The detail template icon in the Syncfusion Grid is used to expand or collapse the detail content of a row. By default, the icon represents a right arrow for the collapsed state and a down arrow for the expanded state. If you want to customize this icon, you can achieve it by overriding the following CSS styles:
 
-N> You can expand all the rows by using **expandAll** method.
-<br/> If you want to expand all the rows at initial Grid rendering, then use **expandAll** method in [`DataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid.
+```css
 
-## Limitations for detail template
+.e-grid .e-icon-grightarrow::before {
+    content: "\e655";
+}
+.e-grid .e-icon-gdownarrow::before {
+    content: "\e304";
+}
+
+```
+
+Here is an example of how to customize the detail template icon:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/row/expand-icon/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Icon.cs" %}
+{% include code-snippet/grid/row/expand-icon/icon.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Custom icon in detail template](../../images/row/expand-icon.png)
+
+## Limitations
 
 Detail template is not supported with the following features:
 
@@ -115,27 +107,4 @@ Detail template is not supported with the following features:
 * Column spanning
 * Lazy load grouping
 * State persistence
-* Hierarchy Grid
-
-N> You can expand all the rows by using **expandAll** method.
-<br/> If you want to expand all the rows at initial Grid rendering, then use **expandAll** method in [`DataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid.
-
-
-## Limitations for detail template
-
-Detail template is not supported with the following features:
-
-* Frozen rows and columns
-* Immutable mode
-* Infinite scrolling
-* Virtual scrolling
-* Pdf export
-* Excel export
-* Print
-* Row template
-* Row spanning
-* Column spanning
-* Lazy load grouping
-* State persistence
-* Hierarchy Grid
 

@@ -1,0 +1,41 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.TaskDataSource).AllowSelection(true).AllowRowDragAndDrop(true).RowDrop("rowDrop")
+.EditSettings(edit => { edit.AllowDeleting(true) })
+.Columns(col =>
+   {
+    col.Field("TaskID").HeaderText("Task ID").Width(90).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("TaskName").HeaderText("Task Name").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Width(180).Add();
+    col.Field("Description").HeaderText("Description").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Width(180).Add();
+    col.Field("Category").HeaderText("Category ").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Width(180).Add();
+    col.Field("StartDate").HeaderText("Start Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width(90).Add();
+    col.Field("Duration").HeaderText("Duration").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Width(80).Add();
+    })
+.SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).RowDropSettings(new Syncfusion.EJ2.Grids.GridRowDropSettings() { TargetID = "TreeGrid" }).Render()
+
+@(Html.EJS().TreeGrid("TreeGrid").ChildMapping("Subtasks").AllowRowDragAndDrop(true)
+.EditSettings(edit => edit.AllowAdding(true).AllowEditing(true))
+.Columns(col =>
+    {
+        col.Field("TaskID").HeaderText("Task ID").Width(110).TextAlign(TextAlign.Right).Add();
+        col.Field("TaskName").HeaderText("Task Name").TextAlign(TextAlign.Left).Width(180).Add();
+        col.Field("StartDate").HeaderText("Start Date").TextAlign(TextAlign.Right).Format("yMd").Width(90).Add();
+        col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(80).Add();
+    })
+.RowDropSettings(new Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings() { TargetID = "TreeGrid" }).SelectionSettings(selection => selection.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render())
+
+<script>
+    function rowDrop(args){
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        var treeGrid = document.getElementById('TreeGrid').ej2_instances[0];
+        if (args.target.closest('.e-treegrid')) {
+          args.cancel = true;
+          var rowIndex =
+            args.target.closest('.e-row') !== null
+              ? args.target.closest('.e-row').rowIndex
+              : 0;
+          for (var i = 0; i < args.data.length; i++) {
+            treeGrid.addRecord(args.data[i], rowIndex);
+            grid.deleteRecord('TaskID', args.data[i]);
+          }
+        }
+    }
+</script>
