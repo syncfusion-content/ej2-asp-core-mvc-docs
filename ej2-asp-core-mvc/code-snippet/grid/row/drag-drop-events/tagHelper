@@ -1,0 +1,50 @@
+<p class="event-message" id="message"></p>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" rowDragStartHelper="rowDragStartHelper" rowDragStart="rowDragStart" rowDrag="rowDrag" rowDrop="rowDrop" allowRowDragAndDrop="true" allowSelection="true">
+  <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
+  <e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer Name" width="130"></e-grid-column>
+    <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="120"></e-grid-column>
+    <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="120"></e-grid-column>
+  </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function rowDragStartHelper(args){
+      document.getElementById('message').innerText = `rowDragStartHelper event triggered`;
+      if (args.data[0].OrderID === 10248) {
+        args.cancel = true;
+        document.getElementById('message').innerText = `Drag and drop cancelled for 10248 row`;
+      }
+    };
+    function rowDragStart(args){
+      document.getElementById('message').innerText = `rowDragStart event triggered`;
+      args.cancel = true;
+    };
+    function rowDrag(args){
+      document.getElementById('message').innerText = `rowDrag event triggered`;
+      args.rows.forEach((row) => {
+      row.classList.add('drag-limit');
+      });
+    };
+    function rowDrop(args) {
+      var grid = document.getElementById('Grid').ej2_instances[0];
+      document.getElementById('message').innerText = `rowDrop event triggered`;
+      var value = [];
+      for (var index = 0; index < args.rows.length; index++) {
+      value.push(args.fromIndex + index);
+      }
+      grid.reorderRows(value, args.dropIndex);
+    };
+</script>
+<style>
+    .event-message {
+      text-align: center;
+      color: red;
+      font-size: 16px;
+  }
+
+  .drag-limit .e-rowcell {
+      border: 1px solid red;
+  }
+</style>

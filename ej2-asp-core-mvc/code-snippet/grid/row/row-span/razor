@@ -1,28 +1,28 @@
-@Html.EJS().Grid("CellMerging").DataSource((IEnumerable<object>)ViewBag.Datasource).QueryCellInfo("QueryCellEvent").GridLines(Syncfusion.EJ2.Grids.GridLine.Both).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.Datasource).QueryCellInfo("queryCellEvent").GridLines(Syncfusion.EJ2.Grids.GridLine.Both).Columns(col =>
 {
     col.Field("EmployeeID").HeaderText("Employee ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
     col.Field("EmployeeName").HeaderText("Employee Name").Width("200").Add();
-    col.Field("Time900").HeaderText("9.00 AM").Width("120").Add();
-    col.Field("Time930").HeaderText("9.30 AM").Width("120").Add();
-    col.Field("Time1000").HeaderText("10.00 AM").Width("120").Add();
-    col.Field("Time1030").HeaderText("10.30 AM").Width("120").Add();
-    col.Field("Time1100").HeaderText("11.00 AM").Width("120").Add();
-    col.Field("Time1130").HeaderText("11.30 AM").Width("120").Add();
-    col.Field("Time1200").HeaderText("12.00 PM").Width("120").Add();
-    col.Field("Time1230").HeaderText("12.30 PM").Width("120").Add();
-    col.Field("Time100").HeaderText("1.00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
-    col.Field("Time130").HeaderText("1.30 PM").Width("120").Add();
-    col.Field("Time200").HeaderText("2.00 PM").Width("120").Add();
-    col.Field("Time230").HeaderText("2.30 PM").Width("120").Add();
-    col.Field("Time300").HeaderText("3.00 PM").Width("120").Add();
-    col.Field("Time330").HeaderText("3.30 PM").Width("120").Add();
-    col.Field("Time400").HeaderText("4.00 PM").Width("120").Add();
-    col.Field("Time430").HeaderText("4.30 PM").Width("120").Add();
-    col.Field("Time500").HeaderText("5.00 PM").Width("120").Add();
-}).Render()
+    col.Field("9:00").HeaderText("9:00 AM").Width("120").Add();
+    col.Field("9:30").HeaderText("9:30 AM").Width("120").Add();
+    col.Field("10:00").HeaderText("10:00 AM").Width("120").Add();
+    col.Field("10:30").HeaderText("10:30 AM").Width("120").Add();
+    col.Field("11:00").HeaderText("11:00 AM").Width("120").Add();
+    col.Field("11:30").HeaderText("11:30 AM").Width("120").Add();
+    col.Field("12:00").HeaderText("12:00 PM").Width("120").Add();
+    col.Field("12:30").HeaderText("12:30 PM").Width("120").Add();
+    col.Field("1:00").HeaderText("1:00 PM").Width("120").Add();
+    col.Field("1:30").HeaderText("1:30 PM").Width("120").Add();
+    col.Field("2:00").HeaderText("2:00 PM").Width("120").Add();
+    col.Field("2:30").HeaderText("2:30 PM").Width("120").Add();
+    col.Field("3:00").HeaderText("3:00 PM").Width("120").Add();
+    col.Field("3:30").HeaderText("3:30 PM").Width("120").Add();
+    col.Field("4:00").HeaderText("4:00 PM").Width("120").Add();
+    col.Field("4:30").HeaderText("4:30 PM").Width("120").Add();
+    col.Field("5:00").HeaderText("5:00 PM").Width("120").Add();
+}).Width("auto").AllowTextWrap(true).Render()
 
 <script>
-function QueryCellEvent(args)
+function queryCellEvent(args)
 {
     var data = args.data;
     switch (data.EmployeeID) {

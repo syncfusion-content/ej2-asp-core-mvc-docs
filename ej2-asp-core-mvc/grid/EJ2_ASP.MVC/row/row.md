@@ -20,7 +20,7 @@ Customizing the styles of rows in a Syncfusion Grid allows you to modify the app
 
 You can customize the appearance of the rows by using the [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event. This event triggers for every row when it is bound to the data source. In the event handler, you can get the `RowDataBoundEventArgs` object, which contains details of the row. You can use this object to modify the row's appearance, add custom elements, or perform any other customization.
 
-Here's an example of how you can use the `rowDataBound` event to customize the styles of rows based on the value of the **Freight** column. This example involves checking the value of the Freight column for each row and adding a CSS class to the row based on the value. The CSS classes **below-30**, **below-80**, and **above-80** can then be defined in your stylesheet to apply the desired styles to the rows.
+Here's an example of how you can use the `RowDataBound` event to customize the styles of rows based on the value of the **Freight** column. This example involves checking the value of the Freight column for each row and adding a CSS class to the row based on the value. The CSS classes **below-30**, **below-80**, and **above-80** can then be defined in your stylesheet to apply the desired styles to the rows.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -130,13 +130,13 @@ In the below example, we will demonstrate how to dynamically change the height o
 
 ![Row height](../../images/row/row-height.gif)
 
->*	The `RowHeight` property can only be used to set the height of the entire grid row. It cannot be used to set the height of individual cells within a row.
->*  The `RowHeight` property applies the height to all rows in the grid, including the header and footer rows.
->*	You can also set the height for a specific row using the `RowHeight` property of the corresponding row object in the `RowDataBound` event.
+> *	The [RowHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property can only be used to set the height of the entire grid row. It cannot be used to set the height of individual cells within a row.
+> *  The `RowHeight` property applies the height to all rows in the grid, including the header and footer rows.
+> *	You can also set the height for a specific row using the `RowHeight` property of the corresponding row object in the [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event.
 
 ### Customize row height for particular row 
 
-Customizing the row height for a particular row can be useful when you want to display more content in a particular row, reduce the height of a row to fit its content, or make a specific row stand out from the other rows in the grid. This can be achieved by using the [RowHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight)property of the Grid component along with the [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event.
+Customizing the row height for a particular row can be useful when you want to display more content in a particular row, reduce the height of a row to fit its content, or make a specific row stand out from the other rows in the grid. This can be achieved by using the [RowHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property of the Grid component along with the [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event.
 
 The `RowHeight` property of the Grid component allows you to set the height of all rows in the grid to a specific value. However, if you want to customize the row height for a specific row based on the row data, you can use the `RowDataBound` event. This event is triggered every time a request is made to access row information, element, or data, and before the row element is appended to the Grid element.
 
@@ -152,6 +152,10 @@ In the below example, the row height for the row with **OrderID** as '10249' is 
 {% endtabs %}
 
 ![Single Row height](../../images/row/single-row-height.png)
+
+> * In virtual scrolling mode, it is not applicable to set different row heights.
+> * You can customize the row height of multiple rows by checking the relevant criteria in the `RowDataBound` event and setting the `RowHeight` property accordingly.
+> * In the `RowDataBound` event handler, you can access the current row using the `args.row` property and set the `RowHeight` property for that row using the setAttribute method.
 
 ## Row hover
 
@@ -193,6 +197,8 @@ Here's an example that demonstrates how to use the `RowDataBound` event and `get
 {% endtabs %}
 
 ![Row information](../../images/row/row-information.gif)
+
+> The `getRowInfo` method can only be used in the `RowDataBound` event. Attempting to use it elsewhere will result in an error.
 
 ## Row pinning (Frozen)
 
@@ -314,36 +320,36 @@ Grid provides several methods to retrieve row data and elements. This feature is
 1. `getRowByIndex`: This method returns the HTML element of a row at the specified index. It can be used to retrieve the element of a specific row in the grid.
 
     ```ts
-    const rowElement = this.grid.getRowByIndex(rowIndex);
+    const rowElement = grid.getRowByIndex(rowIndex);
     ```
 
-2. `getRowIndexByPrimaryKey`:The method allows you to retrieve the row index based on a specific primary key value or row data.
+2. `getRowIndexByPrimaryKey`: The method allows you to retrieve the row index based on a specific primary key value or row data.
 
     ```ts
-    const rowIndex = this.grid.getRowIndexByPrimaryKey(primaryKey);
+    const rowIndex = grid.getRowIndexByPrimaryKey(primaryKey);
     ```
 
-3. `getRowInfo`:This method allows you to retrieve row information based on a cell target element.
+3. `getRowInfo`: This method allows you to retrieve row information based on a cell target element.
 
     ```ts
-    const rowInformation = this.grid.getRowInfo(targetElement);
+    const rowInformation = grid.getRowInfo(targetElement);
     ```
 
 4. `getRows`: This method returns an array of all the row elements in the Grid. If you need to retrieve row data and elements, you can combine the `getRows` method with the `getRowInfo` method.
 
     ```ts
-     const rowElements = this.grid.getRows();
+     const rowElements = grid.getRows();
     ```
 
 5. `getSelectedRowIndexes`: This method allows you to retrieve the collection of indexes of the selected rows. However, it does not directly provide the row elements and associated data. To access the row elements and data of the selected rows, you can combine the `getSelectedRowIndexes` method with `getRowByIndex` and `getRowInfo` method.
 
     ```ts
-    const selectedIndexes = this.grid.getSelectedRowIndexes();
+    const selectedIndexes = grid.getSelectedRowIndexes();
     ```
 6. `getSelectedRows`: This method returns an array of HTML elements representing the selected rows in the grid.By iterating over this array, you can access each row element and data using the `getRowInfo` method. This way, you can access both the row elements and their associated data for the selected rows.
 
     ```ts
-    const selectedRowElements = this.grid.getSelectedRows();
+    const selectedRowElements = grid.getSelectedRows();
     ```
 
 ## See Also

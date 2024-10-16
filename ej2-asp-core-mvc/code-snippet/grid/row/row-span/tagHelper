@@ -1,28 +1,28 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" queryCellInfo="QueryCellEvent" gridLines="Both" allowPaging="true">
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" queryCellInfo="queryCellEvent" gridLines="Both" allowTextWrap="true" width= 'auto',>
     <e-grid-columns>
         <e-grid-column field="EmployeeID" headerText="Employee ID" isPrimaryKey="true"  textAlign="Right" width="150"></e-grid-column>
         <e-grid-column field="EmployeeName" headerText="Employee Name" width="200"></e-grid-column>
-        <e-grid-column field="Time900" headerText="9.00 AM" width="120"></e-grid-column>
-        <e-grid-column field="Time930" headerText="9.30 AM" width="120"></e-grid-column>
-        <e-grid-column field="Time1000" headerText="10.00 AM" width="120"></e-grid-column>
-        <e-grid-column field="Time1030" headerText="10.30 AM" width="120"></e-grid-column>
-        <e-grid-column field="Time1100" headerText="11.00 AM" width="120"></e-grid-column>
-        <e-grid-column field="Time1130" headerText="11.30 AM" width="120"></e-grid-column>
-        <e-grid-column field="Time1200" headerText="12.00 AM" width="120"></e-grid-column>
-        <e-grid-column field="Time1230" headerText="12.30 AM" width="120"></e-grid-column>
-        <e-grid-column field="Time100" headerText="1.00 PM" width="120"></e-grid-column>
-        <e-grid-column field="Time130" headerText="1.30 PM" width="120"></e-grid-column>
-        <e-grid-column field="Time200" headerText="2.00 PM" width="120"></e-grid-column>
-        <e-grid-column field="Time230" headerText="2.30 PM" width="120"></e-grid-column>
-        <e-grid-column field="Time300" headerText="3.00 PM" width="120"></e-grid-column>
-        <e-grid-column field="Time330" headerText="3.30 PM" width="120"></e-grid-column>
-        <e-grid-column field="Time400" headerText="4.00 PM" width="120"></e-grid-column>
-        <e-grid-column field="Time430" headerText="4.30 PM" width="120"></e-grid-column>
-        <e-grid-column field="Time500" headerText="5.00 PM" width="120"></e-grid-column>
+        <e-grid-column field="9:00" headerText="9:00 AM" width="120"></e-grid-column>
+        <e-grid-column field="9:30" headerText="9:30 AM" width="120"></e-grid-column>
+        <e-grid-column field="10:00" headerText="10:00 AM" width="120"></e-grid-column>
+        <e-grid-column field="10:30" headerText="10:30 AM" width="120"></e-grid-column>
+        <e-grid-column field="11:00" headerText="11:00 AM" width="120"></e-grid-column>
+        <e-grid-column field="11:30" headerText="11:30 AM" width="120"></e-grid-column>
+        <e-grid-column field="12:00" headerText="12:00 AM" width="120"></e-grid-column>
+        <e-grid-column field="12:30" headerText="12:30 AM" width="120"></e-grid-column>
+        <e-grid-column field="1:00" headerText="1:00 PM" width="120"></e-grid-column>
+        <e-grid-column field="1:30" headerText="1:30 PM" width="120"></e-grid-column>
+        <e-grid-column field="2:00" headerText="2:00 PM" width="120"></e-grid-column>
+        <e-grid-column field="2:30" headerText="2:30 PM" width="120"></e-grid-column>
+        <e-grid-column field="3:00" headerText="3:00 PM" width="120"></e-grid-column>
+        <e-grid-column field="3:30" headerText="3:30 PM" width="120"></e-grid-column>
+        <e-grid-column field="4:00" headerText="4:00 PM" width="120"></e-grid-column>
+        <e-grid-column field="4:30" headerText="4:30 PM" width="120"></e-grid-column>
+        <e-grid-column field="5:00" headerText="5:00 PM" width="120"></e-grid-column>
     </e-grid-columns>          
 </ejs-grid>
 <script>
- function QueryCellEvent(args)
+ function queryCellEvent(args)
         {
             var data = args.data;
             switch (data.EmployeeID) {
