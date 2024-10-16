@@ -71,7 +71,7 @@ You can bind data to the chart using the `DataSource` property within the series
 
 ## Pareto customization
 
-## Fill
+### Fill
 
 Use the `Fill` property to apply a color to the pareto line. By default, a color based on the theme is used.
 
