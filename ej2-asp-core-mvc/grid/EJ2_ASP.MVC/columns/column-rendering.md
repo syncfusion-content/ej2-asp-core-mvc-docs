@@ -33,7 +33,7 @@ Here's an example code snippet that demonstrates how to define columns manually 
 {% endhighlight %}
 {% endtabs %}
 
-![Define columns](../../images/column-rendering/column-render.png)
+![Define columns](../images/column-rendering/column-render.png)
 
 ## Auto generated columns
 
@@ -120,7 +120,7 @@ In the provided code, the **currencyFormatter** function takes the Freight value
 {% endhighlight %}
 {% endtabs %}
 
-![Using valueAccessor property](../../images/column-rendering/column-render-valueaccessor.png)
+![Using valueAccessor property](../images/column-rendering/column-render-valueaccessor.png)
 
 > The `ValueAccessor` function can have performance implications if it is used to access a large number of data records or to perform complex data manipulations. To avoid performance issues, you can enable the virtualization feature while using the `ValueAccessor` property. This ensures that only the visible rows are rendered, resulting in faster rendering times.
 
@@ -141,7 +141,7 @@ This will display the concatenated value of **FirstName** and **LastName** in th
 {% endhighlight %}
 {% endtabs %}
 
-![Display array type columns](../../images/column-rendering/column-render-array.png)
+![Display array type columns](../images/column-rendering/column-render-array.png)
 
 ### Expression column
 
@@ -158,7 +158,7 @@ In this example, we have a grid with columns **Food Name**, **Protein**, **Fat**
 {% endhighlight %}
 {% endtabs %}
 
-![Expression column](../../images/column-rendering/column-render-expression%20.png)
+![Expression column](../images/column-rendering/column-render-expression%20.png)
 
 ### Display serial number
 
@@ -177,7 +177,7 @@ Here is an example code snippet that demonstrates how to display serial numbers 
 {% endhighlight %}
 {% endtabs %}
 
-![Display serial number](../../images/column-rendering/column-render-serial.png)
+![Display serial number](../images/column-rendering/column-render-serial.png)
 
 ## Complex data binding
 
@@ -198,7 +198,7 @@ In the below example, we have bound the nested **Employee** object's **FirstName
 {% endhighlight %}
 {% endtabs %}
 
-![Using local data](../../images/column-rendering/local-data.png)
+![Using local data](../images/column-rendering/local-data.png)
 
 ### Using remote data
 
@@ -215,4 +215,4 @@ In the below example, we have used the `expand` query to load the nested Employe
 {% endhighlight %}
 {% endtabs %}
 
-![Using remote data](../../images/column-rendering/column-render-remote.png)
+![Using remote data](../images/column-rendering/column-render-remote.png)

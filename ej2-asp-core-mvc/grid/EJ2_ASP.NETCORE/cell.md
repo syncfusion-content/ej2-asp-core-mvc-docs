@@ -29,7 +29,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Display HTML content](../images/cell/display-html-content.gif)
+![Display HTML content](images/cell/display-html-content.gif)
 
 > * The `disableHtmlEncode` property disables HTML encoding for the corresponding column in the grid. 
 > * If the property is set to **true**, any HTML tags in the column's data will be displayed. 
@@ -72,7 +72,7 @@ The following example demonstrates how to set the `allowTextWrap` property to **
 {% endhighlight %}
 {% endtabs %}
 
-![Auto Wrap the content ](../images/cell/auto-wrap.png)
+![Auto Wrap the content ](images/cell/auto-wrap.png)
 
 > * If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
 > * If a column's header text contains no white space, the text may not be wrapped.
@@ -97,7 +97,7 @@ The following example demonstrates how to add a `queryCellInfo` event handler to
 {% endhighlight %}
 {% endtabs %}
 
-![Customize cell using event](../images/cell/customize-cell-using-event.png)
+![Customize cell using event](images/cell/customize-cell-using-event.png)
 
 > * The [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event is triggered for every cell of the grid, so it may impact the performance of the grid whether used to modify a large number of cells.
 
@@ -123,7 +123,7 @@ The following example demonstrates how to customize the appearance of a specific
 {% endhighlight %}
 {% endtabs %}
 
-![Customize cell using css](../images/cell/customize-cell-using-css.png)
+![Customize cell using css](images/cell/customize-cell-using-css.png)
 
 ### Using property
 
@@ -153,7 +153,7 @@ The following example demonstrates how to customize the appearance of the **Orde
 {% endhighlight %}
 {% endtabs %}
 
-![Customize cell using property](../images/cell/customize-cell-using-property.png)
+![Customize cell using property](images/cell/customize-cell-using-property.png)
 
 > Custom attributes can be used to customize any cell in the grid, including header and footer cells.
 
@@ -176,7 +176,7 @@ The following example demonstrates how to use getColumnHeaderByIndex and getCell
 {% endhighlight %}
 {% endtabs %}
 
-![Customize cell using property](../images/cell/customize-cell-using-method.png)
+![Customize cell using property](images/cell/customize-cell-using-method.png)
 
 > Make sure to pass the correct row and column indices to `getCellFromIndex` method, or else the appearance of the wrong cell might get customized.
 
@@ -201,7 +201,7 @@ The following example demonstrates, how to set the `clipMode` property to **Clip
 {% endhighlight %}
 {% endtabs %}
 
-![Clip Mode](../images/cell/clip-mode.gif)
+![Clip Mode](images/cell/clip-mode.gif)
 
 > * By default, `clipMode` value is **Ellipsis**.
 > * If you set the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) property of a column, the clip mode feature will be automatically applied to that column if the content exceeds the specified width.
@@ -240,7 +240,7 @@ Step 2: The following code demonstrates how to render Bootstrap tooltip for the 
 
 The following screenshot represents the Bootstrap tooltip for the **CustomerID** field,
 
-![ Render bootstrap tooltip in grid](../images/cell/render-tooltip.png)
+![ Render bootstrap tooltip in grid](images/cell/render-tooltip.png)
 
 > * The Bootstrap CDN link must be added to the HTML file.
 
@@ -273,7 +273,7 @@ The following example demonstrates how to customize the tooltip content for the 
 {% endhighlight %}
 {% endtabs %}
 
-![Display custom tooltip](../images/cell/custom-tooltip.png)
+![Display custom tooltip](images/cell/custom-tooltip.png)
 
 ## Grid lines
 
@@ -298,4 +298,4 @@ The following example demonstrates how to set the `gridLines` property based on 
 {% endhighlight %}
 {% endtabs %}
 
-![Grid Lines](../images/cell/grid-lines.gif)
+![Grid Lines](images/cell/grid-lines.gif)

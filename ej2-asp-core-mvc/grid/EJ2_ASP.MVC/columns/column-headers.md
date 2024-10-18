@@ -29,7 +29,7 @@ To enable the `HeaderText` property, you simply need to define it in the **e-gri
 {% endhighlight %}
 {% endtabs %}
 
-![Header text](../../images/columns/Column-headertext.png)
+![Header text](../images/columns/Column-headertext.png)
 
 > * If both the `Field` and `HeaderText` are not defined in the column, the column renders with **empty** header text.
 > * The `HeaderText` property is optional, and if it is not defined, then the corresponding column's field value is set as header text for that column.  
@@ -52,7 +52,7 @@ The following example demonstrate, the custom element is rendered for both **Cus
 {% endhighlight %}
 {% endtabs %}
 
-![Header template](../../images/columns/Column-headertext-headerTemplate.png)
+![Header template](../images/columns/Column-headertext-headerTemplate.png)
 
 >* The `HeaderTemplate` property is only applicable to Grid columns that have a header element.
 >* You can use any HTML or ASP.NET MVC component in the header template to add additional functionality to the header element.
@@ -74,7 +74,7 @@ Here's an example of how to use stacked headers with a custom `HeaderTemplate` i
 {% endhighlight %}
 {% endtabs %}
 
-![Stacked header](../../images/columns/Column-headertext-stacked.png)
+![Stacked header](../images/columns/Column-headertext-stacked.png)
 
 ## Align the text of header text
 
@@ -96,7 +96,7 @@ The following example demonstrates how to dynamically change the alignment of th
 {% endhighlight %}
 {% endtabs %}
 
-![Align the text of header text](../../images/columns/Column-headertext-change-alignment.gif)
+![Align the text of header text](../images/columns/Column-headertext-change-alignment.gif)
 
 >* The `HeaderTextAlign` property only changes the alignment of the text in the column header, and not the content of the column. If you want to align both the column header and content, you can use the [TextAlign](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.TextAlign.html) property.
 >* You can also use the `HeaderTextAlign` property with the stacked header feature in Syncfusion Grid. The property will align the header text in the sub-headers as well.
@@ -128,7 +128,7 @@ The following example demonstrates how to dynamically change the auto-wrap of th
 {% endhighlight %}
 {% endtabs %}
 
-![Autowrap the header text](../../images/columns/Column-headertext-wrap-mode.png)
+![Autowrap the header text](../images/columns/Column-headertext-wrap-mode.png)
 
 ## Change the height of header
 
@@ -159,7 +159,7 @@ The following example demonstrates how to dynamically change the height of the h
 {% endhighlight %}
 {% endtabs %}
 
-![Change the height of header](../../images/columns/Column-headertext-change-height.gif)
+![Change the height of header](../images/columns/Column-headertext-change-height.gif)
 
 >* You can also use the `GetHeaderTable` method to get the table element of the header, and then adjust the height.
 >* You cannot change the height of row below the default height of 42px using the **e-columnheader** class.
@@ -211,7 +211,7 @@ Here is an example of how to change the header text of a column using the `getCo
 {% endhighlight %}
 {% endtabs %}
 
-![Change header text dynamically](../../images/columns/Column-headertext-change.png)
+![Change header text dynamically](../images/columns/Column-headertext-change.png)
 
 
 **Changing the header text of all columns**
@@ -227,7 +227,7 @@ If you want to change the header text of all columns in the grid, you can loop t
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the header text of all columns](../../images/columns/Column-headertext-change-all.gif)
+![Changing the header text of all columns](../images/columns/Column-headertext-change-all.gif)
 
 ## Change the orientation of header text
 
@@ -282,7 +282,7 @@ The following example demonstrates how to change the orientation of the **Freigh
 {% endhighlight %}
 {% endtabs %}
 
-![Change the orientation of header text](../../images/columns/Column-headertext-orientation.png)
+![Change the orientation of header text](../images/columns/Column-headertext-orientation.png)
 
 ## Custom tooltip for header
 
@@ -301,7 +301,7 @@ Here's an example of how to use the `BeforeRender` event to add a custom tooltip
 {% endhighlight %}
 {% endtabs %}
 
-![Custom tooltip for header](../../images/columns/Column-headertext-tooltip.png)
+![Custom tooltip for header](../images/columns/Column-headertext-tooltip.png)
 
 > * The [HeaderCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderCellInfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
 
@@ -330,7 +330,7 @@ Here's an example that demonstrates how to customize the appearance of a column 
 {% endhighlight %}
 {% endtabs %}
 
-![Display HTML content](../../images/columns/Column-headertext-using-css.png)
+![Display HTML content](../images/columns/Column-headertext-using-css.png)
 
 ### Using property 
 
@@ -365,7 +365,7 @@ The following example demonstrates how to customize the appearance of the **Orde
 {% endhighlight %}
 {% endtabs %}
 
-![Using property](../../images/columns/Column-headertext-using-property.png)
+![Using property](../images/columns/Column-headertext-using-property.png)
 
 ### Using method 
 
@@ -391,7 +391,7 @@ Here's an example of how to use these methods to change the style of a specific 
 {% endhighlight %}
 {% endtabs %}
 
-![Using method](../../images/columns/Column-headertext-using-method.png)
+![Using method](../images/columns/Column-headertext-using-method.png)
 
 >* The UID is automatically generated by the Grid component and may change whenever the grid is refreshed or updated.
 
@@ -410,7 +410,7 @@ The following example demonstrates how to add a `HeaderCellInfo` event handler t
 {% endhighlight %}
 {% endtabs %}
 
-![Using event](../../images/columns/Column-headertext-using-event.png)
+![Using event](../images/columns/Column-headertext-using-event.png)
 
 ## How to refresh header 
 
@@ -429,7 +429,7 @@ The following example demonstrates how to use the `refreshHeader` method to upda
 {% endhighlight %}
 {% endtabs %}
 
-![How to refresh header](../../images/columns/Column-headertext-refresh-header.png)
+![How to refresh header](../images/columns/Column-headertext-refresh-header.png)
 
 >* The `refreshHeader` method updates only the grid header and not the entire grid.
 >* If you want to refresh the entire grid, you can use the `refresh` method instead.

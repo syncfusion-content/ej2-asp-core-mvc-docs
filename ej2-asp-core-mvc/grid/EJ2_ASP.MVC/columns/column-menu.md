@@ -34,7 +34,7 @@ The default column menu items are displayed in following table.
 {% endhighlight %}
 {% endtabs %}
 
-![Column menu](../../images/column-menu/Column-menu.png)
+![Column menu](../images/column-menu/Column-menu.png)
 
 > You can disable column menu for a particular column by defining the `Columns.ShowColumnMenu` as **false**.
 
@@ -55,7 +55,7 @@ Consider the following example, which demonstrates how to add a custom column me
 {% endhighlight %}
 {% endtabs %}
 
-![custom menu](../../images/column-menu/Column-menu-custom.gif)
+![custom menu](../images/column-menu/Column-menu-custom.gif)
 
 ## Customize menu items for particular columns
 
@@ -72,7 +72,7 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% endhighlight %}
 {% endtabs %}
 
-![Customize menu items for particular columns](../../images/column-menu/Column-menu-particular.png)
+![Customize menu items for particular columns](../images/column-menu/Column-menu-particular.png)
 
 ## Render nested column menu
 
@@ -91,7 +91,7 @@ Here is an example of how to configure the `ColumnMenuItems` property to include
 {% endhighlight %}
 {% endtabs %}
 
-![Render nested column menu](../../images/column-menu/Column-menu-stacked.png)
+![Render nested column menu](../images/column-menu/Column-menu-stacked.png)
 
 ## Customize the icon of column menu
 
@@ -119,7 +119,7 @@ Here is an example that demonstrates how to customize the column menu icon in th
 {% endhighlight %}
 {% endtabs %}
 
-![Customize the icon of column menu](../../images/column-menu/column-menu-icon.png)
+![Customize the icon of column menu](../images/column-menu/column-menu-icon.png)
 
 ## Column menu events
 
@@ -138,4 +138,4 @@ The column menu in Syncfusion ASP.NET MVC Grid provides a set of events that all
 {% endhighlight %}
 {% endtabs %}
 
-![Column menu events](../../images/column-menu/column-menu-events.gif)
+![Column menu events](../images/column-menu/column-menu-events.gif)

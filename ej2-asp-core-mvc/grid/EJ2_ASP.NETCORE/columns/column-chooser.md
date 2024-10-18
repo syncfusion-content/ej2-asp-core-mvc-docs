@@ -21,7 +21,7 @@ The column chooser feature in the Syncfusion ASP.NET Core Grid component allows 
 {% endhighlight %}
 {% endtabs %}
 
-![Column chooser](../../images/column-chooser/Colum-chooser.png)
+![Column chooser](../images/column-chooser/Colum-chooser.png)
 
 > The column chooser dialog displays the header text of each column by default. If the header text is not defined for a column, the corresponding column field name is displayed instead.
 
@@ -40,7 +40,7 @@ In this example, the `columns.showInColumnChooser` property is set to **false** 
 {% endhighlight %}
 {% endtabs %}
 
-![Hide column in column chooser dialog](../../images/column-chooser/Colum-chooser-hide.png)
+![Hide column in column chooser dialog](../images/column-chooser/Colum-chooser-hide.png)
 
 >The `columns.showInColumnChooser` property is applied to each <e-grid-column> element individually. By setting it to **false**, you can hide specific columns from the column chooser dialog.
 
@@ -59,7 +59,7 @@ Here's an example of how to open the column chooser in the Grid using an externa
 {% endhighlight %}
 {% endtabs %}
 
-![Open column chooser by externally](../../images/column-chooser/Colum-chooser-external.png)
+![Open column chooser by externally](../images/column-chooser/Colum-chooser-external.png)
 
 ## Customize column chooser dialog size
 	
@@ -86,7 +86,7 @@ To customize the column chooser dialog size, you can use the following CSS style
 {% endhighlight %}
 {% endtabs %}
 
-![Customize column chooser dialog size](../../images/column-chooser/Colum-chooser-size.png)
+![Customize column chooser dialog size](../images/column-chooser/Colum-chooser-size.png)
 
 ## Change default search operator of the column chooser 
 
@@ -105,7 +105,7 @@ Here's an example of how to change the default search operator of the column cho
 {% endhighlight %}
 {% endtabs %}
 
-![Change default search operator of the column chooser ](../../images/column-chooser/Colum-chooser-contains.png)
+![Change default search operator of the column chooser ](../images/column-chooser/Colum-chooser-contains.png)
 
 ## Diacritics searching in column chooser
 
@@ -122,4 +122,4 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 {% endhighlight %}
 {% endtabs %}
 
-![Diacritics searching in column chooser](../../images/columns/Column-headertext.png)
+![Diacritics searching in column chooser](../images/columns/Column-headertext.png)
