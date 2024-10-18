@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Rendering in ##Platform_Name## Grid Component
+title: Column Rendering in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Column Rendering in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Rendering
@@ -158,7 +158,7 @@ In this example, we have a grid with columns **Food Name**, **Protein**, **Fat**
 {% endhighlight %}
 {% endtabs %}
 
-![Expression column](../images/column-rendering/column-render-expression%20.png)
+![Expression column](../images/column-rendering/column-render-expression.png)
 
 ### Display serial number
 

@@ -99,7 +99,7 @@ The following example demonstrates how to set the `SearchSettings.Operator` prop
 
 The Syncfusion Grid component allows you to perform searches programmatically, enabling you to search for records using an external button instead of relying solely on the built-in search bar. This feature provides flexibility and allows for custom search implementations within your application. To search for records using an external button, you can utilize the `search` method provided by the Grid component.
 
-The `search` method allows you to perform a search operation based on a search key or criteria. The following example demonstatres how to implement `search` by an external button using the following steps:
+The `search` method allows you to perform a search operation based on a search key or criteria. The following example demonstrates how to implement `search` by an external button using the following steps:
 
 1. Add a button element outside of the grid component.
 2. Attach a click event handler to the button.
@@ -224,10 +224,10 @@ The following example demonstrates how to highlight search text in grid using th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/highlight-text/razor %}
+{% include code-snippet/grid/search/high-light-text/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="highlight-text.cs" %}
-{% include code-snippet/grid/search/highlight-text/Highlight-text.cs %}
+{% highlight c# tabtitle="high-light-text.cs" %}
+{% include code-snippet/grid/search/high-light-text/high-light-text.cs %}
 {% endhighlight %}
 {% endtabs %}
 

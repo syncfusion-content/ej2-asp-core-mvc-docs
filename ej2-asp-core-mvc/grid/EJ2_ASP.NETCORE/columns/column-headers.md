@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Headers in ##Platform_Name## Grid Component
+title: Column Headers in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Headers in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Headers
@@ -250,7 +250,7 @@ To `rotate` the header text, you can create a CSS class with the `transform` pro
 
 Once you have created the CSS class, you can add it to the particular column by using the `customAttributes` property. This property allows you to add any custom  attribute to the grid column.
 
-For example, to add the orientationcss class to the Freight column, you can use the following code:
+For example, to add the orientation class to the Freight column, you can use the following code:
 
 ```typescript
     <e-grid-column field="Freight" headerText="Freight" customAttributes="@(new { @class="orientationcss" })" format='C' textAlign="Center" width="120"></e-grid-column>
@@ -343,14 +343,14 @@ To customize the header of a column, you can follow the steps below:
 Step 1: Define a CSS class that specifies the styles you want to apply to the header cell of the column. For example, to change the background color and text color of the header cell, define a CSS class like this:
 
   ```CSS
-    .e-grid .e-headercell.customcss {
+    .e-grid .e-headercell.custom {
        background-color: rgb(43, 205, 226);
        color: black;
     }
 
   ```
 
-Step 2: Set the **customAttributes** property of the desired column to an object that contains the CSS class **customcss**. This CSS class will be applied to the header cell of the specified column in the Grid.
+Step 2: Set the **customAttributes** property of the desired column to an object that contains the CSS class **custom**. This CSS class will be applied to the header cell of the specified column in the Grid.
 
   ```ts
     <e-grid-column field="Freight" headerText="Freight" customAttributes="@(new { @class="customcss" })" format='C' textAlign="Right" width="120"></e-grid-column>

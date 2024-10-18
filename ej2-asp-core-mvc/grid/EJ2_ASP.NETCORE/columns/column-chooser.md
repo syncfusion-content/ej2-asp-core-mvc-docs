@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Chooser in ##Platform_Name## Grid Component
+title: Column Chooser in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Column Chooser in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Chooser
@@ -109,7 +109,7 @@ Here's an example of how to change the default search operator of the column cho
 
 ## Diacritics searching in column chooser
 
-By default, the grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [columnchoosersettings.ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_IgnoreAccent) property to **true**.
+By default, the grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [columnChooserSettings.ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_IgnoreAccent) property to **true**.
 
 Here is an example that demonstrates the usage of the `ignoreAccent` property to include diacritic characters for searching in the column chooser:
 

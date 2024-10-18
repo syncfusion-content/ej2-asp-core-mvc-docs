@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell in ##Platform_Name##  Syncfusion Grid Component
+title: Cell in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Cell in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cell
@@ -217,7 +217,7 @@ The Grid control allows rendering Bootstrap tooltips in the cells. To enable thi
 
 This is demonstrated in the sample code below which shows how to enable Bootstrap tooltip for the **CustomerID** field using `template` property in grid cells,
 
-Step 1: Add the CDN link of Boostrap in the `_Layout.cshtml` file. Place the `link` tag in the `head` for the CSS. 
+Step 1: Add the CDN link of Bootstrap in the `_Layout.cshtml` file. Place the `link` tag in the `head` for the CSS. 
 
 ```html
 
