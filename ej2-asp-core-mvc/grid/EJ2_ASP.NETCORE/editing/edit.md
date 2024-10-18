@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edit in ASP.NET Core Grid Control | Syncfusion
+title: Edit in Syncfusion ASP.NET Core Grid Control | Syncfusion
 description: Learn here all about Edit in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Edit
@@ -8,16 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Editing in ASP.NET Core Grid component
 
-# Editing in ASP.NET Core Grid Component
+The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to enable you to perform CRUD (Create, Read, Update, Delete) operations seamlessly.
 
-The Grid component has options to dynamically insert, delete and update records. Editing feature requires a primary key column for CRUD operations. To define the primary key, set [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property of [`e-grid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) tag helper as **true** in particular column.
+To enable editing functionality directly within the grid, you need to configure the [allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowEditing), [allowAdding](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowAdding), and [allowDeleting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowDeleting) properties within the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html)  to **true**.
 
-You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or an external button which is bound to invoke the **addRecord** method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid.
+Editing feature requires a primary key column for CRUD operations. To define the primary key, set `columns.isPrimaryKey` to **true** in particular column.
 
-Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
-
-{% if page.publishingplatform == "aspnet-core" %}
+You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the `addRecord` method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid. Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -28,22 +27,39 @@ Deletion of the record is possible by selecting the required row and click on **
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Inline Editing](../images/Editing/inline-edit.gif)
+
+> * If `columns.isIdentity` is enabled, then it will be considered as a read-only column when editing and adding a record.
+> * You can disable editing for a particular column, by specifying `columns.allowEditing` to **false**.
+> * You can use the **Insert** key to add a new row to the grid and use the **Delete** key to delete the selected row from the grid.
+
+## Toolbar with edit option
+
+The toolbar with edit option feature in the Grid component provides a [built-in toolbar](https://ej2.syncfusion.com/aspnetcore/documentation/grid/tool-bar/tool-bar-items#built-in-toolbar-items) that includes various items for executing editing actions. This feature allows you to easily perform edit operations on the grid data, such as modifying cell values, updating changes, and canceling edits. 
+
+To enable this feature, you need to configure the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property of the Grid component. This property allows you to define the items that will be displayed in the grid toolbar. By including the relevant items like **Edit**, **Add**, **Delete**, **Update**, and **Cancel** within the `toolbar` property, you can enable the edit options in the toolbar.
+
+Here's an example of how to enable the toolbar with edit option in the Grid:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/edit/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/edit-toolbar/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Edit.cs" %}
-{% include code-snippet/grid/edit/edit/edit.cs %}
+{% highlight c# tabtitle="Edit-toolbar.cs" %}
+{% include code-snippet/grid/edit/edit-toolbar/edit-toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Edit with toolbar](../images/Editing/edit-with-toolbar.gif)
 
+## Disable editing for particular column
 
-N> * If [`isIdentity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of **e-grid-column** is enabled, then it will be considered as a read-only column when editing and adding a record.
-<br/> * You can disable editing for a particular column, by specifying [`allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing) property of **e-grid-column** to **false**.
+In Grid component, you have an option to disable editing for a specific column. This feature is useful when you want to prevent editing certain columns, such as columns that contain calculated values or read-only data.
+
+To disable editing for a particular column, you can use the [allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing)  property of the **columns** object. By setting this property to **false**, you can prevent editing for that specific column.
+
+Here's an example that demonstrates how to disable editing for the column in the Grid:
+
 
 ## Toolbar with edit option
 

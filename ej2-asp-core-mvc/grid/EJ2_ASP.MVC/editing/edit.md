@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edit in ASP.NET MVC Grid Component
+title: Edit in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Edit in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Edit
