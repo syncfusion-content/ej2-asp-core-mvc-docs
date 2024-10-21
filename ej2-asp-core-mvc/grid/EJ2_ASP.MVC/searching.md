@@ -25,7 +25,7 @@ To further enhance the search functionality, you can integrate a search text box
 {% endhighlight %}
 {% endtabs %}
 
-![search](../images/search/search.png)
+![search](images/search/search.png)
 
 > The clear icon is shown in the Data Grid search text box when it is focused on search text or after typing the single character in the search text box. A single click of the clear icon clears the text in the search box as well as the search results in the Grid.
 
@@ -60,7 +60,7 @@ The following example demonstrates how to set an initial search in the grid usin
 {% endhighlight %}
 {% endtabs %}
 
-![Initial search](../images/search/search-initial.png)
+![Initial search](images/search/search-initial.png)
 
 > By default, grid searches all the bound column values. However, you can customize this behavior by definining the [SearchSettings.Fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields) property.
 
@@ -93,13 +93,13 @@ The following example demonstrates how to set the `SearchSettings.Operator` prop
 {% endhighlight %}
 {% endtabs %}
 
-![Search operators](../images/search/search-operator.gif)
+![Search operators](images/search/search-operator.gif)
 
 ## Search by external button
 
 The Syncfusion Grid component allows you to perform searches programmatically, enabling you to search for records using an external button instead of relying solely on the built-in search bar. This feature provides flexibility and allows for custom search implementations within your application. To search for records using an external button, you can utilize the `search` method provided by the Grid component.
 
-The `search` method allows you to perform a search operation based on a search key or criteria. The following example demonstatres how to implement `search` by an external button using the following steps:
+The `search` method allows you to perform a search operation based on a search key or criteria. The following example demonstrates how to implement `search` by an external button using the following steps:
 
 1. Add a button element outside of the grid component.
 2. Attach a click event handler to the button.
@@ -115,7 +115,7 @@ The `search` method allows you to perform a search operation based on a search k
 {% endhighlight %}
 {% endtabs %}
 
-![Search by external button](../images/search/search-external.png)
+![Search by external button](images/search/search-external.png)
 
 ## Search specific columns
 
@@ -132,7 +132,7 @@ The following example demonstrates how to search specific columns such as **Cust
 {% endhighlight %}
 {% endtabs %}
 
-![Search specific columns](../images/search/search-specific.gif)
+![Search specific columns](images/search/search-specific.gif)
 
 ## Search on each key stroke
 
@@ -151,7 +151,7 @@ In the following example, the `Created` event is bound to the grid component, an
 {% endhighlight %}
 {% endtabs %}
 
-![Search on each key stroke](../images/search/search-keystoke.gif)
+![Search on each key stroke](images/search/search-keystoke.gif)
 
 > Search on each key stroke approach may affect the performance of the application when dealing with a large number of records.
 
@@ -170,7 +170,7 @@ The following example demonstrates how to implement searching based on column fo
 {% endhighlight %}
 {% endtabs %}
 
-![Perform search based on column formatting](../images/search/search-format.png)
+![Perform search based on column formatting](images/search/search-format.png)
 
 ## Perform search operation in Grid using multiple keywords
 
@@ -189,7 +189,7 @@ On the other hand, the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc
 {% endhighlight %}
 {% endtabs %}
 
-![multiple keywords](../images/search/search-multiple-key.png)
+![multiple keywords](images/search/search-multiple-key.png)
 
 > By using this approach, you can perform a search operation in the grid using multiple keywords.
 
@@ -208,7 +208,7 @@ The following example demonstrates how to define the `IgnoreAccent` property wit
 {% endhighlight %}
 {% endtabs %}
 
-![ignore accent while searching](../images/search/search-accent.png)
+![ignore accent while searching](images/search/search-accent.png)
 
 > * You can set [SearchSettings.IgnoreAccent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_IgnoreAccent) property along with other search settings such as [Fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields), [Operator](hhttps://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Operator), and [IgnoreCase](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_IgnoreCase) to achieve the desired search behavior.
 > * This feature works only for the characters that are not in the ASCII range.
@@ -224,14 +224,14 @@ The following example demonstrates how to highlight search text in grid using th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/highlight-text/razor %}
+{% include code-snippet/grid/search/high-light-text/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="highlight-text.cs" %}
-{% include code-snippet/grid/search/highlight-text/Highlight-text.cs %}
+{% include code-snippet/grid/search/high-light-text/high-light-text.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Highlight the search text](../images/search/search-highlight.png)
+![Highlight the search text](images/search/search-highlight.png)
 
 ## Clear search by external button
 
@@ -250,7 +250,7 @@ The following example demonstrates how to clear the searched records using an ex
 {% endhighlight %}
 {% endtabs %}
 
-![Clear search by external button](../images/search/search-clear.gif)
+![Clear search by external button](images/search/search-clear.gif)
 
 > You can also clear the searched records by using the clear icon within the search input field.
 

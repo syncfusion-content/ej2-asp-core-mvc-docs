@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Reorder in ##Platform_Name## Grid Component
+title: Column Reorder in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Column Reorder in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Reorder
@@ -25,7 +25,7 @@ Here's an example for column reordering in your Grid component:
 {% endhighlight %}
 {% endtabs %}
 
-![Column reorder](../../images/column-reorder/column-reorder.gif)
+![Column reorder](../images/column-reorder/column-reorder.gif)
 
 >* You can customize the appearance of the column headers during drag and drop by using the [columnDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrag) and [columnDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrop) events.
 >* When columns are reordered, the position of the corresponding column data will also be changed. As a result, you should ensure that any additional code or logic that relies on the order of the column data is updated accordingly.
@@ -45,7 +45,7 @@ In this example, the **ShipName** column is prevented from being reordered by se
 {% endhighlight %}
 {% endtabs %}
 
-![Prevent reordering for particular column](../../images/column-reorder/column-reorder-prevent.gif)
+![Prevent reordering for particular column](../images/column-reorder/column-reorder-prevent.gif)
 
 ## Reorder columns externally
 
@@ -73,7 +73,7 @@ In this example, we are moving the column at index **1** to index **3**.
 {% endhighlight %}
 {% endtabs %}
 
-![Reorder column based on index](../../images/column-reorder/column-reorder-index.gif)
+![Reorder column based on index](../images/column-reorder/column-reorder-index.gif)
 
 ### Reorder column based on target index
 
@@ -93,7 +93,7 @@ Here is an example of how to use the `reorderColumnByTargetIndex` method to reor
 {% endhighlight %}
 {% endtabs %}
 
-![Reorder column based on target index](../../images/column-reorder/column-reorder-target.gif)
+![Reorder column based on target index](../images/column-reorder/column-reorder-target.gif)
 
 ### Reorder column based on field names
 
@@ -113,7 +113,7 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 {% endhighlight %}
 {% endtabs %}
 
-![Reorder column based on field names](../../images/column-reorder/column-reorder-field.gif)
+![Reorder column based on field names](../images/column-reorder/column-reorder-field.gif)
 
 ## Reorder events
 
@@ -136,4 +136,4 @@ In the following example, we have implemented the `columnDragStart`, `columnDrag
 {% endhighlight %}
 {% endtabs %}
 
-![Reorder events](../../images/column-reorder/column-reorder-events.gif)
+![Reorder events](../images/column-reorder/column-reorder-events.gif)
