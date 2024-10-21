@@ -8,7 +8,7 @@
   col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
   col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
-  col.Field("EmployeeID").HeaderText("EmployeeID").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("ShipName").HeaderText("Ship Name").Width("100").Add();
   col.Field("ShipAddress").HeaderText("Ship Address").Width("100").Add();
   col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();

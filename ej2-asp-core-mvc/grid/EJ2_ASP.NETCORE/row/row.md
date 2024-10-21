@@ -31,7 +31,7 @@ Here's an example of how you can use the `rowDataBound` event to customize the s
 {% endhighlight %}
 {% endtabs %}
 
-![Row style using event](../../images/row/style-using-event.png)
+![Row style using event](../images/row/style-using-event.png)
 
 > The [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event can also be used to customize cells and is triggered for every cell in the grid. It can be useful when you need to customize cells based on certain conditions or criteria.
 
@@ -62,7 +62,7 @@ Here's an example of how to use the **.e-altrow** class to style alternate rows:
 {% endhighlight %}
 {% endtabs %}
 
-![Alternate row style](../../images/row/style-alt-row.png)
+![Alternate row style](../images/row/style-alt-row.png)
 
 **Customize selected row**
 
@@ -87,7 +87,7 @@ Here's an example of how to use the **.e-selectionbackground** class to style th
 {% endhighlight %}
 {% endtabs %}
 
-![Alternate row style](../../images/row/style-select-row.png)
+![Alternate row style](../images/row/style-select-row.png)
 
 ### Using method 
 
@@ -111,7 +111,7 @@ The following example demonstrates how to use `getRowByIndex` methods to customi
 {% endhighlight %}
 {% endtabs %}
 
-![Row style using method](../../images/row/style-using-method.png)
+![Row style using method](../images/row/style-using-method.png)
 
 ## Row height
 
@@ -128,7 +128,7 @@ In the below example, we will demonstrate how to dynamically change the height o
 {% endhighlight %}
 {% endtabs %}
 
-![Row height](../../images/row/row-height.gif)
+![Row height](../images/row/row-height.gif)
 
 >*	The [rowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property can only be used to set the height of the entire grid row. It cannot be used to set the height of individual cells within a row.
 >*  The `rowHeight` property applies the height to all rows in the grid, including the header and footer rows.
@@ -151,7 +151,7 @@ In the below example, the row height for the row with **OrderID** as '10249' is 
 {% endhighlight %}
 {% endtabs %}
 
-![Single Row height](../../images/row/single-row-height.png)
+![Single Row height](../images/row/single-row-height.png)
 
 >* In virtual scrolling mode, it is not applicable to set different row heights.
 >* You can customize the row height of multiple rows by checking the relevant criteria in the `rowDataBound` event and setting the `rowHeight` property accordingly.
@@ -174,7 +174,7 @@ Here is an example that demonstrates how to enable/disable row hover based on th
 {% endhighlight %}
 {% endtabs %}
 
-![Row hover](../../images/row/row-hover.gif)
+![Row hover](../images/row/row-hover.gif)
 
 > The `enableHover` property applies to the entire grid, not individual rows or columns.
 
@@ -196,7 +196,7 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 {% endhighlight %}
 {% endtabs %}
 
-![Row information](../../images/row/row-information.gif)
+![Row information](../images/row/row-information.gif)
 
 >The `getRowInfo` method can only be used in the `rowDataBound` event. Attempting to use it elsewhere will result in an error.
 
@@ -215,12 +215,12 @@ In the following example, the [frozenRows](https://help.syncfusion.com/cr/aspnet
 {% endhighlight %}
 {% endtabs %}
 
-![Row information](../../images/row/frozen-rows.gif)
+![Row information](../images/row/frozen-rows.gif)
 
 > * Frozen rows should not be set outside the grid view port.
 > * Frozen Grid will support row virtualization feature, which helps to improve the Grid performance while loading a large dataset.
 > * The frozen feature is supported only for the rows that are visible in the current view.
-> * You can use both  [FrozenColumns](https://ej2.syncfusion.com/aspnetcore/documentation/grid/columns/frozen-column) property and `FrozenRows` property in the same application.
+> * You can use both  [frozenColumns](https://ej2.syncfusion.com/aspnetcore/documentation/grid/columns/frozen-column) property and `frozenRows` property in the same application.
 
 ### Change default frozen rows line color
 
@@ -244,7 +244,7 @@ By applying this CSS class, you can set the background color of frozen rows to t
 {% endhighlight %}
 {% endtabs %}
 
-![Style frozen rows](../../images/row/frozen-rows-style.png)
+![Style frozen rows](../images/row/frozen-rows-style.png)
 
 ### Deprecated methods
 
@@ -261,8 +261,7 @@ Previous | Current | Explanation
 
 ### Limitations
 
-* Frozen row is not compatible with the following features:
-    1. Autofill
+* Frozen row is not compatible with the autofill feature.
 
 ## Adding a new row programmatically
 
@@ -284,7 +283,7 @@ Here's an example of how to add a new row using the `addRecord` method:
 {% endhighlight %}
 {% endtabs %}
 
-![Add row externally](../../images/row/add-record.gif)
+![Add row externally](../images/row/add-record.gif)
 
 >* When working with remote data, it is impossible to add a new row between the existing rows.
 >* If you want to add a new record to the beginning of the data source, you can pass **0** as the second parameter to the `addRecord `method.
@@ -311,7 +310,7 @@ If the checkbox is unchecked, the method iterates through the hiddenRows array a
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide row](../../images/row/show-hide-row.gif)
+![Show or hide row](../images/row/show-hide-row.gif)
 
 ## How to get the row data and element
 

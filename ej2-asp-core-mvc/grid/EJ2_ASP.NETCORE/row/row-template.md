@@ -25,7 +25,7 @@ In the following example, Employee Information with Employee Photo is presented 
 {% endhighlight %}
 {% endtabs %}
 
-![Row Template](../../images/row/row-template.png)
+![Row Template](../images/row/row-template.png)
 
 ## Row template with formatting
 
@@ -46,7 +46,7 @@ Here is an example of how to define a global formatting function for a date colu
 {% endhighlight %}
 {% endtabs %}
 
-![Row Template](../../images/row/format-row-template.png)
+![Row Template](../images/row/format-row-template.png)
 
 > When using the `rowTemplate` feature in Syncfusion Grid, keep in mind that any formatting applied to columns using the `columns.format` property will not work inside the template.
 
@@ -67,7 +67,7 @@ Here is an example that demonstrates rendering Syncfusion controls within a row 
 {% endhighlight %}
 {% endtabs %}
 
-![Row Template](../../images/row/row-template-component.png)
+![Row Template](../images/row/row-template-component.png)
 
 ## Limitations
 

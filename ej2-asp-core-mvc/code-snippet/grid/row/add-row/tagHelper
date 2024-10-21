@@ -14,13 +14,13 @@
 document.getElementById('add').onclick = function () {
     var grid = document.getElementById('Grid').ej2_instances[0];
     var newRecord = {
-        OrderID: generateOrderId(),
-        CustomerID: generateCustomerId(),
-        ShipCity: generateShipCity(),
-        Freight: generateFreight(),
-        ShipName: generateShipName()
-        };
-        grid.addRecord(newRecord, 0);
+      OrderID: generateOrderId(),
+      CustomerID: generateCustomerId(),
+      ShipCity: generateShipCity(),
+      Freight: generateFreight(),
+      ShipName: generateShipName()
+      };
+      grid.addRecord(newRecord, 0);
 };
 // Generate a random OrderID
 function generateOrderId() {
@@ -44,7 +44,7 @@ function generateShipCity() {
 function generateFreight() {
   return Math.random() * 100;
 }
- // Generate a random Freight value
+ // Generate a random ShipName value
 function generateShipName() {
   var names = ['Que Delícia', 'Bueno Foods', 'Island Trading', 'Laughing Bacchus Winecellars'];
   return names[Math.floor(Math.random() * names.length)];

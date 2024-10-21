@@ -8,9 +8,9 @@
 
 <script type="text/javascript">
     var intl = new ej.base.Internationalization();
-   var dFormatter = intl.getDateFormat({ skeleton: 'yMd', type: 'date' });
+   var dateFormatter = intl.getDateFormat({ skeleton: 'yMd', type: 'date' });
    window.formatDate = function(date) {
-       return dFormatter(date);
+       return dateFormatter(date);
    };
 </script>
 
@@ -20,35 +20,35 @@
            <img src="https://ej2.syncfusion.com/demos/src/grid/images/${EmployeeID}.png" alt="${EmployeeID}" />
        </td>
        <td class="details">
-           <table class="CardTable" cellpadding="3" cellspacing="2">
+           <table class="cardTable" cellpadding="3" cellspacing="2">
                <colgroup>
                    <col width="50%">
                    <col width="50%">
                </colgroup>
                <tbody>
                    <tr>
-                       <td class="CardHeader">First Name </td>
+                       <td class="cardHeader">First Name </td>
                        <td>${FirstName} </td>
                    </tr>
                    <tr>
-                       <td class="CardHeader">Last Name</td>
+                       <td class="cardHeader">Last Name</td>
                        <td>${LastName} </td>
                    </tr>
                    <tr>
-                       <td class="CardHeader">Title
+                       <td class="cardHeader">Title
                        </td>
 
                        <td>${Title}
                        </td>
                    </tr>
                    <tr>
-                       <td class="CardHeader">Birth Date
+                       <td class="cardHeader">Birth Date
                        </td>
                        <td>${formatDate(data.BirthDate)}
                        </td>
                    </tr>
                    <tr>
-                       <td class="CardHeader">Hire Date
+                       <td class="cardHeader">Hire Date
                        </td>
                        <td>${formatDate(data.HireDate)}
                        </td>
@@ -71,15 +71,14 @@
    .details {
        border-color: #e0e0e0;
        border-style: solid;
+       border-width: 1px 0px 0px 0px;
    }
 
    .photo {
-       border-width: 1px 0px 0px 0px;
        text-align: center;
    }
 
    .details {
-       border-width: 1px 0px 0px 0px;
        padding-left: 18px;
    }
 
@@ -95,7 +94,7 @@
        width: 100%;
    }
 
-   .CardHeader {
+   .cardHeader {
        font-weight: 600;
    }
 
