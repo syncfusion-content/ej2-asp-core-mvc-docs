@@ -10,7 +10,7 @@
    col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("130").Add();
    col.Field("Freight").HeaderText("Freight").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
    col.Field("ShippedDate").HeaderText("Shipped Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("140").Add();
-   col.Field("ShipCountry").HeaderText("ShipCountry").Width("150").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
 }).Render()
 <script>
 document.getElementById('changeHeight').onclick=function(args)

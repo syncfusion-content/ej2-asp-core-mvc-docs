@@ -46,7 +46,7 @@
     function generateFreight() {
       return Math.random() * 100;
     }
-     // Generate a random Freight value
+     // Generate a random ShipName value
     function generateShipName() {
       var names = ['Que Delícia', 'Bueno Foods', 'Island Trading', 'Laughing Bacchus Winecellars'];
       return names[Math.floor(Math.random() * names.length)];

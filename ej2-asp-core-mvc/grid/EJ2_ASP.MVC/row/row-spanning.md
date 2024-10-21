@@ -27,7 +27,7 @@ In the following code example, **Davolio** cell is spanned to two rows in the **
 {% endhighlight %}
 {% endtabs %}
 
-![Row span](../../images/row/row-span.png)
+![Row span](../images/row/row-span.png)
 
 > * To disable the spanning for particular grid page, you need to use **requestType** from [QueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event argument.
 > * The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.

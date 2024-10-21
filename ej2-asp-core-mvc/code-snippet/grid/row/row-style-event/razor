@@ -4,7 +4,7 @@
     col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
     col.Field("Freight").HeaderText("Freight").Width("80").Format("C2").Add();
-    col.Field("ShipCity").HeaderText("ShipCity").Width("100").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
 
 }).RowDataBound("rowDataBound").PageSettings(page => { page.PageSize(6); }).Render()
 <script>

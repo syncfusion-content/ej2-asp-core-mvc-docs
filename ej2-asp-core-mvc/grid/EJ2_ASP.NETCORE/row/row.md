@@ -220,7 +220,7 @@ In the following example, the [frozenRows](https://help.syncfusion.com/cr/aspnet
 > * Frozen rows should not be set outside the grid view port.
 > * Frozen Grid will support row virtualization feature, which helps to improve the Grid performance while loading a large dataset.
 > * The frozen feature is supported only for the rows that are visible in the current view.
-> * You can use both  [FrozenColumns](https://ej2.syncfusion.com/aspnetcore/documentation/grid/columns/frozen-column) property and `FrozenRows` property in the same application.
+> * You can use both  [frozenColumns](https://ej2.syncfusion.com/aspnetcore/documentation/grid/columns/frozen-column) property and `frozenRows` property in the same application.
 
 ### Change default frozen rows line color
 
@@ -261,8 +261,7 @@ Previous | Current | Explanation
 
 ### Limitations
 
-* Frozen row is not compatible with the following features:
-    1. Autofill
+* Frozen row is not compatible with the autofill feature.
 
 ## Adding a new row programmatically
 
