@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Chooser in ##Platform_Name## Grid Component
+title: Column Chooser in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Column Chooser in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Chooser
@@ -21,7 +21,7 @@ The column chooser feature in the Syncfusion ASP.NET MVC Grid component allows y
 {% endhighlight %}
 {% endtabs %}
 
-![Column chooser](../../images/column-chooser/Colum-chooser.png)
+![Column chooser](../images/column-chooser/Colum-chooser.png)
 
 > The column chooser dialog displays the header text of each column by default. If the header text is not defined for a column, the corresponding column field name is displayed instead.
 
@@ -40,7 +40,7 @@ In this example, the `Columns.ShowInColumnChooser` property is set to **false** 
 {% endhighlight %}
 {% endtabs %}
 
-![Hide column in column chooser dialog](../../images/column-chooser/Colum-chooser-hide.png)
+![Hide column in column chooser dialog](../images/column-chooser/Colum-chooser-hide.png)
 
 >The `Columns.ShowInColumnChooser` property is applied to each column element individually. By setting it to **false**, you can hide specific columns from the column chooser dialog.
 
@@ -59,7 +59,7 @@ Here's an example of how to open the column chooser in the Grid using an externa
 {% endhighlight %}
 {% endtabs %}
 
-![Open column chooser by externally](../../images/column-chooser/Colum-chooser-external.png)
+![Open column chooser by externally](../images/column-chooser/Colum-chooser-external.png)
 
 ## Customize column chooser dialog size
 	
@@ -86,13 +86,13 @@ To customize the column chooser dialog size, you can use the following CSS style
 {% endhighlight %}
 {% endtabs %}
 
-![Customize column chooser dialog size](../../images/column-chooser/Colum-chooser-size.png)
+![Customize column chooser dialog size](../images/column-chooser/Colum-chooser-size.png)
 
 ## Change default search operator of the column chooser 
 
 The column chooser dialog in the Syncfusion ASP.NET MVC Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startsWith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
 
-To change the default search operator of the column chooser in Syncfusion Grid, you need to use the [operator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_Operator) property of the columnChooserSettings.
+To change the default search operator of the column chooser in Syncfusion Grid, you need to use the [Operator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_Operator) property of the columnChooserSettings.
 
 Here's an example of how to change the default search operator of the column chooser to **contains** in the ASP.NET MVC Grid:
 
@@ -105,11 +105,11 @@ Here's an example of how to change the default search operator of the column cho
 {% endhighlight %}
 {% endtabs %}
 
-![Change default search operator of the column chooser ](../../images/column-chooser/Colum-chooser-contains.png)
+![Change default search operator of the column chooser ](../images/column-chooser/Colum-chooser-contains.png)
 
 ## Diacritics searching in column chooser
 
-By default, the grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [Columnchoosersettings.IgnoreAccent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_IgnoreAccent) property to **true**.
+By default, the grid ignores diacritic characters when performing a search in the column chooser. However, in some cases, you may want to include diacritic characters in the search. To enable this behavior, you can set the [ColumnChooserSettings.IgnoreAccent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_IgnoreAccent) property to **true**.
 
 Here is an example that demonstrates the usage of the `IgnoreAccent` property to include diacritic characters for searching in the column chooser:
 
@@ -122,4 +122,4 @@ Here is an example that demonstrates the usage of the `IgnoreAccent` property to
 {% endhighlight %}
 {% endtabs %}
 
-![Diacritics searching in column chooser](../../images/columns/Column-headertext.png)
+![Diacritics searching in column chooser](../images/columns/Column-headertext.png)
