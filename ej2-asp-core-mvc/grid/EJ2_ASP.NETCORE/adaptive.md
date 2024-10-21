@@ -27,7 +27,7 @@ The following code example demonstrates how to enable and utilize adaptive dialo
 {% endhighlight %}
 {% endtabs %}
 
-![Render adaptive dialogs](../images/adaptive-view/render-adptive-dialog.png)
+![Render adaptive dialogs](images/adaptive-view/render-adptive-dialog.png)
 
 ## Vertical row rendering
 
@@ -46,7 +46,7 @@ The following sample demonstrates how to dynamically change the row rendering mo
 {% endhighlight %}
 {% endtabs %}
 
-![Row rendering](../images/adaptive-view/row-rendering-mode.gif)
+![Row rendering](images/adaptive-view/row-rendering-mode.gif)
 
 > [enableAdaptiveUI](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableAdaptiveUI) property must be enabled for vertical row rendering.
 
@@ -63,11 +63,11 @@ The following features are only supported in vertical row rendering:
 * Infinite scroll
 * Toolbar - Options like **Add**, **Filter**, **Sort**, **Edit**, **Delete**, **Search**, and **Toolbar template** are available when their respective features are enabled. The toolbar dynamically includes a three-dotted icon, containing additional features like **ColumnChooser**, **Print**, **PdfExport**, **ExcelExport**, or **CsvExport**, once these features are enabled. Please refer to the following snapshot.
 
-![VerticalmodeColumnMenu](../images/adaptive-view/vertical-column-menu.gif)
+![VerticalmodeColumnMenu](images/adaptive-view/vertical-column-menu.gif)
 
 A snapshot of the adaptive grid displaying enabled paging along with a pager dropdown.
 
-![AdaptivePagerDropdown](../images/adaptive-view/pager-dropdown.gif)
+![AdaptivePagerDropdown](images/adaptive-view/pager-dropdown.gif)
 
 > The Column Menu feature, which includes grouping, sorting, autofit, filter, and column chooser, is exclusively supported for the Grid in **Horizontal** [rowRenderingMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowRenderingMode).
 
@@ -86,4 +86,4 @@ By default, adaptive UI layout is rendered in both mobile devices and desktop mo
 {% endhighlight %}
 {% endtabs %}
 
-![Rendering an adaptive layout for smaller screens](../images/adaptive-view/small-screen-adptive.png) 
+![Rendering an adaptive layout for smaller screens](images/adaptive-view/small-screen-adptive.png) 
