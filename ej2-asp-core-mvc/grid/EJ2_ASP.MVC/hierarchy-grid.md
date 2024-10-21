@@ -31,7 +31,7 @@ The following example demonstrates how to enable the hierarchy feature in the gr
 {% endhighlight %}
 {% endtabs %}
 
-![Hierarchy grid](../images/hierarchy-grid/hierarchy-grid.png)
+![Hierarchy grid](images/hierarchy-grid/hierarchy-grid.png)
 
 > * Grid supports n level of child grids.
 > * Hierarchical binding is not supported when [Detail Template](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/row/detail-template) is enabled.
@@ -54,7 +54,7 @@ In the following example, the `Load` event is utilized to customize the mapping 
 {% endhighlight %}
 {% endtabs %}
 
-![Hierarchy grid](../images/hierarchy-grid/grid-with-different-field.png)
+![Hierarchy grid](images/hierarchy-grid/grid-with-different-field.png)
 
 > Make sure to adjust the field name according to your specific scenario.
 
@@ -75,7 +75,7 @@ In the provided example, expand the third record of the grid by utilizing the `e
 {% endhighlight %}
 {% endtabs %}
 
-![Expand child grid initially](../images/hierarchy-grid/expand-child-grid.gif)
+![Expand child grid initially](images/hierarchy-grid/expand-child-grid.gif)
 
 > Index values begin with **"0"**, allowing you to provide the desired target index to expand a specific child grid initially.
 
@@ -96,7 +96,7 @@ The following example demonstrates how to dynamically load child grid data using
 {% endhighlight %}
 {% endtabs %}
 
-![Dynamically load child grid](../images/hierarchy-grid/dynamically-load-child-grid.png)
+![Dynamically load child grid](images/hierarchy-grid/dynamically-load-child-grid.png)
 
 ## Dynamically bind data to child grid based on parent row data
 
@@ -115,7 +115,7 @@ In the `DetailDataBound` event handler, you can filter the child grid's dataSour
 {% endhighlight %}
 {% endtabs %}
 
-![Dynamically bind data](../images/hierarchy-grid/dynamically-bind-data.png)
+![Dynamically bind data](images/hierarchy-grid/dynamically-bind-data.png)
 
 ## Adding record in child grid
 
@@ -134,7 +134,7 @@ In the following example, the parent and child grids are related by the **Employ
 {% endhighlight %}
 {% endtabs %}
 
-![Add record in child grid](../images/hierarchy-grid/add-record-child-grid.png)
+![Add record in child grid](images/hierarchy-grid/add-record-child-grid.png)
 
 ## Template column in child grid
 
@@ -153,7 +153,7 @@ The following example demonstrates, how to show a custom image in the **Employee
 {% endhighlight %}
 {% endtabs %}
 
-![Template column in child grid](../images/hierarchy-grid/template-column-child-grid.png)
+![Template column in child grid](images/hierarchy-grid/template-column-child-grid.png)
 
 ## How to get parent detail in child grid
 
@@ -172,7 +172,7 @@ The following example demonstrates how to obtain parent details in a child grid 
 {% endhighlight %}
 {% endtabs %}
 
-![Get parent detail in child grid](../images/hierarchy-grid/get-parent-grid-details.png)
+![Get parent detail in child grid](images/hierarchy-grid/get-parent-grid-details.png)
 
 ## Render aggregates in child grid
 
@@ -191,7 +191,7 @@ The following example demonstrates how to render aggregates in a child grid to d
 {% endhighlight %}
 {% endtabs %}
 
-![Render aggregates in child grid](../images/hierarchy-grid/aggregates-child-grid.png)
+![Render aggregates in child grid](images/hierarchy-grid/aggregates-child-grid.png)
 
 ## Expand all by external button
 
@@ -210,7 +210,7 @@ The following example demonstrates how to expand and collapse the hierarchy grid
 {% endhighlight %}
 {% endtabs %}
 
-![Expand all by external button](../images/hierarchy-grid/expand-collapse-externally.gif)
+![Expand all by external button](images/hierarchy-grid/expand-collapse-externally.gif)
 
 > The `expandAll` and `collapseAll` methods are not recommended for large datasets due to the considerable time it takes to update the changes in the UI.
 
@@ -262,7 +262,7 @@ The following example demonstrates how to hide the expand/collapse icon in the r
 {% endhighlight %}
 {% endtabs %}
 
-![Hide the expand or collapse icon](../images/hierarchy-grid/hide-expand-icon.png)
+![Hide the expand or collapse icon](images/hierarchy-grid/hide-expand-icon.png)
 
 ## Customize the child grid
 
@@ -283,7 +283,7 @@ To customize the appearance of the child grid header root element, you can use t
 ```
 In this example, the **.e-detailcell** class targets the child grid and **.e-headercontent** targets its header root element. You can modify the `border` property to change the style of the header border. This customization allows you to override the thin line between the header and content of the child grid.
 
-![Child header Grid in ASP.NET MVC.](../images/hierarchy-grid/grid-child-header.png)
+![Child header Grid in ASP.NET MVC.](images/hierarchy-grid/grid-child-header.png)
 
 **Customizing the child grid header cell**
 
@@ -297,7 +297,7 @@ To customize the appearance of the grid header cell elements, you can use the fo
 ```
 In this example, the **.e-headercell** class targets the header cell elements. You can modify the `color` and `background-color` properties to change the text color and background of the child grid's header cells.
 
-![Customize the child Grid header cell in ASP.NET MVC.](../images/hierarchy-grid/grid-child-header-cell.png)
+![Customize the child Grid header cell in ASP.NET MVC.](images/hierarchy-grid/grid-child-header-cell.png)
 
 **Customizing the child grid header cell div element**
 
@@ -312,7 +312,7 @@ To customize the appearance of the child grid header cell div element, you can u
 ```
 In this example, the **.e-headercelldiv** class targets the div element within the header cell of the child grid. You can modify the `font-size`, `font-weight`, `color` properties to change the font size, font-weight and color of the header text content.
 
-![Child Grid header cell div element in ASP.NET MVC.](../images/hierarchy-grid/grid-child-header-cell-div-element.png)
+![Child Grid header cell div element in ASP.NET MVC.](images/hierarchy-grid/grid-child-header-cell-div-element.png)
 
 ### Paging
 
@@ -330,7 +330,7 @@ To customize the appearance of the child grid pager root element, you can use th
 ```
 In this example, the **.e-detailcell** class targets the child grid and the **.e-gridpager** class targets the pager root element. You can modify the `font-family` to change the font family and `background-color` property to change the background color of the pager.
 
-![ASP.NET MVC Grid pager root element.](../images/hierarchy-grid/child-grid-pager-root-element.png)
+![ASP.NET MVC Grid pager root element.](images/hierarchy-grid/child-grid-pager-root-element.png)
 
 **Customizing the child grid pager container element**
 
@@ -345,7 +345,7 @@ To customize the appearance of the child grid pager container element, you can u
 
 In this example, the **.e-pagercontainer** class targets the pager container element. You can modify the `border` property and `font-family` property to change the border color and font family of the pager container.
 
-![ASP.NET MVC Grid pager container element.](../images/hierarchy-grid/grid-child-pager-container-element.png)
+![ASP.NET MVC Grid pager container element.](images/hierarchy-grid/grid-child-pager-container-element.png)
 
 **Customizing the child grid pager navigation elements**
 
@@ -366,7 +366,7 @@ To customize the appearance of the child grid pager navigation elements, you can
 
 In this example, the classes **.e-prevpagedisabled, .e-prevpage, .e-nextpage, .e-nextpagedisabled, .e-lastpagedisabled, .e-lastpage, .e-firstpage,** and **.e-firstpagedisabled** target the various pager navigation elements of the child grid. You can modify the `background-color` property to change the background color of these elements.
 
-![ASP.NET MVC Grid pager navigation elements.](../images/hierarchy-grid/grid-child-pager-navigation-element.png)
+![ASP.NET MVC Grid pager navigation elements.](images/hierarchy-grid/grid-child-pager-navigation-element.png)
 
 **Customizing the child grid pager page numeric link elements**
 
@@ -387,7 +387,7 @@ To customize the appearance of the child grid pager current page numeric link el
 
 In this example, the **.e-numericitem** class targets the page numeric link elements. You can modify the `background-color`, `color` properties to change the background color and text color of these elements.
 
-![ASP.NET MVC Grid pager numeric link elements.](../images/hierarchy-grid/grid-child-page-numeric-link-elements.png)
+![ASP.NET MVC Grid pager numeric link elements.](images/hierarchy-grid/grid-child-page-numeric-link-elements.png)
 
 **Customizing the child grid pager current page numeric element**
 
@@ -402,7 +402,7 @@ To customize the appearance of the child grid pager current page numeric element
 
 In this example, the **.e-currentitem** class targets the current page numeric item. You can modify the `background-color` property to change the background color of this element and `color` property to change the text color.
 
-![ASP.NET MVC Grid current pager numeric element.](../images/hierarchy-grid/grid-child-current-page-numeric-element.png)
+![ASP.NET MVC Grid current pager numeric element.](images/hierarchy-grid/grid-child-current-page-numeric-element.png)
 
 ### Sorting
 
@@ -425,7 +425,7 @@ To customize the sorting icon that appears in the child grid header when sorting
 ```
 In this example, the **.e-detailcell** class targets the child grid and the **.e-icon-ascending::before** class targets the sorting icon for ascending order, and the **.e-icon-descending::before** class targets the sorting icon for descending order.
 
-![ASP.NET MVC Grid sorting icon.](../images/hierarchy-grid/grid-child-sorting-icons.png)
+![ASP.NET MVC Grid sorting icon.](images/hierarchy-grid/grid-child-sorting-icons.png)
 
 **Customizing the child grid multi sorting icon**
 
@@ -440,7 +440,7 @@ To customize the multi sorting icon that appears in the child grid header when m
 
 In this example, the **.e-sortnumber** class targets the background color and font family of the multi sorting icon. You can modify the `background-color` and `font-family` properties to customize the appearance of the multi sorting icon.
 
-![ASP.NET MVC Grid multi sorting icon.](../images/hierarchy-grid/grid-child-multi-sorting-icon.png)
+![ASP.NET MVC Grid multi sorting icon.](images/hierarchy-grid/grid-child-multi-sorting-icon.png)
 
 ### Filtering
 
@@ -458,7 +458,7 @@ To customize the appearance of the filter bar cell element in the child grid hea
 ```
 In this example, the **.e-detailcell** class targets the child grid and the **.e-filterbarcell** class targets the filter bar cell element in the child grid header. You can modify the `background-color` property to change the color of the filter bar cell element.
 
-![ASP.NET MVC Grid filter bar cell element.](../images/hierarchy-grid/grid-child-filter-bar-cell-element.png)
+![ASP.NET MVC Grid filter bar cell element.](images/hierarchy-grid/grid-child-filter-bar-cell-element.png)
 
 **Customizing the child grid filter bar input element**
 
@@ -471,7 +471,7 @@ To customize the appearance of the filter bar input element in the child grid he
 ```
 In this example, the **.e-filterbarcell** class targets the filter bar cell element, and the **.e-input** class targets the input element within the cell. You can modify the `font-family` property to change the font of the filter bar input element.
 
-![ASP.NET MVC Grid filter bar input element.](../images/hierarchy-grid/grid-child-filter-bar-input-element.png)
+![ASP.NET MVC Grid filter bar input element.](images/hierarchy-grid/grid-child-filter-bar-input-element.png)
 
 **Customizing the child grid filter bar input focus**
 
@@ -484,7 +484,7 @@ To customize the appearance of the child grid's filter bar input element's focus
 ```
 In this example, the **.e-filterbarcell** class targets the filter bar cell element, and the **.e-input-group.e-input-focus** class targets the focused input element. You can modify the `background-color` property to change the color of the focus highlight.
 
-![ASP.NET MVC Grid filter bar input focus.](../images/hierarchy-grid/grid-child-filter-bar-input-element-focus.png)
+![ASP.NET MVC Grid filter bar input focus.](images/hierarchy-grid/grid-child-filter-bar-input-element-focus.png)
 
 **Customizing the child grid filter bar input clear icon**
 
@@ -497,7 +497,7 @@ To customize the appearance of the child grid's filter bar input element's clear
 ```
 In this example, the **.e-clear-icon** class targets the clear icon element within the input group. You can modify the `content` property to change the icon displayed.
 
-![ASP.NET MVC Grid filter bar input clear icon.](../images/hierarchy-grid/child-grid-filter-bar-input-clear-icon.png)
+![ASP.NET MVC Grid filter bar input clear icon.](images/hierarchy-grid/child-grid-filter-bar-input-clear-icon.png)
 
 **Customizing the child grid child grid filtering icon**
 
@@ -510,7 +510,7 @@ To customize the appearance of the filtering icon in the child grid header, you 
 ```
 In this example, the **.e-icon-filter** class targets the filtering icon element. You can modify the `content` property to change the icon displayed.
 
-![ASP.NET MVC Grid filtering icon.](../images/hierarchy-grid/grid-child-filtering-icon.png)
+![ASP.NET MVC Grid filtering icon.](images/hierarchy-grid/grid-child-filtering-icon.png)
 
 **Customizing the child grid filter dialog content**
 
@@ -523,7 +523,7 @@ To customize the appearance of the child grid's filter dialog's content element,
 ```
 In this example, the **.e-filter-popup .e-dlg-content** classes target the content element within the filter dialog. You can modify the `background-color` property to change the color of the dialog's content.
 
-![ASP.NET MVC Grid filter dialog content.](../images/hierarchy-grid/grid-child-filter-dialog-content.png)
+![ASP.NET MVC Grid filter dialog content.](images/hierarchy-grid/grid-child-filter-dialog-content.png)
 
 **Customizing the child grid filter dialog footer**
 
@@ -536,7 +536,7 @@ To customize the appearance of the child grid's filter dialog's footer element, 
 ```
 In this example, the **.e-filter-popup .e-footer-content** classes target the footer element within the filter dialog. You can modify the `background-color` property to change the color of the dialog's footer.
 
-![ASP.NET MVC Grid filter dialog footer.](../images/hierarchy-grid/child-grid-filter-dialog-footer.png)
+![ASP.NET MVC Grid filter dialog footer.](images/hierarchy-grid/child-grid-filter-dialog-footer.png)
 
 **Customizing the child grid filter dialog input element**
 
@@ -549,7 +549,7 @@ To customize the appearance of the child grid's filter dialog's input elements, 
 ```
 In this example, the **.e-filter-popup** class targets the filter dialog, and the **.e-input** class targets the input elements within the dialog. You can modify the `font-family` property to change the font of the input elements.
 
-![ASP.NET MVC Grid filter dialog input element.](../images/hierarchy-grid/grid-child-filter-dialog-input-element.png)
+![ASP.NET MVC Grid filter dialog input element.](images/hierarchy-grid/grid-child-filter-dialog-input-element.png)
 
 **Customizing the child grid filter dialog button element**
 
@@ -562,7 +562,7 @@ To customize the appearance of the child grid's filter dialog's button elements,
 ```
 In this example, the **.e-filter-popup** class targets the filter dialog, and the **.e-btn** class targets the button elements within the dialog. You can modify the `font-family` property to change the font of the button elements.
 
-![ASP.NET MVC Grid filter dialog button element.](../images/hierarchy-grid/grid-child-filter-dialog-button-element.png)
+![ASP.NET MVC Grid filter dialog button element.](images/hierarchy-grid/grid-child-filter-dialog-button-element.png)
 
 **Customizing the child grid excel filter dialog number filters element**
 
@@ -575,7 +575,7 @@ To customize the appearance of the excel filter dialog's number filters in the c
 ```
 In this example, the **.e-filter-popup .e-contextmenu-wrapper** ul classes target the number filter elements within the excel filter dialog. You can modify the `background-color` property to change the color of these elements.
 
-![ASP.NET MVC Grid excel filter dialog number filters element.](../images/hierarchy-grid/grid-child-excel-filter-dialog-element.png)
+![ASP.NET MVC Grid excel filter dialog number filters element.](images/hierarchy-grid/grid-child-excel-filter-dialog-element.png)
 
 ### Grouping
 
@@ -592,7 +592,7 @@ To customize the appearance of the child grid's group header element, you can us
 ```
 In this example, the **.e-detailcell** class targets the child grid and the **.e-groupdroparea** class targets the group header element. You can modify the `background-color` property to change the color of the group header.
 
-![Child Grid group header in ASP.NET MVC.](../images/hierarchy-grid/grid-child-group-header.png)
+![Child Grid group header in ASP.NET MVC.](images/hierarchy-grid/grid-child-group-header.png)
 
 **Customizing the child grid group expand or collapse icons**
 
@@ -609,7 +609,7 @@ To customize the appearance of the group expand/collapse icons in the child grid
 
 In this example, the **.e-icon-gdownarrow** and **.e-icon-grightarrow** classes target the expand and collapse icons, respectively. You can modify the `content` property to change the icon displayed. You can use the available Syncfusion icons based on your theme.
 
-![Child Grid group expand or collapse icons in ASP.NET MVC.](../images/hierarchy-grid/grid-child-group-expand-or-collapse-icons.png)
+![Child Grid group expand or collapse icons in ASP.NET MVC.](images/hierarchy-grid/grid-child-group-expand-or-collapse-icons.png)
 
 **Customizing the child grid group caption row**
 
@@ -628,7 +628,7 @@ To customize the appearance of the child grid's group caption row and the icons 
 
 In this example, the **.e-groupcaption** class targets the group caption row element, and the **.e-recordplusexpand** and **.e-recordpluscollapse** classes target the icons indicating record expansion or collapse. You can modify the `background-color` property to change the color of these elements.
 
-![Child Grid group caption row in ASP.NET MVC.](../images/hierarchy-grid/child-grid-group-caption-row.png)
+![Child Grid group caption row in ASP.NET MVC.](images/hierarchy-grid/child-grid-group-caption-row.png)
 
 **Customizing the child grid grouping indent cell**
 
@@ -642,7 +642,7 @@ To customize the appearance of the child grid's grouping indent cell element, yo
 
 In this example, the **.e-indentcell** class targets the grouping indent cell element. You can modify the `background-color` property to change the color of the indent cell.
 
-![child Grid grouping indent cell in ASP.NET MVC.](../images/hierarchy-grid/child-grid-indent-cell.png)
+![child Grid grouping indent cell in ASP.NET MVC.](images/hierarchy-grid/child-grid-indent-cell.png)
 
 ### Toolbar
 
@@ -660,7 +660,7 @@ To customize the appearance of the child grid's toolbar root element, you can us
 
 In this example, the **.e-detailcell** class targets the child grid and the **.e-toolbar-items** class targets the background color of the toolbar root element. You can modify the `background-color` property to change the background color of the toolbar.
 
-![Child Grid toolbar root element in ASP.NET MVC.](../images/hierarchy-grid/child-grid-toolbar-root-element.png)
+![Child Grid toolbar root element in ASP.NET MVC.](images/hierarchy-grid/child-grid-toolbar-root-element.png)
 
 **Customizing the child grid toolbar button element**
 
@@ -674,7 +674,7 @@ To customize the appearance of the child grid's toolbar buttons, you can use the
 
 In this example, the **.e-toolbar .e-btn** selector targets the background color of the toolbar button elements. You can modify the `background-color` property to change the background color of the toolbar buttons.
 
-![Child Grid toolbar button element in ASP.NET MVC.](../images/hierarchy-grid/child-grid-toolbar-button-element.png)
+![Child Grid toolbar button element in ASP.NET MVC.](images/hierarchy-grid/child-grid-toolbar-button-element.png)
 
 ### Editing
 
@@ -692,8 +692,8 @@ To customize the appearance of edited and added row table elements in the child 
 ```
 In this example, the **.e-detailcell** class targets the child grid and the .**e-editedrow** class represents the edited row element, and the **.e-addedrow** class represents the added row element. You can modify the `background-color` property to change the color of these row table elements.
 
-![Child Grid customizing the edited row element in ASP.NET MVC.](../images/hierarchy-grid/child-grid-edited-row-element.png)
-![Child Grid customizing the added row element in ASP.NET MVC.](../images/hierarchy-grid/child-grid-added-row-element.png)
+![Child Grid customizing the edited row element in ASP.NET MVC.](images/hierarchy-grid/child-grid-edited-row-element.png)
+![Child Grid customizing the added row element in ASP.NET MVC.](images/hierarchy-grid/child-grid-added-row-element.png)
 
 **Customizing the child grid edited row input element**
 
@@ -707,7 +707,7 @@ To customize the appearance of edited row input elements in the child grid, you 
 ```
 In this example, the **.e-editedrow** class represents the edited row element, and the **.e-input** class represents the input elements within the form. You can modify the `font-family` property to change the font and `color` property  to change text color of the input elements.
 
-![Child Grid customizing the edited row input element in ASP.NET MVC.](../images/hierarchy-grid/child-grid-edited-row-input-element.png)
+![Child Grid customizing the edited row input element in ASP.NET MVC.](images/hierarchy-grid/child-grid-edited-row-input-element.png)
 
 **Customizing the child grid edit dialog header element**
 
@@ -720,7 +720,7 @@ To customize the appearance of the edit dialog header element in the child grid,
 ```
 In this example, the **.e-edit-dialog** class represents the edit dialog, and the **.e-dlg-header-content** class targets the header content within the dialog. You can modify the `background-color` property to change the color of the header element.
 
-![Child Grid customizing the edit dialog header element in ASP.NET MVC.](../images/hierarchy-grid/child-grid-edit-dialog-header-element.png)
+![Child Grid customizing the edit dialog header element in ASP.NET MVC.](images/hierarchy-grid/child-grid-edit-dialog-header-element.png)
 
 **Customizing the child grid edited row input element in dialog edit mode**
 
@@ -733,7 +733,7 @@ To customize the appearance of the child grid's edited row input elements in dia
 ```
 In this example, the **.e-gridform** class represents the editing form, and the **.e-float-input** class targets the floating input elements within the form. You can modify the `font-family` property to change the font of the input elements.
 
-![Child ASP.NET MVC Grid edited row input element in dialog.](../images/hierarchy-grid/child-grid-edited-row-input-element-in-dialog.png)
+![Child ASP.NET MVC Grid edited row input element in dialog.](images/hierarchy-grid/child-grid-edited-row-input-element-in-dialog.png)
 
 **Customizing the child grid command column buttons**
 
@@ -749,8 +749,8 @@ To customize the appearance of the child grid's command column buttons such as e
 ```
 In this example, the **.e-edit, .e-delete, .e-update, and .e-cancel-icon** classes represent the respective command column buttons. You can modify the `color` property to change the color of these buttons.
 
-![Child Grid customize command column button in ASP.NET MVC.](../images/hierarchy-grid/child-grid-command-button.png)
-![Child Grid customize command column button in ASP.NET MVC.](../images/hierarchy-grid/child-grid-next-command-button.png)
+![Child Grid customize command column button in ASP.NET MVC.](images/hierarchy-grid/child-grid-command-button.png)
+![Child Grid customize command column button in ASP.NET MVC.](images/hierarchy-grid/child-grid-next-command-button.png)
 
 ### Aggregate
 
@@ -768,7 +768,7 @@ To customize the appearance of the child grid's aggregate root elements, you can
 
 In this example, the **.e-detailcell** class targets the child grid and the **e-gridfooter** class represents the root element of the aggregate row in the grid footer. You can modify the `font-family` property to change the font of the aggregate root element.
 
-![Child Grid customize aggregate root element in ASP.NET MVC.](../images/hierarchy-grid/child-grid-aggregate-root-element.png)
+![Child Grid customize aggregate root element in ASP.NET MVC.](images/hierarchy-grid/child-grid-aggregate-root-element.png)
 
 **Customizing the child grid aggregate cell elements**
 
@@ -782,7 +782,7 @@ To customize the appearance of the child grid's aggregate cell elements (summary
 
 In this example, the **e-summaryrow** class represents the summary row containing aggregate cells, and the **e-summarycell** class targets individual aggregate cells within the summary row. You can modify the `background-color` property to change the `color` of the aggregate cell elements.
 
-![Child Grid customize aggregate cell element in ASP.NET MVC.](../images/hierarchy-grid/child-grid-aggregate-cell-element.png)
+![Child Grid customize aggregate cell element in ASP.NET MVC.](images/hierarchy-grid/child-grid-aggregate-cell-element.png)
 
 ### Selection
 
@@ -799,7 +799,7 @@ To customize the appearance of the child grid's row selection, you can use the f
 ```
 In this example, the **.e-detailcell** class targets the child grid and the **.e-selectionbackground** class targets the background color of the row selection. You can modify the `background-color` property to change the background color of the selected rows.
 
-![Child Grid row selection in ASP.NET MVC.](../images/hierarchy-grid/child-grid-row-selection.png)
+![Child Grid row selection in ASP.NET MVC.](images/hierarchy-grid/child-grid-row-selection.png)
 
 **Customizing the child grid cell selection background**
 
@@ -813,7 +813,7 @@ To customize the appearance of the child grid's cell selection, you can use the 
 
 In this example, the **.e-cellselectionbackground** class targets the background color of the cell selection. You can modify the `background-color` property to change the background color of the selected cells.
 
-![Child Grid cell selection in ASP.NET MVC.](../images/hierarchy-grid/child-grid-cell-selection.png)
+![Child Grid cell selection in ASP.NET MVC.](images/hierarchy-grid/child-grid-cell-selection.png)
 
 **Customizing the child grid column selection background**
 
@@ -826,4 +826,4 @@ To customize the appearance of the child grid's column selection, you can use th
 ```
 In this example, the **.e-columnselection** class targets the background color of the column selection. You can modify the `background-color` property to change the background color of the selected columns.
 
-![Child Grid cell selection in ASP.NET MVC.](../images/hierarchy-grid/child-grid-column-selection.png)
+![Child Grid cell selection in ASP.NET MVC.](images/hierarchy-grid/child-grid-column-selection.png)

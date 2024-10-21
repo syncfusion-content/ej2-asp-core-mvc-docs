@@ -25,7 +25,7 @@ To further enhance the search functionality, you can integrate a search text box
 {% endhighlight %}
 {% endtabs %}
 
-![search](../images/search/search.png)
+![search](images/search/search.png)
 
 > The clear icon is shown in the Data Grid search text box when it is focused on search text or after typing the single character in the search text box. A single click of the clear icon clears the text in the search box as well as the search results in the Grid.
 
@@ -60,7 +60,7 @@ The following example demonstrates how to set an initial search in the grid usin
 {% endhighlight %}
 {% endtabs %}
 
-![Initial search](../images/search/search-initial.png)
+![Initial search](images/search/search-initial.png)
 
 > By default, grid searches all the bound column values. However, you can customize this behavior by definining the [searchSettings.fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields) property.
 
@@ -93,7 +93,7 @@ The following example demonstrates how to set the `searchSettings.operator` prop
 {% endhighlight %}
 {% endtabs %}
 
-![Search operators](../images/search/search-operator.gif)
+![Search operators](images/search/search-operator.gif)
 
 ## Search by external button
 
@@ -115,7 +115,7 @@ The `search` method allows you to perform a search operation based on a search k
 {% endhighlight %}
 {% endtabs %}
 
-![Search by external button](../images/search/search-external.png)
+![Search by external button](images/search/search-external.png)
 
 ## Search specific columns
 
@@ -132,7 +132,7 @@ The following example demonstrates how to search specific columns such as **Cust
 {% endhighlight %}
 {% endtabs %}
 
-![Search specific columns](../images/search/search-specific.gif)
+![Search specific columns](images/search/search-specific.gif)
 
 ## Search on each key stroke
 
@@ -151,7 +151,7 @@ In the following example, the `created` event is bound to the grid component, an
 {% endhighlight %}
 {% endtabs %}
 
-![Search on each key stroke](../images/search/search-keystoke.gif)
+![Search on each key stroke](images/search/search-keystoke.gif)
 
 > Search on each key stroke approach may affect the performance of the application when dealing with a large number of records.
 
@@ -170,7 +170,7 @@ The following example demonstrates how to implement searching based on column fo
 {% endhighlight %}
 {% endtabs %}
 
-![Perform search based on column formatting](../images/search/search-format.png)
+![Perform search based on column formatting](images/search/search-format.png)
 
 ## Perform search operation in Grid using multiple keywords
 
@@ -189,7 +189,7 @@ On the other hand, the [actionComplete](https://help.syncfusion.com/cr/aspnetcor
 {% endhighlight %}
 {% endtabs %}
 
-![multiple keywords](../images/search/search-multiple-key.png)
+![multiple keywords](images/search/search-multiple-key.png)
 
 > By using this approach, you can perform a search operation in the grid using multiple keywords.
 
@@ -208,7 +208,7 @@ The following example demonstrates how to define the `ignoreAccent` property wit
 {% endhighlight %}
 {% endtabs %}
 
-![ignore accent while searching](../images/search/search-accent.png)
+![ignore accent while searching](images/search/search-accent.png)
 
 > * You can set [searchSettings.ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_IgnoreAccent) property along with other search settings such as [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields), [operator](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Operator), and [ignoreCase](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_IgnoreCase) to achieve the desired search behavior.
 > * This feature works only for the characters that are not in the ASCII range.
@@ -224,14 +224,14 @@ The following example demonstrates how to highlight search text in grid using th
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/search/highlight-text/tagHelper %}
+{% include code-snippet/grid/search/high-light-text/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="highlight-text.cs" %}
-{% include code-snippet/grid/search/highlight-text/highlight-text.cs %}
+{% include code-snippet/grid/search/high-light-text/high-light-text.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Highlight the search text](../images/search/search-highlight.png)
+![Highlight the search text](images/search/search-highlight.png)
 
 ## Clear search by external button
 
@@ -250,7 +250,7 @@ The following example demonstrates how to clear the searched records using an ex
 {% endhighlight %}
 {% endtabs %}
 
-![Clear search by external button](../images/search/search-clear.gif)
+![Clear search by external button](images/search/search-clear.gif)
 
 
 > You can also clear the searched records by using the clear icon within the search input field.
