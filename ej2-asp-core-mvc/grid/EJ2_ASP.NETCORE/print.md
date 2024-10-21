@@ -23,7 +23,7 @@ To add the printing option to the grid's toolbar, simply include the [toolbar](h
 {% endhighlight %}
 {% endtabs %}
 
-![Print](../images/print/print.png)
+![Print](images/print/print.png)
 
 ## Page setup
 
@@ -47,7 +47,7 @@ You can print the grid's content using an external button by utilizing the `prin
 {% endhighlight %}
 {% endtabs %}
 
-![Print by external button](../images/print/print-external.png)
+![Print by external button](images/print/print-external.png)
 
 ## Print visible Page
 
@@ -62,7 +62,7 @@ By default, the Syncfusion ASP.NET Core Grid prints all the pages of the grid. T
 {% endhighlight %}
 {% endtabs %}
 
-![Print visible Page](../images/print/print-current.png)
+![Print visible Page](images/print/print-current.png)
 
 ## Print only selected records
 
@@ -79,7 +79,7 @@ Below is an example code that demonstrates how to print only the selected record
 {% endhighlight %}
 {% endtabs %}
 
-![Print only selected records](../images/print/print-select.png)
+![Print only selected records](images/print/print-select.png)
 
 ## Print the hierarchy grid
 
@@ -102,7 +102,7 @@ The `hierarchyPrintMode` property in the ASP.NET Core Grid lets you control the 
 {% endhighlight %}
 {% endtabs %}
 
-![Print the hierarchy grid](../images/print/print-hierachy.png)
+![Print the hierarchy grid](images/print/print-hierachy.png)
 
 ## Print the master detail grid
 
@@ -119,7 +119,7 @@ The [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.g
 {% endhighlight %}
 {% endtabs %}
 
-![Print the master detail grid](../images/print/print-master.png)
+![Print the master detail grid](images/print/print-master.png)
 
 ## Print large number of columns
 
@@ -127,7 +127,7 @@ When printing a grid with a large number of columns, the browser's default page 
 
 To show a large number of columns when printing, you can adjust the scale option from the print option panel based on your content size. This will allow you to fit the entire grid content within the printable area.
 
-![Scale Option Setting](../images/print-preview.png)
+![Scale Option Setting](images/print-preview.png)
 
 ## Show or hide columns while printing
 
@@ -148,7 +148,7 @@ Here's a code example that demonstrates how to show a hidden column (CustomerID)
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide columns while printing](../images/print/print-hide.png)
+![Show or hide columns while printing](images/print/print-hide.png)
 
 ## Limitations of printing large data
 
@@ -169,7 +169,7 @@ The Syncfusion ASP.NET Core Grid provides a [beforePrint](https://help.syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-![Retain grid styles while printing](../images/print/print-style.png)
+![Retain grid styles while printing](images/print/print-style.png)
 
 ## Print grid along with other components
 
@@ -186,4 +186,4 @@ Here is an example of how to print grid along with chart component:
 {% endhighlight %}
 {% endtabs %}
 
-![Print grid along with other components](../images/print/print-custom.png)
+![Print grid along with other components](images/print/print-custom.png)
