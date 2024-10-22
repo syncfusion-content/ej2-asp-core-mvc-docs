@@ -1,0 +1,23 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource"  allowRowDragAndDrop="true" allowSelection="true">
+    <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
+    <e-grid-rowdropsettings targetID="DestGrid"></e-grid-rowdropsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<ejs-grid id="DestGrid"  allowRowDragAndDrop="true" allowSelection="true">
+    <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
+    <e-grid-rowdropsettings targetID="Grid"></e-grid-rowdropsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
