@@ -1,0 +1,62 @@
+@Html.EJS().Grid("RowTemplate").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("335").Width("auto").RowTemplate("#rowtemplate").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").Add();
+    col.Field("Quantity").HeaderText("Quantity").Width("170").Add();
+    col.Field("ShipAddress").HeaderText("Ship Address").Width("170").Add(); 
+    col.Field("OrderDate").HeaderText("Order Date").Width("120").Add();
+    col.Field("OrderStatus").HeaderText("Order Status").Width("120").Add();
+
+}).DataBound("dataBound").Render()
+
+<script id="rowtemplate" type="text/x-template">
+    <tr class="rows">
+        <td class="chipList">${OrderID}</td>
+        <td><input class="numeric" type="text" value=${Quantity}></td>
+        <td>${ShipAddress}</td>
+        <td><input class="date-input" value="${OrderDate}"></td>
+        <td><input class="dropDownList" type="text" value="${OrderStatus}"></td>
+    </tr>
+</script>
+
+<script>
+    function dataBound(){
+        var gridInstance = document.getElementById('Grid').ej2_instances[0];
+
+        var chipList = gridInstance.getContentTable().querySelectorAll('.chipList');
+        for (var i = 0; i < chipList.length; i++) {
+            var chipValue = chipList[i].innerText;
+            new ej.buttons.ChipList({ chips: [chipValue] }, chipList[i]);
+        }
+
+        var numericList = gridInstance.getContentTable().querySelectorAll('.numeric');
+        for (var i = 0; i < numericList.length; i++) {
+            var numberValue = new ej.inputs.NumericTextBox({});
+            numberValue.appendTo(numericList[i]);
+        }
+
+        var dateList = gridInstance.getContentTable().querySelectorAll('.date-input');
+        for (var i = 0; i < dateList.length; i++) {
+            var dateInput = dateList[i];
+            var dateValue = dateInput.value;
+            var datePicker = new ej.calendars.DatePicker({
+                value: new Date(dateValue),
+            });
+            datePicker.appendTo(dateInput);
+        }
+
+        var dropDownList = gridInstance.getContentTable().querySelectorAll('.dropDownList');
+        for (var i = 0; i < dropDownList.length; i++) {
+            var dropDownInputValue = dropDownList[i];
+            var dropData = ['Processing', 'Order Placed', 'Delivered'];
+            var dropDown = new ej.dropdowns.DropDownList({
+                dataSource: dropData,
+                value: dropDownList[i].value,
+                popupHeight: 150,
+                popupWidth: 150
+            });
+            dropDown.appendTo(dropDownInputValue);
+        }
+    }
+</script>
+
+
