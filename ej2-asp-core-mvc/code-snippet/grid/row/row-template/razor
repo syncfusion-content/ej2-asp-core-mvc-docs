@@ -1,10 +1,43 @@
-@Html.EJS().Grid("RowTemplate").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("335").Width("auto").RowTemplate("#rowtemplate").Columns(col =>
+@Html.EJS().Grid("RowTemplate").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Height("335").Width("auto").RowTemplate("#rowtemplate").Columns(col =>
 {
-   col.HeaderText("Employee Image").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Width("150").Add();
+   col.HeaderText("Employee Image").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Width("150").Field("OrderID").Add();
    col.HeaderText("Employee Details").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Width("300").Field("EmployeeID").Add();
 
 }).Render()
 
+
+<script id="rowtemplate" type="text/x-template">
+    <tr>
+        <td class="photo">
+            <img src="https://ej2.syncfusion.com/demos/src/grid/images/${EmployeeID}.png" alt="${EmployeeID}" />
+        </td>
+        <td class="details">
+            <table class="cardtable" cellpadding="3" cellspacing="2">
+                <colgroup>
+                    <col width="50%">
+                    <col width="50%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td class="cardheader">First Name </td>
+                        <td>${FirstName} </td>
+                    </tr>
+                    <tr>
+                        <td class="cardheader">Last Name</td>
+                        <td>${LastName} </td>
+                    </tr>
+                    <tr>
+                        <td class="cardheader">Title
+                        </td>
+
+                        <td>${Title}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+     </tr>
+</script>
 
 <style type="text/css" class="cssStyles">
     .photo img {
@@ -18,15 +51,14 @@
     .details {
         border-color: #e0e0e0;
         border-style: solid;
+        border-width: 1px 0px 0px 0px;
     }
 
     .photo {
-        border-width: 1px 0px 0px 0px;
         text-align: center;
     }
 
     .details {
-        border-width: 1px 0px 0px 0px;
         padding-left: 18px;
     }
 
@@ -42,7 +74,7 @@
         width: 100%;
     }
 
-    .CardHeader {
+    .cardheader {
         font-weight: 600;
     }
 
@@ -50,47 +82,3 @@
         padding: 2px 2px 3px 4px;
     }
 </style>
-
-<script id="rowtemplate" type="text/x-template">
-    <tr>
-        <td class="photo">
-            <img src="/Content/images/Employees/${EmployeeID}.png" alt="${EmployeeID}" />
-        </td>
-        <td class="details">
-            <table class="CardTable" cellpadding="3" cellspacing="2">
-                <colgroup>
-                    <col width="50%">
-                    <col width="50%">
-                </colgroup>
-                <tbody>
-                    <tr>
-                        <td class="CardHeader">First Name </td>
-                        <td>${FirstName} </td>
-                    </tr>
-                    <tr>
-                        <td class="CardHeader">Last Name</td>
-                        <td>${LastName} </td>
-                    </tr>
-                    <tr>
-                        <td class="CardHeader">
-                            City
-                        </td>
-
-                        <td>
-                            ${City}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="CardHeader">
-                            Country
-                        </td>
-
-                        <td>
-                            ${Country}
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </td>
-    </tr>
-</script>
