@@ -11,22 +11,22 @@
             <img src="https://ej2.syncfusion.com/demos/src/grid/images/${EmployeeID}.png" alt="${EmployeeID}" />
         </td>
         <td class="details">
-            <table class="cardTable" cellpadding="3" cellspacing="2">
+            <table class="cardtable" cellpadding="3" cellspacing="2">
                 <colgroup>
                     <col width="50%">
                     <col width="50%">
                 </colgroup>
                 <tbody>
                     <tr>
-                        <td class="cardHeader">First Name </td>
+                        <td class="cardheader">First Name </td>
                         <td>${FirstName} </td>
                     </tr>
                     <tr>
-                        <td class="cardHeader">Last Name</td>
+                        <td class="cardheader">Last Name</td>
                         <td>${LastName} </td>
                     </tr>
                     <tr>
-                        <td class="cardHeader">Title
+                        <td class="cardheader">Title
                         </td>
 
                         <td>${Title}
@@ -73,7 +73,7 @@
         width: 100%;
     }
 
-    .cardHeader {
+    .cardheader {
         font-weight: 600;
     }
 
