@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtual Scroll in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Virtual Scroll in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Virtual Scrolling in Syncfusion ##Platform_Name## Grid Component
+description: Learn here all about Virtual Scrolling in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtual Scroll
 publishingplatform: ##Platform_Name##
@@ -9,80 +9,107 @@ documentation: ug
 ---
 
 
-# Virtualization in ASP.NET Core Grid Component
+# Virtual scrolling in ASP.NET Core Grid component
 
-Grid allows you to load large amount of data without performance degradation.
+The virtual scrolling feature in the Grid allows you to efficiently handle and display a large amount of data without experiencing any performance degradation. It optimizes the rendering process by loading only the visible rows in the Grid viewport, rather than rendering the entire dataset at once. This is particularly useful when dealing with datasets that contain thousands of records.
+
+To enable virtualization in the Grid, you need to inject the **VirtualScrollService**. This service is responsible for managing the virtual scrolling behavior and optimizing the rendering of data to enhance performance.
 
 ## Row virtualization
 
-Row virtualization allows you to load and render rows only in the content viewport. It is an alternative way of paging in which the data will be loaded while scrolling vertically. To setup the row virtualization, you need to define [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableVirtualization) as true and content height by [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property.
+Row virtualization is a feature in the Syncfusion Grid that allows you to load and render rows only in the content viewport. It provides an alternative way of paging where data is loaded dynamically while scrolling vertically, rather than loading all the data at once. This is particularly useful when dealing with large datasets, as it improves the performance and reduces the initial load time.
 
-The number of records displayed in the Grid is determined implicitly by height of the content area. Also, you have an option to define a visible number of records by
-the [`pageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize) property of [`e-grid-pagesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PageSettings) tag helper. The loaded data will be cached and reused when it is needed for next time.
+To set up row virtualization, you need to define the [enableVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableVirtualization) property as **true** and specify the content height using the [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property in the Grid configuration.
 
-{% if page.publishingplatform == "aspnet-core" %}
+The number of records displayed in the Grid is implicitly determined by the height of the content area. Additionally, you have an option to explicitly define the visible number of records using the [pageSettings.pageSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize) property. The loaded data will be cached and reused when needed in the future.
+
+The following example enable row virtualization using `enableVirtualization` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/virtual-grid/row-virtualization/tagHelper %}
+{% include code-snippet/grid/scrolling/row-virtualization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Row-virtualization.cs" %}
-{% include code-snippet/grid/virtual-grid/row-virtualization/row-virtualization.cs %}
+{% include code-snippet/grid/scrolling/row-virtualization/row-virtualization.cs%}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Row virtualization](../../images/scrolling/scrolling-virtual.gif)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/virtual-grid/row-virtualization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Row-virtualization.cs" %}
-{% include code-snippet/grid/virtual-grid/row-virtualization/row-virtualization.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+### Limitations 
 
+* Row virtual scrolling is not compatible with the following feature
+	1. Batch editing
+	2. Detail template
+	3. Row template
+	4. Rowspan
+	5. Autofill
+	6. Hierarchy grid
+    7. Page
+* AutoFill support for Batch mode editing, so this feature is not compatible with Row Virtualization feature. 
+* When row virtual scrolling is activated, compatibility for copy-paste and drag-and-drop operations is limited to the data items visible in the current viewport of the grid.
+* The cell-based selection is not supported for row virtual scrolling. 
+* Using different row heights with a template column, when the template height differs for each row, is not supported.
+* Group expand and collapse state will not be persisted for remote data.
+* Due to the element height limitation in browsers, the maximum number of records loaded by the Grid is limited by the browser capability.
+* The height of the grid content is calculated using the row height and total number of records in the data source and hence features which changes row height such as text wrapping are not supported.
+* If you want to increase the row height to accommodate the content then you can specify the row height as below to ensure all the table rows are in same height.
 
+    ```css
+    .e-grid .e-row {
+        height: 2em;
+    }
+    ```
+* Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/grouping#group-with-paging) topic. 
+* It is necessary to set a static height for the component or its parent container when using row virtualization. The 100% height will work only if the component height is set to 100%, and its parent container has a static height.
 
 ## Column virtualization
 
-Column virtualization allows you to virtualize columns. It will render columns which are in the viewport. You can scroll horizontally to view more columns.
+Column virtualization feature in the Syncfusion Grid that allows you to optimize the rendering of columns by displaying only the columns that are currently within the viewport. It allows horizontal scrolling to view additional columns. This feature is particularly useful when dealing with grids that have a large number of columns, as it helps to improve the performance and reduce the initial loading time.
 
-To setup the column virtualization, set the [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableVirtualization) and [`enableColumnVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableColumnVirtualization) properties as **true**.
+To enable column virtualization, you need to set the [enableColumnVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableColumnVirtualization) property of the Grid to **true**. This configuration instructs the Grid to only render the columns that are currently visible in the viewport. 
 
-{% if page.publishingplatform == "aspnet-core" %}
+The following example enable column virtualization using `enableColumnVirtualization`  property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/virtual-grid/column-virtualization/tagHelper %}
+{% include code-snippet/grid/scrolling/column-virtualization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Column-virtualization.cs" %}
-{% include code-snippet/grid/virtual-grid/column-virtualization/Column-virtualization.cs %}
+{% include code-snippet/grid/scrolling/column-virtualization/column-virtualization.cs%}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Column virtualization](../../images/scrolling/)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/virtual-grid/column-virtualization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Column-virtualization.cs" %}
-{% include code-snippet/grid/virtual-grid/column-virtualization/Column-virtualization.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+> Column's [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
 
+### Limitations 
 
+* While using column virtual scrolling, column width should be in pixel. Percentage values are not accepted.
+* Selected column details are only retained within the viewport. When the next set of columns is loaded, the selection for previously visible columns is lost.
+* The cell selection is not supported for column virtual scrolling
+* The following features are compatible with column virtualization and work within the viewport:
+   1. Column resizing
+   2. Column reordering
+   3. Column chooser
+   4. Auto-fit
+   5. Print
+   6. Clipboard
+   7. Column menu - Column chooser, AutofitAll
 
-N> Column's [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
-
-## Virtualization with grouping
-
-Both the row and column virtualization can be used along with grouping. At initial rendering, the virtual height of scrollbar will be set based on the total number of records and after grouping, it will be refreshed based on the grouped state(expand/collapse). While collapse the group caption row in current viewport then the next view page grouped records are shown.
-
-N> The collapsed/expanded state will persist only for local dataSource while scrolling.
+* Column virtual scrolling is not compatible with the following feature
+    1. Grouping
+    2. Colspan
+    3. Batch editing
+    4. Column with infinite scrolling
+    6. Stacked header
+    7. Row template
+    8. Detail template
+    9. Hierarchy grid
+    10. Autofill
+    11. Column chooser
+    12. Page
 
 ## Limitations for virtual scrolling
 
