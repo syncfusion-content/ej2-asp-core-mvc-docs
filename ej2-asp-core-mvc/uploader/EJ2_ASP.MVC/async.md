@@ -124,46 +124,24 @@ You can cancel the upload process by setting the upload event argument [eventarg
 This section explains how to handle the server-side action for saving the file from server.
 
 ```csharp
-[AcceptVerbs("Post")]
-public void Save()
-{
-    try
-    {
-        var httpPostedFile = System.Web.HttpContext.Current.Request.Files["UploadFiles"];
+public string uploads = ".\\Uploaded Files"; // replace with your directory path
 
-        if (httpPostedFile != null)
+public async Task<IActionResult> Save(IFormFile UploadFiles)
+{
+    if (UploadFiles.Length > 0)
+    {
+        if (!Directory.Exists(uploads)) // Create the directory if not exists
         {
-        var fileSave = System.Web.HttpContext.Current.Server.MapPath("UploadedFiles");
-        var fileSavePath = Path.Combine(fileSave, httpPostedFile.FileName);
-        if (!System.IO.File.Exists(fileSavePath))
-            {
-                HttpResponse Response = System.Web.HttpContext.Current.Response;
-                Response.Clear();
-                Response.ContentType = "application/json; charset=utf-8";
-                Response.StatusDescription = "File uploaded succesfully";
-                Response.End();
-            }
-            else
-            {
-                HttpResponse Response = System.Web.HttpContext.Current.Response;
-                Response.Clear();
-                Response.Status = "204 File already exists";
-                Response.StatusCode = 204;
-                Response.StatusDescription = "File already exists";
-                Response.End();
-            }
+            Directory.CreateDirectory(uploads);
+        }
+
+        var filePath = Path.Combine(uploads, UploadFiles.FileName); // Get the file path
+        using (var fileStream = new FileStream(filePath, FileMode.Create)) // Create the file
+        {
+            await UploadFiles.CopyToAsync(fileStream); // Save the file
         }
     }
-    catch (Exception e)
-    {
-        HttpResponse Response = System.Web.HttpContext.Current.Response;
-        Response.Clear();
-        Response.ContentType = "application/json; charset=utf-8";
-        Response.StatusCode = 204;
-        Response.Status = "204 No Content";
-        Response.StatusDescription = e.Message;
-        Response.End();
-    }
+    return Ok();
 }
 ```
 
@@ -307,34 +285,56 @@ You can remove the files which is not uploaded locally by clicking the remove ic
 
 ### Server-side configuration for remove action
 
-This section explains how to handle the server-side action for removing the file from server.
+To remove an uploaded file from the server, it is sufficient to send only the file name. You can achieve this by setting the `postRawFile` property of the `RemovingEventArgs` to `false` during the [`removing`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.uploader.html#Syncfusion_EJ2_Inputs_Uploader_Removing) event. This ensures that only the file name is sent to the server in the Remove action.
+
+Here is an example:
 
 ```csharp
-[AcceptVerbs("Post")]
-public void Remove()
+@Html.EJS().Uploader("UploadFiles").AutoUpload(false).Removing("onFileRemove").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save", RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).Render()
+```
+
+```typescript
+function onFileRemove(args) {
+    args.postRawFile = false;
+}
+```
+
+Here’s how to handle the server-side action for removing the file from server.
+
+```csharp
+public void Remove(string UploadFiles)
 {
-    try
+    if (UploadFiles != null)
     {
-        HttpResponse Response = System.Web.HttpContext.Current.Response;
-        Response.Clear();
-        Response.Status = "200 OK";
-        Response.StatusCode = 200;
-        Response.ContentType = "application/json; charset=utf-8";
-        Response.StatusDescription = "File removed succesfully";
-        Response.End();
-    }
-    catch (Exception e)
-    {
-        HttpResponse Response = System.Web.HttpContext.Current.Response;
-        Response.Clear();
-        Response.Status = "200 OK";
-        Response.StatusCode = 200;
-        Response.ContentType = "application/json; charset=utf-8";
-        Response.StatusDescription = "File removed succesfully";
-        Response.End();
+        var filePath = Path.Combine(uploads, UploadFiles);
+        if (System.IO.File.Exists(filePath))
+        {
+            System.IO.File.Delete(filePath); // Delete the file
+        }
     }
 }
+```
+When `postRawFile` is enabled, the complete file data will be sent to the server-side `Remove` action. The `postRawFile` option is enabled by default.
 
+Here is an example:
+
+```csharp
+@Html.EJS().Uploader("UploadFiles").AutoUpload(false).Removing("onFileRemove").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save", RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).Render()
+```
+
+```typescript
+function onFileRemove(args) {
+    // The `postRawFile` option is enabled by default.
+}
+```
+
+Here’s how to receive the file data in the server-side `Remove` action:
+
+```csharp
+public void Remove(IFormFile UploadFiles)
+{
+    // Your file removal logic goes here!
+}
 ```
 
 ## Auto upload
