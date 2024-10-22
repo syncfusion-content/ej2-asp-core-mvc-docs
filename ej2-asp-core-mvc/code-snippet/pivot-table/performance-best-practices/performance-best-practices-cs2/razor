@@ -1,0 +1,16 @@
+@Html.EJS().PivotView("PivotView").Width("100%").Height("350").ShowGroupingBar(true).AllowGrouping(true).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true)
+        .FormatSettings(formatsettings =>
+        {
+            formatsettings.Name("Amount").Format("C").Add();
+            formatsettings.Name("Date_Year").Type("date").Format("yyyy").Add();
+            formatsettings.Name("Date_Month").Type("date").Format("MMM").Add();
+        })
+        .Rows(rows => { rows.Name("Date_Year").Caption("Year").Add();
+                        rows.Name("Date_Month").Caption("Month").Add();
+            })
+                .Columns(columns => { columns.Name("Product_ID").Caption("Product ID").Add(); })
+        .Values(values =>
+        {
+            values.Name("Sold").Caption("Units Sold").Add();
+            values.Name("Amount").Caption("Sold Amount").Add();
+        })).Render()
