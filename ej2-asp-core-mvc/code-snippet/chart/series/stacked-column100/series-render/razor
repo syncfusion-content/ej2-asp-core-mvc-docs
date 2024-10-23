@@ -1,0 +1,33 @@
+@Html.EJS().Chart("container-vertical").SeriesRender("changeColor").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y").Width(2).DataSource(ViewBag.dataSource)
+    .Name("John").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y1").Width(2).DataSource(ViewBag.dataSource)
+    .Name("Peter").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y2").Width(2).DataSource(ViewBag.dataSource)
+    .Name("Steve").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y3").Width(2).DataSource(ViewBag.dataSource)
+    .Name("Charle").Add();
+}).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Title("Family Expense for Month").Render()
+
+
+<script>
+    function changeColor(args) {
+        if (args.series.index === 0) {
+            args.fill = '#ff4251';
+        }
+        else if (args.series.index === 1) {
+            args.fill = '#4C4C4C';
+        }
+        else if (args.series.index === 2) {
+            args.fill = '#794F1B';
+        }
+        else if (args.series.index === 3) {
+            args.fill = '#1a9a6f';
+        }
+    }
+</script>

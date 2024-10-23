@@ -1,0 +1,9 @@
+<ejs-chart id="container" title="Olympic Medals" width="60%">
+    <e-chart-primaryxaxis valueType="Category">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline"
+            splineType="@Syncfusion.EJ2.Charts.SplineType.Cardinal"></e-series>
+    </e-series-collection>
+</ejs-chart>

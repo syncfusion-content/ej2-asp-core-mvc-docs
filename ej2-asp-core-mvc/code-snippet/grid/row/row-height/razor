@@ -1,9 +1,22 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+<div id="changeHeight" style="margin-bottom:10px">
+   @Html.EJS().Button("small").CssClass("e-outline").Content("Change height 20px").Render();
+   @Html.EJS().Button("medium").CssClass("e-outline").Content("Change height 42px").Render();
+   @Html.EJS().Button("big").CssClass("e-outline").Content("Change height 60px").Render();
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).RowHeight(42).Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
-
-}).RowHeight(60).Render()
+   col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("130").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+   col.Field("ShippedDate").HeaderText("Shipped Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("140").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+}).Render()
+<script>
+document.getElementById('changeHeight').onclick=function(args)
+{
+    var heightRow={small: 20, medium: 40, big: 60};
+    var grid = document.getElementById('Grid').ej2_instances[0];
+    grid.rowHeight = (heightRow)[args.target.id];
+}
+</script>

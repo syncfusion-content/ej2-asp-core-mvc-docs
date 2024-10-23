@@ -23,7 +23,7 @@ Once column resizing is enabled, columns width can be resized by clicking and dr
 {% endhighlight %}
 {% endtabs %}
 
-![Column resizing](../../images/column-resize/column-resize.gif)
+![Column resizing](../images/column-resize/column-resize.gif)
 
 >* You can disable Resizing for a particular column, by specifying `Columns.AllowResizing` to **false**.
 >* In RTL mode, you can click and drag the left edge of header cell to resize the column.
@@ -46,7 +46,7 @@ In the below code, **OrderID**, **Ship Name** and **Ship Country** columns are d
 {% endhighlight %}
 {% endtabs %}
 
-![Restrict the resizing based on minimum and maximum width](../../images/column-resize/Colum-resize-max.gif)
+![Restrict the resizing based on minimum and maximum width](../images/column-resize/Colum-resize-max.gif)
 
 >* The `Columns.MinWidth` and `Columns.MaxWidth` properties will be considered only when the user resizes the column. When resizing the window, these properties will not be considered. This is because columns cannot be re-rendered when resizing the window.
 >* When setting the `MinWidth` and `MaxWidth` properties, ensure that the values are appropriate for your data and layout requirements.
@@ -88,7 +88,7 @@ The following example demonstrates how to set the [ResizeSettings.Mode](https://
 {% endhighlight %}
 {% endtabs %}
 
-![Resizing modes](../../images/column-resize/Colum-resize-mode.gif)
+![Resizing modes](../images/column-resize/Colum-resize-mode.gif)
 
 ## Resize stacked header column
 
@@ -105,7 +105,7 @@ In this below code, we have disabled resize for **Ship City** column.
 {% endhighlight %}
 {% endtabs %}
 
-![Reorder events](../../images/column-resize/Colum-resize-stacked.gif)
+![Reorder events](../images/column-resize/Colum-resize-stacked.gif)
 
 > When the [AutoFit](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AutoFit) property is set to **true**, the Grid will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `AutoFit` property is set to **true**, the Grid will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the Grid will ignore any empty space.
 
@@ -125,7 +125,7 @@ To resize columns on a touch device:
 
 The following screenshot represents the column resizing on the touch device.
 
-![Touch Interaction](../../images/column-resizing.jpg)
+![Touch Interaction](../images/column-resizing.jpg)
 
 ## Resizing column externally
 
@@ -142,7 +142,7 @@ The following example demonstrates how to resize the columns in a grid. This is 
 {% endhighlight %}
 {% endtabs %}
 
-![Reorder events](../../images/column-resize/Colum-resize-external.png)
+![Reorder events](../images/column-resize/Colum-resize-external.png)
 
 >  The `refreshColumns` method is used to refresh the grid after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
 
@@ -167,7 +167,7 @@ The following is an example of using the resizing events, the `ResizeStart` even
 {% endhighlight %}
 {% endtabs %}
 
-![Reorder events](../../images/column-resize/Colum-resize-event.gif)
+![Reorder events](../images/column-resize/Colum-resize-event.gif)
 
 
 >The ResizeArgs object passed to the events contains information such as the current column width, new column width, column index, and the original event. The [Resizing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Resizing) event is triggered multiple times during a single resize operation, so be careful when performing heavy operations in this event.

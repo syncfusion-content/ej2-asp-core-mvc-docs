@@ -1,18 +1,33 @@
+<div id='show' style="padding:0px 0px 20px 0px;"></div>
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" rowDataBound="rowDataBound">
-    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" width="120" format='C2'></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="140"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
 <script>
     function rowDataBound(args) {
-        var gridElement = document.getElementById('Grid').ej2_instances[0];
         args.row.addEventListener('mouseover', function (e) {
-            console.log(gridElement.getRowInfo(e.target))
-        })
+            var grid = document.getElementById('Grid').ej2_instances[0];
+            var rowInformation = (grid.getRowInfo(e.target));
+            document.getElementById('show').innerHTML = 
+            `<table style="border-collapse: collapse; width: 450px;">
+              <tr style="border: 2px solid;">
+                <td style="padding: 2px;"><b>Row Information:</b></td>
+              </tr>
+              <tr style="border: 2px solid; padding: 8px;">
+                <th style="border: 2px solid; padding: 8px; width: 120px;"><b>Class Name</b></th>
+                <td style="border: 2px solid; padding: 8px;">${rowInformation.row.className}</td>
+              </tr>
+              <tr style="border: 2px solid;">
+                <th style="border: 2px solid; padding: 8px;"><b>Row Index</b></th>
+                <td style="border: 2px solid; padding: 8px;">${rowInformation.rowIndex}</td>
+              </tr>
+             </table>`;
+
+        });
     }
 </script>

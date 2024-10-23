@@ -20,19 +20,19 @@ Formatting options make your data easier to view and understand. The different t
 
 Number formatting provides a type for your data in the Spreadsheet. Use the [`allowNumberFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowNumberFormatting) property to enable or disable the number formatting option in the Spreadsheet. The different types of number formatting supported in Spreadsheet are,
 
-| Types | Format |
-|-------|---------|
-| General(default) | NA |
-| Number | `0.00` |
-| Currency | `$#,##0.00` |
-| Accounting | `_($* #,##0.00_);_($* (#,##0.00);_($* "-"??_);_(@_)` |
-| ShortDate | `mm-dd-yyyy` |
-| LongDate | `dddd, mmmm dd, yyyy` |
-| Time | `h:mm:ss AM/PM` |
-| Percentage | `0.00%` |
-| Fraction | `# ?/?` |
-| Scientific |`0.00E+00`  |
-| Text | `@` |
+| Types | Format Code | Format ID |
+|---------|---------|---------|
+| General(default) | NA | 0 |
+| Number | `0.00` | 2 |
+| Currency | `$#,##0.00` | NA |
+| Accounting | `_($* #,##0.00_);_($* (#,##0.00);_($* "-"??_);_(@_)` | 44 |
+| ShortDate | `m/d/yyyy` | 14 |
+| LongDate | `dddd, mmmm dd, yyyy` | NA |
+| Time | `h:mm:ss AM/PM` | NA |
+| Percentage | `0.00%` | 10 |
+| Fraction | `# ?/?` | 12 |
+| Scientific |`0.00E+00`  | 11 |
+| Text | `@` | 49 |
 
 Number formatting can be applied in following ways,
 * Using the `format` property in `cell`, you can set the desired format to each cell at initial load.
@@ -43,46 +43,46 @@ Number formatting can be applied in following ways,
 
 Spreadsheet supports custom number formats to display your data as numbers, dates, times, percentages, and currency values. If the pre-defined number formats do not meet your needs, you can set your own custom formats using custom number formats dialog or `numberFormat` method.
 
-The different types of custom number formatting supported in Spreadsheet are,
+The different types of custom number format populated in the custom number format dialog are,
 
-| Types | Format |
-|-------|---------|
-| General(default) | NA |
-| Number | `0` |
-| Number | `0.00` |
-| Number | `#,##0` |
-| Number | `#,##0.00` |
-| Number | `#,##0_);(#,##0)` |
-| Number | `#,##0_);[Red](#,##0)` |
-| Number | `#,##0.00_);(#,##0.00)` |
-| Number | `#,##0.00_);[Red](#,##0.00)` |
-| Currency | `$#,##0_);($#,##0)` |
-| Currency | `$#,##0_);[Red]($#,##0)` |
-| Currency | `$#,##0.00_);($#,##0.00)` |
-| Currency | `$#,##0.00_);[Red]($#,##0.00)` |
-| Percentage | `0%` |
-| Percentage | `0.00%` |
-| Scientific |`0.00E+00`  |
-| Scientific |`##0.0E+0`  |
-| Fraction | `# ?/?` |
-| Fraction | `# ??/??` |
-| ShortDate | `dd-mm-yy` |
-| Custom | `dd-mmm-yy` |
-| Custom | `dd-mmm` |
-| Custom | `mmm-yy` |
-| Custom | `h:mm AM/PM` |
-| Custom | `h:mm:ss AM/PM` |
-| Custom | `h:mm` |
-| Custom | `h:mm:ss` |
-| Custom | `dd-mm-yy h:mm` |
-| Custom | `mm:ss` |
-| Custom | `mm:ss.0` |
-| Text | `@` |
-| Custom | `[h]:mm:ss` |
-| Accounting | `_($* #,##0_);_($* (#,##0);_($* "-"_);_(@_)` |
-| Accounting | `_(* #,##0_);_(* (#,##0);_(* "-"_);_(@_)` |
-| Accounting | `_($* #,##0.00_);_($* (#,##0.00);_($* "-"??_);_(@_)` |
-| Accounting | `_(* #,##0.00_);_(* (#,##0.00);_(* "-"??_);_(@_)` |
+| Type | Format Code | Format ID |
+|-------|---------|---------|
+| General(default) | NA | 0 |
+| Number | `0` | 1 |
+| Number | `0.00` | 2 |
+| Number | `#,##0` | 3 |
+| Number | `#,##0.00` | 4 |
+| Number | `#,##0_);(#,##0)` | 37 |
+| Number | `#,##0_);[Red](#,##0)` | 38 |
+| Number | `#,##0.00_);(#,##0.00)` | 39 |
+| Number | `#,##0.00_);[Red](#,##0.00)` | 40 |
+| Currency | `$#,##0_);($#,##0)` | 5 |
+| Currency | `$#,##0_);[Red]($#,##0)` | 6 |
+| Currency | `$#,##0.00_);($#,##0.00)` | 7 |
+| Currency | `$#,##0.00_);[Red]($#,##0.00)` | 8 |
+| Percentage | `0%` | 9 |
+| Percentage | `0.00%` | 10 |
+| Scientific |`0.00E+00`  | 11 |
+| Scientific |`##0.0E+0`  | 48 |
+| Fraction | `# ?/?` | 12 |
+| Fraction | `# ??/??` | 13 |
+| ShortDate | `m/d/yyyy` | 14 |
+| Custom | `d-mmm-yy` | 15 |
+| Custom | `d-mmm` | 16 |
+| Custom | `mmm-yy` | 17 |
+| Custom | `h:mm AM/PM` | 18 |
+| Custom | `h:mm:ss AM/PM` | 19 |
+| Custom | `h:mm` | 20 |
+| Custom | `h:mm:ss` | 21 |
+| Custom | `m/d/yyyy h:mm` | 22 |
+| Custom | `mm:ss` | 45 |
+| Custom | `mm:ss.0` | 47 |
+| Text | `@` | 49 |
+| Custom | `[h]:mm:ss` | 46 |
+| Accounting | `_($* #,##0_);_($* (#,##0);_($* "-"_);_(@_)` | 42 |
+| Accounting | `_(* #,##0_);_(* (#,##0);_(* "-"_);_(@_)` | 41 |
+| Accounting | `_($* #,##0.00_);_($* (#,##0.00);_($* "-"??_);_(@_)` | 44 |
+| Accounting | `_(* #,##0.00_);_(* (#,##0.00);_(* "-"??_);_(@_)` | 43 |
 
 Custom Number formatting can be applied in following ways,
 * Using the `numberFormat` method, you can set your own custom number format to a cell or range of cells.
@@ -113,7 +113,111 @@ The following code example shows the number formatting in cell data.
 {% endtabs %}
 {% endif %}
 
+## Configure culture-based custom format
 
+Previously, the custom format dialog always displayed formats using the English settings (group separator, decimal separator, and currency symbol were not updated based on the applied culture). Starting from version `27.1.*`, the custom format dialog will now display formats according to the applied culture. You can select a culture-based number format from the dialog or enter your own format using the culture-specific decimal separator, group separator, and currency symbol. Then, click "Apply" to apply the culture-specific custom format to the selected cells.
+
+The spreadsheet allows customization of formats in the custom format dialog using the `configureLocalizedFormat` method. In this method, you need to pass a collection containing the default number format IDs and their corresponding format codes as arguments. Based on this collection, the custom format dialog will display the customized formats. You can refer to the [default number format IDs](https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.spreadsheet.numberingformat?view=openxml-2.8.1) from the Excel built-in number format reference.
+
+Compared to Excel, the date, time, currency, and accounting formats vary across different cultures. For example, when an Excel file with the date format `'m/d/yyyy'` is imported in the `en-US` culture, the spreadsheet displays the date in that format. However, when the same file is imported in the German culture, the date format changes to `'dd.MM.yyyy'`, which is the default for that region. The default number format ID for the date is 14. To customize the date format based on the culture, you should map the default number format ID to the appropriate culture-specific format code, like this: `{ id: 14, code: 'dd.MM.yyyy' }` in the `configureLocalizedFormat` method.
+
+> The format code should use the default decimal separator (.) and group separator (,).
+
+The code below illustrates how culture-based format codes are mapped to their corresponding number format ID for the `German` culture.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+```csharp
+List<object> deLocaleFormats = new List<object>()
+{
+    new { id = 37, code = @"#,##0;-#,##0" },
+    new { id = 38, code = @"#,##0;[Red]-#,##0" },
+    new { id = 39, code = @"#,##0.00;-#,##0.00" },
+    new { id = 40, code = @"#,##0.00;[Red]-#,##0.00" },
+    new { id = 5, code = @"#,##0 ""€"";-#,##0 ""€""" },
+    new { id = 6, code = @"#,##0 ""€"";[Red]-#,##0 ""€""" },
+    new { id = 7, code = @"#,##0.00 ""€"";-#,##0.00 ""€""" },
+    new { id = 8, code = @"#,##0.00 ""€"";[Red]-#,##0.00 ""€""" },
+    new { id = 41, code = @"_-* #,##0_-;-* #,##0_-;_-* ""-""_-;_-@_-" },
+    new { id = 42, code = @"_-* #,##0 ""€""_-;-* #,##0 ""€""_-;_-* ""-"" ""€""_-;_-@_-" },
+    new { id = 43, code = @"_-* #,##0.00_-;-* #,##0.00_-;_-* ""-""??_-;_-@_-" },
+    new { id = 44, code = @"_-* #,##0.00 ""€""_-;-* #,##0.00 ""€""_-;_-* ""-""?? ""€""_-;_-@_-" },
+    new { id = 14, code = @"dd.MM.yyyy" },
+    new { id = 15, code = @"dd. MMM yy" },
+    new { id = 16, code = @"dd. MMM" },
+    new { id = 17, code = @"MMM yy" },
+    new { id = 20, code = @"hh:mm" },
+    new { id = 21, code = @"hh:mm:ss" },
+    new { id = 22, code = @"dd.MM.yyyy hh:mm" }
+};
+ViewBag.deLocaleFormats = deLocaleFormats;
+
+<script>
+    var deLocaleFormats = @Html.Raw(Json.Serialize(deLocaleFormats));
+    // Mapping culture-based number formats for the "de" culture: The "spreadsheet" parameter is an instance of the spreadsheet component, and the "deLocaleFormats" parameter is an array containing format codes and their corresponding format IDs for the "de" culture.
+    ej.spreadsheet.configureLocalizedFormat(spreadsheet, deLocaleFormats);
+</script>
+```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+```csharp
+List<object> deLocaleFormats = new List<object>()
+{
+    new { id = 37, code = @"#,##0;-#,##0" },
+    new { id = 38, code = @"#,##0;[Red]-#,##0" },
+    new { id = 39, code = @"#,##0.00;-#,##0.00" },
+    new { id = 40, code = @"#,##0.00;[Red]-#,##0.00" },
+    new { id = 5, code = @"#,##0 ""€"";-#,##0 ""€""" },
+    new { id = 6, code = @"#,##0 ""€"";[Red]-#,##0 ""€""" },
+    new { id = 7, code = @"#,##0.00 ""€"";-#,##0.00 ""€""" },
+    new { id = 8, code = @"#,##0.00 ""€"";[Red]-#,##0.00 ""€""" },
+    new { id = 41, code = @"_-* #,##0_-;-* #,##0_-;_-* ""-""_-;_-@_-" },
+    new { id = 42, code = @"_-* #,##0 ""€""_-;-* #,##0 ""€""_-;_-* ""-"" ""€""_-;_-@_-" },
+    new { id = 43, code = @"_-* #,##0.00_-;-* #,##0.00_-;_-* ""-""??_-;_-@_-" },
+    new { id = 44, code = @"_-* #,##0.00 ""€""_-;-* #,##0.00 ""€""_-;_-* ""-""?? ""€""_-;_-@_-" },
+    new { id = 14, code = @"dd.MM.yyyy" },
+    new { id = 15, code = @"dd. MMM yy" },
+    new { id = 16, code = @"dd. MMM" },
+    new { id = 17, code = @"MMM yy" },
+    new { id = 20, code = @"hh:mm" },
+    new { id = 21, code = @"hh:mm:ss" },
+    new { id = 22, code = @"dd.MM.yyyy hh:mm" }
+};
+ViewBag.deLocaleFormats = deLocaleFormats;
+
+<script>
+    var deLocaleFormats = @Html.Raw(Json.Encode(deLocaleFormats));
+    // Mapping culture-based number formats for the "de" culture: The "spreadsheet" parameter is an instance of the spreadsheet component, and the "deLocaleFormats" parameter is an array containing format codes and their corresponding format IDs for the "de" culture.
+    ej.spreadsheet.configureLocalizedFormat(spreadsheet, deLocaleFormats);
+</script>
+```
+
+{% endif %}
+
+The following code example demonstrates how to configure culture-based formats for different cultures in the spreadsheet.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/globalization-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CultureController.cs" %}
+{% include code-snippet/spreadsheet/globalization-cs1/cultureController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/globalization-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CultureController.cs" %}
+{% include code-snippet/spreadsheet/globalization-cs1/cultureController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Text and cell formatting
 

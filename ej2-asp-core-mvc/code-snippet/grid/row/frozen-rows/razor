@@ -1,0 +1,26 @@
+<div style="display:flex; margin-bottom:5px">
+  <label style="padding: 0px 5px 5px 5px">Change the frozen rows:</label>
+  @Html.EJS().NumericTextBox("frozenRows").Min('0').Max('5').Width("100").Format("n").Value(2).ValidateDecimalOnType(true).Decimals(0).Render()
+  @Html.EJS().Button("updateButton").Content("Update").Render()
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).FrozenRows(2).Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+  col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipName").HeaderText("Ship Name").Width("100").Add();
+  col.Field("ShipAddress").HeaderText("Ship Address").Width("100").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("100").Add();
+  col.Field("ShipRegion").HeaderText("Ship Region").Width("100").Add();
+  col.Field("ShipPostalCode").HeaderText("Ship Postal Code").Width("100").Add();
+  col.Field("Freight").HeaderText("Freight").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+}).Render()
+
+<script type="text/javascript">
+  document.getElementById('updateButton').addEventListener('click', function () {
+      var grid = document.getElementById('Grid').ej2_instances[0];
+      grid.frozenRows = document.getElementById("frozenRows").ej2_instances[0].value;;
+  });
+  </script>
