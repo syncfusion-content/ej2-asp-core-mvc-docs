@@ -102,7 +102,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Adding icons to the TextBox
 
-Create an icon in the TextBox using the `addIcon` method and enable the float label using the [FloatLabelType](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.inputs.textbox.html#Syncfusion_EJ2_Inputs_TextBox_FloatLabelType) property. The user can place the icon on either side of the TextBox by specifying “append” or “prepend” in the addIcon method.
+You can create a TextBox with an icon by using the `addIcon` method within the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_Created) event. For detailed information, refer to the [Groups](./groups) section.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
