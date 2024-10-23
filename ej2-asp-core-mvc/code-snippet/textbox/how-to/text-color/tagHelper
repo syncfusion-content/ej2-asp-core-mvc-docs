@@ -3,7 +3,7 @@
     <ejs-textbox id="default" placeholder="Enter numeric values" onkeyup="onKeyup(this)" ></ejs-textbox>
 
     <label> Floating Input </label>
-    <ejs-textbox  id="float-text" placeholder="Enter numeric values" onkeyup="onKeyup(this)"></ejs-textbox>
+    <ejs-textbox  id="float-text" placeholder="Enter numeric values" floatLabelType="Auto" onkeyup="onKeyup(this)"></ejs-textbox>
 
 </div>
 

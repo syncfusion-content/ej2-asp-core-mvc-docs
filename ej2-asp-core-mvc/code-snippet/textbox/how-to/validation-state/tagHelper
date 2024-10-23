@@ -6,17 +6,17 @@
 </div>
 
 <style>
-/* To specify font size and color */
-.e-float-input.e-success label.e-float-text,
-.e-float-input.e-success input:focus ~ label.e-float-text,
-.e-float-input.e-success input:valid ~ label.e-float-text {
-    color: #22b24b !important;
-}
+    /* For Success state */
+    .e-float-input.e-success label.e-float-text,
+    .e-float-input.e-success input:focus ~ label.e-float-text,
+    .e-float-input.e-success input:valid ~ label.e-float-text {
+        color: #22b24b;
+    }
 
-/* For Warning state */
-.e-float-input.e-warning label.e-float-text,
-.e-float-input.e-warning input:focus ~ label.e-float-text,
-.e-float-input.e-warning input:valid ~ label.e-float-text {
-    color: #ffca1c !important;
-}
+    /* For Warning state */
+    .e-float-input.e-warning label.e-float-text,
+    .e-float-input.e-warning input:focus ~ label.e-float-text,
+    .e-float-input.e-warning input:valid ~ label.e-float-text {
+        color: #ffca1c;
+    }
 </style>
