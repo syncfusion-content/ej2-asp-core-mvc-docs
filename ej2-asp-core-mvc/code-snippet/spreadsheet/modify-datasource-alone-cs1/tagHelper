@@ -1,67 +1,53 @@
+@{
+    var itemData = ViewBag.ItemData as List<Object>;
+}
+
 <div>
     <button id="changeDataBtn" class='e-btn'>Change Datasource</button>
 </div>
-<ejs-spreadsheet id="spreadsheet" dataSourceChanged="dataSourceChanged">
+
+<ejs-spreadsheet id="spreadsheet" created="created">
     <e-spreadsheet-sheets>
         <e-spreadsheet-sheet>
             <e-spreadsheet-ranges>
-                <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                <e-spreadsheet-range dataSource="ViewBag.DefaultData" showFieldAsHeader="true"></e-spreadsheet-range>
             </e-spreadsheet-ranges>
+            <e-spreadsheet-columns>
+                <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                <e-spreadsheet-column width="180"></e-spreadsheet-column>
+                <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                <e-spreadsheet-column width="120"></e-spreadsheet-column>
+            </e-spreadsheet-columns>
         </e-spreadsheet-sheet>
     </e-spreadsheet-sheets>
 </ejs-spreadsheet>
-<div>
-    <h4><b>Event Trace</b></h4>
-    <div id="evt">
-        <div style="height:173px;overflow: auto;min-width: 250px;">
-            <span id="EventLog" style="word-break: normal;"></span>
-        </div>
-        <button id="clearBtn" class='e-btn'>Clear</button>
-    </div>
-</div>
 
 <script>
 
+    var itemData = @Html.Raw(Json.Serialize(itemData));
+    
     document.getElementById('changeDataBtn').addEventListener('click', () => {
         var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
-        var itemData = [
+          // You can also change the datasource of the range by changing dataSource property of the range by using below line of code.
+        //To maintain the styles and format while changing the dataSource, you can utilize the below code.
+        if (spreadsheet.sheets && spreadsheet.sheets[0].ranges) {
+            spreadsheet.sheets[0].ranges[0].dataSource = [];
+            spreadsheet.sheets[0].ranges[0] = { dataSource: itemData, startCell: 'A1', showFieldAsHeader: true };
+            spreadsheet.dataBind();
+            spreadsheet.refresh();
+        }
+    });
+
+    function created() {
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        spreadsheet.cellFormat(
             {
-                'Item Name': 'Casual Shoes',
-                'Date': '02/14/2019',
-                'Time': '11:34:32 AM',
-                'Quantity': 10,
-                'Price': 20,
-                'Amount': '=D2*E2',
-                'Discount': 1,
-                'Profit': 10
+                fontFamily: 'Arial',
+                fontWeight: 'bold',
+                fontSize: '8pt',
             },
-            {
-                'Item Name': 'Sports Shoes',
-                'Date': '06/11/2019',
-                'Time': '05:56:32 AM',
-                'Quantity': 20,
-                'Price': 30,
-                'Amount': '=D3*E3',
-                'Discount': 5,
-                'Profit': 50
-            } 
-        ];
-        spreadsheet.sheets[0].ranges[0].dataSource = itemData;
-    });
-
-    document.getElementById('clearBtn').addEventListener('click', () => {
-        document.getElementById('EventLog').innerHTML = "";
-    });
-
-    function appendElement(html) {
-        var span = document.createElement("span");
-        span.innerHTML = html;
-        var log = document.getElementById('EventLog');
-        log.insertBefore(span, log.firstChild);
-    }
-
-    function dataSourceChanged() {
-        this.appendElement("Data source changed with" + "<b>&nbsp;" + args.action + "</b> action<hr>"
+            'A1:N20'
         );
     }
 
@@ -70,15 +56,6 @@
 <style>
     #changeDataBtn {
         margin-bottom: 10px;
-    }
-    
-    #EventLog b {
-        color: #388e3c;
-    }
-
-    #evt {
-        border: 1px solid #dcdcdc;
-        padding: 10px;
     }
 
     hr {
