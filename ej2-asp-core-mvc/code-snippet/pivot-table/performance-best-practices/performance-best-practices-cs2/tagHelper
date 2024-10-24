@@ -1,20 +1,20 @@
 <ejs-pivotview id="PivotView" width="100%" height="350" showGroupingBar="true" allowGrouping="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
         <e-formatsettings>
-            <e-field name="Amount" format="C"></e-field>
-            <e-field name="Date_Year" type="date" format="yyyy"></e-field>
-            <e-field name="Date_Month" type="date" format="MMM"></e-field>
+            <e-field name="ProCost" format="C"></e-field>
+            <e-field name="TimeLine_Year" type="date" format="yyyy"></e-field>
+            <e-field name="TimeLine_Monh" type="date" format="MMM"></e-field>
         </e-formatsettings>
         <e-rows>
-            <e-field name="Date_Year" caption="Year"></e-field>
-            <e-field name="Date_Month" caption="Month"></e-field>
+            <e-field name="TimeLine_Year" caption="Year"></e-field>
+            <e-field name="TimeLine_Monh" caption="Month"></e-field>
         </e-rows>
         <e-columns>
-            <e-field name="Product_ID" caption="Product ID"></e-field>
+            <e-field name="Id" caption="Product ID"></e-field>
         </e-columns>
         <e-values>
-            <e-field name="Sold" caption="Unit Sold"></e-field>
-            <e-field name="Amount" caption="Sold Amount"></e-field>
+            <e-field name="PowUnits" caption="Unit"></e-field>
+            <e-field name="ProCost" caption="Cost"></e-field>
         </e-values>
     </e-datasourcesettings>
 </ejs-pivotview>

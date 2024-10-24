@@ -1,16 +1,22 @@
-@Html.EJS().PivotView("PivotView").Width("100%").Height("350").ShowGroupingBar(true).AllowGrouping(true).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true)
+@model List<PivotTableSample.Controllers.GroupData>
+
+@Html.EJS().PivotView("PivotView").Height("300").ShowGroupingBar(true).AllowGrouping(true).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)Model).ExpandAll(false).EnableSorting(true)
         .FormatSettings(formatsettings =>
         {
-            formatsettings.Name("Amount").Format("C").Add();
-            formatsettings.Name("Date_Year").Type("date").Format("yyyy").Add();
-            formatsettings.Name("Date_Month").Type("date").Format("MMM").Add();
+            formatsettings.Name("ProCost").Format("C").Add();
+            formatsettings.Name("TimeLine_Year").Type("Date").Format("yyyy").Add();
+            formatsettings.Name("TimeLine_Monh").Type("Date").Format("MMM").Add();
+
+
         })
-        .Rows(rows => { rows.Name("Date_Year").Caption("Year").Add();
-                        rows.Name("Date_Month").Caption("Month").Add();
-            })
-                .Columns(columns => { columns.Name("Product_ID").Caption("Product ID").Add(); })
+        .Rows(rows =>
+        {
+            rows.Name("TimeLine_Year").Add();
+            rows.Name("TimeLine_Month").Add();
+        })
+        .Columns(columns => { columns.Name("Id").Caption("Id").Add(); })
         .Values(values =>
         {
-            values.Name("Sold").Caption("Units Sold").Add();
-            values.Name("Amount").Caption("Sold Amount").Add();
+            values.Name("PowUnits").Caption("Units").Add();
+            values.Name("ProCost").Caption("Cost").Add();
         })).Render()
