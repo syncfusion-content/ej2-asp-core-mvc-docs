@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set The Read Only Textbox in ##Platform_Name## Textbox Component
+title: Set The Read Only Textbox in Syncfusion ##Platform_Name## Textbox Component
 description: Learn here all about Set The Read Only Textbox in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set The Read Only Textbox

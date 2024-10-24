@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Textbox Control
+title: Getting Started with Syncfusion ##Platform_Name## Textbox Control
 description: Checkout and learn about getting started with ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
 
 # Getting Started with ASP.NET Core TextBox Control
 

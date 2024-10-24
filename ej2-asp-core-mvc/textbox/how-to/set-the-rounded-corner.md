@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set The Rounded Corner in ##Platform_Name## Textbox Component
+title: Set The Rounded Corner in Syncfusion ##Platform_Name## Textbox Component
 description: Learn here all about Set The Rounded Corner in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set The Rounded Corner
