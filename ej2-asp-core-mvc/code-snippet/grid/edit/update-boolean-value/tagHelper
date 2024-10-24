@@ -1,0 +1,26 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" queryCellInfo="queryCellInfo" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID"  headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" textAlign="Right" width="120"></e-grid-column>                
+        <e-grid-column field="CustomerID" headerText="Customer ID" validationRules="@(new { required=true})" width="120"></e-grid-column>                
+        <e-grid-column field="OrderDate" headerText="Order Date" validationRules="@(new { required=true})" format="M/d/yy" type= "date" textAlign="Right" editType="datepickeredit" width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" validationRules="@(new { required= true,min=1, max=1000 })" textAlign="Right" format="C2" editType="numericedit" width="90"></e-grid-column>
+        <e-grid-column field="Verified" headerText="Verified" validationRules="@(new { required=true})" template="#template" width="90"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script type="text/x-template" id="template">
+    <input type="checkbox" id="checkbox">
+</script>
+<script>
+    function queryCellInfo(args) {
+        if (args.column.headerText === 'Verified') {
+            var checkbox = new ej.buttons.CheckBox
+                ({
+                    checked: args.data.Verified
+                });
+            checkbox.appendTo(args.cell.querySelector('input'));
+        }
+    }
+</script>

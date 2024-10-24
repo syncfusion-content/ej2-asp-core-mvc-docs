@@ -1,0 +1,59 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" actionBegin="actionBegin" actionComplete="actionComplete" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
+    <e-grid-editsettings allowEditing="true" allowAdding="true" allowDeleting="true"></e-grid-editsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="100" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Employee Name" textAlign="Left" width="120"></e-grid-column>
+        <e-grid-column field="FeedbackDetails" headerText="Employee Feedback" textAlign="Left" width="120" edit="@(new {create = "create", read = "read", write = "write"})"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var dropDownObj;
+    var dropDownElem;
+    var orderData;
+    var Feedback = { Positive: 0, Negative: 1 };
+
+    var dropDownEnumValue = Object.keys(Feedback).filter(
+        (key) => !isNaN(Number(Feedback[key]))
+    );
+
+    function create(args) {
+        dropDownElem = document.createElement('input');
+        return dropDownElem;
+    }
+    function read(args) {
+        return dropDownObj.text;
+    }
+    function write(args) {
+        dropDownObj = new ej.dropdowns.DropDownList({
+            dataSource: dropDownEnumValue,
+            fields: { text: 'FeedbackDetails', value: 'FeedbackDetails' },
+            value: orderData.FeedbackDetails, // Check if orderData is defined
+            change: function () { // Update orderData when the dropdown selection changes
+                if (dropDownObj && orderData) {
+                    orderData.FeedbackDetails = dropDownObj.value;
+                }
+            }
+        });
+        dropDownObj.appendTo(dropDownElem);
+        args.element.value = args.rowData.FeedbackDetails;
+    }
+
+    function actionComplete(args) {
+        if (args.requestType === 'beginEdit') {
+            var grid = document.getElementById("Grid").ej2_instances[0];
+            var rowData = grid.getCurrentViewRecords()[args.rowIndex];
+            dropDownObj.value = rowData.FeedbackDetails;
+            dropDownObj.dataBind();
+        }
+    }
+
+    function actionBegin(args) {
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            orderData = Object.assign({}, args.rowData);
+        }
+        if (args.requestType === 'save') {
+            (args.data)['FeedbackDetails'] = orderData['FeedbackDetails'];
+        }
+    }
+</script>
