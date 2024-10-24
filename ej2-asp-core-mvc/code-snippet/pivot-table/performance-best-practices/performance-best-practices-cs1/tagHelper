@@ -1,0 +1,21 @@
+<ejs-pivotview id="PivotView" width="100%" height="350" showGroupingBar="true" allowGrouping="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
+        <e-formatsettings>
+            <e-field name="ProCost" format="C"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="TimeLine" caption="Date"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Id" caption="Product ID"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="PowUnits" caption="Units"></e-field>
+            <e-field name="ProCost" caption="Cost"></e-field>
+        </e-values>
+        <e-groupsettings>
+            <e-field name="Id" type="Number"  rangeInterval="3"></e-field>
+            <e-field name="TimeLine" type="Date"  groupInterval="@(new string[]{ "Years", "Months"})"></e-field>
+        </e-groupsettings>
+    </e-datasourcesettings>
+</ejs-pivotview>
