@@ -1,0 +1,12 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.BoxAndWhisker).
+        Name("Department").
+        Marker(marker => marker.Visible(true)).
+            DataSource(ViewBag.dataSource).
+            XName("xValue").DashArray("2,2").Border(border => border.Width(2).Color("green")).
+            YName("yValue").Add();
+    }).PrimaryXAxis(
+           xAxis =>
+               xAxis.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+           ).Title("Employee Age Group in Various Department").Render()

@@ -1,0 +1,25 @@
+@model List<string>
+@{
+    char nameMentionChar = '@';
+    List<DisableStatusData> status = new DisableStatusData().StatusDataList();
+}
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag sport"></div>
+
+@Html.EJS().Mention("Status").MentionChar(nameMentionChar).Target("#mentionElement").Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Value = "Status", Disabled = "State" }).DataSource((IEnumerable<object>)status).Render()
+
+<style>
+
+    div#mentionElement[placeholder]:empty:before {
+        content: attr(placeholder);
+    }
+
+    #mentionElement{
+        min-height: 100px; 
+        border: 1px solid #D7D7D7;
+        border-radius: 4px; 
+        padding: 8px; 
+        font-size: 14px; 
+        width: 600px;
+    }
+    
+</style>

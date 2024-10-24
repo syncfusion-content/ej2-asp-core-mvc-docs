@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    <button id="executePrompt">Execute Prompt</button>
+    @Html.EJS().AIAssistView("aiAssistView").PromptRequest("onPromptRequest").Created("onCreated").Render()
+</div>
+
+<script>
+    var assistObj;
+    var prompts = @Html.Raw(promptsJson);
+    function onCreated() {
+        assistObj = this;
+    }
+    function onPromptRequest(args) {
+        setTimeout(function () {
+            var defaultResponse = 'For real-time prompt processing, connect the AI AssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            assistObj.addPromptResponse(defaultResponse);
+        }, 2000);
+    }
+    document.addEventListener('click', function (event) {
+        if (event.target && event.target.id === 'executePrompt') {
+            assistObj.executePrompt('What is the current temperature?');
+        }
+    });
+</script>
+
+<style>
+    #executePrompt {
+        margin-bottom: 10px;
+    }
+</style>

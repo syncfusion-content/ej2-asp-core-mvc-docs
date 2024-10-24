@@ -1,0 +1,45 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.TaskDataSource" allowRowDragAndDrop="true" allowSelection="true" rowDrop="rowDrop">
+    <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
+    <e-grid-rowdropsettings targetID="TreeGrid"></e-grid-rowdropsettings>
+    <e-grid-editSettings allowDeleting="true"></e-grid-editSettings>                
+    <e-grid-columns>
+        <e-grid-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="TaskName" headerText="Task Name" textAlign="Left" width="180"></e-grid-column>
+        <e-grid-column field="Description" headerText="Description" textAlign="Left" width="180"></e-grid-column>
+        <e-grid-column field="Category" headerText="Category " textAlign="Left" width="180"></e-grid-column>
+        <e-grid-column field="StartDate" headerText="Start Date" textAlign="Right" format="yMd" width="120"></e-grid-column>
+        <e-grid-column field="Duration" headerText="Duration" width="80"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+ <ejs-treegrid id="TreeGrid" childMapping="Subtasks" allowRowDragAndDrop="true" allowSelection="true">
+    <e-treegrid-selectionsettings type="Multiple"></e-treegrid-selectionsettings>
+    <e-treegrid-editSettings allowAdding="true" allowEditing="true"></e-treegrid-editSettings>
+    <e-treegrid-rowdropsettings targetID="TreeGrid"></e-treegrid-rowdropsettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" textAlign="Left" width="180"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" width="90"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" width="80"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function rowDrop(args){
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        var treeGrid = document.getElementById('TreeGrid').ej2_instances[0];
+        if (args.target.closest('.e-treegrid')) {
+          args.cancel = true;
+          var rowIndex =
+            args.target.closest('.e-row') !== null
+              ? args.target.closest('.e-row').rowIndex
+              : 0;
+          for (var i = 0; i < args.data.length; i++) {
+            treeGrid.addRecord(args.data[i], rowIndex);
+            grid.deleteRecord('TaskID', args.data[i]);
+          }
+        }
+    }
+</script>
+

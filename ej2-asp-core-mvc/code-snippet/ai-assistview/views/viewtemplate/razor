@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    @Html.EJS().AIAssistView("aiAssistView").Views(view =>
+    {
+        view.Type(AssistViewType.Assist).Name("Prompt").ViewTemplate("<div class=\"view-container\"><h5>Prompt view content</h5></div>").Add();
+        view.Type(AssistViewType.Custom).Name("Response").ViewTemplate("<div class=\"view-container\"><h5>Response view content</h5></div>").IconCss("e-icons e-comment-show").Add();
+    }).Render()
+</div>
+
+<style>
+    .view-container {
+        margin: 20px auto;
+        width: 80%;
+    }
+</style>
