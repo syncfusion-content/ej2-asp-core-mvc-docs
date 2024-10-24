@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Validation
+# Validation in ASP.NET Core TextBox component
 
 The TextBox supports three types of validation styles namely `error`, `warning`, and `success`. These states are enabled by adding corresponding classes `.e-error`, `.e-warning`, or `.e-success` to the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_CssClass) property.
 

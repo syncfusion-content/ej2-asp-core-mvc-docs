@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sizing
+# Sizing in ASP.NET Core TextBox component
 
 You can render the TextBox in three different sizes.
 
