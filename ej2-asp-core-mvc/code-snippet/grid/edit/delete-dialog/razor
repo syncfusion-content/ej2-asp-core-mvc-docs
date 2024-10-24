@@ -1,0 +1,30 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ToolbarClick("toolbarClick").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").Add();
+   col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
+
+}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+    ej.base.L10n.load({
+        'en-US': {
+            grid: {
+                'OKButton': 'YES',
+                'CancelButton': 'Discard',
+                'ConfirmDelete': 'Are you sure you want to delete the selected Record?'
+            }
+        }
+    });
+</script>
+<script>
+    function toolbarClick(args) {
+        if (args.item.text === 'Delete') {
+            var grid = document.getElementById('Grid').ej2_instances[0]
+            var dialogObj = grid.editModule.dialogObj;
+            dialogObj.header = 'Delete Confirmation Dialog';
+            dialogObj.showCloseIcon = true;
+        }
+    }
+</script>

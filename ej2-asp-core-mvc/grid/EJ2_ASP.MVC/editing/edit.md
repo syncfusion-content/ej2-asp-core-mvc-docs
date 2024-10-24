@@ -8,27 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Editing in ASP.NET MVC Grid Component
 
-The Grid component has options to dynamically insert, delete and update records. Editing feature requires a primary key column for CRUD operations. To define the primary key, set [`IsPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) to **true** in particular column.
+The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to enable you to perform CRUD (Create, Read, Update, Delete) operations seamlessly.
 
-You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the [`addRecord`](https://ej2.syncfusion.com/documentation/api/grid/#addrecord) method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid.
+To enable editing functionality directly within the grid, you need to configure the [AllowEditing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowEditing), [AllowAdding](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowAdding), and [AllowDeleting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowDeleting) properties within the [EditSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html)  to **true**.
 
-Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
+Editing feature requires a primary key column for CRUD operations. To define the primary key, set `Columns.IsPrimaryKey` to **true** in particular column.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/edit/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Edit.cs" %}
-{% include code-snippet/grid/edit/edit/edit.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the `addRecord` method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid. Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -38,161 +26,132 @@ Deletion of the record is possible by selecting the required row and click on **
 {% include code-snippet/grid/edit/edit/edit.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Inline Editing](../images/editing/inline-edit.gif)
 
-
-N> If [`IsIdentity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) is enabled, then it will be considered as a read-only column when editing and adding a record.
-<br/> You can disable editing for a particular column, by specifying [`AllowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing) to **false**.
+> * If `Columns.IsIdentity` is enabled, then it will be considered as a read-only column when editing and adding a record.
+> * You can disable editing for a particular column, by specifying `Columns.AllowEditing` to **false**.
+> * You can use the **Insert** key to add a new row to the grid and use the **Delete** key to delete the selected row from the grid.
 
 ## Toolbar with edit option
 
-The grid toolbar has the [built-in items](./tool-bar/#built-in-toolbar-items) to execute Editing actions. You can define this by using the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property.
+The toolbar with edit option feature in the Grid component provides a [built-in toolbar](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/tool-bar/tool-bar-items#built-in-toolbar-items) that includes various items for executing editing actions. This feature allows you to easily perform edit operations on the grid data, such as modifying cell values, updating changes, and canceling edits. 
 
-{% if page.publishingplatform == "aspnet-core" %}
+To enable this feature, you need to configure the [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property of the Grid component. This property allows you to define the items that will be displayed in the grid toolbar. By including the relevant items like **Edit**, **Add**, **Delete**, **Update**, and **Cancel** within the `Toolbar` property, you can enable the edit options in the toolbar.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/edittoolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Edittoolbar.cs" %}
-{% include code-snippet/grid/edit/edittoolbar/edittoolbar.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Here's an example of how to enable the toolbar with edit option in the Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/edittoolbar/razor %}
+{% include code-snippet/grid/edit/edit-toolbar/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Edittoolbar.cs" %}
-{% include code-snippet/grid/edit/edittoolbar/edittoolbar.cs %}
+{% highlight c# tabtitle="Edit-toolbar.cs" %}
+{% include code-snippet/grid/edit/edit-toolbar/edit-toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
+![Edit with toolbar](../images/editing/edit-with-toolbar.gif)
 
 ## Disable editing for particular column
 
-You can disable editing for particular columns by using the [`AllowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html).
+In Grid component, you have an option to disable editing for a specific column. This feature is useful when you want to prevent editing certain columns, such as columns that contain calculated values or read-only data.
 
-In the following demo, editing is disabled for the **CustomerID** column.
+To disable editing for a particular column, you can use the [AllowEditing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing)  property of the **columns** object. By setting this property to **false**, you can prevent editing for that specific column.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/disableeditforcolumn/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Disableeditforcolumn.cs" %}
-{% include code-snippet/grid/edit/disableeditforcolumn/disableeditforcolumn.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Here's an example that demonstrates how to disable editing for the column in the Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/disableeditforcolumn/razor %}
+{% include code-snippet/grid/edit/prevent-column-edit/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Disableeditforcolumn.cs" %}
-{% include code-snippet/grid/edit/disableeditforcolumn/disableeditforcolumn.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-## Disable editing for a particular row or cell
-
-You can disable the editing for a particular row by using the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of Grid.
-
-In the below demo, the rows which are having the value for **ShipCountry** column as Denmark is prevented from editing.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/disable-edit/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Disable-edit.cs" %}
-{% include code-snippet/grid/how-to/disable-edit/disable-edit.cs %}
+{% highlight c# tabtitle="Edit.cs" %}
+{% include code-snippet/grid/edit/prevent-column-edit/edit.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Disable Edit for particular column](../images/editing/disable-column-editing.png)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/disable-edit/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Disable-edit.cs" %}
-{% include code-snippet/grid/how-to/disable-edit/disable-edit.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-For batch mode of editing, you can use [`CellEdit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellEdit) event of Grid. In the below demo, the cells which are having the value as Denmark is prevented from editing.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/disable-edit-batch/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Disable-edit-batch.cs" %}
-{% include code-snippet/grid/how-to/disable-edit-batch/disable-edit-batch.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/disable-edit-batch/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Disable-edit-batch.cs" %}
-{% include code-snippet/grid/how-to/disable-edit-batch/disable-edit-batch.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
+> * If you have set the `IsPrimaryKey` property to **true** for a column, editing will be automatically disabled for that column.
+> * You can disble the particular row using [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. Please refer this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/in-line-editing#cancel-edit-based-on-condition).
+> * You can disble the particular cell using [CellEdit](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellEdit) event. Please refer this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/batch-editing#cancel-edit-based-on-condition-in-batch-mode).
 
 ## Editing template column
 
-You can edit the template column value by defining the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) for that particular column.
+The editing template column feature in the Grid allows you to create custom editing templates for specific columns in the grid. This feature is particularly useful when you need to customize the editing experience for certain columns, such as using custom input controls or displaying additional information during editing.
+
+To enable the editing template column feature, you need to define the `Field` property for the specific column in the grid's configuration. The `Field` property maps the column to the corresponding field name in the data source, allowing you to edit the value of that field.
 
 In the below demo, the **ShipCountry** column is rendered with the template.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/edit-temp/tagHelper %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/template-edit/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Edit-temp.cs" %}
-{% include code-snippet/grid/how-to/edit-temp/edit-temp.cs %}
+{% highlight c# tabtitle="Edit-template.cs" %}
+{% include code-snippet/grid/edit/template-edit/edit-temp.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Before template column edit](../images/editing/before-template-column-editing.png)
+![After template column edit](../images/editing/after-template-column-editing.png)
+
+## Customize delete confirmation dialog
+
+Customizing the delete confirmation dialog in Grid allows you to personalize the appearance, content, and behavior of the dialog that appears when you attempts to delete an item. You can modify properties like header, showCloseIcon, and height to tailor the edit dialog to your specific requirements. Additionally, you can override default localization strings to provide custom text for buttons or other elements within the dialog.
+
+To customize the delete confirmation dialog, you can utilize the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. This event is triggered when a toolbar item, such as the delete button, is clicked.
+
+> * To enable the confirmation dialog for the delete operation in the Grid, you can set the [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) property of the `editSettings` configuration to **true**.
+> * You can refer the Grid [Default text](../global-local) list for more localization.
+
+The following example that demonstrates how to customize the delete confirmation dialog using the `toolbarClick` event:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/edit-temp/razor %}
+{% include code-snippet/grid/edit/delete-dialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Edit-temp.cs" %}
-{% include code-snippet/grid/how-to/edit-temp/edit-temp.cs %}
+{% highlight c# tabtitle="Delete-dialog.cs" %}
+{% include code-snippet/grid/edit/delete-dialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Customize delete confirmation dialog](../images/editing/delete-confirm-dialog.png)
 
+## Update boolean column value with a single click   
+
+The Syncfusion Grid allows you to update a boolean column value with a single click in the normal mode of editing. This feature streamlines the process of toggling boolean values within the grid, enhancing interaction and efficiency. This can be achieved through the use of the column template feature.
+
+In the following sample, the `CheckBox` component is rendered as a template in the **Verified** column to make it editable with a single click.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/update-boolean-value/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Update-boolean.cs" %}
+{% include code-snippet/grid/edit/update-boolean-value/boolean.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Update boolean value in single click](../images/editing/update-boolean.gif)
+
+## Edit enum column 
+
+The Syncfusion Grid provides a feature that allows you to edit enum type data in a grid column. This is particularly useful when you need to edit enumerated list data efficiently.
+
+In the following example, the `DropDownList` component is rendered within the cell edit template for the Employee Feedback column using edit property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/enum-column/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Enum.cs" %}
+{% include code-snippet/grid/edit/enum-column/enum.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+| On Editing | After Editing |
+| -------------- | ------------- |
+| ![Before enum column edit](../images/editing/on-enum-column-editing.png) | ![After enum column edit](../images/editing/after-enum-column-editing.png) |
 
 ## Troubleshoot editing works only for first row
 
