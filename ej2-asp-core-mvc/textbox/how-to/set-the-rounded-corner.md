@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set The Rounded Corner in ##Platform_Name## Textbox Component
+title: Set The Rounded Corner in Syncfusion ##Platform_Name## Textbox Component
 description: Learn here all about Set The Rounded Corner in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set The Rounded Corner
@@ -11,7 +11,7 @@ documentation: ug
 
 # Set the rounded corner
 
-Render the TextBox with `rounded corner` by adding the `e-corner` class to the input parent element.
+Render the TextBox with rounded corner by adding the `e-corner` class to the [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.inputs.textbox.html#Syncfusion_EJ2_Inputs_TextBox_CssClass) property of the TextBoxComponent.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -35,4 +35,3 @@ Render the TextBox with `rounded corner` by adding the `e-corner` class to the i
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
