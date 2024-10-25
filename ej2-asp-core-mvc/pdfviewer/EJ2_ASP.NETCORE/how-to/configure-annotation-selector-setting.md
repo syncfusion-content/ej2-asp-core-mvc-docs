@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotation Selector Setting in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+title: AnnotationSelector Setting in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
 description: Learn here all about Configuring AnnotationSelector setting in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
