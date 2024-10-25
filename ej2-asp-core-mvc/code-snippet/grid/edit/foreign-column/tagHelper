@@ -1,60 +1,41 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" actionBegin="actionBegin" actionComplete="actionComplete" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
     <e-grid-editsettings allowEditing="true" allowAdding="true" allowDeleting="true"></e-grid-editsettings>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="100" textAlign="Right"></e-grid-column>
-        <e-grid-column field="EmployeeID" headerText="Empolyee Name" foreignKeyValue="FirstName" dataSource="ViewBag.foreign" width="150"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" validationRules="@(new { required=true})" format="yMd" type= "date" textAlign="Right" editType="datepickeredit" width="130"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" validationRules="@(new { required= true,min=1, max=1000 })" textAlign="Right" format="C2" editType="numericedit" width="120"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID"  isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Empolyee Name" foreignKeyValue="FirstName" dataSource="@ViewBag.EmployeeDataSource" edit="@(new {create = "create", read = "read", destroy="destroy", write = "write"})" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date"  format="yMd" textAlign="Right" editType="datepickeredit" width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
 <script>
-    var dropDownObj;
-    var dropDownElem;
-    var orderData;
-    var Feedback = { Positive: 0, Negative: 1 };
-
-    var dropDownEnumValue = Object.keys(Feedback).filter(
-        (key) => !isNaN(Number(Feedback[key]))
-    );
-
+    var comboBoxData = [
+        { FirstName: 'Nancy', EmployeeID: 1 },
+        { FirstName: 'Andrew', EmployeeID: 6 },
+        { FirstName: 'Janet', EmployeeID: 3 },
+        { FirstName: 'Margaret', EmployeeID: 4 },
+        { FirstName: 'Steven', EmployeeID: 5 },
+        { FirstName: 'Laura', EmployeeID: 8 }
+    ]
+    var comboBoxObj;
     function create(args) {
-        dropDownElem = document.createElement('input');
-        return dropDownElem;
+        return ej.base.createElement('input');
     }
     function read(args) {
-        return dropDownObj.text;
+        var employeeData = @Html.Raw(JsonConvert.SerializeObject(ViewBag.EmployeeDataSource));
+        var value = new ej.data.DataManager(employeeData).executeLocal(new ej.data.Query().where('FirstName', 'equal', comboBoxObj.value));
+        return value.length && value[0]['EmployeeID']; // to convert foreign key value to local value.
+    }
+    function destroy(){
+        // to destroy the custom control.
+        comboBoxObj.destroy();
     }
     function write(args) {
-        dropDownObj = new ej.dropdowns.DropDownList({
-            dataSource: dropDownEnumValue,
-            fields: { text: 'FeedbackDetails', value: 'FeedbackDetails' },
-            value: orderData.FeedbackDetails, // Check if orderData is defined
-            change: function () { // Update orderData when the dropdown selection changes
-                if (dropDownObj && orderData) {
-                    orderData.FeedbackDetails = dropDownObj.value;
-                }
-            }
+        comboBoxObj = new ej.dropdowns.ComboBox({
+            dataSource: comboBoxData,
+            fields: { value: args.column.foreignKeyValue },
+            value: args.foreignKeyData[0][args.column.foreignKeyValue]
         });
-        dropDownObj.appendTo(dropDownElem);
-        args.element.value = args.rowData.FeedbackDetails;
-    }
-
-    function actionComplete(args) {
-        if (args.requestType === 'beginEdit') {
-            var grid = document.getElementById("Grid").ej2_instances[0];
-            var rowData = grid.getCurrentViewRecords()[args.rowIndex];
-            dropDownObj.value = rowData.FeedbackDetails;
-            dropDownObj.dataBind();
-        }
-    }
-
-    function actionBegin(args) {
-        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-            orderData = Object.assign({}, args.rowData);
-        }
-        if (args.requestType === 'save') {
-            (args.data)['FeedbackDetails'] = orderData['FeedbackDetails'];
-        }
-    }
+        comboBoxObj.appendTo(args.element);
+    }   
 </script>

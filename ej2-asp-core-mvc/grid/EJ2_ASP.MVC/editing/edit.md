@@ -153,28 +153,103 @@ In the following example, the `DropDownList` component is rendered within the ce
 | -------------- | ------------- |
 | ![Before enum column edit](../images/editing/on-enum-column-editing.png) | ![After enum column edit](../images/editing/after-enum-column-editing.png) |
 
-## Troubleshoot editing works only for first row
+## Edit complex column 
 
-The Editing functionalities can be performed based upon the primary key value of the selected row. If [`IsPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) is not defined in the grid, then edit or delete action take places the first row.
+The edit template for complex column in Grid is used to customize the editing experience when dealing with complex data structures. This capability is particularly useful for handling nested data objects within grid columns. By default, the grid binds complex data to column fields using the dot (.) operator. However, when you render custom elements, such as input fields, in the edit template for a complex column, you must use the (___) underscore operator instead of the dot (.) operator to bind the complex object.
 
-## How to make a Grid column always editable
-
-Make the Grid column always editable using the column template feature of the Grid.
-
-In the following example, the textbox is rendered in the Freight column using a column template. The keyup event for the Grid is bound using the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event of the Grid, and the edited changes are saved in the data source using the `updateRow` method of the Grid.
-
-{% if page.publishingplatform == "aspnet-core" %}
+In the following sample, the input element is rendered in the edit template of the FirstName and LastName column. The edited changes can be saved using the `name` property of the input element. Since the complex data is bound to the FirstName  and LastName column, The `name` property should be defined as **Name___FirstName** and **Name___LastName**, respectively, instead of using the dot notation (**Name.FirstName** and **Name.LastName**).
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/column-edit/tagHelper %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/complex-column/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Column-edit.cs" %}
-{% include code-snippet/grid/edit/column-edit/column-edit.cs %}
+{% highlight c# tabtitle="Complex.cs" %}
+{% include code-snippet/grid/edit/complex-column/complex.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+| On Editing | After Editing |
+| -------------- | ------------- |
+| ![Complex column edit](../images/editing/on-complex-column-editing.png) | ![After complex column edit](../images/editing/after-complex-column-editing.png) |
+
+## Edit foreign key column 
+
+The Syncfusion Grid offers a powerful editing feature for foreign key columns, enhancing the default rendering of the DropDownList component during editing. This flexibility is particularly useful when you need to customize the editor for foreign key columns. By default, the Syncfusion Grid renders the DropDownList component as the editor for foreign key columns during editing. However, you can enhance and customize this behavior by leveraging the cell edit template for the column using edit property. The edit property allows you to specify a cell edit template that serves as an editor for a particular column.
+
+In the following code example, the Employee Name is a foreign key column. When editing, the ComboBox component is rendered instead of DropDownList.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/foreign-column/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Foreign-key.cs" %}
+{% include code-snippet/grid/edit/foreign-column/foreign.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+| On Editing | After Editing |
+| -------------- | ------------- |
+| ![Foreign key column edit](../images/editing/on-foreign-key-column-editing.png) | ![After foreign key column edit](../images/editing/after-foreign-key-column-editing.png) |
+
+## How to perform CRUD action externally 
+
+Performing CRUD (Create, Read, Update, Delete) actions externally in the Syncfusion Grid allows you to manipulate grid data outside the grid itself. This can be useful in scenarios where you want to manage data operations programmatically.
+
+### Using separate toolbar 
+
+The Syncfusion Grid enables external CRUD operations, allowing you to efficiently manage data manipulation within the grid. This capability is particularly useful when you need to manage data operations using a separate toolbar.
+
+To perform CRUD operations externally, the following methods are available:
+
+`addRecord` - To add a new record. If no data is passed then add form will be shown.
+`startEdit` - To edit the selected row.
+`deleteRecord` - To delete a selected row.
+`endEdit` - If the grid is in editable state, then you can save a record by invoking this method.
+`closeEdit` - To cancel the edited state.
+
+The following example demonstrates the integration of the Syncfusion Grid with a separate toolbar for external CRUD operations. The toolbar contains buttons for Add, Edit, Delete, Update, and Cancel.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/separate-toolbar-edit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Separate-toolbar-edit.cs" %}
+{% include code-snippet/grid/edit/separate-toolbar-edit/separate-toolbar.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Edit using separate toolbar](../images/editing/edit-with-seprate-toolbar.gif)
+
+### Using external form 
+
+Performing the edit operation in a custom external form in the Syncfusion Grid is a valuable feature when you need to customize the edit operation within a separate form rather than the default in-grid editing. 
+
+To enable the use of an external form for editing in Syncfusion Grid, you can make use of the [RowSelected](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowSelected) event. This property specifies whether the edit operation should be triggered when a row is selected.
+
+In the following example, it demonstrates how to edit the form using an external form by utilizing the `RowSelected` event:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/external-form-edit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Form-edit.cs" %}
+{% include code-snippet/grid/edit/external-form-edit/edit.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+| On Editing | After Editing |
+| -------------- | ------------- |
+| ![External form edit](../images/editing/on-external-form-editing.png) | ![After form edit](../images/editing/after-external-form-editing.png) |
+
+## Troubleshoot editing works only for first row
+
+The Editing functionalities can be performed based upon the primary key value of the selected row. If `IsPrimaryKey` property is not defined in the grid, then edit or delete action take places the first row. To overcome this, ensure that you establish the `IsPrimaryKey` property as **true** for the relevant column responsible for holding the unique identifier for each row.
+
+## How to make a grid column always editable
+
+To make a Grid column always editable, you can utilize the column template feature of the Grid. This feature is useful when you want to edit a particular column's values directly within the grid.
+
+In the following example, the textbox is rendered in the **Freight** column using a column template. The keyup event for the Grid is bound using the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event of the Grid, and the edited changes are saved in the data source using the `updateRow` method of the Grid.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -184,9 +259,8 @@ In the following example, the textbox is rendered in the Freight column using a 
 {% include code-snippet/grid/edit/column-edit/column-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
+![Editable column](../images/editing/editable-column.gif)
 
 ## See Also
 
