@@ -72,8 +72,8 @@ Here's an example that demonstrates how to disable editing for the column in the
 ![Disable Edit for particular column](../images/editing/disable-column-editing.png)
 
 > * If you have set the `IsPrimaryKey` property to **true** for a column, editing will be automatically disabled for that column.
-> * You can disble the particular row using [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. Please refer this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/in-line-editing#cancel-edit-based-on-condition).
-> * You can disble the particular cell using [CellEdit](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellEdit) event. Please refer this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/batch-editing#cancel-edit-based-on-condition-in-batch-mode).
+> * You can disable the particular row using [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. Please refer this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/in-line-editing#cancel-edit-based-on-condition).
+> * You can disable the particular cell using [CellEdit](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellEdit) event. Please refer this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/batch-editing#cancel-edit-based-on-condition-in-batch-mode).
 
 ## Editing template column
 
