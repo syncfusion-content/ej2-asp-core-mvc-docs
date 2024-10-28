@@ -1,0 +1,44 @@
+@(Html.EJS().Toolbar("Toolbar")
+    .Items(new List<ToolbarItem> {
+        new ToolbarItem { Id="add", Text = "Add" },
+        new ToolbarItem { Id="edit", Text = "Edit" },
+        new ToolbarItem { Id="delete", Text = "Delete"},
+        new ToolbarItem { Id="update", Text = "Update" },
+        new ToolbarItem { Id="cancel", Text = "Cancel" },
+    })
+    .Clicked("onToolbarClick")
+    .Render()
+)
+
+@Html.EJS().Grid("EditToolbar").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = true number=true }).Add();
+   col.Field("CustomerID").HeaderText("Customer ID").Width("120").ValidationRules(new { required = true}).Add();
+   col.Field("Freight").HeaderText("Freight").ValidationRules(new { required = true, number=true }).Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("OrderDate").HeaderText("Order Date").ValidationRules(new { required = true }).Width("130").EditType("datepickeredit").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").ValidationRules(new { required = true}).Add();
+
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+   function onToolbarClick(args) {
+      var grid = document.getElementById("Grid").ej2_instances[0];
+      switch (args.item.id) {
+         case 'add':
+            grid.addRecord();
+            break;
+         case 'edit':
+            grid.startEdit();
+            break;
+         case 'delete':
+            grid.deleteRecord();
+            break;
+         case 'update':
+            grid.endEdit();
+            break;
+         case 'cancel':
+            grid.closeEdit();
+            break;
+      }
+   }
+</script>
