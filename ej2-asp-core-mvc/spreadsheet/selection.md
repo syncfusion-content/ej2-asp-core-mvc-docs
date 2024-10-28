@@ -148,7 +148,7 @@ Below is a code example demonstrating how to retrieve the selected cell values a
 {% endtabs %}
 {% endif %}
 
-## How to remove selection in the spreadsheet
+## Remove Selection
 
 The following sample shows, how to remove the selection in the spreadsheet. Here changing the `mode` as `None` in [`selectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SelectionSettings) to disable's the UI selection.
 

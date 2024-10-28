@@ -101,7 +101,7 @@ groupData.Add(new GroupData
 });
 groupData.Add(new GroupData
 {
-	Id = 1053,
+	Id = 1001,
 	TimeLine_Year = "3/1/2016",
 	TimeLine_Month = "3/1/2016",
 	Sector = "Public Sector",
@@ -112,7 +112,7 @@ groupData.Add(new GroupData
 });
 groupData.Add(new GroupData
 {
-	Id = 1054,
+	Id = 1002,
 	TimeLine_Year = "4/1/2016",
 	TimeLine_Month = "4/1/2016",
 	Sector = "Private Sector",
@@ -123,7 +123,7 @@ groupData.Add(new GroupData
 });
 groupData.Add(new GroupData
 {
-	Id = 1055,
+	Id = 1003,
 	TimeLine_Year = "5/1/2016",
 	TimeLine_Month = "5/1/2016",
 	Sector = "Public Sector",
@@ -134,7 +134,7 @@ groupData.Add(new GroupData
 });
 groupData.Add(new GroupData
 {
-	Id = 1056,
+	Id = 1004,
 	TimeLine_Year = "6/1/2016",
 	TimeLine_Month = "6/1/2016",
 	Sector = "Private Sector",
@@ -145,7 +145,7 @@ groupData.Add(new GroupData
 });
 groupData.Add(new GroupData
 {
-	Id = 1057,
+	Id = 1005,
 	TimeLine_Year = "7/1/2016",
 	TimeLine_Month = "7/1/2016",
 	Sector = "Public Sector",
@@ -156,7 +156,7 @@ groupData.Add(new GroupData
 });
 groupData.Add(new GroupData
 {
-	Id = 1094,
+	Id = 1006,
 	TimeLine_Year = "6/1/2016",
 	TimeLine_Month = "6/1/2016",
 	Sector = "Private Sector",
@@ -167,7 +167,7 @@ groupData.Add(new GroupData
 });
 groupData.Add(new GroupData
 {
-	Id = 1095,
+	Id = 1007,
 	TimeLine_Year = "7/1/2016",
 	TimeLine_Month = "7/1/2016",
 	Sector = "Public Sector",
@@ -178,7 +178,7 @@ groupData.Add(new GroupData
 });
 groupData.Add(new GroupData
 {
-	Id = 1096,
+	Id = 1008,
 	TimeLine_Year = "8/1/2016",
 	TimeLine_Month = "8/1/2016",
 	Sector = "Private Sector",
@@ -186,50 +186,6 @@ groupData.Add(new GroupData
 	EneSource = "Solar",
 	PowUnits = 127,
 	ProCost = 91
-});
-groupData.Add(new GroupData
-{
-	Id = 1097,
-	TimeLine_Year = "9/1/2016",
-	TimeLine_Month = "9/1/2016",
-	Sector = "Public Sector",
-	EnerType = "Free Energy",
-	EneSource = "Hydro-electric",
-	PowUnits = 70,
-	ProCost = 66
-});
-groupData.Add(new GroupData
-{
-	Id = 1098,
-	TimeLine_Year = "10/1/2016",
-	TimeLine_Month = "10/1/2016",
-	Sector = "Private Sector",
-	EnerType = "Free Energy",
-	EneSource = "Geo-thermal",
-	PowUnits = 36,
-	ProCost = 21
-});
-groupData.Add(new GroupData
-{
-	Id = 1099,
-	TimeLine_Year = "11/1/2016",
-	TimeLine_Month = "11/1/2016",
-	Sector = "Public Sector",
-	EnerType = "Free Energy",
-	EneSource = "Solar",
-	PowUnits = 144,
-	ProCost = 85
-});
-groupData.Add(new GroupData
-{
-	Id = 1100,
-	TimeLine_Year = "12/1/2016",
-	TimeLine_Month = "12/1/2016",
-	Sector = "Private Sector",
-	EnerType = "Free Energy",
-	EneSource = "Wind",
-	PowUnits = 212,
-	ProCost = 130
 });
 return View(groupData);
 
