@@ -5,7 +5,7 @@
    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
    col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
 
-}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 <script>
     ej.base.L10n.load({

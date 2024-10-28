@@ -56,7 +56,7 @@ Here's an example of how to enable the toolbar with edit option in the Grid:
 
 In Grid component, you have an option to disable editing for a specific column. This feature is useful when you want to prevent editing certain columns, such as columns that contain calculated values or read-only data.
 
-To disable editing for a particular column, you can use the [AllowEditing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing)  property of the **columns** object. By setting this property to **false**, you can prevent editing for that specific column.
+To disable editing for a particular column, you can use the [AllowEditing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowEditing)property of the **columns** object. By setting this property to **false**, you can prevent editing for that specific column.
 
 Here's an example that demonstrates how to disable editing for the column in the Grid:
 
