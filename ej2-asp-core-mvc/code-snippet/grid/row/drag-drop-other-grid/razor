@@ -1,0 +1,17 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowSelection(true).AllowRowDragAndDrop(true).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+
+}).SelectionSettings(select=>select.Type( Syncfusion.EJ2.Grids.SelectionType.Multiple)).RowDropSettings(new Syncfusion.EJ2.Grids.GridRowDropSettings() { TargetID = "DestGrid" }).Render()
+
+@Html.EJS().Grid("DestGrid").AllowSelection(true).AllowRowDragAndDrop(true).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+
+}).SelectionSettings(select=>select.Type( Syncfusion.EJ2.Grids.SelectionType.Multiple)).RowDropSettings(new Syncfusion.EJ2.Grids.GridRowDropSettings() { TargetID = "Grid" }).Render()

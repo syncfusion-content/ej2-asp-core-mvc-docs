@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Textbox Component
+title: Validation in Syncfusion ##Platform_Name## Textbox Component
 description: Learn here all about Validation in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Validation
@@ -8,10 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Validation in ASP.NET Core TextBox component
 
-# Validation
-
-The TextBox supports three types of validation styles namely `error`, `warning`, and `success`. These states are enabled by adding corresponding classes `.e-error`, `.e-warning`, or `.e-success` to the input parent element.
+The TextBox supports three types of validation styles namely `error`, `warning`, and `success`. These states are enabled by adding corresponding classes `.e-error`, `.e-warning`, or `.e-success` to the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_CssClass) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

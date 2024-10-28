@@ -1,40 +1,24 @@
- <input type="text" value="1" class="rowindex" />
-    <ejs-button id="expand" content="Expand"></ejs-button>
-    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" detailTemplate="#detailtemplate">
-        <e-grid-columns>
-            <e-grid-column field="FirstName" headerText="First Name" width="110"></e-grid-column>
-            <e-grid-column field="LastName" headerText="Last Name" width="110"></e-grid-column>
-            <e-grid-column field="Title" headerText="Title" width="150"></e-grid-column>
-            <e-grid-column field="Country" headerText="Country" width="110"></e-grid-column>
-        </e-grid-columns>
-    </ejs-grid>
+<div style="display:flex; margin-bottom:5px">
+    <ejs-textbox id="input" placeholder="Enter the row Index" width="160"></ejs-textbox>
+    <ejs-button id="expand" content="Expand" style="margin-left:5px"></ejs-button>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.EmployeeDataSource" detailTemplate="#detailtemplate" width="auto">
+    <e-grid-columns>
+        <e-grid-column field="FirstName" headerText="First Name" width="140"></e-grid-column>
+        <e-grid-column field="LastName" headerText="Last Name" width="140"></e-grid-column>
+        <e-grid-column field="Title" headerText="Title" width="150"></e-grid-column>
+        <e-grid-column field="Country" headerText="Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
 
-    <script>
-        document.getElementById('expand').addEventListener('click', () => {
-            var grid = document.getElementById("Grid").ej2_instances[0];
-            var inputElem = (document.getElementsByClassName('rowindex')[0]);
-            var rowIndex= parseInt(inputElem.value, 10);
-            grid.detailRowModule.expand(rowIndex);
-        });
-    </script>
-
-<style type="text/css" class="cssStyles">
-    .detailtable td {
-        font-size: 13px;
-        padding: 4px;
-        max-width: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    .photo {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        box-shadow: inset 0 0 1px #e0e0e0, inset 0 0 14px rgba(0, 0, 0, 0.2);
-    }
-</style> <script type="text/x-template" id="detailtemplate">
+<script>
+    document.getElementById('expand').addEventListener('click', function(args){
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        var textbox = document.getElementById('input').ej2_instances[0]
+        grid.detailRowModule.expand(textbox.value);
+    });
+</script>
+<script type="text/x-template" id="detailtemplate">
     <table class="detailtable" width="100%">
         <colgroup>
             <col width="35%" />
@@ -44,7 +28,7 @@
         <tbody>
             <tr>
                 <td rowspan="4" style="text-align: center;">
-                    <img class="photo" src="/scripts/Images/Employees/${EmployeeID}.png" alt="${EmployeeID}" />
+                    <img class='photo' src="https://ej2.syncfusion.com/demos/src/grid/images/${EmployeeID}.png" alt="${EmployeeID}" />
                 </td>
                 <td>
                     <span style="font-weight: 500;">First Name: </span> ${FirstName}
@@ -71,12 +55,30 @@
             </tr>
             <tr>
                 <td>
-                    <span style="font-weight: 500;">Address: </span> ${Address}
+                    <span style="font-weight: 500;">City: </span> ${City}
                 </td>
                 <td>
-                    <span style="font-weight: 500;">HireDate: </span> ${HireDate.toLocaleDateString()}
+                     <span style="font-weight: 500;">Country: </span> ${Country}
                 </td>
-            </tr>
+            </tr>  
         </tbody>
     </table>
 </script>
+
+<style type="text/css" class="cssStyles">
+    .detailtable td {
+        font-size: 13px;
+        padding: 4px;
+        max-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        box-shadow: inset 0 0 1px #e0e0e0, inset 0 0 14px rgba(0, 0, 0, 0.2);
+    }
+</style> 
