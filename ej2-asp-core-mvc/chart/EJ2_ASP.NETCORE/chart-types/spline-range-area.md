@@ -324,3 +324,5 @@ The `pointRender` event allows you to customize each data point before it is ren
 
 * [Data Label](../data-labels)
 * [Tooltip](../tool-tip)
+
+
