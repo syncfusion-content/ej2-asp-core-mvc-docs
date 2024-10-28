@@ -56,7 +56,7 @@ Here's an example of how to enable the toolbar with edit option in the Grid:
 
 In Grid component, you have an option to disable editing for a specific column. This feature is useful when you want to prevent editing certain columns, such as columns that contain calculated values or read-only data.
 
-To disable editing for a particular column, you can use the [AllowEditing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowEditing)property of the **columns** object. By setting this property to **false**, you can prevent editing for that specific column.
+To disable editing for a particular column, you can use the [AllowEditing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_AllowEditing) property of the **columns** object. By setting this property to **false**, you can prevent editing for that specific column.
 
 Here's an example that demonstrates how to disable editing for the column in the Grid:
 
@@ -92,19 +92,20 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% endhighlight %}
 {% endtabs %}
 
-![Before template column edit](../images/editing/before-template-column-editing.png)
-![After template column edit](../images/editing/after-template-column-editing.png)
+| Before Editing | After Editing |
+| -------------- | ------------- |
+| ![Before template column edit](../images/editing/before-template-column-editing.png) | ![After template column edit](../images/editing/after-template-column-editing.png) |
 
 ## Customize delete confirmation dialog
 
 Customizing the delete confirmation dialog in Grid allows you to personalize the appearance, content, and behavior of the dialog that appears when you attempts to delete an item. You can modify properties like header, showCloseIcon, and height to tailor the edit dialog to your specific requirements. Additionally, you can override default localization strings to provide custom text for buttons or other elements within the dialog.
 
-To customize the delete confirmation dialog, you can utilize the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. This event is triggered when a toolbar item, such as the delete button, is clicked.
+To customize the delete confirmation dialog, you can utilize the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. This event is triggered when a toolbar item, such as the delete button, is clicked.
 
-> * To enable the confirmation dialog for the delete operation in the Grid, you can set the [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) property of the `editSettings` configuration to **true**.
+> * To enable the confirmation dialog for the delete operation in the Grid, you can set the [ShowDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) property of the `EditSettings` configuration to **true**.
 > * You can refer the Grid [Default text](../global-local) list for more localization.
 
-The following example that demonstrates how to customize the delete confirmation dialog using the `toolbarClick` event:
+The following example that demonstrates how to customize the delete confirmation dialog using the `ToolbarClick` event:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
