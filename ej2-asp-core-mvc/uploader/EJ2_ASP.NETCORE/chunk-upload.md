@@ -171,84 +171,85 @@ N> The retry action has different working behavior for chunk upload and default 
 The server-side implementation entirely depends on the application requirements and logic. The following code snippet provides the server-side logic to handle the chunk upload using the uploader controls.
 
 ```csharp
-// Server configuration for upload a file.
-private IHostingEnvironment hostingEnv;
+public string uploads = Path.Combine(Directory.GetCurrentDirectory(), "Uploaded Files"); // Set your desired upload directory path
 
-public HomeController(IHostingEnvironment env)
+public async Task<IActionResult> Save(IFormFile UploadFiles)
 {
-    this.hostingEnv = env;
-}
-// Upload save method for chunk-upload
-public void Save(IList<IFormFile> chunkFile, IList<IFormFile> UploadFiles )
-{
-    long size = 0;
     try
     {
-        // for chunk-upload
-        foreach (var file in chunkFile)
+        if (UploadFiles.Length > 0)
         {
-            var filename = ContentDispositionHeaderValue
-                                .Parse(file.ContentDisposition)
-                                .FileName
-                                .Trim('"');
-            filename = hostingEnv.WebRootPath + $@"\{filename}";
-            size += file.Length;
-            if (!System.IO.File.Exists(filename))
+            // Fetch chunk-index and total-chunk from form data
+            var chunkIndex = Request.Form["chunk-index"];
+            var totalChunk = Request.Form["total-chunk"];
+            var fileName = UploadFiles.FileName;
+
+            // Create upload directory if it doesn't exist
+            if (!Directory.Exists(uploads))
             {
-                using (FileStream fs = System.IO.File.Create(filename))
+                Directory.CreateDirectory(uploads);
+            }
+
+            // Path to save the chunk files with .part extension
+            var tempFilePath = Path.Combine(uploads, fileName + ".part");
+
+            if (chunkIndex == "0")
+            {
+                // If it's the first chunk, create a new file or overwrite existing one
+                using (var fileStream = new FileStream(tempFilePath, FileMode.Create))
                 {
-                    file.CopyTo(fs);
-                    fs.Flush();
+                    await UploadFiles.CopyToAsync(fileStream);
                 }
             }
             else
             {
-                using (FileStream fs = System.IO.File.Open(filename, FileMode.Append))
+                // Append subsequent chunks to the file
+                using (var fileStream = new FileStream(tempFilePath, FileMode.Append))
                 {
-                    file.CopyTo(fs);
-                    fs.Flush();
+                    await UploadFiles.CopyToAsync(fileStream);
                 }
             }
+
+            // If all chunks are uploaded, move the file to the final destination
+            if (Convert.ToInt32(chunkIndex) == Convert.ToInt32(totalChunk) - 1)
+            {
+                var finalFilePath = Path.Combine(uploads, fileName);
+
+                // Move the .part file to the final destination without the .part extension
+                System.IO.File.Move(tempFilePath, finalFilePath);
+            }
+
+            return Ok(new { status = "Chunk uploaded successfully" });
         }
+
+        return BadRequest(new { status = "No file to upload" });
     }
-    catch (Exception e)
+    catch (Exception ex)
     {
-        Response.Clear();
-        Response.StatusCode = 204;
-        Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "File failed to upload";
-        Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = e.Message;
+        return StatusCode(500, new { status = "Error", message = ex.Message });
     }
 }
 
-// Server configuration for remove a uploaded file
-
-private IHostingEnvironment hostingEnv;
-
-public HomeController(IHostingEnvironment env)
-{
-    this.hostingEnv = env;
-}
-public void Remove(IList<IFormFile> UploadFiles)
+// Method to handle file removal (optional if needed)
+public async Task<IActionResult> Remove(string UploadFiles)
 {
     try
     {
-        foreach (var file in UploadFiles)
+        var filePath = Path.Combine(uploads, UploadFiles);
+
+        if (System.IO.File.Exists(filePath))
         {
-            var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
-            var filePath = Path.Combine(hostingEnv.WebRootPath);
-            var fileSavePath = filePath + "\\" + fileName;
-            if (System.IO.File.Exists(fileSavePath))
-            {
-                System.IO.File.Delete(fileSavePath);
-            }
+            System.IO.File.Delete(filePath);
+            return Ok(new { status = "File deleted successfully" });
+        }
+        else
+        {
+            return NotFound(new { status = "File not found" });
         }
     }
-    catch (Exception e)
+    catch (Exception ex)
     {
-        Response.Clear();
-        Response.StatusCode = 200;
-        Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "File removed successfully";
-        Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = e.Message;
+        return StatusCode(500, new { status = "Error", message = ex.Message });
     }
 }
 ```
