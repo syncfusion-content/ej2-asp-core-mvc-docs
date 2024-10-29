@@ -317,7 +317,8 @@ After configuring the SharePoint file provider, build and run the project. Now, 
 {% include code-snippet/file-manager/share-point-provider/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Share-Point-Provider.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -326,7 +327,9 @@ After configuring the SharePoint file provider, build and run the project. Now, 
 {% include code-snippet/file-manager/share-point-provider/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Share-Point-Provider.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
+
 {% endif %}
 
 
