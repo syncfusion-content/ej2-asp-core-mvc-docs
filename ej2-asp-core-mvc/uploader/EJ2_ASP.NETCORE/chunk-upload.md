@@ -179,9 +179,6 @@ public async Task<IActionResult> Save(IFormFile UploadFiles)
     {
         if (UploadFiles.Length > 0)
         {
-            // Fetch chunk-index and total-chunk from form data
-            var chunkIndex = Request.Form["chunk-index"];
-            var totalChunk = Request.Form["total-chunk"];
             var fileName = UploadFiles.FileName;
 
             // Create upload directory if it doesn't exist
@@ -190,36 +187,44 @@ public async Task<IActionResult> Save(IFormFile UploadFiles)
                 Directory.CreateDirectory(uploads);
             }
 
-            // Path to save the chunk files with .part extension
-            var tempFilePath = Path.Combine(uploads, fileName + ".part");
-
-            if (chunkIndex == "0")
+            if (UploadFiles.ContentType == "application/octet-stream") //Handle chunk upload
             {
-                // If it's the first chunk, create a new file or overwrite existing one
-                using (var fileStream = new FileStream(tempFilePath, FileMode.Create))
+                // Fetch chunk-index and total-chunk from form data
+                var chunkIndex = Request.Form["chunk-index"];
+                var totalChunk = Request.Form["total-chunk"];
+
+                // Path to save the chunk files with .part extension
+                var tempFilePath = Path.Combine(uploads, fileName + ".part");
+
+                using (var fileStream = new FileStream(tempFilePath, chunkIndex == "0" ? FileMode.Create : FileMode.Append))
                 {
                     await UploadFiles.CopyToAsync(fileStream);
                 }
+
+                // If all chunks are uploaded, move the file to the final destination
+                if (Convert.ToInt32(chunkIndex) == Convert.ToInt32(totalChunk) - 1)
+                {
+                    var finalFilePath = Path.Combine(uploads, fileName);
+
+                    // Move the .part file to the final destination without the .part extension
+                    System.IO.File.Move(tempFilePath, finalFilePath);
+
+                    return Ok(new { status = "File uploaded successfully" });
+                }
+
+                return Ok(new { status = "Chunk uploaded successfully" });
             }
-            else
+            else //Handle normal upload
             {
-                // Append subsequent chunks to the file
-                using (var fileStream = new FileStream(tempFilePath, FileMode.Append))
+                var filePath = Path.Combine(uploads, fileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
                     await UploadFiles.CopyToAsync(fileStream);
                 }
+
+                return Ok(new { status = "File uploaded successfully" });
             }
-
-            // If all chunks are uploaded, move the file to the final destination
-            if (Convert.ToInt32(chunkIndex) == Convert.ToInt32(totalChunk) - 1)
-            {
-                var finalFilePath = Path.Combine(uploads, fileName);
-
-                // Move the .part file to the final destination without the .part extension
-                System.IO.File.Move(tempFilePath, finalFilePath);
-            }
-
-            return Ok(new { status = "Chunk uploaded successfully" });
         }
 
         return BadRequest(new { status = "No file to upload" });
