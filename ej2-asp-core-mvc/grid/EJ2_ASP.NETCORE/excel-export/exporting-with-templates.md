@@ -16,7 +16,7 @@ The grid offers the option to export the column, detail, and caption templates t
 
 The Excel export functionality allows you to export Grid columns that include images, hyperlinks, and custom text to an Excel document.
 
-In the following sample, the hyperlinks and images are exported to Excel using [hyperlink](https://ej2.syncfusion.com/documentation/api/grid/excelQueryCellInfoEventArgs/#hyperlink) and [image](https://ej2.syncfusion.com/documentation/api/grid/excelQueryCellInfoEventArgs/#image) properties in the [excelQueryCellInfo](https://ej2.syncfusion.com/documentation/api/grid/#excelquerycellinfo event.
+In the following sample, the hyperlinks and images are exported to Excel using [hyperlink](https://ej2.syncfusion.com/documentation/api/grid/excelQueryCellInfoEventArgs/#hyperlink) and [image](https://ej2.syncfusion.com/documentation/api/grid/excelQueryCellInfoEventArgs/#image) properties in the [excelQueryCellInfo](https://ej2.syncfusion.com/documentation/api/grid/#excelquerycellinfo) event.
 
 > Excel Export supports base64 string to export the images.
 
@@ -43,7 +43,7 @@ In the following sample, the hyperlinks and images are exported to Excel using [
 {% endtabs %}
 {% endif %}
 
-![ColumnTemplateExport](../../images/colTemp_excel_expt.gif)
+![ColumnTemplateExport](../images/colTemp_excel_expt.gif)
 
 ## Exporting with detail template
 
@@ -84,7 +84,7 @@ In the following sample, the detail row content is formatted by specifying the [
 {% endtabs %}
 {% endif %}
 
-![DetailTemplateExport](../../images/detailTemp_excel_expt.gif)
+![DetailTemplateExport](../images/detailTemp_excel_expt.gif)
 
 ## Exporting with caption template
 
@@ -115,4 +115,4 @@ In the following sample, the customized caption text is exported to Excel using 
 {% endtabs %}
 {% endif %}
 
-![CaptionTemplateExport](../../images/captionTemp_excel_expt.gif)
+![CaptionTemplateExport](../images/captionTemp_excel_expt.gif)
