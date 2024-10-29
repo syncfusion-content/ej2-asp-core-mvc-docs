@@ -53,9 +53,9 @@ Property Name |Description
 `isLazyLoad` |To differentiate the default grouping and lazy load grouping
 `onDemandGroupInfo` |Have the details of expanded caption row grouping `level`, `skip`, `take` and `filter` query of the child records
 
-![IsLazyLoad](../../images/islazyload.jpg)
+![IsLazyLoad](../images/islazyload.jpg)
 
-![OnDemandGroupInfo](../../images/groupinfo.jpg)
+![OnDemandGroupInfo](../images/groupinfo.jpg)
 
 The following code example describes the lazy load grouping handled at the server-side with other the grid actions.
 

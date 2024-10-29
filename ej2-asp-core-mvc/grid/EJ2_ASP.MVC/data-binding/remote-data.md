@@ -71,7 +71,7 @@ The following code example shows how to bind ExpandoObject datasource in grid us
 
 The following image represents ExpandoObject complex data binding.
 
-![Grid with ExpandoObject Binding](../../images/ExpandoObjectDemo.gif)
+![Grid with ExpandoObject Binding](../images/ExpandoObjectDemo.gif)
 
 ## DynamicObject with complex column binding using URL adaptor
 
@@ -106,7 +106,7 @@ The following code example shows how to bind DynamicObject datasource in grid us
 
 The following image represents DynamicObject complex data binding. 
 
-![Grid with DynamicObject Binding](../../images/DynamicObjectDemo.gif)
+![Grid with DynamicObject Binding](../images/DynamicObjectDemo.gif)
 
 ## OData adaptor - Binding OData service
 

@@ -43,7 +43,7 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 {% endtabs %}
 {% endif %}
 
-![ColumnTemplateExport](../../images/colTemp_pdf_expt.gif)
+![ColumnTemplateExport](../images/colTemp_pdf_expt.gif)
 
 ## Exporting with detail template
 
@@ -85,7 +85,7 @@ In the following sample, the detail row content is formatted by specifying the [
 {% endtabs %}
 {% endif %}
 
-![DetailTemplateExport](../../images/detailTemp_pdf_expt.gif)
+![DetailTemplateExport](../images/detailTemp_pdf_expt.gif)
 
 ## Exporting with caption template
 
@@ -116,4 +116,4 @@ In the following sample, the customized caption text is exported to PDF using [c
 {% endtabs %}
 {% endif %}
 
-![CaptionTemplateExport](../../images/captionTemp_pdf_expt.gif)
+![CaptionTemplateExport](../images/captionTemp_pdf_expt.gif)
