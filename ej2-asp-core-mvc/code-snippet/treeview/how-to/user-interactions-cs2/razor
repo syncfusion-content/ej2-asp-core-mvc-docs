@@ -29,7 +29,7 @@
 <script>
     var treeObj = document.getElementById('treedata').ej2_instances[0];
     document.getElementById("button1").addEventListener('click', function () {
-        // The node with id 21 is removed from the TreeView component.
+        // The node with id 14 is removed from the TreeView component.
         treeObj.removeNodes(['14']);
     });
     document.getElementById("button2").addEventListener('click', function () {

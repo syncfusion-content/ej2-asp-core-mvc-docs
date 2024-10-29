@@ -11,6 +11,7 @@
         var nodeData = treeObj.getTreeData('4');
         //Update the value from backend.
         nodeData[0].value = 400;
+        nodeData[0].name = 'Node refreshed';
         // Refresh the updated data.
         treeObj.refreshNode('4', nodeData);
     });
