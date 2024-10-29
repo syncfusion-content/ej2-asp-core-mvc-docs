@@ -1,0 +1,30 @@
+<ejs-chart id="container" title="Family Expense for Month">
+    <e-chart-primaryxaxis valueType="Category" interval="1">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="John" xName="x" yName="y" type="StackingStepArea">
+            <e-series-marker visible="true"></e-series-marker>
+            <e-series-emptypointsettings mode="Syncfusion.EJ2.Charts.EmptyPointMode.Average">
+                <e-emptypointsettings-border width="2" color="green"></e-emptypointsettings-border>
+            </e-series-emptypointsettings>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Peter" xName="x" yName="y1" type="StackingStepArea">
+            <e-series-marker visible="true"></e-series-marker>
+            <e-series-emptypointsettings mode="Syncfusion.EJ2.Charts.EmptyPointMode.Average">
+                <e-emptypointsettings-border width="2" color="green"></e-emptypointsettings-border>
+            </e-series-emptypointsettings>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Steve" xName="x" yName="y2" type="StackingStepArea">
+            <e-series-marker visible="true"></e-series-marker>
+            <e-series-emptypointsettings mode="Syncfusion.EJ2.Charts.EmptyPointMode.Average">
+                <e-emptypointsettings-border width="2" color="green"></e-emptypointsettings-border>
+            </e-series-emptypointsettings>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Charle" xName="x" yName="y3" type="StackingStepArea">
+            <e-series-marker visible="true"></e-series-marker>
+            <e-series-emptypointsettings mode="Syncfusion.EJ2.Charts.EmptyPointMode.Average">
+                <e-emptypointsettings-border width="2" color="green"></e-emptypointsettings-border>
+            </e-series-emptypointsettings>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

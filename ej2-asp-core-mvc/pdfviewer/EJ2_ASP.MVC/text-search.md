@@ -13,21 +13,17 @@ documentation: ug
 The Text Search option in PDF Viewer is used to find and highlight the text content from the document. You can enable/disable the text search using the following code snippet.
 
 {% tabs %}
-{% highlight html tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
-```html
     <div style="width:100%;height:600px">
         @Html.EJS().PdfViewer("pdfviewer").EnableTextSearch(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
     </div>
-```
 {% endhighlight %}
-{% highlight html tabtitle="Server-Backed" %}
+{% highlight cshtml tabtitle="Server-Backed" %}
 
-```html
     <div style="width:100%;height:600px">
         @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableTextSearch(true).DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
     </div>
-```
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,7 +61,7 @@ Searches for the specified text or an array of strings within the document and r
 Searches for the specified text within the document and returns the bounding rectangles of the matched text. The search can be case-sensitive based on the provided parameter. It returns the bounding rectangles for all pages in the document where the text was found. The below code snippet shows how to get the bounds of the given text:
 
 {% tabs %}
-{% highlight MVC tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
 <div style="width:100%;height:600px">
@@ -80,7 +76,7 @@ Searches for the specified text within the document and returns the bounding rec
 </script>
 
 {% endhighlight %}
-{% highlight MVC tabtitle="Server-backed" %}
+{% highlight cshtml tabtitle="Server-backed" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
 <div style="width:100%;height:600px">
@@ -101,7 +97,7 @@ Searches for the specified text within the document and returns the bounding rec
 Searches for the specified text within the document and returns the bounding rectangles of the matched text. The search can be case-sensitive based on the provided parameter. It returns the bounding rectangles for that page in the document where the text was found. The below code snippet shows how to get the bounds of the given text from the desired page:
 
 {% tabs %}
-{% highlight MVC tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
 <div style="width:100%;height:600px">
@@ -116,7 +112,7 @@ Searches for the specified text within the document and returns the bounding rec
 </script>
 
 {% endhighlight %}
-{% highlight MVC tabtitle="Server-backed" %}
+{% highlight cshtml tabtitle="Server-backed" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
 <div style="width:100%;height:600px">
@@ -137,7 +133,7 @@ Searches for the specified text within the document and returns the bounding rec
 Searches for an array of strings within the document and returns the bounding rectangles for each occurrence. The search can be case-sensitive based on the provided parameters. It returns the bounding rectangles for all pages in the document where the strings were found.
 
 {% tabs %}
-{% highlight MVC tabtitle="Standalone" %}
+{% highlight cshtml tabtitle="Standalone" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
 <div style="width:100%;height:600px">
@@ -152,7 +148,7 @@ Searches for an array of strings within the document and returns the bounding re
 </script>
 
 {% endhighlight %}
-{% highlight MVC tabtitle="Server-backed" %}
+{% highlight cshtml tabtitle="Server-backed" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
 <div style="width:100%;height:600px">
@@ -173,7 +169,7 @@ Searches for an array of strings within the document and returns the bounding re
 Searches for an array of strings within the document and returns the bounding rectangles for each occurrence. The search can be case-sensitive based on the provided parameters. It returns the bounding rectangles for these search strings on that particular page where the strings were found.
 
 {% tabs %}
-{% highlight MVC tabtitle="standalone" %}
+{% highlight cshtml tabtitle="standalone" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
 <div style="width:100%;height:600px">
@@ -188,7 +184,7 @@ Searches for an array of strings within the document and returns the bounding re
 </script>
 
 {% endhighlight %}
-{% highlight MVC tabtitle="Server-backed" %}
+{% highlight cshtml tabtitle="Server-backed" %}
 
 <button type="button" onclick="findTextBounds()">FindTextBounds</button>
 <div style="width:100%;height:600px">
