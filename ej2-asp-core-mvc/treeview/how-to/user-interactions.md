@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User interactions in ##Platform_Name## Treeview Component
+title: User interactions in Syncfusion ##Platform_Name## Treeview Component
 description: Learn here all about User interactions in Syncfusion ##Platform_Name## Treeview component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: User interactions
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# User interactions
+# User interactions in TreeView component
 
 The below methods were available in TreeView, and we can walk through one by one.
 
