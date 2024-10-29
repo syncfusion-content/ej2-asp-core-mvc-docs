@@ -1,0 +1,43 @@
+<ejs-toolbar id="Toolbar" clicked="onToolbarClick">
+    <e-toolbar-items>
+        <e-toolbar-item id="add" text="Add"></e-toolbar-item>
+        <e-toolbar-item id="edit" text="Edit"></e-toolbar-item>
+        <e-toolbar-item id="delete" text="Delete"></e-toolbar-item>
+        <e-toolbar-item id="update" text="Update"></e-toolbar-item>
+        <e-toolbar-item id="cancel" text="Cancel"></e-toolbar-item>
+    </e-toolbar-items>
+</ejs-toolbar>
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" width="120"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer ID" validationRules="@(new { required=true})" width="120"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" validationRules="@(new { required= true, number=true })" width="120"></e-grid-column>
+            <e-grid-column field="OrderDate" headerText="Order Date" validationRules="@(new { required=true})" format="yMd" textAlign="Right" editType="datepickeredit" width="130"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" validationRules="@(new { required=true})" width="150"></e-grid-column>              
+        </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function onToolbarClick(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        switch (args.item.id) {
+            case 'add':
+                grid.addRecord();
+                break;
+            case 'edit':
+                grid.startEdit();
+                break;
+            case 'delete':
+                grid.deleteRecord();
+                break;
+            case 'update':
+                grid.endEdit();
+                break;
+            case 'cancel':
+                grid.closeEdit();
+                break;
+        }
+    }
+</script>
