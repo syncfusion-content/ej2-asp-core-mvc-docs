@@ -316,7 +316,8 @@ After configuring the SharePoint file provider, build and run the project. Now, 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/share-point-provider/tagHelper %}
 {% endhighlight %}
-{% endtabs %}
+{% highlight c# tabtitle="Share-Point-Provider.cs" %}
+{% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -324,8 +325,10 @@ After configuring the SharePoint file provider, build and run the project. Now, 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/share-point-provider/razor %}
 {% endhighlight %}
-{% endtabs %}
+{% highlight c# tabtitle="Share-Point-Provider.cs" %}
+{% endhighlight %}{% endtabs %}
 {% endif %}
+
 
 > **Note:** To learn more about the file actions that can be performed with ASP.NET Core SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider#key-features)
 
