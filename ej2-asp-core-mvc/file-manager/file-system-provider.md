@@ -287,7 +287,7 @@ To set up the SharePoint service provider, follow these steps:
 
 **Example `appsettings.json` Configuration**
 
-```json
+```typescript
 {
   "Logging": {
     "LogLevel": {
@@ -330,7 +330,7 @@ After configuring the SharePoint file provider, build and run the project. Now, 
 {% endif %}
 
 
-> **Note:** To learn more about the file actions that can be performed with ASP.NET Core SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider#key-features)
+N> **Note:** To learn more about the file actions that can be performed with ASP.NET Core SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider#key-features)
 
 ## File Transfer Protocol file system provider
 
