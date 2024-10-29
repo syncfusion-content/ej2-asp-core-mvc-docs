@@ -6,6 +6,7 @@ platform: ej2-asp-core-mvc
 control: Chunk Upload
 publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 
