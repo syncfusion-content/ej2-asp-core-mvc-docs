@@ -70,7 +70,7 @@ The following code example shows how to bind ExpandoObject datasource in grid us
 
 The following image represents ExpandoObject complex data binding. 
 
-![Grid with ExpandoObject Binding](../../images/ExpandoObjectDemo.gif)
+![Grid with ExpandoObject Binding](../images/ExpandoObjectDemo.gif)
 
 ## DynamicObject with complex column binding using URL adaptor
 
@@ -105,7 +105,7 @@ The following code example shows how to bind DynamicObject datasource in grid us
 
 The following image represents DynamicObject complex data binding.
 
-![Grid with DynamicObject Binding](../../images/DynamicObjectDemo.gif)
+![Grid with DynamicObject Binding](../images/DynamicObjectDemo.gif)
 
 ## OData adaptor - Binding OData service
 
@@ -412,8 +412,7 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/data-binding/dataoperations/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Dataoperations.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -421,8 +420,7 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/data-binding/dataoperations/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Dataoperations.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 After defined `DataManager`, grid will request an AJAX POST for data. It will be sent to the specified data service for every grid actions with the needed parameters. This query parameters will help you to perform server-side operations for grid.

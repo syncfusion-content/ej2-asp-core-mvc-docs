@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Grid Component
+title: Selection in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Selection
+# Selection  in ASP.NET MVC Grid Component
 
 Selection provides an option to highlight a row or a cell. It can be done through simple mouse down or arrow keys. To disable selection in the Grid, set the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSelection) to false.
 
@@ -79,12 +79,12 @@ The grid supports three types of selection mode that can be set by using the [`M
 ## Touch interaction
 
 When you tap a grid row on touchscreen device, the tapped row is selected. It also shows a popup 
-![selection](images/selection.jpg) 
+![selection](../images/selection.jpg) 
 for multi-row selection. To select multiple rows or cells, tap the popup
-![mselection](images/mselection.jpg)  and then tap the desired rows or cells.
+![mselection](../images/mselection.jpg)  and then tap the desired rows or cells.
 
 N> Multi-selection requires the selection `Type` to be `Multiple`.
 
 The following screenshot represents a grid touch selection in the device.
 
-![Touch interaction](images/touch-selection.jpg)
+![Touch interaction](../images/touch-selection.jpg)

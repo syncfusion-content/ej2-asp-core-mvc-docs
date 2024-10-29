@@ -116,7 +116,7 @@ N> If you get posted data as **null** at the server side, then it might be due
 
 The newly added record details are bound to the **value** parameter. Refer to the following screenshot.
 
-![insert](../../images/insert.jpg)
+![insert](../images/insert.jpg)
 
 ### Update record
 
@@ -153,7 +153,7 @@ N> If you get posted data as **null** at the server side, then it might be due
 
 The updated record details are bound to the **value** parameter. Refer to the following screenshot.
 
-![update](../../images/update.jpg)
+![update](../images/update.jpg)
 
 ### Delete record
 
@@ -190,7 +190,7 @@ N> If you get posted data as **null** at the server side, then it might be due
 
 The deleted record primary key value is bound to the **key** parameter. Refer to the following screenshot.
 
-![delete](../../images/delete.jpg)
+![delete](../images/delete.jpg)
 
 ### CRUD URL
 
@@ -227,7 +227,7 @@ The following code example describes the above behavior.
 
 Refer to the following screenshot to know about the action parameter.
 
-![crudupdate](../../images/crudupdate.jpg)
+![crudupdate](../images/crudupdate.jpg)
 
 N> If you specify **InsertUrl** along with **CrudUrl**, then while adding **InsertUrl** only will be invoked.
 <br/> If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
@@ -272,4 +272,4 @@ public ActionResult BatchUpdate([FromBody]string action, List<EditableOrder> add
 }
 ```
 
-![batch](../../images/batch.jpg)
+![batch](../images/batch.jpg)
