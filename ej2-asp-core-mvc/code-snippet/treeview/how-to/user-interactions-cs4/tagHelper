@@ -1,0 +1,35 @@
+<div id='treeparent'>
+<ejs-treeview id="treedata" nodeTemplate="@Html.Raw("<div class=\"treediv\"><span class=\"treespan\" >${name} : ${value}</span></div>")">
+        <e-treeview-fields dataSource="ViewBag.dataSource" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded"></e-treeview-fields>
+</ejs-treeview>
+<ejs-button id="button1" cssClass="e-primary inline-element right" content="Refresh node"></ejs-button>
+<div id="display"></div>
+</div>
+<script>
+    var treeObj = document.getElementById('treedata').ej2_instances[0];
+    document.getElementById("button1").addEventListener('click', function () {
+        var nodeData = treeObj.getTreeData('4');
+        //Update the value from backend.
+        nodeData[0].value = 400;
+        // Refresh the updated data.
+        treeObj.refreshNode('4', nodeData);
+    });
+</script>
+
+<style>
+    #treeparent {
+        display: block;
+        max-width: 350px;
+        max-height: 350px;
+        margin: auto;
+        overflow: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+    #display {
+        max-width: 500px;
+        margin: auto;
+        padding: 10px;
+    }
+</style>
