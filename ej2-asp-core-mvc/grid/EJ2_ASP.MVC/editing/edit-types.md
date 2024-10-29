@@ -8,96 +8,110 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Edit Types in ASP.NET Core Grid Component
 
-# Edit Types in ASP.NET MVC Grid Component
+The ASP.NET Core Grid component in Syncfusion provides various edit types that allow you to customize the editing behavior for different types of columns. These edit types enhance the editing experience and provide flexibility in handling different data types. 
 
-## Customize editors using params
+The Syncfusion Grid provides pre-built default editors that enhance data editing and input handling within the grid. These default editors are designed to simplify the process of defining the editor component for specific columns based on the data type of the column within the grid. To configure default editors for grid columns, leverage the `EditType` property.
 
-The [`EditType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_EditType) of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) is used to define the editor component for any particular column.
+The available default edit types are as follows:
 
-You can set the [`EditType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_EditType) based on data type of the column.
+Component|Edit Type value |Description
+----|-----|-----
+[TextBox](../../textbox)|stringedit	|  The  `stringedit` type renders a TextBox component for string data type columns. 
+[NumericTextBox](../../numerictextbox)|numericedit	| The `numericedit` type renders a NumericTextBox component for integers,double,float ,short ,byte ,long ,long double and decimal data types columns.
+[DropDownList](../../drop-down-list)|dropdownedit	| The `dropdownedit` type renders a DropdownList component for string data type columns.
+[Checkbox](../../check-box)|booleanedit	| The `booleanedit` type renders a CheckBox component for boolean data type columns.
+[DatePicker](../../datepicker)|datepickeredit	|The `datepickeredit` type renders a DatePicker component for date data type columns.
+[DateTimePicker](../../datetimepicker)|datetimepickeredit	| The `datetimepickeredit` type renders a DateTimePicker component for date time data type columns.
 
-* **NumericTextBox** component for integers, double, and decimal data types.
+The following example demonstrates how to define the `EditType` for grid columns:
 
-* **TextBox** component for string data type.
+```c#
+    col.Field("CustomerName").HeaderText("Customer Name").EditType("stringedit").Add();
+    col.Field("Frieght").HeaderText("Frieght").EditType("numericedit").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Add();
+    col.Field("OrderDate").HeaderText("Order Date").EditType("datepickeredit").Add();
+    col.Field("OrderTime").HeaderText("Order Time").EditType("datetimepickeredit").Add();
+    col.Field("Verified").HeaderText("Verified").EditType("booleanedit").Add();
+```
+> If edit type is not defined in the column, then it will be considered as the **stringedit** type (TextBox component).
 
-* **DropDownList** component to show all unique values related to that field.
+## Customize TextBox component of stringedit type 
 
-* **CheckBox** component for boolean data type.
+You can customize the default TextBox component in Grid edit form using its property. This customization allows you to configure various properties of the TexBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the `Columns->Edit->Params` property.
 
-* **DatePicker** component for date data type.
+Component|Edit Type |Description|Example Customized edit params
+-----|---|-----|-----|
+[TextBox](../../textbox) |stringedit| The `stringedit` type renders a TextBox component for string data type columns. To customize the `TextBox` component, refer to the [TextBox API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.textbox.html#properties) for detailed information on available properties | params: { showClearButton : true}
 
-* **DateTimePicker** component for date time data type.
-
-Also, you can customize the behavior of the editor component through **Params** of [`Edit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Edit) property in [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html).
-
-The following table describes cell edit type and their corresponding edit params of the column.
-
-|Component |Example|
-|-----|-----|
-|`NumericTextBox` | params: { decimals: 2, value: 5 }|
-|`DropDownList` | params: { value: 'Germany' }|
-|`Checkbox` | params: { checked: true}|
-|`DatePicker` | params: { format:'dd.MM.yyyy' }|
-|`DateTimePicker` | params: { value: new Date() }|
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/celleditparams/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Celleditparams.cs" %}
-{% include code-snippet/grid/edit/celleditparams/celleditparams.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The following sample code demonstrates the customization applied to TextBox component of **CustomerID** Grid column:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/celleditparams/razor %}
+{% include code-snippet/grid/edit/textbox-edit-params/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Celleditparams.cs" %}
-{% include code-snippet/grid/edit/celleditparams/celleditparams.cs %}
+{% highlight c# tabtitle="Textbox-params.cs" %}
+{% include code-snippet/grid/edit/textbox-edit-params/textbox-params.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+## Customize NumericTextBox component of numericedit type 
 
+You can customize the `NumericTextBox` component in Grid edit form using its property. This customization allows you to configure various properties of the NumericTextBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the `Columns->Edit->Params` property.
 
-N> If edit type is not defined in the column, then it will be considered as the **stringedit** type (Textbox component).
+Component| Edit Type |Description |Example Customized edit params
+-----|-----|-----|----|
+[NumericTextBox](../../numerictextbox)|numericedit| TThe `numericedit` type renders a NumericTextBox component for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** component, refer to the [NumericTextBox API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.numerictextbox.html) for detailed information on available properties. | params: { decimals: 2, value: 5 }
+
+The following sample code demonstrates the customization applied to NumericTextBox component of **Frieght** Grid column:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/numeric-edit-params/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Numeric-textbox-params.cs" %}
+{% include code-snippet/grid/edit/numeric-edit-params/numeric-params.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ### Restrict to type decimal points in a NumericTextBox while editing the numeric column
 
-By default, the number of decimal places will be restricted to two in the NumericTextBox while editing the numeric column. We can restrict to type the decimal points in a NumericTextBox by using the **validateDecimalOnType** and **decimals** properties of NumericTextBox.
+By default, the `NumericTextBox` component allows entering decimal values with up to two decimal places when editing a numeric column. However, there might be cases where you want to restrict input to whole numbers only, without any decimal points. In such scenarios, you can make use of the [ValidateDecimalOnType](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.numerictextbox.html#Syncfusion_EJ2_Inputs_NumericTextBox_ValidateDecimalOnType) and [Decimals](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.numerictextbox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Decimals) properties provided by Syncfusion's `NumericTextBox` component.
 
-In the below demo, while editing the row we have restricted to type the decimal point value in the NumericTextBox of **Freight** column.
+The `ValidateDecimalOnType` property is used to control whether decimal points are allowed during input in the NumericTextBox. By default, it is set to **false**, allowing decimal points to be entered. However, when set to **true**, decimal points will be restricted, and only whole numbers can be entered.
 
-{% if page.publishingplatform == "aspnet-core" %}
+The `Decimals` property specifies the number of decimal places to be displayed in the NumericTextBox. By default, it is set to 2, meaning that two decimal places will be displayed. However, you can modify this value to customize the decimal places according to your requirements.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/prevent-decimal-point/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Prevent-decimal-point.cs" %}
-{% include code-snippet/grid/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+In the below demo, while editing the row the decimal point value is restricted to type in the NumericTextBox of **Freight** column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/prevent-decimal-point/razor %}
+{% include code-snippet/grid/edit/prevent-decimal-point/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Prevent-decimal-point.cs" %}
-{% include code-snippet/grid/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
+{% highlight c# tabtitle="Prevent-decimal-value.cs" %}
+{% include code-snippet/grid/edit/prevent-decimal-point/decimal-value.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+## Customize DropDownList component of DropDownEdit type 
 
+You can customize the `DropDownList` component in Grid edit form using its property. This customization allows you to configure various properties of the DropDownList, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the `Columns->Edit->Params` property. 
+
+Component|Edit Type |Description| Example Customized edit params
+-----|-----|-----|----|
+[DropDownList](../../drop-down-list)-|DropDownEdit|  The `dropdownedit` type renders a DropDownList component for string data type columns. To customize the DropDownList component, refer to the [DropDownList API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.dropdownlist.html) for detailed information on available properties.  | params: { value: ‘Germany’ }
+
+The following sample code demonstrates the customization applied to DropDownList component  of **ShipCity** Grid column:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/dropdown-edit-params/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Numeric-textbox-params.cs" %}
+{% include code-snippet/grid/edit/dropdown-edit-params/dropdown-params.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ### Provide custom data source and enabling filtering to DropDownList
 
