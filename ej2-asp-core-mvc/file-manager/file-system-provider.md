@@ -20,6 +20,7 @@ The following file providers are added in Syncfusion EJ2 File Manager component.
 * [ASP.NET Core Azure cloud file system Provider](#aspnet-core-azure-cloud-file-system-provider)
 * [ASP.NET MVC 5 Azure cloud file system Provider](#aspnet-mvc-5-azure-cloud-file-system-provider)
 * [Amazon S3 cloud file system provider](#amazon-s3-cloud-file-system-provider)
+* [ASP.NET Core SharePoint file provider](#aspnet-core-SharePoint-file-provider)
 * [File Transfer Protocol file system provider](#file-transfer-protocol-file-system-provider)
 * [SQL database file system provider](#sql-database-file-system-provider)
 * [NodeJS file system provider](#nodejs-file-system-provider)
@@ -255,6 +256,76 @@ After registering the Amazon client account details, just build and run the proj
 
 
 N> To learn more about the file actions that can be performed with Amazon S3 Cloud File System provider, refer to this [link](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider#key-features).
+
+## ASP.NET Core SharePoint file provider
+
+The ASP.NET Core SharePoint file provider allows users to access and manage files within Microsoft SharePoint. To get started, clone the [SharePoint-aspcore-file-provider](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider) using the following command.
+
+```typescript
+
+git clone https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider  sharepoint-aspcore-file-provider
+
+cd sharepoint-aspcore-file-provider
+
+```
+
+**Prerequisites**
+
+To set up the SharePoint service provider, follow these steps:
+
+1. **Create an App Registration in Azure Active Directory (AAD):** 
+   - Navigate to the Azure portal and create a new app registration under Azure Active Directory.
+   - Note down the **Tenant ID**, **Client ID**, and **Client Secret** from the app registration.
+
+2. **Use Microsoft Graph Instance:** 
+   - With the obtained Tenant ID, Client ID, and Client Secret, you can create a Microsoft Graph instance.
+   - This instance will be used to interact with the SharePoint document library.
+
+3. **Use Details from `appsettings.json`:**
+   - The `SharePointController` is already configured to use the credentials provided in the `appsettings.json` file.
+   - You only need to provide your `Tenant ID`, `Client ID`, `Client Secret`, `User Site Name`, and `User Drive ID` in the `appsettings.json` file, and the application will automatically initialize the SharePoint service.
+
+**Example `appsettings.json` Configuration**
+
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "SharePointSettings": {
+    "TenantId": "<--Tenant Id-->",
+    "ClientId": "<--Client Id-->",
+    "ClientSecret": "<--Client Secret-->",
+    "UserSiteName": "<--User Site Name-->",
+    "UserDriveId": "<--User Drive ID-->"
+  },
+  "AllowedHosts": "*"
+}
+
+```
+
+Replace "<--User Site Name-->", "<--User Drive ID-->", "tenantId", "clientId", and "clientSecret" with your actual values.
+
+After configuring the SharePoint file provider, build and run the project. Now, the project will be hosted in `http://localhost:{port}` and just mapping the **ajaxSettings** property of the File Manager component to the appropriate controller methods allows to manage the files in the Microsoft SharePoint.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/share-point-provider/tagHelper %}
+{% endhighlight %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/share-point-provider/razor %}
+{% endhighlight %}
+{% endif %}
+
+> **Note:** To learn more about the file actions that can be performed with ASP.NET Core SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider#key-features)
 
 ## File Transfer Protocol file system provider
 
