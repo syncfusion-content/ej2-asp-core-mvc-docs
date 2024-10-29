@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting Templates in ##Platform_Name## Grid Component
+title: Exporting Templates in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Exporting grids with templates in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Exporting grid with templates

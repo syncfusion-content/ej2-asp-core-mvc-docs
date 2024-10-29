@@ -412,8 +412,7 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/data-binding/dataoperations/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Dataoperations.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -421,8 +420,7 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/data-binding/dataoperations/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Dataoperations.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 After defined `DataManager`, grid will request an AJAX POST for data. It will be sent to the specified data service for every grid actions with the needed parameters. This query parameters will help you to perform server-side operations for grid.
