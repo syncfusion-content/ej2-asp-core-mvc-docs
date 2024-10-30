@@ -35,6 +35,7 @@ The following example demonstrates how to define the `EditType` for grid columns
     col.Field("OrderTime").HeaderText("Order Time").EditType("datetimepickeredit").Add();
     col.Field("Verified").HeaderText("Verified").EditType("booleanedit").Add();
 ```
+
 > If edit type is not defined in the column, then it will be considered as the **stringedit** type (TextBox component).
 
 ## Customize TextBox component of stringedit type 
@@ -56,6 +57,8 @@ The following sample code demonstrates the customization applied to TextBox comp
 {% endhighlight %}
 {% endtabs %}
 
+![Customize textbox edit type](../images/editing/textbox-edit-type.png)
+
 ## Customize NumericTextBox component of numericedit type 
 
 You can customize the `NumericTextBox` component in Grid edit form using its property. This customization allows you to configure various properties of the NumericTextBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the `Columns->Edit->Params` property.
@@ -74,6 +77,8 @@ The following sample code demonstrates the customization applied to NumericTextB
 {% include code-snippet/grid/edit/numeric-edit-params/numeric-params.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Customize numeric textbox edit type](../images/editing/numeric-textbox-edit-type.png)
 
 ### Restrict to type decimal points in a NumericTextBox while editing the numeric column
 
@@ -94,6 +99,8 @@ In the below demo, while editing the row the decimal point value is restricted t
 {% endhighlight %}
 {% endtabs %}
 
+![Customize decimal points in numeric textbox](../images/editing/numeric-textbox-decimal-values.png)
+
 ## Customize DropDownList component of DropDownEdit type 
 
 You can customize the `DropDownList` component in Grid edit form using its property. This customization allows you to configure various properties of the DropDownList, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the `Columns->Edit->Params` property. 
@@ -108,54 +115,83 @@ The following sample code demonstrates the customization applied to DropDownList
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/dropdown-edit-params/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Numeric-textbox-params.cs" %}
+{% highlight c# tabtitle="Dropdownlist-params.cs" %}
 {% include code-snippet/grid/edit/dropdown-edit-params/dropdown-params.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-### Provide custom data source and enabling filtering to DropDownList
+![Customize dropdown edit type](../images/editing/dropdown-edit-type.png)
 
-You can provide data source to the DropDownList by using **params** property of [`Edit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Edit) in [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html).
+### Provide custom data source for DropDownList component
 
-While setting new data source using edit params, you must specify a new **query** property too for the DropDownList as follows,
+In Syncfusion's Grid component, you have an option to provide a custom data source for the `DropDownList` component in the edit form. This feature allows you to define a specific set of values for the DropDownList.
 
-```typescript
-@{
-    var DropDownList = new Syncfusion.EJ2.DropDowns.DropDownList() { DataSource = ViewBag.DropDownData, Query = "new ej.data.Query()", Fields = new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings() { Value = "Country", Text = "Country" }, AllowFiltering = true, ActionComplete="actionComplete" };
-}
-{
-    col.Field("ShipName").HeaderText("ShipName").Width("150").EditType("dropdownedit").Edit(new { @params = DropDownList }).Add();
-}
-```
+To achieve this, you can utilize the `Columns->Edit->Params` property. This property allows you to define the edit params for the column within the grid.
 
-You can also enable filtering for the DropDownList by passing the **allowFiltering** as **true** to the edit params.
+When setting a new data source using the edit params, you need to specify a new [Query](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.dropdownlist.html#Syncfusion_EJ2_DropDowns_DropDownList_Query) property for the DropDownList. The `Query` property allows you to define custom queries for data retrieval and filtering.
 
-In the below demo, DropDownList is rendered with custom Datasource for the **ShipCountry** column and enabled filtering to search DropDownList items.
+In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column :
 
-{% if page.publishingplatform == "aspnet-core" %}
+### Apply filtering for DropDownList component
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/dropdown-edit/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Edit-dropdownlist.cs" %}
-{% include code-snippet/grid/how-to/dropdown-edit/edit-dropdownlist.cs %}
-{% endhighlight %}
-{% endtabs %}
+The Syncfusion Grid component provides filtering for the DropDownList within the edit form. This feature allows to select options from a predefined list and easily search for specific items using the built-in filtering feature.  
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To enable filtering, set the [AllowFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.dropdownlist.html#Syncfusion_EJ2_DropDowns_DropDownList_AllowFiltering) property to **true** within the edit params. This will enable the filtering feature in the DropDownList.
+
+In the following demo, filtering is enabled for the **ShipCountry** column:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/dropdown-edit/razor %}
+{% include code-snippet/grid/edit/dropdown-filter-edit/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Edit-dropdownlist.cs" %}
-{% include code-snippet/grid/how-to/dropdown-edit/edit-dropdownlist.cs %}
+{% highlight c# tabtitle="Filter-dropdownlist.cs" %}
+{% include code-snippet/grid/edit/dropdown-filter-edit/filter.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Customize dropdown edit type](../images/editing/filtering-for-dropdown.gif)
 
+### Open popup while focusing in the edit cell
+
+You can open the dropdown edit popup with a single click by focusing the dropdown element. This feature allows you to quickly access and interact with the dropdown options without the need for an additional click.
+
+To achieve this, you can utilize the `showPopup` method provided by the EJ2 DropDownList component. This method can be invoked within the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event of the Grid, which triggers when an action, such as editing, is completed. By calling the `showPopup` method in this event, you can open the popup for the dropdown edit.
+
+To ensure that the dropdown column is the clicked edit target, you need to set a global flag variable in the **mouseup** event along with [Load](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) event. This flag variable will be used to determine if the clicked element corresponds to the dropdown column.
+
+The following sample demonstrates how to open the popup when focusing on the edit cell using the `ActionComplete` and `Load` events:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/dropdown-popup/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Popup-dropdownlist.cs" %}
+{% include code-snippet/grid/edit/dropdown-popup/dropdown-popup.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customize dropdown edit type](../images/editing/dropdown-popup.gif)
+
+## Customize CheckBox component of booleanedit type 
+
+You can customize the CheckBox component in Grid edit form using its property. This customization allows you to configure various properties of the CheckBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the `Columns->Edit->Params` property.
+
+Component| Edit Type |Description |Example Customized edit params
+-----|-----|-----|----|
+[CheckBox](../../check-box)| booleanedit | The `booleanedit` type renders a **CheckBox** component for boolean data type. To customize the CheckBox component, refer to the [CheckBox API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.buttons.checkbox.html) for detailed information on available properties. | params: { checked: true}
+
+The following sample code demonstrates the customization applied to CheckBox component of **Verified** Grid column:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/checkbox-edit-params/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Check-box-params.cs" %}
+{% include code-snippet/grid/edit/checkbox-edit-params/checkbox-params.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customize check box edit type](../images/editing/dropdown-edit-type.png)
 
 ## Custom editors using template
 
