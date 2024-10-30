@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persisting Data in Server in ##Platform_Name## Grid Component
+title: Persisting Data in Server in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Persisting Data in Server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Persisting Data in Server
@@ -111,7 +111,7 @@ The following code example describes the above behavior.
 
 The newly added record details are bound to the **Object** parameter. Refer to the following screenshot.
 
-![insert](../../images/insertURL.jpg)
+![insert](../images/insertURL.jpg)
 
 ### Update record
 
@@ -146,7 +146,7 @@ The following code example describes the previous behavior.
 
 The updated record details are bound to the **Object** parameter. Refer to the following screenshot.
 
-![update](../../images/updateURL.jpg)
+![update](../images/updateURL.jpg)
 
 ### Delete record
 
@@ -181,7 +181,7 @@ The following code example describes the previous behavior.
 
 The deleted record primary key value is bound to the **key** parameter. Refer to the following screenshot.
 
-![delete](../../images/deleteURL.jpg)
+![delete](../images/deleteURL.jpg)
 
 ### CRUD URL
 
@@ -218,7 +218,7 @@ The following code example describes the above behavior.
 
 Refer to the following screenshot to know about the action parameter.
 
-![crudupdate](../../images/crudURL.jpg)
+![crudupdate](../images/crudURL.jpg)
 
 N> If you specify **InsertUrl** along with **CrudUrl**, then while adding **InsertUrl** only will be invoked.
 
@@ -260,4 +260,4 @@ public ActionResult BatchUpdate([FromBody]string action, List<EditableOrder> add
 }
 ```
 
-![batch](../../images/batchURL.jpg)
+![batch](../images/batchURL.jpg)
