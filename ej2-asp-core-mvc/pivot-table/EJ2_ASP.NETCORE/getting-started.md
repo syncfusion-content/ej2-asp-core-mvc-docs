@@ -92,7 +92,7 @@ Polyfills are required to use the Pivot Table in Internet Explorer 11 browser. R
 
 ## Add ASP.NET Core Pivot Table control
 
-Now, add the Syncfusion ASP.NET Core Pivot Table tag helper in `~/Pages/Index.cshtml` page, to initialize the pivot table control with sample OLAP data source.
+Now, add the Syncfusion ASP.NET Core Pivot Table tag helper in `~/Pages/Index.cshtml` page, to initialize the pivot table control with sample data source.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
