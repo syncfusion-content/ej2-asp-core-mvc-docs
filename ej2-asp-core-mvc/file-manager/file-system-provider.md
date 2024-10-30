@@ -51,7 +51,8 @@ After setting the root directory of the file system, just build and run the proj
 {% include code-snippet/file-manager/file-system-provider/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="File-system-provider.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -60,7 +61,8 @@ After setting the root directory of the file system, just build and run the proj
 {% include code-snippet/file-manager/file-system-provider/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="File-system-provider.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -90,7 +92,8 @@ After setting the root directory of the file system, just build and run the proj
 {% include code-snippet/file-manager/file-system-mvc/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="File-system-mvc.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -99,7 +102,8 @@ After setting the root directory of the file system, just build and run the proj
 {% include code-snippet/file-manager/file-system-mvc/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="File-system-mvc.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -143,7 +147,8 @@ After setting the blob container references, just build and run the project. Now
 {% include code-snippet/file-manager/azure-file-system/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Azure-file-system.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -152,7 +157,8 @@ After setting the blob container references, just build and run the project. Now
 {% include code-snippet/file-manager/azure-file-system/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Azure-file-system.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -196,7 +202,8 @@ After setting the blob container references, just build and run the project. Now
 {% include code-snippet/file-manager/mvc-azure-file-system/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Mvc-azure-file-system.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -205,7 +212,8 @@ After setting the blob container references, just build and run the project. Now
 {% include code-snippet/file-manager/mvc-azure-file-system/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Mvc-azure-file-system.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -241,7 +249,8 @@ After registering the Amazon client account details, just build and run the proj
 {% include code-snippet/file-manager/amazon-file-system/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Amazon-file-system.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -250,7 +259,8 @@ After registering the Amazon client account details, just build and run the proj
 {% include code-snippet/file-manager/amazon-file-system/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Amazon-file-system.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -317,7 +327,8 @@ After configuring the SharePoint file provider, build and run the project. Now, 
 {% include code-snippet/file-manager/share-point-provider/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Share-Point-Provider.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -326,7 +337,8 @@ After configuring the SharePoint file provider, build and run the project. Now, 
 {% include code-snippet/file-manager/share-point-provider/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Share-Point-Provider.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 N> **Note:** To learn more about the file actions that can be performed with ASP.NET Core SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider#key-features)
@@ -358,7 +370,8 @@ After registering the File Transfer Protocol details, just build and run the pro
 {% include code-snippet/file-manager/share-point-provider/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Share-Point-Provider.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -367,7 +380,8 @@ After registering the File Transfer Protocol details, just build and run the pro
 {% include code-snippet/file-manager/share-point-provider/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Share-Point-Provider.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -420,7 +434,8 @@ After configuring the connection, just build and run the project. Now, the proje
 {% include code-snippet/file-manager/sql-file-system/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Sql-file-system.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -429,7 +444,8 @@ After configuring the connection, just build and run the project. Now, the proje
 {% include code-snippet/file-manager/sql-file-system/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Sql-file-system.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -494,7 +510,8 @@ Now, just mapping the **ajaxSettings** property of the FileManager component to 
 {% include code-snippet/file-manager/node-js/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Node-js.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -503,7 +520,8 @@ Now, just mapping the **ajaxSettings** property of the FileManager component to 
 {% include code-snippet/file-manager/node-js/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Node-js.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -539,7 +557,8 @@ After updating the credentials, just build and run the project. Now, the project
 {% include code-snippet/file-manager/google-drive-file-system/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Google-drive-file-system.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -548,7 +567,8 @@ After updating the credentials, just build and run the project. Now, the project
 {% include code-snippet/file-manager/google-drive-file-system/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Google-drive-file-system.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -685,7 +705,8 @@ After configuring the Firebase Realtime Database service link, build and run the
 {% include code-snippet/file-manager/fire-base/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fire-base.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -694,7 +715,8 @@ After configuring the Firebase Realtime Database service link, build and run the
 {% include code-snippet/file-manager/fire-base/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fire-base.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -750,7 +772,8 @@ Now, just mapping the **ajaxSettings** property of the FileManager component to 
 {% include code-snippet/file-manager/ibm-js/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Ibm-js.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -759,7 +782,8 @@ Now, just mapping the **ajaxSettings** property of the FileManager component to 
 {% include code-snippet/file-manager/ibm-js/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Ibm-js.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
