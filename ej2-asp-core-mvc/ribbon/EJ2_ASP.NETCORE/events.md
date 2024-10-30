@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events
+# Events in ##Platform_Name## Ribbon control
 
 This section describes the ribbon events that will be triggered when appropriate actions are performed. The following events are available in the ribbon control.
 
@@ -239,6 +239,57 @@ The [launcherIconClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 <script>
 
     function launcherIconClickEvent(args) {
+        // Here, you can customize your code.
+    }
+
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Overflow popup open
+
+The [overflowPopupOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_OverflowPopupOpen) event is triggered while opening the overflow popup.
+
+## Overflow popup close
+
+The [overflowPopupClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_OverflowPopupClose) event is triggered while closing the overflow popup.
+
+The following code example demonstrates the ribbon rendered with `overflowPopupOpen` and `overflowPopupClose` events.
+
+{% tabs %}
+{% highlight c# tabtitle="Index.cshtml" %}
+
+@using Syncfusion.EJ2.Ribbon
+@using Syncfusion.EJ2.Navigations
+
+<ejs-ribbon id="ribbon" overflowPopupOpen="overflowPopupOpen" overflowPopupClose="overflowPopupClose" activelayout="Simplified">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type=Button>
+                                    <e-ribbon-buttonsettings iconCss="e-icons e-cut" content="Cut"></e-ribbon-buttonsettings>
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
+
+<script>
+
+    function overflowPopupOpen(args) {
+        // Here, you can customize your code.
+    }
+
+    function overflowPopupClose(args) {
         // Here, you can customize your code.
     }
 
@@ -1704,7 +1755,7 @@ The [click](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.
 
 ### BeforeClick
 
-The [BeforeClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_BeforeClick) event is triggered before selecting a button from the groupbutton items.
+The [BeforeClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_BeforeClick) event is triggered before selecting a button from the GroupButton items.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -1754,7 +1805,7 @@ The [BeforeClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.R
 
 ### Click
 
-The [Click](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_Click) event is triggered when selecting a button from the groupbutton items.
+The [Click](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGroupButtonItem.html#Syncfusion_EJ2_Ribbon_RibbonGroupButtonItem_Click) event is triggered when selecting a button from the GroupButton items.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}

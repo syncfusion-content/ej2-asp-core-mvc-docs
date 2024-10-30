@@ -1,0 +1,24 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).QueryCellInfo("queryCellInfo").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).ValidationRules(new { required = true, number = true }).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(new { required = true }).Width("120").Add();
+   col.Field("OrderDate").HeaderText("Order Date").ValidationRules(new { required = true}).Width("130").EditType("datepickeredit").Format("M/d/yy").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("Freight").HeaderText("Freight").ValidationRules(new { required = true}).Width("90").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("Verified").HeaderText("Verified").ValidationRules(new { required = true}).Template("#template").Width("90").Add();
+
+}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script type="text/x-template" id="template">
+    <input type="checkbox" id="checkbox">
+</script>
+<script>
+    function queryCellInfo(args) {
+        if (args.column.headerText === 'Verified') {
+            var checkbox = new ej.buttons.CheckBox
+                ({
+                    checked: args.data.Verified
+                });
+            checkbox.appendTo(args.cell.querySelector('input'));
+        }
+    }
+</script>

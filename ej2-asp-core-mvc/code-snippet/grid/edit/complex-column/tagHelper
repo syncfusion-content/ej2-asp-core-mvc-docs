@@ -1,0 +1,19 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.ComplexDataSource" >     
+    <e-grid-columns>
+        <e-grid-column field="EmployeeID" headerText="Employee ID"   width="120"  textAlign="Right"></e-grid-column>
+        <e-grid-column field="Name.FirstName" headerText="First Name" editTemplate="#firstNameEditTemplate" width="200"></e-grid-column>               
+        <e-grid-column field="Name.LastName"  headerText="Last Name" editTemplate="#firstNameEditTemplate" width="200"></e-grid-column>
+        <e-grid-column field="Title"  headerText="Title"  width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script id="firstNameEditTemplate">
+    @{
+       <input class="e-input" type="text" name="Name___FirstName" id="Name___FirstName" value="${Name.FirstName}" />
+    }
+</script>
+<script id="lastNameEditTemplate">
+    @{
+        <input class="e-input" type="text" name="Name___LastName" id="Name___LastName" value="${Name.LastName}" />
+    }
+</script>

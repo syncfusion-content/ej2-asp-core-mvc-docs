@@ -16,7 +16,7 @@ Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been 
 
 * The best way to get started would be to read the "Getting Started" section of the documentation for the control that you would like to start using first. The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that is recommended to read end-to-end before starting to write code, all other information can be referred as needed.
 
-* Now that you are familiar with the basics of using the control, the next step would be to start integrating the control into your application. A good starting point would be to refer to the code snippets in the [online sample browser](http://ej2.syncfusion.com/aspnetcore/) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
+* Now that you are familiar with the basics of using the control, the next step would be to start integrating the control into your application. A good starting point would be to refer to the code snippets in the [online sample browser](https://ej2.syncfusion.com/aspnetcore/grid/gridoverview) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
 
 * Another valuable resource is the API reference which provides detailed information on the object hierarchy as well as the settings available on every object.
 
@@ -84,6 +84,7 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started">Pivot Table</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core">TreeGrid</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/getting-started-core">Spreadsheet</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/multicolumn-combobox/getting-started">Multicolumn ComboBox</a></div>
         <div><p class="control-category">FILE VIEWERS & EDITORS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/getting-started">RichTextEditor</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started">PDF Viewer</a></div>
@@ -99,7 +100,7 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/listview/getting-started">ListView</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started-asp-core">Tooltip</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/splitter/getting-started">Splitter</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started/">Dashboard</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started">Dashboard</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/card/getting-started">Card</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started-asp-core">Avatar</a></div>
     </td>
@@ -139,7 +140,7 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/timepicker/getting-started">TimePicker</a></div>
         <div><p class="control-category">INPUTS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started">TextBox</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/maskedtextbox/getting-started/">Input Mask</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/maskedtextbox/getting-started">Input Mask</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/getting-started">Numeric TextBox</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/radio-button/getting-started">RadioButton</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/check-box/getting-started">CheckBox</a></div>
@@ -152,6 +153,8 @@ padding-top: 20px;
         <div><p class="control-category">FORMS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/in-place-editor/getting-started">In-place Editor</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/getting-started">Query Builder</a></div>
+        <div><p class="control-category">Interactive Chat</p></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/ai-assistview/getting-started">AI Assistview</a></div>
     </td>
     <td>
         <div><p class="control-category-topics">DROPDOWNS</p></div>
@@ -197,7 +200,7 @@ N> Syncfusion does not collect any kind of information when our controls are use
 
 * Product Development
 
-    * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
+    * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
 * Syncfusion Project Template
 

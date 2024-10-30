@@ -78,11 +78,11 @@ The grid supports three types of selection mode that can be set by using the [`m
 ## Touch interaction
 
 When you tap a grid row on touchscreen device, the tapped row is selected.
-It also shows a popup ![selection](../../images/selection.jpg) for multi-row selection.
-To select multiple rows or cells, tap the popup![mselection](../../images/mselection.jpg) and then tap the desired rows or cells.
+It also shows a popup ![selection](../images/selection.jpg) for multi-row selection.
+To select multiple rows or cells, tap the popup![mselection](../images/mselection.jpg) and then tap the desired rows or cells.
 
 N> Multi-selection requires the selection **type** to be **Multiple**.
 
 The following screenshot represents a grid touch selection in the device.
 
-![Touch interaction](../../images/touch-selection.jpg)
+![Touch interaction](../images/touch-selection.jpg)

@@ -23,7 +23,7 @@ In the following example, the [FrozenColumns](https://help.syncfusion.com/cr/asp
 {% endhighlight %}
 {% endtabs %}
 
-![Column Pinning](../../images/column-chooser/frozon.png)
+![Column Pinning](../images/column-chooser/frozon.png)
 
 > * Frozen columns should not be set outside the grid view port.
 > * Frozen Grid support column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
@@ -47,7 +47,7 @@ The following example demonstrates how to freeze particular column in grid using
 {% endhighlight %}
 {% endtabs %}
 
-![Freeze particular columns](../../images/column-chooser/frozon-particular.png)
+![Freeze particular columns](../images/column-chooser/frozon-particular.png)
 
 ## Freeze direction
 
@@ -74,7 +74,7 @@ In the following example, the **ShipCountry** column is frozen on the left side,
 {% endhighlight %}
 {% endtabs %}
 
-![Freeze direction](../../images/column-chooser/frozon-direction.png)
+![Freeze direction](../images/column-chooser/frozon-direction.png)
 
 > * Freeze Direction is not compatible with the `IsFrozen` and [FrozenColumns](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_FrozenColumns) properties.
 
@@ -120,7 +120,7 @@ The following example demonstrates how to change the default frozen line color u
 {% endhighlight %}
 {% endtabs %}
 
-![Change default frozen line color](../../images/column-chooser/frozon-color.png)
+![Change default frozen line color](../images/column-chooser/frozon-color.png)
 
 ## Deprecated methods 
 
