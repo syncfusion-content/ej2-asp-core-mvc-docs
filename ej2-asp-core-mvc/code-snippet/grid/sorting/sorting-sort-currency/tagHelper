@@ -1,0 +1,48 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" allowSorting="true" locale="ar">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" sortComparer=sortComparer width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150" sortComparer=sortComparer></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120" sortComparer=sortComparer></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yyyy/MMM/dd" width="140" sortComparer=sortComparer></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    ej.base.setCulture('ar');
+    ej.base.setCurrencyCode('QAR');
+    loadCultureFiles('en-US');
+
+    function loadCultureFiles(name) {
+        var files = ['ca-gregorian.json', 'currencies.json', 'numberingSystems.json', 'numbers.json', 'timeZoneNames.json', 'currencies.json'];
+        var loadCulture = function (prop) {
+            var val, ajax;
+
+            ajax = new ej.base.Ajax(location.origin + '/../cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+
+            ajax.onSuccess = function (value) {
+                val = value;
+                ej.base.loadCldr(JSON.parse(val));
+
+            };
+            ajax.send();
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+  
+    function sortComparer(reference, comparer, sortOrder) {
+        const referenceDate = new Date(reference);
+        const comparerDate = new Date(comparer);
+        if (typeof reference === 'number' && typeof comparer === 'number') {
+            return sortOrder === 'Ascending' ? comparer - reference : reference - comparer;
+        } else if (!isNaN(referenceDate.getTime()) && !isNaN(comparerDate.getTime())) {
+            return sortOrder === 'Ascending' ? comparerDate.getTime() - referenceDate.getTime() : referenceDate.getTime() - comparerDate.getTime();
+        }
+        else {
+            const intlCollator = new Intl.Collator(undefined, { sensitivity: 'variant', usage: 'sort' });
+            const comparisonResult = intlCollator.compare(String(reference), String(comparer));
+            return sortOrder === 'Ascending' ? -comparisonResult : comparisonResult;
+        }
+    };
+</script>
