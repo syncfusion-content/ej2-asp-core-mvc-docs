@@ -122,7 +122,7 @@ a* |Everything that starts with "a".
 *a* |Everything that has an "a" in it.
 *a*b* |Everything that has an "a" in it, followed by anything, followed by a "b", followed by anything.
 
-![WildcardFilter](../../images/wildcard_search.gif)
+![WildcardFilter](../images/wildcard_search.gif)
 
 ### LIKE filtering
 
@@ -140,7 +140,7 @@ Operator |Description
 ab% |Returns all the value that are ends with "ab" character.
 %ab |Returns all the value that are starts with "ab" character.
 
-![LIKEFilter](../../images/like_filter.gif)
+![LIKEFilter](../images/like_filter.gif)
 
 N> By default, the [`Operators`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Operators) value is **equal**.
 
