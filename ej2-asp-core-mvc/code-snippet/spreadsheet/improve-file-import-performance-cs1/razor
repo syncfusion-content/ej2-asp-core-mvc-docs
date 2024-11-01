@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2
+@{
+    var jsonData = ViewBag.jsonData;
+}
+
+@Html.EJS().Spreadsheet("spreadsheet").Created("created").Sheets((sheet) => {
+    sheet.Columns(column => {
+        column.Width(120).Add();
+        column.Width(180).Add();
+        column.Width(100).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+    }).Add();
+}).Render()
+
+<script>
+    function created(){
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+    // Parse JSON data from Razor variable into JavaScript
+    var jsonData = @Html.Raw(jsonData);
+    jsonData = JSON.parse(jsonData);
+    spreadsheet.openFromJson({file: jsonData})
+    }
+</script>

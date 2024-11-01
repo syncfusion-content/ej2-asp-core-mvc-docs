@@ -417,6 +417,45 @@ The following code snippet demonstrates how to configure the deserialization opt
 {% endtabs %}
 {% endif %}
 
+### Improve file importing performance
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+To improve file import performance in the Spreadsheet component, you can either import the Excel file as JSON data or construct a JSON object for the Spreadsheet, with `Workbook` as the key and the spreadsheet's [properties](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#properties) as the value. Then, use the `openFromJson` method within the `created` event to load the JSON data into the spreadsheet. This approach is particularly beneficial for importing large Excel files without causing performance delays.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+To improve file import performance in the Spreadsheet component, you can either import the Excel file as JSON data or construct a JSON object for the Spreadsheet, with `Workbook` as the key and the spreadsheet's [properties](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#properties) as the value. Then, use the `openFromJson` method within the `created` event to load the JSON data into the spreadsheet. This approach is particularly beneficial for importing large Excel files without causing performance delays.
+
+{% endif %} 
+
+> Refer to the following section to learn how to create a [JSON Object](https://ej2.syncfusion.com/react/documentation/spreadsheet/how-to/create-a-object-structure) structure for the Spreadsheet.
+
+The following code example demonstrates how to load JSON data into the Spreadsheet using the openFromJson method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/improve-file-import-performance-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/improve-file-import-performance-cs1/openController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/improve-file-import-performance-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OpenController.cs" %}
+{% include code-snippet/spreadsheet/improve-file-import-performance-cs1/openController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %} 
+
 ### Add custom header during open
 
 You can add your own custom header to the open action in the Spreadsheet. For processing the data, it has to be sent from server to client side and adding customer header can provide privacy to the data with the help of Authorization Token. Through the [`beforeOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_BeforeOpen) event, the custom header can be added to the request during open action.
