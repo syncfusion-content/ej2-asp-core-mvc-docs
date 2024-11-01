@@ -152,8 +152,6 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 
 In the case of remote data in the grid, the sorting operation will be performed based on the `ForeignKeyField` property of the column. The `ForeignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The grid will send a request to the server-side with the `ForeignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the grid.
 
-
-
 ## Perform sorting based on its culture
 
 Perform sorting based on culture in the Grid can be achieved by utilizing the [Locale](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property. By setting the `Locale` property to the desired culture code, you enable sorting based on that specific culture. This allows you to apply locale-specific sorting rules and ensure accurate ordering for different languages and regions.
