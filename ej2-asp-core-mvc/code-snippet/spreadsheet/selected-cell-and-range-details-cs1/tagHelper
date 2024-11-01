@@ -1,0 +1,23 @@
+<ejs-button id="getSelectedCellandRangeValues" content="Get Selected Cell & Range Details"></ejs-button>
+<ejs-spreadsheet id="spreadsheet">
+    <e-spreadsheet-sheets>
+        <e-spreadsheet-sheet>
+            <e-spreadsheet-ranges>
+                <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+            </e-spreadsheet-ranges>
+        </e-spreadsheet-sheet>
+    </e-spreadsheet-sheets>
+</ejs-spreadsheet>
+
+<script>
+
+    document.getElementById("getSelectedCellandRangeValues").addEventListener('click', function () {
+        var spreadsheet = document.getElementById("spreadsheet").ej2_instances[0];
+        var rangeIndexes = ej.spreadsheet.getRangeIndexes(spreadsheet.getActiveSheet().selectedRange)
+        var selectedCell = ej.spreadsheet.getCell(rangeIndexes[2], rangeIndexes[3], spreadsheet.getActiveSheet());
+        if (selectedCell) {
+            console.log("Selected Cell Details:", selectedCell);
+        }
+        console.log("Selected Range Details:", `RowIndex: ${rangeIndexes[2]}, ColIndex: ${rangeIndexes[3]}`);
+    });
+</script>

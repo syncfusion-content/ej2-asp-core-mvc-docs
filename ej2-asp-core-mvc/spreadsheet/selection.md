@@ -148,6 +148,37 @@ Below is a code example demonstrating how to retrieve the selected cell values a
 {% endtabs %}
 {% endif %}
 
+## Get selected cell and selected range details
+
+To get the selected cell details in the Spreadsheet component, first retrieve the active cell address from the active sheet using the `activeCell` property. Then, obtain the cell indexes of the `activeCell` by passing its address to the `getCellIndexes` method. With these indexes, you can retrieve the selected cell details by passing them, along with the sheet, to the `getCell` method in the Spreadsheet.
+
+Similarly, to get the `selectedRange` details, retrieve the `selectedRange` from the active sheet using the `selectedRange` property. Then, pass it to the `getRangeIndexes` method in the Spreadsheet to obtain the indexes of the `selectedRange` in the sheet.
+
+The following code example demonstrates how to get the selected cell and selected range details in the Spreadsheet.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/selected-cell-and-range-details-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SelectionController.cs" %}
+{% include code-snippet/spreadsheet/selected-cell-and-range-details-cs1/selectedCellValuesController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/selected-cell-and-range-details-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SelectionController.cs" %}
+{% include code-snippet/spreadsheet/selected-cell-and-range-details-cs1/selectedCellValuesController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Remove Selection
 
 The following sample shows, how to remove the selection in the spreadsheet. Here changing the `mode` as `None` in [`selectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SelectionSettings) to disable's the UI selection.
