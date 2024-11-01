@@ -4,6 +4,5 @@
     col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(new { required = "true" }).Width("120").Add();
     col.Field("Freight").HeaderText("Freight").EditType("numericedit").ValidationRules(new { required = "true", min = 1, max = 1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
     col.Field("ShipCity").HeaderText("Ship City").ValidationRules(new { required = "true" }).EditType("dropdownedit").Width("150").Add();
-    col.Field("OrderDate").HeaderText("Order Date").ValidationRules(new { required = true }).Width("130").EditType("datetimepickeredit").Format("yyyy-MM-dd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Verified").HeaderText("Verified").Edit(new { @params = new Syncfusion.EJ2.Buttons.CheckBox() { Disabled = true }}).ValidationRules(new { required = true }).DisplayAsCheckBox(true).EditType("booleanedit").Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Edit(new { @params = new Syncfusion.EJ2.Calendars.DateTimePicker() { Start = Syncfusion.EJ2.Calendars.CalendarView.Year, ShowClearButton = false, Format = "MM-dd-yyyy hh:mm aa", } }).ValidationRules(new { required = true }).Width("150").EditType("datetimepickeredit").Format("MM-dd-yyyy hh mm aa").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()

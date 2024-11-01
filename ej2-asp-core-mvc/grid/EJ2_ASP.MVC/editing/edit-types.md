@@ -193,6 +193,100 @@ The following sample code demonstrates the customization applied to CheckBox com
 
 ![Customize check box edit type](../images/editing/dropdown-edit-type.png)
 
+## Customize DatePicker component of datepickeredit type 
+
+You can customize the DatePicker component in Grid edit form using its property. This customization allows you to configure various properties of the DatePicker, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the `Columns->Edit->Params` property.
+
+Component| Edit Type |Description|Example Customized edit params
+-----|-----|-----|----|
+[DatePicker](../../datepicker)| datepickeredit | The `datepickeredit` type renders a **DatePicker** component for date data type columns. To customize the DatePicker component, refer to the [DatePicker API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.calendars.datepicker.html) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
+ 
+The following sample code demonstrates the customization applied to DatePicker component of **OrderDate** Grid column:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/datepicker-edit-params/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Date-picker-params.cs" %}
+{% include code-snippet/grid/edit/datepicker-edit-params/datepicker-params.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customize date picker edit type](../images/editing/datepicker-edit-type.png)
+
+## Customize DateTimePicker component of datetimepickeredit type 
+
+You can customize the DateTimePicker component in Grid edit form using its property. This customization allows you to configure various properties of the DateTimePicker, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the `Columns->Edit->Params` property.
+
+Component|Edit Type |Description |Example Customized edit params
+-----|-----|-----|----|
+[DateTimePicker](../../datetimepicker)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** component for date time data type columns. You can customize the DateTimePicker component, refer to the [DateTimePicker API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.calendars.datetimepicker.html) for detailed information on available properties. | params: { value: new Date() }
+ 
+The following sample code demonstrates the customization applied to DatePicker component of **OrderDate** Grid column:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/date-time-picker/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Check-box-params.cs" %}
+{% include code-snippet/grid/edit/date-time-picker/date-time-params.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customize date time picker edit type](../images/editing/date-time-picker-edit.png)
+
+## Access editor components using instance
+
+Accessing editor components in the Syncfusion Grid allows you to interact with the editor instances associated with cells during editing or adding actions. This feature is especially useful when you need to perform custom actions, retrieve data from the Editor, or manipulate its properties during editing or adding operations in the Grid.
+
+To access the component instance from the component element, you can use the **ej2_instances** property. This property provides access to the instance of the editor component associated with a cell.
+
+In the below demo, you can access the editor component instance while adding or editing actions in the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/editor-component/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Editor.cs" %}
+{% include code-snippet/grid/edit/editor-component/editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customize editor component](../images/editing/editor-component.png)
+
+## Render custom cell editors using external function
+
+The Syncfusion Grid provides the ability to render custom cell editors, allowing you to add custom controls to specific columns in your grid using the cell edit template feature. This feature is useful when you need to edit cell values using custom input elements or controls.
+
+To utilize the custom cell editor template feature, you need to implement the following functions:
+
+* **create** - It is used to create the element at the time of initialization.
+
+* **write** - It is used to create custom control or assign default value at the time of editing.
+
+* **read** - It is used to read the value from the control at the time of save.
+          
+* **destroy** - It is used to destroy the control.
+
+### Render textArea in edit form 
+
+The Syncfusion Grid allows you to render a textArea within the Grid's edit form for a specific column. This feature is especially valuable when you need to edit and display multi-line text content, providing an efficient way to manage extensive text data within the Grid's columns.
+
+To render a textArea in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
+
+> When using a text area, please use **Shift+Enter** to move to the next line. By default, pressing **Enter** will trigger a record update while you are in edit mode.
+
+The following example demonstrates how to render a textArea control in the **ShipAddress** column of the Syncfusion Grid. The `valueAccessor` property is utilized to split the text into multiple lines within the grid column:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/textarea-cell-edit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Text-area-edit.cs" %}
+{% include code-snippet/grid/edit/textarea-cell-edit/textarea.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Custom editors using template
 
 The cell edit template is used to add a custom component for a particular column by invoking the following functions:
