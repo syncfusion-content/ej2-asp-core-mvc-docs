@@ -1,4 +1,4 @@
-public IActionResult NodeEdit()
+public IActionResult RefreshNode()
         {
             List<object> treedata = new List<object>();
             treedata.Add(new

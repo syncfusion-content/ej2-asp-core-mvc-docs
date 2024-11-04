@@ -1,6 +1,6 @@
 using Syncfusion.EJ2.Navigations;
 
-public IActionResult NodeEdit()
+public IActionResult RemoveNode()
         {
              TreeViewFieldsSettings Listdata = new TreeViewFieldsSettings();
             List<object> listdata = new List<object>();
