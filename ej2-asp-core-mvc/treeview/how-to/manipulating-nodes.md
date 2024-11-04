@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Manipulating nodes in Syncfusion ##Platform_Name## TreeView control
-description: Learn here all about Manipulating nodes in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
+title: Nodes manipulation in Syncfusion ##Platform_Name## TreeView control
+description: Learn here all about Nodes manipulation in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
 platform: ej2-asp-core-mvc
-control: Manipulating nodes
+control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Manipulating nodes in Vue TreeView control
+# Nodes manipulation in TreeView control
 
-The key methods available in the TreeView control for dynamically managing nodes, allowing you to create a highly interactive and customizable tree structure:
+The TreeView component provides essential methods for dynamically managing nodes, offering the ability to create a highly interactive and customizable tree structure,
 
 * [addNodes](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#addnodes)
 * [removeNodes](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#removenodes)
@@ -18,11 +18,11 @@ The key methods available in the TreeView control for dynamically managing nodes
 * [refreshNode](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#refreshnode)
 * [moveNodes](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#movenodes)
 
-These methods give you the flexibility to add, remove, update, refresh, or move nodes as needed, enabling a fully interactive and customizable TreeView structure. Here’s an overview of each method and how they are typically used:
+These methods provide the flexibility to add, remove, update, refresh, or relocate nodes as needed, facilitating a fully interactive and customizable TreeView structure.
 
 ## Dynamically adding nodes
 
-The TreeView `addNodes` method lets you add new nodes to specific positions in the TreeView by passing the node details. You can add both parent and child nodes by providing their target ID.
+The [`addNodes`](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#addnodes) method of TreeView allows you to insert new nodes at designated positions within the TreeView by passing the necessary node information. You can add both parent and child nodes by specifying their target ID.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -55,7 +55,7 @@ Output be like the below.
 
 ## Dynamically removing nodes
 
-The TreeView `removeNodes` method lets you remove multiple nodes by providing their IDs. You can remove both parent and child nodes.
+The TreeView [`removeNodes`](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#removenodes) method lets you remove multiple nodes by providing their IDs. You can remove both parent and child nodes.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -88,7 +88,7 @@ Output be like the below.
 
  ## Dynamically update nodes
 
-The `updateNode` method in TreeView lets you update a node’s text by passing its target and the new text. Make sure to enable the [`AllowEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.navigations.treeview.html#Syncfusion_EJ2_Navigations_TreeView_AllowEditing) property.
+The TreeView control has the [`updateNode`](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#updatenode) method, which allows you to change a specific node's text by providing its target (either the node ID or element) and the new text. To enable text editing, set the [`allowEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.navigations.treeview.html#Syncfusion_EJ2_Navigations_TreeView_AllowEditing)property to true, ensuring correct functionality of the `updateNode` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -121,7 +121,7 @@ Output be like the below.
 
 ## Dynamically refresh nodes
 
-The `refreshNode` method in TreeView lets you update a node’s content by specifying its target and new details. Use the [`getTreeData`](https://ej2.syncfusion.com/javascript/documentation/api/treeview#gettreedata) method with the node’s ID to access its details.
+The [`refreshNode`](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#refreshnode) method in TreeView allows you to update the content of a specific node by providing its target and the new details. To retrieve the current details of the node, use the [`getTreeData`](https://ej2.syncfusion.com/documentation/api/treeview/#gettreedata) method in conjunction with the node's ID. This method refreshes a designated node within the TreeView.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -154,7 +154,7 @@ Output be like the below.
 
 ## Dynamically move nodes
 
-The `moveNodes` method in TreeView lets you move a node by specifying the node to move, the target location, and the index in the target.
+The [`moveNodes`](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#movenodes) method in TreeView allows you to relocate a node by defining the node to be moved, the target location, and the index within that target. It facilitates the repositioning of nodes within the same TreeView based on the specified target.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
