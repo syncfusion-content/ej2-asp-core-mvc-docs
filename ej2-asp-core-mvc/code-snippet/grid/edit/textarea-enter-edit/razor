@@ -28,6 +28,13 @@
         textboxObject = new ej.inputs.TextBox({
             multiline: true,
             value: rowData.ShipAddress,
+            focus:  function onFocus(args) {
+                ((args.event).target).addEventListener('keydown', (e) => {
+                    if ((e).key === 'Enter') {
+                        e.stopPropagation();
+                    }
+                });
+            }
         });
         textboxObject.appendTo(textboxElement);
     }

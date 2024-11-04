@@ -287,6 +287,27 @@ The following example demonstrates how to render a textArea control in the **Shi
 {% endhighlight %}
 {% endtabs %}
 
+![Render text area component](../images/editing/render-textarea-component.png)
+
+**Prevent the enter key functionality in multiline textbox while editing** 
+
+While editing a particular row in normal or dialog edit mode, pressing the **ENTER** key will save the changes made in the specific cell or edit form. Similarly, pressing the **ENTER** key while performing editing with the multiline textbox will save the changes.  However, in a multiline textbox, it is often desired that pressing the **ENTER** key adds a new line break in the text content, rather than triggering the save action.
+
+To achieve this behavior, you can utilize the `stopPropagation` method along with the [Focus](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.textbox.html#Syncfusion_EJ2_Inputs_TextBox_Focus) event of the textBox control. This prevents the default behavior of the **ENTER** key, allowing you to manually handle the newline behavior.
+
+The following example demonstrates how to prevent the enter key functionality in multiline textbox during editing by utilizing the `Focus` event:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/textarea-enter-edit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Text-area-edit.cs" %}
+{% include code-snippet/grid/edit/textarea-enter-edit/textarea.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Prevent enter key functionality](../images/editing/customize-enter-key.gif)
+
 ## Custom editors using template
 
 The cell edit template is used to add a custom component for a particular column by invoking the following functions:

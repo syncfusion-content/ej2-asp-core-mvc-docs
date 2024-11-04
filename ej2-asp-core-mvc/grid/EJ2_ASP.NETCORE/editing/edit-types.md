@@ -287,6 +287,47 @@ The following example demonstrates how to render a textArea control in the **Shi
 {% endhighlight %}
 {% endtabs %}
 
+![Render text area component](../images/editing/render-textarea-component.png)
+
+**Prevent the enter key functionality in multiline textbox while editing** 
+
+While editing a particular row in normal or dialog edit mode, pressing the **ENTER** key will save the changes made in the specific cell or edit form. Similarly, pressing the **ENTER** key while performing editing with the multiline textbox will save the changes.  However, in a multiline textbox, it is often desired that pressing the **ENTER** key adds a new line break in the text content, rather than triggering the save action.
+
+To achieve this behavior, you can utilize the `stopPropagation` method along with the [focus](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.inputs.textbox.html#Syncfusion_EJ2_Inputs_TextBox_Focus) event of the textBox control. This prevents the default behavior of the **ENTER** key, allowing you to manually handle the newline behavior.
+
+The following example demonstrates how to prevent the enter key functionality in multiline textbox during editing by utilizing the `focus` event:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/textarea-enter-edit/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Text-area-edit.cs" %}
+{% include code-snippet/grid/edit/textarea-enter-edit/textarea.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Prevent enter key functionality](../images/editing/customize-enter-key.gif)
+
+### Render MaskedTextBox control in edit form 
+
+The Syncfusion Grid allows you to render a MaskedTextBox control within the Grid's edit form for a specific column. This feature is especially useful when you need to provide masked input fields that require a specific format, such as phone numbers or postal codes.
+
+To render a MaskedTextBox control in the edit form, you need to define a cell edit template for the column using `edit` property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+
+Here's an example of how to render a MaskedTextBox control in the **CustomerNumber** column of the Syncfusion Grid.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/masked-textbox-edit/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Text-area-edit.cs" %}
+{% include code-snippet/grid/edit/masked-textbox-edit/textbox.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+
+
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

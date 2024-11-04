@@ -15,7 +15,7 @@
 
 <script>
     function createShipAddressFn() {
-        textboxElement = document.createElement('textarea');
+        textboxElementent = document.createElement('textarea');
         return textboxElement;
     }
     function destroyShipAddressFn() {
@@ -30,6 +30,13 @@
         textboxObject = new ej.inputs.TextBox({
             multiline: true,
             value: rowData.ShipAddress,
+            focus:  function onFocus(args) {
+                ((args.event).target).addEventListener('keydown', (e) => {
+                    if ((e).key === 'Enter') {
+                        e.stopPropagation();
+                    }
+                });
+            }
         });
         textboxObject.appendTo(textboxElement);
     }
