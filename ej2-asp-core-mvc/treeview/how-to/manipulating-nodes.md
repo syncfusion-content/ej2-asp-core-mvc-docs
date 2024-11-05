@@ -10,7 +10,7 @@ documentation: ug
 
 # Nodes manipulation in TreeView control
 
-The TreeView component provides essential methods for dynamically managing nodes, offering the ability to create a highly interactive and customizable tree structure,
+The TreeView control provides essential methods for dynamically managing nodes, offering the ability to create a highly interactive and customizable tree structure,
 
 * [addNodes](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#addnodes)
 * [removeNodes](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#removenodes)
