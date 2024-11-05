@@ -62,7 +62,7 @@ public IActionResult RefreshNode()
                 id = 11,
                 pid=10,
                 name = "Bestselling Albums",
-               value ="10"
+               
             });
             treedata.Add(new
             {

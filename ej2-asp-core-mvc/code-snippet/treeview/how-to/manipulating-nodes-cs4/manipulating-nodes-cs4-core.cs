@@ -101,21 +101,21 @@ public IActionResult RefreshNode()
                 id = 17,
                 pid = 14,
                 name = "Latin Music"
-                value ="10"
+                
             });
             treedata.Add(new
             {
                 id = 18,
                 pid = 14,
                 name = "Jazz"
-                value ="10"
+                
             });
             treedata.Add(new
             {
                 id = 19,
                 hasChild = true,
                 name = "More in Music"
-                value ="10"
+                
             });
             treedata.Add(new
             {
