@@ -1,6 +1,6 @@
  <div id='treeparent'>
     <div>
-        @Html.EJS().TreeView("treedata").NodeTemplate("#treeTemplate").Fields(field=>
+        @Html.EJS().TreeView("treedata").Fields(field=>
         field.Id("id").ParentID("pid").Text("name").HasChildren("hasChild").Expanded("expanded")
         .DataSource(ViewBag.dataSource)).Render()
         @Html.EJS().Button("button1").Content("Refresh Node").Render()
@@ -25,14 +25,6 @@
             }
 </style>
 
-@section PreScripts {
-    <script id="treeTemplate" type="text/x-template">
-        <div>
-            <div class="treeviewdiv">
-            </div>
-        </div>
-    </script>
-}
 
 <script>
     var treeObj = document.getElementById('treedata').ej2_instances[0];
