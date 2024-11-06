@@ -1,6 +1,5 @@
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
     <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editsettings>
-    <e-grid-pageSettings pageSize="15"></e-grid-pageSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" type="number" headerText="Order ID" validationRules="@(new { required= true })" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" type="string" headerText="Customer Name" width="150"></e-grid-column>

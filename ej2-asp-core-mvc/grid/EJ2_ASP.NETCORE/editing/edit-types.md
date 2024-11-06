@@ -312,7 +312,7 @@ The following example demonstrates how to prevent the enter key functionality in
 
 The Syncfusion Grid allows you to render a MaskedTextBox control within the Grid's edit form for a specific column. This feature is especially useful when you need to provide masked input fields that require a specific format, such as phone numbers or postal codes.
 
-To render a MaskedTextBox control in the edit form, you need to define a cell edit template for the column using `edit` property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+To render a MaskedTextBox control in the edit form, you need to define a cell edit template for the column using `edit` property. The `edit` property specifies the cell edit template that used  as an editor for a particular column.
 
 Here's an example of how to render a MaskedTextBox control in the **CustomerNumber** column of the Syncfusion Grid.
 
@@ -321,42 +321,97 @@ Here's an example of how to render a MaskedTextBox control in the **CustomerNumb
 {% include code-snippet/grid/edit/masked-textbox-edit/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text-area-edit.cs" %}
-{% include code-snippet/grid/edit/masked-textbox-edit/textbox.cs %}
+{% include code-snippet/grid/edit/masked-textbox-edit/textarea.cs %}
 {% endhighlight %}
 {% endtabs %}
 
+### Render DropDownList control in edit form 
 
+The Syncfusion Grid allows you to render a DropDownList control within the Grid's edit form for a specific column. This feature is valuable when you need to provide a convenient way to select options from a predefined list while editing data in the Grid's edit form.
 
+To render a DropDownList control in the edit form,  you need to define a cell edit template for the column using `edit` property. The `edit` property specifies the cell edit template that used  as an editor for a particular column.
 
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to render a DropDownList control in the **ShipCountry** column of the Syncfusion Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/celledittemplate/tagHelper %}
+{% include code-snippet/grid/edit/drop-down-list-edit/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Celledittemplate.cs" %}
-{% include code-snippet/grid/edit/celledittemplate/celledittemplate.cs %}
+{% highlight c# tabtitle="drop-down-list-edit.cs" %}
+{% include code-snippet/grid/edit/drop-down-list-edit/dropdownlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Render drop down list component](../images/editing/render-dropdown-component.png)
+
+### Render images in the DropDownList editor control using the item template 
+
+The Syncfusion Grid allows you to render images in the DropDownList editor conttol. This feature is valuable when you want to display images for each item in the dropdown list of a particular column, enhancing the visual representation of your data.
+
+To render a DropDownList in the edit form, you need to define a cell edit template for the column using `edit` property. The `edit` property specifies the cell edit template that used  as an editor for a particular column.
+
+To display an image in the DropDownList editor control, you can utilize the [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ItemTemplate) property. This property allows you to customize the content of each item in the dropdown list.
+
+The following example demonstrates how to render images in the DropDownList editor control using the `itemTemplate` within the **EmployeeName** column of the Syncfusion Grid. 
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/celledittemplate/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/dropdown-with-image/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Celledittemplate.cs" %}
-{% include code-snippet/grid/edit/celledittemplate/celledittemplate.cs %}
+{% highlight c# tabtitle="drop-down-list-edit.cs" %}
+{% include code-snippet/grid/edit/dropdown-with-image/dropdownlist.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Render drop down list component with image](../images/editing/dropdown-with-image.png)
 
-### Render TimePicker component while editing
+### Render Multiple columns in DropDownList control  
 
-Use the cell edit template feature of the Grid to render the TimePicker component in the Grid edit form. In the below sample, we have rendered TimePicker component in the **OrderDate** column.
+The Syncfusion Grid allows you to render a DropDownList control within the Grid's edit form for a specific column. This feature is particularly useful when you want to display more detailed information for each item in the dropdown list during editing a specific column.
 
-{% if page.publishingplatform == "aspnet-core" %}
+To render a DropDownList in the edit form, you need to define a cell edit template for the column using `edit` property. The `edit` property specifies the cell edit template that used  as an editor for a particular column.
+
+The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer element. By default, list items can be rendered as a single column in the DropDownList control. Instead of this, multiple columns can be rendered. This can be achieved by using the [headerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_HeaderTemplate) and [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ItemTemplate) properties of the DropDownList control.
+
+The following example demonstrates how to render a DropDownList control with multiple columns within in the **ShipCountry** column.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/multiple-column-dropdown/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="drop-down-list-edit.cs" %}
+{% include code-snippet/grid/edit/multiple-column-dropdown/dropdownlist.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Render multiple columns in drop down list component](../images/editing/multiple-column-dropdown.png)
+
+### Render ComboBox control in edit form 
+
+The Syncfusion Grid allows you to render a ComboBox control within the Grid's edit form for a specific column. This feature is especially valuable when you need to provide a drop-down selection with auto-suggestions for data entry.
+
+To render a comboBox control in the edit form, you need to define a cell edit template for the column using `edit` property. The `edit` property specifies the cell edit template that used  as an editor for a particular column.
+
+The following example demonstrates how to render a ComboBox control in the **ShipCountry** column of the Syncfusion Grid. 
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/combo-box/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="combo-box.cs" %}
+{% include code-snippet/grid/edit/combo-box/combo-box.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Render combo box component](../images/editing/render-combobox-component.png)
+
+### Render TimePicker control in edit form 
+
+The Syncfusion Grid allows you to render a TimePicker control within the Grid's edit form for a specific column. This feature is especially valuable when you need to provide a time input, such as appointment times, event schedules, or any other time-related data for editing in the Grid.
+
+To render a TimePicker control in the edit form, you need to define a cell edit template for the column using `edit` property. The `edit` property specifies the cell edit template that used  as an editor for a particular column.
+
+The following example demonstrates how to render a TimePicker control in the **OrderDate** column of the Syncfusion Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -367,17 +422,8 @@ Use the cell edit template feature of the Grid to render the TimePicker componen
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Render timepicker component](../../images/editing/render-timepicker-component.png)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/timepicker/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="TimePicker.cs" %}
-{% include code-snippet/grid/edit/timepicker/timepicker.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ### Render AutoComplete component while editing
@@ -435,32 +481,6 @@ Use the cell edit template feature of the Grid to render the MultiSelect DropDow
 {% endtabs %}
 {% endif %}
 
-### Render MaskedTextBox component while editing
-
-Use the cell edit template feature of the Grid to render the MaskedTextBox component in the Grid edit form. In the following sample, the MaskedTextBox component is rendered in the Mask column.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/masktextbox/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Masktextbox.cs" %}
-{% include code-snippet/grid/edit/masktextbox/masktextbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/masktextbox/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Masktextbox.cs" %}
-{% include code-snippet/grid/edit/masktextbox/Masktextbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Render RichTextEditor component while editing
 
@@ -522,32 +542,5 @@ This is demonstrated in the following sample.
 {% endif %}
 
 
-## Access editor components
 
-You can access the component instance from the component element using the **ej2_instances** property.
-
-In the below demo, you can access the Editor component instance while adding or editing actions in the [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/access-editor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Access-editor.cs" %}
-{% include code-snippet/grid/how-to/access-editor/access-editor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/access-editor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Access-editor.cs" %}
-{% include code-snippet/grid/how-to/access-editor/access-editor.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 

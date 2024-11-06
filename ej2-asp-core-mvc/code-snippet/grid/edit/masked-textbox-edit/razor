@@ -4,7 +4,7 @@
     col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(new { required = "true" }).Width("120").Add();
     col.Field("Freight").HeaderText("Freight").EditType("numericedit").ValidationRules(new { required = "true", min = 1, max = 1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
     col.Field("OrderDate").HeaderText("Order Date").ValidationRules(new { required = true }).Width("130").EditType("datepickeredit").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerNumber").HeaderText("Customer Number").ValueAccessor("valueAccessor").DisableHtmlEncode(true).Edit(new { create = "createCustomerNumberFn", read = "readCustomerNumberFn", destroy = "destroyCustomerNumberFn", write = "writeCustomerNumberFn" }).ValidationRules(new { required = true }).Width("150").Add();
+    col.Field("CustomerNumber").HeaderText("Customer Number").Edit(new { create = "createCustomerNumberFn", read = "readCustomerNumberFn", destroy = "destroyCustomerNumberFn", write = "writeCustomerNumberFn" }).ValidationRules(new { required = true }).Width("150").Add();
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 <script>
