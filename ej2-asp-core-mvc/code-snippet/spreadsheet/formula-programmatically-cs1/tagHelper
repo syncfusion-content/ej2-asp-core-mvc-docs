@@ -1,0 +1,92 @@
+@{
+    var textFormat = ViewBag.textFormat;
+}
+<button class="e-btn" id="show-formula-dialog" >Add Formula</button>
+<ejs-spreadsheet id="spreadsheet" created="created">
+    <e-spreadsheet-sheets>
+        <e-spreadsheet-sheet>
+            <e-spreadsheet-ranges>
+                 <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                <e-spreadsheet-range template="<button id='display-formulas'>Show Formula</button>" address="D16"></e-spreadsheet-range>
+            </e-spreadsheet-ranges>
+        </e-spreadsheet-sheet>
+    </e-spreadsheet-sheets>
+</ejs-spreadsheet>
+<ejs-dialog id="dialog" header="Add Formula Programmatically" target="#spreadsheet" content="@ViewBag.content" width="450px" showCloseIcon="true">
+    <e-dialog-buttons>
+        <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons1" click="applyFormula"></e-dialog-dialogbutton>
+        <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons2" click="closeDialog"></e-dialog-dialogbutton>
+    </e-dialog-buttons>
+
+</ejs-dialog>
+
+<script>
+    var showFormula = true;
+    function created() {
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        spreadsheet.cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }, 'A1:F1');
+        spreadsheet.setRowsHeight(30, ['16:16']);
+    }
+
+    document.getElementById("show-formula-dialog").onclick = ()=> {
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        var activeCell = spreadsheet.getActiveSheet().activeCell;
+        document.getElementById('cell-address').value = activeCell;
+        // To get the active cell indexes.
+        var cellIndexes = ej.spreadsheet.getCellIndexes(activeCell);
+        // To get the active cell model.
+        var cell = ej.spreadsheet.getCell(cellIndexes[0], cellIndexes[1], spreadsheet.getActiveSheet());
+        document.getElementById('cell-formula').value = cell ? (cell.formula ? cell.formula : "") : "";
+        //To show the dialog.
+        if (dialog) {
+            dialog.show();
+        }
+    }
+
+    function applyFormula() {
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        // To get the cell address.
+        let cellAddress = document.getElementById('cell-address').value;
+        // To get the formula.
+        let formula = document.getElementById('cell-formula').value;
+        // To apply the formula to the cell.
+        spreadsheet.updateCell({ formula: formula }, cellAddress);
+        // To close the dialog
+        closeDialog();
+    }
+    function closeDialog () {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+
+    // To display the formulas used in the sheet.
+    document.getElementById("display-formulas").onclick = () => {
+        let activeSheet = spreadsheet.getActiveSheet();
+        let usedRange = activeSheet.usedRange;
+        if (showFormula) {
+            for (let i = 0; i <= usedRange.rowIndex; i++) {
+                for (let j = 0; j <= usedRange.colIndex; j++) {
+                    let cell = ej.spreadsheet.getCell(i, j, activeSheet);
+                    if (cell && cell.formula) {
+                        cell.format = textFormat;
+                        cell.value = cell.formula;
+                        spreadsheet.updateCell(cell, ej.spreadsheet.getCellAddress(i, j));
+                    }
+                }
+            }
+        }
+        else {
+            for (let i = 0; i <= usedRange.rowIndex; i++) {
+                for (let j = 0; j <= usedRange.colIndex; j++) {
+                    let cell = ej.spreadsheet.getCell(i, j, activeSheet);
+                    if (cell && cell.formula === "" && cell.format === textFormat) {
+                        delete cell.format;
+                        spreadsheet.updateCell(cell, ej.spreadsheet.getCellAddress(i, j))
+                    }
+                }
+            }
+        }
+    showFormula = !showFormula;
+    }
+</script>
