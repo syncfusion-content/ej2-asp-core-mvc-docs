@@ -1,0 +1,18 @@
+<ejs-chart id="container" pointRender="changeColor">
+    <e-series-collection>
+        <e-series xName="x" yName="y" name="India" dataSource="ViewBag.dataSource" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Scatter">
+            <e-series-marker width="10" height="10"></e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function changeColor(args) {
+        if (args.point.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>

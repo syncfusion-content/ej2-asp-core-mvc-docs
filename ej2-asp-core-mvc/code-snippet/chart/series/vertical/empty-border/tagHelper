@@ -1,0 +1,11 @@
+<ejs-chart id="container" isTransposed="true">
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+                      type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline">
+                <e-series-emptypointSettings mode="Syncfusion.EJ2.Charts.EmptyPointMode.Zero">
+                    <e-emptypointSettings-border width="2" color="red"></e-emptypointSettings-border>
+                </e-series-emptypointSettings>
+                <e-series-marker visible="true"></e-series-marker>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

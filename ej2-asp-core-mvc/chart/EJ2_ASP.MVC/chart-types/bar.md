@@ -13,16 +13,18 @@ documentation: ug
 
 ## Bar
 
-To render a bar series, use series [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as [`Bar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_Bar).
+To render a [bar](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts/chart-types/bar-chart) series in your chart, you need to follow a few steps to configure it correctly. Here’s a concise guide on how to do this:
+
+* **Set the series type:** Define the series `Type` as **Bar** in your chart configuration. This indicates that the data should be represented as a bar chart, which makes it easy to compare values across categories.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/bar/tagHelper %}
+{% include code-snippet/chart/series/bar/bar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Bar.cs" %}
-{% include code-snippet/chart/series/bar-charts/bar/bar.cs %}
+{% include code-snippet/chart/series/bar/bar/bar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,28 +32,26 @@ To render a bar series, use series [`Type`](https://help.syncfusion.com/cr/aspne
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/bar/razor %}
+{% include code-snippet/chart/series/bar/bar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Bar.cs" %}
-{% include code-snippet/chart/series/bar-charts/bar/bar.cs %}
+{% include code-snippet/chart/series/bar/bar/bar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Binding data with series
 
-
-## Bar space and width
-
-The [`ColumnSpacing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnSpacing) and [`ColumnWidth`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnWidth) properties are used to customize the space between bars.
+You can bind data to the chart using the `DataSource` property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series `XName` and `YName` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/bar-space/tagHelper %}
+{% include code-snippet/chart/series/bar/bar/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Bar-space.cs" %}
-{% include code-snippet/chart/series/bar-charts/bar-space/bar-space.cs %}
+{% highlight c# tabtitle="Bar.cs" %}
+{% include code-snippet/chart/series/bar/bar/bar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,90 +59,30 @@ The [`ColumnSpacing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/bar-space/razor %}
+{% include code-snippet/chart/series/bar/bar/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Bar-space.cs" %}
-{% include code-snippet/chart/series/bar-charts/bar-space/bar-space.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-## Grouped bar
-
-You can use the [`GroupName`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_GroupName) property to group the data points in the bar type charts. Data points with same group name are grouped together.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/group-bar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Group-bar.cs" %}
-{% include code-snippet/chart/series/bar-charts/group-bar/group-bar.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/group-bar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Group-bar.cs" %}
-{% include code-snippet/chart/series/bar-charts/group-bar/group-bar.cs %}
+{% highlight c# tabtitle="Bar.cs" %}
+{% include code-snippet/chart/series/bar/bar/bar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-## Cylindrical bar chart
-
-To render a cylindrical bar chart, set the [`ColumnFacet`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnFacet) property to `Cylinder` in the chart series.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/bar-cylinder/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Bar-cylinder.cs" %}
-{% include code-snippet/chart/series/bar-charts/bar-cylinder/bar-cylinder.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/bar-cylinder/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Bar-cylinder.cs" %}
-{% include code-snippet/chart/series/bar-charts/bar-cylinder/bar-cylinder.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Series customization
 
-The following properties can be used to customize the [`Bar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html#Syncfusion_EJ2_Charts_ChartSeriesType_Bar) series.
+The following properties can be used to customize the `bar` series.
 
-* [Fill](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill) – Specifies the color of the series.
-* [Opacity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Opacity) – Specifies the opacity of [Fill](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill).
-* [DashArray](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) – Specifies the dashes for series.
-* [ChartSeriesBorder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartBorder.html) – Specifies the [`Color`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartBorder.html#Syncfusion_EJ2_Charts_ChartBorder_Color) and [`Width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartBorder.html#Syncfusion_EJ2_Charts_ChartBorder_Width) of series border.
+**Fill**
+
+The `Fill` property determines the color applied to the series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/bar-series/tagHelper %}
+{% include code-snippet/chart/series/bar/bar-fill/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Bar-series.cs" %}
-{% include code-snippet/chart/series/bar-charts/bar-series/bar-series.cs %}
+{% highlight c# tabtitle="Bar-fill.cs" %}
+{% include code-snippet/chart/series/bar/bar-fill/bar-fill.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -150,15 +90,397 @@ The following properties can be used to customize the [`Bar`](https://help.syncf
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/bar-series/razor %}
+{% include code-snippet/chart/series/bar/bar-fill/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Bar-series.cs" %}
-{% include code-snippet/chart/series/bar-charts/bar-series/bar-series.cs %}
+{% highlight c# tabtitle="Bar-fill.cs" %}
+{% include code-snippet/chart/series/bar/bar-fill/bar-fill.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+The `Fill` property can be used to apply a gradient color to the bar series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/bar-grad/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-grad.cs" %}
+{% include code-snippet/chart/series/bar/bar-grad/bar-grad.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/bar-grad/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-grad.cs" %}
+{% include code-snippet/chart/series/bar/bar-grad/bar-grad.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Opacity**
+
+The `Opacity` property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/opacity/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opacity.cs" %}
+{% include code-snippet/chart/series/bar/opacity/opacity.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/opacity/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opacity.cs" %}
+{% include code-snippet/chart/series/bar/opacity/opacity.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Dash array**
+
+The `DashArray` property determines the pattern of dashes and gaps in the series.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/dashArray/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="DashArray.cs" %}
+{% include code-snippet/chart/series/bar/dashArray/dashArray.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/dashArray/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="DashArray.cs" %}
+{% include code-snippet/chart/series/bar/dashArray/dashArray.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Border**
+
+Use the `Border` property to customize the width and color of the series border.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/border/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Border.cs" %}
+{% include code-snippet/chart/series/bar/border/border.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/border/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Border.cs" %}
+{% include code-snippet/chart/series/bar/border/border.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Bar space and width
+
+### Bar space
+
+Use the `ColumnSpacing` property in the series to adjust the space between bars.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/bar-space/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-space.cs" %}
+{% include code-snippet/chart/series/bar/bar-space/bar-space.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/bar-space/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-space.cs" %}
+{% include code-snippet/chart/series/bar/bar-space/bar-space.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Bar width
+
+Use the `ColumnWidth` property in the series to adjust the width of the bars.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/bar-width/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-width.cs" %}
+{% include code-snippet/chart/series/bar/bar-width/bar-width.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/bar-width/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-width.cs" %}
+{% include code-snippet/chart/series/bar/bar-width/bar-width.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Bar width in pixel
+
+Use the `ColumnWidthInPixel` property in the series to define the exact width of the bars in pixels. This property ensures that each bar maintains the specified width, providing a uniform appearance throughout the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/bar-pixel/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-pixel.cs" %}
+{% include code-snippet/chart/series/bar/bar-pixel/bar-pixel.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/bar-pixel/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-pixel.cs" %}
+{% include code-snippet/chart/series/bar/bar-pixel/bar-pixel.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Grouped bar
+
+Use the `GroupName` property to group the data points in bar type charts. Data points with the same group name will be grouped together in the chart, making it easy to compare different sets of data.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/group-bar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Group-bar.cs" %}
+{% include code-snippet/chart/series/bar/group-bar/group-bar.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/group-bar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Group-bar.cs" %}
+{% include code-snippet/chart/series/bar/group-bar/group-bar.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Cylindrical bar chart
+
+To render a cylindrical bar chart, set the `ColumnFacet` property to **Cylinder** in the chart series. This property transforms the regular bars into cylindrical shapes, enhancing the visual representation of the data.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/bar-cylinder/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-cylinder.cs" %}
+{% include code-snippet/chart/series/bar/bar-cylinder/bar-cylinder.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/bar-cylinder/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bar-cylinder.cs" %}
+{% include code-snippet/chart/series/bar/bar-cylinder/bar-cylinder.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Empty points
+
+Data points with **null** or **undefined** values are considered empty. Empty data points are ignored and not plotted on the chart.
+
+**Mode**
+
+Use the `Mode` property to define how empty or missing data points are handled in the series. The default mode for empty points is **Gap**.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/empty/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty.cs" %}
+{% include code-snippet/chart/series/bar/empty/empty.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/empty/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty.cs" %}
+{% include code-snippet/chart/series/bar/empty/empty.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Fill**
+
+Use the `Fill` property to customize the fill color of empty points in the series.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/empty-fill/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-fill.cs" %}
+{% include code-snippet/chart/series/bar/empty-fill/empty-fill.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/empty-fill/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-fill.cs" %}
+{% include code-snippet/chart/series/bar/empty-fill/empty-fill.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Border**
+
+Use the `Border` property to customize the width and color of the border for empty points.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/empty-border/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-border.cs" %}
+{% include code-snippet/chart/series/bar/empty-border/empty-border.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/empty-border/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-border.cs" %}
+{% include code-snippet/chart/series/bar/empty-border/empty-border.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Events
+
+### Series render
+
+The `SeriesRender` event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/series-render/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/bar/series-render/series-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/series-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/bar/series-render/series-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Point render
+
+The `PointRender` event allows you to customize each data point before it is rendered on the chart.
+ 
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/point-render/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/bar/point-render/point-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/point-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/bar/point-render/point-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See also
 

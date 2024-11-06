@@ -1,0 +1,11 @@
+<ejs-chart id="container" title="Olympic Gold Medal Counts - RIO">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" interval="1"></e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Medal Count" minimum="0" maximum="80" interval="10">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="country" yName="gold"
+            columnFacet="@Syncfusion.EJ2.Charts.ShapeType.Cylinder"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Bar">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

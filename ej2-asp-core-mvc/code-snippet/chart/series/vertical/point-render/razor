@@ -1,0 +1,25 @@
+@Html.EJS().Chart("container").PointRender("changeColor").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Spline).
+        Marker(marker => marker.Visible(true)).
+        XName("x").
+        YName("y").
+        DataSource(ViewBag.dataSource).
+        Name("Gold").
+        Width(2).
+        Add();
+    }). PrimaryXAxis(px => 
+        px.Interval(1)
+            .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+    ).Title("Olympic Medal Counts - RIO").IsTransposed(true).Render()
+
+    <script>
+        function changeColor(args) {
+            if (args.point.index % 2 !== 0) {
+                args.fill = '#ff6347';
+            }
+            else {
+                args.fill = '#009cb8';
+            }
+        }
+    </script>

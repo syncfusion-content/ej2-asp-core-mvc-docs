@@ -1,0 +1,15 @@
+<ejs-chart id="container" title="Olympic Medals" seriesRender="changeColor" width="60%">
+    <e-chart-primaryxaxis valueType="Category">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="month" yName="sales"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line" width="2">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function changeColor(args) {
+        args.fill = '#ff6347';
+    }
+</script>

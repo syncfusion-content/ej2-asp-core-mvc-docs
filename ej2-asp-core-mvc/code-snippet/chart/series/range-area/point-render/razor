@@ -1,0 +1,22 @@
+
+@Html.EJS().Chart("container").PointRender("changeColor").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.RangeArea).
+        XName("x").
+        High("high").
+        Low("low").
+        DataSource(ViewBag.dataSource).
+        Marker(ViewBag.marker).
+        Add();
+   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Render()
+
+<script>
+    function changeColor(args) {
+        if (args.point.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>

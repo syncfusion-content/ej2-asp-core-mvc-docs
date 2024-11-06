@@ -1,0 +1,11 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea).
+        XName("x").
+        High("high").
+        Low("low").
+        EmptyPointSettings(ViewBag.empty).
+        DataSource(ViewBag.dataSource).
+        Marker(ViewBag.marker).
+        Add();
+   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Render()

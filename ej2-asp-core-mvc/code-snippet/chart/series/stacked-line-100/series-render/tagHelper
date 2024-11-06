@@ -1,0 +1,35 @@
+<ejs-chart id="container" title="Family Expense for Month" seriesRender="changeColor">
+    <e-chart-primaryxaxis valueType="Category" interval="1">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="John" xName="x" width="2" yName="y" type="StackingLine100">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Peter" xName="x" width="2" yName="y1" type="StackingLine100">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Steve" xName="x" width="2" yName="y2" type="StackingLine100">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Charle" xName="x" width="2" yName="y3" type="StackingLine100">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function changeColor(args) {
+        if (args.series.index === 0) {
+            args.fill = '#ff4251';
+        }
+        else if (args.series.index === 1) {
+            args.fill = '#4C4C4C';
+        }
+        else if (args.series.index === 2) {
+            args.fill = '#794F1B';
+        }
+        else if (args.series.index === 3) {
+            args.fill = '#1a9a6f';
+        }
+    }
+</script>

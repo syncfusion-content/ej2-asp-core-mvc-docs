@@ -1,0 +1,10 @@
+<ejs-chart id="container" title="Olympic Medals" width="60%">
+    <e-chart-primaryxaxis valueType="Category">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="month" yName="sales"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepArea">
+            <e-series-emptypointsettings mode="Syncfusion.EJ2.Charts.EmptyPointMode.Zero"></e-series-emptypointsettings>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

@@ -1,0 +1,38 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingBar100).  
+      XName("x").
+      YName("y").
+      ColumnFacet(Syncfusion.EJ2.Charts.ShapeType.Cylinder).
+      DataSource(ViewBag.dataSource).
+      Name("UK").
+      Add();
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingBar100).  
+      XName("x").
+      YName("y1").
+      ColumnFacet(Syncfusion.EJ2.Charts.ShapeType.Cylinder).
+      DataSource(ViewBag.dataSource).
+      Name("Germany").
+      Add();
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingBar100).  
+      XName("x").
+      YName("y2").
+      ColumnFacet(Syncfusion.EJ2.Charts.ShapeType.Cylinder).
+      DataSource(ViewBag.dataSource).
+      Name("France").
+      Add();
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingBar100).  
+      XName("x").
+      YName("y3").
+      ColumnFacet(Syncfusion.EJ2.Charts.ShapeType.Cylinder).
+      DataSource(ViewBag.dataSource).
+      Name("Italy").
+      Add();
+   }).PrimaryXAxis(px => 
+      px.Interval(1)
+         .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+         .Title("Years")
+   ).PrimaryYAxis(py => 
+      py.Title("Sales in Billions")
+         .Interval(100).Minimum(0).Maximum(700).LabelFormat("{value}B")
+       ).Render()

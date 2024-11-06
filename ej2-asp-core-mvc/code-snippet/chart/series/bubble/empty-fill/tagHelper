@@ -1,0 +1,9 @@
+
+<ejs-chart id="container">
+  <e-series-collection>
+      <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="India"
+                type="@Syncfusion.EJ2.Charts.ChartSeriesType.Bubble" fill="blue" size="size">
+          <e-series-emptypointSettings mode="Syncfusion.EJ2.Charts.EmptyPointMode.Zero" fill="red"></e-series-emptypointSettings>
+      </e-series>
+  </e-series-collection>
+</ejs-chart>

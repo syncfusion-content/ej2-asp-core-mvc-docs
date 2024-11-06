@@ -1,0 +1,52 @@
+<svg style="width:1px; height:1px">
+            <defs>
+                <linearGradient id="gradient1">
+                    <stop offset="0%" style="stop-color:coral;stop-opacity:5" />
+                    <stop offset="50%" style="stop-color:mediumseagreen;stop-opacity:5" />
+                </linearGradient>
+            </defs>
+</svg>
+
+<svg style="width:1px; height:1px">
+    <defs>
+        <linearGradient id="gradient2">
+            <stop offset="0%" style="stop-color:darkred;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkorange;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+
+<svg style="width:1px; height:1px">
+    <defs>
+        <linearGradient id="gradient3">
+            <stop offset="0%" style="stop-color:darkmagenta;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkcyan;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+
+<svg style="width:1px; height:1px">
+    <defs>
+        <linearGradient id="gradient4">
+            <stop offset="0%" style="stop-color:darkviolet;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkgoldenrod;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+
+@Html.EJS().Chart("container-vertical").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y").DataSource(ViewBag.dataSource)
+    .Name("John").Fill("url(#gradient1)").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y1").DataSource(ViewBag.dataSource)
+    .Name("Peter").Fill("url(#gradient2)").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y2").DataSource(ViewBag.dataSource)
+    .Name("Steve").Fill("url(#gradient3)").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn)
+    .Marker(mkr => mkr.Visible(true)).XName("x").YName("y3").DataSource(ViewBag.dataSource)
+    .Name("Charle").Fill("url(#gradient4)").Add();
+}).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Title("Family Expense for Month").Render
+

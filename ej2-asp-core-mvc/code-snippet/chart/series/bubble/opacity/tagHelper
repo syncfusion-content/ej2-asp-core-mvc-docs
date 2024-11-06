@@ -1,0 +1,7 @@
+
+<ejs-chart id="container">
+  <e-series-collection>
+      <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="India" opacity="0.5"
+                type="@Syncfusion.EJ2.Charts.ChartSeriesType.Bubble" size="size"></e-series>
+  </e-series-collection>
+</ejs-chart>

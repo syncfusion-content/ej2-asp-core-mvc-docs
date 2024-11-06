@@ -1,0 +1,11 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.RangeArea).
+        XName("x").
+        High("high").
+        Low("low").
+        DashArray("5,5").
+        Border(ViewBag.seriesBorder).
+        DataSource(ViewBag.dataSource).
+        Add();
+   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Render()
