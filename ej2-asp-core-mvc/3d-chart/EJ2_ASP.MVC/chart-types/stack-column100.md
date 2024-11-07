@@ -19,10 +19,10 @@ To render a 100% stacked column series, use series [`Type`](https://help.syncfus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/column-charts/100perstackedcolumn/tagHelper %}
+{% include code-snippet/3d-chart/series/column-charts/100perstackedcolumn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedcolumn100.cs" %}
-{% include code-snippet/chart/series/column-charts/100perstackedcolumn/stackedcolumn100.cs %}
+{% include code-snippet/3d-chart/series/column-charts/100perstackedcolumn/stackedcolumn100.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ To render a 100% stacked column series, use series [`Type`](https://help.syncfus
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/column-charts/100perstackedcolumn/razor %}
+{% include code-snippet/3d-chart/series/column-charts/100perstackedcolumn/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedcolumn100.cs" %}
-{% include code-snippet/chart/series/column-charts/100perstackedcolumn/stackedcolumn100.cs %}
+{% include code-snippet/3d-chart/series/column-charts/100perstackedcolumn/stackedcolumn100.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -48,10 +48,10 @@ To render a 100% cylindrical stacked column chart, set the [`ColumnFacet`](https
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/column-charts/stackedcolumn100-cylinder/tagHelper %}
+{% include code-snippet/3d-chart/series/column-charts/stackedcolumn100-cylinder/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedcolumn100-cylinder.cs" %}
-{% include code-snippet/chart/series/column-charts/stackedcolumn100-cylinder/stackedcolumn100-cylinder.cs %}
+{% include code-snippet/3d-chart/series/column-charts/stackedcolumn100-cylinder/stackedcolumn100-cylinder.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,10 +59,10 @@ To render a 100% cylindrical stacked column chart, set the [`ColumnFacet`](https
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/column-charts/stackedcolumn100-cylinder/razor %}
+{% include code-snippet/3d-chart/series/column-charts/stackedcolumn100-cylinder/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedcolumn100-cylinder.cs" %}
-{% include code-snippet/chart/series/column-charts/stackedcolumn100-cylinder/stackedcolumn100-cylinder.cs %}
+{% include code-snippet/3d-chart/series/column-charts/stackedcolumn100-cylinder/stackedcolumn100-cylinder.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -80,10 +80,10 @@ The following properties can be used to customize the [`100% Stacked Column`](ht
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/column-charts/stackedcolumn-100-series/tagHelper %}
+{% include code-snippet/3d-chart/series/column-charts/stackedcolumn-100-series/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedcolumn-100-series.cs" %}
-{% include code-snippet/chart/series/column-charts/stackedcolumn-100-series/stackedcolumn-100-series.cs %}
+{% include code-snippet/3d-chart/series/column-charts/stackedcolumn-100-series/stackedcolumn-100-series.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,10 +91,10 @@ The following properties can be used to customize the [`100% Stacked Column`](ht
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/column-charts/stackedcolumn-100-series/razor %}
+{% include code-snippet/3d-chart/series/column-charts/stackedcolumn-100-series/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedcolumn-100-series.cs" %}
-{% include code-snippet/chart/series/column-charts/stackedcolumn-100-series/stackedcolumn-100-series.cs %}
+{% include code-snippet/3d-chart/series/column-charts/stackedcolumn-100-series/stackedcolumn-100-series.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

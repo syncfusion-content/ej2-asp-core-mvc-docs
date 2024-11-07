@@ -1,0 +1,19 @@
+@Html.EJS().Chart("container").SeriesRender("changeColor").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Bar).
+      XName("month").
+      YName("sales").
+      DataSource(ViewBag.dataSource).
+      Name("Gold").Width(2).
+      Add();
+   }).PrimaryXAxis(px =>
+      px.Interval(1)
+         .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+         .IsIndexed(true)
+   ).Title("Olympic Medal Counts - RIO").Render()
+
+<script>
+    function changeColor(args) {
+        args.fill = '#ff6347';
+    }
+</script>

@@ -29,6 +29,7 @@ ViewBag.SlashMenuSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorSlas
     Enable = true,
     Items = new object[] { "Paragraph", "Heading 1", "Heading 2", "Heading 3" },
 };
+
 ```
 
 ## Customizing the Popup Width and Height
@@ -45,6 +46,7 @@ ViewBag.SlashMenuSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorSlas
     PopupHeight = "300px",
     PopupWidth = "250px"
 };
+
 ```
 
 ## Adding Custom Slash Menu Items
@@ -60,7 +62,7 @@ Each custom item object can include the following properties:
 | type        | Groups related items in the Slash Menu.               |
 | iconCss     | Specifies the CSS class for the item's icon.          |
 | description | Provides a short description for the item.            |
-
+ 
 
 The following code demonstrates how to set up the Custom Slash Menu item in the Rich Text Editor to insert meeting notes and signature:
 

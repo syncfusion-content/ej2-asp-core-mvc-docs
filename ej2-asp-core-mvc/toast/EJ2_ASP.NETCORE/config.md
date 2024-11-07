@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Config in ##Platform_Name## Toast Component | Syncfusion
+title: Config in ##Platform_Name## Toast Component
 description: Learn here all about Config in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Config
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Config in ##Platform_Name## Toast Component
+# Configuring Options
 
 This section explains the steps required to customize the appearance of the toast using built-in APIs.
 
@@ -133,6 +133,6 @@ Both the width and height properties allow setting pixels/numbers/percentage. Th
 
 ## See Also
 
-* [Prevent duplicate toasts](./how-to/prevent-duplicate-toast-display)
+* [Prevent duplicate toasts](./how-to/prevent-duplicate-toast-display/)
 
-* [Customize the progress bar](./how-to/customize-progress-bar-theme-and-sizing)
+* [Customize the progress bar](./how-to/customize-progress-bar-theme-and-sizing/)

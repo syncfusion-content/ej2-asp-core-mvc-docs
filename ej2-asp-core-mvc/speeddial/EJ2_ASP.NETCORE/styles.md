@@ -116,3 +116,17 @@ You can use [opensOnHover](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% endtabs %}
 
 ![ASP.NET Core SpeedDial with Opens on hover](images/SpeedDial-OpensOnHover.png)
+
+## Customized icon
+
+You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_CssClass) property to customize the appearance of the speedDial control in its default primary state. Below example demonstrates the `cssClass` property usage in speedDial.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/speeddial/styles/custom-icon/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core SpeedDial Custom Icon Close](images/SpeedDial-CustomIcon-Close.png)
+
+![ASP.NET Core SpeedDial Custom Icon Open](images/SpeedDial-CustomIcon-Open.png)

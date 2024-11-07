@@ -296,7 +296,7 @@ The following code example demonstrates the ribbon rendered with `OverflowPopupO
         // Here, you can customize your code.
     }
     function overflowPopupClose(args) {
-        // Here, you can customize your code.
+    // Here, you can customize your code.
     }
 </script>
 

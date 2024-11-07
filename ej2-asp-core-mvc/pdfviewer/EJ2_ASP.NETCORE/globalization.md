@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization in the ASP.NET Core PDF Viewer component
+# Localization in ASP.NET Core PDF Viewer control
 
 The text contents provided in the PDF Viewer can be localized using the collection of localized strings for different cultures. By default, the PDF Viewer is localized in “__en-US__”.
 
