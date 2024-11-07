@@ -226,7 +226,7 @@ The following example demonstrates how to highlight search text in grid using th
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/search/high-light-text/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="high-light-text.cs" %}
+{% highlight c# tabtitle="highlight-text.cs" %}
 {% include code-snippet/grid/search/high-light-text/high-light-text.cs %}
 {% endhighlight %}
 {% endtabs %}

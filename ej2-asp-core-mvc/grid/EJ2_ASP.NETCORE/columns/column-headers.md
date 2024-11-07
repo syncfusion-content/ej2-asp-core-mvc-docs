@@ -353,7 +353,7 @@ Step 1: Define a CSS class that specifies the styles you want to apply to the he
 Step 2: Set the **customAttributes** property of the desired column to an object that contains the CSS class **custom**. This CSS class will be applied to the header cell of the specified column in the Grid.
 
   ```ts
-    <e-grid-column field="Freight" headerText="Freight" customAttributes="@(new { @class="customcss" })" format='C' textAlign="Right" width="120"></e-grid-column>
+    <e-grid-column field="Freight" headerText="Freight" customAttributes="@(new { @class="custom" })" format='C' textAlign="Right" width="120"></e-grid-column>
   ```
 
 The following example demonstrates how to customize the appearance of the **OrderID** and **OrderDate** columns using custom attributes.
