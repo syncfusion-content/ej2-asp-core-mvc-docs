@@ -15,7 +15,7 @@ The AutoComplete has built-in support to filter data items. The filter operation
 
 ## Change the filter type
 
-Determines on which filter type, the control needs to be considered on search action. The available [filterType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.FilterType.html) and its supported data types are as follows.
+Determines on which filter type, the control needs to be considered on search action. The available [filterType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_FilterType_Syncfusion_EJ2_DropDowns_FilterType_) and its supported data types are as follows.
 
 | **Filter Type** | **Description** | **Supported Types** |
 | --- | --- |
@@ -49,7 +49,7 @@ The following examples shows the data filtering is done with `StartsWith` type
 
 ## Filter item count
 
-You can specify the filter suggestion item count through [suggestionCount](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_SuggestionCount) property of AutoComplete.
+You can specify the filter suggestion item count through [suggestionCount](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_SuggestionCount_System_Double_) property of AutoComplete.
 
 The following example, to restrict the suggestion list item counts as 5.
 
@@ -77,7 +77,7 @@ The following example, to restrict the suggestion list item counts as 5.
 
 ## Limit the minimum filter character
 
-You can set the limit for the character count to filter the data on the AutoComplete. This can be done by setting the [minLength](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_MinLength) property to AutoComplete.
+You can set the limit for the character count to filter the data on the AutoComplete. This can be done by setting the [minLength](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_MinLength_System_Double_) property to AutoComplete.
 
 In the following example, the remote request doesn't fetch the search data, until the search key contains three characters.
 
@@ -105,7 +105,7 @@ In the following example, the remote request doesn't fetch the search data, unti
 
 ## Case sensitive filtering
 
-Data items can be filtered either with or without case sensitivity using the DataManager. This can be done by setting the [ignoreCase](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_IgnoreCase) property of AutoComplete.
+Data items can be filtered either with or without case sensitivity using the DataManager. This can be done by setting the [ignoreCase](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_IgnoreCase_System_Boolean_) property of AutoComplete.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -131,7 +131,7 @@ Data items can be filtered either with or without case sensitivity using the Dat
 
 ## Diacritics filtering
 
-An AutoComplete supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_IgnoreAccent) is enabled.
+An AutoComplete supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_IgnoreAccent_System_Boolean_) is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Selection  in ASP.NET MVC Grid Component
+# Selection in ASP.NET MVC Grid Component
 
 Selection provides an option to highlight a row or a cell. It can be done through simple mouse down or arrow keys. To disable selection in the Grid, set the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSelection) to false.
 

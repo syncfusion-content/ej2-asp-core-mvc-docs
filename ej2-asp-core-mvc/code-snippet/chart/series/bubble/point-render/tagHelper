@@ -1,0 +1,17 @@
+<ejs-chart id="container" pointRender="changeColor">
+  <e-series-collection>
+      <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="India"
+                type="@Syncfusion.EJ2.Charts.ChartSeriesType.Bubble" size="size"></e-series>
+  </e-series-collection>
+</ejs-chart>
+
+<script>
+  function changeColor(args) {
+      if (args.point.y < 4) {
+          args.fill = '#ff6347';
+      }
+      else {
+          args.fill = '#009cb8';
+      }
+  }
+</script>

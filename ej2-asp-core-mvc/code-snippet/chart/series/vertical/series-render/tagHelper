@@ -1,0 +1,14 @@
+<ejs-chart id="container" isTransposed="true" seriesRender="changeColor">
+        <e-series-collection>
+                <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+                        type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline">
+                        <e-series-marker visible="true"></e-series-marker>
+                </e-series>
+        </e-series-collection>
+</ejs-chart>
+
+<script>
+        function changeColor(args) {
+            args.fill = '#ff6347';
+        }
+    </script>
