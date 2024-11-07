@@ -1,8 +1,8 @@
 
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" height="348px">    
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" height="330px">    
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID"  width="150"></e-grid-column>       
+        <e-grid-column field="CustomerID" headerText="Customer ID" allowGrouping="false"  width="150"></e-grid-column>       
         <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
         <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
     </e-grid-columns>

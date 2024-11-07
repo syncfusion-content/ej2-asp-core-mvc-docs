@@ -1,4 +1,3 @@
-
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)Model).AllowGrouping().Height("330px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();

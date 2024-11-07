@@ -12,15 +12,15 @@ ViewBag.dropdownData = new List<object>
         <div style="display: flex">
             <label style="padding: 5px 28px 0 0"> Column name :</label>
             <span style="height:fit-content">
-                @Html.EJS().DropDownList("dropdownColumn").Width("120px").Index(1).DataSource(@ViewBag.dropdownData).Fields(new
-                Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "value", Text = "text" }).Render()
+           <ejs-dropdownlist id="dropdownColumn" index="1" dataSource="@ViewBag.dropdownData">
+                <e-dropdownlist-fields value="value" text="text"></e-dropdownlist-fields>
+            </ejs-dropdownlist>            
             </span>
         </div>
 
         <div style="margin-top: 15px">
-            @Html.EJS().Button("group").CssClass("e-primary").Content("Group column").Render()
-            @Html.EJS().Button("ungroup").CssClass("e-primary").Content("unGroupColumn").Render()
-
+            <ejs-button id="group" cssClass="e-primary" content="Group column"></ejs-button>
+            <ejs-button id="ungroup" cssClass="e-primary" content="UnGroupColumn"></ejs-button>
         </div>
     </div>
     <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true">
