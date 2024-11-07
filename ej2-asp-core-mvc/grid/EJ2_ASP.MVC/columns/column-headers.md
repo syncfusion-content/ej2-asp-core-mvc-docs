@@ -351,7 +351,7 @@ Step 1: Define a CSS class that specifies the styles you want to apply to the he
 Step 2: Set the **CustomAttributes** property of the desired column to an object that contains the CSS class **custom**. This CSS class will be applied to the header cell of the specified column in the Grid.
 
   ```ts
-    col.Field("Freight").HeaderText("Freight").Width("120").CustomAttributes(new { @class = "customcss" }).Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").CustomAttributes(new { @class = "custom" }).Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   ```
 
 The following example demonstrates how to customize the appearance of the **OrderID** and **OrderDate** columns using custom attributes.
