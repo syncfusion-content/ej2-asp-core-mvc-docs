@@ -424,176 +424,78 @@ The following example demonstrates how to render a TimePicker control in the **O
 
 ![Render timepicker component](../images/editing/render-timepicker-component.png)
 
+### Render MultiSelect control in edit form
 
-### Render AutoComplete component while editing
+The Syncfusion Grid allows you to render a MultiSelect control within the Grid's edit form, enabling you to select multiple values from a dropdown list when editing a specific column. This feature is particularly useful when you need to handle situations where multiple selections are required for a column.
 
-Use the cell edit template feature of the Grid to render the AutoComplete component in the Grid edit form. In the below sample, we have rendered AutoComplete component in the **CustomerID** column.
+To render a MultiSelect control in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
 
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to render a MultiSelect control in the **ShipCity** column of the Syncfusion Grid. The [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/autocomplete/tagHelper %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/multiselect-dropdown/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="MultiSelect.cs" %}
+{% include code-snippet/grid/edit/multiselect-dropdown/multiselect.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Render multiselect component](../images/editing/render-multiselect-dropdown.gif)
+
+### Render RichTextEditor control in edit form
+
+The Syncfusion Grid allows you to render the RichTextEditor control within the edit form. This feature is valuable when you need to format and style text content using various formatting options such as bold, italic, underline, bullet lists, numbered lists, and more during editing a specific column.
+
+To render RichTextEditor control in edit form,you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
+
+Additionally, you need set the [AllowTextWrap](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowTextWrap) property of the corresponding grid column to **true**. By enabling this property, the rich text editor control will automatically adjust its width and wrap the text content to fit within the boundaries of the column.
+
+The following example demonstrates how to render a RichTextEditor control in the **ShipAddress** column of the Syncfusion Grid.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/richtext-editor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RTE.cs" %}
+{% include code-snippet/grid/edit/richtext-editor/richtext.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Render richtext editor component](../images/editing/render-richtext-editor.gif)
+
+### Render AutoComplete control in edit form 
+
+The Syncfusion Grid allows you to render the AutoComplete control within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
+
+To achieve this, you need to utilize the `Columns->Edit->Params` property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete control.
+
+The following example demonstrates how to render a Autocomplete control in the **CustomerID** column:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/autocomplete/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AutoComplete.cs" %}
 {% include code-snippet/grid/edit/autocomplete/autocomplete.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Render auto complete component](../images/editing/render-auto-complete.png)
+
+### Render cascading DropDownList control in edit form 
+
+The Syncfusion Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
+
+To achieve this, you need to utilize the `Columns->Edit->Params` property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete control.
+
+In the below demo, cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/autoComplete/razor %}
+{% include code-snippet/grid/edit/cascading-dropdown/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Autocomplete.cs" %}
-{% include code-snippet/grid/edit/autocomplete/autocomplete.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-### Render MultiSelect DropDown component while editing
-
-Use the cell edit template feature of the Grid to render the MultiSelect DropDown component in the Grid edit form. In the below sample, we have rendered MultiSelect DropDown component in the **ShipCity** column.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/multiselect/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="MultiSelect.cs" %}
-{% include code-snippet/grid/edit/multiselect/multiselect.cs %}
+{% highlight c# tabtitle="AutoComplete.cs" %}
+{% include code-snippet/grid/edit/cascading-dropdown/dropdown.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/multiselect/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="MultiSelect.cs" %}
-{% include code-snippet/grid/edit/multiselect/multiselect.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-### Render MaskedTextBox component while editing
-
-Use the cell edit template feature of the Grid to render the MaskedTextBox component in the Grid edit form. In the following sample, the MaskedTextBox component is rendered in the Mask column.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/masktextbox/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Masktextbox.cs" %}
-{% include code-snippet/grid/edit/masktextbox/masktextbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/masktextbox/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Masktextbox.cs" %}
-{% include code-snippet/grid/edit/masktextbox/Masktextbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-### Render RichTextEditor component while editing
-
-Use the cell edit template feature of the Grid to render the RichTextEditor component in the Grid edit form. In the below sample, we have rendered RichTextEditor component in the **ShipAddress** column, so we use [AllowTextWrap](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowTextWrap) property to true.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/rte/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="RTE.cs" %}
-{% include code-snippet/grid/edit/rte/rte.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/rte/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="RTE.cs" %}
-{% include code-snippet/grid/edit/rte/rte.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-### Render multiple columns in DropDownList component while editing
-
-Use the cell edit template feature of the Grid to render the DropDownList component in the Grid edit form.
-
-The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer element. By default, list items can be rendered as a single column in the DropDownList component. Instead of this, multiple columns can be rendered. This can be achieved by using the [headerTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_HeaderTemplate) and [itemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ItemTemplate) properties of the DropDownList component.
-
-This is demonstrated in the following sample.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/multicolumn-dropdown/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multicolumn-Dropdown.cs" %}
-{% include code-snippet/grid/edit/multicolumn-dropdown/multicolumn-dropdown.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/multicolumn-dropdown/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multicolumn-Dropdown.cs" %}
-{% include code-snippet/grid/edit/multicolumn-dropdown/multicolumn-dropdown.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-## Access editor components
-
-You can access the component instance from the component element using the **ej2_instances** property.
-
-In the below demo, you can access the Editor component instance while adding or editing actions on the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/access-editor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Access-editor.cs" %}
-{% include code-snippet/grid/how-to/access-editor/access-editor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/access-editor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Access-editor.cs" %}
-{% include code-snippet/grid/how-to/access-editor/access-editor.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
