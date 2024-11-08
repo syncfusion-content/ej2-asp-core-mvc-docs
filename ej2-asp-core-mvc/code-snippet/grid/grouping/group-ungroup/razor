@@ -1,0 +1,41 @@
+@{
+   ViewBag.dropdownData = new List<object>
+   {
+      new { value = "OrderID", text = "Order ID" },
+      new { value = "CustomerID", text = "Customer ID" },
+      new { value = "ShipCity", text = "Ship City" },
+      new { value = "ShipName", text = "Ship Name" },
+   };
+}
+
+<div style="padding-bottom:20px">
+<div style="display: flex">
+    <label style="padding: 5px 28px 0 0"> Column name :</label>
+    <span style="height:fit-content">
+        @Html.EJS().DropDownList("dropdownColumn").Width("120px").Index(1).DataSource(@ViewBag.dropdownData).Fields(new
+        Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "value", Text = "text" }).Render()
+    </span>
+</div>
+<div style="margin-top: 15px">
+    @Html.EJS().Button("group").CssClass("e-primary").Content("Group column").Render()
+    @Html.EJS().Button("ungroup").CssClass("e-primary").Content("UnGroupColumn").Render()
+</div>
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowGrouping().Height("330px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
+
+}).GroupSettings(group => { group.ShowDropArea(false).Columns(new string[] { "CustomerID", "ShipCity" }); }).Render()
+<script>
+    document.getElementById('group').onclick = function () {
+            var grid = document.getElementById("Grid").ej2_instances[0];
+            grid.groupColumn(document.getElementById("dropdownColumn").ej2_instances[0].value);
+    }
+    document.getElementById('ungroup').onclick = function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.ungroupColumn(document.getElementById("dropdownColumn").ej2_instances[0].value);
+    }
+</script>
