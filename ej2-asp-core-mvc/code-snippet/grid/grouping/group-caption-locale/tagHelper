@@ -1,0 +1,23 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" height="350px">    
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID"  width="150"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    ej.base.L10n.load({
+       ar: {
+          grid: {
+             GroupDropArea: 'اسحب رأس العمود هنا لتجميع العمود',
+             Item: 'بند',
+             Items: 'العناصر',
+             GroupCaption: ' هي خلية تسمية توضيحية جماعية',
+          },
+       },
+    });
+    ej.base.setCulture('ar');
+ </script>

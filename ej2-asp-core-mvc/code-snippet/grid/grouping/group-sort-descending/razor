@@ -1,0 +1,11 @@
+@{
+   List<object> sortOptions = new List<object>();
+   sortOptions.Add(new { field = "CustomerID", direction = "Descending" });
+}
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowGrouping().Height("348px").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
+}).GroupSettings(group => { group.Columns(new string[] { "CustomerID" }); }).SortSettings(sort => sort.Columns(sortOptions)).Render()

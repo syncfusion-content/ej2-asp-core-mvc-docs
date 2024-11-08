@@ -1,0 +1,15 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowGrouping().Height("330px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Name").Width("100").Add();
+    col.Field("ShipCity").HeaderText("City").Width("100").Add();
+    col.Field("Freight").HeaderText("Value").Width("100").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).GroupSettings(group => { group.CaptionTemplate("#captiontemplate"); }).Render()  
+<script id="captiontemplate" type="text/x-template">
+    <div>${template(data)}</div>
+</script>
+<script type="text/javascript">
+    function template(args) {
+        return args.key + " -" + args.count + " Records : " + args.headerText;
+    }
+</script>

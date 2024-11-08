@@ -1,0 +1,22 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" height="350px" dataBound="dataBound"> 
+    <e-grid-groupsettings captionTemplate="#groupSettingsCaptionTemplate"></e-grid-groupsettings>     
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID"  width="150"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script id="groupSettingsCaptionTemplate" type="text/x-template">
+    <div class='chip'>${key}</div>
+</script>
+<script>
+    function dataBound() {
+        let groupCaptions = document.getElementsByClassName('chip');
+        for (let i = 0; i < groupCaptions.length; i++) {
+            let chip = new ej.buttons.ChipList({});
+            chip.appendTo(groupCaptions[i]);
+        }
+    }
+</script>
