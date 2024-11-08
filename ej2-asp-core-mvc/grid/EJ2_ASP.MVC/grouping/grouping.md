@@ -47,7 +47,7 @@ The following example demonstrates how to set an initial grouping for the **Cust
 
 ## Prevent grouping for particular column
 
-The Grid component provides the ability to prevent grouping for a particular column. This can be useful when you have certain columns that you do not want to be included in the grouping process. It can be achieved by setting the [AllowGrouping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property of the particular `column` to **false**. The following example demonstrates, how to disable grouping for **CustomerID** column. 
+The Grid component provides the ability to prevent grouping for a particular column. This can be useful when you have certain columns that you do not want to be included in the grouping process. It can be achieved by setting the [AllowGrouping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property of the particular `Column` to **false**. The following example demonstrates, how to disable grouping for **CustomerID** column. 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -111,11 +111,11 @@ To enable this feature, you have to set the [GroupSettings.AllowReordering](http
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-reorder.png)
+![Grouping](../../images/grouping/grouping-reorder.gif)
 
 ## Sort grouped columns in descending order during initial grouping
 
-By default, grouped columns are sorted in ascending order. However, you can sort them in descending order during initial grouping by setting the `field` and `direction` in the [SortSettings.Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSortSettings.html#Syncfusion_EJ2_Grids_GridSortSettings_Columns) property.
+By default, grouped columns are sorted in ascending order. However, you can sort them in descending order during initial grouping by setting the `Field` and `Direction` in the [SortSettings.Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSortSettings.html#Syncfusion_EJ2_Grids_GridSortSettings_Columns) property.
 
 The following example demonstrates how to sort the **CustomerID** column by setting the `SortSettings.Columns` property to **Descending** during the initial grouping of the grid.
 
@@ -123,12 +123,12 @@ The following example demonstrates how to sort the **CustomerID** column by sett
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/grouping/group-sort-descending/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="GroupOrdering.cs" %}
-{% include code-snippet/grid/grouping/group-sort-descending/GroupOrdering.cs %}
+{% highlight c# tabtitle="group.cs" %}
+{% include code-snippet/grid/grouping/group-sort-descending/group.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-reorder.png)
+![Grouping](../../images/grouping/grouping-descending-order.png)
 
 ## Group with paging
 

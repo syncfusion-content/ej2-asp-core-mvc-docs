@@ -8,4 +8,4 @@
    col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
    col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
    col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
-}).GroupSettings(group => { group.Columns(new string[] { "CustomerID" }); }).SortSettings(sort => sort.Columns(sortOptions)).Render()
+}).AllowSorting().SortSettings(sort => sort.Columns(sortOptions)).GroupSettings(group => { group.Columns(new string[] { "CustomerID" }); }).Render()

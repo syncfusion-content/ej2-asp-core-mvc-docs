@@ -117,7 +117,7 @@ The following example demonstrates how to enable the lazy load grouping with inf
 {% include code-snippet/grid/grouping/lazy-load-grouping-scroll/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="lazy-load.cs" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load.cs %}
+{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load-grouping-scroll.cs %}
 {% endhighlight %}
 {% endtabs %}
 

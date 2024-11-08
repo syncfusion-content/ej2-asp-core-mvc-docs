@@ -318,3 +318,6 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 * Grouping is not compatible with the following features:
     1. Autofill
 
+## See Also
+
+* [Exporting grouped records](../../EJ2_ASP.NETCORE/excel-export/excel-exporting#Exporting-grouped-records)
