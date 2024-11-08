@@ -1,5 +1,6 @@
 
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" height="348px">    
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" >  
+    <e-grid-groupsettings captionTemplate="#captiontemplate" showDropArea="false" columns="@(new string[] { "CustomerID", "ShipCity"})"></e-grid-groupsettings>  
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID"  width="150"></e-grid-column>       
@@ -7,3 +8,9 @@
         <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+
+<script id="captiontemplate" type="text/x-template">
+    <span class="groupItems">
+        ${field} - ${key}: ${count} items
+    </span>
+</script>

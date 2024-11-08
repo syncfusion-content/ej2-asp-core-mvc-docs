@@ -1,14 +1,24 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" actionBegin="actionHandler" actionComplete="actionHandler"> 
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" actionBegin="actionBegin" actionComplete="actionComplete"> 
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID"  width="150"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="150"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" format="C2" width="150"></e-grid-column>        
+        <e-grid-column field="ShipCity" headerText="ShipCity"  width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name"  width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
-function actionHandler(args) { 
-    alert(args.requestType + ' ' + args.type); //Custom Action
-}
+    function actionBegin(args) {
+        if (args.requestType === 'grouping' && args.columnName === 'OrderID') {
+            args.cancel = true
+            document.getElementById('message').innerText = args.requestType + ' action is cancelled for ' + args.columnName + ' column';
+        }
+    }
+    function actionComplete(args) {
+        if (args.requestType === 'grouping') {
+            document.getElementById('message').innerText = args.requestType + ' action completed for ' + args.columnName + ' column';
+        }
+        else {
+            document.getElementById('message').innerText = ''
+        }
+    }
 </script>

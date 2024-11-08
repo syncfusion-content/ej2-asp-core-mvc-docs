@@ -1,0 +1,12 @@
+    @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)Model).AllowGrouping().Height("330px").Columns(col =>
+    {
+       col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+       col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
+       col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
+       col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
+    }).GroupSettings(group => { group.Columns(new string[] { "CustomerID", "ShipCity" }).ShowDropArea(false).CaptionTemplate("#captiontemplate"); }).Render()
+    <script id="captiontemplate" type="text/x-template">
+        <span class="groupItems">
+            ${field} - ${key}: ${count} items
+        </span>
+    </script>
