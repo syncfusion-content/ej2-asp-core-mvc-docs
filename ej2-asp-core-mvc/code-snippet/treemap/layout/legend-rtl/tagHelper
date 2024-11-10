@@ -4,7 +4,7 @@
 	       new { value="Audi", color="red"},
 	       new { value="Maruti", color="orange"},
             };
-   var border= new TreeMapBorder{ Color="black", Width=2 }
+   var border= new TreeMapBorder{ Color="black", Width=2 };
 }
 @using Syncfusion.EJ2;
 <div id="container">
