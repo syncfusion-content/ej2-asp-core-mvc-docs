@@ -6,12 +6,10 @@
 <div id="container">
     <ejs-treemap id="container" load="load" height="350px" weightValuePath="EmployeesCount" palette="palette" >
             <e-treemap-levels>
-              <e-treemap-level groupPath="Country" headerFormat='${Country}-${EmployeesCount}'headerAlignment='Center', border="border">
-			  <e-treemap-level groupPath="JobDescription" headerFormat='${JobDescription}-${EmployeesCount}' headerAlignment='Far' border="border">
-			  <e-treemap-level groupPath="JobGroup" headerAlignment='Near' headerFormat='${JobGroup}-${EmployeesCount}'border="border">
-            </e-treemap-level>
-			
-			</e-treemap-leafitemsettings>
+              <e-treemap-level groupPath="Country" headerFormat='${Country}-${EmployeesCount}'headerAlignment='Center', border="border"></e-treemap-level>
+	      <e-treemap-level groupPath="JobDescription" headerFormat='${JobDescription}-${EmployeesCount}' headerAlignment='Far' border="border"></e-treemap-level>
+	      <e-treemap-level groupPath="JobGroup" headerAlignment='Near' headerFormat='${JobGroup}-${EmployeesCount}'border="border"></e-treemap-level>
+            </e-treemap-levels>
     </ejs-treemap>
 </div>         
 <script>
