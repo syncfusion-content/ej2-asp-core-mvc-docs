@@ -1,10 +1,10 @@
 @{ 
    var colorMaps = new[]{
-               new { value='Ford', color='green'},
-			    new { value='Audi', color='red'},
-				new { value='Maruti', color='orange'},
+               new { value="Ford", color="green"},
+	       new { value="Audi", color="red"},
+	       new { value="Maruti", color="orange"},
             };
-			var border= new TreeMapBorder{color='black',width=2}
+   var border= new TreeMapBorder{ Color="black", Width=2 }
 }
 @using Syncfusion.EJ2;
 <div id="container">
