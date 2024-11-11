@@ -3,7 +3,7 @@ layout: post
 title: Edit Types in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Edit Types in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Edit Types
+component: Edit Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -84,7 +84,7 @@ The following sample code demonstrates the customization applied to NumericTextB
 
 By default, the `NumericTextBox` component allows entering decimal values with up to two decimal places when editing a numeric column. However, there might be cases where you want to restrict input to whole numbers only, without any decimal points. In such scenarios, you can make use of the [ValidateDecimalOnType](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.numerictextbox.html#Syncfusion_EJ2_Inputs_NumericTextBox_ValidateDecimalOnType) and [Decimals](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.numerictextbox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Decimals) properties provided by Syncfusion's `NumericTextBox` component.
 
-The `ValidateDecimalOnType` property is used to control whether decimal points are allowed during input in the NumericTextBox. By default, it is set to **false**, allowing decimal points to be entered. However, when set to **true**, decimal points will be restricted, and only whole numbers can be entered.
+The `ValidateDecimalOnType` property is used to component whether decimal points are allowed during input in the NumericTextBox. By default, it is set to **false**, allowing decimal points to be entered. However, when set to **true**, decimal points will be restricted, and only whole numbers can be entered.
 
 The `Decimals` property specifies the number of decimal places to be displayed in the NumericTextBox. By default, it is set to 2, meaning that two decimal places will be displayed. However, you can modify this value to customize the decimal places according to your requirements.
 
@@ -121,16 +121,6 @@ The following sample code demonstrates the customization applied to DropDownList
 {% endtabs %}
 
 ![Customize dropdown edit type](../images/editing/dropdown-edit-type.png)
-
-### Provide custom data source for DropDownList component
-
-In Syncfusion's Grid component, you have an option to provide a custom data source for the `DropDownList` component in the edit form. This feature allows you to define a specific set of values for the DropDownList.
-
-To achieve this, you can utilize the `Columns->Edit->Params` property. This property allows you to define the edit params for the column within the grid.
-
-When setting a new data source using the edit params, you need to specify a new [Query](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.dropdownlist.html#Syncfusion_EJ2_DropDowns_DropDownList_Query) property for the DropDownList. The `Query` property allows you to define custom queries for data retrieval and filtering.
-
-In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column :
 
 ### Apply filtering for DropDownList component
 
@@ -256,17 +246,17 @@ In the below demo, you can access the editor component instance while adding or 
 
 ## Render custom cell editors using external function
 
-The Syncfusion Grid provides the ability to render custom cell editors, allowing you to add custom controls to specific columns in your grid using the cell edit template feature. This feature is useful when you need to edit cell values using custom input elements or controls.
+The Syncfusion Grid provides the ability to render custom cell editors, allowing you to add custom components to specific columns in your grid using the cell edit template feature. This feature is useful when you need to edit cell values using custom input elements or components.
 
 To utilize the custom cell editor template feature, you need to implement the following functions:
 
 * **create** - It is used to create the element at the time of initialization.
 
-* **write** - It is used to create custom control or assign default value at the time of editing.
+* **write** - It is used to create custom component or assign default value at the time of editing.
 
-* **read** - It is used to read the value from the control at the time of save.
+* **read** - It is used to read the value from the component at the time of save.
           
-* **destroy** - It is used to destroy the control.
+* **destroy** - It is used to destroy the component.
 
 ### Render textArea in edit form 
 
@@ -276,7 +266,7 @@ To render a textArea in the edit form, you need to define a cell edit template f
 
 > When using a text area, please use **Shift+Enter** to move to the next line. By default, pressing **Enter** will trigger a record update while you are in edit mode.
 
-The following example demonstrates how to render a textArea control in the **ShipAddress** column of the Syncfusion Grid. The `valueAccessor` property is utilized to split the text into multiple lines within the grid column:
+The following example demonstrates how to render a textArea component in the **ShipAddress** column of the Syncfusion Grid. The `valueAccessor` property is utilized to split the text into multiple lines within the grid column:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -293,7 +283,7 @@ The following example demonstrates how to render a textArea control in the **Shi
 
 While editing a particular row in normal or dialog edit mode, pressing the **ENTER** key will save the changes made in the specific cell or edit form. Similarly, pressing the **ENTER** key while performing editing with the multiline textbox will save the changes.  However, in a multiline textbox, it is often desired that pressing the **ENTER** key adds a new line break in the text content, rather than triggering the save action.
 
-To achieve this behavior, you can utilize the `stopPropagation` method along with the [Focus](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.textbox.html#Syncfusion_EJ2_Inputs_TextBox_Focus) event of the textBox control. This prevents the default behavior of the **ENTER** key, allowing you to manually handle the newline behavior.
+To achieve this behavior, you can utilize the `stopPropagation` method along with the [Focus](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.textbox.html#Syncfusion_EJ2_Inputs_TextBox_Focus) event of the textBox component. This prevents the default behavior of the **ENTER** key, allowing you to manually handle the newline behavior.
 
 The following example demonstrates how to prevent the enter key functionality in multiline textbox during editing by utilizing the `Focus` event:
 
@@ -308,13 +298,13 @@ The following example demonstrates how to prevent the enter key functionality in
 
 ![Prevent enter key functionality](../images/editing/customize-enter-key.gif)
 
-### Render MaskedTextBox control in edit form 
+### Render MaskedTextBox component in edit form 
 
-The Syncfusion Grid allows you to render a MaskedTextBox control within the Grid's edit form for a specific column. This feature is especially useful when you need to provide masked input fields that require a specific format, such as phone numbers or postal codes.
+The Syncfusion Grid allows you to render a MaskedTextBox component within the Grid's edit form for a specific column. This feature is especially useful when you need to provide masked input fields that require a specific format, such as phone numbers or postal codes.
 
-To render a MaskedTextBox control in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
+To render a MaskedTextBox component in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
 
-Here's an example of how to render a MaskedTextBox control in the **CustomerNumber** column of the Syncfusion Grid.
+Here's an example of how to render a MaskedTextBox component in the **CustomerNumber** column of the Syncfusion Grid.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -325,13 +315,13 @@ Here's an example of how to render a MaskedTextBox control in the **CustomerNumb
 {% endhighlight %}
 {% endtabs %}
 
-### Render DropDownList control in edit form 
+### Render DropDownList component in edit form 
 
-The Syncfusion Grid allows you to render a DropDownList control within the Grid's edit form for a specific column. This feature is valuable when you need to provide a convenient way to select options from a predefined list while editing data in the Grid's edit form.
+The Syncfusion Grid allows you to render a DropDownList component within the Grid's edit form for a specific column. This feature is valuable when you need to provide a convenient way to select options from a predefined list while editing data in the Grid's edit form.
 
-To render a DropDownList control in the edit form,  you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
+To render a DropDownList component in the edit form,  you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
 
-The following example demonstrates how to render a DropDownList control in the **ShipCountry** column of the Syncfusion Grid.
+The following example demonstrates how to render a DropDownList component in the **ShipCountry** column of the Syncfusion Grid.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -344,15 +334,15 @@ The following example demonstrates how to render a DropDownList control in the *
 
 ![Render drop down list component](../images/editing/render-dropdown-component.png)
 
-### Render images in the DropDownList editor control using the item template 
+### Render images in the DropDownList editor component using the item template 
 
 The Syncfusion Grid allows you to render images in the DropDownList editor conttol. This feature is valuable when you want to display images for each item in the dropdown list of a particular column, enhancing the visual representation of your data.
 
 To render a DropDownList in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
 
-To display an image in the DropDownList editor control, you can utilize the [ItemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ItemTemplate) property. This property allows you to customize the content of each item in the dropdown list.
+To display an image in the DropDownList editor component, you can utilize the [ItemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ItemTemplate) property. This property allows you to customize the content of each item in the dropdown list.
 
-The following example demonstrates how to render images in the DropDownList editor control using the `ItemTemplate` within the **EmployeeName** column of the Syncfusion Grid. 
+The following example demonstrates how to render images in the DropDownList editor component using the `ItemTemplate` within the **EmployeeName** column of the Syncfusion Grid. 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -365,15 +355,15 @@ The following example demonstrates how to render images in the DropDownList edit
 
 ![Render drop down list component with image](../images/editing/dropdown-with-image.png)
 
-### Render Multiple columns in DropDownList control  
+### Render Multiple columns in DropDownList component  
 
-The Syncfusion Grid allows you to render a DropDownList control within the Grid's edit form for a specific column. This feature is particularly useful when you want to display more detailed information for each item in the dropdown list during editing a specific column.
+The Syncfusion Grid allows you to render a DropDownList component within the Grid's edit form for a specific column. This feature is particularly useful when you want to display more detailed information for each item in the dropdown list during editing a specific column.
 
 To render a DropDownList in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
 
-The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer element. By default, list items can be rendered as a single column in the DropDownList control. Instead of this, multiple columns can be rendered. This can be achieved by using the [HeaderTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_HeaderTemplate) and [ItemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ItemTemplate) properties of the DropDownList control.
+The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer element. By default, list items can be rendered as a single column in the DropDownList component. Instead of this, multiple columns can be rendered. This can be achieved by using the [HeaderTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_HeaderTemplate) and [ItemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ItemTemplate) properties of the DropDownList component.
 
-The following example demonstrates how to render a DropDownList control with multiple columns within in the **ShipCountry** column.
+The following example demonstrates how to render a DropDownList component with multiple columns within in the **ShipCountry** column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -386,13 +376,13 @@ The following example demonstrates how to render a DropDownList control with mul
 
 ![Render multiple columns in drop down list component](../images/editing/multiple-column-dropdown.png)
 
-### Render ComboBox control in edit form 
+### Render ComboBox component in edit form 
 
-The Syncfusion Grid allows you to render a ComboBox control within the Grid's edit form for a specific column. This feature is especially valuable when you need to provide a drop-down selection with auto-suggestions for data entry.
+The Syncfusion Grid allows you to render a ComboBox component within the Grid's edit form for a specific column. This feature is especially valuable when you need to provide a drop-down selection with auto-suggestions for data entry.
 
-To render a comboBox control in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
+To render a comboBox component in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
 
-The following example demonstrates how to render a ComboBox control in the **ShipCountry** column of the Syncfusion Grid. 
+The following example demonstrates how to render a ComboBox component in the **ShipCountry** column of the Syncfusion Grid. 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -405,13 +395,13 @@ The following example demonstrates how to render a ComboBox control in the **Shi
 
 ![Render combo box component](../images/editing/render-combobox-component.png)
 
-### Render TimePicker control in edit form 
+### Render TimePicker component in edit form 
 
-The Syncfusion Grid allows you to render a TimePicker control within the Grid's edit form for a specific column. This feature is especially valuable when you need to provide a time input, such as appointment times, event schedules, or any other time-related data for editing in the Grid.
+The Syncfusion Grid allows you to render a TimePicker component within the Grid's edit form for a specific column. This feature is especially valuable when you need to provide a time input, such as appointment times, event schedules, or any other time-related data for editing in the Grid.
 
-To render a TimePicker control in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
+To render a TimePicker component in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
 
-The following example demonstrates how to render a TimePicker control in the **OrderDate** column of the Syncfusion Grid.
+The following example demonstrates how to render a TimePicker component in the **OrderDate** column of the Syncfusion Grid.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -424,13 +414,13 @@ The following example demonstrates how to render a TimePicker control in the **O
 
 ![Render timepicker component](../images/editing/render-timepicker-component.png)
 
-### Render MultiSelect control in edit form
+### Render MultiSelect component in edit form
 
-The Syncfusion Grid allows you to render a MultiSelect control within the Grid's edit form, enabling you to select multiple values from a dropdown list when editing a specific column. This feature is particularly useful when you need to handle situations where multiple selections are required for a column.
+The Syncfusion Grid allows you to render a MultiSelect component within the Grid's edit form, enabling you to select multiple values from a dropdown list when editing a specific column. This feature is particularly useful when you need to handle situations where multiple selections are required for a column.
 
-To render a MultiSelect control in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
+To render a MultiSelect component in the edit form, you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
 
-The following example demonstrates how to render a MultiSelect control in the **ShipCity** column of the Syncfusion Grid. The [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event is handled to update the edited value in the grid when the save button is clicked:
+The following example demonstrates how to render a MultiSelect component in the **ShipCity** column of the Syncfusion Grid. The [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -443,15 +433,15 @@ The following example demonstrates how to render a MultiSelect control in the **
 
 ![Render multiselect component](../images/editing/render-multiselect-dropdown.gif)
 
-### Render RichTextEditor control in edit form
+### Render RichTextEditor component in edit form
 
-The Syncfusion Grid allows you to render the RichTextEditor control within the edit form. This feature is valuable when you need to format and style text content using various formatting options such as bold, italic, underline, bullet lists, numbered lists, and more during editing a specific column.
+The Syncfusion Grid allows you to render the RichTextEditor component within the edit form. This feature is valuable when you need to format and style text content using various formatting options such as bold, italic, underline, bullet lists, numbered lists, and more during editing a specific column.
 
-To render RichTextEditor control in edit form,you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
+To render RichTextEditor component in edit form,you need to define a cell edit template for the column using `Edit` property. The `Edit` property specifies the cell edit template that used  as an editor for a particular column.
 
-Additionally, you need set the [AllowTextWrap](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowTextWrap) property of the corresponding grid column to **true**. By enabling this property, the rich text editor control will automatically adjust its width and wrap the text content to fit within the boundaries of the column.
+Additionally, you need set the [AllowTextWrap](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowTextWrap) property of the corresponding grid column to **true**. By enabling this property, the rich text editor component will automatically adjust its width and wrap the text content to fit within the boundaries of the column.
 
-The following example demonstrates how to render a RichTextEditor control in the **ShipAddress** column of the Syncfusion Grid.
+The following example demonstrates how to render a RichTextEditor component in the **ShipAddress** column of the Syncfusion Grid.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -464,13 +454,13 @@ The following example demonstrates how to render a RichTextEditor control in the
 
 ![Render richtext editor component](../images/editing/render-richtext-editor.gif)
 
-### Render AutoComplete control in edit form 
+### Render AutoComplete component in edit form 
 
-The Syncfusion Grid allows you to render the AutoComplete control within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
+The Syncfusion Grid allows you to render the AutoComplete component within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
 
-To achieve this, you need to utilize the `Columns->Edit->Params` property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete control.
+To achieve this, you need to utilize the `Columns->Edit->Params` property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete component.
 
-The following example demonstrates how to render a Autocomplete control in the **CustomerID** column:
+The following example demonstrates how to render a Autocomplete component in the **CustomerID** column:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -483,11 +473,11 @@ The following example demonstrates how to render a Autocomplete control in the *
 
 ![Render auto complete component](../images/editing/render-auto-complete.png)
 
-### Render cascading DropDownList control in edit form 
+### Render cascading DropDownList component in edit form 
 
 The Syncfusion Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
 
-To achieve this, you need to utilize the `Columns->Edit->Params` property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete control.
+To achieve this, you need to utilize the `Columns->Edit->Params` property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete component.
 
 In the below demo, cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
 
@@ -495,7 +485,7 @@ In the below demo, cascading DropDownList rendered for **ShipCountry** and **Shi
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/cascading-dropdown/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="AutoComplete.cs" %}
+{% highlight c# tabtitle="Drop-down.cs" %}
 {% include code-snippet/grid/edit/cascading-dropdown/dropdown.cs %}
 {% endhighlight %}
 {% endtabs %}

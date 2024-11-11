@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" actionBegin="actionBegin" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
     <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required= true })" textAlign="Right" width="120"></e-grid-column>
