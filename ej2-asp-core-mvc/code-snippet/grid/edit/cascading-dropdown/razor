@@ -54,9 +54,9 @@
     }
 
     function createShipStateFn() {
-            shipStateElement = document.createElement('input');
-            return shipStateElement;
-        }
+        shipStateElement = document.createElement('input');
+        return shipStateElement;
+    }
     function readShipStateFn() {
         return shipStateObj.text;
     }

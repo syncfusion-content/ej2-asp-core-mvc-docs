@@ -107,7 +107,7 @@ You can customize the `DropDownList` component in Grid edit form using its prope
 
 Component|Edit Type |Description| Example Customized edit params
 -----|-----|-----|----|
-[DropDownList](../../drop-down-list)-|DropDownEdit|  The `dropdownedit` type renders a DropDownList component for string data type columns. To customize the DropDownList component, refer to the [DropDownList API documentation](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.dropdownlist.html) for detailed information on available properties.  | params: { value: ‘Germany’ }
+[DropDownList](../../drop-down-list)|DropDownEdit|  The `dropdownedit` type renders a DropDownList component for string data type columns. To customize the DropDownList component, refer to the [DropDownList API documentation](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.dropdownlist.html) for detailed information on available properties.  | params: { value: ‘Germany’ }
 
 The following sample code demonstrates the customization applied to DropDownList component  of **ShipCity** Grid column:
 
@@ -490,4 +490,4 @@ In the below demo, cascading DropDownList rendered for **ShipCountry** and **Shi
 {% endhighlight %}
 {% endtabs %}
 
-![Render cascading DropDownList](../images/editing/render-auto-complete.png)
+![Render cascading DropDownList](../images/editing/cascading-dropdown.gif)

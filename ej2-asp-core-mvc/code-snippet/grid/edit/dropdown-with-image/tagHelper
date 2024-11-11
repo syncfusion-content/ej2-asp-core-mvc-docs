@@ -39,7 +39,7 @@
                 rowData.EmployeeID = args.value;
             },
             itemTemplate: function (props) {
-                return '<div><img class="empImage" width="50px" src="https://ej2.syncfusion.com/demos/src/grid/images/' + props.EmployeeID + '.png" alt="employee"/><div class="ename">' + props.FirstName + '</div></div>';
+                return '<div><img class="employeeImage" width="50px" src="https://ej2.syncfusion.com/demos/src/grid/images/' + props.EmployeeID + '.png" alt="${EmployeeID}"/><div class="employeeName">' + props.FirstName + '</div></div>';
             }
         });
         dropDownListObj.appendTo(dropDownElement);

@@ -489,3 +489,5 @@ In the below demo, cascading DropDownList rendered for **ShipCountry** and **Shi
 {% include code-snippet/grid/edit/cascading-dropdown/dropdown.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Render cascading DropDownList](../images/editing/cascading-dropdown.gif)
