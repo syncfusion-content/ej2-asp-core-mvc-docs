@@ -111,7 +111,7 @@ To enable this feature, you have to set the [GroupSettings.AllowReordering](http
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../../images/grouping/grouping-reorder.gif)
+![Grouping](../images/grouping/grouping-reorder.gif)
 
 ## Sort grouped columns in descending order during initial grouping
 
@@ -128,7 +128,7 @@ The following example demonstrates how to sort the **CustomerID** column by sett
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../../images/grouping/grouping-descending-order.png)
+![Grouping](../images/grouping/grouping-descending-order.png)
 
 ## Group with paging
 

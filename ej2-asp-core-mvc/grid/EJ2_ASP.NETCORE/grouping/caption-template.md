@@ -25,7 +25,7 @@ The following example demonstrates how to customize the group header caption in 
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../../images/grouping/group-caption-template.png)
+![Grouping](../images/grouping/group-caption-template.png)
 
 ## Adding custom text in group caption
 
@@ -42,7 +42,7 @@ The following example demonstrates how to add a custom text to the group caption
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../../images/grouping/group-captiontext-template.png)
+![Grouping](../images/grouping/group-captiontext-template.png)
 
 ## Customize group caption text using locale
 
@@ -61,7 +61,7 @@ The following example demonstrates, how to customize group caption text based on
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../../images/grouping/grouping-caption-locale-text.gif)
+![Grouping](../images/grouping/grouping-caption-locale-text.gif)
 
 ## Render custom component in group caption
 
@@ -81,4 +81,4 @@ The following example demonstrates how to add a custom component to the group ca
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../../images/grouping/grouping-cation-component.png)
+![Grouping](../images/grouping/grouping-cation-component.png)
