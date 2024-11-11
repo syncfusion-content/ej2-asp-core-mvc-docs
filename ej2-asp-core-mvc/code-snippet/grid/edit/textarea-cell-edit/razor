@@ -13,23 +13,23 @@
 
 <script>
     function createShipAddressFn() {
-        textboxElement = document.createElement('textarea');
-        return textboxElement;
+        textBoxElement = document.createElement('textarea');
+        return textBoxElement;
     }
     function destroyShipAddressFn() {
-        textboxObject.destroy();
+        textBoxObject.destroy();
     }
     function readShipAddressFn() {
-        return textboxObject.value;
+        return textBoxObject.value;
     }
 
     function writeShipAddressFn(args) {
         var rowData = args.rowData;
-        textboxObject = new ej.inputs.TextBox({
+        textBoxObject = new ej.inputs.TextBox({
             multiline: true,
             value: rowData.ShipAddress,
         });
-        textboxObject.appendTo(textboxElement);
+        textBoxObject.appendTo(textBoxElement);
     }
 
     function valueAccessor(field, data) {
