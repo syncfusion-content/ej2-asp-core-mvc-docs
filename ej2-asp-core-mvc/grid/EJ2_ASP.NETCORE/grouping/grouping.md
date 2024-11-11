@@ -75,7 +75,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../../images/grouping/grouping-drag-hide.png)
+![Grouping](../images/grouping/grouping-drag-hide.png)
 
 > By default, the group drop area will be shown only if there is at least one column available to group.
 
@@ -151,7 +151,7 @@ The following example demonstrates how to perform a group action using the `enab
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../../images/grouping/grouping-format.png)
+![Grouping](../images/grouping/grouping-format.png)
 
 > Numeric columns can be grouped based on formats such as currency or percentage, while datetime columns can be grouped based on specific date or time formats.
 
@@ -172,7 +172,7 @@ Customizing the `generateQuery` method of the **Data prototype** allows you to m
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../../images/grouping/grouping-pagesize.png)
+![Grouping](../images/grouping/grouping-pagesize.png)
 
 ## Collapse all grouped rows at initial rendering
 
