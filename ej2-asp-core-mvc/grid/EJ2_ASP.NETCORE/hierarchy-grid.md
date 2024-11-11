@@ -34,7 +34,7 @@ The following example demonstrates how to enable the hierarchy feature in the gr
 ![Hierarchy grid](images/hierarchy-grid/hierarchy-grid.png)
 
 > * Grid supports n level of child grids.
-> * Hierarchical binding is not supported when [detail template](https://ej2.syncfusion.com/aspnetcore/documentation/grid/row/detail-template) is enabled.
+> * Hierarchical binding is not supported when [Detail Template](https://ej2.syncfusion.com/aspnetcore/documentation/grid/row/detail-template) is enabled.
 > * In Syncfusion Grid component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
 
 ## Bind hierarchy grid with different field
@@ -240,8 +240,8 @@ To hide the expand/collapse icon in parent row when no records in child grid, fo
 function rowDataBound(args){
     var ordersDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
     var parentData = (args.data)['EmployeeID'];
-    var childRecord = new ej.data.DataManager(ordersDataSource).executeLocal(new ej.data.Query().where('EmployeeID', 'equal', parentData, true));
-    if (childRecord.length === 0) {
+    var childrecord = new ej.data.DataManager(ordersDataSource).executeLocal(new ej.data.Query().where('EmployeeID', 'equal', parentData, true));
+    if (childrecord.length === 0) {
         // Here hide which parent row has no child records
        var rowElement = args.row;
        var cellElement= rowElement.querySelector('td')
