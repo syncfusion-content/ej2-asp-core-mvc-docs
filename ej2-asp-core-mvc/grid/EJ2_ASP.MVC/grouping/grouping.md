@@ -53,7 +53,7 @@ The Grid component provides the ability to prevent grouping for a particular col
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/grouping/group-prevent/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="initial-group.cs" %}
+{% highlight c# tabtitle="group-prevent.cs" %}
 {% include code-snippet/grid/grouping/group-prevent/group-prevent.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -106,8 +106,8 @@ To enable this feature, you have to set the [GroupSettings.AllowReordering](http
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/grouping/group-reorder/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="GroupOrdering.cs" %}
-{% include code-snippet/grid/grouping/group-reorder/GroupOrdering.cs %}
+{% highlight c# tabtitle="reorder.cs" %}
+{% include code-snippet/grid/grouping/group-reorder/reorder.cs %}
 {% endhighlight %}
 {% endtabs %}
 
