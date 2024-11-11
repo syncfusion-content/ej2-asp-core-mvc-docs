@@ -1,39 +1,42 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.Datasource).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Type("string").Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Add();
-    col.Field("Freight").HeaderText("Freight").Type("number").Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("OrderDate").HeaderText("Ship Name").Type("date").Format("yMd").Width("150").EditType("datepickeredit").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Edit(new { create = "createCustomerIDFn", read = "readCustomerIDFn", destroy = "destroyCustomerIDFn", write = "writeCustomerIDFn" }).Add();
+    col.Field("Freight").HeaderText("Freight").ValidationRules(new { required = true, min= 1, max= 1000 }).Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Format("yMd").Width("130").EditType("datepickeredit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
 
-}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 <script>
     var autoCompleteData = [
-        { CustomerID: 'ALFKI', Id: '1' },
-        { CustomerID: 'ANATR', Id: '2' },
-        { CustomerID: 'ANTON', Id: '3' },
-        { CustomerID: 'BLONP', Id: '4' },
-        { CustomerID: 'BOLID', Id: '5' }
+        { CustomerID: 'VINET', Id: '1' },
+        { CustomerID: 'TOMSP', Id: '2' },
+        { CustomerID: 'HANAR', Id: '3' },
+        { CustomerID: 'VICTE', Id: '4' },
+        { CustomerID: 'SUPRD', Id: '5' },
     ];
-    var autoCompleteEle;
-    var element
-    function create(args) {
-        element = document.createElement('input');
-        return element;
+    var autoCompleteObj;
+    var autoCompleteElement;
+
+    function createCustomerIDFn() {
+        autoCompleteElement = document.createElement('input');
+        return autoCompleteElement;
     }
-    function read(e) {
-        return autoCompleteEle.value;
+    function readCustomerIDFn() {
+        return autoCompleteObj.value;
     }
-    function destroy() {
-        autoCompleteEle.destroy();
+    function destroyCustomerIDFn() {
+        autoCompleteObj.destroy();
     }
-    function write(args) {
-        autoCompleteEle = new ej.dropdowns.AutoComplete({
+    function writeCustomerIDFn(args) {
+        var rowData = args.rowData;
+        autoCompleteObj = new ej.dropdowns.AutoComplete({
             allowCustom: true,
-            value: args.rowData[args.column.field],
             dataSource: autoCompleteData,
-            fields: { value: 'CustomerID', text: 'CustomerID' }
+            fields: { value: "CustomerID", text: "CustomerID" },
+            value: rowData.CustomerID,
         });
-        autoCompleteEle.appendTo(element);
+        autoCompleteObj.appendTo(autoCompleteElement);
     }
 </script>
