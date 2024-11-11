@@ -46,14 +46,37 @@ N> Before using the Syncfusion ASP.NET Core Project Template, check whether the 
 
     ![project configuration](images/project-configuration.png)
 
-    N> .NET 6.0 is available from v19.4.0.38 and support from Visual Studio 2022.
-    
-    N> .NET 7.0 is available from v20.4.0.38 and support from Visual Studio 2022.
-
-    N> .NET 8.0 version is available from v23.2.4 and it support from Visual Studio 2022.
-
-    N> .NET 9.0 version is available from v27.2.2 and it support from Visual Studio 2022.
-
+    > <table>
+	>   <thead>
+	>     <tr>
+	>       <th>.NET Version</th>
+	>       <th>Available From Version</th>
+	>       <th>Supported from Visual Studio</th>
+	>     </tr>
+	>   </thead>
+	>   <tbody>
+	>     <tr>
+	>       <td>.NET 6.0</td>
+	>       <td>v19.4.0.38</td>
+	>       <td>Visual Studio 2022</td>
+	>     </tr>
+	>     <tr>
+	>       <td>.NET 7.0</td>
+	>       <td>v20.4.0.38</td>
+	>       <td>Visual Studio 2022</td>
+	>     </tr>
+	>     <tr>
+	>       <td>.NET 8.0</td>
+	>       <td>v23.2.4</td>
+	>       <td>Visual Studio 2022</td>
+	>     </tr>
+	>     <tr>
+	>       <td>.NET 9.0</td>
+	>       <td>v27.2.2</td>
+	>       <td>Visual Studio 2022</td>
+	>     </tr>
+	>   </tbody>
+	> </table>   
     **Project configurations**
 
     | <b>Project Type</b> | <b>.NET Core Version</b> | <b>Themes</b> | <b>Assets From</b> |
