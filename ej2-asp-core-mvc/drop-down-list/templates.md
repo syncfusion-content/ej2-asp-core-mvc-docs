@@ -15,7 +15,7 @@ The DropDownList has been provided with several options to customize each list i
 
 ## Item template
 
-The content of each list item within the DropDownList can be customized with the help of [itemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownListBuilder.html#Syncfusion_EJ2_DropDowns_DropDownListBuilder_ItemTemplate_System_String_) property.
+The content of each list item within the DropDownList can be customized with the help of [itemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2#Syncfusion_EJ2_DropDowns_DropDownListBuilder_ItemTemplate_System_String_/Syncfusion.Data.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,7 +44,7 @@ The content of each list item within the DropDownList can be customized with the
 
 ## Value template
 
-The currently selected value that is displayed by default on the DropDownList input element can be customized using the [valueTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownListBuilder.html#Syncfusion_EJ2_DropDowns_DropDownListBuilder_ValueTemplate_System_String_) property.
+The currently selected value that is displayed by default on the DropDownList input element can be customized using the [valueTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2#Syncfusion_EJ2_DropDowns_DropDownListBuilder_ValueTemplate_System_String__) property.
 
 In the following sample, the selected value is displayed as a combined text of both `FirstName` and `City` in the DropDownList input, which is separated by a hyphen.
 
