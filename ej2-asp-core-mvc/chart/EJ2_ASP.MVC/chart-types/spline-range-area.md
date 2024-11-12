@@ -221,7 +221,7 @@ Use the `Fill` property to customize the fill color of empty points in the serie
 {% include code-snippet/chart/series/spline-range/empty-fill/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Empty-fill.cs" %}
-{% include code-snippet/chart/series/spline-range/empty-fill/empty.cs %}
+{% include code-snippet/chart/series/spline-range/empty-fill/empty-fill.cs %}
 {% endhighlight %}
 {% endtabs %}
 
