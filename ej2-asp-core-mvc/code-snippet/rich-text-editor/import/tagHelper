@@ -1,8 +1,8 @@
 <ejs-richtexteditor id="importRTE" value="@Value">
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-    <e-richtexteditor-insertimagesettings saveUrl="@InsertImageSettings.SaveUrl"
-        removeUrl="@InsertImageSettings.RemoveUrl"
-        path="@InsertImageSettings.Path"></e-richtexteditor-insertimagesettings>
-    <e-richtexteditor-importword serviceUrl="@ImportWord.ServiceUrl">
-    </e-richtexteditor-importword>
-  </ejs-richtexteditor>
+  <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+  <e-richtexteditor-insertimagesettings saveUrl="@InsertImageSettings.SaveUrl"
+      removeUrl="@InsertImageSettings.RemoveUrl"
+      path="@InsertImageSettings.Path"></e-richtexteditor-insertimagesettings>
+  <e-richtexteditor-importword serviceUrl="@ImportWord.ServiceUrl">
+  </e-richtexteditor-importword>
+</ejs-richtexteditor>

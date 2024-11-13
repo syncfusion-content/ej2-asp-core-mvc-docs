@@ -1,0 +1,32 @@
+@Html.EJS().Chart("container").PointRender("changeColor").Series(series =>
+       {
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Histogram).
+           YName("Score").
+           BinInterval(20).
+           ShowNormalDistribution(true).
+           ColumnWidth(0.99).
+           Marker(mr => mr.Visible(true).Width(7).Height(7).DataLabel(dl => dl.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top).Font(ff => ff.FontWeight("600").Color("#ffffff")))).
+           DataSource(ViewBag.dataSource).Add();
+       }).PrimaryXAxis(px =>
+            px.Maximum(100)
+                .Minimum(0)
+                .Title("Score of Final Examination")
+                .EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
+                .MajorGridLines(mg=>mg.Width(0))
+       ).PrimaryYAxis(px =>
+            px.Minimum(0)
+                .Maximum(50)
+                .Interval(10)
+                .Title("Number of Students")
+                .LineStyle(ls=>ls.Width(0))
+       ).Title("Examination Result").ChartArea(ca => ca.Border(br=>br.Width(0))).Tooltip(tt => tt.Enable(true)).Render()
+
+<script>
+    function changeColor(args) {
+        if (args.point.y >= 15) {
+            args.fill = '#ff6347';
+        } else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>

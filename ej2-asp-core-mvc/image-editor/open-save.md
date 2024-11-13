@@ -217,7 +217,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-save.jpg)
 
-### Save the image as byte[]
+### Save the image aa byte[]
 
 To save an image as a byte array (byte[]), use the [`getImageData`] method of the editor to retrieve the image data and convert it into a byte array. You can then invoke the open method on the Syncfusion Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance.
 

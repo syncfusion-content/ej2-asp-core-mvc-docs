@@ -1,0 +1,10 @@
+<ejs-chart id="container">
+    <e-series-collection>
+        <e-series xName="x" yName="y" name="India" dataSource="ViewBag.dataSource" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Scatter">
+            <e-series-marker shape="Diamond" Height="7" Width="7"></e-series-marker>
+            <e-series-emptypointsettings mode="Syncfusion.EJ2.Charts.EmptyPointMode.Zero">
+                <e-emptypointsettings-border width="2" color="red"></e-emptypointsettings-border>
+            </e-series-emptypointsettings>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

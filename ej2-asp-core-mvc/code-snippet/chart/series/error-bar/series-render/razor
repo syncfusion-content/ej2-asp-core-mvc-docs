@@ -1,0 +1,23 @@
+@Html.EJS().Chart("container").SeriesRender("changeColor").Series(sr =>
+{
+    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .Name("Sales")
+        .XName("x")
+        .ErrorBar(error => error.Visible(true))
+        .Marker(marker => marker.Visible(true))
+        .YName("y")
+        .DataSource(ViewBag.dataSource).Add();
+}).PrimaryXAxis(xaxis =>
+     xaxis.Interval(1)
+          .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+      ).PrimaryYAxis(yaxis =>
+          yaxis.LabelFormat("{value}%")
+            .Minimum(15)
+            .Maximum(45)
+      ).Title("Sales Distribution of Car by Region").Render()
+ 
+<script>
+    function changeColor(args) {
+        args.fill = "#ff6347";
+    }
+</script>

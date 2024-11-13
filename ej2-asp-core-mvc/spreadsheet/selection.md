@@ -176,6 +176,7 @@ The following sample shows, how to remove the selection in the spreadsheet. Here
 {% endif %}
 
 
+
 ## Limitations
 
 * We have a limitation while performing the Select All(`ctrl + A`). You can do this only by clicking the Select All button at the top left corner.
