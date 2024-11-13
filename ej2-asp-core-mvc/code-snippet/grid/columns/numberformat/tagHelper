@@ -1,0 +1,10 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">   
+    <e-grid-columns>
+        <e-grid-column field="RollNo" headerText="Roll No"></e-grid-column>
+        <e-grid-column field="Mark1" headerText="Mark 1"></e-grid-column>
+        <e-grid-column field="Mark2" headerText="Mark 2" format="N"></e-grid-column>
+        <e-grid-column field="Average" headerText="Average" format="N2"></e-grid-column>
+        <e-grid-column field="Percentage" headerText="Percentage of Marks" format="P"></e-grid-column>
+        <e-grid-column field="Fees" headerText="Fees" format="C"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
