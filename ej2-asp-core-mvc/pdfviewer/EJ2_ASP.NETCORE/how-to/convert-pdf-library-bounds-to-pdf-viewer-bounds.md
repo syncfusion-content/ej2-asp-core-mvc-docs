@@ -38,10 +38,8 @@ This function fetches the blob data and converts it into a JSON object.
 }
 
 <div class="text-center">
-    <ejs-pdfviewer id="pdfviewer"
-                   style="height:600px"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
-                   serviceUrl="https://services.syncfusion.com/js/production/api/pdfviewer">
+    <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/Index" 
+        documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 </div>
 
