@@ -37,9 +37,8 @@ This function fetches the blob data and converts it into a JSON object.
 }
 
 <div>
-    <div style="height:500px;width:1350px;">
-        <br /><br />
-        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").ServiceUrl("https://services.syncfusion.com/js/production/api/pdfviewer").Render()
+    <div style="height:500px;width:100%;">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
     </div>
 </div>
 
