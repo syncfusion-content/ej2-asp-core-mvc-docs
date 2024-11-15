@@ -1,0 +1,15 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering().Height("275px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("Action").Template("#template").Width("120").Add();
+}).Load("load").FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.FilterBar); }).Render()
+
+<script type="text/x-jsrender" id="template">
+    <button class="e-btn">Custom action</button>
+</script>
+<script>
+ function load() {
+    grid.columns[2].filterTemplate = '<span></span>';
+  }
+</script>

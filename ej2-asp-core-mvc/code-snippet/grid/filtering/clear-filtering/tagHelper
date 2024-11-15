@@ -1,0 +1,17 @@
+<div style="padding-bottom:20px">
+  <ejs-button id="clearFilter" cssClass="e-primary" content="Clear filter"></ejs-button>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowFiltering="true" allowPaging="true" >
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="Shio City"   width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('clearFilter').onclick = function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.clearFiltering(); //clear filtering for all columns
+    };
+</script>

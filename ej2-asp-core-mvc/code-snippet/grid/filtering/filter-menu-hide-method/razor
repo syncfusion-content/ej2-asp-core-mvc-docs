@@ -1,0 +1,33 @@
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("performFilter").CssClass("e-primary filter-button").Content("Filter Customer ID Column").Render()
+    @Html.EJS().Button("clearFilter").CssClass("e-primary").Content("Clear Filter").Render()
+
+</div>
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("350px").AllowFiltering().Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("CustomerID").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+}).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Menu); }).AllowPaging().Render()
+
+<script>
+document.getElementById('performFilter').onclick = function () {
+    var grid = document.getElementById("Grid").ej2_instances[0];
+    grid.filterByColumn('CustomerID', 'startswith', 'V');
+};
+document.getElementById('clearFilter').onclick = function () {
+    var grid = document.getElementById("Grid").ej2_instances[0];
+    grid.clearFiltering();
+};
+</script>
+
+<style>
+    .filter-button {
+        margin-right: 10px; 
+    }
+    .e-filtermenudiv.e-icons.e-icon-filter {
+        display: none;
+    }
+</style>
