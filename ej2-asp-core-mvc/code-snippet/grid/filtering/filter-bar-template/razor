@@ -1,41 +1,48 @@
+@using Newtonsoft.Json;
+
+
+@{
+    var templateOptionsNumericTextBox = new { create = "numericCreate", write = "numericWrite" };
+    var filterBarTemplate = new { create = "dropDownCreate", write = "stringWrite" };
+    var templateOptionsComboBox = new { create = "comboBoxCreate", write = "comboBoxWrite" };
+    var templateOptionsMultiSelect = new { create = "multiSelectCreate", write = "multiSelectWrite" };
+    var templateOptionsDatePicker = new { create = "datePickerCreate", write = "datePickerWrite" };
+}
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering().Height("275px").Columns(col =>
-{
-  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-  col.Field("CustomerID").HeaderText("Customer Name").Width("150").FilterBarTemplate("filterBarTemplate").Add();
-  col.Field("Freight").HeaderText("Freight").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).FilterBarTemplate("templateOptionsNumericTextBox").Format("C2").Add();
-  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).FilterBarTemplate("templateOptionsDatePicker").Format("yMd").Add();
-  col.Field("ShipCity").HeaderText("Ship City").FilterBarTemplate("templateOptionsComboBox").Width("120").Add();
-  col.Field("ShipName").HeaderText("Ship Name").FilterBarTemplate("templateOptionsMultiSelect").Width("120").Add();
-}).PageSettings(page => { page.PageSize(5); }).Render()
+    {
+      col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+      col.Field("CustomerID").HeaderText("Customer Name").Width("150").FilterBarTemplate(filterBarTemplate).Add();
+      col.Field("Freight").HeaderText("Freight").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).FilterBarTemplate(templateOptionsNumericTextBox).Format("C2").Add();
+      col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).FilterBarTemplate(templateOptionsDatePicker).Format("yMd").Add();
+      col.Field("ShipCity").HeaderText("Ship City").FilterBarTemplate(templateOptionsComboBox).Width("120").Add();
+      col.Field("ShipCountry").HeaderText("Ship Country").FilterBarTemplate(templateOptionsMultiSelect).Width("170").Add();
+    }).Render()
 <script>
-
-let shipCityDistinctData = DataUtil.distinct(data, 'ShipCity', true);
-let shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true);
-
-let dropdown;
-let numElement;
-let dateElement;
-let comboElement;
-let multiSelectElement;
-
-let templateOptionsDropDown = {
-    create: () => {
+    var dropdown;
+    var numElement;
+    var dateElement;
+    var comboElement;
+    var multiSelectElement;
+    var shipCityDistinctData = ej.data.DataUtil.distinct(@Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource)), 'ShipCity', true);
+    var shipCountryDistinctData = ej.data.DataUtil.distinct(@Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource)), 'ShipCountry', true);
+    var data = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
+    function dropDownCreate() {
         dropdown = document.createElement('select');
         dropdown.id = 'CustomerID';
-        let option = document.createElement('option');
+        var option = document.createElement('option');
         option.value = 'All';
         option.innerText = 'All';
         dropdown.appendChild(option);
         data.forEach((item) => {
-            let option = document.createElement('option');
-            option.value = (item).CustomerID;
-            option.innerText = (item).CustomerID;
+            var option = document.createElement('option');
+            option.value = item.CustomerID;
+            option.innerText = item.CustomerID;
             dropdown.appendChild(option);
         });
         return dropdown;
-    },
-    write: () => {
-        let dropdownlist = new DropDownList({
+    }
+    function stringWrite () {
+        var dropdownlist = new ej.dropdowns.DropDownList({
             change: (args) => {
                 var grid = document.getElementById("Grid").ej2_instances[0];
                 if (args.value !== 'All') {
@@ -46,95 +53,80 @@ let templateOptionsDropDown = {
             }
         });
         dropdownlist.appendTo(dropdown);
-    },
-};
-
-let templateOptionsNumericTextBox = {
-    create: () => {
+    }
+   function numericCreate(){
         numElement = document.createElement('input');
         return numElement;
-    },
-    write: () => {
-        let numericTextBox = new NumericTextBox({
+    }
+    function numericWrite(){
+        var numericTextBox = new ej.inputs.NumericTextBox({
             format: '00.00',
             value: 10,
         });
         numericTextBox.appendTo(numElement);
-    },
-};
-
-let templateOptionsDatePicker = {
-    create: () => {
+    }
+   function datePickerCreate(){
         dateElement = document.createElement('input');
         return dateElement;
-    },
-    write: (args) => {
-        let datePickerObj = new DatePicker({
+    }
+    function datePickerWrite (args){
+        var datePickerObj = new ej.calendars.DatePicker({
             value: new Date(args.column.field),
             change: handleFilterChange,
         });
         datePickerObj.appendTo(dateElement);
-    },
-};
-
-let templateOptionsComboBox = {
-    create: () => {
+    }
+    function comboBoxCreate(){
         comboElement = document.createElement('input');
         comboElement.id = 'ShipCity';
         return comboElement;
-    },
-    write: (args) => {
-        let comboBox = new ComboBox({
+    }
+    function comboBoxWrite(args) {
+        var comboBox = new ej.dropdowns.ComboBox({
             value: args.value,
             placeholder: 'Select a city',
             change: handleFilterChange,
-            dataSource: shipCityDistinctData.map((item) => (item).ShipCity),
+            dataSource: shipCityDistinctData.map((item) => item.ShipCity),
         });
         comboBox.appendTo(comboElement);
-    },
-};
-
-let templateOptionsMultiSelect = {
-    create: () => {
+    }
+    function multiSelectCreate(){
         multiSelectElement = document.createElement('input');
         multiSelectElement.id = 'ShipCountry';
         return multiSelectElement;
-    },
-    write: (args) => {
-        let multiselect = new MultiSelect({
+    }
+    function multiSelectWrite(args){
+        var multiselect = new ej.dropdowns.MultiSelect({
             value: args.value,
             placeholder: 'Select a country',
             change: multiselectFunction,
-            dataSource: shipCountryDistinctData.map((item) => (item).ShipCountry),
+            dataSource: shipCountryDistinctData.map((item) => item.ShipCountry),
         });
         multiselect.appendTo(multiSelectElement);
-    },
-};
-
-let handleFilterChange = (args) => {
-    let targetElement = parentsUntil(args.element, 'e-filtertext');
-    let columnName = targetElement.id.replace('_filterBarcell', '');
-    var grid = document.getElementById("Grid").ej2_instances[0];
-    if (args.value) {
-        grid.filterByColumn(columnName, 'equal', args.value);
-    } else {
-        grid.removeFilteredColsByField(columnName);
     }
-};
-
-let multiselectFunction = (args) => {
-    let selectedValues = args.value;
-    var grid = document.getElementById("Grid").ej2_instances[0];
-    if (selectedValues.length === 0) {
-        let OrginalData = new DataManager(data).executeLocal(new Query());
-        grid.dataSource = OrginalData;
-    } else {
-        let predicate = [];
-        for (let x = 0; x < selectedValues.length; x++) {
-            predicate = predicate.length === 0 ? new Predicate('ShipCountry', 'equal', selectedValues[x]) : predicate.or('ShipCountry', 'equal', selectedValues[x]);
+   function handleFilterChange (args){
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        var targetElement = ej.grids.parentsUntil(args.element, 'e-filtertext');
+        var columnName = targetElement.id.replace('_filterBarcell', '');
+        if (args.value) {
+            grid.filterByColumn(columnName, 'equal', args.value);
+        } else {
+            grid.removeFilteredColsByField(columnName);
         }
-        let filteredData = new DataManager(data).executeLocal(new Query().where(predicate));
-        grid.dataSource = filteredData;
     }
-};
+    function multiselectFunction(args){
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        var selectedValues = args.value;
+        if (selectedValues.length === 0) {
+                var OrginalData = new ej.data.DataManager(data).executeLocal(new ej.data.Query());
+                grid.dataSource = OrginalData;
+        } else {
+            var predicate = [];
+            for (var x = 0; x < selectedValues.length; x++) {
+                predicate = predicate.length === 0 ? new ej.data.Predicate('ShipCountry', 'equal', selectedValues[x]) : predicate.or('ShipCountry', 'equal', selectedValues[x]);
+            }
+            var filteredData = new ej.data.DataManager(data).executeLocal(new ej.data.Query().where(predicate));
+            grid.dataSource = filteredData;
+        }
+    }
 </script>

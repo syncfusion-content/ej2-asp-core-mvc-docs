@@ -1,9 +1,8 @@
 <div style="padding-bottom: 20px; display: flex">
-    <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Show filter bar status </label>
-    @Html.EJS().Switch("switch").Checked(true).Change("onChange").Render()
-    <ejs-switch id="switch" checked="true" change="onSwitchChange"></ejs-switch>
+    <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Show filter bar status </label>    
+    <ejs-switch id="switch" checked="true" change="onChange"></ejs-switch>
 </div>
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="275px">
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="273px" allowPaging="true">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>

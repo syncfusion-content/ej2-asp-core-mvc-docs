@@ -224,6 +224,14 @@ When using the filter menu, the UI displays operators for all columns based on t
 
 **Check Data Types in Data Source:** Ensure that the data types specified in the column definitions match the actual data types in your data source. Mismatched data types can lead to unexpected behavior.
 
+## Add current selection to filter checkbox
+
+By default, the CheckBox filter can only filter the selected items. If filtering is done multiple times on the same column, the previously filtered values in the column will be cleared. Now, it is possible to retain those previous values by using the `Add current selection to filter` checkbox. This checkbox is displayed when data is searched in the search bar of the CheckBox filter.
+
+The following image describes the above mentioned behavior.
+
+![Checkbox filter](../images/checkboxfilter.png)
+
 ## See also
 
 * [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
