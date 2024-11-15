@@ -35,4 +35,4 @@ Summary view allows you to show or hide the filtered query. By default, the valu
 {% endtabs %}
 {% endif %}
 
-![Query builder Sample](images/summary-view.png)
+![Query builder Sample](../images/summary-view.png)
