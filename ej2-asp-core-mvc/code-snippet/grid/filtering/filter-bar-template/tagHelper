@@ -1,0 +1,134 @@
+@using Newtonsoft.Json;
+
+
+@{
+    var templateOptionsNumericTextBox = new { create = "numericCreate", write = "numericWrite" };
+    var filterBarTemplate = new { create = "dropDownCreate", write = "stringWrite" };
+    var templateOptionsComboBox = new { create = "comboBoxCreate", write = "comboBoxWrite" };
+    var templateOptionsMultiSelect = new { create = "multiSelectCreate", write = "multiSelectWrite" };
+    var templateOptionsDatePicker = new { create = "datePickerCreate", write = "datePickerWrite" };
+}
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowFiltering="true" height="275px">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120" filterBarTemplate=filterBarTemplate></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120" filterBarTemplate=templateOptionsNumericTextBox></e-grid-column>          
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="120" filterBarTemplate=templateOptionsDatePicker></e-grid-column>          
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100" filterBarTemplate=templateOptionsComboBox></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="170" filterBarTemplate=templateOptionsMultiSelect></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    var dropdown;
+    var numElement;
+    var dateElement;
+    var comboElement;
+    var multiSelectElement;
+    var shipCityDistinctData = ej.data.DataUtil.distinct(@Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource)), 'ShipCity', true);
+    var shipCountryDistinctData = ej.data.DataUtil.distinct(@Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource)), 'ShipCountry', true);
+    var data = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
+    function dropDownCreate() {
+        dropdown = document.createElement('select');
+        dropdown.id = 'CustomerID';
+        var option = document.createElement('option');
+        option.value = 'All';
+        option.innerText = 'All';
+        dropdown.appendChild(option);
+        data.forEach((item) => {
+            var option = document.createElement('option');
+            option.value = item.CustomerID;
+            option.innerText = item.CustomerID;
+            dropdown.appendChild(option);
+        });
+        return dropdown;
+    }
+    function stringWrite () {
+        var dropdownlist = new ej.dropdowns.DropDownList({
+            change: (args) => {
+                var grid = document.getElementById("Grid").ej2_instances[0];
+                if (args.value !== 'All') {
+                    grid.filterByColumn(args.item.parentElement.id.replace('_options', ''), 'equal', args.value);
+                } else {
+                    grid.removeFilteredColsByField(args.item.parentElement.id.replace('_options', ''));
+                }
+            }
+        });
+        dropdownlist.appendTo(dropdown);
+    }
+   function numericCreate(){
+        numElement = document.createElement('input');
+        return numElement;
+    }
+    function numericWrite(){
+        var numericTextBox = new ej.inputs.NumericTextBox({
+            format: '00.00',
+            value: 10,
+        });
+        numericTextBox.appendTo(numElement);
+    }
+   function datePickerCreate(){
+        dateElement = document.createElement('input');
+        return dateElement;
+    }
+    function datePickerWrite (args){
+        var datePickerObj = new ej.calendars.DatePicker({
+            value: new Date(args.column.field),
+            change: handleFilterChange,
+        });
+        datePickerObj.appendTo(dateElement);
+    }
+    function comboBoxCreate(){
+        comboElement = document.createElement('input');
+        comboElement.id = 'ShipCity';
+        return comboElement;
+    }
+    function comboBoxWrite(args) {
+        var comboBox = new ej.dropdowns.ComboBox({
+            value: args.value,
+            placeholder: 'Select a city',
+            change: handleFilterChange,
+            dataSource: shipCityDistinctData.map((item) => item.ShipCity),
+        });
+        comboBox.appendTo(comboElement);
+    }
+    function multiSelectCreate(){
+        multiSelectElement = document.createElement('input');
+        multiSelectElement.id = 'ShipCountry';
+        return multiSelectElement;
+    }
+    function multiSelectWrite(args){
+        var multiselect = new ej.dropdowns.MultiSelect({
+            value: args.value,
+            placeholder: 'Select a country',
+            change: multiselectFunction,
+            dataSource: shipCountryDistinctData.map((item) => item.ShipCountry),
+        });
+        multiselect.appendTo(multiSelectElement);
+    }
+   function handleFilterChange (args){
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        var targetElement = ej.grids.parentsUntil(args.element, 'e-filtertext');
+        var columnName = targetElement.id.replace('_filterBarcell', '');
+        if (args.value) {
+            grid.filterByColumn(columnName, 'equal', args.value);
+        } else {
+            grid.removeFilteredColsByField(columnName);
+        }
+    }
+    function multiselectFunction(args){
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        var selectedValues = args.value;
+        if (selectedValues.length === 0) {
+                var OrginalData = new ej.data.DataManager(data).executeLocal(new ej.data.Query());
+                grid.dataSource = OrginalData;
+        } else {
+            var predicate = [];
+            for (var x = 0; x < selectedValues.length; x++) {
+                predicate = predicate.length === 0 ? new ej.data.Predicate('ShipCountry', 'equal', selectedValues[x]) : predicate.or('ShipCountry', 'equal', selectedValues[x]);
+            }
+            var filteredData = new ej.data.DataManager(data).executeLocal(new ej.data.Query().where(predicate));
+            grid.dataSource = filteredData;
+        }
+    }
+</script>
