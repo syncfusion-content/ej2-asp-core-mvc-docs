@@ -13,7 +13,7 @@
 <script>
     document.getElementById('multipleFilter').onclick = function () {
         var grid = document.getElementById("Grid").ej2_instances[0];
-        grid.clearFiltering(); // filter CustomerID column with multiple values
+        grid.clearFiltering();
         grid.filterByColumn('CustomerID', 'equal', [
             'VINET',
             'TOMSP',
@@ -22,7 +22,7 @@
     }
     document.getElementById('singleFilter').onclick = function () {
         var grid = document.getElementById("Grid").ej2_instances[0];
-        grid.clearFiltering(); // filter OrderID column with single value
+        grid.clearFiltering();
         grid.filterByColumn('OrderID', 'equal', 10248);
     };
 </script>

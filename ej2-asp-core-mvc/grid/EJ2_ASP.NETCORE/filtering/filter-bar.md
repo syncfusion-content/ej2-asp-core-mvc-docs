@@ -7,7 +7,7 @@ control: Filter Bar
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
+ 
 # Filter bar in ASP.NET Core Grid component
 
 The filter bar feature provides a user-friendly way to filter data in the Syncfusion ASP.NET Core Grid. It displays an input field for each column, allowing you to enter filter criteria and instantly see the filtered results.
@@ -34,7 +34,7 @@ The following example demonstrates how to activate default filtering in the grid
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/filtering/filter-bar/razor %}
+{% include code-snippet/grid/filtering/filter-bar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
 {% include code-snippet/grid/filtering/filter-bar/filter-bar.cs %}
@@ -57,7 +57,7 @@ By settings [filterSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/filtering/filter-bar-mode/razor %}
+{% include code-snippet/grid/filtering/filter-bar-mode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
 {% include code-snippet/grid/filtering/filter-bar-mode/filter-bar.cs %}
@@ -74,7 +74,7 @@ To enable the display of filter text within the pager, you should set the [showF
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/filtering/display-filter-text-pager/razor %}
+{% include code-snippet/grid/filtering/display-filter-text-pager/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
 {% include code-snippet/grid/filtering/display-filter-text-pager/filter-bar.cs %}
@@ -91,7 +91,7 @@ To achieve this functionality, you can enable the  [showFilterBarOperator](https
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/filtering/show-hide-filter-bar/razor %}
+{% include code-snippet/grid/filtering/show-hide-filter-bar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
 {% include code-snippet/grid/filtering/show-hide-filter-bar/filter-bar.cs %}
@@ -108,7 +108,7 @@ Here's an example that demonstrates how to remove the filter bar for the **Custo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/filtering/filter-bar-particular/razor %}
+{% include code-snippet/grid/filtering/filter-bar-particular/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
 {% include code-snippet/grid/filtering/filter-bar-particular/filter-bar.cs %}
@@ -125,7 +125,7 @@ Here's an example that demonstrates how to hide the filter bar for a template co
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/filtering/hide-filter-bar-template/razor %}
+{% include code-snippet/grid/filtering/hide-filter-bar-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
 {% include code-snippet/grid/filtering/hide-filter-bar-template/filter-bar.cs %}
@@ -142,7 +142,7 @@ To utilize this feature, you can define a custom template for the filter bar by 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/filtering/filter-bar-template/razor %}
+{% include code-snippet/grid/filtering/filter-bar-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
 {% include code-snippet/grid/filtering/filter-bar-template/filter-bar.cs %}

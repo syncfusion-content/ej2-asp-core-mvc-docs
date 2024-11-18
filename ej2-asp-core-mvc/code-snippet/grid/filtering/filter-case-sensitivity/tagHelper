@@ -6,7 +6,7 @@
     <e-grid-filterSettings enableCaseSensitivity="false"></e-grid-filterSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>       
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>       
         <e-grid-column field="ShipCity" headerText="Shio City"   width="100"></e-grid-column>
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="100"></e-grid-column>
         <e-grid-column field="ShipRegion" headerText="ShipRegion" width="100"></e-grid-column>

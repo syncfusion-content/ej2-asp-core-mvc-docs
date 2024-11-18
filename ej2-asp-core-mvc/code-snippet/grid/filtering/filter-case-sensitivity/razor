@@ -1,5 +1,5 @@
 <div style="padding-bottom: 20px; display: flex">
-  <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Enable Case Sensitivity</label>
+  <label style="margin-right:5px;font-weight: bold;">Enable Case Sensitivity</label>
   @Html.EJS().Switch("switch").Change("onToggleCaseSensitive").Render()
 </div>
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).Height("273px").Columns(col =>

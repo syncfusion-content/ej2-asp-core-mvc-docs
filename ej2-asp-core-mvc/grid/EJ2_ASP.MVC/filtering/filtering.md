@@ -15,7 +15,7 @@ Filtering is a powerful feature in the Syncfusion Grid component that enables yo
 To enable filtering in the Grid, you need to set the [AllowFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) property of the Grid component to true. Once filtering is enabled, you can configure various filtering options through the [FilterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings) property of the Grid component. This property allows you to define the behavior and appearance of the filter.
 
 Here is an example that demonstrates the default filtering feature of the grid:
-
+ 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter/razor %}
@@ -157,7 +157,7 @@ ab% |Returns all the value that are ends with "ab" character.
 
 The diacritics filter feature in the Syncfusion ASP.NET MVC Grid is useful when working with text data that includes accented characters (diacritic characters). By default, the grid ignores these characters during filtering. However, if you need to consider diacritic characters in your filtering process, you can enable this feature by setting the [FilterSettings.IgnoreAccent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_IgnoreAccent) property to true using the [FilterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings).
 
-Consider the following sample where the `ignoreAccent` property is set to true in order to include diacritic characters in the filtering process:
+Consider the following sample where the `IgnoreAccent` property is set to true in order to include diacritic characters in the filtering process:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -187,7 +187,6 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 
 ![Filtering](../../images/filtering/filter-case-sensitivity.gif)
 
-
 ## Enable different filter for a column
 
 The Syncfusion ASP.NET MVC Grid offers the flexibility to customize filtering behavior for different columns by enabling various types of filters such as **Menu**, **Excel**, **Checkbox**. This feature allows you to tailor the filtering experience to suit the specific needs of each column in your grid. For example, you might prefer a menu-based filter for a category column, an Excel-like filter for a date column, and a checkbox filter for a status column. 
@@ -205,7 +204,7 @@ Here's an example where the menu filter is enabled by default for all columns, b
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/enable-different-filter.png)
+![Filtering](../../images/filtering/filter-enable-different.gif)
 
 ## Change default filter operator for particular column
 
@@ -264,17 +263,17 @@ Here's an example of how to get the filtering data in a Syncfusion grid using th
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/get-filter-record.png)
+![Filtering](../../images/filtering/filter-selected-record.png)
 
 **2.Using the properties in the FilterEventArgs object**
 
 Alternatively, you can use the properties available in the `FilterEventArgs` object to obtain the filter record details.
 
-* `columns`: This property returns the collection of filtered columns.
+* `Columns`: This property returns the collection of filtered columns.
 
-* `currentFilterObject`: This property returns the object that is currently filtered.
+* `CurrentFilterObject`: This property returns the object that is currently filtered.
 
-* `currentFilteringColumn`: This property returns the column name that is currently filtered.
+* `CurrentFilteringColumn`: This property returns the column name that is currently filtered.
 
 To access these properties, you can use the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event handler as shown below:
 

@@ -1,7 +1,5 @@
 public IActionResult Index()
 {
-    var Order = OrderDetails.GetAllRecords();
-    ViewBag.DataSource = Order;
   ViewBag.stringOperatorsData = new string[] {
     "startsWith",
     "endsWith",
@@ -15,7 +13,7 @@ public IActionResult Index()
     "doesnotcontain",
     "doesnotendwith",
     "doesnotstartwith",
-};
+  };
   ViewBag.numericOperatorsData = new string[]  {
     "equal",
     "notEqual",
@@ -25,6 +23,7 @@ public IActionResult Index()
     "lessThanOrEqual",
     "isnull",
     "isnotnull",
-};
-    return View();
+  };
+  ViewBag.DataSource = OrderDetails.GetAllRecords();
+  return View();
 }

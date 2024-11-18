@@ -204,7 +204,7 @@ Here's an example where the menu filter is enabled by default for all columns, b
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/enable-different-filter.png)
+![Filtering](../../images/filtering/filter-enable-different.gif)
 
 ## Change default filter operator for particular column
 
@@ -263,7 +263,7 @@ Here's an example of how to get the filtering data in a Syncfusion grid using th
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/get-filter-record.png)
+![Filtering](../../images/filtering/filter-selected-record.png)
 
 **2.Using the properties in the FilterEventArgs object**
 
