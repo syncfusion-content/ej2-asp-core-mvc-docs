@@ -46,7 +46,6 @@
                 <input id="currentPage" type="text" value=${currentPage}>
             </div>
         </div>
-
         <div id="totalPages" class="e-pagertemplatemessage" style="margin-top:5px;margin-left:30px;border: none; display: inline-block ">
             <span class="e-pagenomsg">${currentPage} of ${totalPages} pages (${totalRecordsCount} items)</span>
         </div>

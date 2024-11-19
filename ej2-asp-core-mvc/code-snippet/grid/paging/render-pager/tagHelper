@@ -1,0 +1,29 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="348px" dataBound="dataBound"> 
+    <e-grid-pagesettings pageSizes="true" pageSize="10">
+    </e-grid-pagesettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    let initialGridLoad = true;
+    function dataBound()
+    {
+        if (initialGridLoad) {
+            initialGridLoad = false;
+            var grid = document.getElementById("grid").ej2_instances[0];
+            let pager = document.getElementsByClassName('e-gridpager');
+            let topElement;
+            if (grid.allowGrouping || grid.toolbar) {
+                topElement = grid.allowGrouping ? document.getElementsByClassName('e-groupdroparea') :
+                    document.getElementsByClassName('e-toolbar');
+            } else {
+                topElement = document.getElementsByClassName('e-gridheader');
+            }
+            grid.element.insertBefore(pager[0], topElement[0]);
+        }
+    }
+</script>
