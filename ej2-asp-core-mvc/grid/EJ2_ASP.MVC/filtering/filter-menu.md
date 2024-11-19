@@ -157,8 +157,6 @@ You can prevent autofill feature by setting the `Autofill` parameter to **false*
 {% endhighlight %}
 {% endtabs %}
 
-![Filter menu](../../images/filtering/filtermenu-multiple-keyword.png)
-
 ## Hide default filter icons while perform filtering through method
 
 When performing filtering programmatically using methods in the Syncfusion  ASP.NET MVC Grid component, you may want to hide the default filter icons to provide a simpler interface.
