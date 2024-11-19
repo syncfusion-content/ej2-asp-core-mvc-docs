@@ -134,7 +134,7 @@ Here's an example that demonstrates how to hide the filter bar for a template co
 
 ![Filter bar](../../images/filtering/filterbar-hide-template.png)
 
-## Filter bar template with custom component
+## Filter bar template with custom component 
 
 The `filterBarTemplate` feature in the Syncfusion ASP.NET Core Grid allows you to customize the components displayed in the filter bar. Normally, a text box is the default element rendered in the filter bar cell. This flexibility allows you to use various components, such as datepicker, numerictextbox, combobox, and multiselect, within the filter bar based on your specific requirements.
 

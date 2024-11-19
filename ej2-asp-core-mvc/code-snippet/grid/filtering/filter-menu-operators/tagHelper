@@ -23,7 +23,6 @@
         new { value = "notEqual", text = "Not Equal" }
     };
 }
-
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowFiltering="true" height="350px">
     <e-grid-filterSettings type="Menu" operators="@(new { stringOperator = stringOperator, numberOperator = numberOperator, dateOperator = dateOperator, booleanOperator = booleanOperator })"></e-grid-filterSettings>
     <e-grid-columns>

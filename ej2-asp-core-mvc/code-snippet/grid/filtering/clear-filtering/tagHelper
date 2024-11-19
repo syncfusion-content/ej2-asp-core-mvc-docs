@@ -1,12 +1,12 @@
 <div style="padding-bottom:20px">
   <ejs-button id="clearFilter" cssClass="e-primary" content="Clear filter"></ejs-button>
 </div>
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowFiltering="true" allowPaging="true" height="278px" >
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowFiltering="true" allowPaging="true" height="278px">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column> 
-        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd"   width="120"></e-grid-column>      
-        <e-grid-column field="Freight" headerText="Freight" format="C2"   width="100"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="120"></e-grid-column>      
+        <e-grid-column field="Freight" headerText="Freight" format="C2" width="100"></e-grid-column>
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>

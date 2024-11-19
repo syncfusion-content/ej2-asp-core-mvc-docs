@@ -1,5 +1,4 @@
 @using Syncfusion.EJ2.Notifications;
-
 <div id="msg_warning" style="padding-bottom:20px;display: none;">
     <ejs-message id="msg_warning" content="No Records" cssClass="e-content-center"
     severity="Warning"></ejs-message>

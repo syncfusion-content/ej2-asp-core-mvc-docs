@@ -43,7 +43,7 @@ Here is an example that showcasing how to render the check box filter within the
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/excel-filter-checkbox.png)
+![Filter bar](../../images/filtering/excel-filter-checbox.gif)
 
 ## Customize the filter choice count
 
@@ -87,7 +87,7 @@ In the example below, you can see how you can customize the text displayed in th
 
 ![Filter bar](../../images/filtering/excel-filter-template-customized-list.gif)
 
-## Show template in checkbox list data
+## Show template in checkbox list data 
 
 The `filterItemTemplate` property in the Syncfusion ASP.NET Core Grid allows you to customize the appearance of filter items in the grid's filter checkbox list for a specific column. This property is useful when you want to provide a custom UI or additional information within the filter checkbox list, such as icons, text, or any HTML elements, alongside the default filter items.
 

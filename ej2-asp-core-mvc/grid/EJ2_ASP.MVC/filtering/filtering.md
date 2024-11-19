@@ -131,7 +131,7 @@ a* |Everything that starts with "a".
 *a* |Everything that has an "a" in it.
 *a*b* |Everything that has an "a" in it, followed by anything, followed by a "b", followed by anything.
 
-![Wildcard filter in ASP.NET MVC Grid.](../images/ASP.NET MVC-grid-wildcard-search.gif)
+![Wildcard filter in ASP.NET MVC Grid](../../images/filtering/filtering-wildcard.gif)
 
 ### LIKE filtering
 

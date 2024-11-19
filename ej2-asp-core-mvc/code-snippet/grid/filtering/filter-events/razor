@@ -9,20 +9,19 @@
     col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
 }).Render()
 <script>
-function actionBegin(args) {
-    if (args.requestType == 'filtering' && args.currentFilteringColumn == 'ShipCity') {
-        args.cancel = true;
-        document.getElementById('message').innerText =
-            'The ' + args.type + ' event has been triggered and the ' + args.requestType + ' action is cancelled for ' + args.currentFilteringColumn;
+    function actionBegin(args) {
+        if (args.requestType == 'filtering' && args.currentFilteringColumn == 'ShipCity') {
+            args.cancel = true;
+            document.getElementById('message').innerText =
+                'The ' + args.type + ' event has been triggered and the ' + args.requestType + ' action is cancelled for ' + args.currentFilteringColumn;
+        }
     }
-}
-function actionComplete(args) {
-    if (args.requestType == 'filtering' && args.currentFilteringColumn) {
-        document.getElementById('message').innerText =
-            'The ' + args.type + ' event has been triggered and the ' + args.requestType + ' action for the ' + args.currentFilteringColumn + ' column has been successfully executed';
-    } else {
-        document.getElementById('message').innerText = '';
+    function actionComplete(args) {
+        if (args.requestType == 'filtering' && args.currentFilteringColumn) {
+            document.getElementById('message').innerText =
+                'The ' + args.type + ' event has been triggered and the ' + args.requestType + ' action for the ' + args.currentFilteringColumn + ' column has been successfully executed';
+        } else {
+            document.getElementById('message').innerText = '';
+        }
     }
-}
-
 </script>

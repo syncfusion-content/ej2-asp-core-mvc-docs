@@ -1,12 +1,10 @@
 @{
     var filter = new
     {
-
         type = "CheckBox",
         itemTemplate = "#filterItemTemplate"
     };
 }
-
 <ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowPaging="true" height="352px">
     <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
     <e-grid-pageSettings pageSize=6></e-grid-pageSettings>

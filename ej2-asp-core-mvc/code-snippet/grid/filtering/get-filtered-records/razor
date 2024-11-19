@@ -1,5 +1,4 @@
 @using Syncfusion.EJ2.Notifications;
-
 <div id="msg_warning" style="padding-bottom:20px;display: none;">
   @Html.EJS().Message("msg_warning").Severity(Severity.Warning).Content("No Records").CssClass("e-content-center").Render()
 </div>
@@ -15,7 +14,6 @@
   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
 }).AllowPaging().Render()
-
 <div id="filteredGrid" style="display: none;">
   <h3>Filtered Records</h3>
   @Html.EJS().Grid("filterGrid").AllowFiltering(true).Columns(col =>

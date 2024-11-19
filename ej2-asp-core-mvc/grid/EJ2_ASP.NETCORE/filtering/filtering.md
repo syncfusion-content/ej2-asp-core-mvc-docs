@@ -131,7 +131,7 @@ a* |Everything that starts with "a".
 *a* |Everything that has an "a" in it.
 *a*b* |Everything that has an "a" in it, followed by anything, followed by a "b", followed by anything.
 
-![Wildcard filter in ASP.NET Core Grid.](../images/ASP.NET Core-grid-wildcard-search.gif)
+![Wildcard filter in ASP.NET Core Grid](../../images/filtering/filtering-wildcard.gif)
 
 ### LIKE filtering
 
@@ -149,7 +149,7 @@ Operator |Description
 ab% |Returns all the value that are ends with "ab" character.
 %ab |Returns all the value that are starts with "ab" character.
 
-![LIKE filter in ASP.NET Core Grid.](../images/ASP.NET Core-grid-like-filter.gif)
+![LIKE filter in ASP.NET Core Grid.](../../images/filtering/filtering-like-fliter.gif)
 
 >By default, the Syncfusion ASP.NET Core Grid uses different filter operators for different column types. The default filter operator for string type columns is **startsWith**, for numerical type columns is **equal**, and for boolean type columns is also **equal**.
 
@@ -187,7 +187,7 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 
 ![Filtering](../../images/filtering/filter-case-sensitivity.gif)
 
-## Enable different filter for a column
+## Enable different filter for a column 
 
 The Syncfusion ASP.NET Core Grid offers the flexibility to customize filtering behavior for different columns by enabling various types of filters such as **Menu**, **Excel**, **Checkbox**. This feature allows you to tailor the filtering experience to suit the specific needs of each column in your grid. For example, you might prefer a menu-based filter for a category column, an Excel-like filter for a date column, and a checkbox filter for a status column. 
 

@@ -2,11 +2,11 @@
     <ejs-button id="singleFilter" cssClass="e-primary" content="Filter with single value"></ejs-button>
     <ejs-button id="multipleFilter" cssClass="e-primary" content="Filter with multiple values"></ejs-button>
 </div>
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="350px" >
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="350px">
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>       
-        <e-grid-column field="ShipCity" headerText="Shio City"   width="100"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Shio City" width="100"></e-grid-column>
         <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>

@@ -24,6 +24,6 @@ public IActionResult Index()
     "isnull",
     "isnotnull",
   };
-  ViewBag.DataSource = OrderDetails.GetAllRecords();
+  ViewBag.dataSource = OrderDetails.GetAllRecords();
   return View();
 }

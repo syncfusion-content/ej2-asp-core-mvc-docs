@@ -1,6 +1,4 @@
 @using Newtonsoft.Json;
-
-
 @{
     var templateOptionsNumericTextBox = new { create = "numericCreate", write = "numericWrite" };
     var filterBarTemplate = new { create = "dropDownCreate", write = "stringWrite" };
@@ -8,7 +6,6 @@
     var templateOptionsMultiSelect = new { create = "multiSelectCreate", write = "multiSelectWrite" };
     var templateOptionsDatePicker = new { create = "datePickerCreate", write = "datePickerWrite" };
 }
-
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowFiltering="true" height="275px">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
@@ -21,7 +18,7 @@
 </ejs-grid>
 <script>
     var dropdown;
-    var numElement;
+    var numericElement;
     var dateElement;
     var comboElement;
     var multiSelectElement;
@@ -57,15 +54,15 @@
         dropdownlist.appendTo(dropdown);
     }
    function numericCreate(){
-        numElement = document.createElement('input');
-        return numElement;
+        numericElement = document.createElement('input');
+        return numericElement;
     }
     function numericWrite(){
         var numericTextBox = new ej.inputs.NumericTextBox({
             format: '00.00',
             value: 10,
         });
-        numericTextBox.appendTo(numElement);
+        numericTextBox.appendTo(numericElement);
     }
    function datePickerCreate(){
         dateElement = document.createElement('input');

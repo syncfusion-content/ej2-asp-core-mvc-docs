@@ -114,7 +114,7 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 {% endhighlight %}
 {% endtabs %}
 
-![Filter menu](../../images/filtering/filtermenu-multiple-keyword.png)
+![Filter menu](../../images/filtering/filtermenu-multiple-keyword.gif)
 
 ## Customize the default input component of filter menu dialog
 

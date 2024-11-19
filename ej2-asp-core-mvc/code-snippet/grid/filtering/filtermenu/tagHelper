@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true">
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="350px">
     <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>

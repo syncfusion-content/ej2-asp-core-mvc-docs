@@ -10,7 +10,7 @@
         }
     };
 }
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("430px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Filter(filteruiTemplate).Add();
     col.Field("CustomerID").HeaderText("CustomerID").Width("150").Filter(filteruiTemplate).Add();
@@ -20,10 +20,10 @@
 <script>
     let dropInstance;
     function createCustomFilter(args) {
-      var flValInput = ej.base.createElement('input', {
-        className: 'flm-input',
+      var filterInputElement = ej.base.createElement('input', {
+        className: 'filter-input',
       });
-      args.target.appendChild(flValInput);
+      args.target.appendChild(filterInputElement);
       var fieldName = args.column.field;
       var dropdownData = ej.data.DataUtil.distinct(@Html.Raw(JsonConvert.SerializeObject(ViewBag.dataSource)), fieldName);
       dropInstance = new ej.dropdowns.MultiSelect({
@@ -33,7 +33,7 @@
         allowFiltering: true,
         mode: 'Delimiter',
       });
-      dropInstance.appendTo(flValInput);
+      dropInstance.appendTo(filterInputElement);
     }
     function writeCustomFilter(args) {
       var fieldName = args.column.field;

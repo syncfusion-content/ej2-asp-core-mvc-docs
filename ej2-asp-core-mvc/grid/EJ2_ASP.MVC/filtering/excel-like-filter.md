@@ -43,7 +43,7 @@ Here is an example that showcasing how to render the check box filter within the
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/excel-filter-checkbox.png)
+![Filter bar](../../images/filtering/excel-filter-checbox.gif)
 
 ## Customize the filter choice count
 

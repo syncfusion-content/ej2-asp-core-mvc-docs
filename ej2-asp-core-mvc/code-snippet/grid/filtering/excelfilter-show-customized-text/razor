@@ -1,7 +1,6 @@
 @{
     var filter = new
     {
-
         type = "CheckBox",
         itemTemplate = "#filterItemTemplate"
     };
@@ -12,7 +11,6 @@
     col.Field("Delivered").HeaderText("Delivered").DisplayAsCheckBox(true).Filter(filter).Width("150").Add();
     col.Field("ProductID").HeaderText("Product ID").Width("150").Add();
 }).FilterSettings(Filter => Filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel)).PageSettings(page => { page.PageSize(6); }).AllowPaging().Render()
-
 <script id='filterItemTemplate' type='text/x-template'>
     ${itemTemplate(data)}
 </script>

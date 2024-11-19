@@ -1,6 +1,4 @@
 @using Newtonsoft.Json;
-
-
 <div style="padding-bottom:20px">
     <div style="padding-bottom: 20px;display: flex">
         <label style="padding: 5px 35px 0 0"> Select Column</label>
@@ -27,22 +25,22 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-let column;
-function dataBound() {
-    let fieldData = document.getElementById("Grid").ej2_instances[0].getColumnFieldNames();
-    document.getElementById("fieldDropDown").ej2_instances[0].dataSource = fieldData;
-}
-function onFieldChange(args) {
-    let dropdownOperatorsList = document.getElementById("operatorDropDown").ej2_instances[0]
-    dropdownOperatorsList.enabled = true;
-    column = document.getElementById("Grid").ej2_instances[0].getColumnByField(args.value);
-    if (column) {
-        availableOperators = column.type === "string" ? @Html.Raw(JsonConvert.SerializeObject(ViewBag.stringOperatorsData)) :  @Html.Raw(JsonConvert.SerializeObject(ViewBag.numericOperatorsData));
-        dropdownOperatorsList.dataSource = availableOperators;
+    let column;
+    function dataBound() {
+        let fieldData = document.getElementById("Grid").ej2_instances[0].getColumnFieldNames();
+        document.getElementById("fieldDropDown").ej2_instances[0].dataSource = fieldData;
     }
-}
-function onOperatorChange(args) {
-    let filterOptions = { operator: args.value };
-    column.filter = filterOptions;
-}
+    function onFieldChange(args) {
+        let dropdownOperatorsList = document.getElementById("operatorDropDown").ej2_instances[0]
+        dropdownOperatorsList.enabled = true;
+        column = document.getElementById("Grid").ej2_instances[0].getColumnByField(args.value);
+        if (column) {
+            availableOperators = column.type === "string" ? @Html.Raw(JsonConvert.SerializeObject(ViewBag.stringOperatorsData)) :  @Html.Raw(JsonConvert.SerializeObject(ViewBag.numericOperatorsData));
+            dropdownOperatorsList.dataSource = availableOperators;
+        }
+    }
+    function onOperatorChange(args) {
+        let filterOptions = { operator: args.value };
+        column.filter = filterOptions;
+    }
 </script>

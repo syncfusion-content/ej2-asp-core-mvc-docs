@@ -1,6 +1,4 @@
 @using Newtonsoft.Json;
-
-
 @{
     var templateOptionsNumericTextBox = new { create = "numericCreate", write = "numericWrite" };
     var filterBarTemplate = new { create = "dropDownCreate", write = "stringWrite" };
@@ -9,17 +7,17 @@
     var templateOptionsDatePicker = new { create = "datePickerCreate", write = "datePickerWrite" };
 }
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering().Height("275px").Columns(col =>
-    {
-      col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-      col.Field("CustomerID").HeaderText("Customer Name").Width("150").FilterBarTemplate(filterBarTemplate).Add();
-      col.Field("Freight").HeaderText("Freight").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).FilterBarTemplate(templateOptionsNumericTextBox).Format("C2").Add();
-      col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).FilterBarTemplate(templateOptionsDatePicker).Format("yMd").Add();
-      col.Field("ShipCity").HeaderText("Ship City").FilterBarTemplate(templateOptionsComboBox).Width("120").Add();
-      col.Field("ShipCountry").HeaderText("Ship Country").FilterBarTemplate(templateOptionsMultiSelect).Width("170").Add();
-    }).Render()
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").FilterBarTemplate(filterBarTemplate).Add();
+    col.Field("Freight").HeaderText("Freight").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).FilterBarTemplate(templateOptionsNumericTextBox).Format("C2").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).FilterBarTemplate(templateOptionsDatePicker).Format("yMd").Add();
+    col.Field("ShipCity").HeaderText("Ship City").FilterBarTemplate(templateOptionsComboBox).Width("120").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").FilterBarTemplate(templateOptionsMultiSelect).Width("170").Add();
+}).Render()
 <script>
     var dropdown;
-    var numElement;
+    var numericElement;
     var dateElement;
     var comboElement;
     var multiSelectElement;
@@ -55,15 +53,15 @@
         dropdownlist.appendTo(dropdown);
     }
    function numericCreate(){
-        numElement = document.createElement('input');
-        return numElement;
+        numericElement = document.createElement('input');
+        return numericElement;
     }
     function numericWrite(){
         var numericTextBox = new ej.inputs.NumericTextBox({
             format: '00.00',
             value: 10,
         });
-        numericTextBox.appendTo(numElement);
+        numericTextBox.appendTo(numericElement);
     }
    function datePickerCreate(){
         dateElement = document.createElement('input');

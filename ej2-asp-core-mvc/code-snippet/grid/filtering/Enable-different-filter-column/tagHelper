@@ -1,12 +1,10 @@
 @{
-
     var filterTypeData = new[] {
         new { value = "Menu", text = "Menu" },
         new { value = "CheckBox", text = "CheckBox" },
         new { value = "Excel", text = "Excel" }
     };
 }
-
 <div style="padding-bottom:20px">
     <div style="padding-bottom:20px;display: flex">
         <label style="padding: 5px 46px 0 0"> Select Column</label>
@@ -28,11 +26,11 @@
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>       
-        <e-grid-column field="ShipCity" headerText="Shio City"   width="100"></e-grid-column>
-        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="OrderDate" format="yMd" textAlign="Right"  width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="Verified" headerText="Verified" displayAsCheckBox="true" textAlign="Right" width="120"></e-grid-column>       
     </e-grid-columns>
 </ejs-grid>
-
 <script>
   let column;
   function dataBound() {

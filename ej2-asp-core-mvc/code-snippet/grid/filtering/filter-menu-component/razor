@@ -1,5 +1,4 @@
 @using Newtonsoft.Json;
-
 @{
     var filteruiTemplate = new
     {
@@ -11,7 +10,6 @@
         }
     };
 }
-
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("300px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -22,15 +20,15 @@
 <script>
     let dropInstance;
     function createCustomFilter(args) {
-        var flValInput = new ej.base.createElement('input', { className: 'flm-input' });
-        args.target.appendChild(flValInput);
+        var filterInputElement = new ej.base.createElement('input', { className: 'filter-input' });
+        args.target.appendChild(filterInputElement);
         dropInstance = new ej.dropdowns.DropDownList({
             dataSource: new ej.data.DataManager(@Html.Raw(JsonConvert.SerializeObject(ViewBag.dataSource))),
             fields: { text: 'CustomerID', value: 'CustomerID' },
             placeholder: 'Select a value',
             popupHeight: '200px'
         });
-        dropInstance.appendTo(flValInput);
+        dropInstance.appendTo(filterInputElement);
     }
     function writeCustomFilter(args) {
             dropInstance.value = args.filteredValue;
