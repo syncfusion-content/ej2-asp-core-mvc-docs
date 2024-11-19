@@ -74,7 +74,7 @@ The Syncfusion ASP.NET MVC Grid component provides you with the flexibility to c
 
 To customize the text in the Excel/Checkbox filter, you can define a `FilterItemTemplate` and bind it to the desired column. The `FilterItemTemplate` property allows you to create custom templates for filter items. You can use any logic and HTML elements within this template to display the desired text or content.
 
-In the example below, you can see how you can customize the text displayed in the filter checkbox list for the **Delivered** column. This is achieved by defining a `FilterItemTemplate` within the <e-column> element for that specific column. Inside the template, you can use ASP.NET MVC's template syntax to conditionally display **Delivered** if the data value is true and **Not delivered** if the value is false.
+In the example below, you can see how you can customize the text displayed in the filter checkbox list for the **Delivered** column. This is achieved by defining a `FilterItemTemplate` within the column element for that specific column. Inside the template, you can use ASP.NET MVC's template syntax to conditionally display **Delivered** if the data value is true and **Not delivered** if the value is false.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
