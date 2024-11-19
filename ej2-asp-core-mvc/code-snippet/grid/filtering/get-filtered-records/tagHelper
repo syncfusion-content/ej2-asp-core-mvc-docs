@@ -7,7 +7,7 @@
     <ejs-button id="getFilteredData" cssClass="e-success msg-button" content="Get Filtered Data"></ejs-button>
     <ejs-button id="clearFilter" cssClass="e-danger" content="Clear" ></ejs-button>
 </div>
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="280" allowPaging="true">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="280" allowPaging="true">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
@@ -33,7 +33,7 @@
   let showRecords = false;
   let showWarning = false;
   document.getElementById('getFilteredData').addEventListener('click', function () {
-    filteredData = document.getElementById("Grid").ej2_instances[0].getFilteredRecords();
+    filteredData = document.getElementById("grid").ej2_instances[0].getFilteredRecords();
     showRecords = filteredData.length > 0;
     showWarning = !showRecords;
     document.getElementById('filteredGrid').style.display = showRecords ? 'block' : 'none';
@@ -43,7 +43,7 @@
     }
   });
   document.getElementById('clearFilter').addEventListener('click', function () {
-    document.getElementById("Grid").ej2_instances[0].clearFiltering();
+    document.getElementById("grid").ej2_instances[0].clearFiltering();
     showRecords = false;
     showWarning = false;
     document.getElementById('filteredGrid').style.display = 'none';

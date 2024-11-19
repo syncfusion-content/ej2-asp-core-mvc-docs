@@ -6,7 +6,7 @@
   @Html.EJS().Button("getFilteredData").CssClass("e-success msg-button").Content("Get Filtered Data").Render()
   @Html.EJS().Button("clearFilter").CssClass("e-danger").Content("Clear").Render()
 </div>
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering(true).Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering(true).Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
@@ -30,7 +30,7 @@
   let showRecords = false;
   let showWarning = false;
   document.getElementById('getFilteredData').addEventListener('click', function () {
-    filteredData = document.getElementById("Grid").ej2_instances[0].getFilteredRecords();
+    filteredData = document.getElementById("grid").ej2_instances[0].getFilteredRecords();
     showRecords = filteredData.length > 0;
     showWarning = !showRecords;
     document.getElementById('filteredGrid').style.display = showRecords ? 'block' : 'none';
@@ -40,7 +40,7 @@
     }
   });
   document.getElementById('clearFilter').addEventListener('click', function () {
-    document.getElementById("Grid").ej2_instances[0].clearFiltering();
+    document.getElementById("grid").ej2_instances[0].clearFiltering();
     showRecords = false;
     showWarning = false;
     document.getElementById('filteredGrid').style.display = 'none';

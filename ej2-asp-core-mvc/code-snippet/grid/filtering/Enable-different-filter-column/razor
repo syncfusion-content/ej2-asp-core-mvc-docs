@@ -22,7 +22,7 @@
   </div>
 </div>
 
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).DataBound("dataBound").Height("320px").AllowFiltering(true).Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).DataBound("dataBound").Height("320px").AllowFiltering(true).Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
@@ -33,15 +33,15 @@
 <script>
   let column;
   function dataBound() {
-    document.getElementById("fieldDropDown").ej2_instances[0].dataSource = document.getElementById("Grid").ej2_instances[0].getColumnFieldNames();
+    document.getElementById("fieldDropDown").ej2_instances[0].dataSource = document.getElementById("grid").ej2_instances[0].getColumnFieldNames();
   }
   function onFieldChange(args) {
-    var grid = document.getElementById("Grid").ej2_instances[0];
+    var grid = document.getElementById("grid").ej2_instances[0];
     document.getElementById("typeDropDown").ej2_instances[0].enabled = true;
     column = grid.getColumnByField(args.value);
   }
   function onTypeChange(args) {
-    var grid = document.getElementById("Grid").ej2_instances[0];
+    var grid = document.getElementById("grid").ej2_instances[0];
     let columnFilterSettings = { type: args.value };
     column.filter = columnFilterSettings;
     grid.refreshColumns();

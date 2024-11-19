@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" allowFiltering="true" allowPaging="true" query="new ej.data.Query().addParams('dataCount', '10000')">
+<ejs-grid id="grid" allowFiltering="true" allowPaging="true" query="new ej.data.Query().addParams('dataCount', '10000')">
     <e-data-manager url="https://services.syncfusion.com/aspnet/production/api/UrlDataSource" adaptor="UrlAdaptor" crossdomain="true"></e-data-manager>
     <e-grid-filterSettings type="Excel" enableInfiniteScrolling="true"></e-grid-filterSettings>
     <e-grid-pageSettings pageCount=5></e-grid-pageSettings>

@@ -10,7 +10,7 @@
         }
     };
 }
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("430px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("430px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Filter(filteruiTemplate).Add();
     col.Field("CustomerID").HeaderText("CustomerID").Width("150").Filter(filteruiTemplate).Add();
@@ -38,7 +38,7 @@
     function writeCustomFilter(args) {
       var fieldName = args.column.field;
       var filteredValue = [];
-      var grid = document.getElementById("Grid").ej2_instances[0];
+      var grid = document.getElementById("grid").ej2_instances[0];
       grid.filterSettings.columns.forEach((item) => {
         if (item.field === fieldName && item.value) {
           filteredValue.push(item.value);
@@ -49,7 +49,7 @@
       }
     }
     function readCustomFilter(args) {
-      var grid = document.getElementById("Grid").ej2_instances[0];
+      var grid = document.getElementById("grid").ej2_instances[0];
       grid.removeFilteredColsByField(args.column.field);
       args.fltrObj.filterByColumn(
         args.column.field,

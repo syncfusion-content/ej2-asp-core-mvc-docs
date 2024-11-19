@@ -10,7 +10,7 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-@Html.EJS().Grid("ExcelFilter").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("352px").Columns(col =>
+@Html.EJS().Grid("excelFilter").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("352px").Columns(col =>
 {
     col.Field("CategoryName").HeaderText("Category Name").Width("100").Filter(filter).Add();
     col.Field("Delivered").HeaderText("Delivered").DisplayAsCheckBox(true).Width("100").Add();

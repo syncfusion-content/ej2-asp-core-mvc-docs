@@ -7,7 +7,7 @@
     filterColumns.Add(new { field = "OrderID", matchCase = false, @operator = "notEqual", predicate = "or", value = "10262" });
 }
 
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).Height("273px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).Height("273px").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();

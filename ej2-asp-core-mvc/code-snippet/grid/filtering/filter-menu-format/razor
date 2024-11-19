@@ -1,4 +1,4 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("300px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("300px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("datetime").Format("M/d/y HH:mm").Add();
@@ -8,7 +8,7 @@
 <script>
     function actionComplete(args) {
         if (args.requestType === 'filterAfterOpen') {
-            var grid = document.getElementById("Grid").ej2_instances[0];
+            var grid = document.getElementById("grid").ej2_instances[0];
             let columnObj = grid.getColumnByField(args.columnName);
             if (columnObj.type === 'datetime') {
                 let dateObj = document.getElementById('dateui-' + columnObj.uid)['ej2_instances'][0];

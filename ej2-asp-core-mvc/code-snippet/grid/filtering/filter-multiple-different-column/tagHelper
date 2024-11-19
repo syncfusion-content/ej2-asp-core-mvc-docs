@@ -6,7 +6,7 @@
     filterColumns.Add(new { field = "OrderID", matchCase = false, @operator = "lessThan", predicate = "or", value = "10250" });
     filterColumns.Add(new { field = "OrderID", matchCase = false, @operator = "notEqual", predicate = "or", value = "10262" });
 }
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="273">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="273">
     <e-grid-filterSettings type='Excel' columns="filterColumns"></e-grid-filterSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>

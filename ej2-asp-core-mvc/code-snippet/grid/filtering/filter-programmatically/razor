@@ -2,7 +2,7 @@
     @Html.EJS().Button("singleFilter").CssClass("e-primary").Content("Filter with single value").Render()
     @Html.EJS().Button("multipleFilter").CssClass("e-primary").Content("Filter with multiple values").Render()
 </div>
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).Height("350px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).Height("350px").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
@@ -11,7 +11,7 @@
 }).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel); }).Render()
 <script>
     document.getElementById('multipleFilter').onclick = function () {
-        var grid = document.getElementById("Grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         grid.clearFiltering(); 
         grid.filterByColumn('CustomerID', 'equal', [
             'VINET',
@@ -20,7 +20,7 @@
         ]);
     }
     document.getElementById('singleFilter').onclick = function () {
-        var grid = document.getElementById("Grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         grid.clearFiltering();
         grid.filterByColumn('OrderID', 'equal', 10248);
     };

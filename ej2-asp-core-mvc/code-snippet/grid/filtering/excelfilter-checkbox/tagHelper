@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowPaging="true" height="352px">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowPaging="true" height="352px">
     <e-grid-filterSettings type="CheckBox"></e-grid-filterSettings>
     <e-grid-pageSettings pageSize=10></e-grid-pageSettings>
     <e-grid-columns>

@@ -1,5 +1,5 @@
 
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowPaging="true">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowPaging="true">
     <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" filter="@(new { @params = new Syncfusion.EJ2.Inputs.NumericTextBox() { ShowSpinButton= false}})" textAlign="Right" width="100"></e-grid-column>

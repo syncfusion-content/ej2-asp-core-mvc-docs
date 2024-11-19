@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="273">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="273">
     <e-grid-filterSettings ignoreAccent='true'></e-grid-filterSettings>
     <e-grid-columns>
         <e-grid-column field="EmployeeID" headerText="Employee ID"  textAlign="Right" width="120"></e-grid-column>

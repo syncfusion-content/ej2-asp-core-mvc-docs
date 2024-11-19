@@ -2,7 +2,7 @@
     <ejs-button id="singleFilter" cssClass="e-primary" content="Filter with single value"></ejs-button>
     <ejs-button id="multipleFilter" cssClass="e-primary" content="Filter with multiple values"></ejs-button>
 </div>
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="350px">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="350px">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>       
@@ -12,7 +12,7 @@
 </ejs-grid>
 <script>
     document.getElementById('multipleFilter').onclick = function () {
-        var grid = document.getElementById("Grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         grid.clearFiltering();
         grid.filterByColumn('CustomerID', 'equal', [
             'VINET',
@@ -21,7 +21,7 @@
         ]);
     }
     document.getElementById('singleFilter').onclick = function () {
-        var grid = document.getElementById("Grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         grid.clearFiltering();
         grid.filterByColumn('OrderID', 'equal', 10248);
     };

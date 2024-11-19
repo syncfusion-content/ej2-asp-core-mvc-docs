@@ -1,7 +1,7 @@
 <div style="padding-top:5px">
   <p style="color:red;" id="message"></p>
 </div>
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering(true).ActionBegin("actionBegin").ActionComplete("actionComplete").Height("350px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering(true).ActionBegin("actionBegin").ActionComplete("actionComplete").Height("350px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();

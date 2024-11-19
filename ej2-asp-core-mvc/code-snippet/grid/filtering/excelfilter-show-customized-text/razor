@@ -5,7 +5,7 @@
         itemTemplate = "#filterItemTemplate"
     };
 }
-@Html.EJS().Grid("ExcelFilter").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("352px").Columns(col =>
+@Html.EJS().Grid("excelFilter").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("352px").Columns(col =>
 {
     col.Field("CategoryName").HeaderText("Category Name").Width("150").Add();
     col.Field("Delivered").HeaderText("Delivered").DisplayAsCheckBox(true).Filter(filter).Width("150").Add();

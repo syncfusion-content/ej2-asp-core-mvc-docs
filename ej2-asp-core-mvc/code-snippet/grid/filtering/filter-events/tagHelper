@@ -1,7 +1,7 @@
 <div style="padding-top:5px">
     <p style="color:red;" id="message"></p>
 </div>
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" actionBegin="actionBegin" height="350px" actionComplete="actionComplete">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" actionBegin="actionBegin" height="350px" actionComplete="actionComplete">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>       

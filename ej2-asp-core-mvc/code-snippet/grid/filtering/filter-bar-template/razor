@@ -6,7 +6,7 @@
     var templateOptionsMultiSelect = new { create = "multiSelectCreate", write = "multiSelectWrite" };
     var templateOptionsDatePicker = new { create = "datePickerCreate", write = "datePickerWrite" };
 }
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering().Height("275px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering().Height("275px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("150").FilterBarTemplate(filterBarTemplate).Add();
@@ -42,7 +42,7 @@
     function stringWrite () {
         var dropdownlist = new ej.dropdowns.DropDownList({
             change: (args) => {
-                var grid = document.getElementById("Grid").ej2_instances[0];
+                var grid = document.getElementById("grid").ej2_instances[0];
                 if (args.value !== 'All') {
                     grid.filterByColumn(args.item.parentElement.id.replace('_options', ''), 'equal', args.value);
                 } else {
@@ -103,7 +103,7 @@
         multiselect.appendTo(multiSelectElement);
     }
    function handleFilterChange (args){
-        var grid = document.getElementById("Grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         var targetElement = ej.grids.parentsUntil(args.element, 'e-filtertext');
         var columnName = targetElement.id.replace('_filterBarcell', '');
         if (args.value) {
@@ -113,7 +113,7 @@
         }
     }
     function multiselectFunction(args){
-        var grid = document.getElementById("Grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         var selectedValues = args.value;
         if (selectedValues.length === 0) {
                 var OrginalData = new ej.data.DataManager(data).executeLocal(new ej.data.Query());

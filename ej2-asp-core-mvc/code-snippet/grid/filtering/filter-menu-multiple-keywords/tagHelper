@@ -10,7 +10,7 @@
         }
     };
 }
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="430px" allowFiltering="true">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="430px" allowFiltering="true">
     <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" filter="filteruiTemplate" width="100"></e-grid-column>
@@ -40,7 +40,7 @@
     function writeCustomFilter(args) {
       var fieldName = args.column.field;
       var filteredValue = [];
-      var grid = document.getElementById("Grid").ej2_instances[0];
+      var grid = document.getElementById("grid").ej2_instances[0];
       grid.filterSettings.columns.forEach((item) => {
         if (item.field === fieldName && item.value) {
           filteredValue.push(item.value);
@@ -51,7 +51,7 @@
       }
     }
     function readCustomFilter(args) {
-      var grid = document.getElementById("Grid").ej2_instances[0];
+      var grid = document.getElementById("grid").ej2_instances[0];
       grid.removeFilteredColsByField(args.column.field);
       args.fltrObj.filterByColumn(
         args.column.field,

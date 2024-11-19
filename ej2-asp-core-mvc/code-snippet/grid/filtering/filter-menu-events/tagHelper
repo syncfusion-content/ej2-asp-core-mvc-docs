@@ -1,6 +1,6 @@
 <div class='event-message' id='actionBeginMessage'></div>
 <div class='event-message' id='actionCompleteMessage'></div>
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowPaging="true" height="350px" actionBegin="actionBegin" actionComplete="actionComplete" >
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowPaging="true" height="350px" actionBegin="actionBegin" actionComplete="actionComplete" >
     <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
