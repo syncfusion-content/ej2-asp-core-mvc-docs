@@ -17,7 +17,7 @@ To enable filtering in the Grid, you need to set the [AllowFiltering](https://he
 Here is an example that demonstrates the default filtering feature of the grid:
  
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter.cs" %}
@@ -37,7 +37,7 @@ To apply an initial filter, you need to specify the filter criteria using the `p
 Here is an example of how to configure the initial filter using the `predicate` object:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/initialfilter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="initialfilter.cs" %}
@@ -56,7 +56,7 @@ To apply the filter with multiple values for same column at initial rendering, s
 The following example demonstrates, how to perform an initial filter with multiple values for same **CustomerID** column using `FilterSettings.Columns` and `predicate`.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-multiple-same-column/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter.cs" %}
@@ -75,7 +75,7 @@ To apply the filter with multiple values for different column at initial renderi
 The following example demonstrates how to perform an initial filter with multiple values for different **Order ID** and **Customer ID** columns using `FilterSettings.Columns` and `predicate`.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-multiple-different-column/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter.cs" %}
@@ -160,7 +160,7 @@ The diacritics filter feature in the Syncfusion ASP.NET MVC Grid is useful when 
 Consider the following sample where the `IgnoreAccent` property is set to true in order to include diacritic characters in the filtering process:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-diacritics/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter.cs" %}
@@ -177,7 +177,7 @@ The Syncfusion ASP.NET MVC Grid provides the flexibility to enable or disable ca
 Below is an example code demonstrating how to enable or disable case sensitivity while filtering:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-case-sensitivity/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter.cs" %}
@@ -196,7 +196,7 @@ It can be achieved by adjusting the `column.filter.type` property based on your 
 Here's an example where the menu filter is enabled by default for all columns, but you can dynamically modify the filter types through a dropdown:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/Enable-different-filter-column/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter.cs" %}
@@ -213,7 +213,7 @@ The Syncfusion Grid component provides the flexibility to change the default fil
 Here's an example that demonstrates how to change the default filter operator column :
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-operator-particular/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter.cs" %}
@@ -232,7 +232,7 @@ This can be achieved by utilizing the `filterByColumn` method of the Grid.
 The following example demostrates, how to programmatically filter the Grid using single and multiple values for the **OrderID** and **CustomerID** columns. This is accomplished by calling the `filterByColumn` method within an external button click function.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-programmatically/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter.cs" %}
@@ -255,7 +255,7 @@ This method retrieves an array of records that match the currently applied filte
 Here's an example of how to get the filtering data in a Syncfusion grid using the `getFilteredRecords` method:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/get-filtered-records/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter.cs" %}
@@ -292,7 +292,7 @@ The Syncfusion Grid provides a method called `clearFiltering` to clear the filte
 Here's an example of how to clear the filtering in a Syncfusion grid using the `clearFiltering` method:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/clear-filtering/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter.cs" %}
@@ -311,7 +311,7 @@ To implement filtering events in the Syncfusion ASP.NET MVC Grid, you can utiliz
 In the given example, the filtering is prevented for **ShipCity** column during `ActionBegin` event.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-events/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter.cs" %}

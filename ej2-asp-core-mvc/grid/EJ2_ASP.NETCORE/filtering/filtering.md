@@ -45,7 +45,7 @@ Here is an example of how to configure the initial filter using the `predicate` 
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/initial-filter.png)
+![Initial filter](../../images/filtering/initial-filter.png)
 
 ### Initial filter with multiple values for same column
 

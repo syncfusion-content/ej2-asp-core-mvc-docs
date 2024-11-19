@@ -33,7 +33,7 @@ N/A |N/A |Always **equal** operator will be used for Boolean filter |Boolean
 The following example demonstrates how to activate default filtering in the grid.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-bar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
@@ -56,7 +56,7 @@ By settings [FilterSettings.Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/S
 By settings [FilterSettings.Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Mode) as **Immediate**, the filter bar instantly applies filtering as filter criteria are entered. Filtering actions take place as soon as criteria are input or modified, providing real-time previews of filtering results.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-bar-mode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
@@ -73,7 +73,7 @@ The Syncfusion ASP.NET MVC Grid component provides an option to display filter t
 To enable the display of filter text within the pager, you should set the [ShowFilterBarStatus](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_ShowFilterBarStatus) property within the [FilterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings) configuration.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/display-filter-text-pager/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
@@ -90,7 +90,7 @@ In the Syncfusion ASP.NET MVC Grid component, you have the ability to modify the
 To achieve this functionality, you can enable the  [ShowFilterBarOperator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_ShowFilterBarOperator) property within the [FilterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings).
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/show-hide-filter-bar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
@@ -107,7 +107,7 @@ In the Syncfusion ASP.NET MVC Grid, you can prevent filtering for a specific col
 Here's an example that demonstrates how to remove the filter bar for the **CustomerID** column in Syncfusion ASP.NET MVC Grid:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-bar-particular/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
@@ -124,7 +124,7 @@ To hide the filter bar for a template column, you can use the `FilterTemplate` p
 Here's an example that demonstrates how to hide the filter bar for a template column in the Syncfusion ASP.NET MVC Grid:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/hide-filter-bar-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}
@@ -141,7 +141,7 @@ The `FilterBarTemplate` feature in the Syncfusion ASP.NET MVC Grid allows you to
 To utilize this feature, you can define a custom template for the filter bar by setting the `FilterBarTemplate` property of a column in your ASP.NET MVC application:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-bar-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar.cs" %}

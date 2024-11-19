@@ -16,7 +16,7 @@ To enable the filter menu, you need to set the [FilterSettings.Type](https://hel
 Here is an example that demonstrates the usage of the filter menu in the Syncfusion  ASP.NET MVC Grid:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filtermenu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filtermenu.cs" %}
@@ -44,7 +44,7 @@ For example, you can replace the standard search box in the filter menu with a d
 Here is a sample code demonstrating how to render a dropdownlist component for the **CustomerID** column:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-menu-component/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filtermenu.cs" %}
@@ -64,7 +64,7 @@ The Syncfusion  ASP.NET MVC Grid provides a feature to display the time in a 24-
 Here is an example that demonstrates how to show 24 hours time format in filter dialog:
  
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-menu-format/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filtermenu.cs" %}
@@ -88,7 +88,7 @@ The available options for customization are:
 Here is an example of how to customize the filter operators list in Syncfusion  ASP.NET MVC Grid:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-menu-operators/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filtermenu.cs" %}
@@ -105,7 +105,7 @@ The Syncfusion  ASP.NET MVC Grid allows you to perform filtering actions based o
 Here is an example that demonstrates how to perform filtering by multiple keywords using the filter menu in the Syncfusion  ASP.NET MVC Grid:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-menu-multiple-keywords/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filtermenu.cs" %}
@@ -132,7 +132,7 @@ You have the flexibility to customize the default settings of input components w
 In the example provided below, the **OrderID** and **Freight** columns are numeric columns. When you open the filter dialog for these columns, you will notice that a `NumericTextBox` with a spin button is displayed to change or set the filter value. However, using the `Params` property, you can hide the spin button specifically for the **OrderID** column.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-menu-menu-dialog/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filtermenu.cs" %}
@@ -149,7 +149,7 @@ By default, the [AutoComplete](https://ej2.syncfusion.com/aspnetmvc/documentatio
 You can prevent autofill feature by setting the `Autofill` parameter to **false** using the `Params` property within the column definition of the `Filter`. 
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-menu-prevent-autofill/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filtermenu.cs" %}
@@ -174,7 +174,7 @@ To customize the filter icon in the Grid, use the **display** property of the **
 The following example demonstrate how to hide the default filter icons while filtering the **CustomerID** column programmatically using a method.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-menu-hide-method/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filtermenu.cs" %}
@@ -195,7 +195,7 @@ The Syncfusion  ASP.NET MVC Grid offers the [ActionBegin](https://help.syncfusio
 Here's an example of how to use these events to handle filter menu action in the Syncfusion  ASP.NET MVC Grid:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/filter-menu-events/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filtermenu.cs" %}

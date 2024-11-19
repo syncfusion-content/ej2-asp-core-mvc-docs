@@ -15,7 +15,7 @@ The Syncfusion Grid component offers an Excel-like filter feature, providing a f
 Here is an example that showcasing how to render the excel like filter within the Syncfusion ASP.NET MVC Grid:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/excelfilter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="excelfilter.cs" %}
@@ -35,7 +35,7 @@ The checkbox filtering feature in Syncfusion ASP.NET MVC Grid enables you to fil
 Here is an example that showcasing how to render the check box filter within the Syncfusion ASP.NET MVC Grid:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/excelfilter-checkbox/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="excelfilter.cs" %}
@@ -56,7 +56,7 @@ However, you have the flexibility to increase or decrease the filter choice coun
 The following example demonstrates how to customize the filter choice count in the checkbox list of the filter dialog. In the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event, you need to check if the `requestType` is either `filterChoiceRequest` or `filterSearchBegin`, and then you can set the `FilterChoiceCount` property to the desired value.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/excelfilter-choice-count/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="excelfilter.cs" %}
@@ -77,7 +77,7 @@ To customize the text in the Excel/Checkbox filter, you can define a `FilterItem
 In the example below, you can see how you can customize the text displayed in the filter checkbox list for the **Delivered** column. This is achieved by defining a `FilterItemTemplate` within the <e-column> element for that specific column. Inside the template, you can use ASP.NET MVC's template syntax to conditionally display **Delivered** if the data value is true and **Not delivered** if the value is false.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/excelfilter-show-customized-text/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="excelfilter.cs" %}
@@ -94,7 +94,7 @@ The `FilterItemTemplate` property in the Syncfusion ASP.NET MVC Grid allows you 
 In this example, you can see how to use the `FilterItemTemplate` to render icons along with the category names in the filter checkbox list for the **Category Name** column.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/excelfilter-show-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="excelfilter.cs" %}
@@ -122,7 +122,7 @@ The excel filter dialog includes several features such as **context menu**, **se
 The following example demonstrates how to remove the context menu option in the excel filter dialog using above mentioned CSS
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/excelfilter-customize-dialog/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="excelfilter.cs" %}
@@ -147,7 +147,7 @@ The Excel-like filter dialog in the Syncfusion ASP.NET MVC Grid includes built-i
 Here is a simple example demonstrating how to hide the sorting options in the Excel filter dialog:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/excelfilter-hide-sorting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="excelfilter.cs" %}
@@ -186,7 +186,7 @@ grid.filterSettings = { enableInfiniteScrolling = true, loadingIndicator = 'Spin
 In the provided example, On-Demand Excel filter has been enabled for the ASP.NET MVC Grid
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/filtering/excelfilter-animation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="excelfilter.cs" %}
