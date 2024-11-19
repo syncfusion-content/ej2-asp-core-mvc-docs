@@ -1,0 +1,75 @@
+@using Newtonsoft.Json;
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").ValidationRules(new { required = "true" }).IsPrimaryKey(true).Width(120).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width(120).Add();
+    col.Field("Freight").HeaderText("Freight").EditType("numericedit").ValidationRules(new { required = "true", min = 1, max = 1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").EditType("datepickeredit").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Edit(new { create = "createShipCountryFn", read = "readShipCountryFn", destroy = "destroyShipCountryFn", write = "writeShipCountryFn" }).Width("300").Add();
+}).EditSettings(edit => edit.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+    var dropDownElement;
+    var dropDownListObj;
+    var dropDownDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
+
+    function createShipCountryFn() {
+        dropDownElement = document.createElement('input');
+        return dropDownElement;
+    }
+    function destroyShipCountryFn() {
+        dropDownListObj.destroy();
+    }
+    function readShipCountryFn() {
+        return dropDownListObj.value;
+    }
+
+    function writeShipCountryFn(args) {
+        var rowData = args.rowData;
+        dropDownListObj = new ej.dropdowns.DropDownList({
+            dataSource: dropDownDataSource,
+            query: new ej.data.Query().from('data').select(['EmployeeID', 'ShipCountry', 'OrderID']).take(6),
+            fields: { text: 'ShipCountry' },
+            value: rowData.ShipCountry,
+            change: function (args) {
+                // Update the EmployeeID value in the rowData
+                rowData.ShipCountry = args.value;
+            },
+            headerTemplate: '<table><tr><th>EmployeeID</th><th>ShipCountry</th></tr></table>',
+            itemTemplate: '<div class="e-grid"><table class="e-table"><tbody><tr><td class="e-rowcell">${EmployeeID}</td><td class="e-rowcell">${ShipCountry}</td></tr></tbody></table></div>'
+        });
+        dropDownListObj.appendTo(dropDownElement);
+    }
+</script>
+<style>
+    .content {
+        margin: 0 auto;
+        width: 550px;
+    }
+     table{
+        width:100%;
+        border-collapse: separate;
+        table-layout: fixed;
+    }
+    th,td{
+        border-width: 1px 0 0 1px;
+        border-color: #e0e0e0;
+        text-align: left;
+        border-style: solid;
+        display: table-cell;
+    }
+    th{
+        line-height: 36px;
+        text-indent: 16px;
+    }
+    .e-ddl-header{
+        padding-right: 17px;
+        border-width: 1px 0px 1px 0px;
+        border-color: #e0e0e0;
+        border-style: solid;
+    }
+    .e-dropdownbase .e-list-item{
+        padding-right:0px;
+    }
+</style>

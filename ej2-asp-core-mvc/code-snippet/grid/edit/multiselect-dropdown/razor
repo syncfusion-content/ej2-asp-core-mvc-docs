@@ -1,0 +1,57 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ActionBegin("actionBegin").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("120").Add();
+    col.Field("Freight").HeaderText("Freight").ValidationRules(new { required = "true", min = 1, max = 1000 }).Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").EditType("datepickeredit").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Edit(new { create = "createShipCityFn", read = "readShipCityFn", destroy = "destroyShipCityFn", write = "writeShipCityFn" }).Width("150").Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+    function actionBegin(args){
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            orderData = Object.assign({}, args.rowData);
+
+            orderData['ShipCity'] = orderData['ShipCity'] ? orderData['ShipCity'].split(',') : [];
+
+        }
+        if (args.requestType === 'save') {
+            args.data['ShipCity'] = orderData['ShipCity'].join(',');
+        }
+    }
+</script>
+
+<script>
+    var orderData;
+    var multiSelectElement;
+    var multiSelectObj;
+    var multiSelectDatasource = [
+        { value: 'Reims', text: 'Reims' },
+        { value: 'Münster', text: 'Münster' },
+        { value: 'Rio de Janeiro', text: 'Rio de Janeiro' },
+        { value: 'Lyon', text: 'Lyon' },
+        { value: 'Charleroi', text: 'Charleroi' }
+    ];
+
+    function createShipCityFn() {
+        multiSelectElement = document.createElement('input');
+        return multiSelectElement;
+    }
+    function readShipCityFn() {
+        return multiSelectObj.value;
+    }
+    function destroyShipCityFn() {
+        multiSelectObj.destroy();
+    }
+    function writeShipCityFn() {
+        multiSelectObj = new ej.dropdowns.MultiSelect({
+            dataSource: multiSelectDatasource,
+            value: orderData.ShipCity,
+            fields: { value: 'value', text: 'text' },
+            change: function (e) {
+                orderData.ShipCity = e.value; // Update orderData.ShipCity on change
+            }
+        });
+        multiSelectObj.appendTo(multiSelectElement);
+    }
+</script>

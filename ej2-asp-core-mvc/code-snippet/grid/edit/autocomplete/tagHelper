@@ -1,41 +1,43 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
     <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editsettings>
-    <e-grid-pageSettings pageSize="15"></e-grid-pageSettings>
     <e-grid-columns>
-        <e-grid-column field="OrderID" type="number" headerText="Order ID" type="number" isPrimaryKey="true" validationRules="@(new { required= true })" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID"  type="string" headerText="Customer Name" type="string" width="150" edit="@(new {create = "create", read = "read", destroy = "destroy", write = "write"})"></e-grid-column>
-        <e-grid-column field="Freight" type="number" headerText="Freight" editType="numericedit" textAlign="Right" format="C2" width="120"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" type="date" format="yMd" editType="datepickeredit"  width="150"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required= true })" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120" edit="@(new {create = "createCustomerIDFn", read = "readCustomerIDFn", destroy = "destroyCustomerIDFn", write = "writeCustomerIDFn"})"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" editType="numericedit" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" editType="datepickeredit" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
 <script>
     var autoCompleteData = [
-        { CustomerID: 'ALFKI', Id: '1' },
-        { CustomerID: 'ANATR', Id: '2' },
-        { CustomerID: 'ANTON', Id: '3' },
-        { CustomerID: 'BLONP', Id: '4' },
-        { CustomerID: 'BOLID', Id: '5' }
+        { CustomerID: 'VINET', Id: '1' },
+        { CustomerID: 'TOMSP', Id: '2' },
+        { CustomerID: 'HANAR', Id: '3' },
+        { CustomerID: 'VICTE', Id: '4' },
+        { CustomerID: 'SUPRD', Id: '5' },
     ];
-    var autoCompleteEle;
-    var element
-    function create(args) {
-        element = document.createElement('input');
-        return element;
+    var autoCompleteObj;
+    var autoCompleteElement;
+
+    function createCustomerIDFn() {
+        autoCompleteElement = document.createElement('input');
+        return autoCompleteElement;
     }
-    function read(e) {
-        return autoCompleteEle.value;
+    function readCustomerIDFn() {
+        return autoCompleteObj.value;
     }
-    function destroy() {
-        autoCompleteEle.destroy();
+    function destroyCustomerIDFn() {
+        autoCompleteObj.destroy();
     }
-    function write(args) {
-        autoCompleteEle = new ej.dropdowns.AutoComplete({
+    function writeCustomerIDFn(args) {
+        var rowData = args.rowData;
+        autoCompleteObj = new ej.dropdowns.AutoComplete({
             allowCustom: true,
-            value: args.rowData[args.column.field],
             dataSource: autoCompleteData,
-            fields: { value: 'CustomerID', text: 'CustomerID' }
+            fields: { value: "CustomerID", text: "CustomerID" },
+            value: rowData.CustomerID,
         });
-        autoCompleteEle.appendTo(element);
+        autoCompleteObj.appendTo(autoCompleteElement);
     }
 </script>

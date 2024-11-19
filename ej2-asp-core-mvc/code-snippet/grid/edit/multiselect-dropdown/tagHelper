@@ -1,0 +1,59 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" actionBegin="actionBegin" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
+    <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" editType="numericedit" validationRules="@(new { required= true,min=1, max=1000 })" format="C2" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" editType="datepickeredit" format="yMd" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" edit="@(new {create = "createShipCityFn", read = "readShipCityFn", destroy = "destroyShipCityFn", write = "writeShipCityFn"})" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function actionBegin(args){
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            orderData = Object.assign({}, args.rowData);
+
+            orderData['ShipCity'] = orderData['ShipCity'] ? orderData['ShipCity'].split(',') : [];
+
+        }
+        if (args.requestType === 'save') {
+            args.data['ShipCity'] = orderData['ShipCity'].join(',');
+        }
+    }
+</script>
+
+<script>
+    var orderData;
+    var multiSelectElement;
+    var multiSelectObj;
+    var multiSelectDatasource = [
+        { value: 'Reims', text: 'Reims' },
+        { value: 'Münster', text: 'Münster' },
+        { value: 'Rio de Janeiro', text: 'Rio de Janeiro' },
+        { value: 'Lyon', text: 'Lyon' },
+        { value: 'Charleroi', text: 'Charleroi' }
+    ];
+
+    function createShipCityFn() {
+        multiSelectElement = document.createElement('input');
+        return multiSelectElement;
+    }
+    function readShipCityFn() {
+        return multiSelectObj.value;
+    }
+    function destroyShipCityFn() {
+        multiSelectObj.destroy();
+    }
+    function writeShipCityFn() {
+        multiSelectObj = new ej.dropdowns.MultiSelect({
+            dataSource: multiSelectDatasource,
+            value: orderData.ShipCity,
+            fields: { value: 'value', text: 'text' },
+            change: function (e) {
+                orderData.ShipCity = e.value; // Update orderData.ShipCity on change
+            }
+        });
+        multiSelectObj.appendTo(multiSelectElement);
+    }
+</script>
