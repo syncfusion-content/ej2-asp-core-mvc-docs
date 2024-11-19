@@ -41,7 +41,7 @@ The following example demonstrates how to activate default filtering in the grid
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/filterbar.png)
+![Filter bar](../images/filtering/filterbar.png)
 
 > To enable or dynamically switch the filter type, you must set the [filterSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) as **FilterBar**.
 
@@ -64,7 +64,7 @@ By settings [filterSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/filterbarmode.gif)
+![Filter bar](../images/filtering/filterbarmode.gif)
 
 ## Display filter text in pager
 
@@ -81,7 +81,7 @@ To enable the display of filter text within the pager, you should set the [showF
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/filterbar-status.png)
+![Filter bar](../images/filtering/filterbar-status.png)
 
 ## Show or hide filter bar operator in filter bar cell
 
@@ -98,7 +98,7 @@ To achieve this functionality, you can enable the  [showFilterBarOperator](https
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/filterbar-show-hide-cell.png)
+![Filter bar](../images/filtering/filterbar-show-hide-cell.png)
 
 ## Prevent filtering for particular column
 
@@ -132,7 +132,7 @@ Here's an example that demonstrates how to hide the filter bar for a template co
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/filterbar-hide-template.png)
+![Filter bar](../images/filtering/filterbar-hide-template.png)
 
 ## Filter bar template with custom component 
 
@@ -149,7 +149,7 @@ To utilize this feature, you can define a custom template for the filter bar by 
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/filterbar-template.png)
+![Filter bar](../images/filtering/filterbar-template.png)
 
 ## See also
 

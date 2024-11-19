@@ -25,7 +25,7 @@ Here is an example that demonstrates the usage of the filter menu in the Syncfus
 {% endhighlight %}
 {% endtabs %}
 
-![Filter menu](../../images/filtering/filter-menu.png)
+![Filter menu](../images/filtering/filter-menu.png)
 
 > * [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) must be set as true to enable filter menu.
 > * By setting `columns.allowFiltering` as false will prevent filter menu rendering for a particular column.
@@ -54,9 +54,9 @@ Here is a sample code demonstrating how to render a dropdownlist component for t
 {% endtabs %}
 
 **Default filter input for CustomerID column**
-![Default filter input for CustomerID column](../../images/filtering/filtermenu-custom-default.gif)
+![Default filter input for CustomerID column](../images/filtering/filtermenu-custom-default.gif)
 **Custom dropdown filter for CustomerID column**
-![Custom dropdown filter for CustomerID column](../../images/filtering/filter-menu-component.gif)
+![Custom dropdown filter for CustomerID column](../images/filtering/filter-menu-component.gif)
 
 ## Show 24 hours time format in filter dialog
 
@@ -73,7 +73,7 @@ Here is an example that demonstrates how to show 24 hours time format in filter 
 {% endhighlight %}
 {% endtabs %}
 
-![Filter menu](../../images/filtering/filterbar-format.png)
+![Filter menu](../images/filtering/filterbar-format.png)
 
 ## Customizing filter menu operators list
 
@@ -97,7 +97,7 @@ Here is an example of how to customize the filter operators list in Syncfusion A
 {% endhighlight %}
 {% endtabs %}
 
-![Filter menu](../../images/filtering/filtermenu-operator.png)
+![Filter menu](../images/filtering/filtermenu-operator.png)
 
 ## Filter by multiple keywords using filter menu
 
@@ -114,7 +114,7 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 {% endhighlight %}
 {% endtabs %}
 
-![Filter menu](../../images/filtering/filtermenu-multiple-keyword.gif)
+![Filter menu](../images/filtering/filtermenu-multiple-keyword.gif)
 
 ## Customize the default input component of filter menu dialog
 
@@ -141,7 +141,7 @@ In the example provided below, the **OrderID** and **Freight** columns are numer
 {% endhighlight %}
 {% endtabs %}
 
-![Filter menu](../../images/filtering/filter-menu-input-hide.png)
+![Filter menu](../images/filtering/filter-menu-input-hide.png)
 
 ### Prevent autofill option in autocomplete of menu filter
 
@@ -181,7 +181,7 @@ The following example demonstrate how to hide the default filter icons while fil
 {% endhighlight %}
 {% endtabs %}
 
-![Filter menu](../../images/filtering/filter-menu-method.gif)
+![Filter menu](../images/filtering/filter-menu-method.gif)
 
 ## Filter menu events
 
@@ -202,7 +202,7 @@ Here's an example of how to use these events to handle filter menu action in the
 {% endhighlight %}
 {% endtabs %}
 
-![Filter menu](../../images/filtering/filtermenu-events.png)
+![Filter menu](../images/filtering/filtermenu-events.png)
 
 ## Troubleshoot filter menu operator issue
 

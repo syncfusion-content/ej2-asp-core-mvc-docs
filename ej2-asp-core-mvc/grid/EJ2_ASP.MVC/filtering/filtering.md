@@ -25,7 +25,7 @@ Here is an example that demonstrates the default filtering feature of the grid:
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/filtering.png)
+![Filtering](../images/filtering/filtering.png)
 
 > * You can apply and clear filtering, by using `filterByColumn` and `clearFiltering` methods.
 > * To disable Filtering for a particular column, by specifying `Columns.AllowFiltering` to false.
@@ -45,7 +45,7 @@ Here is an example of how to configure the initial filter using the `predicate` 
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/initial-filter.png)
+![Filtering](../images/filtering/initial-filter.png)
 
 ### Initial filter with multiple values for same column
 
@@ -64,7 +64,7 @@ The following example demonstrates, how to perform an initial filter with multip
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/initial-filter-same-column.png)
+![Filtering](../images/filtering/initial-filter-same-column.png)
 
 ### Initial filter with multiple values for different columns 
 
@@ -83,7 +83,7 @@ The following example demonstrates how to perform an initial filter with multipl
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/initial-filter-different-columns.png)
+![Filtering](../images/filtering/initial-filter-different-columns.png)
 
 ## Filter operators
 
@@ -131,7 +131,7 @@ a* |Everything that starts with "a".
 *a* |Everything that has an "a" in it.
 *a*b* |Everything that has an "a" in it, followed by anything, followed by a "b", followed by anything.
 
-![Wildcard filter in ASP.NET MVC Grid](../../images/filtering/filtering-wildcard.gif)
+![Wildcard filter in ASP.NET MVC Grid](../images/filtering/filtering-wildcard.gif)
 
 ### LIKE filtering
 
@@ -149,7 +149,7 @@ Operator |Description
 ab% |Returns all the value that are ends with "ab" character.
 %ab |Returns all the value that are starts with "ab" character.
 
-![LIKE filter in ASP.NET MVC Grid.](../../images/filtering/filtering-like-fliter.gif)
+![LIKE filter in ASP.NET MVC Grid.](../images/filtering/filtering-like-fliter.gif)
 
 >By default, the Syncfusion ASP.NET MVC Grid uses different filter operators for different column types. The default filter operator for string type columns is **startsWith**, for numerical type columns is **equal**, and for boolean type columns is also **equal**.
 
@@ -168,7 +168,7 @@ Consider the following sample where the `IgnoreAccent` property is set to true i
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/filter-diacritics.png)
+![Filtering](../images/filtering/filter-diacritics.png)
 
 ## Filtering with case sensitivity
 
@@ -185,7 +185,7 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/filter-case-sensitivity.gif)
+![Filtering](../images/filtering/filter-case-sensitivity.gif)
 
 ## Enable different filter for a column
 
@@ -204,7 +204,7 @@ Here's an example where the menu filter is enabled by default for all columns, b
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/filter-enable-different.gif)
+![Filtering](../images/filtering/filter-enable-different.gif)
 
 ## Change default filter operator for particular column
 
@@ -221,7 +221,7 @@ Here's an example that demonstrates how to change the default filter operator co
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/filter-particular-column.png)
+![Filtering](../images/filtering/filter-particular-column.png)
 
 ## Filter grid programmatically with single and multiple values using method 
 
@@ -240,7 +240,7 @@ The following example demostrates, how to programmatically filter the Grid using
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/filter-programmatically.gif)
+![Filtering](../images/filtering/filter-programmatically.gif)
 
 ## How to get filtered records
 
@@ -263,7 +263,7 @@ Here's an example of how to get the filtering data in a Syncfusion grid using th
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/filter-selected-record.png)
+![Filtering](../images/filtering/filter-selected-record.png)
 
 **2.Using the properties in the FilterEventArgs object**
 
@@ -300,7 +300,7 @@ Here's an example of how to clear the filtering in a Syncfusion grid using the `
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/clear-fliter.gif)
+![Filtering](../images/filtering/clear-fliter.gif)
 
 ## Filtering events
 
@@ -319,7 +319,7 @@ In the given example, the filtering is prevented for **ShipCity** column during 
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../../images/filtering/filter-events.gif)
+![Filtering](../images/filtering/filter-events.gif)
 
 ## See Also
 

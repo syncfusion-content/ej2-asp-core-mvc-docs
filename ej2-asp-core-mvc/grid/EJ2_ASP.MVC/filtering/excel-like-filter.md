@@ -23,7 +23,7 @@ Here is an example that showcasing how to render the excel like filter within th
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/excel-filter.gif)
+![Filter bar](../images/filtering/excel-filter.gif)
 
 >* The Excel-like filter feature supports various filter conditions, including text-based, number-based, date-based, and boolean-based filters.
 >* The filter dialog provides additional options, such as sorting filter values, searching for specific values, and clearing applied filters.
@@ -43,7 +43,7 @@ Here is an example that showcasing how to render the check box filter within the
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/excel-filter-checbox.gif)
+![Filter bar](../images/filtering/excel-filter-checbox.gif)
 
 ## Customize the filter choice count
 
@@ -64,7 +64,7 @@ The following example demonstrates how to customize the filter choice count in t
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/excelfilter-count.gif)
+![Filter bar](../images/filtering/excelfilter-count.gif)
 
 > The specified filter choice count value determines the display of unique items as a checkbox list in the Excel/checkbox type filter dialog. This can result in a delay in rendering these checkbox items when opening the filter dialog. Therefore, it is advisable to set a restricted filter choice count value.
 
@@ -85,7 +85,7 @@ In the example below, you can see how you can customize the text displayed in th
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/excel-filter-template-customized-list.gif)
+![Filter bar](../images/filtering/excel-filter-template-customized-list.gif)
 
 ## Show template in checkbox list data
 
@@ -102,7 +102,7 @@ In this example, you can see how to use the `FilterItemTemplate` to render icons
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/excelfilter-show-template.gif)
+![Filter bar](../images/filtering/excelfilter-show-template.gif)
 
 ## Customize the excel filter dialog using CSS
 
@@ -130,7 +130,7 @@ The following example demonstrates how to remove the context menu option in the 
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/excelfilter-customize-dialog.gif)
+![Filter bar](../images/filtering/excelfilter-customize-dialog.gif)
 
 ## Hide sorting option in filter dialog
 
@@ -155,7 +155,7 @@ Here is a simple example demonstrating how to hide the sorting options in the Ex
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/excelfilter-hide-sorting.gif)
+![Filter bar](../images/filtering/excelfilter-hide-sorting.gif)
 
 ## Render checkbox list data in on-demand for excel/checkbox filtering
 
@@ -194,7 +194,7 @@ In the provided example, On-Demand Excel filter has been enabled for the ASP.NET
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../../images/filtering/excelfilter-animation.gif)
+![Filter bar](../images/filtering/excelfilter-animation.gif)
 
 ## See also
 
