@@ -1,0 +1,15 @@
+
+@{
+    List<object> filterColumns = new List<object>();
+    filterColumns.Add(new { field = "CustomerID", matchCase = false, @operator = "startswith", predicate = "or", value = "VINET" });
+    filterColumns.Add(new { field = "CustomerID", matchCase = false, @operator = "startswith", predicate = "or", value = "HANAR"});
+}
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="273">
+    <e-grid-filterSettings type='Excel' columns="filterColumns"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

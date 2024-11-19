@@ -1,7 +1,9 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowFiltering="true">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="275px">
+    <e-grid-filterSettings type="FilterBar"></e-grid-filterSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>       
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="120"></e-grid-column>          
         <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
         <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
     </e-grid-columns>

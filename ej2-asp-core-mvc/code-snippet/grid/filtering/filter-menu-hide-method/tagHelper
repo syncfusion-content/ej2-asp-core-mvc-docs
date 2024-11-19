@@ -1,0 +1,33 @@
+<div style="padding-bottom:20px">
+   <ejs-button id="performFilter" cssClass="e-primary filter-button" content="Filter Customer ID Column"></ejs-button>
+   <ejs-button id="clearFilter" cssClass="e-primary" content="Clear Filter"></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowPaging="true" height="350px">
+    <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+document.getElementById('performFilter').onclick = function () {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    grid.filterByColumn('CustomerID', 'startswith', 'V');
+};
+document.getElementById('clearFilter').onclick = function () {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    grid.clearFiltering();
+};
+</script>
+
+<style>
+    .filter-button {
+        margin-right: 10px; 
+    }
+    .e-filtermenudiv.e-icons.e-icon-filter {
+        display: none;
+    }
+</style>

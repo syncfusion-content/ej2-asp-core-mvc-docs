@@ -1,0 +1,35 @@
+@{
+    var stringOperator = new[] {
+        new { value = "startsWith", text = "Starts With" },
+        new { value = "endsWith", text = "Ends With" },
+        new { value = "contains", text = "Contains" },
+        new { value = "equal", text = "Equal" },
+        new { value = "notEqual", text = "Not Equal" }
+    };
+    var numberOperator = new[] {
+        new { value = "equal", text = "Equal" },
+        new { value = "notEqual", text = "Not Equal" },
+        new { value = "greaterThan", text = "Greater Than" },
+        new { value = "lessThan", text = "Less Than" }
+    };
+    var dateOperator = new[] {
+        new { value = "equal", text = "Equal" },
+        new { value = "notEqual", text = "Not Equal" },
+        new { value = "greaterThan", text = "After" },
+        new { value = "lessThan", text = "Before" }
+    };
+    var booleanOperator = new[] {
+        new { value = "equal", text = "Equal" },
+        new { value = "notEqual", text = "Not Equal" }
+    };
+}
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" allowFiltering="true" height="350px">
+    <e-grid-filterSettings type="Menu" operators="@(new { stringOperator = stringOperator, numberOperator = numberOperator, dateOperator = dateOperator, booleanOperator = booleanOperator })"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>  
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="100"></e-grid-column>     
+        <e-grid-column field="Verified" headerText="Verified" displayAsCheckBox="true" textAlign="Right"  width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

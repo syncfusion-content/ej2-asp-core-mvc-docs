@@ -1,0 +1,19 @@
+<div style="padding-bottom: 20px; display: flex">
+  <label style="margin-right:5px;font-weight: bold;">Show filter bar operator </label>
+  @Html.EJS().Switch("switch").Change("onChange").Render()
+</div>
+
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().AllowPaging().Height("205px").Columns(col =>
+{
+col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
+}).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.FilterBar); }).PageSettings(page => { page.PageSize(6); }).Render()
+<script>
+  function onChange(args) {
+      var grid = document.getElementById("grid").ej2_instances[0];
+      grid.filterSettings = { showFilterBarOperator: args.checked }
+  }
+</script>
