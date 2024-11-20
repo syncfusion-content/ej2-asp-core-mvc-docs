@@ -1,0 +1,29 @@
+<p id="messageSecond"></p>
+<p id="message"></p> 
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+}).AllowPaging().ActionBegin("onActionBegin").ActionComplete("onActionComplete").PageSettings(page => page.PageSize(10)).Render()
+<script>
+    function onActionBegin(args){
+        if (args.requestType === 'paging') {
+            document.getElementById("message").innerText = args.currentPage > args.previousPage
+            ? `You are going to switch to page ${parseInt(args.currentPage, 10) + 1}`
+            : `You are going to switch to page ${args.previousPage}`;
+        }
+    };
+    function onActionComplete(args){
+        if (args.requestType === 'paging') {
+            document.getElementById("messageSecond").innerText = `Now you are in page ${args.currentPage}`;
+        }
+    };
+</script>
+<style>
+    #message, #messageSecond {
+     color: red;
+     text-align: center;
+    }
+</style>

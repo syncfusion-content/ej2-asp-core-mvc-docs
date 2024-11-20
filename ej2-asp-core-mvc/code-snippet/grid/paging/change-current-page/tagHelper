@@ -1,0 +1,27 @@
+<div style="padding-bottom: 20px">
+    <label style="padding: 30px 5px 0 0;font-weight: bold">Enter current page:</label>
+    <ejs-textbox id="inputButton" width="120px"></ejs-textbox>
+    <ejs-button id="buttons" cssClass="e-primary custom" content="click button"></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="325px"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('buttons').onclick = function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        var textbox=document.getElementById("inputButton").ej2_instances[0];
+        if(textbox.value){
+            grid.pageSettings.currentPage = parseInt(textbox.value, 10);  
+        }
+    }
+</script>
+<style>
+    .custom{
+        margin-left: 10px;
+    }
+</style>
