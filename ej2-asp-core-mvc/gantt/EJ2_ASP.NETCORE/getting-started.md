@@ -13,8 +13,7 @@ documentation: ug
 
 This section briefly explains about how to include [ASP.NET Core Gantt](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) control in your ASP.NET Core application using Visual Studio.
 
-To get started quickly with ASP.NET Core Gantt Chart the following video explains the project configuration and basic Gantt chart features behaviours:
-
+To get started quickly with the ASP.NET Core Gantt Chart, watch the following video. It provides a step-by-step explanation of project configuration and demonstrates the basic features and behaviors of the Gantt Chart:
 {% youtube "https://www.youtube.com/watch?v=tILyz8PyE6A" %}
 
 ## Prerequisites
