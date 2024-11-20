@@ -146,7 +146,7 @@ The following example demonstrates the Grid in **Deutsch** culture.
 
 ## Internationalization
 
-The [`Internationalization`](../../common/internationalization/) library is used to globalize number, date, and time values in grid component using format strings in the **Format**.
+The [Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) library is used to globalize number, date, and time values in grid component using format strings in the **Format**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -207,5 +207,5 @@ RTL provides an option to switch the text direction and layout of the Grid compo
 
 ## See Also
 
-* [Internationalization](../../common/internationalization/)
-* [Localization](../../common/localization/)
+* [Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization)
+* [Localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)
