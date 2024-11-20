@@ -20,7 +20,7 @@ Paging options can be configured through the [PageSettings](https://help.syncfus
 
 ## Customize the pager options 
 
-Customizing the pager options in the Syncfusion Grid allows you to tailor the pagination control according to your specific requirements. You can customize the pager to display the number of pages using the `PageCount` property, change the current page using `CurrentPage` property, display the number of records in the grid using the `pageSize` property, and even adjust the page sizes in a dropdown using the `pageSizes` property. Additionally, you can include the current page as a query string in the URL for convenient navigation. 
+Customizing the pager options in the Syncfusion Grid allows you to tailor the pagination control according to your specific requirements. You can customize the pager to display the number of pages using the `PageCount` property, change the current page using `CurrentPage` property, display the number of records in the grid using the `PageSize` property, and even adjust the page sizes in a dropdown using the `PageSizes` property. Additionally, you can include the current page as a query string in the URL for convenient navigation. 
 
 ### Change the page size 
 
@@ -37,7 +37,7 @@ The following example demonstrates how to change the page size of a Grid using a
 {% endhighlight %}
 {% endtabs %}
 
-![Change the page size](../images/page/change-page-size.png)
+![Change the page size](images/page/change-page-size.png)
 
 ### Change the page count 
 
@@ -56,7 +56,7 @@ The following example demonstrates how to change the page count of a Grid using 
 {% endhighlight %}
 {% endtabs %}
 
-![Change the page count](../images/page/change-page-count.png)
+![Change the page count](images/page/change-page-count.png)
 
 ### Change the current page
 
@@ -75,7 +75,7 @@ The following example demonstrates how to dynamically change the current page us
 {% endhighlight %}
 {% endtabs %}
 
-![Change the current page](../images/page/change-current-page.png)
+![Change the current page](images/page/change-current-page.png)
 
 ### Add current page in URL as a query string 
 
@@ -96,7 +96,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Add query string ](../images/page/change-query-string.png)
+![Add query string ](images/page/change-query-string.png)
 
 ## Pager template
 
@@ -115,7 +115,7 @@ The following example demonstrates how to render a **NumericTextBox** component 
 {% endhighlight %}
 {% endtabs %}
 
-![Change the page size](images/print/print.png)
+![Pager template](images/page/pager-template.gif)
 
 ## Pager with page size dropdown
 
@@ -134,7 +134,7 @@ The following example that demonstrates how to integrate the page size Dropdown 
 {% endhighlight %}
 {% endtabs %}
 
-![Pager with page size dropdown](../images/page/pager-dropdown.png)
+![Pager with page size dropdown](images/page/pager-dropdown.png)
 
 > If the pageSizes property is set to a boolean value like 'true' or 'false,' the page size dropdown defaults to an array of strings containing options such as ['All', '5', '10', '15', '20'].
 
@@ -153,7 +153,7 @@ The following example demonstrate how to customize the default values of the pag
 {% endhighlight %}
 {% endtabs %}
 
-![Customize page size dropdown](../images/page/customize-pager.png)
+![Customize page size dropdown](images/page/customize-pager.png)
 
 > The pageSizes property can be configured with either an array of strings or a boolean value.
 
@@ -174,7 +174,7 @@ The following example demonstrates how to dynamically navigate to a particular p
 {% endhighlight %}
 {% endtabs %}
 
-![Navigate to particular page](../images/page/navigate-page.png)
+![Navigate to particular page](images/page/navigate-page.png)
 
 ## How to get the pager element
 
@@ -204,13 +204,13 @@ The following example demonstrates how to calculate the page size based on eleme
 {% endhighlight %}
 {% endtabs %}
 
-![calculate page size](../images/page/calculate-page.png)
+![calculate page size](images/page/calculate-page.png)
 
 ## Render pager at the top of the grid 
 
-The Grid component provides built-in support for rendering a pager at the bottom of the grid by default. However, in certain scenarios, you might want to display the pager at the top of the grid. This can be achieved by utilizing the [dataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event. This event is triggered when the Grid completes rendering its data. By handling this event, you can customize the rendering of the pager and move it to the top of the Grid.
+The Grid component provides built-in support for rendering a pager at the bottom of the grid by default. However, in certain scenarios, you might want to display the pager at the top of the grid. This can be achieved by utilizing the [DataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event. This event is triggered when the Grid completes rendering its data. By handling this event, you can customize the rendering of the pager and move it to the top of the Grid.
 
-Here's an example that demonstrates how to render the pager at the top of the grid using the `dataBound` event:
+Here's an example that demonstrates how to render the pager at the top of the grid using the `DataBound` event:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -221,20 +221,20 @@ Here's an example that demonstrates how to render the pager at the top of the gr
 {% endhighlight %}
 {% endtabs %}
 
-![render pager at the top of the grid ](../images/page/render-pager-top.png)
+![render pager at the top of the grid ](images/page/render-pager-top.png)
 
 > During the paging action, the pager component triggers the below three events.
-> * The [created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event triggers when Pager is created.
-> * The `click` event triggers when the numeric items in the pager is clicked.
-> * The `dropDownChanged` event triggers when pageSize DropDownList value is selected.
+> * The [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event triggers when Pager is created.
+> * The `Click` event triggers when the numeric items in the pager is clicked.
+> * The `DropDownChanged` event triggers when pageSize DropDownList value is selected.
 
 ## Pager events 
 
 The Syncfusion Grid component triggers two pager events during paging actions:
 
-[actionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin)-  This event triggered before any paging action (such as changing the page, changing the page size and etc) is initiated. You can use this event to customize or control the behavior of paging actions.
+[ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin)-  This event triggered before any paging action (such as changing the page, changing the page size and etc) is initiated. You can use this event to customize or control the behavior of paging actions.
 
-[actionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete)- This event triggered after a pager action is completed. It provides information about the action, such as the new page number, page size, and the total number of records. You can use this event to perform actions or update the UI after the operation has been executed.
+[ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete)- This event triggered after a pager action is completed. It provides information about the action, such as the new page number, page size, and the total number of records. You can use this event to perform actions or update the UI after the operation has been executed.
 
 The following example that example demonstrates how to use these events to display notification messages to indicate the current and next page during paging actions in the Syncfusion ASP.NET MVC Grid:
 
@@ -247,8 +247,8 @@ The following example that example demonstrates how to use these events to displ
 {% endhighlight %}
 {% endtabs %}
 
-![Pager events](../images/page/pager-event.png)
+![Pager events](images/page/pager-event.png)
 
 ## See Also
 
-* [Group with Paging](./grouping##group-with-paging)
+* [Group with Paging](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/grouping/grouping#group-with-paging)

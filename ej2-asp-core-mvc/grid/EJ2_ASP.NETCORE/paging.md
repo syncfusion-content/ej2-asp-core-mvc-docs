@@ -30,14 +30,14 @@ The following example demonstrates how to change the page size of a Grid using a
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/change-page-size/razor %}
+{% include code-snippet/grid/paging/change-page-size/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="page.cs" %}
 {% include code-snippet/grid/paging/change-page-size/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Change the page size](../images/page/change-page-size.png)
+![Change the page size](images/page/change-page-size.png)
 
 ### Change the page count 
 
@@ -49,14 +49,14 @@ The following example demonstrates how to change the page count of a Grid using 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/change-page-count/razor %}
+{% include code-snippet/grid/paging/change-page-count/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="page.cs" %}
 {% include code-snippet/grid/paging/change-page-count/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Change the page size](../images/page/change-page-size.png)
+![Change the page count](images/page/change-page-count.png)
 
 ### Change the current page
 
@@ -68,14 +68,14 @@ The following example demonstrates how to dynamically change the current page us
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/change-current-page/razor %}
+{% include code-snippet/grid/paging/change-current-page/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="page.cs" %}
 {% include code-snippet/grid/paging/change-current-page/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Change the current page](../images/page/change-current-page.png)
+![Change the current page](images/page/change-current-page.png)
 
 ### Add current page in URL as a query string 
 
@@ -89,14 +89,14 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/add-query-string/razor %}
+{% include code-snippet/grid/paging/add-query-string/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="page.cs" %}
 {% include code-snippet/grid/paging/add-query-string/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Add query string ](../images/page/change-query-string.png)
+![Add query string ](images/page/change-query-string.png)
 
 ## Pager template
 
@@ -108,14 +108,14 @@ The following example demonstrates how to render a **NumericTextBox** component 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/pager-template/razor %}
+{% include code-snippet/grid/paging/pager-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="page-template.cs" %}
 {% include code-snippet/grid/paging/pager-template/page-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Change the page size](images/print/print.png)
+![Pager template](images/page/pager-template.gif)
 
 ## Pager with page size dropdown
 
@@ -127,14 +127,14 @@ The following example that demonstrates how to integrate the page size Dropdown 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/pager-dropdown/razor %}
+{% include code-snippet/grid/paging/pager-dropdown/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="page.cs" %}
 {% include code-snippet/grid/paging/pager-dropdown/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Pager with page size dropdown](../images/page/pager-dropdown.png)
+![Pager with page size dropdown](images/page/pager-dropdown.png)
 
 > If the pageSizes property is set to a boolean value like 'true' or 'false,' the page size dropdown defaults to an array of strings containing options such as ['All', '5', '10', '15', '20'].
 
@@ -146,14 +146,14 @@ The following example demonstrate how to customize the default values of the pag
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/customize-page-dropdown/razor %}
+{% include code-snippet/grid/paging/customize-page-dropdown/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="page.cs" %}
 {% include code-snippet/grid/paging/customize-page-dropdown/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Customize page size dropdown](../images/page/customize-pager.png)
+![Customize page size dropdown](images/page/customize-pager.png)
 
 > The pageSizes property can be configured with either an array of strings or a boolean value.
 
@@ -167,14 +167,14 @@ The following example demonstrates how to dynamically navigate to a particular p
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/navigate-particular-page/razor %}
+{% include code-snippet/grid/paging/navigate-particular-page/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="page.cs" %}
 {% include code-snippet/grid/paging/navigate-particular-page/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Navigate to particular page](../images/page/navigate-page.png)
+![Navigate to particular page](images/page/navigate-page.png)
 
 ## How to get the pager element
 
@@ -197,14 +197,14 @@ The following example demonstrates how to calculate the page size based on eleme
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/dynamically-calculate/razor %}
+{% include code-snippet/grid/paging/dynamically-calculate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="page.cs" %}
 {% include code-snippet/grid/paging/dynamically-calculate/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![calculate page size](../images/page/calculate-page.png)
+![calculate page size](images/page/calculate-page.png)
 
 ## Render pager at the top of the grid 
 
@@ -214,14 +214,14 @@ Here's an example that demonstrates how to render the pager at the top of the gr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/render-pager/razor %}
+{% include code-snippet/grid/paging/render-pager/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="page.cs" %}
 {% include code-snippet/grid/paging/render-pager/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![render pager at the top of the grid ](../images/page/render-pager-top.png)
+![render pager at the top of the grid ](images/page/render-pager-top.png)
 
 > During the paging action, the pager component triggers the below three events.
 > * The [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event triggers when Pager is created.
@@ -240,15 +240,15 @@ The following example that example demonstrates how to use these events to displ
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/pager-events/razor %}
+{% include code-snippet/grid/paging/pager-events/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="page.cs" %}
 {% include code-snippet/grid/paging/pager-events/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Pager events](../images/page/pager-event.png)
+![Pager events](images/page/pager-event.png)
 
 ## See Also
 
-* [Group with Paging](./grouping##group-with-paging)
+* [Group with Paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/grouping#group-with-paging)

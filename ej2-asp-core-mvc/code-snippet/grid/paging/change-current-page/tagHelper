@@ -1,5 +1,5 @@
 <div style="padding-bottom: 20px">
-    <label style="padding: 30px 5px 0 0">Enter current page:</label>
+    <label style="padding: 30px 5px 0 0;font-weight: bold">Enter current page:</label>
     <ejs-textbox id="inputButton" width="120px"></ejs-textbox>
     <ejs-button id="buttons" cssClass="e-primary custom" content="click button"></ejs-button>
 </div>

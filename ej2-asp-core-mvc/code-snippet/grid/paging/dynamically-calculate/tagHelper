@@ -1,6 +1,6 @@
 <div style="padding-bottom: 20px">
-    <label style="padding: 30px 5px 0 0">Select page size:</label>
-    <ejs-numerictextbox id="numeric" width="230px" format="####.##" min="150" step="50" placeholder="select container height" change="calculatePageSize"></ejs-numerictextbox>
+    <label style="padding: 30px 5px 0 0;font-weight: bold">Select page size:</label>
+    <ejs-numerictextbox id="numeric" width="230px" format="####.##" min=150 step=50 placeholder="select container height" change="calculatePageSize"></ejs-numerictextbox>
 </div>
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="325"> 
     <e-grid-columns>

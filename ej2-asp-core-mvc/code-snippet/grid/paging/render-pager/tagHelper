@@ -1,5 +1,5 @@
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="348px" dataBound="dataBound"> 
-    <e-grid-pagesettings pageSizes="true" pageSize="10">
+    <e-grid-pagesettings pageSizes="true" pageSize=10>
     </e-grid-pagesettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>

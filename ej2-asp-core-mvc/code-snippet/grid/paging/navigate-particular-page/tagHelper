@@ -1,9 +1,9 @@
 <div style="padding-bottom: 20px">
-    <label style="padding: 30px 5px 0 0">Enter page index:</label>
+    <label style="padding: 30px 5px 0 0;font-weight: bold">Enter page index:</label>
     <ejs-textbox id="inputButton" width="120px"></ejs-textbox>
     <ejs-button id="buttons" cssClass="e-primary custom" content="click button"></ejs-button>
 </div>
-<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="325"> 
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="325px"> 
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
