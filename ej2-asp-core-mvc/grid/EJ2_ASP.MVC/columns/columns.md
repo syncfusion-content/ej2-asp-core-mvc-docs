@@ -34,7 +34,7 @@ Here is an example of how to specify column types in a grid using the types ment
 {% endhighlight %}
 {% endtabs %}
 
-![Column Type](../images/columns/Column-type.png)
+![Column Type](../../images/columns/Column-type.png)
 
 >* If the `Type` is not defined, then it will be determined from the first record of the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_DataSource).
 >* Incase if the first record of the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) is null/blank value for a column then it is necessary to define the `Type` for that column. This is because the grid uses the column type to determine which filter dialog to display for that column
@@ -97,7 +97,7 @@ The column width is specified as an absolute pixel value. For example, a column 
 {% endhighlight %}
 {% endtabs %}
 
-![Column Width](../images/columns/columnwidth.png)    
+![Column Width](../../images/columns/columnwidth.png)    
 
 ## Column formatting
 
@@ -114,7 +114,7 @@ You can use the `Columns.Format`property to specify the format for column values
 {% endhighlight %}
 {% endtabs %}
 
-![Column Format](../images/columns/Column-format.png)
+![Column Format](../../images/columns/Column-format.png)
 
 >* The grid uses the [Internalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) library to format values based on the specified format and culture.
 >* By default, the [number](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#number-formatting) values are formatted in **en-US** locale. You can localize the currency and [date](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#formatting) in different locale as explained [here](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization).
@@ -143,7 +143,7 @@ The following example code demonstrates the formatting of data for **Mark 1** an
 {% endhighlight %}
 {% endtabs %}
 
-![Column Number Format](../images/columns/Column-number-format.png)
+![Column Number Format](../../images/columns/Column-number-format.png)
 
 ### Date formatting
 
@@ -168,7 +168,7 @@ Format | Formatted value
 {% endhighlight %}
 {% endtabs %}
 
-![Column Date Format](../images/columns/Column-Date-Format.png)
+![Column Date Format](../../images/columns/Column-Date-Format.png)
 
 >To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#formatting). 
 
@@ -187,7 +187,7 @@ In this example, the format property specifies the date format as "**yyyy-MMM-dd
 {% endhighlight %}
 {% endtabs %}
 
-![Column Format Localization](../images/columns/column-format-localization.png)
+![Column Format Localization](../../images/columns/column-format-localization.png)
 
 ### Format template column value 
 
@@ -204,7 +204,7 @@ To illustrate how to format a template column value, consider the following exam
 {% endhighlight %}
 {% endtabs %}
 
-![Column Format Template](../images/columns/column-format-template.png)
+![Column Format Template](../../images/columns/column-format-template.png)
 
 ### Custom formatting
 
@@ -221,7 +221,7 @@ In the below example, the **numberFormatOptions** object is used as the `Format`
 {% endhighlight %}
 {% endtabs %}
 
-![Column Custom Format](../images/columns/customFormat.png)
+![Column Custom Format](../../images/columns/customFormat.png)
 
 >To learn more about custom formatting, you can refer to [Custom Date formatting](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#custom-number-formatting-and-parsing). 
 
@@ -245,7 +245,7 @@ Here is an example of using the `TextAlign` property to align the text of a Grid
 {% endhighlight %}
 {% endtabs %}
 
-![Column Alignment](../images/columns/Alignment-column.gif)
+![Column Alignment](../../images/columns/Alignment-column.gif)
 
 >* The `TextAlign` property only changes the alignment content not the column header. If you want to align both the column header and content, you can use the `HeaderTextAlign` property.
 
@@ -264,7 +264,7 @@ To enable the rendering of boolean values as checkboxes, you need to set the `Di
 {% endhighlight %}
 {% endtabs %}
 
-![Column Render Boolean Value](../images/columns/Render-boolean.png)
+![Column Render Boolean Value](../../images/columns/Render-boolean.png)
 
 >* The `DisplayAsCheckBox` property is only applicable to boolean values in Grid columns.
 >* When `DisplayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Grid column, with checked state indicating **true** and unchecked state indicating **false**.
@@ -284,7 +284,7 @@ Here is an example of how you can prevent a checkbox from being displayed in a b
 {% endhighlight %}
 {% endtabs %}
 
-![Column Prevent Checkbox in Blank Row](../images/columns/blank-row.png)
+![Column Prevent Checkbox in Blank Row](../../images/columns/blank-row.png)
 
 ## AutoFit columns
 
@@ -303,7 +303,7 @@ The `AutoFitColumns` method resizes the column to fit the widest cell's content 
 {% endhighlight %}
 {% endtabs %}
 
-![Column AutoFit](../images/columns/autofit.png)
+![Column AutoFit](../../images/columns/autofit.png)
 
 > You can AutoFit all the columns by invoking the `AutoFitColumns` method without specifying column names.
 
@@ -322,7 +322,7 @@ You can enable this feature by setting the [AutoFit](https://help.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
 
-![Column AutoFit Empty Space](../images/columns/autfit-empty-space.png)
+![Column AutoFit Empty Space](../../images/columns/autfit-empty-space.png)
 
 > If any one of the column width is undefined, then the particular column will automatically adjust to fill the entire width of the grid table, even if you have enabled the `AutoFit` property of grid.
 
@@ -341,7 +341,7 @@ Here's an example code snippet in ASP.NET MVC that demonstrates how to AutoFit c
 {% endhighlight %}
 {% endtabs %}
 
-![Column AutoFit Empty Space](../images/columns/Autofit-column-chooser.gif)
+![Column AutoFit Empty Space](../../images/columns/Autofit-column-chooser.gif)
 
 ### AutoFit columns with specific rows
 
@@ -360,7 +360,7 @@ Here is an example of how to AutoFit columns with specific rows. The first param
 {% endhighlight %}
 {% endtabs %}
 
-![Column AutoFit Empty Space](../images/columns/Autofit-Specific-columns.gif)
+![Column AutoFit Empty Space](../../images/columns/Autofit-Specific-columns.gif)
 
 ## Locked columns
 
@@ -377,7 +377,7 @@ Here's an example of how you can use the `LockColumn` property to lock a column 
 {% endhighlight %}
 {% endtabs %}
 
-![Lock-Column](../images/columns/Lock-column.gif)
+![Lock-Column](../../images/columns/Lock-column.gif)
 
 ## Show or hide columns
 
@@ -400,7 +400,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Show-Hide-Column](../images/columns/Visible-column.gif)
+![Show-Hide-Column](../../images/columns/Visible-column.gif)
 
 >* Hiding a column using the `Visible` property only affects the UI representation of the grid. The data for the hidden column will still be available in the underlying data source, and can be accessed or modified programmatically.
 >* When a column is hidden, its width is not included in the calculation of the total grid width.
@@ -425,7 +425,7 @@ Here's an example of how to show or hide a column based on the HeaderText in the
 {% endhighlight %}
 {% endtabs %}
 
-![Show-Hide-Column](../images/columns/Show-Hide-Method.gif)
+![Show-Hide-Column](../../images/columns/Show-Hide-Method.gif)
 
 **Based on field**
 
@@ -442,7 +442,7 @@ Here's an example of how to show or hide a column based on the field in the ASP.
 {% endhighlight %}
 {% endtabs %}
 
-![Show-Hide-Column](../images/columns/Show-Hide-Method.gif)
+![Show-Hide-Column](../../images/columns/Show-Hide-Method.gif)
 
 ## Controlling Grid actions
 
@@ -467,7 +467,7 @@ Here is an example code that demonstrates how to control grid actions for specif
 {% endhighlight %}
 {% endtabs %}
 
-![Column Grid Action](../images/columns/grid-action.png)
+![Column Grid Action](../../images/columns/grid-action.png)
 
 ## Customize column styles
 
@@ -546,7 +546,7 @@ You can update the column definitions in the Grid using the [Columns](https://he
 {% endhighlight %}
 {% endtabs %}
 
-![Update Column](../images/columns/Update-column.gif)
+![Update Column](../../images/columns/Update-column.gif)
 
 ### Adding/Removing Columns
 
@@ -565,7 +565,7 @@ Here's an example of how you can add and remove a column from the grid:
 {% endhighlight %}
 {% endtabs %}
 
-![Column Add-Delete](../images/columns/Add-Delete-Column.gif)
+![Column Add-Delete](../../images/columns/Add-Delete-Column.gif)
 
 ### How to refresh columns
 
@@ -590,7 +590,7 @@ In this example, we have a Grid that displays data with three columns: **Order I
 {% endhighlight %}
 {% endtabs %}
 
-![Column Add-Delete](../images/columns/responsive-coulmn.png)
+![Column Responsive](../../images/columns/responsive-coulmn.png)
 
 ## See Also
 
