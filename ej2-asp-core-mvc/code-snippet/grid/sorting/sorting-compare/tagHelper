@@ -1,0 +1,23 @@
+@{
+    Object sortComparer = "sortComparer";
+}
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" allowSorting="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150" sortComparer=sortComparer></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" type="date" format="yMd" width="140"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function sortComparer(reference, comparer) {
+        if (reference < comparer) {
+            return -1;
+        }
+        if (reference > comparer) {
+            return 1;
+        }
+        return 0;
+    }
+</script>

@@ -1,8 +1,11 @@
 @{
     List<object> sortOptions = new List<object>();
-    sortOptions.Add(new { field = "OrderID", direction = "Ascending" });
-    sortOptions.Add(new { field = "ShipCity", direction = "Descending" });
- }
+    sortOptions.Add(new { field = "CustomerID", direction = "Ascending" });
+    sortOptions.Add(new { field = "ShipName", direction = "Descending" });
+}
+<div style="padding-bottom:20px">
+    <ejs-button id="clearButton" cssClass="e-primary" content="Clear Sorting"></ejs-button>
+</div>
 <ejs-grid id="Grid" dataSource="@ViewBag.datasource" allowSorting="true">
     <e-grid-sortsettings columns="sortOptions"></e-grid-sortsettings>
     <e-grid-columns>
@@ -12,3 +15,9 @@
         <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+<script>
+    document.getElementById('clearButton').addEventListener('click', function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.clearSorting()
+    });
+</script>
