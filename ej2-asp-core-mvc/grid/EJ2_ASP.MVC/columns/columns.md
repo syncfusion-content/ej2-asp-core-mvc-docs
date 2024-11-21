@@ -377,7 +377,7 @@ Here's an example of how you can use the `LockColumn` property to lock a column 
 {% endhighlight %}
 {% endtabs %}
 
-![Lock-Column](../../images/columns/Lock-column.gif)
+![Lock-Column](../../images/columns/Lock-column.png)
 
 ## Show or hide columns
 
@@ -400,7 +400,8 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Show-Hide-Column](../../images/columns/Visible-column.gif)
+![Show-Column-Property](../../images/columns/Visible-column-disable.png)
+![Hide-Column-Property](../../images/columns/Visible-column-enable.png)
 
 >* Hiding a column using the `Visible` property only affects the UI representation of the grid. The data for the hidden column will still be available in the underlying data source, and can be accessed or modified programmatically.
 >* When a column is hidden, its width is not included in the calculation of the total grid width.
@@ -425,7 +426,8 @@ Here's an example of how to show or hide a column based on the HeaderText in the
 {% endhighlight %}
 {% endtabs %}
 
-![Show-Hide-Column](../../images/columns/Show-Hide-Method.gif)
+![Show-Column-Headertext](../../images/columns/show-column.png)
+![Hide-Column-Headertext](../../images/columns/hide-column.png)
 
 **Based on field**
 
@@ -442,7 +444,8 @@ Here's an example of how to show or hide a column based on the field in the ASP.
 {% endhighlight %}
 {% endtabs %}
 
-![Show-Hide-Column](../../images/columns/Show-Hide-Method.gif)
+![Show-Column-Field](../../images/columns/show-column.png)
+![Hide-Column-Field](../../images/columns/hide-column.png)
 
 ## Controlling Grid actions
 
@@ -546,7 +549,7 @@ You can update the column definitions in the Grid using the [Columns](https://he
 {% endhighlight %}
 {% endtabs %}
 
-![Update Column](../../images/columns/Update-column.gif)
+![Update Column](../../images/columns/Update-column.png)
 
 ### Adding/Removing Columns
 
@@ -565,7 +568,7 @@ Here's an example of how you can add and remove a column from the grid:
 {% endhighlight %}
 {% endtabs %}
 
-![Column Add-Delete](../../images/columns/Add-Delete-Column.gif)
+![Column Add-Delete](../../images/columns/Add-Delete-Column.png)
 
 ### How to refresh columns
 
