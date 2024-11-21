@@ -1,7 +1,7 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.datasource" allowSorting="true">
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowSorting="true" height="348px">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" foreignKeyValue="ContactName" foreignKeyField="CustomerID" dataSource="@ViewBag.customerData" width="150"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" foreignKeyValue="ContactName" foreignKeyField="CustomerID" dataSource="@ViewBag.customerData" width="150"></e-grid-column>
         <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
         <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
     </e-grid-columns>

@@ -1,7 +1,7 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).AllowSorting().Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowSorting().Height("348px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("170").ForeignKeyValue("ContactName").ForeignKeyField("CustomerID").DataSource((IEnumerable<object>)Model).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("170").ForeignKeyValue("ContactName").ForeignKeyField("CustomerID").DataSource((IEnumerable<object>)ViewBag.customerData).Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
 }).Render();

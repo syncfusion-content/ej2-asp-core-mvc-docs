@@ -6,7 +6,7 @@
 <div style="padding-bottom:20px">
     @Html.EJS().Button("clearButton").CssClass("e-primary").Content("Clear Sorting").Render()
 </div>
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).AllowSorting(true).Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").AllowSorting(true).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("170").Add();
@@ -15,7 +15,7 @@
 }).SortSettings(sort => sort.Columns(sortOptions)).Render()
 <script>
     document.getElementById('clearButton').addEventListener('click', function () {
-        var grid = document.getElementById("Grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         grid.clearSorting()
     });
 </script>

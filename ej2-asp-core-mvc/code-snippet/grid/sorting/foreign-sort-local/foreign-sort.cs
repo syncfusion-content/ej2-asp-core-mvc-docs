@@ -1,7 +1,7 @@
  public IActionResult Index()
  {
    var orders = OrderDetails.GetAllRecords();
-   ViewBag.datasource = orders;
+   ViewBag.dataSource = orders;
    customerData= EmployeeData.GetAllRecords()           
    return View();
  }

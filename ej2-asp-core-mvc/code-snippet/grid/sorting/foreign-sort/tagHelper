@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" load="load" allowSorting="true">
+<ejs-grid id="grid" load="load" allowSorting="true" height="348px">
     <e-data-manager url="/OData/Items" adaptor="ODataV4Adaptor" crossdomain="true"></e-data-manager>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>

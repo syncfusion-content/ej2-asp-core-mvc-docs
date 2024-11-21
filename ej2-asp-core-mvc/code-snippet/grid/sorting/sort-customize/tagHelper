@@ -3,11 +3,11 @@
     sortOptions.Add(new { field = "ShipCity", direction = "Ascending" });
     sortOptions.Add(new { field = "CustomerID", direction = "Descending" });
   }
-<ejs-grid id="Grid" dataSource="@ViewBag.datasource" allowSorting="true">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" allowSorting="true">
     <e-grid-sortsettings columns="sortOptions"></e-grid-sortsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
         <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
         <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
     </e-grid-columns>

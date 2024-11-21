@@ -1,4 +1,4 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).AllowSorting().Locale("ar").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowSorting().Height("348px").Locale("ar").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).SortComparer("sortComparer").Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("170").SortComparer("sortComparer").Add();
