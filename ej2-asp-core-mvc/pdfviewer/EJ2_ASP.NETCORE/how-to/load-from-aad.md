@@ -4,7 +4,7 @@ title: Load PDF from AAD in EJ2 ASP.NET Core PDF Viewer | Syncfusion
 description: Learn here all about How to Load Pdf From AAD in ASP.NET Core Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
