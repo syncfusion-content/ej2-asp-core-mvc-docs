@@ -8,20 +8,8 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-<style>
-#license {
-    font-size: .88em!important;
-	margin-top: 1.5em;     margin-bottom: 1.5em;
-	background-color: #efd9fd;
-    padding: 10px 17px 14px;
-}
-</style>
- 
- 
-<div id="license">
-With the 2024 Volume 4 release, we will discontinue support for .NET Framework 4.0 in WinForms, WPF, ASP.NET MVC, and Document Processing Libraries. Please plan to upgrade to .NET Framework 4.6.2 or higher.<br><br>
+> With the 2024 Volume 4 release, we will discontinue support for .NET Framework 4.0 in WinForms, WPF, ASP.NET MVC, and Document Processing Libraries. Please plan to upgrade to .NET Framework 4.6.2 or higher.<br>
 With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .Net 8.0 or higher.
-</div>
 
 # Syncfusion ASP.NET MVC UI (Essential JS 2)
 
