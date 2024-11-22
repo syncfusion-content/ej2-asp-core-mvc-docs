@@ -2,7 +2,7 @@
     List<object> sortOptions = new List<object>();
     sortOptions.Add(new { field = "CustomerID", direction = "Descending" });
  }
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" allowSorting="true" height="358px" >    
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" allowSorting="true" height="358px" >    
     <e-grid-groupsettings columns="@(new string[] {"CustomerID"})"></e-grid-groupsettings> 
     <e-grid-sortsettings columns="sortOptions"></e-grid-sortsettings>
     <e-grid-columns>

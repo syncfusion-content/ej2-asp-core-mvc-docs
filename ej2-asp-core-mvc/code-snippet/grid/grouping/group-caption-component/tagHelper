@@ -1,5 +1,5 @@
 
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" height="350px" dataBound="dataBound"> 
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" height="350px" dataBound="dataBound"> 
     <e-grid-groupsettings captionTemplate="#groupSettingsCaptionTemplate"></e-grid-groupsettings>     
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>

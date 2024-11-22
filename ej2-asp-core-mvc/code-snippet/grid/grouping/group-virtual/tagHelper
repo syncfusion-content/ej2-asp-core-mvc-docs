@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" enableVirtualization="true" height="350px" allowGrouping="true">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" enableVirtualization="true" height="350px" allowGrouping="true">
     <e-grid-groupSettings enableLazyLoading="true" columns="@(new string[] {"ProductName", "CustomerName"})"></e-grid-groupSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>

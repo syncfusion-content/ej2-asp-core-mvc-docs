@@ -1,11 +1,10 @@
 <div style="margin-left:100px;"><p style="color:red;" id="message"></p></div>
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowGrouping().Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowGrouping().Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
-
 }).ActionBegin("actionBegin").ActionComplete("actionComplete").Render()
 <script>
     function actionBegin(args) {

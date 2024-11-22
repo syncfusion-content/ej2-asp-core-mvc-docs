@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" height="330px"> 
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" height="330px"> 
     <e-grid-groupsettings columns="@(new string[] {"CustomerID","Freight"})"></e-grid-groupsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>

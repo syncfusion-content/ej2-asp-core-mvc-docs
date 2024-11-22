@@ -1,5 +1,5 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowGrouping(true).EnableInfiniteScrolling(true).Height("350px").Columns(col =>
-{
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowGrouping(true).EnableInfiniteScrolling(true).Height("350px").Columns(col =>
+{ 
         col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
         col.Field("ProductName").HeaderText("Product Name").Width("160").Add();
         col.Field("ProductID").HeaderText("Product ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();

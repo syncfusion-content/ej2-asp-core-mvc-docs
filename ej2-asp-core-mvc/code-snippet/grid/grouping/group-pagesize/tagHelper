@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true" allowPaging="true" height="450px">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" allowPaging="true" height="450px">
     <e-grid-groupsettings showGroupedColumn="true" columns="@(new string[] { "ShipCountry"})"></e-grid-groupsettings>
     <e-grid-pagesettings pageSize="4"></e-grid-pagesettings>
     <e-grid-columns>

@@ -21,7 +21,7 @@ The grouping feature in the Syncfusion ASP.NET Core Grid allows you to organize 
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping.png)
+![Grouping](../../images/grouping/grouping.png)
 
 > * You can group and ungroup columns in the Grid by using the `groupColumn` and `ungroupColumn` methods respectively.
 > * To disable grouping for a specific column, set the `columns.allowGrouping` to **false**.
@@ -41,9 +41,9 @@ The following example demonstrates how to set an initial grouping for the **Cust
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-initail.png)
+![Initial group](../../images/grouping/grouping-initail.png)
 
-> You can group by multiple columns by specifying an array of column names in the columns property of the `groupSettings`.
+> You can group by multiple columns by specifying an array of column names in the columns property of the `groupSettings`. 
 
 ## Prevent grouping for particular column
 
@@ -75,7 +75,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-drag-hide.png)
+![Hide drop area](../../images/grouping/grouping-drag-hide.png)
 
 > By default, the group drop area will be shown only if there is at least one column available to group.
 
@@ -94,7 +94,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-show-hide-column.png)
+![Show the grouped column](../../images/grouping/grouping-show-hide-column.png)
 
 ## Reordering on grouped columns 
 
@@ -111,7 +111,7 @@ To enable this feature, you have to set the [groupSettings.allowReordering](http
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-reorder.png)
+![Reordering on grouped columns](../../images/grouping/grouping-reorder.gif)
 
 ## Sort grouped columns in descending order during initial grouping
 
@@ -128,7 +128,7 @@ The following example demonstrates how to sort the **CustomerID** column by sett
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-reorder.png)
+![Sort grouped columns in descending order](../../images/grouping/grouping-descending-order.png)
 
 ## Group with paging
 
@@ -151,7 +151,7 @@ The following example demonstrates how to perform a group action using the `enab
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-format.png)
+![Group by format](../../images/grouping/grouping-format.png)
 
 > Numeric columns can be grouped based on formats such as currency or percentage, while datetime columns can be grouped based on specific date or time formats.
 
@@ -172,7 +172,7 @@ Customizing the `generateQuery` method of the **Data prototype** allows you to m
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-pagesize.png)
+![Show grouped rows based on page size](../../images/grouping/grouping-pagesize.png)
 
 ## Collapse all grouped rows at initial rendering
 
@@ -191,14 +191,14 @@ The following example demonstrates how to collapse all grouped rows at the initi
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/group-collapse-initial.png)
+![Collapse all grouped rows at initial rendering](../../images/grouping/group-collapse-initial.png)
 
 > You can also collapse all the grouped rows at the initial rendering using the `groupCollapseAll` method inside the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event. This is demonstrated in the below code snippet,
 
 ```typescript
     dataBound() {
         if (this.initial === true) {
-           var grid = document.getElementById("Grid").ej2_instances[0];
+           var grid = document.getElementById("grid").ej2_instances[0];
            grid.groupCollapseAll();
            initial = false;
         }
@@ -221,7 +221,7 @@ The following example demonstrates how to group and ungroup the columns in a gri
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-ungroup.gif)
+![Group or ungroup column externally](../../images/grouping)
 
 ## Expand or collapse externally
 
@@ -242,7 +242,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-all-grouped-rows.gif)
+![Expand or collapse all grouped rows](../../images/grouping/grouping-all-grouped-rows.gif)
 
 ### Expand or collapse selected grouped row
 
@@ -269,7 +269,7 @@ The following example demonstrates the function that collapses the selected row 
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-selected-grouped-row.png)
+![Expand or collapse selected grouped row](../../images/grouping/grouping-selected-grouped-row.png)
 
 ## Clear grouping 
 
@@ -288,7 +288,7 @@ The following example demonstrates how to clear the grouping using `clearGroupin
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/sorting-clear.gif)
+![Clear grouping](../../images/grouping/sorting-clear.gif)
 
 ## Grouping Events
 
@@ -309,7 +309,7 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/sorting-events.gif)
+![Grouping Events](../../images/grouping/sorting-events.gif)
 
 > The `args.requestType` property represents the name of the current action being performed. For instance, during grouping, the `args.requestType` value will be **grouping**.
 

@@ -27,7 +27,7 @@ The following example demonstrates how to enable the lazy load grouping feature 
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-lazyloading.png)
+![Lazy load grouping](../images/grouping/grouping-lazyloading.png)
 
 ## Handling the lazy load grouping at server-side
 
@@ -121,7 +121,7 @@ The following example demonstrates how to enable the lazy load grouping with inf
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-infinitescrolling.gif)
+![lazy load grouping with infinite scrolling ](../images/grouping/grouping-infinitescrolling.gif)
 
 > * The [EnableInfiniteScrolling](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableInfiniteScrolling) property is optional and can be set to **true** or **false** based on the requirement.
 > * When enabling the `EnableInfiniteScrolling` feature, it is necessary to define the [Height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property.
@@ -151,7 +151,7 @@ The following example demonstrates how to enable the lazy load grouping with vir
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../images/grouping/grouping-virtual-scrolling.gif)
+![lazy load grouping with virtual scrolling](../images/grouping/grouping-virtual-scrolling.gif)
 
 > When using the `EnableVirtualization` feature, it is necessary to define the [Height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property.
 
