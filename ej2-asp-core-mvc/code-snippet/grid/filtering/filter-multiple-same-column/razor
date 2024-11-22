@@ -1,0 +1,13 @@
+@{
+    List<object> filterColumns = new List<object>();
+    filterColumns.Add(new { field = "CustomerID", matchCase = false, @operator = "startswith", predicate = "or", value = "VINET" });
+    filterColumns.Add(new { field = "CustomerID", matchCase = false, @operator = "startswith", predicate = "or", value = "HANAR"});
+}
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).Height("273px").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+}).FilterSettings(filter => filter.Columns(filterColumns).Type(Syncfusion.EJ2.Grids.FilterType.Excel)).Render()
