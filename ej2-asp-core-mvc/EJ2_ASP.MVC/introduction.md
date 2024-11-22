@@ -11,8 +11,8 @@ documentation: ug
 <style>
 #license {
     font-size: .88em!important;
-margin-top: 1.5em;     margin-bottom: 1.5em;
-background-color: #efd9fd;
+	margin-top: 1.5em;     margin-bottom: 1.5em;
+	background-color: #efd9fd;
     padding: 10px 17px 14px;
 }
 </style>
