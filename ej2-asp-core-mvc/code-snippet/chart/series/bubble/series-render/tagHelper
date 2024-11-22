@@ -1,0 +1,13 @@
+
+<ejs-chart id="container">
+  <e-series-collection>
+      <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="India"
+                type="@Syncfusion.EJ2.Charts.ChartSeriesType.Bubble" size="size"></e-series>
+  </e-series-collection>
+</ejs-chart>
+
+<script>
+  function changeColor(args) {
+      args.fill = "#ff6347"
+  }
+</script>

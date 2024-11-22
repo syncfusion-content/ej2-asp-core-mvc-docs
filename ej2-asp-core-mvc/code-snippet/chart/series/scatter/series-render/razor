@@ -1,0 +1,16 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Scatter).
+        XName("x").
+        YName("y").
+        Name("Gold").
+        Width(2).
+        Add();
+   }).Title("Olympic Medal Counts - RIO").SeriesRender("changeColor").Render()
+
+
+<script>
+    function changeColor(args) {
+        args.fill = "#ff6347";
+    }
+</script>

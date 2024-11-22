@@ -29,11 +29,13 @@ RichTextEditorSlashMenuSettings SlashMenuSettings = new RichTextEditorSlashMenuS
 {
     Items = new object[] { "Paragraph", "Heading 1", "Heading 2", "Heading 3" },
 };
+
 // Render the Rich Text Editor with the defined slash menu settings
 <ejs-richtexteditor>
     <e-richtexteditor-slashmenusettings enable="true" items="@SlashMenuSettings.Items">
     </e-richtexteditor-slashmenusettings>
 </ejs-richtexteditor>
+
 ```
 
 ## Customizing the Popup Width and Height
@@ -43,6 +45,7 @@ The size of the Slash Menu popup can be customized using the [`PopupWidth`](http
 Below is an code snippet showing how to customize both the width and height of the popup:
 
 ```
+
 // Define the settings for the Rich Text Editor's slash menu
 RichTextEditorSlashMenuSettings SlashMenuSettings = new RichTextEditorSlashMenuSettings
 {
@@ -50,12 +53,14 @@ RichTextEditorSlashMenuSettings SlashMenuSettings = new RichTextEditorSlashMenuS
     PopupHeight = "300px",  // Set the height of the popup
     PopupWidth = "250px"    // Set the width of the popup
 };
+
 // Render the Rich Text Editor with the defined slash menu settings
 <ejs-richtexteditor>
     <e-richtexteditor-slashmenusettings enable="true" items="@SlashMenuSettings.Items" popupHeight="@SlashMenuSettings.PopupHeight" 
     popupWidth="@SlashMenuSettings.PopupWidth">
     </e-richtexteditor-slashmenusettings>
 </ejs-richtexteditor>
+
 ```
 
 ## Adding Custom Slash Menu Items
@@ -71,7 +76,7 @@ Each custom item object can include the following properties:
 | type        | Groups related items in the Slash Menu.               |
 | iconCss     | Specifies the CSS class for the item's icon.          |
 | description | Provides a short description for the item.            |
-
+ 
 
 The following code demonstrates how to set up the Custom Slash Menu item in the Rich Text Editor to insert meeting notes and signature:
 

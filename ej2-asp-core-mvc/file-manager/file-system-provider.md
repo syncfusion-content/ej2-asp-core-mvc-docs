@@ -326,7 +326,7 @@ After configuring the SharePoint file provider, build and run the project. Now, 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/share-point-provider/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Share-Point-Provider.cs" %}
+{% highlight c# tabtitle="Share-point-provider.cs" %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -336,10 +336,11 @@ After configuring the SharePoint file provider, build and run the project. Now, 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/share-point-provider/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Share-Point-Provider.cs" %}
+{% highlight c# tabtitle="Share-point-provider.cs" %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
 
 N> **Note:** To learn more about the file actions that can be performed with ASP.NET Core SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider#key-features)
 
@@ -367,9 +368,9 @@ After registering the File Transfer Protocol details, just build and run the pro
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/share-point-provider/tagHelper %}
+{% include code-snippet/file-manager/ftp-file-system/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Share-Point-Provider.cs" %}
+{% highlight c# tabtitle="Ftp-file-system.cs" %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -377,12 +378,13 @@ After registering the File Transfer Protocol details, just build and run the pro
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/share-point-provider/razor %}
+{% include code-snippet/file-manager/ftp-file-system/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Share-Point-Provider.cs" %}
+{% highlight c# tabtitle="Ftp-file-system.cs" %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
 
 
 N> To learn more about the file actions that can be performed with File Transfer Protocol file system provider, refer to this [link](https://github.com/SyncfusionExamples/ftp-aspcore-file-provider#key-features).

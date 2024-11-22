@@ -1,0 +1,24 @@
+@Html.EJS().Chart("container").Series(sr =>
+{
+    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .Name("Sales")
+        .XName("x")
+        .ErrorBar(error => error.Visible(true).
+            Type(Syncfusion.EJ2.Charts.ErrorBarType.Custom)
+            .Mode(Syncfusion.EJ2.Charts.ErrorBarMode.Both)
+            .VerticalPositiveError(2)
+            .HorizontalPositiveError(1)
+            .VerticalNegativeError(2)
+            .VerticalNegativeError(1)
+        )
+        .Marker(marker => marker.Visible(true))
+        .YName("y")
+        .DataSource(ViewBag.dataSource).Add();
+}).PrimaryXAxis(xaxis =>
+     xaxis.Interval(1)
+          .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+      ).PrimaryYAxis(yaxis =>
+          yaxis.LabelFormat("{value}%")
+            .Minimum(15)
+            .Maximum(45)
+      ).Title("Sales Distribution of Car by Region").Render()

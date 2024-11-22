@@ -1,14 +1,9 @@
 @Html.EJS().Chart("container").Series(series =>
    {
-      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).  
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).
       XName("x").
       YName("y").
       DataSource(ViewBag.dataSource).
-      Width("3").
-      Opacity("0.5").
-      DashArray("5, 5").
-      Fill("blue").
+      Fill("red").
       Add();
-   })
-   .PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category))
-   .Title("Olympic Medals").Render()
+   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Title("Olympic Medals").Render()
