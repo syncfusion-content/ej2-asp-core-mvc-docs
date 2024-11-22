@@ -142,21 +142,6 @@ In the example provided below, the **OrderID** and **Freight** columns are numer
 
 ![Filter menu](../images/filtering/filter-menu-input-hide.png)
 
-### Prevent autofill option in autocomplete of menu filter
-
-By default, the [AutoComplete](https://ej2.syncfusion.com/aspnetmvc/documentation/auto-complete/getting-started) component in the filter menu dialog is set to automatically fill suggestions as you type. However, there might be scenarios where you want to prevent this autofill behavior to provide a more customized and controlled user experience.
-
-You can prevent autofill feature by setting the `Autofill` parameter to **false** using the `Params` property within the column definition of the `Filter`. 
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/filtering/filter-menu-prevent-autofill/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="filtermenu.cs" %}
-{% include code-snippet/grid/filtering/filter-menu-prevent-autofill/filtermenu.cs %}
-{% endhighlight %}
-{% endtabs %}
-
 ## Hide default filter icons while perform filtering through method
 
 When performing filtering programmatically using methods in the Syncfusion  ASP.NET MVC Grid component, you may want to hide the default filter icons to provide a simpler interface.

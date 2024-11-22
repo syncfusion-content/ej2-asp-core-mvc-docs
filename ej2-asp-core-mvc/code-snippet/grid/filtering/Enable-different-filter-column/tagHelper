@@ -7,14 +7,14 @@
 }
 <div style="padding-bottom:20px">
     <div style="padding-bottom:20px;display: flex">
-        <label style="padding: 5px 46px 0 0"> Select Column</label>
+        <label style="padding: 5px 46px 0 0;font-weight: bold"> Select Column</label>
         <span style="height:fit-content">
             <ejs-dropdownlist id="fieldDropDown" width="120px" change="onFieldChange" placeholder="Eg: OrderID">
             </ejs-dropdownlist>            
         </span>
     </div>
         <div style="display: flex;">
-        <label style="padding: 5px 28px 0 0"> Select Filter Type</label>
+        <label style="padding: 5px 28px 0 0;font-weight: bold"> Select Filter Type</label>
         <span style="height:fit-content">
             <ejs-dropdownlist id="typeDropDown" width="120px" dataSource=filterTypeData  enabled="false" change="onTypeChange" placeholder="Eg: Excel">
             </ejs-dropdownlist>            

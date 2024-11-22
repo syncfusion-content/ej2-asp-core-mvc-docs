@@ -64,7 +64,7 @@ The following example demonstrates, how to perform an initial filter with multip
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering](../images/filtering/initial-filter-same-column.png)
+![Filtering](../images/filtering/initial-filter-same-column.png) 
 
 ### Initial filter with multiple values for different columns 
 
