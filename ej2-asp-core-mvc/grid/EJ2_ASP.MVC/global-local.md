@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Global Local in ##Platform_Name## Grid Component
+title: Global Local in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Global Local in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Global Local
@@ -12,7 +12,7 @@ documentation: ug
 
 ## Localization
 
-The [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/) library allows you to localize default text content of the Grid. The grid component has static text on some features (like group drop area text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [Locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html?&_ga=2.266005519.1841876099.1644811631-1223836246.1561029397#Syncfusion_EJ2_Grids_Grid_Locale) value and translation object.
+The [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization) library allows you to localize default text content of the Grid. The grid component has static text on some features (like group drop area text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [Locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html?&_ga=2.266005519.1841876099.1644811631-1223836246.1561029397#Syncfusion_EJ2_Grids_Grid_Locale) value and translation object.
 
 The following list of properties and its values are used in the grid.
 
@@ -146,7 +146,7 @@ The following example demonstrates the Grid in **Deutsch** culture.
 
 ## Internationalization
 
-The [`Internationalization`](../../common/intl.html) library is used to globalize number, date, and time values in grid component using format strings in the Format.
+The [Internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) library is used to globalize number, date, and time values in grid component using format strings in the Format.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -207,5 +207,5 @@ RTL provides an option to switch the text direction and layout of the Grid compo
 
 ## See Also
 
-* [Internationalization](../../common/intl.html)
-* [Localization](../../common/localization/)
+* [Internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization)
+* [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization)
