@@ -34,7 +34,7 @@ Here's an example that demonstrates how to use the custom aggregate feature in t
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple aggregates for a column](../../images/aggregates/custom-aggergate.png)
+![Multiple aggregates for a column](../images/aggregates/custom-aggergate.png)
 
 > To access the custom aggregate value inside template, use the key as **Custom**
 
@@ -53,6 +53,6 @@ Here's an example that demonstrates how to show the count of distinct values for
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple aggregates for a column](../../images/aggregates/custom-distinct.png)
+![Multiple aggregates for a column](../images/aggregates/custom-distinct.png)
 
 > To display the aggregate value of the current column in another column, you can use the `columnName` property. If the `columnName` property is not defined, the field name value will be assigned to the `columnName` property.

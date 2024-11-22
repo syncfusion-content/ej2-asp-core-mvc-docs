@@ -30,7 +30,7 @@ Here's an example that demonstrates how to use group footer aggregates in the Sy
 {% endhighlight %}
 {% endtabs %}
 
-![Group footer aggregates](../../images/aggregates/group-footer-aggregates.png)
+![Group footer aggregates](../images/aggregates/group-footer-aggregates.png)
 
 > * Use the template reference variable name as **groupFooterTemplate** to specify the group footer template and as **groupCaptionTemplate** to specify the group caption template.
 > * The aggregate values must be accessed inside the template using their corresponding [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.AggregateType.html) name.
@@ -50,7 +50,7 @@ Here's an example that demonstrates how to use group and caption aggregates in t
 {% endhighlight %}
 {% endtabs %}
 
-![Group caption aggregates](../../images/aggregates/group-caption-aggregates.png)
+![Group caption aggregates](../images/aggregates/group-caption-aggregates.png)
 
 > The group total summary in Syncfusion Grid is calculated based on the current page records for each group by default.
 > If you require aggregates for all the data in the grid, you can enable the [disablePageWiseAggregates](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_DisablePageWiseAggregates) property.
@@ -68,4 +68,4 @@ In some cases, you may want to disable the page-wise aggregates for grouping in 
 {% endhighlight %}
 {% endtabs %}
 
-![Disable page wise aggregates for grouping](../../images/aggregates/group-disable-page.gif)
+![Disable page wise aggregates for grouping](../images/aggregates/group-disable-page.gif)

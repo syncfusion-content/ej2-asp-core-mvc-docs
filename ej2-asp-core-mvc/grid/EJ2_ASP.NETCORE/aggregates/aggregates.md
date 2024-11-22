@@ -31,7 +31,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 {% endhighlight %}
 {% endtabs %}
 
-![Aggregates](../../images/aggregates/aggregates.png)
+![Aggregates](../images/aggregates/aggregates.png)
 
 > * When using local data, the total summary is calculated based on the entire dataset available in the grid. The aggregate values will reflect calculations across all the rows in the grid.
 
@@ -62,4 +62,4 @@ Here is an example that demonstrates how to use built-in aggregates types in the
 {% endhighlight %}
 {% endtabs %}
 
-![Built-in aggregate types](../../images/aggregates/aggregate-types.png)
+![Built-in aggregate types](../images/aggregates/aggregate-types.png)
