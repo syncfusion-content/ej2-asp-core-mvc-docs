@@ -3,7 +3,7 @@
     filterColumns.Add(new { field = "ShipCity", matchCase = false, @operator = "startswith", predicate = "and", value = "Reims" });
     filterColumns.Add(new { field = "ShipName", matchCase = false, @operator = "startswith", predicate = "and", value = "Vins et alcools Chevalier" });
 }
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).Height("273px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).Height("273px").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();

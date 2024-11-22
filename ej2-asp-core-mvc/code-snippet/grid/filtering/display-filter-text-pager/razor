@@ -2,7 +2,6 @@
    <label style="margin-right:5px;font-weight: bold;">Show filter bar status </label>
    @Html.EJS().Switch("switch").Checked(true).Change("onChange").Render()
 </div>
-
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("273px").Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -10,7 +9,6 @@
   col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
   col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
 }).AllowPaging().Render()
-
 <script>
   function onChange(args)  {
     var grid = document.getElementById("grid").ej2_instances[0];

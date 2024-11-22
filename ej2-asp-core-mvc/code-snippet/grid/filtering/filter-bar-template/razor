@@ -16,7 +16,7 @@
     col.Field("ShipCountry").HeaderText("Ship Country").FilterBarTemplate(templateOptionsMultiSelect).Width("170").Add();
 }).Render()
 <script>
-    var dropdown;
+    var dropDown;
     var numericElement;
     var dateElement;
     var comboElement;
@@ -25,19 +25,19 @@
     var shipCountryDistinctData = ej.data.DataUtil.distinct(@Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource)), 'ShipCountry', true);
     var data = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
     function dropDownCreate() {
-        dropdown = document.createElement('select');
-        dropdown.id = 'CustomerID';
+        dropDown = document.createElement('select');
+        dropDown.id = 'CustomerID';
         var option = document.createElement('option');
         option.value = 'All';
         option.innerText = 'All';
-        dropdown.appendChild(option);
+        dropDown.appendChild(option);
         data.forEach((item) => {
             var option = document.createElement('option');
             option.value = item.CustomerID;
             option.innerText = item.CustomerID;
-            dropdown.appendChild(option);
+            dropDown.appendChild(option);
         });
-        return dropdown;
+        return dropDown;
     }
     function stringWrite () {
         var dropdownlist = new ej.dropdowns.DropDownList({
@@ -50,7 +50,7 @@
                 }
             }
         });
-        dropdownlist.appendTo(dropdown);
+        dropdownlist.appendTo(dropDown);
     }
    function numericCreate(){
         numericElement = document.createElement('input');

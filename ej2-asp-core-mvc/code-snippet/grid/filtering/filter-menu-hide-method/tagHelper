@@ -11,18 +11,16 @@
         <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
-document.getElementById('performFilter').onclick = function () {
-    var grid = document.getElementById("grid").ej2_instances[0];
-    grid.filterByColumn('CustomerID', 'startswith', 'V');
-};
-document.getElementById('clearFilter').onclick = function () {
-    var grid = document.getElementById("grid").ej2_instances[0];
-    grid.clearFiltering();
-};
+    document.getElementById('performFilter').onclick = function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.filterByColumn('CustomerID', 'startswith', 'V');
+    };
+    document.getElementById('clearFilter').onclick = function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.clearFiltering();
+    };
 </script>
-
 <style>
     .filter-button {
         margin-right: 10px; 

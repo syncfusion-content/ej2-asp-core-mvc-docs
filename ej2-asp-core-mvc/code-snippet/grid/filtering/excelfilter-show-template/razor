@@ -2,7 +2,6 @@
 @{
     var filter = new
     {
-
         type = "CheckBox",
         itemTemplate = "#filterItemTemplate"
     };

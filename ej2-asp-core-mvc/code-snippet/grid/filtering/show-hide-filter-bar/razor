@@ -2,7 +2,6 @@
   <label style="margin-right:5px;font-weight: bold;">Show filter bar operator </label>
   @Html.EJS().Switch("switch").Change("onChange").Render()
 </div>
-
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().AllowPaging().Height("205px").Columns(col =>
 {
 col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
