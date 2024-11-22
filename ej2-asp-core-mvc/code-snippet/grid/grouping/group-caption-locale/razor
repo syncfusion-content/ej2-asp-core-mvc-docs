@@ -1,0 +1,20 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowGrouping().Height("350px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
+}).Render()
+<script>
+   ej.base.L10n.load({
+      ar: {
+         grid: {
+            GroupDropArea: 'اسحب رأس العمود هنا لتجميع العمود',
+            Item: 'بند',
+            Items: 'العناصر',
+            GroupCaption: ' هي خلية تسمية توضيحية جماعية',
+         },
+      },
+   });
+   ej.base.setCulture('ar');
+</script>

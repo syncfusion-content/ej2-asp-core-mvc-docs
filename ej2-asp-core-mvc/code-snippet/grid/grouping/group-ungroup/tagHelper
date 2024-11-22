@@ -1,0 +1,41 @@
+@{
+    ViewBag.dropdownData = new List<object>
+    {
+        new { value = "OrderID", text = "Order ID" },
+        new { value = "CustomerID", text = "Customer ID" },
+        new { value = "ShipCity", text = "Ship City" },
+        new { value = "ShipName", text = "Ship Name" },
+    };
+}
+<div style="padding-bottom:20px">
+    <div style="display: flex">
+        <label style="padding: 5px 28px 0 0"> Column name :</label>
+        <span style="height:fit-content">
+            <ejs-dropdownlist id="dropdownColumn" index="1" dataSource="@ViewBag.dropdownData">
+                <e-dropdownlist-fields value="value" text="text"></e-dropdownlist-fields>
+            </ejs-dropdownlist>            
+        </span>
+    </div>
+    <div style="margin-top: 15px">
+        <ejs-button id="group" cssClass="e-primary" content="Group column"></ejs-button>
+        <ejs-button id="ungroup" cssClass="e-primary" content="UnGroupColumn"></ejs-button>
+    </div>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('group').onclick = function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.groupColumn(document.getElementById("dropdownColumn").ej2_instances[0].value);
+    }
+    document.getElementById('ungroup').onclick = function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.ungroupColumn(document.getElementById("dropdownColumn").ej2_instances[0].value);
+    }
+</script>
