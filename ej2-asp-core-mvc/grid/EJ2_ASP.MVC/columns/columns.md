@@ -43,7 +43,7 @@ Here is an example of how to specify column types in a grid using the types ment
 
 1. Use the **boolean** column type when you want to bind boolean values from your DataSource and/or edit boolean property values from your type.
 2. Use the **checkbox** column type when you want to enable selection/deselection of the whole row.
-3. When the grid column `Type` is a **checkbox**, the selection type of the grid `selectionSettings` will be multiple. This is the default behavior.
+3. When the grid column `Type` is a **checkbox**, the selection type of the grid `SelectionSettings` will be multiple. This is the default behavior.
 4. If you have more than one column with the column type as a **checkbox**, the grid will automatically enable the other column's checkbox when selecting one column checkbox.
 
 > To learn more about how to render boolean values as checkboxes in a Syncfusion GridColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/columns/columns#render-boolean-value-as-checkbox) section.
@@ -238,10 +238,10 @@ Here is an example of using the `TextAlign` property to align the text of a Grid
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/lock/razor %}
+{% include code-snippet/grid/columns/alignment/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Lock.cs" %}
-{% include code-snippet/grid/columns/lock/lock.cs %}
+{% include code-snippet/grid/columns/alignment/alignment.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -486,55 +486,55 @@ The Syncfusion Grid for ASP.NET MVC provides powerful features for manipulating 
 
 To access columns in the Syncfusion Grid, you can use the following methods in the grid.
 
-* **`getColumns`**:
+* **`GetColumns`**:
 
 This method returns the array of columns defined in the grid.
 
 ```ts
-let columns = grid.getColumns();
+let Columns = Grid.GetColumns();
 ```
 
-* **`getColumnByField`**:
+* **`GetColumnByField`**:
 
 This method returns the column object that matches the specified field name.
 
 ```ts
-let column = grid.getColumnByField('ProductName');
+let Column = Grid.GetColumnByField('ProductName');
 ```
 
-* **`getColumnByUid`**:
+* **`GetColumnByUid`**:
 
 This method returns the column object that matches the specified UID.
 
 ```ts
-let column = grid.getColumnByUid();
+let Column = Grid.GetColumnByUid();
 ```
 
-* **`getVisibleColumns`**:
+* **`GetVisibleColumns`**:
 
 This method returns the array of visible columns.
 
 ```ts
-let visibleColumns = grid.getVisibleColumns();
+let VisibleColumns = Grid.GetVisibleColumns();
 ```
 
-* **`getForeignKeyColumns`**:
+* **`GetForeignKeyColumns`**:
 
 This method returns the array of foreignkey columns.
 
 ```ts
-let foreignKeyColumns = grid.getForeignKeyColumns();
+let ForeignKeyColumns = Grid.GetForeignKeyColumns();
 ```
 
-* **`etColumnFieldNames`**
+* **`GetColumnFieldNames`**
 
 This method returns an array of field names of all the columns in the Grid.
 
 ```ts
-let fieldNames = grid.getColumnFieldNames()
+let FieldNames = Grid.GetColumnFieldNames()
 ```
 
-> For a complete list of column methods and properties, refer to this [section](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html).
+> For a complete list of column methods and properties, refer to this [Section](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html).
 
 ### Updating column definitions
 
@@ -580,7 +580,7 @@ grid.RefreshColumns();
 
 ## Responsive columns
 
-The Syncfusion ASP.NET Grid Core provides a built-in feature to toggle the visibility of columns based on media queries using the `HideAtMedia` property of the column object. The `HideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The Syncfusion ASP.NET Grid MVC provides a built-in feature to toggle the visibility of columns based on media queries using the `HideAtMedia` property of the column object. The `HideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
 
 In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 
