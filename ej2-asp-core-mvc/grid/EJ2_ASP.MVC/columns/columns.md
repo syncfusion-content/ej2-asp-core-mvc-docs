@@ -135,7 +135,7 @@ P | Denotes percentage type | The percentage format expects the input value to b
 The following example code demonstrates the formatting of data for **Mark 1** and **Mark 2** using the **'N'** format, **Percentage of Marks** using the **'P'** format, and **Fees** using the **'C'** format.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/numberformat/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="NumberFormat.cs" %}
