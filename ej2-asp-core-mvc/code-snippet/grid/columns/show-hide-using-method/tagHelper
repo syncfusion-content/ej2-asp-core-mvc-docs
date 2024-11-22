@@ -10,19 +10,13 @@
         <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-<style>
-    .e-btn.e-info, .e-css.e-btn.e-info {
-        margin-right: 4px;
-        margin-bottom: 3px;
-    }
-</style>
 <script type="text/javascript">
     document.getElementById('show').addEventListener('click', function () {
         var grid = document.getElementById("Grid").ej2_instances[0];
-        grid.showColumns('Customer ID', 'headerText'); 
+        grid.showColumns('Customer ID', 'headerText'); //show by HeaderText
     });
     document.getElementById('hide').addEventListener('click', function () {
         var grid = document.getElementById("Grid").ej2_instances[0];
-        grid.hideColumns('Customer ID', 'headerText');
+        grid.hideColumns('Customer ID', 'headerText'); //hide by HeaderText
     });
 </script>

@@ -12,6 +12,8 @@ documentation: ug
 
 In Syncfusion ASP.NET Core Grid, Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
 
+## Column Types
+
 The Syncfusion Grid component allows you to specify the type of data that a column binds using the `columns.type` property. The `type` property is used to determine the appropriate `format`, such as [number](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#number-formatting) or [date](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#manipulating-datetime), for displaying the column data. 
 
 Grid supports the following column types:
@@ -144,6 +146,8 @@ The following example code demonstrates the formatting of data for **Mark 1** an
 {% endtabs %}
 
 ![Column Number Format](../../images/columns/Column-number-format.png)
+
+>To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#number-formatting) section.
 
 ### Date formatting
 
@@ -305,7 +309,7 @@ The `autoFitColumns` method resizes the column to fit the widest cell's content 
 
 ![Column AutoFit](../../images/columns/autofit.png)
 
-> You can AutoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
+> You can autoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
 ### AutoFit columns with empty space
 
@@ -328,7 +332,7 @@ You can enable this feature by setting the [autoFit](https://help.syncfusion.com
 
 ### AutoFit columns when changing column visibility using column chooser
 
-In Syncfusion Grid, you can auto-fit columns when the column visibility is changed using the column chooser. This can be achieved by calling the `AutoFitColumns` method in the [ActionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event. By using the **requestType** property in the event arguments, you can differentiate between different actions, and then call the `AutoFitColumns` method when the request type is **columnState**.
+In Syncfusion Grid, you can auto-fit columns when the column visibility is changed using the column chooser. This can be achieved by calling the `AutoFitColumns` method in the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event. By using the **requestType** property in the event arguments, you can differentiate between different actions, and then call the `AutoFitColumns` method when the request type is **columnState**.
 
 Here's an example code snippet in ASP.NET CORE that demonstrates how to AutoFit columns when changing column visibility using column chooser:
 
@@ -341,7 +345,7 @@ Here's an example code snippet in ASP.NET CORE that demonstrates how to AutoFit 
 {% endhighlight %}
 {% endtabs %}
 
-![Column AutoFit Empty Space](../../images/columns/Autofit-column-chooser.gif)
+![Column AutoFit Column Chooser](../../images/columns/Autofit-column-chooser.gif)
 
 ### AutoFit columns with specific rows
 
@@ -360,7 +364,7 @@ Here is an example of how to AutoFit columns with specific rows. The first param
 {% endhighlight %}
 {% endtabs %}
 
-![Column AutoFit Empty Space](../../images/columns/Autofit-Specific-columns.gif)
+![Column AutoFit Specific Row](../../images/columns/Autofit-Specific-columns.gif)
 
 ## Locked columns
 
@@ -409,13 +413,13 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ### Using methods
 
-You can also show or hide columns in the ASP.NET Core Grid using the `showColumns` and `hideColumns`(../../api/grid/#hidecolumns) methods of the grid control. These methods allow you to show or hide columns based on either the `headerText` or the `field` of the column.
+You can also show or hide columns in the ASP.NET Core Grid using the `showColumns` and `hideColumns` methods of the grid control. These methods allow you to show or hide columns based on either the `headerText` or the `field` of the column.
 
 **Based on header text**
 
 You can dynamically show or hide columns in the Grid based on the header text by invoking the `showColumns` or `hideColumns` methods. These methods take an array of column header texts as the first parameter, and the value `headerText` as the second parameter to specify that you are showing or hiding columns based on the header text.
 
-Here's an example of how to show or hide a column based on the HeaderText in the ASP.NET CORE Grid:
+Here's an example of how to show or hide a column based on the headerText in the ASP.NET CORE Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -437,10 +441,10 @@ Here's an example of how to show or hide a column based on the field in the ASP.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/show-hide-using-field/tagHelper %}
+{% include code-snippet/grid/columns/show-hide-field/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Show-Hide-Column.cs" %}
-{% include code-snippet/grid/columns/show-hide-using-field/show-hide-using-field.cs %}
+{% include code-snippet/grid/columns/show-hide-field/show-hide-field.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -526,7 +530,7 @@ This method returns the array of foreignkey columns.
 let foreignKeyColumns = grid.getForeignKeyColumns();
 ```
 
-* **`etColumnFieldNames`**
+* **`getColumnFieldNames`**
 
 This method returns an array of field names of all the columns in the Grid.
 

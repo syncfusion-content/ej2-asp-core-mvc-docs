@@ -6,7 +6,7 @@
         col.Field("ShipCountry").HeaderText("Ship Country").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
     }).Height("315").Render();
 
-    <script id="dateTemplate" type="text/x-template">
+<script id="dateTemplate" type="text/x-template">
     ${formatDate(OrderDate)}
 </script>
 

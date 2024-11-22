@@ -1,8 +1,8 @@
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="auto"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" type='number' format='C2' width="100"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" type='date' format="yMd" width="30%"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="100"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="30%"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>

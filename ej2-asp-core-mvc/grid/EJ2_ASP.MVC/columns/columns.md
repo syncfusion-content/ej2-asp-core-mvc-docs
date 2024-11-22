@@ -12,7 +12,9 @@ documentation: ug
 
 In Syncfusion ASP.NET MVC Grid, Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
 
-The Syncfusion Grid component allows you to specify the type of data that a column binds using the `Type` property. The `Type` property is used to determine the appropriate `Format`, such as `number` or `date`, for displaying the column data. 
+## Column Types
+
+The Syncfusion Grid component allows you to specify the type of data that a column binds using the `Column.Type` property. The `Type` property is used to determine the appropriate `Format`, such as `number` or `date`, for displaying the column data. 
 
 Grid supports the following column types:
 
@@ -144,6 +146,8 @@ The following example code demonstrates the formatting of data for **Mark 1** an
 {% endtabs %}
 
 ![Column Number Format](../../images/columns/Column-number-format.png)
+
+>To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#number-formatting) section.
 
 ### Date formatting
 
@@ -341,7 +345,7 @@ Here's an example code snippet in ASP.NET MVC that demonstrates how to AutoFit c
 {% endhighlight %}
 {% endtabs %}
 
-![Column AutoFit Empty Space](../../images/columns/Autofit-column-chooser.gif)
+![Column AutoFit Column Chooser](../../images/columns/Autofit-column-chooser.gif)
 
 ### AutoFit columns with specific rows
 
@@ -360,7 +364,7 @@ Here is an example of how to AutoFit columns with specific rows. The first param
 {% endhighlight %}
 {% endtabs %}
 
-![Column AutoFit Empty Space](../../images/columns/Autofit-Specific-columns.gif)
+![Column AutoFit Specific Row](../../images/columns/Autofit-Specific-columns.gif)
 
 ## Locked columns
 
@@ -437,10 +441,10 @@ Here's an example of how to show or hide a column based on the field in the ASP.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/show-hide-using-field/razor %}
+{% include code-snippet/grid/columns/show-hide-field/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Show-Hide-Column.cs" %}
-{% include code-snippet/grid/columns/show-hide-using-field/show-hide-using-field.cs %}
+{% include code-snippet/grid/columns/show-hide-field/show-hide-field.cs %}
 {% endhighlight %}
 {% endtabs %}
 

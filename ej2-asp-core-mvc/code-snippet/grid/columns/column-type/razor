@@ -1,10 +1,10 @@
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
     {
         col.Type("checkbox").Width("90").Add();
-        col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("number").ValidationRules(new { required = "true" }).Add();
-        col.Field("CustomerID").HeaderText("Customer ID").Width("120").Type("string").ValidationRules(new { required = "true", minLength = 3 }).Add();
+        col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("number").Add();
+        col.Field("CustomerID").HeaderText("Customer ID").Width("120").Type("string").Add();
         col.Field("Freight").HeaderText("Freight").Width("90").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("number").Add();
         col.Field("OrderDate").HeaderText("Order Date").Width("120").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("date").Add();
-        col.Field("ShippedDate").HeaderText("Shipped Date").Width("200").Format("dd/MM/yyyy hh:mm").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("date").Add();
+        col.Field("ShippedDate").HeaderText("Shipped Date").Width("200").Format("dd/MM/yyyy hh:mm").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("dateTime").Add();
         col.Field("Verified").HeaderText("Verified").Width("100").Type("boolean").DisplayAsCheckBox(true).Add();
     }).Height("315").Render();
