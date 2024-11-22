@@ -1,0 +1,24 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" allowPaging="true" height="450px">
+    <e-grid-groupsettings showGroupedColumn="true" columns="@(new string[] { "ShipCountry"})"></e-grid-groupsettings>
+    <e-grid-pagesettings pageSize="4"></e-grid-pagesettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+</div>
+<script>
+    var oldGenerateQuery = ej.grids.Data.prototype.generateQuery;
+    ej.grids.Data.prototype.generateQuery = function () {
+        var query = oldGenerateQuery.call(this, true);
+        // Check if 'pageQuery' is available in the prototype chain
+        if (ej.grids.Data.prototype.hasOwnProperty('pageQuery')) {
+            var pageQueryFn = ej.grids.Data.prototype['pageQuery'];
+            pageQueryFn.call(this, query);
+        }
+        return query;
+    };
+</script>

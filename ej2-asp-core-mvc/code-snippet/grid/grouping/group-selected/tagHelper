@@ -1,0 +1,37 @@
+<div style="display:flex">
+    <input type="number" id="rowIndex" placeholder="Enter Grouped Row Index" />
+    <ejs-button id="valueButton" cssClass="e-primary" content="Collapse or Expand Row"></ejs-button>
+ </div>
+ <div style="padding-top:5px">
+     <p style="color:red;" id="message"></p>
+ </div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" >    
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120" allowGrouping="false"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID"  width="150" allowGrouping="false"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150" allowGrouping="false"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150" allowGrouping="false"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('valueButton').addEventListener('click', function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        const groupedRows = Array.from(
+            grid.getContentTable().querySelectorAll('.e-recordplusexpand, .e-recordpluscollapse')
+        );
+        let groupedRowIndex = parseInt(document.getElementById('rowIndex').value);
+        if (groupedRows.length >= 0 && (groupedRowIndex < groupedRows.length)) {
+            document.getElementById('message').innerText = '';
+            const groupCaptionElement = groupedRows[groupedRowIndex];
+            grid.groupModule.expandCollapseRows(groupCaptionElement);
+        } else {
+            document.getElementById('message').innerText =
+               'The entered index exceeds the total number of grouped rows. Please enter a valid grouped index.';
+        }
+    });
+</script>
+<style>
+    #rowIndex {
+        margin-right: 10px;
+    }
+</style>
