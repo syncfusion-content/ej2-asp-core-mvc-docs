@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual Scroll in Syncfusion ASP.NET MVC Grid Component
+title: Virtual Scroll in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Virtual Scroll in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtual Scroll
@@ -8,80 +8,105 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Virtual scrolling in ASP.NET MVC Grid component
 
-# Virtualization in ASP.NET MVC Grid Component
+The virtual scrolling feature in the Grid allows you to efficiently handle and display a large amount of data without experiencing any performance degradation. It optimizes the rendering process by loading only the visible rows in the Grid viewport, rather than rendering the entire dataset at once. This is particularly useful when dealing with datasets that contain thousands of records.
 
-Grid allows you to load large amount of data without performance degradation.
+## Row virtualization
 
-## Row Virtualization
+Row virtualization is a feature in the Syncfusion Grid that allows you to load and render rows only in the content viewport. It provides an alternative way of paging where data is loaded dynamically while scrolling vertically, rather than loading all the data at once. This is particularly useful when dealing with large datasets, as it improves the performance and reduces the initial load time.
 
-Row virtualization allows you to load and render rows only in the content viewport. It is an alternative way of paging in which the data will be loaded while scrolling vertically. To setup the row virtualization, you need to define [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_EnableVirtualization_System_Boolean_) as true and content height by [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_Height_System_Double_) property.
+To set up row virtualization, you need to define the [EnableVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableVirtualization) property as **true** and specify the content height using the [Height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property in the Grid configuration.
 
-The number of records displayed in the Grid is determined implicitly by height of the content area. Also, you have an option to define a visible number of records by the [`PageSettings.PageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettingsBuilder.html) property. The loaded data will be cached and reused when it is needed for next time.
+The number of records displayed in the Grid is implicitly determined by the height of the content area. Additionally, you have an option to explicitly define the visible number of records using the [PageSettings.PageSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize) property. The loaded data will be cached and reused when needed in the future.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/virtual-grid/row-virtualization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Row-virtualization.cs" %}
-{% include code-snippet/grid/virtual-grid/row-virtualization/row-virtualization.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/virtual-grid/row-virtualization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Row-virtualization.cs" %}
-{% include code-snippet/grid/virtual-grid/row-virtualization/row-virtualization.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-## Column Virtualization
-
-Column virtualization allows you to virtualize columns. It will render columns which are in the viewport. You can scroll horizontally to view more columns.
-
-To setup the column virtualization, set the [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_EnableVirtualization_System_Boolean_) and [`EnableColumnVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_EnableColumnVirtualization_System_Boolean_) properties as `true`.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The following example enable row virtualization using `EnableVirtualization` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/virtual-grid/column-virtualization/tagHelper %}
+{% include code-snippet/grid/scrolling/row-virtualization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Column-virtualization.cs" %}
-{% include code-snippet/grid/virtual-grid/column-virtualization/Column-virtualization.cs %}
+{% highlight c# tabtitle="row-virtualization.cs" %}
+{% include code-snippet/grid/scrolling/row-virtualization/row-virtualization.cs%}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Row virtualization](../images/scrolling/scrolling-row-virtual-scroll.gif)
+
+### Limitations 
+
+* Row virtual scrolling is not compatible with the following feature
+	1. Batch editing
+	2. Detail template
+	3. Row template
+	4. Rowspan
+	5. Autofill
+	6. Hierarchy grid
+    7. Page
+* AutoFill support for Batch mode editing, so this feature is not compatible with Row Virtualization feature. 
+* When row virtual scrolling is activated, compatibility for copy-paste and drag-and-drop operations is limited to the data items visible in the current viewport of the grid.
+* The cell-based selection is not supported for row virtual scrolling. 
+* Using different row heights with a template column, when the template height differs for each row, is not supported.
+* Group expand and collapse state will not be persisted for remote data.
+* Due to the element height limitation in browsers, the maximum number of records loaded by the Grid is limited by the browser capability.
+* The height of the grid content is calculated using the row height and total number of records in the data source and hence features which changes row height such as text wrapping are not supported.
+* If you want to increase the row height to accommodate the content then you can specify the row height as below to ensure all the table rows are in same height.
+
+    ```css
+    .e-grid .e-row {
+        height: 2em;
+    }
+    ```
+* Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with paging](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/grouping/grouping#group-with-paging) topic. 
+* It is necessary to set a static height for the component or its parent container when using row virtualization. The 100% height will work only if the component height is set to 100%, and its parent container has a static height.
+
+## Column virtualization
+
+Column virtualization feature in the Syncfusion Grid that allows you to optimize the rendering of columns by displaying only the columns that are currently within the viewport. It allows horizontal scrolling to view additional columns. This feature is particularly useful when dealing with grids that have a large number of columns, as it helps to improve the performance and reduce the initial loading time.
+
+To enable column virtualization, you need to set the [EnableColumnVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableColumnVirtualization) property of the Grid to **true**. This configuration instructs the Grid to only render the columns that are currently visible in the viewport. 
+
+The following example enable column virtualization using `enableColumnVirtualization`  property.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/virtual-grid/column-virtualization/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/scrolling/column-virtualization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Column-virtualization.cs" %}
-{% include code-snippet/grid/virtual-grid/column-virtualization/Column-virtualization.cs %}
+{% highlight c# tabtitle="column-virtualization.cs" %}
+{% include code-snippet/grid/scrolling/column-virtualization/column-virtualization.cs%}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Column virtualization](../images/scrolling/scrolling-column-virtual-scroll.gif)
 
+> Column's [Width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
 
-N> Column's [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Width) is required for column virtualization. If column's width is not defined then Grid will consider its value as `200px`.
+### Limitations 
 
-## Virtualization with Grouping
+* While using column virtual scrolling, column width should be in pixel. Percentage values are not accepted.
+* Selected column details are only retained within the viewport. When the next set of columns is loaded, the selection for previously visible columns is lost.
+* The cell selection is not supported for column virtual scrolling
+* The following features are compatible with column virtualization and work within the viewport:
+   1. Column resizing
+   2. Column reordering
+   3. Column chooser
+   4. Auto-fit
+   5. Print
+   6. Clipboard
+   7. Column menu - Column chooser, AutofitAll
 
-Both the row and column virtualization can be used along with grouping. At initial rendering, the virtual height of scrollbar will be set based on the total number of records and after grouping, it will be refreshed based on the grouped state(expand/collapse). While collapse the group caption row in current viewport then the next view page grouped records are shown.
-
-N> The collapsed/expanded state will persist only for local dataSource while scrolling.
+* Column virtual scrolling is not compatible with the following feature
+    1. Grouping
+    2. Colspan
+    3. Batch editing
+    4. Column with infinite scrolling
+    6. Stacked header
+    7. Row template
+    8. Detail template
+    9. Hierarchy grid
+    10. Autofill
+    11. Column chooser
+    12. Page
 
 ## Limitations for virtual scrolling
 
@@ -91,7 +116,7 @@ N> The collapsed/expanded state will persist only for local dataSource while scr
 * While using column virtualization, fixed position applied only viewport column. If scroll the next set of column fixed position is removed.
 * Virtual scrolling is not compatible with batch editing, detail template, rowspan, colspan, autofill and hierarchy features.
 * Group expand and collapse state will not be persisted.
-* Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [`Group with Page`](./grouping##Group-with-paging) topic.
+* Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with Page](./grouping/#group-with-paging) topic.
 * The page size provided must be two times larger than the number of visible rows in the grid. If the page size is failed to meet this condition then the size will be determined by grid.
 * The height of the grid content is calculated using the row height and total number of records in the data source and hence features which changes row height such as text wrapping are not supported. If you want to increase the row height to accommodate the content then you can specify the row height as below to ensure all the table rows are in same height.
 
@@ -100,7 +125,7 @@ N> The collapsed/expanded state will persist only for local dataSource while scr
     height: 2em;
 }
 ```
-* Programmatic selection using the `selectRows` method is not supported in virtual scrolling.
+* Programmatic selection using the **selectRows** method is not supported in virtual scrolling.
 
 ## Browser height limitation in virtual scrolling and solution
 
@@ -114,11 +139,11 @@ This height limitation is not related to the Grid component. It fully depends on
 
 The following image illustrates the height limitation issue of a normal HTML table in different browsers (Chrome and Firefox).
 
-![Browser height limitation in HTML table](images/html-table.gif)
+![Browser height limitation in HTML table](../images/html-table.gif)
 
 Grid component also faced the same issue as mentioned in the below image.
 
-![Grid with browser height limitation](images/grid.gif)
+![Grid with browser height limitation](../images/grid.gif)
 
 The Grid has an option to overcome this limitation of the browser in the following ways.
 
@@ -152,28 +177,23 @@ export class CustomUrlAdaptor extends UrlAdaptor {
         return original;
     }
 }
-
-this.dataManager = new DataManager({
-    adaptor: new CustomUrlAdaptor(),
-    url: "Home/UrlDatasource"
-});
 ```
 
 2.Render the grid by define the following features.
 
 ```csharp
-<GridComponent id='grid' ref={g => this.grid = g} dataSource={this.dataManager} enableVirtualization={true} pageSettings={this.pageSettings} height={360} beforeDataBound={this.beforeDataBound}>
-        <ColumnsDirective>
-            …………..
-            …………..
-        </ColumnsDirective>
-</GridComponent>
+@Html.EJS().Grid("grid").DataSource(dataManger => { dataManger.Url("Home/UrlDatasource").Adaptor("CustomUrlAdaptor"); }).EnableVirtualization().Height("360").Columns(col =>
+{
+    …………..
+    …………..
+}).PageSettings(page => { page.PageSize(50); }).BeforeDataBound("beforeDataBound").Render()
+
 ```                
 
 3.In the beforeDataBound event, we set the args.count as 0.5 million to perform scrolling with 0.5 million records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 0.5 million means it will directly assigned the original segmented count instead of 0.5 million.
 
 ```csharp
-    beforeDataBound(args) {
+  function beforeDataBound(args) {
         // storing the total records count which means 2 million records count
         totalRecords = args.count; 
 
@@ -185,39 +205,37 @@ this.dataManager = new DataManager({
 4.Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the grid component.
 
 ```csharp
-<div className="pagearea1">
-    <ButtonComponent cssClass='e-info prevbtn' onClick={this.prevBtnClick} style="width:100%" >Load Previous Set...</ButtonComponent>
-</div>
+    <div className="pagearea1">
+        @Html.EJS().Button("button").CssClass("e-info prevbtn").Content("Load Previous Set...").Render()
+    </div>
 
-<GridComponent id='grid' ref={g => this.grid = g} dataSource={this.dataManager} enableVirtualization={true} pageSettings={this.pageSettings} height={360} beforeDataBound={this.beforeDataBound} >
-    <ColumnsDirective>
+    @Html.EJS().Grid("grid").DataSource(dataManger => { dataManger.Url("Home/UrlDatasource").Adaptor("CustomUrlAdaptor"); }).EnableVirtualization().Height("360").Columns(col =>
+    {
         …………..
         …………..
-    </ColumnsDirective>
-</GridComponent>
-<div className="pagearea2">
-    <ButtonComponent cssClass='e-info nxtbtn' onClick={this.nxtBtnClick} style="width:100%" >Load Next Set...</ButtonComponent>
-</div>
+    }).PageSettings(page => { page.PageSize(50); }).BeforeDataBound("beforeDataBound").Render();
+
+    <div className="pagearea2">
+    @Html.EJS().Button("button").CssClass("e-info nxtbtn").Content("Load Next Set...").Render()
+    </div>
 ```
 
 5.While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2 millions records after doing some simple calculation.
 
 ```typescript
     // Triggered when clicking the Previous/ Next button.
-    prevNxtBtnClick(args) {
-        if (this.grid.element.querySelector('.e-content') && this.grid.element.querySelector('.e-content').getAttribute('aria-busy') === 'false') {
+    document.getElementById('button').onclick = (): void => {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (grid.element.querySelector('.e-content') && grid.element.querySelector('.e-content').getAttribute('aria-busy') === 'false') {
             // Increase/decrease the pageSet based on the target element.
             pageSet = args.target.classList.contains('prevbtn') ? --pageSet : ++pageSet;
-            this.rerenderGrid(); // Re-render the Grid component.
+            rerenderGrid(); // Re-render the Grid component.
         }
-    }
+    };
+ 
  ``` 
 
- You can find the full code sample from the below GitHub location.
-
-Also, you can view the hosted link for this sample [here](https://github.com/SyncfusionExamples/react-grid-load-millions-of-records/).
-
-![Prevent browser height limitation](images/external-button.png)
+![Prevent browser height limitation](../images/external-button.png)
 
 
 N> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
@@ -228,7 +246,7 @@ You can reduce the [row height](https://ej2.syncfusion.com/aspnetmvc/documentati
 
 In the following image, you can see how many records will be scrollable when setting rowHeight to "36px" and "30px".
 
-![Row Height](images/row-height.gif)
+![Row Height](../images/row-height.gif)
 
 ### Solution 3: Using paging instead of virtual scrolling
 
