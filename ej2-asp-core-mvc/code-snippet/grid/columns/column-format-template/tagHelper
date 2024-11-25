@@ -1,0 +1,22 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="315">
+<e-grid-columns>
+<e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+<e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="90"></e-grid-column>
+<e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" width="120" template="#dateTemplate"></e-grid-column>
+<e-grid-column field="ShipCountry" headerText="Ship Country" textAlign="Right" width="150"></e-grid-column>
+</e-grid-columns>
+</ejs-grid>
+
+<script type="text/x-template" id="dateTemplate">
+    ${formatDate(OrderDate)}
+</script>
+
+<script>
+    function formatDate(date) {
+        let orderDate = new Date(date);
+        let day = orderDate.getDate();
+        let month = orderDate.toLocaleDateString('default', { month: 'short' });
+        let year = orderDate.getFullYear();
+        return `${day}/${month}/${year}`;
+    }
+</script>

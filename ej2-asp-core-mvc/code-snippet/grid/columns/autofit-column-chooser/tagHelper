@@ -1,0 +1,18 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource"  height="315" showColumnChooser="true" toolbar="@(new List<string>() { "ColumnChooser"})">
+    <e-grid-columns>
+               <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+       <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+       <e-grid-column field="ShipName" headerText="Ship Name" width="80"></e-grid-column>
+       <e-grid-column field="ShipAddress" headerText="Ship Address" width="120"></e-grid-column>
+       <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var grid = document.getElementById('Grid').ej2_instances[0];
+    grid.actionComplete = function (args) {
+        if (args.requestType === 'columnstate') {
+            grid.autoFitColumns(); 
+        }
+    };
+</script>
