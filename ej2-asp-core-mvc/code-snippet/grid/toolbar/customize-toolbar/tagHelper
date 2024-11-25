@@ -1,0 +1,15 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" toolbar="@(new List<string>() {"Print","Search"})" height="348px"> 
+   <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+   <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="ShipCity" width="120"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<style>
+.e-grid .e-toolbar .e-tbar-btn .e-icons,
+.e-grid .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn {
+    background: #add8e6;   
+}
+</style>

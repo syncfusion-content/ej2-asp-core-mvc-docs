@@ -1,6 +1,5 @@
 
 @{
-
     List<object> toolbarItems = new List<object>();
     toolbarItems.Add(new { text = "Expand All", tooltipText = "Expand All", prefixIcon = "e-expand", id = "expandall" });
     toolbarItems.Add(new { text = "Collapse All", tooltipText = "Collapse All", prefixIcon = "e-collapse", id = "collapseall", align = "Right" });
