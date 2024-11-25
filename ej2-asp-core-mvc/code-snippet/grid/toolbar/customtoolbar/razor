@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.Navigations;
 
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ToolbarTemplate("#template").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ToolbarTemplate("#template").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
@@ -34,5 +34,5 @@ function clickHandler(args){
       // expand all collapsed grouped row
         grid.groupModule.expandAll();
     }
-  };
+  }; 
 </script>
