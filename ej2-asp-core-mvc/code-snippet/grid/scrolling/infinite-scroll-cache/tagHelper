@@ -1,20 +1,17 @@
-<label style="padding: 10px 10px;font-weight:bold">Enable/Disable Cache mode</label>
-@Html.EJS().Switch("switch").Change("toggleCacheMode").Render()
-
-<div style='padding: 0px 0px 20px 0px'>
-    <ejs-grid id="Grid" dataSource="@ViewBag.datasource" enableInfiniteScrolling="true" height="300" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
-        <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
-        <e-grid-pageSettings pageSize=50></e-grid-pageSettings>
-        <e-grid-columns>
-            <e-grid-column field="TaskID" headerText="Task ID" textAlign="Right" width="120"></e-grid-column>
-            <e-grid-column field="Engineer" headerText="Engineer" width="150"></e-grid-column>
-            <e-grid-column field="Designation" headerText="Designation" width="120"></e-grid-column>
-            <e-grid-column field="Estimation" headerText="Estimation" textAlign="Right" width="150"></e-grid-column>
-            <e-grid-column field="Status" headerText="Status" width="150"></e-grid-column>
-        </e-grid-columns>
-    </ejs-grid>
+<div style="padding-bottom: 20px; display: flex">
+    <label style="margin: -2px 5px 0px 0px;font-weight: bold;">Enable/Disable Cache mode</label>
+    <ejs-switch id="switch" change="toggleCacheMode"></ejs-switch>
 </div>
-
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" enableInfiniteScrolling="true" height="300">
+    <e-grid-pageSettings pageSize=50></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="TaskID" headerText="Task ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Engineer" headerText="Engineer" width="150"></e-grid-column>
+        <e-grid-column field="Designation" headerText="Designation" width="120"></e-grid-column>
+        <e-grid-column field="Estimation" headerText="Estimation" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="Status" headerText="Status" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
 <script>
     function toggleCacheMode(args) {
         var grid = document.getElementById("Grid").ej2_instances[0];

@@ -1,9 +1,8 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).EnableVirtualization().Height("300").Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableVirtualization().Height("300").Columns(col =>
 {
-col.Field("TaskID").HeaderText("Task ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-col.Field("Engineer").HeaderText("Engineer").Width("150").Add();
-col.Field("Designation").HeaderText("Designation").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-col.Field("Estimation").HeaderText("Estimation").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-col.Field("Status").HeaderText("Status").Width("170").Add();
-}).PageSettings(page => { page.PageSize(50);}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
-   
+    col.Field("TaskID").HeaderText("Task ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Engineer").HeaderText("Engineer").Width("150").Add();
+    col.Field("Designation").HeaderText("Designation").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Estimation").HeaderText("Estimation").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Status").HeaderText("Status").Width("170").Add();
+}).PageSettings(page => { page.PageSize(50); }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()

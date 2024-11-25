@@ -19,24 +19,22 @@
        new { text = "4999", value = "4999" }
    };
 }
-
 <div style="display: flex; align-items: center; padding: 10px 0;">
     <label style="padding-right: 10px;font-weight:bold">Select row index:</label>
     <ejs-dropdownlist id="dropdown" index="0" width='220' dataSource="@ViewBag.dropdownData" change="valueChange"></ejs-dropdownlist>
 </div>
 <div style='padding: 0px 0px 20px 0px'>
-    <ejs-grid id="Grid" dataSource="@ViewBag.datasource" height="315" rowSelected='rowSelected'>
+    <ejs-grid id="Grid" dataSource="@ViewBag.dataSource" height="315" width="550px" rowSelected='rowSelected'>
         <e-grid-columns>
             <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
             <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
-            <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
             <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
-            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
             <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
         </e-grid-columns>
     </ejs-grid>
 </div>
-
 <script>
     function valueChange(args) {
         var grid = document.getElementById("Grid").ej2_instances[0];

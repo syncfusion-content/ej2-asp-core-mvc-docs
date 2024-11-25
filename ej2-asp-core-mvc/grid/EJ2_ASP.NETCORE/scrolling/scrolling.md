@@ -28,7 +28,7 @@ In the following example, the scrollbar is enabled, and the grid's `height` is s
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/width-height/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Width-height.cs" %}
+{% highlight c# tabtitle="width-height.cs" %}
 {% include code-snippet/grid/scrolling/width-height/width-height.cs%}
 {% endhighlight %}
 {% endtabs %}
@@ -47,7 +47,7 @@ In the following example, the parent container has explicit height and width set
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/responsive-parent/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Responsive-parent.cs" %}
+{% highlight c# tabtitle="responsive-parent.cs" %}
 {% include code-snippet/grid/scrolling/responsive-parent/responsive-parent.cs%}
 {% endhighlight %}
 {% endtabs %}
@@ -64,10 +64,12 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/sticky-header/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Sticky-header.cs" %}
+{% highlight c# tabtitle="sticky-header.cs" %}
 {% include code-snippet/grid/scrolling/sticky-header/sticky-header.cs%}
 {% endhighlight %}
 {% endtabs %}
+
+![sticky header](../../images/scrolling/sticky-header.gif)
 
 ## Scroll to selected row
 
@@ -79,10 +81,12 @@ The following example that demonstrates how to use the `rowSelected` event to sc
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/scroll-selected-row/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Scroll-selected-row.cs" %}
+{% highlight c# tabtitle="scroll-selected-row.cs" %}
 {% include code-snippet/grid/scrolling/scroll-selected-row/scroll-selected-row.cs%}
 {% endhighlight %}
 {% endtabs %}
+
+![scroll to selected row](../../images/scrolling/scrolling-select-scroll.gif)
 
 ## Hide the empty placehoder of scrollbar
 

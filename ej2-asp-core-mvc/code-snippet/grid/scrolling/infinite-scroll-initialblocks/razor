@@ -1,66 +1,34 @@
+@{
+    ViewBag.dropDownData = new List<object> {
+       new { text = "1", value = "1" },
+       new { text = "2", value = "2" },
+       new { text = "3", value = "3" },
+       new { text = "4", value = "4" },
+       new { text = "5", value = "5" },
+       new { text = "6", value = "6" },
+       new { text = "7", value = "7" },
+       new { text = "8", value = "8" },
+   };
 
-    @Html.EJS().Grid("InfiniteGrid").DataBound("hide").EnableInfiniteScrolling().InfiniteScrollSettings(settings => { settings.InitialBlocks(5);  }).Height("500").Columns(col =>
-   {
-
-       col.Field("Field1").HeaderText("PlayerName").Width("140").Add();
-       col.Field("Field2").HeaderText("Year").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-       col.Field("Field3").HeaderText("Stint").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-       col.Field("Field4").HeaderText("TMID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-       col.Field("Field5").HeaderText("LGID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   }).Render()
-
-    <script>
-        var infiniteData = [], date1=null, date2=null, flag= true;
-        var names = ['hardire', 'abramjo01', 'aubucch01', 'Hook', 'Rumpelstiltskin', 'Belle', 'Emma', 'Regina', 'Aurora', 'Elsa',
-            'Anna', 'Snow White', 'Prince Charming', 'Cora', 'Zelena', 'August', 'Mulan', 'Graham', 'Discord', 'Will', 'Robin Hood',
-            'Jiminy Cricket', 'Henry', 'Neal', 'Red', 'Aaran', 'Aaren', 'Aarez', 'Aarman', 'Aaron', 'Aaron-James', 'Aarron', 'Aaryan', 'Aaryn',
-            'Aayan', 'Aazaan', 'Abaan', 'Abbas', 'Abdallah', 'Abdalroof', 'Abdihakim', 'Abdirahman', 'Abdisalam', 'Abdul', 'Abdul-Aziz',
-            'Abdulbasir', 'Abdulkadir', 'Abdulkarem', 'Abdulkhader', 'Abdullah', 'Abdul-Majeed', 'Abdulmalik', 'Abdul-Rehman', 'Abdur',
-            'Abdurraheem', 'Abdur-Rahman', 'Abdur-Rehmaan', 'Abel', 'Abhinav', 'Abhisumant', 'Abid', 'Abir', 'Abraham', 'Abu', 'Abubakar',
-            'Ace', 'Adain', 'Adam', 'Adam-James', 'Addison', 'Addisson', 'Adegbola', 'Adegbolahan', 'Aden', 'Adenn', 'Adie', 'Adil', 'Aditya',
-            'Adnan', 'Adrian', 'Adrien', 'Aedan', 'Aedin', 'Aedyn', 'Aeron', 'Afonso', 'Ahmad', 'Ahmed', 'Ahmed-Aziz', 'Ahoua', 'Ahtasham',
-            'Aiadan', 'Aidan', 'Aiden', 'Aiden-Jack', 'Aiden-Vee'];
-
-
-        document.getElementById("generate").addEventListener('click', () => {
-
-            var grid = document.getElementById("InfiniteGrid").ej2_instances[0]
-            if (!infiniteData.length) {
-                show();
-                dataSource();
-                date1 = new Date().getTime();
-                grid.dataSource = infiniteData;
-            } else {
-                flag = true;
-                show();
-                date1 = new Date().getTime();
-                grid.refresh();
-            }
-
-        })
-        function show() {
-            document.getElementById('popup').style.display = 'inline-block';
-        }
-        function hide(args) {
-
-
-            if (flag && date1) {
-                var date2 = new Date().getTime();
-                document.getElementById('performanceTime').innerHTML = 'Time Taken: ' + (date2 - date1) + 'ms';
-                flag = false;
-            }
-            document.getElementById('popup').style.display = 'none';
-        }
-        function dataSource() {
-            for (var i= 0; i < 100000; i++) {
-                infiniteData.push({
-                    'Field1': names[Math.floor(Math.random() * names.length)],
-                    'Field2': 1967 + (i % 10),
-                    'Field3': Math.floor(Math.random() * 200),
-                    'Field4': Math.floor(Math.random() * 100),
-                    'Field5': Math.floor(Math.random() * 2000),
-                });
-            }
-        }
-
-    </script>
+}
+<div style="display: flex">
+    <label style="padding: 10px 10px 26px 0;font-weight:bold"> Select initialBlocks count:  </label>
+    <span style="height:fit-content">
+        @Html.EJS().DropDownList("dropDown").DataSource(@ViewBag.dropDownData).Width("120px").Index(2).Change("valueChange").Render()
+    </span>
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableInfiniteScrolling().Height("300").Columns(col =>
+{
+    col.Field("TaskID").HeaderText("Task ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Engineer").HeaderText("Engineer").Width("150").Add();
+    col.Field("Designation").HeaderText("Designation").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Estimation").HeaderText("Estimation").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Status").HeaderText("Status").Width("170").Add();
+}).PageSettings(page => { page.PageSize(50); }).Render()
+<script>
+    function valueChange(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.infiniteScrollSettings.initialBlocks = parseInt(args.value, 10);
+        grid.refresh()
+    }
+</script>

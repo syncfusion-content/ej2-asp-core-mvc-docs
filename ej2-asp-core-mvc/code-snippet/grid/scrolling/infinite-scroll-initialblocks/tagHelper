@@ -1,5 +1,5 @@
 @{
-    ViewBag.dropdownData = new List<object> {
+    ViewBag.dropDownData = new List<object> {
        new { text = "1", value = "1" },
        new { text = "2", value = "2" },
        new { text = "3", value = "3" },
@@ -11,16 +11,13 @@
    };
 
 }
-
 <div style="display: flex">
-    <label style="padding: 10px 10px 26px 0;font-weight:bold"> Select initialBlocks count:  </label>
+    <label style="padding: 5px 10px 26px 0;font-weight:bold"> Select initialBlocks count:</label>
     <span style="height:fit-content">
-        <ejs-dropdownlist id="dropdown" index="2" dataSource="@ViewBag.dropdownData" change="valueChange"></ejs-dropdownlist>
+        <ejs-dropdownlist id="dropdown" index="2" dataSource="@ViewBag.dropDownData" change="valueChange"></ejs-dropdownlist>
     </span>
 </div>
-
-<ejs-grid id="Grid" dataSource="@ViewBag.datasource" enableInfiniteScrolling="true" height="300" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
-    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" enableInfiniteScrolling="true" height="300">
     <e-grid-pageSettings pageSize=50></e-grid-pageSettings>
     <e-grid-columns>
         <e-grid-column field="TaskID" headerText="Task ID" textAlign="Right" width="120"></e-grid-column>
@@ -34,7 +31,7 @@
     function valueChange(args) {
         var grid = document.getElementById("Grid").ej2_instances[0];
         grid.infiniteScrollSettings.initialBlocks = parseInt(args.value, 10);
-              grid.refresh()
+        grid.refresh()
     }
 
 </script>

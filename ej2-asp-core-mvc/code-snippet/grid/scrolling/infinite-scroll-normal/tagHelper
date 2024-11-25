@@ -1,5 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.datasource" enableInfiniteScrolling="true" height="300" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
-    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" enableInfiniteScrolling="true" height="300" >
     <e-grid-pageSettings pageSize=50></e-grid-pageSettings>
     <e-grid-columns>
         <e-grid-column field="TaskID" headerText="Task ID" textAlign="Right" width="120"></e-grid-column>

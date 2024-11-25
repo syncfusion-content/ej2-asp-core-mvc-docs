@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Infinite scrolling in ASP.NET Core Grid component
 
 The infinite scrolling feature in the Grid is a powerful tool for seamlessly handling extensive data sets without compromising grid performance. It operates on a “load-on-demand” concept, ensuring that data is fetched only when needed. In the default infinite scrolling mode, a new block of data is loaded each time the scrollbar reaches the end of the vertical scroller. This approach significantly enhances the user experience when working with large data collections in the ASP.NET Core Grid.
@@ -31,7 +30,7 @@ The following an example that demonstrates how to enable infinite scroll in the 
 {% endhighlight %}
 {% endtabs %}
 
-![Infinite scrolling](../../images/scrolling/infinite-scroll.gif)
+![Infinite scrolling](../../images/scrolling/scrolling-infinite-scroll.gif)
 
 ## Number of blocks rendered during initial loading
 
@@ -45,10 +44,12 @@ The following an example of how you can use the `initialBlocks` property to set 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/infinite-scroll-initialblocks/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Infinite-scroll-initialblocks.cs" %}
+{% highlight c# tabtitle="infinite-scroll-initialblocks.cs" %}
 {% include code-snippet/grid/scrolling/infinite-scroll-initialblocks/infinite-scroll-initialblocks.cs%}
 {% endhighlight %}
 {% endtabs %}
+
+![blocks rendered](../../images/scrolling/scrolling-initial-block.gif)
 
 ## Efficient data caching and DOM management in grid cache mode
 
@@ -64,7 +65,7 @@ The following example that demonstrates how to enable/disable cache mode in infi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/infinite-scroll-cache/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Infinite-scroll-cache.cs" %}
+{% highlight c# tabtitle="infinite-scroll-cache.cs" %}
 {% include code-snippet/grid/scrolling/infinite-scroll-cache/infinite-scroll-cache.cs%}
 {% endhighlight %}
 {% endtabs %}

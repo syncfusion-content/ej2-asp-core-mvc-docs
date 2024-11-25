@@ -13,8 +13,6 @@ documentation: ug
 
 The virtual scrolling feature in the Grid allows you to efficiently handle and display a large amount of data without experiencing any performance degradation. It optimizes the rendering process by loading only the visible rows in the Grid viewport, rather than rendering the entire dataset at once. This is particularly useful when dealing with datasets that contain thousands of records.
 
-To enable virtualization in the Grid, you need to inject the **VirtualScrollService**. This service is responsible for managing the virtual scrolling behavior and optimizing the rendering of data to enhance performance.
-
 ## Row virtualization
 
 Row virtualization is a feature in the Syncfusion Grid that allows you to load and render rows only in the content viewport. It provides an alternative way of paging where data is loaded dynamically while scrolling vertically, rather than loading all the data at once. This is particularly useful when dealing with large datasets, as it improves the performance and reduces the initial load time.
@@ -29,12 +27,12 @@ The following example enable row virtualization using `enableVirtualization` pro
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/row-virtualization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Row-virtualization.cs" %}
+{% highlight c# tabtitle="row-virtualization.cs" %}
 {% include code-snippet/grid/scrolling/row-virtualization/row-virtualization.cs%}
 {% endhighlight %}
 {% endtabs %}
 
-![Row virtualization](../../images/scrolling/scrolling-virtual.gif)
+![Row virtualization](../../images/scrolling/scrolling-row-virtual-scroll.gif)
 
 ### Limitations 
 
@@ -75,12 +73,12 @@ The following example enable column virtualization using `enableColumnVirtualiza
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/column-virtualization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Column-virtualization.cs" %}
+{% highlight c# tabtitle="column-virtualization.cs" %}
 {% include code-snippet/grid/scrolling/column-virtualization/column-virtualization.cs%}
 {% endhighlight %}
 {% endtabs %}
 
-![Column virtualization](../../images/scrolling/)
+![Column virtualization](../../images/scrolling/scrolling-column-virtual-scroll.gif)
 
 > Column's [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
 
