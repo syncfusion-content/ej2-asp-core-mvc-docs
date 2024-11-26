@@ -1,0 +1,43 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="315" locale="es-AR">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120" ></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" width="150" format="C2"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" width="150" format="yyyy-MMM-dd"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="ShipCity" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    loadCultureFiles('es-AR');
+    function loadCultureFiles(name) {
+        var files = ['ca-gregorian.json', 'numberingSystems.json', 'currencies.json', 'timeZoneNames.json'];
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var val, fetch;
+            if (files[prop] === 'numberingSystems.json') {
+                fetch = new ej.base.Fetch(location.origin + '/../cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                fetch = new ej.base.Fetch(location.origin + '/../cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+       fetch.onSuccess = function (response) {
+                if (typeof response === 'object') {
+                    // If the response is an object, convert it to a JSON string
+                    var jsonString = JSON.stringify(response);
+                    ej.base.loadCldr(JSON.parse(jsonString));
+                } else if (typeof response === 'string') {
+                    // If the response is already a JSON string, parse and load it
+                    ej.base.loadCldr(JSON.parse(response));
+
+                } else {
+                    console.error('Invalid responsetype received:', response);
+                }
+                ej.base.setCulture('es-AR');
+                ej.base.setCurrencyCode('ARS');
+            };
+            fetch.send();
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+</script>
