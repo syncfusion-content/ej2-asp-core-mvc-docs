@@ -252,7 +252,7 @@ The following example demonstrates the function that collapses the selected row 
 
 ![Expand or collapse selected grouped row](../../images/grouping/grouping-selected-grouped-row.png)
 
-## Clear grouping 
+## Clear grouping
 
 The clear grouping feature in the Syncfusion ASP.NET Core Grid allows you to removing all the grouped columns from the grid. This feature provides a convenient way to clear the grouping of columns in your application.
 
