@@ -5,6 +5,6 @@
     col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
 
-}).AllowPaging().PageSettings(page => { page.PageCount(5); }).AllowGrouping().GroupSettings(new Syncfusion.EJ2.Grids.GridGroupSettings() { Columns = new string[] { "ShipCountry" } }).Aggregates(agg=> { agg.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>
+}).AllowPaging().PageSettings(page => { page.PageCount(5); }).AllowGrouping().GroupSettings(new Syncfusion.EJ2.Grids.GridGroupSettings() { Columns = new string[] { "ShipCountry" } }).Aggregates(gridAggregation => { gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>
    () { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Format = "C2", Type = "Sum", GroupFooterTemplate = "Sum: ${Sum}" } }).Add();
-   agg.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Format = "C2", Type = "Average", GroupCaptionTemplate = "Average: ${Average}" } }).Add(); }).Render()
+   gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Format = "C2", Type = "Average", GroupCaptionTemplate = "Average: ${Average}" } }).Add(); }).Render()
