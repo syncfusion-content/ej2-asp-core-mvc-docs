@@ -15,7 +15,7 @@
 </ejs-grid>
 <script>
     function customAggregateFunction(data) {
-        let distinct = ej.data.DataUtil.distinct(this.dataSource, "ShipCountry", true);
-        return distinct.length;
+        let uniqueShipCountries = ej.data.DataUtil.distinct(this.dataSource, "ShipCountry", true);
+        return uniqueShipCountries.length;
     }
 </script>
