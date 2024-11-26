@@ -3,7 +3,7 @@
     <e-grid-groupsettings captionTemplate="#captiontemplate"></e-grid-groupsettings>  
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="ID" textAlign="Right" width="100"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Name"  width="100"></e-grid-column>       
+        <e-grid-column field="CustomerID" headerText="Name" width="100"></e-grid-column>       
         <e-grid-column field="ShipCity" headerText="City" width="100"></e-grid-column>
         <e-grid-column field="Freight" headerText="Value" width="100"></e-grid-column>        
     </e-grid-columns>
