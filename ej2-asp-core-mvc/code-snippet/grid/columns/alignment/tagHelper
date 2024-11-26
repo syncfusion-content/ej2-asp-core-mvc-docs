@@ -1,8 +1,30 @@
+@{
+    var alignmentOptions = new List<object> {
+        new { text = "Left", value = "Left" },
+        new { text = "Right", value = "Right" },
+        new { text = "Center", value = "Center" },
+        new { text = "Justify", value = "Justify" }
+    };
+}
+<script>
+    function changeAlignment(args) {
+        let grid = document.getElementById("Grid").ej2_instances[0];
+        grid.columns.forEach(function (col) {
+            col.textAlign = args.value; 
+        });
+        grid.refreshColumns(); 
+    }
+</script>
+<div>
+    <ejs-dropdownlist id="alignmentDropdown" width="100px" dataSource="@alignmentOptions" index="0" change="changeAlignment">
+        <e-dropdownlist-fields text="text" value="value"></e-dropdownlist-fields>
+    </ejs-dropdownlist>
+</div>
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" headerTextAlign="Right" width="100"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" textAlign="Left" headerTextAlign="Left" width="120"></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City" textAlign="Center" headerTextAlign="Center" width="100"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Justify" headerTextAlign="Justify" width="100" format='C2'></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" type="number" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="90"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" type="date" textAlign="Center" format="yMd" width="140"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" type="string" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
