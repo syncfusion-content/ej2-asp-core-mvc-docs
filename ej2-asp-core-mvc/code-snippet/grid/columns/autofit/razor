@@ -1,15 +1,14 @@
-@Html.EJS().Grid("AutoFit").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+@Html.EJS().Grid("AutoFit").DataSource((IEnumerable<object>)ViewBag.dataSource).GridLines(Syncfusion.EJ2.Grids.GridLine.Both).Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
-    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-    col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Format("C2").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-
-}).AllowPaging().DataBound("dataBound").Render()
+    col.Field("OrderID").HeaderText("Order ID").Width("140").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("80").Add();
+    col.Field("ShipAddress").HeaderText("Ship Address).Width("120").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
+}).DataBound("dataBound").Render()
 
 <script>
     function dataBound(args) {
-        this.autoFitColumns(['OrderDate', 'ShipCountry']);
+        this.autoFitColumns(['ShipName', 'ShipAddress']);
     }
 </script>
