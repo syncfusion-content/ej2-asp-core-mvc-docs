@@ -36,7 +36,7 @@ When using the lazy load grouping feature of the Grid, you can use the `UrlAdapt
 Property Name |Description
 -----|-----
 `IsLazyLoad` |Used to differentiate the default grouping and lazy load grouping
-`OnDemandGroupInfo` |Contains the details of expanded caption row grouping `level`, `skip`, `take` and `filter` query of the child records
+`OnDemandGroupInfo` |Contains the details of expanded caption row grouping `Level`, `Skip`, `Take` and `Filter` query of the child records
 
 In the server-side, you can bind these details with the `IsLazyLoad` and `OnDemandGroupInfo` parameters in the `DataManagerRequest` model. Please refer to the below screenshots.
 
