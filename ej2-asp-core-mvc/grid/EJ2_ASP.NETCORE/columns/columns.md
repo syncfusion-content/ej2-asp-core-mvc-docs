@@ -599,6 +599,7 @@ In this example, we have a Grid that displays data with three columns: **Order I
 
 ![Column Responsive](../images/columns/responsive-coulmn.png)
 
+
 ## See Also
 
 * [Group Column by Format](../grouping#group-by-format)
