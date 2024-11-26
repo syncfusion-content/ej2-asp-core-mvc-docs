@@ -9,12 +9,12 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-    let initial = true;
+    let isFirstDataBound = true;
    function dataBound() {
-        if (initial === true) {
+        if (isFirstDataBound === true) {
             var grid = document.getElementById("grid").ej2_instances[0];
             grid.groupModule.collapseAll();
-            initial = false;
+            isFirstDataBound = false;
         }
     }
 </script>

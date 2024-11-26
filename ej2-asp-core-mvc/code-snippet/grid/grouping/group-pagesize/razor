@@ -12,8 +12,8 @@
         var query = oldGenerateQuery.call(this, true);
         // Check if 'pageQuery' is available in the prototype chain
         if (ej.grids.Data.prototype.hasOwnProperty('pageQuery')) {
-            var pageQueryFn = ej.grids.Data.prototype['pageQuery'];
-            pageQueryFn.call(this, query);
+            var pageQueryFunction = ej.grids.Data.prototype['pageQuery'];
+            pageQueryFunction.call(this, query);
         }
         return query;
     };

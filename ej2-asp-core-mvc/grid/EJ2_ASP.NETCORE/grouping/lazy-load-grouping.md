@@ -47,38 +47,38 @@ In the server-side, you can bind these details with the `isLazyLoad` and `onDema
 The following code example describes lazy load grouping being handled on the server-side along with other grid actions.
 
 ```typescript
-public IActionResult UrlDatasource([FromBody] DataManagerRequest dm)
+public IActionResult UrlDataSource([FromBody] DataManagerRequest dataRequest)
 {
     IEnumerable groupedData = null;
-    IEnumerable<Customers> DataSource = customers;
+    IEnumerable<Customers> dataSource = customers;
     DataOperations operation = new DataOperations();
 
-    if (dm.Search != null && dm.Search.Count > 0)
+    if (dataRequest.Search != null && dataRequest.Search.Count > 0)
     {
-        DataSource = operation.PerformSearching(DataSource, dm.Search);  //Search
+        dataSource = operation.PerformSearching(dataSource, dataRequest.Search);  //Search
     }
-    if (dm.Where != null && dm.Where.Count > 0) //Filtering
+    if (dataRequest.Where != null && dataRequest.Where.Count > 0) //Filtering
     {
-        DataSource = operation.PerformFiltering(DataSource, dm.Where, dm.Where[0].Operator);
+        dataSource = operation.PerformFiltering(dataSource, dataRequest.Where, dataRequest.Where[0].Operator);
     }
-    int count = DataSource.Cast<Customers>().Count();
-    if (dm.IsLazyLoad == false && dm.Sorted != null && dm.Sorted.Count > 0) //Sorting for grouping
+    int count = dataSource.Cast<Customers>().Count();
+    if (dataRequest.IsLazyLoad == false && dataRequest.Sorted != null && dataRequest.Sorted.Count > 0) //Sorting for grouping
     {
-        DataSource = operation.PerformSorting(DataSource, dm.Sorted);
+        dataSource = operation.PerformSorting(dataSource, dataRequest.Sorted);
     }   
-    if (dm.IsLazyLoad == false && dm.Skip != 0)
+    if (dataRequest.IsLazyLoad == false && dataRequest.Skip != 0)
     {
-        DataSource = operation.PerformSkip(DataSource, dm.Skip); // Paging
+        dataSource = operation.PerformSkip(dataSource, dataRequest.Skip); // Paging
     }
-    if (dm.IsLazyLoad == false && dm.Take != 0)
+    if (dataRequest.IsLazyLoad == false && dataRequest.Take != 0)
     {
-        DataSource = operation.PerformTake(DataSource, dm.Take);
+        dataSource = operation.PerformTake(dataSource, dataRequest.Take);
     }
-    if (dm.IsLazyLoad)
+    if (dataRequest.IsLazyLoad)
     {
-        groupedData = operation.PerformGrouping<Customers>(DataSource, dm); // Lazy load grouping
-        groupedData = operation.PerformSorting(groupedData, dm); // Sorting with Lazy load grouping
-        if (dm.OnDemandGroupInfo != null && dm.Group.Count() == dm.OnDemandGroupInfo.Level)
+        groupedData = operation.PerformGrouping<Customers>(dataSource, dataRequest); // Lazy load grouping
+        groupedData = operation.PerformSorting(groupedData, dataRequest); // Sorting with Lazy load grouping
+        if (dataRequest.OnDemandGroupInfo != null && dataRequest.Group.Count() == dataRequest.OnDemandGroupInfo.Level)
         {
             count = groupedData.Cast<Customers>().Count();
         }
@@ -86,10 +86,10 @@ public IActionResult UrlDatasource([FromBody] DataManagerRequest dm)
         {
             count = groupedData.Cast<Group>().Count();
         }
-        groupedData = operation.PerformSkip(groupedData, dm.OnDemandGroupInfo == null ? dm.Skip : dm.OnDemandGroupInfo.Skip);
-        groupedData = operation.PerformTake(groupedData, dm.OnDemandGroupInfo == null ? dm.Take : dm.OnDemandGroupInfo.Take);
+        groupedData = operation.PerformSkip(groupedData, dataRequest.OnDemandGroupInfo == null ? dataRequest.Skip : dataRequest.OnDemandGroupInfo.Skip);
+        groupedData = operation.PerformTake(groupedData, dataRequest.OnDemandGroupInfo == null ? dataRequest.Take : dataRequest.OnDemandGroupInfo.Take);
     }
-return dm.RequiresCounts ? Json(new { result = groupedData == null ? DataSource : groupedData, count = count }) : Json(DataSource);
+return dataRequest.RequiresCounts ? Json(new { result = groupedData == null ? dataSource : groupedData, count = count }) : Json(dataSource);
 }
 
 ```
