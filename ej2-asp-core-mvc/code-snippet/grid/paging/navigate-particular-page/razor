@@ -13,9 +13,9 @@
 <script>
     document.getElementById('buttons').onclick = function () {
         var grid = document.getElementById("grid").ej2_instances[0];
-        var textbox=document.getElementById("inputButton").ej2_instances[0];
-        if(textbox.value){
-           grid.pagerModule.goToPage(parseInt(textbox.value, 10))
+        var textBox=document.getElementById("inputButton").ej2_instances[0];
+        if(textBox.value){
+           grid.pagerModule.goToPage(parseInt(textBox.value, 10))
         }
     }
 </script>
