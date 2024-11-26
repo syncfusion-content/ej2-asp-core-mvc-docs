@@ -1,0 +1,13 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+     col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("140").Add();
+    col.Field("Freight").HeaderText("Freight").Width("130").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
+}).Aggregates(gridAggregation => { gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { ColumnName = "ShipCountry", Type = "Custom", FooterTemplate = "Distinct Count: ${Custom}", CustomAggregate= "customAggregateFunction" } }).Add();}).Render()
+<script>
+    function customAggregateFunction(data) {
+        let distinct = ej.data.DataUtil.distinct(this.dataSource, "ShipCountry", true);
+        return distinct.length;
+    }
+</script>

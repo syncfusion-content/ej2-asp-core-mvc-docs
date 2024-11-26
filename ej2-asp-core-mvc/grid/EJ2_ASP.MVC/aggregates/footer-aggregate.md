@@ -8,91 +8,52 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Footer aggregate in ASP.Net MVC Grid component
 
-# Footer Aggregate in ASP.Net MVC Grid Component
-
-Footer aggregate value is calculated for all the rows, and it is displayed in the footer cells. Use the [`FooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_FooterTemplate) property to render the aggregate value in footer cells.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The Syncfusion ASP.Net MVC Grid component allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the `FooterTemplate` property to render the aggregate value in the footer cells.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/aggregate/footer-agg/tagHelper %}
+{% include code-snippet/grid/aggregate/footer-aggregate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Footer-agg.cs" %}
-{% include code-snippet/grid/aggregate/footer-agg/footer-agg.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/aggregate/footer-agg/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Footer-agg.cs" %}
-{% include code-snippet/grid/aggregate/footer-agg/footer-agg.cs %}
+{% highlight c# tabtitle="footer-aggregate.cs" %}
+{% include code-snippet/grid/aggregate/footer-aggregate/footer-aggregate.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Footer Aggregates](../../images/aggregates/footer-aggregate.png)
 
+> * Use the template reference variable name **FooterTemplate** to specify the footer template.
+> * Inside the template, access the aggregate values using their corresponding [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.AggregateType.html) name. For example, to access the sum aggregate value, use **data.sum**.
 
-N> The aggregate values must be accessed inside the template using their corresponding [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_Type) name.
+## Format the aggregate value
 
-## How to format aggregate value
-
-You can format the aggregate value result by using the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_Format) property of [`GridAggregate Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html).
-
-{% if page.publishingplatform == "aspnet-core" %}
+To format the aggregate value result in the Syncfusion ASP.Net MVC Grid component, you can use the `Format` property of the[AggregateColumn](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridAggregateColumns.html). The `Format` property allows you to specify a format string that determines how the aggregate value will be displayed.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/aggregate/format-agg/tagHelper %}
+{% include code-snippet/grid/aggregate/format-aggregate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Format-agg.cs" %}
-{% include code-snippet/grid/aggregate/format-agg/format-agg.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/aggregate/format-agg/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Format-agg.cs" %}
-{% include code-snippet/grid/aggregate/format-agg/format-agg.cs %}
+{% highlight c# tabtitle="format-aggregate.cs" %}
+{% include code-snippet/grid/aggregate/format-aggregate/format-aggregate.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Format the aggregate value](../../images/aggregates/format-aggergate.png)
 
 ## How to place aggregates on top of the Grid
 
 By default, the aggregated values are placed at the bottom of the footer section. It is possible to place the aggregated values at the top of the header. This is achieved by using the [DataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event, `getHeaderContent`, and `getFooterContent` methods of the Grid.
 
-In the following sample, the footer element is appended to the header element using the `getHeaderContent` and `getFooterContent` methods in the `DataBound` event.
-
-{% if page.publishingplatform == "aspnet-core" %}
+In the following, footer content is appended to the header content using the `DataBound` event of the Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/aggregate/top-aggregate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Aggregate.cs" %}
-{% include code-snippet/grid/aggregate/top-aggregate/top-aggregate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/top-aggregate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Aggregate.cs" %}
+{% highlight c# tabtitle="top-aggregate.cs" %}
 {% include code-snippet/grid/aggregate/top-aggregate/top-aggregate.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
+
+![Place aggregates on top of the Grid](../../images/aggregates/top-aggergate.png)
