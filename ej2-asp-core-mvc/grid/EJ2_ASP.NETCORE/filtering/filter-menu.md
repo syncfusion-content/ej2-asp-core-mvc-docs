@@ -60,7 +60,7 @@ Here is a sample code demonstrating how to render a dropdownlist component for t
 
 ## Show 24 hours time format in filter dialog
 
-The Syncfusion ASP.NET Core Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event with `requestType` as `filterafteropen` and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
+The Syncfusion ASP.NET Core Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event with `requestType` as `filterafteropen` and set the `timeFormat` of the `DateTimePicker` to **HH:mm**.
 
 Here is an example that demonstrates how to show 24 hours time format in filter dialog:
 
@@ -142,21 +142,6 @@ In the example provided below, the **OrderID** and **Freight** columns are numer
 {% endtabs %}
 
 ![Filter menu](../images/filtering/filter-menu-input-hide.png)
-
-### Prevent autofill option in autocomplete of menu filter
-
-By default, the [AutoComplete](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/getting-started) component in the filter menu dialog is set to automatically fill suggestions as you type. However, there might be scenarios where you want to prevent this autofill behavior to provide a more customized and controlled user experience.
-
-You can prevent autofill feature by setting the `autofill` parameter to **false** using the `params` property within the column definition of the `filter`. 
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/filtering/filter-menu-prevent-autofill/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="filtermenu.cs" %}
-{% include code-snippet/grid/filtering/filter-menu-prevent-autofill/filtermenu.cs %}
-{% endhighlight %}
-{% endtabs %}
 
 ## Hide default filter icons while perform filtering through method
 
