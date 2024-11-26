@@ -21,7 +21,7 @@ The Syncfusion ASP.Net MVC Grid component allows you to calculate and display ag
 {% endhighlight %}
 {% endtabs %}
 
-![Aggregates](../../images/aggregates/footer-aggregate.png)
+![Footer Aggregates](../../images/aggregates/footer-aggregate.png)
 
 > * Use the template reference variable name **FooterTemplate** to specify the footer template.
 > * Inside the template, access the aggregate values using their corresponding [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.AggregateType.html) name. For example, to access the sum aggregate value, use **data.sum**.

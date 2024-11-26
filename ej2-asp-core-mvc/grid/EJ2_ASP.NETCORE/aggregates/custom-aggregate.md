@@ -12,7 +12,7 @@ documentation: ug
 
 The custom aggregate feature in Syncfusion's ASP.Net Core Grid component allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
 
-* Set the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.AggregateType.html) property to **Custom** in the `e-aggregate -> e-column`.
+* Set the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.AggregateType.html) property to **Custom** in the [AggregateColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumns.html).
 
 * Provide your custom aggregate function in the `customAggregate` property.
 

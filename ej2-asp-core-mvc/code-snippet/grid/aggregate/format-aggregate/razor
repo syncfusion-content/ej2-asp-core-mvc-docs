@@ -4,5 +4,5 @@
     col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
     col.Field("Freight").HeaderText("Freight").Width("160").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
-}).Aggregates(agg=> { agg.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Format = "N0", Type = "Sum", FooterTemplate = "Sum: ${Sum}" } }).Add();
-    agg.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Format = "N0", Type = "Max", FooterTemplate = "Max: ${Max}" } }).Add(); }).Render()
+}).Aggregates(gridAggregation => { gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Format = "N0", Type = "Sum", FooterTemplate = "Sum: ${Sum}" } }).Add();
+    gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Format = "N0", Type = "Max", FooterTemplate = "Max: ${Max}" } }).Add(); }).Render()

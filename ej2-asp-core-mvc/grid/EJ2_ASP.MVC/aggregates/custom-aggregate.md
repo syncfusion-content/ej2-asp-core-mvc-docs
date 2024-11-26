@@ -12,7 +12,7 @@ documentation: ug
 
 The custom aggregate feature in Syncfusion's ASP.Net MVC Grid component allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
 
-* Set the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.AggregateType.html) property to **Custom** in the `e-aggregate -> e-column`.
+* Set the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.AggregateType.html) property to **Custom** in the [AggregateColumn](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridAggregateColumns.html).
 
 * Provide your custom aggregate function in the `CustomAggregate` property.
 
@@ -54,4 +54,4 @@ Here's an example that demonstrates how to show the count of distinct values for
 
 ![Multiple aggregates for a column](../../images/aggregates/custom-distinct.png)
 
-> To display the aggregate value of the current column in another column, you can use the `ColumnName` property. If the `ColumnName` property is not defined, the field name value will be assigned to the `ColumnName` property.
+> To display the aggregate value of the current column in another column, you can use the `ColumnName` property. If the `ColumnName` property is not defined, the field name value will be assigned to the `ColumnName` property. 

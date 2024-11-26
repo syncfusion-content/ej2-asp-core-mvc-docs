@@ -4,7 +4,7 @@
     col.Field("CustomerID").HeaderText("Customer Name").Width("140").Add();
     col.Field("Freight").HeaderText("Freight").Width("130").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
-}).Aggregates(agg=> { agg.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { ColumnName = "ShipCountry", Type = "Custom", FooterTemplate = "Brazil Count: ${Custom}", CustomAggregate= "customAggregateFn" } }).Add();}).Render()
+}).Aggregates(gridAggregation => { gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { ColumnName = "ShipCountry", Type = "Custom", FooterTemplate = "Brazil Count: ${Custom}", CustomAggregate= "customAggregateFn" } }).Add();}).Render()
 
 <script>
     function customAggregateFn(data, aggColumn) {
