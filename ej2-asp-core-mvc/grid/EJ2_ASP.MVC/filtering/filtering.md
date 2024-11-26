@@ -191,7 +191,7 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 
 The Syncfusion ASP.NET MVC Grid offers the flexibility to customize filtering behavior for different columns by enabling various types of filters such as **Menu**, **Excel**, **Checkbox**. This feature allows you to tailor the filtering experience to suit the specific needs of each column in your grid. For example, you might prefer a menu-based filter for a category column, an Excel-like filter for a date column, and a checkbox filter for a status column. 
 
-It can be achieved by adjusting the `column.filter.type` property based on your requirements.
+It can be achieved by adjusting the `Column.Filter.Type` property based on your requirements.
 
 Here's an example where the menu filter is enabled by default for all columns, but you can dynamically modify the filter types through a dropdown:
 
