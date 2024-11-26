@@ -21,7 +21,7 @@ The Syncfusion ASP.Net Core Grid component allows you to calculate and display a
 {% endhighlight %}
 {% endtabs %}
 
-![Aggregates](../images/aggregates/footer-aggregate.png)
+![Footer aggregate](../images/aggregates/footer-aggregate.png)
 
 > * Use the template reference variable name **footerTemplate** to specify the footer template.
 > * Inside the template, access the aggregate values using their corresponding [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.AggregateType.html) name. For example, to access the sum aggregate value, use **data.sum**.
