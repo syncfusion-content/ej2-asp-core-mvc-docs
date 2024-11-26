@@ -1,0 +1,50 @@
+@{
+    var filterTypeData = new[] {
+        new { value = "Menu", text = "Menu" },
+        new { value = "CheckBox", text = "CheckBox" },
+        new { value = "Excel", text = "Excel" }
+    };
+}
+<div style="padding-bottom:20px">
+    <div style="padding-bottom:20px;display: flex">
+        <label style="padding: 5px 46px 0 0;font-weight: bold"> Select Column</label>
+        <span style="height:fit-content">
+            <ejs-dropdownlist id="fieldDropDown" width="120px" change="onFieldChange" placeholder="Eg: OrderID">
+            </ejs-dropdownlist>            
+        </span>
+    </div>
+        <div style="display: flex;">
+        <label style="padding: 5px 28px 0 0;font-weight: bold"> Select Filter Type</label>
+        <span style="height:fit-content">
+            <ejs-dropdownlist id="typeDropDown" width="120px" dataSource=filterTypeData  enabled="false" change="onTypeChange" placeholder="Eg: Excel">
+            </ejs-dropdownlist>            
+        </span>
+    </div>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="320px" dataBound="dataBound"  >
+    <e-grid-filterSettings type='Menu' ></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>       
+        <e-grid-column field="OrderDate" headerText="OrderDate" format="yMd" textAlign="Right"  width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="Verified" headerText="Verified" displayAsCheckBox="true" textAlign="Right" width="120"></e-grid-column>       
+    </e-grid-columns>
+</ejs-grid>
+<script>
+  let column;
+  function dataBound() {
+    document.getElementById("fieldDropDown").ej2_instances[0].dataSource = document.getElementById("grid").ej2_instances[0].getColumnFieldNames();
+  }
+  function onFieldChange(args) {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    document.getElementById("typeDropDown").ej2_instances[0].enabled = true;
+    column = grid.getColumnByField(args.value);
+  }
+  function onTypeChange(args) {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    let columnFilterSettings = { type: args.value };
+    column.filter = columnFilterSettings;
+    grid.refreshColumns();
+  }
+</script>
