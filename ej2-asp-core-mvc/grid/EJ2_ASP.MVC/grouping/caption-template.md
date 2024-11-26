@@ -71,7 +71,6 @@ To render custom component in the group caption, you can utilize the [CaptionTem
 
 The following example demonstrates how to add a custom component to the group caption using the `CaptionTemplate` property. In the template, the [Chips](https://ej2.syncfusion.com/aspnetmvc/documentation/chips/getting-started) component is utilized, with the text content set as the group key.
 
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/grouping/group-caption-component/razor %}
