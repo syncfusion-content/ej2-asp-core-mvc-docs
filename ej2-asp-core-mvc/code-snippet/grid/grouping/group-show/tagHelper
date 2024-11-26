@@ -14,10 +14,6 @@
 <script>
    function onSwitchChange(args) {
       var grid = document.getElementById("grid").ej2_instances[0];
-      if (args.checked) {
-         grid.groupSettings.showGroupedColumn = true;
-      } else {
-         grid.groupSettings.showGroupedColumn = false;
-      }
+      grid.groupSettings.showGroupedColumn = args.checked;
    }
 </script>

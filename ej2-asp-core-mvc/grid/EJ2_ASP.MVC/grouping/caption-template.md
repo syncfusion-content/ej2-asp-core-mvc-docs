@@ -12,7 +12,7 @@ documentation: ug
 
 The caption template feature in the Syncfusion ASP.Net MVC Grid allows you to customize and enhance the appearance of group caption row. It provides a flexible way to display additional information about grouped data, such as counts or grouped value, and enables you to incorporate custom content like images, icons, or other HTML elements. This feature empowers you to create visually appealing and informative group captions in the grid component.
 
-To achieve this customization, you can utilize the [CaptionTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_CaptionTemplate) property. By accessing the `data` parameter, which represents the currently displayed group, you can incorporate its properties such as `field` (column's field name), `headerText` (column's header text), `key`(grouped value) and `count` (count of the grouped records) into the caption template.
+To achieve this customization, you can utilize the [CaptionTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_CaptionTemplate) property. By accessing the `data` parameter, which represents the currently displayed group, you can incorporate its properties such as `Field` (column's field name), `HeaderText` (column's header text), `Key`(grouped value) and `Count` (count of the grouped records) into the caption template.
 
 The following example demonstrates how to customize the group header caption in the Grid by utilizing  the `CaptionTemplate` property. It displays the **headerText**, **key** and **count** of the grouped columns.
 

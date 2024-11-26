@@ -5,7 +5,8 @@
  <div style="padding-top:5px">
      <p style="color:red;" id="message"></p>
  </div>
-<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true">    
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" height="330px">
+    <e-grid-groupsettings columns="@(new string[] {"CustomerID"})"></e-grid-groupsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120" allowGrouping="false"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="150" allowGrouping="false"></e-grid-column>       

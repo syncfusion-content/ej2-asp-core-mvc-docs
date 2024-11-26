@@ -13,7 +13,6 @@
 </script>
 <script type="text/javascript">
     function template(args) {
-        //you can add add customtext here.
         return args.key + " -" + args.count + " Records : " + args.headerText;
     }
 </script>
