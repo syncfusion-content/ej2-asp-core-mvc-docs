@@ -123,7 +123,7 @@ The pager with a page size dropdown in Syncfusion Grid allows you to dynamically
 
 To enable the page size Dropdown feature in the Syncfusion Grid, you need to set the [PageSettings.PageSizes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSizes) property to **true** in the grid configuration. This property configuration triggers the rendering of a dropdown list within the pager, allowing you to select the desired page size. The selected page size determines the number of records displayed on each page of the grid.
 
-The following example that demonstrates how to integrate the page size Dropdown feature by configuring the `pageSizes` property:
+The following example that demonstrates how to integrate the page size Dropdown feature by configuring the `PageSizes` property:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -136,7 +136,7 @@ The following example that demonstrates how to integrate the page size Dropdown 
 
 ![Pager with page size dropdown](images/page/pager-dropdown.png)
 
-> If the pageSizes property is set to a boolean value like 'true' or 'false,' the page size dropdown defaults to an array of strings containing options such as ['All', '5', '10', '15', '20'].
+> If the `pageSizes` property is set to a boolean value like 'true' or 'false,' the page size dropdown defaults to an array of strings containing options such as ['All', '5', '10', '15', '20'].
 
 ### Customize page size dropdown 
 
@@ -155,7 +155,7 @@ The following example demonstrate how to customize the default values of the pag
 
 ![Customize page size dropdown](images/page/customize-pager.png)
 
-> The pageSizes property can be configured with either an array of strings or a boolean value.
+> The `pageSizes` property can be configured with either an array of strings or a boolean value.
 
 ## How to navigate to particular page 
 
