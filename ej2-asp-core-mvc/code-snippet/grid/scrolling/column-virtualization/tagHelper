@@ -1,0 +1,36 @@
+<ejs-grid id="virtualGrid" dataSource="@ViewBag.dataSource" height="300" enableVirtualization="true" enableColumnVirtualization="true" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="SNo" headerText="S.No" width="140" isPrimaryKey="true"></e-grid-column>
+        <e-grid-column field="Field1" headerText="Player Name" width="120"></e-grid-column>
+        <e-grid-column field="Field2" headerText="Year" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field3" headerText="Stint" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field4" headerText="TMID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field5" headerText="LGID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field6" headerText="GP" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field7" headerText="GS" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field8" headerText="Minutes" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field9" headerText="Points" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field10" headerText="oRebounds" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Field11" headerText="dRebounds" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Field12" headerText="Rebounds" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field13" headerText="Assists" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field14" headerText="Steals" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field15" headerText="Blocks" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field16" headerText="Turnovers" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Field17" headerText="PF" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Field18" headerText="fgAttempted" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="Field19" headerText="fgMade" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field20" headerText="ftAttempted" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="Field21" headerText="ftMade" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field22" headerText="ThreeAttempted" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="Field23" headerText="ThreeMade" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Field24" headerText="PostGP" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field25" headerText="PostGS" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field26" headerText="PostMinutes" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Field27" headerText="PostPoints" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Field28" headerText="PostoRebounds" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Field29" headerText="PostdRebounds" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Field30" headerText="PostRebounds" textAlign="Right" width="130"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

@@ -1,0 +1,37 @@
+@{
+    ViewBag.dropDownData = new List<object> {
+       new { text = "1", value = "1" },
+       new { text = "2", value = "2" },
+       new { text = "3", value = "3" },
+       new { text = "4", value = "4" },
+       new { text = "5", value = "5" },
+       new { text = "6", value = "6" },
+       new { text = "7", value = "7" },
+       new { text = "8", value = "8" },
+   };
+
+}
+<div style="display: flex">
+    <label style="padding: 5px 10px 26px 0;font-weight:bold"> Select initialBlocks count:</label>
+    <span style="height:fit-content">
+        <ejs-dropdownlist id="dropDown" index="2" dataSource="@ViewBag.dropDownData" change="valueChange"></ejs-dropdownlist>
+    </span>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.datasource" enableInfiniteScrolling="true" height="300">
+    <e-grid-pageSettings pageSize=50></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="TaskID" headerText="Task ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Engineer" headerText="Engineer" width="150"></e-grid-column>
+        <e-grid-column field="Designation" headerText="Designation" width="120"></e-grid-column>
+        <e-grid-column field="Estimation" headerText="Estimation" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="Status" headerText="Status" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function valueChange(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.infiniteScrollSettings.initialBlocks = parseInt(args.value, 10);
+        grid.refresh()
+    }
+
+</script>
