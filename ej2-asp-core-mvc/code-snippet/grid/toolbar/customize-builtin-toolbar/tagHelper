@@ -35,4 +35,4 @@ function toolbarClick(args)
     else
      document.getElementById("message").innerText = '';
 }
-</script> 
+</script>
