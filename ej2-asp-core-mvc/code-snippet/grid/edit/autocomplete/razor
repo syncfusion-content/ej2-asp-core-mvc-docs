@@ -1,7 +1,7 @@
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Edit(new { create = "createCustomerIDFn", read = "readCustomerIDFn", destroy = "destroyCustomerIDFn", write = "writeCustomerIDFn" }).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Edit(new { create = "createCustomerIDHandler", read = "readCustomerIDHandler", destroy = "destroyCustomerIDHandler", write = "writeCustomerIDHandler" }).Add();
     col.Field("Freight").HeaderText("Freight").ValidationRules(new { required = true, min= 1, max= 1000 }).Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("OrderDate").HeaderText("Order Date").Format("yMd").Width("130").EditType("datepickeredit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
@@ -19,17 +19,17 @@
     var autoCompleteObj;
     var autoCompleteElement;
 
-    function createCustomerIDFn() {
+    function createCustomerIDHandler() {
         autoCompleteElement = document.createElement('input');
         return autoCompleteElement;
     }
-    function readCustomerIDFn() {
+    function readCustomerIDHandler() {
         return autoCompleteObj.value;
     }
-    function destroyCustomerIDFn() {
+    function destroyCustomerIDHandler() {
         autoCompleteObj.destroy();
     }
-    function writeCustomerIDFn(args) {
+    function writeCustomerIDHandler(args) {
         var rowData = args.rowData;
         autoCompleteObj = new ej.dropdowns.AutoComplete({
             allowCustom: true,

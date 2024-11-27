@@ -2,8 +2,8 @@
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Edit(new { create = "createShipCountryFn", read = "readShipCountryFn", destroy = "destroyShipCountryFn", write = "writeShipCountryFn" }).Width("150").Add();
-    col.Field("ShipState").HeaderText("Ship State").Edit(new { create = "createShipStateFn", read = "readShipStateFn", destroy = "destroyShipStateFn", write = "writeShipStateFn" }).Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Edit(new { create = "createShipCountryHandler", read = "readShipCountryHandler", destroy = "destroyShipCountryHandler", write = "writeShipCountryHandler" }).Width("150").Add();
+    col.Field("ShipState").HeaderText("Ship State").Edit(new { create = "createShipStateHandler", read = "readShipStateHandler", destroy = "destroyShipStateHandler", write = "writeShipStateHandler" }).Width("150").Add();
     col.Field("OrderDate").HeaderText("Order Date").Format("yMd").Width("150").EditType("datepickeredit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
@@ -26,24 +26,24 @@
     var shipStateElement;
     var shipStateObj;
 
-    function createShipCountryFn() {
+    function createShipCountryHandler() {
         shipCountryElement = document.createElement('input');
         return shipCountryElement;
     }
-    function readShipCountryFn() {
+    function readShipCountryHandler() {
         return shipCountryObj.text;
     }
-    function destroyShipCountryFn() {
+    function destroyShipCountryHandler() {
         shipCountryObj.destroy();
     }
-    function writeShipCountryFn(args) {
+    function writeShipCountryHandler() {
         shipCountryObj = new ej.dropdowns.DropDownList({
             dataSource: new ej.data.DataManager(country),
             fields: { value: 'countryId', text: 'countryName' },
             change: () => {
                 shipStateObj.enabled = true;
-                var tempQuery = new ej.data.Query().where('countryId', 'equal', shipCountryObj.value);
-                shipStateObj.query = tempQuery;
+                var filteredQuery = new ej.data.Query().where('countryId', 'equal', shipCountryObj.value);
+                shipStateObj.query = filteredQuery;
                 shipStateObj.text = '';
                 shipStateObj.dataBind();
             },
@@ -53,17 +53,17 @@
         shipCountryObj.appendTo(shipCountryElement);
     }
 
-    function createShipStateFn() {
+    function createShipStateHandler() {
         shipStateElement = document.createElement('input');
         return shipStateElement;
     }
-    function readShipStateFn() {
+    function readShipStateHandler() {
         return shipStateObj.text;
     }
-    function destroyShipStateFn() {
+    function destroyShipStateHandler() {
         shipStateObj.destroy();
     }
-    function writeShipStateFn(args) {
+    function writeShipStateHandler() {
         shipStateObj = new ej.dropdowns.DropDownList({
             dataSource: new ej.data.DataManager(state),
             fields: { value: 'stateId', text: 'stateName' },

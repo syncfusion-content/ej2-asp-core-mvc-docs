@@ -4,7 +4,7 @@
     col.Field("CustomerID").HeaderText("Customer Name").Width("120").Add();
     col.Field("Freight").HeaderText("Freight").ValidationRules(new { required = "true", min = 1, max = 1000 }).Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("OrderDate").HeaderText("Order Date").Width("130").EditType("datepickeredit").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Edit(new { create = "createShipCityFn", read = "readShipCityFn", destroy = "destroyShipCityFn", write = "writeShipCityFn" }).Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Edit(new { create = "createShipCityHandler", read = "readShipCityHandler", destroy = "destroyShipCityHandler", write = "writeShipCityHandler" }).Width("150").Add();
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 <script>
@@ -33,17 +33,17 @@
         { value: 'Charleroi', text: 'Charleroi' }
     ];
 
-    function createShipCityFn() {
+    function createShipCityHandler() {
         multiSelectElement = document.createElement('input');
         return multiSelectElement;
     }
-    function readShipCityFn() {
+    function readShipCityHandler() {
         return multiSelectObj.value;
     }
-    function destroyShipCityFn() {
+    function destroyShipCityHandler() {
         multiSelectObj.destroy();
     }
-    function writeShipCityFn() {
+    function writeShipCityHandler() {
         multiSelectObj = new ej.dropdowns.MultiSelect({
             dataSource: multiSelectDatasource,
             value: orderData.ShipCity,

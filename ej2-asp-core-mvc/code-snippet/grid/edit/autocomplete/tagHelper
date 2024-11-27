@@ -2,7 +2,7 @@
     <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required= true })" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="120" edit="@(new {create = "createCustomerIDFn", read = "readCustomerIDFn", destroy = "destroyCustomerIDFn", write = "writeCustomerIDFn"})"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120" edit="@(new {create = "createCustomerIDHandler", read = "readCustomerIDHandler", destroy = "destroyCustomerIDHandler", write = "writeCustomerIDHandler"})"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" editType="numericedit" textAlign="Right" format="C2" width="120"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" editType="datepickeredit" width="130"></e-grid-column>
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
@@ -20,17 +20,17 @@
     var autoCompleteObj;
     var autoCompleteElement;
 
-    function createCustomerIDFn() {
+    function createCustomerIDHandler() {
         autoCompleteElement = document.createElement('input');
         return autoCompleteElement;
     }
-    function readCustomerIDFn() {
+    function readCustomerIDHandler() {
         return autoCompleteObj.value;
     }
-    function destroyCustomerIDFn() {
+    function destroyCustomerIDHandler() {
         autoCompleteObj.destroy();
     }
-    function writeCustomerIDFn(args) {
+    function writeCustomerIDHandler(args) {
         var rowData = args.rowData;
         autoCompleteObj = new ej.dropdowns.AutoComplete({
             allowCustom: true,

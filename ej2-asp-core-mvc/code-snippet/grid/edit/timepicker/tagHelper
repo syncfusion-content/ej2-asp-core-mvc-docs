@@ -6,7 +6,7 @@
         <e-grid-column field="Freight" headerText="Freight" editType="numericedit" textAlign="Right" format="C2" width="120"></e-grid-column>
         <e-grid-column field="ShipCountry" headerText="Ship Country"  width="150"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" editType="datepickeredit" format="yMd" textAlign="Right" width="140"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Time" edit="@(new {create = "createOrderDateFn", read = "readOrderDateFn", destroy = "destroyOrderDateFn", write = "writeOrderDateFn"})" format="hh :mm a" textAlign="Right" width="140"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Time" edit="@(new {create = "createOrderDateHandler", read = "readOrderDateHandler", destroy = "destroyOrderDateHandler", write = "writeOrderDateHandler"})" format="hh :mm a" textAlign="Right" width="140"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
@@ -14,17 +14,17 @@
     var timePickerObj;
     var timePickerElement
 
-    function createOrderDateFn(args) {
+    function createOrderDateHandler() {
         timePickerElement = document.createElement('input');
         return timePickerElement;
     }
-    function readOrderDateFn() {
+    function readOrderDateHandler() {
         return timePickerObj.value;
     }
-    function destroyOrderDateFn() {
+    function destroyOrderDateHandler() {
         timePickerObj.destroy();
     }
-    function writeOrderDateFn(args) {
+    function writeOrderDateHandler(args) {
         var rowData = args.rowData;
         timePickerObj = new ej.calendars.TimePicker({
             value: rowData.OrderDate,

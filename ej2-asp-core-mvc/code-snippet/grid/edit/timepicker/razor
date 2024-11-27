@@ -4,7 +4,7 @@
     col.Field("CustomerID").HeaderText("Customer Name").Width("120").Add();
     col.Field("Freight").HeaderText("Freight").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
     col.Field("OrderDate").HeaderText("Order Date").Format("yMd").EditType("datepickeredit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("140").Add();
-    col.Field("OrderDate").HeaderText("Order Time").Format("hh :mm a").Edit(new { create = "createOrderDateFn", read = "readOrderDateFn", destroy = "destroyOrderDateFn", write = "writeOrderDateFn" }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("140").Add();
+    col.Field("OrderDate").HeaderText("Order Time").Format("hh :mm a").Edit(new { create = "createOrderDateHandler", read = "readOrderDateHandler", destroy = "destroyOrderDateHandler", write = "writeOrderDateHandler" }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("140").Add();
 
 }).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
@@ -12,17 +12,17 @@
     var timePickerObj;
     var timePickerElement
 
-    function createOrderDateFn(args) {
+    function createOrderDateHandler() {
         timePickerElement = document.createElement('input');
         return timePickerElement;
     }
-    function readOrderDateFn() {
+    function readOrderDateHandler() {
         return timePickerObj.value;
     }
-    function destroyOrderDateFn() {
+    function destroyOrderDateHandler() {
         timePickerObj.destroy();
     }
-    function writeOrderDateFn(args) {
+    function writeOrderDateHandler(args) {
         var rowData = args.rowData;
         timePickerObj = new ej.calendars.TimePicker({
             value: rowData.OrderDate,

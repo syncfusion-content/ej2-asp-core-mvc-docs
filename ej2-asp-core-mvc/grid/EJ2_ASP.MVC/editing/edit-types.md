@@ -3,7 +3,7 @@ layout: post
 title: Edit Types in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Edit Types in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-component: Edit Types
+control: Edit Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -314,6 +314,8 @@ Here's an example of how to render a MaskedTextBox component in the **CustomerNu
 {% include code-snippet/grid/edit/masked-textbox-edit/textarea.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Render masked text box component](../images/editing/masked-textbox-component.png)
 
 ### Render DropDownList component in edit form 
 

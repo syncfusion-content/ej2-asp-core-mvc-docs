@@ -6,7 +6,7 @@
         <e-grid-column field="CustomerID" headerText="Customer Name" validationRules="@(new { required=true})" width="100"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" editType="numericedit" validationRules="@(new { required= true })" format="C2" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" editType="datepickeredit" format="yMd" textAlign="Right" width="100"></e-grid-column>
-        <e-grid-column field="ShipAddress" headerText="Ship Address" edit="@(new {create = "createShipAddressFn", read = "readShipAddressFn", destroy = "destroyShipAddressFn", write = "writeShipAddressFn"})" disableHtmlEncode=false editType="textarea" width="150"></e-grid-column>
+        <e-grid-column field="ShipAddress" headerText="Ship Address" edit="@(new {create = "createShipAddressHandler", read = "readShipAddressHandler", destroy = "destroyShipAddressHandler", write = "writeShipAddressHandler"})" disableHtmlEncode=false editType="textarea" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
@@ -27,17 +27,17 @@
     var richTextEditorElement;
     var richTextEditorObj;
 
-    function createShipAddressFn(args) {
+    function createShipAddressHandler(args) {
         richTextEditorElement = document.createElement('textarea');
         return richTextEditorElement;
     }
-    function readShipAddressFn() {
+    function readShipAddressHandler() {
         return richTextEditorObj.value;
     }
-    function destroyShipAddressFn() {
+    function destroyShipAddressHandler() {
         richTextEditorObj.destroy();
     }
-    function writeShipAddressFn(args) {
+    function writeShipAddressHandler(args) {
         var rowData = args.rowData;
         richTextEditorObj = new ej.richtexteditor.RichTextEditor({
             value: rowData.ShipAddress,

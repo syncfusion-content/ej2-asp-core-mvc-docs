@@ -4,7 +4,7 @@
         col.Field("CustomerID").HeaderText("Customer Name").Width(120).Add();
         col.Field("Freight").HeaderText("Freight").EditType("numericedit").ValidationRules(new { required = "true", min = 1, max = 1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
         col.Field("OrderDate").HeaderText("Order Date").Width("130").EditType("datepickeredit").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-        col.Field("ShipCountry").HeaderText("Ship Country").Edit(new { create = "createShipCountryFn", read = "readShipCountryFn", destroy = "destroyShipCountryFn", write = "writeShipCountryFn" }).Width("300").Add();
+        col.Field("ShipCountry").HeaderText("Ship Country").Edit(new { create = "createShipCountryHandler", read = "readShipCountryHandler", destroy = "destroyShipCountryHandler", write = "writeShipCountryHandler" }).Width("300").Add();
     }).EditSettings(edit => edit.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
     
 <script>
@@ -21,17 +21,17 @@
         { text: 'Mexico', value: 'Mexico' },
     ];
 
-    function createShipCountryFn(args) {
+    function createShipCountryHandler() {
         comboBoxElement = document.createElement('input');
         return comboBoxElement;
     }
-    function readShipCountryFn(args) {
+    function readShipCountryHandler() {
         return comboBoxObj.value;
     }
-    function destroyShipCountryFn() {
+    function destroyShipCountryHandler() {
         comboBoxObj.destroy();
     }
-    function writeShipCountryFn(args) {
+    function writeShipCountryHandler(args) {
         var rowData = args.rowData;
         comboBoxObj = new ej.dropdowns.ComboBox({
             dataSource: selectDataSource,

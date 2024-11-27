@@ -5,23 +5,23 @@
         <e-grid-column field="CustomerID" headerText="Customer ID" validationRules="@(new { required=true})" width="120"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" editType="numericedit" validationRules="@(new { required= true,min=1, max=1000 })" textAlign="Right" width="120"></e-grid-column> 
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" editType="datepickeredit" width="120"></e-grid-column>
-        <e-grid-column field="CustomerNumber" headerText="Customer Number" edit="@(new {create = "createCustomerNumberFn", read = "readCustomerNumberFn", destroy = "destroyCustomerNumberFn", write = "writeCustomerNumberFn"})"  width="150"></e-grid-column>
+        <e-grid-column field="CustomerNumber" headerText="Customer Number" edit="@(new {create = "createCustomerNumberHandler", read = "readCustomerNumberHandler", destroy = "destroyCustomerNumberHandler", write = "writeCustomerNumberHandler"})"  width="150"></e-grid-column>
    </e-grid-columns>
 </ejs-grid>
 
 <script>
-function createCustomerNumberFn() {
+function createCustomerNumberHandler() {
     maskElement = document.createElement('input');
     return maskElement;
 }
-function destroyCustomerNumberFn() {
+function destroyCustomerNumberHandler() {
     maskObject.destroy();
 }
-function readCustomerNumberFn() {
+function readCustomerNumberHandler() {
     return maskObject.value;
 }
 
-function writeCustomerNumberFn(args) {
+function writeCustomerNumberHandler(args) {
     var rowData = args.rowData;
     maskObject = new ej.inputs.MaskedTextBox({
         mask: "000-000-0000",

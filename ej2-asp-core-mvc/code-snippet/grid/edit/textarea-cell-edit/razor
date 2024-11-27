@@ -8,22 +8,22 @@
     col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(new { required = "true" }).Width("120").Add();
     col.Field("Freight").HeaderText("Freight").EditType("numericedit").ValidationRules(new { required = "true", min = 1, max = 1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
     col.Field("OrderDate").HeaderText("Order Date").ValidationRules(new { required = true }).Width("130").EditType("datepickeredit").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ShipAddress").HeaderText("Ship Address").ValueAccessor("valueAccessor").DisableHtmlEncode(true).Edit(new { create = "createShipAddressFn", read = "readShipAddressFn", destroy = "destroyShipAddressFn", write = "writeShipAddressFn" }).ValidationRules(new { required = true }).Width("150").Add();
+    col.Field("ShipAddress").HeaderText("Ship Address").ValueAccessor("valueAccessor").DisableHtmlEncode(true).Edit(new { create = "createShipAddressHandler", read = "readShipAddressHandler", destroy = "destroyShipAddressHandler", write = "writeShipAddressHandler" }).ValidationRules(new { required = true }).Width("150").Add();
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 <script>
-    function createShipAddressFn() {
+    function createShipAddressHandler() {
         textBoxElement = document.createElement('textarea');
         return textBoxElement;
     }
-    function destroyShipAddressFn() {
+    function destroyShipAddressHandler() {
         textBoxObject.destroy();
     }
-    function readShipAddressFn() {
+    function readShipAddressHandler() {
         return textBoxObject.value;
     }
 
-    function writeShipAddressFn(args) {
+    function writeShipAddressHandler(args) {
         var rowData = args.rowData;
         textBoxObject = new ej.inputs.TextBox({
             multiline: true,
