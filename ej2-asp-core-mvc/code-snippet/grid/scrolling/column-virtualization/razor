@@ -1,4 +1,4 @@
-@Html.EJS().Grid("virtualGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableColumnVirtualization().EnableVirtualization().Height("300").Columns(col =>
+@Html.EJS().Grid("virtualGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableColumnVirtualization().Height("300").Columns(col =>
 {
     col.Field("SNo").HeaderText("S.No").Width("140").IsPrimaryKey(true).Add();
     col.Field("Field1").HeaderText("Player Name").Width("120").Add();

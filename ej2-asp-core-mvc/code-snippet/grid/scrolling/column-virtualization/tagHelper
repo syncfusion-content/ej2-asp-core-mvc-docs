@@ -1,4 +1,4 @@
-<ejs-grid id="virtualGrid" dataSource="@ViewBag.dataSource" height="300" enableVirtualization="true" enableColumnVirtualization="true" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+<ejs-grid id="virtualGrid" dataSource="@ViewBag.dataSource" height="300" enableColumnVirtualization="true" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field="SNo" headerText="S.No" width="140" isPrimaryKey="true"></e-grid-column>

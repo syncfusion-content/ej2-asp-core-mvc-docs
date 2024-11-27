@@ -31,7 +31,6 @@
     function valueChange(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
         grid.infiniteScrollSettings.initialBlocks = parseInt(args.value, 10);
-        grid.refresh()
+        grid.refresh();
     }
-
 </script>
