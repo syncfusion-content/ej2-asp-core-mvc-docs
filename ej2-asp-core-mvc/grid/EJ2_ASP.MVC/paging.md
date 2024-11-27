@@ -248,7 +248,3 @@ The following example that example demonstrates how to use these events to displ
 {% endtabs %}
 
 ![Pager events](images/page/pager-event.png)
-
-## See Also
-
-* [Group with Paging](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/grouping/grouping#group-with-paging)
