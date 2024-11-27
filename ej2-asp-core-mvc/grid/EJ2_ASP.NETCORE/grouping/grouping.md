@@ -301,4 +301,4 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 
 ## See Also
 
-* [Exporting grouped records](https://ej2.syncfusion.com/aspnetcore/documentation/grid/excel-export/excel-export-options#exporting-grouped-records)
+* [Exporting grouped records](https://ej2.syncfusion.com/aspnetcore/documentation/grid/excel-export/excel-export-options#exporting-grouped-records) 
