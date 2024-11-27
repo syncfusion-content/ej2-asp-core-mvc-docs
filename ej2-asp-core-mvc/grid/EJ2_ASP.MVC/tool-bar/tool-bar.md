@@ -25,7 +25,7 @@ The following example demonstrates how to enable toolbar items in the grid.
 {% endhighlight %}
 {% endtabs %}
 
-![Toolbar](../../images/toolbar/toolbar.png)
+![Toolbar](../images/toolbar/toolbar.png)
 
 ## Enable or disable toolbar items
 
@@ -44,7 +44,7 @@ In the following example, the [EJ2 Toggle Switch Button component](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
 
-![Enable or disable toolbar items](../../images/toolbar/expand-toolbar.gif)
+![Enable or disable toolbar items](../images/toolbar/expand-toolbar.gif)
 
 ## Add toolbar at the bottom of grid
 
@@ -63,7 +63,7 @@ The following example shows how to add the toolbar items at the bootom using `Cr
 {% endhighlight %}
 {% endtabs %}
 
-![Add toolbar at the bottom of grid](../../images/toolbar/toolbar-add-bottom.png)
+![Add toolbar at the bottom of grid](../images/toolbar/toolbar-add-bottom.png)
 
 ## Customize toolbar buttons using CSS
 
@@ -89,4 +89,4 @@ The following example demonstrates how to change the background color of the `Ad
 {% endhighlight %}
 {% endtabs %}
 
-![Customize toolbar buttons using CSS](../../images/toolbar/toolbar-customize.png)
+![Customize toolbar buttons using CSS](../images/toolbar/toolbar-customize.png)

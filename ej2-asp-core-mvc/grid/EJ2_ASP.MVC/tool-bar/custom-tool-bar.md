@@ -25,7 +25,7 @@ The following example demonstrates, how to render the custom toolbar using `Tool
 {% endhighlight %}
 {% endtabs %}
 
-![Built-in toolbar items](../../images/toolbar/toolbar-items.png)
+![Built-in toolbar items](../images/toolbar/toolbar-items.png)
 
 ## Render image with text in custom toolbar
 
@@ -44,7 +44,7 @@ The following example demonstrates how to render an image in the toolbar of the 
 {% endhighlight %}
 {% endtabs %}
 
-![Built-in toolbar items](../../images/toolbar/toolbar-items.png)
+![Built-in toolbar items](../images/toolbar/toolbar-items.png)
 
 > You can further customize the styles and layout of the image and text in the custom toolbar to suit your specific design requirements.
 
@@ -65,7 +65,7 @@ In the **onChange** method, the text of the selected item is checked to determin
 {% endhighlight %}
 {% endtabs %}
 
-![Built-in toolbar items](../../images/toolbar/customtoolbar-dropdownlist.png)
+![Built-in toolbar items](../images/toolbar/customtoolbar-dropdownlist.png)
 
 ## Render a component or element using the toolbar template
 
@@ -84,4 +84,4 @@ The following example demonstrates how to render a **Button** component in the t
 {% endhighlight %}
 {% endtabs %}
 
-![Built-in toolbar items](../../images/toolbar/customtoolbar-element.png)
+![Built-in toolbar items](../images/toolbar/customtoolbar-element.png)

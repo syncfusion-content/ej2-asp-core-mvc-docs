@@ -44,7 +44,7 @@ The following example demonstrates how to enable built-in toolbar items such as 
 {% endhighlight %}
 {% endtabs %}
 
-![Built-in toolbar items](../../images/toolbar/toolbar-items.png)
+![Built-in toolbar items](../images/toolbar/toolbar-items.png)
 
 > The [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) has options to define both built-in and custom toolbar items.
 
@@ -72,7 +72,7 @@ This is demonstrated in the following sample:
 {% endhighlight %}
 {% endtabs %}
 
-![Show only icons in built-in toolbar items](../../images/toolbar/show-built-toolbar.png)
+![Show only icons in built-in toolbar items](../images/toolbar/show-built-toolbar.png)
 
 ### Customize the built-in toolbar items
 
@@ -91,7 +91,7 @@ The following example demonstrate how to customize the toolbar by disabling and 
 {% endhighlight %}
 {% endtabs %}
 
-![Customize the built-in toolbar items](../../images/toolbar/toolbar-built.gif)
+![Customize the built-in toolbar items](../images/toolbar/toolbar-built.gif)
 
 ## Custom toolbar items
 
@@ -110,7 +110,7 @@ By default, custom toolbar items are positioned on the **left** side of the tool
 {% endhighlight %}
 {% endtabs %}
 
-![Custom toolbar items](../../images/toolbar/custom-toolbar-items.png)
+![Custom toolbar items](../images/toolbar/custom-toolbar-items.png)
 
 
 > * The [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) has options to define both built-in and custom toolbar items.
@@ -133,7 +133,7 @@ The following example demonstrates, how to use both built-in and custom toolbar 
 {% endhighlight %}
 {% endtabs %}
 
-![Both built-in and custom items in toolbar](../../images/toolbar/custom-items.png)
+![Both built-in and custom items in toolbar](../images/toolbar/custom-items.png)
 
 ## Custom toolbar items in a specific position
 
@@ -152,4 +152,4 @@ In the following sample, the **Collapse All** toolbar item is positioned on the 
 {% endhighlight %}
 {% endtabs %}
 
-![Custom toolbar items in a specific position](../../images/toolbar/customize-position.png)
+![Custom toolbar items in a specific position](../images/toolbar/customize-position.png)
