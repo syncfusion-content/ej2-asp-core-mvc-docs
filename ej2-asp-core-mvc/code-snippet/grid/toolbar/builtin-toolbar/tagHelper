@@ -5,4 +5,4 @@
         <e-grid-column field="ShipCity" headerText="ShipCity" width="120"></e-grid-column>
         <e-grid-column field="ShipName" headerText="Ship Name" width="140"></e-grid-column>
     </e-grid-columns>
-</ejs-grid>
+</ejs-grid> 

@@ -152,4 +152,4 @@ In the following sample, the **Collapse All** toolbar item is positioned on the 
 {% endhighlight %}
 {% endtabs %}
 
-![Custom toolbar items in a specific position](../images/toolbar/customize-position.png)
+![Custom toolbar items in a specific position](../images/toolbar/customize-position.png) 

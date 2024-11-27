@@ -24,4 +24,4 @@
         else 
             grid.print();
     }
-</script>
+</script> 
