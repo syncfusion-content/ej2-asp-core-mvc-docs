@@ -170,7 +170,7 @@ The Excel/Checkbox filter retrieves distinct data in ascending order, governed b
 Based on the items count value, the Excel/Checkbox filter gets unique data and displayed in Excel/Checkbox filter content dialog. You can customize the count of on-demand data rendering for Excel/Checkbox filter by adjusting the [FilterSettings.ItemsCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_ItemsCount) property. The default value is `50`
 
 ```ts
-grid.filterSettings = { enableInfiniteScrolling = true, itemsCount = 40 };
+@Html.EJS().Grid("onDemandExcelFilter").DataSource(ViewBag.dataSource).FilterSettings(Filter => Filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel).EnableInfiniteScrolling(true).ItemsCount(40))
 ```
 
 > It is recommended to keep the itemsCount below **300**. Higher values will result in unwanted whitespace because of DOM maintenance performance degradation.
@@ -180,7 +180,7 @@ grid.filterSettings = { enableInfiniteScrolling = true, itemsCount = 40 };
 A loading effect is presented to signify that loading is in progress when the checkbox list data scroller reaches the end, and there is a delay in receiving the data response from the server. The loading effect during on-demand data retrieval for Excel/Checkbox filter can be customized using the [FilterSettings.LoadingIndicator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_LoadingIndicator) property. The default value is `Shimmer`.
 
 ```ts
-grid.filterSettings = { enableInfiniteScrolling = true, loadingIndicator = 'Spinner' };
+@Html.EJS().Grid("onDemandExcelFilter").DataSource(ViewBag.dataSource).FilterSettings(Filter => Filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel).EnableInfiniteScrolling(true).LoadingIndicator(Syncfusion.EJ2.Grids.IndicatorType.Spinner))
 ```
 
 In the provided example, On-Demand Excel filter has been enabled for the ASP.NET MVC Grid
