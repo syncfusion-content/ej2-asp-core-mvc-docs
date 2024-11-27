@@ -1,0 +1,43 @@
+@using Newtonsoft.Json;
+<div style="padding-bottom:20px">
+  <div style="padding-bottom: 20px;display: flex">
+      <label style="padding: 5px 35px 0 0;font-weight: bold"> Select Column</label>
+      <span style="height:fit-content">
+          @Html.EJS().DropDownList("fieldDropDown").Width("150px").Change("onFieldChange").Placeholder("Eg: OrderID").Render()
+      </span>
+  </div>
+  <div style="display: flex">
+      <label style="padding: 5px 28px 0 0;font-weight: bold"> Select Operator</label>
+      <span style="height:fit-content">
+          @Html.EJS().DropDownList("operatorDropDown").Width("150px").Enabled(false).Change("onOperatorChange").Placeholder("Eg: Equal").Render()
+      </span>
+  </div>
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).Height("350px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).DataBound("dataBound").Render()
+<script>
+    let column;
+    function dataBound() {
+        let fieldData = document.getElementById("grid").ej2_instances[0].getColumnFieldNames();
+        document.getElementById("fieldDropDown").ej2_instances[0].dataSource = fieldData;
+    }
+    function onFieldChange(args) {
+        let dropDownOperatorsList = document.getElementById("operatorDropDown").ej2_instances[0]
+        dropDownOperatorsList.enabled = true;
+        column = document.getElementById("grid").ej2_instances[0].getColumnByField(args.value);
+        if (column) {
+            availableOperators = column.type === "string" ? @Html.Raw(JsonConvert.SerializeObject(ViewBag.stringOperatorsData)) :  @Html.Raw(JsonConvert.SerializeObject(ViewBag.numericOperatorsData));
+            dropDownOperatorsList.dataSource = availableOperators;
+        }
+    }
+    function onOperatorChange(args) {
+        let filterOptions = { operator: args.value };
+        column.filter = filterOptions;
+    }
+</script>
