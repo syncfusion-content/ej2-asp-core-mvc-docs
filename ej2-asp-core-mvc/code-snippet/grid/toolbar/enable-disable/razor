@@ -8,7 +8,7 @@
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-}).AllowGrouping().GroupSettings(group => group.Columns(new string[] { "CustomerID" })).Toolbar(new List<string>() { "Expand", "Collapse" }).Render()
+}).AllowGrouping().GroupSettings(group => group.Columns(new string[] { "CustomerID" })).Toolbar(new List<string>() { "Expand", "Collapse" }).Render();
 <script>
     function toolbarClick(args){
         var grid = document.getElementById("grid").ej2_instances[0];

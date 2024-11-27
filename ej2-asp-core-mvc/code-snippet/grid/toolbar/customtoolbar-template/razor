@@ -12,16 +12,16 @@
    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
 }).Render();
 <script>
-document.getElementById('excelButton').onclick = clickHandler;
-document.getElementById('pdfButton').onclick = clickHandler;
-document.getElementById('printButton').onclick = clickHandler;
-function clickHandler(event) {
-    var grid = document.getElementById("grid").ej2_instances[0];
-    if(event.target.id === "excelButton")
-        grid.excelExport();
-    else if(event.target.id === "pdfButton")
-        grid.pdfExport();
-    else 
-        grid.print();
-}
+    document.getElementById('excelButton').onclick = clickHandler;
+    document.getElementById('pdfButton').onclick = clickHandler;
+    document.getElementById('printButton').onclick = clickHandler;
+    function clickHandler(event) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if(event.target.id === "excelButton")
+            grid.excelExport();
+        else if(event.target.id === "pdfButton")
+            grid.pdfExport();
+        else 
+            grid.print();
+    }
 </script>

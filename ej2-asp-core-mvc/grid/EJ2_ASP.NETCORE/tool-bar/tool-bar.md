@@ -84,8 +84,8 @@ The following example demonstrates how to change the background color of the `Ad
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/toolbar/customize-toolbar/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="toolbar-bottom.cs" %}
-{% include code-snippet/grid/ttoolbar/customize-toolbar/toolbar-bottom.cs %}
+{% highlight c# tabtitle="toolbar.cs" %}
+{% include code-snippet/grid/toolbar/customize-toolbar/toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
