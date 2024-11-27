@@ -1,0 +1,46 @@
+@using Newtonsoft.Json;
+<div style="padding-bottom:20px">
+    <div style="padding-bottom: 20px;display: flex">
+        <label style="padding: 5px 35px 0 0;font-weight: bold"> Select Column</label>
+        <span style="height:fit-content">
+            <ejs-dropdownlist id="fieldDropDown" change="onFieldChange" placeholder="Eg: OrderID">
+            </ejs-dropdownlist>            
+        </span>
+    </div>
+        <div style="display: flex">
+        <label style="padding: 5px 28px 0 0;font-weight: bold"> Select Operator</label>
+        <span style="height:fit-content">
+            <ejs-dropdownlist id="operatorDropDown" enabled="false" change="onOperatorChange" placeholder="Eg: Equal">
+            </ejs-dropdownlist>            
+        </span>
+    </div>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" dataBound="dataBound" height="350px" >
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>  
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="100"></e-grid-column>     
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    let column;
+    function dataBound() {
+        let fieldData = document.getElementById("grid").ej2_instances[0].getColumnFieldNames();
+        document.getElementById("fieldDropDown").ej2_instances[0].dataSource = fieldData;
+    }
+    function onFieldChange(args) {
+        let dropDownOperatorsList = document.getElementById("operatorDropDown").ej2_instances[0]
+        dropDownOperatorsList.enabled = true;
+        column = document.getElementById("grid").ej2_instances[0].getColumnByField(args.value);
+        if (column) {
+            availableOperators = column.type === "string" ? @Html.Raw(JsonConvert.SerializeObject(ViewBag.stringOperatorsData)) :  @Html.Raw(JsonConvert.SerializeObject(ViewBag.numericOperatorsData));
+            dropDownOperatorsList.dataSource = availableOperators;
+        }
+    }
+    function onOperatorChange(args) {
+        let filterOptions = { operator: args.value };
+        column.filter = filterOptions;
+    }
+</script>
