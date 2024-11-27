@@ -59,7 +59,7 @@ To enable cache mode, you need to define [enableCache](https://help.syncfusion.c
 
 To enable maximum blocks, you need to define `maxBlocks` count of [infiniteScrollSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridInfiniteScrollSettings.html), By default this property value is 3.
 
-The following example that demonstrates how to enable/disable cache mode in infinite scrolling of the grid based on a [Switch](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) component[change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event :
+The following example that demonstrates how to enable/disable cache mode in infinite scrolling of the grid based on a [Switch](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) component [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event :
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
