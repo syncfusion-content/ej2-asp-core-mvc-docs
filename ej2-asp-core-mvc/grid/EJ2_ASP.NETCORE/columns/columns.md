@@ -419,7 +419,7 @@ You can also show or hide columns in the ASP.NET Core Grid using the `showColumn
 
 You can dynamically show or hide columns in the Grid based on the header text by invoking the `showColumns` or `hideColumns` methods. These methods take an array of column header texts as the first parameter, and the value `headerText` as the second parameter to specify that you are showing or hiding columns based on the header text.
 
-Here's an example of how to show or hide a column based on the headerText in the ASP.NET CORE Grid:
+Here's an example of how to show or hide a column based on the headerText in the ASP.NET Core Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
