@@ -66,7 +66,7 @@ Column virtualization feature in the Syncfusion Grid that allows you to optimize
 
 To enable column virtualization, you need to set the [EnableColumnVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableColumnVirtualization) property of the Grid to **true**. This configuration instructs the Grid to only render the columns that are currently visible in the viewport. 
 
-The following example enable column virtualization using `enableColumnVirtualization`  property.
+The following example enable column virtualization using `EnableColumnVirtualization`  property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
