@@ -8,14 +8,14 @@
     toolbarItems.Add("Cancel");
     toolbarItems.Add(new { text = "Click", tooltipText = "Click", id = "Click", prefixIcon = "e-expand" });
 }
-<div><p style="color:red;text-align: center;" id="message"></p></div></br>
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").ToolbarClick("toolbarClick").Columns(col =>
+<div><p style="color:red;text-align: center;" id="message"></p></div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").ToolbarClick("toolbarClick").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(toolbarItems).Render()
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(toolbarItems).Render();
 <script>
     function toolbarClick(args)
     {
@@ -24,6 +24,6 @@
             document.getElementById("message").innerText= 'Custom Toolbar Clicked';
         }
         else
-        document.getElementById("message").innerText = ''
+         document.getElementById("message").innerText = '';
     }
 </script>

@@ -1,10 +1,9 @@
-@{
-    List<object> toolbarItems = new List<object>();
-    toolbarItems.Add(new { text= "Expand All", tooltipText= "Expand All", prefixIcon= "e-expand", id= "expandall" });
-    toolbarItems.Add(new { text= "Collapse All", tooltipText= "collection All", prefixIcon= "e-collapse-2", id= "collapseall", align= "Right"  });
-}
-<ejs-grid id="grid" dataSource="@ViewBag.dataSource" toolbarClick="toolbarClick" toolbar=toolbarItems height="348px" allowGrouping="true">
-    <e-grid-groupsettings columns="@(new string[] {"CustomerID"})"></e-grid-groupsettings>
+<div style="padding-bottom:20px">
+    <ejs-button id="excelButton" cssClass="e-primary" content="Excel Export"></ejs-button>
+    <ejs-button id="pdfButton" cssClass="e-primary" content="Pdf Export"></ejs-button>
+    <ejs-button id="printButton" cssClass="e-primary" content="Print"></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" allowPdfExport="true" height="348px">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>
@@ -13,13 +12,16 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-    function toolbarClick(args) {
-
-        if (args.item.id === 'expandall') {
-            this.groupModule.expandAll();
-        }
-        if (args.item.id === "collapseall") {
-            this.groupModule.collapseAll();
-        }
-    } 
+document.getElementById('excelButton').onclick = clickHandler;
+document.getElementById('pdfButton').onclick = clickHandler;
+document.getElementById('printButton').onclick = clickHandler;
+function clickHandler(event) {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    if(event.target.id === "excelButton")
+        grid.excelExport();
+    else if(event.target.id === "pdfButton")
+        grid.pdfExport();
+    else 
+        grid.print();
+}
 </script>

@@ -1,7 +1,7 @@
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" toolbar="@(new List<string>() {"Print","Search"})" created="created" height="348px">
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" type="number" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C" width="120"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format='yMd' width="140"></e-grid-column>
     </e-grid-columns>

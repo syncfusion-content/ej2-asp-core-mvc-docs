@@ -7,7 +7,7 @@
     toolbarItems.Add("Update");
     toolbarItems.Add("Cancel");
 }
-<div><p style="color:red;text-align: center;" id="message"></p></div></br>
+<div><p style="color:red;text-align: center;" id="message"></p></div>
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" toolbarClick="toolbarClick" toolbar=toolbarItems>
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
@@ -21,7 +21,7 @@
 function toolbarClick(args)
 {
     var grid = document.getElementById("grid").ej2_instances[0];
-    if (args.item.id === 'grid_add') { // 'Grid_add' -> Grid component id + _ + toolbar item name
+    if (args.item.id === 'grid_add') {
         args.cancel = true;
         const newRecord = {
             OrderID: 10247,
@@ -33,6 +33,6 @@ function toolbarClick(args)
         document.getElementById("message").innerText= 'The default adding action is cancelled, and a new record is added using the addRecord method.';
     }
     else
-    document.getElementById("message").innerText = ''
+     document.getElementById("message").innerText = '';
 }
 </script>

@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Toolbar in ASP.NET MVC Grid component
 
 The toolbar in the Syncfusion ASP.NET MVC Grid component offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing you to generate downloadable files in formats like Excel, CSV, or PDF. 
@@ -45,7 +44,7 @@ In the following example, the [EJ2 Toggle Switch Button component](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
 
-![Enable or disable toolbar items](../../images/toolbar/toolbar-enable-disable.gif)
+![Enable or disable toolbar items](../../images/toolbar/expand-toolbar.gif)
 
 ## Add toolbar at the bottom of grid
 
@@ -85,8 +84,8 @@ The following example demonstrates how to change the background color of the `Ad
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/toolbar/customize-toolbar/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="toolbar-bottom.cs" %}
-{% include code-snippet/grid/toolbar/customize-toolbar/toolbar-bottom.cs %}
+{% highlight c# tabtitle="toolbar.cs" %}
+{% include code-snippet/grid/toolbar/customize-toolbar/toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 

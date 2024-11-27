@@ -7,10 +7,10 @@
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" toolbarClick="toolbarClick" toolbar=toolbarItems height="348px" allowGrouping="true">
     <e-grid-groupsettings columns="@(new string[] {"FirstName"})"></e-grid-groupsettings>
     <e-grid-columns>
-        <e-grid-column field="EmployeeID" headerText="Employee ID" isPrimaryKey="true" textAlign="Right" type="number" width="120"></e-grid-column>
-        <e-grid-column field="FirstName" headerText="First Name" type="string" width="140"></e-grid-column>
-        <e-grid-column field="Country" headerText="Country" textAlign="Right" type="string" width="120"></e-grid-column>
-        <e-grid-column field="PostalCode" headerText="Postal Code" textAlign="Right" type="string" width="140"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="FirstName" headerText="First Name" width="140"></e-grid-column>
+        <e-grid-column field="Country" headerText="Country" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="PostalCode" headerText="Postal Code" textAlign="Right" width="140"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 <script>

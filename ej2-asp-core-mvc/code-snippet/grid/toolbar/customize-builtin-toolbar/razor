@@ -6,31 +6,30 @@
     toolbarItems.Add("Update");
     toolbarItems.Add("Cancel");
 }
-<div><p style="color:red;text-align: center;" id="message"></p></div></br>
+<div><p style="color:red;text-align: center;" id="message"></p></div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).ToolbarClick("toolbarClick").Height("348px").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(toolbarItems).Render()
-
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(toolbarItems).Render();
 <script>
-function toolbarClick(args)
-{
-    var grid = document.getElementById("grid").ej2_instances[0];
-    if (args.item.id === 'grid_add') { // 'Grid_add' -> Grid component id + _ + toolbar item name
-        args.cancel = true;
-        const newRecord = {
-            OrderID: 10247,
-            CustomerID: 'TOMSP',
-            ShipName: 'Hanari Carnes',
-            ShipCity: 'Lyon',
-        };
-        grid.addRecord(newRecord);
-        document.getElementById("message").innerText= 'The default adding action is cancelled, and a new record is added using the addRecord method.';
+    function toolbarClick(args)
+    {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_add') {
+            args.cancel = true;
+            const newRecord = {
+                OrderID: 10247,
+                CustomerID: 'TOMSP',
+                ShipName: 'Hanari Carnes',
+                ShipCity: 'Lyon',
+            };
+            grid.addRecord(newRecord);
+            document.getElementById("message").innerText= 'The default adding action is cancelled, and a new record is added using the addRecord method.';
+        }
+        else
+         document.getElementById("message").innerText = '';
     }
-    else
-    document.getElementById("message").innerText = ''
-}
 </script>

@@ -4,7 +4,7 @@
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render();
 <style>
 .e-grid .e-toolbar .e-tbar-btn .e-icons,
 .e-grid .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn {

@@ -1,24 +1,27 @@
-@{
-    List<object> toolbarItems = new List<object>();
-    toolbarItems.Add(new { text= "Expand All", tooltipText= "Expand All", prefixIcon= "e-expand", id= "expandall" });
-    toolbarItems.Add(new { text= "Collapse All", tooltipText= "collection All", prefixIcon= "e-collapse-2", id= "collapseall", align= "Right"  });
-}
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("excelButton").CssClass("e-primary").Content("Excel Export").Render()
+    @Html.EJS().Button("pdfButton").CssClass("e-primary").Content("Pdf Export").Render()
+    @Html.EJS().Button("printButton").CssClass("e-primary").Content("Print").Render()
+</div>
 
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).ToolbarClick("toolbarClick").Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().AllowPdfExport().Height("348px").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-}).AllowGrouping(true).GroupSettings(group => { group.Columns(new string[] { "CustomerID" }); }).Toolbar(toolbarItems).Render();
+}).Render();
 <script>
-    function toolbarClick(args) {
-
-        if (args.item.id === 'expandall') {
-            this.groupModule.expandAll();
-        }
-        if (args.item.id === "collapseall") {
-            this.groupModule.collapseAll();
-        }
-    }
+document.getElementById('excelButton').onclick = clickHandler;
+document.getElementById('pdfButton').onclick = clickHandler;
+document.getElementById('printButton').onclick = clickHandler;
+function clickHandler(event) {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    if(event.target.id === "excelButton")
+        grid.excelExport();
+    else if(event.target.id === "pdfButton")
+        grid.pdfExport();
+    else 
+        grid.print();
+}
 </script>

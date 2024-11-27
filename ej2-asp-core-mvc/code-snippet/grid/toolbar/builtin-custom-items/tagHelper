@@ -8,7 +8,7 @@
     toolbarItems.Add("Cancel");
     toolbarItems.Add(new { text = "Click", tooltipText = "Click", id = "Click", prefixIcon = "e-expand" });
 }
-<div><p style="color:red;text-align: center;" id="message"></p></div></br>
+<div><p style="color:red;text-align: center;" id="message"></p></div>
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" toolbarClick="toolbarClick" toolbar=toolbarItems>
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
@@ -19,13 +19,13 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-function toolbarClick(args)
-{
-    var grid = document.getElementById("grid").ej2_instances[0];
-    if (args.item.id === 'Click') {
-        document.getElementById("message").innerText= 'Custom Toolbar Clicked';
+    function toolbarClick(args)
+    {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'Click') {
+            document.getElementById("message").innerText= 'Custom Toolbar Clicked';
+        }
+        else
+        document.getElementById("message").innerText = '';
     }
-    else
-    document.getElementById("message").innerText = ''
-}
 </script>

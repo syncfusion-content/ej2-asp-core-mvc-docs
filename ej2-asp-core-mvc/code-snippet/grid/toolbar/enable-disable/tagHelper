@@ -1,6 +1,6 @@
 <div style="padding-bottom: 20px; display: flex">
    <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Enable or disable toolbar items</label>
-    <ejs-switch id="switch" change="onSwitchChange"></ejs-switch>
+    <ejs-switch id="switch" checked="true" change="onSwitchChange"></ejs-switch>
 </div>
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" toolbarClick="toolbarClick" toolbar="@( new List<string>(){"Expand","Collapse"})" height="348px" allowGrouping="true">
     <e-grid-columns>
@@ -14,7 +14,7 @@
 <script>
     function toolbarClick(args){
         var grid = document.getElementById("grid").ej2_instances[0];
-        if (args.item.id === 'grid_Collapse') { // Grid_Collapse is control id + '_' + toolbar value.
+        if (args.item.id === 'grid_Collapse') {
             grid.groupModule.collapseAll();
         }
         if (args.item.id === 'grid_Expand') {
@@ -24,11 +24,7 @@
     function onSwitchChange(args)
     {       
         var grid = document.getElementById("grid").ej2_instances[0];
-
-        if (args.checked) {
-            grid.toolbarModule.enableItems(['grid_Collapse', 'grid_Expand'], false); // Disable toolbar items.
-        } else {
-        grid.toolbarModule.enableItems(['grid_Collapse', 'grid_Expand'], true); // Enable toolbar items.
-        }
+        grid.toolbarModule.enableItems(['grid_Collapse', 'grid_Expand'], args.checked);
+        
     }
 </script>

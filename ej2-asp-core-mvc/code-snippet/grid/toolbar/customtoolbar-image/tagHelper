@@ -1,10 +1,5 @@
-@{
-    List<object> toolbarItems = new List<object>();
-    toolbarItems.Add(new { text= "Expand All", tooltipText= "Expand All", prefixIcon= "e-expand", id= "expandall" });
-    toolbarItems.Add(new { text= "Collapse All", tooltipText= "collection All", prefixIcon= "e-collapse-2", id= "collapseall", align= "Right"  });
-}
-<ejs-grid id="grid" dataSource="@ViewBag.dataSource" toolbarClick="toolbarClick" toolbar=toolbarItems height="348px" allowGrouping="true">
-    <e-grid-groupsettings columns="@(new string[] {"CustomerID"})"></e-grid-groupsettings>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" toolbarTemplate="#template">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>
@@ -12,14 +7,41 @@
         <e-grid-column field="ShipName" headerText="Ship Name" width="140"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+<div id="template">
+    <div>
+        <div class="image"><img src="~/Images/add.jpg" /></div>
+        <div>
+            <ejs-button id="addButton" cssClass= "e-outline"  content="Add"></ejs-button>
+        </div >
+        <div class="image"><img src="~/Images/delete.jpg" /></div>
+        <div>
+            <ejs-button id="deleteButton" cssClass= "e-outline"  content="Delete"></ejs-button>
+        </div>
+    </div>
+</div >
 <script>
-    function toolbarClick(args) {
-
-        if (args.item.id === 'expandall') {
-            this.groupModule.expandAll();
+    document.getElementById('addButton').onclick = clickHandler;
+    document.getElementById('deleteButton').onclick = clickHandler;
+    function clickHandler(event) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (event.target.id === "addButton") {
+            grid.addRecord();
         }
-        if (args.item.id === "collapseall") {
-            this.groupModule.collapseAll();
+        else if (event.target.id === "deleteButton") {
+            var selectedRecord = grid.getSelectedRecords()[0];
+            grid.deleteRecord(selectedRecord);
         }
-    } 
+     }
 </script>
+<style>
+    .image img {
+        border-radius: 50px;
+        box-shadow: inset 0 0 1px #e0e0e0, inset 0 0 14px rgba(0, 0, 0, 0.2);
+        height: 35px;
+        width: 55px;
+    }
+    .e-toolbar .e-toolbar-item > * {
+        text-overflow: ellipsis;
+        height: 35px;
+    }
+</style>

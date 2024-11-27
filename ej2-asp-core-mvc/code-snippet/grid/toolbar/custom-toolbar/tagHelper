@@ -14,7 +14,6 @@
 </ejs-grid>
 <script>
     function toolbarClick(args) {
-
         if (args.item.id === 'expandall') {
             this.groupModule.expandAll();
         }

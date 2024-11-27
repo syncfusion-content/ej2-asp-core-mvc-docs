@@ -1,6 +1,6 @@
 <div style="padding-bottom: 20px; display: flex">
    <label style="margin-right:5px;font-weight: bold;">Enable or disable toolbar items</label>
-   @Html.EJS().Switch("switch").Change("onSwitchChange").Render()
+   @Html.EJS().Switch("switch").Checked(true).Change("onSwitchChange").Render()
 </div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").ToolbarClick("toolbarClick").Columns(col =>
 {
@@ -12,7 +12,7 @@
 <script>
     function toolbarClick(args){
         var grid = document.getElementById("grid").ej2_instances[0];
-        if (args.item.id === 'grid_Collapse') { // Grid_Collapse is control id + '_' + toolbar value.
+        if (args.item.id === 'grid_Collapse') {
             grid.groupModule.collapseAll();
         }
         if (args.item.id === 'grid_Expand') {
@@ -22,11 +22,7 @@
     function onSwitchChange(args)
     {       
         var grid = document.getElementById("grid").ej2_instances[0];
-
-        if (args.checked) {
-            grid.toolbarModule.enableItems(['grid_Collapse', 'grid_Expand'], false); // Disable toolbar items.
-        } else {
-        grid.toolbarModule.enableItems(['grid_Collapse', 'grid_Expand'], true); // Enable toolbar items.
-        }
+        grid.toolbarModule.enableItems(['grid_Collapse', 'grid_Expand'], args.checked);
+        
     }
 </script>

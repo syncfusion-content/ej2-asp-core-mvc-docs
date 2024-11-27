@@ -4,13 +4,13 @@
     toolbarItems.Add(new {  text= "Collapse All", tooltipText= "collection All", prefixIcon= "e-collapse-2", id= "collapseall", align= "Right" });
     toolbarItems.Add(new { text = "Search", align = "Center" });
 }
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").ToolbarClick("toolbarClick").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").ToolbarClick("toolbarClick").Columns(col =>
 {
    col.Field("EmployeeID").HeaderText("Employee ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
    col.Field("FirstName").HeaderText("FirstName").Width("140").Add();
    col.Field("Country").HeaderText("Country").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
    col.Field("PostalCode").HeaderText("PostalCode").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("140").Add();
-}).AllowGrouping(true).GroupSettings(group => { group.Columns(new string[] { "FirstName" }); }).Toolbar(toolbarItems).Render()
+}).AllowGrouping(true).GroupSettings(group => { group.Columns(new string[] { "FirstName" }); }).Toolbar(toolbarItems).Render();
 
 <script>
     function toolbarClick(args) {
