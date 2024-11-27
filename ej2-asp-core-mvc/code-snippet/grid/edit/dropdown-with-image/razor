@@ -3,7 +3,7 @@
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width(120).Add();
-    col.Field("EmployeeID").HeaderText("Employee Name").ForeignKeyField("EmployeeID").ForeignKeyValue("FirstName").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Edit(new { create = "createEmployeeNameFn", read = "readEmployeeNameFn", destroy = "destroyEmployeeNameFn", write = "writeEmployeeNameFn" }).Width("220").Add();
+    col.Field("EmployeeID").HeaderText("Employee Name").ForeignKeyField("EmployeeID").ForeignKeyValue("FirstName").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Edit(new { create = "createEmployeeNameHandler", read = "readEmployeeNameHandler", destroy = "destroyEmployeeNameHandler", write = "writeEmployeeNameHandler" }).Width("220").Add();
     col.Field("Freight").HeaderText("Freight").EditType("numericedit").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").Add();
@@ -15,18 +15,18 @@ var dropDownElement;
 var dropDownListObj;
 var dropDownDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.EmployeeDataSource));
 
-function createEmployeeNameFn() {
+function createEmployeeNameHandler() {
     dropDownElement = document.createElement('input');
     return dropDownElement;
 }
-function destroyEmployeeNameFn() {
+function destroyEmployeeNameHandler() {
     dropDownListObj.destroy();
 }
-function readEmployeeNameFn() {
+function readEmployeeNameHandler() {
     return dropDownListObj.value;
 }
 
-function writeEmployeeNameFn(args) {
+function writeEmployeeNameHandler(args) {
     var rowData = args.rowData;
     dropDownListObj = new ej.dropdowns.DropDownList({
         dataSource: dropDownDataSource,

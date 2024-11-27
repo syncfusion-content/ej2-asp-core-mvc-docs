@@ -4,7 +4,7 @@
     <e-grid-editsettings allowEditing="true" allowAdding="true" allowDeleting="true"></e-grid-editsettings>
     <e-grid-columns>
     <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" textAlign="Right" width="120"></e-grid-column>
-    <e-grid-column field="EmployeeID" headerText="Empolyee Name" foreignKeyField="EmployeeID" foreignKeyValue="FirstName" dataSource="ViewBag.EmployeeDataSource" edit="@(new {create = "createEmployeeNameFn", read = "readEmployeeNameFn", destroy = "destroyEmployeeNameFn", write = "writeEmployeeNameFn"})" width="220"></e-grid-column>
+    <e-grid-column field="EmployeeID" headerText="Empolyee Name" foreignKeyField="EmployeeID" foreignKeyValue="FirstName" dataSource="ViewBag.EmployeeDataSource" edit="@(new {create = "createEmployeeNameHandler", read = "readEmployeeNameHandler", destroy = "destroyEmployeeNameHandler", write = "writeEmployeeNameHandler"})" width="220"></e-grid-column>
     <e-grid-column field="Freight" headerText="Freight" editType="numericedit" format="C2" textAlign="Right" width="100"></e-grid-column>
     <e-grid-column field="ShipName" headerText="Ship Name" width="170"></e-grid-column>  
     <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150"></e-grid-column>
@@ -17,18 +17,18 @@
     var dropDownListObj;
     var dropDownDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.EmployeeDataSource));
 
-    function createEmployeeNameFn() {
+    function createEmployeeNameHandler() {
         dropDownElement = document.createElement('input');
         return dropDownElement;
     }
-    function destroyEmployeeNameFn() {
+    function destroyEmployeeNameHandler() {
         dropDownListObj.destroy();
     }
-    function readEmployeeNameFn() {
+    function readEmployeeNameHandler() {
         return dropDownListObj.value;
     }
 
-    function writeEmployeeNameFn(args) {
+    function writeEmployeeNameHandler(args) {
         var rowData = args.rowData;
         dropDownListObj = new ej.dropdowns.DropDownList({
             dataSource: dropDownDataSource,

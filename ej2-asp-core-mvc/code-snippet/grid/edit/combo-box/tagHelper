@@ -5,7 +5,7 @@
         <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" editType="numericedit" validationRules="@(new { required= true,min=1, max=1000 })" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" editType="datepickeredit" width="130"></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" edit="@(new {create = "createShipCountryFn", read = "readShipCountryFn", destroy = "destroyShipCountryFn", write = "writeShipCountryFn"})" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" edit="@(new {create = "createShipCountryHandler", read = "readShipCountryHandler", destroy = "destroyShipCountryHandler", write = "writeShipCountryHandler"})" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
@@ -23,12 +23,12 @@
         { text: 'Mexico', value: 'Mexico' },
     ];
 
-    function createShipCountryFn(args) {
+    function createShipCountryHandler() {
         comboBoxElement = document.createElement('input');
         return comboBoxElement;
     }
 
-    function writeShipCountryFn(args) {
+    function writeShipCountryHandler(args) {
         var rowData = args.rowData;
         comboBoxObj = new ej.dropdowns.ComboBox({
             dataSource: selectDataSource,
@@ -40,11 +40,11 @@
         comboBoxObj.appendTo(comboBoxElement);
     }
 
-    function destroyShipCountryFn() {
+    function destroyShipCountryHandler() {
         comboBoxObj.destroy();
     }
 
-    function readShipCountryFn(args) {
+    function readShipCountryHandler() {
         return comboBoxObj.value;
     }
 </script>

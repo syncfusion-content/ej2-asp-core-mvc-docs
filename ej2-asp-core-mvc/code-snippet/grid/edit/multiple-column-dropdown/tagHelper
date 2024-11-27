@@ -7,7 +7,7 @@
         <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" editType="numericedit" validationRules="@(new { required= true,min=1, max=1000 })" format="C2" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" editType="datepickeredit" width="130"></e-grid-column> 
-        <e-grid-column field="ShipCountry" headerText="Ship Country" edit="@(new {create = "createShipCountryFn", read = "readShipCountryFn", destroy = "destroyShipCountryFn", write = "writeShipCountryFn"})" width="300"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" edit="@(new {create = "createShipCountryHandler", read = "readShipCountryHandler", destroy = "destroyShipCountryHandler", write = "writeShipCountryHandler"})" width="300"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
@@ -16,18 +16,18 @@
     var dropDownListObj;
     var dropDownDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
 
-    function createShipCountryFn() {
+    function createShipCountryHandler() {
         dropDownElement = document.createElement('input');
         return dropDownElement;
     }
-    function destroyShipCountryFn() {
+    function destroyShipCountryHandler() {
         dropDownListObj.destroy();
     }
-    function readShipCountryFn() {
+    function readShipCountryHandler() {
         return dropDownListObj.value;
     }
 
-    function writeShipCountryFn(args) {
+    function writeShipCountryHandler(args) {
         var rowData = args.rowData;
         dropDownListObj = new ej.dropdowns.DropDownList({
             dataSource: dropDownDataSource,

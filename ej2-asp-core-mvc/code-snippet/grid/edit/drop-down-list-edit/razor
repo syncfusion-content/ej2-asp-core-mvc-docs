@@ -4,7 +4,7 @@
     col.Field("CustomerID").HeaderText("Customer Name").Width(120).Add();
     col.Field("Freight").HeaderText("Freight").EditType("numericedit").ValidationRules(new { required = "true", min = 1, max = 1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
     col.Field("OrderDate").HeaderText("Order Date").Width("130").EditType("datepickeredit").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Edit(new { create = "createShipCountryFn", read = "readShipCountryFn", destroy = "destroyShipCountryFn", write = "writeShipCountryFn" }).Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Edit(new { create = "createShipCountryHandler", read = "readShipCountryHandler", destroy = "destroyShipCountryHandler", write = "writeShipCountryHandler" }).Width("150").Add();
 }).EditSettings(edit => edit.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 <script>
@@ -23,18 +23,18 @@
         { text: 'France', value: 'France' }
     ];
 
-    function createShipCountryFn() {
+    function createShipCountryHandler() {
         dropDownElement = document.createElement('input');
         return dropDownElement;
     }
-    function destroyShipCountryFn() {
+    function destroyShipCountryHandler() {
         dropDownListObj.destroy();
     }
-    function readShipCountryFn() {
+    function readShipCountryHandler() {
         return dropDownListObj.value;
     }
 
-    function writeShipCountryFn(args) {
+    function writeShipCountryHandler(args) {
         var rowData = args.rowData;
         dropDownListObj = new ej.dropdowns.DropDownList({
             dataSource: selectDataSource,

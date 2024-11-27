@@ -3,8 +3,8 @@
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required= true })" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="120" ></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" edit="@(new {create = "createShipCountryFn", read = "readShipCountryFn", destroy = "destroyShipCountryFn", write = "writeShipCountryFn"})" width="150"></e-grid-column>
-        <e-grid-column field="ShipState" headerText="Ship Country" edit="@(new {create = "createShipStateFn", read = "readShipStateFn", destroy = "destroyShipStateFn", write = "writeShipStateFn"})" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" edit="@(new {create = "createShipCountryHandler", read = "readShipCountryHandler", destroy = "destroyShipCountryHandler", write = "writeShipCountryHandler"})" width="150"></e-grid-column>
+        <e-grid-column field="ShipState" headerText="Ship Country" edit="@(new {create = "createShipStateHandler", read = "readShipStateHandler", destroy = "destroyShipStateHandler", write = "writeShipStateHandler"})" width="150"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" editType="datepickeredit" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
@@ -27,24 +27,24 @@
     var shipStateElement;
     var shipStateObj;
 
-    function createShipCountryFn() {
+    function createShipCountryHandler() {
         shipCountryElement = document.createElement('input');
         return shipCountryElement;
     }
-    function readShipCountryFn() {
+    function readShipCountryHandler() {
         return shipCountryObj.text;
     }
-    function destroyShipCountryFn() {
+    function destroyShipCountryHandler() {
         shipCountryObj.destroy();
     }
-    function writeShipCountryFn(args) {
+    function writeShipCountryHandler() {
         shipCountryObj = new ej.dropdowns.DropDownList({
             dataSource: new ej.data.DataManager(country),
             fields: { value: 'countryId', text: 'countryName' },
             change: () => {
                 shipStateObj.enabled = true;
-                var tempQuery = new ej.data.Query().where('countryId', 'equal', shipCountryObj.value);
-                shipStateObj.query = tempQuery;
+                var filteredQuery = new ej.data.Query().where('countryId', 'equal', shipCountryObj.value);
+                shipStateObj.query = filteredQuery;
                 shipStateObj.text = '';
                 shipStateObj.dataBind();
             },
@@ -54,17 +54,17 @@
         shipCountryObj.appendTo(shipCountryElement);
     }
 
-    function createShipStateFn() {
+    function createShipStateHandler() {
         shipStateElement = document.createElement('input');
         return shipStateElement;
     }
-    function readShipStateFn() {
+    function readShipStateHandler() {
         return shipStateObj.text;
     }
-    function destroyShipStateFn() {
+    function destroyShipStateHandler() {
         shipStateObj.destroy();
     }
-    function writeShipStateFn(args) {
+    function writeShipStateHandler() {
         shipStateObj = new ej.dropdowns.DropDownList({
             dataSource: new ej.data.DataManager(state),
             fields: { value: 'stateId', text: 'stateName' },

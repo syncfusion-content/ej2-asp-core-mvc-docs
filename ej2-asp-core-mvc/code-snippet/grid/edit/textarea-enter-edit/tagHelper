@@ -9,23 +9,23 @@
         <e-grid-column field="CustomerID" headerText="Customer ID" validationRules="@(new { required=true})" width="120"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" editType="numericedit" validationRules="@(new { required= true,min=1, max=1000 })" textAlign="Right" width="120"></e-grid-column> 
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" editType="datepickeredit" width="120"></e-grid-column>
-        <e-grid-column field="ShipAddress" headerText="Ship Address" disableHtmlEncode="false" edit="@(new {create = "createShipAddressFn", read = "readShipAddressFn", destroy = "destroyShipAddressFn", write = "writeShipAddressFn"})" valueAccessor="valueAccessor" editType="dropdownedit" width="150"></e-grid-column>
+        <e-grid-column field="ShipAddress" headerText="Ship Address" disableHtmlEncode="false" edit="@(new {create = "createShipAddressHandler", read = "readShipAddressHandler", destroy = "destroyShipAddressHandler", write = "writeShipAddressHandler"})" valueAccessor="valueAccessor" editType="dropdownedit" width="150"></e-grid-column>
    </e-grid-columns>
 </ejs-grid>
 
 <script>
-    function createShipAddressFn() {
+    function createShipAddressHandler() {
         textBoxElementent = document.createElement('textarea');
         return textBoxElement;
     }
-    function destroyShipAddressFn() {
+    function destroyShipAddressHandler() {
         textBoxObject.destroy();
     }
-    function readShipAddressFn() {
+    function readShipAddressHandler() {
         return textBoxObject.value;
     }
 
-    function writeShipAddressFn(args) {
+    function writeShipAddressHandler(args) {
         var rowData = args.rowData;
         textBoxObject = new ej.inputs.TextBox({
             multiline: true,

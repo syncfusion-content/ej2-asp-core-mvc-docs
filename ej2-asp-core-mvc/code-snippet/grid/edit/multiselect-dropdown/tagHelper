@@ -5,7 +5,7 @@
         <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" editType="numericedit" validationRules="@(new { required= true,min=1, max=1000 })" format="C2" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" editType="datepickeredit" format="yMd" textAlign="Right" width="130"></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City" edit="@(new {create = "createShipCityFn", read = "readShipCityFn", destroy = "destroyShipCityFn", write = "writeShipCityFn"})" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" edit="@(new {create = "createShipCityHandler", read = "readShipCityHandler", destroy = "destroyShipCityHandler", write = "writeShipCityHandler"})" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
@@ -35,17 +35,17 @@
         { value: 'Charleroi', text: 'Charleroi' }
     ];
 
-    function createShipCityFn() {
+    function createShipCityHandler() {
         multiSelectElement = document.createElement('input');
         return multiSelectElement;
     }
-    function readShipCityFn() {
+    function readShipCityHandler() {
         return multiSelectObj.value;
     }
-    function destroyShipCityFn() {
+    function destroyShipCityHandler() {
         multiSelectObj.destroy();
     }
-    function writeShipCityFn() {
+    function writeShipCityHandler() {
         multiSelectObj = new ej.dropdowns.MultiSelect({
             dataSource: multiSelectDatasource,
             value: orderData.ShipCity,
