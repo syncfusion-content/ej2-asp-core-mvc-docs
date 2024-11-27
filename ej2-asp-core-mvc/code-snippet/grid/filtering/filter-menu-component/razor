@@ -1,0 +1,39 @@
+@using Newtonsoft.Json;
+@{
+    var filteruiTemplate = new
+    {
+        ui = new
+        {
+            create = "createCustomFilter",
+            write = "writeCustomFilter",
+            read = "readCustomFilter"
+        }
+    };
+}
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("300px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Filter(filteruiTemplate).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+}).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Menu); }).Render()
+<script>
+    let dropInstance;
+    function createCustomFilter(args) {
+        var filterInputElement = new ej.base.createElement('input', { className: 'filter-input' });
+        args.target.appendChild(filterInputElement);
+        dropInstance = new ej.dropdowns.DropDownList({
+            dataSource: new ej.data.DataManager(@Html.Raw(JsonConvert.SerializeObject(ViewBag.dataSource))),
+            fields: { text: 'CustomerID', value: 'CustomerID' },
+            placeholder: 'Select a value',
+            popupHeight: '200px'
+        });
+        dropInstance.appendTo(filterInputElement);
+    }
+    function writeCustomFilter(args) {
+            dropInstance.value = args.filteredValue;
+    }
+    function readCustomFilter(args) {
+        args.fltrObj.filterByColumn(args.column.field, args.operator, dropInstance.value);
+    }
+</script>
