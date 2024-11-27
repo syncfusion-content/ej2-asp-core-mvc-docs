@@ -11,7 +11,7 @@
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey='true' textAlign="Right" width="150"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="160" edit="@(new { @params = new Syncfusion.EJ2.Inputs.NumericTextBox() {
-           Change="changeFn"
+           Change="changeFunction"
            }})"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="130"></e-grid-column>
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="140"></e-grid-column>
@@ -25,7 +25,7 @@
             selectedRecord = args.rowData;
         }
     }
-    function changeFn(args) {
+    function changeFunction(args) {
         var gridInstance = document.getElementById("grid").ej2_instances[0];
         selectedRecord['Freight'] = args.value;
         gridInstance.aggregateModule.refresh(selectedRecord);
