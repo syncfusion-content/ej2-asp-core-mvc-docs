@@ -10,7 +10,7 @@ documentation: ug
 
 # Group and caption aggregate in ASP.Net MVC Grid component
 
-Group footer and caption aggregates in the Syncfusion ASP.Net MVC Grid component allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the `GroupFooterTemplate` and `GroupCaptionTemplate` properties of the [AggregateColumn](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridAggregateColumns.html).
+Group footer and caption aggregates in the Syncfusion ASP.Net MVC Grid component allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the `GroupFooterTemplate` and `GroupCaptionTemplate` properties of the `AggregateColumn`.
 
 > When working with group aggregates in Syncfusion Grid, it is important to set the property [AllowGrouping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) of the `Column` to **true**. 
 > To maintain grouped columns in the grid after grouping, set [ShowGroupedColumn](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_ShowGroupedColumn) to **true**.
@@ -30,10 +30,10 @@ Here's an example that demonstrates how to use group footer aggregates in the Sy
 {% endhighlight %}
 {% endtabs %}
 
-![Group footer aggregates](../../images/aggregates/group-footer-aggregates.png)
+![Group footer aggregates](../images/aggregates/group-footer-aggregates.png)
 
 > * Use the template reference variable name as **GroupFooterTemplate** to specify the group footer template and as **GroupCaptionTemplate** to specify the group caption template.
-> * The aggregate values must be accessed inside the template using their corresponding [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.AggregateType.html) name.
+> * The aggregate values must be accessed inside the template using their corresponding `Type` name.
 
 ## Group caption aggregates
 
@@ -50,7 +50,7 @@ Here's an example that demonstrates how to use group and caption aggregates in t
 {% endhighlight %}
 {% endtabs %}
 
-![Group caption aggregates](../../images/aggregates/group-caption-aggregates.png)
+![Group caption aggregates](../images/aggregates/group-caption-aggregates.png)
 
 > The group total summary in Syncfusion Grid is calculated based on the current page records for each group by default.
 > If you require aggregates for all the data in the grid, you can enable the [DisablePageWiseAggregates](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_DisablePageWiseAggregates) property.
@@ -68,4 +68,4 @@ In some cases, you may want to disable the page-wise aggregates for grouping in 
 {% endhighlight %}
 {% endtabs %}
 
-![Disable page wise aggregates for grouping](../../images/aggregates/group-disable-page.gif)
+![Disable page wise aggregates for grouping](../images/aggregates/group-disable-page.gif)

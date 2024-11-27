@@ -21,14 +21,14 @@ The Syncfusion ASP.Net MVC Grid component allows you to calculate and display ag
 {% endhighlight %}
 {% endtabs %}
 
-![Footer Aggregates](../../images/aggregates/footer-aggregate.png)
+![Footer Aggregates](../images/aggregates/footer-aggregate.png)
 
 > * Use the template reference variable name **FooterTemplate** to specify the footer template.
-> * Inside the template, access the aggregate values using their corresponding [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.AggregateType.html) name. For example, to access the sum aggregate value, use **data.sum**.
+> * Inside the template, access the aggregate values using their corresponding `Type` name. For example, to access the sum aggregate value, use **data.sum**.
 
 ## Format the aggregate value
 
-To format the aggregate value result in the Syncfusion ASP.Net MVC Grid component, you can use the `Format` property of the[AggregateColumn](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridAggregateColumns.html). The `Format` property allows you to specify a format string that determines how the aggregate value will be displayed.
+To format the aggregate value result in the Syncfusion ASP.Net MVC Grid component, you can use the `Format` property of the `AggregateColumn`. The `Format` property allows you to specify a format string that determines how the aggregate value will be displayed.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -39,7 +39,7 @@ To format the aggregate value result in the Syncfusion ASP.Net MVC Grid componen
 {% endhighlight %}
 {% endtabs %}
 
-![Format the aggregate value](../../images/aggregates/format-aggergate.png)
+![Format the aggregate value](../images/aggregates/format-aggergate.png)
 
 ## How to place aggregates on top of the Grid
 
@@ -56,4 +56,4 @@ In the following, footer content is appended to the header content using the `Da
 {% endhighlight %}
 {% endtabs %}
 
-![Place aggregates on top of the Grid](../../images/aggregates/top-aggergate.png)
+![Place aggregates on top of the Grid](../images/aggregates/top-aggergate.png)

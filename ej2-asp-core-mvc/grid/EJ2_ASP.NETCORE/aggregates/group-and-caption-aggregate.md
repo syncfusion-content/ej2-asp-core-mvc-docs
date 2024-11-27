@@ -10,7 +10,7 @@ documentation: ug
 
 # Group and caption aggregate in ASP.Net Core Grid component
 
-Group footer and caption aggregates in the Syncfusion ASP.Net Core Grid component allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the `groupFooterTemplate` and `groupCaptionTemplate` properties of the [AggregateColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumns.html).
+Group footer and caption aggregates in the Syncfusion ASP.Net Core Grid component allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the `groupFooterTemplate` and `groupCaptionTemplate` properties of the `aggregateColumn`.
 
 > When working with group aggregates in Syncfusion Grid, it is important to set the property [allowGrouping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) of the `column` to **true**. 
 > To maintain grouped columns in the grid after grouping, set [showGroupedColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_ShowGroupedColumn) to **true**.
@@ -33,7 +33,7 @@ Here's an example that demonstrates how to use group footer aggregates in the Sy
 ![Group footer aggregates](../images/aggregates/group-footer-aggregates.png)
 
 > * Use the template reference variable name as **groupFooterTemplate** to specify the group footer template and as **groupCaptionTemplate** to specify the group caption template.
-> * The aggregate values must be accessed inside the template using their corresponding [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.AggregateType.html) name.
+> * The aggregate values must be accessed inside the template using their corresponding `type` name.
 
 ## Group caption aggregates
 

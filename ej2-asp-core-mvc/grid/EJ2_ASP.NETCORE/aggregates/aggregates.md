@@ -10,7 +10,7 @@ documentation: ug
 
 # Aggregates in ASP.Net Core Grid component
 
-The Aggregates feature in the Syncfusion ASP.Net Core Grid component allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the **e-grid-aggregates** directive. To represent an aggregate column, you need to specify the minimum required properties, such as `field` and [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.AggregateType.html).
+The Aggregates feature in the Syncfusion ASP.Net Core Grid component allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the **e-grid-aggregates** directive. To represent an aggregate column, you need to specify the minimum required properties, such as `field` and `type`.
 
 **Displaying aggregate values**
 
@@ -39,7 +39,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 
 ## Built-in aggregate types
 
-The Syncfusion ASP.Net Core Grid component provides several built-in aggregate types that can be specified in the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.AggregateType.html) property to configure an aggregate column.
+The Syncfusion ASP.Net Core Grid component provides several built-in aggregate types that can be specified in the `type` property to configure an aggregate column.
 
 The available built-in aggregate types are:
 

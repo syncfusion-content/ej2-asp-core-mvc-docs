@@ -10,7 +10,7 @@ documentation: ug
 
 # Aggregates in ASP.Net MVC Grid component
 
-The Aggregates feature in the Syncfusion ASP.Net MVC Grid component allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the **Aggregates** property. To represent an aggregate column, you need to specify the minimum required properties, such as `Field` and [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.AggregateType.html).
+The Aggregates feature in the Syncfusion ASP.Net MVC Grid component allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the **Aggregates** property. To represent an aggregate column, you need to specify the minimum required properties, such as `Field` and `Type`.
 
 **Displaying aggregate values**
 
@@ -31,7 +31,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 {% endhighlight %}
 {% endtabs %}
 
-![Aggregates](../../images/aggregates/aggregates.png)
+![Aggregates](../images/aggregates/aggregates.png)
 
 > * When using local data, the total summary is calculated based on the entire dataset available in the grid. The aggregate values will reflect calculations across all the rows in the grid.
 
@@ -39,7 +39,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 
 ## Built-in aggregate types
 
-The Syncfusion ASP.Net MVC Grid component provides several built-in aggregate types that can be specified in the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.AggregateType.html) property to configure an aggregate column.
+The Syncfusion ASP.Net MVC Grid component provides several built-in aggregate types that can be specified in the `Type` property to configure an aggregate column.
 
 The available built-in aggregate types are:
 
@@ -62,25 +62,4 @@ Here is an example that demonstrates how to use built-in aggregates types in the
 {% endhighlight %}
 {% endtabs %}
 
-![Built-in aggregate types](../../images/aggregates/aggregate-types.png)
-
-## Multiple aggregates for a column
-
-Multiple aggregates for a column allows you to calculate and display different summary values simultaneously for a single column in a grid. Normally, a column is associated with a single aggregate function, such as sum, average, count and etc., which provides a single summary value for the entire column.
-
-However, in scenarios where you need to display multiple summary values for the same column, multiple aggregates come into play. This feature enables you to calculate and display various aggregate values, such as sum, average, minimum, maximum, or custom calculations, concurrently for a specific column.
-
-You can use multiple aggregates for a single column in the Syncfusion ASP.Net MVC Grid by specifying the aggregate [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.AggregateType.html) as an array.
-
-Here's an example of how to use multiple aggregates in the Syncfusion ASP.Net MVC Grid:
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/aggregate/aggregates-multiple/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="aggregate.cs" %}
-{% include code-snippet/grid/aggregate/aggregates-multiple/aggregate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Multiple aggregates for a column](../../images/aggregates/aggregate-types.png)
+![Built-in aggregate types](../images/aggregates/aggregate-types.png)

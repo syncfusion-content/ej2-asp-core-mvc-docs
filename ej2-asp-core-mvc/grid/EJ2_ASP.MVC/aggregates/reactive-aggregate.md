@@ -27,7 +27,7 @@ Here's an example code snippet demonstrating how to auto update aggregate value 
 {% endhighlight %}
 {% endtabs %}
 
-![Auto update aggregate value in batch editing](../../images/aggregates/aggregate-batch.gif)
+![Auto update aggregate value in batch editing](../images/aggregates/aggregate-batch.gif)
 
 > Adding a new record to the grouped grid will not refresh the aggregate values.
 
@@ -46,6 +46,6 @@ In the following code, the input event for the Freight column editor has been re
 {% endhighlight %}
 {% endtabs %}
 
-![Group footer aggregates](../../images/aggregates/inline.gif)
+![Group footer aggregates](../images/aggregates/inline.gif)
 
 

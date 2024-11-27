@@ -24,11 +24,11 @@ The Syncfusion ASP.Net Core Grid component allows you to calculate and display a
 ![Footer aggregate](../images/aggregates/footer-aggregate.png)
 
 > * Use the template reference variable name **footerTemplate** to specify the footer template.
-> * Inside the template, access the aggregate values using their corresponding [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.AggregateType.html) name. For example, to access the sum aggregate value, use **data.sum**.
+> * Inside the template, access the aggregate values using their corresponding `type` name. For example, to access the sum aggregate value, use **data.sum**.
 
 ## Format the aggregate value
 
-To format the aggregate value result in the Syncfusion ASP.Net Core Grid component, you can use the `format` property of the [AggregateColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumns.html). The `format` property allows you to specify a format string that determines how the aggregate value will be displayed.
+To format the aggregate value result in the Syncfusion ASP.Net Core Grid component, you can use the `format` property of the `aggregateColumn`. The `format` property allows you to specify a format string that determines how the aggregate value will be displayed.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
