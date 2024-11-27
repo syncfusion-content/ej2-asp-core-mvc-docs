@@ -195,7 +195,7 @@ In this example, the format property specifies the date format as "**yyyy-MMM-dd
 
 ### Format template column value 
 
-In the Syncfusion ASP.NET CORE Grid, you have the ability to customize the display of data in a column through the use of template columns. Formatting template column values is essential for enhancing the visual representation of data in a web application. It allows the customization of the appearance of specific column data, such as dates and numbers, to improve readability and user understanding.
+In the Syncfusion ASP.NET Core Grid, you have the ability to customize the display of data in a column through the use of template columns. Formatting template column values is essential for enhancing the visual representation of data in a web application. It allows the customization of the appearance of specific column data, such as dates and numbers, to improve readability and user understanding.
 
 To illustrate how to format a template column value, consider the following example where the **OrderDate** column is formatted to display dates in the **‘dd/MMM/yyyy’** format.
 
@@ -292,7 +292,7 @@ Here is an example of how you can prevent a checkbox from being displayed in a b
 
 ## AutoFit columns
 
-The Grid has a feature that allows to automatically adjust column widths based on the maximum content width of each column when you double-click on the resizer symbol located in a specific column header. This feature ensures that all data in the grid rows is displayed without wrapping. To use this feature, you need to enable the resizer symbol in the column header by setting the [AllowResizing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowResizing) property to true in the grid.
+The Grid has a feature that allows to automatically adjust column widths based on the maximum content width of each column when you double-click on the resizer symbol located in a specific column header. This feature ensures that all data in the grid rows is displayed without wrapping. To use this feature, you need to enable the resizer symbol in the column header by setting the [allowResizing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowResizing) property to true in the grid.
 
 ### Resizing a column to fit its content using AutoFit method
 
@@ -332,9 +332,9 @@ You can enable this feature by setting the [autoFit](https://help.syncfusion.com
 
 ### AutoFit columns when changing column visibility using column chooser
 
-In Syncfusion Grid, you can auto-fit columns when the column visibility is changed using the column chooser. This can be achieved by calling the `AutoFitColumns` method in the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event. By using the **requestType** property in the event arguments, you can differentiate between different actions, and then call the `AutoFitColumns` method when the request type is **columnState**.
+In Syncfusion Grid, you can auto-fit columns when the column visibility is changed using the column chooser. This can be achieved by calling the `autoFitColumns` method in the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event. By using the **requestType** property in the event arguments, you can differentiate between different actions, and then call the `autoFitColumns` method when the request type is **columnState**.
 
-Here's an example code snippet in ASP.NET CORE that demonstrates how to AutoFit columns when changing column visibility using column chooser:
+Here's an example code snippet in ASP.NET Core that demonstrates how to AutoFit columns when changing column visibility using column chooser:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

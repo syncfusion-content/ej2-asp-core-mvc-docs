@@ -495,7 +495,7 @@ To access columns in the Syncfusion Grid, you can use the following methods in t
 This method returns the array of columns defined in the grid.
 
 ```ts
-let Columns = Grid.GetColumns();
+let columns = Grid.GetColumns();
 ```
 
 * **`GetColumnByField`**:
@@ -503,7 +503,7 @@ let Columns = Grid.GetColumns();
 This method returns the column object that matches the specified field name.
 
 ```ts
-let Column = Grid.GetColumnByField('ProductName');
+let column = Grid.GetColumnByField('ProductName');
 ```
 
 * **`GetColumnByUid`**:
@@ -511,7 +511,7 @@ let Column = Grid.GetColumnByField('ProductName');
 This method returns the column object that matches the specified UID.
 
 ```ts
-let Column = Grid.GetColumnByUid();
+let column = Grid.GetColumnByUid();
 ```
 
 * **`GetVisibleColumns`**:
@@ -519,7 +519,7 @@ let Column = Grid.GetColumnByUid();
 This method returns the array of visible columns.
 
 ```ts
-let VisibleColumns = Grid.GetVisibleColumns();
+let visibleColumns = Grid.GetVisibleColumns();
 ```
 
 * **`GetForeignKeyColumns`**:
@@ -527,7 +527,7 @@ let VisibleColumns = Grid.GetVisibleColumns();
 This method returns the array of foreignkey columns.
 
 ```ts
-let ForeignKeyColumns = Grid.GetForeignKeyColumns();
+let foreignKeyColumns = Grid.GetForeignKeyColumns();
 ```
 
 * **`GetColumnFieldNames`**
@@ -535,7 +535,7 @@ let ForeignKeyColumns = Grid.GetForeignKeyColumns();
 This method returns an array of field names of all the columns in the Grid.
 
 ```ts
-let FieldNames = Grid.GetColumnFieldNames()
+let fieldNames = Grid.GetColumnFieldNames()
 ```
 
 > For a complete list of column methods and properties, refer to this [Section](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html).
@@ -586,7 +586,7 @@ grid.RefreshColumns();
 
 The Syncfusion ASP.NET Grid MVC provides a built-in feature to toggle the visibility of columns based on media queries using the `HideAtMedia` property of the column object. The `HideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
 
-In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
+In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `HideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
