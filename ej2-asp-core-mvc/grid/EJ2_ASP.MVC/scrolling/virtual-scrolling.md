@@ -108,25 +108,6 @@ The following example enable column virtualization using `EnableColumnVirtualiza
     11. Column chooser
     12. Page
 
-## Limitations for virtual scrolling
-
-* While using column virtual scrolling, column width should be in the pixel. Percentage values are not accepted.
-* Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited by the browser capability.
-* The cell selection is not supported for both row and column virtual scrolling.
-* While using column virtualization, fixed position applied only viewport column. If scroll the next set of column fixed position is removed.
-* Virtual scrolling is not compatible with batch editing, detail template, rowspan, colspan, autofill and hierarchy features.
-* Group expand and collapse state will not be persisted.
-* Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with Page](./grouping/#group-with-paging) topic.
-* The page size provided must be two times larger than the number of visible rows in the grid. If the page size is failed to meet this condition then the size will be determined by grid.
-* The height of the grid content is calculated using the row height and total number of records in the data source and hence features which changes row height such as text wrapping are not supported. If you want to increase the row height to accommodate the content then you can specify the row height as below to ensure all the table rows are in same height.
-
-```css
-.e-grid .e-row {
-    height: 2em;
-}
-```
-* Programmatic selection using the **selectRows** method is not supported in virtual scrolling.
-
 ## Browser height limitation in virtual scrolling and solution
 
 You can load millions of records in the Grid by using virtual scrolling, where the grid loads and renders rows on-demand while scrolling vertically. As a result, Grid lightens the browser’s load by minimizing the DOM elements and rendering elements visible in the viewport. The height of the grid is calculated using the Total Records Count * [Row Height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property.
