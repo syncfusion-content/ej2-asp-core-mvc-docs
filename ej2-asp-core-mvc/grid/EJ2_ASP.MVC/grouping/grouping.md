@@ -130,12 +130,6 @@ The following example demonstrates how to sort the **CustomerID** column by sett
 
 ![Sort grouped columns in descending order](../images/grouping/grouping-descending-order.png)
 
-## Group with paging
-
-The Grid component supports grouping columns with paging feature. When grouping is applied, the grid displays aggregated information and total items based on the current page. However, by default, the group footer and group caption footer does not consider the aggregated information and total items from other pages. To get additional details from other pages, set the [GroupSettings.DisablePageWiseAggregates](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_DisablePageWiseAggregates) property to **false**.
-
-> If remote data is bound to grid dataSource, two requests will be sent when performing grouping action one for getting the grouped data and another for getting aggregate details and total items count.
-
 ## Group by format
 
 By default, columns are grouped by the data or value present for the particular row. However, you can also group numeric or datetime columns based on the specified format. To enable this feature, you need to set the `EnableGroupByFormat` property of the corresponding grid column. This feature allows you to group numeric or datetime columns based on a specific format.
@@ -301,4 +295,4 @@ The following example demonstrates how the `ActionBegin` and `ActionComplete` ev
 
 ## See Also
 
-* [Exporting grouped records](../../EJ2_ASP.MVC/excel-export/excel-exporting#Exporting-grouped-records)
+* [Exporting grouped records](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/excel-export/excel-export-options#exporting-grouped-records)
