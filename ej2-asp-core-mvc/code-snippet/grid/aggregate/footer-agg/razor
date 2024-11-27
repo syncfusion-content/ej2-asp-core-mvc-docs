@@ -1,9 +1,0 @@
-@Html.EJS().Grid("Footer").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
-{
-  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-  col.Field("Freight").HeaderText("Freight").Width("160").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-  col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
-
-}).AllowPaging().PageSettings(page => { page.PageCount(5); }).Aggregates(agg=> { agg.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Type = "Sum", FooterTemplate = "Sum: ${Sum}" } }).Add();
-  agg.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Type = "Average", FooterTemplate = "Average: ${Average}" } }).Add(); }).Render()
