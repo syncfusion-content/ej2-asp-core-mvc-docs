@@ -29,23 +29,28 @@
   let filteredData = [];
   let showRecords = false;
   let showWarning = false;
-  document.getElementById('getFilteredData').addEventListener('click', function () {
-    filteredData = document.getElementById("grid").ej2_instances[0].getFilteredRecords();
-    showRecords = filteredData.length > 0;
-    showWarning = !showRecords;
-    document.getElementById('filteredGrid').style.display = showRecords ? 'block' : 'none';
-    document.getElementById('msg_warning').style.display = showWarning ? 'block' : 'none';
-    if (showRecords) {
-      document.getElementById("filterGrid").ej2_instances[0].dataSource = filteredData;
+  document.getElementById('getFilteredData').onclick = handleClickEvent;
+    document.getElementById('clearFilter').onclick = handleClickEvent;
+    function handleClickEvent(event) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if(event.target.id==="getFilteredData"){
+          filteredData = grid.getFilteredRecords();
+          showRecords = filteredData.length > 0;
+          showWarning = !showRecords;
+          document.getElementById('filteredGrid').style.display = showRecords ? 'block' : 'none';
+          document.getElementById('msg_warning').style.display = showWarning ? 'block' : 'none';
+          if (showRecords) {
+            document.getElementById("filterGrid").ej2_instances[0].dataSource = filteredData;
+          }
+        }else if(event.target.id==="clearFilter")
+        {
+          grid.clearFiltering();
+          showRecords = false;
+          showWarning = false;
+          document.getElementById('filteredGrid').style.display = 'none';
+          document.getElementById('msg_warning').style.display = 'none';
+        }
     }
-  });
-  document.getElementById('clearFilter').addEventListener('click', function () {
-    document.getElementById("grid").ej2_instances[0].clearFiltering();
-    showRecords = false;
-    showWarning = false;
-    document.getElementById('filteredGrid').style.display = 'none';
-    document.getElementById('msg_warning').style.display = 'none';
-  });
 </script>
 <style>
   .msg-button {
