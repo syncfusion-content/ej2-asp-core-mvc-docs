@@ -1,0 +1,23 @@
+<div style="padding:0px 0px 20px 0px">
+    @Html.EJS().Button("show").CssClass("e-info").Content("Show").Render()
+    @Html.EJS().Button("hide").CssClass("e-info").Content("Hide").Render()
+</div>
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("90").Add();
+        col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+        col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Width("90").Add();
+        col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width("120").Add();
+    }).Height("315").Render();
+
+<script type="text/javascript">
+    document.getElementById('show').addEventListener('click', function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.showColumns('CustomerID', 'field'); //show by Field
+    });
+    document.getElementById('hide').addEventListener('click', function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.hideColumns('CustomerID', 'field'); //hide by Field
+    });
+</script>
