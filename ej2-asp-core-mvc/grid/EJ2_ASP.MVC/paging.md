@@ -104,7 +104,7 @@ The pager template in Syncfusion Grid allows you to customize the appearance and
 
 To use the pager template, you need to specify the [PagerTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PagerTemplate) property in your Syncfusion Grid configuration. The `PagerTemplate` property allows you to define a custom template for the pager. Within the template, you can access the [CurrentPage](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_CurrentPage), [PageSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize), [PageCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageCount), **totalPage** and **totalRecordCount** values.
 
-The following example demonstrates how to render a **NumericTextBox** component in the pager using the `pagerTemplate` property:
+The following example demonstrates how to render a **NumericTextBox** component in the pager using the `PagerTemplate` property:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
