@@ -251,4 +251,4 @@ The following example that example demonstrates how to use these events to displ
 
 ## See Also
 
-* [Group with Paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/grouping#group-with-paging)
+* [Group with Paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/grouping#group-with-paging) 
