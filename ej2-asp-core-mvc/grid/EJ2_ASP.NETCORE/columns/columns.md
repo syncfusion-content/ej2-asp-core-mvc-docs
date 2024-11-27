@@ -581,7 +581,6 @@ You can use the `refreshColumns` method of the Syncfusion Grid to refresh the co
 ```ts
 grid.refreshColumns();
 ```
-
 ## Responsive columns
 
 The Syncfusion ASP.NET Grid Core provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](../../api/grid/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
