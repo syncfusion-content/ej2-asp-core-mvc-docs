@@ -12,7 +12,7 @@ documentation: ug
 
 Syncfusion ASP.NET MVC conversion is a Visual Studio add-in that converts an existing ASP.NET MVC application into a Syncfusion ASP.NET MVC (Essential JS 2) Web application by adding the required assemblies and resource files.
 
-N> The Syncfusion ASP.NET MVC (Essential JS 2) Web Application Project conversion utility is available from v16.3.0.17. Before use, the Syncfusion ASP.NET MVC Project Conversion, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio version build installed or not. If the Essential Studio version is not same for both the Extension and build, then the Project Conversion will not be shown.
+N> The Syncfusion ASP.NET MVC (Essential JS 2) Web Application Project conversion utility is available from v16.3.0.17. Before use, the Syncfusion ASP.NET MVC Project Conversion, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio® version build installed or not. If the Essential Studio® version is not same for both the Extension and build, then the Project Conversion will not be shown.
 
 The steps below help you to convert the ASP.NET MVC application to the Syncfusion ASP.NET MVC application via the Visual Studio:
 
@@ -22,11 +22,11 @@ The steps below help you to convert the ASP.NET MVC application to the Syncfusio
 
     **Option 1:**
 
-    Click **Extensions->Syncfusion Menu** and choose **Essential Studio for ASP.NET MVC > Convert to Syncfusion ASP.NET MVC Application…** in **Visual Studio Menu**.
+    Click **Extensions->Syncfusion Menu** and choose **Essential Studio® for ASP.NET MVC > Convert to Syncfusion ASP.NET MVC Application…** in **Visual Studio Menu**.
 
     ![selected microsoft aspmvc](images/selected-microsoft-mvc-application.png)
 
-    N> In Visual Studio 2017 or lower, Click Syncfusion Menu and choose Essential Studio for ASP.NET MVC > Convert to Syncfusion ASP.NET MVC Application… in Visual Studio Menu.
+    N> In Visual Studio 2017 or lower, Click Syncfusion Menu and choose Essential Studio® for ASP.NET MVC > Convert to Syncfusion ASP.NET MVC Application… in Visual Studio Menu.
 
     ![convert-to-syncfusion](images/convert-project.png)
 
@@ -58,4 +58,4 @@ The steps below help you to convert the ASP.NET MVC application to the Syncfusio
 
     ![BackupLocation](images/BackupLocation.png)
 
-6. If you installed the trial setup or NuGet packages from nuget.org you must register the Syncfusion license key to your project since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx?_ga=2.11237684.1233358434.1587355730-230058891.1567654773) post for understanding the licensing changes introduced in Essential Studio.
+6. If you installed the trial setup or NuGet packages from nuget.org you must register the Syncfusion license key to your project since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx?_ga=2.11237684.1233358434.1587355730-230058891.1567654773) post for understanding the licensing changes introduced in Essential Studio®.
