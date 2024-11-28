@@ -12,7 +12,7 @@ documentation: ug
 
 Custom toolbar in Syncfusion ASP.NET MVC Grid allows you to create a distinctive toolbar layout, style, and functionality that aligns with the specific needs of your application, providing a personalized experience within the Grid component.
 
-This can be achieved by utilizing the [ToolbarTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarTemplate) property, which offers extensive customization options for the toolbar. You can define a custom template for the toolbar and handle the actions of the toolbar items in the **Clicked** event.
+This can be achieved by utilizing the [ToolbarTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarTemplate) property, which offers extensive customization options for the toolbar. You can define a custom template for the toolbar and handle the actions of the toolbar items in the [Clicked](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.navigations.toolbar.html#Syncfusion_EJ2_Navigations_Toolbar_Clicked) event.
 
 The following example demonstrates, how to render the custom toolbar using `ToolbarTemplate`
 
