@@ -1,0 +1,61 @@
+@using Syncfusion.EJ2.Notifications;
+<div id="msg_warning" style="padding-bottom:20px;display: none;">
+    <ejs-message id="msg_warning" content="No Records" cssClass="e-content-center"
+    severity="Warning"></ejs-message>
+</div>
+<div style="padding-bottom:20px">
+    <ejs-button id="getFilteredData" cssClass="e-success msg-button" content="Get Filtered Data"></ejs-button>
+    <ejs-button id="clearFilter" cssClass="e-danger" content="Clear" ></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="280" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="OrderDate" textAlign="Right" format="yMd" width="100"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="90"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<div id="filteredGrid" style="display: none;">
+    <h3>Filtered Records</h3>
+    <ejs-grid id="filterGrid" allowPaging="true" height="200">
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+            <e-grid-column field="OrderDate" headerText="OrderDate" textAlign="Right" format="yMd" width="100"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="90"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>
+<script>
+  let filteredData = [];
+  let showRecords = false;
+  let showWarning = false;
+  document.getElementById('getFilteredData').onclick = handleClickEvent;
+  document.getElementById('clearFilter').onclick = handleClickEvent;
+  function handleClickEvent(event) {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    if(event.target.id==="getFilteredData"){
+      filteredData = grid.getFilteredRecords();
+      showRecords = filteredData.length > 0;
+      showWarning = !showRecords;
+      document.getElementById('filteredGrid').style.display = showRecords ? 'block' : 'none';
+      document.getElementById('msg_warning').style.display = showWarning ? 'block' : 'none';
+      if (showRecords) {
+        document.getElementById("filterGrid").ej2_instances[0].dataSource = filteredData;
+      }
+    }else if(event.target.id==="clearFilter") {
+      grid.clearFiltering();
+      showRecords = false;
+      showWarning = false;
+      document.getElementById('filteredGrid').style.display = 'none';
+      document.getElementById('msg_warning').style.display = 'none';
+    }
+  }
+</script>
+<style>
+  .msg-button {
+    margin-right: 15px;
+  }
+</style>
