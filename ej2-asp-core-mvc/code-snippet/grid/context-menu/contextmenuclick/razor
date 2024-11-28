@@ -1,22 +1,20 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Created("created").EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true)).Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Created("created").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-
-}).AllowPaging().ContextMenuItems(new List<object>() { "Copy", "Edit", "Delete", "Save"}).Render()
-
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+}).AllowPaging().AllowExcelExport().AllowPdfExport().PageSettings(page => { page.PageSize(10); }).ContextMenuItems(new List<object>() {"SortAscending","SortDescending","FirstPage","PrevPage","LastPage","NextPage","PdfExport","ExcelExport"}).Render()
 <script>
     function created() {
-        var grid = document.getElementById("Grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         grid.contextMenuModule.contextMenu.beforeOpen = (args) => {
             if (args.event && args.event.which === 3) args.cancel = true;
             args.event = values;
             grid.contextMenuModule.contextMenuBeforeOpen(args);
         };
     }
-    document.getElementById('Grid').onclick = (event) => {
+    document.getElementById('grid').onclick = (event) => {
         values = event;
         var grid = document.getElementById("Grid").ej2_instances[0];
         grid.contextMenuModule.contextMenu.open(
