@@ -33,7 +33,7 @@ Here is an example that demonstrates the usage of the filter menu in the Syncfus
 
 You can enhance the filtering experience in the Syncfusion  ASP.NET MVC Grid component by customizing the filter menu with custom components. This allows you to replace the default search box with custom components like dropdowns or textboxes. By default, the filter menu provides an autocomplete component for string type columns, a numeric textbox for number type columns, and a dropdown component for boolean type columns, making it easy to search for values.
 
-To customize the filter menu, you can make use of the `Column.Filter.ui` property. This property allows you to integrate your desired custom filter component into a specific column of the Grid. To implement a custom filter UI, you need to define the following functions:
+To customize the filter menu, you can make use of the `Column.Filter.Ui` property. This property allows you to integrate your desired custom filter component into a specific column of the Grid. To implement a custom filter UI, you need to define the following functions:
 
 * **create**: This function is responsible for creating the custom component for the filter.
 * **write**: The write function is used to wire events for the custom component. This allows you to handle changes in the custom filter UI.
@@ -59,7 +59,7 @@ Here is a sample code demonstrating how to render a dropdownlist component for t
 
 ## Show 24 hours time format in filter dialog
 
-The Syncfusion  ASP.NET MVC Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event with `requestType` as `filterafteropen` and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
+The Syncfusion  ASP.NET MVC Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event with `requestType` as `filterafteropen` and set the `timeFormat` of the `DateTimePicker` to **HH:mm**.
 
 Here is an example that demonstrates how to show 24 hours time format in filter dialog:
  

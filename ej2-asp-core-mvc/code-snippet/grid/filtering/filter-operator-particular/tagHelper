@@ -20,7 +20,7 @@
         <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>  
         <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="100"></e-grid-column>     
-        <e-grid-column field="ShipCity" headerText="Ship City"   width="100"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="100"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
@@ -31,12 +31,12 @@
         document.getElementById("fieldDropDown").ej2_instances[0].dataSource = fieldData;
     }
     function onFieldChange(args) {
-        let dropdownOperatorsList = document.getElementById("operatorDropDown").ej2_instances[0]
-        dropdownOperatorsList.enabled = true;
+        let dropDownOperatorsList = document.getElementById("operatorDropDown").ej2_instances[0]
+        dropDownOperatorsList.enabled = true;
         column = document.getElementById("grid").ej2_instances[0].getColumnByField(args.value);
         if (column) {
             availableOperators = column.type === "string" ? @Html.Raw(JsonConvert.SerializeObject(ViewBag.stringOperatorsData)) :  @Html.Raw(JsonConvert.SerializeObject(ViewBag.numericOperatorsData));
-            dropdownOperatorsList.dataSource = availableOperators;
+            dropDownOperatorsList.dataSource = availableOperators;
         }
     }
     function onOperatorChange(args) {

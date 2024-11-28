@@ -4,7 +4,7 @@
     <e-grid-pageSettings pageCount=5></e-grid-pageSettings>
     <e-grid-columns>
         <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="100"></e-grid-column>
-        <e-grid-column field="Employees" headerText="Employee Name"  width="120"></e-grid-column>       
+        <e-grid-column field="Employees" headerText="Employee Name" width="120"></e-grid-column>       
         <e-grid-column field="Designation" headerText="Designation" width="100"></e-grid-column>
         <e-grid-column field="CurrentSalary" headerText="Current Salary" width="100" format="C2"></e-grid-column>
     </e-grid-columns>

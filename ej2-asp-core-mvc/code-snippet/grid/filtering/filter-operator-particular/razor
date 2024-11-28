@@ -28,12 +28,12 @@
         document.getElementById("fieldDropDown").ej2_instances[0].dataSource = fieldData;
     }
     function onFieldChange(args) {
-        let dropdownOperatorsList = document.getElementById("operatorDropDown").ej2_instances[0]
-        dropdownOperatorsList.enabled = true;
+        let dropDownOperatorsList = document.getElementById("operatorDropDown").ej2_instances[0]
+        dropDownOperatorsList.enabled = true;
         column = document.getElementById("grid").ej2_instances[0].getColumnByField(args.value);
         if (column) {
             availableOperators = column.type === "string" ? @Html.Raw(JsonConvert.SerializeObject(ViewBag.stringOperatorsData)) :  @Html.Raw(JsonConvert.SerializeObject(ViewBag.numericOperatorsData));
-            dropdownOperatorsList.dataSource = availableOperators;
+            dropDownOperatorsList.dataSource = availableOperators;
         }
     }
     function onOperatorChange(args) {

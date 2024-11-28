@@ -11,10 +11,10 @@
     function actionComplete(args) {
         if (args.requestType === 'filterAfterOpen') {
             var grid = document.getElementById("grid").ej2_instances[0];
-            let columnObj = grid.getColumnByField(args.columnName);
-            if (columnObj.type === 'datetime') {
-                let dateObj = document.getElementById('dateui-' + columnObj.uid)['ej2_instances'][0];
-                dateObj.timeFormat = 'HH:mm';
+            let columnObject = grid.getColumnByField(args.columnName);
+            if (columnObject.type === 'datetime') {
+                let dateObject = document.getElementById('dateui-' + columnObject.uid)['ej2_instances'][0];
+                dateObject.timeFormat = 'HH:mm';
             }
         }
     }

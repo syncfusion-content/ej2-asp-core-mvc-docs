@@ -25,9 +25,9 @@
       });
       args.target.appendChild(filterInputElement);
       var fieldName = args.column.field;
-      var dropdownData = ej.data.DataUtil.distinct(@Html.Raw(JsonConvert.SerializeObject(ViewBag.dataSource)), fieldName);
+      var dropDownData = ej.data.DataUtil.distinct(@Html.Raw(JsonConvert.SerializeObject(ViewBag.dataSource)), fieldName);
       dropInstance = new ej.dropdowns.MultiSelect({
-        dataSource: dropdownData,
+        dataSource: dropDownData,
         placeholder: 'Select a value',
         popupHeight: '200px',
         allowFiltering: true,

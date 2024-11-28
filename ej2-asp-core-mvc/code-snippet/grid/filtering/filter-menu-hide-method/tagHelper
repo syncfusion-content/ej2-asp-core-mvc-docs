@@ -12,14 +12,12 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-    document.getElementById('performFilter').onclick = function () {
+    document.getElementById('performFilter').onclick = handleClickEvent;
+    document.getElementById('clearFilter').onclick = handleClickEvent;
+    function handleClickEvent(event) {
         var grid = document.getElementById("grid").ej2_instances[0];
-        grid.filterByColumn('CustomerID', 'startswith', 'V');
-    };
-    document.getElementById('clearFilter').onclick = function () {
-        var grid = document.getElementById("grid").ej2_instances[0];
-        grid.clearFiltering();
-    };
+        event.target.id==="performFilter" ? grid.filterByColumn('CustomerID', 'startswith', 'V'):grid.clearFiltering();
+    }
 </script>
 <style>
     .filter-button {

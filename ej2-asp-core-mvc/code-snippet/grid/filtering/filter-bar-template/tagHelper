@@ -6,7 +6,7 @@
     var templateOptionsMultiSelect = new { create = "multiSelectCreate", write = "multiSelectWrite" };
     var templateOptionsDatePicker = new { create = "datePickerCreate", write = "datePickerWrite" };
 }
-<ejs-grid id="grid" dataSource="@ViewBag.DataSource" allowFiltering="true" height="275px">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="275px">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="120" filterBarTemplate=filterBarTemplate></e-grid-column>
@@ -41,7 +41,7 @@
         return dropDown;
     }
     function stringWrite () {
-        var dropdownlist = new ej.dropdowns.DropDownList({
+        var dropDownList  = new ej.dropdowns.DropDownList({
             change: (args) => {
                 var grid = document.getElementById("grid").ej2_instances[0];
                 if (args.value !== 'All') {
@@ -51,7 +51,7 @@
                 }
             }
         });
-        dropdownlist.appendTo(dropDown);
+        dropDownList .appendTo(dropDown);
     }
    function numericCreate(){
         numericElement = document.createElement('input');
@@ -69,11 +69,11 @@
         return dateElement;
     }
     function datePickerWrite (args){
-        var datePickerObj = new ej.calendars.DatePicker({
+        var datePickerObject = new ej.calendars.DatePicker({
             value: new Date(args.column.field),
             change: handleFilterChange,
         });
-        datePickerObj.appendTo(dateElement);
+        datePickerObject.appendTo(dateElement);
     }
     function comboBoxCreate(){
         comboElement = document.createElement('input');
@@ -117,8 +117,8 @@
         var grid = document.getElementById("grid").ej2_instances[0];
         var selectedValues = args.value;
         if (selectedValues.length === 0) {
-                var OrginalData = new ej.data.DataManager(data).executeLocal(new ej.data.Query());
-                grid.dataSource = OrginalData;
+                var orginalData = new ej.data.DataManager(data).executeLocal(new ej.data.Query());
+                grid.dataSource = orginalData;
         } else {
             var predicate = [];
             for (var x = 0; x < selectedValues.length; x++) {

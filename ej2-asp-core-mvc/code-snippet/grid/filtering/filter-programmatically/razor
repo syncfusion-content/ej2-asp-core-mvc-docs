@@ -10,18 +10,21 @@
    col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
 }).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel); }).Render()
 <script>
-    document.getElementById('multipleFilter').onclick = function () {
+    document.getElementById('singleFilter').onclick = handleClickEvent;
+    document.getElementById('multipleFilter').onclick = handleClickEvent;
+    function handleClickEvent(event) {
         var grid = document.getElementById("grid").ej2_instances[0];
-        grid.clearFiltering(); 
-        grid.filterByColumn('CustomerID', 'equal', [
-            'VINET',
-            'TOMSP',
-            'ERNSH',
-        ]);
+        if(event.target.id==="singleFilter"){
+            grid.clearFiltering();
+            grid.filterByColumn('OrderID', 'equal', 10248);
+        }else if(event.target.id==="multipleFilter")
+        {
+            grid.clearFiltering(); 
+            grid.filterByColumn('CustomerID', 'equal', [
+                'VINET',
+                'TOMSP',
+                'ERNSH',
+            ]);
+        }
     }
-    document.getElementById('singleFilter').onclick = function () {
-        var grid = document.getElementById("grid").ej2_instances[0];
-        grid.clearFiltering();
-        grid.filterByColumn('OrderID', 'equal', 10248);
-    };
 </script>

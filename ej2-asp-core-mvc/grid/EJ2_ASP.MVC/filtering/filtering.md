@@ -32,9 +32,9 @@ Here is an example that demonstrates the default filtering feature of the grid:
 
 ## Initial filter
 
-To apply an initial filter, you need to specify the filter criteria using the `predicate` object in [FilterSettings.Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Columns). The `predicate` object represents the filtering condition and contains properties such as field, operator, and value.
+To apply an initial filter, you need to specify the filter criteria using the `Predicate` object in [FilterSettings.Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Columns). The `Predicate` object represents the filtering condition and contains properties such as field, operator, and value.
 
-Here is an example of how to configure the initial filter using the `predicate` object:
+Here is an example of how to configure the initial filter using the `Predicate` object:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -51,9 +51,9 @@ Here is an example of how to configure the initial filter using the `predicate` 
 
 In the Syncfusion ASP.NET MVC Grid, you can establish an initial filter containing multiple values for a particular column, which helps you to preset filter conditions for a specific column using multiple values. This functionality allows you to display a filtered records in the grid right after the grid is initially loaded.
 
-To apply the filter with multiple values for same column at initial rendering, set the filter `predicate` object in [FilterSettings.Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Columns).
+To apply the filter with multiple values for same column at initial rendering, set the filter `Predicate` object in [FilterSettings.Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Columns).
 
-The following example demonstrates, how to perform an initial filter with multiple values for same **CustomerID** column using `FilterSettings.Columns` and `predicate`.
+The following example demonstrates, how to perform an initial filter with multiple values for same **CustomerID** column using `FilterSettings.Columns` and `Predicate`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -70,9 +70,9 @@ The following example demonstrates, how to perform an initial filter with multip
 
 By applying an initial filter with multiple values for different columns in the Syncfusion ASP.NET MVC Grid, you have the flexibility to set predefined filter settings for each column. This results in a filtered records of the grid right after the grid is initially loaded.
 
-To apply the filter with multiple values for different column at initial rendering, set the filter `predicate` object in [FilterSettings.Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Columns).
+To apply the filter with multiple values for different column at initial rendering, set the filter `Predicate` object in [FilterSettings.Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Columns).
 
-The following example demonstrates how to perform an initial filter with multiple values for different **Order ID** and **Customer ID** columns using `FilterSettings.Columns` and `predicate`.
+The following example demonstrates how to perform an initial filter with multiple values for different **Order ID** and **Customer ID** columns using `FilterSettings.Columns` and `Predicate`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -138,7 +138,7 @@ a* |Everything that starts with "a".
 The **LIKE** filter can process single search patterns using the "%" symbol, retrieving values matching the specified patterns. The following Grid features support LIKE filtering on string-type columns:
 
 * Filter Menu
-* Filter Bar with the [FilterSettings.ShowFilterBarOperator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_ShowFilterBarOperator) property enabled on the Grid [filterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings).
+* Filter Bar with the [FilterSettings.ShowFilterBarOperator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_ShowFilterBarOperator) property enabled on the Grid [FilterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings).
 * Custom Filter of Excel filter type.
 
 **For example:**
@@ -191,7 +191,7 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 
 The Syncfusion ASP.NET MVC Grid offers the flexibility to customize filtering behavior for different columns by enabling various types of filters such as **Menu**, **Excel**, **Checkbox**. This feature allows you to tailor the filtering experience to suit the specific needs of each column in your grid. For example, you might prefer a menu-based filter for a category column, an Excel-like filter for a date column, and a checkbox filter for a status column. 
 
-It can be achieved by adjusting the `column.filter.type` property based on your requirements.
+It can be achieved by adjusting the `Column.Filter.Type` property based on your requirements.
 
 Here's an example where the menu filter is enabled by default for all columns, but you can dynamically modify the filter types through a dropdown:
 

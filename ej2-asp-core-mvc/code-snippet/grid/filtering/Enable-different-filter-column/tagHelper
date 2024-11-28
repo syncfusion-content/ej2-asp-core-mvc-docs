@@ -24,9 +24,9 @@
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="320px" dataBound="dataBound"  >
     <e-grid-filterSettings type='Menu' ></e-grid-filterSettings>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>       
-        <e-grid-column field="OrderDate" headerText="OrderDate" format="yMd" textAlign="Right"  width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="OrderDate" format="yMd" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="Verified" headerText="Verified" displayAsCheckBox="true" textAlign="Right" width="120"></e-grid-column>       
     </e-grid-columns>
