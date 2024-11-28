@@ -1,18 +1,15 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.datasource" dataBound="dataBound" height="400" width="100%" allowPaging="true"> 
-    <e-grid-pagesettings pageSize=2>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="315" width='100%' dataBound='dataBound'>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="140"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
-
     function dataBound() {
         var grid = document.getElementById('Grid').ej2_instances[0];
         grid.hideScroll();
     }
-
 </script>
