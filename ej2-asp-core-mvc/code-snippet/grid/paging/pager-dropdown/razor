@@ -1,0 +1,8 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("325px").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+}).AllowPaging().PageSettings(page => { page.PageSize(10).PageSizes(true); }).Render()
+
