@@ -2,9 +2,9 @@
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("130").Add();
-    col.Field("ShipCity").HeaderText("ShipCity").Width("130").Add();
-    col.Field("ShipName").HeaderText("ShipName").Width("130").Add();
-  }).AllowPaging().PageSettings(page => { page.PageSize(10); }).ActionComplete("actionComplete").DataBound("dataBind").Render()
+    col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("130").Add();
+  }).AllowPaging().PageSettings(page => { page.PageSize(10); }).ActionComplete("actionComplete").DataBound("dataBound").Render()
 <script>
     function updateTemplate() {
         var numeric;
@@ -22,7 +22,7 @@
         numeric.appendTo('#currentPage');
     };
     var flag = true;
-    function dataBind() {
+    function dataBound() {
         if (flag) {
             flag = false;
             updateTemplate();

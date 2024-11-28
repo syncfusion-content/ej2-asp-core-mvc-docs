@@ -12,9 +12,9 @@ documentation: ug
 
 Paging provides an option to display grid data in segmented pages, making it easier to navigate through large datasets. This feature is particularly useful when dealing with extensive data sets. 
 
-To enable paging, you need to set the [allowPaging](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.treegrid.treegrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowPaging) property to **true**. This property determines whether paging is enabled or disabled for the grid. When paging is enabled, a pager component rendered at the bottom of the grid, allowing you to navigate through different pages of data.
+To enable paging, you need to set the [allowPaging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowPaging) property to **true**. This property determines whether paging is enabled or disabled for the grid. When paging is enabled, a pager component rendered at the bottom of the grid, allowing you to navigate through different pages of data.
 
-Paging options can be configured through the [pageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.treegrid.treegrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PageSettings) property. The `pageSettings` object allows you to control various aspects of paging, such as the page size, current page, and total number of records.
+Paging options can be configured through the [pageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PageSettings) property. The `pageSettings` object allows you to control various aspects of paging, such as the page size, current page, and total number of records.
 
 > You can achieve better performance by using grid paging to fetch only a pre-defined number of records from the data source.
 
@@ -121,9 +121,9 @@ The following example demonstrates how to render a **NumericTextBox** component 
 
 The pager with a page size dropdown in Syncfusion Grid allows you to dynamically change the number of records displayed in the grid. This feature is useful when you want to easily customize the number of records to be shown per page.
 
-To enable the page size Dropdown feature in the Syncfusion Grid, you need to set the [pageSettings.pageSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSizes) property to **true** in the grid configuration. This property configuration triggers the rendering of a dropdown list within the pager, allowing you to select the desired page size. The selected page size determines the number of records displayed on each page of the grid.
+To enable the page size dropdown feature in the Syncfusion Grid, you need to set the [pageSettings.pageSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSizes) property to **true** in the grid configuration. This property configuration triggers the rendering of a dropdown list within the pager, allowing you to select the desired page size. The selected page size determines the number of records displayed on each page of the grid.
 
-The following example that demonstrates how to integrate the page size Dropdown feature by configuring the `pageSizes` property:
+The following example that demonstrates how to integrate the page size dropdown feature by configuring the `pageSizes` property:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -136,7 +136,7 @@ The following example that demonstrates how to integrate the page size Dropdown 
 
 ![Pager with page size dropdown](images/page/pager-dropdown.png)
 
-> If the pageSizes property is set to a boolean value like 'true' or 'false,' the page size dropdown defaults to an array of strings containing options such as ['All', '5', '10', '15', '20'].
+> If the `pageSizes` property is set to a boolean value like 'true' or 'false,' the page size dropdown defaults to an array of strings containing options such as ['All', '5', '10', '15', '20'].
 
 ### Customize page size dropdown 
 
@@ -155,7 +155,7 @@ The following example demonstrate how to customize the default values of the pag
 
 ![Customize page size dropdown](images/page/customize-pager.png)
 
-> The pageSizes property can be configured with either an array of strings or a boolean value.
+> The `pageSizes` property can be configured with either an array of strings or a boolean value.
 
 ## How to navigate to particular page 
 
@@ -251,4 +251,4 @@ The following example that example demonstrates how to use these events to displ
 
 ## See Also
 
-* [Group with Paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/grouping#group-with-paging)
+* [Group with Paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/grouping#group-with-paging) 

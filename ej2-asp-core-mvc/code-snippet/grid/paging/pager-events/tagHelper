@@ -1,4 +1,4 @@
-<p id="messageSecond"></p>
+<p id="alertMessage"></p>
 <p id="message"></p> 
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="348px"  actionComplete="onActionComplete" actionBegin="onActionBegin"> 
     <e-grid-columns>
@@ -18,12 +18,12 @@
     };
     function onActionComplete(args){
         if (args.requestType === 'paging') {
-            document.getElementById("messageSecond").innerText = `Now you are in page ${args.currentPage}`;
+            document.getElementById("alertMessage").innerText = `Now you are in page ${args.currentPage}`;
         }
     };
 </script>
 <style>
-    #message, #messageSecond {
+    #message, #alertMessage {
      color: red;
      text-align: center;
     }

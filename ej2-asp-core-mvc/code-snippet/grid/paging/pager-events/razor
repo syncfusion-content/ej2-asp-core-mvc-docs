@@ -1,4 +1,4 @@
-<p id="messageSecond"></p>
+<p id="alertMessage"></p>
 <p id="message"></p> 
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
@@ -17,12 +17,12 @@
     };
     function onActionComplete(args){
         if (args.requestType === 'paging') {
-            document.getElementById("messageSecond").innerText = `Now you are in page ${args.currentPage}`;
+            document.getElementById("alertMessage").innerText = `Now you are in page ${args.currentPage}`;
         }
     };
 </script>
 <style>
-    #message, #messageSecond {
+    #message, #alertMessage {
      color: red;
      text-align: center;
     }

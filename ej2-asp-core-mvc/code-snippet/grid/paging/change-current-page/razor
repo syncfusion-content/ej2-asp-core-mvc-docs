@@ -1,6 +1,6 @@
 <div style="padding-bottom: 20px">
     <label style="padding: 30px 5px 0 0">Enter current page:</label>
-    @Html.EJS().TextBox("inputButton").Width("120px").Render()
+    @Html.EJS().TextBox("inputTextBox").Width("120px").Render()
     @Html.EJS().Button("buttons").CssClass("e-primary custom").Content("click button").Render()
 </div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("325").Columns(col =>
@@ -13,9 +13,9 @@
 <script>
     document.getElementById('buttons').onclick = function () {
         var grid = document.getElementById("grid").ej2_instances[0];
-        var textbox=document.getElementById("inputButton").ej2_instances[0];
-        if(textbox.value){
-            grid.pageSettings.currentPage = parseInt(textbox.value, 10);  
+        var textBox=document.getElementById("inputTextBox").ej2_instances[0];
+        if(textBox.value){
+            grid.pageSettings.currentPage = parseInt(textBox.value, 10);  
         }
     }
 </script>
