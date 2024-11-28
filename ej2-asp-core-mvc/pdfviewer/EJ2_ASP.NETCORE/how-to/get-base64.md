@@ -58,4 +58,4 @@ Incorporate a button in your view to enable users to start the process of conver
 
 By following these steps, you can easily convert and retrieve a PDF document's Base64 string. This conversion is particularly useful for transmitting PDF data or integrating with systems that require Base64 encoding.
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to)
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to)
