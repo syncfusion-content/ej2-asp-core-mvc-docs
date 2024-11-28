@@ -18,7 +18,7 @@ The following example demonstrates, how to render the custom toolbar using `tool
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/toolbar/customtoolbar/razor %}
+{% include code-snippet/grid/toolbar/customtoolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-toolbar.cs" %}
 {% include code-snippet/grid/toolbar/customtoolbar/custom-toolbar.cs %}
@@ -37,7 +37,7 @@ The following example demonstrates how to render an image in the toolbar of the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/toolbar/customtoolbar-image/razor %}
+{% include code-snippet/grid/toolbar/customtoolbar-image/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-toolbar.cs" %}
 {% include code-snippet/grid/toolbar/customtoolbar-image/custom-toolbar.cs %}
@@ -58,7 +58,7 @@ In the **onChange** method, the text of the selected item is checked to determin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/toolbar/customtoolbar-dropdownlist/razor %}
+{% include code-snippet/grid/toolbar/customtoolbar-dropdownlist/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-toolbar.cs" %}
 {% include code-snippet/grid/toolbar/customtoolbar-dropdownlist/custom-toolbar.cs %}
@@ -77,7 +77,7 @@ The following example demonstrates how to render a **Button** component in the t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/toolbar/customtoolbar-template/razor %}
+{% include code-snippet/grid/toolbar/customtoolbar-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-toolbar.cs" %}
 {% include code-snippet/grid/toolbar/customtoolbar-template/custom-toolbar.cs %}
