@@ -18,7 +18,6 @@ function destroyCustomerNumberHandler() {
 function readCustomerNumberHandler() {
     return maskObject.value;
 }
-
 function writeCustomerNumberHandler(args) {
     var rowData = args.rowData;
     maskObject = new ej.inputs.MaskedTextBox({

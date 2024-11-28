@@ -53,7 +53,7 @@
         });
         shipCountryObj.appendTo(shipCountryElement);
     }
-
+    
     function createShipStateHandler() {
         shipStateElement = document.createElement('input');
         return shipStateElement;

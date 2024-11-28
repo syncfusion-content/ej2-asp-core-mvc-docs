@@ -24,7 +24,6 @@
     function readShipCountryHandler() {
         return dropDownListObj.value;
     }
-
     function writeShipCountryHandler(args) {
         var rowData = args.rowData;
         dropDownListObj = new ej.dropdowns.DropDownList({

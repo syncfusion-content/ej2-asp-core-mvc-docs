@@ -8,10 +8,8 @@
 }).EditSettings(edit => edit.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 <script>
-
     var dropDownElement;
     var dropDownListObj;
-
     var selectDataSource = [
         { text: 'Germany', value: 'Germany' },
         { text: 'Brazil', value: 'Brazil' },
@@ -22,7 +20,6 @@
         { text: 'Mexico', value: 'Mexico' },
         { text: 'France', value: 'France' }
     ];
-
     function createShipCountryHandler() {
         dropDownElement = document.createElement('input');
         return dropDownElement;
@@ -33,7 +30,6 @@
     function readShipCountryHandler() {
         return dropDownListObj.value;
     }
-
     function writeShipCountryHandler(args) {
         var rowData = args.rowData;
         dropDownListObj = new ej.dropdowns.DropDownList({

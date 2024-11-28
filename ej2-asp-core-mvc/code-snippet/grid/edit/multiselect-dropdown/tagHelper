@@ -13,9 +13,7 @@
     function actionBegin(args){
         if (args.requestType === 'beginEdit' || args.requestType === 'add') {
             orderData = Object.assign({}, args.rowData);
-
             orderData['ShipCity'] = orderData['ShipCity'] ? orderData['ShipCity'].split(',') : [];
-
         }
         if (args.requestType === 'save') {
             args.data['ShipCity'] = orderData['ShipCity'].join(',');
