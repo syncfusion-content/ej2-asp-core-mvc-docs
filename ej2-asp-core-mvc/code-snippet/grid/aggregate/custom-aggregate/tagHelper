@@ -2,7 +2,7 @@
     <e-grid-aggregates>
         <e-grid-aggregate>
             <e-aggregate-columns>
-                <e-aggregate-column columnName="ShipCountry" type="Custom" footerTemplate="Brazil Count:${Custom}" customAggregate="@("customAggregateFn")"></e-aggregate-column>
+                <e-aggregate-column columnName="ShipCountry" type="Custom" footerTemplate="Brazil Count:${Custom}" customAggregate="@("customAggregateFunction")"></e-aggregate-column>
             </e-aggregate-columns>
         </e-grid-aggregate>
     </e-grid-aggregates>
@@ -14,8 +14,9 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-    function customAggregateFn(data) {
-        let distinct = ej.data.DataUtil.distinct(this.dataSource, "ShipCountry", true);
-        return distinct.length;
+    function customAggregateFunction(data, aggregateColumn) {
+        return data.result.filter(function (item) {
+            return item[aggregateColumn.columnName] === 'Brazil';
+        }).length;
     }
 </script>

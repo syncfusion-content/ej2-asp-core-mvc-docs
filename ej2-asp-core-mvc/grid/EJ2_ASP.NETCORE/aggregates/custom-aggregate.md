@@ -12,7 +12,7 @@ documentation: ug
 
 The custom aggregate feature in Syncfusion's ASP.Net Core Grid component allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
 
-* Set the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.AggregateType.html) property to **Custom** in the `e-aggregate -> e-column`.
+* Set the `type` property to **Custom** in the `aggregateColumn`.
 
 * Provide your custom aggregate function in the `customAggregate` property.
 
@@ -39,7 +39,7 @@ Here's an example that demonstrates how to use the custom aggregate feature in t
 
 ## Show the count of distinct values in aggregate row
 
-You can calculate the count of distinct values in an aggregate row by using custom aggregate functions. By specifying the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.AggregateType.html) as **Custom** and providing a custom aggregate function in the `customAggregate` property, you can achieve this behavior.
+You can calculate the count of distinct values in an aggregate row by using custom aggregate functions. By specifying the `type` as **Custom** and providing a custom aggregate function in the `customAggregate` property, you can achieve this behavior.
 
 Here's an example that demonstrates how to show the count of distinct values for the **ShipCountry** column using a custom aggregate.
 

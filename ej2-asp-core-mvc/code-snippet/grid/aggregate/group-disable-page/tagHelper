@@ -3,17 +3,17 @@
     <e-grid-aggregates>
         <e-grid-aggregate>
             <e-aggregate-columns>
-                <e-aggregate-column  field="Freight" type="Sum" groupFooterTemplate="Sum:${Sum}"></e-aggregate-column>                        
+                <e-aggregate-column field="Freight" type="Sum" groupFooterTemplate="Sum:${Sum}"></e-aggregate-column>                        
             </e-aggregate-columns>
         </e-grid-aggregate>
         <e-grid-aggregate>
             <e-aggregate-columns>
-                <e-aggregate-column field="Freight" type="Max"  groupCaptionTemplate="Max:${Max}"></e-aggregate-column>
+                <e-aggregate-column field="Freight" type="Max" groupCaptionTemplate="Max:${Max}"></e-aggregate-column>
             </e-aggregate-columns>
         </e-grid-aggregate>
         <e-grid-aggregate>
             <e-aggregate-columns>
-                <e-aggregate-column  field="Freight" type="Sum" FooterTemplate="Sum:${Sum}"></e-aggregate-column>                        
+                <e-aggregate-column field="Freight" type="Sum" footerTemplate="Sum:${Sum}"></e-aggregate-column>                        
             </e-aggregate-columns>
         </e-grid-aggregate>
     </e-grid-aggregates>
