@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true" allowGrouping="true" height="273" toolbar="@(new List<string>() { "Add","Delete","Update","Cancel" })">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" allowGrouping="true" height="348px" toolbar="@(new List<string>() { "Add","Delete","Update","Cancel" })">
     <e-grid-groupsettings showDropArea="false" columns="@(new string[] { "ShipCountry" })"></e-grid-groupsettings>
     <e-grid-editSettings allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
     <e-grid-aggregates>
@@ -11,8 +11,9 @@
         </e-grid-aggregate>
     </e-grid-aggregates>
     <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey='true' textAlign="Right" width="150"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="160"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="160"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="130"></e-grid-column>
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="140"></e-grid-column>
     </e-grid-columns>
