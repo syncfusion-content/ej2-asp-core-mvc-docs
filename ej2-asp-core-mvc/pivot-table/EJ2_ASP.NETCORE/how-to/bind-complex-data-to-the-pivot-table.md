@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind complex data to the pivot table in ##Platform_Name## | Syncfusion
+title: Convert complex JSON to flat JSON in ##Platform_Name## pivot table | Syncfusion
 description: Learn here all about how to convert complex JSON to flat JSON and assign it to the pivot table in ##Platform_Name## component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Convert complex JSON to flat JSON and assign it to the pivot table 
