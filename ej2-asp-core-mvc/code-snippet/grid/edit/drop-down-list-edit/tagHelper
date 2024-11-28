@@ -10,10 +10,8 @@
 </ejs-grid>
 
 <script>
-
     var dropDownElement;
     var dropDownListObj;
-
     var selectDataSource = [
         { text: 'Germany', value: 'Germany' },
         { text: 'Brazil', value: 'Brazil' },
@@ -35,7 +33,6 @@
     function readShipCountryHandler() {
         return dropDownListObj.value;
     }
-
     function writeShipCountryHandler(args) {
         var rowData = args.rowData;
         dropDownListObj = new ej.dropdowns.DropDownList({

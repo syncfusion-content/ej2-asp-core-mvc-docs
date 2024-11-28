@@ -10,7 +10,6 @@
 <script>
     var comboBoxObj;
     var comboBoxElement;
-
     var selectDataSource = [
         { text: 'Germany', value: 'Germany' },
         { text: 'Brazil', value: 'Brazil' },

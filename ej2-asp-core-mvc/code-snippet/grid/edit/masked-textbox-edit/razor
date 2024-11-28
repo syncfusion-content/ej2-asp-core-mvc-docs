@@ -8,23 +8,22 @@
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 <script>
-function createCustomerNumberHandler() {
-    maskElement = document.createElement('input');
-    return maskElement;
-}
-function destroyCustomerNumberHandler() {
-    maskObject.destroy();
-}
-function readCustomerNumberHandler() {
-    return maskObject.value;
-}
-
-function writeCustomerNumberHandler(args) {
-    var rowData = args.rowData;
-    maskObject = new ej.inputs.MaskedTextBox({
-        mask: "000-000-0000",
-        value: rowData.CustomerNumber
-    });
-    maskObject.appendTo(maskElement);
-}
+    function createCustomerNumberHandler() {
+        maskElement = document.createElement('input');
+        return maskElement;
+    }
+    function destroyCustomerNumberHandler() {
+        maskObject.destroy();
+    }
+    function readCustomerNumberHandler() {
+        return maskObject.value;
+    }
+    function writeCustomerNumberHandler(args) {
+        var rowData = args.rowData;
+        maskObject = new ej.inputs.MaskedTextBox({
+            mask: "000-000-0000",
+            value: rowData.CustomerNumber
+        });
+        maskObject.appendTo(maskElement);
+    }
 </script>

@@ -12,7 +12,6 @@
 <script>
     var comboBoxObj;
     var comboBoxElement;
-
     var selectDataSource = [
         { text: 'Germany', value: 'Germany' },
         { text: 'Brazil', value: 'Brazil' },
@@ -27,7 +26,12 @@
         comboBoxElement = document.createElement('input');
         return comboBoxElement;
     }
-
+    function readShipCountryHandler() {
+        return comboBoxObj.value;
+    }
+    function destroyShipCountryHandler() {
+        comboBoxObj.destroy();
+    }
     function writeShipCountryHandler(args) {
         var rowData = args.rowData;
         comboBoxObj = new ej.dropdowns.ComboBox({
@@ -38,13 +42,5 @@
             }
         })
         comboBoxObj.appendTo(comboBoxElement);
-    }
-
-    function destroyShipCountryHandler() {
-        comboBoxObj.destroy();
-    }
-
-    function readShipCountryHandler() {
-        return comboBoxObj.value;
     }
 </script>

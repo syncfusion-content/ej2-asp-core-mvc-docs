@@ -12,7 +12,6 @@
 </ejs-grid>
 
 <script>
-
     var dropDownElement;
     var dropDownListObj;
     var dropDownDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.EmployeeDataSource));
@@ -27,7 +26,6 @@
     function readEmployeeNameHandler() {
         return dropDownListObj.value;
     }
-
     function writeEmployeeNameHandler(args) {
         var rowData = args.rowData;
         dropDownListObj = new ej.dropdowns.DropDownList({
