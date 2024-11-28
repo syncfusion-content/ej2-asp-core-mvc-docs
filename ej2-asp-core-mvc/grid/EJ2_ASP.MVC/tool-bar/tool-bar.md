@@ -89,4 +89,4 @@ The following example demonstrates how to change the background color of the `Ad
 {% endhighlight %}
 {% endtabs %}
 
-![Customize toolbar buttons using CSS](../images/toolbar/toolbar-customize.png) 
+![Customize toolbar buttons using CSS](../images/toolbar/toolbar-customize.png)
