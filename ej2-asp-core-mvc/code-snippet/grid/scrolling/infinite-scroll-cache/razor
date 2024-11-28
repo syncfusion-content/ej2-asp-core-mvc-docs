@@ -9,11 +9,11 @@
     col.Field("Designation").HeaderText("Designation").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("Estimation").HeaderText("Estimation").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("Status").HeaderText("Status").Width("170").Add();
-}).PageSettings(page => { page.PageSize(50); }).Render()
+}).PageSettings(page => { page.PageSize(50); }).Render();
 <script>
     function toggleCacheMode(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
         grid.infiniteScrollSettings.enableCache = args.checked;
-        grid.refresh()
+        grid.refresh();
     }
 </script>

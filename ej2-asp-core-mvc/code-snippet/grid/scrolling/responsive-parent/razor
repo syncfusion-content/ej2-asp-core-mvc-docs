@@ -7,5 +7,5 @@
         col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
         col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-    }).Render()
+    }).Render();
 </div>

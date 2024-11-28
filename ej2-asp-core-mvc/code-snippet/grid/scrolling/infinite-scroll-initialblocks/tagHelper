@@ -14,7 +14,7 @@
 <div style="display: flex">
     <label style="padding: 5px 10px 26px 0;font-weight:bold"> Select initialBlocks count:</label>
     <span style="height:fit-content">
-        <ejs-dropdownlist id="dropdown" index="2" dataSource="@ViewBag.dropDownData" change="valueChange"></ejs-dropdownlist>
+        <ejs-dropdownlist id="dropDown" index="2" dataSource="@ViewBag.dropDownData" change="valueChange"></ejs-dropdownlist>
     </span>
 </div>
 <ejs-grid id="grid" dataSource="@ViewBag.datasource" enableInfiniteScrolling="true" height="300">
@@ -31,7 +31,6 @@
     function valueChange(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
         grid.infiniteScrollSettings.initialBlocks = parseInt(args.value, 10);
-        grid.refresh()
+        grid.refresh();
     }
-
 </script>

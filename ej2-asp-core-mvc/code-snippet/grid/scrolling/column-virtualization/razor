@@ -1,4 +1,4 @@
-@Html.EJS().Grid("virtualGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableColumnVirtualization().EnableVirtualization().Height("300").Columns(col =>
+@Html.EJS().Grid("virtualGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableColumnVirtualization().Height("300").Columns(col =>
 {
     col.Field("SNo").HeaderText("S.No").Width("140").IsPrimaryKey(true).Add();
     col.Field("Field1").HeaderText("Player Name").Width("120").Add();
@@ -31,4 +31,4 @@
     col.Field("Field28").HeaderText("PostoRebounds").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("Field29").HeaderText("PostdRebounds").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("Field30").HeaderText("PostRebounds").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render();

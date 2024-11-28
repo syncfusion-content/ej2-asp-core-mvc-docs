@@ -21,7 +21,7 @@
 }
 <div style="display: flex; align-items: center; padding: 10px 0;">
     <label style="padding-right: 10px;font-weight:bold">Select row index:</label>
-    <ejs-dropdownlist id="dropdown" index="0" width='220' dataSource="@ViewBag.dropdownData" change="valueChange"></ejs-dropdownlist>
+    <ejs-dropdownlist id="dropDown" index="0" width='220' dataSource="@ViewBag.dropdownData" change="valueChange"></ejs-dropdownlist>
 </div>
 <div style='padding: 0px 0px 20px 0px'>
     <ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="315" width="550px" rowSelected='rowSelected'>
@@ -43,7 +43,6 @@
             grid.selectRow(value);
         }
     }
-
     function rowSelected(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
         grid.getContent().children[0].scrollTop = grid.getRows()[selectedIndex].scrollHeight * grid.getSelectedRowIndexes()[0];

@@ -38,27 +38,25 @@ private List<object> GenerateData(int count)
             Field10 = random.Next(100),
             Field11 = random.Next(100),
             Field12 = random.Next(1000),
-                  Field13 = random.Next(10),
-                  Field14 = random.Next(10),
-                  Field15 = random.Next(1000),
-                  Field16 = random.Next(200),
-                  Field17 = random.Next(300),
-                  Field18 = random.Next(400),
-                  Field19 = random.Next(500),
-                  Field20 = random.Next(700),
-                  Field21 = random.Next(800),
-                  Field22 = random.Next(1000),
-                  Field23 = random.Next(2000),
-                  Field24 = random.Next(150),
-                  Field25 = random.Next(1000),
-                  Field26 = random.Next(100),
-                  Field27 = random.Next(400),
-                  Field28 = random.Next(600),
-                  Field29 = random.Next(500),
-                  Field30 = random.Next(300)
-              });
-          }
-
-          return data;
-      
-  }
+            Field13 = random.Next(10),
+            Field14 = random.Next(10),
+            Field15 = random.Next(1000),
+            Field16 = random.Next(200),
+            Field17 = random.Next(300),
+            Field18 = random.Next(400),
+            Field19 = random.Next(500),
+            Field20 = random.Next(700),
+            Field21 = random.Next(800),
+            Field22 = random.Next(1000),
+            Field23 = random.Next(2000),
+            Field24 = random.Next(150),
+            Field25 = random.Next(1000),
+            Field26 = random.Next(100),
+            Field27 = random.Next(400),
+            Field28 = random.Next(600),
+            Field29 = random.Next(500),
+            Field30 = random.Next(300)
+        });
+    }
+   return data;
+}
