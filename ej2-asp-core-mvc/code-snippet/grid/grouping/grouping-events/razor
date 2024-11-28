@@ -13,7 +13,6 @@
             document.getElementById('message').innerText = args.requestType + ' action is cancelled for ' + args.columnName + ' column';
         }
     }
-
     function actionComplete(args) {
         if (args.requestType === 'grouping') {
             document.getElementById('message').innerText = args.requestType + ' action completed for ' + args.columnName + ' column';

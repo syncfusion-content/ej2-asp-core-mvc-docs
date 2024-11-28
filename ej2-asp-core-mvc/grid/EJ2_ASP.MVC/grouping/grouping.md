@@ -21,7 +21,7 @@ The grouping feature in the Syncfusion ASP.Net MVC Grid allows you to organize d
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](../../images/grouping/grouping.png)
+![Grouping](../images/grouping/grouping.png)
 
 > * You can group and ungroup columns in the Grid by using the `groupColumn` and `ungroupColumn` methods respectively.
 > * To disable grouping for a specific column, set the `Columns.AllowGrouping` to **false**.
@@ -41,7 +41,7 @@ The following example demonstrates how to set an initial grouping for the **Cust
 {% endhighlight %}
 {% endtabs %}
 
-![Initial group](../../images/grouping/grouping-initail.png)
+![Initial group](../images/grouping/grouping-initail.png)
 
 > You can group by multiple columns by specifying an array of column names in the columns property of the `GroupSettings`.
 
@@ -75,7 +75,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Hide drop area](../../images/grouping/grouping-drag-hide.png)
+![Hide drop area](../images/grouping/grouping-drag-hide.png)
 
 > By default, the group drop area will be shown only if there is at least one column available to group.
 
@@ -94,7 +94,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Show the grouped column](../../images/grouping/grouping-show-hide-column.png)
+![Show the grouped column](../images/grouping/grouping-show-hide-column.png)
 
 ## Reordering on grouped columns 
 
@@ -111,7 +111,7 @@ To enable this feature, you have to set the [GroupSettings.AllowReordering](http
 {% endhighlight %}
 {% endtabs %}
 
-![Reordering on grouped columns](../../images/grouping/grouping-reorder.gif)
+![Reordering on grouped columns](../images/grouping/grouping-reorder.gif)
 
 ## Sort grouped columns in descending order during initial grouping
 
@@ -128,7 +128,7 @@ The following example demonstrates how to sort the **CustomerID** column by sett
 {% endhighlight %}
 {% endtabs %}
 
-![Sort grouped columns in descending order](../../images/grouping/grouping-descending-order.png)
+![Sort grouped columns in descending order](../images/grouping/grouping-descending-order.png)
 
 ## Group with paging
 
@@ -151,28 +151,9 @@ The following example demonstrates how to perform a group action using the `Enab
 {% endhighlight %}
 {% endtabs %}
 
-![Group by format](../../images/grouping/grouping-format.png)
+![Group by format](../images/grouping/grouping-format.png)
 
 > Numeric columns can be grouped based on formats such as currency or percentage, while datetime columns can be grouped based on specific date or time formats.
-
-## Show grouped rows based on page size
-
-Showing grouped column rows based on the page size in Syncfusion ASP.Net MVC Grid is useful when you have grouped data and want to control the number of grouped rows displayed per page. 
-
-The Grid component allows you to display the number of records based on the [PageSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize). However, by default, the `PageSize` applies to individual grid rows, not to grouped rows. If you want to show grouped column rows based on the `PageSize`, you can achieve it by using a custom implementation.
-
-Customizing the `generateQuery` method of the **Data prototype** allows you to modify the query used for data retrieval. By doing so, you can achieve the display of grouped rows based on the page size according to your specific requirements. This can be achieved in the below example.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/grouping/group-pagesize/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="group.cs" %}
-{% include code-snippet/grid/grouping/group-pagesize/group.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Show grouped rows based on page size](../../images/grouping/grouping-pagesize.png)
 
 ## Collapse all grouped rows at initial rendering
 
@@ -191,7 +172,7 @@ The following example demonstrates how to collapse all grouped rows at the initi
 {% endhighlight %}
 {% endtabs %}
 
-![Collapse all grouped rows at initial rendering](../../images/grouping/group-collapse-initial.png)
+![Collapse all grouped rows at initial rendering](../images/grouping/group-collapse-initial.png)
 
 > You can also collapse all the grouped rows at the initial rendering using the `groupCollapseAll` method inside the [DataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event. This is demonstrated in the below code snippet,
 
@@ -221,7 +202,7 @@ The following example demonstrates how to group and ungroup the columns in a gri
 {% endhighlight %}
 {% endtabs %}
 
-![Group or ungroup column externally](../../images/grouping/grouping-ungroup.gif)
+![Group or ungroup column externally](../images/grouping/grouping-ungroup.gif)
 
 ## Expand or collapse externally
 
@@ -242,7 +223,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Expand or collapse all grouped rows](../../images/grouping/grouping-all-grouped-rows.gif)
+![Expand or collapse all grouped rows](../images/grouping/grouping-all-grouped-rows.gif)
 
 ### Expand or collapse selected grouped row
 
@@ -253,7 +234,7 @@ To enable the expand and collapse functionality for grouped rows in a grid, you 
 To implement this functionality, follow these steps:
 
 1. Include an `input` element to capture the grouped row index.
-2. Add a `button` element with a **click** event binding to trigger the **onExpandCollapseButtonClick** method. This method retrieve the grouped rows from the grid's content table using the `querySelectorAll` method.
+2. Add a `button` element with a **Click** event binding to trigger the **onExpandCollapseButtonClick** method. This method retrieve the grouped rows from the grid's content table using the `querySelectorAll` method.
 3. Check if there are any grouped rows available.
 4. If grouped rows exist, locate the group caption element based on the entered row index.
 5. Call the `expandCollapseRows` method of the grid's group module, passing the group caption element to toggle its expand/collapse state.
@@ -269,7 +250,7 @@ The following example demonstrates the function that collapses the selected row 
 {% endhighlight %}
 {% endtabs %}
 
-![Expand or collapse selected grouped row](../../images/grouping/grouping-selected-grouped-row.png)
+![Expand or collapse selected grouped row](../images/grouping/grouping-selected-grouped-row.png)
 
 ## Clear grouping 
 
@@ -288,7 +269,7 @@ The following example demonstrates how to clear the grouping using `clearGroupin
 {% endhighlight %}
 {% endtabs %}
 
-![Clear grouping](../../images/grouping/sorting-clear.gif)
+![Clear grouping](../images/grouping/sorting-clear.gif)
 
 ## Grouping Events
 
@@ -309,7 +290,7 @@ The following example demonstrates how the `ActionBegin` and `ActionComplete` ev
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping Events](../../images/grouping/sorting-events.gif)
+![Grouping Events](../images/grouping/sorting-events.gif)
 
 > The `args.requestType` property represents the name of the current action being performed. For instance, during grouping, the `args.requestType` value will be **grouping**.
 
@@ -320,4 +301,4 @@ The following example demonstrates how the `ActionBegin` and `ActionComplete` ev
 
 ## See Also
 
-* [Exporting grouped records](../../EJ2_ASP.MVC/excel-export/excel-exporting#Exporting-grouped-records)
+* [Exporting grouped records](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/excel-export/excel-export-options#exporting-grouped-records)

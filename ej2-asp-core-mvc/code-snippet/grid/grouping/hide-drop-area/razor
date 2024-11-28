@@ -12,10 +12,6 @@
 <script>
     function onSwitchChange(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
-        if (args.checked) {
-           grid.groupSettings.showDropArea = true;
-        } else {
-           grid.groupSettings.showDropArea = false;
-        }
+        grid.groupSettings.showDropArea = args.checked;
     }
 </script>

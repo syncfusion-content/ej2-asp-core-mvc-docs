@@ -3,18 +3,18 @@
     <e-grid-groupsettings columns="@(new string[] {"ShipCity"})"></e-grid-groupsettings> 
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID"  width="150"></e-grid-column>       
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>       
         <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
         <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 <script>
-    let initial = true;
+    let isFirstDataBound = true;
    function dataBound() {
-        if (initial === true) {
+        if (isFirstDataBound === true) {
             var grid = document.getElementById("grid").ej2_instances[0];
             grid.groupModule.collapseAll();
-            initial = false;
+            isFirstDataBound = false;
         }
     }
 </script>

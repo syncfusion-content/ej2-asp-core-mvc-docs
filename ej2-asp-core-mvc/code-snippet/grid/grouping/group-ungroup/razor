@@ -7,18 +7,17 @@
       new { value = "ShipName", text = "Ship Name" },
    };
 }
-
 <div style="padding-bottom:20px">
 <div style="display: flex">
     <label style="padding: 5px 28px 0 0"> Column name :</label>
     <span style="height:fit-content">
-        @Html.EJS().DropDownList("dropdownColumn").Width("120px").Index(1).DataSource(@ViewBag.dropDownData).Fields(new
+        @Html.EJS().DropDownList("dropDownColumn").Width("120px").Index(1).DataSource(@ViewBag.dropDownData).Fields(new
         Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "value", Text = "text" }).Render()
     </span>
 </div>
 <div style="margin-top: 15px">
-    @Html.EJS().Button("group").CssClass("e-primary").Content("Group column").Render()
-    @Html.EJS().Button("ungroup").CssClass("e-primary").Content("UnGroupColumn").Render()
+    @Html.EJS().Button("groupButton").CssClass("e-primary").Content("Group column").Render()
+    @Html.EJS().Button("ungroupButton").CssClass("e-primary").Content("UnGroupColumn").Render()
 </div>
 </div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowGrouping().Height("330px").Columns(col =>
@@ -30,12 +29,11 @@
 
 }).GroupSettings(group => { group.ShowDropArea(false).Columns(new string[] { "CustomerID", "ShipCity" }); }).Render()
 <script>
-    document.getElementById('group').onclick = function () {
-            var grid = document.getElementById("grid").ej2_instances[0];
-            grid.groupColumn(document.getElementById("dropdownColumn").ej2_instances[0].value);
-    }
-    document.getElementById('ungroup').onclick = function () {
+    document.getElementById('groupButton').onclick = handleGroupAction;
+    document.getElementById('ungroupButton').onclick = handleGroupAction;
+    function handleGroupAction(event) {
         var grid = document.getElementById("grid").ej2_instances[0];
-        grid.ungroupColumn(document.getElementById("dropdownColumn").ej2_instances[0].value);
+        var dropDownValue=document.getElementById("dropDownColumn").ej2_instances[0].value
+        event.target.id === "groupButton" ? grid.groupColumn(dropDownValue):grid.ungroupColumn(dropDownValue);
     }
 </script>
