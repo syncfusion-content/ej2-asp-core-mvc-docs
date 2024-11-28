@@ -1,0 +1,8 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).
+    Filter(new { @params = new Syncfusion.EJ2.Inputs.NumericTextBox() { ShowSpinButton= false} }).Add();
+    col.Field("CustomerID").HeaderText("CustomerID").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+}).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Menu); }).AllowPaging().Render()

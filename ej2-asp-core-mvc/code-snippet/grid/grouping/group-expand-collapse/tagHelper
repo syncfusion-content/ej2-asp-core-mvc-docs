@@ -1,0 +1,23 @@
+<div style="padding-bottom: 20px; display: flex">
+    <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Expand or collapse rows</label>
+    <ejs-switch id="switch" change="onSwitchChange"></ejs-switch>
+ </div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" height="330px" > 
+   <e-grid-groupsettings showDropArea="false" columns="@(new string[] {"CustomerID", "ShipCity"})"></e-grid-groupsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function onSwitchChange(args) {
+       var grid = document.getElementById("grid").ej2_instances[0];
+       if (args.checked) {
+          grid.groupCollapseAll();
+       } else {
+          grid.groupExpandAll();
+       }
+    }
+ </script>

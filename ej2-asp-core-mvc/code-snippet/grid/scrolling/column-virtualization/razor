@@ -1,0 +1,34 @@
+@Html.EJS().Grid("virtualGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableColumnVirtualization().Height("300").Columns(col =>
+{
+    col.Field("SNo").HeaderText("S.No").Width("140").IsPrimaryKey(true).Add();
+    col.Field("Field1").HeaderText("Player Name").Width("120").Add();
+    col.Field("Field2").HeaderText("Year").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field3").HeaderText("Stint").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field4").HeaderText("TMID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field5").HeaderText("LGID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field6").HeaderText("GP").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field7").HeaderText("GS").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field8").HeaderText("Minutes").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field9").HeaderText("Points").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field10").HeaderText("oRebounds").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field11").HeaderText("dRebounds").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field12").HeaderText("Rebounds").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field13").HeaderText("Assists").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field14").HeaderText("Steals").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field15").HeaderText("Blocks").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field16").HeaderText("Turnovers").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field17").HeaderText("PF").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field18").HeaderText("fgAttempted").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field19").HeaderText("fgMade").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field20").HeaderText("ftAttempted").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field21").HeaderText("ftMade").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field22").HeaderText("ThreeAttempted").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field23").HeaderText("ThreeMade").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field24").HeaderText("PostGP").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field25").HeaderText("PostGS").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field26").HeaderText("PostMinutes").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field27").HeaderText("PostPoints").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field28").HeaderText("PostoRebounds").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field29").HeaderText("PostdRebounds").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Field30").HeaderText("PostRebounds").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render();

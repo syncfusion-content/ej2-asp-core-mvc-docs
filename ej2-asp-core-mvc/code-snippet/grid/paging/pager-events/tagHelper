@@ -1,0 +1,30 @@
+<p id="alertMessage"></p>
+<p id="message"></p> 
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="348px"  actionComplete="onActionComplete" actionBegin="onActionBegin"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function onActionBegin(args){
+        if (args.requestType === 'paging') {
+            document.getElementById("message").innerText = args.currentPage > args.previousPage
+            ? `You are going to switch to page ${parseInt(args.currentPage, 10) + 1}`
+            : `You are going to switch to page ${args.previousPage}`;
+        }
+    };
+    function onActionComplete(args){
+        if (args.requestType === 'paging') {
+            document.getElementById("alertMessage").innerText = `Now you are in page ${args.currentPage}`;
+        }
+    };
+</script>
+<style>
+    #message, #alertMessage {
+     color: red;
+     text-align: center;
+    }
+</style>

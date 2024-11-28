@@ -1,0 +1,24 @@
+@{
+    var filter = new
+    {
+        type = "CheckBox",
+        itemTemplate = "#filterItemTemplate"
+    };
+}
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowPaging="true" height="352px">
+    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+    <e-grid-pageSettings pageSize=6></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="CategoryName" headerText="CategoryName" width="120"></e-grid-column>       
+        <e-grid-column field="Delivered" headerText="Delivered" displayAsCheckBox=true filter=filter width="100"></e-grid-column>
+        <e-grid-column field="ProductID" headerText="ProductID" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script id='filterItemTemplate' type='text/x-template'>
+    ${itemTemplate(data)}
+</script>
+<script>
+    function itemTemplate(args) {
+      return args.Delivered ? 'Delivered' : 'Not delivered';
+    }
+</script>
