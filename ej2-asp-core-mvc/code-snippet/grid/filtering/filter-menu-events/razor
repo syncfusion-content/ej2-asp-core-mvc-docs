@@ -1,0 +1,45 @@
+<div class='event-message' id='actionBeginMessage'></div>
+<div class='event-message' id='actionCompleteMessage'></div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("350px").AllowFiltering().Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("CustomerID").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+}).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Menu); }).ActionBegin("actionBegin").ActionComplete("actionComplete").AllowPaging().Render()
+<script>
+  function actionBegin(args) {
+    var message=document.getElementById('actionBeginMessage');
+      if (args.requestType == 'filterBeforeOpen' && args.columnType === "number") {
+          args.filterModel.customFilterOperators.numberOperator = [
+          { value: "equal", text: "Equal" },
+          { value: "notequal", text: "Not Equal" }];
+          message.innerText ='Filter operators for number column were customized using the filterBeforeOpen action in the actionBegin event';
+      }
+      else{
+          message.innerText= args.requestType + ' action is triggered in actionBegin event'
+        }
+        if(args.requestType == 'filtering' && args.currentFilteringColumn == 'ShipCity'){
+          args.cancel=true;
+          message.innerText= args.requestType + ' is not allowed for ShipCity column';
+        }
+  }
+  function actionComplete(args) {
+    var message=document.getElementById('actionCompleteMessage');
+      if(args.requestType === 'filterAfterOpen') {
+          message.innerText ='Applied CSS for filter dialog during filterAfterOpen action';
+          args.filterModel.dlgDiv.querySelector('.e-dlg-content').style.background = '#eeeaea';
+          args.filterModel.dlgDiv.querySelector('.e-footer-content').style.background = '#30b0ce';
+        }
+        if(args.requestType == 'filtering'){
+          message.innerText = args.requestType + ' action is triggered in actionComplete event';
+        }
+  }
+</script>
+<style>
+  .event-message {
+      padding: 10px;
+      color: red;
+      text-align: center;
+  }
+</style>
