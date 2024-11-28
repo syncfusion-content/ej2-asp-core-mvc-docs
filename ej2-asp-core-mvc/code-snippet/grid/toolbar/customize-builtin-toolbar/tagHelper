@@ -18,21 +18,21 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-function toolbarClick(args)
-{
-    var grid = document.getElementById("grid").ej2_instances[0];
-    if (args.item.id === 'grid_add') {
-        args.cancel = true;
-        const newRecord = {
-            OrderID: 10247,
-            CustomerID: 'TOMSP',
-            ShipName: 'Hanari Carnes',
-            ShipCity: 'Lyon',
-        };
-        grid.addRecord(newRecord);
-        document.getElementById("message").innerText= 'The default adding action is cancelled, and a new record is added using the addRecord method.';
+    function toolbarClick(args)
+    {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_add') {
+            args.cancel = true;
+            const newRecord = {
+                OrderID: 10247,
+                CustomerID: 'TOMSP',
+                ShipName: 'Hanari Carnes',
+                ShipCity: 'Lyon',
+            };
+            grid.addRecord(newRecord);
+            document.getElementById("message").innerText= 'The default adding action is cancelled, and a new record is added using the addRecord method.';
+        }
+        else
+        document.getElementById("message").innerText = '';
     }
-    else
-     document.getElementById("message").innerText = '';
-}
 </script>
