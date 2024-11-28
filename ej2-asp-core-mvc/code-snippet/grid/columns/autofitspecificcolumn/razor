@@ -1,16 +1,16 @@
 @Html.EJS().Grid("AutoFitSpecficColumn").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
 {
-    col.Field("Inventor").HeaderText("Inventor").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Add();
-    col.Field("NumberofPatentFamilies").HeaderText("NumberofPatentFamilies").Width("150").Add();
-    col.Field("Country").HeaderText("Country").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Number of INPADOC patents").HeaderText("Number of INPADOC patents").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
-    col.Field("Active").HeaderText("Active").Width("150").Add();
-    col.Field("Mainfieldsofinvention").HeaderText("Mainfieldsofinvention").Width("150").Add();
+    col.Field("Inventor").HeaderText("Inventor").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Add();
+    col.Field("NumberOfPatentFamilies").HeaderText("NumberofPatentFamilies").Width("120").Add();
+    col.Field("Country").HeaderText("Country").Width("80").Add();
+    col.Field("NumberOfINPADOCPatents").HeaderText("Number of INPADOC patents").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
+    col.Field("Active").HeaderText("Active").Width("100").Add();
+    col.Field("MainFieldsOfInvention").HeaderText("Mainfieldsofinvention").Width("100").Add();
 
 }).AllowPaging().DataBound("dataBound").AllowResizing(true).Render()
 
 <script>
     function dataBound(args) {
-        this.autoFitColumns(['Inventor', 'Number of INPADOC patents', 'Mainfieldsofinvention'], 1, 3);
+        this.autoFitColumns(['Inventor', 'NumberOfPatentFamilies', 'MainFieldsOfInvention'], 1, 3);
     }
 </script>

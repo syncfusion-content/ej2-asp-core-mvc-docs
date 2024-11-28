@@ -1,0 +1,31 @@
+<div style="padding:0px 0px 20px 0px">
+    @Html.EJS().Button("add").CssClass("e-info").Content("Add Columns").Render()
+    @Html.EJS().Button("delete").CssClass("e-info").Content("Delete Columns").Render()
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(100).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width(120).Add();
+    col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width(120).Add();
+}).Height("315").Render();
+
+<script type="text/javascript">
+    document.getElementById('add').addEventListener('click', function () {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        var newColumns = [
+            { field: 'EmployeeID', headerText: 'Employee ID', width: 120 },
+            { field: 'OrderDate', headerText: 'Order Date', width: 120, format: 'yMd' }
+        ];
+        newColumns.forEach(function (col) {
+            grid.columns.push(col);
+        });
+        grid.refreshColumns();
+    });
+
+    document.getElementById('delete').addEventListener('click', function () {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        grid.columns.pop();
+        grid.refreshColumns();
+    });
+</script>
