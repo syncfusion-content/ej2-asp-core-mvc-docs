@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true" dataBound="dataBound">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" dataBound="dataBound" height="348px">
     <e-grid-aggregates>
         <e-grid-aggregate>
             <e-aggregate-columns>
@@ -7,22 +7,20 @@
         </e-grid-aggregate>
         <e-grid-aggregate>
             <e-aggregate-columns>
-                <e-aggregate-column field="Freight" type="Average" footerTemplate="Average:${Average}"></e-aggregate-column>
+                <e-aggregate-column field="Freight" type="Max" footerTemplate="Max:${Max}"></e-aggregate-column>
             </e-aggregate-columns>
         </e-grid-aggregate>
     </e-grid-aggregates>
-    <e-grid-pagesettings pageCount="5"></e-grid-pagesettings>
     <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="150"></e-grid-column>                
         <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" TextAlign="Right" format="C2" width="160"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="130"></e-grid-column>
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="140"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
     function dataBound() {
-        var grid = document.getElementById("Grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         grid.getHeaderContent().append(grid.getFooterContent());
     }
 </script>

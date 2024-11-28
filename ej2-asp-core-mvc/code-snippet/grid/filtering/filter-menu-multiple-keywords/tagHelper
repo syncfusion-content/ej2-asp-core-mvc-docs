@@ -1,0 +1,62 @@
+@using Newtonsoft.Json;
+@{
+    var filteruiTemplate = new
+    {
+        ui = new
+        {
+            create = "createCustomFilter",
+            write = "writeCustomFilter",
+            read = "readCustomFilter"
+        }
+    };
+}
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="430px" allowFiltering="true">
+    <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" filter="filteruiTemplate" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120" filter="filteruiTemplate"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100" filter="filteruiTemplate"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100" filter="filteruiTemplate"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    let dropInstance;
+    function createCustomFilter(args) {
+      var filterInputElement = ej.base.createElement('input', {
+        className: 'filter-input',
+      });
+      args.target.appendChild(filterInputElement);
+      var fieldName = args.column.field;
+      var dropDownData = ej.data.DataUtil.distinct(@Html.Raw(JsonConvert.SerializeObject(ViewBag.dataSource)), fieldName);
+      dropInstance = new ej.dropdowns.MultiSelect({
+        dataSource: dropDownData,
+        placeholder: 'Select a value',
+        popupHeight: '200px',
+        allowFiltering: true,
+        mode: 'Delimiter',
+      });
+      dropInstance.appendTo(filterInputElement);
+    }
+    function writeCustomFilter(args) {
+      var fieldName = args.column.field;
+      var filteredValue = [];
+      var grid = document.getElementById("grid").ej2_instances[0];
+      grid.filterSettings.columns.forEach((item) => {
+        if (item.field === fieldName && item.value) {
+          filteredValue.push(item.value);
+        }
+      });
+      if (filteredValue.length > 0) {
+        dropInstance.value = filteredValue;
+      }
+    }
+    function readCustomFilter(args) {
+      var grid = document.getElementById("grid").ej2_instances[0];
+      grid.removeFilteredColsByField(args.column.field);
+      args.fltrObj.filterByColumn(
+        args.column.field,
+        args.operator,
+        dropInstance.value
+      );
+    }
+</script>

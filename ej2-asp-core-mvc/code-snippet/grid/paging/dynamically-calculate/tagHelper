@@ -1,0 +1,18 @@
+<div style="padding-bottom: 20px">
+    <label style="padding: 30px 5px 0 0;font-weight: bold">Select page size:</label>
+    <ejs-numerictextbox id="numeric" width="230px" format="####.##" min=150 step=50 placeholder="select container height" change="calculatePageSize"></ejs-numerictextbox>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="325"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function calculatePageSize(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.pageSettings.pageSize =  grid.calculatePageSizeByParentHeight(args.value.toString());
+    }
+</script>

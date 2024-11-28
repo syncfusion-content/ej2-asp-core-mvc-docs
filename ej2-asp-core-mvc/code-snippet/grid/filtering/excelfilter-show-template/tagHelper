@@ -1,0 +1,38 @@
+
+@{
+    var filter = new
+    {
+        type = "CheckBox",
+        itemTemplate = "#filterItemTemplate"
+    };
+}
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowPaging="true" height="352px">
+    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+    <e-grid-pageSettings pageSize=6></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="CategoryName" headerText="CategoryName" filter=filter width="120"></e-grid-column>       
+        <e-grid-column field="Delivered" headerText="Delivered" displayAsCheckBox=true width="100"></e-grid-column>
+        <e-grid-column field="ProductID" headerText="ProductID" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script id='filterItemTemplate' type='text/x-template'>
+    ${itemTemplate(data)}
+</script>
+<script>
+    const categoryIcons = {
+        Beverages: 'fas fa-coffee',
+        Condiments: 'fas	fa-leaf',
+        Confections: 'fas fa-birthday-cake',
+        DairyProducts: 'fas fa-ice-cream',
+        Grains: 'fas fa-seedling',
+        Meat: 'fas fa-drumstick-bite',
+        Produce: 'fas fa-carrot',
+        Seafood: 'fas fa-fish',
+    };
+    function itemTemplate(args) {
+       return '<div><span class="' + categoryIcons[args.CategoryName] + '"></span>' + args.CategoryName + '</div>';
+    }
+</script>
