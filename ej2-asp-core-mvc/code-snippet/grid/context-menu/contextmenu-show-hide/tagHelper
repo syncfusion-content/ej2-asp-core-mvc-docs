@@ -15,15 +15,15 @@
     function onSwitchChange(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
         if (args.checked) {
-            grid.contextMenuModule.contextMenu.hideItems([
-                'Edit Record',
-                'Delete Record',
-            ]);
-        } else {
             grid.contextMenuModule.contextMenu.showItems([
                 'Edit Record',
                 'Delete Record',
             ]);
-        }
+        } else {
+            grid.contextMenuModule.contextMenu.hideItems([
+                'Edit Record',
+                'Delete Record',
+            ]);
+        }  
     }
-</script>
+</script> 

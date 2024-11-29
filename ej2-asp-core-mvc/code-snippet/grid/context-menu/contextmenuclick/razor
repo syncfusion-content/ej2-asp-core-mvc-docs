@@ -6,6 +6,7 @@
     col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
 }).AllowPaging().AllowExcelExport().AllowPdfExport().PageSettings(page => { page.PageSize(10); }).ContextMenuItems(new List<object>() {"SortAscending","SortDescending","FirstPage","PrevPage","LastPage","NextPage","PdfExport","ExcelExport"}).Render()
 <script>
+    let values;
     function created() {
         var grid = document.getElementById("grid").ej2_instances[0];
         grid.contextMenuModule.contextMenu.beforeOpen = (args) => {
@@ -16,7 +17,7 @@
     }
     document.getElementById('grid').onclick = (event) => {
         values = event;
-        var grid = document.getElementById("Grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         grid.contextMenuModule.contextMenu.open(
             values.pageY + pageYOffset,
             values.pageX + pageXOffset

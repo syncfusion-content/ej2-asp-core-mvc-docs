@@ -63,7 +63,7 @@ The following example demonstrates how to enable context menu feature in the gri
 {% endhighlight %}
 {% endtabs %}
 
-![Context menu](images/context-menu/display-html-content.gif)
+![Context menu](images/context-menu/custom-menu.png)
 
 ## Custom context menu items
 
@@ -84,7 +84,7 @@ The following example demonstrates how to add custom context menu items in the G
 {% endhighlight %}
 {% endtabs %}
 
-![Custom context menu items](images/context-menu/display-html-content.gif)
+![Custom context menu items](images/context-menu/custommenu-custom.png)
 
 ## Show context menu on left click
 
@@ -105,8 +105,6 @@ The following example demonstrates how to show context menu on left click using 
 {% endhighlight %}
 {% endtabs %}
 
-![Show context menu on left click](images/context-menu/display-html-content.gif)
-
 > You can hide or show an item in context menu for specific area inside of grid by defining the `target` property.
 
 ## Enable or disable context menu items
@@ -126,7 +124,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Enable or disable context menu items](images/context-menu/display-html-content.gif)
+![Enable or disable context menu items](images/context-menu/custom-menu-enable.png)
 
 ## Show or hide context menu items
 
@@ -145,4 +143,4 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide context menu items](images/context-menu/display-html-content.gif)
+![Show or hide context menu items](images/context-menu/context-menu-hide.gif)
