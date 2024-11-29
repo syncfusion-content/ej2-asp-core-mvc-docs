@@ -44,7 +44,7 @@ The following example demonstrates how to set [SortSettings.Columns](https://hel
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting](../images/sorting/sorting-initial-sort.png)
+![Sorting](images/sorting/sorting-initial-sort.png)
 
 > The initial sorting defined in [SortSettings.Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSortSettings.html#Syncfusion_EJ2_Grids_GridSortSettings_Columns) will override any sorting applied through individual interaction.
 
@@ -123,7 +123,7 @@ The example below demonstrates how to display null values at the bottom of the g
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting](../images/sorting/sorting-null-sort.gif)
+![Sorting](images/sorting/sorting-null-sort.gif)
 
 > The customSortComparer function takes two parameters: a and b. The a and b parameters are the values to be compared. The function returns -1, 0, or 1, depending on the comparison result.
 
@@ -155,19 +155,6 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 {% endtabs %}
 
 ![Sorting](images/sorting/sorting-local-forign.png)
-
-**Sort foreign key column based on text for remote data**
-
-In the case of remote data in the grid, the sorting operation will be performed based on the `ForeignKeyField` property of the column. The `ForeignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The grid will send a request to the server-side with the `ForeignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the grid.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/sorting/foreign-sort/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="foreign-sort.cs" %}
-{% include code-snippet/grid/sorting/foreign-sort/foreign-sort.cs %}
-{% endhighlight %}
-{% endtabs %}
 
 ## Perform sorting based on its culture
 

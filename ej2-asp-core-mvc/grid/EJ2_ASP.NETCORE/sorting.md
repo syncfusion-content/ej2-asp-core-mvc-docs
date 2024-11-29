@@ -156,19 +156,6 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 
 ![Sorting](images/sorting/sorting-local-forign.png)
 
-**Sort foreign key column based on text for remote data**
-
-In the case of remote data in the grid, the sorting operation will be performed based on the `foreignKeyField` property of the column. The `foreignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The grid will send a request to the server-side with the `foreignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the grid.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/sorting/foreign-sort/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="foreign-sort.cs" %}
-{% include code-snippet/grid/sorting/foreign-sort/foreign-sort.cs %}
-{% endhighlight %}
-{% endtabs %}
-
 ## Perform sorting based on its culture
 
 Perform sorting based on culture in the Grid can be achieved by utilizing the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property. By setting the `locale` property to the desired culture code, you enable sorting based on that specific culture. This allows you to apply locale-specific sorting rules and ensure accurate ordering for different languages and regions.

@@ -2,7 +2,7 @@
     Object sortComparer = "sortComparer";
 }
 
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowSorting="true" actionBegin="actionBegin">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowSorting="true" actionBegin="actionBegin">
     <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="100"></e-grid-column>
