@@ -15,7 +15,7 @@
         var dialog = document.getElementById("dialog").ej2_instances[0];
         if (args.column.headerText === 'Employee Data') {
                 args.cell.querySelector('.view-button').addEventListener('click', function () {
-                dialog.visible = true; // Show the dialog
+                dialog.visible = true;
                 dialog.content =
                          `<p><b>EmployeeID:</b> ${args.data.EmployeeID}</p>
                          <p><b>FirstName:</b> ${args.data.FirstName}</p>

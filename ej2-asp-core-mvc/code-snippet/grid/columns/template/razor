@@ -1,8 +1,8 @@
 @Html.EJS().Grid("FlatGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("315").Columns(col =>
     {
         col.HeaderText("Employee Image").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Template("#template").Width("150").Add();
-        col.Field("FirstName").HeaderText("Name").Width("100").Add();
-        col.Field("LastName").HeaderText("LastName").Width("100").Add();
+        col.Field("FirstName").HeaderText("First Name").Width("100").Add();
+        col.Field("LastName").HeaderText("Last Name").Width("100").Add();
         col.Field("City").HeaderText("City").Width("100").Add();
     }).Render()
     

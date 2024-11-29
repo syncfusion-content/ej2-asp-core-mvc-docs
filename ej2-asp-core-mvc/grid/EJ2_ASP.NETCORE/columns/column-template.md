@@ -35,9 +35,9 @@ The following example demonstrates how to define a `template` for the **Employee
 
 ## Render hyperlink in a column
 
-The Grid control provides support for rendering hyperlink columns and performing routing on click using the [template](../../api/grid/column/#template) property. This feature is useful when displaying data that requires a link to another page or website.
+The Grid control provides support for rendering hyperlink columns and performing routing on click using the `template` property. This feature is useful when displaying data that requires a link to another page or website.
 
-The following example demonstrates, how to render hyperlink column in the Grid using the [template](../../api/grid/column/#template) property of the `column`. To define a `template` for the column,  you can use the `template` with the `a` tag to create the hyperlink.
+The following example demonstrates, how to render hyperlink column in the Grid using the `template` property of the `column`. To define a `template` for the column,  you can use the `template` with the `a` tag to create the hyperlink.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

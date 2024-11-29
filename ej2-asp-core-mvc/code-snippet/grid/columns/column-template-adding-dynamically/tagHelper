@@ -34,6 +34,7 @@
         if (args.column.field === 'ShipCountry') {
             let dropDownList = new ej.dropdowns.DropDownList({
                 dataSource: dropData,
+                fields: { text: 'ShipCountry', value: 'ShipCountry' },
                 value: args.data['ShipCountry'],
                 index: 0
             });

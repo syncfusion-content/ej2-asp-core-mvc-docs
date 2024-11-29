@@ -1,5 +1,5 @@
 <div style="padding:0px 0px 20px 0px">
-@Html.EJS().Button("addColumnButton").Content("Add Column").CssClass("e-outline").Render()
+  @Html.EJS().Button("addColumnButton").Content("Add Column").CssClass("e-outline").Render()
 </div>
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).QueryCellInfo("queryCellInfo").Columns(col =>
     {
@@ -35,6 +35,7 @@
         if (args.column.field === 'ShipCountry') {
             let dropDownList = new ej.dropdowns.DropDownList({
                 dataSource: dropData,
+                fields: { text: 'ShipCountry', value: 'ShipCountry' },
                 value: args.data['ShipCountry'],
                 index: 0
             });
