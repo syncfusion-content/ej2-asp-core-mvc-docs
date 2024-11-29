@@ -1,0 +1,13 @@
+@Html.EJS().Grid("FlatGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+{
+    col.Field("EmployeeID").HeaderText("Employee ID").Width(90).Add();
+    col.Field("LastName").HeaderText("Last Name").Width(150).Add();
+    col.Field("FirstName").HeaderText("First Name").Width(150).Template("#template").Add();
+}).Render()
+<script id="template" type="text/x-template">
+    <div>
+        <a href="https://www.google.com/search?q=${FirstName}" target="_blank">
+            ${FirstName}
+        </a>
+    </div>
+</script>
