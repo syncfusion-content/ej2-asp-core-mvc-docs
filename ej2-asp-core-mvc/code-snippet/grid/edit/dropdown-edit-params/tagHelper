@@ -1,0 +1,12 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" validationRules="@(new { required=true})" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" editType="numericedit" validationRules="@(new { required= true, min=1, max=1000 })" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" edit="@(new { @params = new Syncfusion.EJ2.DropDowns.DropDownList(){
+        ShowClearButton= true,
+        PopupHeight="120",
+        } })" validationRules="@(new { required=true})" editType="dropdownedit" width="150"></e-grid-column>
+   </e-grid-columns>
+</ejs-grid>
