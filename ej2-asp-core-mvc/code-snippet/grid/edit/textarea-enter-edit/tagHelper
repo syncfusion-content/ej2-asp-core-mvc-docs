@@ -1,0 +1,48 @@
+@{
+    var valueAccessor = "valueAccessor";
+}
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" validationRules="@(new { required=true})" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" editType="numericedit" validationRules="@(new { required= true,min=1, max=1000 })" textAlign="Right" width="120"></e-grid-column> 
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" editType="datepickeredit" width="120"></e-grid-column>
+        <e-grid-column field="ShipAddress" headerText="Ship Address" disableHtmlEncode="false" edit="@(new {create = "createShipAddressHandler", read = "readShipAddressHandler", destroy = "destroyShipAddressHandler", write = "writeShipAddressHandler"})" valueAccessor="valueAccessor" editType="dropdownedit" width="150"></e-grid-column>
+   </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function createShipAddressHandler() {
+        textBoxElementent = document.createElement('textarea');
+        return textBoxElement;
+    }
+    function destroyShipAddressHandler() {
+        textBoxObject.destroy();
+    }
+    function readShipAddressHandler() {
+        return textBoxObject.value;
+    }
+
+    function writeShipAddressHandler(args) {
+        var rowData = args.rowData;
+        textBoxObject = new ej.inputs.TextBox({
+            multiline: true,
+            value: rowData.ShipAddress,
+            focus:  function onFocus(args) {
+                ((args.event).target).addEventListener('keydown', (e) => {
+                    if ((e).key === 'Enter') {
+                        e.stopPropagation();
+                    }
+                });
+            }
+        });
+        textBoxObject.appendTo(textBoxElement);
+    }
+
+    function valueAccessor(field, data) {
+        var value = data.ShipAddress;
+        return (value !== undefined) ? value.split('\n').join('<br>') : '';
+    }
+</script>
