@@ -1,0 +1,18 @@
+<div style="padding-bottom: 10px">
+   @Html.EJS().Button("buttons").CssClass("e-primary").Content("Clear Row Selection").Render()
+</div>
+<p style="color:red;text-align:center" id="message"></p>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).SelectedRowIndex(2).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).AllowPaging().PageSettings(page => { page.PageSize(10); }).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).Mode(Syncfusion.EJ2.Grids.SelectionMode.Row)).Render()
+<script>
+   document.getElementById('buttons').onclick = function () {
+      var grid = document.getElementById("grid").ej2_instances[0];
+      grid.selectionModule.clearRowSelection()
+   };
+</script>

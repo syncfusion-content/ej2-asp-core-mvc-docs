@@ -8,183 +8,286 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Row selection in ASP.NET Core Grid component
 
-# Row Selection in ASP.NET Core Grid Component
+Row selection in the Grid component allows you to interactively select specific rows or ranges of rows within the grid. This selection can be done effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when you want to highlight, manipulate, or perform actions on specific row within the Grid.
 
-## Select row at Initial rendering
+> To enable row selection, you should set the [selectionSettings.mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) property to either **Row** or **Both**. This property determines the selection mode of the grid.
 
-To select a row at initial rendering, set the [`selectedRowIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SelectedRowIndex) value.
+## Single row selection 
 
-{% if page.publishingplatform == "aspnet-core" %}
+Single row selection allows you to select a single row at a time within the Grid. This feature is useful when you want to focus on specific rows or perform actions on the data within a particular row.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/select-row/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Select-row.cs" %}
-{% include code-snippet/grid/selection/select-row/select-row.cs %}
-{% endhighlight %}
-{% endtabs %}
+To enable single row selection, set the [selectionSettings.mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) property to **Row** and the [selectionSettings.type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property to **Single**. This configuration allows you to select a only one row at a time within the grid.
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/select-row/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Select-row.cs" %}
-{% include code-snippet/grid/selection/select-row/select-row.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-## Get selected row indexes
-
-You can get the selected row indexes by using the **getSelectedRowIndexes** method.
-
-{% if page.publishingplatform == "aspnet-core" %}
+Here's an example of how to enable single row selection using properties:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/selected-row-index/tagHelper %}
+{% include code-snippet/grid/selection/row-single-selection/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Selected-row-index.cs" %}
-{% include code-snippet/grid/selection/selected-row-index/selected-row-index.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/selected-row-index/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Selected-row-index.cs" %}
-{% include code-snippet/grid/selection/selected-row-index/selected-row-index.cs %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-single-selection/row-selection.cs%}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Single row selection](../images/scrolling/scrolling-infinite-scroll.gif)
 
+## Multiple row selection 
 
-## Simple multiple row selection
+Multiple row selection allows you to select multiple rows within the Grid. This feature is valuable when you need to perform actions on several rows simultaneously or focus on specific data areas.
 
-You can select multiple rows by clicking on rows one by one. This will not deselect the previously selected rows. To deselect the previously selected row, you can click on the  selected row. You can enable this behavior by using [`enableSimpleMultiRowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_EnableSimpleMultiRowSelection) property of **e-grid-selectionsettings** tag helper.
+To enable multiple row selection, set the [selectionSettings.mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) property to **Row** and the [selectionSettings.type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property to **Multiple**. This configuration allows you to select a multiple rows at a time within the grid.
 
-{% if page.publishingplatform == "aspnet-core" %}
+Here's an example of how to enable multiple rows selection using properties:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/simplemultiselect/tagHelper %}
+{% include code-snippet/grid/selection/row-multiple-selection/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Multiselection.cs" %}
-{% include code-snippet/grid/selection/simplemultiselect/multiselection.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/simplemultiselect/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multiselection.cs" %}
-{% include code-snippet/grid/selection/simplemultiselect/multiselection.cs %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-multiple-selection/row-selection.cs%}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Multiple row selection](../images/scrolling/scrolling-infinite-scroll.gif)
 
+## Select row at initial rendering 
 
-## Toggle selection
+You have the ability to select a specific row during the initial rendering of the Grid component. This feature is particularly useful when you want to highlight or pre-select a specific row in the grid. To achieve this, you can utilize the [selectedRowIndex](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SelectedRowIndex) property provided by the Grid component.
 
-The Toggle selection allows to perform selection and unselection of the particular row or cell or column. To enable toggle selection, set [`enableToggle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_EnableToggle) property of **e-grid-selectionsettings** as true. If you click on the selected row or cell or column then it will be unselected and vice versa.
-
-{% if page.publishingplatform == "aspnet-core" %}
+In the following example, it demonstrates how to select a row at initial rendering:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/toggleselection/tagHelper %}
+{% include code-snippet/grid/selection/row-initial-rendering/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Toggleselection.cs" %}
-{% include code-snippet/grid/selection/toggleselection/toggleselection.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/toggleselection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Toggleselection.cs" %}
-{% include code-snippet/grid/selection/toggleselection/toggleselection.cs %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-initial-rendering/row-selection.cs%}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Select row at initial rendering](../images/scrolling/scrolling-infinite-scroll.gif)
 
+## Select rows in any page based on index value 
 
-N> If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
+The Grid allows you to select rows in any page based on their index value. This feature is useful when you want to perform specific actions on rows, such as highlighting, applying styles, or executing operations, regardless of their location across multiple pages within the grid.
 
-## Clear selection programmatically
+To achieve this, you can utilize the `selectRow` method and the `goToPage` method of the Grid control. By handling the [change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of `DropDownList` component, you can implement the logic to navigate to the desired page and select the row based on the index value. 
 
-You can clear the Grid selection programmatically by using the `clearSelection` method.
+Additionally, by handling the [actionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event of the Grid, you can maintain the selection of the desired row after completing the paging action.
 
-In the demo below, we initially selected the third row using [SelectedRowIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SelectedRowIndex). You can clear this selection by calling the `clearSelection` method in the button click event.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to select rows in any page based on index value using `actionComplete` and `change` event:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/programmatic-selection/tagHelper %}
+{% include code-snippet/grid/selection/row-index/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Programmatic-Selection.cs" %}
-{% include code-snippet/grid/selection/programmatic-selection/programmatic-selection.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/programmatic-selection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Programmatic-Selection.cs" %}
-{% include code-snippet/grid/selection/programmatic-selection/programmatic-selection.cs %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-index/row-selection.cs%}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Select rows in any page based on index value](../images/scrolling/scrolling-infinite-scroll.gif)
 
-## Get selected records on various pages
+## Multiple row selection by single click on row 
 
-Enabling the [SelectionSettings.PersistSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property will persist the selection in all Grid operations.
+The Grid component allows you to perform multiple row selection by simply clicking on rows one by one without pressing CTRL or SHIFT keys. This means that when you click on a row, it will be selected, and clicking on another row will add it to the selection without deselecting the previously selected rows. To deselect a previously selected row, you can click on the row again, and it will be unselected.
 
-So the selection will be maintained on every page even after navigating to another page.
+To enable the simple multiple row selection, you need to set the [selectionSettings.enableSimpleMultiRowSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_EnableSimpleMultiRowSelection) property to **true**. 
 
-You can get the selected records using the `getSelectedRecords` method.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to enable multiple row selection with a single click on the Grid row using `enableSimpleMultiRowSelection` property:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/selected-records/tagHelper %}
+{% include code-snippet/grid/selection/row-single-click/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="GetSelectedRecords.cs" %}
-{% include code-snippet/grid/selection/selected-records/selected-records.cs %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-single-click/row-selection.cs%}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Multiple row selection by single click on row](../images/scrolling/scrolling-infinite-scroll.gif)
+
+## Select rows externally 
+
+You can perform single row selection, multiple row selection, and range of row selection externally in a Grid using built-in methods. This feature allows you to interact with specific rows within the Grid. The following topic demonstrates how you can achieve these selections using methods.
+
+### Single row selection
+
+Single row selection allows you to select a single row at a time within the Grid. This feature is useful when you want to focus on specific rows or perform actions on the data within a particular row.
+
+To achieve single row selection, you can use the `selectRow` method. This method allows you to programmatically select a specific row within the Grid by specifying its index.
+
+The following example demonstrates how to select a single row within the Grid by obtaining the selected row index through a textbox component and passing these row index as argument to the `selectRow` method. When the button event is triggered by clicking the **Select Row** button, a single row is selected within the Grid:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/selected-records/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/row-single-method/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="GetSelectedRecords.cs" %}
-{% include code-snippet/grid/selection/selected-records/selected-records.cs %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-single-method/row-selection.cs%}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
+
+![Single row selection](../images/scrolling/scrolling-infinite-scroll.gif)
+
+### Multiple rows selection
+
+The ASP.NET Core Grid allows you to select multiple rows within the grid simultaneously. This feature is valuable when you need to perform actions or operations on several rows at once or focus on specific areas of your data.
+
+To achieve multiple row selection, you can use the `selectRows` method. This method allows you to select a collection of rows by specifying their indexes, giving you the ability to interact with multiple rows together.
+
+The following example, demonstrates how to select multiple rows in the Grid by calling the `selectRows` method within the button click event and passing an array of row indexes as arguments.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/row-multiple-method/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-multiple-method/row-selection.cs%}
+{% endhighlight %}
+{% endtabs %}
+
+![Multiple rows selection](../images/scrolling/scrolling-infinite-scroll.gif)
+
+### Range of rows selection 
+
+Range of row selection in the Grid enables you to select a continuous range of rows within the grid. This feature is particularly useful when you want to perform actions on multiple rows simultaneously or focus on a specific range of data.
+
+To achieve range of row selection, you can use the `selectRowsByRange` method. This method selects a range of rows from start and end row indexes.
+ 
+The following example, demonstrates how to select a range of rows within the Grid by obtaining the selected rows start index and end index through textbox components. Then, pass these start index and end index as arguments to the `selectRowsByRange` method. When you trigger the button event by clicking the **Select Rows** button, a range of rows is selected within the Grid.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/row-range-selection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-range-selection/row-selection.cs%}
+{% endhighlight %}
+{% endtabs %}
+
+![Range of rows selection](../../images/selection/row-range-selection.png)
+
+## Select grid rows based on certain condition
+
+You can programmatically select specific rows in the ASP.NET Core Grid component based on a certain condition. This feature is particularly useful when you need to dynamically highlight or manipulate specific rows in the grid based on custom conditions. This functionality can be achieved using the `selectRows` method in the [dataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of Grid and [rowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) along with obtaining the index value based on the condition.
+
+In the below demo, we have selected the grid rows only when **EmployeeID** column value greater than **3**.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/row-certain-condition/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-certain-condition/row-selection.cs%}
+{% endhighlight %}
+{% endtabs %}
+
+![Select grid rows based on certain condition](../../images/selection/row-certain-condition.png)
+
+## How to get selected row indexes 
+
+You can retrieve the indexes of the currently selected rows in the Grid component. This feature is particularly useful when you need to perform actions or operations specifically on the selected rows. 
+
+To achieve this, you can leverage the `getSelectedRowIndexes` method, which returns an array of numbers representing the indexes of the selected rows.
+
+ The following example demonstrates how to get selected row indexes using  `getSelectedRowIndexes` method: 
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/row-get-selected/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-get-selected/row-selection.cs%}
+{% endhighlight %}
+{% endtabs %}
+
+![Get selected row indexes](../../images/selection/row-get-selected.png)
+
+## How to get selected records on various pages 
+
+The Grid component allows you to retrieve the selected records even when navigating to different pages. This feature is useful when working with large data sets and allows you to perform actions on the selected records across multiple pages. 
+
+To persist the selection across pages, you need to enable the [persistselection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property. By default, this property is set to **false**. To enable it, set the value to **true** in the `selectionSettings` property of the Grid component.
+
+To retrieve the selected records from different pages, you can use the  `getSelectedRecords` method. This method returns an array of the selected records.
+
+The following example demonstrates how to retrieve selected records from various pages using the `getSelectedRecords` method and display **OrderID** in a dialog when a button is clicked:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/row-selected-various-pages/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-selected-various-pages/row-selection.cs%}
+{% endhighlight %}
+{% endtabs %}
+
+![Get selected records on various pages](../images/scrolling/scrolling-infinite-scroll.gif)
+
+> To persist the grid selection, it is necessary to define any one of the columns as a primary key using the [columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) property.
+
+## How to get selected records  
+
+The get selected records allows you to retrieve the data of the selected rows from the Grid component. This can be particularly useful when you need to perform actions on the selected data or display specific information based on the selected rows.
+
+To retrieve the selected records, you can use the `getSelectedRecords` method. This method allows you to obtain an array of objects representing the selected records.
+
+Here's an example that displays the selected row count using the `getSelectedRecords` method:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/row-selected-records/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-selected-records/row-selection.cs%}
+{% endhighlight %}
+{% endtabs %}
+
+![Get selected records](../../images/selection/row-selected-records.png)
+
+## Clear row selection programmatically 
+
+Clearing row selection programmatically in the Grid component is a useful feature when you want to remove any existing row selections. To achieve this, you can use the `clearRowSelection` method.
+
+>The `clearRowSelection` method is applicable when the selection [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) is set to **Multiple** or **Single**.
+
+The following example demonstrates how to clear row selection by calling the `clearRowSelection` method in the button click event.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/row-clear-selection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-clear-selection/row-selection.cs%}
+{% endhighlight %}
+{% endtabs %}
+
+![Clear row selection programmatically ](../../images/selection/row-clear-selection.gif)
+
+## Row selection events 
+
+The Grid provides several events related to row selection that allow you to respond to and customize the behavior of row selection. These events give you control over various aspects of row selection. Here are the available row selection events:
+
+[rowSelecting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowSelecting): This event is triggered before any row selection occurs. It provides an opportunity to implement custom logic or validation before a row is selected, allowing you to control the selection process.
+
+[rowSelected](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowSelected): This event is triggered after a row is successfully selected. You can use this event to perform actions or updates when a row is selected.
+
+[rowDeselecting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDeselecting): This event is triggered just before a selected row is deselected. It allows you to perform custom logic or validation to decide whether the row should be deselected or not.
+
+[rowDeselected](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDeselected): This event is triggered when a particular selected row is deselected. You can use this event to perform actions or validations when a row is no longer selected.
+
+In the following example, row selection is canceled when the value of **CustomerID** is equal to **VINET** within the `rowSelecting` event. The background color changes to green when the value of **Freight** is greater than 10 and less than or equal to 140, triggering the `rowDeselected` event. The background color changes to red when the value of **Freight** is less than or equal to 10 during the `rowDeselected` event. Furthermore, the background color changes to yellow when the value of **Freight** is greater than 140 during the `rowDeselected` event. A notification message is displayed to indicate which event was triggered whenever a row is selected.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/row-selection-events/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-selection.cs" %}
+{% include code-snippet/grid/selection/row-selection-events/row-selection.cs%}
+{% endhighlight %}
+{% endtabs %}
+
+![Row selection events ](../images/scrolling/scrolling-infinite-scroll.gif)
