@@ -119,8 +119,8 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/context-menu/enablecontextmenu/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Html.cs" %}
-{% include code-snippet/grid/context-menu/enablecontextmenu/html.cs %}
+{% highlight c# tabtitle="enablecontextmenu.cs" %}
+{% include code-snippet/grid/context-menu/enablecontextmenu/enablecontextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
