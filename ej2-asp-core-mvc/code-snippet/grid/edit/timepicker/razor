@@ -1,31 +1,35 @@
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.Datasource).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("OrderDate").HeaderText("Ship Name").Format("hh:mm").Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Width("150").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("120").Add();
+    col.Field("Freight").HeaderText("Freight").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Format("yMd").EditType("datepickeredit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("140").Add();
+    col.Field("OrderDate").HeaderText("Order Time").Format("hh :mm a").Edit(new { create = "createOrderDateHandler", read = "readOrderDateHandler", destroy = "destroyOrderDateHandler", write = "writeOrderDateHandler" }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("140").Add();
 
 }).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 <script>
-    var timeObject;
-    var element
-    function create(args) {
-        element = document.createElement('input');
-        return element;
-    }
-    function read(e) {
-        return timeObject.value;
-    }
-    function destroy() {
-        timeObject.destroy();
-    }
-    function write(args) {
+    var timePickerObj;
+    var timePickerElement
 
-        timeObject = new ej.calendars.TimePicker({
-            value: args.rowData[args.column.field],
-            step: 60
+    function createOrderDateHandler(args) {
+        timePickerElement = document.createElement('input');
+        return timePickerElement;
+    }
+    function readOrderDateHandler() {
+        return timePickerObj.value;
+    }
+    function destroyOrderDateHandler() {
+        timePickerObj.destroy();
+    }
+    function writeOrderDateHandler(args) {
+        var rowData = args.rowData;
+        timePickerObj = new ej.calendars.TimePicker({
+            value: rowData.OrderDate,
+            change: function (e) {
+                rowData.OrderDate = e.value;
+            }
         });
-        timeObject.appendTo(element);
+        timePickerObj.appendTo(timePickerElement);
     }
 </script>
