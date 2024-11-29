@@ -44,7 +44,7 @@ The following example demonstrates how to set [SortSettings.Columns](https://hel
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting](images/sorting/sorting-initial-sort.png)
+![Sorting](../images/sorting/sorting-initial-sort.png)
 
 > The initial sorting defined in [SortSettings.Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSortSettings.html#Syncfusion_EJ2_Grids_GridSortSettings_Columns) will override any sorting applied through individual interaction.
 
@@ -123,7 +123,7 @@ The example below demonstrates how to display null values at the bottom of the g
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting](images/sorting/sorting-null-sort.gif)
+![Sorting](../images/sorting/sorting-null-sort.gif)
 
 > The customSortComparer function takes two parameters: a and b. The a and b parameters are the values to be compared. The function returns -1, 0, or 1, depending on the comparison result.
 
@@ -173,7 +173,7 @@ In the case of remote data in the grid, the sorting operation will be performed 
 
 Perform sorting based on culture in the Grid can be achieved by utilizing the [Locale](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property. By setting the `Locale` property to the desired culture code, you enable sorting based on that specific culture. This allows you to apply locale-specific sorting rules and ensure accurate ordering for different languages and regions.
 
-In the following example, sorting is performed based on the **"ar"** locale using the `Column.sortComparer` property.
+In the following example, sorting is performed based on the **"ar"** locale using the `Column.SortComparer` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

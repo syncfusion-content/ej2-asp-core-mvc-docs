@@ -173,7 +173,7 @@ In the case of remote data in the grid, the sorting operation will be performed 
 
 Perform sorting based on culture in the Grid can be achieved by utilizing the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property. By setting the `locale` property to the desired culture code, you enable sorting based on that specific culture. This allows you to apply locale-specific sorting rules and ensure accurate ordering for different languages and regions.
 
-In the following example, sorting is performed based on the **"ar"** locale using the `Column.sortComparer` property.
+In the following example, sorting is performed based on the **"ar"** locale using the `column.sortComparer` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

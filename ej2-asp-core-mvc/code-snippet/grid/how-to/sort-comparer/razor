@@ -14,7 +14,6 @@
             action = args.direction;
         }
     }
-
     function sortComparer(reference, comparer) {
         var sortAsc = action === "Ascending" ? true : false;
         if (sortAsc && reference === null) {

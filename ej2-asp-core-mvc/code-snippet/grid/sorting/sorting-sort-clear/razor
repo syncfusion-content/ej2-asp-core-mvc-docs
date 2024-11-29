@@ -16,6 +16,6 @@
 <script>
     document.getElementById('clearButton').addEventListener('click', function () {
         var grid = document.getElementById("grid").ej2_instances[0];
-        grid.clearSorting()
+        grid.clearSorting();
     });
 </script>

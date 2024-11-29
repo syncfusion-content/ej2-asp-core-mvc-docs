@@ -13,11 +13,11 @@
         var files = ['ca-gregorian.json', 'currencies.json', 'numberingSystems.json', 'numbers.json', 'timeZoneNames.json', 'currencies.json'];
         var loader = ej.base.loadCldr;
         var loadCulture = function (prop) {
-            var val, ajax;
+            var value, ajax;
             ajax = new ej.base.Ajax(location.origin + '/../Content/cldr-data/main/' + name + '/' + files[prop], 'GET', false);
             ajax.onSuccess = function (value) {
-                val = value;
-                ej.base.loadCldr(JSON.parse(val));
+                value = value;
+                ej.base.loadCldr(JSON.parse(value));
             };
             ajax.send();
         };

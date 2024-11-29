@@ -12,7 +12,7 @@
 }
 <div style="padding-bottom:20px">
     <div style="display: flex">
-        <label style="padding: 5px 28px 0 0"> Column name :</label>
+        <label style="padding: 5px 28px 0 0;font-weight: bold;"> Column name :</label>
         <span style="height:fit-content">
             @Html.EJS().DropDownList("dropDownColumn").Width("120px").Index(0).DataSource(@ViewBag.dropDownData).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "value", Text = "text" }).Render()
         </span>

@@ -8,7 +8,7 @@
         <e-grid-column field="OrderID" headerText="Order ID" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" sortComparer=sortComparer width="130"></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
@@ -19,7 +19,6 @@
             action = args.direction;
         }
     }
-
     function sortComparer(reference, comparer) {
         var sortAsc = action === "Ascending" ? true : false;
         if (sortAsc && reference === null) {
