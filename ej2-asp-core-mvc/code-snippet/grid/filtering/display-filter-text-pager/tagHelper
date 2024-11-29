@@ -1,0 +1,18 @@
+<div style="padding-bottom: 20px; display: flex">
+    <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Show filter bar status </label>    
+    <ejs-switch id="switch" checked="true" change="onChange"></ejs-switch>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="273px" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function onChange(args)  {
+      var grid = document.getElementById("grid").ej2_instances[0];
+      grid.filterSettings = { showFilterBarStatus: args.checked }
+    }
+</script>

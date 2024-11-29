@@ -1,0 +1,21 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="300px">
+    <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" type="datetime" format="M/d/y HH:mm" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="ShippedDate" headerText="Shipped Date" type="datetime" format="M/d/y HH:mm" textAlign="Right" width="120"></e-grid-column>              
+        <e-grid-column field="ShipCountry" headerText="ShipCountry" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function actionComplete(args) {
+        if (args.requestType === 'filterAfterOpen') {
+            var grid = document.getElementById("grid").ej2_instances[0];
+            let columnObject = grid.getColumnByField(args.columnName);
+            if (columnObject.type === 'datetime') {
+                let dateObject = document.getElementById('dateui-' + columnObject.uid)['ej2_instances'][0];
+                dateObject.timeFormat = 'HH:mm';
+            }
+        }
+    }
+</script>

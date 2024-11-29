@@ -1,0 +1,58 @@
+@using Syncfusion.EJ2.Notifications;
+<div id="msg_warning" style="padding-bottom:20px;display: none;">
+  @Html.EJS().Message("msg_warning").Severity(Severity.Warning).Content("No Records").CssClass("e-content-center").Render()
+</div>
+<div style="padding-bottom:20px">
+  @Html.EJS().Button("getFilteredData").CssClass("e-success msg-button").Content("Get Filtered Data").Render()
+  @Html.EJS().Button("clearFilter").CssClass("e-danger").Content("Clear").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering(true).Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).AllowPaging().Render()
+<div id="filteredGrid" style="display: none;">
+  <h3>Filtered Records</h3>
+  @Html.EJS().Grid("filterGrid").AllowFiltering(true).Columns(col =>
+  {
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+  }).AllowPaging().Render()
+</div>
+<script>
+  let filteredData = [];
+  let showRecords = false;
+  let showWarning = false;
+  document.getElementById('getFilteredData').onclick = handleClickEvent;
+  document.getElementById('clearFilter').onclick = handleClickEvent;
+  function handleClickEvent(event) {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    if(event.target.id==="getFilteredData"){
+      filteredData = grid.getFilteredRecords();
+      showRecords = filteredData.length > 0;
+      showWarning = !showRecords;
+      document.getElementById('filteredGrid').style.display = showRecords ? 'block' : 'none';
+      document.getElementById('msg_warning').style.display = showWarning ? 'block' : 'none';
+      if (showRecords) {
+        document.getElementById("filterGrid").ej2_instances[0].dataSource = filteredData;
+      }
+    }else if(event.target.id==="clearFilter") {
+      grid.clearFiltering();
+      showRecords = false;
+      showWarning = false;
+      document.getElementById('filteredGrid').style.display = 'none';
+      document.getElementById('msg_warning').style.display = 'none';
+    }
+  }
+</script>
+<style>
+  .msg-button {
+    margin-right: 15px;
+  }
+</style>
