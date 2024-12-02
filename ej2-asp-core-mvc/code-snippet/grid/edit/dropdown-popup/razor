@@ -1,0 +1,36 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Load("load").ActionComplete("actionComplete").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("100").ValidationRules(new { required = "true", number = true }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+    col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+    var isDropdown = false;
+    function load() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.element.addEventListener('mouseup', (e) => {
+            if (e.target.classList.contains('e-rowcell')) {
+                if (grid.isEdit) {
+                    grid.endEdit();
+                }
+                var rowInfo = grid.getRowInfo(e.target);
+                if (rowInfo && rowInfo.column && (rowInfo.column).field === 'ShipCountry') {
+                    isDropdown = true;
+                    grid.selectRow(rowInfo.rowIndex);
+                    grid.startEdit();
+                }
+            }
+        });
+    }
+
+    function actionComplete(args) {
+        if (args.requestType === 'beginEdit' && isDropdown) {
+            isDropdown = false;
+            var dropdownObj = (args.form.querySelector('.e-dropdownlist'))['ej2_instances'][0];
+            dropdownObj.element.focus();
+            dropdownObj.showPopup();
+        }
+    }
+</script>
