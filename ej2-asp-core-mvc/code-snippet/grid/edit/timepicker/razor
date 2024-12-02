@@ -12,7 +12,7 @@
     var timePickerObj;
     var timePickerElement
 
-    function createOrderDateHandler(args) {
+    function createOrderDateHandler() {
         timePickerElement = document.createElement('input');
         return timePickerElement;
     }
