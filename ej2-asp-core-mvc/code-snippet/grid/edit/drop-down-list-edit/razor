@@ -1,0 +1,41 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width(120).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width(120).Add();
+    col.Field("Freight").HeaderText("Freight").EditType("numericedit").ValidationRules(new { required = "true", min = 1, max = 1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").EditType("datepickeredit").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Edit(new { create = "createShipCountryHandler", read = "readShipCountryHandler", destroy = "destroyShipCountryHandler", write = "writeShipCountryHandler" }).Width("150").Add();
+}).EditSettings(edit => edit.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+    var dropDownElement;
+    var dropDownListObj;
+    var selectDataSource = [
+        { text: 'Germany', value: 'Germany' },
+        { text: 'Brazil', value: 'Brazil' },
+        { text: 'Belgium', value: 'Belgium' },
+        { text: 'Switzerland', value: 'Switzerland' },
+        { text: 'Venezuela', value: 'Venezuela' },
+        { text: 'Austria', value: 'Austria' },
+        { text: 'Mexico', value: 'Mexico' },
+        { text: 'France', value: 'France' }
+    ];
+    function createShipCountryHandler() {
+        dropDownElement = document.createElement('input');
+        return dropDownElement;
+    }
+    function destroyShipCountryHandler() {
+        dropDownListObj.destroy();
+    }
+    function readShipCountryHandler() {
+        return dropDownListObj.value;
+    }
+    function writeShipCountryHandler(args) {
+        var rowData = args.rowData;
+        dropDownListObj = new ej.dropdowns.DropDownList({
+            dataSource: selectDataSource,
+            value: rowData.ShipCountry
+        });
+        dropDownListObj.appendTo(dropDownElement);
+    }
+</script>
