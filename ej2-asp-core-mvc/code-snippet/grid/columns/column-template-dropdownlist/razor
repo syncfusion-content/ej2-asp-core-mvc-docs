@@ -1,0 +1,26 @@
+@Html.EJS().Grid("FlatGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).QueryCellInfo("dropdown").Height(315).Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+        col.Field("CustomerID").HeaderText("Customer ID").Width(100).Add();
+        col.Field("Freight").HeaderText("Freight").Width(90).Format("C2").Add();
+        col.Field("OrderStatus").HeaderText("Order Status").Template("#columnTemplate").Width(200).Add();
+    }).Render()
+
+<script type="text/x-template" id="columnTemplate" >
+  <div id="dropElement" ></div>
+</script>
+
+<script>
+let dropData = ['Order Placed', 'Processing', 'Delivered'];
+function dropdown(args) {
+  if (args.column.field === 'OrderStatus') {
+      let drop = new ej.dropdowns.DropDownList({
+          dataSource: dropData,
+          value: args.data['OrderStatus'],
+          popupHeight: 150,
+          popupWidth: 150,
+      });
+      drop.appendTo(args.cell.querySelector('#dropElement'));
+  }
+}
+</script>
