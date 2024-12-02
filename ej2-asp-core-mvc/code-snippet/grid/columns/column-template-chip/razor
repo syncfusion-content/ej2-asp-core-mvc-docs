@@ -1,0 +1,21 @@
+@Html.EJS().Grid("FlatGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableHover(false).QueryCellInfo("queryCellInfo").Height(315).Columns(col =>
+    {
+        col.Field("LastName").HeaderText("Last Name").Width(90).Add();
+        col.Field("City").HeaderText("City").Width(150).Add();
+        col.Field("FirstName").HeaderText("First Name").Template("#columnTemplate").Width(90).Add();
+    }).Render()
+
+<script type="text/x-template" id="columnTemplate" >
+    <div id="chipElement" ></div>
+</script>
+
+<script>
+    function queryCellInfo(args) {
+  if (args.column.field === 'FirstName') {
+    let chip = new ej.buttons.ChipList({
+      text: args.data[args.column.field],
+    });
+    chip.appendTo(args.cell.querySelector('#chipElement'));
+  }
+}
+</script>

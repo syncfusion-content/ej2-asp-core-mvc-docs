@@ -1,0 +1,45 @@
+<div style="padding:0px 0px 20px 0px">
+  @Html.EJS().Button("addColumnButton").Content("Add Column").CssClass("e-outline").Render()
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).QueryCellInfo("queryCellInfo").Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").Width(80).Add();
+        col.Field("CustomerID").HeaderText("Customer Name").Width(100).Add();
+        col.Field("Freight").HeaderText("Freight").Width(80).Add();
+    }).Height("315").Render();
+
+<script id="columnTemplate" type="text/x-template">
+    <input id="dropElement" type="text" />
+</script>
+
+<script id="headerTemplate" type="text/x-template">
+    <div><span class="e-icons e-location"></span> Ship Country</div>
+</script>
+
+<script>
+    let dropData = ['USA', 'Germany', 'Brazil', 'France', 'Belgium', 'Switzerland', 'Venezuela', 'Austria', 'Mexico'];
+    document.getElementById('addColumnButton').addEventListener('click', function () {
+        let grid = document.getElementById('Grid').ej2_instances[0];
+        let newColumn = {
+            field: 'ShipCountry',
+            headerText: 'Ship Country',
+            width: 100,
+            headerTemplate: '#headerTemplate',
+            template: '#columnTemplate'
+        };
+        grid.columns.push(newColumn);
+        grid.refreshColumns();
+    });
+
+    function queryCellInfo(args) {
+        if (args.column.field === 'ShipCountry') {
+            let dropDownList = new ej.dropdowns.DropDownList({
+                dataSource: dropData,
+                fields: { text: 'ShipCountry', value: 'ShipCountry' },
+                value: args.data['ShipCountry'],
+                index: 0
+            });
+            dropDownList.appendTo(args.cell.querySelector('#dropElement'));
+        }
+    }
+</script>

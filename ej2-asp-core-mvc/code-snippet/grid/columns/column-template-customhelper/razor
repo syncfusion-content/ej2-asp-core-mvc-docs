@@ -1,0 +1,16 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+        col.Field("CustomerID").HeaderText("Customer ID").Width(120).Add();
+        col.Field("Freight").HeaderText("Freight").Template("#template").Width(90).Format("C2").Add();
+        col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(120).Format("yMd").Add();
+    }).Height("315").Render();
+    
+<script type="text/x-template" id="template">
+    ${ formatCurrency(data.Freight) }
+</script>
+<script>
+    function formatCurrency(value) {
+        return '₹ ' + value.toFixed(3);
+    }
+</script>
