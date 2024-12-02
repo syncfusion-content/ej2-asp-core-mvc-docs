@@ -133,7 +133,7 @@ function dropdown(args) {
 
 The Grid control provides support for rendering [Chips](https://ej2.syncfusion.com/aspnetmvc/documentation/chips/getting-started) control in a column using the `Template` property. This feature is useful when displaying data that requires a chip control to be rendered in a column.
 
-In the following code, we rendered the Chips control in the Grid **First Name** column by defining the `template` property.
+In the following code, we rendered the Chips control in the Grid **First Name** column by defining the `Template` property.
 
 ```js
 function queryCellInfo(args) {
@@ -239,7 +239,7 @@ The Syncfusion Grid allows you to use custom helpers inside the `Template` prope
 
 To use the custom helper function inside a column template, you must first add the function to the template's context.
 
-The following example demonstrates how to use a custom helper function inside the `Template` property, using the `Template` element for the Freight column.
+The following example illustrates how to implement a custom helper function within the template property, utilizing the `Template` property specifically for the Freight column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -260,7 +260,7 @@ The Syncfusion Grid control allows you to dynamically add template columns at ru
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
-The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) is added in column `Template`, and an icon is displayed using the `HeaderTemplate` for the **ShipCountry** column. 
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) is added in column `Template`, and an icon is displayed in the column header by using the `HeaderTemplate` for the **ShipCountry** column. 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

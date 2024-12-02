@@ -77,7 +77,7 @@ In the following example, we have rendered the Sparkline Chart control in the Gr
 
 The [ColorPicker](https://ej2.syncfusion.com/aspnetcore/documentation/color-picker/getting-started) control of Syncfusion provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
 
-In the following code, we rendered the ColorPicker control in the Grid column by defining the `Template` property.
+In the following code, we rendered the ColorPicker control in the Grid column by defining the `template` property.
 
 ```js
 function colorPicker(args) {
@@ -239,7 +239,7 @@ The Syncfusion Grid allows you to use custom helpers inside the `template` prope
 
 To use the custom helper function inside a column template, you must first add the function to the template's context.
 
-The following example demonstrates how to use a custom helper function inside the `template` property, using the `template` element for the Freight column.
+The following example illustrates how to implement a custom helper function within the template property, utilizing the `template` property specifically for the Freight column.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -260,7 +260,7 @@ The Syncfusion Grid control allows you to dynamically add template columns at ru
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
-The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) is added in column `template`, and an icon is displayed using the `headerTemplate` for the **ShipCountry** column. 
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) is added in column `template`, and an icon is displayed in the column header by using the `headerTemplate` for the **ShipCountry** column. 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
