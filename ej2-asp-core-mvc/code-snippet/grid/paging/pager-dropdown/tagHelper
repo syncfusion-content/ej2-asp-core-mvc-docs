@@ -1,0 +1,10 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" height="325px"> 
+    <e-grid-pagesettings pageSizes="true" pageSize=10>
+    </e-grid-pagesettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
