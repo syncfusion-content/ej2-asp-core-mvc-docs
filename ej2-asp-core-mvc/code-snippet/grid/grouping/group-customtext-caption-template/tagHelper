@@ -1,0 +1,18 @@
+
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" height="330px"> 
+    <e-grid-groupsettings captionTemplate="#captiontemplate"></e-grid-groupsettings>  
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Name" width="100"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="City" width="100"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Value" width="100"></e-grid-column>        
+    </e-grid-columns>
+</ejs-grid>
+<script id="captiontemplate" type="text/x-template">
+    <div>${template(data)}</div>
+</script>
+<script type="text/javascript">
+    function template(args) {
+        return args.key + " -" + args.count + " Records : " + args.headerText;
+    }
+</script>
