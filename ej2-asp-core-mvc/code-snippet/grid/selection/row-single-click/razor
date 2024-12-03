@@ -1,6 +1,6 @@
 <div style="padding-bottom: 20px; display: flex">
    <label style="margin-right:5px;font-weight: bold;">Enable/Disable simple multiple row selection</label>
-   @Html.EJS().Switch("switch").Checked(true).Change("toggleRowSelection").Render()
+   @Html.EJS().Switch("switch").Change("toggleRowSelection").Render()
 </div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("348px").Columns(col =>
 {

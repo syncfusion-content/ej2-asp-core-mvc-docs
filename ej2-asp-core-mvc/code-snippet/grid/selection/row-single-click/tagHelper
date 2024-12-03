@@ -1,6 +1,6 @@
 <div style="padding-bottom: 20px; display: flex">
     <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Enable/Disable simple multiple row selection </label>    
-    <ejs-switch id="switch" checked="true" change="toggleRowSelection"></ejs-switch>
+    <ejs-switch id="switch" change="toggleRowSelection"></ejs-switch>
 </div>
 <ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px">
     <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>

@@ -1,0 +1,32 @@
+<p style="color:red;text-align:center;padding-bottom:10px" id="message"></p>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).EnableHover().Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).AllowPaging().ColumnDeselecting("columnDeselecting").ColumnDeselected("columnDeselected").ColumnSelecting("columnSelecting").ColumnSelected("columnSelected").SelectionSettings(select => select.AllowColumnSelection(true).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
+<script>
+    function columnSelected(args) {
+    document.getElementById("message").innerText = `Trigger columnSelected`;
+    args.headerCell.style.backgroundColor = 'rgb(96, 158, 101)';
+    }
+
+    function columnSelecting(args) {
+    document.getElementById("message").innerText = `Trigger columnSelecting`;
+    if (args.column.field == "CustomerID")
+        args.cancel = true;
+    }
+
+    function columnDeselected(args) {
+    document.getElementById("message").innerText = `Trigger columnDeselected`;
+    args.headerCell.style.backgroundColor = 'rgb(245, 69, 69)';
+    }
+
+    function columnDeselecting(args) {
+    document.getElementById("message").innerText = `Triggercolumn Deselecting`;
+    if (args.column.field == "Freight")
+        args.cancel = true;
+    }
+</script>

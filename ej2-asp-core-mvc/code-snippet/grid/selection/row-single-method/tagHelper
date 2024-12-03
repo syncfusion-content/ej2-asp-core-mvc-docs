@@ -1,7 +1,7 @@
 <div style="padding-bottom: 20px">
     <label style="padding: 30px 5px 0 0;font-weight: bold">Enter the row index:</label>
     <ejs-textbox id="inputTextBox" width="120px"></ejs-textbox>
-    <ejs-button id="buttons" cssClass="e-primary" content="Select Row"></ejs-button>
+    <ejs-button id="buttons" cssClass="e-primary custom" content="Select Row"></ejs-button>
 </div>
 <ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px">
     <e-grid-selectionsettings mode= "Row" type="Single"></e-grid-selectionsettings>
@@ -23,3 +23,8 @@
       }
     };
 </script>
+<style>
+  .custom{
+    margin-left: 10px;
+  }
+</style>

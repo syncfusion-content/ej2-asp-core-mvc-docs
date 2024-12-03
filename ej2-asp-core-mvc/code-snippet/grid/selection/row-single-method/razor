@@ -1,7 +1,7 @@
 <div style="padding-bottom: 20px">
-    <label style="padding: 30px 5px 0 0">Enter the row index:</label>
-    @Html.EJS().TextBox("inputTextBox").Width("120px").Render()
-    @Html.EJS().Button("buttons").CssClass("e-primary").Content("Select Row").Render()
+  <label style="padding: 30px 5px 0 0">Enter the row index:</label>
+  @Html.EJS().TextBox("inputTextBox").Width("120px").Render()
+  @Html.EJS().Button("buttons").CssClass("e-primary custom").Content("Select Row").Render()
 </div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("348px").Columns(col =>
 {
@@ -21,3 +21,8 @@
       }
     };
 </script>
+<style>
+  .custom{
+    margin-left: 10px;
+  }
+</style>

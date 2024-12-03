@@ -1,0 +1,33 @@
+<div style="padding-bottom: 20px">
+    <div>
+        <label style="padding: 30px 5px 0 0;font-weight: bold">Enter the row index:</label>
+        <ejs-textbox id="inputTextBox" width="120px"></ejs-textbox>
+    </div>
+    <div>
+        <label style="padding: 30px 5px 0 0;font-weight: bold">Enter the cell index:</label>
+        <ejs-textbox id="inputTextBoxTwo" width="120px"></ejs-textbox>
+    </div>
+    <div style="padding: 10px 0 0px 170px">
+        <ejs-button id="buttons" cssClass="e-primary custom" content="Select Cell"></ejs-button>
+    </div>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px">
+    <e-grid-selectionsettings mode= "Cell" type="Single"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="130" format="yMd" textAlign="Right"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+document.getElementById('buttons').onclick = function () {
+  var grid = document.getElementById("grid").ej2_instances[0];
+  var rowIndex = parseInt(document.getElementById("inputTextBox").ej2_instances[0].value, 10);
+  var cellIndex = parseInt(document.getElementById("inputTextBoxTwo").ej2_instances[0].value, 10);
+  if (!isNaN(rowIndex) && !isNaN(cellIndex)) {
+    grid.selectCell({ rowIndex: rowIndex, cellIndex: cellIndex });
+  }
+};
+</script>

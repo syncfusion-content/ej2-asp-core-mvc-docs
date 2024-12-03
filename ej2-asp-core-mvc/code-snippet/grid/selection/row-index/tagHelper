@@ -1,25 +1,26 @@
 @{
     var dropDownData = new[] {
-        new { text: "Select row index" },
-        new { text: "1", value: "1" },
-        new { text: "2", value: "2" },
-        new { text: "30", value: "30" },
-        new { text: "80", value: "80" },
-        new { text: "110", value: "110" },
-        new { text: "120", value: "120" },
-        new { text: "210", value: "210" },
-        new { text: "310", value: "310" },
-        new { text: "410", value: "410" },
-        new { text: "230", value: "230" }
+        new { text = "Select row index", value = "" },
+        new { text = "1", value = "1" },
+        new { text = "2", value = "2" },
+        new { text = "15", value = "15" },
+        new { text = "80", value = "80" },
+        new { text = "110", value = "110" },
+        new { text = "120", value = "120" },
+        new { text = "210", value = "210" },
+        new { text = "310", value = "310" },
+        new { text = "410", value = "410" },
+        new { text = "230", value = "230" }
     };
 }
 <div style="padding-bottom:20px">
     <div style="display: flex;">
-    <label style="padding: 5px 28px 0 0;font-weight: bold"> Select Row :</label>
-    <span style="height:fit-content">
-    <ejs-dropdownlist id="dropDown" width="120px" dataSource=dropDownData enabled="false" change="valueChange" placeholder="Eg: Excel">
-        </ejs-dropdownlist>            
-    </span>
+        <label style="padding: 5px 5px 0 0;font-weight: bold"> Select Row :</label>
+        <span style="height:fit-content">
+            <ejs-dropdownlist id="dropDown" width="150px" index="0" dataSource=dropDownData change="valueChange">
+            </ejs-dropdownlist>            
+        </span>
+    </div>
 </div>
 <ejs-grid id="grid" dataSource="@ViewBag.datasource" actionComplete="actionComplete" allowPaging="true" height="348px">
     <e-grid-pageSettings pageSize="10" ></e-grid-pageSettings>
@@ -34,23 +35,29 @@
 <script>
     let value;
     let modulus;
-    function valueChange(args) {
+    function actionComplete(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.requestType === "paging") {
+          grid.selectRow(modulus);
+        }
+      }
+      function valueChange(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
         value = +args.value;
         modulus = (value - 1) % 10;
-        let page = Math.ceil(value / 10);
-
+        var page = Math.ceil(value / 10);
+      
         if (page === 1) {
-            if (grid.pagerModule.pagerObj.currentPage != 1) {
+          if (grid.pagerModule.pagerObj.currentPage != 1) {
             grid.pagerModule.goToPage(1);
-            }
-            grid.selectRow(modulus);
+          }
+          grid.selectRow(modulus);
         }
         else {
-            grid.pagerModule.goToPage(page);
-            if (grid.pagerModule.pagerObj.currentPage == page) {
+          grid.pagerModule.goToPage(page);
+          if (grid.pagerModule.pagerObj.currentPage == page) {
             grid.selectRow(modulus);
-            }
+          }
         }
-    }
+      }
 </script>

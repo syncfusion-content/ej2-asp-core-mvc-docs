@@ -31,7 +31,7 @@ Here's an example of how to enable single row selection using properties:
 {% endhighlight %}
 {% endtabs %}
 
-![Single row selection](../images/scrolling/scrolling-infinite-scroll.gif)
+![Single row selection](../../images/selection/row-single-selection.png)
 
 ## Multiple row selection 
 
@@ -50,7 +50,7 @@ Here's an example of how to enable multiple rows selection using properties:
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple row selection](../images/scrolling/scrolling-infinite-scroll.gif)
+![Multiple row selection](../../images/selection/row-multiple.png)
 
 ## Select row at initial rendering 
 
@@ -67,7 +67,7 @@ In the following example, it demonstrates how to select a row at initial renderi
 {% endhighlight %}
 {% endtabs %}
 
-![Select row at initial rendering](../images/scrolling/scrolling-infinite-scroll.gif)
+![Select row at initial rendering](../../images/selection/row-initail-selection.png)
 
 ## Select rows in any page based on index value 
 
@@ -88,7 +88,7 @@ The following example demonstrates how to select rows in any page based on index
 {% endhighlight %}
 {% endtabs %}
 
-![Select rows in any page based on index value](../images/scrolling/scrolling-infinite-scroll.gif)
+![Select rows in any page based on index value](../../images/selection/row-selected-index.gif)
 
 ## Multiple row selection by single click on row 
 
@@ -107,7 +107,7 @@ The following example demonstrates how to enable multiple row selection with a s
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple row selection by single click on row](../images/scrolling/scrolling-infinite-scroll.gif)
+![Multiple row selection by single click on row](../../images/selection/row-multiple-selection.gif)
 
 ## Select rows externally 
 
@@ -130,7 +130,7 @@ The following example demonstrates how to select a single row within the Grid by
 {% endhighlight %}
 {% endtabs %}
 
-![Single row selection](../images/scrolling/scrolling-infinite-scroll.gif)
+![Single row selection](../../images/selection/row-single-method.png)
 
 ### Multiple rows selection
 
@@ -149,7 +149,7 @@ The following example, demonstrates how to select multiple rows in the Grid by c
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple rows selection](../images/scrolling/scrolling-infinite-scroll.gif)
+![Multiple rows selection](../../images/selection/row-multiple-method.png)
 
 ### Range of rows selection 
 

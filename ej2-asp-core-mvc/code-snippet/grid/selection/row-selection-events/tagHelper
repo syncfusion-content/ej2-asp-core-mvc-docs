@@ -1,6 +1,6 @@
 <p style="color:red;text-align:center" id="message"></p>
 <ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px" allowPaging="true" enableHover="true" rowSelected="rowSelected" allowSelection="true" rowSelecting="rowSelecting" rowDeselected="rowDeselected" rowDeselecting="rowDeselecting">
-    <e-grid-selectionsettings type="Multiple" mode="Rows"></e-grid-selectionsettings>
+    <e-grid-selectionsettings type="Multiple" mode="Row"></e-grid-selectionsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
@@ -29,8 +29,6 @@
          document.getElementById("message").innerText = ` Trigger rowSelected`;
          args.row.style.backgroundColor = 'rgb(96, 158, 101)'; 
       }
-      else
-       document.getElementById("message").innerText='' ;
    }
 
    function rowDeselected(args)
@@ -40,8 +38,6 @@
          document.getElementById("message").innerText = `Trigger rowDeselected`;
          args.row.style.backgroundColor = 'red';
       }
-      else
-       document.getElementById("message").innerText=''; 
    }
 
    function rowDeselecting(args)
@@ -51,7 +47,5 @@
          document.getElementById("message").innerText = `Trigger rowDeselecting`;
          args.row.style.backgroundColor = 'yellow';
       }
-      else
-       document.getElementById("message").innerText='';  
    }
 </script>

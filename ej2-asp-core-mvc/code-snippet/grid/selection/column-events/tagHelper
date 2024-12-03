@@ -1,0 +1,34 @@
+<p style="color:red;text-align:center" id="message"></p>
+<ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px" ColumnSelected="columnSelected" ColumnSelecting="columnSelecting" ColumnDeselected="columnDeselected" ColumnDeselecting="columnDeselecting">
+    <e-grid-selectionsettings allowColumnSelection="true" type="Multiple" ></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="130" format="yMd" textAlign="Right"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function columnSelected(args) {
+    document.getElementById("message").innerText = `Trigger columnSelected`;
+    args.headerCell.style.backgroundColor = 'rgb(96, 158, 101)';
+    }
+
+    function columnSelecting(args) {
+    document.getElementById("message").innerText = `Trigger columnSelecting`;
+    if (args.column.field == "CustomerID")
+        args.cancel = true;
+    }
+
+    function columnDeselected(args) {
+    document.getElementById("message").innerText = `Trigger columnDeselected`;
+    args.headerCell.style.backgroundColor = 'rgb(245, 69, 69)';
+    }
+
+    function columnDeselecting(args) {
+    document.getElementById("message").innerText = `Triggercolumn Deselecting`;
+    if (args.column.field == "Freight")
+        args.cancel = true;
+    }
+</script>

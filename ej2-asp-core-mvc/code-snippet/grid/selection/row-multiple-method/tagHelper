@@ -1,3 +1,16 @@
+<div style="padding: 10px 0px 20px 0px">
+    <ejs-button id="buttonOne" cssClass="e-primary" content="select [1, 3]"></ejs-button>
+    <ejs-button id="buttonTwo" cssClass="e-primary custom" content="select [0, 2]"></ejs-button>
+    <ejs-button id="buttonThree" cssClass="e-primary custom" content="select [2, 4]"></ejs-button>
+    <ejs-button id="buttonFour" cssClass="e-primary custom" content="select [0,5]"></ejs-button>
+    <ejs-button id="buttonFive" cssClass="e-primary custom" content="select [1,6]"></ejs-button>
+</div>
+<div style="padding: 10px 0px 20px 0px">
+    <ejs-button id="buttonSix" cssClass="e-primary" content="select [0,7,8]"></ejs-button>
+    <ejs-button id="buttonSeven" cssClass="e-primary custom" content="select [1,9,10]"></ejs-button>
+    <ejs-button id="buttonEight" cssClass="e-primary custom" content="select [4,7,12]"></ejs-button>
+    <ejs-button id="buttonNine" cssClass="e-primary custom" content="select [2,5,6]"></ejs-button>
+</div>
 <ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px">
     <e-grid-selectionsettings mode= "Row" type="Multiple"></e-grid-selectionsettings>
     <e-grid-columns>
@@ -8,3 +21,33 @@
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+<script>
+    document.getElementById('buttonOne').onclick = handleButtonClick;
+    document.getElementById('buttonTwo').onclick = handleButtonClick;
+    document.getElementById('buttonThree').onclick = handleButtonClick;
+    document.getElementById('buttonFour').onclick = handleButtonClick;
+    document.getElementById('buttonFive').onclick = handleButtonClick;
+    document.getElementById('buttonSix').onclick = handleButtonClick;
+    document.getElementById('buttonSeven').onclick = handleButtonClick;
+    document.getElementById('buttonEight').onclick = handleButtonClick;
+    document.getElementById('buttonNine').onclick = handleButtonClick;
+
+  function handleButtonClick(event){
+    var grid = document.getElementById("grid").ej2_instances[0];
+    grid.clearRowSelection();
+    if(event.target.id === "buttonOne") grid.selectRows([1, 3]);
+    else if (event.target.id === "buttonTwo") grid.selectRows([0, 2]);
+    else if (event.target.id === "buttonThree") grid.selectRows([2, 4]);
+    else if (event.target.id === "buttonFour") grid.selectRows([0, 5]);
+    else if (event.target.id === "buttonFive") grid.selectRows([1, 6]);
+    else if (event.target.id === "buttonSix") grid.selectRows([0, 7, 8]);
+    else if (event.target.id === "buttonSeven") grid.selectRows([1, 9, 10]);
+    else if (event.target.id === "buttonEight") grid.selectRows([4, 7, 12]);
+    else if (event.target.id === "buttonNine") grid.selectRows([2, 5, 6]);
+  }
+</script>
+<style>
+  .custom{
+    margin-left: 5px;
+  }
+</style>
