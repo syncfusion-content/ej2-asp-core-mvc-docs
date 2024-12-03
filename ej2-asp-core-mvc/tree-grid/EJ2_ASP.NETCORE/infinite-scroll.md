@@ -44,7 +44,7 @@ N> * In this feature, Tree Grid will not make a new data request when you visit 
 
 ## InitialBlocks
 
-You can define the initial loading pages count by using `initialBlocks` property of `e-treegrid-infinitescrollsettings` tag helper. By default, this feature loads three pages in initial rendering.
+You can define the initial loading pages count by using `initialBlocks` property of `InfiniteScrollSettings` tag helper. By default, this feature loads three pages in initial rendering.
 
 In the below demo, we have changed this property value to load five page records instead of three.
 
@@ -75,9 +75,9 @@ In the below demo, we have changed this property value to load five page records
 
 ## Cache Mode
 
-Cache is used to store the loaded rows object in the Tree Grid instance which can be reused for creating the row elements whenever you scroll to already visited page. Also, this mode maintains row elements based on the `maxBlocks` count value of `e-treegrid-infinitescrollsettings` tag helper, once this limit exceeds then it will remove row elements from DOM for new rows.
+Cache is used to store the loaded rows object in the Tree Grid instance which can be reused for creating the row elements whenever you scroll to already visited page. Also, this mode maintains row elements based on the `maxBlocks` count value of `InfiniteScrollSettings` tag helper, once this limit exceeds then it will remove row elements from DOM for new rows.
 
-To enable the cache mode in Infinite scrolling, set `enableCache` property of `e-treegrid-infinitescrollsettings` tag helper as true.
+To enable the cache mode in Infinite scrolling, set `enableCache` property of `InfiniteScrollSettings` tag helper as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
