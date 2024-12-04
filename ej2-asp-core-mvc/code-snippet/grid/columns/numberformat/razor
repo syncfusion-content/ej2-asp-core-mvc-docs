@@ -1,9 +1,0 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
-{
-    col.Field("RollNo").HeaderText("Roll No").Add();
-    col.Field("Mark1").HeaderText("Mark 1").Add();
-    col.Field("Mark2").HeaderText("Mark2").Format("N").Add();
-    col.Field("Average").HeaderText("Average").Format("N2").Add();
-    col.Field("Percentage").HeaderText("Percentage of Marks").Format("P").Add();
-    col.Field("Fees").HeaderText("Fees").Format('C').Add();
-}).Render()

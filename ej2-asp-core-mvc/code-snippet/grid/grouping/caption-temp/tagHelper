@@ -1,0 +1,13 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true"  height="315"> 
+    <e-grid-groupsettings captionTemplate="#captiontemplate" columns="@(new string[] {"EmployeeID"})"></e-grid-groupsettings>
+    <e-grid-columns>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" ></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID"></e-grid-column>       
+        <e-grid-column field="FirstName" headerText="First Name" width="120"></e-grid-column>
+        <e-grid-column field="Title" headerText="Title" width="170"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script id="captiontemplate" type="text/x-template">
+    ${field} - ${key}
+</script>

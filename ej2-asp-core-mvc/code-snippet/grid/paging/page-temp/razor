@@ -1,0 +1,54 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+
+}).AllowPaging().PageSettings(page => { page.PageSize(7).Template("#template"); }).ActionComplete("actionComplete").DataBound("dataBind").Render()
+
+<script>
+    function updateTemplate() {
+        var numeric;
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        numeric = new ej.inputs.NumericTextBox({
+            min: 1,
+            max: 3,
+            step: 1,
+            width: 100,
+            format: '###.##',
+            change: function (args) {
+                let value = args.value;
+                grid.goToPage(value);
+            }
+        });
+        numeric.appendTo('#currentPage');
+    };
+    var flag = true;
+    function dataBind() {
+        if (flag) {
+            flag = false;
+            updateTemplate();
+        }
+    }
+    function actionComplete(args) {
+        if (args.requestType === 'paging') {
+            updateTemplate();
+        }
+    }
+</script>
+
+<script id="template" type="text/x-template">
+    <div class="e-pagertemplate">
+        <div>
+            <div class="content-wrapper">
+                <input id="currentPage" type="text" value=${currentPage}>
+            </div>
+        </div>
+
+        <div id="totalPages" class="e-pagertemplatemessage" style="margin-top:5px;margin-left:30px;border: none; display: inline-block ">
+            <span class="e-pagenomsg">${currentPage} of ${totalPages} pages (${totalRecordsCount} items)</span>
+        </div>
+    </div>
+</script>

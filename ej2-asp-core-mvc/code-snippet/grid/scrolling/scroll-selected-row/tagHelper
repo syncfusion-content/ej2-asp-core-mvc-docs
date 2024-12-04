@@ -1,50 +1,23 @@
-@{
-    ViewBag.dropdownData = new List<object> {
-       new { text = "Select count" },
-       new { text = "10", value = "10" },
-       new { text = "20", value = "20" },
-       new { text = "30", value = "30" },
-       new { text = "80", value = "80" },
-       new { text = "100", value = "100" },
-       new { text = "200", value = "200" },
-       new { text = "232", value = "232" },
-       new { text = "300", value = "300" },
-       new { text = "500", value = "500" },
-       new { text = "800", value = "800" },
-       new { text = "820", value = "820" },
-       new { text = "920", value = "920" },
-       new { text = "2020", value = "2020" },
-       new { text = "3000", value = "3000" },
-       new { text = "4000", value = "4000" },
-       new { text = "4999", value = "4999" }
-   };
-}
-<div style="display: flex; align-items: center; padding: 10px 0;">
-    <label style="padding-right: 10px;font-weight:bold">Select row index:</label>
-    <ejs-dropdownlist id="dropDown" index="0" width='220' dataSource="@ViewBag.dropdownData" change="valueChange"></ejs-dropdownlist>
-</div>
-<div style='padding: 0px 0px 20px 0px'>
-    <ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="315" width="550px" rowSelected='rowSelected'>
-        <e-grid-columns>
-            <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
-            <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
-            <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
-            <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
-            <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
-            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
-        </e-grid-columns>
-    </ejs-grid>
-</div>
+<ejs-numerictextbox id="numeric" width="200" min="0" showSpinButton="false" placeholder="Enter index to select a row" change="onChange"></ejs-numerictextbox>
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" rowSelected="rowSelected" height="270" width="100%">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
 <script>
-    function valueChange(args) {
-        var grid = document.getElementById("grid").ej2_instances[0];
-        var value = parseInt(args.value, 10);
-        if (!isNaN(value)) {
-            grid.selectRow(value);
-        }
+
+    function onChange(args) {
+        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        gridObj.selectRow(parseInt(this.getText(), 10));
     }
+
     function rowSelected(args) {
-        var grid = document.getElementById("grid").ej2_instances[0];
-        grid.getContent().children[0].scrollTop = grid.getRows()[selectedIndex].scrollHeight * grid.getSelectedRowIndexes()[0];
+        var rowHeight = this.getRows()[this.getSelectedRowIndexes()[0]].scrollHeight;
+        this.getContent().children[0].scrollTop = rowHeight * this.getSelectedRowIndexes()[0];
     }
+
 </script>

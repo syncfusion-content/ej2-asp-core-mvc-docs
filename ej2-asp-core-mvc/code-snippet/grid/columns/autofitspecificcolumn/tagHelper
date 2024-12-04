@@ -1,16 +1,16 @@
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" dataBound="dataBound" height="315" allowResizing="true">   
     <e-grid-columns>
-            <e-grid-column field="Inventor" headerText="Inventor" width="100" clipMode="EllipsisWithTooltip"></e-grid-column>
-            <e-grid-column field="NumberOfPatentFamilies" headerText="Number of Patent Families" width="120"></e-grid-column>
-            <e-grid-column field="Country" headerText="Country" width="180"></e-grid-column>
-            <e-grid-column field="NumberOfINPADOCPatents" headerText="Number of INPADOC patents" width="150"></e-grid-column>
-            <e-grid-column field="Active" headerText="Active" width="100"></e-grid-column>
-            <e-grid-column field="MainFieldsOfInvention" headerText="Main fields of invention" width="100"></e-grid-column>
+        <e-grid-column field="Inventor" headerText="Inventor" width="140" clipMode="EllipsisWithTooltip"></e-grid-column>
+        <e-grid-column field="NumberofPatentFamilies" headerText="Number of Patent Families" type="string" width="130"></e-grid-column>
+        <e-grid-column field="Country" headerText="Country" width="120"></e-grid-column>
+        <e-grid-column field="Number of INPADOC patents" headerText="Number of INPADOC patents" width="120"></e-grid-column>
+        <e-grid-column field="Active" headerText="Active" width="150"></e-grid-column>
+        <e-grid-column field="Mainfieldsofinvention" headerText="Main fields of invention" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
 <script>
     function dataBound(args) {
-        this.autoFitColumns(['Inventor', 'NumberOfPatentFamilies', 'MainFieldsOfInvention'], 1, 3);   
+        this.autoFitColumns(['Inventor', 'Number of INPADOC patents', 'Mainfieldsofinvention'], 1, 3);    
     }
 </script>
