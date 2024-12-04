@@ -202,7 +202,7 @@ The following example demonstrates how to group and ungroup the columns in a gri
 {% endhighlight %}
 {% endtabs %}
 
-![Group or ungroup column externally](../images/grouping)
+![Group or ungroup column externally](../images/grouping/grouping-ungroup.gif)
 
 ## Expand or collapse externally
 
