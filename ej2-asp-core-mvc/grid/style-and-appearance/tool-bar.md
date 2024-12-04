@@ -35,7 +35,6 @@ To customize the appearance of toolbar buttons, you can use the following CSS co
     background-color: #deecf9;
 }
 ```
-
 In this example, the **.e-toolbar .e-btn** selector targets the background color of the toolbar button elements. You can modify the `background-color` property to change the background color of the toolbar buttons.
 
 ![Grid toolbar button element](../images/style-and-appearance/grid-toolbar-button-element.png)
