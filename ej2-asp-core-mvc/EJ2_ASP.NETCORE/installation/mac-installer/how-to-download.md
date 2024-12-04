@@ -38,7 +38,7 @@ Our 30-day trial can be downloaded in two ways.
 
     ![Start Trial download](images/start-trial-download-installer.png)
 
-6. Click the More Download Options (element 2 in above screenshot) button to get the Essential Studio ASP. NET Core  - EJ2 Offline trial installer which is available in DMG format.
+6. Click the More Download Options (element 2 in above screenshot) button to get the Essential Studio&reg; ASP. NET Core  - EJ2 Offline trial installer which is available in DMG format.
 
    ![License and downloads of Syncfusion Essential Studio](images/Mac_Download.PNG)
 

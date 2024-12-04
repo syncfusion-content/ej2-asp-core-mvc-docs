@@ -10,7 +10,7 @@ documentation: ug
 
 # Browser Compatibility in ASP.NET MVC
 
-The Syncfusion ASP.NET MVC controls are supported by all modern web browsers on both desktop and mobile devices running Windows, Linux, or MacOS.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are supported by all modern web browsers on both desktop and mobile devices running Windows, Linux, or MacOS.
 
 |    Browser    |    Versions    |
 |--------------|---------------|

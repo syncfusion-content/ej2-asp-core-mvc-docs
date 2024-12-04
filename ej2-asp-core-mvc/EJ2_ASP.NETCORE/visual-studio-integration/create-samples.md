@@ -20,11 +20,11 @@ The following steps is used to create the Syncfusion ASP.NET Core Application by
 
     **Option 1:**
 
-    Click **Extensions->Syncfusion Menu** and choose **Essential Studio for ASP.NET Core (EJ2) > Launch Sample Creator…** in **Visual Studio.**
+    Click **Extensions->Syncfusion Menu** and choose **Essential Studio&reg; for ASP.NET Core (EJ2) > Launch Sample Creator…** in **Visual Studio.**
 
     ![sample creator](images/sample-creator_latest.png)
 
-    N> In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core > Launch Sample Creator…
+    N> In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio&reg; for ASP.NET Core > Launch Sample Creator…
 
     ![sample creator](images/sample-creator.png)
 

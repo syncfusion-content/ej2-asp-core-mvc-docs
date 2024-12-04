@@ -10,7 +10,7 @@ documentation: ug
 
 # Syncfusion Licensing Overview
 
-We have introduced a new licensing system starting with version 16.2.0.x release of Essential Studio. These modifications apply to all evaluators and only to paid customers who use NuGet packages from [nuget.org](https://www.nuget.org/packages?q=syncfusion). Starting with v16.2.0.x, if you use the evaluation installer or the NuGet feed to reference Syncfusion assemblies, you must also include the corresponding platform and version license key in your projects.
+We have introduced a new licensing system starting with version 16.2.0.x release of Essential Studio&reg; These modifications apply to all evaluators and only to paid customers who use NuGet packages from [nuget.org](https://www.nuget.org/packages?q=syncfusion). Starting with v16.2.0.x, if you use the evaluation installer or the NuGet feed to reference Syncfusion assemblies, you must also include the corresponding platform and version license key in your projects.
 
 ## Difference between unlock key and license key
 
@@ -18,7 +18,7 @@ Note that this license key is different from the installer unlock key that you m
 
 Following licensing error will be shown if the license key is not registered in your projects, while using assemblies from evaluation installer or from the [nuget.org](https://www.nuget.org/packages?q=syncfusion)
 
-N> This application was built using a trial version of Syncfusion Essential Studio. Include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/overview) for more information.
+N> This application was built using a trial version of Syncfusion Essential Studio&reg; Include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/overview) for more information.
 
 ## Registering Syncfusion license keys in Build server
 

@@ -24,11 +24,11 @@ N> Before using the Syncfusion ASP.NET Core Project Template, check whether the 
 
     **Option 1**
 
-    Click **Extensions->Syncfusion Menu** and choose **Essential Studio for ASP.NET Core (EJ2) > Create New Syncfusion Project…** in **Visual Studio**.
+    Click **Extensions->Syncfusion Menu** and choose **Essential Studio&reg; for ASP.NET Core (EJ2) > Create New Syncfusion Project…** in **Visual Studio**.
 
     ![new project](images/new-project.png)
 
-    N> In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core (EJ2) > Create New Syncfusion Project… in Visual Studio.
+    N> In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio&reg; for ASP.NET Core (EJ2) > Create New Syncfusion Project… in Visual Studio.
 
     ![new project](images/SyncfusionMenu.png)
 
@@ -112,7 +112,7 @@ N> Before using the Syncfusion ASP.NET Core Project Template, check whether the 
 
 5. The created Syncfusion ASP.NET Core application configures with most recent Syncfusion ASP.NET Core NuGet packages, selected style, scripts, and NPM packages for use Syncfusion components.
 
-6. Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/introducing-license-key-validation-for-the-essential-js-2-platforms.aspx) post for understanding the licensing changes introduced in Essential Studio.
+6. Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio&reg; release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/introducing-license-key-validation-for-the-essential-js-2-platforms.aspx) post for understanding the licensing changes introduced in Essential Studio&reg;
 
     ![syncfusion license](images/syncfusion-license.png)
 

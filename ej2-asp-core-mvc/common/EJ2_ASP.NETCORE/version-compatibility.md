@@ -10,9 +10,9 @@ documentation: ug
 
 # Version Compatibility of ASP.NET Core Controls
 
-The following table represents the supported .NET and .NET Core versions by different Syncfusion ASP.NET Core controls releases.
+The following table represents the supported .NET and .NET Core versions by different Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls releases.
 
-| Version | Syncfusion ASP.NET Core Controls Version |
+| Version | Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls Version |
 | ------------- | ------------- |
 | [.NET 9.0](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) | 27.2.2 and above |
 | [.NET 8.0](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-dotnet-8/) | 23.1.36 and above |
@@ -30,9 +30,9 @@ The following table represents the supported .NET and .NET Core versions by diff
 | [.NET Core 1.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-1-1/) | 14.4.0.15 and above |
 | [.NET Core 1.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-1-0/) | 14.2.0.26 and above |
 
-## Syncfusion Version Information
+## Syncfusion<sup style="font-size:70%">&reg;</sup> Version Information
 
-Syncfusion follows a quarterly release schedule, introducing new volumes every three months. To track these releases and their associated changes, Syncfusion ASP.NET Core components utilize a sequence-based identifier system, employing the format **Major.Minor.Revision**. This system enables developers to easily monitor modifications made in each release.
+Syncfusion<sup style="font-size:70%">&reg;</sup> follows a quarterly release schedule, introducing new volumes every three months. To track these releases and their associated changes, Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components utilize a sequence-based identifier system, employing the format **Major.Minor.Revision**. This system enables developers to easily monitor modifications made in each release.
 
 For example, if the release package version is `23.1.36`, the version number can be interpreted as follows:
 
@@ -44,5 +44,5 @@ For example, if the release package version is `23.1.36`, the version number can
 
 ## See also
 
-* [Syncfusion Product release lifecycle](https://www.syncfusion.com/support/product-lifecycle/)
+* [Syncfusion<sup style="font-size:70%">&reg;</sup> Product release lifecycle](https://www.syncfusion.com/support/product-lifecycle/)
 * [.NET and .NET Core release lifecycle](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core)

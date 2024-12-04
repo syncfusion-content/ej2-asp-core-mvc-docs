@@ -10,7 +10,7 @@ documentation: ug
 
 # NuGet Packages for ASP.NET Core UI controls
 
-**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET Core NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22+Syncfusion). The Syncfusion ASP.NET Core NuGet packages can be used without installing the Essential Studio or ASP.NET Core platform installation to implement the Syncfusion ASP.NET Core controls.
+**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET Core NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22+Syncfusion). The Syncfusion ASP.NET Core NuGet packages can be used without installing the Essential Studio&reg; or ASP.NET Core platform installation to implement the Syncfusion ASP.NET Core controls.
 
 ## Available NuGet packages
 

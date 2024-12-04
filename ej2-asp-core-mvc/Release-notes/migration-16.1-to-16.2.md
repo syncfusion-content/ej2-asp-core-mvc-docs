@@ -6,7 +6,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Essential Studio for  ##Platform_Name##  Release Notes  
+# Essential Studio&reg; for  ##Platform_Name##  Release Notes  
 
 
 {% directory path: _includes/release-notes/migration-16.1-to-16.2 %}

@@ -37,7 +37,7 @@ To add ASP.NET Core PDF Viewer control, the following NuGet package need to be i
 * For **macOS**, use [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and [Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX/)
 
 N> A new package called the [Syncfusion.EJ2.PdfViewer.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core) is introduced in the **21.1.0.35 (2023 Volume 1)** release, which is a multi-targeting package. This differs from the previous approach of platform-specific packages such as "Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows," "Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux," and "Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX". With the new multi-targeting package, all of these platforms will be supported by a single package.
-This simplifies the development process for developers using the Essential Studio, as they no longer need to worry about selecting the correct package for their operating system. Overall, this change should make it easier and more convenient for developers to use Essential Studio's PDF Viewer control in their applications.
+This simplifies the development process for developers using the Essential Studio&reg;, as they no longer need to worry about selecting the correct package for their operating system. Overall, this change should make it easier and more convenient for developers to use Essential Studio's PDF Viewer control in their applications.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 

@@ -29,7 +29,7 @@ Syncfusion provides the following supports in Visual Studio:
 
 [Convert Project](./visual-studio-extensions/convert-project): Converts an existing ASP.NET MVC application into a Syncfusion ASP.NET MVC (Essential JS 2) application by adding the required Syncfusion assemblies and resource files.
 
-[Upgrade Project](./visual-studio-extensions/upgrade-project): Upgrades the existing Syncfusion ASP.NET MVC (Essential JS 2) application from one Essential Studio version to another version.
+[Upgrade Project](./visual-studio-extensions/upgrade-project): Upgrades the existing Syncfusion ASP.NET MVC (Essential JS 2) application from one Essential Studio&reg; version to another version.
 
 [Creator Sample](./visual-studio-extensions/create-sample): Creates the Syncfusion ASP.NET MVC (Essential JS2) application with the sample code of required controls and features.
 

@@ -976,7 +976,7 @@ N> * Refer the above open and save operation to shows the create a server using 
 
 ## Server Dependencies
 
-Open and save helper functions are shipped in the Syncfusion.EJ2.Spreadsheet package, which is available in Essential Studio and [`nuget.org`](https://www.nuget.org/). Following list of dependencies required for Spreadsheet open and save operations.
+Open and save helper functions are shipped in the Syncfusion.EJ2.Spreadsheet package, which is available in Essential Studio&reg; and [`nuget.org`](https://www.nuget.org/). Following list of dependencies required for Spreadsheet open and save operations.
 
 | **Platforms** | **Assembly** | **Nuget Package** |
 | ----- | ----- | ----- |

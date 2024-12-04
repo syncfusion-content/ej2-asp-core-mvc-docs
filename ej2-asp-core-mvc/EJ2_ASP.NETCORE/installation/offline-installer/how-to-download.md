@@ -38,7 +38,7 @@ Our 30-day trial can be downloaded in two ways.
 
     ![Start Trial download](images/start-trial-download-installer.png)
 
-6. Click the More Download Options (element 2 in above screenshot) button to get the Essential Studio ASP. NET Core  - EJ2 Offline trial installer which is available in EXE and ZIP format.
+6. Click the More Download Options (element 2 in above screenshot) button to get the Essential Studio&reg; ASP. NET Core  - EJ2 Offline trial installer which is available in EXE and ZIP format.
 
     ![Trial Download Offline Installer](images/start-trial-download-offline-installer.PNG)
 

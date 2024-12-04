@@ -24,7 +24,7 @@ N> Before use the Syncfusion ASP.NET MVC Project Template, check whether the **A
 
     **Option 1:**
 
-    Click **Extensions->Syncfusion** Menu and choose **Essential Studio for ASP.NET MVC (EJ2) > Create New Syncfusion Project…** in Visual Studio menu.
+    Click **Extensions->Syncfusion** Menu and choose **Essential Studio&reg; for ASP.NET MVC (EJ2) > Create New Syncfusion Project…** in Visual Studio menu.
 
     ![SyncfusionMenu](images/SyncfusionMenu.png)
 
@@ -64,6 +64,6 @@ N> Before use the Syncfusion ASP.NET MVC Project Template, check whether the **A
 
 4. The created Syncfusion ASP.NET MVC application configures with most recent Syncfusion ASP.NET MVC NuGet packages, selected style and scripts for use Syncfusion components.
 
-5. Then, the Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/whats-new-in-2018-volume-2-licensing-changes-in-the-1620x-version-of-essential-studio.aspx) post to learn more about the licensing changes introduced in Essential Studio.
+5. Then, the Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio&reg; release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/whats-new-in-2018-volume-2-licensing-changes-in-the-1620x-version-of-essential-studio.aspx) post to learn more about the licensing changes introduced in Essential Studio&reg;
 
     ![syncfusion license](images/syncfusion-license.png)

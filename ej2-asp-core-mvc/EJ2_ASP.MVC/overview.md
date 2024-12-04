@@ -10,4 +10,4 @@ documentation: ug
 
 # Overview
 
-The purpose of this document is to build and run a simple Syncfusion ASP.NET MVC UI (Essential JS 2) application.
+The purpose of this document is to build and run a simple Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI (Essential JS 2) application.

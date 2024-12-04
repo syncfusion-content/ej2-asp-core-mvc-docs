@@ -15,7 +15,7 @@ The Grid have an option to export the data to Excel in server side using Grid se
 
 ## Server dependencies
 
-The Server side export functionality is shipped in the Syncfusion.EJ2.GridExport package, which is available in Essential Studio and [nuget.org](https://www.nuget.org/).The following list of dependencies is required for Grid server side Excel exporting action.
+The Server side export functionality is shipped in the Syncfusion.EJ2.GridExport package, which is available in Essential Studio&reg; and [nuget.org](https://www.nuget.org/).The following list of dependencies is required for Grid server side Excel exporting action.
 
 * Syncfusion.EJ2
 * Syncfusion.EJ2.GridExport

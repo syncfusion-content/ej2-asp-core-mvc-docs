@@ -10,7 +10,7 @@ documentation: ug
 
 # Upgrading Syncfusion ASP.NET MVC JS2 components to latest version
 
-The Syncfusion ASP.NET MVC JS2 migration add-in for Visual Studio allows you to migrate an existing Syncfusion ASP.NET MVC web application from one version of Essential Studio version to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
+The Syncfusion ASP.NET MVC JS2 migration add-in for Visual Studio allows you to migrate an existing Syncfusion ASP.NET MVC web application from one version of Essential Studio&reg; version to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
 
 The steps below will assist you to upgrade the Syncfusion version in the Syncfusion ASP.NET MVC application via Visual Studio 2019:
 
@@ -30,4 +30,4 @@ N> Before use the Syncfusion ASP.NET MVC Web application Migration, check whethe
 
 4. Click **Migrate** button, then the Syncfusion.EJ2.MVC5 NuGet packages will be updated to the respective chosen version in the application.
 
-5. If you installed the trial setup or NuGet packages from nuget.org you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-generate) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx?_ga=2.11237684.1233358434.1587355730-230058891.1567654773) post for understanding the licensing changes introduced in Essential Studio.
+5. If you installed the trial setup or NuGet packages from nuget.org you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio&reg; release. Navigate to the [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-generate) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx?_ga=2.11237684.1233358434.1587355730-230058891.1567654773) post for understanding the licensing changes introduced in Essential Studio&reg;

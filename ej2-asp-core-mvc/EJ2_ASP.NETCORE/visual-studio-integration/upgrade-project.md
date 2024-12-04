@@ -10,13 +10,13 @@ documentation: ug
 
 # Upgrading Syncfusion ASP.NET Core application to latest version
 
-The Syncfusion ASP.NET Core migration add-in for Visual Studio allows to migrate an existing Syncfusion ASP.NET Core application from one version of Essential Studio version to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
+The Syncfusion ASP.NET Core migration add-in for Visual Studio allows to migrate an existing Syncfusion ASP.NET Core application from one version of Essential Studio&reg; version to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
 
 ## IMPORTANT
 
 The Syncfusion ASP.NET Core (Essential JS 2) Web Application Project Migration utility is available from v16.3.0.17.
 
-N> Before use, the Syncfusion ASP.NET Core Project Migration, check whether the **ASP.NET Core Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed**  for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio version build installed or not. If the Essential Studio version is not same for both the Extension and build, then the Project Migration will not be shown.
+N> Before use, the Syncfusion ASP.NET Core Project Migration, check whether the **ASP.NET Core Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed**  for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio&reg; version build installed or not. If the Essential Studio&reg; version is not same for both the Extension and build, then the Project Migration will not be shown.
 
 The steps below will assist you to upgrade the Syncfusion version in the Syncfusion ASP.NET Core application via Visual Studio:
 
@@ -26,11 +26,11 @@ The steps below will assist you to upgrade the Syncfusion version in the Syncfus
 
     **Option 1**
 
-    Click **Extensions-> Syncfusion Menu** and choose **Essential Studio for ASP.NET Core > Migrate Project…** in **Visual Studio Menu**.
+    Click **Extensions-> Syncfusion Menu** and choose **Essential Studio&reg; for ASP.NET Core > Migrate Project…** in **Visual Studio Menu**.
 
     ![migrate project](images/migrate-project-latest.png)
 
-    N>In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core > Migrate Project… in Visual Studio Menu.
+    N>In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio&reg; for ASP.NET Core > Migrate Project… in Visual Studio Menu.
 
     ![migrate project](images/migrate-project.png)
 
@@ -58,4 +58,4 @@ The steps below will assist you to upgrade the Syncfusion version in the Syncfus
 
     ![BackupLocation](images/BackupLocation.png)
 
-6. If you installed the trial setup or NuGet packages from nuget.org you must register the Syncfusion license key to your project since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/introducing-license-key-validation-for-the-essential-js-2-platforms.aspx) post for understanding the licensing changes introduced in Essential Studio.
+6. If you installed the trial setup or NuGet packages from nuget.org you must register the Syncfusion license key to your project since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio&reg; release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/introducing-license-key-validation-for-the-essential-js-2-platforms.aspx) post for understanding the licensing changes introduced in Essential Studio&reg;

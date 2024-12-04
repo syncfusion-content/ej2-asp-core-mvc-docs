@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Compatibility with Syncfusion ASP.NET MVC (Essential JS 1)
+# Compatibility with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 1)
 
-This documentation explains how to render  Essential JS 1 and Essential JS 2 Syncfusion components in a single page.
+This documentation explains how to render  Essential JS 1 and Essential JS 2 Syncfusion<sup style="font-size:70%">&reg;</sup> components in a single page.
 
 ## Adding application
 

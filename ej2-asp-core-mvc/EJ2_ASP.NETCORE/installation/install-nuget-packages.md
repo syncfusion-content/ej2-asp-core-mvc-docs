@@ -14,7 +14,7 @@ documentation: ug
 
 **NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET Core JS2  NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Core%20EJ2%22+syncfusion). The Syncfusion ASP.NET Core JS2 NuGet packages can be used without installing the Syncfusion installation. You can simply exploit the Syncfusion ASP.NET Core JS2 NuGet packages in ASP.NET Core application to develop with the Syncfusion ASP.NET Core JS2 components.
 
-N> The Syncfusion.EJ2.AspNet.Core NuGet package, which contains all Syncfusion ASP.NET Core JS2 components in a single package, is available beginning with v16.3.0.21 (Essential Studio 2018 Volume 3).
+N> The Syncfusion.EJ2.AspNet.Core NuGet package, which contains all Syncfusion ASP.NET Core JS2 components in a single package, is available beginning with v16.3.0.21 (Essential Studio&reg; 2018 Volume 3).
 
 ## Installation using Package Manager UI
 
