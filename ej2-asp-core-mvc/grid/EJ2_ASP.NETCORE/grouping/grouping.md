@@ -123,8 +123,8 @@ The following example demonstrates how to sort the **CustomerID** column by sett
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/grouping/group-sort-descending/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="GroupOrdering.cs" %}
-{% include code-snippet/grid/grouping/group-sort-descending/GroupOrdering.cs %}
+{% highlight c# tabtitle="group.cs" %}
+{% include code-snippet/grid/grouping/group-sort-descending/group.cs %}
 {% endhighlight %}
 {% endtabs %}
 
