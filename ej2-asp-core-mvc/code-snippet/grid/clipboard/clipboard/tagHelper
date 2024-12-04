@@ -1,14 +1,14 @@
-<ejs-button id="copy" content="Copy"></ejs-button>
-<ejs-button id="copyHeader" content="Copy Header"></ejs-button>
-
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+<div style="padding:0px 0px 20px 0px">
+    <ejs-button id="copy" content="Copy" cssClass= "e-outline"></ejs-button>
+    <ejs-button id="copyHeader" content="Copy Header" cssClass= "e-outline"></ejs-button>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowSelection="true" height="280">
     <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' width="100"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="100"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
         <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
