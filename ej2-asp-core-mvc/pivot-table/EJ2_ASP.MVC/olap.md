@@ -18,7 +18,7 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 To get start with ASP.NET MVC application, need to ensure the following software to be installed on the machine.
 
-1. .NET Framework 4.5 and above.
+1. .NET Framework 4.6.2 and above.
 2. ASP.NET MVC 4 or ASP.NET MVC 5
 3. Visual Studio
 
@@ -33,8 +33,6 @@ Follow below steps to create ASP.NET MVC Application.
 **Step 2:** Select **Installed > Visual C# > Web** and choose the required **.NET Framework** in the drop-down.
 
 **Step 3:** Select **ASP.NET Web Application (.NET Framework)** and change the application name, and then click **OK**.
-
-N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
 
 ![aspnetmvc5 project template](images/aspnetmvc5-template.png)
 

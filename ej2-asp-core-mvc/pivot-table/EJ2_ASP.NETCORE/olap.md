@@ -28,8 +28,6 @@ The official prerequisites to create and run an ASP.NET Core 2.x application on 
 
 **Step 3:** Select **ASP.NET Core Web Application** and change the application name, and then click **OK**.
 
-N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET Core application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET Core (Essential JS 2).
-
 ![aspnetcore2.x project template](images/aspnetcore2x-template.png)
 
 **Step 4:** Choose **.NET Core** with **ASP.NET Core 2.0** and select **Web Application(Model-View-Controller)**, and then click **OK**. The web application project is now created with default ASP.NET Core template.
