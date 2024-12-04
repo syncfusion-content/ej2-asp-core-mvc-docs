@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Diagram Component
+title: Accessibility in ##Platform_Name## Diagram Component | Syncfusion® 
 description: Learn here all about Accessibility in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## Diagram Component
 
 Diagram provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provide information about elements in a document for assistive technology.
 

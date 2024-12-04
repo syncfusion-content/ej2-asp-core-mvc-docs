@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid Lines in ##Platform_Name## Diagram Component
+title: Grid Lines in ##Platform_Name## Diagram Component | Syncfusion®
 description: Learn here all about Grid Lines in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grid Lines
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Gridlines
+# Gridlines in ##Platform_Name## Diagram Component
 
 Gridlines are the pattern of lines drawn behind the diagram elements. It provides a visual guidance while dragging or arranging the objects on the diagram surface.
 

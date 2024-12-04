@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Constraints in ##Platform_Name## Diagram Component
+title: Constraints in ##Platform_Name## Diagram Component | Syncfusion®
 description: Learn here all about Constraints in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Constraints
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Constraints
+# Constraints in ##Platform_Name## Diagram Component
 
 Constraints are used to enable or disable certain behaviors of the diagram, nodes and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled or disabled using Bitwise operators (`&, |, ~, <<, etc.`).
 
