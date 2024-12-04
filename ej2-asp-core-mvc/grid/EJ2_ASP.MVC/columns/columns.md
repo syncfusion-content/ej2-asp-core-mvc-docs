@@ -255,7 +255,7 @@ Here is an example of using the `TextAlign` property to align the text of a Grid
 
 ## Render boolean value as checkbox
 
-The Grid control allows you to render boolean values as checkboxes in columns. This can be achieved by using the `DisplayAsCheckBox` property, which is available in the [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Columns). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
+The Grid component allows you to render boolean values as checkboxes in columns. This can be achieved by using the `DisplayAsCheckBox` property, which is available in the [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Columns). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
 
 To enable the rendering of boolean values as checkboxes, you need to set the `DisplayAsCheckBox` property of the `Columns` to **true**.
 
@@ -385,13 +385,13 @@ Here's an example of how you can use the `LockColumn` property to lock a column 
 
 ## Show or hide columns
 
-The Syncfusion Grid control allows you to show or hide columns dynamically by using property or methods available in the grid. This feature can be useful when you want to customize the visibility of columns in the Grid based on the requirements.
+The Syncfusion Grid component allows you to show or hide columns dynamically by using property or methods available in the grid. This feature can be useful when you want to customize the visibility of columns in the Grid based on the requirements.
 
 > To work with showing and hiding columns, it is necessary to have at least one column of the grid in a visible state
 
 ### Using property
 
-You can show or hide columns in the ASP.NET MVC Grid using the `Visible` property of each column. By setting the `Visible` property to **true** or **false**, you can control whether the column should be visible or hidden in the grid. Here's an example of how to show or hide a column in the ASP.NET MVC Grid using the visible property:
+You can show or hide columns in the ASP.NET MVC Grid using the `Visible` property of each column. By setting the `Visible` property to **true** or **false**, you can component whether the column should be visible or hidden in the grid. Here's an example of how to show or hide a column in the ASP.NET MVC Grid using the visible property:
 
 In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started) component is added to enable and disable the `Visible` property. When the switch is toggled, the `Change` event is triggered and the `Visible` property of the **ShipCity** column is updated accordingly. The `RefreshColumns` method is called to refresh the grid and display the updated content. 
 
@@ -413,7 +413,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ### Using methods
 
-You can also show or hide columns in the ASP.NET MVC Grid using the `ShowColumns` and `HideColumns` methods of the grid control. These methods allow you to show or hide columns based on either the `HeaderText` or the `Field` of the column.
+You can also show or hide columns in the ASP.NET MVC Grid using the `ShowColumns` and `HideColumns` methods of the grid component. These methods allow you to show or hide columns based on either the `HeaderText` or the `Field` of the column.
 
 **Based on header text**
 
@@ -453,7 +453,7 @@ Here's an example of how to show or hide a column based on the field in the ASP.
 
 ## Controlling Grid actions
 
-You can control various actions such as filtering, grouping, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion ASP.NET MVC Grid using the following properties:
+You can component various actions such as filtering, grouping, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion ASP.NET MVC Grid using the following properties:
 
 * `AllowEditing`: Enables or disables editing for a column.
 * [AllowFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering): Enables or disables filtering for a column.
@@ -463,7 +463,7 @@ You can control various actions such as filtering, grouping, sorting, resizing, 
 * [AllowResizing](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowResizing): Enables or disables resizing for a column
 * `AllowSearching`: Enables or disables searching for a column
 
-Here is an example code that demonstrates how to control grid actions for specific columns:
+Here is an example code that demonstrates how to component grid actions for specific columns:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -478,7 +478,7 @@ Here is an example code that demonstrates how to control grid actions for specif
 
 ## Customize column styles
 
-Customizing the grid column styles allows you to modify the appearance of columns in the Grid control to meet your design requirements. You can customize the font, background color, and other styles of the columns. To customize the columns styles in the grid, you can use grid event, css, property or method support.
+Customizing the grid column styles allows you to modify the appearance of columns in the Grid component to meet your design requirements. You can customize the font, background color, and other styles of the columns. To customize the columns styles in the grid, you can use grid event, css, property or method support.
 
 For more information check on this [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/cell#customize-cell-styles).
 
@@ -557,7 +557,7 @@ You can update the column definitions in the Grid using the [Columns](https://he
 
 ### Adding/Removing Columns
 
-The Grid control allows you to dynamically add or remove columns to and from the grid using the [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) property, which can be accessed through the instance of the Grid.
+The Grid component allows you to dynamically add or remove columns to and from the grid using the [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) property, which can be accessed through the instance of the Grid.
 
 To add a new column to the Grid, you can directly **Push** the new column object to the columns property.To remove a column from the Grid, you can use the **Pop** method, which removes the last element from the columns array of the Grid. Alternatively, you can use the splice method to remove a specific column from the columns array.
 
