@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load balancing environment in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn how to load balancing environment in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Load balancing environment in ##Platform_Name## PDF Viewer | Syncfusion
+description: Learn how to load balancing environment in ##Platform_Name## PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load balancing environment
 publishingplatform: ##Platform_Name##
