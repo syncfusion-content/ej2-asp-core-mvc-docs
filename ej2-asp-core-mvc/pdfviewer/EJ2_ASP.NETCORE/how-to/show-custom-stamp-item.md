@@ -57,8 +57,7 @@ Within the PDF Viewer setup, utilize `PdfViewerCustomStampSettings` to specify t
     <ejs-pdfviewer id="pdfviewer" style="height:600px" CustomStampSettings="@CustomStampsSettings" documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
     </ejs-pdfviewer>
 ```
-### Conclusion
 
-By following these instructions, you can successfully configure the Syncfusion PDF Viewer to display custom stamp items in the custom stamp dropdown, allowing users to easily apply personalized stamps to their documents.
+By following these instructions, you can successfully configure to display custom stamp items in the custom stamp dropdown, allowing users to easily apply personalized stamps to their documents.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to)

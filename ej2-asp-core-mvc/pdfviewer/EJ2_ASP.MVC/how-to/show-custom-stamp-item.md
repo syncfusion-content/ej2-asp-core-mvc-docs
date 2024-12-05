@@ -61,8 +61,7 @@ Within the PDF Viewer setup, utilize `PdfViewerCustomStampSettings` to specify t
 </div>
 
 ```
-### Conclusion
 
-By following these instructions, you can successfully configure the Syncfusion PDF Viewer to display custom items in the custom stamp dropdown, allowing users to easily apply personalized stamps to their documents.
+By following these instructions, you can successfully configure to display custom items in the custom stamp dropdown, allowing users to easily apply personalized stamps to their documents.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to)
