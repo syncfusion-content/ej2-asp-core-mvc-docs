@@ -1,0 +1,30 @@
+@Html.EJS().Grid("FlatGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableHover(false).QueryCellInfo("colorPicker").Height(315).Columns(col =>
+    {
+        col.Field("FirstName").HeaderText("First Name").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+        col.Field("LastName").HeaderText("Last Name").Width(150).Add();
+        col.Field("City").HeaderText("City").Width(150).Add();
+        col.HeaderText("Change the color of row").Template("#columnTemplate").Width(120).Add();
+    }).Render()
+<script type="text/x-template" id="columnTemplate">
+    <input id="element" type="color" />
+</script>
+
+<script>
+    function colorPicker(args) {
+        let inputElement = args.cell.querySelector('input')
+        let colorPickerObject = new ej.inputs.ColorPicker({
+            type: 'color',
+            mode: 'Palette',
+            change: change,
+        });
+        colorPickerObject.appendTo(inputElement);
+    }
+    function change(args) {
+        let grid = document.querySelector('#Grid').ej2_instances[0];
+        let selectedRows = grid.getSelectedRows();
+        for (let row of selectedRows) {
+            row.style.backgroundColor = args.value;
+        }
+        grid.clearSelection();
+    } 
+</script>

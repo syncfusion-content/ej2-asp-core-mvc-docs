@@ -1,9 +1,9 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" width="auto" >            
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="315" >            
     <e-grid-columns>
-        <e-grid-column headerText="Discontinued" template="#template" width="150" ></e-grid-column>                
-        <e-grid-column field="ProductID" headerText="Product ID" textAlign="Right" width="125"></e-grid-column>
-        <e-grid-column field="ProductName" headerText="Product Name" width="120"></e-grid-column>
-        <e-grid-column field="SupplierID" headerText="SupplierID"  width="170"></e-grid-column>                
+        <e-grid-column headerText="Discontinued" template="#template" textAlign="Center" width="150" ></e-grid-column>                
+        <e-grid-column field="ProductID" headerText="Product ID" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="CategoryName" headerText="Category Name" width="150"></e-grid-column>
+        <e-grid-column field="ProductName" headerText="Product Name"  width="150"></e-grid-column>                
     </e-grid-columns>
 </ejs-grid>
 

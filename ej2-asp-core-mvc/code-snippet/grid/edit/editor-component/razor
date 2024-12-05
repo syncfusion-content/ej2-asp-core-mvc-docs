@@ -1,0 +1,30 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ActionComplete("actionComplete").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("100").ValidationRules(new { required = "true", number = true }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(new { required = "true"}).Width("120").Add();
+    col.Field("Freight").HeaderText("Freight").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+    function actionComplete(args) {
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            var rowElement = args.row;
+            var numericTextBox = rowElement.querySelector('.e-numerictextbox'); // numeric TextBox control element
+            if (numericTextBox) {
+                var numericTextBoxInstance = (numericTextBox).ej2_instances[0];
+                numericTextBoxInstance.element.style.backgroundColor = 'light pink';
+                numericTextBoxInstance.element.style.color = 'black';
+                numericTextBoxInstance.element.style.border = '2px solid red';
+                numericTextBoxInstance.element.style.textAlign = 'center';
+                numericTextBoxInstance.max = 1000;
+                numericTextBoxInstance.min = 1;
+            }
+            var dropDownList = rowElement.querySelector('.e-dropdownlist'); // dropDownList control element
+            if (dropDownList) {
+                var dropDownListInstance = (dropDownList).ej2_instances[0]
+                dropDownListInstance.showPopup(); // Open the dropdown list
+            }
+        }
+    }
+</script>

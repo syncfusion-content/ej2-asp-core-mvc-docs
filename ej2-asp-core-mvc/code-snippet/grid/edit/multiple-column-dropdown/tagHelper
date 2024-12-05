@@ -1,0 +1,76 @@
+@using Newtonsoft.Json;
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
+    <e-grid-editsettings allowEditing="true" allowAdding="true" allowDeleting="true"></e-grid-editsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" editType="numericedit" validationRules="@(new { required= true,min=1, max=1000 })" format="C2" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" editType="datepickeredit" width="130"></e-grid-column> 
+        <e-grid-column field="ShipCountry" headerText="Ship Country" edit="@(new {create = "createShipCountryHandler", read = "readShipCountryHandler", destroy = "destroyShipCountryHandler", write = "writeShipCountryHandler"})" width="300"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var dropDownElement;
+    var dropDownListObj;
+    var dropDownDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
+
+    function createShipCountryHandler() {
+        dropDownElement = document.createElement('input');
+        return dropDownElement;
+    }
+    function destroyShipCountryHandler() {
+        dropDownListObj.destroy();
+    }
+    function readShipCountryHandler() {
+        return dropDownListObj.value;
+    }
+    function writeShipCountryHandler(args) {
+        var rowData = args.rowData;
+        dropDownListObj = new ej.dropdowns.DropDownList({
+            dataSource: dropDownDataSource,
+            query: new ej.data.Query().from('data').select(['EmployeeID', 'ShipCountry', 'OrderID']).take(6),
+            fields: { text: 'ShipCountry' },
+            value: rowData.ShipCountry,
+            change: function (args) {
+                // Update the EmployeeID value in the rowData
+                rowData.ShipCountry = args.value;
+            },
+            headerTemplate: '<table><tr><th>EmployeeID</th><th>ShipCountry</th></tr></table>',
+            itemTemplate: '<div class="e-grid"><table class="e-table"><tbody><tr><td class="e-rowcell">${EmployeeID}</td><td class="e-rowcell">${ShipCountry}</td></tr></tbody></table></div>'
+        });
+        dropDownListObj.appendTo(dropDownElement);
+    }
+</script>
+<style>
+    .content {
+        margin: 0 auto;
+        width: 550px;
+    }
+     table{
+        width:100%;
+        border-collapse: separate;
+        table-layout: fixed;
+    }
+    th,td{
+        border-width: 1px 0 0 1px;
+        border-color: #e0e0e0;
+        text-align: left;
+        border-style: solid;
+        display: table-cell;
+    }
+    th{
+        line-height: 36px;
+        text-indent: 16px;
+    }
+    .e-ddl-header{
+        padding-right: 17px;
+        border-width: 1px 0px 1px 0px;
+        border-color: #e0e0e0;
+        border-style: solid;
+    }
+    .e-dropdownbase .e-list-item{
+        padding-right:0px;
+    }
+</style>
