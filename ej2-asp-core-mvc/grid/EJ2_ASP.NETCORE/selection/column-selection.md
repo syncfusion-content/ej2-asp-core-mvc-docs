@@ -19,7 +19,7 @@ Here's an example of how to enable column selection using `allowColumnSelection`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/column-selection/razor %}
+{% include code-snippet/grid/selection/column-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="column-selection.cs" %}
 {% include code-snippet/grid/selection/column-selection/column-selection.cs%}
@@ -38,7 +38,7 @@ Here's an example of how to enable single column selection using `allowColumnSel
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/column-single-selection/razor %}
+{% include code-snippet/grid/selection/column-single-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="column-selection.cs" %}
 {% include code-snippet/grid/selection/column-single-selection/column-selection.cs%}
@@ -57,7 +57,7 @@ Here's an example of how to enable multiple column selection using `allowColumnS
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/column-multiple-selection/razor %}
+{% include code-snippet/grid/selection/column-multiple-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="column-selection.cs" %}
 {% include code-snippet/grid/selection/column-multiple-selection/column-selection.cs%}
@@ -82,7 +82,7 @@ The following example, demonstrates how to select a single column within the Gri
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/column-single-method/razor %}
+{% include code-snippet/grid/selection/column-single-method/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="column-selection.cs" %}
 {% include code-snippet/grid/selection/column-single-method/column-selection.cs%}
@@ -103,14 +103,14 @@ The following example demonstrates how to select multiple columns in the Grid by
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/column-multiple-method/razor %}
+{% include code-snippet/grid/selection/column-multiple-method/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="column-selection.cs" %}
 {% include code-snippet/grid/selection/column-multiple-method/column-selection.cs%}
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple column selection](../../images/selection/cell-events-selection.gif)
+![Multiple column selection](../../images/selection/column-multiple-method.png)
 
 ### Range of column selection 
 
@@ -122,7 +122,7 @@ The following example demonstrates how to select a range of columns within the G
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/column-range/razor %}
+{% include code-snippet/grid/selection/column-range/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="column-selection.cs" %}
 {% include code-snippet/grid/selection/column-range/column-selection.cs%}
@@ -141,7 +141,7 @@ The following example demonstrates how to select a column with an existing colum
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/column-existing/razor %}
+{% include code-snippet/grid/selection/column-existing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="column-selection.cs" %}
 {% include code-snippet/grid/selection/column-existing/column-selection.cs%}
@@ -160,7 +160,7 @@ In the following example, it demonstrates how to clear column selection by calli
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/column-clear/razor %}
+{% include code-snippet/grid/selection/column-clear/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="column-selection.cs" %}
 {% include code-snippet/grid/selection/column-clear/column-selection.cs%}
@@ -185,7 +185,7 @@ In the following example, column selection is canceled when the value of `field`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/column-events/razor %}
+{% include code-snippet/grid/selection/column-events/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="column-selection.cs" %}
 {% include code-snippet/grid/selection/column-events/column-selection.cs%}

@@ -14,7 +14,7 @@ Checkbox selection in the Grid component allows you to provide an option to sele
 
 To render checkbox in each grid row, you need to use checkbox column with type as **checkbox** using column `Type` property.
 
-Here's an example of how to enable check box selection using `type` property in the Grid component:
+Here's an example of how to enable check box selection using `Type` property in the Grid component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -82,7 +82,7 @@ In the following sample, the selection of specific rows has been prevented based
 {% include code-snippet/grid/selection/checkbox-prevent/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="checkbox.cs" %}
-{% include code-snippet/grid/selection/checkbox-prevent/prevent-checkbox-selection.cs%}
+{% include code-snippet/grid/selection/checkbox-prevent/checkbox.cs%}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,7 +96,7 @@ To achieve single-row selection in checkbox selection mode within the Grid, you 
 
 > When you set the [CheckboxMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CheckboxMode) property to **ResetOnRowClick**, it will reset the previously selected row when you click on a new row. Please note that this behavior applies to rows and not checkboxes, and it is the default behavior of the grid.
 
-Here's an example of how to select a single row in checkbox selection mode using the `clearSelection` method along with the `rowSelecting` event:
+Here's an example of how to select a single row in checkbox selection mode using the `clearSelection` method along with the `RowSelecting` event:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

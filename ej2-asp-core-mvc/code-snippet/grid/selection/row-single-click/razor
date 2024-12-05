@@ -2,7 +2,7 @@
    <label style="margin-right:5px;font-weight: bold;">Enable/Disable simple multiple row selection</label>
    @Html.EJS().Switch("switch").Change("toggleRowSelection").Render()
 </div>
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();

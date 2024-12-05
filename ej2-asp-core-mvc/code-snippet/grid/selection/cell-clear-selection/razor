@@ -1,5 +1,5 @@
 <div style="padding-bottom: 10px">
-   @Html.EJS().Button("buttons").CssClass("e-primary").Content("Clear cell Selection").Render()
+   @Html.EJS().Button("buttons").CssClass("e-primary").Content("Clear Cell Selection").Render()
 </div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("348px").Columns(col =>
 {

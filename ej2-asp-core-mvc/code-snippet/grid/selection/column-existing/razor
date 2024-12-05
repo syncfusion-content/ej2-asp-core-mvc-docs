@@ -1,13 +1,13 @@
 <div style="padding-bottom: 20px">
     <div>
-        <label style="padding: 30px 5px 0 0;font-weight: bold">Enter the Column index:</label>
+        <label style="padding: 30px 5px 0 0;font-weight: bold">Enter the column index:</label>
         @Html.EJS().TextBox("inputTextBox").Width("120px").Render()
     </div>
     <div style="padding: 10px 0 0px 173px">
         @Html.EJS().Button("buttons").CssClass("e-primary").Content("Select Columns").Render()
     </div>
 </div>
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();

@@ -16,7 +16,7 @@
         @Html.EJS().TextBox("inputTextBoxFour").Width("120px").Render()
     </div>
     <div style="padding: 10px 0 0px 220px">
-        @Html.EJS().Button("buttons").CssClass("e-primary").Content("Select range of Cell").Render()
+        @Html.EJS().Button("buttons").CssClass("e-primary").Content("Select Cells").Render()
     </div>
 </div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("273px").Columns(col =>

@@ -16,7 +16,7 @@
         <ejs-textbox id="inputTextBoxFour" width="120px"></ejs-textbox>
     </div>
     <div style="padding: 10px 0 0px 220px">
-        <ejs-button id="buttons" cssClass="e-primary" content="Select range of Cell"></ejs-button>
+        <ejs-button id="buttons" cssClass="e-primary" content="Select Cells"></ejs-button>
     </div>
 </div>
 <ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px">

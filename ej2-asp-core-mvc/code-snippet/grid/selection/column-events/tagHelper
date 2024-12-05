@@ -1,5 +1,5 @@
 <p style="color:red;text-align:center" id="message"></p>
-<ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px" ColumnSelected="columnSelected" ColumnSelecting="columnSelecting" ColumnDeselected="columnDeselected" ColumnDeselecting="columnDeselecting">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" allowPaging="true" ColumnSelected="columnSelected" ColumnSelecting="columnSelecting" ColumnDeselected="columnDeselected" ColumnDeselecting="columnDeselecting">
     <e-grid-selectionsettings allowColumnSelection="true" type="Multiple" ></e-grid-selectionsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>

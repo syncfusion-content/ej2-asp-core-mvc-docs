@@ -1,5 +1,5 @@
 <p style="color:red;text-align:center" id="message"></p>
-<ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px" allowPaging="true" enableHover="true" rowSelected="rowSelected" allowSelection="true" rowSelecting="rowSelecting" rowDeselected="rowDeselected" rowDeselecting="rowDeselecting">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" allowPaging="true" enableHover="true" rowSelected="rowSelected" allowSelection="true" rowSelecting="rowSelecting" rowDeselected="rowDeselected" rowDeselecting="rowDeselecting">
     <e-grid-selectionsettings type="Multiple" mode="Row"></e-grid-selectionsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>
@@ -20,7 +20,6 @@
       else
        document.getElementById("message").innerText=''; 
    }
-
    function rowSelected(args)
    {
    
@@ -30,7 +29,6 @@
          args.row.style.backgroundColor = 'rgb(96, 158, 101)'; 
       }
    }
-
    function rowDeselected(args)
    {
       if (args.data.Freight <= '10')
@@ -39,7 +37,6 @@
          args.row.style.backgroundColor = 'red';
       }
    }
-
    function rowDeselecting(args)
    {
       if (args.data.Freight > '140')

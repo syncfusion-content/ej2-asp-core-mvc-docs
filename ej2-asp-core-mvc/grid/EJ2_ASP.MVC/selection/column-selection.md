@@ -109,7 +109,7 @@ The following example demonstrates how to select multiple columns in the Grid by
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple column selection](../../images/selection/cell-events-selection.gif)
+![Multiple column selection](../../images/selection/column-multiple-method.png)
 
 ### Range of column selection 
 

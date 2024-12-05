@@ -11,7 +11,7 @@
     <ejs-button id="buttonEight" cssClass="e-primary custom" content="select [4,7,12]"></ejs-button>
     <ejs-button id="buttonNine" cssClass="e-primary custom" content="select [2,5,6]"></ejs-button>
 </div>
-<ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px">
     <e-grid-selectionsettings mode= "Row" type="Multiple"></e-grid-selectionsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>

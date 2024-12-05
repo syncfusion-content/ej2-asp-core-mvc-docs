@@ -2,7 +2,7 @@
    <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Enable/Disable column selection</label>
     <ejs-switch id="switch" change="onSwitchChange"></ejs-switch>
 </div>
-<ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px">
     <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>

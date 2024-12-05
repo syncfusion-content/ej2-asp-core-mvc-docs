@@ -1,13 +1,13 @@
 <div style="padding-bottom: 20px">
     <div>
-        <label style="padding: 30px 5px 0 0;font-weight: bold">Enter the Column index:</label>
+        <label style="padding: 30px 5px 0 0;font-weight: bold">Enter the column index:</label>
         <ejs-textbox id="inputTextBox" width="120px"></ejs-textbox>
     </div>
     <div style="padding: 10px 0 0px 193px">
         <ejs-button id="buttons" cssClass="e-primary" content="Select Columns"></ejs-button>
     </div>
 </div>
-<ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px">
     <e-grid-selectionsettings allowColumnSelection="true" type="Multiple"></e-grid-selectionsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>

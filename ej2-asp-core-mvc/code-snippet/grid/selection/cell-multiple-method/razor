@@ -6,7 +6,7 @@
    @Html.EJS().Button("buttonFive").CssClass("e-primary custom").Content("Select [5, 1]").Render()
 </div>
 <div style="padding: 10px 0px 20px 0px">
-   @Html.EJS().Button("buttonSix").CssClass("e-primary custom").Content("Select [3, 3]").Render()
+   @Html.EJS().Button("buttonSix").CssClass("e-primary").Content("Select [3, 3]").Render()
    @Html.EJS().Button("buttonSeven").CssClass("e-primary custom").Content("Select [0, 3]").Render()
    @Html.EJS().Button("buttonEight").CssClass("e-primary custom").Content("Select [8, 1]").Render()
    @Html.EJS().Button("buttonNine").CssClass("e-primary custom").Content("Select [8, 2]").Render()

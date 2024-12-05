@@ -18,7 +18,7 @@ Here's an example of how to enable check box selection using `type` property in 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/checkbox-selection/razor %}
+{% include code-snippet/grid/selection/checkbox-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="checkbox.cs" %}
 {% include code-snippet/grid/selection/checkbox-selection/checkbox.cs%}
@@ -41,7 +41,7 @@ In the following example, it demonstrates how to dynamically enable and change t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/checkbox-mode/razor %}
+{% include code-snippet/grid/selection/checkbox-mode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="checkbox.cs" %}
 {% include code-snippet/grid/selection/checkbox-mode/checkbox.cs%}
@@ -60,7 +60,7 @@ Here's an example of how to hide selectall checkbox in column header using empty
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/checkbox-hide/razor %}
+{% include code-snippet/grid/selection/checkbox-hide/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="checkbox.cs" %}
 {% include code-snippet/grid/selection/checkbox-hide/checkbox.cs%}
@@ -79,10 +79,10 @@ In the following sample, the selection of specific rows has been prevented based
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/checkbox-prevent/razor %}
+{% include code-snippet/grid/selection/checkbox-prevent/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="checkbox.cs" %}
-{% include code-snippet/grid/selection/checkbox-prevent/prevent-checkbox-selection.cs%}
+{% include code-snippet/grid/selection/checkbox-prevent/checkbox.cs%}
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,7 +100,7 @@ Here's an example of how to select a single row in checkbox selection mode using
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/checkbox-select/razor %}
+{% include code-snippet/grid/selection/checkbox-select/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="checkbox.cs" %}
 {% include code-snippet/grid/selection/checkbox-select/checkbox.cs%}
@@ -117,7 +117,7 @@ Here's an example of how to enable selection only through checkbox click using `
  
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/checkbox-only/razor %}
+{% include code-snippet/grid/selection/checkbox-only/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="checkbox.cs" %}
 {% include code-snippet/grid/selection/checkbox-only/checkbox.cs%}

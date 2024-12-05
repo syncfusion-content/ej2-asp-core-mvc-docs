@@ -3,7 +3,7 @@
 </div>
 <div id="dialog" ></div>
 
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
   col.Type("checkbox").Width("40").Add();
   col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -11,7 +11,7 @@
   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
-}).AllowPaging().PageSettings(page => { page.PageSize(10); }).SelectionSettings(select => select.PersistSelection(true).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
+}).AllowPaging().PageSettings(page => { page.PageSize(10); }).SelectionSettings(select => select.PersistSelection(true).Mode(Syncfusion.EJ2.Grids.SelectionMode.Row).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
 <script>
     let dialogVisible = true;
     let dialog = new ej.popups.Dialog({

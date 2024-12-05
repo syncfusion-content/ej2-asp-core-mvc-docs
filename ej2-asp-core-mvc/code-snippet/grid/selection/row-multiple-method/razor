@@ -11,7 +11,7 @@
    @Html.EJS().Button("buttonEight").CssClass("e-primary custom").Content("select [4,7,12]").Render()
    @Html.EJS().Button("buttonNine").CssClass("e-primary custom").Content("select [2,5,6]").Render()
 </div>
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();

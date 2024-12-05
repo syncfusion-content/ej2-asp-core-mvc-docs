@@ -2,7 +2,7 @@
     <ejs-button id="buttons" cssClass="e-primary" content="Clear Row Selection"></ejs-button>
 </div>
 <p style="color:red;text-align:center" id="message"></p>
-<ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px" allowPaging="true" allowSelection="true" selectedRowIndex="2">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" allowPaging="true" allowSelection="true" selectedRowIndex="2">
     <e-grid-selectionsettings type="Multiple" mode="Row"></e-grid-selectionsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>

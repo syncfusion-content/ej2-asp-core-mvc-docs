@@ -3,7 +3,7 @@
   @Html.EJS().TextBox("inputTextBox").Width("120px").Render()
   @Html.EJS().Button("buttons").CssClass("e-primary custom").Content("Select Row").Render()
 </div>
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();

@@ -25,7 +25,7 @@ In the following example demonstrates how to enable single cell selection using 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/cell-single-selection/razor %}
+{% include code-snippet/grid/selection/cell-single-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="cell-selection.cs" %}
 {% include code-snippet/grid/selection/cell-single-selection/cell-selection.cs%}
@@ -44,7 +44,7 @@ In the following example demonstrates how to enable multiple cell selection usin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/cell-multiple-selection/razor %}
+{% include code-snippet/grid/selection/cell-multiple-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="cell-selection.cs" %}
 {% include code-snippet/grid/selection/cell-multiple-selection/cell-selection.cs%}
@@ -69,7 +69,7 @@ In the following example demonstrates how to dynamically enable and change the `
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/cell-mode/razor %}
+{% include code-snippet/grid/selection/cell-mode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="cell-selection.cs" %}
 {% include code-snippet/grid/selection/cell-mode/cell-selection.cs%}
@@ -92,7 +92,7 @@ The following example demonstrates how to select a single cell within the Grid b
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/cell-single-method/razor %}
+{% include code-snippet/grid/selection/cell-single-method/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="cell-selection.cs" %}
 {% include code-snippet/grid/selection/cell-single-method/cell-selection.cs%}
@@ -111,14 +111,14 @@ In the following example, it demonstrates how to select multiple cells in the Gr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/cell-multiple-method/razor %}
+{% include code-snippet/grid/selection/cell-multiple-method/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="cell-selection.cs" %}
 {% include code-snippet/grid/selection/cell-multiple-method/cell-selection.cs%}
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple cell selection](../../images/selection/cell-multiple-method.png)
+![Multiple cell selection](../../images/selection/cell-multiple-method.gif)
 
 > Cell Selection requires the `selectionSettings.mode` to be **Cell** or  **Both** and [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
 
@@ -135,7 +135,7 @@ The following example demonstrates how to select a range of cells within the Gri
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/cell-range-selection/razor %}
+{% include code-snippet/grid/selection/cell-range-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="cell-selection.cs" %}
 {% include code-snippet/grid/selection/cell-range-selection/cell-selection.cs%}
@@ -152,10 +152,10 @@ The following example demonstrates how to obtain the selected row cell indexes u
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/cell-get selected/razor %}
+{% include code-snippet/grid/selection/cell-get-selected/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="cell-selection.cs" %}
-{% include code-snippet/grid/selection/cell-get selected/cell-selection.cs%}
+{% include code-snippet/grid/selection/cell-get-selected/cell-selection.cs%}
 {% endhighlight %}
 {% endtabs %}
 
@@ -171,7 +171,7 @@ The following example demonstrates how to clear cell selection by calling the `c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/cell-clear-selection/razor %}
+{% include code-snippet/grid/selection/cell-clear-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="cell-selection.cs" %}
 {% include code-snippet/grid/selection/cell-clear-selection/cell-selection.cs%}
@@ -196,7 +196,7 @@ In the following example, cell selection is canceled when the value of **ShipCou
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/cell-events/razor %}
+{% include code-snippet/grid/selection/cell-events/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="cell-selection.cs" %}
 {% include code-snippet/grid/selection/cell-events/cell-selection.cs%}

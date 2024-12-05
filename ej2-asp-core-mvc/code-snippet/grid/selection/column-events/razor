@@ -1,5 +1,5 @@
 <p style="color:red;text-align:center;padding-bottom:10px" id="message"></p>
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).EnableHover().Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableHover().Height("348px").Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();

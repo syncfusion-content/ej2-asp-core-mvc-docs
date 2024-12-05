@@ -7,7 +7,7 @@ control: Cell Selection
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
+ 
 # Cell Selection in ASP.NET MVC Grid component 
 
 Cell selection in the Grid component allows you to interactively select specific cells or ranges of cells within the grid. This selection can be done effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when you want to highlight, manipulate, or perform actions on specific cell within the Grid.
@@ -117,7 +117,7 @@ In the following example, it demonstrates how to select multiple cells in the Gr
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple cell selection](../../images/selection/cell-multiple-method.png)
+![Multiple cell selection](../../images/selection/cell-multiple-method.gif)
 
 > Cell Selection requires the `SelectionSettings.Mode` to be **Cell** or  **Both** and [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
 
@@ -151,10 +151,10 @@ The following example demonstrates how to obtain the selected row cell indexes u
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/cell-get selected/razor %}
+{% include code-snippet/grid/selection/cell-get-selected/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="cell-selection.cs" %}
-{% include code-snippet/grid/selection/cell-get selected/cell-selection.cs%}
+{% include code-snippet/grid/selection/cell-get-selected/cell-selection.cs%}
 {% endhighlight %}
 {% endtabs %}
 

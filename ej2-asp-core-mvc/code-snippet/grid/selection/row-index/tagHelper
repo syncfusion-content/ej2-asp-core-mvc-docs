@@ -22,7 +22,7 @@
         </span>
     </div>
 </div>
-<ejs-grid id="grid" dataSource="@ViewBag.datasource" actionComplete="actionComplete" allowPaging="true" height="348px">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" actionComplete="actionComplete" allowPaging="true" height="348px">
     <e-grid-pageSettings pageSize="10" ></e-grid-pageSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>
