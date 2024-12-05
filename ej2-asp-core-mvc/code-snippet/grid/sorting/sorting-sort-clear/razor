@@ -1,0 +1,21 @@
+@{
+    List<object> sortOptions = new List<object>();
+    sortOptions.Add(new { field = "CustomerID", direction = "Ascending" });
+    sortOptions.Add(new { field = "ShipName", direction = "Descending" });
+}
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("clearButton").CssClass("e-primary").Content("Clear Sorting").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").AllowSorting(true).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("170").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
+}).SortSettings(sort => sort.Columns(sortOptions)).Render()
+<script>
+    document.getElementById('clearButton').addEventListener('click', function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.clearSorting()
+    });
+</script>
