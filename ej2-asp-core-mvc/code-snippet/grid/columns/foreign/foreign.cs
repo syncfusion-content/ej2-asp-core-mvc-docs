@@ -1,8 +1,6 @@
-public IActionResult DefaultExporting()
+public IActionResult Index()
 {
-    var order = OrdersDetails.GetAllRecords();
-    ViewBag.dataSource = order;
-    var emp = EmployeeView.GetAllRecords();
-    ViewBag.foreign = emp;
+    ViewBag.DataSource = OrderDetails.GetAllRecords();
+    ViewBag.ForeignData = EmployeeDetails.GetAllRecords();
     return View();
 }
