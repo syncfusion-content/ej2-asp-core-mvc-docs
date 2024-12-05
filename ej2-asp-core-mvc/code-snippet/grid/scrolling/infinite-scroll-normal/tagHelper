@@ -1,0 +1,10 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" enableInfiniteScrolling="true" height="300" >
+    <e-grid-pageSettings pageSize=50></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="TaskID" headerText="Task ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="Engineer" headerText="Engineer" width="150"></e-grid-column>
+        <e-grid-column field="Designation" headerText="Designation" width="120"></e-grid-column>
+        <e-grid-column field="Estimation" headerText="Estimation" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="Status" headerText="Status" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

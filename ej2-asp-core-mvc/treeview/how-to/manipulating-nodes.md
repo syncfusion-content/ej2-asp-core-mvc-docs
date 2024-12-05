@@ -86,7 +86,7 @@ Output be like the below.
 
 ![TreeView Sample](../images/manipulating-nodes-cs2.PNG)
 
- ## Dynamically update nodes
+## Dynamically update nodes
 
 The TreeView control has the [`updateNode`](https://ej2.syncfusion.com/javascript/documentation/api/treeview/#updatenode) method, which allows you to change a specific node's text by providing its target (either the node ID or element) and the new text. To enable text editing, set the [`allowEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.navigations.treeview.html#Syncfusion_EJ2_Navigations_TreeView_AllowEditing)property to true, ensuring correct functionality of the `updateNode` method.
 

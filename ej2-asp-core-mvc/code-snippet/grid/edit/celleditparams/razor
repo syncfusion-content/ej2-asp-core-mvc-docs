@@ -1,9 +1,0 @@
-@Html.EJS().Grid("EditParam").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true" }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("150").ValidationRules(new { required = "true", minLength = 3 }).Add();
-    col.Field("Freight").HeaderText("Freight").Width("120").EditType("numericedit").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Edit(new { @params = new { decimals = 2, value = 5} }).Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Edit(new { @params = new { value = "Germany" } }).Width("150").Add();
-    col.Field("OrderDate").HeaderText("Order Date").EditType("datepickeredit").Edit(new { @params = new { value = new Date() } }).Width("150").Add();
-    col.Field("Verified").HeaderText("Verified").EditType("booleanedit").Edit(new { @params = new { checked = true } }).Width("150").Add();
-}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
