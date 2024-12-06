@@ -34,8 +34,8 @@
             return sortOrder === 'Ascending' ? comparerDate.getTime() - referenceDate.getTime() : referenceDate.getTime() - comparerDate.getTime();
         }
         else {
-            const intlCollator = new Intl.Collator(undefined, { sensitivity: 'variant', usage: 'sort' });
-            const comparisonResult = intlCollator.compare(String(reference), String(comparer));
+            const stringComparator = new Intl.Collator(undefined, { sensitivity: 'variant', usage: 'sort' });
+            const comparisonResult = stringComparator.compare(String(reference), String(comparer));
             return sortOrder === 'Ascending' ? -comparisonResult : comparisonResult;
         }
     };
