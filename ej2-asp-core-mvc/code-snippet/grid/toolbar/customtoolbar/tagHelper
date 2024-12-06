@@ -22,6 +22,6 @@
       var grid = document.getElementById("grid").ej2_instances[0];
       var target = (args.originalEvent.target).closest('button');
       if (target.id === 'collapse') grid.groupModule.collapseAll();
-      else if (target.id === 'expand') grid.groupModule.expandAll();
+      else grid.groupModule.expandAll();
     }; 
 </script>
