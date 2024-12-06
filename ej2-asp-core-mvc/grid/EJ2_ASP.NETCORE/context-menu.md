@@ -92,7 +92,7 @@ The Syncfusion ASP.NET Core Grid provides the ability to show the context menu i
 
 This can be achieved by using the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event and the context menu's `beforeOpen` event of the Grid.
 
-By using the `onclick` event listener of the Grid, you can obtain the clicked position values. The obtained positions are then sent to the `open` method of the context menu within the `onclick` event of the Grid. Additionally, the default action of right-clicking to open the context menu items items is prevented by utilizing the `created` event of the Grid.
+By using the `onClick` event listener of the Grid, you can obtain the clicked position values. The obtained positions are then sent to the `open` method of the context menu within the `onClick` event of the Grid. Additionally, the default action of right-clicking to open the context menu items items is prevented by utilizing the `created` event of the Grid.
 
 The following example demonstrates how to show context menu on left click using `created` event.
 

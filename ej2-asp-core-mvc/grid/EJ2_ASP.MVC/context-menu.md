@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Context menu in ASP.NET Core Grid component
+# Context menu in ASP.NET MVC Grid component
 
-The Syncfusion ASP.NET Core Grid component comes equipped with a context menu feature, which is triggered when a user right-clicks anywhere within the grid. This feature serves to enrich the user experience by offering immediate access to a variety of supplementary actions and operations that can be executed on the data displayed in the grid.
+The Syncfusion ASP.NET MVC Grid component comes equipped with a context menu feature, which is triggered when a user right-clicks anywhere within the grid. This feature serves to enrich the user experience by offering immediate access to a variety of supplementary actions and operations that can be executed on the data displayed in the grid.
 
 To activate the context menu within the grid, you have an option to configure the grid's [ContextMenuItems](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuItems) property. You can set this property to either include the default context menu items or define your own custom context menu items, tailoring the menu options to suit your specific needs. This customization allows you to enhance the grid's functionality by providing context-sensitive actions for interacting with your data.
    
@@ -67,9 +67,9 @@ The following example demonstrates how to enable context menu feature in the gri
 
 ## Custom context menu items
 
-The Syncfusion ASP.NET Core Grid empowers you to enhance your user experience by incorporating custom context menu items into the default context menu. These customized options enable you to tailor the context menu to meet the unique requirements of your application.
+The Syncfusion ASP.NET MVC Grid empowers you to enhance your user experience by incorporating custom context menu items into the default context menu. These customized options enable you to tailor the context menu to meet the unique requirements of your application.
 
-To incorporate custom context menu items in the Syncfusion ASP.NET Core Grid, you can achieve this by specifying the [ContextMenuItems](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuItems) property as a collection of `ContextMenuItemModel`. This allows you to define and customize the appearance and behavior of these additional context menu items according to your requirements.
+To incorporate custom context menu items in the Syncfusion ASP.NET MVC Grid, you can achieve this by specifying the [ContextMenuItems](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuItems) property as a collection of `ContextMenuItemModel`. This allows you to define and customize the appearance and behavior of these additional context menu items according to your requirements.
 
 Furthermore, you can assign actions to these custom items by utilizing the [ContextMenuClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event. This event provides you with the means to handle user interactions with the custom context menu items, enabling you to execute specific actions or operations when these items are clicked. 
 
@@ -88,11 +88,11 @@ The following example demonstrates how to add custom context menu items in the G
 
 ## Show context menu on left click
 
-The Syncfusion ASP.NET Core Grid provides the ability to show the context menu items on a left mouse click instead of the default right mouse click action. 
+The Syncfusion ASP.NET MVC Grid provides the ability to show the context menu items on a left mouse click instead of the default right mouse click action. 
 
 This can be achieved by using the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event and the context menu's `BeforeOpen` event of the Grid.
 
-By using the `Onclick` event listener of the Grid, you can obtain the clicked position values. The obtained positions are then sent to the `open` method of the context menu within the `Onclick` event of the Grid. Additionally, the default action of right-clicking to open the context menu items items is prevented by utilizing the `Created` event of the Grid.
+By using the `OnClick` event listener of the Grid, you can obtain the clicked position values. The obtained positions are then sent to the `open` method of the context menu within the `OnClick` event of the Grid. Additionally, the default action of right-clicking to open the context menu items items is prevented by utilizing the `Created` event of the Grid.
 
 The following example demonstrates how to show context menu on left click using `Created` event.
 
@@ -109,7 +109,7 @@ The following example demonstrates how to show context menu on left click using 
 
 ## Enable or disable context menu items
 
-With the Syncfusion ASP.NET Core Grid, you have the ability to manage the activation or deactivation of both default and custom context menu items. This feature provides you with the flexibility to tailor the behavior of context menu items to suit specific conditions or individual interactions within your application.
+With the Syncfusion ASP.NET MVC Grid, you have the ability to manage the activation or deactivation of both default and custom context menu items. This feature provides you with the flexibility to tailor the behavior of context menu items to suit specific conditions or individual interactions within your application.
 
 This can be achieved using the `enableItems` method of the context menu. By setting the enable parameter in the enableItems method to **true**, you can enable context menu items, and by setting it to **false**, you can disable them. Based on your specific condition or requirements, you can enable or disable the context menu item using the `enableItems` method.
 
@@ -128,7 +128,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ## Show or hide context menu items
 
-The Syncfusion ASP.NET Core Grid provides the flexibility to show or hide both default and custom context menu items. This feature allows you to customize the context menu items based on various conditions or individuals interactions.
+The Syncfusion ASP.NET MVC Grid provides the flexibility to show or hide both default and custom context menu items. This feature allows you to customize the context menu items based on various conditions or individuals interactions.
 
 This can be achieved using the `showItems` and `hideItems` methods of the context menu by specifying the item you want to show or hide as an argument. 
 
