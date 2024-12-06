@@ -1,0 +1,14 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).KeyPressed("keyPressed").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+}).Render()
+<script>
+    function keyPressed(args) {
+        if (args.keyCode === 13) { 
+            args.cancel = true; // Prevent the default Enter key action
+        }
+    }
+</script>
