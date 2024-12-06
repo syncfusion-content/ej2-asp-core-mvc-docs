@@ -1,6 +1,6 @@
 public IActionResult Index()
 {
-    ViewBag.DataSource = OrderDetails.GetAllRecords();
-    ViewBag.ForeignData = EmployeeDetails.GetAllRecords();
+    ViewBag.dataSource = OrderDetails.GetAllRecords();
+    ViewBag.foreignData = EmployeeDetails.GetAllRecords();
     return View();
 } 

@@ -1,0 +1,8 @@
+@Html.EJS().Grid("grid").DataSource(dataManger => { dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/Orders/").Adaptor("ODataV4Adaptor"); }).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("EmployeeID").ForeignKeyField("EmployeeID").ForeignKeyValue("FirstName").DataSource(dataManger => { dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/Employees/").Adaptor("ODataV4Adaptor"); }).HeaderText("Employee Name").Width("140").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipName").HeaderText("Ship Name").Width("160").Add();
+  col.Field("ShipCity").HeaderText("Ship City").EditType("dropdownedit").Width("150").Add();
+}).Render()
