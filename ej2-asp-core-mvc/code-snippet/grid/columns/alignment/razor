@@ -1,8 +1,27 @@
+<script>
+    function changeAlignment(args) {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        grid.columns.forEach(function (col) {
+            col.textAlign = args.value;
+        });
+        grid.refreshColumns();
+    }
+</script>
+<div style="display: flex">
+    <label style="padding: 10px 10px 26px 0">Align the text for columns :</label>
+    <span style="height:fit-content">
+        @Html.EJS().DropDownList("alignmentDropdown").DataSource(new[]{
+        new { text = "Left", value = "Left" },
+        new { text = "Right", value = "Right" },
+        new { text = "Center", value = "Center" },
+        new { text = "Justify", value = "Justify" }
+        }).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "text", Value = "value" }).Index(0).Width("100").Change("changeAlignment").Render()
+    </span>
+</div>
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).HeaderTextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).HeaderTextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).HeaderTextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Format("yMd").Add();
-   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Justify).HeaderTextAlign(Syncfusion.EJ2.Grids.TextAlign.Justify).Add();
-
-}).Render()
+    col.Field("OrderID").HeaderText("Order ID").Type("number").Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Type("string").Width("90").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Type("date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Format("yMd").Width("140").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Type("string").Width("120").Add();
+}).Height("315").Render()

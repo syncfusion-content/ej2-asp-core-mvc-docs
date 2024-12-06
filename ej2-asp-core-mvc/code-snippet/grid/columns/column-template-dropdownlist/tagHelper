@@ -1,0 +1,28 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" QueryCellInfo="dropdown" height=315>            
+    <e-grid-columns>               
+            <e-grid-column field="OrderID" headerText="Order ID" textAlign= "Right" width="90"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" width="90" format= "C2"></e-grid-column>
+            <e-grid-column field="OrderStatus" headerText="Order Status" template="#columnTemplate" width="120"></e-grid-column>           
+    </e-grid-columns>
+</ejs-grid>
+
+<script type="text/x-template" id="columnTemplate" >
+ <div id="dropElement" ></div>
+</script>
+
+<script>
+let dropData = ['Order Placed', 'Processing', 'Delivered'];
+
+function dropdown(args) {
+  if (args.column.field === 'OrderStatus') {
+      let drop = new ej.dropdowns.DropDownList({
+          dataSource: dropData,
+          value: args.data['OrderStatus'],
+          popupHeight: 150,
+          popupWidth: 150,
+      });
+      drop.appendTo(args.cell.querySelector('#dropElement'));
+  }
+}
+</script>
