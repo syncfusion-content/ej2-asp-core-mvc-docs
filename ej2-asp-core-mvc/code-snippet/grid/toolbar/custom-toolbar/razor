@@ -12,11 +12,7 @@
 }).AllowGrouping(true).GroupSettings(group => { group.Columns(new string[] { "CustomerID" }); }).Toolbar(toolbarItems).Render();
 <script>
     function toolbarClick(args) {
-        if (args.item.id === 'expandall') {
-            this.groupModule.expandAll();
-        }
-        if (args.item.id === "collapseall") {
-            this.groupModule.collapseAll();
-        }
+        if (args.item.id === 'expandall') this.groupModule.expandAll();
+        else if (args.item.id === "collapseall") this.groupModule.collapseAll();
     }
 </script>

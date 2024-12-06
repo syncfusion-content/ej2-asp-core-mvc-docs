@@ -20,10 +20,9 @@
     function toolbarClick(args)
     {
         var grid = document.getElementById("grid").ej2_instances[0];
-        if (args.item.id === 'Click') {
-            document.getElementById("message").innerText= 'Custom Toolbar Clicked';
-        }
+        if (args.item.id === 'Click')
+           document.getElementById("message").innerText= 'Custom Toolbar Clicked';
         else
-         document.getElementById("message").innerText = '';
+          document.getElementById("message").innerText = '';
     }
 </script>

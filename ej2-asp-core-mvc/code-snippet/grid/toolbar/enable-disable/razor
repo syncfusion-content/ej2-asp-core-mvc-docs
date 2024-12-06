@@ -12,12 +12,8 @@
 <script>
     function toolbarClick(args){
         var grid = document.getElementById("grid").ej2_instances[0];
-        if (args.item.id === 'grid_Collapse') {
-            grid.groupModule.collapseAll();
-        }
-        if (args.item.id === 'grid_Expand') {
-            grid.groupModule.expandAll();
-        }
+        if (args.item.id === 'grid_Collapse') grid.groupModule.collapseAll();
+        else if (args.item.id === 'grid_Expand') grid.groupModule.expandAll();
     }
     function onSwitchChange(args)
     {       

@@ -11,15 +11,10 @@
    col.Field("Country").HeaderText("Country").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
    col.Field("PostalCode").HeaderText("PostalCode").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("140").Add();
 }).AllowGrouping(true).GroupSettings(group => { group.Columns(new string[] { "FirstName" }); }).Toolbar(toolbarItems).Render();
-
 <script>
     function toolbarClick(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
-        if (args.item.id === 'expandall') {
-            grid.groupModule.expandAll();
-        }
-        if (args.item.id === "collapseall") {
-            grid.groupModule.collapseAll();
-        }
+        if (args.item.id === 'expandall') grid.groupModule.expandAll();
+        else if (args.item.id === "collapseall") grid.groupModule.collapseAll();
     }
 </script>
