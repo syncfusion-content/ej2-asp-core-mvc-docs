@@ -1,0 +1,51 @@
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowTextWrap(true).Created("created").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").ValidationRules(new { required = "true" }).Width("100").Add();
+    col.Field("Freight").HeaderText("Freight").ValidationRules(new { required = "true" }).Width("100").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("100").EditType("datepickeredit").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipAddress").HeaderText("Ship Address").Width(150).EditType("textarea").DisableHtmlEncode(false).Edit(new { create = "createShipAddressHandler", read = "readShipAddressHandler", destroy = "destroyShipAddressHandler", write = "writeShipAddressHandler" }).Add();
+
+}).EditSettings(edit => edit.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel"}).Render()
+
+
+<script>
+    function created() {
+        this.keyConfigs.enter = '';
+    }
+    function onFocus(args) {
+        ((args.event).target).addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.stopPropagation();
+            }
+        });
+    }
+</script>
+
+<script>
+    var richTextEditorElement;
+    var richTextEditorObj;
+
+    function createShipAddressHandler(args) {
+        richTextEditorElement = document.createElement('textarea');
+        return richTextEditorElement;
+    }
+    function readShipAddressHandler() {
+        return richTextEditorObj.value;
+    }
+    function destroyShipAddressHandler() {
+        richTextEditorObj.destroy();
+    }
+    function writeShipAddressHandler(args) {
+        var rowData = args.rowData;
+        richTextEditorObj = new ej.richtexteditor.RichTextEditor({
+            value: rowData.ShipAddress,
+            focus: onFocus,
+            change: function (e) {
+                rowData.ShipAddress = e.value;
+            }
+        });
+        richTextEditorObj.appendTo(richTextEditorElement);
+    }
+</script>

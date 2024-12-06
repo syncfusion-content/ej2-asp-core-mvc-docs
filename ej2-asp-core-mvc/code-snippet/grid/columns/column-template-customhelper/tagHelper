@@ -1,0 +1,17 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="315">
+    <e-grid-columns> 
+            <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" width="90" template="#template"  textAlign="Right" format="C2"></e-grid-column>
+            <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="120"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script type="text/x-template" id="template">
+    ${ formatCurrency(data.Freight) }
+</script>
+<script>
+    function formatCurrency(value) {
+        return '₹ ' + value.toFixed(3);
+    }
+</script>

@@ -116,8 +116,8 @@ The following example demonstrates how to enable the lazy load grouping with inf
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/grouping/lazy-load-grouping-scroll/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="lazy-load.cs" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load.cs %}
+{% highlight c# tabtitle="lazy-load-grouping-scroll.cs" %}
+{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load-grouping-scroll.cs %}
 {% endhighlight %}
 {% endtabs %}
 
