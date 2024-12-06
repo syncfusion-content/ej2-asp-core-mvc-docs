@@ -7,6 +7,6 @@
          <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
          <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
          <e-grid-column field="Freight" headerText="Freight" textAlign="Right" width="90" format="@numberFormatOptions"></e-grid-column>
-         <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" width="120" format="@dateFormatOptions"></e-grid-column>
+         <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" width="120" type="date" format="@dateFormatOptions"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
