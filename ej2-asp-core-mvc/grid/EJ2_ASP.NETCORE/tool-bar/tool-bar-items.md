@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Toolbar items in ASP.NET CORE  Grid component
+# Toolbar items in ASP.NET Core Grid component
 
-The Syncfusion ASP.NET CORE  Grid offers a flexible toolbar that enables the addition of custom toolbar items or modification of existing ones. This customizable toolbar is positioned above the grid, providing a convenient way to access various actions and functionalities
+The Syncfusion ASP.NET Core Grid offers a flexible toolbar that enables the addition of custom toolbar items or modification of existing ones. This customizable toolbar is positioned above the grid, providing a convenient way to access various actions and functionalities
 
 ## Built-in toolbar items
 
-Built-in toolbar items in the Syncfusion ASP.NET CORE  Grid component involves utilizing pre-defined actions to perform standard operations within the Grid.
+Built-in toolbar items in the Syncfusion ASP.NET Core Grid component involves utilizing pre-defined actions to perform standard operations within the Grid.
 
 These items can be added by defining the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property as a collection of built-in items. Each item is rendered as a button with an icon and text. The following table lists the built-in toolbar items and their respective actions.
 
@@ -76,7 +76,7 @@ This is demonstrated in the following sample:
 
 ### Customize the built-in toolbar items
 
-The Syncfusion ASP.NET CORE  Grid component allows you to customize the built-in toolbar items to meet your specific requirements. This can include adding, removing, or modifying toolbar items, as well as handling custom actions when toolbar buttons are clicked.
+The Syncfusion ASP.NET Core Grid component allows you to customize the built-in toolbar items to meet your specific requirements. This can include adding, removing, or modifying toolbar items, as well as handling custom actions when toolbar buttons are clicked.
 
 To customize the built-in toolbar items, you can use the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event of the grid.
 
@@ -95,7 +95,7 @@ The following example demonstrate how to customize the toolbar by disabling and 
 
 ## Custom toolbar items
 
-Adding custom toolbar items to the Syncfusion ASP.NET CORE  Grid involves incorporating personalized functionality into the toolbar.
+Adding custom toolbar items to the Syncfusion ASP.NET Core Grid involves incorporating personalized functionality into the toolbar.
 
 Custom toolbar items can be added to the Grid component by defining the [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property as a collection of `ItemModel` objects. These objects define the custom items and their corresponding actions. The actions for the customized toolbar items are defined in the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event.
 
@@ -118,7 +118,7 @@ By default, custom toolbar items are positioned on the **left** side of the tool
 
 ## Both built-in and custom items in toolbar
 
-Built-in and custom items in a toolbar within the Syncfusion ASP.NET CORE  Grid provides the flexibility to create a customized toolbar with a combination of standard actions and custom actions.
+Built-in and custom items in a toolbar within the Syncfusion ASP.NET Core Grid provides the flexibility to create a customized toolbar with a combination of standard actions and custom actions.
 
 To use both types of toolbar items, you can define the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property of the Grid as an array that includes both built-in and custom items. The built-in items are specified as strings, while the custom items are defined as objects with properties such as `text`, `prefixIcon`, and `id` within the toolbar component.
 
@@ -137,7 +137,7 @@ The following example demonstrates, how to use both built-in and custom toolbar 
 
 ## Custom toolbar items in a specific position
 
-Customizing the position of a custom toolbar within the Syncfusion ASP.NET CORE  Grid involves modifying the default placement of the custom toolbar items. This enables you to precisely control the positioning of each custom toolbar item according to your specific requirements and desired layout within the Grid.
+Customizing the position of a custom toolbar within the Syncfusion ASP.NET Core Grid involves modifying the default placement of the custom toolbar items. This enables you to precisely control the positioning of each custom toolbar item according to your specific requirements and desired layout within the Grid.
 
 By default, custom toolbar items in Grid component are aligned on the left side of the toolbar. However, you have the ability to modify the position of the custom toolbar items by utilizing the `align` property of the `ItemModel`.
 

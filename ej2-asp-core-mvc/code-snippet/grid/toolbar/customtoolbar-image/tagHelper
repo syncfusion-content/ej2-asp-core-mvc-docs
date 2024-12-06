@@ -40,7 +40,7 @@
         height: 35px;
         width: 55px;
     }
-    .e-toolbar .e-toolbar-item > * {
+    .e-grid .e-toolbar .e-toolbar-item > * {
         text-overflow: ellipsis;
         height: 35px;
     }

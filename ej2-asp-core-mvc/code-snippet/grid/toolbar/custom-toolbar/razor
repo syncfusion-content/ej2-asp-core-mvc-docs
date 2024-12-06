@@ -1,7 +1,7 @@
 @{
     List<object> toolbarItems = new List<object>();
     toolbarItems.Add(new { text= "Expand All", tooltipText= "Expand All", prefixIcon= "e-expand", id= "expandall" });
-    toolbarItems.Add(new { text= "Collapse All", tooltipText= "collection All", prefixIcon= "e-collapse-2", id= "collapseall", align= "Right"  });
+    toolbarItems.Add(new { text= "Collapse All", tooltipText= "Collapse All", prefixIcon= "e-collapse-2", id= "collapseall", align= "Right"  });
 }
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).ToolbarClick("toolbarClick").Height("348px").Columns(col =>
 {

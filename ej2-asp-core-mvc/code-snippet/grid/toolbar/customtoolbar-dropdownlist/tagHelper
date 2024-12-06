@@ -25,18 +25,10 @@
     function onChange(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
         var dropDownObject = document.getElementById("dropDown").ej2_instances[0];
-
         let selectedRow = grid.getSelectedRecords()[0];
-
-        if (args.itemData.text === 'Update') {
-            grid.endEdit();
-        }
-        if (args.itemData.text === 'Edit') {
-            grid.startEdit();
-        }
-        if (args.itemData.text === 'Delete') {
-            grid.deleteRecord(selectedRow);
-        }
+        if (args.itemData.text === 'Update') grid.endEdit();
+        else if (args.itemData.text === 'Edit') grid.startEdit();
+        else if (args.itemData.text === 'Delete') grid.deleteRecord(selectedRow);
         dropDownObject.value = '';
         dropDownObject.placeholder = args.itemData.text;
     }

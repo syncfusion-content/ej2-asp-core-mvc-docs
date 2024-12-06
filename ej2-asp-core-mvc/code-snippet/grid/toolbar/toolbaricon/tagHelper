@@ -8,7 +8,8 @@
     </e-grid-columns>
 </ejs-grid>
 <style>
-    .e-toolbar .e-tbar-btn-text, .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
-        display: none;
+    .e-grid .e-toolbar .e-tbar-btn-text, 
+    .e-grid .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
+        display: none;   
     }
 </style>
