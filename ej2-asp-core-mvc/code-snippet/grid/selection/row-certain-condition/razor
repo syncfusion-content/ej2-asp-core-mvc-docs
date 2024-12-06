@@ -1,0 +1,23 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).AllowPaging().DataBound("dataBound").RowDataBound("rowDataBound").SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).Mode(Syncfusion.EJ2.Grids.SelectionMode.Row)).Render()
+<script>
+   let cellIndex=[];
+   function rowDataBound(args) {
+      if (args.data['EmployeeID'] > 3) {
+         cellIndex.push(parseInt(args.row.getAttribute('data-rowindex'), 10));
+      }
+   }
+   function dataBound() {
+      var grid = document.getElementById("grid").ej2_instances[0];
+      if (cellIndex.length) {
+         grid.selectRows(cellIndex);
+         cellIndex = [];
+      }
+   }
+</script>

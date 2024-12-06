@@ -1,0 +1,26 @@
+<div style="padding-bottom: 20px">
+    <div>
+        <label style="padding: 30px 5px 0 0;font-weight: bold">Enter the column index:</label>
+        @Html.EJS().TextBox("inputTextBox").Width("120px").Render()
+    </div>
+    <div style="padding: 10px 0 0px 173px">
+        @Html.EJS().Button("buttons").CssClass("e-primary").Content("Select Columns").Render()
+    </div>
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).SelectionSettings(select => select.AllowColumnSelection(true).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
+<script>
+    document.getElementById('buttons').onclick = function (args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        let startIndex = parseInt(document.getElementById("inputTextBox").ej2_instances[0].value, 10); 
+        if (!isNaN(startIndex) ) {
+            grid.selectionModule.selectColumnWithExisting(startIndex);
+        }
+    };
+</script>

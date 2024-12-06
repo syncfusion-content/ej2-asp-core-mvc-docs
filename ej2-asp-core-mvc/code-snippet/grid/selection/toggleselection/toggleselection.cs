@@ -1,8 +1,5 @@
- public IActionResult Index()
- {
-   var orders = OrderDetails.GetAllRecords();
-   ViewBag.datasource = orders;            
+public IActionResult Index()
+{
+   ViewBag.dataSource = OrderDetails.GetAllRecords();        
    return View();
- }
-
-      
+}
