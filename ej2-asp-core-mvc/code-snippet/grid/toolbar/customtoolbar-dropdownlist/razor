@@ -1,0 +1,32 @@
+@{
+    var dropDownData = new[] {
+        new { value = "Edit", text = "Edit" },
+        new { value = "Delete", text = "Delete" },
+        new { value = "Update", text = "Update" }
+    };
+}
+<div style="padding-bottom: 20px; display: flex">
+    <label style="padding: 5px 10px 0 0;font-weight: bold"> Change the value:</label>
+    <span style="height:fit-content">
+        @Html.EJS().DropDownList("dropDown").Width("150px").Change("onChange").DataSource(dropDownData).Placeholder("Select a value").Render()
+    </span>
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Render();
+<script>
+    function onChange(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        var dropDownObject = document.getElementById("dropDown").ej2_instances[0];
+        let selectedRow = grid.getSelectedRecords()[0];
+        if (args.itemData.text === 'Update') grid.endEdit();
+        else if (args.itemData.text === 'Edit') grid.startEdit();
+        else grid.deleteRecord(selectedRow);
+        dropDownObject.value = '';
+        dropDownObject.placeholder = args.itemData.text;
+    } 
+</script>
