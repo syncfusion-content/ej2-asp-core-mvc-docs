@@ -1,0 +1,78 @@
+@using Syncfusion.EJ2
+@{
+    var button = new
+    {
+        content = "Okay",
+        isPrimary = true
+    };
+}
+
+    <div class="col-lg-12 control-section dialog-target" id="target" >
+
+        <ejs-button id="dialogWithHeader" content="Open with header" class="e-control e-btn e-lib"></ejs-button>
+        <ejs-button id="dialogWithoutHeader" content="Open without header" class="e-control e-btn e-lib"></ejs-button>
+
+        <ejs-dialog id="default_dialog" width="500px" target="#target" open="dialogOpen"
+                    close="dialogClose" showCloseIcon="false" header="Software Update" created="modalCreated" visible="false">
+
+            <e-content-template>
+
+                <p>Your current software version is up to date.</p>
+
+            </e-content-template>
+
+            <e-dialog-buttons>
+
+                <e-dialog-dialogbutton buttonModel="button" click="dlgButtonClick"></e-dialog-dialogbutton>
+
+            </e-dialog-buttons>
+
+        </ejs-dialog>
+    </div>
+
+
+<style>
+    .e-dialog.e-lib.e-popup{
+        max-height: 400px !important;
+    }
+    .dialog-target {
+      min-height: 350px;
+    }
+</style>
+
+    <script>
+        var DlgHeader;
+        var dialogObj;
+
+         function modalCreated() {
+            dialogObj = this;
+         }
+
+         function modalBtnClick(withHeader) {       
+            document.querySelector(".e-dlg-header-content .e-dlg-header").textContent =  withHeader ? 'Software Update' : '';
+            DlgHeader = withHeader;
+            dialogObj.show();
+          }
+
+        var btnElementHeader = document.getElementById("dialogWithHeader");
+        btnElementHeader.addEventListener('click', function () {modalBtnClick(true)});
+
+          var btnElementWithoutHeader = document.getElementById("dialogWithoutHeader");
+         btnElementWithoutHeader.addEventListener('click', function () {modalBtnClick(false)});
+
+        function dialogClose() {
+            var headerElement = document.getElementsByClassName('e-dlg-header-content')[0];
+            if (headerElement) {
+                headerElement.style.display = '';
+            }     
+        }
+        function dialogOpen() {
+            var headerElement = document.getElementsByClassName('e-dlg-header-content')[0];
+            if (!DlgHeader && headerElement) {
+               headerElement.style.display = 'none';
+            } 
+        }
+        function dlgButtonClick() {
+                dialogObj.hide();
+        }
+    </script>
