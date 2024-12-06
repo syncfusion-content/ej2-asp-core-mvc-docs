@@ -13,7 +13,7 @@ documentation: ug
 
 ***Installing with UI***
 
-The steps below show how to install the Essential Studio&reg; ASP . NET MVC - EJ2 installer.
+The steps below show how to install the Essential Studio<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 installer.
 
 1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
@@ -83,11 +83,11 @@ The steps below show how to install the Essential Studio&reg; ASP . NET MVC - EJ
 
 6. After installing, click the **Launch Control Panel** link to open the Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel.
 
-7. Click the Finish button. Your system has been installed with the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio&reg; ASP . NET MVC - EJ2 product.
+7. Click the Finish button. Your system has been installed with the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 product.
 
 ***Installing in silent mode***
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio&reg; ASP . NET MVC - EJ2 Installer supports installation and uninstallation via the command line.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 Installer supports installation and uninstallation via the command line.
 
 ***Command Line Installation***
 
@@ -111,9 +111,9 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     **Example:** "D:\Temp\syncfusionessentialaspnetmvc-js2x.x.x.x.exe"/Install silent/UNLOCKKEY:"*product unlock key*"/log "C:\Temp\EssentialStudioPlatform.log"/InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
-7. Essential Studio&reg; for ASP . NET MVC (Essential JS2) is installed.
+7. Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP . NET MVC (Essential JS2) is installed.
 
-    N> x.x.x.x should be replaced with the Essential Studio&reg; version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
+    N> x.x.x.x should be replaced with the Essential Studio<sup style="font-size:70%">&reg;</sup> version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
 
 ## Command Line Uninstallation
 
@@ -135,4 +135,4 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:
 
     **Example:** "D:\Temp\syncfusionessentialaspnetmvc-js2_x.x.x.x.exe" /uninstall silent
 
-7. Essential Studio&reg; for ASP . NET MVC (Essentials JS2) is uninstalled.
+7. Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP . NET MVC (Essentials JS2) is uninstalled.

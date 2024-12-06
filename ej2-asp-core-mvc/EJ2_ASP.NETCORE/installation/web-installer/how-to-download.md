@@ -36,7 +36,7 @@ Our 30-day trial can be downloaded in two ways.
 
 5. Before the trial expires, you can download the trial installer at any time from your registered account's [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. (See the screenshot below)
 
-6. Click the Download (element 1 in the screenshot below) button to get the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio&reg; ASP. NET Core - EJ2 web installer.
+6. Click the Download (element 1 in the screenshot below) button to get the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP. NET Core - EJ2 web installer.
 
     ![Start Trial download](images/start-trial-download-installer.png)
 

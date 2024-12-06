@@ -36,7 +36,7 @@ If you have a Syncfusion<sup style="font-size:70%">&reg;</sup> account associate
 
 ### Expired License
 
-If you have a Syncfusion<sup style="font-size:70%">&reg;</sup> account with an expired license, your license subscription must be renewed in order to obtain a valid license key for the latest Essential Studio&reg; version. Meanwhile, a temporary license key with a 5-day validity period will be generated.
+If you have a Syncfusion<sup style="font-size:70%">&reg;</sup> account with an expired license, your license subscription must be renewed in order to obtain a valid license key for the latest Essential Studio<sup style="font-size:70%">&reg;</sup> version. Meanwhile, a temporary license key with a 5-day validity period will be generated.
 
 ![Expired License](images/expired-license.png)
 

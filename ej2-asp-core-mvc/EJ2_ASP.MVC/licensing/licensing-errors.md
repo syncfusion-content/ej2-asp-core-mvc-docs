@@ -19,7 +19,7 @@ Licensing error pop up is displayed with various messages under different circum
 
 The following error message will be shown if a Syncfusion<sup style="font-size:70%">&reg;</sup> license key has not been registered in your application or if the trial key has expired after 30 days. 
 
-**Error message :** This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio&reg; You should include the valid license key to remove the license validation message permanently.
+**Error message :** This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> You should include the valid license key to remove the license validation message permanently.
 
 ![License key not registered](images/licensing-error-7.png)
 
@@ -53,7 +53,7 @@ If the application is registered with an invalid key, another version of license
 
 The following error message will be shown if a Syncfusion<sup style="font-size:70%">&reg;</sup> license key has not been registered in your application.
 
-**Error message :** This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio&reg; Include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#license-key-not-registered) for more information.
+**Error message :** This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> Include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#license-key-not-registered) for more information.
 
 **Solution:**
 

@@ -28,7 +28,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> provides the following supp
 
 1. [Project-Template](create-project):  Creates the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential JS 2) application by adding the required Essential JS 2 components.
 2. [Convert project](convert-project): Converts an existing ASP.NET Core application into a Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential JS 2) application by adding the required Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies and resource files.
-3. [Upgrade project](upgrade-project): Upgrades the existing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential JS 2) application from one Essential Studio&reg; version to another version.
+3. [Upgrade project](upgrade-project): Upgrades the existing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential JS 2) application from one Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version.
 4. [Creator sample](create-samples): Creates the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential JS2) application with the sample code of required controls and features.
 
 ### No project selected in Visual Studio

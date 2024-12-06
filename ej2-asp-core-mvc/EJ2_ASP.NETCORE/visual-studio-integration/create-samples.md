@@ -20,11 +20,11 @@ The following steps is used to create the Syncfusion<sup style="font-size:70%">&
 
     **Option 1:**
 
-    Click **Extensions->Syncfusion<sup style="font-size:70%">&reg;</sup> Menu** and choose **Essential Studio&reg; for ASP.NET Core (EJ2) > Launch Sample Creator…** in **Visual Studio.**
+    Click **Extensions->Syncfusion<sup style="font-size:70%">&reg;</sup> Menu** and choose **Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core (EJ2) > Launch Sample Creator…** in **Visual Studio.**
 
     ![sample creator](images/sample-creator_latest.png)
 
-    N> In Visual Studio 2017, Click Syncfusion<sup style="font-size:70%">&reg;</sup> Menu and choose Essential Studio&reg; for ASP.NET Core > Launch Sample Creator…
+    N> In Visual Studio 2017, Click Syncfusion<sup style="font-size:70%">&reg;</sup> Menu and choose Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core > Launch Sample Creator…
 
     ![sample creator](images/sample-creator.png)
 

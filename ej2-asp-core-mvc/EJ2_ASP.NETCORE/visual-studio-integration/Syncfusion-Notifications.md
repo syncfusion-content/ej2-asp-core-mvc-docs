@@ -10,9 +10,9 @@ documentation: ug
 
 # Syncfusion<sup style="font-size:70%">&reg;</sup> Notifications
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> enhances the user experience in ASP.NET Core applications through notification messages. These notifications cover various aspects, including alerts for trial applications when utilizing Syncfusion<sup style="font-size:70%">&reg;</sup> trial assemblies, updates regarding the availability of the latest Syncfusion<sup style="font-size:70%">&reg;</sup> NuGet package, and notifications regarding newer releases of Essential Studio&reg; By keeping users informed, Syncfusion<sup style="font-size:70%">&reg;</sup> ensures that developers stay updated with Syncfusion<sup style="font-size:70%">&reg;</sup> latest features and enhancements.
+Syncfusion<sup style="font-size:70%">&reg;</sup> enhances the user experience in ASP.NET Core applications through notification messages. These notifications cover various aspects, including alerts for trial applications when utilizing Syncfusion<sup style="font-size:70%">&reg;</sup> trial assemblies, updates regarding the availability of the latest Syncfusion<sup style="font-size:70%">&reg;</sup> NuGet package, and notifications regarding newer releases of Essential Studio<sup style="font-size:70%">&reg;</sup> By keeping users informed, Syncfusion<sup style="font-size:70%">&reg;</sup> ensures that developers stay updated with Syncfusion<sup style="font-size:70%">&reg;</sup> latest features and enhancements.
 
-N> The Syncfusion<sup style="font-size:70%">&reg;</sup> Notification feature is available from Essential Studio&reg; v22.1.34.
+N> The Syncfusion<sup style="font-size:70%">&reg;</sup> Notification feature is available from Essential Studio<sup style="font-size:70%">&reg;</sup> v22.1.34.
 
 ## Notification Configuration
 
@@ -36,9 +36,9 @@ If you have installed lower versions of Syncfusion<sup style="font-size:70%">&re
 
 ![NuGet Notification](images/core-nuget.png)
 
-**3. Newer Essential Studio&reg; Build Notification**
+**3. Newer Essential Studio<sup style="font-size:70%">&reg;</sup> Build Notification**
 
-If you use older versions of Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies or NuGet packages from **Essential Studio&reg; ASP.NET Core - EJ2,** Syncfusion<sup style="font-size:70%">&reg;</sup> will notify you about new releases for the latest Essential Studio&reg; build. Updating to the newest version ensures access to recent features, enhancements, and important updates, maximizing the capabilities of Syncfusion<sup style="font-size:70%">&reg;</sup> in your ASP.NET Core development projects.
+If you use older versions of Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies or NuGet packages from **Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2,** Syncfusion<sup style="font-size:70%">&reg;</sup> will notify you about new releases for the latest Essential Studio<sup style="font-size:70%">&reg;</sup> build. Updating to the newest version ensures access to recent features, enhancements, and important updates, maximizing the capabilities of Syncfusion<sup style="font-size:70%">&reg;</sup> in your ASP.NET Core development projects.
 
 ![Build Notification](images/core-build.png)
 

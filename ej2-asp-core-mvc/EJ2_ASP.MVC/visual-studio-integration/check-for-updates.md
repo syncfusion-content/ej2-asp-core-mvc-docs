@@ -10,7 +10,7 @@ documentation: ug
 
 # Check for Updates in ASP.NET MVC Application
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides the check for update extensions to find latest version of essential release was available, if it was available then provide option update most recent version of the Essential Studio&reg; release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides the check for update extensions to find latest version of essential release was available, if it was available then provide option update most recent version of the Essential Studio<sup style="font-size:70%">&reg;</sup> release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
 
 N> The Syncfusion<sup style="font-size:70%">&reg;</sup> Check for updates is available from v17.1.0.32.
 
@@ -28,4 +28,4 @@ You can check updates availability in Visual Studio, and then install the update
 
     ![update dialog](images/update-dialog.png)
 
-3. You can download the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio&reg; from the Syncfusion<sup style="font-size:70%">&reg;</sup> website by selecting **Download**.
+3. You can download the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> from the Syncfusion<sup style="font-size:70%">&reg;</sup> website by selecting **Download**.

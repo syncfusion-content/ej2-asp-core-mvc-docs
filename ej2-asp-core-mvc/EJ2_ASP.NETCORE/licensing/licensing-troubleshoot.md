@@ -10,7 +10,7 @@ documentation: ug
 
 # Syncfusion<sup style="font-size:70%">&reg;</sup> Licensing FAQ
 
-## Is an internet connection required for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio&reg; license validation?
+## Is an internet connection required for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> license validation?
 
 * Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done offline during application execution and does not require internet access. 
 

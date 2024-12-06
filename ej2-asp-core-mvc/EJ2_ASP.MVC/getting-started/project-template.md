@@ -25,7 +25,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 * .Net Framework 4.5 and above.
 * ASP.NET MVC 5
 * Visual Studio 2017
-* Essential Studio&reg; for [ASP.NET MVC (Essential JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2/)
+* Essential Studio<sup style="font-size:70%">&reg;</sup> for [ASP.NET MVC (Essential JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2/)
 
 ### Create ASP.NET MVC 5 web application
 
@@ -87,7 +87,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 * .Net Framework 4.5 and above.
 * ASP.NET MVC 4
 * Visual Studio 2017
-* Essential Studio&reg; for [ASP.NET MVC (Essential JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2/)
+* Essential Studio<sup style="font-size:70%">&reg;</sup> for [ASP.NET MVC (Essential JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2/)
 
 ### Create ASP.NET MVC 4 web application
 

@@ -29,7 +29,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> provides the following supports
 
 [Convert Project](./visual-studio-extensions/convert-project): Converts an existing ASP.NET MVC application into a Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2) application by adding the required Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies and resource files.
 
-[Upgrade Project](./visual-studio-extensions/upgrade-project): Upgrades the existing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2) application from one Essential Studio&reg; version to another version.
+[Upgrade Project](./visual-studio-extensions/upgrade-project): Upgrades the existing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2) application from one Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version.
 
 [Creator Sample](./visual-studio-extensions/create-sample): Creates the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS2) application with the sample code of required controls and features.
 

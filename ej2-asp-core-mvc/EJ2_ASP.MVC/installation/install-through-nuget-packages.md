@@ -14,7 +14,7 @@ documentation: ug
 
 **NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion<sup style="font-size:70%">&reg;</sup> publishing all ASP.NET MVC JS2  NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22AspNet.MVC%20EJ2%22+syncfusion). The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC JS2 NuGet packages can be used without installing the Syncfusion<sup style="font-size:70%">&reg;</sup> setup by Syncfusion<sup style="font-size:70%">&reg;</sup> Installer. You can simply exploit the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC JS2 NuGet packages in ASP.NET MVC application to develop with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC JS2 components.
 
-N> The Syncfusion.EJ2.MVC5 NuGet package, which contains all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC JS2 components in a single package, is available beginning with v16.1.0.24 (Essential Studio&reg; 2018 Volume 1).
+N> The Syncfusion.EJ2.MVC5 NuGet package, which contains all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC JS2 components in a single package, is available beginning with v16.1.0.24 (Essential Studio<sup style="font-size:70%">&reg;</sup> 2018 Volume 1).
 
 ## Installation using Package Manager UI
 

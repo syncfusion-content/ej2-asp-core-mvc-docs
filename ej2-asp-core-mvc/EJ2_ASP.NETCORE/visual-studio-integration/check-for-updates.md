@@ -10,7 +10,7 @@ documentation: ug
 
 # Check for Updates
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides the check for update extensions to find if the latest version of the essential release is available, and if it is, the option to update the most recent version of the Essential Studio&reg; release is provided. By installing the latest version, you will always get the most up-to-date features, fixes, and improvements.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides the check for update extensions to find if the latest version of the essential release is available, and if it is, the option to update the most recent version of the Essential Studio<sup style="font-size:70%">&reg;</sup> release is provided. By installing the latest version, you will always get the most up-to-date features, fixes, and improvements.
 
 N> The Syncfusion<sup style="font-size:70%">&reg;</sup> Check for updates is available from v17.1.0.32.
 
@@ -28,4 +28,4 @@ You can check updates availability in Visual Studio, and then install the update
 
     ![update](images/update.png)
 
-3. You can download the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio&reg; from the Syncfusion<sup style="font-size:70%">&reg;</sup> website by selecting **Download**.
+3. You can download the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> from the Syncfusion<sup style="font-size:70%">&reg;</sup> website by selecting **Download**.

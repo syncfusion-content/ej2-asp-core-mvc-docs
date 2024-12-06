@@ -18,11 +18,11 @@ Use the following steps to create the Syncfusion<sup style="font-size:70%">&reg;
 
 1. Follow one of the options below to launch the ASP.NET MVC (Essential JS 2) Sample Creator application:
 
-    **Option 1:** Click **Extensions->Syncfusion<sup style="font-size:70%">&reg;</sup> Menu** and choose **Essential Studio&reg; for ASP.NET MVC (EJ2) > Launch Sample Creator…** in **Visual Studio**.
+    **Option 1:** Click **Extensions->Syncfusion<sup style="font-size:70%">&reg;</sup> Menu** and choose **Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET MVC (EJ2) > Launch Sample Creator…** in **Visual Studio**.
 
     ![launch sample creator](images/launch-sample-creator-latest.png)
 
-    N> In Visual Studio 2017 or lower, Click Syncfusion<sup style="font-size:70%">&reg;</sup> Menu and choose Essential Studio&reg; for ASP.NET MVC (EJ2) > Launch Sample Creator… in Visual Studio.
+    N> In Visual Studio 2017 or lower, Click Syncfusion<sup style="font-size:70%">&reg;</sup> Menu and choose Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET MVC (EJ2) > Launch Sample Creator… in Visual Studio.
 
     ![launch sample creator](images/launch-sample-creator.png)
 
