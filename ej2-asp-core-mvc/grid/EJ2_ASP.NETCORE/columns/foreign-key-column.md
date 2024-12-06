@@ -23,7 +23,7 @@ To enable and integrate the foreign key column in the ASP.NET Core Grid componen
 * `foreignKeyValue`: Specifies the field from the foreign data source that should be displayed in the grid as the related data.
 
 ```html
-    <e-grid-column field='EmployeeID' headerText='Employee ID' foreignKeyValue='FirstName' foreignKeyField='EmployeeID' [dataSource]='employeesData'></e-grid-column>
+    <e-grid-column field="EmployeeID" headerText="Employee ID" foreignKeyValue="FirstName" foreignKeyField="EmployeeID" dataSource="ViewBag.foreignData"></e-grid-column>
 ```
 
 >The `foreignKeyField` property should match the name of the field in the foreign data source that represents the foreign key relationship, and the `foreignKeyValue` property should specify the field from the foreign data source that should be displayed in the grid as the related data.
@@ -32,7 +32,7 @@ To enable and integrate the foreign key column in the ASP.NET Core Grid componen
 
 The Syncfusion Grid component provides a convenient way to bind local data to a foreign key column. This allows you to display related data from a local data source within the grid. Here's an example of how to bind local data to a Foreign Key column in Syncfusion Grid:
 
-In this example, **data** is the local data source for the Grid, and **employeeData** is the local data source for the foreign key column. The `field` property of the e-column component is set to **EmployeeID** which represents the foreign key value in the **data**. The `foreignKeyValue` property is set to **FirstName** which represents the field name in the **employeeData** that you want to display in the foreign key column.
+In this example, **data** is the local data source for the Grid, and **employeeData** is the local data source for the foreign key column. The `field` property of the e-grid-column component is set to **EmployeeID** which represents the foreign key value in the **data**. The `foreignKeyValue` property is set to **FirstName** which represents the field name in the **employeeData** that you want to display in the foreign key column.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -50,9 +50,9 @@ In this example, **data** is the local data source for the Grid, and **employeeD
 
 ## Binding remote data
 
-The Foreign key column in Syncfusion Grid allows you to bind remote data for a foreign key column. You can assign the service data as an instance of `DataManager` to the `dataSource` property, and provide the endpoint `URL` as the data source URL.
+The Foreign key column in Syncfusion Grid allows you to bind remote data for a foreign key column. You can assign the service data as an instance of `DataManager` instead of using the `dataSource` property, and provide the endpoint `URL` as the data source URL.
 
-This example demonstrates how to use the foreign key column with remote data binding using the `ODataV4Adaptor` in the grid:
+This example demonstrates how to use the foreign key column with remote data binding using the [ODataV4Adaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/data-binding/remote-data#odata-v4-adaptor---binding-odata-v4-service) in the grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

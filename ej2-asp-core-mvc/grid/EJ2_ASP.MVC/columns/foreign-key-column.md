@@ -52,7 +52,7 @@ In this example, **data** is the local data source for the Grid, and **employeeD
 
 The Foreign key column in Syncfusion Grid allows you to bind remote data for a foreign key column. You can assign the service data as an instance of `DataManager` to the `DataSource` property, and provide the endpoint `URL` as the data source URL.
 
-This example demonstrates how to use the foreign key column with remote data binding using the `ODataV4Adaptor` in the grid:
+This example demonstrates how to use the foreign key column with remote data binding using the [ODataV4Adaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/data-binding/remote-data#odata-v4-adaptor---binding-odata-v4-service) in the grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
