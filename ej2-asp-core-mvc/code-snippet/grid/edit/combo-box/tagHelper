@@ -1,0 +1,46 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
+    <e-grid-editsettings allowEditing="true" allowAdding="true" allowDeleting="true"></e-grid-editsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" editType="numericedit" validationRules="@(new { required= true,min=1, max=1000 })" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" editType="datepickeredit" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" edit="@(new {create = "createShipCountryHandler", read = "readShipCountryHandler", destroy = "destroyShipCountryHandler", write = "writeShipCountryHandler"})" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var comboBoxObj;
+    var comboBoxElement;
+    var selectDataSource = [
+        { text: 'Germany', value: 'Germany' },
+        { text: 'Brazil', value: 'Brazil' },
+        { text: 'Belgium', value: 'Belgium' },
+        { text: 'Switzerland', value: 'Switzerland' },
+        { text: 'Venezuela', value: 'Venezuela' },
+        { text: 'Austria', value: 'Austria' },
+        { text: 'Mexico', value: 'Mexico' },
+    ];
+
+    function createShipCountryHandler() {
+        comboBoxElement = document.createElement('input');
+        return comboBoxElement;
+    }
+    function readShipCountryHandler() {
+        return comboBoxObj.value;
+    }
+    function destroyShipCountryHandler() {
+        comboBoxObj.destroy();
+    }
+    function writeShipCountryHandler(args) {
+        var rowData = args.rowData;
+        comboBoxObj = new ej.dropdowns.ComboBox({
+            dataSource: selectDataSource,
+            value: rowData.ShipCountry,
+            change: function (e) {
+                rowData.ShipCountry = e.value;
+            }
+        })
+        comboBoxObj.appendTo(comboBoxElement);
+    }
+</script>
