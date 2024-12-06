@@ -1,0 +1,45 @@
+@{
+    var button = new
+    {
+        content = "Okay",
+        isPrimary = true
+    };
+}
+<div id='container' style="height:400px;">
+    <ejs-button id="normalbtn" content="Open"></ejs-button>
+    <ejs-dialog id='dialog' width="500px" open="dialogOpen"
+                    close="dialogClose" target="#container" created="modalCreated"  header="Dialog Header" >
+        <e-content-template>
+            <ejs-richtexteditor id="defaultRTE">
+
+            </ejs-richtexteditor>
+            </e-content-template>
+
+            <e-dialog-buttons>
+                <e-dialog-dialogbutton buttonModel="button" click="dlgButtonClick"></e-dialog-dialogbutton>
+            </e-dialog-buttons>
+</ejs-dialog>
+</div>
+
+<script>
+        var dialogObj;
+     
+        var btnElement = document.getElementById("normalbtn");
+        btnElement.addEventListener('click', function () {
+        dialogObj.show();
+        dialogObj.ej2_instances[0].show();
+        });
+        function modalCreated() {
+            dialogObj = this;
+        }
+         function dialogClose() {
+            dialogObj.hide();
+        }
+        function dialogOpen() {
+            var RTE = document.getElementById("defaultRTE").ej2_instances[0];
+            RTE.refreshUI();
+        }
+        function dlgButtonClick() {
+              dialogObj.hide();
+        }
+</script>
