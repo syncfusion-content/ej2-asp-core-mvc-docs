@@ -28,5 +28,5 @@
         else grid.deleteRecord(selectedRow);
         dropDownObject.value = '';
         dropDownObject.placeholder = args.itemData.text;
-    }
-</script>
+    } 
+</script> 
