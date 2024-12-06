@@ -1,0 +1,22 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" QueryCellInfo="queryCellInfo" enableHover= "false" height=315>            
+    <e-grid-columns>               
+            <e-grid-column field="LastName" headerText="Last Name" width="90"></e-grid-column>
+            <e-grid-column field="City" headerText="City" width="150"></e-grid-column>
+            <e-grid-column field="FirstName" headerText="First Name" template="#columnTemplate" width="90"></e-grid-column>           
+    </e-grid-columns>
+</ejs-grid>
+
+<script type="text/x-template" id="columnTemplate" >
+    <div id="chipElement" ></div>
+</script>
+
+<script>
+    function queryCellInfo(args) {
+  if (args.column.field === 'FirstName') {
+    let chip = new ej.buttons.ChipList({
+      text: args.data[args.column.field],
+    });
+    chip.appendTo(args.cell.querySelector('#chipElement'));
+  }
+}
+</script>
