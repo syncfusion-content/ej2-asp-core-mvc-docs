@@ -31,7 +31,7 @@ Here's an example of how to enable single row selection using properties:
 {% endhighlight %}
 {% endtabs %}
 
-![Single row selection](../../images/selection/row-single-selection.png)
+![Single row selection](../images/selection/row-single-selection.png)
 
 ## Multiple row selection 
 
@@ -50,7 +50,7 @@ Here's an example of how to enable multiple rows selection using properties:
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple row selection](../../images/selection/row-multiple.png)
+![Multiple row selection](../images/selection/row-multiple.png)
 
 ## Select row at initial rendering 
 
@@ -67,7 +67,7 @@ In the following example, it demonstrates how to select a row at initial renderi
 {% endhighlight %}
 {% endtabs %}
 
-![Select row at initial rendering](../../images/selection/row-initail-selection.png)
+![Select row at initial rendering](../images/selection/row-initail-selection.png)
 
 ## Select rows in any page based on index value 
 
@@ -88,7 +88,7 @@ The following example demonstrates how to select rows in any page based on index
 {% endhighlight %}
 {% endtabs %}
 
-![Select rows in any page based on index value](../../images/selection/row-selected-index.gif)
+![Select rows in any page based on index value](../images/selection/row-selected-index.gif)
 
 ## Multiple row selection by single click on row 
 
@@ -107,7 +107,7 @@ The following example demonstrates how to enable multiple row selection with a s
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple row selection by single click on row](../../images/selection/row-multiple-selection.gif)
+![Multiple row selection by single click on row](../images/selection/row-multiple-selection.gif)
 
 ## Select rows externally 
 
@@ -130,7 +130,7 @@ The following example demonstrates how to select a single row within the Grid by
 {% endhighlight %}
 {% endtabs %}
 
-![Single row selection](../../images/selection/row-single-method.png)
+![Single row selection](../images/selection/row-single-method.png)
 
 ### Multiple rows selection
 
@@ -149,7 +149,7 @@ The following example, demonstrates how to select multiple rows in the Grid by c
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple rows selection](../../images/selection/row-multiple-method.png)
+![Multiple rows selection](../images/selection/row-multiple-method.png)
 
 ### Range of rows selection 
 
@@ -168,7 +168,7 @@ The following example, demonstrates how to select a range of rows within the Gri
 {% endhighlight %}
 {% endtabs %}
 
-![Range of rows selection](../../images/selection/row-range-selection.png)
+![Range of rows selection](../images/selection/row-range-selection.png)
 
 ## Select grid rows based on certain condition
 
@@ -185,7 +185,7 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 {% endhighlight %}
 {% endtabs %}
 
-![Select grid rows based on certain condition](../../images/selection/row-certain-condition.png)
+![Select grid rows based on certain condition](../images/selection/row-certain-condition.png)
 
 ## How to get selected row indexes 
 
@@ -204,7 +204,7 @@ To achieve this, you can leverage the `getSelectedRowIndexes` method, which retu
 {% endhighlight %}
 {% endtabs %}
 
-![Get selected row indexes](../../images/selection/row-get-selected.png)
+![Get selected row indexes](../images/selection/row-get-selected.png)
 
 ## How to get selected records on various pages 
 
@@ -225,7 +225,7 @@ The following example demonstrates how to retrieve selected records from various
 {% endhighlight %}
 {% endtabs %}
 
-![Get selected records on various pages](../../images/selection/row-various-page.png)
+![Get selected records on various pages](../images/selection/row-various-page.png)
 
 > To persist the grid selection, it is necessary to define any one of the columns as a primary key using the [columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) property.
 
@@ -246,7 +246,7 @@ Here's an example that displays the selected row count using the `getSelectedRec
 {% endhighlight %}
 {% endtabs %}
 
-![Get selected records](../../images/selection/row-selected-records.png)
+![Get selected records](../images/selection/row-selected-records.png)
 
 ## Clear row selection programmatically 
 
@@ -265,7 +265,7 @@ The following example demonstrates how to clear row selection by calling the `cl
 {% endhighlight %}
 {% endtabs %}
 
-![Clear row selection programmatically ](../../images/selection/row-clear-selection.gif)
+![Clear row selection programmatically ](../images/selection/row-clear-selection.gif)
 
 ## Row selection events 
 
@@ -290,4 +290,4 @@ In the following example, row selection is canceled when the value of **Customer
 {% endhighlight %}
 {% endtabs %}
 
-![Row selection events ](../../images/selection/row-selection-events.gif)
+![Row selection events ](../images/selection/row-selection-events.gif)

@@ -26,7 +26,7 @@ Here's an example of how to enable column selection using `allowColumnSelection`
 {% endhighlight %}
 {% endtabs %}
 
-![Column Selection](../../images/selection/column-selection.png)
+![Column Selection](../images/selection/column-selection.png)
 
 ## Single column selection 
 
@@ -45,7 +45,7 @@ Here's an example of how to enable single column selection using `allowColumnSel
 {% endhighlight %}
 {% endtabs %}
 
-![Single column selection](../../images/selection/column-single.gif)
+![Single column selection](../images/selection/column-single.gif)
 
 ## Multiple column selection 
 
@@ -64,7 +64,7 @@ Here's an example of how to enable multiple column selection using `allowColumnS
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple column selection](../../images/selection/column-multiple.png)
+![Multiple column selection](../images/selection/column-multiple.png)
 
 ## Select columns externally 
 
@@ -89,7 +89,7 @@ The following example, demonstrates how to select a single column within the Gri
 {% endhighlight %}
 {% endtabs %}
 
-![Single column selection](../../images/selection/column-single-method.png)
+![Single column selection](../images/selection/column-single-method.png)
 
 ### Multiple column selection
 
@@ -110,7 +110,7 @@ The following example demonstrates how to select multiple columns in the Grid by
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple column selection](../../images/selection/column-multiple-method.png)
+![Multiple column selection](../images/selection/column-multiple-method.png)
 
 ### Range of column selection 
 
@@ -129,7 +129,7 @@ The following example demonstrates how to select a range of columns within the G
 {% endhighlight %}
 {% endtabs %}
 
-![Range of column selection](../../images/selection/column-range.png)
+![Range of column selection](../images/selection/column-range.png)
 
 ### Select with existing column 
 
@@ -148,7 +148,7 @@ The following example demonstrates how to select a column with an existing colum
 {% endhighlight %}
 {% endtabs %}
 
-![Select with existing column](../../images/selection/column-exisiting.gif)
+![Select with existing column](../images/selection/column-exisiting.gif)
 
 ##  Clear column selection programmatically 
 
@@ -167,7 +167,7 @@ In the following example, it demonstrates how to clear column selection by calli
 {% endhighlight %}
 {% endtabs %}
 
-![Clear column selection programmatically](../../images/selection/column-clear.gif)
+![Clear column selection programmatically](../images/selection/column-clear.gif)
 
 ## Column selection events 
 
@@ -192,4 +192,4 @@ In the following example, column selection is canceled when the value of `field`
 {% endhighlight %}
 {% endtabs %}
 
-![Column selection events](../../images/selection/column-events.gif)
+![Column selection events](../images/selection/column-events.gif)

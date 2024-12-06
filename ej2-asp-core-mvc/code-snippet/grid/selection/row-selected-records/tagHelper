@@ -13,7 +13,7 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-  let selectedRecordscount = 0;
+   let selectedRecordscount = 0;
    document.getElementById('buttons').onclick = function () {
         var grid = document.getElementById("grid").ej2_instances[0];
         selectedRecordscount = grid.getSelectedRecords().length;

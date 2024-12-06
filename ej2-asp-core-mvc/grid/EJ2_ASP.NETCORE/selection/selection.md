@@ -32,7 +32,7 @@ To select range of rows or cells or columns, press and hold the SHIFT key and cl
 {% endhighlight %}
 {% endtabs %}
 
-![Selection](../../images/selection/selection-type.png)
+![Selection](../images/selection/selection-type.png)
 
 > By default, the Grid will be rendered with only the basic features such as Grid rendering and selection. The default module, including the `SelectionService`, is automatically loaded. Therefore, there is no need to inject the `SelectionService` module separately as it will be injected by default.
 
@@ -59,7 +59,7 @@ The following example, demonstrates how to dynamically enable and change the `se
 {% endhighlight %}
 {% endtabs %}
 
-![Selection mode](../../images/selection/selection-mode.gif)
+![Selection mode](../images/selection/selection-mode.gif)
 
 ## Touch interaction
 
@@ -104,7 +104,7 @@ The following example demonstrates how to enable the toggle selection for both c
 {% endhighlight %}
 {% endtabs %}
 
-![Toggle selection](../../images/selection/selection-toggle.gif)
+![Toggle selection](../images/selection/selection-toggle.gif)
 
 > * If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
 >* Toggle selection is a feature that can be applied to all types of selections. When the `checkboxOnly` property is set to **true**, it restricts the ability to select or deselect rows or cells by clicking on them.
@@ -126,7 +126,7 @@ In the following example, it demonstrates how to clear all selection by calling 
 {% endhighlight %}
 {% endtabs %}
 
-![Clear all selection programmatically](../../images/selection/selection-clear.gif)
+![Clear all selection programmatically](../images/selection/selection-clear.gif)
 
 > In **Both** mode, if you call `clearCellSelection` first, it will clear cell selections, and then if you call `clearRowSelection`, it will clear row selections. The order of method calls determines which type of selection is cleared first.
 > To remove a specific selection in a row, cell, or column, utilize the following methods: clearRowSelection for clearing row selections, clearCellSelection for clearing cell selections, and clearColumnSelection for clearing column selections.
@@ -152,4 +152,4 @@ In the following example, it demonstrates how to enable the persist selection fe
 {% endhighlight %}
 {% endtabs %}
 
-![Persist selection](../../images/selection/selection-persist.gif)
+![Persist selection](../images/selection/selection-persist.gif)

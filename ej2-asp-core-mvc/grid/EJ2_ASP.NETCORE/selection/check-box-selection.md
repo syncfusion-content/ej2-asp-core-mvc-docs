@@ -25,7 +25,7 @@ Here's an example of how to enable check box selection using `type` property in 
 {% endhighlight %}
 {% endtabs %}
 
-![Check box Selection](../../images/selection/check-selection.png)
+![Check box Selection](../images/selection/check-selection.png)
 
 > By default selection is allowed by clicking a grid row or checkbox in that row. To allow selection only through checkbox, you can set [selectionSettings.checkboxOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CheckboxOnly) property to **true**.
 > Selection can be persisted on all the operations using [selectionSettings.persistSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property. For persisting selection on the Grid, any one of the column should be defined as a primary key using `columns.isPrimaryKey` property.
@@ -48,7 +48,7 @@ In the following example, it demonstrates how to dynamically enable and change t
 {% endhighlight %}
 {% endtabs %}
 
-![Checkbox selection mode](../../images/selection/checkbox-mode.gif)
+![Checkbox selection mode](../images/selection/checkbox-mode.gif)
 
 ## Hide selectall checkbox in column header
 
@@ -67,7 +67,7 @@ Here's an example of how to hide selectall checkbox in column header using empty
 {% endhighlight %}
 {% endtabs %}
 
-![Hide selectall checkbox in column header](../../images/selection/checkbox-hide.png)
+![Hide selectall checkbox in column header](../images/selection/checkbox-hide.png)
 
 ## Prevent specific rows from being selected in checkbox selection
 
@@ -86,7 +86,7 @@ In the following sample, the selection of specific rows has been prevented based
 {% endhighlight %}
 {% endtabs %}
 
-![Prevent specific rows from being selected in checkbox selection](../../images/selection/checkbox-prevent.gif)
+![Prevent specific rows from being selected in checkbox selection](../images/selection/checkbox-prevent.gif)
 
 ## How to select single row in checkbox selection mode
 
@@ -107,7 +107,7 @@ Here's an example of how to select a single row in checkbox selection mode using
 {% endhighlight %}
 {% endtabs %}
 
-![Select single row in checkbox selection mode](../../images/selection/checkbox-single-click.gif)
+![Select single row in checkbox selection mode](../images/selection/checkbox-single-click.gif)
 
 ## Allow selection only through checkbox click
 
@@ -124,4 +124,4 @@ Here's an example of how to enable selection only through checkbox click using `
 {% endhighlight %}
 {% endtabs %}
 
-![Allow selection only through checkbox click](../../images/selection/checkbox-checkonly.gif)
+![Allow selection only through checkbox click](../images/selection/checkbox-checkonly.gif)

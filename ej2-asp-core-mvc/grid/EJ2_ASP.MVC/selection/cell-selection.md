@@ -31,7 +31,7 @@ In the following example demonstrates how to enable single cell selection using 
 {% endhighlight %}
 {% endtabs %}
 
-![Single row selection](../../images/selection/cell-single.png)
+![Single row selection](../images/selection/cell-single.png)
 
 ## Multiple cell selection 
 
@@ -50,7 +50,7 @@ In the following example demonstrates how to enable multiple cell selection usin
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple cell selection](../../images/selection/cell-multiple.png)
+![Multiple cell selection](../images/selection/cell-multiple.png)
 
 ## Cell selection mode 
 
@@ -75,7 +75,7 @@ In the following example demonstrates how to dynamically enable and change the `
 {% endhighlight %}
 {% endtabs %}
 
-![Cell selection mode](../../images/selection/cell-mode.gif)
+![Cell selection mode](../images/selection/cell-mode.gif)
 
 ## Select cells externally 
 
@@ -98,7 +98,7 @@ The following example demonstrates how to select a single cell within the Grid b
 {% endhighlight %}
 {% endtabs %}
 
-![Single cell selection](../../images/selection/cell-single-method.png)
+![Single cell selection](../images/selection/cell-single-method.png)
 
 ### Multiple cell selection
 
@@ -117,7 +117,7 @@ In the following example, it demonstrates how to select multiple cells in the Gr
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple cell selection](../../images/selection/cell-multiple-method.gif)
+![Multiple cell selection](../images/selection/cell-multiple-method.gif)
 
 > Cell Selection requires the `SelectionSettings.Mode` to be **Cell** or  **Both** and [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
 
@@ -141,7 +141,7 @@ The following example demonstrates how to select a range of cells within the Gri
 {% endhighlight %}
 {% endtabs %}
 
-![Range of cell selection](../../images/selection/cell-range.png)
+![Range of cell selection](../images/selection/cell-range.png)
 
 ##  How to get selected row cell indexes
 
@@ -158,7 +158,7 @@ The following example demonstrates how to obtain the selected row cell indexes u
 {% endhighlight %}
 {% endtabs %}
 
-![Get selected row cell indexes](../../images/selection/cell-get-selected.png)
+![Get selected row cell indexes](../images/selection/cell-get-selected.png)
 
 ##  Clear cell selection programmatically 
 
@@ -177,7 +177,7 @@ The following example demonstrates how to clear cell selection by calling the `c
 {% endhighlight %}
 {% endtabs %}
 
-![Clear cell selection programmatically](../../images/selection/cell-clear.gif)
+![Clear cell selection programmatically](../images/selection/cell-clear.gif)
 
 ## Cell selection events 
 
@@ -202,4 +202,4 @@ In the following example, cell selection is canceled when the value of **ShipCou
 {% endhighlight %}
 {% endtabs %}
 
-![Cell selection events](../../images/selection/cell-events-selection.gif)
+![Cell selection events](../images/selection/cell-events-selection.gif)
