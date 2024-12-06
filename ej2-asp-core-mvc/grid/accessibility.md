@@ -249,7 +249,7 @@ The following example demonstrates how to prevent the default behavior of the **
 
 ### Custom shortcut keys to perform grid actions
 
-The Syncfusion ##Platform_Name## Grid component enables you to enhance the usablity of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
+The Syncfusion ##Platform_Name## Grid component enables you to enhance the usability of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
