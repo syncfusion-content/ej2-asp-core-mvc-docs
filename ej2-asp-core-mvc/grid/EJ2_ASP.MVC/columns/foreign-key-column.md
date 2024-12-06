@@ -58,12 +58,6 @@ This example demonstrates how to use the foreign key column with remote data bin
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/foreign-remote/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreign.cs" %}
-{% include code-snippet/grid/columns/foreign/foreign.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="employeeView.cs" %}
-{% include code-snippet/grid/columns/foreign/employeeView.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 ![Binding remote data](../../images/foreign/foreign-remote.png)
@@ -81,11 +75,8 @@ In this example, an [AutoComplete](https://ej2.syncfusion.com/aspnetmvc/document
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/edit-template-foreign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreign.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/foreign.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="employeeView.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/employeeView.cs %}
+{% highlight c# tabtitle="edit-template-foreign.cs" %}
+{% include code-snippet/grid/how-to/edit-template-foreign/edit-template-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -101,11 +92,8 @@ In this example, a [DropDownList](https://ej2.syncfusion.com/aspnetmvc/documenta
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/filter-ui-foreign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreign.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/foreign.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="employeeView.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/employeeView.cs %}
+{% highlight c# tabtitle="filter-ui-foreign.cs" %}
+{% include code-snippet/grid/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -121,11 +109,8 @@ In this example, the **"EmployeeID"** column is a foreign key column, and the **
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/filterbar-temp-foreign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreign.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/foreign.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="employeeView.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/employeeView.cs %}
+{% highlight c# tabtitle="filterbar-temp-foreign.cs" %}
+{% include code-snippet/grid/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -149,11 +134,8 @@ In the provided example, the `customAggregateFn` function is used to filter the 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/aggregate-foreign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreign.cs" %}
-{% include code-snippet/grid/how-to/aggregate-foreign/foreign.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="employeeView.cs" %}
-{% include code-snippet/grid/how-to/aggregate-foreign/employeeView.cs %}
+{% highlight c# tabtitle="aggregate-foreign.cs" %}
+{% include code-snippet/grid/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -169,8 +151,8 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/foreignkeycol-multiple/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="ColumnType.cs" %}
-{% include code-snippet/grid/columns/foreignkeycol-multiple/column-type.cs %}
+{% highlight c# tabtitle="foreignkeycol-multiple.cs" %}
+{% include code-snippet/grid/columns/foreignkeycol-multiple/foreignkeycol-multiple.cs %}
 {% endhighlight %}
 {% endtabs %}
 

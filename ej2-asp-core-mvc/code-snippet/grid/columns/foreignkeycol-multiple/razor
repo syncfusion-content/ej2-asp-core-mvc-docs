@@ -1,8 +1,8 @@
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
-    col.Field("CustomerID").HeaderText("Customer Name").ForeignKeyField("CustomerID").ForeignKeyValue("ContactName").DataSource((IEnumerable<object>)ViewBag.CustomerData).Width("150").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").ForeignKeyField("CustomerID").ForeignKeyValue("ContactName").DataSource((IEnumerable<object>)ViewBag.customerData).Width("150").Add();
     col.Field("Freight").HeaderText("Freight").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
-    col.Field("EmployeeID").HeaderText("Ship City").ForeignKeyField("EmployeeID").ForeignKeyValue("City").DataSource((IEnumerable<object>)ViewBag.EmployeeData).Width("150").Add();
+    col.Field("EmployeeID").HeaderText("Ship City").ForeignKeyField("EmployeeID").ForeignKeyValue("City").DataSource((IEnumerable<object>)ViewBag.employeeData).Width("150").Add();
     col.Field("ShipName").HeaderText("Ship Name").EditType("dropdownedit").Width("180").Add();
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()

@@ -1,7 +1,7 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("EmployeeID").HeaderText("Employee Name").Width("140").ForeignKeyValue("FirstName").DataSource(ViewBag.ForeignData).Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Add();
+    col.Field("EmployeeID").HeaderText("Employee Name").Width("140").ForeignKeyValue("FirstName").DataSource(ViewBag.foreignData).Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Add();
     col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("160").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
@@ -9,8 +9,7 @@
 
 <script>
     var autoComplete;
-    var employeeData = @Html.Raw(Json.Encode(ViewBag.ForeignData));
-
+    var employeeData = @Html.Raw(Json.Encode(ViewBag.foreignData));
     function create() { // to create input element
         return document.createElement('input');
     }

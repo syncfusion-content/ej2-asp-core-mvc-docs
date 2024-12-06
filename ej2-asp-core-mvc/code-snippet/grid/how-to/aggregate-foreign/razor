@@ -1,7 +1,7 @@
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("EmployeeID").HeaderText("Employee Name").Width("150").ForeignKeyValue("FirstName").DataSource(ViewBag.ForeignData).Add();
+    col.Field("EmployeeID").HeaderText("Employee Name").Width("150").ForeignKeyValue("FirstName").DataSource(ViewBag.foreignData).Add();
     col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
     col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();

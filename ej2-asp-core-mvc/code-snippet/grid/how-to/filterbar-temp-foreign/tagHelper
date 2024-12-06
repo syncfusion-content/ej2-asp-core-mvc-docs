@@ -3,10 +3,10 @@
     Object filterTemplate = new Object();
     filterTemplate = (new { read = "read", write = "write" });
 }
-<ejs-grid id="grid" dataSource="@ViewBag.DataSource" allowFiltering="true" height="348px">
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="348px">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="EmployeeID" headerText="Employee Name" foreignKeyValue='FirstName' dataSource="ViewBag.ForeignData" width="150" filterBarTemplate="filterTemplate"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee Name" ForeignKeyField="EmployeeID" foreignKeyValue='FirstName' dataSource="ViewBag.foreignData" width="150" filterBarTemplate="filterTemplate"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="OrderDate" format="yMd" textAlign="Right" width="150"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="150"></e-grid-column>
         <e-grid-column field="ShipCountry" headerText="ShipCountry" width="150"></e-grid-column>
@@ -17,7 +17,7 @@
         return document.createElement('input', { className: 'filter-input' });
     }
     function write (args) {
-        var employeeData = @Html.Raw(Json.Encode(ViewBag.ForeignData));
+        var employeeData = @Json.Serialize(ViewBag.foreignData);
         employeeData.splice(0, 0, { 'FirstName': 'All' }); // for clear filtering
         var dropInstance = new ej.dropdowns.DropDownList({
             dataSource: new ej.data.DataManager(employeeData),

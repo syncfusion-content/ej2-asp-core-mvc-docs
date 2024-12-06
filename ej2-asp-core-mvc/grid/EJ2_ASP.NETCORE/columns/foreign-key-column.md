@@ -35,8 +35,8 @@ The Syncfusion Grid component provides a convenient way to bind local data to a 
 In this example, **data** is the local data source for the Grid, and **employeeData** is the local data source for the foreign key column. The `field` property of the e-column component is set to **EmployeeID** which represents the foreign key value in the **data**. The `foreignKeyValue` property is set to **FirstName** which represents the field name in the **employeeData** that you want to display in the foreign key column.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/foreign/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/foreign/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="foreign.cs" %}
 {% include code-snippet/grid/columns/foreign/foreign.cs %}
@@ -55,14 +55,8 @@ The Foreign key column in Syncfusion Grid allows you to bind remote data for a f
 This example demonstrates how to use the foreign key column with remote data binding using the `ODataV4Adaptor` in the grid:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/foreign-remote/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="foreign.cs" %}
-{% include code-snippet/grid/columns/foreign/foreign.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="employeeView.cs" %}
-{% include code-snippet/grid/columns/foreign/employeeView.cs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/foreign-remote/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -78,14 +72,11 @@ The Syncfusion Grid provides support for using an edit template in a foreign key
 In this example, an [AutoComplete](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/getting-started) component is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.autocomplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property of the AutoComplete component is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/edit-template-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreign.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/foreign.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="employeeView.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/employeeView.cs %}
+{% highlight c# tabtitle="edit-template-foreign.cs" %}
+{% include code-snippet/grid/how-to/edit-template-foreign/edit-template-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -98,14 +89,11 @@ The Syncfusion Grid allows you to customize the filtering user interface (UI) fo
 In this example, a [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) component is rendered as the filter UI for the **"EmployeeID"** foreign key column. The [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_DataSource) property of the DropDownList component is set to the employees data, and the fields property is configured to display the **FirstName** field as the `text` and **EmployeeID** field as the `value`. The `value` property is set to the current filter value of the column.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/filter-ui-foreign/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/filter-ui-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreign.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/foreign.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="employeeView.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/employeeView.cs %}
+{% highlight c# tabtitle="filter-ui-foreign.cs" %}
+{% include code-snippet/grid/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -118,14 +106,11 @@ You can use the filter bar template in a foreign key column in Grid by defining 
 In this example, the **"EmployeeID"** column is a foreign key column, and the **filter** function is used as the filter bar template for this column. The `filter` function can be defined in your component code and should return the desired component or HTML template for the filter bar. The column header shows the custom filter bar template and you can select filter value by using the **DropDown** options.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/filterbar-temp-foreign/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/filterbar-temp-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreign.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/foreign.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="employeeView.cs" %}
-{% include code-snippet/grid/how-to/edit-template-foreign/employeeView.cs %}
+{% highlight c# tabtitle="filterbar-temp-foreign.cs" %}
+{% include code-snippet/grid/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -146,14 +131,11 @@ Here's an example that demonstrates how to perform aggregation in a foreign key 
 In the provided example, the `customAggregateFn` function is used to filter the data based on the **FirstName** field of the foreign key column, using the `getForeignData` internal function. The function then counts the occurrences of **Margaret**. The result is displayed in the grid's footer template using the ng-template with the `footerTemplate` reference.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/aggregate-foreign/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/aggregate-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreign.cs" %}
-{% include code-snippet/grid/how-to/aggregate-foreign/foreign.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="employeeView.cs" %}
-{% include code-snippet/grid/how-to/aggregate-foreign/employeeView.cs %}
+{% highlight c# tabtitle="aggregate-foreign.cs" %}
+{% include code-snippet/grid/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -166,11 +148,11 @@ The Syncfusion Grid component supports the feature of enabling multiple foreign 
 In the following example, **Customer Name** and **Ship City** are foreign key columns that display the **ContactName** and **City** columns from foreign data.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/foreignkeycol-multiple/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/foreignkeycol-multiple/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ColumnType.cs" %}
-{% include code-snippet/grid/columns/foreignkeycol-multiple/column-type.cs %}
+{% highlight c# tabtitle="foreignkeycol-multiple.cs" %}
+{% include code-snippet/grid/columns/foreignkeycol-multiple/foreignkeycol-multiple.cs %}
 {% endhighlight %}
 {% endtabs %}
 
