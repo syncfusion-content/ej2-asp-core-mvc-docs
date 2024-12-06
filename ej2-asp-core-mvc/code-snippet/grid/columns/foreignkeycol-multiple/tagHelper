@@ -4,7 +4,7 @@
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" foreignKeyField="CustomerID" foreignKeyValue="ContactName" dataSource="ViewBag.customerData" width="150"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" format="C2" editType="numericedit" textAlign="Right" width="100"></e-grid-column>
-        <e-grid-column field="EmployeeID" headerText="Ship City" foreignKeyValue="City" dataSource="ViewBag.employeeData" width="150"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Ship City" foreignKeyField="EmployeeID" foreignKeyValue="City" dataSource="ViewBag.employeeData" width="150"></e-grid-column>
         <e-grid-column field="ShipName" headerText="Ship Name" editType='dropdownedit' width="180"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>

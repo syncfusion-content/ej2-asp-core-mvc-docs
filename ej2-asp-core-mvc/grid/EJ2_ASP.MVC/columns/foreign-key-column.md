@@ -46,7 +46,7 @@ In this example, **data** is the local data source for the Grid, and **employeeD
 {% endhighlight %}
 {% endtabs %}
 
-![Binding local data](../../images/foreign/foreign-local.png)
+![Binding local data](../images/foreign/foreign-local.png)
 
 ## Binding remote data
 
@@ -60,7 +60,7 @@ This example demonstrates how to use the foreign key column with remote data bin
 {% endhighlight %}
 {% endtabs %}
 
-![Binding remote data](../../images/foreign/foreign-remote.png)
+![Binding remote data](../images/foreign/foreign-remote.png)
 
 > * For remote data, the sorting and grouping is done based on `Column.ForeignKeyField` instead of `Column.ForeignKeyValue`.
 > * If `Column.ForeignKeyField` is not defined, then the column uses `Column.Field`.
@@ -80,7 +80,7 @@ In this example, an [AutoComplete](https://ej2.syncfusion.com/aspnetmvc/document
 {% endhighlight %}
 {% endtabs %}
 
-![Use edit template in foreign key column](../../images/foreign/foreign-edit-template.gif)
+![Use edit template in foreign key column](../images/foreign/foreign-edit-template.gif)
 
 ## Customize filter UI of foreign key column
 
@@ -97,7 +97,7 @@ In this example, a [DropDownList](https://ej2.syncfusion.com/aspnetmvc/documenta
 {% endhighlight %}
 {% endtabs %}
 
-![Customize filter UI of foreign key column](../../images/foreign/foreign-filter.gif)
+![Customize filter UI of foreign key column](../images/foreign/foreign-filter.gif)
 
 ## Use filter bar template in foreign key column
 
@@ -114,7 +114,7 @@ In this example, the **"EmployeeID"** column is a foreign key column, and the **
 {% endhighlight %}
 {% endtabs %}
 
-![Use filter bar template in foreign key column](../../images/foreign/foreign-filter-template.png)
+![Use filter bar template in foreign key column](../images/foreign/foreign-filter-template.png)
 
 ## Perform aggregation in foreign key column
 
@@ -139,7 +139,7 @@ In the provided example, the `customAggregateFn` function is used to filter the 
 {% endhighlight %}
 {% endtabs %}
 
-![Customize filter UI of foreign key column](../../images/foreign/foreign-aggergate.png)
+![Customize filter UI of foreign key column](../images/foreign/foreign-aggergate.png)
 
 ## Enable multiple foreign key columns
 
@@ -156,4 +156,4 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 {% endhighlight %}
 {% endtabs %}
 
-![Enable multiple foreign key columns](../../images/foreign/foreign-multiple.png)
+![Enable multiple foreign key columns](../images/foreign/foreign-multiple.png)
