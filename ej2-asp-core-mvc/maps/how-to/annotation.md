@@ -37,6 +37,6 @@ Initialize the Maps component with annotation option, text content or ID of an H
 {% endtabs %}
 {% endif %}
 
-
+Note: Refer the data values for Africa(https://www.syncfusion.com/downloads/support/directtrac/general/ze/Africa1913669070) shape here.
 
 ![Annotation](../images/How-to/annotation.PNG)

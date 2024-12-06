@@ -12,7 +12,7 @@
         }]
     }
 </script>
-=======
+
 @using Syncfusion.EJ2.LinearGauge
 
 <ejs-lineargauge id="linear">

@@ -35,6 +35,6 @@ Maps component can be customized as the desired layout using the custom path map
 {% endtabs %}
 {% endif %}
 
-
+Note: Refer the data values for custom shapes(https://www.syncfusion.com/downloads/support/directtrac/general/ze/seat902454209) here.
 
 ![Custom path map](../images/How-to/custom-path.PNG)

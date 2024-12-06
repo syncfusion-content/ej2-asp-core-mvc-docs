@@ -4,7 +4,7 @@
 @using Syncfusion.EJ2;
 <div id="container">
     <ejs-treemap id="container" load="load" height="350px" weightValuePath="GDP" >
-            <e-treemap-leafitemsettings labelPath="State" border ='border'>
+            <e-treemap-leafitemsettings labelPath="State" border ='border'  gap="20">
 			<e-leafitemsettings-labelstyle color= '#000000'></e-leafitemsettings-labelstyle>
 			</e-treemap-leafitemsettings>
     </ejs-treemap>
