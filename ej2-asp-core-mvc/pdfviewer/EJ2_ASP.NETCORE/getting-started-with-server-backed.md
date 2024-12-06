@@ -39,7 +39,7 @@ To add ASP.NET Core PDF Viewer control, the following NuGet package need to be i
 N> A new package called the [Syncfusion.EJ2.PdfViewer.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core) is introduced in the **21.1.0.35 (2023 Volume 1)** release, which is a multi-targeting package. This differs from the previous approach of platform-specific packages such as "Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows," "Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux," and "Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX". With the new multi-targeting package, all of these platforms will be supported by a single package.
 This simplifies the development process for developers using the Essential Studio&reg;, as they no longer need to worry about selecting the correct package for their operating system. Overall, this change should make it easier and more convenient for developers to use Essential Studio's PDF Viewer control in their applications.
 
-## Add Syncfusion ASP.NET Core Tag Helper
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
 
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
@@ -67,7 +67,7 @@ The theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.c
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls.
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
 ## Add script reference
 
@@ -85,7 +85,7 @@ Add the required scripts using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 {% endhighlight %}
 {% endtabs %}
 
-## Register Syncfusion Script Manager
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
 Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager in the ASP.NET Core application as follows.
 
@@ -106,7 +106,7 @@ N> Add the script manager `<ejs-script>` at the **end of `<body>`**.
 
 ## Add ASP.NET Core PDF Viewer control
 
-Add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the documentPath property as below.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the documentPath property as below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -406,7 +406,7 @@ In the above code,
 
 **documentPath** is the property needed to load a PDF file in the PDF Viewer.
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core PDF Viewer control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core PDF Viewer control will be rendered in the default web browser.
 
 ![ASP.NET Core PDF Viewer Control](Core_Images/pdfviewer-control.png)
 
@@ -432,5 +432,5 @@ N> For hosting the web service on the Linux platform, ensure to include the [Ski
 
 ## See also
 
-* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
-* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

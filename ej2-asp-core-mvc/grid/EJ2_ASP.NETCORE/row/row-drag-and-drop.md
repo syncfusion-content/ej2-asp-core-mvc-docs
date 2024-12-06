@@ -10,7 +10,7 @@ documentation: ug
 
 # Drag and drop in ASP.NET Core Grid component
 
-The Syncfusion ASP.NET Core Grid component provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom components.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom components.
 
 To use the row drag and drop feature in Grid component, you need to set the [allowRowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowRowDragAndDrop) and [targetID](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridRowDropSettings.html#Syncfusion_EJ2_Grids_GridRowDropSettings_TargetID) properties to enable and configure this feature in the Grid.
 
@@ -73,11 +73,11 @@ In the below example, the selected grid row is dragged and dropped in to the Tre
 
 ## Drag and drop rows without drag icons
 
-By default, when performing a drag and drop operation in the Syncfusion Grid, drag icons are displayed. However, in some cases, you may want to hide these drag icons. This can be achieved by setting the [targetID](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridRowDropSettings.html#Syncfusion_EJ2_Grids_GridRowDropSettings_TargetID) property of the [rowDropSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridRowDropSettings.html) object to the current Grid's ID.
+By default, when performing a drag and drop operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, drag icons are displayed. However, in some cases, you may want to hide these drag icons. This can be achieved by setting the [targetID](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridRowDropSettings.html#Syncfusion_EJ2_Grids_GridRowDropSettings_TargetID) property of the [rowDropSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridRowDropSettings.html) object to the current Grid's ID.
 
 By setting the `targetID`, the Grid will render without a helper icon for row dragging. You can then customize the drag and drop action by binding to the [rowDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDrop) event of the Grid. In the `rowDrop` event, you can prevent the default action by setting `args.cancel` to **true**, and reorder the rows using the `reorderRows` method of the Grid.
 
-Here's an example of how to hide the drag and drop icon in the Syncfusion Grid:
+Here's an example of how to hide the drag and drop icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -123,5 +123,5 @@ The Grid component provides a set of events that are triggered during drag and d
 
 ## See also
 
-[Sorting data in the Syncfusion Grid](https://ej2.syncfusion.com/aspnetcore/documentation/grid/sorting)
-[Filtering data in the Syncfusion Grid](https://ej2.syncfusion.com/aspnetcore/documentation/grid/filtering)
+* [Sorting data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid](https://ej2.syncfusion.com/aspnetcore/documentation/grid/sorting)
+* [Filtering data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid](https://ej2.syncfusion.com/aspnetcore/documentation/grid/filtering)

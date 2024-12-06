@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Welcome to Syncfusion ASP.NET Core Controls of Essential JS 2
+# Welcome to Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls of Essential JS 2
 
 Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It is also available in other frameworks such as JavaScript and Angular, React.
 
@@ -20,7 +20,7 @@ Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been 
 
 * Another valuable resource is the API reference which provides detailed information on the object hierarchy as well as the settings available on every object.
 
-* The user guide covers tag helper code snippet in most of its sections. But the Syncfusion ASP.NET Core controls support both Tag helper and HTML helper. 
+* The user guide covers tag helper code snippet in most of its sections. But the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls support both Tag helper and HTML helper. 
 
 ## Control List
 
@@ -191,7 +191,7 @@ padding-top: 20px;
 
 * Don't see what you need? request it in our [feedback portal](https://www.syncfusion.com/feedback/aspnet-core).
 
-N> Syncfusion does not collect any kind of information when our controls are used in customer applications.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> does not collect any kind of information when our controls are used in customer applications.
 
 ## See also
 
@@ -199,14 +199,14 @@ N> Syncfusion does not collect any kind of information when our controls are use
 
     * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
 
-* Syncfusion Project Template
+* Syncfusion<sup style="font-size:70%">&reg;</sup> Project Template
 
-    * [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
+    * [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
 
 * Visual Studio Code
 
-    * [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/vscode)
+    * [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/vscode)
 
 * Visual Studio for Mac
 
-    * [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
+    * [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)

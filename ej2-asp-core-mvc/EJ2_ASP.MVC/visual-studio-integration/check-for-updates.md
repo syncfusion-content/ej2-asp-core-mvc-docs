@@ -10,17 +10,17 @@ documentation: ug
 
 # Check for Updates in ASP.NET MVC Application
 
-Syncfusion provides the check for update extensions to find latest version of essential release was available, if it was available then provide option update most recent version of the Essential Studio&reg; release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides the check for update extensions to find latest version of essential release was available, if it was available then provide option update most recent version of the Essential Studio&reg; release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
 
-N> The Syncfusion Check for updates is available from v17.1.0.32.
+N> The Syncfusion<sup style="font-size:70%">&reg;</sup> Check for updates is available from v17.1.0.32.
 
 You can check updates availability in Visual Studio, and then install the update version if required.
 
-1. Choose **Extensions->Syncfusion -> Check for Updates…** in the Visual Studio menu.
+1. Choose **Extensions->Syncfusion<sup style="font-size:70%">&reg;</sup> -> Check for Updates…** in the Visual Studio menu.
 
     ![check for updates](images/check-for-updates-latest.png)
 
-    N> In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu..
+    N> In Visual Studio 2017 or lower, you can see the Syncfusion<sup style="font-size:70%">&reg;</sup> menu directly in the Visual Studio menu..
 
     ![check for updates](images/check-for-updates.png)
 
@@ -28,4 +28,4 @@ You can check updates availability in Visual Studio, and then install the update
 
     ![update dialog](images/update-dialog.png)
 
-3. You can download the Syncfusion Essential Studio&reg; from the Syncfusion website by selecting **Download**.
+3. You can download the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio&reg; from the Syncfusion<sup style="font-size:70%">&reg;</sup> website by selecting **Download**.

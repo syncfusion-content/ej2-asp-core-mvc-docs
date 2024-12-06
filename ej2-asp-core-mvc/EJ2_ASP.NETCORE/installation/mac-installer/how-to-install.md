@@ -8,9 +8,9 @@ documentation: ug
 
 ---
 
-# Installing Syncfusion ASP.NET Core EJ2 Mac Installer
+# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Mac Installer
 
-The Essential Studio&reg; ASP.NET Core EJ2 Mac installer allows you to create the ASP.NET Core EJ2 application in Visual Studio for Mac with the Syncfusion ASP.NET Core EJ2 components.
+The Essential Studio&reg; ASP.NET Core EJ2 Mac installer allows you to create the ASP.NET Core EJ2 application in Visual Studio for Mac with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 components.
 
 ## Steps to resolve the warning message in Catalina OS or later
 
@@ -47,10 +47,10 @@ The steps below shows how to install the Essential Studio&reg; ASP.NET Core - EJ
 
    ![License Agree Confirmation](images/Mac_Installer4.png)
    
-   N> The Unlock key is not required to install the Mac installer. The Syncfusion Essential Studio&reg; ASP.NET Core - EJ2 Mac installer can be used for development purposes without registering the Unlock key.
+   N> The Unlock key is not required to install the Mac installer. The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio&reg; ASP.NET Core - EJ2 Mac installer can be used for development purposes without registering the Unlock key.
 
 
-5. Now you can open the folder to explore the Syncfusion Essential Studio&reg; Mac installer.
+5. Now you can open the folder to explore the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio&reg; Mac installer.
 
    ![Destination](Images/destination.JPG)
 

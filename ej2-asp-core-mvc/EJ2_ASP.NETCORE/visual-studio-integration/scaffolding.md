@@ -10,51 +10,51 @@ documentation: ug
 
 # Scaffolding in ASP.NET Core Application
 
-Syncfusion provides **Visual Studio Scaffolding** for Syncfusion ASP.NET Core platform to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create Views and Controller action methods for Syncfusion ASP.NET Core DataGrid, Charts, Scheduler, Diagram, Tree Grid, Rich Text Editor, Document Editor, and PDF Viewer controls.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides **Visual Studio Scaffolding** for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core platform to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create Views and Controller action methods for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DataGrid, Charts, Scheduler, Diagram, Tree Grid, Rich Text Editor, Document Editor, and PDF Viewer controls.
 
 N> Check that at least one Entity Framework model exists, and the application has been compiled once. If no Entity Framework model exists in your application, refer to this [documentation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-3.1) to generate the Entity Framework model. After the model file has been added, check that the required DBContext and properties have been added. Build the application before trying scaffolding. If any changes have been done in the model properties, rebuild the application once before performing scaffolding.
 
 <!-- markdownlint-disable MD026 -->
 
-N> The Syncfusion ASP.NET Core UI Scaffolder is available from 18.4.0.39 to ASP.NET Core web application.
+N> The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI Scaffolder is available from 18.4.0.39 to ASP.NET Core web application.
 
 ## Add a scaffolded item
 
 The following steps explain how to add a scaffolded item to your ASP.NET Core Web application.
 
-N> Before using the Syncfusion ASP.NET Core Scaffolding, check whether the **ASP.NET Core Extensions - Syncfusion** is installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, install the extension by following the steps from the [download and installation](download-and-installation) help topic.
+N> Before using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Scaffolding, check whether the **ASP.NET Core Extensions - Syncfusion** is installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, install the extension by following the steps from the [download and installation](download-and-installation) help topic.
 
  1. Right-click the **Controllers** folder in the Solution Explorer, click **Add**, and then select **New Scaffolded Item…**
 
     ![Syncfusion Scaffolded add-in](images/Scaffolding_Add_Item1.png)
 
- 2. In the **Add Scaffold dialog**, select **Syncfusion ASP.NET Core UI Scaffolder**, and then click **‘Add’**.
+ 2. In the **Add Scaffold dialog**, select **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI Scaffolder**, and then click **‘Add’**.
 
     ![Choose Syncfusion Scaffolding from Visual Studio Add scaffold dialog](images/Scaffolding_Add_Item2.png)
 
- 3. In the Syncfusion UI Scaffolder dialog, select the desired Syncfusion control to perform scaffolding, and then click **Next**.
+ 3. In the Syncfusion<sup style="font-size:70%">&reg;</sup> UI Scaffolder dialog, select the desired Syncfusion<sup style="font-size:70%">&reg;</sup> control to perform scaffolding, and then click **Next**.
 
     ![Choose required control](images/Scaffolding_Add_Item3.png)
 
- 4. Selected control model dialog will be launched in the Syncfusion UI Scaffolder. Enter the **Controller Name** and **View Name** as application requirements, and then select the required **Model Class** of the active project and its relevant **Data Context Class**, and then click **Next**.
+ 4. Selected control model dialog will be launched in the Syncfusion<sup style="font-size:70%">&reg;</sup> UI Scaffolder. Enter the **Controller Name** and **View Name** as application requirements, and then select the required **Model Class** of the active project and its relevant **Data Context Class**, and then click **Next**.
 
     ![Choose required Model](images/Scaffolding_Add_Item4.png)
 
- 5. Selected control feature dialog will be launched in the Syncfusion UI Scaffolder. Choose the required features, update the required data field, and then click **Add**.
+ 5. Selected control feature dialog will be launched in the Syncfusion<sup style="font-size:70%">&reg;</sup> UI Scaffolder. Choose the required features, update the required data field, and then click **Add**.
 
     ![Choose required selected control features](images/Scaffolding_Add_Item5.png)
 
- 6. The **Controller** and the corresponding **View** files will be added into the application with the selected features of Syncfusion control code snippet.
+ 6. The **Controller** and the corresponding **View** files will be added into the application with the selected features of Syncfusion<sup style="font-size:70%">&reg;</sup> control code snippet.
 
     ![Required Controller and View files added in the project for the selected control](images/Scaffolding_Add_Item6.png)
 
  7. Then, add navigation to the created view file based on your requirement to open in the webpage.
 
- 8. If you installed the trial setup or NuGet packages from nuget.org, you have to register the Syncfusion license key to your project since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio&reg; release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx?_ga=2.11237684.1233358434.1587355730-230058891.1567654773) post for understanding the licensing changes introduced in Essential Studio&reg;
+ 8. If you installed the trial setup or NuGet packages from nuget.org, you have to register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key to your project since Syncfusion<sup style="font-size:70%">&reg;</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio&reg; release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx?_ga=2.11237684.1233358434.1587355730-230058891.1567654773) post for understanding the licensing changes introduced in Essential Studio&reg;
 
-## Syncfusion ASP.NET Core Command-line Scaffolding
+## Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Command-line Scaffolding
 
-Syncfusion provides **Scaffolding command-line** for Syncfusion ASP.NET Core to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create view file and Controller action methods for Syncfusion ASP.NET Core DataGrid, Charts, Scheduler, Diagram, Tree Grid, Rich Text Editor, Document Editor, and PDF Viewer controls.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides **Scaffolding command-line** for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create view file and Controller action methods for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DataGrid, Charts, Scheduler, Diagram, Tree Grid, Rich Text Editor, Document Editor, and PDF Viewer controls.
 
 N>Check that at least one Entity Framework model exists. If no Entity Framework model exists in your application, refer to this [documentation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-3.1) to generate the Entity Framework model. After the model file has been added, check that the required DBContext and properties are added. Now, build the application, and try scaffolding. If any changes are made in the model properties, rebuild the application once before performing scaffolding.
 
@@ -114,15 +114,15 @@ N> Before adding the scaffolded item from command-line, check whether the **dotn
 
     ![CommandLine Scaffold](images/commandline.png)
 
-5. As controller and view files are generated successfully, add the Syncfusion NuGet packages and styles which is required to render Syncfusion control.
+5. As controller and view files are generated successfully, add the Syncfusion<sup style="font-size:70%">&reg;</sup> NuGet packages and styles which is required to render Syncfusion<sup style="font-size:70%">&reg;</sup> control.
 
     ![ASPNETCore added Files](images/Corefiles.png)
     ![ASPNETCore Service Changes](images/CoreScript.png)
 
 <!-- markdownlint-disable MD026 -->
 
-## How to render Syncfusion control?
+## How to render Syncfusion<sup style="font-size:70%">&reg;</sup> control?
 
-Refer to the following UG links to render Syncfusion control after performing scaffolding.
+Refer to the following UG links to render Syncfusion<sup style="font-size:70%">&reg;</sup> control after performing scaffolding.
 
 [Configure using Syncfusion.EJ2.AspNet.Core package](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017/)
