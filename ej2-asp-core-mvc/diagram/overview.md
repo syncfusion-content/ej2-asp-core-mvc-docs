@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Diagram Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: Overview in ##Platform_Name## Diagram Component | Syncfusion®
+description: Learn here all about Overview in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Overview
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview Control
+# Overview Control in ##Platform_Name## Diagram Component
 
 Overview control allows to see a preview or an overall view of the entire content of a diagram. This helps you to look at the overall picture of a large diagram and also to navigate, pan, or zoom, on a particular position of the page.
 

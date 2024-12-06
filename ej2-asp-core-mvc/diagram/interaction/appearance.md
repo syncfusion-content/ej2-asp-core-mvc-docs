@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearence in Syncfusion ##Platform_Name## Diagram Component
-description: Learn here all about Appearence in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: Appearence in Syncfusion® ##Platform_Name## Diagram Component
+description: Learn here all about Appearence in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appearence
 publishingplatform: ##Platform_Name##

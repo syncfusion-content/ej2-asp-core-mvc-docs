@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Page Settings in ##Platform_Name## Diagram Component
-description: Learn here all about Page Settings in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: Page Settings in ##Platform_Name## Diagram Component | Syncfusion®
+description: Learn here all about Page Settings in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Page Settings
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Page Settings
+# Page Settings in ##Platform_Name## Diagram Component
 
 Page settings can customize the appearance, width, and height of the diagram page.
 

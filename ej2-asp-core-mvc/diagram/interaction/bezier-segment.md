@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bezier segment editing in Syncfusion ##Platform_Name## Diagram Component
-description: Learn here all about Bezier segmnet editing in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: Bezier segment editing in Syncfusion® ##Platform_Name## Diagram Component
+description: Learn here all about Bezier segmnet editing in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Bezier segment editing
 publishingplatform: ##Platform_Name##
