@@ -1,0 +1,21 @@
+@{
+    List<object> cols = new List<object>();
+    cols.Add(new { field = "OrderID", direction = "Ascending" });
+    cols.Add(new { field = "ShipCity", direction = "Descending" });
+}
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Type("checkbox").Width(50).Add();
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Width(120).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width(150).Add();
+    col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(135).Format("yMd").Add();
+    col.Field("Freight").HeaderText("Freight($)").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(120).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width(150).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width(140).Add();
+    col.Field("ShipName").HeaderText("Shipped Name").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(145).Add();
+}).Toolbar(new List<string> { "Add", "Edit", "Delete", "Update", "Cancel", "Search", "ColumnChooser" }).SearchSettings(search => search.Fields(new string[] { "ShipCountry" }).Operator("contains").Key("a").IgnoreCase(true)).AllowPaging(true).PageSettings(page => page.PageCount(2).PageSizes(true)).AllowReordering(true).AllowRowDragAndDrop(true).AllowGrouping(true).GroupSettings(group => group.Columns(new string[] { "CustomerID" })).AllowSorting(true).SortSettings(sort => sort.Columns(cols)).AllowFiltering(true).FilterSettings(filter => filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel)).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).Mode(Syncfusion.EJ2.Grids.SelectionMode.Both)).SelectedRowIndex(6).EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).ShowColumnChooser(true).Aggregates(gridAggregation =>
+{
+    gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Type = "Sum", Format = "C2", GroupFooterTemplate = "Sum: ${Sum}" } }).Add();
+    gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Type = "Sum", Format = "C2", FooterTemplate = "Sum: ${Sum}" } }).Add();
+    gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Type = "Max", GroupCaptionTemplate = "Max: ${Max}" } }).Add();
+}).Render()
