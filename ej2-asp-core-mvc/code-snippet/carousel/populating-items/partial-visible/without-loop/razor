@@ -15,31 +15,31 @@
 </div>
 <script id="itemTemplate1" type="text/x-template">
     <figure class="img-container">
-        <img src="@Url.Content("~/Content/carousel/images/bridge.jpg")" alt="bridge" style="height:100%; width: 100%;" />
+        <img src="https://ej2.syncfusion.com/aspnetmvc/Content/carousel/images/bridge.jpg" alt="bridge" style="height:100%; width: 100%;" />
         <figcaption class="img-caption">Golden Gate Bridge, San Francisco</figcaption>
     </figure>
 </script>
 <script id="itemTemplate2" type="text/x-template">
     <figure class="img-container">
-        <img src="@Url.Content("~/Content/carousel/images/trees.jpg")" alt="spring_trees" style="height:100%; width: 100%;" />
+        <img src="https://ej2.syncfusion.com/aspnetmvc/Content/carousel/images/trees.jpg" alt="spring_trees" style="height:100%; width: 100%;" />
         <figcaption class="img-caption">Spring Flower Trees</figcaption>
     </figure>
 </script>
 <script id="itemTemplate3" type="text/x-template">
     <figure class="img-container">
-        <img src="@Url.Content("~/Content/carousel/images/waterfall.jpg")" alt="waterfall" style="height:100%; width: 100%;" />
+        <img src="https://ej2.syncfusion.com/aspnetmvc/Content/carousel/images/waterfall.jpg" alt="waterfall" style="height:100%; width: 100%;" />
         <figcaption class="img-caption">Oddadalen Waterfalls, Norway</figcaption>
     </figure>
 </script>
 <script id="itemTemplate4" type="text/x-template">
     <figure class="img-container">
-        <img src="@Url.Content("~/Content/carousel/images/sea.jpg")" alt="sea" style="height:100%; width: 100%;" />
+        <img src="https://ej2.syncfusion.com/aspnetmvc/Content/carousel/images/sea.jpg" alt="sea" style="height:100%; width: 100%;" />
         <figcaption class="img-caption">Anse Source d'Argent, Seychelles</figcaption>
     </figure>
 </script>
 <script id="itemTemplate5" type="text/x-template">
     <figure class="img-container">
-        <img src="@Url.Content("~/Content/carousel/images/rocks.jpeg")" alt="rocks" style="height:100%; width: 100%;" />
+        <img src="https://ej2.syncfusion.com/aspnetmvc/Content/carousel/images/rocks.jpeg" alt="rocks" style="height:100%; width: 100%;" />
         <figcaption class="img-caption">Stonehenge, England</figcaption>
     </figure>
 </script>
