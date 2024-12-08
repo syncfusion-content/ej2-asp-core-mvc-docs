@@ -16,7 +16,7 @@ documentation: ug
 
 ### Syncfusion.EJ2.AspNet.Core
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls powered by Essential JS 2, it contains 70+ high performance, lightweight, responsive, and touch- friendly UI controls including grid, chart, scheduler, spreadsheet, gantt chart, listbox, file manager, powerpoint or presentation, excel and much more.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls powered by Essential<sup style="font-size:70%">&reg;</sup> JS 2, it contains 70+ high performance, lightweight, responsive, and touch- friendly UI controls including grid, chart, scheduler, spreadsheet, gantt chart, listbox, file manager, powerpoint or presentation, excel and much more.
 
 <!-- markdownlint-disable MD033 -->
 <table>

@@ -231,7 +231,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> provides an online web tool nam
 
 This part of article provides information on setting up ASP.NET Core Web application development environment with Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 for ASP.NET Core without internet connection. Instead of having a well-connected internet, you may need to set up / start your application development in an isolated intranet to protect data from security attacks.
 
-### Downloading Client Side Resources of Essential JS 2 for ASP.NET Core
+### Downloading Client Side Resources of Essential<sup style="font-size:70%">&reg;</sup> JS 2 for ASP.NET Core
 
 The required script and style files could be downloaded either form npm packages or Custom Resource Generator (CRG) utilitity site.
 
@@ -263,7 +263,7 @@ The required script and style files could be downloaded either form npm packages
 
 #### From Custom Resource Generator (CRG)
 
-From [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator), scripts and styles can be generated for the required Essential JS 2 for ASP.NET Core components by selecting from the component list to improve the performance.
+From [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator), scripts and styles can be generated for the required Essential<sup style="font-size:70%">&reg;</sup> JS 2 for ASP.NET Core components by selecting from the component list to improve the performance.
 
 1. Open the [CRG](https://crg.syncfusion.com/) utility site and select required component to generate the script and style files.
 

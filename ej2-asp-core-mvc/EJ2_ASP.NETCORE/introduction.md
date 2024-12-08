@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Welcome to Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls of Essential JS 2
+# Welcome to Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls of Essential<sup style="font-size:70%">&reg;</sup> JS 2
 
-Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It is also available in other frameworks such as JavaScript and Angular, React.
+Essential<sup style="font-size:70%">&reg;</sup> JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It is also available in other frameworks such as JavaScript and Angular, React.
 
 ## How to best read this user guide
 

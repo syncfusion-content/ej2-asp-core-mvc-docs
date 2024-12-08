@@ -12,7 +12,7 @@ documentation: ug
 
 * Drag and Drop support can be enabled for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls by setting `allowDragAndDrop` property to `true`. It allows to drag and drop the specific elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-* Drag and Drop is supported through two libraries of Essential JS 2. Those are [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable/). Draggable makes DOM to be dragged using mouse or touch gestures and Droppable mark required DOM as droppable zone.
+* Drag and Drop is supported through two libraries of Essential<sup style="font-size:70%">&reg;</sup> JS 2. Those are [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable/). Draggable makes DOM to be dragged using mouse or touch gestures and Droppable mark required DOM as droppable zone.
 
 ## Drag and Drop Supported controls
 

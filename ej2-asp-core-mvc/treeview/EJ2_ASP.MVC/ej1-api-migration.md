@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of TreeView component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of TreeView component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Add nodes
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Add node | **Method:** *addNode*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text"))`<br />`var treeObj = $("#tree").data("ejTreeView");`<br />`treeObj.addNode("Node", "#book");` | **Method:** *addNodes*<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).Render()`<br /><br />**Script**<br /><br />`var treeObj = document.getElementById('tree').ej2_instances[0]`<br />`var object = [{ id: "temp", name: "New node" }, { id: "new", name: "New node 1" }];`<br />`treeObj.addNodes(object, "book");` |
 | Triggers before adding node | **Event:** *BeforeAdd*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text"))`<br />`.ClientSideEvents(events =>events.BeforeAdd("beforeAdd")))`<br /><br />**Script**<br />`function beforeAdd() {}` | Not Applicable |
@@ -24,7 +24,7 @@ This article describes the API migration process of TreeView component from Esse
 
 ## Common
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Keyboard Navigation | **Property:** *AllowKeyboardNavigation*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text")).AllowKeyboardNavigation(false))` | **Can be achieved using,**<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.TemplateFields).KeyPress("onKeyPress").Render()`<br /><br />**Script**<br /><br />`function onKeyPress(args){`<br />`args.cancel = true`<br />`}` |
 | Triggers before node is cut | **Event:** *BeforeCut*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text"))`<br />`.ClientSideEvents(events =>events.BeforeCut("beforeCut")))`<br />`function beforeCut() {}` | Not Applicable |
@@ -83,7 +83,7 @@ This article describes the API migration process of TreeView component from Esse
 
 ## CheckBox
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Prevent auto-check of child and parent | **Property:** *AutoCheck*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text")).ShowCheckbox(true).AutoCheck(false)` | **Property:** *AutoCheck*<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).AutoCheck(false).ShowCheckBox(true).Render()` |
 | Prevent indeterminate state in parent node | **Property:** *AutoCheckParentNode*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text")).ShowCheckbox(true).AutoCheckParentNode(true)` | **Can be achieved using,**<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).ShowCheckBox(true).AutoCheck(false).NodeChecked("nodeChecked").Render()`<br /><br />**Script**<br />`var treeObj= document.getElementById("tree").ej2_instances[0];`<br />`function nodeChecked(args){`<br/>`var child = treeObj.element.querySelector('[data-uid="' + args.data[0]['id'] + '"]');`<br/>`var checkNodes = [];`<br/>`var element = child.parentNode;`<br/>`while ((element !== null || element !== undefined) && !element.parentNode.classList.contains('e-treeview')) {`<br/>`element = element.parentNode;`<br/>`var id = element.getAttribute('data-uid');`<br/>`if (id !== null) checkNodes.push(element.getAttribute('data-uid'))`<br/>`}`<br/>`if (child.querySelector('.e-list-item') !== null && args.isInteracted === true && args.action === 'check') {`<br/>`treeObj.autoCheck = true;`<br/>`treeObj.checkAll(child.getAttribute('data-uid'));`<br/>`} else if (child.querySelector('.e-list-item') !== null && args.isInteracted === true && args.action === 'uncheck') {`<br/>`treeObj.autoCheck = true;`<br/>`treeObj.uncheckAll(child.getAttribute('data-uid'));`<br/>`}`<br/>`treeObj.autoCheck = false;`<br/>`if (args.action === 'check') {`<br/>`treeObj.checkAll(checkNodes)`<br/>`}`<br/>`else if (args.action === 'uncheck' && child.parentNode.querySelector('.e-check') === null) {`<br/>`treeObj.uncheckAll(checkNodes)`<br/>`}`<br />`}` |
@@ -102,7 +102,7 @@ This article describes the API migration process of TreeView component from Esse
 
 ## Drag and Drop
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Drag and drop | **Property:** *AllowDragAndDrop*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =><br />field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text")).AllowDragAndDrop(true)` | **Property:** *AllowDragAndDrop*<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).AllowDragAndDrop(true)` |
 | Prevent Drag and drop to another Treeview | **Property:** *AllowDragAndDropAcrossControl*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text")).AllowDragAndDrop(true).AllowDragAndDropAcrossControl(false)` | **Can be achieved using,** <br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).AllowDragAndDrop(true).NodeDragStop("dragStop").Render()`<br /><br />**Script**<br /><br />`function dragStop(args){`<br />`if (args.draggedParentNode.closest('.e-treeview') !== args.dropTarget.closest('.e-treeview')) {`<br />`args.cancel = true;`<br />`}`<br />`}` |
@@ -115,7 +115,7 @@ This article describes the API migration process of TreeView component from Esse
 
 ## Expand/Collapse nodes
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers before node is collapsed | **Event:** *BeforeCollapse*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text"))`<br />`.ClientSideEvents(events =>events.BeforeCollapse("beforeCollapse"))`<br />`function beforeCollapse() {}` | **Event:** *NodeCollapsing*<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).NodeCollapsing("nodeCollapsing").Render()`<br /><br />**Script**<br /><br />`function nodeCollapsing(){}` |
 | Triggers before node is expanded | **Event:** *BeforeExpand*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text"))`<br />`.ClientSideEvents(events =>events.BeforeExpand("beforeExpand"))`<br />`function beforeExpand() {}` | **Event:** *NodeExpanding*<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).NodeExpanding("nodeExpanding").Render()`<br /><br />**Script**<br /><br />`function nodeExpanding(){}` |
@@ -134,7 +134,7 @@ This article describes the API migration process of TreeView component from Esse
 
 ## Node Editing
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Editing | **Property:** *AllowEditing*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text")).AllowEditing(true)` | **Property:** *AllowEditing*<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).AllowEditing(true).Render()` |
 | Triggers before node is edited | **Event:** *BeforeEdit*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text"))`<br />`.ClientSideEvents(events =>events.BeforeEdit("beforeEdit"))`<br />`function beforeEdit() {}` | **Event:** *NodeEditing*<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).NodeEditing("nodeEditing").Render()`<br /><br />**Script**<br /><br />`function nodeEditing(){}` |
@@ -144,7 +144,7 @@ This article describes the API migration process of TreeView component from Esse
 
 ## Node Selection
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Multi-selection | **Property:** *AllowMultiSelection*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text")).AllowMultiSelection(true)` | **Property:** *AllowMultiSelection*<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).AllowMultiSelection(true).Render()` |
 | Triggers before node is selected | **Event:** *BeforeSelect*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text"))`<br />`.ClientSideEvents(events =>events.BeforeSelect("beforeSelect"))`<br />`function beforeSelect() {}` | **Event:** *NodeSelecting*<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).NodeSelecting("nodeSelecting").Render()`<br /><br />**Script**<br /><br />`function nodeSelecting(){}` |
@@ -165,6 +165,6 @@ This article describes the API migration process of TreeView component from Esse
 
 ## Template
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Custom template | **Property:** *Template*<br /><br />`@Html.EJ().TreeView("tree").TreeViewFields(field =>`<br />`field.Datasource((IEnumerable<LoadData>)ViewBag.datasource)`<br />`.Id("Id").ParentId("Parent").Text("Text")).Template("templateData")` | **Property:** *NodeTemplate*<br /><br />`@Html.EJS().TreeView("tree").Fields(ViewBag.Fields).NodeTemplate("templateData").Render()` |

@@ -47,7 +47,7 @@ Using the below approaches the themes can be referenced in the ASP.NET Core appl
 
 Instead of using a local resource on your server, you can use a cloud CDN to refer the theme style sheets. CDN Stands for "Content Delivery Network". A CDN is a group of servers distributed in different locations. While CDN are often used to host websites, they are commonly used to provide other types of downloadable data as well. Examples include software programs, images, videos, and streaming media.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Themes are available in the CDN. Make sure that the version in the URLs matches the version of the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 ASP.NET Core Package you are using.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Themes are available in the CDN. Make sure that the version in the URLs matches the version of the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 ASP.NET Core Package you are using.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}

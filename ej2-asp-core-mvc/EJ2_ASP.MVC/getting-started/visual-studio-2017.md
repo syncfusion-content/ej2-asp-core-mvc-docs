@@ -10,9 +10,9 @@ documentation: ug
 
 <!-- markdownlint-disable MD024 -->
 
-# Getting Started with Essential JS 2 for ASP.NET MVC in Visual Studio
+# Getting Started with Essential<sup style="font-size:70%">&reg;</sup> JS 2 for ASP.NET MVC in Visual Studio
 
-This article provides a step-by-step introduction to configure Essential JS 2 setup, build and publish a simple ASP.NET MVC web application using [Visual Studio](https://visualstudio.microsoft.com/downloads/).
+This article provides a step-by-step introduction to configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 setup, build and publish a simple ASP.NET MVC web application using [Visual Studio](https://visualstudio.microsoft.com/downloads/).
 
 N> Starting with v16.2.0.x, if you reference to Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET MVC application to use the components.
 
@@ -40,7 +40,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
   
 3. Change the application name, and then click **Create**.
 
-    N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2).
+    N> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2).
 
     ![aspnetmvc5 new project Template 2019](images/aspnetmvc5-new-project-templatevs2019.png)
 
@@ -48,11 +48,11 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
     ![aspnetmvc5 web application template 2019](images/aspnetmvc-config-template-vs2019.png)
 
-#### Configure Essential JS 2 in the application
+#### Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 in the application
 
 1. Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
     ![aspnetmvc5 manage nuget packages 2019](images/aspnetmvc5-manage-nuget-2019.png)
 
@@ -60,7 +60,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
     ![aspnetmvc5 install nuget package 2019](images/aspnetmvc5-nuget-vs2019.png)
 
-    The Essential JS 2 MVC5 NuGet package will be included in the project, after the installation process is completed.
+    The Essential<sup style="font-size:70%">&reg;</sup> JS 2 MVC5 NuGet package will be included in the project, after the installation process is completed.
 
     N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
@@ -107,7 +107,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
     </head>
     ```
 
-5. Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
+5. Add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
 
     ```html
     <body>
@@ -127,7 +127,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
     </div>
     ```
 
-7. Run the application and the Essential JS 2 calendar component will render in the web browser.
+7. Run the application and the Essential<sup style="font-size:70%">&reg;</sup> JS 2 calendar component will render in the web browser.
 
     ![aspnetmvc5 calendar component output](images/aspnetmvc-calendar.png)
 
@@ -153,7 +153,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 3. Select **ASP.NET Web Application (.NET Framework)** and change the application name, and then click **OK**.
 
-    N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2).
+    N> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2).
 
     ![aspnetmvc5 project template](images/aspnetmvc5-template.png)
 
@@ -161,11 +161,11 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
     ![aspnetmvc5 web application template](images/aspnetmvc5-config-template.png)
 
-#### Configure Essential JS 2 in the application
+#### Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 in the application
 
 1. Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
     ![aspnetmvc5 manage nuget packages](images/aspnetmvc5-manage-nuget.png)
 
@@ -173,7 +173,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
     ![aspnetmvc5 install nuget package](images/aspnetmvc5-nuget.png)
 
-    The Essential JS 2 MVC5 NuGet package will be included in the project, after the installation process is completed.
+    The Essential<sup style="font-size:70%">&reg;</sup> JS 2 MVC5 NuGet package will be included in the project, after the installation process is completed.
 
     N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
@@ -220,7 +220,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
     </head>
     ```
 
-5. Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
+5. Add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
 
     ```html
     <body>
@@ -240,7 +240,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
     </div>
     ```
 
-7. Run the application and the Essential JS 2 calendar component will render in the web browser.
+7. Run the application and the Essential<sup style="font-size:70%">&reg;</sup> JS 2 calendar component will render in the web browser.
 
     ![aspnetmvc5 calendar component output](images/aspnetmvc-calendar.png)
 
@@ -264,7 +264,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
 3. Select **ASP.NET MVC 4 Web Application** and change the application name and click **OK**.
 
-    N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2).
+    N> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2).
 
     ![aspnetmvc4 project template](images/aspnetmvc4-template.png)
 
@@ -272,11 +272,11 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
     ![aspnetmvc4 web application template](images/aspnetmvc4-config-template.png)
 
-#### Configure Essential JS 2 in the application
+#### Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 in the application
 
 1. Add the [`Syncfusion.EJ2.MVC4`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4/) NuGet package into the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
     ![aspnetmvc4 manage nuget packages](images/aspnetmvc4-manage-nuget.png)
 
@@ -284,7 +284,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
     ![aspnetmvc4 install nuget package](images/aspnetmvc4-nuget.png)
 
-    The Essential JS 2 MVC4 NuGet package will be included in the project, after the installation process is completed.
+    The Essential<sup style="font-size:70%">&reg;</sup> JS 2 MVC4 NuGet package will be included in the project, after the installation process is completed.
 
     N> The Syncfusion.EJ2.MVC4 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
@@ -333,7 +333,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
     </head>
     ```
 
-5. Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
+5. Add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
 
     ```html
     <body>
@@ -353,6 +353,6 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
     </div>
     ```
 
-7. Run the application and the Essential JS 2 Calendar component will render in the web browser.
+7. Run the application and the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Calendar component will render in the web browser.
 
     ![aspnetmvc4 calendar component output](images/aspnetmvc-calendar.png)

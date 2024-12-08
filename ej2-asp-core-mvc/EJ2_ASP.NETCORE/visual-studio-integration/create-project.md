@@ -12,15 +12,15 @@ documentation: ug
 
 ## Create project
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Project Templates** for the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core platform to create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Web Application using Essential JS 2 components.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Project Templates** for the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core platform to create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Web Application using Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
 
 N> The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) project templates are available from v16.2.0.41.
 
-The following steps are used to create the **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential JS 2) Web Application** through the **Visual Studio Project Template**.
+The following steps are used to create the **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application** through the **Visual Studio Project Template**.
 
 N> Before using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Project Template, check whether the **ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** is installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, install the extension by following the steps from the [download and installation](download-and-installation) help topic.
 
-1. To create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential JS 2) project, follow either one of the options below:
+1. To create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) project, follow either one of the options below:
 
     **Option 1**
 
@@ -42,7 +42,7 @@ N> Before using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Cor
 
 2. Name the **Project**, choose the destination location, and then click **OK**. The Project Configuration Wizard appears.
 
-3. Choose the options to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential JS 2) Application in the following Project Configuration dialog.
+3. Choose the options to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application in the following Project Configuration dialog.
 
     ![project configuration](images/project-configuration.png)
 
@@ -86,7 +86,7 @@ N> Before using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Cor
     | Angular | .NET 5.0, .NET 6.0, and .NET 7.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
     | React | .NET 5.0, .NET6.0, and .NET 7.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
 
-    N> The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential JS 2) Project Template provides ASP.NET Core, Angular, and React project templates support from v17.1.0.47.
+    N> The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Project Template provides ASP.NET Core, Angular, and React project templates support from v17.1.0.47.
 
     **.NET Core Version**: Select the version of ASP.NET Core Project.
 
@@ -106,7 +106,7 @@ N> Before using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Cor
 
     ![authentication type](images/authentication.png)
 
-4. Click Create, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential JS 2) Application has been created.
+4. Click Create, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application has been created.
 
     ![css refernce](images/readme-file.PNG)
 

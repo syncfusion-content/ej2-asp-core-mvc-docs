@@ -14,7 +14,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC migration add-i
 
 ## IMPORTANT
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2) Web Application Project Migration utility is available from v16.3.0.17.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application Project Migration utility is available from v16.3.0.17.
 
 N> Before use, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Project Migration, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build installed or not. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not same for both the Extension and build, then the Project Migration will not be shown.
 
@@ -46,7 +46,7 @@ The steps below will assist you to upgrade the Syncfusion<sup style="font-size:7
 
     N> The versions are loaded from the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC NuGet packages which published in [NuGet.org](https://www.nuget.org/packages?q=Tags%3A%22aspnetmvc%22syncfusion) and it requires internet connectivity.
 
-    **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 assets to ASP.NET MVC Project, from either NuGet, CDN or Installed Location.
+    **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to ASP.NET MVC Project, from either NuGet, CDN or Installed Location.
 
     N> Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JavaScript 2 setup has been installed.
 

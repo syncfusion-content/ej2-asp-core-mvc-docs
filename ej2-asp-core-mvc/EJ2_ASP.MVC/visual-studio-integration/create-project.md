@@ -12,15 +12,15 @@ documentation: ug
 
 ## Create project
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Project Templates** for the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC platform to create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Web Application with the Essential JS 2 components.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Project Templates** for the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC platform to create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Web Application with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
 
-N> The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2) project templates are available from v16.2.0.41.
+N> The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) project templates are available from v16.2.0.41.
 
-Use the following steps to create the **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2) Web Application** through the **Visual Studio Project Template.**
+Use the following steps to create the **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application** through the **Visual Studio Project Template.**
 
 N> Before use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Project Template, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic.
 
-1. To create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2) project, follow either one of the options below:
+1. To create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) project, follow either one of the options below:
 
     **Option 1:**
 
@@ -38,7 +38,7 @@ N> Before use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC P
 
     ![Syncfusion MVC Project Wizard](images/SyncfusionMvcProjectWizard.png)
 
-    N> In Visual Studio 2017 or lower, Choose **File > New > Project** and navigate to **Syncfusion<sup style="font-size:70%">&reg;</sup> > Web > Syncfusion ASP.NET MVC (Essential JS 2) Application**.
+    N> In Visual Studio 2017 or lower, Choose **File > New > Project** and navigate to **Syncfusion<sup style="font-size:70%">&reg;</sup> > Web > Syncfusion ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application**.
 
     ![syncfusion asp.net mvc](images/syncfusion-aspmvc-application.png)
 
@@ -54,11 +54,11 @@ N> Before use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC P
 
     ![theme selection](images/theme-selection.png)
 
-    **Assets From**: : Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 assets to ASP.NET MVC Project, either NuGet, CDN, or Installed Location.
+    **Assets From**: : Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to ASP.NET MVC Project, either NuGet, CDN, or Installed Location.
 
     N> Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JavaScript 2 setup has been installed.
 
-3. Click **Create**, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2) Application will be created.
+3. Click **Create**, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application will be created.
 
     ![readme-file](images/readme-file.PNG)
 

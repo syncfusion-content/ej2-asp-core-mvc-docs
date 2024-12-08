@@ -10,9 +10,9 @@ documentation: ug
 
 # Converting ASP.NET MVC application to ASP.NET MVC application
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC conversion is a Visual Studio add-in that converts an existing ASP.NET MVC application into a Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2) Web application by adding the required assemblies and resource files.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC conversion is a Visual Studio add-in that converts an existing ASP.NET MVC application into a Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web application by adding the required assemblies and resource files.
 
-N> The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2) Web Application Project conversion utility is available from v16.3.0.17. Before use, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Project Conversion, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build installed or not. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not same for both the Extension and build, then the Project Conversion will not be shown.
+N> The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application Project conversion utility is available from v16.3.0.17. Before use, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Project Conversion, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build installed or not. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not same for both the Extension and build, then the Project Conversion will not be shown.
 
 The steps below help you to convert the ASP.NET MVC application to the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC application via the Visual Studio:
 
@@ -44,7 +44,7 @@ The steps below help you to convert the ASP.NET MVC application to the Syncfusio
 
     The following configurations are used in the Project conversion wizard.
 
-    **Assets From**: Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 assets to ASP.NET MVC Project, from either NuGet, CDN, or Installed Location.
+    **Assets From**: Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to ASP.NET MVC Project, from either NuGet, CDN, or Installed Location.
 
     N> Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JavaScript 2 setup has been installed.
 

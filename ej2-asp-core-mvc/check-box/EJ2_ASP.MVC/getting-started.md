@@ -101,7 +101,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Change the CheckBox state
 
-The Essential JS 2 CheckBox contains 3 different states visually, they are:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 CheckBox contains 3 different states visually, they are:
 * Checked
 * Unchecked
 * Indeterminate

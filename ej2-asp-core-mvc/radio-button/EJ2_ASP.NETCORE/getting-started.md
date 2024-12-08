@@ -102,7 +102,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Change the RadioButton state
 
-The Essential JS 2 RadioButton contains 2 states visually, they are as follows:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 RadioButton contains 2 states visually, they are as follows:
 * Checked
 * Unchecked
 

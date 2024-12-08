@@ -110,7 +110,7 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     **Example:** "D:\Temp\syncfusionessentialaspnetcore-js2x.x.x.x.exe"/Install silent/UNLOCKKEY:"*product unlock key*"/log "C:\Temp\EssentialStudioPlatform.log"/InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
-7. Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core (Essential JS2) is installed.
+7. Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS2) is installed.
 
     N> x.x.x.x should be replaced with the Essential Studio<sup style="font-size:70%">&reg;</sup> version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
 

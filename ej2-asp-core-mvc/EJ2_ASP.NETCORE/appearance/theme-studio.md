@@ -10,11 +10,11 @@ documentation: ug
 
 # Overview in ASP.NET Core Controls
 
-Theme Studio for Essential JS 2 can be used to customize a new theme from an existing theme. It doesn't support with Data visualization controls like Chart, Diagram, Gauge, Range Navigator, Maps.
+Theme Studio for Essential<sup style="font-size:70%">&reg;</sup> JS 2 can be used to customize a new theme from an existing theme. It doesn't support with Data visualization controls like Chart, Diagram, Gauge, Range Navigator, Maps.
 
 ## Customizing theme color from theme studio
 
-The Essential JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls. All the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control styles are derived from these [theme-based common variables](#common-variables). This common variable list is handled inside the theme studio application for customizing theme-based colors.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls. All the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control styles are derived from these [theme-based common variables](#common-variables). This common variable list is handled inside the theme studio application for customizing theme-based colors.
 
 **Step 1:** Open the [Syncfusion<sup style="font-size:70%">&reg;</sup> Theme Studio](https://ej2.syncfusion.com/themestudio/) application.
 
@@ -54,7 +54,7 @@ You can download the custom styles after customizing the theme colors.
 
 ![download-icon](images/download-icon.png)
 
-**Step 2:** Assign a theme name in the File Name field and click the Download button. If your application uses both Essential JS 1 and Essential JS 2 controls, then select the Include compatibility css check box before downloading the theme. This option will generate the custom theme for Essential JS 2 compatibility styles, which are compatible as Essential JS 1 styles. Refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/common/compatible-with-essential-js1) for more details about Essential JS 1 and Essential JS 2 compatibility.
+**Step 2:** Assign a theme name in the File Name field and click the Download button. If your application uses both Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls, then select the Include compatibility css check box before downloading the theme. This option will generate the custom theme for Essential<sup style="font-size:70%">&reg;</sup> JS 2 compatibility styles, which are compatible as Essential<sup style="font-size:70%">&reg;</sup> JS 1 styles. Refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/common/compatible-with-essential-js1) for more details about Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 compatibility.
 
 ![download-dialog](images/download-dialog.png)
 
@@ -80,7 +80,7 @@ You can directly use the customized CSS file in the web application.
 {% endhighlight %}
 {% endtabs %}
 
-N> If you are using Essential JS 1 and Essential JS 2 controls in a same web application, then you have to copy/paste the customized CSS file from the `compatibility` folder in the download location.
+N> If you are using Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls in a same web application, then you have to copy/paste the customized CSS file from the `compatibility` folder in the download location.
 
 ## Import previously changed settings into the theme studio
 

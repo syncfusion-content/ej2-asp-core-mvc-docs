@@ -12,7 +12,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core and Yeoman in Visual Studio Code
 
-This article provides a step-by-step introduction to configure Essential JS 2 setup and build a simple ASP.NET Core web application using the [Yeoman tool](https://yeoman.io/) in [Visual Studio Code](https://code.visualstudio.com/) (VS Code).
+This article provides a step-by-step introduction to configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 setup and build a simple ASP.NET Core web application using the [Yeoman tool](https://yeoman.io/) in [Visual Studio Code](https://code.visualstudio.com/) (VS Code).
 
 N> Starting with v16.2.0.x, if you reference to Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET Core application to use the components.
 
@@ -67,7 +67,7 @@ You can navigate the options by using <kbd>top</kbd> and <kbd>bottom</kbd> arrow
 
 ![asp.net core vscode integrated terminal](images/aspnetcore-vscode-terminal.png)
 
-### Configure Essential JS 2 in the application
+### Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 in the application
 
 1.Run the following command in the VS Code terminal to add `Syncfusion.EJ2.AspNet.Core` NuGet package in the project.
 

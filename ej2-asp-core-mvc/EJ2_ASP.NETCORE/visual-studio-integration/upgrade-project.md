@@ -14,7 +14,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core migration add-
 
 ## IMPORTANT
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential JS 2) Web Application Project Migration utility is available from v16.3.0.17.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application Project Migration utility is available from v16.3.0.17.
 
 N> Before use, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Project Migration, check whether the **ASP.NET Core Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed**  for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build installed or not. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not same for both the Extension and build, then the Project Migration will not be shown.
 
