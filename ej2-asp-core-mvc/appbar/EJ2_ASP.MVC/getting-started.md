@@ -91,6 +91,8 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC AppBar
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
+@using Syncfusion.EJ2.Navigations;
+
 <div class="col-lg-12 control-section default-appbar-section">
     @(Html.EJS().AppBar("defaultAppBar").ColorMode(AppBarColor.Primary).ContentTemplate(@<div>
         @Html.EJS().Button("defaultButtonMenu").CssClass("e-inherit").IconCss("e-icons e-menu").Render()

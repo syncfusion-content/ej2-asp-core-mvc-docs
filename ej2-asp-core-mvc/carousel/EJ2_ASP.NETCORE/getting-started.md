@@ -130,35 +130,35 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Carou
 
 <script id="templateItem1" type="text/x-template">
     <figure class="img-container">
-        <img src="css/carousel/images/bridge.jpg" alt="bridge" style="height:100%; width: 100%" />
+        <img src="https://ej2.syncfusion.com/aspnetcore/css/carousel/images/bridge.jpg" alt="bridge" style="height:100%; width: 100%" />
         <figcaption class="img-caption">Golden Gate Bridge, San Francisco</figcaption>
     </figure>
 </script>
 
 <script id="templateItem2" type="text/x-template">
     <figure class="img-container">
-        <img src="css/carousel/images/trees.jpg" alt="spring_trees" style="height:100%; width: 100%" />
+        <img src="https://ej2.syncfusion.com/aspnetcore/css/carousel/images/trees.jpg" alt="spring_trees" style="height:100%; width: 100%" />
         <figcaption class="img-caption">Spring Flower Trees</figcaption>
     </figure>
 </script>
 
 <script id="templateItem3" type="text/x-template">
     <figure class="img-container">
-        <img src="css/carousel/images/waterfall.jpg" alt="waterfall" style="height:100%; width: 100%" />
+        <img src="https://ej2.syncfusion.com/aspnetcore/css/carousel/images/waterfall.jpg" alt="waterfall" style="height:100%; width: 100%" />
         <figcaption class="img-caption">Oddadalen Waterfalls, Norway</figcaption>
     </figure>
 </script>
 
 <script id="templateItem4" type="text/x-template">
     <figure class="img-container">
-        <img src="css/carousel/images/sea.jpg" alt="sea" style="height:100%; width: 100%" />
+        <img src="https://ej2.syncfusion.com/aspnetcore/css/carousel/images/sea.jpg" alt="sea" style="height:100%; width: 100%" />
         <figcaption class="img-caption">Anse Source d'Argent, Seychelles</figcaption>
     </figure>
 </script>
 
 <script id="templateItem5" type="text/x-template">
     <figure class="img-container">
-        <img src="css/carousel/images/rocks.jpeg" alt="rocks" style="height:100%; width: 100%" />
+        <img src="https://ej2.syncfusion.com/aspnetcore/css/carousel/images/rocks.jpeg" alt="rocks" style="height:100%; width: 100%" />
         <figcaption class="img-caption">Stonehenge, England</figcaption>
     </figure>
 </script>
