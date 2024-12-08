@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Chart component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Chart component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Annotation
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Rotation of annotation | **Property:** *e-annotations.angle* <br/> <br/> `<ej-chart id="chartContainer">` <br>`<e-annotations>` <br> `<e-annotation angle="270">` <br> `</e-annotation>` <br>`</e-annotations>` <br>`</e-annotations>` <br> `</ej-chart>` | **Property:** Not applicable. |
 | Annotations | **Property:** *e-annotations.content* <br/> <br/> `<ej-chart id="chartContainer">`<br>`<e-annotations>`<br>`<e-annotation content="Chart">`<br>`</e-annotation>`<br>`</e-annotations>`<br>`</ej-chart>` | **Property:** *e-chart-annotations.content* <br/><br/> `<ejs-chart id="container">`<br>`<e-chart-annotations>`<br>`<e-chart-annotation content="Chart">` <br> `</e-chart-annotation>`<br>`</e-chart-annotations>`<br>`</ejs-chart>` |
@@ -32,7 +32,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Columns
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Columns in chart | **Property:** *e-column-definitions* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-column-definitions>` <br> `</e-column-definitions>` <br> `</ej-chart>` | **Property:** *e-chart-columns* <br/><br/> `<ejs-chart id="lineContainer">` <br> `<e-chart-columns>` <br> `</e-chart-columns>` <br> `</ejs-chart>` |
 | Unit | **Property:** *unit* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-column-definitions>` <br> `<e-column-definition unit="percentage">` <br> `</e-column-definition>` <br> `<e-column-definition unit="percentage">` <br> `</e-column-definition>` <br> `</e-column-definitions>` <br> `</ej-chart>` | Not Available |
@@ -41,13 +41,13 @@ This article describes the API migration process of Chart component from Essenti
 
 ## CommonSeriesOptions
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | CommonSeriesOptios | **Property:** *commonSeriesOptions* <br/><br/> `<ejs-chart id="lineContainer">` <br> `<e-common-series-options>` <br> `</e-common-series-options>` <br> `</ejs-chart>` | Not Applicable |
 
 ## Crosshair
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Crosshair | **Property:** *visible* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-crosshair visible="true">` <br> `</e-crosshair>` <br> `</ej-chart>` | **Property:** *enable* <br/><br/> `<ejs-chart id="lineContainer">` <br> `<e-chart-crosshairsettings enable="true">` <br> `</e-chart-crosshairsettings>` <br> `<ejs-chart>` |
 | TrackballTooltipSettings | **Property:** *e-trackball-tooltip-settings* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-crosshair>` <br> `<e-trackball-tooltip-settings>` <br> `<e-border width="1" color="grey">` <br> `</e-border>` <br> `</e-trackball-tooltip-settings>` <br> `</e-crosshair>` <br> `</ej-chart>` | Not applicable |
@@ -57,7 +57,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## 3D chart
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | 3d chart | **Property:** *enable3d* <br/><br/> `<ej-chart id="container" enable3d="true">` <br> `</ej-chart>` | Not applicable |
 | Rotation of 3d chart | **Property:** *enable-rotation* <br/><br/> `<ej-chart id="container" enable-rotation="true">` <br> `</ej-chart>` | Not applicable |
@@ -65,13 +65,13 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Canvas rendering
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Canvas rendering | **Property:** *enable-canvas-rendering* <br/><br/> `<ej-chart id="chartContainer" enable-canvas-rendering="true">` <br> `</ej-chart>` | Not applicable |
 
 ## Indicators
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Type of Indicator | **Property:** *type* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-indicators>` <br> `<e-indicator type="AccumulationDistribution">` <br> `</e-indicator>` <br> `</e-indicators>` <br> `</ej-chart>` | **Property:** *type* <br/><br/> `<ejs-chart id="ADIContainer">` <br> `<e-indicators>` <br> `<e-indicator type="AccumulationDistribution">` <br> `</e-indicator>` <br> `</e-indicators>` <br> `</ejs-chart>` |
 | Period for indicator | **Property :** *period* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-indicators>` <br> `<e-indicator period="14">` <br> `</e-indicator>` <br> `</e-indicators>` <br> `</ej-chart>` | **Property:** *period* <br/><br/> `<ejs-chart id="ADIContainer">` <br> `<e-indicators>` <br> `<e-indicator  period=3>` <br> `</e-indicator>` <br> `</e-indicators>` <br> `</ejs-chart>` |
@@ -106,7 +106,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## primaryXAxis
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Alternate grid band | **Property:** *alternateGridBand* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-primary-x-axis>` <br> `<e-alternate-grid-band>` <br> `</e-alternate-grid-band>` <br> `</e-primary-x-axis>` <br> `</ej-chart>` | Not applicable
 | Axis line cross value | **Property:** *crosses-at* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-primary-x-axis crosses-at="0">` <br> `</e-primary-x-axis>` <br> `</ej-chart>` | **Property:** *crossesAt* <br> `<ejs-chart id="Container">` <br> `<e-chart-primaryxaxis crossesAt="5">` <br> `</e-chart-primaryxaxis>` <br> `</ejs-chart>` |
@@ -183,7 +183,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## primaryYAxis
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Alternate grid band | **Property:** *alternateGridBand* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-primary-y-axis>` <br> `<e-alternate-grid-band>` <br> `</e-alternate-grid-band>` <br> `</e-primary-y-axis>` <br> `</ej-chart>` | Not applicable
 | Axis line cross value | **Property:** *crosses-at* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-primary-y-axis crosses-at="0">` <br> `</e-primary-y-axis>` <br> `</ej-chart>` | **Property:** *crossesAt* <br> `<ejs-chart id="Container">` <br> `<e-chart-primaryyaxis crossesAt="5">` <br> `</e-chart-primaryyaxis>` <br> `</ejs-chart>` |
@@ -260,7 +260,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Axes
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Alternate grid band | **Property:** *alternateGridBand* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-axes><e-axis >` <br> `<e-alternate-grid-band>` <br> `</e-alternate-grid-band>` <br> `</e-axes></e-axis >` <br> `</ej-chart>` | Not applicable
 | Axis line cross value | **Property:** *crosses-at* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-axes><e-axis  crosses-at="0">` <br> `</e-axes></e-axis >` <br> `</ej-chart>` | **Property:** *crossesAt* <br> `<ejs-chart id="Container">` <br> `<e-chart-axes> <e-chart-axis crossesAt="5">` <br> `</e-chart-axes> </e-chart-axis>` <br> `</ejs-chart>` |
@@ -337,7 +337,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Series
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | BearFillColor | **Property:** *bear-fill-color* <br/> <br/> `<ej-chart id="chartContainer">` <br> `<e-chart-series>` <br> `<e-series bear-fill-color="red">` <br> `</e-series>` <br> `</e-chart-series>` <br> `</ej-chart>` | **Property:** *bearFillColor* <br/><br/> `<ejs-chart id="Container">` <br> `<e-series-collection>` <br> `<e-series bearFillColor="red">` <br> `</e-series>` <br> `</e-series-collection>` <br> `</ejs-chart>` |
 | Border | **Property:** *e-border* <br/> <br/> `<ej-chart id="chartContainer">` <br> `<e-chart-series>` <br> `<e-series >` <br> `<e-border color="red" dash-array="4,5" width="3">` <br> `</e-border>` <br> `</e-series>` <br> `</e-chart-series>` <br> `</ej-chart>` | **Property:** *e-series-border* <br/><br/> `<ejs-chart id="Container">` <br> `<e-series-collection>` <br> `<e-series>` <br> `<e-series-border color="red" width="2">` <br> `</e-series-border>` <br> `</e-series>` <br> `</e-series-collection>` <br> `</ejs-chart>` |
@@ -392,7 +392,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## marker
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | visibility of marker | **Property:** *visible* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-chart-series>` <br> `<e-series>` <br> `<e-marker visible="true">` <br> `</e-marker>` <br> `</e-series>` <br> `</e-chart-series>` <br> `</ej-chart>` | **Property:** *visible* <br/><br/> `<ejs-chart id="Container">` <br> `<e-series-collection>` <br> `<e-series>` <br> `<e-series-marker visible="true">` <br> `</e-series-marker>` <br> `</e-series>` <br> `</e-series-collection>` <br> `</ejs-chart>` |
 | Fill for marker | **Property:** *fill* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-chart-series>` <br> `<e-series>` <br> `<e-marker fill="red">` <br> `</e-marker>` <br> `</e-series>` <br> `</e-chart-series>` <br> `</ej-chart>` | **Property:** *fill* <br/><br/> `<ejs-chart id="Container">` <br> `<e-series-collection>` <br> `<e-series>` <br> `<e-series-marker fill="red">` <br> `</e-series-marker>` <br> `</e-series>` <br> `</e-series-collection>` <br> `</ejs-chart>` |
@@ -422,7 +422,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## TrendLines
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Trendlines settings | **Property:** *e-series.e-trend-lines* <br/><br/> `<ej-chart id="Container">` <br> `<e-chart-series>` <br> `<e-series>` <br> `<e-trend-lines>` <br> `<e-trend-line>` <br> `</e-trend-line>` <br> `</e-trend-lines>` <br> `</e-series>` <br> `<e-chart-series>` <br> `</ej-chart>` | **Property:** *e-series.e-series-trendlines* <br/><br/> `<ejs-chart id="Container">` <br> `<e-series-collection>` <br> `<e-series>` <br> `<e-series-trendlines>` <br> `<e-trendline>` <br> `</e-trendline>` <br> `</e-series-trendlines>` <br> `</e-series>` <br> `</e-series-collection>` <br> `</ejs-chart>` |
 | Visibility of trendline | **Property:** *e-trend-line.visibility* <br/><br/> `<ej-chart id="Container">` <br> `<e-chart-series>` <br> `<e-series>` <br> `<e-trend-lines>` <br> `<e-trend-line visibility="true">` <br> `</e-trend-line>` <br> `</e-trend-lines>` <br> `</e-series>` <br> `<e-chart-series>` <br> `</ej-chart>` | **Property:** *Not applicable* |
@@ -444,7 +444,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## StripLines
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Default behaviour for striplines | **Property:** *e-primary-x-axis.e-strip-lines* <br/><br/> `<ej-chart id="Container">` <br> `<e-chart-series>` <br> `<e-primary-x-axis>` <br> `<e-strip-lines>` <br> `<e-strip-line visible="true">` <br> `</e-strip-line>` <br> `</e-strip-lines>` <br> `</e-primary-x-axis>` <br> `<e-chart-series>` <br> `</ej-chart>` | **Property:** *e-primaryxaxis-stripline.width* <br/><br/> `<ejs-chart id="Container">` <br> `<e-series-collection>` <br> `<e-chart-primaryxaxis>` <br> `<e-primaryxaxis-striplines>` <br> `<e-primaryxaxis-stripline visible="true">` <br> `</e-primaryxaxis-stripline>` <br> `</e-primaryxaxis-striplines>` <br> `</e-chart-primaryxaxis>` <br> `</e-series-collection>`<br> `</ejs-chart>` |
 | border for stripline | **Property:** *e-strip-lines.border-color* <br/><br/> `<ej-chart id="Container">` <br> `<e-chart-series>` <br> `<e-primary-x-axis>` <br> `<e-strip-lines>` <br> `<e-strip-line border-color="red">` <br> `</e-strip-line>` <br> `</e-strip-lines>` <br> `</e-primary-x-axis>` <br> `<e-chart-series>` <br> `</ej-chart>` | **Property:** *e-primaryxaxis-stripline.e-primaryxaxis-border* <br/><br/> `<ejs-chart id="Container">` <br> `<e-series-collection>` <br> `<e-chart-primaryxaxis>` <br> `<e-primaryxaxis-striplines>` <br> `<e-primaryxaxis-stripline>` <br> `<e-primaryxaxis-border color="red">` <br> `</e-primaryxaxis-border>` <br> `</e-primaryxaxis-stripline>` <br> `</e-primaryxaxis-striplines>` <br> `</e-chart-primaryxaxis>` <br> `</e-series-collection>`<br> `</ejs-chart>` |
@@ -461,7 +461,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Multilevel Labels
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Default behaviour for multilevelLabels | **Property:** *e-primary-x-axis.e-multi-level-labels* <br/><br/> `<ej-chart id="Container">` <br> `<e-chart-series>` <br> `<e-primary-x-axis>` <br> `<e-multi-level-labels>` <br> `<e-multi-level-label visible="true">` <br> `</e-multi-level-label>` <br> `</e-multi-level-labels>` <br> `</e-primary-x-axis>` <br> `</e-chart-series>` <br> `</ej-chart>` | **Property:** *e-chart-primaryxaxis-stripline.e-primaryxaxis-multilevellabel* <br/><br/> `<ejs-chart id="Container">` <br> `<e-series-collection>` <br> `<e-chart-primaryxaxis>` <br> `<e-primaryxaxis-multilevellabels >` <br> `<e-primaryxaxis-multilevellabel visible="true">` <br>  `</e-primaryxaxis-multilevellabel >` <br> `</e-primaryxaxis-multilevellabels>` <br> `</e-chart-primaryxaxis>` <br> `</e-series-collection>`<br> `</ejs-chart>` |
 | Text alignment for multilevelLabels | **Property:** *text-alignment* <br/><br/> `<ej-chart id="Container">` <br> `<e-chart-series>` <br> `<e-primary-x-axis>` <br> `<e-multi-level-labels>` <br> `<e-multi-level-label text-alignment="Center">` <br> `</e-multi-level-label>` <br> `</e-multi-level-labels>` <br> `</e-primary-x-axis>` <br> `</e-chart-series>` <br> `</ej-chart>` | **Property:** *alignment* <br/><br/> `<ejs-chart id="Container">` <br> `<e-series-collection>` <br> `<e-chart-primaryxaxis>` <br> `<e-primaryxaxis-multilevellabels>` <br> `<e-primaryxaxis-multilevellabel alignment="Center">` <br>  `</e-primaryxaxis-multilevellabel >` <br> `</e-primaryxaxis-multilevellabels>` <br> `</e-chart-primaryxaxis>` <br> `</e-series-collection>`<br> `</ejs-chart>` |
@@ -477,7 +477,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Animation for series | **Property:** *chart.animate* <br/><br/> `<ej-chart id="chart">` <br> `</ej-chart>` <br> `<script>` <br><code>var chartobj=$("#chart").ejchart(instance);<br>chartobj.animate();<code> `</script>` | Not applicable |
 | Redraw for chart | **Property** *chart.redraw* <br/><br/> `<ej-chart id="chart">` <br> `</ej-chart>` <br> `<script>` <br> <code> var chartobj= $("#chart").ejchart(instance); <br> chartobj.redraw();</code> <br> `</script>` | **Property:** *chart.refresh()* <br/><br/>  `<ejs-chart id="chart">` <br> `</ejs-chart>` <br> `<script>` <br> <code> var chartobj= document.getElementById('chart').ej2_instances[0]; <br> chartobj.refresh(); </code> <br> `</script>` |
@@ -490,7 +490,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Fires on annotation click | **Property:** *annotation-click* <br/><br/> `<ej-chart id="chart" annotation-click="annotaionclick">` <br> `</ej-chart>` <br> `<script>` <br> <code> function annotaionclick(args) { <br> } <br> </code> `</script>` | Not applicable |
 | Fires after animation | **Property:** *animation-complete* <br/><br/> `<ej-chart id="chart" animation-complete="animationcomplete">` <br> `</ej-chart>` <br> `<script>` <br> <code> function animationcomplete(args) { <br> } <br> </code> `</script>` | **Property:** *animationComplete* <br/><br/> `<ejs-chart id="chart" animationComplete="animationComplete">` <br> `</ejs-chart>` <br> `<script>` <br> <code> function animationComplete(args) { <br> } <br> </code> `</script>`|
@@ -541,7 +541,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Chart properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | selected data index | **Property:** *e-selected-data-point-indexes* <br/><br/> `<ej-chart id="Container">` <br> `<e-selected-data-point-indexes series-index=0 point-index=1 >` <br> `</e-selected-data-point-indexes>` <br>  `</ej-chart>` | **Property:** *overFlow* <br/><br/> `<ejs-chart id="Container">` <br> `<e-chart-selecteddataindexes >` <br> `<e-chart-selecteddataindex point="1" series="0">` <br> `</e-chart-selecteddataindex>` <br> `</e-chart-selecteddataindexes>` <br> `</ejs-chart>` |
 | sideBySideSeriesPlacement for column based series | **Property:** *side-by-side-series-placement* <br/><br/> `<ej-chart id="Container" side-by-side-series-placement="true">` <br> `</ej-chart>` | **Property:** *enableSideBySidePlacement* <br/><br/> `<ejs-chart id="Container" enableSideBySidePlacement="true">` <br> `</ejs-chart>` |

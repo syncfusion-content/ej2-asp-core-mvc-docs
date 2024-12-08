@@ -57,4 +57,4 @@ The accessibility compliance of the Signature component is shown in the followin
 
 ## See also
 
-* [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls](../common/accessibility)

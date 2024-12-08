@@ -11,13 +11,13 @@ documentation: ug
 
 # Change the type of the Spinner
 
-By default, the Spinner is loaded in the applicable Essential JS 2 component based on the theme imported into the page. Based on the theme, the type is set to the Spinner.
+By default, the Spinner is loaded in the applicable Essential<sup style="font-size:70%">&reg;</sup> JS 2 component based on the theme imported into the page. Based on the theme, the type is set to the Spinner.
 The available types are:
 * Material
 * Fabric
 * Bootstrap
 
-You can change the Essential JS 2 component spinner type by passing the type of the spinner as parameter to the `setSpinner` method like as below.
+You can change the Essential<sup style="font-size:70%">&reg;</sup> JS 2 component spinner type by passing the type of the spinner as parameter to the `setSpinner` method like as below.
 
 ```typescript
 // Specify the type of the Spinner to be displayed
@@ -25,7 +25,7 @@ You can change the Essential JS 2 component spinner type by passing the type of 
 setSpinner({ type: 'Bootstrap'});
 ```
 
-N> After Essential JS 2 component creation only, you can change the Essential JS 2 component spinner type.
+N> After Essential<sup style="font-size:70%">&reg;</sup> JS 2 component creation only, you can change the Essential<sup style="font-size:70%">&reg;</sup> JS 2 component spinner type.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

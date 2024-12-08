@@ -163,11 +163,11 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 
 ## Odata with custom url
 
-The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
 
 **Configuring Custom URLs**
 
-To work with custom URLs for CRUD operations in the Syncfusion Grid, you can use the following properties:
+To work with custom URLs for CRUD operations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can use the following properties:
 
 * insertUrl: Specifies the custom URL for inserting new records.
 * removeUrl: Specifies the custom URL for deleting records.

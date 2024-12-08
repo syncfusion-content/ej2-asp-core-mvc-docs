@@ -15,7 +15,7 @@ This section explains the different styles and types of Buttons.
 
 ## Button styles
 
-The Essential JS 2 Button has the following predefined styles that can be defined using the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button has the following predefined styles that can be defined using the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property.
 
 | Class | Description |
 | -------- | -------- |
@@ -55,7 +55,7 @@ N> Predefined Button styles provide only the visual indication. So, Button conte
 
 ## Button types
 
-The types of Essential JS 2 Button are as follows:
+The types of Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button are as follows:
 
 * Basic types
 * Flat Button
@@ -195,7 +195,7 @@ The Button can have an icon to provide the visual representation of the action. 
 
 ![ASP.NET MVC Button with font icons](images/button-icon.png)
 
-N> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property.
+N> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_IconCss) property.
 
 ### Button with SVG image
 

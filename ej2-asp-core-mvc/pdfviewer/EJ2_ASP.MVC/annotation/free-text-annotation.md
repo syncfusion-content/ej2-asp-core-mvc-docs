@@ -134,7 +134,7 @@ Here is an example of how you can use the **addAnnotation()** method to move the
 
 ## Change the content of an existing Free text annotation programmatically
 
-To change the content of an existing free text annotation in the Syncfusion PDF viewer programmatically, you can use the **editAnnotation()** method.
+To change the content of an existing free text annotation in the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF viewer programmatically, you can use the **editAnnotation()** method.
 
 Here is an example of how you can use the **editAnnotation()** method to change the content of a free text annotation:
 

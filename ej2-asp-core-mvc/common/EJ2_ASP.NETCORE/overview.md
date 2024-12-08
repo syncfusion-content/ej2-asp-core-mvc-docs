@@ -10,7 +10,7 @@ documentation: ug
 
 # Overview
 
-The purpose of this document is to build and run a simple Essential JS 2 application in ASP.NET Core and, ASP.NET MVC.
+The purpose of this document is to build and run a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 application in ASP.NET Core and, ASP.NET MVC.
 
 ## Key Features
 

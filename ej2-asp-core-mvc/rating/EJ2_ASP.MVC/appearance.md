@@ -33,7 +33,7 @@ You can specify the number of rating items using the [ItemsCount](https://help.s
 
 ## Disabled
 
-You can disable the Syncfusion ASP.NET MVC Rating control by using the [Disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Disabled) property. When the `Disabled` property is set to `true`, the rating control will be disabled and the user will not be able to interact with it and a disabled rating control may have a different visual appearance than an enabled one.
+You can disable the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Rating control by using the [Disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Disabled) property. When the `Disabled` property is set to `true`, the rating control will be disabled and the user will not be able to interact with it and a disabled rating control may have a different visual appearance than an enabled one.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 

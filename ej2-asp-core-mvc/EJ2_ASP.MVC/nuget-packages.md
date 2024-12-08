@@ -10,13 +10,13 @@ documentation: ug
 
 # NuGet Packages for ASP.NET MVC UI controls
 
-**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET MVC NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22%20+%20%22MVC5%22+Syncfusion). The Syncfusion ASP.NET MVC NuGet packages can be used without installing the Essential Studio or ASP.NET MVC platform installation to implement the Syncfusion ASP.NET MVC controls.
+**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion<sup style="font-size:70%">&reg;</sup> publishing all ASP.NET MVC NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22%20+%20%22MVC5%22+Syncfusion). The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC NuGet packages can be used without installing the Essential Studio or ASP.NET MVC platform installation to implement the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 
 ## Available NuGet packages
 
 ### Syncfusion.EJ2.MVC5
 
-Syncfusion ASP.NET MVC UI controls are built from the ground up to be lightweight, responsive, and touch- friendly. It includes over 70+ controls, including grid, charts, scheduler, spreadsheet, gantt chart, listbox, file manager, rich text editor and much more.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI controls are built from the ground up to be lightweight, responsive, and touch- friendly. It includes over 70+ controls, including grid, charts, scheduler, spreadsheet, gantt chart, listbox, file manager, rich text editor and much more.
 
 <!-- markdownlint-disable MD033 -->
 <table>

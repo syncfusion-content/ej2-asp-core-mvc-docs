@@ -109,5 +109,5 @@ Virtual scrolling automatically works with "Popup" field list on setting the [En
 
 ## See also
 
-* [Paging in Syncfusion EJ2 Typescript components](./paging)
-* [Data Compression in Syncfusion EJ2 Typescript components](./data-compression)
+* [Paging in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 Typescript components](./paging)
+* [Data Compression in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 Typescript components](./data-compression)

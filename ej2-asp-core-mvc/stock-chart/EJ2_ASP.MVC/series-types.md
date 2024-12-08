@@ -11,7 +11,7 @@ documentation: ug
 
 # Stock Chart Series Types
 
-Essential JS 2 StockChart  Stock Chart supports 6 major types of series namely `Line`, `Spline`, `Hilo`, `HiloOpenClose`, `Hollow Candle` and `Candle` . By using the series dropdown button you can navigate between the above listed series types.
+Essential<sup style="font-size:70%">&reg;</sup> JS 2 StockChart  Stock Chart supports 6 major types of series namely `Line`, `Spline`, `Hilo`, `HiloOpenClose`, `Hollow Candle` and `Candle` . By using the series dropdown button you can navigate between the above listed series types.
 
 <!-- markdownlint-disable MD036 -->
 

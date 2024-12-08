@@ -8,14 +8,14 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of AutoComplete component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use multiselection support in autocomplete, use MultiSelect component.
 
 ## DataBinding
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *dataSource* <br/>`<ej-autocomplete datasource="(IEnumerable<CarsList>)ViewBag.datasource"></ej-autocomplete>`| **Property:** *datasource*<br/>`<ejs-autocomplete datasource="@ViewBag.data"></ejs-autocomplete>`|
 | **Fields for mapping** | **Property:** *e-autocomplete-fields*<br/>`<ej-autocomplete id="autocomplete" ><e-autocomplete-fields text="Text" key="UniqueKey" /></ej-autocomplete>`| **Property:** *e-autocomplete-fields*<br/>`<ejs-autocomplete id="country"><e-autocomplete-fields value="name" text="code"></e-autocomplete-fields></ejs-autocomplete>` |
@@ -27,7 +27,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 
 ## Filtering
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Case sensitivity** | **Property**: *case-sensitive-search*<br/>`<ej-autocomplete id="autocomplete" case-sensitive-search="true"></ej-autocomplete>`|**Property:** *ignoreCase*<br/>`<ejs-autocomplete id="autocomplete" ignoreCase="true"></ejs-autocomplete>`|
 | **Accent effective search** | **Not applicable** | **Property** : *ignoreAccent* <br/>`ejs-autocomplete id="autocomplete" ignoreAccent="true"></ejs-autocomplete>`|
@@ -40,14 +40,14 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 
 ## Placeholder
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Watermark text** | **Property:** *watermark-text* <br/>`<ej-autocomplete id="autocomplete" watermark-text="select"></ej-autocomplete>`| **Property:** *placeholder* <br/>`ejs-autocomplete id="autocomplete" placeholder="select"></ejs-autocomplete>`|
 | **Floating  of waterMarkText** | **Not applicable**   | **Property:** *floatLabelType* <br/>`ejs-autocomplete id="autocomplete" floatLabelType="auto"></ejs-autocomplete>`|
 
 ## Popup
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **No records text** | **Property:** *empty-result-text* <br/> `<ej-autocomplete id="autocomplete" empty-result-text="no records"></ej-autocomplete>`| **Property:** *noRecordsTemplate*<br/> `<ejs-autocomplete id="autocomplete" noRecordsTemplate="@Html.Raw("<span class='norecord'> NO DATA AVAILABLE</span>")"></ejs-autocomplete>`|
 | **No records showing** | **Property:** *show-empty-result-text<br/> `<ej-autocomplete id="autocomplete" show-empty-result-text="no records"></ej-autocomplete>` | **Not applicable** |
@@ -66,7 +66,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 
 ## CSS
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *css-class* <br/> `<ej-autocomplete id="autocomplete" css-class="customclass"></ej-autocomplete>` | **Property:** *cssClass* <br/> `<ej-autocomplete id="autocomplete" cssClass="customClass"></ej-autocomplete>`|
 | **Height** | **Property:** *height* <br/> `<ej-autocomplete id="autocomplete" height="300px"></ej-autocomplete>`| By using *css-class* property, you can acheive this. |
@@ -76,19 +76,19 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 
 ## Grouping
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *fields.groupBy*<br/> `<ej-autocomplete id="autocomplete"><e-autocomplete-fields group-by="Text" /></ej-autocomplete>`  |**Property:** *fields.groupBy* `<ejs-autocomplete id="country"><e-autocomplete-fields groupBy="name"></e-autocomplete-fields></ejs-autocomplete>`|
 
 ## Localization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *locale* <br/>`<ej-autocomplete id="autocomplete" locale="fr-FE"></ej-autocomplete>`| **Property:** *locale* <br/>`<ejs-autocomplete id="country" locale="fr-FE"></ejs-autocomplete>`|
 
 ## Template
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *template* `<ej-autocomplete id="autocomplete" template="@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")">></ej-autocomplete>`|**Property:** *itemTemplate*<br/> `<ejs-autocomplete id="employees" itemTemplate="@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")">></ejs-autocomplete>` |
 | **Group Template** | **Not Applicable**  | **Property:** *groupTemplate* <br/>`<ejs-autocomplete id="employees" groupTemplate="@Html.Raw("<strong>${City}</strong>")"></ejs-autocomplete>`|
@@ -100,20 +100,20 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 
 ## Sorting
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *allow-sorting* <br/>`<ej-autocomplete id="autocomplete" allow-sorting="true"></ej-autocomplete>` | **It is applicable when the sortOrder is defined.** |
 | **Order of sorting** | **Property:** *sort-order* <br/>`<ej-autocomplete id="autocomplete" sort-order="Ascending"></ej-autocomplete>`|**Property:** *sortOrder*<br/> `<ejs-autocomplete id="country" sortOrder="Ascending"></ejs-autocomplete>`|
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **RTL support** | **Property:** *enable-rtl* <br/>`<ej-autocomplete id="autocomplete" enable-rtl="true"></ej-autocomplete>` | **Property:** *enableRtl* <br/>`<ejs-autocomplete id="country" enableRtl="true"></ejs-autocomplete>`|
 
 ## Selection
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------ | ----------- |
 |**Selecting particular value**| **Property**: *select-value-by-key* <br/>`<ej-autocomplete id="autocomplete" selectValueByKey="13"></ej-autocomplete>`|**Achievable through value property** |
 | **Selecting particular value** | **Property**: *value*<br/>`<ej-autocomplete id="autocomplete" value="data"></ej-autocomplete>` | **Property:** *value*<br/> `<ejs-autocomplete id="country" value="data"></ejs-autocomplete>`|
@@ -124,7 +124,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 
 ## Miscellaneous
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Enable/disable** | **Property:** *enabled*<br/>`<ej-autocomplete id="autocomplete" enabled="true"></ej-autocomplete>` | **Property:** *enabled* <br/>`<ejs-autocomplete id="country" enabled="true"></ejs-autocomplete>`|
 | **Enable persistence** | **Property:** *enable-persistence*<br/> `<ej-autocomplete id="autocomplete" enable-persistence="true"></ej-autocomplete>`  | **Property:** *enablePersistence* <br/> `<ejs-autocomplete id="country" enablePersistence="true"></ejs-autocomplete>`|
@@ -134,7 +134,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Addition of new option watermarktext** | **Property:** *add-new-text* <br/>`<ej-autocomplete id="autocomplete" add-new-text="data"></ej-autocomplete>` | **Not applicable** |
 | **Addition of new item** | **Property:**  *allow-add-new* <br/>`<ej-autocomplete id="autocomplete" allow-add-new="true"></ej-autocomplete>`  | **Property:** *allowCustom*<br/> `<ej-autocomplete id="autocomplete" allowCustom="true"></ej-autocomplete>`|

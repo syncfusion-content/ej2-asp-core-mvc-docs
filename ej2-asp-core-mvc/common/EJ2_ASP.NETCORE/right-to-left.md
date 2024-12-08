@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Right-To-Left support in Syncfusion ASP.NET Core controls
+# Right-To-Left support in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls
 
-The right-to-left (RTL) support can be enabled for Syncfusion ASP.NET Core controls by setting `enableRtl` property to `true`. This will render all the Syncfusion ASP.NET Core controls in the right-to-left direction.
+The right-to-left (RTL) support can be enabled for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls by setting `enableRtl` property to `true`. This will render all the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls in the right-to-left direction.
 
 ## Enable RTL for all controls
 
-You can enable right to left (RTL) for all Syncfusion controls used in the application by setting `enableRtl` property to `true` in the script tag. Add the below code snippet in the **_Layout.cshtml** file inside **body** tag.
+You can enable right to left (RTL) for all Syncfusion<sup style="font-size:70%">&reg;</sup> controls used in the application by setting `enableRtl` property to `true` in the script tag. Add the below code snippet in the **_Layout.cshtml** file inside **body** tag.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}

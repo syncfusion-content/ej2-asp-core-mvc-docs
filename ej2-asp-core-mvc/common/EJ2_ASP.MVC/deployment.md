@@ -10,7 +10,7 @@ documentation: ug
 
 # Deployment in ASP.NET MVC
 
-This section provides information about deploying ASP.NET MVC applications with the Syncfusion ASP.NET MVC controls.
+This section provides information about deploying ASP.NET MVC applications with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 
 Refer to [ASP.NET MVC Deployment](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-6.0) topic for more information.
 

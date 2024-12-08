@@ -10,7 +10,7 @@ documentation: ug
 
 # Size Mode for ASP.NET Core Controls
 
-Syncfusion ASP.NET Core controls support touch (bigger theme) and normal size modes. The following topics explains how to enable the same in your application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls support touch (bigger theme) and normal size modes. The following topics explains how to enable the same in your application.
 
 ## Size mode for application
 
@@ -195,7 +195,7 @@ You can change the font-size for all the controls by overriding the CSS for `e-c
 
 ## See Also
 
-Refer below topics to learn about responsiveness controls based on the available size in Syncfusion ASP.NET Core Controls.
+Refer below topics to learn about responsiveness controls based on the available size in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls.
 
 * [Sidebar Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/sidebar/auto-close/)
 * [DataGrid Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/grid/Columns/responsive-columns/)

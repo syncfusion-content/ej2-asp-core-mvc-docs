@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 ﻿
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of ColorPicker component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of ColorPicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Default |**property**: *value* <br/><br/> `<ej-color-picker id="colorpicker" value="#278787"></ej-color-picker>` | **property:** *value* <br/><br/> `<ejs-colorpicker id="colorpicker" value="#278787"></ejs-colorpicker>` |
 | Inline mode color picker | **property**: *displayInline* <br/><br/> `<ej-color-picker id="colorpicker" display-inline="true" tag-name="div"></ej-color-picker>` | **property:** *inline* <br/><br/> `<ejs-colorpicker id="colorpicker" inline="true"></ejs-colorpicker>` |
@@ -43,7 +43,7 @@ This article describes the API migration process of ColorPicker component from E
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Method to open color picker popup | **Method:** *show* <br/><br/> `<ej-color-picker id="colorpicker"></ej-color-picker>` <br/> var colorPickerObj = $("#colorpicker").data("ejColorPicker"); <br/> colorPickerObj.show(); | **Method:** *toggle* <br/><br/> `<ejs-colorpicker id="colorpicker"></ejs-colorpicker>` <br/> var colorPickerObj = document.getElementById("colorpicker").ej2_instances[0]; <br/> colorPickerObj.toggle();|
 | Method to close color picker popup | **Method:** *hide* <br/><br/> `<ej-color-picker id="colorpicker"></ej-color-picker>` <br/> var colorPickerObj = $("#colorpicker").data("ejColorPicker"); <br/> colorPickerObj.hide(); | **Method:** *toggle* <br/><br/> `<ejs-colorpicker id="colorpicker"></ejs-colorpicker>` <br/> var colorPickerObj = document.getElementById("colorpicker").ej2_instances[0]; <br/>colorPickerObj.toggle(); |
@@ -58,7 +58,7 @@ This article describes the API migration process of ColorPicker component from E
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Event triggers before opening the ColorPicker popup | Not Applicable | **Event:** *beforeOpen* <br/><br/> `<ejs-colorpicker id="colorpicker" beforeOpen="beforeOpen"></ejs-colorpicker>` <br/> function beforeOpen(args) { <br/> &nbsp; &nbsp; /** code block */ <br/> } |
 | Event triggers before closing the ColorPicker popup | Not Applicable | **Event:** *beforeClose* <br/><br/> `<ejs-colorpicker id="colorpicker" beforeClose="beforeClose"></ejs-colorpicker>` <br/> function beforeClose(args) { <br/> &nbsp; &nbsp; /** code block */ <br/> } |

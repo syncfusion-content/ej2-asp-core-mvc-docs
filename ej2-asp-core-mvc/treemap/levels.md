@@ -142,7 +142,7 @@ Customize the font color, family, weight, opacity and size using the `headerStyl
 
 ## Header template and position
 
-The TreeMap header supports to customize header of each item using the `headerTemplate` property. It uses Essential JS2 Template engine to render the elements. You can position the template using the `templatePosition` property.
+The TreeMap header supports to customize header of each item using the `headerTemplate` property. It uses Essential<sup style="font-size:70%">&reg;</sup> JS2 Template engine to render the elements. You can position the template using the `templatePosition` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

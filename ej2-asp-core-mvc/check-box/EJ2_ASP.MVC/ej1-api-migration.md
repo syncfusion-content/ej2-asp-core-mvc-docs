@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Checkbox component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Checkbox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Checkbox label | **Property:** *text* <br/><br/> `@Html.EJ().CheckBox("checkbox").Text("Checkbox")` | **Property:** *label* <br/><br/> `@Html.EJS().CheckBox("checkbox").Label("Checkbox").Render()` |
 | Checked state | **Property:** *enableTriState and checkState* <br/><br/> `@Html.EJ().CheckBox("checkbox").Text("Checked state").EnableTriState(true).CheckState(CheckState.Check)` | **Property:** *checked* <br/><br/> `@Html.EJS().CheckBox("checkbox").Checked(true).Label("Checked state").Render()` |
@@ -37,7 +37,7 @@ This article describes the API migration process of Checkbox component from Esse
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Destroy | **Method:** *destroy* <br/><br/> `@Html.EJ().CheckBox("checkbox").Text("Checkbox")` <br/> var checkbox = $("#checkbox").data("ejCheckBox"); <br/> checkbox.destroy(); | **Method:** *destroy* <br/><br/> `@Html.EJS().CheckBox("checkbox").Label("Checkbox").Render()` <br/>var checkbox = document.getElementById('checkbox').ej2_instances[0]; <br/>checkbox.destroy(); |
 | Disable the Checkbox | **Method:** *disable* <br/><br/> `@Html.EJ().CheckBox("checkbox").Text("Checkbox")` <br/> var checkbox = $("#checkbox").data("ejCheckBox"); <br/>checkbox.disable(); | Not applicable |
@@ -46,7 +46,7 @@ This article describes the API migration process of Checkbox component from Esse
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | BeforeChange Event | **Events:** *beforeChange* <br/><br/> `@Html.EJ().CheckBox("checkbox").Text("Checkbox").BeforeChange("beforeChange")`* <br/><br/>function beforeChange(args) {<br/> &nbsp;&nbsp;&nbsp;&nbsp;/** code block */ <br/>} | Not applicable |
 | Change Event | **Events:** *change* <br/><br/> `@Html.EJ().CheckBox("checkbox").Text("Checkbox").Change("change")`* <br/><br/>function change(args) {<br/> &nbsp;&nbsp;&nbsp;&nbsp;/** code block */ <br/>} | **Events:** *change* <br/><br/> `@Html.EJS().CheckBox("checkbox").Label("Checkbox").Change("change").Render()`* <br/><br/>function change(args) {<br/> &nbsp;&nbsp;&nbsp;&nbsp;/** code block */ <br/>} |

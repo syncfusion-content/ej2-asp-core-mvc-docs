@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of ComboBox component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of ComboBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## DataBinding
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** |	**Property**: *dataSource*<br/>`<ej-combo-box datasource="(IEnumerable<CarsList>)ViewBag.datasource"></ej-combo-box>` | **Property**: *dataSource*<br/>`<ejs-combobox dataSource="@ViewBag.data"></ejs-combobox>` |
 | **Fields for mapping** | **Property**: *fields*<br/>`<ej-combo-box ><e-combo-box-fields text="text" /></ej-combo-box>` | **Property**: *fields*<br/>`<ejs-combobox> <e-combobox-fields text="Game" value="Id"></e-combobox-fields></ejs-combobox>` |
@@ -25,7 +25,7 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Filtering
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *allow-filtering*<br/>`<ej-combo-box allow-filtering = "true"/>` | **Property**: *allowFiltering*<br/>`<ejs-combobox allowFiltering="true"></ejs-combobox>` |
 | **No records template** | **Property**: *no-records-template*<br/>`<ej-combo-box no-records-template="<span class='norecord'> NO DATA AVAILABLE</span>"/>` | **Property**: *noRecordsTemplate*<br/>`<ejs-combobox noRecordsTemplate="<span class='norecord'> NO DATA AVAILABLE</span>"></ejs-combobox>` |
@@ -35,7 +35,7 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Template
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *item-template*<br/>`<ej-combo-box item-template="<div><img class='eimg' src='../images/combobox/${eimg}.png' alt='employee'/><div class='ename'> ${text} </div><div class='temp'> ${country} </div></div>"/>` | **Property**: *itemTemplate*<br/>`<ejs-combobox itemTemplate="<div><img class='eimg' src='../images/combobox/${eimg}.png' alt='employee'/><div class='ename'> ${text} </div><div class='temp'> ${country} </div></div>"></ejs-combobox>`|
 | **Group Template** | **Property**: *group-template*<br/>`<ej-combo-box group-template="<strong>${country}</strong>"/>` | **Property**: *groupTemplate*<br/>`<ejs-combobox groupTemplate="<strong>${country}</strong>"></ejs-combobox>` |
@@ -48,34 +48,34 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Applying CSS
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *css-class* <br/>`<ej-combo-box css-class="customclass"/>` | **Property**: *cssClass*<br/>`<ejs-combobox cssClass="customclass"></ejs-combobox>` |
 | **width** | **Property**: *width* <br/>`<ej-combo-box width="200px"/>` | **Property**: *width*<br/>`<ejs-combobox width="200px"></ejs-combobox>` |
 
 ## Grouping
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *fields.groupBy*<br/>`<ej-combo-box><e-combo-box-fields group-by="SupplierID" /></ej-combo-box>` | **Property**: *fields.groupBy*<br/>`<ejs-combobox> <e-combobox-fields groupBy="Id"></e-combobox-fields></ejs-combobox>` |
 
 ## Accessibility
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Globalizaation** | **Property**: *locale*<br/>`<ej-combo-box locale="fr-FE"/>` | **Property**: *locale*<br/>`<ejs-combobox locale="fr-FE"/>` |
 | **Rtl support** | **Property**: *enable-rtl*<br/>`<ej-combo-box enable-rtl="true"/>` | **Property**: *enableRtl*<br/>`<ejs-combobox enableRtl="true"/>` |
 
 ## Placeholder
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Watermark text** | **Property**: *placeholder*<br/>`<ej-combo-box placeholder="select"/>` | <br/>**Property**: *placeholder*<br/>`<ejs-combobox placeholder="select"/>` |
 | **Floating  of waterMarkText** | **Not applicable** | **Property**: *floatLabelType*<br/>`<ejs-combobox floatLabelType="Auto"/>` |
 
 ## Miscellaneous
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Enable/disable** | **Property**: *enabled*<br/>`<ej-combo-box enabled="true"></ej-combo-box>` | **Property**: *enabled*<br/>`<ejs-combobox enabled="true"/>` |
 | **Read only** | **Property**: *read-only*<br/>`<ej-combo-box read-only="true"></ej-combo-box>` | **Property**: *readOnly*<br/>`<ejs-combobox readOnly="true"/>` |
@@ -83,13 +83,13 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Sorting
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Order of sorting** | **Property**: *sort-order*<br/>`<ej-combo-box sort-order="Ascending"></ej-combo-box>` | **Property**: *sortOrder*<br/>`<ejs-combobox sortOrder="Ascending"/>` |
 
 ## Selection
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Selecting particular index** | **Property**: *index*<br/>`<ej-combo-box index="1"></ej-combo-box>` | **Property**: *index*<br/>`<ejs-combobox index="1"/>` |
 | **Selecting particular value** | **Property**: *value*<br/>`<ej-combo-box value="car"></ej-combo-box>` | **Property**: *value*<br/>`<ejs-combobox value="car"/>` |
@@ -99,7 +99,7 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Popup
 
-| Behavior| API in Essential JS 1 | API in Essential JS 2 |
+| Behavior| API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Popup height** | **Property**: *popup-height*<br/>`<ej-combo-box popup-height="300px"></ej-combo-box>`|**Event**:*popupHeight*<br/>`<ejs-combobox popupHeight="300px"/>`|
 | **Popup width** | **Property**: *popup-width*<br/>`<ej-combo-box popup-width="300px"></ej-combo-box>`|**Event**:*popupWidth*<br/>`<ejs-combobox popupWidth="300px"/>` |
@@ -110,7 +110,7 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Common
 
-| Behavior | API in Essential JS 1 |API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 |API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Adding new item** | **Method** : *addItem*<br/>`<ej-combo-box></ej-combo-box>` <br/> <br/>$('#dropdown').ejComboBox("addItem", { text :"India"});| **Method**: *addItem*<br/>`<ejs-combobox />`<br/><br/>var cmbObj = document.getElementById(combobox).ej2_Instances[0];<br/><br/> cmbObj.addItem({Id: 'id', Game: 'Golf'},2);|
 | **Focus out event** | **Not applicable** | **Event**: *blur*<br/>`<ejs-combobox blur="onblur"/>` |

@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
 This topic shows the API equivalent of JS2 Gantt component to be used, while migrating your project that uses JS1 Gantt.
 
 ## Data Binding and Task mapping
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Data Binding | **Property:** *Datasource* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.Datasource(ViewBag.datasource)`<br>`)` | **Property:** *Datasource* <br/><br/>`@Html.EJS().Gantt("Gantt")`<br>`.DataSource((IEnumerable<object>)ViewBag.DataSource)`<br>`.Render()`|
 | To map id of task from data source | **Property:** *TaskIdMapping* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.TaskIdMapping("Id")`<br>`)` | **Property:** *TaskFields.Id* <br/><br/>`@Html.EJS().Gantt("Gantt")`<br>`.TaskFields(ts => ts.Id("TaskId")).Render()` |
@@ -36,7 +36,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Sorting
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Default | **Property:** *AllowSorting* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.AllowSorting(true)`<br>`)` | **Property:** *AllowSorting* <br/><br/>`@Html.EJS().Gantt("Gantt")`<br>`.AllowSorting(true).Render()` |
 | To enable/disable multiple sorting option | **Property:** *AllowMultiSorting* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.AllowMultiSorting(true)`<br>`)` | **Property:** *AllowSorting* <br/><br/>`@Html.EJS().Gantt("Gantt")`<br>`.AllowSorting(true).Render()` |
@@ -46,7 +46,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Filtering
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Filter column Initially | **Property:** *FilterSettings.FilteredColumns* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.FilterSettings(filter => {`<br>&nbsp;`filter.FilteredColumns(filtered => {`<br>&nbsp;&nbsp;`filtered.Value("plan").Field("taskName").Predicate("and")`<br>&nbsp;`.Operator(FilterOperatorType.StartsWith).Add();`<br>&nbsp;&nbsp;`});`<br>&nbsp;&nbsp;`})`<br>`)` | **Property:** *FilterSettings.Columns* <br/><br/>`@{`<br>`List<object> filterColumns = new List<object>();`<br>`filterColumns.Add(new { field = "TaskName", matchCase = false, @operator = "startswith", predicate = "and", value = "Identify" });`<br>`}`<br><br>`@Html.EJS().Gantt("Gantt")`<br>`.AllowFiltering(true)`<br>`.FilterSettings(filter => filter.Columns(filterColumns)).Render()` |
 | Filter records in Gantt | **Method:** *filterColumn(fieldName, filterOperator, filterValue, [predicate], [matchCase])* <br/><br/>`@(Html.EJ().Gantt("Gantt"))`<br><br>**Script:**<br>`<script>`<br>`var ganttObj = $("#Gantt").data("ejGantt");`<br>`ganttObj.filterColumn("taskName", "startswith", "plan");`<br/>`</script>` | **Method:** *filterByColumn(fieldName, filterOperator, filterValue, [predicate], [matchCase],[ignoreAccent])* <br/><br/>`@Html.EJS().Gantt("Gantt").Render()`<br><br>**Script:**<br>`<script>`<br>`var ganttObj = document.getElementById('Gantt').ej2_instances[0];`<br>`ganttObj.filterByColumn('taskName', 'startswith', 'plan');`<br/>`</script>` |
@@ -55,14 +55,14 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Searching
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Default | **Property:** *ToolbarSettings.ToolbarItems* <br><br> `@(Html.EJ().Gantt("Gantt")`<br>`.ToolbarSettings(toolbar=> {`<br>&nbsp;`toolbar.ShowToolbar(true);`<br>&nbsp;`toolbar.ToolbarItems(new List<GanttToolBarItems>() { GanttToolBarItems.Search });`<br>`})`<br>`)` | **Property:** *Toolbar* <br><br> `@Html.EJS().Gantt("Gantt")`<br>`.Toolbar(new List<string>() { "Search" }).Render()`<br>|
 | Search records in Gantt | **Method:** *searchItem(key)* <br/><br/>`@(Html.EJ().Gantt("Gantt"))`<br><br>**Script:**<br>`<script>`<br>`var ganttObj = $("#Gantt").data("ejGantt");`<br>`ganttObj.searchItem("plan");`<br/>`</script>` | **Method:** *search(key)* <br/><br/>`@Html.EJS().Gantt("Gantt").Render()`<br><br>**Script:**<br>`<script>`<br>`var ganttObj = document.getElementById('Gantt').ej2_instances[0];`<br>`ganttObj.search('plan');`<br/>`</script>`|
 
 ## Selection
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Default | **Property:** *AllowSelection* <br><br> `@(Html.EJ().Gantt("Gantt")`<br>`.AllowSelection(true)`<br>`)`| **Property:** *AllowSelection* <br><br>`@Html.EJS().Gantt("Gantt")`<br>`.AllowSelection(true).Render()` |
 | To define selection type in Gantt | **Property:** *SelectionType* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.SelectionType(GanttSelectionType.Multiple)`<br>`)`| **Property:** *SelectionSettings.Type* <br/><br/>`@Html.EJS().Gantt("Gantt")`<br>`.SelectionSettings(ss => ss.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()` |
@@ -78,7 +78,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Editing
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | Default | **Property:** *EditSettings* <br><br> `@(Html.EJ().Gantt("Gantt")`<br>`.EditSettings(edit=> {`<br>`edit.AllowEditing(true);`<br>`edit.AllowAdding(true);`<br>`edit.AllowDeleting(true);`<br>`edit.ShowDeleteConfirmDialog(true);`<br>`})`<br>`)` | **Property:** *EditSettings* <br><br> `@Html.EJS().Gantt("Gantt")`<br>`.EditSettings(es=>es.AllowEditing(true)`<br>`.AllowAdding(true)`<br>`.AllowDeleting(true)`<br>`.ShowDeleteConfirmDialog(true)).Render()` |
 |   Cell Editing           | **Property:** *EditSettings.editMode* <br/> <br/> `@(Html.EJ().Gantt("Gantt")`<br>`.EditSettings(edit=> {`<br>&nbsp;`edit.EditMode("cellEditing");`<br>`})`<br>`)` | **Property:** *EditSettings.mode* <br/><br/> `@Html.EJS().Gantt("Gantt")`<br>`.EditSettings(es=>`<br>`es.Mode(Syncfusion.EJ2.Gantt.EditMode.Auto)).Render()` |
@@ -106,7 +106,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Columns
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To enable/disable column resize | **Property:** *AllowColumnResize* <br/> <br/> `@(Html.EJ().Gantt("Gantt")`<br>`.AllowColumnResize(true)`<br>`)`| **Property:** *AllowResizing* <br/><br/> `@Html.EJS().Gantt("Gantt")`<br>`.AllowResizing(true).Render()`|
 | To enable/disable column chooser | **Property:** *ShowColumnChooser* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.ShowColumnChooser(true)`<br>`)`| **Property:** *ShowColumnMenu* <br/><br/>`@Html.EJS().Gantt("Gantt")`<br>`.ShowColumnMenu(true).Render()`|
@@ -118,7 +118,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Toolbar
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To configure default toolbars of Gantt | **Property:** *ToolbarSettings.toolbarItems* <br/> <br/> `@(Html.EJ().Gantt("Gantt")`<br>`.ToolbarSettings(toolbar => {`<br>&nbsp;`toolbar.ShowToolbar(true);`<br>&nbsp;`toolbar.ToolbarItems(new List<GanttToolBarItems>() {`<br>&nbsp;&nbsp;`GanttToolBarItems.Add,`<br>&nbsp;&nbsp;`GanttToolBarItems.Edit,`<br>&nbsp;&nbsp;`GanttToolBarItems.Delete,`<br>&nbsp;&nbsp;`GanttToolBarItems.Update,`<br>&nbsp;&nbsp;`GanttToolBarItems.Cancel,`<br>&nbsp;&nbsp;`GanttToolBarItems.ExpandAll,`<br>&nbsp;&nbsp;`GanttToolBarItems.CollapseAll,`<br>&nbsp;&nbsp;`GanttToolBarItems.Search,`<br>&nbsp;&nbsp;`GanttToolBarItems.PrevTimeSpan,`<br>&nbsp;&nbsp;`GanttToolBarItems.NextTimeSpan`<br>&nbsp;`});,`<br>`})`<br>`)`|  **Property:** *Toolbar* <br/><br/> `@Html.EJS().Gantt("Gantt")`<br>`.Toolbar(new List<string>() { "Add", "Cancel", "CollapseAll", "Delete", "Edit", "ExpandAll","NextTimeSpan",`<br>&nbsp;&nbsp;`"PrevTimeSpan", "Search", "Update" }).Render()` |
 | Other toolbars | **Property:** *ToolbarSettings.toolbarItems* <br/> <br/> `@(Html.EJ().Gantt("Gantt")`<br>`.ToolbarSettings(toolbar => {`<br>&nbsp;`toolbar.ShowToolbar(true);`<br>&nbsp;`toolbar.ToolbarItems(new List<GanttToolBarItems>() {`<br>&nbsp;&nbsp;`GanttToolBarItems.Indent,`<br>&nbsp;&nbsp;`GanttToolBarItems.Outdent,`<br>&nbsp;&nbsp;`GanttToolBarItems.CriticalPath,`<br>&nbsp;&nbsp;`GanttToolBarItems.ExcelExport,`<br>&nbsp;&nbsp;`GanttToolBarItems.PdfExport`<br>`];`| Not applicable |
@@ -127,7 +127,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## ToolTip
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To enable taskbar tooltip | **Property:** *EnableTaskbarTooltip* <br/> <br/> `@(Html.EJ().Gantt("Gantt")`<br>`.EnableTaskbarTooltip(true)`<br>`)`|  **Property:** *TooltipSettings.showTooltip* <br/><br/> `@Html.EJS().Gantt("Gantt")`<br>`.TooltipSettings(ts => ts.ShowTooltip(true)).Render()` |
 | To define tooltip for all cells | **Property:** *CellTooltipTemplate* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.CellTooltipTemplate("#CustomToolTip")`<br>`)`| Not applicable|
@@ -145,7 +145,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Timeline
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To configure timeline settings in Gantt | **Property:** *ScheduleHeaderSettings* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.ScheduleHeaderSettings(sh=>sh.WeekHeaderFormat("MMM dd , yyyy ")`<br/> `.DayHeaderFormat("ddd ")` <br/>`.YearHeaderFormat("yyyy")`<br/> `.MonthHeaderFormat("MMM yyyy")`<br/>`.HourHeaderFormat("HH")`<br/> `.ScheduleHeaderType(GanttScheduleHeaderType.Week)` <br/> `.MinutesPerInterval(GanttMinutesPerInterval.FiveMinutes)`<br/>`.WeekendBackground("#F2F2F2")`<br/> `.TimescaleStartDateMode(GanttTimescaleRoundMode.Month)` <br/> `.TimescaleUnitSize("70%")` <br/> `.WeekStartDay(3)`<br/> `.UpdateTimescaleView(false))`<br>`)`| **Property:** *TimelineSettings* <br/><br/>`@Html.EJS().Gantt("Gantt")`<br>`.TimelineSettings(ts=>`<br>`ts.TimelineViewMode(Syncfusion.EJ2.Gantt`<br>`.TimelineViewMode.Week)`<br/>&nbsp;`.TimelineUnitSize(150)`<br/>&nbsp;`.WeekStartDay(3)`<br/>&nbsp;`.ShowTooltip(true)`<br/>&nbsp;`.WeekendBackground("#F2F2F2")`<br/>&nbsp;`.UpdateTimescaleView(false)`<br/>&nbsp;`.TopTier(tt => tt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Month)`<br>`.Format("MMM"))`<br/>&nbsp;`.BottomTier(bt => bt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Day))`<br>`).Render()`|
 | To define weekend background in Gantt | **Property:** *WeekendBackground* <br/> <br/> `@(Html.EJ().Gantt("Gantt")`<br>`.WeekendBackground("rgba(116, 195, 231, 0.26)")`<br>`)` | Not applicable |
@@ -157,7 +157,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Rows
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To enable/disable row drag and drop | **Property:** *AllowDragAndDrop* <br/> <br/> `@(Html.EJ().Gantt("Gantt")`<br>`.AllowDragAndDrop(true)`<br>`)`| Not applicable |
 | To enable/disable alternate row background | **Property:** *EnableAltRow* <br/> <br/> `@(Html.EJ().Gantt("Gantt")`<br>`.EnableAltRow(false)`<br>`)`| Not applicable |
@@ -177,7 +177,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Resources
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To map resources | **Property:** *Resources* <br><br> `@(Html.EJ().Gantt("Gantt")`<br>`.Resources(ViewBag.resource)`<br>`)`| **Property:** *Resources* <br><br>`@Html.EJS().Gantt("Gantt")`<br>`.Resources((IEnumerable<object>)ViewBag.projectResources)`<br>`.Render()`|
 | To map resource id field from resource collection | **Property:** *ResourceIdMapping* <br/> <br/> `@(Html.EJ().Gantt("Gantt")`<br>`.ResourceIdMapping("ResourceId")`<br>`)`|  **Property:** *ResourceIDMapping* <br/><br/> `@Html.EJS().Gantt("Gantt")`<br>`.ResourceIdMapping("ResourceId")`<br>`.Render()` |
@@ -191,14 +191,14 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Baseline
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To render baseline | **Property:** *RenderBaseline* <br><br> `@(Html.EJ().Gantt("Gantt")`<br>`.RenderBaseline(true)`<br>`)`| **Property:** *RenderBaseline* <br><br>`@Html.EJS().Gantt("Gantt")`<br>`.RenderBaseline(true).Render()` |
 | To define baselineColor | **Property:** *BaselineColor* <br><br> `@(Html.EJ().Gantt("Gantt")`<br>`.BaselineColor("#fba41c")`<br>`)`| **Property:** *BaselineColor* <br><br>`@Html.EJS().Gantt("Gantt")`<br>`.BaselineColor("#fba41c")`<br>`.Render()` |
 
 ## Context Menu
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To enable context menu | **Property:** *EnableContextMenu* <br><br> `@(Html.EJ().Gantt("Gantt")`<br>`.EnableContextMenu(true)`<br>`)`| **Property:** *EnableContextMenu* <br><br>`@Html.EJS().Gantt("Gantt")`<br>`.EnableContextMenu(true).Render()` |
 | To define custom menu items  | **Event:** *ContextMenuOpen* <br><br>`@(Html.EJ().Gantt("Gantt").ClientSideEvents(e =>`<br>`e.ContextMenuOpen("contextMenuOpen"))`<br><br>**Script:**<br>`<script>`<br>`function contextMenuOpen() {`<br/>&nbsp;&nbsp;`event.contextMenuItems.push({`<br>&nbsp;&nbsp;&nbsp;`headerText: "Expand/Collapse",`<br>&nbsp;&nbsp;&nbsp;`menuId: "expand",`<br>&nbsp;&nbsp;&nbsp;`iconPath: "url(Expand-02-WF.png)",`<br>&nbsp;&nbsp;&nbsp;`eventHandler: function() {`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`//event handler for custom menu items`<br>&nbsp;&nbsp;&nbsp;`}`<br>`});`<br/>`</script>`<br>`</script>`| **Property:** *ContextMenuItems* <br><br>`@{`<br>`List<object> contextItems = new List<object>(); {`<br>`contextItems.Add(new { text = "Collapse the Row", target = ".e-content", id = "collapserow" });`<br>`contextItems.Add(new { text = "Expand the Row", target = ".e-content", id = "expandrow" });`<br>`}`<br><br>`@Html.EJS().Gantt("Gantt")`<br>`.ContextMenuItems(contextItems).Render()`|
@@ -206,7 +206,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Scheduling Tasks
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To define task scheduling mode in Gantt | **Property:** *TaskSchedulingMode* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.TaskSchedulingMode(GanttTaskSchedulingMode.Auto)`<br>`)`| Not applicable |
 | To map task scheduling mode from data source | **Property:** *TaskSchedulingModeMapping* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`tTaskSchedulingModeMapping("TaskMode")`<br>`)`| Not applicable |
@@ -220,7 +220,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Appearance and Customizations
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To define taskbar background type in Gantt | **Property:** *TaskbarBackground* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.TaskbarBackground("#1764d7")`<br>`)`| Not applicable |
 | To define background color for parent taskbar | **Property:** *ParentTaskbarBackground* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.ParentTaskbarBackground("#91dc88")`<br>`)`| Not applicable |
@@ -246,20 +246,20 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 
 ## Stripline
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To define striplines | **Property:** *StripLines* <br><br> `@(Html.EJ().Gantt("Gantt")`<br>`.StripLines(new List<Syncfusion.JavaScript.Models.StripLine> {`<br>`new Syncfusion.JavaScript.Models.StripLine() {`<br>&nbsp;`Day="03/02/2014",`<br>&nbsp;`Label="Project Release",`<br>&nbsp;`LineStyle="dotted",`<br>&nbsp;`LineColor="blue",`<br>&nbsp;`LineWidth=2},`<br>`})`<br>`)`| **Property:** *EventMarkers* <br><br>`@Html.EJS().Gantt("Gantt")`<br>`.EventMarkers(em => {`<br>&nbsp;`em.Day("04/10/2019")`<br>`.Label("Project approval and kick-off")`<br>`.CssClass("e-custom-event-marker").Add();`<br>`}).Render()` |
 
 ## Holidays
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To define holidays | **Property:** *Holidays* <br><br> `@(Html.EJ().Gantt("Gantt")`<br>`.Holidays(new List<Syncfusion.JavaScript.Models.Holiday> {`<br>`new Syncfusion.JavaScript.Models.Holiday() {`<br>&nbsp;`Day="2/03/2014",`<br>&nbsp;`Background="YellowGreen",`<br>&nbsp;`Label="Public holiday"`<br>&nbsp;`},`<br>`})`<br>`)`| **Property:** *Holidays* <br><br>`@Html.EJS().Gantt("Gantt")`<br>`.Holidays(hol=> {`<br>`hol.From("04/11/2019")`<br>`.To("04/12/2019")`<br>`.Label("Public holidays")`<br>`.CssClass("e-custom-holiday").Add();`<br>`}).Render` |
 | To define days in holiday collection | **Property:** *Holidays.day* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.Holidays(new List<Syncfusion.JavaScript.Models.Holiday> {`<br>`new Syncfusion.JavaScript.Models.Holiday() {`<br>&nbsp;`Day="2/03/2014"`<br>&nbsp;`},`<br>`})`<br>`)`| **Property:** *Holidays.from* <br/><br/>`@Html.EJS().Gantt("Gantt")`<br>`..Holidays(hol=> {`<br>`hol.From("04/11/2019").Add();`<br>`}).Render`|
 
 ## Others
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To define height for Gantt | **Property:** *SizeSettings.height* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.SizeSettings(size=>size.Height("350px"))`<br>`)`|  **Property:** *Height* <br/><br/>`@Html.EJS().Gantt("Gantt")`<br>`.Height("450px").Render()`|
 | To define width for Gantt | **Property:** *SizeSettings.width* <br/><br/> `@(Html.EJ().Gantt("Gantt")`<br>`.SizeSettings(size=>size.Width("700px"))`<br>`)`|  **Property:** *Width* <br/><br/>`@Html.EJS().Gantt("Gantt")`<br>`.Width("700px").Render()`|

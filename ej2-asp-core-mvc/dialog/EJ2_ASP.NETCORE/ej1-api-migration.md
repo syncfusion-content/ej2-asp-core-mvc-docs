@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Dialog control from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Dialog control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility and localization
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ---------- | ----------------------- | ----------------------- |
 | Keyboard Navigation | **Property** : allowKeyboardNavigation<br/> <br/>`<ej-dialog id="dialog" allow-keyboard-navigation="true"></ej-dialog>` | No separate Property for enable/disable keyboard navigation.  Its enabled by default. |
 | Localization | **Property** : locale<br/> <br/>`<ej-dialog id="dialog" locale="es-ES"></ej-dialog>` | **Property** : locale<br/> <br/>`<ejs-dialog id="dialog" locale="es-ES"></ejs-dialog>` |
@@ -23,7 +23,7 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Header
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Header Content | **Property** : title<br/> <br/>`<ej-dialog id="dialog" title="EJ1 Dialog header"></ej-dialog>`<br/>   **Method** : setTitle<br/> $('#dialog').ejDialog('setTitle', 'EJ1 Dialog Header'); | **Property** : header<br/> <br/>`<ejs-dialog id="dialog" header="EJ2 Dialog"></ejs-dialog>` |
 | close button | **Property** : actionButtons<br/> <br/> `@{List<string> icon = new List<string>() { "close" }; }`<br/><br/>`<ej-dialog id="dialog" action-buttons="icon">`<br/> | **Property** : showCloseIcon<br/> <br/>`<ejs-dialog id="dialog" showCloseIcon="true"></ejs-dialog>` |
@@ -39,7 +39,7 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Footer
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Footer Content | **Property** :footerTemplateId<br/> <br/>`<ej-dialog id="dialog" footer-templateId="sample"></ej-dialog>` | **Property:** footerTemplate<br/> <br/>`<ejs-dialog id="dialog" footerTemplate="<button>Submit</button>"></ejs-dialog>` |
 | Footer action buttons | Not applicable | **Property** : buttons<br/> <br/>`<ejs-dialog id="dialog"><e-dialog-buttons><e-dialog-dialogbutton buttonModel="ViewBag.defaultbutton"></e-dialog-dialogbutton></e-dialog-buttons><ejs-dialog>`<br/><br/>`public IActionResult DefaultFunctionalities() { {content = "Ok"} return View(); }`<br/> |
@@ -47,7 +47,7 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Content
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Dialog content | **Method** : setContent<br/> <br/>`<ej-dialog id="dialog"></ej-dialog>`<br/> $('#dialog').ejDialog('setContent', 'Dialog Content') | **Property** : content<br/> <br/>`<ejs-dialog id="dialog" content="Dialog content"></ejs-dialog>` |
 | Loading content using AJAX request | **Property** : contentType, contentUrl<br/> <br/>`<ej-dialog id="dialog" content-type="ajax" content-url=""></ej-dialog>` | Not Applicable |
@@ -57,7 +57,7 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Animation
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Enabling Animation | **Property** : enableAnimation<br/> <br/>`<ej-dialog id="dialog" enable-animation="true" ></ej-dialog>`| Not Applicable |
 | Animation effects | **Property** : animation.show.effect<br/> <br/>`<ej-dialog id="dialog"></ej-dialog>`<br/><br/>`<e-animation><e-show effect="Slide" /></e-animation>`<br/> | **Property** : animationSettings.effect<br/><br/> `@{ var defaultanimation = new Syncfusion.EJ2.Popups.DialogAnimationSettings { Effect = Syncfusion.EJ2.Popups.DialogEffect.Zoom }; }`<br/><br/>`<ejs-dialog id="dialog" animationSettings="defaultanimation"><ejs-dialog>`<br/> |
@@ -66,7 +66,7 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Draggable and resizing
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Draggable dialog | **Property** : allowDraggable<br/> <br/>`<ej-dialog id="dialog" allow-draggable="true" ></ej-dialog>` | **Property** : allowDragging<br/> <br/>`<ejs-dialog id="dialog" allowDragging="true"></ejs-dialog>` |
 | Event triggers when the user drags the dialog | **Event:** drag<br/> <br/>`<ej-dialog id="dialog" drag="onDrag"></ej-dialog>`<br/><br/>`function onDrag(args) {}`<br/> | **Event:** drag<br/> <br/>`<ejs-dialog id="dialog" drag="onDrag"></ejs-dialog>`<br/><br/>`function onDrag(args) {}`<br/> |
@@ -79,52 +79,52 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Target
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Target element to append dialog in document | **Property** : target <br/> <br/>`<ej-dialog id="dialog" target="#dialogTarget" ></ej-dialog>` | **Property**: target<br/> <br/>`<ejs-dialog id="dialog" target="#dialogTarget"></ejs-dialog>` |
 | Element for draggable area | **Property** : containment<br/> <br/>`<ej-dialog id="dialog" containment="#dragArea" ></ej-dialog>` | Not applicable |
 
 ## Position
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Customizing dialog position using X, Y coordinate values | **Property** : position<br/> <br/>`<ej-dialog id="dialog"><e-dialog-position x-value="300" y-value="100" /></ej-dialog>`<br/> | **Property** : position<br/><br/> `<ejs-dialog id="dialog">`<br/>`<e-dialog-position X="300" Y="100"></e-dialog-position></ejs-dialog>`<br/> |
 | positioning dialog using position values | Not Applicable | **Property**: position<br/> <br/> `<ejs-dialog id="dialog">`<br/>`<e-dialog-position X="center" Y="center"></e-dialog-position></ejs-dialog>`<br/> |
 
 ## Visibility
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Render dialog in visible/hidden state | **Property:** showOnInit<br/> <br/>`<ej-dialog id="dialog" show-onInit="true" ></ej-dialog>` | **Property:** visible<br/> <br/>`<ejs-dialog id="dialog" visible="false"></ejs-dialog>` |
 
 ## Dialog mode
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Render modal dialog | **Property** : enableModal<br/> <br/>`<ej-dialog id="dialog" enable-modal="true" ></ej-dialog>` | **Property** : isModal<br/> <br/> `<ejs-dialog id="dialog" isModal="true"></ejs-dialog>` |
 
 ## Tooltip
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Sets the tooltip for dialog buttons | **Property** : tooltip<br/><br/> `<ej-dialog id="dialog" tooltip="tooltip"></ej-dialog>`<br/><br/>`function tooltip(): object { close: 'Exit' }`<br/> | No Separate Property for tooltip. It renders based on locale text. |
 
 ## Control state
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Enable/Disable the control | **Property** : enabled <br/><br/> `<ej-dialog id="dialog" enabled="false" ></ej-dialog>` | Not Applicable |
 | Enable/ Disable page scrolling | **Property:** backgroundScroll<br/> <br/>`<ej-dialog id="dialog" background-scroll="false" ></ej-dialog>` | No separate Property for disabling page scroll. By default, scrolling prevented for modal dialog |
 
 ## State maintenance
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Save the model values in local storage or cookies | **Property** : enablePersistence <br/> <br/>`<ej-dialog id="dialog" enable-persistence="true" ></ej-dialog>` | **Property** : enablePersistence <br/><br/>`<ejs-dialog id="dialog" enablePersistence="true"></ejs-dialog>` |
 
 ## Common
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Adjusting Height | **Property** : height <br/><br/>`<ej-dialog id="dialog" height="400" ></ej-dialog>` | **Property** : height <br/><br/> `<ejs-dialog id="dialog" height="50%"></ejs-dialog>` |
 | Adjusting width | **Property:** width <br/><br/>`<ej-dialog id="dialog" width="400" ></ej-dialog>` | **Property** : width <br/><br/> `<ejs-dialog id="dialog" width="50%"></ejs-dialog>` |

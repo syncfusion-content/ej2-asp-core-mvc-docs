@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Chart component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Chart component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accumulation Chart
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Annotations | **Property:** *e-annotations* <br/> <br/> `<ej-chart id="chartContainer">`<br>`<e-annotations>`<br>`<e-annotation>`<br>`</e-annotation>`<br>`</e-annotations>`<br>`</ej-chart>` | **Property:** *e-accumulationchart-accumulationannotations* <br/><br/> `<ejs-accumulationchart id="container">`<br>`<e-accumulationchart-accumulationannotations>` <br> `<e-accumulationchart-accumulationannotation>` <br> `</e-accumulationchart-accumulationannotation>` <br> `</e-accumulationchart-accumulationannotations>` <br> `</ejs-accumulationchart>` |
 | Background | **Property:** *background* <br/> <br/> `<ej-chart id="chartContainer" background="#DDCCEE">`<br> `</ej-chart>` | **Property:** *background* <br/><br/> `<ejs-accumulationchart id="container" background="#DDCCEE">` <br> `</ejs-accumulationchart>` |
@@ -39,7 +39,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Annotation
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Annotations | **Property:** *annotations* <br/> <br/> `<ej-chart id="chartContainer">`<br>`<e-annotations>`<br>`<e-annotation>` <br> `</e-annotation>` <br> `</e-annotations>` <br> `</ej-chart>` | **Property:** *e-accumulationchart-accumulationannotations* <br/><br/> `<ejs-accumulationchart id="container">`<br>`<e-accumulationchart-accumulationannotations>` <br> `<e-accumulationchart-accumulationannotation>` <br> `</e-accumulationchart-accumulationannotation>` <br> `</e-accumulationchart-accumulationannotations>` <br> `</ejs-accumulationchart>` |
 | Content | **Property:** *content* <br/> <br/> `<ej-chart id="chartContainer">`<br>`<e-annotations>`<br>`<e-annotation content="Chart">` <br> `</e-annotation>` <br> `</e-annotations>` <br> `</ej-chart>` | **Property:** *content* <br/><br/> `<ejs-accumulationchart id="container">`<br>`<e-accumulationchart-accumulationannotations>` <br> `<e-accumulationchart-accumulationannotation>` <br> `</e-accumulationchart-accumulationannotation content="<div>Pie Chart</div>">` <br> `</e-accumulationchart-accumulationannotations>` <br> `</ejs-accumulationchart>` |
@@ -56,7 +56,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Series
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Series | **Property:** *e-series* <br/> <br/> `<ej-chart id="chartContainer">` <br> `<e-chart-series>` <br> `<e-series >` <br> `</e-series>` <br> `</e-chart-series>` <br> `</ej-chart>` | **Property:** *e-accumulation-series* <br/><br/> `<ejs-accumulationchart id="container">` <br> `<e-accumulation-series-collection>` <br> `<e-accumulation-series>` <br> `</e-accumulation-series>` <br> `</e-accumulation-series-collection>` <br> `</ejs-accumulationchart>` |
 | animation for series | **Property:** *enableAnimation* <br/> <br/> `<ej-chart id="chartContainer">` <br> `<e-chart-series>` <br> `<e-series enableAnimation="true">` <br> `</e-series>` <br> `</e-chart-series>` <br> `</ej-chart>` | **Property:** *enable* <br/><br/> `<ejs-accumulationchart id="container">` <br> `<e-accumulation-series-collection>` <br> `<e-accumulation-series>` <br> `</e-accumulation-series>` <br> `</e-accumulation-series-collection>` <br> `</ejs-accumulationchart>` |
@@ -95,7 +95,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## DataLabel
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | DataLabel for series | **Property:** *e-data-label* <br/> <br/>  `<ej-chart id="chartContainer">` <br> `<e-chart-series>` <br> `<e-series>` <br> `<e-marker>` <br> `<e-data-label>` <br> `</e-data-label>` <br> `</e-marker>` <br> `</e-series>` <br> `</e-chart-series>` <br> `</ej-chart>` | **Property:** *e-accumulationseries-datalabel* <br/><br/> `<ejs-accumulationchart id="container">` <br> `<e-accumulation-series-collection>` <br> `<e-accumulation-series>` <br> `<e-accumulationseries-datalabel fill="red">` <br> `</e-accumulationseries-datalabel>` <br> `</e-accumulation-series>` <br> `</e-accumulation-series-collection>` <br> `</ejs-accumulationchart>` |
 | border of dataLabel | **Property:** *e-data-label.e-border* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-chart-series>` <br> `<e-series>` <br> `<e-marker>` <br> `<e-data-label>` <br> `<e-border color="red" width="2">` <br> `</e-border>` <br> `</e-data-label>` <br> `</e-marker>` <br> `</e-series>` <br> `</e-chart-series>` <br> `</ej-chart>` | **Property:** *e-accumulationseries-datalabel-border* <br/><br/> `<ejs-accumulationchart id="container">` <br> `<e-accumulation-series-collection>` <br> `<e-accumulation-series>` <br> `<e-accumulationseries-datalabel>` <br>`<e-accumulationseries-datalabel color="red" width="2">` <br> `</e-accumulationseries-datalabel>` <br> `</e-accumulationseries-datalabel>` <br> `</e-accumulation-series>` <br> `</e-accumulation-series-collection>` <br> `</ejs-accumulationchart>` |
@@ -109,7 +109,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Legend
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Default legend | **Property:** *visible* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-legend visible="true">` <br> `</e-legend>` <br> `</ej-chart>` | **Property:** *visible* <br/><br/> `<ejs-accumulationchart id="container">` <br> `<e-accumulationchart-legendsettings visible="true">` <br>  `</e-accumulationchart-legendsettings>` <br> `</ejs-accumulationchart>` |
 | Legend height | **Property:** *e-size.height* <br/><br/> `<ej-chart id="chartContainer">` <br> `<e-legend>` <br> `<e-size height="100" >` <br> `</e-size>` <br> `</e-legend>` <br> `</ej-chart>` | **Property:** *height* <br/><br/> `<ejs-accumulationchart id="container">` <br> `<e-accumulationchart-legendsettings height="30">` <br>  `</e-accumulationchart-legendsettings>` <br> `</ejs-accumulationchart>` |
@@ -138,7 +138,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Animation for series | **Property:** *chart.animate* <br/><br/>  `<ej-chart id="chart">` <br> `</ej-chart>` <br> `<script>` <br> <code> var chartobj= $("#chart").ejchart(instance); <br> chartobj.animate();</code> `</script>` | Not applicable |
 | Redraw for chart | **Property** *chart.redraw* <br/><br/> `<ej-chart id="chart">` <br> `</ej-chart>` <br> `<script>` <br> <code> var chartobj= $("#chart").ejchart(instance); <br> chartobj.redraw();</code> <br> `</script>` | **Property:** *chart.refresh()* <br/><br/>  `<ejs-accumulationchart id="chart">` <br> `</ejs-accumulationchart>` <br> `<script>` <br> <code> var chartobj= document.getElementById('chart').ej2_instances[0]; <br> chartobj.refresh(); </code> <br> `</script>` |
@@ -149,7 +149,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Fires on annotation click | **Property:** *annotation-click* <br/><br/> `<ej-chart id="chart" annotation-click="annotaionclick">` <br> `</ej-chart>` <br> `<script>` <br> <code> function annotaionclick(args) { <br> } <br> </code> `</script>` | Not applicable |
 | Fires after animation | **Property:** *animation-complete* <br/><br/> `<ej-chart id="chart" animation-complete="animationcomplete">` <br> `</ej-chart>` <br> `<script>` <br> <code> function animationcomplete(args) { <br> } <br> </code> `</script>` | **Property:** *animationComplete* <br/><br/> `<ejs-accumulationchart  id="chart" animationComplete="animationComplete">` <br> `</ejs-accumulationchart >` <br> `<script>` <br> <code> function animationComplete(args) { <br> } <br> </code> `</script>`|

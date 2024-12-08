@@ -9,20 +9,20 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of File Upload component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of File Upload component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
-| **Behavior**           | **Property in Essential JS 1**     |        **Property in Essential JS 2**       |
+| **Behavior**           | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1**     |        **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2**       |
 | -----------------------| -----------------------------------| ------------------------------------------- |
 | Localization           | **Property** : locale <br/><br/> `<ej-upload-box id="UploadDefault" locale="es-ES"></ej-upload-box>` | **Property** : locale <br/><br/> `<ejs-uploader id="UploadFiles" locale="es-ES"></ejs-uploader>` |
 | Right to left | **Property:** enableRTL <br/><br/> `<ej-upload-box id="UploadDefault" enable-rtl="true"></ej-upload-box>`  | **Property:** enableRTL <br/><br/> `<ejs-uploader id="UploadFiles" enableRtl="true"></ejs-uploader>` |
 
 ## File list
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Show/Hide the selected files | **Property** : showFileDetails <br/><br/> `<ej-upload-box id="UploadDefault" show-file-details="false"></ej-upload-box>`  | **Property** :  showFileList <br/><br/> `<ejs-uploader id="UploadFiles" showFileList="false"></ejs-uploader>`  |
 | Customizing the file list | Not Applicable  | **Property** : template <br/><br/> `<ejs-uploader id="UploadFiles" template="#Templateid"></ejs-uploader>`  |
@@ -32,7 +32,7 @@ This article describes the API migration process of File Upload component from E
 
 ## File selection
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Select multiple files to upload | **Property** : multipleFilesSelection <br/><br/> `<ej-upload-box id="UploadDefault" multiple-file-selection="true"></ej-upload-box>`  | **Property** : multiple <br/><br/> `<ejs-uploader id="UploadFiles" multiple="true" ></ejs-uploader>` |
 | Set minimum file size to upload | **Not Applicable** | **Property** : minFileSize <br /><br /> `<ejs-uploader id="UploadFiles" minFileSize="1024" ></ejs-uploader>` |
@@ -52,7 +52,7 @@ This article describes the API migration process of File Upload component from E
 
 ## Upload action
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Save URL | **Property** : saveUrl <br/><br/> `<ej-upload-box id="UploadDefault"` <br/>`save-url= "//mvc.syncfusion.com/`<br/> `Services/FileUpload/UploadBox/saveFiles"></ej-upload-box>` | **Property** : saveUrl<br/><br/> `@{var asyncSettings = `<br/>`new Syncfusion.EJ2.Inputs.` <br/>`UploaderAsyncSettings`<br/>` { SaveUrl = "/Uploader/Save"}; }` <br/>`<ejs-uploader id="UploadFiles" asyncSettings="@asyncSettings" >` <br/>`</ejs-uploader>`  |
 | Remove URL | **Property** : removeUrl<br/><br/> `<ej-upload-box id="UploadDefault" `<br/>` remove-url="//mvc.syncfusion.com/`<br/>`Services/FileUpload/UploadBox/removeFiles"></ej-upload-box>` | **Property** : removeUrl<br/><br/> `@{var asyncSettings = `<br/>`new Syncfusion.EJ2.Inputs.`<br/>`UploaderAsyncSettings `<br/>`{ RemoveUrl = "/Uploader/Remove"}; }`<br/>`<ejs-uploader id="UploadFiles" asyncSettings="@asyncSettings" >`<br/>`</ejs-uploader>`  |
@@ -70,7 +70,7 @@ This article describes the API migration process of File Upload component from E
 
 ## Chunk upload
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Enabling the chunk upload | Not Applicable | **Property:** chunkSize<br/><br/> `@{var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "/Uploader/Save", RemoveUrl = "/Uploader/Remove", ChunkSize = 500000 }; } <ejs-uploader id="UploadFiles" maxFileSize="104857600" asyncSettings="@asyncSettings" ></ejs-uploader>`<br/>  |
 | Retry the upload automatically when it's get failed | Not Applicable | **Property:** retryCount, retryAfterDelay<br/><br/> `@{var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "/Uploader/Save", RemoveUrl = "/Uploader/Remove", ChunkSize = 500000, retryCount=3, retryAfterDelay= 1000 }; } <ejs-uploader id="UploadFiles" maxFileSize="104857600" asyncSettings="@asyncSettings" ></ejs-uploader>`<br/>  |
@@ -86,7 +86,7 @@ This article describes the API migration process of File Upload component from E
 
 ## Remove action
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Remove the uploaded file | Not Applicable | **Method:** remove<br/><br/> `<ejs-uploader id="UploadFiles" ></ejs-uploader>`<br/><br/>`var uploadobj = document.getElementById("UploadFiles").ej2_instances[0]; uploadObj.remove = filesData;`<br/> |
 | Event triggers when the file removing succeed | **Event:** remove<br/><br/> `<ej-upload-box id="UploadDefault" remove="onRemove">`<br/><br/>`function onRemove(e) {}`<br/> | **Event:** success<br/><br/> `<ejs-uploader id="UploadFiles" success="onSuccess" ></ejs-uploader>`<br/><br/> `function onSuccess(args)  { }`<br/> |
@@ -94,20 +94,20 @@ This article describes the API migration process of File Upload component from E
 
 ## Buttons
 
-| **Behavior** | **Property in essential JS 1** | **Property in essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Customize button text | **Property** : buttonText<br/><br/> `<ej-upload-box id="UploadDefault"><e-button-text browse="buttontext.browse" cancel="buttontext.cancel" close="buttontext.close" /></ej-upload-box>`<br/> | **Property** : buttons<br/><br/> `<ejs-uploader id="UploadFiles" buttons="ViewBag.button" ></ejs-uploader>`<br/><br/>`public IActionResult DefaultFunctionalities() { ViewBag.button = new { Browse = "Choose File", Clear = "Clear Files", upload = "Upload Files"`<br/> |
 
 ## Drag and drop
 
-| **Behavior** | **Property in Essential JS  1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS  1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | --------------------------------| ------------------------------ |
 | Enable drag and drop upload | **Property** : allowDragAndDrop<br/><br/> `<ej-upload-box id="UploadDefault" allow-drag-and-drop="true" ></ej-upload-box>` | No separate Property to disabling drag and drop |
 | Set custom drop area | **Not Applicable** | **Property** :  dropArea<br/><br/>  `<ejs-uploader id="UploadFiles" dropArea=".control-fluid" ></ejs-uploader>`  |
 
 ## Common
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Adding custom class to wrapper element | **Property** : cssClass<br/><br/> `<ej-upload-box id="UploadDefault" css-class="Custom-Class" ></ej-upload-box>` | Not Applicable |
 | Enable/Disable the control | **Property** : enabled<br/><br/> `<ej-upload-box id="UploadDefault" enabled="false" ></ej-upload-box>`<br/>  **Method** : enable(), disable()<br/> | **Property:** enabled<br/><br/> `<ejs-uploader id="UploadFiles" enabled="false" ></ejs-uploader>` |

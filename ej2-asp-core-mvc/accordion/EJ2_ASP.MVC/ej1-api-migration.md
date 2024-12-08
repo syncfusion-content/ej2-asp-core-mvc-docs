@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Keyboard Navigation | **Property:** *AllowKeyboardNavigation* <br /><br /> @Html.EJ().Accordion("ejAccoordion").AllowKeyboardNavigation(true).Render() <br /> | **Not Applicable** |
 | Localization | **Not Applicable** | **Property:** *Locale* <br /><br /> @Html.EJS().Accordion("ej2Accordion").Locale("en-US").Render() <br /> |
@@ -23,7 +23,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## AjaxSettings
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Property:** *AjaxSettings* <br /><br /> @Html.EJ().Accordion("ejAccordion").AjaxSettings(ajax => { <br /> &nbsp; ajax.Type("GET"); <br /> }).Render() <br /> | **Not Applicable** |
 | Asynchronous | **Property:** *AjaxSettings.Async* <br /><br /> @Html.EJ().Accordion("ejAccordion").AjaxSettings(ajax => { <br /> &nbsp; ajax.Async(true); <br /> }).Render() <br /> | **Not Applicable** |
@@ -39,7 +39,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Animation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *Animation* <br /><br /> @Html.EJS().Accordion("ej2Accordion").Animation(anim => { <br /> &nbsp; anim.Expand("").Collapse(""); <br /> }).Render() <br /> |
 | EnableAnimation | **Property:** *EnableAnimation* <br /><br /> @Html.EJ().Accordion("ejAccoordion").EnableAnimation(false).Render() <br /> | **Not Applicable** |
@@ -51,7 +51,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Items
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *Items* <br /><br /> @Html.EJS().Accordion("ej2Accordion").Items(item => { <br /> &nbsp; item.Header("").Content("").Add(); <br /> }).Render() <br /> |
 | Content | **Not Applicable** | **Property:** *Items[0].Content* <br /><br /> @Html.EJS().Accordion("ej2Accordion").Items(item => { <br /> &nbsp; item.Content("contents").Add(); <br /> }).Render() <br /> |
@@ -82,7 +82,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Collapsible | **Property:** *Collapsible* <br /><br /> @Html.EJ().Accordion("ejAccoordion").Collapsible(true).Render() <br /> | **Not Applicable** |
 | Collapse speed | **Property:** *CollapseSpeed* <br /><br /> @Html.EJ().Accordion("ejAccoordion").CollapseSpeed("500").Render() <br /> | **Not Applicable** |

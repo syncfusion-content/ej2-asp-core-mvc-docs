@@ -10,7 +10,7 @@ documentation: ug
 
 # Size Mode for ASP.NET MVC Controls
 
-Syncfusion ASP.NET MVC controls support touch (bigger theme) and normal size modes. Below topics explains how to enable the same in your application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls support touch (bigger theme) and normal size modes. Below topics explains how to enable the same in your application.
 
 ## Size mode for application
 
@@ -177,7 +177,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-siz
 
 ## See Also
 
-Refer below topics to learn about responsiveness controls based on the available size in Syncfusion ASP.NET MVC Controls.
+Refer below topics to learn about responsiveness controls based on the available size in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Controls.
 
 * [Sidebar Responsiveness](https://ej2.syncfusion.com/aspnetmvc/documentation/sidebar/auto-close)
 * [DataGrid Responsiveness](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/columns/responsive-columns)

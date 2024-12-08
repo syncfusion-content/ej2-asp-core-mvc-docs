@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Strongly-Typed HTML Helper
 
-The Syncfusion editor controls supports the strongly typed HTML helpers represented by lambda expressions that have the model or template passed into the view. The Extension method is used to get a value from the model.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> editor controls supports the strongly typed HTML helpers represented by lambda expressions that have the model or template passed into the view. The Extension method is used to get a value from the model.
 
 The Strongly-Typed HTML helper (i.e., NumericTextBox) takes lambda as a parameter that tells the helper, which element of the model to be used in the typed view.
 

@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Tab component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Tab component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Keyboard Navigation | **Property:** *AllowKeyboardNavigation* <br /><br /> @Html.EJ().Tab("ejTab").AllowKeyboardNavigation(true).Render() <br /> | **Not Applicable** |
 | Localization | **Not Applicable** | **Property:** *Locale* <br /><br /> @Html.EJS().Tab("ej2Tab").Locale("en-US").Render() <br /> |
@@ -23,7 +23,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## AjaxSettings
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Property:** *AjaxSettings* <br /><br /> @Html.EJ().Tab("ejTab").AjaxSettings(ajax  =>  { <br /> &nbsp; ajax.Type("GET"); <br /> }).Render() <br /> | **Not Applicable** |
 | Asynchronous | **Property:** *AjaxSettings.Async* <br /><br /> @Html.EJ().Tab("ejTab").AjaxSettings(ajax  =>  { <br /> &nbsp; ajax.Async(true); <br /> }).Render() <br /> | **Not Applicable** |
@@ -39,7 +39,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Animation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *Animation* <br /><br /> @Html.EJS().Tab("ej2Tab").Animation(anim  =>  { <br /> &nbsp; anim.Previous("").Next(""); <br /> }).Render() <br /> |
 | EnableAnimation | **Property:** *EnableAnimation* <br /><br /> @Html.EJ().Tab("ejTab").EnableAnimation(false).Render() <br /> | **Not Applicable** |
@@ -51,7 +51,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Header
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Header position | **Property:** *HeaderPosition* <br /><br /> @Html.EJ().Tab("ejTab").HeaderPosition(HeaderPosition.Top).Render() <br /> | **Property:** *HeaderPlacement* <br /><br /> @Html.EJS().Tab("ej2Tab").HeaderPlacement(Syncfusion.EJ2.Navigations.HeaderPosition.Bottom).Render() <br /> |
 | Header size | **Property:** *HeaderSize* <br /><br /> @Html.EJ().Tab("ejTab").HeaderSize("50px").Render() <br /> | **Not Applicable** |
@@ -60,7 +60,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Items
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *Items* <br /><br /> @Html.EJS().Tab("ej2Tab").Items(item  =>  { <br /> &nbsp; item.Header(h  =>  { h.Text("Tab1"); }).Content("contents").Add(); <br /> }).Render() <br /> |
 | Content | **Not Applicable** | **Property:** *Items[0].Content* <br /><br /> @Html.EJS().Tab("ej2Tab").Items(item  =>  { <br /> &nbsp; item.Content("contents").Add(); <br /> }).Render() <br /> |
@@ -89,7 +89,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Collapse active item | **Property:** *Collapsible* <br /><br /> @Html.EJ().Tab("ejTab").Collapsible(true).Render() <br /> | **Not Applicable** |
 | Custom class | **Property:** *CssClass* <br /><br /> @Html.EJ().Tab("ejTab").CssClass("cutomClass").Render() <br /> | **Property:** *CssClass* <br /><br /> @Html.EJS().Tab("ej2Tab").CssClass("cutomClass").Render() <br /> |

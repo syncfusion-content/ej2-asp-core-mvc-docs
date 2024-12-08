@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Range navigator component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Range navigator component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## RangeNavigator
 
@@ -19,8 +19,8 @@ This article describes the API migration process of Range navigator component fr
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -674,8 +674,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -893,8 +893,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -1130,8 +1130,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -1304,8 +1304,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -1330,8 +1330,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -1373,8 +1373,8 @@ RangeNavigator.Export())
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>

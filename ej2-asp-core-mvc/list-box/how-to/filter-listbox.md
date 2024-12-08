@@ -11,7 +11,7 @@ documentation: ug
 
 # How to Filter List box Data Using TextBox Component
 
-This example demonstrates how to filter data in the Syncfusion ListBox using a TextBox component. It shows the implementation of a TextBox filter for data filtering in ListBox items.
+This example demonstrates how to filter data in the Syncfusion<sup style="font-size:70%">&reg;</sup> ListBox using a TextBox component. It shows the implementation of a TextBox filter for data filtering in ListBox items.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

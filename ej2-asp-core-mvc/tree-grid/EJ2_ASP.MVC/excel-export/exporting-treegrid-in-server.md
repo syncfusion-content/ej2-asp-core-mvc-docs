@@ -15,7 +15,7 @@ The Tree Grid have an option to export the data to Excel in server side using tr
 
 ## Server dependencies
 
-The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridExport package, which is available in Essential Studio and [nuget.org](https://www.nuget.org/).The following list of dependencies is required for tree grid server side Excel exporting action.
+The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridExport package, which is available in Essential Studio<sup style="font-size:70%">&reg;</sup> and [nuget.org](https://www.nuget.org/).The following list of dependencies is required for tree grid server side Excel exporting action.
 
 * Syncfusion.EJ2
 * Syncfusion.EJ2.TreeGridExport

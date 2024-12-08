@@ -9,20 +9,20 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of File Upload component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of File Upload component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |--------------|---------------------------|---------------------|
 | Localization | **Property** : locale <br/><br/> `@Html.EJ().Uploadbox("UploadDefault")`<br/>`.Locale("es-ES")` | **Property** : locale <br/><br/> `@Html.EJS().`<br/>`Uploader("UploadFiles").`<br/>`Locale("es-ES").Render()` |
 | Right to left | **Property:** enableRTL <br/><br/> `@Html.EJ().Uploadbox("UploadDefault").`<br/>`EnableRTL(true)` | **Property:** enableRTL <br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`EnableRtl(true).Render()` |
 
 ## File list
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Show/Hide the selected files | **Property** : showFileDetails <br/><br/> `@Html.EJ().Uploadbox("UploadDefault")`<br/>`.ShowFileDetails(false)`  | **Property** :  showFileList <br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`ShowFileList(false).Render()`  |
 | Customizing the file list | Not Applicable  | **Property** : template <br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`Template("#Templateid").Render()`  |
@@ -32,7 +32,7 @@ This article describes the API migration process of File Upload component from E
 
 ## File selection
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Select multiple files to upload | **Property** : multipleFilesSelection <br/><br/> `@Html.EJ().Uploadbox("UploadDefault").`<br/>`MultipleFilesSelection(true)`  | **Property** : multiple <br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`Multiple(true).Render()` |
 | Set minimum file size to upload | **Not Applicable** | **Property** : minFileSize <br /><br /> `@Html.EJS().Uploader("UploadFiles").`<br/>`MinFileSize(1024).Render()` |
@@ -52,7 +52,7 @@ This article describes the API migration process of File Upload component from E
 
 ## Upload action
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Save URL | **Property** : saveUrl <br/><br/> `@Html.EJ().Uploadbox("UploadBox").`<br/>`SaveUrl("Uploadbox/Save")` | **Property** : saveUrl<br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`AsyncSettings(new Syncfusion.`<br/>`EJ2.Inputs.`<br/>`UploaderAsyncSettings `<br/>`{SaveUrl = @Url.Content("/Uploader/Save")})`<br/>`.Render()`  |
 | Save URL | **Property** : saveUrl <br/><br/> `@Html.EJ().Uploadbox("UploadBox").`<br/>`SaveUrl("Uploadbox/Save")` | **Property** : saveUrl<br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`AsyncSettings(new Syncfusion.`<br/>`EJ2.Inputs.`<br/>`UploaderAsyncSettings `<br/>`{SaveUrl = @Url.Content("/Uploader/Save")})`<br/>`.Render()`  |
@@ -73,7 +73,7 @@ This article describes the API migration process of File Upload component from E
 
 ## Chunk upload
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Enabling the chunk upload | Not Applicable | **Property:** chunkSize<br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`MaxFileSize(104857600).AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = @Url.Content("https://aspnetmvc.syncfusion.com/`<br/>`services/api/uploadbox/Save"), `<br/>`RemoveUrl = @Url.Content("https://aspnetmvc.syncfusion.com/`<br/>`services/api/uploadbox/Remove"), ChunkSize = 500000 }).Render()`<br/>  |
 | Retry the upload automatically when it's get failed | Not Applicable | **Property:** retryCount, retryAfterDelay<br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`MaxFileSize(104857600).AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = @Url.Content("https://aspnetmvc.syncfusion.com/`<br/>`services/api/uploadbox/Save"), RemoveUrl = @Url.Content("https://aspnetmvc.syncfusion.com/`<br/>`services/api/uploadbox/Remove"), ChunkSize = 500000, retryCount = 3, retryAfterDelay = 1000 }).Render()`<br/>  |
@@ -89,7 +89,7 @@ This article describes the API migration process of File Upload component from E
 
 ## Remove action
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Remove the uploaded file | Not Applicable | **Method:** remove<br/><br/> `@Html.EJS().Uploader("UploadFiles").Render()`<br/><br/>`var uploadobj = document.`<br/>`getElementById("UploadFiles").ej2_instances[0]; `<br/>`uploadObj.remove = filesData;`<br/> |
 | Event triggers when the file removing succeed | **Event:** remove<br/><br/> `@Html.EJ().`<br/>`Uploadbox("UploadDefault").`<br/>`ClientSideEvents(e => e.Remove("onRemove"))`<br/><br/>`function onRemove(e) {}`<br/> | **Event:** success<br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`Success("onSuccess").Render()`<br/><br/> `function onSuccess(args)  { }`<br/> |
@@ -97,20 +97,20 @@ This article describes the API migration process of File Upload component from E
 
 ## Buttons
 
-| **Behavior** | **Property in essential JS 1** | **Property in essential JS 2** |
+| **Behavior** | **Property in essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Customize button text | **Property** : buttonText<br/><br/> `@Html.EJ().`<br/>`Uploadbox("UploadDefault").`<br/>`Browse(ButtonText.Browse).`<br/>`Upload(ButtonText.Upload).`<br/>`Cancel(ButtonText.Cancel)`<br/> | **Property** : buttons<br/><br/> `@Html.EJS().`<br/>`Uploader("UploadFiles").`<br/>`Buttons(ViewBag.UploadButtons).Render()`<br/><br/>`public ActionResult DefaultFunctionalities() { List<UploaderButton> buttons = new List<UploaderButton>() { }; buttons.Add(new UploaderButton() { browse = "Choose File", clear = "Clear Files", upload = "Upload Files"   }); ViewBag.UploadButtons = buttons; return View(); }public class DefaultButtonModel { public string browse { get; set; } public string clear { get; set; } public string upload { get; set; } }`<br/> |
 
 ## Drag and drop
 
-| **Behavior** | **Property in Essential JS  1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS  1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | --------------------------------| ------------------------------ |
 | Enable drag and drop upload | **Property** : allowDragAndDrop<br/><br/> `@Html.EJ().`<br/>`Uploadbox("UploadDefault").`<br/>`AllowDragAndDrop(true)` | No separate Property to disabling drag and drop |
 | Set custom drop area | **Not Applicable** | **Property** :  dropArea<br/><br/>  `@Html.EJS().`<br/>`Uploader("UploadFiles").`<br/>`DropArea(".control-fluid").Render()`  |
 
 ## Common
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Adding custom class to wrapper element | **Property** : cssClass<br/><br/> `@Html.EJ().Uploadbox("UploadDefault").`<br/>`CssClass("Custom-Class")` | Not Applicable |
 | Enable/Disable the control | **Property** : enabled<br/><br/> `@Html.EJ().Uploadbox("UploadDefault").`<br/>`Enabled(false).Render()`<br/>  **Method** : enable(), disable()<br/> | **Property:** enabled<br/><br/> `@Html.EJS().`<br/>`Uploader("UploadFiles").`<br/>`Enabled(false).Render()` |

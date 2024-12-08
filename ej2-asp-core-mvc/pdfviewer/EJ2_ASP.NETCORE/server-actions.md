@@ -11,7 +11,7 @@ documentation: ug
 
 # Server Actions
 
-Syncfusion PDF Viewer control is client-server oriented. It processes the PDF document on the server-side and sends the processed PDF data to the client to render the PDF document and for further operations in the PDF Viewer.
+Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer control is client-server oriented. It processes the PDF document on the server-side and sends the processed PDF data to the client to render the PDF document and for further operations in the PDF Viewer.
 
 The server actions or server methods in the Core PDF Viewer controller are:
 
@@ -32,7 +32,7 @@ The server actions or server methods in the Core PDF Viewer controller are:
 
 N> public IActionResult Load([FromBody] Dictionary<string, string> jsonObject)
 
-The [Load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_Load_System_String_) action will be triggered initially on loading a PDF file. Syncfusion PDF Viewer control will store the document in the cache based on the hashid during the initial loading of the pdf file. Initially, the request will be sent for 100 pages only and another request will be sent for the remaining pages. So the Load action will get triggered twice when loading a PDF file with pages more than 100, which is called virtual loading.
+The [Load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PdfViewer.PdfViewerServerActionSettingsBuilder.html#Syncfusion_EJ2_PdfViewer_PdfViewerServerActionSettingsBuilder_Load_System_String_) action will be triggered initially on loading a PDF file. Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer control will store the document in the cache based on the hashid during the initial loading of the pdf file. Initially, the request will be sent for 100 pages only and another request will be sent for the remaining pages. So the Load action will get triggered twice when loading a PDF file with pages more than 100, which is called virtual loading.
 
 This action on its first trigger calls the GetDocumentPath method in the PdfViewerController.cs with which the path of the document is determined. The PDF file to be loaded must be located in the folder structure as specified in the GetDocumentPath method.
 

@@ -59,4 +59,4 @@ The accessibility compliance of the Skeleton control is shown in the following s
 
 ## See also
 
-* [Accessibility in Syncfusion ASP.NET Core controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls](../common/accessibility)

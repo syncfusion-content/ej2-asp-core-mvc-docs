@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Grid component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Grid component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Sorting
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *AllowSorting*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br>&nbsp;`.AllowSorting().Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *AllowSorting*<br/><br/> `@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowSorting().Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
 |Clear the Sorted columns | **Method:** *clearSorting()*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:** <br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.clearSorting();`<br>`</script>`| **Method:** *clearSorting()*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.clearSorting()`<br>`</script>`
@@ -25,7 +25,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Grouping
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *AllowGrouping*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowGrouping().Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *AllowGrouping*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowGrouping().Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
 |Group Columns initially | **Property:** *AllowGrouping.GroupedColumns*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowGrouping()`<br>`.GroupSettings(group => { group`<br>`.GroupedColumns(col => { col.Add("ShipCountry"); }); })`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>&nbsp; `col.Field("ShipCountry").Add();`<br>&nbsp; `col.Field("ShipCity").Add();`<br>`})`<br>`)`| **Property:** *AllowGrouping.Columns*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.AllowGrouping()`<br>`.GroupSettings(group=>`<br>`group.Columns(new string[] { "ShipCountry" }))`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br> &nbsp;&nbsp;`col.Field("ShipCountry").Add();`<br> &nbsp;&nbsp;`col.Field("ShipCity").Add();`<br>`}).Render()`|
@@ -41,7 +41,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Filtering
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *AllowFiltering*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br>`.AllowFiltering().Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *AllowFiltering*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowFiltering().Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`
 |Menu Filtering | **Property:** *FilterSettings.FilterType*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br>`.AllowFiltering()`<br>`.FilterSettings(filter =>{`<br>`filter.FilterType(FilterType.Menu); })`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`}))`| **Property:** *FilterSettings.Type*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowFiltering().FilterSettings(filter=>`<br>`filter.Type(Syncfusion.EJ2.Grids`<br>`.FilterType.Menu))`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br> &nbsp;&nbsp;`col.Field("ShipCountry").Add();`<br> &nbsp;&nbsp;`col.Field("ShipCity").Add();`<br>`}).Render()`
@@ -53,7 +53,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Searching
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *ToolbarSettings.ToolbarItems*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.ToolbarSettings(toolBar =>`<br>`toolBar.ShowToolbar()`<br>`.ToolbarItems(items =>`<br>`{items.AddTool(ToolBarItems.Search);}))`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>&nbsp; `col.Field("ShipCity").Add();`<br>`})`<br>`)`| **Property:** *Toolbar*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.Toolbar(new List<string>() { "Search" })`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br> &nbsp;&nbsp;`col.Field("ShipCity").Add();`<br>`}).Render()`
 |Clear the Searched values | **Method:** *clearSearching()*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.clearSearching();`<br>`</script>`| **Method:** *searchModule.search()*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.searchModule.search("");`<br>`</script>`
@@ -61,7 +61,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Paging
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *AllowPaging*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowPaging().Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *AllowPaging*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowPaging().Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`
 |Customize Paging | **Property:** *PageSettings.PageSize*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowPaging()`<br>`.PageSettings(page=>{ page.PageSize(8).PageSizeList(new List<int>() {5, 10 });})`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>&nbsp; `col.Field("ShipCity").Add();`<br>`})`<br>`)`| **Property:** *PageSettings.PageSize*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowPaging().PageSettings(page`<br>`=> page.PageSize(8).PageSizes(new string[] {"5","10"}))`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br> &nbsp;&nbsp;`col.Field("ShipCity").Add();`<br>`}).Render()`
@@ -73,7 +73,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Selection
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *AllowSelection*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowSelection().Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *AllowSelection*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowSelection().Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`
 |Single Selection | **Property:** *SelectionType*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowSelection()`<br>`.SelectionType(SelectionType.Single)`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>&nbsp; `col.Field("ShipCity").Add();`<br>`})`<br>`)`| **Property:** *SelectionSettings.Type*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowSelection()`<br>`.SelectionSettings(select =>`<br>`select.Type(Syncfusion.EJ2`<br>`.Grids.SelectionType.Single))`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br> &nbsp;&nbsp;`col.Field("ShipCity").Add();`<br>`}).Render()`
@@ -101,7 +101,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Editing
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *EditSettings*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.EditSettings(edit => { edit.AllowAdding()`<br>`.AllowDeleting().AllowEditing(); })`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *EditSettings*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.EditSettings(edit => { edit.AllowAdding`<br>`(true).AllowEditing(true).AllowDeleting(true) })`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
 |Inline Editing | **Property:** *EditSettings.EditMode*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.EditSettings(edit => { edit.AllowAdding()`<br>`.AllowDeleting().AllowEditing()`<br>`.EditMode(EditMode.Normal); })`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *EditSettings.Mode*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.EditSettings(edit => { edit.AllowAdding(true).`<br>`AllowEditing(true).AllowDeleting(true).Mode`<br>`(Syncfusion.EJ2.Grids.EditMode.Normal); })`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
@@ -138,7 +138,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Resizing
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *AllowResizing*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowResizing().Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *AllowResizing*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowResizing().Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
 |Resize a column by using the method| **Method:** *resizeColumns(column,width)*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.resizeColumns("OrderID",width);`<br>`</script>`| **Property:** *columns.width*<br><br>To resize a column, set width to that particular column and then refresh the grid by using the refresh method.<br>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.columns[1].width = 100;`<br>`gridObj.refresh();`<br>`</script>`
@@ -148,7 +148,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Reordering
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *AllowReordering*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowReordering().Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *AllowReordering*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowReordering().Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
 |Reorder Columns| **Method:** *reorderColumns(fromFieldName, toFieldName)*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.reorderColumns("OrderID", "CustomerID");`<br>`</script>`| **Method:** *reorderColumns(fromFieldName, toFieldName)*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.reorderColumns("OrderID", "CustomerID");`<br>`</script>`
@@ -156,7 +156,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Context Menu
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *ContextMenuSettings.EnableContextMenu*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.ContextMenuSettings(contextMenu =>{contextMenu.EnableContextMenu();})`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *ContextMenuItems*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.ContextMenuItems(new List<object>() { "AutoFit", "AutoFitAll" })`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`
 |Triggers when context menu item is clicked| **Event:** *ContextClick*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br>`.Datasource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.ClientSideEvents(eve =>{`<br>`eve.ContextClick("contextClick");}))`<br>**Script:**<br>`<script>`<br>`function contextClick(){}`<br>`</script>`| **Event:** *ContextMenuClick*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.ContextMenuClick("contextMenuClick")`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`function contextMenuClick(){}`<br>`</script>`
@@ -164,7 +164,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Toolbar
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Print | **Property:** *ToolbarSettings.ToolBarItems*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.ToolbarSettings(toolbar =>{`<br>`toolbar.ShowToolbar()`<br>`.ToolbarItems(items=>{`<br>`items.AddTool(ToolBarItems.PrintGrid);});`<br>`})`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *Toolbar*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.Toolbar(new List<string>() { "Print" })`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`
 |Add | **Property:** *ToolbarSettings.ToolBarItems*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.ToolbarSettings(toolbar =>{`<br>`toolbar.ShowToolbar()`<br>`.ToolbarItems(items=>{`<br>`items.AddTool(ToolBarItems.Add);});`<br>`})`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *Toolbar*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.Toolbar(new List<string>() { "Add" })`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`
@@ -180,13 +180,13 @@ This article describes the API migration process of Grid component from Essentia
 
 ## GridLines
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *GridLines*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.GridLines(GridLines.Vertical)`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *GridLines*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.GridLines(Syncfusion.EJ2`<br>`.Grids.GridLine.Vertical).Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
 
 ## Templates
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *DetailsTemplate*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.DetailsTemplate("#detailsTemplate"))`<br>**Script:**<br>`<script id="detailsTemplate" type="text/x-jsrender">`<br>You can add template elements here<br>`</script>`| **Property:** *DetailTemplate*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.DetailTemplate("#detailtemplate")`<br>`.Render()`<br>**Script:**<br>`<script type="text/x-template" id="detailtemplate">`<br>You can add template elements here<br>`</script>`
 |Default | **Property:** *RowTemplate*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.RowTemplate("#templateData"))`<br>**Script:**<br>`<script id="templateData" type="text/x-jsrender">`<br>You can add template elements here<br>`</script>`| **Property:** *RowTemplate*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.RowTemplate("#rowtemplate")`<br>`.Render()`<br>**Script:**<br>`<script id="rowtemplate" type="text/x-template">`<br>You can add template elements here<br>`</script>`
@@ -198,7 +198,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Row/Column Drag and Drop
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *AllowRowDragAndDrop*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowRowDragAndDrop()`<br>`.RowDropSettings(drop =>`<br>`drop.RowDropMapper("RowDropHandler")`<br>`.DropTargetID("#DestGrid"))`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *AllowRowDragAndDrop*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowRowDragAndDrop(true)`<br>`.RowDropSettings(new Syncfusion.EJ2.Grids.GridRowDropSettings() { TargetID = "RowDragDrop" })`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`
 |Triggers when the row is<br>being dragged| **Event:** *RowDrag*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br>`.Datasource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.ClientSideEvents(eve =>{`<br>`eve.RowDrag("rowDrag");}))`<br>**Script:**<br>`<script>`<br>`function rowDrag(){}`<br>`</script>`| **Event:** *RowDrag*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.RowDrag("rowDrag")`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`function rowDrag(){}`<br>`</script>`
@@ -211,20 +211,20 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Frozen Rows and Columns
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *ScrollSettings.FrozenRows*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowScrolling()`<br>`.ScrollSettings(scroll => { scroll.Height(337)`<br>`.Width(700).FrozenRows(2)`<br>`.FrozenColumns(2); })`<br>`)`| **Property:** *FrozenRows*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.FrozenRows(2).FrozenColumns(1)`<br>`.Render()`
 |isFrozen | **Property:** *Columns.IsFrozen*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").`<br>`IsFrozen(true).Add();`<br>`})`<br>`)`| **Property:** *Columns.IsFrozen*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").IsFrozen(true).Add();`<br>`}).Render()`
 
 ## ForeignKey
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *Columns.ForeignKeyValue*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>&nbsp;`col.Field("EmployeeID")`<br>`.ForeignKeyField("EmployeeID")`<br>`.ForeignKeyValue("FirstName")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource2).Add();`<br>`})`<br>`)`| **Property:** *Columns.ForeignKeyValue*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br> &nbsp;&nbsp;`col.Field("CustomerID")`<br>`.ForeignKeyField("CustomerID")`<br>`.ForeignKeyValue("ContactName")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource2).Add();`<br>`}).Render()`
 
 ## Auto Wrap
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *AllowTextWrap*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowTextWrap().Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *AllowTextWrap*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowTextWrap().Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
 |Both | **Property:** *AllowTextWrap*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.AllowTextWrap()`<br>`.TextWrapSettings(wrap => {wrap.WrapMode(WrapMode.Both); })`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *AllowTextWrap*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.AllowTextWrap()`<br>`.TextWrapSettings(text => {`<br>`text.WrapMode`<br>`(Syncfusion.EJ2.Grids.WrapMode.Both);})`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
@@ -233,31 +233,31 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Responsive
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *IsResponsive*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.IsResponsive(true)`<br>`.EnableResponsiveRow(true)`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| Not Applicable
 
 ## State Persistence
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *EnablePersistence*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.EnablePersistence()`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *EnablePersistence*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.EnablePersistence()`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
 
 ## Right to Left - RTL
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *EnableRtl*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.EnableRtl()`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *EnableRtl*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.EnableRtl()`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
 
 ## ToolTip
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *ClipMode*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.Columns(col =>{`<br>`col.Field("OrderID")`<br>`.ClipMode(ClipMode.Clip).Add();`<br>`col.Field("CustomerID")`<br>`.ClipMode(ClipMode.Ellipsis).Add();`<br>`col.Field("ShipCity")`<br>`.ClipMode(ClipMode.EllipsisWithTooltip).Add();`<br>`})`<br>`)`| **Property:** *ClipMode*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.EnableRtl()`<br>`.Columns(col =>{`<br>`col.Field("OrderID")`<br>`.ClipMode(Syncfusion.EJ2.Grids`<br>`.ClipMode.Clip)`<br>`.Add();`<br>`col.Field("CustomerID")`<br>`.ClipMode(Syncfusion.EJ2.Grids`<br>`.ClipMode.Ellipsis)`<br>`.Add();`<br>`col.Field("ShipCity")`<br>`.ClipMode(Syncfusion.EJ2.Grids`<br>`.ClipMode.EllipsisWithTooltip)`<br>`.Add();`<br>`}).Render()`|
 
 ## Aggregate/Summary
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Footer Aggregate | **Property:** *ShowSummary*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.ShowSummary()`<br>`.SummaryRow(row =>{`<br>`row.Title("Sum")`<br>`.SummaryColumns(col => {`<br>`col.SummaryType(SummaryType.Sum)`<br>`.Format("{0:C}")`<br>`.DisplayColumn("Freight")`<br>`.DataMember("Freight").Add();`<br>`}).Add();`<br>`)`| **Property:** *Aggregates*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.Aggregates(agg=>{`<br>`agg.Columns(new List<Syncfusion.EJ2`<br>`.Grids.GridAggregateColumn>(){`<br>`new Syncfusion.EJ2`<br>`.Grids.GridAggregateColumn() {`<br>`Field = "Freight", Format = "C2",`<br>`Type = "Sum", FooterTemplate = "Sum: ${Sum}" } }).Add();`<br>`}).Render()`|
 |Caption Aggregate | **Property:** *ShowSummary*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.ShowSummary()`<br>`.SummaryRow(row =>{`<br>`row.ShowTotalSummary(false)`<br>`.ShowCaptionSummary(true)`<br>`.SummaryColumns(col =>{`<br>`col.SummaryType(SummaryType.Average)`<br>`.Format("{0:C2}")`<br>`.DisplayColumn("Freight")`<br>`.DataMember("Freight")`<br>`.Prefix("Average").Add();`<br>`}).Add();`<br>`})`| **Property:** *Aggregates*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.Aggregates(agg=>{`<br>`agg.Columns(new List<Syncfusion.EJ2`<br>`.Grids.GridAggregateColumn>(){`<br>`new Syncfusion.EJ2`<br>`.Grids.GridAggregateColumn() {`<br>`Field = "Freight", Format = "C2",`<br>`Type = "Sum", GroupCaptionTemplate = "Sum: ${Sum}" } }).Add();`<br>`}).Render()`|
@@ -265,13 +265,13 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Grid Export
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Adds a grid model property<br> which is to be ignored on exporting grid | **Method:** <br>*addIgnoreOnExport(propertyNames)*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.addIgnoreOnExport`<br>`("filterSettings");`<br>`</script>`| Not Applicable |
 
 ## Columns
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Add or Remove Columns | **Method:** *columns(columnDetails, [action])()*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.columns("OrderID", "remove");`<br>`gridObj.columns("CustomerID", "add");`<br>`</script>`| **Property:** *columns*<br><br>Grid is initially rendered with `OrderID`and `CustomerId`columns.<br>Then if you want to add `ShipAddress`column, you have to reset the value for `column`property as `gridObj.columns = [{field:"OrderID"}, {field:"CustomerId"}, {field:"ShipAddress"}];`Then to remove the `CustomerId`column, reset the `column`property as, `gridObj.columns = [{field:"OrderID"}, {field:"ShipAddress"}];`
 |Get Column By Field | **Method:** *getColumnByField(fieldName)*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.getColumnByField("OrderID");`<br>`</script>`| **Method:** *getColumnByField(fieldName)*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.getColumnByField("OrderID")`<br>`</script>`
@@ -289,7 +289,7 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Row
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |EnableRowHover | **Property:** *EnableRowHover*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.EnableRowHover()`<br>`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID").Add();`<br>`})`<br>`)`| **Property:** *EnableHover*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.EnableHover()`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID").Add();`<br>`}).Render()`|
 |Get Row Height | **Method:** *getRowHeight()*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.getRowHeight();`<br>`</script>`| **Method:** *getRowHeight()*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.getRowHeight();`<br>`</script>`
@@ -301,20 +301,20 @@ This article describes the API migration process of Grid component from Essentia
 
 ## Show/Hide Columns
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Hide Columns by using method| **Method:** *hideColumns(headerText)*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.hideColumns("Order ID");`<br>`</script>`| **Method:** *hideColumns(headerText)*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.hideColumns("Order ID");`<br>`</script>`
 |Show Columns by using method| **Method:** *showColumns(headerText)*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.showColumns("Order ID");`<br>`</script>`| **Method:** *showColumns(headerText)*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.showColumns("Order ID");`<br>`</script>`
 
 ## Column Chooser
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *ShowColumnChooser*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br>`.ShowColumnChooser()`<br> &nbsp;`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID")`<br>`.ShowInColumnChooser(false).Add();`<br>`col.Field("Freight").Add();`<br>`})`<br>`)`| **Property:** *ShowColumnChooser*<br/><br/>`@Html.EJS().Grid("Grid")`<br>&nbsp;`.ShowColumnChooser()`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID")`<br>`.ShowInColumnChooser(false)`<br>`.Add();`<br>`col.Field("City").Add();`<br>`}).Render()`|
 
 ## Header
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Refresh Header| **Method:** *refreshHeader()*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.refreshHeader();`<br>`</script>`| **Method:** *refreshHeader()*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.refreshHeader();`<br>`</script>`
 |Triggers every time a request is made to access particular header cell information, element and data.| **Event:** *MergeHeaderCellInfo*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br>`.Datasource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.ClientSideEvents(eve =>{`<br>`eve.MergeHeaderCellInfo("mergeHeaderCellInfo");}))`<br>**Script:**<br>`<script>`<br>`function mergeHeaderCellInfo(){}`<br>`</script>`| Not Applicable
@@ -322,33 +322,33 @@ This article describes the API migration process of Grid component from Essentia
 
 ## DataSource
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 | To set a new DataSource Dynamically by using the method | **Method:** *dataSource(datasource,[templateRefresh])*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.dataSource(newdataSource);`<br>`</script>`| **Property:** *dataSource*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.datasource = newdataSource`<br>`</script>`
 
 ## Print
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Print the grid| **Method:** *print()*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.print();`<br>`</script>`| **Method:** *print()*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.print();`<br>`</script>`
 |Triggers before printing the grid| **Event:** *BeforePrint*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br>`.Datasource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.ClientSideEvents(eve =>{`<br>`eve.BeforePrint("beforePrint");}))`<br>**Script:**<br>`<script>`<br>`function beforePrint(){}`<br>`</script>`| **Event:** *BeforePrint*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.BeforePrint("beforePrint")`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`function beforePrint(){}`<br>`</script>`
 
 ## Scrolling
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Get ScrollObject | **Method:** *getScrollObject()*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.getScrollObject();`<br>`</script>`| **Property:** *grid.scrollModule*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`var scrollObj = gridObj.scrollModule;`<br>`</script>`
 
 ## PrimaryKey
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *Columns.IsPrimaryKey*<br/><br/> `@(Html.EJ().Grid<object>("Grid")`<br> &nbsp;`.Columns(col =>{`<br>&nbsp;`col.Field("OrderID")`<br>`.IsPrimaryKey(true).Add();`<br>`col.Field("Freight").Add();`<br>`})`<br>`)`| **Property:** *Columns.IsPrimaryKey*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.Columns(col =>{`<br> &nbsp;&nbsp;`col.Field("OrderID")`<br>`.IsPrimaryKey(true)`<br>`.Add();`<br>`col.Field("City").Add();`<br>`}).Render()`|
 |Get the PrimaryKey fieldnames | **Method:** *getPrimaryKeyFieldNames()*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.getPrimaryKeyFieldNames();`<br>`</script>`| **Method:** <br>*getPrimaryKeyFieldNames()*<br/><br/>`@Html.EJS().Grid("Grid")`<br>`.DataSource((IEnumerable<object>)`<br>`ViewBag.dataSource)`<br>`.Render()`<br>**Script:**<br>`<script>`<br>`var gridObj = document.getElementById`<br>`('Grid').ej2_instances[0];`<br>`gridObj.getPrimaryKeyFieldNames();`<br>`</script>`
 
 ## Grid
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Get the Browser Details| **Method:** *getBrowserDetails()*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.getBrowserDetails();`<br>`</script>`| In Essential JS 2, it can be <br>achieved by using `Browser`class of `ej2-base`
 |Set dimension for the grid | **Method:** *setDimension(height, width)*<br/><br/> `@(Html.EJ().Grid<object>`<br>`("Grid").Datasource`<br>`((IEnumerable<object>)`<br>`ViewBag.dataSource))`<br>**Script:**<br>`<script>`<br>`var gridObj = $("#Grid").data("ejGrid");`<br>`gridObj.setDimension(300,400);`<br>`</script>`| Not Applicable

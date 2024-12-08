@@ -23,7 +23,7 @@ ASP.NET MVC Applications can be developed using one of the following IDEs. You c
 
 ## Frameworks
 
-One of the the following .NET SDK is required to develop and run the Syncfusion UI controls for ASP.NET MVC.
+One of the the following .NET SDK is required to develop and run the Syncfusion<sup style="font-size:70%">&reg;</sup> UI controls for ASP.NET MVC.
 
 * [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 * [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)

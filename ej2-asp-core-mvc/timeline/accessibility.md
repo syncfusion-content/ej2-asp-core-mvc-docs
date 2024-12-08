@@ -52,4 +52,4 @@ The Timeline control's accessibility levels are ensured through an [accessibilit
 
 ## See also
 
-- [Accessibility in Syncfusion controls](../common/accessibility)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> controls](../common/accessibility)

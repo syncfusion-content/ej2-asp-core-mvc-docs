@@ -9,26 +9,26 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of multiselect component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of multiselect component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility and Localization
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Localization | **Property** : Locale<br/> <br/>`@Html.EJ().DropDownList("locale").Locale("de-DE")` | **Property** : Locale<br/> <br/>`@Html.EJS().MultiSelect("locale").Locale("de-DE").Render()` |
 | Right to left | **Property:** EnableRTL<br/><br/>`@Html.EJ().DropDownList("rtl").EnableRTL(true)` | **Property:** EnableRtl<br/> <br/>`@Html.EJS().MultiSelect("rtl").EnableRtl(true).Render()` |
 
 ## Animation
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Animation | **Property** : EnableAnimation<br/> <br/>`@Html.EJ().DropDownList("default").EnableAnimation(true)` | Not Applicable |
 
 ## Template
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Header Template | **Property** : HeaderTemplate<br/> <br/>`@Html.EJ().DropDownList("DropDownList1").Datasource((IEnumerable<Employee1>)ViewData["LocalDataSource"]).HeaderTemplate("<div class='eheader'><span>PHOTO</span> <span>DETAILS</span></div>")` | **Property** : HeaderTemplate<br/> <br/>`@Html.EJS().MultiSelect("remote").HeaderTemplate("<span class='head'><span class='name'>Name</span><span class='city'>City</span></span>").Render()` |
 | Item Template | **Property** :ItemTemplate<br/> <br/>` @Html.EJ().DropDownList("DropDownList1").Datasource((IEnumerable<Employee1>)ViewData["LocalDataSource"]).Template("<div><Image class='ImageId' src='../Content/Employees/${Image}.png' alt='employee'/> <div class='ename'> ${Text} </div><div class='role'> ${Role} </div><div class='cont'> ${Country} </div></div>")` | **Property** : ItemTemplate<br/> <br/>`@Html.EJS().MultiSelect("remote").ItemTemplate("<div><span class='name'>${FirstName}</span><span class ='city'>${City}</span></div>").Render()` |
@@ -40,7 +40,7 @@ This article describes the API migration process of multiselect component from E
 
 ## Data Binding
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Data Source | **Property** : Datasource<br/> <br/>`@Html.EJ().DropDownList("DropDownList1").Datasource((IEnumerable<Employee>)ViewData["LocalDataSource"]).DropDownListFields(Df => Df.Text("Text").Value("Country"))` | **Property** : Datasource <br/><br/> ` @Html.EJS().MultiSelect("default").DataSource((IEnumerable<object>)ViewBag.localdata).Render()` |
 | Query | **Property** : Query<br/> <br/>`@Html.EJ().DropDownList("customerList").Datasource(ds => ds.URL("https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/").CrossDomain(true)).Query("ej.Query().from('Customers').take(6)").DropDownListFields(f => f.Text("CustomerID"))` | **Property** : Query<br/> <br/>`@Html.EJS().MultiSelect("remote").Query((string)ViewBag.query).DataSource(obj => obj.Url("http://services.odata.org/V4/Northwind/Northwind.svc/").CrossDomain(true).Adaptor("ODataV4Adaptor")).Fields( new MultiSelectFieldSettings { Text = "FirstName", Value = "EmployeeID" }).Render()` |
@@ -53,7 +53,7 @@ This article describes the API migration process of multiselect component from E
 
 ## Filtering
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Filtering | **Property** : EnableFilterSearch<br/> <br/>`@Html.EJ().DropDownList("default").EnableFilterSearch(true)` | **Property** : AllowFiltering<br/> <br/>`@Html.EJS().MultiSelect("default").AllowFiltering(true).Render()` |
 | Server Filtering | **Property** : EnableServerFiltering<br/> <br/>`@Html.EJ().DropDownList("default").EnableServerFiltering(true)` | **Event** : Filtering<br/> <br/>`@Html.EJS().MultiSelect("list").Filtering("onFiltering").Render()` |
@@ -65,7 +65,7 @@ This article describes the API migration process of multiselect component from E
 
 ## Popups
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Popup Resize | **Property** : EnablePopupResize<br/> <br/>`@Html.EJ().DropDownList("default").EnablePopupResize(true)` | Not Applicable |
 | Maximum Popup Height | **Property** : MaxPopupHeight<br/> <br/>`@Html.EJ().DropDownList("default").MaxPopupHeight(300)` | Not Applicable |
@@ -89,7 +89,7 @@ This article describes the API migration process of multiselect component from E
 
 ## Selection
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Selected Index | **Property** : SelectedIndex<br/> <br/>`@Html.EJ().DropDownList("default").SelectedIndex(2)` | Not Applicable |
 | Selected Indices | **Property** : SelectedIndices <br/> <br/>`@Html.EJ().DropDownList("default").ShowCheckbox(true).SelectedIndices(new List<int> { 1,2 })` | **Property** : Value <br/><br/> `viewBag.vlue = [1,2]` <br/><br/> `@Html.EJS().MultiSelect("default").Value(ViewBag.value).Render()` |
@@ -111,7 +111,7 @@ This article describes the API migration process of multiselect component from E
 
 ## Common
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Virtual Scrolling | **Property** : AllowVirtualScrolling<br/> <br/>`@Html.EJ().DropDownList("default").AllowVirtualScrolling(true)` | It will be acheived in sample level using `actionComplete` event |
 | Virtual Scroll Mode | **Property** : VirtualScrollMode<br/> <br/>`@Html.EJ().DropDownList("default").AllowVirtualScrolling(true).VirtualScrollMode(VirtualScrollMode.Normal)` | Not Applicable |

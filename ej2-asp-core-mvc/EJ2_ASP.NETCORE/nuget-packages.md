@@ -10,13 +10,13 @@ documentation: ug
 
 # NuGet Packages for ASP.NET Core UI controls
 
-**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET Core NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22+Syncfusion). The Syncfusion ASP.NET Core NuGet packages can be used without installing the Essential Studio or ASP.NET Core platform installation to implement the Syncfusion ASP.NET Core controls.
+**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion<sup style="font-size:70%">&reg;</sup> publishing all ASP.NET Core NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22+Syncfusion). The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages can be used without installing the Essential Studio<sup style="font-size:70%">&reg;</sup> or ASP.NET Core platform installation to implement the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
 ## Available NuGet packages
 
 ### Syncfusion.EJ2.AspNet.Core
 
-Syncfusion ASP.NET Core UI controls powered by Essential JS 2, it contains 70+ high performance, lightweight, responsive, and touch- friendly UI controls including grid, chart, scheduler, spreadsheet, gantt chart, listbox, file manager, powerpoint or presentation, excel and much more.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls powered by Essential<sup style="font-size:70%">&reg;</sup> JS 2, it contains 70+ high performance, lightweight, responsive, and touch- friendly UI controls including grid, chart, scheduler, spreadsheet, gantt chart, listbox, file manager, powerpoint or presentation, excel and much more.
 
 <!-- markdownlint-disable MD033 -->
 <table>

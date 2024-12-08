@@ -9,19 +9,19 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Data Binding
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Datasource| **Property:** *dataSource*<br/><br/> `@(Html.EJ().TreeMap("container").`<br/>`DataSource(datasource)`<br/>`.WeightValuePath("population"))`<br>&nbsp;`@section ControlsSection{@{ var datasource = ViewData["medals"];}`<br><br>**script**:<br><br>`public ActionResult Customization()`<br/>`{ViewData["medals"] = MedalData.GetPopulation();`<br/>`return View();}public class MedalData{`<br/>`public static List<MedalData> GetPopulation()`<br/>`List<MedalData> medals = new List<MedalData>();`<br/>`medals.Add(new MedalData(){`<br/>`Continent: "Asia", Population: 1749046000} return medals; }}`|**Property:** *dataSource*<br/>`@Html.EJS().TreeMap("container")`<br/>`.Load("load")`<br/>`.LayoutType(LayoutMode.Squarified).Render();`<br/>`function load(args)`<br/>`{var data=[{ Continent: "Asia", Population: 1749046000}];`<br/>`args.treemap.dataSource = data;}`|
 
 ## Appearance
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Layout| **Property:** *itemsLayoutMode*<br/><br/> `@(Html.EJ().TreeMap("container").`<br/>`ItemsLayoutMode("SliceAndDiceAuto"))`|**Property:** *layoutType*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.LayoutType(LayoutMode.Squarified)`<br/>`.Render();`|
 |Weight Value Path| **Property:** *weightValuePath*<br/><br/> `@(Html.EJ().TreeMap("container").`<br/>`.WeightValuePath("Population"))`|**Property:** *weightValuePath*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.WeightValuePath("Population")`<br/>`.Render();`|
@@ -38,7 +38,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Leaf Items
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Border Color| **Property:** *leafItemSettings.borderBrush*<br/><br/>`@(Html.EJ().TreeMap("container")`<br/>`.LeafItemsSetting(lls =>{ lls.showLabels(true)`<br/>`.borderBrush("blue")`<br/>`})`|**Property:** *leafItemSettings.border*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.LeafItemSettings(`<br/>`leaf => leaf.Border(new TreeMapBorder`<br/>`{ Color = "white", Width = 0.5 })`<br/>`)`<br/>`.Render();`|
 |Border Width| **Property:** *leafItemSettings.borderThickness*<br/><br/>`@(Html.EJ().TreeMap("container").`<br/>`.LeafItemsSetting(lls =>{ lls.showLabels(true) .borderThickness(5)`<br/>`})`|**Property:** *leafItemSettings.border*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.LeafItemSettings(`<br/>`leaf =>leaf.Border(new TreeMapBorder`<br/>`{  Width = 0.5 })`<br/>`)`<br/>`.Render();`|
@@ -57,7 +57,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Legend
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Legend Alignment| **Property:** *legendSettings.alignment*<br/><br/> `@(Html.EJ().TreeMap("container").`<br/>`.TreeMapLegend(t1=>{t1.Alignment("far")`<br/>`})`|**Property:** *legendSettings.alignment*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.LegendSettings(`<br/>`t1=> t1.Alignment("far")`<br/>`).Render();`|
 |Legend Visibility| **Property:** *showLegend*<br/><br/> `@(Html.EJ().TreeMap("container").`<br/>`.TreeMapLegend(t1=>{t1.ShowLegend(false)`<br/>`})`|**Property:** *legendSettings.visible*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.LegendSettings(`<br/>`t1=>t1.ShowLegend(false)`<br/>`).Render();`|
@@ -83,7 +83,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Levels
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Random Colors| Not Applicable|**Property:** *levels.autoFill*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.Levels(`<br/>`l1=>l1.AutoFill(true)`<br/>`).Render();`|
 |Level Background Color| **Property:** *levels.groupBackground*<br/><br/> `@(Html.EJ().TreeMap("container").`<br/>`.Levels(l1=>`<br/>`{l1.GroupBackground("white")`<br/>`})`| **Property:** *levels.fill*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.Levels(`<br/>`l1=> l1.Fill('white')`<br/>`).Render();`|
@@ -103,7 +103,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Selection
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Selection| **Property:** *selectionMode*<br/><br/> `@(Html.EJ().TreeMap("container").`<br/>`.selectionMode("default"))`| **Property:** *selectionSettings.mode*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.SelectionSettings(`<br/>`selectionSettings=>`<br/>`selectionSettings.Enable(true).Mode('Item')`<br/>`).Render();`|
 |Selection Color| Not Applicable| **Property:** *selectionSettings.fill*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.SelectionSettings(`<br/>`selectionSettings=>`<br/>`selectionSettings.Enable(true).Fill('blue')`<br/>`).Render();`|
@@ -112,7 +112,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Hightlight
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Highlight Group Selection Mode| **Property:** *highlightGroupOnSelection*<br/><br/> `@(Html.EJ().TreeMap("container")`<br/>`.highlightGroupOnSelection(true))`| **Property:** *highlightSettings.mode*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`HighlightSettings`<br/>`(highlight =>`<br/>`highlight.Enable(true)`<br/>`.Mode('All')`<br/>`).Render();`|
 |Highlight Selection Mode| **Property:** *highlightOnSelection*<br/><br/> `@(Html.EJ().TreeMap("container")`<br/>`.highlightOnSelection(true)`| **Property:** *highlightSettings.mode*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`HighlightSettings`<br/>`(highlight =>`<br/>`highlight.Enable(true)`<br/>`Mode('Item')`<br/>`).Render();`|
@@ -123,7 +123,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Range ColorMapping
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |From value| **Property:** *rangeColorMapping.from*<br/><br/>`@(Html.EJ().TreeMap("container")`<br/>`.TreeMapRangeColorMappings(`<br/>`cm =>cm.From(1000)`<br/>`))`| **Property:** *leafItemSettings.colorMapping.from*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.Load("load").Render();`<br/>`function load(args)`<br/>`{args.treemap.leafItemSettings`<br/>`.colorMapping[0] =`<br/>`{`<br/>`from:1000}`<br/>`}`|
 |To value| **Property:** *rangeColorMapping.to*<br/><br/> `@(Html.EJ().TreeMap("container")`<br/>`.TreeMapRangeColorMappings(`<br/>`cm =>cm.To(1000)`<br/>`))`| **Property:** *leafItemSettings.colorMapping.to*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.Load("load").Render();`<br/>`function load(args)`<br/>`{args.treemap.leafItemSettings`<br/>`.colorMapping[0] =`<br/>`{`<br/>`to:10000}`<br/>`}`|
@@ -132,7 +132,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Desaturation ColorMapping
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |From value| **Property:** *desaturationColorMapping.from*<br/><br/> `@(Html.EJ().TreeMap("container")`<br/>`.TreeMapDesaturationColorMapping(`<br/>`cm =>`<br/>`cm.From(1)))`| **Property:** *leafItemSettings.colorMapping.from*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.Load("load").Render();`<br/>`function load(args)`<br/>`{args.treemap.leafItemSettings`<br/>`.colorMapping[0] =`<br/>`{`<br/>`from:1000`<br/>`} }`|
 |To value| **Property:** *desaturationColorMapping.to*<br/><br/> `@(Html.EJ().TreeMap("container")`<br/>`.TreeMapDesaturationColorMapping(`<br/>`cm =>`<br/>`cm.To(0.2)))`| **Property:** *leafItemSettings.colorMapping.to*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.Load("load").Render();`<br/>`function load(args)`<br/>`{args.treemap.leafItemSettings`<br/>`.colorMapping[0] =`<br/>`{`<br/>`to:10000`<br/>`} }`|
@@ -143,7 +143,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Tooltip
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Tooltip| **Property:** *showTooltip*<br/>`@(Html.EJ().TreeMap("container")`<br/>`.ShowTooltip(true))`| **Property:** *tooltipSettings.visible*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.TooltipSettings(new TreeMapTooltipSettings{Visible =true}`<br/>`).Render();`|
 |Tooltip Template| **Property:** *tooltipTemplate*<br/><br/> `@(Html.EJ().TreeMap("container")`<br/>`.ShowTooltip(true)`<br/>`.TooltipTemplate("template"))`| **Property:** *tooltipSettings.template*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.TooltipSettings(new TreeMapTooltipSettings{`<br/>`Visible =true,`<br/>`template='template'}`<br/>`).Render();`|
@@ -156,14 +156,14 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Drilldown
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Drilldown| **Property:** *enableDrillDown*<br/>`@(Html.EJ().TreeMap("container")`<br/>`.EnableDrillDown(true))`| **Property:** *enableDrillDown*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.EnableDrillDown(true).Render();`|
 |Drilldown Level| **Property:** *drillDownLevel*<br/>`@(Html.EJ().TreeMap("container")`<br/>`.DrillDownLevel(1))`| **Property:** *InitialDrillSettings.groupIndex*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.EnableDrillDown(true)`<br/>`InitialDrillDown`<br/>`(new TreeMapInitialDrillSettings`<br/>`{ GroupIndex =1}).Render();`|
 
 ## Methods
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Treemap Refresh Method| **Method:** *refresh*<br/><br/> `var treemap =` <br/> &nbsp; `$("#container").ejTreeMap("instance");` <br/> `treemap.refresh();`| **Method:** *refresh*<br/><br/> `var treemap =` <br/> &nbsp; `document.getElementById('container').ej2_instances[0];` <br/> `treemap.refresh();`|
 |Method to Drilldown| **Method:** *drillDown*<br/><br/> `var treemap =` <br/> &nbsp; `$("#container").ejTreeMap("instance");` <br/> `treemap.drillDown();`|Not Applicable|
@@ -179,7 +179,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Events
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Treemap Load Event| Not Applicable| **Event:** *load*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`. Load(" load").Render();`<br/>`function itemMove(args)`<br/>`{`<br/>`}`|
 |Treemap Loaded Event| Not Applicable| **Event:** *loaded*<br/><br/> `@Html.EJS().TreeMap("container")`<br/>`.Loaded("load").Render();`<br/>`function  load(args)`<br/>`{`<br/>`}`|

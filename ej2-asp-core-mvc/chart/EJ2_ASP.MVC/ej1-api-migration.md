@@ -9,17 +9,17 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of  Chart component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of  Chart component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Annotations
 
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>rotation of annotation</b></td>
@@ -325,8 +325,8 @@ This article describes the API migration process of  Chart component from Essent
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Columns in chart</b></td>
@@ -426,8 +426,8 @@ This article describes the API migration process of  Chart component from Essent
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>commonSeriesOptions</b></td>
@@ -449,8 +449,8 @@ This article describes the API migration process of  Chart component from Essent
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>crosshair</b></td>
@@ -544,8 +544,8 @@ This article describes the API migration process of  Chart component from Essent
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>3d chart</b></td>
@@ -602,8 +602,8 @@ This article describes the API migration process of  Chart component from Essent
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>canvas rendering</b></td>
@@ -627,8 +627,8 @@ This article describes the API migration process of  Chart component from Essent
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Type of Indicator</b></td>
@@ -1217,8 +1217,8 @@ This article describes the API migration process of  Chart component from Essent
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -1659,8 +1659,8 @@ Not applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -3155,8 +3155,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -4651,8 +4651,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -6147,8 +6147,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -6237,8 +6237,8 @@ chart.appendTo('#chart');
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -8099,8 +8099,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -8461,8 +8461,8 @@ Not Applicable.
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -8716,8 +8716,8 @@ PrimaryXAxis(px => px.StripLines(st => st.FontStyle())))
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -8917,8 +8917,8 @@ Not applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -9041,8 +9041,8 @@ Not Applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -9944,8 +9944,8 @@ Not applicable
 <table>
 <tr>
 <td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>

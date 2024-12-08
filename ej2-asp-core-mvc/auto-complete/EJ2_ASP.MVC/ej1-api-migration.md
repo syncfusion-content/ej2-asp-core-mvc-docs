@@ -8,14 +8,14 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of  AutoComplete component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of  AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use multiselection support in autocomplete, we suggest you to use MultiSelect component.
 
 ## DataBinding
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *Datasource* <br/>`@Html.EJ().Autocomplete("autocomplete").Datasource((IEnumerable<CarsList>)ViewBag.datasource)`| **Property:** *DataSource*<br/>`@Html.EJS().AutoComplete("games").DataSource((IEnumerable<object>)ViewBag.localdata).Render()`|
 | **Fields for mapping** | **Property:** *AutocompleteFields*<br/>`@Html.EJ().Autocomplete("autocomplete").AutocompleteFields(field => field.Key("UniqueKey").Text("Text"))`| **Property:** *e-autocomplete-fields*<br/>`@Html.EJS().AutoComplete("games").Fields(new AutoCompleteFieldSettings { Text = "Game" }).Render()` |
@@ -27,7 +27,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 
 ## Filtering
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Case sensitivity** | **Property**: *CaseSensitiveSearch*<br/>`@Html.EJ().Autocomplete("selectCar").CaseSensitiveSearch(true)`|**Property:** *ignoreCase*<br/>`@Html.EJS().Autocomplete("selectCar").IgnoreCase(true).Render()`|
 | **Accent effective search** | **Not applicable** | **Property** : *ignoreAccent* <br/>`@Html.EJS().Autocomplete("selectCar").IgnoreAccent(true).Render()`|
@@ -40,14 +40,14 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 
 ## Placeholder
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Watermark text** | **Property:** *WatermarkText* <br/>`@Html.EJ().Autocomplete("selectCar").WatermarkText("Select")`| **Property:** *Placeholder* <br/>`@Html.EJS().Autocomplete("selectCar").Placeholder("select").Render()`|
 | **Floating  of waterMarkText** | **Not applicable**   | **Property:** *FloatLabelType* <br/>`@Html.EJS().Autocomplete("selectCar").FloatLabelType("Auto").Render()`|
 
 ## Popup
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **No records text** | **Property:** *EmptyResultText* <br/> `@Html.EJ().Autocomplete("selectCar").EmptyResultText("no records")`| **Property:** *NoRecordsTemplate*<br/> `@Html.EJS().Autocomplete("selectCar").NoRecordsTemplate("@Html.Raw("<span class='norecord'> NO DATA AVAILABLE</span>")").Render()`|
 | **No records showing** | **Property:** *show-empty-result-text<br/> `@Html.EJ().Autocomplete("selectCar").ShowEmptyResultText("no records")` | **Not applicable** |
@@ -66,7 +66,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 
 ## CSS
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *Cssclass* <br/> `@Html.EJ().Autocomplete("autocomplete").CssClass("CSSClass")` | **Property:** *cssClass* <br/> `@Html.EJS().Autocomplete("autocomplete").CssClass("class").Render()`|
 | **Height** | **Property:** *Height* <br/> `@Html.EJ().Autocomplete("autocomplete").Height("300px")`| By using *css-class* property, you can acheive this. |
@@ -76,19 +76,19 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 
 ## Grouping
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *fields.groupBy*<br/> `@Html.EJ().Autocomplete("autocomplete").AutocompleteFields(field => field.GroupBy("UniqueKey"))`|**Property:** *fields.groupBy* `@Html.EJS().AutoComplete("games").Fields(new AutoCompleteFieldSettings { GroupBy = "Game" }).Render()`|
 
 ## Localization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *Locale* <br/>`@Html.EJ().Autocomplete("autocomplete").Locale("fr-FE")`| **Property:** *Locale* <br/>`@Html.EJS().AutoComplete("games").Locale("fr-FE").Render()`|
 
 ## Template
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *Template* `@Html.EJ().Autocomplete("autocomplete").Template("@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")")`|**Property:** *ItemTemplate*<br/> `@Html.EJS().Autocomplete("autocomplete").ItemTemplate("@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")")` |
 | **Group Template** | **Not Applicable**  | **Property:** *GroupTemplate* <br/>`@Html.EJS().Autocomplete("autocomplete").GroupTemplate("@Html.Raw("<strong>${City}</strong>")")`|
@@ -100,20 +100,20 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 
 ## Sorting
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *AllowSorting* <br/> `@Html.EJ().Autocomplete("autocomplete").AllowSorting(true)` | **It is applicable when the sortOrder is defined.** |
 | **Order of sorting** | **Property:** *SortOrder* <br/>`@Html.EJS().Autocomplete("autocomplete").SortOrder("Ascending")`|**Property:** *SortOrder*<br/> `@Html.EJS().AutoComplete("games").SortOrder("Ascending").Render()` |
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **RTL support** | **Property:** *EnableRtl* <br/>`@Html.EJ().Autocomplete("autocomplete").EnableRtl(true)` | **Property:** *EnableRtl* <br/>`@Html.EJS().AutoComplete("games").EnableRtl(true).Render()`|
 
 ## Selection
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------ | ----------- |
 |**Selecting particular value**| **Property**: *SelectValueByKey* <br/>`@Html.EJ().Autocomplete("autocomplete").SelectValueByKey(12)`|**Achievable through value property** |
 | **Selecting particular value** | **Property**: *value*<br/>`@Html.EJ().Autocomplete("autocomplete").Vallue("data")` | **Property:** *value*<br/> `@Html.EJS().AutoComplete("games").Value("data").Render()`|
@@ -124,7 +124,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 
 ## Miscellaneous
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Enable/disable** | **Property:** *Enabled*<br/>`@Html.EJ().AutoComplete("autocomplete").Enabled(true)` | **Property:** *Enabled* <br/>`@Html.EJS().AutoComplete("games").Enabled(true).Render()`|
 | **Enable persistence** | **Property:** *EnablePersistence*<br/> `@Html.EJ().AutoComplete("autocomplete").EnablePersistence(true)` | **Property:** *EnablePersistence* <br/> `@Html.EJS().AutoComplete("games").EnablePersistence(true).Render()`|
@@ -134,7 +134,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Addition of new option watermarktext** | **Property:** *AddNewText*<br/> `@Html.EJ().Autocomplete("autocomplete").AddNewText("data")`|**Not applicable** |
 | **Addition of new item** | **Property:**  *AllowAddNew* <br/>`@Html.EJ().Autocomplete("autocomplete").AllowAddNew(true)`|**Property:** *AllowCustom*<br/> `@Html.EJS().Autocomplete("autocomplete").AllowCustom(true).Render()`|

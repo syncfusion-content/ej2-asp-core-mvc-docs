@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of MaskEdit component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of MaskEdit component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Adding custom class | **Property:** *css-class* <br /><br />`<ej-mask-edit id="maskedit" mask-format="9999" input-mode="@InputMode.Text" css-class="custom"/>`<br /> | **Property:** *cssClass*<br /><br />`<ejs-maskedtextbox mask='9999' cssClass = "custom"></ejs-maskedtextbox>` |
 | Destroy editor | Not Applicable | **Method:** *destroy*<br /><br />`<ejs-maskedtextbox id="mask "mask='00-000'></ejs-maskedtextbox>`<br /><br />**Script**<br /><br />`var mask = document.getElementById('mask').ej2_instances[0]`<br />`mask.destroy();` |
@@ -39,7 +39,7 @@ This article describes the API migration process of MaskEdit component from Esse
 
 ## Mask Configuration
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers on value change | **Event** *change*<br /><br />`<ej-mask-edit id="mask" mask-format="00-00" input-mode="@InputMode.Text" change="onChange"/>`<br /><br />**Script**<br /><br />`function onChange(){}` | **Event:** *change*<br /><br />`<ejs-maskedtextbox id="mask" change="onChange" mask='00-00'></ejs-maskedtextbox>`<br /><br />**Script**<br /><br />`function onChange(){}` |
 | Clears maskedit text/value | **Method:** *clear*<br /><br />`<ej-mask-edit id="mask" mask-format="0000" input-mode="@InputMode.Text" value="1234"/>`<br /><br />**Script**<br /><br />`var maskObj = $(“#mask”).data(“ejMaskEdit”);`<br />`maskObj.clear();` | **Can be achieved using**<br/>`<ejs-maskedtextbox id="mask" name="maskedtextbox" mask="000-000" value="1234" created="onCreate" ></ejs-maskedtextbox>`<br/>**Script**<br/>`function onCreate{`<br/>`var maskObj = this;`<br/>`maskObj.value= ""`;<br/>`}` |
@@ -60,7 +60,7 @@ This article describes the API migration process of MaskEdit component from Esse
 
 ## Validation
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Displays error until correct value is entered | **Property:** *show-error*<br /><br />`<ej-mask-edit id="mask" mask-format="99-999" input-mode="@InputMode.Text" show-error=true/>` | **MaskedTextBox by default shows error until the correct value is entered**<br/>`<ejs-maskedtextbox id="mask" mask='0000' value='1234'></ejs-maskedtextbox>` |
 | Validation message | **Property:** *validation-message*<br /><br />`<ej-mask-edit id="mask" mask-format="0000" input-mode="@InputMode.Text" validation-rules="rule" validation-message="messages"/>`<br /><br />**Script**<br /><br />`@{`<br />`Dictionary<string, object> rule = new Dictionary<string, object>();`<br />`rule.Add("required",true);`<br />`Dictionary<string, object> messages = new Dictionary<string, object>();`<br />`messages.Add("required", "Required value");`<br />`}` | **Can be achieved using Form Validator**<br/>`<form id="form-element">`<br/>`<ejs-maskedtextbox id="mask1" name="mask_value" mask="000-000-0000" placeholder="Mobile Number" floatLabelType="Always"></ejs-maskedtextbox>`<br/>`<form>`<br/>**Script**<br/>`var customFn = function (args) {`<br/> `var argsLength = args.element.ej2_instances[0].value.length;`<br/>`if (argsLength == 0) {`<br/>`return 0;`<br/>}<br/>`else return argsLength;`<br/> `};`<br/>`}`<br/>`var options = {`<br/>`rules: {`<br/>`'mask_value': { maxLength: [customFn, 'Enter valid mobile number'] },`<br/>`}`<br/>`var formObject = new ej.inputs.FormValidator('#form-element', options);`<br/>`formObject.customPlacement = function (element, errorElement) {`<br/>`element.parentNode.parentNode.appendChild(errorElement);`<br/>`};` |

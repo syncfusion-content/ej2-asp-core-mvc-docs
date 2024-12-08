@@ -10,26 +10,26 @@ documentation: ug
 
 # Reference Scripts in ASP.NET MVC Application
 
-This section provides information about reference scripts from CDN and Custom resource generator (CRG) for Syncfusion ASP.NET MVC controls.
+This section provides information about reference scripts from CDN and Custom resource generator (CRG) for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 
 ## CDN Reference
 
-Syncfusion hosts every ASP.NET MVC control as a separate node package in CDN, from which scripts and style sheets of the individual package can be loaded. Syncfusion also hosts a single node package with all ASP.NET MVC controls on it, from which scripts and style sheets of all controls can be loaded as single script and style file.
+Syncfusion<sup style="font-size:70%">&reg;</sup> hosts every ASP.NET MVC control as a separate node package in CDN, from which scripts and style sheets of the individual package can be loaded. Syncfusion<sup style="font-size:70%">&reg;</sup> also hosts a single node package with all ASP.NET MVC controls on it, from which scripts and style sheets of all controls can be loaded as single script and style file.
 
-Here, the Syncfusion ASP.NET MVC CDN URL for the both Individual ASP.NET MVC control package and Complete ASP.NET MVC controls package has been explained.
+Here, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC CDN URL for the both Individual ASP.NET MVC control package and Complete ASP.NET MVC controls package has been explained.
 
 W> The un-versioned CDN links which always maintains latest version scripts are deprecated from 2022 Vol1 - 20.1 version. These links are available with 19.4 version scripts to avoid breaking in sites and apps that uses un-versioned links.
 
 ### CDN Reference for all controls
 
-The primary goal of all the ASP.NET MVC controls package is to help the novice to get started with Syncfusion ASP.NET MVC control by referring the single line for script and styles without bothering about the dependency graph of the ASP.NET MVC controls.
+The primary goal of all the ASP.NET MVC controls package is to help the novice to get started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC control by referring the single line for script and styles without bothering about the dependency graph of the ASP.NET MVC controls.
 
 | controls | CDN Reference |
 | --- | --- |
 | Scripts reference for all controls| https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js |
 | Styles reference for all controls | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/{THEME-NAME}.css |
 
-N> Syncfusion will never recommend all controls CDN for real-time projects. Because, the size of this CDN impacts website/app loading time since this package includes all the Syncfusion ASP.NET MVC controls.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> will never recommend all controls CDN for real-time projects. Because, the size of this CDN impacts website/app loading time since this package includes all the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 
 Add the EJ2 CDN client-side resources to the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
 
@@ -79,7 +79,7 @@ For example, the scripts and styles for the ASP.NET MVC Calendar control are lis
 {% endhighlight %}
 {% endtabs %}
 
-In addition to above, Syncfusion ASP.NET MVC controls provides latest scripts and styles in CDN without versioning. You can use this in development environment if you want to always use the latest version of scripts and styles. It is not recommended to use this in production environment.
+In addition to above, Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls provides latest scripts and styles in CDN without versioning. You can use this in development environment if you want to always use the latest version of scripts and styles. It is not recommended to use this in production environment.
 
 | controls | CDN Reference |
 | --- | --- |
@@ -90,9 +90,9 @@ In addition to above, Syncfusion ASP.NET MVC controls provides latest scripts an
 
 A package in Node.js consists of a set of files needed for a JavaScript module which can be included in any web application. NPM is the popular package manager for both public and private packages.
 
-### Syncfusion NPM packages
+### Syncfusion<sup style="font-size:70%">&reg;</sup> NPM packages
 
-Scripts and style sheets of Syncfusion ASP.NET MVC controls can be included in an ASP.NET MVC web application using NPM packages, since Syncfusion publishes its ASP.NET MVC controls as the scoped package in NPM.
+Scripts and style sheets of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls can be included in an ASP.NET MVC web application using NPM packages, since Syncfusion<sup style="font-size:70%">&reg;</sup> publishes its ASP.NET MVC controls as the scoped package in NPM.
 
 #### Installing NPM packages in ASP.NET MVC Web Application
 
@@ -106,7 +106,7 @@ Scripts and style sheets of Syncfusion ASP.NET MVC controls can be included in a
 
 3.Open the Source Explorer and right click on the application name. Then, select “**Open Folder in File Explorer**”.
 
-4.Open the Command Prompt for this location and install the required Syncfusion packages using “**npm install @syncfusion/{PACKAGE_NAME} --save**”
+4.Open the Command Prompt for this location and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using “**npm install @syncfusion/{PACKAGE_NAME} --save**”
 
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}
@@ -122,9 +122,9 @@ npm install @syncfusion/ej2-calendars --save
 
 #### From Installed Packages
 
-Scripts and style sheets of Syncfusion ASP.NET MVC controls from locally-installed packages can be included in an ASP.NET MVC web application using the following two methods.
+Scripts and style sheets of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls from locally-installed packages can be included in an ASP.NET MVC web application using the following two methods.
 
-N>Files in the **Content** folder can be accessed only in client-side, hence Syncfusion scripts and style sheets should be copied from **node_modules** to **Content**.
+N>Files in the **Content** folder can be accessed only in client-side, hence Syncfusion<sup style="font-size:70%">&reg;</sup> scripts and style sheets should be copied from **node_modules** to **Content**.
 
 By using either one of the following methods, Client-Side Resource can be loaded in ASP.NET MVC web application:
 
@@ -133,9 +133,9 @@ By using either one of the following methods, Client-Side Resource can be loaded
 
 #### Copying by Gulp
 
-Install required Syncfusion ASP.NET MVC control packages as mentioned in “[**Installing NPM Packages in ASP.NET MVC Web Application**](#installing-npm-packages-in-aspnet-mvc-web-application)”.
+Install required Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC control packages as mentioned in “[**Installing NPM Packages in ASP.NET MVC Web Application**](#installing-npm-packages-in-aspnet-mvc-web-application)”.
 
-1.In addition to Syncfusion ASP.NET MVC packages, install gulp and glob packages using below commands.
+1.In addition to Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC packages, install gulp and glob packages using below commands.
 
 N>Gulp Installation - **npm install gulp --save**
 
@@ -202,7 +202,7 @@ gulp.task("copy-client-resource", function (done) {
 
 ![Include Syncfusion in project](images/include-syncfusion-package.png)
 
-8.Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion ASP.NET MVC Calendar has been loaded for example.
+8.Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Calendar has been loaded for example.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -222,4 +222,4 @@ gulp.task("copy-client-resource", function (done) {
 
 ## Custom Resource Generator
 
-The Syncfusion ASP.NET MVC provides an option to generate a control's scripts using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) tool for the ASP.NET MVC Controls. To generate the control-wise scripts externally using CRG, refer [here](./custom-resource-generator).
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC provides an option to generate a control's scripts using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) tool for the ASP.NET MVC Controls. To generate the control-wise scripts externally using CRG, refer [here](./custom-resource-generator).

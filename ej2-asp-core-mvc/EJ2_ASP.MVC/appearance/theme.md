@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion ASP.NET MVC Themes
+# Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Themes
 
-The following list of themes are included in the Syncfusion ASP.NET MVC controls library.
+The following list of themes are included in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls library.
 
 |Theme |Style Sheet Name|
 |--------|--------|
@@ -29,11 +29,11 @@ The following list of themes are included in the Syncfusion ASP.NET MVC controls
 |Microsoft Office Fabric Dark | fabric-dark.css |
 |High Contrast | highcontrast.css |
 
-The Syncfusion ASP.NET MVC Bootstrap theme is designed based on Bootstrap v3, whereas the Bootstrap4 theme is designed based on Bootstrap v4. Syncfusion ASP.NET MVC themes provide support for the Fusion Theme that can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Bootstrap theme is designed based on Bootstrap v3, whereas the Bootstrap4 theme is designed based on Bootstrap v4. Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC themes provide support for the Fusion Theme that can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
 
 ## Reference themes in ASP.NET MVC application
 
-Syncfusion ASP.NET MVC themes can be used in your ASP.NET MVC application by referencing the style sheet. Refer the ASP.NET MVC Styles Sheet inside the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC themes can be used in your ASP.NET MVC application by referencing the style sheet. Refer the ASP.NET MVC Styles Sheet inside the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
 
 Using the below approaches the themes can be referenced in the ASP.NET MVC application,
 
@@ -45,7 +45,7 @@ Using the below approaches the themes can be referenced in the ASP.NET MVC appli
 
 Instead of using a local resource on your server, you can use a cloud CDN to reference the theme style sheets. CDN Stands for "Content Delivery Network". A CDN is a group of servers distributed in different locations. While CDN are often used to host websites, they are commonly used to provide other types of downloadable data as well. Examples include software programs, images, videos, and streaming media.
 
-Syncfusion ASP.NET MVC Themes are available in the CDN. Make sure that the version in the URLs matches the version of the Syncfusion Essential JS 2 ASP.NET MVC Package you are using.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Themes are available in the CDN. Make sure that the version in the URLs matches the version of the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 ASP.NET MVC Package you are using.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -78,7 +78,7 @@ Syncfusion ASP.NET MVC Themes are available in the CDN. Make sure that the versi
 
 In the ASP.NET MVC application, the application theme can be changed dynamically by changing its style sheet reference in code.
 
-1.Add `id` attribute in the Syncfusion style sheet references in **~/Views/Shared/_Layout.cshtml** page like below.
+1.Add `id` attribute in the Syncfusion<sup style="font-size:70%">&reg;</sup> style sheet references in **~/Views/Shared/_Layout.cshtml** page like below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -127,7 +127,7 @@ namespace ThemeSwitch.Models
 {% endhighlight %}
 {% endtabs %}
 
-3.Implement a theme change dynamically using the Syncfusion ASP.NET MVC dropdown control in the application as in the below code.
+3.Implement a theme change dynamically using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC dropdown control in the application as in the below code.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}

@@ -11,7 +11,7 @@ documentation: ug
 
 # Templates in ##Platform_Name## AutoComplete Control
 
-The AutoComplete has been provided with several options to customize each list items, group title, header and footer elements. It uses the Essential JS 2 `Template engine` to compile and render the elements properly.
+The AutoComplete has been provided with several options to customize each list items, group title, header and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 `Template engine` to compile and render the elements properly.
 
 ## Item template
 

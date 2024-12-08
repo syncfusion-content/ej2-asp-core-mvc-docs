@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of  DropDownList component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of  DropDownList component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## DataBinding
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *Datasource* <br/>`@Html.EJ().DropDownList("countryList").Datasource((IEnumerable<Countries>)ViewBag.datasource1)` | **Property**: *dataSource* <br/>`@Html.EJS().DropDownList("games").DataSource((IEnumerable<object>)ViewBag.localdata).Render()` |
 | **Fields for mapping** | **Property**: *DropDownListFields* <br/>`@Html.EJ().DropDownList("groupsList").DropDownListFields(f => f.Value("parentId").Text("text"))` | **Property**: *Fields* <br/>`@Html.EJS().DropDownList("games").Fields(new DropDownListFieldSettings { Text = "Game" }).Render()` |
@@ -27,7 +27,7 @@ This article describes the API migration process of  DropDownList component from
 
 ## Filtering
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** |	**Property**: *EnableFilterSearch* <br/>`@Html.EJ().DropDownList("selectCompany").EnableFilterSearch(true)` | **Property**: *AllowFiltering* <br/>`@Html.EJS().DropDownList("customers").AllowFiltering(true).Render()` |
 | **Server filtering** | **Property**: *EnableServerFiltering* <br/>`@Html.EJ().DropDownList("selectCompany").EnableServerFiltering(true)` | **Property**: *AllowFiltering* <br/>`@Html.EJS().DropDownList("customers").AllowFiltering(true).Render()` |
@@ -41,7 +41,7 @@ This article describes the API migration process of  DropDownList component from
 
 ## Template
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *Template* <br/>`@Html.EJ().DropDownList("selectCompany").Template("<div><img class='imgId' src='../Content/Employees/${Image}.png' alt='employee'/> <div class='ename'> ${Text} </div><div class='role'> ${Role} </div><div class='cont'> ${Country} </div></div>")` | **Property**: *ItemTemplate*<br/>`@Html.EJS().DropDownList("customers").ItemTemplate("@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")").Render()` |
 | **Group Template** | **Not Applicable** | **Property**: *GroupTemplate* <br/>`@Html.EJS().DropDownList("customers").GroupTemplate("@Html.Raw("<strong>${City}</strong>")").Render()` |
@@ -53,27 +53,27 @@ This article describes the API migration process of  DropDownList component from
 
 ## Virtual Scrolling
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** |	**Property**: *AllowVirtualScrolling* <br/>`@Html.EJ().DropDownList("customers").AllowVirtualScrolling(true)` | **Not applicable** |
 
 ## Applying CSS
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *CssClass* <br/>`@Html.EJ().DropDownList("customers").CssClass("customClass")` | **Property**: *CssClass* <br/>`@Html.EJS().DropDownList("customers").CssClass("class").Render()` |
 | **showRoundedCorner** | **Property**: *ShowRoundedCorner* <br/>`@Html.EJ().DropDownList("customers").ShowRoundedCorner(true)` | **Property**: *CssClass* <br/>`@Html.EJS().DropDownList("customers").CssClass("class").Render()` |
 
 ## Sorting
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** |	**Property**: *EnableSorting* <br/>`@Html.EJ().DropDownList("customers").EnableSorting(true)` | **Enabled only on using sortorder **Property**** |
 | **Order of sorting** | **Property**: *SortOrder* <br/>`@Html.EJ().DropDownList("customers").SortOrder("SortOrder.Descending")` | **Property**: *SortOrder* <br/>`@Html.EJS().DropDownList("customers").SortOrder("Ascending").Render()`|
 
 ## Popup
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Popup height** | **Property**: *PopupHeight* <br/>`@Html.EJ().DropDownList("customers").PopupHeight("550px")` | **Property**: PopupHeight <br/>`@Html.EJS().DropDownList("customers").PopupHeight("220px").Render()` |
 | **Popup width** |	**Property**: *PopupWidth* <br/>`@Html.EJ().DropDownList("customers").PopupWidth("550px")` | **Property**: *PopupWidth* <br/>`@Html.EJS().DropDownList("customers").PopupWidth("300px").Render()` |
@@ -97,28 +97,28 @@ This article describes the API migration process of  DropDownList component from
 
 ## Placeholder
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Watermark text** | **Property**: *WatermarkText* <br/>`@Html.EJ().DropDownList("dropdown").WatermarkText("Select")` | **Property**: *Placeholder* <br/>`@Html.EJS().DropDownList("dropdown").PlaceHolder("Select").Render()` |
 | **Floating  of waterMarkText** | **Not applicable** |	**Property**: *FloatLabelType* <br/>`@Html.EJS().DropDownList("dropdown").FloatLabelType("Auto").Render()` |
 
 ## Grouping
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *fields.groupBy* <br/>`@Html.EJ().DropDownList("groupsList").DropDownListFields(f => f.GroupBy("parentId"))` | **Property**: *fields.groupBy*<br/>>`@Html.EJS().DropDownList("games").Fields(new DropDownListFieldSettings { GroupBy = "Game" }).Render()` |
 | **Group Template** | **Not applicable** | **Property**: *GroupTemplate*<br/>`@Html.EJS().DropDownList("customers").GroupTemplate("@Html.Raw("<strong>${City}</strong>")").Render()` |
 
 ## Accessibility
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Globalization** | **Property**: *Locale*<br/>`@Html.EJ().DropDownList("customers").Locale("fr-FE")` | **Property**: *Locale*<br/>`@Html.EJS().DropDownList("customers").Locale("fr-FE").Render()` |
 | **Rtl support** |	**Property**: *EnableRtl*<br/>`@Html.EJ().DropDownList("customers").EnableRtl(true)` | **Property**: *EnableRtl*<br/>`@Html.EJS().DropDownList("customers").EnableRtl(true).Render()` |
 
 ## Miscellaneous
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Enable/disable** | **Property**: *Enabled*<br/>`@Html.EJ().DropDownList("customers").Enabled(true)` | **Property**: *Enabled* <br/>`@Html.EJS().DropDownList("customers").Enabled(true).Render()` |
 | Read only | **Property**: *ReadOnly* <br/>`@Html.EJ().DropDownList("customers").ReadOnly(true)` | <br/>**Property**: *ReadOnly*<br/>`@Html.EJS().DropDownList("customers").ReadOnly(true).Render()` |
@@ -130,7 +130,7 @@ This article describes the API migration process of  DropDownList component from
 
 ## Selection
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | Selecting particular index | **Property**: *selected-index*<br/>`@Html.EJ().DropDownList("dropdown").Index(3)` | **Property**: *index*<br/>`@Html.EJS().DropDownList("customers").Index(3).Render()` |
 | **Selecting particular value** | **Property**: *value*<br/>`@Html.EJ().DropDownList("dropdown").Value(3)` | **Property**: *value*<br/>`@Html.EJS().DropDownList("customers").Value(3).Render()` |
@@ -147,7 +147,7 @@ This article describes the API migration process of  DropDownList component from
 
 ## Common
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | **Adding new item** | **Method** : *addItem*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/><br/>`$('#dropdown').ejDropDownList("addItem", {text:"India"});` | **Method**: *addItem*<br/>`<ejs-dropdownlist/>`<br/> <br/>`var ddlObj = document.getElementById(dropdownlist).ej2_Instances[0];`<br/><br/>`ddlObj.addItem({Id: 'game4', Game: 'Golf'}, 2);` |
 | **Clearing the text** | **Method** : *clearText*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/> <br/>`$('#dropdown').ejDropDownList('clearText')` | **Property**:* showClearButton*<br/>`<ejs-dropdownlist showClearButton=true/>` |

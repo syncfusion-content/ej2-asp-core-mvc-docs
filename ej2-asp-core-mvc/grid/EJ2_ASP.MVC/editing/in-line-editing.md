@@ -236,7 +236,7 @@ N> Add newRowPostion is supported for **Normal** and **Batch** editing modes.
 
 ## Show add new row always in grid
 
-The Syncfusion Grid simplifies the addition of new records by consistently presenting a blank, "add new row" form within the grid. To enable this feature, you can set the `ShowAddNewRow` property within the `EditSettings` configuration to **true**. This allows for continuous addition of new records. You can display the add a new row at either the **top** or **bottom** of the grid content, depending on the [`NewRowPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) property of `EditSettings`. By default, the add new row is displayed at the top row of the grid content.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid simplifies the addition of new records by consistently presenting a blank, "add new row" form within the grid. To enable this feature, you can set the `ShowAddNewRow` property within the `EditSettings` configuration to **true**. This allows for continuous addition of new records. You can display the add a new row at either the **top** or **bottom** of the grid content, depending on the [`NewRowPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) property of `EditSettings`. By default, the add new row is displayed at the top row of the grid content.
 
 The following sample demonstrates how to add a new record continuously using `ShowAddNewRow` property.
 

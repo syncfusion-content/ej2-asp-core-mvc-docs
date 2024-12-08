@@ -10,7 +10,7 @@ documentation: ug
 
 # Column reorder in ASP.NET MVC Grid component
  
-The Syncfusion ASP.NET MVC Grid component allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid.
 
 To reorder the columns, set the [AllowReordering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowReordering) property to **true** in the grid.
 
@@ -32,7 +32,7 @@ Here's an example for column reordering in your Grid component:
 
 ## Prevent reordering for particular column
 
-By default, all columns in the Syncfusion ASP.NET MVC Grid can be reordered by dragging and dropping their headers to another location within the grid. However, there may be certain columns that you do not want to be reordered. In such cases, you can set the `AllowReordering` property of that particular column to **false**. Here is an example that demonstrates how to prevent reordering for a specific column:
+By default, all columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid can be reordered by dragging and dropping their headers to another location within the grid. However, there may be certain columns that you do not want to be reordered. In such cases, you can set the `AllowReordering` property of that particular column to **false**. Here is an example that demonstrates how to prevent reordering for a specific column:
 
 In this example, the **ShipName** column is prevented from being reordered by setting the `AllowReordering` property to **false**.
 
@@ -49,7 +49,7 @@ In this example, the **ShipName** column is prevented from being reordered by se
 
 ## Reorder columns externally
 
-The Syncfusion Grid ASP.NET MVC allows you to reorder columns externally, which means that using methods you can programmatically move columns around within the grid, based on their index or target index, or by using their field name.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid ASP.NET MVC allows you to reorder columns externally, which means that using methods you can programmatically move columns around within the grid, based on their index or target index, or by using their field name.
 
 > When reordering columns externally, you must set the [AllowReordering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowReordering) property of the grid to **true**.
 
@@ -117,7 +117,7 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 
 ## Reorder events
 
-When reordering columns in the Syncfusion ASP.NET MVC Grid component, you may want to take some specific action in response to the drag and drop events. To handle these events, you can define event handlers for the following events:
+When reordering columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component, you may want to take some specific action in response to the drag and drop events. To handle these events, you can define event handlers for the following events:
 
 1.The [ColumnDragStart](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDragStart) event triggers when column header element drag (move) starts.
 
@@ -125,7 +125,7 @@ When reordering columns in the Syncfusion ASP.NET MVC Grid component, you may wa
 
 3.The [ColumnDrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrop) event triggers when a column header element is dropped on the target column.
 
-In the following example, we have implemented the `ColumnDragStart`, `ColumnDrag`, and `ColumnDrop` events in the Syncfusion Grid component.
+In the following example, we have implemented the `ColumnDragStart`, `ColumnDrag`, and `ColumnDrop` events in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

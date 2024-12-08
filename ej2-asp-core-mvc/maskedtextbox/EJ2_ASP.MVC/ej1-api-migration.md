@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of MaskEdit component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of MaskEdit component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | Adding custom class | **Property:** *CssClass* <br /><br />@Html.EJ().MaskEdit("mask").MaskFormat("9999").InputMode(InputMode.Text).CssClass("custom") | **Property:** *CssClass*<br /><br />@Html.EJS().MaskedTextBox("mask").Mask("9999").CssClass("custom").Render() |
 | Destroy editor | Not Applicable | **Method:** *destroy*<br /><br />@Html.EJS().MaskedTextBox("mask").Mask("00-000").Render()<br /><br />**Script**<br /><br />var mask = document.getElementById('mask').ej2_instances[0]<br />mask.destroy(); |
@@ -39,7 +39,7 @@ This article describes the API migration process of MaskEdit component from Esse
 
 ## Mask Configuration
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | Triggers on value change | **Event** *Change*<br /><br />@Html.EJ().MaskEdit("mask").MaskFormat("00-00").InputMode(InputMode.Text).ClientSideEvents(s => s.Change("onChange"))<br /><br />**Script**<br /><br />function onChange(){} | **Event:** *Change*<br /><br />@Html.EJS().MaskedTextBox("mask").Mask("00-00").Change("onChange").Render()<br /><br />**Script**<br /><br />function onChange(){} |
 | Clears maskedit text/value | **Method:** *clear*<br /><br />@Html.EJ().MaskEdit("mask").MaskFormat("0000").Value("1234").InputMode(InputMode.Text)<br /><br />**Script**<br /><br />var maskObj = $(“#mask”).data(“ejMaskEdit”);<br />maskObj.clear(); | **Can be achieved using**<br/>@Html.EJS().MaskedTextBox("mask").Mask("00-000").Value("1234").Render()<br/>**Script**<br/>var maskObj = document.getElementById("mask").ej2_instances[0];<br/>maskObj.value = ""<br/> |
@@ -60,7 +60,7 @@ This article describes the API migration process of MaskEdit component from Esse
 
 ## Validation
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |----------|-----------------------|-----------------------|
 | Displays error until correct value is entered | **Property:** *show-error*<br /><br />@Html.EJ().MaskEdit("mask").MaskFormat("99-999").ShowError(true) | **MaskedTextBox by default shows error until correct value is entered**<br/>@Html.EJS().MaskedTextBox("mask").Mask("0000").Render() |
 | Validation message | **Property:** *validation-message*<br /><br />@Html.EJ().MaskEdit("mask").MaskFormat("0000").ValidationRules(rule => rule.AddRule("required", true)).ValidationMessage(msg => msg.AddMessage("required", "Required value")) | **Validation in MaskedTextBox can be achieved by Form validation**<br/>&lt;form id="form-element"><br/>@Html.EJS().MaskedTextBox("mask").Mask("000-000-0000").Placeholder("Mobile Number").FloatLabelType(FloatLabelType.Always).Created("onCreate").Render()<br/>&lt;/form><br/>**Script**<br/>var options = {<br/>rules: {<br/>'mask': { required: [true, 'Enter valid mobile number'] },<br/> },<br/>};<br/> var formObject = new ej.inputs.FormValidator('#form-element', options);<br/>formObject.customPlacement = function (element, errorElement) {<br/>document.querySelector("#mask").parentNode.appendChild(errorElement);<br/> };<br/>function onCreate() {<br/>document.getElementById(this.element.id).setAttribute("name", "mask");<br/>} |

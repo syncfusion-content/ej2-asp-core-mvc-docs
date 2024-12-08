@@ -10,7 +10,7 @@ documentation: ug
 
 # Localization in ASP.NET Core Mention
 
-ASP.NET Core Mention control can be localized. Refer to ASP.NET Core [Localization](../../common/EJ2_ASP.NETCORE/localization.md) topic to localize Syncfusion ASP.NET Core controls.
+ASP.NET Core Mention control can be localized. Refer to ASP.NET Core [Localization](../../common/EJ2_ASP.NETCORE/localization.md) topic to localize Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
 ## See also
 

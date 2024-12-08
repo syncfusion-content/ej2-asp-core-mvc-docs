@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Linear gauge dimensions
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Height| **Property:** *height*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Height("150px")`|**Property:** *height*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Height("150px").Render()`|
 |Width| **Property:** *width*<br/><br/>`@Html.EJ().LinearGauge("container")` <br/> `.Width("200px")`|**Property:** *width*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Width("200px").Render()`|
@@ -24,7 +24,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Line customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Height| **Property:** *scales.length*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Length(300).Add()})`|**Property:** *axes.line.height*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.Line(line => line.Height(100)).Add())` <br/> `.Render()`|
 |Width| **Property:** *scales.width*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Width(300).Add()})`|**Property:** *axes.line.width*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.Line(line => line.Width(50)).Add())` <br/> `.Render()`|
@@ -35,7 +35,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Ticks
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Type of Ticks| **Property:** *scales.ticks.type*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Ticks(tic => {tic.Type(TickType.MajorInterval)}).Add()` <br/> `.Add()})`| **Property:** *axes.majorTicks.height*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.MajorTicks().Add())` <br/> `.Render()`|
 |Height of Major Ticks| **Property:** *scales.ticks.height*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Ticks(tic => {tic.Type(TickType.MajorInterval).Height(8).Add()` <br/> `}).Add()})`|**Property:** *axes.majorTicks.height*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.MajorTicks(ma => ma.Height(8)).Add())` <br/> `.Render()`|
@@ -55,7 +55,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Labels
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Angle| **Property:** *scales.labels.angle*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Labels(lab => {lab.Angle(15).Add();` <br/> `}).Add()})`| Not Applicable|
 |Offset| **Property:** *scales.labels.distanceFromScale*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Labels(lab => {lab.distanceFromScale(` <br/> `dis => {dis.x(15).Add();}).Add();` <br/> `}).Add()})`|**Property:** *axes.labelStyle.offset*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.LabelStyle(lab => lab.Offset(2)).Add())` <br/> `.Render()`|
@@ -71,7 +71,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Axis
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Minimum Value| **Property:** *scales.minimum*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Minimum(20).Add()})`| **Property:** *axes.minimum*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.Minimum(20).Add()).Render()`|
 |Maximum Value| **Property:** *scales.maximum*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Maximum(20).Add()})`| **Property:** *axes.maximum*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.Maximum(20).Add()).Render()`|
@@ -80,7 +80,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Ranges
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Start Value| **Property:** *scales.ranges.startValue*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Ranges(ran => {ran.StartValue(20)` <br/> `.Add();}).Add()})`| **Property:** *axes.ranges.start*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.Ranges(ran => ran.Start(20))` <br/> `.Add()).Render()`|
 |End Value| **Property:** *scales.ranges.endValue*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Ranges(ran => {ran.EndValue(20)` <br/> `.Add();}).Add()})`| **Property:** *axes.ranges.end*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.Ranges(ran => ran.End(20))` <br/> `.Add()).Render()`|
@@ -94,7 +94,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Bar Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Bar Pointer| **Property:** *scales.ranges.barPointers.value*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Ranges(BarPointers => {br.Value(20).Add();}).Add()})`| **Property:** *axes.pointers.value*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.pointers(po => po.Value(20)` <br/> `.Type("RangeBar")).Add()).Render()`|
 |Color of Bar Pointer| **Property:** *scales.ranges.barPointers.backgroundColor*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Ranges(BarPointers => {br.Value(20)` <br/> `.backgroundColor("red").Add();}).Add()})`| **Property:** *axes.pointers.color*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.pointers(po => po.Value(20)` <br/> `.Type("RangeBar").Color("Red")).Add()).Render()`|
@@ -108,7 +108,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Marker Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Marker Pointer| **Property:** *scales.ranges.markerPointers.value*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Ranges(MarkerPointers => {mr.Value(20).Add();}).Add()})`| **Property:** *axes.pointers.value*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.pointers(po => po.Value(20)` <br/> `.Type("Marker")).Add()).Render()`|
 |Color of Marker Pointer| **Property:** *scales.ranges.markerPointers.backgroundColor*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Ranges(MarkerPointers => {mr.Value(20).Color("Red").Add();}).Add()})`| **Property:** *axes.pointers.color*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Axes(axes => axes.pointers(po => po.Value(20)` <br/> `.Type("Marker").Color("Red")).Add()).Render()`|
@@ -125,7 +125,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Annotation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Content| **Property:** *scales.customLabels.value*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.customLabels(cus => {cus.Value("Linear Gauge")` <br/> `.Add();}).Add()})`| **Property:** *annotations.content*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Annotations(ann => ann.Content("Linear Gauge").Add()).Render()`|
 |Horizontal Alignment| Not Applicable| **Property:** *annotations.horizontalAlignment*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Annotations(ann => ann.HorizontalAlignment("Center").Add()).Render()`|
@@ -143,7 +143,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Tooltip
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Tooltip for Pointer| Not Applicable| **Property:** *tooltip.enable*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Tooltip(tool => tool.Enable(true).Add()).Render()`|
 |Tooltip for Label|  **Property:** *tooltip.showLabelTooltip*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.tooltip(tool => {tool.ShowLabelTooltip(true)` <br/> `.Add();}).Add()})`| Not Applicable|
@@ -156,7 +156,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Appearance of Linear Gauge
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Background Color| **Property:** *backgroundColor*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.BackgroundColor("red")`| **Property:** *background*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Background("Red").Render()`|
 |Border Color| **Property:** *borderColor*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.BorderColor("blue")`| **Property:** *border.color*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Border(border).Render()` <br/> `var border= new {color="red"}`|
@@ -168,7 +168,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Gauge Container type
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Container Type| **Property:** *scales.type*<br/><br/> `@Html.EJ().LinearGauge("container")` <br/> `.Scales(sc => {sc.Type("Thermometer").Add()})`| **Property:** *container.type*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Container(con => con.Type("Thermometer").Add())` <br/> `.Render()`|
 |Container Height| Not Applicable| **Property:** *container.height*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.Container(con => con.Type("Thermometer").Height(20).Add())` <br/> `.Render()`|
@@ -177,7 +177,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Events
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Animation Complete Event| Not Applicable| **Event:** *animationComplete*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.AnimationComplete("animationComplete").Render()` <br/> `function animationComplete(args) {}`|
 |Annotation Render Event| **Event:** *drawCustomLabel*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.DrawCustomLabel("customLabel")`<br/> `function customLabel(args) {}`| **Event:** *annotationRender*<br/><br/> `@Html.EJS().LinearGauge("container")` <br/> `.AnnotationRender("annotationRender").Render()` <br/> `function annotationRender(args) {}`|

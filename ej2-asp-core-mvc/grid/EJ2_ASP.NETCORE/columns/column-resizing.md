@@ -71,7 +71,7 @@ You can disable resizing for a particular column by setting the `allowResizing` 
 
 ## Resizing modes
 
-The Syncfusion Grid component provides a `ResizeSettingsModel` interface for configuring the resizing behavior of grid columns. The interface includes a property named `mode` which is of the type `ResizeMode`. The `ResizeMode` is an enum that determines the available resizing modes for the grid columns. There are two resizing modes available for grid columns in Grid:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides a `ResizeSettingsModel` interface for configuring the resizing behavior of grid columns. The interface includes a property named `mode` which is of the type `ResizeMode`. The `ResizeMode` is an enum that determines the available resizing modes for the grid columns. There are two resizing modes available for grid columns in Grid:
 
 1. `Normal Mode`: This mode does not adjust the columns to fit the remaining space. When the sum of column width is less than the grid's width, empty space will be present to the right of the last column. When the sum of column width is greater than the grid's width, columns will overflow, and a horizontal scrollbar will appear.
 

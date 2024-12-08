@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Compatibility with Syncfusion ASP.NET MVC (Essential JS 1)
+# Compatibility with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 1)
 
-This documentation explains how to render  Essential JS 1 and Essential JS 2 Syncfusion components in a single page.
+This documentation explains how to render  Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 Syncfusion<sup style="font-size:70%">&reg;</sup> components in a single page.
 
 ## Adding application
 
-You can create Essential JS 1 and Essential JS 2 controls using the following links:
+You can create Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls using the following links:
 
 Getting started for [`EJ2 ASPMVC control`](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc/)
 
@@ -22,7 +22,7 @@ Getting started for [`EJ1 ASPMVC control`](https://help.syncfusion.com/aspnetmvc
 
 ## Style compatibility
 
-Add compatibility styles. Essential JS 1 and Essential JS 2 controls have compatibility styles that do not affect each other.
+Add compatibility styles. Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls have compatibility styles that do not affect each other.
 
 ```html
 <head>
@@ -36,7 +36,7 @@ Add compatibility styles. Essential JS 1 and Essential JS 2 controls have compat
 
 ## Script compatibility
 
-Add scripts for Essential JS 1 and Essential JS 2 as shown in the following codes
+Add scripts for Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 as shown in the following codes
 
 ```html
 @* Syncfusion Essential JS 1 Scripts *@
@@ -64,7 +64,7 @@ To add compatibility, use the following code in the _Layout.cshtml page. Since E
 
 ## Adding script manager
 
-Define script manager for both Essential JS 1 and Essential JS 2:
+Define script manager for both Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2:
 
 ```html
 @Html.EJ().ScriptManager()
@@ -110,9 +110,9 @@ The following code illustrates the final view of layout page.
 </html>
 ```
 
-## Declare Essential JS 1 and Essential JS 2 controls
+## Declare Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls
 
-Essential JS 1 and Essential JS 2 controls have already been initialized via getting started. If you want change control, you can initialize using the following code.
+Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls have already been initialized via getting started. If you want change control, you can initialize using the following code.
 
 ```html
 

@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Dialog control from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Dialog control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility and localization
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |--------------|--------------------------------|-------------------------|
 | Keyboard Navigation | **Property** : allowKeyboardNavigation<br/> <br/>`@Html.EJ().Dialog("dialog").AllowKeyboardNavigation(true)` | No separate Property for enable/disable keyboard navigation.  Its enabled by default. |
 | Localization | **Property** : locale<br/> <br/>`@Html.EJ().Dialog("dialog").Locale("es-ES")` | **Property** : locale<br/> <br/>`@Html.EJS().Dialog("dialog").Locale("es-ES").Render()` |
@@ -23,7 +23,7 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Header
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |--------------|---------------------------|-------------------------|
 | Header Content | **Property** : title<br/> <br/>`@Html.EJ().Dialog("dialog").Title("EJ1 Dialog header")`<br/>   **Method** : setTitle<br/> $('#dialog').ejDialog('setTitle', 'EJ1 Dialog Header'); | **Property** : header<br/> <br/>`@Html.EJS().Dialog("dialog").Header("EJ2 Dialog").Render()` |
 | close button | **Property** : actionButtons<br/> <br/> `@{ List<string> actionButtons = new List<string>(); actionButtons.Add("close"); }`<br/><br/>`@Html.EJ().Dialog("dialog").ActionButtons(actionButtons)`<br/> | **Property** : showCloseIcon<br/> <br/>`@Html.EJS().Dialog("dialog").ShowCloseIcon(true).Render()` |
@@ -39,7 +39,7 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Footer
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |--------------|---------------------------|-------------------------|
 | Footer Content | **Property** :footerTemplateId<br/> <br/>`@Html.EJ().Dialog("dialog").FooterTemplateId("sample")` | **Property:** footerTemplate<br/> <br/>`@Html.EJS().Dialog("dialog").FooterTemplate("<button>Submit</button>").Render()` |
 | Footer action buttons | Not applicable | **Property** : buttons<br/> <br/>`@Html.EJS().Dialog("dialog").Buttons(ViewBag.DefaultButtons).Render()`<br/><br/>`public ActionResult DefaultFunctionalities() { List<DialogDialogButton> buttons = new List<DialogDialogButton>() { }; buttons.Add(new DialogDialogButton() { Click = "dlgButtonClick", ButtonModel = new DefaultButtonModel() { content = "Ok" } }); ViewBag.DefaultButtons = buttons; return View(); } public class DefaultButtonModel { public string content { get; set; }`<br/> |
@@ -47,7 +47,7 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Content
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |-------------|-------------------------|------------------------|
 | Dialog content | **Method** : setContent<br/> <br/>`@Html.EJ().Dialog("dialog")`<br/> $('#dialog').ejDialog('setContent', 'Dialog Content') | **Property** : content<br/> <br/>`@Html.EJS().Dialog("dialog").Content("Dialog content").Render()` |
 | Loading content using AJAX request | **Property** : contentType, contentUrl<br/> <br/>`@Html.EJ().Dialog("dialog").contentType("ajax").ContentUrl('')` | Not Applicable |
@@ -57,7 +57,7 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Animation
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|------------------------|
 | Enabling Animation | **Property** : enableAnimation<br/> <br/>`@Html.EJ().Dialog("dialog").EnableAnimation(true)` | Not Applicable |
 | Animation effects | **Property** : animation.show.effect<br/> <br/>`@Html.EJ().Dialog("dialog").Animation(animate => animate.Show(show => show.Effect("slide"))`<br/> | **Property** : animationSettings.effect<br/><br/> `@Html.EJS().Dialog("default_dialog").AnimationSettings(new DialogAnimationSettings() { Effect = DialogEffect.Zoom }).Render()`<br/> |
@@ -66,7 +66,7 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Draggable and resizing
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Draggable dialog | **Property** : allowDraggable<br/> <br/>`@Html.EJ().Dialog("dialog").AllowDraggable(true)` | **Property** : allowDragging<br/> <br/>`@Html.EJS().Dialog("dialog").AllowDragging(true).Render()` |
 | Event triggers when the user drags the dialog | **Event:** drag<br/> <br/>`@Html.EJ().Dialog("dialog").ClientSideEvents(evt => evt.Drag("onDrag"))`<br/><br/>`function onDrag(args) {}`<br/> | **Event:** drag<br/> <br/>`@Html.EJS().Dialog("dialog").Drag("onDrag").Render()`<br/><br/>`function onDrag(args) {}`<br/> |
@@ -79,52 +79,52 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Target
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Target element to append dialog in document | **Property** : target <br/> <br/>`@Html.EJ().Dialog("dialog").Target("#dialogTarget")` | **Property**: target<br/> <br/>`@Html.EJS().Dialog("dialog").Target("#dialogTarget").Render()` |
 | Element for draggable area | **Property** : containment<br/> <br/>`@Html.EJ().Dialog("dialog").Containment("#dragArea")` | Not applicable |
 
 ## Position
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Customizing dialog position using X, Y coordinate values | **Property** : position<br/> <br/>`@Html.EJ().Dialog("dialog").ClientSideEvents(evt => evt.Position.X(300).Y(100))`<br/> | **Property** : position<br/><br/> `@Html.EJS().Dialog("dialog").Position(obj => obj.X("300").Y("100")).Render()`<br/> |
 | positioning dialog using position values | Not Applicable | **Property**: position<br/> <br/> `@Html.EJS().Dialog("dialog").Position(obj => obj.X("center").Y("center")).Render()`<br/> |
 
 ## Visibility
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Render dialog in visible/hidden state | **Property:** showOnInit<br/> <br/>`@Html.EJ().Dialog("dialog").ShowOnInit(true)` | **Property:** visible<br/> <br/>`@Html.EJS().Dialog("dialog").visible(false).Render()` |
 
 ## Dialog mode
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Render modal dialog | **Property** : enableModal<br/> <br/>`@Html.EJ().Dialog("dialog").EnableModal(true)` | **Property** : isModal<br/> <br/> `@Html.EJS().Dialog("dialog").IsModal(true).Render()` |
 
 ## Tooltip
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Sets the tooltip for dialog buttons | **Property** : tooltip<br/><br/> `@Html.EJ().Dialog("dialog").ClientSideEvents(evt => evt.Tooltip("tooltip"))`<br/><br/>`function tooltip: object { close: 'Exit' }`<br/> | No Separate Property for tooltip. It renders based on locale text. |
 
 ## Control state
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Enable/Disable the control | **Property** : enabled <br/><br/> `@Html.EJ().Dialog("dialog").Enabled(false)` | Not Applicable |
 | Enable/ Disable page scrolling | **Property:** backgroundScroll<br/> <br/>`@Html.EJ().Dialog("dialog").BackgroundScroll(false)` | No separate Property for disabling page scroll. By default, scrolling prevented for modal dialog |
 
 ## State maintenance
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Save the model values in local storage or cookies | **Property** : enablePersistence <br/> <br/>`@Html.EJ().Dialog("dialog").EnablePersistence(true)` | **Property** : enablePersistence <br/><br/>`@Html.EJS().Dialog("dialog").EnablePersistence(true).Render()` |
 
 ## Common
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Adjusting Height | **Property** : height <br/><br/>`@Html.EJ().Dialog("dialog").Height("400")` | **Property** : height <br/><br/> `@Html.EJS().Dialog("dialog").Height("50%").Render()` |
 | Adjusting width | **Property:** width <br/><br/>`@Html.EJ().Dialog("dialog").Width("400")` |**Property** : width <br/><br/> `@Html.EJS().Dialog("dialog").Width("50%").Render()` |

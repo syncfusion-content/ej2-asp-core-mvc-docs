@@ -16,7 +16,7 @@ The Uploader sends the large file split into small chunks and transmits to the s
 
 N> * The chunk upload works in asynchronous upload only.
 
-* This feature is available from the Essential Studio Vol 2, 2018 release.
+* This feature is available from the Essential Studio<sup style="font-size:70%">&reg;</sup> Vol 2, 2018 release.
 
 To enable the chunk upload, set the size to [chunkSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_ChunkSize) option of the upload and it receives the value in `bytes`.
 

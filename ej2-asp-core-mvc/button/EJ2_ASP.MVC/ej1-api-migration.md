@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Button component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Button component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Specifies the text of the button | **Property:** *text* <br/><br/> `@Html.EJ().Button("btn").Text("Button")` | **Property:** *content* <br/><br/> `@Html.EJS().Button("btn").Content("Button").Render()` |
 | Specifies the content type of the button | **Property:** *ContentType* <br/><br/>  `@Html.EJ().Button("btn").Text("Save").ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-save")`| Not applicable |
@@ -38,7 +38,7 @@ This article describes the API migration process of Button component from Essent
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Destroys the control | **Methods:** *destroy* <br/><br/> `@Html.EJ().Button("btn").Text("Button")` <br/> var btnObj = $("#btn").data("ejButton");<br/>btnObj.destroy(); | **Methods:** *destroy* <br/><br/> `@Html.EJS().Button("btn").Content("Button").Render()` <br/> var btnObj = document.getElementById("btn").ej2_instances[0];<br/>btnObj.destroy(); |
 | Disables the button | **Methods:** *disable* <br/><br/> `@Html.EJ().Button("btn").Text("Button")`<br/> var btnObj = $("#btn").data("ejButton");<br/>btnObj.disable(); | Not applicable |
@@ -46,7 +46,7 @@ This article describes the API migration process of Button component from Essent
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers while clicking the button | **Events:** *click* <br/><br/> `@Html.EJ().Button("btn").Text("Button").Click("btnClick")` <br/>function btnClick(args) {<br/>/** code block */<br/>} | Not applicable |
 | Triggers once the component rendering is completed | **Events:** *create* <br/><br/> `@Html.EJ().Button("btn").Text("Button").ClientSideEvents(e => e.Create("create")` <br/>function create(args) {<br/>/** code block */<br/>} | **Events:** *created* <br/><br/> `@Html.EJS().Button("btn").Content("Button").Created("created").Render()`<br/>function created() {<br/>/** code block */<br/>} |

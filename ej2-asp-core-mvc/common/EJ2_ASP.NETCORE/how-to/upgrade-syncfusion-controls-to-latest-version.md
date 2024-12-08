@@ -10,7 +10,7 @@ documentation: ug
 
 # How to upgrade ASP.NET Core Controls to the latest version
 
-To upgrade Syncfusion ASP.NET Core Controls to the latest version, you need to ensure the following:
+To upgrade Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls to the latest version, you need to ensure the following:
 
 ## Compatible .NET version
 
@@ -36,21 +36,21 @@ Ensure to update version in Script and CSS file references in your application.
 
 * Make sure that the version in the URLs matches the version of the `Syncfusion.EJ2.AspNet.Core` NuGet package in your application.
     
-N> For production purpose and minimal requirement, Syncfusion provides an option to generate custom styles of selective controls by using the ThemeStudio web application. Refer to this [link](http://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
+N> For production purpose and minimal requirement, Syncfusion<sup style="font-size:70%">&reg;</sup> provides an option to generate custom styles of selective controls by using the ThemeStudio web application. Refer to this [link](http://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
 
 ## Breaking changes
 
-Check is there any breaking changes between the syncfusion version you are using and the version you want to upgrade using [upgrade guide](https://help.syncfusion.com/upgrade-guide/aspnet-core-ui-controls) or each version [release notes](https://ej2.syncfusion.com/aspnetcore/documentation/release-notes/index/?type=breaking-changes).
+Check is there any breaking changes between the syncfusion<sup style="font-size:70%">&reg;</sup> version you are using and the version you want to upgrade using [upgrade guide](https://help.syncfusion.com/upgrade-guide/aspnet-core-ui-controls) or each version [release notes](https://ej2.syncfusion.com/aspnetcore/documentation/release-notes/index/?type=breaking-changes).
 
 ## Cache problem
 
-Before restoring the NuGet packages, clean the older versions of Syncfusion ASP.NET Core NuGet packages.
+Before restoring the NuGet packages, clean the older versions of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages.
 
 The following steps explain how to clean the cache:
 
-1. Delete the Syncfusion ASP.NET Core NuGet packages from the installed location `{System-driver}/Users/{user-name}/.nuget/packages/`. In Windows, the installed location of Syncfusion ASP.NET Core NuGet packages can be found using `%userprofile%/.nuget/packages/`.
+1. Delete the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages from the installed location `{System-driver}/Users/{user-name}/.nuget/packages/`. In Windows, the installed location of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages can be found using `%userprofile%/.nuget/packages/`.
 
-2. Update the latest version of Syncfusion ASP.NET Core NuGet packages.
+2. Update the latest version of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages.
 
 ## See also
 

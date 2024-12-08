@@ -45,7 +45,7 @@ N> ButtonGroup does not have support for `flat` and `round` types.
 
 ## ButtonGroup styles
 
-The Essential JS 2 ButtonGroup has the following predefined styles. This can be achieved by adding corresponding class name in each button elements using `CssClass` property.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 ButtonGroup has the following predefined styles. This can be achieved by adding corresponding class name in each button elements using `CssClass` property.
 
 | Class | Description |
 | -------- | -------- |

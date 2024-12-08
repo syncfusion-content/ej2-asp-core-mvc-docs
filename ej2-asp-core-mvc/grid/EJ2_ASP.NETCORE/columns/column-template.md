@@ -58,7 +58,7 @@ The column template has options to render a custom control in a grid column inst
 
 ### Render LineChart control in a column
 
-The [LineChart](https://ej2.syncfusion.com/aspnetcore/documentation/sparkline/getting-started) control of Syncfusion provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
+The [LineChart](https://ej2.syncfusion.com/aspnetcore/documentation/sparkline/getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
 
 In the following example, we have rendered the Sparkline Chart control in the Grid column by defining the `template` property.
 
@@ -75,7 +75,7 @@ In the following example, we have rendered the Sparkline Chart control in the Gr
 
 ### Render ColorPicker control in a column
 
-The [ColorPicker](https://ej2.syncfusion.com/aspnetcore/documentation/color-picker/getting-started) control of Syncfusion provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
+The [ColorPicker](https://ej2.syncfusion.com/aspnetcore/documentation/color-picker/getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
 
 In the following code, we rendered the ColorPicker control in the Grid column by defining the `template` property.
 
@@ -158,7 +158,7 @@ function queryCellInfo(args) {
 
 ### Render ProgressBar control in a column
 
-The Syncfusion Grid control supports rendering the [Progress Bar](https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/getting-started) control within a column using the `template`property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control supports rendering the [Progress Bar](https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/getting-started) control within a column using the `template`property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
 
 In the following code, the `Progress Bar` control render in the Grid **Freight** column by defining the `template` property.
 
@@ -235,7 +235,7 @@ In the following code, the button element is rendered in the **Employee Data** c
 
 ## Use custom helper inside the template
 
-The Syncfusion Grid allows you to use custom helpers inside the `template` property of a column. This feature allows you to create complex templates that can incorporate additional helper functions that are not available through the default `template` syntax.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to use custom helpers inside the `template` property of a column. This feature allows you to create complex templates that can incorporate additional helper functions that are not available through the default `template` syntax.
 
 To use the custom helper function inside a column template, you must first add the function to the template's context.
 
@@ -256,7 +256,7 @@ The following example illustrates how to implement a custom helper function with
 
 ## Dynamically adding template column
 
-The Syncfusion Grid control allows you to dynamically add template columns at runtime. This capability is particularly useful when the structure of the grid needs to be modified based on individual interactions or other dynamic conditions.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to dynamically add template columns at runtime. This capability is particularly useful when the structure of the grid needs to be modified based on individual interactions or other dynamic conditions.
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 

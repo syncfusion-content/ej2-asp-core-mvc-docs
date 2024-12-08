@@ -162,4 +162,4 @@ The accessibility compliance of the Rich Text Editor control is shown in the fol
 
 ## See also
 
-* [Accessibility in Syncfusion ASP.NET MVC controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls](../common/accessibility)

@@ -11,9 +11,9 @@ documentation: ug
 
 N> In general, the Pivot Table is created using the built-in engine for given data source. This is an optional feature that allows you to create the Pivot Table with a server-side pivot engine and external data binding. And this option is applicable only for relational data source.
 
-# Getting Started with Syncfusion Server-side Pivot Engine
+# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Server-side Pivot Engine
 
-This section briefs the Syncfusion assembly [`Syncfusion.EJ2.Pivot`](https://www.nuget.org/packages/Syncfusion.EJ2.Pivot/), which is used in a server-side application to perform all Pivot calculations such as aggregation, filtering, sorting, grouping, and so on, and only the information to be displayed in the Pivot Table's viewport is passed to the client-side (browser) via web service (Web API) rather than the entire data source. It reduces network traffic and improves the rendering performance of the Pivot Table, especially when dealing with large amounts of data. It also works best with virtual scrolling enabled and supports all the Pivot Table's existing features.
+This section briefs the Syncfusion<sup style="font-size:70%">&reg;</sup> assembly [`Syncfusion.EJ2.Pivot`](https://www.nuget.org/packages/Syncfusion.EJ2.Pivot/), which is used in a server-side application to perform all Pivot calculations such as aggregation, filtering, sorting, grouping, and so on, and only the information to be displayed in the Pivot Table's viewport is passed to the client-side (browser) via web service (Web API) rather than the entire data source. It reduces network traffic and improves the rendering performance of the Pivot Table, especially when dealing with large amounts of data. It also works best with virtual scrolling enabled and supports all the Pivot Table's existing features.
 
 ## Quick steps to render the Pivot Table by using the server-side Pivot Engine
 
@@ -27,7 +27,7 @@ This section briefs the Syncfusion assembly [`Syncfusion.EJ2.Pivot`](https://www
 * **DataSource.cs** file under **DataSource** folder – This file has model classes to define the structure of the data sources.
 * The sample data source files **sales.csv** and **sales-analysis.json** under **DataSource** folder.
 
-**3.** Open the **PivotController** application in Visual Studio where the Syncfusion library [`Syncfusion.EJ2.Pivot`](https://www.nuget.org/packages/Syncfusion.EJ2.Pivot/) will be downloaded automatically from the nuget.org site.
+**3.** Open the **PivotController** application in Visual Studio where the Syncfusion<sup style="font-size:70%">&reg;</sup> library [`Syncfusion.EJ2.Pivot`](https://www.nuget.org/packages/Syncfusion.EJ2.Pivot/) will be downloaded automatically from the nuget.org site.
 
 ![Solution Explorer](images/solution-explorer.png)
 
@@ -257,7 +257,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 JSON data from any remote server, like a local JSON file, can also be supported. It accepts both directly downloadable files (*.json) and web service URLs. To bind this, the URL of the *.json file of a remote server has to be mapped under the **GetData** method. The rest of the configurations are the same as described above.
 
-In the server-side application, the CDN link is used to connect the same **sales-analysis.json** file which is already hosted in the Syncfusion server.
+In the server-side application, the CDN link is used to connect the same **sales-analysis.json** file which is already hosted in the Syncfusion<sup style="font-size:70%">&reg;</sup> server.
 
 ```csharp
 public async Task<object> GetData(FetchData param)
@@ -375,7 +375,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 CSV data from any remote server, like a local CSV file, can also be supported. It accepts both directly downloadable files (*.csv) and web service URLs. To bind this, the URL of the *.csv file of a remote server has to be mapped under **GetData** method. The rest of the configurations are the same as described above.
 
-In the server application, the CDN link is used to connect the same **sales.csv** file which is already hosted in the Syncfusion server.
+In the server application, the CDN link is used to connect the same **sales.csv** file which is already hosted in the Syncfusion<sup style="font-size:70%">&reg;</sup> server.
 
 ```csharp
 public async Task<object> GetData(FetchData param)

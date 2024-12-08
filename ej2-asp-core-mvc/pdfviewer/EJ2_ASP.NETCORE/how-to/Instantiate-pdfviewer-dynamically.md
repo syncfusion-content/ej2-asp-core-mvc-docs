@@ -10,7 +10,7 @@ documentation: ug
 
 # Instantiate the PDF Viewer component dynamically
 
-To instantiate a PDF Viewer component dynamically and load PDF documents in Syncfusion PDF Viewer, use the following steps:
+To instantiate a PDF Viewer component dynamically and load PDF documents in Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer, use the following steps:
 
 In your HTML file, create a div element that will act as a container for the PDF Viewer component, and use the jQuery $.ajax method to make an AJAX request to your server and retrieve a PDF document. Once the document is retrieved, use the PDF Viewer API to load the document into the PDF Viewer component.
 

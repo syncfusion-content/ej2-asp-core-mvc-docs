@@ -10,7 +10,7 @@ documentation: ug
 
 # Print in ASP.NET Core Grid component
 
-The printing feature in Syncfusion Grid allows you to easily generate and print a representation of the grid's content for better offline accessibility and documentation. You can enable this feature using either the grid's toolbar or the programmatically available `print` method.
+The printing feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to easily generate and print a representation of the grid's content for better offline accessibility and documentation. You can enable this feature using either the grid's toolbar or the programmatically available `print` method.
 
 To add the printing option to the grid's toolbar, simply include the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property in your grid configuration and add the **Print** as toolbar item. This will allow you to directly initiate the printing process while click on the Print item from the toolbar.
 
@@ -51,7 +51,7 @@ You can print the grid's content using an external button by utilizing the `prin
 
 ## Print visible Page
 
-By default, the Syncfusion ASP.NET Core Grid prints all the pages of the grid. The [printMode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_PrintMode) property within the grid grants you control over the printing process. However, if you want to print only the current visible page, you can achieve this by setting the `printMode` property to **CurrentPage**.
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid prints all the pages of the grid. The [printMode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_PrintMode) property within the grid grants you control over the printing process. However, if you want to print only the current visible page, you can achieve this by setting the `printMode` property to **CurrentPage**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -66,7 +66,7 @@ By default, the Syncfusion ASP.NET Core Grid prints all the pages of the grid. T
 
 ## Print only selected records
 
-By default, the Syncfusion ASP.NET Core Grid prints all the data bound to its dataSource. However, there might be cases where you want to print only the selected records from the grid. The ASP.NET Core Grid provides an option to achieve this by binding to the [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event, where you can replace the rows of the printing grid with the selected rows.
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid prints all the data bound to its dataSource. However, there might be cases where you want to print only the selected records from the grid. The ASP.NET Core Grid provides an option to achieve this by binding to the [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event, where you can replace the rows of the printing grid with the selected rows.
 
 Below is an example code that demonstrates how to print only the selected records from the ASP.NET Core Grid:
 
@@ -83,7 +83,7 @@ Below is an example code that demonstrates how to print only the selected record
 
 ## Print the hierarchy grid
 
-The Syncfusion ASP.NET Core Grid allows you to print hierarchy grids, which consist of a parent grid and its child grids. By default, when you print a hierarchy grid, it includes the parent grid and expanded child grids only. However, you can customize the print behavior using the [hierarchyPrintMode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_HierarchyPrintMode) property.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid allows you to print hierarchy grids, which consist of a parent grid and its child grids. By default, when you print a hierarchy grid, it includes the parent grid and expanded child grids only. However, you can customize the print behavior using the [hierarchyPrintMode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_HierarchyPrintMode) property.
 
 The `hierarchyPrintMode` property in the ASP.NET Core Grid lets you control the printing behavior for hierarchy grids. You can choose from three options:
 
@@ -106,7 +106,7 @@ The `hierarchyPrintMode` property in the ASP.NET Core Grid lets you control the 
 
 ## Print the master detail grid
 
-The Syncfusion ASP.NET Core Grid provides the option to visualize details of a record in another grid in a master-detail manner. By default, when you print a master-detail grid, only the master grid is included in the print output. However, you can customize the print behavior to include both the master and detail grids using the `beforePrint` event of the grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid provides the option to visualize details of a record in another grid in a master-detail manner. By default, when you print a master-detail grid, only the master grid is included in the print output. However, you can customize the print behavior to include both the master and detail grids using the `beforePrint` event of the grid.
 
 The [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event in the ASP.NET Core Grid is triggered before the actual printing process begins. You can handle this event to customize the print output. By adding the detail grid to the `element` argument of the `beforePrint` event, you can ensure that both the master and detail grids are printed on the page.
 
@@ -131,7 +131,7 @@ To show a large number of columns when printing, you can adjust the scale option
 
 ## Show or hide columns while printing
 
-In the Syncfusion ASP.NET Core Grid, you have the flexibility to control the visibility of columns during the printing process. You can dynamically show or hide specific columns using the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) and [printComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_PrintComplete) events while printing. This capability enhances your control over which columns are included in the printed output, allowing you to tailor the printed grid to your specific needs.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid, you have the flexibility to control the visibility of columns during the printing process. You can dynamically show or hide specific columns using the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) and [printComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_PrintComplete) events while printing. This capability enhances your control over which columns are included in the printed output, allowing you to tailor the printed grid to your specific needs.
 
 In the `toolbarClick` event, you can show or hide columns by setting `column.visible` property to **true** or **false** respectively.
 
@@ -158,7 +158,7 @@ If printing all the data remains a requirement, an alternative approach is recom
 
 ## Retain grid styles while printing
 
-The Syncfusion ASP.NET Core Grid provides a [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event that allows you to customize the appearance and styles of the grid before it is sent to the printer. By handling this event, you can ensure that the grid retains its styles and appearance while printing.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid provides a [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event that allows you to customize the appearance and styles of the grid before it is sent to the printer. By handling this event, you can ensure that the grid retains its styles and appearance while printing.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -173,7 +173,7 @@ The Syncfusion ASP.NET Core Grid provides a [beforePrint](https://help.syncfusio
 
 ## Print grid along with other components
 
-To print the Syncfusion ASP.NET Core Grid along with another component, such as a chart, you can use the [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event of the grid. In this event, you can clone the content of the other component and append it to the print document.
+To print the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid along with another component, such as a chart, you can use the [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event of the grid. In this event, you can clone the content of the other component and append it to the print document.
 
 Here is an example of how to print grid along with chart component:
 

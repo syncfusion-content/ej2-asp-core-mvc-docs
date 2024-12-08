@@ -12,7 +12,7 @@ documentation: ug
 
 ## Customizing the Grid sorting icon
 
-Use the below CSS to customize the Grid sorting icon which present in the Grid header. You can use the available Syncfusion [icons](https://ej2.syncfusion.com/documentation/appearance/icons/#material) based on your theme.
+Use the below CSS to customize the Grid sorting icon which present in the Grid header. You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](https://ej2.syncfusion.com/documentation/appearance/icons/#material) based on your theme.
 
 ```css
 
@@ -27,7 +27,7 @@ Use the below CSS to customize the Grid sorting icon which present in the Grid h
 
 ## Customizing the Grid multi sorting icon
 
-Use the below CSS to customize the Grid multi sorting icon which present in the Grid header. You can use the available Syncfusion [icons](https://ej2.syncfusion.com/documentation/appearance/icons/#material) based on your theme.
+Use the below CSS to customize the Grid multi sorting icon which present in the Grid header. You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](https://ej2.syncfusion.com/documentation/appearance/icons/#material) based on your theme.
 
 ```css
 

@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Slider component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Slider component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Max value | **Property:**  *MaxValue*  <br/><br/>  `Html.EJ().Slider("slider").MaxValue(50)` | **Property:**  *Max*  <br/><br/>  `@Html.EJS().Slider("slider").Max(50)` |
 | Min value | **Property:**  *MinValue*  <br/><br/>  `Html.EJ().Slider("slider").MinValue(50)`| **Property:**  *Min*  <br/><br/>  `@Html.EJS().Slider("slider").Min(50)` |

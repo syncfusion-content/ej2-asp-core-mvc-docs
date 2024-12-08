@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion ASP.NET Core Components showcase samples
+# Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Components showcase samples
 
-Syncfusion has a collection of sample applications that demonstrate the use of Syncfusion ASP.NET Core UI components.
+Syncfusion<sup style="font-size:70%">&reg;</sup> has a collection of sample applications that demonstrate the use of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI components.
 
 | Sample Application | Description | GitHub |
 | ------------- | ------------- | ------------- |

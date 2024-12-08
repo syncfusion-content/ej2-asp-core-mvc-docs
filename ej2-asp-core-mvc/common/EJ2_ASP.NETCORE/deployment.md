@@ -10,7 +10,7 @@ documentation: ug
 
 # Deployment in ASP.NET Core
 
-This section provides information about deploying ASP.NET Core applications with the Syncfusion ASP.NET Core controls.
+This section provides information about deploying ASP.NET Core applications with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
 Refer to [Host and deploy ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-6.0) topic for more information.
 

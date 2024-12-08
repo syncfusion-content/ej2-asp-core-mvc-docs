@@ -59,7 +59,7 @@ The output will be as follows.
 
 In-place Editor popup mode can be customized by using the `Title` and `Model` properties in [`PopupSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PopupSettings) API.
 
-Popup mode rendered by using the Syncfusion ASP.NET MVC Tooltip control, so you can use tooltip properties and events to customize the behavior of popup via the `Model` property of `PopupSettings` API.
+Popup mode rendered by using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Tooltip control, so you can use tooltip properties and events to customize the behavior of popup via the `Model` property of `PopupSettings` API.
 
 N> For more details, refer the tooltip documentation section.
 

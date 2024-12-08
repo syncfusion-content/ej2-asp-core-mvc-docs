@@ -12,7 +12,7 @@ documentation: ug
 
 In the Internet Explorer browser, ES6 promise polyfills are required to run the file manager component. Click this  [`link`](https://ej2.syncfusion.com/aspnetcore/documentation/browser/?no-cache=1) to learn more about the EJ2 components browser compatibility.
 
-To render the file manager component in Internet Explorer browser, add the ES6 promise polyfill script above the Syncfusion Essential JS 2 Scripts in `layout` page.
+To render the file manager component in Internet Explorer browser, add the ES6 promise polyfill script above the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 Scripts in `layout` page.
 
   ```html
      <head>

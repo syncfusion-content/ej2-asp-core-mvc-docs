@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
 This topic shows the API equivalent of JS2 Scheduler component to be used, while migrating your project that uses JS1 Scheduler.
 
@@ -17,7 +17,7 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To change the display of days count in agenda view | **Property:** *days-in-agenda* <br/> <br/> `<ej-schedule id="schedule" current-view='Agenda'>`<br>`<e-agenda-view-settings days-in-agenda="5"></e-agenda-view-settings>`<br>`</ej-schedule>` | **Property:** *agendaDaysCount* <br/><br/> `<ejs-schedule id="scheduler" currentView="Agenda" agendaDaysCount=5>`<br>`</ejs-schedule>` |
 | Preventing deletion of appointment | **Property:** *allow-delete* <br/> <br/> `<ej-schedule id="schedule" allow-delete="false">`<br>`</ej-schedule>` | Not applicable |
@@ -70,7 +70,7 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ### Resources
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To define resource datasource | **Property:** *e-resources* <br/> `@{`<br>`List<ScheduleFields> Appoint = new List<ScheduleFields>();`<br>`Appoint.Add(new ScheduleFields { Id = "1", Subject = "Meeting", StartTime = new DateTime(2015, 11, 10, 10, 00, 00), EndTime = new DateTime(2015, 11, 10, 11, 00, 00), Description = "", AllDay = false, Recurrence = false, RecurrenceRule = "", RoomId = "1", OwnerId = "5" });`<br>`List<String> Group = new List<String>();`<br>`Group.Add("Rooms");`<br>`Group.Add("Owners");`<br>`List<ResourceFields> Room = new List<ResourceFields>();`<br>`Room.Add(new ResourceFields { Id = "1", Text = "Room1", Color = "#f8a398", GroupId = "1" });`<br>`Room.Add(new ResourceFields { Id = "2", Text = "Room2", Color = "#56ca95", GroupId = "1" });`<br>`List<ResourceFields> Owner = new List<ResourceFields>();`<br>`Owner.Add(new ResourceFields { Text = "Nancy", Id = "1", GroupId = "1", Color = "#ffaa00", WorkHourStart = 10, WorkHourEnd = 18, CustomDays = new List<string> { "monday", "wednesday", "friday" } });`<br>`Owner.Add(new ResourceFields { Text = "Steven", Id = "3", GroupId = "2", Color = "#f8a398", WorkHourStart = 6, WorkHourEnd = 10, CustomDays = new List<string> { "tuesday", "thursday" } });`<br>`}` <br/><br> `<ej-schedule id="schedule">`<br>`<e-group resources="Group"></e-group>`<br>`<e-resources>` <br>`<e-resource field="OwnerId" title="Owner" name="Owners">`<br> `<e-resource-settings datasource="Owner" text="Text" id="Id" group-id="GroupId" color="Color" start="WorkHourStart" end="WorkHourEnd" work-week="CustomDays"></e-resource-settings>`<br> `</e-resource>`<br> `</e-resources>`<br>`<e-appointment-settings datasource="Appoint"></e-appointment-settings>`<br>`</ej-schedule>` | **Property:** *e-schedule-resources* <br/>`@{`<br>`List<ResourceDataSourceModel> projects = new List<ResourceDataSourceModel>();`<br>`projects.Add(new ResourceDataSourceModel { text = "PROJECT 1", id = 1, color = "#cb6bb2" });`<br>`projects.Add(new ResourceDataSourceModel { text = "PROJECT 2", id = 2, color = "#56ca85" });`<br>`List<ResourceDataSourceModel> categories = new List<ResourceDataSourceModel>();`<br>`categories.Add(new ResourceDataSourceModel { text = "Development", id = 1, color = "#df5286" });`<br>`categories.Add(new ResourceDataSourceModel { text = "Testing", id = 2, color = "#7fa900" });`<br>`List<String> Resources = new List<String>();`<br>`Resources.Add("projects");`<br>`Resources.Add("categories");`<br>`}`<br/><br> `<ejs-schedule id="scheduler">`<br>`<e-schedule-group resources="Resources"></e-schedule-group>`<br> `<e-schedule-resources>` <br>`<e-schedule-resource dataSource="projects" field="ProjectId" title=" Project" name="Projects" textField="text" idField="id" colorField="color"></e-schedule-resource>`<br> `<e-schedule-resource dataSource="categories" field="CategoryId" title="Category" name="Categories" textField="text" idField="id" colorField="color" allowMultiple="true"></e-schedule-resource>`<br>`</e-schedule-resources>`<br>`</ejs-schedule>` |
 | Allowing multiple selection of resources in event window | **Property:** *allow-multiple* <br/> <br/> <br/> `<ej-schedule id="schedule">`<br>`<e-group resources="Group"></e-group>`<br>`<e-resources>` <br>`<e-resource field="OwnerId" title="Owner" name="Owners" allow-multiple=true>`<br> `<e-resource-settings datasource="Owner" text="Text" id="Id" group-id="GroupId" color="Color" start="WorkHourStart" end="WorkHourEnd" work-week="CustomDays"></e-resource-settings>`<br> `</e-resource>`<br> `</e-resources>`<br>`</ej-schedule>` | **Property:** *allowMultiple* <br/><br/> `<ejs-schedule id="scheduler">`<br>`<e-schedule-group resources="Resources"></e-schedule-group>`<br> `<e-schedule-resources>` <br>`<e-schedule-resource dataSource="projects" field="ProjectId" title=" Project" name="Projects" textField="text" idField="id" colorField="color"></e-schedule-resource>`<br> `<e-schedule-resource dataSource="categories" field="CategoryId" title="Category" name="Categories" textField="text" idField="id" colorField="color" allowMultiple="true"></e-schedule-resource>`<br>`</e-schedule-resources>`<br>`</ejs-schedule>` |
@@ -78,7 +78,7 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ### Group
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To group the resources in scheduler layout | **Property:** *resources* <br/> <br/> `<ej-schedule id="schedule">` <br>`<e-group resources="@ViewBag.Grouping"></e-group>`<br>`</ej-schedule>`<br> | **Property:** *resources* <br/><br/> `<ejs-schedule id="scheduler">`<br>`<e-schedule-group resources="@ViewBag.Resources"></e-schedule-group>`<br>`</ejs-schedule>` |
 | Allow group editing | **Property:** *allow-group-edit* <br/> <br/> `<ej-schedule id="schedule">` <br>`<e-group resources="@ViewBag.Grouping" allow-group-edit="true"></e-group>`<br>`</ej-schedule>`<br> | **Property:** *allowGroupEdit* <br/><br/> `<ejs-schedule id="scheduler">`<br>`<e-schedule-group resources="@ViewBag.Resources" allowGroupEdit="true"></e-schedule-group>`<br>`</ejs-schedule>`|
@@ -89,13 +89,13 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ### Header Rows
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Adding custom rows in the header in timeline views | Not applicable | **Property:** *e-schedule-header-rows* <br/><br/> `<ejs-schedule id="scheduler">`<br> `<e-schedule-header-rows>`<br>`<e-schedule-header-row option="Month" template="#month-template"></e-schedule-header-row>`<br> `<e-schedule-header-row option="Week" template="#week-template"></e-schedule-header-row>` <br> `<e-schedule-header-row option="Date"></e-schedule-header-row>` <br> `</e-schedule-header-rows>`<br>`</ejs-schedule>` |
 
 ### TimeScale
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Enabling time scale | **Property:** *enable* <br/> <br/> `<ej-schedule id="schedule">` <br>`<e-time-scale enable="false"></e-time-scale>`<br>`</ej-schedule>`<br> | **Property:** *enable* <br/><br/> `<ejs-schedule id="scheduler">`<br>`<e-schedule-timescale enable="false"></e-schedule-timescale>`<br>`</ejs-schedule>` |
 | Setting major interval on time scale | **Property:** *major-slot* <br/> <br/> `<ej-schedule id="schedule">` <br>`<e-time-scale enable="true" major-slot="60"></e-time-scale>`<br>`</ej-schedule>`<br> | **Property:** *interval* <br/><br/> `<ejs-schedule id="scheduler" interval="60">`<br>`<e-schedule-timescale ></e-schedule-timescale>`<br>`</ejs-schedule>` |
@@ -105,13 +105,13 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ### Quick info templates
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Template for quick popup | Not applicable | **Property:** *e-schedule-quick-info-templates* <br/><br/> `<ejs-schedule id="scheduler">`<br> `<e-schedule-quick-info-templates header="#headertemplate" content="#contentTemplate" footer="#footerTemplate"></e-schedule-quick-info-templates>`<br>`</ejs-schedule>` |
 
 ### Event settings
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Datasource for events | **Property:** *datasource* <br/> <br/> `<ej-schedule id="schedule">` <br>`<e-appointment-settings datasource="Appoint" id="Id" subject='"Subject"' start-time='"StartTime"' end-time='"EndTime"' description='"Description"' all-day='"AllDay"' recurrence='"Recurrence"' recurrence-rule='"RecurrenceRule"'></e-appointment-settings>`<br>`</ej-schedule>`<br> | **Property:** *dataSource* <br/><br/> `<ejs-schedule id="scheduler">`<br>`<e-schedule-eventsettings dataSource="@ViewBag.appointments"></e-schedule-eventsettings>`<br>`</ejs-schedule>` |
 | Appointment fields | `<ej-schedule id="schedule">` <br>`<e-appointment-settings datasource="Appoint" id="Id" subject='"Subject"' start-time='"StartTime"' end-time='"EndTime"' description='"Description"' all-day='"AllDay"' recurrence='"Recurrence"' recurrence-rule='"RecurrenceRule"'></e-appointment-settings>`<br>`</ej-schedule>`<br> | **Property:** *e-eventsettings-fields* <br/><br/> `<ejs-schedule id="scheduler">`<br>`<e-schedule-eventsettings dataSource="@ViewBag.appointments">`<br>`<e-eventsettings-fields>`<br>`<e-field-id name="Id"></e-field-id>`<br>`<e-field-subject name="Subject" default="New title" title="Event Name" validation="ValidationRules"></e-field-subject>`<br> `<e-field-location name="Location"></e-field-location>`<br>`<e-field-isallday name="EndTime"></e-field-isallday>`<br> `<e-field-description name="Description"></e-field-description>`<br> `<e-field-starttime name="StartTime"></e-field-starttime>`<br>`<e-field-endtime name="EndTime"></e-field-endtime>`<br>`<e-field-recurrenceid name="Recurrence"></e-field-recurrenceid>`<br>`<e-field-recurrencerule name="Recurrence"></e-field-recurrencerule>`<br> `<e-field-recurrenceexception name="EndTime"></e-field-recurrenceexception>`<br>`<e-field-starttimezone name="EndTime"></e-field-starttimezone>`<br>`<e-field-endtimezone name="EndTime"></e-field-endtimezone>`<br>`</e-eventsettings-fields>`<br>`</e-schedule-eventsettings>`<br>`</ejs-schedule>` |
@@ -123,7 +123,7 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To add appointments manually | **Method:** *saveAppointment()* <br/> `<ej-schedule id="schedule">`<br>`</ej-schedule>` <br/> <br>**Script:** <br>`<script>` <br> `var obj = {` <br> `Id: 1,` <br> `Subject: "Testing",` <br> `StartTime: new Date(2018, 4, 5, 10, 00),` <br> `EndTime: new Date(2018, 4, 5, 12, 00)` <br> `};` <br> `var scheduleobj= $("#schedule").ejSchedule(instance);` <br> `scheduleobj.saveAppointment(obj);` <br> `</script>` | **Method:** *addEvent()* <br/>`<ejs-schedule id="scheduler"></ejs-schedule>`<br/><br> **Script:** <br>`<script>` <br> `var scheduleobj= document.getElementById('schedule').ej2_instances[0];` <br> `scheduleobj.addEvent({` <br> `Id: 1,` <br> `Subject: 'New Event',` <br> `StartTime: new Date(2018, 7, 31, 10, 30),` <br> `EndTime: new Date(2018, 7, 31, 12, 0)});` <br> `</script>` |
 | To add resources dynamically | **Method:** *addResource()* <br/> `<ej-schedule id="schedule">`<br>`</ej-schedule>` <br/> <br> **Script:** <br> `<script>`<br>`var obj= { text: "Paul", id: 1, groupId: 3, color: "#cc99ff" };` <br> `var index = 0;` <br> `var scheduleobj= $("#schedule").ejSchedule(instance);` <br> `scheduleobj.addResource(obj, "Owners", index);` <br> `</script>` | **Method:** *addResource()* <br/>`<ejs-schedule id="scheduler"></ejs-schedule>`<br/><br> **Script:** <br>`<script>` <br> `var obj = { text: "Paul", id: 3, groupId: 1, color: "#cc99ff" };` <br> `var index = 0;` <br> `var scheduleobj= document.getElementById('schedule').ej2_instances[0];` <br> `scheduleobj.addResource(obj, "Owners", index);` <br> `</script>` |
@@ -159,7 +159,7 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Fires on the beginning of each scheduler action | **Event:** *action-begin* <br/><br/> `<ej-schedule id="schedule" action-begin="onActionBegin">` <br> `</ej-schedule>` <br> <br> **Script:** <br> `<script>` <br> `function onActionBegin(args) {` <br> `}` <br> `</script>` | **Event:** *actionBegin* <br/><br/> `<ejs-schedule  id="schedule" actionBegin="onActionBegin">` <br> `</ejs-schedule >` <br>  <br> **Script:** <br>`<script>` <br> `function onActionBegin(args) {` <br> `}` <br> `</script>` |
 | Fires on the completion of each scheduler action | **Event:** *action-complete* <br/><br/> `<ej-schedule id="schedule" action-complete="onActionComplete">` <br> `</ej-schedule>` <br>  <br> **Script:** <br>`<script>` <br> `function onActionComplete(args) {` <br> `}` <br> `</script>` | **Event:** *actionComplete* <br/><br/> `<ejs-schedule  id="schedule" actionComplete="onActionComplete">` <br> `</ejs-schedule >` <br>  <br> **Script:** <br>`<script>` <br> `function onActionComplete(args) {` <br> `}` <br> `</script>` |

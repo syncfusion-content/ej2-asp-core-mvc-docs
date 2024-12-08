@@ -94,5 +94,5 @@ The accessibility compliance of the Scheduler component is shown in the followin
 
 ## See also
 
-- [Accessibility in Syncfusion ASP.NET MVC components](../common/accessibility)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC components](../common/accessibility)
 

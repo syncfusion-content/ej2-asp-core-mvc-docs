@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Linear gauge dimensions
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Height| **Property:** *height*<br/><br/> `<ej-linear-gauge id="gauge" height='150'></ej-linear-gauge>`|**Property:** *height*<br/><br/> `<ejs-lineargauge id="gauge" height="150px"></ejs-lineargauge>`|
 |Width| **Property:** *width*<br/><br/>`<ej-linear-gauge id="gauge" width=200></ej-linear-gauge>`|**Property:** *width*<br/><br/> `<ejs-lineargauge id="gauge" width='200px'></ejs-lineargauge>`|
@@ -24,7 +24,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Line customizaton
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Height| **Property:** *scales.length*<br/><br/> `<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales length="300"></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`|**Property:** *axes.line.height*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-lineargauge-axis><e-axis-line height="150"></e-axis-line></e-lineargauge-axis><e-lineargauge-axes></ejs-lineargauge>`|
 |Width| **Property:** *scales.width*<br/><br/>`<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales width="300"></e-linear-scales><e-linear-scale-collections></ej-linear-gauge>`|**Property:** *axes.line.width*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-lineargauge-axis><e-axis-line width= 2></e-axis-line></e-lineargauge-axis></e-lineargauge-axes></ejs-lineargauge>`|
@@ -35,7 +35,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Ticks
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Type of Ticks| **Property:** *scales.ticks.type*<br/><br/> `<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales><e-linear-tick-collections><e-linear-ticks type="@TickType.MajorInterval"></e-linear-ticks></e-linear-tick-collections></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| **Property:** *axes.majorTicks.height*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-lineargauge-axis> <e-axis-majorticks></e-axis-majorticks></e-lineargauge-axis></e-lineargauge-axes></ejs-lineargauge>`|
 |Height of Major Ticks| **Property:** *scales.ticks.height*<br/><br/>`<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales><e-linear-tick-collections><e-linear-ticks type="@TickType.MajorInterval" height='8'></e-linear-ticks></e-linear-tick-collections></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`|**Property:** *axes.majorTicks.height*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-lineargauge-axis> <e-axis-majorticks height="8"></e-axis-majorticks></e-lineargauge-axis></e-lineargauge-axes></ejs-lineargauge>`|
@@ -55,7 +55,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Labels
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Angle| **Property:** *scales.labels.angle*<br/><br/>`<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales><e-linear-label-collections><e-linear-labels angle="15"></e-linear-labels></e-linear-label-collections></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| Not Applicable|
 |Offset| **Property:** *scales.labels.distanceFromScale*<br/><br/>`<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales><e-linear-label-collections><e-linear-labels><e-distance-from-scale x="-5" y="10"></e-distance-from-scale></e-linear-labels></e-linear-label-collections></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`|**Property:** *axes.labelStyle.offset*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-lineargauge-axis><e-axis-labelstyle offset="2"></e-axis-labelstyle></e-lineargauge-axis></e-lineargauge-axes></ejs-lineargauge>`|
@@ -71,7 +71,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Axis
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Minimum Value| **Property:** *scales.minimum*<br/><br/> `<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales minimum="20"></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| **Property:** *axes.minimum*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-lineargauge-axis minimum="20"></e-lineargauge-axis></e-lineargauge-axes></ejs-lineargauge>`|
 |Maximum Value| **Property:** *scales.maximum*<br/><br/>`<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales maximum="20"></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| **Property:** *axes.maximum*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-lineargauge-axis maximum="20"></e-lineargauge-axis></e-lineargauge-axes></ejs-lineargauge>`|
@@ -80,7 +80,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Ranges
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Start Value| **Property:** *scales.ranges.startValue*<br/><br/>`<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales><e-linear-range-collections><e-linear-ranges start-value="20"></e-linear-ranges></e-linear-range-collections></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| **Property:** *axes.ranges.start*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-axis-ranges><e-axis-range start="20"></e-axis-range></e-axis-ranges></e-lineargauge-axes></ejs-lineargauge>`|
 |End Value| **Property:** *scales.ranges.endValue*<br/><br/> `<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales><e-linear-range-collections><e-linear-ranges end-value="20"></e-linear-ranges></e-linear-range-collections></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| **Property:** *axes.ranges.end*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-axis-ranges><e-axis-range end="20"></e-axis-range></e-axis-ranges></e-lineargauge-axes></ejs-lineargauge>`|
@@ -94,7 +94,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Bar Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Bar Pointer| **Property:** *scales.ranges.barPointers.value*<br/><br/>`<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales><e-bar-pointer-collections><e-bar-pointers bar-pointer-value="20"></e-bar-pointers></e-bar-pointer-collections></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| **Property:** *axes.pointers.value*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-lineargauge-axis><e-axis-pointers><e-axis-pointer type="RangeBar" value="20"></e-axis-pointer></e-axis-pointers></e-lineargauge-axis></e-lineargauge-axes></ejs-lineargauge>`|
 |Color of Bar Pointer| **Property:** *scales.ranges.barPointers.backgroundColor*<br/><br/> `<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales><e-bar-pointer-collections><e-bar-pointers bar-pointer-value="20" bar-pointer-background-color="red"></e-bar-pointers></e-bar-pointer-collections></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| **Property:** *axes.pointers.color*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-lineargauge-axis><e-axis-pointers><e-axis-pointer type="RangeBar" value="20" color="red"></e-axis-pointer></e-axis-pointers></e-lineargauge-axis></e-lineargauge-axes></ejs-lineargauge>`|
@@ -108,7 +108,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Marker Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Marker Pointer| **Property:** *scales.ranges.markerPointers.value*<br/><br/> `<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales><e-marker-pointer-collections><e-marker-pointers value="20"></e-marker-pointers></e-marker-pointer-collections></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| **Property:** *axes.pointers.value*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-lineargauge-axis><e-axis-pointers><e-axis-pointer type="Marker" value="20"></e-axis-pointer></e-axis-pointers></e-lineargauge-axis></e-lineargauge-axes></ejs-lineargauge>`|
 |Color of Marker Pointer| **Property:** *scales.ranges.markerPointers.backgroundColor*<br/><br/>`<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales><e-marker-pointer-collections><e-marker-pointers value="20" bar-pointer-background-color="red"></e-marker-pointers></e-marker-pointer-collections></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| **Property:** *axes.pointers.color*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-axes><e-lineargauge-axis><e-axis-pointers><e-axis-pointer type="Marker" value="20" color="red"></e-axis-pointer></e-axis-pointers></e-lineargauge-axis></e-lineargauge-axes></ejs-lineargauge>`|
@@ -125,7 +125,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Annotation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Content| **Property:** *scales.customLabels.value*<br/><br/> `<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales show-custom-labels="true"><e-linear-custom-label-collections><e-linear-custom-labels value="LinearGauge"></e-linear-custom-labels></e-linear-custom-label-collections></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| **Property:** *annotations.content*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-annotations><e-lineargauge-annotation content="Annotation"></e-lineargauge-annotation></e-lineargauge-annotations></ejs-lineargauge>`|
 |Horizontal Alignment| Not Applicable| **Property:** *annotations.horizontalAlignment*<br/><br/>`<ejs-lineargauge id="gauge"><e-lineargauge-annotations><e-lineargauge-annotation content="Annotation" horizontalAlignment="Center"></e-lineargauge-annotation></e-lineargauge-annotations></ejs-lineargauge>`|
@@ -143,7 +143,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Tooltip
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Tooltip for Pointer| Not Applicable| **Property:** *tooltip.enable*<br/><br/> `<ejs-lineargauge id="gauge"> <e-lineargauge-tooltip enable="true"></e-lineargauge-tooltip></ejs-lineargauge>`|
 |Tooltip for Label|  **Property:** *tooltip.showLabelTooltip*<br/><br/>`<ej-linear-gauge id="gauge"><e-linear-tooltip show-label-tooltip="true"></e-linear-tooltip> </ej-linear-gauge>`| Not Applicable|
@@ -156,7 +156,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Appearence of Linear Gauge
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Background Color| **Property:** *backgroundColor*<br/><br/>`<ej-linear-gauge id="gauge" background-color="red"> </ej-linear-gauge>`| **Property:** *background*<br/><br/> `<ejs-lineargauge id="gauge" background="red"></ejs-lineargauge>`|
 |Border Color| **Property:** *borderColor*<br/><br/>`<ej-linear-gauge id="gauge" border-color="blue"> </ej-linear-gauge>`| **Property:** *border.color*<br/><br/> `<ejs-lineargauge id="gauge" border="border"></ejs-lineargauge>`</br> `var border= new {color="red"}`|
@@ -168,7 +168,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Gauge Container type
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Container Type| **Property:** *scales.type*<br/><br/>`<ej-linear-gauge id="gauge"><e-linear-scale-collections><e-linear-scales type="Thermometer" ></e-linear-scales></e-linear-scale-collections></ej-linear-gauge>`| **Property:** *container.type*<br/><br/>`<ejs-lineargauge id="gauge"><e-lineargauge-container type="Thermometer"></e-lineargauge-container></ejs-lineargauge>`|
 |Container Height| Not Applicable| **Property:** *container.height*<br/><br/> `<ejs-lineargauge id="gauge"><e-lineargauge-container type="Thermometer"height="20"></e-lineargauge-container></ejs-lineargauge>`|
@@ -177,7 +177,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Events
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Animation Complete Event| Not Applicable| **Event:** *animationComplete*<br/><br/> `<ejs-lineargauge id="gauge" animationComplete="animationComplete"></ejs-lineargauge>`</br> `function animationComplete(args){}`|
 |Annotation Render Event| **Event:** *drawCustomLabel*<br/><br/> `<ej-lineargauge id="gauge" draw-custom-label="customLabel"></ej-lineargauge>`</br> `function customLabel(args){}`| **Event:** *annotationRender*<br/><br/>`<ejs-lineargauge id="gauge" annotationRender="annotationRender"></ejs-lineargauge>`</br> `function annotationRender(args){}`|

@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Keyboard Navigation | **Property:** *allow-keyboard-navigation* <br /><br /> `<ej-accordion allow-keyboard-navigation="true" />` <br /> | **Not Applicable** |
 | Localization | **Not Applicable** | **Property:** *locale* <br /><br /> `<ejs-accordion locale="en-US" />` <br /> |
@@ -23,7 +23,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## AjaxSettings
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Property:** *ajax-settings* <br /><br /> `<ej-accordion>` <br /> &nbsp; `<e-ajax-settings type="GET" />` <br /> `</ej-accordion>` <br /> | **Not Applicable** |
 | Asynchronous | **Property:** *async* <br /><br /> `<ej-accordion>` <br /> &nbsp; `<e-ajax-settings async="true" />` <br /> `</ej-accordion>` <br /> | **Not Applicable** |
@@ -39,7 +39,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Animation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *animation* <br /><br /> `<ejs-accordion enableRtl="true">` <br /> &nbsp; `<e-accordion-animation expand="" collapse="" />` <br /> `</ejs-accordion>` <br /> |
 | EnableAnimation | **Property:** *enable-animation* <br /><br /> `<ej-accordion enable-animation="false" />` <br /> | **Not Applicable** |
@@ -51,7 +51,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Items
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *items* <br /><br /> `<ejs-accordion>` <br /> &nbsp; `<e-accordion-accordionitems />` <br /> `</ejs-accordion>` <br /> |
 | Content | **Not Applicable** | **Property:** *items[0].content* <br /><br /> `<ejs-accordion>` <br /> &nbsp; `<e-accordion-accordionitems>` <br /> &nbsp; &nbsp; `<e-accordion-accordionitem content="Welcome" />` <br /> &nbsp; `</e-accordion-accordionitems>` <br /> `</ejs-accordion>` <br /> |
@@ -82,7 +82,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Collapsible | **Property:** *collapsible* <br /><br /> `<ej-accordion collapsible="false" />` <br /> | **Not Applicable** |
 | Collapse speed | **Property:** *collapse-speed* <br /><br /> `<ej-accordion collapse-speed="500" />` <br /> | **Not Applicable** |
