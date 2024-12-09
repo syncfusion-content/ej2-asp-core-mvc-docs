@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC Badge](https://w
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
 ## Add stylesheet
 
@@ -39,11 +39,11 @@ Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_La
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls.
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 
 ## Add ASP.NET MVC Badge control
 
-Now, add the Syncfusion ASP.NET MVC Badge control in `~/Home/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Badge control in `~/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -51,7 +51,7 @@ Now, add the Syncfusion ASP.NET MVC Badge control in `~/Home/Index.cshtml` page.
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Badge control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Badge control will be rendered in the default web browser.
 
 ![ASP.NET MVC Badge Control](images/badge.PNG)
 

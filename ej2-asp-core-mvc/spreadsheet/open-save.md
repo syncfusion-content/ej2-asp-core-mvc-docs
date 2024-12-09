@@ -314,7 +314,7 @@ The following code example shows how to open an Excel file using a hosted web se
 
 ### Open an excel file from Base64 string data
 
-In the Syncfusion Spreadsheet component, there is no direct option to open data as a `Base64` string. To achieve this, the `import()` function fetches the `Base64` string, converts it to a Blob, creates a File object from the Blob, and then opens it using the `open` method in the spreadsheet.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> Spreadsheet component, there is no direct option to open data as a `Base64` string. To achieve this, the `import()` function fetches the `Base64` string, converts it to a Blob, creates a File object from the Blob, and then opens it using the `open` method in the spreadsheet.
 
 The following code example shows how to open the spreadsheet data as base64 string.
 
@@ -976,7 +976,7 @@ N> * Refer the above open and save operation to shows the create a server using 
 
 ## Server Dependencies
 
-Open and save helper functions are shipped in the Syncfusion.EJ2.Spreadsheet package, which is available in Essential Studio and [`nuget.org`](https://www.nuget.org/). Following list of dependencies required for Spreadsheet open and save operations.
+Open and save helper functions are shipped in the Syncfusion.EJ2.Spreadsheet package, which is available in Essential Studio<sup style="font-size:70%">&reg;</sup> and [`nuget.org`](https://www.nuget.org/). Following list of dependencies required for Spreadsheet open and save operations.
 
 | **Platforms** | **Assembly** | **Nuget Package** |
 | ----- | ----- | ----- |

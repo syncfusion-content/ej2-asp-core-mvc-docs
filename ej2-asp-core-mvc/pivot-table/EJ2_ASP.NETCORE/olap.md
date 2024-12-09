@@ -12,7 +12,7 @@ documentation: ug
 
 ## Getting Started with ASP.NET Core
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET MVC application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET MVC application to use our components.
 
 ### Prerequisites
 
@@ -28,7 +28,7 @@ The official prerequisites to create and run an ASP.NET Core 2.x application on 
 
 **Step 3:** Select **ASP.NET Core Web Application** and change the application name, and then click **OK**.
 
-N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET Core application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET Core (Essential JS 2).
+N> The Essential<sup style="font-size:70%">&reg;</sup> JS 2 supports 4.5+ .NET Framework in the ASP.NET Core application. i.e. The minimum target framework is 4.5 for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2).
 
 ![aspnetcore2.x project template](images/aspnetcore2x-template.png)
 
@@ -36,11 +36,11 @@ N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET Core applicati
 
 ![aspnetcore2.x web application template](images/aspnetcore2x-netcore.png)
 
-### Configure Essential JS 2 in the application
+### Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 in the application
 
 **Step 1:** Add the [`Syncfusion.EJ2.AspNet.Core`](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-N> Refer to [this article](../nuget-packages) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+N> Refer to [this article](../nuget-packages) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
 ![aspnetcore2.x manage nuget packages](images/aspnetcore2x-manage-nuget.png)
 
@@ -48,9 +48,9 @@ N> Refer to [this article](../nuget-packages) to learn more details about instal
 
 ![aspnetcore2.x install nuget packages](images/aspnetcore-nuget-package.png)
 
-The Essential JS 2 package will be included in the project, after the installation process is completed.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 package will be included in the project, after the installation process is completed.
 
-N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 **Step 3:** Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
@@ -72,7 +72,7 @@ N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [`Newtonsoft.J
 </head>
 ```
 
-**Step 5:** Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
+**Step 5:** Add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
 
 ```html
 <body>

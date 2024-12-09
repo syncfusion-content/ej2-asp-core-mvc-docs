@@ -9,19 +9,19 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Sparkline Types
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Type| **Property:** *type*<br/><br/> `@(Html.EJ().Sparkline("container").Type(SparklineType.Column))`| **Property:** *type*<br/><br/> `@Html.EJS().Sparkline("container").Type(Syncfusion.EJ2.Charts.SparklineType.Area).Render()` |
 
 ## Databinding
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Datasource| **Property:** *dataSource*<br/><br/> `@(Html.EJ().Sparkline("container").DataSource(ViewBag.SparklineData))` |**Property:** *dataSource*<br/><br/> `@Html.EJS().Sparkline("container").DataSource(ViewBag.datasource).Render()`|
 |Binding X values with datasource| **Property:** *xName*<br/><br/> `@(Html.EJ().Sparkline("container").XName("Month"))` |**Property:** *xName*<br/><br/> `@Html.EJS().Sparkline("container").XName("Month").Render()`|
@@ -29,7 +29,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Markers
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Enable markers| **Property:** *markerSettings.visible*<br/><br/> `@(Html.EJ().Sparkline("container").MarkerSettings(mr => mr.Visible(true)))`| **Property:** *markerSettings.visible*<br/><br/> `@Html.EJS().Sparkline("container").MarkerSettings(ms =>ms.Visible(new string[] {"All"})).Render()`|
 |Color| **Property:** *markerSettings.fill*<br/><br/> `@(Html.EJ().Sparkline("container").MarkerSettings(mr => mr.Fill("red")))` |**Property:** *markerSettings.fill*<br/><br/> `@Html.EJS().Sparkline("container").MarkerSettings(ms =>ms.Fill("red")).Render()`|
@@ -41,7 +41,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Data labels
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Enable data labels| Not applicable |**Property:** *dataLabelSettings.visible*<br/><br/> `@Html.EJS().Sparkline("container").DataLabelSettings(dl => dl.Visible(new string[] { "All" })).Render()`|
 |Color| Not applicable |**Property:** *dataLabelSettings.fill*<br/><br/> `@Html.EJS().Sparkline("container").DataLabelSettings(dl => dl.Fill("red")).Render()`|
@@ -60,7 +60,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Range band
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Color| **Property:** *rangeBandSettings.color*<br/><br/>`@Html.EJ().Sparkline("container").RangeBandSettings(range => range.Color("red"))` |**Property:** *rangeBandSettings.color*<br/><br/> `@Html.EJS().Sparkline("container").RangeBandSettings(rbs => rbs.Color("red")).Render()`|
 |Opacity| **Property:** *rangeBandSettings.opacity*<br/><br/> `<@Html.EJ().Sparkline("container").RangeBandSettings(range => range.Opacity(0.4))` |**Property:** *rangeBandSettings.opacity*<br/><br/> `@Html.EJS().Sparkline("container").RangeBandSettings(rbs => rbs.Opacity(0.5)).Render()`|
@@ -69,7 +69,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Special points customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |High point color| **Property:** *highPointColor*<br/><br/> `@(Html.EJ().Sparkline("container")HighPointColor("Blue"))` |**Property:** *highPointColor*<br/><br/> `@Html.EJS().Sparkline("container").HighPointColor("red").Render()`|
 |Low point color| **Property:** *lowPointColor*<br/><br/> `@(Html.EJ().Sparkline("container").LowPointColor("Orange"))` |**Property:** *lowPointColor*<br/><br/> `@Html.EJS().Sparkline("container").LowPointColor("blue").Render()`|
@@ -80,7 +80,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Axis customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show axis line| **Property:** *axisSettings.visible*<br/><br/> `@(Html.EJ().Sparkline("container").AxisLineSettings(as => as.Visible(true)))` |**Property:** *axisSettings.lineSettings.visible*<br/><br/> `@Html.EJS().Sparkline("container").AxisSettings(axis => axis.LineSettings(ls => ls.Visible(true))).Render()`|
 |Line color| **Property:** *axisSettings.color*<br/><br/> `@(Html.EJ().Sparkline("container").AxisLineSettings(as => as.Color("#ff14ae")))` |**Property:** *axisSettings.lineSettings.color*<br/><br/> `@Html.EJS().Sparkline("container").AxisSettings(axis => axis.LineSettings(ls => ls.Color("red"))).Render()`|
@@ -94,7 +94,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Appearance customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Background color| **Property:** *background*<br/><br/> `@(Html.EJ().Sparkline("container").Background("gray"))` |**Property:** *containerArea.background*<br/><br/> `@Html.EJS().Sparkline("container").ContainerArea(ca => ca.Background("red")).Render()`|
 |Border color | Not applicable |**Property:** *containerArea.border.color*<br/><br/> `@Html.EJS().Sparkline("container").ContainerArea(ca => ca.Border(ViewBag.border)).Render()`<br/><br/>`ViewBag.border = new {color="green"}`|
@@ -111,7 +111,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Tooltip
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show tooltip| **Property:** *tooltip.visible*<br/><br/> `@(Html.EJ().Sparkline("container").Tooltip(tooltip => tooltip.Visible(true)))` |**Property:** *tooltipSettings.visible*<br/><br/> `@Html.EJS().Sparkline("container").TooltipSettings(tooltip => tooltip.Visible(true)).Render()`|
 |Background| **Property:** *tooltip.fill*<br/><br/> `@(Html.EJ().Sparkline("container").Tooltip(tooltip => tooltip.Fill("red")))` |**Property:** *tooltipSettings.fill*<br/><br/> `@Html.EJS().Sparkline("container").TooltipSettings(tooltip => tooltip.Fill("red")).Render()`|
@@ -129,25 +129,25 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Rendering
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Enable canvas rendering| **Property:** *enableCanvasRendering*<br/><br/> `@Html.EJ().Sparkline("container").EnableCanvasRandering(true))` | Not applicable |
 
 ## Localization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Localization| **Property:** *locale*<br/><br/> `@Html.EJ().Sparkline("container").Locale("en-US"))` | **Property:** *type*<br/><br/> `@Html.EJS().Sparkline("container").Locale("en-US").Render()` |
 
 ## Methods
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Dynamically updating sparkline| **Method:** *redraw*<br/><br/> `var sparkline = $("#container").ejSparkline("instance");`</br>`sparkline.redraw();` | **Method:** *refresh*<br/><br/> `var sparkline = document.getElementById("container").ej2_instances[0];`</br>`sparkline.refresh();` |
 
 ## Events
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Load| **Event:** *load*<br/><br/> `@(Html.EJ().Sparkline("container").Load("load"))`<br/><br/>`function load(args) { }` | **Event:** *load*<br/><br/> `@Html.EJS().Sparkline("container").Load("load").Render()
 `<br/><br/>`function load(args) { }` |

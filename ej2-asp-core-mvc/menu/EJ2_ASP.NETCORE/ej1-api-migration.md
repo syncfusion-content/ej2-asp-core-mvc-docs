@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Menu component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Menu component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Animation type on hover or click on the menu items | **Property:** *animationType* <br/><br/> `<ej-menu id="menu" animation-type="@AnimationType.Default"></ej-menu>` | Not applicable |
 | Context menu target  | **Property:** *contextMenuTarget* <br/><br/> `<ej-menu id="menu" context-menu-target="#target"></ej-menu>` | Not applicable |
@@ -47,7 +47,7 @@ This article describes the API migration process of Menu component from Essentia
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Disable Method | **Method:** *disable* <br/><br/> `<ej-menu id="menu"></ej-menu>` <br/> var menu = $("#menu").data("ejMenu"); <br/> menu.disable();| Not applicable |
 | Disable menu items | **Method:** *disableItem* <br/><br/> `<ej-menu id="menu">`<br/>`<e-menu-items>`<br/> &nbsp; `<e-menu-item text="File"></e-menu-item>`<br/> &nbsp; `<e-menu-item text="Edit"></e-menu-item>`<br/> &nbsp; `<e-menu-item text="Help"></e-menu-item>`<br/>`</e-menu-items>`<br/>`</ej-menu>`<br/> var menu = $("#menu").data("ejMenu");<br/> menu.disableItem("File");| **Method:** *enableItems* <br/><br/> `<ejs-menu id="menu" items="ViewBag.menuItems"></ejs-menu>` <br/> var menu = document.getElementById("menu").ej2_instances[0]; <br/> menu.enableItems("File", false) |
@@ -66,7 +66,7 @@ This article describes the API migration process of Menu component from Essentia
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers before opening the menu | **Events:** *beforeOpen* <br/><br/> `<ej-menu id="menu" before-open="beforeOpen"></ej-menu>` <br/> function beforeOpen(args) { <br/> &nbsp; &nbsp; /** code block */ <br/> } | **Events:** *beforeOpen* <br/><br/> `<ejs-menu id="menu" items="ViewBag.menuItems" beforeOpen="beforeOpen"></ejs-menu>` <br/> function beforeOpen(args) { <br/> &nbsp; &nbsp; /** code block */ <br/> } |
 | Triggers before closing the menu | Not applicable | **Events:** *beforeClose* <br/><br/> `<ejs-menu id="menu" items="ViewBag.menuItems" beforeClose="beforeClose"></ejs-menu>` <br/> function beforeClose(args) { <br/> &nbsp; &nbsp; /** code block */ <br/> } |
