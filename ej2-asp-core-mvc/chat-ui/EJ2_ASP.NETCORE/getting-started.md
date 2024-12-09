@@ -109,4 +109,4 @@ You can use the `e-chatui-messages` tag directive to add messages and the `user`
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core AI AssistView default messages](images/default-messages.png)
+![ASP.NET Core Chat UI default messages](images/default-messages.png)

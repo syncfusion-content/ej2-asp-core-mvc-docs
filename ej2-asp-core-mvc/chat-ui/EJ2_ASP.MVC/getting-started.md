@@ -114,4 +114,4 @@ You can use the `Messages` property to add messages and the `User` property to m
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC AI AssistView default messages](images/default-messages.png)
+![ASP.NET MVC Chat UI default messages](images/default-messages.png)
