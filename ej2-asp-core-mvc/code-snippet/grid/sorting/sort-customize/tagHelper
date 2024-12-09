@@ -1,9 +1,9 @@
 @{
     List<object> sortOptions = new List<object>();
-    sortOptions.Add(new { field = "OrderID", direction = "Ascending" });
-    sortOptions.Add(new { field = "ShipCity", direction = "Descending" });
- }
-<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowSorting="true" height="348px">
+    sortOptions.Add(new { field = "ShipCity", direction = "Ascending" });
+    sortOptions.Add(new { field = "CustomerID", direction = "Descending" });
+  }
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" allowSorting="true">
     <e-grid-sortsettings columns="sortOptions"></e-grid-sortsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
@@ -12,3 +12,11 @@
         <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+<style>
+    .e-grid .e-icon-ascending::before {
+        content: '\e822';
+    }
+    .e-grid .e-icon-descending::before {
+        content: '\e7fe';
+    }
+</style>

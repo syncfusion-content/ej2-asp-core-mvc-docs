@@ -1,0 +1,22 @@
+@{
+    Object sortComparer = "sortComparer";
+}
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowSorting().Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("170").SortComparer("sortComparer").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
+}).Render()
+<script>
+    function sortComparer(reference, comparer){
+        if (reference < comparer) {
+            return -1;
+        }
+        if (reference > comparer) {
+            return 1;
+        }
+        return 0;
+    }
+</script>
