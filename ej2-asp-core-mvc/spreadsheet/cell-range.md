@@ -190,6 +190,29 @@ You can apply custom data validation using two methods.
 * The first is through the Data Validation dialog in the Ribbon toolbar. Navigate to the Data tab, select the Data Validation option, and choose the Custom type from the Allow dropdown menu.
 * The second method is programmatically, using the [`allowDataValidation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowDataValidation) method, which allows developers to set custom rules dynamically via code.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/data-validation-cs2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="DataValidation.cs" %}
+{% include code-snippet/spreadsheet/data-validation-cs2/dataValidation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/data-validation-cs2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="DataValidation.cs" %}
+{% include code-snippet/spreadsheet/data-validation-cs2/dataValidation.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Limitations of Data validation
 
 The following features have some limitations in Data Validation:
