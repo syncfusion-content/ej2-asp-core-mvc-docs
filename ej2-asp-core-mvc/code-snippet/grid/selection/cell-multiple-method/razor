@@ -1,0 +1,53 @@
+<div style="padding: 10px 0px 20px 0px">
+   @Html.EJS().Button("buttonOne").CssClass("e-primary").Content("Select [1, 3]").Render()
+   @Html.EJS().Button("buttonTwo").CssClass("e-primary custom").Content("Select [2, 2]").Render()
+   @Html.EJS().Button("buttonThree").CssClass("e-primary custom").Content("Select [0, 0]").Render()
+   @Html.EJS().Button("buttonFour").CssClass("e-primary custom").Content("Select [4, 2]").Render()
+   @Html.EJS().Button("buttonFive").CssClass("e-primary custom").Content("Select [5, 1]").Render()
+</div>
+<div style="padding: 10px 0px 20px 0px">
+   @Html.EJS().Button("buttonSix").CssClass("e-primary").Content("Select [3, 3]").Render()
+   @Html.EJS().Button("buttonSeven").CssClass("e-primary custom").Content("Select [0, 3]").Render()
+   @Html.EJS().Button("buttonEight").CssClass("e-primary custom").Content("Select [8, 1]").Render()
+   @Html.EJS().Button("buttonNine").CssClass("e-primary custom").Content("Select [8, 2]").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).Mode(Syncfusion.EJ2.Grids.SelectionMode.Cell)).Render()
+<script>
+  document.getElementById('buttonOne').onclick = handleButtonClick;
+  document.getElementById('buttonTwo').onclick = handleButtonClick;
+  document.getElementById('buttonThree').onclick = handleButtonClick;
+  document.getElementById('buttonFour').onclick = handleButtonClick;
+  document.getElementById('buttonFive').onclick = handleButtonClick;
+  document.getElementById('buttonSix').onclick = handleButtonClick;
+  document.getElementById('buttonSeven').onclick = handleButtonClick;
+  document.getElementById('buttonEight').onclick = handleButtonClick;
+  document.getElementById('buttonNine').onclick = handleButtonClick;
+  function handleButtonClick(event){
+    var grid = document.getElementById("grid").ej2_instances[0];
+    if (event.target.id === "buttonOne") selectCells(1, 3);
+    else if (event.target.id === "buttonTwo") selectCells(2, 2);
+    else if (event.target.id === "buttonThree") selectCells(0,0);
+    else if (event.target.id === "buttonFour") selectCells(4,2);
+    else if (event.target.id === "buttonFive") selectCells(5,1);
+    else if (event.target.id === "buttonSix") selectCells(3,3);
+    else if (event.target.id === "buttonSeven") selectCells(0,3);
+    else if (event.target.id === "buttonEight") selectCells(8,1);
+    else if (event.target.id === "buttonNine") selectCells(8,2);
+  }
+  function selectCells(rowIndex, columnIndex) {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    grid.selectCells([{ rowIndex: rowIndex, cellIndexes: [columnIndex] }]);
+  }
+</script>
+<style>
+  .custom{
+    margin-left: 5px;
+  }
+</style>

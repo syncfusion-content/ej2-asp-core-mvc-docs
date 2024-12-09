@@ -1,0 +1,57 @@
+
+<div style="padding: 10px 0px 20px 0px">
+  <ejs-button id="buttonOne" cssClass="e-primary" content="SelectColumns [1, 2]"></ejs-button>
+  <ejs-button id="buttonTwo" cssClass="e-primary custom" content="SelectColumns [0, 2]"></ejs-button>
+  <ejs-button id="buttonThree" cssClass="e-primary custom" content="SelectColumns [1, 3]"></ejs-button>
+  <ejs-button id="buttonFour" cssClass="e-primary custom" content="SelectColumns [0,5]"></ejs-button>
+  <ejs-button id="buttonFive" cssClass="e-primary custom" content="SelectColumns [1,6]"></ejs-button>
+</div>
+<div style="padding: 10px 0px 20px 0px">
+  <ejs-button id="buttonSix" cssClass="e-primary" content="SelectColumns [0,2,5]"></ejs-button>
+  <ejs-button id="buttonSeven" cssClass="e-primary custom" content="SelectColumns [1,3,6]"></ejs-button>
+  <ejs-button id="buttonEight" cssClass="e-primary custom" content="SelectColumns [2,4,6]"></ejs-button>
+  <ejs-button id="buttonNine" cssClass="e-primary custom" content="SelectColumns [0,3,5]"></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px">
+  <e-grid-selectionsettings allowColumnSelection="true" type="Multiple"></e-grid-selectionsettings>
+  <e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+    <e-grid-column field="OrderDate" headerText="Order Date" width="130" format="yMd" textAlign="Right"></e-grid-column>
+    <e-grid-column field="Freight" headerText="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
+    <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+  </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('buttonOne').onclick = handleButtonClick;
+    document.getElementById('buttonTwo').onclick = handleButtonClick;
+    document.getElementById('buttonThree').onclick = handleButtonClick;
+    document.getElementById('buttonFour').onclick = handleButtonClick;
+    document.getElementById('buttonFive').onclick = handleButtonClick;
+    document.getElementById('buttonSix').onclick = handleButtonClick;
+    document.getElementById('buttonSeven').onclick = handleButtonClick;
+    document.getElementById('buttonEight').onclick = handleButtonClick;
+    document.getElementById('buttonNine').onclick = handleButtonClick;
+    function handleButtonClick(event){
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (event.target.id === "buttonOne") selectColumns([1, 2]);
+        else if (event.target.id === "buttonTwo") selectColumns([0, 2]);
+        else if (event.target.id === "buttonThree") selectColumns([1,3]);
+        else if (event.target.id === "buttonFour") selectColumns([0,5]);
+        else if (event.target.id === "buttonFive") selectColumns([1,6]);
+        else if (event.target.id === "buttonSix") selectColumns([0,2,5]);
+        else if (event.target.id === "buttonSeven") selectColumns([1,3,6]);
+        else if (event.target.id === "buttonEight") selectColumns([2,4,6]);
+        else if (event.target.id === "buttonNine") selectColumns([0,3,5]);
+    }
+   function selectColumns(columns) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.selectionModule.clearColumnSelection();
+        grid.selectionModule.selectColumns(columns);
+    }
+</script>
+<style>
+  .custom{
+    margin-left: 5px;
+  }
+</style>

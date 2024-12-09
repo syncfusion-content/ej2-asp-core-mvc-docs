@@ -1,8 +1,26 @@
-@Html.EJS().Grid("SelectionAPI").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowSelection().Columns(col =>
+@{
+    var dropDownData = new[] {
+        new { value = "Single", text = "Single" },
+        new { value = "Multiple", text = "Multiple" },
+    };
+}
+<div style="padding-bottom: 20px; display: flex">
+    <label style="padding: 5px 10px 0 0;font-weight: bold"> Choose selection type:</label>
+    <span style="height:fit-content">
+        @Html.EJS().DropDownList("dropDown").Width("150px").Index(0).Change("valueChange").DataSource(dropDownData).Render()
+    </span>
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
-   col.Field("Inventor").HeaderText("Inventor Name").Width("180").Add();
-   col.Field("NumberofPatentFamilies").HeaderText("No of Patent Families").Width("195").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("Country").HeaderText("Country").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("Active").HeaderText("Active").Width("130").Add();
-
-}).AllowPaging().SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).PageSettings(page => page.PageCount(2)).Render()
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Single)).Render()
+<script>
+   function valueChange(args) {
+     var grid = document.getElementById("grid").ej2_instances[0];
+     grid.selectionSettings.type = args.value;
+   }
+</script>

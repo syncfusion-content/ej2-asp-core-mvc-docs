@@ -1,0 +1,37 @@
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("buttons").CssClass("e-primary").Content("Show Selected Cell Indexes").Render()
+</div>
+<div id="dialog" ></div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).SelectionSettings(select => select.PersistSelection(true).Mode(Syncfusion.EJ2.Grids.SelectionMode.Cell).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
+<script>
+   var dialogVisible = true;
+    document.getElementById('buttons').onclick = function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        var selectedCells = grid.getSelectedRowCellIndexes();
+        if(selectedCells.length>0){
+            dialog.visible = true;
+            for (var i = 0; i < selectedCells.length; i++) {
+                dialog.content += `<p><li>Row: ${selectedCells[i].rowIndex}, cellIndex: ${selectedCells[i].cellIndexes} <p>`;
+            }
+        }
+    };
+    var dialog = new ej.popups.Dialog({
+        header: 'Selected Cell Indexes',
+        showCloseIcon: 'true',
+        position: { X: 370, Y: 250 },
+        width: '400px',
+        visible: false,
+        close: dialogClose
+    });
+    dialog.appendTo('#dialog');
+    function dialogClose() {
+        dialogVisible = false;
+    }
+</script>
