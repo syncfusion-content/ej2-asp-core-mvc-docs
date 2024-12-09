@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User Handle in Syncfusion ##Platform_Name## Diagram Component
-description: Learn here all about User Handle in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: User Handle in Syncfusion® ##Platform_Name## Diagram Component
+description: Learn here all about User Handle in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: User Handle
 publishingplatform: ##Platform_Name##
