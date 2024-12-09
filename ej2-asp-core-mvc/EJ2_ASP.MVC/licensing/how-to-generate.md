@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Generate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP .NET MVC EJ2 License key
+# Generate Syncfusion<sup>&reg;</sup> ASP .NET MVC EJ2 License key
 
 License keys can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section of the Syncfusion<sup style="font-size:70%">&reg;</sup> website.
 

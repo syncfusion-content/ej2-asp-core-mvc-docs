@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Component
+title: Icons in ##Platform_Name## Component | Syncfusion
 description: Learn here all about Icons in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons Library
+# Icons Library in Syncfusion<sup>&reg;</sup> controls
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides the set of `base64` formatted font icons, that can be utilized in the ASP.NET MVC application.
 

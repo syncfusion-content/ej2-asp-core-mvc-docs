@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD024 -->
 
-# Getting Started with Essential<sup style="font-size:70%">&reg;</sup> JS 2 for ASP.NET MVC in Visual Studio
+# Getting Started with Essential® JS 2 for ASP.NET MVC in Visual Studio
 
 This article provides a step-by-step introduction to configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 setup, build and publish a simple ASP.NET MVC web application using [Visual Studio](https://visualstudio.microsoft.com/downloads/).
 

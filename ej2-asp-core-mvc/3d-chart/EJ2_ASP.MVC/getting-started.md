@@ -111,6 +111,6 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC 3D Cha
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC 3D Chart control will be rendered in the default web browser.
 
-![ASP.NET MVC 3D Chart Control](images/3d-chart.png)
+![ASP.NET MVC 3D Chart Control](images/three-d-chart.png)
 
 N> `View Sample in GitHub`.

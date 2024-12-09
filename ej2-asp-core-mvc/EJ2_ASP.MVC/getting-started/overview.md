@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with Essential<sup style="font-size:70%">&reg;</sup> JS 2 in ASP.NET MVC
+# Getting Started with Essential<sup>&reg;</sup> JS 2 in ASP.NET MVC
 
 The purpose of this document is to build and run a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 web application in ASP.NET MVC.
 

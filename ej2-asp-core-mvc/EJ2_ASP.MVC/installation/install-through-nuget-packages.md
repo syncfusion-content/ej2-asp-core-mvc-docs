@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Install Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC JS2 NuGet packages
+# Install Syncfusion<sup>&reg;</sup> ASP.NET MVC JS2 NuGet packages
 
 ## Overview
 

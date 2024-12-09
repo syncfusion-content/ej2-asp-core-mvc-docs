@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nuget Packages in ##Platform_Name## Component
+title: Nuget Packages in ##Platform_Name## Component | Syncfusion
 description: Learn here all about Nuget Packages in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Nuget Packages

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Downloading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC EJ2 offline installer
+# Downloading Syncfusion® ASP.NET MVC EJ2 offline installer
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 Installer can be downloaded from the [Syncfusion](https://www.syncfusion.com/aspnet-mvc-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 

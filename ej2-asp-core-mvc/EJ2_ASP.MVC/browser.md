@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Browser Compatibility in ##Platform_Name## controls
-description: Learn here all about Browser compatibility of Syncfusion ##Platform_Name## controls and more.
+title: Browser Compatibility in ##Platform_Name## controls | Syncfusion
+description: Learn here all about Browser compatibility of Syncfusion ##Platform_Name## controls and more details.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

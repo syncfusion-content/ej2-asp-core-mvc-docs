@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Register Syncfusion<sup style="font-size:70%">&reg;</sup> License key in ASP .NET MVC EJ2 application
+# Register Syncfusion® License key in ASP .NET MVC EJ2 application
 
 License key should be registered, if your project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 packages reference from [nuget.org](https://www.nuget.org/packages?q=syncfusion) or from syncfusion<sup style="font-size:70%">&reg;</sup> installer.
 

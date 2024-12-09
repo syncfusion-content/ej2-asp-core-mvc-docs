@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC EJ2 Web Installer
+# Installing Syncfusion<sup>&reg;</sup> ASP.NET MVC EJ2 Web Installer
 
 
 ## Overview

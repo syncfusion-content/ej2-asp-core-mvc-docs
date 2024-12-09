@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD024 -->
 
-# Getting Started with ASP.NET MVC and Syncfusion<sup style="font-size:70%">&reg;</sup> Project Template
+# Getting Started with ASP.NET MVC and Syncfusion® Project Template
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Project Templates** for the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC platform to create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC web application using Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls.
 
