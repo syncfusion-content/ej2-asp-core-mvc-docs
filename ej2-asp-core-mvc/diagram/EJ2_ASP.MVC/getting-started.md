@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Diagram Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Diagram control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Diagram Control | Syncfusion®
+description: Checkout and learn about getting started with ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -58,9 +58,9 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET MVC controls styles -->
+    <!-- Syncfusion® ASP.NET MVC controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
-    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <!-- Syncfusion® ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -78,7 +78,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 <body>
 ...
-    <!-- Syncfusion ASP.NET MVC Script Manager -->
+    <!-- Syncfusion® ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
 </body>
 

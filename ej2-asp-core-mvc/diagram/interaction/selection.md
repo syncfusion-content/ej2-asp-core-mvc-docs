@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in Syncfusion ##Platform_Name## Diagram Component
-description: Learn here all about Selection in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: Selection in Syncfusion® ##Platform_Name## Diagram Component
+description: Learn here all about Selection in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
 publishingplatform: ##Platform_Name##
