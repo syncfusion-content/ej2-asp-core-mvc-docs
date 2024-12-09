@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Button Group Component
+title: Getting Started with ##Platform_Name## ButtonGroup control |Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET MVC Button Group Control
 
 This section briefly explains about how to include a simple [ASP.NET MVC ButtonGroup](https://www.syncfusion.com/aspnet-mvc-ui-controls/button-group) in your ASP.NET MVC application using Visual Studio.
 

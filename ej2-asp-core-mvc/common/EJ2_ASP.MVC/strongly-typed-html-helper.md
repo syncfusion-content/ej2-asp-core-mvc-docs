@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Strongly Typed Html Helper in ##Platform_Name## Common Component
+title: Html Helper in ##Platform_Name## Common Control | Syncfusion
 description: Learn here all about Strongly Typed Html Helper in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Strongly Typed Html Helper
