@@ -1,5 +1,5 @@
 <div style="padding-bottom: 20px; display: flex">
-    <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Enable or disable context menu items</label>
+    <label style="margin-right:5px;margin-top: -3px;font-weight: bold;"> Show or hide context menu items</label>
     <ejs-switch id="switch" checked="true" change="onSwitchChange"></ejs-switch>
  </div>
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" contextMenuItems="@(new List<object>() {"Copy", "Edit", "Delete"})" allowPaging="true" height="348px">
@@ -14,6 +14,16 @@
 <script>
     function onSwitchChange(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
-        grid.contextMenuModule.contextMenu.enableItems(['Copy'], args.checked);
+        if (args.checked) {
+            grid.contextMenuModule.contextMenu.showItems([
+                'Edit Record',
+                'Delete Record',
+            ]);
+        } else {
+            grid.contextMenuModule.contextMenu.hideItems([
+                'Edit Record',
+                'Delete Record',
+            ]);
+        }  
     }
-</script>
+</script> 
