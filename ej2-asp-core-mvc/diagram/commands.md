@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Commands in ##Platform_Name## Diagram Component
-description: Learn here all about Commands in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: Commands in ##Platform_Name## Diagram Component | Syncfusion®
+description: Learn here all about Commands in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Commands
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Commands
+# Commands in ##Platform_Name## Diagram Component
 
 <!-- markdownlint-disable MD010 -->
 
