@@ -71,7 +71,7 @@ public ActionResult Index()
 </div>
 ```
 
-![aspnetmvc4 numeric textbox control](images/numeric-textbox.png)
+![aspnetmvc numeric textbox control](images/numeric-textbox.png)
 
 The following steps explain how to get the values by using the Scaffolding methods in Post back.
 
@@ -91,7 +91,7 @@ public ActionResult Index(EditorValue model)
 
 On clicking the button, the Post method will be triggered. In that, the selected value will be obtained as follows.
 
-![aspnetmvc4 numeric value](images/numeric-value.png)
+![aspnetmvc numeric value](images/numeric-value.png)
 
 
 ## Server Side Validation
@@ -137,4 +137,4 @@ public class EditorValue
 
 When you press the “POST” button on this page then it will post the data to the server and the code written with in EditorFor action will validate the NumericTextBox value by checking the ModelState.IsValid property. If the NumericTextBox value is not selected, the ModelState.IsValid will return false and display error message.
 
-![aspnetmvc4 numeric required](images/numeric-required.png)
+![aspnetmvc numeric required](images/numeric-required.png)
