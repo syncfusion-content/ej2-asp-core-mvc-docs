@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shapes in ##Platform_Name## Diagram Control | Syncfusion
-description: Learn here all about shapes in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: Shapes in ##Platform_Name## Diagram Control | Syncfusion®
+description: Learn here all about shapes in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Shapes
 publishingplatform: ##Platform_Name##

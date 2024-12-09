@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Splitter component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Splitter component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Adding custom class | **Property:** *cssClass* <br /><br />`@{Html.EJ().Splitter(“splitter”)`<br/>`.CssClass(“customClass”)`<br/>`.Render();}` <br /> | **Property:** *cssClass* <br /><br /> `@Html.EJS().Splitter(“splitter”)`<br/>`.CssClass(“customClass”)`<br/>`.Render();`<br/> |
 | Adjusting Height | **Property:** *height* <br /><br />`@{Html.EJ().Splitter(“splitter”)`<br/>`.Height(“100%”).Render();}` <br /> | **Property:** *height* <br /> <br />`@Html.EJS().Splitter(“splitter”)`<br/>`.Height(“100%”).Render();` <br/> |
@@ -32,26 +32,26 @@ This article describes the API migration process of Splitter component from Esse
 
 ## Accessibility and Localization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Keyboard Navigation | **Property:** *allowKeyboardNavigation* <br /><br /> `@{Html.EJ().Splitter(“splitter”)`<br/>`.AllowKeyboardNavigation(true)`<br/>`.Render();}` <br/>| No separate property for enable/disable keyboard navigation.  Its enabled by default. |
 | Right to Left | **Property:** *enableRTL* <br /><br />`@{Html.EJ().Splitter(“splitter”)`<br/>`.EnableRTL(false).Render();}`<br/> | **Property:** *enableRtl*<br /><br />`@Html.EJS().Splitter(“splitter”)`<br/>`.EnableRtl(true).Render();`<br/> |
 
 ## Control State
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Enable/Disable the control | Not Available | **Property:** *enabled* <br /><br />`@Html.EJS().Splitter(“splitter”)`<br/>`.Enabled(true).Render();`<br/> |
 
 ## State Maintenance
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Save the model value in local storage or cookies | Not Available | **Property:** *enablePersistence* <br /><br />`@Html.EJS().Splitter(“splitter”)`<br/>`.EnablePersistence(true).Render();`<br/> |
 
 ## Pane Properties
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Property:** *properties* <br /><br />`@{Html.EJ().Splitter(“splitter”)`<br/>`.PaneProperties().Render();}`<br /> | **Property:** *paneSettings* <br /><br />`@Html.EJS().Splitter(“splitter”)`<br/>`.PaneSettings().Render();`<br/> |
 | Pane Content | Not Available | **Property:** *content* <br /><br /> `@Html.EJS().Splitter(“splitter”)`<br/>`.PaneSettings(item=>{item.Content(”<div>First Pane Content</div>”)})`<br/>`.Render();`<br/> |
@@ -75,7 +75,7 @@ This article describes the API migration process of Splitter component from Esse
 
 ## Animation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | EnableAnimation | **Property:** *enableAnimation* <br /><br />`@{Html.EJ().Splitter(“splitter”)`<br/>`.EnableAnimation(true)`<br/>`.Render();}`<br/> | Not Available |
 | AnimationSpeed | **Property:** *animationSpeed* <br /><br />`@{Html.EJ().Splitter(“splitter”)`<br/>`.AnimationSpeed(150)`<br/>`.Render();}`<br/> | Not Available |
