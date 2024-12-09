@@ -188,7 +188,7 @@ When this rule is applied, the Spreadsheet evaluates the entered value against t
 You can apply custom data validation using two methods.
 
 * The first is through the Data Validation dialog in the Ribbon toolbar. Navigate to the Data tab, select the Data Validation option, and choose the Custom type from the Allow dropdown menu.
-* The second method is programmatically, using the [`allowDataValidation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowDataValidation) method, which allows developers to set custom rules dynamically via code.
+* The second method is programmatically, using the `addDataValidation()` method, which allows developers to set custom rules dynamically via code.
 
 ### Limitations of Data validation
 
