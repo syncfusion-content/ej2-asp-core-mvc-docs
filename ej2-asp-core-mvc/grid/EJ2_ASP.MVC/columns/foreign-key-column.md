@@ -32,7 +32,7 @@ To enable and integrate the foreign key column in the ASP.NET MVC Grid component
 
 The Syncfusion Grid component provides a convenient way to bind local data to a foreign key column. This allows you to display related data from a local data source within the grid. Here's an example of how to bind local data to a Foreign Key column in Syncfusion Grid:
 
-In this example, **data** is the local data source for the Grid, and **employeeData** is the local data source for the foreign key column. The `Field` property of the e-column component is set to **EmployeeID** which represents the foreign key value in the **data**. The `ForeignKeyValue` property is set to **FirstName** which represents the field name in the **employeeData** that you want to display in the foreign key column.
+In this example, **data** is the local data source for the Grid, and **employeeData** is the local data source for the foreign key column. The `Field` property of the column is set to **EmployeeID** which represents the foreign key value in the **data**. The `ForeignKeyValue` property is set to **FirstName** which represents the field name in the **employeeData** that you want to display in the foreign key column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
