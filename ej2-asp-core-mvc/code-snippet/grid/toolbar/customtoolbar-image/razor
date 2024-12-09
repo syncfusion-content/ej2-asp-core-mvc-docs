@@ -25,7 +25,7 @@
         if (event.target.id === "addButton") {
             grid.addRecord();
         }
-        else if (event.target.id === "deleteButton") {
+        else {
             var selectedRecord = grid.getSelectedRecords()[0];
             grid.deleteRecord(selectedRecord);
         }
