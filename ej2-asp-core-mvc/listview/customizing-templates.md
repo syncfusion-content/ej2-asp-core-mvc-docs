@@ -11,7 +11,7 @@ documentation: ug
 
 # Customizing templates
 
-The ListView component is designed to customize each list items and group title. It uses Essential JS2 `Template engine` to render the elements.
+The ListView component is designed to customize each list items and group title. It uses Essential<sup style="font-size:70%">&reg;</sup> JS2 `Template engine` to render the elements.
 
 ## Header Template
 

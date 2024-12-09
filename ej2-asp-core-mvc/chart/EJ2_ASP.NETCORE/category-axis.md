@@ -15,7 +15,7 @@ documentation: ug
 
 Category axis are used to represent, the string values instead of numbers.
 
-To quickly get started with Syncfusion ASP.NET Core Category Axis, you can check out this video:
+To quickly get started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Category Axis, you can check out this video:
 
 {% youtube "https://www.youtube.com/watch?v=l3M5ZvM1Ozs" %}
 

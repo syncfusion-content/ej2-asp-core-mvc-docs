@@ -8,24 +8,24 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Installing Syncfusion ASP.NET MVC EJ2 Web Installer
+# Installing Syncfusion<sup>&reg;</sup> ASP.NET MVC EJ2 Web Installer
 
 
 ## Overview
 
-For the Essential Studio ASP . NET MVC - EJ2 product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/account/downloads/latest-version).
+For the Essential Studio<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 product, Syncfusion<sup style="font-size:70%">&reg;</sup> offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio<sup style="font-size:70%">&reg;</sup> products you have chosen. You can get the most recent version of Essential Studio<sup style="font-size:70%">&reg;</sup> Web Installer [here](https://www.syncfusion.com/account/downloads/latest-version).
 
 ## Installation
 
-The steps below show how to install Essential Studio ASP . NET MVC - EJ2 Web Installer.
+The steps below show how to install Essential Studio<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 Web Installer.
 
-1. Open the Syncfusion Essential Studio ASP . NET MVC - EJ2 Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically open and extracts the package.
+1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically open and extracts the package.
 
     ![Web Installer Setup](images/webinstaller-1.png)
 
     N> The installer wizard extracts the syncfusionessentialaspnetmvc-js2webinstaller_{version}.exe dialog, which displays the package's unzip operation.
 
-2. The Syncfusion ASP . NET MVC - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
+2. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
 
     ![Web Installer welcome wizard](images/webinstaller-2.png)
 
@@ -51,7 +51,7 @@ The steps below show how to install Essential Studio ASP . NET MVC - EJ2 Web Ins
 
     ![Web Installer Uninstall Previous Wizard](images/webinstaller-6.png)
 
-    N> From the 2021 Volume 1 release, Syncfusion has provided option to uninstall the previous versions from 18.1 while installing the new version.
+    N> From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has provided option to uninstall the previous versions from 18.1 while installing the new version.
 
 5. Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
@@ -69,21 +69,21 @@ The steps below show how to install Essential Studio ASP . NET MVC - EJ2 Web Ins
 
    ***Additional Settings***
 
-   * Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked, if you do not want to install Syncfusion samples.
+   * Select the **Install Demos** check box to install Syncfusion<sup style="font-size:70%">&reg;</sup> samples, or leave the check box unchecked, if you do not want to install Syncfusion<sup style="font-size:70%">&reg;</sup> samples.
 
-   * Select the **Configure Syncfusion Extensions controls in Visual Studio** checkbox to configure the Syncfusion Extensions in Visual Studio  or clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
+   * Select the **Configure Syncfusion<sup style="font-size:70%">&reg;</sup> Extensions controls in Visual Studio** checkbox to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Extensions in Visual Studio  or clear this check box when you do not want to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Extensions in Visual Studio.
 
-   * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel.
+   * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel.
 
-   * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for  Syncfusion Control Panel.
+   * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for  Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel.
 
 8. After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click the Next button.
 
-9. The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
+9. The login wizard will appear. You must enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you do not already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
 
     ![Web Installer Login Wizard](images/webinstaller-10.png)
 
-    I> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
+    I> The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> License (Trial or Licensed).
 
 10. The download and installation/uninstallation progress will be displayed as shown below.
 
@@ -93,25 +93,25 @@ The steps below show how to install Essential Studio ASP . NET MVC - EJ2 Web Ins
 
     ![Web Installer Installation Summary](images/webinstaller-12.png)
 
-    To open the Syncfusion Control Panel, click **Launch Control Panel**
+    To open the Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel, click **Launch Control Panel**
 
-12. After installation, there will be two Syncfusion control panel entries, as shown below. The Essential Studio entry will manage all Syncfusion products installed in the same version, while the Product entry will only uninstall the specific product setup.
+12. After installation, there will be two Syncfusion<sup style="font-size:70%">&reg;</sup> control panel entries, as shown below. The Essential Studio<sup style="font-size:70%">&reg;</sup> entry will manage all Syncfusion<sup style="font-size:70%">&reg;</sup> products installed in the same version, while the Product entry will only uninstall the specific product setup.
 
     ![Control Panel Installation entries](images/webinstaller-13.png)
 
 ## Uninstallation
 
-Syncfusion ASP . NET MVC - EJ2 installer can be uninstalled in two ways.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 installer can be uninstalled in two ways.
 
-* Uninstall the ASP . NET MVC - EJ2 using the Syncfusion ASP . NET MVC - EJ2 web installer.
+* Uninstall the ASP . NET MVC - EJ2 using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 web installer.
 
 * Uninstall the ASP . NET MVC - EJ2 from Windows Control Panel.
 
-Follow either one of the option below to uninstall Syncfusion Essential Studio ASP . NET MVC - EJ2 installer.
+Follow either one of the option below to uninstall Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 installer.
 
-### Option 1: Uninstall the ASP . NET MVC - EJ2 using the Syncfusion ASP . NET MVC - EJ2 web installer
+### Option 1: Uninstall the ASP . NET MVC - EJ2 using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 web installer
 
-Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
+Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
 
 ![Web Installer Installed Products Uninstall](images/webinstaller-uninstall-2.png)
@@ -119,13 +119,13 @@ Syncfusion provides the option to uninstall products of the same version directl
 
 ### Option 2: Uninstall the ASP . NET MVC - EJ2 from Windows Control Panel
 
-You can uninstall all the installed products by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall ASP . NET MVC - EJ2 alone by selecting the **Syncfusion Essential Studio for ASP . NET MVC {version}** entry (element 2 in the below screenshot) from the Windows control panel.
+You can uninstall all the installed products by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall ASP . NET MVC - EJ2 alone by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP . NET MVC {version}** entry (element 2 in the below screenshot) from the Windows control panel.
 
 ![Control Panel Uninstallation entries](images/webinstaller-uninstall-1.png)
 
-N> If the **Syncfusion Essential Studio for** ASP . NET MVC - EJ2 **{version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio ASP . NET MVC - EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
+N> If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for** ASP . NET MVC - EJ2 **{version}** entry is selected from the Windows control panel, the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
 
-1. The Syncfusion ASP . NET MVC - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
+1. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
 
     ![Web Installer welcome wizard](images/webinstaller-2.png)
 
@@ -161,11 +161,11 @@ N> If the **Syncfusion Essential Studio for** ASP . NET MVC - EJ2 **{version}** 
 
 7. After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click the Next button.
 
-8. The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
+8. The login wizard will appear. You must enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you do not already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
 
     ![Web Installer Login Wizard](images/webinstaller-10.png)
 
-    I> The products you have chosen will be installed based on your Syncfusion License(Trial or Licensed).
+    I> The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> License(Trial or Licensed).
 
 9. The download, installation and uninstallation progresses will be shown.
 
@@ -175,4 +175,4 @@ N> If the **Syncfusion Essential Studio for** ASP . NET MVC - EJ2 **{version}** 
 
     ![Web Installer Uninstallation Summary](images/webinstaller-uninstall-8.png)
 
-    * To open the Syncfusion Control Panel, click **Launch Control Panel**.
+    * To open the Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel, click **Launch Control Panel**.

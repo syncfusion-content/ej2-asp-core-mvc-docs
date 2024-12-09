@@ -12,7 +12,7 @@ documentation: ug
 
 ## Getting Started with ASP.NET MVC
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET MVC application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET MVC application to use our components.
 
 ### Prerequisites
 
@@ -40,21 +40,21 @@ Follow below steps to create ASP.NET MVC Application.
 
 ![aspnetmvc5 web application template](images/aspnetmvc5-config-template.png)
 
-### Configure Essential JS 2 in the application
+### Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 in the application
 
 **Step 1:** Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-N> Refer to [this article](../../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+N> Refer to [this article](../../nuget-packages/) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
 ![aspnetmvc5 manage nuget packages](images/aspnetmvc5-manage-nuget.png)
 
-**Step 2:** Search the `Syncfusion EJ2 MVC5` keyword in the **Browse** tab and install **Syncfusion.EJ2.MVC5** NuGet package in the application.
+**Step 2:** Search the `Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 MVC5` keyword in the **Browse** tab and install **Syncfusion.EJ2.MVC5** NuGet package in the application.
 
 ![aspnetmvc5 install nuget package](images/aspnetmvc5-nuget.png)
 
-The Essential JS 2 MVC5 NuGet package will be included in the project, after the installation process is completed.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 MVC5 NuGet package will be included in the project, after the installation process is completed.
 
-N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 **Step 3:** Open `~/Views/Web.config` file and add the `Syncfusion.EJ2` namesapce reference to the `<system.web.webPages.razor>` element and `Syncfusion.EJ2` assembly reference to `<system.web>` element.
 
@@ -98,7 +98,7 @@ N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](h
     </head>
 ```
 
-**Step 5:** Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
+**Step 5:** Add the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
 
 ```html
     <body>

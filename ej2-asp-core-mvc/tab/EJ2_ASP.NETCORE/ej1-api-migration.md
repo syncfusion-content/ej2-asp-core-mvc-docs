@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Tab component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Tab component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Keyboard Navigation | **Property:** *allow-keyboard-navigation* <br /><br /> `<ej-tab allow-keyboard-navigation="true" />` <br /> | **Not Applicable** |
 | Localization | **Not Applicable** | **Property:** *locale* <br /><br /> `<ejs-tab locale="en-US" />` <br /> |
@@ -23,7 +23,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## AjaxSettings
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Property:** *ajax-settings* <br /><br /> `<ej-tab>` <br /> &nbsp; `<e-ajax-settings type="GET" />` <br /> `</ej-tab>` <br /> | **Not Applicable** |
 | Asynchronous | **Property:** *async* <br /><br />`<ej-tab>` <br /> &nbsp; `<e-ajax-settings async="true" />` <br /> `</ej-tab>` <br /> | **Not Applicable** |
@@ -39,7 +39,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Animation
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *animation* <br /><br /> `<ejs-tab>` <br /> &nbsp; `<e-tab-animation previous="" next="" />` <br /> `</ejs-tab>` <br /> |
 | EnableAnimation | **Property:** *enable-animation* <br /><br /> `<ej-tab enable-animation="true" />` <br /> | **Not Applicable** |
@@ -51,7 +51,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Header
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Header position | **Property:** *header-position* <br /><br /> `<ej-tab header-position="Bottom" />` <br /> | **Property:** *headerPlacement* <br /><br /> `<ejs-tab headerPlacement="Bottom" />` <br /> |
 | Header size | **Property:** *header-size* <br /><br />`<ej-tab header-size="50px" />` <br /> | **Not Applicable** |
@@ -60,7 +60,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Items
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Default | **Not Applicable** | **Property:** *items* <br /><br /> `<ejs-tab>` <br /> &nbsp; `<e-tab-tabitems />` <br /> `</ejs-tab>` <br /> |
 | Content | **Not Applicable** | **Property:** *items[0].content* <br /><br /> `<ejs-tab>` <br /> &nbsp; `<e-tab-tabitems>` <br /> &nbsp; &nbsp; `<e-tab-tabitem content="welcome" />` <br /> &nbsp; `</e-tab-tabitems>` <br /> `</ejs-tab>` <br /> |
@@ -89,7 +89,7 @@ This article describes the API migration process of Tab component from Essential
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Collapse active item | **Property:** *collapsible* <br /><br /> `<ej-tab collapsible="true" />` <br /> | **Not Applicable** |
 | Custom class | **Property:** *css-class* <br /><br /> `<ej-tab css-class="custom-class" />` <br /> | **Property:** *cssClass* <br /><br /> `<ejs-tab cssClass="custom-class" />` <br /> |

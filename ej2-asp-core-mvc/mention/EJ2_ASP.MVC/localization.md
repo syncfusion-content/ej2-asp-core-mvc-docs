@@ -10,7 +10,7 @@ documentation: ug
 
 # Localization in ASP.NET MVC Mention
 
-ASP.NET MVC Mention control can be localized. Refer to ASP.NET Core [Localization](../../common/EJ2_ASP.MVC/localization.md) topic to localize Syncfusion ASP.NET MVC controls.
+ASP.NET MVC Mention control can be localized. Refer to ASP.NET Core [Localization](../../common/EJ2_ASP.MVC/localization.md) topic to localize Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 
 ## See also
 

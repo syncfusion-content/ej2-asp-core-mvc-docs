@@ -10,7 +10,7 @@ documentation: ug
 
 # Column rendering in ASP.NET Core Grid component
 
-In Syncfusion ASP.NET Core Grid, column rendering provides you with the ability to finely control how data is presented. This allows you to manually define columns, automatically generate them, and dynamically customize data presentation. With column rendering, you can ensure that your data is displayed exactly as needed, offering a wide range of possibilities for organizing and showcasing information within the grid.
+In Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid, column rendering provides you with the ability to finely control how data is presented. This allows you to manually define columns, automatically generate them, and dynamically customize data presentation. With column rendering, you can ensure that your data is displayed exactly as needed, offering a wide range of possibilities for organizing and showcasing information within the grid.
 
 The column definitions are used as the DataSource schema in the grid. The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The `field` property of grid column is necessary to map the datasource values in the grid columns.
 
@@ -22,7 +22,7 @@ The column definitions are used as the DataSource schema in the grid. The grid o
 
 To define columns manually in grid, you can use the `e-grid-columns` element to define the columns and represent each column with its respective properties such as `field`, `headerText`, `type`, and [width](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Width) set accordingly. This allows you to customize the column's behavior and appearance based on the requirements.
 
-Here's an example code snippet that demonstrates how to define columns manually in the Syncfusion ASP.NET Core Grid:
+Here's an example code snippet that demonstrates how to define columns manually in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -39,7 +39,7 @@ Here's an example code snippet that demonstrates how to define columns manually 
 
 The Grid automatically generates columns when the `columns` declaration is empty or undefined while initializing the grid. All the columns in the **dataSource** are bound as grid columns.
 
-You can use the following code snippet to enable auto-generated columns in the Syncfusion Grid:
+You can use the following code snippet to enable auto-generated columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -57,7 +57,7 @@ You can use the following code snippet to enable auto-generated columns in the S
 
 When editing is enabled in the grid, you may need to set a primary key for auto-generated columns to uniquely identify each row for operations such as updating or deleting data. This can be achieved using the `isPrimaryKey` property of the column object by using the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event.
 
-By setting `isPrimaryKey` to **true** for an auto-generated column in the Syncfusion Grid, you can specify it as the primary key column, which uniquely identifies each row when editing is enabled.
+By setting `isPrimaryKey` to **true** for an auto-generated column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can specify it as the primary key column, which uniquely identifies each row when editing is enabled.
 
 Here is an example code snippet that shows how to set a primary key for an auto-generated column when editing is enabled:
 
@@ -82,7 +82,7 @@ onDataBound: function() {
 
 ### Set column options to auto generated columns
 
-To configure column options such as `type`, `format` and [width](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Width) for auto-generated columns in Syncfusion Grid, you can use the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid component. This event is triggered after the data has been bound to the Grid. By handling this event, you can specify the desired column options for the auto-generated columns.
+To configure column options such as `type`, `format` and [width](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Width) for auto-generated columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can use the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid component. This event is triggered after the data has been bound to the Grid. By handling this event, you can specify the desired column options for the auto-generated columns.
 
 Here's an example of how you can set column options for auto-generated columns using the `dataBound` event:
 
@@ -99,7 +99,7 @@ In the below example, `width` is set for **OrderID** column, **date** `type` is 
 
 ## Dynamic column generation 
 
-The Syncfusion Grid component allows you to dynamically generate columns at runtime, based on the data provided. This feature is useful when you need to display data with varying columns based on user requirements or dynamic data sources.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows you to dynamically generate columns at runtime, based on the data provided. This feature is useful when you need to display data with varying columns based on user requirements or dynamic data sources.
 
 ### Using valueAccessor property
 
@@ -166,7 +166,7 @@ To display serial number in the grid for every rows, you can use the [rowDataBou
 
 Within the event handler, the [pagesize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize) and [currentPage](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_CurrentPage) index can be obtained from the grid's [pageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html) property. Using these values, the serial number can be calculated based on the page size, current page, and row index. Finally, the calculated serial number can be set as the innerHTML of the corresponding row cell.
 
-Here is an example code snippet that demonstrates how to display serial numbers in a Syncfusion Grid using `rowDataBound` event:
+Here is an example code snippet that demonstrates how to display serial numbers in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using `rowDataBound` event:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -181,7 +181,7 @@ Here is an example code snippet that demonstrates how to display serial numbers 
 
 ## Complex data binding
 
-The Syncfusion Grid component allows you to achieve complex data binding by using the dot (.) operator in the `column.field`. This feature is particularly useful when dealing with nested or complex data structures.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows you to achieve complex data binding by using the dot (.) operator in the `column.field`. This feature is particularly useful when dealing with nested or complex data structures.
 
 ### Using local data
 
