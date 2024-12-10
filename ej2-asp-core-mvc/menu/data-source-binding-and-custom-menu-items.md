@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Source Binding And Custom Menu Items in ##Platform_Name## Menu Component
+title: Data Source Binding in ##Platform_Name## Menu Control | Syncfusion
 description: Learn here all about Data Source Binding And Custom Menu Items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Source Binding And Custom Menu Items
