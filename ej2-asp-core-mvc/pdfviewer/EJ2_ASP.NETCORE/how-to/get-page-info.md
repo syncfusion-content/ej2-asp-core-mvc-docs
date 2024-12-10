@@ -21,29 +21,52 @@ The following steps are used to getPageInfo.
 {% tabs %}
 {% highlight cshtml tabtitle="Standalone" %}
 
-<button type="button" onclick="getPageInfo()">getPageInfo</button>
-<div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf").Render()
+@page "{handler?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <button id="getPageInfo">Get Page Info</button>
+    <ejs-pdfviewer id="pdfviewer" style="height:600px" resourceUrl="https://cdn.syncfusion.com/ej2/27.2.2/dist/ej2-pdfviewer-lib" documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf">
+    </ejs-pdfviewer>
 </div>
 
-<script>
-    function getPageInfo() {
-        let pageInfo;
-        let pageIndex: number = 0;
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        viewer.getPageInfo(pageIndex).then(function (value) {
-            pageInfo = value;
-            //The height of the page in points.
-            let height = pageInfo.height;
-            //The width of the page in points.
-            let width = pageInfo.width;
-            //The rotation angle of the page in degrees.
-            let rotation = pageInfo.rotation;
-        });
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+    var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+
+    // Add event listener for retrieving page information
+    document.getElementById('getPageInfo').addEventListener('click', function () {
+        retrievePageInfo();
+    });
+
+    function retrievePageInfo() {
+        if (pdfViewer) {
+             // Set the page index for which info is required
+            const pageIndex = 0;
+
+            // To Retrieve and log the page information
+            console.log(pdfViewer.getPageInfo(pageIndex));
+
+            // To Log the specific page information details to the console
+            var pageInfo = pdfViewer.getPageInfo(pageIndex);
+
+            if (pageInfo) {
+                console.log(`Page Info for Page Index ${pageIndex}:`);
+                console.log(`Height: ${pageInfo.height}`);
+                console.log(`Width: ${pageInfo.width}`);
+                console.log(`Rotation: ${pageInfo.rotation}`);
+            } 
+        } 
     }
+});
 </script>
 
 {% endhighlight %}
 {% endtabs %}
 
 By following these steps, you can successfully integrate and use the get page info API in the EJ2 PDF Viewer.
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to)
