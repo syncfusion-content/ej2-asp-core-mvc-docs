@@ -1,21 +1,19 @@
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Created("created").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
-    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-    col.Field("Freight").HeaderText("Receipt Amount").Width("120").Template("#template").Add();
+    col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width("130").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
+    col.Field("Freight").HeaderText("Receipt Amount").Width("150").Template("#template").Add();
 
 }).Render()
-
-
 <script id="template" type="text/x-template">
-    <input id='${OrderID}' value='${Freight}' class='custemp' type='text' style='width: 100%'>
+    <input id='${OrderID}' value='${Freight}' class='templateinput' type='text' style='width: 100%'>
 </script>
 
 <script>
-    function created(e) {
+    function created() {
         document.getElementById('Grid').ej2_instances[0].element.addEventListener('keyup', function (e) { // Bind the keyup event for the grid.
-            if (e.target.classList.contains('custemp')) { // Based on this condition, you can find whether the target is an input element or not.
+            if (e.target.classList.contains('templateinput')) { // Based on this condition, you can find whether the target is an input element or not.
                 var row = ej.grids.parentsUntil(e.target, 'e-row');
                 var rowIndex = row.rowIndex; // Get the row index.
                 var uid = row.getAttribute('data-uid');

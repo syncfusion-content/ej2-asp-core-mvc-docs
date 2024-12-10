@@ -1,0 +1,30 @@
+<div style="display: flex">
+    <label style="margin: 3px 5px 5px 0px"> Select column to disable editing: </label>
+    <span style="height:fit-content; margin-bottom:10px">
+        <ejs-dropdownlist id="dropDown" index="0" dataSource="@ViewBag.dropdownData" change="change"></ejs-dropdownlist>
+    </span>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" validationRules="@(new { required=true})" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" validationRules="@(new { required= true })" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" editType="datepickeredit" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" validationRules="@(new { required=true})" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var currentColumn;
+    function change(args) {
+        // Reset the allowEditing property of the previously selected column
+        if (currentColumn) {
+            currentColumn.allowEditing = true;
+        }
+        // Update the 'allowEditing' property for the selected column
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        currentColumn = grid.getColumnByField(args.value);
+        currentColumn.allowEditing = false;
+    }
+</script>

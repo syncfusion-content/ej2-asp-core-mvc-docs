@@ -1,28 +1,51 @@
-@Html.EJS().NumericTextBox("numeric").Placeholder("Enter index to select a row").Change("onChange").Width("200").Render()
-
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("400").Width("auto").Columns(col =>
-{
-   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShippedDate").HeaderText("Shipped Date").Width("140").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-   col.Field("ShipAddress").HeaderText("Ship Address").Width("170").Add();
-   col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
-   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-
-}).RowSelected("rowSelected").Render()
-
+@{
+    ViewBag.dropDownData = new List<object> {
+       new { text = "Select count" },
+       new { text = "10", value = "10" },
+       new { text = "20", value = "20" },
+       new { text = "30", value = "30" },
+       new { text = "80", value = "80" },
+       new { text = "100", value = "100" },
+       new { text = "200", value = "200" },
+       new { text = "232", value = "232" },
+       new { text = "300", value = "300" },
+       new { text = "500", value = "500" },
+       new { text = "800", value = "800" },
+       new { text = "820", value = "820" },
+       new { text = "920", value = "920" },
+       new { text = "2020", value = "2020" },
+       new { text = "3000", value = "3000" },
+       new { text = "4000", value = "4000" },
+       new { text = "4999", value = "4999" }
+   };
+}
+<div style="display: flex">
+    <label style="padding: 10px 10px 26px 0"> Select row index: </label>
+    <span style="height:fit-content">
+        @Html.EJS().DropDownList("dropDown").Index(0).Width("220px").DataSource((IEnumerable<object>)ViewBag.dropDownData).Change("valueChange").Render()
+    </span>
+</div>
+<div style='padding: 0px 0px 20px 0px'>
+    @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("315").Width("550px").Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+        col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
+        col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+        col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+    }).RowSelected("rowSelected").Render();
+</div>
 <script>
-    function onChange(args) {
-        var gridObj = document.getElementById("Grid").ej2_instances[0];
-        gridObj.selectRow(parseInt(this.getText(), 10));
+    function valueChange(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        var value = parseInt(args.value, 10);
+        if (!isNaN(value)) {
+            grid.selectRow(value);
+        }
     }
-
     function rowSelected(args) {
-        var rowHeight = this.getRows()[this.getSelectedRowIndexes()[0]].scrollHeight;
-        this.getContent().children[0].scrollTop = rowHeight * this.getSelectedRowIndexes()[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.getContent().children[0].scrollTop = grid.getRows()[selectedIndex].scrollHeight * grid.getSelectedRowIndexes()[0];
     }
-
 </script>

@@ -1,0 +1,126 @@
+<div id="container">
+    <div class="row">
+        <div class="col-xs-6 col-md-3" >
+            <div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="orderedit">OrderID</label>
+                        <input id="order" class="form-control" type="text" disabled />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="customeredit">CustomerID</label>
+                        <input id="customer" type="text" tabindex="2" />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="freightedit">Freight</label>
+                        <input id="freight" type="text">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="countryedit">ShipCountry</label>
+                        <input id="country" type="text" tabindex="1" />
+                    </div>
+                </div>
+            </div>
+            <button class="e-btn" id="save">Save</button>
+        </div>
+        <div class="col-xs-6 col-md-9">
+            <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" rowSelected="rowSelected" height="315" width="500">
+                <e-grid-editSettings allowEditing="true"></e-grid-editSettings>
+                <e-grid-columns>
+                    <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+                    <e-grid-column field="CustomerID" headerText="Customer ID"  width="120"></e-grid-column>
+                    <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2"  width="120"></e-grid-column>
+                    <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
+                </e-grid-columns>
+            </ejs-grid>
+        </div>
+    </div>
+</div>
+
+<script>
+    class Order {
+        constructor() {
+            this.OrderID = null;
+            this.CustomerID = null;
+            this.Freight = null;
+            this.ShipCountry = null;
+        }
+    }
+    var dropDownData = [
+        { shipCountry: 'Germany' },
+        { shipCountry: 'Brazil' },
+        { shipCountry: 'France' },
+        { shipCountry: 'Belgium' },
+        { shipCountry: 'Switzerland' },
+        { shipCountry: 'Venezuela' },
+        { shipCountry: 'USA' },
+        { shipCountry: 'Mexico' },
+        { shipCountry: 'Italy' },
+        { shipCountry: 'Sweden' },
+        { shipCountry: 'Finland' },
+        { shipCountry: 'Spain' },
+        { shipCountry: 'Canada' },
+        { shipCountry: 'Portugal' },
+        { shipCountry: 'Denmark' },
+        { shipCountry: 'Austria' },
+        { shipCountry: 'UK' },
+        { shipCountry: 'Ireland' },
+        { shipCountry: 'Norway' },
+        { shipCountry: 'Argentina' },
+    ];
+
+    var selectedProduct = new Order();
+
+    var orderIdInput = new ej.inputs.NumericTextBox({
+        format: '###.##',
+        value: selectedProduct.OrderID,
+    });
+    orderIdInput.appendTo('#order');
+
+    var customerIdInput = new ej.inputs.TextBox({
+        value: selectedProduct.CustomerID,
+        change: function () {
+            selectedProduct.CustomerID = customerIdInput.value;
+        }
+    });
+    customerIdInput.appendTo('#customer');
+
+    var freightInput = new ej.inputs.NumericTextBox({
+        value: selectedProduct.Freight,
+        change: function () {
+            selectedProduct.Freight = freightInput.value;
+        }
+    });
+    freightInput.appendTo('#freight');
+
+    var shipCountryInput = new ej.dropdowns.DropDownList({
+        dataSource: dropDownData,
+        fields: { text: 'shipCountry', value: 'shipCountry' },
+        value: selectedProduct.ShipCountry,
+        change: function () {
+            selectedProduct.ShipCountry = shipCountryInput.value;
+        }
+    });
+    shipCountryInput.appendTo('#country');
+
+
+    document.getElementById('save').onclick = function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        var index = grid.getSelectedRowIndexes()[0];
+        grid.updateRow(index, selectedProduct);
+    };
+
+    function rowSelected(args) {
+        selectedProduct = Object.assign({}, args.data);
+        orderIdInput.value = selectedProduct.OrderID;
+        customerIdInput.value = selectedProduct.CustomerID;
+        freightInput.value = selectedProduct.Freight;
+        shipCountryInput.value = selectedProduct.ShipCountry;
+    }
+</script>

@@ -1,0 +1,18 @@
+<div style="padding-bottom:20px">
+    <ejs-button id="clearButton" cssClass="e-primary" content="Clear Grouping"></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" height="348px">   
+    <e-grid-groupsettings columns="@(new string[] {"CustomerID", "ShipCity"})"></e-grid-groupsettings> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('clearButton').addEventListener('click', function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.clearGrouping()
+    });
+</script>

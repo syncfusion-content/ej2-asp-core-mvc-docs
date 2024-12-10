@@ -1,0 +1,26 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" QueryCellInfo="queryCellInfo" height="315">            
+    <e-grid-columns>               
+            <e-grid-column field="OrderID" headerText="Order ID" width="150"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" template="#columnTemplate" width="150"></e-grid-column>         
+    </e-grid-columns>
+</ejs-grid>
+
+ <script type="text/x-template" id="columnTemplate" >
+    <div id="progressBarElement" ></div>
+</script>
+
+<script>
+function queryCellInfo(args) {
+  if (args.column.field === 'Freight') {
+    let percentageProgress = new ej.progressbar.ProgressBar({
+      type: 'Linear',
+      height: '60',
+      value: args.data['Freight'],
+      trackThickness:24,
+      progressThickness:20
+    });
+    percentageProgress.appendTo(args.cell.querySelector('#progressBarElement'));
+  }
+}
+</script>

@@ -1,0 +1,17 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowPaging(true).Toolbar(new[] { "ColumnChooser" }).ShowColumnChooser(true).ActionComplete("onActionComplete").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("80").Add();
+    col.Field("ShipAddress").HeaderText("Ship Address").Width("120").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
+}).Height("315").Render()
+
+<script>
+    function onActionComplete(args) {
+        if (args.requestType === 'columnstate') {
+            var grid = document.getElementById("Grid").ej2_instances[0]; 
+            grid.autoFitColumns(); 
+        }
+    }
+</script>

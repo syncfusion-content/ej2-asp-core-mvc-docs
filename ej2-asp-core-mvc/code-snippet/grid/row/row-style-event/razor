@@ -1,0 +1,34 @@
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height(210).AllowPaging(true).EnableHover(false).AllowSelection(false).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("Freight").HeaderText("Freight").Width("80").Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
+
+}).RowDataBound("rowDataBound").PageSettings(page => { page.PageSize(6); }).Render()
+<script>
+    function rowDataBound(args) {
+        if (args.data['Freight'] < 10) {
+            args.row.classList.add('below-10');
+        } else if (args.data['Freight'] < 80) {
+            args.row.classList.add('below-80');
+        } else {
+            args.row.classList.add('above-80');
+        }
+    }
+</script>
+
+<style>
+    .below-10 {
+        background-color:aqua;
+    }
+
+    .below-80 {
+        background-color: aquamarine;
+    }
+
+    .above-80 {
+        background-color: orange;
+    }
+</style>

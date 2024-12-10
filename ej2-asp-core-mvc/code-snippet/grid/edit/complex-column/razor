@@ -1,0 +1,17 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.ComplexDataSource).Columns(col =>
+{
+    col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("Name.FirstName").HeaderText("First Name").EditTemplate("#firstNameEditTemplate").Width("200").Add();
+    col.Field("Name.LastName").HeaderText("Last Name").EditTemplate("#lastNameEditTemplate").Width("200").Add();
+    col.Field("Title").HeaderText("Title").Width("150").Add();
+}).Render()
+<script id="firstNameEditTemplate">
+    @{
+       <input class="e-input" type="text" name="Name___FirstName" id="Name___FirstName" value="${Name.FirstName}" />
+    }
+</script>
+<script id="lastNameEditTemplate">
+    @{
+        <input class="e-input" type="text" name="Name___LastName" id="Name___LastName" value="${Name.LastName}" />
+    }
+</script>

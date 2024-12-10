@@ -1,0 +1,31 @@
+@{
+    var filterModesData = new[] {
+        new { value = "OnEnter", text = "OnEnter" },
+        new { value = "Immediate", text = "Immediate" }
+    };
+}
+<div style="padding-bottom: 20px; display: flex">
+    <label style="padding: 5px 20px 0 0"> Select Filter Mode</label>
+    <span style="height:fit-content">      
+      <ejs-dropdownlist id="modeDropDown" datasource="filterModesData" index=0 width="120px" change="onModeChange">
+        <e-dropdownlist-fields value="value" text="text"></e-dropdownlist-fields>
+      </ejs-dropdownlist> 
+    </span>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowPaging="true" height="180px">
+    <e-grid-filterSettings type="FilterBar"></e-grid-filterSettings>
+    <e-grid-pageSettings pageSize=5></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="120"></e-grid-column>          
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>  
+    function onModeChange(args)  {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.filterSettings = { mode: args.value }
+    }
+  </script>

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Chunk Upload in ##Platform_Name## Uploader Component
+title: Chunk Upload in ##Platform_Name## Uploader Component | Syncfusion
 description: Learn here all about Chunk Upload in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chunk Upload
 publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 
-# Chunk Upload
+# Chunk upload in ##Platform_Name## Uploader control
 
 The Uploader sends the large file split into small chunks and transmits to the server using AJAX. You can also pause, resume, and retry the failed chunk file.
 
@@ -126,7 +127,7 @@ Output be like the below.
 
 ## Cancel upload
 
-The uploader control allows you to cancel the uploading file. This can be achieved by clicking the cancel icon or using the `cancel` method. The [cancelling](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Canceling) event will be fired whenever the file upload request is canceled. While canceling the upload request, the partially uploaded file is removed from the server.
+The uploader control allows you to cancel the uploading file. This can be achieved by clicking the cancel icon or using the `cancel` method. The [canceling](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Canceling) event will be fired whenever the file upload request is canceled. While canceling the upload request, the partially uploaded file is removed from the server.
 
 When the request fails, the pause icon is changed to retry icon. By clicking the retry icon, sends the failed chunk request again to the server and upload started from where it is failed. You can retry the canceled upload request again using retry UI or `retry` methods. But, if you retry this, the file upload action again starts from initial.
 
@@ -170,85 +171,95 @@ N> The retry action has different working behavior for chunk upload and default 
 
 The server-side implementation entirely depends on the application requirements and logic. The following code snippet provides the server-side logic to handle the chunk upload using the uploader controls.
 
+>The `chunk-index` and `total-chunk` values are accessible through the form data using `Request.Form`, which retrieves these details from the incoming request.
+* `chunk-index` - Indicates the index of the current chunk being received.
+* `total-chunk` - Represents the total number of chunks for the file being uploaded.
+
 ```csharp
-// Server configuration for upload a file.
-private IHostingEnvironment hostingEnv;
+public string uploads = Path.Combine(Directory.GetCurrentDirectory(), "Uploaded Files"); // Set your desired upload directory path
 
-public HomeController(IHostingEnvironment env)
-{
-    this.hostingEnv = env;
-}
-// Upload save method for chunk-upload
-public void Save(IList<IFormFile> chunkFile, IList<IFormFile> UploadFiles )
-{
-    long size = 0;
-    try
-    {
-        // for chunk-upload
-        foreach (var file in chunkFile)
-        {
-            var filename = ContentDispositionHeaderValue
-                                .Parse(file.ContentDisposition)
-                                .FileName
-                                .Trim('"');
-            filename = hostingEnv.WebRootPath + $@"\{filename}";
-            size += file.Length;
-            if (!System.IO.File.Exists(filename))
-            {
-                using (FileStream fs = System.IO.File.Create(filename))
-                {
-                    file.CopyTo(fs);
-                    fs.Flush();
-                }
-            }
-            else
-            {
-                using (FileStream fs = System.IO.File.Open(filename, FileMode.Append))
-                {
-                    file.CopyTo(fs);
-                    fs.Flush();
-                }
-            }
-        }
-    }
-    catch (Exception e)
-    {
-        Response.Clear();
-        Response.StatusCode = 204;
-        Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "File failed to upload";
-        Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = e.Message;
-    }
-}
-
-// Server configuration for remove a uploaded file
-
-private IHostingEnvironment hostingEnv;
-
-public HomeController(IHostingEnvironment env)
-{
-    this.hostingEnv = env;
-}
-public void Remove(IList<IFormFile> UploadFiles)
+public async Task<IActionResult> Save(IFormFile UploadFiles)
 {
     try
     {
-        foreach (var file in UploadFiles)
+        if (UploadFiles.Length > 0)
         {
-            var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
-            var filePath = Path.Combine(hostingEnv.WebRootPath);
-            var fileSavePath = filePath + "\\" + fileName;
-            if (System.IO.File.Exists(fileSavePath))
+            var fileName = UploadFiles.FileName;
+
+            // Create upload directory if it doesn't exist
+            if (!Directory.Exists(uploads))
             {
-                System.IO.File.Delete(fileSavePath);
+                Directory.CreateDirectory(uploads);
+            }
+
+            if (UploadFiles.ContentType == "application/octet-stream") //Handle chunk upload
+            {
+                // Fetch chunk-index and total-chunk from form data
+                var chunkIndex = Request.Form["chunk-index"];
+                var totalChunk = Request.Form["total-chunk"];
+
+                // Path to save the chunk files with .part extension
+                var tempFilePath = Path.Combine(uploads, fileName + ".part");
+
+                using (var fileStream = new FileStream(tempFilePath, chunkIndex == "0" ? FileMode.Create : FileMode.Append))
+                {
+                    await UploadFiles.CopyToAsync(fileStream);
+                }
+
+                // If all chunks are uploaded, move the file to the final destination
+                if (Convert.ToInt32(chunkIndex) == Convert.ToInt32(totalChunk) - 1)
+                {
+                    var finalFilePath = Path.Combine(uploads, fileName);
+
+                    // Move the .part file to the final destination without the .part extension
+                    System.IO.File.Move(tempFilePath, finalFilePath);
+
+                    return Ok(new { status = "File uploaded successfully" });
+                }
+
+                return Ok(new { status = "Chunk uploaded successfully" });
+            }
+            else //Handle normal upload
+            {
+                var filePath = Path.Combine(uploads, fileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await UploadFiles.CopyToAsync(fileStream);
+                }
+
+                return Ok(new { status = "File uploaded successfully" });
             }
         }
+
+        return BadRequest(new { status = "No file to upload" });
     }
-    catch (Exception e)
+    catch (Exception ex)
     {
-        Response.Clear();
-        Response.StatusCode = 200;
-        Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "File removed successfully";
-        Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = e.Message;
+        return StatusCode(500, new { status = "Error", message = ex.Message });
+    }
+}
+
+// Method to handle file removal (optional if needed)
+public async Task<IActionResult> Remove(string UploadFiles)
+{
+    try
+    {
+        var filePath = Path.Combine(uploads, UploadFiles);
+
+        if (System.IO.File.Exists(filePath))
+        {
+            System.IO.File.Delete(filePath);
+            return Ok(new { status = "File deleted successfully" });
+        }
+        else
+        {
+            return NotFound(new { status = "File not found" });
+        }
+    }
+    catch (Exception ex)
+    {
+        return StatusCode(500, new { status = "Error", message = ex.Message });
     }
 }
 ```
