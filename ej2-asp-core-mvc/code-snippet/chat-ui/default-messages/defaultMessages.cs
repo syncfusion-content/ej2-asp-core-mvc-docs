@@ -1,39 +1,29 @@
 using Syncfusion.EJ2.InteractiveChat;
 
 public List<ChatUIMessage> ChatMessagesData { get; set; } = new List<ChatUIMessage>();
+public UserModel AlberUserModel { get; set; } = new UserModel() { id = "user1", user = "Albert" };
+public UserModel MichaleUserModel { get; set; } = new UserModel() { id = "user2", user = "Michale Suyama" };
+
 public ActionResult Default()
 {
-    User = new UserModel
-    {
-        id = "user",
-        user = "Albert"
-    };
+    User = AlberUserModel;
     ChatMessagesData.Add(new ChatUIMessage()
     {
+        Id = "msg1",
         Text = "Want to get coffee tomorrow?",
-        Author = new UserModel()
-        {
-            id = "user",
-            user = "Albert"
-        }
+        Author = AlberUserModel
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
+        Id = "msg2",
         Text = "Sure! What time?",
-        Author = new UserModel()
-        {
-            id = "user2",
-            user = "Michale Suyama"
-        }
+        Author = MichaleUserModel
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
+        Id = "msg3",
         Text = "How about 10 AM?",
-        Author = new UserModel()
-        {
-            id = "user",
-            user = "Albert"
-        }
+        Author = AlberUserModel
     });
     return View();
 }
