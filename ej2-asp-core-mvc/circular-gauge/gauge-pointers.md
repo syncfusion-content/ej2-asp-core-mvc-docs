@@ -253,9 +253,9 @@ The marker can be customized in terms of color, border, width and height by usin
 
 ## Dragging Pointer
 
-The pointers can be dragged over the axis line by clicking and dragging the same. To enable or disable the pointer drag, use the [EnablePointerDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_EnablePointerDrag) property.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+The pointers can be dragged along the axis line by clicking and dragging them. To enable or disable the drag functionality for all pointers across all axes, use the [EnablePointerDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_EnablePointerDrag) property. When this property is set to **true**, all pointers can be dynamically adjusted by dragging. Setting it to **false** keeps all pointers fixed in their specified positions.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -264,6 +264,8 @@ The pointers can be dragged over the axis line by clicking and dragging the same
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The pointers can be dragged along the axis line by clicking and dragging them. To enable or disable the drag functionality for all pointers across all axes, use the [EnablePointerDrag](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_EnablePointerDrag) property. When this property is set to **true**, all pointers can be dynamically adjusted by dragging. Setting it to **false** keeps all pointers fixed in their specified positions.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -275,7 +277,32 @@ The pointers can be dragged over the axis line by clicking and dragging the same
 {% endtabs %}
 {% endif %}
 
+### Enabling drag functionality for a specific pointer
 
+To enable or disable the drag functionality for specific pointers along the axis line, use the `EnableDrag` property in the required pointer model.
+
+NOTE: When the `EnableDrag` property is enabled for any individual pointer model, the `EnablePointerDrag` property becomes ineffective.
+The following example demonstrates how to enable the drag functionality for multiple pointers individually.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/circulargauge/gauge-pointers/gauge-pointers-drag/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/circulargauge/gauge-pointers/gauge-pointers-drag/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Pointer-drag.cs" %}
+{% include code-snippet/circulargauge/gauge-pointers/gauge-pointers-drag/gauge-pointers-drag.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Multiple Pointers
 

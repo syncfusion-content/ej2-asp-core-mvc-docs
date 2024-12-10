@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Markers
+# Markers in ##Platform_Name## Maps Component
 
 Markers are notes that are used to leave a message on the Maps. It indicates or marks a specific location with desired symbols on the Maps. It can be enabled by setting the `Visible` property of the `MapsMarker` to **true**.
 
@@ -257,6 +257,35 @@ The latitude and longitude values are used to determine the location of each mar
 
 ![Setting value path from the data source](./images/Marker/marker-adding.PNG)
 
+### Setting different sizes for markers individually
+
+The size of the markers in a marker group can be customized using the `WidthValuePath` and `HeightValuePath` properties, which allow the user to change the width and height of the markers based on values from the given data source. Bind the data source to the `DataSource`property of the markerSettings, and specify the field names containing the width and height values in the data source for the `WidthValuePath` and `HeightValuePath` properties.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/markers/marker-size-customization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Marker-valuepath.cs" %}
+{% include code-snippet/maps/markers/marker-size-customization/marker-size-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/markers/marker-size-customization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="MarkerSize-customization.cs" %}
+{% include code-snippet/maps/markers/marker-size-customization/marker-size-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Maps with Different Marker Size for Individual Markers](./images/Marker/different-size-for-individual-marker.PNG)
+
 ## Repositioning the marker using drag and drop
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -375,7 +404,7 @@ The Maps can be initially scaled to the center value based on the marker distanc
 
 Maps provide support to cluster the markers when they overlap each other. The number on a cluster indicates how many overlapped markers it contains. If zooming is performed on any of the cluster locations in Maps, the number on the cluster will decrease, and the individual markers will be seen on the map. When zooming out, the overlapping marker will increase. So that it can cluster again and increase the count over the cluster.
 
-To enable clustering in markers, set the `AllowClustering` property of `MapsMarkerClusterSettings` as **true** and customization of clustering can be done with the `MapsMarkerClusterSettings`.
+To enable clustering for markers within a layer, set the `AllowClustering` property of `MapsMarkerClusterSettings` in the `MapsLayers` to **true**. Customization of clustering can be done using the `MapsMarkerClusterSettings` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -404,7 +433,7 @@ To enable clustering in markers, set the `AllowClustering` property of `MapsMark
 
 ![Marker clustering](./images/Marker/marker-cluster.PNG)
 
-## Customization of marker cluster
+### Customization of marker cluster
 
 The following properties are available to customize the marker clustering in the Maps component.
 
@@ -447,7 +476,7 @@ The following properties are available to customize the marker clustering in the
 
 ![Customization of marker cluster](./images/Marker/cluster-customization.PNG)
 
-## Expanding the marker cluster
+### Expanding the marker cluster
 
 The cluster is formed by grouping an identical and non-identical marker from the surrounding area. By clicking on the cluster and setting the `AllowClusterExpand` property in `MapsMarkerClusterSettings` as **true** to expand the identical markers. If zooming is performed in any of the locations of the cluster, the number on the cluster will decrease and the overlapping marker will be split into an individual marker on the map. When performing zoom out, it will increase the marker count and then cluster it again.
 
@@ -475,8 +504,38 @@ The cluster is formed by grouping an identical and non-identical marker from the
 {% endif %}
 
 
-
 ![Marker cluster expand](./images/Marker/cluster-expand.PNG)
+
+### Clustering markers within each marker group
+
+Marker clustering can be enabled for each marker group in the map by using the `ClusterSettings` property within the `MarkerSettings` property in the `MapsLayers`. This allows for individual customization of clusters for each marker group which group markers that are located near each other to reduce clutter and improve readability. When the `AllowClustering` property is set to **true**, the markers within each group are clustered and visually represented as separate clusters. As users zoom in, the clusters expand to reveal individual markers, enabling more detailed exploration. Clusters can also be expanded manually by setting the `AllowClusterExpand` property to **true**. The appearance of the clusters and their expansion behavior can be customized using the `ClusterSettings` property, similar to the `MapsMarkerClusterSettings` property, as explained in the sections above.
+
+NOTE: When the `ClusterSettings` property is enabled for an individual marker group, the `MapsMarkerClusterSettings` property within the layers becomes ineffective.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/markers/marker-clustering/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Marker-clusters.cs" %}
+{% include code-snippet/maps/markers/marker-clustering/marker-clustering.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/markers/marker-clustering/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Marker-clustering.cs" %}
+{% include code-snippet/maps/markers/marker-clustering/marker-clustering.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Maps with Marker Clustering for Specfic Marker Group](./images/Marker/marker-clustering-for-specfic-marker-group.PNG)
 
 ## Tooltip for marker
 
