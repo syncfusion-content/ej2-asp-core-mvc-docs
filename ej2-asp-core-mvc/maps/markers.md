@@ -257,6 +257,33 @@ The latitude and longitude values are used to determine the location of each mar
 
 ![Setting value path from the data source](./images/Marker/marker-adding.PNG)
 
+### Setting different sizes for markers individually
+
+The size of the markers in a marker group can be customized using the `WidthValuePath` and `HeightValuePath` properties, which allow the user to change the width and height of the markers based on values from the given data source. Bind the data source to the `DataSource`property of the markerSettings, and specify the field names containing the width and height values in the data source for the `WidthValuePath` and `HeightValuePath` properties.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/markers/marker-size-customization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Marker-valuepath.cs" %}
+{% include code-snippet/maps/markers/marker-size-customization/marker-size-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/markers/marker-size-customization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="MarkerSize-customization.cs" %}
+{% include code-snippet/maps/markers/marker-size-customization/marker-size-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Repositioning the marker using drag and drop
 
 {% if page.publishingplatform == "aspnet-core" %}
