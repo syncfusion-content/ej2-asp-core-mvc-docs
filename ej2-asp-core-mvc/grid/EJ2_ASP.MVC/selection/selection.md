@@ -34,7 +34,7 @@ To select range of rows or cells or columns, press and hold the SHIFT key and cl
 
 ![Column Selection](../images/selection/selection-type.png)
 
-> By default, the Grid will be rendered with only the basic features such as Grid rendering and selection. The default module, including the `SelectionService`, is automatically loaded. Therefore, there is no need to inject the `SelectionService` module separately as it will be injected by default.
+> By default, the Grid will be rendered with only the basic features such as Grid rendering and selection.
 
 ## Selection mode
 
