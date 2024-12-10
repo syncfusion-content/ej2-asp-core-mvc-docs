@@ -101,7 +101,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Configure messages and user
 
-You can use the `e-chatui-messages` tag directive to add messages and the `user` tag directive to configure the current user for the chat.
+You can use the `<e-chatui-messages>` tag directive to group all the messages and `<e-chatui-message>` directive to define each message and the `<e-chatui-user>` tag directive to configure the current user for the chat.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
