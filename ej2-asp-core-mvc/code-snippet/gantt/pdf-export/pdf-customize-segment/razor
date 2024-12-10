@@ -8,7 +8,7 @@ es.AllowEditing(true).AllowDeleting(true).AllowTaskbarEditing(true).ShowDeleteCo
     col.Field("StartDate").HeaderText("Start Date").Add();
     col.Field("EndDate").HeaderText("End Date").Add();
 }).Toolbar(new List<string>
-() { "PdfExport" }).ToolbarClick("toolbarClick").PdfQueryCellInfo("pdfQueryCellInfo").QueryTaskbarInfo("queryTaskbarInfo").Render())
+() { "PdfExport" }).ToolbarClick("toolbarClick").PdfQueryTaskbarInfo("pdfQueryTaskbarInfo").QueryTaskbarInfo("queryTaskbarInfo").Render())
 
 <script>
     function toolbarClick(args) {
@@ -25,7 +25,7 @@ es.AllowEditing(true).AllowDeleting(true).AllowTaskbarEditing(true).ShowDeleteCo
             }
         }
     }
-    function pdfQueryCellInfo(args) {
+    function pdfQueryTaskbarInfo(args) {
         if (args.taskbar.taskSegmentStyles) {
             args.taskbar.taskSegmentStyles[1].taskColor = new ej.pdfexport.PdfColor(255, 0, 0);
             args.taskbar.taskSegmentStyles[1].progressColor = new ej.pdfexport.PdfColor(0, 128, 0);
