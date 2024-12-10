@@ -99,11 +99,11 @@
 
 <div class="control-section">
     <ejs-maps id="maps" width="100%" load="window.onMapLoad">
-        <e-maps-titlesettings alignment="@Syncfusion.EJ2.Maps.Alignment.Center" text="Popular attractions around the world" textStyle="@TextStyle">
+        <e-maps-titlesettings alignment="@Syncfusion.EJ2.Maps.Alignment.Center" text="Attractive places around the world" textStyle="@TextStyle">
         </e-maps-titlesettings>
-        <e-maps-zoomsettings zoomFactor="2" enable="true"></e-maps-zoomsettings>
+        <e-maps-zoomsettings enable="true"></e-maps-zoomsettings>
         <e-maps-layers>
-            <e-maps-layer urlTemplate="https://tile.openstreetmap.org/level/tileX/tileY.png" markerSettings="@Markers">
+            <e-maps-layer shapeData="ViewBag.worldmap" markerSettings="@Markers">
             </e-maps-layer>
         </e-maps-layers>
     </ejs-maps>

@@ -1,15 +1,14 @@
 ﻿@using Syncfusion.EJ2
 @using Syncfusion.EJ2.Maps
-@Html.EJS().Maps("container").Load("mapsLoad").TitleSettings(title => title.Text("Popular attractions around the world").TextStyle(new MapsFont { Size = "16px", FontFamily = "inherit", Opacity = 1 })).ZoomSettings(new Syncfusion.EJ2.Maps.MapsZoomSettings
+@Html.EJS().Maps("container").Load("mapsLoad").TitleSettings(title => title.Text("Attractive places around the world").TextStyle(new MapsFont { Size = "16px", FontFamily = "inherit", Opacity = 1 })).ZoomSettings(new Syncfusion.EJ2.Maps.MapsZoomSettings
         {
-            ZoomFactor = 2,
             Enable = true
         }).Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
         {
          new Syncfusion.EJ2.Maps.MapsLayer
         {
             AnimationDuration = 0,
-            UrlTemplate = "https://tile.openstreetmap.org/level/tileX/tileY.png",
+            ShapeData = ViewBag.world_map,
             MarkerSettings = new List<Syncfusion.EJ2.Maps.MapsMarker>
             {
                 new Syncfusion.EJ2.Maps.MapsMarker

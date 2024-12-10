@@ -284,6 +284,8 @@ The size of the markers in a marker group can be customized using the `WidthValu
 {% endtabs %}
 {% endif %}
 
+![Maps with Different Marker Size for Individual Markers](./images/Marker/different-size-for-individual-marker.PNG)
+
 ## Repositioning the marker using drag and drop
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -532,6 +534,8 @@ NOTE: When the `ClusterSettings` property is enabled for an individual marker gr
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Maps with Marker Clustering for Specfic Marker Group](./images/Marker/marker-clustering-for-specfic-marker-group.PNG)
 
 ## Tooltip for marker
 
