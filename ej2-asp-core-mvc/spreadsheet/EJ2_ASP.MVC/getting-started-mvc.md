@@ -78,6 +78,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 <body>
 ...
+    @using Syncfusion.EJ2
     <!-- Syncfusion ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
 </body>
