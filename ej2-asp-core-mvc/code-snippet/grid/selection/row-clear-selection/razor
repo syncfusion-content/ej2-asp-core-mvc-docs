@@ -13,6 +13,6 @@
 <script>
    document.getElementById('buttons').onclick = function () {
       var grid = document.getElementById("grid").ej2_instances[0];
-      grid.selectionModule.clearRowSelection()
+      grid.selectionModule.clearRowSelection();
    };
 </script>

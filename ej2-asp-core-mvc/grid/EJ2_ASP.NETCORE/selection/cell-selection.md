@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cell Selection in ASP.NET MVC Grid component 
+# Cell Selection in ASP.NET Core Grid component 
 
 Cell selection in the Grid component allows you to interactively select specific cells or ranges of cells within the grid. This selection can be done effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when you want to highlight, manipulate, or perform actions on specific cell within the Grid.
 
@@ -63,9 +63,9 @@ The grid supports three types of cell selection mode which can be set by using [
 * **Box** - In this mode, you can select a range of cells within the start and end column indexes, including all cells in between the rows within the specified range. This mode is useful when you need to select cells within specific columns.
 * **BoxWithBorder**:  This mode is similar to the Box mode, but it adds borders to the selected range of cells. This visual distinction makes it easy to identify the selected cells within the grid.
 
-> Cell Selection requires the `selectionSettings.mode` to be **Cell** or  **Both** and [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
+> Cell Selection requires the [selectionSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) to be **Cell** or  **Both** and [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
 
-In the following example demonstrates how to dynamically enable and change the `cellSelectionMode` using the `DropDownList` component:
+In the following example demonstrates how to dynamically enable and change the `cellSelectionMode` using the [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -84,11 +84,11 @@ You can perform single cell selection, multiple cell selection, and range of cel
 
 ### Single cell selection 
 
-The ASP.NET MVC Grid allows you to select a single cell within a grid. This feature is useful when you want to focus on a specific cell or perform actions on individual cells within the grid.
+The ASP.NET Core Grid allows you to select a single cell within a grid. This feature is useful when you want to focus on a specific cell or perform actions on individual cells within the grid.
 
 To achieve single cell selection, you can use the `selectCell` method. This method selects a cell based on the given index.
 
-The following example demonstrates how to select a single cell within the Grid by obtaining the selected row index and cell index through a textbox component and passing these row and cell indexes as arguments to the `selectCell` method. When the button event is triggered by clicking the **Select cell** button, a single cell is selected within the Grid:
+The following example demonstrates how to select a single cell within the Grid by obtaining the selected row index and cell index through a [TextBox](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started) component and passing these row and cell indexes as arguments to the `selectCell` method. When the button event is triggered by clicking the **Select cell** button, a single cell is selected within the Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -107,7 +107,7 @@ Multiple cell selection allows you to select multiple cells within a Grid. This 
 
 To achieve multiple cell selection, you can use the `selectCells` method. This method allows you to select a collection of cells based on their row and column indexes.
 
-In the following example, it demonstrates how to select multiple cells in the Grid by calling the `selectCells` method within the button click event and passing an collection of row and column indexes as arguments.
+In the following example, it demonstrates how to select multiple cells in the Grid by calling the `selectCells` method within the button `onclick` event and passing an collection of row and column indexes as arguments.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -120,7 +120,7 @@ In the following example, it demonstrates how to select multiple cells in the Gr
 
 ![Multiple cell selection](../images/selection/cell-multiple-method.gif)
 
-> Cell Selection requires the `selectionSettings.mode` to be **Cell** or  **Both** and [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
+> Cell Selection requires the [selectionSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) to be **Cell** or  **Both** and [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
 
 ### Range of cell selection 
 
@@ -128,10 +128,10 @@ Range of cell selection in the Grid allows you to select multiple cells in a con
 
 To achieve range of cell selection, you can use the `selectCellsByRange` method. This method selects a range of cells based on the specified start and end indexes.
 
->* Range cell selection allows you to select multiple cells in box mode when `cellSelectionMode` is set to **Box**. However, if you set `cellSelectionMode` to **Flow**, it will select the range of cells between the start and end indexes, including other cells of the selected rows.
-> * Cell Selection requires the `selectionSettings.mode` to be **Cell** or  **Both** and [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
+>* Range cell selection allows you to select multiple cells in box mode when [cellSelectionMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CellSelectionMode) is set to **Box**. However, if you set `cellSelectionMode` to **Flow**, it will select the range of cells between the start and end indexes, including other cells of the selected rows.
+> * Cell Selection requires the [selectionSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) to be **Cell** or  **Both** and [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
 
-The following example demonstrates how to select a range of cells within the Grid by obtaining the selected cells start index and end index through textbox components. Then, pass these row and cell indexes as arguments to the `selectCellsByRange` method. When you trigger the button event by clicking the **Select Cells** button, a range of cells is selected within the Grid.
+The following example demonstrates how to select a range of cells within the Grid by obtaining the selected cells start index and end index through [TextBox](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started) components. Then, pass these row and cell indexes as arguments to the `selectCellsByRange` method. When you trigger the button event by clicking the **Select Cells** button, a range of cells is selected within the Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -167,7 +167,7 @@ Clearing cell selection programmatically in the Grid component is a useful featu
 
 > The `clearCellSelection` method is applicable when the selection [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) is set to **Multiple** or **Single**.
 
-The following example demonstrates how to clear cell selection by calling the `clearCellSelection` method in the button click event.
+The following example demonstrates how to clear cell selection by calling the `clearCellSelection` method in the button `onclick` event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -188,7 +188,7 @@ The Grid provides several events related to cell selection, allowing you to resp
 
 [cellSelected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellSelected): This event is triggered after a cell is successfully selected. You can use this event to perform actions or updates when a cell is selected.
 
-[cellDeselecting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellSelecting): This event is triggered just before a selected cell is deselected. It allows you to perform custom logic or validation to decide whether the cell should be deselected or not.
+[cellDeselecting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellDeselecting): This event is triggered just before a selected cell is deselected. It allows you to perform custom logic or validation to decide whether the cell should be deselected or not.
 
 [cellDeselected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellDeselected): This event is triggered when a particular selected cell is deselected. You can use this event to perform actions or validations when a cell is no longer selected.
 

@@ -37,7 +37,7 @@ The checkbox selection mode in the Grid allows you to select rows either by clic
 * **Default**: This is the default value of the `CheckboxMode`. In this mode, you can select multiple rows by clicking rows one by one. When you click on a row, the checkbox associated with that row also switches to the 'checked' state.
 * **ResetOnRowClick**: In `ResetOnRowClick` mode, when clicking on row it will reset previously selected row. Also you can perform multiple-selection in this mode by press and hold CTRL key and click the desired rows. To select range of rows, press and hold the SHIFT key and click the rows.
 
-In the following example, it demonstrates how to dynamically enable and change the `CheckboxMode` using the `DropDownList` component:
+In the following example, it demonstrates how to dynamically enable and change the `CheckboxMode` using the [DropDownList](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -113,7 +113,7 @@ Here's an example of how to select a single row in checkbox selection mode using
 
 By default, the Grid component allows selection by clicking either a grid row or the checkbox within that row. If you want to restrict selection so that it can only be done by clicking the checkboxes, you can set the [SelectionSettings.CheckboxOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CheckboxOnly) property to **true**.
 
-Here's an example of how to enable selection only through checkbox click using `checkboxOnly` property:
+Here's an example of how to enable selection only through checkbox click using `CheckboxOnly` property:
  
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

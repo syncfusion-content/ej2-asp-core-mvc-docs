@@ -73,11 +73,11 @@ In the following example, it demonstrates how to select a row at initial renderi
 
 The Grid allows you to select rows in any page based on their index value. This feature is useful when you want to perform specific actions on rows, such as highlighting, applying styles, or executing operations, regardless of their location across multiple pages within the grid.
 
-To achieve this, you can utilize the `selectRow` method and the `goToPage` method of the Grid control. By handling the [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of `DropDownList` component, you can implement the logic to navigate to the desired page and select the row based on the index value. 
+To achieve this, you can utilize the `selectRow` method and the `goToPage` method of the Grid control. By handling the [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of [DropDownList](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) component, you can implement the logic to navigate to the desired page and select the row based on the index value. 
 
 Additionally, by handling the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event of the Grid, you can maintain the selection of the desired row after completing the paging action.
 
-The following example demonstrates how to select rows in any page based on index value using `actionComplete` and `Change` event:
+The following example demonstrates how to select rows in any page based on index value using `ActionComplete` and `Change` event:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -119,7 +119,7 @@ Single row selection allows you to select a single row at a time within the Grid
 
 To achieve single row selection, you can use the `selectRow` method. This method allows you to programmatically select a specific row within the Grid by specifying its index.
 
-The following example demonstrates how to select a single row within the Grid by obtaining the selected row index through a textbox component and passing these row index as argument to the `selectRow` method. When the button event is triggered by clicking the **Select Row** button, a single row is selected within the Grid:
+The following example demonstrates how to select a single row within the Grid by obtaining the selected row index through a [TextBox](https://ej2.syncfusion.com/aspnetmvc/documentation/textbox/getting-started) component and passing these row index as argument to the `selectRow` method. When the button event is triggered by clicking the **Select Row** button, a single row is selected within the Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -138,7 +138,7 @@ The ASP.NET MVC Grid allows you to select multiple rows within the grid simultan
 
 To achieve multiple row selection, you can use the `selectRows` method. This method allows you to select a collection of rows by specifying their indexes, giving you the ability to interact with multiple rows together.
 
-The following example, demonstrates how to select multiple rows in the Grid by calling the `selectRows` method within the button click event and passing an array of row indexes as arguments.
+The following example, demonstrates how to select multiple rows in the Grid by calling the `selectRows` method within the button `onclick` event and passing an array of row indexes as arguments.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -157,7 +157,7 @@ Range of row selection in the Grid enables you to select a continuous range of r
 
 To achieve range of row selection, you can use the `selectRowsByRange` method. This method selects a range of rows from start and end row indexes.
  
-The following example, demonstrates how to select a range of rows within the Grid by obtaining the selected rows start index and end index through textbox components. Then, pass these start index and end index as arguments to the `selectRowsByRange` method. When you trigger the button event by clicking the **Select Rows** button, a range of rows is selected within the Grid.
+The following example, demonstrates how to select a range of rows within the Grid by obtaining the selected rows start index and end index through [TextBox](https://ej2.syncfusion.com/aspnetmvc/documentation/textbox/getting-started) components. Then, pass these start index and end index as arguments to the `selectRowsByRange` method. When you trigger the button event by clicking the **Select Rows** button, a range of rows is selected within the Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -210,7 +210,7 @@ To achieve this, you can leverage the `getSelectedRowIndexes` method, which retu
 
 The Grid component allows you to retrieve the selected records even when navigating to different pages. This feature is useful when working with large data sets and allows you to perform actions on the selected records across multiple pages. 
 
-To persist the selection across pages, you need to enable the [Persistselection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property. By default, this property is set to **false**. To enable it, set the value to **true** in the `SelectionSettings` property of the Grid component.
+To persist the selection across pages, you need to enable the [Persistselection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property. By default, this property is set to **false**. To enable it, set the value to **true** in the [SelectionSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html) property of the Grid component.
 
 To retrieve the selected records from different pages, you can use the  `getSelectedRecords` method. This method returns an array of the selected records.
 
@@ -254,7 +254,7 @@ Clearing row selection programmatically in the Grid component is a useful featur
 
 >The `clearRowSelection` method is applicable when the selection [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) is set to **Multiple** or **Single**.
 
-The following example demonstrates how to clear row selection by calling the `clearRowSelection` method in the button click event.
+The following example demonstrates how to clear row selection by calling the `clearRowSelection` method in the button `onclick` event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

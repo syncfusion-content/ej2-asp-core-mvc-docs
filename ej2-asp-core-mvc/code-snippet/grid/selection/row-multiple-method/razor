@@ -20,15 +20,15 @@
   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
 }).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).Mode(Syncfusion.EJ2.Grids.SelectionMode.Row)).Render()
 <script>
-    document.getElementById('buttonOne').onclick = handleButtonClick;
-    document.getElementById('buttonTwo').onclick = handleButtonClick;
-    document.getElementById('buttonThree').onclick = handleButtonClick;
-    document.getElementById('buttonFour').onclick = handleButtonClick;
-    document.getElementById('buttonFive').onclick = handleButtonClick;
-    document.getElementById('buttonSix').onclick = handleButtonClick;
-    document.getElementById('buttonSeven').onclick = handleButtonClick;
-    document.getElementById('buttonEight').onclick = handleButtonClick;
-    document.getElementById('buttonNine').onclick = handleButtonClick;
+  document.getElementById('buttonOne').onclick = handleButtonClick;
+  document.getElementById('buttonTwo').onclick = handleButtonClick;
+  document.getElementById('buttonThree').onclick = handleButtonClick;
+  document.getElementById('buttonFour').onclick = handleButtonClick;
+  document.getElementById('buttonFive').onclick = handleButtonClick;
+  document.getElementById('buttonSix').onclick = handleButtonClick;
+  document.getElementById('buttonSeven').onclick = handleButtonClick;
+  document.getElementById('buttonEight').onclick = handleButtonClick;
+  document.getElementById('buttonNine').onclick = handleButtonClick;
 
   function handleButtonClick(event){
     var grid = document.getElementById("grid").ej2_instances[0];

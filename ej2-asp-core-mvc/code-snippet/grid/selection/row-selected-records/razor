@@ -16,10 +16,10 @@
     var grid = document.getElementById("grid").ej2_instances[0];
     selectedRecordscount = grid.getSelectedRecords().length;
     if (selectedRecordscount > 0) {
-      document.getElementById("message").innerText = `Selected record count: ${selectedRecordscount}`
+      document.getElementById("message").innerText = `Selected record count: ${selectedRecordscount}`;
     }
     else {
-      document.getElementById("message").innerText = ''
+      document.getElementById("message").innerText = '';
     }
   }
 </script>

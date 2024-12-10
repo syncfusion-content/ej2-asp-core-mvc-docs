@@ -33,7 +33,7 @@
         let selectedRecords = grid.getSelectedRecords();
         if (selectedRecords.length>0) {
             dialog.visible = true;
-            dialog.content = ''
+            dialog.content = '';
             for (let i = 0; i < selectedRecords.length; i++) {
                 dialog.content += `<p><b>OrderID:</b> ${(selectedRecords[i]).OrderID}</p>`;
             }

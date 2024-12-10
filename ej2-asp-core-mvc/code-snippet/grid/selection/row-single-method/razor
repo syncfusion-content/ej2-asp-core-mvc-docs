@@ -12,14 +12,14 @@
   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
 }).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Single).Mode(Syncfusion.EJ2.Grids.SelectionMode.Row)).Render()
 <script>
-    document.getElementById('buttons').onclick = function () {
-      var grid = document.getElementById("grid").ej2_instances[0];
-      var textBox = document.getElementById("inputTextBox").ej2_instances[0];
-      rowIndex = parseInt(textBox.element.value, 10);
-      if (!isNaN(rowIndex)) {
-        grid.selectRow(rowIndex);
-      }
-    };
+  document.getElementById('buttons').onclick = function () {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    var textBox = document.getElementById("inputTextBox").ej2_instances[0];
+    rowIndex = parseInt(textBox.element.value, 10);
+    if (!isNaN(rowIndex)) {
+      grid.selectRow(rowIndex);
+    }
+  };
 </script>
 <style>
   .custom{

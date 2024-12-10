@@ -48,7 +48,7 @@ To enable selection mode, you can set the [selectionSettings.mode](https://help.
 
 * **Both** - Allows you to select rows and cells at the same time.
 
-The following example, demonstrates how to dynamically enable and change the `selectionSettings.mode` using the `DropDownList` component:
+The following example, demonstrates how to dynamically enable and change the [selectionSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) using the [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -107,7 +107,7 @@ The following example demonstrates how to enable the toggle selection for both c
 ![Toggle selection](../images/selection/selection-toggle.gif)
 
 > * If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
->* Toggle selection is a feature that can be applied to all types of selections. When the `checkboxOnly` property is set to **true**, it restricts the ability to select or deselect rows or cells by clicking on them.
+>* Toggle selection is a feature that can be applied to all types of selections. When the [checkboxOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CheckboxOnly) property is set to **true**, it restricts the ability to select or deselect rows or cells by clicking on them.
 
 ## Clear all selection programmatically
 
@@ -115,7 +115,7 @@ The clear selection programmatically feature is particularly useful when you nee
 
 To clear the selection in the component programmatically, you can use the `clearSelection` method. 
 
-In the following example, it demonstrates how to clear all selection by calling the `clearSelection` method in the button click event.
+In the following example, it demonstrates how to clear all selection by calling the `clearSelection` method in the button `onclick` event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

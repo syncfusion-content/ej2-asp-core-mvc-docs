@@ -78,7 +78,7 @@ To achieve single column selection, you can use the `selectColumn` method. This 
 
 > Column selection requires the [selectionSettings.allowColumnSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_AllowColumnSelection) property to **true** and [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Single**.
 
-The following example, demonstrates how to select a single column within the Grid by obtaining the selected column index through a textbox component and passing these column index as argument to the `selectColumn` method. When the button event is triggered by clicking the **Select Column** button, a single column is selected within the Grid:
+The following example, demonstrates how to select a single column within the Grid by obtaining the selected column index through a [TextBox](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started) component and passing these column index as argument to the `selectColumn` method. When the button event is triggered by clicking the **Select Column** button, a single column is selected within the Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -99,7 +99,7 @@ To achieve multiple column selection, you can use the `selectColumns` method. Th
 
 > Column selection requires the [selectionSettings.allowColumnSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_AllowColumnSelection) property to **true** and [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
 
-The following example demonstrates how to select multiple columns in the Grid by calling the `selectColumns` method within the button click event and passing an array of column indexes as arguments.
+The following example demonstrates how to select multiple columns in the Grid by calling the `selectColumns` method within the button `onclick` event and passing an array of column indexes as arguments.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -118,7 +118,7 @@ Range of column selection allows you to select a group of columns within the Gri
 
 To achieve range of column selection, you can use the `selectColumnsByRange` method. This method selects the columns by specifying the start and end column indexes.
 
-The following example demonstrates how to select a range of columns within the Grid by obtaining the selected column's start index and end index through textbox components. Then, pass these start index and end index as arguments to the `selectColumnsByRange` method. When you trigger the button event by clicking the **Select Columns** button, a range of columns is selected within the Grid.
+The following example demonstrates how to select a range of columns within the Grid by obtaining the selected column's start index and end index through [TextBox](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started) components. Then, pass these start index and end index as arguments to the `selectColumnsByRange` method. When you trigger the button event by clicking the **Select Columns** button, a range of columns is selected within the Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -137,7 +137,7 @@ Select with existing column allows you to add a column to the current selection 
 
 To achieve this, you can use the `selectColumnWithExisting` method. This method selects a column along with an existing column by specifying the column index as a parameter.
 
-The following example demonstrates how to select a column with an existing column by obtaining the selected column index through a textbox component and passing this column index as an argument to the `selectColumnWithExisting` method. When you trigger the button event by clicking the **Select Columns** button,  it selects the specified column along with any existing selections within the Grid.
+The following example demonstrates how to select a column with an existing column by obtaining the selected column index through a [TextBox](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started) component and passing this column index as an argument to the `selectColumnWithExisting` method. When you trigger the button event by clicking the **Select Columns** button,  it selects the specified column along with any existing selections within the Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -156,7 +156,7 @@ Clearing column selection programmatically in the Grid component is a useful fea
 
 >The `clearColumnSelection` method is applicable when the selection [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) is set to **Multiple** or **Single**.
 
-In the following example, it demonstrates how to clear column selection by calling the `clearColumnSelection` method in the button click event.
+In the following example, it demonstrates how to clear column selection by calling the `clearColumnSelection` method in the button `onclick` event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
