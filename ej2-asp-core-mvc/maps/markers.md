@@ -508,11 +508,11 @@ The cluster is formed by grouping an identical and non-identical marker from the
 
 ### Clustering markers within each marker group
 
-Marker clustering can be enabled for each marker group in the map by using the `ClusterSettings` property within the `MarkerSettings` property in the `MapsLayers`. This allows for individual customization of clusters for each marker group which group markers that are located near each other to reduce clutter and improve readability. When the `AllowClustering` property is set to **true**, the markers within each group are clustered and visually represented as separate clusters. As users zoom in, the clusters expand to reveal individual markers, enabling more detailed exploration. Clusters can also be expanded manually by setting the `AllowClusterExpand` property to **true**. The appearance of the clusters and their expansion behavior can be customized using the `ClusterSettings` property, similar to the `MapsMarkerClusterSettings` property, as explained in the sections above.
+{% if page.publishingplatform == "aspnet-core" %}
+
+Marker clustering can be enabled for each marker group in the map by using the `ClusterSettings` property within the `markerSettings` property in the `e-maps-layer`. This allows for individual customization of clusters for each marker group which group markers that are located near each other to reduce clutter and improve readability. When the `AllowClustering` property is set to **true**, the markers within each group are clustered and visually represented as separate clusters. As users zoom in, the clusters expand to reveal individual markers, enabling more detailed exploration. Clusters can also be expanded manually by setting the `AllowClusterExpand` property to **true**. The appearance of the clusters and their expansion behavior can be customized using the `ClusterSettings` property, similar to the `MapsMarkerClusterSettings` property, as explained in the sections above.
 
 NOTE: When the `ClusterSettings` property is enabled for an individual marker group, the `MapsMarkerClusterSettings` property within the layers becomes ineffective.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -524,6 +524,10 @@ NOTE: When the `ClusterSettings` property is enabled for an individual marker gr
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Marker clustering can be enabled for each marker group in the map by using the `ClusterSettings` property within the `MarkerSettings` property in the `MapsLayer`. This allows for individual customization of clusters for each marker group which group markers that are located near each other to reduce clutter and improve readability. When the `AllowClustering` property is set to **true**, the markers within each group are clustered and visually represented as separate clusters. As users zoom in, the clusters expand to reveal individual markers, enabling more detailed exploration. Clusters can also be expanded manually by setting the `AllowClusterExpand` property to **true**. The appearance of the clusters and their expansion behavior can be customized using the `ClusterSettings` property, similar to the `MapsMarkerClusterSettings` property, as explained in the sections above.
+
+NOTE: When the `ClusterSettings` property is enabled for an individual marker group, the `MapsMarkerClusterSettings` property within the layers becomes ineffective.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
