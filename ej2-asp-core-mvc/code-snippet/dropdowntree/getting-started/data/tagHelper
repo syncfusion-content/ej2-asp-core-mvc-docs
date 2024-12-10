@@ -33,7 +33,7 @@
 	childitem3.Add(new Child { nodeId = "03-04", nodeText = "Social Network.pdf" });
 	childitem3.Add(new Child { nodeId = "03-05", nodeText = "Youth Empowerment.pdf"});
 	char[] value = { 'n','o','d','e','C', 'h', 'i', 'l', 'd' };
-	string Child = new string(value);
+	string child = new string(value);
 }
 
 <div style="margin:0 auto; width:250px;">
