@@ -48,7 +48,7 @@ N> Before use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC P
 
     **Project configurations**
 
-    **Target MVC Version**: Select the version of ASP.NET MVC Project, either MVC5 or MVC4.
+    **Target MVC Version**: Select the version of ASP.NET MVC Project as MVC5.
 
     **Theme Selection**: Choose the required Theme. The Theme Preview section shows the controls preview with selected theme before creating the Syncfusion<sup style="font-size:70%">&reg;</sup> project.
 

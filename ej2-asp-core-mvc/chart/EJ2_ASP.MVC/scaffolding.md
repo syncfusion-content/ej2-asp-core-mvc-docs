@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scaffolding in ##Platform_Name## Chart Component
+title: Scaffolding in ##Platform_Name## Chart Component | Syncfusion
 description: Learn here all about Scaffolding in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scaffolding
@@ -58,7 +58,5 @@ N> Ensure that  at least one Entity Framework model  exists in your project and
 ## How to render Syncfusion<sup style="font-size:70%">&reg;</sup> Control'?'
 
 Refer to the following UG links to render Syncfusion<sup style="font-size:70%">&reg;</sup> control after performed scaffolding.
-
-**MVC4:** [`Configure Essential JS 2 using Syncfusion.EJ2.MVC4 package`](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application-1)
 
 **MVC5:** [`Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 using Syncfusion.EJ2.MVC5 package`](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application)
