@@ -91,6 +91,8 @@ Now, add the Syncfusion ASP.NET MVC AppBar control in `~/Home/Index.cshtml` page
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
+@using Syncfusion.EJ2.Navigations;
+
 <div class="col-lg-12 control-section default-appbar-section">
     @(Html.EJS().AppBar("defaultAppBar").ColorMode(AppBarColor.Primary).ContentTemplate(@<div>
         @Html.EJS().Button("defaultButtonMenu").CssClass("e-inherit").IconCss("e-icons e-menu").Render()
