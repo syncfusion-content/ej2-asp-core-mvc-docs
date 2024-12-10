@@ -62,7 +62,7 @@ The grid supports three types of cell selection mode which can be set by using [
 * **Box** - In this mode, you can select a range of cells within the start and end column indexes, including all cells in between the rows within the specified range. This mode is useful when you need to select cells within specific columns.
 * **BoxWithBorder**:  This mode is similar to the Box mode, but it adds borders to the selected range of cells. This visual distinction makes it easy to identify the selected cells within the grid.
 
-> Cell Selection requires the `SelectionSettings.Mode` to be **Cell** or  **Both** and [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
+> Cell Selection requires the [SelectionSettings.Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) to be **Cell** or  **Both** and [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
 
 In the following example demonstrates how to dynamically enable and change the `CellSelectionMode` using the [DropDownList](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) component:
 
@@ -119,7 +119,7 @@ In the following example, it demonstrates how to select multiple cells in the Gr
 
 ![Multiple cell selection](../images/selection/cell-multiple-method.gif)
 
-> Cell Selection requires the `SelectionSettings.Mode` to be **Cell** or  **Both** and [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
+> Cell Selection requires the [SelectionSettings.Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) to be **Cell** or  **Both** and [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
 
 ### Range of cell selection 
 
@@ -128,7 +128,7 @@ Range of cell selection in the Grid allows you to select multiple cells in a con
 To achieve range of cell selection, you can use the `selectCellsByRange` method. This method selects a range of cells based on the specified start and end indexes.
 
 >* Range cell selection allows you to select multiple cells in box mode when [CellSelectionMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CellSelectionMode) is set to **Box**. However, if you set `CellSelectionMode` to **Flow**, it will select the range of cells between the start and end indexes, including other cells of the selected rows.
-> * Cell Selection requires the `SelectionSettings.Mode` to be **Cell** or  **Both** and [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
+> * Cell Selection requires the [SelectionSettings.Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) to be **Cell** or  **Both** and [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
 
 The following example demonstrates how to select a range of cells within the Grid by obtaining the selected cells start index and end index through [TextBox](https://ej2.syncfusion.com/aspnetmvc/documentation/textbox/getting-started) components. Then, pass these row and cell indexes as arguments to the `selectCellsByRange` method. When you trigger the button event by clicking the **Select Cells** button, a range of cells is selected within the Grid.
 
