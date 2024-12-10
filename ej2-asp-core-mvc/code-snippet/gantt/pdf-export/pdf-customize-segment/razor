@@ -1,0 +1,35 @@
+@(Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>
+)ViewBag.DataSource).GridLines(Syncfusion.EJ2.Gantt.GridLine.Both).Height("450px").AllowPdfExport(true).TaskFields(ts => ts.Id(
+"TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Segments("Segments").EditSettings(es =>
+es.AllowEditing(true).AllowDeleting(true).AllowTaskbarEditing(true).ShowDeleteConfirmDialog(true)).Columns(col =>
+{
+    col.Field("TaskId").Width(100).HeaderText("Task Id").Add();
+    col.Field("TaskName").HeaderText("Task Name").Add();
+    col.Field("StartDate").HeaderText("Start Date").Add();
+    col.Field("EndDate").HeaderText("End Date").Add();
+}).Toolbar(new List<string>
+() { "PdfExport" }).ToolbarClick("toolbarClick").PdfQueryCellInfo("pdfQueryCellInfo").QueryTaskbarInfo("queryTaskbarInfo").Render())
+
+<script>
+    function toolbarClick(args) {
+        var ganttObj = document.getElementById("GanttContainer").ej2_instances[0];
+        ganttObj.pdfExport();
+    }
+    function queryTaskbarInfo(args) {
+        if (args.data.taskData.Segments) {
+            var segmentIndex = args.taskbarElement.dataset.segmentIndex;
+            if (Number(segmentIndex) === 1) {
+                args.taskbarBgColor = 'red';
+                args.taskbarBorderColor = 'black';
+                args.progressBarBgColor = "green";
+            }
+        }
+    }
+    function pdfQueryCellInfo(args) {
+        if (args.taskbar.taskSegmentStyles) {
+            args.taskbar.taskSegmentStyles[1].taskColor = new ej.pdfexport.PdfColor(255, 0, 0);
+            args.taskbar.taskSegmentStyles[1].progressColor = new ej.pdfexport.PdfColor(0, 128, 0);
+            args.taskbar.taskSegmentStyles[1].taskBorderColor = new ej.pdfexport.PdfColor(0, 0, 0);
+        }
+    }
+</script>
