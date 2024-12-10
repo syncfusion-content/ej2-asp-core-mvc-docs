@@ -99,9 +99,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Chat UI Control](images/chat-ui-component.png)
 
-## Configure messages
+## Configure messages and user
 
-You can use the `e-chatui-messages` tag directive to add messages and the `user` tag directive to map each message to the respective user.
+You can use the `e-chatui-messages` tag directive to add messages and the `user` tag directive to configure the current user for the chat.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

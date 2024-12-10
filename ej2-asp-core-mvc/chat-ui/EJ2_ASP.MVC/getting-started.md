@@ -101,9 +101,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Chat UI Control](images/chat-ui-component.png)
 
-## Configure messages
+## Configure messages and user
 
-You can use the `Messages` property to add messages and the `User` property to map each message to the respective user.
+You can use the `Messages` property to add messages and the `User` property to configure the current user for the chat.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
