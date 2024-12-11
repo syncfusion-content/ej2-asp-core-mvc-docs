@@ -1,0 +1,18 @@
+<div style="padding-bottom: 20px; display: flex">
+   <label style="margin-right:5px;font-weight: bold;">Enable/Disable simple multiple row selection</label>
+   @Html.EJS().Switch("switch").Change("toggleRowSelection").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
+<script>
+   function toggleRowSelection(args) {
+      var grid = document.getElementById("grid").ej2_instances[0];
+      grid.selectionSettings.enableSimpleMultiRowSelection =args.checked;
+   }
+</script>
