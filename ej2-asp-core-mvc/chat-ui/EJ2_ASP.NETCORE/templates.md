@@ -30,7 +30,7 @@ You can use the `typingUsersTemplate` property to customize the display of users
 
 ## Suggestion template
 
-You can use the `suggestionTemplate` property to customize the quick reply suggestions that appear above the input field. Templates here can help create visually appealing and functional suggestion layouts. The template context includes `suggestions` and `index` items.
+You can use the `suggestionTemplate` property to customize the quick reply suggestions that appear above the input field. Templates here can help create visually appealing and functional suggestion layouts. The template context includes `suggestion` and `index` items.
 
 ## Footer template
 
