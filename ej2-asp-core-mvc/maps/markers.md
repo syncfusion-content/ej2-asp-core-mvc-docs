@@ -516,7 +516,7 @@ The cluster is formed by grouping an identical and non-identical marker from the
 
 Marker clustering can be enabled for each marker group in the map by using the `ClusterSettings` property within the `markerSettings` property in the `e-maps-layer`. This allows for individual customization of clusters for each marker group which group markers that are located near each other to reduce clutter and improve readability. When the `AllowClustering` property is set to **true**, the markers within each group are clustered and visually represented as separate clusters. As users zoom in, the clusters expand to reveal individual markers, enabling more detailed exploration. Clusters can also be expanded manually by setting the `AllowClusterExpand` property to **true**. The appearance of the clusters and their expansion behavior can be customized using the `ClusterSettings` property, similar to the `MarkerClusterSettings` property, as explained in the sections above.
 
-NOTE: When the `ClusterSettings` property is enabled for an individual marker group, the `MarkerClusterSettings` property within the layers becomes ineffective.
+N> When the `ClusterSettings` property is enabled for an individual marker group, the `MarkerClusterSettings` property within the layers becomes ineffective.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -531,7 +531,7 @@ NOTE: When the `ClusterSettings` property is enabled for an individual marker gr
 
 Marker clustering can be enabled for each marker group in the map by using the `ClusterSettings` property within the `MarkerSettings` property in the `MapsLayer`. This allows for individual customization of clusters for each marker group which group markers that are located near each other to reduce clutter and improve readability. When the `AllowClustering` property is set to **true**, the markers within each group are clustered and visually represented as separate clusters. As users zoom in, the clusters expand to reveal individual markers, enabling more detailed exploration. Clusters can also be expanded manually by setting the `AllowClusterExpand` property to **true**. The appearance of the clusters and their expansion behavior can be customized using the `ClusterSettings` property, similar to the `MarkerClusterSettings` property, as explained in the sections above.
 
-NOTE: When the `ClusterSettings` property is enabled for an individual marker group, the `MarkerClusterSettings` property within the layers becomes ineffective.
+N> When the `ClusterSettings` property is enabled for an individual marker group, the `MarkerClusterSettings` property within the layers becomes ineffective.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
