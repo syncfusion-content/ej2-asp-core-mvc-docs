@@ -18,7 +18,7 @@ State persistence stores Kanban datasource, column or swimlane expand/collapse s
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" }
 {% include code-snippet/kanban/persistence/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
@@ -29,7 +29,7 @@ State persistence stores Kanban datasource, column or swimlane expand/collapse s
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
+{% highlight razor tabtie="CSHTML" %}
 {% include code-snippet/kanban/persistence/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
