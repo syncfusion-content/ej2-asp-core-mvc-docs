@@ -1,20 +1,24 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowExcelExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"ExcelExport"})" allowPaging="true">
+<div style="padding-bottom: 20px; display: flex">
+    <label style="margin: -3px 5px 0 0;font-weight: bold;">Include or exclude hidden columns </label>
+    <ejs-switch id="switch"></ejs-switch>
+ </div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" allowExcelExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"ExcelExport"})" allowPaging="true">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" visible="false" width="120"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="140"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" visible="false" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="140"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
     function toolbarClick(args) {
-        var gridObj = document.getElementById("Grid").ej2_instances[0];
-        if (args.item.id === 'Grid_excelexport') {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
             var excelExportProperties = {
-                includeHiddenColumn: true
+                includeHiddenColumn: document.getElementById("switch").ej2_instances[0].checked
             };
-            gridObj.excelExport(excelExportProperties);
+            grid.excelExport(excelExportProperties);
         }
     }
 </script>

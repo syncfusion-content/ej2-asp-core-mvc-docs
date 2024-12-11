@@ -1,33 +1,34 @@
 <div>
-    <B>Master Grid</B>
-    @Html.EJS().Grid("masterGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).Width("auto").SelectedRowIndex(0).Columns(col =>
-        {
-            col.Field("EmployeeID").HeaderText("EmployeeID").IsPrimaryKey(true).Add();
-            col.Field("OrderID").HeaderText("OrderID").Add();
-            col.Field("CustomerID").HeaderText("FirstName").Add();
-
-        }).RowSelected("selected").AllowExcelExport(true).ToolbarClick("toolbarClick").Toolbar(new List<string>() { "ExcelExport" }).Render()
+<B>Master Grid</B>
+@Html.EJS().Grid("masterGrid").DataSource((IEnumerable<object>)ViewBag.masterdata).Height("273px").SelectedRowIndex(0).Columns(col =>
+{
+    col.Field("ContactName").HeaderText("Contact Name").Width("120px").Add();
+    col.Field("CompanyName").HeaderText("Company Name").Width("120px").Add();
+    col.Field("Address").HeaderText("Address").Width("120px").Add();
+    col.Field("Country").HeaderText("Country").Width("120px").Add();
+}).RowSelected("rowSelected").AllowExcelExport(true).ToolbarClick("toolbarClick").Toolbar(new List<string>() { "ExcelExport" }).Render()
 </div>
 <p><div class='e-statustext'> Showing orders of Customer:  <b id="key"></b></div></p>
 <div>
-    @Html.EJS().Grid("detailGrid").DataSource((IEnumerable<object>)ViewBag.dataSource1).AllowExcelExport(true).Columns(col =>
-                {
-                    col.Field("EmployeeID").HeaderText("EmployeeID").IsPrimaryKey(true).Add();
-                    col.Field("ShipCountry").HeaderText("ShipCountry").Add();
-                    col.Field("ShipName").HeaderText("ShipName").Add();
-
-                }).Render()
+@Html.EJS().Grid("detailGrid").AllowExcelExport(true).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120px").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Format("C2").Width("120px").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("ShipCountry").Width("120px").Add();
+    col.Field("ShipName").HeaderText("ShipName").Width("130px").Add();
+    col.Field("ShipAddress").HeaderText("ShipAddress").Width("120px").Add();
+}).Render()
 </div>
 <script>
-    function selected(args) {
-        var selectedRecord = args.data;
+    function rowSelected(args) {
+        let selectedRecord = args.data;
         var data = @Html.Raw(Json.Encode(ViewBag.datasource));
         var employeeID = args.data.EmployeeID;
-        var detaildata = new ej.data.DataManager(data).executeLocal(new ej.data.Query().where("EmployeeID", "equal", employeeID, false).take(10));
-        var grid = document.getElementById("detailGrid").ej2_instances[0];
-        document.getElementById('key').innerHTML = selectedRecord.EmployeeID;
-        grid.dataSource = new ej.data.DataManager(detaildata.slice(0, 5)).dataSource.json;
-    }
+        var detaildata = new ej.data.DataManager(data).executeLocal(new ej.data.Query().where("EmployeeID", "equal", employeeID, false));
+        var detailGrid = document.getElementById("detailGrid").ej2_instances[0];
+        detailGrid.dataSource = new ej.data.DataManager(detaildata).dataSource.json;
+        document.getElementById("key").innerHTML = selectedRecord.ContactName;
+    };
     function toolbarClick(args) {
         var mastergrid = document.getElementById("masterGrid").ej2_instances[0];
         var grid = document.getElementById("detailGrid").ej2_instances[0];
@@ -36,8 +37,8 @@
                 multipleExport: { type: 'AppendToSheet', blankRows: 2 },
             };
             const firstGridExport = mastergrid.excelExport(appendExcelExportProperties, true);
-            firstGridExport.then((fData) => {
-                grid.excelExport(appendExcelExportProperties, false, fData);
+            firstGridExport.then((masterGridData) => {
+                grid.excelExport(appendExcelExportProperties, false, masterGridData);
             });
         }
     }

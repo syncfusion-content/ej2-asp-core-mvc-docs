@@ -8,7 +8,7 @@ public ActionResult ExcelExport([FromForm] string gridModel)
 {
     GridExcelExport exp = new GridExcelExport();
     Grid gridProperty = ConvertGridObject(gridModel);
-    return exp.ExcelExport<OrdersDetails>(gridProperty, orddata);
+    return exp.ExcelExport<OrdersDetails>(gridProperty,  OrdersDetails.GetAllRecords());
 }
 
 private Grid ConvertGridObject(string gridProperty)

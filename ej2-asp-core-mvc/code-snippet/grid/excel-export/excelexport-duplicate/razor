@@ -1,0 +1,86 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().ToolbarClick("toolbarClick").DataBound("onDataBound").ExcelQueryCellInfo("excelQueryCellInfo").ExcelExportComplete("excelExportComplete").Height("348px").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("City").HeaderText("City").Width("120").Add();
+}).Toolbar(new List<string>() { "ExcelExport" }).Render()
+<script>
+    var gridcells;
+    var currentOrderID=null;
+    var rowspanCount=1;
+    function onDataBound() {
+        let previousData= null;
+        let startRowIndex = null;
+        let endRowIndex= null;
+        var grid = document.getElementById("grid").ej2_instances[0];
+        let rows =  grid.getRows();
+        let data =  grid.getCurrentViewRecords();
+        for (let i = 0, len = rows.length; i < len; i++) {
+            if (!previousData) {
+                previousData = data[i]['OrderID'];
+                startRowIndex = parseInt(rows[i].getAttribute("aria-rowindex"));
+            }
+            else if (previousData === data[i]['OrderID']) {
+                rows[i].children[0].classList.add('e-hide');
+            }
+            else if (previousData && previousData !== data[i]['OrderID']) {
+                if (grid.getRows().length > 0 && grid.getRows().length > startRowIndex) {
+                    endRowIndex = parseInt(rows[i].getAttribute("aria-rowindex"), 10);
+                    let targetRow =  grid.getRows()[startRowIndex];
+                    let currentRowChild = rows[i] && rows[i].children[0];
+                    if (targetRow && currentRowChild) {
+                        let targetCell = [].slice.call(targetRow.querySelectorAll('.e-rowcell')).filter((cell) =>
+                            parseInt(cell.getAttribute('aria-colindex'), 10) === parseInt(currentRowChild.getAttribute('aria-colindex'))
+                        );
+                        if (targetCell[0]) {
+                            targetCell[0].setAttribute("rowSpan", endRowIndex - startRowIndex);
+                        }
+                    }
+                    previousData = data[i]['OrderID'];
+                    startRowIndex = parseInt(rows[i].getAttribute("aria-rowindex"), 10);
+                }
+            }
+            if (rows[i].children[0].classList.contains("e-hide") || i < len) {
+                endRowIndex = parseInt(rows[i].getAttribute("aria-rowindex"), 10);
+                if (endRowIndex > 0) {
+                let targetRow = grid.getRows()[startRowIndex];  
+                let currentRowChild = rows[i] && rows[i].children[0];
+                if (targetRow && currentRowChild) {
+                    let targetCell = [].slice.call(targetRow.querySelectorAll('.e-rowcell')).filter((cell) =>
+                        parseInt(cell.getAttribute('aria-colindex'), 10) === parseInt(currentRowChild.getAttribute('aria-colindex'))
+                    );
+                    if (targetCell.length > 0) {
+                        targetCell[0].setAttribute("rowSpan", endRowIndex - startRowIndex + 1);
+                    }
+                }
+                }
+            }
+        }
+    }
+    function excelQueryCellInfo(args) {
+
+    if (!currentOrderID && args.column.field == "OrderID") {
+        currentOrderID = args.data["OrderID"];
+        gridcells = args.cell;
+    }
+    else if (currentOrderID && args.column.field == "OrderID" && currentOrderID == args.data["OrderID"]) {
+        rowspanCount++;
+    } else if (currentOrderID !== args.data["OrderID"] && args.column.field == "OrderID") {
+        gridcells.rowSpan = rowspanCount;
+        currentOrderID = args.data["OrderID"];
+        gridcells = args.cell;
+        rowspanCount = 1;
+    }
+    }
+    function excelExportComplete(args) {
+        currentOrderID = null;
+        gridcells = null;
+        rowspanCount=1;
+      }
+    function toolbarClick(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
+            grid.excelExport();
+        }
+    }
+</script>

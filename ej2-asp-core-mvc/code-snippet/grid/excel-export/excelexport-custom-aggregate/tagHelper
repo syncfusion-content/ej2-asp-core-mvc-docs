@@ -1,0 +1,28 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() { "ExcelExport" })">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+        <e-grid-aggregates>
+        <e-grid-aggregate>
+            <e-aggregate-columns>
+                <e-aggregate-column columnName="ShipCountry" type="Custom" footerTemplate="Brazil Count:${Custom}" customAggregate="@("customAggregateFunction")"></e-aggregate-column>
+            </e-aggregate-columns>
+        </e-grid-aggregate>
+    </e-grid-aggregates>
+</ejs-grid>
+<script>
+    function toolbarClick(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
+            grid.excelExport();
+        }
+    }
+    function customAggregateFunction(data) {
+        var brazilCount = data.result? data.result.filter(item => item['ShipCountry'] === 'Brazil').length: data.filter(item => item['ShipCountry'] === 'Brazil').length;
+        return brazilCount;
+    }
+</script>

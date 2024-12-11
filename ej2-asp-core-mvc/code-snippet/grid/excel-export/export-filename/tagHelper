@@ -1,20 +1,25 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowExcelExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"ExcelExport"})" allowPaging="true">
+<div style="padding-bottom: 20px">
+    <label style="padding: 30px 5px 0 0;font-weight: bold">Enter file name:</label>
+    <ejs-textbox id="inputTextBox" width="120px" placeholder="Enter file name"></ejs-textbox>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" height="348px" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"ExcelExport"})" allowPaging="true">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>               
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="140" ></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="ShipCountry" width="140"></e-grid-column>               
     </e-grid-columns>
 </ejs-grid>
-
 <script>
     function toolbarClick(args) {
-        var gridObj = document.getElementById("Grid").ej2_instances[0];
-        if (args.item.id === 'Grid_excelexport') {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        var textBox = document.getElementById("inputTextBox").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
             var excelExportProperties = {
-                 fileName:"new.xlsx"
+                fileName: textBox.value !== "" ? textBox.value + '.xlsx' : 'new.xlsx'
             };
-            gridObj.excelExport(excelExportProperties);
+            grid.excelExport(excelExportProperties);
         }
     }
 </script>

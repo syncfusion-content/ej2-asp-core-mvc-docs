@@ -1,29 +1,21 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport().AllowExcelExport().ToolbarClick("toolbarClick").PdfExportComplete("pdfExportComplete").ExcelExportComplete("excelExportComplete").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").AllowExcelExport().ToolbarClick("toolbarClick").ExcelExportComplete("excelExportComplete").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Visible(false).Width("150").Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-   col.Field("ShipCity").HeaderText("ShipCity").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
-
-}).AllowPaging().Toolbar(new List<string>() { "PdfExport", "ExcelExport" }).Render()
-
+}).Toolbar(new List<string>() {"ExcelExport" }).Render()
 <script>
     function toolbarClick(args) {
-        var gridObj = document.getElementById("Grid").ej2_instances[0];
-        if (args.item.id === 'Grid_pdfexport') {
-            gridObj.showSpinner();
-            gridObj.pdfExport();
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
+            grid.showSpinner();
+            grid.excelExport();
         }
-        else if (args.item.id === 'Grid_excelexport') {
-            gridObj.showSpinner();
-            gridObj.excelExport();
-        }
-    }
-    function pdfExportComplete(args) {
-        this.hideSpinner();
     }
     function excelExportComplete(args) {
-        this.hideSpinner();
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.hideSpinner();
     }
 </script>
