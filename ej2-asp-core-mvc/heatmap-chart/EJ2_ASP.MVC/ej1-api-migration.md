@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of heat map component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of heat map component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Members
 
-| Behaviour | API in Essential JS 1 | API in Essential JS 2 |
+| Behaviour | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | ----- | ---- | ---- |
 | Specifies the width of the heat map | **Property:**  `width`<br><br>@Html.EJ().HeatMap("heatmap", ViewData["HeatMapModel"] as Syncfusion.JavaScript.DataVisualization.Models.HeatMapProperties)<br><br>HeatMapProperties Heatmap = new HeatMapProperties();<br>Heatmap.Width = "830"; | **Property:** `width`<br/><br/>@Html.EJS().HeatMap("container").Width("300px").Render()|
 | Specifies the height of the heat map | **Property:**  `height`<br/><br/>@Html.EJ().HeatMap("heatmap", ViewData["HeatMapModel"] as Syncfusion.JavaScript.DataVisualization.Models.HeatMapProperties)<br><br>HeatMapProperties Heatmap = new HeatMapProperties();<br>Heatmap.Height = "830"; | **Property:** `height`<br/><br/> @Html.EJS().HeatMap("container").Height("300px").Render() |
@@ -36,6 +36,6 @@ This article describes the API migration process of heat map component from Esse
 
 ## Events
 
-| Behaviour| API in Essential JS 1 | API in Essential JS 2 |
+| Behaviour| API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | ---- | ---- | ---- |
 | Triggered when the cell get clicked. | **Property**: `cellSelected`<br><br>@Html.EJ().HeatMap("heatmap", ViewData["HeatMapModel"] as Syncfusion.JavaScript.DataVisualization.Models.HeatMapProperties)<br><br>HeatMapProperties Heatmap = new HeatMapProperties();<br>Heatmap.CellSelected = function(args) {}; | **Property**: `cellClick`<br><br>@Html.EJS().HeatMap("container").CellClick("cellClick").Render()<br><br>var cellClick = function (args) {}; |

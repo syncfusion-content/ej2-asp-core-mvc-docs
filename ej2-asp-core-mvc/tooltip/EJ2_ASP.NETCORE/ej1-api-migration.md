@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Tooltip component from Essential JS 1 to Essential JS 2
+This article describes the API migration process of Tooltip component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Position | **Property:**  *position*  <br/> `<ej-tooltip id="tooltip" content="Tooltip Content">`<br/>`<e-tooltip-position>`<br/>`<e-target horizontal="center" vertical="top" />`<br/>`<e-stem horizontal="center" vertical="bottom" />`<br/>`</e-tooltip-position>`<br/>`</ej-tooltip>` | **Property:**  *position*  <br/> `<ejs-tooltip position="TopCenter" />` |
 | Animation | **Property:**  *animation*  <br/> `<ej-tooltip id="tooltip" content="Tooltip Content" >`<br/>`<e-tooltip-animation effect="Fade" speed="1000"/>`<br/>`</ej-tooltip>` | **Property:**  *animation*  <br/> `List<Object> animation = new List<Object>();` <br/> `animation.Add(new { open = new { effect = "FadeIn" }, close = new { effect = "fadeOut" } });` <br/> `ViewBag.animation = animation;` <br/><br/>`<ejs-tooltip id="tooltip" animation="ViewBag.animation" />`|

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Diagram Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Diagram Component | Syncfusion® 
+description: Learn here all about Accessibility in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## Diagram Component
 
 Diagram provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provide information about elements in a document for assistive technology.
 
@@ -98,7 +98,7 @@ Attribute provides the text label with some default description for below elemen
 
 ### Mobile device support
 
-Syncfusion Diagram component are more user-friendly and accessible to individuals using mobile devices, including those with disabilities. These are designed to be responsive, adaptable to various screen sizes and orientations, and touch-friendly.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Diagram component are more user-friendly and accessible to individuals using mobile devices, including those with disabilities. These are designed to be responsive, adaptable to various screen sizes and orientations, and touch-friendly.
 
 ### Screen Reader Support
 
@@ -106,7 +106,7 @@ The Diagram component supports and its information was dictated properly by the 
 
 ### Keyboard navigation support
 
-Syncfusion Diagram component support keyboard navigation, allowing users who rely on alternate methods to effortlessly navigate and interact with the component.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Diagram component support keyboard navigation, allowing users who rely on alternate methods to effortlessly navigate and interact with the component.
 
 ## Keyboard interaction
 
@@ -137,4 +137,4 @@ The accessibility compliance of the Diagram component is shown in the following 
 
 ## See also
 
-- [Accessibility in Syncfusion components](../common/accessibility)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> components](../common/accessibility)
