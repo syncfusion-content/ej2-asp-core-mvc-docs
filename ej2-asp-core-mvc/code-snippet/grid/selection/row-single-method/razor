@@ -1,0 +1,28 @@
+<div style="padding-bottom: 20px">
+  <label style="padding: 30px 5px 0 0">Enter the row index:</label>
+  @Html.EJS().TextBox("inputTextBox").Width("120px").Render()
+  @Html.EJS().Button("buttons").CssClass("e-primary custom").Content("Select Row").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Single).Mode(Syncfusion.EJ2.Grids.SelectionMode.Row)).Render()
+<script>
+  document.getElementById('buttons').onclick = function () {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    var textBox = document.getElementById("inputTextBox").ej2_instances[0];
+    rowIndex = parseInt(textBox.element.value, 10);
+    if (!isNaN(rowIndex)) {
+      grid.selectRow(rowIndex);
+    }
+  };
+</script>
+<style>
+  .custom{
+    margin-left: 10px;
+  }
+</style>
