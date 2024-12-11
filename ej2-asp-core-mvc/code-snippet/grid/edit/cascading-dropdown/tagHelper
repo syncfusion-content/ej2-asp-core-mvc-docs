@@ -37,14 +37,14 @@
     function destroyShipCountryHandler() {
         shipCountryObj.destroy();
     }
-    function writeShipCountryHandler(args) {
+    function writeShipCountryHandler() {
         shipCountryObj = new ej.dropdowns.DropDownList({
             dataSource: new ej.data.DataManager(country),
             fields: { value: 'countryId', text: 'countryName' },
             change: () => {
                 shipStateObj.enabled = true;
-                var tempQuery = new ej.data.Query().where('countryId', 'equal', shipCountryObj.value);
-                shipStateObj.query = tempQuery;
+                var filteredQuery = new ej.data.Query().where('countryId', 'equal', shipCountryObj.value);
+                shipStateObj.query = filteredQuery;
                 shipStateObj.text = '';
                 shipStateObj.dataBind();
             },
@@ -53,7 +53,7 @@
         });
         shipCountryObj.appendTo(shipCountryElement);
     }
-
+    
     function createShipStateHandler() {
         shipStateElement = document.createElement('input');
         return shipStateElement;
@@ -64,7 +64,7 @@
     function destroyShipStateHandler() {
         shipStateObj.destroy();
     }
-    function writeShipStateHandler(args) {
+    function writeShipStateHandler() {
         shipStateObj = new ej.dropdowns.DropDownList({
             dataSource: new ej.data.DataManager(state),
             fields: { value: 'stateId', text: 'stateName' },

@@ -22,7 +22,6 @@
         { text: 'Mexico', value: 'Mexico' },
         { text: 'France', value: 'France' }
     ];
-
     function createShipCountryHandler() {
         dropDownElement = document.createElement('input');
         return dropDownElement;

@@ -350,6 +350,8 @@ namespace GettingStartedMVC.Controllers
     {
         public string document { get; set; }
         public string password { get; set; }
+        public bool isClientsideLoading { get; set; }
+        public string organizePages { get; set; }
         public string zoomFactor { get; set; }
         public string isFileName { get; set; }
         public string xCoordinate { get; set; }
@@ -376,17 +378,28 @@ namespace GettingStartedMVC.Controllers
         public string uniqueId { get; set; }
         public string data { get; set; }
         public string viewPortWidth { get; set; }
-        public string viewPortHeight { get; set; }
+        public string viewportHeight { get; set; }
         public string tilecount { get; set; }
-        public string isCompletePageSizeNotReceived { get; set; }
+        public bool isCompletePageSizeNotReceived { get; set; }
         public string freeTextAnnotation { get; set; }
         public string signatureData { get; set; }
         public string fieldsData { get; set; }
         public string formDesigner { get; set; }
+        public bool isSignatureEdited { get; set; }
         public string inkSignatureData { get; set; }
+        public bool hideEmptyDigitalSignatureFields { get; set; }
+        public bool showDigitalSignatureAppearance { get; set; }
+        public bool digitalSignaturePresent { get; set; }
         public string tileXCount { get; set; }
         public string tileYCount { get; set; }
-        public bool digitalSignaturePresent { get; set; }
+        public string digitalSignaturePageList { get; set; }
+        public string annotationCollection { get; set; }
+        public string annotationsPageList { get; set; }
+        public string formFieldsPageList { get; set; }
+        public bool isAnnotationsExist { get; set; }
+        public bool isFormFieldAnnotationsExist { get; set; }
+        public string documentLiveCount { get; set; }
+        public string annotationDataFormat { get; set; }
     }
 }
 
