@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Column Binding in Syncfusion Query Builder Control
+# Column Binding in Syncfusion<sup style="font-size:70%">&reg;</sup> Query Builder Control
 
 The column definitions are used as the `DataSource` schema in the Query Builder. This plays a vital role in rendering column values. The query builder operations such as create or delete conditions and create or delete groups are performed based on the column definitions. The `Field` property of the [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Columns) is necessary to map the data source values in the query builder columns.
 

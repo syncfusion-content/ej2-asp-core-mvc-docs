@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of RadioButton component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of RadioButton component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Label | **Property:** *text* <br/><br/> `@Html.EJ().RadioButton("radio").Text("RadioButton")` | **Property:** *label* <br/><br/> `@Html.EJS().RadioButton("radio").Label("RadioButton").Render()` |
 | Checked state | **Property:** *checked* <br/><br/> `@Html.EJ().RadioButton("radio").Text("RadioButton").Checked(true)` | **Property:** *checked* <br/><br/> `@Html.EJS().RadioButton("radio").Label("RadioButton").Checked(true).Render()` |
@@ -34,7 +34,7 @@ This article describes the API migration process of RadioButton component from E
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Destroy | **Method:** *destroy* <br/><br/> `@Html.EJ().RadioButton("radio").Text("RadioButton")` <br/> var radiobutton = $("#radio").data("ejRadioButton");<br/>radioButton.destroy(); | **Method:** *destroy* <br/><br/> `@Html.EJS().RadioButton("radio").Label("RadioButton").Render()` <br/> var radiobutton = document.getElementById('radio').ej2_instances[0]; <br/>radioButton.destroy(); |
 | Disable the RadioButton | **Method:** *disable* <br/><br/> `@Html.EJ().RadioButton("radio").Text("RadioButton")` <br/> var radiobutton = $("#radio").data("ejRadioButton");<br/>radioButton.disable(); | Not applicable |
@@ -42,7 +42,7 @@ This article describes the API migration process of RadioButton component from E
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | BeforeChange Event | **Event:** *beforeChange* <br/><br/> `@Html.EJ().RadioButton("radio").Text("RadioButton").BeforeChange("beforeChange")`* <br/><br/>function beforeChange(args) {<br/> &nbsp;&nbsp;&nbsp;&nbsp;/** code block */ <br/>} | Not applicable |
 | Change Event | **Event:** *change* <br/><br/> `@Html.EJ().RadioButton("radio").Text("RadioButton").Change("change")`* <br/><br/>function change(args) {<br/> &nbsp;&nbsp;&nbsp;&nbsp;/** code block */ <br/>} | **Event:** *change* <br/><br/> `@Html.EJS().RadioButton("radio").Label("RadioButton").Change("change").Render()`* <br/><br/>function change(args) {<br/> &nbsp;&nbsp;&nbsp;&nbsp;/** code block */ <br/>} |

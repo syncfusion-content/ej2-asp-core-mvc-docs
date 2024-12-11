@@ -1,0 +1,13 @@
+<ejs-grid id="grid" height="348px">
+    <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/Orders/" adaptor="ODataV4Adaptor"></e-data-manager>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Empolyee Name" foreignKeyField="EmployeeID" foreignKeyValue="FirstName" width="150">
+            <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/Employees/" adaptor="ODataV4Adaptor">
+            </e-data-manager>
+        </e-grid-column>               
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" editType="numericedit" format="C2" width="120"></e-grid-column>               
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" editType="dropdownedit" width="150"></e-grid-column>
+    </e-grid-columns>
+ </ejs-grid>   
