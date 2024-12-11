@@ -1,0 +1,33 @@
+<p style="color:red;text-align:center;padding-bottom:10px" id="message"></p>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).AllowPaging().AllowSelection().CellDeselecting("cellDeselecting").CellDeselected("cellDeselected").CellSelecting("cellSelecting").CellSelected("cellSelected").SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).Mode(Syncfusion.EJ2.Grids.SelectionMode.Cell)).Render()
+<script>
+    function cellSelected(args)
+    {
+        document.getElementById("message").innerText = ` Trigger cellSelected`;
+        args.currentCell.style.backgroundColor = 'rgb(96, 158, 101)';
+    }
+    function cellSelecting(args)
+    {
+        document.getElementById("message").innerText = `Trigger cellSelecting`;
+        if (args.data.ShipCountry == 'France')
+            args.cancel = true;
+    }
+
+    function cellDeselected(args)
+    {
+        document.getElementById("message").innerText = `Trigger cellDeselected`;
+        args.cells[0].style.backgroundColor = 'rgb(245, 69, 69)';
+    }
+    function cellDeselecting(args)
+    {
+        document.getElementById("message").innerText = `Trigger cellDeselecting`;
+        args.cells[0].style.color = 'rgb(253, 253, 253)';
+    }
+</script>

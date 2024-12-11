@@ -10,7 +10,7 @@ documentation: UG
 
 # How to change the default width and height
 
-To change the default width and height of the Syncfusion PDF Viewer, modify the `Width` and `Height` properties of the PDFViewer control.
+To change the default width and height of the Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer, modify the `Width` and `Height` properties of the PDFViewer control.
 
 ```html
 <div>
