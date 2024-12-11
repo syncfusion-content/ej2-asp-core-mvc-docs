@@ -2,7 +2,7 @@
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="90"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" customFormat="@(new { type ="date", format="dd/MM/yyyy" })" type="date" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="ShippedDate" headerText="Shipped Date" customFormat="@(new { type ="dateTime", format="dd/MM/yyyy hh:mm a" })" type="dateTime" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="dd/MM/yyyy" type="date" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="ShippedDate" headerText="Shipped Date" format="dd/MM/yyyy hh:mm a" type="dateTime" textAlign="Right" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
