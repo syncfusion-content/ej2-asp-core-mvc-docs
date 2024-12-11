@@ -10,7 +10,7 @@ documentation: ug
 
 # Column menu in ASP.NET Core Grid component
 
-The column menu in the Syncfusion ASP.NET Core Grid component provides options to enable features such as sorting, grouping, filtering, column chooser, and autofit. When users click on the column header's menu icon, a menu will be displayed with these integrated features. To enable the column menu, you need to set the [showColumnMenu](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnMenu) property to **true** in the Grid configuration.
+The column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component provides options to enable features such as sorting, grouping, filtering, column chooser, and autofit. When users click on the column header's menu icon, a menu will be displayed with these integrated features. To enable the column menu, you need to set the [showColumnMenu](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnMenu) property to **true** in the Grid configuration.
 
 To use the column menu, inject the **ColumnMenu** in the **provide** section.
 
@@ -44,7 +44,7 @@ The default column menu items are displayed in following table.
 
 ## Add custom column menu item
 
-The custom column menu item feature allows you to add additional menu items to the column menu in the Syncfusion Grid. These custom menu items can be defined using the [columnMenuItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuItems) property, which accepts a collection of `columnMenuItemModel` objects. You can define the actions for these custom items in the [columnMenuClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuClick) event.
+The custom column menu item feature allows you to add additional menu items to the column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. These custom menu items can be defined using the [columnMenuItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuItems) property, which accepts a collection of `columnMenuItemModel` objects. You can define the actions for these custom items in the [columnMenuClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuClick) event.
 
 Consider the following example, which demonstrates how to add a custom column menu item to clear the sorting of the Grid:
 
@@ -109,7 +109,7 @@ To customize the column menu icon, follow the below step:
       }
 ```
 
-Here is an example that demonstrates how to customize the column menu icon in the Syncfusion Grid:
+Here is an example that demonstrates how to customize the column menu icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
 
 {% tabs %}
@@ -125,7 +125,7 @@ Here is an example that demonstrates how to customize the column menu icon in th
 
 ## Column menu events
 
-The column menu in Syncfusion ASP.NET Core Grid provides a set of events that allow customization of behavior and performing actions when the column menu is opened or clicked. The below events are helpful for adding additional functionality or implementing specific actions based on user interactions with the column menu.
+The column menu in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid provides a set of events that allow customization of behavior and performing actions when the column menu is opened or clicked. The below events are helpful for adding additional functionality or implementing specific actions based on user interactions with the column menu.
 
 1.The [columnMenuOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuOpen) event triggers before the column menu opens.
 

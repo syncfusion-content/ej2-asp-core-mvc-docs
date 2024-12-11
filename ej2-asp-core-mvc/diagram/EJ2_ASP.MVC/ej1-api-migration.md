@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Diagram Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+title: Ej1 Api Migration in ##Platform_Name## Diagram Component | Syncfusion®
+description: Learn here all about Ej1 Api Migration in Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -9,17 +9,17 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Diagram component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Diagram component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Background
 
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Defines the background color of diagram elements</b></td>
@@ -108,8 +108,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Sets the direction of line bridges</b></td>
@@ -138,8 +138,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Stores the multiple command names with the corresponding command objects</b></td>
@@ -273,8 +273,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Allows the user to save custom information/data about a connector</b></td>
@@ -2003,8 +2003,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -2462,8 +2462,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Defines the data source either as a collection of objects or as an instance of ej.DataManager</b></td>
@@ -3314,8 +3314,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Initializes the default values for nodes and connectors</b></td>
@@ -3428,8 +3428,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Sets the type of JSON object to be drawn through drawing tool</b></td>
@@ -3479,8 +3479,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Enables or disables auto scroll in diagram</b></td>
@@ -3514,8 +3514,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Enables or disables diagram context menu</b></td>
@@ -3548,8 +3548,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -3586,8 +3586,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -3621,8 +3621,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -3659,8 +3659,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -3701,8 +3701,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>Specifies the height of the diagram</b></td>
@@ -3735,8 +3735,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 <tr>
 <td><b>A method that takes a history entry as argument and returns whether the specific entry can be popped or not</b></td>
@@ -4176,8 +4176,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -4679,8 +4679,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -8111,8 +8111,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -8195,8 +8195,8 @@ This article describes the API migration process of Diagram component from Essen
  <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -8270,8 +8270,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -8960,8 +8960,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -9109,8 +9109,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -9256,8 +9256,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -9462,8 +9462,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -9499,8 +9499,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -9534,8 +9534,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -9569,8 +9569,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -9847,8 +9847,8 @@ This article describes the API migration process of Diagram component from Essen
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
@@ -9913,8 +9913,8 @@ To load EJ1 JSON data in an EJ2 diagram, follow these steps.
 <table>
 <tr>
 <td><b>behavior</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</b></td>
+<td><b>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</b></td>
 </tr>
 
 <tr>
