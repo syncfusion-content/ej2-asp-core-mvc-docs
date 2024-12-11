@@ -1,0 +1,8 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" toolbar="@(new List<string>() {"Print","Search"})" height="348"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="ShipCity" width="120"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

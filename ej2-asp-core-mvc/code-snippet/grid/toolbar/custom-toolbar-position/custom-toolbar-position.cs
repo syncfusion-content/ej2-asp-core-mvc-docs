@@ -1,5 +1,5 @@
 public IActionResult Index()
 {
-    ViewBag.DataSource = EmployeeDetails.GetAllRecords();
+    ViewBag.dataSource = EmployeeDetails.GetAllRecords();
     return View();
 }

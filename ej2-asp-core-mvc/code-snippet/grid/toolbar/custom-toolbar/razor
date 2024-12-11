@@ -1,38 +1,18 @@
-@using Syncfusion.EJ2.Navigations;
-
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ToolbarTemplate("#template").Columns(col =>
+@{
+    List<object> toolbarItems = new List<object>();
+    toolbarItems.Add(new { text= "Expand All", tooltipText= "Expand All", prefixIcon= "e-expand", id= "expandall" });
+    toolbarItems.Add(new { text= "Collapse All", tooltipText= "Collapse All", prefixIcon= "e-collapse-2", id= "collapseall", align= "Right"  });
+}
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).ToolbarClick("toolbarClick").Height("348px").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("Freight").HeaderText("Freight").Width("120").EditType("numericedit").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
-
-}).AllowGrouping().GroupSettings(group => { group.Columns(new string[] { "CustomerID" }); }).Render()
-
-<div id="template">
-    @(Html.EJS().Toolbar("defaultToolbar")
-    .Items(new List<ToolbarItem> {
-        new ToolbarItem { Id="collapse", PrefixIcon = "e-collapse" }
-    }).Clicked("clickHandler")
-    .Render())
-</div>
-
-<style>
-    .e-expand::before {
-        content: '\e82e';
-    }
-    .e-collapse::before {
-        content: '\e834';
-    }
-</style>
+}).AllowGrouping(true).GroupSettings(group => { group.Columns(new string[] { "CustomerID" }); }).Toolbar(toolbarItems).Render();
 <script>
-    function clickHandler(args) {
-        var target = args.originalEvent.target.closest('button'); //find clicked button
-        var gridInstance = document.getElementById("Grid").ej2_instances[0];
-        if (target.id === 'collapse') {
-            //collapse all expanded grouped row
-            gridInstance.groupModule.collapseAll();
-        }
-    };
+    function toolbarClick(args) {
+        if (args.item.id === 'expandall') this.groupModule.expandAll();
+        else this.groupModule.collapseAll();
+    }
 </script>

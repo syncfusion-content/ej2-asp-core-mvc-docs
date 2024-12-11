@@ -1,0 +1,38 @@
+
+@{
+    List<object> toolbarItems = new List<object>();
+    toolbarItems.Add("Add");
+    toolbarItems.Add("Edit");
+    toolbarItems.Add("Delete");
+    toolbarItems.Add("Update");
+    toolbarItems.Add("Cancel");
+}
+<div><p style="color:red;text-align: center;" id="message"></p></div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" toolbarClick="toolbarClick" toolbar=toolbarItems>
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="120"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function toolbarClick(args)
+    {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_add') {
+            args.cancel = true;
+            const newRecord = {
+                OrderID: 10247,
+                CustomerID: 'TOMSP',
+                ShipName: 'Hanari Carnes',
+                ShipCity: 'Lyon',
+            };
+            grid.addRecord(newRecord);
+            document.getElementById("message").innerText= 'The default adding action is cancelled, and a new record is added using the addRecord method.';
+        }
+        else
+        document.getElementById("message").innerText = '';
+    }
+</script>

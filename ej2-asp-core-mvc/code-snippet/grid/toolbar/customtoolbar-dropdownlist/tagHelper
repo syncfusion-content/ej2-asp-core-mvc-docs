@@ -1,0 +1,35 @@
+@{
+    var dropDownData = new[] {
+        new { value = "Edit", text = "Edit" },
+        new { value = "Delete", text = "Delete" },
+        new { value = "Update", text = "Update" }
+    };
+}
+<div style="padding-bottom: 20px; display: flex">
+    <label style="padding: 2px 10px 0 0;font-weight: bold"> Change the value:</label>
+    <span style="height:fit-content">
+        <ejs-dropdownlist id="dropDown" dataSource="dropDownData" width="150px" change="onChange" placeholder="Select a value">
+        </ejs-dropdownlist>  
+    </span>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px">
+   <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function onChange(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        var dropDownObject = document.getElementById("dropDown").ej2_instances[0];
+        let selectedRow = grid.getSelectedRecords()[0];
+        if (args.itemData.text === 'Update') grid.endEdit();
+        else if (args.itemData.text === 'Edit') grid.startEdit();
+        else grid.deleteRecord(selectedRow);
+        dropDownObject.value = '';
+        dropDownObject.placeholder = args.itemData.text;
+    }
+</script>
