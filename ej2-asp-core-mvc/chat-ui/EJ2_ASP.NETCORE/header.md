@@ -16,9 +16,9 @@ You can use `showHeader` property to enable or disable the chat header. It conta
 
 ### Setting header text
 
-You can use the `headerText` property to display the text that appears in the header, which indicates the current username or the group name, providing the context for the conversation.
+You can use the `headerText` property to display the text that appears in the header, which indicates the current username or the group name providing the context for the conversation.
 
-### Setting header iconCss
+### Setting header icon CSS
 
 You can use the `headerIconCss` property to customize the styling of the header icon.
 
@@ -30,7 +30,7 @@ You can render the Chat UI toolbar items by using the `items` property in the, `
 
 Items can be constructed with the following built-in command types or item template.
 
-#### Adding iconCss
+#### Adding icon CSS
 
 You can customize the header toolbar icons by using the `iconCss` property.
 
@@ -56,7 +56,7 @@ You can use the `disabled` property to disable the header toolbar item. By defau
 
 You can use the `tooltip` property to specify the tooltip text to be displayed on hovering the header toolbar item.
 
-#### Setting cssClass
+#### Setting CSS Class
 
 You can use the `cssClass` property to customize the header toolbar item.
 

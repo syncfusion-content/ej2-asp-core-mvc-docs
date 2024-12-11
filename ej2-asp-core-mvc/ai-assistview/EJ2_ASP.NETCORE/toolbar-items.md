@@ -242,7 +242,7 @@ In the following example, AI AssistView control rendered with built-in toolbar i
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/ai-assistview/toolbar-items/prompt/tagHelper %}
+{% include code-snippet/ai-assistview/toolbar-items/prompt/tagHelper %}                     
 {% endhighlight %}
 {% endtabs %}
 

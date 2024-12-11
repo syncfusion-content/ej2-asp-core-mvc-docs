@@ -20,7 +20,7 @@ You can use the `Text` property to add message content for the user. Each messag
 
 You can use the `Author` property to identify the current user of the chat. Each user can be configured with options such as id, user, avatarUrl, and more.
 
-You can use the `User` property to display the user name and `Id` property is necessary to differentiate between the multiple users. 
+> You can use the `User` property to display the user name and `Id` property is necessary to differentiate between the multiple users. 
 
 #### Setting avatar URL
 
@@ -40,7 +40,7 @@ You can use the `TimeStamp` property to indicate the date and time of each messa
 
 #### Setting timestamp format
 
-You can use the `TimeStampFormat` to display specific time format for the timestamp. The default value is `dd/MM/yyyy hh:mm a`, but this can be customized to meet different localization and display needs. 
+You can use the `TimeStampFormat` to display specific time format for the timestamp. The default format is `dd/MM/yyyy hh:mm a`, but this can be customized to meet different localization and display needs. 
 
 ### Define message status
 
