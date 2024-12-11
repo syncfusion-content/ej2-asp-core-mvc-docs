@@ -1,8 +1,0 @@
-@Html.EJS().Grid("SelectionAPI").DataSource((IEnumerable<object>)ViewBag.datasource).AllowSelection().Columns(col =>
-{
-    col.Field("Inventor").HeaderText("Inventor Name").Width("180").Add();
-    col.Field("NumberofPatentFamilies").HeaderText("No of Patent Families").Width("195").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Country").HeaderText("Country").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Active").HeaderText("Active").Width("130").Add();
-
-}).AllowPaging().SelectionSettings(select => select.EnableSimpleMultiRowSelection(true).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
