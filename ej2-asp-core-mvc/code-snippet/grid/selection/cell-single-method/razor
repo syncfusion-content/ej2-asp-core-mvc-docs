@@ -1,0 +1,31 @@
+<div style="padding-bottom: 20px">
+    <div>
+        <label style="padding: 30px 5px 0 0;font-weight: bold">Enter the row index:</label>
+        @Html.EJS().TextBox("inputTextBox").Width("120px").Render()
+    </div>
+    <div>
+        <label style="padding: 30px 5px 0 0;font-weight: bold">Enter the cell index:</label>
+        @Html.EJS().TextBox("inputTextBoxTwo").Width("120px").Render()
+    </div>
+    <div style="padding: 10px 0 0px 170px">
+        @Html.EJS().Button("buttons").CssClass("e-primary").Content("Select Cell").Render()
+    </div>
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Single).Mode(Syncfusion.EJ2.Grids.SelectionMode.Cell)).Render()
+<script>
+document.getElementById('buttons').onclick = function () {
+  var grid = document.getElementById("grid").ej2_instances[0];
+  var rowIndex = parseInt(document.getElementById("inputTextBox").ej2_instances[0].value, 10);
+  var cellIndex = parseInt(document.getElementById("inputTextBoxTwo").ej2_instances[0].value, 10);
+  if (!isNaN(rowIndex) && !isNaN(cellIndex)) {
+    grid.selectCell({ rowIndex: rowIndex, cellIndex: cellIndex });
+  }
+};
+</script>
