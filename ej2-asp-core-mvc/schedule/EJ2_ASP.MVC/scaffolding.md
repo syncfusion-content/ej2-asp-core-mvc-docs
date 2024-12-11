@@ -11,9 +11,9 @@ documentation: ug
 
 # ASP.NET MVC Scaffolding
 
-Syncfusion includes an extension for **Visual Studio** with UI Scaffolding options for the ASP.NET MVC Scheduler to quickly add its code and interact with data models. This allows you to easily create the appropriate **Views** and **Controller** action methods with respective ASP.NET MVC Scheduler code.
+Syncfusion<sup style="font-size:70%">&reg;</sup> includes an extension for **Visual Studio** with UI Scaffolding options for the ASP.NET MVC Scheduler to quickly add its code and interact with data models. This allows you to easily create the appropriate **Views** and **Controller** action methods with respective ASP.NET MVC Scheduler code.
 
-N> The Syncfusion ASP.NET MVC UI Scaffolder is available from the version **v16.4.0.40**.
+N> The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI Scaffolder is available from the version **v16.4.0.40**.
 
 ## Getting Started
 
@@ -21,13 +21,13 @@ Let's start with the steps on how to scaffold the ASP.NET MVC Scheduler into you
 
 * Create an ASP.NET MVC application and add an Entity Framework data model referring from the [documentation](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/creating-the-web-application#generate-the-models) with Scheduler related fields such as Id, Subject, Location, Start Date, End Date and All-day. Once the model file is added, ensure the required DBContext and all its related properties are added.
 
-* Refer the [Getting Started documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application) to know about how to configure the Syncfusion Essential JS2 for ASP.NET MVC in your web application.
+* Refer the [Getting Started documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application) to know about how to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 for ASP.NET MVC in your web application.
 
 * Right-click on the **Controllers** folder in the Solution Explorer and select **Add → New Scaffolded Item** from the menu options.
 
 ![Solution explorer showing New Scaffold option](images/default-template.png)
 
-* You will see the `Add Scaffold` dialog. Select the **Syncfusion ASP.NET MVC UI Scaffolder** and click `Add` button, which will display the Syncfusion UI Scaffolding dialog.
+* You will see the `Add Scaffold` dialog. Select the **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI Scaffolder** and click `Add` button, which will display the Syncfusion<sup style="font-size:70%">&reg;</sup> UI Scaffolding dialog.
 
 ![Syncfusion ASPNET MVC UI scaffolder](images/ui-scaffolder.png)
 
@@ -35,7 +35,7 @@ Let's start with the steps on how to scaffold the ASP.NET MVC Scheduler into you
 
 ![Syncfusion UI scaffolding dialog showing control selection](images/control-template.png)
 
-* `Syncfusion UI Scaffolding for Scheduler` dialog will be opened, from which you are opted to choose the Model and Data Context options. Enter the **Controller** and **View** names as per the application requirement. Once the required **Model Class** and its relevant **Data Context Class** are chosen, now click the **Next** button, which offers the Scheduler functionalities to be configured before scaffolding.
+* `Syncfusion<sup style="font-size:70%">&reg;</sup> UI Scaffolding for Scheduler` dialog will be opened, from which you are opted to choose the Model and Data Context options. Enter the **Controller** and **View** names as per the application requirement. Once the required **Model Class** and its relevant **Data Context Class** are chosen, now click the **Next** button, which offers the Scheduler functionalities to be configured before scaffolding.
 
 ![Syncfusion UI scaffolding dialog showing model and data context options](images/feature.png)
 

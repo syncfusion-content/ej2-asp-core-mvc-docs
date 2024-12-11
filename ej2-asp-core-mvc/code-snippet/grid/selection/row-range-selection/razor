@@ -1,0 +1,34 @@
+<div style="padding-bottom: 20px">
+   <div>
+    <label style="padding: 30px 5px 0 0">Enter the start row index:</label>
+    @Html.EJS().TextBox("inputTextBox").Width("120px").Render()
+   </div>
+   <div>
+    <label style="padding: 30px 5px 0 0">Enter the end row index:</label>
+    @Html.EJS().TextBox("inputTextBoxLast").Width("120px").Render()
+   </div>
+   <div style="padding-top: 20px;margin-left: 185px;">
+    @Html.EJS().Button("buttons").CssClass("e-primary").Content("Select rows").Render()
+   </div>
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).Mode(Syncfusion.EJ2.Grids.SelectionMode.Row)).Render()
+<script>
+   document.getElementById('buttons').onclick = function () {
+      var grid = document.getElementById("grid").ej2_instances[0];
+      var textBoxStart = document.getElementById("inputTextBox").ej2_instances[0];
+      var textBoxEnd = document.getElementById("inputTextBoxLast").ej2_instances[0];
+      let startIndex = parseInt(textBoxStart.value, 10); 
+      let endIndex = parseInt(textBoxEnd.value, 10); 
+      grid.selectionModule.clearRowSelection();
+      if (!isNaN(startIndex) && !isNaN(endIndex)) {
+         grid.selectionModule.selectRowsByRange(startIndex, endIndex);
+      }
+   };
+</script>

@@ -13,7 +13,7 @@ documentation: ug
 
 Since Tab is a Navigation control, it doesn't have support to load any content directly or using any DataAdaptor. But it is provided with the items support. So to load the content as partial view, you would need to make use of the AJAX or EJ2 Datamanager as described in our [How-To](./load-tab-with-data-source) section help document.
 
-In the below demo, we have explained on how to create the Tab items dynamically and then to load the other Syncfusion controls in it from partial views.
+In the below demo, we have explained on how to create the Tab items dynamically and then to load the other Syncfusion<sup style="font-size:70%">&reg;</sup> controls in it from partial views.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

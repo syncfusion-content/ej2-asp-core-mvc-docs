@@ -14,7 +14,7 @@ Cross-Site Scripting is a security vulnerability and a client-side injection att
 
 ## EnableHtmlSanitizer Supported Controls
 
-The following list demonstrates the Syncfusion ASP.NET Core controls that are supported with `EnableHtmlSanitizer` property.
+The following list demonstrates the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls that are supported with `EnableHtmlSanitizer` property.
 
 * [Accordion](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Accordion.html#Syncfusion_EJ2_Navigations_Accordion_EnableHtmlSanitizer)
 * [Button](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_EnableHtmlSanitizer)

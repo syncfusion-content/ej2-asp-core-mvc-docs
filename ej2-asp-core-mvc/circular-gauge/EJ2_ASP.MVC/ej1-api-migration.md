@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Accordion component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Circular gauge dimensions
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Height| **Property:** *height*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Height("400px")`|**Property:** *height*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Height("400px").Render()`|
 |Width| **Property:** *width*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Width("100px")`|**Property:** *width*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Height("150px").Render()`|
@@ -24,7 +24,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Axis Line
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Axisline Width| **Property:** *scales.size*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => sc.ShowScaleBar(true)` <br/> `.size(1).Add())`|**Property:** *axes.lineStyle.width*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.LineStyle(new CircularGaugeLine` <br/> `{ Width = 0 }).Add()).Render()`|
 |Axisline Color| **Property:** *scales.color*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => sc.ShowScaleBar(true)` <br/> `.color('red').Add())`|**Property:** *axes.lineStyle.color*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.LineStyle(new CircularGaugeLine` <br/> `{ color = 'red' }).Add()).Render()`|
@@ -38,7 +38,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Ticks
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Type of Ticks| **Property:** *scales.ticks.type*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => {Ticks(tic => {tic.Type(CircularTickTypes.Major)` <br/> `.Add()}).Add()})`| **Property:** *axes.majorTicks*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.MajorTicks.Add())` <br/> `.Render()`|
 |Height of Major Ticks| **Property:** *scales.ticks.height*<br/><br/>  `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => {Ticks(tic => {tic.Type(CircularTickTypes.Major)` <br/> `.Height(12).Add()}).Add()})`| **Property:** *axes.majorTicks.height*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.MajorTicks(mi => mi.Height(12))` <br/> `.Add()).Render()`|
@@ -56,7 +56,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Labels
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Autoangle| **Property:** *scales.labels.autoAngle*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => {Labels(lbl => {lbl.showLabels(true)` <br/> `.Add()}).Add()})`| **Property:** *axes.labelStyle.autoAngle*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.LabelStyle(ls => ls.AutoAngle(true))` <br/> `.Add()).Render()`|
 |Angle| **Property:** *scales.labels.angle*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => sc.showLabels(true).Labels(lbl => {lbl.Angle(20)` <br/> `.Add()}).Add()})`| Not Applicable|
@@ -73,7 +73,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Ranges
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Start Value| **Property:** *scales.ranges.startValue*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => {Ranges(ran => {ran.StartValue(20)` <br/> `.Add()}).Add()})`| **Property:** *axes.ranges.start*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.Ranges(ran => ran.Start(20))` <br/> `.Add()).Render()`|
 |End Value| **Property:** *scales.ranges.endValue*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => {Ranges(ran => {ran.EndValue(30)` <br/> `.Add()}).Add()})`| **Property:** *axes.ranges.end*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.Ranges(ran => ran.End(30))` <br/> `.Add()).Render()`|
@@ -89,7 +89,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Needle Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Needle Pointer| **Property:** *scales.pointers.type*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => {Pointers(po => {po.Type(PointerType.Needle)` <br/> `.Add()}).Add()})`| **Property:** *axes.pointers.type*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.Pointers(pt => pt.Type(PointerType.Needle)` <br/> `.Value(20)).Add()).Render()`|
 |Needle Pointer Color| **Property:** *scales.pointers.backgroundColor*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => {Pointers(po => {po.BackgroundColor('red')` <br/> `.Add()}).Add()})`| **Property:** *axes.pointers.color*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.Pointers(pt => pt.Color("red"))` <br/> `.Add()).Render()`|
@@ -102,7 +102,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Marker Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Marker Pointer| **Property:** *scales.pointers.type*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => {Pointers(po => {po.Type(PointerType.Marker)` <br/> `.Add()}).Add()})`| **Property:** *axes.pointers.type*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.Pointers(pt => pt.Type(PointerType.Marker)` <br/> `.Value(20)).Add()).Render()`|
 |Marker Type| **Property:** *scales.pointers.markerType*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => {Pointers(po => {po.MarkerType(MarkerType.Diamond)` <br/> `.Add()}).Add()})`| **Property:** *axes.pointers.markerShape*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.Pointers(pt => pt.Type(PointerType.Marker)` <br/> `.MarkerShape(GaugeShape.Diamond)).Add()).Render()`|
@@ -113,14 +113,14 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Rangebar Pointer
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Rangebar| Not Applicable| **Property:** *axes.pointers.type*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.Pointers(pt => pt.Type(PointerType.RangeBar)` <br/> `.Value(20)).Add()).Render()`|
 |Rounded Corner Radius| Not Applicable| **Property:** *axes.pointers.roundedCornerRadius*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.Pointers(pt => pt.Type(PointerType.RangeBar)` <br/> `.RoundedCornerRadius(10).Add()).Render()`|
 
 ## Annotations
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Content| **Property:** *scales.customLabels.value*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => {CustomLabels(c1 =>` <br/> `{c1.Value("Circular Gauge")` <br/> `.Add()}).Add()})`| **Property:** *axes.annotations.content*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.Annotations(an => an.Content("Circular Gauge"))` <br/> `.Add()).Render()`|
 |Angle| **Property:** *scales.customLabels.textAngle*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.Scales(sc => {CustomLabels(c1 =>` <br/> `{c1.TextAngle(90)` <br/> `.Add()}).Add()})`| **Property:** *axes.annotations.angle*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Axes(axes => axes.Annotations(an => an.Angle(90))` <br/> `.Add()).Render()`|
@@ -134,7 +134,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Appearance
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Title| Not Applicable| **Property:** *title*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Title("Circular Gauge").Render()`|
 |Background Color| **Property:** *backgroundColor*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.BackgroundColor('red')`| **Property:** *background*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.Background("Red").Render()`|
@@ -147,7 +147,7 @@ This article describes the API migration process of Accordion component from Ess
 
 ## Events
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Annotation Event| **Event:** *drawCustomLabel*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.DrawCustomLabel("customLabel")`<br/> `function customLabel(args) {}`| **Event:** *annotationRender*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.AnnotationRender("annotationRender").Render()` <br/> `<script>function annotationRender(args) {}</script>`|
 |Label Event| **Event:** *drawLabels*<br/><br/> `@Html.EJ().CircularGauge("container")` <br/> `.DrawLabels("drawLabels")` <br/> `function drawLabels(args) {}`| **Event:** *axisLabelRender*<br/><br/> `@Html.EJS().CircularGauge("container")` <br/> `.AxisLabelRender("axisLabelRender").Render()` <br/> `<script>function axisLabelRender(args) {}</script>`|

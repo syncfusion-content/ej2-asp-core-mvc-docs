@@ -13,7 +13,7 @@ documentation: ug
 
 The text contents provided in the PDF Viewer can be localized using the collection of localized strings for different cultures. By default, the PDF Viewer is localized in “__en-US__”.
 
-The following table shows the default text values used in Syncfusion PDF Viewer in 'en-US' culture:
+The following table shows the default text values used in Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer in 'en-US' culture:
 
 |Keywords|Values|
 |---|---|
