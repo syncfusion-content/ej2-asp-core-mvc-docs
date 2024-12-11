@@ -10,11 +10,11 @@ documentation: ug
 
 # Input Form Validation
 
-The Syncfusion ASP.NET MVC UI input and editor controls can be validated by using [FormValidator](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/) in client side.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI input and editor controls can be validated by using [FormValidator](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/) in client side.
 
-## How to Validate Syncfusion ASP.NET MVC UI Controls
+## How to Validate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI Controls
 
-1.Add the `Form` component in the **Index.cshtml** page. Also, declare the Syncfusion ASP.NET MVC [TextBox](../textbox/getting-started) control inside the `Form` component.
+1.Add the `Form` component in the **Index.cshtml** page. Also, declare the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC [TextBox](../textbox/getting-started) control inside the `Form` component.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -107,7 +107,7 @@ N> TextBox control supports three types of validation styles. Refer [here](https
 
 ## ASP.NET MVC Form Validation Supported Controls
 
-The following section provides the details about the Syncfusion ASP.NET MVC UI controls that are supported with form validation.
+The following section provides the details about the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI controls that are supported with form validation.
 
 * [Masked TextBox](https://ej2.syncfusion.com/aspnetmvc/documentation/maskedtextbox/how-to/perform-custom-validation-using-form-validator)
 * [NumericTextBox](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/how-to/perform-custom-validation-using-form-validator)

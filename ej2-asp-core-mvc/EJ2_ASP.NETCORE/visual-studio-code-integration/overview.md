@@ -10,8 +10,8 @@ documentation: ug
 
 # Overview of ASP.NET Core Extension for Visual Studio Code
 
-The Syncfusion ASP.NET Core Extension for Visual Studio Code makes it simple to use the Syncfusion ASP.NET Core components in the ASP.NET Core application by simply configuring the Syncfusion NPM or NuGet packages and themes.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension for Visual Studio Code makes it simple to use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components in the ASP.NET Core application by simply configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> NPM or NuGet packages and themes.
 
-The Syncfusion ASP.NET Core Extension provides the following support in Visual Studio Code:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension provides the following support in Visual Studio Code:
 
-[Create-Project](create-project): Creates Syncfusion ASP.NET Core application (Syncfusion Web Application (Model-View-Controller), Syncfusion Angular, Syncfusion React.js) with the necessary configuration to use in Syncfusion ASP.NET Core component during development.
+[Create-Project](create-project): Creates Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core application (Syncfusion<sup style="font-size:70%">&reg;</sup> Web Application (Model-View-Controller), Syncfusion<sup style="font-size:70%">&reg;</sup> Angular, Syncfusion<sup style="font-size:70%">&reg;</sup> React.js) with the necessary configuration to use in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core component during development.

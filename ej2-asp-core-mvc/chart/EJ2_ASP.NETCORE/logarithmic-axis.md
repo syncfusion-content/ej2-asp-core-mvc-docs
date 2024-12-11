@@ -15,7 +15,7 @@ documentation: ug
 
 Logarithmic axis uses logarithmic scale and it is very useful in visualizing data, when it has numeric values in both lower order of magnitude (eg: 10<sup>-6</sup>) and higher order of magnitude (eg: 10<sup>6</sup>).
 
-To quickly get started with Syncfusion ASP.NET Core Logarithmic Axis, you can check out this video:
+To quickly get started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Logarithmic Axis, you can check out this video:
 
 {% youtube "https://www.youtube.com/watch?v=l3M5ZvM1Ozs" %}
 

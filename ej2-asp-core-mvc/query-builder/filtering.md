@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filtering in Syncfusion Query Builder Control
+# Filtering in Syncfusion<sup style="font-size:70%">&reg;</sup> Query Builder Control
 
 Query Builder allows you to create or delete conditions and groups. You can use [`ShowButtons`]
 (https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_ShowButtons) to enable/disable these buttons.

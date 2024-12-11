@@ -235,7 +235,7 @@ In the following code, the button element is rendered in the **Employee Data** c
 
 ## Use custom helper inside the template
 
-The Syncfusion Grid allows you to use custom helpers inside the `Template` property of a column. This feature allows you to create complex templates that can incorporate additional helper functions that are not available through the default `Template` syntax.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to use custom helpers inside the `Template` property of a column. This feature allows you to create complex templates that can incorporate additional helper functions that are not available through the default `Template` syntax.
 
 To use the custom helper function inside a column template, you must first add the function to the template's context.
 

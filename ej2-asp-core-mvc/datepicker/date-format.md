@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Date Format in Syncfusion Datepicker Component
+# Date Format in Syncfusion<sup style="font-size:70%">&reg;</sup> Datepicker Component
 
 Date format is a way of representing the date value in different string format in textbox.
 
