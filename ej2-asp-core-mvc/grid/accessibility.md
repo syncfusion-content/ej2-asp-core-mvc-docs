@@ -335,4 +335,4 @@ The accessibility compliance of the Grid component is shown in the following sam
 
 ## See also
 
-* [Accessibility in Syncfusion Grid component](../common/accessibility)
+* [Accessibility in Syncfusion Grid control](../common/accessibility)
