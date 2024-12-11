@@ -281,7 +281,8 @@ The pointers can be dragged along the axis line by clicking and dragging them. T
 
 To enable or disable the drag functionality for specific pointers along the axis line, use the `EnableDrag` property in the required pointer model.
 
-NOTE: When the `EnableDrag` property is enabled for any individual pointer model, the `EnablePointerDrag` property becomes ineffective.
+N> When the `EnableDrag` property is enabled for any individual pointer model, the `EnablePointerDrag` property becomes ineffective.
+
 The following example demonstrates how to enable the drag functionality for multiple pointers individually.
 
 {% if page.publishingplatform == "aspnet-core" %}
