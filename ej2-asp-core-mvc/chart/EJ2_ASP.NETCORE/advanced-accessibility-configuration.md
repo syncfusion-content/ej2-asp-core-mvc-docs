@@ -113,7 +113,7 @@ In the ##Platform_Name## chart control, the `titleStyle` and `subTitleStyle` att
 
 ## Annotations
 
-The `annotations` property allows you to add annotations to the chart in specific regions. The following characteristics allow for the customization of the annotations accessibility:
+The `annotations` property allows you to add annotations to the chart in specific regions. The following `accessibility` properties in `annotations` can be customized for accessibility:
 
 * `accessibilityDescription` - Provides a text description for the annotation, enhancing support for screen readers.
 * `accessibilityRole` - Specifies the role of the annotation, helping screen readers to identify the element appropriately.
@@ -145,7 +145,7 @@ The `annotations` property allows you to add annotations to the chart in specifi
 
 ## Trendline
 
-Customizable properties within the `trendlines` allow you to control the accessibility of the trendlines on the chart, including:
+The `trendlines` property allows you to display trends in the data. The following `accessibility` properties in `trendlines` can be customized for accessibility:
 
 * `accessibilityDescription` - Provides a text description for the trendline, enhancing support for screen readers.
 * `accessibilityRole` - Specifies the role of the trendline, helping screen readers to identify the element appropriately.
@@ -209,7 +209,7 @@ The `zoomSettings` attributes allow you to adjust the chart's zooming capability
 
 ## Technical indicators
 
-Customizable properties within the `indicators` allow you to control the accessibility of the technical indicators on the chart, including:
+The `indicators` property allows you to analyze the trends and patterns in the data. The following `accessibility` properties in `indicators` can be customized for accessibility:
 
 * `accessibilityDescription` - Provides a text description for the indicators, enhancing support for screen readers.
 * `accessibilityRole` - Specifies the role of the indicators, helping screen readers to identify the element appropriately.
