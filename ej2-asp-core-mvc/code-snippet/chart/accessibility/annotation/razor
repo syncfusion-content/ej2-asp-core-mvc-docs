@@ -1,0 +1,21 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+   Marker(ViewBag.Marker).
+   XName("x").
+   YName("yValue").
+   DataSource(ViewBag.dataSource).
+   Name("Gold").
+   Width(2).Add();
+   }).
+   Annotations(an => {
+        an.X("USA").Y("50").CoordinateUnits(Syncfusion.EJ2.Charts.Units.Point)
+        .Accessibility(access => 
+                access.AccessibilityDescription('Annotation indicating that USA has won 50 Gold Medals.')
+                .AccessibilityRole('note')
+                .Focusable(true)
+        )
+        .VerticalAlignment(Syncfusion.EJ2.Charts.Position.Top).Content(ViewBag.content).Add();
+    }).
+   PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).
+   Title("Olympic Medal Counts - RIO").Render()
