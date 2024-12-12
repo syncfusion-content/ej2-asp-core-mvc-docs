@@ -18,8 +18,8 @@ The [htmlAttributes](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Sy
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/menu/how-to/htmlAttributes/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Underline.cs" %}
-{% include code-snippet/menu/how-to/htmlAttributes/Underline.cs %}
+{% highlight c# tabtitle="CustomizeMenuItems.cs" %}
+{% include code-snippet/menu/how-to/htmlAttributes/CustomizeMenuItems.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -29,8 +29,8 @@ The [htmlAttributes](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Sy
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/menu/how-to/htmlAttributes/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Underline.cs" %}
-{% include code-snippet/menu/how-to/htmlAttributes/Underline.cs %}
+{% highlight c# tabtitle="CustomizeMenuItems.cs" %}
+{% include code-snippet/menu/how-to/htmlAttributes/CustomizeMenuItems.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
