@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notification | Syncfusion
+title: Notification ASP.NET MVC - EJ2 Extension | Syncfusion
 description: For displaying the notifications about trial and newer version update information for Syncfusion applications.
 platform: ej2-asp-core-mvc
 control: Syncfusion VS Extensions
