@@ -16,31 +16,87 @@ The Chat UI allows to add messages using the `<e-chatui-message>` tag directive 
 
 You can use the `text` property to add message content for the user. Each message can be configured with options such as id, text, author, timestamp, and more.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/text/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Text](images/text.png)
+
 ### Define current user
 
 You can use the `author` property to identify the current user of the chat. Each user can be configured with options such as id, user, avatarUrl, and more.
 
 > You can use the `user` property to display the user name and `id` property is necessary to differentiate between the multiple users. 
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/user/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![User](images/text.png)
+
 #### Setting avatar URL
 
-You can use the `avatarUrl` property to define the image URL’s for the user avatar. If no URL is provided, fallback initials of the first and last name from the user’s name will be used.  
+You can use the `avatarUrl` property to define the image URL’s for the user avatar. If no URL is provided, fallback initials of the first and last name from the user’s name will be used.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/avatarUrl/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![AvatarUrl](images/avatar-url.png)
 
 #### Setting avatar background color
 
 You can use the `avatarBgColor` property to set a specific background color for user avatars using hexadecimal values. If no color is set, a custom background color is set based on specified theme.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/avatarColor/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![AvatarBgColor](images/avatar-bgcolor.png)
+
 #### Setting CSS class
 
-You can use the `cssClass` property to customize the appearance of the chat user. 
+You can use the `cssClass` property to customize the appearance of the chat user.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/avatarCssClass/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![CssClass](images/avatar-cssclass.png)
 
 ### Define timestamp
 
 You can use the `timeStamp` property to indicate the date and time of each message being sent. By default it is set to the current date and time when the message is sent.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/timestamp/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![TimeStamp](images/timestamp.png)
+
 #### Setting timestamp format
 
-You can use the `timeStampFormat` to display specific time format for the timestamp. The default format is `dd/MM/yyyy hh:mm a`, but this can be customized to meet different localization and display needs. 
+You can use the `timeStampFormat` to display specific time format for the timestamp. The default format is `dd/MM/yyyy hh:mm a`, but this can be customized to meet different localization and display needs.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/timestampFormat/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![TimeStampFormat](images/timestampFormat.png)
 
 ### Define message status
 

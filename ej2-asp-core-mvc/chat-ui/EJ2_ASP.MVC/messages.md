@@ -16,31 +16,108 @@ The Chat UI allows to add messages using the `Messages` property. The message�
 
 You can use the `Text` property to add message content for the user. Each message can be configured with options such as id, text, author, timestamp, and more.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/text/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Text.cs" %}
+{% include code-snippet/chat-ui/messages/text/text.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Text](images/text.png)
+
 ### Define current user
 
 You can use the `Author` property to identify the current user of the chat. Each user can be configured with options such as id, user, avatarUrl, and more.
 
-> You can use the `User` property to display the user name and `Id` property is necessary to differentiate between the multiple users. 
+> You can use the `User` property to display the user name and `Id` property is necessary to differentiate between the multiple users.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/user/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="User.cs" %}
+{% include code-snippet/chat-ui/messages/user/user.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![User](images/text.png)
 
 #### Setting avatar URL
 
-You can use the `AvatarUrl` property to define the image URL’s for the user avatar. If no URL is provided, fallback initials of the first and last name from the user’s name will be used.  
+You can use the `AvatarUrl` property to define the image URL’s for the user avatar. If no URL is provided, fallback initials of the first and last name from the user’s name will be used.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/avatarUrl/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="AvatarUrl.cs" %}
+{% include code-snippet/chat-ui/messages/avatarUrl/avatarUrl.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![AvatarUrl](images/avatar-url.png)
 
 #### Setting avatar background color
 
 You can use the `AvatarBgColor` property to set a specific background color for user avatars using hexadecimal values. If no color is set, a custom background color is set based on specified theme.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/avatarColor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="AvatarColor.cs" %}
+{% include code-snippet/chat-ui/messages/avatarColor/avatarColor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![AvatarBgColor](images/avatar-bgcolor.png)
+
 #### Setting CSS class
 
-You can use the `CssClass` property to customize the appearance of the chat user. 
+You can use the `CssClass` property to customize the appearance of the chat user.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/avatarCssClass/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="AvatarCssClass.cs" %}
+{% include code-snippet/chat-ui/messages/avatarCssClass/avatarCssClass.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![CssClass](images/avatar-cssclass.png)
 
 ### Define timestamp
 
 You can use the `TimeStamp` property to indicate the date and time of each message being sent. By default it is set to the current date and time when the message is sent.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/timestamp/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Timestamp.cs" %}
+{% include code-snippet/chat-ui/messages/timestamp/timestamp.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![TimeStamp](images/timestamp.png)
+
 #### Setting timestamp format
 
 You can use the `TimeStampFormat` to display specific time format for the timestamp. The default format is `dd/MM/yyyy hh:mm a`, but this can be customized to meet different localization and display needs. 
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/timestampFormat/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TimeStampFormat.cs" %}
+{% include code-snippet/chat-ui/messages/timestampFormat/timestampFormat.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![TimeStampFormat](images/timestampFormat.png)
 
 ### Define message status
 

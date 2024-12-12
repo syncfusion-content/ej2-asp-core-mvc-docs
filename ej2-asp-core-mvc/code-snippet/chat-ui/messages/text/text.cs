@@ -5,25 +5,22 @@ public List<ChatUIMessage> ChatMessagesData { get; set; } = new List<ChatUIMessa
 public UserModel CurrentUserModel { get; set; } = new UserModel() { id = "user1", user = "Albert" };
 public UserModel MichaleUserModel { get; set; } = new UserModel() { id = "user2", user = "Michale Suyama" };
 
-public ActionResult Default()
+public ActionResult Text()
 {
     CurrentUser = CurrentUserModel;
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Id = "msg1",
-        Text = "Want to get coffee tomorrow?",
+        Text = "Hi, thinking of painting this weekend.",
         Author = CurrentUserModel
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Id = "msg2",
-        Text = "Sure! What time?",
+        Text = "That’s fun! What will you paint?",
         Author = MichaleUserModel
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Id = "msg3",
-        Text = "How about 10 AM?",
+        Text = "Maybe landscapes.",
         Author = CurrentUserModel
     });
     return View();
