@@ -275,4 +275,35 @@ public class GroupingChartData
 {% endtabs %}
 {% endif %}
 
+## Enable highlight
 
+By setting the `enableHighlight` property to **true**, the hovered pie slice is highlighted, while the remaining slices are dimmed, enhancing focus and clarity.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/highlight/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class GroupingChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/highlight/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Highlight.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/highlight/highlight.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

@@ -191,4 +191,29 @@ By default, tooltip shows information of x and y value in points. You can show m
 {% endtabs %}
 {% endif %}
 
+## Enable highlight
 
+By setting the `enableHighlight` property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/tooltip/highlight/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Highlight.cs" %}
+{% include code-snippet/chart/user-interaction/tooltip/highlight/highlight.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/tooltip/highlight/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Highlight.cs" %}
+{% include code-snippet/chart/user-interaction/tooltip/highlight/highlight.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
