@@ -8,23 +8,20 @@ namespace WebApplication1.Controllers
 {
     public class DropDownButtonController : Controller
     {
-        public ActionResult Separator()
+        public ActionResult Default()
         {
             List<object> items = new List<object>();
             items.Add(new
             {
-                text = "Cut",
-                iconCss = "e-db-icons e-cut"
+                text = "Unread"
             });
             items.Add(new
             {
-                text = "Copy",
-                iconCss = "e-icons e-copy"
+                text: "Has Attachments"
             });
             items.Add(new
             {
-                text = "Paste",
-                iconCss = "e-db-icons e-paste"
+                text: "Categorized"
             });
             items.Add(new
             {
@@ -32,13 +29,11 @@ namespace WebApplication1.Controllers
             });
             items.Add(new
             {
-                text = "Font",
-                iconCss = "e-db-icons e-font"
+                text = "Important"
             });
             items.Add(new
             {
-                text = "Paragraph",
-                iconCss = "e-db-icons e-paragraph"
+                 text = "More Filters"
             });
             ViewBag.items = items;
             return View();
