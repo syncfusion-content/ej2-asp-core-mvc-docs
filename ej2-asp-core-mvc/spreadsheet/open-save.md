@@ -425,7 +425,7 @@ When opening large Excel files with many features and data, the server response 
 
 You can enable this feature by setting the `chunkSize` property in the [`openSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_OpenSettings) object. Set the `chunkSize` to a value greater than 0 (in bytes). The `chunkSize` defines how large each chunk will be. Make sure your server supports chunked responses to use this feature effectively.
 
-{% elsif page.publishingplatform == "javascript" %}
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 You can enable this feature by setting the `chunkSize` property in the [`openSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_OpenSettings) object. Set the `chunkSize` to a value greater than 0 (in bytes). The `chunkSize` defines how large each chunk will be. Make sure your server supports chunked responses to use this feature effectively.
 
