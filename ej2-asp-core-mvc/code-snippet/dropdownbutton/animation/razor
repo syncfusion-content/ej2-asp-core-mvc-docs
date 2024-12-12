@@ -3,18 +3,9 @@
   var fadeInAnimation = new { Effect = "FadeIn", Duration = 800, Easing = "ease" };
   var zoomInAnimation = new { Effect = "ZoomIn", Duration = 800, Easing = "ease" };
 }
-
-<div id="slideDownButtonContainer">
-  @Html.EJS().DropDownButton("slideDownButton").Content("Edit Slide Down").IconCss("e-icons e-edit").Items((IEnumerable<object>)ViewBag.items).AnimationSettings(slideDownAnimation).Render()
-</div>
-
-<div id="fadeInButtonContainer">
-  @Html.EJS().DropDownButton("fadeInButton").Content("Edit Fade In").IconCss("e-icons e-edit").Items((IEnumerable<object>)ViewBag.items).AnimationSettings(fadeInAnimation).Render()
-</div>
-
-<div id="zoomInButtonContainer">
-  @Html.EJS().DropDownButton("zoomInButton").Content("Edit Zoom In").IconCss("e-icons e-edit").Items((IEnumerable<object>)ViewBag.items).AnimationSettings(zoomInAnimation).Render()
-</div>
+@Html.EJS().DropDownButton("slideDownButton").Content("Slide Down").Items((IEnumerable<object>)ViewBag.items).AnimationSettings(slideDownAnimation).Render()
+@Html.EJS().DropDownButton("fadeInButton").Content("Fade In").Items((IEnumerable<object>)ViewBag.items).AnimationSettings(fadeInAnimation).Render()
+@Html.EJS().DropDownButton("zoomInButton").Content("Zoom In").Items((IEnumerable<object>)ViewBag.items).AnimationSettings(zoomInAnimation).Render()
 
 <style>
 /* csslint ignore:start */

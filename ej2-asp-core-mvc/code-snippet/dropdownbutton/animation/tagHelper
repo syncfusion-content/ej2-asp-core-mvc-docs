@@ -1,6 +1,14 @@
-<ejs-dropdownbutton id="separator" content="Edit" items="ViewBag.items" iconCss="e-icons e-edit"></ejs-dropdownbutton>
-<ejs-dropdownbutton id="separator" content="Edit" items="ViewBag.items" iconCss="e-icons e-edit"></ejs-dropdownbutton>
-<ejs-dropdownbutton id="separator" content="Edit" items="ViewBag.items" iconCss="e-icons e-edit"></ejs-dropdownbutton>
+<ejs-dropdownbutton id="slideDownButton" content="Slide Down" items="@ViewBag.items">
+    <AnimationSettings Effect="@slideDownAnimation.Effect" Duration="@slideDownAnimation.Duration" Easing="@slideDownAnimation.Easing" />
+</ejs-dropdownbutton>
+
+<ejs-dropdownbutton id="fadeInButton" content="Fade In" items="@ViewBag.items">
+<AnimationSettings Effect="@fadeInAnimation.Effect" Duration="@fadeInAnimation.Duration" Easing="@fadeInAnimation.Easing" />
+</ejs-dropdownbutton>
+
+<ejs-dropdownbutton id="zoomInButton" content="Zoom In" items="@ViewBag.items">
+    <AnimationSettings Effect="@zoomInAnimation.Effect" Duration="@zoomInAnimation.Duration" Easing="@zoomInAnimation.Easing" />
+</ejs-dropdownbutton>
 
 <style>
 /* csslint ignore:start */
