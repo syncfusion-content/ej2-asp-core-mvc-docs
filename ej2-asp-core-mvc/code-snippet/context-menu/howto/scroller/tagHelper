@@ -1,0 +1,20 @@
+<div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
+<ejs-contextmenu id="contextmenu" target="#contextmenutarget" items="ViewBag.menuItems" beforeOpen="beforeOpen"></ejs-contextmenu>
+<script>
+    function beforeOpen(args) {
+        args.element.parentElement.style.height = '150px';
+    }
+</script>
+<style>
+
+    #contextmenutarget {
+        border: 1px dashed;
+        height: 250px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        color: gray;
+        line-height: 17;
+        font-size: 14px;
+    }
+</style>
