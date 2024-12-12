@@ -245,7 +245,7 @@ By setting the `EnableHighlight` property to **true**, the hovered pie slice is 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/tooltip/highlight/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-enable/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
 ...

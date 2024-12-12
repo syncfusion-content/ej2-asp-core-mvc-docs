@@ -283,7 +283,7 @@ By setting the `enableHighlight` property to **true**, the hovered pie slice is 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/tooltip/highlight/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-enable/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
 ...
@@ -300,10 +300,10 @@ public class GroupingChartData
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/tooltip/highlight/razor %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-enable/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Highlight.cs" %}
-{% include code-snippet/chart/accumulation-charts/tooltip/highlight/highlight.cs %}
+{% highlight c# tabtitle="Tooltip-enable.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-enable/tooltip-enable.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
