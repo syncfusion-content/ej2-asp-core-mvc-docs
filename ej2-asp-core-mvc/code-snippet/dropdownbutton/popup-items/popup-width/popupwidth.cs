@@ -8,7 +8,7 @@ namespace WebApplication1.Controllers
 {
     public class DropDownButtonController : Controller
     {
-        public ActionResult Default()
+        public ActionResult PopupWidth()
         {
             List<object> items = new List<object>();
             items.Add(new
