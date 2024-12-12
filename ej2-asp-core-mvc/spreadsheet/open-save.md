@@ -417,6 +417,85 @@ The following code snippet demonstrates how to configure the deserialization opt
 {% endtabs %}
 {% endif %}
 
+### Chunk response processing
+
+When opening large Excel files with many features and data, the server response can become very large. This might cause memory issues or connection problems during data transmission. The `Chunk Response Processing` feature solves this by dividing the server response into smaller parts, called chunks, and sending them to the client in parallel. The client receives these chunks and combines them to load the Excel data smoothly into the spreadsheet.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+You can enable this feature by setting the `chunkSize` property in the [`openSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_OpenSettings) object. Set the `chunkSize` to a value greater than 0 (in bytes). The `chunkSize` defines how large each chunk will be. Make sure your server supports chunked responses to use this feature effectively.
+
+{% elsif page.publishingplatform == "javascript" %}
+
+You can enable this feature by setting the `chunkSize` property in the [`openSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.spreadsheet.spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_OpenSettings) object. Set the `chunkSize` to a value greater than 0 (in bytes). The `chunkSize` defines how large each chunk will be. Make sure your server supports chunked responses to use this feature effectively.
+
+{% endif %}
+
+> This feature reduces memory usage on both the server and client, ensuring that resources are managed efficiently during data transmission. By sending smaller parts of data, it prevents connection issues that could occur with large payloads, making the transmission process more reliable. Additionally, it allows large Excel files to be loaded smoothly into the spreadsheet, providing a seamless user experience even with extensive data.
+The following code example demonstrates the client-side and server-side configuration required for handling chunk-based responses when opening an Excel file.
+
+**Client Side**:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+<ejs-spreadsheet id="spreadsheet" openUrl="https://localhost:{port number}/Home/Open">
+    <e-spreadsheet-opensettings chunkSize="1000000" retryCount="3" retryAfterDelay="500"></e-spreadsheet-opensettings>
+</ejs-spreadsheet>
+
+<script>
+</script>
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("https://localhost:{port number}/Home/Open").OpenSettings(openSettings =>
+   {
+       openSettings.chunkSize(1000000);
+       openSettings.retryCount(3);
+       openSettings.retryAfterDelay(500);
+}).Render()
+<script>
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+**Server Endpoint**:
+
+```csharp
+public IActionResult Open(IFormCollection openRequest)
+{
+    OpenRequest open = new OpenRequest();
+    if (openRequest.Files.Count > 0)
+    {
+        open.File = openRequest.Files[0];
+    }
+    Microsoft.Extensions.Primitives.StringValues chunkPayload;
+    if (openRequest.TryGetValue("chunkPayload", out chunkPayload))
+    {
+        // The chunk payload JSON data includes information essential for processing chunked responses.
+        open.ChunkPayload = chunkPayload;
+    }
+    var result = Workbook.Open(open, 150);
+    return Content(result);
+}
+```
+
+The [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_7-101537213) includes the server endpoint code for handling chunk-based open processing. After launching the server endpoint, update the `openUrl` property of the spreadsheet in the client-side sample with the server URL, as shown below.
+
+```js
+    // Specifies the service URL for processing the Excel file, converting it into a format suitable for loading in the spreadsheet.
+    openUrl = 'https://localhost:{port number}/Home/Open'
+```
+
 ### Add custom header during open
 
 You can add your own custom header to the open action in the Spreadsheet. For processing the data, it has to be sent from server to client side and adding customer header can provide privacy to the data with the help of Authorization Token. Through the [`beforeOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_BeforeOpen) event, the custom header can be added to the request during open action.
