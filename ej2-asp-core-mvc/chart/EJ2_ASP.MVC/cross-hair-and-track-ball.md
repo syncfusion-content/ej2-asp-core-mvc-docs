@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cross Hair And Track Ball in ##Platform_Name## Chart Component
+title: Cross Hair And Track Ball in Syncfusion ##Platform_Name## Chart Component
 description: Learn here all about Cross Hair And Track Ball in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cross Hair And Track Ball
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Crosshair
+# Crosshair in ##Platform_Name## Chart Component
 
 Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
 
