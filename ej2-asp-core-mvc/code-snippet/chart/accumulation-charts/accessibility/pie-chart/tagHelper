@@ -1,0 +1,22 @@
+@{
+    List<FunnelChartData> chartData = new List<FunnelChartData>
+    {
+        new FunnelChartData { xValue = "Chrome", yValue = 37 },
+        new FunnelChartData { xValue = "UC Browser", yValue = 17 },
+        new FunnelChartData { xValue = "iPhone", yValue = 19 },
+        new FunnelChartData { xValue = "Others", yValue = 4  },
+        new FunnelChartData { xValue = "Opera", yValue = 11 },
+        new FunnelChartData { xValue = "Android", yValue = 12 },
+    };
+}
+
+<ejs-accumulationchart id="container" title="Mobile Browser Statistics" focusBorderColor='#FF0000' focusBorderWidth="3" focusBorderMargin="5">
+    <e-accumulationchart-accessibility accessibilityDescription="Pie chart representing the distribution of data through mobile browsers." accessibilityRole='chart'></e-accumulationchart-accessibility>
+    <e-accumulationchart-legendsettings visible="false">
+    </e-accumulationchart-legendsettings>
+    <e-accumulation-series-collection>
+        <e-accumulation-series dataSource="chartData" xName="xValue" yName="yValue" name="Browser"
+                               type="@Syncfusion.EJ2.Charts.AccumulationType.Pie">            
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>
