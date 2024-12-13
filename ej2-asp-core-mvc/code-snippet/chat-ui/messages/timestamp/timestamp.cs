@@ -10,23 +10,25 @@ public ActionResult Timestamp()
     CurrentUser = CurrentUserModel;
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Text = "Hi, thinking of painting this weekend.",
+        Text = "Hi Michale, are we on track for the deadline?",
         Author = CurrentUserModel,
         TimeStamp = new DateTime(2024,12,25,7,30,0)
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Text = "That’s fun! What will you paint?",
+        Text = "Yes, the design phase is complete.",
         Author = MichaleUserModel,
         TimeStamp = new DateTime(2024,12,25,8,0,0)
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Text = "Maybe landscapes.",
+        Text = "I’ll review it and send feedback by today.",
         Author = CurrentUserModel,
         TimeStamp = new DateTime(2024,12,25,11,0,0)
     });
     return View();
+    ViewBag.ChatMessagesData = ChatMessagesData;
+    ViewBag.CurrentUser = CurrentUser;
 }
 
 public class UserModel

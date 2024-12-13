@@ -106,16 +106,48 @@ You can use the status property to update the status for the message(e.g., sent,
 
 You can use the `iconCss` property to update the styling of status icons associated with messages, aiding visual differentiation between statuses.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/statusIcon/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![IconCss](images/status-icon.png)
+
 #### Setting text
 
 You can use the `text` property to provide information about the messages through descriptive text, providing users with the context of the message.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/statusText/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Text](images/status-text.png)
+
 #### Setting tooltip
 
 You can use the `tooltip` property to provide information about the messages by tooltips while hovering the status icon, providing users with additional data upon hovering.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/statusTooltip/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Tooltip](images/status-tooltip.png)
 
 ### Setting auto scroll
 
 You can use the `autoScrollToBottom` property to automatically scroll the chats when a new message is received in a conversation. By default, the value is false, requires manual scrolling or the FAB button to quick access to the bottom of the view. 
 
 - By default, it scrolls to bottom for each message being sent or when the scroll is maintained at the bottom in the chat, in order to prevent the automatic scroll for different user messages you can use the `autoScrollToBottom` property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/autoScroll/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![AutoScrollToBottom](images/auto-scroll.png)

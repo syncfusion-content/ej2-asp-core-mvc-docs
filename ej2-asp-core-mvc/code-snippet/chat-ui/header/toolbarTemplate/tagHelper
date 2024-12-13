@@ -1,0 +1,37 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div style="height:400px; width:400px">
+    <ejs-chatui id="chatUser" created="onCreated">
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+        <e-chatui-headertoolbar items="@Model.HeaderToolbar"></e-chatui-headertoolbar>
+        <e-chatui-messages>
+            @foreach (var message in Model.ChatMessagesData)
+            {
+                <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
+            }
+        </e-chatui-messages>
+    </ejs-chatui>
+</div>
+
+<script>
+    function onCreated() {
+        var splitBtnObj = new ej.splitbuttons.DropDownButton({
+            items: [
+                { text: 'Info' },
+                { text: 'Search' },
+                { text: 'Add to list' },
+                { text: 'Mute' }
+            ],
+            content: 'Menu',
+            iconCss: 'e-icons e-menu',
+            cssClass: 'custom-dropdown'
+        });
+        splitBtnObj.appendTo('#ddMenu');
+    }
+</script>
+
+<style>
+    .custom-dropdown.e-dropdown-popup ul {
+        min-width: 100px;
+    }
+</style>

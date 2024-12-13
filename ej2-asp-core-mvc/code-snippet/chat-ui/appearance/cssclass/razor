@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="chatui-container" style="height:400px; width:400px">
+    @Html.EJS().ChatUI("chatUser").CssClass("custom-container").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Render()
+</div>
+
+<style>
+    .custom-container {
+        border-color: #e0e0e0;
+        background-color: #f4f4f4;
+        box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .custom-container .e-chat-header {
+        background: #0c888e;
+    }
+
+    .custom-container .e-footer .e-input-group {
+        border: 3px solid #bde0e2;
+    }
+</style>

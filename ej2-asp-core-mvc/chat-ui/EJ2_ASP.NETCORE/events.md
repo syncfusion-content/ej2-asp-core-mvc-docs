@@ -16,10 +16,28 @@ This section describes the Chat UI events that will be triggered when appropriat
 
 The Chat UI control triggers the `created` event when the control rendering is completed.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/events/toolbarText/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Sending message
 
 The `messageSend` event is triggered before sending a message in the Chat UI control.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/events/toolbarText/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
 ## User typing
 
 The `userTyping` event is triggered when the user is typing a message in the Chat UI control.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/events/toolbarText/tagHelper %}
+{% endhighlight %}
+{% endtabs %}

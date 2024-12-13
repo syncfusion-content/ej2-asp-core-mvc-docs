@@ -10,19 +10,21 @@ public ActionResult User()
     CurrentUser = CurrentUserModel;
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Text = "Hi, thinking of painting this weekend.",
+        Text = "Hi Michale, are we on track for the deadline?",
         Author = CurrentUserModel
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Text = "That’s fun! What will you paint?",
+        Text = "Yes, the design phase is complete.",
         Author = MichaleUserModel
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Text = "Maybe landscapes.",
+        Text = "I’ll review it and send feedback by today.",
         Author = CurrentUserModel
     });
+    ViewBag.ChatMessagesData = ChatMessagesData;
+    ViewBag.CurrentUser = CurrentUser;
     return View();
 }
 

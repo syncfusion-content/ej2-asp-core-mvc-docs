@@ -12,7 +12,9 @@ documentation: ug
 
 ## Adding message
 
-You can use the `addMessage` public method to add the messages in the Chat UI. You can add it either as a `string` or `MessageModel` collection. It programmatically adds a new message to the chat. 
+You can use the `addMessage` public method to add the messages in the Chat UI. You can add it either as a `string` or `MessageModel` collection. It programmatically adds a new message to the chat.
+
+
 
 ## Edit messages
 

@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div style="height:400px; width:400px">
+    @Html.EJS().ChatUI("chatUser").HeaderToolbar(new ChatUIToolbarSettings() { Items = ViewBag.HeaderToolbar, ItemClicked = "itemClicked" }).Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Render()
+</div>
+
+<script>
+    function itemClicked(args) {
+        // your required action here..
+    }
+</script>

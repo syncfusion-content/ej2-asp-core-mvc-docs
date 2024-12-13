@@ -14,14 +14,58 @@ documentation: ug
 
 You can use the `Placeholder` property to set the placeholder text for the textarea. The default value is `Type your message…`.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/appearance/placeholder/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Placeholder.cs" %}
+{% include code-snippet/chat-ui/appearance/placeholder/placeholder.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Placeholder](images/placeholder.png)
+
 ## Setting width
 
 You can use the `Width` property to set the width of the Chat UI. The default value is `100%`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/appearance/width/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Width.cs" %}
+{% include code-snippet/chat-ui/appearance/width/width.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Width](images/width.png)
 
 ## Setting height
 
 You can use the `Height` property to set the height of the Chat UI. The default value is `100%`.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/appearance/height/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Height.cs" %}
+{% include code-snippet/chat-ui/appearance/height/height.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Height](images/width.png)
+
 ## Setting CSS class
 
 You can customize the appearance of the Chat UI component by using the `CssClass` property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/appearance/cssclass/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Cssclass.cs" %}
+{% include code-snippet/chat-ui/appearance/cssclass/cssclass.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Cssclass](images/cssclass.png)

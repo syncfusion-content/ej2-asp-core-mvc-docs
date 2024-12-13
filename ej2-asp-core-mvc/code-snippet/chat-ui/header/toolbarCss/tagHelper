@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div style="height:400px; width:400px">
+    <ejs-chatui id="chatUser">
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+        <e-chatui-headertoolbar items="@Model.HeaderToolbar"></e-chatui-headertoolbar>
+        <e-chatui-messages>
+            @foreach (var message in Model.ChatMessagesData)
+            {
+                <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
+            }
+        </e-chatui-messages>
+    </ejs-chatui>
+</div>
+
+<style>
+    .custom-btn .e-user::before {
+        color: white;
+        font-size: 15px;
+    }
+
+    .custom-btn.e-toolbar-item button.e-tbar-btn {
+        border: 2px solid white;
+    }
+</style>
