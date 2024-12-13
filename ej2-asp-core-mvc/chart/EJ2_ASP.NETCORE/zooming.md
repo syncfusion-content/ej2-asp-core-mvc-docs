@@ -110,7 +110,32 @@ By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed 
 {% endtabs %}
 {% endif %}
 
+### Toolbar customization
 
+The zoom toolbar in the chart can be repositioned using the `toolbarPosition` property, allowing flexible alignment and placement. It supports horizontal alignments (**Near**, **Center**, and **Far**) and vertical alignments (**Top**, **Middle**, and **Bottom**), with default values set to **Far** and **Top**, respectively. For precise placement, the `x` and `y` properties can be used to adjust the toolbar's position within the chart area. Additionally, enabling the `draggable` property allows users to freely move the toolbar within the chart area, ensuring optimal usability.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/zoom/toolbar-custom/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Toolbar-custom.cs" %}
+{% include code-snippet/chart/user-interaction/zoom/toolbar-custom/toolbar-custom.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/zoom/toolbar-custom/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Toolbar-custom.cs" %}
+{% include code-snippet/chart/user-interaction/zoom/toolbar-custom/toolbar-custom.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Enable pan
 
