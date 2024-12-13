@@ -1,0 +1,10 @@
+<ejs-chart id="container" width="60%" focusBorderColor='#FF0000' focusBorderWidth="3" focusBorderMargin="5">
+<e-series-accessibility accessibilityDescription="This line chart shows the gold medal count in the Olymbic." accessibilityRole="chart"></e-series-accessibility>
+    <e-chart-primaryxaxis valueType="Category">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Area">            
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

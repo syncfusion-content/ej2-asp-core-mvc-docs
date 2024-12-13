@@ -3,7 +3,7 @@
     <e-series-collection>
         <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
                   type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeColumn">
-            <e-series-border width="2" Color="#FFA500"></e-series-border>
+            <e-series-border width="2" Color="#FFA500" dashArray="5,5"></e-series-border>
         </e-series>
     </e-series-collection>
 </ejs-chart>
