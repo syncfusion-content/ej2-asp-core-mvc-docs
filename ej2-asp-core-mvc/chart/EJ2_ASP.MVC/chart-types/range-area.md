@@ -152,9 +152,9 @@ The `Opacity` property specifies the transparency level of the fill. Adjusting t
 {% endtabs %}
 {% endif %}
 
-**Dash array**
+**Border**
 
-The `DashArray` property determines the pattern of dashes and gaps in the series.
+Use the `Border` property to customize the width, color and dasharray of the series border.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

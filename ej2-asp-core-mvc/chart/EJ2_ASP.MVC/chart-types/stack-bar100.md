@@ -150,36 +150,9 @@ The `Opacity` property specifies the transparency level of the fill. Adjusting t
 {% endtabs %}
 {% endif %}
 
-**Dash array**
-
-The `DashArray` property determines the pattern of dashes and gaps in the series.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-bar100/dash-array/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dash-array.cs" %}
-{% include code-snippet/chart/series/stacked-bar100/dash-array/dash-array.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-bar100/dash-array/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dash-array.cs" %}
-{% include code-snippet/chart/series/stacked-bar100/dash-array/dash-array.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 **Border**
 
-Use the `Border` property to customize the width and color of the series border.
+Use the `Border` property to customize the width, color and dasharray of the series border.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

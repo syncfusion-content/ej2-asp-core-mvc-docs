@@ -3,7 +3,7 @@
     <e-series-collection>
         <e-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Department"
             type="@Syncfusion.EJ2.Charts.ChartSeriesType.BoxAndWhisker">
-            <e-series-border width="2" color="green"></e-series-border>
+            <e-series-border width="2" color="green" dashArray="5,5"></e-series-border>
             <e-series-marker visible="true" height="10" width="10"></e-series-marker>
         </e-series>
     </e-series-collection>
