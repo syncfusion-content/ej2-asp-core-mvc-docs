@@ -62,7 +62,6 @@
 <script>
     function created() {
         var spreadsheet = document.getElementById("spreadsheet").ej2_instances[0];
-        spreadsheet.cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }, 'A1:F1');
         //Add Data Validation to range.
         spreadsheet.addDataValidation({ type: 'Custom', value1: '=AND(B2>10, B2<100)' }, 'E2:E5');
         //Highlight Invalid Data.
