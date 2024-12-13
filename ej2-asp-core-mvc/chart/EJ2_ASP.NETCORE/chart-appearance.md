@@ -246,7 +246,32 @@ Using [`background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 {% endtabs %}
 {% endif %}
 
+**Chart area margin**
 
+You can customize the space between the chart area from its chart container through `margin` property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column/area-margin/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Area-margin.cs" %}
+{% include code-snippet/chart/series/column/area-margin/area-margin.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column/area-margin/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Area-margin.cs" %}
+{% include code-snippet/chart/series/column/area-margin/area-margin.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Animation
 
