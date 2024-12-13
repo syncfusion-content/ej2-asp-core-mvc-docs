@@ -15,7 +15,7 @@ The Image Editor allows users to specify image extensions, as well as the minimu
 
 `Note:` File restrictions apply when uploading images to the Image Editor, whether through the open method or the built-in uploader. If uploadSettings is not defined in the sample, the Image Editor, by default, allows files with .jpg, .png, .svg, and .webp extensions, without any file size restrictions.
 
-## Allowed Image Extensions
+## Allowed image extensions
 
 The Image Editor allows users to specify acceptable file extensions for uploaded images using the `UploadSettings.AllowedExtensions` property, ensuring that only supported formats, such as `.jpg`, `.png`, and `.webp` and `.svg` are allowed. This helps maintain compatibility and prevents errors caused by unsupported file types. By default, the Image Editor allows files with .jpg, .png, .webp, and .svg extensions.
 
