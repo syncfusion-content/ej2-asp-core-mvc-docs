@@ -43,34 +43,33 @@
             if (rows[i].children[0].classList.contains("e-hide") || i < len) {
                 endRowIndex = parseInt(rows[i].getAttribute("aria-rowindex"), 10);
                 if (endRowIndex > 0) {
-                let targetRow = grid.getRows()[startRowIndex];  
-                let currentRowChild = rows[i] && rows[i].children[0];
-                if (targetRow && currentRowChild) {
-                    let targetCell = [].slice.call(targetRow.querySelectorAll('.e-rowcell')).filter((cell) =>
-                        parseInt(cell.getAttribute('aria-colindex'), 10) === parseInt(currentRowChild.getAttribute('aria-colindex'))
-                    );
-                    if (targetCell.length > 0) {
-                        targetCell[0].setAttribute("rowSpan", endRowIndex - startRowIndex + 1);
+                    let targetRow = grid.getRows()[startRowIndex];  
+                    let currentRowChild = rows[i] && rows[i].children[0];
+                    if (targetRow && currentRowChild) {
+                        let targetCell = [].slice.call(targetRow.querySelectorAll('.e-rowcell')).filter((cell) =>
+                            parseInt(cell.getAttribute('aria-colindex'), 10) === parseInt(currentRowChild.getAttribute('aria-colindex'))
+                        );
+                        if (targetCell.length > 0) {
+                            targetCell[0].setAttribute("rowSpan", endRowIndex - startRowIndex + 1);
+                        }
                     }
-                }
                 }
             }
         }
     }
     function excelQueryCellInfo(args) {
-
-    if (!currentOrderID && args.column.field == "OrderID") {
-        currentOrderID = args.data["OrderID"];
-        gridcells = args.cell;
-    }
-    else if (currentOrderID && args.column.field == "OrderID" && currentOrderID == args.data["OrderID"]) {
-        rowspanCount++;
-    } else if (currentOrderID !== args.data["OrderID"] && args.column.field == "OrderID") {
-        gridcells.rowSpan = rowspanCount;
-        currentOrderID = args.data["OrderID"];
-        gridcells = args.cell;
-        rowspanCount = 1;
-    }
+        if (!currentOrderID && args.column.field == "OrderID") {
+            currentOrderID = args.data["OrderID"];
+            gridcells = args.cell;
+        }
+        else if (currentOrderID && args.column.field == "OrderID" && currentOrderID == args.data["OrderID"]) {
+            rowspanCount++;
+        } else if (currentOrderID !== args.data["OrderID"] && args.column.field == "OrderID") {
+            gridcells.rowSpan = rowspanCount;
+            currentOrderID = args.data["OrderID"];
+            gridcells = args.cell;
+            rowspanCount = 1;
+        }
     }
     function excelExportComplete(args) {
         currentOrderID = null;

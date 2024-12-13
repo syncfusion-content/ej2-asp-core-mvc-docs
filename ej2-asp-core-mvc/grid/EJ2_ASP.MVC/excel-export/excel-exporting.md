@@ -37,7 +37,7 @@ Showing a spinner while exporting in the Grid enhances the experience by display
 
 To show or hide a spinner while exporting the grid, you can utilize the `showSpinner` and `hideSpinner` methods provided by the Grid within the `ToolbarClick` event.
 
-The [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event is triggered when a toolbar item in the Grid is clicked. Within the event handler, the code checks if the clicked **item** is related with Excel or CSV export, specifically the **Grid_excelexport** or **Grid_csvexport** item. If a match is found, the `showSpinner` method is used on the Grid instance to display the spinner.
+The [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event is triggered when a toolbar item in the Grid is clicked. Within the event handler, the code checks if the clicked **item** is related with Excel or CSV export, specifically the **grid_excelexport** or **grid_csvexport** item. If a match is found, the `showSpinner` method is used on the Grid instance to display the spinner.
 
 To hide the spinner after the exporting is completed, bind the [ExcelExportComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ExcelExportComplete) event and use the `hideSpinner` method on the Grid instance to hide the spinner.
 
@@ -45,10 +45,10 @@ The following example demonstrates how to show and hide the spinner during Excel
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/show-spinner-while-exporting/razor %}
+{% include code-snippet/grid/excel-export/show-spinner-while-exporting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="show-spinner.cs" %}
-{% include code-snippet/grid/how-to/show-spinner-while-exporting/show-spinner.cs %}
+{% include code-snippet/grid/excel-export/show-spinner-while-exporting/show-spinner.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,9 +56,9 @@ The following example demonstrates how to show and hide the spinner during Excel
 
 The Grid component provides a convenient way to export data to a Excel or CSV format. With the Excel or CSV export feature, you can define a custom data source while exporting. This allows you to export data that is not necessarily bind to the grid, which can be generated or retrieved based on your application logic.
 
-To export data, you need to define the `DataSource` property within the `ExcelExportProperties`` object. This property represents the data source that will be used for the Excel or CSV export.
+To export data, you need to define the `DataSource` property within the `ExcelExportProperties` object. This property represents the data source that will be used for the Excel or CSV export.
 
-The following example demonstrates how to render custom dataSource during Excel export. By calling the `excelExport` method and passing the `ExcelExportProperties`` object through the grid instance, the grid data will be exported to a Excel using the dynamically defined data source.
+The following example demonstrates how to render custom dataSource during Excel export. By calling the `excelExport` method and passing the `ExcelExportProperties` object through the grid instance, the grid data will be exported to a Excel using the dynamically defined data source.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -111,7 +111,7 @@ The following example demonstrates how to perform export with cell and row spann
 
 ![Exporting with cell and row spanning](../../images/excel-exporting/excel-exporting-spanning.png)
 
-* The `updateCell` method does not support row and column spanning.
+> * The `updateCell` method does not support row and column spanning.
 
 ## Exporting with custom date format
 
@@ -130,7 +130,7 @@ The following example demonstrates how to export the grid with custom date forma
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting with custom date format](../../images/excel-exporting/excelexporting-custom.png)
+![Exporting with custom date format](../../images/excel-exporting/excelexport-format.png)
 
 ## Merge duplicate cells in a specific column before exporting
 
@@ -174,13 +174,15 @@ The following example demonstrates how to export multiple grids to the same page
 
 >By default, **multipleExport.blankRows** value is 5.
 
+![Same sheet](../../images/excel-exporting/excelexporting-samesheet.gif)
+
 ### New sheet
 
 Excel export functionality enables the exporting of multiple grids into separate pages (each grid on a new page) within the Excel file.
 
 To achieve this, you can follow these steps:
 
-1. Access the `ExcelExportProperties`` of the Grid component.
+1. Access the `ExcelExportProperties` of the Grid component.
 
 2. Set the `MultipleExport.Type` to **NewPage**.
 
@@ -196,6 +198,8 @@ The following example demonstrates how to export multiple grids to a Excel file 
 {% include code-snippet/grid/excel-export/excelexport-newsheet/excel-export.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![New sheet](../../images/excel-exporting/excelexporting-newsheet.gif)
 
 ### Limitations
 
@@ -230,30 +234,13 @@ The following example demonstrates how to export hierarchical grid to Excel docu
 
 * Microsoft Excel permits up to seven nested levels in outlines. So that in the grid we can able to provide only up to seven nested levels and if it exceeds more than seven levels then the document will be exported without outline option. Please refer the [Microsoft Limitation](https://learn.microsoft.com/en-us/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs?view=sql-server-2017#ExcelLimitations).
 
-## Remove header row while exporting
-
-When exporting data from the Syncfusion ASP.NET MVC Grid, you have an option to remove the header row from the exported file. This can be useful when you want to export grid data without including the header values in the exported document. To achieve this, you can utilize the [ExcelHeaderQueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelHeaderQueryCellInfo) and [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event. 
-
-The following example demonstrates how to perform an export without the header by using the `ExcelHeaderQueryCellInfo` event to clear cell content in the header row and the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event to remove the header row from the Grid:
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/excel-export/excelexport-remove-header/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="excel-export.cs" %}
-{% include code-snippet/grid/excel-export/excelexport-remove-header/excel-export.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Remove header row while exporting](../images/filtering/excel-filter.gif)
-
 ## How to add formula for the cell while exporting
 
 The Grid component provides a convenient way to add formulas to cells during the export process. This feature allows you to perform calculations and apply formulas to specific cells in the exported Excel document. This can be particularly useful when you need to include calculated values or perform complex calculations.
 
 To add formulas to cells during the export process, you can utilize the `ValueAccessor` method along with the [ExcelQueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelQueryCellInfo) event. 
 
-In the following example, the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) function handles a toolbar button click event. When the Excel Export button is clicked, it triggers the Excel export process. Inside this function, an `ExcelExportProperties`` object is defined, specifying that hidden columns should be included in the export. Inside the `ExcelQueryCellInfo` event, the `ValueAccessor` method generates formulas for the desired cells and assigns these formulas to the cell's formula property, ensuring that the calculated values are exported to the Excel document:
+In the following example, the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) function handles a toolbar button click event. When the Excel Export button is clicked, it triggers the Excel export process. Inside this function, an `ExcelExportProperties` object is defined, specifying that hidden columns should be included in the export. Inside the `ExcelQueryCellInfo` event, the `ValueAccessor` method generates formulas for the desired cells and assigns these formulas to the cell's formula property, ensuring that the calculated values are exported to the Excel document:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

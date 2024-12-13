@@ -42,7 +42,7 @@ To export only the selected records by utilizing the `exportProperties.dataSourc
 
 To export the selected records from the grid to a Excel or CSV file, you can follow these steps:
 
-1. Handle the [toolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event of the Grid.
+1. Handle the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event of the Grid.
 
 2. Retrieve the selected records using the `getSelectedRecords` method.
 
@@ -54,10 +54,10 @@ The following example demonstrates how to export the selected records to a Excel
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/export-selected-data/tagHelper %}
+{% include code-snippet/grid/excel-export/export-selected-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="selected-data.cs" %}
-{% include code-snippet/grid/how-to/export-selected-data/selected-data.cs %}
+{% include code-snippet/grid/excel-export/export-selected-data/selected-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,7 +67,7 @@ The following example demonstrates how to export the selected records to a Excel
 
 The Grid component provides an outline option for grouped records, allowing you to hide detailed data for better viewing in the exported document. This feature is particularly useful when you need to share data that is grouped based on specific columns and maintain the grouping structure in the exported file.
 
-To achieve this functionality, you need to enable grouping in the Grid by setting the [allowGrouping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to **true** . Additionally, you need define the [groupSettings.columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_Columns) property to specify the columns by which you want to group the data.
+To achieve this functionality, you need to enable grouping in the Grid by setting the [allowGrouping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to **true** . Additionally, you need define the [groupSettings.columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_Columns) property to specify the columns by which you want to group the data.
 
 The following example demonstrates how to export grouped records to an Excel document when a toolbar item is clicked.:
 
@@ -76,7 +76,7 @@ The following example demonstrates how to export grouped records to an Excel doc
 {% include code-snippet/grid/excel-export/excel-group/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="selected-data.cs" %}
-{% include code-snippet/grid/excel-export/excel-group/selected-data.cs %}
+{% include code-snippet/grid/excel-export/excel-group/excel-group.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,7 +88,7 @@ Exporting hidden columns in the Syncfusion ASP.NET Core Grid allows you to inclu
 
 To export hidden columns of the grid to a Excel or CSV file, you need to set the `includeHiddenColumn` property as **true** in the `excelExportProperties` property.
 
-The following example demonstrates how to export hidden columns to a Excel file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the Excel document. You can also export the grid by changing the `excelExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Checked) property of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started) component.
+The following example demonstrates how to export hidden columns to a Excel file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the Excel document. You can also export the grid by changing the `excelExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Checked) property of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -107,22 +107,22 @@ The Grid component provides the functionality to show or hide columns dynamicall
 
 To show or hide columns based on user interaction during the export process, you can follow these steps:
 
-1. Handle the [toolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event of the Grid component.
+1. Handle the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event of the Grid component.
 
 2. Update the visibility of the desired columns by setting the `visible` property of the column to **true** or **false**.
 
 3. Export the grid to Excel.
 
-4. Handle the [excelExportComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelExportComplete) event to restore the column visibility to its original state.
+4. Handle the [excelExportComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelExportComplete) event to restore the column visibility to its original state.
 
-In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **ShipCity** column is hidden.
+In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **Freight** column is hidden.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/excel-export/show-hide/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="xport-hidden.cs" %}
-{% include code-snippet/grid/excel-export/show-hide/xport-hidden.cs %}
+{% include code-snippet/grid/excel-export/show-hide/show-hide.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -132,7 +132,7 @@ In the following example, the **CustomerID** is initially a hidden column in the
 
 The Grid allows you to export data to Excel or CSV with filter options and also export only filtered records. This feature is especially beneficial when you need to share data with others while preserving the ability for them to filter and analyze the data in Excel or CSV.
 
-To enable this feature, you should set the `enableFilter` property to **true** in the `ExcelExportProperties` object. Additionally, you need to set [allowFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) to **true** in the grid configuration. This property enables filtering in the grid.
+To enable this feature, you should set the `enableFilter` property to **true** in the `ExcelExportProperties` object. Additionally, you need to set [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) to **true** in the grid configuration. This property enables filtering in the grid.
 
 The following example demonstrates how to export data with filter options to an Excel document when a toolbar item is clicked:
 
@@ -145,7 +145,7 @@ The following example demonstrates how to export data with filter options to an 
 {% endhighlight %}
 {% endtabs %}
 
-![Enable filtering in the exported excel file](../../images/excel-exporting/)
+![Enable filtering](../../images/excel-exporting/exportoption-enable-filtering.png)
 
 ## Define file name
 
@@ -172,7 +172,7 @@ The export functionality within the master-detail grid feature of the Grid enabl
 
 To export the master-detail grid on the same sheet, you need to set the `multipleExport.type` property of the `excelExportProperties` object to **AppendToSheet**. It also has an option to provide blank space between the grids. This blank space can be defined by using `multipleExport.blankRows` property.
 
-The following example demonstrates how to export master detail grid to the same page in a Excel file when a toolbar item is clicked. The `rowSelected` event dynamically updates the detail grid based on the selected master record:
+The following example demonstrates how to export master detail grid to the same page in a Excel file when a toolbar item is clicked. The [rowSelected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowSelected) event dynamically updates the detail grid based on the selected master record:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -182,6 +182,8 @@ The following example demonstrates how to export master detail grid to the same 
 {% include code-snippet/grid/excel-export/masterdetailgrid/masterdetailgrid.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Export the master detail grid](../../images/excel-exporting/exportoption-mastergrid.png)
 
 ## Customizing columns on export
 
@@ -239,7 +241,7 @@ In the following example, apply font styling to the caption, header, and record 
 
 The Grid provides support to customize the column header styles, such as changing the text orientation, font color, and more, in the exported Excel file. This feature is useful when you want to enhance the visual appearance of the exported data and provide a unique representation of the Grid in the Excel document.
 
-To achieve this requirement, use the [excelHeaderQueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelHeaderQueryCellInfo) event of the Grid. This event is triggered when creating a column header for the Excel document to be exported. By customizing the column header within this event, you can easily rotate the header text to a certain degree in the exported Grid, making the data presentation in the Excel document more visually appealing and tailored to your specific requirements.
+To achieve this requirement, use the [excelHeaderQueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelHeaderQueryCellInfo) event of the Grid. This event is triggered when creating a column header for the Excel document to be exported. By customizing the column header within this event, you can easily rotate the header text to a certain degree in the exported Grid, making the data presentation in the Excel document more visually appealing and tailored to your specific requirements.
 
 In the following demo, using the `rotation` property of the style argument in the `excelHeaderQueryCellInfo` event, you can rotate the header text of the column header in the excel exported document.
 
@@ -258,7 +260,7 @@ In the following demo, using the `rotation` property of the style argument in th
 
 When exporting data from the Grid, you have an option to conditionally format the cells in the exported Excel document. This allows you to customize the appearance of specific cells based on their values or other criteria.
 
-To achieve this feature, you need to use the [excelQueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelQueryCellInfo) event of the Grid component. This event is triggered for each cell during the export process to Excel. Within this event, you can access the cell object using the `args.cell` property and modify its properties, such as the background color, based on your desired conditions.
+To achieve this feature, you need to use the [excelQueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelQueryCellInfo) event of the Grid component. This event is triggered for each cell during the export process to Excel. Within this event, you can access the cell object using the `args.cell` property and modify its properties, such as the background color, based on your desired conditions.
 
 The following example demonstrate how to customize the background color of the Freight column in the exported Excel document using the **args.cell** and **backgroundColor** properties of the `ExcelQueryCellInfo` event.
 
@@ -277,7 +279,7 @@ The following example demonstrate how to customize the background color of the F
 
 The Excel or CSV Export feature in Grid component allows you to include header and footer content in the exported Excel or CSV document. This feature is particularly useful when you want to add additional information or branding to the exported Excel or CSV file.
 
-To achieve this, you can use [toolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event along with defining the `Header` and `Footer` properties in the `excelExportProperties` object allowing you to customize the header and footer content.
+To achieve this, you can use [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event along with defining the `Header` and `Footer` properties in the `excelExportProperties` object allowing you to customize the header and footer content.
 
 The following example demonstrates how to add a header and footer to the exported grid:
 
@@ -294,7 +296,7 @@ The following example demonstrates how to add a header and footer to the exporte
 
 ## Export grid as blob
 
-The Grid offers an option to export the data as a Blob instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the `excelExport` method. The grid returns the promise of a blob in the [excelExportComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelExportComplete) event.
+The Grid offers an option to export the data as a Blob instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the `excelExport` method. The grid returns the promise of a blob in the [excelExportComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelExportComplete) event.
 
 The following example demonstrates how to obtain the blob data of the exported grid by executing the promise in the `excelExportComplete` event.
 

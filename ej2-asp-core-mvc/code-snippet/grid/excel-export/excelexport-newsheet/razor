@@ -3,7 +3,7 @@
 }
 @Html.EJS().Grid("firstGrid").DataSource((IEnumerable<object>)ViewBag.firstGridData).AllowExcelExport().ToolbarClick("toolbarClick").Height("273px").Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
    col.Field("ShipName").HeaderText("Ship Name").Width(150).Add();
    col.Field("ShipCountry").HeaderText("Ship Country").Width(150).Add();

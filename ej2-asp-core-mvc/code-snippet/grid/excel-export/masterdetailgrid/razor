@@ -1,33 +1,32 @@
 <div>
-<B>Master Grid</B>
-@Html.EJS().Grid("masterGrid").DataSource((IEnumerable<object>)ViewBag.masterdata).Height("273px").SelectedRowIndex(0).Columns(col =>
-{
-    col.Field("ContactName").HeaderText("Contact Name").Width("120px").Add();
-    col.Field("CompanyName").HeaderText("Company Name").Width("120px").Add();
-    col.Field("Address").HeaderText("Address").Width("120px").Add();
-    col.Field("Country").HeaderText("Country").Width("120px").Add();
-}).RowSelected("rowSelected").AllowExcelExport(true).ToolbarClick("toolbarClick").Toolbar(new List<string>() { "ExcelExport" }).Render()
+    <B>Master Grid</B>
+    @Html.EJS().Grid("masterGrid").DataSource((IEnumerable<object>)ViewBag.customerDataSource).Height("273px").SelectedRowIndex(0).Columns(col =>
+    {
+        col.Field("CustomerName").HeaderText("Customer Name").Width("120px").Add();
+        col.Field("CompanyName").HeaderText("Company Name").Width("120px").Add();
+        col.Field("Address").HeaderText("Address").Width("120px").Add();
+        col.Field("Country").HeaderText("Country").Width("120px").Add();
+    }).RowSelected("rowSelected").AllowExcelExport(true).ToolbarClick("toolbarClick").Toolbar(new List<string>() { "ExcelExport" }).Render()
 </div>
 <p><div class='e-statustext'> Showing orders of Customer:  <b id="key"></b></div></p>
 <div>
-@Html.EJS().Grid("detailGrid").AllowExcelExport(true).Columns(col =>
-{
+    @Html.EJS().Grid("detailGrid").AllowExcelExport(true).Columns(col =>
+    {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120px").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Freight").HeaderText("Freight").Format("C2").Width("120px").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ShipCountry").HeaderText("ShipCountry").Width("120px").Add();
     col.Field("ShipName").HeaderText("ShipName").Width("130px").Add();
-    col.Field("ShipAddress").HeaderText("ShipAddress").Width("120px").Add();
-}).Render()
+    col.Field("ShipCountry").HeaderText("ShipCountry").Width("120px").Add();
+    col.Field("ShipAddress").HeaderText("ShipAddress").Format("C2").Width("120px").Add();
+    }).Render()
 </div>
 <script>
     function rowSelected(args) {
         let selectedRecord = args.data;
-        var data = @Html.Raw(Json.Encode(ViewBag.datasource));
+        var data = @Html.Raw(Json.Encode(ViewBag.dataSource));
         var employeeID = args.data.EmployeeID;
         var detaildata = new ej.data.DataManager(data).executeLocal(new ej.data.Query().where("EmployeeID", "equal", employeeID, false));
         var detailGrid = document.getElementById("detailGrid").ej2_instances[0];
         detailGrid.dataSource = new ej.data.DataManager(detaildata).dataSource.json;
-        document.getElementById("key").innerHTML = selectedRecord.ContactName;
+        document.getElementById("key").innerHTML = selectedRecord.CustomerName;
     };
     function toolbarClick(args) {
         var mastergrid = document.getElementById("masterGrid").ej2_instances[0];

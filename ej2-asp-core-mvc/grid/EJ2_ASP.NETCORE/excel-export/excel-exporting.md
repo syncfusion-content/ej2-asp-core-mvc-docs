@@ -37,7 +37,7 @@ Showing a spinner while exporting in the Grid enhances the experience by display
 
 To show or hide a spinner while exporting the grid, you can utilize the `showSpinner` and `hideSpinner` methods provided by the Grid within the `toolbarClick` event.
 
-The [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event is triggered when a toolbar item in the Grid is clicked. Within the event handler, the code checks if the clicked **item** is related with Excel or CSV export, specifically the **Grid_excelexport** or **Grid_csvexport** item. If a match is found, the `showSpinner` method is used on the Grid instance to display the spinner.
+The [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event is triggered when a toolbar item in the Grid is clicked. Within the event handler, the code checks if the clicked **item** is related with Excel or CSV export, specifically the **grid_excelexport** or **grid_csvexport** item. If a match is found, the `showSpinner` method is used on the Grid instance to display the spinner.
 
 To hide the spinner after the exporting is completed, bind the [excelExportComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ExcelExportComplete) event and use the `hideSpinner` method on the Grid instance to hide the spinner.
 
@@ -45,10 +45,10 @@ The following example demonstrates how to show and hide the spinner during Excel
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/show-spinner-while-exporting/tagHelper %}
+{% include code-snippet/grid/excel-export/show-spinner-while-exporting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="show-spinner.cs" %}
-{% include code-snippet/grid/how-to/show-spinner-while-exporting/show-spinner.cs %}
+{% include code-snippet/grid/excel-export/show-spinner-while-exporting/show-spinner.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -111,7 +111,7 @@ The following example demonstrates how to perform export with cell and row spann
 
 ![Exporting with cell and row spanning](../../images/excel-exporting/excel-exporting-spanning.png)
 
-* The `updateCell` method does not support row and column spanning.
+> * The `updateCell` method does not support row and column spanning.
 
 ## Exporting with custom date format
 
@@ -130,7 +130,7 @@ The following example demonstrates how to export the grid with custom date forma
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting with custom date format](../../images/excel-exporting/excelexporting-custom.png)
+![Exporting with custom date format](../../images/excel-exporting/excelexport-format.png)
 
 ## Merge duplicate cells in a specific column before exporting
 
@@ -172,6 +172,8 @@ The following example demonstrates how to export multiple grids to the same page
 {% endhighlight %}
 {% endtabs %}
 
+![Same sheet](../../images/excel-exporting/excelexporting-samesheet.gif)
+
 >By default, **multipleExport.blankRows** value is 5.
 
 ### New sheet
@@ -196,6 +198,8 @@ The following example demonstrates how to export multiple grids to a Excel file 
 {% include code-snippet/grid/excel-export/excelexport-newsheet/excel-export.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![New sheet](../../images/excel-exporting/excelexporting-newsheet.gif)
 
 ### Limitations
 
@@ -229,23 +233,6 @@ The following example demonstrates how to export hierarchical grid to Excel docu
 ### Limitations
 
 * Microsoft Excel permits up to seven nested levels in outlines. So that in the grid we can able to provide only up to seven nested levels and if it exceeds more than seven levels then the document will be exported without outline option. Please refer the [Microsoft Limitation](https://learn.microsoft.com/en-us/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs?view=sql-server-2017#ExcelLimitations).
-
-## Remove header row while exporting
-
-When exporting data from the Syncfusion ASP.NET Core Grid, you have an option to remove the header row from the exported file. This can be useful when you want to export grid data without including the header values in the exported document. To achieve this, you can utilize the [excelHeaderQueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelHeaderQueryCellInfo) and [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event. 
-
-The following example demonstrates how to perform an export without the header by using the `excelHeaderQueryCellInfo` event to clear cell content in the header row and the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event to remove the header row from the Grid:
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/excel-export/excelexport-remove-header/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="excel-export.cs" %}
-{% include code-snippet/grid/excel-export/excelexport-remove-header/excel-export.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Remove header row while exporting](../images/filtering/excel-filter.gif)
 
 ## How to add formula for the cell while exporting
 

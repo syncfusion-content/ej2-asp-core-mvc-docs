@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="400" toolbarClick="toolbarClick" toolbar=@(new List<string>() { "ExcelExport" })>
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="400" toolbarClick="toolbarClick" toolbar=@(new List<string>() { "ExcelExport" })>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="100" textAlign="Right"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="CustomerID" width="100"></e-grid-column>
@@ -9,7 +9,7 @@
 
 <script>
     function toolbarClick(args) {
-        var grid = document.getElementById("Grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         grid.serverExcelExport("/Home/ExcelExport");
     }
 </script>

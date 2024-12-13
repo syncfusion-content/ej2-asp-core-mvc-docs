@@ -13,7 +13,7 @@
         if (args.item.id === 'grid_excelexport') {
             grid.excelExport();
         }
-        else if (args.item.id === 'grid_csvexport') { 
+        else { 
             grid.csvExport();
         }
     }

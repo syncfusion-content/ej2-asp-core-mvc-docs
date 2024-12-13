@@ -18,7 +18,7 @@ The Excel or CSV export action can be customized based on your requirements usin
 
 Exporting the current page in Syncfusion ASP.NET MVC Grid to a Excel or CSV document provides the ability to export the currently displayed page records. This feature allows for generating Excel or CSV documents that specifically include the content from the current page of the grid. 
 
-To export the current page of the grid to an Excel or CSV document, you need to specify the `exportType` property. This property allows you to define which records you want to export. You can choose between two options:
+To export the current page of the grid to an Excel or CSV document, you need to specify the `ExportType` property. This property allows you to define which records you want to export. You can choose between two options:
 
 1. **CurrentPage**: Exports only the records on the current grid page.
 2. **AllPages**: Exports all the records from the grid.
@@ -54,10 +54,10 @@ The following example demonstrates how to export the selected records to a Excel
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/export-selected-data/razor %}
+{% include code-snippet/grid/excel-export/export-selected-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="selected-data.cs" %}
-{% include code-snippet/grid/how-to/export-selected-data/selected-data.cs %}
+{% include code-snippet/grid/excel-export/export-selected-data/selected-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -76,7 +76,7 @@ The following example demonstrates how to export grouped records to an Excel doc
 {% include code-snippet/grid/excel-export/excel-group/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="selected-data.cs" %}
-{% include code-snippet/grid/excel-export/excel-group/selected-data.cs %}
+{% include code-snippet/grid/excel-export/excel-group/excel-group.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -115,14 +115,14 @@ To show or hide columns based on user interaction during the export process, you
 
 4. Handle the [ExcelExportComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelExportComplete) event to restore the column visibility to its original state.
 
-In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **ShipCity** column is hidden.
+In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **Freight** column is hidden.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/excel-export/show-hide/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="xport-hidden.cs" %}
-{% include code-snippet/grid/excel-export/show-hide/xport-hidden.cs %}
+{% include code-snippet/grid/excel-export/show-hide/show-hide.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -145,7 +145,7 @@ The following example demonstrates how to export data with filter options to an 
 {% endhighlight %}
 {% endtabs %}
 
-![Enable filtering in the exported excel file](../../images/excel-exporting/)
+![Enable filtering](../../images/excel-exporting/exportoption-enable-filtering.png)
 
 ## Define file name
 
@@ -172,7 +172,7 @@ The export functionality within the master-detail grid feature of the Grid enabl
 
 To export the master-detail grid on the same sheet, you need to set the `MultipleExport.Type` property of the `ExcelExportProperties` object to **AppendToSheet**. It also has an option to provide blank space between the grids. This blank space can be defined by using `MultipleExport.BlankRows` property.
 
-The following example demonstrates how to export master detail grid to the same page in a Excel file when a toolbar item is clicked. The `RowSelected` event dynamically updates the detail grid based on the selected master record:
+The following example demonstrates how to export master detail grid to the same page in a Excel file when a toolbar item is clicked. The [RowSelected](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowSelected) event dynamically updates the detail grid based on the selected master record:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -182,6 +182,8 @@ The following example demonstrates how to export master detail grid to the same 
 {% include code-snippet/grid/excel-export/masterdetailgrid/masterdetailgrid.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Export the master detail grid](../../images/excel-exporting/exportoption-mastergrid.png)
 
 ## Customizing columns on export
 

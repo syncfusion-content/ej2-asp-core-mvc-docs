@@ -10,7 +10,7 @@
       }
    };
 }    
-@Html.EJS().Grid("hierarchyExport").DataSource((IEnumerable<object>)ViewBag.EmpDataSource).Height("348px").AllowExcelExport().Columns(col =>
+@Html.EJS().Grid("hierarchyExport").DataSource((IEnumerable<object>)ViewBag.employeeDataSource).Height("348px").AllowExcelExport().Columns(col =>
 {
    col.Field("EmployeeID").HeaderText("Employee ID").Width("125").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("FirstName").HeaderText("First Name").Width("125").Add();

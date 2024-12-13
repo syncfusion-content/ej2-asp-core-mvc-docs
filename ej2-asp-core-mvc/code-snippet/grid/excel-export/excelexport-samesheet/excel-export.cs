@@ -1,6 +1,6 @@
 public IActionResult Index()
 {
-    ViewBag.FirstGridData = OrderDetails.GetAllRecords();
-    ViewBag.SecondGridData = EmployeeDetails.GetAllRecords();
+    ViewBag.firstGridData = OrderDetails.GetAllRecords();
+    ViewBag.secondGridData = EmployeeDetails.GetAllRecords();
     return View();
 }

@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" detailTemplate="#detailtemplate" allowExcelExport="true"
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" detailTemplate="#detailtemplate" allowExcelExport="true"
     toolbar="@(new List<string>() {"ExcelExport"})" toolbarClick="toolbarClick" exportDetailTemplate="exportDetailTemplate"> 
     <e-grid-columns> 
         <e-grid-column field="Category" headerText="Category" width="140"></e-grid-column> 
@@ -6,7 +6,6 @@
         <e-grid-column field="Status" headerText="Status" width="200"></e-grid-column>
     </e-grid-columns> 
 </ejs-grid>
-
 <style type="text/css" class="cssStyles">
     .detailtable td {
         font-size: 13px;
@@ -32,7 +31,6 @@
         color: #00FF00;
     }
 </style>
-
 <script type="text/x-template" id="detailtemplate">
     <table class="detailtable" width="100%">
         <colgroup>

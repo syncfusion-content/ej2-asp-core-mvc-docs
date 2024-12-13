@@ -2,7 +2,7 @@
     <e-grid-groupsettings columns="@(new string[] {"CustomerID","ShipCity"})"></e-grid-groupsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="140"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="ShipCity" headerText="Ship City" width="140"></e-grid-column>

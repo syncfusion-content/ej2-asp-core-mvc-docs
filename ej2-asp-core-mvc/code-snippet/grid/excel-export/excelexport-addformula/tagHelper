@@ -3,13 +3,12 @@
     var valueAccessor = "valueAccess";
 }
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" excelQueryCellInfo="excelQueryCellInfo" toolbarClick="toolbarClick" toolbar="@(new List<string>() { "ExcelExport" })" height="348px">
-    <e-grid-pagesettings pageCount="5"></e-grid-pagesettings>
     <e-grid-columns>
         <e-grid-column field="Inventor" headerText="Inventor" width="120"></e-grid-column>
         <e-grid-column field="NumberOfPatentFamilies" headerText="Number of Patent Families" width="150"></e-grid-column>
         <e-grid-column field="MainFieldsOfInvention" headerText="Main fields of invention" width="120"></e-grid-column>
         <e-grid-column field="NumberOfINPADOCPatents" headerText="Number of INPADOC patents" width="150"></e-grid-column>
-        <e-grid-column field="TotalPatents" visible="false" headerText="Total Patents" width="150"></e-grid-column>
+        <e-grid-column field="TotalPatents" visible="false" headerText="Total Patents" valueAccessor=valueAccessor width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 <script>

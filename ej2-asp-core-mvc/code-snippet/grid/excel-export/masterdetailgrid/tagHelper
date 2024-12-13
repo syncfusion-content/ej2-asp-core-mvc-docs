@@ -1,8 +1,8 @@
 <div>
    <B>Master Grid</B>
-    <ejs-grid id="masterGrid" dataSource="@ViewBag.dataSource" allowExcelExport="true" selectedRowIndex="0" toolbar="@(new List<string>() {"ExcelExport"})" rowSelected="selected" toolbarClick="toolbarClick">
+    <ejs-grid id="masterGrid" dataSource="@ViewBag.customerDataSource" height="273px" allowExcelExport="true" selectedRowIndex="0" toolbar="@(new List<string>() {"ExcelExport"})" rowSelected="selected" toolbarClick="toolbarClick">
         <e-grid-columns>
-            <e-grid-column field="ContactName" headerText="Contact Name" width="120"></e-grid-column>
+            <e-grid-column field="CustomerName" headerText="Customer Name" width="120"></e-grid-column>
             <e-grid-column field="CompanyName" headerText="Company Name" width="120"></e-grid-column>
             <e-grid-column field="Address" headerText="Address" width="150"></e-grid-column>
             <e-grid-column field="Country" headerText="Country" width="150"></e-grid-column>
@@ -11,25 +11,24 @@
 </div>
 <p><div class='e-statustext'> Showing orders of Customer:  <b id="key"></b></div></p>
 <div>
-    <ejs-grid id="detailGrid" allowExcelExport="true" dataSource="@ViewBag.dataSource">
+    <ejs-grid id="detailGrid" allowExcelExport="true">
         <e-grid-columns>
             <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
-            <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="120"></e-grid-column>
-            <e-grid-column field="ShipCountry" headerText="Ship Country"></e-grid-column>
             <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
-            <e-grid-column field="ShipAddress headerText="Ship Address" width="150"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country"></e-grid-column>
+            <e-grid-column field="ShipAddress" headerText="Ship Address" width="150"></e-grid-column>
         </e-grid-columns>
     </ejs-grid>
 </div>
 <script>
     function rowSelected(args) {
         let selectedRecord = args.data;
-        var data = @Html.Raw(JsonSerializer.Serialize(ViewBag.datasource));
+        var data = @Html.Raw(JsonSerializer.Serialize(ViewBag.dataSource));
         var employeeID = args.data.EmployeeID;
         var detaildata = new ej.data.DataManager(data).executeLocal(new ej.data.Query().where("EmployeeID", "equal", employeeID, false));
         var detailGrid = document.getElementById("detailGrid").ej2_instances[0];
         detailGrid.dataSource = new ej.data.DataManager(detaildata).dataSource.json;
-        document.getElementById("key").innerHTML = selectedRecord.ContactName;
+        document.getElementById("key").innerHTML = selectedRecord.CustomerName;
     };
     function toolbarClick(args) {
         var mastergrid = document.getElementById("masterGrid").ej2_instances[0];

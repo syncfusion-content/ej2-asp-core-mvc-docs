@@ -1,6 +1,6 @@
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().ToolbarClick("toolbarClick").ExcelExportComplete("excelExportComplete").Height("348px").Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").Width("120").Add();
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").Add();
    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Add();

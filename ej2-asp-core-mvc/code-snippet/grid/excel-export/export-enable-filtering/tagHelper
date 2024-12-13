@@ -1,7 +1,7 @@
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" allowExcelExport="true" height="348px" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"ExcelExport"})">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>               
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>               
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="140" ></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
         <e-grid-column field="ShipCountry" headerText="ShipCountry" width="140"></e-grid-column>               
