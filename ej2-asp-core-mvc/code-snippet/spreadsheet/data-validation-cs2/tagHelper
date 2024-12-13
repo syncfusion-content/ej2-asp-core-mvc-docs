@@ -58,9 +58,9 @@
                     <e-spreadsheet-cell value="Sean"></e-spreadsheet-cell>
                     <e-spreadsheet-cell value="Kango">
                     </e-spreadsheet-cell>
-                    <e-spreadsheet-cell value="450">
+                    <e-spreadsheet-cell value="35000">
                     </e-spreadsheet-cell>
-                    <e-spreadsheet-cell value="545.00"></e-spreadsheet-cell
+                    <e-spreadsheet-cell value="1,54,500.00"></e-spreadsheet-cell
                 </e-spreadsheet-cells>
             </e-spreadsheet-row>
             <e-spreadsheet-row>
@@ -92,8 +92,8 @@
 <script>
     function created() {
         //Add Data Validation to range.
-        this.addDataValidation({ type: 'Custom', value1: ' =AND(B1>10, B1<100)' }, 'E1:E5');
+        this.addDataValidation({ type: 'Custom', value1: '=AND(B2>10, B2<100)' }, 'E2:E5');
         //Highlight Invalid Data.
-        this.addInvalidHighlight('E1:E5');
+        this.addInvalidHighlight('E2:E5');
     }
 </script>

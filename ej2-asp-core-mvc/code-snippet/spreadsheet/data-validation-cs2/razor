@@ -35,8 +35,8 @@
             cell.Value("35").Add();
             cell.Value("Sean").Add();
             cell.Value("Kango").Add();
-            cell.Value("450").Add();
-            cell.Value("545.00").Add();
+            cell.Value("35000").Add();
+            cell.Value("1,54,500.00").Add();
         }).Add();
         row.Cells(cell =>
         {
@@ -62,8 +62,8 @@
 <script>
     function created() {
         //Add Data Validation to range.
-        this.addDataValidation({ type: 'Custom', value1: ' =AND(B1>10, B1<100)' }, 'E1:E5');
+        this.addDataValidation({ type: 'Custom', value1: '=AND(B2>10, B2<100)' }, 'E2:E5');
         //Highlight Invalid Data.
-        this.addInvalidHighlight('E1:E5');
+        this.addInvalidHighlight('E2:E5');
     }
 </script>
