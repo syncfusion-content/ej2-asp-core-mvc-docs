@@ -9,7 +9,7 @@
     <e-series-collection>
         <e-series name="India" xName="x" high="high" low="low" dataSource="ViewBag.dataSource" dashArray="5,5"
                   type="@Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea">
-            <e-series-border width="2" color="red"></e-series-border>
+            <e-series-border width="2" color="red" dashArray="5,5"></e-series-border>
         </e-series>
     </e-series-collection>
 </ejs-chart>

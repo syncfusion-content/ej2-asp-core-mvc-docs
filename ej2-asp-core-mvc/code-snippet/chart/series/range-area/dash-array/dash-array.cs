@@ -14,6 +14,7 @@ public ActionResult Index()
             ChartBorder border = new ChartBorder();
             border.Width = 2;
             border.Color = "#962D18";
+            border.DashArray="5,5";
             ViewBag.seriesBorder = border;
             return View();
         }
