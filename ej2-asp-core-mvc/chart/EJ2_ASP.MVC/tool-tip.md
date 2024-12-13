@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Chart Component
+title: Tooltip in Syncfusion ##Platform_Name## Chart Component
 description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip
+# Tooltip in ##Platform_Name## Chart Component
 
 <!-- markdownlint-disable MD036 -->
 
@@ -191,4 +191,22 @@ By default, tooltip shows information of x and y value in points. You can show m
 {% endtabs %}
 {% endif %}
 
+## Enable highlight
+
+By setting the `EnableHighlight` property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/tooltip/tooltip-enable/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class GroupingChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
+{% endhighlight %}
+{% endtabs %}
 

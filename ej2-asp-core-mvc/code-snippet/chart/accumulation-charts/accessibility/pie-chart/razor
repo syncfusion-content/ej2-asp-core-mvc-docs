@@ -1,0 +1,19 @@
+@Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("xValue")
+                      .YName("yValue")
+                      .Name("Browser")
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                      .Add();
+            })
+            .Accessibility(access => access
+              .AccessibilityDescription("Pie chart representing the distribution of data through mobile browsers.")
+              .AccessibilityRole("chart")
+            )
+            .FocusBorderColor("#FF0000")
+            .FocusBorderWidth(3)
+            .FocusBorderMargin(5)
+            .EnableSmartLabels(true)
+            .Title("Mobile Browser Statistics")
+            .LegendSettings(ls => ls.Visible(false)).Render()
