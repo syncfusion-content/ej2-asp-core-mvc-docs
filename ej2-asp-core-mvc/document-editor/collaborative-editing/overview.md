@@ -40,5 +40,5 @@ Assume the editor in your live application is actively used by 1000 users and ea
 > Note: The above metrics are based solely on the collaborative editing module. Actual throughput may decrease depending on other server-side interactions, such as document importing, pasting formatted content, editing restrictions, and spell checking. Therefore, it is advisable to monitor your app's traffic and choose a configuration that best suits your needs.
 #### See Also
 
-- [Collaborative editing using Redis cache in ASP.NET Core](../../document-editor/collaborative-editing/using-distributed-cache-asp-net-core)
-- [Collaborative editing using Microsoft SQL server in ASP.NET Core](../../document-editor/collaborative-editing/using-database-in-asp-net-core)
+- [Collaborative editing using Redis cache in ASP.NET Core](../../document-editor/collaborative-editing/using-dot-net)
+- [Collaborative editing using Microsoft SQL server in ASP.NET Core](../../document-editor/collaborative-editing/using-redis-cache-asp-net)
