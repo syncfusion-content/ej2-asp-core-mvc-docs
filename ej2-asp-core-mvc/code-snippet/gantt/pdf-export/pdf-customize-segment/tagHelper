@@ -1,0 +1,37 @@
+<ejs-gantt id='GanttContainer' dataSource="ViewBag.DataSource" toolbar="@(new List<string>() { "PdfExport" })"
+    toolbarClick="toolbarClick" pdfQueryTaskbarInfo="pdfQueryTaskbarInfo" queryTaskbarInfo="queryTaskbarInfo" height="450px" allowPdfExport="true" gridLines="Both" >
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" child="Subtasks" segments="Segments">
+    </e-gantt-taskfields>
+    <e-gantt-editsettings allowEditing="true" allowDeleting="true" allowTaskbarEditing="true" showDeleteConfirmDialog="true"></e-gantt-editsettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date"></e-gantt-column>
+        <e-gantt-column field="EndDate" headerText="End Date"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+<script>
+    function toolbarClick(args) {
+        var gantt = document.getElementById("GanttContainer").ej2_instances[0];
+        if (args.item.id === 'GanttContainer_pdfexport') {
+            gantt.pdfExport();
+        }
+    }
+    function queryTaskbarInfo(args) {
+        if (args.data.taskData.Segments) {
+            var segmentIndex = args.taskbarElement.dataset.segmentIndex;
+            if (Number(segmentIndex) === 1) {
+                args.taskbarBgColor = 'red';
+                args.taskbarBorderColor = 'black';
+                args.progressBarBgColor = "green";
+            }
+        }
+    }
+    function pdfQueryTaskbarInfo(args) {
+        if (args.taskbar.taskSegmentStyles) {
+            args.taskbar.taskSegmentStyles[1].taskColor = new ej.pdfexport.PdfColor(255, 0, 0);
+            args.taskbar.taskSegmentStyles[1].progressColor = new ej.pdfexport.PdfColor(0, 128, 0);
+            args.taskbar.taskSegmentStyles[1].taskBorderColor = new ej.pdfexport.PdfColor(0, 0, 0);
+        }
+    }
+</script>

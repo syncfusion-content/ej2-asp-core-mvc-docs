@@ -10,7 +10,7 @@ documentation: ug
 
 # Download and Installation
 
-Syncfusion publishes the Visual Studio extension in the below Visual Studio marketplace link. You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
+Syncfusion® publishes the Visual Studio extension in the below Visual Studio marketplace link. You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreVSExtensions)
 
@@ -56,7 +56,7 @@ The steps below assist you to install the Syncfusion ASP.NET Core extensions fro
 
 ## Install from the Visual Studio Marketplace
 
-The steps below illustrate how to download and install the Syncfusion ASP.NET Core extension from the Visual Studio Marketplace.
+The steps below illustrate how to download and install the Syncfusion® ASP.NET Core extension from the Visual Studio Marketplace.
 
 1. Download the Syncfusion ASP.NET Core Extensions from the below Visual Studio Marketplace.
 

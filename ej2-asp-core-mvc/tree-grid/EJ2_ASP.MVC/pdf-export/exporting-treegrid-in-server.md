@@ -15,7 +15,7 @@ The Tree Grid have an option to export the data to PDF in server side using tree
 
 ## Server dependencies
 
-The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridExport package, which is available in Essential Studio and [nuget.org](https://www.nuget.org/).The following list of dependencies is required for tree grid server side PDF exporting action.
+The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridExport package, which is available in Essential Studio<sup style="font-size:70%">&reg;</sup> and [nuget.org](https://www.nuget.org/).The following list of dependencies is required for tree grid server side PDF exporting action.
 
 * Syncfusion.EJ2
 * Syncfusion.EJ2.TreeGridExport

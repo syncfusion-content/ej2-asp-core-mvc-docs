@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion Licensing Errors
+# Syncfusion<sup style="font-size:70%">&reg;</sup> Licensing Errors
 
 
 Licensing error pop up is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
@@ -17,9 +17,9 @@ Licensing error pop up is displayed with various messages under different circum
 
 ### License key not registered\Trial Expired 
 
-The following error message will be shown if a Syncfusion license key has not been registered in your application or if the trial key has expired after 30 days. 
+The following error message will be shown if a Syncfusion<sup style="font-size:70%">&reg;</sup> license key has not been registered in your application or if the trial key has expired after 30 days. 
 
-**Error message :** This application was built using a trial version of Syncfusion Essential Studio. You should include the valid license key to remove the license validation message permanently.
+**Error message :** This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> You should include the valid license key to remove the license validation message permanently.
 
 ![License key not registered](images/licensing-error-7.png)
 
@@ -35,7 +35,7 @@ The following error message will be shown if a Syncfusion license key has not be
 
 If the application is registered with an invalid key, another version of license key, or another platform's license key, the following error message will pop up when launching the application. 
 
-**Error Message:** The included Syncfusion license key is invalid.
+**Error Message:** The included Syncfusion<sup style="font-size:70%">&reg;</sup> license key is invalid.
 
 ![License key not registered](images/licensing-error-6.png)
 
@@ -51,9 +51,9 @@ If the application is registered with an invalid key, another version of license
 
 ### License key not registered
 
-The following error message will be shown if a Syncfusion license key has not been registered in your application.
+The following error message will be shown if a Syncfusion<sup style="font-size:70%">&reg;</sup> license key has not been registered in your application.
 
-**Error message :** This application was built using a trial version of Syncfusion Essential Studio. Include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#license-key-not-registered) for more information.
+**Error message :** This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> Include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#license-key-not-registered) for more information.
 
 **Solution:**
 
@@ -65,7 +65,7 @@ The following error message will be shown if a Syncfusion license key has not be
 
 If the application is registered with an invalid key, another version of license key, or another platform's license key, the following error message will pop up when launching the application.
 
-**Error Message:** The included Syncfusion license is invalid. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#invalid-key) for more information.
+**Error Message:** The included Syncfusion<sup style="font-size:70%">&reg;</sup> license is invalid. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#invalid-key) for more information.
 
 **Solution:**
 
@@ -77,15 +77,15 @@ If the application is registered with an invalid key, another version of license
 
 The following error message will be shown if the trial key has expired after 30 days
 
-**Error Message:** Your Syncfusion trial license has expired. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#trial-expired) for more information.
+**Error Message:** Your Syncfusion<sup style="font-size:70%">&reg;</sup> trial license has expired. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#trial-expired) for more information.
 
-**Solution:** Purchase from [here](https://www.syncfusion.com/sales/products) to get a valid Syncfusion license.
+**Solution:** Purchase from [here](https://www.syncfusion.com/sales/products) to get a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license.
 
 ### Platform Mismatch
 
 If the application is registered with another platform's license key, the following error message will pop up when launching the application.
 
-**Error Message:** The included Syncfusion license is invalid (Platform mismatch). Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#platform-mismatch) for more information.
+**Error Message:** The included Syncfusion<sup style="font-size:70%">&reg;</sup> license is invalid (Platform mismatch). Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#platform-mismatch) for more information.
 
 **Solution:**
 
@@ -97,7 +97,7 @@ If the application is registered with another platform's license key, the follow
 
 If the application is registered with another version's license key, the following error message will pop up when launching the application.
 
-**Error Message:** The included Syncfusion license ({Registered Version}) is invalid for version {Required Version}. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#version-mismatch) for more information.
+**Error Message:** The included Syncfusion<sup style="font-size:70%">&reg;</sup> license ({Registered Version}) is invalid for version {Required Version}. Refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/licensing-errors/#version-mismatch) for more information.
 
 **Solution:**
 
@@ -107,4 +107,4 @@ If the application is registered with another version's license key, the followi
 
 ## Could not load Syncfusion.Licensing.dll assembly version
 
-Make sure that all the referenced Syncfusion assemblies are of same version. Try cleaning and rebuilding the application to resolve assembly conflict issues.
+Make sure that all the referenced Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies are of same version. Try cleaning and rebuilding the application to resolve assembly conflict issues.

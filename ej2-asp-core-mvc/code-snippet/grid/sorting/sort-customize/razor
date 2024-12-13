@@ -1,0 +1,21 @@
+
+@{
+  List<object> sortOptions = new List<object>();
+  sortOptions.Add(new { field = "ShipCity", direction = "Ascending" });
+  sortOptions.Add(new { field = "CustomerID", direction = "Descending" });
+}
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").AllowSorting().Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("170").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
+  col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
+}).SortSettings(sort => sort.Columns(sortOptions)).Render()
+<style>
+    .e-grid .e-icon-ascending::before {
+        content: '\e822';
+    }
+    .e-grid .e-icon-descending::before {
+        content: '\e7fe';
+    }
+</style>
