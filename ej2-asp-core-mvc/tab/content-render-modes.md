@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Content Render Modes in ##Platform_Name## Tab Component
+title: Content Render Modes in Syncfusion ##Platform_Name## Tab Component
 description: Learn here all about Content Render Modes in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Content Render Modes
@@ -36,6 +36,7 @@ In the following code example, the Calendar and Scheduler are rendered in the fi
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tab/load-on-demand/razor %}
+{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
