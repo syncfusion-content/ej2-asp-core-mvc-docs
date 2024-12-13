@@ -12,9 +12,9 @@ documentation: ug
 
 ## Overview
 
-The Syncfusion ASP.NET Core (Essential JS 2) Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio.
+The Syncfusion ASP.NET Core (Essential JS 2) Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion® references in Visual Studio.
 
-N> Syncfusion Extension is published in Visual Studio Marketplace. Separate ASP.NET Core (Essential JS 2) Extension support is provided for Visual Studio 2022 and Visual Studio 2019 or lower. Refer to following Visual Marketplace link.
+N> Syncfusion® Extension is published in Visual Studio Marketplace. Separate ASP.NET Core (Essential JS 2) Extension support is provided for Visual Studio 2022 and Visual Studio 2019 or lower. Refer to following Visual Marketplace link.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreVSExtensions)
 
@@ -24,12 +24,12 @@ N> Syncfusion Extension is published in Visual Studio Marketplace. Separate ASP.
 
 The Syncfusion ASP.NET Core (Essential JS 2) menu option is available from v17.1.0.32.
 
-The Syncfusion provides the following supports in Visual Studio:
+The Syncfusion® provides the following supports in Visual Studio:
 
-1. [Project-Template](create-project):  Creates the Syncfusion ASP.NET Core (Essential JS 2) application by adding the required Essential JS 2 components.
-2. [Convert project](convert-project): Converts an existing ASP.NET Core application into a Syncfusion ASP.NET Core (Essential JS 2) application by adding the required Syncfusion assemblies and resource files.
-3. [Upgrade project](upgrade-project): Upgrades the existing Syncfusion ASP.NET Core (Essential JS 2) application from one Essential Studio version to another version.
-4. [Creator sample](create-samples): Creates the Syncfusion ASP.NET Core (Essential JS2) application with the sample code of required controls and features.
+1. [Project-Template](create-project):  Creates the Syncfusion® ASP.NET Core (Essential JS 2) application by adding the required Essential JS 2 components.
+2. [Convert project](convert-project): Converts an existing ASP.NET Core application into a Syncfusion® ASP.NET Core (Essential JS 2) application by adding the required Syncfusion® assemblies and resource files.
+3. [Upgrade project](upgrade-project): Upgrades the existing Syncfusion® ASP.NET Core (Essential JS 2) application from one Essential Studio® version to another version.
+4. [Creator sample](create-samples): Creates the Syncfusion® ASP.NET Core (Essential JS2) application with the sample code of required controls and features.
 
 ### No project selected in Visual Studio
 

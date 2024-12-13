@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Browser Compatibility in ##Platform_Name## controls
-description: Learn here all about Browser compatibility of Syncfusion ##Platform_Name## controls and more.
+title: Browser Compatibility in ##Platform_Name## controls | Syncfusion
+description: Learn here all about Browser compatibility of Syncfusion ##Platform_Name## controls and more details.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Browser Compatibility in ASP.NET MVC
 
-The Syncfusion ASP.NET MVC controls are supported by all modern web browsers on both desktop and mobile devices running Windows, Linux, or MacOS.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are supported by all modern web browsers on both desktop and mobile devices running Windows, Linux, or MacOS.
 
 |    Browser    |    Versions    |
 |--------------|---------------|

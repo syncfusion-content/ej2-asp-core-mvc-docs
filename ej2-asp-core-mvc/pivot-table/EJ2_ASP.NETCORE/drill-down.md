@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Drill Down in ##Platform_Name## Syncfusion Pivot Table Control
+# Drill Down in ##Platform_Name## Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table Control
 
 ## Drill down and drill up
 

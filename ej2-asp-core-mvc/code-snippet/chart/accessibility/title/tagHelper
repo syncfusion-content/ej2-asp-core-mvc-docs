@@ -1,0 +1,10 @@
+<ejs-chart id="container" width="60%" title="Olympic Medal Counts - RIO" subTitle="Medal Comparison">
+    <e-titlesettings-accessibility accessibilityDescription='This chart shows the number of gold, silver, and bronze medals won by different countries in the Olympics.' accessibilityRole='heading'></e-titlesettings-accessibility>
+    <e-subtitlesettings-accessibility accessibilityDescription="The subtitle provides additional context for the Olympic medal distribution chart." accessibilityRole="heading"></e-subtitlesettings-accessibility>
+    <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

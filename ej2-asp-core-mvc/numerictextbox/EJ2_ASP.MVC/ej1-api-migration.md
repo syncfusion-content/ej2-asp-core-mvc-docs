@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of NumericTextBox component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of NumericTextBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers on creation | **Event** *Create*<br /><br />@Html.EJ().NumericTextbox("numeric").Value(120).ClientSideEvents(s => s.Create("onCreate"))<br />**Script**<br />function onCreate(){} | **Event:** *Created*<br /><br />@Html.EJS().NumericTextBox("numeric").Value(120).Created("onCreate").Render()<br />**Script**<br />function onCreate(){} |
 | Adding custom classes | **Property** *CssClass*<br /><br />@Html.EJ().NumericTextbox("numeric").Value(100).CssClass("custom")| **Property:** *CssClass*<br /><br />@Html.EJS().NumericTextBox("numeric").Value(100).CssClass("custom").Render() |
@@ -36,20 +36,20 @@ This article describes the API migration process of NumericTextBox component fro
 
 ## Globalization
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Localization culture | **Property** *Locale*<br /><br />@Html.EJ().NumericTextbox("numeric").Value(80).Locale("de-DE") | **Property:** *Locale*<br /><br />@Html.EJS().NumericTextBox("numeric").Value(80).Locale("de-DE").Render() |
 
 ## Group
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Group digits in editor | **Property** *GroupSize*<br /><br />@Html.EJ().NumericTextbox("numeric").Value(100).GroupSize("2") | Not Applicable |
 | Group Separator | **Property** *GroupSeparator*<br /><br />@Html.EJ().NumericTextbox("numeric").Value(100).GroupSeparator("-") | Not Applicable |
 
 ## Numeric configuration
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggers on value change | **Event** *Change*<br /><br />@Html.EJ().NumericTextbox("numeric").Value(120).<br/>ClientSideEvents(s => s.Change("onChange"))<br />**Script**<br />function onChange(){} | **Event:** *Change*<br /><br />@Html.EJS().NumericTextBox("numeric").Value(120).Change("onChange").Render()<br />**Script**<br />function onChange(){} |
 | Sets digits allowed after decimal point | **Property** *DecimalPlaces*<br /><br />@Html.EJ().NumericTextbox("numeric").Value(100).DecimalPlaces(2) | **Property:** *Decimals*<br /><br />@Html.EJS().NumericTextBox("numeric").Value(100).Format("n2").Decimals("2").Render() |
@@ -69,14 +69,14 @@ This article describes the API migration process of NumericTextBox component fro
 
 ## Number Formats
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Set Currency symbol | **Property** *CurrencySymbol*<br /><br />@Html.EJ().CurrencyTextbox("currency").Value(100).CurrencySymbol("EUR") | **Property:** *Currency*<br /><br />@Html.EJS().NumericTextBox("numeric").Format("c2").Value(100).Currency("EUR").Render() |
 | Number Format | Not Applicable | **Property:** *Format*<br /><br />@Html.EJS().NumericTextBox("numeric").Format("n2").Value(200).Render() |
 
 ## Validation
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Strict Mode | **Property** *EnableStrictMode*<br /><br />@Html.EJ().NumericTextbox("numeric").Value(80).EnableStrictMode(true) | **Property:** *StrictMode*<br /><br />@Html.EJS().NumericTextBox("numeric").StrictMode(true).Value(80).Render() |
 | Validation on typing | **Property** *ValidateOnType*<br /><br />@Html.EJ().NumericTextbox("numeric").Value(100).ValidateOnType(true) | **Property:** *ValidateDecimalOnType*<br /><br />@Html.EJS().NumericTextBox("numeric").ValidateDecimalOnType(true).Value(100).Render() |

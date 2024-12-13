@@ -10,9 +10,9 @@ documentation: ug
 
 # Check for Updates in ASP.NET MVC Application
 
-Syncfusion provides the check for update extensions to find latest version of essential release was available, if it was available then provide option update most recent version of the Essential Studio release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
+Syncfusion® provides the check for update extensions to find latest version of essential release was available, if it was available then provide option update most recent version of the Essential Studio® release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
 
-N> The Syncfusion Check for updates is available from v17.1.0.32.
+N> The Syncfusion® Check for updates is available from v17.1.0.32.
 
 You can check updates availability in Visual Studio, and then install the update version if required.
 
@@ -28,4 +28,4 @@ You can check updates availability in Visual Studio, and then install the update
 
     ![update dialog](images/update-dialog.png)
 
-3. You can download the Syncfusion Essential Studio from the Syncfusion website by selecting **Download**.
+3. You can download the Syncfusion Essential Studio® from the Syncfusion website by selecting **Download**.

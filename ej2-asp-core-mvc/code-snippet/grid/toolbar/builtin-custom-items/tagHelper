@@ -6,32 +6,25 @@
     toolbarItems.Add("Delete");
     toolbarItems.Add("Update");
     toolbarItems.Add("Cancel");
-    toolbarItems.Add(new { text = "Click", tooltipText = "Click", prefixIcon = "e-expand", id = "Click" });
+    toolbarItems.Add(new { text = "Click", tooltipText = "Click", id = "Click", prefixIcon = "e-expand" });
 }
-
-<div>
-    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowResizing="true" allowPaging="true" allowSorting="true" toolbarClick="toolbarClick" toolbar=toolbarItems>
-        <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
-        <e-grid-columns>
-            <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120"></e-grid-column>
-            <e-grid-column field="EmployeeID" headerText="Employee ID" width="120"></e-grid-column>
-            <e-grid-column field="Freight" headerText="Freight" format="C2" width="120"></e-grid-column>
-            <e-grid-column field="ShipCity" headerText="Ship City" editType="dropdownedit" edit="new {@params = new { dataSource= ViewBag.DropdownData} }" width="120"></e-grid-column>
-            <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
-        </e-grid-columns>
-    </ejs-grid>
-</div>
-
+<div><p style="color:red;text-align: center;" id="message"></p></div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" toolbarClick="toolbarClick" toolbar=toolbarItems>
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="120"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
 <script>
-    function toolbarClick(args) {
-        if (args.item.id === 'Click') {
-            alert("Custom toolbar click...");
-        }
+    function toolbarClick(args)
+    {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'Click')
+            document.getElementById("message").innerText= 'Custom Toolbar Clicked';
+        else
+         document.getElementById("message").innerText = '';
     }
 </script>
-
-<style>
-    .e-expand::before {
-        content: '\e5b8';
-    }
-</style>
