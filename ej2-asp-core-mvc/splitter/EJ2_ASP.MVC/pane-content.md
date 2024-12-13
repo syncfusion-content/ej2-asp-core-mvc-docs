@@ -11,7 +11,7 @@ documentation: ug
 
 # Pane content in Splitter Control
 
-This section explains how to provide plain text content or HTML markup or integrate other Syncfusion ASP.NET MVC UI controls as content of splitter.
+This section explains how to provide plain text content or HTML markup or integrate other Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI controls as content of splitter.
 
 ## HTML Markup
 
@@ -46,9 +46,9 @@ Output be like the below.
 
 ![HTML markup](./images/htmlmarkup.png)
 
-## Syncfusion ASP.NET MVC UI controls
+## Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI controls
 
-You can render any Syncfusion ASP.NET MVC UI controls along with their native and control events within splitter as pane content.
+You can render any Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI controls along with their native and control events within splitter as pane content.
 
 You can refer [Accordion within splitter](https://ej2.syncfusion.com/aspnetmvc/Splitter/AccordionNavigationMenu#/material) and [Listview within splitter](https://ej2.syncfusion.com/aspnetmvc/Splitter/DetailsView#/material) samples.
 

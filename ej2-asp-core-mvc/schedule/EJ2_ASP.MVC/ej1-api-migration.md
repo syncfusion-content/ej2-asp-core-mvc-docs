@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
 This topic shows the API equivalent of JS2 Scheduler component to be used, while migrating your project that uses JS1 Scheduler.
 
@@ -17,7 +17,7 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To change the display of days count in agenda view | **Property:** *DaysInAgenda* <br/> <br/> `@(Html.EJ().Schedule("schedule").CurrentView(CurrentView.Agenda)`<br>`.AgendaViewSettings(agendaViewSettings => agendaViewSettings.DaysInAgenda(5))` | **Property:** *AgendaDaysCount* <br/><br/> `@Html.EJS().Schedule("schedule").CurrentView(View.Agenda).AgendaDaysCount(5).Render()` |
 | Preventing deletion of appointment | **Property:** *AllowDelete* <br/> <br/> `@(Html.EJ().Schedule("schedule").AllowDelete(true))` | Not applicable |
@@ -70,7 +70,7 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ### Resources
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To define resource datasource | **Property:** *Resources* <br/> `@{`<br>`List<ScheduleFields> Appoint = new List<ScheduleFields>();`<br>`Appoint.Add(new ScheduleFields { Id = "1", Subject = "Meeting", StartTime = new DateTime(2015, 11, 10, 10, 00, 00), EndTime = new DateTime(2015, 11, 10, 11, 00, 00), Description = "", AllDay = false, Recurrence = false, RecurrenceRule = "", RoomId = "1", OwnerId = "5" });`<br>`List<String> Group = new List<String>();`<br>`Group.Add("Rooms");`<br>`Group.Add("Owners");`<br>`List<ResourceFields> Room = new List<ResourceFields>();`<br>`Room.Add(new ResourceFields { Id = "1", Text = "Room1", Color = "#f8a398", GroupId = "1" });`<br>`Room.Add(new ResourceFields { Id = "2", Text = "Room2", Color = "#56ca95", GroupId = "1" });`<br>`List<ResourceFields> Owner = new List<ResourceFields>();`<br>`Owner.Add(new ResourceFields { Text = "Nancy", Id = "1", GroupId = "1", Color = "#ffaa00", Start = 10, End = 18, CustomDays = new List<string> { "monday", "wednesday", "friday" } });`<br>`Owner.Add(new ResourceFields { Text = "Steven", Id = "3", GroupId = "2", Color = "#f8a398", Start = 6, End = 10, CustomDays = new List<string> { "tuesday", "thursday" } });`<br>`}` <br> <br/> `@(Html.EJ().Schedule("schedule").Group(group => group.Resources(Group)).Resources(res => { res.ResourceSettings(flds => flds.Datasource(Owner)).Field("OwnerId").Title("Owner").Name("Owners").Text("text").Id("id").Color("color").Add(); }).AppointmentSettings(fields => fields.Datasource(Appoint)))` | **Property:** *Resources* <br/>`@{`<br>`List<Projects> projects = new List<Projects>();` <br> `projects.Add(new Projects { text = "PROJECT 1", id = 1, color = "#cb6bb2" });` <br> `projects.Add(new Projects { text = "PROJECT 2", id = 2, color = "#56ca85" });` <br> `List<Categories> categories = new List<Categories>();` <br> `categories.Add(new Categories { text = "Development", id = 1, color = "#1aaa55" });` <br> `categories.Add(new Categories { text = "Testing", id = 2, color = "#7fa900" });` <br> `List<String> Resources = new List<String>();`<br>`Resources.Add("Projects");`<br>`Resources.Add("Categories");` <br> `}` <br><br/> `@Html.EJS().Schedule("schedule").Group(group => group.Resources(Resources)).Resources(res => { res.DataSource(projects).Field("ProjectId").Title("Project").Name("Projects").TextField("text").IdField("id").ColorField("color").Add(); res.DataSource(categories).Field("CategoryId").Title("Category").Name("Categories").TextField("text").IdField("id").ColorField("color").Add(); }).Render()` |
 | Allowing multiple selection of resources in event window | **Property:** *AllowMultiple* <br/> `@(Html.EJ().Schedule("schedule").Group(gr => { gr.Resources(Group); }).Resources(res => {res.Field("RoomId").Title("Room").Name("Rooms").AllowMultiple(true).ResourceSettings(fields => fields.Datasource(Room).Text("Text").Id("Id").Color("Color").GroupId("GroupId")).Add(); res.Field("OwnerId").Title("Owner").Name("Owners").AllowMultiple(true).ResourceSettings(fields => fields.Datasource(Owner).Text("Text").Id("Id").Color("Color").GroupId("GroupId").Start("Start").End("End").WorkWeek("WorkWeek")).Add();}).AppointmentSettings(fields => fields.Datasource(Appoint)))` <br/>  | **Property:** *AllowMultiple* <br/><br/> `@Html.EJS().Schedule("schedule").Group(group => group.Resources(Resources)).Resources(res => { res.DataSource(projects).Field("ProjectId").Title("Project").Name("Projects").TextField("text").IdField("id").ColorField("color").Add(); res.DataSource(categories).Field("CategoryId").Title("Category").Name("Categories").TextField("text").IdField("id").ColorField("color").AllowMultiple(true).Add(); }).Render()` |
@@ -78,7 +78,7 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ### Group
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To group the resources in scheduler layout | **Property:** *Resources* <br/> `@{`<br>`List<Projects> projects = new List<Projects>();` <br> `projects.Add(new Projects { text = "PROJECT 1", id = 1, color = "#cb6bb2" });` <br> `projects.Add(new Projects { text = "PROJECT 2", id = 2, color = "#56ca85" });` <br> `List<Categories> categories = new List<Categories>();` <br> `categories.Add(new Categories { text = "Development", id = 1, color = "#1aaa55" });` <br> `categories.Add(new Categories { text = "Testing", id = 2, color = "#7fa900" });` <br> `var resources = new string[] { "Projects", "Categories" };` <br> `}` <br/> `@(Html.EJ().Schedule("schedule").Group(group => group.Resources(resources))` |  **Property:** *Resources* <br/> `@{`<br>`List<Projects> projects = new List<Projects>();` <br> `projects.Add(new Projects { text = "PROJECT 1", id = 1, color = "#cb6bb2" });` <br> `projects.Add(new Projects { text = "PROJECT 2", id = 2, color = "#56ca85" });` <br> `List<Categories> categories = new List<Categories>();` <br> `categories.Add(new Categories { text = "Development", id = 1, color = "#1aaa55" });` <br> `categories.Add(new Categories { text = "Testing", id = 2, color = "#7fa900" });` <br> `var resources = new string[] { "Projects", "Categories" };` <br> `}` <br/> `@Html.EJS().Schedule("schedule").Group(group => group.Resources(resources)).Render()` |
 | Allow group editing | **Property:** *AllowGroupEdit* <br/> <br/> `@(Html.EJ().Schedule("schedule").Group(group => group.Resources(resources).AllowGroupEdit(true))` | **Property:** *AllowGroupEdit* <br/><br/> `@Html.EJS().Schedule("schedule").Group(group => group.Resources(resources).AllowGroupEdit(true)).Render()`|
@@ -89,13 +89,13 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ### Header Rows
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Adding custom rows in the header in timeline views | Not applicable | **Property:** *HeaderRows* <br/><br/> `@Html.EJS().Schedule("schedule").HeaderRows(headerRow => { headerRow.Option(HeaderRowType.Month).Template("#month-template").Add(); headerRow.Option(HeaderRowType.Week).Template("#week-template").Add(); headerRow.Option(HeaderRowType.Date).Add(); }).Render()` |
 
 ### TimeScale
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Enabling time scale | **Property:** *Enable* <br/> <br/> `@(Html.EJ().Schedule("schedule").TimeScale(ts => ts.Enable(false)))` | **Property:** *Enable* <br/><br/> `@Html.EJS().Schedule("schedule").TimeScale(ts => ts.Enable(false)).Render()` |
 | Setting major interval on time scale | **Property:** *majorSlot* <br/> <br/> `@(Html.EJ().Schedule("schedule").TimeScale(ts => ts.majorSlot(60)))` | **Property:** *Interval* <br/><br/> `@Html.EJS().Schedule("schedule").TimeScale(ts => ts.Interval(60)).Render()` |
@@ -105,13 +105,13 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ### Quick info templates
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Template for quick popup | Not applicable | **Property:** *QuickInfoTemplates* <br/><br/> `@Html.EJS().Schedule("schedule").QuickInfoTemplates(quickTemplate => quickTemplate.Header("#headertemplate").Content("#contentTemplate").Footer("#footerTemplate")).Render()` |
 
 ### Event settings
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Datasource for events | **Property:** *DataSource* <br/> <br/> `@(Html.EJ().Schedule("schedule").AppointmentSettings(app => app.DataSource((IEnumerable)ViewBag.datasource)))` | **Property:** *DataSource* <br/><br/> `@Html.EJS().Schedule("schedule").EventSettings(eve => eve.DataSource(ViewBag.datasource)).Render()` |
 | Appointment fields |  **Property:** *AppointmentSettings* <br/> <br/> `@(Html.EJ().Schedule("schedule").AppointmentSettings(app => app.Id("Id").Subject("Subject").Location("Location").AllDay("AllDay").Description("Description").StartTime("StartTime").EndTime("EndTime").Recurrence("Recurrence").RecurrenceRule("RecurrenceRule")))` | **Property:** *Fields* <br/><br/> `@Html.EJS().Schedule("schedule").EventSettings(e => e.Fields(f => f.Id("Id").Subject(sub => sub.Name("Subject")).Location(loc => loc.Name("Location")).IsAllDay(allday => allday.Name("IsAllDay")).Description(desc => desc.Name("Description")).StartTime(st => st.Name("StartTime")).EndTime(et => et.Name("EndTime")).RecurrenceID(recId => recId.Name("RecurrenceId")).RecurrenceRule(recRule => recRule.Name("RecurrenceRule")).RecurrenceException(recEx => recEx.Name("RecurrenceException")).StartTimezone(stz => stz.Name("StartTimezone")).EndTimezone(etz => etz.Name("EndTimezone")))).Render()` |
@@ -123,7 +123,7 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ## Methods
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | To add appointments manually | **Method:** *saveAppointment()* <br/><br/> `@(Html.EJ().Schedule("schedule").AppointmentSettings(fields => fields.Datasource((IEnumerable)ViewBag.data)))` <br> <br> **Script:** <br> `<script>` <br> `var obj = { <br> Id: 1,` <br> `Subject: "Testing",` <br> `StartTime: new Date(2018, 4, 5, 10, 00),` <br> `EndTime: new Date(2018, 4, 5, 12, 00)` <br> `};` <br> `var scheduleobj= $("#schedule").ejSchedule(instance);` <br> `scheduleobj.saveAppointment(obj);` <br> `</script>` | **Method:** *addEvent()* <br/><br/> `@Html.EJS().Schedule("schedule").EventSettings(e => e.DataSource(ViewBag.datasource)).Render()` <br> <br> **Script:** <br> `<script>` <br> `var scheduleobj= document.getElementById('schedule').ej2_instances[0];` <br> `scheduleobj.addEvent({` <br> `Id: 1,` <br> `Subject: 'New Event',` <br> `StartTime: new Date(2018, 7, 31, 10, 30),` <br> `EndTime: new Date(2018, 7, 31, 12, 0)});` <br> `</script>` |
 | To add resources dynamically | **Method** *addResource* <br/><br/> `@(Html.EJ().Schedule("schedule").AppointmentSettings(fields => fields.Datasource((IEnumerable)ViewBag.data)))` <br> <br> **Script:** <br> `<script>` <br>  `var obj = { text: "Paul", id: 1, groupId: 3, color: "#cc99ff" };` <br> `var index = 0;` <br> `var scheduleobj= $("#schedule").ejSchedule(instance);` <br> `scheduleobj.addResource(obj, "Owners", index);` <br> `</script>` | **Method:** *addResource()* <br/><br/> `@Html.EJS().Schedule("schedule").EventSettings(e => e.DataSource(ViewBag.datasource)).Render()` <br> <br> **Script:** <br> `<script>` <br> `var obj = { text: "Paul", id: 3, groupId: 1, color: "#cc99ff" };` <br> `var index = 0;` <br> `var scheduleobj= document.getElementById('schedule').ej2_instances[0];` <br> `scheduleobj.addResource(obj, "Owners", index);` <br> `</script>` |
@@ -159,7 +159,7 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Fires on the beginning of each scheduler action | **Event:** *ActionBegin* <br/><br/> `@(Html.EJ().Schedule("schedule").ScheduleClientSideEvents(e=>e.ActionBegin("onActionBegin")))` <br><br> **Script:** <br>`<script>` <br> `function onActionBegin(args) {` <br> `}` <br> `</script>` | **Event:** *ActionBegin* <br/><br/> `@Html.EJS().Schedule("schedule").ActionBegin("onActionBegin").Render()` <br><br> **Script:** <br> `<script>` <br> `function onActionBegin(args) {` <br> `}` <br> `</script>` |
 | Fires on the completion of each scheduler action | **Event:** *ActionComplete* <br/><br/> `@(Html.EJ().Schedule("schedule").ScheduleClientSideEvents(e=>e.ActionComplete("onActionComplete")))` <br><br> **Script:** <br> `<script>` <br> `function onActionComplete(args) {` <br> `}` <br> `</script>` | **Event:** *ActionComplete* <br/><br/> `@Html.EJS().Schedule("schedule").ActionComplete("onActionComplete").Render()` <br> <br> **Script:** <br>`<script>` <br> `function onActionComplete(args) {` <br> `}` <br> `</script>` |

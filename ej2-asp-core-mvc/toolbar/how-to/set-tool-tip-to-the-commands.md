@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Set Essential JS 2 Tooltip to the commands
+# Set Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tooltip to the commands
 
 The `tooltipText` property of the Toolbar item is used to set the HTML Tooltip to the commands that can be viewed as hint texts on mouse hover.
 

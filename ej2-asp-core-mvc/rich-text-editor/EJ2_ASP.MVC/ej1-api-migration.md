@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Rich Text Editor control from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Rich Text Editor control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Keyboard Navigation | **Property:** AllowKeyboardNavigation <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AllowKeyboardNavigation(true).Render();}` | No separate Property for enable/disable keyboard navigation. Its enabled by default. |
 | Localization | **Property:** Locale <br/> <br/>` @{Html.EJ().RichTextEditor("rteSample").Locale("en-US").Render();}` | **Property:** Locale <br/> <br/>`@Html.EJS().RichTextEditor("default").Locale("en-US").Render()` |
@@ -27,7 +27,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Toolbar
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | showToolbar | **Property:**  ShowToolbar<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowToolbar(true).Render();}` | **Property:** Enable <br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).Height("720px").ToolbarSettings(e => e.Enable(true)).Render()` |
 | Tools item | **Property:** Tools <br/> <br/>`List<String> lists = new List<string>() { "unorderedList", "orderedList" };` <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Tools(tool => tool.Lists(lists)).Render();}` | **Property:** Items<br/> <br/>`@Html.EJS().RichTextEditor("customtool").ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
@@ -45,7 +45,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Custom Formats and Fonts
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Format | **Property:**  Format <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Format(format).Render();}` | **Property:** Format <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").Format(t=>t.Width("70px").Default("Paragraph").Types("items")).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Font Size | **Property:** FontSize <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").FontSize(size).Render();}` | **Property:** FontSize<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").FontSize(t=>t.Width("70px").Default("Paragraph").Types("items")).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
@@ -54,7 +54,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Custom Font Colors
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Font Color | **Property:** ColorCode <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ColorCode(colorCode).Render();}` | **Property:** FontColor<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").FontColor(t=>t.columns("10").default("'#fff).modeSwitcher(false)).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Background Color | Not Applicable | **Property:** BackgroundColor<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").BackgroundColor(t=>t.columns("10").Default("'#fff).ModeSwitcher(false).Mode("Palette")).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
@@ -64,14 +64,14 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Link
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Link | Not Applicable | **Property:** CreateLink<br/> <br/>` viewBag.item = new[] {"CreateLink"}`<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Quick Toolbar | Not Applicable | **Property:** Link<br/> <br/>`viewBag.link = new [] {Open, Edit, UnLink}`<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e => e.Link((object)ViewBag.link)).Render()` |
 
 ## Image
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Image | Not Applicable | **Property:** Image <br/> <br/>` viewBag.item = new[] {"Image"}` <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Quick Toolbar | Not Applicable | **Property:** Image <br/> <br/>`viewBag.link = new [] {"Replace", "Align", "Caption", "Remove", "-", "InsertLink","OpenImageLink", "EditImageLink", "RemoveImageLink", "Display", "AltText", "Dimension"}` <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e => e.Image((object)ViewBag.image)).Render()` |
@@ -79,7 +79,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Table
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Table | Not Applicable | **Property:** CreateTable<br/> <br/>` viewBag.item = new[] {"CreateTable"}` <br/> <br/>`@Html.EJS().RichTextEditor("table").ToolbarSettings(e => e.Items((object)ViewBag.items)).Render()` |
 | Quick Toolbar | Not Applicable | **Property:** Table<br/> <br/>`viewBag.table = new [] {"TableHeader", "TableRows", "TableColumns", "BackgroundColor", "-", "TableRemove", "Alignments", "TableCellVerticalAlign", "Styles" }`<br/><br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e => e.Table((object)ViewBag.table)).Render()` |
@@ -91,7 +91,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Counts
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Character Count | **Property:** ShowCharCount<br/><br/>`@{Html.EJ().RichTextEditor("rteSample").ShowCharCount(true).Render();}` | **Property:** ShowCharCount<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).ShowCharCount(true).Render()` |
 | Word Count | **Property:** ShowWordCount<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowWordCount(true).Render();}` | Not Applicable |
@@ -99,7 +99,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## IFrame
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Enable Iframe | By Default, enabled | **Property:** IframeSettings<br/> <br/>`@Html.EJS().RichTextEditor("iframe").Value((string)ViewBag.value).IframeSettings(iframeSettings => iframeSettings.Enable(true)).Render()` |
 | Attributes | **Property:** IFrameAttributes<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Width("800px").IFrameAttributes(new Dictionary<string, object> { { "style", "background-color:#e0ffff color:#6495ed;" } }).Render();}` | **Property:** Attributes <br/> <br/>`@Html.EJS().RichTextEditor("iframe").Value((string)ViewBag.value).Height("500").IframeSettings(iframeSettings => iframeSettings.Enable(true)).Render()` <br/> <br/>`<script>var iframeRTE; function created() {`<br/><br/>` iframeRTE = this; `<br/> <br/>`this.setProperties({`<br/> <br/>`iframeSettings: { enable: true, attributes: { readonly: "readonly"} } }, false); }`<br/><br/>`</script>` |
@@ -107,20 +107,20 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Editor Mode
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Editor Mode | Not Applicable | **Property:** EditorMode <br/> <br/>1.HTML<br/> <br/> 2.Markdown <br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).EditorMode(EditorMode.Html).Render()` |
 
 ## Undo
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Undo Stack Limit | **Property:** UndoStackLimit <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").UndoStackLimit(50).Render();}` | **Property:** UndoRedoSteps <br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).UndoRedoSteps(30).Render()` |
 | Undo Redo Timer | Not Applicable | **Property:** UndoRedoTimer<br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).UndoRedoTimer(300).Render()` |
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Allow Editing | **Property:** AllowEditing <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AllowEditing(true).Render();}` | **Property:** Readonly<br/> <br/>`@Html.EJS().RichTextEditor("default").Readonly(true).Render()` |
 | Auto Focus | **Property:** AutoFocus <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AutoFocus(true).Render();}` | Not Applicable |
@@ -184,7 +184,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Execute Command
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
 | Execute Command | **Method:**  executeCommand(cmdName, args, [textnodeType]) <br/> <br/>`var rteObj = $("#rte ").data("ejRTE "); `<br/> <br/>` rteObj.executeCommand("bold", true)` | **Method:** executeCommand(cmdName, value) <br/> <br/>`var rteObj = document.getElementById("richtexteditor").ej2_Instances[0];`<br/> <br/>`rteObj. executeCommand("Bold" );` |
 | Execute events | **Event:** Execute<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ClientSideEvents(evt => evt.Execute("onExecute")).Render();}` | **Event:** ActionComplete <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ActionComplete("onActionComplete").Render()` |

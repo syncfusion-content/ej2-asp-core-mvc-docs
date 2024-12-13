@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Animation in Syncfusion ASP.NET Core
+# Animation in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core
 
 The **Animation** library is used to perform animation effects on HTML elements by running sequence of frames.
 
 ## Animation Supported controls
 
-The following list demonstrates the Syncfusion ASP.NET Core control documents that are supported with Animation.
+The following list demonstrates the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control documents that are supported with Animation.
 
 * [Accordion](../accordion/how-to/customize-expand-collapse-actions)
 * [Accumulation Chart](../accumulation-chart/legend#enable-animation)
