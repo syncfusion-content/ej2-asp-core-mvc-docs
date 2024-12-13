@@ -50,7 +50,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/file-type-restriction.png)
 
-## Minimum and Maximum Image Size
+## Minimum and maximum image size
 
 The Image Editor allows users to specify the minimum and maximum size limits for uploaded image files by using the `UploadSettings.MinFileSize` and `UploadSettings.MaxFileSize` properties. This ensures that images meet specific requirements, maintaining consistency and preventing oversized or undersized files from being processed.
 

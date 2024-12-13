@@ -45,7 +45,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-open.jpg)
 
-### Open an image from Base64 format
+### Open an image from base64 format
 
 Users can easily open images in the Image Editor using a Base64-encoded string. This method allows you to load images directly from their Base64 representation, ensuring seamless integration and flexibility in your application. Simply pass the Base64 string to the open method, and the image will be loaded into the editor.
 
@@ -78,7 +78,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-save-base.jpg)
 
-### Open an image from Blob storage.
+### Open an image from blob storage.
 
 User can easily open images in the Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the open method, and the image will be loaded into the editor.
 
@@ -111,7 +111,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-open-blob.jpg)
 
-### Add Watermarks while opening an image
+### Add watermarks while opening an image
 
 You can utilize the [`FileOpened`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_FileOpened) event, which triggers once the image is loaded into the image editor. After this event, you can use the ‘drawText’ method to add a watermark. This approach allows the watermark to be automatically drawn on the canvas every time an image is opened in the editor, making it useful for handling copyright-related content.
 
@@ -252,7 +252,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-save.jpg)
 
-### Add Watermarks while saving the image
+### Add watermarks while saving the image
 
 You can utilize the [`FileOpened`]((https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_FileOpened)) event, which triggers once the image is loaded into the image editor. After this event, you can use the [`drawText`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.imageeditor.imageeditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_DrawText) method to add a watermark. This approach allows the watermark to be automatically drawn on the canvas every time an image is opened in the editor, making it useful for handling copyright-related content.
 
