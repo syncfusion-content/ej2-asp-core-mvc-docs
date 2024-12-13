@@ -23,11 +23,3 @@
         margin: 0 auto;
     }
 </style>
-
-<script type="text/javascript">
-    function tabSelecting(e) {
-        if (e.isSwiped) {
-            e.cancel = true;
-        }
-    }
-</script>
