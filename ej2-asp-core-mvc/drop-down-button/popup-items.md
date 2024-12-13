@@ -136,38 +136,3 @@ The whole popup can be customized as per the requirement. In the following examp
 ## See Also
 
 * [Integration with ListView component](./how-to/group-popup-items-with-listview-component)
-
-
-
-## Popup width
-
-The [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_PopupWidth) property determines the width of the dropdown popup in the DropDownButton component. By default, the popup's width adjusts based on the content. However, this property allows setting a specific width, ensuring consistency and alignment with design requirements. The width can be specified using common CSS units or as a raw pixel value.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dropdownbutton/popup-items/popup-width/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Popuptemplate.cs" %}
-{% include code-snippet/dropdownbutton/popup-items/popup-width/popupWidth.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dropdownbutton/popup-items/popup-width/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Popuptemplate.cs" %}
-{% include code-snippet/dropdownbutton/popup-items/popup-width/popupWidth.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-## See Also
-
-* [Integration with ListView component](./how-to/group-popup-items-with-listview-component)
