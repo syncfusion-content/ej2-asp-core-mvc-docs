@@ -1,15 +1,18 @@
 @{
-    List<object> cols = new List<object>();
-    cols.Add(new { field = "OrderDate", direction = "Ascending" });
-    cols.Add(new { field = "Freight", direction = "Descending" });
+  List<object> sortOptions = new List<object>();
+  sortOptions.Add(new { field = "OrderID", direction = "Ascending" });
+  sortOptions.Add(new { field = "ShipCity", direction = "Descending" });
 }
-
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).AllowSorting().Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowSorting().Height("348px").Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("CustomerID").HeaderText("Customer Name").Width("170").Add();
-  col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-  col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
+  col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
+}).SortSettings(sort => sort.Columns(sortOptions)).Render()
 
-}).AllowPaging().PageSettings(page => page.PageCount(2)).SortSettings(sort => sort.Columns(cols)).Render()
+
+
+
+
+

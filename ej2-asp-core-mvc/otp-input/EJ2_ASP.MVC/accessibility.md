@@ -64,7 +64,7 @@ The OTP Input control's accessibility levels are ensured through an [accessibili
 
 ## See also
 
-* [Accessibility in Syncfusion ##Platform_Name## controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## controls](../common/accessibility)
 
 ## HtmlAttributes
 

@@ -1,0 +1,54 @@
+<div style="padding: 10px 0px 20px 0px">
+   @Html.EJS().Button("buttonOne").CssClass("e-primary").Content("SelectColumns [1, 2]").Render()
+   @Html.EJS().Button("buttonTwo").CssClass("e-primary custom").Content("SelectColumns [0, 2]").Render()
+   @Html.EJS().Button("buttonThree").CssClass("e-primary custom").Content("SelectColumns [1,3]").Render()
+   @Html.EJS().Button("buttonFour").CssClass("e-primary custom").Content("SelectColumns [0,5]").Render()
+   @Html.EJS().Button("buttonFive").CssClass("e-primary custom").Content("SelectColumns [1,6]").Render()
+</div>
+<div style="padding: 10px 0px 20px 0px">
+   @Html.EJS().Button("buttonSix").CssClass("e-primary custom").Content("SelectColumns [0,2,5]").Render()
+   @Html.EJS().Button("buttonSeven").CssClass("e-primary custom").Content("SelectColumns [1,3,6]").Render()
+   @Html.EJS().Button("buttonEight").CssClass("e-primary custom").Content("SelectColumns [2,4,6]").Render()
+   @Html.EJS().Button("buttonNine").CssClass("e-primary custom").Content("SelectColumns [0,3,5]").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).SelectionSettings(select => select.AllowColumnSelection(true).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
+<script>
+    document.getElementById('buttonOne').onclick = handleButtonClick;
+    document.getElementById('buttonTwo').onclick = handleButtonClick;
+    document.getElementById('buttonThree').onclick = handleButtonClick;
+    document.getElementById('buttonFour').onclick = handleButtonClick;
+    document.getElementById('buttonFive').onclick = handleButtonClick;
+    document.getElementById('buttonSix').onclick = handleButtonClick;
+    document.getElementById('buttonSeven').onclick = handleButtonClick;
+    document.getElementById('buttonEight').onclick = handleButtonClick;
+    document.getElementById('buttonNine').onclick = handleButtonClick;
+    function handleButtonClick(event){
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (event.target.id === "buttonOne") selectColumns([1, 2]);
+        else if (event.target.id === "buttonTwo") selectColumns([0, 2]);
+        else if (event.target.id === "buttonThree") selectColumns([1,3]);
+        else if (event.target.id === "buttonFour") selectColumns([0,5]);
+        else if (event.target.id === "buttonFive") selectColumns([1,6]);
+        else if (event.target.id === "buttonSix") selectColumns([0,2,5]);
+        else if (event.target.id === "buttonSeven") selectColumns([1,3,6]);
+        else if (event.target.id === "buttonEight") selectColumns([2,4,6]);
+        else if (event.target.id === "buttonNine") selectColumns([0,3,5]);
+    }
+   function selectColumns(columns) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.selectionModule.clearColumnSelection();
+        grid.selectionModule.selectColumns(columns);
+    }
+</script>
+<style>
+  .custom{
+    margin-left: 5px;
+  }
+</style>

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization in Syncfusion Query Builder Control
+# Localization in Syncfusion<sup style="font-size:70%">&reg;</sup> Query Builder Control
 
 The `Localization` library allows you to localize the default text content of the Query Builder. The Query Builder has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `Locale` value and translation object.
 
