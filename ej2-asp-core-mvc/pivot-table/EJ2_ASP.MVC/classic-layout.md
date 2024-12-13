@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Classic layout in ##Platform_Name## Pivot Table Component
+title: Classic layout in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Classic layout in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Classic Layout
