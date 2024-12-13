@@ -4,6 +4,7 @@
       XName("x").
       YName("y").
       DataSource(ViewBag.dataSource).
+      DashArray("5,5").
       Border(ViewBag.border).
       Add();
    }).PrimaryXAxis(px =>
