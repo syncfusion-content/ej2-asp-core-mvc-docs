@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Classic Layout
+# Classic Layout in ##Platform_Name## Pivot Table Component
 
 > The classic layout supports only relational data sources and operates exclusively with client-side engine.
 
