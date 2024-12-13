@@ -1,45 +1,16 @@
-@{
-    List<object> menuItems = new List<object>
-    {
-        new {
-            answerType = "Selection",
-            description = "Choose from options",
-            iconCss = "e-icons e-list-unordered"
-        },
-        new {
-            answerType = "Yes / No",
-            description = "Select Yes or No",
-            iconCss = "e-icons e-check-box"
-        },
-        new {
-            answerType = "Text",
-            description = "Type own answer",
-            iconCss = "e-icons e-caption",
-            items = new List<object>
-            {
-                new {
-                    answerType = "Single line",
-                    description = "Type answer in a single line",
-                    iconCss = "e-icons e-text-form"
-                },
-                new {
-                    answerType = "Multiple line",
-                    description = "Type answer in multiple lines",
-                    iconCss = "e-icons e-text-wrap"
-                }
-            }
-        },
-        new {
-            answerType = "None",
-            iconCss = "e-icons e-mouse-pointer",
-            description = "No answer required"
-        }
-    };
-}
 
 <div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
-<ejs-contextmenu id="contextmenu" cssClass="e-contextMenu-template" target="#contextmenutarget" items="menuItems" itemTemplate="#menuItemTemplate"></ejs-contextmenu>
+<ejs-contextmenu id="contextmenu" cssClass="e-contextMenu-template" target="#contextmenutarget" items="ViewBag.menuItems" itemTemplate="#contextMenuTemplate"></ejs-contextmenu>
 
+<script id="contextMenuTemplate" type="text/x-template">
+    <div class="menu-wrapper">
+        <span class="${iconCss} icon-right"></span>
+        <div class="text-content">
+            <span class="text">${text}</span>
+            <span class="description">${description}</span>
+        </div>
+    </div>
+</script>
 <style>
 
 #contextmenutarget {

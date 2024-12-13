@@ -12,7 +12,7 @@ documentation: ug
 
 ## Item template
 
-The [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_ItemTemplate) property in the ContextMenu component allows you to define custom templates for displaying menu items within the context menu. This feature is particularly useful when you want to customize the appearance or layout of the menu items beyond the default text-based list.
+The [ItemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_ItemTemplate) property in the ContextMenu component allows you to define custom templates for displaying menu items within the context menu. This feature is particularly useful when you want to customize the appearance or layout of the menu items beyond the default text-based list.
 
 {% endif %}
 
@@ -57,8 +57,8 @@ The ContextMenu items can be customized by using the [`Render`](https://help.syn
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/context-menu/target/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Template.cs" %}
-{% include code-snippet/context-menu/target/template.cs %}
+{% highlight c# tabtitle="Target.cs" %}
+{% include code-snippet/context-menu/target/target.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,8 +68,8 @@ The ContextMenu items can be customized by using the [`Render`](https://help.syn
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/context-menu/target/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Template.cs" %}
-{% include code-snippet/context-menu/target/default.cs %}
+{% highlight c# tabtitle="Target.cs" %}
+{% include code-snippet/context-menu/target/target.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

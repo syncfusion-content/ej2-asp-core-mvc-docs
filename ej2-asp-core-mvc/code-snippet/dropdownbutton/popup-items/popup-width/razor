@@ -1,4 +1,4 @@
-@Html.EJS().DropDownButton("separator").Content("Edit").Items((IEnumerable<object>)ViewBag.items).IconCss("e-icons e-edit").PopupWidth("100px").Render()
+@Html.EJS().DropDownButton("popupwidth").Content("Edit").Items((IEnumerable<object>)ViewBag.items).IconCss("e-icons e-edit").PopupWidth("200px").Render()
 
 <style>
 /* csslint ignore:start */

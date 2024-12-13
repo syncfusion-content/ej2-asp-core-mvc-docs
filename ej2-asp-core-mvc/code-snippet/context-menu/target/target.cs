@@ -8,7 +8,7 @@ namespace WebApplication1.Controllers
 {
     public class ContextMenuController : Controller
     {
-        public IActionResult Template()
+        public IActionResult Target()
         {
             List<object> menuItems = new List<object>();
             menuItems.Add(new

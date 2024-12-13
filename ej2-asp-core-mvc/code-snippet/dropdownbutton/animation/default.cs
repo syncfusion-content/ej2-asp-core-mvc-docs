@@ -17,11 +17,11 @@ namespace WebApplication1.Controllers
             });
             items.Add(new
             {
-                text: "Has Attachments"
+                text = "Has Attachments"
             });
             items.Add(new
             {
-                text: "Categorized"
+                text = "Categorized"
             });
             items.Add(new
             {

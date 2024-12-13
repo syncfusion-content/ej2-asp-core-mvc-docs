@@ -1,33 +1,13 @@
 
-@{
-    var menuItems = new List<object>
-    {
-        new { Text = "Selection", Description = "Choose from options", IconCss = "e-icons e-list-unordered" },
-        new { Text = "Yes / No", Description = "Select Yes or No", IconCss = "e-icons e-check-box" },
-        new
-        {
-            Text = "Text",
-            Description = "Type own answer",
-            IconCss = "e-icons e-caption",
-            items = new List<object>
-            {
-                new { Text = "Single line", Description = "Type answer in a single line", IconCss = "e-icons e-text-form" },
-                new { Text = "Multiple line", Description = "Type answer in multiple lines", IconCss = "e-icons e-text-wrap" }
-            }
-        },
-        new { Text = "None", Description = "No answer required", IconCss = "e-icons e-mouse-pointer" }
-    };
-}
-
 <div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
-@Html.EJS().ContextMenu("contextmenu").Target("#contextmenutarget").CssClass("e-contextMenu-template").Items(menuItems).ItemTemplate("#contextMenuTemplate").Render()
+@Html.EJS().ContextMenu("contextmenu").Target("#contextmenutarget").CssClass("e-contextMenu-template").Items((IEnumerable<object>)ViewBag.menuItems).ItemTemplate("#contextMenuTemplate").Render()
 
 <script id="contextMenuTemplate" type="text/x-template">
     <div class="menu-wrapper">
-        <span class="${IconCss} icon-right"></span>
+        <span class="${iconCss} icon-right"></span>
         <div class="text-content">
-            <span class="text">${Text}</span>
-            <span class="description">${Description}</span>
+            <span class="text">${text}</span>
+            <span class="description">${description}</span>
         </div>
     </div>
 </script>

@@ -1,8 +1,8 @@
 layout: post
-title: Popup Items in ##Platform_Name## Drop Down Button Component
-description: Learn here all about popup items in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
+title: Customize popup width in ##Platform_Name## Drop Down Button Component
+description: Learn here all about Customize popup width in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Popup Items
+control: Customize popup width
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -33,9 +33,3 @@ The [PopupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sp
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-## See Also
-
-* [Integration with ListView component](./how-to/group-popup-items-with-listview-component)

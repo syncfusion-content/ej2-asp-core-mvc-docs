@@ -1,4 +1,4 @@
-<ejs-dropdownbutton id="separator" content="Edit" items="ViewBag.items" iconCss="e-icons e-edit" popupWidth="200px"></ejs-dropdownbutton>
+<ejs-dropdownbutton id="popupwidth" content="Edit" items="ViewBag.items" iconCss="e-icons e-edit" popupWidth="200px"></ejs-dropdownbutton>
 
 <style>
 /* csslint ignore:start */
