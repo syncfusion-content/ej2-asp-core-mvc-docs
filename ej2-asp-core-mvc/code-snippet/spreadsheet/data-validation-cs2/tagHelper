@@ -21,7 +21,7 @@
                     </e-spreadsheet-cell>
                     <e-spreadsheet-cell value="Total Price">
                         <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
-                    </e-spreadsheet-cell
+                    </e-spreadsheet-cell>
                 </e-spreadsheet-cells>
             </e-spreadsheet-row>
             <e-spreadsheet-row>
@@ -34,7 +34,7 @@
                     </e-spreadsheet-cell>
                     <e-spreadsheet-cell value="50000">
                     </e-spreadsheet-cell>
-                    <e-spreadsheet-cell value="1,45,000.00"></e-spreadsheet-cell
+                    <e-spreadsheet-cell value="1,45,000.00"></e-spreadsheet-cell>
                 </e-spreadsheet-cells>
             </e-spreadsheet-row>
             <e-spreadsheet-row>
@@ -47,7 +47,7 @@
                     </e-spreadsheet-cell>
                     <e-spreadsheet-cell value="45000">
                     </e-spreadsheet-cell>
-                    <e-spreadsheet-cell value="1,45,000.00"></e-spreadsheet-cell
+                    <e-spreadsheet-cell value="1,45,000.00"></e-spreadsheet-cell>
                 </e-spreadsheet-cells>
             </e-spreadsheet-row>
             <e-spreadsheet-row>
@@ -60,7 +60,7 @@
                     </e-spreadsheet-cell>
                     <e-spreadsheet-cell value="35000">
                     </e-spreadsheet-cell>
-                    <e-spreadsheet-cell value="1,54,500.00"></e-spreadsheet-cell
+                    <e-spreadsheet-cell value="1,54,500.00"></e-spreadsheet-cell>
                 </e-spreadsheet-cells>
             </e-spreadsheet-row>
             <e-spreadsheet-row>
@@ -73,7 +73,7 @@
                     </e-spreadsheet-cell>
                     <e-spreadsheet-cell value="90000">
                     </e-spreadsheet-cell>
-                    <e-spreadsheet-cell value="1,00,095.00"></e-spreadsheet-cell
+                    <e-spreadsheet-cell value="1,00,095.00"></e-spreadsheet-cell>
                 </e-spreadsheet-cells>
             </e-spreadsheet-row>
            <e-spreadsheet-columns>
