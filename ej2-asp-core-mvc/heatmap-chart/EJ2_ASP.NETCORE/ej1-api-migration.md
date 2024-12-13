@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of heat map component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of heat map component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Members
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Specifies the width of the heat map | **Property:**  *width*<br/><br/>`<ej-heatmap id="HeatMap" width="810px">`<br/>`</ej-heatmap>`| **Property:**  *width*<br/><br/>`<ejs-heatmap id='heatmap-container' width="300px">`<br/>`</ejs-heatmap>`|
 | Specifies the height of the heat map| **Property:**  *height*<br/><br/>`<ej-heatmap id="HeatMap" height="810px">`<br/>`</ej-heatmap>`|**Property:**  *height*<br/><br/>`<ejs-heatmap id='heatmap-container' height="300px">`<br/>`</ejs-heatmap>`|
@@ -36,6 +36,6 @@ This article describes the API migration process of heat map component from Esse
 
 ## Events
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Triggered when the cell get clicked.| **Property:**  *cellSelected*<br/><br/>`<ej-heatmap actionComplete="window.actionComplete">`<br>`</ej-heatmap>`<br><br>window.actionComplete = function(args) {}|**Property:**  *cellClick*<br/><br/>`<ejs-heatmap id='heatmap-container' cellClick="window.cellClick">`<br>`</ejs-heatmap>`<br><br>window.cellClick = function (args) { }|

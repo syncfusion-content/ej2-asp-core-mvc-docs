@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Show or hide totals in ##Platform_Name## Syncfusion Pivot Table Control
+# Show or hide totals in ##Platform_Name## Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table Control
 
 ## Show or hide grand totals
 

@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Rich Text Editor control from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Rich Text Editor control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Keyboard Navigation | **Property:** allow-keyboard-navigation <br/> <br/>`<ej-rte allow-keyboard-navigation="true"></ej-rte>` | No separate Property for enable/disable keyboard navigation.  Its enabled by default. |
 | Localization | **Property:** locale <br/> <br/>` <ej-rte locale="en-US"></ej-rte>` | **Property:** locale <br/> <br/>` <ejs-richtexteditor locale="en-US"></ejs-richtexteditor>` |
@@ -27,7 +27,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Toolbar
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | showToolbar | **Property:**  show-toolbar<br/> <br/>`<ej-rte show-toolbar="true"></ej-rte>` | **Property:** enable <br/> <br/>`<ejs-richtexteditor id="defaultRTE"><e-richtexteditor-toolbarsettings enable = "true"></e-richtexteditor-toolbarsettings></ejs-richtexteditor>` |
 | Tools item | **Property:** tools <br/> <br/>`List<String> lists = new List<string>() { "unorderedList", "orderedList" };` <br/> <br/>`<ej-rte id="rteSample"><e-tools lists="lists"></e-tools></ej-rte>` | **Property:** items<br/> <br/>`<ejs-richtexteditor><e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings></ejs-richtexteditor>` |
@@ -45,7 +45,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Custom Formats and Fonts
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Format | **Property:**  format <br/> <br/>`<ej-rte format="viewBag.format"></ej-rte>` | **Property:** format <br/> <br/>`<ejs-richtexteditor><e-richtexteditor-format default="pPragraph" width="70px" types="items"></e-richtexteditor-format><e-richtexteditor-toolbarsettings items = "@ViewBag.items"><e-richtexteditor-toolbarsettings></ejs-richtexteditor>` |
 | Font Size | **Property:**  font-size <br/> <br/>`<ej-rte font-size="viewBag.fontSize"></ej-rte>` | **Property:** fontSize<br/> <br/>`<ejs-richtexteditor><e-richtexteditor-fontsize width="40px" default="10", types="items"></e-richtexteditor-fontsize><e-richtexteditor-toolbarsettings items = "@ViewBag.items" ></e-richtexteditor-toolbarsettings></ejs-richtexteditor>` |
@@ -54,7 +54,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Custom Font Colors
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Font Color | **Property:** color-code <br/> <br/>`<ej-rte color-code="viewBag.colorCode"></ej-rte>` | **Property:** fontColor<br/> <br/>`<ejs-richtexteditor><e-richtexteditor-fontcolor modeSwitcher="true" default="#fff"></e-richtexteditor-fontcolor><e-richtexteditor-toolbarsettings items="viewBag.item"></e-richtexteditor-toolbarsettings></ejs-richtexteditor>` |
 | Background Color | Not Applicable | **Property:** BackgroundColor<br/> <br/>`<ejs-richtexteditor><e-richtexteditor-backgroundcolor modeSwitcher="true" default= "#fff" mode= "Palette" columns="10" ></e-richtexteditor-backgroundcolor><e-richtexteditor-toolbarsettings items="viewBag.item"></e-richtexteditor-toolbarsettings></ejs-richtexteditor>` |
@@ -64,14 +64,14 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Link
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Link | Not Applicable | **Property:** CreateLink<br/> <br/>` viewBag.item = new[] {"CreateLink"}`<br/> <br/>`<ejs-richtexteditor><e-richtexteditor-toolbarsettings items="viewBag.item"></e-richtexteditor-toolbarsettings></ejs-richtexteditor>` |
 | Quick Toolbar | Not Applicable | **Property:** link<br/> <br/>`viewBag.link = new [] {Open, Edit, UnLink}`<br/> <br/>`<ejs-richtexteditor><e-richtexteditor-toolbarsettings items = "@ViewBag.items"></e-richtexteditor-toolbarsettings><e-richtexteditor-quicktoolbarsettings link="@ViewBag.link"></e-richtexteditor-quicktoolbarsettings></ejs-richtexteditor>` |
 
 ## Image
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Image | Not Applicable | **Property:** Image <br/> <br/>` viewBag.item = new[] {"Image"}` <br/> <br/>`<ejs-richtexteditor><e-richtexteditor-toolbarsettings tems="viewBag.item"></e-richtexteditor-toolbarsettings></ejs-richtexteditor>` |
 | Quick Toolbar | Not Applicable | **Property:** image <br/> <br/>`viewBag.link = new [] {"Replace", "Align", "Caption", "Remove", "-", "InsertLink","OpenImageLink", "EditImageLink", "RemoveImageLink", "Display", "AltText", "Dimension"}` <br/> <br/>`<ejs-richtexteditor><e-richtexteditor-toolbarsettings items = "@ViewBag.items"></e-richtexteditor-toolbarsettings><e-richtexteditor-quicktoolbarsettings image="@ViewBag.image"></e-richtexteditor-quicktoolbarsettings></ejs-richtexteditor>` |
@@ -79,7 +79,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Table
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Table | Not Applicable | **Property:** CreateTable<br/> <br/>` viewBag.item = new[] {"CreateTable"}` <br/> <br/>`<ejs-richtexteditor><e-richtexteditor-toolbarsettings items="viewBag.item"></e-richtexteditor-toolbarsettings></ejs-richtexteditor>` |
 | Quick Toolbar | Not Applicable | **Property:** table<br/> <br/>`viewBag.table = new [] {"TableHeader", "TableRows", "TableColumns", "BackgroundColor", "-", "TableRemove", "Alignments", "TableCellVerticalAlign", "Styles" }`<br/><br/>`<ejs-richtexteditor><e-richtexteditor-toolbarsettings items = "@ViewBag.items"></e-richtexteditor-toolbarsettings><e-richtexteditor-quicktoolbarsettings table="@ViewBag.table"></e-richtexteditor-quicktoolbarsettings></ejs-richtexteditor>` |
@@ -91,7 +91,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Counts
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Character Count | **Property:** show-char-count<br/><br/>`<ej-rte show-char-count="true"></ej-rte>` | **Property:** showCharCount<br/> <br/>`<ejs-richtexteditor showCharCount = "true"><e-richtexteditor-toolbarsettings items="viewBag.item"></e-richtexteditor-toolbarsettings></ejs-richtexteditor>`  |
 | Word Count | **Property:** show-word-count<br/> <br/>`<ej-rte show-word-count="true"></ej-rte>` | Not Applicable |
@@ -99,7 +99,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Iframe
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Enable Iframe | By Default, enabled | **Property:** iframeSettings<br/> <br/>`<ejs-richtexteditor id="iframe" value="@ViewBag.value"><e-richtexteditor-iframesettings enable="true"></e-richtexteditor-iframesettings></ejs-richtexteditor>`  |
 | Attributes | **Property:** iframe-attributes<br/> <br/>`<ej-rte iframe-attributes="viewBag.attribute"></ej-rte>` | **Property:** attributes <br/> <br/>`<ejs-richtexteditor id="iframe" value="@ViewBag.value"><e-richtexteditor-iframesettings enable="true"></e-richtexteditor-iframesettings></ejs-richtexteditor>` <br/> <br/>`<script>var iframeRTE; function created() {`<br/><br/>` iframeRTE = this; `<br/> <br/>`this.setProperties({`<br/> <br/>`iframeSettings: { enable: true, attributes: { readonly: "readonly"} } }, false); }`<br/><br/>`</script>` |
@@ -107,20 +107,20 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Editor Mode
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Editor Mode | Not Applicable | **Property:** editorMode <br/> <br/>1.HTML<br/> <br/> 2.Markdown <br/> <br/>`<ejs-richtexteditor editorMode = "HTML"></ejs-richtexteditor>` |
 
 ## Undo
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Undo Stack Limit | **Property:** undo-stack-limit <br/> <br/>`<ej-rte undo-stack-limit ="50"></ej-rte>` | **Property:** undoRedoSteps <br/> <br/>`<ejs-richtexteditor undoRedoSteps = "30"></ejs-richtexteditor>` |
 | Undo Redo Timer | Not Applicable | **Property:** undoRedoTimer<br/> <br/>`<ejs-richtexteditor undoRedoTimer = "300"></ejs-richtexteditor>` |
 
 ## Common
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Allow Editing | **Property:** allow-editing <br/> <br/>`<ej-rte allow-editing="true"></ej-rte>` | **Property:** readonly<br/> <br/>`<ejs-richtexteditor readonly = "true"></ejs-richtexteditor>` |
 | Auto Focus | **Property:** auto-focus <br/> <br/>`<ej-rte auto-focus="false"></ej-rte>` | Not Applicable |
@@ -184,7 +184,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Execute Command
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Execute Command | **Method:**  executeCommand(cmdName, args, [textnodeType]) <br/> <br/>`var rteObj = $("#rte ").data("ejRTE "); `<br/> <br/>` rteObj.executeCommand("bold", true)` | **Method:** executeCommand(cmdName, value) <br/> <br/>`var rteObj = document.getElementById('richtexteditor').ej2_Instances[0];`<br/> <br/>`rteObj. executeCommand("Bold" );` |
 | Execute events | **Event:** execute<br/> <br/>`<ej-rte execute = "onExecute"></ej-rte>` | **Event:** actionComplete <br/> <br/>`<ejs-richtexteditor actionComplete = "onActionComplete"></ejs-richtexteditor>` |

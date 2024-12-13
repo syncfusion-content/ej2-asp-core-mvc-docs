@@ -1,0 +1,42 @@
+<div style="padding-bottom: 20px">
+    <ejs-button id="buttons" cssClass="e-primary" content="Show Selected Records"></ejs-button>
+</div>
+<div id="dialog" ></div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" allowPaging="true">
+    <e-grid-selectionsettings mode="Row" type="Multiple" persistSelection="true"></e-grid-selectionsettings>
+    <e-grid-pagesettings pageCount="10"></e-grid-pagesettings>
+    <e-grid-columns>
+        <e-grid-column type="checkbox" width="50"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" isPrimaryKey="true" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="130" format="yMd" textAlign="Right"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    let dialogVisible = true;
+    let dialog = new ej.popups.Dialog({
+        header: 'Selected Records',
+        showCloseIcon: true,
+        position: { X: 560, Y: 280 },
+        width: '400px',
+        visible: false,
+        close: dialogClose,
+    });
+    dialog.appendTo('#dialog');
+    function dialogClose() {
+        dialogVisible = false;
+    }
+    document.getElementById('buttons').onclick = function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        let selectedRecords = grid.getSelectedRecords();
+        if (selectedRecords.length>0) {
+            dialog.visible = true;
+            dialog.content = '';
+            for (let i = 0; i < selectedRecords.length; i++) {
+                dialog.content += `<p><b>OrderID:</b> ${(selectedRecords[i]).OrderID}</p>`;
+            }
+        }
+    };
+</script>

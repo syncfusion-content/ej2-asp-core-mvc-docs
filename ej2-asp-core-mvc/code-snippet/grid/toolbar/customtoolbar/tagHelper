@@ -1,0 +1,27 @@
+@using Syncfusion.EJ2.Navigations;
+
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" allowGrouping="true" toolbarTemplate="#template">
+    <e-grid-groupsettings columns="@(new string[] {"CustomerID"})"></e-grid-groupsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<div id="template">
+  <ejs-toolbar id="defaultToolbar" clicked="clickHandler">
+    <e-toolbar-items>
+      <e-toolbar-item id="collapse" text="Collapse All" prefixIcon="e-chevron-up icon"></e-toolbar-item>
+      <e-toolbar-item id="expand" text="Expand All" prefixIcon="e-chevron-down icon"></e-toolbar-item>
+    </e-toolbar-items>
+  </ejs-toolbar>
+</div>
+<script>
+  function clickHandler(args){
+      var grid = document.getElementById("grid").ej2_instances[0];
+      var target = (args.originalEvent.target).closest('button');
+      if (target.id === 'collapse') grid.groupModule.collapseAll();
+      else grid.groupModule.expandAll();
+    }; 
+</script>

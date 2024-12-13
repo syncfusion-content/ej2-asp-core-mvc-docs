@@ -11,7 +11,7 @@ documentation: ug
 
 # Show different types of toast
 
-The Syncfusion ASP.NET Core toast has the following predefined styles that can be defined using the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_CssClass) property for achieving different types of toast:
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core toast has the following predefined styles that can be defined using the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_CssClass) property for achieving different types of toast:
 
 | Class | Description |
 | -------- | -------- |
