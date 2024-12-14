@@ -1,3 +1,4 @@
+---
 layout: post
 title: Change animation settings in ##Platform_Name## Drop Down Button Component
 description: Learn here all about Change animation settings in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
