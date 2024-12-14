@@ -1,0 +1,120 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+@using Syncfusion.EJ2.Grids
+@using Syncfusion.EJ2.Buttons
+
+@{
+
+    var headerText0 = new TabHeader { Text = "Login" };
+    var headerText1 = new TabHeader { Text = "Grid" };
+    var content0 = ".login-form";
+    var content1 = ".grid-view";
+
+}
+
+<ejs-tab id="ej2Tab"  loadOn="@ContentLoad.Dynamic">
+    <e-tab-tabitems>
+        <e-tab-tabitem header='headerText0' content="@content0" disabled="false"></e-tab-tabitem>
+        <e-tab-tabitem header="headerText1" content="@content1" disabled="true"></e-tab-tabitem>
+    </e-tab-tabitems>
+</ejs-tab>
+
+    <div class="login-form" style="display:none">
+        <div class='wrap'>
+            <div id="heading">Sign in to view the Grid</div>
+            <br>
+            <div id="input-container">
+            <ejs-textbox id="userName" placeholder="User Name"></ejs-textbox>
+               <br><br>
+            <ejs-textbox id="Password" placeholder="Password"></ejs-textbox>
+            </div>
+        </div>
+        <br>
+        <div class="button-contain" style="display: flex; justify-content: space-around;">
+        <ejs-button id="button" isPrimary="true" content="Log in"></ejs-button>
+        </div>
+    </div>
+
+<div class="grid-view" style="display:none">
+    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+        <e-grid-columns>
+            <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer ID" width="140" textAlign='Left'></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format='C' width="120"></e-grid-column>
+            <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" type='date' format="yMd" width="140"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .container {
+        min-width: 350px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #form-container {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .btn-section {
+        text-align: center;
+    }
+
+    .add-tab-btn-section td {
+        padding: 10px;
+    }
+
+    .info {
+        font-weight: bold;
+    }
+
+    .e-add-icon::before {
+        content: '\e7d5';
+    }
+</style>
+
+<script>
+    document.getElementById("button").addEventListener("click", handleLogin);
+    function handleLogin() {
+        let userName = document.getElementById("userName").value;
+        let password = document.getElementById("Password").value;
+        if (!userName && !password) {
+            window.alert('Enter both username and password');
+        } else if (!userName) {
+            window.alert('Enter the username');
+        } else if (!password) {
+            window.alert('Enter the password');
+        } else if (userName.length < 4) {
+            window.alert('Username must be at least 4 characters long');
+        } else {
+            var tabObj = document.getElementById("ej2Tab").ej2_instances[0];
+            document.getElementById("userName").value = "";
+            document.getElementById("Password").value = "";
+            tabObj.items[0].disabled = true;
+            tabObj.items[1].disabled = false;
+            tabObj.dataBind();
+            tabObj.select(1);
+        }
+    }
+</script>

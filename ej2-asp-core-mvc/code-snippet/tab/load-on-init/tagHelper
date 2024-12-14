@@ -1,0 +1,149 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations
+@using Syncfusion.EJ2.Buttons
+
+@{
+
+    var headerText0 = new TabHeader { Text = "Login" };
+    var headerText1 = new TabHeader { Text = "Syncfusion EJ2" };
+    var headerText2 = new TabHeader { Text = "FeedBack" };
+ 
+    var content0 = ".login-form";
+    var content1 = ".over-view";
+    var content2 = ".feed-back";
+
+}
+
+<ejs-tab id="ej2Tab"  loadOn="@ContentLoad.Init">
+    <e-tab-tabitems>
+        <e-tab-tabitem header='headerText0' content="@content0"></e-tab-tabitem>
+        <e-tab-tabitem header="headerText1" content="@content1"></e-tab-tabitem>
+        <e-tab-tabitem header="headerText2" content="@content2"></e-tab-tabitem>
+    </e-tab-tabitems>
+</ejs-tab>
+
+    <div class="login-form" style="display:none">
+        <div class='wrap'>
+            <br>
+            <div id="input-container">
+            <ejs-textbox id="userName" placeholder="User Name"></ejs-textbox>
+               <br><br>
+            <ejs-textbox id="Password" placeholder="Password"></ejs-textbox>
+            </div>
+        </div>
+        <br>
+    <div class="button-contain" style="display: flex; justify-content: center; align-items: center; gap:10px;">
+        <ejs-button id="sign-in-button" isPrimary="true" content="SignIn"></ejs-button>
+        <ejs-button id="skip-button" isPrimary="true" content="skip"></ejs-button>
+        </div>
+    </div>
+
+<div class="over-view" style="display:none">
+    <p>
+        You can check out our Syncfusion Ej2 demo
+        <a href="https://ej2.syncfusion.com/demos/" target="_blank">here</a>.
+    </p>
+    <br />
+    <p>
+        The user guide is available
+        <a href="https://ej2.syncfusion.com/documentation/introduction" target="_blank">here</a>.
+    </p>
+</div>
+
+<div class="feed-back" style="display:none">
+    <div class='wrap'>
+        <div id="input-container">
+            <ejs-textbox id="sign-in-name" placeholder="User Name"></ejs-textbox>
+            <br><br>
+            <ejs-textbox id="e-mail" placeholder="Enter Email"></ejs-textbox>
+            <br><br>
+            <ejs-textbox id="comments" placeholder="Enter Comments"></ejs-textbox>
+        </div>
+    </div>
+    <br>
+    <div class="button-contain" style="display: flex; justify-content: center; align-items: center; gap:10px;">
+        <ejs-button id="feed-back-button" isPrimary="true" content="Submit"></ejs-button>
+    </div>
+</div>
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .container {
+        min-width: 350px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #form-container {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .btn-section {
+        text-align: center;
+    }
+
+    .add-tab-btn-section td {
+        padding: 10px;
+    }
+
+    .info {
+        font-weight: bold;
+    }
+
+    .e-add-icon::before {
+        content: '\e7d5';
+    }
+</style>
+
+<script>
+    document.getElementById("sign-in-button").addEventListener("click", handleLogin);
+    document.getElementById("skip-button").addEventListener("click", handleSkip);
+    document.getElementById("feed-back-button").addEventListener("click", handlefeedBack);
+    var userName;
+    function handleLogin() {
+        var tabObj = document.getElementById("ej2Tab").ej2_instances[0];
+        userName = document.getElementById("userName").value;
+        let password = document.getElementById("Password").value;
+        if (!userName && !password) {
+            window.alert('Enter both username and password');
+        } else if (!userName) {
+            window.alert('Enter the username');
+        } else if (!password) {
+            window.alert('Enter the password');
+        } else if (userName.length < 4) {
+            window.alert('Username must be at least 4 characters long');
+        } else {
+            document.getElementById("sign-in-name").value = userName;
+            tabObj.select(1);
+        }
+    }
+    function handleSkip() {
+        var tabObj = document.getElementById("ej2Tab").ej2_instances[0];
+        tabObj.select(1);
+    }
+    function handlefeedBack() {
+        var tabObj = document.getElementById("ej2Tab").ej2_instances[0];
+        document.getElementById("userName").value = '';
+        document.getElementById("Password").value = '';
+        tabObj.select(0);
+    }
+</script>
