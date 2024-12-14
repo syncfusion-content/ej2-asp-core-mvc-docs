@@ -1,31 +1,11 @@
 <div class="control-section">
     <div class="sample-container" style="padding:10px">
-        <ejs-filemanager id="file" created="created" view="Details">
+        <ejs-filemanager id="file" view="Details">
             <e-filemanager-ajaxsettings url="/Home/FileOperations"
                                         downloadUrl="/Home/Download"
                                         uploadUrl="/Home/Upload"
                                         getImageUrl="/Home/GetImage">
             </e-filemanager-ajaxsettings>
         </ejs-filemanager>
-    </div>
-
-    <script>
-        function created() {
-            var filemanager = document.getElementById("file").ej2_instances[0];
-            filemanager.uploadObj.dropArea = null;
-        }
-        document.getElementById("element").addEventListener('click', function () {
-            var filemanager = document.getElementById("file").ej2_instances[0];
-            var files = filemanager.getSelectedFiles();
-            for (var i = 0; i < files.length; i++) {
-                var path = files[i].filterPath + files[i].name;
-                console.log(path);
-            }
-        });
-    </script>
-    <style>
-        .e-empty-inner-content {
-            display: none;
-        }
-    </style>
+    </div>    
 </div>
