@@ -1,0 +1,1 @@
+@Html.EJS().DropDownList("Status").Placeholder("Select Status").PopupHeight("200px").AllowResize(true).DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "Status"}).Render()

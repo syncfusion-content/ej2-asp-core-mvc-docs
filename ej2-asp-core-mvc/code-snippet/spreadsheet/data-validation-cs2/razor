@@ -1,0 +1,70 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowFormulaBar(false).Created("created").Sheets(sheet =>
+{
+    sheet.Name("PriceDetails").Rows(row =>
+    {
+        row.Cells(cell =>
+        {
+            cell.Value("Seller Name").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Customer Id").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Customer Name").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Product Name").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Product Price").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Total Price").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Value("John").Add();
+            cell.Value("101").Add();
+            cell.Value("Nash").Add();
+            cell.Value("Digger").Add();
+            cell.Value("50000").Add();
+            cell.Value("1,45,000.00").Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Value("Mike").Add();
+            cell.Value("25").Add();
+            cell.Value("Jim").Add();
+            cell.Value("Cherrypicker").Add();
+            cell.Value("45000").Add();
+            cell.Value("1,45,000.00").Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Value("shane").Add();
+            cell.Value("35").Add();
+            cell.Value("Sean").Add();
+            cell.Value("Kango").Add();
+            cell.Value("35000").Add();
+            cell.Value("1,54,500.00").Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Value("John").Add();
+            cell.Value("101").Add();
+            cell.Value("Nash").Add();
+            cell.Value("JCB").Add();
+            cell.Value("90000").Add();
+            cell.Value("1,00,095.00").Add();
+        }).Add();
+    }).Columns(column =>
+    {
+        column.Width(88).Add();
+        column.Width(88).Add();
+        column.Width(106).Add();
+        column.Width(98).Add();
+        column.Width(88).Add();
+        column.Width(81).Add();
+    }).Add();
+}).Render()
+
+
+<script>
+    function created() {
+        var spreadsheet = document.getElementById("spreadsheet").ej2_instances[0];
+        //Add Data Validation to range.
+        spreadsheet.addDataValidation({ type: 'Custom', value1: '=AND(B2>10, B2<100)' }, 'E2:E5');
+        //Highlight Invalid Data.
+        spreadsheet.addInvalidHighlight('E2:E5');
+    }
+</script>
