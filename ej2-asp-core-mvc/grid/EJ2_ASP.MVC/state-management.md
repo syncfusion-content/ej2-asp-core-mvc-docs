@@ -61,7 +61,7 @@ Here is an example code to change the component id dynamically to restore initia
 {% endhighlight %}
 {% endtabs %}
 
-![Changing component id](../images/state-management/state-id.gif)
+![Changing component id](images/state-management/state-id.gif)
 
 ### Clearing local storage
 
@@ -78,7 +78,7 @@ Here is an example code on how to clear local storage to retain its default stat
 {% endhighlight %}
 {% endtabs %}
 
-![Clearing local storage](../images/state-management/state-clear-stoarge.gif)
+![Clearing local storage](images/state-management/state-clear-stoarge.gif)
 
 ## Restore to specific state version
 
@@ -97,7 +97,7 @@ Here is an example of how to integrate version-based persistence into your ASP.N
 {% endhighlight %}
 {% endtabs %}
 
-![Restore to specific state version](../images/state-management/state-version.gif)
+![Restore to specific state version](images/state-management/state-version.gif)
 
 ## Restore to previous state
 
@@ -116,7 +116,7 @@ The provided code demonstrates how to save and restore the previous state of a S
 {% endhighlight %}
 {% endtabs %}
 
-![Restore to previous state](../images/state-management/state-previous.gif)
+![Restore to previous state](images/state-management/state-previous.gif)
 
 ## Maintaining custom query in a persistent state
 
@@ -168,7 +168,7 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 {% endhighlight %}
 {% endtabs %}
 
-![Prevent columns from persisting](../images/state-management/state-prevent.gif)
+![Prevent columns from persisting](images/state-management/state-prevent.gif)
 
 ## Add to persist
 
@@ -189,7 +189,7 @@ Here's an example of how to add a new column to a list of persisted columns:
 {% endhighlight %}
 {% endtabs %}
 
-![Add a new column in persisted columns list](../images/state-management/state-add.gif)
+![Add a new column in persisted columns list](images/state-management/state-add.gif)
 
 > * Adding new columns using `Columns` directly in the grid initialization is not recommended if you intend to persist the new columns with the existing columns list 
 
@@ -208,5 +208,5 @@ To restore these column properties and achieve persistence, you can follow the a
 {% endhighlight %}
 {% endtabs %}
 
-![template](../images/state-management/state-template.gif)
+![template](images/state-management/state-template.gif)
 

@@ -13,8 +13,8 @@
 <script>
     document.getElementById('add').addEventListener('click', function () {
         var grid = document.getElementById('grid').ej2_instances[0];
-        var obj = { field: "Freight", headerText: 'Freight', width: 120 };
-        grid.columns.push(obj); //you can add the columns by using the Grid columns method
+        var newColumn = { field: "Freight", headerText: 'Freight', width: 120 };
+        grid.columns.push(newColumn); //you can add the columns by using the Grid columns method
         grid.refreshColumns();
     });
     document.getElementById('remove').addEventListener('click', function () {
@@ -24,10 +24,10 @@
     });
     function dataBound() {
         var grid = document.getElementById('grid').ej2_instances[0];
-        let cloned = grid.addOnPersist;
-        grid.addOnPersist = function (key) {
-            key = key.filter((item) => item !== "columns");
-            return cloned.call(grid, key);
+        let originalAddOnPersist = grid.addOnPersist;
+        grid.addOnPersist = function (persistKeys) {
+            persistKeys = persistKeys.filter((item) => item !== "columns");
+            return originalAddOnPersist.call(grid, persistKeys);
         };
     }
 </script>
