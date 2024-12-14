@@ -261,7 +261,7 @@ The latitude and longitude values are used to determine the location of each mar
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The size of the markers in a marker group can be customized using the `WidthValuePath` and `HeightValuePath` properties, which allow the user to change the width and height of the markers based on values from the given data source. Bind the data source to the `DataSource`property of the `MapsMarker`, and specify the field names containing the width and height values in the data source for the `WidthValuePath` and `HeightValuePath` properties.
+The size of the markers in a marker group can be customized using the `widthValuePath` and `heightValuePath` properties, which allow the user to change the width and height of the markers based on values from the given data source. Bind the data source to the `dataSource` property of the `MapsMarker`, and specify the field names containing the width and height values in the data source for the `widthValuePath` and `heightValuePath` properties.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
