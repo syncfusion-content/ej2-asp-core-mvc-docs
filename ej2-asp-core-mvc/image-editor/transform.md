@@ -152,7 +152,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-zoom.jpg)
 
-### Maximum and Minimum zoom level 
+### Maximum and minimum zoom level 
 
 The `maxZoomFactor` property is a useful feature in the Image Editor that allows you to define the maximum level of zoom permitted for an image. This property sets a limit on how much the image can be magnified, preventing excessive zooming that may result in a loss of image quality or visibility. 
 

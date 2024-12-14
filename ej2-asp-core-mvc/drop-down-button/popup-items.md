@@ -133,8 +133,6 @@ The whole popup can be customized as per the requirement. In the following examp
 {% endtabs %}
 {% endif %}
 
-
-
 ## See Also
 
 * [Integration with ListView component](./how-to/group-popup-items-with-listview-component)
