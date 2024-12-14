@@ -19,6 +19,7 @@ public ActionResult Index()
             ChartBorder border = new ChartBorder();
             border.Width = 2;
             border.Color = "green";
+            border.DashArray="5,5";
             ViewBag.border = border;
             return View();
         }
