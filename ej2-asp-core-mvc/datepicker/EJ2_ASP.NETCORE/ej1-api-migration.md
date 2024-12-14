@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of DatePicker component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of DatePicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Date selection
 
@@ -19,8 +19,8 @@ This article describes the API migration process of DatePicker component from Es
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -50,8 +50,8 @@ Setting the value
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -97,8 +97,8 @@ Day header format
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -151,8 +151,8 @@ Depth
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -202,8 +202,8 @@ Maximum date
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -249,8 +249,8 @@ Block-out dates
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -828,8 +828,8 @@ Prevent open
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -861,8 +861,8 @@ Enable RTL
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -894,8 +894,8 @@ Enable Persistence
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -971,8 +971,8 @@ Validation message
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -1251,8 +1251,8 @@ Float Label Type
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -1305,8 +1305,8 @@ First day of week
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -1338,8 +1338,8 @@ Strict mode
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -1480,8 +1480,8 @@ Show
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>

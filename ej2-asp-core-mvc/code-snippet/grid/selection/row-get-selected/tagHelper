@@ -1,0 +1,26 @@
+<div style="padding-bottom: 20px">
+    <ejs-button id="buttons" cssClass="e-primary" content="Get selected row indexes"></ejs-button>
+</div>
+<p style="color:red;text-align:center" id="message"></p>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px">
+    <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="130" format="yMd" textAlign="Right"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+   document.getElementById('buttons').onclick = function () {
+      var grid = document.getElementById("grid").ej2_instances[0];
+      let selectedRowIndexes = grid.getSelectedRowIndexes();
+      if (selectedRowIndexes.length > 0) {
+         document.getElementById("message").innerText = `Selected row indexes: ${selectedRowIndexes}`;
+      }
+      else {
+         document.getElementById("message").innerText = '';
+      }
+   }
+</script>

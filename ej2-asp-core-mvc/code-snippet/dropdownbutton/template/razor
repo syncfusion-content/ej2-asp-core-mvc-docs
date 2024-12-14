@@ -1,0 +1,16 @@
+@Html.EJS().DropDownButton("separator").Content("Edit").Items((IEnumerable<object>)ViewBag.items).ItemTemplate("#itemTemplate").Render()
+<script id="itemTemplate" type="text/x-template">
+${if(url)}
+<div>
+  <span class="e-menu-icon ${iconCss}"></span>
+  <a href="${url}" target="_blank">
+      <span class="custom-class">${text}</span>
+  </a>
+ </div>
+${else}
+  <div>
+      <span class="e-menu-icon ${iconCss}"></span>
+      <span class="custom-class">${text}</span>
+  </div>
+${/if}
+</script>

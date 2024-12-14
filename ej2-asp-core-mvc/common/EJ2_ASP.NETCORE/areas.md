@@ -10,7 +10,7 @@ documentation: ug
 
 # Areas in ASP.NET Core
 
-This article provides a step-by-step introduction to add areas and configure the Syncfusion control in the ASP.NET Core platform.
+This article provides a step-by-step introduction to add areas and configure the Syncfusion<sup style="font-size:70%">&reg;</sup> control in the ASP.NET Core platform.
 
 ## Areas
 
@@ -94,7 +94,7 @@ app.UseEndpoints(endpoints =>
 {% endhighlight %}
 {% endtabs %}
 
-10.Add the Syncfusion script manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
+10.Add the Syncfusion<sup style="font-size:70%">&reg;</sup> script manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -108,9 +108,9 @@ app.UseEndpoints(endpoints =>
 {% endhighlight %}
 {% endtabs %}
 
-N>If `_ViewStart.cshtml` file is added in the appropriate Views folder under the areas, add the Syncfusion script manager in that referred layout page.
+N>If `_ViewStart.cshtml` file is added in the appropriate Views folder under the areas, add the Syncfusion<sup style="font-size:70%">&reg;</sup> script manager in that referred layout page.
 
-11.Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` View file in the `~/Areas/Products/Views/` folder.
+11.Now, you can add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls in `Index.cshtml` View file in the `~/Areas/Products/Views/` folder.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -122,7 +122,7 @@ N>If `_ViewStart.cshtml` file is added in the appropriate Views folder under the
 {% endhighlight %}
 {% endtabs %}
 
-12.Run the application. Syncfusion ASP.NET Core calendar control will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
+12.Run the application. Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core calendar control will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
 
 ![ASP.NET Core calendar Control output](images/aspnetcore-calendar.png)
 
@@ -173,7 +173,7 @@ N>If `_ViewImports.cshtml` file is added in the appropriate Pages folder under t
 {% endhighlight %}
 {% endtabs %}
 
-7.Add the Syncfusion script manager at the end of `<body>` element in the `~/Pages/Shared/_Layout.cshtml` layout page.
+7.Add the Syncfusion<sup style="font-size:70%">&reg;</sup> script manager at the end of `<body>` element in the `~/Pages/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -187,9 +187,9 @@ N>If `_ViewImports.cshtml` file is added in the appropriate Pages folder under t
 {% endhighlight %}
 {% endtabs %}
 
-N>If `_ViewStart.cshtml` file is added in the appropriate Pages folder under the areas, add the Syncfusion script manager in that referred layout page.
+N>If `_ViewStart.cshtml` file is added in the appropriate Pages folder under the areas, add the Syncfusion<sup style="font-size:70%">&reg;</sup> script manager in that referred layout page.
 
-8.Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` Razor Page file in the `~/Areas/Products/Pages/` folder.
+8.Now, you can add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls in `Index.cshtml` Razor Page file in the `~/Areas/Products/Pages/` folder.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -201,6 +201,6 @@ N>If `_ViewStart.cshtml` file is added in the appropriate Pages folder under the
 {% endhighlight %}
 {% endtabs %}
 
-9.Run the application. Syncfusion ASP.NET Core calendar control will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
+9.Run the application. Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core calendar control will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
 
 ![ASP.NET Core calendar Control output](images/aspnetcore-calendar.png)

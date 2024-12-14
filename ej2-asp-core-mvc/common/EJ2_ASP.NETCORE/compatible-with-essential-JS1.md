@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Compatibility with Syncfusion ASP.NET Core (Essential JS 1)
+# Compatibility with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 1)
 
-This documentation explains how to render Essential JS 1 and Essential JS 2 Syncfusion controls in a single page.
+This documentation explains how to render Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 Syncfusion<sup style="font-size:70%">&reg;</sup> controls in a single page.
 
 ## Adding application
 
-You can create Essential JS 1 and Essential JS 2 controls using the following links:
+You can create Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls using the following links:
 
 Getting started for [EJ2 ASP.NET Core control](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core)
 
@@ -22,7 +22,7 @@ Getting started for [EJ1 ASP.NET Core control](https://help.syncfusion.com/aspne
 
 ## Style compatibility
 
-Add compatibility styles using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file. Essential JS 1 and Essential JS 2 controls have compatibility styles that do not affect each other.
+Add compatibility styles using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file. Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls have compatibility styles that do not affect each other.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Layout.cshtml" %}
@@ -40,7 +40,7 @@ Add compatibility styles using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 
 ## Script compatibility
 
-Add scripts for Essential JS 1 and Essential JS 2 using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as shown in the following code.
+Add scripts for Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as shown in the following code.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Layout.cshtml" %}
@@ -82,7 +82,7 @@ To add compatibility, use the following code in the end of <body> in `~/Pages/Sh
 
 ## Adding script manager
 
-Open `~/Pages/Shared/_Layout.cshtml` file and register the script manager for both Essential JS 1 and Essential JS 2 at the end of `<body>` in the ASP.NET Core application as follows. 
+Open `~/Pages/Shared/_Layout.cshtml` file and register the script manager for both Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 at the end of `<body>` in the ASP.NET Core application as follows. 
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -174,9 +174,9 @@ The following code illustrates the final view of layout page.
 {% endhighlight %}
 {% endtabs %}
 
-## Declare Essential JS 1 and Essential JS 2 controls
+## Declare Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls
 
-Essential JS 1 and Essential JS 2 controls have already been initialized via getting started. If you want to change control, you can initialize using the following code.
+Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls have already been initialized via getting started. If you want to change control, you can initialize using the following code.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}

@@ -10,24 +10,24 @@ documentation: ug
 
 # Reference Scripts in ASP.NET Core Application
 
-This section provides information about reference scripts from CDN and Custom resource generator (CRG) for Syncfusion ASP.NET Core controls.
+This section provides information about reference scripts from CDN and Custom resource generator (CRG) for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
 ## CDN Reference
 
-Syncfusion hosts every ASP.NET Core control as a separate node package in CDN, from which scripts and style sheets of the individual package can be loaded. Syncfusion also hosts a single node package with all ASP.NET Core controls on it, from which scripts and style sheets of all controls can be loaded as single script and style file.
+Syncfusion<sup style="font-size:70%">&reg;</sup> hosts every ASP.NET Core control as a separate node package in CDN, from which scripts and style sheets of the individual package can be loaded. Syncfusion<sup style="font-size:70%">&reg;</sup> also hosts a single node package with all ASP.NET Core controls on it, from which scripts and style sheets of all controls can be loaded as single script and style file.
 
-Here, the Syncfusion ASP.NET Core CDN URL for the both Individual ASP.NET Core control package and Complete ASP.NET Core controls package has been explained.
+Here, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core CDN URL for the both Individual ASP.NET Core control package and Complete ASP.NET Core controls package has been explained.
 
 ### CDN Reference for all controls
 
-The primary goal of all the ASP.NET Core controls package is to help the novice to get started with Syncfusion ASP.NET Core control by referring the single line for script and styles without bothering about the dependency graph of the ASP.NET Core controls.
+The primary goal of all the ASP.NET Core controls package is to help the novice to get started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control by referring the single line for script and styles without bothering about the dependency graph of the ASP.NET Core controls.
 
 | controls | CDN Reference |
 | --- | --- |
 | Scripts reference for all controls| https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js |
 | Styles reference for all controls | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/{THEME-NAME}.css |
 
-N> Syncfusion will never recommend all controls CDN for real-time projects. Because, the size of this CDN impacts website/app loading time since this package includes all the Syncfusion ASP.NET Core controls.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> will never recommend all controls CDN for real-time projects. Because, the size of this CDN impacts website/app loading time since this package includes all the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
 Add the EJ2 CDN client-side resources to the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
 
@@ -77,7 +77,7 @@ For example, the scripts and styles for the ASP.NET Core Calendar control are li
 {% endhighlight %}
 {% endtabs %}
 
-The following table demonstrates the list of individual Syncfusion ASP.NET Core control CDN reference and its dependency packages.
+The following table demonstrates the list of individual Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control CDN reference and its dependency packages.
 
 <table>
 <tr>
@@ -736,7 +736,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 </tr>
 </table>
 
-In addition to above, Syncfusion ASP.NET Core controls provides latest scripts and styles in CDN without versioning. You can use this in development environment if you want to always use the latest version of scripts and styles. It is not recommended to use this in production environment.
+In addition to above, Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls provides latest scripts and styles in CDN without versioning. You can use this in development environment if you want to always use the latest version of scripts and styles. It is not recommended to use this in production environment.
 
 | controls | CDN Reference |
 | --- | --- |
@@ -749,9 +749,9 @@ W> The un-versioned CDN links which always maintains latest version scripts are 
 
 A package in Node.js consists of a set of files needed for a JavaScript module which can be included in any web application. NPM is the popular package manager for both public and private packages.
 
-### Syncfusion NPM packages
+### Syncfusion<sup style="font-size:70%">&reg;</sup> NPM packages
 
-Scripts and style sheets of Syncfusion ASP.NET Core controls can be included in an ASP.NET Core web application using NPM packages, since Syncfusion publishes its ASP.NET Core controls as the scoped package in NPM.
+Scripts and style sheets of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls can be included in an ASP.NET Core web application using NPM packages, since Syncfusion<sup style="font-size:70%">&reg;</sup> publishes its ASP.NET Core controls as the scoped package in NPM.
 
 #### Installing NPM packages in ASP.NET Core Web Application
 
@@ -765,7 +765,7 @@ Scripts and style sheets of Syncfusion ASP.NET Core controls can be included in 
 
 3.Open the Source Explorer and right click on the application name. Then, select “**Open Folder in File Explorer**”. 
 
-4.Open the Command Prompt for this location and install the required Syncfusion packages using “**npm install @syncfusion/{PACKAGE_NAME} --save**”
+4.Open the Command Prompt for this location and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages using “**npm install @syncfusion/{PACKAGE_NAME} --save**”
 
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}
@@ -781,9 +781,9 @@ npm install @syncfusion/ej2-calendars --save
 
 #### From Installed Packages
 
-Scripts and style sheets of Syncfusion ASP.NET Core controls from locally-installed packages can be included in an ASP.NET Core web application using the following two methods.
+Scripts and style sheets of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls from locally-installed packages can be included in an ASP.NET Core web application using the following two methods.
 
-N>Files in the **wwwroot** folder can be accessed only in client-side, hence Syncfusion scripts and style sheets should be copied from **node_modules** to **wwwroot**.
+N>Files in the **wwwroot** folder can be accessed only in client-side, hence Syncfusion<sup style="font-size:70%">&reg;</sup> scripts and style sheets should be copied from **node_modules** to **wwwroot**.
 
 By using either one of the following methods, Client-Side Resource can be loaded in ASP.NET Core web application:
 
@@ -792,9 +792,9 @@ By using either one of the following methods, Client-Side Resource can be loaded
 
 #### Copying by Gulp
 
-Install required Syncfusion ASP.NET Core control packages as mentioned in “[**Installing NPM Packages in ASP.NET Core Web Application**](#installing-npm-packages-in-aspnet-core-web-application)”. 
+Install required Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control packages as mentioned in “[**Installing NPM Packages in ASP.NET Core Web Application**](#installing-npm-packages-in-aspnet-core-web-application)”. 
 
-1.In addition to Syncfusion ASP.NET Core packages, install gulp and glob packages using below commands.
+1.In addition to Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core packages, install gulp and glob packages using below commands.
 
 N>Gulp Installation - **npm install gulp --save**
 
@@ -877,7 +877,7 @@ gulp.task("copy-client-resource", function (done) {
 
 ![Copied to wwwroot](images/copied-to-wwwroot.png)
 
-7.Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion ASP.NET Core Calendar has been loaded for example.  
+7.Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Calendar has been loaded for example.  
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -897,7 +897,7 @@ gulp.task("copy-client-resource", function (done) {
 
 ## Custom Resource Generator
 
-The Syncfusion ASP.NET Core provides an option to generate a control's scripts using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) tool for the ASP.NET Core Controls. To generate the control-wise scripts externally using CRG, refer [here](./custom-resource-generator).
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core provides an option to generate a control's scripts using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) tool for the ASP.NET Core Controls. To generate the control-wise scripts externally using CRG, refer [here](./custom-resource-generator).
 
 ## See also
 

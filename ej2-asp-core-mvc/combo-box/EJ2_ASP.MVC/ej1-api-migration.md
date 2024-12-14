@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of ComboBox component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of ComboBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## DataBinding
 
-| Behavior	| API in Essential JS 1 | API in Essential JS 2 |
+| Behavior	| API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *Datasource*<br/>`Html.EJ().ComboBox("select").Datasource((IEnumerable<CarsList>)ViewBag.datasource).Render()`|**Property**: *DataSource*<br/>`@Html.EJS().ComboBox("games").DataSource((IEnumerable<object>)ViewBag.localdata).Render()`|
 | **Fields for mapping** | **Property**: *ComboBoxFields*<br/>`Html.EJ().ComboBox("select").ComboBoxFields(f=>f.Text("text")).Render()`|**Property**: *Fields*<br/>`@Html.EJS().ComboBox("games").Fields(new ComboBoxFieldSettings { Text = "Game", Value = "Id" }).Render()` |
@@ -25,7 +25,7 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Filtering
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default**| **Property**: *AllowFiltering*<br/>`Html.EJ().ComboBox("select").AllowFiltering(true).Render()`| **Property**: *AllowFiltering*<br/>`Html.EJS().ComboBox("select").AllowFiltering(true).Render()`|
 | **No records template** | **Property**: *NoRecordsTemplate*<br/>`Html.EJ().ComboBox("select").NoRecordsTemplate("<span class='norecord'> NO DATA AVAILABLE</span>").Render()` |**Property**: *NoRecordsTemplate*<br/>`Html.EJS().ComboBox("select").NoRecordsTemplate("<span class='norecord'> NO DATA AVAILABLE</span>").Render()` |
@@ -35,7 +35,7 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Template
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *ItemTemplate*<br/>`Html.EJ().ComboBox("select").ItemTemplate("<div><img class='eimg' src='../images/combobox/${eimg}.png' alt='employee'/><div class='ename'> ${text} </div><div class='temp'> ${country} </div></div>").Render()` | **Property**: *ItemTemplate*<br/>`Html.EJS().ComboBox("select").ItemTemplate("<div><img class='eimg' src='../images/combobox/${eimg}.png' alt='employee'/><div class='ename'> ${text} </div><div class='temp'> ${country} </div></div>").Render()`|
 | **Group Template** | **Property**: *GroupTemplate*<br/>`Html.EJ().ComboBox("select").GroupTemplate("<strong>${country}</strong>").Render()` | **Property**: *GroupTemplate*<br/>`Html.EJS().ComboBox("select").GroupTemplate("<strong>${country}</strong>").Render()`|
@@ -48,34 +48,34 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Applying CSS
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | ---|
 | **Default** | **Property**: *CssClass* <br/>`Html.EJ().ComboBox("select").CssClass("customclass").Render()`| **Property**: *CssClass*<br/>`Html.EJS().ComboBox("select").CssClass("customclass").Render()` |
 | **width** | **Property**: *Width* <br/>`Html.EJ().ComboBox("select").Width("300px").Render()` | **Property**: *Width*<br/>`Html.EJS().ComboBox("select").Width("300px").Render()` |
 
 ## Grouping
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2|
 | --- | --- | --- |
 | **Default** | **Property**: *ComboBoxFields*<br/>`Html.EJ().ComboBox("select").ComboBoxFields(f=>f.GroupBy("text")).Render()`| **Property**: *Fields*<br/>`@Html.EJS().ComboBox("games").Fields(new ComboBoxFieldSettings { GroupBy = "Game" }).Render()` |
 
 ## Accessibility
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2|
 | --- | --- | --- |
 | **Globalizaation** | **Property**: *Locale*<br/>`Html.EJ().ComboBox("select").Locale("fr-FE").Render()`| **Property**: *Locale*<br/>`Html.EJS().ComboBox("select").Locale("fr-FE").Render()` |
 | **Rtl support**| **Property**: *EnableRtl*<br/>`Html.EJ().ComboBox("select").EnableRtl(true).Render()`|**Property**: *EnableRtl*<br/>`Html.EJS().ComboBox("select").EnableRtl(true).Render()`|
 
 ## Placeholder
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2|
 | --- | --- | --- |
 | **Watermark text** | **Property**: *Placeholder*<br/>`Html.EJ().ComboBox("select").Placeholder("Select").Render()`|<br/>**Property**: *Placeholder*<br/>`Html.EJS().ComboBox("select").Placeholder("Select").Render()` |
 | **Floating  of waterMarkText**| **Not applicable** |**Property**: *FloatLabelType*<br/>`Html.EJS().ComboBox("select").FloatLabelType(FloatLabelType .Auto).Render()` |
 
 ## Miscellaneous
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2|
 | --- | --- | --- |
 | **Enable/disable** | **Property**: *Enabled*<br/>`Html.EJ().ComboBox("select").Enabled(true).Render()`|**Property**: *Enabled*<br/>`Html.EJS().ComboBox("select").Enabled(true).Render()` |
 | **Read only** | **Property**: *ReadOnly*<br/>`Html.EJ().ComboBox("select").ReadOnly(true).Render()` |**Property**: *ReadOnly*<br/>`Html.EJS().ComboBox("select").ReadOnly(true).Render()`|
@@ -83,13 +83,13 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Sorting
 
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Order of sorting** | **Property**: *SortOrder*<br/>`Html.EJ().ComboBox("select").SortOrder(SortOrder.Ascending).Render()` | **Property**: *SortOrder*<br/>`Html.EJS().ComboBox("select").SortOrder(SortOrder.Ascending).Render()`|
 
 ## Selection
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Selecting particular index** | **Property**: *Index*<br/>`Html.EJ().ComboBox("select").Index(1).Render()` | **Property**: *Index*<br/>`Html.EJS().ComboBox("select").Index(1).Render()` |
 | **Selecting particular value** | **Property**: *Value*<br/>`Html.EJ().ComboBox("select").Value("Car").Render()`| **Property**: *Value*<br/>`Html.EJS().ComboBox("select").Value("Car").Render()` |
@@ -99,7 +99,7 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Popup
 
-| Behavior| API in Essential JS 1 | API in Essential JS 2 |
+| Behavior| API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Popup height** | **Property**: *PopupHeight*<br/>`Html.EJ().ComboBox("dropdown").PopupHeight("300px").Render()`|**Event**:*Popupheight*<br/>`Html.EJS().ComboBox("dropdown").PopupHeight("300px").Render()`|
 | **Popup width** | **Property**: *PopupWidth*<br/>`Html.EJ().ComboBox("dropdown").PopupWidth("300px").Render()`|**Event**:*PopupWidth*<br/>`Html.EJS().ComboBox("dropdown").PopupWidth("300px").Render()` |
@@ -110,7 +110,7 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Common
 
-| Behavior | API in Essential JS 1 |API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 |API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Adding new item** | **Method** : *addItem*<br/>`Html.EJ().ComboBox("dropdown").Render()` <br/> <br/>$('#dropdown').ejComboBox("addItem", { text :"India"});| **Method**: *addItem*<br/>`Html.EJ().ComboBox("combobox").Render()`<br/><br/>var cmbObj = document.getElementById(combobox).ej2_Instances[0];<br/><br/> cmbObj.addItem({Id: 'id', Game: 'Golf'},2);|
 | **Focus out event** | **Not applicable** | **Event**: *Blur*<br/>`Html.EJS().ComboBox("dropdown").Blur("onBlur").Render()` |
