@@ -1,0 +1,8 @@
+<ejs-menu id="menu" items="ViewBag.menuItems"></ejs-menu>
+
+<style>
+    body {
+        margin-top: 100px;
+        text-align: center;
+    }
+</style>

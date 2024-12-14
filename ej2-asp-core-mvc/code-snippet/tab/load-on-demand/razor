@@ -1,0 +1,72 @@
+@using Syncfusion.EJ2.Navigations
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Tab("ej2Tab")
+    .Items(new List<TabItem>()
+    {
+        new TabItem()
+        {
+            Header = new TabHeader { Text = "Calendar" },
+            Content = ".Calendar-component",
+        },
+        new TabItem()
+        {
+            Header = new TabHeader { Text = "Schedule" },
+            Content = ".Schedule-component"
+        },
+    })
+    .ClearTemplates(true)
+    .Render()
+)
+
+<div class="Calendar-component" style="display:none">
+    @Html.EJS().Calendar("calendar").Render()
+</div>
+
+ <div class="Schedule-component" style="display:none">
+     @Html.EJS().Schedule("schedule").Height("450px").Render()
+ </div>
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .container {
+        min-width: 350px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #form-container {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .btn-section {
+        text-align: center;
+    }
+
+    .add-tab-btn-section td {
+        padding: 10px;
+    }
+
+    .info {
+        font-weight: bold;
+    }
+</style>

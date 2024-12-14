@@ -1,0 +1,147 @@
+@using Syncfusion.EJ2.Navigations
+
+@(Html.EJS().Tab("ej2Tab")
+    .Items(new List<TabItem>()
+    {
+        new TabItem()
+        {
+            Header = new TabHeader { Text = "Login" },
+            Content = ".login-form",
+        },
+        new TabItem()
+        {
+            Header = new TabHeader { Text = "Syncfusion EJ2" },
+            Content = ".over-view",
+        },
+        new TabItem()
+        {
+            Header = new TabHeader { Text = "FeedBack" },
+            Content = ".feed-back",
+        }
+    })
+    .LoadOn(ContentLoad.Init)
+    .ClearTemplates(true)
+    .Render()
+)
+
+<div class="login-form" style="display:none">
+    <div class='wrap'>
+        <br>
+        <div id="input-container">
+            @Html.EJS().TextBox("userName").Placeholder("User Name").Render()
+            <br><br>
+            @Html.EJS().TextBox("Password").Placeholder("Password").Render()
+        </div>
+    </div>
+    <br>
+    <div class="button-contain" style="display: flex; justify-content: center; align-items: center; gap:10px;">
+        @Html.EJS().Button("sign-in-button").IsPrimary(true).Content("SignIn").Render()
+        @Html.EJS().Button("skip-button").IsPrimary(true).Content("Skip").Render()
+    </div>
+</div>
+
+<div class="over-view" style="display:none">
+    <p>
+        You can check out our Syncfusion Ej2 demo
+        <a href="https://ej2.syncfusion.com/demos/" target="_blank">here</a>.
+    </p>
+    <br />
+    <p>
+        The user guide is available
+        <a href="https://ej2.syncfusion.com/documentation/introduction" target="_blank">here</a>.
+    </p>
+</div>
+
+<div class="feed-back" style="display:none">
+    <div class='wrap'>
+        <div id="input-container">
+            @Html.EJS().TextBox("sign-in-name").Placeholder("User Name").Render()
+            <br><br>
+            @Html.EJS().TextBox("e-mail").Placeholder("Password").Render()
+            <br><br>
+            @Html.EJS().TextBox("Comments").Placeholder("Comments").Render()
+        </div>
+    </div>
+    <br>
+    <div class="button-contain" style="display: flex; justify-content: center; align-items: center; gap:10px;">
+        @Html.EJS().Button("feed-back-button").IsPrimary(true).Content("Submit").Render()
+    </div>
+</div>
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .container {
+        min-width: 350px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #form-container {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .btn-section {
+        text-align: center;
+    }
+
+    .add-tab-btn-section td {
+        padding: 10px;
+    }
+
+    .info {
+        font-weight: bold;
+    }
+</style>
+
+<script type="text/javascript">
+    document.getElementById("sign-in-button").addEventListener("click", handleLogin);
+    document.getElementById("skip-button").addEventListener("click", handleSkip);
+    document.getElementById("feed-back-button").addEventListener("click", handlefeedBack);
+    var userName;
+    function handleLogin() {
+        var tabObj = document.getElementById("ej2Tab").ej2_instances[0];
+        userName = document.getElementById("userName").value;
+        let password = document.getElementById("Password").value;
+        if (!userName && !password) {
+            window.alert('Enter both username and password');
+        } else if (!userName) {
+            window.alert('Enter the username');
+        } else if (!password) {
+            window.alert('Enter the password');
+        } else if (userName.length < 4) {
+            window.alert('Username must be at least 4 characters long');
+        } else {
+            document.getElementById("sign-in-name").value = userName;
+            tabObj.select(1);
+        }
+    }
+    function handleSkip() {
+        var tabObj = document.getElementById("ej2Tab").ej2_instances[0];
+        tabObj.select(1);
+    }
+    function handlefeedBack() {
+        var tabObj = document.getElementById("ej2Tab").ej2_instances[0];
+        document.getElementById("userName").value = '';
+        document.getElementById("Password").value = '';
+        tabObj.select(0);
+    }
+</script>

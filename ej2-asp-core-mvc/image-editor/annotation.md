@@ -184,7 +184,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-custom-font-color.png)
 
-### Add Additional font family
+### Add additional font family
 
 The FontFamily property in the Image Editor control provides the flexibility to incorporate supplementary font families, expanding your options for text styling and ensuring a broader range of fonts can be utilized within your design or content. The font value will be determined by the 'id' property.
 
@@ -541,7 +541,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-add-image.jpg)
 
-### Customize Default Stroke Color for Shapes 
+### Customize default stroke color for shapes 
 
 We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`] event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
 

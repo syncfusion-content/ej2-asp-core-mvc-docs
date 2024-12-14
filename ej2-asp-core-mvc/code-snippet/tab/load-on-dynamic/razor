@@ -1,0 +1,127 @@
+@using Syncfusion.EJ2.Navigations
+@using Syncfusion.EJ2.Grids
+
+@(Html.EJS().Tab("ej2Tab")
+    .Items(new List<TabItem>()
+    {
+        new TabItem()
+        {
+            Header = new TabHeader { Text = "Login" },
+            Content = ".login-form",
+            Disabled= false
+        },
+        new TabItem()
+        {
+            Header = new TabHeader { Text = "Grid" },
+            Content = ".grid-view",
+            Disabled = true
+        },
+    })
+    .LoadOn(ContentLoad.Dynamic)
+    .ClearTemplates(true)
+    .Render()
+)
+
+<div class="login-form" style="display:none">
+    <div class='wrap'>
+        <div id="heading">Sign in to view the Grid</div>
+        <br>
+        <div id="input-container">
+            <div id="input-container">
+                @Html.EJS().TextBox("userName").Placeholder("User Name").Render()
+                <br><br>
+                @Html.EJS().TextBox("Password").Placeholder("Password").Render()
+            </div>
+        </div>
+        <br>
+        <div class="button-contain" style="display: flex; justify-content: center; align-items: center; gap:10px;">
+            @Html.EJS().Button("button").IsPrimary(true).Content("Log in").Render()
+        </div>
+    </div>
+
+    <div class="grid-view" style="display:none">
+    @(Html.EJS().Grid("Grid1").Height(250)
+        .DataSource(dataManger =>
+        {
+            dataManger.Url("https://services.syncfusion.com/aspnet/production/api/Orders").CrossDomain(true).Adaptor("WebApiAdaptor");
+        })
+        .Columns(col =>
+        {
+            col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("CustomerID").HeaderText("Customer ID").Width("160").Add();
+            col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+        }).AllowPaging().PageSettings(page => page.PageCount(3))
+        .Render()
+    )
+    </div>
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .container {
+        min-width: 350px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #form-container {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .btn-section {
+        text-align: center;
+    }
+
+    .add-tab-btn-section td {
+        padding: 10px;
+    }
+
+    .info {
+        font-weight: bold;
+    }
+</style>
+
+<script type="text/javascript">
+        document.getElementById("button").addEventListener("click", handleLogin);
+        function handleLogin() {
+            let userName = document.getElementById("userName").value;
+            let password = document.getElementById("Password").value;
+            if (!userName && !password) {
+                window.alert('Enter both username and password');
+            } else if (!userName) {
+                window.alert('Enter the username');
+            } else if (!password) {
+                window.alert('Enter the password');
+            } else if (userName.length < 4) {
+                window.alert('Username must be at least 4 characters long');
+            } else {
+                var tabObj = document.getElementById("ej2Tab").ej2_instances[0];
+                document.getElementById("userName").value = "";
+                document.getElementById("Password").value = "";
+                tabObj.items[0].disabled = true;
+                tabObj.items[1].disabled = false;
+                tabObj.dataBind();
+                tabObj.select(1);
+            }
+        }
+</script>
