@@ -1,0 +1,14 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" actionBegin="actionBegin" allowFiltering="true" allowPaging="true" enablePersistence="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="170"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+  function actionBegin(args) {
+    var grid=document.getElementById('grid').ej2_instances[0];
+    grid.query.addParams('dataSource', 'data');
+ }
+</script>

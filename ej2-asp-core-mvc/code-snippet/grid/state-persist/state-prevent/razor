@@ -1,0 +1,38 @@
+
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("add").Content("Add Columns").CssClass("e-primary").Render()
+    @Html.EJS().Button("remove").Content("Remove Columns").CssClass("e-primary custom").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).DataBound("dataBound").EnablePersistence(true).Height("278px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("120").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+}).AllowPaging(true).Render()
+<script>
+    document.getElementById('add').addEventListener('click', function () {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        var obj = { field: "Freight", headerText: 'Freight', width: 120 };
+        grid.columns.push(obj); //you can add the columns by using the Grid columns method
+        grid.refreshColumns();
+    });
+    document.getElementById('remove').addEventListener('click', function () {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        grid.columns.pop();
+        grid.refreshColumns();
+    });
+    function dataBound() {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        let cloned = grid.addOnPersist;
+        grid.addOnPersist = function (key) {
+            key = key.filter((item) => item !== "columns");
+            return cloned.call(grid, key);
+        };
+    }
+</script>
+<style>
+    .custom {
+        margin-left: 10px;
+    }
+</style>
