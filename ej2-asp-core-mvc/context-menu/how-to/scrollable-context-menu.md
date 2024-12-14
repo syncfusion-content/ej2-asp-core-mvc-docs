@@ -37,4 +37,6 @@ To achieve this functionality, set the `EnableScrolling` property to `true`. Add
 {% endtabs %}
 {% endif %}
 
+![Drop Down Button Scroller Support](images/blazor-contextmenu-scroller.png)
+
 
