@@ -42,3 +42,5 @@ In this sample, three different DropDownButtons are rendered, each showcasing a 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Drop Down Button template](images/drop-down-button-animation.gif)

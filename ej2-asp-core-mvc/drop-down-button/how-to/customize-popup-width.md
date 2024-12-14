@@ -33,3 +33,5 @@ The [PopupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Sp
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Drop Down Button template](images/drop-down-button-popup-width.png)

@@ -34,3 +34,5 @@ The [`ItemTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Drop Down Button template](images/drop-down-menu-template.png)
