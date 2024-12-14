@@ -37,7 +37,7 @@ public class PopupResizeData
 {% include code-snippet/dropdownlist/popup-resize/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PopupResize.cs" %}
-{% include code-snippet/dropdownlist/disabled-items/popup-resize.cs %}
+{% include code-snippet/dropdownlist/popup-resize/popup-resize.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
