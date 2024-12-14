@@ -5,15 +5,15 @@
         col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
         col.Field("ShipCountry").HeaderText("ShipCountry").Width("100").Add();
     }).Toolbar(new List<string>() { "PdfExport" }).Aggregates(gridAggregation => { gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { ColumnName = "ShipCountry", Type = "Custom", FooterTemplate = "Brazil Count: ${Custom}", CustomAggregate = "customAggregateFn" } }).Add(); }).Render()
-        <script>
-            function toolbarClick(args) {
-                let grid = document.getElementById("Grid").ej2_instances[0];
-                if (args.item.id === 'Grid_pdfexport') {
-                    grid.pdfExport();
-                }
-            }
-            function customAggregateFn(data) {
-                let brazilCount = data.result ? data.result.filter(item => item['ShipCountry'] === 'Brazil').length : data.filter(item => item['ShipCountry'] === 'Brazil').length;
-                return brazilCount;
-            }
-        </script>
+<script>
+    function toolbarClick(args) {
+        let grid = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_pdfexport') {
+            grid.pdfExport();
+        }
+    }
+    function customAggregateFn(data) {
+        let brazilCount = data.result ? data.result.filter(item => item['ShipCountry'] === 'Brazil').length : data.filter(item => item['ShipCountry'] === 'Brazil').length;
+        return brazilCount;
+    }
+</script>

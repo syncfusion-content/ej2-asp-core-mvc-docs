@@ -13,7 +13,6 @@
             grid.showSpinner();
             grid.pdfExport();
         }
-  
     }
     function pdfExportComplete(args) {
         let grid = document.getElementById("Grid").ej2_instances[0];
