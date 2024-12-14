@@ -166,6 +166,31 @@ In Automatic Mode, formulas are recalculated instantly whenever a dependent cell
 
 For example, consider a spreadsheet where cell `C1` contains the formula `=A1+B1`. When the value in `A1` or `B1` changes, `C1` updates immediately without requiring any user intervention. You can enable this mode by setting the [`calculationMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_CalculationMode) property to `Automatic`.
 
+The following code example demonstrates how to set the Automatic calculation mode in a Spreadsheet.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/calculation-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CalculationModeController.cs" %}
+{% include code-snippet/spreadsheet/calculation-cs1/calculationModeController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/calculation-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CalculationModeController.cs" %}
+{% include code-snippet/spreadsheet/calculation-cs1s/calculationModeController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Manual Mode
 
 In Manual Mode, formulas are not recalculated automatically when cell values are modified. Instead, recalculations must be triggered explicitly. This mode is ideal for scenarios where performance optimization is a priority, such as working with large datasets or computationally intensive formulas.
@@ -174,6 +199,31 @@ For example, imagine a spreadsheet where cell `C1` contains the formula `=A1+B1`
 
 * `Calculate Sheet`: Recalculates formulas for the active sheet only.
 * `Calculate Workbook`: Recalculates formulas across all sheets in the workbook.
+
+The following code example demonstrates how to set the Manual calculation mode in a Spreadsheet.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/calculation-cs2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CalculationModeController.cs" %}
+{% include code-snippet/spreadsheet/calculation-cs2/calculationModeController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/calculation-cs2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CalculationModeController.cs" %}
+{% include code-snippet/spreadsheet/calculation-cs2/calculationModeController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Supported Formulas
 
