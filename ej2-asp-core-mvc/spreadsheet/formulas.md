@@ -186,7 +186,7 @@ The following code example demonstrates how to set the Automatic calculation mod
 {% include code-snippet/spreadsheet/calculation-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CalculationModeController.cs" %}
-{% include code-snippet/spreadsheet/calculation-cs1s/calculationModeController.cs %}
+{% include code-snippet/spreadsheet/calculation-cs1/calculationModeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
