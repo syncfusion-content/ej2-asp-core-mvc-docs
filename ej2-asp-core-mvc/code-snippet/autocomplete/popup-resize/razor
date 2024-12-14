@@ -1,0 +1,1 @@
+@Html.EJS().AutoComplete("Status").AllowResize(true).Placeholder("Select Status").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings { Value = "Status"}).Render()
