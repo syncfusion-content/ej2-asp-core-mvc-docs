@@ -1,10 +1,10 @@
 @using Syncfusion.EJ2.InteractiveChat
 
-<div class="chatui-container" style="height:400px; width:400px">
+<div class="chatui-container" style="height:380px; width:450px">
     @Html.EJS().ChatUI("chatUser").HeaderToolbar(new ChatUIToolbarSettings() { Items = ViewBag.HeaderToolbar }).Created("onCreated").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Render()
 </div>
 
-<div style="height:400px; width:400px">
+<div style="height:380px; width:450px">
     <ejs-chatui id="chatUser" created="onCreated">
         <e-chatui-user id="user1" user="Albert"></e-chatui-user>
         <e-chatui-headertoolbar items="@Model.HeaderToolbar"></e-chatui-headertoolbar>

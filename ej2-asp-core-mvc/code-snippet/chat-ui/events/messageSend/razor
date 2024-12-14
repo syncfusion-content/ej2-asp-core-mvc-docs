@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.InteractiveChat
 
-<div style="height:400px; width:400px">
+<div style="height:380px; width:450px">
     @Html.EJS().ChatUI("chatUser").MessageSend("MessageSend").Render()
 </div>
 

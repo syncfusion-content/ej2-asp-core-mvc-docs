@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.InteractiveChat;
 
-<div style="height:400px; width:400px">
+<div style="height:380px; width:450px">
     <ejs-chatui id="chatUser">
         <e-chatui-user id="user1" user="Albert"></e-chatui-user>
         <e-chatui-headertoolbar items="@Model.HeaderToolbar"></e-chatui-headertoolbar>

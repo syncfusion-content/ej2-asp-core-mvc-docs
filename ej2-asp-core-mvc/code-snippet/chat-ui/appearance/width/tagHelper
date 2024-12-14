@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.InteractiveChat;
 
-<div style="height:400px;">
-    <ejs-chatui id="chatUser" width="400px">
+<div style="height:380px;">
+    <ejs-chatui id="chatUser" width="450px">
         <e-chatui-user id="user1" user="Albert"></e-chatui-user>
         <e-chatui-messages>
             @foreach (var message in Model.ChatMessagesData)
