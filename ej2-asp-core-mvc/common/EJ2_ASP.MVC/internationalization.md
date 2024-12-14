@@ -10,7 +10,7 @@ documentation: ug
 
 # Globalization in ##Platform_Name## Control
 
- Globalization is the combination of adapting the control to various languages by parsing and formatting the date or numbers (`Internationalization (L18N)`), adding cultural-specific customizations and translating the text (`Localization (L10N)`). The `American English (en-US)` locale is set as default _culture_ and `USD` is set as default _currencyCode_ for all Syncfusion ASP.NET MVC controls.
+ Globalization is the combination of adapting the control to various languages by parsing and formatting the date or numbers (`Internationalization (L18N)`), adding cultural-specific customizations and translating the text (`Localization (L10N)`). The `American English (en-US)` locale is set as default _culture_ and `USD` is set as default _currencyCode_ for all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 
 ## Loading Culture Data
 

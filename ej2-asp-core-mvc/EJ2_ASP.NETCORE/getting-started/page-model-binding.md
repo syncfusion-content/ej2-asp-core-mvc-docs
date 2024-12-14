@@ -50,7 +50,7 @@ public class AboutModel : PageModel
 
 ## Referring PageModel in Razor Page
 
-The PageModel class is made available to the view file via the @model directive to link the information in the PageModel to Syncfusion ASP.NET Core controls. The code block below looks like the Razor View file, except for the @page directive. The @page Directive allows the MVC action to process the request directly without going through the controller. @Page is supposed to be the first directive on the page.
+The PageModel class is made available to the view file via the @model directive to link the information in the PageModel to Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls. The code block below looks like the Razor View file, except for the @page directive. The @page Directive allows the MVC action to process the request directly without going through the controller. @Page is supposed to be the first directive on the page.
 
 {% tabs %}
 {% highlight c# tabtitle="~/About.cshtml" hl_lines="3" %}

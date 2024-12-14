@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis Labels in ##Platform_Name## Chart Component
+title: Axis Labels in Syncfusion ##Platform_Name## Chart Component
 description: Learn here all about Axis Labels in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis Labels
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Axis Labels
+# Axis Labels in ##Platform_Name## Chart Component
 
 ## Smart Axis Labels
 
@@ -282,7 +282,7 @@ Using the `Border` property, you can customize the `Width`, `Color`, and `Type`.
 
 ## Edge Label Placement
 
-Labels with long text at the edges of an axis may appear partially in the chart. To avoid this, use [`EdgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_EdgeLabelPlacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
+Labels with long text at the edges of an axis may appear partially in the chart. To avoid this, use [`EdgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_EdgeLabelPlacement) property in axis, which moves the label inside the chart area for better appearance or hides it. By default, the [`EdgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_EdgeLabelPlacement) property is set to **Shift** to ensure that labels are shifted inside the chart area, avoiding any overlap or coincidence.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

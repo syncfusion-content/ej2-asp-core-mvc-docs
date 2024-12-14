@@ -74,7 +74,7 @@ In the following code, checkbox is rendered based on **Approved** field value.
 
 ## Render other components in a column
 
-Tree Grid allows you to render any component in a [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) using the [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Template) property. This provides the ability to create custom components or use existing ones from Syncfusion or third-party libraries.
+Tree Grid allows you to render any component in a [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) using the [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Template) property. This provides the ability to create custom components or use existing ones from Syncfusion<sup style="font-size:70%">&reg;</sup> or third-party libraries.
 
 To render other components in the Tree Grid, ensure the following steps:
 

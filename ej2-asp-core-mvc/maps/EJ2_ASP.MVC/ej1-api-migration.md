@@ -11,20 +11,20 @@ documentation: ug
 
 <!-- markdownlint-disable MD038 -->
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Maps component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Maps component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Size Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Height| Not Applicable |**Property:** *height*<br/><br/>`@Html.EJS().Maps("container")`<br/>`.Load("load")`<br/>`.Height('300px')Render()`|
 |Width| Not Applicable |**Property:** *width*<br/><br/> `@Html.EJS().Maps("container")`<br/>`.Load("load")`<br/>`.Width('400px').Render()`|
 
 ## Title and Subtitle Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Title Text| Not Applicable |**Property:** *title.text*<br/><br/> `@Html.EJS().Maps("container")`<br/>`.Load("load").TitleSettings`<br/>`(new Syncfusion.EJ2.Maps.MapsTitleSettings`<br/>`{Text="Members of the UN Security Council"}}).Render()`|
 |Subtitle Text| Not Applicable |**Property:** *title.subtitle.text*<br/><br/> `@Html.EJS().Maps("container")`<br/>`.Load("load")`<br/>`.TitleSettings(title =>SubtitleSettings`<br/>`(new MapsSubTitleSettings`<br/>`{Text="- In 2017"})).Render()`|
@@ -33,7 +33,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Layer Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Type | Not Applicable | **Property:** *layers.type*<br/><br/> `@Html.EJS().Maps("container").Load("load").Layers(layer =>{layer.Type('Layer')}).Render()`|
 | Layer Type | **Property:** *layers.layerType*<br/><br/>`@(Html.EJ().Map("container").Layers(layer =>{layer.LayerType(LayerType.Geometry)}))`| To render shape maps, there is no need to mention the layer type. You can use the `ShapeData` property alone.<br/>**Property:** *layers.shapeData*<br/><br/> `@Html.EJS().Maps("container").Load("load").Layers(layer =>{layer.ShapeData('usmap')}).Render()`<br/><br/>To render online maps, there is no need to mention the layer type. You can use the `UrlTemplate` property alone.<br/>**Property:** *layers.urlTemplate*<br/><br/> `@Html.EJS().Maps("container").Load("load").Layers(layer =>{layer.UrlTemplate:'https://tile.openstreetmap.org/level/tileX/tileY.png' }).Render()`|
@@ -50,7 +50,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Shape Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Shape Fill | **Property:** *layers.shapeSettings.fill*<br/><br/>`@(Html.EJ().Map("container").Layers(layer =>{layer.ShapeSettings(ss =>{ss.Fill('#626171')}})))`| **Property:** *layers.shapeSettings.fill*<br/><br/> `@Html.EJS().Maps("container").Load("load").ShapeSettings(new MapsShapeSettings{Fill="red" }).Render()`|
 | Shape Palette | **Property:** *layers.shapeSettings.colorPalette*<br/><br/> `@(Html.EJ().Map("container").Layers(layer =>{layer.ShapeSettings(ss =>{ss.ColorPalette(ColorPalette.CustomPalette)}})))`<br/>`.CustomPalette(new List<string>{"#E51400", "#A4C400", "#730202",})`| **Property:** *layers.shapeSettings.palette*<br/><br/> `@Html.EJS().Maps("container").Load("load").ShapeSettings(new MapsShapeSettings{ColorMapping = ViewBag.colorMappings}).Render()`<br/>`ViewBag.colorMappings = data;`|
@@ -64,7 +64,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Marker Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Marker Data Source | **Property:** *layers.markers*<br/><br/>`@(Html.EJ().Map("container").Layers(layer =>{layer.Markers(datasource)}))` <br/> `ViewData["datasource"]= Syncfusion_LocationData.GetSyncfusionLocationData();`<br/>`List<MapMarker> syncfusionLocationData = new List<MapMarker>{new LocationData {Name = "USA", Latitude =38.8833 , Longitude = -77.0167 }}`| **Property:** *layers.markerSettings.dataSource*<br/><br/> `@Html.EJS().Maps("container").Load("mapsLoad").Render()`<br/>` function mapsLoad(args){ args.maps.layers[0].markerSettings=[{dataSource:[{latitude: 37.6276571, longitude: -122.4276688, name: 'San Bruno' },}]`|
 | Marker Template | **Property:** *layers.markerTemplate*<br/><br/> `@(Html.EJ().Map("container").Layers(layer =>{layer.Markers(datasource).MarkerTemplate("template")}))`| **Property:** *layers.markerSettings.template*<br/><br/> `@Html.EJS().Maps("container").Load("mapsLoad").Render()`<br/>`function mapsLoad(args){ args.maps.layers[0].markerSettings =[{template:'Template'}]`|
@@ -86,7 +86,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Bubble Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Visible | **Property:** *layers.bubbleSettings.visible*<br/><br/> `@(Html.EJ().Map("container").Layers(layer=>{layer.BubbleSettings(bubble =>{bubble.ShowBubble(true) }})))`| **Property:** *layers.bubbleSettings.visible*<br/><br/>`@Html.EJS().Maps("container").Load("mapsLoad").Layer(layer=>{layer.BubbleSettings(ViewBag.bubbleSettings)}).Render()`<br/>`MapsBubble bubble = new MapsBubble();`<br/>`bubble.Visible=true`|
 | ValuePath | **Property:** *layers.bubbleSettings.valuePath*<br/><br/>`@(Html.EJ().Map("container").Layers(layer =>{layer.BubbleSettings(bubble =>{bubble.ValuePath('Population') }})))`| **Property:** *layers.bubbleSettings.valuePath*<br/><br/> `@Html.EJS().Maps("container").Load("mapsLoad").Layer(layer=>{l.BubbleSettings(ViewBag.bubbleSettings)}).Render()`<br/>`MapsBubble bubble = new MapsBubble();`<br/>`bubble.ValuePath='Population'`|
@@ -106,7 +106,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## DataLabel Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Visible | **Property:** *layers.labelSettings.showLabels*<br/><br/> `@(Html.EJ().Map("container").Layers(layer =>{layer.LabelSettings(lb =>{lb.ShowLabels(true)})}))`| **Property:** *layers.dataLabelSettings.visible*<br/><br/> `@Html.EJS().Maps("container").Layer({lr.DataLabelSettings(new MapsDataLabelSettings{Visible = true})).Render()`|
 | Label Path | **Property:** *layers.labelSettings.labelPath*<br/><br/>`@(Html.EJ().Map("container").Layers(layer =>{layer.LabelSettings(lb =>{lb.LabelPath("iso_3166_2")})}))`| **Property:** *layers.dataLabelSettings.labelPath*<br/><br/> `@Html.EJS().Maps("container").Layer({lr.DataLabelSettings(new MapsDataLabelSettings{LabelPath = "name",})).Render()`|
@@ -120,7 +120,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Legend Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Visible | **Property:** *layers.legendSettings.showLegend*<br/><br/> `@(Html.EJ().Map("container").Layers(layer =>{layer.LegendSettings(ls =>{ls.ShowLegend(true})}))`| **Property:** *legendSettings.visible*<br/><br/> `@Html.EJS().Maps("container").LegendSettings(new Syncfusion.EJ2.Maps.MapsLegendSettings{ Visible = true}).Render()`|
 | Toggle Visibility | **Property:** *layers.legendSettings.toggleVisibility*<br/><br/>`@(Html.EJ().Map("container").Layers(layer =>{layer.LegendSettings(ls =>{ls.ToggleVisibility(true)})}))`| **Property:** *legendSettings.toggleVisibility*<br/><br/> `@Html.EJS().Maps("container").LegendSettings(new Syncfusion.EJ2.Maps.MapsLegendSettings{ToggleVisibility = true}).Render()`|
@@ -155,7 +155,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Zooming Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Enable| Not Applicable | **Property:** *zoomSettings.enableZoom*<br/><br/> `@Html.EJS().Maps("container").ZoomSettings(new Syncfusion.EJ2.Maps.MapsZoomSettings{ Enable=true}).Render()`|
 |Minimum Zoom| **Property:** *zoomSettings.minValue*<br/><br/>`@(Html.EJ().Map("container").ZoomSettings(zm=>{zm.MinValue(2)}))`| **Property:** *zoomSettings.minZoom*<br/><br/> `@Html.EJS().Maps("container").ZoomSettings(new Syncfusion.EJ2.Maps.MapsZoomSettings{MinZoom=2,}).Render()`|
@@ -175,7 +175,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Highlight And Selection Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Highlight Fill | **Property:** *layers.shapeSettings.highlightColor*<br/><br/> `@(Html.EJ().Map("container").Layers(layer =>{layer.ShapeSettings(shape =>{shape.HighlightColor('green') })}))`| **Property:** *fill*<br/><br/> l`@Html.EJS().Maps("container").Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>{HighlightSettings = new MapsHighlightSettings{Fill='red'}}).Render()`|
 | Enable Highlight | **Property:** *layers.enableMouseHover*<br/><br/>`@(Html.EJ().Map("container").Layers(layer =>{layer.EnableMouseHover(true)}))`| **Property:** *enable*<br/><br/> `@Html.EJS().Maps("container").Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>{HighlightSettings = new MapsHighlightSettings{Enable=true}}).Render()`|
@@ -190,7 +190,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Navigation Line Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Visible | Not Applicable | **Property:** *layers.navigationLineSettings.visible*<br/><br/> `@Html.EJS().Maps("container").Render()`<br/>`function mapsLoad(args){args.maps.layers[0].navigationLineSettings{ visible: true}}`|
 | Width | Not Applicable | **Property:** *layers.navigationLineSettings.width*<br/><br/> `@Html.EJS().Maps("container").Render()`<br/>`function mapsLoad(args){args.maps.layers[0].navigationLineSettings{width:2}}`|
@@ -207,7 +207,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Tooltip Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Tooltip Enable | **Property:** *layers.showTooltip*<br/><br/>`@(Html.EJ().Map("container").Layers(layer =>{layer.ShowTooltip(true)}))` | **Property:** *layers.tooltipSettings.visible*<br/><br/> `@Html.EJS().Maps("container").Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>{ new Syncfusion.EJ2.Maps.MapsLayer{ TooltipSettings = new MapsTooltipSettings{Visible= true }}}).Render()`|
 | Tooltip Template | **Property:** *layers.tooltipTemplate*<br/><br/>`@(Html.EJ().Map("container").Layers(layer =>{layer.ToolTipTemplate('myTooltip').Add}))`| **Property:** *layers.tooltipSettings.visible*<br/><br/> `@Html.EJS().Maps("container").Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>{ new Syncfusion.EJ2.Maps.MapsLayer{ TooltipSettings = new MapsTooltipSettings{Template='template'}}}).Render()`|
@@ -219,7 +219,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Annotation Cutomization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Content | Not Applicable | **Property:** *legendSettings.annotations.content*<br/><br/> `@Html.EJS().Maps("container")Load("mapsLoad").Render()`<br/>`function mapsLoad(args){args.maps.annotations=[{ content:'USA Population 2018}]}`|
 | Location X | Not Applicable | **Property:** *legendSettings.annotations.x*<br/><br/> `@Html.EJS().Maps("container")Load("mapsLoad").Render()`<br/>`function mapsLoad(args){args.maps.annotations=[{x:'250px' }]}`|
@@ -230,7 +230,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Maps Other Properties Customization
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Projection Type | Not Applicable | **Property:** *projectionType*<br/><br/> `@Html.EJS().Maps("container").ProjectionType(ProjectionType.Eckert3).Render()`|
 | Background | **Property:** *background*<br/><br/>`@Html.EJ().Maps("container").Background('red'))`| **Property:** *background*<br/><br/> `@Html.EJS().Maps("container").Background("red").Render()`|
@@ -251,7 +251,7 @@ This article describes the API migration process of Maps component from Essentia
 
 ## Events
 
-| **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
+| **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | Shape Selected | **Property:** *shapeSelected*<br/><br/>`@(Html.EJ().Map("container").ShapeSelected("shapeSelected"))`<br/>`function shapeSelected(args){}`| **Property:** *shapeSelected*<br/><br/> `@Html.EJS().Maps("container").ShapeSelected("shapeSelected").Render()`<br/>`function shapeSelected(args){}`|
 | Marker Selected | **Property:** *markerSelected*<br/><br/> `@(Html.EJ().Map("container").MarkerClick("markerClick"))`<br/>`function markerClick(args){}` | **Property:** *markerClick*<br/><br/> `@Html.EJS().Maps("container").Load("mapLoad").Render()`<br/>`function mapLoad(args){}`|

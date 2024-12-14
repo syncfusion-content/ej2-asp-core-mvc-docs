@@ -1,0 +1,39 @@
+<div style="padding-bottom: 20px">
+    <ejs-button id="buttons" cssClass="e-primary" content="Show Selected Cell Indexes"></ejs-button>
+</div>
+<div id="dialog" ></div>
+<ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px">
+    <e-grid-selectionsettings mode="Cell" type="Multiple" persistSelection="true"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" isPrimaryKey="true" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="130" format="yMd" textAlign="Right"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+   var dialogVisible = true;
+    document.getElementById('buttons').onclick = function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        var selectedCells = grid.getSelectedRowCellIndexes();
+        if(selectedCells.length>0){
+            dialog.visible = true;
+            for (var i = 0; i < selectedCells.length; i++) {
+                dialog.content += `<p><li>Row: ${selectedCells[i].rowIndex}, cellIndex: ${selectedCells[i].cellIndexes} <p>`;
+            }
+        }
+    };
+    var dialog = new ej.popups.Dialog({
+        header: 'Selected Cell Indexes',
+        showCloseIcon: 'true',
+        position: { X: 370, Y: 250 },
+        width: '400px',
+        visible: false,
+        close: dialogClose
+    });
+    dialog.appendTo('#dialog');
+    function dialogClose() {
+        dialogVisible = false;
+    }
+</script>

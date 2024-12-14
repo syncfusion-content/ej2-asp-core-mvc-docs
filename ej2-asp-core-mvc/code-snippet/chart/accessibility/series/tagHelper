@@ -1,0 +1,9 @@
+<ejs-chart id="container" width="60%">
+    <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+            <e-series-accessibility accessibilityDescription="This series shows the medal count of the country in Olymbic." accessibilityRole="series" accessibilityDescriptionFormat='The country ${point.x} won ${point.y} gold medals.'></e-series-accessibility>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

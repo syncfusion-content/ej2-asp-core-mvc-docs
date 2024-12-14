@@ -86,4 +86,4 @@ The accessibility compliance of the Chart component is shown in the following sa
 
 ## See also
 
-* [Accessibility in Syncfusion ASP.NET MVC components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC components](../common/accessibility)

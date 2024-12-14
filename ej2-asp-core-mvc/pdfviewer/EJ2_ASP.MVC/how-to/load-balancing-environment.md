@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Load balancing environment in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn how to load balancing environment in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+title: Load balancing environment in ##Platform_Name## PDF Viewer | Syncfusion
+description: Learn how to load balancing environment in ##Platform_Name## PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load balancing environment
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
 # Achieve Load balancing environment in MVC framework
 
-The PDF Viewer server library allows you to achieve a Load balancing environment in the MVC framework using the .NET 4.5 framework with the help of **StackExchange Redis package V1.2.6**.
-
-N> We have considered the support from the .NET framework 4.5 version and it won’t work in the lower .NET framework version.
+The PDF Viewer server library allows you to achieve a Load balancing environment in the MVC framework using the .NET 4.6.2 framework with the help of **StackExchange Redis package V1.2.6**.
 
 ## Steps to achieve load balancing environment in the MVC framework
 

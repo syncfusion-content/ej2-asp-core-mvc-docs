@@ -12,7 +12,7 @@ documentation: ug
 
 ## Create project
 
-Syncfusion provides the **Visual Studio Project Templates** for the Syncfusion ASP.NET Core platform to create the Syncfusion ASP.NET Core Web Application using Essential JS 2 components.
+Syncfusion® provides the **Visual Studio Project Templates** for the Syncfusion ASP.NET Core platform to create the Syncfusion ASP.NET Core Web Application using Essential JS 2 components.
 
 N> The Syncfusion ASP.NET Core (Essential JS 2) project templates are available from v16.2.0.41.
 
@@ -24,11 +24,11 @@ N> Before using the Syncfusion ASP.NET Core Project Template, check whether the 
 
     **Option 1**
 
-    Click **Extensions->Syncfusion Menu** and choose **Essential Studio for ASP.NET Core (EJ2) > Create New Syncfusion Project…** in **Visual Studio**.
+    Click **Extensions->Syncfusion Menu** and choose **Essential Studio® for ASP.NET Core (EJ2) > Create New Syncfusion Project…** in **Visual Studio**.
 
     ![new project](images/new-project.png)
 
-    N> In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core (EJ2) > Create New Syncfusion Project… in Visual Studio.
+    N> In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio® for ASP.NET Core (EJ2) > Create New Syncfusion® Project… in Visual Studio.
 
     ![new project](images/SyncfusionMenu.png)
 
@@ -92,7 +92,7 @@ N> Before using the Syncfusion ASP.NET Core Project Template, check whether the 
 
     ![.net core version](images/net-core-version.png)
 
-    **Assets From**: Load the Syncfusion Essential JS 2 assets to ASP.NET Core Project, either NPM, CDN, or Installed Location.
+    **Assets From**: Load the Syncfusion® Essential JS 2 assets to ASP.NET Core Project, either NPM, CDN, or Installed Location.
 
     N> Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
 
@@ -110,9 +110,9 @@ N> Before using the Syncfusion ASP.NET Core Project Template, check whether the 
 
     ![css refernce](images/readme-file.PNG)
 
-5. The created Syncfusion ASP.NET Core application configures with most recent Syncfusion ASP.NET Core NuGet packages, selected style, scripts, and NPM packages for use Syncfusion components.
+5. The created Syncfusion ASP.NET Core application configures with most recent Syncfusion® ASP.NET Core NuGet packages, selected style, scripts, and NPM packages for use Syncfusion® components.
 
-6. Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/introducing-license-key-validation-for-the-essential-js-2-platforms.aspx) post for understanding the licensing changes introduced in Essential Studio.
+6. Then, Syncfusion® licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion® introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion® license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/introducing-license-key-validation-for-the-essential-js-2-platforms.aspx) post for understanding the licensing changes introduced in Essential Studio®.
 
     ![syncfusion license](images/syncfusion-license.png)
 

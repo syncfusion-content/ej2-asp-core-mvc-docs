@@ -11,11 +11,11 @@ documentation: ug
 
 # Data Binding
 
-The Syncfusion ASP.NET MVC controls load the data either from local data sources or remote data services using the `dataSource` property and it supports the data type of an array or `DataManager`. Also supports different kind of data services such as OData, OData V4, Web API, and data formats such as XML, JSON, JSONP with the help of `DataManager` adaptors.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls load the data either from local data sources or remote data services using the `dataSource` property and it supports the data type of an array or `DataManager`. Also supports different kind of data services such as OData, OData V4, Web API, and data formats such as XML, JSON, JSONP with the help of `DataManager` adaptors.
 
 ## Local
 
-To bind local data to the Syncfusion ASP.NET MVC controls, you can assign a JavaScript array of object or string to the `dataSource` property. The local data source can also be provided as an instance of the `DataManager`.
+To bind local data to the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls, you can assign a JavaScript array of object or string to the `dataSource` property. The local data source can also be provided as an instance of the `DataManager`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +48,7 @@ The output will be as follows.
 
 ## Remote
 
-To bind remote data to the Syncfusion ASP.NET MVC control, assign service data as an instance of `DataManager` to the `dataSource` property. To interact with remote data source, provide the endpoint URL.
+To bind remote data to the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC control, assign service data as an instance of `DataManager` to the `dataSource` property. To interact with remote data source, provide the endpoint URL.
 
 ### OData V4
 
