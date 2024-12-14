@@ -14,6 +14,17 @@ documentation: ug
 
 You can use `ShowFooter` property to enable or disable the chat footer.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/footer/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Footer.cs" %}
+{% include code-snippet/chat-ui/footer/defaultMessages.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Footer](images/footer.png)
+
 ## Footer template 
 
 > Refer to the [Templates](./templates#footer-template) section for more details about the Footer template.

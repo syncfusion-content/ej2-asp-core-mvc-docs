@@ -14,6 +14,17 @@ documentation: ug
 
 You can use the `ShowTimeBreak` property to display date-wise separations between all the messages which enhances the readability and message organizing. The default value is `false`, indicating time breaks are disabled unless it is enabled. 
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/timebreak/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Timebreak.cs" %}
+{% include code-snippet/chat-ui/timebreak/timestamp.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![timebreak](images/timebreak.png)
+
 ## Time break template
 
 > Refer to the [Templates](./templates#time-break-template) section for more details about the Time break template.
