@@ -1,0 +1,27 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
+{
+  col.Field("ProductID").HeaderText("Product ID").IsPrimaryKey(true).Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
+  col.Field("ProductName").HeaderText("Product Name").Width("180").ValidationRules(new { required = "true" }).Add();
+  col.Field("UnitPrice").HeaderText("Unit Price").Width("120").EditType("numericedit").Format("C2").Edit(new
+    {
+      @params = new Syncfusion.EJ2.Inputs.NumericTextBox()
+      {
+        Change = "calculateTotalCost"
+      }
+    }).ValidationRules(new { required = "true", minLength=1 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("UnitsInStock").HeaderText("Units In Stock").Width("120").EditType("numericedit").Edit(new
+    {
+      @params = new Syncfusion.EJ2.Inputs.NumericTextBox()
+      {
+        Change = "calculateTotalCost"
+      }
+    }).ValidationRules(new { required = "true", minLength=1 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("TotalCost").HeaderText("Total Cost").Width("120").AllowEditing(false).Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+<script>
+  function calculateTotalCost() {
+    var grid = document.getElementById('grid').ej2_instances[0];
+    var formElement = grid.element.querySelector('form')['ej2_instances'][0];
+    formElement.getInputElement('TotalCost').value = formElement.getInputElement('UnitPrice').value * formElement.getInputElement('UnitsInStock').value;
+  }
+</script>

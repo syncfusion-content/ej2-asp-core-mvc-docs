@@ -1,3 +1,6 @@
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("buttons").Content("Delete Multiple").CssClass("e-primary").Render()
+</div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -5,4 +8,13 @@
     col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").ValidationRules(new { required = "true", minLength=3 ,maxLength=1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("150").ValidationRules(new { required = "true"}).Add();
     col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").ValidationRules(new { required = "true"}).Add();
-}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+}).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+<script>
+    document.getElementById('buttons').onclick = function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        var selectedRows = grid.getSelectedRows();
+        selectedRows.forEach((row) => {
+            grid.deleteRow(row);
+        });
+    };
+</script>
