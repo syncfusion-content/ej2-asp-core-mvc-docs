@@ -14,7 +14,7 @@ The Chat UI control provides several templates for customizing the appearance of
 
 ## Empty chat template
 
-You can use the `emptyChatTemplate` property to customize the chat interface when no messages are displayed. Personalized content, such as welcome messages or images, can be added to create an engaging and inviting experience for users starting a conversation.
+You can use the [emptyChatTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_EmptyChatTemplate) property to customize the chat interface when no messages are displayed. Personalized content, such as welcome messages or images, can be added to create an engaging and inviting experience for users starting a conversation.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -26,7 +26,7 @@ You can use the `emptyChatTemplate` property to customize the chat interface whe
 
 ## Message template
 
-You can use the `messageTemplate` property to customize the appearance and styling of each chat message. Modify text styling, layout, and other design elements to ensure a personalized chat experience. The template context includes `message` and `index` items.
+You can use the [messageTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MessageTemplate) property to customize the appearance and styling of each chat message. Modify text styling, layout, and other design elements to ensure a personalized chat experience. The template context includes `message` and `index` items.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -38,7 +38,7 @@ You can use the `messageTemplate` property to customize the appearance and styli
 
 ## Time break template
 
-You can use the `timeBreakTemplate` property to customize the template, such as showing "Today," "Yesterday," or specific dates. This enhances conversation organization by clearly separating messages based on time, improving readability for the user. The template context includes `messageDate`.
+You can use the [timeBreakTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_TimeBreakTemplate) property to customize the template, such as showing "Today," "Yesterday," or specific dates. This enhances conversation organization by clearly separating messages based on time, improving readability for the user. The template context includes `messageDate`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -50,7 +50,7 @@ You can use the `timeBreakTemplate` property to customize the template, such as 
 
 ## Typing indicator template
 
-You can use the `typingUsersTemplate` property to customize the display of users currently typing in the chat. It allows for styling and positioning of the typing indicator, enhancing the user experience. The template context includes `users`.
+You can use the [typingUsersTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_TypingUsersTemplate) property to customize the display of users currently typing in the chat. It allows for styling and positioning of the typing indicator, enhancing the user experience. The template context includes `users`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -62,7 +62,7 @@ You can use the `typingUsersTemplate` property to customize the display of users
 
 ## Suggestion template
 
-You can use the `suggestionTemplate` property to customize the quick reply suggestions that appear above the input field. Templates here can help create visually appealing and functional suggestion layouts. The template context includes `suggestion` and `index` items.
+You can use the [suggestionTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_SuggestionTemplate) property to customize the quick reply suggestions that appear above the input field. Templates here can help create visually appealing and functional suggestion layouts. The template context includes `suggestion` and `index` items.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -74,7 +74,7 @@ You can use the `suggestionTemplate` property to customize the quick reply sugge
 
 ## Footer template
 
-You can use the `footerTemplate` property to customize the default footer area and manage message send actions with a personalized design. This flexibility allows users to create unique footers that meet their specific needs.
+You can use the [footerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_FooterTemplate) property to customize the default footer area and manage message send actions with a personalized design. This flexibility allows users to create unique footers that meet their specific needs.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

@@ -12,7 +12,7 @@ documentation: ug
 
 ## Show or hide header
 
-You can use `ShowHeader` property to enable or disable the chat header. It contains the following options `HeaderText` and `HeaderIconCss`.
+You can use [ShowHeader](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_ShowHeader) property to enable or disable the chat header. It contains the following options [HeaderText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_HeaderText) and [HeaderIconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_HeaderIconCss).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -27,7 +27,7 @@ You can use `ShowHeader` property to enable or disable the chat header. It conta
 
 ### Setting header text
 
-You can use the `HeaderText` property to display the text that appears in the header, which indicates the current username or the group name providing the context for the conversation.
+You can use the [HeaderText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_HeaderText) property to display the text that appears in the header, which indicates the current username or the group name providing the context for the conversation.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -42,7 +42,7 @@ You can use the `HeaderText` property to display the text that appears in the he
 
 ### Setting header icon CSS
 
-You can use the `HeaderIconCss` property to customize the styling of the header icon.
+You can use the [HeaderIconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_HeaderIconCss) property to customize the styling of the header icon.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -57,7 +57,7 @@ You can use the `HeaderIconCss` property to customize the styling of the header 
 
 ## Toolbar
 
-You can render the Chat UI toolbar items by using the `Items` property in the, `ChatUIToolbarSettings` property.
+You can render the Chat UI toolbar items by using the [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUIToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_ChatUIToolbarSettings_Items) property in the, [ChatUIToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUIToolbarSettings.html) property.
 
 ### Setting items
 
@@ -248,7 +248,7 @@ You can use the `Template` property to add custom toolbar item in the Chat UI.
 
 ### Item clicked
 
-The `ItemClicked` event is triggered when the header toolbar item is clicked.
+The [ItemClicked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUIToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_ChatUIToolbarSettings_ItemClicked) event is triggered when the header toolbar item is clicked.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
