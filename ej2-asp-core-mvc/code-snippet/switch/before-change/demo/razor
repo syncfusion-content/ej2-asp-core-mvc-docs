@@ -1,0 +1,8 @@
+@Html.EJS().Switch("default").BeforeChange("BeforeChange").Render()
+
+<script>
+    function BeforeChange(args) {
+        // Set cancel to true to prevent the switch state change
+        args.cancel = true;
+    }
+</script>
