@@ -12,16 +12,16 @@ documentation: ug
 
 ## Setting placeholder
 
-You can use the `placeholder` property to set the placeholder text for the textarea. The default value is `Type your message…`.
+You can use the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Placeholder) property to set the placeholder text for the textarea. The default value is `Type your message…`.
 
 ## Setting width
 
-You can use the `width` property to set the width of the Chat UI. The default value is `100%`.
+You can use the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Width) property to set the width of the Chat UI. The default value is `100%`.
 
 ## Setting height
 
-You can use the `height` property to set the height of the Chat UI. The default value is `100%`.
+You can use the [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Height) property to set the height of the Chat UI. The default value is `100%`.
 
 ## Setting CSS class
 
-You can customize the appearance of the Chat UI component by using the `cssClass` property.
+You can customize the appearance of the Chat UI component by using the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_CssClass) property.
