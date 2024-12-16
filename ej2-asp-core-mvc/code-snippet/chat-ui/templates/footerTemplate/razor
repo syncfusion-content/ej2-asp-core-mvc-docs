@@ -5,11 +5,11 @@
 </div>
 
 <script id="footerContent" type="text/x-jsrender">
-    <div className="custom-footer">
-          <input id="chatTextArea" className="e-input" placeholder="Type your message...">
-          <button id="sendMessage" class="e-btn e-primary">
-                <span class="e-icons e-send-1"></span>
-          </button>
+    <div class="custom-footer">
+        <input id="chatTextArea" class="e-input" placeholder="Type your message...">
+        <button id="sendMessage" class="e-btn e-primary">
+            <span class="e-icons e-send"></span>
+        </button>
     </div>
 </script>
 
