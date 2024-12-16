@@ -3,10 +3,10 @@
     <ejs-button id="restore" content="Restore column settings" class="e-primary custom"></ejs-button>
 </div>
 <div id="message" class="message"></div>
-<ejs-grid id="grid" dataSource="@ViewBag.datasource" enablePersistence="true" allowPaging="true" allowFiltering="true" height="348px"> 
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" enablePersistence="true" allowPaging="true" allowFiltering="true" height="348px"> 
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"  headerTemplate="#customertemplate"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150" headerTemplate="#customertemplate"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="150"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" width="150" textAlign="Right" template="#template"></e-grid-column>
     </e-grid-columns>
