@@ -14,25 +14,25 @@ The Chat UI allows to add messages using the `<e-chatui-message>` tag directive 
 
 ## Configuring messages
 
-You can use the `text` property to add message content for the user. Each message can be configured with options such as id, text, author, timestamp, and more.
+You can use the `text` property to add message content for the user. Each message can be configured with options such as `id`, `text`, `author`, `timestamp` and more.
 
 ### Define current user
 
-You can use the `author` property to identify the current user of the chat. Each user can be configured with options such as id, user, avatarUrl, and more.
+You can use the `author` property to identify the current user of the chat. Each user can be configured with options such as `id`, `user`, `avatarUrl` and more.
 
-> You can use the `user` property to display the user name and `id` property is necessary to differentiate between the multiple users. 
+> You can use the [user](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUIUser.html#Syncfusion_EJ2_InteractiveChat_ChatUIUser_User) property to display the user name and [id](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUIUser.html#Syncfusion_EJ2_InteractiveChat_ChatUIUser_Id) property is necessary to differentiate between the multiple users. 
 
 #### Setting avatar URL
 
-You can use the `avatarUrl` property to define the image URL’s for the user avatar. If no URL is provided, fallback initials of the first and last name from the user’s name will be used.  
+You can use the [avatarUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUIUser.html#Syncfusion_EJ2_InteractiveChat_ChatUIUser_AvatarUrl) property to define the image URL’s for the user avatar. If no URL is provided, fallback initials of the first and last name from the user’s name will be used.  
 
 #### Setting avatar background color
 
-You can use the `avatarBgColor` property to set a specific background color for user avatars using hexadecimal values. If no color is set, a custom background color is set based on specified theme.
+You can use the [avatarBgColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUIUser.html#Syncfusion_EJ2_InteractiveChat_ChatUIUser_AvatarBgColor) property to set a specific background color for user avatars using hexadecimal values. If no color is set, a custom background color is set based on specified theme.
 
 #### Setting CSS class
 
-You can use the `cssClass` property to customize the appearance of the chat user. 
+You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUIUser.html#Syncfusion_EJ2_InteractiveChat_ChatUIUser_CssClass) property to customize the appearance of the chat user. 
 
 ### Define timestamp
 
@@ -60,6 +60,6 @@ You can use the `tooltip` property to provide information about the messages by 
 
 ### Setting auto scroll
 
-You can use the `autoScrollToBottom` property to automatically scroll the chats when a new message is received in a conversation. By default, the value is false, requires manual scrolling or the FAB button to quick access to the bottom of the view. 
+You can use the [autoScrollToBottom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_AutoScrollToBottom) property to automatically scroll the chats when a new message is received in a conversation. By default, the value is false, requires manual scrolling or the FAB button to quick access to the bottom of the view. 
 
 - By default, it scrolls to bottom for each message being sent or when the scroll is maintained at the bottom in the chat, in order to prevent the automatic scroll for different user messages you can use the `autoScrollToBottom` property.
