@@ -1,0 +1,61 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="chatui-container" style="height:380px; width:450px">
+    @Html.EJS().ChatUI("footerTemplate").FooterTemplate("#footerContent").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Render()
+</div>
+
+<script id="footerContent" type="text/x-jsrender">
+    <div class="custom-footer">
+        <input id="chatTextArea" class="e-input" placeholder="Type your message...">
+        <button id="sendMessage" class="e-btn e-primary">
+            <span class="e-icons e-send"></span>
+        </button>
+    </div>
+</script>
+
+<style>
+
+    #footerTemplate.e-chat-ui .e-footer {
+        margin: unset;
+        align-self: auto;
+    }
+
+    .custom-footer {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        background-color: transparent;
+    }
+
+    #chatTextArea {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 0;
+        padding: 5px;
+    }
+
+</style>
+
+<script>
+    var chatUIObj;
+    function onCreated() {
+        var chatUiEle = document.getElementById('footerTemplate');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+    }
+    document.addEventListener('click', function (event) {
+        if (event.target && event.target.id === 'sendMessage') {
+            const textArea = document.getElementById('chatTextArea');
+            if (textArea && textArea?.value.length > 0) {
+                let value = textArea.value;
+                textArea.value = '';
+                chatUIObj.addMessage(
+                    {
+                        author: @Html.Raw(JsonConvert.SerializeObject(Model.MichaleUserModel)),
+                        text: value
+                    }
+                );
+            }
+        }
+    });
+</script>

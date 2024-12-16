@@ -14,6 +14,14 @@ documentation: ug
 
 You can use the [showTimeBreak](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_ShowTimeBreak) property to display date-wise separations between all the messages which enhances the readability and message organizing. The default value is `false`, indicating time breaks are disabled unless it is enabled. 
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/timebreak/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Timebreak](images/timebreak.png)
+
 ## Time break template
 
 > Refer to the [Templates](./templates#time-break-template) section for more details about the Time break template.
