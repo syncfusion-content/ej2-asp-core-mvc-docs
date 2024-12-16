@@ -41,7 +41,7 @@ RTL provides an option to switch the text direction and layout of the Chat UI co
 {% include code-snippet/chat-ui/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% include code-snippet/chat-ui/globalization/rtl/defaulMessages.cs %}
+{% include code-snippet/chat-ui/globalization/rtl/defaultMessages.cs %}
 {% endhighlight %}
 {% endtabs %}
 
