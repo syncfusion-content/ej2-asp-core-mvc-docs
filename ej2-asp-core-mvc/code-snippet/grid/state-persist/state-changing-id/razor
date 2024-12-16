@@ -1,10 +1,7 @@
-@{
-    var gridId = "OrderDetails";
-}
 <div style="padding-bottom:20px">
     @Html.EJS().Button("restore").Content("Restore to initial state").CssClass("e-primary").Render()
 </div>
-@Html.EJS().Grid(gridId).DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).EnablePersistence(true).Height("273px").Columns(col =>
+@Html.EJS().Grid("OrderDetails").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).EnablePersistence(true).Height("273px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("170").Add();
@@ -12,12 +9,11 @@
     col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 }).AllowPaging(true).Render()
 <script>
-    var gridId = '@gridId';
     document.getElementById('restore').addEventListener('click', function () {
-        var gridElement = document.getElementById(gridId);
+        var gridElement = document.getElementById("OrderDetails");
         if (gridElement) {
-            gridId = 'OrderDetails' + Math.floor(Math.random() * 10);
-            gridElement.id = gridId;
+            var newGridId = 'OrderDetails' + Math.floor(Math.random() * 10);
+            gridElement.id = newGridId;
             location.reload();
         }
     });
