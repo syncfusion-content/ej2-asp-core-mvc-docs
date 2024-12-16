@@ -1,0 +1,29 @@
+@{
+    List<PopupResizeData> status = new List<PopupResizeData>();
+        status.Add(new PopupResizeData() { Status = "Open", State = false });
+        status.Add(new PopupResizeData() { Status = "Waiting for Customer", State = false });
+        status.Add(new PopupResizeData() { Status = "On Hold", State = true });
+        status.Add(new PopupResizeData() { Status = "Follow-up", State = false });
+        status.Add(new PopupResizeData() { Status = "Closed", State = true });
+        status.Add(new PopupResizeData() { Status = "Solved", State = false });
+        status.Add(new PopupResizeData() { Status = "Feature Request", State = false });
+        status.Add(new PopupResizeData() { Status = "In Progress", State = false });
+        status.Add(new PopupResizeData() { Status = "Pending", State = true });
+        status.Add(new PopupResizeData() { Status = "Escalated", State = true });
+        status.Add(new PopupResizeData() { Status = "New", State = false });
+        status.Add(new PopupResizeData() { Status = "Under Review", State = true });
+        status.Add(new PopupResizeData() { Status = "Reopened", State = false });
+        status.Add(new PopupResizeData() { Status = "Approved", State = true });
+        status.Add(new PopupResizeData() { Status = "Awaiting Approval", State = false });
+        status.Add(new PopupResizeData() { Status = "Scheduled", State = false });
+        status.Add(new PopupResizeData() { Status = "Canceled", State = true });
+        status.Add(new PopupResizeData() { Status = "Completed", State = true });
+        status.Add(new PopupResizeData() { Status = "Acknowledged", State = false });    
+}
+<div id='groupList' class='col-lg-6' style='padding-top:15px'>
+    div class='content'>
+        <ejs-multiselect id="tags" allowResize =true placeholder="Select Tags" popupHeight="200px" dataSource="@tag">
+            <e-multiselect-fields value="Text" ></e-multiselect-fields>
+        </ejs-multiselect>
+    </div>
+</div>
