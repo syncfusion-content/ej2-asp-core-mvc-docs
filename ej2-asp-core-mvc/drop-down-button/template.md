@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ItemTempalte in ##Platform_Name## Drop Down Button Component
+title: ItemTempalte in ##Platform_Name## Drop Down Button Component | Syncfusion
 description: Learn here all about ItemTempalte in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: ItemTempalte
@@ -34,3 +34,5 @@ The [`ItemTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Drop Down Button template](images/drop-down-menu-template.png)

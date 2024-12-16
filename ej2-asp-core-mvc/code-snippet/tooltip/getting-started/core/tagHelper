@@ -1,4 +1,4 @@
-<ejs-tooltip id="Tooltip" content="Lets go green & Save Earth !!!">
+<ejs-tooltip id="Tooltip" content="Lets go green & Save Earth !!!" position="TopCenter">
     <!-- Target element -->
     <e-content-template>
         <span id='target'>Show Tooltip</span>
