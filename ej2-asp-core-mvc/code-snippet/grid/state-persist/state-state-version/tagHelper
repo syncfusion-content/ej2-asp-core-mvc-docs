@@ -1,0 +1,48 @@
+<div style="padding-bottom:20px">
+    <ejs-button id="version1" content="Version 1" class="e-primary"></ejs-button>
+    <ejs-button id="version2" content="Version 2" class="e-primary custom"></ejs-button>
+    <ejs-button id="version3" content="Version 3" class="e-primary custom"></ejs-button>
+</div>
+<div id="message" class="message"></div>
+<ejs-grid id="grid" dataSource="@ViewBag.datasource" ej2StatePersistenceVersion="v.0" allowPaging="true" allowGrouping="true" allowSorting="true" allowReordering="true" allowFiltering="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="170"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    ej.base.enableVersionBasedPersistence(true);
+    document.getElementById('version1').addEventListener('click', function () {
+        clickHandler('v.1');
+    });
+    document.getElementById('version2').addEventListener('click', function () {
+        clickHandler('v.2');
+    });
+    document.getElementById('version3').addEventListener('click', function () {
+        clickHandler('v.3');
+    });
+    function clickHandler(version) {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        grid.ej2StatePersistenceVersion = version;
+        var persistedGridSettings = window.localStorage.getItem('gridOrderDetails' + grid.ej2StatePersistenceVersion);
+        if (persistedGridSettings) {
+            grid.setProperties(JSON.parse(persistedGridSettings));
+            document.getElementById('message').innerText  = 'Grid state restored to ' + version;
+        } else {
+            var gridData = grid.getPersistData();
+            window.localStorage.setItem('gridOrderDetails' + grid.ej2StatePersistenceVersion, gridData);
+        }
+    }
+</script>
+<style>
+    .custom {
+        margin-left: 20px;
+    }
+    .message {
+         text-align: center;
+         color: red;
+         font-size: 16px;
+    }
+</style>

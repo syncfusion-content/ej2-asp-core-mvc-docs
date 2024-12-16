@@ -1,18 +1,13 @@
-<div style="padding-bottom:20px">
-    @Html.EJS().Button("add").Content("Add Columns").CssClass("e-primary").Render()
-</div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).EnablePersistence(true).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("170").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
-}).AllowPaging(true).Render()
+}).AllowPaging(true).ActionBegin("actionBegin").Render()
 <script>
-    document.getElementById('add').addEventListener('click', function () {
-        var grid=document.getElementById('grid').ej2_instances[0];
-        var obj = { field: "Freight", headerText: 'Freight', width: 120 };
-        grid.columns.push(obj);
-        grid.refreshColumns();
-    });
+  function actionBegin(args) {
+    var grid=document.getElementById('grid').ej2_instances[0];
+    grid.query.addParams('dataSource', 'data');
+ }
 </script>

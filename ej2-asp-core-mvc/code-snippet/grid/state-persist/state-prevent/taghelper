@@ -1,0 +1,38 @@
+<div style="padding-bottom:20px">
+    <ejs-button id="add" content="Add Columns" class="e-primary"></ejs-button>
+    <ejs-button id="remove" content="Remove Columns" class="e-primary custom"></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.datasource" enablePersistence="true" allowPaging="true" allowFiltering="true" height="270"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID"  width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City"  width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name"  width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('add').addEventListener('click', function () {
+        var grid=document.getElementById('grid').ej2_instances[0];
+        var obj = { field: "Freight", headerText: 'Freight', width: 120 };
+        grid.columns.push(obj); //you can add the columns by using the Grid columns method
+        grid.refreshColumns();
+    });
+    document.getElementById('remove').addEventListener('click', function () {
+        var grid=document.getElementById('grid').ej2_instances[0];
+        grid.columns.pop();
+        grid.refreshColumns();
+    });
+    function dataBound() {
+            var grid=document.getElementById('grid').ej2_instances[0];
+            let cloned = grid.addOnPersist;
+            grid.addOnPersist = function (key) {
+                key = key.filter((item)  => item !== "columns");
+                return cloned.call(grid, key);
+            };
+    }
+</script>
+<style>
+    .custom {
+        margin-left: 20px;
+    }
+</style>

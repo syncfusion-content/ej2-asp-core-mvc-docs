@@ -1,0 +1,52 @@
+<div style="padding-bottom:20px">
+    <ejs-button id="save" content="Save" class="e-success"></ejs-button>
+    <ejs-button id="restore" content="Restore" class="e-danger custom"></ejs-button>
+</div>
+<div id="message" class="message"></div>
+<ejs-grid id="grid" dataSource="@ViewBag.datasource" enablePersistence="true" allowSorting="true" allowGrouping="true" toolbar="@(new List<string>() {"Edit","Update","Cancel" })" allowPaging="true" allowFiltering="true" height="348px"> 
+    <e-grid-editSettings allowEditing="true"></e-grid-editSettings>
+    <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
+    <e-grid-pagesettings pageSize=10> </e-grid-pagesettings>
+    <e-grid-groupsettings columns="@(new string[] {"ShipCountry"})"></e-grid-groupsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120" validationRules="@(new { required=true})"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150" validationRules="@(new { required=true})"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="150" textAlign="Right" editType="numericedit" validationRules="@(new { required=true})"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" editType="dropdownedit" ></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    // Save grid state to local storage
+    document.getElementById('save').addEventListener('click', function () {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        var persistData = grid.getPersistData();  // Grid persistData
+      window.localStorage.setItem("gridOrders", persistData);
+      document.getElementById("message").innerText = "Grid state saved.";
+      });
+    // Restore grid state from local storage
+    document.getElementById('restore').addEventListener('click', function () {
+        var value = window.localStorage.getItem("gridOrders"); //"gridOrders" is control name + control id.
+        var grid = document.getElementById('grid').ej2_instances[0];
+        var state = JSON.parse(value);
+        if (state) {
+            grid.setProperties(state);
+            document.getElementById("message").innerText = "Previous grid state restored.";
+        } else {
+            document.getElementById("message").innerText  = "No saved state found.";
+        }
+      });
+    function actionBegin () {
+        document.getElementById('message').innerText = '';
+    }
+    </script>
+<style>
+    .message {
+        text-align: center;
+        color: red;
+        font-size: 16px;
+    }
+    .custom {
+        margin-left: 20px;
+    }
+</style>

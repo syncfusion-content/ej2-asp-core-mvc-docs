@@ -1,16 +1,30 @@
-
-    @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).EnablePersistence(true).ActionBegin("actionBegin").Columns(col =>
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("restore").Content("Restore to initial state").CssClass("e-primary").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).EnablePersistence(true).element(gridId).Columns(col =>
 {
-
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("170").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("170").HeaderTemplate("#customertemplate").Add();
     col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-
-}).AllowPaging().PageSettings(page => page.PageCount(5)).Render()
-
-    <script>
-    function actionBegin(args) {
-        this.query.addParams('$filter', 'EmployeeID eq 1');
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Template("#template").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).AllowPaging(true).AllowSorting().Render()
+<script>
+// Save grid state to local storage
+(document.getElementById('save')as HTMLElement).addEventListener('click', function () {
+    let persistData = grid.getPersistData(); // Grid persistData
+    window.localStorage.setItem("gridOrders", persistData);
+    (document.getElementById("message")as HTMLElement).innerText =  "Grid state saved.";
+});
+// Restore grid state from local storage
+(document.getElementById('restore')as HTMLElement).addEventListener('click', function () {
+    let value: string = window.localStorage.getItem("gridOrders")as string; //"gridOrders" is control name + control id.
+    let state = JSON.parse(value);
+    if (state) {
+        grid.setProperties(state);
+        (document.getElementById("message")as HTMLElement).innerText = "Previous grid state restored.";
+    } else {
+        (document.getElementById("message")as HTMLElement).innerText = "No saved state found.";
     }
-    </script>
+});
+</script>
+

@@ -1,0 +1,19 @@
+<div style="padding-bottom:20px">
+    <ejs-button id="restore" content="Restore to initial state" class="e-primary"></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.datasource" enablePersistence="true" allowPaging="true" allowFiltering="true"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name"  width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City"  width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name"  width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('restore').onclick = function () {
+        document.getElementById('grid').ej2_instances[0].enablePersistence = false;
+        window.localStorage.setItem("gridOrderDetails", "");
+        document.getElementById('grid').ej2_instances[0].destroy();
+        location.reload();
+    }
+</script>
