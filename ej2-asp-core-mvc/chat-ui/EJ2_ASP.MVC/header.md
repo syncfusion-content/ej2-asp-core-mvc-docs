@@ -155,7 +155,7 @@ You can use the `CssClass` property to customize the header toolbar item.
 {% endhighlight %}
 {% endtabs %}
 
-![CssClass](images/toolbarCss.png)
+![CssClass](images/toolbar-css.png)
 
 #### Setting alignment
 
