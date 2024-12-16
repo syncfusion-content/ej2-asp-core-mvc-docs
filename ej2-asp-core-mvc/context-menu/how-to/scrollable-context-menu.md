@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render Scrollable Context Menu in ##Platform_Name## Context Menu Component
+title: Render Scrollable Context Menu in ##Platform_Name## Context Menu Component | Syncfusion
 description: Learn here all about Render Scrollable Context Menu in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Render Scrollable Context Menu
@@ -36,5 +36,7 @@ To achieve this functionality, set the `EnableScrolling` property to `true`. Add
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Drop Down Button Scroller Support](images/blazor-contextmenu-scroller.png)
 
 

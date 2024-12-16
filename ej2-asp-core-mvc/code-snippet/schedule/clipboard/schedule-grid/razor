@@ -1,0 +1,50 @@
+@using Syncfusion.EJ2.Schedule
+
+<div class="schedule-container">
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("650px")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .SelectedDate(new DateTime(2024, 2, 15))
+    .AllowDragAndDrop(true)
+    .AllowResizing(true)
+    .ShowQuickInfo(false)
+    .AllowClipboard(true)
+    .BeforePaste("onBeforePaste")
+    .Render()
+)
+
+@Html.EJS().Grid("Grid").Width("550px").CssClass("drag-grid").Height("400px").DataSource((IEnumerable<object>)ViewBag.gridData).AllowSelection().Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width(100).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width(100).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width(130).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(100).Add();
+
+}).Render()
+
+</div>
+
+<style>
+    .schedule-container {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<script type="text/javascript">
+    function onBeforePaste(args) {
+        var dataArray = (args.data).split('\t');
+        var result = {
+            Id: dataArray[0],
+            Subject: dataArray[1],
+            StartTime: new Date(dataArray[4]).toISOString(),
+            EndTime: new Date(new Date(dataArray[4]).getTime() + 60 * 60 * 1000).toISOString(),
+            Location: dataArray[2],
+            Description: dataArray[3]
+        };
+        args.data = [result];
+    }
+    </script>
