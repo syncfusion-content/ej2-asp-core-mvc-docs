@@ -1,0 +1,85 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Schedule
+@using Syncfusion.EJ2.Navigations
+
+<ejs-schedule id="schedule" height="650px" selectedDate="new DateTime(2023, 2, 15)" allowDragAndDrop="false" allowResizing="false" allowClipboard="true" showQuickInfo="false">
+    <e-schedule-eventsettings dataSource="@ViewBag.appointments"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<ejs-contextmenu id="ScheduleContextMenu" target=".e-schedule" items="@ViewBag.menuItems" beforeOpen="onContextMenuBeforeOpen" select="onMenuItemSelect" cssClass="schedule-context-menu"></ejs-contextmenu>
+
+
+<style>
+    .schedule-context-menu .e-menu-item .new::before {
+        content: '\e7f9';
+    }
+
+    .schedule-context-menu .e-menu-item .edit::before {
+        content: '\ea9a';
+    }
+
+    .schedule-context-menu .e-menu-item .recurrence::before {
+        content: '\e308';
+        font-weight: bold;
+    }
+
+    .schedule-context-menu .e-menu-item .today::before {
+        content: '\e322';
+    }
+
+    .schedule-context-menu .e-menu-item .delete::before {
+        content: '\e94a';
+    }
+    .e-bigger .schedule-context-menu ul .e-menu-item .e-menu-icon {
+        font-size: 14px;
+    }
+
+    .schedule-context-menu ul .e-menu-item .e-menu-icon {
+        font-size: 12px;
+    }
+</style>
+<script type="text/javascript">
+     var selectedTarget;
+        var targetElement;
+        function onContextMenuBeforeOpen(args) {
+            var newEventElement = document.querySelector('.e-new-event');
+            if (newEventElement) {
+                ej.base.remove(newEventElement);
+            }
+            var scheduleObj = document.getElementById('Schedule').ej2_instances[0];
+            scheduleObj.closeQuickInfoPopup();
+            targetElement = args.event.target;
+            if (ej.base.closest(targetElement, '.e-contextmenu')) {
+                return;
+            }
+            selectedTarget = ej.base.closest(targetElement, '.e-appointment,.e-work-cells,' +
+                '.e-vertical-view .e-date-header-wrap .e-all-day-cells,.e-vertical-view .e-date-header-wrap .e-header-cells');
+            if (ej.base.isNullOrUndefined(selectedTarget)) {
+                args.cancel = true;
+                return;
+            }
+            if (selectedTarget.classList.contains('e-appointment')) {
+                this.showItems(['Cut', 'Copy'], true);
+                this.hideItems(['Paste'], true);
+            } else {
+                this.showItems(['Paste'], true);
+                this.hideItems(['Cut', 'Copy'], true);
+            }
+        }
+
+        function onMenuItemSelect(args) {
+            var scheduleObj = document.getElementById('Schedule').ej2_instances[0];
+            var selectedMenuItem = args.item.id;
+            switch (selectedMenuItem) {
+                case 'Cut':
+                    scheduleObj.cut([selectedTarget]);
+                    break;
+                case 'Copy':
+                    scheduleObj.copy([selectedTarget]);
+                    break;
+                case 'Paste':
+                    scheduleObj.paste(targetElement);
+                    break;
+            }
+        }
+</script>
