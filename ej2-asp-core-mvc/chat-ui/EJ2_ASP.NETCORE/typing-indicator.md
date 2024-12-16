@@ -18,10 +18,7 @@ The typing users are the `UserModel` list, where you can update the user’s dyn
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/typingUsers/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="TypingUsers.cs" %}
-{% include code-snippet/chat-ui/typingUsers/timestamp.cs %}
+{% include code-snippet/chat-ui/typingUsers/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 

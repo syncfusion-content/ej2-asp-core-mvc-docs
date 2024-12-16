@@ -12,7 +12,15 @@ documentation: ug
 
 ## Show or hide time break
 
-You can use the `showTimeBreak` property to display date-wise separations between all the messages which enhances the readability and message organizing. The default value is `false`, indicating time breaks are disabled unless it is enabled. 
+You can use the `showTimeBreak` property to display date-wise separations between all the messages which enhances the readability and message organizing. The default value is `false`, indicating time breaks are disabled unless it is enabled.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/timebreak/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Timebreak](images/timebreak.png)
 
 ## Time break template
 
