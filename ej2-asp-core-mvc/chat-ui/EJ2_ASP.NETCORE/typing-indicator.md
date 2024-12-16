@@ -16,6 +16,14 @@ You can use the [typingUsers](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 The typing users are the [UserModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUIUser.html) list, where you can update the user’s dynamically to display the current typing user. 
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/typingUsers/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![TypingUsers](images/typingUsers.png)
+
 ## Typing indicator template 
 
 > Refer to the [Templates](./templates#typing-indicator-template) section for more details about the Typing indicator template.
