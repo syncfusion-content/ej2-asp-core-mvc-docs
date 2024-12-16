@@ -3,7 +3,6 @@
     cols.Add(new { field = "OrderID", direction = "Ascending" });
     cols.Add(new { field = "ShipCity", direction = "Descending" });
 }
- 
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() {"Add", "Edit", "Delete", "Update", "Cancel","Search","ColumnChooser"})" allowPaging="true" allowReordering="true" allowGrouping="true" allowSorting="true" allowFiltering="true" showColumnChooser="true" allowRowDragAndDrop="true" height="400">
 <e-grid-editSettings allowEditing="true" allowAdding="true" allowDeleting="true" mode="Normal"></e-grid-editSettings>
 <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
