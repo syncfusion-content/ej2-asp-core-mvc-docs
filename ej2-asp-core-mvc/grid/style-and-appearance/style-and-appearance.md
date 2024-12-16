@@ -77,4 +77,4 @@ In the following sample, the font family of grid content is changed to **cursive
 {% endtabs %}
 {% endif %}
 
-![grid root element](../images/style-and-appearance/style-and-appearance.png)
+![grid style and appearance](../images/style-and-appearance/style-and-appearance.png)
