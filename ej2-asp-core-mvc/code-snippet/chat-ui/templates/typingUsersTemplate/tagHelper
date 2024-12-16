@@ -1,0 +1,61 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div style="height:380px; width:450px">
+    <ejs-chatui id="typingUsersTemplate" typingUsersTemplate="#typingUsersContent" created="onCreated">
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+        <e-chatui-messages>
+            @foreach (var message in Model.ChatMessagesData)
+            {
+                <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
+            }
+        </e-chatui-messages>
+    </ejs-chatui>
+</div>
+
+<script id="typingUsersContent" type="text/x-jsrender">
+    <div class="typing-wrapper">${getTypingUsersList(users) + ` are typing...`}</div>
+</script>
+
+<style>
+
+    #typingUsersTemplate .typing-wrapper {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #555;
+        margin: 5px 0;
+    }
+
+    .typing-user {
+        font-weight: bold;
+        color: #0078d4;
+    }
+
+</style>
+
+<script>
+    var chatUIObj;
+    var typingUsers = @Html.Raw(JsonConvert.SerializeObject(Model.TypingUsers));
+    typingUsers.forEach(user => {
+        user = new UserModel(user);
+    });
+    function onCreated() {
+        var chatUiEle = document.getElementById('typingUsersTemplate');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+        chatUIObj.typingUsers = typingUsers;
+        chatUIObj.dataBind();
+    }
+    function getTypingUsersList(users) {
+        if (!users || users.length === 0) {
+            return '';
+        }
+
+        let usersList = users.map((user, i) => {
+            let isLastUser = i === users.length - 1;
+            return `${isLastUser && i > 0 ? 'and ' : ''}<span class="typing-user">${user.user}</span>`;
+        }).join(' ');
+        return usersList
+    }
+</script>

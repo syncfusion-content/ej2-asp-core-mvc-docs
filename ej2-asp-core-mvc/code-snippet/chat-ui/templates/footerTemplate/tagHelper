@@ -1,0 +1,69 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div style="height:380px; width:450px">
+    <ejs-chatui id="footerTemplate" created="onCreated" footerTemplate="#footerContent">
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+        <e-chatui-messages>
+            @foreach (var message in Model.ChatMessagesData)
+            {
+                <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
+            }
+        </e-chatui-messages>
+    </ejs-chatui>
+</div>
+
+<script id="footerContent" type="text/x-jsrender">
+    <div className="custom-footer">
+          <input id="chatTextArea" className="e-input" placeholder="Type your message...">
+          <button id="sendMessage" class="e-btn e-primary">
+                <span class="e-icons e-send-1"></span>
+          </button>
+    </div>
+</script>
+
+<style>
+
+    #footerTemplate.e-chat-ui .e-footer {
+        margin: unset;
+        align-self: auto;
+    }
+
+    .custom-footer {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        background-color: transparent;
+    }
+
+    #chatTextArea {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 0;
+        padding: 5px;
+    }
+
+</style>
+
+<script>
+    var chatUIObj;
+    function onCreated() {
+        var chatUiEle = document.getElementById('footerTemplate');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+    }
+    document.addEventListener('click', function (event) {
+        if (event.target && event.target.id === 'sendMessage') {
+            const textArea = document.getElementById('chatTextArea');
+            if (textArea && textArea?.value.length > 0) {
+                let value = textArea.value;
+                textArea.value = '';
+                chatUIObj.addMessage(
+                    {
+                        author: @Html.Raw(JsonConvert.SerializeObject(Model.MichaleUserModel)),
+                        text: value
+                    }
+                );
+            }
+        }
+    });
+</script>
