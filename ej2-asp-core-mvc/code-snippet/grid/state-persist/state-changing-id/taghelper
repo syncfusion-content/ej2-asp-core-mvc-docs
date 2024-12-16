@@ -13,7 +13,7 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-    var gridId = '@gridId'; // Use server-side variable in JavaScript
+    var gridId = '@gridId';
     document.getElementById('restore').addEventListener('click', function () {
         var gridElement = document.getElementById(gridId);
         if (gridElement) {

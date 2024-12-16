@@ -151,7 +151,7 @@ window.localStorage.setItem('gridOrders', JSON.stringify(value)); //"gridOrders"
 
 ## Prevent columns from persisting
 
-In the Syncfusion ASP.NET Core Grid component, you may sometimes want to prevent certain settings from being persisted when using the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) feature. When the enablePersistence property is set to **true**, the Grid properties such as [Grouping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html), [Paging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html), [Filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html), [Sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html), and [Columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumns.html) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
+In the Syncfusion ASP.NET Core Grid component, you may sometimes want to prevent certain settings from being persisted when using the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) feature. When the enablePersistence property is set to **true**, the Grid properties such as [Grouping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html), [Paging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html), [Filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html), [Sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html), and [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumns.html) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
 
 The following example demonstrates how to prevent Grid columns from persisting. In the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
 
@@ -188,13 +188,13 @@ Here's an example of how to add a new column to a list of persisted columns:
 
 ![Add a new column in persisted columns list](images/state-management/state-add.gif)
 
-> * Adding new columns using `columns` directly in the grid initialization is not recommended if you intend to persist the new columns with the existing columns list 
+> * Adding new columns using [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumns.html) directly in the grid initialization is not recommended if you intend to persist the new columns with the existing columns list 
 
 ### Persist the column template, header template and header text
 
 By default, when the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) property is set to **true** in the Syncfusion Grid component, certain column properties such as column template, header text, header template, column formatter, and value accessor are not persisted. This is because these properties can be customized at the application level.
 
-To restore these column properties and achieve persistence, you can follow the approach of cloning the grid's columns property using JavaScript Object's assign method and manually storing it along with the persist data. When restoring the settings, this cloned column object must be assigned to the grid's columns property to restore the column settings. The following sample demonstrates this process:
+To restore these column properties and achieve persistence, you can follow the approach of cloning the grid's `columns` property using JavaScript Object's assign method and manually storing it along with the persist data. When restoring the settings, this cloned column object must be assigned to the grid's [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumns.html) property to restore the column settings. The following sample demonstrates this process:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

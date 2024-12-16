@@ -14,7 +14,7 @@
     document.getElementById('add').addEventListener('click', function () {
         var grid = document.getElementById('grid').ej2_instances[0];
         var newColumn = { field: "Freight", headerText: 'Freight', width: 120 };
-        grid.columns.push(newColumn); //you can add the columns by using the Grid columns method
+        grid.columns.push(newColumn);
         grid.refreshColumns();
     });
     document.getElementById('remove').addEventListener('click', function () {
