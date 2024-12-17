@@ -104,7 +104,7 @@ You can use the `TimeStamp` property to indicate the date and time of each messa
 
 ![TimeStamp](images/timestamp.png)
 
-#### Setting timestamp format
+### Setting timestamp format
 
 You can use the `TimeStampFormat` to display specific time format for the timestamp. The default format is `dd/MM/yyyy hh:mm a`, but this can be customized to meet different localization and display needs. 
 
@@ -168,7 +168,7 @@ You can use the `Tooltip` property to provide information about the messages by 
 
 ![Tooltip](images/status-tooltip.png)
 
-### Setting auto scroll
+## Setting auto scroll
 
 You can use the [AutoScrollToBottom](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_AutoScrollToBottom) property to automatically scroll the chats when a new message is received in a conversation. By default, the value is false, requires manual scrolling or the FAB button to quick access to the bottom of the view. 
 
@@ -184,3 +184,18 @@ You can use the [AutoScrollToBottom](https://help.syncfusion.com/cr/aspnetmvc-js
 {% endtabs %}
 
 ![AutoScrollToBottom](images/auto-scroll.png)
+
+## Setting suggestions
+
+You can use the [Suggestions](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Suggestions) property, to add the suggestions in both initial and on-demand which help users to quick-reply options above the input field.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/suggestion/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Suggestion.cs" %}
+{% include code-snippet/chat-ui/messages/suggestion/defaultMessages.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Suggestion](images/suggestion.png)

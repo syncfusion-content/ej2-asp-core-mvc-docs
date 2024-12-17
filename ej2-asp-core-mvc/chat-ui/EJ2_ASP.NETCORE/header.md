@@ -96,6 +96,14 @@ You can use the `text` property to set the text for the header toolbar item.
 
 You can use the `visible` property to specify whether to show or hide the header toolbar item. By default, its value is `true`.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/header/toolbarVisible/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ToolbarVisible](images/toolbar-visible.png)
+
 #### Setting disabled
 
 You can use the `disabled` property to disable the header toolbar item. By default, its value is `false`.
