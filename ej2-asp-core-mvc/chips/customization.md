@@ -176,7 +176,7 @@ Outline chip has the border with the background transparent. It can be set using
 
 ## Template
 
-The `template` property of the Chips control allows users to fully customize the layout and design of each chip. By using the `template` property, users can include custom HTML elements, such as links, icons, or additional content.
+The `Template` property of the Chips control allows users to fully customize the layout and design of each chip. By using the `Template` property, users can include custom HTML elements, such as links, icons, or additional content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
