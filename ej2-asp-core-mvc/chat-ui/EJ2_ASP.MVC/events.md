@@ -14,12 +14,12 @@ This section describes the Chat UI events that will be triggered when appropriat
 
 ## Created
 
-The Chat UI control triggers the `created` event when the control rendering is completed.
+The Chat UI control triggers the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Created) event when the control rendering is completed.
 
 ## Sending message
 
-The `messageSend` event is triggered before sending a message in the Chat UI control.
+The [MessageSend](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MessageSend) event is triggered before sending a message in the Chat UI control.
 
 ## User typing
 
-The `userTyping` event is triggered when the user is typing a message in the Chat UI control.
+The [UserTyping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_UserTyping) event is triggered when the user is typing a message in the Chat UI control.

@@ -12,7 +12,7 @@ documentation: ug
 
 ## Show or hide time break
 
-You can use the `showTimeBreak` property to display date-wise separations between all the messages which enhances the readability and message organizing. The default value is `false`, indicating time breaks are disabled unless it is enabled. 
+You can use the [showTimeBreak](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_ShowTimeBreak) property to display date-wise separations between all the messages which enhances the readability and message organizing. The default value is `false`, indicating time breaks are disabled unless it is enabled. 
 
 ## Time break template
 
