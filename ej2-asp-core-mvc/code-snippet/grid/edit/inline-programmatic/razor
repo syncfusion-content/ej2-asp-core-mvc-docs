@@ -6,7 +6,7 @@
     @Html.EJS().Button("updaterow").Content("Update Row").CssClass("e-primary custom").Render()
     @Html.EJS().Button("updatecell").Content("Update Cell").CssClass("e-primary custom").Render()
 </div>
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("150").ValidationRules(new { required = "true"}).Add();
@@ -47,7 +47,7 @@
     }
 </script>
 <style>
-.custom {
+    .custom {
         margin-left: 10px;
     }
 </style>

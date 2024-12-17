@@ -25,8 +25,8 @@ To enable in-line editing in the grid component, you need to set the [EditSettin
 
 ![Inline Editing](../../images/editing/inline-editing.gif)
 
-> Normal edit mode is default mode of editing.
-> When enabling editing, it is necessary to set the `IsPrimaryKey` property value to **true** for the unique column.
+> * Normal edit mode is default mode of editing.
+> * When enabling editing, it is necessary to set the `IsPrimaryKey` property value to **true** for the unique column.
 
 ## Automatically update a specific column based on another column edited value
 
@@ -78,7 +78,7 @@ Performing CRUD actions programmatically refers to the ability to create, read, 
 
 * To remove a selected row from the Grid, use the `deleteRecord` method. For both edit and delete operations, you must select a row first.
 
-> In both normal and dialog editing modes, these methods can be used.
+> * In both normal and dialog editing modes, these methods can be used.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -108,7 +108,7 @@ To enable the confirmation dialog for the delete operation in the Grid, you can 
 
 ![Show confirmation dialog while deleting](../../images/editing/inline-show-confirmation.png)
 
-> The [ShowDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) supports all type of edit modes.
+> * The [ShowDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) supports all type of edit modes.
 
 ## Display default value for columns while adding
 
@@ -120,10 +120,10 @@ Here's an example of how to set a default value for a column:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/defaultcolumnvalue/razor %}
+{% include code-snippet/grid/edit/inline-defaultcolumnvalue/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="defaultcolumnvalue.cs" %}
-{% include code-snippet/grid/edit/defaultcolumnvalue/defaultcolumnvalue.cs %}
+{% include code-snippet/grid/edit/inline-defaultcolumnvalue/defaultcolumnvalue.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -150,7 +150,7 @@ To delete multiple selected records in the grid, first you need to select multip
 
 ![Using the inbuilt toolbar delete option](../../images/editing/inline-multiple-rows.gif)
 
-> Also delete the selected records using keyboard shortcut key **delete**.
+> * Also delete the selected records using keyboard shortcut key **delete**.
 
 **Using method**
 
@@ -173,8 +173,8 @@ You can delete multiple rows programmatically by using following method.
         });
     ```
 
-> The [SelectionSettings.Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property is set to **Multiple** to enable multiple row selection.
-> To prevent accidental or undesired deletions, it is recommended to enable the [ShowDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) property of the [EditSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) configuration
+> * The [SelectionSettings.Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property is set to **Multiple** to enable multiple row selection.
+>* To prevent accidental or undesired deletions, it is recommended to enable the [ShowDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) property of the [EditSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) configuration
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -185,7 +185,7 @@ You can delete multiple rows programmatically by using following method.
 {% endhighlight %}
 {% endtabs %}
 
-![Using method](../../images/editing/inline-poistion.png)
+![Using method](../../images/editing/inline-delete-method.gif)
 
 ## Adding a new row at the bottom of the grid
 
@@ -226,7 +226,7 @@ The following sample demonstrates how to add a new record continuously using `Sh
 
 ![Show add new row always in grid](../../images/editing/inline-top-position.png)
 
-> To save the newly added records, you can either hit the **Enter** key or click on the **Update** button located on the toolbar after filling in the new add form.
+>* To save the newly added records, you can either hit the **Enter** key or click on the **Update** button located on the toolbar after filling in the new add form.
 
 ### Limitations
 
@@ -244,10 +244,10 @@ Here's an example of how to use the `RecordDoubleClick` event to move the focus 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/inline-focus/razor %}
+{% include code-snippet/grid/edit/inline-focus/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="inline-focus.cs" %}
-{% include code-snippet/grid/how-to/inline-focus/inline-focus.cs %}
+{% include code-snippet/grid/edit/inline-focus/inline-focus.cs %}
 {% endhighlight %}
 {% endtabs %}
 

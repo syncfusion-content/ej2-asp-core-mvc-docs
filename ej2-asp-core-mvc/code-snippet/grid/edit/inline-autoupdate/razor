@@ -8,14 +8,14 @@
       {
         Change = "calculateTotalCost"
       }
-    }).ValidationRules(new { required = "true", minLength=1 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    }).ValidationRules(new { required = "true", min=1 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("UnitsInStock").HeaderText("Units In Stock").Width("120").EditType("numericedit").Edit(new
     {
       @params = new Syncfusion.EJ2.Inputs.NumericTextBox()
       {
         Change = "calculateTotalCost"
       }
-    }).ValidationRules(new { required = "true", minLength=1 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    }).ValidationRules(new { required = "true", min=1 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("TotalCost").HeaderText("Total Cost").Width("120").AllowEditing(false).Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 <script>

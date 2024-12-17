@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Inline editing in ASP.NET Core grid component
 
 The ASP.NET Core Grid component provides a powerful in-line editing feature that allows you to edit cell values of row directly within the grid. This feature is especially useful when you want to quickly modify data without the need for a separate edit form. In normal edit mode, the selected record is changed to an edit state, and you can modify the cell values and save the edited data to the data source.
@@ -16,8 +15,8 @@ The ASP.NET Core Grid component provides a powerful in-line editing feature that
 To enable in-line editing in the grid component, you need to set the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property of the Grid's configuration to **Normal**. This property determines the editing mode of the Grid.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Inline.cs" %}
 {% include code-snippet/grid/edit/inline/inline.cs %}
@@ -26,8 +25,8 @@ To enable in-line editing in the grid component, you need to set the [editSettin
 
 ![Inline Editing](../../images/editing/inline-editing.gif)
 
-> Normal edit mode is default mode of editing.
-> When enabling editing, it is necessary to set the `isPrimaryKey` property value to **true** for the unique column.
+> * Normal edit mode is default mode of editing.
+> * When enabling editing, it is necessary to set the `isPrimaryKey` property value to **true** for the unique column.
 
 ## Automatically update a specific column based on another column edited value
 
@@ -36,8 +35,8 @@ You can automatically update the value of a column based on the edited value of 
 In the following example, the **TotalCost** column value is updated based on changes to the **UnitPrice** and **UnitInStock** columns during batch editing.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-autoupdate/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-autoupdate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="autoupdate.cs" %}
 {% include code-snippet/grid/edit/inline-autoupdate/autoupdate.cs %}
@@ -55,8 +54,8 @@ To cancel the edit operation based on a specific condition, you can handle the `
 In the below demo, prevent the CRUD operation based on the **Role** column value. If the Role Column is **Admin**, then edit/delete action is prevented for that row.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-cancel-edit/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-cancel-edit/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="canceleditinline.cs" %}
 {% include code-snippet/grid/edit/inline-cancel-edit/canceleditinline.cs %}
@@ -79,11 +78,11 @@ Performing CRUD actions programmatically refers to the ability to create, read, 
 
 * To remove a selected row from the Grid, use the `deleteRecord` method. For both edit and delete operations, you must select a row first.
 
-> In both normal and dialog editing modes, these methods can be used.
+>* In both normal and dialog editing modes, these methods can be used.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-programmatic/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-programmatic/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="programmatic.cs" %}
 {% include code-snippet/grid/edit/inline-programmatic/programmatic.cs %}
@@ -99,8 +98,8 @@ Displaying a confirmation dialog adds an extra layer of confirmation when deleti
 To enable the confirmation dialog for the delete operation in the Grid, you can set the [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) property of the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) configuration to **true**. By default, this property is set to **false**.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-show-confirmation/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-show-confirmation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="showconfirmationdialog.cs" %}
 {% include code-snippet/grid/edit/inline-show-confirmation/showconfirmationdialog.cs %}
@@ -109,7 +108,7 @@ To enable the confirmation dialog for the delete operation in the Grid, you can 
 
 ![Show confirmation dialog while deleting](../../images/editing/inline-show-confirmation.png)
 
-> The [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) supports all type of edit modes.
+> * The [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) supports all type of edit modes.
 
 ## Display default value for columns while adding
 
@@ -120,8 +119,8 @@ To set a default value for a specific column in the Grid, you can use the `defau
 Here's an example of how to set a default value for a column:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/defaultcolumnvalue/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/defaultcolumnvalue/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="defaultcolumnvalue.cs" %}
 {% include code-snippet/grid/edit/defaultcolumnvalue/defaultcolumnvalue.cs %}
@@ -141,8 +140,8 @@ The grid component provides a user-friendly interface for performing various act
 To delete multiple selected records in the grid, first you need to select multiple rows in the grid by highlighting or checking the corresponding checkboxes. Once the desired rows are selected, you can click on the delete icon located in the toolbar. This action will initiate the deletion process and remove the selected records from the grid.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-multiple-rows/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-multiple-rows/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="inbuilt-toolbar.cs" %}
 {% include code-snippet/grid/edit/inline-multiple-rows/inbuilt-toolbar.cs %}
@@ -151,7 +150,7 @@ To delete multiple selected records in the grid, first you need to select multip
 
 ![Using the inbuilt toolbar delete option](../../images/editing/inline-multiple-rows.gif)
 
-> Also delete the selected records using keyboard shortcut key **delete**.
+>* Also delete the selected records using keyboard shortcut key **delete**.
 
 **Using method**
 
@@ -174,19 +173,19 @@ You can delete multiple rows programmatically by using following method.
         });
     ```
 
-> The [selectionSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property is set to **Multiple** to enable multiple row selection.
-> To prevent accidental or undesired deletions, it is recommended to enable the [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) property of the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) configuration
+>* The [selectionSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property is set to **Multiple** to enable multiple row selection.
+>* To prevent accidental or undesired deletions, it is recommended to enable the [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) property of the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) configuration
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-method/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-method/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="inline-method.cs" %}
 {% include code-snippet/grid/edit/inline-method/inline-method.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Using method](../../images/editing/inline-poistion.png)
+![Using method](../../images/editing/inline-delete-method.gif)
 
 ## Adding a new row at the bottom of the grid
 
@@ -197,8 +196,8 @@ By default, when adding a new row in the grid component, the row is inserted at 
 Here's an example of how to enable adding new rows at the bottom of the grid:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-rowposition/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-rowposition/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="rowposition.cs" %}
 {% include code-snippet/grid/edit/inline-rowposition/rowposition.cs %}
@@ -217,8 +216,8 @@ The Syncfusion Grid simplifies the addition of new records by consistently prese
 The following sample demonstrates how to add a new record continuously using `showAddNewRow` property.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-showaddnewrow/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-showaddnewrow/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="showaddnewrow.cs" %}
 {% include code-snippet/grid/edit/inline-showaddnewrow/showaddnewrow.cs %}
@@ -227,7 +226,7 @@ The following sample demonstrates how to add a new record continuously using `sh
 
 ![Show add new row always in grid](../../images/editing/inline-top-position.png)
 
-> To save the newly added records, you can either hit the **Enter** key or click on the **Update** button located on the toolbar after filling in the new add form.
+> * To save the newly added records, you can either hit the **Enter** key or click on the **Update** button located on the toolbar after filling in the new add form.
 
 ### Limitations
 
@@ -244,11 +243,11 @@ To achieve this functionality, you can leverage the [recordDoubleClick](https://
 Here's an example of how to use the `recordDoubleClick` event to move the focus to a particular cell:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/inline-focus/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-focus/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="inline-focus.cs" %}
-{% include code-snippet/grid/how-to/inline-focus/inline-focus.cs %}
+{% include code-snippet/grid/edit/inline-focus/inline-focus.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -263,8 +262,8 @@ To implement this feature, you need to bind the `mouseup` event for the Grid and
 The following sample demonstrates how to enable editing in a single click using the `mouseup` event along with the [load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) event:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-single/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-single/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Single-click.cs" %}
 {% include code-snippet/grid/edit/inline-single/single-click.cs %}
@@ -282,8 +281,8 @@ To disable editing for a particular row, use the [actionBegin](https://help.sync
 In the below demo, the rows which are having the value for **ShipCountry** column as **France** is prevented from editing.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/inline-particular/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/inline-particular/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Inline-particular.cs" %}
 {% include code-snippet/grid/edit/inline-particular/inline-particular.cs %}

@@ -5,7 +5,7 @@
     <ejs-button id="updaterow" content="Update Row" isPrimary="true"></ejs-button>
     <ejs-button id="updatecell" content="Update Cell" isPrimary="true"></ejs-button>
 </div>
-<ejs-grid id="grid" dataSource="@ViewBag.Datasource" height="270"> 
+<ejs-grid id="grid" dataSource="@ViewBag.Datasource" height="270px"> 
 <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" validationRules="@(new { required=true})" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
@@ -47,3 +47,8 @@
         return names[Math.floor(Math.random() * names.length)];
     }
 </script>
+<style>
+    .custom {
+        margin-left: 10px;
+    }
+</style>
