@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div style="height:380px; width:450px">
+    <ejs-chatui id="chatUser" userTyping="userTyping"></ejs-chatui>
+</div>
+
+<script>
+    function userTyping() {
+        // your required action here..
+    }
+</script>

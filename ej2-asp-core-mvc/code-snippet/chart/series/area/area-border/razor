@@ -6,6 +6,7 @@
     DataSource(ViewBag.dataSource).
     Name("Gold").
     Fill("#69D2E7").
+    DashArray("5,5").
     Border(ViewBag.seriesBorder).
     Add();
 }).PrimaryXAxis(px =>

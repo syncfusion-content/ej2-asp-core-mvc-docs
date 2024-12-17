@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Component
+title: Icons in ##Platform_Name## Component | Syncfusion
 description: Learn here all about Icons in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons
@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons Library
+# Icons Library in Syncfusion<sup>&reg;</sup> controls
 
-The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons, that can be utilized in the ASP.NET MVC application.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides the set of `base64` formatted font icons, that can be utilized in the ASP.NET MVC application.
 
 ## Steps to Use Icon
 
@@ -156,7 +156,7 @@ You can customize color and size by overriding the `e-icons` class. The followin
 
 ## Third party icons integration
 
-The Syncfusion ASP.NET MVC Toolbar control supports to render custom font icons using the [prefixIcon](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html#Syncfusion_EJ2_Navigations_ToolbarItem_PrefixIcon) property. To render custom font icons define the required font CSS that provides the required font name, font size, and content for the icon.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Toolbar control supports to render custom font icons using the [prefixIcon](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html#Syncfusion_EJ2_Navigations_ToolbarItem_PrefixIcon) property. To render custom font icons define the required font CSS that provides the required font name, font size, and content for the icon.
 
 The following code explains how to render `open-iconic` icons using `prefixIcon` property.
 
@@ -183,7 +183,7 @@ The following code explains how to render `open-iconic` icons using `prefixIcon`
 
 ## HTML attribute support
 
-You can add the additional HTML attributes to the Syncfusion ASP.NET MVC Button using [HtmlAttributes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_HtmlAttributes) property. All syncfusion ASP.NET MVC controls support HTML attribute.
+You can add the additional HTML attributes to the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Button using [HtmlAttributes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_HtmlAttributes) property. All syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls support HTML attribute.
 
 The following example shows the font size customization using `HtmlAttributes` directive.
 
@@ -203,9 +203,9 @@ The following example shows the font size customization using `HtmlAttributes` d
 
 ## Using icons directly in HTML element
 
-The built-in Syncfusion icons can be rendered directly in the HTML element by defining `e-icons` class that contains the font-family and common property of font icons, and defining the [available icon's](#icons-list) class with `e-` prefix. 
+The built-in Syncfusion<sup style="font-size:70%">&reg;</sup> icons can be rendered directly in the HTML element by defining `e-icons` class that contains the font-family and common property of font icons, and defining the [available icon's](#icons-list) class with `e-` prefix. 
 
-The following code example explains the direct rendering of Syncfusion `download` icon in the span element.
+The following code example explains the direct rendering of Syncfusion<sup style="font-size:70%">&reg;</sup> `download` icon in the span element.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -217,7 +217,7 @@ The following code example explains the direct rendering of Syncfusion `download
 
 ## Icons list
 
-The complete pack of Syncfusion ASP.NET MVC icons is listed in the following table. The corresponding icon content can be referred to the content section.
+The complete pack of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC icons is listed in the following table. The corresponding icon content can be referred to the content section.
 
 <!-- markdownlint-disable MD033 -->
 

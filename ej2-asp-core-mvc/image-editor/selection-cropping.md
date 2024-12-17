@@ -141,7 +141,7 @@ CroppingEventArgs.endPoint - The x and y coordinates of an end point as ImageEdi
 
 CroppingEventArgs.cancel - To cancel the cropping action.
 
-## Maintaining Original Image Size During Cropping
+## Maintaining original image size during cropping
 
 In the image editor, when an image is cropped, it is usually enlarged or scaled to improve visibility within the user interface. If you want to prevent this scaling and maintain the original cropping size, you can bind to the ‘cropping’ event and set the preventScaling value to true. This not only keeps the image size consistent during cropping but also ensures that the saved image retains its original cropping size without being enlarged.
 
@@ -172,7 +172,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-cropping.jpg)
 
-## Locking Selection Area During Cropping
+## Locking selection area during cropping
 
 When selecting an area for cropping, users can typically resize the selection from all corners and edges. If you want to prevent the `resizing` of the selection area, you can bind to the resizing event and set cancel to true. This will lock the selection area, preventing any adjustments to its size.
 
@@ -203,7 +203,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-lock-selection.jpg)
 
-## Cropping with Custom Ratio Selection
+## Cropping with custom ratio selection
 
 Users can perform cropping either through the toolbar or by using our public methods. While predefined ratio selections are available in the toolbar, users can also crop with custom ratios using our public method, `select` Regardless of the ratio type used, the selection will adhere to the specified ratio, even when resizing the selection area.
 
