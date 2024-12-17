@@ -23,14 +23,14 @@ To enable in-line editing in the grid component, you need to set the [editSettin
 {% endhighlight %}
 {% endtabs %}
 
-![Inline Editing](../../images/editing/inline-editing.gif)
+![Inline Editing](../images/editing/inline-editing.gif)
 
 > * Normal edit mode is default mode of editing.
 > * When enabling editing, it is necessary to set the `isPrimaryKey` property value to **true** for the unique column.
 
 ## Automatically update a specific column based on another column edited value
 
-You can automatically update the value of a column based on the edited value of another column using Cell Edit Template feature. This feature is useful when you want to dynamically calculate and update a column's value in real-time based on the changes made in another related column. To enable this functionality, define the `editType` of the column to specify the type of editor used for editing the column, and provide an object for the `edit` property to customize the editing behavior. 
+You can automatically update the value of a column based on the edited value of another column using cell edit template feature. This feature is useful when you want to dynamically calculate and update a column's value in real-time based on the changes made in another related column. To enable this functionality, define the `editType` of the column to specify the type of editor used for editing the column, and provide an object for the `edit` property to customize the editing behavior. 
 
 In the following example, the **TotalCost** column value is updated based on changes to the **UnitPrice** and **UnitInStock** columns during batch editing.
 
@@ -43,7 +43,7 @@ In the following example, the **TotalCost** column value is updated based on cha
 {% endhighlight %}
 {% endtabs %}
 
-![Automatically update](../../images/editing/inline-automatically.gif)
+![Automatically update](../images/editing/inline-automatically.gif)
 
 ## Cancel edit based on condition
 
@@ -62,7 +62,7 @@ In the below demo, prevent the CRUD operation based on the **Role** column value
 {% endhighlight %}
 {% endtabs %}
 
-![Cancel edit based on condition](../../images/editing/inline-cancel.gif)
+![Cancel edit based on condition](../images/editing/inline-cancel.gif)
 
 ## Perform CRUD action programmatically
 
@@ -89,7 +89,7 @@ Performing CRUD actions programmatically refers to the ability to create, read, 
 {% endhighlight %}
 {% endtabs %}
 
-![Perform CRUD action programmatically](../../images/editing/inline-curd.png)
+![Perform CRUD action programmatically](../images/editing/inline-curd.png)
 
 ## Show confirmation dialog while deleting
 
@@ -106,7 +106,7 @@ To enable the confirmation dialog for the delete operation in the Grid, you can 
 {% endhighlight %}
 {% endtabs %}
 
-![Show confirmation dialog while deleting](../../images/editing/inline-show-confirmation.png)
+![Show confirmation dialog while deleting](../images/editing/inline-show-confirmation.png)
 
 > * The [showDeleteConfirmDialog](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) supports all type of edit modes.
 
@@ -127,7 +127,7 @@ Here's an example of how to set a default value for a column:
 {% endhighlight %}
 {% endtabs %}
 
-![Display default value for columns while adding](../../images/editing/inline-default-value.png)
+![Display default value for columns while adding](../images/editing/inline-default-value.png)
 
 ## Delete multiple rows
 
@@ -148,7 +148,7 @@ To delete multiple selected records in the grid, first you need to select multip
 {% endhighlight %}
 {% endtabs %}
 
-![Using the inbuilt toolbar delete option](../../images/editing/inline-multiple-rows.gif)
+![Using the inbuilt toolbar delete option](../images/editing/inline-multiple-rows.gif)
 
 >* Also delete the selected records using keyboard shortcut key **delete**.
 
@@ -185,7 +185,7 @@ You can delete multiple rows programmatically by using following method.
 {% endhighlight %}
 {% endtabs %}
 
-![Using method](../../images/editing/inline-delete-method.gif)
+![Using method](../images/editing/inline-delete-method.gif)
 
 ## Adding a new row at the bottom of the grid
 
@@ -204,7 +204,7 @@ Here's an example of how to enable adding new rows at the bottom of the grid:
 {% endhighlight %}
 {% endtabs %}
 
-![Adding a new row at the bottom of the grid](../../images/editing/inline-poistion.png)
+![Adding a new row at the bottom of the grid](../images/editing/inline-poistion.png)
 
 >* Add [newRowPostion](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) is supported for **Normal** and **Batch** editing modes.
 >* If you set [newRowPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) as **Bottom**, the grid will display a blank row form at the bottom by default, allowing you to enter data for the new record. However, when the data is saved or updated, it will be inserted at the top of the grid. 
@@ -224,7 +224,7 @@ The following sample demonstrates how to add a new record continuously using `sh
 {% endhighlight %}
 {% endtabs %}
 
-![Show add new row always in grid](../../images/editing/inline-top-position.png)
+![Show add new row always in grid](../images/editing/inline-top-position.png)
 
 > * To save the newly added records, you can either hit the **Enter** key or click on the **Update** button located on the toolbar after filling in the new add form.
 
@@ -251,7 +251,7 @@ Here's an example of how to use the `recordDoubleClick` event to move the focus 
 {% endhighlight %}
 {% endtabs %}
 
-![Move the focus to a particular cell](../../images/editing/inline-move-focus.gif)
+![Move the focus to a particular cell](../images/editing/inline-move-focus.gif)
 
 ## Enable editing in single click
 
@@ -270,7 +270,7 @@ The following sample demonstrates how to enable editing in a single click using 
 {% endhighlight %}
 {% endtabs %}
 
-![Enable editing in single click](../../images/editing/inline-single-click.gif)
+![Enable editing in single click](../images/editing/inline-single-click.gif)
 
 ## Disable editing for a particular row
 
@@ -289,4 +289,4 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% endhighlight %}
 {% endtabs %}
 
-![Disable editing for a particular row](../../images/editing/inline-particular-row.gif)
+![Disable editing for a particular row](../images/editing/inline-particular-row.gif)
