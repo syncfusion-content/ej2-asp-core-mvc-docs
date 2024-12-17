@@ -1,3 +1,7 @@
+<div style="padding-bottom: 20px; display: flex">
+   <label style="margin-right:5px;font-weight: bold;"> Enable/Disable show delete confirmation dialog</label>
+   @Html.EJS().Switch("switch").Change("toggleShowDeleteConfirmDialog").Render()
+</div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -6,3 +10,9 @@
     col.Field("ShipName").HeaderText("Ship Name").Width("150").ValidationRules(new { required = "true"}).Add();
     col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").ValidationRules(new { required = "true"}).Add();
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+<script>
+    function toggleShowDeleteConfirmDialog(args) {
+        var grid=document.getElementById('grid').ej2_instances[0];
+        grid.editSettings.showDeleteConfirmDialog = args.checked;
+    }
+</script>

@@ -1,0 +1,17 @@
+<ejs-grid id="grid" dataSource=@ViewBag.DataSource height="400px" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="ProductID" headerText="Product ID" textAlign="Right" isPrimaryKey="true" width="100" validationRules="@(new { required=true})"></e-grid-column>
+        <e-grid-column field="ProductName" headerText="Product Name" width="120" validationRules="@(new { required=true})"></e-grid-column>
+        <e-grid-column field="UnitPrice" headerText="Unit Price" editType="numericedit" validationRules="@(new { required= true, min=1 })" edit="@(new { @params = new Syncfusion.EJ2.Inputs.NumericTextBox() { Change = "calculateTotalCost" }})" width="150" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="UnitsInStock" headerText="Units In Stock" editType="numericedit" validationRules="@(new { required= true, min=1 })" edit="@(new { @params = new Syncfusion.EJ2.Inputs.NumericTextBox() { Change = "calculateTotalCost" }})" width="150" textAlign="Right"></e-grid-column>
+        <e-grid-column field="TotalCost" headerText="Total Cost" width="150" allowEditing='false' format="C2" textAlign="Right"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+  function calculateTotalCost() {
+    var grid = document.getElementById('grid').ej2_instances[0];
+    var formElement = grid.element.querySelector('form')['ej2_instances'][0];
+    formElement.getInputElement('TotalCost').value = formElement.getInputElement('UnitPrice').value * formElement.getInputElement('UnitsInStock').value;
+  }
+</script>
