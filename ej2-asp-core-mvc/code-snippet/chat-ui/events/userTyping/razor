@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUser").UserTyping("UserTyping").Render()
+</div>
+
+<script>
+    function UserTyping() {
+        // your required action here..
+    }
+</script>

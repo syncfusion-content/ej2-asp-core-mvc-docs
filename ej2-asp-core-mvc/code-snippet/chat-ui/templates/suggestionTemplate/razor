@@ -1,0 +1,50 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="chatui-container" style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUser").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Created("onCreated").Render()
+</div>
+
+<script id="suggestionContent" type="text/x-jsrender">
+    <div class='suggestion-item active'>
+        <div class="content">${suggestion}</div>
+    </div>
+</script>
+
+<style>
+    #suggestionTemplate .e-suggestion-list li {
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    #suggestionTemplate .suggestion-item {
+        display: flex;
+        align-items: center;
+        background-color: #87b6fb;
+        color: black;
+        padding: 4px;
+        gap: 5px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    #suggestionTemplate .suggestion-item .content {
+        padding: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+
+</style>
+
+<script>
+    var chatUIObj;
+    const suggestions = ["Okay will check it", "Sounds good!"];
+    function onCreated() {
+        var chatUiEle = document.getElementById('suggestionTemplate');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+        chatUIObj.suggestions = suggestions;
+        chatUIObj.dataBind();
+    }
+</script>
