@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="chatui-container" style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUser").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Render()
+</div>
+
+<style>
+    .e-chat-ui .e-message-icon.custom-user {
+        background-color: #416fbd;
+        color: white;
+        border-radius: 5px;
+    }
+</style>
