@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Annotation in Text Search in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+title: Add Annotation in Text Search in ##Platform_Name## | Syncfusion
 description: Learn how to add rectangle annotations using search text bounds in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Retrieve Annotation Coordinates
