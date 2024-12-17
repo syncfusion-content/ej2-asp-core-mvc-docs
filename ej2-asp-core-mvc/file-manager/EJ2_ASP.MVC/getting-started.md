@@ -141,6 +141,9 @@ By default, the File Manager component  having  extra module like [NavigationPan
 In this sample demonstrates the full features of the File Manager that includes toolbar, navigation pane and details view.
 
 {% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/overview/razor %}
+{% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
 {% include code-snippet/file-manager/overview/HomeController_mvc.cs %}
 {% endhighlight %}
