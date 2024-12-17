@@ -8,17 +8,9 @@
             </e-filemanager-ajaxsettings>
         </ejs-filemanager>
     </div>
-
-    <script>
-        function onCreated() {
-            //var filemanager = document.getElementById("file").ej2_instances[0];
-            //filemanager.uploadObj.dropArea = null;
-            console.log("File Manager has been created successfully");
-        }
-    </script>
-    <style>
-        .e-empty-inner-content {
-            display: none;
-        }
-    </style>
 </div>
+<script>
+    function onCreated() {        
+        console.log("File Manager has been created successfully");
+    }
+</script>

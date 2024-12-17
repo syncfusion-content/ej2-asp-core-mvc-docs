@@ -12,19 +12,19 @@ documentation: ug
 
 ## Show or hide header
 
-You can use `showHeader` property to enable or disable the chat header. It contains the following options `headerText` and `headerIconCss`.
+You can use [showHeader](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_ShowHeader) property to enable or disable the chat header. It contains the following options [headerText](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_HeaderText) and [headerIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_HeaderIconCss).
 
 ### Setting header text
 
-You can use the `headerText` property to display the text that appears in the header, which indicates the current username or the group name providing the context for the conversation.
+You can use the [headerText](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_HeaderText) property to display the text that appears in the header, which indicates the current username or the group name providing the context for the conversation.
 
 ### Setting header icon CSS
 
-You can use the `headerIconCss` property to customize the styling of the header icon.
+You can use the [headerIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_HeaderIconCss) property to customize the styling of the header icon.
 
 ## Toolbar
 
-You can render the Chat UI toolbar items by using the `items` property in the, `<e-chatui-headertoolbar>` tag helpers.
+You can render the Chat UI toolbar items by using the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUIToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_ChatUIToolbarSettings_Items) property in the, `<e-chatui-headertoolbar>` tag helpers.
 
 ### Setting items
 
@@ -86,4 +86,4 @@ You can use the `template` property to add custom toolbar item in the Chat UI.
 
 ### Item clicked
 
-The `itemClicked` event is triggered when the header toolbar item is clicked.
+The [itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUIToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_ChatUIToolbarSettings_ItemClicked) event is triggered when the header toolbar item is clicked.
