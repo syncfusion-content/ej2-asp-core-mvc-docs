@@ -103,7 +103,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Configure messages and user
 
-You can use the `Messages` property to add messages and the `User` property to configure the current user for the chat.
+You can use the [Messages](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Messages) property to add messages and the [User](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_User) property to configure the current user for the chat.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
