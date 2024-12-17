@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.InteractiveChat
+@using Newtonsoft.Json
+
+<div class="chatui-container" style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUser").ShowTimeBreak(true).Created("onCreated").User(ViewBag.CurrentUser).Render()
+</div>
+
+<script>
+    var chatUIObj;
+    var chatMessages = @Html.Raw(JsonConvert.SerializeObject(ViewBag.ChatMessagesData));
+    chatMessages.forEach(message => {
+        message.timeStamp = new Date(message.timeStamp);
+    });
+    function onCreated() {
+        var chatUiEle = document.getElementById('chatUser');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+        chatUIObj.messages = chatMessages;
+        chatUIObj.dataBind();
+    }
+</script>
