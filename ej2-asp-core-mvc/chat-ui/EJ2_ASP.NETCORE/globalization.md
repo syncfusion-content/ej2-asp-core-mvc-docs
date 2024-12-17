@@ -21,6 +21,22 @@ The Chat UI can be localized to any culture by defining the text of the Chat UI 
 |threeUserTyping|{0}, {1}, and {2} other are typing|
 |multipleUsersTyping|{0}, {1}, and {2} others are typing|
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/globalization/localization/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Localization](images/localization.png)
+
 ## RTL
 
-RTL provides an option to switch the text direction and layout of the Chat UI control from right to left by setting the `enableRtl` property to `true`.
+RTL provides an option to switch the text direction and layout of the Chat UI control from right to left by setting the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_EnableRtl) property to `true`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/globalization/rtl/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![RTL](images/rtl.png)
