@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change The Floating Label Color Of The Textbox in ##Platform_Name## Textbox Component
+title: Change The Floating Label Color Of The Textbox in Syncfusion Textbox Component
 description: Learn here all about Change The Floating Label Color Of The Textbox in Syncfusion ##Platform_Name## Textbox component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Change The Floating Label Color Of The Textbox
@@ -15,17 +15,17 @@ You can change the floating label color of the TextBox for both `success` and `w
 
 ```CSS
 
-    /* For Success state */
-    .e-float-input.e-success label.e-float-text,
-    .e-float-input.e-success input:focus ~ label.e-float-text,
-    .e-float-input.e-success input:valid ~ label.e-float-text {
+     /* For Success state */
+    .e-float-input.e-input-group.e-success label.e-float-text,
+    .e-float-input.e-input-group.e-success input:focus ~ label.e-float-text,
+    .e-float-input.e-input-group.e-success input:valid ~ label.e-float-text {
         color: #22b24b;
     }
 
     /* For Warning state */
-    .e-float-input.e-warning label.e-float-text,
-    .e-float-input.e-warning input:focus ~ label.e-float-text,
-    .e-float-input.e-warning input:valid ~ label.e-float-text {
+    .e-float-input.e-input-group.e-warning label.e-float-text,
+    .e-float-input.e-input-group.e-warning input:focus ~ label.e-float-text,
+    .e-float-input.e-input-group.e-warning input:valid ~ label.e-float-text {
         color: #ffca1c;
     }
 
