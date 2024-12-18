@@ -11,7 +11,7 @@ documentation: ug
 
 # Add floating label to read-only textbox
 
-You can achieve floating label for read-only textboxes by adding/removing `e-label-top` and `e-label-bottom` classes to the label element
+You can programatically add or remove the value to the `readonly` TextBox.
 
 In this sample, click the update value button to fill the read-only textbox with value and float a label.
 

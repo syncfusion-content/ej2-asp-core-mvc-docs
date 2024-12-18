@@ -16,8 +16,8 @@ You can render the TextBox in three different sizes.
 Property   | Description
 ------------ | -------------
   Normal     | By default, the TextBox is rendered with normal size.
-  Small      | You need to add `e-small` class to the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_CssClass) property to render the TextBox in smaller size.
-  Bigger     | You need to add `e-bigger` class to the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_CssClass) property to render the TextBox in bigger size.
+  Small      | You need to add `e-small` class to the `cssClass` property to render the TextBox in smaller size.
+  Bigger     | You need to add `e-bigger` class to the `cssClass` property to render the TextBox in bigger size.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

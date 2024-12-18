@@ -93,7 +93,7 @@ Output be like the below.
 
 ## Multi-line input with floating label
 
-To create a multiline input using the [multiline](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_Multiline) API, it will act as a TextArea component. You can also resize the rows.
+To create a multiline input using the `multiline` API, it will act as a TextArea component. You can also resize the rows.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
