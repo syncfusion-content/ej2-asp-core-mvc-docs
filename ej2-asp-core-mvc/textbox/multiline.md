@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiline in ##Platform_Name## Textbox Component
+title: Multiline in ##Platform_Name## Syncfusion Textbox Component
 description: Learn here all about Multiline in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Multiline
@@ -15,7 +15,7 @@ This feature allows the textbox to accept one or more lines of text like address
 
 ## Create multiline textbox
 
-You can convert the default textbox into the multiline textbox by setting the [multiline](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_Multiline) API value as true or pass HTML5 textarea as element to the textbox.
+You can convert the default textbox into the multiline textbox by setting the `multiline` API value as true or pass HTML5 textarea as element to the textbox.
 
 N> The multiline textbox allows you to resize it in vertical direction alone.
 
@@ -50,7 +50,7 @@ Output be like the below.
 
 ## Implementing floating label
 
-You can achieve the floating label behavior in the multiline textbox by setting [floatLabelType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_FloatLabelType) as 'Auto'. The placeholder text act as floating label to the multiline textbox. You can provide the placeholder text to the multiline textbox either by using the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_Placeholder) property or placeholder attribute.
+You can achieve the floating label behavior in the multiline textbox by setting `floatLabelType` as 'Auto'. The placeholder text act as floating label to the multiline textbox. You can provide the placeholder text to the multiline textbox either by using the `placeholder` property or placeholder attribute.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
