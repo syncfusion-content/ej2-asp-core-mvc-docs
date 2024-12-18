@@ -78,9 +78,6 @@ The following example demonstrates the uploadSettings customizations.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/upload-feature-cs1/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/upload-feature-cs1/HomeController_mvc.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -88,9 +85,6 @@ The following example demonstrates the uploadSettings customizations.
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/upload-feature-cs1/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/upload-feature-cs1/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
