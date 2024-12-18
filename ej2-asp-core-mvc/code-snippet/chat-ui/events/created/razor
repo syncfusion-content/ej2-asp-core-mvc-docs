@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUser").Created("onCreated").Render()
+</div>
+
+<script>
+    function onCreated() {
+        // your required action here..
+    }
+</script>
