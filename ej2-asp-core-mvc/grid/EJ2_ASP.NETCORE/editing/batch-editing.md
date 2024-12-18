@@ -27,7 +27,7 @@ Here's an example how to enable batch editing in the ASP.NET Core grid component
 {% endhighlight %}
 {% endtabs %}
 
-![Batch editing](../../images/editing/batch-edit.gif)
+![Batch editing](../images/editing/batch-edit.gif)
 
 ## Automatically update the column based on another column edited value
 
@@ -44,7 +44,7 @@ In the following example, the **TotalCost** column value is updated based on cha
 {% endhighlight %}
 {% endtabs %}
 
-![Automatically update](../../images/editing/batch-auto.gif)
+![Automatically update](../images/editing/batch-auto.gif)
 
 > * You can utilize the `updateCell` method to update cells in batch mode.
 
@@ -69,7 +69,7 @@ In the below demo, prevent the CRUD operation based on the **Role** column value
 {% endhighlight %}
 {% endtabs %}
 
-![Cancel edit based on condition](../../images/editing/batch-cancel.gif)
+![Cancel edit based on condition](../images/editing/batch-cancel.gif)
 
 ## Adding a new row at the bottom of the grid
 
@@ -92,7 +92,7 @@ Here's an example that demonstrates how to enable adding new rows at the bottom 
 {% endhighlight %}
 {% endtabs %}
 
-![Adding a new row at the bottom of the grid](../../images/editing/batch-position.png)
+![Adding a new row at the bottom of the grid](../images/editing/batch-position.png)
 
 ## Confirmation dialog
 
@@ -115,7 +115,7 @@ Here's an example that demonstrates how to enable/disable the confirmation dialo
 {% endhighlight %}
 {% endtabs %}
 
-![Confirmation dialog](../../images/editing/batch-confirmation-dialog.gif)
+![Confirmation dialog](../images/editing/batch-confirmation-dialog.gif)
 
 ## How to make editing in single click and arrow keys
 
@@ -136,7 +136,7 @@ Here's an example that demonstrates how to achieve both single-click editing and
 {% endhighlight %}
 {% endtabs %}
 
-![single click and arrow keys](../../images/editing/batch-single-click.gif)
+![single click and arrow keys](../images/editing/batch-single-click.gif)
 
 ## Disable editing for a particular cell
 
@@ -155,7 +155,7 @@ Here's an example demonstrating how you can disable editing for cells containing
 {% endhighlight %}
 {% endtabs %}
 
-![Disable editing for a particular cell](../../images/editing/batch-particular.gif)
+![Disable editing for a particular cell](../images/editing/batch-particular.gif)
 
 ## Save or update the changes immediately
 
@@ -180,4 +180,4 @@ Here's an example that demonstrates how to achieve immediate saving or updating 
 {% endhighlight %}
 {% endtabs %}
 
-![Save or update the changes immediately](../../images/editing/batch-save.gif)
+![Save or update the changes immediately](../images/editing/batch-save.gif)
