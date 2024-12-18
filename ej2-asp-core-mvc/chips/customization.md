@@ -176,9 +176,9 @@ Outline chip has the border with the background transparent. It can be set using
 
 ## Template
 
-The [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_Template) property of the Chips control allows users to fully customize the layout and design of each chip. By using the `Template` property, users can include custom HTML elements, such as links, icons, or additional content.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+The [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_Template) property of the Chips control allows users to fully customize the layout and design of each chip. By using the `Template` property, users can include custom HTML elements, such as links, icons, or additional content.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -187,6 +187,8 @@ The [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.bu
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_Template) property of the Chips control allows users to fully customize the layout and design of each chip. By using the `Template` property, users can include custom HTML elements, such as links, icons, or additional content.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
