@@ -1,0 +1,22 @@
+@using Syncfusion.EJ2.InteractiveChat;
+@using Newtonsoft.Json
+
+<div style="height:380px; width:450px">
+    <ejs-chatui id="chatUser" created="onCreated" showTimeBreak=true>
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+    </ejs-chatui>
+</div>
+
+<script>
+    var chatUIObj;
+    var chatMessages = @Html.Raw(JsonConvert.SerializeObject(Model.ChatMessagesData));
+    chatMessages.forEach(message => {
+        message.timeStamp = new Date(message.timeStamp);
+    });
+    function onCreated() {
+        var chatUiEle = document.getElementById('chatUser');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+        chatUIObj.messages = chatMessages;
+        chatUIObj.dataBind();
+    }
+</script>

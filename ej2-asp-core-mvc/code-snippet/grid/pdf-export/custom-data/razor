@@ -1,27 +1,25 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport().ToolbarClick("toolbarClick").Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).ToolbarClick("toolbarClick").Height("220px").Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
-
-}).AllowPaging().Toolbar(new List<string>() { "PdfExport" }).Render()
+   col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("110").Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+}).AllowPaging(true).Toolbar(new List<string>() { "PdfExport" }).Render()
 
 <script>
     function toolbarClick(args) {
-        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        let grid = document.getElementById("Grid").ej2_instances[0];
         if (args.item.id === 'Grid_pdfexport') {
-            var data = [
-                { OrderID: "100", CustomerID: "Vinet", Freight: "2.00", OrderDate: new Date() },
-                { OrderID: "101", CustomerID: "Hanar", Freight: "2.01", OrderDate: new Date() },
-                { OrderID: "102", CustomerID: "Mega", Freight: "4.48", OrderDate: new Date() },
-                { OrderID: "103", CustomerID: "Sam", Freight: "19.23", OrderDate: new Date() }
+            let data = [
+                { OrderID: "100", CustomerID: "Vinet", ShipCity: "London", ShipName: "Suprêmes délices" },
+                { OrderID: "101", CustomerID: "Hanar", ShipCity: "USA", ShipName: "Victuailles en stock" },
+                { OrderID: "102", CustomerID: "Mega", ShipCity: "Münster", ShipName: "Toms Spezialitäten" },
+                { OrderID: "103", CustomerID: "Sam", ShipCity: "Lyon", ShipName: "Rio de Janeiro" }
             ];
-            var pdfExportProperties = {
+            let pdfExportProperties = {
                 dataSource: data
             };
-            gridObj.pdfExport(pdfExportProperties);
+            grid.pdfExport(pdfExportProperties);
         }
     }
 </script>
