@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change The Color Of The Textbox Based On Its Value in ##Platform_Name## Textbox Component
+title: Change The Textbox Color Based On Its Value in ##Platform_Name## Syncfusion Textbox Component
 description: Learn here all about Change The Color Of The Textbox Based On Its Value in Syncfusion ##Platform_Name## Textbox component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Change The Color Of The Textbox Based On Its Value
