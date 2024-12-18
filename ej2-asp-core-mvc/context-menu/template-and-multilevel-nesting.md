@@ -1,19 +1,11 @@
 ---
-
 layout: post
-
 title: Template And Multilevel Nesting in ##Platform_Name## Context Menu Control | Syncfusion
-
 description: Learn here all about Template And Multilevel Nesting in Syncfusion ##Platform_Name## Context Menu control of Syncfusion Essential JS 2 and more.
-
 platform: ej2-asp-core-mvc
-
 control: Template And Multilevel Nesting
-
 publishingplatform: ##Platform_Name##
-
 documentation: ug
-
 ---
 
 # Template and Multilevel nesting
@@ -25,39 +17,24 @@ The [ItemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-
 {% highlight cshtml tabtitle="CSHTML" %}
-
 {% include code-snippet/context-menu/template/tagHelper %}
-
 {% endhighlight %}
-
 {% highlight c# tabtitle="Template.cs" %}
-
 {% include code-snippet/context-menu/template/template.cs %}
-
 {% endhighlight %}
-
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-
 {% highlight razor tabtitle="CSHTML" %}
-
 {% include code-snippet/context-menu/template/razor %}
-
 {% endhighlight %}
-
 {% highlight c# tabtitle="Template.cs" %}
-
 {% include code-snippet/context-menu/template/template.cs %}
-
 {% endhighlight %}
-
 {% endtabs %}
-
 {% endif %}
 
 ## Template
@@ -67,40 +44,27 @@ The ContextMenu items can be customized by using the [`Render`](https://help.syn
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-
 {% highlight cshtml tabtitle="CSHTML" %}
-
 {% include code-snippet/context-menu/target/tagHelper %}
-
 {% endhighlight %}
-
 {% highlight c# tabtitle="Target.cs" %}
-
 {% include code-snippet/context-menu/target/target.cs %}
-
 {% endhighlight %}
-
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-
 {% highlight razor tabtitle="CSHTML" %}
-
 {% include code-snippet/context-menu/target/razor %}
-
 {% endhighlight %}
-
 {% highlight c# tabtitle="Target.cs" %}
-
 {% include code-snippet/context-menu/target/target.cs %}
-
 {% endhighlight %}
-
 {% endtabs %}
-
 {% endif %}
+
+
 
 ## Multilevel nesting
 
@@ -117,40 +81,27 @@ The Multiple level nesting supports in ContextMenu. It can be achieved by mappin
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-
 {% highlight cshtml tabtitle="CSHTML" %}
-
 {% include code-snippet/context-menu/nesting/tagHelper %}
-
 {% endhighlight %}
-
 {% highlight c# tabtitle="Nesting.cs" %}
-
 {% include code-snippet/context-menu/nesting/nesting.cs %}
-
 {% endhighlight %}
-
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-
 {% highlight razor tabtitle="CSHTML" %}
-
 {% include code-snippet/context-menu/nesting/razor %}
-
 {% endhighlight %}
-
 {% highlight c# tabtitle="Nesting.cs" %}
-
 {% include code-snippet/context-menu/nesting/nesting.cs %}
-
 {% endhighlight %}
-
 {% endtabs %}
-
 {% endif %}
+
+
 
 ## See Also
 
