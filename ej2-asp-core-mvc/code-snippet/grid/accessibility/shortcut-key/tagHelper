@@ -1,0 +1,70 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="315" allowGrouping="true" keyPressed="keyPressed" toolbar="@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" })">
+  <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
+  <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" ></e-grid-editSettings>
+  <e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120" isPrimaryKey="true"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+    <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+  </e-grid-columns>
+</ejs-grid>
+<script>
+    function keyPressed(e) {
+        var key = e.key.toLowerCase();
+        var grid = document.getElementById("Grid").ej2_instances[0]; 
+
+        switch (key) {
+            case 'n':
+                e.preventDefault();
+                grid.addRecord();
+                break;
+            case 's': 
+                if (e.ctrlKey) {
+                    e.preventDefault();
+                    grid.endEdit();
+                }
+                break;
+            case 'd': 
+                if (e.ctrlKey) {
+                    e.preventDefault();
+                    grid.deleteRecord();
+                }
+                break;
+            case 'a': 
+                if (e.ctrlKey) {
+                    e.preventDefault();
+                    grid.selectRowsByRange(0);
+                }
+                break;
+            case 'g': 
+                if (e.ctrlKey) {
+                    e.preventDefault();
+                    grid.groupColumn('CustomerID');
+                }
+                break;
+            case 'enter': 
+                e.preventDefault();
+                e.cancel = true;
+                grid.refreshColumns();
+                break;
+            case 'insert':
+                e.preventDefault();
+                e.cancel = true;
+                break;
+            case 'delete':
+                e.preventDefault();
+                e.cancel = true;
+                break;
+            case 'f2': 
+                e.preventDefault();
+                e.cancel = true;
+                break;
+            case '" "':
+                if (e.ctrlKey) {
+                    e.preventDefault();
+                    e.cancel = true;
+                }
+                break;
+              // Add more custom shortcuts as needed
+        }
+    }
+</script>
