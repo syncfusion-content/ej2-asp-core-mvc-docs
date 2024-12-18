@@ -38,7 +38,7 @@ With chunk upload, the pause and resume options gives users enhanced control ove
 
 >Note: 
 >1. Chunk upload will work when the selected file size is greater than the specified chunk size. Otherwise, it upload the files normally. 
->2. The pause and resume features available only when the chunk upload is enabled.
+>2. The pause and resume features are available only when the chunk upload is enabled.
 >3. To handle chunk upload in server side, an additional argument of `size` with `long` type must be passed to the Upload method in the controller. Refer to the [Physical File Provider](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider/blob/master/Controllers/FileManagerController.cs#L75) example on how this can be implemented.
 
 ## Auto Upload
