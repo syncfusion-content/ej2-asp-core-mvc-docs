@@ -1,26 +1,24 @@
 @{
     string[] exportGrids = { "FirstGrid", "SecondGrid" };
 }
-@Html.EJS().Grid("FirstGrid").DataSource((IEnumerable<object>)ViewBag.FirstGridData).AllowPdfExport().ToolbarClick("toolbarClick").Columns(col =>
+@Html.EJS().Grid("FirstGrid").DataSource((IEnumerable<object>)ViewBag.FirstGridData).AllowPdfExport(true).ToolbarClick("toolbarClick").Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("ShipName").HeaderText("Ship Name").Width(150).Add();
-   col.Field("ShipCountry").HeaderText("Ship Country").Width(150).Add();
+   col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width(100).Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width(110).Add();
 
-}).AllowPaging().ExportGrids(exportGrids).Toolbar(new List<string>() { "PdfExport" }).Render()
+}).ExportGrids(exportGrids).Toolbar(new List<string>() { "PdfExport" }).Render()
 
-@Html.EJS().Grid("SecondGrid").DataSource((IEnumerable<object>)ViewBag.SecondGridData).AllowPdfExport().Columns(col =>
+@Html.EJS().Grid("SecondGrid").DataSource((IEnumerable<object>)ViewBag.SecondGridData).AllowPdfExport(true).Columns(col =>
 {
-  col.Field("EmployeeID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-  col.Field("FirstName").Width("140").Add();
-  col.Field("City").Width("120").Add();
-  col.Field("Country").Width("140").Add();
-
-}).AllowPaging().Render()
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("FirstName").HeaderText("First Name").Width("100").Add();
+  col.Field("LastName").HeaderText("LastName").Width("100").Add();
+  col.Field("City").HeaderText("City").Width("100").Add();
+}).Render()
 
 <script>
-
     function toolbarClick(args) {
     var firstGrid = document.getElementById("FirstGrid").ej2_instances[0];
     if (args.item.id === 'FirstGrid_pdfexport') {
@@ -28,7 +26,6 @@
             multipleExport: { type: 'NewPage' }
         };
         firstGrid.pdfExport(appendPdfExportProperties, true);
+      }
     }
-    }
-
 </script>

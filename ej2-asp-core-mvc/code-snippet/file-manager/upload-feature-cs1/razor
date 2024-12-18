@@ -1,0 +1,27 @@
+<div class="control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+        Url = "/Home/FileOperations",
+        GetImageUrl = "/Home/GetImage",
+        UploadUrl = "/Home/Upload",
+        DownloadUrl = "/Home/Download"
+        }).UploadSettings(new Syncfusion.EJ2.FileManager.FileManagerUploadSettings()
+        {
+        allowedExtensions = '.jpg,.png',
+        autoClose = false,
+        autoUpload = false,
+        chunkSize = 5242880,
+        minFileSize = 120,
+        maxFileSize = 73728000
+        }).Created("onCreated").Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+    function onCreated() {
+        var filemanagerInstance = document.getElementById("filemanager").ej2_instances[0];
+        // filemanagerInstance.uploadObj.dropArea = null;  // Restrict file uploads by dragging them from the local file system to the File Manager.
+    }
+</script>
