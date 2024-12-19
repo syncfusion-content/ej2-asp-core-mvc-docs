@@ -432,41 +432,25 @@ You can enable this feature by setting the `chunkSize` property in the [`openSet
 {% endif %}
 
 > This feature reduces memory usage on both the server and client, ensuring that resources are managed efficiently during data transmission. By sending smaller parts of data, it prevents connection issues that could occur with large payloads, making the transmission process more reliable. Additionally, it allows large Excel files to be loaded smoothly into the spreadsheet, providing a seamless user experience even with extensive data.
-The following code example demonstrates the client-side and server-side configuration required for handling chunk-based responses when opening an Excel file.
 
-**Client Side**:
+The following code example demonstrates the client-side and server-side configuration required for handling chunk-based responses when opening an Excel file.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
+**Client Side**:
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-<ejs-spreadsheet id="spreadsheet" openUrl="https://localhost:{port number}/Home/Open">
-    <e-spreadsheet-opensettings chunkSize="1000000" retryCount="3" retryAfterDelay="500"></e-spreadsheet-opensettings>
+<ejs-spreadsheet id="spreadsheet" openUrl="https://localhost:{port number}/Home/Open" created="created">
 </ejs-spreadsheet>
 
 <script>
+    function created() {
+        this.openSettings = { chunkSize: 1000000, retryCount: 3, retryAfterDelay: 500 }
+    }
 </script>
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("https://localhost:{port number}/Home/Open").OpenSettings(openSettings =>
-   {
-       openSettings.chunkSize(1000000);
-       openSettings.retryCount(3);
-       openSettings.retryAfterDelay(500);
-}).Render()
-<script>
-</script>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 **Server Endpoint**:
 
@@ -493,8 +477,56 @@ The [attachment](https://www.syncfusion.com/downloads/support/directtrac/general
 
 ```js
     // Specifies the service URL for processing the Excel file, converting it into a format suitable for loading in the spreadsheet.
-    openUrl = 'https://localhost:{port number}/Home/Open'
+    <ejs-spreadsheet id="spreadsheet" openUrl="https://localhost:{port number}/Home/Open">
+    </ejs-spreadsheet>
 ```
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+**Client Side**:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("https://localhost:{port number}/Home/Open").Created("created").Render()
+<script>
+    function created() {
+        this.openSettings = { chunkSize: 1000000, retryCount: 3, retryAfterDelay: 500 }
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+**Server Endpoint**:
+
+```csharp
+public IActionResult Open(IFormCollection openRequest)
+{
+    OpenRequest open = new OpenRequest();
+    if (openRequest.Files.Count > 0)
+    {
+        open.File = openRequest.Files[0];
+    }
+    Microsoft.Extensions.Primitives.StringValues chunkPayload;
+    if (openRequest.TryGetValue("chunkPayload", out chunkPayload))
+    {
+        // The chunk payload JSON data includes information essential for processing chunked responses.
+        open.ChunkPayload = chunkPayload;
+    }
+    var result = Workbook.Open(open, 150);
+    return Content(result);
+}
+```
+
+The [attachment]() includes the server endpoint code for handling chunk-based open processing. After launching the server endpoint, update the `openUrl` property of the spreadsheet in the client-side sample with the server URL, as shown below.
+
+```js
+    // Specifies the service URL for processing the Excel file, converting it into a format suitable for loading in the spreadsheet.
+    @Html.EJS().Spreadsheet("spreadsheet").OpenUrl("https://localhost:{port number}/Home/Open").Render()
+```
+
+{% endif %}
 
 ### Add custom header during open
 
