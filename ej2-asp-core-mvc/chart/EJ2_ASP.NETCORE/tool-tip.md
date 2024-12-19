@@ -193,7 +193,7 @@ By default, tooltip shows information of x and y value in points. You can show m
 
 ## Enable highlight
 
-By setting the `enableHighlight` property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
+By setting the [`EnableHighlight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_EnableHighlight) property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
