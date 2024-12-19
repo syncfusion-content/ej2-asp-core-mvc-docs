@@ -1,0 +1,20 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPdfExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"PdfExport"})" allowPaging="true" allowFiltering="true"> 
+<e-grid-pagesettings pageCount="5" pageSize="5"></e-grid-pagesettings>
+    <e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
+    <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function toolbarClick(args) {
+                    let grid = document.getElementById("Grid").ej2_instances[0];
+                      if (args.item.id === 'Grid_pdfexport') {
+                        let filteredRecords = grid.getFilteredRecords();
+                        let exportProperties = {
+                            dataSource: filteredRecords
+                        };
+                        grid.pdfExport(exportProperties);
+                    }
+                }
+</script>
