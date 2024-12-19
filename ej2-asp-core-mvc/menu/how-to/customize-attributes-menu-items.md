@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize HTML Attributes for Menu Items in ##Platform_Name## Menu Component | Syncfusion
+title: HTML Attributes for Menu Items in ##Platform_Name## Menu | Syncfusion
 description: Learn here all about Customize HTML Attributes for Menu Items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Mnemonic Ui In Menuitem
