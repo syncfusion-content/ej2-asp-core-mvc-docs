@@ -10,7 +10,7 @@ documentation: ug
 
 # Customize HTML Attributes for Menu Items in ##Platform_Name## Menu control
 
-The [htmlAttributes](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu_HtmlAttributes.html) property in the Context Menu component allows you to add custom HTML attributes to the root element of the menu. This feature is particularly useful for enhancing accessibility, adding custom data attributes, or including any additional properties that can be leveraged for styling or functionality.
+The [htmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_HtmlAttributes) property in the Context Menu component allows you to add custom HTML attributes to the root element of the menu. This feature is particularly useful for enhancing accessibility, adding custom data attributes, or including any additional properties that can be leveraged for styling or functionality.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
