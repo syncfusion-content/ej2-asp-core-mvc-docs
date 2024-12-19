@@ -9,11 +9,6 @@
 <script>
     function toolbarClick(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
-        if (args.item.id === 'grid_excelexport') {
-            grid.excelExport();
-        }
-        else { 
-            grid.csvExport();
-        }
+        args.item.id === 'grid_excelexport' ? grid.excelExport(): grid.csvExport();
     }
 </script>

@@ -100,7 +100,7 @@
 
 <script>
     function toolbarClick(args) {
-        if (args['item'].id === 'Grid_excelexport') {
+        if (args['item'].id === 'grid_excelexport') {
             this.excelExport({
                 hierarchyExportMode: "Expanded"
             });

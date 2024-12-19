@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Excel exporting in ASP.NET Core Grid component
+# Excel exporting in ASP.NET Core Grid component 
 
 The Excel or CSV exporting feature in the ASP.NET Core Grid component allows you to export the Grid data to an Excel or CSV document. This can be useful when you need to share or analyze the data in a spreadsheet format.
 

@@ -49,6 +49,8 @@ The following example shows server configuration using ASP.NET Core Controller A
 {% endhighlight %}
 {% endtabs %}
 
+![Server configuration](../../images/excel-exporting/excel-export-server.png)
+
 N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/MVC-EJ2-Grid-server-side-exporting).
 
 ## CSV Export in server side
@@ -68,6 +70,8 @@ Here's an example of how you can accomplish CSV export on the server-side:
 {% endhighlight %}
 {% endtabs %}
 
+![CSV Export in server side](../../images/excel-exporting/export-server-csv.png)
+
 ## Rotate a header text in the exported grid
 
 The Grid provides support to customize the column header styles, including changing text orientation, font color, and other visual aspects, in the exported Excel file on the server-side. This feature is particularly useful when you want to enhance the appearance of the exported data and create a unique representation of the Grid in the Excel document.
@@ -84,6 +88,8 @@ In the following demo, using the `HeaderCellRotate` method of the `GridExcelExpo
 {% include code-snippet/grid/excel-export/server-rotate-header/server-rotate-header.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Rotate a header text in the exported grid](../../images/excel-exporting/export-server-rotate.png)
 
 ## Limitations
 

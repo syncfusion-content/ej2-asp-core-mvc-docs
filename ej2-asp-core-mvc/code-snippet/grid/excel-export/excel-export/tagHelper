@@ -1,4 +1,4 @@
-<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" height="348px" toolbarClick="toolbarClick" toolbar="@(new List<string>() { "ExcelExport","CsvExport" })" >
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" height="348px" toolbarClick="toolbarClick" toolbar="@(new List<string>() { "ExcelExport","CsvExport" })">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
@@ -10,11 +10,6 @@
 <script>
     function toolbarClick(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
-        if (args.item.id === 'grid_excelexport') {
-            grid.excelExport();
-        }
-        else { 
-            grid.csvExport();
-        }
+        args.item.id === 'grid_excelexport' ? grid.excelExport(): grid.csvExport();
     }
 </script>

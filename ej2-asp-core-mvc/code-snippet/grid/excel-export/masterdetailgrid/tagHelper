@@ -1,3 +1,5 @@
+@using System.Text.Json;
+
 <div>
    <B>Master Grid</B>
     <ejs-grid id="masterGrid" dataSource="@ViewBag.customerDataSource" height="273px" allowExcelExport="true" selectedRowIndex="0" toolbar="@(new List<string>() {"ExcelExport"})" rowSelected="selected" toolbarClick="toolbarClick">

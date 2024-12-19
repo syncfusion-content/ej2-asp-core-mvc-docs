@@ -5,14 +5,18 @@ public ActionResult Index()
 }
 public ActionResult CsvGridExport(string gridModel)
 {
-    GridExcelExport exp = new GridExcelExport();
-    Grid gridProperty = ConvertGridObject(gridModel);
-    return exp.CsvExport<OrdersDetails>(gridProperty, OrdersDetails.GetAllRecords());
+    GridExcelExport excelExporter = new GridExcelExport();
+    Grid gridProperties = ConvertGridObject(gridModel);
+    return excelExporter.CsvExport<OrdersDetails>(gridProperties, OrdersDetails.GetAllRecords());
 }
 private Grid ConvertGridObject(string gridProperty)
 {
     Grid GridModel = (Grid)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(Grid));
-    GridColumnModel cols = (GridColumnModel)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(GridColumnModel));
-    GridModel.Columns = cols.columns;
+    GridColumnModel gridColumns = (GridColumnModel)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(GridColumnModel));
+    GridModel.Columns = gridColumns.columns;
     return GridModel;
+}
+public class GridColumnModel
+{
+    public List<GridColumn> columns { get; set; }
 }

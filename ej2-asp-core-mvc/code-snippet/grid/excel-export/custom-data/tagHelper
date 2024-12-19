@@ -12,7 +12,7 @@
         var grid = document.getElementById("grid").ej2_instances[0];
         if (args.item.id === 'grid_excelexport') {
             var excelExportProperties = {
-                dataSource:@Html.Raw(Json.Serialize(ViewBag.OrderDetails))
+                dataSource:@Html.Raw(Json.Serialize(ViewBag.OrderData))
             };
             grid.excelExport(excelExportProperties);
         }
