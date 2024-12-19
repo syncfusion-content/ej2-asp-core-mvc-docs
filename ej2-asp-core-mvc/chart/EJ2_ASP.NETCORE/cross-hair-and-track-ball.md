@@ -98,7 +98,7 @@ The [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts
 
 **Snap to data**
 
-Enabling the `snapToData` property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
+Enabling the [`SnapToData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartCrosshairSettings.html#Syncfusion_EJ2_Charts_ChartCrosshairSettings_SnapToData) property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
