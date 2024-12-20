@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="chatui-container" style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUser").HeaderToolbar(new ChatUIToolbarSettings() { Items = ViewBag.HeaderToolbar }).Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Render()
+</div>
+
+<style>
+    .custom-btn .e-user::before {
+        color: white;
+        font-size: 15px;
+    }
+
+    .custom-btn.e-toolbar-item button.e-tbar-btn {
+        border: 2px solid white;
+    }
+</style>

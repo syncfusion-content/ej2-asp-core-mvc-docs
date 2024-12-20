@@ -99,11 +99,13 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Text.Json;
 using WebApplication4.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
-using Newtonsoft.Json;
+using Microsoft.AspNetCore.Cors;
 using Syncfusion.EJ2.FileManager.Base;
 using Syncfusion.EJ2.FileManager.PhysicalFileProvider;
 
@@ -115,7 +117,7 @@ namespace WebApplication4.Controllers
         public string basePath;
         string root = "wwwroot\\Files";
 
-        public HomeController(IHostingEnvironment hostingEnvironment)
+        public HomeController(IWebHostEnvironment hostingEnvironment)
         {
             this.basePath = hostingEnvironment.ContentRootPath;
             this.operation = new PhysicalFileProvider();
@@ -159,7 +161,7 @@ namespace WebApplication4.Controllers
                     return this.operation.ToCamelCase(this.operation.Search(args.Path, args.SearchString, args.ShowHiddenItems, args.CaseSensitive));
                 case "rename":
                     // renames a file or folder.
-                    return this.operation.ToCamelCase(this.operation.Rename(args.Path, args.Name, args.NewName));
+                    return this.operation.ToCamelCase(this.operation.Rename(args.Path, args.Name, args.NewName, false, args.ShowFileExtension, args.Data));
             }
             return null;
         }
@@ -167,14 +169,50 @@ namespace WebApplication4.Controllers
         // uploads the file(s) into a specified path
         public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action)
         {
-            FileManagerResponse uploadResponse;
-            uploadResponse = operation.Upload(path, uploadFiles, action, null);
-            if (uploadResponse.Error != null)
+            try
             {
+                FileManagerResponse uploadResponse;
+                foreach (var file in uploadFiles)
+                {
+                    var folders = (file.FileName).Split('/');
+                    // checking the folder upload
+                    if (folders.Length > 1)
+                    {
+                        for (var i = 0; i < folders.Length - 1; i++)
+                        {
+                            string newDirectoryPath = Path.Combine(this.basePath + path, folders[i]);
+                            if (Path.GetFullPath(newDirectoryPath) != (Path.GetDirectoryName(newDirectoryPath) + Path.DirectorySeparatorChar + folders[i]))
+                            {
+                                throw new UnauthorizedAccessException("Access denied for Directory-traversal");
+                            }
+                            if (!Directory.Exists(newDirectoryPath))
+                            {
+                                this.operation.ToCamelCase(this.operation.Create(path, folders[i]));
+                            }
+                            path += folders[i] + "/";
+                        }
+                    }
+                }
+                uploadResponse = operation.Upload(path, uploadFiles, action, size, null);
+                if (uploadResponse.Error != null)
+                {
+                    Response.Clear();
+                    Response.ContentType = "application/json; charset=utf-8";
+                    Response.StatusCode = Convert.ToInt32(uploadResponse.Error.Code);
+                    Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = uploadResponse.Error.Message;
+                }
+            }
+            catch (Exception e)
+            {
+                ErrorDetails er = new ErrorDetails();
+                er.Message = e.Message.ToString();
+                er.Code = "417";
+                er.Message = "Access denied for Directory-traversal";
                 Response.Clear();
                 Response.ContentType = "application/json; charset=utf-8";
-                Response.StatusCode = Convert.ToInt32(uploadResponse.Error.Code);
-                Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = uploadResponse.Error.Message;
+                Response.StatusCode = Convert.ToInt32(er.Code);
+                Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = er.Message;
+                return Content("");
             }
             return Content("");
         }
@@ -182,7 +220,11 @@ namespace WebApplication4.Controllers
         // downloads the selected file(s) and folder(s)
         public IActionResult Download(string downloadInput)
         {
-            FileManagerDirectoryContent args = JsonConvert.DeserializeObject<FileManagerDirectoryContent>(downloadInput);
+            var options = new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            };
+            FileManagerDirectoryContent args = JsonSerializer.Deserialize<FileManagerDirectoryContent>(downloadInput, options);
             return operation.Download(args.Path, args.Names, args.Data);
         }
 

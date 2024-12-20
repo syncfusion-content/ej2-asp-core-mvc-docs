@@ -279,13 +279,13 @@ The pointers can be dragged along the axis line by clicking and dragging them. T
 
 ### Enabling drag functionality for a specific pointer
 
-To enable or disable the drag functionality for specific pointers along the axis line, use the `EnableDrag` property in the required pointer model.
+{% if page.publishingplatform == "aspnet-core" %}
 
-N> When the `EnableDrag` property is enabled for any individual pointer model, the `EnablePointerDrag` property becomes ineffective.
+To enable or disable the drag functionality for specific pointers along the axis line, use the `enableDrag` property in the required pointer model.
+
+N> When the `enableDrag` property is enabled for any individual pointer model, the `enablePointerDrag` property becomes ineffective.
 
 The following example demonstrates how to enable the drag functionality for multiple pointers individually.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -294,6 +294,12 @@ The following example demonstrates how to enable the drag functionality for mult
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+To enable or disable the drag functionality for specific pointers along the axis line, use the `EnableDrag` property in the required pointer model.
+
+N> When the `EnableDrag` property is enabled for any individual pointer model, the `EnablePointerDrag` property becomes ineffective.
+
+The following example demonstrates how to enable the drag functionality for multiple pointers individually.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
