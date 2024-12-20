@@ -20,7 +20,7 @@ To access Box storage programmatically, you'll need a developer account with Box
 {% if page.publishingplatform == "aspnet-core" %}
 
 **Step 2:** Create a Simple Document Editor Sample in ASP.NET Core
-zz
+
 Start by following the steps provided in this [link](../../document-editor/getting-started-core) to create a simple Document Editor sample in ASP.NET Core. This will give you a basic setup of the Document Editor component. 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

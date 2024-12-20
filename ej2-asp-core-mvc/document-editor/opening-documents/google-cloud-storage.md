@@ -15,7 +15,7 @@ To load a document from Google Cloud Storage in a Document editor, you can follo
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-**Step 1:** Create a Simple Document Editor Sample in zASP.NET Core
+**Step 1:** Create a Simple Document Editor Sample in ASP.NET Core
 
 Start by following the steps provided in this [link](../../document-editor/getting-started-core) to create a simple Document Editor sample in ASP.NET Core. This will give you a basic setup of the Document Editor component. 
 
