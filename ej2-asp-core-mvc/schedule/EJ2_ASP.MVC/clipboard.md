@@ -15,7 +15,7 @@ To activate the clipboard feature in the scheduler, simply set the [`allowClipbo
 
 >Note: The [`allowKeyboardInteraction`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowKeyboardInteraction) property must be true for proper functionality of the clipboard feature.
 
-## Cut, Copy and Paste using keyboard
+## Cut, copy and paste using keyboard
 
 The Syncfusion Schedule control supports keyboard shortcuts to streamline the process of managing appointments.
 
@@ -54,7 +54,7 @@ To use these shortcuts, simply click on the appointment and press **Ctrl+C** to 
 
 >Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
 
-## Cut, Copy, and Paste using Context Menu
+## Cut, copy, and paste using context menu
 
 You can programmatically manage appointments by using the public methods **cut**, **copy**, and **paste**. These methods allow you to perform the same actions as the context menu or external buttons.
 
@@ -62,9 +62,9 @@ Utilize these public methods to manage appointments programmatically in Syncfusi
 
 | Method | Parameters                     | Description                                                                                     |
 |--------|--------------------------------|-------------------------------------------------------------------------------------------------|
-| [`copy`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Copy)   | None                           | Duplicate the selected appointment for reuse.                                                   |
-| [`cut`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Cut)    | None                           | Remove the selected appointment from its current slot for moving.                               |
-| [`paste`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Paste)  | targetElement (Scheduler's work-cell) | Insert the copied or cut appointment into the specified time slot.                              |
+| copy   | None                           | Duplicate the selected appointment for reuse.                                                   |
+| cut    | None                           | Remove the selected appointment from its current slot for moving.                               |
+| paste  | targetElement (Scheduler's work-cell) | Insert the copied or cut appointment into the specified time slot.                              |
 
 By using these methods, you can programmatically cut, copy, and paste appointments in the scheduler, providing more control over the appointment management process.
 
@@ -91,7 +91,7 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 {% endtabs %}
 {% endif %}
 
-## Modifying Content Before Pasting
+## Modifying content before pasting
 
 You can modify the content of an appointment before pasting it by using [`beforePaste`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_BeforePaste) event accessing the appointment details and making necessary changes.
 
