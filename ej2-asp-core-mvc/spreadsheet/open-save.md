@@ -441,7 +441,8 @@ The following code example demonstrates the client-side and server-side configur
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-<ejs-spreadsheet id="spreadsheet" openUrl="https://localhost:{port number}/Home/Open" created="created">
+
+<ejs-spreadsheet id="spreadsheet" openUrl="Home/Open" created="created">
 </ejs-spreadsheet>
 
 <script>
@@ -449,6 +450,7 @@ The following code example demonstrates the client-side and server-side configur
         this.openSettings = { chunkSize: 1000000, retryCount: 3, retryAfterDelay: 500 }
     }
 </script>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -477,7 +479,7 @@ The [attachment](https://www.syncfusion.com/downloads/support/directtrac/general
 
 ```js
     // Specifies the service URL for processing the Excel file, converting it into a format suitable for loading in the spreadsheet.
-    <ejs-spreadsheet id="spreadsheet" openUrl="https://localhost:{port number}/Home/Open">
+    <ejs-spreadsheet id="spreadsheet" openUrl="Home/Open">
     </ejs-spreadsheet>
 ```
 
@@ -488,7 +490,7 @@ The [attachment](https://www.syncfusion.com/downloads/support/directtrac/general
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("https://localhost:{port number}/Home/Open").Created("created").Render()
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").Created("created").Render()
 <script>
     function created() {
         this.openSettings = { chunkSize: 1000000, retryCount: 3, retryAfterDelay: 500 }
@@ -501,29 +503,19 @@ The [attachment](https://www.syncfusion.com/downloads/support/directtrac/general
 **Server Endpoint**:
 
 ```csharp
-public IActionResult Open(IFormCollection openRequest)
+
+public ActionResult Open(OpenRequest openRequest)
 {
-    OpenRequest open = new OpenRequest();
-    if (openRequest.Files.Count > 0)
-    {
-        open.File = openRequest.Files[0];
-    }
-    Microsoft.Extensions.Primitives.StringValues chunkPayload;
-    if (openRequest.TryGetValue("chunkPayload", out chunkPayload))
-    {
-        // The chunk payload JSON data includes information essential for processing chunked responses.
-        open.ChunkPayload = chunkPayload;
-    }
-    var result = Workbook.Open(open, 150);
-    return Content(result);
+    return Content(Workbook.Open(openRequest, 150));
 }
+
 ```
 
 The [attachment]() includes the server endpoint code for handling chunk-based open processing. After launching the server endpoint, update the `openUrl` property of the spreadsheet in the client-side sample with the server URL, as shown below.
 
 ```js
     // Specifies the service URL for processing the Excel file, converting it into a format suitable for loading in the spreadsheet.
-    @Html.EJS().Spreadsheet("spreadsheet").OpenUrl("https://localhost:{port number}/Home/Open").Render()
+    @Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").Render()
 ```
 
 {% endif %}
