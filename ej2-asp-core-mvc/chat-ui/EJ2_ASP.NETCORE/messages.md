@@ -151,3 +151,15 @@ You can use the [autoScrollToBottom](https://help.syncfusion.com/cr/aspnetcore-j
 {% endtabs %}
 
 ![AutoScrollToBottom](images/auto-scroll.png)
+
+## Setting suggestions
+
+You can use the [suggestions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Suggestions) property, to add the suggestions in both initial and on-demand which help users to quick-reply options above the input field.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/suggestion/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Suggestion](images/suggestion.png)

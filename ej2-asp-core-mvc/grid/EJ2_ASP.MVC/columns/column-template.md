@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Template in ##Platform_Name## Grid Component
+title: Column Template in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Column Template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Template
@@ -10,7 +10,7 @@ documentation: ug
 
 # Column Template in ASP.NET MVC Grid Component
 
-Grid control provides a `Template` option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
+Grid component provides a `Template` option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 
 > When using template columns, they are primarily meant for rendering custom content and may not provide built-in support for grid actions like sorting, filtering, editing. It is must to define the `Field` property of the column to perform any grid actions.
 
@@ -35,7 +35,7 @@ The following example demonstrates how to define a `Template` for the **Employee
 
 ## Render hyperlink in a column
 
-The Grid control provides support for rendering hyperlink columns and performing routing on click using the `Template` property. This feature is useful when displaying data that requires a link to another page or website.
+The Grid component provides support for rendering hyperlink columns and performing routing on click using the `Template` property. This feature is useful when displaying data that requires a link to another page or website.
 
 The following example demonstrates, how to render hyperlink column in the Grid using the `Template` property of the `Column`. To define a `Template` for the column,  you can use the `Template` with the `a` tag to create the hyperlink.
 
@@ -52,15 +52,15 @@ The following example demonstrates, how to render hyperlink column in the Grid u
 
 >The window.open() method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
 
-## Render other controls in a column
+## Render other components in a column
 
-The column template has options to render a custom control in a grid column instead of a field value.
+The column template has options to render a custom component in a grid column instead of a field value.
 
-### Render LineChart control in a column
+### Render LineChart component in a column
 
-The [LineChart](https://ej2.syncfusion.com/aspnetmvc/documentation/sparkline/getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
+The [LineChart](https://ej2.syncfusion.com/aspnetmvc/documentation/sparkline/getting-started) component of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
 
-In the following example, we have rendered the Sparkline Chart control in the Grid column by defining the `Template` property.
+In the following example, we have rendered the Sparkline Chart component in the Grid column by defining the `Template` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -73,11 +73,11 @@ In the following example, we have rendered the Sparkline Chart control in the Gr
 
 ![Column Template LineChart](../images/column-template/column-template-linechart.png)
 
-### Render ColorPicker control in a column
+### Render ColorPicker component in a column
 
-The [ColorPicker](https://ej2.syncfusion.com/aspnetmvc/documentation/color-picker/getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
+The [ColorPicker](https://ej2.syncfusion.com/aspnetmvc/documentation/color-picker/getting-started) component of Syncfusion<sup style="font-size:70%">&reg;</sup> provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
 
-In the following code, we rendered the ColorPicker control in the Grid column by defining the `Template` property.
+In the following code, we rendered the ColorPicker component in the Grid column by defining the `Template` property.
 
 ```js
 function colorPicker(args) {
@@ -101,9 +101,9 @@ function colorPicker(args) {
 
 ![Column Template ColorPicker](../images/column-template/column-template-colorpicker.gif)
 
-### Render DropDownList control in a column
+### Render DropDownList component in a column
 
-To render a custom control in a grid column, you need to define a `Template`  for the column using the `Template`  property. In the following code, we rendered the [DropDownList](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) control in the **Order Status** column by defining the `Template`  property.
+To render a custom component in a grid column, you need to define a `Template`  for the column using the `Template`  property. In the following code, we rendered the [DropDownList](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) component in the **Order Status** column by defining the `Template`  property.
 
 ```js
 function dropdown(args) {
@@ -129,11 +129,11 @@ function dropdown(args) {
 
 ![Column Template Dropdownlist](../images/column-template/column-template-dropdownlist.png)
 
-### Render Chip control in a column
+### Render Chip component in a column
 
-The Grid control provides support for rendering [Chips](https://ej2.syncfusion.com/aspnetmvc/documentation/chips/getting-started) control in a column using the `Template` property. This feature is useful when displaying data that requires a chip control to be rendered in a column.
+The Grid component provides support for rendering [Chips](https://ej2.syncfusion.com/aspnetmvc/documentation/chips/getting-started) component in a column using the `Template` property. This feature is useful when displaying data that requires a chip component to be rendered in a column.
 
-In the following code, we rendered the Chips control in the Grid **First Name** column by defining the `Template` property.
+In the following code, we rendered the Chips component in the Grid **First Name** column by defining the `Template` property.
 
 ```js
 function queryCellInfo(args) {
@@ -156,11 +156,11 @@ function queryCellInfo(args) {
 
 ![Column Template Chip](../images/column-template/column-template-chip.png)
 
-### Render ProgressBar control in a column
+### Render ProgressBar component in a column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control supports rendering the [Progress Bar](https://ej2.syncfusion.com/aspnetmvc/documentation/progress-bar/getting-started) control within a column using the `Template` property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component supports rendering the [Progress Bar](https://ej2.syncfusion.com/aspnetmvc/documentation/progress-bar/getting-started) component within a column using the `Template` property. Displaying the `Progress Bar` component in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
 
-In the following code, the `Progress Bar` control render in the Grid **Freight** column by defining the `Template` property.
+In the following code, the `Progress Bar` component render in the Grid **Freight** column by defining the `Template` property.
 
 ```js
 function queryCellInfo(args) {
@@ -214,11 +214,11 @@ The following example demonstrates how to use the `Template` property with the `
 
 ![Column Template Condition](../images/column-template/column-template-condition.png)
 
->You can use any template element or custom control instead of the checkbox in the conditional template based on your requirement.
+>You can use any template element or custom component instead of the checkbox in the conditional template based on your requirement.
 
 ## How to get the row object by clicking on the template element
 
-The Grid control allows you to retrieve the row object of the selected record when clicking on a `Template` element. This feature can be useful when you need to perform custom actions based on the selected record.
+The Grid component allows you to retrieve the row object of the selected record when clicking on a `Template` element. This feature can be useful when you need to perform custom actions based on the selected record.
 
 In the following code, the button element is rendered in the **Employee Data** column and `Click` event binding is used to call the showDetails method when the template element is clicked. The showDetails method is passed the data object as an argument, which allows you to access the selected row object and display it in the dialog popup.
 
@@ -256,7 +256,7 @@ The following example illustrates how to implement a custom helper function with
 
 ## Dynamically adding template column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to dynamically add template columns at runtime. This capability is particularly useful when the structure of the grid needs to be modified based on individual interactions or other dynamic conditions.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows you to dynamically add template columns at runtime. This capability is particularly useful when the structure of the grid needs to be modified based on individual interactions or other dynamic conditions.
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
