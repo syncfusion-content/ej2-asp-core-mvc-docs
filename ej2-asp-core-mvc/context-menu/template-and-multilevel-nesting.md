@@ -14,8 +14,6 @@ documentation: ug
 
 The [ItemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_ItemTemplate) property in the ContextMenu component allows you to define custom templates for displaying menu items within the context menu. This feature is particularly useful when you want to customize the appearance or layout of the menu items beyond the default text-based list.
 
-{% endif %}
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -38,6 +36,8 @@ The [ItemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Drop Down Button Template Support](images/context-menu-item-template.png)
 
 ## Template
 
