@@ -12,10 +12,10 @@
     var grid = document.getElementById("grid").ej2_instances[0];
     fieldName = grid.getColumnByIndex((args.cellIndex)).field;   
   }
-  function actionComplete(e) {
-    if (e.requestType === "beginEdit") {
+  function actionComplete(args) {
+    if (args.requestType === "beginEdit") {
       var grid = document.getElementById("grid").ej2_instances[0];
-      e.form.elements[grid.element.getAttribute("id") + fieldName].focus();
+      args.form.elements[grid.element.getAttribute("id") + fieldName].focus();
     }
   }
 </script>
