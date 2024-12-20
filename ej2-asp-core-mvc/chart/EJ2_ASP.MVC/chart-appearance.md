@@ -248,7 +248,7 @@ Using [`Background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 **Chart area margin**
 
-You can customize the space between the chart area from its chart container through `Margin` property.
+You can customize the space between the chart area from its chart container through [`Margin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartArea.html#Syncfusion_EJ2_Charts_ChartArea_Margin) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
