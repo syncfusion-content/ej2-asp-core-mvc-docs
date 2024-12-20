@@ -17,13 +17,13 @@ To save a document to AWS S3, you can follow the steps below
 
 **Step 1:** Create a Simple Document Editor Sample in ASP.NET Core
 
-Start by following the steps provided in this [link](../EJ2_ASP.NETCORE/getting-started-core) to create a simple Document Editor sample in ASP.NET Core. This will give you a basic setup of the Document Editor component. 
+Start by following the steps provided in this [link](../../document-editor/getting-started-core) to create a simple Document Editor sample in ASP.NET Core. This will give you a basic setup of the Document Editor component. 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 **Step 1:** Create a Simple Document Editor Sample in ASP.NET MVC
 
-Start by following the steps provided in this [link](../EJ2_ASP.MVC/getting-started) to create a simple Document Editor sample in ASP.NET MVC. This will give you a basic setup of the Document Editor component. 
+Start by following the steps provided in this [link](../../document-editor/getting-started) to create a simple Document Editor sample in ASP.NET MVC. This will give you a basic setup of the Document Editor component. 
 
 {% endif %}
 
