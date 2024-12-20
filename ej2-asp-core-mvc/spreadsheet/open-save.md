@@ -479,7 +479,7 @@ The [attachment](https://www.syncfusion.com/downloads/support/directtrac/general
 
 ```js
     // Specifies the service URL for processing the Excel file, converting it into a format suitable for loading in the spreadsheet.
-    <ejs-spreadsheet id="spreadsheet" openUrl="Home/Open">
+    <ejs-spreadsheet id="spreadsheet" openUrl="Home/Open" created="created">
     </ejs-spreadsheet>
 ```
 
@@ -491,6 +491,7 @@ The [attachment](https://www.syncfusion.com/downloads/support/directtrac/general
 {% highlight cshtml tabtitle="CSHTML" %}
 
 @Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").Created("created").Render()
+
 <script>
     function created() {
         this.openSettings = { chunkSize: 1000000, retryCount: 3, retryAfterDelay: 500 }
@@ -511,11 +512,9 @@ public ActionResult Open(OpenRequest openRequest)
 
 ```
 
-The [attachment]() includes the server endpoint code for handling chunk-based open processing. After launching the server endpoint, update the `openUrl` property of the spreadsheet in the client-side sample with the server URL, as shown below.
-
 ```js
     // Specifies the service URL for processing the Excel file, converting it into a format suitable for loading in the spreadsheet.
-    @Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").Render()
+    @Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").Created("created").Render()
 ```
 
 {% endif %}
