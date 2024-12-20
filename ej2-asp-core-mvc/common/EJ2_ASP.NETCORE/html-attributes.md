@@ -10,11 +10,11 @@ documentation: ug
 
 # Default HTML Attributes and DOM Events
 
-The Syncfusion ASP.NET Core UI controls provide the most useful [public API](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.html) for control implementation and customization. Apart from this public API, the Syncfusion ASP.NET Core UI controls can support the use of default [HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) in the root element of its control and input [DOM events](#input-dom-events) can be applied in the client side.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls provide the most useful [public API](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.html) for control implementation and customization. Apart from this public API, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls can support the use of default [HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) in the root element of its control and input [DOM events](#input-dom-events) can be applied in the client side.
 
 ## Using HTML Attributes and DOM Events in the Input Element
 
-The following is a list of Syncfusion ASP.NET Core UI Controls that use the standard HTML `input` element. You can apply the [HTML input attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) and DOM events directly to the input element used on these Syncfusion ASP.NET Core Controls.
+The following is a list of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI Controls that use the standard HTML `input` element. You can apply the [HTML input attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) and DOM events directly to the input element used on these Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls.
 
 * [AutoComplete](../autocomplete/getting-started/)
 * [CheckBox](../check-box/getting-started/)
@@ -38,15 +38,15 @@ The following is a list of Syncfusion ASP.NET Core UI Controls that use the stan
 * [Slider](../range-slider/getting-started)
 * [Switch](../switch/getting-started)
 
-### Available Syncfusion Properties Equivalent to HTML Attributes
+### Available Syncfusion<sup style="font-size:70%">&reg;</sup> Properties Equivalent to HTML Attributes
 
-The following table illustrates the HTML attributes and their equivalent Syncfusion API.
+The following table illustrates the HTML attributes and their equivalent Syncfusion<sup style="font-size:70%">&reg;</sup> API.
 
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>HTML Attribute</b></td>
-<td><b>Syncfusion API</b></td>
+<td><b>Syncfusion<sup style="font-size:70%">&reg;</sup> API</b></td>
 <td><b>Controls</b></td>
 </tr>
 <tr>
@@ -234,7 +234,7 @@ The textbox will be rendered with the following output.
 {% endhighlight %}
 {% endtabs %}
 
-In some cases, you may need to add HTML attributes to the root/container element of the above input-based controls. For this, you can use [HtmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_HtmlAttributes) Syncfusion API to add HTML attributes to the root/container element.
+In some cases, you may need to add HTML attributes to the root/container element of the above input-based controls. For this, you can use [HtmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_HtmlAttributes) Syncfusion<sup style="font-size:70%">&reg;</sup> API to add HTML attributes to the root/container element.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -260,7 +260,7 @@ The textbox will be rendered with the following output.
 
 ## Input DOM Events
 
-The Syncfusion ASP.NET Core UI control supports binding the native DOM events on the input element.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI control supports binding the native DOM events on the input element.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}

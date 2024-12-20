@@ -152,9 +152,9 @@ The `opacity` property specifies the transparency level of the fill. Adjusting t
 {% endtabs %}
 {% endif %}
 
-**Dash array**
+**Border**
 
-The `dashArray` property determines the pattern of dashes and gaps in the series.
+Use the `border` property to customize the width, color and dasharray of the series border.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -221,7 +221,7 @@ Use the `fill` property to customize the fill color of empty points in the serie
 {% include code-snippet/chart/series/spline-range/empty-fill/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Empty-fill.cs" %}
-{% include code-snippet/chart/series/spline-range/empty-fill/empty.cs %}
+{% include code-snippet/chart/series/spline-range/empty-fill/empty-fill.cs %}
 {% endhighlight %}
 {% endtabs %}
 

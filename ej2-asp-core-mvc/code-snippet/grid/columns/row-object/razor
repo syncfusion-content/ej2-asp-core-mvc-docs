@@ -1,23 +1,26 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).RecordClick("recordClick").Columns(col =>
+@Html.EJS().Dialog("dialog").Header("Selected Row Details").Content("dialogContent").ShowCloseIcon(true).Visible(false).Width("50%").Render()
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height(315).QueryCellInfo("queryCellInfo").Columns(col =>
 {
-    col.HeaderText("Customer Data").IsPrimaryKey(true).Width("150").Template("#template").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("150").ValidationRules(new { required = "true", minLength = 3 }).Add();
-    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-
+    col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(130).Add();
+    col.Field("FirstName").HeaderText("First Name").Width(120).Add();
+    col.HeaderText("Employee Data").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Template("#columnTemplate").Width(150).IsPrimaryKey(true).Add();
 }).Render()
 
-
-<script id="template" type="text/x-template">
-    <button class="empData">Employee Data</button>
+<script id="columnTemplate" type="text/x-template">
+    <button class='e-btn view-button'>View</button>
 </script>
 
 <script>
-    function recordClick(args) {
-        if (args.target.classList.contains('empData')) {
-            var rowObj = document.getElementById('Grid').ej2_instances[0].getRowObjectFromUID(ej.base.closest(args.target, '.e-row').getAttribute('data-uid'));
-            console.log(rowObj);
+    function queryCellInfo(args) {
+        let dialog = document.getElementById("dialog").ej2_instances[0];
+        if (args.column.headerText === 'Employee Data') {
+            args.cell.querySelector('.view-button').addEventListener('click', function () {
+                dialog.visible = true;
+                dialog.content =
+                `<p><b>EmployeeID:</b> ${args.data.EmployeeID}</p>
+                 <p><b>FirstName:</b> ${args.data.FirstName}</p>
+                 <p><b>LastName:</b> ${args.data.LastName}</p>`;
+            });
         }
     }
 </script>

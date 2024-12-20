@@ -8,39 +8,28 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Reactive aggregate in ASP.Net Core Grid component
 
-# Reactive Aggregate
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net Core Grid component provides support for reactive aggregates, which allow you to update the aggregate values dynamically as the data changes. Reactive aggregates automatically recalculate their values when there are changes in the underlying data, providing real-time updates to the aggregate values in the grid.
 
 ## Auto update aggregate value in batch editing
 
-When using batch editing, the aggregate values will be refreshed on every cell save. The footer, group footer, and group caption aggregate values will be refreshed.
+When the grid is in batch editing mode, the aggregate values in the footer, group footer, and group caption are automatically refreshed every time a cell is saved. This ensures that the aggregate values accurately reflect the edited data.
 
-N> Adding a new record to the grouped grid will not refresh the aggregate values.
-
-{% if page.publishingplatform == "aspnet-core" %}
+Here's an example code snippet demonstrating how to auto update aggregate value in batch editing:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/reactive-agg-batch-edit/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Reactive-agg-batch-edit.cs" %}
-{% include code-snippet/grid/aggregate/reactive-agg-batch-edit/reactive-agg-batch-edit.cs %}
+{% highlight c# tabtitle="reactive-aggregate-batch-edit.cs" %}
+{% include code-snippet/grid/aggregate/reactive-agg-batch-edit/reactive-aggregate-batch-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Auto update aggregate value in batch editing](../images/aggregates/aggregate-batch.gif)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/aggregate/reactive-agg-batch-edit/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Reactive-agg-batch-edit.cs" %}
-{% include code-snippet/grid/aggregate/reactive-agg-batch-edit/reactive-agg-batch-edit.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
+> Adding a new record to the grouped grid will not refresh the aggregate values.
 
 ## Refresh aggregate values in inline editing
 
@@ -48,26 +37,13 @@ By default, reactive aggregate update is not supported by inline and dialog edit
 
 In the following code, the input event for the Freight column editor has been registered and the aggregate value has been refreshed manually.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/reactive-agg-inline-edit/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Reactive-agg-inline-edit.cs" %}
-{% include code-snippet/grid/aggregate/reactive-agg-inline-edit/reactive-agg-inline-edit.cs %}
+{% highlight c# tabtitle="reactive-aggregate-inline-edit.cs" %}
+{% include code-snippet/grid/aggregate/reactive-agg-inline-edit/reactive-aggregate-inline-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/aggregate/reactive-agg-inline-edit/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Reactive-agg-inline-edit.cs" %}
-{% include code-snippet/grid/aggregate/reactive-agg-inline-edit/reactive-agg-inline-edit.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
+![Group footer aggregates](../images/aggregates/inline.gif)

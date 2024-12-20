@@ -1,0 +1,32 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" QueryCellInfo="colorPicker" enableHover= "false" height=315>            
+    <e-grid-columns>               
+            <e-grid-column field="FirstName" headerText="First Name" textAlign= "Right" width="90"></e-grid-column>
+            <e-grid-column field="LastName" headerText="Last Name" width="150"></e-grid-column>
+            <e-grid-column field="City" headerText="City" width="150"></e-grid-column>
+            <e-grid-column headerText="Change the color of row" template="#columnTemplate" width="120"></e-grid-column>           
+    </e-grid-columns>
+</ejs-grid>
+
+<script type="text/x-template" id="columnTemplate">
+    <input id="element" type="color" />
+</script>
+
+<script>
+    function colorPicker(args) {
+        let inputElement = args.cell.querySelector('input')
+        let colorPickerObject = new ej.inputs.ColorPicker({
+            type: 'color',
+            mode: 'Palette',
+            change: change,
+        });
+        colorPickerObject.appendTo(inputElement);
+    }
+    function change(args) {
+        let grid = document.querySelector('#Grid').ej2_instances[0];
+        let selectedRows = grid.getSelectedRows();
+        for (let row of selectedRows) {
+            row.style.backgroundColor = args.value;
+        }
+        grid.clearSelection();
+    }
+</script>

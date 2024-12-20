@@ -10,17 +10,9 @@ documentation: ug
 
 # Template and Multilevel nesting
 
-## Template
+## Item template
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-The ContextMenu items can be customized by using the [`Render`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event. The item render event triggers while rendering each menu item. The event argument will be used to identify the menu item and customize it based on the requirement. In the following sample, the menu item is rendered with keycode for specified action in ContextMenu using the template. Here, the keycode is specified for Save as, View page source, and Inspect in the right side corner of the menu items by adding span element in the [`beforeItemRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event.
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-The ContextMenu items can be customized by using the [`Render`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event. The item render event triggers while rendering each menu item. The event argument will be used to identify the menu item and customize it based on the requirement. In the following sample, the menu item is rendered with keycode for specified action in ContextMenu using the template. Here, the keycode is specified for Save as, View page source, and Inspect in the right side corner of the menu items by adding span element in the [`beforeItemRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event.
-
-{% endif %}
+The [ItemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_ItemTemplate) property in the ContextMenu component allows you to define custom templates for displaying menu items within the context menu. This feature is particularly useful when you want to customize the appearance or layout of the menu items beyond the default text-based list.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,6 +33,43 @@ The ContextMenu items can be customized by using the [`Render`](https://help.syn
 {% endhighlight %}
 {% highlight c# tabtitle="Template.cs" %}
 {% include code-snippet/context-menu/template/template.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Drop Down Button Template Support](images/context-menu-item-template.png)
+
+## Template
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+The ContextMenu items can be customized by using the [`Render`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event. The item render event triggers while rendering each menu item. The event argument will be used to identify the menu item and customize it based on the requirement. In the following sample, the menu item is rendered with keycode for specified action in ContextMenu using the template. Here, the keycode is specified for Save as, View page source, and Inspect in the right side corner of the menu items by adding span element in the [`beforeItemRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The ContextMenu items can be customized by using the [`Render`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event. The item render event triggers while rendering each menu item. The event argument will be used to identify the menu item and customize it based on the requirement. In the following sample, the menu item is rendered with keycode for specified action in ContextMenu using the template. Here, the keycode is specified for Save as, View page source, and Inspect in the right side corner of the menu items by adding span element in the [`beforeItemRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_BeforeItemRender) event.
+
+{% endif %}
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/context-menu/target/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Target.cs" %}
+{% include code-snippet/context-menu/target/target.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/context-menu/target/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Target.cs" %}
+{% include code-snippet/context-menu/target/target.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

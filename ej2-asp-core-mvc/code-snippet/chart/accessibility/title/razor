@@ -1,0 +1,24 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).  
+      XName("x").
+      YName("y").
+      DataSource(ViewBag.dataSource).
+      Name("Gold").
+      Add();
+   })
+   .PrimaryXAxis(px => 
+      px.Interval(1)
+         .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+         .IsIndexed(true)
+   )
+   .Title("Olympic Medal Counts - RIO").TitleStyle(title => 
+      title.Accessibility(access => access.
+         AccessibilityDescription('This chart shows the number of gold, silver, and bronze medals won by different countries in the Olympics.')
+         .AccessibilityRole('heading')
+      )
+   ).SubTitle("Medal Comparison").SubTitleStyle(subtitle => 
+      subtitle.Accessibility(access => access.
+         AccessibilityDescription('The subtitle provides additional context for the Olympic medal distribution chart.')
+         .AccessibilityRole('heading')
+      )).Render()

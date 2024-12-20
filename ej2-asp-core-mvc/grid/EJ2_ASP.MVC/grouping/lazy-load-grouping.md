@@ -8,90 +8,77 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Lazy load grouping in ASP.Net MVC Grid component
 
-# Lazy Load Grouping in ASP.NET MVC Grid Component
+In ASP.Net MVC, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy loading can significantly improve the performance of your application by reducing the initial load time.
 
-The lazy load grouping allows you to load grouped records to the Grid through the on-demand concept. So, you can use this feature to load a huge amount of grouped data to the Grid without any performance degradation.
+Lazy load grouping in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to load and display grouped data efficiently by fetching only the required data on demand. This feature is useful when dealing with large datasets where loading all the data at once might affect performance. The Grid will render only the initial level caption rows in the collapsed state at grouping. The child rows of each caption will be fetched in on demand and render in the Grid when you expand the caption row.
 
-When you enable this feature, the Grid will render only the initial level caption rows in the collapsed state at grouping. The child rows of each caption will be fetched from the server and render in the Grid when you expand the caption row. The fetching child records count will be implicitly determined by the content area occupying rows count. So, if the child records exceed the count, then the Grid will request the server again to fetch the next block of child records on scrolling.
+To enable this feature, need to set the [GroupSettings.EnableLazyLoading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_EnableLazyLoading) property to **true**.
 
-The caption row expand/collapse state will be persisted on paging and Grid pages count will be determined based on the caption rows count instead of the child rows.
-
-To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_EnableLazyLoading) property as **true**.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to enable the lazy load grouping feature by setting `GroupSettings.EnableLazyLoading` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Lazy-load.cs" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping/lazy-load.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/grouping/lazy-load-grouping/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Lazy-load.cs" %}
+{% highlight c# tabtitle="lazy-load.cs" %}
 {% include code-snippet/grid/grouping/lazy-load-grouping/lazy-load.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
+![Lazy load grouping](../images/grouping/grouping-lazyloading.png)
 
 ## Handling the lazy load grouping at server-side
 
-You can use the `UrlAdaptor` of `DataManager` when binding the remote data. Along with the default server request, this feature will additionally send the below details to handle the lazy load grouping. In the server end, these details are bound with the `IsLazyLoad` and `OnDemandGroupInfo` parameters in the `DataManagerRequest` model. Refer to the below table and screenshots.
+When using the lazy load grouping feature of the Grid, you can use the `UrlAdaptor` of `DataManager` when binding remote data to handle the lazy load grouping at the server-side. Along with the default server request, this feature will additionally send the following details to handle the lazy load grouping:
 
-|Property Name |Description|
-|-----|-----|
-|`isLazyLoad` |To differentiate the default grouping and lazy load grouping|
-|`onDemandGroupInfo` |Have the details of expanded caption row grouping `level`, `skip`, `take` and `filter` query of the child records|
+Property Name |Description
+-----|-----
+`IsLazyLoad` |Used to differentiate the default grouping and lazy load grouping
+`OnDemandGroupInfo` |Contains the details of expanded caption row grouping `Level`, `Skip`, `Take` and `Filter` query of the child records
+
+In the server-side, you can bind these details with the `IsLazyLoad` and `OnDemandGroupInfo` parameters in the `DataManagerRequest` model. Please refer to the below screenshots.
 
 ![IsLazyLoad](../images/islazyload.jpg)
 
 ![OnDemandGroupInfo](../images/groupinfo.jpg)
 
-The following code example describes the lazy load grouping handled at the server-side with other the grid actions.
+The following code example describes lazy load grouping being handled on the server-side along with other grid actions.
 
 ```typescript
-public IActionResult UrlDatasource([FromBody] DataManagerRequest dm)
+public IActionResult UrlDataSource([FromBody] DataManagerRequest dataRequest)
 {
     IEnumerable groupedData = null;
-    IEnumerable<Customers> DataSource = customers;
+    IEnumerable<Customers> dataSource = customers;
     DataOperations operation = new DataOperations();
 
-    if (dm.Search != null && dm.Search.Count > 0)
+    if (dataRequest.Search != null && dataRequest.Search.Count > 0)
     {
-        DataSource = operation.PerformSearching(DataSource, dm.Search);  //Search
+        dataSource = operation.PerformSearching(dataSource, dataRequest.Search);  //Search
     }
-    if (dm.IsLazyLoad == false && dm.Sorted != null && dm.Sorted.Count > 0) //Sorting for grouping
+    if (dataRequest.Where != null && dataRequest.Where.Count > 0) //Filtering
     {
-        DataSource = operation.PerformSorting(DataSource, dm.Sorted);
+        dataSource = operation.PerformFiltering(dataSource, dataRequest.Where, dataRequest.Where[0].Operator);
     }
-    if (dm.Where != null && dm.Where.Count > 0) //Filtering
+    int count = dataSource.Cast<Customers>().Count();
+    if (dataRequest.IsLazyLoad == false && dataRequest.Sorted != null && dataRequest.Sorted.Count > 0) //Sorting for grouping
     {
-        DataSource = operation.PerformFiltering(DataSource, dm.Where, dm.Where[0].Operator);
+        dataSource = operation.PerformSorting(dataSource, dataRequest.Sorted);
+    }   
+    if (dataRequest.IsLazyLoad == false && dataRequest.Skip != 0)
+    {
+        dataSource = operation.PerformSkip(dataSource, dataRequest.Skip); // Paging
     }
-    int count = DataSource.Cast<Customers>().Count();
-    if (dm.IsLazyLoad == false && dm.Skip != 0)
+    if (dataRequest.IsLazyLoad == false && dataRequest.Take != 0)
     {
-        DataSource = operation.PerformSkip(DataSource, dm.Skip); // Paging
+        dataSource = operation.PerformTake(dataSource, dataRequest.Take);
     }
-    if (dm.IsLazyLoad == false && dm.Take != 0)
+    if (dataRequest.IsLazyLoad)
     {
-        DataSource = operation.PerformTake(DataSource, dm.Take);
-    }
-    if (dm.IsLazyLoad)
-    {
-        groupedData = operation.PerformGrouping<Customers>(DataSource, dm); // Lazy load grouping
-        groupedData = operation.PerformSorting(groupedData, dm); // Sorting with Lazy load grouping
-        if (dm.OnDemandGroupInfo != null && dm.Group.Count() == dm.OnDemandGroupInfo.Level)
+        groupedData = operation.PerformGrouping<Customers>(dataSource, dataRequest); // Lazy load grouping
+        groupedData = operation.PerformSorting(groupedData, dataRequest); // Sorting with Lazy load grouping
+        if (dataRequest.OnDemandGroupInfo != null && dataRequest.Group.Count() == dataRequest.OnDemandGroupInfo.Level)
         {
             count = groupedData.Cast<Customers>().Count();
         }
@@ -99,50 +86,89 @@ public IActionResult UrlDatasource([FromBody] DataManagerRequest dm)
         {
             count = groupedData.Cast<Group>().Count();
         }
-        groupedData = operation.PerformSkip(groupedData, dm.OnDemandGroupInfo == null ? dm.Skip : dm.OnDemandGroupInfo.Skip);
-        groupedData = operation.PerformTake(groupedData, dm.OnDemandGroupInfo == null ? dm.Take : dm.OnDemandGroupInfo.Take);
+        groupedData = operation.PerformSkip(groupedData, dataRequest.OnDemandGroupInfo == null ? dataRequest.Skip : dataRequest.OnDemandGroupInfo.Skip);
+        groupedData = operation.PerformTake(groupedData, dataRequest.OnDemandGroupInfo == null ? dataRequest.Take : dataRequest.OnDemandGroupInfo.Take);
     }
-return dm.RequiresCounts ? Json(new { result = groupedData == null ? DataSource : groupedData, count = count }) : Json(DataSource);
+return dataRequest.RequiresCounts ? Json(new { result = groupedData == null ? dataSource : groupedData, count = count }) : Json(dataSource);
 }
+
 ```
 
 > For optimal performance, especially when dealing with lazy loading grouping, it is recommended to perform sorting after the grouping action.
 
 ## Lazy load grouping with infinite scrolling
 
-Infinite scrolling loads a huge amount of data without degrading the Grid's performance. By default, infinite scrolling is enabled only for the expanded grouped rows when lazy loading is enabled. Now, the Grid has an option to allow infinite scrolling for group caption rows. This is achieved by setting the [enableInfiniteScrolling](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableInfiniteScrolling) property as true when lazy loading is enabled in the grouped records.
+Lazy loading grouping with infinite scrolling is a valuable feature in scenarios where there is a need to present grouped data, efficiently handle large datasets, and ensure a seamless experience. This feature enables loading data on demand as the interface is interacted with, ensuring optimal performance and responsiveness while effectively managing and presenting large grouped datasets
 
-This is demonstrated in the following sample:
+**How lazy load grouping with infinite scrolling works**
 
-{% if page.publishingplatform == "aspnet-core" %}
+1. When you enable lazy load grouping with infinite scrolling, the Grid initially renders only the top-level caption rows in a collapsed state.
+
+2. The child rows associated with each group caption are loaded and rendered in the Grid only when you expand the corresponding caption row.
+
+3. Infinite scrolling enables the Grid to load additional data as the user scrolls to the end of the scrollbar.
+
+To enable this feature, you need to set the [GroupSettings.EnableLazyLoading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_EnableLazyLoading) and [EnableInfiniteScrolling](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableInfiniteScrolling) properties to **true**.
+
+The following example demonstrates how to enable the lazy load grouping with infinite scrolling feature using the `GroupSettings.EnableLazyLoading` and `EnableInfiniteScrolling` properties.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Lazy-load-scroll.cs" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load-grouping-scroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/grouping/lazy-load-grouping-scroll/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Lazy-load-scroll.cs" %}
+{% highlight c# tabtitle="lazy-load.cs" %}
 {% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load-grouping-scroll.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![lazy load grouping with infinite scrolling ](../images/grouping/grouping-infinitescrolling.gif)
 
-> The Grid also supports the lazy load grouping with [virtualization](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/virtual-scroll/)(virtual scrolling).
+> * The [EnableInfiniteScrolling](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableInfiniteScrolling) property is optional and can be set to **true** or **false** based on the requirement.
+> * When enabling the `EnableInfiniteScrolling` feature, it is necessary to define the [Height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property.
+
+## Lazy load grouping with virtual scrolling
+
+The lazy load grouping with virtual scrolling feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC Grid allows you to efficiently present and analyze large grouped datasets. This feature optimizes performance, reduces initial load time, and provides smooth scrolling through the dataset. 
+
+**How lazy load grouping with virtual scrolling works**
+
+1. When you enable lazy load grouping with virtual scrolling, the Grid renders only the initial level caption rows in a collapsed state.
+
+2. The child rows associated with each group caption are loaded and rendered in the Grid only when you expand the respective caption row.
+
+3. Virtual scrolling allows the Grid to load and display a buffered set of records while scrolling vertically.
+
+To enable this feature, you need to set the [GroupSettings.EnableLazyLoading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_EnableLazyLoading) and [EnableVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableVirtualization) properties to **true**.
+
+The following example demonstrates how to enable the lazy load grouping with virtual scrolling feature using the `GroupSettings.EnableLazyLoading` and `EnableVirtualization` properties.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/grouping/group-virtual/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="virtual-scroll.cs" %}
+{% include code-snippet/grid/grouping/group-virtual/virtual-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![lazy load grouping with virtual scrolling](../images/grouping/grouping-virtual-scrolling.gif)
+
+> When using the `EnableVirtualization` feature, it is necessary to define the [Height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property.
 
 ## Limitations for lazy load grouping
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
-* DataManager's `UrlAdaptor` and `JsonAdaptor` only have the built-in lazy load grouping support.
-* Lazy load grouping is not compatible batch editing, row template etc.
-* Programmatic selection is not supported.
+* Lazy load grouping is only supported by the `UrlAdaptor` and `JsonAdaptor` adaptors.
+* Lazy load grouping is not compatible with the following features
+    * Batch editing
+    * Row template
+    * Print
+    * Row drag and drop in collapsed group
+    * ExpandAll method   
+    * Column virtualization
+    * Hierarchical Grid
+    * Detail Template
+    * Row and Cell Spanning  
+* Programmatic selection is not supported  in lazy load grouping.
+* Drag selection, Cell selection (box and flow), Row Selection is not working in collapsed state.
+* Clipboard is not support when the groups are in collapsed state.

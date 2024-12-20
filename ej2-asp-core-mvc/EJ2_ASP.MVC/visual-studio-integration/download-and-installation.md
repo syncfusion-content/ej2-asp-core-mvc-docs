@@ -10,7 +10,7 @@ documentation: ug
 
 # Download and Installation
 
-Syncfusion publishes the Visual Studio extension in the below Visual Studio marketplace link. You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
+Syncfusion® publishes the Visual Studio extension in the below Visual Studio marketplace link. You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETMVCVSExtensions)
 
@@ -18,7 +18,7 @@ Syncfusion publishes the Visual Studio extension in the below Visual Studio mark
 
 ## Prerequisites
 
-The following software prerequisites must be installed to install the Syncfusion ASP.NET MVC extension, as well as to creating, adding snippet, converting, and upgrading Syncfusion ASP.NET MVC applications.
+The following software prerequisites must be installed to install the Syncfusion® ASP.NET MVC extension, as well as to creating, adding snippet, converting, and upgrading Syncfusion® ASP.NET MVC applications.
 
 * [Visual Studio 2013 or later](https://visualstudio.microsoft.com/downloads).
 
@@ -46,7 +46,7 @@ The steps below assist you to how to install the Syncfusion ASP.NET MVC extensio
 
 7. After the installation is complete, open Visual Studio.
 
-8. Now, under the menu **Extensions**, you can use the Syncfusion extensions from the Visual Studio.
+8. Now, under the menu **Extensions**, you can use the Syncfusion® extensions from the Visual Studio.
 
     ![SyncfusionMenu](images/SyncfusionMenu.png)
 
@@ -70,7 +70,7 @@ The steps below illustrate how to download and install the Syncfusion ASP.NET MV
 
 4. Click the **Modify** button.
 
-5. After the installation is complete, open Visual Studio 2019. You can now use Syncfusion extensions from the Visual Studio under the **Extensions** menu.
+5. After the installation is complete, open Visual Studio 2019. You can now use Syncfusion® extensions from the Visual Studio under the **Extensions** menu.
 
      ![SyncfusionMenu](images/SyncfusionMenu.png)
 

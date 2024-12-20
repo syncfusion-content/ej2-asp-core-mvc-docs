@@ -35,8 +35,6 @@ To add .NET PDF Viewer control, the following NuGet packages need to be installe
 * [Syncfusion.EJ2.PdfViewer.AspNet.Mvc5](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Mvc5/)
 * [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5)
 
-N> If you creating ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
-
 ## Add namespace
 
 Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
@@ -63,7 +61,7 @@ The theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.c
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls.
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 
 ## Add script reference
 
@@ -81,7 +79,7 @@ Add the required scripts using CDN inside the `<head>` of `~/Views/Shared/_Layou
 {% endhighlight %}
 {% endtabs %}
 
-## Register Syncfusion Script Manager
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
 Open `~/Views/Shared/_Layout.cshtml` page and register the script manager in the ASP.NET MVC application as follows. 
 
@@ -101,7 +99,7 @@ N> Add the script manager `EJS().ScriptManager()` at the **end of `<body>`**.
 
 ## Add ASP.NET MVC PDF Viewer control
 
-Add the Syncfusion ASP.NET MVC PDF Viewer control in `~/Views/Home/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the DocumentPath property as below.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC PDF Viewer control in `~/Views/Home/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the DocumentPath property as below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -352,6 +350,8 @@ namespace GettingStartedMVC.Controllers
     {
         public string document { get; set; }
         public string password { get; set; }
+        public bool isClientsideLoading { get; set; }
+        public string organizePages { get; set; }
         public string zoomFactor { get; set; }
         public string isFileName { get; set; }
         public string xCoordinate { get; set; }
@@ -378,17 +378,28 @@ namespace GettingStartedMVC.Controllers
         public string uniqueId { get; set; }
         public string data { get; set; }
         public string viewPortWidth { get; set; }
-        public string viewPortHeight { get; set; }
+        public string viewportHeight { get; set; }
         public string tilecount { get; set; }
-        public string isCompletePageSizeNotReceived { get; set; }
+        public bool isCompletePageSizeNotReceived { get; set; }
         public string freeTextAnnotation { get; set; }
         public string signatureData { get; set; }
         public string fieldsData { get; set; }
         public string formDesigner { get; set; }
+        public bool isSignatureEdited { get; set; }
         public string inkSignatureData { get; set; }
+        public bool hideEmptyDigitalSignatureFields { get; set; }
+        public bool showDigitalSignatureAppearance { get; set; }
+        public bool digitalSignaturePresent { get; set; }
         public string tileXCount { get; set; }
         public string tileYCount { get; set; }
-        public bool digitalSignaturePresent { get; set; }
+        public string digitalSignaturePageList { get; set; }
+        public string annotationCollection { get; set; }
+        public string annotationsPageList { get; set; }
+        public string formFieldsPageList { get; set; }
+        public bool isAnnotationsExist { get; set; }
+        public bool isFormFieldAnnotationsExist { get; set; }
+        public string documentLiveCount { get; set; }
+        public string annotationDataFormat { get; set; }
     }
 }
 
@@ -399,7 +410,7 @@ namespace GettingStartedMVC.Controllers
 
 [DocumentPath](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_DocumentPath) is the property needed to load a PDF file in the PDF Viewer.
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC PDF Viewer control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC PDF Viewer control will be rendered in the default web browser.
 
 ![ASP.NET MVC PDF Viewer Control](AspNetMVC_Images/pdfviewer-control.png)
 

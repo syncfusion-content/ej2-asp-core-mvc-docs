@@ -11,11 +11,11 @@ documentation: ug
 
 # Headers in ASP.NET Core Grid component
 
-The Syncfusion ASP.NET Core Grid component provides a comprehensive set of options to customize and manage headers efficiently. Headers play a crucial role in organizing and presenting data effectively in the grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component provides a comprehensive set of options to customize and manage headers efficiently. Headers play a crucial role in organizing and presenting data effectively in the grid.
 
 ## Header text
 
-The `headerText` feature proves particularly beneficial when there is a need for more meaningful and descriptive column headers in the Syncfusion ASP.NET Core Grid component.
+The `headerText` feature proves particularly beneficial when there is a need for more meaningful and descriptive column headers in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component.
 
 By default, the header text of a column in Grid is displayed from the column's `field` value. However, you can easily override the default header title and provide a custom header text for the column using the `headerText` property. 
 
@@ -38,7 +38,7 @@ To enable the `headerText` property, you simply need to define it in the **e-gri
 
 ## Header template
 
-The header template feature in the Syncfusion ASP.NET Core Grid component allows you to create custom header layouts and content, providing enhanced functionality such as sorting or filtering.
+The header template feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component allows you to create custom header layouts and content, providing enhanced functionality such as sorting or filtering.
 
 To implement a header template, set the `headerTemplate` property within a specific column definition. This allows you to render custom HTML elements or ASP.NET Core components to the header.
 
@@ -64,7 +64,7 @@ In Grid, you can group multiple levels of column headers by stacking the Grid co
 
 You can customize the appearance of the stacked header elements by using the `headerTemplate` property. This allows you to render custom HTML elements or ASP.NET Core components to the header. 
 
-Here's an example of how to use stacked headers with a custom `headerTemplate` in Syncfusion Grid.
+Here's an example of how to use stacked headers with a custom `headerTemplate` in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -100,11 +100,11 @@ The following example demonstrates how to dynamically change the alignment of th
 ![Align the text of header text](../images/columns/Column-headertext-change-alignment.gif)
 
 >* The `headerTextAlign` property only changes the alignment of the text in the column header, and not the content of the column. If you want to align both the column header and content, you can use the [textAlign](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.TextAlign.html) property.
->* You can also use the `headerTextAlign` property with the stacked header feature in Syncfusion Grid. The property will align the header text in the sub-headers as well.
+>* You can also use the `headerTextAlign` property with the stacked header feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. The property will align the header text in the sub-headers as well.
 
 ## Autowrap the header text
 
-The autowrap allows the cell content of the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Syncfusion Grid, you should set the appropriate [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
+The autowrap allows the cell content of the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you should set the appropriate [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
 
 To enable autowrap, set the `allowTextWrap` property to **true**. You can also configure the auto wrap mode by setting the [textWrapSettings.wrapMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridTextWrapSettings.html#Syncfusion_EJ2_Grids_GridTextWrapSettings_WrapMode) property.
 
@@ -148,7 +148,7 @@ You can use CSS to override the default height of the **.e-grid .e-headercell** 
 
 **Using methods**
 
-To change the height of the header dynamically, you can use the `getHeaderContent` method to get the header content element of the Syncfusion Grid. Then, you can use the **querySelectorAll** method to get all the header cell elements with the class **e-headercell**. Finally, you can loop through each header cell element and set its style property to adjust the height.
+To change the height of the header dynamically, you can use the `getHeaderContent` method to get the header content element of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. Then, you can use the **querySelectorAll** method to get all the header cell elements with the class **e-headercell**. Finally, you can loop through each header cell element and set its style property to adjust the height.
 
 The following example demonstrates how to dynamically change the height of the header based on a Button `click` event.
 
@@ -168,11 +168,11 @@ The following example demonstrates how to dynamically change the height of the h
 
 ## Change header text dynamically
 
-The Syncfusion Grid component provides a way to modify the header text of a corresponding column in real-time based on events or other events. This feature can be useful in various scenarios, such as displaying a custom header text for a specific column or updating the header text dynamically based on input. By allowing for dynamic changes to the header text, the Grid provides a more flexible and customizable experience.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides a way to modify the header text of a corresponding column in real-time based on events or other events. This feature can be useful in various scenarios, such as displaying a custom header text for a specific column or updating the header text dynamically based on input. By allowing for dynamic changes to the header text, the Grid provides a more flexible and customizable experience.
 
 **Using Event**
 
-To modify the header text of a corresponding column dynamically, you can use the [headerCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderCellInfo) event provided by the Syncfusion Grid. This event is triggered for each header cell element rendered in the Grid.
+To modify the header text of a corresponding column dynamically, you can use the [headerCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderCellInfo) event provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. This event is triggered for each header cell element rendered in the Grid.
 
 When the `HeaderCellInfo` event is triggered, it provides a **HeaderCellInfoEventArgs** object as a parameter. This object contains the following properties:
 
@@ -232,7 +232,7 @@ If you want to change the header text of all columns in the grid, you can loop t
 
 ## Change the orientation of header text
 
-By default, the text in the column headers of the Syncfusion Grid control is oriented horizontally. However, in some cases, you may want to change the orientation of the header text to vertical, diagonal, or at a custom angle. This can be achieved by adding a custom CSS class to the column header cell using the `customAttributes` property of the Grid columns.
+By default, the text in the column headers of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control is oriented horizontally. However, in some cases, you may want to change the orientation of the header text to vertical, diagonal, or at a custom angle. This can be achieved by adding a custom CSS class to the column header cell using the `customAttributes` property of the Grid columns.
 
 Follow the below steps to change the orientation of the header text in Grid:
 
@@ -288,7 +288,7 @@ The following example demonstrates how to change the orientation of the **Freigh
 
 ## Custom tooltip for header
 
-Custom tooltips for headers provide additional information when hovering over a column header in the Syncfusion Grid. This can be useful in situations where there is not enough space to display all of the information related to a column, or when there is additional context that may be helpful.
+Custom tooltips for headers provide additional information when hovering over a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. This can be useful in situations where there is not enough space to display all of the information related to a column, or when there is additional context that may be helpful.
 
 To enable custom tooltips for headers, you can use the `BeforeRender` event of the Grid component. This event is triggered for each header cell before it is rendered, allowing you to add a custom tooltip to the header cell using `tooltip` component.
 
@@ -309,7 +309,7 @@ Here's an example of how to use the `BeforeRender` event to add a custom tooltip
 
 ## Customize header text styles 
 
-Customizing the grid header styles allows you to modify the appearance of the column header in the Grid control to meet your design requirements. You can customize the font, background color, and other styles of the header cells. To customize the header styles in the grid, you can use CSS, properties, methods, or event support provided by the Syncfusion ASP.NET Core Grid component.
+Customizing the grid header styles allows you to modify the appearance of the column header in the Grid control to meet your design requirements. You can customize the font, background color, and other styles of the header cells. To customize the header styles in the grid, you can use CSS, properties, methods, or event support provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component.
 
 ### Using CSS
 
@@ -353,7 +353,7 @@ Step 1: Define a CSS class that specifies the styles you want to apply to the he
 Step 2: Set the **customAttributes** property of the desired column to an object that contains the CSS class **custom**. This CSS class will be applied to the header cell of the specified column in the Grid.
 
   ```ts
-    <e-grid-column field="Freight" headerText="Freight" customAttributes="@(new { @class="customcss" })" format='C' textAlign="Right" width="120"></e-grid-column>
+    <e-grid-column field="Freight" headerText="Freight" customAttributes="@(new { @class="custom" })" format='C' textAlign="Right" width="120"></e-grid-column>
   ```
 
 The following example demonstrates how to customize the appearance of the **OrderID** and **OrderDate** columns using custom attributes.
@@ -371,7 +371,7 @@ The following example demonstrates how to customize the appearance of the **Orde
 
 ### Using method 
 
-The Syncfusion Grid provides methods to customize the appearance of the grid columns header.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides methods to customize the appearance of the grid columns header.
 
 1. `getColumnHeaderByIndex`: The method is used to customize the appearance of a specific column header in the grid by specifying the index of the column for which you want to customize the header.
 
@@ -416,7 +416,7 @@ The following example demonstrates how to add a `headerCellInfo` event handler t
 
 ## How to refresh header 
 
-The refresh header feature in the Syncfusion ASP.NET Core Grid allows you to update the header section of the grid whenever changes are made to the grid's columns. This feature is useful when you want to reflect changes in the header immediately, such as modifying the column header text, width, or alignment.
+The refresh header feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid allows you to update the header section of the grid whenever changes are made to the grid's columns. This feature is useful when you want to reflect changes in the header immediately, such as modifying the column header text, width, or alignment.
 
 To use the refresh header feature, you can call the `refreshHeader` method of the Grid component. This method updates the grid header with the latest changes made to the columns.
 
@@ -438,7 +438,7 @@ The following example demonstrates how to use the `refreshHeader` method to upda
 
 ## How to get header element 
 
-To get the header element in a Syncfusion Grid, you can use one of the following methods:
+To get the header element in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can use one of the following methods:
 
 1. `getHeaderContent`: This method returns the header div element of the Grid. You can use this method to access the entire header content of the Grid.
 
