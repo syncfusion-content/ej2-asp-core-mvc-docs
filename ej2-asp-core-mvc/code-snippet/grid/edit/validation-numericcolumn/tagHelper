@@ -1,0 +1,34 @@
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="273px" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID"  headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"  validationRules="@(new { required= true })"></e-grid-column>                
+        <e-grid-column field="CustomerID" headerText="Customer Name" type="string" edit="@(new { @params = new Syncfusion.EJ2.Inputs.NumericTextBox() {
+            Change= "onChange"
+           }})" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="120" validationRules="@(new { required= true, min= 1,max=1000 })"></e-grid-column>                               
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" editType="dropdownedit" validationRules="@(new { required= true })"></e-grid-column>                
+    </e-grid-columns>
+ </ejs-grid>
+<script>
+    function load(args) {
+        this.columns[2].validationRules = { required: true, minLength: [customFunctionOne, 'Please enter a value greater than 1'], maxLength: [customFunction, 'Please enter a value less than 1000'] };
+    }
+    function customFunction(args) {
+        return args['value'].length >= 5;
+    };
+    function customFunction (args) {
+      return (args['value'] <= 1000);
+    }
+
+    function customFunctionOne (args) {
+       return (args['value'] >= 1);
+    }
+    function onActionComplete(args) {
+     if (args.requestType === "beginEdit" || args.requestType === "add") {
+        formElement = args.form;
+     }
+    }
+   function onChange() {
+      formElement['ej2_instances'][0].validate();
+    }
+</script>
