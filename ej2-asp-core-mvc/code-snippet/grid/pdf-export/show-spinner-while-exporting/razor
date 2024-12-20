@@ -1,0 +1,21 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).ToolbarClick("toolbarClick").PdfExportComplete("pdfExportComplete").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+   col.Field("ProductName").HeaderText("Product Name").Width("110").Add();
+   col.Field("Quantity").HeaderText("Quantity").Width("100").Add();
+}).AllowPaging(true).Toolbar(new List<string>() { "PdfExport" }).Height("272px").Render()
+
+<script>
+    function toolbarClick(args) {
+        let grid = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_pdfexport') {
+            grid.showSpinner();
+            grid.pdfExport();
+        }
+    }
+    function pdfExportComplete(args) {
+        let grid = document.getElementById("Grid").ej2_instances[0];
+        grid.hideSpinner();
+    }
+</script>
