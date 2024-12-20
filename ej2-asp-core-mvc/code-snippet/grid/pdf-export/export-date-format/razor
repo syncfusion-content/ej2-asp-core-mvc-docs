@@ -1,0 +1,16 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).ToolbarClick("toolbarClick").Height("272px").Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+        col.Field("OrderDate").HeaderText("Order Date").Width("100").Type("date").Format("EEE, MMM d, ''yy").Add();
+        col.Field("Freight").HeaderText("Freight").Width("80").Add();
+    }).Toolbar(new List<string>() { "PdfExport" }).Render()
+    
+<script>
+    function toolbarClick(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_pdfexport') {
+            grid.pdfExport();
+        }
+    }
+</script>

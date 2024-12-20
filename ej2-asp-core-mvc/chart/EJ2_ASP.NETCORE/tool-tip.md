@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tool Tip in ##Platform_Name## Chart Component
+title: Tool Tip in Syncfusion ##Platform_Name## Chart Component
 description: Learn here all about Tool Tip in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tool Tip
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip
+# Tooltip in ##Platform_Name## Chart Component
 
 <!-- markdownlint-disable MD036 -->
 
@@ -191,4 +191,15 @@ By default, tooltip shows information of x and y value in points. You can show m
 {% endtabs %}
 {% endif %}
 
+## Enable highlight
 
+By setting the [`EnableHighlight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_EnableHighlight) property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/tooltip/tooltip-enable/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-enable.cs" %}
+{% include code-snippet/chart/user-interaction/tooltip/tooltip-enable/tooltip-enable.cs %}
+{% endhighlight %}
+{% endtabs %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cross Hair in ##Platform_Name## Stock Chart Component
+title: Cross Hair in ##Platform_Name## Syncfusion Stock Chart Component
 description: Learn here all about Cross Hair in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cross Hair
@@ -96,7 +96,32 @@ The [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts
 {% endtabs %}
 {% endif %}
 
+**Snap to data**
 
+Enabling the [`SnapToData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartCrosshairSettings.html#Syncfusion_EJ2_Charts_StockChartCrosshairSettings_SnapToData) property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/user-interaction/crosshair-trackball/snapToData/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SnapToData.cs" %}
+{% include code-snippet/stock-chart/user-interaction/crosshair-trackball/snapToData/snapToData.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/user-interaction/crosshair-trackball/snapToData/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SnapToData.cs" %}
+{% include code-snippet/stock-chart/user-interaction/crosshair-trackball/snapToData/snapToData.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Add Trackball
 

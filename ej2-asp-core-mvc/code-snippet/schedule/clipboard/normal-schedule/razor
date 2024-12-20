@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("650px")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .AllowDragAndDrop(true)
+    .AllowResizing(true)
+    .ShowQuickInfo(false)
+    .AllowClipboard(true)
+    .Render()
+)

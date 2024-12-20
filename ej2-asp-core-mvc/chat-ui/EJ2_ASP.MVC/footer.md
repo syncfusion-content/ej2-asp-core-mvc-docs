@@ -12,7 +12,18 @@ documentation: ug
 
 ## Show or hide footer
 
-You can use `ShowFooter` property to enable or disable the chat footer.
+You can use [ShowFooter](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_ShowFooter) property to enable or disable the chat footer.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/footer/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Footer.cs" %}
+{% include code-snippet/chat-ui/footer/defaultMessages.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Footer](images/footer.png)
 
 ## Footer template 
 
