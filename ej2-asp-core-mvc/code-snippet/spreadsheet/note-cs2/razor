@@ -6,11 +6,11 @@
     }).Add();
 }).Render()
 
-< script >
+<script>
 
     function created() {
-    this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-    this.cellFormat({ verticalAlign: 'middle' }, 'A1:H1');
-}
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.cellFormat({ verticalAlign: 'middle' }, 'A1:H1');
+    }
 
-</ script >
+</script>

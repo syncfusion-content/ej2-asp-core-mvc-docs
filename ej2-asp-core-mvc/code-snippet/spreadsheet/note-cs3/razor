@@ -13,18 +13,19 @@
                 {
                     cell.Index(0).Notes("These shoes have been the most profitable this month.").Add();
                 }).Add();
-        }).Columns(column => {
+        }).Columns(column =>
+        {
             column.Width(130).Add();
             column.Width(100).Add();
             column.Width(100).Add();
         }).Add();
 }).Render()
 
-< script >
+<script>
 
     function created() {
-    this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-    this.cellFormat({ verticalAlign: 'middle' }, 'A1:H1');
-}
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.cellFormat({ verticalAlign: 'middle' }, 'A1:H1');
+    }
 
-</ script >
+</script>

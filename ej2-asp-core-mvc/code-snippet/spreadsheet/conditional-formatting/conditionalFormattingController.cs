@@ -11,6 +11,6 @@ public IActionResult Index()
                 new { EVModel= "Honda Clarity EV", JAN= "671", FEB= "1302", MAR= "466", APR= "989", MAY= "679", JUN= "891", TOTAL= "=SUM(B8=G8)" },
                 new { EVModel= "Toyota Prius Prime", JAN= "978", FEB= "1362", MAR= "1872", APR= "678", MAY= "900", JUN= "867", TOTAL= "=SUM(B9=G9)" }
             };
-            ViewBag.DefaultData = data;
+            ViewBag.DefaultData = conditionalFormatData;
             return View();
         }

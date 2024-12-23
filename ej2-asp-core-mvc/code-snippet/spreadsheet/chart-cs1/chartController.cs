@@ -8,6 +8,6 @@ public IActionResult Index()
                 new { Book= "Sci-Fi & Fantasy", Year 2016= "10033", Year 2017= "51200", Year 2018= "66211", Year 2019= "12899", Year 2020= "18779" },
                 new { Book= "Horror", Year 2016= "23454", Year 2017= "78665", Year 2018= "81232", Year 2019= "19888", Year 2020= "20986" }  
             };
-            ViewBag.DefaultData = data;
+            ViewBag.DefaultData = chartData;
             return View();
         }
