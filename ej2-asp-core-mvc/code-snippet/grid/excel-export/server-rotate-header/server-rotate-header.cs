@@ -1,16 +1,10 @@
-private List<string> headerValues = new List<string>();
-
-public ActionResult Index()
-{
-    ViewBag.DataSource = OrdersDetails.GetAllRecords();
-    return View();
-}
 public ActionResult ExcelExport(string gridModel)
 {
     GridExcelExport excelExporter = new GridExcelExport();
     Grid gridProperties = ConvertGridObject(gridModel);
     gridProperties.ServerExcelHeaderQueryCellInfo = ExcelHeaderQueryCellInfo;
-    var result = excelExporter.ExcelExport<dynamic>(gridProperties, OrdersDetails.GetAllRecords());
+    IEnumerable data = Utils.DataTableToJson(ordersDataTable);
+    var result = exp.ExcelExport<dynamic>(gridProperty, data);
     return result;
 }
 private void ExcelHeaderQueryCellInfo(object excel)
@@ -24,16 +18,3 @@ private void ExcelHeaderQueryCellInfo(object excel)
     excelExporter.HeaderCellRotate(name, 45); // Give the rotate degree value by the user.  
     name.Style.Borders.LineStyle = Syncfusion.XlsIO.ExcelLineStyle.None;
 }
-private Grid ConvertGridObject(string gridProperty)
-{
-    Grid GridModel = (Grid)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(Grid));
-    GridColumnModel gridColumns = (GridColumnModel)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(GridColumnModel));
-    GridModel.Columns = gridColumns.columns;
-    return GridModel;
-}
-
-public class GridColumnModel
-{
-    public List<GridColumn> columns { get; set; }
-}
-

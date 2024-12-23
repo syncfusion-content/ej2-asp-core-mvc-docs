@@ -61,7 +61,7 @@ The following example demonstrates how to export the selected records to a Excel
 {% endhighlight %}
 {% endtabs %}
 
-![Export the selected records](../../images/excel-exporting/exceloption-selected.png)
+![Export the selected records](../images/excel-exporting/exceloption-selected.png)
 
 ## Exporting grouped records
 
@@ -80,7 +80,7 @@ The following example demonstrates how to export grouped records to an Excel doc
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting grouped records](../../images/excel-exporting/exportoption-group.png)
+![Exporting grouped records](../images/excel-exporting/exportoption-group.png)
 
 ## Export with hidden columns
 
@@ -99,7 +99,7 @@ The following example demonstrates how to export hidden columns to a Excel file.
 {% endhighlight %}
 {% endtabs %}
 
-![Export with hidden columns](../../images/excel-exporting/exceloption-hidden.png)
+![Export with hidden columns](../images/excel-exporting/exceloption-hidden.png)
 
 ## Show or hide columns while exporting
 
@@ -126,7 +126,7 @@ In the following example, the **CustomerID** is initially a hidden column in the
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide columns while exporting](../../images/excel-exporting/exceloption-show.png)
+![Show or hide columns while exporting](../images/excel-exporting/exceloption-show.png)
 
 ## Enable filtering in the exported excel file
 
@@ -145,7 +145,7 @@ The following example demonstrates how to export data with filter options to an 
 {% endhighlight %}
 {% endtabs %}
 
-![Enable filtering](../../images/excel-exporting/exportoption-enable-filtering.png)
+![Enable filtering](../images/excel-exporting/exportoption-enable-filtering.png)
 
 ## Define file name
 
@@ -164,7 +164,7 @@ The following example demonstrates how to define a file name using `ExcelExportP
 {% endhighlight %}
 {% endtabs %}
 
-![ Define file name](../../images/excel-exporting/exceloption-filename.png)
+![ Define file name](../images/excel-exporting/exceloption-filename.png)
 
 ## Export the master detail grid
 
@@ -183,7 +183,7 @@ The following example demonstrates how to export master detail grid to the same 
 {% endhighlight %}
 {% endtabs %}
 
-![Export the master detail grid](../../images/excel-exporting/exportoption-mastergrid.png)
+![Export the master detail grid](../images/excel-exporting/exportoption-mastergrid.png)
 
 ## Customizing columns on export
 
@@ -208,7 +208,7 @@ The following example demonstrates how to customize the grid columns when export
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing columns on export](../../images/excel-exporting/exceloption-customizing-columns.png)
+![Customizing columns on export](../images/excel-exporting/exceloption-customizing-columns.png)
 
 ## Font and color customization 
 
@@ -233,7 +233,7 @@ In the following example, apply font styling to the caption, header, and record 
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing columns on export](../../images/excel-exporting/exceloption-font-color.png)
+![Customizing columns on export](../images/excel-exporting/exceloption-font-color.png)
 
 >By default, material theme is applied to exported excel document.
 
@@ -254,7 +254,7 @@ In the following demo, using the `Rotation` property of the style argument in th
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing columns on export](../../images/excel-exporting/exceloption-rotate.png)
+![Customizing columns on export](../images/excel-exporting/exceloption-rotate.png)
 
 ## Conditional cell formatting
 
@@ -273,7 +273,7 @@ The following example demonstrate how to customize the background color of the F
 {% endhighlight %}
 {% endtabs %}
 
-![Conditional cell formatting](../../images/excel-exporting/exceloption-cell-format.png)
+![Conditional cell formatting](../images/excel-exporting/exceloption-cell-format.png)
 
 ## Adding header and footer in the exported Excel file
 
@@ -292,7 +292,7 @@ The following example demonstrates how to add a header and footer to the exporte
 {% endhighlight %}
 {% endtabs %}
 
-![Adding header and footer](../../images/excel-exporting/exceloption-header-footer.gif)
+![Adding header and footer](../images/excel-exporting/exceloption-header-footer.gif)
 
 ## Export grid as blob
 

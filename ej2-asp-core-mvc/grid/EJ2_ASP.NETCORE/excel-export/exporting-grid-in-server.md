@@ -24,10 +24,6 @@ The following list of dependencies is required for Grid server-side Excel export
 
 * **Syncfusion.EJ2.GridExport**: This package contains the server-side export functionality specifically for the Grid component. It provides the necessary APIs and tools to handle data export to Excel on the server.
 
-* **Syncfusion.Compression.Base**:  This package provides compression utilities required for handling file compression during the Excel export process.
-
-* **Syncfusion.XlsIO.Base**: This package offers advanced Excel manipulation functionalities. It is responsible for creating, modifying, and exporting Excel files in various formats on the server.
-
 ## Server configuration
 
 To export the grid data to a Excel document on the server side, you need to perform the following server configuration using an ASP.NET Core Controller Action:
@@ -44,18 +40,20 @@ The following example shows server configuration using ASP.NET Core Controller A
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/excel-export/server-export/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="server-exportMVC.cs" %}
-{% include code-snippet/grid/excel-export/server-export/server-exportMVC.cs %}
+{% highlight c# tabtitle="server-exportCore.cs" %}
+{% include code-snippet/grid/excel-export/server-export/server-exportCore.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/MVC-EJ2-Grid-server-side-exporting).
+![Server configuration](../images/excel-exporting/excel-export-server.png)
+
+N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
 
 ## CSV Export in server side
 
 To perform CSV export on the server-side, you can use the `serverCsvExport` method, which sends the Grid properties to the server for processing and generating the CSV file.
 
-To initiate the CSV export, you can invoke the `serverCsvExport` method within the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. Upon triggering the event, the server will deserialize the Grid properties and pass them to the `CsvExport` method, which will handle exporting the properties to the CSV format.
+To initiate the CSV export, you can invoke the `serverCsvExport` method within the [ToolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. Upon triggering the event, the server will deserialize the Grid properties and pass them to the `CsvExport` method, which will handle exporting the properties to the CSV format.
 
 Here's an example of how you can accomplish CSV export on the server-side:
 
@@ -63,16 +61,18 @@ Here's an example of how you can accomplish CSV export on the server-side:
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/excel-export/server-csv-export/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="server-exportMVC.cs" %}
-{% include code-snippet/grid/excel-export/server-csv-export/server-exportMVC.cs %}
+{% highlight c# tabtitle="server-exportCore.cs" %}
+{% include code-snippet/grid/excel-export/server-csv-export/server-exportCore.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![CSV Export in server side](../images/excel-exporting/export-server-csv.png)
 
 ## Rotate a header text in the exported grid
 
 The Grid provides support to customize the column header styles, including changing text orientation, font color, and other visual aspects, in the exported Excel file on the server-side. This feature is particularly useful when you want to enhance the appearance of the exported data and create a unique representation of the Grid in the Excel document.
 
-To achieve this requirement, you can use the [excelHeaderQueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelHeaderQueryCellInfo) event of the Grid. This event is triggered when creating column headers for the Excel document to be exported on the server-side. In this event, you can collect the column header details and handle customizations.
+To achieve this requirement, you can use the [ExcelHeaderQueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelHeaderQueryCellInfo) event of the Grid. This event is triggered when creating column headers for the Excel document to be exported on the server-side. In this event, you can collect the column header details and handle customizations.
 
 In the following demo, using the `HeaderCellRotate` method of the `GridExcelExport` class in the [ServerExcelHeaderQueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ServerExcelHeaderQueryCellInfo) event, you can rotate the header text of the column header in the excel exported document.
 
@@ -84,6 +84,8 @@ In the following demo, using the `HeaderCellRotate` method of the `GridExcelExpo
 {% include code-snippet/grid/excel-export/server-rotate-header/server-rotate-header.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Rotate a header text in the exported grid](../images/excel-exporting/export-server-rotate.png)
 
 ## Limitations
 

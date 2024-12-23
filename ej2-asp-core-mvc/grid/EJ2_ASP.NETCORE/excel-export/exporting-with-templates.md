@@ -16,9 +16,9 @@ The grid offers the option to export the column, detail, and caption templates t
 
 The Excel export functionality allows you to export Grid columns that include images, hyperlinks, and custom text to an Excel document.
 
-In the following sample, the hyperlinks and images are exported to Excel using `hyperlink` and `image` properties in the [ExcelQueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelQueryCellInfo) event.
+In the following sample, the hyperlinks and images are exported to Excel using `hyperlink` and `image` properties in the [excelQueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelQueryCellInfo) event.
 
-> Excel Export supports base64 string to export the images.
+>* Excel Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

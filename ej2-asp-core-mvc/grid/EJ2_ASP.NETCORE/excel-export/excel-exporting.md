@@ -29,7 +29,7 @@ The following example demonstrates how to perform a Excel or CSV export action i
 {% endhighlight %}
 {% endtabs %}
 
-![Excel exporting](../../images/excel-exporting/excel-exporting.png)
+![Excel exporting](../images/excel-exporting/excel-exporting.png)
 
 ## Show spinner while exporting 
 
@@ -56,9 +56,9 @@ The following example demonstrates how to show and hide the spinner during Excel
 
 The Grid component provides a convenient way to export data to a Excel or CSV format. With the Excel or CSV export feature, you can define a custom data source while exporting. This allows you to export data that is not necessarily bind to the grid, which can be generated or retrieved based on your application logic.
 
-To export data, you need to define the `dataSource` property within the `excelExportProperties` object. This property represents the data source that will be used for the Excel or CSV export.
+To export data, you need to define the `dataSource` property within the `ExcelExportProperties` object. This property represents the data source that will be used for the Excel or CSV export.
 
-The following example demonstrates how to render custom dataSource during Excel export. By calling the `excelExport` method and passing the `excelExportProperties` object through the grid instance, the grid data will be exported to a Excel using the dynamically defined data source.
+The following example demonstrates how to render custom dataSource during Excel export. By calling the `excelExport` method and passing the `ExcelExportProperties` object through the grid instance, the grid data will be exported to a Excel using the dynamically defined data source.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -69,7 +69,7 @@ The following example demonstrates how to render custom dataSource during Excel 
 {% endhighlight %}
 {% endtabs %}
 
-![Binding custom data source while exporting](../../images/excel-exporting/excelexporting-custom.png)
+![Binding custom data source while exporting](../images/excel-exporting/excelexporting-custom.png)
 
 ## Exporting with custom aggregate
 
@@ -90,7 +90,7 @@ The following example shows how to export the grid with a custom aggregate that 
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting with custom aggregate](../../images/excel-exporting/excelexporting-aggregate.png)
+![Exporting with custom aggregate](../images/excel-exporting/excelexporting-aggregate.png)
 
 ## Exporting with cell and row spanning 
 
@@ -109,7 +109,7 @@ The following example demonstrates how to perform export with cell and row spann
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting with cell and row spanning](../../images/excel-exporting/excel-exporting-spanning.png)
+![Exporting with cell and row spanning](../images/excel-exporting/excel-exporting-spanning.png)
 
 > * The `updateCell` method does not support row and column spanning.
 
@@ -130,7 +130,7 @@ The following example demonstrates how to export the grid with custom date forma
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting with custom date format](../../images/excel-exporting/excelexport-format.png)
+![Exporting with custom date format](../images/excel-exporting/excelexport-format.png)
 
 ## Merge duplicate cells in a specific column before exporting
 
@@ -147,7 +147,7 @@ Here’s an example demonstrating how to merge duplicate cells in the OrderID co
 {% endhighlight %}
 {% endtabs %}
 
-![Merge duplicate cells](../../images/excel-exporting/excelexporting-merge.png)
+![Merge duplicate cells](../images/excel-exporting/excelexporting-merge.png)
 
 ## Exporting multiple grids
 
@@ -157,7 +157,7 @@ Exporting multiple grids in the Syncfusion ASP.NET Core Grid component allows yo
 
 Excel exporting provides support for exporting multiple grids on the same page. This feature is particularly useful when you want to combine and organize data from different grids for a unified view in the exported Excel file.
 
-To achieve this, you need to define the `multipleExport.type` property as **AppendToSheet** in the `excelExportProperties` object. This setting ensures that the data from each grid will be appended to the same Excel sheet.
+To achieve this, you need to define the `multipleExport.type` property as **AppendToSheet** in the `ExcelExportProperties` object. This setting ensures that the data from each grid will be appended to the same Excel sheet.
 
 Additionally, you have an option to include blank rows between the data of each grid to visually separate them in the exported Excel sheet. The number of blank rows to be inserted can be defined using the `multipleExport.blankRows` property.
 
@@ -172,7 +172,7 @@ The following example demonstrates how to export multiple grids to the same page
 {% endhighlight %}
 {% endtabs %}
 
-![Same sheet](../../images/excel-exporting/excelexporting-samesheet.gif)
+![Same sheet](../images/excel-exporting/excelexporting-samesheet.gif)
 
 >By default, **multipleExport.blankRows** value is 5.
 
@@ -182,7 +182,7 @@ Excel export functionality enables the exporting of multiple grids into separate
 
 To achieve this, you can follow these steps:
 
-1. Access the `excelExportProperties` of the Grid component.
+1. Access the `ExcelExportProperties` of the Grid component.
 
 2. Set the `multipleExport.type` to **NewPage**.
 
@@ -199,7 +199,7 @@ The following example demonstrates how to export multiple grids to a Excel file 
 {% endhighlight %}
 {% endtabs %}
 
-![New sheet](../../images/excel-exporting/excelexporting-newsheet.gif)
+![New sheet](../images/excel-exporting/excelexporting-newsheet.gif)
 
 ### Limitations
 
@@ -209,7 +209,7 @@ The following example demonstrates how to export multiple grids to a Excel file 
 
 Exporting a hierarchy grid in the Syncfusion ASP.NET Core Grid component allows you to generate a Excel or CSV document that includes the parent grid along with its child grids. This feature is useful when you need to export hierarchical data with its related details.
 
-To achieve this, you can customize the exporting behavior by using the `excelExportProperties.hierarchyExportMode` property of the Grid. This property allows you to specify the exporting behavior for the hierarchy grid. The following options are available:
+To achieve this, you can customize the exporting behavior by using the `ExcelExportProperties.hierarchyExportMode` property of the Grid. This property allows you to specify the exporting behavior for the hierarchy grid. The following options are available:
 
 | Mode     | Behavior    |
 |----------|-------------|
@@ -217,7 +217,7 @@ To achieve this, you can customize the exporting behavior by using the `excelExp
 | All      | Exports the master grid with all child grids, expanded or not. |
 | None     | Exports only the master grid without any child grids. |
 
-The following example demonstrates how to export hierarchical grid to Excel document. Also change the `excelExportProperties`.HierarchyExportMode` property by using [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Value) property of the DropDownList component:
+The following example demonstrates how to export hierarchical grid to Excel document. Also change the `ExcelExportProperties.hierarchyExportMode` property by using [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Value) property of the DropDownList component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -228,7 +228,7 @@ The following example demonstrates how to export hierarchical grid to Excel docu
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting hierarchy grid](../../images/excel-exporting/excelexporting-heirachy.png)
+![Exporting hierarchy grid](../images/excel-exporting/excelexporting-heirachy.png)
 
 ### Limitations
 
@@ -240,7 +240,7 @@ The Grid component provides a convenient way to add formulas to cells during the
 
 To add formulas to cells during the export process, you can utilize the `valueAccessor` method along with the [excelQueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelQueryCellInfo) event. 
 
-In the following example, the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) function handles a toolbar button click event. When the Excel Export button is clicked, it triggers the Excel export process. Inside this function, an `excelExportProperties` object is defined, specifying that hidden columns should be included in the export. Inside the `excelQueryCellInfo` event, the `valueAccessor` method generates formulas for the desired cells and assigns these formulas to the cell's formula property, ensuring that the calculated values are exported to the Excel document:
+In the following example, the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) function handles a toolbar button click event. When the Excel Export button is clicked, it triggers the Excel export process. Inside this function, an `ExcelExportProperties` object is defined, specifying that hidden columns should be included in the export. Inside the `excelQueryCellInfo` event, the `valueAccessor` method generates formulas for the desired cells and assigns these formulas to the cell's formula property, ensuring that the calculated values are exported to the Excel document:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -251,7 +251,7 @@ In the following example, the [toolbarClick](https://help.syncfusion.com/cr/aspn
 {% endhighlight %}
 {% endtabs %}
 
-![Add formula for the cell while exporting](../../images/excel-exporting/excelexporting-formula.png)
+![Add formula for the cell while exporting](../images/excel-exporting/excelexporting-formula.png)
 
 ## Limitations
 

@@ -24,13 +24,9 @@ The following list of dependencies is required for Grid server-side Excel export
 
 * **Syncfusion.EJ2.GridExport**: This package contains the server-side export functionality specifically for the Grid component. It provides the necessary APIs and tools to handle data export to Excel on the server.
 
-* **Syncfusion.Compression.Base**:  This package provides compression utilities required for handling file compression during the Excel export process.
-
-* **Syncfusion.XlsIO.Base**: This package offers advanced Excel manipulation functionalities. It is responsible for creating, modifying, and exporting Excel files in various formats on the server.
-
 ## Server configuration
 
-To export the grid data to a Excel document on the server side, you need to perform the following server configuration using an ASP.NET Core Controller Action:
+To export the grid data to a Excel document on the server side, you need to perform the following server configuration using an ASP.NET MVC Controller Action:
 
 1. Set up the necessary dependencies and imports in your server-side code.
 
@@ -38,7 +34,7 @@ To export the grid data to a Excel document on the server side, you need to perf
 
 3. Use the `serverExcelExport` method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
 
-The following example shows server configuration using ASP.NET Core Controller Action.
+The following example shows server configuration using ASP.NET MVC Controller Action.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -49,7 +45,7 @@ The following example shows server configuration using ASP.NET Core Controller A
 {% endhighlight %}
 {% endtabs %}
 
-![Server configuration](../../images/excel-exporting/excel-export-server.png)
+![Server configuration](../images/excel-exporting/excel-export-server.png)
 
 N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/MVC-EJ2-Grid-server-side-exporting).
 
@@ -70,7 +66,7 @@ Here's an example of how you can accomplish CSV export on the server-side:
 {% endhighlight %}
 {% endtabs %}
 
-![CSV Export in server side](../../images/excel-exporting/export-server-csv.png)
+![CSV Export in server side](../images/excel-exporting/export-server-csv.png)
 
 ## Rotate a header text in the exported grid
 
@@ -89,7 +85,7 @@ In the following demo, using the `HeaderCellRotate` method of the `GridExcelExpo
 {% endhighlight %}
 {% endtabs %}
 
-![Rotate a header text in the exported grid](../../images/excel-exporting/export-server-rotate.png)
+![Rotate a header text in the exported grid](../images/excel-exporting/export-server-rotate.png)
 
 ## Limitations
 

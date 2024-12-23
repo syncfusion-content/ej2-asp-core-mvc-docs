@@ -29,7 +29,7 @@ The following example demonstrates how to perform a Excel or CSV export action i
 {% endhighlight %}
 {% endtabs %}
 
-![Excel exporting](../../images/excel-exporting/excel-exporting.png)
+![Excel exporting](../images/excel-exporting/excel-exporting.png)
 
 ## Show spinner while exporting 
 
@@ -69,7 +69,7 @@ The following example demonstrates how to render custom dataSource during Excel 
 {% endhighlight %}
 {% endtabs %}
 
-![Binding custom data source while exporting](../../images/excel-exporting/excelexporting-custom.png)
+![Binding custom data source while exporting](../images/excel-exporting/excelexporting-custom.png)
 
 ## Exporting with custom aggregate
 
@@ -90,7 +90,7 @@ The following example shows how to export the grid with a custom aggregate that 
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting with custom aggregate](../../images/excel-exporting/excelexporting-aggregate.png)
+![Exporting with custom aggregate](../images/excel-exporting/excelexporting-aggregate.png)
 
 ## Exporting with cell and row spanning 
 
@@ -109,7 +109,7 @@ The following example demonstrates how to perform export with cell and row spann
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting with cell and row spanning](../../images/excel-exporting/excel-exporting-spanning.png)
+![Exporting with cell and row spanning](../images/excel-exporting/excel-exporting-spanning.png)
 
 > * The `updateCell` method does not support row and column spanning.
 
@@ -130,7 +130,7 @@ The following example demonstrates how to export the grid with custom date forma
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting with custom date format](../../images/excel-exporting/excelexport-format.png)
+![Exporting with custom date format](../images/excel-exporting/excelexport-format.png)
 
 ## Merge duplicate cells in a specific column before exporting
 
@@ -147,7 +147,7 @@ Here’s an example demonstrating how to merge duplicate cells in the OrderID co
 {% endhighlight %}
 {% endtabs %}
 
-![Merge duplicate cells](../../images/excel-exporting/excelexporting-merge.png)
+![Merge duplicate cells](../images/excel-exporting/excelexporting-merge.png)
 
 ## Exporting multiple grids
 
@@ -174,7 +174,7 @@ The following example demonstrates how to export multiple grids to the same page
 
 >By default, **multipleExport.blankRows** value is 5.
 
-![Same sheet](../../images/excel-exporting/excelexporting-samesheet.gif)
+![Same sheet](../images/excel-exporting/excelexporting-samesheet.gif)
 
 ### New sheet
 
@@ -199,7 +199,7 @@ The following example demonstrates how to export multiple grids to a Excel file 
 {% endhighlight %}
 {% endtabs %}
 
-![New sheet](../../images/excel-exporting/excelexporting-newsheet.gif)
+![New sheet](../images/excel-exporting/excelexporting-newsheet.gif)
 
 ### Limitations
 
@@ -228,7 +228,7 @@ The following example demonstrates how to export hierarchical grid to Excel docu
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting hierarchy grid](../../images/excel-exporting/excelexporting-heirachy.png)
+![Exporting hierarchy grid](../images/excel-exporting/excelexporting-heirachy.png)
 
 ### Limitations
 
@@ -251,7 +251,7 @@ In the following example, the [ToolbarClick](https://help.syncfusion.com/cr/aspn
 {% endhighlight %}
 {% endtabs %}
 
-![Add formula for the cell while exporting](../../images/excel-exporting/excelexporting-formula.png)
+![Add formula for the cell while exporting](../images/excel-exporting/excelexporting-formula.png)
 
 ## Limitations
 
