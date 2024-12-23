@@ -1,0 +1,53 @@
+
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("add").Content("Add").CssClass("e-primary").Render()
+    @Html.EJS().Button("edit").Content("Edit").CssClass("e-primary custom").Render()
+    @Html.EJS().Button("delete").Content("Delete").CssClass("e-primary custom").Render()
+    @Html.EJS().Button("updaterow").Content("Update Row").CssClass("e-primary custom").Render()
+    @Html.EJS().Button("updatecell").Content("Update Cell").CssClass("e-primary custom").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").ValidationRules(new { required = "true"}).Add();
+    col.Field("ShipCity").HeaderText("Ship City").EditType("dropdownedit").Width("150").ValidationRules(new { required = "true"}).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").ValidationRules(new { required = "true"}).Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Render()
+<script>
+    document.getElementById('add').onclick = handleButtonClick;
+    document.getElementById('edit').onclick = handleButtonClick;
+    document.getElementById('delete').onclick = handleButtonClick;
+    document.getElementById('updaterow').onclick = handleButtonClick;
+    document.getElementById('updatecell').onclick = handleButtonClick;
+    function handleButtonClick(event){
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if(event.target.id === "add") grid.addRecord({ "OrderID": Math.floor(Math.random() * 100000), "CustomerID": generateCustomerId(),"ShipCity": generateShipCity(), "ShipName": generateShipName()});
+        else if(event.target.id === "edit") grid.startEdit();
+        else if(event.target.id === "delete") grid.deleteRecord();
+        else if(event.target.id === "updaterow") grid.updateRow(0, { OrderID: 10248, CustomerID: 'RTER', ShipCity: 'America', ShipName: 'Hanari' });
+        else grid.setCellValue((grid.currentViewData[0]).OrderID, 'CustomerID', 'Value Changed');
+    }
+    function generateCustomerId() {
+        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var result = '';
+        for (var i = 0; i < 5; i++) {
+            result += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        return result;
+    }
+    // Generate a random ShipCity
+    function generateShipCity() {
+        var cities = ['London', 'Paris', 'New York', 'Tokyo', 'Berlin'];
+        return cities[Math.floor(Math.random() * cities.length)];
+    }
+    // Generate a random ShipName
+    function generateShipName() {
+        var names = ['Que Delícia', 'Bueno Foods', 'Island Trading', 'Laughing Bacchus Winecellars'];
+        return names[Math.floor(Math.random() * names.length)];
+    }
+</script>
+<style>
+    .custom {
+        margin-left: 10px;
+    }
+</style>
