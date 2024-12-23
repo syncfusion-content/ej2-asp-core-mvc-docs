@@ -33,7 +33,7 @@ In the following sample, the hyperlinks and images are exported to Excel using `
 
 ## Exporting with detail template
 
-By default, the grid will export the parent grid with expanded detail rows alone. Change the exporting option by using the `ExcelExportProperties.hierarchyExportMode` property. The available options are:
+By default, the grid will export the parent grid with expanded detail rows alone. Change the exporting option by using the `excelExportProperties.hierarchyExportMode` property. The available options are:
 
 | Mode     | Behavior    |
 |----------|-------------|

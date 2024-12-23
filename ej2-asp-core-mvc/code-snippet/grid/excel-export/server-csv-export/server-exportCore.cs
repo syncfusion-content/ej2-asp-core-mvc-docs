@@ -1,6 +1,6 @@
 public IActionResult Index()
 {
-    ViewBag.DataSource = OrdersDetails.GetAllRecords();
+    ViewBag.dataSource = OrdersDetails.GetAllRecords();
     return View();
 }
 public ActionResult CsvGridExport([FromForm] string gridModel)

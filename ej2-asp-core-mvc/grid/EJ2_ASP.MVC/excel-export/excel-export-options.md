@@ -94,7 +94,7 @@ The following example demonstrates how to export hidden columns to a Excel file.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/excel-export/export-hidden/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="xport-hidden.cs" %}
+{% highlight c# tabtitle="export-hidden.cs" %}
 {% include code-snippet/grid/excel-export/export-hidden/export-hidden.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -121,7 +121,7 @@ In the following example, the **CustomerID** is initially a hidden column in the
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/excel-export/show-hide/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="xport-hidden.cs" %}
+{% highlight c# tabtitle="show-hide.cs" %}
 {% include code-snippet/grid/excel-export/show-hide/show-hide.cs %}
 {% endhighlight %}
 {% endtabs %}

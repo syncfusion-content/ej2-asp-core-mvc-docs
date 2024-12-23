@@ -9,7 +9,7 @@
         </span>
     </div>
 </div>
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowExcelExport().ToolbarClick("toolbarClick").Height("273px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().ToolbarClick("toolbarClick").Height("273px").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").CustomAttributes(new { @class = "orientationcss" }).Add();

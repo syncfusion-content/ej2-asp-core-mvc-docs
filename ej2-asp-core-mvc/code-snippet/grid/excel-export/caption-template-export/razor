@@ -1,4 +1,4 @@
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowExcelExport().ToolbarClick("toolbarClick").ExportGroupCaption("exportGroupCaption").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().ToolbarClick("toolbarClick").ExportGroupCaption("exportGroupCaption").Columns(col =>
 {
    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("FirstName").HeaderText("Name").Width("120").Add();

@@ -1,4 +1,4 @@
-<ejs-grid id="grid" dataSource="@ViewBag.DataSource" allowExcelExport="true" toolbar="@(new List<string>() {"ExcelExport"})"
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" toolbar="@(new List<string>() {"ExcelExport"})"
     toolbarClick="toolbarClick" allowGrouping="true" exportGroupCaption="exportGroupCaption">
     <e-grid-groupsettings captionTemplate="#captiontemplate" columns="@(new string[] {"EmployeeID"})"></e-grid-groupsettings>
     <e-grid-columns>

@@ -1,4 +1,4 @@
-<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="400px" toolbarClick="toolbarClick" toolbar=@(new List<string>() { "ExcelExport" })>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="400px" toolbarClick="toolbarClick" toolbar=@(new List<string>() { "ExcelExport" })>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="100" textAlign="Right"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="CustomerID" width="100"></e-grid-column>
