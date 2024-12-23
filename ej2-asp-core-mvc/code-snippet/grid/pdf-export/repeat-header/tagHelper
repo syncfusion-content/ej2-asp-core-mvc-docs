@@ -14,7 +14,7 @@
             grid.pdfExport();
         }
     }
-    function PdfHeaderQueryCellInfo(args) {
+    function pdfHeaderQueryCellInfo(args) {
     if (args.cell && args.cell.row && args.cell.row.pdfGrid) {
         args.cell.row.pdfGrid.repeatHeader = true;
     }}
