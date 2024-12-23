@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Control Annotations Visibility in EJ2 ASP.NET Core PDF Viewer Control | Syncfusion
+title: Annotations Visibility in EJ2 ASP.NET Core PDF Viewer Control | Syncfusion
 description: Learn here how to Control PDF Annotations Visibility ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Viewer
