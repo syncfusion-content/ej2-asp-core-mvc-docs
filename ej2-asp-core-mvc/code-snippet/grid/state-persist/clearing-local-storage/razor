@@ -10,9 +10,10 @@
 }).AllowPaging(true).Render()
 <script>
     document.getElementById('restore').onclick = function () {
-        document.getElementById('grid').ej2_instances[0].enablePersistence = false;
+        var grid=document.getElementById('grid').ej2_instances[0];
+        grid.enablePersistence = false;
         window.localStorage.setItem("gridOrderDetails", "");
-        document.getElementById('grid').ej2_instances[0].destroy();
+        grid.destroy();
         location.reload();
     }
 </script>
