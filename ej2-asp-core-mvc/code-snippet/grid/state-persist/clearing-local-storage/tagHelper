@@ -1,7 +1,7 @@
 <div style="padding-bottom:20px">
- <ejs-button id="add" content="Add Columns" class="e-primary"></ejs-button>
+    <ejs-button id="restore" content="Restore to initial state" class="e-primary"></ejs-button>
 </div>
-<ejs-grid id="grid" dataSource="@ViewBag.dataSource" enablePersistence="true" allowPaging="true" height="270px"> 
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" enablePersistence="true" allowPaging="true" allowFiltering="true" height="278px"> 
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
@@ -10,10 +10,11 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-    document.getElementById('add').addEventListener('click', function () {
+    document.getElementById('restore').onclick = function () {
         var grid=document.getElementById('grid').ej2_instances[0];
-        var columnObject = { field: "Freight", headerText: 'Freight', width: 120 };
-        grid.columns.push(columnObject);
-        grid.refreshColumns();
-    });
+        grid.enablePersistence = false;
+        window.localStorage.setItem("gridOrderDetails", "");
+        grid.destroy();
+        location.reload();
+    }
 </script>

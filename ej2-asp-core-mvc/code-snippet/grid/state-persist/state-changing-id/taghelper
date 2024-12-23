@@ -1,0 +1,21 @@
+<div style="padding-bottom:20px">
+    <ejs-button id="restore" content="Restore to initial state" class="e-primary"></ejs-button>
+</div>
+<ejs-grid id="OrderDetails" dataSource="@ViewBag.dataSource" enablePersistence="true" allowPaging="true" allowFiltering="true" height="270px"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('restore').addEventListener('click', function () {
+        var gridElement = document.getElementById("OrderDetails");
+        if (gridElement) {
+            var newGridId = 'OrderDetails' + Math.floor(Math.random() * 10);
+            gridElement.id = newGridId;
+            location.reload();
+        }
+    });
+</script>
