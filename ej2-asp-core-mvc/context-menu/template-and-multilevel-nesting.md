@@ -37,6 +37,8 @@ The [ItemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 {% endtabs %}
 {% endif %}
 
+![Drop Down Button Template Support](images/context-menu-item-template.png)
+
 ## Template
 
 {% if page.publishingplatform == "aspnet-core" %}
