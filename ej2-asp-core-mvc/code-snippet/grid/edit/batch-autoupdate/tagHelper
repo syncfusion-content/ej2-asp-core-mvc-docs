@@ -1,0 +1,69 @@
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="400px" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="ProductID" headerText="Product ID" textAlign="Right" isPrimaryKey="true" width="100" validationRules="@(new { required=true})"></e-grid-column>
+        <e-grid-column field="ProductName" headerText="Product Name" width="120" validationRules="@(new { required=true})"></e-grid-column>
+        <e-grid-column field="UnitPrice" headerText="Unit Price" editType="numericedit" validationRules="@(new { required= true, min=1 })" edit="@(new {create = "priceCreate", read = "priceRead", destroy = "priceDestroy", write = "priceWrite"})" width="150" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="UnitsInStock" headerText="Units In Stock" editType="numericedit" validationRules="@(new { required= true, min=1 })" edit="@(new {create = "stockCreate", read = "stockRead", destroy = "stockDestroy", write = "stockWrite"})" width="150" textAlign="Right"></e-grid-column>
+        <e-grid-column field="TotalCost" headerText="Total Cost" width="150" format="C2" textAlign="Right"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+  var priceElement;
+  var priceObject;
+  var stockElement;
+  var stockObject;
+  function priceCreate() {
+    priceElement = document.createElement('input');
+    return priceElement;
+  }
+  function priceRead() {
+    return priceObject.value;
+  }
+  function priceDestroy() {
+    priceObject.destroy();
+  }
+  function priceWrite(args) {
+    var grid = document.getElementById('grid').ej2_instances[0];
+    var rowData = args.rowData;
+    var rowIndex = grid.getRowInfo(args.row).rowIndex;
+    priceObject = new ej.inputs.NumericTextBox(
+    {
+      value: args.rowData[args.column.field],
+      change: function(args) {
+        var totalCostValue = args.value * rowData['UnitsInStock'];
+        grid.updateCell(rowIndex, 'TotalCost', totalCostValue);
+      }
+    });
+    priceObject.appendTo(priceElement);
+  }
+  function cellEdit(args) {
+    if(args.columnName == "TotalCost") {
+      args.cancel = true;
+    }
+  }
+  function stockCreate() {
+    stockElement = document.createElement('input');
+    return stockElement;
+  }
+    function stockRead() {
+      return stockObject.value;
+    }
+    function stockDestroy() {
+      stockObject.destroy();
+    }
+    function stockWrite(args) {
+      var grid = document.getElementById('grid').ej2_instances[0];
+      var rowData = args.rowData;
+      var rowIndex = grid.getRowInfo(args.row).rowIndex;
+      stockObject = new ej.inputs.NumericTextBox(
+      {
+        value: args.rowData[args.column.field],
+        change: function(args) {
+          var totalCostValue = args.value * rowData['UnitPrice'];
+          grid.updateCell(rowIndex, 'TotalCost', totalCostValue);
+        }
+      });
+      stockObject.appendTo(stockElement);
+    }
+</script>

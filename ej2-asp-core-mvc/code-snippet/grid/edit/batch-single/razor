@@ -1,0 +1,39 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").AllowPaging().EnableHover(false).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").ValidationRules(new { required = "true"}).Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").ValidationRules(new { required = "true", min=3 ,max=1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").ValidationRules(new { required = "true"}).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").ValidationRules(new { required = "true"}).Add();
+}).Created("created").Load("load").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Delete", "Update", "Cancel" }).Render()
+<script>
+    function created() {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        grid.getContentTable().addEventListener('click', function(args) {
+        if (args.target.classList.contains('e-rowcell')) {
+            grid.editModule.editCell(parseInt(args.target.getAttribute('index')),
+                grid.getColumnByIndex(parseInt(args.target.getAttribute('data-colindex'))).field);
+            }
+        });
+    }
+    function load() {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        grid.element.addEventListener('keydown', function(event) {
+        var closestTableCell = e.target.closest('td');
+        if (event.keyCode === 39 && !ej.base.isNullOrUndefined(closestTableCell.nextSibling)) {
+            editACell(closestTableCell.nextSibling);
+        }
+        if (event.keyCode === 37 && !ej.base.isNullOrUndefined(closestTableCell.previousSibling) && !grid.getColumnByIndex(parseInt(closestTableCell.previousSibling.getAttribute('data-colindex'))).isPrimaryKey) {
+            editACell(closestTableCell.previousSibling);
+        }
+        if (event.keyCode === 40 && !ej.base.isNullOrUndefined(closestTableCell.closest('tr').nextSibling)) {
+            editACell(closestTableCell.closest('tr').nextSibling.querySelectorAll('td')[parseInt(closestTableCell.getAttribute('data-colindex'))]);
+        }
+        if (event.keyCode === 38 && !ej.base.isNullOrUndefined(closestTableCell.closest('tr').previousSibling)) {
+            editACell(closestTableCell.closest('tr').previousSibling.querySelectorAll('td')[parseInt(closestTableCell.getAttribute('data-colindex'))]);}});
+    }
+    function editACell(args) {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        grid.editModule.editCell(parseInt(args.getAttribute('index')),grid.getColumnByIndex(parseInt(args.getAttribute('data-colindex'))).field);
+    }
+</script>
