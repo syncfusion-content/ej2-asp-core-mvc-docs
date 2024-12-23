@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Change the Floating Label Color of a Textbox in Syncfusion Textbox Component
+title: Change Floating Label Color in Syncfusion Textbox Component
 description: Learn here all about Change The Floating Label Color Of The Textbox in Syncfusion ##Platform_Name## Textbox component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Change The Floating Label Color Of The Textbox
