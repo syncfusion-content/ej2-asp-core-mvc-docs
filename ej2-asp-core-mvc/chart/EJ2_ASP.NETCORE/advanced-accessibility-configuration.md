@@ -9,19 +9,19 @@ documentation: ug
 ---
 
 
-# Accessibility customization in ##Platform_Name## Chart control
+# Accessibility customization in ##Platform_Name## Chart component
 
-The Syncfusion® ##Platform_Name## Chart control is structured to visualize data in a graphical manner. It provides robust customization options for accessibility, allowing you to enhance the user experience for those with disabilities. The main attributes of the ##Platform_Name## Chart control's accessibility customization are briefly explained in this section.
+The Syncfusion® ##Platform_Name## Chart component is structured to visualize data in a graphical manner. It provides robust customization options for accessibility, allowing you to enhance the user experience for those with disabilities. The main attributes of the ##Platform_Name## Chart component's accessibility customization are briefly explained in this section.
 
-The chart control has a number of characteristics that enable accessibility features to be customized, including:
+The chart component has a number of characteristics that enable accessibility features to be customized, including:
 
-* `accessibilityDescription` - Provides a text description for the chart, improving support for screen readers.
-* `accessibilityRole` - Specifies the role of the chart, helping screen readers to identify the element appropriately.
-* `focusable` - Allows the chart to receive focus, making it accessible via keyboard navigation.
-* `focusBorderColor` - Sets the color of the focus border, enhancing visibility when the chart is focused.
-* `focusBorderMargin` - Defines the margin around the focus border.
-* `focusBorderWidth` - Specifies the width of the focus border.
-* `tabIndex` - Specifies the tab order of the chart element, enabling efficient keyboard navigation.
+* [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityDescription) - Provides a text description for the chart, improving support for screen readers.
+* [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityRole) - Specifies the role of the chart, helping screen readers to identify the element appropriately.
+* [`Focusable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_Focusable) - Allows the chart to receive focus, making it accessible via keyboard navigation.
+* [`FocusBorderColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_FocusBorderColor) - Sets the color of the focus border, enhancing visibility when the chart is focused.
+* [`FocusBorderMargin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_FocusBorderMargin) - Defines the margin around the focus border.
+* [`FocusBorderWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_FocusBorderWidth) - Specifies the width of the focus border.
+* [`TabIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_TabIndex) - Specifies the tab order of the chart element, enabling efficient keyboard navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,13 +48,13 @@ The chart control has a number of characteristics that enable accessibility feat
 
 ## Series
 
-The `series` supports the customization of accessibility for data points, allowing key characteristics to be adjusted for enhanced accessibility, such as:
+The [`Series`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Series) supports the customization of accessibility for data points, allowing key characteristics to be adjusted for enhanced accessibility, such as:
 
-* `accessibilityDescription` - Provides a text description for the series root element, enhancing support for screen readers.
-* `accessibilityDescriptionFormat` - Specifies a format for the accessibility description of each point in the series, allowing dynamic content. The format string can include the placeholders such as ${series.name}, ${point.x}, ${point.y}, ${point.high}, etc. For example, the format "${series.name} : ${point.x}" displays the series name and x-value of the point in the accessibility description. Data point's values like high, low, open, and close are applicable based on the series types.
-* `accessibilityRole` - Specifies the role of the series, helping screen readers to identify the element appropriately.
-* `focusable` - Allows the series to receive focus, making it accessible via keyboard navigation.
-* `tabIndex` - Specifies the tab order of the series element, enabling efficient keyboard navigation.
+* [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesAccessibility.html#Syncfusion_EJ2_Charts_ChartSeriesAccessibility_AccessibilityDescription) - Provides a text description for the series root element, enhancing support for screen readers.
+* [`AccessibilityDescriptionFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesAccessibility.html#Syncfusion_EJ2_Charts_ChartSeriesAccessibility_AccessibilityDescriptionFormat) - Specifies a format for the accessibility description of each point in the series, allowing dynamic content. The format string can include the placeholders such as ${series.name}, ${point.x}, ${point.y}, ${point.high}, etc. For example, the format "${series.name} : ${point.x}" displays the series name and x-value of the point in the accessibility description. Data point's values like high, low, open, and close are applicable based on the series types.
+* [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesAccessibility.html#Syncfusion_EJ2_Charts_ChartSeriesAccessibility_AccessibilityRole) - Specifies the role of the series, helping screen readers to identify the element appropriately.
+* [`Focusable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesAccessibility.html#Syncfusion_EJ2_Charts_ChartSeriesAccessibility_Focusable) - Allows the series to receive focus, making it accessible via keyboard navigation.
+* [`TabIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesAccessibility.html#Syncfusion_EJ2_Charts_ChartSeriesAccessibility_TabIndex) - Specifies the tab order of the series element, enabling efficient keyboard navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -81,12 +81,12 @@ The `series` supports the customization of accessibility for data points, allowi
 
 ## Title and subtitle
 
-In the ##Platform_Name## chart control, the `titleStyle` and `subTitleStyle` attributes allow you to customize the accessibility of the chart's title and subtitle. The following `accessibility` properties in `titleStyle` and `subTitleStyle` can be customized for accessibility:
+In the ##Platform_Name## chart component, the [`TitleStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TitleStyle) and [`SubTitleStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_SubTitleStyle) attributes allow you to customize the accessibility of the chart's title and subtitle. The following [`Accessibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTitleSettings.html#Syncfusion_EJ2_Charts_ChartTitleSettings_Accessibility) properties in [`TitleStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TitleStyle) and [`SubTitleStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_SubTitleStyle) can be customized for accessibility:
 
-* `accessibilityDescription` - Provides a text description for the chart title and subtitle, enhancing support for screen readers.
-* `accessibilityRole` - Specifies the role of the chart title and subtitle, helping screen readers to identify the element appropriately.
-* `focusable` - Enables or disables the keyboard navigation focus for the title and subtitle.
-* `tabIndex` - Specifies the tab order of the title and subtitle element, enabling efficient keyboard navigation.
+* [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityDescription) - Provides a text description for the chart title and subtitle, enhancing support for screen readers.
+* [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityRole) - Specifies the role of the chart title and subtitle, helping screen readers to identify the element appropriately.
+* [`Focusable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_Focusable) - Enables or disables the keyboard navigation focus for the title and subtitle.
+* [`TabIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_TabIndex) - Specifies the tab order of the title and subtitle element, enabling efficient keyboard navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -113,12 +113,12 @@ In the ##Platform_Name## chart control, the `titleStyle` and `subTitleStyle` att
 
 ## Annotations
 
-The `annotations` property allows you to add annotations to the chart in specific regions. The following `accessibility` properties in `annotations` can be customized for accessibility:
+The [`Annotations`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Annotations) property allows you to add annotations to the chart in specific regions. The following `Accessibility` properties in [`Annotations`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Annotations) can be customized for accessibility:
 
-* `accessibilityDescription` - Provides a text description for the annotation, enhancing support for screen readers.
-* `accessibilityRole` - Specifies the role of the annotation, helping screen readers to identify the element appropriately.
-* `focusable` - Specifies whether annotations are focusable via keyboard navigation.
-* `tabIndex` - Specifies the tab order of the annotation element, enabling efficient keyboard navigation.
+* [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityDescription) - Provides a text description for the annotation, enhancing support for screen readers.
+* [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityRole) - Specifies the role of the annotation, helping screen readers to identify the element appropriately.
+* [`Focusable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_Focusable) - Specifies whether annotations are focusable via keyboard navigation.
+* [`TabIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_TabIndex) - Specifies the tab order of the annotation element, enabling efficient keyboard navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -145,12 +145,12 @@ The `annotations` property allows you to add annotations to the chart in specifi
 
 ## Trendline
 
-The `trendlines` property allows you to display trends in the data. The following `accessibility` properties in `trendlines` can be customized for accessibility:
+The `Trendlines` property allows you to display trends in the data. The following `Accessibility` properties in `Trendlines` can be customized for accessibility:
 
-* `accessibilityDescription` - Provides a text description for the trendline, enhancing support for screen readers.
-* `accessibilityRole` - Specifies the role of the trendline, helping screen readers to identify the element appropriately.
-* `focusable` - Specifies whether trendlines are focusable via keyboard navigation.
-* `tabIndex` - Specifies the tab order of the trendline element, enabling efficient keyboard navigation.
+* [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityDescription) - Provides a text description for the trendline, enhancing support for screen readers.
+* [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityRole) - Specifies the role of the trendline, helping screen readers to identify the element appropriately.
+* [`Focusable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_Focusable) - Specifies whether trendlines are focusable via keyboard navigation.
+* [`TabIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_TabIndex) - Specifies the tab order of the trendline element, enabling efficient keyboard navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -177,12 +177,12 @@ The `trendlines` property allows you to display trends in the data. The followin
 
 ## Zooming
 
-The `zoomSettings` attributes allow you to adjust the chart's zooming capability. The following `accessibility` properties in `zoomSettings` offer the parameters for accessibility customization:
+The [`ZoomSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_ZoomSettings) attributes allow you to adjust the chart's zooming capability. The following [`Accessibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html#Syncfusion_EJ2_Charts_ChartZoomSettings_Accessibility) properties in [`ZoomSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_ZoomSettings) offer the parameters for accessibility customization:
 
-* `accessibilityDescription` - Provides a text description for the zoom toolkit items, enhancing support for screen readers.
-* `accessibilityRole` - Specifies the role of the zoom toolkit items, helping screen readers to identify the element appropriately.
-* `focusable` - Specifies whether zoom toolkit items are focusable via keyboard navigation.
-* `tabIndex` - Specifies the tab order of the zooming element, enabling efficient keyboard navigation.
+* [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityDescription) - Provides a text description for the zoom toolkit items, enhancing support for screen readers.
+* [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityRole) - Specifies the role of the zoom toolkit items, helping screen readers to identify the element appropriately.
+* [`Focusable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_Focusable) - Specifies whether zoom toolkit items are focusable via keyboard navigation.
+* [`TabIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_TabIndex) - Specifies the tab order of the zooming element, enabling efficient keyboard navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -209,12 +209,12 @@ The `zoomSettings` attributes allow you to adjust the chart's zooming capability
 
 ## Technical indicators
 
-The `indicators` property allows you to analyze the trends and patterns in the data. The following `accessibility` properties in `indicators` can be customized for accessibility:
+The [`Indicators`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Indicators) property allows you to analyze the trends and patterns in the data. The following `Accessibility` properties in [`Indicators`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Indicators) can be customized for accessibility:
 
-* `accessibilityDescription` - Provides a text description for the indicators, enhancing support for screen readers.
-* `accessibilityRole` - Specifies the role of the indicators, helping screen readers to identify the element appropriately.
-* `focusable` - Specifies whether indicators are focusable via keyboard navigation.
-* `tabIndex` - Specifies the tab order of the indicators element, enabling efficient keyboard navigation.
+* [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityDescription) - Provides a text description for the indicators, enhancing support for screen readers.
+* [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityRole) - Specifies the role of the indicators, helping screen readers to identify the element appropriately.
+* [`Focusable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_Focusable) - Specifies whether indicators are focusable via keyboard navigation.
+* [`TabIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_TabIndex) - Specifies the tab order of the indicators element, enabling efficient keyboard navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -241,12 +241,12 @@ The `indicators` property allows you to analyze the trends and patterns in the d
 
 ## Legend
 
-The `legendSettings` provide information about the series shown in the chart. The following `accessibility` properties in `legendSettings` can be used to alter the accessibility of the chart's legend:
+The [`LegendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_LegendSettings) provide information about the series shown in the chart. The following [`Accessibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Accessibility) properties in [`LegendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_LegendSettings) can be used to alter the accessibility of the chart's legend:
 
-* `accessibilityDescription` - Provides a text description for the legend root element, enhancing support for screen readers.
-* `accessibilityRole` - Specifies the role of the legend items to screen readers, providing appropriate context.
-* `focusable` - Specifies whether legend items are focusable via keyboard navigation.
-* `tabIndex` - Specifies the tab order of the legend element, enabling efficient keyboard navigation.
+* [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityDescription) - Provides a text description for the legend root element, enhancing support for screen readers.
+* [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityRole) - Specifies the role of the legend items to screen readers, providing appropriate context.
+* [`Focusable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_Focusable) - Specifies whether legend items are focusable via keyboard navigation.
+* [`TabIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_TabIndex) - Specifies the tab order of the legend element, enabling efficient keyboard navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

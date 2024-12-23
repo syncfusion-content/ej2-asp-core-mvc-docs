@@ -11,17 +11,17 @@ documentation: ug
 
 # Accessibility customization
 
-The Syncfusion® ##Platform_Name## Accumulation Chart control is structured to visualize data in a graphical manner. It provides robust customization options for accessibility, allowing you to enhance the user experience for those with disabilities. The main attributes of the ##Platform_Name## Accumulation Chart control's accessibility customization are briefly explained in this section.
+The Syncfusion® ##Platform_Name## Accumulation Chart component is structured to visualize data in a graphical manner. It provides robust customization options for accessibility, allowing you to enhance the user experience for those with disabilities. The main attributes of the ##Platform_Name## Accumulation Chart component's accessibility customization are briefly explained in this section.
 
-The accumulation chart control has a number of characteristics that enable accessibility features to be customized, including:
+The accumulation chart component has a number of characteristics that enable accessibility features to be customized, including:
 
-* `AccessibilityDescription` - Provides a text description for the accumulation chart, improving support for screen readers.
-* `AccessibilityRole` - Specifies the role of the accumulation chart, helping screen readers to identify the element appropriately.
-* `Focusable` - Allows the accumulation chart to receive focus, making it accessible via keyboard navigation.
-* `FocusBorderColor` - Sets the color of the focus border, enhancing visibility when the accumulation chart is focused.
-* `FocusBorderMargin` - Defines the margin around the focus border.
-* `FocusBorderWidth` - Specifies the width of the focus border.
-* `TabIndex` - Specifies the tab order for the accumulation chart element, enabling efficient keyboard navigation.
+* [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_AccessibilityDescription) - Provides a text description for the accumulation chart, improving support for screen readers.
+* [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_AccessibilityRole) - Specifies the role of the accumulation chart, helping screen readers to identify the element appropriately.
+* [`Focusable`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_Focusable) - Allows the accumulation chart to receive focus, making it accessible via keyboard navigation.
+* [`FocusBorderColor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_FocusBorderColor) - Sets the color of the focus border, enhancing visibility when the accumulation chart is focused.
+* [`FocusBorderMargin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_FocusBorderMargin) - Defines the margin around the focus border.
+* [`FocusBorderWidth`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_FocusBorderWidth) - Specifies the width of the focus border.
+* [`TabIndex`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_TabIndex) - Specifies the tab order for the accumulation chart element, enabling efficient keyboard navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,12 +48,12 @@ The accumulation chart control has a number of characteristics that enable acces
 
 ## Series
 
-The `Series` supports the customization of accessibility for data points, allowing key characteristics to be adjusted for enhanced accessibility, such as:
+The [`Series`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_Series) supports the customization of accessibility for data points, allowing key characteristics to be adjusted for enhanced accessibility, such as:
 
-* `AccessibilityDescription` - Provides a text description for the series root element, enhancing support for screen readers.
-* `AccessibilityRole` - Specifies the role of the series, helping screen readers to identify the element appropriately.
-* `Focusable` - Allows the series to receive focus, making it accessible via keyboard navigation.
-* `TabIndex` - Specifies the tab order of the series element, enabling efficient keyboard navigation.
+* [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_AccessibilityDescription) - Provides a text description for the series root element, enhancing support for screen readers.
+* [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_AccessibilityRole) - Specifies the role of the series, helping screen readers to identify the element appropriately.
+* [`Focusable`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_Focusable) - Allows the series to receive focus, making it accessible via keyboard navigation.
+* [`TabIndex`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_TabIndex) - Specifies the tab order of the series element, enabling efficient keyboard navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,12 +80,12 @@ The `Series` supports the customization of accessibility for data points, allowi
 
 ## Legend
 
-The `LegendSettings` provide information about the series shown in the accumulation chart. The following `Accessibility` properties in `LegendSettings` can be used to alter the accessibility of the accumulation chart's legend:
+The [`LegendSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_LegendSettings) provide information about the series shown in the accumulation chart. The following [`Accessibility`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartLegendSettings.html#Syncfusion_EJ2_Charts_AccumulationChartLegendSettings_Accessibility) properties in [`LegendSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_LegendSettings) can be used to alter the accessibility of the accumulation chart's legend:
 
-* `AccessibilityDescription` - Provides a text description for the legend root element, enhancing support for screen readers..
-* `AccessibilityRole` - Specifies the role of the legend items to screen readers, providing appropriate context.
-* `Focusable` - Specifies whether legend items are focusable via keyboard navigation.
-* `TabIndex` - Specifies the tab order of the legend element, enabling efficient keyboard navigation.
+* [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_AccessibilityDescription) - Provides a text description for the legend root element, enhancing support for screen readers.
+* [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_AccessibilityRole) - Specifies the role of the legend items to screen readers, providing appropriate context.
+* [`Focusable`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_Focusable) - Specifies whether legend items are focusable via keyboard navigation.
+* [`TabIndex`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartAccessibility.html#Syncfusion_EJ2_Charts_AccumulationChartAccessibility_TabIndex) - Specifies the tab order of the legend element, enabling efficient keyboard navigation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
