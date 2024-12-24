@@ -41,7 +41,6 @@ Diagram provides support to export the desired region of the diagram to desired 
 
 * JPG
 * PNG
-* BMP
 * SVG
 
 ```javascript
