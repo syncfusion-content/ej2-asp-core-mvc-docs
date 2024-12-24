@@ -11,7 +11,7 @@ documentation: ug
 
 # Export in Document Editor Component 
 
-Document editor exports the document into various known file formats in client-side such as Microsoft Word document (.docx), text document (.txt), and its own format called **Syncfusion Document Text (.sfdt)**.
+Document editor exports the document into various known file formats in client-side such as Microsoft Word document (.docx), text document (.txt), and its own format called **Syncfusion<sup style="font-size:70%">&reg;</sup> Document Text (.sfdt)**.
 
 We are providing two types of save APIs  as mentioned below.
 
@@ -22,7 +22,7 @@ We are providing two types of save APIs  as mentioned below.
 
 ## Sfdt export
 
-The following example shows how to export documents in document editor as Syncfusion document text (.sfdt).
+The following example shows how to export documents in document editor as Syncfusion<sup style="font-size:70%">&reg;</sup> document text (.sfdt).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

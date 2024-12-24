@@ -17,7 +17,7 @@ To avoid this warning, always use the recommended document formats and features 
 
 Document Editor supports the following file formats:
 •	Word Document (*.docx)
-•	Syncfusion Document Text (*.sfdt)
+•	Syncfusion<sup style="font-size:70%">&reg;</sup> Document Text (*.sfdt)
 •	Plain Text (*.txt)
 •	Word Template (*.dotx)
 •	HyperText Markup Language (*.html)
