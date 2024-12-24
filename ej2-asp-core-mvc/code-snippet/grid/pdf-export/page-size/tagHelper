@@ -1,20 +1,58 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPdfExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"PdfExport"})" allowPaging="true">
+@{
+    var pageSizeList = new List<object> {
+        new { text = "Letter", value = "Letter" },
+        new { text = "Note", value = "Note" },
+        new { text = "Legal", value = "Legal" },
+        new { text = "A0", value = "A0" },
+        new { text = "A1", value = "A1" },
+        new { text = "A2", value = "A2" },
+        new { text = "A3", value = "A3" },
+        new { text = "A4", value = "A4" },
+        new { text = "A5", value = "A5" },
+        new { text = "A6", value = "A6" },
+        new { text = "A7", value = "A7" },
+        new { text = "A8", value = "A8" },
+        new { text = "B0", value = "B0" },
+        new { text = "B1", value = "B1" },
+        new { text = "B2", value = "B2" },
+        new { text = "B3", value = "B3" },
+        new { text = "B4", value = "B4" },
+        new { text = "B5", value = "B5" },
+        new { text = "Archa", value = "Archa" },
+        new { text = "Archb", value = "Archb" },
+        new { text = "Archc", value = "Archc" },
+        new { text = "Archd", value = "Archd" },
+        new { text = "Arche", value = "Arche" },
+        new { text = "Flsa", value = "Flsa" },
+        new { text = "HalfLetter", value = "HalfLetter" },
+        new { text = "Letter11x17", value = "Letter11x17" },
+        new { text = "Ledger", value = "Ledger" }
+    };
+}
+<div style="margin-bottom: 10px;">
+<label>Select Page Size: </label>
+<ejs-dropdownlist id="dropdown" width="150" popupHeight="240px" dataSource="@pageSizeList" index="0">
+<e-dropdownlist-fields text="text" value="value"></e-dropdownlist-fields>
+</ejs-dropdownlist>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPdfExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"PdfExport"})">
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>               
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" width="140" ></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>               
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="120" ></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
 <script>
     function toolbarClick(args) {
-        var grid = document.getElementById("Grid").ej2_instances[0];
         if (args.item.id === 'Grid_pdfexport') {
-            var exportProperties = {
-                pageSize: 'Letter'
+            let grid = document.getElementById("Grid").ej2_instances[0];
+            let dropDown = document.getElementById("dropdown").ej2_instances[0];
+            let pdfExportProperties = {
+                pageSize: dropDown.value
             };
-            grid.pdfExport(exportProperties);
+            grid.pdfExport(pdfExportProperties);
         }
     }
 </script>

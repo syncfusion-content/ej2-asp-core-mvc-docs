@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Exporting grid with templates in ##Platform_Name## Grid control
+# Exporting grid with templates in ASP.NET Core Grid control
 
 The grid offers the option to export the column, detail, and caption templates to a PDF document. The template contains images, hyperlinks, and customized text.
 
@@ -16,11 +16,9 @@ The grid offers the option to export the column, detail, and caption templates t
 
 The PDF export functionality allows you to export Grid columns that include images, hyperlinks, and custom text to a PDF document.
 
-In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://ej2.syncfusion.com/documentation/api/grid/pdfQueryCellInfoEventArgs/#hyperlink) and [image](https://ej2.syncfusion.com/documentation/api/grid/pdfQueryCellInfoEventArgs/#image) properties in the [pdfQueryCellInfo](https://ej2.syncfusion.com/documentation/api/grid/#pdfquerycellinfo) event.
+In the following sample, the hyperlinks and images are exported to PDF using `hyperlink` and `image` properties in the [pdfQueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event.
 
 > PDF Export supports base64 string to export the images.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -30,18 +28,6 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 {% include code-snippet/grid/pdf-export/column-template-export/column-template-export.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/column-template-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Column-template-export.cs" %}
-{% include code-snippet/grid/pdf-export/column-template-export/column-template-export.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![ColumnTemplateExport](../images/colTemp_pdf_expt.gif)
 
@@ -55,14 +41,12 @@ By default, the grid will export the parent grid with expanded detail rows alone
 | All      | Exports the parent grid with all the detail rows. |
 | None     | Exports the parent grid alone. |
 
-The detail rows in the exported PDF can be customized or formatted using the [exportDetailTemplate](https://ej2.syncfusion.com/documentation/api/grid/#exportdetailtemplate) event. In this event, the detail rows of the PDF document are formatted in accordance with their parent row details.
+The detail rows in the exported PDF can be customized or formatted using the [exportDetailTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExportDetailTemplate) event. In this event, the detail rows of the PDF document are formatted in accordance with their parent row details.
 
-In the following sample, the detail row content is formatted by specifying the [columnCount](https://ej2.syncfusion.com/documentation/api/grid/detailTemplateProperties/#columncount), [columnHeader](https://ej2.syncfusion.com/documentation/api/grid/detailTemplateProperties/#columnheader), and [rows](https://ej2.syncfusion.com/documentation/api/grid/detailTemplateProperties/#rows) properties using its [parentRow](https://ej2.syncfusion.com/documentation/api/grid/exportDetailTemplateEventArgs/#parentrow) details. This allows for the creation of detail rows in the PDF document. Additionally, custom styles can be applied to specific cells using the [style](https://ej2.syncfusion.com/documentation/api/grid/detailTemplateCell/#style) property.
+In the following sample, the detail row content is formatted by specifying the `columnCount`, `columnHeader`, and `rows`properties using its `parentRow` details. This allows for the creation of detail rows in the PDF document. Additionally, custom styles can be applied to specific cells using the `style` property.
 
-> If `columnCount` is not provided, the columns in the detail row of the PDF grid will be generated based on the count of the `columnHeader`/`rows` first row's [cells](https://ej2.syncfusion.com/documentation/api/grid/detailTemplateRow/#cells).
-> When using [rowSpan](https://ej2.syncfusion.com/documentation/api/grid/detailTemplateCell/#rowspan), it is essential to provide the cell's [index](https://ej2.syncfusion.com/documentation/api/grid/detailTemplateCell/#index) for proper functionality.
-
-{% if page.publishingplatform == "aspnet-core" %}
+> If `columnCount` is not provided, the columns in the detail row of the PDF grid will be generated based on the count of the `columnHeader`/`rows` first row's `cells`.
+> When using `rowSpan`, it is essential to provide the cell's `index` for proper functionality.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -73,18 +57,6 @@ In the following sample, the detail row content is formatted by specifying the [
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/detail-template-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Detail-template-export.cs" %}
-{% include code-snippet/grid/pdf-export/detail-template-export/detail-template-export.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![DetailTemplateExport](../images/detailTemp_pdf_expt.gif)
 
 ## Exporting with caption template
@@ -92,8 +64,6 @@ In the following sample, the detail row content is formatted by specifying the [
 The PDF export feature enables exporting of Grid with a caption template to an PDF document.
 
 In the following sample, the customized caption text is exported to PDF using [captionText](https://ej2.syncfusion.com/documentation/api/grid/exportGroupCaptionEventArgs/#captiontext) property in the [exportGroupCaption](https://ej2.syncfusion.com/documentation/api/grid/#exportgroupcaption) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -103,17 +73,5 @@ In the following sample, the customized caption text is exported to PDF using [c
 {% include code-snippet/grid/pdf-export/caption-template-export/caption-template-export.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/caption-template-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Caption-template-export.cs" %}
-{% include code-snippet/grid/pdf-export/caption-template-export/caption-template-export.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![CaptionTemplateExport](../images/captionTemp_pdf_expt.gif)
