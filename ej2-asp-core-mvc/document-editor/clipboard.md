@@ -47,7 +47,9 @@ Document editor exposes API to enable local paste within the control. On enablin
 {% include code-snippet/document-editor/clipboard/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Clipboard.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/clipboard/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -56,7 +58,9 @@ Document editor exposes API to enable local paste within the control. On enablin
 {% include code-snippet/document-editor/clipboard/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Clipboard.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/clipboard/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
