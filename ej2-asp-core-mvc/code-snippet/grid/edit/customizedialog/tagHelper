@@ -1,17 +1,14 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" actionComplete="actionComplete" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" allowPaging="true">
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="273px" toolbar="@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" })" actionComplete="actionComplete">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
-    <e-grid-pagesettings pageCount="5"></e-grid-pagesettings>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true})" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer Name" validationRules="@(new { required=true})" width="150"></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" validationRules="@(new { required=true})" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" validationRules="@(new { required=true})" type="string" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" validationRules="@(new { required=true, min=1, max=1000})" editType="numericedit" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150" validationRules="@(new { required=true})"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
-
 <script>
-
-    ej.base.L10n.load({
+   ej.base.L10n.load({
         'en-US': {
             'grid': {
                 'SaveButton': 'Submit',
@@ -19,15 +16,13 @@
             }
         }
     });
-
     function actionComplete(args) {
         if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-                var dialog = args.dialog;
-                dialog.showCloseIcon = false;
-                dialog.height = 400;
-                // change the header of the dialog
-                dialog.header = args.requestType === 'beginEdit' ? 'Edit Record of ' + args.rowData['CustomerID'] : 'New Customer';
-            }
+            var dialog = args.dialog;
+            dialog.showCloseIcon = false;
+            dialog.height = 360;
+            dialog.width = 300;
+            dialog.header = args.requestType === 'beginEdit' ? 'Edit Record of ' + args.rowData['CustomerID'] : 'New Customer';
+        }
     }
-
 </script>

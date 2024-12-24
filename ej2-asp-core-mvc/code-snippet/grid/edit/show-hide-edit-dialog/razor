@@ -1,35 +1,41 @@
-@using Syncfusion.EJ2
-
-@Html.EJS().Grid("DialogTemplateEdit").DataSource((IEnumerable<object>)ViewBag.DataSource).ActionBegin("actionBegin").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = true }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Visible(false).Add();
-   col.Field("Freight").HeaderText("Freight").EditType("numericedit").Format("C2").Width("150").Add();
-   col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").Add();
-
-}).AllowPaging().PageSettings(page => page.PageCount(2)).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
-
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").ValidationRules(new { required = "true" }).Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").ValidationRules(new { required = "true",min=1, max=1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").ValidationRules(new { required = "true" }).Width("150").Add();
+}).ActionBegin("actionBegin").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 <script>
     function actionBegin(args) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            for (var i = 0; i < this.columns.length; i++) {
-               if (this.columns[i].field == "CustomerID") {
-                   this.columns[i].visible = true;
-               }
-               else if (this.columns[i].field == "ShipCountry") {
-                   this.columns[i].visible = false;
-               }
+        var grid = document.getElementById('grid').ej2_instances[0];
+        if (args.requestType === 'beginEdit' ) {
+            for (var i = 0; i < grid.columns.length; i++) {
+                if (grid.columns[i].field == "CustomerID") {
+                    grid.columns[i].visible = true;
+                }
+                else if (grid.columns[i].field == "ShipCountry") {
+                    grid.columns[i].visible = false;
+                }
             }
         }
-         if (args.requestType === 'save') {
-            for (var i = 0; i < this.columns.length; i++) {
-                if (this.columns[i].field == "CustomerID") {
-                    this.columns[i].visible = false;
+        else if(args.requestType === 'add')
+        {
+            for (var i = 0; i < grid.columns.length; i++) {
+                if (grid.columns[i].field == "CustomerID") {
+                    grid.columns[i].visible = true;
                 }
-                else if (this.columns[i].field == "ShipCountry") {
-                    this.columns[i].visible = true;
-                    }
+               
+            }
+        }
+        else if (args.requestType === 'save') {
+            for (var i = 0; i < grid.columns.length; i++) {
+                if (grid.columns[i].field == "CustomerID") {
+                    grid.columns[i].visible = false;
                 }
+                else if (grid.columns[i].field == "ShipCountry") {
+                    grid.columns[i].visible = true;
+                }
+            }
         }
     }
 </script>

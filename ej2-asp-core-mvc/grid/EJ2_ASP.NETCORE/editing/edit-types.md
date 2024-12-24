@@ -122,6 +122,28 @@ The following sample code demonstrates the customization applied to DropDownList
 
 ![Customize dropdown edit type](../images/editing/dropdown-edit-type.png)
 
+
+### Provide custom data source for DropDownList component
+
+In Syncfusion Grid component, you have an option to provide a custom data source for the `DropDownList` component in the edit form. This feature allows you to define a specific set of values for the DropDownList.
+
+To achieve this, you can utilize the `Columns->Edit->Params` property. This property allows you to define the edit params for the column within the grid.
+
+When setting a new data source using the edit params, you need to specify a new `Query`  property for the DropDownList. The `Query` property allows you to define custom queries for data retrieval and filtering.
+
+In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column :
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/custom-data-params/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dropdownlist-params.cs" %}
+{% include code-snippet/grid/edit/custom-data-params/dropdown-params.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Provide custom data source for DropDownList component](../images/editing/dropdown-edit-type.png)
+
 ### Apply filtering for DropDownList component
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides filtering for the DropDownList within the edit form. This feature allows to select options from a predefined list and easily search for specific items using the built-in filtering feature.  
