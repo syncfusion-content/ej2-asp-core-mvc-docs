@@ -15,7 +15,7 @@
 @Html.EJS().Uploader("UploadFiles").Success("onSuccess").AllowedExtensions(".xls, .xlsx, .csv").ShowFileList(false).AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings {
 SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save",
 RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).Render()
-@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").AllowSave(true).BeforeOpen("beforeOpen").Render()
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").AllowOpen(true).BeforeOpen("beforeOpen").Render()
 
 <style>
     #Openfromjson {

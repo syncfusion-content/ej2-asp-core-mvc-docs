@@ -1,6 +1,6 @@
-@Html.EJS().Button("importBtn").Content("Import Base64").Render();
-@Html.EJS().Button("exportBtn").Content("Export as Base64").Render();
-@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("/Home/Open")BeforeSave("beforeSave").SaveComplete("saveComplete").Sheets(sheet => {
+@Html.EJS().Button("importBtn").Content("Import Base64").Render()
+@Html.EJS().Button("exportBtn").Content("Export as Base64").Render()
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("/Home/Open").BeforeSave("beforeSave").SaveComplete("saveComplete").Sheets(sheet => {
     sheet.Name("Price Details").Ranges(ranges => {
         ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A1").Add();
     }).Columns(column => {
