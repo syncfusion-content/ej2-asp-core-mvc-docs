@@ -64,7 +64,6 @@ Document editor exposes API to enable local paste within the control. On enablin
 {% endif %}
 
 
-
 By default, **enableLocalPaste** is false. When local paste is enabled for a document editor instance, you can paste contents programmatically if the internal clipboard has stored data during last copy operation.
 
 ```typescript
