@@ -26,7 +26,8 @@ N> You can install the PDF export packages from this [`link`](https://www.npmjs.
 {% include code-snippet/document-editor-container/export-pdf-client/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-client.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -35,7 +36,8 @@ N> You can install the PDF export packages from this [`link`](https://www.npmjs.
 {% include code-snippet/document-editor-container/export-pdf-client/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-client.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
