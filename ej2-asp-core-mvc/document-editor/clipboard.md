@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clipboard in ##Platform_Name## Document Editor Component
+title: Clipboard in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about clipboard in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Clipboard
@@ -67,7 +67,7 @@ By default, **enableLocalPaste** is false. When local paste is enabled for a doc
 documentEditor.editor.pasteLocal();
 ```
 
-### EnableLocalPaste behaviour
+### EnableLocalPaste behavior
 
 |**EnableLocalPaste** |**Paste behavior details**|
 |--------------------------|----------------------|
