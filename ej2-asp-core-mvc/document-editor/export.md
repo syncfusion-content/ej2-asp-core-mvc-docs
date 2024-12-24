@@ -30,7 +30,7 @@ The following example shows how to export documents in document editor as Syncfu
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/export-sfdt/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
+{% highlight c# tabtitle="Export-sfdt.cs" %}
 {% include code-snippet/document-editor/export-sfdt/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -39,8 +39,7 @@ The following example shows how to export documents in document editor as Syncfu
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/export-container-sfdt/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor-container/export-container-sfdt/document-editor.cs %}
+{% highlight c# tabtitle="Export-container-sfdt" %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,7 +49,7 @@ The following example shows how to export documents in document editor as Syncfu
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/export-sfdt/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
+{% highlight c# tabtitle="Export-sfdt" %}
 {% include code-snippet/document-editor/export-sfdt/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -59,8 +58,7 @@ The following example shows how to export documents in document editor as Syncfu
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/export-container-sfdt/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor-container/export-container-sfdt/document-editor.cs %}
+{% highlight c# tabtitle="Export-container-sfdt.cs" %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -78,7 +76,7 @@ The following example shows how to export the document as Word document (.docx).
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/export-docx/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
+{% highlight c# tabtitle="Export-docx.cs" %}
 {% include code-snippet/document-editor/export-docx/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -87,8 +85,7 @@ The following example shows how to export the document as Word document (.docx).
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/export-container-docx/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor-container/export-container-docx/document-editor.cs %}
+{% highlight c# tabtitle="Export-container-docx.cs" %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -98,7 +95,7 @@ The following example shows how to export the document as Word document (.docx).
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/export-docx/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
+{% highlight c# tabtitle="Export-docx.cs" %}
 {% include code-snippet/document-editor/export-docx/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -107,8 +104,7 @@ The following example shows how to export the document as Word document (.docx).
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/export-container-docx/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor-container/export-container-docx/document-editor.cs %}
+{% highlight c# tabtitle="Export-container-docx.cs" %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -128,7 +124,7 @@ The following example shows how to export the document as Word Template (.dotx).
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/export-dotx/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
+{% highlight c# tabtitle="Export-dotx.cs" %}
 {% include code-snippet/document-editor/export-dotx/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -137,8 +133,7 @@ The following example shows how to export the document as Word Template (.dotx).
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/export-container-dotx/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor-container/export-container-dotx/document-editor.cs %}
+{% highlight c# tabtitle="Export-container-dotx.cs" %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -148,7 +143,7 @@ The following example shows how to export the document as Word Template (.dotx).
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/export-dotx/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
+{% highlight c# tabtitle="Export-dotx.cs" %}
 {% include code-snippet/document-editor/export-dotx/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -157,8 +152,7 @@ The following example shows how to export the document as Word Template (.dotx).
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/export-container-dotx/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor-container/export-container-dotx/document-editor.cs %}
+{% highlight c# tabtitle="Export-container-dotx.cs" %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -173,7 +167,7 @@ The following example shows how to export document as text document (.txt).
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/export-txt/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
+{% highlight c# tabtitle="Export-txt.cs" %}
 {% include code-snippet/document-editor/export-txt/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -182,8 +176,7 @@ The following example shows how to export document as text document (.txt).
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/export-container-txt/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor-container/export-container-txt/document-editor.cs %}
+{% highlight c# tabtitle="Export-container-txt.cs" %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -193,7 +186,7 @@ The following example shows how to export document as text document (.txt).
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/export-txt/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
+{% highlight c# tabtitle="Export-txt.cs" %}
 {% include code-snippet/document-editor/export-txt/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -202,8 +195,7 @@ The following example shows how to export document as text document (.txt).
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/export-container-txt/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor-container/export-container-txt/document-editor.cs %}
+{% highlight c# tabtitle="Export-container-txt.cs" %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -223,6 +215,7 @@ Document editor also supports API to store the document into a blob.
 {% include code-snippet/document-editor/export-blob/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-blob.cs" %}
+{% include code-snippet/document-editor/export-blob/document-editor.cs %}
 {% endhighlight %}{% endtabs %}
 
 {% tabs %}
@@ -239,6 +232,7 @@ Document editor also supports API to store the document into a blob.
 {% include code-snippet/document-editor/export-blob/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-blob.cs" %}
+{% include code-snippet/document-editor/export-blob/document-editor.cs %}
 {% endhighlight %}{% endtabs %}
 
 {% tabs %}
@@ -279,6 +273,7 @@ In client-side, you can consume this web service and save the document as Rich T
 {% include code-snippet/document-editor/export-rtf/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-rtf.cs" %}
+{% include code-snippet/document-editor/export-rtf/document-editor.cs %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -288,7 +283,9 @@ In client-side, you can consume this web service and save the document as Rich T
 {% include code-snippet/document-editor/export-rtf/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-rtf.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/export-rtf/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
