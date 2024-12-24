@@ -41,7 +41,7 @@ The following sample shows the `Open` option by using the [`openUrl`](https://he
 {% include code-snippet/spreadsheet/open/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open/openController-1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -83,7 +83,7 @@ The following code example shows how to import an excel document using file uplo
 {% include code-snippet/spreadsheet/open-uploader/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-uploader/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-uploader/openController-1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -110,7 +110,7 @@ You can achieve to access the remote excel file by using the [`created`](https:/
 {% include code-snippet/spreadsheet/open-url/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-url/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-url/openController-1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -139,7 +139,7 @@ Please find the code to fetch the blob data and load it into the Spreadsheet con
 {% include code-snippet/spreadsheet/open-from-blob/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/open-from-blob/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-from-blob/openController-1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -336,7 +336,7 @@ The following code example shows how to open the spreadsheet data as base64 stri
 {% include code-snippet/spreadsheet/base-64-string/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% include code-snippet/spreadsheet/base-64-string/openController-1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -363,7 +363,7 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 {% include code-snippet/spreadsheet/open-readonly/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-readonly/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-readonly/openController-1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -412,7 +412,7 @@ The following code snippet demonstrates how to configure the deserialization opt
 {% include code-snippet/spreadsheet/open-from-json/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/open-from-json/openController.cs %}
+{% include code-snippet/spreadsheet/open-from-json/openController-1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -521,7 +521,15 @@ public ActionResult Open(OpenRequest openRequest)
 
 ### Add custom header during open
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 You can add your own custom header to the open action in the Spreadsheet. For processing the data, it has to be sent from server to client side and adding customer header can provide privacy to the data with the help of Authorization Token. Through the [`beforeOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_BeforeOpen) event, the custom header can be added to the request during open action.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+You can add your own custom header to the open action in the Spreadsheet. For processing the data, it has to be sent from server to client side and adding customer header can provide privacy to the data with the help of Authorization Token. Through the [`beforeOpen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_BeforeOpen) event, the custom header can be added to the request during open action.
+
+{% endif %} 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -541,7 +549,7 @@ You can add your own custom header to the open action in the Spreadsheet. For pr
 {% include code-snippet/spreadsheet/open-header/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-header/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-header/openController-1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %} 
@@ -549,6 +557,8 @@ You can add your own custom header to the open action in the Spreadsheet. For pr
 ### External workbook confirmation dialog
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 ```csharp
 public IActionResult Open(IFormCollection openRequest)
@@ -559,6 +569,19 @@ public IActionResult Open(IFormCollection openRequest)
         return Content(Workbook.Open(open));
     }
 ```
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+```csharp
+public ActionResult Open(OpenRequest openRequest)
+{
+    openRequest.AllowExternalWorkbook = false;
+    string result= Workbook.Open(openRequest);
+    return Content(result);
+}
+```
+
+{% endif %} 
 
 > This feature is only applicable when importing an Excel file and not when loading JSON data or binding cell data.
 
@@ -649,7 +672,7 @@ Please find below the code to retrieve blob data from the Spreadsheet control be
 {% include code-snippet/spreadsheet/save-as-blob/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SaveController.cs" %}
-{% include code-snippet/spreadsheet/save-as-blob/savecontroller.cs %}
+{% include code-snippet/spreadsheet/save-as-blob/saveController-1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -888,7 +911,7 @@ The following code example shows how to save the spreadsheet data as base64 stri
 {% include code-snippet/spreadsheet/base-64-string/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% include code-snippet/spreadsheet/base-64-string/openController-1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -937,7 +960,7 @@ The following code snippet demonstrates how to configure the serialization optio
 {% include code-snippet/spreadsheet/save-as-json/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SaveController.cs" %}
-{% include code-snippet/spreadsheet/save-as-json/saveController.cs %}
+{% include code-snippet/spreadsheet/save-as-json/saveController-1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
