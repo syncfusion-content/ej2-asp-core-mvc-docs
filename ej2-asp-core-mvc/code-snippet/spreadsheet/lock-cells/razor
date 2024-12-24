@@ -1,7 +1,7 @@
 <button id="customBtn" class="e-btn"> Unlock cells</button>
 @Html.EJS().Spreadsheet("spreadsheet").DataBound("dataBound").Sheets(sheet =>
 {
-    sheet.Name("Budget").IsProtected(true).ProtectSettings(new SpreadsheetProtectSettings { SelectCells = false }).Ranges(ranges =>
+    sheet.Name("Budget").IsProtected(true).ProtectSettings(new SpreadsheetProtectSettings { SelectCells = true }).Ranges(ranges =>
     {
         ranges.DataSource((IEnumerable<object>)ViewBag.budgetData).StartCell("A1").Add();
     }).Columns(column =>
