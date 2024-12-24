@@ -16,12 +16,9 @@ function actionComplete(args) {
         required: true,
         minLength: [5, 'Customer ID should have a minimum length of 5 characters'],
     };
-
     if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-         var checkbox = document.getElementById("checkbox").ej2_instances[0];
-
+        var checkbox = document.getElementById("checkbox").ej2_instances[0];
         if (checkbox.checked) {
-            // Add the custom validation rule
             formObj.addRules('CustomerID', customerIDRules);
         }
     }

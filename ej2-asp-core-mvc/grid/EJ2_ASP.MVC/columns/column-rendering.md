@@ -216,3 +216,37 @@ In the below example, we have used the `expand` query to load the nested Employe
 {% endtabs %}
 
 ![Using remote data](../images/column-rendering/column-render-remote.png)
+
+### Complex data binding with list of array of objects
+
+The Syncfusion Grid supports complex data binding with lists of arrays of objects. This feature allows you to bind complex data with multiple levels of nested objects and arrays to the Grid.
+
+The following example shows how to set complex field for datasource having array of objects.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/column-complexbinding/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Complexbinding.cs" %}
+{% include code-snippet/grid/columns/column-complexbinding/complexbinding.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Complex data binding with list of array of objects](../../images/column-rendering/column-complex.png)
+
+### How to set complex column as foreign key column
+
+The Syncfusion Grid control provides the ability to set complex columns as foreign key columns. This allows you to display related data from a foreign data source based on the complex column value.
+
+The following example demonstrates how to set the **Employee.EmployeeID** column as a foreign key column, and display the **FirstName** column from the foreign data.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/foreignkey/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Foreignkey.cs" %}
+{% include code-snippet/grid/columns/foreignkey/foreignkey.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Complex data binding with list of array of objects](../../images/column-rendering/column-foriegn-complex.png)

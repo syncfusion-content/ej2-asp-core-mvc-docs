@@ -18,11 +18,8 @@
         if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
             var dialog = args.dialog;
             dialog.showCloseIcon = false;
-            // set the height of the dialog
             dialog.height = 360;
-            // set the width of the dialog
             dialog.width = 300;
-            // change the header of the dialog
             dialog.header = args.requestType === 'beginEdit' ? 'Edit Record of ' + args.rowData['CustomerID'] : 'New Customer';
         }
     }

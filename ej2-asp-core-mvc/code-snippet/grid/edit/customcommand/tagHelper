@@ -3,8 +3,7 @@
     commands.Add(new { buttonOption = new { content = "Details", cssClass = "e-flat"  } });
 }
 <div id="dialog" ></div>
-<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="310" commandClick="commandClick">
-        <e-grid-editSettings allowAdding="true" allowDeleting="false" allowEditing="true"></e-grid-editSettings>
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="400px" commandClick="commandClick">
         <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="120"></e-grid-column>
@@ -20,7 +19,7 @@
         content: "dialogContent",
         showCloseIcon: "true",
         width: "400px",
-        position: { X: 370, Y: 250 },
+        position: { X: 570, Y: 220 },
         visible: dialogVisible,
         close: dialogClose,
     });

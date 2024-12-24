@@ -2,11 +2,11 @@
 <div style='padding-bottom:20px'>
     <ejs-checkbox id="checkbox" checked="true" label="Enable/Disable validation rule for customerID coulumn"></ejs-checkbox>
 </div>
-<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="273px" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })" actionComplete="actionComplete">
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="273px" toolbar="@(new List<string>() { "Add", "Edit", "Delete","Update", "Cancel" })" actionComplete="actionComplete">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID"  headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"  validationRules="@(new { required= true })"></e-grid-column>                
-        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" type="string" width="120"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="120" validationRules="@(new { required= true, min= 1,max=1000 })"></e-grid-column>                               
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" editType="dropdownedit" validationRules="@(new { required= true })"></e-grid-column>                
     </e-grid-columns>
@@ -19,14 +19,11 @@
             required: true,
             minLength: [5, 'Customer ID should have a minimum length of 5 characters'],
         };
-    
         if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-             var checkbox = document.getElementById("checkbox").ej2_instances[0];
-    
+            var checkbox = document.getElementById("checkbox").ej2_instances[0];
             if (checkbox.checked) {
-                // Add the custom validation rule
                 formObj.addRules('CustomerID', customerIDRules);
             }
         }
     }
-    </script>
+</script>

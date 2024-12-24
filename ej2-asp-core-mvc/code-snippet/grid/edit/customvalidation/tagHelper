@@ -9,7 +9,8 @@
  </ejs-grid>
 <script>
     function load(args) {
-        this.columns[1].validationRules = { required: true, minLength: [customFunction, 'Need atleast 5 letters'] };
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.getColumnByField("CustomerID").validationRules = { required: true, minLength: [customFunction, 'Need atleast 5 letters'] };
     }
     function customFunction(args) {
         return args['value'].length >= 5;

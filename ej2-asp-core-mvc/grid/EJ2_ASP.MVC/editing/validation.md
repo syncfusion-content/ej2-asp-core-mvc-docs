@@ -44,7 +44,7 @@ In the below demo, custom validation applied for **CustomerID** column.
 {% endhighlight %}
 {% endtabs %}
 
-![Custom validation](../../images/editing/edit-custom.png)
+![Custom validation](../../images/editing/validation-custom.png)
 
 ### Custom validation based on dropdown change
 
@@ -56,25 +56,25 @@ In the following sample, dropdownlist edit type is used for the **Role** and **S
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/validation-dropdown-change/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customcommand.cs" %}
-{% include code-snippet/grid/edit/validation-dropdown-change/customcommand.cs %}
+{% highlight c# tabtitle="columnvalid.cs" %}
+{% include code-snippet/grid/edit/validation-dropdown-change/columnvalid.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Custom validation based on dropdown change](../../images/editing/edit-custom.png)
+![Custom validation based on dropdown change](../../images/editing/validation-dropdown.gif)
 
 ### Custom validation for numeric column
 
 Custom validation for a numeric column Grid is useful when you want to enforce specific validation rules on numeric values in a column. This allows you to define your own validation logic and display custom error messages when the you enters invalid data.
 
-In the following example, custom validation functions, namely **customFn** and **customFn1**, are defined to check the entered numeric value against your validation criteria. Then, the grid column is configured with the appropriate validation settings using the **freightRules** object, specifying the custom validation functions along with corresponding error messages. Additionally, the `Change` event of the numeric column is bound to the `validate` method of the form element through the edit params. This enables you to trigger validation and display error messages whenever the you modifies the value in the **NumericTextBox**.
+In the following example, custom validation functions, namely **customFn** and **customFn1**, are defined to check the entered numeric value against your validation criteria. Then, the grid column is configured with the appropriate validation settings using the **freightRules** object, specifying the custom validation functions along with corresponding error messages. Additionally, the [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Change) event of the numeric column is bound to the `validate` method of the form element through the edit params. This enables you to trigger validation and display error messages whenever the you modifies the value in the [NumericTextBox](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/getting-started).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/validation-numericcolumn/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customcommand.cs" %}
-{% include code-snippet/grid/edit/validation-numericcolumn/customcommand.cs %}
+{% highlight c# tabtitle="columnvalid.cs" %}
+{% include code-snippet/grid/edit/validation-numericcolumn/columnvalid.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,8 +92,8 @@ The following example to demonstrates how to dynamically add or remove a require
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/validation-add-remove/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customcommand.cs" %}
-{% include code-snippet/grid/edit/validation-add-remove/customcommand.cs %}
+{% highlight c# tabtitle="columnvalid.cs" %}
+{% include code-snippet/grid/edit/validation-add-remove/columnvalid.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -111,12 +111,12 @@ Here's an example that demonstrates how to change the position of the validation
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/customcommand/razor %}
+{% include code-snippet/grid/edit/validation-position/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customcommand.cs" %}
-{% include code-snippet/grid/edit/customcommand/customcommand.cs %}
+{% highlight c# tabtitle="validation.cs" %}
+{% include code-snippet/grid/edit/validation-position/validation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Change the position of validation error message](../../images/editing/edit-custom.png)
+![Change the position of validation error message](../../images/editing/validation-position.png)
 

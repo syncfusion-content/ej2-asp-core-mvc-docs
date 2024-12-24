@@ -19,7 +19,7 @@
         content: "dialogContent",
         showCloseIcon: "true",
         width: "400px",
-        position: { X: 370, Y: 250 },
+        position: { X: 570, Y: 220 },
         visible: dialogVisible,
         close: dialogClose,
     });

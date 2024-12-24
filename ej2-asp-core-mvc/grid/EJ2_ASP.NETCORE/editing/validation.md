@@ -20,8 +20,8 @@ Column validation allows you to validate the edited or added row data before sav
 The following code example demonstrates how to define a validation rule for grid column:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/columnvalid/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/columnvalid/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="columnvalid.cs" %}
 {% include code-snippet/grid/edit/columnvalid/columnvalid.cs %}
@@ -37,15 +37,15 @@ The Custom validation feature is used to define and enforce your own validation 
 In the below demo, custom validation applied for **CustomerID** column.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/customvalidation/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/customvalidation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="customvalidation.cs" %}
 {% include code-snippet/grid/edit/customvalidation/customvalidation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Custom validation](../../images/editing/edit-custom.png)
+![Custom validation](../../images/editing/validation-custom.png)
 
 ### Custom validation based on dropdown change
 
@@ -54,25 +54,25 @@ The Custom validation feature in the Grid allows you to apply validation rules a
 In the following sample, dropdownlist edit type is used for the **Role** and **Salary** columns. Here, you can apply the custom validation in the **Salary** column based on the value selected in the **Role** column.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/validation-dropdown-change/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/validation-dropdown-change/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="customcommand.cs" %}
 {% include code-snippet/grid/edit/validation-dropdown-change/customcommand.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Custom validation based on dropdown change](../../images/editing/edit-custom.png)
+![Custom validation based on dropdown change](../../images/editing/validation-dropdown.gif)
 
 ### Custom validation for numeric column
 
 Custom validation for a numeric column Grid is useful when you want to enforce specific validation rules on numeric values in a column. This allows you to define your own validation logic and display custom error messages when the you enters invalid data.
 
-In the following example, custom validation functions, namely **customFn** and **customFn1**, are defined to check the entered numeric value against your validation criteria. Then, the grid column is configured with the appropriate validation settings using the **freightRules** object, specifying the custom validation functions along with corresponding error messages. Additionally, the `Change` event of the numeric column is bound to the `validate` method of the form element through the edit params. This enables you to trigger validation and display error messages whenever the you modifies the value in the **NumericTextBox**.
+In the following example, custom validation functions, namely **customFn** and **customFn1**, are defined to check the entered numeric value against your validation criteria. Then, the grid column is configured with the appropriate validation settings using the **freightRules** object, specifying the custom validation functions along with corresponding error messages. Additionally, the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Change) event of the numeric column is bound to the `validate` method of the form element through the edit params. This enables you to trigger validation and display error messages whenever the you modifies the value in the [NumericTextBox](https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/getting-started).
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/validation-numericcolumn/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/validation-numericcolumn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="customcommand.cs" %}
 {% include code-snippet/grid/edit/validation-numericcolumn/customcommand.cs %}
@@ -90,8 +90,8 @@ To add validation rules dynamically to an input element, you can use the `addRul
 The following example to demonstrates how to dynamically add or remove a required validation rule for an input field based on a **CheckBox** selection:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/validation-add-remove/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/validation-add-remove/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="customcommand.cs" %}
 {% include code-snippet/grid/edit/validation-add-remove/customcommand.cs %}
@@ -100,24 +100,24 @@ The following example to demonstrates how to dynamically add or remove a require
 
 ![Dynamically add or remove validation rules from the form](../../images/editing/validation-add-remove.png)
 
->To remove an existing validation rule from an input element, you can use the `removeRules` method. 
+> * To remove an existing validation rule from an input element, you can use the `removeRules` method. 
 
 ## Change the position of validation error message
 
 By default, the validation error message in Grid is displayed below the input field. However, you have an option to customize its position and display it in a different location. This feature is particularly useful when you want to align the error message according to your application's design and layout.
 
-To change the position of the validation error message in Grid, you can utilize the `CustomPlacement` event. This event allows you to define a custom logic to position the error message at the desired location.
+To change the position of the validation error message in Grid, you can utilize the `customPlacement` event. This event allows you to define a custom logic to position the error message at the desired location.
 
 Here's an example that demonstrates how to change the position of the validation error message to the top of the input field:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/customcommand/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/validation-position/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="customcommand.cs" %}
-{% include code-snippet/grid/edit/customcommand/customcommand.cs %}
+{% highlight c# tabtitle="validation.cs" %}
+{% include code-snippet/grid/edit/validation-position/validation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Change the position of validation error message](../../images/editing/edit-custom.png)
+![Change the position of validation error message](../../images/editing/validation-position.png)
 

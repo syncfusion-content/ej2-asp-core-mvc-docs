@@ -13,7 +13,8 @@
 }).Load("load").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 <script>
    function load(args) {
-        this.columns[2].validationRules = { required: true, minLength: [customFunctionOne, 'Please enter a value greater than 1'], maxLength: [customFunction, 'Please enter a value less than 1000'] };
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.getColumnByField("Freight").validationRules = { required: true, min: [customFunctionOne, 'Please enter a value greater than 1'], max: [customFunction, 'Please enter a value less than 1000'] };
     }
     function customFunction(args) {
         return args['value'].length >= 5;

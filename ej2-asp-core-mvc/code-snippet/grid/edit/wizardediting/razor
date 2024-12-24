@@ -1,56 +1,60 @@
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
-    {
-        col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-        col.Field("CustomerID").HeaderText("Customer Name").Width("150").ValidationRules(new { required = "true" }).Add();
-        col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").ValidationRules(new { required = "true",min=1,max=1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-        col.Field("ShipName").HeaderText("Ship Name").Width("150").ValidationRules(new { required = "true" }).Add();
-        col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").ValidationRules(new { required = "true" }).Width("150").Add();
-    }).ActionComplete("actionComplete").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog).Template("#dialogtemplate"); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ActionComplete("actionComplete").Height("348px").Columns(col =>
+  {
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = true }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").ValidationRules(new { required = true, minLength = 3 }).Add();
+    col.Field("Freight").HeaderText("Freight").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").Add();
+    col.Field("Verified").HeaderText("Verified").Width("150").Type("boolean").DisplayAsCheckBox(true).Add();
+  }).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog).Template("#dialogtemplate"); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 <script>
-function actionComplete(args) {
-   if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-    args.dialog.element.querySelector('.e-footer-content').classList.add('e-hide');
-    new ej.dropdowns.DropDownList(
-      { value: args.rowData.ShipCountry, 
-        popupHeight: '300px', 
-        floatLabelType: 'Always', 
-        dataSource: shipCountryData,
-        fields: { text: 'ShipCountry', value: 'ShipCountry' },
-        placeholder: 'Ship Country'
-      },
-      args.form.elements.namedItem('ShipCountry')
-    );
-    var numeric = new ej.inputs.NumericTextBox({
-      // sets value to the NumericTextBox
-      floatLabelType: 'Always',
-      placeholder: 'Freight'
-    });
-    numeric.appendTo('#Freight');
-    new ej.dropdowns.DropDownList(
-      {
-        value: args.rowData.ShipCity,
-        popupHeight: '300px',
-        floatLabelType: 'Always',
-        dataSource: shipCityData,
-        fields: { text: 'ShipCity', value: 'ShipCity' },
-        placeholder: 'Ship City'
-      },
-      args.form.elements.namedItem('ShipCity')
+  var shipCountryData = ej.data.DataUtil.distinct(@Html.Raw(JsonConvert.SerializeObject(ViewBag.dataSource)), 'ShipCountry', true);
+  var shipCityData = ej.data.DataUtil.distinct(@Html.Raw(JsonConvert.SerializeObject(ViewBag.dataSource)), 'ShipCity', true)
+  function actionComplete(args) {
+    if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+      args.dialog.element.querySelector('.e-footer-content').classList.add('e-hide');
+      new ej.dropdowns.DropDownList(
+        {
+          value: args.rowData.ShipCountry,
+          popupHeight: '300px',
+          floatLabelType: 'Always',
+          dataSource: shipCountryData,
+          fields: { text: 'ShipCountry', value: 'ShipCountry' },
+          placeholder: 'Ship Country'
+        },
+        args.form.elements.namedItem('ShipCountry')
       );
-    new ej.buttons.CheckBox(
-      { label: 'Verified',
-        checked: args.rowData.Verified,
-      },
-      args.form.elements.namedItem('Verified')
-    );
-    // Set initail Focus
-    if (args.requestType === 'beginEdit') {
-      args.form.elements.namedItem('CustomerID').focus();
+      var numeric = new ej.inputs.NumericTextBox({
+        floatLabelType: 'Always',
+        placeholder: 'Freight'
+      });
+      numeric.appendTo('#Freight');
+      new ej.dropdowns.DropDownList(
+       {
+          value: args.rowData.ShipCity,
+          popupHeight: '300px',
+          floatLabelType: 'Always',
+          dataSource: shipCityData,
+          fields: { text: 'ShipCity', value: 'ShipCity' },
+          placeholder: 'Ship City'
+        },
+        args.form.elements.namedItem('ShipCity')
+      );
+      new ej.buttons.CheckBox(
+        {
+          floatLabelType: 'Always',
+          label: 'Verified',
+          checked: args.rowData.Verified,
+        },
+        args.form.elements.namedItem('Verified')
+      );
+      if (args.requestType === 'beginEdit') {
+        args.form.elements.namedItem('CustomerID').focus();
+      }
+      initializeWizard();
     }
-    initializeWizard();
-}
-
-function initializeWizard() {
+  }
+  function initializeWizard() {
     var currentTab = 0;
     document.getElementById('nextBtn').onclick = function () {
       if (validate()) {
@@ -60,16 +64,12 @@ function initializeWizard() {
     };
     function validate() {
       var valid = true;
-      [].slice
-        .call(
-          document.getElementById('tab' + currentTab).querySelectorAll('[name]')
-        )
-        .forEach((element) => {
-          element.form.ej2_instances[0].validate(element.name);
-          if (element.getAttribute('aria-invalid') === 'true') {
-            valid = false;
-          }
-        });
+      [].slice.call(document.getElementById('tab' + currentTab).querySelectorAll('[name]')).forEach((element) => {
+        element.form.ej2_instances[0].validate(element.name);
+        if (element.getAttribute('aria-invalid') === 'true') {
+          valid = false;
+        }
+      });
       if (!valid) {
         return false;
       }
@@ -80,14 +80,12 @@ function initializeWizard() {
         currentTab--;
         nextpre(currentTab);
       }
-    };
-    document.getElementById('saveButton').onclick = function () {
-        var grid = document.getElementById('grid').ej2_instances[0];
-
+     };
+     document.getElementById('saveButton').onclick = function () {
+      var grid = document.getElementById("grid").ej2_instances[0];
       grid.endEdit();
-    };
+     };
   }
-  
   function nextpre(current) {
     var tabs = [].slice.call(document.getElementsByClassName('tab'));
     tabs.forEach((element) => (element.style.display = 'none'));
@@ -103,71 +101,65 @@ function initializeWizard() {
       document.getElementById('prevBtn').style.display = '';
     }
   }
- </script>
-
- <script id="dialogtemplate" type="text/x-template">
-        <div>
-            <div id="tab0" class='tab'>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <div class="e-float-input e-control-wrapper">
-                            <input id="OrderID" required name="OrderID" type="text" value=${if(isAdd)} '' ${else} ${OrderID} ${/if}  ${if(isAdd)} '' ${else} disabled ${/if} />
-                            <span class="e-float-line"></span>
-                            <label class="e-float-text e-label-top" for="OrderID">Order ID</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <div class="e-float-input e-control-wrapper">
-                            <input id="CustomerID" required name="CustomerID" type="text" value=${if(isAdd)} '' ${else} ${CustomerID} ${/if} />
-                            <span class="e-float-line"></span>
-                            <label class="e-float-text e-label-top" for="CustomerID">Customer ID</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-  
-          </div>
-            <div id="tab1" style="display: none" class='tab'>
-              <div class="form-row">
-                  <div class="form-group col-md-6">
-                      <div class="e-float-input e-control-wrapper">
-                          <input id="Freight" required name="Freight" type="text" value=${if(isAdd)} '' ${else} ${Freight} ${/if} />
-                          <span class="e-float-line"></span>
-                      </div>
-                  </div>
-              </div>
-              <div class="form-row">
-                  <div class="form-group col-md-6">
-                      <div class="e-float-input e-control-wrapper">
-                          <input id="ShipCity" required name="ShipCity" type="text" value=${if(isAdd)} '' ${else} ${ShipCity} ${/if} />
-                          <span class="e-float-line"></span>
-                      </div>
-                  </div>
-              </div>
-          </div>
-            <div id=tab2 style="display: none" class='tab'>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <input type="text" name="ShipCountry" id="ShipCountry" value=${if(isAdd)} '' ${else} ${ShipCountry} ${/if} />
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <input type="checkbox" name="Verified" id="Verified" ${if(Verified)} checked ${/if} />
-                    </div>
-                </div>
-            </div>
-            <div id='footer'>
-              <div style='float:left'>
-                <button id="prevBtn" class="e-info e-btn" type="button" style="display: none; float: left">Previous</button>
-              </div>
-              <div style='float:right'>
-                <button id="saveButton"  class="e-info e-btn" type="button"  style="margin-right:10px;margin-left:10px">Save</button>
-                <button id="nextBtn" class="e-info e-btn" type="button" >Next</button>
-              </div>
+</script>
+<script id="dialogtemplate" type="text/x-template">
+    <div id="tab0" class='tab'>
+        <div class="form-row">
+        <div class="form-group col-md-6">
+            <div class="e-float-input e-control-wrapper">
+            <input id="OrderID" required name="OrderID" type="text" value=${if(isAdd)} '' ${else} ${OrderID} ${ /if} ${if(isAdd)} '' ${else} disabled ${ /if} />
+            <span class="e-float-line"></span>
+            <label class="e-float-text e-label-top" for="OrderID">Order ID</label>
             </div>
         </div>
-      </script>
-
+        </div>
+        <div class="form-row">
+        <div class="form-group col-md-6">
+            <div class="e-float-input e-control-wrapper">
+            <input id="CustomerID" required name="CustomerID" type="text" value=${if(isAdd)} '' ${else} ${CustomerID} ${ /if} />
+            <span class="e-float-line"></span>
+            <label class="e-float-text e-label-top" for="CustomerID">Customer ID</label>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="tab1" style="display: none" class='tab'>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input id="Freight" required name="Freight" type="text" value=${if(isAdd)} '' ${else} ${Freight} ${ /if} />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input id="ShipCity" required name="ShipCity" type="text" value=${if(isAdd)} '' ${else} ${ShipCity} ${ /if} />
+            </div>
+        </div>
+    </div>
+    <div id=tab2 style="display: none" class='tab'>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" name="ShipCountry" id="ShipCountry" value=${if(isAdd)} '' ${else} ${ShipCountry} ${ /if} />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="checkbox" name="Verified" id="Verified" ${if(Verified)} checked ${ /if} />
+            </div>
+        </div>
+    </div>
+    <div id='footer'>
+        <div style='float:left'>
+            <button id="prevBtn" class="e-info e-btn" type="button" style="display: none; float: left">Previous</button>
+        </div>
+        <div style='float:right'>
+            <button id="saveButton" class="e-info e-btn" type="button" style="margin-right:10px;margin-left:10px">Save</button>
+            <button id="nextBtn" class="e-info e-btn" type="button">Next</button>
+        </div>
+    </div>
+</script>
+<style>
+  .form-group.col-md-6 {
+    width: 250px;
+    margin-bottom:20px
+  }
+</style>
