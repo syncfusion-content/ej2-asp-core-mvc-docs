@@ -26,6 +26,7 @@ N> You can install the PDF export packages from this [`link`](https://www.npmjs.
 {% include code-snippet/document-editor-container/export-pdf-client/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-client.cs" %}
+{% include code-snippet/document-editor-container/export-pdf-client/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,6 +37,7 @@ N> You can install the PDF export packages from this [`link`](https://www.npmjs.
 {% include code-snippet/document-editor-container/export-pdf-client/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-client.cs" %}
+{% include code-snippet/document-editor-container/export-pdf-client/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -57,7 +59,9 @@ The following way illustrates how to convert the document as PDF:
 {% include code-snippet/document-editor-container/export-pdf-server/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-server.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/export-pdf-server/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -66,7 +70,9 @@ The following way illustrates how to convert the document as PDF:
 {% include code-snippet/document-editor-container/export-pdf-server/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-server.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/export-pdf-server/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
