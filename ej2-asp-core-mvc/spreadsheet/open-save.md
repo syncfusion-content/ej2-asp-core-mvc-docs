@@ -30,7 +30,7 @@ The following sample shows the `Open` option by using the [`openUrl`](https://he
 {% include code-snippet/spreadsheet/open/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open/EJ2_ASP.NETCORE/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,7 +41,7 @@ The following sample shows the `Open` option by using the [`openUrl`](https://he
 {% include code-snippet/spreadsheet/open/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open/EJ2_ASP.MVC/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -72,7 +72,7 @@ The following code example shows how to import an excel document using file uplo
 {% include code-snippet/spreadsheet/open-uploader/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-uploader/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-uploader/EJ2_ASP.NETCORE/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -83,7 +83,7 @@ The following code example shows how to import an excel document using file uplo
 {% include code-snippet/spreadsheet/open-uploader/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-uploader/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-uploader/EJ2_ASP.MVC/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -99,7 +99,7 @@ You can achieve to access the remote excel file by using the [`created`](https:/
 {% include code-snippet/spreadsheet/open-url/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-url/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-url/EJ2_ASP.NETCORE/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,7 +110,7 @@ You can achieve to access the remote excel file by using the [`created`](https:/
 {% include code-snippet/spreadsheet/open-url/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-url/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-url/EJ2_ASP.MVC/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -128,7 +128,7 @@ Please find the code to fetch the blob data and load it into the Spreadsheet con
 {% include code-snippet/spreadsheet/open-from-blob/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/open-from-blob/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-from-blob/EJ2_ASP.NETCORE/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -139,7 +139,7 @@ Please find the code to fetch the blob data and load it into the Spreadsheet con
 {% include code-snippet/spreadsheet/open-from-blob/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/open-from-blob/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-from-blob/EJ2_ASP.MVC/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -147,6 +147,8 @@ Please find the code to fetch the blob data and load it into the Spreadsheet con
 ### Open an Excel file located on a server
 
 By default, the Spreadsheet control provides an option to browse files from the local file system and open them within the control. If you want to load an Excel file located on a server, you need to configure the server endpoint to fetch the Excel file from the server location, process it using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, and send it back to the client side as `JSON data`. On the client side, you should use the `openFromJson` method to load that `JSON data` into the Spreadsheet control.
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 ```csharp
     public IActionResult Open([FromBody] FileOptions options)
@@ -169,6 +171,34 @@ By default, the Spreadsheet control provides an option to browse files from the 
         public string FileName { get; set; } = string.Empty;
     }
 ```
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+```csharp
+    public string LoadExcel(FileOptions file)
+    {
+        ExcelEngine excelEngine = new ExcelEngine();
+        IWorkbook workbook;
+        FileStream fs = System.IO.File.Open(HttpContext.Server.MapPath("~/Files/") + file.FileName + ".xlsx", FileMode.Open); // converting excel file to stream 
+        workbook = excelEngine.Excel.Workbooks.Open(fs, ExcelOpenType.Automatic);
+        MemoryStream outputStream = new MemoryStream();
+        workbook.SaveAs(outputStream);
+        HttpPostedFileBase fileBase = (HttpPostedFileBase)new HttpPostedFile(outputStream.ToArray(), file.FileName + ".xlsx");
+        HttpPostedFileBase[] files = new HttpPostedFileBase[1];
+        files[0] = fileBase;
+        OpenRequest open = new OpenRequest();
+        open.File = files;
+        fs.Close();
+        return Workbook.Open(open);
+    }
+
+    public class FileOptions
+    {
+        public string FileName { get; set; }
+    }
+```
+
+{% endif %}
 
 ```js
 
@@ -325,7 +355,7 @@ The following code example shows how to open the spreadsheet data as base64 stri
 {% include code-snippet/spreadsheet/base-64-string/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% include code-snippet/spreadsheet/base-64-string/EJ2_ASP.NETCORE/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -336,7 +366,7 @@ The following code example shows how to open the spreadsheet data as base64 stri
 {% include code-snippet/spreadsheet/base-64-string/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% include code-snippet/spreadsheet/base-64-string/EJ2_ASP.MVC/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -352,7 +382,7 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 {% include code-snippet/spreadsheet/open-readonly/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-readonly/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-readonly/EJ2_ASP.NETCORE/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -363,7 +393,7 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 {% include code-snippet/spreadsheet/open-readonly/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-readonly/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-readonly/EJ2_ASP.MVC/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -401,7 +431,7 @@ The following code snippet demonstrates how to configure the deserialization opt
 {% include code-snippet/spreadsheet/open-from-json/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/open-from-json/openController.cs %}
+{% include code-snippet/spreadsheet/open-from-json/EJ2_ASP.NETCORE/openController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -412,7 +442,7 @@ The following code snippet demonstrates how to configure the deserialization opt
 {% include code-snippet/spreadsheet/open-from-json/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/open-from-json/openController.cs %}
+{% include code-snippet/spreadsheet/open-from-json/EJ2_ASP.MVC/openController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -530,7 +560,7 @@ You can add your own custom header to the open action in the Spreadsheet. For pr
 {% include code-snippet/spreadsheet/open-header/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-header/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-header/EJ2_ASP.NETCORE/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -541,7 +571,7 @@ You can add your own custom header to the open action in the Spreadsheet. For pr
 {% include code-snippet/spreadsheet/open-header/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Opencontroller.cs" %}
-{% include code-snippet/spreadsheet/open-header/opencontroller.cs %}
+{% include code-snippet/spreadsheet/open-header/EJ2_ASP.MVC/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %} 
@@ -550,15 +580,29 @@ You can add your own custom header to the open action in the Spreadsheet. For pr
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 ```csharp
 public IActionResult Open(IFormCollection openRequest)
-    {
-        OpenRequest open = new OpenRequest();
-        open.AllowExternalWorkbook = false;
-        open.File = openRequest.Files[0];
-        return Content(Workbook.Open(open));
-    }
+{
+    OpenRequest open = new OpenRequest();
+    open.AllowExternalWorkbook = false;
+    open.File = openRequest.Files[0];
+    return Content(Workbook.Open(open));
+}
 ```
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+```csharp
+public ActionResult Open(OpenRequest openRequest)
+{
+    openRequest.AllowExternalWorkbook = false;
+    return Content(Workbook.Open(open));
+}
+```
+
+{% endif %} 
 
 > This feature is only applicable when importing an Excel file and not when loading JSON data or binding cell data.
 
@@ -591,7 +635,7 @@ The following sample shows the `Save` option by using the [`saveUrl`](https://he
 {% include code-snippet/spreadsheet/save/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Savecontroller.cs" %}
-{% include code-snippet/spreadsheet/save/savecontroller.cs %}
+{% include code-snippet/spreadsheet/save/EJ2_ASP.NETCORE/savecontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -602,7 +646,7 @@ The following sample shows the `Save` option by using the [`saveUrl`](https://he
 {% include code-snippet/spreadsheet/save/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Savecontroller.cs" %}
-{% include code-snippet/spreadsheet/save/savecontroller.cs %}
+{% include code-snippet/spreadsheet/save/EJ2_ASP.MVC/savecontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -638,7 +682,7 @@ Please find below the code to retrieve blob data from the Spreadsheet control be
 {% include code-snippet/spreadsheet/save-as-blob/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SaveController.cs" %}
-{% include code-snippet/spreadsheet/save-as-blob/savecontroller.cs %}
+{% include code-snippet/spreadsheet/save-as-blob/EJ2_ASP.NETCORE/savecontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -649,7 +693,7 @@ Please find below the code to retrieve blob data from the Spreadsheet control be
 {% include code-snippet/spreadsheet/save-as-blob/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SaveController.cs" %}
-{% include code-snippet/spreadsheet/save-as-blob/savecontroller.cs %}
+{% include code-snippet/spreadsheet/save-as-blob/EJ2_ASP.MVC/savecontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -877,7 +921,7 @@ The following code example shows how to save the spreadsheet data as base64 stri
 {% include code-snippet/spreadsheet/base-64-string/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% include code-snippet/spreadsheet/base-64-string/EJ2_ASP.NETCORE/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -888,7 +932,7 @@ The following code example shows how to save the spreadsheet data as base64 stri
 {% include code-snippet/spreadsheet/base-64-string/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/base-64-string/opencontroller.cs %}
+{% include code-snippet/spreadsheet/base-64-string/EJ2_ASP.MVC/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -926,7 +970,7 @@ The following code snippet demonstrates how to configure the serialization optio
 {% include code-snippet/spreadsheet/save-as-json/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SaveController.cs" %}
-{% include code-snippet/spreadsheet/save-as-json/saveController.cs %}
+{% include code-snippet/spreadsheet/save-as-json/EJ2_ASP.NETCORE/saveController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -937,7 +981,7 @@ The following code snippet demonstrates how to configure the serialization optio
 {% include code-snippet/spreadsheet/save-as-json/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SaveController.cs" %}
-{% include code-snippet/spreadsheet/save-as-json/saveController.cs %}
+{% include code-snippet/spreadsheet/save-as-json/EJ2_ASP.MVC/saveController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -953,7 +997,7 @@ Passing the custom parameters from client to server by using [`beforeSave`](http
 {% include code-snippet/spreadsheet/custom-params/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomParamsController.cs" %}
-{% include code-snippet/spreadsheet/custom-params/customParamsController.cs %}
+{% include code-snippet/spreadsheet/custom-params/EJ2_ASP.NETCORE/customParamsController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -964,7 +1008,7 @@ Passing the custom parameters from client to server by using [`beforeSave`](http
 {% include code-snippet/spreadsheet/custom-params/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomParamsController.cs" %}
-{% include code-snippet/spreadsheet/custom-params/customParamsController.cs %}
+{% include code-snippet/spreadsheet/custom-params/EJ2_ASP.MVC/customParamsController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -980,7 +1024,7 @@ You can add your own custom header to the save action in the Spreadsheet. For pr
 {% include code-snippet/spreadsheet/save-header/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomHeaderController.cs" %}
-{% include code-snippet/spreadsheet/save-header/CustomHeaderController.cs %}
+{% include code-snippet/spreadsheet/save-header/EJ2_ASP.NETCORE/CustomHeaderController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -991,7 +1035,7 @@ You can add your own custom header to the save action in the Spreadsheet. For pr
 {% include code-snippet/spreadsheet/save-header/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomHeaderController.cs" %}
-{% include code-snippet/spreadsheet/save-header/CustomHeaderController.cs %}
+{% include code-snippet/spreadsheet/save-header/EJ2_ASP.MVC/CustomHeaderController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -1012,7 +1056,7 @@ The possible values are:
 {% include code-snippet/spreadsheet/pdf-orientation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="pdfOrientationController.cs" %}
-{% include code-snippet/spreadsheet/pdf-orientation/pdfOrientationController.cs %}
+{% include code-snippet/spreadsheet/pdf-orientation/EJ2_ASP.NETCORE/pdfOrientationController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1023,7 +1067,7 @@ The possible values are:
 {% include code-snippet/spreadsheet/pdf-orientation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="pdfOrientationController.cs" %}
-{% include code-snippet/spreadsheet/pdf-orientation/pdfOrientationController.cs %}
+{% include code-snippet/spreadsheet/pdf-orientation/EJ2_ASP.MVC/pdfOrientationController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -1048,7 +1092,7 @@ To save the Spreadsheet document as an `xlsx, xls, csv, or pdf` file, by using `
 {% include code-snippet/spreadsheet/open-save/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenSaveController.cs" %}
-{% include code-snippet/spreadsheet/open-save/openSaveController.cs %}
+{% include code-snippet/spreadsheet/open-save/EJ2_ASP.NETCORE/openSaveController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1059,7 +1103,7 @@ To save the Spreadsheet document as an `xlsx, xls, csv, or pdf` file, by using `
 {% include code-snippet/spreadsheet/open-save/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenSaveController.cs" %}
-{% include code-snippet/spreadsheet/open-save/openSaveController.cs %}
+{% include code-snippet/spreadsheet/open-save/EJ2_ASP.MVC/openSaveController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
