@@ -32,7 +32,7 @@
 			backgroundColor: '#357cd2', color: '#fff',
 			fontWeight: 'bold', textAlign: 'center'
 		}, 'A3:F3');
-		this.numberFormat(getFormatFromType('Currency'), 'B4:F8');
+		this.numberFormat(ej.spreadsheet.getFormatFromType('Currency'), 'B4:F8');
 	}
 
 </script>

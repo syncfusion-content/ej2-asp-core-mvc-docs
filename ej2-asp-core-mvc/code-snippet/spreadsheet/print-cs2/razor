@@ -2,7 +2,7 @@
 <input type="checkbox" id="gridline" /><label for="gridline">Allow Grid Lines</label>
 <input type="checkbox" id="header" /><label for="header">Allow Row Column Header</label>
 
-@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Open").AllowOpen(true).SaveUrl("Save").AllowSave(true).created("created").Sheets(sheet =>
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Open").AllowOpen(true).SaveUrl("Save").AllowSave(true).Created("created").Sheets(sheet =>
 {
     sheet.Name("Budget").Ranges(ranges =>
     {

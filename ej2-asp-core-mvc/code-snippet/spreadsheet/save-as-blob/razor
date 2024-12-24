@@ -1,4 +1,4 @@
-@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Open").SaveUrl("Save").BeforeSave("beforeSave").SaveComplete("saveComplete").Sheets(sheet => {
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Open").SaveUrl("https://localhost:{{port number}}/Home/Save").BeforeSave("beforeSave").SaveComplete("saveComplete").Sheets(sheet => {
     sheet.Name("Price Details").Ranges(ranges => {
         ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A1").Add();
     }).Columns(column => {

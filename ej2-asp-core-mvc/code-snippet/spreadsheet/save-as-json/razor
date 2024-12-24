@@ -13,7 +13,7 @@
     <input type="checkbox" id="note"><label for="note">Ignore Note</label>
 </div>
 @Html.EJS().Button("save").Content("Save with JSON Serialization").Render();
-@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").AllowOpem(true).Render()
+@Html.EJS().Spreadsheet("spreadsheet").SaveUrl("Home/Save").AllowSave(true).Render()
 
 <style>
     #Saveasjson {

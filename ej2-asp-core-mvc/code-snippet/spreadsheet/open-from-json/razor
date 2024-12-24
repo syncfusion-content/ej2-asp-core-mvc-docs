@@ -12,11 +12,10 @@
     <input type="checkbox" id="image"><label for="image">Ignore Image</label>
     <input type="checkbox" id="note"><label for="note">Ignore Note</label>
 </div>
-@Html.EJS().Uploader("UploadFiles").Success("onSuccess").AllowedExtensions(".xls, .xlsx,
-.csv").showFileList(false).AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings {
+@Html.EJS().Uploader("UploadFiles").Success("onSuccess").AllowedExtensions(".xls, .xlsx, .csv").ShowFileList(false).AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings {
 SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save",
 RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).Render()
-@Html.EJS().Spreadsheet("spreadsheet").SaveUrl("Home/Save").AllowSave(true).beforeOpen("beforeOpen").Render()
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").AllowSave(true).BeforeOpen("beforeOpen").Render()
 
 <style>
     #Openfromjson {

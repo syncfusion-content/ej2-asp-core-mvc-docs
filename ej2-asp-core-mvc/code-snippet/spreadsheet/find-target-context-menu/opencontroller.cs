@@ -1,6 +1,4 @@
-public IActionResult Open(IFormCollection openRequest)
+public IActionResult Index()
 {
-    OpenRequest open = new OpenRequest();
-    open.File = openRequest.Files[0];
-    return Content(Workbook.Open(open));
+    return View();
 }

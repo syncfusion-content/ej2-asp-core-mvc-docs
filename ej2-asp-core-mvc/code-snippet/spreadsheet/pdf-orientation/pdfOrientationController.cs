@@ -21,7 +21,7 @@ public IActionResult Index()
             return View();
         }
         
-public void Save(SaveSettings saveSettings, string customParams)
+public void Save(SaveSettings saveSettings)
 {
     Workbook.Save(saveSettings);
 }
