@@ -35,9 +35,9 @@
         var loadCulture = function (prop) {
             var val, ajax;
             if (files[prop] === 'numberingSystems.json') {
-                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/supplemental/' + files[prop], 'GET', false);
+                ajax = new ej.base.Ajax(location.origin + '/Content/cldr-data/supplemental/' + files[prop], 'GET', false);
             } else {
-                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+                ajax = new ej.base.Ajax(location.origin + '/Content/cldr-data/main/' + name + '/' + files[prop], 'GET', false);
             }
             ajax.onSuccess = function (value) {
                 val = value;

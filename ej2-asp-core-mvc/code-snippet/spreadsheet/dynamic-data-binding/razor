@@ -53,16 +53,15 @@ document.getElementById('clearBtn').addEventListener('click', ()=> {
     document.getElementById('EventLog').innerHTML = "";
 });
 
-function appendElement(html): void {
+function appendElement(html) {
      var span = document.createElement("span");
      span.innerHTML = html;
      var log = document.getElementById('EventLog');
      log.insertBefore(span, log.firstChild);
 }
 
-function dataSourcechanged() {
-      this.appendElement("Data source changed with" + "<b>&nbsp;" + args.action + "</b> action<hr>"
-    );
+function dataSourceChanged(args) {
+    appendElement("Data source changed with" + "<b>&nbsp;" + args.action + "</b> action<hr>");
 }
 
 </script>

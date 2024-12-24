@@ -1,6 +1,6 @@
-@Html.EJS().Button("importBtn").Content("Import Base64").Render();
-@Html.EJS().Button("exportBtn").Content("Export as Base64").Render();
-@Html.EJS().Spreadsheet("spreadsheet").BeforeSave("beforeSave").SaveComplete("saveComplete").Sheets(sheet => {
+@Html.EJS().Button("importBtn").Content("Import Base64").Render()
+@Html.EJS().Button("exportBtn").Content("Export as Base64").Render()
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("/Home/Open").BeforeSave("beforeSave").SaveComplete("saveComplete").Sheets(sheet => {
     sheet.Name("Price Details").Ranges(ranges => {
         ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A1").Add();
     }).Columns(column => {
@@ -39,7 +39,7 @@
     document.getElementById("exportBtn").addEventListener('click', function () {
         var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
         spreadsheetObj.save({
-            url: 'Home/Save',
+            url: 'https://localhost:{{port number}}/Home/Save',
             fileName: 'Worksheet',
             saveType: 'Xlsx',
         }); // Specifies the save URL, file name, file type need to be saved.

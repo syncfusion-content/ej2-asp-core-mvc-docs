@@ -30,7 +30,7 @@ function fileMenuItemSelect(args) {
           }
         ).then(response => {
           response.blob().then(data => {
-            var anchor = createElement("a", {
+            var anchor = ej.base.createElement("a", {
               attrs: { download: "Sample.xlsx" }
             });
             var url = URL.createObjectURL(data);

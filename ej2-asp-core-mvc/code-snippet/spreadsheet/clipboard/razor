@@ -14,9 +14,6 @@
 }).Render()
 
 <script>
-    document.getElementById("cutBtn").addEventListener('click', cut);
-    document.getElementById("copyBtn").addEventListener('click', copy);
-    document.getElementById("pasteBtn").addEventListener('click', paste);
     function createHandler() {
         //Applies format to specified range
         this.cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }, 'A1:G1');

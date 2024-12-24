@@ -5,7 +5,7 @@
         ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
     }).ConditionalFormats(
 		   new List<ConditionalFormat> {
-		   new ConditionalFormat() { Type = ConditionalFormatType.GreaterThan, CFColor: CFColor.RedFT, Value= "7700" , Range = "B2:B9" },
+		   new ConditionalFormat() { Type = ConditionalFormatType.GreaterThan, CFColor = CFColor.RedFT, Value= "7700" , Range = "B2:B9" },
 		   new ConditionalFormat() { Type = ConditionalFormatType.Bottom10Items , CFColor = CFColor.YellowFT, Value = "4", Range = "C2:C9" },
            new ConditionalFormat() { Type = ConditionalFormatType.BlueDataBar , Range = "D2:D9" },
 	}).Columns(column =>

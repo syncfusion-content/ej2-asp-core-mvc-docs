@@ -6,7 +6,7 @@
     }).Add();
 }).Render()
 
-<sctipt>
+<script>
 ej.base.setCulture('fr-CH');
 ej.base.setCurrencyCode('EUR');
 
