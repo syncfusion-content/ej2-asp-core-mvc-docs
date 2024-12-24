@@ -294,7 +294,7 @@ In the following sample, you can enable/disable the fill option on the button cl
 {% include code-snippet/spreadsheet/autofill/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AutofillController.cs" %}
-{% include code-snippet/spreadsheet/autofill/autofillController.cs %}
+{% include code-snippet/spreadsheet/autofill/Core/autofillController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -305,7 +305,7 @@ In the following sample, you can enable/disable the fill option on the button cl
 {% include code-snippet/spreadsheet/autofill/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AutofillController.cs" %}
-{% include code-snippet/spreadsheet/autofill/autofillController.cs %}
+{% include code-snippet/spreadsheet/autofill/MVC/autofillController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
