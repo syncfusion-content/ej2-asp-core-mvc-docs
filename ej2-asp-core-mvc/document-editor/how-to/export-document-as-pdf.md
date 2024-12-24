@@ -42,7 +42,7 @@ N> You can install the PDF export packages from this [`link`](https://www.npmjs.
 
 ## Export document as PDF in server-side using Syncfusion<sup style="font-size:70%">&reg;</sup> DocIO
 
-With the help of [`Synfusion DocIO`](https://help.syncfusion.com/file-formats/docio/word-to-pdf), you can export the document as PDF in server-side. Here, you can search the text.
+With the help of [`Synfusion`<sup style="font-size:70%">&reg;</sup>`DocIO`](https://help.syncfusion.com/file-formats/docio/word-to-pdf), you can export the document as PDF in server-side. Here, you can search the text.
 
 The following way illustrates how to convert the document as PDF:
 
@@ -70,7 +70,7 @@ The following way illustrates how to convert the document as PDF:
 
 
 * Using Save API in server-side, you can convert the sfdt to stream.
-* Finally, convert the stream to PDF using `Syncfusion.DocIORenderer.Net.Core` library.
+* Finally, convert the stream to PDF using `Syncfusion`<sup style="font-size:70%">&reg;</sup>`.DocIORenderer.Net.Core` library.
 
 ```csharp
 [AcceptVerbs("Post")]
