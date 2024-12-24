@@ -1,4 +1,4 @@
-@Html.EJS().Spreadsheet("spreadsheet").Password("syncfusion).DataBound("dataBound").Sheets(sheet =>
+@Html.EJS().Spreadsheet("spreadsheet").Password("syncfusion").DataBound("dataBound").Sheets(sheet =>
 {
     sheet.Name("Budget").Ranges(ranges =>
     {

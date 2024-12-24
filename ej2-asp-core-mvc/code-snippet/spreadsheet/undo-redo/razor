@@ -10,7 +10,7 @@
         var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
         if (actionEvents.eventArgs.action == "customCSS") {
             var Element = spreadsheetObj.getCell(actionEvents.eventArgs.rowIdx, actionEvents.eventArgs.colIdx);
-            if (actionEvents.eventArgs.requestType == "undo") {
+            if (actionEvents.isUndoRedo && actionEvents.isUndo) {
                 Element.classList.remove('customClass'); // To remove the custom class in undo action
             }
             else {

@@ -1,4 +1,4 @@
-@Html.EJS().Spreadsheet("spreadsheet").contextMenuBeforeOpen("createdHandler").Sheets(sheet =>
+@Html.EJS().Spreadsheet("spreadsheet").ContextMenuBeforeOpen("contextMenuHandler").Sheets(sheet =>
 {
     sheet.Ranges(ranges =>
     {
@@ -26,7 +26,7 @@
 }).Render()
 
 <script>
-    function createdHandler(args) {
+    function contextMenuHandler(args) {
         if (args.element.id === this.element.id + '_contextmenu') {
         this.addContextMenuItems([{ text: 'Custom Item' }], 'Paste Special', false); //To pass the items, Item before / after that the element to be inserted, Set false if the items need to be inserted before the text.
       }

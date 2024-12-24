@@ -2,11 +2,11 @@
   {
       sheet.Name("Order Details").Ranges(ranges =>
       {
-        DataSource(dataManger =>
+        ranges.DataSource(dataManager =>
    {
-       dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").CrossDomain(true).Adaptor("WebApiAdaptor");
+       dataManager.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").CrossDomain(true).Adaptor("WebApiAdaptor");
    }).Add();
-      })..Columns(column =>
+      }).Columns(column =>
       {
           column.Width(80).Add();
           column.Width(80).Add();
@@ -22,13 +22,13 @@
       }).Add();
   }).Render()
 
-  <script>
+<script>
 
-    function dataBound() {
+    function created() {
         var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
         //Applies cell and number formatting to specified range of the active sheet
         spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' },
-      'A1:K1');
+            'A1:K1');
     }
 
 </script>

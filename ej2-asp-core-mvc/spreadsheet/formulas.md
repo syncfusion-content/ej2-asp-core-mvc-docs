@@ -39,7 +39,7 @@ In the example below, the Spreadsheet control is rendered with the `German cultu
 {% include code-snippet/spreadsheet/formula-cs3/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula-cs3/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula-cs3/EJ2_ASP.NETCORE/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,7 +50,7 @@ In the example below, the Spreadsheet control is rendered with the `German cultu
 {% include code-snippet/spreadsheet/formula-cs3/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula-cs3/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula-cs3/EJ2_ASP.MVC/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -70,7 +70,7 @@ The following code example shows an unsupported formula in the spreadsheet.
 {% include code-snippet/spreadsheet/formula/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula/EJ2_ASP.NETCORE/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,7 +81,7 @@ The following code example shows an unsupported formula in the spreadsheet.
 {% include code-snippet/spreadsheet/formula/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula/EJ2_ASP.MVC/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -97,7 +97,7 @@ The following code example shows how to use `computeExpression` method in the sp
 {% include code-snippet/spreadsheet/formula-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula-cs2/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula-cs2/EJ2_ASP.NETCORE/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,7 +108,7 @@ The following code example shows how to use `computeExpression` method in the sp
 {% include code-snippet/spreadsheet/formula-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula-cs2/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula-cs2/EJ2_ASP.MVC/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -135,7 +135,7 @@ The following code example shows the usage of named ranges support.
 {% include code-snippet/spreadsheet/defined-names/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefinedNameController.cs" %}
-{% include code-snippet/spreadsheet/defined-names/definedNameController.cs %}
+{% include code-snippet/spreadsheet/defined-names/EJ2_ASP.NETCORE/definedNameController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -146,7 +146,7 @@ The following code example shows the usage of named ranges support.
 {% include code-snippet/spreadsheet/defined-names/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefinedNameController.cs" %}
-{% include code-snippet/spreadsheet/defined-names/definedNameController.cs %}
+{% include code-snippet/spreadsheet/defined-names/EJ2_ASP.MVC/definedNameController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -175,7 +175,7 @@ The following code example demonstrates how to set the Automatic calculation mod
 {% include code-snippet/spreadsheet/calculation-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CalculationModeController.cs" %}
-{% include code-snippet/spreadsheet/calculation-cs1/calculationModeController.cs %}
+{% include code-snippet/spreadsheet/calculation-cs1/EJ2_ASP.NETCORE/calculationModeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -186,7 +186,7 @@ The following code example demonstrates how to set the Automatic calculation mod
 {% include code-snippet/spreadsheet/calculation-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CalculationModeController.cs" %}
-{% include code-snippet/spreadsheet/calculation-cs1/calculationModeController.cs %}
+{% include code-snippet/spreadsheet/calculation-cs1/EJ2_ASP.MVC/calculationModeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -209,7 +209,7 @@ The following code example demonstrates how to set the Manual calculation mode i
 {% include code-snippet/spreadsheet/calculation-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CalculationModeController.cs" %}
-{% include code-snippet/spreadsheet/calculation-cs2/calculationModeController.cs %}
+{% include code-snippet/spreadsheet/calculation-cs2/EJ2_ASP.NETCORE/calculationModeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -220,7 +220,7 @@ The following code example demonstrates how to set the Manual calculation mode i
 {% include code-snippet/spreadsheet/calculation-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CalculationModeController.cs" %}
-{% include code-snippet/spreadsheet/calculation-cs2/calculationModeController.cs %}
+{% include code-snippet/spreadsheet/calculation-cs2/EJ2_ASP.MVC/calculationModeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

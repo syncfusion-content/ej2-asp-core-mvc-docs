@@ -27,8 +27,7 @@
         for (var locale = 0; locale < localeOptions.length; locale++) {
             var files = ['ca-gregorian', 'currencies', 'numbers', 'timeZoneNames', 'numberingSystems'];
             var loadCulture = function (fileName) {
-                var url = '/Content/cldr-data/' + (fileName === 'numberingSystems' ? '' : (localeOptions[locale] + '/')) + fileName + '.json';
-                var ajax = new ej.base.Ajax(url, 'GET', false);
+                var url = location.origin + '/Content/cldr-data/' + (fileName === 'numberingSystems' ? 'supplemental/' : 'main/' + (localeOptions[locale] + '/')) + fileName + '.json';
                 ajax.onSuccess = (value) => ej.base.loadCldr(JSON.parse(value));
                 ajax.send();
             };

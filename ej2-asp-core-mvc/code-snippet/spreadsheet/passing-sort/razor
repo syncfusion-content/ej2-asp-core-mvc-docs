@@ -30,7 +30,7 @@
         //code here to handle sorting arguments.
     }
     function sortComplete(args) {
-        spreadsheet.selectRange(args.range);
+        this.selectRange(args.range);
         // code here.
     }
 
