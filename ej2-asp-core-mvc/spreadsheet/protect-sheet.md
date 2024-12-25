@@ -52,7 +52,7 @@ The following example shows `Protect Sheet` functionality with password in the S
 {% include code-snippet/spreadsheet/protect-sheet/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ProtectSheetController.cs" %}
-{% include code-snippet/spreadsheet/protect-sheet/protectSheetController.cs %}
+{% include code-snippet/spreadsheet/protect-sheet/EJ2_ASP.NETCORE/protectSheetController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,7 +63,7 @@ The following example shows `Protect Sheet` functionality with password in the S
 {% include code-snippet/spreadsheet/protect-sheet/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ProtectSheetController.cs" %}
-{% include code-snippet/spreadsheet/protect-sheet/protectSheetController.cs %}
+{% include code-snippet/spreadsheet/protect-sheet/EJ2_ASP.MVC/protectSheetController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -97,7 +97,7 @@ In protected spreadsheet, to make some particular cell or range of cells are edi
 {% include code-snippet/spreadsheet/lock-cells/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="LockCellController.cs" %}
-{% include code-snippet/spreadsheet/lock-cells/lockCellController.cs %}
+{% include code-snippet/spreadsheet/lock-cells/EJ2_ASP.NETCORE/lockCellController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,7 +108,7 @@ In protected spreadsheet, to make some particular cell or range of cells are edi
 {% include code-snippet/spreadsheet/lock-cells/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="LockCellController.cs" %}
-{% include code-snippet/spreadsheet/lock-cells/lockCellController.cs %}
+{% include code-snippet/spreadsheet/lock-cells/EJ2_ASP.MVC/lockCellController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -149,7 +149,7 @@ The following example demonstrates how to make rows, columns, and cells read-onl
 {% include code-snippet/spreadsheet/read-only/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReadOnlyController.cs" %}
-{% include code-snippet/spreadsheet/read-only/readOnlyController.cs %}
+{% include code-snippet/spreadsheet/read-only/EJ2_ASP.NETCORE/readOnlyController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -160,7 +160,7 @@ The following example demonstrates how to make rows, columns, and cells read-onl
 {% include code-snippet/spreadsheet/read-only/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReadOnlyController.cs" %}
-{% include code-snippet/spreadsheet/read-only/readOnlyController.cs %}
+{% include code-snippet/spreadsheet/read-only/EJ2_ASP.MVC/readOnlyController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -188,7 +188,7 @@ The following example shows `Protect Workbook` by using the [`isProtected`](http
 {% include code-snippet/spreadsheet/protect-workbook/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ProtectWorkbookController.cs" %}
-{% include code-snippet/spreadsheet/protect-workbook/protectWorkbookController.cs %}
+{% include code-snippet/spreadsheet/protect-workbook/EJ2_ASP.NETCORE/protectWorkbookController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -199,7 +199,7 @@ The following example shows `Protect Workbook` by using the [`isProtected`](http
 {% include code-snippet/spreadsheet/protect-workbook/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ProtectWorkbookController.cs" %}
-{% include code-snippet/spreadsheet/protect-workbook/protectWorkbookController.cs %}
+{% include code-snippet/spreadsheet/protect-workbook/EJ2_ASP.MVC/protectWorkbookController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -215,7 +215,7 @@ The following example shows `Protect Workbook` by using the [`password`](https:/
 {% include code-snippet/spreadsheet/password/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PasswordController.cs" %}
-{% include code-snippet/spreadsheet/password/passwordController.cs %}
+{% include code-snippet/spreadsheet/password/EJ2_ASP.NETCORE/passwordController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -226,7 +226,7 @@ The following example shows `Protect Workbook` by using the [`password`](https:/
 {% include code-snippet/spreadsheet/password/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PasswordController.cs" %}
-{% include code-snippet/spreadsheet/password/passwordController.cs %}
+{% include code-snippet/spreadsheet/password/EJ2_ASP.MVC/passwordController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

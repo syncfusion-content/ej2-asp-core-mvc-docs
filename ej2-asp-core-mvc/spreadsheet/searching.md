@@ -71,7 +71,7 @@ In the following sample, searching can be done by following ways:
 {% include code-snippet/spreadsheet/search/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SearchController.cs" %}
-{% include code-snippet/spreadsheet/search/searchController.cs %}
+{% include code-snippet/spreadsheet/search/EJ2_ASP.NETCORE/searchController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,7 +82,7 @@ In the following sample, searching can be done by following ways:
 {% include code-snippet/spreadsheet/search/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SearchController.cs" %}
-{% include code-snippet/spreadsheet/search/searchController.cs %}
+{% include code-snippet/spreadsheet/search/EJ2_ASP.MVC/searchController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

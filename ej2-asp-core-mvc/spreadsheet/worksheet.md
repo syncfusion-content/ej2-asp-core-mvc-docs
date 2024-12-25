@@ -30,7 +30,7 @@ The following code example shows the insert sheet operation in spreadsheet.
 {% include code-snippet/spreadsheet/insert-sheet/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="InsertSheetController.cs" %}
-{% include code-snippet/spreadsheet/insert-sheet/insertSheetController.cs %}
+{% include code-snippet/spreadsheet/insert-sheet/EJ2_ASP.NETCORE/insertSheetController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,7 +41,7 @@ The following code example shows the insert sheet operation in spreadsheet.
 {% include code-snippet/spreadsheet/insert-sheet/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="InsertSheetController.cs" %}
-{% include code-snippet/spreadsheet/insert-sheet/insertSheetController.cs %}
+{% include code-snippet/spreadsheet/insert-sheet/EJ2_ASP.MVC/insertSheetController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -59,7 +59,7 @@ The following code example shows how to insert a sheet programmatically and make
 {% include code-snippet/spreadsheet/insert-sheet-change-active-sheet/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="InsertSheetController.cs" %}
-{% include code-snippet/spreadsheet/insert-sheet-change-active-sheet/insertSheetController.cs %}
+{% include code-snippet/spreadsheet/insert-sheet-change-active-sheet/EJ2_ASP.NETCORE/insertSheetController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,7 +70,7 @@ The following code example shows how to insert a sheet programmatically and make
 {% include code-snippet/spreadsheet/insert-sheet-change-active-sheet/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="InsertSheetController.cs" %}
-{% include code-snippet/spreadsheet/insert-sheet-change-active-sheet/insertSheetController.cs %}
+{% include code-snippet/spreadsheet/insert-sheet-change-active-sheet/EJ2_ASP.MVC/insertSheetController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -112,7 +112,7 @@ The following code example shows the headers and gridlines operation in spreadsh
 {% include code-snippet/spreadsheet/header-gridlines/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HeaderController.cs" %}
-{% include code-snippet/spreadsheet/header-gridlines/headerController.cs %}
+{% include code-snippet/spreadsheet/header-gridlines/EJ2_ASP.NETCORE/headerController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -123,7 +123,7 @@ The following code example shows the headers and gridlines operation in spreadsh
 {% include code-snippet/spreadsheet/header-gridlines/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HeaderController.cs" %}
-{% include code-snippet/spreadsheet/header-gridlines/headerController.cs %}
+{% include code-snippet/spreadsheet/header-gridlines/EJ2_ASP.MVC/headerController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -151,7 +151,7 @@ The following code example shows the three types of sheet visibility state.
 {% include code-snippet/spreadsheet/sheet-visiblity/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SheetVisiblityController.cs" %}
-{% include code-snippet/spreadsheet/sheet-visiblity/sheetVisiblityController.cs %}
+{% include code-snippet/spreadsheet/sheet-visiblity/EJ2_ASP.NETCORE/sheetVisiblityController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -162,7 +162,7 @@ The following code example shows the three types of sheet visibility state.
 {% include code-snippet/spreadsheet/sheet-visiblity/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SheetVisiblityController.cs" %}
-{% include code-snippet/spreadsheet/sheet-visiblity/sheetVisiblityController.cs %}
+{% include code-snippet/spreadsheet/sheet-visiblity/EJ2_ASP.MVC/sheetVisiblityController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
