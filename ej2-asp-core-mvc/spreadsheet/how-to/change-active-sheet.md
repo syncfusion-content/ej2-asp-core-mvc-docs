@@ -21,7 +21,7 @@ The following code example shows how to set the active sheet when importing an E
 {% include code-snippet/spreadsheet/change-active-sheet/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/change-active-sheet/opencontroller.cs %}
+{% include code-snippet/spreadsheet/change-active-sheet/EJ2_ASP.NETCORE/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,7 +32,7 @@ The following code example shows how to set the active sheet when importing an E
 {% include code-snippet/spreadsheet/change-active-sheet/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenController.cs" %}
-{% include code-snippet/spreadsheet/change-active-sheet/opencontroller.cs %}
+{% include code-snippet/spreadsheet/change-active-sheet/EJ2_ASP.MVC/opencontroller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

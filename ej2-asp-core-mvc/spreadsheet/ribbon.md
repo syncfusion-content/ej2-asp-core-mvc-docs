@@ -43,7 +43,7 @@ The following code example shows the usage of ribbon customization.
 {% include code-snippet/spreadsheet/ribbon/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RibbonController.cs" %}
-{% include code-snippet/spreadsheet/ribbon/ribbonController.cs %}
+{% include code-snippet/spreadsheet/ribbon/EJ2_ASP.NETCORE/ribbonController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,7 +54,7 @@ The following code example shows the usage of ribbon customization.
 {% include code-snippet/spreadsheet/ribbon/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RibbonController.cs" %}
-{% include code-snippet/spreadsheet/ribbon/ribbonController.cs %}
+{% include code-snippet/spreadsheet/ribbon/EJ2_ASP.MVC/ribbonController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
