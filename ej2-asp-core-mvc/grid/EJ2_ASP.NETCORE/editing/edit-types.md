@@ -122,6 +122,28 @@ The following sample code demonstrates the customization applied to DropDownList
 
 ![Customize dropdown edit type](../images/editing/dropdown-edit-type.png)
 
+
+### Provide custom data source for DropDownList component
+
+In Syncfusion Grid component, you have an option to provide a custom data source for the [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started)  component in the edit form. This feature allows you to define a specific set of values for the DropDownList.
+
+To achieve this, you can utilize the `columns->edit->params` property. This property allows you to define the edit params for the column within the grid.
+
+When setting a new data source using the edit params, you need to specify a new `query`  property for the DropDownList. The `query` property allows you to define custom queries for data retrieval and filtering.
+
+In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column :
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/custom-data-params/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dropdownlist-params.cs" %}
+{% include code-snippet/grid/edit/custom-data-params/dropdown-params.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Provide custom data source for DropDownList component](../../images/editing/dropdown-edit-type.png)
+
 ### Apply filtering for DropDownList component
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides filtering for the DropDownList within the edit form. This feature allows to select options from a predefined list and easily search for specific items using the built-in filtering feature.  
@@ -455,6 +477,25 @@ The following example demonstrates how to render a RichTextEditor component in t
 {% endtabs %}
 
 ![Render richtext editor component](../images/editing/render-richtext-editor.gif)
+
+### Render Upload component in edit form  
+
+The Syncfusion Grid allows you to render an Upload control within the Grid's edit form. This feature is especially valuable when you need to upload and manage files or images in a specific column during data editing.
+
+To render Upload control in edit form, you need to define a cell edit template for the column using `edit` property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+
+The following example demonstrates how to render a Upload control in the **Employee Image** column of the Syncfusion Grid. The [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event is handled to update the edited value in the grid when the save button is clicked:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/edit-upload/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="upload.cs" %}
+{% include code-snippet/grid/edit/edit-upload/upload.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Render Upload component in edit form](../../images/editing/edit-types-upload.gif)
 
 ### Render AutoComplete component in edit form 
 
