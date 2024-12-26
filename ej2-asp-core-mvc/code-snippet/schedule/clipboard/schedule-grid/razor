@@ -2,7 +2,7 @@
 
 <div class="schedule-container">
 
-@(Html.EJS().Schedule("schedule")
+    @(Html.EJS().Schedule("schedule")
     .Width("100%")
     .Height("650px")
     .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
@@ -13,17 +13,19 @@
     .AllowClipboard(true)
     .BeforePaste("onBeforePaste")
     .Render()
-)
+    )
 
-@Html.EJS().Grid("Grid").Width("550px").CssClass("drag-grid").Height("400px").DataSource((IEnumerable<object>)ViewBag.gridData).AllowSelection().Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width(100).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width(100).Add();
-    col.Field("ShipName").HeaderText("Ship Name").Width(130).Add();
-    col.Field("OrderDate").HeaderText("Order Date").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(100).Add();
+    @Html.EJS().Grid("Grid").Width("40%").CssClass("drag-grid").Height("400px").DataSource((IEnumerable<object>)ViewBag.gridData).AllowSelection().Columns(col
+        =>
+        {
+        col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+        col.Field("CustomerID").HeaderText("Customer ID").Width(100).Add();
+        col.Field("ShipCity").HeaderText("Ship City").Width(100).Add();
+        col.Field("ShipName").HeaderText("Ship Name").Width(130).Add();
+        col.Field("OrderDate").HeaderText("Order
+        Date").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(100).Add();
 
-}).Render()
+        }).Render()
 
 </div>
 
@@ -31,6 +33,16 @@
     .schedule-container {
         display: flex;
         justify-content: space-between;
+    }
+
+    @@media screen and (max-width: 540px) {
+        .schedule-container {
+            flex-direction: column;
+        }
+
+        .e-grid {
+            width: 100% !important;
+        }
     }
 </style>
 
@@ -49,4 +61,4 @@
             args.data = [result];
         }
     }
-    </script>
+</script>

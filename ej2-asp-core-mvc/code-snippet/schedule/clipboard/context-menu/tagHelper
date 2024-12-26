@@ -2,9 +2,9 @@
 @using Syncfusion.EJ2.Schedule
 @using Syncfusion.EJ2.Navigations
 
-<ejs-schedule id="schedule" height="650px" selectedDate="new DateTime(2023, 2, 15)" allowDragAndDrop="false" allowResizing="false" allowClipboard="true" showQuickInfo="false">
-    <e-schedule-eventsettings dataSource="@ViewBag.appointments"></e-schedule-eventsettings>
-</ejs-schedule>
+    < ejs - schedule id = "schedule" height = "650px" selectedDate = "new DateTime(2023, 2, 15)" allowDragAndDrop = "false" allowResizing = "false" allowClipboard = "true" showQuickInfo = "false" >
+        <e-schedule-eventsettings dataSource="@ViewBag.appointments"></e-schedule-eventsettings>
+</ejs - schedule >
 
 <ejs-contextmenu id="ScheduleContextMenu" target=".e-schedule" items="@ViewBag.menuItems" beforeOpen="onContextMenuBeforeOpen" select="onMenuItemSelect" cssClass="schedule-context-menu"></ejs-contextmenu>
 
