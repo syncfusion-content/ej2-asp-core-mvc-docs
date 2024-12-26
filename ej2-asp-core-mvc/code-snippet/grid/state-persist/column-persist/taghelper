@@ -12,16 +12,6 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-    document.getElementById('restore').addEventListener('click', function () {
-        var savedSettings = window.localStorage.getItem('orderGridSettings');
-        var grid = document.getElementById('grid').ej2_instances[0];
-        if (savedSettings) {
-            grid.setProperties(JSON.parse(savedSettings));
-            document.getElementById('message').innerText = 'Restored the headerText, template column, and headerTemplate';
-        } else {
-            document.getElementById('message').innerText = 'No saved settings found.';
-        }
-    });
     document.getElementById('save').addEventListener('click', function () {
         var grid = document.getElementById('grid').ej2_instances[0];
         var persistedGridSettings = JSON.parse(grid.getPersistData());
@@ -37,6 +27,16 @@
         window.localStorage.setItem('orderGridSettings', JSON.stringify(persistedGridSettings));
         grid.setProperties(persistedGridSettings);
         document.getElementById('message').innerText = 'Saved the headerText, template column, and headerTemplate properties in the persisted settings';
+    });
+    document.getElementById('restore').addEventListener('click', function () {
+        var savedSettings = window.localStorage.getItem('orderGridSettings');
+        var grid = document.getElementById('grid').ej2_instances[0];
+        if (savedSettings) {
+            grid.setProperties(JSON.parse(savedSettings));
+            document.getElementById('message').innerText = 'Restored the headerText, template column, and headerTemplate';
+        } else {
+            document.getElementById('message').innerText = 'No saved settings found.';
+        }
     });
 </script>
 <script id="customertemplate" type="text/x-template">

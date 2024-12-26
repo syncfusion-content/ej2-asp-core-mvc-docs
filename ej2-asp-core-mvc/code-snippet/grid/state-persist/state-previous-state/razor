@@ -33,7 +33,7 @@
     function actionBegin () {
         document.getElementById('message').innerText = '';
     }
-    </script>
+</script>
 <style>
     .message {
         text-align: center;
