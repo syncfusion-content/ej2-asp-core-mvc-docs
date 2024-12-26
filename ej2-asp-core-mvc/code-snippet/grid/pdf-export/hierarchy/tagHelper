@@ -1,33 +1,46 @@
-   @{ 
-       var ChildGrid = new Syncfusion.EJ2.Grids.Grid() {
-           DataSource = (IEnumerable<object>)ViewBag.DataSource,
-           QueryString = "EmployeeID",
-           Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
-                new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
-                new Syncfusion.EJ2.Grids.GridColumn(){ Field="Freight", HeaderText="Freight", Width="120", Format="C2", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right },
-                new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="150" },
-                new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="120" },
-        }
-       };
-   }
-
-<ejs-grid id="HierarchyExport" dataSource="@ViewBag.EmpDataSource" allowPdfExport="true" childGrid="ChildGrid" toolbar="@(new List<string>() {"PdfExport" })" toolbarClick="toolbarClick" >
-    <e-grid-columns>
-        <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="125"></e-grid-column>
-        <e-grid-column field="FirstName" headerText="Name" width="120"></e-grid-column>
-        <e-grid-column field="LastName" headerText="Last Name"  width="170"></e-grid-column>
-        <e-grid-column field="City" headerText="City" textAlign="Right" width="135"></e-grid-column>
-    </e-grid-columns>
+@{
+    var exportOptions = new List<object> {
+        new { text = "Expanded", value = "Expanded" },
+        new { text = "All", value = "All" },
+        new { text = "None", value = "None" }
+    };
+}
+@{ 
+    var ChildGrid = new Syncfusion.EJ2.Grids.Grid(){
+        DataSource = (IEnumerable<object>)ViewBag.DataSource,
+        QueryString = "EmployeeID",
+        Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="90" },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="CustomerID", Width="100" },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="100" },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="110" },
+    }};
+}
+<div style="display: flex">
+<label style="padding: 10px 10px 5px 0">Change the hierarchy export mode:</label>
+<ejs-dropdownlist id="dropdown" width="150" popupHeight="240px" dataSource="@exportOptions" index="0">
+<e-dropdownlist-fields text="text" value="value"></e-dropdownlist-fields>
+</ejs-dropdownlist>
+</div> 
+<ejs-grid id="HierarchyExport" dataSource="@ViewBag.EmpDataSource" allowPdfExport="true" childGrid="ChildGrid" toolbar="@(new List<string>() {"PdfExport" })" toolbarClick="toolbarClick" height="220px">
+<e-grid-columns>
+    <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="90"></e-grid-column>
+    <e-grid-column field="FirstName" headerText="Name" width="100"></e-grid-column>
+    <e-grid-column field="LastName" headerText="Last Name" width="100"></e-grid-column>
+    <e-grid-column field="City" headerText="City" width="100"></e-grid-column>
+</e-grid-columns>
 </ejs-grid>
-
+</div>
 <script>
-    function toolbarClick(args) {
-        var gridObj = document.getElementById("HierarchyExport").ej2_instances[0];
-        if (args.item.id === 'HierarchyExport_pdfexport') {
-            var pdfExportProperties = {
-                hierarchyExportMode: "Expanded"
-            };
-            gridObj.pdfExport(pdfExportProperties);
-        }
+function toolbarClick(args) {
+    if (args.item.id === 'HierarchyExport_pdfexport') {
+    let dropDownList = document.getElementById("dropdown").ej2_instances[0];
+        let hierarchyExportMode = dropDownList.value;
+        let grid = document.getElementById("HierarchyExport").ej2_instances[0];
+        let exportProperties = {
+            hierarchyExportMode: hierarchyExportMode
+        };
+        grid.pdfExport(exportProperties);
     }
+}
 </script>

@@ -1,4 +1,4 @@
-@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Open").AllowOpen(true).SaveUrl("Save").AllowSave(true).Created("created").Sheets(sheet =>
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").AllowOpen(true).SaveUrl("Home/Save").AllowSave(true).Created("created").Sheets(sheet =>
 {
     sheet.Name("Price Details").Ranges(ranges =>
     {
@@ -6,11 +6,11 @@
     }).Add();
 }).Render()
 
-< script >
+<script>
 
     function created() {
-    this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-    this.cellFormat({ verticalAlign: 'middle' }, 'A1:H1');
-}
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.cellFormat({ verticalAlign: 'middle' }, 'A1:H1');
+    }
 
-</ script >
+</script>

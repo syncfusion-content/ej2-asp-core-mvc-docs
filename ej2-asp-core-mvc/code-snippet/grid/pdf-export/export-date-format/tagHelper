@@ -1,0 +1,18 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPdfExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() { "PdfExport" })" height="272px">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="100"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" type="date" format="EEE, MMM d, ''yy"  width="100"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="80"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+</div>
+<script>
+    function toolbarClick(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_pdfexport') {
+            grid.pdfExport();
+        }
+    }
+</script>

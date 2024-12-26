@@ -1,0 +1,28 @@
+@using Syncfusion.EJ2.InteractiveChat;
+@using Newtonsoft.Json
+
+<div style="height:380px; width:450px">
+    <button id="scrollToBottom" style="margin-bottom: 10px" class="e-btn e-primary">Scroll To Bottom</button>
+    <ejs-chatui id="chatUser" created="onCreated">
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+        <e-chatui-messages>
+            @foreach (var message in Model.ChatMessagesData)
+            {
+                <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
+            }
+        </e-chatui-messages>
+    </ejs-chatui>
+</div>
+
+<script>
+    var chatUIObj;
+    function onCreated() {
+        var chatUiEle = document.getElementById('chatUser');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+    }
+    document.addEventListener('click', function (event) {
+        if (event.target && event.target.id === 'scrollToBottom') {
+            chatUIObj.scrollToBottom();
+        }
+    });
+</script>
