@@ -105,7 +105,7 @@ container.documentEditor.search.findAll('works');
 
 let searchLength: number = container.documentEditor.search.searchResults.length;
 
-for (let i = 0; i < searchLength; i++) {
+for (let i = searchLength; i >= 0; i--) {
   // It will move selection to specific searched index,move to each occurrence one by one
   container.documentEditor.search.searchResults.index = i;
   // Replace it with some text
