@@ -1,0 +1,20 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport(true).ToolbarClick("toolbarClick").Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).Toolbar(new List<string>() { "ExcelExport" }).Aggregates(gridAggregation => { gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { ColumnName = "ShipCountry", Type = "Custom", FooterTemplate = "Brazil Count: ${Custom}", CustomAggregate = "customAggregateFunction" } }).Add(); }).Render()
+<script>
+    function toolbarClick(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
+            grid.excelExport();
+        }
+    }
+    function customAggregateFunction(data) {
+        var brazilCount = data.result? data.result.filter(item => item['ShipCountry'] === 'Brazil').length: data.filter(item => item['ShipCountry'] === 'Brazil').length;
+        return brazilCount;
+    }
+</script>
