@@ -53,7 +53,7 @@ In this demo, the frozenColumns is set as ‘2’, and the frozenRows is set as 
 {% include code-snippet/spreadsheet/freeze-pane/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FreezePane.cs" %}
-{% include code-snippet/spreadsheet/freeze-pane/freezePane.cs %}
+{% include code-snippet/spreadsheet/freeze-pane/EJ2_ASP.NETCORE/freezePane.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,7 +64,7 @@ In this demo, the frozenColumns is set as ‘2’, and the frozenRows is set as 
 {% include code-snippet/spreadsheet/freeze-pane/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FreezePane.cs" %}
-{% include code-snippet/spreadsheet/freeze-pane/freezePane.cs %}
+{% include code-snippet/spreadsheet/freeze-pane/EJ2_ASP.MVC/freezePane.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

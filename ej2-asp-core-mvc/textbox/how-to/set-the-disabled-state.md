@@ -11,7 +11,7 @@ documentation: ug
 
 # Set the disabled state
 
-To disable the TextBox, set the [enabled](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.inputs.textbox.html#Syncfusion_EJ2_Inputs_TextBox_Enabled) property to `false`.
+To disable the TextBox, set the `enabled` property to `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

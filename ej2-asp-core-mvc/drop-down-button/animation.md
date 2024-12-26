@@ -10,7 +10,7 @@ documentation: ug
 
 # Animation
 
-To change the animation of the DropDownButton, [`AnimationSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_AnimationSettings.html) property is used to customize the animation of the DropDownButton popup. The supported effects for DropDownButton are,
+To change the animation of the DropDownButton, [`AnimationSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_AnimationSettings) property is used to customize the animation of the DropDownButton popup. The supported effects for DropDownButton are,
 
 | Effect | Functionality |
 | ------------ | ----------------------- |
