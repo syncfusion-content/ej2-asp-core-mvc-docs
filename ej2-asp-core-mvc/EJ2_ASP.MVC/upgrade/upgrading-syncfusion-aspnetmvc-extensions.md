@@ -8,15 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion ASP.NET MVC Extensions
+# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extensions
 
-Syncfusion publishes the Visual Studio extension in the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETMVCExtensions) for every Syncfusion Volume releases, with exciting new features and Service Pack release with major bug fixes in the volume releases.
+Syncfusion<sup style="font-size:70%">&reg;</sup> publishes the Visual Studio extension in the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETMVCExtensions) for every Syncfusion<sup style="font-size:70%">&reg;</sup> Volume releases, with exciting new features and Service Pack release with major bug fixes in the volume releases.
 
-You can upgrade to our latest version from any installed Syncfusion version.
+You can upgrade to our latest version from any installed Syncfusion<sup style="font-size:70%">&reg;</sup> version.
 
 ## Upgrading to the latest version
 
-1. In Visual Studio go to Extensions -> Manage Extensions -> Updates and find the Syncfusion ASP.NET MVC extension.
+1. In Visual Studio go to Extensions -> Manage Extensions -> Updates and find the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC extension.
 
    N> In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates.
 

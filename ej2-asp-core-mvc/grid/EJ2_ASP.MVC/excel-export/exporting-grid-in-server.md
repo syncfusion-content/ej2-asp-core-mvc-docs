@@ -24,6 +24,8 @@ The following list of dependencies is required for Grid server-side Excel export
 
 * **Syncfusion.EJ2.GridExport**: This package contains the server-side export functionality specifically for the Grid component. It provides the necessary APIs and tools to handle data export to Excel on the server.
 
+* **Syncfusion.EJ2.GridExport**: This package contains the server-side export functionality specifically for the Grid component. It provides the necessary APIs and tools to handle data export to Excel on the server.
+
 ## Server configuration
 
 To export the grid data to a Excel document on the server side, you need to perform the following server configuration using an ASP.NET MVC Controller Action:

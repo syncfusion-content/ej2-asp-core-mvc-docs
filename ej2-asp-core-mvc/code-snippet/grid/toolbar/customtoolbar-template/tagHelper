@@ -1,0 +1,27 @@
+<div style="padding-bottom:20px">
+    <ejs-button id="excelButton" cssClass="e-primary" content="Excel Export"></ejs-button>
+    <ejs-button id="pdfButton" cssClass="e-primary" content="Pdf Export"></ejs-button>
+    <ejs-button id="printButton" cssClass="e-primary" content="Print"></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" allowPdfExport="true" height="348px">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('excelButton').onclick = clickHandler;
+    document.getElementById('pdfButton').onclick = clickHandler;
+    document.getElementById('printButton').onclick = clickHandler;
+    function clickHandler(event) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if(event.target.id === "excelButton")
+            grid.excelExport();
+        else if(event.target.id === "pdfButton")
+            grid.pdfExport();
+        else 
+            grid.print();
+    }
+</script>

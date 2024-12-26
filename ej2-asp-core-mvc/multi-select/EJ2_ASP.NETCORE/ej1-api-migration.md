@@ -9,26 +9,26 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of multiselect component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of multiselect component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility and Localization
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Localization | **Property** : locale<br/> <br/>`<ej-drop-down-list locale="en-US"></ej-drop-down-list>` | **Property** : locale<br/> <br/>`<ejs-multiselect locale="en-US" />`  |
 | Right to left | **Property:** enable-rtl <br/> <br/>`<ej-drop-down-list enable-rtl="true"></ej-drop-down-list>` | **Property:** enableRtl<br/> <br/>`<ejs-multiselect enableRtl="true" /> ` |
 
 ## Animation
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Animation | **Property** : enable-animation<br/> <br/>`<ej-drop-down-list enable-animation="true "></ej-drop-down-list>` |  Not Applicable  |
 
 ## Template
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Header Template | **Property** : header-template<br/> <br/>`<ej-drop-down-list header-template="<div class='eheader'><span>PHOTO</span> <span>DETAILS</span></div>" ></ej-drop-down-list>` |  **Property** : headerTemplate<br/> <br/>`<ejs-multiselect headerTemplate="@Html.Raw("<span class='head'><span class='name'>Name</span><span class='city'>City</span></span>")" />`  |
 | Item Template | **Property** : item-template<br/> <br/>`<ej-drop-down-list template="<div><div class='ename'> ${Text} </div></div>" ></ej-drop-down-list>` |  **Property** : itemTemplate<br/> <br/>`<ejs-multiselect itemTemplate="@Html.Raw("<span class='item' ><span class='name'>${FirstName}</span><span class='city'>${City}</span></span>")"/>`  |
@@ -40,7 +40,7 @@ This article describes the API migration process of multiselect component from E
 
 ## Data Binding
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Data Source | **Property** : data-source<br/> <br/>`<ej-drop-down-list data-source="(IEnumerable&lt; groups>)ViewBag.datasource"></ej-drop-down-list>` |  **Property** : dataSource <br/><br/> `<ejs-multiselect dataSource="@ViewBag.data" /> `  |
 | Query| **Property** : query<br/> <br/>`<ej-drop-down-list query="ej.Query().from('Customers').take(6)"><e-datamanager url="https://mvc.syncfusion.com/Services/Northwnd.svc/"></e-datamanager><e-drop-down-list-fields text="CustomerID" table-name="Customers" /></ej-drop-down-list>` |  **Property** : query<br/> <br/>`<ejs-multiselect query="new ej.data.Query().from('Customers').select(['ContactName','CustomerID']).take(6)"><e-multiselect-fields text="ContactName" value="CustomerID"></e-multiselect-fields><e-datamanager url=http://services.odata.org/V4/Northwind/Northwind.svc/ adaptor="ODataV4Adaptor" crossDomain="true"></e-datamanager></ejs-multiselect> ` |
@@ -53,7 +53,7 @@ This article describes the API migration process of multiselect component from E
 
 ## Filtering
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Filtering | **Property** : enable-filter-search<br/> <br/>`<ej-drop-down-list enable-filter-search = "true" ></ej-drop-down-list>` |  **Property** : allowFiltering<br/> <br/>`<ejs-multiselect allowFiltering ="true" />`  |
 | Server Filtering | **Property** : enable-server-filtering<br/> <br/>`<ej-drop-down-list enable-server-filtering = "true" ></ej-drop-down-list>` |  **Event** : filtering<br/> <br/>`<ej-multiselect filtering="onFiltering" />`  |
@@ -65,7 +65,7 @@ This article describes the API migration process of multiselect component from E
 
 ## Popups
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Popup Resize | **Property** : enable-popup-resize<br/> <br/>`<ej-drop-down-list enable-popup-resize = "true" ></ej-drop-down-list>` | Not Applicable |
 | Maximum Popup Height | **Property** : max-popup-height<br/> <br/>`<ej-drop-down-list max-popup-height="300px" />` | Not Applicable |
@@ -89,7 +89,7 @@ This article describes the API migration process of multiselect component from E
 
 ## Selection
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Selected Index| **Property** : selected-index<br/> <br/>`<ej-drop-down-list selected-index="2" />` | Not Applicable |
 | Selected Indices | **Property** : selected-Indices <br/> <br/>`@{List<int> index= new List<int> { 1,2 };}`<br/> <br/>`<ej-drop-down-list selected-indices ="index" />` | **Property** : value <br/><br/> `viewBag.vlue = [1,2]` <br/><br/> `<ejs-multiselect value = "@ViewBag.value"/>` |
@@ -111,7 +111,7 @@ This article describes the API migration process of multiselect component from E
 
 ## Common
 
-| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+| **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Virtual Scrolling| **Property** : allow-virtual-scrolling<br/> <br/>`<ej-drop-down-list allow-virtual-scrolling ="true "></ej-drop-down-list>` | It will be acheived in sample level using `actionComplete` event |
 | Virtual Scroll Mode | **Property** : virtual-scroll-mode<br/> <br/>`<ej-drop-down-list allow-virtual-scrolling ="true" virtual-scroll-mode=@VirtualScrollMode.Normal></ej-drop-down-list>` | Not Applicable |

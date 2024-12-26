@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Component
+title: Overview in ##Platform_Name## Component | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -8,6 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in Syncfusion controls
 
-The purpose of this document is to build and run a simple Syncfusion ASP.NET MVC UI (Essential JS 2) application.
+The purpose of this document is to build and run a simple Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI (Essential JS 2) application.

@@ -161,7 +161,7 @@ for (int i = 0; i < pdfExportImage.PageCount; i++)
 ```
 ## Export as Image in ASP.NET Core 6.0
 
-To export a PDF to image in ASP.NET Core 6.0 using Syncfusion PDF Viewer and Skia Bitmap, you can follow these steps:
+To export a PDF to image in ASP.NET Core 6.0 using Syncfusion<sup style="font-size:70%">&reg;</sup> PDF Viewer and Skia Bitmap, you can follow these steps:
 
 Create an instance of PdfRenderer in the controller, and create an instance of SKBitmap to get the bitmap representation of the page. Exporting can be done using the `ExportAsImage()` method. This method helps to convert a PDF into an image. Use the SKImage class to save the SKBitmap object as a PNG image, and use the `SaveTo` method of the SKBitmap to save the image to a file. Return the image file in the response.
 

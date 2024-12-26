@@ -35,7 +35,7 @@ N> The current value of the rating item available in the template context as `va
 
 ## Full (rated) symbol template
 
-To customize the appearance of **rated** items in the Syncfusion ASP.NET Core rating control, you can use the `fullTemplate` tag directive. This directive allows you to specify a custom layout for the rated items, which can include any content you desire.
+To customize the appearance of **rated** items in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core rating control, you can use the `fullTemplate` tag directive. This directive allows you to specify a custom layout for the rated items, which can include any content you desire.
 The `value` and `index` are available in the template context for accessing information about the rated item.
 
 {% tabs %}

@@ -10,9 +10,9 @@ documentation: ug
 
 # Excel like filter in ASP.NET MVC Grid component
 
-The Syncfusion Grid component offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the grid. This feature simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation, similar to Microsoft Excel. Excel like filtering is especially useful when dealing with large datasets and complex filtering requirements.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the grid. This feature simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation, similar to Microsoft Excel. Excel like filtering is especially useful when dealing with large datasets and complex filtering requirements.
 
-Here is an example that showcasing how to render the excel like filter within the Syncfusion ASP.NET MVC Grid:
+Here is an example that showcasing how to render the excel like filter within the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -30,9 +30,9 @@ Here is an example that showcasing how to render the excel like filter within th
 
 ## Checkbox filtering
 
-The checkbox filtering feature in Syncfusion ASP.NET MVC Grid enables you to filter data based on checkbox selections within a column. This powerful filtering option simplifies the process of narrowing down data, providing a more efficient and user-friendly experience. The check box filter feature is particularly useful when dealing with columns containing categorical data.
+The checkbox filtering feature in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid enables you to filter data based on checkbox selections within a column. This powerful filtering option simplifies the process of narrowing down data, providing a more efficient and user-friendly experience. The check box filter feature is particularly useful when dealing with columns containing categorical data.
 
-Here is an example that showcasing how to render the check box filter within the Syncfusion ASP.NET MVC Grid:
+Here is an example that showcasing how to render the check box filter within the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -70,7 +70,7 @@ The following example demonstrates how to customize the filter choice count in t
 
 ## Show customized text in checkbox list data
 
-The Syncfusion ASP.NET MVC Grid component provides you with the flexibility to customize the text displayed in the Excel/Checkbox filtering options. This allows you to modify the default text and provide more meaningful and contextual labels for the filtering.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component provides you with the flexibility to customize the text displayed in the Excel/Checkbox filtering options. This allows you to modify the default text and provide more meaningful and contextual labels for the filtering.
 
 To customize the text in the Excel/Checkbox filter, you can define a `FilterItemTemplate` and bind it to the desired column. The `FilterItemTemplate` property allows you to create custom templates for filter items. You can use any logic and HTML elements within this template to display the desired text or content.
 
@@ -89,7 +89,7 @@ In the example below, you can see how you can customize the text displayed in th
 
 ## Show template in checkbox list data
 
-The `FilterItemTemplate` property in the Syncfusion ASP.NET MVC Grid allows you to customize the appearance of filter items in the grid's filter checkbox list for a specific column. This property is useful when you want to provide a custom UI or additional information within the filter checkbox list, such as icons, text, or any HTML elements, alongside the default filter items.
+The `FilterItemTemplate` property in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid allows you to customize the appearance of filter items in the grid's filter checkbox list for a specific column. This property is useful when you want to provide a custom UI or additional information within the filter checkbox list, such as icons, text, or any HTML elements, alongside the default filter items.
 
 In this example, you can see how to use the `FilterItemTemplate` to render icons along with the category names in the filter checkbox list for the **Category Name** column.
 
@@ -106,7 +106,7 @@ In this example, you can see how to use the `FilterItemTemplate` to render icons
 
 ## Customize the excel filter dialog using CSS
 
-In the Syncfusion ASP.NET MVC Grid, you have the flexibility to enhance the visual presentation of the excel filter dialog. This can be achieved by utilizing CSS styles to modify the dialog's appearance according to the specific needs and aesthetics of your application.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid, you have the flexibility to enhance the visual presentation of the excel filter dialog. This can be achieved by utilizing CSS styles to modify the dialog's appearance according to the specific needs and aesthetics of your application.
 
 **Removing context menu option**
 
@@ -134,7 +134,7 @@ The following example demonstrates how to remove the context menu option in the 
 
 ## Hide sorting option in filter dialog
 
-The Excel-like filter dialog in the Syncfusion ASP.NET MVC Grid includes built-in sorting options (ascending and descending) by default. To hide these options, set the **display** property of the following CSS classes to **none**, which will prevent the sorting options from appearing in the filter dialog:
+The Excel-like filter dialog in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid includes built-in sorting options (ascending and descending) by default. To hide these options, set the **display** property of the following CSS classes to **none**, which will prevent the sorting options from appearing in the filter dialog:
 
 ```
 .e-excel-ascending,
