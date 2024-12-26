@@ -10,70 +10,45 @@
 <script>
     function toolbarClick(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
-        if (args.item.id === 'grid_excelexport') {
+        if (args.item.id === 'grid_excelexport')
             grid.excelExport();
-        }
     }
+
     function queryCellInfo(args) {
         let data = args.data.OrderID;
         switch (data) {
             case 10248:
-                if (args.column.field === 'CustomerID') {
-                    args.rowSpan = 2;
-                }
+                if (args.column.field === 'CustomerID') args.rowSpan = 2;
                 break;
             case 10250:
-                if (args.column.field === 'CustomerID') {
-                    args.colSpan = 2;
-                }
+            case 10261:
+                if (args.column.field === 'CustomerID' || args.column.field === 'Freight') args.colSpan = 2;
                 break;
             case 10252:
-                if (args.column.field === 'OrderID') {
-                    args.rowSpan = 3;
-                }
+                if (args.column.field === 'OrderID') args.rowSpan = 3;
                 break;
             case 10256:
-                if (args.column.field === 'CustomerID') {
-                    args.colSpan = 3;
-                }
-                break;
-            case 10261:
-                if (args.column.field === 'Freight') {
-                    args.colSpan = 2;
-                }
+                if (args.column.field === 'CustomerID') args.colSpan = 3;
                 break;
         }
-   }
+    }
 
-function excelQueryCellInfo(args)
-{
-    let data = args.data.OrderID;
+    function excelQueryCellInfo(args) {
+        let data = args.data.OrderID;
         switch (data) {
             case 10248:
-                if (args.column.field === 'CustomerID') {
-                    args.cell.rowSpan = 2;
-                }
+                if (args.column.field === 'CustomerID') args.cell.rowSpan = 2;
                 break;
             case 10250:
-                if (args.column.field === 'CustomerID') {
-                    args.colSpan = 2;
-                }
+            case 10261:
+                if (args.column.field === 'CustomerID' || args.column.field === 'Freight') args.colSpan = 2;
                 break;
             case 10252:
-                if (args.column.field === 'OrderID') {
-                    args.cell.rowSpan = 3;
-                }
+                if (args.column.field === 'OrderID') args.cell.rowSpan = 3;
                 break;
             case 10256:
-                if (args.column.field === 'CustomerID') {
-                    args.colSpan = 3;
-                }
-                break;
-            case 10261:
-                if (args.column.field === 'Freight') {
-                    args.colSpan = 2;
-                }
+                if (args.column.field === 'CustomerID') args.colSpan = 3;
                 break;
         }
-}
+    }
 </script>
