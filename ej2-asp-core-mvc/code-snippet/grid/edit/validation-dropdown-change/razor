@@ -31,60 +31,59 @@
    col.Field("Address").HeaderText("Address").Width("150").ValidationRules(new { required = "true"}).Add();
 }).Load("load").ActionBegin("actionBegin").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 <script>
-window.role = '';
-function customFunction(args) {
-   var grid = document.getElementById("grid").ej2_instances[0];
-    var formObj = grid.editModule.formObj.element['ej2_instances'][0];
-    let salary = parseInt(args.value)
+    window.role = '';
+    function customFunction(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        var formObj = grid.editModule.formObj.element['ej2_instances'][0];
+        let salary = parseInt(args.value)
 
-    switch (window['role']) {
-        case 'Sales':
-            if ((salary >= 5000) && (salary < 15000))
-                return true;
-            else
-                formObj.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
+        switch (window['role']) {
+            case 'Sales':
+                if ((salary >= 5000) && (salary < 15000))
+                    return true;
+                else
+                    formObj.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
 
-            break;
+                break;
 
-        case 'Support':
-            if ((salary >= 15000 && salary < 19000))
-                return true;
-            else
-                formObj.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
+            case 'Support':
+                if ((salary >= 15000 && salary < 19000))
+                    return true;
+                else
+                    formObj.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
 
-            break;
+                break;
 
-        case 'Engineer':
-            if ((salary >= 25000 && salary < 30000))
-                return true;
-            else
-                formObj.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
+            case 'Engineer':
+                if ((salary >= 25000 && salary < 30000))
+                    return true;
+                else
+                    formObj.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
 
-            break;
+                break;
 
-        case 'Team Lead':
-            if ((salary >= 30000) && (salary < 50000))
-                return true;
-            else
-                formObj.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
+            case 'Team Lead':
+                if ((salary >= 30000) && (salary < 50000))
+                    return true;
+                else
+                    formObj.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
 
-            break;
+                break;
 
-        case 'Manager':
-            if ((salary >= 50000) && (salary < 70000))
-                return true;
-            else
-                formObj.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
+            case 'Manager':
+                if ((salary >= 50000) && (salary < 70000))
+                    return true;
+                else
+                    formObj.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
 
-            break;
+                break;
 
+        }
+        return false;
     }
-    return false;
-}
-
-function valueChange(args) {
+    function valueChange(args) {
       var grid = document.getElementById("grid").ej2_instances[0];
-      window.role = args.value.toString(); // Explicitly cast args.value to string
+      window.role = args.value.toString();
       var formObj = grid.editModule.formObj.element['ej2_instances'][0];
 
         switch ( window.role) {

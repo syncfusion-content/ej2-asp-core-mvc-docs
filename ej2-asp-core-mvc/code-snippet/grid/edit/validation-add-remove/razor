@@ -10,7 +10,7 @@
 }).ActionComplete("actionComplete").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 <script>
 function actionComplete(args) {
-   var grid = document.getElementById("grid").ej2_instances[0];
+    var grid = document.getElementById("grid").ej2_instances[0];
     var formObj = grid.editModule.formObj;
     var customerIDRules = {
         required: true,

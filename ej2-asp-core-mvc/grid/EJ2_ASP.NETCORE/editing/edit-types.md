@@ -122,7 +122,6 @@ The following sample code demonstrates the customization applied to DropDownList
 
 ![Customize dropdown edit type](../images/editing/dropdown-edit-type.png)
 
-
 ### Provide custom data source for DropDownList component
 
 In Syncfusion Grid component, you have an option to provide a custom data source for the [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started)  component in the edit form. This feature allows you to define a specific set of values for the DropDownList.

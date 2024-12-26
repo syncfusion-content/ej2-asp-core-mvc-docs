@@ -35,7 +35,7 @@
 <script>
     window.role = '';
     function customFunction(args) {
-    var grid = document.getElementById("grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         var formObj = grid.editModule.formObj.element['ej2_instances'][0];
         let salary = parseInt(args.value)
 
@@ -85,7 +85,7 @@
     }
     function valueChange(args) {
       var grid = document.getElementById("grid").ej2_instances[0];
-      window.role = args.value.toString(); // Explicitly cast args.value to string
+      window.role = args.value.toString(); 
       var formObj = grid.editModule.formObj.element['ej2_instances'][0];
 
         switch ( window.role) {

@@ -13,7 +13,7 @@
  </ejs-grid>
  <script>
     function actionComplete(args) {
-       var grid = document.getElementById("grid").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
         var formObj = grid.editModule.formObj;
         var customerIDRules = {
             required: true,
