@@ -2,6 +2,7 @@
     List<object> commands = new List<object>();
     commands.Add(new { buttonOption = new { content = "Details", cssClass = "e-flat" } });
 }
+
 <div id="dialog" ></div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
 {
