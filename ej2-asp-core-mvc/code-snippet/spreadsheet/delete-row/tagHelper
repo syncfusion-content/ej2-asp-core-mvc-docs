@@ -1,4 +1,4 @@
- <ejs-spreadsheet id="spreadsheet" created="created" showFormulaBar="false" allowDelete="false" showRibbon="false">
+ <ejs-spreadsheet id="spreadsheet" created="created" showFormulaBar="false" allowDelete="true" showRibbon="false">
         <e-spreadsheet-sheets>
             <e-spreadsheet-sheet name="Sheet1">
                 <e-spreadsheet-ranges>
