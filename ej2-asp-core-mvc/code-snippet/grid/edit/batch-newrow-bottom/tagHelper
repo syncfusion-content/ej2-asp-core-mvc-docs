@@ -1,10 +1,17 @@
-<div style="padding-bottom: 20px; display: flex">
-   <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Enable/Disable show confirmation dialog: </label>
-    <ejs-switch id="switch" checked="true" change="toggleShowConfirmDialog"></ejs-switch>
-</div>
-<div style="padding-bottom: 20px; display: flex">
-   <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Enable/Disable show delete confirmation dialog:</label>
-    <ejs-switch id="switchDelete" change="toggleShowDeleteConfirmDialog"></ejs-switch>
+@{
+   ViewBag.dropDownData = new List<object>
+   {
+      new { value = "Top", text = "Top" },
+      new { value = "Bottom", text = "Bottom" },
+   };
+}
+<div style="padding-bottom:20px">
+    <div style="display: flex">
+        <label style="padding: 5px 10px 0 0"> Select new row position:</label>
+        <span style="height:fit-content">
+        <ejs-dropdownlist id="dropDown" width="150px" index="0" change="changePosition" dataSource="@ViewBag.dropDownData"></ejs-dropdownlist> 
+        </span>
+    </div>
 </div>
 <ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="378px" toolbar="@(new List<string>() { "Add", "Delete","Update","Cancel" })">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
@@ -17,13 +24,8 @@
         </e-grid-columns>
 </ejs-grid>
 <script>
-    function toggleShowDeleteConfirmDialog(args) {
+    function changePosition(args) {
         var grid=document.getElementById('grid').ej2_instances[0];
-        grid.editSettings.showDeleteConfirmDialog = args.checked;
-    }
-    function toggleShowConfirmDialog(args)
-    {
-      var grid=document.getElementById('grid').ej2_instances[0];
-      grid.editSettings.showConfirmDialog = args.checked;
+        grid.editSettings.newRowPosition = args.value;
     }
 </script>
