@@ -1,45 +1,42 @@
 @{
     var data = new int[] { 90, 180, 45, 135 };
 }
-
-<ejs-dropdownlist id="dropdown" placeholder="Select a degree"  dataSource="data">
-</ejs-dropdownlist>
-
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowExcelExport="true" toolbarClick="toolbarClick" excelHeaderQueryCellInfo="excelHeaderQueryCellInfo" excelQueryCellInfo="excelQueryCellInfo"  toolbar="@(new List<string>() { "ExcelExport" })" created="setHeaderHeight">
+<div style="padding-bottom:20px">
+    <div style="display: flex">
+        <label style="padding: 5px 10px 0 0"> Select a degree:</label>
+        <span style="height:fit-content">
+            <ejs-dropdownlist id="dropDown" width="150px" placeholder="Select a degree"  dataSource="data">
+            </ejs-dropdownlist>
+        </span>
+    </div>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="273px" allowExcelExport="true" toolbarClick="toolbarClick" excelHeaderQueryCellInfo="excelHeaderQueryCellInfo" excelQueryCellInfo="excelQueryCellInfo"  toolbar="@(new List<string>() { "ExcelExport" })" created="setHeaderHeight">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="150" customAttributes="@(new { @class="orientationcss" })"></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City" width="150" ></e-grid-column>
-        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150" customAttributes="@(new { @class="orientationcss" })"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="150" ></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="150" ></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
-<style>
-    .orientationcss .e-headercelldiv {
-        transform: rotate(90deg);
-    }
-</style>
-
 <script>
     function toolbarClick(args) {
-        var gridObj = document.getElementById("Grid").ej2_instances[0];
-        if (args.item.id === 'Grid_excelexport') {
-            gridObj.excelExport();
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
+            grid.excelExport();
         }
     }
-
-   function excelHeaderQueryCellInfo(args) {
-        var dropdownObj = document.getElementById("dropdown").ej2_instances[0];
-        var textWidth = document.querySelector(".orientationcss > div").scrollWidth;
+    function excelHeaderQueryCellInfo(args) {
+        var dropDown = document.getElementById("dropDown").ej2_instances[0];
+        let textWidth = document.querySelector(".orientationcss > div").scrollWidth;
         if (args.gridCell.column.field == 'Freight') {
             args.style = { backColor: '#99ffcc', vAlign: 'Bottom' };
         }
         else {
-            args.style = { vAlign: 'Center', rotation: dropdownObj.value };
+            args.style = { vAlign: 'Center', rotation: dropDown.value };
         }
         args.cell.cellHeight = textWidth;
     }
-
     function excelQueryCellInfo(args) {
         if (args.column.field == 'Freight') {
             if (args.value < 30) {
@@ -53,8 +50,7 @@
             }
         }
     }
-
-    function setHeaderHeight(args) {
+    function setHeaderHeight() {
         var textWidth = document.querySelector(".orientationcss > div").scrollWidth;
         var headerCell = document.querySelectorAll(".e-headercell");
         for (var i = 0; i < headerCell.length; i++) {
@@ -62,3 +58,8 @@
         }
     }
 </script>
+<style>
+    .orientationcss .e-headercelldiv {
+        transform: rotate(90deg);
+    }
+</style>
