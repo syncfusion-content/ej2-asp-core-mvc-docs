@@ -60,8 +60,8 @@
         log.insertBefore(span, log.firstChild);
     }
 
-    function dataSourceChanged() {
-        this.appendElement("Data source changed with" + "<b>&nbsp;" + args.action + "</b> action<hr>"
+    function dataSourceChanged(args) {
+        appendElement("Data source changed with" + "<b>&nbsp;" + args.action + "</b> action<hr>"
         );
     }
 

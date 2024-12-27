@@ -34,7 +34,7 @@
         // Use the timeout function to wait until the sheet is inserted.
         setTimeout(() => {
             // Method for switching to a new sheet.
-            spreadsheet.goTo('new_sheet!A1');
+            spreadsheetObj.goTo('new_sheet!A1');
         })
     });
 </script>
