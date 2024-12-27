@@ -11,7 +11,6 @@ public ActionResult Index()
         new Order { OrderID = 10253, CustomerID = "HANAR", ShipCity = "Rio de Janeiro", ShipName = "Hanari Carnes", OrderDate = new DateTime(2024, 1, 6) },
         new Order { OrderID = 10254, CustomerID = "CHOPS", ShipCity = "Bern", ShipName = "Chop-suey Chinese", OrderDate = new DateTime(2024, 1, 7) }
     };
-
     ViewBag.gridData = gridData;
     return View();
 }
