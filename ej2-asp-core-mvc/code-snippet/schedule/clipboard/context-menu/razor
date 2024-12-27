@@ -59,7 +59,7 @@
         if (newEventElement) {
             ej.base.remove(newEventElement);
         }
-        var scheduleObj = document.getElementById('Schedule').ej2_instances[0];
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
         scheduleObj.closeQuickInfoPopup();
         targetElement = args.event.target;
         if (ej.base.closest(targetElement, '.e-contextmenu')) {
@@ -81,7 +81,7 @@
     }
 
     function onMenuItemSelect(args) {
-        var scheduleObj = document.getElementById('Schedule').ej2_instances[0];
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
         var selectedMenuItem = args.item.id;
         switch (selectedMenuItem) {
             case 'Cut':
