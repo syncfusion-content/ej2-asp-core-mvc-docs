@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shapes in ##Platform_Name## Document Editor Component | Syncfusion
-description: Learn here all about shapes in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about shapes in ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Shapes
 publishingplatform: ##Platform_Name##
