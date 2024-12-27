@@ -1,0 +1,21 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").ValidationRules(new { required = "true"}).Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").ValidationRules(new { required = "true", min=3 ,max=1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipName").HeaderText("Ship Name").Width("150").ValidationRules(new { required = "true"}).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").ValidationRules(new { required = "true"}).Add();
+}).AllowPaging().RecordDoubleClick("recordDoubleClick").ActionComplete("actionComplete").Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+<script>
+  var fieldName;
+  function recordDoubleClick(args) {
+    var grid = document.getElementById("grid").ej2_instances[0];
+    fieldName = grid.getColumnByIndex((args.cellIndex)).field;   
+  }
+  function actionComplete(args) {
+    if (args.requestType === "beginEdit") {
+      var grid = document.getElementById("grid").ej2_instances[0];
+      args.form.elements[grid.element.getAttribute("id") + fieldName].focus();
+    }
+  }
+</script>

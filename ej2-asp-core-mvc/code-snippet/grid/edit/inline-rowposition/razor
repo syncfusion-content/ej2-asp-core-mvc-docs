@@ -1,0 +1,29 @@
+@{
+   ViewBag.dropDownData = new List<object>
+   {
+      new { value = "Top", text = "Top" },
+      new { value = "Bottom", text = "Bottom" },
+   };
+}
+<div style="padding-bottom:20px">
+    <div style="display: flex">
+        <label style="padding: 5px 10px 0 0"> Select new row position:</label>
+        <span style="height:fit-content">
+         @Html.EJS().DropDownList("dropDown").Width("150px").Index(0).DataSource(@ViewBag.dropDownData).Change("changePosition").Render()
+        </span>
+    </div>
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").ValidationRules(new { required = "true"}).Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").ValidationRules(new { required = "true", min=3 ,max=1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").ValidationRules(new { required = "true"}).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").ValidationRules(new { required = "true"}).Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+<script>
+    function changePosition(args) {
+    var grid=document.getElementById('grid').ej2_instances[0];
+        grid.editSettings.newRowPosition = args.value;
+    }
+</script>

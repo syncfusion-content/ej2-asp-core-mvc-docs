@@ -1,0 +1,33 @@
+@{
+    var valueAccessor = "valueAccess";
+}
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().ToolbarClick("toolbarClick").ExcelQueryCellInfo("excelQueryCellInfo").Height("348px").Columns(col =>
+{
+    col.Field("Inventor").HeaderText("Inventor Name").Width("120").Add();
+    col.Field("NumberOfPatentFamilies").HeaderText("Number of Patent Families").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
+    col.Field("MainFieldsOfInvention").HeaderText("Main fields of invention").Width("120").Add();
+    col.Field("NumberOfINPADOCPatents").HeaderText("Number of INPADOC patents").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("TotalPatents").HeaderText("Total Patents").Width("120").Visible(false).ValueAccessor(valueAccessor).Add();
+}).AllowPaging().Toolbar(new List<string>() { "ExcelExport" }).Render()
+<script>
+    let dataSource = @Html.Raw(Json.Encode(ViewBag.dataSource));
+    function valueAccess(field, data) {
+        var cell = dataSource.findIndex(item => item.Inventor === data.Inventor) +2 
+        return '=D' + cell + '+' + 'B' + cell; 
+    }
+    function excelQueryCellInfo(args) {
+        if (args.column.field === 'TotalPatents') {
+            const formula = valueAccess(args.column.field, args.data);
+            args.cell.formula = formula;
+        }
+    }
+    function toolbarClick(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
+            var excelExportProperties = {
+                includeHiddenColumn: true
+            };
+            grid.excelExport(excelExportProperties);
+        }
+    }
+</script>

@@ -1,45 +1,40 @@
 @{
-    var data = new int[] { 90, 180, 45, 135 };
+    var dropDownData = new int[] { 90, 180, 45, 135 };
 }
-
-@Html.EJS().DropDownList("dropdown").Placeholder("Select a degree").DataSource(data).Render()
-
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowExcelExport().ToolbarClick("toolbarClick").Columns(col =>
+<div style="padding-bottom:20px">
+    <div style="display: flex">
+        <label style="padding: 5px 10px 0 0"> Select a degree:</label>
+        <span style="height:fit-content">
+         @Html.EJS().DropDownList("dropDown").Width("150px").Placeholder("Select a degree").DataSource(dropDownData).Render()
+        </span>
+    </div>
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().ToolbarClick("toolbarClick").Height("273px").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").CustomAttributes(new { @class = "orientationcss" }).Add();
    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
-
 }).Created("setHeaderHeight").ExcelQueryCellInfo("excelQueryCellInfo").ExcelHeaderQueryCellInfo("excelHeaderQueryCellInfo").Toolbar(new List<string>() { "ExcelExport" }).Render()
-
-<style>
-    .orientationcss .e-headercelldiv {
-        transform: rotate(90deg);
-    }
-</style>
-
 <script>
     function toolbarClick(args) {
-        var gridObj = document.getElementById("Grid").ej2_instances[0];
-        if (args.item.id === 'Grid_excelexport') {
-            gridObj.excelExport();
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
+            grid.excelExport();
         }
     }
-
     function excelHeaderQueryCellInfo(args) {
-        var dropdownObj = document.getElementById("dropdown").ej2_instances[0];
-        var textWidth = document.querySelector(".orientationcss > div").scrollWidth;
+        var dropDown = document.getElementById("dropDown").ej2_instances[0];
+        let textWidth = document.querySelector(".orientationcss > div").scrollWidth;
         if (args.gridCell.column.field == 'Freight') {
             args.style = { backColor: '#99ffcc', vAlign: 'Bottom' };
         }
         else {
-            args.style = { vAlign: 'Center', rotation: dropdownObj.value };
+            args.style = { vAlign: 'Center', rotation: dropDown.value };
         }
         args.cell.cellHeight = textWidth;
     }
-
     function excelQueryCellInfo(args) {
         if (args.column.field == 'Freight') {
             if (args.value < 30) {
@@ -53,8 +48,7 @@
             }
         }
     }
-
-    function setHeaderHeight(args) {
+    function setHeaderHeight() {
         var textWidth = document.querySelector(".orientationcss > div").scrollWidth;
         var headerCell = document.querySelectorAll(".e-headercell");
         for (var i = 0; i < headerCell.length; i++) {
@@ -62,3 +56,8 @@
         }
     }
 </script>
+<style>
+    .orientationcss .e-headercelldiv {
+        transform: rotate(90deg);
+    }
+</style>
