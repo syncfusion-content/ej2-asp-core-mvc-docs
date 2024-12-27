@@ -1,0 +1,25 @@
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="378px" load="load" toolbar="@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" validationRules="@(new { required=true})" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer Name" validationRules="@(new { required=true })" width="120"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="120" validationRules="@(new { required=true, min=3, max=1000})"></e-grid-column>
+            <e-grid-column field="ShipName" headerText="Ship Name" width="150" validationRules="@(new { required=true})"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150" validationRules="@(new { required=true})"></e-grid-column>
+        </e-grid-columns>
+</ejs-grid>
+<script>
+    function load()
+    {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.element.addEventListener('mouseup', (event) => {
+        if (event.target.classList.contains("e-rowcell")) {
+            if (grid.isEdit)
+                grid.endEdit();
+                let index= parseInt((event.target).getAttribute("Index"));
+                grid.selectRow(index);
+                grid.startEdit();
+            };
+        });
+    }
+</script>
