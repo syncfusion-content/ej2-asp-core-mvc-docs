@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shapes in ##Platform_Name## Document Editor Component
-description: Learn here all about shapes in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+title: Shapes in ##Platform_Name## Document Editor Component | Syncfusion
+description: Learn here all about shapes in ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Shapes
 publishingplatform: ##Platform_Name##
@@ -15,7 +15,7 @@ Shapes are drawing objects that include a text box, rectangles, lines, curves, c
 
 ## Supported shapes
 
-The DocumentEditor has preservation support for Text box, Rectangle, Rounded Rectangle and Line shapes.
+The DocumentEditor has preservation support for Lines, Rectangle, Basic Shapes, Block Arrows, Equation Shapes,Flowchart and Stars and Banners.
 
 ![List of supported shapes in DocumentEditor](images/Shapes_images/supported_shapes.png)
 
