@@ -1,18 +1,18 @@
-@Html.EJS().Button("add").Content("Add Columns").IsPrimary(true).Render()
-
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).EnablePersistence(true).Columns(col =>
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("add").Content("Add Columns").CssClass("e-primary").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("273px").EnablePersistence(true).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("170").Add();
-    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-
-}).AllowPaging(true).PageSettings(page => page.PageCount(5)).Render()
-
+    col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+}).AllowPaging(true).Render()
 <script>
-    document.getElementById('add').onclick = function () {
-        var obj = { field: "Freight", headerText: 'Freight', width: 120 }
-        document.getElementById('Grid').ej2_instances[0].columns.push(obj); //you can add the columns by using the Grid columns method
-        document.getElementById('Grid').ej2_instances[0].refreshColumns();
-    }
+    document.getElementById('add').addEventListener('click', function () {
+        var grid=document.getElementById('grid').ej2_instances[0];
+        var columnObject = { field: "Freight", headerText: 'Freight', width: 120 };
+        grid.columns.push(columnObject);
+        grid.refreshColumns();
+    });
 </script>
