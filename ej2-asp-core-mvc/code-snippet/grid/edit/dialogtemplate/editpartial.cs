@@ -1,8 +1,4 @@
-@model TestApplication.Models.OrdersDetails
-@*//define the model for store the model values*@
-
-@using Syncfusion.EJ2
-
+@model Grid_Columns.Pages.DialogTemplateModel
 <div>
     <div class="form-row">
         <div class="form-group col-md-6">
@@ -20,7 +16,6 @@
             </div>
         </div>
     </div>
-
     <div class="form-row">
         <div class="form-group col-md-6">
             <ejs-numerictextbox id="Freight" value=@Model.Freight format="C2" placeholder="Freight" floatLabelType="Always"></ejs-numerictextbox>
@@ -29,7 +24,6 @@
             <ejs-datepicker id="OrderDate" value=@Model.OrderDate placeholder="Order Date" floatLabelType="Always"></ejs-datepicker>
         </div>
     </div>
-
     <div class="form-row">
         <div class="form-group col-md-6">
             <ejs-dropdownlist id="ShipCountry" value=@Model.ShipCountry dataSource="@ViewBag.datasource" placeholder="Ship Country" floatLabelType="Always" popupHeight="300px">
@@ -38,7 +32,7 @@
 
         </div>
         <div class="form-group col-md-6">
-            <ejs-dropdownlist id="ShipCity" value=@Model.ShipCity dataSource="@ViewBag.datasource" placeholder="Ship City" floatLabelType="Always" popupHeight="300px">
+            <ejs-dropdownlist id="ShipCity" value=@Model.ShipCity dataSource="@ViewBag.DataSource" placeholder="Ship City" floatLabelType="Always" popupHeight="300px">
                 <e-dropdownlist-fields text="ShipCity" value="ShipCity"></e-dropdownlist-fields>
             </ejs-dropdownlist>
         </div>
@@ -53,5 +47,4 @@
         </div>
     </div>
 </div>
-
 <ejs-scripts></ejs-scripts>
