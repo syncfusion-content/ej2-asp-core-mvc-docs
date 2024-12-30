@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Listview Component
+title: Style in ##Platform_Name## Listview Control | Syncfusion
 description: Learn here all about Style in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style
