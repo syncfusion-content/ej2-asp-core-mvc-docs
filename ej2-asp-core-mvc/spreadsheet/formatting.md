@@ -97,7 +97,7 @@ The following code example shows the number formatting in cell data.
 {% include code-snippet/spreadsheet/number-format/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="NumberFormatController.cs" %}
-{% include code-snippet/spreadsheet/number-format/EJ2_ASP.NETCORE/numberFormatController.cs %}
+{% include code-snippet/spreadsheet/number-format/Core/numberFormatController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,7 +108,7 @@ The following code example shows the number formatting in cell data.
 {% include code-snippet/spreadsheet/number-format/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="NumberFormatController.cs" %}
-{% include code-snippet/spreadsheet/number-format/EJ2_ASP.MVC/numberFormatController.cs %}
+{% include code-snippet/spreadsheet/number-format/MVC/numberFormatController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -203,7 +203,7 @@ The following code example demonstrates how to configure culture-based formats f
 {% include code-snippet/spreadsheet/globalization-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CultureController.cs" %}
-{% include code-snippet/spreadsheet/globalization-cs1/EJ2_ASP.NETCORE/cultureController.cs %}
+{% include code-snippet/spreadsheet/globalization-cs1/Core/cultureController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -214,7 +214,7 @@ The following code example demonstrates how to configure culture-based formats f
 {% include code-snippet/spreadsheet/globalization-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CultureController.cs" %}
-{% include code-snippet/spreadsheet/globalization-cs1/EJ2_ASP.MVC/cultureController.cs %}
+{% include code-snippet/spreadsheet/globalization-cs1/MVC/cultureController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -285,7 +285,7 @@ The following code example shows the style formatting in text and cells of the s
 {% include code-snippet/spreadsheet/cell-format/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellFormatController.cs" %}
-{% include code-snippet/spreadsheet/cell-format/EJ2_ASP.NETCORE/cellFormatController.cs %}
+{% include code-snippet/spreadsheet/cell-format/Core/cellFormatController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -296,7 +296,7 @@ The following code example shows the style formatting in text and cells of the s
 {% include code-snippet/spreadsheet/cell-format/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellFormatController.cs" %}
-{% include code-snippet/spreadsheet/cell-format/EJ2_ASP.MVC/cellFormatController.cs %}
+{% include code-snippet/spreadsheet/cell-format/MVC/cellFormatController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -396,7 +396,7 @@ You can clear the defined rules by using one of the following ways,
 {% include code-snippet/spreadsheet/conditional-formatting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ConditionalFormattingController.cs" %}
-{% include code-snippet/spreadsheet/conditional-formatting/EJ2_ASP.NETCORE/conditionalFormattingController.cs %}
+{% include code-snippet/spreadsheet/conditional-formatting/Core/conditionalFormattingController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -407,7 +407,7 @@ You can clear the defined rules by using one of the following ways,
 {% include code-snippet/spreadsheet/conditional-formatting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ConditionalFormattingController.cs" %}
-{% include code-snippet/spreadsheet/conditional-formatting/EJ2_ASP.MVC/conditionalFormattingController.cs %}
+{% include code-snippet/spreadsheet/conditional-formatting/MVC/conditionalFormattingController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

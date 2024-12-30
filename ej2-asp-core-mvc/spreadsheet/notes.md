@@ -26,7 +26,7 @@ In the below example, you can add, edit, save, and delete notes.
 {% include code-snippet/spreadsheet/note-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs1/EJ2_ASP.NETCORE/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs1/Core/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -37,7 +37,7 @@ In the below example, you can add, edit, save, and delete notes.
 {% include code-snippet/spreadsheet/note-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs1/EJ2_ASP.MVC/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs1/MVC/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -89,7 +89,7 @@ In the below example, the note functionality is disabled in the Spreadsheet.
 {% include code-snippet/spreadsheet/note-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs2/EJ2_ASP.NETCORE/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs2/Core/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,7 +100,7 @@ In the below example, the note functionality is disabled in the Spreadsheet.
 {% include code-snippet/spreadsheet/note-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs2/EJ2_ASP.MVC/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs2/MVC/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -116,7 +116,7 @@ The notes can be added initially when the Spreadsheet loads using cell data bind
 {% include code-snippet/spreadsheet/note-cs3/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs3/EJ2_ASP.NETCORE/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs3/Core/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,7 +127,7 @@ The notes can be added initially when the Spreadsheet loads using cell data bind
 {% include code-snippet/spreadsheet/note-cs3/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs3/EJ2_ASP.MVC/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs3/MVC/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
