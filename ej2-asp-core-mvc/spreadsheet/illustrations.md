@@ -77,7 +77,7 @@ Image feature allows you to view and insert a image in a spreadsheet and you can
 {% include code-snippet/spreadsheet/image/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ImageController.cs" %}
-{% include code-snippet/spreadsheet/image/EJ2_ASP.NETCORE/imageController.cs %}
+{% include code-snippet/spreadsheet/image/Core/imageController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,7 +88,7 @@ Image feature allows you to view and insert a image in a spreadsheet and you can
 {% include code-snippet/spreadsheet/image/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ImageController.cs" %}
-{% include code-snippet/spreadsheet/image/EJ2_ASP.MVC/imageController.cs %}
+{% include code-snippet/spreadsheet/image/MVC/imageController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -148,7 +148,7 @@ The available arguments in the `ChartModel` are:
 {% include code-snippet/spreadsheet/chart-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartController.cs" %}
-{% include code-snippet/spreadsheet/chart-cs1/EJ2_ASP.NETCORE/chartController.cs %}
+{% include code-snippet/spreadsheet/chart-cs1/Core/chartController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -159,7 +159,7 @@ The available arguments in the `ChartModel` are:
 {% include code-snippet/spreadsheet/chart-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartController.cs" %}
-{% include code-snippet/spreadsheet/chart-cs1/EJ2_ASP.MVC/chartController.cs %}
+{% include code-snippet/spreadsheet/chart-cs1/MVC/chartController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -190,7 +190,7 @@ Chart feature allows you to view and insert a chart in a spreadsheet, and you ca
 {% include code-snippet/spreadsheet/chart/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartController.cs" %}
-{% include code-snippet/spreadsheet/chart/EJ2_ASP.NETCORE/chartController.cs %}
+{% include code-snippet/spreadsheet/chart/Core/chartController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -201,7 +201,7 @@ Chart feature allows you to view and insert a chart in a spreadsheet, and you ca
 {% include code-snippet/spreadsheet/chart/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartController.cs" %}
-{% include code-snippet/spreadsheet/chart/EJ2_ASP.MVC/chartController.cs %}
+{% include code-snippet/spreadsheet/chart/MVC/chartController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -217,7 +217,7 @@ Using the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% include code-snippet/spreadsheet/chart-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartController.cs" %}
-{% include code-snippet/spreadsheet/chart-cs2/EJ2_ASP.NETCORE/chartController.cs %}
+{% include code-snippet/spreadsheet/chart-cs2/Core/chartController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -228,7 +228,7 @@ Using the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% include code-snippet/spreadsheet/chart-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartController.cs" %}
-{% include code-snippet/spreadsheet/chart-cs2/EJ2_ASP.MVC/chartController.cs %}
+{% include code-snippet/spreadsheet/chart-cs2/MVC/chartController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
