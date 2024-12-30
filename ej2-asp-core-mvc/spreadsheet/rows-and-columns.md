@@ -37,7 +37,7 @@ The following code example shows the options for inserting rows in the spreadshe
 {% include code-snippet/spreadsheet/insert-row/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="InsertRowController.cs" %}
-{% include code-snippet/spreadsheet/insert-row/EJ2_ASP.NETCORE/insertRowController.cs %}
+{% include code-snippet/spreadsheet/insert-row/Core/insertRowController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -48,7 +48,7 @@ The following code example shows the options for inserting rows in the spreadshe
 {% include code-snippet/spreadsheet/insert-row/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="InsertRowController.cs" %}
-{% include code-snippet/spreadsheet/insert-row/EJ2_ASP.MVC/insertRowController.cs %}
+{% include code-snippet/spreadsheet/insert-row/MVC/insertRowController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -71,7 +71,7 @@ The following code example shows the options for inserting columns in the spread
 {% include code-snippet/spreadsheet/insert-column/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="InsertColumnController.cs" %}
-{% include code-snippet/spreadsheet/insert-column/EJ2_ASP.NETCORE/insertColumnController.cs %}
+{% include code-snippet/spreadsheet/insert-column/Core/insertColumnController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,7 +82,7 @@ The following code example shows the options for inserting columns in the spread
 {% include code-snippet/spreadsheet/insert-column/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="InsertColumnController.cs" %}
-{% include code-snippet/spreadsheet/insert-column/EJ2_ASP.MVC/insertColumnController.cs %}
+{% include code-snippet/spreadsheet/insert-column/MVC/insertColumnController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -107,7 +107,7 @@ The following code example shows the delete operation of rows and columns in the
 {% include code-snippet/spreadsheet/delete-row/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DeleteRowController.cs" %}
-{% include code-snippet/spreadsheet/delete-row/EJ2_ASP.NETCORE/deleteRowController.cs %}
+{% include code-snippet/spreadsheet/delete-row/Core/deleteRowController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -118,7 +118,7 @@ The following code example shows the delete operation of rows and columns in the
 {% include code-snippet/spreadsheet/delete-row/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DeleteRowController.cs" %}
-{% include code-snippet/spreadsheet/delete-row/EJ2_ASP.MVC/deleteRowController.cs %}
+{% include code-snippet/spreadsheet/delete-row/MVC/deleteRowController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -154,7 +154,7 @@ The following code example shows the hide/show rows and columns operation in the
 {% include code-snippet/spreadsheet/show-hide/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowHideController.cs" %}
-{% include code-snippet/spreadsheet/show-hide/EJ2_ASP.NETCORE/showHideController.cs %}
+{% include code-snippet/spreadsheet/show-hide/Core/showHideController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -165,7 +165,7 @@ The following code example shows the hide/show rows and columns operation in the
 {% include code-snippet/spreadsheet/show-hide/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowHideController.cs" %}
-{% include code-snippet/spreadsheet/show-hide/EJ2_ASP.MVC/showHideController.cs %}
+{% include code-snippet/spreadsheet/show-hide/MVC/showHideController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -196,7 +196,7 @@ The following code example shows how to change the height for single/multiple ro
 {% include code-snippet/spreadsheet/row-height/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RowHeightController.cs" %}
-{% include code-snippet/spreadsheet/row-height/EJ2_ASP.NETCORE/rowHeightController.cs %}
+{% include code-snippet/spreadsheet/row-height/Core/rowHeightController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -207,7 +207,7 @@ The following code example shows how to change the height for single/multiple ro
 {% include code-snippet/spreadsheet/row-height/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RowHeightController.cs" %}
-{% include code-snippet/spreadsheet/row-height/EJ2_ASP.MVC/rowHeightController.cs %}
+{% include code-snippet/spreadsheet/row-height/MVC/rowHeightController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -232,7 +232,7 @@ The following code example shows how to change the width for single/multiple col
 {% include code-snippet/spreadsheet/column-width/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColumnWidthController.cs" %}
-{% include code-snippet/spreadsheet/column-width/EJ2_ASP.NETCORE/columnWidthController.cs %}
+{% include code-snippet/spreadsheet/column-width/Core/columnWidthController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -243,7 +243,7 @@ The following code example shows how to change the width for single/multiple col
 {% include code-snippet/spreadsheet/column-width/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColumnWidthController.cs" %}
-{% include code-snippet/spreadsheet/column-width/EJ2_ASP.MVC/columnWidthController.cs %}
+{% include code-snippet/spreadsheet/column-width/MVC/columnWidthController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
