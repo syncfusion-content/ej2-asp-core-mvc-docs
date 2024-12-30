@@ -55,7 +55,7 @@ The following sample shows the row selection in the spreadsheet, here selecting 
 {% include code-snippet/spreadsheet/row-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectionController.cs" %}
-{% include code-snippet/spreadsheet/row-selection/EJ2_ASP.NETCORE/selectionController.cs %}
+{% include code-snippet/spreadsheet/row-selection/Core/selectionController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,7 +66,7 @@ The following sample shows the row selection in the spreadsheet, here selecting 
 {% include code-snippet/spreadsheet/row-selection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectionController.cs" %}
-{% include code-snippet/spreadsheet/row-selection/EJ2_ASP.MVC/selectionController.cs %}
+{% include code-snippet/spreadsheet/row-selection/MVC/selectionController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -95,7 +95,7 @@ The following sample shows the column selection in the spreadsheet, here selecti
 {% include code-snippet/spreadsheet/column-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectionController.cs" %}
-{% include code-snippet/spreadsheet/column-selection/EJ2_ASP.NETCORE/selectionController.cs %}
+{% include code-snippet/spreadsheet/column-selection/Core/selectionController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,7 +106,7 @@ The following sample shows the column selection in the spreadsheet, here selecti
 {% include code-snippet/spreadsheet/column-selection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectionController.cs" %}
-{% include code-snippet/spreadsheet/column-selection/EJ2_ASP.MVC/selectionController.cs %}
+{% include code-snippet/spreadsheet/column-selection/MVC/selectionController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -132,7 +132,7 @@ Below is a code example demonstrating how to retrieve the selected cell values a
 {% include code-snippet/spreadsheet/selected-cell-values/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectedCellValuesController.cs" %}
-{% include code-snippet/spreadsheet/selected-cell-values/EJ2_ASP.NETCORE/selectedCellValuesController.cs %}
+{% include code-snippet/spreadsheet/selected-cell-values/Core/selectedCellValuesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -143,7 +143,7 @@ Below is a code example demonstrating how to retrieve the selected cell values a
 {% include code-snippet/spreadsheet/selected-cell-values/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectedCellValuesController.cs" %}
-{% include code-snippet/spreadsheet/selected-cell-values/EJ2_ASP.MVC/selectedCellValuesController.cs %}
+{% include code-snippet/spreadsheet/selected-cell-values/MVC/selectedCellValuesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -159,7 +159,7 @@ The following sample shows, how to remove the selection in the spreadsheet. Here
 {% include code-snippet/spreadsheet/disable-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectionController.cs" %}
-{% include code-snippet/spreadsheet/disable-selection/EJ2_ASP.NETCORE/selectionController.cs %}
+{% include code-snippet/spreadsheet/disable-selection/Core/selectionController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -170,7 +170,7 @@ The following sample shows, how to remove the selection in the spreadsheet. Here
 {% include code-snippet/spreadsheet/disable-selection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectionController.cs" %}
-{% include code-snippet/spreadsheet/disable-selection/EJ2_ASP.MVC/selectionController.cs %}
+{% include code-snippet/spreadsheet/disable-selection/MVC/selectionController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

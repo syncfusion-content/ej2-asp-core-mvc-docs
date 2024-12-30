@@ -32,7 +32,7 @@ The following code example shows the wrap text functionality in spreadsheet.
 {% include code-snippet/spreadsheet/wrap-text/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="WrapTextController.cs" %}
-{% include code-snippet/spreadsheet/wrap-text/EJ2_ASP.NETCORE/wrapTextController.cs %}
+{% include code-snippet/spreadsheet/wrap-text/Core/wrapTextController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -43,7 +43,7 @@ The following code example shows the wrap text functionality in spreadsheet.
 {% include code-snippet/spreadsheet/wrap-text/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="WrapTextController.cs" %}
-{% include code-snippet/spreadsheet/wrap-text/EJ2_ASP.MVC/wrapTextController.cs %}
+{% include code-snippet/spreadsheet/wrap-text/MVC/wrapTextController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -85,7 +85,7 @@ The following code example shows the merge cells operation in spreadsheet.
 {% include code-snippet/spreadsheet/merge-cells/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MergeCellController.cs" %}
-{% include code-snippet/spreadsheet/merge-cells/EJ2_ASP.NETCORE/mergeCellController.cs %}
+{% include code-snippet/spreadsheet/merge-cells/Core/mergeCellController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,7 +96,7 @@ The following code example shows the merge cells operation in spreadsheet.
 {% include code-snippet/spreadsheet/merge-cells/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MergeCellController.cs" %}
-{% include code-snippet/spreadsheet/merge-cells/EJ2_ASP.MVC/mergeCellController.cs %}
+{% include code-snippet/spreadsheet/merge-cells/MVC/mergeCellController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -159,7 +159,7 @@ You can clear the highlighted invalid data by using the following ways,
 {% include code-snippet/spreadsheet/data-validation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DataValidation.cs" %}
-{% include code-snippet/spreadsheet/data-validation/EJ2_ASP.NETCORE/dataValidation.cs %}
+{% include code-snippet/spreadsheet/data-validation/Core/dataValidation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -170,7 +170,7 @@ You can clear the highlighted invalid data by using the following ways,
 {% include code-snippet/spreadsheet/data-validation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DataValidation.cs" %}
-{% include code-snippet/spreadsheet/data-validation/EJ2_ASP.MVC/dataValidation.cs %}
+{% include code-snippet/spreadsheet/data-validation/MVC/dataValidation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -199,7 +199,7 @@ The following code example demonstrates how to add custom data validation with a
 {% include code-snippet/spreadsheet/data-validation-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DataValidation.cs" %}
-{% include code-snippet/spreadsheet/data-validation-cs2/EJ2_ASP.NETCORE/dataValidation.cs %}
+{% include code-snippet/spreadsheet/data-validation-cs2/Core/dataValidation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -210,7 +210,7 @@ The following code example demonstrates how to add custom data validation with a
 {% include code-snippet/spreadsheet/data-validation-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DataValidation.cs" %}
-{% include code-snippet/spreadsheet/data-validation-cs2/EJ2_ASP.MVC/dataValidation.cs %}
+{% include code-snippet/spreadsheet/data-validation-cs2/MVC/dataValidation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -294,7 +294,7 @@ In the following sample, you can enable/disable the fill option on the button cl
 {% include code-snippet/spreadsheet/autofill/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AutofillController.cs" %}
-{% include code-snippet/spreadsheet/autofill/EJ2_ASP.NETCORE/autofillController.cs %}
+{% include code-snippet/spreadsheet/autofill/Core/autofillController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -305,7 +305,7 @@ In the following sample, you can enable/disable the fill option on the button cl
 {% include code-snippet/spreadsheet/autofill/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AutofillController.cs" %}
-{% include code-snippet/spreadsheet/autofill/EJ2_ASP.MVC/autofillController.cs %}
+{% include code-snippet/spreadsheet/autofill/MVC/autofillController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -343,7 +343,7 @@ Clear the cell contents and formats in the Spreadsheet document by using the `cl
 {% include code-snippet/spreadsheet/clear/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClearController.cs" %}
-{% include code-snippet/spreadsheet/clear/EJ2_ASP.NETCORE/clearController.cs %}
+{% include code-snippet/spreadsheet/clear/Core/clearController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -354,7 +354,7 @@ Clear the cell contents and formats in the Spreadsheet document by using the `cl
 {% include code-snippet/spreadsheet/clear/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClearController.cs" %}
-{% include code-snippet/spreadsheet/clear/EJ2_ASP.MVC/clearController.cs %}
+{% include code-snippet/spreadsheet/clear/MVC/clearController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
