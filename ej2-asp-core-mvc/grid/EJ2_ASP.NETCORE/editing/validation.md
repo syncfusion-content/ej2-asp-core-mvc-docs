@@ -28,7 +28,7 @@ The following code example demonstrates how to define a validation rule for grid
 {% endhighlight %}
 {% endtabs %}
 
-![Column validation](../../images/editing/validation.png)
+![Column validation](../images/editing/validation.png)
 
 ## Custom validation
 
@@ -45,7 +45,7 @@ In the below demo, custom validation applied for **CustomerID** column.
 {% endhighlight %}
 {% endtabs %}
 
-![Custom validation](../../images/editing/validation-custom.png)
+![Custom validation](../images/editing/validation-custom.png)
 
 ### Custom validation based on dropdown change
 
@@ -62,7 +62,7 @@ In the following sample, dropdownlist edit type is used for the **Role** and **S
 {% endhighlight %}
 {% endtabs %}
 
-![Custom validation based on dropdown change](../../images/editing/validation-dropdown.gif)
+![Custom validation based on dropdown change](../images/editing/validation-dropdown.gif)
 
 ### Custom validation for numeric column
 
@@ -79,7 +79,7 @@ In the following example, custom validation functions, namely **customFn** and *
 {% endhighlight %}
 {% endtabs %}
 
-![Custom validation for numeric column](../../images/editing/validation-numeric.png)
+![Custom validation for numeric column](../images/editing/validation-numeric.png)
 
 ## Dynamically add or remove validation rules from the form
 
@@ -98,7 +98,7 @@ The following example to demonstrates how to dynamically add or remove a require
 {% endhighlight %}
 {% endtabs %}
 
-![Dynamically add or remove validation rules from the form](../../images/editing/validation-add-remove.png)
+![Dynamically add or remove validation rules from the form](../images/editing/validation-add-remove.png)
 
 > * To remove an existing validation rule from an input element, you can use the `removeRules` method. 
 
@@ -119,5 +119,5 @@ Here's an example that demonstrates how to change the position of the validation
 {% endhighlight %}
 {% endtabs %}
 
-![Change the position of validation error message](../../images/editing/validation-position.png)
+![Change the position of validation error message](../images/editing/validation-position.png)
 

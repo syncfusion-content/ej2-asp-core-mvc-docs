@@ -1,6 +1,6 @@
 public IActionResult DefaultExporting()
 {
     ViewBag.DataSource = OrdersDetails.GetAllRecords();
-    ViewBag.foreign = EmployeeView.GetAllRecords();
+    ViewBag.EmployeeData = EmployeeView.GetAllRecords();
     return View();
 }

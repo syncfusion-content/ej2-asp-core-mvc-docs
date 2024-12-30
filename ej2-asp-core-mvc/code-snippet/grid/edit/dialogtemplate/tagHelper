@@ -33,7 +33,7 @@
                     console.log(xhr);
             });
         }
-        if (args.requestType === 'add') {
+        else if (args.requestType === 'add') {
             var ajax = new ej.base.Ajax({
                 type: "POST",
                 url: "/Index?handler=AddPartial",

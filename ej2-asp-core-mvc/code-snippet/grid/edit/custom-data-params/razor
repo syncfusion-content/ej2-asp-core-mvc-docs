@@ -1,12 +1,12 @@
 @{
     ViewBag.DropDownData = new List<object>
     {
-        new { Country = "United States", CountryId = "1" },
-        new { Country = "Australia", CountryId = "2" },
-        new { Country = "India", CountryId = "3" },
-        new { Country = "Germany", CountryId = "4" },
-        new { Country = "France", CountryId = "5" },
-        new { Country = "Brazil", CountryId = "6" }
+        new { Country = "United States"},
+        new { Country = "Australia" },
+        new { Country = "India" },
+        new { Country = "Germany" },
+        new { Country = "France" },
+        new { Country = "Brazil" }
     };
     var DropDownList = new Syncfusion.EJ2.DropDowns.DropDownList() { DataSource = ViewBag.DropDownData, Query = "new ej.data.Query()", AllowFiltering = true, Fields = new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings() { Value = "Country", Text = "Country" } };
 }

@@ -26,7 +26,7 @@
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
-            <ejs-dropdownlist id="ShipCountry" value=@Model.ShipCountry dataSource="@ViewBag.datasource" placeholder="Ship Country" floatLabelType="Always" popupHeight="300px">
+            <ejs-dropdownlist id="ShipCountry" value=@Model.ShipCountry dataSource="@ViewBag.Datasource" placeholder="Ship Country" floatLabelType="Always" popupHeight="300px">
                 <e-dropdownlist-fields text="ShipCountry" value="ShipCountry"></e-dropdownlist-fields>
             </ejs-dropdownlist>
 

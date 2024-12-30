@@ -141,7 +141,7 @@ In the below demo, DropDownList is rendered with custom data source for the **Sh
 {% endhighlight %}
 {% endtabs %}
 
-![Provide custom data source for DropDownList component](../../images/editing/dropdown-edit-type.png)
+![Provide custom data source for DropDownList component](../images/editing/dropdown-edit-type.png)
 
 ### Apply filtering for DropDownList component
 
@@ -494,7 +494,7 @@ The following example demonstrates how to render a Upload control in the **Emplo
 {% endhighlight %}
 {% endtabs %}
 
-![Render Upload component in edit form](../../images/editing/edit-types-upload.gif)
+![Render Upload component in edit form](../images/editing/edit-types-upload.gif)
 
 ### Render AutoComplete component in edit form 
 

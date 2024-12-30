@@ -34,7 +34,7 @@ Here's an example that demonstrates how to add CRUD action buttons in a column u
 {% endhighlight %}
 {% endtabs %}
 
-![Command column editing](../../images/editing/edit-command.gif)
+![Command column editing](../images/editing/edit-command.gif)
 
 ## Custom command column
 
@@ -53,5 +53,5 @@ Here's an example that demonstrates how to add custom command buttons using the 
 {% endhighlight %}
 {% endtabs %}
 
-![Custom command column](../../images/editing/edit-custom.png)
+![Custom command column](../images/editing/edit-custom.png)
 

@@ -232,7 +232,7 @@ The following example shows how to set complex field for datasource having array
 {% endhighlight %}
 {% endtabs %}
 
-![Complex data binding with list of array of objects](../../images/column-rendering/column-complex.png)
+![Complex data binding with list of array of objects](../images/column-rendering/column-complex.png)
 
 ### How to set complex column as foreign key column
 
@@ -249,4 +249,4 @@ The following example demonstrates how to set the **Employee.EmployeeID** column
 {% endhighlight %}
 {% endtabs %}
 
-![Complex data binding with list of array of objects](../../images/column-rendering/column-foriegn-complex.png)
+![Complex data binding with list of array of objects](../images/column-rendering/column-foriegn-complex.png)

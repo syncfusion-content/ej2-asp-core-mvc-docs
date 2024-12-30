@@ -494,7 +494,7 @@ The following example demonstrates how to render a Upload control in the **Emplo
 {% endhighlight %}
 {% endtabs %}
 
-![Render Upload component in edit form](../../images/editing/edit-types-upload.gif)
+![Render Upload component in edit form](../images/editing/edit-types-upload.gif)
 
 ### Render AutoComplete component in edit form 
 

@@ -20,7 +20,7 @@ To enable this feature, you need to set the [editSettings.mode](https://help.syn
 
 **Using Forms**
 
-Forms is a approach to create and manipulate the form controls. You can use form to add and update grid records. To use forms for editing operation, you can take leverage of the template support of dialog or inline edit mode. Setting the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) as **Normal/Dialog** and use [editSetting.template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Template) to define the grid editors.
+Forms is a approach to create and manipulate the form controls. You can use form to add and update grid records. To use forms for editing operation, you can take leverage of the template support of dialog or inline edit mode. Setting the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) as **Normal/Dialog** and use [editSetting.template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Template) property to specify a SCRIPT element ID or an HTML string that holds the template.
 
 In some cases, you want to add new field editors in the dialog which are not present in the column model. In that situation the dialog template will help us to customize the default edit dialog.
 
@@ -46,7 +46,7 @@ In the following sample, grid enabled with dialog template editing.
 
 | Add | Edit |
 | -------------- | ------------- |
-| ![Add](../../images/editing/template-inline-add.png) | ![Edit](../../images/editing/template-inline-edit.png) |
+| ![Add](../images/editing/template-inline-add.png) | ![Edit](../images/editing/template-inline-edit.png) |
 
 > The template form editors should have **name** attribute.
 
@@ -181,5 +181,5 @@ The following example renders a tab component inside the edit dialog. The tab co
 {% endhighlight %}
 {% endtabs %}
 
-![Render tab control inside the dialog template](../../images/editing/template-tab.gif)
+![Render tab control inside the dialog template](../images/editing/template-tab.gif)
 

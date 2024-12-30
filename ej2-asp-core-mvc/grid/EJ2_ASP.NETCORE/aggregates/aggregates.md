@@ -84,4 +84,4 @@ Here's an example of how to use multiple aggregates in the Syncfusion ASP.Net Co
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple aggregates for a column](../../images/aggregates/aggregates-multiple.png)
+![Multiple aggregates for a column](../images/aggregates/aggregates-multiple.png)
