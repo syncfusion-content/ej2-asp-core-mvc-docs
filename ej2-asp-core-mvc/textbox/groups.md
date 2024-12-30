@@ -9,27 +9,23 @@ documentation: ug
 ---
 
 
-# Groups in ASP.NET Core TextBox component
+# Groups in ##Platform_Name## TextBox Component
 
 The following section explains you the steps required to create TextBox with `icon` and `floating label`.
 
 **Floating label:**
 
-To add the Floating label by using [FloatLabelType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_FloatLabelType) property. Specifies the floating label behavior of the TextBox that the placeholder text floats above the TextBox based on the below values. Possible values are:
+To add the Floating label by using `FloatLabelType` property. Specifies the floating label behavior of the TextBox that the placeholder text floats above the TextBox based on the below values. Possible values are:
 
 * Never - The placeholder text should not be float ever.
 * Always - The placeholder text floats above the TextBox always.
 * Auto - The placeholder text floats above the TextBox while focusing or enter a value in TextBox.
 
-```html
-      <ejs-textbox id="float-icon-textbox" placeholder="Enter Name" floatLabelType="Auto"></ejs-textbox>
-```
-
 And refer to the following sections to add the icons to the TextBox.
 
 ## With icon and floating label
 
-Create an icon in the TextBox using the `addIcon` method and enable the float label using the [FloatLabelType](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.inputs.textbox.html#Syncfusion_EJ2_Inputs_TextBox_FloatLabelType) property. The user can place the icon on either side of the TextBox by specifying “append” or “prepend” in the `addIcon` method.
+Create an icon in the TextBox using the `addIcon` method and enable the float label using the `FloatLabelType` property. The user can place the icon on either side of the TextBox by specifying “append” or “prepend” in the `addIcon` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -97,7 +93,7 @@ Output be like the below.
 
 ## Multi-line input with floating label
 
-To create a multiline input using the [multiline](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_Multiline) API, it will act as a TextArea component. You can also resize the rows.
+To create a multiline input using the `multiline` API, it will act as a TextArea component. You can also resize the rows.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

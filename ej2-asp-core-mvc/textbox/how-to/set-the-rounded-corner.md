@@ -11,7 +11,7 @@ documentation: ug
 
 # Set the rounded corner
 
-Render the TextBox with rounded corner by adding the `e-corner` class to the [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.inputs.textbox.html#Syncfusion_EJ2_Inputs_TextBox_CssClass) property of the TextBoxComponent.
+Render the TextBox with rounded corner by adding the `e-corner` class to the `cssClass` property of the TextBoxComponent.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

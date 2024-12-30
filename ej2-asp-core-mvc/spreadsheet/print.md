@@ -38,7 +38,7 @@ The `printOptions` contain three properties, as described below.
 {% include code-snippet/spreadsheet/print-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PrintController.cs" %}
-{% include code-snippet/spreadsheet/print-cs2/printController.cs %}
+{% include code-snippet/spreadsheet/print-cs2/EJ2_ASP.NETCORE/printController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -49,7 +49,7 @@ The `printOptions` contain three properties, as described below.
 {% include code-snippet/spreadsheet/print-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PrintController.cs" %}
-{% include code-snippet/spreadsheet/print-cs2/printController.cs %}
+{% include code-snippet/spreadsheet/print-cs2/EJ2_ASP.MVC/printController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -67,7 +67,7 @@ The printing functionality in the Spreadsheet can be disabled by setting the [`a
 {% include code-snippet/spreadsheet/print-cs3/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PrintController.cs" %}
-{% include code-snippet/spreadsheet/print-cs3/printController.cs %}
+{% include code-snippet/spreadsheet/print-cs3/EJ2_ASP.NETCORE/printController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -78,7 +78,7 @@ The printing functionality in the Spreadsheet can be disabled by setting the [`a
 {% include code-snippet/spreadsheet/print-cs3/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PrintController.cs" %}
-{% include code-snippet/spreadsheet/print-cs3/printController.cs %}
+{% include code-snippet/spreadsheet/print-cs3/EJ2_ASP.MVC/printController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
