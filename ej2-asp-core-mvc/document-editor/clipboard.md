@@ -83,7 +83,7 @@ N> Keyboard shortcut for pasting will work properly in both cases. Copying conte
 
 ## Paste with formatting
 
-Document Editor provides support to paste the system clipboard data with formatting. To enable clipboard paste with formatting options, set the `EnableLocalPaste` property in Document Editor to false and use this .NET Standard library [`Syncfusion`<sup style="font-size:70%">&reg;</sup>`.EJ2.WordEditor.AspNet.Core`](<https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/>) by the web API service implementation. This library helps to paste the system clipboard data with formatting.
+Document Editor provides support to paste the system clipboard data with formatting. To enable clipboard paste with formatting options, set the `EnableLocalPaste` property in Document Editor to false and use this .NET Standard library [`Syncfusion.EJ2.WordEditor.AspNet.Core`](<https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/>) by the web API service implementation. This library helps to paste the system clipboard data with formatting.
 
 You can paste your system clipboard data in the following ways:
 

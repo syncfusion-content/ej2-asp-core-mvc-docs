@@ -67,7 +67,7 @@ In Document Editor, the documents are stored in its own format called **Syncfusi
 
 ## Convert word documents into SFDT
 
-You can convert word documents into SFDT format using the .NET Standard library [`Syncfusion`<sup style="font-size:70%">&reg;</sup>`.EJ2.WordEditor.AspNet.Core`](<https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/>) by the web API service implementation. This library helps to convert word documents (.dotx,.docx,.docm,.dot,.doc), rich text format documents (.rtf), and text documents (.txt) into SFDT format.
+You can convert word documents into SFDT format using the .NET Standard library [`Syncfusion.EJ2.WordEditor.AspNet.Core`](<https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/>) by the web API service implementation. This library helps to convert word documents (.dotx,.docx,.docm,.dot,.doc), rich text format documents (.rtf), and text documents (.txt) into SFDT format.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
