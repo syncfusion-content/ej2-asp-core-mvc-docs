@@ -6,58 +6,58 @@
         col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
     }).Height("315").Render();
     </div>
-    <script>
-        loadLocaleFile();
-        function loadLocaleFile() {
-            fetch('/Content/cldr-data/locale.json')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Failed to load culture file');
-                    }
-                    return response.json();
-                })
-                .then(deDELocalization => {
-                    ej.base.L10n.load(deDELocalization);
-                    applyLocaleToGrid();  // Refresh the grid after localization is loaded
-                })
-                .catch(error => {
-                    console.error('Error loading culture file:', error);
-                });
+<script>
+    loadLocaleFile();
+    function loadLocaleFile() {
+        fetch('/Content/cldr-data/locale.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load culture file');
+                }
+                return response.json();
+            })
+            .then(deDELocalization => {
+                ej.base.L10n.load(deDELocalization);
+                applyLocaleToGrid();  // Refresh the grid after localization is loaded
+            })
+            .catch(error => {
+                console.error('Error loading culture file:', error);
+            });
+    }
+
+    function applyLocaleToGrid() {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        if (grid) {
+            grid.locale = "de-DE";
+            grid.refresh();
+            loadCultureFiles();
         }
-    
-        function applyLocaleToGrid() {
-            var grid = document.getElementById('Grid').ej2_instances[0];
-            if (grid) {
-                grid.locale = "de-DE";
-                grid.refresh();
-                loadCultureFiles();
-            }
-        }
-    
-        function loadCultureFiles() {
-            var files = ['ca-gregorian.json', 'numberingSystems.json', 'currencies.json', 'timeZoneNames.json'];
-            var loader = ej.base.loadCldr;
-            var loadCulture = function (prop) {
-                var fetch = new ej.base.Fetch(location.origin + '/../Content/cldr-data/' + files[prop], 'GET', false);
-                fetch.onSuccess = function (response) {
-                    if (typeof response === 'object') {
-                        // If the response is an object, convert it to a JSON string
-                        var jsonString = JSON.stringify(response);
-                        ej.base.loadCldr(JSON.parse(jsonString));
-                    } else if (typeof response === 'string') {
-                        // If the response is already a JSON string, parse and load it
-                        ej.base.loadCldr(JSON.parse(response));
-    
-                    } else {
-                        console.error('Invalid responsetype received:', response);
-                    }
-                    ej.base.setCulture('de-DE');
-                    ej.base.setCurrencyCode('EUR');
-                };
-                fetch.send();
+    }
+
+    function loadCultureFiles() {
+        var files = ['ca-gregorian.json', 'numberingSystems.json', 'currencies.json', 'timeZoneNames.json'];
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var fetch = new ej.base.Fetch(location.origin + '/../Content/cldr-data/' + files[prop], 'GET', false);
+            fetch.onSuccess = function (response) {
+                if (typeof response === 'object') {
+                    // If the response is an object, convert it to a JSON string
+                    var jsonString = JSON.stringify(response);
+                    ej.base.loadCldr(JSON.parse(jsonString));
+                } else if (typeof response === 'string') {
+                    // If the response is already a JSON string, parse and load it
+                    ej.base.loadCldr(JSON.parse(response));
+
+                } else {
+                    console.error('Invalid responsetype received:', response);
+                }
+                ej.base.setCulture('de-DE');
+                ej.base.setCurrencyCode('EUR');
             };
-            for (var prop = 0; prop < files.length; prop++) {
-                loadCulture(prop);
-            }
+            fetch.send();
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
         }
-    </script>
+    }
+</script>

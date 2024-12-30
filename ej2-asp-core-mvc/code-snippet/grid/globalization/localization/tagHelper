@@ -9,7 +9,6 @@
     </ejs-grid>
 <script>
     loadCultureFiles();
-
     function loadCultureFiles() {
         fetch('/cldr-data/locale.json')
             .then(response => {
@@ -31,7 +30,7 @@
         // Get the grid instance
         var grid = document.getElementById('Grid').ej2_instances[0];
         if (grid) {
-            grid.locale = "de-DE"; // Apply German locale
+            grid.locale = "de-DE"; 
             grid.refresh();       // Refresh the grid to apply localization
         }
     }
