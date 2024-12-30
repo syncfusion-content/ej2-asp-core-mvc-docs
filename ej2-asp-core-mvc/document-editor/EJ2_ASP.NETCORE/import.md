@@ -11,7 +11,7 @@ documentation: ug
 
 # Import in Document Editor Component
 
-In Document Editor, the documents are stored in its own format called **Syncfusion Document Text (SFDT)**.
+In Document Editor, the documents are stored in its own format called **Syncfusion<sup style="font-size:70%">&reg;</sup> Document Text (SFDT)**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
