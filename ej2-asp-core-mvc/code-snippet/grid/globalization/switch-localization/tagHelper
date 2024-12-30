@@ -1,0 +1,84 @@
+<div style="padding:0px 0px 20px 0px" >
+    <ejs-button id = 'frButton' cssClass = 'e-outline' content = "Change FR Locale" > </ejs-button>
+    <ejs-button id = 'enButton' cssClass = 'e-outline' content = "Change En Locale" > </ejs-button>
+</div>
+    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="220" allowPaging="true">
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" width="90" format="C2"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country" width="100"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+<script>
+    var activeCulture = 'fr-FR';
+    document.getElementById('frButton').addEventListener('click', function () {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        activeCulture = 'fr-FR'; // Update global variable
+        ej.base.setCulture(activeCulture); // Apply culture
+        ej.base.setCurrencyCode('EUR'); // Change currency to EUR
+        grid.locale = activeCulture; // Update Grid's locale
+        grid.refresh();
+    });
+    document.getElementById('enButton').addEventListener('click', function () {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        activeCulture = 'en-US'; // Update global variable
+        ej.base.setCulture(activeCulture); // Apply culture
+        ej.base.setCurrencyCode('USD'); // Change currency to USD
+        grid.locale = activeCulture; // Update Grid's locale
+        grid.refresh();
+    });
+    function applyLocaleToGrid() {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        if (grid) {
+            grid.locale = "fr-FR"; // Apply German locale
+            grid.refresh();
+            loadCultureFiles(activeCulture);
+    }}
+    loadLocaleFile();
+    function loadLocaleFile() {
+        fetch('/../cldr-data/locale.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load culture file');
+                }
+                return response.json();
+            })
+            .then(localizationData => {
+                if (localizationData["fr-FR"]) {
+                    ej.base.L10n.load(localizationData);
+                    applyLocaleToGrid();
+                } else {
+                    console.error("fr-FR locale not found in the fetched JSON file.");
+                }
+            })
+            .catch(error => {
+                console.error('Error loading culture file:', error);
+            });
+    }
+    function loadCultureFiles(culture) {
+        var files = ['ca-gregorian.json', 'numberingSystems.json', 'currencies.json', 'timeZoneNames.json', 'numbers.json'];
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+         var fetch = new ej.base.Fetch(location.origin + '/../cldr-data/' + files[prop], 'GET', false);
+            fetch.onSuccess = function (response) {
+                if (typeof response === 'object') {
+                    // If the response is an object, convert it to a JSON string
+                    var jsonString = JSON.stringify(response);
+                    ej.base.loadCldr(JSON.parse(jsonString));
+                } else if (typeof response === 'string') {
+                    // If the response is already a JSON string, parse and load it
+                    ej.base.loadCldr(JSON.parse(response));
+                } else {
+                    console.error('Invalid responsetype received:', response);
+                }
+                ej.base.setCulture(culture); 
+                ej.base.setCurrencyCode(culture === 'fr-FR' ? 'EUR' : 'USD');
+            };
+            fetch.send();
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+</script>

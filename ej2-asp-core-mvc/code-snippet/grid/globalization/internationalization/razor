@@ -1,37 +1,63 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-    col.Field("Freight").HeaderText("Ship Name").Format("C2").Width("150").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-
-}).AllowPaging().AllowGrouping().Locale("de-DE").PageSettings(page => page.PageSize(6)).Render()
-
-<script>
-
-    ej.base.setCurrencyCode('EUR');
-
-    ej.base.L10n.load({
-        'de-DE': {
-            'grid': {
-                'EmptyRecord': 'Keine Aufzeichnungen angezeigt',
-                'GroupDropArea': 'Ziehen Sie einen Spaltenkopf hier, um die Gruppe ihre Spalte',
-                'UnGroup': 'Klicken Sie hier, um die Gruppierung aufheben',
-                'EmptyDataSourceError': 'DataSource darf bei der Erstauslastung nicht leer sein, da Spalten aus der dataSource im AutoGenerate Spaltenraster',
-                'Item': 'Artikel',
-                'Items': 'Artikel'
-            },
-            'pager': {
-                'currentPageInfo': '{0} von {1} Seiten',
-                'totalItemsInfo': '({0} Beiträge)',
-                'firstPageTooltip': 'Zur ersten Seite',
-                'lastPageTooltip': 'Zur letzten Seite',
-                'nextPageTooltip': 'Zur nächsten Seite',
-                'previousPageTooltip': 'Zurück zur letzten Seit',
-                'nextPagerTooltip': 'Gehen Sie zu den nächsten Pager-Elementen',
-                'previousPagerTooltip': 'Gehen Sie zu vorherigen Pager-Elementen'
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).AllowPaging(true).AllowGrouping(true).Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+        col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+        col.Field("Freight").HeaderText("Freight").Format("C2").Width("90").Add();
+        col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+    }).Height("315").Render();
+    </div>
+    <script>
+        loadLocaleFile();
+        function loadLocaleFile() {
+            fetch('/Content/cldr-data/locale.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to load culture file');
+                    }
+                    return response.json();
+                })
+                .then(deDELocalization => {
+                    ej.base.L10n.load(deDELocalization);
+                    applyLocaleToGrid();  // Refresh the grid after localization is loaded
+                })
+                .catch(error => {
+                    console.error('Error loading culture file:', error);
+                });
+        }
+    
+        function applyLocaleToGrid() {
+            var grid = document.getElementById('Grid').ej2_instances[0];
+            if (grid) {
+                grid.locale = "de-DE";
+                grid.refresh();
+                loadCultureFiles();
             }
         }
-    });
-</script>
+    
+        function loadCultureFiles() {
+            var files = ['ca-gregorian.json', 'numberingSystems.json', 'currencies.json', 'timeZoneNames.json'];
+            var loader = ej.base.loadCldr;
+            var loadCulture = function (prop) {
+                var fetch = new ej.base.Fetch(location.origin + '/../Content/cldr-data/' + files[prop], 'GET', false);
+                fetch.onSuccess = function (response) {
+                    if (typeof response === 'object') {
+                        // If the response is an object, convert it to a JSON string
+                        var jsonString = JSON.stringify(response);
+                        ej.base.loadCldr(JSON.parse(jsonString));
+                    } else if (typeof response === 'string') {
+                        // If the response is already a JSON string, parse and load it
+                        ej.base.loadCldr(JSON.parse(response));
+    
+                    } else {
+                        console.error('Invalid responsetype received:', response);
+                    }
+                    ej.base.setCulture('de-DE');
+                    ej.base.setCurrencyCode('EUR');
+                };
+                fetch.send();
+            };
+            for (var prop = 0; prop < files.length; prop++) {
+                loadCulture(prop);
+            }
+        }
+    </script>
