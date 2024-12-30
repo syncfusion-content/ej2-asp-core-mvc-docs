@@ -1,3 +1,4 @@
+@using Syncfusion.EJ2;
 <div>
     <div class="form-row">
         <div class="form-group col-md-6">

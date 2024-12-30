@@ -6,31 +6,37 @@
 }).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog).Template("#dialogtemplate"); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 <script>
     function actionComplete(args) {
+        let spinner = ej.popups.createSpinner({ target: args.dialog.element });
+        ej.popups.showSpinner(args.dialog.element);
         if (args.requestType === 'beginEdit') {
             var ajax = new ej.base.Ajax({
-                url: "/Home/EditPartial", //render the partial view
+                url: "/Home/EditPatial", //render the partial view
                 type: "POST",
                 contentType: "application/json",
                 data: JSON.stringify({ value: args.rowData })
             });
             ajax.send().then(function (data) {
                 $("#dialogTemp").html(data); //Render the edit form with selected record
-                    args.form.elements.namedItem('CustomerID').focus();
-                }).catch(function (xhr) {
-                   console.log(xhr);
+                args.form.elements.namedItem('CustomerID').focus();
+                ej.popups.hideSpinner(args.dialog.element);
+            }).catch(function (xhr) {
+                console.log(xhr);
+                ej.popups.hideSpinner(args.dialog.element);
             });
         }
-        else if (args.requestType === 'add') {
+        if (args.requestType === 'add') {
             var ajax = new ej.base.Ajax({
-                url: "/Home/AddPartial", //render the partial view
+                url: "/Home/AddPatial", //render the partial view
                 type: "POST",
                 contentType: "application/json",
             });
             ajax.send().then(function (data) {
                 $("#dialogTemp").html(data); //Render the edit form with selected record
-                    args.form.elements.namedItem('OrderID').focus();
-                }).catch(function (xhr) {
+                args.form.elements.namedItem('OrderID').focus();
+                ej.popups.hideSpinner(args.dialog.element);
+            }).catch(function (xhr) {
                 console.log(xhr);
+                ej.popups.hideSpinner(args.dialog.element);
             });
         }
     }

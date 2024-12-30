@@ -1,6 +1,4 @@
-
 @Html.AntiForgeryToken()
-
 <ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="348px" allowPaging="true" actionComplete="actionComplete" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
     <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog" template='#dialogtemplate'></e-grid-editsettings>
     <e-grid-columns>
@@ -14,6 +12,8 @@
 </script>
 <script>
     function actionComplete(args) {
+        let spinner = ej.popups.createSpinner({ target: args.dialog.element });
+        ej.popups.showSpinner(args.dialog.element);
         if (args.requestType === 'beginEdit') {
             var ajax = new ej.base.Ajax({
                 type: "POST",
@@ -29,8 +29,10 @@
             ajax.send().then(function (data) {
                 appendElement(data, args.form);
                 args.form.elements.namedItem('CustomerID').focus();
+                ej.popups.hideSpinner(args.dialog.element);
             }).catch(function (xhr) {
                     console.log(xhr);
+                    ej.popups.hideSpinner(args.dialog.element);
             });
         }
         else if (args.requestType === 'add') {
@@ -47,12 +49,13 @@
             ajax.send().then(function (data) {
                 $("#dialogTemp").html(data);
                     args.form.elements.namedItem('OrderID').focus();
+                    ej.popups.hideSpinner(args.dialog.element);
                 }).catch(function (xhr) {
                     console.log(xhr);
+                    ej.popups.hideSpinner(args.dialog.element);
                 });
             }
         }
-    }
     function appendElement(elementString, form) {
         form.querySelector("#dialogTemp").innerHTML = elementString;
         var script = document.createElement('script');

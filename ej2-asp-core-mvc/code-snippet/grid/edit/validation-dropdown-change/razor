@@ -34,15 +34,14 @@
     window.role = '';
     function customFunction(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
-        var formObj = grid.editModule.formObj.element['ej2_instances'][0];
+        var formObject = grid.editModule.formObj.element['ej2_instances'][0];
         let salary = parseInt(args.value)
-
         switch (window['role']) {
             case 'Sales':
                 if ((salary >= 5000) && (salary < 15000))
                     return true;
                 else
-                    formObj.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
+                    formObject.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
 
                 break;
 
@@ -50,7 +49,7 @@
                 if ((salary >= 15000 && salary < 19000))
                     return true;
                 else
-                    formObj.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
+                    formObject.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
 
                 break;
 
@@ -58,7 +57,7 @@
                 if ((salary >= 25000 && salary < 30000))
                     return true;
                 else
-                    formObj.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
+                    formObject.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
 
                 break;
 
@@ -66,7 +65,7 @@
                 if ((salary >= 30000) && (salary < 50000))
                     return true;
                 else
-                    formObj.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
+                    formObject.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
 
                 break;
 
@@ -74,42 +73,40 @@
                 if ((salary >= 50000) && (salary < 70000))
                     return true;
                 else
-                    formObj.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
+                    formObject.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
 
                 break;
-
         }
         return false;
     }
     function valueChange(args) {
       var grid = document.getElementById("grid").ej2_instances[0];
       window.role = args.value.toString();
-      var formObj = grid.editModule.formObj.element['ej2_instances'][0];
-
+      var formObject = grid.editModule.formObj.element['ej2_instances'][0];
         switch ( window.role) {
 
             case 'Sales':
-                formObj.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
+                formObject.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
 
                 break;
 
             case 'Support':
-                formObj.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
+                formObject.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
 
                 break;
 
             case 'Engineer':
-                formObj.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
+                formObject.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
 
                 break;
 
             case 'Team Lead':
-                formObj.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
+                formObject.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
 
                 break;
 
             case 'Manager':
-                formObj.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
+                formObject.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
 
                 break;
         }

@@ -14,7 +14,7 @@
  <script>
     function actionComplete(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
-        var formObj = grid.editModule.formObj;
+        var formObject = grid.editModule.formObj;
         var customerIDRules = {
             required: true,
             minLength: [5, 'Customer ID should have a minimum length of 5 characters'],
@@ -22,7 +22,7 @@
         if (args.requestType === 'beginEdit' || args.requestType === 'add') {
             var checkbox = document.getElementById("checkbox").ej2_instances[0];
             if (checkbox.checked) {
-                formObj.addRules('CustomerID', customerIDRules);
+                formObject.addRules('CustomerID', customerIDRules);
             }
         }
     }
