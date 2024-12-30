@@ -18,48 +18,42 @@
           },
           ChildGrid = SecondChildGrid
       };
- }
+}
                 
-@Html.EJS().Grid("HierarchyPrint").DataSource((IEnumerable<object>)ViewBag.EmpDataSource).HierarchyPrintMode(Syncfusion.EJ2.Grids.HierarchyGridPrintMode.Expanded).Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).HierarchyPrintMode(Syncfusion.EJ2.Grids.HierarchyGridPrintMode.Expanded).Columns(col =>
 {
    col.Field("EmployeeID").HeaderText("Employee ID").Width("125").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("FirstName").HeaderText("Name").Width("125").Add();
+   col.Field("FirstName").HeaderText("First Name").Width("125").Add();
    col.Field("Title").HeaderText("Title").Width("180").Add();
    col.Field("City").HeaderText("City").Width("135").Add();
-
-}).AllowSorting().AllowPaging().PageSettings(page => page.PageSize(5)).Toolbar(new List<string>() { "Print"}).ChildGrid(ChildGrid).ActionBegin("actionBegin").Load("load").Render()
-
-                
+}).AllowPaging().PageSettings(page => page.PageSize(4)).Toolbar(new List<string>() { "Print"}).ChildGrid(ChildGrid).ActionBegin("actionBegin").Load("load").Render();            
 <script>
-
-    var expandedChildGrid = {};
-
-    function actionBegin(args) {
-        if (args.requestType === 'paging') {
-           expandedChildGrid = ej.base.extend({}, expandedChildGrid, getExpandedState(this, 'Expanded', args.previousPage));
+    var persistedExpandedRows = {};
+    function actionBegin(eventArgs) {
+        if (eventArgs.requestType === 'paging') {
+            persistedExpandedRows = ej.base.extend({}, persistedExpandedRows, getExpandedState(this, 'Expanded', eventArgs.previousPage));
         }
     }
-
     function load() {
         this.on(ej.grids.printGridInit, printInit, this);
     }
-
-    function printInit(gridModel) {
-        gridModel.printgrid.expandedRows = ej.base.extend({}, expandedChildGrid, gridModel.expandedRows);
+    function printInit(gridInstance) {
+        gridInstance.printgrid.expandedRows = ej.base.extend({}, persistedExpandedRows, gridInstance.expandedRows);
     }
-
-    function getExpandedState(gObj, hierarchyPrintMode, currentPage) {
-         var obj = {};
-         var rows = gObj.getRowsObject();
-         for (var i = 0; i < rows.length; i++) {
-             var row = rows[i];
-             if (row.isExpand && !row.isDetailRow) {
-                var index = gObj.allowPaging ? row.index + (currentPage * gObj.pageSettings.pageSize) - gObj.pageSettings.pageSize : row.index;
-                obj[index] = {};
-                obj[index].isExpand = true;
-                obj[index].gridModel = ej.grids.getPrintGridModel(row.childGrid, hierarchyPrintMode);
-             }
-         }
-         return obj;
-     }
- </script>
+    function getExpandedState(gridObject, hierarchyPrintMode, currentPage) {
+        var expandedRowState = {};
+        var gridRows = gridObject.getRowsObject();
+        for (var rowIndex = 0; rowIndex < gridRows.length; rowIndex++) {
+            var gridRow = gridRows[rowIndex];
+            if (gridRow.isExpand && !gridRow.isDetailRow) {
+                var expandedIndex = gridObject.allowPaging
+                    ? gridRow.index + (currentPage * gridObject.pageSettings.pageSize) - gridObject.pageSettings.pageSize
+                    : gridRow.index;
+                expandedRowState[expandedIndex] = {};
+                expandedRowState[expandedIndex].isExpand = true;
+                expandedRowState[expandedIndex].gridModel = ej.grids.getPrintGridModel(gridRow.childGrid, hierarchyPrintMode);
+            }
+        }
+        return expandedRowState;
+    }
+</script>

@@ -8,12 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Enable disable grid and its actions in ASP.Net MVC Grid component
 
-# Enable/Disable Grid and its actions
-
-You can enable/disable the Grid and its actions by applying/removing corresponding CSS styles.
-
-To enable/disable the grid and its actions, follow the given steps:
+You can enable or disable the Syncfusion ASP.Net MVC Grid and its actions by applying or removing specific CSS styles. This functionality is particularly useful in scenarios where interactions need to be restricted. Follow the steps below to implement this feature.
 
 **Step 1**: Create CSS class with custom style to override the default style of Grid.
 
@@ -28,19 +25,19 @@ To enable/disable the grid and its actions, follow the given steps:
 
 ```
 
-**Step 2**: Add/Remove the custom CSS class to the Grid in the click event handler of Button.
+**Step 2**: Add/Remove the CSS class to the Grid in the click event handler of Button.
 
 ```typescript
     <script>
         document.getElementById('element').onclick = function () {
-            var gridInst = document.getElementById("Grid").ej2_instances[0];
-            if (gridInst.element.classList.contains('disablegrid')) {
-                gridInst.element.classList.remove('disablegrid');
-                document.getElementById("GridParent").classList.remove('wrapper');
+            var grid = document.getElementById("grid").ej2_instances[0];
+            if (grid.element.classList.contains('disablegrid')) {
+                grid.element.classList.remove('disablegrid');
+                document.getElementById("gridParent").classList.remove('wrapper');
             }
             else {
-                gridInst.element.classList.add('disablegrid');
-                document.getElementById("GridParent").classList.add('wrapper');
+                grid.element.classList.add('disablegrid');
+                document.getElementById("gridParent").classList.add('wrapper');
             }
         }
     </script>
@@ -48,19 +45,6 @@ To enable/disable the grid and its actions, follow the given steps:
 ```
 
 In the below demo, the button click will enable/disable the Grid and its actions.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/disablegrid/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Disablegrid.cs" %}
-{% include code-snippet/grid/how-to/disablegrid/disablegrid.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -72,4 +56,4 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% endtabs %}
 {% endif %}
 
-
+![Enable disable grid and its actions](../../images/howto-enable-disable.gif)

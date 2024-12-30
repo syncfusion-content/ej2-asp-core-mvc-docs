@@ -8,14 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Print the expanded state from other pages
 
-By default, the expanded child grids will be printed from the current page alone. You can print the expanded child grids from other pages by using the [`load`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) and [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event.
+By default, when printing, the Syncfusion Grid component only includes the expanded child grids visible on the current page. However, you can enhance the printing functionality to include expanded child grids from other pages. This can be achieved using the  [load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) and [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) events, which help manage the expanded state of rows across different pages.
 
-In the following example, we have printed expanded child grids from other pages.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to print the expanded child grids from other pages:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -25,16 +22,4 @@ In the following example, we have printed expanded child grids from other pages.
 {% include code-snippet/grid/how-to/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/hierarchyprint/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Hierarchyprint.cs" %}
-{% include code-snippet/grid/how-to/hierarchyprint/hierarchyprint.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
