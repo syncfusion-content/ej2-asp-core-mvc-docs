@@ -1,21 +1,23 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowExcelExport().ToolbarClick("toolbarClick").Columns(col =>
+<div style="padding-bottom: 20px; display: flex">
+   <label style="margin-right:5px;font-weight: bold;">Include or exclude hidden columns </label>
+   @Html.EJS().Switch("switch").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().ToolbarClick("toolbarClick").Height("348px").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Visible(false).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
-
 }).AllowPaging().Toolbar(new List<string>() { "ExcelExport" }).Render()
-
 <script>
     function toolbarClick(args) {
-        var gridObj = document.getElementById("Grid").ej2_instances[0];
-        if (args.item.id === 'Grid_excelexport') {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
             var excelExportProperties = {
-                includeHiddenColumn: true
+                includeHiddenColumn: document.getElementById("switch").ej2_instances[0].checked
             };
-            gridObj.excelExport(excelExportProperties);
+            grid.excelExport(excelExportProperties);
         }
     }
 </script>

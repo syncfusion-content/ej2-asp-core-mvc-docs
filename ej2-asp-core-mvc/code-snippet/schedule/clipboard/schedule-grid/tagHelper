@@ -2,11 +2,13 @@
 @using Syncfusion.EJ2.Schedule
 
 <div class="schedule-container">
-<ejs-schedule id="schedule" height="650px" selectedDate="new DateTime(2024, 2, 15)" allowDragAndDrop="false" allowResizing="false" allowClipboard="true" showQuickInfo="false" beforePaste="onBeforePaste">
+<ejs-schedule id="schedule" height="650px" selectedDate="new DateTime(2024, 2, 15)" allowDragAndDrop="false"
+    allowResizing="false" allowClipboard="true" showQuickInfo="false" beforePaste="onBeforePaste">
     <e-schedule-eventsettings dataSource="@ViewBag.appointments"></e-schedule-eventsettings>
 </ejs-schedule>
 
-<ejs-grid id="Grid" width="550px" height="400px" dataSource="@ViewBag.gridData" cssClass="drag-grid" allowSelection="true">
+<ejs-grid id="Grid" width="40%" height="400px" dataSource="@ViewBag.gridData" cssClass="drag-grid"
+     allowSelection="true">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
@@ -17,10 +19,21 @@
 </ejs-grid>
 </div>
 
+
 <style>
     .schedule-container {
         display: flex;
         justify-content: space-between;
+    }
+
+    @@media screen and (max-width: 540px) {
+        .schedule-container {
+            flex-direction: column;
+        }
+
+        .e-grid {
+            width: 100% !important;
+        }
     }
 </style>
 

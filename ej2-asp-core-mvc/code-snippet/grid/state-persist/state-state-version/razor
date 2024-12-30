@@ -1,0 +1,48 @@
+
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("version1").Content("Version 1").CssClass("e-primary").Render()
+    @Html.EJS().Button("version2").Content("Version 2").CssClass("e-primary custom").Render()
+    @Html.EJS().Button("version3").Content("Version 3").CssClass("e-primary custom").Render()
+</div>
+<div id="message" class="message"></div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Ej2StatePersistenceVersion("v.0").EnablePersistence(true).Height("273px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+}).AllowPaging().AllowGrouping().AllowSorting().AllowReordering().AllowFiltering().Render()
+<script>
+    ej.base.enableVersionBasedPersistence(true);
+    document.getElementById('version1').addEventListener('click', function () {
+        clickHandler('v.1');
+    });
+    document.getElementById('version2').addEventListener('click', function () {
+        clickHandler('v.2');
+    });
+    document.getElementById('version3').addEventListener('click', function () {
+        clickHandler('v.3');
+    });
+    function clickHandler(version) {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        grid.ej2StatePersistenceVersion = version;
+        var persistedGridSettings = window.localStorage.getItem('gridOrderDetails' + grid.ej2StatePersistenceVersion);
+        if (persistedGridSettings) {
+            grid.setProperties(JSON.parse(persistedGridSettings));
+            document.getElementById('message').innerText  = 'Grid state restored to ' + version;
+        } else {
+            var gridData = grid.getPersistData();
+            window.localStorage.setItem('gridOrderDetails' + grid.ej2StatePersistenceVersion, gridData);
+        }
+    }
+</script>
+<style>
+    .custom {
+        margin-left: 10px;
+    }
+    .message {
+         text-align: center;
+         color: red;
+         font-size: 16px;
+    }
+</style>
