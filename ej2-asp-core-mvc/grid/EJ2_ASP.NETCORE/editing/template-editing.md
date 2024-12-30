@@ -149,7 +149,7 @@ To disable default form validation rules in the Grid, follow these steps:
 
 The Syncfusion Grid provides the ability to add validation rules for fields that are not present in the column model. This feature is particularly useful to prevent erroneous or inconsistent data from being submitted, ultimately enhancing the reliability of your application's data.
 
-To accomplish this, you can utilize the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event along with the [addRules](https://ej2.syncfusion.com/documentation/api/form-validator/#addrules) method.
+To accomplish this, you can utilize the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event along with the `addRules` method.
 
 Here's how you can use the `addRules` method to add validation rules for custom editors in the `actionComplete` event: 
  

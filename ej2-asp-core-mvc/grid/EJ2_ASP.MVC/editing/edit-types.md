@@ -128,7 +128,7 @@ In Syncfusion Grid component, you have an option to provide a custom data source
 
 To achieve this, you can utilize the `Columns->Edit->Params` property. This property allows you to define the edit params for the column within the grid.
 
-When setting a new data source using the edit params, you need to specify a new `Query`  property for the DropDownList. The `Query` property allows you to define custom queries for data retrieval and filtering.
+When setting a new data source using the edit params, you need to specify a new [Query](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Query)  property for the DropDownList. The `Query` property allows you to define custom queries for data retrieval and filtering.
 
 In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column :
 

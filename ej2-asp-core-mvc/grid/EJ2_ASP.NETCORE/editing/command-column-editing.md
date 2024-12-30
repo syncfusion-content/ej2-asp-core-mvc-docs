@@ -23,7 +23,7 @@ The available built-in command buttons are:
 | Save | Update the edited row.|
 | Cancel | Cancel the edited state. |
 
-Here's an example that demonstrates how to add CRUD action buttons in a column using the `command` column property : 
+Here's an example that demonstrates how to add CRUD action buttons in a column using the `commands` column property : 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
