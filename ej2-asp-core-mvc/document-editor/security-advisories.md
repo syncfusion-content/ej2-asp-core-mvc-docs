@@ -38,7 +38,16 @@ This release resolves critical and moderate security vulnerabilities affecting t
 
 ## Common Security Updates
 
-For details on common security updates related to Syncfusion<sup style="font-size:70%">&reg;</sup> products, please refer to [this link](https://ej2.syncfusion.com/documentation/security-advisories). This resource provides information on the latest advisories and best practices to help ensure the security and integrity of your applications.
+{% if page.publishingplatform == "aspnet-core" %}
+
+For details on common security updates related to Syncfusion<sup style="font-size:70%">&reg;</sup> products, please refer to [this link](https://ej2.syncfusion.com/aspnetcore/documentation/common/content-security-policy). This resource provides information on the latest advisories and best practices to help ensure the security and integrity of your applications.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+For details on common security updates related to Syncfusion<sup style="font-size:70%">&reg;</sup> products, please refer to [this link](https://ej2.syncfusion.com/aspnetmvc/documentation/common/content-security-policy). This resource provides information on the latest advisories and best practices to help ensure the security and integrity of your applications. 
+
+{% endif %}
+
 
 ## Security Issue
 
