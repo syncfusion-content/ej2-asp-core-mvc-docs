@@ -614,7 +614,6 @@ Diagram allows to refresh the layout at runtime. To refresh the layout, refer to
 
 ### setNodeTemplate
 
-
 The `setNodeTemplate` function allows you to customize the visual representation and behavior of nodes within your diagram. It is invoked during the initialization of each node, enabling you to define the node’s style, properties, and bind custom JSON data to it.
 
 Typically, the `setNodeTemplate` function accepts a container element (e.g., StackPanel, Grid) to organize the visual components within the node. In the following example, a `StackPanel` is used to organize the node's content, with an `ImageElement` displaying an image and a TextBlock showing text bound to the "Name" property of the node’s data. The StackPanel can contain a variety of elements, including `PathElement`,`NativeElement`,`DiagramElement` and `HtmlElement`.
