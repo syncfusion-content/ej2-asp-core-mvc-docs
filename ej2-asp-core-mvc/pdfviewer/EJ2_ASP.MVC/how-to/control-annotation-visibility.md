@@ -62,7 +62,6 @@ Create an ASP.NET MVC component and update the template to include a button that
                 const reader = new FileReader();
                 reader.onload = function () {
                     const base64data = reader.result;
-                    console.log("Original Base64:", base64data);
                     const base64EncodedData = base64data.split('base64,')[1];
                     const document1 = new ej.pdf.PdfDocument(base64EncodedData);
                     for (let i = 0; i < document1.pageCount; i++) {
@@ -76,7 +75,6 @@ Create an ASP.NET MVC component and update the template to include a button that
                         const internalReader = new FileReader();
                         internalReader.onload = function () {
                             const modifiedBase64 = internalReader.result;
-                            console.log("Modified Base64:", modifiedBase64);
                             const downloadLink = document.createElement('a');
                             downloadLink.href = modifiedBase64;
                             downloadLink.download = 'modified.pdf';

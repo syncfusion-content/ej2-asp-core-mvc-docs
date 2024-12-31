@@ -65,7 +65,6 @@ Create an ASP.NET Core component and update the template to include a button tha
 	    const reader = new FileReader();
 	    reader.onload = function () {
 	      const base64data = reader.result;
-	      console.log("Original Base64:", base64data);
 
 	      // Extract the base64 encoded data
 	      const base64EncodedData = base64data.split('base64,')[1];
@@ -88,7 +87,6 @@ Create an ASP.NET Core component and update the template to include a button tha
 	        const internalReader = new FileReader();
 	        internalReader.onload = function () {
 	          const modifiedBase64 = internalReader.result;
-	          console.log("Modified Base64:", modifiedBase64);
 
 	          // Create a download link for the modified PDF
 	          const downloadLink = document.createElement('a');
