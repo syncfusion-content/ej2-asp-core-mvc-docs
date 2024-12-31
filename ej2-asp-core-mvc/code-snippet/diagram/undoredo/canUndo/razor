@@ -1,0 +1,14 @@
+<div class="col-lg-12 control-section" >
+    <div class="content-wrapper">
+        @(Html.EJS().Diagram("diagram")
+            .Width("100%")
+            .Height("350px")
+            .Nodes(ViewBag.nodes)
+            .HistoryChange("onHistoryChange")
+            .Render())
+    </div>
+    <div style="margin-top: 10px;">
+        <button id="undo" disabled="true" class="e-control e-btn e-primary">Undo</button>
+        <button id="redo" disabled="true" class="e-control e-btn e-primary">Redo</button>
+    </div>
+</div>
