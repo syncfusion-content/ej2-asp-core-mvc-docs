@@ -1,20 +1,19 @@
 public ActionResult Index()
 {
-    var Order = OrdersDetails.GetAllRecords();
-    ViewBag.DataSource = Order;
+    ViewBag.dataSource = OrdersDetails.GetAllRecords();
     return View();
 }
 public ActionResult ExcelExport(string gridModel)
 {
-    GridExcelExport exp = new GridExcelExport();
-    Grid gridProperty = ConvertGridObject(gridModel);
-    return exp.ExcelExport<OrdersDetails>(gridProperty, OrdersDetails.GetAllRecords());
+    GridExcelExport excelExporter = new GridExcelExport();
+    Grid gridProperties = ConvertGridObject(gridModel);
+    return excelExporter.ExcelExport<OrdersDetails>(gridProperties, OrdersDetails.GetAllRecords());
 }
 private Grid ConvertGridObject(string gridProperty)
 {
     Grid GridModel = (Grid)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(Grid));
-    GridColumnModel cols = (GridColumnModel)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(GridColumnModel));
-    GridModel.Columns = cols.columns;
+    GridColumnModel gridColumns = (GridColumnModel)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(GridColumnModel));
+    GridModel.Columns = gridColumns.columns;
     return GridModel;
 }
 
