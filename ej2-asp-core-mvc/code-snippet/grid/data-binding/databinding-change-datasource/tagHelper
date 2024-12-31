@@ -1,0 +1,27 @@
+@using Newtonsoft.Json
+<div style="padding: 10px 0px 20px 0px">
+    <ejs-button id="sample" cssClass="e-primary" content="Change datasource and column"></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" allowPaging="true">   
+    <e-grid-pagesettings pageCount=3 pageSize=5 >   
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    var count = 0;
+    var newColumn = [
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 125 },
+        { field: 'CustomerName', headerText: 'Customer Name', width: 125 },
+        { field: 'OrderDate', headerText: 'Order Date', width: 130, type: 'date', format:'yMd', textAlign: 'Right' },
+        { field: 'Freight', headerText: 'Freight', width: 120, textAlign: 'Right' },
+    ];
+    document.getElementById('sample').addEventListener('click', function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        count = count + 100;
+        grid.changeDataSource(@Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource)), newColumn);
+    });
+</script>
