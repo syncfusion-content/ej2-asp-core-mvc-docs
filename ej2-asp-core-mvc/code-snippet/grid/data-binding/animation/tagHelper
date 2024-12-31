@@ -1,12 +1,31 @@
-<ejs-grid id="Grid"  allowPaging="true" allowSorting="true"  allowFiltering="true">
+
+@{
+    var dropDownData = new[] {
+        new { value = "Shimmer", text = "Shimmer" },
+        new { value = "Spinner", text = "Spinner" },
+    };
+}
+<div style="padding-bottom: 20px; display: flex">
+    <label style="padding: 5px 10px 0 0;font-weight: bold"> Change the loading indicator type:</label>
+    <span style="height:fit-content">
+        <ejs-dropdownlist id="dropDown" dataSource="dropDownData" index="0" width="150px" change="valueChange">
+        </ejs-dropdownlist>
+    </span>
+</div>
+<ejs-grid id="grid"  allowPaging="true" height="348px" allowSorting="true"  allowFiltering="true">
     <e-grid-loadingIndicator indicatorType="Shimmer"></e-grid-loadingIndicator>
-    <e-grid-pageSettings pageCount="3"></e-grid-pageSettings>                    
-    <e-data-manager url="https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/" adaptor="ODataAdaptor"></e-data-manager>
+    <e-data-manager url="https://services.syncfusion.com/aspnet/production/api/UrlDataSource" adaptor="UrlAdaptor"></e-data-manager>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" width="130"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
-        <e-grid-column field="EmployeeID"  headerText="Employee ID" textAlign="Right" width="115"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="150"></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" textAlign="Center"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Employees" headerText="Employees" width="150"></e-grid-column>
+        <e-grid-column field="Designation"  headerText="Designation" width="115"></e-grid-column>
+        <e-grid-column field="CurrentSalary" headerText="Current Salary" width="150" textAlign="Right"></e-grid-column>
     </e-grid-columns>
-</ejs-grid>    
+</ejs-grid>
+<script>
+    function valueChange(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.loadingIndicator.indicatorType = document.getElementById("dropDown").ej2_instances[0].value;
+        grid.refreshColumns();
+    }
+</script>

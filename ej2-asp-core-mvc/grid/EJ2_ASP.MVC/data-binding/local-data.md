@@ -8,206 +8,120 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Local data in ASP.NET MVC Grid component
 
-# Local Data
+The Syncfusion Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows you to display and manipulate data within the grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
 
-## List binding
+To achieve this, you can assign a JavaScript object array to the [DataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. Additionally, you have an option to provide the local data source using an instance of the **DataManager**.
 
-To bind list binding to the grid, you can assign a JavaScript object array to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. The list data source can also be provided as an instance of the DataManager.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to utilize the local data binding feature in the ASP.NET MVC Grid component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/localdata/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Local.cs" %}
-{% include code-snippet/grid/data-binding/localdata/local.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/data-binding/localdata/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Local.cs" %}
 {% include code-snippet/grid/data-binding/localdata/local.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Local data](../../images/data-binding/local-data.png)
 
+## Data binding with SignalR 
 
-N> By default, DataManager uses **JsonAdaptor** for list data-binding.
+The syncfusion Grid provides support for real-time data binding using SignalR, allowing you to update the grid automatically as data changes on the server-side. This feature is particularly useful for applications requiring live updates and synchronization across multiple clients.
 
-## ExpandoObject binding
+To achieve real-time data binding with SignalR in your Syncfusion Vue Grid, follow the steps below:
 
-The grid is a generic component that is firmly bound to a model type. There are cases when the model type is unknown during the compile type. In such cases, bind data to the grid as a list of the ExpandoObject.
+## Binding data from excel file
 
-The ExpandoObject can be bound to the data grid by assigning it to the `DataSource` property. The grid can also perform all kinds of supported data operations and editing in ExpandoObject.
+The Syncfusion Grid component allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](https://ej2.syncfusion.com/vue/documentation/uploader/getting-started) component [change](https://ej2.syncfusion.com/vue/documentation/api/uploader#change) event.
 
-{% if page.publishingplatform == "aspnet-core" %}
+To import excel data in to grid, you can follow these steps:
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/expandoObject-Binding/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="expandoObject.cs" %}
-{% include code-snippet/grid/data-binding/expandoObject-Binding/expandoObject.cs %}
-{% endhighlight %}
-{% endtabs %}
+1. Import excel file using Uploader component. 
+2. Parse the excel file data using **XLSX** library.
+3. Bind the JSON to the grid component. 
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/expandoObject-Binding/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="expandoObject.cs" %}
-{% include code-snippet/grid/data-binding/expandoObject-Binding/expandoObject.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## ExpandoObject with complex column binding
-
-You can achieve ExpandoObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to import Excel data into the grid by utilizing the [Uploader](https://ej2.syncfusion.com/vue/documentation/uploader/getting-started) component's `change` event along with the **XLSX** library:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding/tagHelper %}
+{% include code-snippet/grid/data-binding/localdata/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="expandoObject.cs" %}
-{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding/expandoObject.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="expandoObject.cs" %}
-{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding/expandoObject.cs %}
+{% highlight c# tabtitle="Local.cs" %}
+{% include code-snippet/grid/data-binding/localdata/local.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-N> Perform data and CRUD operations for complex ExpandoObject binding fields as well.
+![Local data](../../images/data-binding/local-data.png)
 
-The following image represents ExpandoObject complex data binding.
-![Grid with ExpandoObject Binding](images/ExpandoObjectDemo.gif)
 
-## DynamicObject binding
+## Managing spinner visibility during data loading
 
-The grid is a generic component that is firmly bound to a model type. There are cases when the model type is unknown during the compile type. In such cases, bind data to the grid as a list of DynamicObject.
+Showing a spinner during data loading in the Syncfusion vue Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
 
-A DynamicObject can be bound to a data grid by assigning it to the `DataSource` property. The grid can also perform all kinds of supported data operations and editing in DynamicObject.
+To show or hide a spinner during data loading in the grid, you can utilize the [showSpinner](https://ej2.syncfusion.com/vue/documentation/api/grid/#showspinner) and [hideSpinner](https://ej2.syncfusion.com/vue/documentation/api/grid/#hidespinner) methods provided by the Grid component
 
-N> You must override the [GetDynamicMemberNames](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of the DynamicObject class and return the property names to perform data operation and editing while using DynamicObject.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to show and hide the spinner during data loading using external buttons in a grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/dynamicObject-Binding/tagHelper %}
+{% include code-snippet/grid/data-binding/localdata/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="dynamicObject.cs" %}
-{% include code-snippet/grid/data-binding/dynamicObject-Binding/dynamicObject.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/dynamicObject-Binding/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="dynamicObject.cs" %}
-{% include code-snippet/grid/data-binding/dynamicObject-Binding/dynamicObject.cs %}
+{% highlight c# tabtitle="Local.cs" %}
+{% include code-snippet/grid/data-binding/localdata/local.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-## DynamicObject complex binding
+![Local data](../../images/data-binding/local-data.png)
 
-You can achieve DynamicObject complex data binding in the data grid by using the dot(.) operator in the `column.field`. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
+## Immutable mode  
 
-{% if page.publishingplatform == "aspnet-core" %}
+Immutable mode in the Syncfusion Grid is designed to optimize re-rendering performance by utilizing the object reference and [deep compare](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
+
+To enable this feature, you need to set the [enableImmutableMode](https://ej2.syncfusion.com/vue/documentation/api/grid/#enableImmutableMode) property as **true**.
+
+If immutable mode is enabled, when the datasource changes, only newly added rows are regenerated or reused. Consequently, the grid's [queryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid/#querycellinfo) and [rowDataBound](https://ej2.syncfusion.com/vue/documentation/api/grid/#rowdatabound) events trigger only for newly generated rows, not for existing rows. 
+
+If immutable mode is not enabled, both newly added rows and existing rows are regenerated or reused when the datasource changes. As a result, the `rowDataBound` and `queryCellInfo` events trigger for both newly added and existing rows. 
+
+> This feature uses the primary key value for data comparison. So, you need to provide the [isPrimaryKey](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#isprimarykey) column.
+
+The following example demonstrates how to enable immutable mode in an vue component. When add, delete, or update actions are performed, existing rows are not regenerated or reused, ensuring efficient rendering of only the modified or newly added rows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding/tagHelper %}
+{% include code-snippet/grid/data-binding/localdata/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="dynamicObject.cs" %}
-{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding/dynamicObject.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="dynamicObject.cs" %}
-{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding/dynamicObject.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-N> Perform data and CRUD operations for complex DynamicObject binding fields as well.
-
-The following image represents DynamicObject complex data binding.
-![Grid with DynamicObject Binding](images/DynamicObjectDemo.gif)
-
-## Refresh the data source
-
-You can add/delete the data source records through an external button. To reflect the data source changes in the grid, invoke the [`refresh`](https://ej2.syncfusion.com/documentation/api/grid/#refresh) method.
-
-To refresh the data source:
-
-**Step 1**: Add/delete the data source record by using the following code.
-
-```typescript
-    grid.dataSource.unshift(data); // add a new record.
-
-    grid.dataSource.splice(selectedRow, 1); // delete a record.
-
-```
-
-**Step 2**: Refresh the grid after the data source change by using the `refresh` method.
-
-```typescript
-    grid.refresh(); // refresh the Grid.
-
-```
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/refresh-datasource/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Refresh-datasource.cs" %}
-{% include code-snippet/grid/how-to/refresh-datasource/refresh-datasource.cs %}
+{% highlight c# tabtitle="Local.cs" %}
+{% include code-snippet/grid/data-binding/localdata/local.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Local data](../../images/data-binding/local-data.png)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/refresh-datasource/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Refresh-datasource.cs" %}
-{% include code-snippet/grid/how-to/refresh-datasource/refresh-datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+
+### Limitations
+
+The following features are not supported in the immutable mode:
+
+* Frozen rows and columns
+* Grouping
+* Row Template 
+* Detail Template
+* Hierarchy Grid
+* Scrolling 
+* Virtual scroll
+* Infinite scroll
+* Column reorder
+* Rows,column spanning
+* PDF export ,Excel export,Print
+* Column Resize
+* Drag and drop
+* Column template
+* Column chooser
+* Clipboard
+* AutoFit
+* Filtering
 

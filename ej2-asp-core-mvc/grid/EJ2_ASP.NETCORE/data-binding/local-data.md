@@ -8,14 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Local data in Vue Grid component
 
-# Local Data
+The Syncfusion Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows you to display and manipulate data within the grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
 
-## List binding
+To achieve this, you can assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/#datasource) property. Additionally, you have an option to provide the local data source using an instance of the **DataManager**.
 
-To bind list binding to the grid, you can assign a IEnumerable object to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. The list data source can also be provided as an instance of the `DataManager`.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to utilize the local data binding feature in the Vue Grid component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -26,21 +25,9 @@ To bind list binding to the grid, you can assign a IEnumerable object to the [`d
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Local data](../../images/data-binding/local-data.png)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/localdata/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Local.cs" %}
-{% include code-snippet/grid/data-binding/localdata/local.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-N> By default, `DataManager` uses `JsonAdaptor` for list data-binding.
+N> * By default, `DataManager` uses `JsonAdaptor` for list data-binding.
 
 ## ExpandoObject binding
 
