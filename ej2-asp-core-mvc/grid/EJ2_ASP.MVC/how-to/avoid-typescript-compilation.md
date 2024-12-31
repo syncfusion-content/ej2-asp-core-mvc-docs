@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Avoid Typescript Compilation in ##Platform_Name## Grid Component
+title: Avoid TypeScript Compilation in the Syncfusion Grid Component for ##Platform_Name##
 description: Learn here all about Avoid Typescript Compilation in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Avoid Typescript Compilation
