@@ -111,6 +111,33 @@ diagram.historyList.canLog = function(entry) {
 }
 ```
 
+## canUndo and canRedo 
+
+The [`canUndo`](https://helpej2.syncfusion.com/documentation/api/diagram/history/#canundo) property returns true if there are actions in the undo history stack; otherwise, it returns false. This property helps identify whether any actions are present in the undo stack.The [`canRedo`](https://helpej2.syncfusion.com/documentation/api/diagram/history/#canredo) property returns true if there are actions in the redo history stack; otherwise, it returns false. This property helps identify whether any actions are present in the redo stack.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/undoRedo/canUndo/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="canUndo.cs" %}
+{% include code-snippet/diagram/undoRedo/canUndo/canUndo.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/undoRedo/canUndo/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="canUndo.cs" %}
+{% include code-snippet/diagram/undoRedo/canUndo/canUndo.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Track undo/redo actions
 
 The historyList undoStack property is used to get the collection of undo actions which should be performed in the diagram. The undoStack/redoStack is the read-only property.

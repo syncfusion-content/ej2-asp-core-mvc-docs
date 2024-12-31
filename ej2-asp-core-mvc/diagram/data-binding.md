@@ -100,7 +100,7 @@ This feature allows to read the data source and perform add or edit or delete th
 
 * This feature allows to define the nodes and connectors collection in the data source and connectionDataSource respectively.
 
-* You can set the data collection in the model’s dataSourceSettings [`dataManager`](https://ej2.syncfusion.com/documentation/api/diagram/connectionDataSourceModel/#datamanager) property. The nodes will be generated based on the data specified in the data source.
+* You can set the data collection in the model’s dataSourceSettings [`dataSource`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel#datasource) property. The nodes will be generated based on the data specified in the data source.
 
 * You can set the connector collection in the model’s dataSourceSettings [`connectionDataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnectionDataSource.html) property.
 
@@ -121,6 +121,26 @@ This feature allows to read the data source and perform add or edit or delete th
 * The dataSourceSettings crudAction’s [`customFields`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/#crudaction) property is used to maintain the additional information for nodes.
 
 * Similarly, connectionDataSource’s crudAction’s [`customFields`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/#crudaction) is used to maintain the additional information for connectors.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/data-binding/connectionDataSource/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="connectionDataSource.cs" %}
+{% include code-snippet/diagram/data-binding/connectionDataSource/connectionDataSource.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="connectionDataSource.cs" %}
+{% include code-snippet/diagram/data-binding/connectionDataSource/connectionDataSource.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## How to perform Editing at runtime
 
