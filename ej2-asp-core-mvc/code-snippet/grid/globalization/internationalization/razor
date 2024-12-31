@@ -5,7 +5,6 @@
         col.Field("Freight").HeaderText("Freight").Format("C2").Width("90").Add();
         col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
     }).Height("315").Render();
-    </div>
 <script>
     loadLocaleFile();
     function loadLocaleFile() {

@@ -334,7 +334,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Globalization-RTL](images/globalization/locialization-rtl.gif)
+![Globalization-RTL](images/globalization/localization-rtl.gif)
 
 ## See Also
 
