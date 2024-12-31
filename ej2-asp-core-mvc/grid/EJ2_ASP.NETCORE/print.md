@@ -150,15 +150,9 @@ Here's a code example that demonstrates how to show a hidden column (CustomerID)
 
 ![Show or hide columns while printing](images/print/print-hide.png)
 
-## Limitations of printing large data
-
-Printing a large volume of data all at once in the grid can have certain limitations due to potential browser performance issues. Rendering numerous DOM elements on a single page can lead to browser slowdowns or even hang the browser. The grid offers a solution to manage extensive datasets through virtualization. However, it's important to note that virtualization for both rows and columns is not feasible during the printing process.
-
-If printing all the data remains a requirement, an alternative approach is recommended. Exporting the grid data to formats like [Excel](https://ej2.syncfusion.com/aspnetcore/documentation/grid/excel-export/excel-exporting) or [CSV](https://ej2.syncfusion.com/aspnetcore/documentation/grid/excel-export/excel-exporting) or [Pdf](https://ej2.syncfusion.com/aspnetcore/documentation/grid/pdf-export/pdf-export) is advised. This exported data can then be printed using non-web-based applications, mitigating the potential performance challenges associated with printing large datasets directly from the browser.
-
 ## Add a title to the header while printing
 
-You can add a title to the header when printing the Syncfusion Grid by utilizing the [beforePrint](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Grids.Grid~beforePrint.html) event. This event allows you to customize the print layout, including the addition of a title element, ensuring that the printed document is informative and visually appealing.
+You can add a title to the header when printing the Syncfusion Grid by utilizing the [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event. This event allows you to customize the print layout, including the addition of a title element, ensuring that the printed document is informative and visually appealing.
 
 Here’s an example of how to add a title to your Grid when using the print function:
 
@@ -185,6 +179,14 @@ The following example demonstrates how to print the expanded child grids from ot
 {% include code-snippet/grid/how-to/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Retain grid styles while printing](images/print/print-style.png)
+
+## Limitations of printing large data
+
+Printing a large volume of data all at once in the grid can have certain limitations due to potential browser performance issues. Rendering numerous DOM elements on a single page can lead to browser slowdowns or even hang the browser. The grid offers a solution to manage extensive datasets through virtualization. However, it's important to note that virtualization for both rows and columns is not feasible during the printing process.
+
+If printing all the data remains a requirement, an alternative approach is recommended. Exporting the grid data to formats like [Excel](https://ej2.syncfusion.com/aspnetcore/documentation/grid/excel-export/excel-exporting) or [CSV](https://ej2.syncfusion.com/aspnetcore/documentation/grid/excel-export/excel-exporting) or [Pdf](https://ej2.syncfusion.com/aspnetcore/documentation/grid/pdf-export/pdf-export) is advised. This exported data can then be printed using non-web-based applications, mitigating the potential performance challenges associated with printing large datasets directly from the browser.
 
 ## Retain grid styles while printing
 

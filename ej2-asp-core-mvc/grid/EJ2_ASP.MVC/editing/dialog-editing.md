@@ -20,8 +20,8 @@ Here's an example how to enable dialog editing in the ASP.NET MVC grid component
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/dialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Edit.cs" %}
-{% include code-snippet/grid/edit/dialog/edit.cs %}
+{% highlight c# tabtitle="Dialog.cs" %}
+{% include code-snippet/grid/edit/dialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,8 +41,8 @@ The following example that demonstrates how to customize the edit dialog using t
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/customizedialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Edit.cs" %}
-{% include code-snippet/grid/edit/customizedialog/edit.cs %}
+{% highlight c# tabtitle="Dialog.cs" %}
+{% include code-snippet/grid/edit/customizedialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,8 +62,8 @@ In the following example, the **CustomerID** column is rendered as a hidden colu
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Edit.cs" %}
-{% include code-snippet/grid/edit/show-hide-edit-dialog/edit.cs %}
+{% highlight c# tabtitle="Dialog.cs" %}
+{% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,8 +81,8 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/wizardediting/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Edit.cs" %}
-{% include code-snippet/grid/edit/wizardediting/edit.cs %}
+{% highlight c# tabtitle="Dialog.cs" %}
+{% include code-snippet/grid/edit/wizardediting/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -50,10 +50,9 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disablegrid/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Disablegrid.cs" %}
+{% highlight c# tabtitle="disablegrid.cs" %}
 {% include code-snippet/grid/how-to/disablegrid/disablegrid.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Enable disable grid and its actions](../../images/howto-enable-disable.gif)
