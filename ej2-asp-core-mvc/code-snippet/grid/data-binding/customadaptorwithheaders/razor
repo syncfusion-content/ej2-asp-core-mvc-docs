@@ -10,7 +10,7 @@
 
 <script>
     function created(args) {
-        class SerialNoAdaptor extends ej.data.ODataAdaptor {
+        class SerialNoAdaptor extends ej.data.WebApiAdaptor {
             processResponse() {
                 var i = 0;
                 // calling base class processResponse function
@@ -27,7 +27,7 @@
         }
         var grid = document.querySelector('#CustomAdaptor').ej2_instances[0];
         grid.dataSource = new ej.data.DataManager({
-            url: "https://ej2services.syncfusion.com/production/web-services/api/Orders",
+            url: "https://services.syncfusion.com/aspnet/production/api/Orders",
             adaptor: new SerialNoAdaptor()
         });
     }
