@@ -373,6 +373,40 @@ You can create your own adaptor by extending the built-in adaptors. The followin
 {% endtabs %}
 {% endif %}
 
+## Set Custom Headers Using Custom Adaptor
+
+Custom headers allow you to send extra information along with your HTTP requests. This information can include authentication tokens, API keys, or any other data required by the server to process the request correctly. By adding custom headers, you can enhance the security and functionality of your application's data communication process.
+
+This section explains how to integrate custom headers into Syncfusion Grid using the `beforeSend` method of the `ODataAdaptor`.
+
+Below is an example of how to set custom headers dynamically by modifying the `beforeSend` method in the `ODataAdaptor`:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/customadaptorwithheaders/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Customsadaptor.cs" %}
+{% include code-snippet/grid/data-binding/customadaptorwithheaders/customsadaptor.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Customsadaptor.cs" %}
+{% include code-snippet/grid/data-binding/customadaptorwithheaders/customsadaptor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/customadaptorwithheaders/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Customsadaptor.cs" %}
+{% include code-snippet/grid/data-binding/customadaptorwithheaders/customsadaptor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the **Offline** property of DataManager.

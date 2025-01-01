@@ -1,0 +1,34 @@
+<ejs-grid id="CustomAdaptor" created="created">
+    <e-grid-columns>
+        <e-grid-column field="Sno" headerText="SNO" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function created(args) {
+        class SerialNoAdaptor extends ej.data.WebApiAdaptor {
+            processResponse() {
+                var i = 0;
+                // calling base class processResponse function
+                var original = super.processResponse.apply(this, arguments);
+                // adding serial number
+                original.result.forEach(function (item) { item['Sno'] = ++i });
+                return { result: original.result, count: original.count };
+            }
+            beforeSend(dm, request) {
+                request.headers.set('Authorization', 'Bearer abc');
+                // additional headers sent here
+                super.beforeSend(dm, request);
+            }
+        }
+        var grid = document.querySelector('#CustomAdaptor').ej2_instances[0];
+        grid.dataSource = new ej.data.DataManager({
+            url: "https://services.syncfusion.com/aspnet/production/api/Orders",
+            adaptor: new SerialNoAdaptor()
+        });
+    }
+</script>
