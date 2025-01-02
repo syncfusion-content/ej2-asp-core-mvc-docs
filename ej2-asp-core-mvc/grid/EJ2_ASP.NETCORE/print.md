@@ -152,7 +152,7 @@ Here's a code example that demonstrates how to show a hidden column (CustomerID)
 
 ## Add a title to the header while printing
 
-You can add a title to the header when printing the Syncfusion Grid by utilizing the [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event. This event allows you to customize the print layout, including the addition of a title element, ensuring that the printed document is informative and visually appealing.
+You can add a title to the header when printing the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid by utilizing the [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event. This event allows you to customize the print layout, including the addition of a title element, ensuring that the printed document is informative and visually appealing.
 
 Here’s an example of how to add a title to your Grid when using the print function:
 
@@ -167,7 +167,7 @@ Here’s an example of how to add a title to your Grid when using the print func
 
 ## Print the expanded state from other pages
 
-By default, when printing, the Syncfusion Grid component only includes the expanded child grids visible on the current page. However, you can enhance the printing functionality to include expanded child grids from other pages. This can be achieved using the  [load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) and [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) events, which help manage the expanded state of rows across different pages.
+By default, when printing, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component only includes the expanded child grids visible on the current page. However, you can enhance the printing functionality to include expanded child grids from other pages. This can be achieved using the  [load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) and [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) events, which help manage the expanded state of rows across different pages.
 
 The following example demonstrates how to print the expanded child grids from other pages:
 
