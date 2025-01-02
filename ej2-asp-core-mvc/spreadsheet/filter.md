@@ -44,7 +44,7 @@ The following code example shows `filter` functionality in the Spreadsheet contr
 {% include code-snippet/spreadsheet/filter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FilterController.cs" %}
-{% include code-snippet/spreadsheet/filter/EJ2_ASP.NETCORE/filterController.cs %}
+{% include code-snippet/spreadsheet/filter/Core/filterController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,7 +55,7 @@ The following code example shows `filter` functionality in the Spreadsheet contr
 {% include code-snippet/spreadsheet/filter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FilterController.cs" %}
-{% include code-snippet/spreadsheet/filter/EJ2_ASP.MVC/filterController.cs %}
+{% include code-snippet/spreadsheet/filter/MVC/filterController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -107,7 +107,7 @@ The following code example shows how to get the filtered rows.
 {% include code-snippet/spreadsheet/filter-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="InsertSheetController.cs" %}
-{% include code-snippet/spreadsheet/filter-cs1/EJ2_ASP.NETCORE/filterController.cs %}
+{% include code-snippet/spreadsheet/filter-cs1/Core/filterController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -118,7 +118,7 @@ The following code example shows how to get the filtered rows.
 {% include code-snippet/spreadsheet/filter-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="InsertSheetController.cs" %}
-{% include code-snippet/spreadsheet/filter-cs1/EJ2_ASP.MVC/filterController.cs %}
+{% include code-snippet/spreadsheet/filter-cs1/MVC/filterController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
