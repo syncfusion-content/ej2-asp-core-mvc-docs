@@ -1,33 +1,40 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource"  toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" allowPaging="true" actionBegin="actionBegin">
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="273px" toolbar="@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" })" actionBegin="actionBegin">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
-    <e-grid-pagesettings pageCount="5 "></e-grid-pagesettings>
-    <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true})" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer Name" visible="false" width="150"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" editType="numericedit" width="150" format="C2"></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150"></e-grid-column>
-    </e-grid-columns>
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" validationRules="@(new { required=true})" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer Name" validationRules="@(new { required=true})" type="string" width="120"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" validationRules="@(new { required=true, min=1, max=1000})" editType="numericedit" width="120"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150" validationRules="@(new { required=true})"></e-grid-column>
+        </e-grid-columns>
 </ejs-grid>
-
 <script>
     function actionBegin(args) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            for (var i = 0; i < this.columns.length; i++) {
-                if (this.columns[i].field == "CustomerID") {
-                    this.columns[i].visible = true;
+        var grid = document.getElementById('grid').ej2_instances[0];
+        if (args.requestType === 'beginEdit' ) {
+            for (var i = 0; i < grid.columns.length; i++) {
+                if (grid.columns[i].field == "CustomerID") {
+                    grid.columns[i].visible = true;
                 }
-                else if (this.columns[i].field == "ShipCountry") {
-                    this.columns[i].visible = false;
+                else if (grid.columns[i].field == "ShipCountry") {
+                    grid.columns[i].visible = false;
                 }
             }
         }
-        if (args.requestType === 'save') {
-            for (var i = 0; i < this.columns.length; i++) {
-                if (this.columns[i].field == "CustomerID") {
-                    this.columns[i].visible = false;
+        else if(args.requestType === 'add')
+        {
+            for (var i = 0; i < grid.columns.length; i++) {
+                if (grid.columns[i].field == "CustomerID") {
+                    grid.columns[i].visible = true;
                 }
-                else if (this.columns[i].field == "ShipCountry") {
-                    this.columns[i].visible = true;
+            }
+        }
+        else if (args.requestType === 'save') {
+            for (var i = 0; i < grid.columns.length; i++) {
+                if (grid.columns[i].field == "CustomerID") {
+                    grid.columns[i].visible = false;
+                }
+                else if (grid.columns[i].field == "ShipCountry") {
+                    grid.columns[i].visible = true;
                 }
             }
         }
