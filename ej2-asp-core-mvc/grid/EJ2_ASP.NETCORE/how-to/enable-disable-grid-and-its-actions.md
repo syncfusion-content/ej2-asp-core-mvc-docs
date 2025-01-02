@@ -55,4 +55,4 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% endhighlight %}
 {% endtabs %}
 
-![Enable disable grid and its actions](../../images/howto-enable-disable.gif)
+![Enable disable grid and its actions](../images/howto-enable-disable.gif)
