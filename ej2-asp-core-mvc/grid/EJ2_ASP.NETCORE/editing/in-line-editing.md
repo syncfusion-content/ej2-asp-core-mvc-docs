@@ -120,10 +120,10 @@ Here's an example of how to set a default value for a column:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/defaultcolumnvalue/tagHelper %}
+{% include code-snippet/grid/edit/inline-defaultcolumnvalue/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="defaultcolumnvalue.cs" %}
-{% include code-snippet/grid/edit/defaultcolumnvalue/defaultcolumnvalue.cs %}
+{% include code-snippet/grid/edit/inline-defaultcolumnvalue/defaultcolumnvalue.cs %}
 {% endhighlight %}
 {% endtabs %}
 
