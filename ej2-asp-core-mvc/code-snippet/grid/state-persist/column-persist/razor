@@ -1,47 +1,55 @@
-@Html.EJS().Button("restore").Content("Restore").IsPrimary(true).Render()
-
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).EnablePersistence(true).Columns(col =>
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("save").Content("Save column settings").CssClass("e-primary").Render()
+    @Html.EJS().Button("restore").Content("Restore column settings").CssClass("e-primary custom").Render()
+</div>
+<div id="message" class="message"></div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).EnablePersistence(false).Height("348px").Columns(col =>
 {
-
-    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("170").HeaderTemplate("#customertemplate").Add();
-    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Template("#template").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-
-}).AllowPaging(true).PageSettings(page => page.PageCount(5)).Render()
-
+col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+col.Field("CustomerID").HeaderText("Customer Name").Width("170").HeaderTemplate("#customertemplate").Add();
+col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Template("#template").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).AllowPaging(true).Render()
 <script>
-document.getElementById('restore').onclick = function () {
-    var savedProperties = JSON.parse(document.getElementById('Grid').ej2_instances[0].getPersistData());
-    var gridColumnsState = Object.assign([], document.getElementById('Grid').ej2_instances[0].getColumns());
-    savedProperties.columns.forEach(function (col) {
-        var headerText = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['headerText'];
-        var colTemplate = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['template'];
-        var headerTemplate = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['headerTemplate'];
-        col.headerText = 'Text Changed';
-        col.template = colTemplate;
-        col.headerTemplate = headerTemplate;
+    document.getElementById('save').addEventListener('click', function () {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        var persistedGridSettings = JSON.parse(grid.getPersistData());
+        var gridColumns = Object.assign([], (grid.getColumns()));
+        persistedGridSettings.columns.forEach(function (persistedColumn) {
+            var column = gridColumns.find(function (col) { return col.field === persistedColumn.field; });
+            if (column) {
+                persistedColumn.headerText = 'Text Changed';
+                persistedColumn.template = column.template;
+                persistedColumn.headerTemplate = column.headerTemplate;
+            }
+        });
+        window.localStorage.setItem('orderGridSettings', JSON.stringify(persistedGridSettings));
+        grid.setProperties(persistedGridSettings);
+        document.getElementById('message').innerText = 'Saved the headerText, template column, and headerTemplate properties in the persisted settings';
     });
-        console.log(savedProperties);
-        document.getElementById('Grid').ej2_instances[0].setProperties(savedProperties);
-}
+    document.getElementById('restore').addEventListener('click', function () {
+        var savedSettings = window.localStorage.getItem('orderGridSettings');
+        var grid = document.getElementById('grid').ej2_instances[0];
+        if (savedSettings) {
+            grid.setProperties(JSON.parse(savedSettings));
+            document.getElementById('message').innerText = 'Restored the headerText, template column, and headerTemplate';
+        } else {
+            document.getElementById('message').innerText = 'No saved settings found.';
+        }
+    });
 </script>
-
-<script id="template" type="text/x-template">
-    <a rel='nofollow' href="https://en.wikipedia.org/wiki/${Freight}"><span class="e-icons e-Reply"></span></a>
-</script>
-  
 <script id="customertemplate" type="text/x-template">
-    <span class="e-icons e-header" ></span>
-    Customer ID
+    <button>HeaderTemplate</button>
 </script>
-  
 <style>
-    .e-Reply:before {
-        content: '\e815';
+    .message {
+        text-align: center;
+        color: red;
+        font-size: 16px;
+        padding-bottom: 10px;
     }
-  
-    .e-header:before {
-        content: '\ea9a';
+
+    .custom {
+        margin-left: 10px;
     }
 </style>

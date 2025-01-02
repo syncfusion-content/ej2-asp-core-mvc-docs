@@ -44,7 +44,7 @@ The following code example shows `sort` functionality in the Spreadsheet control
 {% include code-snippet/spreadsheet/sort-by-cell/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SortController.cs" %}
-{% include code-snippet/spreadsheet/sort-by-cell/sortController.cs %}
+{% include code-snippet/spreadsheet/sort-by-cell/Core/sortController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,7 +55,7 @@ The following code example shows `sort` functionality in the Spreadsheet control
 {% include code-snippet/spreadsheet/sort-by-cell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SortController.cs" %}
-{% include code-snippet/spreadsheet/sort-by-cell/sortController.cs %}
+{% include code-snippet/spreadsheet/sort-by-cell/MVC/sortController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -132,7 +132,7 @@ N> * All the arguments are optional.
 {% include code-snippet/spreadsheet/passing-sort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PassingSortController.cs" %}
-{% include code-snippet/spreadsheet/passing-sort/passingSortController.cs %}
+{% include code-snippet/spreadsheet/passing-sort/Core/passingSortController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -143,7 +143,7 @@ N> * All the arguments are optional.
 {% include code-snippet/spreadsheet/passing-sort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PassingSortController.cs" %}
-{% include code-snippet/spreadsheet/passing-sort/passingSortController.cs %}
+{% include code-snippet/spreadsheet/passing-sort/MVC/passingSortController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -173,7 +173,7 @@ In the following demo, the `Trustworthiness` column is sorted based on the custo
 {% include code-snippet/spreadsheet/custom-sort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomSortController.cs" %}
-{% include code-snippet/spreadsheet/custom-sort/customSortController.cs %}
+{% include code-snippet/spreadsheet/custom-sort/Core/customSortController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -184,7 +184,7 @@ In the following demo, the `Trustworthiness` column is sorted based on the custo
 {% include code-snippet/spreadsheet/custom-sort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomSortController.cs" %}
-{% include code-snippet/spreadsheet/custom-sort/customSortController.cs %}
+{% include code-snippet/spreadsheet/custom-sort/MVC/customSortController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

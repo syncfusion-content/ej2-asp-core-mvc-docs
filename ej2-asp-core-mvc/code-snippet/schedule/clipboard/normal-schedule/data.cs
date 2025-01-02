@@ -9,11 +9,11 @@ public List<AppointmentData> GetScheduleData()
     List<AppointmentData> appData = new List<AppointmentData>();
     appData.Add(new AppointmentData
     {
-        Id = 2,
-        Subject = "Meeting",
-        StartTime = new DateTime(2024, 2, 15, 10, 0, 0),
-        EndTime = new DateTime(2024, 2, 15, 12, 30, 0),
-        IsAllDay = false,
+        Id = 2,
+        Subject = "Meeting",
+        StartTime = new DateTime(2024, 2, 15, 10, 0, 0),
+        EndTime = new DateTime(2024, 2, 15, 12, 30, 0),
+        IsAllDay = false,
         Status = "Completed",
         Priority = "High"
     });

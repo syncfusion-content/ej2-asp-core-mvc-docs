@@ -241,7 +241,7 @@ By default, tooltip shows information of x and y value in points. You can show m
 
 ## Enable highlight
 
-By setting the `EnableHighlight` property to **true**, the hovered pie slice is highlighted, while the remaining slices are dimmed, enhancing focus and clarity.
+By setting the [`EnableHighlight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_EnableHighlight) property to **true**, the hovered pie slice is highlighted, while the remaining slices are dimmed, enhancing focus and clarity.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

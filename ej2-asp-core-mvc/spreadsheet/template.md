@@ -22,7 +22,7 @@ The following code example describes the above behavior.
 {% include code-snippet/spreadsheet/template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Template.cs" %}
-{% include code-snippet/spreadsheet/template/template.cs %}
+{% include code-snippet/spreadsheet/template/Core/template.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,7 +33,7 @@ The following code example describes the above behavior.
 {% include code-snippet/spreadsheet/template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Template.cs" %}
-{% include code-snippet/spreadsheet/template/template.cs %}
+{% include code-snippet/spreadsheet/template/MVC/template.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
