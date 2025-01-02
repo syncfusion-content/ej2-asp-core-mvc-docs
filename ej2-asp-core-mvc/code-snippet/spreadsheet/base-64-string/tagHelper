@@ -44,7 +44,7 @@
     document.getElementById("exportBtn").addEventListener('click', function () {
         var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
         spreadsheetObj.save({
-            url: 'Home/Save',
+            url: 'https://localhost:{{port number}}/Home/Save',
             fileName: 'Worksheet',
             saveType: 'Xlsx',
         }); // Specifies the save URL, file name, file type need to be saved.
