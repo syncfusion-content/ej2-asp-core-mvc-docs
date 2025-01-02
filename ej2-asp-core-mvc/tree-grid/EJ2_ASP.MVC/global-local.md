@@ -139,7 +139,7 @@ The following example demonstrates the TreeGrid in **Deutsch** culture.
 
 When localizing TreeGrid, it's important to include dependent components like DatePicker, Form Validator, and Grid, as they have their own static text that requires localization. Follow these steps to localize these components:
 
-1. **DatePicker**: Localize placeholders, "today" text, etc., using the [DatePicker localization keys](https://ej2.syncfusion.com/javascript/documentation/datepicker/globalization)
+1. **DatePicker**: Localize placeholders, "today" text, etc., using the [DatePicker localization keys](../datepicker/globalization)
 
     Example localization keys for the date picker:
     ```json
@@ -160,7 +160,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
         "minLength": "Please enter at least {0} characters"
     }
     ```
-3. **Grid Keys**: For additional TreeGrid-related keys, use the [Grid localization keys](https://ej2.syncfusion.com/javascript/documentation/grid/global-local#localization).
+3. **Grid Keys**: For additional TreeGrid-related keys, use the  [Grid localization keys](../grid/global-local).
 
    Example keys for grid keys localization:
     ```json
@@ -175,7 +175,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
 
 
 
-    Below is an example JSON snippet consolidating the localization keys for dependent components used in TreeGrid using  [`load`](../api/base/l10n/#load) function of the `L10n` class and update the `locale` property of treegrid with the culture name used in the `load` function:
+    Below is an example JSON snippet consolidating the localization keys for dependent components used in TreeGrid using  [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n/#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n/) class and update the `locale` property of treegrid with the culture name used in the `load` function:
 
     ```json
     ej.base.L10n.load({
