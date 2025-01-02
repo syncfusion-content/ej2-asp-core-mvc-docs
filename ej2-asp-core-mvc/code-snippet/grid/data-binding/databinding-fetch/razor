@@ -1,0 +1,86 @@
+<div style="padding: 10px 0px 20px 0px">
+   @Html.EJS().Button("sample").CssClass("e-success").Content("Bind data via Fetch").Render()
+</div>
+@Html.EJS().Grid("grid").Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+}).ActionBegin("actionBegin").ActionComplete("actionComplete").Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).AllowPaging().Render()
+<script>
+   let flag = false;
+   document.getElementById('sample').onclick = function () {
+       var grid = document.getElementById("grid").ej2_instances[0];
+       const fetchRequest = new ej.base.Fetch("/Home/Getdata", 'POST'); 
+        fetchRequest.send();
+        fetchRequest.onSuccess = (data) => {
+            grid.dataSource = data;
+        };
+    };
+    function actionComplete(e) {
+        if (e.requestType === 'save' || e.requestType === 'delete') {
+            flag = false;
+        }
+    }
+    function actionBegin(e) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (!flag) {
+            if (e.requestType == 'save' && (e.action == 'add')) {
+                var editedData = e.data;
+                e.cancel = true;
+                var fetchRequest = new ej.base.Fetch({
+                    url: '/Home/Insert',
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    data: JSON.stringify({ value: editedData })
+                });
+                fetchRequest.onSuccess = () => {
+                    flag = true;
+                    grid.endEdit();
+                };
+                fetchRequest.onFailure = () => {
+                    flag = false;
+                };
+                fetchRequest.send();
+            }
+            if (e.requestType == 'save' && (e.action == "edit")) {
+                var editedData = e.data;
+                e.cancel = true;
+                var fetchRequest = new ej.base.Fetch({
+                    url: '/Home/Update',
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    data: JSON.stringify({ value: editedData })
+                }); 
+                fetchRequest.onSuccess = () => {
+                    flag = true;
+                    grid.endEdit();
+                };
+                fetchRequest.onFailure = () => {
+                    flag = false;
+                };
+                fetchRequest.send();
+            }
+            if (e.requestType == 'delete') {
+                var editedData = e.data;
+                e.cancel = true;
+                var fetchRequest = new ej.base.Fetch({
+                    url: '/Home/Delete',
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    data: JSON.stringify({ key: editedData[0][grid.getPrimaryKeyFieldNames()[0]] })
+                });
+                fetchRequest.onSuccess = () => {
+                    flag = true;
+                    grid.deleteRecord();
+                };
+                fetchRequest.onFailure = () => {
+                    flag = false;
+                };
+                fetchRequest.send();
+            }
+        }
+    }
+
+</script>

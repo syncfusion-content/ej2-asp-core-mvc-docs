@@ -29,7 +29,7 @@ To achieve this, you can utilize the `LoadingIndicator.IndicatorType` property o
 * Spinner (default indicator)
 * Shimmer
 
-The following example demonstrates how to set the `loadingIndicator.indicatorType` property based on changing the dropdown value using the [Change](https://ej2.syncfusion.com/aspnetmvc/documentation/api/drop-down-list/#change) event of the [DropDownList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) component. The `refreshColumns` method is used to apply the changes and display the updated loading indicator type. 
+The following example demonstrates how to set the `LoadingIndicator.IndicatorType` property based on changing the dropdown value using the [Change](https://ej2.syncfusion.com/aspnetmvc/documentation/api/drop-down-list/#change) event of the [DropDownList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) component. The `refreshColumns` method is used to apply the changes and display the updated loading indicator type. 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

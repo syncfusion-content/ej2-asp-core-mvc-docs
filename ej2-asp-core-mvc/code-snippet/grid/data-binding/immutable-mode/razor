@@ -1,0 +1,108 @@
+<div style="padding-bottom: 10px">
+   @Html.EJS().Button("addtop").CssClass("e-primary").Content("Add rows Data").Render()
+   @Html.EJS().Button("delete").CssClass("e-primary custom").Content("Delete rows").Render()
+   @Html.EJS().Button("update").CssClass("e-primary custom").Content("Update Freight Data").Render()
+</div>
+<p style="color:red;text-align:center;padding-bottom:10px" id="message"></p>
+
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Format("C2").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+}).EnableHover().EnableImmutableMode().AllowPaging().QueryCellInfo("queryCellInfo").RowDataBound("rowDataBound").Load("load").SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).PageSettings(page => { page.PageSize(10); }).Render();
+<script>
+    var data = JSON.parse('@Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource))');
+    function load(){
+        document.getElementById("message").innerText = `Initial rows rendered: ${data.length}`;
+    }
+    function queryCellInfo(args) {
+        if ( args.column.field === 'ShipName' && args.data.ShipName === 'Gems Chevalier') {
+            args.cell.style.backgroundColor = 'rgb(210, 226, 129)';
+        }
+    }
+    function rowDataBound (args) {
+        args.row.style.backgroundColor = args.data.isNewlyAdded ? '' : 'rgb(208, 255, 255)';
+    }
+    document.getElementById('addtop').onclick = handleButtonClick;
+    document.getElementById('delete').onclick = handleButtonClick;
+    document.getElementById('update').onclick = handleButtonClick;
+    function handleButtonClick(event){
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (event.target.id === "addtop") {
+            grid.getAllDataRows().forEach(row => {
+                row.style.backgroundColor = 'rgb(208, 255, 255)';
+            });
+            var count = 0;
+            if (count < 1) {
+                var newRowData = [];
+                var addedRecords = {
+                    OrderID: generateOrderId(),
+                    CustomerID: generateCustomerId(),
+                    ShipCity: generateShipCity(),
+                    Freight: generateFreight(),
+                    ShipName: generateShipName(),
+                    isNewlyAdded: true,
+                };
+                newRowData.push(addedRecords);
+                grid.dataSource = [...newRowData, ...grid.dataSource];
+                count++;
+                document.getElementById("message").innerText = count + ' rows rendered after performing the add action';
+            }
+        }else if(event.target.id === "delete")
+        {
+            var count = 0;
+            if (count < 1 && data.length > 0) {
+                grid.dataSource = grid.dataSource.slice(1);
+                count++;
+                document.getElementById("message").innerText = count + ' rows deleted after performing delete action';
+            }
+        }else {
+            var count = 0;
+            var newRowData = grid.dataSource.map(function (row) {
+                if (row.ShipName === 'Bueno Foods') {
+                    count++;
+                    return { ...row, ShipName: 'Gems Chevalier' };
+                } else {
+                    return row;
+                }
+            });
+            grid.dataSource = newRowData;
+            document.getElementById("message").innerText = count + ' rows updated after performing update action';
+        }
+
+    }
+    function generateOrderId() {
+        return Math.floor(10000 + Math.random() * 90000);
+    }
+
+    function generateCustomerId() {
+        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var result = '';
+        for (var i = 0; i < 5; i++) {
+            result += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        return result;
+    }
+
+    function generateShipCity() {
+        var cities = ['London', 'Paris', 'New York', 'Tokyo', 'Berlin'];
+        return cities[Math.floor(Math.random() * cities.length)];
+    }
+
+    function generateFreight() {
+        var randomValue = Math.random() * 100;
+        return parseFloat(randomValue.toFixed(2));
+    }
+
+    function generateShipName() {
+        var names = ['Que Delícia', 'Bueno Foods', 'Island Trading', 'Laughing Bacchus Winecellars'];
+        return names[Math.floor(Math.random() * names.length)];
+    }
+</script>
+<style>
+    .custom{
+        margin-left: 10px;
+    }
+</style>

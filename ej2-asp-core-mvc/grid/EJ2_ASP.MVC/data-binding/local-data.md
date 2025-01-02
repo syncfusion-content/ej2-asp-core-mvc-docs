@@ -47,15 +47,20 @@ The following example demonstrates how to import Excel data into the grid by uti
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/localdata/razor %}
+{% include code-snippet/grid/data-binding/localdata-upload/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Local.cs" %}
-{% include code-snippet/grid/data-binding/localdata/local.cs %}
+{% include code-snippet/grid/data-binding/localdata-upload/local.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Local data](../../images/data-binding/local-data.png)
+![Local data](../../images/data-binding/local-data-upload.gif)
 
+## Binding data and performing CRUD actions via Fetch request
+
+The Syncfusion Grid provides a seamless way to bind data from external sources using Fetch requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page.
+
+To achieve data binding and perform CRUD actions using Fetch requests in the Syncfusion Grid, follow these steps:
 
 ## Managing spinner visibility during data loading
 
@@ -67,14 +72,14 @@ The following example demonstrates how to show and hide the spinner during data 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/localdata/razor %}
+{% include code-snippet/grid/data-binding/localdata-spinner/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Local.cs" %}
-{% include code-snippet/grid/data-binding/localdata/local.cs %}
+{% include code-snippet/grid/data-binding/localdata-spinner/local.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Local data](../../images/data-binding/local-data.png)
+![Local data](../../images/data-binding/local-data-spinner.gif)
 
 ## Immutable mode  
 
@@ -92,10 +97,10 @@ The following example demonstrates how to enable immutable mode in an vue compon
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/localdata/razor %}
+{% include code-snippet/grid/data-binding/immutable-mode/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Local.cs" %}
-{% include code-snippet/grid/data-binding/localdata/local.cs %}
+{% highlight c# tabtitle="Immutable.cs" %}
+{% include code-snippet/grid/data-binding/immutable-mode/immutable.cs %}
 {% endhighlight %}
 {% endtabs %}
 
