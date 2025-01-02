@@ -57,10 +57,10 @@
   }
   function initializeWizard() {
     var currentTab = 0;
-    document.getElementById('nextBtn').onclick = function () {
+    document.getElementById('nextButton').onclick = function () {
       if (validate()) {
         currentTab++;
-        nextpre(currentTab);
+        handleTabNavigation(currentTab);
       }
     };
     function validate() {
@@ -76,10 +76,10 @@
       }
       return true;
     }
-    document.getElementById('prevBtn').onclick = function () {
+    document.getElementById('previousButton').onclick = function () {
       if (validate()) {
         currentTab--;
-        nextpre(currentTab);
+        handleTabNavigation(currentTab);
       }
      };
      document.getElementById('saveButton').onclick = function () {
@@ -87,19 +87,19 @@
       grid.endEdit();
      };
   }
-  function nextpre(current) {
+  function handleTabNavigation(current) {
     var tabs = [].slice.call(document.getElementsByClassName('tab'));
     tabs.forEach((element) => (element.style.display = 'none'));
     tabs[current].style.display = '';
     if (current === 2) {
-      document.getElementById('prevBtn').style.display = '';
-      document.getElementById('nextBtn').style.display = 'none';
+      document.getElementById('previousButton').style.display = '';
+      document.getElementById('nextButton').style.display = 'none';
     }
     if (!current) {
-      document.getElementById('prevBtn').style.display = 'none';
-      document.getElementById('nextBtn').style.display = '';
+      document.getElementById('previousButton').style.display = 'none';
+      document.getElementById('nextButton').style.display = '';
     } else {
-      document.getElementById('prevBtn').style.display = '';
+      document.getElementById('previousButton').style.display = '';
     }
   }
 </script>
@@ -150,11 +150,11 @@
     </div>
     <div id='footer'>
         <div style='float:left'>
-            <button id="prevBtn" class="e-info e-btn" type="button" style="display: none; float: left">Previous</button>
+            <button id="previousButton" class="e-info e-btn" type="button" style="display: none; float: left">Previous</button>
         </div>
         <div style='float:right'>
             <button id="saveButton" class="e-info e-btn" type="button" style="margin-right:10px;margin-left:10px">Save</button>
-            <button id="nextBtn" class="e-info e-btn" type="button">Next</button>
+            <button id="nextButton" class="e-info e-btn" type="button">Next</button>
         </div>
     </div>
 </script>

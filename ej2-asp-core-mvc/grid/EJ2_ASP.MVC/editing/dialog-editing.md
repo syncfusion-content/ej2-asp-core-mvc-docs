@@ -25,7 +25,7 @@ Here's an example how to enable dialog editing in the ASP.NET MVC grid component
 {% endhighlight %}
 {% endtabs %}
 
-![Dialog editing](../../images/editing/dialog-edit.png)
+![Dialog editing](../images/editing/dialog-edit.png)
 
 ## Customize edit dialog
 
@@ -46,7 +46,7 @@ The following example that demonstrates how to customize the edit dialog using t
 {% endhighlight %}
 {% endtabs %}
 
-![Customize edit dialog](../../images/editing/dialog-customize.png)
+![Customize edit dialog](../images/editing/dialog-customize.png)
 
 > The Grid add or edit dialog element has the max-height property, which is calculated based on the available window height. So, in the normal window (1920 x 1080), it is possible to set the dialog's height up to 658px.
 
@@ -67,7 +67,7 @@ In the following example, the **CustomerID** column is rendered as a hidden colu
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide columns in dialog editing](../../images/editing/dialog-show-hide.png)
+![Show or hide columns in dialog editing](../images/editing/dialog-show-hide.png)
 
 ## Use wizard like dialog editing
 
@@ -86,7 +86,7 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% endhighlight %}
 {% endtabs %}
 
-![Use wizard like dialog editing](../../images/editing/dialog-tabs-multiple.gif)
+![Use wizard like dialog editing](../images/editing/dialog-tabs-multiple.gif)
 
 ## Customize add/edit dialog footer
 
@@ -103,4 +103,4 @@ In the following sample, using the `dialog` argument of the `ActionComplete` eve
 {% endhighlight %}
 {% endtabs %}
 
-![Customize add/edit dialog footer](../../images/editing/dialog-footer.png)
+![Customize add/edit dialog footer](../images/editing/dialog-footer.png)

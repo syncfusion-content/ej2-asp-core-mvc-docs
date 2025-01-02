@@ -25,7 +25,7 @@ Here's an example how to enable dialog editing in the ASP.NET Core grid componen
 {% endhighlight %}
 {% endtabs %}
 
-![Dialog editing](../../images/editing/dialog-edit.png)
+![Dialog editing](../images/editing/dialog-edit.png)
 
 ## Customize edit dialog
 
@@ -46,7 +46,7 @@ The following example that demonstrates how to customize the edit dialog using t
 {% endhighlight %}
 {% endtabs %}
 
-![Customize edit dialog](../../images/editing/dialog-customize.png)
+![Customize edit dialog](../images/editing/dialog-customize.png)
 
 > The Grid add or edit dialog element has the max-height property, which is calculated based on the available window height. So, in the normal window (1920 x 1080), it is possible to set the dialog's height up to 658px.
 
@@ -67,13 +67,13 @@ In the following example, the **CustomerID** column is rendered as a hidden colu
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide columns in dialog editing](../../images/editing/dialog-show-hide.png)
+![Show or hide columns in dialog editing](../images/editing/dialog-show-hide.png)
 
 ## Use wizard like dialog editing
 
 Wizard-like dialog editing is a powerful feature in the Grid component that enables the creation of intuitive step-by-step forms. This feature provides a structured approach to form completion or data entry by breaking down the process into manageable steps.This feature is particularly useful when you have complex forms that need to be broken down into smaller sections to guide you through the data entry process.
 
-To achieve wizard-like dialog editing in the grid component, you can use the dialog template feature. This feature allows you to define your own custom editing template using the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property set to  **Dialog** and the [editSettings.Template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Template) property to specify the template variable that defines the editors for each step of the wizard.
+To achieve wizard-like dialog editing in the grid component, you can use the dialog template feature. This feature allows you to define your own custom editing template using the [editSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property set to  **Dialog** and the [editSettings.template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Template) property to specify the template variable that defines the editors for each step of the wizard.
 
 The following example demonstrate the wizard like editing in the grid with the unobtrusive validation.
 
@@ -86,7 +86,7 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% endhighlight %}
 {% endtabs %}
 
-![Use wizard like dialog editing](../../images/editing/dialog-tabs-multiple.gif)
+![Use wizard like dialog editing](../images/editing/dialog-tabs-multiple.gif)
 
 ## Customize add/edit dialog footer
 
@@ -103,4 +103,4 @@ In the following sample, using the `dialog` argument of the `actionComplete` eve
 {% endhighlight %}
 {% endtabs %}
 
-![Customize add/edit dialog footer](../../images/editing/dialog-footer.png)
+![Customize add/edit dialog footer](../images/editing/dialog-footer.png)
