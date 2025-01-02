@@ -1,9 +1,4 @@
-@model MVCApplication.Models.OrdersDetails
-@*//define the model for store the model values*@
-
-@using Syncfusion.EJ2
-@using Syncfusion.EJ2.DropDowns
-
+@using Syncfusion.EJ2;
 <div>
     <div class="form-row">
         <div class="form-group col-md-6">
@@ -21,33 +16,30 @@
             </div>
         </div>
     </div>
-
     <div class="form-row">
         <div class="form-group col-md-6">
-            @Html.EJS().NumericTextBox("Freight").Value(Model.Freight).Format("C2").Placeholder("Freight").Render()
+            @Html.EJS().NumericTextBox("Freight").Value(Model.Freight).Format("C2").Placeholder("Freight").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
         </div>
         <div class="form-group col-md-6">
-            @Html.EJS().DatePicker("OrderDate").Value(Model.OrderDate).Placeholder("Order Date").Render()
+            @Html.EJS().DatePicker("OrderDate").Value(Model.OrderDate).Placeholder("Order Date").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
         </div>
     </div>
-
     <div class="form-row">
         <div class="form-group col-md-6">
-            @Html.EJS().DropDownList("ShipCountry").DataSource(ViewBag.dataSource).Value(Model.ShipCountry).Placeholder("Ship Country").Fields(new DropDownListFieldSettings { Text = "ShipCountry", Value = "ShipCountry" }).Render()
+            @Html.EJS().DropDownList("ShipCountry").DataSource(ViewBag.dataSource).Value(Model.ShipCountry).Placeholder("Ship Country").Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "ShipCountry", Value = "ShipCountry" }).FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
         </div>
         <div class="form-group col-md-6">
-            @Html.EJS().DropDownList("ShipCity").DataSource(ViewBag.dataSource).Value(Model.ShipCity).Placeholder("Ship City").Fields(new DropDownListFieldSettings { Text = "ShipCity", Value = "ShipCity" }).Render()
+            @Html.EJS().DropDownList("ShipCity").DataSource(ViewBag.dataSource).Value(Model.ShipCity).Placeholder("Ship City").Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "ShipCity", Value = "ShipCity" }).FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-12">
             <div class="e-float-input e-control-wrapper">
-                <textarea asp-for="ShipAddress">@Model.ShipAddress</textarea>
+                @Html.TextArea("ShipAddress")
                 <span class="e-float-line"></span>
                 <label asp-for="ShipAddress" class="e-float-text e-label-top">Ship Address</label>
             </div>
         </div>
     </div>
 </div>
-
 @Html.EJS().ScriptManager()

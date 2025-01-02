@@ -1,0 +1,71 @@
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="348px" allowPaging="true" actionBegin="actionBegin" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
+    <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editsettings>
+    <e-grid-columns>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" isPrimaryKey="true" validationRules="@(new { required= true })" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="FirstName" headerText="First Name" width="120" validationRules="@(new { required= true })"></e-grid-column>
+        <e-grid-column field="LastName" headerText="Last Name" width="120" validationRules="@(new { required= true })"></e-grid-column>
+        <e-grid-column field="Title" headerText="Title" width="130" validationRules="@(new { required= true })"></e-grid-column>
+        <e-grid-column headerText="Employee Image" template="#template"  edit="@(new {create = "create", read = "read", destroy = "destroy", write = "write"})" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script id="template" type="text/x-template">
+    ${employeeImageTemplate(data)}
+</script>
+<script>
+    var uploaderElement;
+    var uploaderObject;
+    var uploadedImageBase64 = "";
+    function employeeImageTemplate(props) {
+        var src = props.Image ? props.Image: 'https://ej2.syncfusion.com/angular/demos/assets/grid/images/' + props.EmployeeID + '.png';
+        return '<div class="image"><img src="' + src + '" alt="' + props.EmployeeID + '" /></div>';
+    }
+    function create() {
+        uploaderElement = document.createElement('input');
+        return uploaderElement;
+    }
+    function destroy() {
+        if (uploaderObject) uploaderObject.destroy();
+    }
+    function read() {
+        return  uploaderObject.value;
+    }
+    function write(event) {
+        uploaderObject = new ej.inputs.Uploader({
+        asyncSettings: {
+            saveUrl: 'https://services.syncfusion.com/aspnet/production/api/FileUploader/Save',
+            removeUrl: 'https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove'             },
+            multiple: false,
+            success: onUploadSuccess
+        });
+        uploaderObject.appendTo(uploaderElement);
+    }
+    function actionBegin(args) {
+       if (args.requestType === 'save') {
+            if (uploadedImageBase64) {
+                args.data['Image'] = uploadedImageBase64;
+                uploadedImageBase64 = ""; // Reset after saving
+            }
+        }
+    }
+    function onUploadSuccess(args) {
+        if (args.operation === 'upload') {
+            var file = args.file.rawFile;
+            getBase64(file);
+        }
+    }
+    function getBase64(file) {
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function () {
+            uploadedImageBase64 = reader.result;
+        };
+    }
+</script>
+<style>
+    .image img {
+        height: 55px;
+        width: 55px;
+        border-radius: 50px;
+        box-shadow: inset 0 0 1px #e0e0e0, inset 0 0 14px rgba(0, 0, 0, 0.2);
+    }
+</style>

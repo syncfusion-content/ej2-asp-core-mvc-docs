@@ -1,57 +1,61 @@
-@{
-    ViewData["Title"] = "DialogTemplate";
-}
-
-<div class="control-section">
-    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" actionComplete="actionComplete" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" allowPaging="true">
-        <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog" template='#dialogtemplate'></e-grid-editSettings>
-        <e-grid-pagesettings pageCount="5 "></e-grid-pagesettings>
-        <e-grid-columns>
-           <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true})" textAlign="Right" width="120"></e-grid-column>
-           <e-grid-column field="CustomerID" headerText="Customer Name" validationRules="@(new { required=true})" width="150"></e-grid-column>
-           <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150"></e-grid-column>
-        </e-grid-columns>
-    </ejs-grid>
- </div>
-
+@Html.AntiForgeryToken()
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="348px" allowPaging="true" actionComplete="actionComplete" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
+    <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog" template='#dialogtemplate'></e-grid-editsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="ShipCountry" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
 <script id='dialogtemplate' type="text/x-template">
     <div id="dialogTemp"></div>
 </script>
-
-    
 <script>
     function actionComplete(args) {
+        let spinner = ej.popups.createSpinner({ target: args.dialog.element });
+        ej.popups.showSpinner(args.dialog.element);
         if (args.requestType === 'beginEdit') {
             var ajax = new ej.base.Ajax({
-                url: "/Grid/EditPartial", //render the partial view
                 type: "POST",
+                url: "/Index?handler=EditPartial",
+                beforeSend: function (xhr) {
+                    ajax.httpRequest.setRequestHeader("XSRF-TOKEN",
+                       $('input:hidden[name="__RequestVerificationToken"]').val());
+                },
                 contentType: "application/json",
+                dataType: 'json',
                 data: JSON.stringify({ value: args.rowData })
             });
             ajax.send().then(function (data) {
-                appendElement(data, args.form); //Render the edit form with selected record
+                appendElement(data, args.form);
                 args.form.elements.namedItem('CustomerID').focus();
+                ej.popups.hideSpinner(args.dialog.element);
             }).catch(function (xhr) {
-                console.log(xhr);
+                    console.log(xhr);
+                    ej.popups.hideSpinner(args.dialog.element);
             });
         }
-
-        if (args.requestType === 'add') {
+        else if (args.requestType === 'add') {
             var ajax = new ej.base.Ajax({
-                url: "/Grid/AddPartial", //render the partial view
                 type: "POST",
+                url: "/Index?handler=AddPartial",
+                beforeSend: function (xhr) {
+                    ajax.httpRequest.setRequestHeader("XSRF-TOKEN",
+                        $('input:hidden[name="__RequestVerificationToken"]').val());
+                },
                 contentType: "application/json",
-                data: JSON.stringify({ value: args.rowData })
+                dataType: 'json'
             });
             ajax.send().then(function (data) {
-                appendElement(data, args.form); //Render the edit form with selected record
-                args.form.elements.namedItem('OrderID').focus();
-            }).catch(function (xhr) {
-                console.log(xhr);
-            });
+                $("#dialogTemp").html(data);
+                    args.form.elements.namedItem('OrderID').focus();
+                    ej.popups.hideSpinner(args.dialog.element);
+                }).catch(function (xhr) {
+                    console.log(xhr);
+                    ej.popups.hideSpinner(args.dialog.element);
+                });
+            }
         }
-    }
-
     function appendElement(elementString, form) {
         form.querySelector("#dialogTemp").innerHTML = elementString;
         var script = document.createElement('script');
@@ -62,3 +66,11 @@
         serverScript.remove();
     }
 </script>
+<style>
+    .form-group.col-md-6 {
+        width: 250px;
+    }
+    #ShipAddress {
+        resize: vertical;
+    }
+</style >

@@ -1,0 +1,69 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
+{
+    col.Field("EmployeeID").HeaderText("Employee ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
+    col.Field("FirstName").HeaderText("First Name").ValidationRules(new { required = true }).Width("120").Add();
+    col.Field("LastName").HeaderText("Last Name").ValidationRules(new { required = true }).Width("120").Add();
+    col.Field("Title").HeaderText("Title").ValidationRules(new { required = true }).Width("130").Add();
+    col.HeaderText("Employee Image").Template("#template").Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Width("130").Add();
+}).ActionBegin("actionBegin").AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+<script id="template" type="text/x-template">
+    ${employeeImageTemplate(data)}
+</script>
+<script>
+    var uploaderElement;
+    var uploaderObject;
+    var uploadedImageBase64 = "";
+    function employeeImageTemplate(props) {
+        var src = props.Image ? props.Image: 'https://ej2.syncfusion.com/angular/demos/assets/grid/images/' + props.EmployeeID + '.png';
+        return '<div class="image"><img src="' + src + '" alt="' + props.EmployeeID + '" /></div>';
+    }
+    function create() {
+        uploaderElement = document.createElement('input');
+        return uploaderElement;
+    }
+    function destroy() {
+        if (uploaderObject) uploaderObject.destroy();
+    }
+    function read() {
+        return  uploaderObject.value;
+    }
+    function write(event) {
+        uploaderObject = new ej.inputs.Uploader({
+        asyncSettings: {
+            saveUrl: 'https://services.syncfusion.com/aspnet/production/api/FileUploader/Save',
+            removeUrl: 'https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove'             },
+            multiple: false,
+            success: onUploadSuccess
+        });
+        uploaderObject.appendTo(uploaderElement);
+    }
+    function actionBegin(args) {
+       if (args.requestType === 'save') {
+            if (uploadedImageBase64) {
+                args.data['Image'] = uploadedImageBase64;
+                uploadedImageBase64 = ""; // Reset after saving
+            }
+        }
+    }
+    function onUploadSuccess(args) {
+        if (args.operation === 'upload') {
+            var file = args.file.rawFile;
+            getBase64(file);
+        }
+    }
+    function getBase64(file) {
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function () {
+            uploadedImageBase64 = reader.result;
+        };
+    }
+</script>
+<style>
+    .image img {
+        height: 55px;
+        width: 55px;
+        border-radius: 50px;
+        box-shadow: inset 0 0 1px #e0e0e0, inset 0 0 14px rgba(0, 0, 0, 0.2);
+    }
+</style>
