@@ -293,7 +293,7 @@ To switch to the **French** culture and set the currency code as **EUR**, you ca
 {% endhighlight %}
 {% endtabs %}
 
-![Globalization-Switch-Culture](images/globalization/switch-locilaization.gif)
+![Globalization-Switch-Culture](images/globalization/switch-localization.gif)
 
 ## Internationalization
 
