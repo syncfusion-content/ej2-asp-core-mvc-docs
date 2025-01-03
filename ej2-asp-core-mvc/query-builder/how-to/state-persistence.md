@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State Persistence in ##Platform_Name## Query Builder Component
+title: State Persistence in ##Platform_Name## Query Builder Component | Syncfusion
 description: Learn here all about State Persistence in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: State Persistence
