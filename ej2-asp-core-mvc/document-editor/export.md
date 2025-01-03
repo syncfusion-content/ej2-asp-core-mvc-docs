@@ -11,7 +11,7 @@ documentation: ug
 
 # Export in Document Editor Component 
 
-Document editor exports the document into various known file formats in client-side such as Microsoft Word document (.docx), text document (.txt), and its own format called **Syncfusion Document Text (.sfdt)**.
+Document editor exports the document into various known file formats in client-side such as Microsoft Word document (.docx), text document (.txt), and its own format called **Syncfusion<sup style="font-size:70%">&reg;</sup> Document Text (.sfdt)**.
 
 We are providing two types of save APIs  as mentioned below.
 
@@ -22,7 +22,7 @@ We are providing two types of save APIs  as mentioned below.
 
 ## Sfdt export
 
-The following example shows how to export documents in document editor as Syncfusion document text (.sfdt).
+The following example shows how to export documents in document editor as Syncfusion<sup style="font-size:70%">&reg;</sup> document text (.sfdt).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -223,14 +223,18 @@ Document editor also supports API to store the document into a blob.
 {% include code-snippet/document-editor/export-blob/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-blob.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/export-blob/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/export-container-blob/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-blob.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/export-container-blob/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -239,14 +243,18 @@ Document editor also supports API to store the document into a blob.
 {% include code-snippet/document-editor/export-blob/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-blob.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/export-blob/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/export-container-blob/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-blob.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/export-container-blob/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -269,7 +277,6 @@ public HttpResponseMessage ExportAsRtf()
     return new HttpResponseMessage() { Content = new StreamContent(stream) };
 }
 ```
-
 In client-side, you can consume this web service and save the document as Rich Text Format (.rtf) file.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -279,7 +286,9 @@ In client-side, you can consume this web service and save the document as Rich T
 {% include code-snippet/document-editor/export-rtf/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-rtf.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/export-rtf/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -288,7 +297,9 @@ In client-side, you can consume this web service and save the document as Rich T
 {% include code-snippet/document-editor/export-rtf/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-rtf.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/export-rtf/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
