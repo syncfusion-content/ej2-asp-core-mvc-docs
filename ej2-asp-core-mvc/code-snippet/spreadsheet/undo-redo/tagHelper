@@ -1,18 +1,18 @@
+<button id="customBtn" class="e-btn"> add/remove Class</button>
 
-    <button id="customBtn" class="e-btn"> add/remove Class</button>
+<ejs-spreadsheet id="spreadsheet" allowUndoRedo="true" actionComplete="onActionComplete">
 
-    <ejs-spreadsheet id="spreadsheet" allowUndoRedo="true" actionComplete="onActionComplete">
-    
-    </ejs-spreadsheet>
+</ejs-spreadsheet>
+
 <script>
-document.getElementById("customBtn").addEventListener('click', updateCollection);
+    document.getElementById("customBtn").addEventListener('click', updateCollection);
 
-  function onActionComplete(args) {
-      var actionEvents = args;
-      var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+    function onActionComplete(args) {
+        var actionEvents = args;
+        var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
         if (actionEvents.eventArgs.action == "customCSS") {
-            var Element = spreadsheetObj.getCell(actionEvents.eventArgs.rowIdx,actionEvents.eventArgs.colIdx);
-            if (actionEvents.eventArgs.requestType == "undo") {
+            var Element = spreadsheetObj.getCell(actionEvents.eventArgs.rowIdx, actionEvents.eventArgs.colIdx);
+            if (actionEvents.isUndoRedo && actionEvents.isUndo) {
                 Element.classList.remove('customClass'); // To remove the custom class in undo action
             }
             else {
@@ -20,12 +20,12 @@ document.getElementById("customBtn").addEventListener('click', updateCollection)
             }
         }
     }
-    
+
     function updateCollection() {
         var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet'),
-         cell = spreadsheetObj.getActiveSheet().activeCell,
-         cellIdx = ej.spreadsheet.getRangeIndexes(cell),
-         Element = spreadsheetObj.getCell(cellIdx[0], cellIdx[1]);
+            cell = spreadsheetObj.getActiveSheet().activeCell,
+            cellIdx = ej.spreadsheet.getRangeIndexes(cell),
+            Element = spreadsheetObj.getCell(cellIdx[0], cellIdx[1]);
         if (!Element.classList.contains("customClass")) {
             Element.classList.add('customClass'); // To add the custom class in active cell element
             spreadsheetObj.updateUndoRedoCollection({ eventArgs: { class: 'customClass', rowIdx: cellIdx[0], colIdx: cellIdx[1], action: 'customCSS' } }); // To update the undo redo collection
@@ -34,7 +34,7 @@ document.getElementById("customBtn").addEventListener('click', updateCollection)
 </script>
 
 <style>
-  .customClass.e-cell {
-   background-color: red;
-}
+    .customClass.e-cell {
+        background-color: red;
+    }
 </style>
