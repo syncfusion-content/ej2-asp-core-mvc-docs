@@ -91,7 +91,7 @@ In the following sample, the `allowDragAndDrop` property is set as `true` and `s
 
 ## Dual ListBox with drag and drop
 
-The toolbar and drag and drop actions between two listboxes can be enabled by setting a unique id value and the same scope property value.
+The toolbar and drag and drop actions between two listboxes can be enabled by setting a listbox unique id and the same scope property value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
