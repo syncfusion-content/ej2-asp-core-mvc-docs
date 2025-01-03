@@ -1,4 +1,4 @@
-<ejs-spreadsheet id="spreadsheet" beforeSave="beforeSave" saveComplete="saveComplete" openUrl="Home/Open" saveUrl="Home/Save">
+<ejs-spreadsheet id="spreadsheet" beforeSave="beforeSave" saveComplete="saveComplete" openUrl="Home/Open" saveUrl="https://localhost:{{port number}}/Home/Save">
             <e-spreadsheet-sheets>
                 <e-spreadsheet-sheet name="Price Details">
                     <e-spreadsheet-ranges>
