@@ -47,7 +47,7 @@ The following sample shows how to prevent the editing and cell save. Here `E` co
 {% include code-snippet/spreadsheet/editing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditingController.cs" %}
-{% include code-snippet/spreadsheet/editing/editingController.cs %}
+{% include code-snippet/spreadsheet/editing/Core/editingController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,7 +58,7 @@ The following sample shows how to prevent the editing and cell save. Here `E` co
 {% include code-snippet/spreadsheet/editing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditingController.cs" %}
-{% include code-snippet/spreadsheet/editing/editingController.cs %}
+{% include code-snippet/spreadsheet/editing/MVC/editingController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

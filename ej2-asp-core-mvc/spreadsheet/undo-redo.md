@@ -46,7 +46,7 @@ The following code example shows `How to update and customize your own actions f
 {% include code-snippet/spreadsheet/undo-redo/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="UndoRedoController.cs" %}
-{% include code-snippet/spreadsheet/undo-redo/undoRedoController.cs %}
+{% include code-snippet/spreadsheet/undo-redo/Core/undoRedoController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,7 +57,7 @@ The following code example shows `How to update and customize your own actions f
 {% include code-snippet/spreadsheet/undo-redo/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="UndoRedoController.cs" %}
-{% include code-snippet/spreadsheet/undo-redo/undoRedoController.cs %}
+{% include code-snippet/spreadsheet/undo-redo/MVC/undoRedoController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

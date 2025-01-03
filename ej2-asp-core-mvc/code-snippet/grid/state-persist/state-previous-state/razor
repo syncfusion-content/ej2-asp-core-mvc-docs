@@ -1,0 +1,47 @@
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("save").Content("Save").CssClass("e-success").Render()
+    @Html.EJS().Button("restore").Content("Restore").CssClass("e-danger custom").Render()
+</div>
+<div id="message" class="message"></div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).AllowSorting(true).AllowGrouping(true).EnablePersistence(true).Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("170").ValidationRules(new { required = "true"}).Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("170").Add();
+}).AllowPaging(true).ActionBegin("actionBegin").GroupSettings(group => { group.ShowGroupedColumn(false).Columns(new string[] { "ShipCountry" }); }).EditSettings(edit => { edit.AllowEditing(true); }).FilterSettings(filter => filter.Type(Syncfusion.EJ2.Grids.FilterType.Menu)).Toolbar(new List<string>() { "Edit", "Update", "Cancel" }).PageSettings(page => page.PageCount(10)).Render()
+<script>
+    // Save grid state to local storage
+    document.getElementById('save').addEventListener('click', function () {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        var persistData = grid.getPersistData();  // Grid persistData
+        window.localStorage.setItem("gridOrders", persistData);
+        document.getElementById("message").innerText = "Grid state saved.";
+    });
+    // Restore grid state from local storage
+    document.getElementById('restore').addEventListener('click', function () {
+        var value = window.localStorage.getItem("gridOrders"); //"gridOrders" is control name + control id.
+        var grid = document.getElementById('grid').ej2_instances[0];
+        var state = JSON.parse(value);
+        if (state) {
+            grid.setProperties(state);
+            document.getElementById("message").innerText = "Previous grid state restored.";
+        } else {
+            document.getElementById("message").innerText  = "No saved state found.";
+        }
+    });
+    function actionBegin () {
+        document.getElementById('message').innerText = '';
+    }
+</script>
+<style>
+    .message {
+        text-align: center;
+        color: red;
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    .custom {
+        margin-left: 5px;
+    }
+</style>

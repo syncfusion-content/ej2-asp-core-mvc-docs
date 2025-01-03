@@ -6,7 +6,7 @@
     }).Add();
 }).Render()
 
-<sctipt>
+<script>
 ej.base.L10n.load({
          'fr-CH': {
         'spreadsheet': {

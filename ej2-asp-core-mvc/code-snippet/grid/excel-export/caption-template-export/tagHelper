@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowExcelExport="true" toolbar="@(new List<string>() {"ExcelExport"})"
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" toolbar="@(new List<string>() {"ExcelExport"})"
     toolbarClick="toolbarClick" allowGrouping="true" exportGroupCaption="exportGroupCaption">
     <e-grid-groupsettings captionTemplate="#captiontemplate" columns="@(new string[] {"EmployeeID"})"></e-grid-groupsettings>
     <e-grid-columns>
@@ -8,18 +8,15 @@
         <e-grid-column field="Title" headerText="Title" width="170"></e-grid-column>
     </e-grid-columns> 
 </ejs-grid>
-
 <script type="text/x-template" id="captiontemplate">
     ${field} - ${key}
 </script>
-
 <script>
     function toolbarClick(args) {
-        if (args['item'].id === 'Grid_excelexport') {
+        if (args['item'].id === 'grid_excelexport') {
             this.excelExport();
         }
     }
-
     function exportGroupCaption(args) {
         args.captionText = args.data.field + ' - ' + args.data.key;
     }
