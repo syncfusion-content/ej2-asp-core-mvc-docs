@@ -1,0 +1,34 @@
+<div style="margin-left:180px">
+    <p style="color:red;" id="message"></p>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true" allowPdfExport="true" toolbarClick="toolbarClick" pdfExportComplete="pdfExportComplete" toolbar="@(new List<string>() { "PdfExport" })">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" visible="false" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+var queryClone;
+ 
+document.addEventListener('DOMContentLoaded', function () {
+    grid = document.getElementById('Grid').ej2_instances[0];
+});
+
+function toolbarClick(args) {
+    if (args.item.id === 'Grid_pdfexport') { 
+            queryClone = grid.query;
+            grid.query = new ej.data.Query().addParams('recordcount', '15');
+            document.getElementById('message').innerText =
+                'Key: ' + grid.query.params[0].key +
+                ' and Value: ' + grid.query.params[0].value + ' on ' + args.item.text;
+            grid.pdfExport();
+    }
+}
+
+function pdfExportComplete() {
+        grid.query = queryClone; 
+}
+</script>
