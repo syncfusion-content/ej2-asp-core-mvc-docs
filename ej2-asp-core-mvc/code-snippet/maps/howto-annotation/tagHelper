@@ -36,7 +36,7 @@
     </div>
 </div>
 <div id="compass-maps" style="display: none;">
-    <img src="~/compass.png" height="75px" width="75px">
+    <img src="https://ej2.syncfusion.com/aspnetcore/styles/images/maps/compass.svg" height="75px" width="75px">
 </div>
 <style>
     #annotation {

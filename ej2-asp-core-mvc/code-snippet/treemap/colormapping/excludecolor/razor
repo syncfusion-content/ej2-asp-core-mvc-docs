@@ -27,7 +27,7 @@
                 color: 'green'
             },
             {
-                color: 'red'
+                color: '#800080'
             }
         ];
         args.treemap.leafItemSettings.colorMapping = color;

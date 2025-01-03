@@ -34,7 +34,7 @@
 <div id="map">
     <ejs-maps id="maps">
         <e-maps-layers>
-            <e-maps-layer shapeData="ViewBag.usmap">
+            <e-maps-layer shapeData="ViewBag.worldmap">
                 <e-layersettings-markers>
                     <e-layersettings-marker visible="true" shape="Circle" fill="white" width="3" animationDuration="0" border="border" dataSource="data2"></e-layersettings-marker>
                     <e-layersettings-marker visible="true" shape="Rectangle" fill="yellow" width="15" height="4" animationDuration="0" border="border" dataSource="data1"></e-layersettings-marker>

@@ -24,7 +24,7 @@
             {
                 from: 3000,
                 to: 5000,
-                color: ['red', 'blue']
+                color: ['green', 'red', 'blue']
             }
         ];
         args.treemap.leafItemSettings.colorMapping = color;

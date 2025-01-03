@@ -9,4 +9,4 @@
             <e-axis-labelstyle UseRangeColor="true"></e-axis-labelstyle>
         </e-lineargauge-axis>
     </e-lineargauge-axes>
-</ejs-lineargauge
+</ejs-lineargauge>
