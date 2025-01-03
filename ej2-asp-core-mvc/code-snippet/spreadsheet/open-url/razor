@@ -1,4 +1,4 @@
-@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Open").AllowOpen(true).Created("created").Render()
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").AllowOpen(true).Created("created").Render()
 
 <script>
 
