@@ -153,7 +153,9 @@ Document editor provides an option to protect and unprotect document using `enfo
 {% include code-snippet/document-editor-container/comment-only-protect/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Comment-only.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/comment-only-protect/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -162,7 +164,9 @@ Document editor provides an option to protect and unprotect document using `enfo
 {% include code-snippet/document-editor-container/comment-only-protect/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Comment-only.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/comment-only-protect/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -185,7 +189,9 @@ The following example illustrates how to enable mention support in Document Edit
 {% include code-snippet/document-editor-container/comments-mention/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="comments-mention.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/comments-mention/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -194,7 +200,9 @@ The following example illustrates how to enable mention support in Document Edit
 {% include code-snippet/document-editor-container/comments-mention/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="comments-mention.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/comments-mention/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## Events
@@ -210,7 +218,9 @@ To demonstrate a specific use case, let’s consider an example where we want to
 {% include code-snippet/document-editor-container/comments-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="comments-event.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/comments-event/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -219,5 +229,7 @@ To demonstrate a specific use case, let’s consider an example where we want to
 {% include code-snippet/document-editor-container/comments-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="comments-event.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/comments-event/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}

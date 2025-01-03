@@ -1,3 +1,4 @@
+
 @Html.EJS().DocumentEditorContainer("container").EnableToolbar(true).Height("590px").BeforeCommentAction("beforeComment").Render()
 <script>
     var documenteditor;
