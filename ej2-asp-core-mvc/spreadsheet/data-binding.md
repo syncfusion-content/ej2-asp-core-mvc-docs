@@ -28,7 +28,7 @@ Refer to the following code example for local data binding.
 {% include code-snippet/spreadsheet/local-data-binding/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="LocalDataController.cs" %}
-{% include code-snippet/spreadsheet/local-data-binding/EJ2_ASP.NETCORE/localDataController.cs %}
+{% include code-snippet/spreadsheet/local-data-binding/Core/localDataController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,7 +39,7 @@ Refer to the following code example for local data binding.
 {% include code-snippet/spreadsheet/local-data-binding/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="LocalDataController.cs" %}
-{% include code-snippet/spreadsheet/local-data-binding/EJ2_ASP.MVC/localDataController.cs %}
+{% include code-snippet/spreadsheet/local-data-binding/MVC/localDataController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -64,7 +64,7 @@ The following code example demonstrates how to customize the mapping of column d
 {% include code-snippet/spreadsheet/field-mapping/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FieldMappingController.cs" %}
-{% include code-snippet/spreadsheet/field-mapping/EJ2_ASP.NETCORE/fieldMappingController.cs %}
+{% include code-snippet/spreadsheet/field-mapping/Core/fieldMappingController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -75,7 +75,7 @@ The following code example demonstrates how to customize the mapping of column d
 {% include code-snippet/spreadsheet/field-mapping/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FieldMappingController.cs" %}
-{% include code-snippet/spreadsheet/field-mapping/EJ2_ASP.MVC/fieldMappingController.cs %}
+{% include code-snippet/spreadsheet/field-mapping/MVC/fieldMappingController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -93,7 +93,7 @@ Refer to the following code example for remote data binding.
 {% include code-snippet/spreadsheet/remote-data-binding/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RemoteDataController.cs" %}
-{% include code-snippet/spreadsheet/remote-data-binding/EJ2_ASP.NETCORE/remoteDataController.cs %}
+{% include code-snippet/spreadsheet/remote-data-binding/Core/remoteDataController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -104,7 +104,7 @@ Refer to the following code example for remote data binding.
 {% include code-snippet/spreadsheet/remote-data-binding/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RemoteDataController.cs" %}
-{% include code-snippet/spreadsheet/remote-data-binding/EJ2_ASP.MVC/remoteDataController.cs %}
+{% include code-snippet/spreadsheet/remote-data-binding/MVC/remoteDataController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -124,7 +124,7 @@ N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 {% include code-snippet/spreadsheet/odata-adaptor/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ODataController.cs" %}
-{% include code-snippet/spreadsheet/odata-adaptor/EJ2_ASP.NETCORE/oDataController.cs %}
+{% include code-snippet/spreadsheet/odata-adaptor/Core/oDataController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,7 +135,7 @@ N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 {% include code-snippet/spreadsheet/odata-adaptor/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ODataController.cs" %}
-{% include code-snippet/spreadsheet/odata-adaptor/EJ2_ASP.MVC/oDataController.cs %}
+{% include code-snippet/spreadsheet/odata-adaptor/MVC/oDataController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -153,7 +153,7 @@ You can use WebApiAdaptor to bind spreadsheet with Web API created using OData e
 {% include code-snippet/spreadsheet/webapi-adaptor/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="WebApiController.cs" %}
-{% include code-snippet/spreadsheet/webapi-adaptor/EJ2_ASP.NETCORE/webApiController.cs %}
+{% include code-snippet/spreadsheet/webapi-adaptor/Core/webApiController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -164,7 +164,7 @@ You can use WebApiAdaptor to bind spreadsheet with Web API created using OData e
 {% include code-snippet/spreadsheet/webapi-adaptor/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="WebApiController.cs" %}
-{% include code-snippet/spreadsheet/webapi-adaptor/EJ2_ASP.MVC/webApiController.cs %}
+{% include code-snippet/spreadsheet/webapi-adaptor/MVC/webApiController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -184,7 +184,7 @@ Refer to the following code example for cell data binding.
 {% include code-snippet/spreadsheet/cell-data-binding/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellDataController.cs" %}
-{% include code-snippet/spreadsheet/cell-data-binding/EJ2_ASP.NETCORE/cellDataController.cs %}
+{% include code-snippet/spreadsheet/cell-data-binding/Core/cellDataController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -195,7 +195,7 @@ Refer to the following code example for cell data binding.
 {% include code-snippet/spreadsheet/cell-data-binding/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellDataController.cs" %}
-{% include code-snippet/spreadsheet/cell-data-binding/EJ2_ASP.MVC/cellDataController.cs %}
+{% include code-snippet/spreadsheet/cell-data-binding/MVC/cellDataController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -227,7 +227,7 @@ N> For `add` action, the value for all the fields will be `null` in the data. In
 {% include code-snippet/spreadsheet/dynamic-data-binding/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DynamicDataController.cs" %}
-{% include code-snippet/spreadsheet/dynamic-data-binding/EJ2_ASP.NETCORE/dynamicDataController.cs %}
+{% include code-snippet/spreadsheet/dynamic-data-binding/Core/dynamicDataController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -238,7 +238,7 @@ N> For `add` action, the value for all the fields will be `null` in the data. In
 {% include code-snippet/spreadsheet/dynamic-data-binding/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DynamicDataController.cs" %}
-{% include code-snippet/spreadsheet/dynamic-data-binding/EJ2_ASP.MVC/dynamicDataController.cs %}
+{% include code-snippet/spreadsheet/dynamic-data-binding/MVC/dynamicDataController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -258,7 +258,7 @@ The following code example demonstrates how to dynamically update data using the
 {% include code-snippet/spreadsheet/dynamic-data-binding-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="UpdateRangeController.cs" %}
-{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/EJ2_ASP.NETCORE/updateRangeController.cs %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/Core/updateRangeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -269,7 +269,7 @@ The following code example demonstrates how to dynamically update data using the
 {% include code-snippet/spreadsheet/dynamic-data-binding-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="UpdateRangeController.cs" %}
-{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/EJ2_ASP.MVC/updateRangeController.cs %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/MVC/updateRangeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
