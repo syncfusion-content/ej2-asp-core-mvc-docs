@@ -247,7 +247,9 @@ The following sample demonstrates how to delete the table row or columns, merge 
 {% include code-snippet/document-editor/table/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Table.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/table/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -256,7 +258,9 @@ The following sample demonstrates how to delete the table row or columns, merge 
 {% include code-snippet/document-editor/table/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Table.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/table/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
