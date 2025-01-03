@@ -21,7 +21,109 @@ You can create and insert a table at cursor position by specifying the required 
  documenteditor.editor.insertTable(3,3);
 ```
 
-The maximum size of row and column is limited to 32767 and 63 respectively.
+## Set the maximum number of Rows
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+You can use the `maximumRows` property to set the maximum number of rows allowed while inserting a table in the Document Editor component.
+
+Refer to the following sample code.
+
+```ts
+ <ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated" height="590px"></ejs-documenteditorcontainer>
+
+<script>
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        container.documentEditorSetting = {
+            maximumRows: 4
+        };
+    }
+</script>
+```
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+You can use the `maximumRows` property to set the maximum number of rows allowed while inserting a table in the Document Editor component.
+
+```ts
+<div>
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+</div>
+<script>
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        container.documentEditorSetting = {
+            maximumRows: 4
+        };
+    }
+</script>
+```
+
+{% endif %}
+
+When the maximum row limit is reached, an alert will appear, as follow 
+
+![Row Limit Alert](images/Row_Limit_Alert.PNG) 
+
+>Note: The maximum value is 32767, as per Microsoft Word application and you can set any value less than 32767 to this property. If you set any value greater than 32767, then Syncfusion Document editor will automatically reset as 32767.
+
+## Set the maximum number of Columns
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+You can use the `maximumColumns` property to set the maximum number of rows allowed while inserting a table in the Document Editor component.
+
+Refer to the following sample code.
+
+```ts
+ <ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated" height="590px"></ejs-documenteditorcontainer>
+
+<script>
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        container.documentEditorSetting = {
+            maximumColumns: 4
+        };
+    }
+</script>
+```
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+You can use the `maximumColumns` property to set the maximum number of rows allowed while inserting a table in the Document Editor component.
+
+Refer to the following sample code.
+
+```ts
+<div>
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+</div>
+<script>
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        container.documentEditorSetting = {
+            maximumColumns: 4
+        };
+    }
+</script>
+```
+
+{% endif %}
+
+When the maximum column limit is reached, an alert will appear, as follow 
+
+![Column Limit Alert](images/Column_Limit_Alert.PNG) 
+
+>Note: The maximum value is 63, as per Microsoft Word application and you can set any value less than 63 to this property. If you set any value greater than 63, then Syncfusion Document editor will automatically reset as 63.
 
 ## Insert rows
 
