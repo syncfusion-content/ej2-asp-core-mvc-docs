@@ -8,14 +8,25 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Adding header and footer in ASP.NET MVC Grid component
 
-# Adding Header and Footer
+The Syncfusion ASP.NET MVC Grid allows you to add customized header and footer sections in the exported PDF document. This feature enables you to include custom text, page numbers, lines, page size, and even change the orientation of the header and footer.
 
-You can customize text, page number, line, page size and changing orientation in header and footer.
+## Adding text in header and footer
 
-## Write a text in header and footer
+The Syncfusion ASP.NET MVC Grid allows you to add custom text in the header or footer section in the exported PDF document.  
 
-You can add text either in Header or Footer of exported PDF document.
+The header section of a PDF document is typically located at the top of each page. It's a space where you can include additional information or branding elements. This is particularly useful for adding details like a company logo, a title for the document, a date, or any other information that you want to appear consistently on every page of the PDF.
+
+The footer section, on the other hand, is usually positioned at the bottom of each page in the PDF. It's another area where you can insert custom text. Common content in the footer includes page numbers, copyright information, or disclaimers. Similar to the header, the footer content is repeated on every page.
+
+To add text in the header or footer of the exported PDF document, follow these steps:
+
+1. Access the `PdfExportProperties` of the Grid component.
+2. Set the `Header` or `Footer` property to a string value representing the desired text.
+3. Trigger the PDF export operation.
+
+The following code example demostrates how to add the header in the exported PDF document. 
 
 ```typescript
 
@@ -25,27 +36,32 @@ var exportProperties = {
         height: 130,
         contents: [
             {
-                type: 'Text',
-                value: "Northwind Traders",
-                position: { x: 0, y: 50 },
-                style: { textBrushColor: '#000000', fontSize: 13 }
+              type: 'Text',
+              value: 'Exported Document Of Customers',
+              position: { x:200, y: 50 },
+              style: { textBrushColor: '#000000', fontSize: 20 },
             },
-
         ]
     }
+}
 
 ```
 
 ## Draw a line in header and footer
 
-you can add line either in Header or Footer of the exported PDF document.
+When exporting data from the Syncfusion ASP.NET MVC Grid to a PDF document, you have an option to add a line in the header and footer section. This feature allows you to enhance the visual appearance of the exported PDF document and create a clear separation between the header and the content.
 
-Supported line styles:
-* dash
-* dot
-* dashdot
-* dashdotdot
-* solid
+This can be achieved using the `PdfExportProperties` property of the Grid. You can customize the line style using different supported line styles listed below:
+
+* Dash
+* Dot
+* DashDot
+* DashDotDot
+* Solid
+
+To add a line in the header or footer of the exported PDF document, you can access the `Header.Contents` or `Footer.Contents` property of the `Header` or `Footer` in the `PdfExportProperties` property of the grid. 
+
+The following code example demostrates how to draw a line in the header of the exported PDF document. 
 
 ```typescript
 
@@ -57,38 +73,55 @@ var exportProperties = {
             {
                 type: 'Line',
                 style: { penColor: '#000080', penSize: 2, dashStyle: 'Solid' },
-                points: { x1: 0, y1: 4, x2: 685, y2: 4 }
+                points: { x1: 0, y1: 4, x2: 685, y2: 4 },
             }
         ]
     }
+    footer: {
+        fromBottom: 10,
+        height: 60,
+        contents: [
+            {
+                type: 'Line',
+                style: { penColor: '#000080', penSize: 2, dashStyle: 'Dot' },
+                points: { x1: 0, y1: 4, x2: 685, y2: 4 },
+            },
+        ],
+    },
 }
 
 ```
 
 ## Add page number in header and footer
 
-you can add page number either in Header or Footer of exported PDF document.
+When exporting data from the Syncfusion ASP.NET MVC Grid to a PDF document, you have an option to include page numbers in the header and footer section. This feature allows you to provide a reference to the page number for better document navigation.
 
-Supported page number types:
+This can be achieved using the `PdfExportProperties` property of the Grid. You can choose from different types of supported page number listed below:
+
 * LowerLatin - a, b, c,
 * UpperLatin - A, B, C,
 * LowerRoman - i, ii, iii,
 * UpperRoman - I, II, III,
-* Number - 1,2,3.
+* Number - 1,2,3,
+* Arabic - 1,2,3.
+
+To add a page number in the header or footer of the exported PDF document, you can access the `Header.Contents` or `Footer.Contents` property of the `Header` or `Footer` in the `PdfExportProperties` property of the grid. 
+
+The following code example demostrates how to add a page number in the footer of the exported PDF document.
 
 ```typescript
 
- var exportProperties = {
-    header: {
-        fromTop: 0,
-        height: 130,
+  var exportProperties = {
+    footer: {
+        fromBottom: 10,
+        height: 60,
         contents: [
             {
                 type: 'PageNumber',
                 pageNumberType: 'Arabic',
                 format: 'Page {$current} of {$total}', //optional
                 position: { x: 0, y: 25 },
-                style: { textBrushColor: '#ffff80', fontSize: 15, hAlign: 'Center' }
+                style: { textBrushColor: '#4169e1', fontSize: 15, hAlign: 'Center' }
             }
         ]
     }
@@ -98,7 +131,19 @@ Supported page number types:
 
 ## Insert an image in header and footer
 
-Image (Base64 string) can be added in the exported document in header/footer using the `exportProperties`.
+The Syncfusion ASP.NET MVC Grid have an option to include an image in the header and footer section when exporting data from the Grid to PDF document. This feature allows you to add a custom logo, branding, or any other relevant image to the exported document.
+
+You can use a base64 string with the .jpeg format to represent the image. This can be achieved using the `PdfExportProperties`property of the Grid component.
+
+To insert an image in the header or footer of the exported PDF document, follow these steps:
+
+1. Convert your desired image to a base64 string in the .jpeg format.
+
+2. Access the `PdfExportProperties` of the Grid component.
+
+3. Set the `Header.Contents.Src` property to the respective file of the image or the base64 string of the image.
+
+4. Trigger the PDF export operation.
 
 ```typescript
 
@@ -108,31 +153,18 @@ var exportProperties = {
         height: 130,
         contents: [
             {
-                type: 'Image',
-                src: image,
-                position: { x: 40, y: 10 },
-                size: { height: 100, width: 250 },
-            }
+              type: 'Image',
+              src: image,
+              position: { x: 40, y: 10 },
+              size: { height: 100, width: 150 },
+            },
         ]
     }
 }
 
 ```
 
-The below code illustrates the pdf export customization.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/header-footer/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Header-footer.cs" %}
-{% include code-snippet/grid/pdf-export/header-footer/header-footer.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The following example demonstrates how to add a header and footer to the exported grid. In the given example, we added lines in the header and footer, inserted an image in the header, and also added page number in the footer.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -142,28 +174,14 @@ The below code illustrates the pdf export customization.
 {% include code-snippet/grid/pdf-export/header-footer/header-footer.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Repeat column header on every page
 
-By default, column header will be placed on the first page of the pdf document but you can display column header on every page using **repeatHeader** property of **pdfGrid**.
+When exporting data from the Syncfusion ASP.NET MVC Grid to a PDF document, you have an option to repeat the column header on every page. This feature ensures that the column header remains visible and easily identifiable, even when the data spans multiple pages in the exported PDF document.
 
-In the below sample, we have enabled **repeatHeader** property in [`PdfHeaderQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfHeaderQueryCellInfo) event to show the header on every page.
+By default, the column header is occurs only on the first page of the PDF document. However, you can enable the `RepeatHeader` property of the **PdfGrid** object to **True** which display the column header on every page. This can be achieved using the [PdfHeaderQueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfHeaderQueryCellInfo) event of the Grid.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/repeat-header/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Pdf-export.cs" %}
-{% include code-snippet/grid/pdf-export/repeat-header/pdf-export.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The following example demonstrates how to repeat the column header on every page of the exported PDF document using the `PdfHeaderQueryCellInfo` event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -173,5 +191,3 @@ In the below sample, we have enabled **repeatHeader** property in [`PdfHeaderQue
 {% include code-snippet/grid/pdf-export/repeat-header/pdf-export.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
