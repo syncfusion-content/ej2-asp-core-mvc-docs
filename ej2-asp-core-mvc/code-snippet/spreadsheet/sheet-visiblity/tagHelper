@@ -50,9 +50,9 @@
      function created() {
       // Applies style formatting to active visible sheet
         this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-        this.cellFormat({ textAlign: 'center' }, 'D2:H11');
+        this.cellFormat({ textAlign: 'center' }, 'D2:F15');
         // Applies style formatting to active hidden sheet
         this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Hidden Sheet!A1:H1');
-        this.cellFormat({ textAlign: 'center' }, 'Hidden Sheet!D2:H15');
+        this.cellFormat({ textAlign: 'center' }, 'Hidden Sheet!D2:F15');
     }
 </script>
