@@ -10,8 +10,8 @@
                 </e-spreadsheet-rows>
                 <e-spreadsheet-columns>
                     <e-spreadsheet-column width="90"></e-spreadsheet-column>
-                    <e-spreadsheet-column width="220"></e-spreadsheet-column>
-                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="220" hidden="true"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90" hidden="true"></e-spreadsheet-column>
                     <e-spreadsheet-column width="140"></e-spreadsheet-column>
                     <e-spreadsheet-column width="90"></e-spreadsheet-column>
                     <e-spreadsheet-column width="100"></e-spreadsheet-column>

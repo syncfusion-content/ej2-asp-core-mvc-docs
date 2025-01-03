@@ -23,7 +23,7 @@
     function created() {
       // Applies style formatting to the active sheet before inserting a new sheet
         this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-        this.cellFormat({ textAlign: 'center' }, 'D2:H11');
+        this.cellFormat({ textAlign: 'center' }, 'D2:H15');
         // inserting a new sheet with data at 1st index
         // You can also insert empty sheets by specifying the start and end sheet index instead of sheet model
         this.insertSheet([{

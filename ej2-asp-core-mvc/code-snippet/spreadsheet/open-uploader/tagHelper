@@ -1,6 +1,8 @@
 @using Syncfusion.EJ2
 @{
-    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = @Url.Content("Home/Save"), RemoveUrl = @Url.Content("Home/Remove") };
+var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl =
+"https://services.syncfusion.com/aspnet/production/api/FileUploader/Save", RemoveUrl =
+"https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" };
 }
 <ejs-spreadsheet id="spreadsheet" openUrl="Home/Open">
 
