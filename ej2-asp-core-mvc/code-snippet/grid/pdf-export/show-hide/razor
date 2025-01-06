@@ -11,7 +11,6 @@
             let grid = document.getElementById("Grid").ej2_instances[0];
             grid.columns[1].visible = true; 
             grid.columns[2].visible = false;
-            grid.refreshColumns(); 
             grid.pdfExport();
         }
     }
@@ -20,6 +19,5 @@
         let grid = document.getElementById("Grid").ej2_instances[0];
         grid.columns[1].visible = false; 
         grid.columns[2].visible = true; 
-        grid.refreshColumns(); 
     }
 </script>
