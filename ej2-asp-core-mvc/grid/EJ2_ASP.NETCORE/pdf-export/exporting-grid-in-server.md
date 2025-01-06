@@ -47,7 +47,7 @@ N> Refer to the GitHub sample for quick implementation and testing from [here](h
 
 ## Export grid as memory stream
 
-The Grid offers an option to export the data as a memory stream instead of downloading it as a file in the browser. To obtain the memory stream of the exported grid, set the `AsMemoryStream` parameter to **true** in the `PdfExport` method.
+The Grid offers an option to export the data as a memory stream instead of downloading it as a file in the browser. To obtain the memory stream of the exported grid, set the `AsMemoryStream` parameter to **true** in the [PdfExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridPdfExport.html#Syncfusion_EJ2_GridExport_GridPdfExport_PdfExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_System_Boolean_Syncfusion_EJ2_GridExport_PdfExportProperties_) method.
 
 The following code demonstrates how to get the memory stream of exported grid.
 
@@ -160,7 +160,7 @@ public ActionResult PdfExport(string gridModel)
 
 ### Downloading the merged memory stream
 
-You can download the merged memory stream by converting it into a `FileStreamResul`t. In the following code, the merged memory stream is downloaded to the browser.
+You can download the merged memory stream by converting it into a `FileStreamResult`. In the following code, the merged memory stream is downloaded to the browser.
 
 ```ts
 using Syncfusion.Pdf;

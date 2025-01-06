@@ -274,7 +274,7 @@ The Syncfusion ASP.NET Core Grid component provides the ability to customize the
 
 ### Default fonts
 
-By default, the Grid uses the **Helvetica** font in the exported document. However, you can change the default font by utilizing the `PdfExportProperties.Theme` property. The available default fonts that you can choose from are:
+By default, the Grid uses the **Helvetica** font in the exported document. However, you can change the default font by utilizing the `pdfExportProperties.theme` property. The available default fonts that you can choose from are:
 
 * Helvetica
 * TimesRoman
