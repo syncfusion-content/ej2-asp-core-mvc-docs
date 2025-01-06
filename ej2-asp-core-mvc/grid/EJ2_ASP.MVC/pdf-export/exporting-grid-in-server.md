@@ -42,7 +42,7 @@ The following code snippet shows server configuration using ASP.NET MVC Controll
 {% endhighlight %}
 {% endtabs %}
 
-N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/MVC-EJ2-Grid-server-side-exporting).
+>Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/MVC-EJ2-Grid-server-side-exporting).
 
 ## Export grid as memory stream
 
