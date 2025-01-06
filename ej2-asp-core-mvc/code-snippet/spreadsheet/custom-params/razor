@@ -1,4 +1,4 @@
-@Html.EJS().Spreadsheet("spreadsheet").SaveUrl("Save").AllowSave(true).BeforeSave("beforeSave").Sheets((sheet) =>
+@Html.EJS().Spreadsheet("spreadsheet").SaveUrl("Home/Save").AllowSave(true).BeforeSave("beforeSave").Sheets((sheet) =>
 {
     sheet.Ranges((ranges) =>
     {
