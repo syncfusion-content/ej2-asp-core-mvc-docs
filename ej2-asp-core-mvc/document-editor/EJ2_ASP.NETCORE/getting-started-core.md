@@ -13,6 +13,8 @@ documentation: ug
 
 This section briefly explains about how to include [ASP.NET Core DocumentEditor](https://www.syncfusion.com/aspnet-core-ui-controls/word-processor) control in your ASP.NET Core application using Visual Studio.
 
+To get started quickly with ASP.NET Core DocumentEditor component, you can check the [video](https://www.syncfusion.com/tutorial-videos/aspnet-core/word-processor?title=getting-started-with-the-asp-net-core-word-processor).
+
 ## Prerequisites
 
 [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
