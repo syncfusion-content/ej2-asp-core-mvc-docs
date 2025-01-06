@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SummaryView in ##Platform_Name## QueryBuilder Component
+title: SummaryView in ##Platform_Name## QueryBuilder Component | Syncfusion
 description: Learn here all about Summary View in Syncfusion ##Platform_Name## QueryBuilder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Summary View
