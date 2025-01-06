@@ -8,7 +8,7 @@
         var toolItem = {
             prefixIcon: "e-de-ctnr-lock",
             tooltipText: "Disable Image",
-            text: "Disable Image",
+            text: onWrapText("Disable Image"),
             id: "Custom"
         };
         container.toolbarItems = [toolItem, 'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'InsertFootnote', 'InsertEndnote', 'Separator', 'Find', 'Separator', 'Comments', 'TrackChanges', 'Separator', 'LocalClipboard', 'RestrictEditing', 'Separator', 'FormFields', 'UpdateFields','ContentControl'];
@@ -21,4 +21,18 @@
             }
         };
     }
+
+    function onWrapText(text) {
+        let content = '';
+        const index = text.lastIndexOf(' ');
+
+        if (index !== -1) {
+            content = text.slice(0, index) + "<div class='e-de-text-wrap'>" + text.slice(index + 1) + "</div>";
+        } else {
+            content = text;
+        }
+
+        return content;
+    }
+
 </script>
