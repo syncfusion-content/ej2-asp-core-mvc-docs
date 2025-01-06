@@ -63,7 +63,7 @@ In the following sample, the detail row content is formatted by specifying the `
 
 The PDF export feature enables exporting of Grid with a caption template to an PDF document.
 
-In the following sample, the customized caption text is exported to PDF using `CaptionText`property in the [ExportGroupCaption](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExportGroupCaption) event.
+In the following sample, the customized caption text is exported to PDF using `CaptionText`property in the [ExportGroupCaption](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExportGroupCaption) event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

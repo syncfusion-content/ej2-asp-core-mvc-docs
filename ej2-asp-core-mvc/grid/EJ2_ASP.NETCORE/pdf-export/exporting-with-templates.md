@@ -33,7 +33,7 @@ In the following sample, the hyperlinks and images are exported to PDF using `hy
 
 ## Exporting with detail template
 
-By default, the grid will export the parent grid with expanded detail rows alone. Change the exporting option by using the `PdfExportProperties.hierarchyExportMode` property. The available options are:
+By default, the grid will export the parent grid with expanded detail rows alone. Change the exporting option by using the `pdfExportProperties.hierarchyExportMode` property. The available options are:
 
 | Mode     | Behavior    |
 |----------|-------------|
@@ -63,7 +63,7 @@ In the following sample, the detail row content is formatted by specifying the `
 
 The PDF export feature enables exporting of Grid with a caption template to an PDF document.
 
-In the following sample, the customized caption text is exported to PDF using [captionText](https://ej2.syncfusion.com/documentation/api/grid/exportGroupCaptionEventArgs/#captiontext) property in the [exportGroupCaption](https://ej2.syncfusion.com/documentation/api/grid/#exportgroupcaption) event.
+In the following sample, the customized caption text is exported to PDF using `captionText` property in the [exportGroupCaption](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExportGroupCaption) event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
