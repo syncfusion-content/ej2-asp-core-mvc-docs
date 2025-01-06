@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Listview Component
+title: Style in ##Platform_Name## Listview Control | Syncfusion
 description: Learn here all about Style in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style
@@ -111,9 +111,9 @@ Use the following CSS to customize the selected list item.
 
 ```CSS
 
-.e-listview .e-list-item.e-focused {
-    color: #2fa1ff;
-    background-color: rgb(0, 15, 100);
+.e-listview .e-list-item.e-active {
+    color: red;
+    background-color: aqua;
 }
 
 ```

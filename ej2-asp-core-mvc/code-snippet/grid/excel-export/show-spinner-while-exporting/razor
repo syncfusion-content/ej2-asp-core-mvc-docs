@@ -1,0 +1,21 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").AllowExcelExport().ToolbarClick("toolbarClick").ExcelExportComplete("excelExportComplete").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).Toolbar(new List<string>() {"ExcelExport" }).Render()
+<script>
+    function toolbarClick(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
+            grid.showSpinner();
+            grid.excelExport();
+        }
+    }
+    function excelExportComplete(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.hideSpinner();
+    }
+</script>
