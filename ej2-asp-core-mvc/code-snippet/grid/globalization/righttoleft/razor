@@ -1,33 +1,46 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-
-}).AllowPaging().AllowGrouping().EnableRtl(true).Locale("de-DE").PageSettings(page => page.PageSize(6)).Render()
-
+<div style="padding-bottom: 20px; display: flex">
+    <label style="margin-right: 10px;">Enable or diable RTL mode:</label>
+    @Html.EJS().Switch("switch").Change("onSwitchChange").Render()
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).AllowSorting(true).AllowReordering(true).AllowFiltering(true).AllowGrouping(true).Toolbar(new List<string>{ "Add", "Edit", "Delete", "Update", "Cancel" }).EditSettings(settings => settings.AllowEditing(true).AllowAdding(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).PageSettings(settings => settings.PageSize(7)).Height(220).EnableRtl(true).ShowColumnMenu(true).ShowColumnChooser(true).Columns(col =>{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Width(90).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width(100).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width(120).Add();
+    }).Render();
 <script>
-    ej.base.L10n.load({
-        'de-DE': {
-            'grid': {
-                'EmptyRecord': 'Keine Aufzeichnungen angezeigt',
-                'GroupDropArea': 'Ziehen Sie einen Spaltenkopf hier, um die Gruppe ihre Spalte',
-                'UnGroup': 'Klicken Sie hier, um die Gruppierung aufheben',
-                'EmptyDataSourceError': 'DataSource darf bei der Erstauslastung nicht leer sein, da Spalten aus der dataSource im AutoGenerate Spaltenraster',
-                'Item': 'Artikel',
-                'Items': 'Artikel'
-            },
-            'pager': {
-                'currentPageInfo': '{0} von {1} Seiten',
-                'totalItemsInfo': '({0} Beiträge)',
-                'firstPageTooltip': 'Zur ersten Seite',
-                'lastPageTooltip': 'Zur letzten Seite',
-                'nextPageTooltip': 'Zur nächsten Seite',
-                'previousPageTooltip': 'Zurück zur letzten Seit',
-                'nextPagerTooltip': 'Gehen Sie zu den nächsten Pager-Elementen',
-                'previousPagerTooltip': 'Gehen Sie zu vorherigen Pager-Elementen'
+loadLocaleFile();
+function loadLocaleFile() {
+    fetch('/Content/cldr-data/locale.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to load culture file');
             }
-        }
-    });
+            return response.json();
+        })
+        .then(arAELocalization => {
+            ej.base.L10n.load(arAELocalization);
+            applyLocaleToGrid();  // Refresh the grid after localization is loaded
+        })
+        .catch(error => {
+            console.error('Error loading culture file:', error);
+        });
+}
+
+function applyLocaleToGrid() {
+    var grid = document.getElementById('Grid').ej2_instances[0];
+    if (grid) {
+        grid.locale = "ar-AE";
+        grid.refresh();
+    }
+}
+
+function onSwitchChange(args) {
+    var grid = document.getElementById("Grid").ej2_instances[0];
+    if (args.checked) {
+        grid.enableRtl = false;
+    } else {
+        grid.enableRtl = true;
+    }
+}
 </script>
