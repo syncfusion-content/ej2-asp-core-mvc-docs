@@ -13,18 +13,18 @@ namespace EJ2_Core_Application.Controllers
     {
         public IActionResult Index()
         {
-            ViewBag.usmap = GetUSMap();
-            ViewBag.usMap = GetMap();
+            ViewBag.worldmap = GetWorldMap();
+            ViewBag.worldMap = GetMap();
             return View();
         }
-        public object GetUSMap()
+        public object GetWorldMap()
         {
-            string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/USA.json");
+            string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/WorldMap.json");
             return JsonConvert.DeserializeObject(allText);
         }
         public object GetMap()
         {
-            string allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/USA.json"));
+            string allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/WorldMap.json"));
             return JsonConvert.DeserializeObject(allText, typeof(object));
         }
     }
