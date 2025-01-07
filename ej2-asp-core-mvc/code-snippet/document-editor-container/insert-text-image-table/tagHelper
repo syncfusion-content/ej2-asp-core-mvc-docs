@@ -6,48 +6,78 @@
     var documenteditor;
     var container;
     function onCreated() {
-        var documenteditorElement = document.getElementById("container");
-        container = documenteditorElement.ej2_instances[0];
-        // To insert the table in cursor position
-        container.documentEditor.editor.insertTable(2, 2);
-        // To insert the image at table first cell
-        container.documentEditor.editor.insertImage("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4    //8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==");
-        // To move the cursor to next cell
-        moveCursorToNextCell();
-        // To insert the image at table second cell
-        container.documentEditor.editor.insertImage("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4    //8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==");
-        // To move the cursor to next row
-        moveCursorToNextRow();
-        // To insert text in cursor position
-        container.documentEditor.editor.insertText('Text');
-        // To move the cursor to next cell
-        moveCursorToNextCell();
-        // To insert text in cursor position
-        container.documentEditor.editor.insertText('Text');
+      var documenteditorElement = document.getElementById("container");
+      container = documenteditorElement.ej2_instances[0];
+      // To insert the table in cursor position
+      container.documentEditor.editor.insertTable(2, 5);
+      // To insert the image at table first cell
+      container.documentEditor.editor.insertImage(
+        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4    //8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=='
+      );
+      // To move the cursor to next cell
+      moveCursorToNextCell();
+      // To insert the image at table second cell
+      container.documentEditor.editor.insertImage(
+        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4    //8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=='
+      );
+      // To move the cursor to next cell
+      moveCursorToNextCell();
+      // To insert text in cursor position
+      container.documentEditor.editor.insertText('Text');
+      // To move the cursor to next cell
+      moveCursorToNextCell();
+      // To insert text in cursor position
+      container.documentEditor.editor.insertText('Text');
+      // To move the cursor to next cell
+      moveCursorToNextCell();
+      // To insert text in cursor position
+      container.documentEditor.editor.insertText('Text');
+      // To move the cursor to next row
+      moveCursorToNextRow();
+      // To insert text in cursor position
+      container.documentEditor.editor.insertText('Text');
+      // To move the cursor to next cell
+      moveCursorToNextCell();
+      // To insert text in cursor position
+      container.documentEditor.editor.insertText('Text');
+      // To move the cursor to next cell
+      moveCursorToNextCell();
+      // To insert text in cursor position
+      container.documentEditor.editor.insertText('Text');
+      // To move the cursor to next cell
+      moveCursorToNextCell();
+      // To insert text in cursor position
+      container.documentEditor.editor.insertText('Text');
+      // To move the cursor to next cell
+      moveCursorToNextCell();
+      // To insert text in cursor position
+      container.documentEditor.editor.insertText('Text');
     }
-function moveCursorToNextCell() {
-  // To get current selection start offset
-  var startOffset = container.documentEditor.selection.startOffset;
-  // Increasing cell index to consider next cell
-  var startOffsetArray = startOffset.split(';');
-  startOffsetArray[3] = parseInt(startOffsetArray[3]) + 1;
-  // Changing start offset
-  startOffset = startOffsetArray.join(';');
-  // Navigating selection using select method
-  container.documentEditor.selection.select(startOffset, startOffset);
-}
+    function moveCursorToNextCell() {
+      // To get current selection start offset
+      var startOffset = container.documentEditor.selection.startOffset;
+      var offSet = startOffset.split(';');
+      // Increasing cell index to consider next cell
+      var cellIndex = parseInt(offSet[3]) + 1;
+      offSet[3] = cellIndex.toString();
+      // Changing start offset
+      startOffset = offSet.join(';');
+      // Navigating selection using select method
+      container.documentEditor.selection.select(startOffset, startOffset);
+    }
 
-function moveCursorToNextRow() {
-  // To get current selection start offset
-  var startOffset = container.documentEditor.selection.startOffset;
-  // Increasing row index to consider next row
-  var startOffsetArray = startOffset.split(';');
-  startOffsetArray[2] = parseInt(startOffsetArray[2]) + 1;
-  // Going back to first cell
-  startOffsetArray[3] = 0;
-  // Changing start offset
-  startOffset = startOffsetArray.join(';');
-  // Navigating selection using select method
-  container.documentEditor.selection.select(startOffset, startOffset);
-}
+    function moveCursorToNextRow() {
+      // To get current selection start offset
+      var startOffset = container.documentEditor.selection.startOffset;
+      var offSet = startOffset.split(';');
+      // Increasing row index to consider next row
+      var rowIndex = parseInt(offSet[2]) + 1;
+      offSet[2] = rowIndex.toString();
+      var cellIndex = 0;
+      offSet[3] = cellIndex.toString();
+      // Changing start offset
+      startOffset = startOffset = offSet.join(';');
+      // Navigating selection using select method
+      container.documentEditor.selection.select(startOffset, startOffset);
+    }
   </script>
