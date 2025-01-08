@@ -27,7 +27,8 @@ DocumentEditorContainer allows to customize (add, show, hide, enable, and disabl
 {% endhighlight %}
 {% highlight c# tabtitle="Custom-toolbar.cs" %}
 {% include code-snippet/document-editor/custom-toolbar/document-editor.cs %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -37,7 +38,8 @@ DocumentEditorContainer allows to customize (add, show, hide, enable, and disabl
 {% endhighlight %}
 {% highlight c# tabtitle="Custom-toolbar.cs" %}
 {% include code-snippet/document-editor/custom-toolbar/document-editor.cs %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -58,7 +60,8 @@ DocumentEditorContainer enables the customization of dropdown menus within toolb
 {% endhighlight %}
 {% highlight c# tabtitle="custom-toolbar-dropdown.cs" %}
 {% include code-snippet/document-editor/custom-toolbar-dropdown/document-editor.cs %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -68,5 +71,6 @@ DocumentEditorContainer enables the customization of dropdown menus within toolb
 {% endhighlight %}
 {% highlight c# tabtitle="custom-toolbar-dropdown.cs" %}
 {% include code-snippet/document-editor/custom-toolbar-dropdown/document-editor.cs %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
