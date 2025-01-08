@@ -1,4 +1,4 @@
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();

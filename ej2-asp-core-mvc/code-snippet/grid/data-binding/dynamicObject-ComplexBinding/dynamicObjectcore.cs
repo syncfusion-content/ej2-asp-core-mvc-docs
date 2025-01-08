@@ -1,21 +1,21 @@
 public static List<DynamicList> DynamicOrders { get; set; } = new List<DynamicList>();
 
-public ActionResult Index()
+public void OnGet()
 {
-    string[] customerIDs = { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" };
+    string[] customerID = { "John Doe", "Jane Smith", "Alice Johnson", "Bob Brown", "Charlie Davis" };
     string[] shipCountrys = { "USA", "UK", "Denmark", "Australia", "India" };
     DynamicOrders = Enumerable.Range(1, 75).Select((x) =>
     {
         dynamic order = new DynamicList();
        order.OrderID = 1000 + x;
-       order.CustomerID = customerIDs[x % customerIDs.Length];
-       order.Freight = (new double[] { 2, 1, 4, 5, 3 })[new Random().Next(5)] * x;
-       order.OrderDate = (new DateTime[] { new DateTime(2010, 11, 5), new DateTime(2018, 10, 3), new DateTime(1995, 9, 9), new DateTime(2012, 8, 2), new DateTime(2015, 4, 11) })[new Random().Next(5)];
-       order.ShipCountry = shipCountrys[x % shipCountrys.Length];
+       order.Customer = new DynamicList();
+       order.Customer.CustomerID = customerID[x % customerID.Length];
+       order.Customer.Freight = (new double[] { 2, 1, 4, 5, 3 })[new Random().Next(5)] * x;
+       order.Customer.OrderDate = (new DateTime[] { new DateTime(2010, 11, 5), new DateTime(2018, 10, 3), new DateTime(1995, 9, 9), new DateTime(2012, 8, 2), new DateTime(2015, 4, 11) })[new Random().Next(5)];
+       order.Customer.ShipCountry = shipCountrys[x % shipCountrys.Length];
         return order;
     }).Cast<DynamicList>().ToList<DynamicList>();
-    ViewBag.DynamicData = DynamicOrders;
-    return View();
+    ViewData["DynamicData"] = DynamicOrders;
 }
 
 public class DynamicList : DynamicObject
@@ -28,7 +28,6 @@ public class DynamicList : DynamicObject
         result = property.Value;
         return property.Key != null;
     }
-
     public override bool TrySetMember(SetMemberBinder binder, object value)
     {
         string name = binder.Name;

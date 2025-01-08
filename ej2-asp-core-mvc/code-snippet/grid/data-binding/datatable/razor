@@ -1,8 +1,8 @@
-@Html.EJS().Grid("DataTable").DataSource((System.Data.DataTable)ViewBag.dataSource).Columns(col =>
+@Html.EJS().Grid("grid").DataSource((System.Data.DataTable)ViewBag.dataSource).Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").Width("120").Add();
+   col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").Add();
-
+   col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
+   col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("130").Format("yMd").Add();
+   col.Field("ShipCity").HeaderText("ShipCity").Width("150").Add();
 }).AllowPaging().Render()

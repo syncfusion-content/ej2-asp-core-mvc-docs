@@ -1,6 +1,5 @@
-public static List<ExpandoObject> ExpandoOrders { get; set; } = new List<ExpandoObject>();
-
-public ActionResult Index()
+public List<ExpandoObject> ExpandoOrders { get; set; } = new List<ExpandoObject>();
+public void OnGet()
 {
     string[] customerID = { "John Doe", "Jane Smith", "Alice Johnson", "Bob Brown", "Charlie Davis" };
     string[] shipCountrys = { "USA", "UK", "Denmark", "Australia", "India" };
@@ -16,6 +15,5 @@ public ActionResult Index()
        order.Customer.ShipCountry = shipCountrys[x % shipCountrys.Length];;
         return order;
     }).Cast<ExpandoObject>().ToList<ExpandoObject>();
-    ViewBag.ExpandoData = ExpandoOrders;
-    return View();
+    ViewData["ExpandoData"] = ExpandoOrders;
 }

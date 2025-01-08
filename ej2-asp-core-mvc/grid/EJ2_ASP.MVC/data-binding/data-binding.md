@@ -179,6 +179,57 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 >* The Grid state persistence feature does not support the  `changeDataSource` method.
 >* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/aspnetmvc/grid/flexibledata#/fluent2) resource.
 
+## DataTable
+
+The DataTable feature represents a structured table with relational data, equipped with an in-built schema that simplifies working with data column and row objects. This allows for a more intuitive way to manage and display complex data in the Syncfusion Grid.
+
+To bind a DataTable to the Syncfusion Grid, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. When you bind a DataTable, grid actions such as Sorting, Filtering, Grouping, and Paging are processed on the client side, enhancing performance and responsiveness.
+
+Here's how to bind a `DataTable` to the Syncfusion Grid:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/datatable/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Datatable.cs" %}
+{% include code-snippet/grid/data-binding/datatable/datatable.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### DataTable with on-demand Grid actions
+
+The [On-Demand Grid Actions](#handling-on-demand-grid-actions/) feature in Syncfusion Grid enables server-side processing of grid actions, such as sorting, filtering, grouping, and paging. This is especially useful for applications with large datasets, where client-side operations can impact performance.
+
+To implement on-demand server-side actions with a DataTable, you need to:
+
+1. Convert the `DataTable` to an **IEnumerable** object using the **Utils.DataTableToJson** method.
+2. Use the **DataOperations** class in the controller to process grid actions like sorting, filtering, and paging.
+3. Return the result as a JSON object with a **result** (data) and **count** (total record count) pair.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/clientdatatable/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dataoperation.cs" %}
+{% include code-snippet/grid/data-binding/clientdatatable/dataoperation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### DataTable with CRUD operations
+
+To perform server side CRUD operations for DataTable, you need to use **InsertUrl**, **UpdateUrl** and **RemoveUrl** of DataManager for inserting, updating and deleting the records in the specified controller actions.
+
+To pass the data from client side to server side when performing CRUD operations, you need to use `ExpandoObject` as a parameter for inserting and adding actions.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/cruddatatable/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dataoperation.cs" %}
+{% include code-snippet/grid/data-binding/cruddatatable/dataoperation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Troubleshoot: Grid render rows without data
 
 In ASP.NET Core, by default the JSON results are returned in camelCase format. So grid field names are also changed in camelCase.

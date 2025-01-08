@@ -1,6 +1,5 @@
 public static List<DynamicList> DynamicOrders { get; set; } = new List<DynamicList>();
-
-public ActionResult Index()
+public void OnGet()
 {
     string[] customerIDs = { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" };
     string[] shipCountrys = { "USA", "UK", "Denmark", "Australia", "India" };
@@ -14,8 +13,8 @@ public ActionResult Index()
        order.ShipCountry = shipCountrys[x % shipCountrys.Length];
         return order;
     }).Cast<DynamicList>().ToList<DynamicList>();
-    ViewBag.DynamicData = DynamicOrders;
-    return View();
+
+    ViewData["DynamicData"] = DynamicOrders;
 }
 
 public class DynamicList : DynamicObject
