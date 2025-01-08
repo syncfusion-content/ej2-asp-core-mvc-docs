@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Map Provider in Syncfusion ##Platform_Name## Maps Component
-description: Learn here all about Map Provider in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+title: OpenStreetMaps in Syncfusion ##Platform_Name## Maps Component
+description: Learn here all about OpenStreetMaps in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Map Provider
+control: OpenStreetMaps
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

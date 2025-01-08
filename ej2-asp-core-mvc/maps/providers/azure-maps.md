@@ -10,15 +10,50 @@ documentation: ug
 
 # Azure Maps in ##Platform_Name## Maps Component
 
-Azure Maps is yet another online Maps provider, owned by Microsoft. As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area.
+{% if page.publishingplatform == "aspnet-core" %}
+
+Azure Maps is yet another online Maps provider, owned by Microsoft. As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The Azure Maps can be rendered from online map service providers by specifying the URL provided by those providers in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of Azure online map services, allowing users to preview their maps in the Syncfusion EJ2 Maps control. The following template provides a preview of Azure Maps within the Syncfusion EJ2 Maps control.
+
+<!-- markdownlint-disable MD034 -->
+
+Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.png
+
+* "${z}" - It represents zoom factor (level).
+* "${x}" - It indicates tile image x-position (tileX).
+* "${y}" - It indicates tile image y-position (tileY).
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Azure Maps is yet another online Maps provider, owned by Microsoft. As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The Azure Maps can be rendered from online map service providers by specifying the URL provided by those providers in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of Azure online map services, allowing users to preview their maps in the Syncfusion EJ2 Maps control. The following template provides a preview of Azure Maps within the Syncfusion EJ2 Maps control.
+
+<!-- markdownlint-disable MD034 -->
+
+Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.png
+
+* "${z}" - It represents zoom factor (level).
+* "${x}" - It indicates tile image x-position (tileX).
+* "${y}" - It indicates tile image y-position (tileY).
+
+{% endif %}
 
 ## Adding Azure Maps
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers. In the meantime, a subscription key is required for Azure Maps. Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
+The Azure map tiles can be accessed using the following URL Template:
+https://atlas.microsoft.com/map/tile?api-version=2024-04-01&tilesetId=microsoft.base.road&zoom={zoom}&x={x}&y={y}&subscription-key=Your_Key
 
-N>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
+In this template, {zoom} represents the zoom level of the map, {x} represents the horizontal position of the tile, and {y} represents the vertical position of the tile. These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile. The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
+
+>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
+
+You can view the available tile types of Azure Maps by following the link below.
+
+https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile?view=rest-maps-2023-06-01&tabs=HTTP#tilesetid
+ 
+>The Syncfusion EJ2 Maps only support displaying maps with raster images in **PNG** or **JPG** formats.
+
+In the following example, the Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -31,9 +66,20 @@ N>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/lega
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-The Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers. In the meantime, a subscription key is required for Azure Maps. Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
+The Azure map tiles can be accessed using the following URL Template:
+https://atlas.microsoft.com/map/tile?api-version=2024-04-01&tilesetId=microsoft.base.road&zoom={zoom}&x={x}&y={y}&subscription-key=Your_Key
 
-N>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
+In this template, {zoom} represents the zoom level of the map, {x} represents the horizontal position of the tile, and {y} represents the vertical position of the tile. These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile. The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
+
+>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
+
+You can view the available tile types of Azure Maps by following the link below.
+
+https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile?view=rest-maps-2023-06-01&tabs=HTTP#tilesetid
+ 
+>The Syncfusion EJ2 Maps only support displaying maps with raster images in **PNG** or **JPG** formats.
+
+In the following example, the Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -45,7 +91,7 @@ N>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/lega
 {% endtabs %}
 {% endif %}
 
-![Azure Maps](../images/MapProviders/azure-maps.PNG)
+![Azure Maps](../images/MapProviders/Azure-maps/azure-maps.PNG)
 
 ## Enabling zooming and panning
 
@@ -74,7 +120,7 @@ The Azure Maps layer can be zoomed and panned. Zooming helps to get a closer loo
 {% endtabs %}
 {% endif %}
 
-![Azure Maps with Zooming](../images/MapProviders/azure-maps-zooming.PNG)
+![Azure Maps with Zooming and Panning](../images/MapProviders/Azure-maps/azure-maps-zooming.gif)
 
 ## Adding markers and navigation line
 
@@ -105,7 +151,7 @@ Markers can be added to the layers of Azure Maps by setting the corresponding lo
 {% endtabs %}
 {% endif %}
 
-![Azure Maps with Markers and Navigation Line](../images/MapProviders/azure-maps-marker-and-line.PNG)
+![Azure Maps with Markers and Navigation Line](../images/MapProviders/Azure-maps/azure-maps-marker-and-line.PNG)
 
 ## Adding sublayer
 
@@ -136,7 +182,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Azure Maps layer f
 {% endtabs %}
 {% endif %}
 
-![Azure Maps with Sublayer](../images/MapProviders/azure-map-sublayer.PNG)
+![Azure Maps with Sublayer](../images/MapProviders/Azure-maps/azure-map-sublayer.PNG)
 
 ## Enabling legend
 
@@ -167,4 +213,4 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 {% endtabs %}
 {% endif %}
 
-![Azure Maps with Legend](../images/MapProviders/azure-map-legend.PNG)
+![Azure Maps with Legend](../images/MapProviders/Azure-maps/azure-map-legend.PNG)
