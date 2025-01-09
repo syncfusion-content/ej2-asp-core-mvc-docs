@@ -12,7 +12,7 @@
 <script>
 
    function created() {
-        this.cellFormat({ fontWeight: 'bold', fontSize: '12pt'}, 'A1:E1');
+        this.cellFormat({ fontWeight: 'bold', fontSize: '12pt'}, 'A1:F1');
         this.cellFormat({ color: '#10c469' }, 'B1:B10');
     }
 

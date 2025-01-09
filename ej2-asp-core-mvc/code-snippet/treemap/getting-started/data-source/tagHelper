@@ -1,6 +1,8 @@
 @using Syncfusion.EJ2;
-<div id="container">
-        @Html.EJS().TreeMap("container").Load("load").Height("350px").WeightValuePath("Count").LeafItemSettings(leaf => leaf.LabelPath("State")).Render()
+  <div id="container">
+        <ejs-treemap id="container" load="load" height="350px" weightValuePath="Count">
+                <e-treemap-leafitemsettings labelPath="State"></e-treemap-leafitemsettings>
+        </ejs-treemap>
 </div>
 <script>
     function load(args)

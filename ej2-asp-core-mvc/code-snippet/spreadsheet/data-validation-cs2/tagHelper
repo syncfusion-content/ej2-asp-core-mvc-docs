@@ -76,15 +76,15 @@
                         <e-spreadsheet-cell value="1,00,095.00"></e-spreadsheet-cell>
                     </e-spreadsheet-cells>
                 </e-spreadsheet-row>
-                <e-spreadsheet-columns>
-                    <e-spreadsheet-column width="88"></e-spreadsheet-column>
-                    <e-spreadsheet-column width="88"></e-spreadsheet-column>
-                    <e-spreadsheet-column width="106"></e-spreadsheet-column>
-                    <e-spreadsheet-column width="98"></e-spreadsheet-column>
-                    <e-spreadsheet-column width="88"></e-spreadsheet-column>
-                    <e-spreadsheet-column width="81"></e-spreadsheet-column>
-                </e-spreadsheet-columns>
             </e-spreadsheet-rows>
+            <e-spreadsheet-columns>
+                <e-spreadsheet-column width="88"></e-spreadsheet-column>
+                <e-spreadsheet-column width="88"></e-spreadsheet-column>
+                <e-spreadsheet-column width="106"></e-spreadsheet-column>
+                <e-spreadsheet-column width="98"></e-spreadsheet-column>
+                <e-spreadsheet-column width="88"></e-spreadsheet-column>
+                <e-spreadsheet-column width="81"></e-spreadsheet-column>
+            </e-spreadsheet-columns>
         </e-spreadsheet-sheet>
     </e-spreadsheet-sheets>
 </ejs-spreadsheet>

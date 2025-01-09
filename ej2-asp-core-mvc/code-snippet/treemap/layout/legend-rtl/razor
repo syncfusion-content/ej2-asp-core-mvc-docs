@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2;
 <div id="container">
-            @Html.EJS().TreeMap("container").EnableRtl(true).WeightValuePath("count").LegendSettings(legend => legend.Visible(true).Position(Syncfusion.EJ2.TreeMap.LegendPosition.Top)).LeafItemSettings(leaf => leaf.LabelPath("Car")).Render()
+    @Html.EJS().TreeMap("container").Load("load").EnableRtl(true).WeightValuePath("count").ColorValuePath("color").LegendSettings(legend => legend.Visible(true).Position(Syncfusion.EJ2.TreeMap.LegendPosition.Top)).LeafItemSettings(leaf => leaf.LabelPath("Car")).Render()
 </div>
 <script>
     function load(args)

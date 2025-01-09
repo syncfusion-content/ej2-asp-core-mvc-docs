@@ -33,7 +33,7 @@
       function dataBound() {
         this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:D1');
         this.cellFormat({ fontWeight: 'bold'}, 'A11:D11');
-        spreadsheet.protectSheet(1, { selectCells: false}, "syncfusion"); // protect sheet with password
+        this.protectSheet(1, { selectCells: false}, "syncfusion"); // protect sheet with password
     }
 
     </script>

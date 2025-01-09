@@ -1,4 +1,4 @@
-<ejs-spreadsheet id="spreadsheet" allowSave="true" saveUrl="Save" beforeSave="beforeSave">
+<ejs-spreadsheet id="spreadsheet" allowSave="true" saveUrl="Home/Save" beforeSave="beforeSave">
     <e-spreadsheet-sheets>
         <e-spreadsheet-sheet>
             <e-spreadsheet-ranges>

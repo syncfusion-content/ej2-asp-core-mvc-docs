@@ -1,8 +1,8 @@
-@{ 
-   var colorMaps = new[]{
-               new {from=500,to=3000, minOpacity=0.2,maxOpacity=0.5,color='orange'},
-			   new {from=3000,to=5000, minOpacity=0.5,maxOpacity=0.8,color='green'},
-            };
+@{
+    var colorMaps = new List<TreeMapColorMapping> {
+        new TreeMapColorMapping { From=500,To=3000, MinOpacity=0.2,MaxOpacity=0.5,Color="orange" },
+        new TreeMapColorMapping { From=3000,To=5000, MinOpacity=0.5,MaxOpacity=0.8,Color="green"}
+    };
 }
 @using Syncfusion.EJ2;
 <div id="container">
