@@ -39,6 +39,6 @@ function actionComplete(args) {
     .e-footer-content .e-btn.e-success.custom-button-style {
         border-radius: 4px;
         font-size: 15px;
-        background: #55a655;;
+        background: #a1c595;
     }
 </style>
