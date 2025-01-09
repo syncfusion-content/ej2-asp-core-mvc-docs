@@ -252,5 +252,5 @@ You can prevent drag-and-drop action by setting the actionBegin argument cancel 
 
 ## See Also
 
-* [How to edit the quick toolbar settings](./toolbar/#quick-inline-toolbar)
-* [How to use link editing option in the toolbar items](./link/)
+* [How to edit the quick toolbar settings](./toolbar#quick-inline-toolbar)
+* [How to use link editing option in the toolbar items](./link)
