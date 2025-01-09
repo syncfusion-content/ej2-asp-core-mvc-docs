@@ -64,16 +64,15 @@ Here is an example that demonstrates how to use built-in aggregates types in the
 
 ![Built-in aggregate types](../images/aggregates/aggregate-types.png)
 
-
 ## Multiple aggregates for a column
 
 Multiple aggregates for a column allows you to calculate and display different summary values simultaneously for a single column in a grid. Normally, a column is associated with a single aggregate function, such as sum, average, count and etc., which provides a single summary value for the entire column.
 
 However, in scenarios where you need to display multiple summary values for the same column, multiple aggregates come into play. This feature enables you to calculate and display various aggregate values, such as sum, average, minimum, maximum, or custom calculations, concurrently for a specific column.
 
-You can use multiple aggregates for a single column in the Syncfusion ASP.Net Core Grid by specifying the aggregate `type` as an array.
+You can use multiple aggregates for a single column in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net Core Grid by specifying the aggregate `type` as an array.
 
-Here's an example of how to use multiple aggregates in the Syncfusion ASP.Net Core Grid:
+Here's an example of how to use multiple aggregates in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net Core Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

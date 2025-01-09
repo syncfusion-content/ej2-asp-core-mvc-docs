@@ -219,7 +219,7 @@ In the below example, we have used the `expand` query to load the nested Employe
 
 ### Complex data binding with list of array of objects
 
-The Syncfusion Grid supports complex data binding with lists of arrays of objects. This feature allows you to bind complex data with multiple levels of nested objects and arrays to the Grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports complex data binding with lists of arrays of objects. This feature allows you to bind complex data with multiple levels of nested objects and arrays to the Grid.
 
 The following example shows how to set complex field for datasource having array of objects.
 
@@ -236,7 +236,7 @@ The following example shows how to set complex field for datasource having array
 
 ### How to set complex column as foreign key column
 
-The Syncfusion Grid control provides the ability to set complex columns as foreign key columns. This allows you to display related data from a foreign data source based on the complex column value.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides the ability to set complex columns as foreign key columns. This allows you to display related data from a foreign data source based on the complex column value.
 
 The following example demonstrates how to set the **Employee.EmployeeID** column as a foreign key column, and display the **FirstName** column from the foreign data.
 
