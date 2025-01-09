@@ -1,0 +1,41 @@
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="273px" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })" actionComplete="onActionComplete">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID"  headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100" validationRules="@(new { required= true })"></e-grid-column>                
+        <e-grid-column field="CustomerID" headerText="Customer Name" type="string" width="120" validationRules="@(new { required= true })"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="120" validationRules="@(new { required= true, min= 1,max=1000 })"></e-grid-column>                               
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" editType="dropdownedit" validationRules="@(new { required= true })"></e-grid-column>                
+    </e-grid-columns>
+ </ejs-grid>
+ <script>
+  function onActionComplete(args) {
+    if (args.requestType == "beginEdit" || args.requestType == "add") { 
+      var grid = document.getElementById("grid").ej2_instances[0];
+      var valueError = ej.grids.getObject('valErrorPlacement', grid.editModule).bind(grid.editModule);  
+      grid.editModule.formObj.customPlacement = (input, error) => { 
+        valueError(input, error);
+        var element = document.getElementById(input.name + '_Error');
+        var tooltipWidth = element.offsetWidth;
+        var  inputElement = null;
+        if (document.querySelector('#' + grid.element.id + input.name)) {
+          inputElement = document.querySelector('#' +grid.element.id + input.name);
+        } else if (document.querySelector('#' + input.name)) {
+          inputElement = document.querySelector('#' + input.name);
+        }
+        var inputPosition =  inputElement.getBoundingClientRect();
+        var leftPosition =  (inputPosition.left - tooltipWidth - 16).toString() + 'px'; //for right side
+        var topPosition = inputPosition.top.toString() + 'px';
+        element.style.left = leftPosition; 
+        element.style.top =  topPosition;
+        element.style.position = 'fixed';
+      } 
+    }
+  }
+</script>
+<style>
+    .e-gridform .e-arrow-tip.e-tip-top {
+        transform: rotate(90deg);
+        left: 121px;
+        top: 10px;
+    }
+</style>
