@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import in ##Platform_Name## Document Editor Component
+title: Import in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about Import in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Import
@@ -11,7 +11,7 @@ documentation: ug
 
 # Import
 
-In Document Editor, the documents are stored in its own format called **Syncfusion Document Text (SFDT)**.
+In Document Editor, the documents are stored in its own format called **Syncfusion<sup style="font-size:70%">&reg;</sup> Document Text (SFDT)**.
 
 The following example shows how to open SFDT data in Document Editor.
 
