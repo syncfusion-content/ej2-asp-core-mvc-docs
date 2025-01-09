@@ -158,10 +158,10 @@ Here’s an example of how to add a title to your Grid when using the print func
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/titleprint/razor %}
+{% include code-snippet/grid/print/print-add-title/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Titleprint.cs" %}
-{% include code-snippet/grid/print/titleprint/titleprint.cs %}
+{% highlight c# tabtitle="print.cs" %}
+{% include code-snippet/grid/print/print-add-title/print.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -173,10 +173,10 @@ The following example demonstrates how to print the expanded child grids from ot
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/hierarchyprint-otherpage/razor %}
+{% include code-snippet/grid/print/print-expanded-state/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Hierarchyprint.cs" %}
-{% include code-snippet/grid/print/hierarchyprint-otherpage/hierarchyprint.cs %}
+{% include code-snippet/grid/print/print-expanded-state/hierarchyprint.cs %}
 {% endhighlight %}
 {% endtabs %}
 

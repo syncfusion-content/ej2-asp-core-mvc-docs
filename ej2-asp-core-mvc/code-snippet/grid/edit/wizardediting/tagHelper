@@ -27,11 +27,11 @@
         },
         args.form.elements.namedItem('ShipCountry')
       );
-      var numeric = new ej.inputs.NumericTextBox({
+      var freightInput = new ej.inputs.NumericTextBox({
         floatLabelType: 'Always',
         placeholder: 'Freight'
       });
-      numeric.appendTo('#Freight');
+      freightInput.appendTo('#Freight');
       new ej.dropdowns.DropDownList(
        {
           value: args.rowData.ShipCity,
@@ -66,14 +66,14 @@
       }
     };
     function validate() {
-      var valid = true;
+      var isValid = true;
       [].slice.call(document.getElementById('tab' + currentTab).querySelectorAll('[name]')).forEach((element) => {
         element.form.ej2_instances[0].validate(element.name);
         if (element.getAttribute('aria-invalid') === 'true') {
-          valid = false;
+          isValid = false;
         }
       });
-      if (!valid) {
+      if (!isValid) {
         return false;
       }
       return true;

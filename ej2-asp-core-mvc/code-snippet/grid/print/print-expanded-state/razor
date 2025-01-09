@@ -1,5 +1,5 @@
 @{
-   var SecondChildGrid = new Syncfusion.EJ2.Grids.Grid() { DataSource = (IEnumerable<object>)ViewBag.CustomerDataSource,
+   var secondChildGrid = new Syncfusion.EJ2.Grids.Grid() { DataSource = (IEnumerable<object>)ViewBag.CustomerDataSource,
        QueryString = "CustomerID",
        Columns = new List<Syncfusion.EJ2.Grids.GridColumn>
        {
@@ -7,7 +7,7 @@
          new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCountry", HeaderText="Ship Country", Width="90" },
         }
    };
-   var ChildGrid = new Syncfusion.EJ2.Grids.Grid() { DataSource = (IEnumerable<object>)ViewBag.DataSource,
+   var childGrid = new Syncfusion.EJ2.Grids.Grid() { DataSource = (IEnumerable<object>)ViewBag.DataSource,
           QueryString = "EmployeeID",
           Columns = new List<Syncfusion.EJ2.Grids.GridColumn>
           {
@@ -16,7 +16,7 @@
             new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="150" },
             new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="120" },
           },
-          ChildGrid = SecondChildGrid
+          ChildGrid = secondChildGrid
       };
 }
                 
@@ -26,7 +26,7 @@
    col.Field("FirstName").HeaderText("First Name").Width("125").Add();
    col.Field("Title").HeaderText("Title").Width("180").Add();
    col.Field("City").HeaderText("City").Width("135").Add();
-}).AllowPaging().PageSettings(page => page.PageSize(4)).Toolbar(new List<string>() { "Print"}).ChildGrid(ChildGrid).ActionBegin("actionBegin").Load("load").Render();            
+}).AllowPaging().PageSettings(page => page.PageSize(4)).Toolbar(new List<string>() { "Print"}).ChildGrid(childGrid).ActionBegin("actionBegin").Load("load").Render();            
 <script>
     var persistedExpandedRows = {};
     function actionBegin(eventArgs) {
