@@ -44,4 +44,4 @@ Output be like the below.
 
 ## See Also
 
-* [Configuring options](./config/)
+* [Configuring options](./config)
