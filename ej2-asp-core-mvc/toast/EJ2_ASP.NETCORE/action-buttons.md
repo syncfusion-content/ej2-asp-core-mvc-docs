@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Action Buttons in ##Platform_Name## Toast Component
+title: Action Buttons in ##Platform_Name## Toast Component | Syncfusion
 description: Learn here all about Action Buttons in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Action Buttons
