@@ -1,12 +1,11 @@
 @using Syncfusion.EJ2.Schedule
-@using Syncfusion.EJ2.Schedule
 @using Syncfusion.EJ2.Navigations
 
 @(Html.EJS().Schedule("schedule")
     .Width("100%")
     .Height("650px")
     .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
-    .SelectedDate(new DateTime(2018, 2, 15))
+    .SelectedDate(new DateTime(2024, 2, 15))
     .AllowDragAndDrop(true)
     .AllowResizing(true)
     .AllowClipboard(true)
@@ -53,47 +52,47 @@
     }
 </style>
 <script type="text/javascript">
-     var selectedTarget;
-        var targetElement;
-        function onContextMenuBeforeOpen(args) {
-            var newEventElement = document.querySelector('.e-new-event');
-            if (newEventElement) {
-                ej.base.remove(newEventElement);
-            }
-            var scheduleObj = document.getElementById('Schedule').ej2_instances[0];
-            scheduleObj.closeQuickInfoPopup();
-            targetElement = args.event.target;
-            if (ej.base.closest(targetElement, '.e-contextmenu')) {
-                return;
-            }
-            selectedTarget = ej.base.closest(targetElement, '.e-appointment,.e-work-cells,' +
-                '.e-vertical-view .e-date-header-wrap .e-all-day-cells,.e-vertical-view .e-date-header-wrap .e-header-cells');
-            if (ej.base.isNullOrUndefined(selectedTarget)) {
-                args.cancel = true;
-                return;
-            }
-            if (selectedTarget.classList.contains('e-appointment')) {
-                this.showItems(['Cut', 'Copy'], true);
-                this.hideItems(['Paste'], true);
-            } else {
-                this.showItems(['Paste'], true);
-                this.hideItems(['Cut', 'Copy'], true);
-            }
+    var selectedTarget;
+    var targetElement;
+    function onContextMenuBeforeOpen(args) {
+        var newEventElement = document.querySelector('.e-new-event');
+        if (newEventElement) {
+            ej.base.remove(newEventElement);
         }
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        scheduleObj.closeQuickInfoPopup();
+        targetElement = args.event.target;
+        if (ej.base.closest(targetElement, '.e-contextmenu')) {
+            return;
+        }
+        selectedTarget = ej.base.closest(targetElement, '.e-appointment,.e-work-cells,' +
+            '.e-vertical-view .e-date-header-wrap .e-all-day-cells,.e-vertical-view .e-date-header-wrap .e-header-cells');
+        if (ej.base.isNullOrUndefined(selectedTarget)) {
+            args.cancel = true;
+            return;
+        }
+        if (selectedTarget.classList.contains('e-appointment')) {
+            this.showItems(['Cut', 'Copy'], true);
+            this.hideItems(['Paste'], true);
+        } else {
+            this.showItems(['Paste'], true);
+            this.hideItems(['Cut', 'Copy'], true);
+        }
+    }
 
-        function onMenuItemSelect(args) {
-            var scheduleObj = document.getElementById('Schedule').ej2_instances[0];
-            var selectedMenuItem = args.item.id;
-            switch (selectedMenuItem) {
-                case 'Cut':
-                    scheduleObj.cut([selectedTarget]);
-                    break;
-                case 'Copy':
-                    scheduleObj.copy([selectedTarget]);
-                    break;
-                case 'Paste':
-                    scheduleObj.paste(targetElement);
-                    break;
-            }
+    function onMenuItemSelect(args) {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var selectedMenuItem = args.item.id;
+        switch (selectedMenuItem) {
+            case 'Cut':
+                scheduleObj.cut([selectedTarget]);
+                break;
+            case 'Copy':
+                scheduleObj.copy([selectedTarget]);
+                break;
+            case 'Paste':
+                scheduleObj.paste(targetElement);
+                break;
         }
+    }
 </script>

@@ -1,20 +1,25 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPdfExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"PdfExport"})" allowPaging="true">
+<div style="margin-bottom: 20px;">
+<label style="margin-right: 10px;">Include Hidden Columns in PDF Export:</label>
+    <ejs-switch id="switch"></ejs-switch>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPdfExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"PdfExport"})" allowPaging="true" height="272px">
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>               
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
-        <e-grid-column field="OrderDate" visible="false" headerText="Order Date" width="140" ></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="130"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" visible="false" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="100"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
 <script>
     function toolbarClick(args) {
-        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        let grid = document.getElementById("Grid").ej2_instances[0];
+        let toggle = document.getElementById("switch").ej2_instances[0];
         if (args.item.id === 'Grid_pdfexport') {
-            var exportProperties = {
-                includeHiddenColumn: true
-            };
-            gridObj.pdfExport(exportProperties);
-        }
-    }
+                    let pdfExportProperties = {
+                        includeHiddenColumn: toggle.checked
+                    };
+                    grid.pdfExport(pdfExportProperties);
+                }}
 </script>

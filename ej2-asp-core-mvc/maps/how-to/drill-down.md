@@ -35,6 +35,6 @@ By clicking a continent, all the countries available in that continent can be vi
 {% endtabs %}
 {% endif %}
 
+Note: Refer the data values for WorldMap(https://www.syncfusion.com/downloads/support/directtrac/general/ze/WorldMap-1118251150) and Africa(https://www.syncfusion.com/downloads/support/directtrac/general/ze/Africa1913669070) shapes here.
 
-
-![Drill-down](../images/How-to/drilldown.PNG)
+![Drill-down](../images/How-to/drilldown.gif)

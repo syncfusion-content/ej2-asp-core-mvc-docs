@@ -1,20 +1,20 @@
 <div class="control-section">
-    @Html.EJS().TextBox("success").Placeholder("success").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).CssClass("e-success").Render()
-    @Html.EJS().TextBox("Warning").Placeholder("Warning").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).CssClass("e-warning").Render()
-    </div>
-        
-    <style>
-        /* For Success state */
-        .e-float-input.e-input-group.e-success label.e-float-text,
-        .e-float-input.e-input-group.e-success input:focus ~ label.e-float-text,
-        .e-float-input.e-input-group.e-success input:valid ~ label.e-float-text {
-            color: #22b24b;
-        }
+@Html.EJS().TextBox("success").Placeholder("success").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).CssClass("e-success").Render()
+@Html.EJS().TextBox("Warning").Placeholder("Warning").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).CssClass("e-warning").Render()
+</div>
     
-        /* For Warning state */
-        .e-float-input.e-input-group.e-warning label.e-float-text,
-        .e-float-input.e-input-group.e-warning input:focus ~ label.e-float-text,
-        .e-float-input.e-input-group.e-warning input:valid ~ label.e-float-text {
-            color: #ffca1c;
-        }
-    </style>
+<style>
+    /* For Success state */
+    .e-float-input.e-input-group.e-success label.e-float-text,
+    .e-float-input.e-input-group.e-success input:focus ~ label.e-float-text,
+    .e-float-input.e-input-group.e-success input:valid ~ label.e-float-text {
+        color: #22b24b;
+    }
+
+    /* For Warning state */
+    .e-float-input.e-input-group.e-warning label.e-float-text,
+    .e-float-input.e-input-group.e-warning input:focus ~ label.e-float-text,
+    .e-float-input.e-input-group.e-warning input:valid ~ label.e-float-text {
+        color: #ffca1c;
+    }
+</style>

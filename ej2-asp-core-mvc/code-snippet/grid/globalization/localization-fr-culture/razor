@@ -1,0 +1,35 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).AllowPaging(true).AllowGrouping(true).Columns(col =>
+    {
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Width("90").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
+    }).PageSettings(settings => settings.PageSize(6)).Height("220").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Render();
+<script>
+loadCultureFiles();
+    function loadCultureFiles() {
+        fetch('/Content/cldr-data/locale.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load culture file');
+                }
+                return response.json();
+            })
+            .then(frFRLocalization => {
+                ej.base.L10n.load(frFRLocalization);  // Refresh the grid after localization is loaded
+                applyLocaleToGrid();
+            })
+            .catch(error => {
+                console.error('Error loading culture file:', error);
+            });
+    }
+
+    function applyLocaleToGrid() {
+        // Get the grid instance
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        if (grid) {
+            grid.locale = "fr-FR";
+            grid.refresh();       // Refresh the grid to apply localization
+        }
+    }
+</script>
