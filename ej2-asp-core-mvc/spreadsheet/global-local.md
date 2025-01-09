@@ -396,7 +396,7 @@ The following example demonstrates the Spreadsheet in `French` culture. In the b
 {% include code-snippet/spreadsheet/locale/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="LocaleController.cs" %}
-{% include code-snippet/spreadsheet/locale/EJ2_ASP.NETCORE/localeController.cs %}
+{% include code-snippet/spreadsheet/locale/Core/localeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -407,7 +407,7 @@ The following example demonstrates the Spreadsheet in `French` culture. In the b
 {% include code-snippet/spreadsheet/locale/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="LocaleController.cs" %}
-{% include code-snippet/spreadsheet/locale/EJ2_ASP.MVC/localeController.cs %}
+{% include code-snippet/spreadsheet/locale/MVC/localeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -427,7 +427,7 @@ The following example demonstrates the Spreadsheet in French [ `fr-CH`] culture.
 {% include code-snippet/spreadsheet/internationalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="InternationalizationController.cs" %}
-{% include code-snippet/spreadsheet/internationalization/EJ2_ASP.NETCORE/internationalizationController.cs %}
+{% include code-snippet/spreadsheet/internationalization/Core/internationalizationController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -438,7 +438,7 @@ The following example demonstrates the Spreadsheet in French [ `fr-CH`] culture.
 {% include code-snippet/spreadsheet/internationalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="InternationalizationController.cs" %}
-{% include code-snippet/spreadsheet/internationalization/EJ2_ASP.MVC/internationalizationController.cs %}
+{% include code-snippet/spreadsheet/internationalization/MVC/internationalizationController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -456,7 +456,7 @@ RTL provides an option to switch the text direction and layout of the Spreadshee
 {% include code-snippet/spreadsheet/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RtlController.cs" %}
-{% include code-snippet/spreadsheet/rtl/EJ2_ASP.NETCORE/rtlController.cs %}
+{% include code-snippet/spreadsheet/rtl/Core/rtlController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -467,7 +467,7 @@ RTL provides an option to switch the text direction and layout of the Spreadshee
 {% include code-snippet/spreadsheet/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RtlController.cs" %}
-{% include code-snippet/spreadsheet/rtl/EJ2_ASP.MVC/rtlController.cs %}
+{% include code-snippet/spreadsheet/rtl/MVC/rtlController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

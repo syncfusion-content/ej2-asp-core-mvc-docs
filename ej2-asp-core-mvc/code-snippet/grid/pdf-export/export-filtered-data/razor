@@ -1,0 +1,19 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).ToolbarClick("toolbarClick").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width(100).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width(100).Add();
+}).AllowPaging(true).PageSettings(page => page.PageSize(5).PageCount(5)).AllowFiltering(true).Toolbar(new List<string>() { "PdfExport" }).Render()
+   
+<script>
+    function toolbarClick(args) {
+                    let grid = document.getElementById("Grid").ej2_instances[0];
+                      if (args.item.id === 'Grid_pdfexport') {
+                        let filteredRecords = grid.getFilteredRecords();
+                        let exportProperties = {
+                            dataSource: filteredRecords
+                        };
+                        grid.pdfExport(exportProperties);
+                    }
+                }
+</script>

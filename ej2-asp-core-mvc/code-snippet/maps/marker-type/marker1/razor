@@ -17,7 +17,7 @@
     {
         new Syncfusion.EJ2.Maps.MapsLayer
             {
-                ShapeData = ViewBag.usMap,
+                ShapeData = ViewBag.worldMap,
                 MarkerSettings  = new List<Syncfusion.EJ2.Maps.MapsMarker>
                     {
                         new Syncfusion.EJ2.Maps.MapsMarker
