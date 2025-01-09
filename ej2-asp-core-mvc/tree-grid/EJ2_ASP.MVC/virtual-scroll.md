@@ -44,7 +44,29 @@ Expand and Collapse state of any child record will be persisted.
 {% endtabs %}
 {% endif %}
 
+### Limitations 
 
+* Row virtual scrolling is not compatible with the following feature
+	1. Batch editing
+	2. Detail template
+	3. Row template
+	4. Rowspan
+	5. Autofill
+	
+* It is necessary to set a static height for the component or its parent container when using row virtualization. The 100% height will work only if the component height is set to 100%, and its parent container has a static height.
+
+* When row virtual scrolling is activated, compatibility for copy-paste and drag-and-drop operations is limited to the data items visible in the current viewport of the tree grid.
+* The cell-based selection is not supported for row virtual scrolling. 
+* Using different row heights with a template column, when the template height differs for each row, is not supported.
+* Due to the element height limitation in browsers, the maximum number of records loaded by the tree grid is limited by the browser capability.
+* The height of the tree grid content is calculated using the row height and total number of records in the data source and hence features which changes row height such as text wrapping are not supported.
+* If you want to increase the row height to accommodate the content then you can specify the row height as below to ensure all the table rows are in same height.
+
+    ```css
+    .e-treegrid .e-row {
+        height: 2em;
+    }
+    ```
 
 ## Column Virtualization
 
@@ -81,21 +103,28 @@ N> Column's `Width` is required for column virtualization. If column's width is 
 
 
 
-## Limitations for Virtualization
+### Limitations 
 
-* Due to the element height limitation in browsers, the maximum number of records loaded by the treegrid is limited by the browser capability.
-* Cell selection will not be persisted in row.
-* Virtual scrolling is not compatible with detail template, clipboard functionality and row drag and drop features.
-* The page size provided must be two times larger than the number of visible rows in the TreeGrid. If the page size is failed to meet this condition then the size will be determined by TreeGrid.
-* The virtual height of the treegrid content is calculated using the row height and total number of records in the data source and hence features which changes row height such as text wrapping are not supported. If you want to increase the row height to accommodate the content then you can specify the row height as below to ensure all the table rows are in same height.
+* While using column virtual scrolling, column width should be in pixel. Percentage values are not accepted.
+* Selected column details are only retained within the viewport. When the next set of columns is loaded, the selection for previously visible columns is lost.
+* The cell selection is not supported for column virtual scrolling.
+* The **Ctrl + Home** and **Ctrl + End** keys are not supported when using column virtual scrolling.
+* The following features are compatible with column virtualization and works only within the viewport:
+   1. Column resizing
+   2. Column reordering
+   3. Auto-fit
+   4. Print
+   5. Clipboard
+   6. Column menu - Column chooser, AutofitAll
 
-```css
-.e-treegrid .e-row {
-    height: 2em;
-}
-```
-
-* Programmatic selection using the **SelectRows** method is not supported in virtual scrolling.
-* When virtualization is active in a tree grid, the editCell method is unusable for records outside the currently visible viewport.
-
+* Column virtual scrolling is not compatible with the following feature
+    1. Colspan
+    2. Batch editing
+    3. Column with infinite scrolling
+    4. Stacked header
+    5. Row template
+    6. Detail template
+    7. Autofill
+    8. Column chooser
+       
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
