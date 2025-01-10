@@ -1,0 +1,67 @@
+@using Syncfusion.EJ2;
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer></e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>
+
+<script>
+    document.addEventListener('DOMContentLoaded', async function () {
+        try {
+            // Initialize map after DOM content is loaded
+            await initializeMap();
+        } catch (error) {
+            console.error("Error initializing the map:", error.message);
+        }
+    });
+
+    const apiKey = "Your_Key";
+
+    async function initializeMap() {
+        try {
+            // Fetch session token
+            const sessionToken = await fetchSessionToken(apiKey);
+
+            // Update the URL template
+            const maps = document.getElementById('maps').ej2_instances[0];
+            maps.layers[0].urlTemplate = `https://tile.googleapis.com/v1/2dtiles/level/tileX/tileY?session=${sessionToken}&key=${apiKey}`;
+        } catch (error) {
+            console.error("Failed to initialize the map:", error.message);
+        }
+    }
+
+    async function fetchSessionToken(apiKey) {
+        try {
+            // Send a POST request to fetch session token
+            const response = await fetch(
+                `https://tile.googleapis.com/v1/createSession?key=${apiKey}`,
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        mapType: "roadmap",
+                        language: "en-US",
+                        region: "US",
+                    }),
+                }
+            );
+
+            // Check for response status
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(
+                    `Error generating session token: ${errorData.error.message}`
+                );
+            }
+
+            // Return the session token
+            const data = await response.json();
+            return data.session;
+        } catch (error) {
+            console.error("Error fetching session token:", error.message);
+            throw error;
+        }
+    }
+</script>

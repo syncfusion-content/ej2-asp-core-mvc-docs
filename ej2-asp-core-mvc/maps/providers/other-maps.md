@@ -24,7 +24,7 @@ Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.PNG
 
 In this case, the key generated for those online map service providers can also be appended to the URL. This allows to create personalized Maps with your own content and imagery.
 
-Following is an example of how to add a TomTom map. You can generate an API key by following the steps in this [link](https://developer.tomtom.com/map-display-api/documentation/product-information/introduction) and then adding the key to the URL.
+Following is an example of how to add a France OpenStreetMap.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -49,7 +49,7 @@ Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.PNG
 
 In this case, the key generated for those online map service providers can also be appended to the URL. This allows to create personalized Maps with your own content and imagery.
 
-Below is the example of adding TomTom map. You can follow the steps in this [link](https://developer.tomtom.com/map-display-api/documentation/product-information/introduction) to generate an API key, and then added the key to the URL.
+Following is an example of how to add a France OpenStreetMap.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -61,7 +61,7 @@ Below is the example of adding TomTom map. You can follow the steps in this [lin
 {% endtabs %}
 {% endif %}
 
-![TomTom Maps](../images/MapProviders/tomtom-maps.PNG)
+![OpenStreeMap France](../images/MapProviders/Other-maps/osm-france.PNG)
 
 ## Enabling zooming and panning
 
@@ -90,7 +90,7 @@ Tile Maps layer can be zoomed and panned. Zooming helps to get a closer look at 
 {% endtabs %}
 {% endif %}
 
-![TomTom Maps with Zooming and Panning](../images/MapProviders/tomtom-maps-zooming.PNG)
+![OpenStreeMap France with Zooming and Panning](../images/MapProviders/Other-maps/osm-france-zooming.PNG)
 
 ## Adding markers and navigation line
 
@@ -121,7 +121,7 @@ Markers can be added to the layers of tile Maps by setting the corresponding loc
 {% endtabs %}
 {% endif %}
 
-![TomTom Maps with Markers and Navigation Line](../images/MapProviders/tomtom-maps-marker-and-line.PNG)
+![OpenStreeMap France with Markers and Navigation Line](../images/MapProviders/Other-maps/osm-france-marker-and-line.PNG)
 
 ## Adding sublayer
 
@@ -152,7 +152,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the tile Maps layer fo
 {% endtabs %}
 {% endif %}
 
-![TomTom Maps with Sublayer](../images/MapProviders/tomtom-map-sublayer.PNG)
+![OpenStreeMap France with Sublayer](../images/MapProviders/Other-maps/osm-france-sublayer.PNG)
 
 ## Enabling legend
 
@@ -183,4 +183,4 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 {% endtabs %}
 {% endif %}
 
-![TomTom Maps with Legend](../images/MapProviders/tomtom-map-legend.PNG)
+![OpenStreeMap France with Legend](../images/MapProviders/Other-maps/osm-france-legend.PNG)

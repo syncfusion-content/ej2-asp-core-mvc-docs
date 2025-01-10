@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l =>
+   {
+       l.UrlTemplate("https://maps.hereapi.com/v3/base/mc/level/tileX/tileY/png?apiKey=Your_key").Add();
+       l.ShapeSettings(s => s.Fill("blue")).ShapeData(ViewBag.africaMapShape).Type(Syncfusion.EJ2.Maps.Type.SubLayer).Add();
+   }).Render()
+
+<style>
+    #maps {
+        display: block;
+    }
+</style>
