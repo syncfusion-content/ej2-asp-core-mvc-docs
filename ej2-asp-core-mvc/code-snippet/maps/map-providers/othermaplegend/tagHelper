@@ -30,7 +30,7 @@
          <e-legendsettings-textstyle color="#000000" fontFamily="inherit"  />
      </e-maps-legendsettings>
      <e-maps-layers>
-         <e-maps-layer urlTemplate="http://api.tomtom.com/map/1/tile/basic/main/level/tileX/tileY.png?key=subscription_key" markerSettings="@Markers"></e-maps-layer>
+         <e-maps-layer urlTemplate="https://a.tile.openstreetmap.fr/osmfr/level/tileX/tileY.png" markerSettings="@Markers"></e-maps-layer>
      </e-maps-layers>
 </ejs-maps>
 

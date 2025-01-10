@@ -2,6 +2,6 @@
    <ejs-maps id="maps">
         <e-maps-zoomSettings Enable="true"></e-maps-zoomSettings>
         <e-maps-layers>
-            <e-maps-layer urlTemplate="http://api.tomtom.com/map/1/tile/basic/main/level/tileX/tileY.png?key=subscription_key"></e-maps-layer>
+            <e-maps-layer urlTemplate="https://a.tile.openstreetmap.fr/osmfr/level/tileX/tileY.png"></e-maps-layer>
         </e-maps-layers>
     </ejs-maps>
