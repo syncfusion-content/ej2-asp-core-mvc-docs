@@ -162,7 +162,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Azure Maps layer f
 {% endtabs %}
 {% endif %}
 
-![Azure Maps with Sublayer](../images/MapProviders/Azure-maps/azure-map-sublayer.PNG)
+![Azure Maps with Sublayer](../images/MapProviders/Azure-maps/azure-maps-sublayer.PNG)
 
 ## Enabling legend
 
@@ -193,4 +193,4 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 {% endtabs %}
 {% endif %}
 
-![Azure Maps with Legend](../images/MapProviders/Azure-maps/azure-map-legend.PNG)
+![Azure Maps with Legend](../images/MapProviders/Azure-maps/azure-maps-legend.PNG)

@@ -99,10 +99,10 @@ The Google Maps layer can be zoomed and panned. Zooming helps to get a closer lo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/google-maps/zoom/tagHelper %}
+{% include code-snippet/maps/map-providers/google-maps-zoom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GoogleMapsZoom.cs" %}
-{% include code-snippet/maps/map-providers/google-maps/zoom/google-maps-zoom.cs %}
+{% include code-snippet/maps/map-providers/google-maps-zoom/google-maps-zoom.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,10 +110,10 @@ The Google Maps layer can be zoomed and panned. Zooming helps to get a closer lo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/google-maps/zoom/razor %}
+{% include code-snippet/maps/map-providers/google-maps-zoom/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GoogleMapsZoom.cs" %}
-{% include code-snippet/maps/map-providers/google-maps/zoom/google-maps-zoom.cs %}
+{% include code-snippet/maps/map-providers/google-maps-zoom/google-maps-zoom.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -128,10 +128,10 @@ Markers can be added to the layers of Google Maps by setting the corresponding l
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/google-maps/marker/tagHelper %}
+{% include code-snippet/maps/map-providers/google-maps-marker/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GoogleMapsMarker.cs" %}
-{% include code-snippet/maps/map-providers/google-maps/marker/google-maps-marker.cs %}
+{% include code-snippet/maps/map-providers/google-maps-marker/google-maps-marker.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -141,10 +141,10 @@ Markers can be added to the layers of Google Maps by setting the corresponding l
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/google-maps/marker/razor %}
+{% include code-snippet/maps/map-providers/google-maps-marker/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GoogleMapsMarker.cs" %}
-{% include code-snippet/maps/map-providers/google-maps/marker/google-maps-marker.cs %}
+{% include code-snippet/maps/map-providers/google-maps-marker/google-maps-marker.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -159,10 +159,10 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Google Maps layer 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/google-maps/sublayer/tagHelper %}
+{% include code-snippet/maps/map-providers/google-maps-sublayer/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GoogleMapsSubLayer.cs" %}
-{% include code-snippet/maps/map-providers/google-maps/sublayer/google-maps-sublayer.cs %}
+{% include code-snippet/maps/map-providers/google-maps-sublayer/google-maps-sublayer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -172,10 +172,10 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Google Maps layer 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/google-maps/sublayer/razor %}
+{% include code-snippet/maps/map-providers/google-maps-sublayer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GoogleMapsSubLayer.cs" %}
-{% include code-snippet/maps/map-providers/google-maps/sublayer/google-maps-sublayer.cs %}
+{% include code-snippet/maps/map-providers/google-maps-sublayer/google-maps-sublayer.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -190,10 +190,10 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/google-maps/legend/tagHelper %}
+{% include code-snippet/maps/map-providers/google-maps-legend/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GoogleMapsLegend.cs" %}
-{% include code-snippet/maps/map-providers/google-maps/legend/google-maps-legend.cs %}
+{% include code-snippet/maps/map-providers/google-maps-legend/google-maps-legend.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -203,10 +203,10 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/google-maps/legend/razor %}
+{% include code-snippet/maps/map-providers/google-maps-legend/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GoogleMapsLegend.cs" %}
-{% include code-snippet/maps/map-providers/google-maps/legend/google-maps-legend.cs %}
+{% include code-snippet/maps/map-providers/google-maps-legend/google-maps-legend.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

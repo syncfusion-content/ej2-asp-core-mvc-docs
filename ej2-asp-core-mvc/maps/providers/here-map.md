@@ -43,10 +43,10 @@ In the follwing example, the HERE Map can be rendered using the [urlTemplate](ht
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/here-maps/tagHelper %}
+{% include code-snippet/maps/map-providers/here-map/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HEREMap.cs" %}
-{% include code-snippet/maps/map-providers/Here-map/here-map.cs %}
+{% include code-snippet/maps/map-providers/here-map/here-map.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,10 +61,10 @@ In the follwing example, the HERE Map can be rendered using the [UrlTemplate](ht
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/here-maps/razor %}
+{% include code-snippet/maps/map-providers/here-map/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="C.cs" %}
-{% include code-snippet/maps/map-providers/Here-map/here-map.cs %}
+{% include code-snippet/maps/map-providers/here-map/here-map.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

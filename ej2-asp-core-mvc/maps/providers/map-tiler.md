@@ -43,10 +43,10 @@ In the follwing example, the MapTiler can be rendered using the [urlTemplate](ht
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/maptiler-maps/tagHelper %}
+{% include code-snippet/maps/map-providers/maptiler/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MapTiler.cs" %}
-{% include code-snippet/maps/map-providers/maptiler-maps/maptiler-maps.cs %}
+{% include code-snippet/maps/map-providers/maptiler/maptiler.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,10 +56,10 @@ In the follwing example, the MapTiler can be rendered using the [UrlTemplate](ht
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/maptiler-maps/razor %}
+{% include code-snippet/maps/map-providers/maptiler/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MapTiler.cs" %}
-{% include code-snippet/maps/map-providers/maptiler-maps/maptiler-maps.cs %}
+{% include code-snippet/maps/map-providers/maptiler/maptiler.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
