@@ -32,17 +32,17 @@ In the above URL template,
 
 These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile. 
 
->You can refer this documentation [link](https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile?view=rest-maps-2024-04-01&tabs=HTTP) for the latest URL template for Azure Maps.
+N> You can refer this documentation [link](https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile?view=rest-maps-2024-04-01&tabs=HTTP) for the latest URL template for Azure Maps.
 
 The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
 
->Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
+N> Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
 
 You can customize various tile types in Azure Maps by modifying the **tilesetId** value in the URL. In the example below, the **microsoft.base.road** tile type is specified in the URL, and these tile images can be displayed in the Syncfusion Maps Component. To explore the available tile types in Azure Maps by the following link below.
 
 https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile?view=rest-maps-2023-06-01&tabs=HTTP#tilesetid
  
->The Syncfusion Maps only support displaying maps with raster images in **PNG** or **JPG** formats.
+N> The Syncfusion Maps only support displaying maps with raster images in **PNG** or **JPG** formats.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -33,7 +33,7 @@ In the above URL template,
 
 These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile.
 
->You can refer this documentation [link](https://developers.google.com/maps/documentation/tile/roadmap) for the latest URL template for Google Maps.
+N> You can refer this documentation [link](https://developers.google.com/maps/documentation/tile/roadmap) for the latest URL template for Google Maps.
 
 Below are the outlined steps to integrate Google Maps tiles into the Syncfusion Maps Component.
 
@@ -247,6 +247,8 @@ In the following example, the Google Maps can be rendered using the [urlTemplate
 
 The Google Maps layer can be zoomed and panned. Zooming helps to get a closer look at a particular area on a map for in-depth analysis. Panning helps to move a map around to focus the targeted area.
 
+N> You can refer to the method for obtaining the session token can be explained in the above section **Adding Google Maps**, which can be included in the URL below to render tile images from Google Maps.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -278,6 +280,8 @@ The Google Maps layer can be zoomed and panned. Zooming helps to get a closer lo
 
 Markers can be added to the layers of Google Maps by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the Google Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
 
+N> You can refer to the method for obtaining the session token can be explained in the above section **Adding Google Maps**, which can be included in the URL below to render tile images from Google Maps.
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/maps/map-providers/google-maps-marker/tagHelper %}
@@ -290,6 +294,8 @@ Markers can be added to the layers of Google Maps by setting the corresponding l
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 Markers can be added to the layers of Google Maps by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the Google Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
+
+N> You can refer to the method for obtaining the session token can be explained in the above section **Adding Google Maps**, which can be included in the URL below to render tile images from Google Maps.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -309,6 +315,8 @@ Markers can be added to the layers of Google Maps by setting the corresponding l
 
 Any GeoJSON shape can be rendered as a sublayer on top of the Google Maps layer for highlighting a particular continent or country in Google Maps by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
 
+N> You can refer to the method for obtaining the session token can be explained in the above section **Adding Google Maps**, which can be included in the URL below to render tile images from Google Maps.
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/maps/map-providers/google-maps-sublayer/tagHelper %}
@@ -321,6 +329,8 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Google Maps layer 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 Any GeoJSON shape can be rendered as a sublayer on top of the Google Maps layer for highlighting a particular continent or country in Google Maps by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
+
+N> You can refer to the method for obtaining the session token can be explained in the above section **Adding Google Maps**, which can be included in the URL below to render tile images from Google Maps.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -340,6 +350,8 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Google Maps layer 
 
 The legend can be added to the tile Maps by setting the [Visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html#Syncfusion_EJ2_Maps_MapsLegendSettings_Visible) property of [LegendSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_LegendSettings) to **true**.
 
+N> You can refer to the method for obtaining the session token can be explained in the above section **Adding Google Maps**, which can be included in the URL below to render tile images from Google Maps.
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/maps/map-providers/google-maps-legend/tagHelper %}
@@ -352,6 +364,8 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 The legend can be added to the tile Maps by setting the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html#Syncfusion_EJ2_Maps_MapsLegendSettings_Visible) property of [LegendSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_LegendSettings) to **true**.
+
+N> You can refer to the method for obtaining the session token can be explained in the above section **Adding Google Maps**, which can be included in the URL below to render tile images from Google Maps.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

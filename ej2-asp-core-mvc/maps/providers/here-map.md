@@ -33,7 +33,7 @@ In the above URL template,
 
 These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile.
 
->You can refer this documentation [link](https://www.here.com/docs/bundle/raster-tile-api-developer-guide/page/topics/quickstart.html#obtain-a-tile) for the latest URL template for Here Map.
+N> You can refer this documentation [link](https://www.here.com/docs/bundle/raster-tile-api-developer-guide/page/topics/quickstart.html#obtain-a-tile) for the latest URL template for Here Map.
 
 The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://www.here.com/docs/bundle/raster-tile-api-developer-guide/page/topics/quickstart.html#get-an-api-key) to generate an API key, and then added the key to the URL.
 

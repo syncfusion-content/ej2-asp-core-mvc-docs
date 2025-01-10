@@ -33,7 +33,7 @@ In the above URL template,
 
 These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile.
 
->You can refer this documentation [link](https://developer.tomtom.com/map-display-api/documentation/tomtom-orbis-maps/raster-tile) for the latest URL template for TomTom Map.
+N> You can refer this documentation [link](https://developer.tomtom.com/map-display-api/documentation/tomtom-orbis-maps/raster-tile) for the latest URL template for TomTom Map.
 
 The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://developer.tomtom.com/platform/documentation/dashboard/api-key-management#start-using-your-api-key) to generate an API key, and then added the key to the URL.
 

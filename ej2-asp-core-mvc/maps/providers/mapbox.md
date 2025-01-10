@@ -32,7 +32,7 @@ In the above URL template,
 
 These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile. 
 
->You can refer this documentation [link](https://docs.mapbox.com/api/maps/raster-tiles/) for the latest URL template for Mapbox.
+N> You can refer this documentation [link](https://docs.mapbox.com/api/maps/raster-tiles/) for the latest URL template for Mapbox.
 
 The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://docs.mapbox.com/help/dive-deeper/access-tokens/#creating-secret-access-tokens) to generate an API key, and then added the key to the URL.
 

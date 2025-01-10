@@ -33,7 +33,7 @@ In the above URL template,
 
 These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile. 
 
->You can refer this documentation [link](https://docs.maptiler.com/cloud/api/tiles/#xyz-tiles) for the latest URL template for MapTiler.
+N> You can refer this documentation [link](https://docs.maptiler.com/cloud/api/tiles/#xyz-tiles) for the latest URL template for MapTiler.
 
 The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://docs.maptiler.com/cloud/api/authentication-key/#api-key) to generate an API key, and then added the key to the URL.
 
