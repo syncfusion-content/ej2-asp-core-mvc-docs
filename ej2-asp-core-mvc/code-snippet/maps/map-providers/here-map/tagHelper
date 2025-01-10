@@ -1,0 +1,6 @@
+  @using Syncfusion.EJ2;
+   <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer urlTemplate="https://maps.hereapi.com/v3/base/mc/level/tileX/tileY/png?apiKey=Your_key"></e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>

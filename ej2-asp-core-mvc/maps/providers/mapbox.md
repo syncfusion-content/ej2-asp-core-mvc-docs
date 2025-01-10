@@ -42,7 +42,7 @@ In the follwing example, the Mapbox can be rendered using the [urlTemplate](http
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/mapbox-maps/tagHelper %}
+{% include code-snippet/maps/map-providers/mapbox/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Mapbox.cs" %}
 {% include code-snippet/maps/map-providers/mapbox/mapbox.cs %}
@@ -55,7 +55,7 @@ In the follwing example, the Mapbox can be rendered using the [UrlTemplate](http
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/mapbox-maps/razor %}
+{% include code-snippet/maps/map-providers/mapbox/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Mapbox.cs" %}
 {% include code-snippet/maps/map-providers/mapbox/mapbox.cs %}
@@ -73,10 +73,10 @@ The Mapbox layer can be zoomed and panned. Zooming helps to get a closer look at
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-zoom/tagHelper %}
+{% include code-snippet/maps/map-providers/mapbox-zoom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MapboxZoom.cs" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-zoom/mapbox-maps-zoom.cs %}
+{% include code-snippet/maps/map-providers/mapbox-zoom/mapbox-zoom.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -84,10 +84,10 @@ The Mapbox layer can be zoomed and panned. Zooming helps to get a closer look at
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-zoom/razor %}
+{% include code-snippet/maps/map-providers/mapbox-zoom/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MapboxZoom.cs" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-zoom/mapbox-maps-zoom.cs %}
+{% include code-snippet/maps/map-providers/mapbox-zoom/mapbox-zoom.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -102,10 +102,10 @@ Markers can be added to the layers of Mapbox by setting the corresponding locati
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-marker/tagHelper %}
+{% include code-snippet/maps/map-providers/mapbox-marker/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MapboxMarker.cs" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-marker/mapbox-maps-marker.cs %}
+{% include code-snippet/maps/map-providers/mapbox-marker/mapbox-marker.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -115,10 +115,10 @@ Markers can be added to the layers of Mapbox by setting the corresponding locati
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-marker/razor %}
+{% include code-snippet/maps/map-providers/mapbox-marker/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MapboxMarker.cs" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-marker/mapbox-maps-marker.cs %}
+{% include code-snippet/maps/map-providers/mapbox-marker/mapbox-marker.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -133,10 +133,10 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Mapbox layer for h
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-sublayer/tagHelper %}
+{% include code-snippet/maps/map-providers/mapbox-sublayer/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MapboxSubLayer.cs" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-sublayer/mapbox-maps-sublayer.cs %}
+{% include code-snippet/maps/map-providers/mapbox-sublayer/mapbox-sublayer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -146,10 +146,10 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Mapbox layer for h
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-sublayer/razor %}
+{% include code-snippet/maps/map-providers/mapbox-sublayer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MapboxSubLayer.cs" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-sublayer/mapbox-maps-sublayer.cs %}
+{% include code-snippet/maps/map-providers/mapbox-sublayer/mapbox-sublayer.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -164,10 +164,10 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-legend/tagHelper %}
+{% include code-snippet/maps/map-providers/mapbox-legend/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MapboxLegend.cs" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-legend/mapbox-maps-legend.cs %}
+{% include code-snippet/maps/map-providers/mapbox-legend/mapbox-legend.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -177,10 +177,10 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-legend/razor %}
+{% include code-snippet/maps/map-providers/mapbox-legend/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MapboxLegend.cs" %}
-{% include code-snippet/maps/map-providers/mapbox-maps-legend/mapbox-maps-legend.cs %}
+{% include code-snippet/maps/map-providers/mapbox-legend/mapbox-legend.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

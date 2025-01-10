@@ -1,0 +1,7 @@
+  @using Syncfusion.EJ2;
+   <ejs-maps id="maps">
+        <e-maps-zoomSettings Enable="true"></e-maps-zoomSettings>
+        <e-maps-layers>
+            <e-maps-layer urlTemplate="https://api.maptiler.com/tiles/satellite-v2/level/tileX/tileY.jpg?key=Your_Key"></e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>

@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l=> {
+    l.UrlTemplate("https://api.maptiler.com/tiles/satellite-v2/level/tileX/tileY.jpg?key=Your_Key").Add();
+}).Render()
+
+<style>
+    #maps {
+        display: block;
+    }
+</style>

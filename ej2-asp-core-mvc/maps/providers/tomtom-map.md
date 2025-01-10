@@ -45,10 +45,10 @@ In the follwing example, the TomTom Map can be rendered using the [urlTemplate](
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/tomtom-maps/tagHelper %}
+{% include code-snippet/maps/map-providers/tomtom-map/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TomTomMap.cs" %}
-{% include code-snippet/maps/map-providers/tomtom-maps/tomtom-maps.cs %}
+{% include code-snippet/maps/map-providers/tomtom-map/tomtom-map.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,10 +58,10 @@ In the follwing example, the TomTom Map can be rendered using the [UrlTemplate](
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/tomtom-maps/razor %}
+{% include code-snippet/maps/map-providers/tomtom-map/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TomTomMap.cs" %}
-{% include code-snippet/maps/map-providers/tomtom-maps/tomtom-maps.cs %}
+{% include code-snippet/maps/map-providers/tomtom-map/tomtom-map.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

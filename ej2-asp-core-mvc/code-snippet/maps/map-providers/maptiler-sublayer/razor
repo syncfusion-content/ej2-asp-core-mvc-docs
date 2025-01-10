@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l =>
+   {
+       l.UrlTemplate("https://api.maptiler.com/tiles/satellite-v2/level/tileX/tileY.jpg?key=Your_Key").Add();
+       l.ShapeSettings(s => s.Fill("blue")).ShapeData(ViewBag.africaMapShape).Type(Syncfusion.EJ2.Maps.Type.SubLayer).Add();
+   }).Render()
+
+<style>
+    #maps {
+        display: block;
+    }
+</style>

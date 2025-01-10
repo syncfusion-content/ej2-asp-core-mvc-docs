@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l =>
+   {
+       l.UrlTemplate("https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/level/tileY/tileX?apiKey=Your_Key").Add();
+       l.ShapeSettings(s => s.Fill("blue")).ShapeData(ViewBag.africaMapShape).Type(Syncfusion.EJ2.Maps.Type.SubLayer).Add();
+   }).Render()
+
+<style>
+    #maps {
+        display: block;
+    }
+</style>
