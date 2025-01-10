@@ -29,15 +29,12 @@ function actionComplete(args) {
 }
 </script>
 <style>
-    .e-footer-content .e-btn.e-primary.custom-button-style {
+    .e-footer-content .e-btn.custom-button-style {
         border-radius: 4px;
         font-size: 15px;
     }
 
     .e-footer-content .e-btn.e-success.custom-button-style {
-        border-radius: 4px;
-        font-size: 15px;
-        background: #55a655;
-        color: #3b1082;
+        background: #a1c595;
     }
 </style>
