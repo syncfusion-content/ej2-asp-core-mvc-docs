@@ -1,51 +1,45 @@
 ---
 layout: post
-title: ArcGIS Maps in Syncfusion ##Platform_Name## Syncfusion Maps Component
-description: Learn here all about ArcGIS Maps in the Syncfusion ##Platform_Name## Maps component and much more details.
+title: ArcGIS in Syncfusion ##Platform_Name## Syncfusion Maps Component
+description: Learn here all about ArcGIS in the Syncfusion ##Platform_Name## Maps component and much more details.
 platform: ej2-asp-core-mvc
-control: ArcGIS Maps
+control: ArcGIS
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# ArcGIS Maps in ##Platform_Name## Maps Component
+# ArcGIS in ##Platform_Name## Maps Component
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-ArcGIS Maps is another online Maps provider, owned by Esri (Environmental Systems Research Institute). As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The ArcGIS Maps can be rendered from online map service providers by specifying the URL provided by those providers in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of ArcGIS online map services, allowing users to preview their maps in the Syncfusion EJ2 Maps control. The following template provides a preview of ArcGIS Maps within the Syncfusion EJ2 Maps control.
-
-<!-- markdownlint-disable MD034 -->
-
-Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.png
-
-* "${z}" - It represents zoom factor (level).
-* "${x}" - It indicates tile image x-position (tileX).
-* "${y}" - It indicates tile image y-position (tileY).
+ArcGIS is another online Maps provider, owned by Esri (Environmental Systems Research Institute). As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The ArcGIS can be rendered from online map service providers by specifying the URL provided by those providers in the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of ArcGIS online map services, allowing users to preview their maps in the Syncfusion Maps Component.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-ArcGIS Maps is another online Maps provider, owned by Esri (Environmental Systems Research Institute). As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The ArcGIS Maps can be rendered from online map service providers by specifying the URL provided by those providers in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of ArcGIS online map services, allowing users to preview their maps in the Syncfusion EJ2 Maps control. The following template provides a preview of ArcGIS Maps within the Syncfusion EJ2 Maps control.
-
-<!-- markdownlint-disable MD034 -->
-
-Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.png
-
-* "${z}" - It represents zoom factor (level).
-* "${x}" - It indicates tile image x-position (tileX).
-* "${y}" - It indicates tile image y-position (tileY).
+ArcGIS is another online Maps provider, owned by Esri (Environmental Systems Research Institute). As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The ArcGIS can be rendered from online map service providers by specifying the URL provided by those providers in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of ArcGIS online map services, allowing users to preview their maps in the Syncfusion Maps Component.
 
 {% endif %}
 
-## Adding ArcGIS Maps
+## Adding ArcGIS
+
+The ArcGIS map tile service can be accessed via the following URL:
+https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}?apiKey=Your_Key
+
+In the above URL template,
+
+* {z} - It represents the zoom level of the map.
+* {x} - It represents the horizontal position of the tile.
+* {y} - It represents the vertical position of the tile. 
+
+These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile.
+
+>You can refer this documentation [link](https://www.esri.com/arcgis-blog/products/developers/developers/open-source-developers-time-to-upgrade-to-the-new-arcgis-basemap-layer-service/) for the latest URL template for ArcGIS.
+
+The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://developers.arcgis.com/documentation/security-and-authentication/api-key-authentication/tutorials/create-an-api-key/) to generate an API key, and then added the key to the URL.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The ArcGIS map tiles can be accessed using the following URL Template:
-https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}?apiKey=Your_Key
-
-In this template, {z} represents the zoom level of the map, {x} represents the horizontal position of the tile, and {y} represents the vertical position of the tile. These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile. The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://developers.arcgis.com/documentation/security-and-authentication/api-key-authentication/tutorials/create-an-api-key/) to generate an API key, and then added the key to the URL.
-
-In the follwing example, the ArcGIS Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
+In the follwing example, the ArcGIS can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -58,12 +52,7 @@ In the follwing example, the ArcGIS Maps can be rendered using the [UrlTemplate]
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-The ArcGIS map tiles can be accessed using the following URL Template:
-https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}?apiKey=Your_Key
-
-In this template, {z} represents the zoom level of the map, {x} represents the horizontal position of the tile, and {y} represents the vertical position of the tile. These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile. The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://developers.arcgis.com/documentation/security-and-authentication/api-key-authentication/tutorials/create-an-api-key/) to generate an API key, and then added the key to the URL.
-
-In the follwing example, the ArcGIS Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
+In the follwing example, the ArcGIS can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -75,11 +64,11 @@ In the follwing example, the ArcGIS Maps can be rendered using the [UrlTemplate]
 {% endtabs %}
 {% endif %}
 
-![ArcGIS Maps](../images/MapProviders/Arcgis-maps/arcgis-maps.PNG)
+![ArcGIS](../images/MapProviders/Arcgis/arcgis.PNG)
 
 ## Enabling zooming and panning
 
-The ArcGIS Maps layer can be zoomed and panned. Zooming helps to get a closer look at a particular area on a map for in-depth analysis. Panning helps to move a map around to focus the targeted area.
+The ArcGIS layer can be zoomed and panned. Zooming helps to get a closer look at a particular area on a map for in-depth analysis. Panning helps to move a map around to focus the targeted area.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -104,13 +93,13 @@ The ArcGIS Maps layer can be zoomed and panned. Zooming helps to get a closer lo
 {% endtabs %}
 {% endif %}
 
-![ArcGIS Maps with Zooming and Panning](../images/MapProviders/Arcgis-maps/arcgis-maps-zooming.gif)
+![ArcGIS with Zooming and Panning](../images/MapProviders/Arcgis/arcgis-zooming.PNG)
 
 ## Adding markers and navigation line
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Markers can be added to the layers of ArcGIS Maps by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the ArcGIS Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
+Markers can be added to the layers of ArcGIS by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the ArcGIS layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -123,7 +112,7 @@ Markers can be added to the layers of ArcGIS Maps by setting the corresponding l
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Markers can be added to the layers of ArcGIS Maps by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the ArcGIS Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
+Markers can be added to the layers of ArcGIS by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the ArcGIS layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -135,13 +124,13 @@ Markers can be added to the layers of ArcGIS Maps by setting the corresponding l
 {% endtabs %}
 {% endif %}
 
-![ArcGIS Maps with Markers and Navigation Line](../images/MapProviders/Arcgis-maps/arcgis-maps-marker-and-line.PNG)
+![ArcGIS with Markers and Navigation Line](../images/MapProviders/Arcgis/arcgis-marker-and-line.PNG)
 
 ## Adding sublayer
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Any GeoJSON shape can be rendered as a sublayer on top of the ArcGIS Maps layer for highlighting a particular continent or country in ArcGIS Maps by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
+Any GeoJSON shape can be rendered as a sublayer on top of the ArcGIS layer for highlighting a particular continent or country in ArcGIS by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -154,7 +143,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the ArcGIS Maps layer 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Any GeoJSON shape can be rendered as a sublayer on top of the ArcGIS Maps layer for highlighting a particular continent or country in ArcGIS Maps by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
+Any GeoJSON shape can be rendered as a sublayer on top of the ArcGIS layer for highlighting a particular continent or country in ArcGIS by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -166,7 +155,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the ArcGIS Maps layer 
 {% endtabs %}
 {% endif %}
 
-![ArcGIS Maps with Sublayer](../images/MapProviders/Arcgis-maps/arcgis-maps-sublayer.PNG)
+![ArcGIS with Sublayer](../images/MapProviders/Arcgis/arcgis-sublayer.PNG)
 
 ## Enabling legend
 
@@ -197,4 +186,4 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 {% endtabs %}
 {% endif %}
 
-![ArcGIS Maps with Legend](../images/MapProviders/Arcgis-maps/arcgis-maps-legend.PNG)
+![ArcGIS with Legend](../images/MapProviders/Arcgis/arcgis-legend.PNG)

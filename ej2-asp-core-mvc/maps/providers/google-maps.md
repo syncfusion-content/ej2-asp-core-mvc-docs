@@ -12,40 +12,47 @@ documentation: ug
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Google Maps is yet another online Maps provider, owned by Google. As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The Google Maps can be rendered from online map service providers by specifying the URL provided by those providers in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of Google online map services, allowing users to preview their maps in the Syncfusion EJ2 Maps control. The following template provides a preview of Google Maps within the Syncfusion EJ2 Maps control.
-
-<!-- markdownlint-disable MD034 -->
-
-Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.png
-
-* "${z}" - It represents zoom factor (level).
-* "${x}" - It indicates tile image x-position (tileX).
-* "${y}" - It indicates tile image y-position (tileY).
+Google Maps is another online Maps provider, owned by Google. As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The Google Maps can be rendered from online map service providers by specifying the URL provided by those providers in the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of Google online map services, allowing users to preview their maps in the Syncfusion Maps Component.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Google Maps is yet another online Maps provider, owned by Google. As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The Google Maps can be rendered from online map service providers by specifying the URL provided by those providers in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of Google online map services, allowing users to preview their maps in the Syncfusion EJ2 Maps control. The following template provides a preview of Google Maps within the Syncfusion EJ2 Maps control.
-
-<!-- markdownlint-disable MD034 -->
-
-Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.png
-
-* "${z}" - It represents zoom factor (level).
-* "${x}" - It indicates tile image x-position (tileX).
-* "${y}" - It indicates tile image y-position (tileY).
+Google Maps is another online Maps provider, owned by Google. As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The Google Maps can be rendered from online map service providers by specifying the URL provided by those providers in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of Google online map services, allowing users to preview their maps in the Syncfusion Maps Component.
 
 {% endif %}
 
 ## Adding Google Maps
 
+The Google map tile service can be accessed via the following URL:
+https://tile.googleapis.com/v1/2dtiles/z/x/y?session=YOUR_SESSION_TOKEN&key=YOUR_API_KEY
+
+In the above URL template,
+
+* {z} - It represents the zoom level of the map. 
+* {x} - It represents the horizontal position of the tile.
+* {y} - It represents the vertical position of the tile. 
+
+These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile.
+
+>You can refer this documentation [link](https://developers.google.com/maps/documentation/tile/roadmap) for the latest URL template for Google Maps.
+
+Below are the outlined steps to integrate Google Maps tiles into the Syncfusion Maps Component.
+
+1. Generate an API key from the Google Cloud Platform.
+2. Generate a session token to fetch Google Map tiles.
+3. Initialize the Syncfusion Maps Component with the generated session token and API key.
+4. Invoke the initialization function to load and display the map tiles.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
-The Google map tiles can be accessed using the following URL Template:
-https://tile.googleapis.com/v1/2dtiles/z/x/y?key=YOUR_API_KEY
+Here is a step-by-step explanation of how to integrate Google Maps tiles into the Syncfusion Maps Component using the given code.
 
-In this template, {z} represents the zoom level of the map, {x} represents the horizontal position of the tile, and {y} represents the vertical position of the tile. These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile. The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://developers.google.com/maps/documentation/tile/get-api-key) to generate an API key, and then added the key to the URL.
+**STEP 1**: Generate an API key from the Google Cloud Platform by enabling the required APIs (Google Maps Tile API and Google Maps API). This key is essential for authentication and will be included in every API call.  Follow the steps in this [link](https://developers.google.com/maps/documentation/tile/get-api-key) to generate an API key.
 
->You can refer this documentation link(https://developers.google.com/maps/documentation/tile/roadmap) for the latest URL template for Google Maps.
+**STEP 2**: The fetchSessionToken function generates a session token required to retrieve Google Map tiles by sending a POST request to the createSession endpoint of the Google Maps Tile API.
+
+**STEP 3**: To initialize the Syncfusion Maps Component, create a function that fetches the session token using the fetchSessionToken function. Once the session token is retrieved, both the session token and API key are added to the URL in the `urlTemplate` property of the Maps Component to authenticate and access the map tiles. This ensures that the map tiles are securely and correctly accessed, allowing the Syncfusion Maps Component to display the map with the appropriate data.
+
+**STEP 4**: Finally, call the initializeMap function to fetch the session token and load the map with appropriate tiles.
 
 In the follwing example, the Google Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
@@ -60,14 +67,17 @@ In the follwing example, the Google Maps can be rendered using the [UrlTemplate]
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-The Google map tiles can be accessed using the following URL Template:
-https://tile.googleapis.com/v1/2dtiles/z/x/y?key=YOUR_API_KEY
+Here is a step-by-step explanation of how to integrate Google Maps tiles into the Syncfusion Maps Component using the given code.
 
-In this template, {z} represents the zoom level of the map, {x} represents the horizontal position of the tile, and {y} represents the vertical position of the tile. These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile. The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://developers.google.com/maps/documentation/tile/get-api-key) to generate an API key, and then added the key to the URL.
+**STEP 1**: Generate an API key from the Google Cloud Platform by enabling the required APIs (Google Maps Tile API and Google Maps API). This key is essential for authentication and will be included in every API call.  Follow the steps in this [link](https://developers.google.com/maps/documentation/tile/get-api-key) to generate an API key.
 
->You can refer this documentation link(https://developers.google.com/maps/documentation/tile/roadmap) for the latest URL template for Google Maps.
+**STEP 2**: The fetchSessionToken function generates a session token required to retrieve Google Map tiles by sending a POST request to the createSession endpoint of the Google Maps Tile API.
 
-In the follwing example, the Google Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
+**STEP 3**: To initialize the Syncfusion Maps Component, create a function that fetches the session token using the fetchSessionToken function. Once the session token is retrieved, both the session token and API key are added to the URL in the `urlTemplate` property of the Maps Component to authenticate and access the map tiles. This ensures that the map tiles are securely and correctly accessed, allowing the Syncfusion Maps Component to display the map with the appropriate data.
+
+**STEP 4**: Finally, call the initializeMap function to fetch the session token and load the map with appropriate tiles.
+
+In the follwing example, the Google Maps can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -108,7 +118,7 @@ The Google Maps layer can be zoomed and panned. Zooming helps to get a closer lo
 {% endtabs %}
 {% endif %}
 
-![Google Maps with Zooming and Panning](../images/MapProviders/Google-maps/google-maps-zooming.gif)
+![Google Maps with Zooming and Panning](../images/MapProviders/Google-maps/google-maps-zooming.PNG)
 
 ## Adding markers and navigation line
 
