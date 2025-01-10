@@ -50,11 +50,88 @@ Here is a step-by-step explanation of how to integrate Google Maps tiles into th
 
 **STEP 2**: The fetchSessionToken function generates a session token required to retrieve Google Map tiles by sending a POST request to the createSession endpoint of the Google Maps Tile API.
 
+{% tabs %}
+{% highlight cshtml tabtitle="SessionToken" %}
+
+const apiKey = "Your_Key";
+
+async function fetchSessionToken(apiKey) {
+    try {
+        // Send a POST request to fetch session token
+        const response = await fetch(
+            `https://tile.googleapis.com/v1/createSession?key=${apiKey}`,
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    mapType: "roadmap",
+                    language: "en-US",
+                    region: "US",
+                }),
+            }
+        );
+
+        // Check for response status
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(
+                `Error generating session token: ${errorData.error.message}`
+            );
+        }
+
+        // Return the session token
+        const data = await response.json();
+        return data.session;
+    } catch (error) {
+        console.error("Error fetching session token:", error.message);
+        throw error;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 **STEP 3**: To initialize the Syncfusion Maps Component, create a function that fetches the session token using the fetchSessionToken function. Once the session token is retrieved, both the session token and API key are added to the URL in the `urlTemplate` property of the Maps Component to authenticate and access the map tiles. This ensures that the map tiles are securely and correctly accessed, allowing the Syncfusion Maps Component to display the map with the appropriate data.
+
+{% tabs %}
+{% highlight cshtml tabtitle="SetUrlTemplate" %}
+
+async function initializeMap() {
+    try {
+        // Fetch session token
+        const sessionToken = await fetchSessionToken(apiKey);
+
+        // Update the URL template
+        const maps = document.getElementById('maps').ej2_instances[0];
+        maps.layers[0].urlTemplate = `https://tile.googleapis.com/v1/2dtiles/level/tileX/tileY?session=${sessionToken}&key=${apiKey}`;
+    } catch (error) {
+        console.error("Failed to initialize the map:", error.message);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 **STEP 4**: Finally, call the initializeMap function to fetch the session token and load the map with appropriate tiles.
 
-In the follwing example, the Google Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
+{% tabs %}
+{% highlight cshtml tabtitle="InitializeMap" %}
+
+document.addEventListener('DOMContentLoaded', async function () {
+    try {
+        // Initialize map after DOM content is loaded
+        await initializeMap();
+    } catch (error) {
+        console.error("Error initializing the map:", error.message);
+    }
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+In the following example, the Google Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -73,11 +150,86 @@ Here is a step-by-step explanation of how to integrate Google Maps tiles into th
 
 **STEP 2**: The fetchSessionToken function generates a session token required to retrieve Google Map tiles by sending a POST request to the createSession endpoint of the Google Maps Tile API.
 
+{% tabs %}
+{% highlight cshtml tabtitle="SessionToken" %}
+
+    async function fetchSessionToken(apiKey) {
+        try {
+            // Send a POST request to fetch session token
+            const response = await fetch(
+                `https://tile.googleapis.com/v1/createSession?key=${apiKey}`,
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        mapType: "roadmap",
+                        language: "en-US",
+                        region: "US",
+                    }),
+                }
+            );
+    
+            // Check for response status
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(
+                    `Error generating session token: ${errorData.error.message}`
+                );
+            }
+    
+            // Return the session token
+            const data = await response.json();
+            return data.session;
+        } catch (error) {
+            console.error("Error fetching session token:", error.message);
+            throw error;
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
 **STEP 3**: To initialize the Syncfusion Maps Component, create a function that fetches the session token using the fetchSessionToken function. Once the session token is retrieved, both the session token and API key are added to the URL in the `urlTemplate` property of the Maps Component to authenticate and access the map tiles. This ensures that the map tiles are securely and correctly accessed, allowing the Syncfusion Maps Component to display the map with the appropriate data.
+
+{% tabs %}
+{% highlight cshtml tabtitle="SetUrlTemplate" %}
+    
+    async function initializeMap() {
+        try {
+            // Fetch session token
+            const sessionToken = await fetchSessionToken(apiKey);
+    
+            // Update the URL template
+            const maps = document.getElementById('maps').ej2_instances[0];
+            maps.layers[0].urlTemplate = `https://tile.googleapis.com/v1/2dtiles/level/tileX/tileY?session=${sessionToken}&key=${apiKey}`;
+        } catch (error) {
+            console.error("Failed to initialize the map:", error.message);
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
 
 **STEP 4**: Finally, call the initializeMap function to fetch the session token and load the map with appropriate tiles.
 
-In the follwing example, the Google Maps can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
+{% tabs %}
+{% highlight cshtml tabtitle="InitializeMap" %}
+  
+    document.addEventListener('DOMContentLoaded', async function () {
+        try {
+            // Initialize map after DOM content is loaded
+            await initializeMap();
+        } catch (error) {
+            console.error("Error initializing the map:", error.message);
+        }
+    });
+
+{% endhighlight %}
+{% endtabs %}
+
+In the following example, the Google Maps can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

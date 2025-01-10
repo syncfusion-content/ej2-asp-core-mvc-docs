@@ -39,7 +39,7 @@ The subscription_key is required and must be included in the URL to authenticate
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-In the follwing example, the HERE Map can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
+In the following example, the HERE Map can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -57,7 +57,7 @@ https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/png?apiKey=Your_key
 
 In this template, {z} represents the zoom level of the map, {x} represents the horizontal position of the tile, and {y} represents the vertical position of the tile. These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile. The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://www.here.com/docs/bundle/raster-tile-api-developer-guide/page/topics/quickstart.html) to generate an API key, and then added the key to the URL.
 
-In the follwing example, the HERE Map can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
+In the following example, the HERE Map can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

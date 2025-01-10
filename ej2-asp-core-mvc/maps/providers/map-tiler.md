@@ -39,7 +39,7 @@ The subscription_key is required and must be included in the URL to authenticate
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-In the follwing example, the MapTiler can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
+In the following example, the MapTiler can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -52,7 +52,7 @@ In the follwing example, the MapTiler can be rendered using the [urlTemplate](ht
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-In the follwing example, the MapTiler can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
+In the following example, the MapTiler can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
