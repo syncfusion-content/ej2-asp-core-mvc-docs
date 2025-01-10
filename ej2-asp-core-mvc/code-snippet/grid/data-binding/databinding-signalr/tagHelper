@@ -1,0 +1,46 @@
+<script src="js/microsoft/signalr/dist/browser/signalr.js"></script>
+@Html.AntiForgeryToken()
+
+<ejs-grid id="grid" created="onCreated" actionComplete="actionComplete" load="gridload" height="348px" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-data-manager url="/Index?handler=UrlDataSource" insertUrl="/Index?handler=Insert" updateUrl="/Index?handler=Update" removeUrl="/Index?handler=Delete" adaptor="UrlAdaptor"></e-data-manager>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="ShipCountry" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function gridload() {
+        this.dataSource.dataSource.headers = [{ 'XSRF-TOKEN': document.querySelector('input[type="hidden"][name="__RequestVerificationToken"]').value }];
+    }
+    let connection = new signalR.HubConnectionBuilder().withUrl("/ChatHub").build();
+    function onCreated() {
+        connection.on("ReceiveMessage", (message) => {
+            var grid = document.getElementById("grid").ej2_instances[0];
+            if (grid) {
+                grid.refresh();
+            }
+        });
+        connection.start()
+            .then(() => {
+                console.log("SignalR connection established successfully");
+                connection.invoke('SendMessage', "refreshPages")
+                    .catch((err) => {
+                        console.error("Error sending data:", err.toString());
+                    });
+            })
+            .catch((err) => {
+                console.error("Error establishing SignalR connection:", err.toString());
+            });
+    }
+    function actionComplete(args) {
+        if (args.requestType === "save" || args.requestType === "delete") {
+            connection.invoke('SendMessage', "refreshPages")
+                .catch((err) => {
+                    console.error(err.toString());
+                });
+        }
+    }
+</script>

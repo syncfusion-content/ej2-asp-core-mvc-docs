@@ -1,9 +1,8 @@
-@using Syncfusion.EJ2
-
-@Html.EJS().Grid("DynamicObjectGrid").DataSource((IEnumerable<object>)ViewBag.DynamicData).AllowSorting().AllowFiltering().Columns(col =>
-   {
-       col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("140").ValidationRules(new { required = true, number = true }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-       col.Field("Customer.OrderDate").HeaderText("Order Date").EditType("datetimepickeredit").Width("150").Format(new { type = "datetime", format = "M/d/y hh:mm a" }).Add();
-       col.Field("Customer.Freight").HeaderText("Freight").Width("140").EditType("numericedit").ValidationRules(new { required = true }).Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
-       col.Field("Customer.ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
-   }).AllowPaging().PageSettings(page => page.PageCount(2)).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DynamicData).AllowSorting().AllowFiltering().Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("140").ValidationRules(new { required = true, number = true }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Customer.CustomerID").HeaderText("Customer ID").Width("150").Add();
+    col.Field("Customer.Freight").HeaderText("Freight").Width("140").EditType("numericedit").ValidationRules(new { required = true }).Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Customer.OrderDate").HeaderText("Order Date").EditType("datetimepickeredit").Width("150").Format(new { type = "datetime", format = "M/d/y hh:mm a" }).Add();
+    col.Field("Customer.ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
+}).AllowPaging().PageSettings(page => page.PageCount(10)).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
