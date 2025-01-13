@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import Export Annotation Object in ##Platform_Name## Pdfviewer Component
+title: Import Export Annotation in ##Platform_Name## Pdfviewer Component | Syncfusion
 description: Learn here all about Import Export Annotation Object in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Import Export Annotation Object
@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Import and Export annotation as object
+# Import and Export annotation
 
 The PDF Viewer library allows you to import annotations from objects or streams instead of loading it as a file. To import such annotation objects, the PDF Viewer control must export the PDF annotations as objects using the [**ExportAnnotationsAsObject()**](https://ej2.syncfusion.com/documentation/api/pdfviewer/#exportannotationsasobject) method. Only the annotations objects that are exported from the PDF Viewer can be imported.
 
-The following steps are used to import and export annotation as object.
+The following steps are used to import and export annotations in various formats such as objects, JSON, and XFDF.
 
 **Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started/) to create a simple PDF Viewer sample.
 
@@ -26,6 +26,8 @@ The following steps are used to import and export annotation as object.
     ViewData["Title"] = "Home page";
 }
 
+<button type="button" onclick="exportAsJson()">Export Annoatation As Json</button>
+<button type="button" onclick="exportAsXfdf()">Export Annoatation As Xfdf</button>
 <button type="button" onclick="exportAnnotation()">Export Annoatation</button>
 <button type="button" onclick="importAnnotation()">Import Annoatation</button>
 
@@ -38,7 +40,17 @@ The following steps are used to import and export annotation as object.
 
 <script type ="text/javascript">
 
-    var exportObject;
+     var exportObject;
+    //Export annotation as Json
+    function exportAsJson(){
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.exportAnnotation('Json');
+    }
+    //Export annotation as Xfdf
+    function exportAsXfdf(){
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.exportAnnotation('Xfdf');
+    }
     //Export annotation as object.
     function exportAnnotation() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
@@ -62,6 +74,8 @@ The following steps are used to import and export annotation as object.
     ViewData["Title"] = "Home page";
 }
 
+<button type="button" onclick="exportAsJson()">Export Annoatation As Json</button>
+<button type="button" onclick="exportAsXfdf()">Export Annoatation As Xfdf</button>
 <button type="button" onclick="exportAnnotation()">Export Annoatation</button>
 <button type="button" onclick="importAnnotation()">Import Annoatation</button>
 
@@ -75,7 +89,17 @@ The following steps are used to import and export annotation as object.
 
 <script type ="text/javascript">
 
-    var exportObject;
+     var exportObject;
+    //Export annotation as Json
+    function exportAsJson(){
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.exportAnnotation('Json');
+    }
+    //Export annotation as Xfdf
+    function exportAsXfdf(){
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        viewer.exportAnnotation('Xfdf');
+    }
     //Export annotation as object.
     function exportAnnotation() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
