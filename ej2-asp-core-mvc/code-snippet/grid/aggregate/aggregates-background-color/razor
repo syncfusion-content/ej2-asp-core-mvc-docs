@@ -1,0 +1,42 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").Width("160").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
+}).AllowGrouping().GroupSettings(group => { group.ShowDropArea(true).Columns(new string[] { "ShipCountry" }); }).Aggregates(gridAggregation => { gridAggregation.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>()
+{ new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Type = "Max", GroupCaptionTemplate = "Max: ${Max}" },
+ new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Type = "Sum", GroupFooterTemplate = "Sum: ${Sum}" } }).Add(); }).DataBound("dataBound").Render()
+<script>
+ function dataBound(args) {
+var grid = document.getElementById("grid").ej2_instances[0];
+var grpCaptionCells = [].slice.call(
+      grid.element.querySelectorAll(
+        '.e-groupcaptionrow .e-summarycell.e-templatecell'
+      )
+    );
+    grpCaptionCells.filter((cell) => {
+      var value = parseInt(cell.innerHTML.match(/\d+/)[0]);
+      if (value < 100) {
+        cell.style.backgroundColor = 'red';
+      } else {
+        cell.style.backgroundColor = 'green';
+      }
+    });
+    var grpFooterCells = [].slice.call(
+      grid.element.querySelectorAll(
+        '.e-groupfooterrow .e-summarycell.e-templatecell'
+      )
+    );
+
+    grpFooterCells.filter((cell) => {
+      var value = parseInt(cell.innerHTML.match(/\d+/)[0]);
+      if (value < 50) {
+        cell.style.backgroundColor = 'blue';
+      } else {
+        cell.style.backgroundColor = 'orange';
+      }
+    });
+ }
+</script>

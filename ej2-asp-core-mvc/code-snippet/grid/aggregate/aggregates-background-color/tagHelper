@@ -1,0 +1,47 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" height='348px' dataBound="dataBound">
+    <e-grid-aggregates>
+    <e-aggregate-columns>
+                <e-aggregate-column field="Freight" type="Sum" groupFooterTemplate="Sum:${Sum}"></e-aggregate-column>                        
+            </e-aggregate-columns>
+        </e-grid-aggregate>
+        <e-grid-aggregate>
+            <e-aggregate-columns>
+                <e-aggregate-column field="Freight" type="Max" groupCaptionTemplate="Max: ${Max}"></e-aggregate-column>                        
+            </e-aggregate-columns>
+        </e-grid-aggregate>
+    </e-grid-aggregates>
+    <e-grid-groupsettings showDropArea="false" columns="@(new string[] {"ShipCountry"})"></e-grid-groupsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="160"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="140"></e-grid-column>
+        
+    </e-grid-columns>
+</ejs-grid>
+<script>
+function dataBound() {
+var grid = document.getElementById("grid").ej2_instances[0];
+var grpCaptionCells = [].slice.call(
+grid.element.querySelectorAll('.e-groupcaptionrow .e-summarycell.e-templatecell'));
+grpCaptionCells.filter((cell) => {
+var value = parseInt(cell.innerHTML.match(/\d+/)[0]);
+if (value < 100) {
+    cell.style.backgroundColor = 'red';
+} else {
+    cell.style.backgroundColor = 'green';
+}
+});
+var grpFooterCells = [].slice.call(
+grid.element.querySelectorAll('.e-groupfooterrow .e-summarycell.e-templatecell'));
+grpFooterCells.filter((cell) => {
+var value = parseInt(cell.innerHTML.match(/\d+/)[0]);
+if (value < 50) {
+    cell.style.backgroundColor = 'blue';
+} else {
+cell.style.backgroundColor = 'orange';
+}
+});
+}
+</script>
