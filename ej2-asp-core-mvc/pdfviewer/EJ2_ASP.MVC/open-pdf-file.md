@@ -33,7 +33,7 @@ This guide demonstrates how to load a PDF document from a Base64 string into the
     <div style="height:500px;width:100%;">
         <button type="button" onclick="LoadFromBase64()">:Load From Base64</button>
         <!-- Render PDF Viewer using the Html helper method -->
-        @Html.EJS().PdfViewer("pdfViewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+        @Html.EJS().PdfViewer("pdfViewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").ResourceUrl("https://cdn.syncfusion.com/ej2/28.1.33/dist/ej2-pdfviewer-lib").Render()
     </div>
 </div>
 
