@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Group and Caption Aggregate in ##Platform_Name## Grid Component
+title: Group and Caption Aggregate in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Group and Caption Aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Group and Caption Aggregate
@@ -69,3 +69,20 @@ In some cases, you may want to disable the page-wise aggregates for grouping in 
 {% endtabs %}
 
 ![Disable page wise aggregates for grouping](../images/aggregates/group-disable-page.gif)
+
+## Customize the background color of group caption and footer aggregates based on a condition
+
+The Syncfusion Grid control allows dynamically applying background colors to group caption and footer aggregate cells based on specific conditions. This can be achieved by customizing the [dataBound](../api/grid/#databound) event.
+
+Within the `dataBound` event handler, group caption and footer cells are selected using **querySelectorAll** and assigned to arrays for processing. Conditional logic is then applied to set the background color of these cells. In this example, the background color of group caption cells is set to **red** if the value is less than **100**, and **green** otherwise. For group footer cells, the background color is set to **blue** if the value is less than **50**, and **orange** otherwise.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/aggregate/aggregates-background-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="aggregates-background-color.cs" %}
+{% include code-snippet/grid/aggregate/aggregates-background-color/aggregates-background-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customize the background color of group caption and footer aggregates](../images/aggregates/aggregates-background-color.png)

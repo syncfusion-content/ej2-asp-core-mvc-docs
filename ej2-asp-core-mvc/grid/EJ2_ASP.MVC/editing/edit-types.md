@@ -181,7 +181,7 @@ The following sample demonstrates how to open the popup when focusing on the edi
 {% endhighlight %}
 {% endtabs %}
 
-![Customize dropdown edit type](../images/editing/dropdown-popup.gif)
+![Customize dropdown edit type](../images/editing/dropdown-popup.png)
 
 ## Customize CheckBox component of booleanedit type 
 
@@ -224,6 +224,23 @@ The following sample code demonstrates the customization applied to DatePicker c
 {% endtabs %}
 
 ![Customize date picker edit type](../images/editing/datepicker-edit-type.png)
+
+### Disable the date value prior to the selected date value in DatePicker control
+
+The Syncfusion Grid allows configuring the [DatePicker](../../datepicker) control to dynamically set a minimum date for selection. This feature ensures that users can select dates only from a specified minimum date onward, based on the context of each row's data. This functionality is particularly useful in maintaining data accuracy by preventing users from selecting invalid or illogical dates.
+
+The following example demonstrates how to configure the `DatePicker` control within the grid using the **edit** parameters of a column. This setup dynamically restricts the selection of dates in the DatePicker's calendar based on the data in the current row.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/hide-date/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="hide-date.cs" %}
+{% include code-snippet/grid/edit/hide-date/hide-date.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Disable the date value](../images/editing/hide-date.png)
 
 ## Customize DateTimePicker component of datetimepickeredit type 
 
@@ -376,7 +393,7 @@ The following example demonstrates how to render images in the DropDownList edit
 {% endhighlight %}
 {% endtabs %}
 
-![Render drop down list component with image](../images/editing/dropdown-with-image.png)
+![Render drop down list component with image](../images/editing/dropdown-with-image.jpeg)
 
 ### Render Multiple columns in DropDownList component  
 
@@ -454,7 +471,7 @@ The following example demonstrates how to render a MultiSelect component in the 
 {% endhighlight %}
 {% endtabs %}
 
-![Render multiselect component](../images/editing/render-multiselect-dropdown.gif)
+![Render multiselect component](../images/editing/render-multiselect-dropdown.jpeg)
 
 ### Render RichTextEditor component in edit form
 
@@ -475,7 +492,7 @@ The following example demonstrates how to render a RichTextEditor component in t
 {% endhighlight %}
 {% endtabs %}
 
-![Render richtext editor component](../images/editing/render-richtext-editor.gif)
+![Render richtext editor component](../images/editing/render-richtext-editor.jpeg)
 
 ### Render Upload component in edit form  
 
@@ -494,7 +511,7 @@ The following example demonstrates how to render a Upload control in the **Emplo
 {% endhighlight %}
 {% endtabs %}
 
-![Render Upload component in edit form](../images/editing/edit-types-upload.gif)
+![Render Upload component in edit form](../images/editing/edit-types-upload.jpeg)
 
 ### Render AutoComplete component in edit form 
 
