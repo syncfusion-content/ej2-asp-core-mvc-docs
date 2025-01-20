@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Integrate Avatar Into Badge in ##Platform_Name## Avatar Component
-description: Learn here all about how to integrate Avatar into Badge in Syncfusion ##Platform_Name## Avatar component of Syncfusion Essential JS 2 and more.
+title: Integrate Avatar Into Badge in ##Platform_Name## Avatar control
+description: Learn here all about how to integrate Avatar into Badge in Syncfusion ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integrate Avatar Into Badge
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Integrate Avatar into Badge
 
-The Badge is a dependent and supportive component that can be used with Avatar to create a notification Avatar. The default Avatar `(.e-avatar)` and circle Avatar `(.e-avatar-circle)` have been used with notification badges `(.e-badge-notification)` in the following sample.
+The Badge is a dependent and supportive control that can be used with Avatar to create a notification Avatar. The default Avatar `(.e-avatar)` and circle Avatar `(.e-avatar-circle)` have been used with notification badges `(.e-badge-notification)` in the following sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
