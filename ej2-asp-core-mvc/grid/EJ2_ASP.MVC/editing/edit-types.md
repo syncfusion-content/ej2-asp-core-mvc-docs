@@ -471,7 +471,7 @@ The following example demonstrates how to render a MultiSelect component in the 
 {% endhighlight %}
 {% endtabs %}
 
-![Render multiselect component](../images/editing/render-multiselect-dropdown.png)
+![Render multiselect component](../images/editing/render-multiselect-dropdown.jpeg)
 
 ### Render RichTextEditor component in edit form
 
@@ -492,7 +492,7 @@ The following example demonstrates how to render a RichTextEditor component in t
 {% endhighlight %}
 {% endtabs %}
 
-![Render richtext editor component](../images/editing/render-richtext-editor.png)
+![Render richtext editor component](../images/editing/render-richtext-editor.jpeg)
 
 ### Render Upload component in edit form  
 
@@ -511,7 +511,7 @@ The following example demonstrates how to render a Upload control in the **Emplo
 {% endhighlight %}
 {% endtabs %}
 
-![Render Upload component in edit form](../images/editing/edit-types-upload.png)
+![Render Upload component in edit form](../images/editing/edit-types-upload.jpeg)
 
 ### Render AutoComplete component in edit form 
 
