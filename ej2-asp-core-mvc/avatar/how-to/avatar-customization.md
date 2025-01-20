@@ -12,7 +12,7 @@ documentation: ug
 
 ## Color customization
 
-The avatar comes with default background color (Grey). This can be easily customized to desired color by adding custom class or directly selecting the avatar class from the CSS.
+The Avatar comes with default background color (Grey). This can be easily customized to the desired color by adding custom class or directly selecting the Avatar class from the CSS.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,9 +37,9 @@ The avatar comes with default background color (Grey). This can be easily custom
 
 ![Avatar Color](../images/color.PNG)
 
-## Customize avatar sizes
+## Customize Avatar sizes
 
-Even though the avatar comes with five predefined sizes, sometimes it's not enough. So, the avatar is designed in such a way that the width and height will be relative to font-size. By changing the `font-size` of the avatar element, you can change the width and height automatically.
+Even though the Avatar comes with five predefined sizes, sometimes it's not enough. The Avatar is designed so that the width and height are relative to the font-size. By changing the `font-size` of the Avatar element, you can change the width and height automatically.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -66,9 +66,9 @@ Even though the avatar comes with five predefined sizes, sometimes it's not enou
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Avatar/AvatarUGSample).
 
-## Use various media in avatar
+## Use various media in Avatar
 
-Avatars can be used with a wide variety of media formats like SVG, font-icons, images, letters, words, etc. 
+Avatars can be used with a wide variety of types of media formats like SVG, font-icons, images, letters, words, etc.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
