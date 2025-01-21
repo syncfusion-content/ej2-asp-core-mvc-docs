@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Avatar control
+title: Overview in ##Platform_Name## Avatar control | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
