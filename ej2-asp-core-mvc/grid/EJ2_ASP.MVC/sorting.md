@@ -116,10 +116,10 @@ The example below demonstrates how to display null values at the bottom of the g
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/sort-comparer/razor %}
+{% include code-snippet/grid/sorting/sort-comparer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="sort-comparer.cs" %}
-{% include code-snippet/grid/how-to/sort-comparer/sort-comparer.cs %}
+{% include code-snippet/grid/sorting/sort-comparer/sort-comparer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
