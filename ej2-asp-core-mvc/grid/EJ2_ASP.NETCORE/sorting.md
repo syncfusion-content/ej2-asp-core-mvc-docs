@@ -156,6 +156,64 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 
 ![Sorting](images/sorting/sorting-local-forign.png)
 
+**Sort foreign key column based on text for remote data**
+
+In the case of remote data in the grid, the sorting operation will be performed based on the `foreignKeyField` property of the column. The `foreignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The grid will send a request to the server-side with the `foreignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the grid.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/sorting/foreign-sort-remote/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="foreign-sort.cs" %}
+{% include code-snippet/grid/sorting/foreign-sort-remote/foreign-sort.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+The following code example describes the handling of sorting operation at the server side.
+
+```
+    public class ItemsController : ODataController
+    {
+        [EnableQuery]
+        public IQueryable<Item> Get()
+        {
+            List<Item> GridData = JsonConvert.DeserializeObject<Item[]>(Properties.Resources.ItemsJson).AsQueryable().ToList();
+            List<Brand> empData = JsonConvert.DeserializeObject<Brand[]>(Properties.Resources.BrandsJson).AsQueryable().ToList();
+            var queryString = HttpContext.Current.Request.QueryString;
+            var allUrlKeyValues = ControllerContext.Request.GetQueryNameValuePairs();
+            string key = allUrlKeyValues.LastOrDefault(x => x.Key == "$orderby").Value;
+            if (key != null)
+            {
+                if (key == "EmployeeID") {
+                    GridData = SortFor(key); //Only for foreignKey Column ascending
+                }
+                else if(key == "EmployeeID desc") {
+                    GridData = SortFor(key); //Only for foreignKey Column descending
+                }
+            }
+            var count = GridData.Count();
+            var data = GridData.AsQueryable();
+            return data;
+        }
+
+        public List<Item> SortFor(String Sorted)
+        {
+            List<Item> GridData = JsonConvert.DeserializeObject<Item[]>(Properties.Resources.ItemsJson).AsQueryable().ToList();
+            List<Brand> empData = JsonConvert.DeserializeObject<Brand[]>(Properties.Resources.BrandsJson).AsQueryable().ToList();
+            if (Sorted == "EmployeeID") //check whether ascending or descending
+                empData = empData.OrderBy(e => e.FirstName).ToList();
+            else if(Sorted == "EmployeeID desc")
+                empData = empData.OrderByDescending(e => e.FirstName).ToList();
+            List<Item> or = new List<Item>();
+            for (int i = 0; i < empData.Count(); i++) {
+                //Select the Field matching records
+                IEnumerable<Item> list = GridData.Where(pred => pred.EmployeeID == empData[i].EmployeeID).ToList();
+                or.AddRange(list);
+            }
+            return or;
+        }
+    }
+```
 ## Perform sorting based on its culture
 
 Perform sorting based on culture in the Grid can be achieved by utilizing the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property. By setting the `locale` property to the desired culture code, you enable sorting based on that specific culture. This allows you to apply locale-specific sorting rules and ensure accurate ordering for different languages and regions.
