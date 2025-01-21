@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Avatar Control
 
-This section briefly explains about how to include [ASP.NET MVC Avatar](https://www.syncfusion.com/aspnet-mvc-ui-controls/avatar) control in your ASP.NET MVC application using Visual Studio.
+This section explains about how to include [ASP.NET MVC Avatar](https://www.syncfusion.com/aspnet-mvc-ui-controls/avatar) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ This section briefly explains about how to include [ASP.NET MVC Avatar](https://
 
 ## Add stylesheet
 
-Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Here, the desired theme is referred using CDN inside the `<head>` of **~/Views/Shared/_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -43,7 +43,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 ## Add ASP.NET MVC Avatar control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Avatar control in `~/Home/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Avatar control in **~/Home/Index.cshtml** page.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
