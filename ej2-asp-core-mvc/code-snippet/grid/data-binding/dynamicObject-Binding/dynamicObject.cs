@@ -1,41 +1,46 @@
-public static List<DynamicDictionary> DynamicOrders { get; set; } = new List<DynamicDictionary>();
-
-protected IActionResult Index()
+public static List<DynamicList> DynamicOrders { get; set; } = new List<DynamicList>();
+public ActionResult Index()
 {
-    string[] customerIDs = { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" };
+    string[] customerIDList = { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" };
     string[] shipCountrys = { "USA", "UK", "Denmark", "Australia", "India" };
-    DynamicOrders = Enumerable.Range(1, 5).Select((x) =>
+    DynamicOrders = Enumerable.Range(1, 75).Select((x) =>
     {
-        dynamic d = new DynamicDictionary();
-        d.OrderID = 1000 + x;
-        d.CustomerID = customerIDs[x % customerIDs.Length];
-        d.Freight = (new double[] { 2, 1, 4, 5, 3 })[new Random().Next(5)] * x;
-        d.OrderDate = (new DateTime[] { new DateTime(2010, 11, 5), new DateTime(2018, 10, 3), new DateTime(1995, 9, 9), new DateTime(2012, 8, 2), new DateTime(2015, 4, 11) })[new Random().Next(5)];
-        d.ShipCountry = shipCountrys[x % shipCountrys.Length];
-        return d;
-    }).Cast<DynamicDictionary>().ToList<DynamicDictionary>();
+        dynamic order = new DynamicList();
+       order.OrderID = 1000 + x;
+       order.CustomerID = customerIDList[x % customerIDList.Length];
+       order.Freight = (new double[] { 2, 1, 4, 5, 3 })[new Random().Next(5)] * x;
+       order.OrderDate = (new DateTime[] { new DateTime(2010, 11, 5), new DateTime(2018, 10, 3), new DateTime(1995, 9, 9), new DateTime(2012, 8, 2), new DateTime(2015, 4, 11) })[new Random().Next(5)];
+       order.ShipCountry = shipCountrys[x % shipCountrys.Length];
+        return order;
+    }).Cast<DynamicList>().ToList<DynamicList>();
     ViewBag.DynamicData = DynamicOrders;
     return View();
 }
-
-public class DynamicDictionary : DynamicObject
+public class DynamicList : DynamicObject
 {
-    public Dictionary<string, object> dictionary = new Dictionary<string, object>();
-
+    private List<KeyValuePair<string, object>> properties = new List<KeyValuePair<string, object>>();
     public override bool TryGetMember(GetMemberBinder binder, out object result)
     {
         string name = binder.Name;
-        return dictionary.TryGetValue(name, out result);
+        var property = properties.Find(propertyItem => propertyItem.Key == name);
+        result = property.Value;
+        return property.Key != null;
     }
+
     public override bool TrySetMember(SetMemberBinder binder, object value)
     {
-        dictionary[binder.Name] = value;
+        string name = binder.Name;
+        var property = properties.Find(propertyItem => propertyItem.Key == name);
+        if (property.Key != null)
+        {
+            properties.Remove(property);
+        }
+
+        properties.Add(new KeyValuePair<string, object>(name, value));
         return true;
     }
-
-    public override System.Collections.Generic.IEnumerable<string> GetDynamicMemberNames()
+    public override IEnumerable<string> GetDynamicMemberNames()
     {
-        return this.dictionary?.Keys;
+        return properties.ConvertAll(propertyItem => propertyItem.Key);
     }
-
 }
