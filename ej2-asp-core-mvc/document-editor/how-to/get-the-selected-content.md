@@ -46,7 +46,7 @@ You can add the following custom options using this API,
 
 ## Get the selected content as SFDT (rich text)
 
-You can use `sfdt` API to get the selected content as plain text from React Document Editor component.
+You can use `sfdt` API to get the selected content as rich text from React Document Editor component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
