@@ -12,14 +12,14 @@ documentation: ug
 
 The ChipList control has the following types.
 
-* Input Chip
-* Choice Chip
-* Filter Chip
-* Action Chip
+* Input Chips
+* Choice Chips
+* Filter Chips
+* Action Chips
 
-## Input Chip
+## Input Chips
 
-Input Chip holds information in compact form. It converts user input into chips.
+Input Chips holds information in compact form. It converts user input into Chips.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,12 +42,11 @@ Input Chip holds information in compact form. It converts user input into chips.
 {% endif %}
 
 
-
-## Choice Chip
-
-Choice Chip allows to select a single chip from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Single`.
+## Choice Chips
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+Choice Chips allows to select a single Chips from the set of ChipList/ChipCollection. It can be enabled by setting the [`selection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_Selection) property to `Single`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -56,6 +55,8 @@ Choice Chip allows to select a single chip from the set of ChipList/ChipCollecti
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Choice Chips allows to select a single Chips from the set of ChipList/ChipCollection. It can be enabled by setting the [`selection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_Selection) property to `Single`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -69,11 +70,11 @@ Choice Chip allows to select a single chip from the set of ChipList/ChipCollecti
 
 
 
-## Filter Chip
-
-Filter Chip allows to select a multiple chip from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Multiple`.
+## Filter Chips
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+Filter Chips allows to select a multiple Chips from the set of ChipList/ChipCollection. It can be enabled by setting the [`selection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_Selection) property to `Multiple`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -82,6 +83,8 @@ Filter Chip allows to select a multiple chip from the set of ChipList/ChipCollec
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Filter Chips allows to select a multiple Chips from the set of ChipList/ChipCollection. It can be enabled by setting the [`selection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_Selection) property to `Multiple`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -95,11 +98,11 @@ Filter Chip allows to select a multiple chip from the set of ChipList/ChipCollec
 
 
 
-## Action Chip
-
-The Action Chip triggers the event like click or delete, which helps doing action based on the event.
+## Action Chips
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+The Action Chips triggers the event like [`click`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_Click) or [`delete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_Delete), which helps doing action based on the event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -108,6 +111,8 @@ The Action Chip triggers the event like click or delete, which helps doing actio
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The Action Chips triggers the event like [`click`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_Click) or [`delete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_Delete), which helps doing action based on the event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -121,11 +126,11 @@ The Action Chip triggers the event like click or delete, which helps doing actio
 
 
 
-### Deletable Chip
-
-Deletable Chip allows to delete a chip from ChipList/ChipCollection. It can be enabled by setting the `enableDelete` property to `true`.
+### Deletable Chips
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+Deletable Chips allows to delete a Chips from ChipList/ChipCollection. It can be enabled by setting the [`enableDelete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_EnableDelete) property to `true`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -134,6 +139,8 @@ Deletable Chip allows to delete a chip from ChipList/ChipCollection. It can be e
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Deletable Chips allows to delete a Chips from ChipList/ChipCollection. It can be enabled by setting the [`enableDelete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_EnableDelete) property to `true`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
