@@ -1,0 +1,39 @@
+@using Newtonsoft.Json
+<div style="padding-bottom: 10px">
+   @Html.EJS().Button("loadButton").CssClass("e-primary").Content("Load Data").Render()
+   @Html.EJS().Button("showButton").CssClass("e-primary custom").Content("Show Spinner").Render()
+   @Html.EJS().Button("hideButton").CssClass("e-primary custom").Content("Hide Spinner").Render()
+</div>
+@Html.EJS().Grid("grid").Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Format("C2").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+}).AllowPaging().Render()
+<script>
+    document.getElementById('loadButton').onclick = handleButtonClick;
+    document.getElementById('showButton').onclick = handleButtonClick;
+    document.getElementById('hideButton').onclick = handleButtonClick;
+    function handleButtonClick(event){
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (event.target.id === "showButton") {
+         grid.showSpinner();
+        }
+        else if(event.target.id === "loadButton"){
+            grid.showSpinner();
+            setTimeout(() => {
+                grid.dataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
+                grid.hideSpinner();
+            }, 1000);
+        }
+        else {
+            grid.hideSpinner();
+        }
+    }
+</script>
+<style>
+    .custom{
+        margin-left: 10px;
+    }
+</style>
