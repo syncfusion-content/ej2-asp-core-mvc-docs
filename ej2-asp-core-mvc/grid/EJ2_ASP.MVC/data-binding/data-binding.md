@@ -40,7 +40,7 @@ The following example demonstrates how to set the `LoadingIndicator.IndicatorTyp
 {% endhighlight %}
 {% endtabs %}
 
-![Loading indicator](../../images/data-binding/databinding-animation.gif)
+![Loading indicator](../images/data-binding/databinding-animation.gif)
 
 ## Refresh the datasource using property
 
@@ -74,7 +74,7 @@ The following example demonstrates adding a new record to the data source throug
 {% endhighlight %}
 {% endtabs %}
 
-![Refresh the datasource using property](../../images/data-binding/databinding-refersh.gif)
+![Refresh the datasource using property](../images/data-binding/databinding-refersh.gif)
 
 ## Dynamically change the datasource or columns or both
 
@@ -174,7 +174,7 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 {% endhighlight %}
 {% endtabs %}
 
-![Dynamically change the datasource or columns or both](../../images/data-binding/change-datsource.gif)
+![Dynamically change the datasource or columns or both](../images/data-binding/change-datsource.gif)
 
 >* The Grid state persistence feature does not support the  `changeDataSource` method.
 >* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/aspnetmvc/grid/flexibledata#/fluent2) resource.

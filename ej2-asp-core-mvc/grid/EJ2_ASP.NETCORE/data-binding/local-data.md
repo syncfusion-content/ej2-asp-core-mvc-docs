@@ -25,7 +25,7 @@ The following example demonstrates how to utilize the local data binding feature
 {% endhighlight %}
 {% endtabs %}
 
-![Local data](../../images/data-binding/local-data.png)
+![Local data](../images/data-binding/local-data.png)
 
 N> * By default, `DataManager` uses `JsonAdaptor` for list data-binding.
 
@@ -322,7 +322,7 @@ app.Run();
 
 The following screenshot represents the addition, editing, and deletion operations performed, reflecting changes across all client sides.
 
-![Data binding with SignalR ](../../images/data-binding/signalRImage.gif)
+![Data binding with SignalR ](../images/data-binding/signalRImage.gif)
 
 ## Binding data from excel file
 
@@ -345,7 +345,7 @@ The following example demonstrates how to import Excel data into the grid by uti
 {% endhighlight %}
 {% endtabs %}
 
-![Local data](../../images/data-binding/local-data-upload.gif)
+![Local data](../images/data-binding/local-data-upload.gif)
 
 ## Binding data and performing CRUD actions via Fetch request
 
@@ -634,7 +634,7 @@ app.Run();
 
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Binding data and performing CRUD actions via Fetch request](../../images/data-binding/requestFetch.gif)
+![Binding data and performing CRUD actions via Fetch request](../images/data-binding/requestFetch.gif)
 
 ### Display the loading indicator with local data
 
@@ -937,8 +937,7 @@ app.Run();
 
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Binding data and performing CRUD actions via AJAX request](../../images/data-binding/ajaxrequest.gif)
-
+![Binding data and performing CRUD actions via AJAX request](../images/data-binding/ajaxrequest.gif)
 
 ### Display the loading indicator using AJAX
 
@@ -974,7 +973,7 @@ The following example demonstrates how to show and hide the spinner during data 
 {% endhighlight %}
 {% endtabs %}
 
-![Managing spinner visibility during data loading](../../images/data-binding/local-data-spinner.gif)
+![Managing spinner visibility during data loading](../images/data-binding/local-data-spinner.gif)
 
 ## Immutable mode  
 
@@ -999,7 +998,7 @@ The following example demonstrates how to enable immutable mode in an ASP.NET Co
 {% endhighlight %}
 {% endtabs %}
 
-![Immutable mode](../../images/data-binding/databinding-immutable.gif)
+![Immutable mode](../images/data-binding/databinding-immutable.gif)
 
 ## ExpandoObject binding
 
@@ -1058,7 +1057,7 @@ Here's an example of how to bind a list of DynamicObject to the Syncfusion Grid:
 
 You can achieve complex data binding with DynamicObject in the Syncfusion Grid by using the dot (.) operator in the column.field property. This allows you to access and bind to nested properties within the DynamicObject, enabling the display of structured data in the grid.
 
-In the following example, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are considered complex data fields that are bound to the grid:
+In the following example, **Customer.OrderDate**, **Customer.Freight**, and **Customer.ShipCountry** are considered complex data fields that are bound to the grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

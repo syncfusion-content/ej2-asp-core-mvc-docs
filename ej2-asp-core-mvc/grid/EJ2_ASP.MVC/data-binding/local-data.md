@@ -25,7 +25,7 @@ The following example demonstrates how to utilize the local data binding feature
 {% endhighlight %}
 {% endtabs %}
 
-![Local data](../../images/data-binding/local-data.png)
+![Local data](../images/data-binding/local-data.png)
 
 ## Binding data from excel file
 
@@ -37,7 +37,7 @@ To import excel data in to grid, you can follow these steps:
 2. Parse the excel file data using **XLSX** library.
 3. Bind the JSON to the grid component. 
 
-The following example demonstrates how to import Excel data into the grid by utilizing the `Uploader` component's `change` event along with the **XLSX** library:
+The following example demonstrates how to import Excel data into the grid by utilizing the `Uploader` component's `Change` event along with the **XLSX** library:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -48,7 +48,7 @@ The following example demonstrates how to import Excel data into the grid by uti
 {% endhighlight %}
 {% endtabs %}
 
-![Local data](../../images/data-binding/local-data-upload.gif)
+![Local data](../images/data-binding/local-data-upload.gif)
 
 ## Binding data and performing CRUD actions via Fetch request
 
@@ -68,7 +68,7 @@ To achieve data binding and perform CRUD actions using Fetch requests in the Syn
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 
-A. To bind data from an external Fetch request, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property of the Grid. Fetch data from the server and provide it to the `dataSource` property using the `onSuccess` event of the Fetch request.
+A. To bind data from an external Fetch request, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property of the Grid. Fetch data from the server and provide it to the `DataSource` property using the `onSuccess` event of the Fetch request.
 
 B. To perform CRUD actions, leverage the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using Fetch, along with the relevant data received from the `ActionBegin` event, to update your server data accordingly.
 
@@ -276,7 +276,7 @@ namespace FetchRequest.Models
 ```
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Binding data and performing CRUD actions via Fetch request](../../images/data-binding/requestFetch.gif)
+![Binding data and performing CRUD actions via Fetch request](../images/data-binding/requestFetch.gif)
 
 ### Display the loading indicator with local data
 
@@ -522,7 +522,7 @@ namespace AJAXRequest.Models
 ```
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Binding data and performing CRUD actions via AJAX request](../../images/data-binding/ajaxrequest.gif)
+![Binding data and performing CRUD actions via AJAX request](../images/data-binding/ajaxrequest.gif)
 
 ### Display the loading indicator using AJAX
 
@@ -541,8 +541,6 @@ The following example demonstrates how to display the loading indicator in the S
 {% endhighlight %}
 {% endtabs %}
 
-![Display the loading indicator using AJAX](../../images/data-binding/localdata-spinner-ajax.png)
-
 ## Managing spinner visibility during data loading
 
 Showing a spinner during data loading in the Syncfusion ASP.NET MVC Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
@@ -560,7 +558,7 @@ The following example demonstrates how to show and hide the spinner during data 
 {% endhighlight %}
 {% endtabs %}
 
-![Managing spinner visibility during data loading](../../images/data-binding/local-data-spinner.gif)
+![Managing spinner visibility during data loading](../images/data-binding/local-data-spinner.gif)
 
 ## Immutable mode  
 
@@ -585,7 +583,7 @@ The following example demonstrates how to enable immutable mode in an ASP.NET MV
 {% endhighlight %}
 {% endtabs %}
 
-![Immutable mode](../../images/data-binding/databinding-immutable.gif)
+![Immutable mode](../images/data-binding/databinding-immutable.gif)
 
 ## ExpandoObject binding
 
@@ -621,15 +619,11 @@ In the following example, the fields Customer.CustomerID, Customer.OrderDate, Cu
 
 N> Perform data and CRUD operations for complex ExpandoObject binding fields as well.
 
-The following image represents ExpandoObject complex data binding.
-
-![Grid with ExpandoObject Binding](../../images/ExpandoObjectDemo.gif)
-
 ## DynamicObject binding
 
 The Syncfusion Grid component is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
 
-To bind an `ExpandoObject` to the grid, you need to assign it to the `dataSource` property. This enables the grid to perform various supported data operations and editing on the DynamicObject.
+To bind an `ExpandoObject` to the grid, you need to assign it to the `DataSource` property. This enables the grid to perform various supported data operations and editing on the DynamicObject.
 
 N> You must override the [`GetDynamicMemberNames`](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of the DynamicObject class and return the property names to perform data operation and editing while using DynamicObject.
 
@@ -648,7 +642,7 @@ Here's an example of how to bind a list of DynamicObject to the Syncfusion Grid:
 
 You can achieve complex data binding with DynamicObject in the Syncfusion Grid by using the dot (.) operator in the column.field property. This allows you to access and bind to nested properties within the DynamicObject, enabling the display of structured data in the grid.
 
-In the following example, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are considered complex data fields that are bound to the grid:
+In the following example, **Customer.OrderDate**, **Customer.Freight**, and **Customer.ShipCountry** are considered complex data fields that are bound to the grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -660,10 +654,6 @@ In the following example, Customer.OrderDate, Customer.Freight, and Customer.Shi
 {% endtabs %}
 
 N> Perform data and CRUD operations for complex DynamicObject binding fields as well.
-
-The following image represents DynamicObject complex data binding.
-
-![Grid with DynamicObject Binding](../../images/DynamicObjectDemo.gif)
 
 ### Limitations
 
