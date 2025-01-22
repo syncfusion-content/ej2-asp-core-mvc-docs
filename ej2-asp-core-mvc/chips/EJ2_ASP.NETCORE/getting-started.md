@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Chips Control
+title: Getting Started with ##Platform_Name## Chips Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
