@@ -194,7 +194,7 @@ Outline Chips have a border with a transparent background. It can be set using t
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Outline Chips Control](images/outline.png)
+![ASP.NET Outline Chips Control](images/outline-chip.png)
 
 ## Template
 
