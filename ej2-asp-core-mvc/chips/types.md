@@ -41,6 +41,7 @@ Input Chips holds information in compact form. It converts user input into Chips
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Input Chips Control](images/input-chip.png)
 
 ## Choice Chips
 
@@ -68,7 +69,7 @@ Choice Chips allows to select a single Chips from the set of ChipList/ChipCollec
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Choice Chips Control](images/choice-chip.png)
 
 ## Filter Chips
 
@@ -96,7 +97,7 @@ Filter Chips allows to select a multiple Chips from the set of ChipList/ChipColl
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Filter Chips Control](images/filter-chip.png)
 
 ## Action Chips
 
@@ -124,7 +125,7 @@ The Action Chips triggers the event like [`click`](https://help.syncfusion.com/c
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Actions Chips Control](images/action-chip.png)
 
 ### Deletable Chips
 
@@ -151,5 +152,7 @@ Deletable Chips allows to delete a Chips from ChipList/ChipCollection. It can be
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![ASP.NET Deletable Chips Control](images/deletable-chip.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Chips/ChipsSample).

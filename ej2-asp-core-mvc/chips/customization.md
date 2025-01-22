@@ -54,7 +54,7 @@ The Chips control has the following predefined styles that can be defined using 
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Styles Chips Control](images/styles.png)
 
 ## Leading Icon
 
@@ -82,7 +82,7 @@ You can add and customize the leading icon of Chips using the [`leadingIconCss`]
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Leading Icon Chips Control](images/leading-icon.png)
 
 ## Avatar
 
@@ -110,7 +110,7 @@ You can add and customize the avatar of Chips using the [`avatarIconCss`](https:
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Avatar Chips Control](images/avatar.png)
 
 ## Avatar Content
 
@@ -138,7 +138,7 @@ You can add and customize the avatar content of Chips using the [`avatarText`](h
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Avatar content Chips Control](images/avatar-content.png)
 
 ## Trailing Icon
 
@@ -194,6 +194,8 @@ Outline Chips have a border with a transparent background. It can be set using t
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Outline Chips Control](images/outline.png)
+
 ## Template
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -220,5 +222,6 @@ The [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.but
 {% endtabs %}
 {% endif %}
 
+![ASP.NET template Chips Control](images/template.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Chips/ChipsSample).
