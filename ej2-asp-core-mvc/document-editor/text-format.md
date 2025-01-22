@@ -163,7 +163,8 @@ documenteditor.selection.characterFormat.highlightColor= '#FFC0CB';
 {% endhighlight %}
 {% highlight c# tabtitle="Text-format.cs" %}
 {% include code-snippet/document-editor/text-format/document-editor.cs %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -173,7 +174,8 @@ documenteditor.selection.characterFormat.highlightColor= '#FFC0CB';
 {% endhighlight %}
 {% highlight c# tabtitle="Text-format.cs" %}
 {% include code-snippet/document-editor/text-format/document-editor.cs %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
