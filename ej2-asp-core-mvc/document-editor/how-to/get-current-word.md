@@ -25,7 +25,9 @@ The following example code illustrates how to select and get the current word as
 {% include code-snippet/document-editor-container/get-word/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-word.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% code-snippet/document-editor-container/get-word/document-editor.cs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -34,11 +36,11 @@ The following example code illustrates how to select and get the current word as
 {% include code-snippet/document-editor-container/get-word/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-word.cs" %}
-{% endhighlight %}{% endtabs %}
+{% code-snippet/document-editor-container/get-word/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
-
-To get the bookmark content as SFDT (rich text), check this [`link`](../../document-editor/how-to/get-the-selected-content/#get-the-selected-content-as-sfdt-rich-text)
 
 ## Select and get the paragraph in current cursor position
 
@@ -53,7 +55,9 @@ The following example code illustrates how to select and get the current paragra
 {% include code-snippet/document-editor-container/get-paragraph/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-paragraph.cs" %}
-{% endhighlight %}{% endtabs %}
+{% code-snippet/document-editor-container/get-paragraph/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -62,5 +66,7 @@ The following example code illustrates how to select and get the current paragra
 {% include code-snippet/document-editor-container/get-paragraph/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-paragraph.cs" %}
-{% endhighlight %}{% endtabs %}
+{% code-snippet/document-editor-container/get-paragraph/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
