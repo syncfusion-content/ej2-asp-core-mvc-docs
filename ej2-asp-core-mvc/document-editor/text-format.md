@@ -162,6 +162,7 @@ documenteditor.selection.characterFormat.highlightColor= '#FFC0CB';
 {% include code-snippet/document-editor/text-format/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text-format.cs" %}
+{% include code-snippet/document-editor/text-format/document-editor.cs %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -171,6 +172,7 @@ documenteditor.selection.characterFormat.highlightColor= '#FFC0CB';
 {% include code-snippet/document-editor/text-format/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text-format.cs" %}
+{% include code-snippet/document-editor/text-format/document-editor.cs %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
