@@ -1,0 +1,64 @@
+@{
+    var secondChildGrid = new Syncfusion.EJ2.Grids.Grid() {
+        DataSource = (IEnumerable<object>)ViewBag.CustomerDataSource,
+        QueryString = "CustomerID",
+        Columns = new List<Syncfusion.EJ2.Grids.GridColumn>
+        {
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="Customer ID", Width="90", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="Country", HeaderText="Country", Width="90" },
+        }
+    };
+}
+@{ 
+    var childGrid = new Syncfusion.EJ2.Grids.Grid() {
+        DataSource = (IEnumerable<object>)ViewBag.DataSource,
+        QueryString = "EmployeeID",
+        Columns = new List<Syncfusion.EJ2.Grids.GridColumn>
+        {
+           new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
+           new Syncfusion.EJ2.Grids.GridColumn(){ Field="Freight", HeaderText="Freight", Width="120", Format="C2", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right },
+           new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="150" },
+           new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="120" },
+        },
+        ChildGrid = secondChildGrid
+    };
+}
+<ejs-grid id="grid" dataSource="@ViewBag.EmployeeDataSource" childGrid="childGrid" hierarchyPrintMode="Expanded" toolbar="@(new List<string>() {"Print" })" actionBegin="actionBegin" load="load" allowPaging="true">
+   <e-grid-pageSettings pageSize="4"></e-grid-pageSettings>
+   <e-grid-columns>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="125"></e-grid-column>
+        <e-grid-column field="FirstName" headerText="First Name" width="120"></e-grid-column>
+        <e-grid-column field="LastName" headerText="Last Name" width="170"></e-grid-column>
+        <e-grid-column field="City" headerText="City" textAlign="Right" width="135"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    var persistedExpandedRows = {};
+    function actionBegin(eventArgs) {
+        if (eventArgs.requestType === 'paging') {
+            persistedExpandedRows = ej.base.extend({}, persistedExpandedRows, getExpandedState(this, 'Expanded', eventArgs.previousPage));
+        }
+    }
+    function load() {
+        this.on(ej.grids.printGridInit, printInit, this);
+    }
+    function printInit(gridInstance) {
+        gridInstance.printgrid.expandedRows = ej.base.extend({}, persistedExpandedRows, gridInstance.expandedRows);
+    }
+    function getExpandedState(gridObject, hierarchyPrintMode, currentPage) {
+        var expandedRowState = {};
+        var gridRows = gridObject.getRowsObject();
+        for (var rowIndex = 0; rowIndex < gridRows.length; rowIndex++) {
+            var gridRow = gridRows[rowIndex];
+            if (gridRow.isExpand && !gridRow.isDetailRow) {
+                var expandedIndex = gridObject.allowPaging
+                    ? gridRow.index + (currentPage * gridObject.pageSettings.pageSize) - gridObject.pageSettings.pageSize
+                    : gridRow.index;
+                expandedRowState[expandedIndex] = {};
+                expandedRowState[expandedIndex].isExpand = true;
+                expandedRowState[expandedIndex].gridModel = ej.grids.getPrintGridModel(gridRow.childGrid, hierarchyPrintMode);
+            }
+        }
+        return expandedRowState;
+    }
+</script>
