@@ -215,21 +215,6 @@ To implement on-demand server-side actions with a DataTable, you need to:
 {% endhighlight %}
 {% endtabs %}
 
-### DataTable with CRUD operations
-
-To perform server side CRUD operations for DataTable, you need to use **InsertUrl**, **UpdateUrl** and **RemoveUrl** of DataManager for inserting, updating and deleting the records in the specified controller actions.
-
-To pass the data from client side to server side when performing CRUD operations, you need to use `ExpandoObject` as a parameter for inserting and adding actions.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/cruddatatable/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dataoperation.cs" %}
-{% include code-snippet/grid/data-binding/cruddatatable/dataoperation.cs %}
-{% endhighlight %}
-{% endtabs %}
-
 ## Troubleshoot: Grid render rows without data
 
 In ASP.NET Core, by default the JSON results are returned in camelCase format. So grid field names are also changed in camelCase.
