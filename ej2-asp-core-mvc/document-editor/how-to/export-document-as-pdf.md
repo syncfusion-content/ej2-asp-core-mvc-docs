@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export Document As PDF in ##Platform_Name## Document Editor Component
+title: Export Document As PDF in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about export document as PDF in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export Document As PDF
@@ -26,7 +26,9 @@ N> You can install the PDF export packages from this [`link`](https://www.npmjs.
 {% include code-snippet/document-editor-container/export-pdf-client/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-client.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/export-pdf-client/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -35,14 +37,16 @@ N> You can install the PDF export packages from this [`link`](https://www.npmjs.
 {% include code-snippet/document-editor-container/export-pdf-client/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-client.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/export-pdf-client/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
 
 ## Export document as PDF in server-side using Syncfusion<sup style="font-size:70%">&reg;</sup> DocIO
 
-With the help of [`Synfusion DocIO`](https://help.syncfusion.com/file-formats/docio/word-to-pdf), you can export the document as PDF in server-side. Here, you can search the text.
+With the help of [`Syncfusion`<sup style="font-size:70%">&reg;</sup>` DocIO`](https://help.syncfusion.com/file-formats/docio/word-to-pdf), you can export the document as PDF in server-side. Here, you can search the text.
 
 The following way illustrates how to convert the document as PDF:
 
@@ -55,7 +59,9 @@ The following way illustrates how to convert the document as PDF:
 {% include code-snippet/document-editor-container/export-pdf-server/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-server.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/export-pdf-server/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -64,13 +70,15 @@ The following way illustrates how to convert the document as PDF:
 {% include code-snippet/document-editor-container/export-pdf-server/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-server.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/export-pdf-server/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
 
 * Using Save API in server-side, you can convert the sfdt to stream.
-* Finally, convert the stream to PDF using `Syncfusion.DocIORenderer.Net.Core` library.
+* Finally, convert the stream to PDF using `Syncfusion`<sup style="font-size:70%">&reg;</sup>`.DocIORenderer.Net.Core` library.
 
 ```csharp
 [AcceptVerbs("Post")]
