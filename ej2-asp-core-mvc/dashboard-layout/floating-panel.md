@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Floating Panel in ##Platform_Name## Dashboard Layout Component
-description: Learn here all about Floating Panel in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
+title: Floating Panel in ##Platform_Name## Dashboard Layout control
+description: Learn here all about Floating Panel in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Floating Panel
 publishingplatform: ##Platform_Name##
@@ -11,9 +11,9 @@ documentation: ug
 
 # Floating panels
 
-The floating functionality of the component allows to effectively use the entire layout for the panel's placement. If the floating functionality is enabled, the panels within the layout get floated upwards automatically to occupy the empty cells available in previous rows. This functionality can be enabled or disabled using the [`allowFloating`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~AllowFloating.html) property of the component.
+The floating functionality of the control allows to effectively use the entire layout for the panel's placement. If the floating functionality is enabled, the panels within the layout get floated upwards automatically to occupy the empty cells available in previous rows. This functionality can be enabled or disabled using the [`allowFloating`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~AllowFloating.html) property of the control.
 
-The following sample demonstrates how to enable or disable the floating of panels in the DashboardLayout component using [`allowFloating`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~AllowFloating.html) property.
+The following sample demonstrates how to enable or disable the floating of panels in the DashboardLayout control using [`allowFloating`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~AllowFloating.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
