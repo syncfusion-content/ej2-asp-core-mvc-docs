@@ -72,5 +72,5 @@ You can use `sfdt` API to get the selected content as rich text from React Docum
 You can add the following custom options using this API,
 
 * Save or export the selected content as SFDT file.
-* Get the content of a bookmark in Word document as SFDT by selecting a bookmark using `selectbookmark` API.
+* Get the content of a bookmark in Word document as SFDT by selecting a bookmark using `select bookmark` API.
 * Create template content that can be inserted to multiple documents in cursor position using `paste` API.
