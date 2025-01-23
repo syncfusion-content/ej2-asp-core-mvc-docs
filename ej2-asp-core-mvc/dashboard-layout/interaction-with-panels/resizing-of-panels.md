@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resizing Of Panels in ##Platform_Name## Dashboard Layout Component
-description: Learn here all about Resizing of Panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
+title: Resizing Of Panels in ##Platform_Name## Dashboard Layout control
+description: Learn here all about Resizing of Panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resizing Of Panels
 publishingplatform: ##Platform_Name##
@@ -11,11 +11,11 @@ documentation: ug
 
 # Resizing of panels
 
-The DashboardLayout component is also provided with the panel resizing functionality which can be enabled or disabled using the [`allowResizing`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~AllowResizing.html) property. This functionality allows you to resize the panels dynamically through UI interactions using the resizing handlers, which controls the panel resizing in various directions.
+The DashboardLayout control is also provided with the panel resizing functionality which can be enabled or disabled using the [`allowResizing`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~AllowResizing.html) property. This functionality allows you to resize the panels dynamically through UI interactions using the resizing handlers, which controls the panel resizing in various directions.
 
 Initially, the panels can be resized only in south-east direction. However, panels can also be resized in east, west, north, south, and south-west directions by defining the required directions with the [`resizableHandles`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~ResizableHandles.html) property.
 
-On resizing a panel in Dashboard layout the following events will be triggered,
+On resizing a panel in Dashboard Layout the following events will be triggered,
 * [resizeStart](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~ResizeStart.html) - Triggers when panel resize starts
 * [resize](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Resize.html) - Triggers when panel is being resized
 * [resizeStop](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~ResizeStop.html) - Triggers when panel resize stops
@@ -26,8 +26,8 @@ On resizing a panel in Dashboard layout the following events will be triggered,
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/resizing-panels/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/resizing-panels/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/resizing-panels/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,8 +67,8 @@ The following sample demonstrates resizing panels programatically in the Dashboa
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/resize-panel/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/resize-panel/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/resize-panel/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
