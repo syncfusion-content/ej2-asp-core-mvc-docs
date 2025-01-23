@@ -23,8 +23,8 @@ The following sample demonstrates the usage of the [`mediaQuery`](https://help.s
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/adaptive-layout/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/adaptive-layout/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/adaptive-layout/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

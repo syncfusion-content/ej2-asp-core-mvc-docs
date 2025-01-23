@@ -21,8 +21,8 @@ The following sample demonstrates how to enable or disable the floating of panel
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/floating-panels/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/floating-panels/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/floating-panels/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

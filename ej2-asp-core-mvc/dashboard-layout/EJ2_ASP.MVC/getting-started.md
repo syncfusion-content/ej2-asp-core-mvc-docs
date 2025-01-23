@@ -49,7 +49,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script is referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -69,7 +69,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the **~/Pages/Shared/_Layout.cshtml** file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -85,14 +85,14 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 ## Add ASP.NET MVC Dashboard Layout control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Dashboard Layout control in `~/Views/Home/Index.cshtml` page by the following ways.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Dashboard Layout control in **~/Views/Home/Index.cshtml** page by the following ways.
 
 * Defined the panels property as the attribute in the content template.
 * Using the [Panels](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property through helper.
 
 ### Setting the panels property using content template
 
-You can render the Dashboard Layout control by adding the panels property as the attribute to the content template. Add the content template with panel definition for Dashboard Layout into your `index.cshtml` page which is present under `Views/Home` folder.
+You can render the Dashboard Layout control by adding the panels property as the attribute to the content template. Add the content template with panel definition for Dashboard Layout into your **index.cshtml** page which is present under **Views/Home** folder.
 
 In the following sample, the dashboard layout is rendered with [Panels](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property using content template.
 

@@ -40,8 +40,8 @@ The panels within the layout can be easily positioned or ordered using the [`row
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/panel-position/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/panel-position/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/panel-position/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,8 +69,8 @@ A panel's size can be varied easily by defining the [`sizeX`](https://help.syncf
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/panel-size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/panel-size/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/panel-size/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

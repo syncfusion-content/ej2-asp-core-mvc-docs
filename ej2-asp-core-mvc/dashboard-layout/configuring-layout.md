@@ -29,8 +29,8 @@ The following sample demonstrates how to modify a cell size using the [`columns`
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/modifying-cell-size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/modifying-cell-size/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/modifying-cell-size/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -60,8 +60,8 @@ The following sample demonstrates the usage of the [`cellSpacing`](https://help.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/cell-spacing/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/cell-spacing/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/cell-spacing/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,8 +91,8 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/graphical-representation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/graphical-representation/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/graphical-representation/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -121,8 +121,8 @@ It is possible to render the Dashboard Layout in right-to-left direction by sett
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/rtl/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/rtl/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/rtl/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

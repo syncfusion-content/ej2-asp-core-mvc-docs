@@ -26,8 +26,8 @@ On resizing a panel in Dashboard layout the following events will be triggered,
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/resizing-panels/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/resizing-panels/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/resizing-panels/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,8 +67,8 @@ The following sample demonstrates resizing panels programatically in the Dashboa
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/resize-panel/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/resize-panel/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/resize-panel/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -33,8 +33,8 @@ The following sample demonstrates moving a panel programatically to a new positi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/moving/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/moving/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/moving/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

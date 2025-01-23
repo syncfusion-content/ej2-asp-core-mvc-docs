@@ -28,8 +28,8 @@ The following sample demonstrates dragging and pushing of panels. For example, w
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/drag-and-drop/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/drag-and-drop/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/drag-and-drop/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -60,8 +60,8 @@ The following sample demonstrates customizing the dragging handler of the panels
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/dragging-handler/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/dragging-handler/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/dragging-handler/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -19,8 +19,8 @@ The dashboard layout component is mostly used to represent the data used for mon
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/content-panel/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/content-panel/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/content-panel/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,8 +52,8 @@ The following sample demonstrates how to add ej2-chart components as the [`conte
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/placing-content/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/placing-content/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/placing-content/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
