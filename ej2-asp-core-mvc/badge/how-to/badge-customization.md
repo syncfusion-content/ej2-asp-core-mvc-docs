@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Badge Customization in ##Platform_Name## Badge Component
-description: Learn here all about Badge Customization in Syncfusion ##Platform_Name## Badge component of Syncfusion Essential JS 2 and more.
+title: Badge Customization in ##Platform_Name## Badge control
+description: Learn here all about Badge Customization in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Badge Customization
 publishingplatform: ##Platform_Name##
@@ -12,7 +12,7 @@ documentation: ug
 
 ## Colour customization
 
-Even though badges come with `8 predefined colors`, you can also customize the colour of the badge as desired.
+Even though Badges come with `8 predefined colors`, you can also customize the colour of the Badge as desired.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,9 +37,9 @@ Even though badges come with `8 predefined colors`, you can also customize the c
 
 ![Badge Color Customization](../images/colorcustom.PNG)
 
-## Customize badge size
+## Customize Badge size
 
-Badges are designed to change its size based on the content. To change the size of a badge, adjust the `font size` of the badge.
+Badges are designed to change its size based on the content. To change the size of a Badge, adjust the `font size` of the Badge.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -66,7 +66,7 @@ Badges are designed to change its size based on the content. To change the size 
 
 ## Custom position
 
-Even though the badges support the conventional `top` and `bottom` positions, the position of the badges can be changed as desired. This can be done by adding a custom class to the badge element to override the default position applied from the source.
+Even though the Badges support the conventional `top` and `bottom` positions, the position of the Badges can be changed as desired. This can be done by adding a custom class to the Badge element to override the default position applied from the source.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
