@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Render both EJ1 and EJ2 Grids in same application
 
 To achieve this requirement, you need to use the below code in **_Layout.cshtml** page. Because EJ1 and EJ2 has same library names to perform the different actions. So conflicts may occur when we refer this both controls in same application. To overcome this we need to extend this libraries in ej namespace.
