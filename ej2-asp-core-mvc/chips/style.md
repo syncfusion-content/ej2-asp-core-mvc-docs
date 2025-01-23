@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Chips Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Chips component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Chips Control | Syncfusion
+description: Learn here all about Style in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -12,9 +12,9 @@ documentation: ug
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
-## Customizing the chip text
+## Customizing the Chips text
 
-Use the following CSS to customize the chip text properties.
+Use the following CSS to customize the Chips text properties.
 
 ```css
 .e-chip .e-chip-text {
@@ -24,9 +24,9 @@ Use the following CSS to customize the chip text properties.
 }
 ```
 
-## Customizing the chip icon
+## Customizing the Chips icon
 
-Use the following CSS to customize the chip icon properties.
+Use the following CSS to customize the Chips icon properties.
 
 ```css
 .e-chip .e-icon {
@@ -35,9 +35,9 @@ Use the following CSS to customize the chip icon properties.
 }
 ```
 
-## Customizing the chip delete button
+## Customizing the Chips delete button
 
-Use the following CSS to customize the chip delete button.
+Use the following CSS to customize the Chips delete button.
 
 ```css
 .e-chip-list .e-chip .e-chip-delete.e-dlt-btn {
@@ -46,9 +46,9 @@ Use the following CSS to customize the chip delete button.
 }
 ```
 
-## Customizing the chip outline
+## Customizing the Chips outline
 
-Use the following CSS to customize the chip outline.
+Use the following CSS to customize the Chips outline.
 
 ```css
 .e-chip-list .e-chip.e-outline {
@@ -57,27 +57,27 @@ Use the following CSS to customize the chip outline.
 }
 ```
 
-## Customizing the chip on selection
+## Customizing the Chips on selection
 
-Use the following CSS to customize the chip on selection.
+Use the following CSS to customize the Chips on selection.
 
 ```css
-/* To customize single chip on selection */
+/* To customize single Chips on selection */
 .e-chip-list.e-selection .e-chip.e-active {
     background-color: #ffca1c;
     color: #e3165b;
 }
 
-/* To customize multiple chip on selection */
+/* To customize multiple Chips on selection */
 .e-chip-list .e-chip.e-active {
     background-color: #e3165b;
     color: white;
 }
 ```
 
-## Customizing the chip avatar text
+## Customizing the Chips avatar text
 
-Use the following CSS to customize the chip avatar text properties.
+Use the following CSS to customize the Chips avatar text properties.
 
 ```css
 .e-chip-list .e-chip .e-chip-avatar {

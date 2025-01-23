@@ -1,26 +1,26 @@
 <ejs-chiplist id="chip-avatar">
-    <e-chips>
-      <e-chip text="Andrew" leadingIconCss="andrew" enabled="true"></e-chip>
-      <e-chip text="Janet" leadingIconCss="janet" enabled="true"></e-chip>
-      <e-chip text="Laura" leadingIconCss="laura" enabled="true"></e-chip>
-      <e-chip text="Margaret" leadingIconCss="margaret" enabled="true"></e-chip>    
-    </e-chips>
+  <e-chips>
+    <e-chip text="Andrew" leadingIconCss="andrew" enabled="true"></e-chip>
+    <e-chip text="Janet" leadingIconCss="janet" enabled="true"></e-chip>
+    <e-chip text="Laura" leadingIconCss="laura" enabled="true"></e-chip>
+    <e-chip text="Margaret" leadingIconCss="margaret" enabled="true"></e-chip>
+  </e-chips>
 </ejs-chiplist>
 
 <style>
   #chip-avatar .andrew {
-    background-image: url('./andrew.png')
+    background-image: url('https://ej2.syncfusion.com/aspnetcore/css/chips/images/andrew.png')
   }
 
   #chip-avatar .margaret {
-    background-image: url('./margaret.png')
+    background-image: url('https://ej2.syncfusion.com/aspnetcore/css/chips/images/margaret.png')
   }
 
   #chip-avatar .laura {
-    background-image: url('./laura.png')
+    background-image: url('https://ej2.syncfusion.com/aspnetcore/css/chips/images/laura.png')
   }
 
   #chip-avatar .janet {
-    background-image: url('./janet.png')
+    background-image: url('https://ej2.syncfusion.com/aspnetcore/css/chips/images/janet.png')
   }
-</style>   
+</style>
