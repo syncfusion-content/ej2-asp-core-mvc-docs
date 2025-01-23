@@ -1,6 +1,13 @@
+@{
+    ..
+    panelCellSpacingModel modelValue = new panelCellSpacingModel();
+    modelValue.cellSpacing = new double[] { 20, 20 };
+}
+
+
 <div>
     <!--  DashboardLayout element declaration -->
-    <ejs-dashboardlayout id="dashboard_layout" columns="5" cellSpacing="@Model.cellSpacing">
+    <ejs-dashboardlayout id="dashboard_layout" columns="5" cellSpacing="@modelValue.cellSpacing">
         <e-dashboardlayout-panels>
             <e-dashboardlayout-panel row="0" col="0" content="<div class='content'>1</div>">
             </e-dashboardlayout-panel>
