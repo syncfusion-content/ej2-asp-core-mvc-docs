@@ -36,7 +36,7 @@ Similarly, you can use `documentEditorSettings` property for DocumentEditor also
 
 The following table illustrates all the possible properties for the color picker.
 
-| Property | Behaviour |
+| Property | Behavior |
 |---|---|
 | columns | It is used to render the ColorPicker palette with specified columns. Defaults to 10 |
 | disabled | It is used to enable / disable ColorPicker component. If it is disabled the ColorPicker popup won’t open. Defaults to false |
