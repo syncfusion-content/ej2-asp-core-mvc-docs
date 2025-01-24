@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Syncfusion Drop Down Tree Component
-description: Learn here all about data binding in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## Syncfusion Dropdown Tree Control
+description: Learn here all about data binding in Syncfusion ##Platform_Name## Dropdown Tree control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding in Dropdown Tree Component
+# Data Binding in Dropdown Tree Control
 
 The Dropdown Tree control provides an option to load the data either from local data sources or from remote data services. This can be done through `dataSource` property that is a member of the `fields` property. The `dataSource` property supports list of data and `DataManager`. It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
@@ -37,8 +37,8 @@ In the following example, **code**, **name**, and **countries** columns from hie
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/data-binding/hierarichal-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Hierarchicaldata.cs" %}
-{% include code-snippet/dropdowntree/data-binding/hierarichal-data/hierarchicaldata.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dropdowntree/data-binding/hierarichal-data/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,9 +71,6 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/data-binding/list-data/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Listdata.cs" %}
-{% include code-snippet/dropdowntree/data-binding/list-data/listdata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,8 +124,8 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/data-binding/remote-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
-{% include code-snippet/dropdowntree/data-binding/remote-data/remotedata.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dropdowntree/data-binding/remote-data/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -159,8 +156,8 @@ The `Selectable` property is disabled and the selection is prevented for parent 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/data-binding/prevent-node/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="PreventNode.cs" %}
-{% include code-snippet/dropdowntree/data-binding/prevent-node/preventnode.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dropdowntree/data-binding/prevent-node/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

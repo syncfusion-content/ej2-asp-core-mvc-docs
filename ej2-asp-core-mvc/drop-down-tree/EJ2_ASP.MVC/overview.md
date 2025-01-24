@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Drop Down Tree Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
+title: Overview in ##Platform_Name## Dropdown Tree Control
+description: Learn here all about Overview in Syncfusion ##Platform_Name## Dropdown Tree control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
