@@ -22,7 +22,9 @@ Similarly, you can use `documentEditorSettings` property for DocumentEditor also
 {% include code-snippet/document-editor-container/customize-color-picker/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="customize-color-picker.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/customize-color-picker/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -31,7 +33,9 @@ Similarly, you can use `documentEditorSettings` property for DocumentEditor also
 {% include code-snippet/document-editor-container/customize-color-picker/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="customize-color-picker.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/customize-color-picker/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 The following table illustrates all the possible properties for the color picker.
