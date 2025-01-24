@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Badge Customization in ##Platform_Name## Badge control
+title: Badge Customization in ##Platform_Name## Badge control | Syncfusion
 description: Learn here all about Badge Customization in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Badge Customization
@@ -10,9 +10,9 @@ documentation: ug
 
 # Customization in ##Platform_Name## Badge Control
 
-## Colour customization
+## Color customization
 
-Even though Badges come with `8 predefined colors`, you can also customize the colour of the Badge as desired.
+Even though Badges come with `8 predefined colors`, you can also customize the color of the Badge as desired.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamic Badge Content in ##Platform_Name## Badge control
+title: Dynamic Badge Content in ##Platform_Name## Badge control | Syncfusion
 description: Learn here all about Dynamic Badge Content in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dynamic Badge Content

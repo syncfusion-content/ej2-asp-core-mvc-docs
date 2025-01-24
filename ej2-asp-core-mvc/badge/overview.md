@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Badge control
+title: Overview in ##Platform_Name## Badge control | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -16,6 +16,6 @@ Badges can be used to alert users about new or unread messages, notifications, a
 
 * **[Types](/badge/types/)** - Provided 8 different types of Badges.
 
-* **[Predefined Colours](/badge/types/#badge-styles)** - Provided 8 predefined situational colours of Badges.
+* **[Predefined Colors](/badge/types/#badge-styles)** - Provided 8 predefined situational colors of Badges.
 
 * **[Position](/badge/types/#position)** - Supports 3 different positions, such as `default`, `top` and `bottom`.
