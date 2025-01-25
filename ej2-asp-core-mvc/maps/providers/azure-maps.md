@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure Maps in Syncfusion ##Platform_Name## Syncfusion Maps Component
-description: Learn here all about Azure Maps in the Syncfusion ##Platform_Name## Maps component and much more details.
+description: Learn here all about displaying Azure Maps in the Syncfusion ##Platform_Name## Maps component and much more details.
 platform: ej2-asp-core-mvc
 control: Azure Maps
 publishingplatform: ##Platform_Name##
@@ -12,14 +12,15 @@ documentation: ug
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Azure Maps is another online Maps provider, owned by Microsoft. As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The Azure Maps can be rendered from online map service providers by specifying the URL provided by those providers in the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of Azure online map services, allowing users to preview their maps in the Syncfusion Maps Component.
+Azure Maps, an online map service owned by Microsoft, provides map tile images based on user requests. The Syncfusion Maps component combines these images into a single view to display the map. You can display Azure Maps by specifying their tile service URL in the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Azure Maps is another online Maps provider, owned by Microsoft. As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area. The Azure Maps can be rendered from online map service providers by specifying the URL provided by those providers in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. The URL template is designed to enable seamless integration of Azure online map services, allowing users to preview their maps in the Syncfusion Maps Component.
+Azure Maps, an online map service owned by Microsoft, provides map tile images based on user requests. The Syncfusion Maps component combines these images into a single view to display the map. You can display Azure Maps by specifying their tile service URL in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
+
 {% endif %}
 
-## Adding Azure Maps
+## Displaying Azure Maps
 
 The Azure map tile service can be accessed via the following URL:
 https://atlas.microsoft.com/map/tile?api-version=2024-04-01&tilesetId=microsoft.base.road&zoom={zoom}&x={x}&y={y}&subscription-key=Your_Key
@@ -30,23 +31,23 @@ In the above URL template,
 * {x} - It represents the horizontal position of the tile.
 * {y} - It represents the vertical position of the tile. 
 
-These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to fetch the correct map tile. 
+These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to retrieve the correct map tile.
 
-N> You can refer this documentation [link](https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile?view=rest-maps-2024-04-01&tabs=HTTP) for the latest URL template for Azure Maps.
+N> You can refer this documentation [link](https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile?view=rest-maps-2024-04-01&tabs=HTTP) for the latest tile service URL for Azure Maps.
 
-The subscription_key is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
+The **subscription_key** is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then add this key to the URL.
 
 N> Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
 
-You can customize various tile types in Azure Maps by modifying the **tilesetId** value in the URL. In the example below, the **microsoft.base.road** tile type is specified in the URL, and these tile images can be displayed in the Syncfusion Maps Component. To explore the available tile types in Azure Maps by the following link below.
+You can customize various tile types in Azure Maps by modifying the **tilesetId** value in the URL. In the example below, the **microsoft.base.road** tile type is specified in the URL, allowing these tile images to be displayed in the Syncfusion Maps component. To explore the available tile types in Azure Maps, follow the link below.
 
 https://learn.microsoft.com/en-us/rest/api/maps/render/get-map-tile?view=rest-maps-2023-06-01&tabs=HTTP#tilesetid
  
-N> The Syncfusion Maps only support displaying maps with raster images in **PNG** or **JPG** formats.
+N> Syncfusion Maps only support displaying maps with raster images in **PNG** or **JPG** formats.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-In the following example, the Azure Maps can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
+In the following example, Azure Maps can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with its tile server URL.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -59,7 +60,7 @@ In the following example, the Azure Maps can be rendered using the [urlTemplate]
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-In the following example, the Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers.
+In the following example, Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with its tile server URL.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -75,7 +76,7 @@ In the following example, the Azure Maps can be rendered using the [UrlTemplate]
 
 ## Enabling zooming and panning
 
-The Azure Maps layer can be zoomed and panned. Zooming helps to get a closer look at a particular area on a map for in-depth analysis. Panning helps to move a map around to focus the targeted area.
+The Azure Maps layer supports both zooming and panning. Zooming allows you to take a closer look at a particular area on the map for in-depth analysis, while panning enables you to move the map around to focus on the target area.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -106,7 +107,7 @@ The Azure Maps layer can be zoomed and panned. Zooming helps to get a closer loo
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Markers can be added to the layers of Azure Maps by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the Azure Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
+Markers can be added to Azure Maps layer by setting the latitude and longitude coordinates of the desired location using [MarkerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the Azure Maps layer to highlight paths between various places by specifying the corresponding latitude and longitude coordinates in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -119,7 +120,7 @@ Markers can be added to the layers of Azure Maps by setting the corresponding lo
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Markers can be added to the layers of Azure Maps by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the Azure Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
+Markers can be added to Azure Maps layer by setting the latitude and longitude coordinates of the desired location using [MarkerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the Azure Maps layer to highlight paths between various places by specifying the corresponding latitude and longitude coordinates in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -137,7 +138,7 @@ Markers can be added to the layers of Azure Maps by setting the corresponding lo
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Any GeoJSON shape can be rendered as a sublayer on top of the Azure Maps layer for highlighting a particular continent or country in Azure Maps by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
+Any GeoJSON shape can be rendered as a sublayer on top of the Azure Maps layer to highlight a particular continent or country. This is achieved by adding another layer and setting the [Type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -150,7 +151,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Azure Maps layer f
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Any GeoJSON shape can be rendered as a sublayer on top of the Azure Maps layer for highlighting a particular continent or country in Azure Maps by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
+Any GeoJSON shape can be rendered as a sublayer on top of the Azure Maps layer to highlight a particular continent or country. This is achieved by adding another layer and setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -170,6 +171,8 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Azure Maps layer f
 
 The legend can be added to the tile Maps by setting the [Visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html#Syncfusion_EJ2_Maps_MapsLegendSettings_Visible) property of [LegendSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_LegendSettings) to **true**.
 
+In the example below, the legend is added to the markers on the Azure Maps layer.
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/maps/map-providers/azurelegend/tagHelper %}
@@ -182,6 +185,8 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 The legend can be added to the tile Maps by setting the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html#Syncfusion_EJ2_Maps_MapsLegendSettings_Visible) property of [LegendSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_LegendSettings) to **true**.
+
+In the example below, the legend is added to the markers on the Azure Maps layer.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
