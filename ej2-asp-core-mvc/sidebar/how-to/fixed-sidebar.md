@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Fixed Sidebar in ##Platform_Name## Sidebar Component
-description: Learn here all about Fixed Sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Fixed Sidebar in ##Platform_Name## Sidebar Control
+description: Learn here all about Fixed Sidebar in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Fixed Sidebar
 publishingplatform: ##Platform_Name##

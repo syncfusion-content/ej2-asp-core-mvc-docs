@@ -99,7 +99,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Enable backdrop
 
-Enabling the [ShowBackdrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_ShowBackdrop) in the Sidebar component will prevent the main content from user interactions. Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting [width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Width) property.
+Enabling the [ShowBackdrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_ShowBackdrop) in the Sidebar control will prevent the main content from user interactions. Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting [width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Width) property.
 
 N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the **target** for the Sidebar. Alternatively, you can place an empty div container after the target container.
 
@@ -113,7 +113,7 @@ N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent
 
 ## Position
 
-Positioning the Sidebar to the right or left of the main content can be achieved by using the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Position) property. If the position is not set, the Sidebar will expand from the left to the body element. [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_EnablePersistence) will persist the component's state between page reloads. [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Change) event will be triggered when the state(expand/collapse) of the component is changed.
+Positioning the Sidebar to the right or left of the main content can be achieved by using the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Position) property. If the position is not set, the Sidebar will expand from the left to the body element. [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_EnablePersistence) will persist the control's state between page reloads. [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Change) event will be triggered when the state(expand/collapse) of the control is changed.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -125,7 +125,7 @@ Positioning the Sidebar to the right or left of the main content can be achieved
 
 ## Animate
 
-Animation transitions can be set while expanding or collapsing the Sidebar using the [Animate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Animate) property. By default , `Animate` property is set to true. [EnableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_EnableRtl) will display the sidebar in the right-to-left direction.
+Animation transitions can be set while expanding or collapsing the Sidebar using the [Animate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Animate) property. By default , `Animate` property is set to true. [EnableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_EnableRtl) will display the Sidebar in the right-to-left direction.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -163,6 +163,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [Sidebar with Menu Component](https://ej2.syncfusion.com/aspnetmvc/Sidebar/SidebarWithMenu#/material)
+* [Sidebar with Menu Control](https://ej2.syncfusion.com/aspnetmvc/Sidebar/SidebarWithMenu#/material)
 * [Sidebar Responsive Panel](https://ej2.syncfusion.com/aspnetmvc/Sidebar/PanelWithResponsive#/material)
 * [Usecase Sample](https://ej2.syncfusion.com/showcase/aspnetmvc/webmail/ )

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Sidebar Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Sidebar Control
+description: Learn here all about Style in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -13,9 +13,9 @@ documentation: ug
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user's preference.
 
-## Customizing the sidebar
+## Customizing the Sidebar
 
-Use the below CSS to customize the sidebar root element.
+Use the below CSS to customize the Sidebar root element.
 
 ```css
 
@@ -25,9 +25,9 @@ Use the below CSS to customize the sidebar root element.
 
 ```
 
-## Customizing the sidebar based on the positions
+## Customizing the Sidebar based on the positions
 
-Use the below CSS to customize the left positioned sidebar.
+Use the below CSS to customize the left positioned Sidebar.
 
 ```css
 
@@ -37,7 +37,7 @@ Use the below CSS to customize the left positioned sidebar.
 
 ```
 
-Use the below CSS to customize the right positioned sidebar.
+Use the below CSS to customize the right positioned Sidebar.
 
 ```css
 
@@ -47,9 +47,9 @@ Use the below CSS to customize the right positioned sidebar.
 
 ```
 
-## Customizing the sidebar based on the active state
+## Customizing the Sidebar based on the active state
 
-Use the below CSS to customize the open state of the left positioned sidebar.
+Use the below CSS to customize the open state of the left positioned Sidebar.
 
 ```css
 
@@ -59,7 +59,7 @@ Use the below CSS to customize the open state of the left positioned sidebar.
 
 ```
 
-Use the below CSS to customize the open state of the right positioned sidebar.
+Use the below CSS to customize the open state of the right positioned Sidebar.
 
 ```css
 
@@ -69,7 +69,7 @@ Use the below CSS to customize the open state of the right positioned sidebar.
 
 ```
 
-Use the below CSS to customize the closed state of the left positioned sidebar.
+Use the below CSS to customize the closed state of the left positioned Sidebar.
 
 ```css
 
@@ -79,7 +79,7 @@ Use the below CSS to customize the closed state of the left positioned sidebar.
 
 ```
 
-Use the below CSS to customize the closed state of the right positioned sidebar.
+Use the below CSS to customize the closed state of the right positioned Sidebar.
 
 ```css
 
@@ -89,9 +89,9 @@ Use the below CSS to customize the closed state of the right positioned sidebar.
 
 ```
 
-## Customizing the sidebar with dock state
+## Customizing the Sidebar with dock state
 
-When you enable the Dock support, the "e-dock" class will be added to the root element. Based on that class, you can also customize all the above stated customization. Use the following CSS to customize the sidebar element with a dock state.
+When you enable the Dock support, the "e-dock" class will be added to the root element. Based on that class, you can also customize all the above stated customization. Use the following CSS to customize the Sidebar element with a dock state.
 
 ```css
 
@@ -101,9 +101,9 @@ When you enable the Dock support, the "e-dock" class will be added to the root e
 
 ```
 
-## Customizing the different types of sidebar
+## Customizing the different types of Sidebar
 
-Use the below CSS to customize the auto type sidebar.
+Use the below CSS to customize the auto type Sidebar.
 
 ```css
 
@@ -113,7 +113,7 @@ Use the below CSS to customize the auto type sidebar.
 
 ```
 
-Use the below CSS to customize the push type sidebar.
+Use the below CSS to customize the push type Sidebar.
 
 ```css
 
@@ -123,7 +123,7 @@ Use the below CSS to customize the push type sidebar.
 
 ```
 
-Use the below CSS to customize the over type sidebar.
+Use the below CSS to customize the over type Sidebar.
 
 ```css
 
@@ -133,7 +133,7 @@ Use the below CSS to customize the over type sidebar.
 
 ```
 
-Use the below CSS to customize the slide type sidebar.
+Use the below CSS to customize the slide type Sidebar.
 
 ```css
 
@@ -143,9 +143,9 @@ Use the below CSS to customize the slide type sidebar.
 
 ```
 
-## Customizing the backdrop of the sidebar
+## Customizing the backdrop of the Sidebar
 
-Use the below CSS to customize the backdrop of the sidebar.
+Use the below CSS to customize the backdrop of the Sidebar.
 
 ```css
 
@@ -155,9 +155,9 @@ Use the below CSS to customize the backdrop of the sidebar.
 
 ```
 
-## Customizing the sidebar in the RTL direction
+## Customizing the Sidebar in the RTL direction
 
-When you enable the RTL (right to left direction) support, the "e-rtl" class will be added to the root element. Based on that class, you can also customize all the above stated customization. Use the following CSS to customize the sidebar element in the RTL (right to left direction) mode.
+When you enable the RTL (right to left direction) support, the "e-rtl" class will be added to the root element. Based on that class, you can also customize all the above stated customization. Use the following CSS to customize the Sidebar element in the RTL (right to left direction) mode.
 
 ```css
 
@@ -167,9 +167,9 @@ When you enable the RTL (right to left direction) support, the "e-rtl" class wil
 
 ```
 
-## Prevent the animation transition for the Sidebar component
+## Prevent the animation transition for the Sidebar control
 
-Use the below CSS to prevent the animation transition for the Sidebar component.
+Use the below CSS to prevent the animation transition for the Sidebar control.
 
 ```css
 

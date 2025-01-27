@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sidebar With Listview in ##Platform_Name## Sidebar Component
-description: Learn here all about Sidebar With Listview in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Sidebar With Listview in ##Platform_Name## Sidebar Control
+description: Learn here all about Sidebar With Listview in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sidebar With Listview
 publishingplatform: ##Platform_Name##
@@ -13,7 +13,7 @@ documentation: ug
 
 Any HTML element can be placed in the Sidebar content area. Sidebar supports all types of HTML structures like `TreeView`, `ListView`, etc.
 
-In the following example, the Sidebar is rendered with ListView component in its content area.
+In the following example, the Sidebar is rendered with ListView control in its content area.
 
 * Add the HTML div tag with its id attribute as `default` in your `index.html` file to initialize the Sidebar.
 
@@ -42,7 +42,7 @@ In the following example, the Sidebar is rendered with ListView component in its
 
 
 
-Output be like the below in Expanded state, the sidebar width is set as 100%.
+Output be like the below in Expanded state, the Sidebar width is set as 100%.
 
 ![Sidebar Sample](../images/listView.png)
 
