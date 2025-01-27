@@ -20,7 +20,7 @@
 
         }).Height(400).ChildMapping("Children").ActionFailure("actionFailure").TreeColumnIndex(1).Render())
 
-         < script >
+         <script>
             function actionFailure(args) {
                var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
                var span = document.createElement('span');
@@ -28,4 +28,4 @@
                span.style.color = '#FF0000'
                span.innerHTML = args.error[0];
             }
-         </ script >
+         </script>
