@@ -1,25 +1,25 @@
-  @Html.EJS().ChipList("chip-avatar").Chips(chip =>
-                        {
-                            chip.Text("Andrew").LeadingIconCss("andrew").Enabled(true).Add();
-                            chip.Text("Janet").LeadingIconCss("janet").Enabled(true).Add();
-                            chip.Text("Laura").LeadingIconCss("laura").Enabled(true).Add();
-                            chip.Text("Margaret").LeadingIconCss("margaret").Enabled(true).Add();
-                        }).Render()
+@Html.EJS().ChipList("chip-avatar").Chips(chip =>
+  {
+      chip.Text("Andrew").LeadingIconCss("andrew").Enabled(true).Add();
+      chip.Text("Janet").LeadingIconCss("janet").Enabled(true).Add();
+      chip.Text("Laura").LeadingIconCss("laura").Enabled(true).Add();
+      chip.Text("Margaret").LeadingIconCss("margaret").Enabled(true).Add();
+  }).Render()
 
 <style>
-  #chip-avatar .andrew {
-    background-image: url('./andrew.png')
-  }
+#chip-avatar .andrew {
+background-image: url('https://ej2.syncfusion.com/aspnetcore/css/chips/images/andrew.png')
+}
 
-  #chip-avatar .margaret {
-    background-image: url('./margaret.png')
-  }
+#chip-avatar .margaret {
+background-image: url('https://ej2.syncfusion.com/aspnetcore/css/chips/images/margaret.png')
+}
 
-  #chip-avatar .laura {
-    background-image: url('./laura.png')
-  }
+#chip-avatar .laura {
+background-image: url('https://ej2.syncfusion.com/aspnetcore/css/chips/images/laura.png')
+}
 
-  #chip-avatar .janet {
-    background-image: url('./janet.png')
-  }
-</style>   
+#chip-avatar .janet {
+background-image: url('https://ej2.syncfusion.com/aspnetcore/css/chips/images/janet.png')
+}
+</style>  

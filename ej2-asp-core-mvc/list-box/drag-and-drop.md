@@ -91,7 +91,15 @@ In the following sample, the `allowDragAndDrop` property is set as `true` and `s
 
 ## Dual ListBox with drag and drop
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 The toolbar and drag and drop actions between two listboxes can be enabled by setting a listbox unique id and the same [`scope`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_Scope) property value.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The toolbar and drag and drop actions between two listboxes can be enabled by setting a listbox unique id and the same [`scope`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_Scope) property value.
+
+{% endif %}
 
 {% if page.publishingplatform == "aspnet-core" %}
 

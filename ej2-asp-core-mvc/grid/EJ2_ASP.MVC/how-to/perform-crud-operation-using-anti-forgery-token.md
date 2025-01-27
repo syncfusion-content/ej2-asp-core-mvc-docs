@@ -71,19 +71,6 @@ Now assign the custom adaptor to the grid as follows.
 
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/anti-forgery-token/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Anti-forgery-token.cs" %}
-{% include code-snippet/grid/how-to/anti-forgery-token/anti-forgery-token.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/anti-forgery-token/razor %}
@@ -92,8 +79,5 @@ Now assign the custom adaptor to the grid as follows.
 {% include code-snippet/grid/how-to/anti-forgery-token/anti-forgery-token.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> You can find the full sample at our [GitHub repository](https://github.com/SyncfusionSamples/ej2-mvc-grid-antiforgerytoken).

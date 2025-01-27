@@ -1,5 +1,5 @@
 <div>
-    <ejs-chiplist id="chip" cssClass="e-outline">
+    <ejs-chiplist id="chip1" cssClass="e-outline">
         <e-chips>
             <e-chip text="Chai"></e-chip>
             <e-chip text="Chang"></e-chip>
@@ -7,7 +7,7 @@
             <e-chip text="Ikura"></e-chip>
         </e-chips>
     </ejs-chiplist>
-    <ejs-chiplist id="chip" cssClass="e-outline" enableDelete="true">
+    <ejs-chiplist id="chip2" cssClass="e-outline" enableDelete="true">
         <e-chips>
             <e-chip text="Andrew"></e-chip>
             <e-chip text="Janet"></e-chip>
