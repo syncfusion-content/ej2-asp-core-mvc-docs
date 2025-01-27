@@ -1,9 +1,24 @@
-  @Html.EJS().ChipList("chip-avatar").Chips(chip =>
-                        {
-                            chip.LeadingIconCss("trendingIcon").Template('<a href="https://timesofindia.indiatimes.com/news" target="_blank" class="anchorElement">#BreakingNews</a><span class="textElement">125k posts</span>').Enabled(true).Add();
-                            chip.LeadingIconCss("cameraIcon").Template('<a href="https://blog.google/products/photos/" target="_blank" class="anchorElement">#PhotoOfTheDay</a>').Enabled(true).Add();
-                            chip.LeadingIconCss("trendingIcon").Template('<a href="https://indianexpress.com/section/technology/" target="_blank" class="anchorElement">#TechNews</a><span class="textElement">107k posts</span>').Enabled(true).Add();
-                        }).Render()
+
+@Html.EJS().ChipList("chip-avatar").Chips(chip =>
+{
+    chip.LeadingIconCss("trendingIcon").Template("#trendingNewsTemplate").Enabled(true).Add();
+    chip.LeadingIconCss("cameraIcon").Template("#photoOfTheDayTemplate").Enabled(true).Add();
+    chip.LeadingIconCss("trendingIcon").Template("#techNewsTemplate").Enabled(true).Add();
+}).Render()
+
+<script id="trendingNewsTemplate" type="text/x-template">
+    <a href="https://timesofindia.indiatimes.com/news" target="_blank" class="anchorElement">#BreakingNews</a>
+    <span class="textElement">125k posts</span>
+</script>
+
+<script id="photoOfTheDayTemplate" type="text/x-template">
+    <a href="https://blog.google/products/photos/" target="_blank" class="anchorElement">#PhotoOfTheDay</a>
+</script>
+
+<script id="techNewsTemplate" type="text/x-template">
+    <a href="https://indianexpress.com/section/technology/" target="_blank" class="anchorElement">#TechNews</a>
+    <span class="textElement">107k posts</span>
+</script>
 
 <style>
 #chip-avatar .trendingIcon {

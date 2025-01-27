@@ -1,7 +1,12 @@
-@model WebApplication.Controllers.HomeController.spacingModel
+@{
+    ...
+    cellSpacingModel modelValue = new cellSpacingModel();
+    modelValue.cellSpacing = new double[] { 10, 10 };
+}
+
 
 <div>
-    <ejs-dashboardlayout id="dashboard_default" columns="5" cellSpacing="@Model.cellSpacing" enableRtl="true">
+    <ejs-dashboardlayout id="dashboard_default" columns="5" cellSpacing="@modelValue.cellSpacing" enableRtl="true">
         <e-dashboardlayout-panels>
             <e-dashboardlayout-panel id="Panel0" sizeX="1" sizeY="1" row="0" col="0" header="<div>Panel 0</div>" content="<div class='content'></div>">
             </e-dashboardlayout-panel>

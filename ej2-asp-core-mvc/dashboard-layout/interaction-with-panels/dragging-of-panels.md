@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dragging Of Panels in ##Platform_Name## Dashboard Layout Component | Syncfusion
-description: Learn here all about Dragging Of Panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
+title: Dragging Of Panels in ##Platform_Name## Dashboard Layout control | Syncfusion
+description: Learn here all about Dragging Of Panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dragging Of Panels
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Dragging of Panels in ##Platform_Name## Dashboard Layout Component
+# Dragging of Panels in ##Platform_Name## Dashboard Layout control
 
-The Dashboard Layout component is provided with dragging functionality to drag and reorder the panels within the layout. While dragging a panel, a holder will be highlighted below the panel indicating the panel placement on panel drop. This helps the user to decide whether to place the panel in the current position or revert to previous position without disturbing the layout.
+The Dashboard Layout control is provided with dragging functionality to drag and reorder the panels within the layout. While dragging a panel, a holder will be highlighted below the panel indicating the panel placement on panel drop. This helps the user to decide whether to place the panel in the current position or revert to previous position without disturbing the layout.
 
 If one or more panels collide while dragging, then the colliding panels will be pushed towards the left or right or top or bottom direction where an adaptive space for the collided panel is available. The position changes of these collided panels will be updated dynamically during dragging of a panel, so the user can conclude whether to place the panel in the current position or not.
 
-While dragging a panel in Dashboard layout the following dragging events will be triggered,
+While dragging a panel in Dashboard Layout the following dragging events will be triggered,
 * [`dragStart`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~DragStart.html) - Triggers when panel drag starts
 * [`drag`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Drag.html) - Triggers when panel is being dragged
 * [dragStop](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~DragStop.html) - Triggers when panel drag stops
@@ -28,8 +28,8 @@ The following sample demonstrates dragging and pushing of panels. For example, w
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/drag-and-drop/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/drag-and-drop/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/drag-and-drop/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -60,8 +60,8 @@ The following sample demonstrates customizing the dragging handler of the panels
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/dragging-handler/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/dragging-handler/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/dragging-handler/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

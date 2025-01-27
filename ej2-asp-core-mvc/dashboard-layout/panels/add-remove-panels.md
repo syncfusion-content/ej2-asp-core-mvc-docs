@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add Remove Panels in ##Platform_Name## Dashboard Layout Component
-description: Learn here all about how to add or remove panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
+title: Add Remove Panels in ##Platform_Name## Dashboard Layout control
+description: Learn here all about how to add or remove panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Remove Panels
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Adding and removing panels dynamically
 
-In real-time cases, the data being presented within the dashboard should be updated frequently which includes adding or removing the data dynamically within the dashboard. This can be easily achieved by using the `addPanel` and `removePanel` public methods of the component.
+In real-time cases, the data being presented within the dashboard should be updated frequently which includes adding or removing the data dynamically within the dashboard. This can be easily achieved by using the `addPanel` and `removePanel` public methods of the control.
 
 ## Add or remove panels dynamically
 
@@ -24,7 +24,7 @@ dashboard.removeAll();
 
 ```
 
-The following sample demonstrates how to add and remove the panels dynamically in the dashboard layout component. Here, panels can be added in any desired position of required size by selecting them in the numeric boxes and clicking add button and remove them by selecting the ID of the panel.
+The following sample demonstrates how to add and remove the panels dynamically in the Dashboard Layout control. Here, panels can be added in any desired position of required size by selecting them in the numeric boxes and clicking add button and remove them by selecting the ID of the panel.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
