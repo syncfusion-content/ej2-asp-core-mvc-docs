@@ -1,6 +1,13 @@
+@{
+    ...
+    ddCellSpacingModel modelValue = new ddCellSpacingModel();
+    modelValue.cellSpacing = new double[] { 10, 10 };
+}
+
+
 <div>
     <!--  Dashboardlayout element declaration -->
-    <ejs-dashboardlayout id="dashboard_layout" columns="5" cellSpacing="@Model.cellSpacing" drag="onDrag" dragStart="onDragStart" dragStop="onDragStop">
+    <ejs-dashboardlayout id="dashboard_layout" columns="5" cellSpacing="@modelValue.cellSpacing" drag="onDrag" dragStart="onDragStart" dragStop="onDragStop">
         <e-dashboardlayout-panels>
             <e-dashboardlayout-panel sizeX="1" sizeY="1" row="0" col="0" content="<div>0</div>">
             </e-dashboardlayout-panel>
@@ -21,18 +28,18 @@
 </div>
 <!-- end of dashboardlayout element -->
 <script>
-function onDrag(args) {
-    console.log("Dragging");
-}
-function onDragStart(args) {
-    console.log("Drag Start");
-}
-function onDragStop(args) {
-    console.log("Drag Stop");
-}
+    function onDrag(args) {
+        console.log("Dragging");
+    }
+    function onDragStart(args) {
+        console.log("Drag Start");
+    }
+    function onDragStop(args) {
+        console.log("Drag Stop");
+    }
 </script>
 <style>
-     /* DashboardLayout element styles  */
+    /* DashboardLayout element styles  */
     #dashboard_layout .e-panel .e-panel-container {
         vertical-align: middle;
         font-weight: 600;

@@ -12,12 +12,12 @@ documentation: ug
 
 ## Keyboard interaction
 
-The following shortcut keys are used to access the Chip control without any interruption.
+The following shortcut keys are used to access the Chips control without interruption.
 
 | Keyboard shortcuts | Actions |
 |------------|-------------------|
-| <kbd>Enter</kbd> | Selects the targeted chip from the ChipList/ChipCollection. |
-| <kbd>Delete</kbd> | Deletes the targeted chip from the ChipList/ChipCollection. |
+| <kbd>Enter</kbd> | Selects the targeted Chips from the ChipList/ChipCollection. |
+| <kbd>Delete</kbd> | Deletes the targeted Chips from the ChipList/ChipCollection. |
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -16,17 +16,13 @@ This section briefly explains about how to include [ASP.NET Core Diagram](https:
 
 [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
 
-## Create an ASP.NET Core web application
-
-### Visual Studio
-
-### Create ASP.NET Core web application with Razor pages
+## Create ASP.NET Core web application with Razor pages
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
 
-### Install ASP.NET Core package in the application
+## Install ASP.NET Core package in the application
 
 To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
 
@@ -39,48 +35,6 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 {% endtabs %}
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
-
-### Visual Studio Code
-
-### Create an ASP.NET Core web application
-
-1.Create a new folder and open it in the VS Code by **File > Open Folder...**.
-
-N> Visual Studio Code displays a dialog box that asks `Do you trust the authors of the files in this folder`. Select:
-<br/> * The checkbox trust the authors of all files in the parent folder.
-<br/> * Yes, I trust the authors.
-
-2.Open the [Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) by selecting a menu using **View > Terminal** in VS Code.
-3.Run the following command in the terminal to create a new ASP.NET Core web application.
-
-{% tabs %}
-{% highlight c# tabtitle=".NET CLI" %}
-dotnet new webapp -o AspNetCoreWebApp
-{% endhighlight %}
-{% endtabs %}
-
-The `dotnet new` command creates new Razor Pages project in the AspNetCoreWebApp folder. Refer to this [topic](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=net60) for more information about .NET CLI commands.
-
-4.Run the following command in the terminal to open the project in current instance of the VS Code.
-{% tabs %}
-{% highlight c# tabtitle=".NET CLI" %}
-
-code -r AspNetCoreWebApp
-
-{% endhighlight %}
-{% endtabs %}
-
-### Install Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core package in the application
-
-Run the following command in the terminal to install `Syncfusion.EJ2.AspNet.Core` NuGet package in the application.
-
-{% tabs %}
-{% highlight c# tabtitle=".NET CLI" %}
-dotnet add package Syncfusion.EJ2.AspNet.Core
-{% endhighlight %}
-{% endtabs %}
-
-Refer to [NuGet packages topic](../nuget-packages/) for more details about NuGet packages.
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
 
@@ -142,7 +96,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Diagr
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app in Visual Studio. Alternatively, you can run the `dotnet run` command in the terminal to run the sample in Visual Studio Code. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Diagram control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Diagram control will be rendered in the default web browser.
 
 ![ASP.NET Core Diagram Control](images/diagram-control.png)
 

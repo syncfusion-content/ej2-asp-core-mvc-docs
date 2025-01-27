@@ -10,11 +10,11 @@ documentation: ug
 
 # Types in ##Platform_Name## Badge Control
 
-This section explains different styles and types of the badges.
+This section explains different styles and types of the Badges.
 
 ## Badge styles
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge has the following predefined styles that can be used with `.e-badge` class to change the appearance of a badge.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge has the following predefined styles that can be used with `.e-badge` class to change the appearance of a Badge.
 
 | Class Name | Description |
 |------------|-------------|
@@ -52,7 +52,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge has the following
 
 ## Badge types
 
-The types of Essential<sup style="font-size:70%">&reg;</sup> JS 2 badges are as follows:
+The types of Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badges are as follows:
 
 * Circle
 * Pill
@@ -64,7 +64,7 @@ The types of Essential<sup style="font-size:70%">&reg;</sup> JS 2 badges are as 
 
 ### Circle
 
-The circle badge style can be applied by adding the modifier class `.e-badge-circle` to the target element.
+The circle Badge style can be applied by adding the modifier class `.e-badge-circle` to the target element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -91,7 +91,7 @@ The circle badge style can be applied by adding the modifier class `.e-badge-cir
 
 ### Pill
 
-The pill badge style can be applied by adding the modifier class `.e-badge-pill` to the target element.
+The pill Badge style can be applied by adding the modifier class `.e-badge-pill` to the target element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -118,7 +118,7 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 
 ### Link
 
-When badge modifier classes are applied to the anchor tag, the badge’s appearance will change from normal state to hover state on mouseover.
+When Badge modifier classes are applied to the anchor tag, the Badge’s appearance will change from normal state to hover state on mouseover.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -145,7 +145,7 @@ When badge modifier classes are applied to the anchor tag, the badge’s appeara
 
 ### Notification
 
-The notification badge style can be applied by adding the modifier class `.e-badge-notification` to the target element. Notification badges are used when a content or a context needs special attention. While using the notification badge, set the parent element to `position: relative`.
+The notification Badge style can be applied by adding the modifier class `.e-badge-notification` to the target element. Notification Badges are used when a content or a context needs special attention. While using the notification Badge, set the parent element to `position: relative`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -172,7 +172,7 @@ The notification badge style can be applied by adding the modifier class `.e-bad
 
 ### Dot
 
-Dot can be applied by adding the modifier class `.e-badge-dot` to the target element. Dot badges are similar to notification badges, but in a minimalistic way. While using the dot badge, set the parent element to `position: relative`.
+Dot can be applied by adding the modifier class `.e-badge-dot` to the target element. Dot Badges are similar to notification Badges, but in a minimalistic way. While using the dot Badge, set the parent element to `position: relative`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -199,7 +199,7 @@ Dot can be applied by adding the modifier class `.e-badge-dot` to the target ele
 
 ### Overlap
 
-The overlap badge can be used with `notification` or `dot` badge, which overlaps with the target element by adding the modifier class`.e-badge-overlap`. While using the overlap badge, set the parent element to `position: relative`.
+The overlap Badge can be used with `notification` or `dot` Badge, which overlaps with the target element by adding the modifier class`.e-badge-overlap`. While using the overlap Badge, set the parent element to `position: relative`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -226,7 +226,7 @@ The overlap badge can be used with `notification` or `dot` badge, which overlaps
 
 ### Position
 
-The default position of the `notification` or `dot` badge is top. But, the position can be changed to `bottom` using the modifier class `.e-badge-bottom`. For example, the bottom class modifier is used with dot badge to display the status in the avatar as shown in the following sample.
+The default position of the `notification` or `dot` Badge is top. But, the position can be changed to `bottom` using the modifier class `.e-badge-bottom`. For example, the bottom class modifier is used with dot Badge to display the status in the avatar as shown in the following sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

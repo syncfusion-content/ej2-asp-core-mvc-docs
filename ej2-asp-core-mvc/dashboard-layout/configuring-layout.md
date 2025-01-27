@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Configuring Layout in ##Platform_Name## Dashboard Layout Component
-description: Learn here all about Configuring Layout in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
+title: Configuring Layout in ##Platform_Name## Dashboard Layout control
+description: Learn here all about Configuring Layout in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Configuring Layout
 publishingplatform: ##Platform_Name##
@@ -13,7 +13,7 @@ documentation: ug
 
 The entire layout dimensions are assigned based on the height and width of the parent element. Hence, a responsive or static layout can be created by assigning a percentage or static dimension values to the parent element. The layout adapts to mobile resolutions by transforming the entire layout into a stacked orientation, so that, the panels will be displayed in a vertical column.
 
-The **Dashboard Layout** is a grid structured component which can be split into subsections of equal size known as cells. The total number of cells in each row is defined by using the [`columns`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Columns.html) property of the component. The width of each cell will be auto calculated based on the total number of cells placed in a row and the height of a cell will be same as that of its width. However, the height of these cells can also be configured to any desired size using the [`cellAspectRatio`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~CellAspectRatio.html) property (cellwidth/cellheight ratio) which defines the cell width to height ratio.
+The **Dashboard Layout** is a grid structured control which can be split into subsections of equal size known as cells. The total number of cells in each row is defined by using the [`columns`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Columns.html) property of the control. The width of each cell will be auto calculated based on the total number of cells placed in a row and the height of a cell will be same as that of its width. However, the height of these cells can also be configured to any desired size using the [`cellAspectRatio`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~CellAspectRatio.html) property (cellwidth/cellheight ratio) which defines the cell width to height ratio.
 
 The number of rows within the layout has no limits and can have any number of rows based on the panels count and position. Panels which acts as data containers will be placed or positioned over these cells.
 
@@ -29,8 +29,8 @@ The following sample demonstrates how to modify a cell size using the [`columns`
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/modifying-cell-size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/modifying-cell-size/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/modifying-cell-size/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -60,8 +60,8 @@ The following sample demonstrates the usage of the [`cellSpacing`](https://help.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/cell-spacing/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/cell-spacing/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/cell-spacing/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,8 +91,8 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/graphical-representation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/graphical-representation/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/graphical-representation/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -111,7 +111,7 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 
 ![Graphical representation of the layout](./images/graphical_representation.PNG)
 
-## Rendering component in right-to-left direction
+## Rendering control in right-to-left direction
 
 It is possible to render the Dashboard Layout in right-to-left direction by setting the [enableRtl](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~EnableRtl.html) API to true.
 
@@ -121,8 +121,8 @@ It is possible to render the Dashboard Layout in right-to-left direction by sett
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/rtl/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/rtl/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/rtl/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
