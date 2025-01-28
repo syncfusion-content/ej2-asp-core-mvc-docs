@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout Page Sidebar Using Content Template in ##Platform_Name## Sidebar Control | Syncfusion
+title: Layout Page ##Platform_Name## Sidebar Control | Syncfusion
 description: Learn here all about Layout Page Sidebar Using Content Template in Syncfusion ##Platform_Name## Sidebar control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Layout Page Sidebar Using Content Template
