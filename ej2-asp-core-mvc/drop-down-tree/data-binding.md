@@ -38,7 +38,7 @@ In the following example, **code**, **name**, and **countries** columns from hie
 {% include code-snippet/dropdowntree/data-binding/hierarichal-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Hierarichal-data.cshtml.cs" %}
-{% include code-snippet/dropdowntree/data-binding/hierarichal-data/CSHTML.cs %}
+{% include code-snippet/dropdowntree/data-binding/hierarichal-data/Hierarichal-data.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,7 +125,7 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 {% include code-snippet/dropdowntree/data-binding/remote-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Remote-data.cshtml.cs" %}
-{% include code-snippet/dropdowntree/data-binding/remote-data/CSHTML.cs %}
+{% include code-snippet/dropdowntree/data-binding/remote-data/Remote-data.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -22,7 +22,7 @@ In the following example, the `showCheckBox` property is enabled.
 {% include code-snippet/dropdowntree/check-box/checkbox/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Checkbox.cshtml.cs" %}
-{% include code-snippet/dropdowntree/check-box/checkbox/CSHTML.cs %}
+{% include code-snippet/dropdowntree/check-box/checkbox/Checkbox.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -60,7 +60,7 @@ In the following example, the `autoCheck` property is enabled.
 {% include code-snippet/dropdowntree/check-box/autoCheck/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AutoCheck.cshtml.cs" %}
-{% include code-snippet/dropdowntree/check-box/autoCheck/CSHTML.cs %}
+{% include code-snippet/dropdowntree/check-box/autoCheck/AutoCheck.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -93,7 +93,7 @@ By default, `Select All` and `unSelect All` text values will be showcased along 
 {% include code-snippet/dropdowntree/check-box/selectAll/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectAll.cshtml.cs" %}
-{% include code-snippet/dropdowntree/check-box/selectAll/CSHTML.cs %}
+{% include code-snippet/dropdowntree/check-box/selectAll/SelectAll.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

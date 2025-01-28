@@ -27,7 +27,7 @@ The template expression should be provided inside the ${...} interpolation synta
 {% include code-snippet/dropdowntree/templates/itemTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ItemTemplate.cshtml.cs" %}
-{% include code-snippet/dropdowntree/templates/itemTemplate/CSHTML.cs %}
+{% include code-snippet/dropdowntree/templates/itemTemplate/ItemTemplate.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,7 +63,7 @@ The template expression should be provided inside the ${...} interpolation synta
 {% include code-snippet/dropdowntree/templates/valueTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ValueTemplate.cshtml.cs" %}
-{% include code-snippet/dropdowntree/templates/valueTemplate/CSHTML.cs %}
+{% include code-snippet/dropdowntree/templates/valueTemplate/ValueTemplate.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,7 +94,7 @@ The header element is shown statically at the top of the popup list items within
 {% include code-snippet/dropdowntree/templates/headerTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HeaderTemplate.cshtml.cs" %}
-{% include code-snippet/dropdowntree/templates/headerTemplate/CSHTML.cs %}
+{% include code-snippet/dropdowntree/templates/headerTemplate/HeaderTemplate.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -126,7 +126,7 @@ The Dropdown Tree has options to show a footer element at the bottom of the list
 {% include code-snippet/dropdowntree/templates/footerTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FooterTemplate.cshtml.cs" %}
-{% include code-snippet/dropdowntree/templates/footerTemplate/CSHTML.cs %}
+{% include code-snippet/dropdowntree/templates/footerTemplate/FooterTemplate.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -158,7 +158,7 @@ The Dropdown Tree is supports to display custom design in the popup list content
 {% include code-snippet/dropdowntree/templates/noRecordsTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="NoRecordsTemplate.cshtml.cs" %}
-{% include code-snippet/dropdowntree/templates/noRecordsTemplate/CSHTML.cs %}
+{% include code-snippet/dropdowntree/templates/noRecordsTemplate/NoRecordsTemplate.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -190,7 +190,7 @@ The Dropdown Tree provides an option to custom design the popup list content usi
 {% include code-snippet/dropdowntree/templates/actionFailureTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailureTemplate.cshtml.cs" %}
-{% include code-snippet/dropdowntree/templates/actionFailureTemplate/CSHTML.cs %}
+{% include code-snippet/dropdowntree/templates/actionFailureTemplate/ActionFailureTemplate.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -227,7 +227,7 @@ In the following sample, the Dropdown Tree is rendered with default value of the
 {% include code-snippet/dropdowntree/templates/customTemplate_mode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomTemplate_mode.cshtml.cs" %}
-{% include code-snippet/dropdowntree/templates/customTemplate_mode/CSHTML.cs %}
+{% include code-snippet/dropdowntree/templates/customTemplate_mode/CustomTemplate_mode.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
