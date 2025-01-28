@@ -95,7 +95,7 @@ The TomTom map layer supports both zooming and panning. Zooming allows you to ta
 {% endtabs %}
 {% endif %}
 
-![TomTom Map with Zooming and Panning](../images/MapProviders/TomTom/tomtom-map-zooming.PNG)
+![TomTom Map with Zooming and Panning](../images/MapProviders/TomTom/tomtom-map-zooming.png)
 
 ## Adding markers and navigation line
 
@@ -126,7 +126,7 @@ Markers can be added to the TomTom map layer by setting the latitude and longitu
 {% endtabs %}
 {% endif %}
 
-![TomTom Map with Markers and Navigation Line](../images/MapProviders/TomTom/tomtom-map-marker-and-line.PNG)
+![TomTom Map with Markers and Navigation Line](../images/MapProviders/TomTom/tomtom-map-marker-and-line.png)
 
 ## Adding sublayer
 
@@ -157,7 +157,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the TomTom Map layer t
 {% endtabs %}
 {% endif %}
 
-![TomTom Map with Sublayer](../images/MapProviders/TomTom/tomtom-map-sublayer.PNG)
+![TomTom Map with Sublayer](../images/MapProviders/TomTom/tomtom-map-sublayer.png)
 
 ## Enabling legend
 
@@ -192,4 +192,4 @@ In the example below, the legend is added to the markers on the TomTom map layer
 {% endtabs %}
 {% endif %}
 
-![TomTom Map with Legend](../images/MapProviders/TomTom/tomtom-map-legend.PNG)
+![TomTom Map with Legend](../images/MapProviders/TomTom/tomtom-map-legend.png)

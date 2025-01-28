@@ -33,7 +33,7 @@ In the above URL template,
 
 These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to retrieve the correct map tile.
 
-N> You can refer this documentation [link](https://www.esri.com/arcgis-blog/products/developers/developers/open-source-developers-time-to-upgrade-to-the-new-arcgis-basemap-layer-service/) for the latest URL template for ArcGIS.
+N> You can refer this documentation [link](https://www.esri.com/arcgis-blog/products/developers/developers/open-source-developers-time-to-upgrade-to-the-new-arcgis-basemap-layer-service/) for the latest URL template for ArcGIS map.
 
 The **subscription_key** is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://developers.arcgis.com/documentation/security-and-authentication/api-key-authentication/tutorials/create-an-api-key/) to generate an API key, and then add this key to the URL.
 
@@ -64,7 +64,7 @@ In the following example, the ArcGIS map is displayed by setting the [UrlTemplat
 {% endtabs %}
 {% endif %}
 
-![ArcGIS](../images/MapProviders/Arcgis/arcgis.PNG)
+![ArcGIS](../images/MapProviders/Arcgis/arcgis.png)
 
 ## Enabling zooming and panning
 
@@ -93,7 +93,7 @@ The ArcGIS map layer supports both zooming and panning. Zooming allows you to ta
 {% endtabs %}
 {% endif %}
 
-![ArcGIS with Zooming and Panning](../images/MapProviders/Arcgis/arcgis-zooming.PNG)
+![ArcGIS with Zooming and Panning](../images/MapProviders/Arcgis/arcgis-zooming.png)
 
 ## Adding markers and navigation line
 
@@ -124,7 +124,7 @@ Markers can be added to the ArcGIS map layer by setting the latitude and longitu
 {% endtabs %}
 {% endif %}
 
-![ArcGIS with Markers and Navigation Line](../images/MapProviders/Arcgis/arcgis-marker-and-line.PNG)
+![ArcGIS with Markers and Navigation Line](../images/MapProviders/Arcgis/arcgis-marker-and-line.png)
 
 ## Adding sublayer
 
@@ -155,7 +155,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the ArcGIS layer to hi
 {% endtabs %}
 {% endif %}
 
-![ArcGIS with Sublayer](../images/MapProviders/Arcgis/arcgis-sublayer.PNG)
+![ArcGIS with Sublayer](../images/MapProviders/Arcgis/arcgis-sublayer.png)
 
 ## Enabling legend
 
@@ -190,4 +190,4 @@ In the example below, the legend is added to the markers on the ArcGIS map layer
 {% endtabs %}
 {% endif %}
 
-![ArcGIS with Legend](../images/MapProviders/Arcgis/arcgis-legend.PNG)
+![ArcGIS with Legend](../images/MapProviders/Arcgis/arcgis-legend.png)

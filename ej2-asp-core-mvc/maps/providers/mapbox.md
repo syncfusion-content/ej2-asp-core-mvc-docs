@@ -64,7 +64,7 @@ In the following example, the Mapbox map is displayed by setting [UrlTemplate](h
 {% endtabs %}
 {% endif %}
 
-![Mapbox](../images/MapProviders/Mapbox/mapbox.PNG)
+![Mapbox](../images/MapProviders/Mapbox/mapbox.png)
 
 ## Enabling zooming and panning
 
@@ -93,7 +93,7 @@ The Mapbox map layer supports both zooming and panning. Zooming allows you to ta
 {% endtabs %}
 {% endif %}
 
-![Mapbox with Zooming and Panning](../images/MapProviders/Mapbox/mapbox-zooming.PNG)
+![Mapbox with Zooming and Panning](../images/MapProviders/Mapbox/mapbox-zooming.png)
 
 ## Adding markers and navigation line
 
@@ -124,7 +124,7 @@ Markers can be added to the Mapbox map layer by setting the latitude and longitu
 {% endtabs %}
 {% endif %}
 
-![Mapbox with Markers and Navigation Line](../images/MapProviders/Mapbox/mapbox-marker-and-line.PNG)
+![Mapbox with Markers and Navigation Line](../images/MapProviders/Mapbox/mapbox-marker-and-line.png)
 
 ## Adding sublayer
 
@@ -155,7 +155,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Mapbox layer to hi
 {% endtabs %}
 {% endif %}
 
-![Mapbox with Sublayer](../images/MapProviders/Mapbox/mapbox-sublayer.PNG)
+![Mapbox with Sublayer](../images/MapProviders/Mapbox/mapbox-sublayer.png)
 
 ## Enabling legend
 
@@ -190,4 +190,4 @@ In the example below, the legend is added to the markers on the Mapbox map layer
 {% endtabs %}
 {% endif %}
 
-![Mapbox with Legend](../images/MapProviders/Mapbox/mapbox-legend.PNG)
+![Mapbox with Legend](../images/MapProviders/Mapbox/mapbox-legend.png)

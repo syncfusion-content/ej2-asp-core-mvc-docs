@@ -69,7 +69,7 @@ In the following example, the HERE map is displayed by setting [UrlTemplate](htt
 {% endtabs %}
 {% endif %}
 
-![HERE Map](../images/MapProviders/Here-map/here-map.PNG)
+![HERE Map](../images/MapProviders/Here-map/here-map.png)
 
 ## Enabling zooming and panning
 
@@ -98,7 +98,7 @@ The HERE map layer supports both zooming and panning. Zooming allows you to take
 {% endtabs %}
 {% endif %}
 
-![HERE Map with Zooming and Panning](../images/MapProviders/Here-map/here-map-zooming.PNG)
+![HERE Map with Zooming and Panning](../images/MapProviders/Here-map/here-map-zooming.png)
 
 ## Adding markers and navigation line
 
@@ -129,7 +129,7 @@ Markers can be added to the HERE map layer by setting the latitude and longitude
 {% endtabs %}
 {% endif %}
 
-![HERE Map with Markers and Navigation Line](../images/MapProviders/Here-map/here-map-marker-and-line.PNG)
+![HERE Map with Markers and Navigation Line](../images/MapProviders/Here-map/here-map-marker-and-line.png)
 
 ## Adding sublayer
 
@@ -160,7 +160,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the HERE Map layer to 
 {% endtabs %}
 {% endif %}
 
-![HERE Map with Sublayer](../images/MapProviders/Here-map/here-map-sublayer.PNG)
+![HERE Map with Sublayer](../images/MapProviders/Here-map/here-map-sublayer.png)
 
 ## Enabling legend
 
@@ -195,4 +195,4 @@ In the example below, the legend is added to the markers on the HERE map layer.
 {% endtabs %}
 {% endif %}
 
-![HERE Map with Legend](../images/MapProviders/Here-map/here-map-legend.PNG)
+![HERE Map with Legend](../images/MapProviders/Here-map/here-map-legend.png)

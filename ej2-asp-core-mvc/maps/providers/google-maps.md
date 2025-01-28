@@ -206,7 +206,7 @@ In the following example, Google Maps can be displayed using the [urlTemplate](h
 {% endtabs %}
 {% endif %}
 
-![Google Maps](../images/MapProviders/Google-maps/google-maps.PNG)
+![Google Maps](../images/MapProviders/Google-maps/google-maps.png)
 
 ## Enabling zooming and panning
 
@@ -237,7 +237,7 @@ N> You can refer to the method for obtaining the session token can be explained 
 {% endtabs %}
 {% endif %}
 
-![Google Maps with Zooming and Panning](../images/MapProviders/Google-maps/google-maps-zooming.PNG)
+![Google Maps with Zooming and Panning](../images/MapProviders/Google-maps/google-maps-zooming.png)
 
 ## Adding markers and navigation line
 
@@ -272,7 +272,7 @@ N> You can refer to the method for obtaining the session token can be explained 
 {% endtabs %}
 {% endif %}
 
-![Google Maps with Markers and Navigation Line](../images/MapProviders/Google-maps/google-maps-marker-and-line.PNG)
+![Google Maps with Markers and Navigation Line](../images/MapProviders/Google-maps/google-maps-marker-and-line.png)
 
 ## Adding sublayer
 
@@ -307,7 +307,7 @@ N> You can refer to the method for obtaining the session token can be explained 
 {% endtabs %}
 {% endif %}
 
-![Google Maps with Sublayer](../images/MapProviders/Google-maps/google-maps-sublayer.PNG)
+![Google Maps with Sublayer](../images/MapProviders/Google-maps/google-maps-sublayer.png)
 
 ## Enabling legend
 
@@ -346,4 +346,4 @@ In the example below, the legend is added to the markers on the Google Maps laye
 {% endtabs %}
 {% endif %}
 
-![Google Maps with Legend](../images/MapProviders/Google-maps/google-maps-legend.PNG)
+![Google Maps with Legend](../images/MapProviders/Google-maps/google-maps-legend.png)

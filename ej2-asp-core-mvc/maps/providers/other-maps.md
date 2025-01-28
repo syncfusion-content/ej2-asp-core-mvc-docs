@@ -61,7 +61,7 @@ Following is an example of how to add a France OpenStreetMap.
 {% endtabs %}
 {% endif %}
 
-![OpenStreeMap France](../images/MapProviders/Other-maps/osm-france.PNG)
+![OpenStreeMap France](../images/MapProviders/Other-maps/osm-france.png)
 
 ## Enabling zooming and panning
 
@@ -90,7 +90,7 @@ Tile Maps layer can be zoomed and panned. Zooming helps to get a closer look at 
 {% endtabs %}
 {% endif %}
 
-![OpenStreeMap France with Zooming and Panning](../images/MapProviders/Other-maps/osm-france-zooming.PNG)
+![OpenStreeMap France with Zooming and Panning](../images/MapProviders/Other-maps/osm-france-zooming.png)
 
 ## Adding markers and navigation line
 
@@ -121,7 +121,7 @@ Markers can be added to the layers of tile Maps by setting the corresponding loc
 {% endtabs %}
 {% endif %}
 
-![OpenStreeMap France with Markers and Navigation Line](../images/MapProviders/Other-maps/osm-france-marker-and-line.PNG)
+![OpenStreeMap France with Markers and Navigation Line](../images/MapProviders/Other-maps/osm-france-marker-and-line.png)
 
 ## Adding sublayer
 
@@ -152,7 +152,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the tile Maps layer fo
 {% endtabs %}
 {% endif %}
 
-![OpenStreeMap France with Sublayer](../images/MapProviders/Other-maps/osm-france-sublayer.PNG)
+![OpenStreeMap France with Sublayer](../images/MapProviders/Other-maps/osm-france-sublayer.png)
 
 ## Enabling legend
 
@@ -183,4 +183,4 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 {% endtabs %}
 {% endif %}
 
-![OpenStreeMap France with Legend](../images/MapProviders/Other-maps/osm-france-legend.PNG)
+![OpenStreeMap France with Legend](../images/MapProviders/Other-maps/osm-france-legend.png)

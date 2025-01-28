@@ -64,7 +64,7 @@ In the following example, the MapTiler can be rendered using the [UrlTemplate](h
 {% endtabs %}
 {% endif %}
 
-![MapTiler](../images/MapProviders/MapTiler/maptiler.PNG)
+![MapTiler](../images/MapProviders/MapTiler/maptiler.png)
 
 ## Enabling zooming and panning
 
@@ -93,7 +93,7 @@ The MapTiler map layer supports both zooming and panning. Zooming allows you to 
 {% endtabs %}
 {% endif %}
 
-![MapTiler with Zooming and Panning](../images/MapProviders/MapTiler/maptiler-zooming.PNG)
+![MapTiler with Zooming and Panning](../images/MapProviders/MapTiler/maptiler-zooming.png)
 
 ## Adding markers and navigation line
 
@@ -124,7 +124,7 @@ Markers can be added to the MapTiler map layer by setting the latitude and longi
 {% endtabs %}
 {% endif %}
 
-![MapTiler with Markers and Navigation Line](../images/MapProviders/MapTiler/maptiler-marker-and-line.PNG)
+![MapTiler with Markers and Navigation Line](../images/MapProviders/MapTiler/maptiler-marker-and-line.png)
 
 ## Adding sublayer
 
@@ -155,7 +155,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the MapTiler layer to 
 {% endtabs %}
 {% endif %}
 
-![MapTiler with Sublayer](../images/MapProviders/MapTiler/maptiler-sublayer.PNG)
+![MapTiler with Sublayer](../images/MapProviders/MapTiler/maptiler-sublayer.png)
 
 ## Enabling legend
 
@@ -190,4 +190,4 @@ In the example below, the legend is added to the markers on the MapTiler map lay
 {% endtabs %}
 {% endif %}
 
-![MapTiler with Legend](../images/MapProviders/MapTiler/maptiler-legend.PNG)
+![MapTiler with Legend](../images/MapProviders/MapTiler/maptiler-legend.png)
