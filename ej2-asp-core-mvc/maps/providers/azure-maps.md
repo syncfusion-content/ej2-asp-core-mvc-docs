@@ -72,7 +72,7 @@ In the following example, Azure Maps can be rendered using the [UrlTemplate](htt
 {% endtabs %}
 {% endif %}
 
-![Azure Maps](../images/MapProviders/Azure-maps/azure-maps-.png)
+![Azure Maps](../images/MapProviders/Azure-maps/azure-maps.png)
 
 ## Enabling zooming and panning
 
@@ -101,7 +101,7 @@ The Azure Maps layer supports both zooming and panning. Zooming allows you to ta
 {% endtabs %}
 {% endif %}
 
-![Azure Maps with Zooming and Panning](../images/MapProviders/Azure-maps/azure-maps--zooming.png)
+![Azure Maps with Zooming and Panning](../images/MapProviders/Azure-maps/azure-maps-zooming.png)
 
 ## Adding markers and navigation line
 
@@ -132,7 +132,7 @@ Markers can be added to Azure Maps layer by setting the latitude and longitude c
 {% endtabs %}
 {% endif %}
 
-![Azure Maps with Markers and Navigation Line](../images/MapProviders/Azure-maps/azure-maps--marker-and-line.png)
+![Azure Maps with Markers and Navigation Line](../images/MapProviders/Azure-maps/azure-maps-marker-and-line.png)
 
 ## Adding sublayer
 
