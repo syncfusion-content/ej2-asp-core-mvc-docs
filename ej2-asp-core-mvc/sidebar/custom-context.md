@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Context in ##Platform_Name## Sidebar Control
+title: Custom Context in ##Platform_Name## Sidebar Control | Syncfusion
 description: Learn here all about Custom Context in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Custom Context

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Sidebar Control
+title: Getting Started with ##Platform_Name## Sidebar Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -174,4 +174,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [Sidebar with Menu Control](https://ej2.syncfusion.com/aspnetcore/Sidebar/SidebarWithMenu#/material)
 * [Sidebar Responsive Panel](https://ej2.syncfusion.com/aspnetcore/Sidebar/PanelWithResponsive#/material)
-* [Usecase Sample](https://ej2.syncfusion.com/showcase/aspnetcore/webmail/ )
+* [Use case Sample](https://ej2.syncfusion.com/showcase/aspnetcore/webmail/ )

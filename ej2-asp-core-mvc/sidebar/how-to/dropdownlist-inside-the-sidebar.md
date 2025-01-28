@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dropdownlist Inside The Sidebar in ##Platform_Name## Sidebar Control
+title: Dropdownlist Inside The Sidebar in ##Platform_Name## Sidebar Control | Syncfusion
 description: Learn here all about Dropdownlist Inside The Sidebar in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dropdownlist Inside The Sidebar

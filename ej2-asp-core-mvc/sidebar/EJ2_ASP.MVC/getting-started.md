@@ -165,4 +165,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 * [Sidebar with Menu Control](https://ej2.syncfusion.com/aspnetmvc/Sidebar/SidebarWithMenu#/material)
 * [Sidebar Responsive Panel](https://ej2.syncfusion.com/aspnetmvc/Sidebar/PanelWithResponsive#/material)
-* [Usecase Sample](https://ej2.syncfusion.com/showcase/aspnetmvc/webmail/ )
+* [Use case Sample](https://ej2.syncfusion.com/showcase/aspnetmvc/webmail/ )

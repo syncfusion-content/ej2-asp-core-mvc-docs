@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sidebar With Variation Animation in ##Platform_Name## Sidebar Control
+title: Sidebar With Variation Animation in ##Platform_Name## Sidebar Control | Syncfusion
 description: Learn here all about Sidebar With Variation Animation in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sidebar With Variation Animation
@@ -19,10 +19,10 @@ Sidebar will automatically adjust expanding animation to match any custom size s
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/Sidebar/animation/tagHelper %}
+{% include code-snippet/sidebar/animation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Animation.cs" %}
-{% include code-snippet/Sidebar/animation/animation.cs %}
+{% include code-snippet/sidebar/animation/animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ Sidebar will automatically adjust expanding animation to match any custom size s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/Sidebar/animation/razor %}
+{% include code-snippet/sidebar/animation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Animation.cs" %}
-{% include code-snippet/Sidebar/animation/animation.cs %}
+{% include code-snippet/sidebar/animation/animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

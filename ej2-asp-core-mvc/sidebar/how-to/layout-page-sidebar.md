@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout Page Sidebar in ##Platform_Name## Sidebar Control
+title: Layout Page Sidebar in ##Platform_Name## Sidebar Control | Syncfusion
 description: Learn here all about Layout Page Sidebar in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Layout Page Sidebar
