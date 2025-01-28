@@ -23,8 +23,8 @@ In the following example, the Sidebar is rendered with ListView control in its c
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sidebar/howto/howto/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Sidebar.cs" %}
-{% include code-snippet/sidebar/howto/howto/sidebar.cs %}
+{% highlight c# tabtitle="Sidebar.cshtml.cs" %}
+{% include code-snippet/sidebar/howto/howto/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
