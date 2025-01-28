@@ -50,8 +50,9 @@ Document editor exposes API to get or set the size of the selected image.
 documenteditor.selection.imageFormat.width = 800;
 documenteditor.selection.imageFormat.height = 800;
 ```
+>Note: When the image element is configured to have a width of 100%, the images appear in their original size on the display. You may modify the image by [Image resizing](../document-editor/image#image-resizing) or [Changing size](../document-editor/image#changing-size) to suit your requirements.
 
-N> Images are stored and processed (read/write) as base64 string in DocumentEditor. The online image URL is preserved as a URL in DocumentEditor upon saving.
+>Note: Images are stored and processed (read/write) as base64 string in DocumentEditor. The online image URL is preserved as a URL in DocumentEditor upon saving.
 
 ## Text wrapping style
 
