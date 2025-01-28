@@ -37,8 +37,8 @@ In the following example, **code**, **name**, and **countries** columns from hie
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/data-binding/hierarichal-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Hierarichal-data.cshtml.cs" %}
-{% include code-snippet/dropdowntree/data-binding/hierarichal-data/Hierarichal-data.CSHTML.cs %}
+{% highlight c# tabtitle="hierarichal-data.cshtml.cs" %}
+{% include code-snippet/dropdowntree/data-binding/hierarichal-data/hierarichal-data.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -124,8 +124,8 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/data-binding/remote-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remote-data.cshtml.cs" %}
-{% include code-snippet/dropdowntree/data-binding/remote-data/Remote-data.CSHTML.cs %}
+{% highlight c# tabtitle="remote-data.cshtml.cs" %}
+{% include code-snippet/dropdowntree/data-binding/remote-data/remote-data.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -156,8 +156,8 @@ The `Selectable` property is disabled and the selection is prevented for parent 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/data-binding/prevent-node/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Prevent-node.cshtml.cs" %}
-{% include code-snippet/dropdowntree/data-binding/prevent-node/CSHTML.cs %}
+{% highlight c# tabtitle="prevent-node.cshtml.cs" %}
+{% include code-snippet/dropdowntree/data-binding/prevent-node/prevent-node.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
 
