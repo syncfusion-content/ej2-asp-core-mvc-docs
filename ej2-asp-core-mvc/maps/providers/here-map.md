@@ -8,15 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# HERE Map in ##Platform_Name## Maps Component
+# HERE map in ##Platform_Name## Maps Component
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-HERE Map, an online map provider, owned by HERE Technologies, offers map tile images based on user requests. The Syncfusion EJ2 Maps control then combines these images into a single display to present the map. To display an HERE map, you can specify its tile service URL in the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
+HERE map, an online map provider, owned by HERE Technologies, offers map tile images based on user requests. The Syncfusion EJ2 Maps control then combines these images into a single display to present the map. To display an HERE map, you can specify its tile service URL in the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-HERE Map, an online map provider, owned by HERE Technologies, offers map tile images based on user requests. The Syncfusion EJ2 Maps control then combines these images into a single display to present the map. To display an HERE map, you can specify its tile service URL in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
+HERE map, an online map provider, owned by HERE Technologies, offers map tile images based on user requests. The Syncfusion EJ2 Maps control then combines these images into a single display to present the map. To display an HERE map, you can specify its tile service URL in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
 
 {% endif %}
 
@@ -33,13 +33,13 @@ In the above URL template,
 
 These placeholders are replaced by **level**, **tileX**, and **tileY**, respectively, to retrieve the correct map tile.
 
-N> You can refer this documentation [link](https://www.here.com/docs/bundle/raster-tile-api-developer-guide/page/topics/quickstart.html#obtain-a-tile) for the latest URL template for Here Map.
+N> You can refer this documentation [link](https://www.here.com/docs/bundle/raster-tile-api-developer-guide/page/topics/quickstart.html#obtain-a-tile) for the latest URL template for Here map.
 
 The **subscription_key** is required and must be included in the URL to authenticate and access the map tiles. Follow the steps in this [link](https://www.here.com/docs/bundle/raster-tile-api-developer-guide/page/topics/quickstart.html#get-an-api-key) to generate an API key, and then added the key to the URL.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-In the following example, the HERE Map can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with its tile server URL.
+In the following example, the HERE map can be rendered using the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with its tile server URL.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
