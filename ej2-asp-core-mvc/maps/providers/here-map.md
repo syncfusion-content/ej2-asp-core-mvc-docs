@@ -12,11 +12,11 @@ documentation: ug
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-HERE map, an online map provider, owned by HERE Technologies, offers map tile images based on user requests. The Syncfusion EJ2 Maps control then combines these images into a single display to present the map. To display an HERE map, you can specify its tile service URL in the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
+HERE map, an online map provider, owned by HERE Technologies, offers map tile images based on user requests. The Syncfusion Maps component then combines these images into a single display to present the map. To display an HERE map, you can specify its tile service URL in the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-HERE map, an online map provider, owned by HERE Technologies, offers map tile images based on user requests. The Syncfusion EJ2 Maps control then combines these images into a single display to present the map. To display an HERE map, you can specify its tile service URL in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
+HERE map, an online map provider, owned by HERE Technologies, offers map tile images based on user requests. The Syncfusion Maps component then combines these images into a single display to present the map. To display an HERE map, you can specify its tile service URL in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
 
 {% endif %}
 

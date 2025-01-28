@@ -12,11 +12,11 @@ documentation: ug
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Mapbox, an online map provider, owned by Mapbox, Inc, offers map tile images based on user requests. The Syncfusion EJ2 Maps control then combines these images into a single display to present the map. To display an Mapbox map, you can specify its tile service URL in the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
+Mapbox, an online map provider, owned by Mapbox, Inc, offers map tile images based on user requests. The Syncfusion Maps component then combines these images into a single display to present the map. To display an Mapbox map, you can specify its tile service URL in the [urlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Mapbox, an online map provider, owned by Mapbox, Inc, offers map tile images based on user requests. The Syncfusion EJ2 Maps control then combines these images into a single display to present the map. To display an Mapbox map, you can specify its tile service URL in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. 
+Mapbox, an online map provider, owned by Mapbox, Inc, offers map tile images based on user requests. The Syncfusion Maps component then combines these images into a single display to present the map. To display an Mapbox map, you can specify its tile service URL in the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property. 
 
 {% endif %}
 
