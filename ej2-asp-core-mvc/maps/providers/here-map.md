@@ -135,7 +135,7 @@ Markers can be added to the HERE map layer by setting the latitude and longitude
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Any GeoJSON shape can be rendered as a sublayer on top of the HERE Map layer to highlight a particular continent or country. This is achieved by adding another layer and setting the [Type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
+Any GeoJSON shape can be rendered as a sublayer on top of the HERE map layer to highlight a particular continent or country. This is achieved by adding another layer and setting the [Type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -148,7 +148,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the HERE Map layer to 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Any GeoJSON shape can be rendered as a sublayer on top of the HERE Map layer to highlight a particular continent or country. This is achieved by adding another layer and setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
+Any GeoJSON shape can be rendered as a sublayer on top of the HERE map layer to highlight a particular continent or country. This is achieved by adding another layer and setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

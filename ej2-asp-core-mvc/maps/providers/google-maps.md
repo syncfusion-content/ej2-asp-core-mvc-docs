@@ -210,7 +210,7 @@ In the following example, Google Maps can be displayed using the [urlTemplate](h
 
 ## Enabling zooming and panning
 
-The Google Maps layer can be zoomed and panned. Zooming helps to get a closer look at a particular area on a map for in-depth analysis. Panning helps to move a map around to focus the targeted area.
+The Google Maps layer supports both zooming and panning. Zooming allows you to take a closer look at a particular area on the map for in-depth analysis, while panning enables you to move the map around to focus on the target area.
 
 N> You can refer to the method for obtaining the session token can be explained in the above section **Displaying Google Maps**, which can be included in the URL below to render tile images from Google Maps.
 
@@ -243,7 +243,7 @@ N> You can refer to the method for obtaining the session token can be explained 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Markers can be added to the layers of Google Maps by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the Google Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
+Markers can be added to the Google Maps layer by setting the latitude and longitude coordinates of the desired location using [MarkerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Additionally, navigation lines can be added on top of the Google Maps layer to highlight paths between various places by specifying the corresponding latitude and longitude coordinates in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
 
 N> You can refer to the method for obtaining the session token can be explained in the above section **Displaying Google Maps**, which can be included in the URL below to render tile images from Google Maps.
 
@@ -258,7 +258,7 @@ N> You can refer to the method for obtaining the session token can be explained 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Markers can be added to the layers of Google Maps by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of the Google Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
+Markers can be added to the Google Maps layer by setting the latitude and longitude coordinates of the desired location using [MarkerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Additionally, navigation lines can be added on top of the Google Maps layer to highlight paths between various places by specifying the corresponding latitude and longitude coordinates in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
 
 N> You can refer to the method for obtaining the session token can be explained in the above section **Displaying Google Maps**, which can be included in the URL below to render tile images from Google Maps.
 
@@ -278,7 +278,7 @@ N> You can refer to the method for obtaining the session token can be explained 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Any GeoJSON shape can be rendered as a sublayer on top of the Google Maps layer for highlighting a particular continent or country in Google Maps by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
+Any GeoJSON shape can be rendered as a sublayer on top of the Google Maps layer to highlight a particular continent or country. This is achieved by adding another layer and setting the [Type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
 
 N> You can refer to the method for obtaining the session token can be explained in the above section **Displaying Google Maps**, which can be included in the URL below to render tile images from Google Maps.
 
@@ -293,7 +293,7 @@ N> You can refer to the method for obtaining the session token can be explained 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Any GeoJSON shape can be rendered as a sublayer on top of the Google Maps layer for highlighting a particular continent or country in Google Maps by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
+Any GeoJSON shape can be rendered as a sublayer on top of the Google Maps layer to highlight a particular continent or country. This is achieved by adding another layer and setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
 
 N> You can refer to the method for obtaining the session token can be explained in the above section **Displaying Google Maps**, which can be included in the URL below to render tile images from Google Maps.
 
