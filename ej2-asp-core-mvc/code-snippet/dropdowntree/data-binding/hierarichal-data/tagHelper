@@ -1,5 +1,8 @@
+@model WebApplication1.Pages.DropdownTree.DataBinding.HierarchicalDataModel
+@{
+}
 <div id='container' style="margin:0 auto; width:250px;">
     <ejs-dropdowntree id="treedata">
-        <e-dropdowntree-fields dataSource="ViewBag.data" child="ViewBag.child" value="code" text="name"></e-dropdowntree-fields>
+        <e-dropdowntree-fields dataSource="@Model.continents" child="@Model.Child" value="code" text="name"></e-dropdowntree-fields>
     </ejs-dropdowntree>
 </div>

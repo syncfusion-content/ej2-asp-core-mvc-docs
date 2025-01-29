@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sidebar With Partial View in ##Platform_Name## Sidebar Component
-description: Learn here all about Sidebar With Partial View in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Sidebar With Partial View in ##Platform_Name## Sidebar Control | Syncfusion
+description: Learn here all about Sidebar With Partial View in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sidebar With Partial View
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Sidebar with partial view
 
-The following example demonstrates how to render the sidebar with partial view. Sidebar element is  placed inside the RenderPartialView.cshtml and refer that sidebar element in layout page.
+The following example demonstrates how to render the Sidebar with partial view. Sidebar element is  placed inside the RenderPartialView.cshtml and refer that Sidebar element in layout page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
