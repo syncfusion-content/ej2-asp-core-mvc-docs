@@ -21,7 +21,7 @@ Following is an example which demonstrates the above cases which are used to man
 {% include code-snippet/treeview/how-to/context-menu/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Contextmenu.cs" %}
-{% include code-snippet/treeview/how-to/context-menu/contextmenu.cs %}
+{% include code-snippet/treeview/how-to/context-menu/contextmenu-core.cs %}
 {% endhighlight %}
 {% endtabs %}
 

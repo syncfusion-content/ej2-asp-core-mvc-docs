@@ -23,8 +23,8 @@ The template expression should be provided inside the `${...}` interpolation syn
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/treeview/template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Templatemodel.cs" %}
-{% include code-snippet/treeview/template/templatemodel.cs %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/treeview/template/template-core.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,4 +1,4 @@
-public IActionResult NodeEdit()
+public IActionResult NodeValidate()
         {
             List<object> treedata = new List<object>();
             treedata.Add(new

@@ -74,9 +74,6 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/treeview/binding-data/self-referential/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Selfreferential.cs" %}
-{% include code-snippet/treeview/binding-data/self-referential/selfreferential.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

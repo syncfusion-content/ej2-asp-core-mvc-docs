@@ -1,16 +1,15 @@
 <div id='treeparent'>
-<ejs-treeview id="treedata" nodeEdited="onNodeEdited" allowEditing="true" >
+    <ejs-treeview id="treedata" nodeEdited="onNodeEdited" allowEditing="true">
         <e-treeview-fields dataSource="ViewBag.dataSource" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded"></e-treeview-fields>
-</ejs-treeview>
-
-<div id="display"></div>
+    </ejs-treeview>    
 </div>
+<div id="display"></div>
 <script>
     function onNodeEdited(args) {
-         var treeObj = document.getElementById('treedata').ej2_instances[0];
-         var displayContent = "";
-         if (args.newText.trim() == "") {
-            args.cancel=true;
+        var treeObj = document.getElementById('treedata').ej2_instances[0];
+        var displayContent = "";
+        if (args.newText.trim() == "") {
+            args.cancel = true;
             displayContent = "TreeView item text should not be empty";
         }
         else if (args.newText != args.oldText) {
@@ -18,8 +17,8 @@
         } else {
             displayContent = "";
         }
-       document.getElementById("display").innerHTML = displayContent;
-}
+        document.getElementById("display").innerHTML = displayContent;
+    }
 </script>
 
 <style>

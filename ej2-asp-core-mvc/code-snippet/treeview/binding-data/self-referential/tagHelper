@@ -151,7 +151,7 @@
         name = "Tamil Nadu"
 
     });
-
+}
 <ejs-treeview id="listdata">
     <e-treeview-fields  dataSource="listdata" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded"></e-treeview-fields>
 </ejs-treeview>
