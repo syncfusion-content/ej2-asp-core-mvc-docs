@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout Page Sidebar Using Content Template in ##Platform_Name## Sidebar Component
-description: Learn here all about Layout Page Sidebar Using Content Template in Syncfusion ##Platform_Name## Sidebar component of syncfusion and more.
+title: Layout Page ##Platform_Name## Sidebar Control | Syncfusion
+description: Learn here all about Layout Page Sidebar Using Content Template in Syncfusion ##Platform_Name## Sidebar control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Layout Page Sidebar Using Content Template
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Layout Sidebar using Content Template
 
-In the following example, Menu component  is rendered inside the Sidebar using content template. Initially, the Sidebar renders in the dock state with icons, and expands when the hamburger icon at the top-left corner of the header section is clicked.
+In the following example, Menu control  is rendered inside the Sidebar using content template. Initially, the Sidebar renders in the dock state with icons, and expands when the hamburger icon at the top-left corner of the header section is clicked.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

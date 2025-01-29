@@ -1,5 +1,6 @@
+@model WebApplication1.Pages.DropdownTree.Checkbox.SelectAllModel
 <div id='container' style="margin:0 auto; width:250px;">
     <ejs-dropdowntree id="treedata" showCheckBox="true" showSelectAll="true" selectAllText="Check All" unSelectAllText="UnCheck All">
-        <e-dropdowntree-fields dataSource="ViewBag.dataSource" value="id" parentValue="pid" hasChildren="hasChild" text="name"></e-dropdowntree-fields>
+        <e-dropdowntree-fields dataSource="@Model.TreeData" value="id" parentValue="pid" hasChildren="hasChild" text="name"></e-dropdowntree-fields>
     </ejs-dropdowntree>
 </div>

@@ -1,11 +1,12 @@
-@{ 
-    var itemTemplate = "<div><span class='ename'> ${name} - </span><span class='ejob'>${job}</span></div>";
+@model WebApplication1.Pages.DropdownTree.Template.ItemTemplateModel
+@{
 }
 <div id='container' style="margin:0 auto; width:250px;">
-    <ejs-dropdowntree id="treedata" popupHeight="270px" placeholder="Select an employee" cssClass="custom" itemTemplate="@itemTemplate">
-        <e-dropdowntree-fields dataSource="ViewBag.localData" expanded="expanded" value="id" parentValue="pid" hasChildren="hasChild" text="name"></e-dropdowntree-fields>
+    <ejs-dropdowntree id="treedata" popupHeight="270px" placeholder="Select an employee" cssClass="custom" itemTemplate="@Model.ItemTemplate">
+        <e-dropdowntree-fields dataSource="@Model.LocalData" expanded="expanded" value="id" parentValue="pid" hasChildren="hasChild" text="name"></e-dropdowntree-fields>
     </ejs-dropdowntree>
 </div>
+
 <style>
     .custom .ejob {
         opacity: .60;
