@@ -64,7 +64,7 @@ To achieve data binding and perform CRUD actions using Fetch requests in the Syn
 * Name the project **FetchRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple ASP.NET Core Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-core).
+**Step 2:**  Create a simple ASP.NET MVC Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-core).
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 
@@ -309,7 +309,7 @@ To achieve data binding and perform CRUD actions using Ajax requests in the Sync
 * Name the project **AJAXRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple ASP.NET Core Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-core).
+**Step 2:**  Create a simple ASP.NET MVC Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-core).
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 

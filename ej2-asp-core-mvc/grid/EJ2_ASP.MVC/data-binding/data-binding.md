@@ -215,22 +215,6 @@ To implement on-demand server-side actions with a DataTable, you need to:
 {% endhighlight %}
 {% endtabs %}
 
-## Troubleshoot: Grid render rows without data
-
-In ASP.NET Core, by default the JSON results are returned in camelCase format. So grid field names are also changed in camelCase.
-
-To avoid this problem, you need to add **DefaultContractResolver** in **Startup.cs** file.
-
-```javascript
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddMvc().AddJsonOptions(options =>
-    {
-        options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();
-    });
-}
-```
-
 ## See Also
 
 * [JSON binding to Grid and monitoring with knockout.js](https://www.syncfusion.com/blogs/post/json-binding-to-mvc-grid-and-monitoring-changes-with-knockoutjs.aspx)
