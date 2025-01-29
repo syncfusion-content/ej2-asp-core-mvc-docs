@@ -46,7 +46,7 @@ The following example demonstrates how to set the `loadingIndicator.indicatorTyp
 
 Refreshing the data source in a Syncfusion Grid involves updating the data that the grid displays dynamically. This operation is essential when you need to reflect changes in the underlying data without reloading the entire page or component.
 
-To achieve this, you can make use of the [datasource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property in conjunction with the `setProperties` method. This ensures that the grid reflects the changes in the data source without requiring a complete page or component reload.
+To achieve this, you can make use of the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property in conjunction with the `setProperties` method. This ensures that the grid reflects the changes in the data source without requiring a complete page or component reload.
 
 For example, if you add or delete data source records, follow these steps:
 

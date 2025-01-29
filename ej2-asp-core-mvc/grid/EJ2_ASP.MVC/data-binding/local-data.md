@@ -313,7 +313,7 @@ To achieve data binding and perform CRUD actions using Ajax requests in the Sync
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 
-A. To bind data from an external AJAX request, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property of the Grid. AJAX data from the server and provide it to the `dataSource` property using the `onSuccess` event of the AJAX request.
+A. To bind data from an external AJAX request, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property of the Grid. AJAX data from the server and provide it to the `DataSource` property using the `onSuccess` event of the AJAX request.
 
 B. To perform CRUD actions, leverage the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using Fetch, along with the relevant data received from the `ActionBegin` event, to update your server data accordingly.
 
