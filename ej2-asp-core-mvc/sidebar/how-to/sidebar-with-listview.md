@@ -24,7 +24,7 @@ In the following example, the Sidebar is rendered with ListView control in its c
 {% include code-snippet/sidebar/howto/howto/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Sidebar.cshtml.cs" %}
-{% include code-snippet/sidebar/howto/howto/Sidebar.CSHTML.cs %}
+{% include code-snippet/sidebar/howto/howto/sidebar.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
 
