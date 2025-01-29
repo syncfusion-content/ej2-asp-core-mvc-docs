@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Process The Tree Node Operations Using Context Menu in ##Platform_Name## TreeView Control
-description: Learn here all about Process The Tree Node Operations Using Context Menu in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
+title: Process the Tree Node Operations Using Context Menu in ##Platform_Name## TreeView Control
+description: Learn here all about Process the Tree Node Operations Using Context Menu in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Process the tree node operations using context menu
+# Process the tree node operations using Context Menu
 
-You can integrate the context menu with '**TreeView**' control in order to perform the tree view related operations like add, remove and renaming node. 
+You can integrate the Context Menu with '**TreeView**' control to perform TreeView-related operations such as adding, removing, and renaming nodes.
 
-Following is an example which demonstrates the above cases which are used to manipulate tree view operations in the **select** event of context menu.
+The following example demonstrates how to manipulate TreeView operations using the **select** event of the Context Menu.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,6 +39,6 @@ Following is an example which demonstrates the above cases which are used to man
 
 
 
-Output be like the below.
+The output will look like the image below:
 
 ![TreeView Sample](../images/contextmenu.PNG)

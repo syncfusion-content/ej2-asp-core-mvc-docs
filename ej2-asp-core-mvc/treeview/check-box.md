@@ -11,7 +11,7 @@ documentation: ug
 
 # CheckBox
 
-The TreeView control allows you to check more than one node in TreeView without affecting the UI's appearance by enabling the [showCheckBox](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~ShowCheckBox.html) property. When this property is enabled, checkbox appears before each TreeView node text.
+The TreeView control allows you to check more than one node in the TreeView without affecting the UI's appearance by enabling the [showCheckBox](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~ShowCheckBox.html) property. When this property is enabled, checkbox appears before each TreeView node text.
 
 * If one of the child nodes is not in a checked state, then the parent node will be in an intermediate state.
 
@@ -19,7 +19,7 @@ The TreeView control allows you to check more than one node in TreeView without 
 
 * If a parent node is checked, then all the child nodes' state will also be checked.
 
-By default, the checkbox state of parent and child nodes are dependent on each other. If you need independent checked state, you can achieve it using the [`autoCheck`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AutoCheck.html) property.
+By default, the checkbox state of parent and child nodes are dependent on each other. If you need independent checked states, you can achieve this using the [`autoCheck`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AutoCheck.html) property.
 
 Using the [`checkedNodes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~CheckedNodes.html) property, you can set the nodes that need to be checked or get the ID of nodes that are currently checked in the TreeView control.
 
@@ -52,15 +52,15 @@ In the following example, the `showCheckBox` property is enabled.
 
 
 
-Output be like the below.
+The output will look like the image below:
 
 ![TreeView Sample](./images/checkbox.PNG)
 
 ## Checked nodes
 
-You can get or set the checked nodes in TreeView at initial rendering and dynamically by using the [checkedNodes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~CheckedNodes.html) property. It returns the checked nodes' ID as an array.
+You can get or set the checked nodes in the TreeView at initial rendering and dynamically by using the [checkedNodes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~CheckedNodes.html) property. It returns the checked nodes' ID as an array.
 
-In the following example, the **New South Wales** and **Western Australia** nodes are checked at initial rendering. If any more nodes are checked, the checked nodes' IDs will be displayed in alert.
+In the following example, the **New South Wales** and **Western Australia** nodes are checked at initial rendering. If any additional nodes are checked, the IDs of all checked nodes will be displayed in an alert.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
