@@ -24,7 +24,9 @@ The following code shows how to prevent the `CTRL + C` keyboard shortcut for cop
 {% include code-snippet/document-editor/prevent-default/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Prevent-default.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/prevent-default/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -33,7 +35,9 @@ The following code shows how to prevent the `CTRL + C` keyboard shortcut for cop
 {% include code-snippet/document-editor/prevent-default/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Prevent-default.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/prevent-default/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -51,7 +55,9 @@ For example, `Ctrl + S` keyboard shortcut saves the document in SFDT format by d
 {% include code-snippet/document-editor/override/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Override.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/override/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -60,6 +66,35 @@ For example, `Ctrl + S` keyboard shortcut saves the document in SFDT format by d
 {% include code-snippet/document-editor/override/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Override.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/override/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
+## Detect the keyboard shortcut
+
+The following code shows how to detect the `Delete` or `Backspace` keyboard shortcut for Deleting and Backspacing the selected content in Document Editor.
+
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/detect-keyboard/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Prevent-default.cs" %}
+{% include code-snippet/document-editor/detect-keyboard/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/detect-keyboard/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Prevent-default.cs" %}
+{% include code-snippet/document-editor/detect-keyboard/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
