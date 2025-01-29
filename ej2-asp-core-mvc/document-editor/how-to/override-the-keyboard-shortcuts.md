@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Override The Keyboard Shortcuts in ##Platform_Name## Document Editor Component
+title: Keyboard Shortcuts in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about override the keyboard shortcuts in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Override The Keyboard Shortcuts
