@@ -1,8 +1,7 @@
-
-   <ejs-listview id="listview" dataSource="ViewBag.dataSource" showCheckBox="true" checkBoxPosition="Right">
-        <e-listview-fieldsettings text="text" id="id">
-        </e-listview-fieldsettings>
-    </ejs-listview>
+<ejs-listview id="listview" dataSource="@Model.DataSource" showCheckBox="true" checkBoxPosition="Right">
+    <e-listview-fieldsettings text="Text" id="Id">
+    </e-listview-fieldsettings>
+</ejs-listview>
 
 
 <style>

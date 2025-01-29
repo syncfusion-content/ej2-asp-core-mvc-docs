@@ -21,8 +21,8 @@ The Checkbox will be useful in the scenario where we need to select multiple opt
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/listview/checklist/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ListController.cs" %}
-{% include code-snippet/listview/checklist/default/ListController.cs %}
+{% highlight c# tabtitle="Checkbox.cshtml.cs" %}
+{% include code-snippet/listview/checklist/default/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,8 +54,8 @@ In ListView the checkbox can be positioned into either `Left` or `Right` side of
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/listview/checklist/position/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ListController.cs" %}
-{% include code-snippet/listview/checklist/position/ListController.cs %}
+{% highlight c# tabtitle="Position.cshtml.cs" %}
+{% include code-snippet/listview/checklist/position/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

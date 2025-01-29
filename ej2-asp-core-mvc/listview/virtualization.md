@@ -29,8 +29,8 @@ It has two types of scrollers as follows:
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/listview/virtualization/flat-list/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ListController.cs" %}
-{% include code-snippet/listview/virtualization/flat-list/ListController.cs %}
+{% highlight c# tabtitle="Virtualization.CSHTML.cs" %}
+{% include code-snippet/listview/virtualization/flat-list/Virtualization.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

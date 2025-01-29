@@ -21,8 +21,8 @@ In the following sample, The cars are grouped based on its category by using the
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/listview/grouping/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ListController.cs" %}
-{% include code-snippet/listview/grouping/ListController.cs %}
+{% highlight c# tabtitle="Grouping.cshtml.cs" %}
+{% include code-snippet/listview/grouping/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

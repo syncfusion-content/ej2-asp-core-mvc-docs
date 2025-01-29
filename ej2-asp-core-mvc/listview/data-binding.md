@@ -48,8 +48,8 @@ ListView supports to load the array of primitive data like string and numbers. H
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/listview/databinding/simple-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ListController.cs" %}
-{% include code-snippet/listview/databinding/simple-data/ListController.cs %}
+{% highlight c# tabtitle="ListController.cshtml.cs" %}
+{% include code-snippet/listview/databinding/simple-data/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -79,8 +79,8 @@ In the following example, role column is mapped with the text field.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/listview/databinding/array-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ListController.cs" %}
-{% include code-snippet/listview/databinding/array-data/ListController.cs %}
+{% highlight c# tabtitle="ListController.cshtml.cs" %}
+{% include code-snippet/listview/databinding/array-data/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

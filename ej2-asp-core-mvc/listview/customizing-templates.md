@@ -27,8 +27,8 @@ In the following example, we have rendered Listview with customized header which
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/listview/header-template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ListController.cs" %}
-{% include code-snippet/listview/header-template/ListController.cs %}
+{% highlight c# tabtitle="HeaderTemplate.cshtml.cs" %}
+{% include code-snippet/listview/header-template/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -109,8 +109,8 @@ In the following example, we have grouped Listview based on the category. The ca
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/listview/item-count/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ListController.cs" %}
-{% include code-snippet/listview/item-count/ListController.cs %}
+{% highlight c# tabtitle="ItemCount.CSHTML.cs" %}
+{% include code-snippet/listview/item-count/ItemCount.CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

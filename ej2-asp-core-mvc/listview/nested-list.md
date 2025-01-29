@@ -19,8 +19,8 @@ The ListView component supports Nested list. For that, the child property should
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/listview/nested-list/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ListController.cs" %}
-{% include code-snippet/listview/nested-list/ListController.cs %}
+{% highlight c# tabtitle="NestedList.cshtml.cs" %}
+{% include code-snippet/listview/nested-list/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

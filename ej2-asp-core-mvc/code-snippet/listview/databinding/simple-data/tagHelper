@@ -1,6 +1,5 @@
-
-    <ejs-listview id="listview" dataSource="ViewBag.dataSource">
-    </ejs-listview>
+<ejs-listview id="listview" dataSource="@Model.DataSource">
+</ejs-listview>
 
 <style>
     #listview {

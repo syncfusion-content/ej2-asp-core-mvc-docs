@@ -1,16 +1,9 @@
-     @{ var template = "<div class='e-list-wrapper e-list-multi-line e-list-avatar'>" +
-     "<img class='e-avatar e-avatar-circle' src=${image} style='background:#BCBCBC' />" +
-     "<span class='e-list-item-header'>${Name}</span>" +
-     "<span class='e-list-content'>${contact}</span>" +
-     "</div>";
-
-        var groupTemplate = "<div><span class='category'>${items[0].category}</span> <span class='count'> ${items.length} Item(s)</span></div>";
-
-    }
-<ejs-listview id='List' dataSource=ViewBag.listData width=350 template=@template groupTemplate=@groupTemplate cssClass="e-list-template">
-    <e-listview-fieldsettings text="Name" groupBy="category"></e-listview-fieldsettings>
+@model WebApplication1.Pages.ListView.Templates.GroupTemplateModel
+@{
+}
+<ejs-listview id='List' dataSource="@Model.ListData" width="350" template="@Model.Template" groupTemplate="@Model.GroupTemplate" cssClass="e-list-template">
+    <e-listview-fieldsettings text="Name" groupBy="Category"></e-listview-fieldsettings>
 </ejs-listview>
-
 
 <style>
     #List {
@@ -31,5 +24,4 @@
         #List .count {
             float: right;
         }
-
 </style>
