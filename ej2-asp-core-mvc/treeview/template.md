@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Treeview Component
-description: Learn here all about Template in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## TreeView Control
+description: Learn here all about Template in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Template
+control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Multiple Selection in ##Platform_Name## Treeview Control | Syncfusion
-description: Learn here all about Multiple Selection in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+title: Multiple Selection in ##Platform_Name## TreeView Control | Syncfusion
+description: Learn here all about Multiple Selection in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Multiple Selection
+control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

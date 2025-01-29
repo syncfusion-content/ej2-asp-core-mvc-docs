@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Treeview Control | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## TreeView Control | Syncfusion
+description: Learn here all about Data Binding in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Data Binding
+control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Data Binding in Treeview Control
+# Data Binding in TreeView Control
 
 The TreeView control provides the option to load data either from local data sources or from remote data services. This can be done through `dataSource` property that is a member of the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~Fields.html) property. The `dataSource` property supports array of JavaScript objects and `DataManager`. It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
@@ -62,7 +62,7 @@ In the following example, **code**, **name**, and **countries** columns from hie
 
 TreeView can be populated from self-referential data structure that contains array of JSON objects with `parentID` mapping. 
 
-You can directly assign self-referential data to the `dataSource` property, and map all the field members with corresponding keys from self-referential data to [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~Fields.html) property. 
+You can directly assign self-referential data to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeViewFieldsSettings~DataSource.html) property, and map all the field members with corresponding keys from self-referential data to [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~Fields.html) property. 
 
 To render the root level nodes, specify the parentID as null or no need to specify the parentID in `dataSource`.
 

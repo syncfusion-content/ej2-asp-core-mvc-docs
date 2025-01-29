@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Customize The Expand And Collapse Icons in ##Platform_Name## Treeview Component
-description: Learn here all about Customize The Expand And Collapse Icons in Syncfusion ##Platform_Name## Treeview component of syncfusion and more.
+title: Customize The Expand And Collapse Icons in ##Platform_Name## TreeView Control
+description: Learn here all about Customize The Expand And Collapse Icons in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
 platform: ej2-asp-core-mvc
-control: Customize The Expand And Collapse Icons
+control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
