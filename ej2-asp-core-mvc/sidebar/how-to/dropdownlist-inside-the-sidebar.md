@@ -11,7 +11,7 @@ documentation: ug
 
 # Adding Dropdownlist inside the Sidebar
 
-While clicking the dropdownlist items inside the Sidebar element,it closes the Sidebar control. By default, the **closeonDocumentClick** property will close the Sidebar element whenever the click action will be triggered outside of the Sidebar element. The DropDownList popup element placed outside of the Sidebar element (body tag instead of Sidebar element). So, during the popup element interactions (click, mousedown) the **closeonDocumentClick** will trigger and close the Sidebar.
+While clicking the dropdownlist items inside the Sidebar element,it closes the Sidebar control. By default, the [`closeonDocumentClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_CloseOnDocumentClick) property will close the Sidebar element whenever the click action will be triggered outside of the Sidebar element. The DropDownList popup element placed outside of the Sidebar element (body tag instead of Sidebar element). So, during the popup element interactions (click, mousedown) the [`closeonDocumentClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_CloseOnDocumentClick) will trigger and close the Sidebar.
 
 To overcome this behavior in your application, you can add one common class by using cssClass property to all the controls that has appended their elements outside of the Sidebar control. Based on that class you can prevent the Sidebar close action by using close event.
 
