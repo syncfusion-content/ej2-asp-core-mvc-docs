@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Docking Sidebar in ##Platform_Name## Sidebar Component
-description: Learn here all about Docking Sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Docking Sidebar in ##Platform_Name## Sidebar Control | Syncfusion
+description: Learn here all about Docking Sidebar in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Docking Sidebar
 publishingplatform: ##Platform_Name##
@@ -50,4 +50,4 @@ In Expanded state, the output be like the below
 
 ## See Also
 
-* [How to add sidebar navigation](./how-to/layout-page-sidebar-with-treeview)
+* [How to add Sidebar navigation](./how-to/layout-page-sidebar-with-treeview)
