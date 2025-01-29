@@ -64,7 +64,7 @@ To achieve data binding and perform CRUD actions using Fetch requests in the Syn
 * Name the project **FetchRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple ASP.NET MVC Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-core).
+**Step 2:**  Create a simple ASP.NET MVC Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 
@@ -309,7 +309,7 @@ To achieve data binding and perform CRUD actions using Ajax requests in the Sync
 * Name the project **AJAXRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple ASP.NET MVC Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-core).
+**Step 2:**  Create a simple ASP.NET MVC Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 
@@ -625,7 +625,7 @@ The Syncfusion Grid component is typically bound to a specific model type. Howev
 
 To bind an `ExpandoObject` to the grid, you need to assign it to the `DataSource` property. This enables the grid to perform various supported data operations and editing on the DynamicObject.
 
-N> You must override the [`GetDynamicMemberNames`](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of the DynamicObject class and return the property names to perform data operation and editing while using DynamicObject.
+N> You must override the [GetDynamicMemberNames](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of the DynamicObject class and return the property names to perform data operation and editing while using DynamicObject.
 
 Here's an example of how to bind a list of DynamicObject to the Syncfusion Grid:
 
