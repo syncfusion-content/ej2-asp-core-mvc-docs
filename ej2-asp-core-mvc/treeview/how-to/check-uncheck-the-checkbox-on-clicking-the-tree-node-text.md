@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check/Uncheck The Checkbox On Clicking The Tree Node Text in ##Platform_Name## TreeView Control | Syncfusion
+title: Check/Uncheck Checkbox on text click in ##Platform_Name## TreeView Control | Syncfusion
 description: Learn here all about Check/Uncheck The Checkbox On Clicking The Tree Node Text in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: TreeView

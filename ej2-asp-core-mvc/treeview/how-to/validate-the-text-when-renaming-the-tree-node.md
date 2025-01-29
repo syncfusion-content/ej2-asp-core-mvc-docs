@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validate the Text When Renaming The Tree Node in ##Platform_Name## TreeView Control | Syncfusion
+title: Validate text when renaming in ##Platform_Name## TreeView Control | Syncfusion
 description: Learn here all about Validate the Text When Renaming The Tree Node in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: TreeView

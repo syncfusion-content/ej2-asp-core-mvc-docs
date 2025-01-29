@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## TreeView Control
+title: Getting Started with ##Platform_Name## TreeView Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: TreeView

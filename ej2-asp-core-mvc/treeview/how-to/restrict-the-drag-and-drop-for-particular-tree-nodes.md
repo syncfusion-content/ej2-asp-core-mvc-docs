@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restrict the Drag And Drop For Particular Tree Nodes in ##Platform_Name## TreeView Control | Syncfusion
+title: Restrict drag and drop for node in ##Platform_Name## TreeView Control | Syncfusion
 description: Learn here all about Restrict the Drag And Drop For Particular Tree Nodes in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: TreeView

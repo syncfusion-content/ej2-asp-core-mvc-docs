@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## TreeView Control
+title: Ej1 Api Migration in ##Platform_Name## TreeView Control | Syncfusion
 description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: TreeView
