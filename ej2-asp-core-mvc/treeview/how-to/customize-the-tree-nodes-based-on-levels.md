@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the Tree Nodes Based On Levels in ##Platform_Name## TreeView Control
+title: Customize the Tree Nodes Based On Levels in ##Platform_Name## TreeView Control | Syncfusion
 description: Learn here all about Customize the Tree Nodes Based On Levels in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: TreeView

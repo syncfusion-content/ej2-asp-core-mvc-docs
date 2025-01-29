@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nodes manipulation in Syncfusion ##Platform_Name## TreeView control
+title: Nodes manipulation in Syncfusion ##Platform_Name## TreeView control | Syncfusion
 description: Learn here all about Nodes manipulation in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: TreeView
