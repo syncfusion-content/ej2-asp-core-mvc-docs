@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Limits in ##Platform_Name## Range Slider Control | Syncfusion
-description: Learn here all about Limits in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Limits in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Limits
 publishingplatform: ##Platform_Name##
@@ -56,7 +56,7 @@ There is only one handle in the Default and MinRange Slider, so ``minStart``, ``
 
 ## Range Slider limits
 
-In the range slider, both handles can be restricted and locked from the limit's object. In this sample, the first handle is limited between 10 and 40, and the second handle is limited between 60 and 90.
+In the Range Slider, both handles can be restricted and locked from the limit's object. In this sample, the first handle is limited between 10 and 40, and the second handle is limited between 60 and 90.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
