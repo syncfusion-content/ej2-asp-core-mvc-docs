@@ -1,0 +1,220 @@
+{
+    List<object> filterColumns = new List<object>();
+    filterColumns.Add(new { field = "CustomerName", matchCase = false, @operator = "startswith", predicate = "and", value = "Maria" });
+    List<object> sortOptions = new List<object>();
+    sortOptions.Add(new { field = "ProductID", direction = "Descending" });
+}
+
+@Html.EJS().Grid("grid").Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("CustomerName").HeaderText("Customer Name").Width("150").Add();
+    col.Field("ProductID").HeaderText("Product ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("ProductName").HeaderText("Product Name").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+}).DataSourceChanged("dataSourceChanged").SortSettings(sort => sort.Columns(sortOptions)).FilterSettings(filter => filter.Columns(filterColumns)).GroupSettings(group => { group.EnableLazyLoading(true).ShowGroupedColumn(true).Columns(new string[] { "ProductName" }); }).AllowPaging().AllowFiltering().AllowSorting().AllowGrouping().DataStateChange("dataStateChange").Created("created").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Render()
+<script>
+    const baseUrl = "https://localhost:****/Home";// Here xxxx denotes the port number.
+    var gridData;
+    var state = {
+        skip: 0,
+        take: 12,
+        group: {
+            enableLazyLoading: true,
+            columns: ["ProductName"],
+            showGroupedColumn: true
+        },
+        sort: { columns: [{ field: 'ProductID', direction: 'Descending' }] },
+        filter: { columns: [{ field: 'CustomerName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Maria' }] }
+    };
+    function created() {
+        dataStateChange(state)
+    }
+    function dataStateChange (state) {
+        const grid = document.getElementById("grid").ej2_instances[0];
+        const query = grid.getDataModule().generateQuery();
+        getOrders(state, query).then(gridData => {
+            grid.dataSource = gridData.result;
+        });
+    }
+    function getOrders(state, action) {
+        const query = new ej.data.Query();
+        // filter
+        if (state.where) {
+            applyFiltering(query, action.queries);
+        }
+        // search
+        if (state.search) {
+            applySearching(query, state.search);
+        };
+        // sort
+        if (state.sorted) {
+            state.sorted.length ? applySorting(query, state.sorted) :
+            // initial sorting
+            state.sorted.columns.length ? applySorting(query, state.sorted.columns) : null
+        }
+        // grouping
+        if (state.group) {
+            state.group.length ? applyGrouping(query, state.group) :
+            // initial grouping
+            state.group.columns.length ? applyGrouping(query, state.group.columns) : null
+        }
+        // lazy load grouping
+        if (state.group) {
+            if (state.isLazyLoad) {
+                applyLazyLoad(query, state)
+            }
+            if (state.group.enableLazyLoading) {
+                query.lazyLoad.push({ key: 'isLazyLoad', value: true })
+            }
+        }
+        // page
+        applyPaging(query, state)
+        query.isCountRequired = true
+        var fetchRequest = new ej.base.Fetch({
+            url: `${baseUrl}/GetOrderData`,
+            type: 'POST',
+        })
+        return fetchRequest.send()
+            .then(data => {
+                // Create a DataManager instance with your fetched data
+                gridData = new ej.data.DataManager(data.result);
+                // Execute local data operations using the provided query
+                const result = gridData.executeLocal(query);
+                // Return the result along with the count of total records
+                return {
+                    result: result, // Result of the data
+                    count: result.count // Total record count based on fetched data length
+                };
+           });
+    }
+    function dataSourceChanged(state) {
+        if (state.action === 'add') {
+            addRecord(state.data, state).then(() => {
+                state.endEdit(); 
+            });
+        } else if (state.action === 'edit') {
+            updateRecord(state.data, state).then(() => {
+                state.endEdit();
+            });
+        } else if (state.requestType === 'delete') {
+            deleteRecord(state.data[0].OrderID, state).then(() => {
+                state.endEdit();
+            });     
+        }
+    }
+    const applyFiltering = (query, filter) => {
+        // Check if filter columns are specified
+        if (filter.columns && filter.columns.length) {
+        // Apply filtering for each specified column
+        for (let i = 0; i < filter.columns.length; i++) {
+            const field = filter.columns[i].field;
+            const operator = filter.columns[i].operator;
+            const value = filter.columns[i].value;
+            query.where(field, operator, value);
+        }
+    }
+    else {
+        // Apply filtering based on direct filter conditions
+        for (let i = 0; i < filter.length; i++) {
+            const { fn, e } = filter[i];
+                if (fn === 'onWhere') {
+                    query.where(e);
+                }
+            }
+        }
+    }
+    // Apply searching
+    const applySearching = (query, search) => {
+        // Check if a search operation is requested
+        if (search && search.length > 0) {
+            // Extract the search key and fields from the search array
+            const { fields, key } = search[0];
+            // perform search operation using the field and key on the query
+            query.search(key, fields);
+        }
+    }
+    // Apply sorting
+    const applySorting = (query, sorted) => {
+        // Check if sorting data is available
+        if (sorted && sorted.length > 0) {
+            // Iterate through each sorting info
+            sorted.forEach(sort => {
+                // Get the sort field name either by name or field
+                const sortField = sort.name || sort.field;
+                // Perform sort operation using the query based on the field name and direction
+                query.sortBy(sortField, sort.direction);
+            });
+        }
+    }
+    // Apply grouping
+    const applyGrouping = (query, group) => {
+        // Check if sorting data is available
+        if (group.length > 0) {
+            // Iterate through each group info
+            group.forEach((column) => {
+                // perform group operation using the column on the query
+                query.group(column);
+            });
+        }
+    }
+    // Apply lazy load grouping
+    const applyLazyLoad = (query, payload) => {
+        // Configure lazy loading for the main data
+        if (payload.isLazyLoad) {
+            query.lazyLoad.push({ key: 'isLazyLoad', value: true });
+            // If on-demand group loading is enabled, configure lazy loading for grouped data
+            if (payload.onDemandGroupInfo) {
+                query.lazyLoad.push({
+                    key: 'onDemandGroupInfo',
+                    value: payload.action.lazyLoadQuery,
+                });
+            }
+        }
+    }
+    const applyPaging = (query, state) => {
+        // Check if both 'take' and 'skip' values are available
+        if (state.take && state.skip) {
+        // Calculate pageSkip and pageTake values to get pageIndex and pageSize
+        const pageSkip = state.skip / state.take + 1;
+        const pageTake = state.take;
+            query.page(pageSkip, pageTake);
+        }
+        // If if only 'take' is available and 'skip' is 0, apply paging for the first page.
+        else if (state.skip === 0 && state.take) {
+            query.page(1, state.take);
+        }
+    }
+    function addRecord(order) {
+        var fetchRequest = new ej.base.Fetch({
+            url: `${baseUrl}/AddOrder`,
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify(order)
+
+        })
+        return fetchRequest.send();
+     }
+
+    function updateRecord(order,state) {
+        var fetchRequest = new ej.base.Fetch({
+            url: `${baseUrl}/UpdateOrder/${order.OrderID}`,
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify(order)
+
+        })
+        return fetchRequest.send();
+    }
+    // delete
+    function deleteRecord(primaryKey) {
+        var fetchRequest = new ej.base.Fetch({
+            url: `${baseUrl}/DeleteOrder/${primaryKey}`,
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            body: JSON.stringify({
+                key: primaryKey
+            })
+        })
+        return fetchRequest.send();
+    }
+</script>
