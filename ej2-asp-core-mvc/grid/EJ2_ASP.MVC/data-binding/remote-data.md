@@ -177,7 +177,7 @@ To configure a server with Syncfusion ASP.Net MVC Grid, you need to follow the b
 
 When filtering operation is performed in the grid, the `DataStateChange` event is triggered, providing access to the following referenced arguments within the event.
 
-![FilterBar](../../images/databinding/remote-filtering.png)
+![FilterBar](../images/databinding/remote-filtering.png)
 
 You can change the new grid data state of filter action as follows:
 
@@ -230,7 +230,7 @@ export function getOrders(state, action) {
 }
 ```
 
-![Filtering Multiple Values](../../images/databinding/remote-multiplefilter.png)
+![Filtering Multiple Values](../images/databinding/remote-multiplefilter.png)
 
 When filtering multiple values, you can get the predicates as arguments in the `DataStateChange` event. You can create your predicate execution based on the predicates values.
 
@@ -238,7 +238,7 @@ When filtering multiple values, you can get the predicates as arguments in the `
 
 When performing a search operation in the grid, the `DataStateChange` event is triggered, allowing access to the following referenced arguments within the event
 
-![Searching](../../images/databinding/remote-search.png)
+![Searching](../images/databinding/remote-search.png)
 
 You can change the new grid data state of search action as follows:
 
@@ -282,11 +282,11 @@ export function getOrders(state, action) {
 
 When sorting operation is performed in the grid, the DataStateChange event is triggered, and within this event, you can access the following referenced arguments.
 
-![Sorting](../../images/databinding/remote-sorting.png)
+![Sorting](../images/databinding/remote-sorting.png)
 
 When performing multi-column sorting, you can get the below referred arguments in the `DataStateChange` event.
 
-![Multi Sorting](../../images/databinding/remote-multiplesort.png)
+![Multi Sorting](../images/databinding/remote-multiplesort.png)
 
 You can change the new grid data state of sort action as follows:
 
@@ -335,7 +335,7 @@ export function getOrders(state, action) {
 
 When paging operation is performed in the grid, the `DataStateChange` event is triggered, and within this event, you can access the following referenced arguments.
 
-![Paging](../../images/databinding/remote-paging.png)
+![Paging](../images/databinding/remote-paging.png)
 
 You can change the new grid data state of page action as follows:
 
@@ -381,7 +381,7 @@ export function getOrders(state, action) {
 
 When grouping operation is performed in the grid, the `DataStateChange` event is triggered, providing access to the following referenced arguments within the event.
 
-![Grouping](../../images/databinding/remote-group.png)
+![Grouping](../images/databinding/remote-group.png)
 
 You can change the new grid data state of group action as follows:
 
@@ -440,7 +440,7 @@ const state = { skip:0, take: 12, group: { enableLazyLoading: true, columns: ['P
 
 Based on the initial state, you can get the arguments as shown below
 
-![Lazy load group](../../images/databinding/remote-lazyload.png)
+![Lazy load group](../images/databinding/remote-lazyload.png)
 
 You can change the grid state as follows:
 
@@ -528,7 +528,7 @@ To implement CRUD operations using Syncfusion Grid, follow these steps:
 
 When an insert operation is performed in the grid, the `DataSourceChanged` event will be triggered, allowing access to the following referenced arguments within the event.
 
-![Insert record](../../images/databinding/remote-add.png)
+![Insert record](../images/databinding/remote-add.png)
 
 ```ts
 // add
@@ -550,7 +550,7 @@ export function addRecord(order) {
 
 When an edit operation is performed in the grid, the `DataSourceChanged` event will be triggered, providing access to the following referenced arguments within the event.
 
-![Edit record](../../images/databinding/remote-edit.png)
+![Edit record](../images/databinding/remote-edit.png)
 
 ```ts
 // update
@@ -572,7 +572,7 @@ export function updateRecord(order) {
 
 When a delete operation is performed in the grid, the `DataSourceChanged` event will be triggered, allowing access to the following referenced arguments within the event.
 
-![Delete record](../../images/databinding/remote-delete.png)
+![Delete record](../images/databinding/remote-delete.png)
 
 ```ts
 // delete
@@ -604,7 +604,7 @@ The following example demonstrates how to bind custom data to handle grid action
 {% endtabs %}
 
 The following screenshot represents the grid action with custom binding
-![Grid with Custom Binding](../../images/databinding/remote-custom-binding.gif)
+![Grid with Custom Binding](../images/databinding/remote-custom-binding.gif)
 
 > * While working with grid edit operation, defining the `IsPrimaryKey` property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
 > * Need to maintain the same instance for all grid actions.
