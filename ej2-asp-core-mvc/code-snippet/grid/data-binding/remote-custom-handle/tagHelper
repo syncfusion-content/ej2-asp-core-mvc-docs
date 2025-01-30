@@ -70,14 +70,14 @@
         // sort
         if (state.sorted) {
             state.sorted.length ? applySorting(query, state.sorted) :
-                // initial sorting
-                state.sorted.columns.length ? applySorting(query, state.sorted.columns) : null
+            // initial sorting
+            state.sorted.columns.length ? applySorting(query, state.sorted.columns) : null
         }
         // grouping
         if (state.group) {
             state.group.length ? applyGrouping(query, state.group) :
-                // initial grouping
-                state.group.columns.length ? applyGrouping(query, state.group.columns) : null
+            // initial grouping
+            state.group.columns.length ? applyGrouping(query, state.group.columns) : null
         }
         // lazy load grouping
         if (state.group) {
