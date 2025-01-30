@@ -11,7 +11,7 @@ documentation: ug
 
 # Orientation
 
-The Slider can be displayed, either in horizontal or vertical orientation. By default, the Slider renders in horizontal orientation.
+The Slider can be displayed, either in horizontal or vertical by using [`orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_Orientation) property. By default, the Slider renders in horizontal orientation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
