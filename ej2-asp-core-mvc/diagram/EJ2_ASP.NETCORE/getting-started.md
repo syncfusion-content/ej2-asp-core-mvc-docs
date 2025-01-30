@@ -89,7 +89,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Diagram control
+## Step 6: Add ASP.NET Core Diagram control And Run The application
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Diagram tag helper in `~/Pages/Index.cshtml` page. Create and add a `node` (JSON data) with specific position, size, label, and shape.
 
@@ -98,6 +98,8 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Diagr
 {% include code-snippet/diagram/getting-started/node/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+### To Run The Application
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Diagram control will be rendered in the default web browser.
 
@@ -243,7 +245,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Diagram control
+## Step 6: Add ASP.NET Core Diagram control And Run The application
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Diagram tag helper in `~/Pages/Index.cshtml` page. Create and add a `node` (JSON data) with specific position, size, label, and shape.
 
@@ -253,7 +255,9 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Diagr
 {% endhighlight %}
 {% endtabs %}
 
-Then Run the `dotnet run` command in the terminal to run the sample in Visual Studio Code. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Diagram control will be rendered in the default web browser.
+### To Run The Application
+
+Run the `dotnet run` command in the terminal to run the sample in Visual Studio Code. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Diagram control will be rendered in the default web browser.
 
 ![ASP.NET Core Diagram Control](images/diagram-control.png)
 
