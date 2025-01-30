@@ -10,7 +10,7 @@ documentation: ug
 
 # Time Range Slider
 
-The time formatting can be achieved same as the date formatting using `renderingTicks` and `change` events. The process of time formatting is explained in the below sample.
+The time formatting can be achieved same as the date formatting using [`renderingTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_RenderingTicks) and [`change`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_Change) events. The process of time formatting is explained in the below sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

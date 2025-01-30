@@ -11,7 +11,7 @@ documentation: ug
 
 # Tooltip
 
-The Slider displays the tooltip to indicate the current value by clicking the Slider bar or drag the Slider handle. The Tooltip position can be customized by using the `placement` property. Also decides the tooltip display mode on a page, i.e., on hovering, focusing, or clicking on the Slider handle and it always remains/displays on the page.
+The Slider displays the tooltip to indicate the current value by clicking the Slider bar or drag the Slider handle. The Tooltip position can be customized by using the [`placement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTooltipData.html#Syncfusion_EJ2_Inputs_SliderTooltipData_Placement) property. Also decides the tooltip display mode on a page, i.e., on hovering, focusing, or clicking on the Slider handle and it always remains/displays on the page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,10 +42,9 @@ The Slider displays the tooltip to indicate the current value by clicking the Sl
 
 ## Buttons
 
-The Slider value can be changed by using the Increase and Decrease buttons. In Range Slider, by default the first handle value will be changed while clicking the button. Change the handle focus and press the button to change the last focused handle value.
+The Slider value can be changed by using the Increase and Decrease buttons. The [`showButtons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_ShowButtons) property is set to **true** to display these buttons. In Range Slider, by default the first handle value will be changed while clicking the button. Change the handle focus and press the button to change the last focused handle value.
 
-N> After enabling the slider buttons if the 'Tab' key is pressed, the focus goes to the handle
-and not to the button.
+N> After enabling the slider buttons if the 'Tab' key is pressed, the focus goes to the handle and not to the button.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
