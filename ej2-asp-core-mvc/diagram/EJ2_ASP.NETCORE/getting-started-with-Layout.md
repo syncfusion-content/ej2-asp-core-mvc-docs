@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with Syncfusion® ##Platform_Name## Diagram Control
-description: Checkout and learn about getting started with ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more details.
+title: Getting Started with Layout in Syncfusion® ##Platform_Name## Diagram Control
+description: Checkout and learn about getting started with Layout in ##Platform_Name## Diagram control of Syncfusion Essential® JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Getting Started
+control: Getting Started with Layout
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -14,7 +14,7 @@ This section briefly explains about how to include [ASP.NET Core Diagram](https:
 
 ## Automatic Organization Chart
 
-In the 'Flow Diagram' section, how to create a diagram manually was discussed. This section explains how to create and position the diagram automatically.
+This section explains how to create and position the diagram automatically.
 
 ### Business object (Employee information)
 
