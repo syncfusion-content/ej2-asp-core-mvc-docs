@@ -22,9 +22,6 @@ The Timeline control triggers the [created](https://help.syncfusion.com/cr/aspne
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/events/created/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/events/created/created.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -48,9 +45,6 @@ The Timeline control triggers the [beforeItemRender](https://help.syncfusion.com
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/events/beforeItemRender/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/events/beforeItemRender/beforeItemRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 

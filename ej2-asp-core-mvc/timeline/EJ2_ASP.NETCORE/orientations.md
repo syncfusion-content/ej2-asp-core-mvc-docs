@@ -22,9 +22,6 @@ You can display the items one below the other vertically by setting the [orienta
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/orientations/vertical/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/orientations/vertical/vertical.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -50,9 +47,6 @@ In horizontal orientation, the items are displayed in a side-by-side manner by s
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/orientations/horizontal/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/orientations/horizontal/horizontal.cs %}
 {% endhighlight %}
 {% endtabs %}
 

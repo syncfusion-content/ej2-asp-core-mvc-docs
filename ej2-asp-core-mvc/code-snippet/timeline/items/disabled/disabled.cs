@@ -1,4 +1,4 @@
-public ActionResult Demo()
+public ActionResult DisabledItem()
 {
     List<TimelineItem> disabledItem = new List<TimelineItem>();
     disabledItem.Add(new TimelineItem { Content = "Eat" });
