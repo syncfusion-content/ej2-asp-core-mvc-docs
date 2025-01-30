@@ -1,21 +1,23 @@
+
 <div id='treeparent'>
-<ejs-treeview id="treedata" >
+    <ejs-treeview id="treedata">
         <e-treeview-fields dataSource="ViewBag.dataSource" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded"></e-treeview-fields>
-</ejs-treeview>
+    </ejs-treeview>
+</div>
 <ejs-button id="button1" cssClass="e-primary inline-element right" content="Remove parent"></ejs-button>
 <ejs-button id="button2" cssClass="e-primary inline-element right" content="Remove child"></ejs-button>
 
-<div id="display"></div>
-</div>
 <script>
-    var treeObj = document.getElementById('treedata').ej2_instances[0];
+    
     document.getElementById("button1").addEventListener('click', function () {
+        var treeObj = document.getElementById('treedata').ej2_instances[0];
         // The node with id 14 is removed from the TreeView control.
         treeObj.removeNodes(['14']);
     });
     document.getElementById("button2").addEventListener('click', function () {
+        var treeObj = document.getElementById('treedata').ej2_instances[0];
         // The nodes with id 3 and 4 are removed from the TreeView control.
-        treeObj.removeNodes(['3','4']);
+        treeObj.removeNodes(['3', '4']);
     });
 </script>
 
@@ -28,11 +30,5 @@
         overflow: auto;
         border: 1px solid #dddddd;
         border-radius: 3px;
-    }
-
-    #display {
-        max-width: 500px;
-        margin: auto;
-        padding: 10px;
     }
 </style>
