@@ -1,10 +1,11 @@
-     <ejs-tooltip id="box" content="Tooltip from custom mode"  OpensOn="Custom" created="created">
-        <e-content-template>
-            <div id="content">
-                Double-click to open Tooltip.
-            </div>
-        </e-content-template>
-    </ejs-tooltip>
+
+<ejs-tooltip id="box" content="Tooltip from custom mode" OpensOn="Custom" created="created" position="TopCenter">
+    <e-content-template>
+        <div id="content">
+            Double-click to open Tooltip.
+        </div>
+    </e-content-template>
+</ejs-tooltip>
 
 <style>
     #box {

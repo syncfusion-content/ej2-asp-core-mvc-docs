@@ -45,3 +45,6 @@ When using HTML elements as content to `Tooltip` make the content element `displ
 {% endtabs %}
 {% endif %}
 
+Output be like the below.
+
+![ASP .NET Core - Dynamic Tooltip content with HTML elements](./images/htmlElements.png)
