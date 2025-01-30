@@ -190,7 +190,6 @@
             type: 'POST',
             contentType: 'application/json; charset=utf-8',
             data: JSON.stringify(order)
-
         })
         return fetchRequest.send();
      }
@@ -201,7 +200,6 @@
             type: 'POST',
             contentType: 'application/json; charset=utf-8',
             data: JSON.stringify(order)
-
         })
         return fetchRequest.send();
     }

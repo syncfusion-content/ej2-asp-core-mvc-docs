@@ -54,7 +54,6 @@
             deleteRecord(state.data[0].orderID, state).then(() => {
                 state.endEdit();
             });
-            ;
         }
     }
     function getOrders(state, action) {
@@ -91,23 +90,19 @@
         // page
         applyPaging(query, state)
         query.isCountRequired = true
-
         var fetchRequest = new ej.base.Fetch({
             url: `@fullUrl?handler=GetOrderData`,
             type: 'POST',
             beforeSend: function (args) {
                 args.fetchRequest.headers.set('XSRF-TOKEN', document.querySelector('input[type = "hidden"][name = "__RequestVerificationToken"]').value);
             },
-
         })
         return fetchRequest.send()
             .then(data => {
                 // Create a DataManager instance with your fetched data
                 gridData = new ej.data.DataManager(data.result);
-
                 // Execute local data operations using the provided query
                 const result = gridData.executeLocal(query);
-
                 // Return the result along with the count of total records
                 return {
                     result: result, // Result of the data
@@ -207,14 +202,10 @@
             },
             contentType: 'application/json; charset=utf-8',
             data: JSON.stringify(order)
-
         })
-
         return fetchRequest.send();
     }
-
     function updateRecord(order) {
-
         var fetchRequest = new ej.base.Fetch({
             url: `@fullUrl?handler=UpdateOrder&OrderID=${order.OrderID}`,
             type: 'POST',
@@ -223,7 +214,6 @@
             },
             contentType: 'application/json; charset=utf-8',
             data: JSON.stringify(order)
-
         })
         return fetchRequest.send();
     }
@@ -240,7 +230,6 @@
                 key: primaryKey
             })
         })
-
         return fetchRequest.send();
     }
 </script> 
